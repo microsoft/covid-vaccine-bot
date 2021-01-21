@@ -1,4 +1,7 @@
+# Temp/Rando Files
 ~*
+.DS_Store
+
 # Yarn Ignores
 .yarn/*
 !.yarn/cache
@@ -10,3 +13,6 @@
 # Build Output
 packages/*/dist/
 packages/*/lib/
+
+# Test Output
+coverage/
