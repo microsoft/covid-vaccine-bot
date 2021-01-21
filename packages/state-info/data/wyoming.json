@@ -4,19 +4,30 @@
 	"code_numeric": 56,
 	"c19": {
 		"vaccination": {
-			
 			"info_link": {
 				"text": "CDC/Wyoming/state_link",
 				"url": "https://health.wyo.gov/publichealth/immunization/wyoming-covid-19-vaccine-information/"
 			},
-			"phases": [{
-				"name": "1a",
-				"active": true,
-				"qualifications": [
-					"c19.eligibility.acip.1a/healthcare_worker",
-					"c19.eligibility.acip.1a/long_term_care_resident"
-				]
-			}]
+			"phases": [
+				{
+					"name": "1a",
+					"active": true,
+					"qualifications": [
+						"c19.eligibility.acip.1a/healthcare_worker",
+						"c19.eligibility.acip.1a/long_term_care_resident",
+						"c19.eligibility.acip.1a/essential_worker.Wyoming"
+					]
+				},
+				{
+					"name": "1b",
+					"qualifications": [
+						"c19.eligibility.acip.1a/healthcare_worker",
+						"c19.eligibility.acip.1a/long_term_care_resident",
+						"c19.eligibility.acip.1b/essential_worker",
+						"c19.eligibility.acip.1b/age"
+					]
+				}
+			]
 		}
 	}
 }

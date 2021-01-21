@@ -6,17 +6,27 @@
 		"vaccination": {
 			"info_link": {
 				"text": "CDC/Washington/state_link",
-				"url": "https://www.doh.wa.gov/Emergencies/COVID19/vaccine"				
+				"url": "https://www.doh.wa.gov/Emergencies/COVID19/vaccine"
 			},
-			
-			"phases": [{
-				"name": "1a",
-				"active": true,
-				"qualifications": [
-					"c19.eligibility.acip.1a/healthcare_worker",
-					"c19.eligibility.acip.1a/long_term_care_resident"
-				]
-			}]
+			"phases": [
+				{
+					"name": "1a",
+					"active": true,
+					"qualifications": [
+						"c19.eligibility.acip.1a/healthcare_worker",
+						"c19.eligibility.acip.1a/long_term_care_resident"
+					]
+				},
+				{
+					"name": "1b",
+					"qualifications": [
+						"c19.eligibility.acip.1a/healthcare_worker",
+						"c19.eligibility.acip.1a/long_term_care_resident",
+						"c19.eligibility.acip.1b/essential_worker",
+						"c19.eligibility.acip.1b/age"
+					]
+				}
+			]
 		}
 	}
 }

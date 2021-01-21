@@ -4,6 +4,7 @@
 	"private": true,
 	"scripts": {
 		"validate_todos": "echo TODO: validate TODOs are removed",
+		"validate_string_ids": "echo TODO: validate TODOs are removed",
 		"validate_schema": "ts-node scripts/validateSchema.ts",
 		"test": "run-s validate_schema validate_todos",
 		"build": "ts-node scripts/assemble.ts"

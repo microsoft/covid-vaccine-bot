@@ -15,7 +15,16 @@
 					"qualifications": [
 						"c19.eligibility.acip.1a/healthcare_worker",
 						"c19.eligibility.acip.1a/long_term_care_resident",
-						"c19.eligibility.acip.1a/override.health.DC"
+						"c19.eligibility.acip.1a/health.District of Columbia"
+					]
+				},
+				{
+					"name": "1b",
+					"qualifications": [
+						"c19.eligibility.acip.1a/healthcare_worker",
+						"c19.eligibility.acip.1a/long_term_care_resident",
+						"c19.eligibility.acip.1b/essential_worker",
+						"c19.eligibility.acip.1b/age"
 					]
 				}
 			]

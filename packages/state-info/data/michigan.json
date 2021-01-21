@@ -8,15 +8,25 @@
 				"text": "CDC/Michigan/state_link",
 				"url": "https://www.michigan.gov/coronavirus/0,9753,7-406-98178_103214---,00.html"
 			},
-			
-			"phases": [{
-				"name": "1a",
-				"active": true,
-				"qualifications": [
-					"c19.eligibility.acip.1a/healthcare_worker",
-					"c19.eligibility.acip.1a/long_term_care_resident"
-				]
-			}]
+			"phases": [
+				{
+					"name": "1a",
+					"active": true,
+					"qualifications": [
+						"c19.eligibility.acip.1a/healthcare_worker",
+						"c19.eligibility.acip.1a/long_term_care_resident"
+					]
+				},
+				{
+					"name": "1b",
+					"qualifications": [
+						"c19.eligibility.acip.1a/healthcare_worker",
+						"c19.eligibility.acip.1a/long_term_care_resident",
+						"c19.eligibility.acip.1b/essential_worker",
+						"c19.eligibility.acip.1b/age"
+					]
+				}
+			]
 		}
 	}
 }

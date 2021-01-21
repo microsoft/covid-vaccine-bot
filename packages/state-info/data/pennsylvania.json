@@ -8,15 +8,25 @@
 				"text": "CDC/Pennsylvania/state_link",
 				"url": "https://www.health.pa.gov/topics/disease/coronavirus/Pages/Vaccine.aspx"
 			},
-			
-			"phases": [{
-				"name": "1a",
-				"active": true,
-				"qualifications": [
-					"c19.eligibility.acip.1a/healthcare_worker",
-					"c19.eligibility.acip.1a/long_term_care_resident"
-				]
-			}]
+			"phases": [
+				{
+					"name": "1a",
+					"active": true,
+					"qualifications": [
+						"c19.eligibility.acip.1a/healthcare_worker",
+						"c19.eligibility.acip.1a/long_term_care_resident"
+					]
+				},
+				{
+					"name": "1b",
+					"qualifications": [
+						"c19.eligibility.acip.1a/healthcare_worker",
+						"c19.eligibility.acip.1a/long_term_care_resident",
+						"c19.eligibility.acip.1b/essential_worker",
+						"c19.eligibility.acip.1b/age"
+					]
+				}
+			]
 		}
 	}
 }

@@ -8,15 +8,27 @@
 				"text": "CDC/New_Hampshire/state_link",
 				"url": "https://www.nh.gov/covid19/resources-guidance/vaccination-planning.htm"
 			},
-			
-			"phases": [{
-				"name": "1a",
-				"active": true,
-				"qualifications": [
-					"c19.eligibility.acip.1a/healthcare_worker",
-					"c19.eligibility.acip.1a/long_term_care_resident"
-				]
-			}]
+
+			"phases": [
+				{
+					"name": "1a",
+					"active": true,
+					"qualifications": [
+						"c19.eligibility.acip.1a/healthcare_worker",
+						"c19.eligibility.acip.1a/long_term_care_resident",
+						"c19.eligibility.acip.1a/essential_worker.New Hampshire"
+					]
+				},
+				{
+					"name": "1b",
+					"qualifications": [
+						"c19.eligibility.acip.1a/healthcare_worker",
+						"c19.eligibility.acip.1a/long_term_care_resident",
+						"c19.eligibility.acip.1b/essential_worker",
+						"c19.eligibility.acip.1b/age"
+					]
+				}
+			]
 		}
 	}
 }
