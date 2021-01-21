@@ -1,0 +1,18 @@
+{
+	"name": "Tennessee",
+	"code_alpha": "TN",
+	"code_numeric": 47,
+	"c19": {
+		"vaccination": {
+			"info_link": {
+				"text": "CDC/Tennessee/state_link",
+				"url": "https://www.tn.gov/health/cedep/ncov/covid-19-vaccine-information.html"
+			},
+			"phase": "1a",
+			"qualifications": [
+				"c19.eligibility.acip.1a/healthcare_worker",
+				"c19.eligibility.acip.1a/long_term_care_resident"
+			]
+		}
+	}
+}

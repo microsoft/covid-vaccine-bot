@@ -1,0 +1,18 @@
+{
+	"name": "North Carolina",
+	"code_alpha": "NC",
+	"code_numeric": 37,
+	"c19": {
+		"vaccination": {
+			"info_link": {
+				"text": "CDC/North_Carolina/state_link",
+				"url": "https://covid19.ncdhhs.gov/vaccines"
+			},
+			"phase": "1a",
+			"qualifications": [
+				"c19.eligibility.acip.1a/healthcare_worker",
+				"c19.eligibility.acip.1a/long_term_care_resident"
+			]
+		}
+	}
+}

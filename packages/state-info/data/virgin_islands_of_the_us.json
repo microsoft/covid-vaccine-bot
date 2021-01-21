@@ -1,0 +1,19 @@
+{
+	"name": "Virgin Islands of the U.S.",
+	"code_alpha": "VI",
+	"code_numeric": 78,
+	"disabled": true,
+	"c19": {
+		"vaccination": {
+			"info_link": {
+				"text": "CDC/Virgin_Islands/state_link",
+				"url": "https://www.covid19usvi.com/"
+			},
+			"phase": "1a",
+			"qualifications": [
+				"c19.eligibility.acip.1a/healthcare_worker",
+				"c19.eligibility.acip.1a/long_term_care_resident"
+			]
+		}
+	}
+}

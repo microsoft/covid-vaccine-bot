@@ -1,0 +1,18 @@
+{
+	"name": "Washington",
+	"code_alpha": "WA",
+	"code_numeric": 53,
+	"c19": {
+		"vaccination": {
+			"info_link": {
+				"text": "CDC/Washington/state_link",
+				"url": "https://www.doh.wa.gov/Emergencies/COVID19/vaccine"				
+			},
+			"phase": "1a",
+			"qualifications": [
+				"c19.eligibility.acip.1a/healthcare_worker",
+				"c19.eligibility.acip.1a/long_term_care_resident"
+			]
+		}
+	}
+}

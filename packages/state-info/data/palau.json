@@ -1,0 +1,19 @@
+{
+	"name": "Palau",
+	"code_alpha": "PW",
+	"code_numeric": 70,
+	"disabled": true,
+	"c19": {
+		"vaccination": {
+			"info_link": {
+				"text": "CDC/Palau/state_link",
+				"url": "http://www.palauhealth.org/"
+			},
+			"phase": "1a",
+			"qualifications": [
+				"c19.eligibility.acip.1a/healthcare_worker",
+				"c19.eligibility.acip.1a/long_term_care_resident"
+			]
+		}
+	}
+}

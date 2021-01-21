@@ -1,0 +1,19 @@
+{
+	"name": "@ms-covidbot/state-info",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+    "validate_todos": "echo TODO: validate TODOs are removed",
+		"validate_schema": "ts-node scripts/validateSchema.ts",
+    "test": "run-s validate_schema validate_todos",
+    "build": "ts-node scripts/assemble.ts"
+	},
+	"devDependencies": {
+		"@types/node": "^14.14.22",
+		"chalk": "^4.1.0",
+		"jsonschema": "^1.4.0",
+		"npm-run-all": "^4.1.5",
+		"ts-node": "^9.1.1",
+		"typescript": "^4.1.3"
+	}
+}

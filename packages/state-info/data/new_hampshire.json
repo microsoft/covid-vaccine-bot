@@ -1,0 +1,18 @@
+{
+	"name": "New Hampshire",
+	"code_alpha": "NH",
+	"code_numeric": 33,
+	"c19": {
+		"vaccination": {
+			"info_link": {
+				"text": "CDC/New_Hampshire/state_link",
+				"url": "https://www.nh.gov/covid19/resources-guidance/vaccination-planning.htm"
+			},
+			"phase": "1a",
+			"qualifications": [
+				"c19.eligibility.acip.1a/healthcare_worker",
+				"c19.eligibility.acip.1a/long_term_care_resident"
+			]
+		}
+	}
+}

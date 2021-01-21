@@ -1,0 +1,18 @@
+{
+	"name": "Illinois",
+	"code_alpha": "IL",
+	"code_numeric": 17,
+	"c19": {
+		"vaccination": {
+			"info_link": {
+				"text": "CDC/Illinois/state_link",
+				"url": "https://www.dph.illinois.gov/covid19/vaccine-faq"
+			},
+			"phase": "1a",
+			"qualifications": [
+				"c19.eligibility.acip.1a/healthcare_worker",
+				"c19.eligibility.acip.1a/long_term_care_resident"
+			]
+		}
+	}
+}

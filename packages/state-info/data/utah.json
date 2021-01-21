@@ -1,0 +1,18 @@
+{
+	"name": "Utah",
+	"code_alpha": "UT",
+	"code_numeric": 49,
+	"c19": {
+		"vaccination": {
+			"info_link": {
+				"text": "CDC/Utah/state_link",
+				"url": "https://coronavirus.utah.gov/vaccine/"
+			},
+			"phase": "1a",
+			"qualifications": [
+				"c19.eligibility.acip.1a/healthcare_worker",
+				"c19.eligibility.acip.1a/long_term_care_resident"
+			]
+		}
+	}
+}

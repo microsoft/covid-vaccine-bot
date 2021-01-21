@@ -1,0 +1,18 @@
+{
+	"name": "Idaho",
+	"code_alpha": "ID",
+	"code_numeric": 16,
+	"c19": {
+		"vaccination": {
+			"info_link": {
+				"text": "CDC/Idaho/state_link",
+				"url": "https://coronavirus.idaho.gov/covid-19-vaccine/"
+			},
+			"phase": "1a",
+			"qualifications": [
+				"c19.eligibility.acip.1a/healthcare_worker",
+				"c19.eligibility.acip.1a/long_term_care_resident"
+			]
+		}
+	}
+}

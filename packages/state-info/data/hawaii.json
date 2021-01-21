@@ -1,0 +1,18 @@
+{
+	"name": "Hawaii",
+	"code_alpha": "HI",
+	"code_numeric": 15,
+	"c19": {
+		"vaccination": {
+			"info_link": {
+				"text": "CDC/Hawaii/state_link",
+				"url": "https://hawaiicovid19.com/vaccine/"
+			},
+			"phase": "1a",
+			"qualifications": [
+				"c19.eligibility.acip.1a/healthcare_worker",
+				"c19.eligibility.acip.1a/long_term_care_resident"
+			]
+		}
+	}
+}

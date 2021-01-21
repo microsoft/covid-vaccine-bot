@@ -1,0 +1,19 @@
+{
+	"name": "Northern Mariana Islands",
+	"code_alpha": "MP",
+	"code_numeric": 69,
+	"disabled": true,
+	"c19": {
+		"vaccination": {
+			"info_link": {
+				"text": "CDC/Northern_Mariana_Islands/state_link",
+				"url": "https://www.vaccinatecnmi.com/"
+			},
+			"phase": "1a",
+			"qualifications": [
+				"c19.eligibility.acip.1a/healthcare_worker",
+				"c19.eligibility.acip.1a/long_term_care_resident"
+			]
+		}
+	}
+}

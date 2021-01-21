@@ -1,0 +1,18 @@
+{
+	"name": "Nevada",
+	"code_alpha": "NV",
+	"code_numeric": 32,
+	"c19": {
+		"vaccination": {
+			"info_link": {
+				"text": "CDC/Nevada/state_link",
+				"url": "https://www.immunizenevada.org/nv-covid-fighter"
+			},
+			"phase": "1a",
+			"qualifications": [
+				"c19.eligibility.acip.1a/healthcare_worker",
+				"c19.eligibility.acip.1a/long_term_care_resident"
+			]
+		}
+	}
+}

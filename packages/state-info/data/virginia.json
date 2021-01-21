@@ -1,0 +1,18 @@
+{
+	"name": "Virginia",
+	"code_alpha": "VA",
+	"code_numeric": 51,
+	"c19": {
+		"vaccination": {
+			"info_link": {
+				"text": "CDC/Virginia/state_link",
+				"url": "https://www.vdh.virginia.gov/covid-19-vaccine/"
+			},
+			"phase": "1a",
+			"qualifications": [
+				"c19.eligibility.acip.1a/healthcare_worker",
+				"c19.eligibility.acip.1a/long_term_care_resident"
+			]
+		}
+	}
+}

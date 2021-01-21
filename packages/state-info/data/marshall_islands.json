@@ -1,0 +1,19 @@
+{
+	"name": "Marshall Islands",
+	"code_alpha": "MH",
+	"code_numeric": 68,
+	"disabled": true,
+	"c19": {
+		"vaccination": {
+			"info_link": {
+				"text": "CDC/Marshall_Islands/state_link",
+				"url": "http://rmihealth.org/"
+			},
+			"phase": "1a",
+			"qualifications": [
+				"c19.eligibility.acip.1a/healthcare_worker",
+				"c19.eligibility.acip.1a/long_term_care_resident"
+			]
+		}
+	}
+}

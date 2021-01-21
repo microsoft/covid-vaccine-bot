@@ -1,0 +1,18 @@
+{
+	"name": "Puerto Rico",
+	"code_alpha": "PR",
+	"code_numeric": 72,
+	"c19": {
+		"vaccination": {
+			"info_link": {
+				"text": "CDC/Puerto_Rico/state_link",
+				"url": "http://www.salud.gov.pr/Pages/coronavirus.aspx"
+			},
+			"phase": "1a",
+			"qualifications": [
+				"c19.eligibility.acip.1a/healthcare_worker",
+				"c19.eligibility.acip.1a/long_term_care_resident"
+			]
+		}
+	}
+}

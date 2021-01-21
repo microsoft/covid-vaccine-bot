@@ -1,0 +1,18 @@
+{
+	"name": "Louisiana",
+	"code_alpha": "LA",
+	"code_numeric": 22,
+	"c19": {
+		"vaccination": {
+			"info_link": {
+				"text": "CDC/Louisiana/state_link",
+				"url": "https://ldh.la.gov/index.cfm/page/4042"
+			},
+			"phase": "1a",
+			"qualifications": [
+				"c19.eligibility.acip.1a/healthcare_worker",
+				"c19.eligibility.acip.1a/long_term_care_resident"
+			]
+		}
+	}
+}

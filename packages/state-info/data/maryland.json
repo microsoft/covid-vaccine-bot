@@ -1,0 +1,18 @@
+{
+	"name": "Maryland",
+	"code_alpha": "MD",
+	"code_numeric": 24,
+	"c19": {
+		"vaccination": {
+			"info_link": {
+				"text": "CDC/Maryland/state_link",
+				"url": "https://covidlink.maryland.gov/content/vaccine/"
+			},
+			"phase": "1a",
+			"qualifications": [
+				"c19.eligibility.acip.1a/healthcare_worker",
+				"c19.eligibility.acip.1a/long_term_care_resident"
+			]
+		}
+	}
+}

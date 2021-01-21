@@ -1,0 +1,18 @@
+{
+	"name": "New Mexico",
+	"code_alpha": "NM",
+	"code_numeric": 35,
+	"c19": {
+		"vaccination": {
+			"info_link": {
+				"text": "CDC/New_Mexico/state_link",
+				"url": "https://cv.nmhealth.org/covid-vaccine/"
+			},
+			"phase": "1b",
+			"qualifications": [
+				"c19.eligibility.acip.1a/healthcare_worker",
+				"c19.eligibility.acip.1a/long_term_care_resident"
+			]
+		}
+	}
+}

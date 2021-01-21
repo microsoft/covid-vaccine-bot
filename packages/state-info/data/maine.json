@@ -1,0 +1,18 @@
+{
+	"name": "Maine",
+	"code_alpha": "ME",
+	"code_numeric": 23,
+	"c19": {
+		"vaccination": {
+			"info_link": {
+				"text": "CDC/Maine/state_link",
+				"url": "https://www.maine.gov/covid19/vaccines"
+			},
+			"phase": "1a",
+			"qualifications": [
+				"c19.eligibility.acip.1a/healthcare_worker",
+				"c19.eligibility.acip.1a/long_term_care_resident"
+			]
+		}
+	}
+}

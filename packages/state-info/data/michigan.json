@@ -1,0 +1,18 @@
+{
+	"name": "Michigan",
+	"code_alpha": "MI",
+	"code_numeric": 26,
+	"c19": {
+		"vaccination": {
+			"info_link": {
+				"text": "CDC/Michigan/state_link",
+				"url": "https://www.michigan.gov/coronavirus/0,9753,7-406-98178_103214---,00.html"
+			},
+			"phase": "1a",
+			"qualifications": [
+				"c19.eligibility.acip.1a/healthcare_worker",
+				"c19.eligibility.acip.1a/long_term_care_resident"
+			]
+		}
+	}
+}

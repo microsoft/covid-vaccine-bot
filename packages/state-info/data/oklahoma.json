@@ -1,0 +1,18 @@
+{
+	"name": "Oklahoma",
+	"code_alpha": "OK",
+	"code_numeric": 40,
+	"c19": {
+		"vaccination": {
+			"info_link": {
+				"text": "CDC/Oklahoma/state_link",
+				"url": "https://oklahoma.gov/covid19/vaccine-information.html"
+			},
+			"phase": "1a",
+			"qualifications": [
+				"c19.eligibility.acip.1a/healthcare_worker",
+				"c19.eligibility.acip.1a/long_term_care_resident"
+			]
+		}
+	}
+}

@@ -1,0 +1,18 @@
+{
+	"name": "New Jersey",
+	"code_alpha": "NJ",
+	"code_numeric": 34,
+	"c19": {
+		"vaccination": {
+			"info_link": {
+				"text": "CDC/New_Jersey/state_link",
+				"url": "https://www.nj.gov/health/cd/topics/covid2019_vaccination.shtml"
+			},
+			"phase": "1a",
+			"qualifications": [
+				"c19.eligibility.acip.1a/healthcare_worker",
+				"c19.eligibility.acip.1a/long_term_care_resident"
+			]
+		}
+	}
+}

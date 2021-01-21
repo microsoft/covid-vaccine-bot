@@ -1,0 +1,19 @@
+{
+	"name": "Kingman Reef",
+	"code_alpha": "KR",
+	"code_numeric": 89,
+	"disabled": true,
+	"c19": {
+		"vaccination": {
+			"info_link": {
+				"text": "TODO",
+				"url": "TODO"
+			},
+			"phase": "1a",
+			"qualifications": [
+				"c19.eligibility.acip.1a/healthcare_worker",
+				"c19.eligibility.acip.1a/long_term_care_resident"
+			]
+		}
+	}
+}

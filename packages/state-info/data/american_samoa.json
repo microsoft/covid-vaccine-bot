@@ -1,0 +1,19 @@
+{
+	"name": "American Samoa",
+	"code_alpha": "AS",
+	"code_numeric": 60,
+	"disabled": true,
+	"c19": {
+		"vaccination": {
+			"info_link": {
+				"text": "CDC/American_Samoa/state_link",
+				"url": "https://www.americansamoa.gov/"
+			},
+			"phase": "1a",
+			"qualifications": [
+				"c19.eligibility.acip.1a/healthcare_worker",
+				"c19.eligibility.acip.1a/long_term_care_resident"
+			]
+		}
+	}
+}

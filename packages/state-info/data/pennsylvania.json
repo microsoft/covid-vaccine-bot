@@ -1,0 +1,18 @@
+{
+	"name": "Pennsylvania",
+	"code_alpha": "PA",
+	"code_numeric": 42,
+	"c19": {
+		"vaccination": {
+			"info_link": {
+				"text": "CDC/Pennsylvania/state_link",
+				"url": "https://www.health.pa.gov/topics/disease/coronavirus/Pages/Vaccine.aspx"
+			},
+			"phase": "1a",
+			"qualifications": [
+				"c19.eligibility.acip.1a/healthcare_worker",
+				"c19.eligibility.acip.1a/long_term_care_resident"
+			]
+		}
+	}
+}
