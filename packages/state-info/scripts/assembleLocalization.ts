@@ -5,11 +5,15 @@ import { readCsvFile } from './readCsvFile'
 
 function assembleLocalizationFile() {
 	const records: unknown[] = []
-	console.log('reading base file')
-  const base = path.join(__dirname, '../data/custom-strings.csv')
+	console.log('reading base files')
+	const base = path.join(__dirname, '../data/custom-strings.csv')
+	const stateLinks = path.join(__dirname, '../data/cdc-state-links.csv')
+	const stateNames = path.join(__dirname, '../data/cdc-state-names.csv')
   const outputFile =  path.join(__dirname, '../dist/localization.csv')
   
 	readCsvFile(base, records)
+	readCsvFile(stateLinks, records)
+	readCsvFile(stateNames, records)
 
 	const stateDataDir = path.join(__dirname, '../data/states')
 	const localizationFiles = fs
