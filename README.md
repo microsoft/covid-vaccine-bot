@@ -1,1 +1,2 @@
-# MSR COVID-19 HealthBot Data, Localization, & Scenario Backup
+![CI](https://github.com/microsoft/covid-vaccine-bot/workflows/CI/badge.svg)
+# MSR COVID-19 HealthBot
