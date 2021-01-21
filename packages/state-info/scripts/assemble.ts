@@ -2,7 +2,7 @@ import * as fs from 'fs'
 import * as path from 'path'
 
 function assembleDataFile() {
-	const rootDir = path.join(__dirname, '../data')
+	const rootDir = path.join(__dirname, '../data/states')
 	const files = fs.readdirSync(rootDir).filter((f) => f.endsWith('.json'))
 
 	const result: any[] = []

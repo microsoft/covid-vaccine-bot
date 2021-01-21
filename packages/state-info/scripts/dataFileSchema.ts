@@ -1,9 +1,7 @@
-import * as fs from 'fs'
-import * as path from 'path'
-import * as chalk from 'chalk'
-import { ValidationError, Validator } from 'jsonschema'
 
-const State = {
+import { Validator } from 'jsonschema'
+
+export const State = {
 	id: '/State',
 	type: 'object',
 	properties: {
@@ -100,44 +98,8 @@ const Region = {
 	required: ['name'],
 }
 
-/**
- * Validate that state-level data files adhere to the schema
- */
-function validateDataFiles() {
-	const validator = createValidator()
-	const root = path.join(__dirname, '../data')
-	const files = fs.readdirSync(root)
-	let errors: ValidationError[] = []
 
-	// Validate each state file
-	files
-		.filter((f) => f.endsWith('.json'))
-		.forEach((file) => {
-			const filePath = path.join(root, file)
-			const data = require(filePath)
-			const validationResult = validator.validate(data, State)
-
-			// handle results
-			if (validationResult.errors.length > 0) {
-				errors.push(...validationResult.errors)
-				console.log(
-					chalk.red(`❌ ${file} has ${validationResult.errors.length} errors`)
-				)
-			} else {
-				console.log(chalk.green(`✔ ${file}`))
-			}
-		})
-
-	if (errors.length > 0) {
-		console.log(errors)
-		console.log('💥 ' + chalk.red(`${errors.length} schema validation errors`))
-		process.exit(1)
-	} else {
-		console.log('🚀 ' + chalk.green(`all files passed schema validation`))
-	}
-}
-
-function createValidator() {
+export function createValidator() {
 	const v = new Validator()
 	v.addSchema(State, '/State')
 	v.addSchema(StateCovidInfo, '/StateCovid')
@@ -147,5 +109,3 @@ function createValidator() {
 	v.addSchema(Region, '/Region')
 	return v
 }
-
-validateDataFiles()

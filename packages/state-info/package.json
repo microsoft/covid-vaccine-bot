@@ -3,15 +3,17 @@
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
-		"validate_todos": "echo TODO: validate TODOs are removed",
-		"validate_string_ids": "echo TODO: validate TODOs are removed",
-		"validate_schema": "ts-node scripts/validateSchema.ts",
-		"test": "run-s validate_schema validate_todos",
-		"build": "ts-node scripts/assemble.ts"
+		"validate_state_files": "ts-node scripts/validateStateFiles.ts",
+		"assemble_localization_table": "ts-node scripts/assembleLocalization.ts",
+		"assemble_datafile": "ts-node scripts/assemble.ts",
+		"build": "run-s assemble_localization_table assemble_datafile",
+		"test": "run-s build validate_state_files"
 	},
 	"devDependencies": {
 		"@types/node": "^14.14.22",
 		"chalk": "^4.1.0",
+		"csv-parse": "^4.15.0",
+		"csv-stringify": "^5.6.1",		
 		"jsonschema": "^1.4.0",
 		"npm-run-all": "^4.1.5",
 		"ts-node": "^9.1.1",
