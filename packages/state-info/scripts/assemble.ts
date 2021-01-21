@@ -1,7 +1,7 @@
 import * as fs from 'fs'
 import * as path from 'path'
+import { DIST_DIR, createDistDir } from './createDistDir'
 
-const DIST_DIR = path.join(__dirname, '../dist')
 const STATE_PLAN_DIR = path.join(__dirname, '../data/state_plans')
 const STATE_PLAN_FILES = fs.readdirSync(STATE_PLAN_DIR)
 const statePlanPath = (file: string): string => path.join(STATE_PLAN_DIR, file)
@@ -15,7 +15,7 @@ function assembleDataFile() {
 		result.push(data)
 	})
 
-	createOutputDirectory()
+	createDistDir()
 
 	fs.writeFileSync(
 		ALL_STATES_OUTPUT_FILE_PATH,
@@ -26,10 +26,5 @@ function assembleDataFile() {
 	)
 }
 
-function createOutputDirectory(): void {
-	if (!fs.existsSync(DIST_DIR)) {
-		fs.mkdirSync(DIST_DIR)
-	}
-}
 
 assembleDataFile()
