@@ -52,8 +52,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["husky", "npm:4.3.8"],
             ["lint-staged", "npm:10.5.3"],
             ["npm-run-all", "npm:4.1.5"],
-            ["prettier", "npm:2.2.1"],
-            ["pretty-quick", "virtual:c77376b364bbd6ccf86418089bab4dc597688e30d62b69b19876926358a19d5bf7a642a5fb000413c6e856a692bd77b262fcd55310c78cfbc2814333babe66e4#npm:3.1.0"],
             ["typescript", "patch:typescript@npm%3A4.1.3#builtin<compat/typescript>::version=4.1.3&hash=cc6730"]
           ],
           "linkType": "SOFT",
@@ -3198,7 +3196,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@essex/tasklogger", "npm:10.0.5"],
             ["chalk", "npm:4.1.0"],
             ["prettier", "npm:2.2.1"],
-            ["pretty-quick", "virtual:c77376b364bbd6ccf86418089bab4dc597688e30d62b69b19876926358a19d5bf7a642a5fb000413c6e856a692bd77b262fcd55310c78cfbc2814333babe66e4#npm:3.1.0"]
+            ["pretty-quick", "virtual:eab26645c77995f669d1800e7659291b6eb4ca354dab7d0088c8366c87f52e1543a9b8db0b47fcf6f03c4e089c7482c14049aff6696cc135c03196e8daded9c2#npm:3.1.0"]
           ],
           "linkType": "HARD",
         }]
@@ -17201,8 +17199,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["husky", "npm:4.3.8"],
             ["lint-staged", "npm:10.5.3"],
             ["npm-run-all", "npm:4.1.5"],
-            ["prettier", "npm:2.2.1"],
-            ["pretty-quick", "virtual:c77376b364bbd6ccf86418089bab4dc597688e30d62b69b19876926358a19d5bf7a642a5fb000413c6e856a692bd77b262fcd55310c78cfbc2814333babe66e4#npm:3.1.0"],
             ["typescript", "patch:typescript@npm%3A4.1.3#builtin<compat/typescript>::version=4.1.3&hash=cc6730"]
           ],
           "linkType": "SOFT",
@@ -19081,10 +19077,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:c77376b364bbd6ccf86418089bab4dc597688e30d62b69b19876926358a19d5bf7a642a5fb000413c6e856a692bd77b262fcd55310c78cfbc2814333babe66e4#npm:3.1.0", {
-          "packageLocation": "./.yarn/$$virtual/pretty-quick-virtual-8ca0308c51/0/cache/pretty-quick-npm-3.1.0-a3349e077f-956f0808ee.zip/node_modules/pretty-quick/",
+        ["virtual:eab26645c77995f669d1800e7659291b6eb4ca354dab7d0088c8366c87f52e1543a9b8db0b47fcf6f03c4e089c7482c14049aff6696cc135c03196e8daded9c2#npm:3.1.0", {
+          "packageLocation": "./.yarn/$$virtual/pretty-quick-virtual-e37ed3d130/0/cache/pretty-quick-npm-3.1.0-a3349e077f-956f0808ee.zip/node_modules/pretty-quick/",
           "packageDependencies": [
-            ["pretty-quick", "virtual:c77376b364bbd6ccf86418089bab4dc597688e30d62b69b19876926358a19d5bf7a642a5fb000413c6e856a692bd77b262fcd55310c78cfbc2814333babe66e4#npm:3.1.0"],
+            ["pretty-quick", "virtual:eab26645c77995f669d1800e7659291b6eb4ca354dab7d0088c8366c87f52e1543a9b8db0b47fcf6f03c4e089c7482c14049aff6696cc135c03196e8daded9c2#npm:3.1.0"],
             ["@types/prettier", null],
             ["chalk", "npm:3.0.0"],
             ["execa", "npm:4.1.0"],
