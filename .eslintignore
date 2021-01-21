@@ -1,7 +1,3 @@
-.yarn/
-.yarnrc.yml
-yarn.lock
-.pnp.js
 node_modules/
 storybook-static/
 build/
@@ -9,3 +5,5 @@ dist/
 lib/
 coverage/
 public/
+.yarn/
+.pnp.js
