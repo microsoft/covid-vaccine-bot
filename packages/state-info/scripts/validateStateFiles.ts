@@ -5,13 +5,15 @@ import { State, createValidator } from './dataFileSchema'
 import { ValidationError } from 'jsonschema'
 import { readCsvFile } from './readCsvFile'
 
+const STATE_PLANS_DIR = path.join(__dirname, '../data/state_plans')
+const LOCALIZATION_TABLE_PATH = path.join(__dirname, '../dist/localization.csv')
+
 /**
  * Validate that state-level data files adhere to the schema
  */
 function validateDataFiles() {
 	const validator = createValidator()
-	const root = path.join(__dirname, '../data/state_plans')
-	const files = fs.readdirSync(root)
+	const files = fs.readdirSync(STATE_PLANS_DIR)
 	const validStringIds = getValidStringIds()
 
 	let errorCount: number = 0
@@ -22,7 +24,7 @@ function validateDataFiles() {
 	files
 		.filter((f) => f.endsWith('.json'))
 		.forEach((file) => {
-			const filePath = path.join(root, file)
+			const filePath = path.join(STATE_PLANS_DIR, file)
 			const data = require(filePath)
 			const validationResult = validator.validate(data, State)
 			const dataLinkErrors: string[] = []
@@ -63,9 +65,8 @@ function validateDataFiles() {
 validateDataFiles()
 
 function getValidStringIds(): Set<string> {
-	const localizationTableFile = path.join(__dirname, '../dist/localization.csv')
 	const records: Record<string, any>[] = []
-	readCsvFile(localizationTableFile, records)
+	readCsvFile(LOCALIZATION_TABLE_PATH, records)
 
 	let recordIds = records.map((r) => r['String ID'])
 	const result = new Set<string>()
