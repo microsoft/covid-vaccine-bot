@@ -1,8 +1,12 @@
+/*!
+ * Copyright (c) Microsoft. All rights reserved.
+ * Licensed under the MIT license. See LICENSE file in the project.
+ */
 import * as fs from 'fs'
 import * as path from 'path'
 import * as chalk from 'chalk'
-import { State, createValidator } from './dataFileSchema'
 import { ValidationError } from 'jsonschema'
+import { State, createValidator } from './dataFileSchema'
 import { readCsvFile } from './readCsvFile'
 
 const STATE_PLANS_DIR = path.join(__dirname, '../data/state_plans')
@@ -16,15 +20,16 @@ function validateDataFiles() {
 	const files = fs.readdirSync(STATE_PLANS_DIR)
 	const validStringIds = getValidStringIds()
 
-	let errorCount: number = 0
-	let schemaValidationErrors: ValidationError[] = []
-	let linkErrors: string[] = []
+	let errorCount = 0
+	const schemaValidationErrors: ValidationError[] = []
+	const linkErrors: string[] = []
 
 	// Validate each state file
 	files
 		.filter((f) => f.endsWith('.json'))
 		.forEach((file) => {
 			const filePath = path.join(STATE_PLANS_DIR, file)
+			/* eslint-disable-next-line @typescript-eslint/no-var-requires */
 			const data = require(filePath)
 			const validationResult = validator.validate(data, State)
 			const dataLinkErrors: string[] = []
@@ -65,10 +70,10 @@ function validateDataFiles() {
 validateDataFiles()
 
 function getValidStringIds(): Set<string> {
-	const records: Record<string, any>[] = []
+	const records: Record<string, string>[] = []
 	readCsvFile(LOCALIZATION_TABLE_PATH, records)
 
-	let recordIds = records.map((r) => r['String ID'])
+	const recordIds = records.map((r) => r['String ID'])
 	const result = new Set<string>()
 	recordIds.forEach((r) => result.add(r))
 	if (result.size !== recordIds.length) {
@@ -81,7 +86,7 @@ function checkStringIds(
 	stateData: Record<string, any>,
 	validStrings: Set<string>,
 	errors: string[]
-) {
+): void {
 	stateData.c19.vaccination.phases.forEach((phase: any) => {
 		phase.qualifications.forEach((qual: any) => {
 			if (!validStrings.has(qual)) {

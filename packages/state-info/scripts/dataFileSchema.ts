@@ -1,4 +1,7 @@
-
+/*!
+ * Copyright (c) Microsoft. All rights reserved.
+ * Licensed under the MIT license. See LICENSE file in the project.
+ */
 import { Validator } from 'jsonschema'
 
 export const State = {
@@ -98,8 +101,7 @@ const Region = {
 	required: ['name'],
 }
 
-
-export function createValidator() {
+export function createValidator(): Validator {
 	const v = new Validator()
 	v.addSchema(State, '/State')
 	v.addSchema(StateCovidInfo, '/StateCovid')

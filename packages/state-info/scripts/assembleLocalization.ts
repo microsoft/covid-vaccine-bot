@@ -1,8 +1,13 @@
+/*!
+ * Copyright (c) Microsoft. All rights reserved.
+ * Licensed under the MIT license. See LICENSE file in the project.
+ */
 import * as fs from 'fs'
 import * as path from 'path'
-import stringify = require('csv-stringify')
+import { createDistDir, DIST_DIR } from './createDistDir'
 import { readCsvFile } from './readCsvFile'
-import { createDistDir, DIST_DIR} from './createDistDir'
+/* eslint-disable-next-line import/order */
+import stringify = require('csv-stringify')
 
 const BASE_LOCALIZATION_DIR = path.join(__dirname, '../data/base_localization')
 const STATE_DATA_DIR = path.join(__dirname, '../data/state_localization')
@@ -23,7 +28,7 @@ function assembleLocalizationFile() {
 	})
 
 	createDistDir()
-	
+
 	stringify(records, { header: true }, (err, content) => {
 		if (err) {
 			throw err
