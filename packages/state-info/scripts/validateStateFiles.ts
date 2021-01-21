@@ -10,7 +10,7 @@ import { readCsvFile } from './readCsvFile'
  */
 function validateDataFiles() {
 	const validator = createValidator()
-	const root = path.join(__dirname, '../data/states')
+	const root = path.join(__dirname, '../data/state_plans')
 	const files = fs.readdirSync(root)
 	const validStringIds = getValidStringIds()
 

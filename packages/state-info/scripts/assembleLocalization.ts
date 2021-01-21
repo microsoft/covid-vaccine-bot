@@ -3,25 +3,22 @@ import * as path from 'path'
 import stringify = require('csv-stringify')
 import { readCsvFile } from './readCsvFile'
 
+const BASE_LOCALIZATION_DIR = path.join(__dirname, '../data/base_localization')
+const STATE_DATA_DIR = path.join(__dirname, '../data/state_localization')
+const OUTPUT_FILE = path.join(__dirname, '../dist/localization.csv')
+
 function assembleLocalizationFile() {
 	const records: unknown[] = []
-	console.log('reading base files')
-	const base = path.join(__dirname, '../data/custom-strings.csv')
-	const stateLinks = path.join(__dirname, '../data/cdc-state-links.csv')
-	const stateNames = path.join(__dirname, '../data/cdc-state-names.csv')
-  const outputFile =  path.join(__dirname, '../dist/localization.csv')
-  
-	readCsvFile(base, records)
-	readCsvFile(stateLinks, records)
-	readCsvFile(stateNames, records)
+	const baseLocalizationFiles = fs.readdirSync(BASE_LOCALIZATION_DIR)
+	baseLocalizationFiles.forEach((file) => {
+		console.log('reading ' + file)
+		readCsvFile(path.join(BASE_LOCALIZATION_DIR, file), records)
+	})
 
-	const stateDataDir = path.join(__dirname, '../data/states')
-	const localizationFiles = fs
-		.readdirSync(stateDataDir)
-		.filter((f) => f.endsWith('.csv'))
+	const localizationFiles = fs.readdirSync(STATE_DATA_DIR)
 	localizationFiles.forEach((file) => {
 		console.log('reading ' + file)
-		readCsvFile(path.join(stateDataDir, file), records)
+		readCsvFile(path.join(STATE_DATA_DIR, file), records)
 	})
 
 	stringify(records, { header: true }, (err, content) => {
@@ -29,13 +26,13 @@ function assembleLocalizationFile() {
 			throw err
 		}
 
-    console.log("generated localization table")
-		fs.writeFile(outputFile, content, (err) => {
-      if (err) {
-        throw err
-      }
-      console.log("wrote localization table")
-    })
+		console.log('generated localization table')
+		fs.writeFile(OUTPUT_FILE, content, (err) => {
+			if (err) {
+				throw err
+			}
+			console.log('wrote localization table')
+		})
 	})
 }
 
