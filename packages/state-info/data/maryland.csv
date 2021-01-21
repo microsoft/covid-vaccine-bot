@@ -1,0 +1,4 @@
+String ID,en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th
+c19.eligibility.question/essential_worker.1a.MD.judiciary_or_nursing_home_staff,Are you frontline judiciary staff or long-term care facility staff within a nursing home?,,,,,,,,,,,,,,
+c19.eligibility.question/essential_worker.1b.MD,"Are you a K-12 personnel, continuity of government staff, or developmentally disabled?",,,,,,,,,,,,,,
+c19.eligibility.question/congregate.MD,"Do you live in an assisted living facility, special needs group home, or are a high-risk inmate?",,,,,,,,,,,,,,

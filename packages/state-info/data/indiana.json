@@ -8,24 +8,34 @@
 				"text": "CDC/Indiana/state_link",
 				"url": "https://www.coronavirus.in.gov/vaccine/index.htm"
 			},
-
 			"phases": [
 				{
 					"name": "1a",
 					"active": true,
 					"qualifications": [
-						"c19.eligibility.acip.1a/healthcare_worker",
-						"c19.eligibility.acip.1a/long_term_care_resident",
-						"c19.eligibility.acip.1a/essential_worker.Indiana"
+						"c19.eligibility.question/healthcare_worker",
+						"c19.eligibility.question/long_term_care_resident",
+						"c19.eligibility.question/essential_worker.ff_leo_corrections"
 					]
 				},
 				{
 					"name": "1b",
 					"qualifications": [
-						"c19.eligibility.acip.1a/healthcare_worker",
-						"c19.eligibility.acip.1a/long_term_care_resident",
-						"c19.eligibility.acip.1b/essential_worker",
-						"c19.eligibility.acip.1b/age"
+						"c19.eligibility.question/healthcare_worker",
+						"c19.eligibility.question/long_term_care_resident",
+						"c19.eligibility.question/essential_worker.ff_leo_corrections",
+						"c19.eligibility.question/essential_worker.1b",
+						"c19.eligibility.question/age.60_up"
+					]
+				},
+				{
+					"name": "1c",
+					"qualifications": [
+						"c19.eligibility.question/healthcare_worker",
+						"c19.eligibility.question/long_term_care_resident",
+						"c19.eligibility.question/essential_worker",
+						"c19.eligibility.question/health",
+						"c19.eligibility.question/age.60_up"
 					]
 				}
 			]

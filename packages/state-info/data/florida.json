@@ -13,19 +13,30 @@
 					"name": "1a",
 					"active": true,
 					"qualifications": [
-						"c19.eligibility.acip.1a/healthcare_worker",
-						"c19.eligibility.acip.1a/long_term_care_resident",
-						"c19.eligibility.acip.1a/health.Florida",
-						"c19.eligibility.acip.1a/age.Florida"
+						"c19.eligibility.question/healthcare_worker",
+						"c19.eligibility.question/long_term_care_resident",
+						"c19.eligibility.question/health.1a.FL.extremely_vulnerable",
+						"c19.eligibility.question/age.65_up"
 					]
 				},
 				{
 					"name": "1b",
 					"qualifications": [
-						"c19.eligibility.acip.1a/healthcare_worker",
-						"c19.eligibility.acip.1a/long_term_care_resident",
-						"c19.eligibility.acip.1b/essential_worker",
-						"c19.eligibility.acip.1b/age"
+						"c19.eligibility.question/healthcare_worker",
+						"c19.eligibility.question/long_term_care_resident",
+						"c19.eligibility.question/health.FL.1a.extremely_vulnerable",
+						"c19.eligibility.question/essential_worker.1b",
+						"c19.eligibility.question/age.75_up"
+					]
+				},
+				{
+					"name": "1c",
+					"qualifications": [
+						"c19.eligibility.question/healthcare_worker",
+						"c19.eligibility.question/long_term_care_resident",
+						"c19.eligibility.question/essential_worker",
+						"c19.eligibility.question/health",
+						"c19.eligibility.question/age.65_up"
 					]
 				}
 			]

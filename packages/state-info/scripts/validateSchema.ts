@@ -66,7 +66,7 @@ const CovidVaccinationPhase = {
 			},
 		},
 	},
-	required: ['name', 'qualifications']
+	required: ['name', 'qualifications'],
 }
 
 const Link = {
@@ -110,21 +110,23 @@ function validateDataFiles() {
 	let errors: ValidationError[] = []
 
 	// Validate each state file
-	files.forEach((file) => {
-		const filePath = path.join(root, file)
-		const data = require(filePath)
-		const validationResult = validator.validate(data, State)
+	files
+		.filter((f) => f.endsWith('.json'))
+		.forEach((file) => {
+			const filePath = path.join(root, file)
+			const data = require(filePath)
+			const validationResult = validator.validate(data, State)
 
-		// handle results
-		if (validationResult.errors.length > 0) {
-			errors.push(...validationResult.errors)
-			console.log(
-				chalk.red(`❌ ${file} has ${validationResult.errors.length} errors`)
-			)
-		} else {
-			console.log(chalk.green(`✔ ${file}`))
-		}
-	})
+			// handle results
+			if (validationResult.errors.length > 0) {
+				errors.push(...validationResult.errors)
+				console.log(
+					chalk.red(`❌ ${file} has ${validationResult.errors.length} errors`)
+				)
+			} else {
+				console.log(chalk.green(`✔ ${file}`))
+			}
+		})
 
 	if (errors.length > 0) {
 		console.log(errors)

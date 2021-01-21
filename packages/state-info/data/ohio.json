@@ -13,18 +13,30 @@
 					"name": "1a",
 					"active": true,
 					"qualifications": [
-						"c19.eligibility.acip.1a/healthcare_worker",
-						"c19.eligibility.acip.1a/long_term_care_resident",
-						"c19.eligibility.acip.1a/health.Ohio"
+						"c19.eligibility.question/healthcare_worker",
+						"c19.eligibility.question/long_term_care_resident",
+						"c19.eligibility.question/health.1a.OH.psychiatric"
 					]
 				},
 				{
 					"name": "1b",
 					"qualifications": [
-						"c19.eligibility.acip.1a/healthcare_worker",
-						"c19.eligibility.acip.1a/long_term_care_resident",
-						"c19.eligibility.acip.1b/essential_worker",
-						"c19.eligibility.acip.1b/age"
+						"c19.eligibility.question/healthcare_worker",
+						"c19.eligibility.question/long_term_care_resident",
+						"c19.eligibility.question/health.1a.OH.psychiatric",
+						"c19.eligibility.question/health.1b.OH",
+						"c19.eligibility.question/essential_worker.k12",
+						"c19.eligibility.question/age.65_up"
+					]
+				},
+				{
+					"name": "1c",
+					"qualifications": [
+						"c19.eligibility.question/healthcare_worker",
+						"c19.eligibility.question/long_term_care_resident",
+						"c19.eligibility.question/essential_worker",
+						"c19.eligibility.question/health",
+						"c19.eligibility.question/age.65_up"
 					]
 				}
 			]
