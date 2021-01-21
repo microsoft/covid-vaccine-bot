@@ -8,10 +8,16 @@
 				"text": "CDC/Florida/state_link",
 				"url": "https://floridahealthcovid19.gov/covid-19-vaccines-in-florida/"
 			},
-			"phase": "1a",
-			"qualifications": [
-				"c19.eligibility.acip.1a/healthcare_worker",
-				"c19.eligibility.acip.1a/long_term_care_resident"
+			"phases": [
+				{
+					"name": "1a",
+					"active": true,
+					"qualifications": [
+						"c19.eligibility.acip.1a/healthcare_worker",
+						"c19.eligibility.acip.1a/long_term_care_resident",
+						"c19.eligibility.acip.1a/override.health.Florida"
+					]
+				}
 			]
 		}
 	}

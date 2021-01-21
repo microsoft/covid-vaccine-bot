@@ -30,8 +30,8 @@ const StateCovidInfo = {
 		vaccination: {
 			$ref: '/StateCovidVaccinationInfo',
 		},
-  },
-  required: ['vaccination']
+	},
+	required: ['vaccination'],
 }
 
 const StateCovidVaccinationInfo = {
@@ -39,13 +39,10 @@ const StateCovidVaccinationInfo = {
 	type: 'object',
 	properties: {
 		info_link: { $ref: '/Link' },
-		phase: {
-			type: 'string',
-		},
-		qualifications: {
+		phases: {
 			type: 'array',
 			items: {
-				type: 'string',
+				$ref: '/CovidVaccinationPhase',
 			},
 		},
 		regions: {
@@ -53,7 +50,23 @@ const StateCovidVaccinationInfo = {
 			items: { $ref: '/Region' },
 		},
 	},
-	required: ['info_link', 'phase', 'qualifications'],
+	required: ['info_link', 'phases'],
+}
+
+const CovidVaccinationPhase = {
+	id: '/CovidVaccinationPhase',
+	type: 'object',
+	properties: {
+		name: { type: 'string' },
+		active: { type: 'boolean' },
+		qualifications: {
+			type: 'array',
+			items: {
+				type: 'string',
+			},
+		},
+	},
+	required: ['name', 'qualifications']
 }
 
 const Link = {
@@ -73,13 +86,10 @@ const Region = {
 		name: {
 			type: 'string',
 		},
-		phase: {
-			type: 'string',
-		},
-		qualifications: {
+		phases: {
 			type: 'array',
 			items: {
-				type: 'string',
+				$ref: '/CovidVaccinationPhase',
 			},
 		},
 		regions: {
@@ -97,30 +107,32 @@ function validateDataFiles() {
 	const validator = createValidator()
 	const root = path.join(__dirname, '../data')
 	const files = fs.readdirSync(root)
-  let errors: ValidationError[] = []
+	let errors: ValidationError[] = []
 
-  // Validate each state file
+	// Validate each state file
 	files.forEach((file) => {
 		const filePath = path.join(root, file)
-    const data = require(filePath)
-    const validationResult = validator.validate(data, State)
+		const data = require(filePath)
+		const validationResult = validator.validate(data, State)
 
-    // handle results
-    if (validationResult.errors.length > 0) {
-      errors.push(...validationResult.errors)      
-      console.log(chalk.red(`❌ ${file} has ${validationResult.errors.length} errors`))
-    } else {
-      console.log(chalk.green(`✔ ${file}`))
-    }
-  })
-  
-  if (errors.length > 0) {    
-    console.log(errors)
-    console.log('💥 ' + chalk.red(`${errors.length} schema validation errors`))
-    process.exit(1)
-  } else {
-    console.log('🚀 ' + chalk.green(`all files passed schema validation`))
-  }
+		// handle results
+		if (validationResult.errors.length > 0) {
+			errors.push(...validationResult.errors)
+			console.log(
+				chalk.red(`❌ ${file} has ${validationResult.errors.length} errors`)
+			)
+		} else {
+			console.log(chalk.green(`✔ ${file}`))
+		}
+	})
+
+	if (errors.length > 0) {
+		console.log(errors)
+		console.log('💥 ' + chalk.red(`${errors.length} schema validation errors`))
+		process.exit(1)
+	} else {
+		console.log('🚀 ' + chalk.green(`all files passed schema validation`))
+	}
 }
 
 function createValidator() {
@@ -128,6 +140,7 @@ function createValidator() {
 	v.addSchema(State, '/State')
 	v.addSchema(StateCovidInfo, '/StateCovid')
 	v.addSchema(StateCovidVaccinationInfo, '/StateCovidVaccinationInfo')
+	v.addSchema(CovidVaccinationPhase, '/CovidVaccinationPhase')
 	v.addSchema(Link, '/Link')
 	v.addSchema(Region, '/Region')
 	return v

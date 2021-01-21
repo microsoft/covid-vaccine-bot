@@ -8,10 +8,15 @@
 				"text": "CDC/Louisiana/state_link",
 				"url": "https://ldh.la.gov/index.cfm/page/4042"
 			},
-			"phase": "1a",
-			"qualifications": [
-				"c19.eligibility.acip.1a/healthcare_worker",
-				"c19.eligibility.acip.1a/long_term_care_resident"
+			"phases": [
+				{
+					"name": "1a",
+					"active": true,
+					"qualifications": [
+						"c19.eligibility.acip.1a/override.healthcare_worker.Louisiana",
+						"c19.eligibility.acip.1a/long_term_care_resident"
+					]
+				}
 			]
 		}
 	}

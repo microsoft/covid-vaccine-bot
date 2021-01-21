@@ -9,10 +9,14 @@
 				"url": "https://www.dshs.state.tx.us/coronavirus/immunize/vaccine.aspx"
 			},
 			"phase": "1b",
-			"qualifications": [
-				"c19.eligibility.acip.1a/healthcare_worker",
-				"c19.eligibility.acip.1a/long_term_care_resident"
-			]
+			"phases": [{
+				"name": "1a",
+				"active": true,
+				"qualifications": [
+					"c19.eligibility.acip.1a/healthcare_worker",
+					"c19.eligibility.acip.1a/long_term_care_resident"
+				]
+			}]
 		}
 	}
 }

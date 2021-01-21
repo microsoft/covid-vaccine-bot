@@ -8,11 +8,15 @@
 				"text": "CDC/Montana/state_link",
 				"url": "https://dphhs.mt.gov/publichealth/cdepi/diseases/coronavirusvaccine/loginstate.aspx"
 			},
-			"phase": "1a",
-			"qualifications": [
-				"c19.eligibility.acip.1a/healthcare_worker",
-				"c19.eligibility.acip.1a/long_term_care_resident"
-			]
+			
+			"phases": [{
+				"name": "1a",
+				"active": true,
+				"qualifications": [
+					"c19.eligibility.acip.1a/healthcare_worker",
+					"c19.eligibility.acip.1a/long_term_care_resident"
+				]
+			}]
 		}
 	}
 }

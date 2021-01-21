@@ -8,11 +8,15 @@
 				"text": "CDC/Connecticut/state_link",
 				"url": "https://portal.ct.gov/Coronavirus/covid-19%20vaccinations"
 			},
-			"phase": "1a",
-			"qualifications": [
-				"c19.eligibility.acip.1a/healthcare_worker",
-				"c19.eligibility.acip.1a/long_term_care_resident"
-			]
+			
+			"phases": [{
+				"name": "1a",
+				"active": true,
+				"qualifications": [
+					"c19.eligibility.acip.1a/healthcare_worker",
+					"c19.eligibility.acip.1a/long_term_care_resident"
+				]
+			}]
 		}
 	}
 }
