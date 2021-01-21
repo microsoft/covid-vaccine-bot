@@ -24,7 +24,7 @@
 					"qualifications": [
 						"c19.eligibility.question/healthcare_worker",
 						"c19.eligibility.question/long_term_care_resident",
-						"c19.eligibility.question/health.FL.1a.extremely_vulnerable",
+						"c19.eligibility.question/health.1a.FL.extremely_vulnerable",
 						"c19.eligibility.question/essential_worker.1b",
 						"c19.eligibility.question/age.75_up"
 					]

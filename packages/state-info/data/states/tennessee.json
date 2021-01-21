@@ -15,7 +15,7 @@
 					"qualifications": [
 						"c19.eligibility.question/healthcare_worker",
 						"c19.eligibility.question/long_term_care_resident",
-						"c19.eligibility.acip.1a/health.1a.TN.non_independent",						
+						"c19.eligibility.question/health.1a.TN.non_independent",						
 						"c19.eligibility.question/age.75_up"
 					]
 				},
@@ -25,7 +25,7 @@
 						"c19.eligibility.question/healthcare_worker",
 						"c19.eligibility.question/long_term_care_resident",
 						"c19.eligibility.question/age.65_up",
-						"c19.eligibility.acip.1a/health.1a.TN.non_independent",
+						"c19.eligibility.question/health.1a.TN.non_independent",
 						"c19.eligibility.question/essential_worker.1b.TN"
 					]
 				},

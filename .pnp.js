@@ -110,6 +110,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@ms-covidbot/state-info", "workspace:packages/state-info"],
             ["@types/node", "npm:14.14.22"],
             ["chalk", "npm:4.1.0"],
+            ["csv-parse", "npm:4.15.0"],
+            ["csv-stringify", "npm:5.6.1"],
+            ["csv-writer", "npm:1.6.0"],
             ["jsonschema", "npm:1.4.0"],
             ["npm-run-all", "npm:4.1.5"],
             ["ts-node", "virtual:b402914054773146896e67021ecfa286eb161ad7c1d8635f9d149a84044b2504906d0b4413d74125f800a239300d971849c3ea8e571fc460cd45d078dc69de25#npm:9.1.1"],
@@ -653,6 +656,33 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["path-key", "npm:3.1.1"],
             ["shebang-command", "npm:2.0.0"],
             ["which", "npm:2.0.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["csv-parse", [
+        ["npm:4.15.0", {
+          "packageLocation": "./.yarn/cache/csv-parse-npm-4.15.0-930a6612da-b1bbedb26e.zip/node_modules/csv-parse/",
+          "packageDependencies": [
+            ["csv-parse", "npm:4.15.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["csv-stringify", [
+        ["npm:5.6.1", {
+          "packageLocation": "./.yarn/cache/csv-stringify-npm-5.6.1-81e2f2a644-4387bec9f4.zip/node_modules/csv-stringify/",
+          "packageDependencies": [
+            ["csv-stringify", "npm:5.6.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["csv-writer", [
+        ["npm:1.6.0", {
+          "packageLocation": "./.yarn/cache/csv-writer-npm-1.6.0-c64e586af4-c91c1386f6.zip/node_modules/csv-writer/",
+          "packageDependencies": [
+            ["csv-writer", "npm:1.6.0"]
           ],
           "linkType": "HARD",
         }]

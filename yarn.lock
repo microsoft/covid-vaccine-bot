@@ -56,6 +56,9 @@ __metadata:
   dependencies:
     "@types/node": ^14.14.22
     chalk: ^4.1.0
+    csv-parse: ^4.15.0
+    csv-stringify: ^5.6.1
+    csv-writer: ^1.6.0
     jsonschema: ^1.4.0
     npm-run-all: ^4.1.5
     ts-node: ^9.1.1
@@ -478,6 +481,27 @@ __metadata:
     shebang-command: ^2.0.0
     which: ^2.0.1
   checksum: 51f10036f5f1de781be98f4738d58b50c6d44f4f471069b8ab075b21605893ba1548654880f7310a29a732d6fc7cd481da6026169b9f0831cab0148a62fb397a
+  languageName: node
+  linkType: hard
+
+"csv-parse@npm:^4.15.0":
+  version: 4.15.0
+  resolution: "csv-parse@npm:4.15.0"
+  checksum: b1bbedb26ecfd5fa483845cfb58b33aa357f6ee649f96da4d20f1d4b87bb6328599531ce2895d9c0105d264302e8fc896c8eae00e130eb9ac01f99fd57c30e3e
+  languageName: node
+  linkType: hard
+
+"csv-stringify@npm:^5.6.1":
+  version: 5.6.1
+  resolution: "csv-stringify@npm:5.6.1"
+  checksum: 4387bec9f4bbd887cc1f65ed969beec77d759c33e18dd94714dd44b406b056373dc747872c8d16ad8e92f4dc3f7cd079652df91f7cd5aff37279d38b54b1e778
+  languageName: node
+  linkType: hard
+
+"csv-writer@npm:^1.6.0":
+  version: 1.6.0
+  resolution: "csv-writer@npm:1.6.0"
+  checksum: c91c1386f680e702f68903d015c9ad275e69878c9d22f085a31c95ad7b675f964fff5850ab0de33ac6f293bf0d6c4e1b2bc640cbac6cd1235aaeb027eaeef783
   languageName: node
   linkType: hard
 

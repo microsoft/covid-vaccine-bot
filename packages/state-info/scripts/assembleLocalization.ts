@@ -1,18 +1,7 @@
 import * as fs from 'fs'
 import * as path from 'path'
-import parseSync = require('csv-parse/lib/sync')
 import stringify = require('csv-stringify')
-
-function readCsvFile(file: string, output: unknown[]): void {
-	const content = fs.readFileSync(file, { encoding: 'utf-8' })
-	const records = parseSync(content, {
-		columns: true,
-		skipEmptyLines: true,
-		bom: true,
-		trim: true,
-	})
-	output.push(...records)
-}
+import { readCsvFile } from './readCsvFile'
 
 function assembleLocalizationFile() {
 	const records: unknown[] = []
