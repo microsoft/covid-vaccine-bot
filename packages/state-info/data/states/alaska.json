@@ -7,37 +7,40 @@
 			"info_link": {
 				"text": "CDC/Alaska/state_link",
 				"url": "http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/VaccineInfo.aspx"
-			},			
-			"phases": [{
-				"name": "1a",
-				"active": true,
-				"qualifications": [
-					"c19.eligibility.question/healthcare_worker",
-					"c19.eligibility.question/long_term_care_resident"
-				]
-			}, {
-				"name": "1b",
-				"qualifications": [
-					"c19.eligibility.question/healthcare_worker",
-					"c19.eligibility.question/long_term_care_resident",
-					"c19.eligibility.question/essential_worker.1b",
-					"c19.eligibility.question/age.55_up",					
-					"c19.eligibility.question/health.1b.AK",
-					"c19.eligibility.question/congregate"
-				]
 			},
-			{
-				"name": "1c",
-				"qualifications": [
-					"c19.eligibility.question/healthcare_worker",
-					"c19.eligibility.question/long_term_care_resident",
-					"c19.eligibility.question/essential_worker",
-					"c19.eligibility.question/health",
-					"c19.eligibility.question/age.55_up",
-					"c19.eligibility.question/congregate",
-					"c19.eligibility.question/unserved.1c.AK"
-				]
-			}]
+			"phases": [
+				{
+					"name": "1a",
+					"qualifications": [
+						"c19.eligibility.question/healthcare_worker",
+						"c19.eligibility.question/long_term_care_resident"
+					]
+				},
+				{
+					"name": "1b",
+					"active": true,
+					"qualifications": [
+						"c19.eligibility.question/healthcare_worker",
+						"c19.eligibility.question/long_term_care_resident",
+						"c19.eligibility.question/essential_worker.1b",
+						"c19.eligibility.question/age.55_up",
+						"c19.eligibility.question/health.1b.AK",
+						"c19.eligibility.question/congregate"
+					]
+				},
+				{
+					"name": "1c",
+					"qualifications": [
+						"c19.eligibility.question/healthcare_worker",
+						"c19.eligibility.question/long_term_care_resident",
+						"c19.eligibility.question/essential_worker",
+						"c19.eligibility.question/health",
+						"c19.eligibility.question/age.55_up",
+						"c19.eligibility.question/congregate",
+						"c19.eligibility.question/unserved.1c.AK"
+					]
+				}
+			]
 		}
 	}
 }
