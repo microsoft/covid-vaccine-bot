@@ -4,11 +4,8 @@
 	"private": true,
 	"scripts": {
 		"clean": "essex clean",
-		"validate_state_files": "ts-node scripts/validateStateFiles.ts",
-		"assemble_localization_table": "ts-node scripts/assembleLocalization.ts",
-		"assemble_datafile": "ts-node scripts/assemble.ts",
-		"build": "run-s assemble_localization_table assemble_datafile",
-		"test": "run-s validate_state_files"
+		"build": "ts-node scripts/assemble.ts",
+		"test": "ts-node scripts/validateStateFiles.ts"
 	},
 	"devDependencies": {
 		"@essex/scripts": "^12.0.2",
