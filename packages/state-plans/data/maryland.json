@@ -16,7 +16,7 @@
 						"c19.eligibility.question/healthcare_worker",
 						"c19.eligibility.question/long_term_care_resident",
 						"c19.eligibility.question/essential_worker.leo_corrections",
-						"c19.eligibility.question/essential_worker.1a.MD.judiciary_or_nursing_home_staff"						
+						"c19.eligibility.question/essential_worker.1a.MD.judiciary_or_nursing_home_staff"
 					]
 				},
 				{
@@ -30,7 +30,7 @@
 						"c19.eligibility.question/age.75_up",
 						"c19.eligibility.question/congregate.MD"
 					]
-				},				
+				},
 				{
 					"name": "1c",
 					"qualifications": [

@@ -1,12 +1,12 @@
 {
-	"name": "Connecticut",
-	"code_alpha": "CT",
-	"code_numeric": 9,
+	"name": "California",
+	"code_alpha": "CA",
+	"code_numeric": 6,
 	"c19": {
 		"vaccination": {
 			"info_link": {
-				"text": "CDC/Connecticut/state_link",
-				"url": "https://portal.ct.gov/Coronavirus/covid-19%20vaccinations"
+				"text": "CDC/California/state_link",
+				"url": "https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/COVID-19/COVID-19Vaccine.aspx"
 			},
 
 			"phases": [
@@ -23,9 +23,9 @@
 					"qualifications": [
 						"c19.eligibility.question/healthcare_worker",
 						"c19.eligibility.question/long_term_care_resident",
-						"c19.eligibility.question/essential_worker.1b",
-						"c19.eligibility.question/age.75_up",						
-						"c19.eligibility.question/congregate"
+						"c19.eligibility.question/essential_worker.1b.CA",
+						"c19.eligibility.question/age.65_up",
+						"c19.eligibility.question/congregate.CA"
 					]
 				},
 				{
@@ -35,8 +35,8 @@
 						"c19.eligibility.question/long_term_care_resident",
 						"c19.eligibility.question/essential_worker",
 						"c19.eligibility.question/health",
-						"c19.eligibility.question/age.65_up",						
-						"c19.eligibility.question/congregate"
+						"c19.eligibility.question/age.65_up",
+						"c19.eligibility.question/congregate.CA"
 					]
 				}
 			]

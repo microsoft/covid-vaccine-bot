@@ -1,35 +1,32 @@
 {
-	"name": "Georgia",
-	"code_alpha": "GA",
-	"code_numeric": 13,
+	"name": "Tennessee",
+	"code_alpha": "TN",
+	"code_numeric": 47,
 	"c19": {
 		"vaccination": {
 			"info_link": {
-				"text": "CDC/Georgia/state_link",
-				"url": "https://dph.georgia.gov/covid-vaccine"
+				"text": "CDC/Tennessee/state_link",
+				"url": "https://www.tn.gov/health/cedep/ncov/covid-19-vaccine-information.html"
 			},
-
 			"phases": [
 				{
 					"name": "1a",
-					"active": true,
 					"qualifications": [
 						"c19.eligibility.question/healthcare_worker",
-						"c19.eligibility.question/long_term_care_resident",						
-						"c19.eligibility.question/age.65_up",
-						"c19.eligibility.question/essential_worker.firefighter_leo",
-						"c19.eligibility.question/essential_worker.1a.GA.caregiver_of_65_up"
+						"c19.eligibility.question/long_term_care_resident",
+						"c19.eligibility.question/health.1a.TN.non_independent",
+						"c19.eligibility.question/age.75_up"
 					]
 				},
 				{
 					"name": "1b",
+					"active": true,
 					"qualifications": [
 						"c19.eligibility.question/healthcare_worker",
 						"c19.eligibility.question/long_term_care_resident",
 						"c19.eligibility.question/age.65_up",
-						"c19.eligibility.question/essential_worker.firefighter_leo",
-						"c19.eligibility.question/essential_worker.1a.GA.caregiver_of_65_up",
-						"c19.eligibility.question/essential_worker"
+						"c19.eligibility.question/health.1a.TN.non_independent",
+						"c19.eligibility.question/essential_worker.1b.TN"
 					]
 				},
 				{
