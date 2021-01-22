@@ -9,8 +9,8 @@ import { readCsvFile } from './readCsvFile'
 /* eslint-disable-next-line import/order */
 import stringify = require('csv-stringify')
 
-const BASE_LOCALIZATION_DIR = path.join(__dirname, '../data/base_localization')
-const STATE_DATA_DIR = path.join(__dirname, '../data/state_localization')
+const BASE_LOCALIZATION_DIR = path.join(__dirname, '../data/base')
+const STATE_DATA_DIR = path.join(__dirname, '../data/state_defs')
 const OUTPUT_FILE = path.join(DIST_DIR, 'localization.csv')
 
 function assembleLocalizationFile() {

@@ -1,5 +1,5 @@
 {
-	"name": "@ms-covidbot/state-info",
+	"name": "@ms-covidbot/state-plans",
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
@@ -12,10 +12,10 @@
 	},
 	"devDependencies": {
 		"@essex/scripts": "^12.0.2",
+		"@ms-covidbot/localization": "workspace:packages/localization",
 		"@types/node": "^14.14.22",
 		"chalk": "^4.1.0",
 		"csv-parse": "^4.15.0",
-		"csv-stringify": "^5.6.1",
 		"jsonschema": "^1.4.0",
 		"npm-run-all": "^4.1.5",
 		"ts-node": "^9.1.1",

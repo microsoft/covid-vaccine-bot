@@ -1,32 +1,32 @@
 {
-	"name": "Tennessee",
-	"code_alpha": "TN",
-	"code_numeric": 47,
+	"name": "Arkansas",
+	"code_alpha": "AR",
+	"code_numeric": 5,
 	"c19": {
 		"vaccination": {
 			"info_link": {
-				"text": "CDC/Tennessee/state_link",
-				"url": "https://www.tn.gov/health/cedep/ncov/covid-19-vaccine-information.html"
+				"text": "CDC/Arkansas/state_link",
+				"url": "https://www.healthy.arkansas.gov/programs-services/topics/covid-19-vaccination-plan"
 			},
+
 			"phases": [
 				{
 					"name": "1a",
-					"qualifications": [
-						"c19.eligibility.question/healthcare_worker",
-						"c19.eligibility.question/long_term_care_resident",
-						"c19.eligibility.question/health.1a.TN.non_independent",						
-						"c19.eligibility.question/age.75_up"
-					]
-				},
-				{
-					"name": "1b",
 					"active": true,
 					"qualifications": [
 						"c19.eligibility.question/healthcare_worker",
 						"c19.eligibility.question/long_term_care_resident",
-						"c19.eligibility.question/age.65_up",
-						"c19.eligibility.question/health.1a.TN.non_independent",
-						"c19.eligibility.question/essential_worker.1b.TN"
+						"c19.eligibility.question/essential_worker.firefighter_leo"
+					]
+				},
+				{
+					"name": "1b",
+					"qualifications": [
+						"c19.eligibility.question/healthcare_worker",
+						"c19.eligibility.question/long_term_care_resident",
+						"c19.eligibility.question/essential_worker.firefighter_leo",
+						"c19.eligibility.question/essential_worker.1b",
+						"c19.eligibility.question/age.70_up"
 					]
 				},
 				{

@@ -9,8 +9,11 @@ import { ValidationError } from 'jsonschema'
 import { State, createValidator } from './dataFileSchema'
 import { readCsvFile } from './readCsvFile'
 
-const STATE_PLANS_DIR = path.join(__dirname, '../data/state_plans')
-const LOCALIZATION_TABLE_PATH = path.join(__dirname, '../dist/localization.csv')
+const STATE_PLANS_DIR = path.join(__dirname, '../data')
+const LOCALIZATION_TABLE_PATH = path.join(
+	__dirname,
+	'../../localization/dist/localization.csv'
+)
 
 /**
  * Validate that state-level data files adhere to the schema
