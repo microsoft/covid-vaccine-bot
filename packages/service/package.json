@@ -1,6 +1,6 @@
 {
 	"name": "ms-covid-healthbot-service",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"description": "",
 	"scripts": {
 		"build:tsc": "tsc",

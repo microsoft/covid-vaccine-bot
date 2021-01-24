@@ -2,3 +2,4 @@ local.settings.json
 scripts
 node_modules
 dist
+.env
