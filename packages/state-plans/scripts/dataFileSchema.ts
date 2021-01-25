@@ -8,7 +8,9 @@ export const State = {
 	id: '/State',
 	type: 'object',
 	properties: {
-		type: 'string',
+		id: {
+			type: 'string',
+		},
 		name: {
 			type: 'string',
 		},
