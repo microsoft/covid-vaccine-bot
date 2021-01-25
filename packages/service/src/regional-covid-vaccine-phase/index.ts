@@ -4,14 +4,19 @@
  */
 import { AzureFunction, Context, HttpRequest } from '@azure/functions'
 import { fetchLocation } from './fetchLocation'
+import { fetchStatesPlans } from './fetchStatesPlans'
+import logIntercept from 'azure-function-log-intercept'
 
 const httpTrigger: AzureFunction = async function (
 	context: Context,
 	req: HttpRequest
 ): Promise<void> {
-	context.log('HTTP trigger function processed a request.')
+	logIntercept(context)
 	const zipcode = req.query.zipcode
-	const locationResults = await fetchLocation(zipcode)
+	const [locationResults, statesPlans] = await Promise.all([
+		fetchLocation(zipcode),
+		fetchStatesPlans(),
+	])
 
 	context.res = {
 		// status: 200, /* Defaults to 200 */
@@ -20,6 +25,7 @@ const httpTrigger: AzureFunction = async function (
 		},
 		body: {
 			location: locationResults,
+			statePlans: statesPlans,
 		},
 	}
 }

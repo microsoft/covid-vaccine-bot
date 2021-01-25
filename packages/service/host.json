@@ -4,8 +4,14 @@
 		"applicationInsights": {
 			"samplingSettings": {
 				"isEnabled": true,
-				"excludedTypes": "Request"
+				"excludedTypes": "Request;Exception"
 			}
+		},
+		"fileLoggingMode": "debugOnly",
+		"logLevel": {
+			"default": "Information",
+			"Host": "Error",
+			"Function": "Debug"
 		}
 	},
 	"extensionBundle": {

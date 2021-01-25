@@ -102,7 +102,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@azure/storage-blob@npm:^12.3.0":
+"@azure/storage-blob@npm:^12.3.0, @azure/storage-blob@npm:^12.4.0":
   version: 12.4.0
   resolution: "@azure/storage-blob@npm:12.4.0"
   dependencies:
@@ -3555,6 +3555,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/lru-cache@npm:^5.1.0":
+  version: 5.1.0
+  resolution: "@types/lru-cache@npm:5.1.0"
+  checksum: 55bffcbc9589163e5c02896fbd658a9e7878527c12197576e1e9b8db5b27744cfabd3dd522939835740eccd9bf348064f0e32a13b9b3019a81c8f69666499590
+  languageName: node
+  linkType: hard
+
 "@types/markdown-to-jsx@npm:^6.11.0":
   version: 6.11.3
   resolution: "@types/markdown-to-jsx@npm:6.11.3"
@@ -5065,6 +5072,13 @@ __metadata:
   version: 2.2.0
   resolution: "axobject-query@npm:2.2.0"
   checksum: c963a3ba9f30a402c32c6addf7798e6cf3471228d78b5c54bdd11f18d2b3da1bafe874bc6add142b93bf0ee0cb6a6fb3e48a992dea38ec2f5a52697498db3ac1
+  languageName: node
+  linkType: hard
+
+"azure-function-log-intercept@npm:^1.0.7":
+  version: 1.0.7
+  resolution: "azure-function-log-intercept@npm:1.0.7"
+  checksum: 40a3cdb1ea7ae3cf03de61ef4c667c31d65f44847e9fb166be21e20a60caba4ac2b7c5e5525fac40638d3031f79d9366d0b6d15e4b6c7cf53872de9461498e95
   languageName: node
   linkType: hard
 
@@ -13557,15 +13571,19 @@ fsevents@^1.2.7:
   resolution: "ms-covid-healthbot-service@workspace:packages/service"
   dependencies:
     "@azure/functions": ^1.2.2
+    "@azure/storage-blob": ^12.4.0
     "@types/debug": ^4
+    "@types/lru-cache": ^5.1.0
     "@types/minimist": ^1
     "@types/node": ^14.14.22
     "@types/node-fetch": ^2
     "@types/rimraf": ^3
+    azure-function-log-intercept: ^1.0.7
     azure-functions-core-tools: ^3.0.3233
     debug: ^4.3.1
     dotenv: ^8.2.0
     execa: ^5.0.0
+    lru-cache: ^6.0.0
     minimist: ^1.2.5
     minimist-options: ^4.1.0
     node-fetch: ^2.6.1
