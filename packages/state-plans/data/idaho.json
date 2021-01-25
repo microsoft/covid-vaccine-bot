@@ -4,11 +4,12 @@
 	"code_numeric": 16,
 	"c19": {
 		"vaccination": {
-			"info_link": {
-				"text": "CDC/Idaho/state_link",
-				"url": "https://coronavirus.idaho.gov/covid-19-vaccine/"
+			"links": {
+				"info": {
+					"text": "CDC/Idaho/state_link",
+					"url": "https://coronavirus.idaho.gov/covid-19-vaccine/"
+				}
 			},
-
 			"phases": [
 				{
 					"name": "1a",

@@ -4,9 +4,11 @@
 	"code_numeric": 1,
 	"c19": {
 		"vaccination": {
-			"info_link": {
-				"text": "CDC/Alabama/state_link",
-				"url": "https://www.alabamapublichealth.gov/covid19/vaccine.html"
+			"links": {
+				"info": {
+					"text": "CDC/Alabama/state_link",
+					"url": "https://www.alabamapublichealth.gov/covid19/vaccine.html"
+				}
 			},
 			"phases": [
 				{

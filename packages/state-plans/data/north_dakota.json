@@ -4,9 +4,11 @@
 	"code_numeric": 38,
 	"c19": {
 		"vaccination": {
-			"info_link": {
-				"text": "CDC/North_Dakota/state_link",
-				"url": "https://www.health.nd.gov/immunization-guidance-public"
+			"links": {
+				"info": {
+					"text": "CDC/North_Dakota/state_link",
+					"url": "https://www.health.nd.gov/immunization-guidance-public"
+				}
 			},
 			"phases": [
 				{

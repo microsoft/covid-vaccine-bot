@@ -5,9 +5,11 @@
 	"disabled": true,
 	"c19": {
 		"vaccination": {
-			"info_link": {
-				"text": "CDC/Marshall_Islands/state_link",
-				"url": "http://rmihealth.org/"
+			"links": {
+				"info": {
+					"text": "CDC/Marshall_Islands/state_link",
+					"url": "http://rmihealth.org/"
+				}
 			},
 			"phases": [
 				{

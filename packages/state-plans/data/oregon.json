@@ -4,9 +4,11 @@
 	"code_numeric": 41,
 	"c19": {
 		"vaccination": {
-			"info_link": {
-				"text": "CDC/Oregon/state_link",
-				"url": "https://covidvaccine.oregon.gov/"
+			"links": {
+				"info": {
+					"text": "CDC/Oregon/state_link",
+					"url": "https://covidvaccine.oregon.gov/"
+				}
 			},
 			"phases": [
 				{

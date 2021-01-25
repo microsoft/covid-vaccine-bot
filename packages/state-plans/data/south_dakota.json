@@ -4,9 +4,11 @@
 	"code_numeric": 46,
 	"c19": {
 		"vaccination": {
-			"info_link": {
-				"text": "CDC/South_Dakota/state_link",
-				"url": "https://doh.sd.gov/COVID/Vaccine/default.aspx"
+			"links": {
+				"info": {
+					"text": "CDC/South_Dakota/state_link",
+					"url": "https://doh.sd.gov/COVID/Vaccine/default.aspx"
+				}
 			},
 			"phases": [
 				{

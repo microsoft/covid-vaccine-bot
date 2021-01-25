@@ -4,9 +4,11 @@
 	"code_numeric": 47,
 	"c19": {
 		"vaccination": {
-			"info_link": {
-				"text": "CDC/Tennessee/state_link",
-				"url": "https://www.tn.gov/health/cedep/ncov/covid-19-vaccine-information.html"
+			"links": {
+				"info": {
+					"text": "CDC/Tennessee/state_link",
+					"url": "https://www.tn.gov/health/cedep/ncov/covid-19-vaccine-information.html"
+				}
 			},
 			"phases": [
 				{

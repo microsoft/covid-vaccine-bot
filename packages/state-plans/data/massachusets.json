@@ -4,9 +4,11 @@
 	"code_numeric": 25,
 	"c19": {
 		"vaccination": {
-			"info_link": {
-				"text": "CDC/Massachusetts/state_link",
-				"url": "https://www.mass.gov/info-details/massachusetts-covid-19-vaccine-information"
+			"links": {
+				"info": {
+					"text": "CDC/Massachusetts/state_link",
+					"url": "https://www.mass.gov/info-details/massachusetts-covid-19-vaccine-information"
+				}
 			},
 			"phases": [
 				{

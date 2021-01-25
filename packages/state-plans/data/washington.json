@@ -4,9 +4,14 @@
 	"code_numeric": 53,
 	"c19": {
 		"vaccination": {
-			"info_link": {
-				"text": "CDC/Washington/state_link",
-				"url": "https://www.doh.wa.gov/Emergencies/COVID19/vaccine"
+			"links": {
+				"workflow": {
+					"url": "https://form.findyourphasewa.org/210118771253954"
+				},
+				"info": {
+					"text": "CDC/Washington/state_link",
+					"url": "https://www.doh.wa.gov/Emergencies/COVID19/vaccine"
+				}
 			},
 			"phases": [
 				{

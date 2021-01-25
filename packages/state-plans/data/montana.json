@@ -4,9 +4,11 @@
 	"code_numeric": 30,
 	"c19": {
 		"vaccination": {
-			"info_link": {
-				"text": "CDC/Montana/state_link",
-				"url": "https://dphhs.mt.gov/publichealth/cdepi/diseases/coronavirusvaccine/loginstate.aspx"
+			"links": {
+				"info": {
+					"text": "CDC/Montana/state_link",
+					"url": "https://dphhs.mt.gov/publichealth/cdepi/diseases/coronavirusvaccine/loginstate.aspx"
+				}
 			},
 			"phases": [
 				{

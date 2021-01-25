@@ -4,11 +4,12 @@
 	"code_numeric": 33,
 	"c19": {
 		"vaccination": {
-			"info_link": {
-				"text": "CDC/New_Hampshire/state_link",
-				"url": "https://www.nh.gov/covid19/resources-guidance/vaccination-planning.htm"
+			"links": {
+				"info": {
+					"text": "CDC/New_Hampshire/state_link",
+					"url": "https://www.nh.gov/covid19/resources-guidance/vaccination-planning.htm"
+				}
 			},
-
 			"phases": [
 				{
 					"name": "1a",

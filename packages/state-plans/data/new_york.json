@@ -4,11 +4,12 @@
 	"code_numeric": 36,
 	"c19": {
 		"vaccination": {
-			"info_link": {
-				"text": "CDC/New_York/state_link",
-				"url": "https://covid19vaccine.health.ny.gov/"
+			"links": {
+				"info": {
+					"text": "CDC/New_York/state_link",
+					"url": "https://covid19vaccine.health.ny.gov/"
+				}
 			},
-
 			"phases": [
 				{
 					"name": "1a",

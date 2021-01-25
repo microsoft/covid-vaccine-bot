@@ -4,9 +4,11 @@
 	"code_numeric": 45,
 	"c19": {
 		"vaccination": {
-			"info_link": {
-				"text": "CDC/South_Carolina/state_link",
-				"url": "https://scdhec.gov/covid19/covid-19-vaccine"
+			"links": {
+				"info": {
+					"text": "CDC/South_Carolina/state_link",
+					"url": "https://scdhec.gov/covid19/covid-19-vaccine"
+				}
 			},
 			"phases": [
 				{

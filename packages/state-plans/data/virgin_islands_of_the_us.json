@@ -5,9 +5,11 @@
 	"disabled": true,
 	"c19": {
 		"vaccination": {
-			"info_link": {
-				"text": "CDC/Virgin_Islands/state_link",
-				"url": "https://www.covid19usvi.com/"
+			"links": {
+				"info": {
+					"text": "CDC/Virgin_Islands/state_link",
+					"url": "https://www.covid19usvi.com/"
+				}
 			},
 			"phases": [
 				{

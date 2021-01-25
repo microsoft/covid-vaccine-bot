@@ -4,11 +4,12 @@
 	"code_numeric": 6,
 	"c19": {
 		"vaccination": {
-			"info_link": {
-				"text": "CDC/California/state_link",
-				"url": "https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/COVID-19/COVID-19Vaccine.aspx"
+			"links": {
+				"info": {
+					"text": "CDC/California/state_link",
+					"url": "https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/COVID-19/COVID-19Vaccine.aspx"
+				}
 			},
-
 			"phases": [
 				{
 					"name": "1a",

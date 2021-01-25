@@ -4,9 +4,11 @@
 	"code_numeric": 27,
 	"c19": {
 		"vaccination": {
-			"info_link": {
-				"text": "CDC/Minnesota/state_link",
-				"url": "https://www.health.state.mn.us/diseases/coronavirus/vaccine.html"
+			"links": {
+				"info": {
+					"text": "CDC/Minnesota/state_link",
+					"url": "https://www.health.state.mn.us/diseases/coronavirus/vaccine.html"
+				}
 			},
 			"phases": [
 				{

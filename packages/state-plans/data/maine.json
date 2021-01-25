@@ -4,7 +4,7 @@
 	"code_numeric": 23,
 	"c19": {
 		"vaccination": {
-			"info_link": {
+			"info": {
 				"text": "CDC/Maine/state_link",
 				"url": "https://www.maine.gov/covid19/vaccines"
 			},

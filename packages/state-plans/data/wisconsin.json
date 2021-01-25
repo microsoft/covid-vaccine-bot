@@ -4,9 +4,11 @@
 	"code_numeric": 34,
 	"c19": {
 		"vaccination": {
-			"info_link": {
-				"text": "CDC/Wisconsin/state_link",
-				"url": "https://www.dhs.wisconsin.gov/covid-19/vaccine.htm"
+			"links": {
+				"info": {
+					"text": "CDC/Wisconsin/state_link",
+					"url": "https://www.dhs.wisconsin.gov/covid-19/vaccine.htm"
+				}
 			},
 			"phases": [
 				{

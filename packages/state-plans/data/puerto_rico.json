@@ -4,9 +4,11 @@
 	"code_numeric": 72,
 	"c19": {
 		"vaccination": {
-			"info_link": {
-				"text": "CDC/Puerto_Rico/state_link",
-				"url": "http://www.salud.gov.pr/Pages/coronavirus.aspx"
+			"links": {
+				"info": {
+					"text": "CDC/Puerto_Rico/state_link",
+					"url": "http://www.salud.gov.pr/Pages/coronavirus.aspx"
+				}
 			},
 			"phases": [
 				{

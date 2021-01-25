@@ -4,9 +4,11 @@
 	"code_numeric": 40,
 	"c19": {
 		"vaccination": {
-			"info_link": {
-				"text": "CDC/Oklahoma/state_link",
-				"url": "https://oklahoma.gov/covid19/vaccine-information.html"
+			"links": {
+				"info": {
+					"text": "CDC/Oklahoma/state_link",
+					"url": "https://oklahoma.gov/covid19/vaccine-information.html"
+				}
 			},
 			"phases": [
 				{

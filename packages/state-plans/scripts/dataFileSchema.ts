@@ -42,7 +42,14 @@ const StateCovidVaccinationInfo = {
 	id: '/StateCovidVaccinationInfo',
 	type: 'object',
 	properties: {
-		info_link: { $ref: '/Link' },
+		links: {
+			type: 'object',
+			properties: {
+				info: { $ref: '/Link' },
+				workflow: { $ref: '/Link' },
+			},
+			required: 'info',
+		},
 		phases: {
 			type: 'array',
 			items: {
@@ -54,7 +61,7 @@ const StateCovidVaccinationInfo = {
 			items: { $ref: '/Region' },
 		},
 	},
-	required: ['info_link', 'phases'],
+	required: ['links', 'phases'],
 }
 
 const CovidVaccinationPhase = {
@@ -80,7 +87,7 @@ const Link = {
 		text: { type: 'string' },
 		url: { type: 'string' },
 	},
-	required: ['text', 'url'],
+	required: ['url'],
 }
 
 const Region = {

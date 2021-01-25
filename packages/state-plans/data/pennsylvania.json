@@ -4,9 +4,11 @@
 	"code_numeric": 42,
 	"c19": {
 		"vaccination": {
-			"info_link": {
-				"text": "CDC/Pennsylvania/state_link",
-				"url": "https://www.health.pa.gov/topics/disease/coronavirus/Pages/Vaccine.aspx"
+			"links": {
+				"info": {
+					"text": "CDC/Pennsylvania/state_link",
+					"url": "https://www.health.pa.gov/topics/disease/coronavirus/Pages/Vaccine.aspx"
+				}
 			},
 			"phases": [
 				{

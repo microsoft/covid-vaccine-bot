@@ -4,11 +4,12 @@
 	"code_numeric": 15,
 	"c19": {
 		"vaccination": {
-			"info_link": {
-				"text": "CDC/Hawaii/state_link",
-				"url": "https://hawaiicovid19.com/vaccine/"
+			"links": {
+				"info": {
+					"text": "CDC/Hawaii/state_link",
+					"url": "https://hawaiicovid19.com/vaccine/"
+				}
 			},
-
 			"phases": [
 				{
 					"name": "1a",
