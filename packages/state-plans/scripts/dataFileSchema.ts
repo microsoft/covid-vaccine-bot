@@ -8,6 +8,7 @@ export const State = {
 	id: '/State',
 	type: 'object',
 	properties: {
+		type: 'string',
 		name: {
 			type: 'string',
 		},
@@ -21,7 +22,7 @@ export const State = {
 			$ref: '/StateCovidInfo',
 		},
 	},
-	required: ['name', 'code_alpha', 'code_numeric', 'c19'],
+	required: ['id', 'name', 'code_alpha', 'code_numeric', 'c19'],
 }
 
 const StateCovidInfo = {
@@ -84,8 +85,22 @@ const Region = {
 	id: '/Region',
 	type: 'object',
 	properties: {
+		id: {
+			type: 'string',
+		},
 		name: {
 			type: 'string',
+		},
+		alias: {
+			description:
+				'A dot-delimeted identifier into the policy tree (e.g. washington.kitsap)',
+			type: 'string',
+		},
+		is_tribal_land: {
+			type: 'boolean',
+		},
+		is_city: {
+			type: 'boolean',
 		},
 		phases: {
 			type: 'array',
