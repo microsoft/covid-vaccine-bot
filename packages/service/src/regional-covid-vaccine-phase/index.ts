@@ -2,6 +2,7 @@
  * Copyright (c) Microsoft. All rights reserved.
  * Licensed under the MIT license. See LICENSE file in the project.
  */
+// eslint-disable-next-line import/no-unresolved
 import { AzureFunction, Context, HttpRequest } from '@azure/functions'
 import logIntercept from 'azure-function-log-intercept'
 import { fetchLocation } from './fetchLocation'
