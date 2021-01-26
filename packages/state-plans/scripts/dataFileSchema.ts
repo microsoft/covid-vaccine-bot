@@ -106,16 +106,10 @@ const Region = {
 				'A dot-delimeted identifier into the policy tree (e.g. washington.kitsap)',
 			type: 'string',
 		},
-		flags: {
-			type: 'object',
-			properties: {
-				is_tribal_land: {
-					type: 'boolean',
-				},
-				is_city: {
-					type: 'boolean',
-				},
-			},
+		type: {
+			description: 'the subregion type',
+			// tribal_land || city | county
+			type: 'string',
 		},
 		phases: {
 			type: 'array',
@@ -128,7 +122,7 @@ const Region = {
 			items: { $ref: '/Region' },
 		},
 	},
-	required: ['name'],
+	required: ['name', 'type'],
 }
 
 export function createValidator(): Validator {
