@@ -1,12 +1,15 @@
 {
+	"id": "mississippi",
 	"name": "Mississippi",
 	"code_alpha": "MS",
 	"code_numeric": 28,
 	"c19": {
 		"vaccination": {
-			"info_link": {
-				"text": "CDC/Mississippi/state_link",
-				"url": "https://msdh.ms.gov/msdhsite/_static/14,0,420,976.html"
+			"links": {
+				"info": {
+					"text": "CDC/Mississippi/state_link",
+					"url": "https://msdh.ms.gov/msdhsite/_static/14,0,420,976.html"
+				}
 			},
 			"phases": [
 				{

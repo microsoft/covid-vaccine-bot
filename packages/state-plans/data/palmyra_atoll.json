@@ -1,13 +1,16 @@
 {
+	"id": "palmyra_atoll",
 	"name": "Palmyra Atoll",
 	"code_alpha": "PA",
 	"code_numeric": 95,
 	"disabled": true,
 	"c19": {
 		"vaccination": {
-			"info_link": {
-				"text": "TODO",
-				"url": "TODO"
+			"links": {
+				"info": {
+					"text": "TODO",
+					"url": "TODO"
+				}
 			},
 			"phases": [
 				{

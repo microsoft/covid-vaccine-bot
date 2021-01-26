@@ -1,13 +1,16 @@
 {
+	"id": "midway_islands",
 	"name": "Midway Islands",
 	"code_alpha": "MI",
 	"code_numeric": 71,
 	"disabled": true,
 	"c19": {
 		"vaccination": {
-			"info_link": {
-				"text": "TODO",
-				"url": "TODO"
+			"links": {
+				"info": {
+					"text": "TODO",
+					"url": "TODO"
+				}
 			},
 			"phases": [
 				{

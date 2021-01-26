@@ -1,12 +1,15 @@
 {
+	"id": "missouri",
 	"name": "Missouri",
 	"code_alpha": "MO",
 	"code_numeric": 29,
 	"c19": {
 		"vaccination": {
-			"info_link": {
-				"text": "CDC/Missouri/state_link",
-				"url": "https://covidvaccine.mo.gov/residents/"
+			"links": {
+				"info": {
+					"text": "CDC/Missouri/state_link",
+					"url": "https://covidvaccine.mo.gov/residents/"
+				}
 			},
 			"phases": [
 				{

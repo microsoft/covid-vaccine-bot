@@ -1,13 +1,16 @@
 {
+	"id": "marshall_islands",
 	"name": "Marshall Islands",
 	"code_alpha": "MH",
 	"code_numeric": 68,
 	"disabled": true,
 	"c19": {
 		"vaccination": {
-			"info_link": {
-				"text": "CDC/Marshall_Islands/state_link",
-				"url": "http://rmihealth.org/"
+			"links": {
+				"info": {
+					"text": "CDC/Marshall_Islands/state_link",
+					"url": "http://rmihealth.org/"
+				}
 			},
 			"phases": [
 				{

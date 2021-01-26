@@ -1,12 +1,15 @@
 {
+	"id": "kansas",
 	"name": "Kansas",
 	"code_alpha": "KS",
 	"code_numeric": 20,
 	"c19": {
 		"vaccination": {
-			"info_link": {
-				"text": "CDC/Kansas/state_link",
-				"url": "https://www.kansasvaccine.gov/"
+			"links": {
+				"info": {
+					"text": "CDC/Kansas/state_link",
+					"url": "https://www.kansasvaccine.gov/"
+				}
 			},
 			"phases": [
 				{

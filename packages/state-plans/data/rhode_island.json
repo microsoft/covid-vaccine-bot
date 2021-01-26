@@ -1,12 +1,15 @@
 {
+	"id": "rhode_island",
 	"name": "Rhode Island",
 	"code_alpha": "RI",
 	"code_numeric": 44,
 	"c19": {
 		"vaccination": {
-			"info_link": {
-				"text": "CDC/Rhode_Island/state_link",
-				"url": "https://covid.ri.gov/vaccination"
+			"links": {
+				"info": {
+					"text": "CDC/Rhode_Island/state_link",
+					"url": "https://covid.ri.gov/vaccination"
+				}
 			},
 			"phases": [
 				{

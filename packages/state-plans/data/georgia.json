@@ -1,14 +1,16 @@
 {
+	"id": "georgia",
 	"name": "Georgia",
 	"code_alpha": "GA",
 	"code_numeric": 13,
 	"c19": {
 		"vaccination": {
-			"info_link": {
-				"text": "CDC/Georgia/state_link",
-				"url": "https://dph.georgia.gov/covid-vaccine"
+			"links": {
+				"info": {
+					"text": "CDC/Georgia/state_link",
+					"url": "https://dph.georgia.gov/covid-vaccine"
+				}
 			},
-
 			"phases": [
 				{
 					"name": "1a",

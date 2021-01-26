@@ -1,14 +1,16 @@
 {
+	"id": "connecticut",
 	"name": "Connecticut",
 	"code_alpha": "CT",
 	"code_numeric": 9,
 	"c19": {
 		"vaccination": {
-			"info_link": {
-				"text": "CDC/Connecticut/state_link",
-				"url": "https://portal.ct.gov/Coronavirus/covid-19%20vaccinations"
+			"links": {
+				"info": {
+					"text": "CDC/Connecticut/state_link",
+					"url": "https://portal.ct.gov/Coronavirus/covid-19%20vaccinations"
+				}
 			},
-
 			"phases": [
 				{
 					"name": "1a",

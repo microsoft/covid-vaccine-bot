@@ -1,12 +1,15 @@
 {
+	"id": "vermont",
 	"name": "Vermont",
 	"code_alpha": "VT",
 	"code_numeric": 50,
 	"c19": {
 		"vaccination": {
-			"info_link": {
-				"text": "CDC/Vermont/state_link",
-				"url": "https://www.healthvermont.gov/covid-19/vaccine"
+			"links": {
+				"info": {
+					"text": "CDC/Vermont/state_link",
+					"url": "https://www.healthvermont.gov/covid-19/vaccine"
+				}
 			},
 			"phases": [
 				{

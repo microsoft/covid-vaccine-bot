@@ -1,13 +1,16 @@
 {
+	"id": "navassa_island",
 	"name": "Navassa Island",
 	"code_alpha": "NI",
 	"code_numeric": 76,
 	"disabled": true,
 	"c19": {
 		"vaccination": {
-			"info_link": {
-				"text": "TODO",
-				"url": "TODO"
+			"links": {
+				"info": {
+					"text": "TODO",
+					"url": "TODO"
+				}
 			},
 			"phases": [
 				{

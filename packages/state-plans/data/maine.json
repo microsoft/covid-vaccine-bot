@@ -1,12 +1,15 @@
 {
+	"id": "maine",
 	"name": "Maine",
 	"code_alpha": "ME",
 	"code_numeric": 23,
 	"c19": {
 		"vaccination": {
-			"info_link": {
-				"text": "CDC/Maine/state_link",
-				"url": "https://www.maine.gov/covid19/vaccines"
+			"links": {
+				"info": {
+					"text": "CDC/Maine/state_link",
+					"url": "https://www.maine.gov/covid19/vaccines"
+				}
 			},
 			"phases": [
 				{

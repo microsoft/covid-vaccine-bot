@@ -1,12 +1,15 @@
 {
+	"id": "maryland",
 	"name": "Maryland",
 	"code_alpha": "MD",
 	"code_numeric": 24,
 	"c19": {
 		"vaccination": {
-			"info_link": {
-				"text": "CDC/Maryland/state_link",
-				"url": "https://covidlink.maryland.gov/content/vaccine/"
+			"links": {
+				"info": {
+					"text": "CDC/Maryland/state_link",
+					"url": "https://covidlink.maryland.gov/content/vaccine/"
+				}
 			},
 			"phases": [
 				{

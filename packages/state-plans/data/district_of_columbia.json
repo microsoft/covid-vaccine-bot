@@ -1,12 +1,15 @@
 {
+	"id": "district_of_columbia",
 	"name": "District of Columbia",
 	"code_alpha": "DC",
 	"code_numeric": 11,
 	"c19": {
 		"vaccination": {
-			"info_link": {
-				"text": "CDC/District_Of_Columbia/state_link",
-				"url": "https://coronavirus.dc.gov/vaccine"
+			"links": {
+				"info": {
+					"text": "CDC/District_Of_Columbia/state_link",
+					"url": "https://coronavirus.dc.gov/vaccine"
+				}
 			},
 			"phases": [
 				{

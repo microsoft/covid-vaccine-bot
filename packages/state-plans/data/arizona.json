@@ -1,12 +1,15 @@
 {
+	"id": "arizona",
 	"name": "Arizona",
 	"code_alpha": "AZ",
 	"code_numeric": 4,
 	"c19": {
 		"vaccination": {
-			"info_link": {
-				"text": "CDC/Arizona/state_link",
-				"url": "https://azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-vaccine"
+			"links": {
+				"info": {
+					"text": "CDC/Arizona/state_link",
+					"url": "https://azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-vaccine"
+				}
 			},
 			"phases": [
 				{

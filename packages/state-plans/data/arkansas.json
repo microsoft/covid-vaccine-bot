@@ -1,14 +1,16 @@
 {
+	"id": "arkansas",
 	"name": "Arkansas",
 	"code_alpha": "AR",
 	"code_numeric": 5,
 	"c19": {
 		"vaccination": {
-			"info_link": {
-				"text": "CDC/Arkansas/state_link",
-				"url": "https://www.healthy.arkansas.gov/programs-services/topics/covid-19-vaccination-plan"
+			"links": {
+				"info": {
+					"text": "CDC/Arkansas/state_link",
+					"url": "https://www.healthy.arkansas.gov/programs-services/topics/covid-19-vaccination-plan"
+				}
 			},
-
 			"phases": [
 				{
 					"name": "1a",

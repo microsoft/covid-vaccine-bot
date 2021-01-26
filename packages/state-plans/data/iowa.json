@@ -1,12 +1,15 @@
 {
+	"id": "iowa",
 	"name": "Iowa",
 	"code_alpha": "IA",
 	"code_numeric": 19,
 	"c19": {
 		"vaccination": {
-			"info_link": {
-				"text": "CDC/Iowa/state_link",
-				"url": "https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus/Vaccine"
+			"links": {
+				"info": {
+					"text": "CDC/Iowa/state_link",
+					"url": "https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus/Vaccine"
+				}
 			},
 			"phases": [
 				{
