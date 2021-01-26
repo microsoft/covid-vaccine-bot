@@ -1,14 +1,16 @@
 {
+	"id": "delaware",
 	"name": "Delaware",
 	"code_alpha": "DE",
 	"code_numeric": 10,
 	"c19": {
 		"vaccination": {
-			"info_link": {
-				"text": "CDC/Delaware/state_link",
-				"url": "https://coronavirus.delaware.gov/vaccine/"
+			"links": {
+				"info": {
+					"text": "CDC/Delaware/state_link",
+					"url": "https://coronavirus.delaware.gov/vaccine/"
+				}
 			},
-
 			"phases": [
 				{
 					"name": "1a",

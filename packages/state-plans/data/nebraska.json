@@ -1,14 +1,16 @@
 {
+	"id": "nebraska",
 	"name": "Nebraska",
 	"code_alpha": "NE",
 	"code_numeric": 31,
 	"c19": {
 		"vaccination": {
-			"info_link": {
-				"text": "CDC/Nebraska/state_link",
-				"url": "http://dhhs.ne.gov/Pages/COVID-19-Vaccine-Information.aspx"
+			"links": {
+				"info": {
+					"text": "CDC/Nebraska/state_link",
+					"url": "http://dhhs.ne.gov/Pages/COVID-19-Vaccine-Information.aspx"
+				}
 			},
-
 			"phases": [
 				{
 					"name": "1a",

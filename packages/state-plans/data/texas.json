@@ -1,12 +1,15 @@
 {
+	"id": "texas",
 	"name": "Texas",
 	"code_alpha": "TX",
 	"code_numeric": 48,
 	"c19": {
 		"vaccination": {
-			"info_link": {
-				"text": "CDC/Texas/state_link",
-				"url": "https://www.dshs.state.tx.us/coronavirus/immunize/vaccine.aspx"
+			"links": {
+				"info": {
+					"text": "CDC/Texas/state_link",
+					"url": "https://www.dshs.state.tx.us/coronavirus/immunize/vaccine.aspx"
+				}
 			},
 			"phases": [
 				{

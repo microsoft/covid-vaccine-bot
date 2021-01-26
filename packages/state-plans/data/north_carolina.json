@@ -1,12 +1,15 @@
 {
+	"id": "north_carolina",
 	"name": "North Carolina",
 	"code_alpha": "NC",
 	"code_numeric": 37,
 	"c19": {
 		"vaccination": {
-			"info_link": {
-				"text": "CDC/North_Carolina/state_link",
-				"url": "https://covid19.ncdhhs.gov/vaccines"
+			"links": {
+				"info": {
+					"text": "CDC/North_Carolina/state_link",
+					"url": "https://covid19.ncdhhs.gov/vaccines"
+				}
 			},
 			"phases": [
 				{

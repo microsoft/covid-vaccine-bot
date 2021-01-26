@@ -1,12 +1,15 @@
 {
+	"id": "new_mexico",
 	"name": "New Mexico",
 	"code_alpha": "NM",
 	"code_numeric": 35,
 	"c19": {
 		"vaccination": {
-			"info_link": {
-				"text": "CDC/New_Mexico/state_link",
-				"url": "https://cv.nmhealth.org/covid-vaccine/"
+			"links": {
+				"info": {
+					"text": "CDC/New_Mexico/state_link",
+					"url": "https://cv.nmhealth.org/covid-vaccine/"
+				}
 			},
 			"phases": [
 				{

@@ -1,12 +1,15 @@
 {
+	"id": "louisiana",
 	"name": "Louisiana",
 	"code_alpha": "LA",
 	"code_numeric": 22,
 	"c19": {
 		"vaccination": {
-			"info_link": {
-				"text": "CDC/Louisiana/state_link",
-				"url": "https://ldh.la.gov/index.cfm/page/4042"
+			"links": {
+				"info": {
+					"text": "CDC/Louisiana/state_link",
+					"url": "https://ldh.la.gov/index.cfm/page/4042"
+				}
 			},
 			"phases": [
 				{

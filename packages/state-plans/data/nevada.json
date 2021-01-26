@@ -1,12 +1,15 @@
 {
+	"id": "nevada",
 	"name": "Nevada",
 	"code_alpha": "NV",
 	"code_numeric": 32,
 	"c19": {
 		"vaccination": {
-			"info_link": {
-				"text": "CDC/Nevada/state_link",
-				"url": "https://www.immunizenevada.org/nv-covid-fighter"
+			"links": {
+				"info": {
+					"text": "CDC/Nevada/state_link",
+					"url": "https://www.immunizenevada.org/nv-covid-fighter"
+				}
 			},
 			"phases": [
 				{

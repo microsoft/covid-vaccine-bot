@@ -1,12 +1,15 @@
 {
+	"id": "kentucky",
 	"name": "Kentucky",
 	"code_alpha": "KY",
 	"code_numeric": 21,
 	"c19": {
 		"vaccination": {
-			"info_link": {
-				"text": "CDC/Kentucky/state_link",
-				"url": "https://govstatus.egov.com/ky-covid-vaccine"
+			"links": {
+				"info": {
+					"text": "CDC/Kentucky/state_link",
+					"url": "https://govstatus.egov.com/ky-covid-vaccine"
+				}
 			},
 			"phases": [
 				{

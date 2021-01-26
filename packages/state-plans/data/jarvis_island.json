@@ -1,13 +1,16 @@
 {
+	"id": "jarvis_island",
 	"name": "Jarvis Island",
 	"code_alpha": "JI",
 	"code_numeric": 86,
 	"disabled": true,
 	"c19": {
 		"vaccination": {
-			"info_link": {
-				"text": "TODO",
-				"url": "TODO"
+			"links": {
+				"info": {
+					"text": "TODO",
+					"url": "TODO"
+				}
 			},
 			"phases": [
 				{

@@ -1,13 +1,16 @@
 {
+	"id": "palau",
 	"name": "Palau",
 	"code_alpha": "PW",
 	"code_numeric": 70,
 	"disabled": true,
 	"c19": {
 		"vaccination": {
-			"info_link": {
-				"text": "CDC/Palau/state_link",
-				"url": "http://www.palauhealth.org/"
+			"links": {
+				"info": {
+					"text": "CDC/Palau/state_link",
+					"url": "http://www.palauhealth.org/"
+				}
 			},
 			"phases": [
 				{

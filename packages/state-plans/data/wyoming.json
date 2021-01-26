@@ -1,12 +1,15 @@
 {
+	"id": "wyoming",
 	"name": "Wyoming",
 	"code_alpha": "WY",
 	"code_numeric": 56,
 	"c19": {
 		"vaccination": {
-			"info_link": {
-				"text": "CDC/Wyoming/state_link",
-				"url": "https://health.wyo.gov/publichealth/immunization/wyoming-covid-19-vaccine-information/"
+			"links": {
+				"info": {
+					"text": "CDC/Wyoming/state_link",
+					"url": "https://health.wyo.gov/publichealth/immunization/wyoming-covid-19-vaccine-information/"
+				}
 			},
 			"phases": [
 				{

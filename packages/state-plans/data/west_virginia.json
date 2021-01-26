@@ -1,12 +1,15 @@
 {
+	"id": "west_virginia",
 	"name": "West Virginia",
 	"code_alpha": "WV",
 	"code_numeric": 54,
 	"c19": {
 		"vaccination": {
-			"info_link": {
-				"text": "CDC/West_Virginia/state_link",
-				"url": "https://dhhr.wv.gov/COVID-19/Pages/Vaccine.aspx"
+			"links": {
+				"info": {
+					"text": "CDC/West_Virginia/state_link",
+					"url": "https://dhhr.wv.gov/COVID-19/Pages/Vaccine.aspx"
+				}
 			},
 			"phases": [
 				{

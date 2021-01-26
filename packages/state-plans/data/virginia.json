@@ -1,12 +1,15 @@
 {
+	"id": "virginia",
 	"name": "Virginia",
 	"code_alpha": "VA",
 	"code_numeric": 51,
 	"c19": {
 		"vaccination": {
-			"info_link": {
-				"text": "CDC/Virginia/state_link",
-				"url": "https://www.vdh.virginia.gov/covid-19-vaccine/"
+			"links": {
+				"info": {
+					"text": "CDC/Virginia/state_link",
+					"url": "https://www.vdh.virginia.gov/covid-19-vaccine/"
+				}
 			},
 			"phases": [
 				{

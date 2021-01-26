@@ -8,6 +8,9 @@ export const State = {
 	id: '/State',
 	type: 'object',
 	properties: {
+		id: {
+			type: 'string',
+		},
 		name: {
 			type: 'string',
 		},
@@ -21,7 +24,7 @@ export const State = {
 			$ref: '/StateCovidInfo',
 		},
 	},
-	required: ['name', 'code_alpha', 'code_numeric', 'c19'],
+	required: ['id', 'name', 'code_alpha', 'code_numeric', 'c19'],
 }
 
 const StateCovidInfo = {
@@ -39,7 +42,15 @@ const StateCovidVaccinationInfo = {
 	id: '/StateCovidVaccinationInfo',
 	type: 'object',
 	properties: {
-		info_link: { $ref: '/Link' },
+		links: {
+			type: 'object',
+			properties: {
+				info: { $ref: '/Link' },
+				workflow: { $ref: '/Link' },
+				scheduling_phone: { $ref: '/Link' },
+			},
+			required: ['info'],
+		},
 		phases: {
 			type: 'array',
 			items: {
@@ -51,7 +62,7 @@ const StateCovidVaccinationInfo = {
 			items: { $ref: '/Region' },
 		},
 	},
-	required: ['info_link', 'phases'],
+	required: ['links', 'phases'],
 }
 
 const CovidVaccinationPhase = {
@@ -77,14 +88,27 @@ const Link = {
 		text: { type: 'string' },
 		url: { type: 'string' },
 	},
-	required: ['text', 'url'],
+	required: ['url'],
 }
 
 const Region = {
 	id: '/Region',
 	type: 'object',
 	properties: {
+		id: {
+			type: 'string',
+		},
 		name: {
+			type: 'string',
+		},
+		alias: {
+			description:
+				'A dot-delimeted identifier into the policy tree (e.g. washington.kitsap)',
+			type: 'string',
+		},
+		type: {
+			description: 'the subregion type',
+			// tribal_land || city | county
 			type: 'string',
 		},
 		phases: {
@@ -98,7 +122,7 @@ const Region = {
 			items: { $ref: '/Region' },
 		},
 	},
-	required: ['name'],
+	required: ['name', 'type'],
 }
 
 export function createValidator(): Validator {

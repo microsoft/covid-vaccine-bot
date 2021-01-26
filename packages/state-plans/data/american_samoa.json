@@ -1,15 +1,17 @@
 {
+	"id": "american_samoa",
 	"name": "American Samoa",
 	"code_alpha": "AS",
 	"code_numeric": 60,
 	"disabled": true,
 	"c19": {
 		"vaccination": {
-			"info_link": {
-				"text": "CDC/American_Samoa/state_link",
-				"url": "https://www.americansamoa.gov/"
+			"links": {
+				"info": {
+					"text": "CDC/American_Samoa/state_link",
+					"url": "https://www.americansamoa.gov/"
+				}
 			},
-
 			"phases": [
 				{
 					"name": "1a",

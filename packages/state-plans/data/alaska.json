@@ -1,12 +1,15 @@
 {
+	"id": "alaska",
 	"name": "Alaska",
 	"code_alpha": "AK",
 	"code_numeric": 2,
 	"c19": {
 		"vaccination": {
-			"info_link": {
-				"text": "CDC/Alaska/state_link",
-				"url": "http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/VaccineInfo.aspx"
+			"links": {
+				"info": {
+					"text": "CDC/Alaska/state_link",
+					"url": "http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/VaccineInfo.aspx"
+				}
 			},
 			"phases": [
 				{

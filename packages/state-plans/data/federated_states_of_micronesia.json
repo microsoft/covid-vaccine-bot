@@ -1,15 +1,17 @@
 {
+	"id": "fs_micronesia",
 	"name": "Federated States of Micronesia",
 	"code_alpha": "FM",
 	"code_numeric": 64,
 	"disabled": true,
 	"c19": {
 		"vaccination": {
-			"info_link": {
-				"text": "CDC/Federated_States_Of_Micronesia/state_link",
-				"url": "https://www.fsmgov.org/index.html"
+			"links": {
+				"info": {
+					"text": "CDC/Federated_States_Of_Micronesia/state_link",
+					"url": "https://www.fsmgov.org/index.html"
+				}
 			},
-
 			"phases": [
 				{
 					"name": "1a",

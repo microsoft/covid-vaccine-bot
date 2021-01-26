@@ -1,14 +1,16 @@
 {
+	"id": "new_jersey",
 	"name": "New Jersey",
 	"code_alpha": "NJ",
 	"code_numeric": 34,
 	"c19": {
 		"vaccination": {
-			"info_link": {
-				"text": "CDC/New_Jersey/state_link",
-				"url": "https://www.nj.gov/health/cd/topics/covid2019_vaccination.shtml"
+			"links": {
+				"info": {
+					"text": "CDC/New_Jersey/state_link",
+					"url": "https://www.nj.gov/health/cd/topics/covid2019_vaccination.shtml"
+				}
 			},
-
 			"phases": [
 				{
 					"name": "1a",

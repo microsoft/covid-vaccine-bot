@@ -1,12 +1,15 @@
 {
+	"id": "colorado",
 	"name": "Colorado",
 	"code_alpha": "CO",
 	"code_numeric": 8,
 	"c19": {
 		"vaccination": {
-			"info_link": {
-				"text": "CDC/Colorado/state_link",
-				"url": "https://covid19.colorado.gov/vaccine"
+			"links": {
+				"info": {
+					"text": "CDC/Colorado/state_link",
+					"url": "https://covid19.colorado.gov/vaccine"
+				}
 			},
 			"phases": [
 				{
