@@ -47,8 +47,9 @@ const StateCovidVaccinationInfo = {
 			properties: {
 				info: { $ref: '/Link' },
 				workflow: { $ref: '/Link' },
+				scheduling_phone: { $ref: '/Link' },
 			},
-			required: 'info',
+			required: ['info'],
 		},
 		phases: {
 			type: 'array',
@@ -105,11 +106,16 @@ const Region = {
 				'A dot-delimeted identifier into the policy tree (e.g. washington.kitsap)',
 			type: 'string',
 		},
-		is_tribal_land: {
-			type: 'boolean',
-		},
-		is_city: {
-			type: 'boolean',
+		flags: {
+			type: 'object',
+			properties: {
+				is_tribal_land: {
+					type: 'boolean',
+				},
+				is_city: {
+					type: 'boolean',
+				},
+			},
 		},
 		phases: {
 			type: 'array',
