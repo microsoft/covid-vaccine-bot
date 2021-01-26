@@ -17,9 +17,9 @@ export interface Location {
 }
 
 export async function fetchLocation(zipcode: string): Promise<Location> {
-	let location = locationCache.get(zipcode)
+	let location: Location | undefined = locationCache.get(zipcode)
 
-	if (location != null) {
+	if (location !== undefined) {
 		console.log(`Returning cached location for ${zipcode}.`)
 		return location
 	}
@@ -29,7 +29,7 @@ export async function fetchLocation(zipcode: string): Promise<Location> {
 	const url = `${config.locationsApi}?query=${zipcode}&key=${config.locationsApiKey}`
 
 	const results = await fetch(url).then((res) => res.json())
-	location = results.resourceSets[0].resources[0].address
+	location = results.resourceSets[0].resources[0].address as Location
 	locationCache.set(zipcode, location)
 	return location
 }

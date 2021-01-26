@@ -7,11 +7,14 @@
 				"excludedTypes": "Request;Exception"
 			}
 		},
-		"fileLoggingMode": "debugOnly",
+		"fileLoggingMode": "always",
 		"logLevel": {
 			"default": "Information",
 			"Host": "Error",
 			"Function": "Debug"
+		},
+		"console": {
+			"isEnabled": true
 		}
 	},
 	"extensionBundle": {

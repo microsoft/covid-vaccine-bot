@@ -1,16 +1,16 @@
 {
 	"name": "ms-covid-healthbot-service",
-	"version": "0.0.4",
+	"version": "0.0.6",
 	"description": "",
 	"scripts": {
 		"build:tsc": "tsc",
-		"build:docker": "yarn node ./scripts/build.js --imageNameSpace ${AZ_CONTAINER_REGISTRY} --skipVersionTag --verbose",
-		"bundle": "yarn node ./scripts/build.js --imageNameSpace ${AZ_CONTAINER_REGISTRY} --verbose",
+		"build:docker": "yarn node ./scripts/build.js --imageNameSpace ${AZ_CONTAINER_REGISTRY} --skipVersionTag",
+		"bundle": "yarn node ./scripts/build.js --imageNameSpace ${AZ_CONTAINER_REGISTRY}",
 		"clean": "rimraf dist",
 		"start:tsc": "tsc -w",
 		"start:func": "func start",
-		"start:docker": "docker run --rm -p 7071:80 ${AZ_CONTAINER_REGISTRY}/$(node -p 'require(\"./package.json\").name')",
-		"deploy": "yarn node ./scripts/deploy.js --containerRegistry ${AZ_CONTAINER_REGISTRY} -u ${DOCKER_USER} -p ${DOCKER_PASSWORD} --verbose",
+		"start:docker": "docker run -t -i --rm -p 7071:80 --env-file .env ${AZ_CONTAINER_REGISTRY}/$(node -p 'require(\"./package.json\").name')",
+		"deploy": "yarn node ./scripts/deploy.js --containerRegistry ${AZ_CONTAINER_REGISTRY} -u ${DOCKER_USER} -p ${DOCKER_PASSWORD}",
 		"start": "run-p start:tsc start:func"
 	},
 	"devDependencies": {
