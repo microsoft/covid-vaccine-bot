@@ -3,7 +3,6 @@
  * Licensed under the MIT license. See LICENSE file in the project.
  */
 
-// @ts-ignore
 import LRU from 'lru-cache'
 import { Location } from './fetchLocation'
 
