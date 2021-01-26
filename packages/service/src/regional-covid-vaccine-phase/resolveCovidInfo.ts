@@ -16,7 +16,10 @@ export interface CovidInfo {
 	qualifications: string[]
 }
 
-export function resolveCovidInfo(location: Location, statesPlans: any) {
+export function resolveCovidInfo(
+	location: Location,
+	statesPlans: any
+): Promise<any> {
 	return (
 		statesPlans.filter((plan: any) => {
 			return plan.code_alpha === location.adminDistrict

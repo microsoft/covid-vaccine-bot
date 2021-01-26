@@ -3,9 +3,9 @@
  * Licensed under the MIT license. See LICENSE file in the project.
  */
 import { AzureFunction, Context, HttpRequest } from '@azure/functions'
+import logIntercept from 'azure-function-log-intercept'
 import { fetchLocation } from './fetchLocation'
 import { fetchStatesPlans } from './fetchStatesPlans'
-import logIntercept from 'azure-function-log-intercept'
 import { resolveCovidInfo } from './resolveCovidInfo'
 
 const httpTrigger: AzureFunction = async function (

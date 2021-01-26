@@ -2,12 +2,12 @@
  * Copyright (c) Microsoft. All rights reserved.
  * Licensed under the MIT license. See LICENSE file in the project.
  */
+const path = require('path')
+const debug = require('debug')
 const execa = require('execa')
 const minimist = require('minimist')
 const buildOptions = require('minimist-options')
-const debug = require('debug')
 const packageInfo = require('../package.json')
-const path = require('path')
 const validate = require('./validate')
 
 require('dotenv').config({ path: path.resolve(__dirname, '../.env') })

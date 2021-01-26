@@ -9,7 +9,7 @@ import { statesPlansCache } from './statesPlansCache'
 
 const STATES_PLANS_KEY = 'statesPlans'
 
-export async function fetchStatesPlans() {
+export async function fetchStatesPlans(): Promise<any> {
 	let statesPlans = statesPlansCache.get(STATES_PLANS_KEY)
 
 	if (statesPlans != null) {
