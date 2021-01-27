@@ -1,0 +1,8 @@
+{
+	"id": "us_virgin_islands",
+	"name": "U.S. Virgin Islands",
+	"code_alpha": "VI",
+	"code_numeric": 78,
+	"disabled": true,
+	"type": "territory"
+}

@@ -1,0 +1,8 @@
+{
+	"id": "american_samoa",
+	"name": "American Samoa",
+	"code_alpha": "AS",
+	"code_numeric": 60,
+	"disabled": true,
+	"type": "territory"
+}

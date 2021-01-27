@@ -1,0 +1,37 @@
+{
+	"links": {
+		"info": {
+			"text": "c19.link/info.text.GU",
+			"url": "https://dphss.guam.gov/"
+		}
+	},
+	"phases": [
+		{
+			"id": "1a",
+			"active": true,
+			"qualifications": [
+				"c19.eligibility.question/healthcare_worker",
+				"c19.eligibility.question/long_term_care_resident"
+			]
+		},
+		{
+			"id": "1b",
+			"qualifications": [
+				"c19.eligibility.question/healthcare_worker",
+				"c19.eligibility.question/long_term_care_resident",
+				"c19.eligibility.question/essential_worker.1b",
+				"c19.eligibility.question/age.75_up"
+			]
+		},
+		{
+			"id": "1c",
+			"qualifications": [
+				"c19.eligibility.question/healthcare_worker",
+				"c19.eligibility.question/long_term_care_resident",
+				"c19.eligibility.question/essential_worker",
+				"c19.eligibility.question/health",
+				"c19.eligibility.question/age.65_up"
+			]
+		}
+	]
+}

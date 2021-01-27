@@ -1,0 +1,8 @@
+{
+	"id": "guam",
+	"name": "Guam",
+	"code_alpha": "GU",
+	"code_numeric": 66,
+	"disabled": true,
+	"type": "territory"
+}
