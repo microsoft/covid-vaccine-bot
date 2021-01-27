@@ -4281,6 +4281,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["ajv", "npm:7.0.3"],
             ["chalk", "npm:4.1.0"],
             ["csv-parse", "npm:4.15.0"],
+            ["csv-stringify", "npm:5.6.1"],
             ["jsonschema", "npm:1.4.0"],
             ["npm-run-all", "npm:4.1.5"],
             ["ts-node", "virtual:7c2f27fe57bb10a065335507c540b7b95000943905041c317b9249ebfd73fce8bfe9870ea4cacd2a185c551ed09b7c8bbde2b2c2d560a368503ba72c6993900d#npm:9.1.1"],

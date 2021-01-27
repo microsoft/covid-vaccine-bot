@@ -8,11 +8,9 @@ import { ValidationError } from 'jsonschema'
 import { getFiles, DATA_DIR } from './getFiles'
 import { readCsvFile } from './readCsvFile'
 import { validateRegionInfo, validateVaccinationPlan } from './schema'
+import { DIST_DIR } from './createDistDir'
 
-const LOCALIZATION_TABLE_PATH = path.join(
-	__dirname,
-	'../../localization/dist/localization.csv'
-)
+const LOCALIZATION_TABLE_PATH = path.join(DIST_DIR, 'localization.csv')
 const POLICY_DIR = path.join(DATA_DIR, 'policies')
 
 /**

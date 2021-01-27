@@ -8,7 +8,7 @@ import * as path from 'path'
 import { DIST_DIR, createDistDir } from './createDistDir'
 import { getFiles, DATA_DIR } from './getFiles'
 
-const STATE_PATHS = fs.readdirSync(DATA_DIR)
+const POLICIES_DIR = path.join(DATA_DIR, 'policies')
 
 /**
  * Assembles a state's information into a combined JSON file.
@@ -17,8 +17,8 @@ const STATE_PATHS = fs.readdirSync(DATA_DIR)
  */
 function assembleState(state: string) {
 	console.log('assembling ' + state)
-	const rootInfo = require(path.join(DATA_DIR, state, 'info.json'))
-	const vaxPlan = require(path.join(DATA_DIR, state, 'vaccination.json'))
+	const rootInfo = require(path.join(POLICIES_DIR, state, 'info.json'))
+	const vaxPlan = require(path.join(POLICIES_DIR, state, 'vaccination.json'))
 
 	fs.writeFileSync(
 		path.join(DIST_DIR, 'states', `${state}.json`),
@@ -34,7 +34,8 @@ function assembleState(state: string) {
 	)
 }
 function assembleStates() {
-	STATE_PATHS.forEach(assembleState)
+	const statePaths = fs.readdirSync(POLICIES_DIR)
+	statePaths.forEach(assembleState)
 }
 
 function assembleAllData() {
