@@ -1,2 +1,7 @@
 String ID,en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th
 c19.eligibility.question/congregate.AZ,Do you live with high-risk conditions in a congregate setting?,,,,,,,,,,,,,,
+c19.eligibility.question/healthcare_worker.AZ,Are you a healthcare or healthcare support worker?,,,,,,,,,,,,,,
+c19.eligibility.question/long_term_care_resident.AZ,"Are you a long-term care resident, or do you work in a long-term care facility?",,,,,,,,,,,,,,
+c19.eligibility.question/ems_worker.AZ,Are you an emergency medical services worker?,,,,,,,,,,,,,,
+c19.eligibility.question/education_childcare_worker.AZ,Are you an education or child-care worker?,,,,,,,,,,,,,,
+c19.eligibility.question/proctective_services_worker.AZ,Are you a protective services worker?,,,,,,,,,,,,,,

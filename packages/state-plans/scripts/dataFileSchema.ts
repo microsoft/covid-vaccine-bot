@@ -69,8 +69,26 @@ const CovidVaccinationPhase = {
 	id: '/CovidVaccinationPhase',
 	type: 'object',
 	properties: {
-		name: { type: 'string' },
-		active: { type: 'boolean' },
+		id: {
+			description:
+				'An identifier for the vaccination phase. The identifier should be unique in the phase array',
+			type: 'string',
+		},
+		extends: {
+			description:
+				'The base phase that this phase should extend: (e.g. arizona.1a)',
+			type: 'string',
+		},
+		label: {
+			description:
+				'An optional label to present when displaying information about the phase. The system will be "Phase " + phase.id.toUpperCase()',
+			type: 'string',
+		},
+		active: {
+			description:
+				'A flag indicating that this phase is currently active for the region. Only one phase in the phase array should be marked as active.',
+			type: 'boolean',
+		},
 		qualifications: {
 			type: 'array',
 			items: {
@@ -78,7 +96,7 @@ const CovidVaccinationPhase = {
 			},
 		},
 	},
-	required: ['name', 'qualifications'],
+	required: ['id', 'qualifications'],
 }
 
 const Link = {
