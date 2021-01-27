@@ -10,6 +10,17 @@ pool:
   vmImage: 'windows-latest'
 
 steps:
+
+- task: Semmle@0
+  inputs:
+    sourceCodeDirectory: '$(Build.SourcesDirectory)'
+    language: 'tsandjs'
+    includeNodeModules: true
+    querySuite: 'Recommended'
+    timeout: '1800'
+    ram: '16384'
+    addProjectDirToScanningExclusionList: true
+    
 - task: CredScan@2
   inputs:
     toolMajorVersion: 'V2'
