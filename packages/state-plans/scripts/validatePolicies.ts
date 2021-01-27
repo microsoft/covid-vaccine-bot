@@ -107,12 +107,22 @@ function checkStringIds(
 	validStrings: Set<string>,
 	errors: string[]
 ): void {
+	function checkString(str: string): void {
+		if (!validStrings.has(str)) {
+			errors.push(`no defined string with id "${str}"`)
+		}
+	}
+
+	Object.keys(vaccinationPlan.links).forEach((link) => {
+		if (vaccinationPlan.links[link].text) {
+			checkString(vaccinationPlan.links[link].text)
+		}
+		if (vaccinationPlan.links[link].description) {
+			checkString(vaccinationPlan.links[link].description)
+		}
+	})
 	vaccinationPlan.phases.forEach((phase: Phase) => {
-		phase.qualifications.forEach((qual: Qualification) => {
-			if (!validStrings.has(qual)) {
-				errors.push(`no defined string, "${qual}"`)
-			}
-		})
+		phase.qualifications.forEach((qual: Qualification) => checkString(qual))
 	})
 	if (vaccinationPlan.regions != null) {
 		vaccinationPlan.regions.forEach((region: Region) => {
