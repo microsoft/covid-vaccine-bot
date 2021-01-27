@@ -5,13 +5,12 @@
 import * as path from 'path'
 import * as chalk from 'chalk'
 import { ValidationError } from 'jsonschema'
+import { DIST_DIR } from './createDistDir'
 import { getFiles, DATA_DIR } from './getFiles'
 import { readCsvFile } from './readCsvFile'
 import { validateRegionInfo, validateVaccinationPlan } from './schema'
-import { DIST_DIR } from './createDistDir'
 
 const LOCALIZATION_TABLE_PATH = path.join(DIST_DIR, 'localization.csv')
-const POLICY_DIR = path.join(DATA_DIR, 'policies')
 
 /**
  * Validate that state-level data files adhere to the schema

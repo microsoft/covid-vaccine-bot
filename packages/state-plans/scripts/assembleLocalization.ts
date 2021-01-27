@@ -5,10 +5,10 @@
 import * as fs from 'fs'
 import * as path from 'path'
 import { createDistDir, DIST_DIR } from './createDistDir'
+import { DATA_DIR, getFiles } from './getFiles'
 import { readCsvFile } from './readCsvFile'
 /* eslint-disable-next-line import/order */
 import stringify = require('csv-stringify')
-import { DATA_DIR, getFiles } from './getFiles'
 
 const OUTPUT_FILE = path.join(DIST_DIR, 'localization.csv')
 
