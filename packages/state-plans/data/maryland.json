@@ -13,7 +13,7 @@
 			},
 			"phases": [
 				{
-					"name": "1a",
+					"id": "1a",
 					"active": true,
 					"qualifications": [
 						"c19.eligibility.question/healthcare_worker",
@@ -23,7 +23,7 @@
 					]
 				},
 				{
-					"name": "1b",
+					"id": "1b",
 					"qualifications": [
 						"c19.eligibility.question/healthcare_worker",
 						"c19.eligibility.question/long_term_care_resident",
@@ -35,7 +35,7 @@
 					]
 				},
 				{
-					"name": "1c",
+					"id": "1c",
 					"qualifications": [
 						"c19.eligibility.question/healthcare_worker",
 						"c19.eligibility.question/long_term_care_resident",
