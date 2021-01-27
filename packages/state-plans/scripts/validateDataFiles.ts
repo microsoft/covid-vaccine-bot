@@ -8,7 +8,7 @@ import * as chalk from 'chalk'
 import { ValidationError } from 'jsonschema'
 import { validateRegionInfo, validateVaccinationPlan } from './schema'
 import { readCsvFile } from './readCsvFile'
-import { getFiles, DATA_ROOT } from './getFiles'
+import { getFiles, DATA_DIR } from './getFiles'
 
 const LOCALIZATION_TABLE_PATH = path.join(
 	__dirname,
@@ -26,8 +26,8 @@ function validateDataFiles() {
 	const linkErrors: string[] = []
 
 	// Validate data files
-	getFiles(DATA_ROOT, (f) => f === 'info.json').forEach(validateStateInfo)
-	getFiles(DATA_ROOT, (f) => f === 'vaccination.json').forEach(
+	getFiles(DATA_DIR, (f) => f === 'info.json').forEach(validateStateInfo)
+	getFiles(DATA_DIR, (f) => f === 'vaccination.json').forEach(
 		validateVaccinationInfo
 	)
 

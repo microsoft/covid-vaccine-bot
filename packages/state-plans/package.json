@@ -4,7 +4,7 @@
 	"private": true,
 	"scripts": {
 		"clean": "essex clean",
-		"build": "ts-node scripts/assemble.ts",
+		"build": "ts-node scripts/assembleDataFiles.ts",
 		"test": "ts-node scripts/validateDataFiles.ts"
 	},
 	"devDependencies": {

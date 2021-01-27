@@ -6,7 +6,7 @@ import * as fs from 'fs'
 import * as path from 'path'
 
 const ALWAYS_TRUE_PREDICATE = () => true
-export const DATA_ROOT = path.join(__dirname, '../data')
+export const DATA_DIR = path.join(__dirname, '../data')
 
 export function getFiles(
 	rootDir: string,
