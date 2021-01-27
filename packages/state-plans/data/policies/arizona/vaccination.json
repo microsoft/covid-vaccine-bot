@@ -5,10 +5,10 @@
 			"url": "https://azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-vaccine"
 		}
 	},
+	"phase": "arizona.1b_prioritized",
 	"phases": [
 		{
 			"id": "1a",
-			"active": true,
 			"qualifications": [
 				"c19.eligibility.question/healthcare_worker.AZ",
 				"c19.eligibility.question/long_term_care_resident.AZ",
@@ -16,7 +16,7 @@
 			]
 		},
 		{
-			"id": "1b.prioritized",
+			"id": "1b_prioritized",
 			"label": "Prioritized Phase 1B",
 			"extends": "arizona.1a",
 			"qualifications": [
@@ -27,7 +27,7 @@
 		},
 		{
 			"id": "1b",
-			"extends": "1b.prioritized",
+			"extends": "1b_prioritized",
 			"qualifications": [
 				"c19.eligibility.question/essential_worker.1b",
 				"c19.eligibility.question/congregate.AZ"
