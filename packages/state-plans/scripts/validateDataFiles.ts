@@ -2,13 +2,12 @@
  * Copyright (c) Microsoft. All rights reserved.
  * Licensed under the MIT license. See LICENSE file in the project.
  */
-import * as fs from 'fs'
 import * as path from 'path'
 import * as chalk from 'chalk'
 import { ValidationError } from 'jsonschema'
-import { validateRegionInfo, validateVaccinationPlan } from './schema'
-import { readCsvFile } from './readCsvFile'
 import { getFiles, DATA_DIR } from './getFiles'
+import { readCsvFile } from './readCsvFile'
+import { validateRegionInfo, validateVaccinationPlan } from './schema'
 
 const LOCALIZATION_TABLE_PATH = path.join(
 	__dirname,
@@ -107,16 +106,20 @@ function checkStringIds(
 	validStrings: Set<string>,
 	errors: string[]
 ): void {
-	vaccinationPlan.phases.forEach((phase: any) => {
-		phase.qualifications.forEach((qual: any) => {
+	vaccinationPlan.phases.forEach((phase: Phase) => {
+		phase.qualifications.forEach((qual: Qualification) => {
 			if (!validStrings.has(qual)) {
 				errors.push(`no defined string, "${qual}"`)
 			}
 		})
 	})
 	if (vaccinationPlan.regions != null) {
-		vaccinationPlan.regions.forEach((region: any) => {
+		vaccinationPlan.regions.forEach((region: Region) => {
 			checkStringIds(region, validStrings, errors)
 		})
 	}
 }
+
+type Phase = any
+type Qualification = string
+type Region = any

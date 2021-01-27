@@ -2,7 +2,7 @@
  * Copyright (c) Microsoft. All rights reserved.
  * Licensed under the MIT license. See LICENSE file in the project.
  */
-import { Validator } from 'jsonschema'
+import { Validator, ValidatorResult } from 'jsonschema'
 import * as schema from './schema'
 
 function createValidator(): Validator {
@@ -22,12 +22,12 @@ function getValidator() {
 	return validator
 }
 
-export function validateRegionInfo(data: unknown) {
-	let validator = getValidator()
+export function validateRegionInfo(data: unknown): ValidatorResult {
+	const validator = getValidator()
 	return validator.validate(data, schema.Region)
 }
 
-export function validateVaccinationPlan(data: unknown) {
-	let validator = getValidator()
+export function validateVaccinationPlan(data: unknown): ValidatorResult {
+	const validator = getValidator()
 	return validator.validate(data, schema.VaccinationPlan)
 }
