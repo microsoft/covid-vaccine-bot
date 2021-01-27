@@ -11,7 +11,6 @@
 	},
 	"devDependencies": {
 		"@essex/scripts": "^12.0.2",
-		"@ms-covidbot/localization": "workspace:packages/localization",
 		"@types/node": "^14.14.22",
 		"ajv": "^7.0.3",
 		"chalk": "^4.1.0",
