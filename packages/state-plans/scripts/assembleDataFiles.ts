@@ -10,6 +10,11 @@ import { getFiles, DATA_DIR } from './getFiles'
 
 const STATE_PATHS = fs.readdirSync(DATA_DIR)
 
+/**
+ * Assembles a state's information into a combined JSON file.
+ * TODO: handle nested regions in regions/ folder
+ * @param state The state to assemble
+ */
 function assembleState(state: string) {
 	console.log('assembling ' + state)
 	const rootInfo = require(path.join(DATA_DIR, state, 'info.json'))
