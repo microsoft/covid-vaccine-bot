@@ -13,6 +13,7 @@ const LOCALIZATION_TABLE_PATH = path.join(
 	__dirname,
 	'../../localization/dist/localization.csv'
 )
+const POLICY_DIR = path.join(DATA_DIR, 'policies')
 
 /**
  * Validate that state-level data files adhere to the schema
@@ -38,6 +39,9 @@ function validateDataFiles() {
 		errorCount += validationResult.errors.length
 
 		// handle results
+		if (validationResult.errors.length === 0) {
+			console.log(chalk.green(`✔ ${file}`))
+		}
 		if (validationResult.errors.length > 0) {
 			console.log(
 				chalk.red(
