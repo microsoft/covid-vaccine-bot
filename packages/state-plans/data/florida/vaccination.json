@@ -1,0 +1,40 @@
+{
+	"links": {
+		"info": {
+			"text": "CDC/Florida/state_link",
+			"url": "https://floridahealthcovid19.gov/covid-19-vaccines-in-florida/"
+		}
+	},
+	"phases": [
+		{
+			"id": "1a",
+			"active": true,
+			"qualifications": [
+				"c19.eligibility.question/healthcare_worker",
+				"c19.eligibility.question/long_term_care_resident",
+				"c19.eligibility.question/health.1a.FL.extremely_vulnerable",
+				"c19.eligibility.question/age.65_up"
+			]
+		},
+		{
+			"id": "1b",
+			"qualifications": [
+				"c19.eligibility.question/healthcare_worker",
+				"c19.eligibility.question/long_term_care_resident",
+				"c19.eligibility.question/health.1a.FL.extremely_vulnerable",
+				"c19.eligibility.question/essential_worker.1b",
+				"c19.eligibility.question/age.75_up"
+			]
+		},
+		{
+			"id": "1c",
+			"qualifications": [
+				"c19.eligibility.question/healthcare_worker",
+				"c19.eligibility.question/long_term_care_resident",
+				"c19.eligibility.question/essential_worker",
+				"c19.eligibility.question/health",
+				"c19.eligibility.question/age.65_up"
+			]
+		}
+	]
+}

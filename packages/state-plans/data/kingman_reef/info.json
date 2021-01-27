@@ -1,0 +1,8 @@
+{
+	"id": "kingman_reef",
+	"name": "Kingman Reef",
+	"code_alpha": "KR",
+	"code_numeric": 89,
+	"disabled": true,
+	"type": "territory"
+}
