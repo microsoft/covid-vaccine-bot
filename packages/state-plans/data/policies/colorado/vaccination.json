@@ -5,6 +5,7 @@
 			"url": "https://covid19.colorado.gov/vaccine"
 		}
 	},
+	"activePhase": "1b",
 	"phases": [
 		{
 			"id": "1a",
@@ -14,8 +15,7 @@
 			]
 		},
 		{
-			"id": "1b",
-			"active": true,
+			"id": "1b",			
 			"qualifications": [
 				"c19.eligibility.question/healthcare_worker",
 				"c19.eligibility.question/long_term_care_resident",

@@ -5,6 +5,7 @@
 			"url": "http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/VaccineInfo.aspx"
 		}
 	},
+	"activePhase": "1b",
 	"phases": [
 		{
 			"id": "1a",
@@ -15,7 +16,6 @@
 		},
 		{
 			"id": "1b",
-			"active": true,
 			"qualifications": [
 				"c19.eligibility.question/healthcare_worker",
 				"c19.eligibility.question/long_term_care_resident",

@@ -5,6 +5,7 @@
 			"url": "https://www.coronavirus.in.gov/vaccine/index.htm"
 		}
 	},
+	"activePhase": "1b",
 	"phases": [
 		{
 			"id": "1a",
@@ -16,7 +17,6 @@
 		},
 		{
 			"id": "1b",
-			"active": true,
 			"qualifications": [
 				"c19.eligibility.question/healthcare_worker",
 				"c19.eligibility.question/long_term_care_resident",

@@ -75,11 +75,6 @@ export const VaccinationPhase = {
 				'An optional label to present when displaying information about the phase. The system will be "Phase " + phase.id.toUpperCase()',
 			type: 'string',
 		},
-		active: {
-			description:
-				'A flag indicating that this phase is currently active for the region. Only one phase in the phase array should be marked as active.',
-			type: 'boolean',
-		},
 		qualifications: {
 			type: 'array',
 			items: {

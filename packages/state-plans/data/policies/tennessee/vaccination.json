@@ -5,6 +5,7 @@
 			"url": "https://www.tn.gov/health/cedep/ncov/covid-19-vaccine-information.html"
 		}
 	},
+	"activePhase": "1b",
 	"phases": [
 		{
 			"id": "1a",
@@ -17,7 +18,6 @@
 		},
 		{
 			"id": "1b",
-			"active": true,
 			"qualifications": [
 				"c19.eligibility.question/healthcare_worker",
 				"c19.eligibility.question/long_term_care_resident",

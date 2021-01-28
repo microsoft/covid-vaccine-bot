@@ -5,10 +5,10 @@
 			"url": "https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus/Vaccine"
 		}
 	},
+	"activePhase": "1a",
 	"phases": [
 		{
 			"id": "1a",
-			"active": true,
 			"qualifications": [
 				"c19.eligibility.question/healthcare_worker",
 				"c19.eligibility.question/long_term_care_resident"

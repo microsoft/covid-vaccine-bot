@@ -10,10 +10,10 @@
 			"url": "tel:1-855-566-5333"
 		}
 	},
+	"activePhase": "1a",
 	"phases": [
 		{
 			"id": "1a",
-			"active": true,
 			"qualifications": [
 				"c19.eligibility.question/healthcare_worker",
 				"c19.eligibility.question/long_term_care_resident"

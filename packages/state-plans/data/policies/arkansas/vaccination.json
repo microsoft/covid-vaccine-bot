@@ -5,10 +5,10 @@
 			"url": "https://www.healthy.arkansas.gov/programs-services/topics/covid-19-vaccination-plan"
 		}
 	},
+	"activePhase": "1a",
 	"phases": [
 		{
 			"id": "1a",
-			"active": true,
 			"qualifications": [
 				"c19.eligibility.question/healthcare_worker",
 				"c19.eligibility.question/long_term_care_resident",
