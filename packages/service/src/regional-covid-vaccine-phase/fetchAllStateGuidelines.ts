@@ -5,21 +5,19 @@
 
 import { BlobServiceClient } from '@azure/storage-blob'
 import { config } from './config'
-import { statesPlansCache } from './statesPlansCache'
+import { statesGuidelinesCache } from './statesGuidelinesCache'
 
-const STATES_PLANS_KEY = 'statesPlans'
+const STATES_GUIDELINES_KEY = 'stateGuidelines'
 
-export async function fetchStatesPlans(): Promise<any> {
-	let statesPlans = statesPlansCache.get(STATES_PLANS_KEY)
+export async function fetchAllStateGuidelines(): Promise<any> {
+	let allStateGuidelines = statesGuidelinesCache.get(STATES_GUIDELINES_KEY)
 
-	if (statesPlans != null) {
-		console.log(`Returning cached ${STATES_PLANS_KEY}`)
-		return statesPlans
+	if (allStateGuidelines != null) {
+		console.log('Returning cached state guidelines.')
+		return allStateGuidelines
 	}
 
-	console.log(
-		`${STATES_PLANS_KEY} does not exist in cache. Fetching remote data.`
-	)
+	console.log('state guidelines do not exist in cache. Fetching remote data.')
 
 	const account = config.azureBlobStorageAccount
 	const sasToken = config.azureBlobStorageSasToken
@@ -32,7 +30,7 @@ export async function fetchStatesPlans(): Promise<any> {
 	const containerClient = blobServiceClient.getContainerClient(containerName)
 	const blobClient = containerClient.getBlobClient(statesDataBlob)
 	const response = await blobClient.downloadToBuffer()
-	statesPlans = JSON.parse(response.toString())
-	statesPlansCache.set(STATES_PLANS_KEY, statesPlans)
-	return statesPlans
+	allStateGuidelines = JSON.parse(response.toString())
+	statesGuidelinesCache.set(STATES_GUIDELINES_KEY, allStateGuidelines)
+	return allStateGuidelines
 }

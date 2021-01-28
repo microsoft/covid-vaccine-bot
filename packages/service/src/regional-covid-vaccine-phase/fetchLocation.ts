@@ -8,6 +8,7 @@ import { config } from './config'
 import { locationCache } from './locationCache'
 
 export interface Location {
+	[key: string]: string
 	adminDistrict: string
 	adminDistrict2: string
 	countryRegion: string
@@ -24,7 +25,9 @@ export async function fetchLocation(zipcode: string): Promise<Location> {
 		return location
 	}
 
-	console.log(`${zipcode} does not exist in cache. Fetching remote data.`)
+	console.log(
+		`zipcode ${zipcode} does not exist in cache. Fetching remote data.`
+	)
 
 	const url = `${config.locationsApi}?query=${zipcode}&key=${config.locationsApiKey}`
 

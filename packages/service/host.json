@@ -11,7 +11,7 @@
 		"logLevel": {
 			"default": "Information",
 			"Host": "Error",
-			"Function": "Debug"
+			"Function": "Information"
 		},
 		"console": {
 			"isEnabled": true
