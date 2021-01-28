@@ -1,0 +1,40 @@
+{
+	"links": {
+		"info": {
+			"text": "CDC/Ohio/state_link",
+			"url": "https://coronavirus.ohio.gov/wps/portal/gov/covid-19/covid-19-vaccination-program"
+		}
+	},
+	"activePhase": "1a",
+	"phases": [
+		{
+			"id": "1a",
+			"qualifications": [
+				"c19.eligibility.question/healthcare_worker",
+				"c19.eligibility.question/long_term_care_resident",
+				"c19.eligibility.question/health.1a.OH.psychiatric"
+			]
+		},
+		{
+			"id": "1b",
+			"qualifications": [
+				"c19.eligibility.question/healthcare_worker",
+				"c19.eligibility.question/long_term_care_resident",
+				"c19.eligibility.question/health.1a.OH.psychiatric",
+				"c19.eligibility.question/health.1b.OH",
+				"c19.eligibility.question/essential_worker.k12",
+				"c19.eligibility.question/age.65_up"
+			]
+		},
+		{
+			"id": "1c",
+			"qualifications": [
+				"c19.eligibility.question/healthcare_worker",
+				"c19.eligibility.question/long_term_care_resident",
+				"c19.eligibility.question/essential_worker",
+				"c19.eligibility.question/health",
+				"c19.eligibility.question/age.65_up"
+			]
+		}
+	]
+}

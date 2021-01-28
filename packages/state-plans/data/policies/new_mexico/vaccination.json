@@ -1,0 +1,40 @@
+{
+	"links": {
+		"info": {
+			"text": "CDC/New_Mexico/state_link",
+			"url": "https://cv.nmhealth.org/covid-vaccine/"
+		}
+	},
+	"activePhase": "1b",
+	"phases": [
+		{
+			"id": "1a",
+			"qualifications": [
+				"c19.eligibility.question/healthcare_worker",
+				"c19.eligibility.question/long_term_care_resident"
+			]
+		},
+		{
+			"id": "1b",
+			"qualifications": [
+				"c19.eligibility.question/healthcare_worker",
+				"c19.eligibility.question/long_term_care_resident",
+				"c19.eligibility.question/essential_worker.1b.NM",
+				"c19.eligibility.question/age.75_up",
+				"c19.eligibility.question/health.1b.NM",
+				"c19.eligibility.question/congregate"
+			]
+		},
+		{
+			"id": "1c",
+			"qualifications": [
+				"c19.eligibility.question/healthcare_worker",
+				"c19.eligibility.question/long_term_care_resident",
+				"c19.eligibility.question/essential_worker",
+				"c19.eligibility.question/health",
+				"c19.eligibility.question/age.65_up",
+				"c19.eligibility.question/congregate"
+			]
+		}
+	]
+}

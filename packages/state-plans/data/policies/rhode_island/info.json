@@ -1,0 +1,9 @@
+{
+	"id": "rhode_island",
+	"name": "Rhode Island",
+	"type": "state",
+	"metadata": {
+		"code_alpha": "RI",
+		"code_numeric": 44
+	}
+}

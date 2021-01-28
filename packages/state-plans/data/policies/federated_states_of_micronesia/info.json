@@ -1,0 +1,9 @@
+{
+	"id": "fs_micronesia",
+	"name": "Federated States of Micronesia",
+	"type": "territory",
+	"metadata": {
+		"code_alpha": "FM",
+		"code_numeric": 64
+	}
+}

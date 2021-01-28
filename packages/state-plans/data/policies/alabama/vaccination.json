@@ -1,0 +1,44 @@
+{
+	"links": {
+		"info": {
+			"text": "CDC/Alabama/state_link",
+			"url": "https://www.alabamapublichealth.gov/covid19/vaccine.html"
+		},
+		"scheduling_phone": {
+			"description": "c19.link/scheduling.phone.description.AL",
+			"text": "c19.link/scheduling.phone.AL",
+			"url": "tel:1-855-566-5333"
+		}
+	},
+	"activePhase": "1a",
+	"phases": [
+		{
+			"id": "1a",
+			"qualifications": [
+				"c19.eligibility.question/healthcare_worker",
+				"c19.eligibility.question/long_term_care_resident"
+			]
+		},
+		{
+			"id": "1b",
+			"qualifications": [
+				"c19.eligibility.question/healthcare_worker",
+				"c19.eligibility.question/long_term_care_resident",
+				"c19.eligibility.question/essential_worker.1b",
+				"c19.eligibility.question/age.75_up",
+				"c19.eligibility.question/congregate"
+			]
+		},
+		{
+			"id": "1c",
+			"qualifications": [
+				"c19.eligibility.question/healthcare_worker",
+				"c19.eligibility.question/long_term_care_resident",
+				"c19.eligibility.question/essential_worker",
+				"c19.eligibility.question/health",
+				"c19.eligibility.question/age.65_up",
+				"c19.eligibility.question/congregate"
+			]
+		}
+	]
+}

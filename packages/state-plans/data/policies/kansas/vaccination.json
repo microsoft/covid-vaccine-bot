@@ -1,0 +1,39 @@
+{
+	"links": {
+		"info": {
+			"text": "CDC/Kansas/state_link",
+			"url": "https://www.kansasvaccine.gov/"
+		}
+	},
+	"activePhase": "1a",
+	"phases": [
+		{
+			"id": "1a",
+			"qualifications": [
+				"c19.eligibility.question/healthcare_worker",
+				"c19.eligibility.question/long_term_care_resident"
+			]
+		},
+		{
+			"id": "1b",
+			"qualifications": [
+				"c19.eligibility.question/healthcare_worker",
+				"c19.eligibility.question/long_term_care_resident",
+				"c19.eligibility.question/essential_worker.1b.KS",
+				"c19.eligibility.question/age.65_up",
+				"c19.eligibility.question/congregate"
+			]
+		},
+		{
+			"id": "1c",
+			"qualifications": [
+				"c19.eligibility.question/healthcare_worker",
+				"c19.eligibility.question/long_term_care_resident",
+				"c19.eligibility.question/essential_worker",
+				"c19.eligibility.question/health",
+				"c19.eligibility.question/age.65_up",
+				"c19.eligibility.question/congregate"
+			]
+		}
+	]
+}
