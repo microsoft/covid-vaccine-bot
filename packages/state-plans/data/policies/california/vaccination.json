@@ -5,10 +5,10 @@
 			"url": "https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/COVID-19/COVID-19Vaccine.aspx"
 		}
 	},
+	"activePhase": "1a",
 	"phases": [
 		{
 			"id": "1a",
-			"active": true,
 			"qualifications": [
 				"c19.eligibility.question/healthcare_worker",
 				"c19.eligibility.question/long_term_care_resident"

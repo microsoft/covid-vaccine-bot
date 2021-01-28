@@ -5,10 +5,10 @@
 			"url": "https://oklahoma.gov/covid19/vaccine-information.html"
 		}
 	},
+	"activePhase": "1a",
 	"phases": [
 		{
-			"id": "1a",
-			"active": true,
+			"id": "1a",			
 			"qualifications": [
 				"c19.eligibility.question/healthcare_worker",
 				"c19.eligibility.question/long_term_care_resident"
