@@ -40,6 +40,10 @@ export const VaccinationPlan = {
 			},
 			required: ['info'],
 		},
+		activePhase: {
+			type: 'string',
+			description: 'the ID of the currently active phase',
+		},
 		phases: {
 			type: 'array',
 			items: {
@@ -51,7 +55,7 @@ export const VaccinationPlan = {
 			items: { $ref: '/Region' },
 		},
 	},
-	required: ['links', 'phases'],
+	required: [],
 }
 
 export const VaccinationPhase = {

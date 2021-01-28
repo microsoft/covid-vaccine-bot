@@ -29,64 +29,72 @@ function validateDataFiles() {
 	)
 
 	function validateStateInfo(file: string) {
-		/* eslint-disable-next-line @typescript-eslint/no-var-requires */
-		const data = require(file)
-		const validationResult = validateRegionInfo(data)
-		schemaValidationErrors.push(...validationResult.errors)
-		errorCount += validationResult.errors.length
+		try {
+			/* eslint-disable-next-line @typescript-eslint/no-var-requires */
+			const data = require(file)
+			const validationResult = validateRegionInfo(data)
+			schemaValidationErrors.push(...validationResult.errors)
+			errorCount += validationResult.errors.length
 
-		// handle results
-		if (validationResult.errors.length === 0) {
-			console.log(chalk.green(`✔ ${file}`))
-		}
-		if (validationResult.errors.length > 0) {
-			console.log(
-				chalk.red(
-					`❌ ${file} has ${validationResult.errors.length} schema errors`
+			// handle results
+			if (validationResult.errors.length === 0) {
+				console.log(chalk.green(`✔ ${file}`))
+			}
+			if (validationResult.errors.length > 0) {
+				console.log(
+					chalk.red(
+						`❌ ${file} has ${validationResult.errors.length} schema errors`
+					)
 				)
-			)
+			}
+		} catch (err) {
+			console.log(`error in ${file}`, err)
 		}
 	}
 
 	function validateVaccinationInfo(file: string) {
-		/* eslint-disable-next-line @typescript-eslint/no-var-requires */
-		const data = require(file)
-		const validationResult = validateVaccinationPlan(data)
-		const dataLinkErrors: string[] = []
-		checkStringIds(data, validStringIds, dataLinkErrors)
-		linkErrors.push(...dataLinkErrors)
-		schemaValidationErrors.push(...validationResult.errors)
-		errorCount += dataLinkErrors.length + validationResult.errors.length
+		try {
+			/* eslint-disable-next-line @typescript-eslint/no-var-requires */
+			const data = require(file)
+			const validationResult = validateVaccinationPlan(data)
+			const dataLinkErrors: string[] = []
+			checkStringIds(data, validStringIds, dataLinkErrors)
+			linkErrors.push(...dataLinkErrors)
+			schemaValidationErrors.push(...validationResult.errors)
+			errorCount += dataLinkErrors.length + validationResult.errors.length
 
-		// handle results
-		if (validationResult.errors.length === 0 && dataLinkErrors.length === 0) {
-			console.log(chalk.green(`✔ ${file}`))
-		}
-		if (validationResult.errors.length > 0) {
-			console.log(
-				chalk.red(
-					`❌ ${file} has ${validationResult.errors.length} schema errors`
+			// handle results
+			if (validationResult.errors.length === 0 && dataLinkErrors.length === 0) {
+				console.log(chalk.green(`✔ ${file}`))
+			}
+			if (validationResult.errors.length > 0) {
+				console.log(
+					chalk.red(
+						`❌ ${file} has ${validationResult.errors.length} schema errors`
+					)
 				)
-			)
+			}
+			if (dataLinkErrors.length > 0) {
+				console.log(chalk.red(`❌ ${file} has ${dataLinkErrors} linker errors`))
+			}
+			if (errorCount > 0) {
+				if (schemaValidationErrors.length > 0) {
+					console.log(schemaValidationErrors)
+				}
+				if (linkErrors.length > 0) {
+					console.log(linkErrors)
+				}
+				console.log('💥 ' + chalk.red(`${errorCount} errors`))
+				process.exit(1)
+			} else {
+				console.log('🚀 ' + chalk.green(`all files passed validation`))
+			}
+		} catch (err) {
+			console.log(`error caught in ${file}`, err)
 		}
-		if (dataLinkErrors.length > 0) {
-			console.log(chalk.red(`❌ ${file} has ${dataLinkErrors} linker errors`))
-		}
-	}
-
-	if (errorCount > 0) {
-		if (schemaValidationErrors.length > 0) {
-			console.log(schemaValidationErrors)
-		}
-		if (linkErrors.length > 0) {
-			console.log(linkErrors)
-		}
-		console.log('💥 ' + chalk.red(`${errorCount} errors`))
-		process.exit(1)
-	} else {
-		console.log('🚀 ' + chalk.green(`all files passed validation`))
 	}
 }
+
 validateDataFiles()
 
 function getValidStringIds(): Set<string> {
@@ -113,24 +121,22 @@ function checkStringIds(
 		}
 	}
 
-	Object.keys(vaccinationPlan.links).forEach((link) => {
-		if (vaccinationPlan.links[link].text) {
-			checkString(vaccinationPlan.links[link].text)
-		}
-		if (vaccinationPlan.links[link].description) {
-			checkString(vaccinationPlan.links[link].description)
-		}
-	})
-	vaccinationPlan.phases.forEach((phase: Phase) => {
-		phase.qualifications.forEach((qual: Qualification) => checkString(qual))
-	})
-	if (vaccinationPlan.regions != null) {
-		vaccinationPlan.regions.forEach((region: Region) => {
-			checkStringIds(region, validStrings, errors)
+	if (vaccinationPlan.links) {
+		Object.keys(vaccinationPlan.links).forEach((link) => {
+			if (vaccinationPlan.links[link].text) {
+				checkString(vaccinationPlan.links[link].text)
+			}
+			if (vaccinationPlan.links[link].description) {
+				checkString(vaccinationPlan.links[link].description)
+			}
+		})
+	}
+	if (vaccinationPlan.phases) {
+		vaccinationPlan.phases.forEach((phase: Phase) => {
+			phase.qualifications.forEach((qual: Qualification) => checkString(qual))
 		})
 	}
 }
 
 type Phase = any
 type Qualification = string
-type Region = any
