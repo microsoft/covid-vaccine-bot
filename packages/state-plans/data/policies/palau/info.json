@@ -1,8 +1,9 @@
 {
 	"id": "palau",
 	"name": "Palau",
-	"code_alpha": "PW",
-	"code_numeric": 70,
-	"disabled": true,
-	"type": "territory"
+	"type": "territory",
+	"metadata": {
+		"code_alpha": "PW",
+		"code_numeric": 70
+	}
 }

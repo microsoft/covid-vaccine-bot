@@ -1,7 +1,9 @@
 {
 	"id": "iowa",
 	"name": "Iowa",
-	"code_alpha": "IA",
-	"code_numeric": 19,
-	"type": "state"
+	"type": "state",
+	"metadata": {
+		"code_alpha": "IA",
+		"code_numeric": 19
+	}
 }

@@ -1,7 +1,9 @@
 {
 	"id": "montana",
 	"name": "Montana",
-	"code_alpha": "MT",
-	"code_numeric": 30,
-	"type": "state"
+	"type": "state",
+	"metadata": {
+		"code_alpha": "MT",
+		"code_numeric": 30
+	}
 }

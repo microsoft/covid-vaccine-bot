@@ -1,7 +1,9 @@
 {
 	"id": "north_dakota",
 	"name": "North Dakota",
-	"code_alpha": "ND",
-	"code_numeric": 38,
-	"type": "state"
+	"type": "state",
+	"metadata": {
+		"code_alpha": "ND",
+		"code_numeric": 38
+	}
 }

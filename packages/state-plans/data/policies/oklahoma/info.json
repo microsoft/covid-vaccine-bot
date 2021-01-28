@@ -1,7 +1,9 @@
 {
 	"id": "oklahoma",
 	"name": "Oklahoma",
-	"code_alpha": "OK",
-	"code_numeric": 40,
-	"type": "state"
+	"type": "state",
+	"metadata": {
+		"code_alpha": "OK",
+		"code_numeric": 40
+	}
 }

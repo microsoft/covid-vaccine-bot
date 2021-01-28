@@ -1,7 +1,9 @@
 {
 	"id": "alabama",
 	"name": "Alabama",
-	"code_alpha": "AL",
-	"code_numeric": 1,
-	"type": "state"
+	"type": "state",
+	"metadata": {
+		"code_alpha": "AL",
+		"code_numeric": 1
+	}
 }

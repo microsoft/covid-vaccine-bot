@@ -1,7 +1,9 @@
 {
 	"id": "west_virginia",
 	"name": "West Virginia",
-	"code_alpha": "WV",
-	"code_numeric": 54,
-	"type": "state"
+	"type": "state",
+	"metadata": {
+		"code_alpha": "WV",
+		"code_numeric": 54
+	}
 }

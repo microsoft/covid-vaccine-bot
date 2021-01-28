@@ -1,7 +1,9 @@
 {
 	"id": "illinois",
 	"name": "Illinois",
-	"code_alpha": "IL",
-	"code_numeric": 17,
-	"type": "state"
+	"type": "state",
+	"metadata": {
+		"code_alpha": "IL",
+		"code_numeric": 17
+	}
 }

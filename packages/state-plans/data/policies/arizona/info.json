@@ -1,7 +1,9 @@
 {
 	"id": "arizona",
 	"name": "Arizona",
-	"code_alpha": "AZ",
-	"code_numeric": 4,
-	"type": "state"
+	"type": "state",
+	"metadata": {
+		"code_alpha": "AZ",
+		"code_numeric": 4
+	}
 }

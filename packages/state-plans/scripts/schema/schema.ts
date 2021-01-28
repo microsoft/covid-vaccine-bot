@@ -17,11 +17,9 @@ export const Region = {
 			// state || county || tribal_land || city
 			type: 'string',
 		},
-		code_alpha: {
-			type: 'string',
-		},
-		code_numeric: {
-			type: 'integer',
+		metadata: {
+			type: 'object',
+			description: 'additional information about the region. Left ambiguous on purpose at this time (1/28/2021)'
 		},
 	},
 	required: ['id', 'name', 'type'],

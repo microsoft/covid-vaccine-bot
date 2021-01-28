@@ -1,7 +1,9 @@
 {
 	"id": "utah",
 	"name": "Utah",
-	"code_alpha": "UT",
-	"code_numeric": 49,
-	"type": "state"
+	"type": "state",
+	"metadata": {
+		"code_alpha": "UT",
+		"code_numeric": 49
+	}
 }

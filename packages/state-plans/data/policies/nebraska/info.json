@@ -1,7 +1,9 @@
 {
 	"id": "nebraska",
 	"name": "Nebraska",
-	"code_alpha": "NE",
-	"code_numeric": 31,
-	"type": "state"
+	"type": "state",
+	"metadata": {
+		"code_alpha": "NE",
+		"code_numeric": 31
+	}
 }

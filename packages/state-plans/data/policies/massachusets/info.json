@@ -1,7 +1,9 @@
 {
 	"id": "massachusetts",
 	"name": "Massachusetts",
-	"code_alpha": "MA",
-	"code_numeric": 25,
-	"type": "state"
+	"type": "state",
+	"metadata": {
+		"code_alpha": "MA",
+		"code_numeric": 25
+	}
 }

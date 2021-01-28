@@ -1,7 +1,9 @@
 {
 	"id": "wisconsin",
 	"name": "Wisconsin",
-	"code_alpha": "WI",
-	"code_numeric": 34,
-	"type": "state"
+	"type": "state",
+	"metadata": {
+		"code_alpha": "WI",
+		"code_numeric": 34
+	}
 }

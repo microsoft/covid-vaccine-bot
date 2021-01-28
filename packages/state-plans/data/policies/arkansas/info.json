@@ -1,7 +1,9 @@
 {
 	"id": "arkansas",
 	"name": "Arkansas",
-	"code_alpha": "AR",
-	"code_numeric": 5,
-	"type": "state"
+	"type": "state",
+	"metadata": {
+		"code_alpha": "AR",
+		"code_numeric": 5
+	}
 }

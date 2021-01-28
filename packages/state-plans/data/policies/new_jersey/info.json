@@ -1,7 +1,9 @@
 {
 	"id": "new_jersey",
 	"name": "New Jersey",
-	"code_alpha": "NJ",
-	"code_numeric": 34,
-	"type": "state"
+	"type": "state",
+	"metadata": {
+		"code_alpha": "NJ",
+		"code_numeric": 34
+	}
 }

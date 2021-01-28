@@ -1,7 +1,9 @@
 {
 	"id": "tennessee",
 	"name": "Tennessee",
-	"code_alpha": "TN",
-	"code_numeric": 47,
-	"type": "state"
+	"type": "state",
+	"metadata": {
+		"code_alpha": "TN",
+		"code_numeric": 47
+	}
 }

@@ -1,7 +1,9 @@
 {
 	"id": "ohio",
 	"name": "Ohio",
-	"code_alpha": "OH",
-	"code_numeric": 39,
-	"type": "state"
+	"type": "state",
+	"metadata": {
+		"code_alpha": "OH",
+		"code_numeric": 39
+	}
 }
