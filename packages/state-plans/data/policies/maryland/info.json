@@ -1,7 +1,9 @@
 {
 	"id": "maryland",
 	"name": "Maryland",
-	"code_alpha": "MD",
-	"code_numeric": 24,
-	"type": "state"
+	"type": "state",
+	"metadata": {
+		"code_alpha": "MD",
+		"code_numeric": 24
+	}
 }

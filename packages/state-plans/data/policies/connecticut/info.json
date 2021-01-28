@@ -1,7 +1,9 @@
 {
 	"id": "connecticut",
 	"name": "Connecticut",
-	"code_alpha": "CT",
-	"code_numeric": 9,
-	"type": "state"
+	"type": "state",
+	"metadata": {
+		"code_alpha": "CT",
+		"code_numeric": 9
+	}
 }

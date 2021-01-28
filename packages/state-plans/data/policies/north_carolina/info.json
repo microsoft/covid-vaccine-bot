@@ -1,7 +1,9 @@
 {
 	"id": "north_carolina",
 	"name": "North Carolina",
-	"code_alpha": "NC",
-	"code_numeric": 37,
-	"type": "state"
+	"type": "state",
+	"metadata": {
+		"code_alpha": "NC",
+		"code_numeric": 37
+	}
 }

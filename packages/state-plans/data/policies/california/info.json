@@ -1,7 +1,9 @@
 {
 	"id": "california",
 	"name": "California",
-	"code_alpha": "CA",
-	"code_numeric": 6,
-	"type": "state"
+	"type": "state",
+	"metadata": {
+		"code_alpha": "CA",
+		"code_numeric": 6
+	}
 }

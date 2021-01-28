@@ -1,7 +1,9 @@
 {
 	"id": "texas",
 	"name": "Texas",
-	"code_alpha": "TX",
-	"code_numeric": 48,
-	"type": "state"
+	"type": "state",
+	"metadata": {
+		"code_alpha": "TX",
+		"code_numeric": 48
+	}
 }

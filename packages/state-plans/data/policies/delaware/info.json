@@ -1,7 +1,9 @@
 {
 	"id": "delaware",
 	"name": "Delaware",
-	"code_alpha": "DE",
-	"code_numeric": 10,
-	"type": "state"
+	"type": "state",
+	"metadata": {
+		"code_alpha": "DE",
+		"code_numeric": 10
+	}
 }

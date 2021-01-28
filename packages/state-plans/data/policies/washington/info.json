@@ -1,7 +1,9 @@
 {
 	"id": "washington",
 	"name": "Washington",
-	"code_alpha": "WA",
-	"code_numeric": 53,
-	"type": "state"
+	"type": "state",
+	"metadata": {
+		"code_alpha": "WA",
+		"code_numeric": 53
+	}
 }

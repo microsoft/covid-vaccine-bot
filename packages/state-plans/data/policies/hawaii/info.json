@@ -1,7 +1,9 @@
 {
 	"id": "hawaii",
 	"name": "Hawaii",
-	"code_alpha": "HI",
-	"code_numeric": 15,
-	"type": "state"
+	"type": "state",
+	"metadata": {
+		"code_alpha": "HI",
+		"code_numeric": 15
+	}
 }
