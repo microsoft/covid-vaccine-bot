@@ -1,6 +1,7 @@
 # Temp/Rando Files
 ~*
 .DS_Store
+.env
 
 # Yarn Ignores
 .yarn/*
@@ -16,3 +17,9 @@ packages/*/lib/
 
 # Test Output
 coverage/
+
+# Azure Functions artifacts
+bin
+obj
+appsettings.json
+local.settings.json
