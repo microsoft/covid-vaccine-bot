@@ -18,8 +18,10 @@
 		{
 			"id": "1b_prioritized",
 			"label": "Prioritized Phase 1B",
-			"extends": "1a",
 			"qualifications": [
+				"c19.eligibility.question/healthcare_worker.AZ",
+				"c19.eligibility.question/long_term_care_resident.AZ",
+				"c19.eligibility.question/ems_worker.AZ",
 				"c19.eligibility.question/education_childcare_worker.AZ",
 				"c19.eligibility.question/proctective_services_worker.AZ",
 				"c19.eligibility.question/age.65_up"
@@ -27,16 +29,20 @@
 		},
 		{
 			"id": "1b",
-			"extends": "1b_prioritized",
 			"qualifications": [
 				"c19.eligibility.question/essential_worker.1b",
+				"c19.eligibility.question/age.65_up",
 				"c19.eligibility.question/congregate.AZ"
 			]
 		},
 		{
 			"id": "1c",
-			"extends": "1b",
-			"qualifications": ["c19.eligibility.question/health"]
+			"qualifications": [
+				"c19.eligibility.question/essential_worker.1b",
+				"c19.eligibility.question/age.65_up",
+				"c19.eligibility.question/congregate.AZ",
+				"c19.eligibility.question/health"
+			]
 		}
 	]
 }

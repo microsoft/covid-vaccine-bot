@@ -68,7 +68,6 @@ export interface Link {
 
 export interface RolloutPhase {
 	id: string
-	extends?: string
 	label?: string
 	qualifications: Qualification[]
 }

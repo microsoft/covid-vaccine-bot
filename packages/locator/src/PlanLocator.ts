@@ -5,7 +5,10 @@
 
 import { Region } from '@ms-covidbot/state-plan-schema'
 
-export interface PlanResult {}
+export interface PlanResult {
+	phase: string
+	phaseLabel: string
+}
 
 export class PlanLocator {
 	public constructor(private data: Region[]) {}
