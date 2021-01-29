@@ -25,6 +25,16 @@ export interface Region {
 	 * The type of region this is
 	 */
 	type: RegionType
+
+	/**
+	 * The plan associated with this region
+	 */
+	vaccination_plan?: VaccinationPlan
+
+	/**
+	 * The nested regions
+	 */
+	regions?: Region[]
 }
 
 export interface VaccinationPlan {
