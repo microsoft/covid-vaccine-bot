@@ -8,7 +8,16 @@ import * as dotenv from 'dotenv'
 
 dotenv.config({ path: resolve(__dirname, '../../.env') })
 
-export const config: Record<string, any> = {
+export interface Config {
+	locationsApi: string
+	locationsApiKey: string
+	azureBlobStorageAccount: string
+	azureBlobStorageSasToken: string
+	azureBlobContainer: string
+	azureStatesBlob: string
+	regionTypeToLocationsMapping: Record<string, string>
+}
+export const config: Config = {
 	locationsApi: 'https://dev.virtualearth.net/REST/v1/Locations',
 	locationsApiKey: process.env.BING_MAPS_API_KEY || '',
 	azureBlobStorageAccount: process.env.AZURE_BLOB_STORAGE_ACCOUNT || '',

@@ -1416,7 +1416,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/preset-react@npm:^7.12.1, @babel/preset-react@npm:^7.12.7":
+"@babel/preset-react@npm:^7.12.1, @babel/preset-react@npm:^7.12.5, @babel/preset-react@npm:^7.12.7":
   version: 7.12.10
   resolution: "@babel/preset-react@npm:7.12.10"
   dependencies:
@@ -1998,7 +1998,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@essex/jest-config@npm:11.0.2":
+"@essex/jest-config@npm:11.0.2, @essex/jest-config@npm:^11.0.2":
   version: 11.0.2
   resolution: "@essex/jest-config@npm:11.0.2"
   dependencies:
@@ -2465,6 +2465,16 @@ __metadata:
   checksum: e01193b783ed7682710a9af87ba05c69d15cc2183eedca36e37c720bbb7d7449f7d5cd8ad15c991f20c5d95cdce1a3a10ef6d82b1bb8a9762a193ad4245cc9da
   languageName: node
   linkType: hard
+
+"@ms-covidbot/policy-locator@workspace:packages/locator":
+  version: 0.0.0-use.local
+  resolution: "@ms-covidbot/policy-locator@workspace:packages/locator"
+  dependencies:
+    "@essex/scripts": ^12.0.2
+    "@ms-covidbot/state-plan-schema": "workspace:packages/schema"
+    core-js: ^3.8.3
+  languageName: unknown
+  linkType: soft
 
 "@ms-covidbot/state-plan-schema@workspace:packages/schema":
   version: 0.0.0-use.local
@@ -3531,7 +3541,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jest@npm:^26.0.16":
+"@types/jest@npm:^26.0.16, @types/jest@npm:^26.0.20":
   version: 26.0.20
   resolution: "@types/jest@npm:26.0.20"
   dependencies:
@@ -7005,7 +7015,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"core-js@npm:^3.0.1, core-js@npm:^3.0.4, core-js@npm:^3.6.5, core-js@npm:^3.8.0":
+"core-js@npm:^3.0.1, core-js@npm:^3.0.4, core-js@npm:^3.6.5, core-js@npm:^3.8.0, core-js@npm:^3.8.3":
   version: 3.8.3
   resolution: "core-js@npm:3.8.3"
   checksum: 3c67d1732d505f6afaf836f18038dae8267e8c0e8e84e1c679bac67589e66d0807c24750c7d8b1118cc386c3d66a1d96f20d9cb0f6a879b19cfc04e9f073fe78
@@ -12144,7 +12154,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"jest@npm:~26.6.3":
+"jest@npm:^26.6.0, jest@npm:~26.6.3":
   version: 26.6.3
   resolution: "jest@npm:26.6.3"
   dependencies:
@@ -13572,9 +13582,15 @@ fsevents@^1.2.7:
   version: 0.0.0-use.local
   resolution: "ms-covid-bot@workspace:."
   dependencies:
+    "@babel/core": ^7.12.3
+    "@babel/preset-env": ^7.12.1
+    "@babel/preset-react": ^7.12.5
+    "@babel/preset-typescript": ^7.12.1
     "@essex/eslint-config": ^10.0.3
     "@essex/eslint-plugin": ^10.0.3
+    "@essex/jest-config": ^11.0.2
     "@essex/scripts": ^12.0.2
+    "@types/jest": ^26.0.20
     "@typescript-eslint/eslint-plugin": ^4.14.0
     "@typescript-eslint/parser": ^4.14.0
     eslint: ^7.18.0
@@ -13586,6 +13602,7 @@ fsevents@^1.2.7:
     eslint-plugin-react: ^7.22.0
     eslint-plugin-react-hooks: ^4.2.0
     husky: ^4.3.1
+    jest: ^26.6.0
     lint-staged: ^10.5.2
     npm-run-all: ^4.1.5
     typescript: ^4.1.3
