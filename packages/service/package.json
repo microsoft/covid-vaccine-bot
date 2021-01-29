@@ -15,7 +15,7 @@
 	},
 	"devDependencies": {
 		"@azure/functions": "^1.2.2",
-		"@ms-covidbot/state-plan-schema": "workspace:packages/plan-schema",
+		"@ms-covidbot/state-plan-schema": "workspace:packages/schema",
 		"@types/debug": "^4",
 		"@types/lru-cache": "^5.1.0",
 		"@types/minimist": "^1",

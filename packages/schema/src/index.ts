@@ -10,6 +10,9 @@ export type RegionType =
 	| 'county'
 	| 'city'
 
+export interface RegionMetadata {
+	[key: string]: string | number | boolean
+}
 export interface Region {
 	/**
 	 * A unique identifier for this region. Should not contain dots. Unique within context of parent node
@@ -25,6 +28,21 @@ export interface Region {
 	 * The type of region this is
 	 */
 	type: RegionType
+
+	/**
+	 * A metadata object
+	 */
+	metadata?: RegionMetadata
+
+	/**
+	 * The plan associated with this region
+	 */
+	plan?: VaccinationPlan
+
+	/**
+	 * The nested regions
+	 */
+	regions?: Region[]
 }
 
 export interface VaccinationPlan {

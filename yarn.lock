@@ -2466,9 +2466,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ms-covidbot/state-plan-schema@workspace:packages/plan-schema":
+"@ms-covidbot/state-plan-schema@workspace:packages/schema":
   version: 0.0.0-use.local
-  resolution: "@ms-covidbot/state-plan-schema@workspace:packages/plan-schema"
+  resolution: "@ms-covidbot/state-plan-schema@workspace:packages/schema"
   dependencies:
     "@essex/scripts": ^12.0.2
     "@types/node": ^14.14.22
@@ -2484,7 +2484,7 @@ __metadata:
   resolution: "@ms-covidbot/state-plans@workspace:packages/plans"
   dependencies:
     "@essex/scripts": ^12.0.2
-    "@ms-covidbot/state-plan-schema": "workspace:packages/plan-schema"
+    "@ms-covidbot/state-plan-schema": "workspace:packages/schema"
     "@types/node": ^14.14.22
     ajv: ^7.0.3
     chalk: ^4.1.0
@@ -13598,7 +13598,7 @@ fsevents@^1.2.7:
   dependencies:
     "@azure/functions": ^1.2.2
     "@azure/storage-blob": ^12.4.0
-    "@ms-covidbot/state-plan-schema": "workspace:packages/plan-schema"
+    "@ms-covidbot/state-plan-schema": "workspace:packages/schema"
     "@types/debug": ^4
     "@types/lru-cache": ^5.1.0
     "@types/minimist": ^1
