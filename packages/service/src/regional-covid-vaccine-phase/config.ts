@@ -15,8 +15,26 @@ export const config: Record<string, any> = {
 	azureBlobStorageSasToken: process.env.AZURE_BLOB_STORAGE_SAS_TOKEN || '',
 	azureBlobContainer: process.env.AZURE_BLOB_CONTAINER || '',
 	azureStatesBlob: process.env.AZURE_STATES_BLOB || '',
-	regionTypeToLocationsMapping: {
-		county: 'adminDistrict2',
-		locality: 'locality',
+	regionTypes: {
+		state: {
+			locationsId: 'adminDistrict',
+			policyTreeId: 'metadata.code_alpha',
+		},
+		territory: {
+			locationsId: 'adminDistrict',
+			policyTreeId: 'metadata.code_alpha',
+		},
+		tribal_land: {
+			locationsId: '',
+			policyTreeId: '',
+		},
+		county: {
+			locationsId: 'adminDistrict2',
+			policyTreeId: 'metadata.id_bing',
+		},
+		city: {
+			locationsId: 'locality',
+			policyTreeId: '',
+		},
 	},
 }
