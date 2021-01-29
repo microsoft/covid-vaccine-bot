@@ -29,7 +29,7 @@ export interface Region {
 	/**
 	 * The plan associated with this region
 	 */
-	vaccination_plan?: VaccinationPlan
+	plan?: VaccinationPlan
 
 	/**
 	 * The nested regions

@@ -33,7 +33,7 @@ export function assembleState(state: string): void {
 
 function getPolicyNodeData(dir: string): Region {
 	const info = require(infoJsonPath(dir))
-	const vaccination_plan = require(planJsonPath(dir))
+	const plan = require(planJsonPath(dir))
 	let regions: Region[] = []
 
 	const regionsDir = path.join(POLICIES_DIR, dir, 'regions')
@@ -45,7 +45,7 @@ function getPolicyNodeData(dir: string): Region {
 
 	return {
 		...info,
-		vaccination_plan,
+		plan,
 		regions: regions.length === 0 ? undefined : regions,
 	}
 }
