@@ -3,12 +3,17 @@
  * Licensed under the MIT license. See LICENSE file in the project.
  */
 import * as path from 'path'
-import * as chalk from 'chalk'
-import { ValidationError } from 'jsonschema'
+import chalk from 'chalk'
 import { DIST_DIR } from '../createDistDir'
 import { getFiles, DATA_DIR } from '../getFiles'
 import { readCsvFile } from '../readCsvFile'
 import { validateRegionInfo, validateVaccinationPlan } from '../schema'
+import {
+	VaccinationPlan,
+	Link,
+	RolloutPhase,
+	Qualification,
+} from '@ms-covidbot/state-plan-schema'
 
 const LOCALIZATION_TABLE_PATH = path.join(DIST_DIR, 'localization.csv')
 
@@ -19,7 +24,7 @@ function validateDataFiles() {
 	const validStringIds = getValidStringIds()
 
 	let errorCount = 0
-	const schemaValidationErrors: ValidationError[] = []
+	const schemaValidationErrors: any[] = []
 	const linkErrors: string[] = []
 
 	// Validate data files
@@ -32,19 +37,17 @@ function validateDataFiles() {
 		try {
 			/* eslint-disable-next-line @typescript-eslint/no-var-requires */
 			const data = require(file)
-			const validationResult = validateRegionInfo(data)
-			schemaValidationErrors.push(...validationResult.errors)
-			errorCount += validationResult.errors.length
+			const validationErrors = validateRegionInfo(data)
+			schemaValidationErrors.push(...validationErrors)
+			errorCount += validationErrors.length
 
 			// handle results
-			if (validationResult.errors.length === 0) {
+			if (validationErrors.length === 0) {
 				console.log(chalk.green(`✔ ${file}`))
 			}
-			if (validationResult.errors.length > 0) {
+			if (validationErrors.length > 0) {
 				console.log(
-					chalk.red(
-						`❌ ${file} has ${validationResult.errors.length} schema errors`
-					)
+					chalk.red(`❌ ${file} has ${validationErrors.length} schema errors`)
 				)
 			}
 		} catch (err) {
@@ -56,22 +59,20 @@ function validateDataFiles() {
 		try {
 			/* eslint-disable-next-line @typescript-eslint/no-var-requires */
 			const data = require(file)
-			const validationResult = validateVaccinationPlan(data)
+			const validationErrors = validateVaccinationPlan(data)
 			const dataLinkErrors: string[] = []
 			checkStringIds(data, validStringIds, dataLinkErrors)
 			linkErrors.push(...dataLinkErrors)
-			schemaValidationErrors.push(...validationResult.errors)
-			errorCount += dataLinkErrors.length + validationResult.errors.length
+			schemaValidationErrors.push(...validationErrors)
+			errorCount += dataLinkErrors.length + validationErrors.length
 
 			// handle results
-			if (validationResult.errors.length === 0 && dataLinkErrors.length === 0) {
+			if (validationErrors.length === 0 && dataLinkErrors.length === 0) {
 				console.log(chalk.green(`✔ ${file}`))
 			}
-			if (validationResult.errors.length > 0) {
+			if (validationErrors.length > 0) {
 				console.log(
-					chalk.red(
-						`❌ ${file} has ${validationResult.errors.length} schema errors`
-					)
+					chalk.red(`❌ ${file} has ${validationErrors.length} schema errors`)
 				)
 			}
 			if (dataLinkErrors.length > 0) {
@@ -111,7 +112,7 @@ function getValidStringIds(): Set<string> {
 }
 
 function checkStringIds(
-	vaccinationPlan: Record<string, any>,
+	vaccinationPlan: VaccinationPlan,
 	validStrings: Set<string>,
 	errors: string[]
 ): void {
@@ -121,22 +122,20 @@ function checkStringIds(
 		}
 	}
 
+	const links = vaccinationPlan.links as Record<string, Link>
 	if (vaccinationPlan.links) {
-		Object.keys(vaccinationPlan.links).forEach((link) => {
-			if (vaccinationPlan.links[link].text) {
-				checkString(vaccinationPlan.links[link].text)
+		Object.keys(links).forEach((link) => {
+			if (links[link].text) {
+				checkString(links[link].text)
 			}
-			if (vaccinationPlan.links[link].description) {
-				checkString(vaccinationPlan.links[link].description)
+			if (links[link].description) {
+				checkString(links[link].description as string)
 			}
 		})
 	}
 	if (vaccinationPlan.phases) {
-		vaccinationPlan.phases.forEach((phase: Phase) => {
+		vaccinationPlan.phases.forEach((phase: RolloutPhase) => {
 			phase.qualifications.forEach((qual: Qualification) => checkString(qual))
 		})
 	}
 }
-
-type Phase = any
-type Qualification = string

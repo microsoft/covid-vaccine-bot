@@ -1,0 +1,24 @@
+{
+	"name": "@ms-covidbot/state-plan-schema",
+	"version": "0.0.1",
+	"private": true,
+	"main": "src/index.ts",
+	"publishConfig": {
+		"main": "dist/index.js",
+		"types": "dist/index.d.ts,"
+	},
+	"scripts": {
+		"clean": "essex clean",
+		"generate_schema": "ts-node scripts/generateSchema",
+		"build_package": "tsc -b tsconfig.lib.json",
+		"build": "run-p generate_schema build_package"
+	},
+	"devDependencies": {
+		"@essex/scripts": "^12.0.2",
+		"@types/node": "^14.14.22",
+		"npm-run-all": "^4.1.5",
+		"ts-node": "^9.1.1",
+		"typescript": "^4.1.3",
+		"typescript-json-schema": "^0.48.0"
+	}
+}
