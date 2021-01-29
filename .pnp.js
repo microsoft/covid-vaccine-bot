@@ -23,12 +23,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:."
       },
       {
-        "name": "@ms-covidbot/state-plan-schema",
-        "reference": "workspace:packages/plan-schema"
-      },
-      {
         "name": "@ms-covidbot/state-plans",
         "reference": "workspace:packages/plans"
+      },
+      {
+        "name": "@ms-covidbot/state-plan-schema",
+        "reference": "workspace:packages/schema"
       },
       {
         "name": "ms-covid-healthbot-service",
@@ -38,7 +38,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     "enableTopLevelFallback": true,
     "ignorePatternData": "(^(?:\\.yarn\\/sdks(?:\\/(?!\\.)(?:(?:(?!(?:^|\\/)\\.).)*?)|$))$)",
     "fallbackExclusionList": [
-      ["@ms-covidbot/state-plan-schema", ["workspace:packages/plan-schema"]],
+      ["@ms-covidbot/state-plan-schema", ["workspace:packages/schema"]],
       ["@ms-covidbot/state-plans", ["workspace:packages/plans"]],
       ["ms-covid-bot", ["workspace:."]],
       ["ms-covid-healthbot-service", ["workspace:packages/service"]]
@@ -3181,10 +3181,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:57a122103318ca3e3120f320980a05971acfa6198ecf5770f4951d7f8e424cc3307069ebcfd78a63c8fcaa92d2fab9f7523ce349036f83714143598de964c645#npm:10.0.5", {
-          "packageLocation": "./.yarn/$$virtual/@essex-build-step-lint-staged-virtual-ba73a1436d/0/cache/@essex-build-step-lint-staged-npm-10.0.5-8bdb2154bc-dcdf45f23b.zip/node_modules/@essex/build-step-lint-staged/",
+        ["virtual:61207200f87d982cc8b3b6a0633fadceb38d09a60d69bb23cfb59bf4cf7c4da139aa9d8a704c3bd27126a0d8423c712120d7b37f7afd2ce80f76dffb6f11b7a6#npm:10.0.5", {
+          "packageLocation": "./.yarn/$$virtual/@essex-build-step-lint-staged-virtual-35a9844a05/0/cache/@essex-build-step-lint-staged-npm-10.0.5-8bdb2154bc-dcdf45f23b.zip/node_modules/@essex/build-step-lint-staged/",
           "packageDependencies": [
-            ["@essex/build-step-lint-staged", "virtual:57a122103318ca3e3120f320980a05971acfa6198ecf5770f4951d7f8e424cc3307069ebcfd78a63c8fcaa92d2fab9f7523ce349036f83714143598de964c645#npm:10.0.5"],
+            ["@essex/build-step-lint-staged", "virtual:61207200f87d982cc8b3b6a0633fadceb38d09a60d69bb23cfb59bf4cf7c4da139aa9d8a704c3bd27126a0d8423c712120d7b37f7afd2ce80f76dffb6f11b7a6#npm:10.0.5"],
             ["@essex/build-utils", "npm:10.0.5"],
             ["@essex/shellrunner", "npm:10.0.5"],
             ["@types/lint-staged", null],
@@ -3474,10 +3474,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:57a122103318ca3e3120f320980a05971acfa6198ecf5770f4951d7f8e424cc3307069ebcfd78a63c8fcaa92d2fab9f7523ce349036f83714143598de964c645#npm:10.0.4", {
-          "packageLocation": "./.yarn/$$virtual/@essex-eslint-plugin-virtual-72a6d0b9de/0/cache/@essex-eslint-plugin-npm-10.0.4-7a1519a74f-9500b4fc94.zip/node_modules/@essex/eslint-plugin/",
+        ["virtual:61207200f87d982cc8b3b6a0633fadceb38d09a60d69bb23cfb59bf4cf7c4da139aa9d8a704c3bd27126a0d8423c712120d7b37f7afd2ce80f76dffb6f11b7a6#npm:10.0.4", {
+          "packageLocation": "./.yarn/$$virtual/@essex-eslint-plugin-virtual-a07fd81391/0/cache/@essex-eslint-plugin-npm-10.0.4-7a1519a74f-9500b4fc94.zip/node_modules/@essex/eslint-plugin/",
           "packageDependencies": [
-            ["@essex/eslint-plugin", "virtual:57a122103318ca3e3120f320980a05971acfa6198ecf5770f4951d7f8e424cc3307069ebcfd78a63c8fcaa92d2fab9f7523ce349036f83714143598de964c645#npm:10.0.4"],
+            ["@essex/eslint-plugin", "virtual:61207200f87d982cc8b3b6a0633fadceb38d09a60d69bb23cfb59bf4cf7c4da139aa9d8a704c3bd27126a0d8423c712120d7b37f7afd2ce80f76dffb6f11b7a6#npm:10.0.4"],
             ["@babel/core", "npm:7.12.10"],
             ["@babel/types", "npm:7.12.12"],
             ["@types/eslint-import-resolver-node", null],
@@ -3607,10 +3607,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:3ba18c59a9f27dd01cb6f005eb4b07433a1e0c005a2fe3e76836ef2d2ea3721296a763bafcb13a324fbff50c62f4bdb02bb191e26573ae516045a86f5b733c37#npm:12.0.2", {
-          "packageLocation": "./.yarn/$$virtual/@essex-scripts-virtual-57a1221033/0/cache/@essex-scripts-npm-12.0.2-c07b12fc9f-570146de30.zip/node_modules/@essex/scripts/",
+        ["virtual:6d8ddb46071017f1f8aa92fb51776b483addb259daee6f82da20492d8ff6a83b38599a5b4e22686d1c3a997cf0164e3f6096794c7f3014ca9346d647e271728d#npm:12.0.2", {
+          "packageLocation": "./.yarn/$$virtual/@essex-scripts-virtual-61207200f8/0/cache/@essex-scripts-npm-12.0.2-c07b12fc9f-570146de30.zip/node_modules/@essex/scripts/",
           "packageDependencies": [
-            ["@essex/scripts", "virtual:3ba18c59a9f27dd01cb6f005eb4b07433a1e0c005a2fe3e76836ef2d2ea3721296a763bafcb13a324fbff50c62f4bdb02bb191e26573ae516045a86f5b733c37#npm:12.0.2"],
+            ["@essex/scripts", "virtual:6d8ddb46071017f1f8aa92fb51776b483addb259daee6f82da20492d8ff6a83b38599a5b4e22686d1c3a997cf0164e3f6096794c7f3014ca9346d647e271728d#npm:12.0.2"],
             ["@babel/core", "npm:7.12.10"],
             ["@essex/build-step-azure", "npm:10.0.5"],
             ["@essex/build-step-babel", "npm:10.0.5"],
@@ -3619,7 +3619,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@essex/build-step-eslint", "npm:10.0.5"],
             ["@essex/build-step-init", "npm:12.0.2"],
             ["@essex/build-step-jest", "npm:11.0.2"],
-            ["@essex/build-step-lint-staged", "virtual:57a122103318ca3e3120f320980a05971acfa6198ecf5770f4951d7f8e424cc3307069ebcfd78a63c8fcaa92d2fab9f7523ce349036f83714143598de964c645#npm:10.0.5"],
+            ["@essex/build-step-lint-staged", "virtual:61207200f87d982cc8b3b6a0633fadceb38d09a60d69bb23cfb59bf4cf7c4da139aa9d8a704c3bd27126a0d8423c712120d7b37f7afd2ce80f76dffb6f11b7a6#npm:10.0.5"],
             ["@essex/build-step-pretty-quick", "npm:10.0.5"],
             ["@essex/build-step-recipes", "npm:10.0.5"],
             ["@essex/build-step-rollup", "virtual:ce059eb2a838cb0f85ac28698f4660e9c0d0fba7e9fbdef06d074284487f6e99edc38b5a08734cf927085490e5e5e3f40fb4917a6d80a96effcfc78609243aba#npm:10.0.5"],
@@ -3630,7 +3630,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@essex/build-step-zip", "npm:10.0.5"],
             ["@essex/build-utils", "npm:10.0.5"],
             ["@essex/eslint-config", null],
-            ["@essex/eslint-plugin", "virtual:57a122103318ca3e3120f320980a05971acfa6198ecf5770f4951d7f8e424cc3307069ebcfd78a63c8fcaa92d2fab9f7523ce349036f83714143598de964c645#npm:10.0.4"],
+            ["@essex/eslint-plugin", "virtual:61207200f87d982cc8b3b6a0633fadceb38d09a60d69bb23cfb59bf4cf7c4da139aa9d8a704c3bd27126a0d8423c712120d7b37f7afd2ce80f76dffb6f11b7a6#npm:10.0.4"],
             ["@essex/jest-config", null],
             ["@essex/prettier-config", null],
             ["@essex/shellrunner", "npm:10.0.5"],
@@ -4274,11 +4274,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@ms-covidbot/state-plan-schema", [
-        ["workspace:packages/plan-schema", {
-          "packageLocation": "./packages/plan-schema/",
+        ["workspace:packages/schema", {
+          "packageLocation": "./packages/schema/",
           "packageDependencies": [
-            ["@ms-covidbot/state-plan-schema", "workspace:packages/plan-schema"],
-            ["@essex/scripts", "virtual:3ba18c59a9f27dd01cb6f005eb4b07433a1e0c005a2fe3e76836ef2d2ea3721296a763bafcb13a324fbff50c62f4bdb02bb191e26573ae516045a86f5b733c37#npm:12.0.2"],
+            ["@ms-covidbot/state-plan-schema", "workspace:packages/schema"],
+            ["@essex/scripts", "virtual:6d8ddb46071017f1f8aa92fb51776b483addb259daee6f82da20492d8ff6a83b38599a5b4e22686d1c3a997cf0164e3f6096794c7f3014ca9346d647e271728d#npm:12.0.2"],
             ["@types/node", "npm:14.14.22"],
             ["npm-run-all", "npm:4.1.5"],
             ["ts-node", "virtual:529d36d88705c4a52219de09fb2835c0afea22be2b48280ddbe8e15e0aa5e9ca0604f3f6e0652ebdf1cd6d809634a9a662067e49ec190c6798043b2e07d8b936#npm:9.1.1"],
@@ -4293,8 +4293,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/plans/",
           "packageDependencies": [
             ["@ms-covidbot/state-plans", "workspace:packages/plans"],
-            ["@essex/scripts", "virtual:3ba18c59a9f27dd01cb6f005eb4b07433a1e0c005a2fe3e76836ef2d2ea3721296a763bafcb13a324fbff50c62f4bdb02bb191e26573ae516045a86f5b733c37#npm:12.0.2"],
-            ["@ms-covidbot/state-plan-schema", "workspace:packages/plan-schema"],
+            ["@essex/scripts", "virtual:6d8ddb46071017f1f8aa92fb51776b483addb259daee6f82da20492d8ff6a83b38599a5b4e22686d1c3a997cf0164e3f6096794c7f3014ca9346d647e271728d#npm:12.0.2"],
+            ["@ms-covidbot/state-plan-schema", "workspace:packages/schema"],
             ["@types/node", "npm:14.14.22"],
             ["ajv", "npm:7.0.3"],
             ["chalk", "npm:4.1.0"],
@@ -17500,7 +17500,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["ms-covid-healthbot-service", "workspace:packages/service"],
             ["@azure/functions", "npm:1.2.2"],
             ["@azure/storage-blob", "npm:12.4.0"],
-            ["@ms-covidbot/state-plan-schema", "workspace:packages/plan-schema"],
+            ["@ms-covidbot/state-plan-schema", "workspace:packages/schema"],
             ["@types/debug", "npm:4.1.5"],
             ["@types/lru-cache", "npm:5.1.0"],
             ["@types/minimist", "npm:1.2.1"],
