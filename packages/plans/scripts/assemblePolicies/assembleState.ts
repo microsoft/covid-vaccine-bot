@@ -7,6 +7,7 @@ import * as fs from 'fs'
 import * as path from 'path'
 import { DIST_DIR } from '../createDistDir'
 import { DATA_DIR } from '../getFiles'
+import { Region } from '@ms-covidbot/state-plan-schema'
 
 export const POLICIES_DIR = path.join(DATA_DIR, 'policies')
 
@@ -30,10 +31,10 @@ export function assembleState(state: string): void {
 	})
 }
 
-function getPolicyNodeData(dir: string): any {
+function getPolicyNodeData(dir: string): Region {
 	const info = require(infoJsonPath(dir))
 	const vaccination_plan = require(planJsonPath(dir))
-	let regions: any[] = []
+	let regions: Region[] = []
 
 	const regionsDir = path.join(POLICIES_DIR, dir, 'regions')
 	if (fs.existsSync(regionsDir)) {

@@ -8,6 +8,12 @@ import { DIST_DIR } from '../createDistDir'
 import { getFiles, DATA_DIR } from '../getFiles'
 import { readCsvFile } from '../readCsvFile'
 import { validateRegionInfo, validateVaccinationPlan } from '../schema'
+import {
+	VaccinationPlan,
+	Link,
+	RolloutPhase,
+	Qualification,
+} from '@ms-covidbot/state-plan-schema'
 
 const LOCALIZATION_TABLE_PATH = path.join(DIST_DIR, 'localization.csv')
 
@@ -106,7 +112,7 @@ function getValidStringIds(): Set<string> {
 }
 
 function checkStringIds(
-	vaccinationPlan: Record<string, any>,
+	vaccinationPlan: VaccinationPlan,
 	validStrings: Set<string>,
 	errors: string[]
 ): void {
@@ -116,22 +122,20 @@ function checkStringIds(
 		}
 	}
 
+	const links = vaccinationPlan.links as Record<string, Link>
 	if (vaccinationPlan.links) {
-		Object.keys(vaccinationPlan.links).forEach((link) => {
-			if (vaccinationPlan.links[link].text) {
-				checkString(vaccinationPlan.links[link].text)
+		Object.keys(links).forEach((link) => {
+			if (links[link].text) {
+				checkString(links[link].text)
 			}
-			if (vaccinationPlan.links[link].description) {
-				checkString(vaccinationPlan.links[link].description)
+			if (links[link].description) {
+				checkString(links[link].description as string)
 			}
 		})
 	}
 	if (vaccinationPlan.phases) {
-		vaccinationPlan.phases.forEach((phase: Phase) => {
+		vaccinationPlan.phases.forEach((phase: RolloutPhase) => {
 			phase.qualifications.forEach((qual: Qualification) => checkString(qual))
 		})
 	}
 }
-
-type Phase = any
-type Qualification = string

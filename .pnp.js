@@ -17500,6 +17500,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["ms-covid-healthbot-service", "workspace:packages/service"],
             ["@azure/functions", "npm:1.2.2"],
             ["@azure/storage-blob", "npm:12.4.0"],
+            ["@ms-covidbot/state-plan-schema", "workspace:packages/plan-schema"],
             ["@types/debug", "npm:4.1.5"],
             ["@types/lru-cache", "npm:5.1.0"],
             ["@types/minimist", "npm:1.2.1"],

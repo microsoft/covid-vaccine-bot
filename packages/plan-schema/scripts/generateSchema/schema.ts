@@ -20,7 +20,7 @@ const program = TJS.getProgramFromFiles(
 )
 
 const generator = TJS.buildGenerator(program, settings)
-export const Region = generator!.getSchemaForSymbol('Region')
-export const VaccinationPlan = generator!.getSchemaForSymbol('VaccinationPlan')
-export const RolloutPhase = generator!.getSchemaForSymbol('RolloutPhase')
-export const Link = generator!.getSchemaForSymbol('Link')
+export const Region = generator?.getSchemaForSymbol('Region')
+export const VaccinationPlan = generator?.getSchemaForSymbol('VaccinationPlan')
+export const RolloutPhase = generator?.getSchemaForSymbol('RolloutPhase')
+export const Link = generator?.getSchemaForSymbol('Link')
