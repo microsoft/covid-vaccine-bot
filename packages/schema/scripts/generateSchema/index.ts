@@ -12,7 +12,7 @@ const SCHEMA_DIST_DIR = path.join(DIST_DIR, 'schema')
 function writeSchema(): void {
 	Object.keys(schema).forEach((key) => {
 		console.log(`processing schema ${key}`)
-		const item = (schema as any)[key]
+		const item = (schema as Record<string, unknown>)[key]
 
 		fs.writeFileSync(
 			path.join(SCHEMA_DIST_DIR, `${key}.json`),

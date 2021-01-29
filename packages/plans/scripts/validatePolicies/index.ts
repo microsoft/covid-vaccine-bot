@@ -7,7 +7,11 @@ import chalk from 'chalk'
 import { DIST_DIR } from '../createDistDir'
 import { getFiles, DATA_DIR } from '../getFiles'
 import { readCsvFile } from '../readCsvFile'
-import { validateRegionInfo, validateVaccinationPlan } from '../schema'
+import {
+	validateRegionInfo,
+	validateVaccinationPlan,
+	SchemaValidationError,
+} from '../schema'
 import {
 	VaccinationPlan,
 	Link,
@@ -24,7 +28,7 @@ function validateDataFiles() {
 	const validStringIds = getValidStringIds()
 
 	let errorCount = 0
-	const schemaValidationErrors: any[] = []
+	const schemaValidationErrors: SchemaValidationError[] = []
 	const linkErrors: string[] = []
 
 	// Validate data files
