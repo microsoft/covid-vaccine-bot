@@ -2466,9 +2466,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ms-covidbot/state-plan-schema@workspace:packages/state-plan-schema":
+"@ms-covidbot/state-plan-schema@workspace:packages/plan-schema":
   version: 0.0.0-use.local
-  resolution: "@ms-covidbot/state-plan-schema@workspace:packages/state-plan-schema"
+  resolution: "@ms-covidbot/state-plan-schema@workspace:packages/plan-schema"
   dependencies:
     "@essex/scripts": ^12.0.2
     "@types/node": ^14.14.22
@@ -2479,12 +2479,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ms-covidbot/state-plans@workspace:packages/state-plans":
+"@ms-covidbot/state-plans@workspace:packages/plans":
   version: 0.0.0-use.local
-  resolution: "@ms-covidbot/state-plans@workspace:packages/state-plans"
+  resolution: "@ms-covidbot/state-plans@workspace:packages/plans"
   dependencies:
     "@essex/scripts": ^12.0.2
-    "@ms-covidbot/state-plan-schema": "workspace:packages/state-plan-schema"
+    "@ms-covidbot/state-plan-schema": "workspace:packages/plan-schema"
     "@types/node": ^14.14.22
     ajv: ^7.0.3
     chalk: ^4.1.0

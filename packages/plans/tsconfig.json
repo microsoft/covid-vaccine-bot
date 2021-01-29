@@ -4,7 +4,9 @@
 		"noEmit": true,
 		"outDir": "lib/",
 		"module": "CommonJS",
-		"target": "ES2015"
+		"target": "ES2015",
+		"resolveJsonModule": true,
+		"esModuleInterop": true
 	},
-	"include": ["scripts/", "../src"]
+	"include": ["scripts/"]
 }

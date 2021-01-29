@@ -10,7 +10,8 @@
 	"scripts": {
 		"clean": "essex clean",
 		"generate_schema": "ts-node scripts/generateSchema",
-		"build": "run-s generate_schema"
+		"build_package": "tsc -b tsconfig.lib.json",
+		"build": "run-p generate_schema build_package"
 	},
 	"devDependencies": {
 		"@essex/scripts": "^12.0.2",

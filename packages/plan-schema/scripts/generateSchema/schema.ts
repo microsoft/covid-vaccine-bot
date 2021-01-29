@@ -5,17 +5,12 @@
 import * as path from 'path'
 import * as TJS from 'typescript-json-schema'
 
-// optionally pass argument to schema generator
 const settings: TJS.PartialArgs = {
 	required: true,
 }
-
-// optionally pass ts compiler options
 const compilerOptions: TJS.CompilerOptions = {
 	strictNullChecks: true,
 }
-
-// optionally pass a base path
 const basePath = path.join(__dirname, '../src')
 
 const program = TJS.getProgramFromFiles(
