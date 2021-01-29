@@ -5,10 +5,10 @@
 import * as path from 'path'
 import * as chalk from 'chalk'
 import { ValidationError } from 'jsonschema'
-import { DIST_DIR } from './createDistDir'
-import { getFiles, DATA_DIR } from './getFiles'
-import { readCsvFile } from './readCsvFile'
-import { validateRegionInfo, validateVaccinationPlan } from './schema'
+import { DIST_DIR } from '../createDistDir'
+import { getFiles, DATA_DIR } from '../getFiles'
+import { readCsvFile } from '../readCsvFile'
+import { validateRegionInfo, validateVaccinationPlan } from '../schema'
 
 const LOCALIZATION_TABLE_PATH = path.join(DIST_DIR, 'localization.csv')
 

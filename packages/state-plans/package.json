@@ -4,9 +4,9 @@
 	"private": true,
 	"scripts": {
 		"clean": "essex clean",
-		"assemble_localization": "ts-node scripts/assembleLocalization.ts",
-		"assemble_policies": "ts-node scripts/assemblePolicies.ts",
-		"test": "ts-node scripts/validatePolicies.ts",
+		"assemble_localization": "ts-node scripts/assembleLocalization",
+		"assemble_policies": "ts-node scripts/assemblePolicies",
+		"test": "ts-node scripts/validatePolicies",
 		"build": "run-s assemble_localization assemble_policies"
 	},
 	"devDependencies": {

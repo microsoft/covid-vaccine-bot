@@ -4,18 +4,18 @@
  */
 import * as fs from 'fs'
 import * as path from 'path'
-import { createDistDir, DIST_DIR } from './createDistDir'
-import { DATA_DIR, getFiles } from './getFiles'
-import { readCsvFile } from './readCsvFile'
+import { DIST_DIR } from '../createDistDir'
+import { DATA_DIR, getFiles } from '../getFiles'
+import { readCsvFile } from '../readCsvFile'
 /* eslint-disable-next-line import/order */
 import stringify = require('csv-stringify')
 
 const OUTPUT_FILE = path.join(DIST_DIR, 'localization.csv')
 
-function assembleLocalizationFile() {
+export function assembleLocalizationFile(): void {
 	const records: unknown[] = []
 	const localizationFiles = getFiles(DATA_DIR, (f) => f.endsWith('.csv'))
-	localizationFiles.forEach((file) => {
+	localizationFiles.forEach((file: string) => {
 		console.log('reading ' + file)
 		readCsvFile(file, records)
 	})
@@ -34,6 +34,3 @@ function assembleLocalizationFile() {
 		})
 	})
 }
-
-createDistDir()
-assembleLocalizationFile()
