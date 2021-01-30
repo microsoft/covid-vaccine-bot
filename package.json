@@ -7,7 +7,7 @@
 		"build_all": "yarn workspaces foreach -pvt run build",
 		"test_all": "yarn workspaces foreach -pvt run test",
 		"start_all": "yarn workspaces foreach -piv run start",
-		"unit_test": "echo TODO essex test --coverage",
+		"unit_test": "jest --ci --coverage",
 		"lint": "essex lint --docs",
 		"lint:fix": "essex lint --fix",
 		"git_is_clean": "essex git-is-clean",
@@ -16,9 +16,15 @@
 		"ci": "run-s build_all lint test_all unit_test git_is_clean"
 	},
 	"devDependencies": {
+		"@babel/core": "^7.12.3",
+		"@babel/preset-env": "^7.12.1",
+		"@babel/preset-react": "^7.12.5",
+		"@babel/preset-typescript": "^7.12.1",
 		"@essex/eslint-config": "^10.0.3",
 		"@essex/eslint-plugin": "^10.0.3",
+		"@essex/jest-config": "^11.0.2",
 		"@essex/scripts": "^12.0.2",
+		"@types/jest": "^26.0.20",
 		"@typescript-eslint/eslint-plugin": "^4.14.0",
 		"@typescript-eslint/parser": "^4.14.0",
 		"eslint": "^7.18.0",
@@ -30,6 +36,7 @@
 		"eslint-plugin-react": "^7.22.0",
 		"eslint-plugin-react-hooks": "^4.2.0",
 		"husky": "^4.3.1",
+		"jest": "^26.6.0",
 		"lint-staged": "^10.5.2",
 		"npm-run-all": "^4.1.5",
 		"typescript": "^4.1.3"
