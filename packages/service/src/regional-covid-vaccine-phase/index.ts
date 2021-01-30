@@ -5,9 +5,9 @@
 // eslint-disable-next-line import/no-unresolved
 import { AzureFunction, Context, HttpRequest } from '@azure/functions'
 import logIntercept from 'azure-function-log-intercept'
-import { fetchAllStateGuidelines } from './fetchAllStateGuidelines'
+import { fetchAllStatePlans } from './fetchAllStatePlans'
 import { fetchLocation } from './fetchLocation'
-import { resolveCovidInfo } from './resolveCovidInfo'
+import { resolvePlanPolicy } from './resolvePlanPolicy'
 
 const httpTrigger: AzureFunction = async function (
 	context: Context,
@@ -25,22 +25,28 @@ const httpTrigger: AzureFunction = async function (
 		return
 	}
 
-	const [location, allStateGuidelines] = await Promise.all([
+	const [location, allStatesPlans] = await Promise.all([
 		fetchLocation(zipcode),
-		fetchAllStateGuidelines(),
+		fetchAllStatePlans(),
 	])
 
-	const covidInfo = await resolveCovidInfo(location, allStateGuidelines)
-
-	context.res = {
-		// status: 200, /* Defaults to 200 */
-		headers: {
-			'Content-Type': 'application/json',
-		},
-		body: {
-			location: location,
-			covid: covidInfo,
-		},
+	try {
+		const planPolicy = await resolvePlanPolicy(location, allStatesPlans)
+		context.res = {
+			// status: 200, /* Defaults to 200 */
+			headers: {
+				'Content-Type': 'application/json',
+			},
+			body: {
+				location: location,
+				plan: planPolicy,
+			},
+		}
+	} catch (ex) {
+		context.res = {
+			status: 404,
+			body: ex.message,
+		}
 	}
 }
 

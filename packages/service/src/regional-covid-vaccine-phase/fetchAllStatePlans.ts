@@ -5,12 +5,13 @@
 
 import { BlobServiceClient } from '@azure/storage-blob'
 import { config } from './config'
-import { statesGuidelinesCache } from './statesGuidelinesCache'
+import { statesPlansCache } from './statesPlansCache'
+import { Region } from '@ms-covidbot/state-plan-schema'
 
-const STATES_GUIDELINES_KEY = 'stateGuidelines'
+const STATES_PLANS_KEY = 'ALL_STATES_PLANS'
 
-export async function fetchAllStateGuidelines(): Promise<any> {
-	let allStateGuidelines = statesGuidelinesCache.get(STATES_GUIDELINES_KEY)
+export async function fetchAllStatePlans(): Promise<Region[]> {
+	let allStateGuidelines = statesPlansCache.get(STATES_PLANS_KEY)
 
 	if (allStateGuidelines != null) {
 		console.log('Returning cached state guidelines.')
@@ -30,7 +31,7 @@ export async function fetchAllStateGuidelines(): Promise<any> {
 	const containerClient = blobServiceClient.getContainerClient(containerName)
 	const blobClient = containerClient.getBlobClient(statesDataBlob)
 	const response = await blobClient.downloadToBuffer()
-	allStateGuidelines = JSON.parse(response.toString())
-	statesGuidelinesCache.set(STATES_GUIDELINES_KEY, allStateGuidelines)
+	allStateGuidelines = JSON.parse(response.toString()) as Region[]
+	statesPlansCache.set(STATES_PLANS_KEY, allStateGuidelines)
 	return allStateGuidelines
 }
