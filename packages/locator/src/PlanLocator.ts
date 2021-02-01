@@ -15,5 +15,6 @@ export class PlanLocator {
 
 	public getPlan(localePath: string): PlanResult {
 		/* TBD */
+		return { phase: 'tbd', phaseLabel: 'tbd' }
 	}
 }
