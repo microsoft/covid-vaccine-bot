@@ -10,30 +10,58 @@
 		{
 			"id": "1a",
 			"qualifications": [
-				"c19.eligibility.question/healthcare_worker",
-				"c19.eligibility.question/long_term_care_resident",
-				"c19.eligibility.question/health.1a.TN.non_independent",
-				"c19.eligibility.question/age.75_up"
+				{
+					"question": "c19.eligibility.question/healthcare_worker"
+				},
+				{
+					"question": "c19.eligibility.question/long_term_care_resident"
+				},
+				{
+					"question": "c19.eligibility.question/health.1a.TN.non_independent"
+				},
+				{
+					"question": "c19.eligibility.question/age.75_up"
+				}
 			]
 		},
 		{
 			"id": "1b",
 			"qualifications": [
-				"c19.eligibility.question/healthcare_worker",
-				"c19.eligibility.question/long_term_care_resident",
-				"c19.eligibility.question/age.65_up",
-				"c19.eligibility.question/health.1a.TN.non_independent",
-				"c19.eligibility.question/essential_worker.1b.TN"
+				{
+					"question": "c19.eligibility.question/healthcare_worker"
+				},
+				{
+					"question": "c19.eligibility.question/long_term_care_resident"
+				},
+				{
+					"question": "c19.eligibility.question/age.65_up"
+				},
+				{
+					"question": "c19.eligibility.question/health.1a.TN.non_independent"
+				},
+				{
+					"question": "c19.eligibility.question/essential_worker.1b.TN"
+				}
 			]
 		},
 		{
 			"id": "1c",
 			"qualifications": [
-				"c19.eligibility.question/healthcare_worker",
-				"c19.eligibility.question/long_term_care_resident",
-				"c19.eligibility.question/essential_worker",
-				"c19.eligibility.question/health",
-				"c19.eligibility.question/age.65_up"
+				{
+					"question": "c19.eligibility.question/healthcare_worker"
+				},
+				{
+					"question": "c19.eligibility.question/long_term_care_resident"
+				},
+				{
+					"question": "c19.eligibility.question/essential_worker"
+				},
+				{
+					"question": "c19.eligibility.question/health"
+				},
+				{
+					"question": "c19.eligibility.question/age.65_up"
+				}
 			]
 		}
 	]

@@ -72,4 +72,14 @@ export interface RolloutPhase {
 	qualifications: Qualification[]
 }
 
-export type Qualification = string
+export interface Qualification {
+	/**
+	 * The ID of the qualification question to ask
+	 */
+	question: string
+
+	/**
+	 * The ID of the clarifying text to provide (e.g. what defines an essential worker)
+	 */
+	moreInfo?: string
+}
