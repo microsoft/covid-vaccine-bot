@@ -139,7 +139,12 @@ function checkStringIds(
 	}
 	if (vaccinationPlan.phases) {
 		vaccinationPlan.phases.forEach((phase: RolloutPhase) => {
-			phase.qualifications.forEach((qual: Qualification) => checkString(qual))
+			phase.qualifications.forEach((qual: Qualification) => {
+				checkString(qual.question)
+				if (qual.moreInfo) {
+					checkString(qual.moreInfo)
+				}
+			})
 		})
 	}
 }

@@ -14,36 +14,76 @@
 		{
 			"id": "1a",
 			"qualifications": [
-				"c19.eligibility.question/healthcare_worker",
-				"c19.eligibility.question/long_term_care_resident"
+				{
+					"question": "c19.eligibility.question/healthcare_worker"
+				},
+				{
+					"question": "c19.eligibility.question/long_term_care_resident"
+				}
 			]
 		},
 		{
 			"id": "1b",
 			"qualifications": [
-				"c19.eligibility.question/healthcare_worker",
-				"c19.eligibility.question/long_term_care_resident",
-				"c19.eligibility.question/essential_worker.1b",
-				"c19.eligibility.question/age.70_up",
-				"c19.eligibility.question/congregate",
-				"c19.eligibility.question/congregate_services.WA",
-				"c19.eligibility.question/congregate_worker.WA",
-				"c19.eligibility.question/multigen.WA",
-				"c19.eligibility.question/health.1b.WA"
+				{
+					"question": "c19.eligibility.question/healthcare_worker"
+				},
+				{
+					"question": "c19.eligibility.question/long_term_care_resident"
+				},
+				{
+					"question": "c19.eligibility.question/essential_worker.1b"
+				},
+				{
+					"question": "c19.eligibility.question/age.70_up"
+				},
+				{
+					"question": "c19.eligibility.question/congregate"
+				},
+				{
+					"question": "c19.eligibility.question/congregate_services.WA"
+				},
+				{
+					"question": "c19.eligibility.question/congregate_worker.WA"
+				},
+				{
+					"question": "c19.eligibility.question/multigen.WA"
+				},
+				{
+					"question": "c19.eligibility.question/health.1b.WA"
+				}
 			]
 		},
 		{
 			"id": "1c",
 			"qualifications": [
-				"c19.eligibility.question/healthcare_worker",
-				"c19.eligibility.question/long_term_care_resident",
-				"c19.eligibility.question/essential_worker",
-				"c19.eligibility.question/health",
-				"c19.eligibility.question/age.65_up",
-				"c19.eligibility.question/congregate",
-				"c19.eligibility.question/congregate_services.WA",
-				"c19.eligibility.question/congregate_worker.WA",
-				"c19.eligibility.question/multigen.WA"
+				{
+					"question": "c19.eligibility.question/healthcare_worker"
+				},
+				{
+					"question": "c19.eligibility.question/long_term_care_resident"
+				},
+				{
+					"question": "c19.eligibility.question/essential_worker"
+				},
+				{
+					"question": "c19.eligibility.question/health"
+				},
+				{
+					"question": "c19.eligibility.question/age.65_up"
+				},
+				{
+					"question": "c19.eligibility.question/congregate"
+				},
+				{
+					"question": "c19.eligibility.question/congregate_services.WA"
+				},
+				{
+					"question": "c19.eligibility.question/congregate_worker.WA"
+				},
+				{
+					"question": "c19.eligibility.question/multigen.WA"
+				}
 			]
 		}
 	]
