@@ -8,15 +8,19 @@
 		"build": "essex build"
 	},
 	"publishConfig": {
-		"main": "dist/index.js",
-		"types": "dist/index.d.ts"
+		"main": "dist/cjs/index.js",
+		"module": "dist/esm/index.js",
+		"types": "dist/types/index.d.ts"
 	},
 	"dependencies": {
-		"core-js": "^3.8.3"
+		"core-js": "^3.8.3",
+		"object-path": "^0.11.5"
 	},
 	"devDependencies": {
 		"@essex/scripts": "^12.0.2",
 		"@ms-covidbot/state-plan-schema": "workspace:packages/schema",
-		"@ms-covidbot/state-plans": "workspace:packages/plans"
+		"@ms-covidbot/state-plans": "workspace:packages/plans",
+		"@types/jest": "^26.0.20",
+		"@types/object-path": "^0.11.0"
 	}
 }

@@ -5,20 +5,21 @@
 
 import fetch from 'node-fetch'
 import { config } from './config'
-import { locationCache } from './locationCache'
+import {
+	locationCache,
+	invalidate as invalidateLocationCache,
+} from './locationCache'
+import { BingLocation } from '@ms-covidbot/policy-locator'
 
-export interface Location {
-	[key: string]: string
-	adminDistrict: string
-	adminDistrict2: string
-	countryRegion: string
-	formattedAddress: string
-	locality: string
-	postalCode: string
-}
-
-export async function fetchLocation(zipcode: string): Promise<Location> {
-	let location: Location | undefined = locationCache.get(zipcode)
+export async function fetchLocation(
+	zipcode: string,
+	invalidate: boolean
+): Promise<BingLocation> {
+	if (invalidate) {
+		invalidateLocationCache()
+	}
+	let location: BingLocation | undefined =
+		config.cacheDisabled && locationCache.get(zipcode)
 
 	if (location !== undefined) {
 		console.log(`Returning cached location for ${zipcode}.`)
@@ -32,7 +33,9 @@ export async function fetchLocation(zipcode: string): Promise<Location> {
 	const url = `${config.locationsApi}?query=${zipcode}&key=${config.locationsApiKey}`
 
 	const results = await fetch(url).then((res) => res.json())
-	location = results.resourceSets[0].resources[0].address as Location
-	locationCache.set(zipcode, location)
+	location = results.resourceSets[0].resources[0].address as BingLocation
+	if (!config.cacheDisabled) {
+		locationCache.set(zipcode, location)
+	}
 	return location
 }

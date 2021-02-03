@@ -7,7 +7,7 @@ import { AzureFunction, Context, HttpRequest } from '@azure/functions'
 import logIntercept from 'azure-function-log-intercept'
 import { fetchAllStatePlans } from './fetchAllStatePlans'
 import { fetchLocation } from './fetchLocation'
-import { resolvePlanPolicy } from './resolvePlanPolicy'
+import { resolvePlanPolicy } from '@ms-covidbot/policy-locator'
 
 const httpTrigger: AzureFunction = async function (
 	context: Context,
@@ -16,6 +16,7 @@ const httpTrigger: AzureFunction = async function (
 	// send console messages to context tracing
 	logIntercept(context)
 	const zipcode = req.query.zipcode
+	const invalidate = Boolean(req.query.invalidate)
 
 	if (!zipcode || !/^\d{5}$/.test(zipcode)) {
 		context.res = {
@@ -26,12 +27,12 @@ const httpTrigger: AzureFunction = async function (
 	}
 
 	const [location, allStatesPlans] = await Promise.all([
-		fetchLocation(zipcode),
-		fetchAllStatePlans(),
+		fetchLocation(zipcode, invalidate),
+		fetchAllStatePlans(invalidate),
 	])
 
 	try {
-		const planPolicy = await resolvePlanPolicy(location, allStatesPlans)
+		const planPolicy = resolvePlanPolicy(location, allStatesPlans)
 		context.res = {
 			// status: 200, /* Defaults to 200 */
 			headers: {

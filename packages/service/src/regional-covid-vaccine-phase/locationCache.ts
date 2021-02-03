@@ -4,9 +4,13 @@
  */
 
 import LRU from 'lru-cache'
-import { Location } from './fetchLocation'
+import { BingLocation } from '@ms-covidbot/policy-locator'
 
-export const locationCache = new LRU<string, Location>({
+export const locationCache = new LRU<string, BingLocation>({
 	max: 1000,
 	maxAge: 1000 * 60 * 60,
 })
+
+export function invalidate(): void {
+	locationCache.reset()
+}

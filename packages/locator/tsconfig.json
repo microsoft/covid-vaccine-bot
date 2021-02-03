@@ -1,8 +1,15 @@
 {
 	"extends": "../../tsconfig",
 	"compilerOptions": {
-		"outDir": "dist/",
-		"declaration": true
+		"module": "CommonJS",
+		"declaration": true,
+		"outDir": "dist",
+		"rootDir": "./src",
+		"sourceMap": true,
+		"strict": true,
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true,
+		"resolveJsonModule": true
 	},
 	"include": ["src"]
 }

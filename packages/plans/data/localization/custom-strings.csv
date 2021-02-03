@@ -7,7 +7,7 @@ c19.entry/unknown_question,I'm not sure how to help you with that. Please try on
 c19.locate/question.zip,"What is your five digit ZIP code?",,,,,,,,,,,,,,
 c19.locate/question.zip.invalid_format,"Hmmm, that doesn't look right. Your ZIP code should be a 5 digit number.",,,,,,,,,,,,,,
 c19.locate/api_error,"Oops. Something went wrong.",,,,,,,,,,,,,,
-c19.moreinfo/lookup,'Let me see if I can find more details on the question: $QUESTION',,,,,,,,,,,,,,
+c19.moreinfo/lookup,"Let me see if I can find more details on the question: $QUESTION",,,,,,,,,,,,,,
 c19.moreinfo/no_info_available,"Unfortunately, I don't have any more details on that yet. Try checking your state's COVID-19 info site at $INFO_LINK",,,,,,,,,,,,,,
 c19.safety/cdc_link,"You can find more information about the safety of the COVID-19 vaccine at the [CDC's Website](https://www.cdc.gov/coronavirus/2019-ncov/vaccines/safety.html)",,,,,,,,,,,,,,
 c19.eligibility/state_status,"$REGION is in phase $PHASE, which has $NUM_QUESTIONS questions.",,,,,,,,,,,,,,

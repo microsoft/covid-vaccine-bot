@@ -8,13 +8,23 @@ import {
 	StorageSharedKeyCredential,
 } from '@azure/storage-blob'
 import { config } from './config'
-import { statesPlansCache } from './statesPlansCache'
+import {
+	statesPlansCache,
+	invalidate as invalidateStatePlansCache,
+} from './statesPlansCache'
 import { Region } from '@ms-covidbot/state-plan-schema'
 
 const STATES_PLANS_KEY = 'ALL_STATES_PLANS'
 
-export async function fetchAllStatePlans(): Promise<Region[]> {
-	let allStateGuidelines = statesPlansCache.get(STATES_PLANS_KEY)
+export async function fetchAllStatePlans(
+	invalidate: boolean
+): Promise<Region[]> {
+	if (invalidate) {
+		invalidateStatePlansCache()
+	}
+	let allStateGuidelines = config.cacheDisable
+		? undefined
+		: statesPlansCache.get(STATES_PLANS_KEY)
 
 	if (allStateGuidelines != null) {
 		console.log('Returning cached state guidelines.')
@@ -37,6 +47,8 @@ export async function fetchAllStatePlans(): Promise<Region[]> {
 	const blobClient = containerClient.getBlobClient(statesDataBlob)
 	const response = await blobClient.downloadToBuffer()
 	allStateGuidelines = JSON.parse(response.toString()) as Region[]
-	statesPlansCache.set(STATES_PLANS_KEY, allStateGuidelines)
+	if (!config.cacheDisabled) {
+		statesPlansCache.set(STATES_PLANS_KEY, allStateGuidelines)
+	}
 	return allStateGuidelines
 }

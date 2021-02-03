@@ -1,20 +1,24 @@
 {
-	"name": "ms-covid-healthbot-service",
+	"name": "@ms-covidbot/service",
+	"private": true,
+	"containerName": "ms-covid-healthbot-service",
 	"version": "0.0.8",
 	"description": "",
 	"scripts": {
 		"build:webpack": "webpack",
-		"build:docker": "docker build -t ${AZURE_CONTAINER_REGISTRY}/$(node -p 'require(\"./package.json\").name') .",
+		"build:docker": "docker build -t ${AZURE_CONTAINER_REGISTRY}/$(node -p 'require(\"./package.json\").containerName') .",
 		"bundle:service": "run-s build:webpack build:docker",
 		"clean": "rimraf dist",
+		"build": "webpack",
 		"start:webpack": "webpack -w",
 		"start:func": "func start",
-		"start:docker": "docker run -t -i --rm -p 7071:80 --env-file .env ${AZURE_CONTAINER_REGISTRY}/$(node -p 'require(\"./package.json\").name')",
+		"start:docker": "docker run -t -i --rm -p 7071:80 --env-file .env ${AZURE_CONTAINER_REGISTRY}/$(node -p 'require(\"./package.json\").containerName')",
 		"start": "run-p start:webpack start:func",
-		"deploy": "yarn node ./scripts/deploy.js -c ${AZURE_CONTAINER_REGISTRY} -i $(node -p 'require(\"./package.json\").name') -u ${DOCKER_USER} -p ${DOCKER_PASSWORD}"
+		"deploy": "yarn node ./scripts/deploy.js -c ${AZURE_CONTAINER_REGISTRY} -i $(node -p 'require(\"./package.json\").containerName') -u ${DOCKER_USER} -p ${DOCKER_PASSWORD}"
 	},
 	"devDependencies": {
 		"@azure/functions": "^1.2.3",
+		"@ms-covidbot/policy-locator": "workspace:packages/locator",
 		"@ms-covidbot/state-plan-schema": "workspace:packages/schema",
 		"@types/debug": "^4.1.5",
 		"@types/lru-cache": "^5.1.0",

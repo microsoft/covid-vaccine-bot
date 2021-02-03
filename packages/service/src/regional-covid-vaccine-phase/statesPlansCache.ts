@@ -10,3 +10,7 @@ export const statesPlansCache = new LRU<string, Region[]>({
 	max: 1,
 	maxAge: 1000 * 60 * 60,
 })
+
+export function invalidate(): void {
+	statesPlansCache.reset()
+}

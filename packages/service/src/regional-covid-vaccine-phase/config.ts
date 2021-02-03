@@ -15,26 +15,5 @@ export const config: Record<string, any> = {
 	azureStorageAccountKey: process.env.AZURE_STORAGE_ACCOUNT_KEY || '',
 	azureBlobContainer: process.env.AZURE_BLOB_CONTAINER || '',
 	azureStatesBlob: process.env.AZURE_STATES_BLOB || '',
-	regionTypes: {
-		state: {
-			locationsId: 'adminDistrict',
-			policyTreeId: 'metadata.code_alpha',
-		},
-		territory: {
-			locationsId: 'adminDistrict',
-			policyTreeId: 'metadata.code_alpha',
-		},
-		tribal_land: {
-			locationsId: '',
-			policyTreeId: '',
-		},
-		county: {
-			locationsId: 'adminDistrict2',
-			policyTreeId: 'metadata.id_bing',
-		},
-		city: {
-			locationsId: 'locality',
-			policyTreeId: '',
-		},
-	},
+	disableCache: process.env.CACHE_DISABLED || false,
 }
