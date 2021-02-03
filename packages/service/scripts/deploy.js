@@ -18,18 +18,14 @@ const log = debug('ms-covid-healthbot-service:scripts:buildDeploy')
 const options = {
 	containerRegistry: {
 		type: 'string',
-		default: '',
+		alias: 'c',
+		required: true,
 	},
 
 	imageName: {
 		type: 'string',
+		alias: 'i',
 		required: true,
-		default: packageInfo.name || '',
-	},
-
-	imageTag: {
-		type: 'string',
-		default: packageInfo.version || '',
 	},
 
 	username: {
@@ -44,9 +40,14 @@ const options = {
 		required: true,
 	},
 
-	skipVersionTag: {
+	prod: {
 		type: 'boolean',
 		default: false,
+	},
+
+	version: {
+		type: 'string',
+		default: packageInfo.version || '',
 	},
 
 	verbose: {
@@ -54,6 +55,14 @@ const options = {
 		alias: 'v',
 		default: false,
 	},
+}
+
+async function tagImage(sourceImage, targetImage) {
+	const tagScript = `docker tag ${sourceImage} ${targetImage}`
+	log('Tagging image: "%s"', tagScript)
+	const scriptResult = execa.command(tagScript)
+	scriptResult.stdout.pipe(process.stdout)
+	await scriptResult
 }
 
 async function pushImage(image) {
@@ -80,28 +89,44 @@ async function run() {
 		username,
 		password,
 		imageName,
-		imageTag,
-		skipVersionTag,
+		prod,
+		version,
 	} = args
 
-	// Azure CR uses containerRegistry domain as image namespace.
-	// Dockerhub uses username as image ns.
-	const ns = containerRegistry || username
-	const latestImage = `${ns}/${imageName}`
-	const versionTag = `${latestImage}:${imageTag}`
+	const baseImage = `${containerRegistry}/${imageName}`
+	const latestImage = `${baseImage}:latest`
+	const images = []
 
-	log('Logging into Docker: "%s"', containerRegistry || 'dockerHub')
+	if (prod) {
+		if (version) {
+			const versionImage = `${baseImage}:${version}`
+			try {
+				const inspect = execa.command(`docker image inspect ${versionImage}`)
+				await inspect
+				console.error(`Error. ${versionImage} already exists.`)
+				process.exit(1)
+			} catch (ex) {
+				images.push(versionImage)
+			}
+		}
+		images.push(`${baseImage}:prod`)
+	} else {
+		images.push(`${baseImage}:dev`)
+	}
+
+	log('Logging into Docker: "%s"', containerRegistry)
 	const login = execa.command(
 		`docker login ${containerRegistry} --username ${username} --password ${password}`
 	)
 	login.stdout.pipe(process.stdout)
 	await login
 
-	if (imageTag && !skipVersionTag) {
-		await pushImage(versionTag)
+	for (const image of images) {
+		await tagImage(latestImage, image)
+		// eslint-disable-next-line @essex/adjacent-await
+		await pushImage(image)
 	}
-
-	await pushImage(`${latestImage}:latest`)
+	await pushImage(latestImage)
 }
 
 run().catch((er) => {

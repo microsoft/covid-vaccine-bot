@@ -1,5 +1,7 @@
 local.settings.json
 scripts
 node_modules
-dist
+src
+tsconfig.json
+webpack.config.js
 .env
