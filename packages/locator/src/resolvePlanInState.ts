@@ -2,10 +2,6 @@
  * Copyright (c) Microsoft. All rights reserved.
  * Licensed under the MIT license. See LICENSE file in the project.
  */
-/**
- * Note: using underscore because it's installed for healthbot steps
- * https://docs.microsoft.com/en-us/azure/health-bot/scenario-authoring/advanced_functionality
- */
 import { getMatchingRegion } from './getMatchingRegion'
 import { BingLocation, PlanRegion, PlanResult } from './types'
 import { Region, RolloutPhase } from '@ms-covidbot/state-plan-schema'

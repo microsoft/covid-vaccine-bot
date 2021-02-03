@@ -2,23 +2,18 @@
  * Copyright (c) Microsoft. All rights reserved.
  * Licensed under the MIT license. See LICENSE file in the project.
  */
-/**
- * Note: using underscore because it's installed for healthbot steps
- * https://docs.microsoft.com/en-us/azure/health-bot/scenario-authoring/advanced_functionality
- */
 import { BingLocation } from './types'
 import { Region } from '@ms-covidbot/state-plan-schema'
-// eslint-disable-next-line
-const _ = require('underscore')
 
 export function getMatchingRegion(
 	location: BingLocation,
 	regions: Region[]
 ): Region | undefined {
 	return regions.filter((region: Region) => {
+		const regionMeta = REGION_TYPES[region.type]
 		return (
-			_.get(region, REGION_TYPES[region.type]?.policyTreeId) ===
-			_.get(location, REGION_TYPES[region.type]?.locationsId)
+			get(region, regionMeta?.policyTreeId) ===
+			get(location, regionMeta?.locationsId)
 		)
 	})[0]
 }
@@ -47,4 +42,23 @@ const REGION_TYPES: Record<
 		locationsId: 'locality',
 		policyTreeId: '',
 	},
+}
+
+// from https://youmightnotneed.com/lodash/
+const get = (
+	obj: Record<string, any>,
+	path: string | string[],
+	defValue: any = undefined
+) => {
+	// If path is not defined or it has false value
+	if (!path) return undefined
+	// Check if path is string or array. Regex : ensure that we do not have '.' and brackets.
+	// Regex explained: https://regexr.com/58j0k
+	const pathArray: string[] = Array.isArray(path)
+		? (path as string[])
+		: (path.match(/([^[.\]])+/g) as string[])
+	// Find value if exist return otherwise return undefined value;
+	return (
+		pathArray.reduce((prevObj, key) => prevObj && prevObj[key], obj) || defValue
+	)
 }
