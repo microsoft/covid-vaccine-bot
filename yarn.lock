@@ -2480,7 +2480,9 @@ __metadata:
     "@essex/scripts": ^12.0.2
     "@ms-covidbot/state-plan-schema": "workspace:packages/schema"
     "@ms-covidbot/state-plans": "workspace:packages/plans"
+    "@types/object-path": ^0.11.0
     core-js: ^3.8.3
+    object-path: ^0.11.5
   languageName: unknown
   linkType: soft
 
@@ -2490,6 +2492,7 @@ __metadata:
   dependencies:
     "@azure/functions": ^1.2.3
     "@azure/storage-blob": ^12.4.0
+    "@ms-covidbot/policy-locator": "workspace:packages/locator"
     "@ms-covidbot/state-plan-schema": "workspace:packages/schema"
     "@types/debug": ^4.1.5
     "@types/lru-cache": ^5.1.0

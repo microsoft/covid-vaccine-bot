@@ -9,6 +9,7 @@
 		"build:docker": "docker build -t ${AZURE_CONTAINER_REGISTRY}/$(node -p 'require(\"./package.json\").containerName') .",
 		"bundle:service": "run-s build:webpack build:docker",
 		"clean": "rimraf dist",
+		"build": "webpack",
 		"start:webpack": "webpack -w",
 		"start:func": "func start",
 		"start:docker": "docker run -t -i --rm -p 7071:80 --env-file .env ${AZURE_CONTAINER_REGISTRY}/$(node -p 'require(\"./package.json\").containerName')",
@@ -17,6 +18,7 @@
 	},
 	"devDependencies": {
 		"@azure/functions": "^1.2.3",
+		"@ms-covidbot/policy-locator": "workspace:packages/locator",
 		"@ms-covidbot/state-plan-schema": "workspace:packages/schema",
 		"@types/debug": "^4.1.5",
 		"@types/lru-cache": "^5.1.0",

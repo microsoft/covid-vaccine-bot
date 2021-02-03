@@ -4303,7 +4303,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@essex/scripts", "virtual:6d8ddb46071017f1f8aa92fb51776b483addb259daee6f82da20492d8ff6a83b38599a5b4e22686d1c3a997cf0164e3f6096794c7f3014ca9346d647e271728d#npm:12.0.2"],
             ["@ms-covidbot/state-plan-schema", "workspace:packages/schema"],
             ["@ms-covidbot/state-plans", "workspace:packages/plans"],
-            ["core-js", "npm:3.8.3"]
+            ["@types/object-path", "npm:0.11.0"],
+            ["core-js", "npm:3.8.3"],
+            ["object-path", "npm:0.11.5"]
           ],
           "linkType": "SOFT",
         }]
@@ -4315,6 +4317,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@ms-covidbot/service", "workspace:packages/service"],
             ["@azure/functions", "npm:1.2.3"],
             ["@azure/storage-blob", "npm:12.4.0"],
+            ["@ms-covidbot/policy-locator", "workspace:packages/locator"],
             ["@ms-covidbot/state-plan-schema", "workspace:packages/schema"],
             ["@types/debug", "npm:4.1.5"],
             ["@types/lru-cache", "npm:5.1.0"],

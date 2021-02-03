@@ -14,7 +14,9 @@ import { Region } from '@ms-covidbot/state-plan-schema'
 const STATES_PLANS_KEY = 'ALL_STATES_PLANS'
 
 export async function fetchAllStatePlans(): Promise<Region[]> {
-	let allStateGuidelines = statesPlansCache.get(STATES_PLANS_KEY)
+	let allStateGuidelines = config.cacheDisabled
+		? undefined
+		: statesPlansCache.get(STATES_PLANS_KEY)
 
 	if (allStateGuidelines != null) {
 		console.log('Returning cached state guidelines.')
@@ -37,6 +39,8 @@ export async function fetchAllStatePlans(): Promise<Region[]> {
 	const blobClient = containerClient.getBlobClient(statesDataBlob)
 	const response = await blobClient.downloadToBuffer()
 	allStateGuidelines = JSON.parse(response.toString()) as Region[]
-	statesPlansCache.set(STATES_PLANS_KEY, allStateGuidelines)
+	if (!config.cacheDisabled) {
+		statesPlansCache.set(STATES_PLANS_KEY, allStateGuidelines)
+	}
 	return allStateGuidelines
 }

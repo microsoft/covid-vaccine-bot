@@ -4,7 +4,6 @@
 		"lib": ["ESNext"],
 		"module": "CommonJS",
 		"outDir": "dist",
-		"rootDir": "./src",
 		"sourceMap": true,
 		"strict": true,
 		"allowSyntheticDefaultImports": true,
