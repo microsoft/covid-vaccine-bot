@@ -139,6 +139,9 @@ function checkStringIds(
 	}
 	if (vaccinationPlan.phases) {
 		vaccinationPlan.phases.forEach((phase: RolloutPhase) => {
+			if (phase.id.indexOf('.') >= 0) {
+				errors.push(`phase id should not contain dots`)
+			}
 			phase.qualifications.forEach((qual: Qualification) => {
 				checkString(qual.question)
 				if (qual.moreInfoText) {

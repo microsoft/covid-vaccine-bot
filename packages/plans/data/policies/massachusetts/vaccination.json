@@ -9,7 +9,7 @@
 			"url": "https://www.mass.gov/covid-19-vaccine"
 		}
 	},
-	"activePhase": "2.step1",
+	"activePhase": "2step1",
 	"phases": [
 		{
 			"id": "1",
@@ -37,7 +37,7 @@
 			]
 		},
 		{
-			"id": "2.step1",
+			"id": "2step1",
 			"label": "Phase 2, Step 1",
 			"qualifications": [
 				{
