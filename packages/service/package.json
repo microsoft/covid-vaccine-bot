@@ -5,7 +5,7 @@
 	"scripts": {
 		"build:webpack": "webpack",
 		"build:docker": "docker build -t ${AZURE_CONTAINER_REGISTRY}/$(node -p 'require(\"./package.json\").name') .",
-		"build": "run-s build:webpack build:docker",
+		"bundle:service": "run-s build:webpack build:docker",
 		"clean": "rimraf dist",
 		"start:webpack": "webpack -w",
 		"start:func": "func start",
