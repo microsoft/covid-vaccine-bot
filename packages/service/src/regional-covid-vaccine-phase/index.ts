@@ -7,7 +7,7 @@ import { AzureFunction, Context, HttpRequest } from '@azure/functions'
 import logIntercept from 'azure-function-log-intercept'
 import { fetchAllStatePlans } from './fetchAllStatePlans'
 import { fetchLocation } from './fetchLocation'
-import { resolvePlanPolicy } from '@ms-covidbot/policy-locator'
+import { resolvePlan } from '@ms-covidbot/policy-locator'
 
 const httpTrigger: AzureFunction = async function (
 	context: Context,
@@ -32,15 +32,15 @@ const httpTrigger: AzureFunction = async function (
 	])
 
 	try {
-		const planPolicy = resolvePlanPolicy(location, allStatesPlans)
+		const plan = resolvePlan(location, allStatesPlans)
 		context.res = {
 			// status: 200, /* Defaults to 200 */
 			headers: {
 				'Content-Type': 'application/json',
 			},
 			body: {
-				location: location,
-				plan: planPolicy,
+				location,
+				plan,
 			},
 		}
 	} catch (ex) {

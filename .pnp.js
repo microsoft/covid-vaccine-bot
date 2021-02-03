@@ -4304,9 +4304,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@ms-covidbot/state-plan-schema", "workspace:packages/schema"],
             ["@ms-covidbot/state-plans", "workspace:packages/plans"],
             ["@types/jest", "npm:26.0.20"],
+            ["@types/node", "npm:14.14.22"],
             ["@types/object-path", "npm:0.11.0"],
             ["core-js", "npm:3.8.3"],
-            ["object-path", "npm:0.11.5"]
+            ["object-path", "npm:0.11.5"],
+            ["underscore", "npm:1.12.0"]
           ],
           "linkType": "SOFT",
         }]
@@ -24242,6 +24244,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/unc-path-regex-npm-0.1.2-53c3343ef3-585e293579.zip/node_modules/unc-path-regex/",
           "packageDependencies": [
             ["unc-path-regex", "npm:0.1.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["underscore", [
+        ["npm:1.12.0", {
+          "packageLocation": "./.yarn/cache/underscore-npm-1.12.0-b99c126ef2-c4423fa2c6.zip/node_modules/underscore/",
+          "packageDependencies": [
+            ["underscore", "npm:1.12.0"]
           ],
           "linkType": "HARD",
         }]
