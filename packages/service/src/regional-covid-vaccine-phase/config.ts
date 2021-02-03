@@ -15,4 +15,5 @@ export const config: Record<string, any> = {
 	azureStorageAccountKey: process.env.AZURE_STORAGE_ACCOUNT_KEY || '',
 	azureBlobContainer: process.env.AZURE_BLOB_CONTAINER || '',
 	azureStatesBlob: process.env.AZURE_STATES_BLOB || '',
+	disableCache: process.env.CACHE_DISABLED || false,
 }

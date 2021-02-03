@@ -20,6 +20,7 @@
 		"@essex/scripts": "^12.0.2",
 		"@ms-covidbot/state-plan-schema": "workspace:packages/schema",
 		"@ms-covidbot/state-plans": "workspace:packages/plans",
+		"@types/jest": "^26.0.20",
 		"@types/object-path": "^0.11.0"
 	}
 }
