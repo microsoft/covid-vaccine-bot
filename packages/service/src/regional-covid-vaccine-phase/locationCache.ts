@@ -10,3 +10,7 @@ export const locationCache = new LRU<string, BingLocation>({
 	max: 1000,
 	maxAge: 1000 * 60 * 60,
 })
+
+export function invalidate(): void {
+	locationCache.reset()
+}

@@ -8,7 +8,10 @@ import {
 	StorageSharedKeyCredential,
 } from '@azure/storage-blob'
 import { config } from './config'
-import { statesPlansCache } from './statesPlansCache'
+import {
+	statesPlansCache,
+	invalidate as invalidateStatePlansCache,
+} from './statesPlansCache'
 import { Region } from '@ms-covidbot/state-plan-schema'
 
 const STATES_PLANS_KEY = 'ALL_STATES_PLANS'
@@ -16,10 +19,12 @@ const STATES_PLANS_KEY = 'ALL_STATES_PLANS'
 export async function fetchAllStatePlans(
 	invalidate: boolean
 ): Promise<Region[]> {
-	let allStateGuidelines =
-		config.cacheDisable || invalidate
-			? undefined
-			: statesPlansCache.get(STATES_PLANS_KEY)
+	if (invalidate) {
+		invalidateStatePlansCache()
+	}
+	let allStateGuidelines = config.cacheDisable
+		? undefined
+		: statesPlansCache.get(STATES_PLANS_KEY)
 
 	if (allStateGuidelines != null) {
 		console.log('Returning cached state guidelines.')
