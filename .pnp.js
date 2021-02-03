@@ -4319,6 +4319,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/plans/",
           "packageDependencies": [
             ["@ms-covidbot/state-plans", "workspace:packages/plans"],
+            ["@azure/storage-blob", "npm:12.4.0"],
             ["@essex/scripts", "virtual:6d8ddb46071017f1f8aa92fb51776b483addb259daee6f82da20492d8ff6a83b38599a5b4e22686d1c3a997cf0164e3f6096794c7f3014ca9346d647e271728d#npm:12.0.2"],
             ["@ms-covidbot/state-plan-schema", "workspace:packages/schema"],
             ["@types/node", "npm:14.14.22"],
@@ -4326,6 +4327,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["chalk", "npm:4.1.0"],
             ["csv-parse", "npm:4.15.1"],
             ["csv-stringify", "npm:5.6.1"],
+            ["dotenv", "npm:8.2.0"],
             ["npm-run-all", "npm:4.1.5"],
             ["ts-node", "virtual:529d36d88705c4a52219de09fb2835c0afea22be2b48280ddbe8e15e0aa5e9ca0604f3f6e0652ebdf1cd6d809634a9a662067e49ec190c6798043b2e07d8b936#npm:9.1.1"],
             ["typescript", "patch:typescript@npm%3A4.1.3#builtin<compat/typescript>::version=4.1.3&hash=cc6730"],

@@ -7,9 +7,11 @@
 		"assemble_localization": "ts-node scripts/assembleLocalization",
 		"assemble_policies": "ts-node scripts/assemblePolicies",
 		"test": "ts-node scripts/validatePolicies",
-		"build": "run-s assemble_localization assemble_policies"
+		"build": "run-s assemble_localization assemble_policies",
+		"deploy": "ts-node scripts/deploy"
 	},
 	"devDependencies": {
+		"@azure/storage-blob": "^12.4.0",
 		"@essex/scripts": "^12.0.2",
 		"@ms-covidbot/state-plan-schema": "workspace:packages/schema",
 		"@types/node": "^14.14.22",
@@ -17,6 +19,7 @@
 		"chalk": "^4.1.0",
 		"csv-parse": "^4.15.1",
 		"csv-stringify": "^5.6.1",
+		"dotenv": "^8.2.0",
 		"npm-run-all": "^4.1.5",
 		"ts-node": "^9.1.1",
 		"typescript": "^4.1.3",
