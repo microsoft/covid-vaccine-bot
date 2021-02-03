@@ -8,10 +8,12 @@ import { config } from './config'
 import { locationCache } from './locationCache'
 import { BingLocation } from '@ms-covidbot/policy-locator'
 
-export async function fetchLocation(zipcode: string): Promise<BingLocation> {
-	let location: BingLocation | undefined = config.cacheDisabled
-		? undefined
-		: locationCache.get(zipcode)
+export async function fetchLocation(
+	zipcode: string,
+	invalidate: boolean
+): Promise<BingLocation> {
+	let location: BingLocation | undefined =
+		config.cacheDisabled || invalidate ? undefined : locationCache.get(zipcode)
 
 	if (location !== undefined) {
 		console.log(`Returning cached location for ${zipcode}.`)

@@ -16,6 +16,7 @@ const httpTrigger: AzureFunction = async function (
 	// send console messages to context tracing
 	logIntercept(context)
 	const zipcode = req.query.zipcode
+	const invalidate = Boolean(req.query.invalidate)
 
 	if (!zipcode || !/^\d{5}$/.test(zipcode)) {
 		context.res = {
@@ -26,8 +27,8 @@ const httpTrigger: AzureFunction = async function (
 	}
 
 	const [location, allStatesPlans] = await Promise.all([
-		fetchLocation(zipcode),
-		fetchAllStatePlans(),
+		fetchLocation(zipcode, invalidate),
+		fetchAllStatePlans(invalidate),
 	])
 
 	try {
