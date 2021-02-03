@@ -81,5 +81,10 @@ export interface Qualification {
 	/**
 	 * The ID of the clarifying text to provide (e.g. what defines an essential worker)
 	 */
-	moreInfo?: string
+	moreInfoText?: string
+
+	/**
+	 * A URL to provide to elaborate on eligibility details
+	 */
+	moreInfoUrl?: string
 }

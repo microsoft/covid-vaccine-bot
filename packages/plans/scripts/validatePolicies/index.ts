@@ -141,8 +141,8 @@ function checkStringIds(
 		vaccinationPlan.phases.forEach((phase: RolloutPhase) => {
 			phase.qualifications.forEach((qual: Qualification) => {
 				checkString(qual.question)
-				if (qual.moreInfo) {
-					checkString(qual.moreInfo)
+				if (qual.moreInfoText) {
+					checkString(qual.moreInfoText)
 				}
 			})
 		})
