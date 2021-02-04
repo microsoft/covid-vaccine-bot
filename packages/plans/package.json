@@ -7,10 +7,9 @@
 		"assemble_localization": "ts-node scripts/assembleLocalization",
 		"assemble_policies": "ts-node scripts/assemblePolicies",
 		"test": "ts-node scripts/validatePolicies",
-		"build": "run-s assemble_localization assemble_policies",
-		"deploy:abs": "ts-node scripts/deployToAzureBlobStorage",
-		"deploy:healthbot": "ts-node scripts/deployToHealthbot",
-		"deploy": "run-s deploy:abs"
+		"build": "run-s assemble_localization assemble_policies generate_review_document",
+		"generate_review_document": "ts-node scripts/generateReviewDocument",
+		"deploy": "ts-node scripts/deployToHealthbot"
 	},
 	"devDependencies": {
 		"@azure/storage-blob": "^12.4.0",
