@@ -13,14 +13,13 @@
 		"types": "dist/types/index.d.ts"
 	},
 	"dependencies": {
-		"core-js": "^3.8.3",
-		"object-path": "^0.11.5"
+		"core-js": "^3.8.3"
 	},
 	"devDependencies": {
 		"@essex/scripts": "^12.0.2",
 		"@ms-covidbot/state-plan-schema": "workspace:packages/schema",
 		"@ms-covidbot/state-plans": "workspace:packages/plans",
 		"@types/jest": "^26.0.20",
-		"@types/object-path": "^0.11.0"
+		"@types/node": "^14.14.22"
 	}
 }

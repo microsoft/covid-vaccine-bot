@@ -2,13 +2,13 @@
  * Copyright (c) Microsoft. All rights reserved.
  * Licensed under the MIT license. See LICENSE file in the project.
  */
-import { BingLocation, resolvePlanPolicy } from '../PlanLocator'
+import { BingLocation, resolvePlan } from '..'
 import { Region } from '@ms-covidbot/state-plan-schema'
 import statesData from '@ms-covidbot/state-plans/dist/states.json'
 
 describe('The Plan Locator', () => {
 	it('exists', () => {
-		expect(resolvePlanPolicy).toBeDefined()
+		expect(resolvePlan).toBeDefined()
 	})
 
 	it('can look up a plan in WA', () => {
@@ -20,7 +20,7 @@ describe('The Plan Locator', () => {
 			locality: 'Bremerton',
 			postalCode: '98311',
 		}
-		const plan = resolvePlanPolicy(location, statesData)
+		const plan = resolvePlan(location, statesData as Region[])
 		expect(plan).toBeDefined()
 		expect(plan.phase).toBeDefined()
 		expect(plan.phase.id).toBeDefined()
@@ -36,7 +36,7 @@ describe('The Plan Locator', () => {
 			locality: 'Boston',
 			postalCode: '02109',
 		}
-		const plan = resolvePlanPolicy(location, statesData)
+		const plan = resolvePlan(location, statesData as Region[])
 		expect(plan).toBeDefined()
 		expect(plan.phase).toBeDefined()
 		expect(plan.phase.id).toBeDefined()

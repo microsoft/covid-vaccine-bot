@@ -4304,9 +4304,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@ms-covidbot/state-plan-schema", "workspace:packages/schema"],
             ["@ms-covidbot/state-plans", "workspace:packages/plans"],
             ["@types/jest", "npm:26.0.20"],
-            ["@types/object-path", "npm:0.11.0"],
-            ["core-js", "npm:3.8.3"],
-            ["object-path", "npm:0.11.5"]
+            ["@types/node", "npm:14.14.22"],
+            ["core-js", "npm:3.8.3"]
           ],
           "linkType": "SOFT",
         }]
@@ -4325,7 +4324,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/minimist", "npm:1.2.1"],
             ["@types/node", "npm:14.14.22"],
             ["@types/node-fetch", "npm:2.5.8"],
-            ["@types/object-path", "npm:0.11.0"],
             ["@types/rimraf", "npm:3.0.0"],
             ["azure-function-log-intercept", "npm:1.0.7"],
             ["azure-functions-core-tools", "npm:3.0.3233"],
@@ -4337,7 +4335,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["minimist-options", "npm:4.1.0"],
             ["node-fetch", "npm:2.6.1"],
             ["npm-run-all", "npm:4.1.5"],
-            ["object-path", "npm:0.11.5"],
             ["rimraf", "npm:3.0.2"],
             ["ts-loader", "virtual:f9b9e6e54765053cfc084fbe6300e1bd6ddb94d96b45cf970cab1ee9476d40e1326902970853be2c7575e856e1ed64ad6c8b917c7c6b7d21f54bbc9588336c9a#npm:8.0.14"],
             ["typescript", "patch:typescript@npm%3A4.1.3#builtin<compat/typescript>::version=4.1.3&hash=cc6730"],
@@ -5875,15 +5872,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-npmlog-npm-4.1.2-f7a77f0a84-87d4ffa194.zip/node_modules/@types/npmlog/",
           "packageDependencies": [
             ["@types/npmlog", "npm:4.1.2"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
-      ["@types/object-path", [
-        ["npm:0.11.0", {
-          "packageLocation": "./.yarn/cache/@types-object-path-npm-0.11.0-763f09c71d-7b101b447f.zip/node_modules/@types/object-path/",
-          "packageDependencies": [
-            ["@types/object-path", "npm:0.11.0"]
           ],
           "linkType": "HARD",
         }]
@@ -18725,15 +18713,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/object-keys-npm-1.1.1-1bf2f1be93-30d72d768b.zip/node_modules/object-keys/",
           "packageDependencies": [
             ["object-keys", "npm:1.1.1"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
-      ["object-path", [
-        ["npm:0.11.5", {
-          "packageLocation": "./.yarn/cache/object-path-npm-0.11.5-1c580400a1-a2be57f65e.zip/node_modules/object-path/",
-          "packageDependencies": [
-            ["object-path", "npm:0.11.5"]
           ],
           "linkType": "HARD",
         }]
