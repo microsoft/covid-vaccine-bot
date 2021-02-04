@@ -7,6 +7,7 @@ import * as fs from 'fs'
 import * as path from 'path'
 import { readCsvFile } from '../readCsvFile'
 import {
+	Link,
 	Qualification,
 	Region,
 	RolloutPhase,
@@ -54,6 +55,11 @@ ${records.map((r) => writeLocalizationRecord(r)).join('\n')}
 `
 }
 
+/**
+ * Writes out state information
+ * @param state The state to write out
+ * @param translationMap localization strings by key
+ */
 function writeStateInfo(
 	state: Region,
 	translationMap: LocalizationMap
@@ -63,12 +69,40 @@ function writeStateInfo(
 
 	return `# ${state.name}
 Active Phase: **${phaseLabel}**
+Info Link: **${writeLink(state.plan?.links?.info, translationMap)}**
+Workflow Link: **${
+		writeLink(state.plan?.links?.workflow, translationMap) || 'none'
+	}**
+Scheduling Hotline: **${
+		writeLink(state.plan?.links?.scheduling_phone, translationMap) || 'none'
+	}**
 
 ## Phases: 
 ${activeOrUpcomingPhases
 	.map((phase) => writePhaseInfo(phase, translationMap, phase === activePhase))
 	.join('\n\n')}
 `
+}
+
+function writeLink(
+	link: Link | undefined,
+	translationMap: LocalizationMap
+): string | undefined {
+	if (link != null) {
+		const textLoc = translationMap.get(link.text)
+		const descriptionLoc = link.description
+			? translationMap.get(link.description)
+			: undefined
+
+		if (!textLoc) {
+			throw new Error('could not find text for link' + link.text)
+		}
+		const text = textLoc['en-us']
+		const description = (descriptionLoc && descriptionLoc['en-us']) || undefined
+		return `[${text}](${link.url})${
+			description != null ? ' description=' + description : ''
+		}`
+	}
 }
 
 function getActivePhases(state: Region): [RolloutPhase, RolloutPhase[]] {
