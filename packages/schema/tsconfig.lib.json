@@ -1,5 +1,5 @@
 {
-	"extends": "../../tsconfig",
+	"extends": "@tsconfig/node12",
 	"compilerOptions": {
 		"outDir": "dist/",
 		"declaration": true

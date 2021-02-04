@@ -6,10 +6,7 @@
 		"outDir": "dist",
 		"rootDir": "./src",
 		"sourceMap": true,
-		"strict": true,
-		"allowSyntheticDefaultImports": true,
-		"esModuleInterop": true,
-		"resolveJsonModule": true
+		"strict": true
 	},
 	"include": ["src"]
 }
