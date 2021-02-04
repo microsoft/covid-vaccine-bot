@@ -6,10 +6,10 @@ import commonjs from '@rollup/plugin-commonjs'
 import { nodeResolve } from '@rollup/plugin-node-resolve'
 
 const config = {
-	input: 'lib/resolvePlanInState.js',
+	input: 'lib/resolvePlan.js',
 	output: {
 		dir: 'dist/bundles',
-		format: 'cjs',
+		format: 'iife',
 	},
 	plugins: [nodeResolve(), commonjs()],
 }

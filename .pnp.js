@@ -4418,6 +4418,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/jest", "npm:26.0.20"],
             ["@types/node", "npm:14.14.22"],
             ["core-js", "npm:3.8.3"],
+            ["npm-run-all", "npm:4.1.5"],
             ["rollup", "npm:2.38.4"]
           ],
           "linkType": "SOFT",
