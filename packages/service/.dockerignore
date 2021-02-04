@@ -1,7 +1,0 @@
-local.settings.json
-scripts
-node_modules
-src
-tsconfig.json
-webpack.config.js
-.env
