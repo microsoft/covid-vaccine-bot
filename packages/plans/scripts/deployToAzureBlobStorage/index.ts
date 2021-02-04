@@ -11,7 +11,7 @@ import {
 } from '@azure/storage-blob'
 import dotenv from 'dotenv'
 
-dotenv.config({ path: resolve(__dirname, '.env') })
+dotenv.config({ path: resolve(__dirname, '../../.env') })
 
 const STATES_FILE = 'states.json'
 const LOCAL_STATES_FILE_PATH = resolve(__dirname, `../../dist/${STATES_FILE}`)

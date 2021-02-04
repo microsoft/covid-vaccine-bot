@@ -1,13 +1,9 @@
 {
+	"extends": "../../tsconfig",
 	"compilerOptions": {
-		"target": "ES2017",
-		"lib": ["ESNext"],
-		"module": "CommonJS",
 		"outDir": "dist",
 		"sourceMap": true,
-		"strict": true,
-		"allowSyntheticDefaultImports": true,
-		"esModuleInterop": true
+		"allowSyntheticDefaultImports": true
 	},
 	"include": ["src/**/*"]
 }
