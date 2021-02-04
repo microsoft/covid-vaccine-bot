@@ -8,7 +8,8 @@
 		"assemble_policies": "ts-node scripts/assemblePolicies",
 		"test": "ts-node scripts/validatePolicies",
 		"build": "run-s assemble_localization assemble_policies",
-		"deploy": "ts-node scripts/deploy"
+		"deploy:abs": "ts-node scripts/deployToAzureBlobStorage",
+		"deploy": "run-s deploy:abs"
 	},
 	"devDependencies": {
 		"@azure/storage-blob": "^12.4.0",
