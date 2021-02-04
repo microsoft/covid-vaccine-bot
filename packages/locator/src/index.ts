@@ -4,4 +4,3 @@
  */
 export * from './types'
 export * from './resolvePlan'
-export * from './resolvePlanInState'

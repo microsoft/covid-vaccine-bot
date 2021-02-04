@@ -10,6 +10,7 @@ const config = {
 	output: {
 		dir: 'dist/bundles',
 		format: 'iife',
+		name: 'resolvePlan',
 	},
 	plugins: [nodeResolve(), commonjs()],
 }
