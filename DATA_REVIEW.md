@@ -1,3 +1,8 @@
+
+<!-- 
+	THIS FILE IS AUTO-GENERATED, DO NOT EDIT. 
+	Plans and Localizations can be edited in the packages/plans folder
+-->
 # Alabama
 Active Phase: **Phase 1A**
 
@@ -5,29 +10,29 @@ Active Phase: **Phase 1A**
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/congregate|Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/congregate|Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/congregate|Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/congregate|Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?|not defined|not defined|not defined|not defined|n/a 
 
 
 
@@ -38,24 +43,24 @@ Active Phase: **Phase 1B**
 ### *Phase 1B* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.55_up|Are you age 55+?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health.1b.AK|Are you age 50+ with 2 or more high-risk health conditions, or are you age 16+ and are a member of an unserved community?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/congregate|Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.55_up|Are you age 55+?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health.1b.AK|Are you age 50+ with 2 or more high-risk health conditions, or are you age 16+ and are a member of an unserved community?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/congregate|Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.55_up|Are you age 55+?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/congregate|Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/unserved.1c.AK|Are you age 16+ and a member of an unserved community?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.55_up|Are you age 55+?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/congregate|Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/unserved.1c.AK|Are you age 16+ and a member of an unserved community?|not defined|not defined|not defined|not defined|n/a 
 
 
 
@@ -66,27 +71,27 @@ Active Phase: **Phase 1A**
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a 
 
 
 
@@ -97,29 +102,29 @@ Active Phase: **Prioritized Phase 1B**
 ### *Prioritized Phase 1B* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker.AZ|Are you a healthcare or healthcare support worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident.AZ|Are you a long-term care resident, or do you work in a long-term care facility?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/ems_worker.AZ|Are you an emergency medical services worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/education_childcare_worker.AZ|Are you an education or child-care worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/proctective_services_worker.AZ|Are you a protective services worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker.AZ|Are you a healthcare or healthcare support worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident.AZ|Are you a long-term care resident, or do you work in a long-term care facility?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/ems_worker.AZ|Are you an emergency medical services worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/education_childcare_worker.AZ|Are you an education or child-care worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/proctective_services_worker.AZ|Are you a protective services worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/congregate.AZ|Do you live with high-risk conditions in a congregate setting?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/congregate.AZ|Do you live with high-risk conditions in a congregate setting?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/congregate.AZ|Do you live with high-risk conditions in a congregate setting?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/congregate.AZ|Do you live with high-risk conditions in a congregate setting?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a 
 
 
 
@@ -130,29 +135,29 @@ Active Phase: **Phase 1A**
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.firefighter_leo|Are you a firefighter or law enforcement officer?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.firefighter_leo|Are you a firefighter or law enforcement officer?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.firefighter_leo|Are you a firefighter or law enforcement officer?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.70_up|Are you age 70+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.firefighter_leo|Are you a firefighter or law enforcement officer?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.70_up|Are you age 70+?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a 
 
 
 
@@ -163,29 +168,29 @@ Active Phase: **Phase 1A**
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.1b.CA|Are you as an essential frontline worker? This includes first responders; corrections officers; workers in undustrial, commercial, residential, and sheltering facilites and services, and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/congregate.CA|Are you homeless or incarcerated?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.1b.CA|Are you as an essential frontline worker? This includes first responders; corrections officers; workers in undustrial, commercial, residential, and sheltering facilites and services, and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/congregate.CA|Are you homeless or incarcerated?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/congregate.CA|Are you homeless or incarcerated?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/congregate.CA|Are you homeless or incarcerated?|not defined|not defined|not defined|not defined|n/a 
 
 
 
@@ -196,20 +201,20 @@ Active Phase: **Phase 1B**
 ### *Phase 1B* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.1b.CO|Are you as an essential frontline worker? This includes first responders; corrections officers; officials from executive, legislative, and judicial branches of government; essential frontline journalists; human services staff; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.70_up|Are you age 70+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.1b.CO|Are you as an essential frontline worker? This includes first responders; corrections officers; officials from executive, legislative, and judicial branches of government; essential frontline journalists; human services staff; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.70_up|Are you age 70+?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a 
 
 
 
@@ -220,29 +225,29 @@ Active Phase: **Phase 1A**
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/congregate|Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/congregate|Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/congregate|Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/congregate|Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?|not defined|not defined|not defined|not defined|n/a 
 
 
 
@@ -253,28 +258,28 @@ Active Phase: **Phase 1A**
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/congregate|Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/congregate|Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?|not defined|not defined|not defined|not defined|n/a 
 
 
 
@@ -285,24 +290,24 @@ Active Phase: **Phase 1B**
 ### *Phase 1B* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health.1a.DC.inpatient_psychiatric|Are you an inpatient psychiatric patient?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/congregate.DC|Do you live in an intermediate care facility, a group home, or another high-risk congregate setting?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health.1a.DC.inpatient_psychiatric|Are you an inpatient psychiatric patient?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/congregate.DC|Do you live in an intermediate care facility, a group home, or another high-risk congregate setting?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health.1a.DC.inpatient_psychiatric|Are you an inpatient psychiatric patient?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/congregate.DC|Do you live in an intermediate care facility, a group home, or another high-risk congregate setting?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health.1a.DC.inpatient_psychiatric|Are you an inpatient psychiatric patient?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/congregate.DC|Do you live in an intermediate care facility, a group home, or another high-risk congregate setting?|not defined|not defined|not defined|not defined|n/a 
 
 
 
@@ -313,27 +318,27 @@ Active Phase: **Phase 1A**
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a 
 
 
 
@@ -344,30 +349,30 @@ Active Phase: **Phase 1A**
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health.1a.FL.extremely_vulnerable|Have you been deemed extremely vulnerable to COVID-19 by hospital providers?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health.1a.FL.extremely_vulnerable|Have you been deemed extremely vulnerable to COVID-19 by hospital providers?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health.1a.FL.extremely_vulnerable|Have you been deemed extremely vulnerable to COVID-19 by hospital providers?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health.1a.FL.extremely_vulnerable|Have you been deemed extremely vulnerable to COVID-19 by hospital providers?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a 
 
 
 
@@ -378,32 +383,32 @@ Active Phase: **Phase 1A**
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.firefighter_leo|Are you a firefighter or law enforcement officer?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.1a.GA.caregiver_of_65_up|Are you a caregiver of a person aged 65+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.firefighter_leo|Are you a firefighter or law enforcement officer?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.1a.GA.caregiver_of_65_up|Are you a caregiver of a person aged 65+?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.firefighter_leo|Are you a firefighter or law enforcement officer?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.1a.GA.caregiver_of_65_up|Are you a caregiver of a person aged 65+?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.firefighter_leo|Are you a firefighter or law enforcement officer?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.1a.GA.caregiver_of_65_up|Are you a caregiver of a person aged 65+?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a 
 
 
 
@@ -414,27 +419,27 @@ Active Phase: **Phase 1A**
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a 
 
 
 
@@ -445,27 +450,27 @@ Active Phase: **Phase 1A**
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a 
 
 
 
@@ -476,27 +481,27 @@ Active Phase: **Phase 1A**
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a 
 
 
 
@@ -507,29 +512,29 @@ Active Phase: **Phase 1A**
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/congregate.IL|Do you live in a sheltered population (e.g. homeless, day programs, inmates?)|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/congregate.IL|Do you live in a sheltered population (e.g. homeless, day programs, inmates?)|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/congregate.IL|Do you live in a sheltered population (e.g. homeless, day programs, inmates?)|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/congregate.IL|Do you live in a sheltered population (e.g. homeless, day programs, inmates?)|not defined|not defined|not defined|not defined|n/a 
 
 
 
@@ -540,21 +545,21 @@ Active Phase: **Phase 1B**
 ### *Phase 1B* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.ff_leo_corrections|Are you a firefighter, law enforcement officer, or corrections staff?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.60_up|Are you age 60+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.ff_leo_corrections|Are you a firefighter, law enforcement officer, or corrections staff?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.60_up|Are you age 60+?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.60_up|Are you age 60+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.60_up|Are you age 60+?|not defined|not defined|not defined|not defined|n/a 
 
 
 
@@ -565,27 +570,27 @@ Active Phase: **Phase 1A**
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a 
 
 
 
@@ -596,29 +601,29 @@ Active Phase: **Phase 1A**
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.1b.KS|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, retail, warehousing, sales, supplying critical material to the COVID-19 response, or child care.|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/congregate|Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.1b.KS|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, retail, warehousing, sales, supplying critical material to the COVID-19 response, or child care.|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/congregate|Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/congregate|Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/congregate|Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?|not defined|not defined|not defined|not defined|n/a 
 
 
 
@@ -629,27 +634,27 @@ Active Phase: **Phase 1A**
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.1b.KY|Are you a K-12 personnel or first responder?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.70_up|Are you age 70+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.1b.KY|Are you a K-12 personnel or first responder?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.70_up|Are you age 70+?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a 
 
 
 
@@ -660,20 +665,20 @@ Active Phase: **Phase 1B**
 ### *Phase 1B* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.1b.LA|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, healthcare workers, security personnel, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.70_up|Are you age 70+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.1b.LA|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, healthcare workers, security personnel, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.70_up|Are you age 70+?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a 
 
 
 
@@ -684,27 +689,27 @@ Active Phase: **Phase 1A**
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a 
 
 
 
@@ -715,27 +720,27 @@ Active Phase: **Phase 1A**
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a 
 
 
 
@@ -746,35 +751,35 @@ Active Phase: **Phase 1A**
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.leo_corrections|Are you a law enforcement office or corrections staff?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.1a.MD.judiciary_or_nursing_home_staff|Are you frontline judiciary staff or long-term care facility staff within a nursing home?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.leo_corrections|Are you a law enforcement office or corrections staff?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.1a.MD.judiciary_or_nursing_home_staff|Are you frontline judiciary staff or long-term care facility staff within a nursing home?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.leo_corrections|Are you a law enforcement office or corrections staff?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.1a.MD.judiciary_or_nursing_home_staff|Are you frontline judiciary staff or long-term care facility staff within a nursing home?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.1b.MD|Are you a K-12 personnel, continuity of government staff, or developmentally disabled?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/congregate.MD|Do you live in an assisted living facility, special needs group home, or are a high-risk inmate?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.leo_corrections|Are you a law enforcement office or corrections staff?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.1a.MD.judiciary_or_nursing_home_staff|Are you frontline judiciary staff or long-term care facility staff within a nursing home?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.1b.MD|Are you a K-12 personnel, continuity of government staff, or developmentally disabled?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/congregate.MD|Do you live in an assisted living facility, special needs group home, or are a high-risk inmate?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.leo_corrections|Are you a law enforcement office or corrections staff?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.1a.MD.judiciary_or_nursing_home_staff|Are you frontline judiciary staff or long-term care facility staff within a nursing home?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/congregate.MD|Do you live in an assisted living facility, special needs group home, or are a high-risk inmate?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.leo_corrections|Are you a law enforcement office or corrections staff?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.1a.MD.judiciary_or_nursing_home_staff|Are you frontline judiciary staff or long-term care facility staff within a nursing home?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/congregate.MD|Do you live in an assisted living facility, special needs group home, or are a high-risk inmate?|not defined|not defined|not defined|not defined|n/a 
 
 
 
@@ -785,15 +790,15 @@ Active Phase: **Phase 2, Step 1**
 ### *Phase 2, Step 1* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.moreinfo/healthcare_worker.MA|All healthcare workers are eligible to receive the vaccine.|not defined|not defined|not defined|not defined|https://www.mass.gov/info-details/covid-19-vaccinations-for-health-care-workers
-|c19.eligibility.question/long_term_care_resident_or_worker.MA|Do you live or work in a long-term care facility?|not defined|not defined|not defined|not defined|none
+|c19.eligibility.question/long_term_care_resident_or_worker.MA|Do you live or work in a long-term care facility?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.moreinfo/long_term_care_resident_or_worker.MA|Examples of this include: skilled nursing facilities, assisted living residences, and rest homes.|not defined|not defined|not defined|not defined|https://www.mass.gov/info-details/massachusetts-covid-19-vaccination-phases#phase-1-
-|c19.eligibility.question/first_responders.MA|Are you a first responder?|not defined|not defined|not defined|not defined|none
+|c19.eligibility.question/first_responders.MA|Are you a first responder?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.moreinfo/first_responders.MA|Several categories of first responders are eligible for the vaccine in Massachusetts.|not defined|not defined|not defined|not defined|https://www.mass.gov/info-details/covid-19-vaccinations-for-first-responders
-|c19.eligibility.question/congregate.MA|Are you a staff member or resident of a congregate care facility?|not defined|not defined|not defined|not defined|none
+|c19.eligibility.question/congregate.MA|Are you a staff member or resident of a congregate care facility?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.moreinfo/congregate.MA|Examples of congregate care facilities include emergency shelter programs, domestic violence shelters, veterans' shelters, and private special education shools.|not defined|not defined|not defined|not defined|https://www.mass.gov/info-details/covid-19-vaccinations-for-congregate-care-settings
-|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|none
+|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.moreinfo/age.75_up.MA|All individuals 75+ are eligible for the vaccine.|not defined|not defined|not defined|not defined|https://www.mass.gov/info-details/covid-19-vaccinations-for-people-ages-75-and-older 
 
 
@@ -805,20 +810,20 @@ Active Phase: **Phase 1B**
 ### *Phase 1B* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a 
 
 
 
@@ -829,27 +834,27 @@ Active Phase: **Phase 1A**
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a 
 
 
 
@@ -860,21 +865,21 @@ Active Phase: **Phase 1B**
 ### *Phase 1B* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/congregate.MS|Are you age 16+ and live in a congregate setting or a correctional facility?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/congregate.MS|Are you age 16+ and live in a congregate setting or a correctional facility?|not defined|not defined|not defined|not defined|n/a 
 
 
 
@@ -885,28 +890,28 @@ Active Phase: **Phase 1A**
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a 
 
 
 
@@ -917,32 +922,32 @@ Active Phase: **Phase 1A**
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.70_up|Are you age 70+?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/american_indian_poc.MT|Are you an American Indian or other person of color at elevated risk for COVID-19 complications?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/congregate|Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.70_up|Are you age 70+?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/american_indian_poc.MT|Are you an American Indian or other person of color at elevated risk for COVID-19 complications?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/congregate|Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/american_indian_poc.MT|Are you an American Indian or other person of color at elevated risk for COVID-19 complications?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/congregate|Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/american_indian_poc.MT|Are you an American Indian or other person of color at elevated risk for COVID-19 complications?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/congregate|Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?|not defined|not defined|not defined|not defined|n/a 
 
 
 
@@ -953,27 +958,27 @@ Active Phase: **Phase 1A**
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a 
 
 
 
@@ -984,31 +989,31 @@ Active Phase: **Phase 1A**
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.leo_corrections|Are you a law enforcement office or corrections staff?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.1a.NV.safety_natsec|Are public safety officer or a deployed and mission-critical personnell with an essential national security role, or a staff member with state and local emergency operations?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.leo_corrections|Are you a law enforcement office or corrections staff?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.1a.NV.safety_natsec|Are public safety officer or a deployed and mission-critical personnell with an essential national security role, or a staff member with state and local emergency operations?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.leo_corrections|Are you a law enforcement office or corrections staff?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.1a.NV.safety_natsec|Are public safety officer or a deployed and mission-critical personnell with an essential national security role, or a staff member with state and local emergency operations?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.leo_corrections|Are you a law enforcement office or corrections staff?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.1a.NV.safety_natsec|Are public safety officer or a deployed and mission-critical personnell with an essential national security role, or a staff member with state and local emergency operations?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a 
 
 
 
@@ -1019,33 +1024,33 @@ Active Phase: **Phase 1A**
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.firefighter_leo|Are you a firefighter or law enforcement officer?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.firefighter_leo|Are you a firefighter or law enforcement officer?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.firefighter_leo|Are you a firefighter or law enforcement officer?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.1b.NH|Are you a corrections officer or staff member?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health.1b.NH|Are you age 16+ with 2 or more underlying health conditions, or a caregiver to such?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/congregate.NH|Are you a resident of a facility for people with intellectual and developmental disabilities?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.firefighter_leo|Are you a firefighter or law enforcement officer?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.1b.NH|Are you a corrections officer or staff member?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health.1b.NH|Are you age 16+ with 2 or more underlying health conditions, or a caregiver to such?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/congregate.NH|Are you a resident of a facility for people with intellectual and developmental disabilities?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health.1b.NH|Are you age 16+ with 2 or more underlying health conditions, or a caregiver to such?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/congregate.NH|Are you a resident of a facility for people with intellectual and developmental disabilities?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health.1b.NH|Are you age 16+ with 2 or more underlying health conditions, or a caregiver to such?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/congregate.NH|Are you a resident of a facility for people with intellectual and developmental disabilities?|not defined|not defined|not defined|not defined|n/a 
 
 
 
@@ -1056,20 +1061,20 @@ Active Phase: **Phase 1B**
 ### *Phase 1B* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.firefighter_leo|Are you a firefighter or law enforcement officer?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.firefighter_leo|Are you a firefighter or law enforcement officer?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a 
 
 
 
@@ -1080,23 +1085,23 @@ Active Phase: **Phase 1B**
 ### *Phase 1B* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.1b.NM|Are you as an essential frontline worker? This includes first responders; corrections officers; adult and child protective services; court personnel; personnel who provide services to maintain the safety of homes and businesses; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, hardware/construction stores, laundromats/dry cleaners, or child care.|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health.1b.NM|Are you age 16+ with a high risk medical condition?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/congregate|Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.1b.NM|Are you as an essential frontline worker? This includes first responders; corrections officers; adult and child protective services; court personnel; personnel who provide services to maintain the safety of homes and businesses; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, hardware/construction stores, laundromats/dry cleaners, or child care.|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health.1b.NM|Are you age 16+ with a high risk medical condition?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/congregate|Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/congregate|Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/congregate|Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?|not defined|not defined|not defined|not defined|n/a 
 
 
 
@@ -1107,20 +1112,20 @@ Active Phase: **Phase 1B**
 ### *Phase 1B* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.1b.NY|Are you a K-12 personnel, first responder, public safety worker, or public transit worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.1b.NY|Are you a K-12 personnel, first responder, public safety worker, or public transit worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a 
 
 
 
@@ -1131,28 +1136,28 @@ Active Phase: **Phase 1A**
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/congregate|Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/congregate|Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?|not defined|not defined|not defined|not defined|n/a 
 
 
 
@@ -1163,30 +1168,30 @@ Active Phase: **Phase 1A**
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.1b.ND|Are you a K-12 personnel, a preschool worker, or a child-care worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health.1b.ND|Are you age 16+ with 2 or more high-risk conditions?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/congregate|Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.1b.ND|Are you a K-12 personnel, a preschool worker, or a child-care worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health.1b.ND|Are you age 16+ with 2 or more high-risk conditions?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/congregate|Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/congregate|Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/congregate|Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?|not defined|not defined|not defined|not defined|n/a 
 
 
 
@@ -1197,27 +1202,27 @@ Active Phase: **Phase 1A**
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a 
 
 
 
@@ -1228,30 +1233,30 @@ Active Phase: **Phase 1A**
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health.1a.OH.psychiatric|Are you a psychiatric hospital patient?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health.1a.OH.psychiatric|Are you a psychiatric hospital patient?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health.1a.OH.psychiatric|Are you a psychiatric hospital patient?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health.1b.OH|Are you living with severe congenital, developmental, or early-onset conditions?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.k12|Are you K-12 personnel?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health.1a.OH.psychiatric|Are you a psychiatric hospital patient?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health.1b.OH|Are you living with severe congenital, developmental, or early-onset conditions?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.k12|Are you K-12 personnel?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a 
 
 
 
@@ -1262,30 +1267,30 @@ Active Phase: **Phase 1A**
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/congregate.OK|Do you live in a homeless shelter or correctional facility?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/congregate.OK|Do you live in a homeless shelter or correctional facility?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/congregate.OK|Do you live in a homeless shelter or correctional facility?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/congregate.OK|Do you live in a homeless shelter or correctional facility?|not defined|not defined|not defined|not defined|n/a 
 
 
 
@@ -1296,27 +1301,27 @@ Active Phase: **Phase 1A**
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a 
 
 
 
@@ -1327,27 +1332,27 @@ Active Phase: **Phase 1A**
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a 
 
 
 
@@ -1358,31 +1363,31 @@ Active Phase: **Phase 1A**
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.1b.PA|Are you as an essential frontline worker? This includes first responders; corrections officers; clergy; the staff of early childhood and adult day programs; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health.1b.PA|Are you receiving home and community based services?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/congregate|Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.1b.PA|Are you as an essential frontline worker? This includes first responders; corrections officers; clergy; the staff of early childhood and adult day programs; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health.1b.PA|Are you receiving home and community based services?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/congregate|Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health.1b.PA|Are you receiving home and community based services?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/congregate|Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health.1b.PA|Are you receiving home and community based services?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/congregate|Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?|not defined|not defined|not defined|not defined|n/a 
 
 
 
@@ -1393,27 +1398,27 @@ Active Phase: **Phase 1A**
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a 
 
 
 
@@ -1424,27 +1429,27 @@ Active Phase: **Phase 1A**
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a 
 
 
 
@@ -1455,27 +1460,27 @@ Active Phase: **Phase 1A**
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a 
 
 
 
@@ -1486,32 +1491,32 @@ Active Phase: **Phase 1A**
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.leo_corrections|Are you a law enforcement office or corrections staff?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.leo_corrections|Are you a law enforcement office or corrections staff?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.leo_corrections|Are you a law enforcement office or corrections staff?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.1b.SD|Are you K-12 or college personnel, or a funeral service worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health.1b.SD|Are you age 16+ with 2 or more high-risk medical conditions?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/congregate|Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.leo_corrections|Are you a law enforcement office or corrections staff?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.1b.SD|Are you K-12 or college personnel, or a funeral service worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health.1b.SD|Are you age 16+ with 2 or more high-risk medical conditions?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/congregate|Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/congregate|Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/congregate|Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?|not defined|not defined|not defined|not defined|n/a 
 
 
 
@@ -1522,21 +1527,21 @@ Active Phase: **Phase 1B**
 ### *Phase 1B* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health.1a.TN.non_independent|Are you age 18-74, but unable to live independently?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.1b.TN|Are you a first responder, K-12 personnel, or child-care personnel?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health.1a.TN.non_independent|Are you age 18-74, but unable to live independently?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.1b.TN|Are you a first responder, K-12 personnel, or child-care personnel?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a 
 
 
 
@@ -1547,21 +1552,21 @@ Active Phase: **Phase 1B**
 ### *Phase 1B* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a 
 
 
 
@@ -1572,27 +1577,27 @@ Active Phase: **Phase 1A**
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a 
 
 
 
@@ -1603,31 +1608,31 @@ Active Phase: **Phase 1A**
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.k12|Are you K-12 personnel?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.1a.UT.first_responder|Are a non-EMS first responder?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.k12|Are you K-12 personnel?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.1a.UT.first_responder|Are a non-EMS first responder?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.k12|Are you K-12 personnel?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.1a.UT.first_responder|Are a non-EMS first responder?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.70_up|Are you age 70+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.k12|Are you K-12 personnel?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.1a.UT.first_responder|Are a non-EMS first responder?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.70_up|Are you age 70+?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/congregate|Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/congregate|Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?|not defined|not defined|not defined|not defined|n/a 
 
 
 
@@ -1638,27 +1643,27 @@ Active Phase: **Phase 1A**
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a 
 
 
 
@@ -1669,29 +1674,29 @@ Active Phase: **Phase 1A**
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/congregate.VA|Do you live in a correctional facility, homeless shelter, or migrant labor camp?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/congregate.VA|Do you live in a correctional facility, homeless shelter, or migrant labor camp?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/congregate.VA|Do you live in a correctional facility, homeless shelter, or migrant labor camp?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/congregate.VA|Do you live in a correctional facility, homeless shelter, or migrant labor camp?|not defined|not defined|not defined|not defined|n/a 
 
 
 
@@ -1702,36 +1707,36 @@ Active Phase: **Phase 1A**
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.70_up|Are you age 70+?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/congregate|Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/congregate_services.WA|Do you experience homelessness and access services or live in a congregate setting such as a shelter or temporary housing?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/congregate_worker.WA|Do you work in a congregate setting such as a group home|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/multigen.WA|Are you age 50+ in a multi-generational household?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health.1b.WA|Are you 16+ with 2 or more medical conditions?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.70_up|Are you age 70+?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/congregate|Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/congregate_services.WA|Do you experience homelessness and access services or live in a congregate setting such as a shelter or temporary housing?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/congregate_worker.WA|Do you work in a congregate setting such as a group home|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/multigen.WA|Are you age 50+ in a multi-generational household?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health.1b.WA|Are you 16+ with 2 or more medical conditions?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/congregate|Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/congregate_services.WA|Do you experience homelessness and access services or live in a congregate setting such as a shelter or temporary housing?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/congregate_worker.WA|Do you work in a congregate setting such as a group home|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/multigen.WA|Are you age 50+ in a multi-generational household?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/congregate|Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/congregate_services.WA|Do you experience homelessness and access services or live in a congregate setting such as a shelter or temporary housing?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/congregate_worker.WA|Do you work in a congregate setting such as a group home|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/multigen.WA|Are you age 50+ in a multi-generational household?|not defined|not defined|not defined|not defined|n/a 
 
 
 
@@ -1742,28 +1747,28 @@ Active Phase: **Phase 1A**
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.80_up|Are you age 80+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.80_up|Are you age 80+?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a 
 
 
 
@@ -1774,27 +1779,27 @@ Active Phase: **Phase 1A**
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a 
 
 
 
@@ -1805,29 +1810,29 @@ Active Phase: **Phase 1A**
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.leo|Are you a law enforcement officer?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.leo|Are you a law enforcement officer?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.leo|Are you a law enforcement officer?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.70_up|Are you age 70+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.leo|Are you a law enforcement officer?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.70_up|Are you age 70+?|not defined|not defined|not defined|not defined|n/a 
 
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|none
-|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|none 
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a 
 
 
 	
