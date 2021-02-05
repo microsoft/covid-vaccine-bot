@@ -50,6 +50,30 @@
 			]
 		},
 		{
+			"id": "1b_prioritized_70",
+			"label": "Prioritized Phase 1B",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/healthcare_worker.AZ"
+				},
+				{
+					"question": "c19.eligibility.question/long_term_care_resident.AZ"
+				},
+				{
+					"question": "c19.eligibility.question/ems_worker.AZ"
+				},
+				{
+					"question": "c19.eligibility.question/education_childcare_worker.AZ"
+				},
+				{
+					"question": "c19.eligibility.question/proctective_services_worker.AZ"
+				},
+				{
+					"question": "c19.eligibility.question/age.70_up"
+				}
+			]
+		},
+		{
 			"id": "1b_prioritized_65",
 			"label": "Prioritized Phase 1B",
 			"qualifications": [

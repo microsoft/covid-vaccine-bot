@@ -3,7 +3,6 @@
  * Licensed under the MIT license. See LICENSE file in the project.
  */
 /* eslint-disable @typescript-eslint/no-var-requires */
-import { schedulingPolicy } from 'cluster'
 import * as fs from 'fs'
 import * as path from 'path'
 import { readCsvFile } from '../readCsvFile'
@@ -24,6 +23,7 @@ type LocalizationRecord = Record<string, string>
 type LocalizationMap = Map<string, LocalizationRecord>
 
 function generateReviewDocument(): void {
+	console.log('Generating Review Document...')
 	const statesData = require(STATES_DATA_JSON)
 	const csvData: LocalizationRecord[] = []
 	readCsvFile(LOCALIZATION_CSV, csvData)
@@ -66,14 +66,12 @@ function writeStateInfo(state: Region, localizations: LocalizationMap): string {
 		(state.regions || []).length > 0
 			? '\n\n' +
 			  state.regions
-					?.map((region) =>
-						writeRegionInfo(region, localizations, state.plan?.phases || [])
-					)
+					?.map((region) => writeRegionInfo(region, localizations, state))
 					.join('\n')
 			: ''
 
 	return `
-${writeRegionInfo(state, localizations, [])}
+${writeRegionInfo(state, localizations)}
 ${subregionInfo}
 `
 }
@@ -81,9 +79,9 @@ ${subregionInfo}
 function writeRegionInfo(
 	region: Region,
 	localizations: LocalizationMap,
-	parentPhases: RolloutPhase[]
+	parent?: Region | undefined
 ): string {
-	const activePhase = getActivePhases(region, parentPhases)
+	const activePhase = getActivePhase(region, parent)
 	const phaseLabel = getPhaseLabel(activePhase)
 	const writeOutPhases =
 		region.type === 'state' || (region.plan?.phases || []).length > 0
@@ -142,12 +140,16 @@ function writeLink(
 	}
 }
 
-function getActivePhases(
+function getActivePhase(
 	state: Region,
-	parentPhases: RolloutPhase[]
+	parent: Region | undefined
 ): RolloutPhase {
-	const phaseId = state.plan?.activePhase || ''
-	const allPhases = [...parentPhases, ...(state.plan?.phases || [])]
+	const phaseId =
+		state.plan?.activePhase || parent?.plan?.activePhase || 'NO PHASE SPECIFIED'
+	const allPhases = [
+		...(parent?.plan?.phases || []),
+		...(state.plan?.phases || []),
+	]
 	const phase = allPhases.find((phase) => {
 		return phase.id === phaseId
 	})

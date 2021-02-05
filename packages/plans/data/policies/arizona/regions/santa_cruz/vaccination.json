@@ -2,11 +2,11 @@
 	"activePhase": "1b",
 	"links": {
 		"info": {
-			"text": "Santa Cruz COVID-19 Info",
+			"text": "c19.links/info.AZ.SantaCruz",
 			"url": "https://www.santacruzcountyaz.gov/732/COVID-19-Novel-Coronavirus"
 		},
 		"registration": {
-			"text": "Santa Cruz County COVID-19 Vaccination Registration",
+			"text": "c19.links/registration.AZ.SantaCruz",
 			"url": "https://survey123.arcgis.com/share/b0c6ce208fc94cf4a30b173810caab53"
 		}
 	}

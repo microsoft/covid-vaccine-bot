@@ -149,11 +149,36 @@
 |c19.eligibility.question/proctective_services_worker.AZ|Are you a protective services worker?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a 
 
+### *Prioritized Phase 1B* 
+| id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
+| --- | --- | --- | --- | --- | --- | --- |
+|c19.eligibility.question/healthcare_worker.AZ|Are you a healthcare or healthcare support worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident.AZ|Are you a long-term care resident, or do you work in a long-term care facility?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/ems_worker.AZ|Are you an emergency medical services worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/education_childcare_worker.AZ|Are you an education or child-care worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/proctective_services_worker.AZ|Are you a protective services worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.70_up|Are you age 70+?|not defined|not defined|not defined|not defined|n/a 
+
+### *Prioritized Phase 1B* 
+| id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
+| --- | --- | --- | --- | --- | --- | --- |
+|c19.eligibility.question/healthcare_worker.AZ|Are you a healthcare or healthcare support worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident.AZ|Are you a long-term care resident, or do you work in a long-term care facility?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/ems_worker.AZ|Are you an emergency medical services worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/education_childcare_worker.AZ|Are you an education or child-care worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/proctective_services_worker.AZ|Are you a protective services worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a 
+
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/healthcare_worker.AZ|Are you a healthcare or healthcare support worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident.AZ|Are you a long-term care resident, or do you work in a long-term care facility?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/ems_worker.AZ|Are you an emergency medical services worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/education_childcare_worker.AZ|Are you an education or child-care worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/proctective_services_worker.AZ|Are you a protective services worker?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/congregate.AZ|Do you live with high-risk conditions in a congregate setting?|not defined|not defined|not defined|not defined|n/a 
 
 ### *Phase 1C* 
@@ -172,6 +197,47 @@
 # Apache
 - Active Phase: **Phase 1B**
 
+- Info Link: **[Apache and Navajo County COVID-19 Info](https://311info.net/covid-19/)**
+
+
+
+
+# Cochise
+- Active Phase: **Prioritized Phase 1B**
+
+- Info Link: **[Cochise County COVID-19 Vaccination Info](https://covid-cochisehealth.hub.arcgis.com/pages/vaccines)**
+
+
+
+
+# Coconino
+- Active Phase: **Prioritized Phase 1B**
+
+- Info Link: **[Coconino County COVID-19 Vaccine Info](https://www.coconino.az.gov/covid19vaccine)**
+
+
+
+
+# Gila
+- Active Phase: **Prioritized Phase 1B**
+
+- Info Link: **[Gila County COVID-19 Info](https://www.gilacountyaz.gov/government/health_and_emergency_services/health_services/vaccination_information.php)**
+
+
+
+
+# Graham
+- Active Phase: **Prioritized Phase 1B**
+
+- Info Link: **[Graham County COVID-19 Vaccination Info](https://www.graham.az.gov/AlertCenter.aspx?AID=Graham-County-COVID19-Vaccine-Informatio-11)**
+
+
+
+
+# Greenlee
+- Active Phase: **Prioritized Phase 1B**
+
+- Info Link: **[Greenlee County Health & County Services](https://greenlee.az.gov/departments/health-county-services/)**
 
 
 
@@ -179,12 +245,46 @@
 # La Paz
 - Active Phase: **Phase 1B**
 
+- Info Link: **[La Paz County Health Department](https://www.lpchd.com/)**
+- Scheduling Hotline: **[La Paz County Vaccination Hotline](tel:928-503-5763) description=928-503-5763 & 928-502-0773**
+
+
+
+
+# Maricopa
+- Active Phase: **Prioritized Phase 1B**
+
+- Info Link: **[Maricopa County COVID-19 Site](https://www.maricopa.gov/5641/COVID-19-Vaccine)**
+
+
+
+
+# Mojave
+- Active Phase: **Prioritized Phase 1B**
+
+- Info Link: **[Mojave County COVID-19 Vaccine Statu](https://covid-19-vaccine-mohave.hub.arcgis.com/)**
 
 
 
 
 # Navajo
 - Active Phase: **Phase 1B**
+
+- Info Link: **[Apache and Navajo County COVID-19 Info](https://311info.net/covid-19/)**
+
+
+
+
+# Pima
+- Active Phase: **Prioritized Phase 1B**
+
+- Info Link: **[Pima County COVID-19 Vaccine Info & Distribution](https://webcms.pima.gov/cms/One.aspx?portalId=169&pageId=669257)**
+
+
+
+
+# Pinal
+- Active Phase: **Prioritized Phase 1B**
 
 
 
@@ -193,6 +293,24 @@
 # Santa Cruz
 - Active Phase: **Phase 1B**
 
+- Info Link: **[Santa Cruz COVID-19 Info](https://www.santacruzcountyaz.gov/732/COVID-19-Novel-Coronavirus)**
+
+
+
+
+# Yavapai
+- Active Phase: **Prioritized Phase 1B**
+
+- Info Link: **[Yavapai County COVID-19 Vaccine Status](https://www.yavapai.us/chs/Home/COVID-19/Vaccine)**
+- Scheduling Hotline: **[Yavapai County COVID-19 Hotline](tel:928-442-5103)**
+
+
+
+
+# Yuma
+- Active Phase: **Prioritized Phase 1B**
+
+- Info Link: **[Yuma County COVID-19 Vaccination Info](https://www.yumacountyaz.gov/government/health-district/divisions/emergency-preparedness-program/coronavirus-2019-covid-19-yuma-county-updates/covid-19-vaccine-information/who-can-get-vaccinated-and-when)**
 
 
 
@@ -2529,6 +2647,29 @@
 |c19.safety/cdc_link|You can find more information about the safety of the COVID-19 vaccine at the [CDC's Website](https://www.cdc.gov/coronavirus/2019-ncov/vaccines/safety.html)|not defined|not defined|not defined|not defined|none
 |c19.link/scheduling.phone.AL|1-855-566-5333|not defined|not defined|not defined|not defined|none
 |c19.link/scheduling.phone.description.AL|COVID-19 Scheduling Hotline|not defined|not defined|not defined|not defined|none
+|c19.links/info.AZ.Maricopa|Maricopa County COVID-19 Site|not defined|not defined|not defined|not defined|none
+|c19.links/registration.AZ|Arizona DHS Vaccine Patient Portal|not defined|not defined|not defined|not defined|none
+|c19.links/info.AZ.ApacheNavajo|Apache and Navajo County COVID-19 Info|not defined|not defined|not defined|not defined|none
+|c19.links/info.AZ.Cochise|Cochise County COVID-19 Vaccination Info|not defined|not defined|not defined|not defined|none
+|c19.links/info.AZ.Cococino|Coconino County COVID-19 Vaccine Info|not defined|not defined|not defined|not defined|none
+|c19.links/info.AZ.Gila|Gila County COVID-19 Info|not defined|not defined|not defined|not defined|none
+|c19.links/info.AZ.Graham|Graham County COVID-19 Vaccination Info|not defined|not defined|not defined|not defined|none
+|c19.links/registration.AZ.Graham|Graham County COVID-19 Vaccination Registration|not defined|not defined|not defined|not defined|none
+|c19.links/info.AZ.Greenlee|Greenlee County Health & County Services|not defined|not defined|not defined|not defined|none
+|c19.links/registration.AZ.Greenlee|Greenlee County Vaccination Registration|not defined|not defined|not defined|not defined|none
+|c19.links/info.AZ.LaPaz|La Paz County Health Department|not defined|not defined|not defined|not defined|none
+|c19.links/hotline.AZ.LaPaz.Text|La Paz County Vaccination Hotline|not defined|not defined|not defined|not defined|none
+|c19.links/hotline.AZ.LaPaz.Description|928-503-5763 & 928-502-0773|not defined|not defined|not defined|not defined|none
+|c19.links/info.AZ.Mojave|Mojave County COVID-19 Vaccine Statu|not defined|not defined|not defined|not defined|none
+|c19.links/providers.AZ.Mojave|Mojave County Vaccination Providers|not defined|not defined|not defined|not defined|none
+|c19.links/info.AZ.Pima|Pima County COVID-19 Vaccine Info & Distribution|not defined|not defined|not defined|not defined|none
+|c19.links/registration.AZ.Pima|Pima County COVID-19 Vaccination Registration|not defined|not defined|not defined|not defined|none
+|c19.links/providers.AZ.Pinal|Pinal County COVID-19 Providers|not defined|not defined|not defined|not defined|none
+|c19.links/info.AZ.SantaCruz|Santa Cruz COVID-19 Info|not defined|not defined|not defined|not defined|none
+|c19.links/registration.AZ.SantaCruz|Santa Cruz County COVID-19 Vaccination Registration|not defined|not defined|not defined|not defined|none
+|c19.links/info.AZ.Yavapai|Yavapai County COVID-19 Vaccine Status|not defined|not defined|not defined|not defined|none
+|c19.links/hotline.AZ.Yavapai|Yavapai County COVID-19 Hotline|not defined|not defined|not defined|not defined|none
+|c19.links/info.AZ.Yuma|Yuma County COVID-19 Vaccination Info|not defined|not defined|not defined|not defined|none
 |c19.links/workflow.MA|Massachusetts PhaseFinder|not defined|not defined|not defined|not defined|none
 |c19.links/workflow.WA|Washington State PhaseFinder|not defined|not defined|not defined|not defined|none
 
