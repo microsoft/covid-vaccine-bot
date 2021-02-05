@@ -1,0 +1,13 @@
+{
+	"activePhase": "1b_prioritized_65",
+	"links": {
+		"info": {
+			"text": "Yavapai County COVID-19 Vaccine Status",
+			"url": "https://www.yavapai.us/chs/Home/COVID-19/Vaccine"
+		},
+		"scheduling_phone": {
+			"text": "Yavapai County COVID-19 Hotline",
+			"url": "tel:928-442-5103"
+		}
+	}
+}

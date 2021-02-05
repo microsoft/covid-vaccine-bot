@@ -1,0 +1,12 @@
+{
+	"links": {
+		"info": {
+			"text": "Pima County COVID-19 Vaccine Info & Distribution",
+			"url": "https://webcms.pima.gov/cms/One.aspx?portalId=169&pageId=669257"
+		},
+		"registration": {
+			"text": "Pima County COVID-19 Vaccination Registration",
+			"url": "https://webcms.pima.gov/cms/One.aspx?portalId=169&pageId=690372"
+		}
+	}
+}

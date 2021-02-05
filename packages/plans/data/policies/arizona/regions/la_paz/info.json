@@ -1,7 +1,8 @@
 {
 	"id": "la_paz",
 	"name": "La Paz",
-	"code_alpha": "AZ",
-	"code_numeric": 4,
-	"type": "county"
+	"type": "county",
+	"metadata": {
+		"id_bing": "La Paz"
+	}
 }

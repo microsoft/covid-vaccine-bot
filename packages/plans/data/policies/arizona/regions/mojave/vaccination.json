@@ -1,0 +1,12 @@
+{
+	"links": {
+		"info": {
+			"text": "Mojave County COVID-19 Vaccine Status",
+			"url": "https://covid-19-vaccine-mohave.hub.arcgis.com/"
+		},
+		"providers": {
+			"text": "Mojave County Vaccination Providers",
+			"url": "https://www.mohavecounty.us/ContentPage.aspx?id=127&cid=1444&page=2&rid=2230"
+		}
+	}
+}

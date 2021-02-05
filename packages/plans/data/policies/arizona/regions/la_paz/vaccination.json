@@ -1,3 +1,14 @@
 {
-	"activePhase": "1b"
+	"activePhase": "1b",
+	"links": {
+		"info": {
+			"text": "La Paz County Health Department",
+			"url": "https://www.lpchd.com/"
+		},
+		"scheduling_phone": {
+			"url": "tel:928-503-5763",
+			"description": "928-503-5763 & 928-502-0773",
+			"text": "La Paz County Vaccination Hotline"
+		}
+	}
 }

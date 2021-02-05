@@ -5,3 +5,5 @@ c19.eligibility.question/long_term_care_resident.AZ,"Are you a long-term care re
 c19.eligibility.question/ems_worker.AZ,Are you an emergency medical services worker?,,,,,,,,,,,,,,
 c19.eligibility.question/education_childcare_worker.AZ,Are you an education or child-care worker?,,,,,,,,,,,,,,
 c19.eligibility.question/proctective_services_worker.AZ,Are you a protective services worker?,,,,,,,,,,,,,,
+c19.links/info.AZ.Maricopa,"Maricopa County COVID-19 Site",,,,,,,,,,,,,,
+c19.links/registration.AZ,"Arizona DHS Vaccine Patient Portal",,,,,,,,,,,,,,
