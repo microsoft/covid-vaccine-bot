@@ -3,16 +3,20 @@
 	THIS FILE IS AUTO-GENERATED, DO NOT EDIT. 
 	Plans and Localizations can be edited in the packages/plans folder
 -->
-# Alabama
-Active Phase: **Phase 1A**
 
-## Phases: 
+
+# Alabama
+- Active Phase: **Phase 1A**
+
+- Info Link: **[Alabama Department of Public Health](https://www.alabamapublichealth.gov/covid19/vaccine.html)**
+- Scheduling Hotline: **[1-855-566-5333](tel:1-855-566-5333) description=COVID-19 Scheduling Hotline**
+
+## Phases
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
 |c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
-
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -22,7 +26,6 @@ Active Phase: **Phase 1A**
 |c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/congregate|Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?|not defined|not defined|not defined|not defined|n/a 
-
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -36,10 +39,25 @@ Active Phase: **Phase 1A**
 
 
 
-# Alaska
-Active Phase: **Phase 1B**
 
-## Phases: 
+
+
+
+
+
+
+# Alaska
+- Active Phase: **Phase 1B**
+
+- Info Link: **[Alaska Department of Health and Social Services](http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/VaccineInfo.aspx)**
+
+## Phases
+### *Phase 1A* 
+| id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
+| --- | --- | --- | --- | --- | --- | --- |
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
+
 ### *Phase 1B* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -49,7 +67,6 @@ Active Phase: **Phase 1B**
 |c19.eligibility.question/age.55_up|Are you age 55+?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/health.1b.AK|Are you age 50+ with 2 or more high-risk health conditions, or are you age 16+ and are a member of an unserved community?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/congregate|Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?|not defined|not defined|not defined|not defined|n/a 
-
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -64,16 +81,24 @@ Active Phase: **Phase 1B**
 
 
 
-# American Samoa
-Active Phase: **Phase 1A**
 
-## Phases: 
+
+
+
+
+
+
+# American Samoa
+- Active Phase: **Phase 1A**
+
+- Info Link: **[American Samoa Government Department of Human and Social Services](https://www.americansamoa.gov/)**
+
+## Phases
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
 |c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
-
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -82,7 +107,6 @@ Active Phase: **Phase 1A**
 |c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a 
-
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -95,10 +119,26 @@ Active Phase: **Phase 1A**
 
 
 
-# Arizona
-Active Phase: **Prioritized Phase 1B**
 
-## Phases: 
+
+
+
+
+
+
+# Arizona
+- Active Phase: **Prioritized Phase 1B**
+
+- Info Link: **[Arizona Department of Health Services](https://azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-vaccine)**
+
+## Phases
+### *Phase 1A* 
+| id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
+| --- | --- | --- | --- | --- | --- | --- |
+|c19.eligibility.question/healthcare_worker.AZ|Are you a healthcare or healthcare support worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident.AZ|Are you a long-term care resident, or do you work in a long-term care facility?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/ems_worker.AZ|Are you an emergency medical services worker?|not defined|not defined|not defined|not defined|n/a 
+
 ### *Prioritized Phase 1B* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -109,14 +149,12 @@ Active Phase: **Prioritized Phase 1B**
 |c19.eligibility.question/proctective_services_worker.AZ|Are you a protective services worker?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a 
 
-
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
 |c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/congregate.AZ|Do you live with high-risk conditions in a congregate setting?|not defined|not defined|not defined|not defined|n/a 
-
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -128,17 +166,54 @@ Active Phase: **Prioritized Phase 1B**
 
 
 
-# Arkansas
-Active Phase: **Phase 1A**
 
-## Phases: 
+
+
+# Apache
+- Active Phase: **Phase 1B**
+
+
+
+
+
+# La Paz
+- Active Phase: **Phase 1B**
+
+
+
+
+
+# Navajo
+- Active Phase: **Phase 1B**
+
+
+
+
+
+# Santa Cruz
+- Active Phase: **Phase 1B**
+
+
+
+
+
+
+
+
+
+
+# Arkansas
+- Active Phase: **Phase 1A**
+
+- Info Link: **[Arkansas Department of Health](https://www.healthy.arkansas.gov/programs-services/topics/covid-19-vaccination-plan)**
+
+## Phases
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
 |c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/essential_worker.firefighter_leo|Are you a firefighter or law enforcement officer?|not defined|not defined|not defined|not defined|n/a 
-
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -148,7 +223,6 @@ Active Phase: **Phase 1A**
 |c19.eligibility.question/essential_worker.firefighter_leo|Are you a firefighter or law enforcement officer?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/age.70_up|Are you age 70+?|not defined|not defined|not defined|not defined|n/a 
-
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -161,16 +235,24 @@ Active Phase: **Phase 1A**
 
 
 
-# California
-Active Phase: **Phase 1A**
 
-## Phases: 
+
+
+
+
+
+
+# California
+- Active Phase: **Phase 1A**
+
+- Info Link: **[California Department of Public Health](https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/COVID-19/COVID-19Vaccine.aspx)**
+
+## Phases
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
 |c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
-
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -181,7 +263,6 @@ Active Phase: **Phase 1A**
 |c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/congregate.CA|Are you homeless or incarcerated?|not defined|not defined|not defined|not defined|n/a 
 
-
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -194,10 +275,25 @@ Active Phase: **Phase 1A**
 
 
 
-# Colorado
-Active Phase: **Phase 1B**
 
-## Phases: 
+
+
+
+
+
+
+# Colorado
+- Active Phase: **Phase 1B**
+
+- Info Link: **[Colorado Department of Public Health and Environment](https://covid19.colorado.gov/vaccine)**
+
+## Phases
+### *Phase 1A* 
+| id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
+| --- | --- | --- | --- | --- | --- | --- |
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
+
 ### *Phase 1B* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -205,7 +301,6 @@ Active Phase: **Phase 1B**
 |c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/essential_worker.1b.CO|Are you as an essential frontline worker? This includes first responders; corrections officers; officials from executive, legislative, and judicial branches of government; essential frontline journalists; human services staff; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/age.70_up|Are you age 70+?|not defined|not defined|not defined|not defined|n/a 
-
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -218,16 +313,24 @@ Active Phase: **Phase 1B**
 
 
 
-# Connecticut
-Active Phase: **Phase 1A**
 
-## Phases: 
+
+
+
+
+
+
+# Connecticut
+- Active Phase: **Phase 1A**
+
+- Info Link: **[Connecticut State Department of Public Health](https://portal.ct.gov/Coronavirus/covid-19%20vaccinations)**
+
+## Phases
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
 |c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
-
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -238,7 +341,6 @@ Active Phase: **Phase 1A**
 |c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/congregate|Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?|not defined|not defined|not defined|not defined|n/a 
 
-
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -251,16 +353,24 @@ Active Phase: **Phase 1A**
 
 
 
-# Delaware
-Active Phase: **Phase 1A**
 
-## Phases: 
+
+
+
+
+
+
+# Delaware
+- Active Phase: **Phase 1A**
+
+- Info Link: **[Delaware Division of Public Health](https://coronavirus.delaware.gov/vaccine/)**
+
+## Phases
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
 |c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
-
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -270,7 +380,6 @@ Active Phase: **Phase 1A**
 |c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a 
 
-
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -283,10 +392,26 @@ Active Phase: **Phase 1A**
 
 
 
-# District of Columbia
-Active Phase: **Phase 1B**
 
-## Phases: 
+
+
+
+
+
+
+# District of Columbia
+- Active Phase: **Phase 1B**
+
+- Info Link: **[District of Columbia Department of Health](https://coronavirus.dc.gov/vaccine)**
+
+## Phases
+### *Phase 1A* 
+| id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
+| --- | --- | --- | --- | --- | --- | --- |
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health.1a.DC.inpatient_psychiatric|Are you an inpatient psychiatric patient?|not defined|not defined|not defined|not defined|n/a 
+
 ### *Phase 1B* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -297,7 +422,6 @@ Active Phase: **Phase 1B**
 |c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/congregate.DC|Do you live in an intermediate care facility, a group home, or another high-risk congregate setting?|not defined|not defined|not defined|not defined|n/a 
 
-
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -311,17 +435,25 @@ Active Phase: **Phase 1B**
 
 
 
-# Federated States of Micronesia
-Active Phase: **Phase 1A**
 
-## Phases: 
+
+
+
+
+
+
+# Federated States of Micronesia
+- Active Phase: **Phase 1A**
+
+- Info Link: **[Federated States of Micronesia National Government, Department of Health and Social Affairs](https://www.fsmgov.org/index.html)**
+
+## Phases
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
 |c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
 
-
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -329,7 +461,6 @@ Active Phase: **Phase 1A**
 |c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a 
-
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -342,10 +473,19 @@ Active Phase: **Phase 1A**
 
 
 
-# Florida
-Active Phase: **Phase 1A**
 
-## Phases: 
+
+
+
+
+
+
+# Florida
+- Active Phase: **Phase 1A**
+
+- Info Link: **[Florida Department of Health](https://floridahealthcovid19.gov/covid-19-vaccines-in-florida/)**
+
+## Phases
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -354,7 +494,6 @@ Active Phase: **Phase 1A**
 |c19.eligibility.question/health.1a.FL.extremely_vulnerable|Have you been deemed extremely vulnerable to COVID-19 by hospital providers?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a 
 
-
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -363,7 +502,6 @@ Active Phase: **Phase 1A**
 |c19.eligibility.question/health.1a.FL.extremely_vulnerable|Have you been deemed extremely vulnerable to COVID-19 by hospital providers?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a 
-
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -376,10 +514,19 @@ Active Phase: **Phase 1A**
 
 
 
-# Georgia
-Active Phase: **Phase 1A**
 
-## Phases: 
+
+
+
+
+
+
+# Georgia
+- Active Phase: **Phase 1A**
+
+- Info Link: **[Georgia Department of Public Health](https://dph.georgia.gov/covid-vaccine)**
+
+## Phases
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -388,7 +535,6 @@ Active Phase: **Phase 1A**
 |c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/essential_worker.firefighter_leo|Are you a firefighter or law enforcement officer?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/essential_worker.1a.GA.caregiver_of_65_up|Are you a caregiver of a person aged 65+?|not defined|not defined|not defined|not defined|n/a 
-
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -400,7 +546,6 @@ Active Phase: **Phase 1A**
 |c19.eligibility.question/essential_worker.1a.GA.caregiver_of_65_up|Are you a caregiver of a person aged 65+?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a 
 
-
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -409,19 +554,27 @@ Active Phase: **Phase 1A**
 |c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a 
+
+
+
+
+
+
+
 
 
 
 # Guam
-Active Phase: **Phase 1A**
+- Active Phase: **Phase 1A**
 
-## Phases: 
+- Info Link: **[Guam Department of Public Health and Social Services, Division of Public Health](https://dphss.guam.gov/)**
+
+## Phases
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
 |c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
-
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -431,7 +584,6 @@ Active Phase: **Phase 1A**
 |c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a 
 
-
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -440,19 +592,27 @@ Active Phase: **Phase 1A**
 |c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a 
+
+
+
+
+
+
+
 
 
 
 # Hawaii
-Active Phase: **Phase 1A**
+- Active Phase: **Phase 1A**
 
-## Phases: 
+- Info Link: **[Hawaii State Department of Health](https://hawaiicovid19.com/vaccine/)**
+
+## Phases
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
 |c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
-
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -462,7 +622,6 @@ Active Phase: **Phase 1A**
 |c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a 
 
-
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -471,19 +630,27 @@ Active Phase: **Phase 1A**
 |c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a 
+
+
+
+
+
+
+
 
 
 
 # Idaho
-Active Phase: **Phase 1A**
+- Active Phase: **Phase 1A**
 
-## Phases: 
+- Info Link: **[Idaho Department of Health and Welfare](https://coronavirus.idaho.gov/covid-19-vaccine/)**
+
+## Phases
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
 |c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
-
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -492,7 +659,6 @@ Active Phase: **Phase 1A**
 |c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a 
-
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -505,16 +671,24 @@ Active Phase: **Phase 1A**
 
 
 
-# Illinois
-Active Phase: **Phase 1A**
 
-## Phases: 
+
+
+
+
+
+
+# Illinois
+- Active Phase: **Phase 1A**
+
+- Info Link: **[Illinois Department of Public Health](https://www.dph.illinois.gov/covid19/vaccine-faq)**
+
+## Phases
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
 |c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
-
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -524,7 +698,6 @@ Active Phase: **Phase 1A**
 |c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/congregate.IL|Do you live in a sheltered population (e.g. homeless, day programs, inmates?)|not defined|not defined|not defined|not defined|n/a 
-
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -538,10 +711,26 @@ Active Phase: **Phase 1A**
 
 
 
-# Indiana
-Active Phase: **Phase 1B**
 
-## Phases: 
+
+
+
+
+
+
+# Indiana
+- Active Phase: **Phase 1B**
+
+- Info Link: **[Indiana State Department of Health](https://www.coronavirus.in.gov/vaccine/index.htm)**
+
+## Phases
+### *Phase 1A* 
+| id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
+| --- | --- | --- | --- | --- | --- | --- |
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.ff_leo_corrections|Are you a firefighter, law enforcement officer, or corrections staff?|not defined|not defined|not defined|not defined|n/a 
+
 ### *Phase 1B* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -551,7 +740,6 @@ Active Phase: **Phase 1B**
 |c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/age.60_up|Are you age 60+?|not defined|not defined|not defined|not defined|n/a 
 
-
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -563,16 +751,24 @@ Active Phase: **Phase 1B**
 
 
 
-# Iowa
-Active Phase: **Phase 1A**
 
-## Phases: 
+
+
+
+
+
+
+# Iowa
+- Active Phase: **Phase 1A**
+
+- Info Link: **[Iowa Department of Public Health](https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus/Vaccine)**
+
+## Phases
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
 |c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
-
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -581,7 +777,6 @@ Active Phase: **Phase 1A**
 |c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a 
-
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -594,16 +789,24 @@ Active Phase: **Phase 1A**
 
 
 
-# Kansas
-Active Phase: **Phase 1A**
 
-## Phases: 
+
+
+
+
+
+
+# Kansas
+- Active Phase: **Phase 1A**
+
+- Info Link: **[Kansas Department of Health and Environment](https://www.kansasvaccine.gov/)**
+
+## Phases
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
 |c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
-
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -614,7 +817,6 @@ Active Phase: **Phase 1A**
 |c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/congregate|Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?|not defined|not defined|not defined|not defined|n/a 
 
-
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -627,16 +829,24 @@ Active Phase: **Phase 1A**
 
 
 
-# Kentucky
-Active Phase: **Phase 1A**
 
-## Phases: 
+
+
+
+
+
+
+# Kentucky
+- Active Phase: **Phase 1A**
+
+- Info Link: **[Kentucky Department for Public Health](https://govstatus.egov.com/ky-covid-vaccine)**
+
+## Phases
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
 |c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
-
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -646,7 +856,6 @@ Active Phase: **Phase 1A**
 |c19.eligibility.question/essential_worker.1b.KY|Are you a K-12 personnel or first responder?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/age.70_up|Are you age 70+?|not defined|not defined|not defined|not defined|n/a 
 
-
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -658,10 +867,25 @@ Active Phase: **Phase 1A**
 
 
 
-# Louisiana
-Active Phase: **Phase 1B**
 
-## Phases: 
+
+
+
+
+
+
+# Louisiana
+- Active Phase: **Phase 1B**
+
+- Info Link: **[Louisiana Department of Health](https://ldh.la.gov/index.cfm/page/4042)**
+
+## Phases
+### *Phase 1A* 
+| id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
+| --- | --- | --- | --- | --- | --- | --- |
+|c19.eligibility.question/healthcare_worker.in_hospital|Are you a healthcare worker within a hospital?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
+
 ### *Phase 1B* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -670,7 +894,6 @@ Active Phase: **Phase 1B**
 |c19.eligibility.question/essential_worker.1b.LA|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, healthcare workers, security personnel, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/age.70_up|Are you age 70+?|not defined|not defined|not defined|not defined|n/a 
 
-
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -679,19 +902,27 @@ Active Phase: **Phase 1B**
 |c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a 
+
+
+
+
+
+
+
 
 
 
 # Maine
-Active Phase: **Phase 1A**
+- Active Phase: **Phase 1A**
 
-## Phases: 
+- Info Link: **[Maine Department of Health and Human Services](https://www.maine.gov/covid19/vaccines)**
+
+## Phases
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
 |c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
-
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -701,7 +932,6 @@ Active Phase: **Phase 1A**
 |c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a 
 
-
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -710,19 +940,27 @@ Active Phase: **Phase 1A**
 |c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a 
+
+
+
+
+
+
+
 
 
 
 # Marshall Islands
-Active Phase: **Phase 1A**
+- Active Phase: **Phase 1A**
 
-## Phases: 
+- Info Link: **[Republic of the Marshall Islands Ministry of Health and Human Services](http://rmihealth.org/)**
+
+## Phases
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
 |c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
-
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -731,7 +969,6 @@ Active Phase: **Phase 1A**
 |c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a 
-
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -744,10 +981,19 @@ Active Phase: **Phase 1A**
 
 
 
-# Maryland
-Active Phase: **Phase 1A**
 
-## Phases: 
+
+
+
+
+
+
+# Maryland
+- Active Phase: **Phase 1A**
+
+- Info Link: **[Maryland Department of Health](https://covidlink.maryland.gov/content/vaccine/)**
+
+## Phases
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -755,7 +1001,6 @@ Active Phase: **Phase 1A**
 |c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/essential_worker.leo_corrections|Are you a law enforcement office or corrections staff?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/essential_worker.1a.MD.judiciary_or_nursing_home_staff|Are you frontline judiciary staff or long-term care facility staff within a nursing home?|not defined|not defined|not defined|not defined|n/a 
-
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -768,7 +1013,6 @@ Active Phase: **Phase 1A**
 |c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/congregate.MD|Do you live in an assisted living facility, special needs group home, or are a high-risk inmate?|not defined|not defined|not defined|not defined|n/a 
 
-
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -783,10 +1027,32 @@ Active Phase: **Phase 1A**
 
 
 
-# Massachusetts
-Active Phase: **Phase 2, Step 1**
 
-## Phases: 
+
+
+
+
+
+
+# Massachusetts
+- Active Phase: **Phase 2, Step 1**
+
+- Info Link: **[Massachusetts Department of Public Health](https://www.mass.gov/info-details/massachusetts-covid-19-vaccine-information)**
+- Workflow Link: **[Massachusetts PhaseFinder](https://www.mass.gov/covid-19-vaccine)**
+
+## Phases
+### *Phase 1* 
+| id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
+| --- | --- | --- | --- | --- | --- | --- |
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.moreinfo/healthcare_worker.MA|All healthcare workers are eligible to receive the vaccine.|not defined|not defined|not defined|not defined|https://www.mass.gov/info-details/covid-19-vaccinations-for-health-care-workers
+|c19.eligibility.question/long_term_care_resident_or_worker.MA|Do you live or work in a long-term care facility?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.moreinfo/long_term_care_resident_or_worker.MA|Examples of this include: skilled nursing facilities, assisted living residences, and rest homes.|not defined|not defined|not defined|not defined|https://www.mass.gov/info-details/massachusetts-covid-19-vaccination-phases#phase-1-
+|c19.eligibility.question/first_responders.MA|Are you a first responder?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.moreinfo/first_responders.MA|Several categories of first responders are eligible for the vaccine in Massachusetts.|not defined|not defined|not defined|not defined|https://www.mass.gov/info-details/covid-19-vaccinations-for-first-responders
+|c19.eligibility.question/congregate.MA|Are you a staff member or resident of a congregate care facility?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.moreinfo/congregate.MA|Examples of congregate care facilities include emergency shelter programs, domestic violence shelters, veterans' shelters, and private special education shools.|not defined|not defined|not defined|not defined|https://www.mass.gov/info-details/covid-19-vaccinations-for-congregate-care-settings 
+
 ### *Phase 2, Step 1* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -803,10 +1069,25 @@ Active Phase: **Phase 2, Step 1**
 
 
 
-# Michigan
-Active Phase: **Phase 1B**
 
-## Phases: 
+
+
+
+
+
+
+# Michigan
+- Active Phase: **Phase 1B**
+
+- Info Link: **[Michigan Department of Health and Human Services](https://www.michigan.gov/coronavirus/0,9753,7-406-98178_103214---,00.html)**
+
+## Phases
+### *Phase 1A* 
+| id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
+| --- | --- | --- | --- | --- | --- | --- |
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
+
 ### *Phase 1B* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -814,7 +1095,6 @@ Active Phase: **Phase 1B**
 |c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a 
-
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -827,16 +1107,24 @@ Active Phase: **Phase 1B**
 
 
 
-# Minnesota
-Active Phase: **Phase 1A**
 
-## Phases: 
+
+
+
+
+
+
+# Minnesota
+- Active Phase: **Phase 1A**
+
+- Info Link: **[Minnesota Department of Health](https://www.health.state.mn.us/diseases/coronavirus/vaccine.html)**
+
+## Phases
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
 |c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
-
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -846,7 +1134,6 @@ Active Phase: **Phase 1A**
 |c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a 
 
-
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -858,10 +1145,25 @@ Active Phase: **Phase 1A**
 
 
 
-# Mississippi
-Active Phase: **Phase 1B**
 
-## Phases: 
+
+
+
+
+
+
+# Mississippi
+- Active Phase: **Phase 1B**
+
+- Info Link: **[Mississippi State Department of Health](https://msdh.ms.gov/msdhsite/_static/14,0,420,976.html)**
+
+## Phases
+### *Phase 1A* 
+| id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
+| --- | --- | --- | --- | --- | --- | --- |
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
+
 ### *Phase 1B* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -869,7 +1171,6 @@ Active Phase: **Phase 1B**
 |c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a 
-
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -883,16 +1184,24 @@ Active Phase: **Phase 1B**
 
 
 
-# Missouri
-Active Phase: **Phase 1A**
 
-## Phases: 
+
+
+
+
+
+
+# Missouri
+- Active Phase: **Phase 1A**
+
+- Info Link: **[Missouri Department of Health and Senior Services](https://covidvaccine.mo.gov/residents/)**
+
+## Phases
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
 |c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
-
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -902,7 +1211,6 @@ Active Phase: **Phase 1A**
 |c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a 
-
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -915,16 +1223,24 @@ Active Phase: **Phase 1A**
 
 
 
-# Montana
-Active Phase: **Phase 1A**
 
-## Phases: 
+
+
+
+
+
+
+# Montana
+- Active Phase: **Phase 1A**
+
+- Info Link: **[Montana Department of Public Health and Human Services](https://dphhs.mt.gov/publichealth/cdepi/diseases/coronavirusvaccine/loginstate.aspx)**
+
+## Phases
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
 |c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
-
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -937,7 +1253,6 @@ Active Phase: **Phase 1A**
 |c19.eligibility.question/american_indian_poc.MT|Are you an American Indian or other person of color at elevated risk for COVID-19 complications?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/congregate|Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?|not defined|not defined|not defined|not defined|n/a 
 
-
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -951,16 +1266,24 @@ Active Phase: **Phase 1A**
 
 
 
-# Nebraska
-Active Phase: **Phase 1A**
 
-## Phases: 
+
+
+
+
+
+
+# Nebraska
+- Active Phase: **Phase 1A**
+
+- Info Link: **[Nebraska Department of Health and Human Services](http://dhhs.ne.gov/Pages/COVID-19-Vaccine-Information.aspx)**
+
+## Phases
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
 |c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
-
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -969,7 +1292,6 @@ Active Phase: **Phase 1A**
 |c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a 
-
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -982,10 +1304,19 @@ Active Phase: **Phase 1A**
 
 
 
-# Nevada
-Active Phase: **Phase 1A**
 
-## Phases: 
+
+
+
+
+
+
+# Nevada
+- Active Phase: **Phase 1A**
+
+- Info Link: **[Nevada Division of Public and Behavioral Health](https://www.immunizenevada.org/nv-covid-fighter)**
+
+## Phases
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -993,7 +1324,6 @@ Active Phase: **Phase 1A**
 |c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/essential_worker.leo_corrections|Are you a law enforcement office or corrections staff?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/essential_worker.1a.NV.safety_natsec|Are public safety officer or a deployed and mission-critical personnell with an essential national security role, or a staff member with state and local emergency operations?|not defined|not defined|not defined|not defined|n/a 
-
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -1005,7 +1335,6 @@ Active Phase: **Phase 1A**
 |c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a 
 
-
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1017,17 +1346,25 @@ Active Phase: **Phase 1A**
 
 
 
-# New Hampshire
-Active Phase: **Phase 1A**
 
-## Phases: 
+
+
+
+
+
+
+# New Hampshire
+- Active Phase: **Phase 1A**
+
+- Info Link: **[New Hampshire Department of Health and Human Services](https://www.nh.gov/covid19/resources-guidance/vaccination-planning.htm)**
+
+## Phases
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
 |c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/essential_worker.firefighter_leo|Are you a firefighter or law enforcement officer?|not defined|not defined|not defined|not defined|n/a 
-
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -1040,7 +1377,6 @@ Active Phase: **Phase 1A**
 |c19.eligibility.question/health.1b.NH|Are you age 16+ with 2 or more underlying health conditions, or a caregiver to such?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/congregate.NH|Are you a resident of a facility for people with intellectual and developmental disabilities?|not defined|not defined|not defined|not defined|n/a 
 
-
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1054,10 +1390,25 @@ Active Phase: **Phase 1A**
 
 
 
-# New Jersey
-Active Phase: **Phase 1B**
 
-## Phases: 
+
+
+
+
+
+
+# New Jersey
+- Active Phase: **Phase 1B**
+
+- Info Link: **[New Jersey Department of Health](https://www.nj.gov/health/cd/topics/covid2019_vaccination.shtml)**
+
+## Phases
+### *Phase 1A* 
+| id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
+| --- | --- | --- | --- | --- | --- | --- |
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
+
 ### *Phase 1B* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1065,7 +1416,6 @@ Active Phase: **Phase 1B**
 |c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/essential_worker.firefighter_leo|Are you a firefighter or law enforcement officer?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a 
-
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -1078,10 +1428,25 @@ Active Phase: **Phase 1B**
 
 
 
-# New Mexico
-Active Phase: **Phase 1B**
 
-## Phases: 
+
+
+
+
+
+
+# New Mexico
+- Active Phase: **Phase 1B**
+
+- Info Link: **[New Mexico Department of Health](https://cv.nmhealth.org/covid-vaccine/)**
+
+## Phases
+### *Phase 1A* 
+| id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
+| --- | --- | --- | --- | --- | --- | --- |
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
+
 ### *Phase 1B* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1092,7 +1457,6 @@ Active Phase: **Phase 1B**
 |c19.eligibility.question/health.1b.NM|Are you age 16+ with a high risk medical condition?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/congregate|Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?|not defined|not defined|not defined|not defined|n/a 
 
-
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1105,10 +1469,25 @@ Active Phase: **Phase 1B**
 
 
 
-# New York
-Active Phase: **Phase 1B**
 
-## Phases: 
+
+
+
+
+
+
+# New York
+- Active Phase: **Phase 1B**
+
+- Info Link: **[New York State Department of Health](https://covid19vaccine.health.ny.gov/)**
+
+## Phases
+### *Phase 1A* 
+| id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
+| --- | --- | --- | --- | --- | --- | --- |
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
+
 ### *Phase 1B* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1116,7 +1495,6 @@ Active Phase: **Phase 1B**
 |c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/essential_worker.1b.NY|Are you a K-12 personnel, first responder, public safety worker, or public transit worker?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a 
-
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -1129,16 +1507,24 @@ Active Phase: **Phase 1B**
 
 
 
-# North Carolina
-Active Phase: **Phase 1A**
 
-## Phases: 
+
+
+
+
+
+
+# North Carolina
+- Active Phase: **Phase 1A**
+
+- Info Link: **[North Carolina Department of Health and Human Services](https://covid19.ncdhhs.gov/vaccines)**
+
+## Phases
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
 |c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
-
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -1147,7 +1533,6 @@ Active Phase: **Phase 1A**
 |c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a 
-
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -1161,16 +1546,24 @@ Active Phase: **Phase 1A**
 
 
 
-# North Dakota
-Active Phase: **Phase 1A**
 
-## Phases: 
+
+
+
+
+
+
+# North Dakota
+- Active Phase: **Phase 1A**
+
+- Info Link: **[North Dakota Department of Health](https://www.health.nd.gov/immunization-guidance-public)**
+
+## Phases
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
 |c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
-
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -1182,7 +1575,6 @@ Active Phase: **Phase 1A**
 |c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/congregate|Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?|not defined|not defined|not defined|not defined|n/a 
 
-
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1195,16 +1587,24 @@ Active Phase: **Phase 1A**
 
 
 
-# Northern Mariana Islands
-Active Phase: **Phase 1A**
 
-## Phases: 
+
+
+
+
+
+
+# Northern Mariana Islands
+- Active Phase: **Phase 1A**
+
+- Info Link: **[Commonwealth of the Northern Mariana Islands, Commonwealth Healthcare Corporation](https://www.vaccinatecnmi.com/)**
+
+## Phases
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
 |c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
-
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -1213,7 +1613,6 @@ Active Phase: **Phase 1A**
 |c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a 
-
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -1226,17 +1625,25 @@ Active Phase: **Phase 1A**
 
 
 
-# Ohio
-Active Phase: **Phase 1A**
 
-## Phases: 
+
+
+
+
+
+
+# Ohio
+- Active Phase: **Phase 1A**
+
+- Info Link: **[Ohio Department of Health](https://coronavirus.ohio.gov/wps/portal/gov/covid-19/covid-19-vaccination-program)**
+
+## Phases
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
 |c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/health.1a.OH.psychiatric|Are you a psychiatric hospital patient?|not defined|not defined|not defined|not defined|n/a 
-
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -1248,7 +1655,6 @@ Active Phase: **Phase 1A**
 |c19.eligibility.question/essential_worker.k12|Are you K-12 personnel?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a 
 
-
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1257,19 +1663,27 @@ Active Phase: **Phase 1A**
 |c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a 
+
+
+
+
+
+
+
 
 
 
 # Oklahoma
-Active Phase: **Phase 1A**
+- Active Phase: **Phase 1A**
 
-## Phases: 
+- Info Link: **[Oklahoma State Department of Health](https://oklahoma.gov/covid19/vaccine-information.html)**
+
+## Phases
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
 |c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
-
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -1281,7 +1695,6 @@ Active Phase: **Phase 1A**
 |c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/congregate.OK|Do you live in a homeless shelter or correctional facility?|not defined|not defined|not defined|not defined|n/a 
 
-
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1291,19 +1704,27 @@ Active Phase: **Phase 1A**
 |c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/congregate.OK|Do you live in a homeless shelter or correctional facility?|not defined|not defined|not defined|not defined|n/a 
+
+
+
+
+
+
+
 
 
 
 # Oregon
-Active Phase: **Phase 1A**
+- Active Phase: **Phase 1A**
 
-## Phases: 
+- Info Link: **[Oregon Health Authority, Public Health Division](https://covidvaccine.oregon.gov/)**
+
+## Phases
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
 |c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
-
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -1313,7 +1734,6 @@ Active Phase: **Phase 1A**
 |c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a 
 
-
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1322,19 +1742,27 @@ Active Phase: **Phase 1A**
 |c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a 
+
+
+
+
+
+
+
 
 
 
 # Palau
-Active Phase: **Phase 1A**
+- Active Phase: **Phase 1A**
 
-## Phases: 
+- Info Link: **[Republic of Palau Ministry of Health](http://www.palauhealth.org/)**
+
+## Phases
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
 |c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
-
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -1343,7 +1771,6 @@ Active Phase: **Phase 1A**
 |c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a 
-
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -1356,16 +1783,24 @@ Active Phase: **Phase 1A**
 
 
 
-# Pennsylvania
-Active Phase: **Phase 1A**
 
-## Phases: 
+
+
+
+
+
+
+# Pennsylvania
+- Active Phase: **Phase 1A**
+
+- Info Link: **[Pennsylvania Department of Health](https://www.health.pa.gov/topics/disease/coronavirus/Pages/Vaccine.aspx)**
+
+## Phases
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
 |c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
-
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -1377,7 +1812,6 @@ Active Phase: **Phase 1A**
 |c19.eligibility.question/health.1b.PA|Are you receiving home and community based services?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/congregate|Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?|not defined|not defined|not defined|not defined|n/a 
 
-
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1391,16 +1825,24 @@ Active Phase: **Phase 1A**
 
 
 
-# Puerto Rico
-Active Phase: **Phase 1A**
 
-## Phases: 
+
+
+
+
+
+
+# Puerto Rico
+- Active Phase: **Phase 1A**
+
+- Info Link: **[Puerto Rico Department of Health (Departamento de Salud, Gobierno de Puerto Rico)  (en español)](http://www.salud.gov.pr/Pages/coronavirus.aspx)**
+
+## Phases
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
 |c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
-
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -1410,7 +1852,6 @@ Active Phase: **Phase 1A**
 |c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a 
 
-
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1419,19 +1860,27 @@ Active Phase: **Phase 1A**
 |c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a 
+
+
+
+
+
+
+
 
 
 
 # Rhode Island
-Active Phase: **Phase 1A**
+- Active Phase: **Phase 1A**
 
-## Phases: 
+- Info Link: **[Rhode Island Department of Health](https://covid.ri.gov/vaccination)**
+
+## Phases
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
 |c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
-
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -1441,7 +1890,6 @@ Active Phase: **Phase 1A**
 |c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a 
 
-
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1450,19 +1898,27 @@ Active Phase: **Phase 1A**
 |c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a 
+
+
+
+
+
+
+
 
 
 
 # South Carolina
-Active Phase: **Phase 1A**
+- Active Phase: **Phase 1A**
 
-## Phases: 
+- Info Link: **[South Carolina Department of Health and Environmental Control](https://scdhec.gov/covid19/covid-19-vaccine)**
+
+## Phases
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
 |c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
-
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -1471,7 +1927,6 @@ Active Phase: **Phase 1A**
 |c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a 
-
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -1484,17 +1939,25 @@ Active Phase: **Phase 1A**
 
 
 
-# South Dakota
-Active Phase: **Phase 1A**
 
-## Phases: 
+
+
+
+
+
+
+# South Dakota
+- Active Phase: **Phase 1A**
+
+- Info Link: **[South Dakota Department of Health](https://doh.sd.gov/COVID/Vaccine/default.aspx)**
+
+## Phases
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
 |c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/essential_worker.leo_corrections|Are you a law enforcement office or corrections staff?|not defined|not defined|not defined|not defined|n/a 
-
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -1507,7 +1970,6 @@ Active Phase: **Phase 1A**
 |c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/congregate|Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?|not defined|not defined|not defined|not defined|n/a 
 
-
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1520,10 +1982,27 @@ Active Phase: **Phase 1A**
 
 
 
-# Tennessee
-Active Phase: **Phase 1B**
 
-## Phases: 
+
+
+
+
+
+
+# Tennessee
+- Active Phase: **Phase 1B**
+
+- Info Link: **[Tennessee Department of Health](https://www.tn.gov/health/cedep/ncov/covid-19-vaccine-information.html)**
+
+## Phases
+### *Phase 1A* 
+| id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
+| --- | --- | --- | --- | --- | --- | --- |
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/health.1a.TN.non_independent|Are you age 18-74, but unable to live independently?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a 
+
 ### *Phase 1B* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1533,7 +2012,6 @@ Active Phase: **Phase 1B**
 |c19.eligibility.question/health.1a.TN.non_independent|Are you age 18-74, but unable to live independently?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/essential_worker.1b.TN|Are you a first responder, K-12 personnel, or child-care personnel?|not defined|not defined|not defined|not defined|n/a 
 
-
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1545,10 +2023,25 @@ Active Phase: **Phase 1B**
 
 
 
-# Texas
-Active Phase: **Phase 1B**
 
-## Phases: 
+
+
+
+
+
+
+# Texas
+- Active Phase: **Phase 1B**
+
+- Info Link: **[Texas Department of State Health Services](https://www.dshs.state.tx.us/coronavirus/immunize/vaccine.aspx)**
+
+## Phases
+### *Phase 1A* 
+| id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
+| --- | --- | --- | --- | --- | --- | --- |
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
+
 ### *Phase 1B* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1558,7 +2051,6 @@ Active Phase: **Phase 1B**
 |c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a 
 
-
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1570,16 +2062,24 @@ Active Phase: **Phase 1B**
 
 
 
-# U.S. Virgin Islands
-Active Phase: **Phase 1A**
 
-## Phases: 
+
+
+
+
+
+
+# U.S. Virgin Islands
+- Active Phase: **Phase 1A**
+
+- Info Link: **[US Virgin Islands Department of Health](https://www.covid19usvi.com/)**
+
+## Phases
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
 |c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
-
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -1589,7 +2089,6 @@ Active Phase: **Phase 1A**
 |c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a 
 
-
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1601,10 +2100,19 @@ Active Phase: **Phase 1A**
 
 
 
-# Utah
-Active Phase: **Phase 1A**
 
-## Phases: 
+
+
+
+
+
+
+# Utah
+- Active Phase: **Phase 1A**
+
+- Info Link: **[Utah Department of Health](https://coronavirus.utah.gov/vaccine/)**
+
+## Phases
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1612,7 +2120,6 @@ Active Phase: **Phase 1A**
 |c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/essential_worker.k12|Are you K-12 personnel?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/essential_worker.1a.UT.first_responder|Are a non-EMS first responder?|not defined|not defined|not defined|not defined|n/a 
-
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -1623,7 +2130,6 @@ Active Phase: **Phase 1A**
 |c19.eligibility.question/essential_worker.1a.UT.first_responder|Are a non-EMS first responder?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/age.70_up|Are you age 70+?|not defined|not defined|not defined|not defined|n/a 
 
-
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1636,16 +2142,24 @@ Active Phase: **Phase 1A**
 
 
 
-# Vermont
-Active Phase: **Phase 1A**
 
-## Phases: 
+
+
+
+
+
+
+# Vermont
+- Active Phase: **Phase 1A**
+
+- Info Link: **[Vermont Department of Health](https://www.healthvermont.gov/covid-19/vaccine)**
+
+## Phases
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
 |c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
-
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -1654,7 +2168,6 @@ Active Phase: **Phase 1A**
 |c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a 
-
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -1667,16 +2180,24 @@ Active Phase: **Phase 1A**
 
 
 
-# Virginia
-Active Phase: **Phase 1A**
 
-## Phases: 
+
+
+
+
+
+
+# Virginia
+- Active Phase: **Phase 1A**
+
+- Info Link: **[Virginia Department of Health](https://www.vdh.virginia.gov/covid-19-vaccine/)**
+
+## Phases
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
 |c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
-
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -1686,7 +2207,6 @@ Active Phase: **Phase 1A**
 |c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/congregate.VA|Do you live in a correctional facility, homeless shelter, or migrant labor camp?|not defined|not defined|not defined|not defined|n/a 
-
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -1700,16 +2220,25 @@ Active Phase: **Phase 1A**
 
 
 
-# Washington
-Active Phase: **Phase 1A**
 
-## Phases: 
+
+
+
+
+
+
+# Washington
+- Active Phase: **Phase 1A**
+
+- Info Link: **[Washington State Department of Health](https://www.doh.wa.gov/Emergencies/COVID19/vaccine)**
+- Workflow Link: **[Washington State PhaseFinder](https://form.findyourphasewa.org/210118771253954)**
+
+## Phases
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
 |c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
-
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -1723,7 +2252,6 @@ Active Phase: **Phase 1A**
 |c19.eligibility.question/congregate_worker.WA|Do you work in a congregate setting such as a group home|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/multigen.WA|Are you age 50+ in a multi-generational household?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/health.1b.WA|Are you 16+ with 2 or more medical conditions?|not defined|not defined|not defined|not defined|n/a 
-
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -1740,10 +2268,19 @@ Active Phase: **Phase 1A**
 
 
 
-# West Virginia
-Active Phase: **Phase 1A**
 
-## Phases: 
+
+
+
+
+
+
+# West Virginia
+- Active Phase: **Phase 1A**
+
+- Info Link: **[West Virginia Department of Health and Human Resources, Bureau for Public Health](https://dhhr.wv.gov/COVID-19/Pages/Vaccine.aspx)**
+
+## Phases
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1751,7 +2288,6 @@ Active Phase: **Phase 1A**
 |c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/age.80_up|Are you age 80+?|not defined|not defined|not defined|not defined|n/a 
 
-
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1759,7 +2295,6 @@ Active Phase: **Phase 1A**
 |c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a 
-
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -1772,17 +2307,25 @@ Active Phase: **Phase 1A**
 
 
 
-# Wisconsin
-Active Phase: **Phase 1A**
 
-## Phases: 
+
+
+
+
+
+
+# Wisconsin
+- Active Phase: **Phase 1A**
+
+- Info Link: **[Wisconsin Department of Health Services](https://www.dhs.wisconsin.gov/covid-19/vaccine.htm)**
+
+## Phases
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
 |c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
 
-
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1790,7 +2333,6 @@ Active Phase: **Phase 1A**
 |c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a 
-
 
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -1803,17 +2345,25 @@ Active Phase: **Phase 1A**
 
 
 
-# Wyoming
-Active Phase: **Phase 1A**
 
-## Phases: 
+
+
+
+
+
+
+# Wyoming
+- Active Phase: **Phase 1A**
+
+- Info Link: **[Wyoming Department of Health](https://health.wyo.gov/publichealth/immunization/wyoming-covid-19-vaccine-information/)**
+
+## Phases
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
 |c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/essential_worker.leo|Are you a law enforcement officer?|not defined|not defined|not defined|not defined|n/a 
-
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -1824,7 +2374,6 @@ Active Phase: **Phase 1A**
 |c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/age.70_up|Are you age 70+?|not defined|not defined|not defined|not defined|n/a 
 
-
 ### *Phase 1C* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1833,6 +2382,9 @@ Active Phase: **Phase 1A**
 |c19.eligibility.question/essential_worker|Are you classified as an essential worker?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/health|Are you age 16+, and have a high-risk medical condition?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a 
+
+
+
 
 
 	
