@@ -104,6 +104,24 @@ ${phasesToWrite
 				localizations
 		  )}**\n`
 		: ''
+	const schedulingLink = region.plan?.links?.scheduling
+		? `- Scheduling Link: **${writeLink(
+				region.plan?.links?.scheduling,
+				localizations
+		  )}**\n`
+		: ''
+	const registrationLink = region.plan?.links?.registration
+		? `- Registration Link: **${writeLink(
+				region.plan?.links?.registration,
+				localizations
+		  )}**\n`
+		: ''
+	const providersLink = region.plan?.links?.providers
+		? `- Providers Link: **${writeLink(
+				region.plan?.links?.providers,
+				localizations
+		  )}**\n`
+		: ''
 	const hotlineLink = region.plan?.links?.scheduling_phone
 		? `- Scheduling Hotline: **${writeLink(
 				region.plan?.links?.scheduling_phone,
@@ -114,7 +132,7 @@ ${phasesToWrite
 	return `
 # ${region.name}
 - Active Phase: **${phaseLabel}**\n
-${infoLink}${workflowLink}${hotlineLink}
+${infoLink}${workflowLink}${hotlineLink}${schedulingLink}${registrationLink}${providersLink}
 ${phaseData}
 `
 }

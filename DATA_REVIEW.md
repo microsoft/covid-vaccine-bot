@@ -130,6 +130,7 @@
 - Active Phase: **Prioritized Phase 1B**
 
 - Info Link: **[Arizona Department of Health Services](https://azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-vaccine)**
+- Scheduling Link: **[Arizona DHS Vaccine Patient Portal](https://podvaccine.azdhs.gov/)**
 
 ## Phases
 ### *Phase 1A* 
@@ -230,6 +231,7 @@
 - Active Phase: **Prioritized Phase 1B**
 
 - Info Link: **[Graham County COVID-19 Vaccination Info](https://www.graham.az.gov/AlertCenter.aspx?AID=Graham-County-COVID19-Vaccine-Informatio-11)**
+- Registration Link: **[Graham County COVID-19 Vaccination Registration](https://www.graham.az.gov/FormCenter/COVID19-21/COVID19-Vaccine-Registration-Form-76)**
 
 
 
@@ -238,6 +240,7 @@
 - Active Phase: **Prioritized Phase 1B**
 
 - Info Link: **[Greenlee County Health & County Services](https://greenlee.az.gov/departments/health-county-services/)**
+- Registration Link: **[Greenlee County Vaccination Registration](https://www.gilahealth.com/covid-19/covid-19-vaccine)**
 
 
 
@@ -263,6 +266,7 @@
 - Active Phase: **Prioritized Phase 1B**
 
 - Info Link: **[Mojave County COVID-19 Vaccine Statu](https://covid-19-vaccine-mohave.hub.arcgis.com/)**
+- Providers Link: **[Mojave County Vaccination Providers](https://www.mohavecounty.us/ContentPage.aspx?id=127&cid=1444&page=2&rid=2230)**
 
 
 
@@ -279,6 +283,7 @@
 - Active Phase: **Prioritized Phase 1B**
 
 - Info Link: **[Pima County COVID-19 Vaccine Info & Distribution](https://webcms.pima.gov/cms/One.aspx?portalId=169&pageId=669257)**
+- Registration Link: **[Pima County COVID-19 Vaccination Registration](https://webcms.pima.gov/cms/One.aspx?portalId=169&pageId=690372)**
 
 
 
@@ -294,6 +299,7 @@
 - Active Phase: **Phase 1B**
 
 - Info Link: **[Santa Cruz COVID-19 Info](https://www.santacruzcountyaz.gov/732/COVID-19-Novel-Coronavirus)**
+- Registration Link: **[Santa Cruz County COVID-19 Vaccination Registration](https://survey123.arcgis.com/share/b0c6ce208fc94cf4a30b173810caab53)**
 
 
 
