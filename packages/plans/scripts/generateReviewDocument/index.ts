@@ -130,7 +130,7 @@ ${phasesToWrite
 		: ''
 
 	return `
-# ${region.name}
+# ${region.name} (${region.type})
 - Active Phase: **${phaseLabel}**\n
 ${infoLink}${workflowLink}${hotlineLink}${schedulingLink}${registrationLink}${providersLink}
 ${phaseData}
