@@ -7,9 +7,13 @@
 		"info": {
 			"text": "CDC/Washington/state_link",
 			"url": "https://www.doh.wa.gov/Emergencies/COVID19/vaccine"
+		},
+		"providers": {
+			"text": "c19.links/vax_providers",
+			"url": "https://www.doh.wa.gov/YouandYourFamily/Immunization/VaccineLocations"
 		}
 	},
-	"activePhase": "1a",
+	"activePhase": "1b_tier1",
 	"phases": [
 		{
 			"id": "1a",
@@ -19,6 +23,26 @@
 				},
 				{
 					"question": "c19.eligibility.question/long_term_care_resident"
+				}
+			]
+		},
+		{
+			"id": "1b_tier1",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/healthcare_worker"
+				},
+				{
+					"question": "c19.eligibility.question/long_term_care_resident"
+				},
+				{
+					"question": "c19.eligibility.question/essential_worker.1b"
+				},
+				{
+					"question": "c19.eligibility.question/age.65_up"
+				},
+				{
+					"question": "c19.eligibility.question/multigen.WA"
 				}
 			]
 		},
@@ -35,7 +59,7 @@
 					"question": "c19.eligibility.question/essential_worker.1b"
 				},
 				{
-					"question": "c19.eligibility.question/age.70_up"
+					"question": "c19.eligibility.question/age.65_up"
 				},
 				{
 					"question": "c19.eligibility.question/congregate"

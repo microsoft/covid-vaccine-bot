@@ -3,6 +3,10 @@
 		"info": {
 			"text": "CDC/Alaska/state_link",
 			"url": "http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/VaccineInfo.aspx"
+		},
+		"workflow": {
+			"text": "c19.links/vax_quiz",
+			"url": "https://survey123.arcgis.com/share/c0037dd8735d44cfbd53d192cb2ffed3?portalUrl=https://Alaska-DHSS.maps.arcgis.com"
 		}
 	},
 	"activePhase": "1b",
