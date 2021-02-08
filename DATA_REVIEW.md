@@ -130,7 +130,7 @@
 - Active Phase: **Prioritized Phase 1B**
 
 - Info Link: **[Arizona Department of Health Services](https://azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-vaccine)**
-- Scheduling Link: **[Arizona DHS Vaccine Patient Portal](https://podvaccine.azdhs.gov/)**
+- Scheduling Link: **[Schedule a Vaccination](https://podvaccine.azdhs.gov/)**
 
 ## Phases
 ### *Phase 1A* 
@@ -1163,6 +1163,7 @@
 
 - Info Link: **[Massachusetts Department of Public Health](https://www.mass.gov/info-details/massachusetts-covid-19-vaccine-information)**
 - Workflow Link: **[Massachusetts PhaseFinder](https://www.mass.gov/covid-19-vaccine)**
+- Providers Link: **[View vaccinating locations](https://www.mass.gov/info-details/covid-19-vaccination-locations)**
 
 ## Phases
 ### *Phase 1* 
@@ -1190,6 +1191,109 @@
 |c19.eligibility.moreinfo/congregate.MA|Examples of congregate care facilities include emergency shelter programs, domestic violence shelters, veterans' shelters, and private special education shools.|not defined|not defined|not defined|not defined|https://www.mass.gov/info-details/covid-19-vaccinations-for-congregate-care-settings
 |c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.moreinfo/age.75_up.MA|All individuals 75+ are eligible for the vaccine.|not defined|not defined|not defined|not defined|https://www.mass.gov/info-details/covid-19-vaccinations-for-people-ages-75-and-older 
+
+
+
+
+
+
+# Barnstable (county)
+- Active Phase: **Phase 2, Step 1**
+
+- Info Link: **[Barnstable County Vaccination Information](https://www.barnstablecountyhealth.org/vaccine-information)**
+- Registration Link: **[Barnstable County COVID-19 Vaccine Registration](https://www.barnstablecountyhealth.org/vaccine-registration)**
+
+
+
+
+# Berkshire (county)
+- Active Phase: **Phase 2, Step 1**
+
+- Info Link: **[Get Vaccinated Berkshires](https://www.getvaccinatedberkshires.org/)**
+- Scheduling Link: **[Schedule a Vaccination](https://www.maimmunizations.org/clinic/search?commit=Search&location=Pittsfield%2C%20MA%2001201%2C%20USA&q%5Bclinic_date_eq%5D=&q%5Bvaccinations_name_i_cont%5D=&q%5Bvenue_search_name_or_venue_name_i_cont%5D=&search_radius=50%20miles#search_results#search_results)**
+
+
+
+
+# Bristol (county)
+- Active Phase: **Phase 2, Step 1**
+
+
+
+
+
+# Dukes (county)
+- Active Phase: **Phase 2, Step 1**
+
+
+
+
+
+# Essex (county)
+- Active Phase: **Phase 2, Step 1**
+
+
+
+
+
+# Franklin (county)
+- Active Phase: **Phase 2, Step 1**
+
+
+
+
+
+# Hampden (county)
+- Active Phase: **Phase 2, Step 1**
+
+
+
+
+
+# Hampshire (county)
+- Active Phase: **Phase 2, Step 1**
+
+
+
+
+
+# Middlesex (county)
+- Active Phase: **Phase 2, Step 1**
+
+
+
+
+
+# Nantucket (county)
+- Active Phase: **Phase 2, Step 1**
+
+
+
+
+
+# Norfolk (county)
+- Active Phase: **Phase 2, Step 1**
+
+
+
+
+
+# Plymouth (county)
+- Active Phase: **Phase 2, Step 1**
+
+
+
+
+
+# Suffolk (county)
+- Active Phase: **Phase 2, Step 1**
+
+
+
+
+
+# Worcester (county)
+- Active Phase: **Phase 2, Step 1**
 
 
 
@@ -2651,6 +2755,8 @@
 |c19.moreinfo/lookup|Let me see if I can find more details on the question: $QUESTION|not defined|not defined|not defined|not defined|none
 |c19.moreinfo/no_info_available|Unfortunately, I don't have any more details on that yet. Try checking your state's COVID-19 info site at $INFO_LINK|not defined|not defined|not defined|not defined|none
 |c19.safety/cdc_link|You can find more information about the safety of the COVID-19 vaccine at the [CDC's Website](https://www.cdc.gov/coronavirus/2019-ncov/vaccines/safety.html)|not defined|not defined|not defined|not defined|none
+|c19.links/schedule_vax|Schedule a Vaccination|not defined|not defined|not defined|not defined|none
+|c19.links/vax_providers|View vaccinating locations|not defined|not defined|not defined|not defined|none
 |c19.link/scheduling.phone.AL|1-855-566-5333|not defined|not defined|not defined|not defined|none
 |c19.link/scheduling.phone.description.AL|COVID-19 Scheduling Hotline|not defined|not defined|not defined|not defined|none
 |c19.links/info.AZ.Maricopa|Maricopa County COVID-19 Site|not defined|not defined|not defined|not defined|none
@@ -2677,6 +2783,9 @@
 |c19.links/hotline.AZ.Yavapai|Yavapai County COVID-19 Hotline|not defined|not defined|not defined|not defined|none
 |c19.links/info.AZ.Yuma|Yuma County COVID-19 Vaccination Info|not defined|not defined|not defined|not defined|none
 |c19.links/workflow.MA|Massachusetts PhaseFinder|not defined|not defined|not defined|not defined|none
+|c19.links/info.MA.Barnstable|Barnstable County Vaccination Information|not defined|not defined|not defined|not defined|none
+|c19.links/registration.MA.Barnstable|Barnstable County COVID-19 Vaccine Registration|not defined|not defined|not defined|not defined|none
+|c19.links/info.MA.Berkshire|Get Vaccinated Berkshires|not defined|not defined|not defined|not defined|none
 |c19.links/workflow.WA|Washington State PhaseFinder|not defined|not defined|not defined|not defined|none
 
 	
