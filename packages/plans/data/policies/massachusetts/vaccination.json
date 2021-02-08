@@ -5,7 +5,7 @@
 			"url": "https://www.mass.gov/info-details/massachusetts-covid-19-vaccine-information"
 		},
 		"workflow": {
-			"text": "c19.links/workflow.MA",
+			"text": "c19.links/vax_quiz",
 			"url": "https://www.mass.gov/covid-19-vaccine"
 		},
 		"providers": {
