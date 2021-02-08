@@ -50,6 +50,7 @@
 - Active Phase: **Phase 1B**
 
 - Info Link: **[Alaska Department of Health and Social Services](http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/VaccineInfo.aspx)**
+- Workflow Link: **[Vaccine Eligibility Questionnaire](https://survey123.arcgis.com/share/c0037dd8735d44cfbd53d192cb2ffed3?portalUrl=https://Alaska-DHSS.maps.arcgis.com)**
 
 ## Phases
 ### *Phase 1A* 
@@ -79,6 +80,15 @@
 |c19.eligibility.question/congregate|Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/unserved.1c.AK|Are you age 16+ and a member of an unserved community?|not defined|not defined|not defined|not defined|n/a 
 
+
+
+
+
+
+# Anchorage (county)
+- Active Phase: **Phase 1B**
+
+- Info Link: **[Anchorage COVID-19 Vaccination](https://anchoragecovidvaccine.org/)**
 
 
 
@@ -1162,8 +1172,8 @@
 - Active Phase: **Phase 2, Step 1**
 
 - Info Link: **[Massachusetts Department of Public Health](https://www.mass.gov/info-details/massachusetts-covid-19-vaccine-information)**
-- Workflow Link: **[Massachusetts PhaseFinder](https://www.mass.gov/covid-19-vaccine)**
-- Providers Link: **[View vaccinating locations](https://www.mass.gov/info-details/covid-19-vaccination-locations)**
+- Workflow Link: **[Vaccine Eligibility Questionnaire](https://www.mass.gov/covid-19-vaccine)**
+- Providers Link: **[View locations providing vaccines](https://www.mass.gov/info-details/covid-19-vaccination-locations)**
 
 ## Phases
 ### *Phase 1* 
@@ -2456,17 +2466,27 @@
 
 
 # Washington (state)
-- Active Phase: **Phase 1A**
+- Active Phase: **Phase 1B_TIER1**
 
 - Info Link: **[Washington State Department of Health](https://www.doh.wa.gov/Emergencies/COVID19/vaccine)**
 - Workflow Link: **[Washington State PhaseFinder](https://form.findyourphasewa.org/210118771253954)**
+- Providers Link: **[View locations providing vaccines](https://www.doh.wa.gov/YouandYourFamily/Immunization/VaccineLocations)**
 
 ## Phases
-### *Phase 1A* **(CURRENTLY ACTIVE)**
+### *Phase 1A* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
 |c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a 
+
+### *Phase 1B_TIER1* **(CURRENTLY ACTIVE)**
+| id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
+| --- | --- | --- | --- | --- | --- | --- |
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/multigen.WA|Are you age 50+ in a multi-generational household?|not defined|not defined|not defined|not defined|n/a 
 
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
@@ -2474,7 +2494,7 @@
 |c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/long_term_care_resident|Are you a long-term care resident?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
-|c19.eligibility.question/age.70_up|Are you age 70+?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/congregate|Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/congregate_services.WA|Do you experience homelessness and access services or live in a congregate setting such as a shelter or temporary housing?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/congregate_worker.WA|Do you work in a congregate setting such as a group home|not defined|not defined|not defined|not defined|n/a
@@ -2494,6 +2514,23 @@
 |c19.eligibility.question/congregate_worker.WA|Do you work in a congregate setting such as a group home|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/multigen.WA|Are you age 50+ in a multi-generational household?|not defined|not defined|not defined|not defined|n/a 
 
+
+
+
+
+
+# King (county)
+- Active Phase: **Phase 1B_TIER1**
+
+- Info Link: **[Vaccine Information Pgae](https://kingcounty.gov/depts/health/covid-19/vaccine/distribution.aspx)**
+
+
+
+
+# Kitsap (county)
+- Active Phase: **Phase 1B_TIER1**
+
+- Info Link: **[Vaccine Information Pgae](https://kitsappublichealth.org/CommunityHealth/CoronaVirus_Vaccine.php)**
 
 
 
@@ -2756,9 +2793,12 @@
 |c19.moreinfo/no_info_available|Unfortunately, I don't have any more details on that yet. Try checking your state's COVID-19 info site at $INFO_LINK|not defined|not defined|not defined|not defined|none
 |c19.safety/cdc_link|You can find more information about the safety of the COVID-19 vaccine at the [CDC's Website](https://www.cdc.gov/coronavirus/2019-ncov/vaccines/safety.html)|not defined|not defined|not defined|not defined|none
 |c19.links/schedule_vax|Schedule a Vaccination|not defined|not defined|not defined|not defined|none
-|c19.links/vax_providers|View vaccinating locations|not defined|not defined|not defined|not defined|none
+|c19.links/vax_providers|View locations providing vaccines|not defined|not defined|not defined|not defined|none
+|c19.links/vax_quiz|Vaccine Eligibility Questionnaire|not defined|not defined|not defined|not defined|none
+|c19.links/vax_info|Vaccine Information Pgae|not defined|not defined|not defined|not defined|none
 |c19.link/scheduling.phone.AL|1-855-566-5333|not defined|not defined|not defined|not defined|none
 |c19.link/scheduling.phone.description.AL|COVID-19 Scheduling Hotline|not defined|not defined|not defined|not defined|none
+|c19.links/info.AK|Anchorage COVID-19 Vaccination|not defined|not defined|not defined|not defined|none
 |c19.links/info.AZ.Maricopa|Maricopa County COVID-19 Site|not defined|not defined|not defined|not defined|none
 |c19.links/registration.AZ|Arizona DHS Vaccine Patient Portal|not defined|not defined|not defined|not defined|none
 |c19.links/info.AZ.ApacheNavajo|Apache and Navajo County COVID-19 Info|not defined|not defined|not defined|not defined|none
