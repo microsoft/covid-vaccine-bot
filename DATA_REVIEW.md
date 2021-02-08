@@ -5,7 +5,7 @@
 -->
 
 
-# Alabama
+# Alabama (state)
 - Active Phase: **Phase 1A**
 
 - Info Link: **[Alabama Department of Public Health](https://www.alabamapublichealth.gov/covid19/vaccine.html)**
@@ -46,7 +46,7 @@
 
 
 
-# Alaska
+# Alaska (state)
 - Active Phase: **Phase 1B**
 
 - Info Link: **[Alaska Department of Health and Social Services](http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/VaccineInfo.aspx)**
@@ -88,7 +88,7 @@
 
 
 
-# American Samoa
+# American Samoa (territory)
 - Active Phase: **Phase 1A**
 
 - Info Link: **[American Samoa Government Department of Human and Social Services](https://www.americansamoa.gov/)**
@@ -126,10 +126,11 @@
 
 
 
-# Arizona
+# Arizona (state)
 - Active Phase: **Prioritized Phase 1B**
 
 - Info Link: **[Arizona Department of Health Services](https://azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-vaccine)**
+- Scheduling Link: **[Schedule a Vaccination](https://podvaccine.azdhs.gov/)**
 
 ## Phases
 ### *Phase 1A* 
@@ -149,11 +150,36 @@
 |c19.eligibility.question/proctective_services_worker.AZ|Are you a protective services worker?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a 
 
+### *Prioritized Phase 1B* 
+| id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
+| --- | --- | --- | --- | --- | --- | --- |
+|c19.eligibility.question/healthcare_worker.AZ|Are you a healthcare or healthcare support worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident.AZ|Are you a long-term care resident, or do you work in a long-term care facility?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/ems_worker.AZ|Are you an emergency medical services worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/education_childcare_worker.AZ|Are you an education or child-care worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/proctective_services_worker.AZ|Are you a protective services worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.70_up|Are you age 70+?|not defined|not defined|not defined|not defined|n/a 
+
+### *Prioritized Phase 1B* 
+| id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
+| --- | --- | --- | --- | --- | --- | --- |
+|c19.eligibility.question/healthcare_worker.AZ|Are you a healthcare or healthcare support worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident.AZ|Are you a long-term care resident, or do you work in a long-term care facility?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/ems_worker.AZ|Are you an emergency medical services worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/education_childcare_worker.AZ|Are you an education or child-care worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/proctective_services_worker.AZ|Are you a protective services worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a 
+
 ### *Phase 1B* 
 | id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
 | --- | --- | --- | --- | --- | --- | --- |
-|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/healthcare_worker.AZ|Are you a healthcare or healthcare support worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/long_term_care_resident.AZ|Are you a long-term care resident, or do you work in a long-term care facility?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/ems_worker.AZ|Are you an emergency medical services worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/education_childcare_worker.AZ|Are you an education or child-care worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/proctective_services_worker.AZ|Are you a protective services worker?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/age.65_up|Are you age 65+?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.question/essential_worker.1b|Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.question/congregate.AZ|Do you live with high-risk conditions in a congregate setting?|not defined|not defined|not defined|not defined|n/a 
 
 ### *Phase 1C* 
@@ -169,30 +195,128 @@
 
 
 
-# Apache
+# Apache (county)
 - Active Phase: **Phase 1B**
 
+- Info Link: **[Apache and Navajo County COVID-19 Info](https://311info.net/covid-19/)**
 
 
 
 
-# La Paz
+# Cochise (county)
+- Active Phase: **Prioritized Phase 1B**
+
+- Info Link: **[Cochise County COVID-19 Vaccination Info](https://covid-cochisehealth.hub.arcgis.com/pages/vaccines)**
+
+
+
+
+# Coconino (county)
+- Active Phase: **Prioritized Phase 1B**
+
+- Info Link: **[Coconino County COVID-19 Vaccine Info](https://www.coconino.az.gov/covid19vaccine)**
+
+
+
+
+# Gila (county)
+- Active Phase: **Prioritized Phase 1B**
+
+- Info Link: **[Gila County COVID-19 Info](https://www.gilacountyaz.gov/government/health_and_emergency_services/health_services/vaccination_information.php)**
+
+
+
+
+# Graham (county)
+- Active Phase: **Prioritized Phase 1B**
+
+- Info Link: **[Graham County COVID-19 Vaccination Info](https://www.graham.az.gov/AlertCenter.aspx?AID=Graham-County-COVID19-Vaccine-Informatio-11)**
+- Registration Link: **[Graham County COVID-19 Vaccination Registration](https://www.graham.az.gov/FormCenter/COVID19-21/COVID19-Vaccine-Registration-Form-76)**
+
+
+
+
+# Greenlee (county)
+- Active Phase: **Prioritized Phase 1B**
+
+- Info Link: **[Greenlee County Health & County Services](https://greenlee.az.gov/departments/health-county-services/)**
+- Registration Link: **[Greenlee County Vaccination Registration](https://www.gilahealth.com/covid-19/covid-19-vaccine)**
+
+
+
+
+# La Paz (county)
 - Active Phase: **Phase 1B**
 
+- Info Link: **[La Paz County Health Department](https://www.lpchd.com/)**
+- Scheduling Hotline: **[La Paz County Vaccination Hotline](tel:928-503-5763) description=928-503-5763 & 928-502-0773**
 
 
 
 
-# Navajo
+# Maricopa (county)
+- Active Phase: **Prioritized Phase 1B**
+
+- Info Link: **[Maricopa County COVID-19 Site](https://www.maricopa.gov/5641/COVID-19-Vaccine)**
+
+
+
+
+# Mojave (county)
+- Active Phase: **Prioritized Phase 1B**
+
+- Info Link: **[Mojave County COVID-19 Vaccine Statu](https://covid-19-vaccine-mohave.hub.arcgis.com/)**
+- Providers Link: **[Mojave County Vaccination Providers](https://www.mohavecounty.us/ContentPage.aspx?id=127&cid=1444&page=2&rid=2230)**
+
+
+
+
+# Navajo (county)
 - Active Phase: **Phase 1B**
 
+- Info Link: **[Apache and Navajo County COVID-19 Info](https://311info.net/covid-19/)**
 
 
 
 
-# Santa Cruz
+# Pima (county)
+- Active Phase: **Prioritized Phase 1B**
+
+- Info Link: **[Pima County COVID-19 Vaccine Info & Distribution](https://webcms.pima.gov/cms/One.aspx?portalId=169&pageId=669257)**
+- Registration Link: **[Pima County COVID-19 Vaccination Registration](https://webcms.pima.gov/cms/One.aspx?portalId=169&pageId=690372)**
+
+
+
+
+# Pinal (county)
+- Active Phase: **Prioritized Phase 1B**
+
+
+
+
+
+# Santa Cruz (county)
 - Active Phase: **Phase 1B**
 
+- Info Link: **[Santa Cruz COVID-19 Info](https://www.santacruzcountyaz.gov/732/COVID-19-Novel-Coronavirus)**
+- Registration Link: **[Santa Cruz County COVID-19 Vaccination Registration](https://survey123.arcgis.com/share/b0c6ce208fc94cf4a30b173810caab53)**
+
+
+
+
+# Yavapai (county)
+- Active Phase: **Prioritized Phase 1B**
+
+- Info Link: **[Yavapai County COVID-19 Vaccine Status](https://www.yavapai.us/chs/Home/COVID-19/Vaccine)**
+- Scheduling Hotline: **[Yavapai County COVID-19 Hotline](tel:928-442-5103)**
+
+
+
+
+# Yuma (county)
+- Active Phase: **Prioritized Phase 1B**
+
+- Info Link: **[Yuma County COVID-19 Vaccination Info](https://www.yumacountyaz.gov/government/health-district/divisions/emergency-preparedness-program/coronavirus-2019-covid-19-yuma-county-updates/covid-19-vaccine-information/who-can-get-vaccinated-and-when)**
 
 
 
@@ -202,7 +326,7 @@
 
 
 
-# Arkansas
+# Arkansas (state)
 - Active Phase: **Phase 1A**
 
 - Info Link: **[Arkansas Department of Health](https://www.healthy.arkansas.gov/programs-services/topics/covid-19-vaccination-plan)**
@@ -242,7 +366,7 @@
 
 
 
-# California
+# California (state)
 - Active Phase: **Phase 1A**
 
 - Info Link: **[California Department of Public Health](https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/COVID-19/COVID-19Vaccine.aspx)**
@@ -282,7 +406,7 @@
 
 
 
-# Colorado
+# Colorado (state)
 - Active Phase: **Phase 1B**
 
 - Info Link: **[Colorado Department of Public Health and Environment](https://covid19.colorado.gov/vaccine)**
@@ -320,7 +444,7 @@
 
 
 
-# Connecticut
+# Connecticut (state)
 - Active Phase: **Phase 1A**
 
 - Info Link: **[Connecticut State Department of Public Health](https://portal.ct.gov/Coronavirus/covid-19%20vaccinations)**
@@ -360,7 +484,7 @@
 
 
 
-# Delaware
+# Delaware (state)
 - Active Phase: **Phase 1A**
 
 - Info Link: **[Delaware Division of Public Health](https://coronavirus.delaware.gov/vaccine/)**
@@ -399,7 +523,7 @@
 
 
 
-# District of Columbia
+# District of Columbia (territory)
 - Active Phase: **Phase 1B**
 
 - Info Link: **[District of Columbia Department of Health](https://coronavirus.dc.gov/vaccine)**
@@ -442,7 +566,7 @@
 
 
 
-# Federated States of Micronesia
+# Federated States of Micronesia (territory)
 - Active Phase: **Phase 1A**
 
 - Info Link: **[Federated States of Micronesia National Government, Department of Health and Social Affairs](https://www.fsmgov.org/index.html)**
@@ -480,7 +604,7 @@
 
 
 
-# Florida
+# Florida (state)
 - Active Phase: **Phase 1A**
 
 - Info Link: **[Florida Department of Health](https://floridahealthcovid19.gov/covid-19-vaccines-in-florida/)**
@@ -521,7 +645,7 @@
 
 
 
-# Georgia
+# Georgia (state)
 - Active Phase: **Phase 1A**
 
 - Info Link: **[Georgia Department of Public Health](https://dph.georgia.gov/covid-vaccine)**
@@ -564,7 +688,7 @@
 
 
 
-# Guam
+# Guam (territory)
 - Active Phase: **Phase 1A**
 
 - Info Link: **[Guam Department of Public Health and Social Services, Division of Public Health](https://dphss.guam.gov/)**
@@ -602,7 +726,7 @@
 
 
 
-# Hawaii
+# Hawaii (state)
 - Active Phase: **Phase 1A**
 
 - Info Link: **[Hawaii State Department of Health](https://hawaiicovid19.com/vaccine/)**
@@ -640,7 +764,7 @@
 
 
 
-# Idaho
+# Idaho (state)
 - Active Phase: **Phase 1A**
 
 - Info Link: **[Idaho Department of Health and Welfare](https://coronavirus.idaho.gov/covid-19-vaccine/)**
@@ -678,7 +802,7 @@
 
 
 
-# Illinois
+# Illinois (state)
 - Active Phase: **Phase 1A**
 
 - Info Link: **[Illinois Department of Public Health](https://www.dph.illinois.gov/covid19/vaccine-faq)**
@@ -718,7 +842,7 @@
 
 
 
-# Indiana
+# Indiana (state)
 - Active Phase: **Phase 1B**
 
 - Info Link: **[Indiana State Department of Health](https://www.coronavirus.in.gov/vaccine/index.htm)**
@@ -758,7 +882,7 @@
 
 
 
-# Iowa
+# Iowa (state)
 - Active Phase: **Phase 1A**
 
 - Info Link: **[Iowa Department of Public Health](https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus/Vaccine)**
@@ -796,7 +920,7 @@
 
 
 
-# Kansas
+# Kansas (state)
 - Active Phase: **Phase 1A**
 
 - Info Link: **[Kansas Department of Health and Environment](https://www.kansasvaccine.gov/)**
@@ -836,7 +960,7 @@
 
 
 
-# Kentucky
+# Kentucky (state)
 - Active Phase: **Phase 1A**
 
 - Info Link: **[Kentucky Department for Public Health](https://govstatus.egov.com/ky-covid-vaccine)**
@@ -874,7 +998,7 @@
 
 
 
-# Louisiana
+# Louisiana (state)
 - Active Phase: **Phase 1B**
 
 - Info Link: **[Louisiana Department of Health](https://ldh.la.gov/index.cfm/page/4042)**
@@ -912,7 +1036,7 @@
 
 
 
-# Maine
+# Maine (state)
 - Active Phase: **Phase 1A**
 
 - Info Link: **[Maine Department of Health and Human Services](https://www.maine.gov/covid19/vaccines)**
@@ -950,7 +1074,7 @@
 
 
 
-# Marshall Islands
+# Marshall Islands (territory)
 - Active Phase: **Phase 1A**
 
 - Info Link: **[Republic of the Marshall Islands Ministry of Health and Human Services](http://rmihealth.org/)**
@@ -988,7 +1112,7 @@
 
 
 
-# Maryland
+# Maryland (state)
 - Active Phase: **Phase 1A**
 
 - Info Link: **[Maryland Department of Health](https://covidlink.maryland.gov/content/vaccine/)**
@@ -1034,11 +1158,12 @@
 
 
 
-# Massachusetts
+# Massachusetts (state)
 - Active Phase: **Phase 2, Step 1**
 
 - Info Link: **[Massachusetts Department of Public Health](https://www.mass.gov/info-details/massachusetts-covid-19-vaccine-information)**
 - Workflow Link: **[Massachusetts PhaseFinder](https://www.mass.gov/covid-19-vaccine)**
+- Providers Link: **[View vaccinating locations](https://www.mass.gov/info-details/covid-19-vaccination-locations)**
 
 ## Phases
 ### *Phase 1* 
@@ -1072,11 +1197,114 @@
 
 
 
+# Barnstable (county)
+- Active Phase: **Phase 2, Step 1**
+
+- Info Link: **[Barnstable County Vaccination Information](https://www.barnstablecountyhealth.org/vaccine-information)**
+- Registration Link: **[Barnstable County COVID-19 Vaccine Registration](https://www.barnstablecountyhealth.org/vaccine-registration)**
 
 
 
 
-# Michigan
+# Berkshire (county)
+- Active Phase: **Phase 2, Step 1**
+
+- Info Link: **[Get Vaccinated Berkshires](https://www.getvaccinatedberkshires.org/)**
+- Scheduling Link: **[Schedule a Vaccination](https://www.maimmunizations.org/clinic/search?commit=Search&location=Pittsfield%2C%20MA%2001201%2C%20USA&q%5Bclinic_date_eq%5D=&q%5Bvaccinations_name_i_cont%5D=&q%5Bvenue_search_name_or_venue_name_i_cont%5D=&search_radius=50%20miles#search_results#search_results)**
+
+
+
+
+# Bristol (county)
+- Active Phase: **Phase 2, Step 1**
+
+
+
+
+
+# Dukes (county)
+- Active Phase: **Phase 2, Step 1**
+
+
+
+
+
+# Essex (county)
+- Active Phase: **Phase 2, Step 1**
+
+
+
+
+
+# Franklin (county)
+- Active Phase: **Phase 2, Step 1**
+
+
+
+
+
+# Hampden (county)
+- Active Phase: **Phase 2, Step 1**
+
+
+
+
+
+# Hampshire (county)
+- Active Phase: **Phase 2, Step 1**
+
+
+
+
+
+# Middlesex (county)
+- Active Phase: **Phase 2, Step 1**
+
+
+
+
+
+# Nantucket (county)
+- Active Phase: **Phase 2, Step 1**
+
+
+
+
+
+# Norfolk (county)
+- Active Phase: **Phase 2, Step 1**
+
+
+
+
+
+# Plymouth (county)
+- Active Phase: **Phase 2, Step 1**
+
+
+
+
+
+# Suffolk (county)
+- Active Phase: **Phase 2, Step 1**
+
+
+
+
+
+# Worcester (county)
+- Active Phase: **Phase 2, Step 1**
+
+
+
+
+
+
+
+
+
+
+# Michigan (state)
 - Active Phase: **Phase 1B**
 
 - Info Link: **[Michigan Department of Health and Human Services](https://www.michigan.gov/coronavirus/0,9753,7-406-98178_103214---,00.html)**
@@ -1114,7 +1342,7 @@
 
 
 
-# Minnesota
+# Minnesota (state)
 - Active Phase: **Phase 1A**
 
 - Info Link: **[Minnesota Department of Health](https://www.health.state.mn.us/diseases/coronavirus/vaccine.html)**
@@ -1152,7 +1380,7 @@
 
 
 
-# Mississippi
+# Mississippi (state)
 - Active Phase: **Phase 1B**
 
 - Info Link: **[Mississippi State Department of Health](https://msdh.ms.gov/msdhsite/_static/14,0,420,976.html)**
@@ -1191,7 +1419,7 @@
 
 
 
-# Missouri
+# Missouri (state)
 - Active Phase: **Phase 1A**
 
 - Info Link: **[Missouri Department of Health and Senior Services](https://covidvaccine.mo.gov/residents/)**
@@ -1230,7 +1458,7 @@
 
 
 
-# Montana
+# Montana (state)
 - Active Phase: **Phase 1A**
 
 - Info Link: **[Montana Department of Public Health and Human Services](https://dphhs.mt.gov/publichealth/cdepi/diseases/coronavirusvaccine/loginstate.aspx)**
@@ -1273,7 +1501,7 @@
 
 
 
-# Nebraska
+# Nebraska (state)
 - Active Phase: **Phase 1A**
 
 - Info Link: **[Nebraska Department of Health and Human Services](http://dhhs.ne.gov/Pages/COVID-19-Vaccine-Information.aspx)**
@@ -1311,7 +1539,7 @@
 
 
 
-# Nevada
+# Nevada (state)
 - Active Phase: **Phase 1A**
 
 - Info Link: **[Nevada Division of Public and Behavioral Health](https://www.immunizenevada.org/nv-covid-fighter)**
@@ -1353,7 +1581,7 @@
 
 
 
-# New Hampshire
+# New Hampshire (state)
 - Active Phase: **Phase 1A**
 
 - Info Link: **[New Hampshire Department of Health and Human Services](https://www.nh.gov/covid19/resources-guidance/vaccination-planning.htm)**
@@ -1397,7 +1625,7 @@
 
 
 
-# New Jersey
+# New Jersey (state)
 - Active Phase: **Phase 1B**
 
 - Info Link: **[New Jersey Department of Health](https://www.nj.gov/health/cd/topics/covid2019_vaccination.shtml)**
@@ -1435,7 +1663,7 @@
 
 
 
-# New Mexico
+# New Mexico (state)
 - Active Phase: **Phase 1B**
 
 - Info Link: **[New Mexico Department of Health](https://cv.nmhealth.org/covid-vaccine/)**
@@ -1476,7 +1704,7 @@
 
 
 
-# New York
+# New York (state)
 - Active Phase: **Phase 1B**
 
 - Info Link: **[New York State Department of Health](https://covid19vaccine.health.ny.gov/)**
@@ -1514,7 +1742,7 @@
 
 
 
-# North Carolina
+# North Carolina (state)
 - Active Phase: **Phase 1A**
 
 - Info Link: **[North Carolina Department of Health and Human Services](https://covid19.ncdhhs.gov/vaccines)**
@@ -1553,7 +1781,7 @@
 
 
 
-# North Dakota
+# North Dakota (state)
 - Active Phase: **Phase 1A**
 
 - Info Link: **[North Dakota Department of Health](https://www.health.nd.gov/immunization-guidance-public)**
@@ -1594,7 +1822,7 @@
 
 
 
-# Northern Mariana Islands
+# Northern Mariana Islands (territory)
 - Active Phase: **Phase 1A**
 
 - Info Link: **[Commonwealth of the Northern Mariana Islands, Commonwealth Healthcare Corporation](https://www.vaccinatecnmi.com/)**
@@ -1632,7 +1860,7 @@
 
 
 
-# Ohio
+# Ohio (state)
 - Active Phase: **Phase 1A**
 
 - Info Link: **[Ohio Department of Health](https://coronavirus.ohio.gov/wps/portal/gov/covid-19/covid-19-vaccination-program)**
@@ -1673,7 +1901,7 @@
 
 
 
-# Oklahoma
+# Oklahoma (state)
 - Active Phase: **Phase 1A**
 
 - Info Link: **[Oklahoma State Department of Health](https://oklahoma.gov/covid19/vaccine-information.html)**
@@ -1714,7 +1942,7 @@
 
 
 
-# Oregon
+# Oregon (state)
 - Active Phase: **Phase 1A**
 
 - Info Link: **[Oregon Health Authority, Public Health Division](https://covidvaccine.oregon.gov/)**
@@ -1752,7 +1980,7 @@
 
 
 
-# Palau
+# Palau (territory)
 - Active Phase: **Phase 1A**
 
 - Info Link: **[Republic of Palau Ministry of Health](http://www.palauhealth.org/)**
@@ -1790,7 +2018,7 @@
 
 
 
-# Pennsylvania
+# Pennsylvania (state)
 - Active Phase: **Phase 1A**
 
 - Info Link: **[Pennsylvania Department of Health](https://www.health.pa.gov/topics/disease/coronavirus/Pages/Vaccine.aspx)**
@@ -1832,7 +2060,7 @@
 
 
 
-# Puerto Rico
+# Puerto Rico (territory)
 - Active Phase: **Phase 1A**
 
 - Info Link: **[Puerto Rico Department of Health (Departamento de Salud, Gobierno de Puerto Rico)  (en español)](http://www.salud.gov.pr/Pages/coronavirus.aspx)**
@@ -1870,7 +2098,7 @@
 
 
 
-# Rhode Island
+# Rhode Island (state)
 - Active Phase: **Phase 1A**
 
 - Info Link: **[Rhode Island Department of Health](https://covid.ri.gov/vaccination)**
@@ -1908,7 +2136,7 @@
 
 
 
-# South Carolina
+# South Carolina (state)
 - Active Phase: **Phase 1A**
 
 - Info Link: **[South Carolina Department of Health and Environmental Control](https://scdhec.gov/covid19/covid-19-vaccine)**
@@ -1946,7 +2174,7 @@
 
 
 
-# South Dakota
+# South Dakota (state)
 - Active Phase: **Phase 1A**
 
 - Info Link: **[South Dakota Department of Health](https://doh.sd.gov/COVID/Vaccine/default.aspx)**
@@ -1989,7 +2217,7 @@
 
 
 
-# Tennessee
+# Tennessee (state)
 - Active Phase: **Phase 1B**
 
 - Info Link: **[Tennessee Department of Health](https://www.tn.gov/health/cedep/ncov/covid-19-vaccine-information.html)**
@@ -2030,7 +2258,7 @@
 
 
 
-# Texas
+# Texas (state)
 - Active Phase: **Phase 1B**
 
 - Info Link: **[Texas Department of State Health Services](https://www.dshs.state.tx.us/coronavirus/immunize/vaccine.aspx)**
@@ -2069,7 +2297,7 @@
 
 
 
-# U.S. Virgin Islands
+# U.S. Virgin Islands (territory)
 - Active Phase: **Phase 1A**
 
 - Info Link: **[US Virgin Islands Department of Health](https://www.covid19usvi.com/)**
@@ -2107,7 +2335,7 @@
 
 
 
-# Utah
+# Utah (state)
 - Active Phase: **Phase 1A**
 
 - Info Link: **[Utah Department of Health](https://coronavirus.utah.gov/vaccine/)**
@@ -2149,7 +2377,7 @@
 
 
 
-# Vermont
+# Vermont (state)
 - Active Phase: **Phase 1A**
 
 - Info Link: **[Vermont Department of Health](https://www.healthvermont.gov/covid-19/vaccine)**
@@ -2187,7 +2415,7 @@
 
 
 
-# Virginia
+# Virginia (state)
 - Active Phase: **Phase 1A**
 
 - Info Link: **[Virginia Department of Health](https://www.vdh.virginia.gov/covid-19-vaccine/)**
@@ -2227,7 +2455,7 @@
 
 
 
-# Washington
+# Washington (state)
 - Active Phase: **Phase 1A**
 
 - Info Link: **[Washington State Department of Health](https://www.doh.wa.gov/Emergencies/COVID19/vaccine)**
@@ -2275,7 +2503,7 @@
 
 
 
-# West Virginia
+# West Virginia (state)
 - Active Phase: **Phase 1A**
 
 - Info Link: **[West Virginia Department of Health and Human Resources, Bureau for Public Health](https://dhhr.wv.gov/COVID-19/Pages/Vaccine.aspx)**
@@ -2314,7 +2542,7 @@
 
 
 
-# Wisconsin
+# Wisconsin (state)
 - Active Phase: **Phase 1A**
 
 - Info Link: **[Wisconsin Department of Health Services](https://www.dhs.wisconsin.gov/covid-19/vaccine.htm)**
@@ -2352,7 +2580,7 @@
 
 
 
-# Wyoming
+# Wyoming (state)
 - Active Phase: **Phase 1A**
 
 - Info Link: **[Wyoming Department of Health](https://health.wyo.gov/publichealth/immunization/wyoming-covid-19-vaccine-information/)**
@@ -2527,9 +2755,37 @@
 |c19.moreinfo/lookup|Let me see if I can find more details on the question: $QUESTION|not defined|not defined|not defined|not defined|none
 |c19.moreinfo/no_info_available|Unfortunately, I don't have any more details on that yet. Try checking your state's COVID-19 info site at $INFO_LINK|not defined|not defined|not defined|not defined|none
 |c19.safety/cdc_link|You can find more information about the safety of the COVID-19 vaccine at the [CDC's Website](https://www.cdc.gov/coronavirus/2019-ncov/vaccines/safety.html)|not defined|not defined|not defined|not defined|none
+|c19.links/schedule_vax|Schedule a Vaccination|not defined|not defined|not defined|not defined|none
+|c19.links/vax_providers|View vaccinating locations|not defined|not defined|not defined|not defined|none
 |c19.link/scheduling.phone.AL|1-855-566-5333|not defined|not defined|not defined|not defined|none
 |c19.link/scheduling.phone.description.AL|COVID-19 Scheduling Hotline|not defined|not defined|not defined|not defined|none
+|c19.links/info.AZ.Maricopa|Maricopa County COVID-19 Site|not defined|not defined|not defined|not defined|none
+|c19.links/registration.AZ|Arizona DHS Vaccine Patient Portal|not defined|not defined|not defined|not defined|none
+|c19.links/info.AZ.ApacheNavajo|Apache and Navajo County COVID-19 Info|not defined|not defined|not defined|not defined|none
+|c19.links/info.AZ.Cochise|Cochise County COVID-19 Vaccination Info|not defined|not defined|not defined|not defined|none
+|c19.links/info.AZ.Cococino|Coconino County COVID-19 Vaccine Info|not defined|not defined|not defined|not defined|none
+|c19.links/info.AZ.Gila|Gila County COVID-19 Info|not defined|not defined|not defined|not defined|none
+|c19.links/info.AZ.Graham|Graham County COVID-19 Vaccination Info|not defined|not defined|not defined|not defined|none
+|c19.links/registration.AZ.Graham|Graham County COVID-19 Vaccination Registration|not defined|not defined|not defined|not defined|none
+|c19.links/info.AZ.Greenlee|Greenlee County Health & County Services|not defined|not defined|not defined|not defined|none
+|c19.links/registration.AZ.Greenlee|Greenlee County Vaccination Registration|not defined|not defined|not defined|not defined|none
+|c19.links/info.AZ.LaPaz|La Paz County Health Department|not defined|not defined|not defined|not defined|none
+|c19.links/hotline.AZ.LaPaz.Text|La Paz County Vaccination Hotline|not defined|not defined|not defined|not defined|none
+|c19.links/hotline.AZ.LaPaz.Description|928-503-5763 & 928-502-0773|not defined|not defined|not defined|not defined|none
+|c19.links/info.AZ.Mojave|Mojave County COVID-19 Vaccine Statu|not defined|not defined|not defined|not defined|none
+|c19.links/providers.AZ.Mojave|Mojave County Vaccination Providers|not defined|not defined|not defined|not defined|none
+|c19.links/info.AZ.Pima|Pima County COVID-19 Vaccine Info & Distribution|not defined|not defined|not defined|not defined|none
+|c19.links/registration.AZ.Pima|Pima County COVID-19 Vaccination Registration|not defined|not defined|not defined|not defined|none
+|c19.links/providers.AZ.Pinal|Pinal County COVID-19 Providers|not defined|not defined|not defined|not defined|none
+|c19.links/info.AZ.SantaCruz|Santa Cruz COVID-19 Info|not defined|not defined|not defined|not defined|none
+|c19.links/registration.AZ.SantaCruz|Santa Cruz County COVID-19 Vaccination Registration|not defined|not defined|not defined|not defined|none
+|c19.links/info.AZ.Yavapai|Yavapai County COVID-19 Vaccine Status|not defined|not defined|not defined|not defined|none
+|c19.links/hotline.AZ.Yavapai|Yavapai County COVID-19 Hotline|not defined|not defined|not defined|not defined|none
+|c19.links/info.AZ.Yuma|Yuma County COVID-19 Vaccination Info|not defined|not defined|not defined|not defined|none
 |c19.links/workflow.MA|Massachusetts PhaseFinder|not defined|not defined|not defined|not defined|none
+|c19.links/info.MA.Barnstable|Barnstable County Vaccination Information|not defined|not defined|not defined|not defined|none
+|c19.links/registration.MA.Barnstable|Barnstable County COVID-19 Vaccine Registration|not defined|not defined|not defined|not defined|none
+|c19.links/info.MA.Berkshire|Get Vaccinated Berkshires|not defined|not defined|not defined|not defined|none
 |c19.links/workflow.WA|Washington State PhaseFinder|not defined|not defined|not defined|not defined|none
 
 	

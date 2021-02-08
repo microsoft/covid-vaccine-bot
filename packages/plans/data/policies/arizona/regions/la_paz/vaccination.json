@@ -1,3 +1,14 @@
 {
-	"activePhase": "1b"
+	"activePhase": "1b",
+	"links": {
+		"info": {
+			"text": "c19.links/info.AZ.LaPaz",
+			"url": "https://www.lpchd.com/"
+		},
+		"scheduling_phone": {
+			"url": "tel:928-503-5763",
+			"description": "c19.links/hotline.AZ.LaPaz.Description",
+			"text": "c19.links/hotline.AZ.LaPaz.Text"
+		}
+	}
 }

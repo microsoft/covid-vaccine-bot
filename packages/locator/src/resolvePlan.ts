@@ -33,7 +33,7 @@ function resolvePlanInState(
 		currentActivePhaseLabel,
 		currentPhases
 	)
-	let currentLinks = stateRegion.plan?.links ?? {}
+	const currentLinks = { ...(stateRegion.plan?.links || {}) }
 	const regionalHierarchy: PlanRegion[] = [
 		{
 			id: region.id,
@@ -73,7 +73,7 @@ function resolvePlanInState(
 				currentActivePhaseLabel,
 				currentPhases
 			)
-			currentLinks = region.plan?.links ?? currentLinks
+			Object.assign(currentLinks, region.plan?.links || {})
 			if (matchingRegion.regions != null) {
 				regionsStack.push(matchingRegion.regions)
 			}

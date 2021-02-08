@@ -7,6 +7,10 @@
 		"workflow": {
 			"text": "c19.links/workflow.MA",
 			"url": "https://www.mass.gov/covid-19-vaccine"
+		},
+		"providers": {
+			"text": "c19.links/vax_providers",
+			"url": "https://www.mass.gov/info-details/covid-19-vaccination-locations"
 		}
 	},
 	"activePhase": "2step1",

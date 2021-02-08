@@ -3,9 +3,13 @@
 		"info": {
 			"text": "CDC/Arizona/state_link",
 			"url": "https://azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-vaccine"
+		},
+		"scheduling": {
+			"text": "c19.links/schedule_vax",
+			"url": "https://podvaccine.azdhs.gov/"
 		}
 	},
-	"activePhase": "1b_prioritized",
+	"activePhase": "1b_prioritized_75",
 	"phases": [
 		{
 			"id": "1a",
@@ -22,7 +26,55 @@
 			]
 		},
 		{
-			"id": "1b_prioritized",
+			"id": "1b_prioritized_75",
+			"label": "Prioritized Phase 1B",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/healthcare_worker.AZ"
+				},
+				{
+					"question": "c19.eligibility.question/long_term_care_resident.AZ"
+				},
+				{
+					"question": "c19.eligibility.question/ems_worker.AZ"
+				},
+				{
+					"question": "c19.eligibility.question/education_childcare_worker.AZ"
+				},
+				{
+					"question": "c19.eligibility.question/proctective_services_worker.AZ"
+				},
+				{
+					"question": "c19.eligibility.question/age.65_up"
+				}
+			]
+		},
+		{
+			"id": "1b_prioritized_70",
+			"label": "Prioritized Phase 1B",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/healthcare_worker.AZ"
+				},
+				{
+					"question": "c19.eligibility.question/long_term_care_resident.AZ"
+				},
+				{
+					"question": "c19.eligibility.question/ems_worker.AZ"
+				},
+				{
+					"question": "c19.eligibility.question/education_childcare_worker.AZ"
+				},
+				{
+					"question": "c19.eligibility.question/proctective_services_worker.AZ"
+				},
+				{
+					"question": "c19.eligibility.question/age.70_up"
+				}
+			]
+		},
+		{
+			"id": "1b_prioritized_65",
 			"label": "Prioritized Phase 1B",
 			"qualifications": [
 				{
@@ -49,10 +101,25 @@
 			"id": "1b",
 			"qualifications": [
 				{
-					"question": "c19.eligibility.question/essential_worker.1b"
+					"question": "c19.eligibility.question/healthcare_worker.AZ"
+				},
+				{
+					"question": "c19.eligibility.question/long_term_care_resident.AZ"
+				},
+				{
+					"question": "c19.eligibility.question/ems_worker.AZ"
+				},
+				{
+					"question": "c19.eligibility.question/education_childcare_worker.AZ"
+				},
+				{
+					"question": "c19.eligibility.question/proctective_services_worker.AZ"
 				},
 				{
 					"question": "c19.eligibility.question/age.65_up"
+				},
+				{
+					"question": "c19.eligibility.question/essential_worker.1b"
 				},
 				{
 					"question": "c19.eligibility.question/congregate.AZ"

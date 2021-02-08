@@ -3,5 +3,8 @@
 	"name": "Navajo",
 	"code_alpha": "AZ",
 	"code_numeric": 4,
-	"type": "county"
+	"type": "county",
+	"metadata": {
+		"id_bing": "Navajo"
+	}
 }

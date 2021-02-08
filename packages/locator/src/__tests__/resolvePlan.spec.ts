@@ -23,8 +23,8 @@ describe('The Plan Locator', () => {
 		const plan = resolvePlan(location, statesData as Region[])
 		expect(plan).toBeDefined()
 		expect(plan.phase).toBeDefined()
-		expect(plan.phase.id).toBeDefined()
-		expect(plan.phase?.qualifications.length > 0).toBeTruthy()
+		expect(plan.phase?.id).toBeDefined()
+		expect(plan.phase?.qualifications).not.toHaveLength(0)
 	})
 
 	it('can look up a plan in MA', () => {
@@ -39,7 +39,108 @@ describe('The Plan Locator', () => {
 		const plan = resolvePlan(location, statesData as Region[])
 		expect(plan).toBeDefined()
 		expect(plan.phase).toBeDefined()
-		expect(plan.phase.id).toBeDefined()
-		expect(plan.phase?.qualifications.length > 0).toBeTruthy()
+		expect(plan.phase?.id).toBeDefined()
+		expect(plan.phase?.qualifications).not.toHaveLength(0)
+	})
+
+	it('can look up an overridden link with parent scope still available', () => {
+		const regions: Region[] = [
+			{
+				id: 'arizona',
+				name: 'Arizona',
+				type: 'state',
+				metadata: {
+					code_alpha: 'AZ',
+				},
+				plan: {
+					links: {
+						info: {
+							text: 'INF',
+							url: 'INF_URL',
+						},
+						scheduling: {
+							text: 'SCHED',
+							url: 'SCHED_URL',
+						},
+					},
+					activePhase: 'phase_1a',
+					phases: [
+						{ id: 'phase_1a', qualifications: [{ question: 'q1' }] },
+						{ id: 'phase_1b', qualifications: [{ question: 'q1' }] },
+						{ id: 'phase_1c', qualifications: [{ question: 'q1' }] },
+					],
+				},
+				regions: [
+					{
+						id: 'maricopa',
+						name: 'Maricopa',
+						type: 'county',
+						metadata: {
+							id_bing: 'Maricopa',
+						},
+						plan: {
+							activePhase: 'phase_1b',
+							links: {
+								// override info link in county
+								info: {
+									text: 'INF_MC',
+									url: 'INF_MC_URL',
+								},
+							},
+						},
+					},
+				],
+			},
+		]
+		const plan = resolvePlan(
+			({
+				adminDistrict: 'AZ',
+				adminDistrict2: 'Maricopa',
+			} as any) as BingLocation,
+			regions
+		)
+		expect(plan).toBeDefined()
+		expect(plan.links.info).toBeDefined()
+		expect(plan.phase?.id).toEqual('phase_1b')
+		expect(plan.links.info?.text).toEqual('INF_MC')
+		expect(plan.links.info?.url).toEqual('INF_MC_URL')
+		expect(plan.links.scheduling?.text).toEqual('SCHED')
+		expect(plan.links.scheduling?.url).toEqual('SCHED_URL')
+	})
+
+	it('will use parent phase if no child phase is set', () => {
+		const regions: Region[] = [
+			{
+				id: 'arizona',
+				name: 'Arizona',
+				type: 'state',
+				metadata: {
+					code_alpha: 'AZ',
+				},
+				plan: {
+					activePhase: 'phase_1a',
+					phases: [{ id: 'phase_1a', qualifications: [{ question: 'q1' }] }],
+				},
+				regions: [
+					{
+						id: 'maricopa',
+						name: 'Maricopa',
+						type: 'county',
+						metadata: {
+							id_bing: 'Maricopa',
+						},
+					},
+				],
+			},
+		]
+		const plan = resolvePlan(
+			({
+				adminDistrict: 'AZ',
+				adminDistrict2: 'Maricopa',
+			} as any) as BingLocation,
+			regions
+		)
+		expect(plan).toBeDefined()
+		expect(plan.phase?.id).toEqual('phase_1a')
 	})
 })

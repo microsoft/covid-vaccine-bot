@@ -50,9 +50,34 @@ export interface VaccinationPlan {
 	 * Informational links about the vaccination plan
 	 */
 	links?: {
+		/**
+		 * General information link for the region
+		 */
 		info?: Link
+		/**
+		 * A link to an eligibility workflow tool
+		 */
 		workflow?: Link
+		/**
+		 * A scheduling hotline
+		 */
 		scheduling_phone?: Link
+		/**
+		 * A site where a user can self-service schedule themselves
+		 * for a vaccination
+		 */
+		scheduling?: Link
+		/**
+		 * A site where a user can submit a registration form so
+		 * that the region can follow up with them to schedule an
+		 * appointment
+		 */
+		registration?: Link
+		/**
+		 * A site where a user can view a list of scheduling providers
+		 * and locations
+		 */
+		providers?: Link
 	}
 
 	activePhase?: string
