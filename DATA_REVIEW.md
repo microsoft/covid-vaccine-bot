@@ -1202,6 +1202,21 @@
 |c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a
 |c19.eligibility.moreinfo/age.75_up.MA|All individuals 75+ are eligible for the vaccine.|not defined|not defined|not defined|not defined|https://www.mass.gov/info-details/covid-19-vaccinations-for-people-ages-75-and-older 
 
+### *Phase 2, Step 1* 
+| id | en-us | es-us | zh-cn | ko-kr | vi-vn | other info |
+| --- | --- | --- | --- | --- | --- | --- |
+|c19.eligibility.question/healthcare_worker|Are you a healthcare worker?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.moreinfo/healthcare_worker.MA|All healthcare workers are eligible to receive the vaccine.|not defined|not defined|not defined|not defined|https://www.mass.gov/info-details/covid-19-vaccinations-for-health-care-workers
+|c19.eligibility.question/long_term_care_resident_or_worker.MA|Do you live or work in a long-term care facility?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.moreinfo/long_term_care_resident_or_worker.MA|Examples of this include: skilled nursing facilities, assisted living residences, and rest homes.|not defined|not defined|not defined|not defined|https://www.mass.gov/info-details/massachusetts-covid-19-vaccination-phases#phase-1-
+|c19.eligibility.question/first_responders.MA|Are you a first responder?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.moreinfo/first_responders.MA|Several categories of first responders are eligible for the vaccine in Massachusetts.|not defined|not defined|not defined|not defined|https://www.mass.gov/info-details/covid-19-vaccinations-for-first-responders
+|c19.eligibility.question/congregate.MA|Are you a staff member or resident of a congregate care facility?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.moreinfo/congregate.MA|Examples of congregate care facilities include emergency shelter programs, domestic violence shelters, veterans' shelters, and private special education shools.|not defined|not defined|not defined|not defined|https://www.mass.gov/info-details/covid-19-vaccinations-for-congregate-care-settings
+|c19.eligibility.question/age.75_up|Are you age 75+?|not defined|not defined|not defined|not defined|n/a
+|c19.eligibility.moreinfo/age.75_up.MA|All individuals 75+ are eligible for the vaccine.|not defined|not defined|not defined|not defined|https://www.mass.gov/info-details/covid-19-vaccinations-for-people-ages-75-and-older
+|c19.eligibility.question/health.1b.MA|Are you age 16+ with at least 2 high-risk medical conditions?|not defined|not defined|not defined|not defined|n/a 
+
 
 
 

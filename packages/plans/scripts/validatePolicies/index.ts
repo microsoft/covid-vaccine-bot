@@ -4,6 +4,7 @@
  */
 import * as path from 'path'
 import chalk from 'chalk'
+import { StringChecker } from '../StringChecker'
 import { DIST_DIR } from '../createDistDir'
 import { getFiles, DATA_DIR } from '../getFiles'
 import { readCsvFile } from '../readCsvFile'
@@ -25,7 +26,7 @@ const LOCALIZATION_TABLE_PATH = path.join(DIST_DIR, 'localization.csv')
  * Validate that state-level data files adhere to the schema
  */
 function validateDataFiles() {
-	const validStringIds = getValidStringIds()
+	const stringChecker = getStringChecker()
 
 	let errorCount = 0
 	const schemaValidationErrors: SchemaValidationError[] = []
@@ -36,6 +37,16 @@ function validateDataFiles() {
 	getFiles(DATA_DIR, (f) => f === 'vaccination.json').forEach(
 		validateVaccinationInfo
 	)
+	stringChecker
+		.getUnvisited()
+		.filter(
+			(s) =>
+				s.startsWith('c19.eligibility.question') ||
+				s.startsWith('c19.eligibility.moreinfo')
+		)
+		.forEach((s) => {
+			console.warn(chalk.yellow(`unused string id ${s}`))
+		})
 
 	function validateStateInfo(file: string) {
 		try {
@@ -65,7 +76,7 @@ function validateDataFiles() {
 			const data = require(file)
 			const validationErrors = validateVaccinationPlan(data)
 			const dataLinkErrors: string[] = []
-			checkStringIds(data, validStringIds, dataLinkErrors)
+			checkStringIds(data, stringChecker, dataLinkErrors)
 			linkErrors.push(...dataLinkErrors)
 			schemaValidationErrors.push(...validationErrors)
 			errorCount += dataLinkErrors.length + validationErrors.length
@@ -102,22 +113,17 @@ function validateDataFiles() {
 
 validateDataFiles()
 
-function getValidStringIds(): Set<string> {
+function getStringChecker(): StringChecker {
 	const records: Record<string, string>[] = []
 	readCsvFile(LOCALIZATION_TABLE_PATH, records)
 
 	const recordIds = records.map((r) => r['String ID'])
-	const result = new Set<string>()
-	recordIds.forEach((r) => result.add(r))
-	if (result.size !== recordIds.length) {
-		console.log(chalk.yellow('duplicate ids detected'))
-	}
-	return result
+	return new StringChecker(recordIds)
 }
 
 function checkStringIds(
 	vaccinationPlan: VaccinationPlan,
-	validStrings: Set<string>,
+	validStrings: StringChecker,
 	errors: string[]
 ): void {
 	function checkString(str: string): void {
