@@ -41,8 +41,9 @@ jobs:
       - name: verify packages
         run: yarn ci
 
-      - name: deploy deploy to integ
+      - name: integ deployment
         run: yarn deploy_all
+        if: github.ref == 'refs/heads/main'
         env:
           HEALTHBOT_HOST: ${{ secrets.HEALTHBOT_HOST }}
           HEALTHBOT_TENANT: ${{ secrets.HEALTHBOT_TENANT }}
