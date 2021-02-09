@@ -2,13 +2,13 @@
 
 name: CI
 
-# Controls when the action will run. 
+# Controls when the action will run.
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -19,17 +19,17 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-    
+
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: Setup Node.js environment
         uses: actions/setup-node@v2.1.4
         with:
           node-version: '14.x'
-          
+
       - name: install yarn
-        run: npm i -g yarn         
-      
+        run: npm i -g yarn
+
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
@@ -40,3 +40,10 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: verify packages
         run: yarn ci
+
+      - name: deploy deploy to integ
+        run: yarn deploy_all
+        env:
+          HEALTHBOT_HOST: ${{ secrets.HEALTHBOT_HOST }}
+          HEALTHBOT_TENANT: ${{ secrets.HEALTHBOT_TENANT }}
+          HEALTHBOT_API_SECRET: ${{ secrets.HEALTHBOT_API_KEY }}

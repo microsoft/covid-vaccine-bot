@@ -7,6 +7,7 @@
 		"build_all": "yarn workspaces foreach -pvt run build",
 		"test_all": "yarn workspaces foreach -pvt run test",
 		"start_all": "yarn workspaces foreach -piv run start",
+		"deploy_all": "yarn workspaces foreach -piv run deploy",
 		"unit_test": "jest --ci --coverage",
 		"lint": "essex lint --docs",
 		"lint:fix": "essex lint --fix",

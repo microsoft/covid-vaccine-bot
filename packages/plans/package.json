@@ -9,7 +9,7 @@
 		"test": "ts-node scripts/validatePolicies",
 		"build": "run-s assemble_localization assemble_policies generate_review_document",
 		"generate_review_document": "ts-node scripts/generateReviewDocument",
-		"deploy:resources": "ts-node scripts/healthbot/deployResources"
+		"deploy": "ts-node scripts/healthbot/deployResources"
 	},
 	"devDependencies": {
 		"@azure/storage-blob": "^12.4.0",
