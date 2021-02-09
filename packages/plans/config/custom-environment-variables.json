@@ -1,0 +1,7 @@
+{
+	"healthbot": {
+		"host": "HEALTHBOT_HOST",
+		"tenantName": "HEALTHBOT_TENANT",
+		"apiSecret": "HEALTHBOT_API_SECRET"
+	}
+}

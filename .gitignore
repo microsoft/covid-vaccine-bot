@@ -1,7 +1,7 @@
 # Temp/Rando Files
 ~*
 .DS_Store
-.env
+.env*
 
 # Yarn Ignores
 .yarn/*
