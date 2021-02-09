@@ -70,6 +70,40 @@
 					"moreInfoUrl": "https://www.mass.gov/info-details/covid-19-vaccinations-for-people-ages-75-and-older"
 				}
 			]
+		},
+		{
+			"id": "2step1",
+			"label": "Phase 2, Step 1",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/healthcare_worker",
+					"moreInfoText": "c19.eligibility.moreinfo/healthcare_worker.MA",
+					"moreInfoUrl": "https://www.mass.gov/info-details/covid-19-vaccinations-for-health-care-workers"
+				},
+				{
+					"question": "c19.eligibility.question/long_term_care_resident_or_worker.MA",
+					"moreInfoText": "c19.eligibility.moreinfo/long_term_care_resident_or_worker.MA",
+					"moreInfoUrl": "https://www.mass.gov/info-details/massachusetts-covid-19-vaccination-phases#phase-1-"
+				},
+				{
+					"question": "c19.eligibility.question/first_responders.MA",
+					"moreInfoText": "c19.eligibility.moreinfo/first_responders.MA",
+					"moreInfoUrl": "https://www.mass.gov/info-details/covid-19-vaccinations-for-first-responders"
+				},
+				{
+					"question": "c19.eligibility.question/congregate.MA",
+					"moreInfoText": "c19.eligibility.moreinfo/congregate.MA",
+					"moreInfoUrl": "https://www.mass.gov/info-details/covid-19-vaccinations-for-congregate-care-settings"
+				},
+				{
+					"question": "c19.eligibility.question/age.75_up",
+					"moreInfoText": "c19.eligibility.moreinfo/age.75_up.MA",
+					"moreInfoUrl": "https://www.mass.gov/info-details/covid-19-vaccinations-for-people-ages-75-and-older"
+				},
+				{
+					"question": "c19.eligibility.question/health.1b.MA"
+				}
+			]
 		}
 	]
 }
