@@ -31,7 +31,7 @@
     height: 90px;
 "><a href="/rmihealth/"><img class="sp-default-logo" src="/rmihealth/images/logo3.png" alt="Rmihealth"></a></h1>
 	</style>
-	<script type="application/json" class="joomla-script-options new">{"csrf.token":"93b906a5b7eca2316065b29eaf6f2dff","system.paths":{"root":"","base":""}}</script>
+	<script type="application/json" class="joomla-script-options new">{"csrf.token":"2516e88f1f95c2b7ca8c0189a1c0566a","system.paths":{"root":"","base":""}}</script>
 	<script src="/media/jui/js/jquery.min.js?96f6929fe5fb8eedf414a60414796e90" type="text/javascript"></script>
 	<script src="/media/jui/js/jquery-noconflict.js?96f6929fe5fb8eedf414a60414796e90" type="text/javascript"></script>
 	<script src="/media/jui/js/jquery-migrate.min.js?96f6929fe5fb8eedf414a60414796e90" type="text/javascript"></script>

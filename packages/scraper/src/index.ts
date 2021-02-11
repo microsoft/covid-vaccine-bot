@@ -52,7 +52,9 @@ async function scrapeSites(): Promise<void> {
 				uri: scrapeUrl,
 				callback: (err, res, done) => {
 					if (err) {
-						result.errors.push(err)
+						result.errors.push(
+							new Error(`error crawling ${scrapeUrl}: ` + err.message)
+						)
 						done()
 					} else {
 						try {
@@ -91,6 +93,7 @@ async function scrapeSites(): Promise<void> {
 			})
 		})
 		c.on('drain', () => {
+			result.errors = result.errors.map((e) => e.message) as any
 			// Write out integrity file
 			fs.writeFileSync(
 				path.join(__dirname, '../last_run.json'),

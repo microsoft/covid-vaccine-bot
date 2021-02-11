@@ -1,8 +1,585 @@
-<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
-<html><head>
-<title>403 Forbidden</title>
-</head><body>
-<h1>Forbidden</h1>
-<p>You don't have permission to access /vaccine/
-on this server.</p>
-</body></html>
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-39283013-20"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-161473572-1', {
+  'link_attribution': true
+});
+
+  /**
+* Function that registers a click on an outbound link in Analytics.
+* This function takes a valid URL string as an argument, and uses that URL string
+* as the event label. Setting the transport method to 'beacon' lets the hit be sent
+* using 'navigator.sendBeacon' in browser that support it.
+*/
+var trackOutboundLink = function(url) {
+  gtag('event', 'click', {
+    'event_category': 'outbound',
+    'event_label': url,
+    'transport_type': 'beacon',
+    'event_callback': function(){document.location = url;}
+  });
+}
+</script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta class="swiftype" name="domain" data-type="string" content="coronavirus">
+    <meta class="swiftype" name="published_at" data-type="date" content="2021-02-09" />
+    <!-- Favicon -->
+    <link rel="icon" sizes="57x57" href="https://coronavirus.delaware.gov/wp-content/themes/dosgic_CORONAVIRUS_theme/img/apple-icon-57x57.png">
+    <link rel="icon" sizes="60x60" href="https://coronavirus.delaware.gov/wp-content/themes/dosgic_CORONAVIRUS_theme/img/apple-icon-60x60.png">
+    <link rel="icon" sizes="72x72" href="https://coronavirus.delaware.gov/wp-content/themes/dosgic_CORONAVIRUS_theme/img/apple-icon-72x72.png">
+    <link rel="icon" sizes="76x76" href="https://coronavirus.delaware.gov/wp-content/themes/dosgic_CORONAVIRUS_theme/img/apple-icon-76x76.png">
+    <link rel="icon" sizes="114x114" href="https://coronavirus.delaware.gov/wp-content/themes/dosgic_CORONAVIRUS_theme/img/apple-icon-114x114.png">
+    <link rel="icon" sizes="120x120" href="https://coronavirus.delaware.gov/wp-content/themes/dosgic_CORONAVIRUS_theme/img/apple-icon-120x120.png">
+    <link rel="icon" sizes="144x144" href="https://coronavirus.delaware.gov/wp-content/themes/dosgic_CORONAVIRUS_theme/img/apple-icon-144x144.png">
+    <link rel="icon" sizes="152x152" href="https://coronavirus.delaware.gov/wp-content/themes/dosgic_CORONAVIRUS_theme/img/apple-icon-152x152.png">
+    <link rel="icon" sizes="180x180" href="https://coronavirus.delaware.gov/wp-content/themes/dosgic_CORONAVIRUS_theme/img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="https://coronavirus.delaware.gov/wp-content/themes/dosgic_CORONAVIRUS_theme/img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://coronavirus.delaware.gov/wp-content/themes/dosgic_CORONAVIRUS_theme/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="https://coronavirus.delaware.gov/wp-content/themes/dosgic_CORONAVIRUS_theme/img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://coronavirus.delaware.gov/wp-content/themes/dosgic_CORONAVIRUS_theme/img/favicon-16x16.png">
+    <link rel="manifest" href="https://coronavirus.delaware.gov/wp-content/themes/dosgic_CORONAVIRUS_theme/img/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="https://coronavirus.delaware.gov/wp-content/themes/dosgic_CORONAVIRUS_theme/img/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Google recaptcha -->
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
+    <!-- lightbox css library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css">
+    <!-- lightbox JS library-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox-plus-jquery.min.js"></script>
+
+    <!-- icomoon icons -->
+    <link rel="stylesheet" href="https://i.icomoon.io/public/727bcdd623/GIC-Custom-Coronavirus-Icons/style.css">
+
+    
+	<!-- This site is optimized with the Yoast SEO plugin v14.5 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>COVID-19 Vaccine - Delaware&#039;s Coronavirus Official Website</title>
+	<meta name="robots" content="index, follow" />
+	<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+	<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+	<link rel="canonical" href="https://coronavirus.delaware.gov/vaccine/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="COVID-19 Vaccine - Delaware&#039;s Coronavirus Official Website" />
+	<meta property="og:description" content="&nbsp; &nbsp; &nbsp; &nbsp;" />
+	<meta property="og:url" content="https://coronavirus.delaware.gov/vaccine/" />
+	<meta property="og:site_name" content="Delaware&#039;s Coronavirus Official Website" />
+	<meta property="article:modified_time" content="2021-02-09T19:46:13+00:00" />
+	<meta property="og:image" content="https://coronavirus.delaware.gov/wp-content/uploads/sites/177/2020/12/YOAST-SEO-FB-Vaccine-Page.png" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:image" content="https://coronavirus.delaware.gov/wp-content/uploads/sites/177/2020/12/YOAST-SEO-Twitter-Vaccine-Page.png" />
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//maxcdn.bootstrapcdn.com' />
+<link rel='dns-prefetch' href='//f1-na.readspeaker.com' />
+<link rel='dns-prefetch' href='//github.hubspot.com' />
+<link rel='dns-prefetch' href='//kit.fontawesome.com' />
+<link rel='dns-prefetch' href='//use.fontawesome.com' />
+<link rel='dns-prefetch' href='//delaware.gov' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+        <style type="text/css">
+            #wpadminbar #wp-admin-bar-my-networks > .ab-item:first-child:before {
+                content: "\f325";
+                top: 3px;
+            }
+        </style>
+        <link rel='stylesheet' id='tribe-common-skeleton-style-css'  href='https://coronavirus.delaware.gov/wp-content/plugins/the-events-calendar/common/src/resources/css/common-skeleton.min.css?ver=4.12.5' type='text/css' media='all' />
+<link rel='stylesheet' id='tribe-tooltip-css'  href='https://coronavirus.delaware.gov/wp-content/plugins/the-events-calendar/common/src/resources/css/tooltip.min.css?ver=4.12.5' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://coronavirus.delaware.gov/wp-includes/css/dist/block-library/style.min.css?ver=5.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-theme-css'  href='https://coronavirus.delaware.gov/wp-includes/css/dist/block-library/theme.min.css?ver=5.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='mo_saml_admin_settings_style-css'  href='https://coronavirus.delaware.gov/wp-content/plugins/miniorange-saml-20-single-sign-on/includes/css/jquery.ui.css?ver=5.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='bootstrap-css'  href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-styles-css'  href='https://coronavirus.delaware.gov/wp-content/themes/dosgic_CORONAVIRUS_theme/style.css' type='text/css' media='screen, print' />
+<link rel='stylesheet' id='agency-styles-css'  href='https://coronavirus.delaware.gov/wp-content/themes/dosgic_CORONAVIRUS_theme/css/clf4css/clf4.css' type='text/css' media='all' />
+<link rel='stylesheet' id='google-fonts-css'  href='https://fonts.googleapis.com/css?family=Montserrat%3A300%2C400%2C700%2C900%7COpen+Sans%3A300%2C400%2C600%2C700%2C800%7CRaleway%3A300%2C400%2C500%2C600%2C700%2C800%2C900%7COpen+Sans+Condensed%3A300&#038;ver=all' type='text/css' media='all' />
+<link rel='stylesheet' id='animate-min-css'  href='https://coronavirus.delaware.gov/wp-content/themes/dosgic_CORONAVIRUS_theme/css/animate.min.css' type='text/css' media='all' />
+<script type='text/javascript' src='https://coronavirus.delaware.gov/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
+<script type='text/javascript' src='https://coronavirus.delaware.gov/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='https://coronavirus.delaware.gov/wp-content/plugins/miniorange-saml-20-single-sign-on/includes/js/settings.js?ver=5.4.2'></script>
+<script type='text/javascript' src='https://delaware.gov/files/pullnews.php?blog=news.delaware.gov&#038;tag=covid-19-vaccine&#038;from=1&#038;to=5&#038;type=js&#038;var=htmlvaccine'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://coronavirus.delaware.gov/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://coronavirus.delaware.gov/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.4.2" />
+<link rel='shortlink' href='https://coronavirus.delaware.gov/?p=113486' />
+<link rel="alternate" type="application/json+oembed" href="https://coronavirus.delaware.gov/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcoronavirus.delaware.gov%2Fvaccine%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://coronavirus.delaware.gov/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcoronavirus.delaware.gov%2Fvaccine%2F&#038;format=xml" />
+<meta name="tec-api-version" content="v1"><meta name="tec-api-origin" content="https://coronavirus.delaware.gov"><link rel="https://theeventscalendar.com/" href="https://coronavirus.delaware.gov/wp-json/tribe/events/v1/" /><style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><link rel="icon" href="https://coronavirus.delaware.gov/wp-content/uploads/sites/177/2020/03/cropped-DHSS-logo_social-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://coronavirus.delaware.gov/wp-content/uploads/sites/177/2020/03/cropped-DHSS-logo_social-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://coronavirus.delaware.gov/wp-content/uploads/sites/177/2020/03/cropped-DHSS-logo_social-180x180.png" />
+<meta name="msapplication-TileImage" content="https://coronavirus.delaware.gov/wp-content/uploads/sites/177/2020/03/cropped-DHSS-logo_social-270x270.png" />
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-NQ6TWT9');</script>
+    <!-- End Google Tag Manager -->
+
+    <script>
+      FontAwesomeConfig = { searchPseudoElements: true };
+    </script>
+    <script type="text/javascript">
+      var coronavirus_siteurl = 'https://coronavirus.delaware.gov';
+    </script>
+
+    <!-- FUNNELBACK INCLUDES -->
+    <link rel="stylesheet" type="text/css" href="https://coronavirus.delaware.gov/wp-content/themes/dosgic_CORONAVIRUS_theme/funnelback/funnelback.autocompletion-2.6.0.css" />
+    <link type="text/css" media="screen" rel="stylesheet" href="https://coronavirus.delaware.gov/wp-content/themes/dosgic_CORONAVIRUS_theme/funnelback/funnelback.css" />
+    <script src="https://coronavirus.delaware.gov/wp-content/themes/dosgic_CORONAVIRUS_theme/funnelback/funnelbackConfig.js"></script>
+    <script src="https://coronavirus.delaware.gov/wp-content/themes/dosgic_CORONAVIRUS_theme/funnelback/typeahead.bundle-0.11.1.min.js"></script>
+    <script src="https://coronavirus.delaware.gov/wp-content/themes/dosgic_CORONAVIRUS_theme/funnelback/handlebars-4.0.5.min.js"></script>
+    <script src="https://coronavirus.delaware.gov/wp-content/themes/dosgic_CORONAVIRUS_theme/funnelback/funnelback.autocompletion-2.6.0.js"></script>
+    <!-- END FUNNELBACK INCLUDES -->
+
+         <script type="text/javascript">
+       function doFill(div,returnvar){
+       document.getElementById(div).innerHTML=returnvar;}
+     </script>
+     
+             <script type="text/javascript">
+            jQuery(window).on('load',function(){
+                jQuery('#ccModal').modal('show');
+            });
+        </script>
+    
+  </head>
+
+  <body onLoad="doFill('vaccineDiv',htmlvaccine);" class="page-template-default page page-id-113486 page-parent wp-embed-responsive tribe-no-js tribe-events-filter-view tribe-filters-open tribe-filters-horizontal tribe-filters-live-update">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NQ6TWT9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<!-- BEGIN Fixed Main Nav Bar -->
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-nav">
+        <div class="navbar-header">
+          <a class="skip-main" href="#main_content">Skip to Content</a>
+          <a class="skip-main" href="#agencyFooter">Skip to Navigation</a>
+          <a href="http://delaware.gov"><img src="https://coronavirus.delaware.gov/wp-content/themes/dosgic_CORONAVIRUS_theme/img/clf4img/delaware_global_d@2x.png" alt="The Delaware.gov logo" class="border_none delaware_d_logo" /></a>
+          <a href="http://delaware.gov"><img src="https://coronavirus.delaware.gov/wp-content/themes/dosgic_CORONAVIRUS_theme/img/clf4img/delaware_global_text@2x.png" alt="Delaware.gov - The Offical Website of the First State" class="border_none delaware_text" /></a>
+        </div>
+        <ul class="nav masthead-nav hidden-xs">
+          <li><a target="_blank" href="https://delaware.gov/topics/agencylist_alpha"><i class="far fa-building fa-fw"></i> Agencies</a></li>
+          <li><a target="_blank" href="https://news.delaware.gov"><i class="fa fa-newspaper-o fa-fw"></i> News</a></li>
+          <li><a target="_blank" href="https://delaware.gov/topics"><i class="fa fa-comments-o fa-fw"></i> Topics</a></li>
+          <li><a target="_blank" href="https://delaware.gov/help/degov-contact.shtml"><i class="fa fa-mobile fa-fw"></i> Contact</a></li>
+        </ul>
+        <div id="sb-search-main" class="sb-search-main pull-right">
+            <form>
+                <label for="txtKeywordMain">Search This Site</label>
+                <input class="sb-search-main-input" placeholder="Search This Site" type="text" value="" name="query" id="txtKeywordMain" />
+                <input class="sb-search-main-submit" type="submit" value="Submit" />
+                <span class="sb-icon-main-search"><i class="fa fa-search fa-fw"></i></span>
+            </form>
+        </div>
+      </div>
+    </nav><!-- END Fixed Main Nav Bar -->
+<!-- EMERGENCY NOTIFICATION SYSTEM (ENS) AREA -->
+<div id="ens" class="alert alert-danger">
+    <a type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times fa-fw"></i></span></a>
+      <p>
+         <strong>
+            <i class="fa fa-exclamation-circle fa-lg fa-fw"></i> Delaware is now in Phase 1b for vaccines, which includes people 65 and older (among others). In Phase 1b? Find out where you can get vaccinated.              <a target="_blank" href="https://coronavirus.delaware.gov/vaccine/where-can-i-get-my-vaccine/">   More Info<i class="fa fa-long-arrow-right fa-fw"></i></a>
+         </strong>
+      </p>
+</div>
+<!-- END EMERGENCY NOTIFICATION AREA -->
+<!-- AGENCY TOP NAVIGATION -->
+<div id="cssmenuTop" data-spy="affix" data-offset-top="60" class="affix">
+
+  <div id="cssmenu">
+    <ul id="menu-primary-menu" class="nav navbar-nav"><li id="menu-item-103" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-103"><a href="/"><img src="https://coronavirus.delaware.gov/wp-content/uploads/sites/177/2020/03/dhss_logo_100.jpg" class="nav_logo" alt="Picture of the Delaware Department of DHSS" width="35" height="35"></a></li>
+<li id="menu-item-152096" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-152096"><a href="/testing/">Testing</a></li>
+<li id="menu-item-152099" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-152099 dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Updates <span class="caret"></span></a>
+<ul role="menu">
+	<li id="menu-item-152100" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-152100"><a target="_blank" href="https://myhealthycommunity.dhss.delaware.gov/locations/state">Data</a></li>
+	<li id="menu-item-152107" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-152107"><a href="https://coronavirus.delaware.gov/restrictions/">Restrictions</a></li>
+	<li id="menu-item-154896" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-154896"><a href="https://coronavirus.delaware.gov/newsroom/">News</a></li>
+	<li id="menu-item-154898" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-154898"><a href="https://coronavirus.delaware.gov/coronavirus-graphics/">Graphics</a></li>
+</ul>
+</li>
+<li id="menu-item-152110" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-152110 dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Prevention <span class="caret"></span></a>
+<ul role="menu">
+	<li id="menu-item-154901" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-113486 current_page_item menu-item-154901 active"><a href="https://coronavirus.delaware.gov/vaccine/">Vaccine</a></li>
+	<li id="menu-item-152111" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-152111"><a href="/testing/">Get Tested</a></li>
+	<li id="menu-item-154902" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-154902"><a href="https://coronavirus.delaware.gov/covidalert/">COVID Alert DE</a></li>
+	<li id="menu-item-152112" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-152112"><a href="https://coronavirus.delaware.gov/contact-tracing/">Contact Tracing</a></li>
+	<li id="menu-item-152114" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-152114"><a href="https://coronavirus.delaware.gov/guidance-for-face-coverings/">Face Coverings</a></li>
+</ul>
+</li>
+<li id="menu-item-152115" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-152115 dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Guidance <span class="caret"></span></a>
+<ul role="menu">
+	<li id="menu-item-152128" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-152128"><a href="https://coronavirus.delaware.gov/individuals-and-families/">Individuals and Families</a></li>
+	<li id="menu-item-152127" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-152127"><a href="https://coronavirus.delaware.gov/schools-and-students/">Schools and Students</a></li>
+	<li id="menu-item-152125" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-152125"><a href="https://coronavirus.delaware.gov/medical-providers/">Medical Providers</a></li>
+	<li id="menu-item-152126" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-152126"><a href="https://coronavirus.delaware.gov/businesses-and-workforce/">Businesses and Workforce</a></li>
+</ul>
+</li>
+<li id="menu-item-4236" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4236"><a href="https://coronavirus.delaware.gov/contact/">Contact</a></li>
+<li id="menu-item-153487" class="visible-mobile-menu menu-item menu-item-type-custom menu-item-object-custom menu-item-153487"><a href="/recursos-en-espanol/">ESP</a></li>
+<li id="menu-item-153488" class="visible-mobile-menu menu-item menu-item-type-custom menu-item-object-custom menu-item-153488"><a href="/resous-an-kreyol-ayisyen/">HC</a></li>
+</ul>
+      <ul id="menu-secondary-menu" class="nav navbar-nav secondary-menu"><li id="menu-item-153234" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-153234"><a href="/recursos-en-espanol/">ESP</a></li>
+<li id="menu-item-153235" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-153235"><a href="/resous-an-kreyol-ayisyen/">HC</a></li>
+</ul>
+
+    <div id="agencyitems">
+      <a href="http://delaware.gov"><img src="https://coronavirus.delaware.gov/wp-content/themes/dosgic_CORONAVIRUS_theme/img/clf4img/delaware_global_d_blue@2x.png" class="logo_fade hidden-xs" alt="Delaware 'D' logo" />
+      <img src="https://coronavirus.delaware.gov/wp-content/themes/dosgic_CORONAVIRUS_theme/img/clf4img/delaware_global_text_blue@2x.png" class="delaware_fade" alt="Delaware.gov logo" /></a>
+      <p class="menu_text">Coronavirus Menu</p>
+      <div id="sb-search" class="sb-search pull-right">
+        <form id="agency-search">
+          <label for="txtKeyword">Search This Site</label>
+          <input class="sb-search-input" placeholder="Search This Site" type="text" value="" name="query" id="txtKeyword" />
+          <input class="sb-search-submit" type="submit" value="Search" />
+          <span class="sb-icon-search"><i class="fa fa-search fa-fw"></i></span>
+        </form>
+      </div>
+    </div>
+  </div>
+</div><!-- END AGENCY TOP NAVIGATION -->
+<div class="offset-div"></div><div class="container-fluid">
+  <div class="row">
+    <img class="img-responsive hidden-xs" src="https://coronavirus.delaware.gov/wp-content/themes/dosgic_CORONAVIRUS_theme/img/GIC-Covid-Homepage-Interior-Header.png">
+  </div>
+</div>
+<div id="readSpeak_test">
+
+<div id="main_content">
+<div class="container">
+        <ol class="breadcrumb">
+      <li><a href="/"><strong>Home</strong></a></li>
+            <li class="text-muted">COVID-19 Vaccine</li>
+    </ol>
+
+    <div id="readspeaker_button1" class="rs_skip rsbtn rs_preserve">
+            <a class="rsbtn_play" accesskey="L" title="Listen to this page using ReadSpeaker" href="//app-na.readspeaker.com/cgi-bin/rsent?customerid=7262&amp;lang=en_us&amp;readid=readSpeak_test&amp;url=https://coronavirus.delaware.gov/vaccine/">
+              <span class="rsbtn_left rsimg rspart">
+                <span class="rsbtn_text">
+                  <span>Listen</span>
+                </span>
+              </span>
+              <span class="rsbtn_right rsimg rsplay rspart"></span>
+            </a>
+          </div>
+
+</div>
+
+<div class="interior-wrapper">
+            
+<div class="container" id="main_header">
+  <header>
+    <h1>COVID-19 Vaccine</h1>
+    <hr />
+  </header><br />
+</div>
+        <div class="container">
+
+          <div data-swiftype-index='true'>
+
+            <div class="internal-page">
+            
+                <div class="row">
+<div class="col-sm-12 fadein hidden-lg hidden-md">
+<p><a href="https://coronavirus.delaware.gov/vaccine/vaccination-timeline/"><img class="aligncenter size-full wp-image-193254 img-responsive " src="https://coronavirus.delaware.gov/wp-content/uploads/sites/177/2021/02/ENGLISH-Vaccine-Page-Timeline-Graphic-Mobile-02092021.png" alt="Delaware's Vaccine Allocation Timeline" srcset="https://coronavirus.delaware.gov/wp-content/uploads/sites/177/2021/02/ENGLISH-Vaccine-Page-Timeline-Graphic-Mobile-02092021.png 1000w, https://coronavirus.delaware.gov/wp-content/uploads/sites/177/2021/02/ENGLISH-Vaccine-Page-Timeline-Graphic-Mobile-02092021-231x300.png 231w, https://coronavirus.delaware.gov/wp-content/uploads/sites/177/2021/02/ENGLISH-Vaccine-Page-Timeline-Graphic-Mobile-02092021-788x1024.png 788w, https://coronavirus.delaware.gov/wp-content/uploads/sites/177/2021/02/ENGLISH-Vaccine-Page-Timeline-Graphic-Mobile-02092021-768x998.png 768w" sizes="(max-width: 1000px) 100vw, 1000px" /></a></p>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12 fadein visible-lg visible-md">
+<a href="https://coronavirus.delaware.gov/vaccine/vaccination-timeline/"><img class="aligncenter size-full wp-image-193248 img-responsive " src="https://coronavirus.delaware.gov/wp-content/uploads/sites/177/2021/02/ENGLISH-Vaccine-Page-Timeline-Graphic-Desktop-02092021.png" alt="Delaware's Vaccine Allocation Timeline" srcset="https://coronavirus.delaware.gov/wp-content/uploads/sites/177/2021/02/ENGLISH-Vaccine-Page-Timeline-Graphic-Desktop-02092021.png 2700w, https://coronavirus.delaware.gov/wp-content/uploads/sites/177/2021/02/ENGLISH-Vaccine-Page-Timeline-Graphic-Desktop-02092021-300x58.png 300w, https://coronavirus.delaware.gov/wp-content/uploads/sites/177/2021/02/ENGLISH-Vaccine-Page-Timeline-Graphic-Desktop-02092021-1024x199.png 1024w, https://coronavirus.delaware.gov/wp-content/uploads/sites/177/2021/02/ENGLISH-Vaccine-Page-Timeline-Graphic-Desktop-02092021-768x149.png 768w, https://coronavirus.delaware.gov/wp-content/uploads/sites/177/2021/02/ENGLISH-Vaccine-Page-Timeline-Graphic-Desktop-02092021-1536x299.png 1536w, https://coronavirus.delaware.gov/wp-content/uploads/sites/177/2021/02/ENGLISH-Vaccine-Page-Timeline-Graphic-Desktop-02092021-2048x398.png 2048w" sizes="(max-width: 2700px) 100vw, 2700px" /></a><br />
+</div>
+</div>
+<div class="row">
+<div class="col-sm-4 fadeinleft">
+<p><a href="https://coronavirus.delaware.gov/vaccine/where-can-i-get-my-vaccine/"><img class="aligncenter size-full wp-image-192855 img-responsive " src="https://coronavirus.delaware.gov/wp-content/uploads/sites/177/2021/02/DECV32344_Vaccine_OrganicSocial_EligibiltyPhase1_1_1080x1080.jpg" alt="If you are 65+, you can now get a COVID-19 Vaccine" srcset="https://coronavirus.delaware.gov/wp-content/uploads/sites/177/2021/02/DECV32344_Vaccine_OrganicSocial_EligibiltyPhase1_1_1080x1080.jpg 1080w, https://coronavirus.delaware.gov/wp-content/uploads/sites/177/2021/02/DECV32344_Vaccine_OrganicSocial_EligibiltyPhase1_1_1080x1080-300x300.jpg 300w, https://coronavirus.delaware.gov/wp-content/uploads/sites/177/2021/02/DECV32344_Vaccine_OrganicSocial_EligibiltyPhase1_1_1080x1080-1024x1024.jpg 1024w, https://coronavirus.delaware.gov/wp-content/uploads/sites/177/2021/02/DECV32344_Vaccine_OrganicSocial_EligibiltyPhase1_1_1080x1080-150x150.jpg 150w, https://coronavirus.delaware.gov/wp-content/uploads/sites/177/2021/02/DECV32344_Vaccine_OrganicSocial_EligibiltyPhase1_1_1080x1080-768x768.jpg 768w" sizes="(max-width: 1080px) 100vw, 1080px" /></a></p>
+</div>
+<div class="col-sm-8 fadeinright">
+<p>&nbsp;</p>
+<div class="well well-lg">
+<h2><i class="fa fa-info-circle fa-fw" aria-hidden="true"></i> Where can I get vaccinated if I am in Phase 1B?</h2>
+<p>There will be multiple options for Delaware residents to be vaccinated, including large vaccination events with a new appointment request system for those 65 and older. Those who qualify as a frontline essential worker should look for communication regarding vaccination opportunities directly from their employer.</p>
+<a href="/vaccine/where-can-i-get-my-vaccine/" class="btn btn-success btn-lg btn-cta btn-homepage btn-white-bg">Find Where to Get Vaccinated<i class="fa fa-long-arrow-alt-right fa-fw" aria-hidden="true"></i></a>
+</div>
+</div>
+</div>
+<p>&nbsp;</p>
+<div class="row">
+<div class="col-md-7 fadein">
+<h2>We Are Currently in <strong>Phase 1B</strong></h2>
+<h3>Facts at a Glance</h3>
+<p>People covered in Phase 1A and 1B are eligible to get vaccinated.</p>
+<ul>
+<li>Phase 1A includes health care personnel with direct patient contact and care, Emergency Medical Services agencies, and long-term care staff and residents. Efforts will continue to vaccinate individuals in this group.</li>
+<li>Long-term care residents and staff will continue to be vaccinated by either CVS or Walgreens pharmacy staff as part of a federal program.</li>
+<li>Phase 1B includes all individuals 65 and over, and frontline essential workers including: fire, police, correctional officers, teachers and education staff (including child care providers), U.S. postal workers, food manufacturing, agriculture, transportation, and grocery store workers.</li>
+</ul>
+<a href="/vaccine/vaccination-timeline/#phase-1a" class="btn btn-success btn-lg btn-cta btn-homepage btn-white-bg">Learn More<i class="fa fa-long-arrow-alt-right fa-fw" aria-hidden="true"></i></a>
+<p>&nbsp;</p>
+</div>
+<div class="col-md-5 fadein">
+<a href="https://coronavirus.delaware.gov/wp-content/uploads/sites/177/2021/02/English-Delaware-VACCINE-ALLOCATION-02092021-phase1b-min.png"><img class="aligncenter wp-image-193260 size-full img-responsive " src="https://coronavirus.delaware.gov/wp-content/uploads/sites/177/2021/02/English-Delaware-VACCINE-ALLOCATION-02092021-phase1b-min.png" alt="Delaware's Vaccine Allocation - Where do you fit in? Infographic." srcset="https://coronavirus.delaware.gov/wp-content/uploads/sites/177/2021/02/English-Delaware-VACCINE-ALLOCATION-02092021-phase1b-min.png 2400w, https://coronavirus.delaware.gov/wp-content/uploads/sites/177/2021/02/English-Delaware-VACCINE-ALLOCATION-02092021-phase1b-min-189x300.png 189w, https://coronavirus.delaware.gov/wp-content/uploads/sites/177/2021/02/English-Delaware-VACCINE-ALLOCATION-02092021-phase1b-min-647x1024.png 647w, https://coronavirus.delaware.gov/wp-content/uploads/sites/177/2021/02/English-Delaware-VACCINE-ALLOCATION-02092021-phase1b-min-768x1216.png 768w, https://coronavirus.delaware.gov/wp-content/uploads/sites/177/2021/02/English-Delaware-VACCINE-ALLOCATION-02092021-phase1b-min-970x1536.png 970w, https://coronavirus.delaware.gov/wp-content/uploads/sites/177/2021/02/English-Delaware-VACCINE-ALLOCATION-02092021-phase1b-min-1293x2048.png 1293w" sizes="(max-width: 2400px) 100vw, 2400px" /></a><br />
+</div>
+</div>
+<hr />
+<div class="row">
+<div class="col-md-12 fadeinright">
+<h2>What Phase is Next?</h2>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<h3>Remaining Phase 1</h3>
+<h3>Who:</h3>
+<p>Persons aged 16-64 with high-risk medical conditions (Obesity, Severe Obesity, Diabetes, COPD, Heart Condition, Chronic Kidney, Cancer, Smoking, Solid Organ Transplant, Sickle Cell Disease, Intellectual/Developmental Disabilities, Severe and persistent mental/behavioral health conditions).</p>
+<p>Persons living in high-risk group settings such as correctional facilities, homeless shelters, and group homes.</p>
+<p>Other essential workers (Transportation and Logistics, Food Service, Shelter and Housing (construction), Finance, IT and Communications, Energy, Media, Legal, Public Safety (Engineers), Water and Wastewater). Vaccines may be available through employers.</p>
+<h3>When:</h3>
+<p>Starting by end of February into early March. Not all essential workers in each category will be eligible at first. Those with more frequent public contact, and higher health risks will likely be eligible first.</p>
+<h3>How/Where:</h3>
+<p>More details will be made available on where to get the vaccine, as details are finalized. For those with high-risk conditions: Vaccines will be available from pharmacies, some primary care providers, and vaccination clinics run by the state or its partners. For those living in group or congregate settings: Vaccines may be available within these settings or from service providers. For other essential workers: vaccines will be available through your employer through either onsite vaccination events, off-site clinics, or a voucher system that can be used at pharmacies or vaccine clinics run by the state or its partners. Look for details from your employer.</p>
+<a href="/vaccine/vaccination-timeline/#phase-1b" class="btn btn-success btn-lg btn-cta btn-homepage btn-white-bg">Learn More<i class="fa fa-long-arrow-alt-right fa-fw" aria-hidden="true"></i></a>
+</div>
+<div class="col-md-6">
+<p>&nbsp;</p>
+<p><img class="aligncenter size-full wp-image-193266 img-responsive " src="https://coronavirus.delaware.gov/wp-content/uploads/sites/177/2021/02/coronavirus-Update-Featured-image-COVID-19-Vaccine-Allocation-Phases-02092021-phase1c-soon.png" alt="Phase 1C - Are soon to be eligible for the COVID-19 Vaccine" srcset="https://coronavirus.delaware.gov/wp-content/uploads/sites/177/2021/02/coronavirus-Update-Featured-image-COVID-19-Vaccine-Allocation-Phases-02092021-phase1c-soon.png 1200w, https://coronavirus.delaware.gov/wp-content/uploads/sites/177/2021/02/coronavirus-Update-Featured-image-COVID-19-Vaccine-Allocation-Phases-02092021-phase1c-soon-300x185.png 300w, https://coronavirus.delaware.gov/wp-content/uploads/sites/177/2021/02/coronavirus-Update-Featured-image-COVID-19-Vaccine-Allocation-Phases-02092021-phase1c-soon-1024x630.png 1024w, https://coronavirus.delaware.gov/wp-content/uploads/sites/177/2021/02/coronavirus-Update-Featured-image-COVID-19-Vaccine-Allocation-Phases-02092021-phase1c-soon-768x472.png 768w" sizes="(max-width: 1200px) 100vw, 1200px" /><br />
+</div>
+</div>
+<hr />
+<div class="row">
+<div class="col-md-9 fadeinleft">
+<h2>What to know about the COVID-19 Vaccine</h2>
+<p>The development of one or more vaccines against COVID-19 has been something the American public has been eagerly waiting for in hopes that it will bring us closer to a return to normalcy. Currently two vaccines are available, Pfizer and Moderna. They require two doses to be given 3 – 4 weeks after the first, depending on the vaccine. They have been identified as being at least 94% effective at preventing the virus. They use something called messenger RNA or mRNA to fight the virus. <b>mRNA vaccines</b> contain material from the virus that causes COVID-19 that gives our cells instructions for how to make a harmless protein that is unique to the virus. The vaccine is free for all Delawareans. The CDC says serious side effects are exceedingly rare. Learn more about the vaccines and Delaware’s plans to distribute them to residents below.</p>
+</div>
+<div class="col-md-3 fadeinright">
+<p><a href="https://coronavirus.delaware.gov/vaccine/where-can-i-get-my-vaccine/?preview_id=185732&amp;preview_nonce=94a9c6405a&amp;_thumbnail_id=-1&amp;preview=true"><img class="aligncenter wp-image-192891 size-full img-responsive " src="https://coronavirus.delaware.gov/wp-content/uploads/sites/177/2021/02/DECV32779_Vaccine_OrganicSocial_How_2_1080x1080.jpg" alt="The COVID-19 vaccine is FREE to all Delawareans." srcset="https://coronavirus.delaware.gov/wp-content/uploads/sites/177/2021/02/DECV32779_Vaccine_OrganicSocial_How_2_1080x1080.jpg 1080w, https://coronavirus.delaware.gov/wp-content/uploads/sites/177/2021/02/DECV32779_Vaccine_OrganicSocial_How_2_1080x1080-300x300.jpg 300w, https://coronavirus.delaware.gov/wp-content/uploads/sites/177/2021/02/DECV32779_Vaccine_OrganicSocial_How_2_1080x1080-1024x1024.jpg 1024w, https://coronavirus.delaware.gov/wp-content/uploads/sites/177/2021/02/DECV32779_Vaccine_OrganicSocial_How_2_1080x1080-150x150.jpg 150w, https://coronavirus.delaware.gov/wp-content/uploads/sites/177/2021/02/DECV32779_Vaccine_OrganicSocial_How_2_1080x1080-768x768.jpg 768w" sizes="(max-width: 1080px) 100vw, 1080px" /></a></p>
+</div>
+</div>
+<p>&nbsp;</p>
+<div class="row">
+<div class="col-md-12 fadein">
+<h4 style="text-align: center;"><i class="fa fa-arrow-down fa-fw" aria-hidden="true"></i> Select an Option Below to Learn More:</h4>
+</div>
+</div>
+<p>&nbsp;</p>
+<div class="row fadeinright">
+<div class="col-md-3">
+<p><a href="/vaccine/vaccination-playbook/"><img class="aligncenter size-full wp-image-157266 img-responsive " src="https://coronavirus.delaware.gov/wp-content/uploads/sites/177/2021/01/playbook-bubble-250.png" alt="" /></a></p>
+</div>
+<div class="col-md-3">
+<p><a href="/vaccine/vaccine-safety-and-monitoring/"><img class="aligncenter size-full wp-image-157260 img-responsive " src="https://coronavirus.delaware.gov/wp-content/uploads/sites/177/2021/01/safety-bubble-250.png" alt="" /></a></p>
+</div>
+<div class="col-md-3">
+<p><a href="https://myhealthycommunity.dhss.delaware.gov/locations/state/vaccine-tracker#vaccine_tracker"><img class="aligncenter size-full wp-image-157268 img-responsive " src="https://coronavirus.delaware.gov/wp-content/uploads/sites/177/2021/01/data-timeline-250.png" alt="" /></a></p>
+</div>
+<div class="col-md-3">
+<p><a href="/vaccine/vaccination-timeline/"><img class="aligncenter size-full wp-image-157271 img-responsive " src="https://coronavirus.delaware.gov/wp-content/uploads/sites/177/2021/01/timeline-bubble-250.png" alt="" /></a></p>
+</div>
+</div>
+<hr />
+<div class="row">
+<div class="col-md-12 fadeinleft">
+<h2>Information for&#8230;</h2>
+<p>Below you will find information based on your specific need.</p>
+<p>&nbsp;</p>
+<h4 style="text-align: center;"><i class="fa fa-arrow-down fa-fw" aria-hidden="true"></i> Select an Option Below to Learn More:</h4>
+<p>&nbsp;</p>
+</div>
+</div>
+<div class="row fadeinleft">
+<div class="col-md-4">
+<p><a href="https://coronavirus.delaware.gov/vaccine/vaccine-information-for-the-general-public/"><img class="aligncenter size-full wp-image-157272 img-responsive " src="https://coronavirus.delaware.gov/wp-content/uploads/sites/177/2021/01/gp-bubble-250.png" alt="" /></a></p>
+</div>
+<div class="col-md-4">
+<p><a href="https://coronavirus.delaware.gov/vaccine/vaccine-information-for-medical-providers/"><img class="aligncenter size-full wp-image-157275 img-responsive " src="https://coronavirus.delaware.gov/wp-content/uploads/sites/177/2021/01/mp-bubble-250.png" alt="" /></a></p>
+</div>
+<div class="col-md-4">
+<p><a href="https://coronavirus.delaware.gov/vaccine/vaccine-planning-for-agencies-organizations-businesses/"><img class="aligncenter size-full wp-image-157278 img-responsive " src="https://coronavirus.delaware.gov/wp-content/uploads/sites/177/2021/01/agency-bubble-250.png" alt="" /></a></p>
+</div>
+</div>
+<p>&nbsp;</p>
+<br />
+                <div class="row">
+                			<!-- DATA ALERT -->
+			<div class="container">
+				<div class="alert alert-warning text-center covid-alert">
+            		<h2><i class="fas fa-chart-bar fa-white"></i> Get More COVID Data</h2>
+            		<p>For more data on Delaware COVID cases, testing and outcomes, including demographic breakdowns, go to <a href="https://myhealthycommunity.dhss.delaware.gov/locations/state" target="_blank">My Healthy Community <i class="far fa-long-arrow-right"></i></a></p>
+            	</div>
+            </div>
+            <!-- /END DATA ALERT --><br />
+                </div>
+				<div class="row">
+				  <div class="col-sm-2 col-md-offset-5 text-center"><br>
+					  <a style="background-color: #cb2224; -webkit-border-radius: 25px !important; -moz-border-radius: 25px !important; border-radius: 25px !important;color: #ffffff !important;padding: 15px;" href="https://www.youtube.com/playlist?list=PLCUOs10-0UshmvewXwEO0Qa55rYBRvkbu" target="_blank"><i class="fa fa-youtube-play fa-lg fa-fw"></i> Youtube</a>
+				  </div>
+				</div><br /><br /><br /><br />
+            </div>
+
+                            <p><small><span class="label label-success">Related Topics:</span>&nbsp;&nbsp;<a href="https://coronavirus.delaware.gov/tag/vaccine/" rel="tag">Vaccine</a></small></p>
+            <div class="clearfix"></div>
+           
+        </div></div>
+      </div>
+</div><!-- readSpeak_test -->
+</div>
+<!-- BEGIN Footer --><!-- BEGIN Footer -->
+<div id="agencyFooter">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4 text-center dhss-logo">
+          <a href="/"><img src="https://coronavirus.delaware.gov/wp-content/themes/dosgic_CORONAVIRUS_theme/img/DHSS-DPH-Logo-and-Mark-White.png" alt="Delaware Division of Public Health, Coronavirus Response" class="agencyFooter_logo center-block" /></a>
+          <span class="text-center">Delaware <br>Division of Public Health,<br>Coronavirus Response</span>
+        </div>
+        <!--<div class="col-sm-3">
+          	<div class="menu-footer-one-container"><ul id="menu-footer-one" class="menu"><li id="menu-item-165" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-165"><a href="https://coronavirus.delaware.gov/?page_id=97">What Delawareans Can Do</a></li>
+<li id="menu-item-501" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-501"><a href="https://coronavirus.delaware.gov/frequently-asked-questions/">Frequently Asked Questions</a></li>
+<li id="menu-item-502" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-502"><a href="https://coronavirus.delaware.gov/contact/">Contact</a></li>
+</ul></div>        </div>-->
+        <div class="col-sm-4">
+        	<div class="menu-footer-middle-column-container"><ul id="menu-footer-middle-column" class="menu"><li id="menu-item-157219" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-157219"><a href="https://coronavirus.delaware.gov/testing/">Testing</a></li>
+<li id="menu-item-157225" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-157225"><a href="https://coronavirus.delaware.gov/vaccine/" aria-current="page">Vaccine</a></li>
+<li id="menu-item-157229" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-157229"><a target="_blank" rel="noopener noreferrer" href="https://myhealthycommunity.dhss.delaware.gov/locations/state">Data</a></li>
+<li id="menu-item-1300" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1300"><a href="https://coronavirus.delaware.gov/newsroom/">Coronavirus News</a></li>
+</ul></div>        </div>
+        <div class="col-sm-4">
+          	<div class="menu-footer-right-column-menu-container"><ul id="menu-footer-right-column-menu" class="menu"><li id="menu-item-1312" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1312"><a href="https://coronavirus.delaware.gov/frequently-asked-questions/">Frequently Asked Questions</a></li>
+<li id="menu-item-1306" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1306"><a href="https://coronavirus.delaware.gov/community-resources/">Community Resources</a></li>
+<li id="menu-item-157226" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-157226"><a href="https://coronavirus.delaware.gov/contact/">Contact</a></li>
+</ul></div>        </div>
+      </div>
+    </div>
+    <div class="pull-right"><a href="#" class="toggle-footer-btn">+</a></div>
+  </div>
+    <div id="footer">
+      <div class="container">
+        <h1 class="main_footer">Delaware's Government</h1>
+        <hr />
+        <div class="row">
+        	<div class="col-sm-3">
+    <p><a href="https://governor.delaware.gov">Delaware's Governor</a><br />
+    <a href="https://delaware.gov/topics/agencylist_alpha">State Agencies</a><br />
+    <a href="https://delaware.gov/topics/yourgovernment">Elected Officials</a><br />
+    <a href="https://legis.delaware.gov/">General Assembly</a><br />
+    <a href="https://courts.delaware.gov/">Delaware Courts</a><br />
+    <a href="https://dhr.delaware.gov/personnel/employee-resources.shtml">State Employees</a><br />
+    <a href="https://delaware.gov/topics/municipalities">Cities &amp; Towns</a><br />
+    <a href="http://delcode.delaware.gov/">Delaware State Code</a><br />
+    <a href="http://regulations.delaware.gov/">State Regulations</a><br />
+    <a href="https://firststeps.delaware.gov/">Business First Steps</a></p>
+</div>
+<div class="col-sm-3">
+    <p><a href="https://phonedirectory.delaware.gov">Phone Directory</a><br />
+    <a href="https://delaware.gov/locationsdirectory/">Locations Directory</a><br />
+    <a href="https://publicmeetings.delaware.gov/">Public Meetings</a><br />
+    <a href="https://elections.delaware.gov">Voting &amp; Elections</a><br />
+    <a href="https://delaware.gov/topics/transparency">Transparency</a><br />
+    <a href="https://www.choosehealthde.com/Health-Insurance">Delaware Marketplace</a><br />
+    <a href="https://delaware.gov/topics/TaxCenter">Tax Center</a><br />
+    <a href="https://revenue.delaware.gov/pit_onlinefiling.shtml">Personal Income Tax</a><br />
+    <a href="https://delaware.gov/help/privacy">Privacy Policy</a><br />
+    <a href="https://delaware.gov/topics/weatherpage">Weather &amp; Travel</a></p>
+</div>
+<div class="col-sm-3">
+    <p><a href="https://delaware.gov/help/degov-contact.shtml">Contact Us</a><br />
+    <a href="https://corp.delaware.gov/">Corporations</a><br />
+    <a href="https://corp.delaware.gov/paytaxes.shtml">Franchise Tax</a><br />
+    <a href="https://grossreceiptstax.delaware.gov/grtpublic/">Gross Receipts Tax</a><br />
+    <a href="https://dorweb.revenue.delaware.gov/EDIOnline/EDIOnline.dll">Withholding Tax</a><br />
+    <a href="https://delaware.gov/topics/">Delaware Topics</a><br />
+    <a href="https://delaware.gov/help/">Help Center</a><br />
+    <a href="https://delaware.gov/topics/apps">Mobile Apps</a><br />
+    <a href="https://delaware.gov/topics/subscribeemail">E-mail / Text Alerts</a><br />
+    <a href="https://delaware.gov/topics/socialmedia">Social Media</a></p>
+</div>
+<div class="col-sm-3">
+    <img src="https://coronavirus.delaware.gov/wp-content/themes/dosgic_CORONAVIRUS_theme/img/clf4img/portal_footer_seal.png" alt="State Seal of Delaware" class="hidden-xs img-responsive" />
+</div>        </div><!-- /.row -->
+        <hr />
+        <div class="row">
+      		<div class="col-sm-5 col-md-4 col-lg-4">
+        		<div class="social center-block">
+          			<div class="social_facebook">
+            			<a href="https://www.facebook.com/delaware.gov" target="_blank"><span class="wave_text">Facebook Page</span><i class="fab fa-facebook-square fa-3x"></i></a>
+          			</div>
+          			<div class="social_twitter">
+            			<a href="https://twitter.com/delaware_gov/" target="_blank"><span class="wave_text">Twitter Feed</span><i class="fab fa-twitter-square fa-3x"></i></a>
+          			</div>
+          			<div class="social_flickr">
+            			<a href="https://www.flickr.com/groups/delaware_gov/" target="_blank"><span class="wave_text">Flickr Feed</span><i class="fab fa-flickr fa-3x"></i></a>
+          			</div>
+          			<div class="social_youtube">
+            			<a href="https://www.youtube.com/user/DelawareGovernment" target="_blank"><span class="wave_text">Youtube Account</span><i class="fab fa-youtube-square fa-3x"></i></a>
+          			</div>
+          			<div class="social_rss">
+            			<a href="https://www.instagram.com/delaware_gov/" target="_blank"><span class="wave_text">Instagram Photos</span><i class="fab fa-instagram fa-3x"></i></a>
+          			</div>
+        		</div><div class="clear"></div><br />
+      		</div>
+      		<div class="col-sm-3">
+        		<div class="btn-group">
+          			<a class="btn btn-default btn-lg decreaseFont" href="#"><span class="wave_text">Make Text Size Smaller</span><i class="fas fa-minus"></i></a>
+          			<a class="btn btn-default btn-lg resetFont" href="#"><span class="wave_text">Reset Text Size</span><i class="fas fa-font"></i></a>
+          			<a class="btn btn-default btn-lg increaseFont" href="#"><span class="wave_text">Make Text Size Bigger</span><i class="fas fa-plus"></i></a>
+        		</div><br /><br />
+      		</div>
+      		<div class="col-sm-4 col-md-5 col-lg-5">
+            	<img src="https://coronavirus.delaware.gov/wp-content/themes/dosgic_CORONAVIRUS_theme/img/clf4img/gic_portal_footer_logo@2x.png" alt="Built by the Government Information Center (GIC)" class="footer_logo" />
+            	<p>Built by the <a href="https://gic.delaware.gov">Government Information Center</a><br />
+              	&copy;MMXXI <a href="https://delaware.gov">Delaware.gov</a></p>
+            </div>
+        </div>
+      </div><div class="pull-right"><a href="#" class="toggle-footer-btn">-</a></div>
+    </div>
+<!-- END Footer -->
+		<script>
+		( function ( body ) {
+			'use strict';
+			body.className = body.className.replace( /\btribe-no-js\b/, 'tribe-js' );
+		} )( document.body );
+		</script>
+		<script> /* <![CDATA[ */var tribe_l10n_datatables = {"aria":{"sort_ascending":": activate to sort column ascending","sort_descending":": activate to sort column descending"},"length_menu":"Show _MENU_ entries","empty_table":"No data available in table","info":"Showing _START_ to _END_ of _TOTAL_ entries","info_empty":"Showing 0 to 0 of 0 entries","info_filtered":"(filtered from _MAX_ total entries)","zero_records":"No matching records found","search":"Search:","all_selected_text":"All items on this page were selected. ","select_all_link":"Select all pages","clear_selection":"Clear Selection.","pagination":{"all":"All","next":"Next","previous":"Previous"},"select":{"rows":{"0":"","_":": Selected %d rows","1":": Selected 1 row"}},"datepicker":{"dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesMin":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Prev","currentText":"Today","closeText":"Done","today":"Today","clear":"Clear"}};/* ]]> */ </script><script type='text/javascript' src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+<script type='text/javascript' src='https://f1-na.readspeaker.com/script/7262/webReader/webReader.js?pids=wr'></script>
+<script type='text/javascript' src='https://coronavirus.delaware.gov/wp-content/themes/dosgic_CORONAVIRUS_theme/js/dhss_coronavirus_ready.js'></script>
+<script type='text/javascript' src='https://github.hubspot.com/odometer/odometer.js'></script>
+<script type="text/javascript" src="https://kit.fontawesome.com/d81bce52eb.js" crossorigin="anonymous" async="async"></script>
+<script type='text/javascript' src='https://use.fontawesome.com/releases/v5.1.0-6/js/v4-shims.js' async='async'></script>
+<script type='text/javascript' src='https://coronavirus.delaware.gov/wp-content/themes/dosgic_CORONAVIRUS_theme/js/clf4js/clf4.js'></script>
+<script type='text/javascript' src='https://coronavirus.delaware.gov/wp-content/themes/dosgic_CORONAVIRUS_theme/js/jquery.inview.min.js'></script>
+<script type='text/javascript' src='https://coronavirus.delaware.gov/wp-includes/js/wp-embed.min.js?ver=5.4.2'></script>
+<script>
+new UISearch( document.getElementById( 'sb-search' ) );
+</script>
+<script>
+new UISearch( document.getElementById( 'sb-search-main' ) );
+</script>
+<script>
+	setTimeout(function(){
+		jQuery("#odometer").html();
+	 }, 100);
+</script>
+
+</body>
+</html>

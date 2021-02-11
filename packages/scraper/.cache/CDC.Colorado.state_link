@@ -383,7 +383,7 @@
 <!-- THEME DEBUG -->
 <!-- THEME HOOK: 'views_view' -->
 <!-- BEGIN OUTPUT from 'themes/ci_xy/templates/views/views-view.html.twig' -->
-<div class="view view-jumbotrons view-id-jumbotrons view-display-id-block_1 js-view-dom-id-968a62b2fa68773879eb96e04aa7e75d94974f1b89266688bf7aae4aeae981db">
+<div class="view view-jumbotrons view-id-jumbotrons view-display-id-block_1 js-view-dom-id-32a4e27f7d5322fc16d697d88b313ea2f02308c522a99d6c1738d750d06c8539">
   
     
   
@@ -4525,7 +4525,7 @@ Colorado’s call line for general questions about the novel coronavirus (COVID-
       })();
       /*]]>*/
     </script>
-  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","licenseKey":"6ac1f040bb","applicationID":"55470286","transactionName":"YwZaNUJXCkdRB0APCVpMeQJEXwtaHyBGExZVD2QPX1IBaHMLWhIUWw9UBEJqKltUAWIPA0MgVw9ERAtYXAFGS1hCCl0W","queueTime":0,"applicationTime":1734,"atts":"T0FZQwpNGUk=","errorBeacon":"bam-cell.nr-data.net","agent":""}</script></body>
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","licenseKey":"6ac1f040bb","applicationID":"55470286","transactionName":"YwZaNUJXCkdRB0APCVpMeQJEXwtaHyBGExZVD2QPX1IBaHMLWhIUWw9UBEJqKltUAWIPA0MgVw9ERAtYXAFGS1hCCl0W","queueTime":0,"applicationTime":499,"atts":"T0FZQwpNGUk=","errorBeacon":"bam-cell.nr-data.net","agent":""}</script></body>
   </html>
 
 <!-- END OUTPUT from 'themes/ci_xy/templates/system/html.html.twig' -->

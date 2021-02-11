@@ -49,7 +49,7 @@
 # Alaska (state)
 - Active Phase: **Phase 1B**
 
-- Info Link: **[Alaska Department of Health and Social Services](http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/VaccineInfo.aspx)**
+- Info Link: **[Alaska Department of Health and Social Services](http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/VaccineAvailability.aspx)**
 - Workflow Link: **[Vaccine Eligibility Questionnaire](https://survey123.arcgis.com/share/c0037dd8735d44cfbd53d192cb2ffed3?portalUrl=https://Alaska-DHSS.maps.arcgis.com)**
 
 ## Phases
@@ -379,7 +379,7 @@
 # California (state)
 - Active Phase: **Phase 1A**
 
-- Info Link: **[California Department of Public Health](https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/COVID-19/COVID-19Vaccine.aspx)**
+- Info Link: **[California Department of Public Health](https://covid19.ca.gov/vaccines/#When-can-I-get-vaccinated)**
 
 ## Phases
 ### *Phase 1A* **(CURRENTLY ACTIVE)**

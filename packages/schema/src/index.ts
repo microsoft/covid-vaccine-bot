@@ -78,6 +78,11 @@ export interface VaccinationPlan {
 		 * and locations
 		 */
 		providers?: Link
+
+		/**
+		 * Documentation describing the rollout phases in detail - may be more technical, or provide additional content than the info link
+		 */
+		plan?: Link
 	}
 
 	activePhase?: string
@@ -95,6 +100,11 @@ export interface Link {
 	 * When a string, the URL is overridden by this URL
 	 */
 	scrape?: boolean | string
+
+	/**
+	 * A content-type hint for binary formats
+	 */
+	content?: 'pdf' | 'image'
 }
 
 export interface RolloutPhase {
