@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="en-US">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 6) & !(IE 7) & !(IE 8)]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<title>
+COVID-19 | 	</title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="stylesheet" type="text/css" media="all" href="https://311info.net/wp-content/themes/twentyeleven/style.css?ver=20190507" />
+<link rel="pingback" href="https://311info.net/xmlrpc.php">
+<!--[if lt IE 9]>
+<script src="https://311info.net/wp-content/themes/twentyeleven/js/html5.js?ver=3.7.0" type="text/javascript"></script>
+<![endif]-->
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title=" &raquo; Feed" href="https://311info.net/feed/" />
+<link rel="alternate" type="application/rss+xml" title=" &raquo; Comments Feed" href="https://311info.net/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/311info.net\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.1.8"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://311info.net/wp-includes/css/dist/block-library/style.min.css?ver=5.1.8' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-theme-css'  href='https://311info.net/wp-includes/css/dist/block-library/theme.min.css?ver=5.1.8' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='https://311info.net/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.1.9' type='text/css' media='all' />
+<link rel='stylesheet' id='twentyeleven-block-style-css'  href='https://311info.net/wp-content/themes/twentyeleven/blocks.css?ver=20190102' type='text/css' media='all' />
+<script type='text/javascript' src='https://311info.net/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://311info.net/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<link rel='https://api.w.org/' href='https://311info.net/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://311info.net/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://311info.net/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.1.8" />
+<link rel="canonical" href="https://311info.net/covid-19/" />
+<link rel='shortlink' href='https://311info.net/?p=5453' />
+<link rel="alternate" type="application/json+oembed" href="https://311info.net/wp-json/oembed/1.0/embed?url=https%3A%2F%2F311info.net%2Fcovid-19%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://311info.net/wp-json/oembed/1.0/embed?url=https%3A%2F%2F311info.net%2Fcovid-19%2F&#038;format=xml" />
+	<style>
+		/* Link color */
+		a,
+		#site-title a:focus,
+		#site-title a:hover,
+		#site-title a:active,
+		.entry-title a:hover,
+		.entry-title a:focus,
+		.entry-title a:active,
+		.widget_twentyeleven_ephemera .comments-link a:hover,
+		section.recent-posts .other-recent-posts a[rel="bookmark"]:hover,
+		section.recent-posts .other-recent-posts .comments-link a:hover,
+		.format-image footer.entry-meta a:hover,
+		#site-generator a:hover {
+			color: #0041ce;
+		}
+		section.recent-posts .other-recent-posts .comments-link a:hover {
+			border-color: #0041ce;
+		}
+		article.feature-image.small .entry-summary p a:hover,
+		.entry-header .comments-link a:hover,
+		.entry-header .comments-link a:focus,
+		.entry-header .comments-link a:active,
+		.feature-slider a.active {
+			background-color: #0041ce;
+		}
+	</style>
+	<style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #4c4c4c; }
+</style>
+	<link rel="icon" href="https://311info.net/wp-content/uploads/2020/06/cropped-311-1-1-32x32.jpg" sizes="32x32" />
+<link rel="icon" href="https://311info.net/wp-content/uploads/2020/06/cropped-311-1-1-192x192.jpg" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="https://311info.net/wp-content/uploads/2020/06/cropped-311-1-1-180x180.jpg" />
+<meta name="msapplication-TileImage" content="https://311info.net/wp-content/uploads/2020/06/cropped-311-1-1-270x270.jpg" />
+</head>
+
+<body class="page-template-default page page-id-5453 custom-background wp-embed-responsive singular two-column left-sidebar">
+<div class="skip-link"><a class="assistive-text" href="#content">Skip to primary content</a></div><div id="page" class="hfeed">
+	<header id="branding" role="banner">
+			<hgroup>
+				<h1 id="site-title"><span><a href="https://311info.net/" rel="home"></a></span></h1>
+				<h2 id="site-description"></h2>
+			</hgroup>
+
+						<a href="https://311info.net/">
+				<img width="1000" height="288" src="https://311info.net/wp-content/uploads/2020/12/COVID-1000x288.jpeg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" />			</a>
+			
+									<form method="get" id="searchform" action="https://311info.net/">
+		<label for="s" class="assistive-text">Search</label>
+		<input type="text" class="field" name="s" id="s" placeholder="Search" />
+		<input type="submit" class="submit" name="submit" id="searchsubmit" value="Search" />
+	</form>
+			
+			<nav id="access" role="navigation">
+				<h3 class="assistive-text">Main menu</h3>
+				<div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-1172" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1172"><a href="https://311info.net/">Latest Info</a></li>
+<li id="menu-item-5498" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-5453 current_page_item menu-item-5498"><a href="https://311info.net/covid-19/" aria-current="page">COVID-19</a></li>
+<li id="menu-item-5216" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5216"><a href="https://311info.net/helpful-links/">Helpful Links</a></li>
+<li id="menu-item-178" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-178"><a href="https://311info.net/how-can-i-help/">How Can I Help?</a></li>
+<li id="menu-item-180" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-180"><a href="https://311info.net/connect-with-593/">Connect With 311</a></li>
+<li id="menu-item-179" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-179"><a href="https://311info.net/partners/">Partners</a></li>
+<li id="menu-item-177" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-177"><a href="https://311info.net/training/">Volunteer Training</a></li>
+<li id="menu-item-176" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-176"><a href="https://311info.net/contact-us/">Contact Us</a></li>
+</ul></div>			</nav><!-- #access -->
+	</header><!-- #branding -->
+
+
+	<div id="main">
+
+		<div id="primary">
+			<div id="content" role="main">
+
+				
+					
+<article id="post-5453" class="post-5453 page type-page status-publish has-post-thumbnail hentry">
+	<header class="entry-header">
+		<h1 class="entry-title">COVID-19</h1>
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		
+<p style="text-align:center" class="has-huge-font-size"><strong>COVID-19 Information for Apache and Navajo County </strong></p>
+
+
+
+<figure class="wp-block-image"><img src="https://311info.net/wp-content/uploads/2020/12/azdhs-1-1024x133.png" alt="" class="wp-image-5481" srcset="https://311info.net/wp-content/uploads/2020/12/azdhs-1-1024x133.png 1024w, https://311info.net/wp-content/uploads/2020/12/azdhs-1-300x39.png 300w, https://311info.net/wp-content/uploads/2020/12/azdhs-1-768x100.png 768w, https://311info.net/wp-content/uploads/2020/12/azdhs-1-500x65.png 500w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p style="text-align:center" class="has-medium-font-size"><strong>Arizona Department of Health Services</strong></p>
+
+
+
+<p style="text-align:center"><strong>Vaccination Information:</strong>  <br><a href="https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-vaccine">ADHS &#8211; Highlighted Infectious Diseases for Arizona &#8211; Coronavirus Disease 2019 &#8211; COVID-19 Vaccines (azdhs.gov)</a> </p>
+
+
+
+<p style="text-align:center"><strong>Data Dashboard:  </strong><br><a href="https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/covid-19/dashboards/index.php">ADHS &#8211; Data Dashboard (azdhs.gov)</a> </p>
+
+
+
+<p style="text-align:center"><strong>Frequently Asked Questions:  </strong><br><a href="https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-faqs">ADHS &#8211; Highlighted Infectious Diseases for Arizona &#8211; Coronavirus Disease 2019 &#8211; Frequently Asked Questions (FAQs) (azdhs.gov)</a> </p>
+
+
+
+<div class="wp-block-columns has-2-columns">
+<div class="wp-block-column">
+<p style="text-align:center" class="has-medium-font-size"><strong>Navajo County</strong></p>
+</div>
+
+
+
+<div class="wp-block-column">
+<p style="text-align:center" class="has-medium-font-size"><strong>Navajo Nation</strong></p>
+</div>
+</div>
+
+
+
+<div class="wp-block-columns has-2-columns">
+<div class="wp-block-column">
+<p style="text-align:center">
+
+For Navajo County&#8217;s COVID-19 information, please go to  <br><a href="https://reports.mysidewalk.com/ebaab58e56">COVID-19 (mysidewalk.com)</a></p>
+</div>
+
+
+
+<div class="wp-block-column">
+<p style="text-align:center">
+
+For Navajo Nation&#8217;s COVID Information, please go to  <br><a href="https://www.ndoh.navajo-nsn.gov/COVID-19">COVID-19 (navajo-nsn.gov)</a></p>
+</div>
+</div>
+
+
+
+<hr class="wp-block-separator"/>
+
+
+
+<p style="text-align:center" class="has-medium-font-size"><strong>Apache County COVID Information: </strong></p>
+
+
+
+<div class="wp-block-cover has-background-dim-40 has-black-background-color has-background-dim" style="background-image:url(https://311info.net/wp-content/uploads/2020/12/OfficialApacheCountyLogo-002.png)"><p class="wp-block-cover-text"><strong>Apache County COVID-19 Updates</strong></p></div>
+
+
+
+<p style="text-align:center" class="has-medium-font-size"><strong>The FDA has issued an Emergency Use Authorization for the use of the Moderna COVID19 vaccine for those over the age of 18.  Please refer to this page for the most up-to-date information regarding the COVID-19 Vaccine in Apache County.</strong></p>
+
+
+
+<p style="text-align:center" class="has-medium-font-size"><u>Information on the MODERNA COVID-19 Vaccine:  </u><br> <br><a href="https://www.cdc.gov/vaccines/covid-19/info-by-product/moderna/index.html">Moderna COVID-19 Vaccine Information | CDC</a> </p>
+
+
+
+<p style="background-color:#f10000;text-align:center" class="has-text-color has-background has-medium-font-size has-white-color">Apache County is currently Vaccinating the <strong><em>Phase 1B</em></strong> population. For questions about vaccines, please call an Apache County Public Health Clinic or your Primary Care Provider. Please know that ALL appointments are tentative and dependent on availability of the vaccine. </p>
+
+
+
+<figure class="wp-block-image"><a href="https://311info.net/1b0e0f4a-0474-47a3-b814-188c019d1a3b" target="_blank" rel="noreferrer noopener"><img src="https://311info.net/wp-content/uploads/2021/01/Phases-1b-65-and-up-1024x576.png" alt="" class="wp-image-5582" srcset="https://311info.net/wp-content/uploads/2021/01/Phases-1b-65-and-up-1024x576.png 1024w, https://311info.net/wp-content/uploads/2021/01/Phases-1b-65-and-up-300x169.png 300w, https://311info.net/wp-content/uploads/2021/01/Phases-1b-65-and-up-768x432.png 768w, https://311info.net/wp-content/uploads/2021/01/Phases-1b-65-and-up-500x281.png 500w" sizes="(max-width: 1024px) 100vw, 1024px" /></a></figure>
+
+
+
+<figure class="wp-block-image"><a href="https://311info.net/8a5b8e68-1b14-4772-b805-630f5c33f4c5" target="_blank" rel="noreferrer noopener"><img src="https://311info.net/wp-content/uploads/2021/01/65-and-up-Locations-768x1024.png" alt="" class="wp-image-5583" srcset="https://311info.net/wp-content/uploads/2021/01/65-and-up-Locations-768x1024.png 768w, https://311info.net/wp-content/uploads/2021/01/65-and-up-Locations-225x300.png 225w" sizes="(max-width: 768px) 100vw, 768px" /></a></figure>
+
+
+
+<figure class="wp-block-image"><a href="https://311info.net/1fa78574-ab25-459a-8b2d-aca0fe073734" target="_blank" rel="noreferrer noopener"><img src="https://311info.net/wp-content/uploads/2020/12/FAQ-Poster-768x1024.jpg" alt="" class="wp-image-5494" srcset="https://311info.net/wp-content/uploads/2020/12/FAQ-Poster-768x1024.jpg 768w, https://311info.net/wp-content/uploads/2020/12/FAQ-Poster-225x300.jpg 225w" sizes="(max-width: 768px) 100vw, 768px" /></a></figure>
+
+
+
+<figure class="wp-block-image"><a href="https://311info.net/wp-content/uploads/2021/01/Vaccination-Locations-Map-4.jpg" target="_blank" rel="noreferrer noopener"><img src="https://311info.net/wp-content/uploads/2021/01/Vaccination-Locations-Map-4-792x1024.jpg" alt="" class="wp-image-5561" srcset="https://311info.net/wp-content/uploads/2021/01/Vaccination-Locations-Map-4-792x1024.jpg 792w, https://311info.net/wp-content/uploads/2021/01/Vaccination-Locations-Map-4-232x300.jpg 232w, https://311info.net/wp-content/uploads/2021/01/Vaccination-Locations-Map-4-768x993.jpg 768w, https://311info.net/wp-content/uploads/2021/01/Vaccination-Locations-Map-4.jpg 1080w" sizes="(max-width: 792px) 100vw, 792px" /></a></figure>
+
+
+
+<p style="font-size:42px;text-align:center"><strong>**Call for an appointment and availability or schedule online (if applicable)** </strong></p>
+
+
+
+<p style="text-align:center" class="has-large-font-size"><strong>Our Vaccination Partners:</strong></p>
+
+
+
+<p style="text-align:center" class="has-large-font-size"><strong>**Call for an appointment and availability or schedule online (if applicable)**</strong></p>
+
+
+
+<div class="wp-block-columns has-2-columns">
+<div class="wp-block-column">
+<div class="wp-block-image"><figure class="aligncenter is-resized"><img src="https://311info.net/wp-content/uploads/2020/12/8280079-logo.jpg" alt="" class="wp-image-5503" width="193" height="139" srcset="https://311info.net/wp-content/uploads/2020/12/8280079-logo.jpg 832w, https://311info.net/wp-content/uploads/2020/12/8280079-logo-300x214.jpg 300w, https://311info.net/wp-content/uploads/2020/12/8280079-logo-768x548.jpg 768w, https://311info.net/wp-content/uploads/2020/12/8280079-logo-420x300.jpg 420w" sizes="(max-width: 193px) 100vw, 193px" /></figure></div>
+
+
+
+<p></p>
+</div>
+
+
+
+<div class="wp-block-column">
+<p style="text-align:center"><strong>NorthCountry Healthcare</strong><br> 488 S Mountain Ave<br> Springerville, AZ 85938<br> (928)333-0127 </p>
+
+
+
+<p style="text-align:center">Make your appointment online!   </p>
+
+
+
+<blockquote class="wp-embedded-content" data-secret="7S5BTSxqFN"><a href="https://northcountryhealthcare.org/covidvaccine1a/">Schedule Your COVID Vaccine</a></blockquote><iframe class="wp-embedded-content" sandbox="allow-scripts" security="restricted" style="position: absolute; clip: rect(1px, 1px, 1px, 1px);" title="&#8220;Schedule Your COVID Vaccine&#8221; &#8212; North Country HealthCare" src="https://northcountryhealthcare.org/covidvaccine1a/embed/#?secret=7S5BTSxqFN" data-secret="7S5BTSxqFN" width="584" height="329" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+</div>
+</div>
+
+
+
+<div class="wp-block-columns has-2-columns">
+<div class="wp-block-column">
+<div class="wp-block-image"><figure class="aligncenter is-resized"><img src="https://311info.net/wp-content/uploads/2020/12/download.jpg" alt="" class="wp-image-5504" width="126" height="130"/></figure></div>
+</div>
+
+
+
+<div class="wp-block-column">
+<p style="text-align:center"><strong>Summit Healthcare Family Medicine<br> </strong>625 N 13<sup>th</sup> W<br> St. Johns, AZ 85936<br> (928)337-3000 </p>
+
+
+
+<p style="text-align:center"><strong>Summit Mountain
+Ave. Clinic<br>
+</strong>606 N Main St.<br>
+Eagar, AZ 85925<br>
+(928) 333-5333</p>
+</div>
+</div>
+
+
+
+<div class="wp-block-columns has-2-columns">
+<div class="wp-block-column">
+<figure class="wp-block-image"><img src="https://311info.net/wp-content/uploads/2020/12/Western-Drug-1.png" alt="" class="wp-image-5514"/></figure>
+</div>
+
+
+
+<div class="wp-block-column">
+<p style="text-align:center"><strong>Western Drug<br> </strong>106 E Main St.<br> Springerville, AZ 85938<br> (928)333-4321</p>
+</div>
+</div>
+
+
+
+<div class="wp-block-columns has-2-columns">
+<div class="wp-block-column">
+<figure class="wp-block-image"><img src="https://311info.net/wp-content/uploads/2021/01/275207.png" alt="" class="wp-image-5520" srcset="https://311info.net/wp-content/uploads/2021/01/275207.png 500w, https://311info.net/wp-content/uploads/2021/01/275207-300x53.png 300w" sizes="(max-width: 500px) 100vw, 500px" /></figure>
+</div>
+
+
+
+<div class="wp-block-column">
+<p style="text-align:center"><strong>White Mountain Regional Medical Center Clinic</strong><br> 118 S Mountain Ave<br> Springerville, AZ <br> (928)333-7333</p>
+</div>
+</div>
+
+
+
+<div class="wp-block-columns has-2-columns">
+<div class="wp-block-column">
+<figure class="wp-block-image"><img src="https://311info.net/wp-content/uploads/2021/01/download.jpg" alt="" class="wp-image-5528" srcset="https://311info.net/wp-content/uploads/2021/01/download.jpg 225w, https://311info.net/wp-content/uploads/2021/01/download-150x150.jpg 150w" sizes="(max-width: 225px) 100vw, 225px" /></figure>
+</div>
+
+
+
+<div class="wp-block-column">
+<p style="text-align:center"><strong>St. Michael’s Clinic<br> </strong>359A West Highway 264<br> St. Michaels, AZ 86511<br> (928)810-3800 </p>
+
+
+
+<p style="text-align:center"><strong>Sanders
+Clinic<br>
+</strong>Rio Vista Estates Lot #24<br>
+Sanders, AZ 86512<br>
+(928)688-3903
+
+
+
+</p>
+</div>
+</div>
+
+
+
+<p></p>
+			</div><!-- .entry-content -->
+	<footer class="entry-meta">
+			</footer><!-- .entry-meta -->
+</article><!-- #post-5453 -->
+
+						<div id="comments">
+	
+	
+	
+	
+</div><!-- #comments -->
+
+				
+			</div><!-- #content -->
+		</div><!-- #primary -->
+
+
+	</div><!-- #main -->
+
+	<footer id="colophon" role="contentinfo">
+
+			
+
+			<div id="site-generator">
+												<a href="https://wordpress.org/" class="imprint" title="Semantic Personal Publishing Platform">
+					Proudly powered by WordPress				</a>
+			</div>
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+
+<script type='text/javascript' src='https://311info.net/wp-includes/js/comment-reply.min.js?ver=5.1.8'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"https:\/\/311info.net\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://311info.net/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.1.9'></script>
+<script type='text/javascript' src='https://311info.net/wp-includes/js/wp-embed.min.js?ver=5.1.8'></script>
+
+</body>
+</html>

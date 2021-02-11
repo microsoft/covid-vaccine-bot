@@ -1,0 +1,629 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- JAVASCRIPT --> 
+<script type="text/javascript" src="/macros/js/jquery.min.js"></script>
+<script type="text/javascript" src="/macros/js/bootstrap.js"></script>
+<script type="text/javascript" src="/macros/js/banner.js"></script>
+<script type="text/javascript">
+var $window = $(window);
+
+function checkWidth() {
+    if ($window.width() < 600) {
+	var el1 = document.getElementById('sidebar_left');
+	var el2 = document.getElementById('sidebar_right');
+	if (el1 && el2) {
+  	while (el2.firstChild) el1.appendChild(el2.firstChild);
+	}
+
+	// Remove el2 if required
+	el2.parentNode.removeChild(el2);
+    };
+}
+
+</script>
+
+<!-- CSS STYLES --->
+<link rel="stylesheet" type="text/css" href="/macros/css/bootstrap/bootstrap.css" />
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/macros/responsive/styles.css"> 
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+
+</head>
+<body onLoad="checkWidth()">
+<div id="skiptocontent"><a href="#body" class="skip">Skip to Content</a></div>
+<script>
+   $( document ).ready(function() {
+        $(".skip").click(function(event){   
+            var skipTo="#"+this.href.split('#')[1];
+            $(skipTo).attr('tabindex', -1).on('blur focusout', function () {
+                $(this).removeAttr('tabindex');    
+            }).focus();
+        });
+    });
+</script>
+<!-- MDH CURRENT BANNER CONTENT --->
+<!-- Start Banner Include -->
+
+<!-- Specify MDH main phone numbers for Google Searches; added 3-14-15 --> 
+<script type="application/ld+json">
+{ "@context" : "http://schema.org",
+  "@type" : "Organization",
+  "url" : "http://www.health.state.mn.us",
+  "contactPoint" : [
+    { "@type" : "ContactPoint",
+      "telephone" : "+1-888-345-0823",
+      "contactType" : "customer service",
+      "contactOption" : "TollFree",
+      "areaServed" : "US"
+    } , {
+      "@type" : "ContactPoint",
+      "telephone" : "+1-651-201-5000",
+      "contactType" : "customer service"
+    } ] }
+</script>
+
+<!-- MDH BANNER HTML --------------------------------------------------------------------------->
+<div id="mdhHeaderDiv">
+  <header class="banner"> <a href="/index.html"><img class="bannerImg no_print" src="/images/logo-reverse.png" alt="Department of Health Logo"/></a>
+    <img class="bannerImg-small hidden" src="/images/portal-logo-screen_tcm1077-226393.png" alt="Minnesota logo" /><img src="/images/logo_print.png" alt="MDH Logo" width="250" height="37" class="printOnly" />
+	
+	  
+    <div class="title hidden" tabindex=0>Minnesota Department of Health</div>
+  
+    <div id="navigation">
+      <ul id="navbar" class="clearfix">
+        <li><a href="/index.html" id="home">HOME</a></li>
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" id="topic">TOPICS <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/data/index.html">Data, Statistics and Legislation</a></li>
+            <li><a href="/diseases/index.html">Diseases and Conditions</a></li>
+            <li><a href="/facilities/index.html">Health Care Facilities, Providers, and Insurance</a></li>
+            <li><a href="/communities/index.html">Healthy Communities, Environment and Workplaces</a></li>
+            <li><a href="/people/index.html">Individual and Family Health</a></li>
+          </ul>
+        </li>
+        <li><a href="/about/index.html" id="about">ABOUT US</a></li>
+      </ul>
+
+	<div id="searchform">
+            <form id="cse-search-box" name="seek" action="https://mn.gov/mdh/search/" onsubmit="return validateSearch(this);">
+      <div id="searchbox">
+        <label style="position: absolute; left:-1100px" for="q">search input field</label>
+        <button type="submit" class="searchbutton" alt="search">
+ Search
+ </button>
+        <input type="text" name="query" placeholder="Search" id="q" size="30" class="searchtext" value="" onfocus="return clearSearchDefault;" 
+         />
+			   
+        
+      </div>
+      </form>
+    </div>         
+  </div>	
+  </header>
+	
+	</div>
+	
+	
+	
+<!--------------------------------------------------------------------------------------------->
+
+<!-- End Banner Include -->
+
+<!-- Begin Main Content -->
+
+<title>About COVID-19 Vaccine - Minnesota Dept. of Health</title>
+
+<!-- Start Dublin Core - Please add content for the Tags in This Block -->
+
+<meta name="DC.Title" content="About COVID-19 Vaccine - Minnesota Dept. of Health">
+
+<meta name="DC.Creator.CorporateName" scheme="AACR2" content="Minnesota Dept. of Health">
+<meta name="DC.Creator.PersonalName" scheme="AACR2" content="Roddy, Margo">
+<meta name="DC.Creator.PersonalName" scheme="AACR2" content="Pretzel, Elly">
+<meta name="DC.Date.Created" scheme="ISO 8601" content="2020-10-07">
+<meta name="DC.Date.Modified" scheme="ISO 8601" content="2021-02-10">
+<meta name="DC.Language" scheme="ISO639-1" content="en">
+<link rel="schema.dc" href="http://purl.org/metadata/dublin_core_elements">
+
+<!-- End Dublin Core - Please Modify This Block -->
+<link rel="stylesheet" href="/macros/responsive/styles.css">
+</head>
+<body>
+<!-- Begin Main Content -->
+<div id="container">
+	<div id="content" class="clearfix">
+		<div id="sidebar_left">
+
+
+<h2>Vaccine: COVID-19</h2>
+<ul>
+	<li><a href="/diseases/coronavirus/vaccine/index.html">Vaccine Home</a></li>
+	<li><a href="/diseases/coronavirus/vaccine/stats/index.html">Data</a></li>
+	<li><a href="/diseases/coronavirus/vaccine/basics.html">Basics</a></li>
+<li><a href="/diseases/coronavirus/vaccine/plan.html">Phases &amp; Planning</a></li>
+<li><a href="/diseases/coronavirus/vaccine/provider.html">Vaccine Providers</a></li>
+<li><a href="/diseases/coronavirus/vaccine/training.html">Training</a></li>
+<li><a href="/diseases/coronavirus/vaccine/communitytk.html">Vaccine Communication Toolkit</a></li>
+<li><a href="/diseases/coronavirus/vaccine/advisory.html">  Vaccine Allocation Advisory Group</a></li>
+<li><a href="/diseases/coronavirus/vaccine/vaxplansumm.html">Plan Executive Summary</a></li>
+</ul>
+<h2>COVID-19</h2>
+<ul>
+  <li><a href="/diseases/coronavirus/index.html">COVID-19 Home</a></li>
+  <li><a href="/diseases/coronavirus/situation.html">Situation Update</a></li>
+  <li><a href="/diseases/coronavirus/basics.html">About COVID-19</a></li>
+  <li><a href="/diseases/coronavirus/testsites/index.html">Testing</a></li>
+  <li><a href="/diseases/coronavirus/sick.html">If You Are Sick</a></li>
+  <li><a href="/diseases/coronavirus/vaccine/index.html">Vaccine</a></li>
+  <li><a href="/diseases/coronavirus/close.html">Close Contacts &amp; Tracing</a></li>
+  <li><a href="/diseases/coronavirus/prevention.html">Protect Yourself &amp; Others</a></li>
+  <li><a href="/diseases/coronavirus/cope.html">Daily Life &amp; Coping</a></li>
+  <li><a href="/diseases/coronavirus/materials/index.html">Materials &amp; Resources</a></li>
+  <li><a href="/diseases/coronavirus/guidance.html">Guidance Library</a></li>
+  <li><a href="/diseases/coronavirus/stories/index.html">Stories of Community Outreach &amp; Partnership</a></li>
+</ul>
+<p><strong>Information for:</strong></p>
+<ul>
+  <li><a href="/diseases/coronavirus/hcp/index.html">Health Care</a></li>
+  <li><a href="/diseases/coronavirus/communities.html">Community Settings</a></li>
+  <li><a href="/diseases/coronavirus/businesses.html">Businesses &amp; Employers</a></li>
+  <li><a href="/diseases/coronavirus/schools/index.html">Schools &amp; Child Care</a></li>
+  <li><a href="/diseases/coronavirus/schools/ihe.html">Institutes of Higher Education</a></li>
+</ul>
+
+		</div>
+<!---- for mobile menu. Do not edit ---->
+<input type="checkbox" id="nav-trigger" class="nav-trigger" >
+<label for="nav-trigger"><span class="sr-only"> Open Menu </span></label>
+
+
+<div class="site-wrap">
+		<div id="body">
+
+
+<h1>About COVID-19 Vaccine</h1>
+<p>Information is constantly changing for COVID-19 vaccines. Below is what we currently know. <strong>Minnesota will not require COVID-19 vaccines. </strong></p>
+<p class="small"><strong>On this page:</strong><br>
+  <a href="#1">Who can get vaccinated</a><br>
+  <a href="#2">Getting vaccinated</a><br>
+  <a href="#3">Available vaccines</a><br>
+  <a href="#4">Vaccine safety</a><br>
+  <a href="#5">How a vaccine helps</a><br>
+  <a href="#6">Side effects</a><br>
+  <a href="#7">More information</a></p>
+
+<script type="text/javascript"> $( document ).ready(function() { $('.expandAll').on('click', function () { $('#accordion .collapse').collapse('show'); }); $('.contractAll').on('click', function () { $('#accordion .collapse').collapse('hide'); }); });</script>
+
+<div class="panel-group" id="accordion">
+
+<p align="right" class="small"><a href="#exp" class="expandAll">Expand All</a>&nbsp; &nbsp;
+<a href="#cont" class="contractAll">Contract All</a></p>
+	
+	<h2 id="1">Who can get vaccinated</h2>
+<div class="panel panel-default"><div class="panel-heading"> <a data-toggle="collapse" data-target="#who1" href="#who">Who is currently getting vaccinated</a> </div> <div id="who1" class="panel-collapse collapse"> <div class="panel-body">
+<p>Even though we have two vaccines approved for emergency use, it will still take time before everyone can get it. There are currently a limited number of vaccine doses available to states from the federal government. This means there is not enough vaccine for everyone who wants one yet.</p>
+<p>The goal for the first, limited doses of COVID-19 vaccine is to immunize for impact – meaning we are offering vaccine to those at highest risk of getting COVID-19 and those most at risk of severe disease and complications if they get COVID-19. The first groups to get vaccinated include health care workers and people who live and work in long-term care facilities. These people will be contacted by their employer or facility when they are able to get vaccinated. More information on the next eligible groups will be available in the coming weeks.</p>
+<p>Minnesota is also vaccinating a limited number of adults age 65 and older as well as educators (pre-kindergarten through grade 12), school staff, and child care workers. Because of limited vaccine supply, there are only a small number of appointments available. For more information, including who can get vaccinated, see <a href="https://mn.gov/covid19/vaccine/whos-getting-vaccinated/index.jsp">Stay Safe MN: Who's Getting Vaccinated</a>.</p>
+<p>MDH and health care providers will never contact you and ask for personal information or credit card information in order to get the COVID-19 vaccine. For more information, refer to <a href="https://www.ftc.gov/news-events/press-releases/2020/12/ftc-issues-consumer-tips-avoiding-covid-19-vaccine-scams">Federal Trade Commission: FTC Issues Consumer Tips for Avoiding COVID-19 Vaccine Scams</a>.</p></div></div>
+	
+<div class="panel-heading"> <a data-toggle="collapse" data-target="#where1" href="#where">Where to get vaccinated</a> </div> <div id="where1" class="panel-collapse collapse"> <div class="panel-body">
+	<p>Minnesota has large-scale, permanent community vaccination sites in Minneapolis, Duluth, and Rochester. These <a href="https://mn.gov/covid19/vaccine/find-vaccine/community-vaccination-program/index.jsp">COVID-19 Community Vaccination Program</a> sites will continue to vaccinate people age 65 and older.</p>
+	<p>In addition to the permanent sites, the state is sending doses of COVID-19 vaccine to more than 100 hospitals, clinics, and other health care providers to administer vaccines to Minnesota seniors.</p>
+	<p>Minnesotans age 65 and older can use the online vaccine locator map to <a href="https://mn.gov/covid19/vaccine/find-vaccine/locations/index.jsp">Find Vaccine Locations</a> near them and contact those health care providers with questions. Please note that vaccine supply is still limited, so appointments may not always be available.</p> 
+<p>Education and child care staff will be contacted directly if selected to sign up for vaccine appointments. Local public health departments will partner directly with school and child care programs in their communities.</p>
+<ul><li>
+	<a href="https://mn.gov/covid19/vaccine/find-vaccine/community-vaccination-program/faq.jsp">COVID-19 Community Vaccination Program Frequently Asked Questions</a></li>
+	<li><a href="https://mn.gov/covid19/vaccine/find-vaccine/community-vaccination-program/school-and-child-care-staff-faq.jsp">Questions and Answers: COVID-19 Vaccines for School and Child Care Staff</a></li></ul>
+	</div></div>
+	
+<div class="panel-heading"> <a data-toggle="collapse" data-target="#decides1" href="#decides">Who decides who will get vaccinated</a> </div> <div id="decides1" class="panel-collapse collapse"> <div class="panel-body">
+<p>The Centers for Disease Control and Prevention's (CDC) Advisory Committee on Immunization Practices (ACIP) makes recommendations on who should get the vaccine. MDH has brought together the <a href="/diseases/coronavirus/vaccine/advisory.html">Minnesota COVID-19 Vaccine Allocation Advisory Group</a> to help us make sure we are fairly and strategically making decisions for how vaccine should be distributed. The advisory group is made up of external partners who represent key populations in the state, such as local public health, long-term care, pharmacy partners, diverse communities, and more. The final decisions about how to distribute COVID-19 vaccine ultimately come from Governor Tim Walz. Find their guidance for prioritizing COVID-19 vaccine at <a href="/diseases/coronavirus/vaccine/plan.html">COVID-19 Vaccine Phases and Planning</a>.</p></div></div>
+	
+	<div class="panel-heading"> <a data-toggle="collapse" data-target="#had1" href="#had">If you have had COVID-19</a> </div> <div id="had1" class="panel-collapse collapse"> <div class="panel-body">
+<p>You should get vaccinated even if you have had COVID-19 disease. We are not sure how long a person is protected after they have had COVID-19 disease. Some people have reported a second infection after 90 days. If your illness was confirmed by a PCR test in the past 90 days, it is okay to wait to get vaccinated. In order to conserve doses when they are limited, you may be asked to wait for the 90-day period.</p></div></div>
+	
+<div class="panel-heading"> <a data-toggle="collapse" data-target="#people1" href="#people">Who can and can't get the vaccine</a> </div> <div id="people1" class="panel-collapse collapse"> <div class="panel-body">
+<p>At this time, the available COVID-19 vaccines are intended for adults; the Pfizer vaccine allows vaccination of people 16 years and older and the Moderna vaccine allows vaccination for people 18 years and older.</p>
+<p>There are few reasons that someone should not get vaccinated. A person that had a life-threatening reaction to a previous dose of COVID-19 vaccine should not receive any further doses. Additionally, if a person has had a life-threatening reaction to any ingredient in the vaccine, they should not be vaccinated. People who have had anaphylaxis after taking other medicines, particularly medicines given by injection, may be vaccinated but should be observed for 30 minutes after receiving a COVID-19 vaccine.</p></div></div></div>
+
+<div class="panel panel-default"><div class="panel-heading"> <a data-toggle="collapse" data-target="#pops1" href="#pops"><strong>Considerations for special populations</strong></a> </div> <div id="pops1" class="panel-collapse collapse"> <div class="panel-body">
+<p>It is important to know that for some populations, we don't have much information about safety or how well the vaccine works, or it hasn't been studied yet. In these circumstances, people may be vaccinated but should speak with their health care provider so they understand what is known about their situation and vaccination.</p></div></div>
+	
+<div class="panel-heading"> <a data-toggle="collapse" data-target="#pregnant1" href="#pregnant">Pregnant people</a> </div> <div id="pregnant1" class="panel-collapse collapse"> <div class="panel-body">
+<p>Some studies are going on right now and data may be available soon. From the data we do have, there has not been an effect from the vaccine on pregnancy or pregnancy outcomes. There were vaccine study volunteers who were vaccinated and then learned they were pregnant. The manufacturer will follow these individuals throughout the pregnancy and birth. 
+ In the meantime, the American Board of Obstetrics and Gynecology has said that they support pregnant people getting the COVID-19 vaccine if they meet the ACIP recommendations for getting COVID-19 vaccine. We know that pregnant people are at a higher risk of severe disease compared to non-pregnant people. A pregnant person who is part of a group recommended/prioritized to receive a COVID-19 vaccine may choose to be vaccinated.</p></div></div>
+	
+<div class="panel-heading"> <a data-toggle="collapse" data-target="#breastfeed1" href="#breastfeed">People who are breastfeeding</a> </div> <div id="breastfeed1" class="panel-collapse collapse"> <div class="panel-body">
+<p>mRNA vaccines are not thought to be a risk to the breastfeeding infant. A person who is breastfeeding who is part of a group recommended to receive a COVID-19 vaccine (e.g., health care workers) may choose to be vaccinated.</p></div></div>
+
+<div class="panel-heading"> <a data-toggle="collapse" data-target="#immuno1" href="#immuno">Immunocompromised people</a> </div> <div id="immuno1" class="panel-collapse collapse"> <div class="panel-body">
+<p>Immunocompromised means a person has a weak immune system. People with HIV infection, other immunocompromising conditions, or who take medications or therapies that weaken the immune system might be at increased risk for severe COVID-19. We currently do not have data on vaccine safety and efficacy in these groups. People with a weak immune system who want to receive COVID-19 vaccine should be informed that there is little information about how effective or how safe the vaccine is. These people may not have a strong immune response to the vaccine (they may have less protection), so they should continue to follow guidance to protect themselves from COVID-19.</p></div></div></div>
+
+	
+<h2 id="2">Getting vaccinated</h2>
+<div class="panel panel-default"><div class="panel-heading"> <a data-toggle="collapse" data-target="#doses1" href="#doses">Doses of COVID-19 vaccine</a> </div> <div id="doses1" class="panel-collapse collapse"> <div class="panel-body">
+<p>Two doses are needed for the two COVID-19 vaccines from Pfizer and Moderna. The time between the doses depends on the vaccine you are getting. The Pfizer vaccine (ultra-cold vaccine) must be given 21 days (3 weeks) apart and the Moderna vaccine (frozen vaccine) must be given 28 days apart (1 month/4 weeks).</p>
+<p>It is very important that someone gets both vaccine doses, the same product for each dose, and that the doses are given at the correct time apart. The vaccine is only fully effective with both doses of vaccine. If someone only gets one dose, they may not be protected (immune) against COVID-19. It is okay if you get the vaccine within four days of the 21 or 28 day mark (depending on which vaccine you get). If it is more than four days after the appropriate interval, you should be sure to get the second dose as soon as you can.</p>
+<p>We strongly recommend that you schedule an appointment for you second dose when you get the first dose. You should receive a card with the date you were vaccinated. Write the return date for your second dose on the vaccination card and put a reminder in your phone or calendar.</p></div></div>
+	
+<div class="panel-heading"> <a data-toggle="collapse" data-target="#immunity1" href="#immunity">After vaccination</a> </div> <div id="immunity1" class="panel-collapse collapse"> <div class="panel-body">
+<p>After the second dose, it takes about two weeks for your body to build up protection. Even after those two weeks, we know these vaccines are good at preventing people from getting sick, but we don't have enough data yet to say whether someone who was vaccinated may still spread the disease to others if they get infected with COVID-19.</p>
+<p>It is important to continue to follow all public health guidance to reduce the spread of COVID-19 even after you have received two doses of vaccine. This includes wearing a mask, staying 6 feet from others, washing your hands, getting tested for COVID-19 when needed, and following quarantine and isolation requirements. Continue to follow guidance at your workplace, school, and other settings as well.</p>
+<p>At this time, we do not know if this will be a vaccine that people need to get again, like needing a tetanus shot every 10 years or getting a flu shot every year.</p></div></div>
+	
+<div class="panel-heading"> <a data-toggle="collapse" data-target="#collect1" href="#collect">Information collected</a> </div> <div id="collect1" class="panel-collapse collapse"> <div class="panel-body">
+<p>When you get your COVID-19 vaccine, you will be asked to share your full name, date of birth, address, phone number, and gender. You will never be asked about your immigration status when getting the COVID-19 vaccine. Getting vaccinated will not impact your eligibility to gain lawful permanent residence status (green card). You will not be identified as a public charge.</p>
+<p>The person who gives you the vaccine is required to enter vaccine data into Minnesota's immunization information system, the Minnesota Immunization Information Connection (MIIC), so that MDH can get the information. MIIC keeps track of someone's vaccination history and makes sure they get the right vaccinations at the right time. Find more information on MIIC at <a href="/people/immunize/miic/about.html">About MIIC</a>. MIIC collects name, date of birth, address, phone number, and various information related the vaccination itself (administration date, vaccine type, lot number, etc.). MDH shares de-identified vaccine data with the federal government (CDC) every day. This means that the data could not be traced back to a specific person. MDH does not share any information with Immigrations and Customs Enforcement (ICE).</p></div></div>
+
+<div class="panel-heading"> <a data-toggle="collapse" data-target="#proof1" href="#proof">Proof of vaccination</a> </div> <div id="proof1" class="panel-collapse collapse"> <div class="panel-body">
+<p>COVID-19 vaccine providers are required to enter vaccine data into Minnesota's immunization information system, the Minnesota Immunization Information Connection (MIIC). You will also be given a card after your vaccination with the date you were vaccinated. It may be helpful to keep the card handy in case you are asked about which vaccine you received. We do not know how or if any documentation of vaccination will be used for participation in social activities, gatherings, travel, etc.</p></div></div>
+
+<div class="panel-heading"> <a data-toggle="collapse" data-target="#other1" href="#other">Other vaccines</a> </div> <div id="other1" class="panel-collapse collapse"> <div class="panel-body">
+<p>It is recommended that a person should wait 14 days before or after COVID-19 vaccination to receive a vaccine for other diseases, like flu vaccine.</p></div></div>
+
+<div class="panel-heading"> <a data-toggle="collapse" data-target="#residency1" href="#residency">Residency</a> </div> <div id="residency1" class="panel-collapse collapse"> <div class="panel-body">
+	<p>You do not have to be a resident of Minnesota to get vaccinated here.</p></div></div>
+	
+<div class="panel-heading"> <a data-toggle="collapse" data-target="#cost1" href="#cost">Cost/insurance</a> </div> <div id="cost1" class="panel-collapse collapse"> <div class="panel-body">
+<p>COVID-19 vaccine will be provided to people at no cost. However, health care providers will be able to charge an administration fee for giving the vaccine to someone. This means that you might be asked for your insurance information when you get the COVID-19 vaccine. You can still get the COVID-19 vaccine if you do not have insurance and/or cannot pay the administration fee. </p>
+<p>Providers can get the administration fee reimbursed by the patient's public or private insurance company or, for uninsured patients, by the Health Resources and Services Administration's Provider Relief Fund at <a href="https://www.hrsa.gov/coviduninsuredclaim">COVID-19 Claims Reimbursement to Health Care Providers and Facilities for Testing, Treatment, and Vaccine Administration for the Uninsured</a>.</p></div></div></div>
+	
+<h2 id="3">Available vaccines</h2>
+<div class="panel panel-default"> <div class="panel-heading"> <a data-toggle="collapse" data-target="#eua1" href="#eua">Emergency Use Authorization (EUA)</a> </div> <div id="eua1" class="panel-collapse collapse"> <div class="panel-body">
+<p>The first COVID-19 vaccines are authorized for use under an Emergency Use Authorization (EUA) by the Food and Drug Administration (FDA).</p>
+<p>An EUA is used in public health emergencies when: A product shows that it likely works, is safe but hasn't yet gone through the whole process of FDA licensure, and no other remedy is available.</p>
+<p>You have the right to refuse or accept the COVID-19 vaccine, as stated in the EUA fact sheets: <a href="https://www.fda.gov/media/144414/download">Pfizer-BioNTech COVID-19 Vaccine EUA Fact Sheet for Recipients and Caregivers</a> and <a href="https://www.modernatx.com/covid19vaccine-eua/eua-fact-sheet-recipients.pdf">Moderna COVID-19 Vaccine Recipient Fact Sheet | EUA</a>. We strongly encourage you to get the COVID-19 vaccine if it is available to you. Getting the COVID-19 vaccine will help protect you and your family, co-workers, residents, patients, and community.</p></div></div>
+	
+<div class="panel-heading"> <a data-toggle="collapse" data-target="#approve1" href="#approve">Authorized vaccines</a> </div> <div id="approve1" class="panel-collapse collapse"> <div class="panel-body">
+	<p>There have been two COVID-19 vaccines authorized for emergency use by the FDA. The COVID-19 vaccination campaign has begun in Minnesota for our first priority groups. Who can get the vaccine and when will depend on how much vaccine the manufacturers are able to make and send out, and how many vaccine doses Minnesota receives from the federal government. Learn more at <a href="https://mn.gov/covid19/vaccine/distribution/index.jsp">Vaccine Distribution and Administration</a>.</p>
+<p>Several other COVID-19 vaccines are in development. They are going through different studies and checks (called clinical trials) to make sure they are safe, and that they work, before they are given to the public.</p></div></div>
+	
+<div class="panel-heading"> <a data-toggle="collapse" data-target="#choose1" href="#choose">Choosing between different COVID-19 vaccines</a> </div> <div id="choose1" class="panel-collapse collapse"> <div class="panel-body">
+<p>At this point, the data between the two vaccines (Pfizer and Moderna) look very similar. There are not recommendations for certain populations (e.g., older persons or persons with immune disorders, etc.) to get one vaccine over the other. People will likely not have an option to choose between the two vaccines, since they are so similar and clinics may not have an option for which vaccine they get.</p></div></div>
+	
+<div class="panel-heading"> <a data-toggle="collapse" data-target="#made1" href="#made">What the vaccines are made of</a> </div> <div id="made1" class="panel-collapse collapse"> <div class="panel-body">
+<p>The first two vaccines that are out are not live virus vaccines. This means that they cannot give you COVID-19. After getting the vaccine, you will not shed live virus around your home or put others in your household at risk of COVID-19 disease. The vaccine will not affect a PCR COVID-19 test.
+</p>
+<p>The first two vaccines were made using mRNA technology. mRNA stands for messenger ribonucleic acid. mRNA is not able to alter or modify a person's genetic makeup (DNA). Learn more about mRNA vaccines at <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/mrna.html">CDC: Understanding mRNA COVID-19 Vaccines</a>.</p>
+<p>These vaccines do not contain a preservative. They do not contain gelatin.</p>
+<p>For more information about ingredients found in vaccines, check out the FDA website. For specific concerns about certain ingredients, get factual information from <a href="https://www.chop.edu/centers-programs/vaccine-education-center">Children's Hospital of Philadelphia: Vaccine Education Center</a> or <a href="https://immunize.org">Immunization Action Coalition: Talking About Vaccine</a>.</p></div></div></div>
+	
+<h2 id="4">Vaccine safety</h2>
+
+<div class="panel panel-default"><div class="panel-heading"> <a data-toggle="collapse" data-target="#safe1" href="#safe">How we know the vaccine is safe</a> </div> <div id="safe1" class="panel-collapse collapse"> <div class="panel-body">
+<p>Having a safe and effective vaccine is the top priority. The manufacturers must present the study data that shows the vaccine is safe and that it works before it is approved for general populations. This data is closely reviewed by several scientific groups at the Food and Drug Administration (FDA) and the Centers for Disease Control and Prevention (CDC). The CDC Advisory Committee on Immunization Practices (ACIP) and other groups look at available information about a vaccine and make informed decisions about the risks and benefits of using it. MDH is committed to making vaccines available that we are confident are safe and effective.</p>
+	</div></div>
+
+<div class="panel-heading"> <a data-toggle="collapse" data-target="#make1" href="#make">Making a safe and effective vaccine</a> </div> <div id="make1" class="panel-collapse collapse"> <div class="panel-body">
+	<a href="/diseases/coronavirus/vaxprocess.pdf">How COVID-19 Vaccines Are Made (PDF)</a><br>
+This handout explains how the COVID-19 vaccine processes and timelines were made more efficient compared to other vaccine development.<br>
+<span class="small">12/21/20</span>
+<div class="panel panel-default"> <div class="panel-heading"> <a data-toggle="collapse" data-target="#process" href="#process1"><span class="small">Translated versions: How COVID-19 Vaccines Are Made</span></a> </div> <div id="process" class="panel-collapse collapse"> <div class="panel-body">
+ <ul>
+ <li><a href="/diseases/coronavirus/vaxprocessamh.pdf">How COVID-19 Vaccines Are Made in Amharic (PDF)</a></li>
+ <li><a href="/diseases/coronavirus/vaxprocessara.pdf">How COVID-19 Vaccines Are Made in Arabic (PDF)</a></li>
+ <li><a href="/diseases/coronavirus/vaxprocesschi.pdf">How COVID-19 Vaccines Are Made in Chinese (PDF)</a></li>
+ <li><a href="/diseases/coronavirus/vaxprocesshmg.pdf">How COVID-19 Vaccines Are Made in Hmong (PDF)</a></li>	 
+ <li><a href="/diseases/coronavirus/vaxprocesskar.pdf">How COVID-19 Vaccines Are Made in Karen (PDF)</a></li>
+ <li><a href="/diseases/coronavirus/vaxprocesslao.pdf">How COVID-19 Vaccines Are Made in Lao (PDF)</a></li>
+ <li><a href="/diseases/coronavirus/vaxprocessoro.pdf">How COVID-19 Vaccines Are Made in Oromo (PDF)</a></li>
+ <li><a href="/diseases/coronavirus/vaxprocessruss.pdf">How COVID-19 Vaccines Are Made in Russian (PDF)</a></li>
+ <li><a href="/diseases/coronavirus/vaxprocesssom.pdf">How COVID-19 Vaccines Are Made in Somali (PDF)</a></li>
+ <li><a href="/diseases/coronavirus/vaxprocessspa.pdf">How COVID-19 Vaccines Are Made in Spanish (PDF)</a></li>
+ <li><a href="/diseases/coronavirus/vaxprocessviet.pdf">How COVID-19 Vaccines Are Made in Vietnamese (PDF)</a></li>
+ </ul>
+	</div></div></div>
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/yAegixZIJpI?rel=0" frameborder="0" title="Frequently Asked Questions About the COVID-19 Vaccine" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p class="small"><a href="/diseases/coronavirus/materials/vaxfaqtranscript.pdf">Frequently Asked Questions About the COVID-19 Vaccine Transcript (PDF)</a></p>
+
+<!-- <div class="panel panel-default"><div class="panel-heading"> <a data-toggle="collapse" data-target="#22" href="#22a"><span class="small">Other languages and transcripts: FAQs About the COVID-19 Vaccine</span></a> </div> <div id="22" class="panel-collapse collapse"> <div class="panel-body">
+	<ul>
+	<li><a href="/diseases/coronavirus/materials/vaxfaqtranscript.pdf">Frequently Asked Questions About the COVID-19 Vaccine Transcript (PDF)</a></li>
+	<li><a href="https://youtu.be/ycBt_7ux30o">Frequently Asked Questions About the COVID-19 Vaccine: ASL (YouTube)</a></li>
+	<li><a href="https://youtu.be/f3IugIfZfnY">Frequently Asked Questions About the COVID-19 Vaccine: Amharic (YouTube)</a>
+      <ul><li><a href="/diseases/coronavirus/materials/vaxfaqamharic.pdf">Frequently Asked Questions About the COVID-19 Vaccine Transcript: Amharic (PDF)</a></li></ul></li>
+	<li><a href="https://youtu.be/VDw1ECzXH6k">Frequently Asked Questions About the COVID-19 Vaccine: Arabic (YouTube)</a>
+      <ul><li><a href="/diseases/coronavirus/materials/vaxfaqarabic.pdf">Frequently Asked Questions About the COVID-19 Vaccine Transcript: Arabic (PDF)</a></li></ul></li>
+	<li><a href="https://youtu.be/J-sx3ACxZC8">Frequently Asked Questions About the COVID-19 Vaccine: Chinese (YouTube)</a>
+	<ul><li><a href="/diseases/coronavirus/materials/vaxfaqchinese.pdf">Frequently Asked Questions About the COVID-19 Vaccine Transcript: Chinese (PDF)</a></li></ul></li>
+	<li><a href="https://youtu.be/ZpN62UFhdQ8">Frequently Asked Questions About the COVID-19 Vaccine: Hindi (YouTube)</a>
+	<ul><li><a href="/diseases/coronavirus/materials/vaxfaqhindi.pdf">Frequently Asked Questions About the COVID-19 Vaccine Transcript: Hindi (PDF)</a></li></ul></li>
+	<li><a href="https://youtu.be/DfoYtMSkD90">Frequently Asked Questions About the COVID-19 Vaccine: Hmong (YouTube)</a>
+      <ul><li><a href="/diseases/coronavirus/materials/vaxfaqhmong.pdf">Frequently Asked Questions About the COVID-19 Vaccine Transcript: Hmong (PDF)</a></li></ul></li>
+	<li><a href="https://youtu.be/-VuYUframww">Frequently Asked Questions About the COVID-19 Vaccine: Karen (YouTube)</a>
+      <ul><li><a href="/diseases/coronavirus/materials/vaxfaqkaren.pdf">Frequently Asked Questions About the COVID-19 Vaccine Transcript: Karen (PDF)</a></li></ul></li>
+    <li><a href="https://youtu.be/RRsWm7-whYw">Frequently Asked Questions About the COVID-19 Vaccine: Lao (YouTube)</a>
+      <ul><li><a href="/diseases/coronavirus/materials/vaxfaqlao.pdf">Frequently Asked Questions About the COVID-19 Vaccine Transcript: Lao (PDF)</a></li></ul></li>
+    <li><a href="https://youtu.be/_EmFa7B6l8Q">Frequently Asked Questions About the COVID-19 Vaccine: Nepali (YouTube)</a>
+      <ul><li><a href="/diseases/coronavirus/materials/vaxfaqnepali.pdf">Frequently Asked Questions About the COVID-19 Vaccine Transcript: Nepali (PDF)</a></li></ul></li>
+	<li><a href="/diseases/coronavirus/materials/vaxfaqoromo.pdf">Frequently Asked Questions About the COVID-19 Vaccine Transcript: Oromo (PDF)</a></li>
+	<li><a href="https://youtu.be/Umb4jMHPizE">Frequently Asked Questions About the COVID-19 Vaccine: Russian (YouTube)</a>
+	  <ul>
+	    <li><a href="/diseases/coronavirus/materials/vaxfaqrussian.pdf">Frequently Asked Questions About the COVID-19 Vaccine Transcript: Russian (PDF)</a></li>
+	    </ul>
+	  </li>
+	<li><a href="https://youtu.be/syw0r1vbj2w">Frequently Asked Questions About the COVID-19 Vaccine: Somali (YouTube)</a>
+	  <ul>
+	    <li><a href="/diseases/coronavirus/materials/vaxfaqsomali.pdf">Frequently Asked Questions About the COVID-19 Vaccine Transcript: Somali (PDF)</a></li>
+	    </ul>
+	  </li>
+	<li><a href="https://youtu.be/KITjkA-xMh0">Frequently Asked Questions About the COVID-19 Vaccine: Spanish (YouTube)</a>
+	  <ul><li><a href="/diseases/coronavirus/materials/vaxfaqspanish.pdf">Frequently Asked Questions About the COVID-19 Vaccine Transcript: Spanish (PDF)</a></li></ul></li>
+	<li><a href="https://youtu.be/6sh2LoMQJng">Frequently Asked Questions About the COVID-19 Vaccine: Swahili (YouTube)</a>
+	  <ul>
+	    <li><a href="/diseases/coronavirus/materials/vaxfaqswahili.pdf">Frequently Asked Questions About the COVID-19 Vaccine Transcript: Swahili (PDF)</a></li>
+	    </ul>
+	  </li>
+	<li><a href="https://youtu.be/aFQJpEUIrYk">Frequently Asked Questions About the COVID-19 Vaccine: Vietnamese (YouTube)</a>
+	  <ul>
+	    <li><a href="/diseases/coronavirus/materials/vaxfaqviet.pdf">Frequently Asked Questions About the COVID-19 Vaccine Transcript: Vietnamese (PDF)</a></li>
+	    </ul>
+	  </li>
+	</ul>
+	</div></div></div>-->
+<p>The requirements for COVID-19 vaccine are the same as all other vaccines. The companies making the vaccines have to share information with specific agencies like the Food and Drug Administration (FDA) and the Centers for Disease Control and Prevention (CDC) that shows how the vaccine studies were designed, what their process was, how they got their data, and what the results were.</p>
+<p>Health officials, FDA, vaccine manufacturers, and others have committed to only put out vaccines that are shown to be safe. The FDA has given guidance to vaccine manufacturers about what information is needed to prove that a vaccine is safe and that the vaccine works. For more details about expectations and commitments, see:</p>
+ <ul>
+ <li><a href="/news/pressrel/2020/statementcovidvaccine.html">Statement about COVID-19 vaccine planning</a></li>
+ <li><a href="http://www.fda.gov/news-events/fda-voices/fdas-scientific-and-regulatory-oversight-vaccines-vital-public-health">The FDA's Scientific and Regulatory Oversight of Vaccines is Vital to Public Health</a></li>
+ <li>Moderna: <a href="https://investors.modernatx.com/news-releases/news-release-details/biopharma-leaders-unite-stand-science">Biopharma Leaders Unit to Stand with Science</a></li>
+ <li>Biotechnology Innovation Organization: <a href="http://www.bio.org/sites/default/files/2020-09/An_Open_Letter_to_the_Biopharmaceutical_Industry.pdf">An Open letter to the Biopharmaceutical Industry (PDF)</a></li>
+ </ul>
+<p>Learn more about how vaccines are made from the Children's Hospital of Philadelphia at <a href="https://www.chop.edu/centers-programs/vaccine-education-center/making-vaccines">Making Vaccines</a>.</p>
+<p>The CDC has more information on COVID-19 vaccine safety at <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/safety.html">Ensuring the Safety of COVID-19 Vaccines in the United States</a>.</p></div></div>
+	
+<div class="panel-heading"> <a data-toggle="collapse" data-target="#studies1" href="#studies">Who is in the vaccine studies</a> </div> <div id="studies1" class="panel-collapse collapse"> <div class="panel-body">
+<p><strong>Pregnant people and children</strong></p>
+<p>The first vaccine studies are usually done with groups that are at highest risk for the disease, or who will get very sick if they get the disease. Then the studies are expanded to other groups such as pregnant people and people who are immunocompromised (cannot easily fight off a disease). For COVID-19 vaccine, studies focused on non-pregnant adults ages 18 years and older at first (16 years and older for Pfizer). Vaccine manufacturers have started expanding to pregnant people and some children as they get more data from the first part of their studies.</p>
+<p><strong>Diverse and underserved communities</strong></p>
+<p>The COVID-19 vaccine clinical trials include people from diverse communities. It is important for these studies to have equitably more people from racially and ethnically diverse backgrounds. This way they have enough information to be confident that the vaccine is safe and works for these groups. It's especially important that COVID-19 vaccine trials include people from diverse communities, because these communities have been severely impacted by the disease and could greatly benefit from getting vaccinated.</p></div></div></div>
+
+<h2 id="5">How a vaccine helps</h2>
+	
+<div class="panel panel-default"><div class="panel-heading"> <a data-toggle="collapse" data-target="#why1" href="#why">Why we need a vaccine</a> </div> <div id="why1" class="panel-collapse collapse"> <div class="panel-body">
+<p>Getting vaccinated against COVID-19 will be one of the best ways to protect yourself and everyone around you. The more people who get vaccinated against COVID-19, the better it is for everyone. More people vaccinated means that there will be less disease in our communities.</p>
+<p>Getting vaccinated against COVID-19 is one of the most important steps to protect yourself and your community. By stopping the spread of COVID-19, we can keep businesses, schools, and other venues open. Stopping the spread of COVID-19 gets us closer to the end of the pandemic.</p></div></div>
+	
+<div class="panel-heading"> <a data-toggle="collapse" data-target="#herd1" href="#herd">What about herd immunity</a> </div> <div id="herd1" class="panel-collapse collapse"> <div class="panel-body">
+<p>Herd immunity is also called herd effect, community immunity, population immunity, or social immunity. This is when most people in a population or group are immune to a disease. Being immune means they cannot get the disease because either they got a vaccine, or they already had the disease and cannot get it again, at least for a while.</p>
+<p>When a lot of people cannot get the disease, it helps to protect other people in the population who are not immune and can get the disease. Having herd immunity can stop or slow the spread of disease.</p>
+<ul>
+ <li>We do not know enough about COVID-19 to be sure herd immunity is possible. This is a new disease, so there has not been enough time to fully study immunity yet.</li>
+ <li>We do not know how long a person cannot get sick again after they already were sick with COVID-19 (how long they are immune).</li>
+ <li>We do not know if being infected before will make the next infection better or worse.</li>
+ <li>We do not know if a person who was sick before, and then has contact with COVID-19 again, will be able to pass the virus to others again.</li>
+</ul>
+<p>We cannot let herd immunity happen naturally, at the cost of thousands of Minnesotans getting very sick and possibly dying. Vaccination is a way to reach herd immunity without people getting sick and/or dying. Vaccination lets a person's body develop protection against a disease without having to actually get sick.</p></div></div></div>
+
+	<h2 id="6">Side effects</h2>
+<div class="panel panel-default"><div class="panel-heading"> <a data-toggle="collapse" data-target="#expect1" href="#expect">What to expect</a> </div> <div id="expect1" class="panel-collapse collapse"> <div class="panel-body">
+<p>Your health care provider will talk to you about what to expect after getting the COVID-19 vaccine.</p>
+<p>Some side effects are common after vaccination. After getting the COVID-19 vaccine, you will probably have a sore arm and you might have muscle aches, tiredness, headache, or maybe a fever (fever is less common). These side effects usually last one or two days and usually don't prevent you from going about your daily activities. They are a result of your body responding to the vaccine (it's also okay if you don't have any side effects at all).</p>
+<p>The COVID-19 vaccine cannot give you COVID-19 disease. However, if you have side effects after vaccination that are similar to symptoms of COVID-19 and those symptoms continue or worsen, it is possible that you may have been exposed to COVID-19 before getting the vaccine. Call your health care provider to determine next steps such as getting tested.</p>
+<p>Because some of these side effects are similar to COVID-19 symptoms, people working in the health care setting may be given instructions about what to do if symptoms occur.</p></div></div>
+
+<div class="panel-heading"> <a data-toggle="collapse" data-target="#vsafe1" href="#vsafe">V-safe</a> </div> <div id="vsafe1" class="panel-collapse collapse"> <div class="panel-body">
+<p>CDC has also launched a new patient reporting tool for COVID-19 vaccine. It is a smartphone app called v-safe. This app can help with active monitoring for COVID-19 vaccine safety after you get the COVID-19 vaccine. Your health care provider will give you more information on v-safe. You can learn more at <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/safety/vsafe.html">V-safe After Vaccination Health Checker</a>.
+    <ul>
+      <li><a href="/diseases/coronavirus/vaccine/vsafeposter.pdf">Poster: Get vaccinated. Get your smartphone. Get started with v-safe (PDF)</a></li>
+      <li><a href="/diseases/coronavirus/vaccine/vsafefs.pdf">Fact sheet: Get vaccinated. Get your smartphone. Get started with v-safe (PDF)</a></li></ul>
+	  <div class="panel panel-default"> <div class="panel-heading"> <a data-toggle="collapse" data-target="#vs1" href="#vs"><span class="small">Translated V-safe posters and fact sheets</span></a> </div> <div id="vs1" class="panel-collapse collapse"> <div class="panel-body">
+  <ul>
+	<li><a href="/diseases/coronavirus/vaccine/vsafeposterchi.pdf">Poster: Get started with v-safe: Chinese, Simplified (PDF)</a></li>
+    <li><a href="/diseases/coronavirus/vaccine/vsafefschi.pdf">Fact sheet: Get started with v-safe: Chinese, Simplified (PDF)</a></li>  
+	<li><a href="/diseases/coronavirus/vaccine/vsafeposterko.pdf">Poster: Get started with v-safe: Korean (PDF)</a></li>
+    <li><a href="/diseases/coronavirus/vaccine/vsafefsko.pdf">Fact sheet: Get started with v-safe: Korean (PDF)</a></li> 
+	<li><a href="/diseases/coronavirus/vaccine/vsafeposterspan.pdf">Poster: Get started with v-safe: Spanish (PDF)</a></li>
+    <li><a href="/diseases/coronavirus/vaccine/vsafefsspan.pdf">Fact sheet: Get started with v-safe: Spanish (PDF)</a></li> 
+	<li><a href="/diseases/coronavirus/vaccine/vsafeposterviet.pdf">Poster: Get started with v-safe: Vietnamese (PDF)</a></li>
+    <li><a href="/diseases/coronavirus/vaccine/vsafefsviet.pdf">Fact sheet: Get started with v-safe: Vietnamese (PDF)</a></li>
+</ul></div></div></div>
+	</div></div>
+
+<div class="panel-heading"> <a data-toggle="collapse" data-target="#serious1" href="#serious">Serious adverse events</a> </div> <div id="serious1" class="panel-collapse collapse"> <div class="panel-body">
+<p>A serious adverse event is something that is life-threatening.</p>
+<p>The studies for both the Moderna and Pfizer COVID-19 vaccines looked for serious adverse events. Neither vaccine study found a pattern of serious adverse effects from the vaccine. Most adverse effects occur in the six weeks after getting a vaccine, and the COVID-19 vaccine manufacturers had to watch participants of the studies for eight weeks before they could ask for emergency use authorization of their vaccine. That does not mean that a rare serious adverse event won't happen when we begin to vaccinate hundreds of thousands to millions of people.</p>
+<p>Since the approval of the Pfizer COVID-19 vaccine, there have been reports of some serious allergic reactions or anaphylaxis (an immune response of the body that causes someone to go into shock). Allergic reactions like this are known to happen after taking medicines or getting vaccinated, but they are still very rare. CDC and FDA are working to understand what might be causing this. Clinics are prepared to respond quickly to adverse reactions. You will be asked to wait 15-30 minutes after you have been vaccinated so that clinic staff can observe you, this will likely be in a place that allows for social distancing.</p>
+<p><strong>VAERS</strong></p>
+<p>If you have a severe reaction, contact your health care provider. Providers should report severe reactions to the <a href="https://vaers.hhs.gov/">Vaccine Adverse Event Reporting System (VAERS)</a>. This reporting system helps the CDC and FDA continue to monitor the safety of COVID-19 vaccines.</p></div></div></div>
+	
+<h2 id="7">More information</h2>
+	
+<div class="panel panel-default"><div class="panel-heading"> <a data-toggle="collapse" data-target="#do1" href="#do">What you can do now</a> </div> <div id="do1" class="panel-collapse collapse"> <div class="panel-body">
+<p>We are glad so many people want to get vaccinated and know that waiting for vaccine is extremely hard right now. The remedy for this pandemic so close, but we cannot get access to it as fast as we want, so we have to take a phased approach and try to focus initial doses where we'll have the greatest impact on health. Vaccine is constantly being made and distributed. Everyone's opportunity to get vaccinated will come; it will just take some time.</p>
+<p>You can do your part now by continuing to help slow the spread of COVID-19: Wear a mask, wash your hands often, stay 6 feet away from other people, and stay home if you are sick. Doing all of these things will help keep people healthy until a vaccine is widely available.</p>
+<p>You can also get a flu vaccine. While the flu vaccine does not protect against COVID-19, it can save lives and prevent more illness during the COVID-19 pandemic. People need to do everything they can to stay healthy and not overwhelm our health care system this fall and winter. To find where you can get a flu vaccine, visit <a href="https://vaccinefinder.org/">VaccineFinder</a>.</p></div></div>
+	
+<div class="panel-heading"> <a data-toggle="collapse" data-target="#resources1" href="#resources">Resources</a> </div> <div id="resources1" class="panel-collapse collapse"> <div class="panel-body">
+<ul>
+	<li><a href="/diseases/coronavirus/vaccine/basicsfs.pdf">COVID-19 Vaccine Basics (PDF)</a><br>
+ Fact sheet on why we need COVID-19 vaccine, what to expect, and more.<br>
+ <span class="small">1/21/21</span><br>
+ <div class="panel panel-default"> <div class="panel-heading"> <a data-toggle="collapse" data-target="#basics1" href="#basics"><span class="small">Translated versions: COVID-19 Vaccine Basics</span></a> </div> 
+<div id="basics1" class="panel-collapse collapse"> <div class="panel-body">
+  <ul>
+ <li><a href="/diseases/coronavirus/vaccine/basicsfsamh.pdf">COVID-19 Vaccine Basics in Amharic (PDF)</a></li>
+ <li><a href="/diseases/coronavirus/vaccine/basicsfsara.pdf">COVID-19 Vaccine Basics in Arabic (PDF)</a></li>
+ <li><a href="/diseases/coronavirus/vaccine/basicsfschi.pdf">COVID-19 Vaccine Basics in Chinese (PDF)</a></li>
+ <li><a href="/diseases/coronavirus/vaccine/basicsfsfre.pdf">COVID-19 Vaccine Basics in French (PDF)</a></li>	 
+ <li><a href="/diseases/coronavirus/vaccine/basicsfshmg.pdf">COVID-19 Vaccine Basics in Hmong (PDF)</a></li>	 
+ <li><a href="/diseases/coronavirus/vaccine/basicsfskar.pdf">COVID-19 Vaccine Basics in Karen (PDF)</a></li>
+ <li><a href="/diseases/coronavirus/vaccine/basicsfslao.pdf">COVID-19 Vaccine Basics in Lao (PDF)</a></li>
+ <li><a href="/diseases/coronavirus/vaccine/basicsfsoro.pdf">COVID-19 Vaccine Basics in Oromo (PDF)</a></li>
+ <li><a href="/diseases/coronavirus/vaccine/basicsfsrus.pdf">COVID-19 Vaccine Basics in Russian (PDF)</a></li>
+ <li><a href="/diseases/coronavirus/vaccine/basicsfssom.pdf">COVID-19 Vaccine Basics in Somali (PDF)</a></li>
+ <li><a href="/diseases/coronavirus/vaccine/basicsfsspa.pdf">COVID-19 Vaccine Basics in Spanish (PDF)</a></li>
+ <li><a href="/diseases/coronavirus/vaccine/basicsfsviet.pdf">COVID-19 Vaccine Basics in Vietnamese (PDF)</a></li>
+</ul>
+</div></div></div>	<br>
+ </li>
+<li><a href="/diseases/coronavirus/vaccine/getvax.pdf">Getting Vaccinated for COVID-19 (PDF)</a><br>
+This handout explains what happens before, during, and after getting your COVID-19 vaccine.<br>
+<span class="small">1/14/21</span>
+	<div class="panel panel-default"> <div class="panel-heading"> <a data-toggle="collapse" data-target="#getvax1" href="#getvax"><span class="small">Translated versions: Getting Vaccinated for COVID-19</span></a> </div> <div id="getvax1" class="panel-collapse collapse"> <div class="panel-body">
+<ul>
+ <li><a href="/diseases/coronavirus/vaccine/getvaxamh.pdf">Getting Vaccinated for COVID-19 in Amharic (PDF)</a></li>
+ <li><a href="/diseases/coronavirus/vaccine/getvaxara.pdf">Getting Vaccinated for COVID-19 in Arabic (PDF)</a></li>
+ <li><a href="/diseases/coronavirus/vaccine/getvaxchi.pdf">Getting Vaccinated for COVID-19 in Chinese (PDF)</a></li>
+ <li><a href="/diseases/coronavirus/vaccine/getvaxfre.pdf">Getting Vaccinated for COVID-19 in French (PDF)</a></li>
+ <li><a href="/diseases/coronavirus/vaccine/getvaxhmg.pdf">Getting Vaccinated for COVID-19 in Hmong (PDF)</a></li>
+ <li><a href="/diseases/coronavirus/vaccine/getvaxkar.pdf">Getting Vaccinated for COVID-19 in Karen (PDF)</a></li>
+ <li><a href="/diseases/coronavirus/vaccine/getvaxlao.pdf">Getting Vaccinated for COVID-19 in Lao (PDF)</a></li>
+ <li><a href="/diseases/coronavirus/vaccine/getvaxoro.pdf">Getting Vaccinated for COVID-19 in Oromo (PDF)</a></li> 
+ <li><a href="/diseases/coronavirus/vaccine/getvaxrus.pdf">Getting Vaccinated for COVID-19 in Russian (PDF)</a></li>
+ <li><a href="/diseases/coronavirus/vaccine/getvaxsom.pdf">Getting Vaccinated for COVID-19 in Somali (PDF)</a></li> 
+ <li><a href="/diseases/coronavirus/vaccine/getvaxspa.pdf">Getting Vaccinated for COVID-19 in Spanish (PDF)</a></li>
+ <li><a href="/diseases/coronavirus/vaccine/getvaxviet.pdf">Getting Vaccinated for COVID-19 in Vietnamese (PDF)</a></li>
+</ul>
+</div></div></div>	<br>
+</li>
+<li><a href="/diseases/coronavirus/materials/hmong.html#vax">Kab Mob Khaus Las Nas Vais Lav 2019 (COVID-19): Koob Tshuaj</a> (Hmong)</li>
+<li><a href="/diseases/coronavirus/materials/somali.html#vax">Cudurka Koronafayras 2019 (COVID-19): Talaalka</a> (Somali)</li>
+<li><a href="/diseases/coronavirus/materials/spanish.html#vacunas">Enfermedad del coronavirus 2019 (COVID-19): Vacunas</a> (Spanish)<br>
+<br>
+</li>
+ <li><a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/index.html">Coronavirus Disease 2019 (COVID-19) Vaccines</a><br>
+   U.S. vaccination plans, recommendations, and more from the Centers for Disease Control and Prevention (CDC).<br>
+<br>
+</li>
+ <li><a href="https://www.chop.edu/centers-programs/vaccine-education-center/making-vaccines/prevent-covid">Questions and Answers about COVID-19 Vaccines</a><br>
+ Information from Children's Hospital of Philadelphia (CHOP) Vaccine Education Center.<br>
+ <br>
+ </li>
+ <li><a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/faq.html">Frequently Asked Questions about COVID-19 Vaccination</a><br>
+ Information from CDC on COVID-19 vaccine.<br>
+	<br></li>
+ <li><a href="https://www.cdc.gov/vaccines/vac-gen/evalwebs.htm">Finding Credible Vaccine Information</a><br>
+ Information from CDC on finding credible sources.<br>
+ <br>
+ </li>
+ <li><a href="https://newsnetwork.mayoclinic.org/discussion/covid-19-vaccine-myths-debunked/">COVID-19 vaccine myths debunked</a><br>
+ Mayo Clinic article.</li>
+	</ul></div></div></div></div>
+	
+</div></div>
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=mnhealth" async="async"></script>
+  <div id="sidebar_right">
+			<ul id="socialMedia">
+				<li class="addthis_toolbox addthis_default_style"><a href="http://www.addthis.com/bookmark.php?v=250&amp;pub=mnhealth" class="addthis_button share">Share This</a>
+				</li><br />				
+  			  <li class="addthis_toolbox addthis_default_style"><a href="javascript:window.open('http://service.govdelivery.com/service/subscribe.html?code=MNMDH_486', 'Popup','width=700,height=440,toolbar=no,scrollbars=yes,resizable=yes'); void('');" onClick="window.status='Subscribe'; return true" onMouseOver="window.status='Subscribe'; return true" onMouseOut="window.status=''; return true" class="email" alt="Subscribe Coronavirus Disease 2029 (COVID-19) Updates">Subscribe: COVID-19 updates</a></li>
+	  <li><img src="/diseases/coronavirus/images/staysafeiconnbot.png" width="100%" alt="Stay Safe MN"/>
+	<a href="https://mn.gov/covid19/">Minnesota COVID-19  Response</a></span></li></ul>
+
+  <!--Begin text area: you can modify -->	 
+
+	  <a href="/diseases/coronavirus/vaccine/index.html"><img src="/diseases/coronavirus/images/vaxicon.png" width="100%" alt="COVID-19 Vaccine"/></a> <a href="/diseases/coronavirus/testsites/index.html"><img src="/diseases/coronavirus/images/testicon.png" width="100%" alt="Testing locations across the state"/></a>
+<a href="/diseases/coronavirus/schools/plan.html#data"><img src="/diseases/coronavirus/images/schoolicon.png" width="100%" alt="Planning, guidance, and data for schools"/></a>
+<!--<a href="/diseases/coronavirus/prevention.html#masks"><img src="/diseases/coronavirus/images/maskicon.png" width="100%" alt="Masks and Face Coverings"/></a>-->
+
+<br><br>
+
+<h3>Minnesota Helpline:</h3>
+<p>For questions related to the COVID-19 pandemic, call 651-297-1304 or 1-800-657-3504<br>
+Mon.-Fri.: 9 a.m. to 4 p.m.</p>
+<p>Mental Health Crisis Line - Call: **CRISIS  (**274747)</p>
+<hr>
+	  <h2>COVID-19 information in other languages:</h2>
+<ul>
+  <li><a href="/diseases/coronavirus/materials/hmong.html">Kab Mob Khaus Las Nas Vais Lav 2019 (COVID-19)</a><br>
+    (Hmong)</li>
+  <li><a href="/diseases/coronavirus/materials/somali.html">Cudurka Koronafayras 2019 (COVID-19)</a><br>
+    (Somali)</li>
+  <li><a href="/diseases/coronavirus/materials/spanish.html">Enfermedad del Coronavirus 2019 (COVID-19)</a><br>
+    (Spanish)</li>
+<li>
+	<a href="/diseases/coronavirus/materials/asl.html">American Sign Language (ASL) Videos</a></li></ul>
+	  
+<hr>
+<h3 class="small">Contact us:</h3>
+<p class="small">If you have questions or comments about this page, use our <a href="https://survey.vovici.com/se/56206EE321296199">IDEPC Comment Form</a> or call 651-201-5414 for the MDH <a href="/about/org/idepc/index.html"> Infectious Disease Epidemiology, Prevention and Control Division</a>.</p>
+  </div>
+	</div>
+</div>
+ <footer>
+<!-- close content --></div></div>
+<!-- Begin Footer Include -->
+<div id="footer">
+	<div id="footerContainer">
+		<div class="footerTopics">
+			<ul class="clearfix">
+				<li><a href="/people/index.html">Individual &amp; Family Health</a></li>
+				<li><a href="/facilities/index.html">Health Care Facilities, Providers <br>
+&amp; Insurance</a></li>
+				<li><a href="/data/index.html">Data, Statistics and Legislation</a></li>
+                <li><a href="/diseases/index.html">Diseases &amp; Conditions</a></li>
+                <li><a href="/communities/index.html">Healthy Communities, Environment <br>
+              &amp; Workplaces</a></li>
+                <li><a href="/about/index.html">About MDH</a></li>
+                <li><a href="/about/locations/index.html">Locations &#38; Directions</a></li>
+                <li><a href="/forms/feedback/mail.html">Comments &#38; Questions</a></li>
+                <li><a href="/about/privacy.html">Privacy Statement &amp; Disclaimer</a></li>
+                <li><a href="/about/equalopp.html">Equal Opportunity</a>		</li>
+			</ul>
+		</div>
+      <div class="footerTopics"> 
+      <p>651-201-5000 Phone<br />
+				888-345-0823 Toll-free</p>
+			<p>Information on this website is available in alternative formats upon request. </p><p>
+<div style="text-align:left; margin: 30px">
+  <a href="https://mn.gov/portal/" style="display: inline-block; margin: 0 auto;">
+    <img src="https://mn.gov/showcase/assets/footer-register-to-vote-logo-white-left_tcm12-446670.png" alt="mn" title="State of Minnesota" style="height: 20px; width: auto; border-radius: 0px; border: 0px; display: inline-block;">
+  </a>
+  <a href="https://www.sos.state.mn.us/elections-voting/register-to-vote/" style="display: inline-block; margin: 0 auto;">
+    <img src="https://mn.gov/showcase/assets/footer-register-to-vote-logo-white-right_tcm12-446671.png" alt="register to vote" title="Register to Vote at the Secretary of State website" style="height: 20px; width: auto; border-radius: 0px; border: 0px; display: inline-block;">
+  </a>
+		  </div></p><br>
+		<p style="text-align:center; overflow:hidden"><a href="https://mn.gov/portal/" onClick="return OuttaHere(); return false;"><img src="https://mn.gov/portal/assets/mn.logo.footer_tcm1077-65019.png" alt="Minnesota.gov" /></a></p><p style="text-align:center"><a href=			"https://www.phaboard.org/"><img src="/images/phabseal.png"  width="125" height="125" alt="Public Health Accreditation Board" /></a></p>
+	  </div>
+	</div>
+</div>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20272425-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<script type="text/javascript">
+/*<![CDATA[*/
+(function() {
+var sz = document.createElement('script'); sz.type = 'text/javascript'; sz.async = true;
+sz.src = '//siteimproveanalytics.com/js/siteanalyze_6486.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sz, s);
+})();
+/*]]>*/
+</script>
+
+<script>
+$(document).ready(function() {
+	if(document.URL.indexOf("health.state.mn.us/macros/topics/orginfo.html") != -1) {
+		$("#about").addClass("activeBanner");
+	}
+	else if(document.URL.indexOf("health.state.mn.us/index.html") != -1) {
+		$("#home").addClass("activeBanner");
+	}
+
+});
+</script>
+</footer>
+
+<p>Updated Wednesday, 10-Feb-2021 15:37:57 CST </p>
+</body>
+</html>

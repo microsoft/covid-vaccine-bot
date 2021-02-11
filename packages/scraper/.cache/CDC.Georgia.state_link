@@ -1,0 +1,3704 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+  <head>
+    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"5360c08ecf",applicationID:"99788169"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(6),c=e(7),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(8);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(5),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,w=["click","keydown","mousedown","pointerdown","touchstart"];w.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],4:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],5:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],6:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],7:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],8:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?u(e,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){e&&a&&e(n,r,i);for(var c=t(i),f=v(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[h[n]];return p&&p.push([b,n,r,c]),c}}function o(e,t){y[e]=v(e).concat(t)}function m(e,t){var n=y[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return y[e]||[]}function g(e){return p[e]=p[e]||i(n)}function w(e,t){s(e,function(e,n){t=t||"feature",h[n]=t,t in d||(d[t]=[])})}var y={},h={},b={on:o,addEventListener:o,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:w,abort:c,aborted:!1};return b}function o(e){return u(e,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=e("gos"),s=e(6),d={},p={},l=t.exports=i();t.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=b.info=NREUM.info,t=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(y,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+b.offset],null,"api"),c("timing",["load",n]);var r=p.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===p.readyState&&o()}function o(){c("mark",["domContent",a()+b.offset],null,"api")}var a=e(2),c=e("handle"),f=e(6),u=e("ee"),s=e(4),d=window,p=d.document,l="addEventListener",m="attachEvent",v=d.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:v,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var w=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1198.min.js"},h=v&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),b=t.exports={offset:a.getLastTimestamp(),now:a,origin:w,features:{},xhrWrappable:h,userAgent:s};e(1),e(3),p[l]?(p[l]("DOMContentLoaded",o,!1),d[l]("load",r,!1)):(p[m]("onreadystatechange",i),d[m]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var x=0},{}],"wrap-function":[function(e,t,n){function r(e,t){function n(t,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],e)}c(n+"start",[o,a,f],s,u);try{return p=t.apply(a,o)}catch(m){throw c(n+"err",[o,a,m],s,u),m}finally{c(n+"end",[o,a,p],s,u)}}return a(t)?t:(n||(n=""),nrWrapper[p]=t,o(t,nrWrapper,e),nrWrapper)}function r(e,t,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<t.length;u++)f=t[u],c=e[f],a(c)||(e[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!m||t){var c=m;m=!0;try{e.emit(n,r,o,t,a)}catch(f){i([f,n,r,o],e)}m=c}}return e||(e=s),n.inPlace=r,n.flag=p,n}function i(e,t){t||(t=s);try{t.emit("internal-error",e)}catch(n){}}function o(e,t,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(e);return r.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(o){i([o],n)}for(var a in e)l.call(e,a)&&(t[a]=e[a]);return t}function a(e){return!(e&&e instanceof Function&&e.apply&&!e[p])}function c(e,t){var n=t(e);return n[p]=e,o(e,n,s),n}function f(e,t,n){var r=e[t];e[t]=c(r,n)}function u(){for(var e=arguments.length,t=new Array(e),n=0;n<e;++n)t[n]=arguments[n];return t}var s=e("ee"),d=e(7),p="nr@original",l=Object.prototype.hasOwnProperty,m=!1;t.exports=r,t.exports.wrapFunction=c,t.exports.wrapInPlace=f,t.exports.argsToArray=u},{}]},{},["loader"]);</script>
+<noscript><style>form.antibot * :not(.antibot-message) { display: none !important; }</style>
+</noscript><script async src="https://www.googletagmanager.com/gtag/js?id=UA-2982645-7"></script>
+<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments)};gtag("js", new Date());gtag("config", "UA-2982645-7", {"groups":"default","anonymize_ip":true});gtag("config", "UA-24934301-1", {"groups":"default","anonymize_ip":true});</script>
+<link rel="canonical" href="https://dph.georgia.gov/covid-vaccine" />
+<link rel="shortlink" href="https://dph.georgia.gov/node/37051" />
+<meta property="og:site_name" content="Georgia Department of Public Health" />
+<meta property="og:url" content="https://dph.georgia.gov/covid-vaccine" />
+<meta property="og:title" content="COVID Vaccine" />
+<meta property="og:image" content="https://dph.georgia.gov/themes/custom/ga_forest/assets/images/social/pillars-placeholder-wide-stars-stripes-1.png" />
+<meta property="og:image:width" content="1201" />
+<meta property="og:image:height" content="629" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@GaDPH" />
+<meta name="twitter:title" content="COVID Vaccine" />
+<meta name="twitter:url" content="https://dph.georgia.gov/covid-vaccine" />
+<meta name="twitter:image" content="https://dph.georgia.gov/themes/custom/ga_forest/assets/images/social/pillars-placeholder-wide-stars-stripes-1.png" />
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta property="ga:citation:metadata" last_updated="1611874328" internal_url="node/37051" />
+<script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "WebPage",
+            "breadcrumb": {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://dph.georgia.gov/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "COVID Vaccine",
+                        "item": "https://dph.georgia.gov/covid-vaccine"
+                    }
+                ]
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "Georgia Department of Public Health",
+                "url": "https://dph.georgia.gov/",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://dph.georgia.gov/themes/custom/ga_forest/orchard/assets/images/icons/logo/ga-logo--gold.svg",
+                    "width": "80",
+                    "height": "90"
+                }
+            }
+        }
+    ]
+}</script>
+<link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="revision" href="https://dph.georgia.gov/covid-vaccine" />
+
+    <title>COVID Vaccine | Georgia Department of Public Health</title>
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- Font preload -->
+    <link rel="preload" href="/themes/custom/ga_forest/orchard/assets/fonts/proxima-nova/3786F2_0_0.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/themes/custom/ga_forest/orchard/assets/fonts/proxima-nova/3786F2_1_0.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/themes/custom/ga_forest/orchard/assets/fonts/source-serif-pro/var/SourceSerifVariable-Roman.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/themes/custom/ga_forest/orchard/assets/fonts/source-serif-pro/var/SourceSerifVariable-Italic.woff2" as="font" type="font/woff2" crossorigin>
+
+    <!-- Inline font styles -->
+    <style type="text/css">
+      @charset "UTF-8";
+/* Import the variables */
+/* Color palette variables
+   ========================================================================== */
+/* Font stack variables
+   ========================================================================== */
+/* Spacer variables
+   ========================================================================== */
+/* Text size variables
+   ========================================================================== */
+/* Type style variables
+   ========================================================================== */
+/* Import the functions */
+/**
+ * @license
+ * MyFonts Webfont Build ID 3639026, 2018-09-10T15:17:38-0400
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: ProximaNova-Regular by Mark Simonson
+ * URL: https://www.myfonts.com/fonts/marksimonson/proxima-nova/regular/
+ *
+ * Webfont: ProximaNova-Semibold by Mark Simonson
+ * URL: https://www.myfonts.com/fonts/marksimonson/proxima-nova/semibold/
+ *
+ *
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3639026
+ * Licensed pageviews: 30,000,000
+ * Webfonts copyright: Copyright (c) Mark Simonson, 2005. All rights reserved.
+ *
+ * © 2018 MyFonts Inc
+*/
+/* @import must be at top of file, otherwise CSS will not work
+  ... unless you load this asynchronously with JS, as we are doing.
+  @import url('//hello.myfonts.net/count/3786f2');
+*/
+@font-face {
+  font-family: 'Proxima Nova';
+  font-weight: 400;
+  font-style: normal;
+  src: url("/themes/custom/ga_forest/orchard/assets/fonts/proxima-nova/3786F2_0_0.woff2") format("woff2"), url("/themes/custom/ga_forest/orchard/assets/fonts/proxima-nova/3786F2_0_0.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Proxima Nova';
+  font-weight: 600;
+  font-style: normal;
+  src: url("/themes/custom/ga_forest/orchard/assets/fonts/proxima-nova/3786F2_1_0.woff2") format("woff2"), url("/themes/custom/ga_forest/orchard/assets/fonts/proxima-nova/3786F2_1_0.woff") format("woff"); }
+
+/* Import the variables */
+/* Color palette variables
+   ========================================================================== */
+/* Font stack variables
+   ========================================================================== */
+/* Spacer variables
+   ========================================================================== */
+/* Text size variables
+   ========================================================================== */
+/* Type style variables
+   ========================================================================== */
+/* Import the functions */
+@font-face {
+  font-family: 'Source Serif Pro';
+  font-weight: 200;
+  font-style: normal;
+  font-stretch: normal;
+  src: url("/themes/custom/ga_forest/orchard/assets/fonts/source-serif-pro/woff2/SourceSerifPro-ExtraLight.woff2") format("woff2"), url("/themes/custom/ga_forest/orchard/assets/fonts/source-serif-pro/woff/SourceSerifPro-ExtraLight.woff") format("woff"), url("/themes/custom/ga_forest/orchard/assets/fonts/source-serif-pro/ttf/SourceSerifPro-ExtraLight.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Source Serif Pro';
+  font-weight: 200;
+  font-style: italic;
+  font-stretch: normal;
+  src: url("/themes/custom/ga_forest/orchard/assets/fonts/source-serif-pro/woff2/SourceSerifPro-ExtraLightIt.woff2") format("woff2"), url("/themes/custom/ga_forest/orchard/assets/fonts/source-serif-pro/woff/SourceSerifPro-ExtraLightIt.woff") format("woff"), url("/themes/custom/ga_forest/orchard/assets/fonts/source-serif-pro/ttf/SourceSerifPro-ExtraLightIt.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Source Serif Pro';
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  src: url("/themes/custom/ga_forest/orchard/assets/fonts/source-serif-pro/woff2/SourceSerifPro-Light.woff2") format("woff2"), url("/themes/custom/ga_forest/orchard/assets/fonts/source-serif-pro/woff/SourceSerifPro-Light.woff") format("woff"), url("/themes/custom/ga_forest/orchard/assets/fonts/source-serif-pro/ttf/SourceSerifPro-Light.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Source Serif Pro';
+  font-weight: 300;
+  font-style: italic;
+  font-stretch: normal;
+  src: url("/themes/custom/ga_forest/orchard/assets/fonts/source-serif-pro/woff2/SourceSerifPro-LightIt.woff2") format("woff2"), url("/themes/custom/ga_forest/orchard/assets/fonts/source-serif-pro/woff/SourceSerifPro-LightIt.woff") format("woff"), url("/themes/custom/ga_forest/orchard/assets/fonts/source-serif-pro/ttf/SourceSerifPro-LightIt.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Source Serif Pro';
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  src: url("/themes/custom/ga_forest/orchard/assets/fonts/source-serif-pro/woff2/SourceSerifPro-Regular.woff2") format("woff2"), url("/themes/custom/ga_forest/orchard/assets/fonts/source-serif-pro/woff/SourceSerifPro-Regular.woff") format("woff"), url("/themes/custom/ga_forest/orchard/assets/fonts/source-serif-pro/ttf/SourceSerifPro-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Source Serif Pro';
+  font-weight: 400;
+  font-style: italic;
+  font-stretch: normal;
+  src: url("/themes/custom/ga_forest/orchard/assets/fonts/source-serif-pro/woff2/SourceSerifPro-It.woff2") format("woff2"), url("/themes/custom/ga_forest/orchard/assets/fonts/source-serif-pro/woff/SourceSerifPro-It.woff") format("woff"), url("/themes/custom/ga_forest/orchard/assets/fonts/source-serif-pro/ttf/SourceSerifPro-It.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Source Serif Pro';
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  src: url("/themes/custom/ga_forest/orchard/assets/fonts/source-serif-pro/woff2/SourceSerifPro-Semibold.woff2") format("woff2"), url("/themes/custom/ga_forest/orchard/assets/fonts/source-serif-pro/woff/SourceSerifPro-Semibold.woff") format("woff"), url("/themes/custom/ga_forest/orchard/assets/fonts/source-serif-pro/ttf/SourceSerifPro-Semibold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Source Serif Pro';
+  font-weight: 600;
+  font-style: italic;
+  font-stretch: normal;
+  src: url("/themes/custom/ga_forest/orchard/assets/fonts/source-serif-pro/woff2/SourceSerifPro-SemiboldIt.woff2") format("woff2"), url("/themes/custom/ga_forest/orchard/assets/fonts/source-serif-pro/woff/SourceSerifPro-SemiboldIt.woff") format("woff"), url("/themes/custom/ga_forest/orchard/assets/fonts/source-serif-pro/ttf/SourceSerifPro-SemiboldIt.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Source Serif Pro';
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  src: url("/themes/custom/ga_forest/orchard/assets/fonts/source-serif-pro/woff2/SourceSerifPro-Bold.woff2") format("woff2"), url("/themes/custom/ga_forest/orchard/assets/fonts/source-serif-pro/woff/SourceSerifPro-Bold.woff") format("woff"), url("/themes/custom/ga_forest/orchard/assets/fonts/source-serif-pro/ttf/SourceSerifPro-Bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Source Serif Pro';
+  font-weight: 700;
+  font-style: italic;
+  font-stretch: normal;
+  src: url("/themes/custom/ga_forest/orchard/assets/fonts/source-serif-pro/woff2/SourceSerifPro-BoldIt.woff2") format("woff2"), url("/themes/custom/ga_forest/orchard/assets/fonts/source-serif-pro/woff/SourceSerifPro-BoldIt.woff") format("woff"), url("/themes/custom/ga_forest/orchard/assets/fonts/source-serif-pro/ttf/SourceSerifPro-BoldIt.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Source Serif Pro';
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+  src: url("/themes/custom/ga_forest/orchard/assets/fonts/source-serif-pro/woff2/SourceSerifPro-Black.woff2") format("woff2"), url("/themes/custom/ga_forest/orchard/assets/fonts/source-serif-pro/woff/SourceSerifPro-Black.woff") format("woff"), url("/themes/custom/ga_forest/orchard/assets/fonts/source-serif-pro/ttf/SourceSerifPro-Black.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Source Serif Pro';
+  font-weight: 900;
+  font-style: italic;
+  font-stretch: normal;
+  src: url("/themes/custom/ga_forest/orchard/assets/fonts/source-serif-pro/woff2/SourceSerifPro-BlackIt.woff2") format("woff2"), url("/themes/custom/ga_forest/orchard/assets/fonts/source-serif-pro/woff/SourceSerifPro-BlackIt.woff") format("woff"), url("/themes/custom/ga_forest/orchard/assets/fonts/source-serif-pro/ttf/SourceSerifPro-BlackIt.ttf") format("truetype"); }
+
+/* Variable Fonts */
+@font-face {
+  font-family: 'Source Serif Pro VF';
+  font-weight: 200 900;
+  /* default: 389 */
+  font-style: normal;
+  font-stretch: normal;
+  src: url("/themes/custom/ga_forest/orchard/assets/fonts/source-serif-pro/var/SourceSerifVariable-Roman.woff2") format("woff2-variations"); }
+
+@font-face {
+  font-family: 'Source Serif Pro VF';
+  font-weight: 200 900;
+  /* default: 389 */
+  font-style: italic;
+  font-stretch: normal;
+  src: url("/themes/custom/ga_forest/orchard/assets/fonts/source-serif-pro/var/SourceSerifVariable-Italic.woff2") format("woff2-variations"); }
+/*# sourceMappingURL=fonts.css.map */    </style>
+
+    <link rel="stylesheet" media="all" href="/sites/dph.georgia.gov/files/css/css_-BfNq8AtKDUGw_bUwovSfayw9udy33PeLnrDlM5eQRw.css" />
+<link rel="stylesheet" media="all" href="//cloud.typenetwork.com/projects/2738/fontface.css" />
+<link rel="stylesheet" media="all" href="/sites/dph.georgia.gov/files/css/css_yrY5setg0TJXWisNy6FwV6Nl3v41ZzMxqk0OKTdrqjc.css" />
+
+
+    <!-- Inline preferred font loader js -->
+    <script>
+      "use strict";(function(doc){var docEl=doc.documentElement,rootClasses=docEl.classList,activateFonts=function activateFonts(){rootClasses.add("fonts-active");rootClasses.remove("fonts-inactive")},fallbackLoader="/themes/custom/ga_forest/orchard/dist/js/ga-font-loader-fallback.min.js";rootClasses.add("fonts-inactive");// Check session storage to see if fonts are loaded.
+if(sessionStorage.gaFontsLoaded){activateFonts()}// Use CSS Font Loading API if available.
+else if("fonts"in doc){Promise.all([doc.fonts.load("389 1em 'Source Serif Pro VF'"),doc.fonts.load("italic 389 1em 'Source Serif Pro VF'"),doc.fonts.load("400 1em 'Proxima Nova'"),doc.fonts.load("600 1em 'Proxima Nova'")]).then(function(){activateFonts();// Store loading status for future page loads.
+sessionStorage.gaFontsLoaded=true})}// Load FontFaceObserver if CSS Font Loading API is not available.
+else{var ref=doc.getElementsByTagName("script")[0];var script=doc.createElement("script");script.src=fallbackLoader;script.async=true;ref.parentNode.insertBefore(script,ref)}})(document);
+    </script>
+
+    
+<!--[if lte IE 8]>
+<script src="/sites/dph.georgia.gov/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+
+  </head>
+  <body class="mq-breakpoints--hide path-node page-node-type-landing-page u-palette--stars-stripes">
+        <a href="#main-content" class="visually-hidden focusable skip-link">
+      Skip to main content
+    </a>
+
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    <div class="page js-menu-screen-overlay">
+  <div class="page__header">
+          <header class="header__wrapper">
+  <div class="header-top-hat" data-swatch-role="header-top-hat" data-swatch-type="global" data-swatch-text-type="light-text">
+  <div class="header-top-hat__inner">
+    <div class="header-official-site">
+  <div class="header-official-site__description">
+    <span class="header-official-site__description-icon">
+      <img class="header-official-site__description-icon-image" src="/themes/custom/ga_forest/orchard/assets/images/icons/flag/ga-flag.svg" alt="Georgia State Flag" />
+    </span>
+    <p class="header-official-site__description-text">
+      <span class="header-official-site__description-text-content">An official website of the State of Georgia.</span>
+      <a href="#" class="header-official-site__link">
+        <span class="header-official-site__link-text">How you know</span><img class="header-official-site__link-image" src="/themes/custom/ga_forest/orchard/assets/images/icons/arrows/short-down/arrow-short-down--white.svg" alt="" />
+      </a>
+    </p>
+  </div>
+</div>
+    <div class="header-utility-wide">
+  
+    <a id="block-googletranslator" href="#" class="notranslate google-translator-switch header-utility-wide__language-selector">
+  <span class="header-utility-wide__language-selector-image">
+    <?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="19px" viewBox="0 0 29 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-labelledby="title">
+  <title id="title" lang="en">Translate website</title>
+  <g>
+    <path d="M24.33,4.17 C24.994621,4.83810223 25.5940018,5.56807445 26.12,6.35 C26.6350967,7.12058729 27.0706615,7.94145943 27.42,8.8 C27.7723373,9.6560377 28.0435272,10.5432641 28.23,11.45 C28.6033333,13.298 28.6033333,15.202 28.23,17.05 C28.0435272,17.9567359 27.7723373,18.8439623 27.42,19.7 C27.0688291,20.5576831 26.6333593,21.3783761 26.12,22.15 C25.5964154,22.9306385 24.9968239,23.6575175 24.33,24.32 C23.6653853,24.9844812 22.9387439,25.5838766 22.16,26.11 C21.3884495,26.6262553 20.5678002,27.0650515 19.71,27.42 C18.8513525,27.7722346 17.9604959,28.0401614 17.05,28.22 C15.200699,28.5800881 13.299301,28.5800881 11.45,28.22 C10.5424078,28.0415302 9.65473659,27.773554 8.8,27.42 C7.94119967,27.0671701 7.12034398,26.6282636 6.35,26.11 C5.56807445,25.5840018 4.83810223,24.984621 4.17,24.32 C2.84714532,22.9974145 1.79723365,21.4276437 1.08,19.7 C0.718670596,18.8472053 0.447204201,17.9590745 0.27,17.05 C-0.0900880855,15.200699 -0.0900880855,13.299301 0.27,11.45 C0.447204201,10.5409255 0.718670596,9.65279471 1.08,8.8 C1.43282993,7.94119967 1.87173644,7.12034398 2.39,6.35 C3.43726264,4.75837677 4.79837677,3.39726264 6.39,2.35 C7.14931404,1.8479359 7.95660835,1.42251525 8.8,1.08 C9.65279471,0.718670596 10.5409255,0.447204201 11.45,0.27 C13.299301,-0.0900880855 15.200699,-0.0900880855 17.05,0.27 C17.9619779,0.448547171 18.8532883,0.719961226 19.71,1.08 C20.5678002,1.43494852 21.3884495,1.87374468 22.16,2.39 C22.9385594,2.91261692 23.6652175,3.50867747 24.33,4.17 Z M6,13.49 C6,13.09 6,12.69 6.07,12.3 C6.14,11.91 6.14,11.51 6.19,11.13 C6.24,10.75 6.29,10.36 6.36,9.98 C6.43,9.6 6.5,9.24 6.58,8.88 C6.32,8.98 6.06,9.1 5.81,9.22 L5.06,9.59 C4.59659888,9.85181405 4.1521707,10.1458718 3.73,10.47 C3.36739089,10.7543498 3.03255923,11.0724398 2.73,11.42 C2.45354158,11.7278426 2.20896107,12.0628844 2,12.42 C1.81704945,12.7525654 1.68236546,13.109478 1.6,13.48 L6,13.49 Z M6,15 L1.58,15 C1.66745432,15.3719573 1.80895844,15.7290867 2,16.06 C2.2093581,16.4168554 2.45391047,16.7518586 2.73,17.06 C3.03013691,17.4249543 3.36504573,17.7598631 3.73,18.06 C4.15482515,18.377354 4.59901984,18.6679174 5.06,18.93 C5.3,19.06 5.55,19.19 5.81,19.31 C6.07,19.43 6.32,19.54 6.58,19.64 C6.5,19.28 6.43,18.91 6.36,18.54 C6.29,18.17 6.24,17.78 6.19,17.4 C6.14,17.02 6.1,16.62 6.07,16.22 C6.04,15.82 6,15.4 6,15 Z M9.67,2.34 C8.84033725,2.67551895 8.04358997,3.0872833 7.29,3.57 C6.57186518,4.06195986 5.90217943,4.62114745 5.29,5.24 C4.00678407,6.48932675 3.00749019,8.00020453 2.36,9.67 C2.649323,9.40557476 2.95673549,9.16164963 3.28,8.94 C3.6218041,8.70506997 3.97561708,8.48810919 4.34,8.29 C4.76,8.06 5.2,7.84 5.66,7.64 C6.12,7.44 6.6,7.26 7.09,7.09 C7.26,6.59 7.44,6.09 7.64,5.65 C7.84,5.21 8.06,4.76 8.29,4.34 C8.52,3.92 8.73,3.6 9,3.27 C9.20512929,2.94728285 9.42883976,2.63675937 9.67,2.34 Z M2.36,18.82 C2.67845382,19.6537044 3.08403492,20.4514589 3.57,21.2 C4.0541328,21.9424231 4.61377888,22.632765 5.24,23.26 C5.86535309,23.8842795 6.55217343,24.4437868 7.29,24.93 C8.03714743,25.4210794 8.83509844,25.8301131 9.67,26.15 C9.42883976,25.8532406 9.20512929,25.5427172 9,25.22 C8.77,24.89 8.55,24.54 8.33,24.16 C8.11,23.78 7.88,23.3 7.68,22.84 C7.48,22.38 7.3,21.9 7.13,21.4 C6.64,21.24 6.13,21.05 5.7,20.85 C5.27,20.65 4.8,20.43 4.38,20.2 C4.0135253,20.0055315 3.65950779,19.7884453 3.32,19.55 C2.98298199,19.3298983 2.66216121,19.0859408 2.36,18.82 Z M13.51,7.51 C13.04,7.51 12.58,7.51 12.13,7.59 C11.68,7.67 11.24,7.68 10.8,7.75 L9.52,8 C9.1,8.09 8.69,8.19 8.29,8.31 C8.17,8.71 8.07,9.12 7.98,9.54 C7.89,9.96 7.82,10.39 7.76,10.82 C7.7,11.25 7.64,11.7 7.6,12.15 C7.56,12.6 7.52,13.05 7.51,13.51 L13.51,13.51 L13.51,7.51 Z M7.51,15 C7.51,15.46 7.51,15.91 7.6,16.36 C7.69,16.81 7.69,17.25 7.76,17.69 C7.83,18.13 7.9,18.55 8,19 C8.1,19.45 8.19,19.83 8.31,20.23 C8.71,20.35 9.12,20.45 9.54,20.54 C9.96,20.63 10.39,20.7 10.82,20.77 C11.25,20.84 11.7,20.89 12.15,20.93 C12.6,20.97 13,21 13.51,21 L13.51,15 L7.51,15 Z M13.51,1.58 C13.1360334,1.66145587 12.7756931,1.79616251 12.44,1.98 C12.075362,2.17322533 11.7389029,2.4154759 11.44,2.7 C11.0951346,3.00536194 10.7772869,3.3399385 10.49,3.7 C10.1657153,4.11784508 9.87798731,4.56281976 9.63,5.03 C9.48609545,5.26908443 9.35588578,5.51614893 9.24,5.77 C9.12,6.03 9,6.29 8.9,6.55 C9.26,6.46 9.63,6.39 10,6.32 L11.15,6.16 L12.32,6.03 C12.72,6.03 13.12,5.98 13.53,5.97 L13.51,1.58 Z M13.51,22.49 C13.1,22.49 12.7,22.49 12.3,22.43 C11.9,22.37 11.52,22.36 11.13,22.31 C10.74,22.26 10.36,22.2 9.98,22.13 C9.6,22.06 9.24,21.99 8.88,21.9 C8.98,22.17 9.1,22.44 9.22,22.69 C9.34,22.94 9.47,23.19 9.61,23.42 C9.85327538,23.8930716 10.1412541,24.3417826 10.47,24.76 C10.7547985,25.1222212 11.0728502,25.4570125 11.42,25.76 C11.7216725,26.0383666 12.0577368,26.2769723 12.42,26.47 C12.7556931,26.6538375 13.1160334,26.7885441 13.49,26.87 L13.51,22.49 Z M15,6 C15.4,6 15.8,6 16.19,6.06 L17.37,6.19 L18.51,6.35 C18.88,6.42 19.26,6.49 19.63,6.58 C19.51,6.32 19.39,6.06 19.28,5.8 C19.17,5.54 19,5.3 18.9,5.07 C18.6282229,4.60820961 18.3276277,4.16399678 18,3.74 C17.6968408,3.37779971 17.3622003,3.04315918 17,2.74 C16.6992706,2.45768605 16.3631213,2.21565858 16,2.02 C15.6889008,1.82725711 15.3522823,1.67914495 15,1.58 L15,6 Z M21,13.48 C21,13.02 21,12.57 20.91,12.12 C20.82,11.67 20.82,11.23 20.76,10.79 C20.7,10.35 20.62,9.93 20.53,9.51 C20.44,9.09 20.33,8.68 20.21,8.28 C19.81,8.16 19.4,8.06 18.99,7.97 L17.7,7.75 C17.26,7.68 16.81,7.63 16.36,7.59 C15.91,7.55 15.46,7.52 15,7.51 L15,13.51 L21,13.48 Z M15,21 C15.46,21 15.91,21 16.36,20.91 C16.81,20.82 17.26,20.82 17.7,20.75 C18.14,20.68 18.56,20.61 18.98,20.52 C19.4,20.43 19.8,20.33 20.2,20.21 C20.32,19.81 20.42,19.4 20.52,18.98 C20.62,18.56 20.69,18.13 20.75,17.7 C20.81,17.27 20.86,16.82 20.9,16.37 C20.94,15.92 21,15.46 21,15 L15,15 L15,21 Z M15,26.92 C15.3708792,26.8388362 15.7279603,26.7040886 16.06,26.52 C16.4207831,26.3245862 16.7565628,26.0861827 17.06,25.81 C17.424535,25.5094012 17.7594012,25.174535 18.06,24.81 C18.3818387,24.3848305 18.672593,23.937002 18.93,23.47 C19.06,23.24 19.19,22.99 19.31,22.74 C19.43,22.49 19.55,22.22 19.66,21.95 C19.29,22.04 18.91,22.12 18.54,22.18 C18.17,22.24 17.78,22.31 17.4,22.36 C17.02,22.41 16.62,22.45 16.22,22.48 C15.82,22.51 15.43,22.53 15.03,22.54 L15,26.92 Z M26.15,9.67 C25.8321531,8.83418947 25.4230084,8.03602186 24.93,7.29 C24.4459563,6.56590536 23.886129,5.8954534 23.26,5.29 C22.6352484,4.64633828 21.9448174,4.06986196 21.2,3.57 C20.453366,3.08737994 19.6632643,2.67558963 18.84,2.34 C19.08,2.63 19.32,2.93 19.55,3.27 C19.7882726,3.61506745 20.0085659,3.97220973 20.21,4.34 C20.44,4.76 20.65,5.2 20.85,5.65 C21.0573339,6.12048603 21.2408986,6.60109186 21.4,7.09 C21.9,7.26 22.4,7.44 22.84,7.64 C23.28,7.84 23.74,8.06 24.16,8.29 C24.5243829,8.48810919 24.8781959,8.70506997 25.22,8.94 C25.5464539,9.16160872 25.8571949,9.40552368 26.15,9.67 Z M18.84,26.15 C20.4955429,25.4992187 21.9999111,24.5155933 23.26,23.26 C23.8891054,22.635367 24.4490096,21.9447068 24.93,21.2 C25.4230084,20.4539781 25.8321531,19.6558105 26.15,18.82 C25.8571949,19.0844763 25.5464539,19.3283913 25.22,19.55 C24.8804922,19.7884453 24.5264747,20.0055315 24.16,20.2 C23.74,20.43 23.3,20.65 22.84,20.85 C22.369514,21.0573339 21.8889081,21.2408986 21.4,21.4 C21.2408986,21.8889081 21.0573339,22.369514 20.85,22.84 C20.65,23.3 20.44,23.74 20.21,24.16 C20.0085449,24.5245479 19.7882467,24.8783601 19.55,25.22 C19.32,25.56 19.08,25.86 18.84,26.15 Z M22.49,13.49 L26.92,13.49 C26.8417217,13.1182717 26.7068157,12.7607708 26.52,12.43 C26.3180033,12.0708848 26.0765044,11.7354697 25.8,11.43 C25.4970125,11.0828502 25.1622212,10.7647985 24.8,10.48 C24.3829563,10.1536121 23.9416826,9.8594296 23.48,9.6 L22.73,9.23 C22.48,9.11 22.21,8.99 21.94,8.89 C22.03,9.25 22.11,9.62 22.17,9.99 C22.23,10.36 22.3,10.75 22.35,11.14 C22.4,11.53 22.44,11.91 22.47,12.31 C22.5,12.71 22.48,13.09 22.49,13.49 Z M22.49,15 C22.49,15.4 22.49,15.8 22.43,16.19 C22.37,16.58 22.36,16.98 22.31,17.37 C22.26,17.76 22.2,18.13 22.13,18.51 C22.06,18.89 21.99,19.25 21.9,19.61 C22.17,19.51 22.44,19.39 22.69,19.28 L23.44,18.9 C23.9001436,18.6306655 24.3411876,18.3299537 24.76,18 C25.124535,17.6994012 25.4594012,17.364535 25.76,17 C26.0361182,16.6942183 26.2775848,16.3588479 26.48,16 C26.6682928,15.669922 26.8032883,15.3121841 26.88,14.94 L22.49,15 Z"></path>
+  </g>
+</svg>
+
+  </span>
+  <span class="header-utility-wide__language-selector-text">Language: English</span>
+</a>
+
+  
+
+
+  <a class="header-utility-wide__agency-selector" href="https://georgia.gov/agency-list">
+    <span class="header-utility-wide__agency-selector-image">
+      <?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="19px" viewBox="0 0 29 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M0.617419355,3.59225806 C0.216776503,3.20566764 -0.00660702525,2.67090101 -5.68317041e-13,2.11419355 C-0.0106802799,1.55123316 0.212938939,1.00912596 0.617419355,0.617419355 C1.00912596,0.212938939 1.55123316,-0.0106802799 2.11419355,1.39428399e-16 C2.67090101,-0.00660702525 3.20566764,0.216776503 3.59225806,0.617419355 C3.99673848,1.00912596 4.2203577,1.55123316 4.20967742,2.11419355 C4.21628444,2.67090101 3.99290092,3.20566764 3.59225806,3.59225806 C3.20566764,3.99290092 2.67090101,4.21628444 2.11419355,4.20967742 C1.55123316,4.2203577 1.00912596,3.99673848 0.617419355,3.59225806 Z M0.617419355,10.6083871 C-0.2033369,9.78660882 -0.2033369,8.45532666 0.617419355,7.63354839 C1.00912596,7.22906797 1.55123316,7.00544875 2.11419355,7.01612903 C2.67090101,7.00952201 3.20566764,7.23290554 3.59225806,7.63354839 C4.41301432,8.45532666 4.41301432,9.78660882 3.59225806,10.6083871 C3.20566764,11.0090299 2.67090101,11.2324135 2.11419355,11.2258065 C1.55123316,11.2364867 1.00912596,11.0128675 0.617419355,10.6083871 Z M0.617419355,17.6245161 C-0.2033369,16.8027379 -0.2033369,15.4714557 0.617419355,14.6496774 C1.00912596,14.245197 1.55123316,14.0215778 2.11419355,14.0322581 C2.67090101,14.025651 3.20566764,14.2490346 3.59225806,14.6496774 C4.41301432,15.4714557 4.41301432,16.8027379 3.59225806,17.6245161 C3.20566764,18.025159 2.67090101,18.2485425 2.11419355,18.2419355 C1.55123316,18.2526158 1.00912596,18.0289965 0.617419355,17.6245161 Z M1.55290323,1.59967742 C1.41931181,1.73744669 1.34537146,1.92229758 1.34709677,2.11419355 C1.3476755,2.29738488 1.4218314,2.47266245 1.55290323,2.60064516 C1.69920772,2.7506635 1.9055909,2.82633733 2.11419355,2.80645161 C2.29827569,2.81036931 2.47526917,2.73548745 2.60064516,2.60064516 C2.73548745,2.47526917 2.81036931,2.29827569 2.80645161,2.11419355 C2.81248097,1.92151358 2.73789398,1.73504611 2.60064516,1.59967742 C2.47266245,1.46860559 2.29738488,1.39444969 2.11419355,1.39387097 C1.92229758,1.39214565 1.73744669,1.46608601 1.59967742,1.59967742 L1.55290323,1.59967742 Z M1.55290323,8.61580645 C1.41931181,8.75357573 1.34537146,8.93842661 1.34709677,9.13032258 C1.3476755,9.31351391 1.4218314,9.48879149 1.55290323,9.61677419 C1.68827192,9.75402301 1.87473939,9.82861 2.06741935,9.82258065 C2.25150149,9.82649834 2.42849498,9.75161648 2.55387097,9.61677419 C2.70614804,9.50019665 2.79870255,9.32194352 2.80645161,9.13032258 C2.81248097,8.93764262 2.73789398,8.75117515 2.60064516,8.61580645 C2.47111864,8.48816631 2.29603284,8.41745858 2.11419355,8.41935484 C1.92361093,8.41511543 1.73893664,8.48562743 1.59967742,8.61580645 L1.55290323,8.61580645 Z M1.55290323,15.6319355 C1.41931181,15.7697048 1.34537146,15.9545556 1.34709677,16.1464516 C1.3476755,16.3296429 1.4218314,16.5049205 1.55290323,16.6329032 C1.68827192,16.770152 1.87473939,16.844739 2.06741935,16.8387097 C2.25150149,16.8426274 2.42849498,16.7677455 2.55387097,16.6329032 C2.70614804,16.5163257 2.79870255,16.3380726 2.80645161,16.1464516 C2.81248097,15.9537716 2.73789398,15.7673042 2.60064516,15.6319355 C2.47266245,15.5008637 2.29738488,15.4267078 2.11419355,15.426129 C1.92229758,15.4244037 1.73744669,15.4983441 1.59967742,15.6319355 L1.55290323,15.6319355 Z M6.31451613,2.80645161 C6.13043399,2.81036931 5.95344051,2.73548745 5.82806452,2.60064516 C5.6897622,2.47695514 5.61137492,2.29973173 5.61290323,2.11419355 C5.60687387,1.92151358 5.68146086,1.73504611 5.81870968,1.59967742 C5.94669239,1.46860559 6.12196996,1.39444969 6.30516129,1.39387097 L27.3535484,1.39387097 C27.539565,1.39403473 27.7179031,1.46806187 27.8493548,1.59967742 C27.9866037,1.73504611 28.0611906,1.92151358 28.0551613,2.11419355 C28.059079,2.29827569 27.9841971,2.47526917 27.8493548,2.60064516 C27.7204064,2.7359545 27.5404134,2.81066857 27.3535484,2.80645161 L6.31451613,2.80645161 Z M6.31451613,9.82258065 C5.93065011,9.82261477 5.61802144,9.51415448 5.61290323,9.13032258 C5.60687387,8.93764262 5.68146086,8.75117515 5.81870968,8.61580645 C5.95052102,8.48582921 6.12945195,8.41493205 6.31451613,8.41935484 L27.3629032,8.41935484 C27.5489198,8.4195186 27.727258,8.49354574 27.8587097,8.62516129 C27.9959585,8.76052998 28.0705455,8.94699745 28.0645161,9.13967742 C28.0684338,9.32375956 27.993552,9.50075304 27.8587097,9.62612903 C27.7297612,9.76143837 27.5497682,9.83615245 27.3629032,9.83193548 L6.31451613,9.82258065 Z M6.31451613,16.8387097 C5.93065011,16.8387438 5.61802144,16.5302835 5.61290323,16.1464516 C5.60687387,15.9537716 5.68146086,15.7673042 5.81870968,15.6319355 C5.94669239,15.5008637 6.12196996,15.4267078 6.30516129,15.426129 L27.3535484,15.426129 C27.539565,15.4262928 27.7179031,15.5003199 27.8493548,15.6319355 C27.9866037,15.7673042 28.0611906,15.9537716 28.0551613,16.1464516 C28.059079,16.3305338 27.9841971,16.5075272 27.8493548,16.6329032 C27.7204064,16.7682126 27.5404134,16.8429266 27.3535484,16.8387097 L6.31451613,16.8387097 Z"></path>
+</svg>
+
+    </span>
+    <span class="header-utility-wide__agency-selector-text">Organizations A-Z</span>
+  </a>
+</div>
+  </div>
+    
+<div class="header-official-site__information" aria-hidden="true">
+  <div class="header-official-site__information-official">
+    <strong>The .gov means it’s official.</strong>
+    <p>Local, state, and federal government websites often end in .gov. State of Georgia government websites and email systems use “georgia.gov” or “ga.gov” at the end of the address. Before sharing sensitive or personal information, make sure you’re on an official state website.</p>
+  </div>
+  <div class="header-official-site__information-secure">
+    <strong>Still not sure?</strong>
+    <p>Call 1-800-GEORGIA to verify that a website is an official website of the State of Georgia.</p>
+  </div>
+</div>
+</div>
+      <div class="emergency-wrapper emergency-wrapper--dph">
+              <div class="alert alert--emergency alert--hidden">
+                <div class="alert__icon-wrapper">
+            <img src="/themes/custom/ga_forest/orchard/assets/images/icons/alerts/alert-emergency.svg" class="alert__icon" alt="">
+          </div>
+        
+  <div class="alert__inner-wrapper">
+    <div class="alert__inner">
+                  <a href="#" class="alert__link--close">
+            <img src="/themes/custom/ga_forest/orchard/assets/images/icons/interaction/close/close--black.svg" class="alert__link--close-icon" alt="Dismiss alert">
+          </a>
+        
+
+                <div class="alert__content">
+            <div class="alert__title-wrapper">
+              <div class="alert__type">emergency</div><div class="alert__colon">:</div>
+                          </div>
+
+                          <div class="alert__body">
+                
+                                                                </div>
+                      </div>
+        
+    </div>
+  </div>
+</div>
+          </div>
+        <div class="header-branding-bar" data-swatch-role="header-branding" data-swatch-type="global" data-swatch-text-type="light-text">
+  <div class="header-branding-bar__inner">
+    
+
+  
+  <div class="header-branding-lockup header-branding-lockup--dph">
+    <a class="header-branding-lockup__link" href="/" title="Georgia Department of Public Health">
+      <span class="header-branding-lockup__logo header-branding-lockup__logo--agency header-branding-lockup__logo--dph">
+        <img class="header-branding-lockup__logo-image" src="/themes/custom/ga_forest/orchard/assets/images/icons/logo/ga-logo--gold.svg" alt="" />
+      </span>
+
+                  <span class="header-branding-lockup__wordmark-logo"><img  src="/themes/custom/ga_forest/orchard/assets/images/icons/wordmarks/dph/dph-logo.svg"  alt="Georgia Department of Public Health"/>
+</span>
+
+<span class="header-branding-lockup__wordmark-text"><strong class="wordmark-text--georgia">Georgia </strong><strong class="wordmark-text--department">Department </strong><em class="wordmark-text--of">of</em><strong class="wordmark-text--public"> Public </strong><strong class="wordmark-text--health">Health</strong>
+</span>
+
+    </a>
+  </div>
+              <div class="header-search-trigger">
+  <button class="header-search-trigger__button header-search-trigger__button--open">
+    <span class="header-search-trigger__button-icon">
+      <img class="header-search-trigger__button-image header-search-trigger__button-image--light" src="/themes/custom/ga_forest/orchard/assets/images/icons/interaction/search/search--white.svg" alt="" />
+      <img class="header-search-trigger__button-image header-search-trigger__button-image--dark" src="/themes/custom/ga_forest/orchard/assets/images/icons/interaction/search/search--black.svg" alt="" />
+      <img class="header-search-trigger__button-image header-search-trigger__button-image--light-active" src="/themes/custom/ga_forest/orchard/assets/images/icons/interaction/search/search--gold.svg" alt="" />
+      <img class="header-search-trigger__button-image header-search-trigger__button-image--dark-active" src="/themes/custom/ga_forest/orchard/assets/images/icons/interaction/search/search--red.svg" alt="" />
+    </span>
+    <span class="header-search-trigger__button-text">Search</span>
+  </button>
+</div>
+        <div class="header-menu-trigger">
+  <button class="header-menu-trigger__button">
+    <!-- This span is being used to create the menu toggle button. -->
+    <span class="header-menu-trigger__button-icon">
+    </span>
+    <span class="header-menu-trigger__button-text header-menu-trigger__button-text--to-open">Menu</span>
+    <span class="header-menu-trigger__button-text header-menu-trigger__button-text--to-close">Close</span>
+  </button>
+</div>
+
+<div class="js-breakpoint-indicators"></div>
+  </div>
+</div>
+              <div class="header-search-bar" data-swatch-role="header-search-bar" data-swatch-type="global" data-swatch-text-type="dark-text">
+  <div class="header-search-bar__inner">
+        <div class="header-search-form">
+  <div class="header-search-form__button-wrapper">
+    <h2 class="header-search-form__header">Search this site</h2>
+  </div>
+    <div>
+    <div class="js-search-api-federated-solr-block-form-autocomplete" id="block-federatedsearchpageformblock">
+  
+    
+      <form class="federated-search-page-block-form header-search-form__form" data-drupal-selector="federated-search-page-block-form" novalidate="novalidate" action="/search" method="get" id="federated-search-page-block-form" accept-charset="UTF-8">
+  <div class="header-search-form__form-input-wrapper">
+    <label for="edit-search" class="visually-hidden">Search</label>
+<input title="Enter the terms you wish to search for." placeholder="Search for topics, services, etc..." autocomplete="off" data-drupal-selector="edit-search" type="search" id="edit-search" name="search" value="" size="15" maxlength="128" class="form-search header-search-form__text-input" />
+
+<input data-drupal-selector="edit-sm-site-name" type="hidden" name="sm_site_name" value="dph" />
+<button data-drupal-selector="edit-submit" type="submit" id="edit-submit" value="Search" class="js-form-submit form-submit header-search-form__submit" aria-label="Search" />
+
+</div>
+
+</form>
+
+
+  </div>
+
+  </div>
+
+  <div class="header-search-trigger header-search-trigger--close">
+    <button class="header-search-trigger__button header-search-trigger__button--close" tabindex="-1">
+      <span class="header-search-trigger__button-icon header-search-trigger__button-icon--close"></span>
+      <span class="header-search-trigger__button-text">Close</span>
+    </button>
+  </div>
+  <div class="header-search-form__popular-choice">
+    <h3 class="header-search-form__popular-choice-header">Popular searches</h3>
+    <ul class="header-search-form__popular-choice-list-items">
+      <li class="header-search-form__popular-choice-list-item"><a href="#" class="header-search-form__popular-choice-link">Mission Statement</a></li>
+      <li class="header-search-form__popular-choice-list-item"><a href="#" class="header-search-form__popular-choice-link">Organization of the office</a></li>
+      <li class="header-search-form__popular-choice-list-item"><a href="#" class="header-search-form__popular-choice-link">History</a></li>
+      <li class="header-search-form__popular-choice-list-item"><a href="#" class="header-search-form__popular-choice-link">Meeting Requests</a></li>
+      <li class="header-search-form__popular-choice-list-item"><a href="#" class="header-search-form__popular-choice-link">Key Staff</a></li>
+      <li class="header-search-form__popular-choice-list-item"><a href="#" class="header-search-form__popular-choice-link">Duties of the Office</a></li>
+      <li class="header-search-form__popular-choice-list-item"><a href="#" class="header-search-form__popular-choice-link">Event Requests</a></li>
+      <li class="header-search-form__popular-choice-list-item"><a href="#" class="header-search-form__popular-choice-link">Contact</a></li>
+    </ul>
+  </div>
+</div>
+  </div>
+</div>
+        <div class="header-site-nav-bar" data-swatch-role="header-site-nav" data-swatch-type="global" data-swatch-text-type="light-text">
+  <div class="header-site-nav-bar__inner">
+    
+  
+  
+
+                      
+          <nav class="header-site-nav" role="navigation">
+        <ul class="header-site-nav__menu-item-list header-site-nav__menu-item-list--level-0">
+              <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-0
+      header-site-nav__menu-item--has-dropdown " aria-haspopup="true">
+        <a class="header-site-nav__menu-item-link" href="/about-dph">
+          <span class="header-site-nav__menu-item-link-text">
+            About DPH
+          </span>
+        </a>
+                                        
+          <ul class="header-site-nav__menu-item-list
+      header-site-nav__menu-item-list--level-1 header-site-nav__menu-item-list--wide" >
+              <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/about-dph/mission-and-values">
+          <span class="header-site-nav__menu-item-link-text">
+            Mission Statement
+          </span>
+        </a>
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/about-dph/commissioners-message">
+          <span class="header-site-nav__menu-item-link-text">
+            Commissioner&#039;s Message
+          </span>
+        </a>
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/about-dph/board-public-health">
+          <span class="header-site-nav__menu-item-link-text">
+            Board of Public Health
+          </span>
+        </a>
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/public-health-regulations">
+          <span class="header-site-nav__menu-item-link-text">
+            Public Health Regulations
+          </span>
+        </a>
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/institutional-review-board">
+          <span class="header-site-nav__menu-item-link-text">
+            Institutional Review Board
+          </span>
+        </a>
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/general-information-about-dph">
+          <span class="header-site-nav__menu-item-link-text">
+            General Information
+          </span>
+        </a>
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/LiveWellGA">
+          <span class="header-site-nav__menu-item-link-text">
+            Blog
+          </span>
+        </a>
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/about-dph/contact-dph">
+          <span class="header-site-nav__menu-item-link-text">
+            Contact DPH
+          </span>
+        </a>
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/lab">
+          <span class="header-site-nav__menu-item-link-text">
+            Georgia Public Health Laboratory
+          </span>
+        </a>
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/EMS">
+          <span class="header-site-nav__menu-item-link-text">
+            Emergency Medical Services
+          </span>
+        </a>
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/health-data-and-statistics">
+          <span class="header-site-nav__menu-item-link-text">
+            Health Data and Statistics
+          </span>
+        </a>
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/district-and-county-relations">
+          <span class="header-site-nav__menu-item-link-text">
+            District and County Relations
+          </span>
+        </a>
+              </li>
+          </ul>
+      
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-0
+      header-site-nav__menu-item--has-dropdown " aria-haspopup="true">
+        <a class="header-site-nav__menu-item-link" href="/health-topics">
+          <span class="header-site-nav__menu-item-link-text">
+            Health Topics
+          </span>
+        </a>
+                                        
+          <ul class="header-site-nav__menu-item-list
+      header-site-nav__menu-item-list--level-1 header-site-nav__menu-item-list--wide" >
+              <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/AlzheimersDisease">
+          <span class="header-site-nav__menu-item-link-text">
+            Alzheimer&#039;s Disease
+          </span>
+        </a>
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/chronic-disease-prevention">
+          <span class="header-site-nav__menu-item-link-text">
+            Chronic Disease Prevention Section
+          </span>
+        </a>
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/health-topics/office-hivaids">
+          <span class="header-site-nav__menu-item-link-text">
+            HIV/AIDS
+          </span>
+        </a>
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/injury-prevention-program">
+          <span class="header-site-nav__menu-item-link-text">
+            Injury Prevention Program
+          </span>
+        </a>
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/office-nursing">
+          <span class="header-site-nav__menu-item-link-text">
+            Nursing
+          </span>
+        </a>
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/stopopioidaddiction">
+          <span class="header-site-nav__menu-item-link-text">
+            Opioid and Substance Misuse Response
+          </span>
+        </a>
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/office-pharmacy">
+          <span class="header-site-nav__menu-item-link-text">
+            Pharmacy
+          </span>
+        </a>
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/refugee-health-program">
+          <span class="header-site-nav__menu-item-link-text">
+            Refugee Health Program
+          </span>
+        </a>
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/STDs">
+          <span class="header-site-nav__menu-item-link-text">
+            STDs
+          </span>
+        </a>
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/health-topics/tuberculosis-tb-prevention-and-control">
+          <span class="header-site-nav__menu-item-link-text">
+            Tuberculosis (TB) Prevention and Control
+          </span>
+        </a>
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/health-topics/coronavirus-covid-19/sign-covid-19-alerts">
+          <span class="header-site-nav__menu-item-link-text">
+            Get Alerts
+          </span>
+        </a>
+              </li>
+          </ul>
+      
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-0
+      header-site-nav__menu-item--has-dropdown " aria-haspopup="true">
+        <a class="header-site-nav__menu-item-link" href="/VitalRecords">
+          <span class="header-site-nav__menu-item-link-text">
+            Vital Records
+          </span>
+        </a>
+                                        
+          <ul class="header-site-nav__menu-item-list
+      header-site-nav__menu-item-list--level-1 header-site-nav__menu-item-list--medium" >
+              <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/SOVRCOVID-19">
+          <span class="header-site-nav__menu-item-link-text">
+            COVID-19 Information
+          </span>
+        </a>
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/about-vital-records">
+          <span class="header-site-nav__menu-item-link-text">
+            About Vital Records
+          </span>
+        </a>
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/ways-request-vital-record">
+          <span class="header-site-nav__menu-item-link-text">
+            Ways to Request a Vital Record
+          </span>
+        </a>
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/Vital-Records-Registrar-Locations">
+          <span class="header-site-nav__menu-item-link-text">
+            Locations
+          </span>
+        </a>
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/VitalRecords/partners">
+          <span class="header-site-nav__menu-item-link-text">
+            SOVR Partners and Stakeholders
+          </span>
+        </a>
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/VitalRecords/quick-links">
+          <span class="header-site-nav__menu-item-link-text">
+            Quick Links
+          </span>
+        </a>
+              </li>
+          </ul>
+      
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-0
+      header-site-nav__menu-item--has-dropdown " aria-haspopup="true">
+        <a class="header-site-nav__menu-item-link" href="/women-and-children">
+          <span class="header-site-nav__menu-item-link-text">
+            Women and Children
+          </span>
+        </a>
+                                        
+          <ul class="header-site-nav__menu-item-list
+      header-site-nav__menu-item-list--level-1 header-site-nav__menu-item-list--medium" >
+              <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/WIC">
+          <span class="header-site-nav__menu-item-link-text">
+            Georgia WIC
+          </span>
+        </a>
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/childrens-health">
+          <span class="header-site-nav__menu-item-link-text">
+            Children&#039;s Health
+          </span>
+        </a>
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/georgia-shape-0">
+          <span class="header-site-nav__menu-item-link-text">
+            Georgia Shape
+          </span>
+        </a>
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/oralhealthprogramga">
+          <span class="header-site-nav__menu-item-link-text">
+            Oral Health Program in Georgia
+          </span>
+        </a>
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/childrens-health">
+          <span class="header-site-nav__menu-item-link-text">
+            Children&#039;s Health
+          </span>
+        </a>
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/womens-health">
+          <span class="header-site-nav__menu-item-link-text">
+            Women&#039;s Health
+          </span>
+        </a>
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/homevisiting">
+          <span class="header-site-nav__menu-item-link-text">
+            Home Visiting Program
+          </span>
+        </a>
+              </li>
+          </ul>
+      
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-0
+      header-site-nav__menu-item--has-dropdown " aria-haspopup="true">
+        <a class="header-site-nav__menu-item-link" href="/immunization-section">
+          <span class="header-site-nav__menu-item-link-text">
+            Immunization
+          </span>
+        </a>
+                                        
+          <ul class="header-site-nav__menu-item-list
+      header-site-nav__menu-item-list--level-1 header-site-nav__menu-item-list--wide" >
+              <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/immunization-section/child-and-adolescent-immunizations">
+          <span class="header-site-nav__menu-item-link-text">
+            Child and Adolescent Immunizations
+          </span>
+        </a>
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/immunization-section/immunization-faq">
+          <span class="header-site-nav__menu-item-link-text">
+            Frequently Asked Questions
+          </span>
+        </a>
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/immunization-section/georgia-immunization-registry-grits">
+          <span class="header-site-nav__menu-item-link-text">
+            Georgia Immunization Registry (GRITS)
+          </span>
+        </a>
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/immunization-section/health-care-professionals">
+          <span class="header-site-nav__menu-item-link-text">
+            Health Care Professionals
+          </span>
+        </a>
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/immunization-section/immunization-publications">
+          <span class="header-site-nav__menu-item-link-text">
+            Immunization Publications
+          </span>
+        </a>
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/immunization-schedules">
+          <span class="header-site-nav__menu-item-link-text">
+            Immunization Schedules
+          </span>
+        </a>
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/related-links-1">
+          <span class="header-site-nav__menu-item-link-text">
+            Related Links
+          </span>
+        </a>
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/schoolvaccines">
+          <span class="header-site-nav__menu-item-link-text">
+            School Vaccines and Updates
+          </span>
+        </a>
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/immunization-section/travel-immunizations">
+          <span class="header-site-nav__menu-item-link-text">
+            Travel Immunizations
+          </span>
+        </a>
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/immunization-section/vaccine-safety">
+          <span class="header-site-nav__menu-item-link-text">
+            Vaccine Safety
+          </span>
+        </a>
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/immunization-section/vaccines-children-program">
+          <span class="header-site-nav__menu-item-link-text">
+            Vaccines for Children
+          </span>
+        </a>
+              </li>
+          </ul>
+      
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-0
+      header-site-nav__menu-item--has-dropdown " aria-haspopup="true">
+        <a class="header-site-nav__menu-item-link" href="/environmental-health">
+          <span class="header-site-nav__menu-item-link-text">
+            Environmental Health
+          </span>
+        </a>
+                                        
+          <ul class="header-site-nav__menu-item-list
+      header-site-nav__menu-item-list--level-1 header-site-nav__menu-item-list--wide" >
+              <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/environmental-health/body-art">
+          <span class="header-site-nav__menu-item-link-text">
+            Body Art
+          </span>
+        </a>
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/environmental-health/chemical-hazards">
+          <span class="header-site-nav__menu-item-link-text">
+            Chemical Hazards
+          </span>
+        </a>
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/environmental-health/wastewater-management/environmental-health-education-and-training">
+          <span class="header-site-nav__menu-item-link-text">
+            Education and Training
+          </span>
+        </a>
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/environmental-health/emergency-preparedness">
+          <span class="header-site-nav__menu-item-link-text">
+            Environmental Health Emergency Preparedness
+          </span>
+        </a>
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/environmental-health/environmental-health-rules-and-regulations">
+          <span class="header-site-nav__menu-item-link-text">
+            Environmental Health Rules and Regulations
+          </span>
+        </a>
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/environmental-health/food-service">
+          <span class="header-site-nav__menu-item-link-text">
+            Food Service
+          </span>
+        </a>
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/environmental-health/healthy-homes-and-lead-poisoning-prevention">
+          <span class="header-site-nav__menu-item-link-text">
+            Healthy Homes and Lead
+          </span>
+        </a>
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/environmental-health/hotels-motels-and-campgrounds">
+          <span class="header-site-nav__menu-item-link-text">
+            Hotels, Motels and Campgrounds
+          </span>
+        </a>
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/EnvironmentalHealth">
+          <span class="header-site-nav__menu-item-link-text">
+            Mosquito-borne Illness
+          </span>
+        </a>
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/environmental-health/pools">
+          <span class="header-site-nav__menu-item-link-text">
+            Pools
+          </span>
+        </a>
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/environmental-health/rabies">
+          <span class="header-site-nav__menu-item-link-text">
+            Rabies
+          </span>
+        </a>
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/environmental-health/onsite-sewage">
+          <span class="header-site-nav__menu-item-link-text">
+            Sewage/Septic Systems
+          </span>
+        </a>
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/environmental-health/tanning">
+          <span class="header-site-nav__menu-item-link-text">
+            Tanning
+          </span>
+        </a>
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/environmental-health/well-water">
+          <span class="header-site-nav__menu-item-link-text">
+            Well Water
+          </span>
+        </a>
+              </li>
+          </ul>
+      
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-0
+      header-site-nav__menu-item--has-dropdown " aria-haspopup="true">
+        <a class="header-site-nav__menu-item-link" href="/epidemiology">
+          <span class="header-site-nav__menu-item-link-text">
+            Epidemiology
+          </span>
+        </a>
+                                        
+          <ul class="header-site-nav__menu-item-list
+      header-site-nav__menu-item-list--level-1 header-site-nav__menu-item-list--wide" >
+              <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/epidemiology/acute-disease-epidemiology">
+          <span class="header-site-nav__menu-item-link-text">
+            Acute Disease Epidemiology
+          </span>
+        </a>
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/EIP">
+          <span class="header-site-nav__menu-item-link-text">
+            Emerging Infections Program (EIP)
+          </span>
+        </a>
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/epidemiology/viral-hepatitis">
+          <span class="header-site-nav__menu-item-link-text">
+            Viral Hepatitis
+          </span>
+        </a>
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/epidemiology-emergency-preparedness">
+          <span class="header-site-nav__menu-item-link-text">
+            Epidemiology Emergency Preparedness
+          </span>
+        </a>
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/epidemiology/georgia-occupational-health-and-safety-surveillance-program">
+          <span class="header-site-nav__menu-item-link-text">
+            Occupational Health and Safety Surveillance
+          </span>
+        </a>
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/epidemiology/georgias-hivaids-epidemiology-section">
+          <span class="header-site-nav__menu-item-link-text">
+            HIV/AIDS Epidemiology Section
+          </span>
+        </a>
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/health-behavior-and-policy">
+          <span class="header-site-nav__menu-item-link-text">
+            Health Behaviors and Policies
+          </span>
+        </a>
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/epidemiology/disease-reporting">
+          <span class="header-site-nav__menu-item-link-text">
+            Disease Reporting
+          </span>
+        </a>
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/epidemiology/influenza">
+          <span class="header-site-nav__menu-item-link-text">
+            Influenza
+          </span>
+        </a>
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/stroke">
+          <span class="header-site-nav__menu-item-link-text">
+            Stroke
+          </span>
+        </a>
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/epidemiology/drug-surveillance-unit">
+          <span class="header-site-nav__menu-item-link-text">
+            Drug Surveillance Unit
+          </span>
+        </a>
+              </li>
+          <li class="header-site-nav__menu-item
+      header-site-nav__menu-item--level-1 " >
+        <a class="header-site-nav__menu-item-link" href="/PRAMS">
+          <span class="header-site-nav__menu-item-link-text">
+            Pregnancy Risk Assessment Monitoring System (PRAMS)
+          </span>
+        </a>
+              </li>
+          </ul>
+      
+              </li>
+          </ul>
+          </nav>
+      
+
+
+
+    <div class="header-utility-narrow">Header Utility Narrow</div>
+  </div>
+</div>
+  </header>
+      </div>
+  <div class="page__content" id="main-content">
+      
+      
+  
+  <div class="landing-page">
+      <div>
+    <div data-drupal-messages-fallback class="hidden"></div>
+
+  </div>
+
+
+  <div class="layout-wrapper layout-wrapper--full">
+            <div class="page-top--landing-page page-top--landing-page-offset visually-hidden  ">
+  <div class="page-top__title--wrapper">
+    <h1 class="page-top__title--landing-page ">      COVID Vaccine
+  </h1>
+  </div>
+</div>
+  
+  
+<div class="layout-section"
+  data-child-type="microcontent"
+  data-child-has-card="false"
+  data-child-has-hero="true"
+  data-layout-type="full"
+  data-is-super="false"
+  data-has-transparency="false"
+  data-has-background-image="true"
+
+  data-swatch-role="dark-bg" data-swatch-type="functional" data-swatch-text-type="light-text"
+>
+    <div class="layout-section__outer-wrapper">
+        <div class="layout-section__bg">
+      <div class="layout-section__inner-wrapper">
+                <div class="layout-section__inner">
+                                      <div class="layout-section__region" data-region-type="full">
+                    
+
+  
+  
+
+      <div class="layout-section__region-item layout-section__region-item--no-card"
+     data-has-card="false"
+     data-has-card-icon="false"
+     data-has-promo-teaser-text="false"
+     data-has-cta-teaser="false"
+     data-has-news-list-with-images="false"
+     data-has-layout-above="false"
+     data-has-layout-aside="false"
+     data-has-role-article="false"
+>
+            
+  
+        <div class="hero-teaser__container ">
+    <div class="hero-teaser__inner">
+      <div class="hero-teaser hero-teaser--full hero-teaser--narrow-text">
+        <div class="hero-teaser__content">
+                  
+                    <h2 class="hero-teaser__title">      COVID-19 Vaccines - Safe. Tested. Effective.
+  </h2>
+          
+        
+                <div class="hero-teaser__description body-minimal">
+            <div><p>Use the language tool in the top right corner to translate this page.</p>
+<p> </p>
+</div>
+      </div>                  </div>
+        <div class="hero-teaser__image">
+          
+
+
+
+
+
+          <img src="/sites/dph.georgia.gov/files/styles/3_2_2106px_x_1404px/public/2020-12/GettyImages-1210040522.jpg?h=e77df43d&amp;itok=iSZFOta4" width="2106" height="1404" alt="person with sleeve rolled up receiving vaccine" typeof="foaf:Image" />
+
+
+
+  
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+      
+</div>
+  
+            </div>
+
+                              </div>
+              </div>
+    </div>
+  </div>
+  </div>
+
+
+<div class="layout-section"
+  data-child-type=""
+  data-child-has-card="false"
+  data-child-has-hero="false"
+  data-layout-type="thirds-two-one"
+  data-is-super="false"
+  data-has-transparency="false"
+  data-has-background-image="false"
+
+  data-swatch-role="darker-bg" data-swatch-type="functional" data-swatch-text-type="light-text"
+>
+    <div class="layout-section__outer-wrapper">
+        <div class="layout-section__bg">
+      <div class="layout-section__inner-wrapper">
+                <div class="layout-section__inner">
+                                      <div class="layout-section__region" data-region-type="two-thirds">
+                    
+
+  
+  
+
+      <div class="layout-section__region-item layout-section__region-item--no-card"
+     data-has-card="false"
+     data-has-card-icon="false"
+     data-has-promo-teaser-text="false"
+     data-has-cta-teaser="false"
+     data-has-news-list-with-images="false"
+     data-has-layout-above="false"
+     data-has-layout-aside="false"
+     data-has-role-article="false"
+>
+              <div role="article" about="/node/42166" class="tile-list-layout-wrapper">
+        
+                <h2 class="tile-list-layout-wrapper__title">      Participating Vaccine Sites
+  </h2>
+          
+      
+    
+  <div class="tile-list-layout-wrapper__tile-list">
+              
+<div class="tile-list__item-list">
+      <div class="tile-list__item">
+                    <div class="tile tile--icon-text" data-swatch-role="light-bg-shade" data-swatch-type="functional" data-swatch-text-type="dark-text">
+  <a class="tile__link" href="https://www.krogerhealth.com/">
+    <div class="tile__contents">
+      <div class="tile__image-wrapper">
+                    <div class="content-icon">
+            <div class="content-icon__image" alt="Map pin icon" title="Map pin icon">
+    <?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
+  <defs>
+    <style>
+      .fill {
+        fill: #D3D3D3;
+        fill: palette-swatch-var(icon-fill); // sass-lint:disable-line no-duplicate-properties
+      }
+      .stroke {
+        fill: #000300;
+        fill: palette-swatch-var(icon-fill); // sass-lint:disable-line no-duplicate-properties
+      }
+    </style>
+  </defs>
+  <g>
+    <path class="fill" d="M120,33.75A61.875,61.875,0,0,0,58.125,95.625C58.125,150,120,206.25,120,206.25S181.875,150,181.875,95.625A61.875,61.875,0,0,0,120,33.75Z"></path>
+    <path class="stroke" d="M155.148,44.642a3.75,3.75,0,0,1,5.256-.709,67.985,67.985,0,0,1,5.952,5.242c.032.031.063.062.094.094a67.985,67.985,0,0,1,5.242,5.952,3.75,3.75,0,0,1-5.964,4.547,56.232,56.232,0,0,0-9.871-9.871A3.75,3.75,0,0,1,155.148,44.642ZM78.609,148.692c-11.1-19.246-16.734-37.089-16.734-53.067a58.169,58.169,0,0,1,75.284-55.55,60.27,60.27,0,0,1,6.594,2.5,3.75,3.75,0,0,0,3.15-6.806,68.3,68.3,0,0,0-7.416-2.827,65.667,65.667,0,0,0-85.112,62.68c0,17.307,5.968,36.407,17.734,56.807,1.221,2.123,2.512,4.264,3.948,6.548a3.749,3.749,0,1,0,6.349-3.99C81.024,152.789,79.782,150.729,78.609,148.692ZM182.68,76.137a67.461,67.461,0,0,0-2.826-7.416,3.75,3.75,0,0,0-6.807,3.151,60.347,60.347,0,0,1,2.5,6.595,58.129,58.129,0,0,1,2.574,17.158c0,45.9-46.659,94.257-58.129,105.449A274.518,274.518,0,0,1,95.115,173.1c-1.5-1.939-2.991-3.929-4.434-5.913a3.75,3.75,0,1,0-6.065,4.413c1.486,2.042,3.022,4.09,4.564,6.086a265.44,265.44,0,0,0,28.3,31.335,3.749,3.749,0,0,0,5.044,0,268.2,268.2,0,0,0,31.427-35.463c21.019-28.343,31.676-54.564,31.676-77.937A65.566,65.566,0,0,0,182.68,76.137ZM119.751,67.5c-15.306,0-27.758,12.671-27.758,28.246a28.007,28.007,0,0,0,56.014,0A28.283,28.283,0,0,0,119.751,67.5Z"></path>
+  </g>
+</svg>
+
+  </div>
+      </div>
+
+
+              </div>
+      <div class="tile__bg"></div>
+      <div class="tile__title">
+        <span class="tile__title-text">Kroger Health Sites</span>
+      </div>
+    </div>
+  </a>
+</div>
+
+
+
+    </div>
+      <div class="tile-list__item">
+                    <div class="tile tile--icon-text" data-swatch-role="light-bg-shade" data-swatch-type="functional" data-swatch-text-type="dark-text">
+  <a class="tile__link" href="https://www.ingles-markets.com/pharmacy/pg1/pharmacy-sub/vaccinations">
+    <div class="tile__contents">
+      <div class="tile__image-wrapper">
+                    <div class="content-icon">
+            <div class="content-icon__image" alt="Map pin icon" title="Map pin icon">
+    <?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
+  <defs>
+    <style>
+      .fill {
+        fill: #D3D3D3;
+        fill: palette-swatch-var(icon-fill); // sass-lint:disable-line no-duplicate-properties
+      }
+      .stroke {
+        fill: #000300;
+        fill: palette-swatch-var(icon-fill); // sass-lint:disable-line no-duplicate-properties
+      }
+    </style>
+  </defs>
+  <g>
+    <path class="fill" d="M120,33.75A61.875,61.875,0,0,0,58.125,95.625C58.125,150,120,206.25,120,206.25S181.875,150,181.875,95.625A61.875,61.875,0,0,0,120,33.75Z"></path>
+    <path class="stroke" d="M155.148,44.642a3.75,3.75,0,0,1,5.256-.709,67.985,67.985,0,0,1,5.952,5.242c.032.031.063.062.094.094a67.985,67.985,0,0,1,5.242,5.952,3.75,3.75,0,0,1-5.964,4.547,56.232,56.232,0,0,0-9.871-9.871A3.75,3.75,0,0,1,155.148,44.642ZM78.609,148.692c-11.1-19.246-16.734-37.089-16.734-53.067a58.169,58.169,0,0,1,75.284-55.55,60.27,60.27,0,0,1,6.594,2.5,3.75,3.75,0,0,0,3.15-6.806,68.3,68.3,0,0,0-7.416-2.827,65.667,65.667,0,0,0-85.112,62.68c0,17.307,5.968,36.407,17.734,56.807,1.221,2.123,2.512,4.264,3.948,6.548a3.749,3.749,0,1,0,6.349-3.99C81.024,152.789,79.782,150.729,78.609,148.692ZM182.68,76.137a67.461,67.461,0,0,0-2.826-7.416,3.75,3.75,0,0,0-6.807,3.151,60.347,60.347,0,0,1,2.5,6.595,58.129,58.129,0,0,1,2.574,17.158c0,45.9-46.659,94.257-58.129,105.449A274.518,274.518,0,0,1,95.115,173.1c-1.5-1.939-2.991-3.929-4.434-5.913a3.75,3.75,0,1,0-6.065,4.413c1.486,2.042,3.022,4.09,4.564,6.086a265.44,265.44,0,0,0,28.3,31.335,3.749,3.749,0,0,0,5.044,0,268.2,268.2,0,0,0,31.427-35.463c21.019-28.343,31.676-54.564,31.676-77.937A65.566,65.566,0,0,0,182.68,76.137ZM119.751,67.5c-15.306,0-27.758,12.671-27.758,28.246a28.007,28.007,0,0,0,56.014,0A28.283,28.283,0,0,0,119.751,67.5Z"></path>
+  </g>
+</svg>
+
+  </div>
+      </div>
+
+
+              </div>
+      <div class="tile__bg"></div>
+      <div class="tile__title">
+        <span class="tile__title-text">Ingles Pharmacy Sites</span>
+      </div>
+    </div>
+  </a>
+</div>
+
+
+
+    </div>
+      <div class="tile-list__item">
+                    <div class="tile tile--icon-text" data-swatch-role="light-bg-shade" data-swatch-type="functional" data-swatch-text-type="dark-text">
+  <a class="tile__link" href="https://www.publix.com/covid-vaccine">
+    <div class="tile__contents">
+      <div class="tile__image-wrapper">
+                    <div class="content-icon">
+            <div class="content-icon__image" alt="Map pin icon" title="Map pin icon">
+    <?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
+  <defs>
+    <style>
+      .fill {
+        fill: #D3D3D3;
+        fill: palette-swatch-var(icon-fill); // sass-lint:disable-line no-duplicate-properties
+      }
+      .stroke {
+        fill: #000300;
+        fill: palette-swatch-var(icon-fill); // sass-lint:disable-line no-duplicate-properties
+      }
+    </style>
+  </defs>
+  <g>
+    <path class="fill" d="M120,33.75A61.875,61.875,0,0,0,58.125,95.625C58.125,150,120,206.25,120,206.25S181.875,150,181.875,95.625A61.875,61.875,0,0,0,120,33.75Z"></path>
+    <path class="stroke" d="M155.148,44.642a3.75,3.75,0,0,1,5.256-.709,67.985,67.985,0,0,1,5.952,5.242c.032.031.063.062.094.094a67.985,67.985,0,0,1,5.242,5.952,3.75,3.75,0,0,1-5.964,4.547,56.232,56.232,0,0,0-9.871-9.871A3.75,3.75,0,0,1,155.148,44.642ZM78.609,148.692c-11.1-19.246-16.734-37.089-16.734-53.067a58.169,58.169,0,0,1,75.284-55.55,60.27,60.27,0,0,1,6.594,2.5,3.75,3.75,0,0,0,3.15-6.806,68.3,68.3,0,0,0-7.416-2.827,65.667,65.667,0,0,0-85.112,62.68c0,17.307,5.968,36.407,17.734,56.807,1.221,2.123,2.512,4.264,3.948,6.548a3.749,3.749,0,1,0,6.349-3.99C81.024,152.789,79.782,150.729,78.609,148.692ZM182.68,76.137a67.461,67.461,0,0,0-2.826-7.416,3.75,3.75,0,0,0-6.807,3.151,60.347,60.347,0,0,1,2.5,6.595,58.129,58.129,0,0,1,2.574,17.158c0,45.9-46.659,94.257-58.129,105.449A274.518,274.518,0,0,1,95.115,173.1c-1.5-1.939-2.991-3.929-4.434-5.913a3.75,3.75,0,1,0-6.065,4.413c1.486,2.042,3.022,4.09,4.564,6.086a265.44,265.44,0,0,0,28.3,31.335,3.749,3.749,0,0,0,5.044,0,268.2,268.2,0,0,0,31.427-35.463c21.019-28.343,31.676-54.564,31.676-77.937A65.566,65.566,0,0,0,182.68,76.137ZM119.751,67.5c-15.306,0-27.758,12.671-27.758,28.246a28.007,28.007,0,0,0,56.014,0A28.283,28.283,0,0,0,119.751,67.5Z"></path>
+  </g>
+</svg>
+
+  </div>
+      </div>
+
+
+              </div>
+      <div class="tile__bg"></div>
+      <div class="tile__title">
+        <span class="tile__title-text">Publix Pharmacy Sites</span>
+      </div>
+    </div>
+  </a>
+</div>
+
+
+
+    </div>
+      <div class="tile-list__item">
+                    <div class="tile tile--icon-text" data-swatch-role="light-bg-shade" data-swatch-type="functional" data-swatch-text-type="dark-text">
+  <a class="tile__link" href="https://www.usaveitpharmacy.com/">
+    <div class="tile__contents">
+      <div class="tile__image-wrapper">
+                    <div class="content-icon">
+            <div class="content-icon__image" alt="Map pin icon" title="Map pin icon">
+    <?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
+  <defs>
+    <style>
+      .fill {
+        fill: #D3D3D3;
+        fill: palette-swatch-var(icon-fill); // sass-lint:disable-line no-duplicate-properties
+      }
+      .stroke {
+        fill: #000300;
+        fill: palette-swatch-var(icon-fill); // sass-lint:disable-line no-duplicate-properties
+      }
+    </style>
+  </defs>
+  <g>
+    <path class="fill" d="M120,33.75A61.875,61.875,0,0,0,58.125,95.625C58.125,150,120,206.25,120,206.25S181.875,150,181.875,95.625A61.875,61.875,0,0,0,120,33.75Z"></path>
+    <path class="stroke" d="M155.148,44.642a3.75,3.75,0,0,1,5.256-.709,67.985,67.985,0,0,1,5.952,5.242c.032.031.063.062.094.094a67.985,67.985,0,0,1,5.242,5.952,3.75,3.75,0,0,1-5.964,4.547,56.232,56.232,0,0,0-9.871-9.871A3.75,3.75,0,0,1,155.148,44.642ZM78.609,148.692c-11.1-19.246-16.734-37.089-16.734-53.067a58.169,58.169,0,0,1,75.284-55.55,60.27,60.27,0,0,1,6.594,2.5,3.75,3.75,0,0,0,3.15-6.806,68.3,68.3,0,0,0-7.416-2.827,65.667,65.667,0,0,0-85.112,62.68c0,17.307,5.968,36.407,17.734,56.807,1.221,2.123,2.512,4.264,3.948,6.548a3.749,3.749,0,1,0,6.349-3.99C81.024,152.789,79.782,150.729,78.609,148.692ZM182.68,76.137a67.461,67.461,0,0,0-2.826-7.416,3.75,3.75,0,0,0-6.807,3.151,60.347,60.347,0,0,1,2.5,6.595,58.129,58.129,0,0,1,2.574,17.158c0,45.9-46.659,94.257-58.129,105.449A274.518,274.518,0,0,1,95.115,173.1c-1.5-1.939-2.991-3.929-4.434-5.913a3.75,3.75,0,1,0-6.065,4.413c1.486,2.042,3.022,4.09,4.564,6.086a265.44,265.44,0,0,0,28.3,31.335,3.749,3.749,0,0,0,5.044,0,268.2,268.2,0,0,0,31.427-35.463c21.019-28.343,31.676-54.564,31.676-77.937A65.566,65.566,0,0,0,182.68,76.137ZM119.751,67.5c-15.306,0-27.758,12.671-27.758,28.246a28.007,28.007,0,0,0,56.014,0A28.283,28.283,0,0,0,119.751,67.5Z"></path>
+  </g>
+</svg>
+
+  </div>
+      </div>
+
+
+              </div>
+      <div class="tile__bg"></div>
+      <div class="tile__title">
+        <span class="tile__title-text">U Save It Pharmacy Sites</span>
+      </div>
+    </div>
+  </a>
+</div>
+
+
+
+    </div>
+      <div class="tile-list__item">
+                    <div class="tile tile--icon-text" data-swatch-role="light-bg-shade" data-swatch-type="functional" data-swatch-text-type="dark-text">
+  <a class="tile__link" href="https://dph.georgia.gov/locations/covid-vaccination-site">
+    <div class="tile__contents">
+      <div class="tile__image-wrapper">
+                    <div class="content-icon">
+            <div class="content-icon__image" alt="Map pin icon" title="Map pin icon">
+    <?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
+  <defs>
+    <style>
+      .fill {
+        fill: #D3D3D3;
+        fill: palette-swatch-var(icon-fill); // sass-lint:disable-line no-duplicate-properties
+      }
+      .stroke {
+        fill: #000300;
+        fill: palette-swatch-var(icon-fill); // sass-lint:disable-line no-duplicate-properties
+      }
+    </style>
+  </defs>
+  <g>
+    <path class="fill" d="M120,33.75A61.875,61.875,0,0,0,58.125,95.625C58.125,150,120,206.25,120,206.25S181.875,150,181.875,95.625A61.875,61.875,0,0,0,120,33.75Z"></path>
+    <path class="stroke" d="M155.148,44.642a3.75,3.75,0,0,1,5.256-.709,67.985,67.985,0,0,1,5.952,5.242c.032.031.063.062.094.094a67.985,67.985,0,0,1,5.242,5.952,3.75,3.75,0,0,1-5.964,4.547,56.232,56.232,0,0,0-9.871-9.871A3.75,3.75,0,0,1,155.148,44.642ZM78.609,148.692c-11.1-19.246-16.734-37.089-16.734-53.067a58.169,58.169,0,0,1,75.284-55.55,60.27,60.27,0,0,1,6.594,2.5,3.75,3.75,0,0,0,3.15-6.806,68.3,68.3,0,0,0-7.416-2.827,65.667,65.667,0,0,0-85.112,62.68c0,17.307,5.968,36.407,17.734,56.807,1.221,2.123,2.512,4.264,3.948,6.548a3.749,3.749,0,1,0,6.349-3.99C81.024,152.789,79.782,150.729,78.609,148.692ZM182.68,76.137a67.461,67.461,0,0,0-2.826-7.416,3.75,3.75,0,0,0-6.807,3.151,60.347,60.347,0,0,1,2.5,6.595,58.129,58.129,0,0,1,2.574,17.158c0,45.9-46.659,94.257-58.129,105.449A274.518,274.518,0,0,1,95.115,173.1c-1.5-1.939-2.991-3.929-4.434-5.913a3.75,3.75,0,1,0-6.065,4.413c1.486,2.042,3.022,4.09,4.564,6.086a265.44,265.44,0,0,0,28.3,31.335,3.749,3.749,0,0,0,5.044,0,268.2,268.2,0,0,0,31.427-35.463c21.019-28.343,31.676-54.564,31.676-77.937A65.566,65.566,0,0,0,182.68,76.137ZM119.751,67.5c-15.306,0-27.758,12.671-27.758,28.246a28.007,28.007,0,0,0,56.014,0A28.283,28.283,0,0,0,119.751,67.5Z"></path>
+  </g>
+</svg>
+
+  </div>
+      </div>
+
+
+              </div>
+      <div class="tile__bg"></div>
+      <div class="tile__title">
+        <span class="tile__title-text">Vaccine Locator, use search box</span>
+      </div>
+    </div>
+  </a>
+</div>
+
+
+
+    </div>
+  </div>
+
+  </div>
+
+  </div>
+
+
+      
+</div>
+  
+            </div>
+
+                            <div class="layout-section__region" data-region-type="one-third">
+                    
+
+  
+  
+
+      <div class="layout-section__region-item layout-section__region-item--no-card"
+     data-has-card="false"
+     data-has-card-icon="false"
+     data-has-promo-teaser-text="false"
+     data-has-cta-teaser="false"
+     data-has-news-list-with-images="false"
+     data-has-layout-above="false"
+     data-has-layout-aside="false"
+     data-has-role-article="false"
+>
+              
+  
+      <div class="text-block">
+          
+              
+        
+            <div class="text-block__summary">
+      <div class="body-content body-content--offset">
+  
+            <div><p>If you’re looking for a COVID Vaccination Site in your location, be sure to check back often as the COVID participating vaccine site locations list will be updated frequently. Additional locations statewide will be added when providers are ready to safely administer vaccine, and as vaccine supply allows.</p>
+<p>On the Vaccine Locator, use only the search box above to search/sort by county, zip, etc. [for example, to see all locations in your county, type your county in the above search box and the results will show the available locations]</p>
+</div>
+      
+</div>
+    </div>
+  </div>
+  
+
+
+      
+</div>
+  
+              
+
+  
+  
+
+      <div class="layout-section__region-item layout-section__region-item--no-card"
+     data-has-card="false"
+     data-has-card-icon="false"
+     data-has-promo-teaser-text="false"
+     data-has-cta-teaser="false"
+     data-has-news-list-with-images="false"
+     data-has-layout-above="false"
+     data-has-layout-aside="false"
+     data-has-role-article="false"
+>
+                
+  
+  
+      <div class="image-wrapper"
+    data-layout="above"
+  >
+      <div class="image-wrapper__image"
+      data-image-offset="false"
+       data-aspect-ratio="3:2"
+>
+  
+            <div>
+
+
+
+
+
+          <img src="/sites/dph.georgia.gov/files/styles/three_two_702x468/public/2021-01/COVID-19VACCINES_safeTESTEDeffective_drupal-01.jpg?h=41e1618f&amp;itok=yxx-UvYK" width="702" height="468" alt="covid-19 safe tested effective" typeof="foaf:Image" />
+
+
+
+  
+</div>
+      
+</div>
+    <div class="image-wrapper__teaser"
+    data-teaser-offset="true"
+  >
+        <div class="promo-teaser promo-teaser--text">
+          
+                  <h3 class="promo-teaser__title">      COVID-19 Vaccines
+  </h3>
+      
+        
+                  
+  <div class="more-link">
+        <span class="more-link__text">
+              
+            <div><a href="https://youtube.com/playlist?list=PLHp0_39Iqo2eXacEJY3KlCOl6CZjCk4oh">Safe. Tested. Effective</a></div>
+      
+          </span>
+  </div>
+  </div>
+  
+  </div>
+  </div>
+  
+
+      
+</div>
+  
+            </div>
+
+                              </div>
+              </div>
+    </div>
+  </div>
+  </div>
+
+
+<div class="layout-section"
+  data-child-type=""
+  data-child-has-card="false"
+  data-child-has-hero="false"
+  data-layout-type="thirds-two-one"
+  data-is-super="false"
+  data-has-transparency="false"
+  data-has-background-image="false"
+
+  data-swatch-role="lighter-bg" data-swatch-type="functional" data-swatch-text-type="dark-text"
+>
+    <div class="layout-section__outer-wrapper">
+        <div class="layout-section__bg">
+      <div class="layout-section__inner-wrapper">
+                <div class="layout-section__inner">
+                                      <div class="layout-section__region" data-region-type="two-thirds">
+                    
+
+  
+  
+
+      <div class="layout-section__region-item layout-section__region-item--no-card"
+     data-has-card="false"
+     data-has-card-icon="false"
+     data-has-promo-teaser-text="false"
+     data-has-cta-teaser="false"
+     data-has-news-list-with-images="false"
+     data-has-layout-above="false"
+     data-has-layout-aside="false"
+     data-has-role-article="false"
+>
+                        
+
+          
+    <div class="responsive-iframe" id="responsive-iframe-37181" style="padding-bottom: 42.444444444444%">
+    <iframe src="https://datastudio.google.com/embed/reporting/d848d61a-e99e-4961-b040-02b43edc5bb5/page/ptmtB" allowFullScreen="true" title="COVID-19 Vaccine in Georgia Dashboard">
+    </iframe>
+  </div>
+
+
+  
+
+      
+</div>
+  
+              
+
+  
+  
+
+      <div class="layout-section__region-item layout-section__region-item--card"
+     data-has-card="true"
+     data-has-card-icon="false"
+     data-has-promo-teaser-text="false"
+     data-has-cta-teaser="false"
+     data-has-news-list-with-images="false"
+     data-has-layout-above="false"
+     data-has-layout-aside="false"
+     data-has-role-article="false"
+>
+    <div data-swatch-role="light-bg" data-swatch-type="functional" data-swatch-text-type="dark-text" class="card-wrapper card-wrapper--embed">
+        <div class="card-wrapper__content">
+                
+  
+      <div class="text-block">
+          
+              
+        
+            <div class="text-block__summary">
+      <div class="body-content body-content--offset">
+  
+            <div><p><span class="inline-document-link">
+  <img class="inline-document-link__file-icon-img" src="/themes/custom/ga_forest/orchard/assets/images/icons/file-types/file-pdf.svg" alt="Download this pdf file." /><a href="https://dph.georgia.gov/document/document/vaccine-orders-list/download" title="">Vaccine Orders List</a>
+</span>
+</p>
+</div>
+      
+</div>
+    </div>
+  </div>
+  
+
+
+          </div>
+  </div>
+</div>
+  
+            </div>
+
+                            <div class="layout-section__region" data-region-type="one-third">
+                    
+
+  
+  
+
+      <div class="layout-section__region-item layout-section__region-item--card"
+     data-has-card="true"
+     data-has-card-icon="false"
+     data-has-promo-teaser-text="false"
+     data-has-cta-teaser="false"
+     data-has-news-list-with-images="false"
+     data-has-layout-above="false"
+     data-has-layout-aside="false"
+     data-has-role-article="false"
+>
+    <div data-swatch-role="light-bg" data-swatch-type="functional" data-swatch-text-type="dark-text" class="card-wrapper card-wrapper--embed">
+        <div class="card-wrapper__content">
+                  
+  
+  
+          <div class="promo-teaser promo-teaser--text">
+          
+                  <h3 class="promo-teaser__title">      COVID Vaccine Locator
+  </h3>
+      
+        
+                  
+  <div class="more-link">
+        <span class="more-link__text">
+              
+            <div><a href="https://dph.georgia.gov/locations/covid-vaccination-site">Search by county</a></div>
+      
+          </span>
+  </div>
+  </div>
+  
+  
+
+          </div>
+  </div>
+</div>
+  
+              
+
+  
+  
+
+      <div class="layout-section__region-item layout-section__region-item--card"
+     data-has-card="true"
+     data-has-card-icon="false"
+     data-has-promo-teaser-text="false"
+     data-has-cta-teaser="false"
+     data-has-news-list-with-images="false"
+     data-has-layout-above="false"
+     data-has-layout-aside="false"
+     data-has-role-article="false"
+>
+    <div data-swatch-role="light-bg" data-swatch-type="functional" data-swatch-text-type="dark-text" class="card-wrapper card-wrapper--embed">
+        <div class="card-wrapper__content">
+                  
+  
+  
+          <div class="promo-teaser promo-teaser--text">
+          
+                  <h3 class="promo-teaser__title">      GA COVID-19 Vaccine Hotline
+  </h3>
+      
+        
+            <div class="promo-teaser__summary body-minimal">
+            <div><p>This hotline is for questions about COVID-19 and COVID vaccine only, not for scheduling appointments for vaccination.</p>
+<p>(888) 357-0169</p>
+</div>
+      </div>
+    </div>
+  
+  
+
+          </div>
+  </div>
+</div>
+  
+            </div>
+
+                              </div>
+              </div>
+    </div>
+  </div>
+  </div>
+
+
+<div class="layout-section"
+  data-child-type=""
+  data-child-has-card="false"
+  data-child-has-hero="false"
+  data-layout-type="thirds-two-one"
+  data-is-super="false"
+  data-has-transparency="false"
+  data-has-background-image="false"
+
+  data-swatch-role="lighter-bg" data-swatch-type="functional" data-swatch-text-type="dark-text"
+>
+    <div class="layout-section__outer-wrapper">
+        <div class="layout-section__bg">
+      <div class="layout-section__inner-wrapper">
+                <div class="layout-section__inner">
+                                      <div class="layout-section__region" data-region-type="two-thirds">
+                    
+
+  
+  
+
+      <div class="layout-section__region-item layout-section__region-item--no-card"
+     data-has-card="false"
+     data-has-card-icon="false"
+     data-has-promo-teaser-text="false"
+     data-has-cta-teaser="false"
+     data-has-news-list-with-images="false"
+     data-has-layout-above="false"
+     data-has-layout-aside="false"
+     data-has-role-article="false"
+>
+                
+  
+  
+      <div class="image-wrapper"
+    data-layout="above"
+  >
+      <div class="image-wrapper__image"
+      data-image-offset="false"
+       data-aspect-ratio="2:1"
+>
+  
+            <div>
+
+
+
+
+
+          <img src="/sites/dph.georgia.gov/files/styles/two_one_1000x500/public/2021-01/WIDEnewPHASES_graphic1a-01_0.png?h=3d937957&amp;itok=C1wRFzei" width="1000" height="500" alt="graphic of phase 1a+" typeof="foaf:Image" />
+
+
+
+  
+</div>
+      
+</div>
+    <div class="image-wrapper__teaser"
+    data-teaser-offset="true"
+  >
+        <div class="promo-teaser promo-teaser--text">
+          
+              
+        
+          </div>
+  
+  </div>
+  </div>
+  
+
+      
+</div>
+  
+                  
+    
+  
+  
+
+      <div class="layout-section__region-item layout-section__region-item--card"
+     data-has-card="true"
+     data-has-card-icon="true"
+     data-has-promo-teaser-text="false"
+     data-has-cta-teaser="false"
+     data-has-news-list-with-images="false"
+     data-has-layout-above="false"
+     data-has-layout-aside="false"
+     data-has-role-article="false"
+>
+    <div data-swatch-role="light-bg" data-swatch-type="functional" data-swatch-text-type="dark-text" class="card-wrapper card-wrapper--icon card-wrapper--embed">
+          <div class="card-wrapper__icon">
+          <div class="content-icon">
+            <div class="content-icon__image" alt="Georgia state outline icon" title="Georgia state outline icon">
+    <?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
+  <defs>
+    <style>
+      .fill {
+        fill: #D3D3D3;
+        fill: palette-swatch-var(icon-fill); // sass-lint:disable-line no-duplicate-properties
+      }
+      .stroke {
+        fill: #000300;
+        fill: palette-swatch-var(icon-fill); // sass-lint:disable-line no-duplicate-properties
+      }
+    </style>
+  </defs>
+  <polygon class="fill" points="191.55 138.79 188.51 137.6 188.11 130.44 184.5 123.6 178.32 119.87 179.25 117.05 177.11 113 174.32 104.57 163.78 97.59 159.6 88.87 151.82 83.17 149.42 78.62 138.06 70.29 134.02 63.82 127.69 52.23 122.2 50.19 113.57 44.31 118.22 37.01 121.48 33.75 83.09 34.87 66.63 35.7 42.83 35.84 51.72 82.28 59.93 119.47 64.75 131.14 67.69 137.8 62.56 144.53 61.03 156.55 62.92 163.61 62.26 170.29 61.52 176.49 63.66 181.26 65.37 185.68 70.55 195.73 103.4 196.48 156.6 199.79 159.38 206.25 163.42 202.63 162.77 189.53 166.62 188.02 173.23 190.43 180.15 190.72 184.98 168.83 197.17 140.36 191.55 138.79"></polygon>
+  <path class="stroke" d="M159.38,210a3.75,3.75,0,0,1-3.44-2.27l-1.87-4.34-33.24-2.07a3.75,3.75,0,1,1,.47-7.48l35.53,2.21a3.76,3.76,0,0,1,2.57,1.24l-.37-7.57A3.75,3.75,0,0,1,161.4,186l3.85-1.51a3.78,3.78,0,0,1,2.65,0l6.07,2.21,3.2.13L181.32,168a3.09,3.09,0,0,1,.22-.67L192,142.82l-1.49-.41-.37-.13-3-1.19a3.76,3.76,0,0,1-2.37-3.28l-.36-6.34-2.74-5.2-5.29-3.18a3.75,3.75,0,0,1-1.62-4.38l.43-1.32-1.4-2.63a4.17,4.17,0,0,1-.24-.58l-2.38-7.2-9.46-6.26a3.82,3.82,0,0,1-1.31-1.51l-3.77-7.87-7-5.14a3.8,3.8,0,0,1-1.11-1.28l-2-3.78-10.66-7.83a3.67,3.67,0,0,1-1-1l-4-6.47a1.74,1.74,0,0,0-.11-.18l-5.66-10.36-4.17-1.55a3.88,3.88,0,0,1-.81-.42l-8.63-5.88a3.75,3.75,0,0,1-1-5.11l2.9-4.56-30.11.88-16.38.83h-.16l-19.3.12,8,42,8.13,36.81,4.69,11.37,2.91,6.58a3.76,3.76,0,0,1-.45,3.79L66.16,146l-1.32,10.29,1.7,6.34a3.57,3.57,0,0,1,.11,1.34L66,170.66l-.63,5.24,1.72,3.82a1.54,1.54,0,0,1,.08.19l1.64,4.23L72.86,192l30.63.7h.14l2.7.16a3.75,3.75,0,1,1-.47,7.49l-2.62-.16-32.78-.76a3.76,3.76,0,0,1-3.25-2L62,187.39a2.37,2.37,0,0,1-.17-.36l-1.67-4.32L58.1,178a3.77,3.77,0,0,1-.31-2l.75-6.2.58-5.92-1.71-6.4a3.69,3.69,0,0,1-.1-1.44l1.53-12a3.78,3.78,0,0,1,.74-1.79l3.78-5-2-4.63L56.46,120.9a4.48,4.48,0,0,1-.2-.62l-8.2-37.19a.36.36,0,0,1,0-.1L39.15,36.55a3.76,3.76,0,0,1,3.66-4.46L66.53,32l16.37-.82L121.37,30a3.75,3.75,0,0,1,2.76,6.4l-3,3-2.48,3.89,5.24,3.58L129,48.71a3.73,3.73,0,0,1,2,1.72l6.28,11.49,3.6,5.77,10.78,7.91a3.71,3.71,0,0,1,1.09,1.27l2,3.79,7.09,5.18A3.78,3.78,0,0,1,163,87.25L166.72,95l9.67,6.41a3.77,3.77,0,0,1,1.5,2l2.68,8.14,2,3.76a3.7,3.7,0,0,1,.25,2.91l3.63,2.19a3.73,3.73,0,0,1,1.38,1.46l3.61,6.85a3.72,3.72,0,0,1,.42,1.53l.27,4.76.62.25,5.43,1.51a3.74,3.74,0,0,1,2.44,5.09l-12,28.15-4.75,21.54a3.77,3.77,0,0,1-3.82,2.93l-6.92-.28A3.91,3.91,0,0,1,172,194L166.67,192h0l.52,10.41a3.79,3.79,0,0,1-1.25,3l-4,3.61A3.71,3.71,0,0,1,159.38,210Z"></path>
+</svg>
+
+  </div>
+      </div>
+
+
+      </div>
+        <div class="card-wrapper__content card-wrapper__content--icon">
+                  
+  
+  
+          <div class="promo-teaser promo-teaser--text">
+          
+                  <h3 class="promo-teaser__title">      Georgia Vaccine Plan
+  </h3>
+      
+        
+            <div class="promo-teaser__summary body-minimal">
+            <div><p>Follow the plan for distribution and administration of the COVID-19 vaccine in Georgia.</p>
+</div>
+      </div>
+            
+  <div class="more-link">
+        <span class="more-link__text">
+              
+            <div><div class="link-teaser">
+          <div class="link-teaser__link-text link-teaser__link-text--text link-teaser__link-text--file">
+                                          <span class="link-teaser__file-icon">
+        <img class="link-teaser__file-icon-img" src="/themes/custom/ga_forest/orchard/assets/images/icons/file-types/file-pdf.svg" alt="Download this pdf">
+      </span>
+        <span class="link-teaser__link-text-content">
+            <span class="link-teaser__link"><a href="/document/document/georgia-covid-19-vaccine-plan/download">COVID-19 Vaccine Plan</a></span>
+              <span class="link-teaser__file-size">(1.45 MB)</span>
+          </span>
+  </div>
+  </div>
+</div>
+      
+          </span>
+  </div>
+  </div>
+  
+  
+
+          </div>
+  </div>
+</div>
+  
+            </div>
+
+                            <div class="layout-section__region" data-region-type="one-third">
+                    
+
+  
+  
+
+      <div class="layout-section__region-item layout-section__region-item--no-card"
+     data-has-card="false"
+     data-has-card-icon="false"
+     data-has-promo-teaser-text="false"
+     data-has-cta-teaser="false"
+     data-has-news-list-with-images="false"
+     data-has-layout-above="false"
+     data-has-layout-aside="false"
+     data-has-role-article="false"
+>
+              
+  
+      <div class="text-block">
+          
+              
+        
+            <div class="text-block__summary">
+      <div class="body-content body-content--offset">
+  
+            <div><p>The Georgia Department of Public Health is currently administering COVID-19 vaccine in Phase 1a+ which includes:</p>
+<ul><li>Healthcare workers (physicians, nurses, laboratory technicians, EMS personnel, environmental services, etc.)</li>
+<li>Residents and staff of long-term care facilities</li>
+<li>Adults aged 65+ and their caregivers</li>
+<li>Law enforcement, firefighters, first responders</li>
+</ul><p>Vaccine supply is very limited. Public health departments are scheduling <strong>vaccines by appointment only, </strong>as are most other providers. Depending on vaccine supply allocations from the federal government, it may be weeks before additional providers will have vaccine available for quicker and more widespread distribution.</p>
+</div>
+      
+</div>
+    </div>
+  </div>
+  
+
+
+      
+</div>
+  
+            </div>
+
+                              </div>
+              </div>
+    </div>
+  </div>
+  </div>
+
+<div class="layout-section"
+  data-child-type="microcontent"
+  data-child-has-card="true"
+  data-child-has-hero="false"
+  data-layout-type="full"
+  data-is-super="false"
+  data-has-transparency="false"
+  data-has-background-image="true"
+
+  data-swatch-role="lighter-bg" data-swatch-type="functional" data-swatch-text-type="dark-text"
+>
+    <div class="layout-section__outer-wrapper">
+        <div class="layout-section__bg">
+      <div class="layout-section__inner-wrapper">
+                <div class="layout-section__inner">
+                                      <div class="layout-section__region" data-region-type="full">
+                    
+
+  
+  
+
+      <div class="layout-section__region-item layout-section__region-item--card"
+     data-has-card="true"
+     data-has-card-icon="false"
+     data-has-promo-teaser-text="false"
+     data-has-cta-teaser="false"
+     data-has-news-list-with-images="false"
+     data-has-layout-above="false"
+     data-has-layout-aside="false"
+     data-has-role-article="false"
+>
+    <div data-swatch-role="light-bg" data-swatch-type="functional" data-swatch-text-type="dark-text" class="card-wrapper card-wrapper--embed">
+        <div class="card-wrapper__content">
+                
+  
+      <div class="text-block">
+          
+              
+        
+            <div class="text-block__summary">
+      <div class="body-content body-content--offset">
+  
+            <div><p><strong>COVID-19 vaccines have passed rigorous reviews </strong>and <strong>are highly effective</strong>. ​</p>
+<p><strong>Scientists had a significant head start developing the COVID-19 vaccines. </strong>COVID-19 is very similar to other viruses, which already have vaccines.</p>
+<p><strong>Testing was thorough and successful. </strong>More than 70,000 people participated in clinical trials for the two vaccines to see if they are safe and effective. To date, the vaccines are nearly 95% effective in preventing COVID-19.</p>
+<p><strong>There is no COVID-19 virus in the vaccine. </strong>The vaccine imitates the infection so that our bodies create antibody defenses to fight off COVID-19.</p>
+<p>The <strong>first vaccination phase includes</strong> but is not limited to <strong>healthcare personnel </strong>likely to be exposed to or treat people with COVID-19<strong>, first responders, people at risk for severe illness </strong>and other<strong> essential workers.</strong></p>
+<p><strong>Those who will be vaccinated in the first phase will be notified where to receive the vaccine. </strong>These sites will likely be at or near work and care sites.</p>
+<p><strong>Side effects are mild, temporary, and normal signs that your body is building protection.</strong> You may experience pain and swelling in the arm of the injection. Throughout the rest of your body, you may experience fever, chills, tiredness, and headaches.</p>
+</div>
+      
+</div>
+    </div>
+  </div>
+  
+
+
+          </div>
+  </div>
+</div>
+  
+            </div>
+
+                              </div>
+              </div>
+    </div>
+  </div>
+  </div>
+
+
+<div class="layout-section"
+  data-child-type=""
+  data-child-has-card="false"
+  data-child-has-hero="false"
+  data-layout-type="thirds-two-one"
+  data-is-super="false"
+  data-has-transparency="false"
+  data-has-background-image="false"
+
+  data-swatch-role="dark-bg" data-swatch-type="functional" data-swatch-text-type="light-text"
+>
+    <div class="layout-section__outer-wrapper">
+        <div class="layout-section__bg">
+      <div class="layout-section__inner-wrapper">
+                  <h2 class="layout-section__title ">Information for Georgia Residents</h2>
+                <div class="layout-section__inner">
+                                      <div class="layout-section__region" data-region-type="two-thirds">
+                    
+
+  
+  
+
+      <div class="layout-section__region-item layout-section__region-item--no-card"
+     data-has-card="false"
+     data-has-card-icon="false"
+     data-has-promo-teaser-text="false"
+     data-has-cta-teaser="false"
+     data-has-news-list-with-images="false"
+     data-has-layout-above="false"
+     data-has-layout-aside="false"
+     data-has-role-article="false"
+>
+                
+  
+  
+      <div class="image-wrapper"
+    data-layout="above"
+  >
+      <div class="image-wrapper__image"
+      data-image-offset="false"
+       data-aspect-ratio="2:1"
+>
+  
+            <div>
+
+
+
+
+
+          <img src="/sites/dph.georgia.gov/files/styles/two_one_1000x500/public/2020-12/GettyImages-1288742424.jpg?h=119335f7&amp;itok=2VsT3X-R" width="1000" height="500" alt="hispanic mother husband and son" typeof="foaf:Image" />
+
+
+
+  
+</div>
+      
+</div>
+    <div class="image-wrapper__teaser"
+    data-teaser-offset="true"
+  >
+        <div class="promo-teaser promo-teaser--text">
+          
+                  <h3 class="promo-teaser__title">      Make a Plan to Get Your Vaccine!
+  </h3>
+      
+        
+          </div>
+  
+  </div>
+  </div>
+  
+
+      
+</div>
+  
+                  
+    
+  
+  
+
+      <div class="layout-section__region-item layout-section__region-item--card"
+     data-has-card="true"
+     data-has-card-icon="true"
+     data-has-promo-teaser-text="false"
+     data-has-cta-teaser="false"
+     data-has-news-list-with-images="false"
+     data-has-layout-above="false"
+     data-has-layout-aside="false"
+     data-has-role-article="false"
+>
+    <div data-swatch-role="light-bg" data-swatch-type="functional" data-swatch-text-type="dark-text" class="card-wrapper card-wrapper--icon card-wrapper--embed">
+          <div class="card-wrapper__icon">
+          <div class="content-icon">
+            <div class="content-icon__image" alt="Health Shield icon" title="Health Shield icon">
+    <?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
+  <defs>
+    <style>
+      .fill {
+        fill: #D3D3D3;
+        fill: palette-swatch-var(icon-fill); // sass-lint:disable-line no-duplicate-properties
+      }
+      .stroke {
+        fill: #000300;
+        fill: palette-swatch-var(icon-fill); // sass-lint:disable-line no-duplicate-properties
+      }
+    </style>
+  </defs>
+  <g>
+    <path class="fill" d="M191.25,127.5c0,48.18-49.7,76-66.08,83.92a11.94,11.94,0,0,1-10.34,0c-16.38-7.88-66.08-35.74-66.08-83.92V59.9C77.6,59.9,120,26.25,120,26.25S162.4,60,191.25,60Z"></path>
+    <path class="stroke" d="M191.25,56.25c-27.19,0-68.5-32.6-68.92-32.93a3.74,3.74,0,0,0-4.66,0c-.41.33-41.72,32.84-68.92,32.84A3.75,3.75,0,0,0,45,59.9v48.85a3.75,3.75,0,0,0,7.5,0V63.49C78.23,61.3,111,37.81,120,31c9,6.83,41.77,30.4,67.5,32.59v7.67a3.75,3.75,0,0,0,7.5,0V60A3.75,3.75,0,0,0,191.25,56.25Z"></path>
+    <path class="stroke" d="M191.25,112.5a3.75,3.75,0,0,0-3.75,3.75V127.5c0,46.2-48.95,73.33-63.95,80.54a8.18,8.18,0,0,1-7.1,0c-15-7.21-63.95-34.34-63.95-80.54v-3.75a3.75,3.75,0,0,0-7.5,0v3.75c0,50.58,52.2,79.61,68.2,87.3a15.58,15.58,0,0,0,13.59,0c16-7.69,68.21-36.72,68.21-87.3V116.25A3.75,3.75,0,0,0,191.25,112.5Z"></path>
+    <path class="stroke" d="M191.25,82.5a3.75,3.75,0,0,0-3.75,3.75v15a3.75,3.75,0,0,0,7.5,0v-15A3.75,3.75,0,0,0,191.25,82.5Z"></path>
+    <path class="stroke" d="M131.25,96h-22.5a1.5,1.5,0,0,0-1.5,1.5V111H93.75a1.5,1.5,0,0,0-1.5,1.5V135a1.5,1.5,0,0,0,1.5,1.5h13.5V150a1.5,1.5,0,0,0,1.5,1.5h22.5a1.5,1.5,0,0,0,1.5-1.5V136.5h13.5a1.5,1.5,0,0,0,1.5-1.5V112.5a1.5,1.5,0,0,0-1.5-1.5h-13.5V97.5A1.5,1.5,0,0,0,131.25,96Z"></path>
+  </g>
+</svg>
+
+  </div>
+      </div>
+
+
+      </div>
+        <div class="card-wrapper__content card-wrapper__content--icon">
+                  
+  
+  
+          <div class="promo-teaser promo-teaser--text">
+          
+                  <h3 class="promo-teaser__title">      Are Vaccines Safe?
+  </h3>
+      
+        
+            <div class="promo-teaser__summary body-minimal">
+            <div><p>The U.S. vaccine safety system ensures that all vaccines are as safe as possible. Learn more about</p>
+</div>
+      </div>
+            
+  <div class="more-link">
+        <span class="more-link__text">
+              
+            <div><a href="/immunization-section/vaccine-safety">Vaccine Safety</a></div>
+      
+          </span>
+  </div>
+  </div>
+  
+  
+
+          </div>
+  </div>
+</div>
+  
+            </div>
+
+                            <div class="layout-section__region" data-region-type="one-third">
+                    
+
+  
+  
+
+      <div class="layout-section__region-item layout-section__region-item--card"
+     data-has-card="true"
+     data-has-card-icon="false"
+     data-has-promo-teaser-text="false"
+     data-has-cta-teaser="false"
+     data-has-news-list-with-images="false"
+     data-has-layout-above="false"
+     data-has-layout-aside="false"
+     data-has-role-article="false"
+>
+    <div data-swatch-role="light-bg" data-swatch-type="functional" data-swatch-text-type="dark-text" class="card-wrapper card-wrapper--embed">
+        <div class="card-wrapper__content">
+                    <div class="promo-teaser promo-teaser--text">
+            <h3 class="promo-teaser__title">      COVID-19 Vaccine General FAQ
+  </h3>
+            <div class="promo-teaser__summary body-minimal">      <p>This information is based on currently available evidence, resources, information, emergency use authorization and expert opinion and is subject to change. As additional evidence regarding the use of COVID-19 vaccine for individuals emerges, it will be necessary to modify this content.</p>
+<p>&#13;<br />
+&#13;</p>
+<p><span class="inline-document-link">
+  <img class="inline-document-link__file-icon-img" src="/themes/custom/ga_forest/orchard/assets/images/icons/file-types/file-pdf.svg" alt="Download this pdf file." /><a href="https://dph.georgia.gov/media/63686/download" title="">Download a PDF of the full list COVID-19 Vaccine FAQ</a>
+</span>
+</p>
+<p>&#13;</p>
+
+  </div>
+            
+  <div class="more-link">
+        <span class="more-link__text">
+              <a href="/covid-19-vaccine-general-faq" aria-label="Read more about COVID-19 Vaccine General FAQ">Read more</a>
+          </span>
+  </div>
+  </div>
+  
+
+          </div>
+  </div>
+</div>
+  
+              
+
+  
+  
+
+      <div class="layout-section__region-item layout-section__region-item--card"
+     data-has-card="true"
+     data-has-card-icon="false"
+     data-has-promo-teaser-text="false"
+     data-has-cta-teaser="false"
+     data-has-news-list-with-images="false"
+     data-has-layout-above="false"
+     data-has-layout-aside="false"
+     data-has-role-article="false"
+>
+    <div data-swatch-role="light-bg" data-swatch-type="functional" data-swatch-text-type="dark-text" class="card-wrapper card-wrapper--embed">
+        <div class="card-wrapper__content">
+                  
+  
+  
+          <div class="promo-teaser promo-teaser--text">
+          
+                  <h3 class="promo-teaser__title">      Pfizer Patient Fact Sheet
+  </h3>
+      
+        
+            <div class="promo-teaser__summary body-minimal">
+            <div><p>Find patient fact sheet information in additional languages at <a href="https://www.fda.gov/emergency-preparedness-and-response/coronavirus-disease-2019-covid-19/pfizer-biontech-covid-19-vaccine#additional">FDA-Pfizer</a> or download the English version below.</p>
+</div>
+      </div>
+            
+  <div class="more-link">
+        <span class="more-link__text">
+              
+            <div><a href="https://www.fda.gov/media/144414/download">Recipients and Caregivers (English)</a></div>
+      
+          </span>
+  </div>
+  </div>
+  
+  
+
+          </div>
+  </div>
+</div>
+  
+              
+
+  
+  
+
+      <div class="layout-section__region-item layout-section__region-item--card"
+     data-has-card="true"
+     data-has-card-icon="false"
+     data-has-promo-teaser-text="false"
+     data-has-cta-teaser="false"
+     data-has-news-list-with-images="false"
+     data-has-layout-above="false"
+     data-has-layout-aside="false"
+     data-has-role-article="false"
+>
+    <div data-swatch-role="light-bg" data-swatch-type="functional" data-swatch-text-type="dark-text" class="card-wrapper card-wrapper--embed">
+        <div class="card-wrapper__content">
+                  
+  
+  
+          <div class="promo-teaser promo-teaser--text">
+          
+                  <h3 class="promo-teaser__title">      Moderna Patient Fact Sheet
+  </h3>
+      
+        
+            <div class="promo-teaser__summary body-minimal">
+            <div><p>Find patient fact sheet information in additional languages at <a href="https://www.fda.gov/emergency-preparedness-and-response/coronavirus-disease-2019-covid-19/moderna-covid-19-vaccine">FDA-Moderna</a> or download the English version below.</p>
+</div>
+      </div>
+            
+  <div class="more-link">
+        <span class="more-link__text">
+              
+            <div><a href="https://www.fda.gov/media/144638/download">Recipients and Caregivers (English)</a></div>
+      
+          </span>
+  </div>
+  </div>
+  
+  
+
+          </div>
+  </div>
+</div>
+  
+            </div>
+
+                              </div>
+              </div>
+    </div>
+  </div>
+  </div>
+
+
+<div class="layout-section"
+  data-child-type=""
+  data-child-has-card="false"
+  data-child-has-hero="false"
+  data-layout-type="thirds-two-one"
+  data-is-super="false"
+  data-has-transparency="false"
+  data-has-background-image="false"
+
+  data-swatch-role="light-bg-shade" data-swatch-type="functional" data-swatch-text-type="dark-text"
+>
+    <div class="layout-section__outer-wrapper">
+        <div class="layout-section__bg">
+      <div class="layout-section__inner-wrapper">
+                  <h2 class="layout-section__title ">Information for Healthcare Providers and Partners</h2>
+                <div class="layout-section__inner">
+                                      <div class="layout-section__region" data-region-type="two-thirds">
+                    
+
+  
+  
+
+      <div class="layout-section__region-item layout-section__region-item--no-card"
+     data-has-card="false"
+     data-has-card-icon="false"
+     data-has-promo-teaser-text="false"
+     data-has-cta-teaser="false"
+     data-has-news-list-with-images="false"
+     data-has-layout-above="false"
+     data-has-layout-aside="false"
+     data-has-role-article="false"
+>
+                
+  
+  
+      <div class="image-wrapper"
+    data-layout="above"
+  >
+      <div class="image-wrapper__image"
+      data-image-offset="false"
+       data-aspect-ratio="2:1"
+>
+  
+            <div>
+
+
+
+
+
+          <img src="/sites/dph.georgia.gov/files/styles/two_one_1000x500/public/2020-12/GettyImages-1238772468%20%281%29.jpg?h=1d0e8fe7&amp;itok=o5KS_Y-Y" width="1000" height="500" alt="healthcare worker with covid vaccine vile" typeof="foaf:Image" />
+
+
+
+  
+</div>
+      
+</div>
+    <div class="image-wrapper__teaser"
+    data-teaser-offset="true"
+  >
+        <div class="promo-teaser promo-teaser--text">
+          
+                  <h3 class="promo-teaser__title">      Even Heroes Need COVID-19 Vaccine!
+  </h3>
+      
+        
+          </div>
+  
+  </div>
+  </div>
+  
+
+      
+</div>
+  
+              
+
+  
+  
+
+      <div class="layout-section__region-item layout-section__region-item--card"
+     data-has-card="true"
+     data-has-card-icon="false"
+     data-has-promo-teaser-text="false"
+     data-has-cta-teaser="false"
+     data-has-news-list-with-images="false"
+     data-has-layout-above="false"
+     data-has-layout-aside="false"
+     data-has-role-article="false"
+>
+    <div data-swatch-role="light-bg" data-swatch-type="functional" data-swatch-text-type="dark-text" class="card-wrapper card-wrapper--embed">
+        <div class="card-wrapper__content">
+                  
+  
+  
+          <div class="promo-teaser promo-teaser--text">
+          
+                  <h3 class="promo-teaser__title">      Providers Can Register for Vaccine at a Local Public Health Department
+  </h3>
+      
+        
+                  
+  <div class="more-link">
+        <span class="more-link__text">
+              
+            <div><a href="https://dph.georgia.gov/provider-vaccine-registration-ph-district-list">Find a Location</a></div>
+      
+          </span>
+  </div>
+  </div>
+  
+  
+
+          </div>
+  </div>
+</div>
+  
+                  
+    
+  
+  
+
+      <div class="layout-section__region-item layout-section__region-item--card"
+     data-has-card="true"
+     data-has-card-icon="true"
+     data-has-promo-teaser-text="false"
+     data-has-cta-teaser="false"
+     data-has-news-list-with-images="false"
+     data-has-layout-above="false"
+     data-has-layout-aside="false"
+     data-has-role-article="false"
+>
+    <div data-swatch-role="light-bg" data-swatch-type="functional" data-swatch-text-type="dark-text" class="card-wrapper card-wrapper--icon card-wrapper--embed">
+          <div class="card-wrapper__icon">
+          <div class="content-icon">
+            <div class="content-icon__image" alt="Health stethoscope icon" title="Health stethoscope icon">
+    <?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
+  <defs>
+    <style> .fill { fill: #D3D3D3; fill: palette-swatch-var(icon-fill); // sass-lint:disable-line no-duplicate-properties } .stroke { fill: #000300; fill: palette-swatch-var(icon-fill); // sass-lint:disable-line no-duplicate-properties } </style>
+  </defs>
+  <g>
+    <circle class="fill" cx="138.75" cy="86.25" r="15"></circle>
+    <circle class="stroke" cx="138.75" cy="86.25" r="7.5"></circle>
+    <path class="stroke" d="M82.5,138.75a3.75,3.75,0,0,0,7.5,0V112.1a18.7,18.7,0,0,0,14.437-13.784l14.985-59.927A18.767,18.767,0,0,0,105,15.378V15a3.75,3.75,0,0,0-3.75-3.75h-7.5A3.75,3.75,0,0,0,90,15v7.5a3.75,3.75,0,0,0,3.75,3.75h7.5a3.743,3.743,0,0,0,3.686-3.117,11.251,11.251,0,0,1,7.213,13.418L102.535,75h-4.8a3.751,3.751,0,0,0-3.638,2.84L91.053,90H81.447L78.406,77.84A3.749,3.749,0,0,0,74.768,75h-4.8L60.347,36.537a11.253,11.253,0,0,1,7.217-13.4A3.743,3.743,0,0,0,71.25,26.25h7.5A3.75,3.75,0,0,0,82.5,22.5V15a3.75,3.75,0,0,0-3.75-3.75h-7.5A3.75,3.75,0,0,0,67.5,15v.378A18.769,18.769,0,0,0,53.074,38.371l14.99,59.944A18.7,18.7,0,0,0,82.5,112.1Z"></path>
+    <path class="stroke" d="M170.158,206.086c-.691.63-4.568,3.439-5.387,3.9A48.2,48.2,0,0,1,138.75,217.5,48.805,48.805,0,0,1,90,168.75v-15a3.75,3.75,0,0,0-7.5,0v15A56.314,56.314,0,0,0,138.75,225a55.624,55.624,0,0,0,29.722-8.478,69.525,69.525,0,0,0,6.738-4.893,3.75,3.75,0,1,0-5.052-5.543Z"></path>
+    <path class="stroke" d="M194.518,161.42a56.318,56.318,0,0,0-12.364-28.451L153.323,98.022a18.748,18.748,0,1,0-5.781,4.778l28.828,34.942a48.819,48.819,0,0,1,10.709,24.626,47.106,47.106,0,0,1,.391,6.924,3.75,3.75,0,0,0,3.667,3.83h.083a3.751,3.751,0,0,0,3.748-3.669A54.736,54.736,0,0,0,194.518,161.42ZM138.75,97.5A11.25,11.25,0,1,1,150,86.25,11.263,11.263,0,0,1,138.75,97.5Z"></path>
+    <path class="stroke" d="M190.119,180.589a3.753,3.753,0,0,0-4.736,2.387,52.9,52.9,0,0,1-5.961,12.62,3.75,3.75,0,1,0,6.256,4.136,60.363,60.363,0,0,0,6.827-14.407A3.749,3.749,0,0,0,190.119,180.589Z"></path>
+  </g>
+</svg>
+
+  </div>
+      </div>
+
+
+      </div>
+        <div class="card-wrapper__content card-wrapper__content--icon">
+                  
+  
+  
+          <div class="promo-teaser promo-teaser--text">
+          
+                  <h3 class="promo-teaser__title">      GA Providers and Healthcare Professionals
+  </h3>
+      
+        
+                  
+  <div class="more-link">
+        <span class="more-link__text">
+              
+            <div><a href="/covid-vaccine-information-providers">COVID Vaccine Information</a></div>
+      
+          </span>
+  </div>
+  </div>
+  
+  
+
+          </div>
+  </div>
+</div>
+  
+              
+
+  
+  
+
+      <div class="layout-section__region-item layout-section__region-item--card"
+     data-has-card="true"
+     data-has-card-icon="false"
+     data-has-promo-teaser-text="false"
+     data-has-cta-teaser="false"
+     data-has-news-list-with-images="false"
+     data-has-layout-above="false"
+     data-has-layout-aside="false"
+     data-has-role-article="false"
+>
+    <div data-swatch-role="light-bg" data-swatch-type="functional" data-swatch-text-type="dark-text" class="card-wrapper card-wrapper--embed">
+        <div class="card-wrapper__content">
+                
+  
+      <div class="text-block">
+          
+                  <h3 class="text-block__title">      Provider Technical Support
+  </h3>
+      
+        
+            <div class="text-block__summary">
+      <div class="body-content body-content--offset">
+  
+            <div><ul><li><strong>GRITS Hotline</strong> (Technical/IT questions):  866-483-2958 or email at <a href="mailto:dph-gaimmreg@dph.ga.gov">dph-gaimmreg@dph.ga.gov </a></li>
+<li><strong>Provider Support </strong>(Provider enrollment questions, Pin #s):  888-920-0165 or email <a href="mailto:DPH-COVID19vaccine@dph.ga.gov">DPH-COVID19vaccine@dph.ga.gov</a></li>
+</ul><p> </p>
+</div>
+      
+</div>
+    </div>
+  </div>
+  
+
+
+          </div>
+  </div>
+</div>
+  
+            </div>
+
+                            <div class="layout-section__region" data-region-type="one-third">
+                    
+
+  
+  
+
+      <div class="layout-section__region-item layout-section__region-item--card"
+     data-has-card="true"
+     data-has-card-icon="false"
+     data-has-promo-teaser-text="false"
+     data-has-cta-teaser="false"
+     data-has-news-list-with-images="false"
+     data-has-layout-above="false"
+     data-has-layout-aside="false"
+     data-has-role-article="false"
+>
+    <div data-swatch-role="light-bg" data-swatch-type="functional" data-swatch-text-type="dark-text" class="card-wrapper card-wrapper--embed">
+        <div class="card-wrapper__content">
+                    <div class="promo-teaser promo-teaser--text">
+            <h3 class="promo-teaser__title">      COVID-19 Vaccine Healthcare FAQs
+  </h3>
+            <div class="promo-teaser__summary body-minimal">      <p>This information is based on currently available evidence, resources, information, emergency use authorization and expert opinion and is subject to change. As additional evidence regarding the use of COVID-19 vaccine for individuals emerges, it will be necessary to modify this content.</p>
+<p><span class="inline-document-link">
+  <img class="inline-document-link__file-icon-img" src="/themes/custom/ga_forest/orchard/assets/images/icons/file-types/file-pdf.svg" alt="Download this pdf file." /><a href="https://dph.georgia.gov/media/63686/download" title="">Download a PDF of the full list COVID-19 Vaccine FAQ</a>
+</span>
+</p>
+
+  </div>
+            
+  <div class="more-link">
+        <span class="more-link__text">
+              <a href="/covid-19-vaccine-healthcare-faqs" aria-label="Read more about COVID-19 Vaccine Healthcare FAQs">Read more</a>
+          </span>
+  </div>
+  </div>
+  
+
+          </div>
+  </div>
+</div>
+  
+              
+
+  
+  
+
+      <div class="layout-section__region-item layout-section__region-item--card"
+     data-has-card="true"
+     data-has-card-icon="false"
+     data-has-promo-teaser-text="false"
+     data-has-cta-teaser="false"
+     data-has-news-list-with-images="false"
+     data-has-layout-above="false"
+     data-has-layout-aside="false"
+     data-has-role-article="false"
+>
+    <div data-swatch-role="light-bg" data-swatch-type="functional" data-swatch-text-type="dark-text" class="card-wrapper card-wrapper--embed">
+        <div class="card-wrapper__content">
+                  
+  
+  
+          <div class="promo-teaser promo-teaser--text">
+          
+                  <h3 class="promo-teaser__title">      Moderna Provider Fact Sheet
+  </h3>
+      
+        
+                  
+  <div class="more-link">
+        <span class="more-link__text">
+              
+            <div><a href="https://www.fda.gov/media/144637/download">Healthcare Providers</a></div>
+      
+          </span>
+  </div>
+  </div>
+  
+  
+
+          </div>
+  </div>
+</div>
+  
+              
+
+  
+  
+
+      <div class="layout-section__region-item layout-section__region-item--card"
+     data-has-card="true"
+     data-has-card-icon="false"
+     data-has-promo-teaser-text="false"
+     data-has-cta-teaser="false"
+     data-has-news-list-with-images="false"
+     data-has-layout-above="false"
+     data-has-layout-aside="false"
+     data-has-role-article="false"
+>
+    <div data-swatch-role="light-bg" data-swatch-type="functional" data-swatch-text-type="dark-text" class="card-wrapper card-wrapper--embed">
+        <div class="card-wrapper__content">
+                  
+  
+  
+          <div class="promo-teaser promo-teaser--text">
+          
+                  <h3 class="promo-teaser__title">      Pfizer Provider Fact Sheet
+  </h3>
+      
+        
+                  
+  <div class="more-link">
+        <span class="more-link__text">
+              
+            <div><a href="https://www.fda.gov/media/144413/download">Healthcare Providers</a></div>
+      
+          </span>
+  </div>
+  </div>
+  
+  
+
+          </div>
+  </div>
+</div>
+  
+              
+
+  
+  
+
+      <div class="layout-section__region-item layout-section__region-item--card"
+     data-has-card="true"
+     data-has-card-icon="false"
+     data-has-promo-teaser-text="false"
+     data-has-cta-teaser="false"
+     data-has-news-list-with-images="false"
+     data-has-layout-above="false"
+     data-has-layout-aside="false"
+     data-has-role-article="false"
+>
+    <div data-swatch-role="light-bg" data-swatch-type="functional" data-swatch-text-type="dark-text" class="card-wrapper card-wrapper--embed">
+        <div class="card-wrapper__content">
+                  
+  
+  
+          <div class="promo-teaser promo-teaser--text">
+          
+                  <h3 class="promo-teaser__title">      Vaccine Toolkit for Partners
+  </h3>
+      
+        
+                  
+  <div class="more-link">
+        <span class="more-link__text">
+              
+            <div><a href="https://dph.georgia.gov/document/document/vaccine-toolkit-partners/download">Download</a></div>
+      
+          </span>
+  </div>
+  </div>
+  
+  
+
+          </div>
+  </div>
+</div>
+  
+            </div>
+
+                              </div>
+              </div>
+    </div>
+  </div>
+  </div>
+
+
+
+<div class="layout-section"
+  data-child-type=""
+  data-child-has-card="false"
+  data-child-has-hero="false"
+  data-layout-type="thirds-one-one-one"
+  data-is-super="false"
+  data-has-transparency="false"
+  data-has-background-image="false"
+
+  data-swatch-role="lighter-bg" data-swatch-type="functional" data-swatch-text-type="dark-text"
+>
+    <div class="layout-section__outer-wrapper">
+        <div class="layout-section__bg">
+      <div class="layout-section__inner-wrapper">
+                  <h2 class="layout-section__title ">Food and Drug Administration (FDA)</h2>
+                <div class="layout-section__inner">
+                                      <div class="layout-section__region" data-region-type="one-third">
+                    
+
+  
+  
+
+      <div class="layout-section__region-item layout-section__region-item--card"
+     data-has-card="true"
+     data-has-card-icon="false"
+     data-has-promo-teaser-text="false"
+     data-has-cta-teaser="false"
+     data-has-news-list-with-images="false"
+     data-has-layout-above="false"
+     data-has-layout-aside="false"
+     data-has-role-article="false"
+>
+    <div data-swatch-role="light-bg" data-swatch-type="functional" data-swatch-text-type="dark-text" class="card-wrapper card-wrapper--embed">
+        <div class="card-wrapper__content">
+                  
+  
+  
+          <div class="promo-teaser promo-teaser--text">
+          
+              
+        
+            <div class="promo-teaser__summary body-minimal">
+            <div><p>FDA has rigorous scientific and regulatory processes in place to facilitate development and ensure the safety, effectiveness and quality of COVID-19 vaccines.</p>
+</div>
+      </div>
+            
+  <div class="more-link">
+        <span class="more-link__text">
+              
+            <div><a href="https://www.fda.gov/emergency-preparedness-and-response/coronavirus-disease-2019-covid-19/covid-19-vaccines">FDA COVID-19 Vaccine Info</a></div>
+      
+          </span>
+  </div>
+  </div>
+  
+  
+
+          </div>
+  </div>
+</div>
+  
+              
+
+  
+  
+
+      <div class="layout-section__region-item layout-section__region-item--card"
+     data-has-card="true"
+     data-has-card-icon="false"
+     data-has-promo-teaser-text="false"
+     data-has-cta-teaser="false"
+     data-has-news-list-with-images="false"
+     data-has-layout-above="false"
+     data-has-layout-aside="false"
+     data-has-role-article="false"
+>
+    <div data-swatch-role="light-bg" data-swatch-type="functional" data-swatch-text-type="dark-text" class="card-wrapper card-wrapper--embed">
+        <div class="card-wrapper__content">
+                  
+  
+  
+      <div class="image-wrapper"
+    data-layout="above"
+  >
+      <div class="image-wrapper__image"
+      data-image-offset="false"
+       data-aspect-ratio="3:2"
+>
+  
+            <div>
+
+
+
+
+
+          <img src="/sites/dph.georgia.gov/files/styles/three_two_702x468/public/2020-07/gettyimages-1146471610.jpg?h=a141e9ea&amp;itok=HaHr2i3P" width="702" height="468" alt="Photo of doctor placing bandage " typeof="foaf:Image" />
+
+
+
+  
+</div>
+      
+</div>
+    <div class="image-wrapper__teaser"
+    data-teaser-offset="true"
+  >
+        <div class="promo-teaser promo-teaser--text">
+          
+                  <h3 class="promo-teaser__title">      FDA Path from Vaccine to EUA
+  </h3>
+      
+        
+                  
+  <div class="more-link">
+        <span class="more-link__text">
+              
+            <div><a href="https://www.fda.gov/media/143890/download">Process Infographic</a></div>
+      
+          </span>
+  </div>
+  </div>
+  
+  </div>
+  </div>
+  
+
+          </div>
+  </div>
+</div>
+  
+            </div>
+
+                            <div class="layout-section__region" data-region-type="one-third">
+                    
+
+  
+  
+
+      <div class="layout-section__region-item layout-section__region-item--card"
+     data-has-card="true"
+     data-has-card-icon="false"
+     data-has-promo-teaser-text="false"
+     data-has-cta-teaser="false"
+     data-has-news-list-with-images="false"
+     data-has-layout-above="false"
+     data-has-layout-aside="false"
+     data-has-role-article="false"
+>
+    <div data-swatch-role="light-bg" data-swatch-type="functional" data-swatch-text-type="dark-text" class="card-wrapper card-wrapper--embed">
+        <div class="card-wrapper__content">
+                  
+  
+  
+          <div class="promo-teaser promo-teaser--text">
+          
+              
+        
+            <div class="promo-teaser__summary body-minimal">
+            <div><p>Vaccines have prevented countless cases of disease and disability and have saved millions of lives. Ensuring the safety and effectiveness of vaccines is one of FDA’s top priorities.</p>
+</div>
+      </div>
+            
+  <div class="more-link">
+        <span class="more-link__text">
+              
+            <div><a href="https://www.fda.gov/vaccines-blood-biologics/development-approval-process-cber/vaccine-development-101">FDA Vaccine Development 101</a></div>
+      
+          </span>
+  </div>
+  </div>
+  
+  
+
+          </div>
+  </div>
+</div>
+  
+                  
+    
+  
+  
+
+      <div class="layout-section__region-item layout-section__region-item--card"
+     data-has-card="true"
+     data-has-card-icon="true"
+     data-has-promo-teaser-text="false"
+     data-has-cta-teaser="false"
+     data-has-news-list-with-images="false"
+     data-has-layout-above="false"
+     data-has-layout-aside="false"
+     data-has-role-article="false"
+>
+    <div data-swatch-role="light-bg" data-swatch-type="functional" data-swatch-text-type="dark-text" class="card-wrapper card-wrapper--icon card-wrapper--embed">
+          <div class="card-wrapper__icon">
+          <div class="content-icon">
+            <div class="content-icon__image" alt="Document icon" title="Document icon">
+    <?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
+  <defs>
+    <style>
+      .fill {
+        fill: #D3D3D3;
+        fill: palette-swatch-var(icon-fill); // sass-lint:disable-line no-duplicate-properties
+      }
+      .stroke {
+        fill: #000300;
+        fill: palette-swatch-var(icon-fill); // sass-lint:disable-line no-duplicate-properties
+      }
+    </style>
+  </defs>
+  <g>
+    <path class="stroke" d="M168.75,26.25c-6.19,0-11.25,5.4-11.25,12V40.5c0,6.6,5.06,12,11.25,12H57a12,12,0,0,1-12-12V38.25a12,12,0,0,1,12-12h48"></path>
+    <path class="stroke" d="M68.25,26.25h103.5a12,12,0,0,1,12,12v175.5H56.25V52.5"></path>
+    <line class="stroke" x1="78.75" y1="176.25" x2="97.5" y2="176.25"></line>
+    <line class="stroke" x1="112.5" y1="176.25" x2="161.25" y2="176.25"></line>
+    <line class="stroke" x1="161.25" y1="86.25" x2="123.75" y2="86.25"></line>
+    <line class="stroke" x1="108.75" y1="86.25" x2="78.75" y2="86.25"></line>
+    <line class="stroke" x1="131.25" y1="131.25" x2="78.75" y2="131.25"></line>
+    <line class="stroke" x1="146.25" y1="131.25" x2="161.25" y2="131.25"></line>
+    <path class="fill" d="M171.75,26.25H57a12,12,0,0,0-12,12V40.5a12,12,0,0,0,11.27,12l0,0V213.75h127.5V38.25A12,12,0,0,0,171.75,26.25Z"></path>
+    <path class="stroke" d="M171.75,22.5H57A15.77,15.77,0,0,0,41.25,38.25V40.5A15.78,15.78,0,0,0,52.5,55.59V213.75a3.75,3.75,0,0,0,3.75,3.75h127.5a3.75,3.75,0,0,0,3.75-3.75V38.25A15.77,15.77,0,0,0,171.75,22.5ZM180,210H60V56.25H168.75a3.75,3.75,0,0,0,0-7.5c-4.14,0-7.5-3.7-7.5-8.25V38.25c0-4.55,3.36-8.25,7.5-8.25h3A8.26,8.26,0,0,1,180,38.25Z"></path>
+    <path class="stroke" d="M97.5,172.5H78.75a3.75,3.75,0,0,0,0,7.5H97.5a3.75,3.75,0,0,0,0-7.5Z"></path>
+    <path class="stroke" d="M161.25,172.5H112.5a3.75,3.75,0,0,0,0,7.5h48.75a3.75,3.75,0,0,0,0-7.5Z"></path>
+    <path class="stroke" d="M161.25,82.5h-37.5a3.75,3.75,0,0,0,0,7.5h37.5a3.75,3.75,0,0,0,0-7.5Z"></path>
+    <path class="stroke" d="M78.75,90h30a3.75,3.75,0,0,0,0-7.5h-30a3.75,3.75,0,0,0,0,7.5Z"></path>
+    <path class="stroke" d="M78.75,135h52.5a3.75,3.75,0,0,0,0-7.5H78.75a3.75,3.75,0,0,0,0,7.5Z"></path>
+    <path class="stroke" d="M161.25,127.5h-15a3.75,3.75,0,0,0,0,7.5h15a3.75,3.75,0,0,0,0-7.5Z"></path>
+  </g>
+</svg>
+
+  </div>
+      </div>
+
+
+      </div>
+        <div class="card-wrapper__content card-wrapper__content--icon">
+                  
+  
+  
+          <div class="promo-teaser promo-teaser--text">
+          
+                  <h3 class="promo-teaser__title">      FDA Letter of Authorization for Pfizer
+  </h3>
+      
+        
+                  
+  <div class="more-link">
+        <span class="more-link__text">
+              
+            <div><div class="link-teaser">
+          <div class="link-teaser__link-text link-teaser__link-text--text link-teaser__link-text--file">
+                                          <span class="link-teaser__file-icon">
+        <img class="link-teaser__file-icon-img" src="/themes/custom/ga_forest/orchard/assets/images/icons/file-types/file-pdf.svg" alt="Download this pdf">
+      </span>
+        <span class="link-teaser__link-text-content">
+            <span class="link-teaser__link"><a href="/document/document/fda-letter-authorization-pfizer/download">Letter for Pfizer</a></span>
+              <span class="link-teaser__file-size">(415.67 KB)</span>
+          </span>
+  </div>
+  </div>
+</div>
+      
+          </span>
+  </div>
+  </div>
+  
+  
+
+          </div>
+  </div>
+</div>
+  
+            </div>
+
+                            <div class="layout-section__region" data-region-type="one-third">
+                    
+
+  
+  
+
+      <div class="layout-section__region-item layout-section__region-item--card"
+     data-has-card="true"
+     data-has-card-icon="false"
+     data-has-promo-teaser-text="false"
+     data-has-cta-teaser="false"
+     data-has-news-list-with-images="false"
+     data-has-layout-above="false"
+     data-has-layout-aside="false"
+     data-has-role-article="false"
+>
+    <div data-swatch-role="light-bg" data-swatch-type="functional" data-swatch-text-type="dark-text" class="card-wrapper card-wrapper--embed">
+        <div class="card-wrapper__content">
+                  
+  
+  
+          <div class="promo-teaser promo-teaser--text">
+          
+              
+        
+            <div class="promo-teaser__summary body-minimal">
+            <div><p>FDA will evaluate an EUA request and determine whether the relevant statutory criteria are met, taking into account the totality of the scientific evidence about the vaccine that is available to FDA.</p>
+</div>
+      </div>
+            
+  <div class="more-link">
+        <span class="more-link__text">
+              
+            <div><a href="https://www.fda.gov/vaccines-blood-biologics/vaccines/emergency-use-authorization-vaccines-explained">FDA EUA for Vaccines Explained</a></div>
+      
+          </span>
+  </div>
+  </div>
+  
+  
+
+          </div>
+  </div>
+</div>
+  
+                  
+    
+  
+  
+
+      <div class="layout-section__region-item layout-section__region-item--card"
+     data-has-card="true"
+     data-has-card-icon="true"
+     data-has-promo-teaser-text="false"
+     data-has-cta-teaser="false"
+     data-has-news-list-with-images="false"
+     data-has-layout-above="false"
+     data-has-layout-aside="false"
+     data-has-role-article="false"
+>
+    <div data-swatch-role="light-bg" data-swatch-type="functional" data-swatch-text-type="dark-text" class="card-wrapper card-wrapper--icon card-wrapper--embed">
+          <div class="card-wrapper__icon">
+          <div class="content-icon">
+            <div class="content-icon__image" alt="Document icon" title="Document icon">
+    <?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
+  <defs>
+    <style>
+      .fill {
+        fill: #D3D3D3;
+        fill: palette-swatch-var(icon-fill); // sass-lint:disable-line no-duplicate-properties
+      }
+      .stroke {
+        fill: #000300;
+        fill: palette-swatch-var(icon-fill); // sass-lint:disable-line no-duplicate-properties
+      }
+    </style>
+  </defs>
+  <g>
+    <path class="stroke" d="M168.75,26.25c-6.19,0-11.25,5.4-11.25,12V40.5c0,6.6,5.06,12,11.25,12H57a12,12,0,0,1-12-12V38.25a12,12,0,0,1,12-12h48"></path>
+    <path class="stroke" d="M68.25,26.25h103.5a12,12,0,0,1,12,12v175.5H56.25V52.5"></path>
+    <line class="stroke" x1="78.75" y1="176.25" x2="97.5" y2="176.25"></line>
+    <line class="stroke" x1="112.5" y1="176.25" x2="161.25" y2="176.25"></line>
+    <line class="stroke" x1="161.25" y1="86.25" x2="123.75" y2="86.25"></line>
+    <line class="stroke" x1="108.75" y1="86.25" x2="78.75" y2="86.25"></line>
+    <line class="stroke" x1="131.25" y1="131.25" x2="78.75" y2="131.25"></line>
+    <line class="stroke" x1="146.25" y1="131.25" x2="161.25" y2="131.25"></line>
+    <path class="fill" d="M171.75,26.25H57a12,12,0,0,0-12,12V40.5a12,12,0,0,0,11.27,12l0,0V213.75h127.5V38.25A12,12,0,0,0,171.75,26.25Z"></path>
+    <path class="stroke" d="M171.75,22.5H57A15.77,15.77,0,0,0,41.25,38.25V40.5A15.78,15.78,0,0,0,52.5,55.59V213.75a3.75,3.75,0,0,0,3.75,3.75h127.5a3.75,3.75,0,0,0,3.75-3.75V38.25A15.77,15.77,0,0,0,171.75,22.5ZM180,210H60V56.25H168.75a3.75,3.75,0,0,0,0-7.5c-4.14,0-7.5-3.7-7.5-8.25V38.25c0-4.55,3.36-8.25,7.5-8.25h3A8.26,8.26,0,0,1,180,38.25Z"></path>
+    <path class="stroke" d="M97.5,172.5H78.75a3.75,3.75,0,0,0,0,7.5H97.5a3.75,3.75,0,0,0,0-7.5Z"></path>
+    <path class="stroke" d="M161.25,172.5H112.5a3.75,3.75,0,0,0,0,7.5h48.75a3.75,3.75,0,0,0,0-7.5Z"></path>
+    <path class="stroke" d="M161.25,82.5h-37.5a3.75,3.75,0,0,0,0,7.5h37.5a3.75,3.75,0,0,0,0-7.5Z"></path>
+    <path class="stroke" d="M78.75,90h30a3.75,3.75,0,0,0,0-7.5h-30a3.75,3.75,0,0,0,0,7.5Z"></path>
+    <path class="stroke" d="M78.75,135h52.5a3.75,3.75,0,0,0,0-7.5H78.75a3.75,3.75,0,0,0,0,7.5Z"></path>
+    <path class="stroke" d="M161.25,127.5h-15a3.75,3.75,0,0,0,0,7.5h15a3.75,3.75,0,0,0,0-7.5Z"></path>
+  </g>
+</svg>
+
+  </div>
+      </div>
+
+
+      </div>
+        <div class="card-wrapper__content card-wrapper__content--icon">
+                  
+  
+  
+          <div class="promo-teaser promo-teaser--text">
+          
+                  <h3 class="promo-teaser__title">      FDA Letter of Authorization for Moderna
+  </h3>
+      
+        
+                  
+  <div class="more-link">
+        <span class="more-link__text">
+              
+            <div><div class="link-teaser">
+          <div class="link-teaser__link-text link-teaser__link-text--text link-teaser__link-text--file">
+                                          <span class="link-teaser__file-icon">
+        <img class="link-teaser__file-icon-img" src="/themes/custom/ga_forest/orchard/assets/images/icons/file-types/file-pdf.svg" alt="Download this pdf">
+      </span>
+        <span class="link-teaser__link-text-content">
+            <span class="link-teaser__link"><a href="/document/document/fda-letter-authorization-moderna/download">Letter for Moderna</a></span>
+              <span class="link-teaser__file-size">(436.53 KB)</span>
+          </span>
+  </div>
+  </div>
+</div>
+      
+          </span>
+  </div>
+  </div>
+  
+  
+
+          </div>
+  </div>
+</div>
+  
+            </div>
+
+                              </div>
+              </div>
+    </div>
+  </div>
+  </div>
+
+
+
+<div class="layout-section"
+  data-child-type=""
+  data-child-has-card="false"
+  data-child-has-hero="false"
+  data-layout-type="thirds-one-one-one"
+  data-is-super="false"
+  data-has-transparency="false"
+  data-has-background-image="false"
+
+  data-swatch-role="dark-bg" data-swatch-type="functional" data-swatch-text-type="light-text"
+>
+    <div class="layout-section__outer-wrapper">
+        <div class="layout-section__bg">
+      <div class="layout-section__inner-wrapper">
+                  <h2 class="layout-section__title ">Help Stop the Spread!</h2>
+                <div class="layout-section__inner">
+                                      <div class="layout-section__region" data-region-type="one-third">
+                    
+
+  
+  
+
+      <div class="layout-section__region-item layout-section__region-item--no-card"
+     data-has-card="false"
+     data-has-card-icon="false"
+     data-has-promo-teaser-text="false"
+     data-has-cta-teaser="false"
+     data-has-news-list-with-images="false"
+     data-has-layout-above="false"
+     data-has-layout-aside="false"
+     data-has-role-article="false"
+>
+              
+  
+      <div class="text-block">
+          
+                  <h3 class="text-block__title">      Clean
+  </h3>
+      
+        
+            <div class="text-block__summary">
+      <div class="body-content body-content--offset">
+  
+            <div><ul><li>Wash your hands frequently </li>
+<li>Disinfect surfaces</li>
+<li>Avoid touching your eyes, nose, and mouth</li>
+</ul></div>
+      
+</div>
+    </div>
+  </div>
+  
+
+
+      
+</div>
+  
+            </div>
+
+                            <div class="layout-section__region" data-region-type="one-third">
+                    
+
+  
+  
+
+      <div class="layout-section__region-item layout-section__region-item--no-card"
+     data-has-card="false"
+     data-has-card-icon="false"
+     data-has-promo-teaser-text="false"
+     data-has-cta-teaser="false"
+     data-has-news-list-with-images="false"
+     data-has-layout-above="false"
+     data-has-layout-aside="false"
+     data-has-role-article="false"
+>
+              
+  
+      <div class="text-block">
+          
+                  <h3 class="text-block__title">      Social Distance
+  </h3>
+      
+        
+            <div class="text-block__summary">
+      <div class="body-content body-content--offset">
+  
+            <div><ul><li>Maintain at least 6 feet of distance from others</li>
+<li>Wear a mask in public</li>
+</ul></div>
+      
+</div>
+    </div>
+  </div>
+  
+
+
+      
+</div>
+  
+            </div>
+
+                            <div class="layout-section__region" data-region-type="one-third">
+                    
+
+  
+  
+
+      <div class="layout-section__region-item layout-section__region-item--no-card"
+     data-has-card="false"
+     data-has-card-icon="false"
+     data-has-promo-teaser-text="false"
+     data-has-cta-teaser="false"
+     data-has-news-list-with-images="false"
+     data-has-layout-above="false"
+     data-has-layout-aside="false"
+     data-has-role-article="false"
+>
+                
+  
+  
+      <div class="image-wrapper"
+    data-layout="above"
+  >
+      <div class="image-wrapper__image"
+      data-image-offset="false"
+       data-aspect-ratio="3:2"
+>
+  
+            <div>
+
+
+
+
+
+          <img src="/sites/dph.georgia.gov/files/styles/three_two_702x468/public/2020-11/covid-19_stopspread_drupal_0.png?h=41e1618f&amp;itok=hBHjehIQ" width="702" height="468" alt="YouTube Stop the Spread" typeof="foaf:Image" />
+
+
+
+  
+</div>
+      
+</div>
+    <div class="image-wrapper__teaser"
+    data-teaser-offset="true"
+  >
+        <div class="promo-teaser promo-teaser--text">
+          
+              
+        
+                  
+  <div class="more-link">
+        <span class="more-link__text">
+              
+            <div><a href="https://www.youtube.com/playlist?list=PLHp0_39Iqo2eekPIDDnL2D_aOwuRn0Hjn">Follow these Steps - YouTube</a></div>
+      
+          </span>
+  </div>
+  </div>
+  
+  </div>
+  </div>
+  
+
+      
+</div>
+  
+              
+
+  
+  
+
+      <div class="layout-section__region-item layout-section__region-item--no-card"
+     data-has-card="false"
+     data-has-card-icon="false"
+     data-has-promo-teaser-text="false"
+     data-has-cta-teaser="false"
+     data-has-news-list-with-images="false"
+     data-has-layout-above="false"
+     data-has-layout-aside="false"
+     data-has-role-article="false"
+>
+                
+          <style>
+img#chatbotbutton { width: 80px; height: 88px; right: 16px; bottom: 80px; position: fixed; z-index: 1001; cursor: pointer; }
+#webchat {
+border: 1px solid #767676;
+width: 400px; height: 500px;
+position: fixed; right: 18px; bottom: 178px;
+z-index: 1001;
+background-color: #FFF;
+max-width: calc(100% - 36px); max-height: calc(100% - 188px);
+}
+#webchat .message { margin: 0; padding: 0; }
+</style>
+
+<a href="javascript:webchatPopupFunction();" onclick="gtag('event', 'Click', {'event_category': 'Chat widget', 'event_label': window.location.href});"><img alt="COVID-19 Question and Answer Bot" src="/sites/dph.georgia.gov/files/2020-04/covid-chatbot-icon-stars.png" id="chatbotbutton"></a>
+
+<script>
+function webchatPopupFunction() {
+  var x = document.getElementById('webchat');
+
+  if (x.style.visibility == 'hidden') {
+    x.style.visibility = 'visible';
+  }
+  else {
+    x.style.visibility = 'hidden';
+  }
+}
+</script>
+
+<div id="webchat" style="visibility: hidden;"></div>
+
+<script src="https://cdn.botframework.com/botframework-webchat/latest/webchat-es5.js"></script>
+<script>
+var dispatchEvent = function (dispatch) {
+  return function (next) {
+    return function (action) {
+      if (action.type === 'DIRECT_LINE/CONNECT_FULFILLED') {
+        // When we receive DIRECT_LINE/CONNECT_FULFILLED action, we will send an event activity using WEB_CHAT/SEND_EVENT
+        dispatch.dispatch({
+          type: 'WEB_CHAT/SEND_EVENT',
+          payload: {
+            name: 'webchat/join'
+          }
+        });
+      }
+    return next(action);
+    }
+  }
+};
+
+const store = window.WebChat.createStore({}, dispatchEvent);
+
+window.WebChat.renderWebChat({
+  directLine: window.WebChat.createDirectLine({
+    token: 'uSD5VRBY__o.zaY8E2q5bUtdWq3ioex5i2z2tQlU-rJoE6kOMy44Glc'
+  }),
+  store: store,
+  userID: 'covid-user-id',
+  username: 'covid-user',
+  locale: 'en-US',
+  styleOptions: {
+    //botAvatarInitials: '<optional initials>',
+    //userAvatarInitials: '<optional initials>',
+    hideUploadButton: true,
+    }
+  },
+  document.getElementById('webchat')
+);
+</script>
+  
+
+
+      
+</div>
+  
+            </div>
+
+                              </div>
+              </div>
+    </div>
+  </div>
+  </div>
+
+
+  </div>
+</div>
+
+
+
+  </div>
+  <div class="page__footer">
+      
+
+
+
+
+
+<footer>
+  <div class="footer-top" data-swatch-role="footer-top" data-swatch-type="global" data-swatch-text-type="light-text">
+  <div class="footer-top__inner">
+    
+
+  
+  <div class="footer-brand">
+    <div class="footer-branding-lockup footer-branding-lockup--dph">
+      <a class="footer-branding-lockup__link" href="/" title="Georgia Department of Public Health">
+        <span class="footer-branding-lockup__logo footer-branding-lockup__logo--agency footer-branding-lockup__logo--dph">
+          <img class="footer-branding-lockup__logo-image" src="/themes/custom/ga_forest/orchard/assets/images/icons/logo/ga-logo--gold.svg" alt="" />
+        </span>
+
+                <span class="footer-branding-lockup__wordmark-text"><strong class="wordmark-text--georgia">Georgia </strong><strong class="wordmark-text--department">Department </strong><em class="wordmark-text--of">of</em><strong class="wordmark-text--public"> Public </strong><strong class="wordmark-text--health">Health</strong>
+</span>
+
+      </a>
+    </div>
+  </div>
+          <div class="footer-social">
+  <ul class="footer-social__items">
+                  <li class="footer-social__item">
+          <a href="https://www.facebook.com/GaDPH" class="footer-social__icon-link" title="Facebook page for Georgia Department of Public Health">
+            <span class="visually-hidden">Facebook page for Georgia Department of Public Health</span>
+            <img class="footer-social__icon-image footer-social__icon-image--default" src="/themes/custom/ga_forest/orchard/assets/images/icons/social/facebook/social-facebook--fill-white.svg" alt="Facebook" />
+            <img class="footer-social__icon-image footer-social__icon-image--active" src="/themes/custom/ga_forest/orchard/assets/images/icons/social/facebook/social-facebook--fill-gold.svg" alt="Facebook" />
+          </a>
+        </li>
+                        <li class="footer-social__item">
+          <a href="https://www.twitter.com/GaDPH" class="footer-social__icon-link" title="Twitter page for Georgia Department of Public Health">
+            <span class="visually-hidden">Twitter page for Georgia Department of Public Health</span>
+            <img class="footer-social__icon-image footer-social__icon-image--default" src="/themes/custom/ga_forest/orchard/assets/images/icons/social/twitter/social-twitter--fill-white.svg" alt="Twitter" />
+            <img class="footer-social__icon-image footer-social__icon-image--active" src="/themes/custom/ga_forest/orchard/assets/images/icons/social/twitter/social-twitter--fill-gold.svg" alt="Twitter" />
+          </a>
+        </li>
+                        <li class="footer-social__item">
+          <a href="https://www.linkedin.com/company/georgiadph" class="footer-social__icon-link" title="Linkedin page for Georgia Department of Public Health">
+            <span class="visually-hidden">Linkedin page for Georgia Department of Public Health</span>
+            <img class="footer-social__icon-image footer-social__icon-image--default" src="/themes/custom/ga_forest/orchard/assets/images/icons/social/linkedin/social-linkedin--fill-white.svg" alt="Linkedin" />
+            <img class="footer-social__icon-image footer-social__icon-image--active" src="/themes/custom/ga_forest/orchard/assets/images/icons/social/linkedin/social-linkedin--fill-gold.svg" alt="Linkedin" />
+          </a>
+        </li>
+                        <li class="footer-social__item">
+          <a href="https://www.youtube.com/user/GaDPH" class="footer-social__icon-link" title="YouTube page for Georgia Department of Public Health">
+            <span class="visually-hidden">YouTube page for Georgia Department of Public Health</span>
+            <img class="footer-social__icon-image footer-social__icon-image--default" src="/themes/custom/ga_forest/orchard/assets/images/icons/social/youtube/social-youtube--fill-white.svg" alt="YouTube" />
+            <img class="footer-social__icon-image footer-social__icon-image--active" src="/themes/custom/ga_forest/orchard/assets/images/icons/social/youtube/social-youtube--fill-gold.svg" alt="YouTube" />
+          </a>
+        </li>
+                                  <li class="footer-social__item">
+          <a href="https://www.instagram.com/georgiadph" class="footer-social__icon-link" title="Instagram page for Georgia Department of Public Health">
+            <span class="visually-hidden">Instagram page for Georgia Department of Public Health</span>
+            <img class="footer-social__icon-image footer-social__icon-image--default" src="/themes/custom/ga_forest/orchard/assets/images/icons/social/instagram/social-instagram--fill-white.svg" alt="Instagram" />
+            <img class="footer-social__icon-image footer-social__icon-image--active" src="/themes/custom/ga_forest/orchard/assets/images/icons/social/instagram/social-instagram--fill-gold.svg" alt="Instagram" />
+          </a>
+        </li>
+                                </ul>
+</div>
+      </div>
+</div>
+  <div class="footer-mid footer-mid--with-secondary" data-swatch-role="footer-bottom" data-swatch-type="global" data-swatch-text-type="light-text">
+  <div class="footer-mid__inner">
+    <div class="footer-contact">
+  <h3 class="footer-contact__title">How can we help?</h3>
+      <div class="footer-contact__list">
+              <ul class="footer-contact-info__list">
+      
+<li class="footer-contact-info__item">
+    <div class="footer-contact-info__icon-wrapper">
+      <img class="footer-contact-info__icon footer-contact-info__icon--light-text" src="/themes/custom/ga_forest/orchard/assets/images/icons/monoline/phone/monoline-phone--white.svg" alt="" />
+      <img class="footer-contact-info__icon footer-contact-info__icon--dark-text" src="/themes/custom/ga_forest/orchard/assets/images/icons/monoline/phone/monoline-phone--black.svg" alt="" />
+    </div>
+    <div class="footer-contact-info__wrapper">
+              <div class="footer-contact-info__title">Call Us</div>
+                          <div class="footer-contact-info__phone">
+                    <div class="footer-contact-info__phone-number"><strong>Main:</strong> <a href="tel:+1-404-657-2700">(404) 657-2700</a></div>
+        </div>
+                    <div class="footer-contact-info__link"><a href="/contact-dph">All Contacts</a></div>
+          </div>
+</li>
+      
+<li class="footer-contact-info__item">
+    <div class="footer-contact-info__icon-wrapper">
+      <img class="footer-contact-info__icon footer-contact-info__icon--light-text" src="/themes/custom/ga_forest/orchard/assets/images/icons/monoline/location/monoline-location--white.svg" alt="" />
+      <img class="footer-contact-info__icon footer-contact-info__icon--dark-text" src="/themes/custom/ga_forest/orchard/assets/images/icons/monoline/location/monoline-location--black.svg" alt="" />
+    </div>
+    <div class="footer-contact-info__wrapper">
+              <div class="footer-contact-info__title"><strong>Visit</strong><br /></div>
+                    <div class="footer-contact-info__address">2 Peachtree Street, NW<br />15th Floor<br />ATLANTA, GA 30303</div>
+                          <div class="footer-contact-info__link"><a href="/directions-2-peachtree-st-nw">Driving Directions</a></div>
+              <div class="footer-contact-info__link"><a href="/public-health-districts">Public Health Districts</a></div>
+          </div>
+</li>
+  </ul>
+          </div>
+      <div class="footer-contact__hours">
+<div class="hourbox">
+  <div class="hourbox__section">
+    <img class="hourbox__icon" src="/themes/custom/ga_forest/orchard/assets/images/icons/monoline/calendar/monoline-calendar--black.svg" alt="Calendar icon">
+    <div class="hourbox__wrapper">
+                
+<ul class="hourbox-schedule">
+            <li class="hourbox-schedule__item">
+  <span class="hourbox-schedule__day">Monday to Friday, &nbsp;</span>
+  <span class="hourbox-schedule__time">08:00 a.m. - 05:00 p.m.</span>
+</li>
+      </ul>
+
+          </div>
+  </div>
+    <div class="hourbox__section">
+    <div class="hourbox__icon"></div>
+    <div class="hourbox__note">All in Eastern Time Zone</div>
+  </div>
+  </div>
+</div>
+  </div>
+          <div class="footer-mid__menus">
+        <div class="footer-secondary">
+      <div class="footer-link-group">
+  <h3 class="footer-link-group__title">About Us</h3>
+  <ul class="footer-link-group__list">
+          <li class="footer-link-group__list-item">
+        <a class="footer-link-group__list-item-link" href="/organization/department-public-health">
+          About DPH
+        </a>
+      </li>
+          <li class="footer-link-group__list-item">
+        <a class="footer-link-group__list-item-link" href="https://gets.sharepoint.com/sites/DPHIntranet/">
+          Employee Intranet
+        </a>
+      </li>
+          <li class="footer-link-group__list-item">
+        <a class="footer-link-group__list-item-link" href="/careers">
+          Careers
+        </a>
+      </li>
+      </ul>
+</div>
+  </div>
+        <div class="footer-primary">
+      <div class="footer-link-group">
+  <h3 class="footer-link-group__title">Your Government</h3>
+  <ul class="footer-link-group__list">
+          <li class="footer-link-group__list-item">
+        <a class="footer-link-group__list-item-link" href="https://georgia.gov/agency-list">
+          State Organizations
+        </a>
+      </li>
+          <li class="footer-link-group__list-item">
+        <a class="footer-link-group__list-item-link" href="https://georgia.gov/elected-officials">
+          Elected Officials
+        </a>
+      </li>
+          <li class="footer-link-group__list-item">
+        <a class="footer-link-group__list-item-link" href="https://dol.georgia.gov/state-local-and-federal-government-jobs">
+          State Jobs
+        </a>
+      </li>
+      </ul>
+</div>
+  </div>
+      </div>
+      </div>
+</div>
+  <div class="footer-bottom" data-swatch-role="footer-bottom" data-swatch-type="global" data-swatch-text-type="light-text">
+  <div class="footer-bottom__inner">
+    <div class="footer-copyright">© Georgia.gov</div>
+      
+<div class="footer-meta">
+  <ul class="footer-meta__items">
+          <li class="footer-meta__item"><a href="/sitemap">Site Map</a></li>
+          <li class="footer-meta__item"><a href="http://georgia.gov/accessibility ">Accessibility</a></li>
+          <li class="footer-meta__item"><a href="http://georgia.gov/privacysecurity">Privacy/Security</a></li>
+          <li class="footer-meta__item"><a href="https://gbi.georgia.gov/human-trafficking-notice">Human Trafficking Notice</a></li>
+      </ul>
+</div>
+  </div>
+</div>
+</footer>
+  </div>
+</div>
+
+  </div>
+
+    
+
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/37051","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ajaxPageState":{"libraries":"bu\/bu.checker,core\/html5shiv,ga_core\/buorg,ga_emergency\/ga_emergency,ga_forest\/global,ga_forest\/palette-stars-stripes,ga_layouts\/onecol_100,ga_layouts\/threecol,ga_layouts\/twocol_66_33,ga_media_download\/document_link,ga_search\/analytics,genpass\/genpass,google_translator\/disclaimer,search_api_federated_solr\/search_form_autocomplete,system\/base","theme":"ga_forest","theme_token":null},"ajaxTrustedUrl":{"\/search":true},"bu":{"notify_ie":11,"notify_firefox":-6,"notify_opera":-6,"notify_safari":-6,"notify_chrome":-6,"insecure":true,"unsupported":false,"mobile":false,"position":"bottom","visibility_type":"hide","visibility_pages":"\/admin\/*\r\n\/node\/*\/*\r\n\/entity-browser\/*","test_mode":false,"new_window":false,"no_close":false,"_core":{"default_config_hash":"hHRgRa8uaUJPBEvzD2uaerY4Z9xdbV4glRDRNp8euEE"},"text_override":"\u003Cdiv class=\u0022buorg-msg\u0022\u003E\r\n\u003Cstrong class=\u0022buorg-mainmsg\u0022\u003EYour web browser ({brow_name}) is out of date.\u003C\/strong\u003E\r\n\u003Cspan class=\u0022buorg-moremsg\u0022\u003EUpdate your browser for more security, speed and the best experience across the web.\u003C\/span\u003E\r\n\u003C\/div\u003E\r\n\u003Cspan class=\u0022buorg-buttons\u0022\u003E\r\n\u003Ca{up_but}  class=\u0022button\u0022\u003EUpdate browser\u003C\/a\u003E \u003Ca{ignore_but} class=\u0022button--secondary\u0022\u003EIgnore\u003C\/a\u003E\u003C\/span\u003E","reminder":0,"reminder_closed":168,"url":"","source":"\/\/browser-update.org\/update.min.js","show_source":""},"google_analytics":{"account":"UA-2982645-7","trackOutbound":true,"trackMailto":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"gaEmergency":{"endpoint":"https:\/\/trunk.georgia.gov\/api\/v1\/node\/emergency?filter[status][value]=1\u0026sort=-changed","auth":"Og=="},"searchApiFederatedSolr":{"block":{"autocomplete":{"isEnabled":1,"proxyIsDisabled":1,"directUrl":"\/search-api-federated-solr-block-form-autocomplete\/exposed-filter?title=[val]\u0026search_term=[val]\u0026_format=json","use_search_app_creds":0,"mode":"result","url":"\/search-api-federated-solr-block-form-autocomplete\/exposed-filter?title=[val]\u0026search_term=[val]\u0026_format=json"}}},"googleTranslatorDisclaimer":{"jquerySelector":".google-translator-switch","disclaimer":"\u003Ch2\u003EAutomatic translation disclaimer\u003C\/h2\u003E\r\n\u003Cp\u003EThe State of Georgia provides automatic translation for georgia.gov into seven languages, courtesy of Google Translate. Please remember, though, that the English language version is considered the most accurate. In the event of a disagreement or discrepancy between the translation and the original English version of this web site or any notice or disclaimer, the original version will prevail.\u003C\/p\u003E","acceptText":"Accept","dontAcceptText":"Do Not Accept","element":"\u003Cspan id=\u0022google_translator_element\u0022\u003E\u003C\/span\u003E\n\u003Cscript src=\u0022\/\/translate.google.com\/translate_a\/element.js?cb=Drupal.behaviors.googleTranslatorElement.init\u0022\u003E\u003C\/script\u003E\n"},"googleTranslatorElement":{"id":"google_translator_element","languages":"zh-CN,ht,ko,pt,ru,es,vi","displayMode":"SIMPLE"},"user":{"uid":0,"permissionsHash":"07a613947f8924e7019661da310bc8b27f351e95971078f02e1b113247c7e95c"}}</script>
+<script src="/sites/dph.georgia.gov/files/js/js_Q5ysvpwzJSC7VF36nanXhh7TZOfz5PoPUmRL1jTunMY.js"></script>
+<script src="//cdn.jsdelivr.net/npm/css-vars-ponyfill@1"></script>
+<script src="/sites/dph.georgia.gov/files/js/js_PIs64Nqg3Jk6EJvTyNM2uaqzGm06fo6UOSxPP1IoUTc.js"></script>
+
+    <script type="text/javascript" src="//hello.myfonts.net/count/3786f2" async defer></script>
+    <script type="text/javascript">
+        /*<![CDATA[*/
+        (function() {
+            var sz = document.createElement('script'); sz.type = 'text/javascript'; sz.async = true;
+            sz.src = '//siteimproveanalytics.com/js/siteanalyze_637444.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sz, s);
+        })();
+        /*]]>*/
+    </script>
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","licenseKey":"5360c08ecf","applicationID":"99788169,308637395","transactionName":"NQFQMhAADBZRUBFYCwxLcwUWCA0LH3cXRBQDCG4IDQUHOXNcC0UWDQheAxA9LApUVjNYARUnXQgWEw0JXFYXHFoUDVcR","queueTime":0,"applicationTime":671,"atts":"GUZTRFgaHxg=","errorBeacon":"bam-cell.nr-data.net","agent":""}</script></body>
+</html>

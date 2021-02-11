@@ -1,0 +1,142 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML LANG="en-US"><HEAD>
+   <TITLE>FSM Government Home Page</TITLE>
+   <META NAME="description" CONTENT="Home page of the National Government of the Federated States of Micronesia (FSM), its departments, and overseas missions.">
+   <META NAME="keywords" CONTENT="Micronesia, FSM, Chuuk, Kosrae, Pohnpei, Yap, Ponape, Truk, Pacific islands, Oceania, Federated States">
+   <META NAME="copyright" CONTENT="Copyright by The Government of the Federated States of Micronesia.">
+   <LINK REL="stylesheet" TYPE="text/css" HREF="fsmgov.css">
+</HEAD>
+<BODY LINK="#333399" ALINK="#000066" VLINK="#000066">
+
+	<A CLASS="dropbtn" style="left: 0;" HREF="index.html"> Home </A>
+
+	<DIV CLASS="dropdown" style="left: calc(100vw / 6);"><DIV CLASS="dropbtn"> Services &#x25BD; </DIV>
+		<DIV CLASS="dropdown-content"><A HREF="http://www.fsmssa.fm/">Social Security</A>
+			<A HREF="http://www.fsmned.fm/">Election Office</A>
+			<A HREF="http://www.fsmembassydc.org/">D.C. Embassy</A>
+			<A HREF="http://fsmemb.or.jp/">Tokyo Embassy</A>
+			<A HREF="https://www.fsmtc.fm/">FSM Telecom</A></DIV></DIV>
+
+	<DIV CLASS="dropdown" style="left: calc( 2 * (100vw / 6) );"><DIV CLASS="dropbtn"> Visitors &#x25BD; </DIV>
+		<DIV CLASS="dropdown-content"><A HREF="http://www.visit-micronesia.fm/"> Visitor's Bureau </A>
+			<A HREF="https://www.visit-chuuk.com/">Chuuk Tourism</A>
+			<A HREF="https://www.nan-madol.com/">Nan Madol</A>
+			<A HREF="https://www.visityap.com/">Yap Tourism</A>
+			<A HREF="https://fsm.embassy.gov.au/">Australia Embassy</A>
+			<A HREF="http://fm.china-embassy.org/eng/">China Embassy</A>
+			<A HREF="https://www.micronesia.emb-japan.go.jp/itprtop_en/index.html">Japan Embassy</A>
+			<A HREF="https://fm.usembassy.gov/">U.S. Embassy</A></DIV></DIV>
+
+	<DIV CLASS="dropdown" style="left: calc( 3 * (100vw / 6) );"><DIV CLASS="dropbtn"> Government &#x25BD; </DIV>
+		<DIV CLASS="dropdown-content"><A HREF="ngovt.html">National Govt.</A>
+			<A HREF="https://www.cfsm.gov.fm/">FSM Congress</A>
+			<A HREF="http://www.fsmsupremecourt.org/">Supreme Court</A>
+			<A HREF="http://www.fsmrd.fm/">Dept. of R&amp;D</A>
+			<A HREF="https://tci.gov.fm/">Dept. of TC&amp;I</A>
+			<A HREF="http://www.fsmopa.fm/">Public Auditor</A>
+			<A HREF="https://gov.fm/index.php/state-government">State Govts.</A>
+			<A HREF="http://pohnpeistate.gov.fm/">Pohnpei Govt.</A>
+			<A HREF="http://psl.fm/">Pohnpei Legislature</A>
+			<A HREF="http://www.yapstategov.org/">Yap Govt.</A></DIV></DIV>
+
+	<DIV CLASS="dropdown" style="left: calc( 4 * (100vw / 6) );"><DIV CLASS="dropbtn"> Int. Relations &#x25BD; </DIV>
+		<DIV CLASS="dropdown-content"><A HREF="https://dfa.gov.fm/">Foreign Affairs</A>
+			<A HREF="ovmis.html">Overseas Missions</A>
+			<A HREF="fsmun/index.html">FSMUN Mission</A>
+			<A HREF="diprel.html">Dipl. Relations</A>
+			<A HREF="cgi-bin/treaties.cgi">Intl. Treaties</A></DIV></DIV>
+
+	<DIV CLASS="dropdown" style="left: calc( 5 * (100vw / 6) );"><DIV CLASS="dropbtn"> News &#x25BD; </DIV>
+		<DIV CLASS="dropdown-content"><A HREF="https://gov.fm/index.php/public-info/fsm-pio">FSMPIO</A>
+			<A HREF="fsmun/press.html">FSMUN News</A>
+			<A HREF="archive.html">News Archive</A>
+			<A HREF="http://www.kpress.info/">Kaselehlie Press</A></DIV></DIV>
+
+<IMG CLASS="top" SRC="nett.jpg" alt="Government of the Federated States of Micronesia"><BR><BR>
+
+<CENTER>
+
+   <H2>Government of the Federated States of Micronesia</H2>
+   <P>You have reached the home page of the National
+   Government of the Federated States of Micronesia (FSM), its
+   departments, and overseas missions. It works as a central hub 
+   connecting citizens to websites and services avaible to them, and 
+   providing visitors with information about FSM. It further connects 
+   to various websites of the FSM government on the national, state 
+   and international levels.</P>
+
+<P>The menu on top shows available links. The section on "Services" lists those that are available online for FSM citizens, whether in country or abroad. 
+ The section for "Visitors" leads to information for Tourists as well as to the Embassies represented in Micronesia.
+ The "Government" section leads to the online presence of the FSM National and State Governments. Under "International Relations", you can find how FSM is represented in the world.
+ Finally, under "News" we provide links to government news sites.</P><BR>
+
+   <H2>COVID-19 updates</H2><BR>
+
+	<P><B><A HREF="fsmun/pubheal30.pdf">FSM receiving the Moderna COVID-19 vaccine and beginning its vaccination campaign</A>, Palikir, January 4, 2021</B></P>
+	<P><B><A HREF="fsmun/pubheal29.pdf">FSM to Receive the First Allocation of the COVID-19 Vaccine by Christmas</A>, Palikir, December 20, 2020</B></P>
+	<P><B><A HREF="fsmun/pubheal28.pdf">COVID-19 Related Social Protection Programming</A>, Palikir, December 14, 2020</B></P>
+	<P><B><A HREF="fsmun/pubheal26.pdf">December 5<SUP>th</SUP> Repatriation Flight Postponed</A>, Palikir, December 1, 2020</B></P>
+	<P><B><A HREF="fsmun/pubheal25.pdf">Outbound Travel Restrictions Lifted; Inbound Travel Restrictions Extended</A>, Palikir, November 30, 2020</B></P>
+	<P><B><A HREF="fsmun/pubheal27.pdf">All External Voting for FSM National Elections on March 2<SUP>nd</SUP>, 2021 to Occur Through Absentee Ballots</A>, Palikir, October 6, 2020</B></P>
+	<P><B><A HREF="fsmun/pubheal24.pdf">Press Release on Closure of Consulate General in Guam</A>, Palikir, September 25, 2020</B></P>
+	<P><B><A HREF="fsmun/pubheal23.pdf">Press Release on Social distancing decree</A>, Palikir, August 25, 2020</B></P>
+	<P><B><A HREF="fsmun/pubheal22.pdf">Social distancing decree</A>, Palikir, August 25, 2020</B></P>
+	<P><B><A HREF="fsmun/pubheal20.pdf">FSM COVID-19 Guidelines</A>, Palikir, August 4, 2020</B></P>
+	<P><B><A HREF="fsmun/pubheal19.pdf">Press Release on the People's Republic of China donating additional medical supplies to the FSM</A>, Palikir, July 27, 2020</B></P>
+	<P><B><A HREF="fsmun/pubheal18.pdf">Press Release on the second half of simulation exercises to prepare for the repatriation of FSM citizens residing in the State of Kosrae</A>, Palikir, July 25, 2020</B></P>
+	<P><B><A HREF="fsmun/pubheal17.pdf">Press Release on Closure of FSM Consulate in Oregon due to COVID-19</A>, Portland, Orgeon, July 21, 2020</B></P>
+	<P><B><A HREF="fsmun/pubheal16.pdf">Press Release on the results of the COVID-19 readiness assessment and simulation exercises in the State of Kosrae</A>, Tofol, Kosrae, July 17, 2020</B></P>
+	<P><B><A HREF="fsmun/pubheal15.pdf">Press Release on President distributing first Pandemic Unemployment Assistence Check</A>, Palikir, July 14, 2020</B></P>
+	<P><B><A HREF="fsmun/pubheal14.pdf">Press Release on FSM Conduction Repatriation Simulation Excercise</A>, Palikir, June 22, 2020</B></P>
+	<P><B><A HREF="fsmun/pubheal13.pdf">Public Service Announcement on Applying for the Pandemic Unemployment Assistance Program</A>, Palikir, June 17, 2020</B></P>
+	<P><B><A HREF="fsmun/pubheal12.pdf">Press Release on Japan Offering $3,500,000 for the Procurement of Medical Equipment</A>, Palikir, June 12, 2020</B></P>
+	<P><B><A HREF="fsmun/pubheal10.pdf">Press Release on Extension of Public Health Emergency until 31 July</A>, Palikir, June 1, 2020</B></P>
+	<P><B><A HREF="fsmun/pubheal11.pdf">Congress Resolution Extending Emergency Declaration until 31 July</A>, Palikir, May 31, 2020</B></P>
+	<P><B><A HREF="fsmun/pubheal09.pdf">Press Release on China medial donations</A>, Palikir, May 22, 2020</B></P>
+	<P><B><A HREF="fsmun/pubheal08.pdf">State of the Nation Address</A>, Palikir, May 20, 2020</B></P>
+	<P><B><A HREF="fsmun/pubheal07.pdf">Amendment to Constitutional Emergency Order - Pohnpei State/Coronavirus</A>, Palikir, May 11, 2020</B></P>
+	<P><B><A HREF="fsmun/pubheal05.pdf">Press Release on FSM Receiving Supplies from US and Israel</A>, Palikir, May 8, 2020</B></P>
+	<P><B><A HREF="fsmun/pubheal06.pdf">Amendment to Constitutional Emergency Order - Chuuk State/Coronavirus</A>, Weno, Chuuk, May 7, 2020</B></P>
+	<P><B><A HREF="fsmun/pubheal05.pdf">Press Release on FSM Receiving Supplies from US and Israel</A>, Palikir, May 8, 2020</B></P>
+	<P><B><A HREF="fsmun/pubheal04.pdf">Press Release on Requirements for International Flights</A>, Palikir, May 4, 2020</B></P>
+	<P><B><A HREF="fsmun/pubheal03.pdf">Press Release on FSM Receiving 7.7 Million from US CARES Act</A>, Palikir, April 30, 2020</B></P>
+	<P><B><A HREF="fsmun/pubheal02.pdf">Press Release on Economic Stimulus Package</A>, Palikir, April 25, 2020</B></P>
+	<P><B><A HREF="fsmun/pubheal01.pdf">President Panuelo Meets with Governors to Discuss COVID-19 Response</A>, Palikir, April 22, 2020</B></P>
+	<P><B><A HREF="fsmun/pubhealtz.pdf">Congress Resolution Extending Emergency Declaration until 31 May</A>, Weno, Chuuk, April 17, 2020</B></P>
+	<P><B><A HREF="fsmun/pubhealty.pdf">Amended Declaration of Emergency - Chuuk State/Coronavirus</A>, Weno, Chuuk, April 15, 2020</B></P>
+	<P><B><A HREF="fsmun/pubhealtx.pdf">Press release on FSM receiving medical supplies from China</A>, Pohnpei, April 14, 2020</B></P>
+	<P><B><A HREF="fsmun/pubhealtw.pdf">Press release on Documentation for Outbound Travel</A>, Pohnpei, April 13, 2020</B></P>
+	<P><B><A HREF="fsmun/pubheal00.pdf">Third Amendment to Constitutional Emergency Order - Pohnpei State/Coronavirus</A>, Palikir, April 10, 2020</B></P>
+	<P><B><A HREF="fsmun/pubhealtt.pdf">Press release on Medical Exemptions for FSM Outbound Travel</A>, Pohnpei, April 9, 2020</B></P>
+	<P><B><A HREF="fsmun/pubhealtv.pdf">Extension of Constitutional Emergency Order - Pohnpei State/Coronavirus</A>, Palikir, April 9, 2020</B></P>
+	<P><B><A HREF="fsmun/pubhealtu.pdf">Press release on FSM Receiving Medical Supplies from the US</A>, Pohnpei, April 9, 2020</B></P>
+	<P><B><A HREF="fsmun/pubhealtp.pdf">FSM COVID-19 Response Framework (summary)</A>, Pohnpei, April 8, 2020</B></P>
+	<P><B><A HREF="fsmun/pubhealtn.pdf">Press release on Kosrae to prohibit disembarkation</A>, Pohnpei, April 8, 2020</B></P>
+	<P><B><A HREF="fsmun/pubhealtq.pdf">FSM National Judiciary Emergency Order No.01</A>, Pohnpei, April 3, 2020</B></P>
+	<P><B><A HREF="fsmun/pubhealtm.pdf">Press release on Economic Stimulus Package - COVID-19</A>, Pohnpei, April 7, 2020</B></P>
+	<P><B><A HREF="fsmun/pubhealtl.pdf">Decree on Temporary Fisheries Transshipment Measures - COVID-19</A>, Pohnpei, April 3, 2020</B></P>
+	<P><B><A HREF="fsmun/pubhealts.pdf">Yap Decree to ban disembarkation</A>, Colonia, Yap, April 2, 2020</B></P>
+	<P><B><A HREF="fsmun/pubhealtk.pdf">Message from President Panuelo on COVID-19</A>, Pohnpei, March 31, 2020</B></P>
+	<P><B><A HREF="fsmun/pubhealtj.pdf">Press release on FSM Outbound Travel Restrictions</A>, Pohnpei, March 30, 2020</B></P>
+	<P><B><A HREF="fsmun/pubhealtr.pdf">Yap - Declaration of State of Emergency</A>, Colonia, Yap, March 27, 2020</B></P>
+	<P><B><A HREF="fsmun/pubhealti.pdf">Chuuk Travel Ban Extended</A>, Weno, Chuuk, March 27, 2020</B></P>
+	<P><B><A HREF="fsmun/pubhealtg.pdf">Press Release on Yap Travel Ban and on Rescinding 14-day Delay on Cargo Shipping</A>, Palikir, March 25, 2020</B></P>
+	<P><B><A HREF="fsmun/pubhealtd.pdf">Press Release on Quarantine Regulations</A>, Palikir, March 18, 2020</B></P>
+	<P><B><A HREF="fsmun/pubhealtf.pdf">Amendment to the Constitutional Emergency Order - Pohnpei State/Coronavirus</A>, Palikir, March 18, 2020</B></P>
+	<P><B><A HREF="fsmun/pubhealtc.pdf">HEALTH ADVISORY on COVID - Message from the Secretary of Health and Social Affairs</A>, Palikir, March 16, 2020</B></P>
+	<P><B><A HREF="fsmun/pubhealte.pdf">Ammended declaration of a State of Emergency - Chuuk State/Coronavirus</A>, Weno, Chuuk, March 16, 2020</B></P>
+	<P><B><A HREF="http://fsmembassydc.org/in-the-news/notice-announcement-to-fsm-citizens-in-the-united-states">Notice &amp; Announcement to FSM Citizens in the United States (FSM Embassy)</A>, Washington D.C., March 16, 2020</B></P>
+	<P><B><A HREF="fsmun/pubhealtb.pdf">Press release on the Declaration</A>, Palikir, March 14, 2020</B></P>
+	<P><B><A HREF="fsmun/pubhealta.pdf">Declaration of National Public Health State of Emergency - Coronavirus</A>, Palikir, March 14, 2020</B></P>
+	<P><B><A HREF="fsmun/pubhealt0.pdf">Constitutional Emergency Order - Pohnpei State/Coronavirus</A>, Palikir, March 11, 2020</B></P><BR>
+   <P>These pages are brought
+   to you by the <A HREF="http://www.fsmgov.org/fsmun/">FSM
+   Mission to the United Nations</A> in New York. Please read
+   the <A HREF="disclaim.html">disclaimer</A> before accessing
+   any of the information contained in this site.</P><BR>
+
+<HR>
+<DIV CLASS="screenonly">&copy; Government of the Federated States of Micronesia</DIV>
+
+</CENTER>
+</BODY></HTML>

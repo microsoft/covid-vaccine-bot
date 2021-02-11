@@ -1,0 +1,580 @@
+<!DOCTYPE HTML>
+
+<html lang="en" ng-app="mapp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<META content="IE=Edge" http-equiv="X-UA-Compatible">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- State Of Michigan - Wed Feb 10 12:23:35 2021 -->
+<!-- e-Michigan Portal - Process #5, Server www -->
+
+<link rel="canonical" href="https://www.michigan.gov/coronavirus/0,9753,7-406-98178_103214---,00.html" />
+		<title>Coronavirus - COVID-19 Vaccine</title>
+		<meta name='DESCRIPTION' content="Description: Coronavirus - COVID-19 Vaccine">
+		<meta name='KEYWORDS' content="No Keywords">
+		
+	
+<base target="_top">
+
+	<!-- global scripts BOOTSTRAP -->
+	<!-- bow-scripts include -->
+
+
+<!-- CSS -->
+<link type="text/css" rel='stylesheet' type='text/css' href='/css/fullcalendar.css' />
+<link type="text/css" rel="stylesheet" href="/font-som-icons/css/somicons.min.css?20170525090940" />
+<link type="text/css" rel="stylesheet" href="/font-awesome/css/font-awesome.min.css" />
+<link type="text/css" rel="stylesheet" href="/css/jquery.bxslider.css" />
+
+<!-- javascript -->
+<!-- script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script -->
+<script src="/js/jquery-1.9.1.min.js"></script>
+<script src="/bootstrap/js/bootstrap.min.js"></script>
+<script src="/js/fullcalendar.js" type="text/javascript"></script>
+<script src="/js/jquery.bxslider.js"></script>
+<script src="/js/jquery.rwdImageMaps.js"></script>
+<script src="/js/jquery.validate.js"></script>
+<script src="/js/additional-methods.js"></script>
+<script src="/js/responsiveComponents.js"></script>
+<script src="/js/jquery.matchHeight-min.js"></script>
+<!-- [if (lt IE 9)]>
+<script>
+document.createElement('header');
+document.createElement('nav');
+document.createElement('section');
+document.createElement('article');
+document.createElement('aside');
+document.createElement('footer');
+document.createElement('time');
+</script>
+<script src="/js/respond.js"></script>
+<link href="/css/migov_ie8_OLD.css" rel="stylesheet" media="all" />
+<![endif] -->
+	 <script type="text/javascript" src="/js/bow-general.js?v=1565982139"></script>
+
+	<link href='/css/body-theme-coronavirus.css?v=1586451629' type='text/css' rel='stylesheet' />
+	<!-- Agency Header do not include the globalcss file -->
+<script src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js"></script>
+<script src="/coronavirus/chatbot.js"></script>
+<link type="text/css" rel="stylesheet" href="/coronavirus/Chatbot.css" />
+<!--/ Agency Header--><script src="/js/underscorejslib.js?v=1493910850"></script>
+<script src="/js/angular_1_6.js?v=1493910827"></script>
+<script src="/js/angular_1_6_sanitize.js?v=1493910826"></script>
+<script src="/js/angular_1_6_animate.js?v=1493910826"></script>
+<script src="/js/angular_1_6_aria.js?v=1493910826"></script>
+<script src="/js/angular_1_6_touch.js?v=1493910827"></script>
+
+<script src="/js/angucomplete-alt.js?v=1545072008"></script>
+<script src="/js/bootstrapUIangular.js?v=1493910848"></script>
+
+<script type="text/javascript">
+window.navPath = '/agency/leftFullNav/0,,406,00.html';
+window.loadedData = [];
+$('body').addClass('matching-heights-processing');
+var mapp = angular.module('mapp',['ngSanitize','ngAnimate','ui.bootstrap','ngAria','angucomplete-alt','ngTouch']);
+</script>
+<script src='/js/angular_custom_factories.js?v=1502900735'></script>
+<script src='/js/angular_custom_filters.js?v=1506698435'></script>
+<script src='/js/SearchComponentAngular.js?v=1545072001'></script>
+<script src='/js/angularSelectList.js?v=1564767791'></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+<script src="/js/gtm.js?v=1501508457"></script>
+</head>
+<body class="agy-coronavirus has-offcanvas-menu off-canvas-center  bow-theme-1 horz-menu full-horz-menu1 body-theme-coronavirus matching-heights-processing">
+<div role='navigation' aria-label='skip nav'>
+<noscript>
+<div class="alert bg bg-accent-1 text-center">
+<span class="fa fa-3x fa-exclamation-triangle" aria-hidden="true"></span> Browsers that can not handle javascript will not be able to access some features of this site. <span class="fa fa-3x fa-exclamation-triangle" aria-hidden="true"></span>
+</div>
+<style type="text/css">
+body.matching-heights-processing:before,body.matching-heights-processing:after {
+content:'';
+height:0px;
+width:0px;
+}
+</style>
+<iframe src="//www.googletagmanager.com/ns.html?id=GTM-WTW7M9" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<div id="noAdBlock" style="display:none;" class="alert bg bg-accent-1 text-center">
+<span class="fa fa-3x fa-exclamation-triangle" aria-hidden="true"></span> Some functions of this site are disabled for browsers blocking jQuery. <span class="fa fa-3x fa-exclamation-triangle" aria-hidden="true"></span>
+</div>
+<div id='_TopOfPage'></div>
+<script>
+			function doAnalyticsGo(sndx) {
+				var dest = sndx.options[sndx.selectedIndex].value;
+				if (dest == 0) {
+					alert('Please make a selection.');
+					return false;
+				} else {
+					document.location.href=dest;
+					return false;
+				}
+			}
+		</script><a href='#main' data-target-id='main' class='sr-only sr-only-focusable jump-to-id'>Skip to main content</a>
+</div>
+
+
+<!--START DIV CONTAINER-->
+<div id='main-mobile-canvas-container' class=''>
+	<div id='temp-toggler-mobile-menu' class='text-center toggle-mobile-menu-controls'>
+		<a href='#mobile-canvas-menu-container' data-toggle-class='show-mobile-nav' class='toggle-mobile-menu outer-link text-center toggle-mobile-menu-controls'>
+			<span class='fa fa-3x fa-bars mobile-menu-closed-icon toggle-mobile-menu-controls'></span><span class='fa fa-3x fa-times mobile-menu-showing-icon toggle-mobile-menu-controls'></span>MENU
+		</a>
+	</div>
+	<div class='offcanvas-left toggle-mobile-menu-controls' id='mobile-canvas-menu-container'>
+		<div class="mobile-canvas-nav-header" >
+			<div class="mobile-canvas-menu-logo-block">
+				<div id='mobileLogoBlock'>
+					<a href='/coronavirus'>
+						<img class="img-responsive" src="/images/som/final_logo_migov_white_526452_7.png" alt="Description: Coronavirus " />
+					</a>
+				</div>
+				<div id='mobileSiteTitle'>
+					<a href='/coronavirus'>
+						<div class='page-site-header'><div class='bannerSmTxt'></div><div class='bannerLgTxt'>Coronavirus</div></div> </a>
+				</div>
+			</div>
+			<div class="inner-mobile-menu-toggle">
+				<a href='#mobile-canvas-menu-container' data-toggle-class='show-mobile-nav' class='toggle-mobile-menu outer-link btn btn-accent-black'><span class='fa fa-2x fa-bars mobile-menu-closed-icon'></span><span class='fa fa-2x fa-times mobile-menu-showing-icon'></span></a>
+			</div>
+		</div>
+		<div class='site-extra-text bg bg-primary-1'>Description: Coronavirus </div>
+		<div class='mobile-search-block bg bg-primary-1 padding-bottom-10'>
+			<div class="searchComponentDiv" id="searchComponentDiv_9910101010101" ng-controller="searchComponentController" ng-init="init(9910101010101)">
+				<div ng-if="loadedData">
+					<form ng-submit="submitFormLocal()" class="submit-override">
+						<div class="clearfix">
+							<div class="" angucomplete-alt id="searchInput_9910101010101"
+							  placeholder=""
+							  pause="10" 
+							  selected-object="optionChanged" 
+							  local-data="people"
+							  local-search="localSearch"
+							  title-field="name"
+							  description-field="twitter"
+							  minlength="1" 
+							  input-class="form-control form-control" 
+							  input-changed="inputChanged" 
+							  match-class="highlight">
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<script>		
+				window.loadedData[9910101010101] = [];
+				window.loadedData[9910101010101]["GSA_COLLECTION"] = "coronavirus";
+				
+				window.loadedData[9910101010101]["gsaAgencyText"] = "Description:~Coronavirus";
+				window.loadedData[9910101010101]["subcategories"] = [];			
+			</script>
+		</div>
+		<div id="containerMainMobileLinks"></div>
+		<div class="branding-bar-links-block">
+			<nav class="mobile-branding-links" aria-label="mobile global menu">
+				<ul id='m_bannerLinks'><li><a href='/coronavirus/0,9753,7-406-98810---,00.html' title='FAQ'>FAQ</a></li><li><a href='/coronavirus/0,9753,7-406-98178_98541---,00.html' title='Alternate Languages'>Alternate Languages</a></li><li><a href='/coronavirus' title='Home'>Home</a></li><li><a href='/mdhhs' title='MDHHS'>MDHHS</a></li><li class='migovlink'><a href='http://www.michigan.gov/' title='MI Gov Home'>MI.gov</a></li></ul>  </nav>
+		</div>
+	</div>
+	<script type="text/javascript">
+	window.agencySitePathCSS = 'coronavirus';
+	//window.agencySitePathCSS = window.location.pathname;
+	window.agencyText = 'Description:~Coronavirus';
+	//window.agencyText = document.getElementsByTagName("title")[0].innerHTML;
+	window.siteClient = window.agencySitePathCSS;
+	// Task 44300 - WEX
+	//window.default_collection = window.agencySitePathCSS == 'som' ? '' : window.agencySitePathCSS;
+	window.default_collection = 'som';
+	window.gsasearch = true;
+	window.usagovCollection = 'mi-'+window.agencySitePathCSS;
+
+	$('document').ready(function(){
+		$('.site-search-form').submit(function(e){
+			e.preventDefault();
+			siteSearchForm($(this));
+		});
+		$('#noAdBlock').hide();
+	});
+	</script>
+</div>
+
+<div id='container' class='container-fluid'>
+<div id="topMenuSearchContainer" class="search-extended">
+	<div class="searchComponentDiv padding-top-20 padding-bottom-20" id="searchComponentDiv_10101010101" ng-controller="searchComponentController" ng-init="init(10101010101)">
+		<div ng-if="loadedData">
+			<form ng-submit="submitFormLocal()" class="submit-override">
+				<div class="container">
+					<div class="col-xs-11" angucomplete-alt id="searchInput_10101010101"
+					  placeholder=""
+					  pause="10" 
+					  selected-object="optionChanged" 
+					  local-data="people"
+					  local-search="localSearch"
+					  title-field="name"
+					  description-field="twitter"
+					  minlength="1" 
+					  input-class="form-control form-control" 
+					  input-changed="inputChanged" 
+					  match-class="highlight">
+					</div>
+					<div class="col-xs-1 bg bg-accent-black">
+						<a href="#" onclick="$('body').removeClass('show-search-form');$('#top-right-search-bar').focus(); return false;" title="Close Search Panel" class="fa-2x">
+							<span class="fa fa-remove"></span> 
+							<span class="sr-only">Close Search Box</span>
+						</a>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<script>		
+		window.loadedData[10101010101] = [];
+		window.loadedData[10101010101]["GSA_COLLECTION"] = "coronavirus";
+		window.loadedData[10101010101]["gsaAgencyText"] = "Description:~Coronavirus";
+		window.loadedData[10101010101]["subcategories"] = [];
+	</script>
+</div>
+<!-- agencyHeaderNavPath agencyCreateHeaderNavP3 -->
+
+	<!--div id="bannerArea" role='banner'--><!-- HEADER 1.1 Live --><div id='bannerArea' role='banner'><div id='superTop'><!-- agency banner text -->
+			<div class='col-sm-3 col-xs-12 sub-agency-mi-global-logo'><a href='/'><img src='/bootstrap/images/migov_brandingbar_2017.png' alt='Michigan.gov Home' class='img-responsive' /></a></div>
+			<div class='col-sm-9 col-xs-12'><ul id='bannerLinks'><li><a href='/coronavirus/0,9753,7-406-98810---,00.html' title='FAQ'>FAQ</a></li><li><a href='/coronavirus/0,9753,7-406-98178_98541---,00.html' title='Alternate Languages'>Alternate Languages</a></li><li><a href='/coronavirus' title='Home'>Home</a></li><li><a href='/mdhhs' title='MDHHS'>MDHHS</a></li><li class='migovlink'><a href='http://www.michigan.gov/' title='MI Gov Home'>MI.gov</a></li><li id='top-right-search-bar' style='display:none;'>
+			<a href='#topMenuSearchContainer' aria-haspopup='true' title='Search Mi.gov' class='top-header-search-link' data-search-field-id=''>
+                <span>Search</span>
+            </a>
+			</li></ul></div></div><div id='siteBanner'><!-- agency banner text -->
+			<div class='col-xs-12 visible-xs-block sub-agency-global-tag'>Official Website of <a href='/' title='return to Michigan.gov'>Michigan.gov</a></div>
+			<div id='headerRow'>
+			<div class='header-site-title-text'>
+				<a class='site-title-link' accesskey='1' href='/coronavirus/' title='Coronavirus - Description: Coronavirus '>
+					<div class='page-site-header'><div class='bannerSmTxt'></div><div class='bannerLgTxt'>Coronavirus</div></div>
+				</a>
+			</div>
+			<div class='header-nav-block'><nav class='main-navigation' role='navigation' aria-label='main navigation'><ul id='nav' class='nav-main'>
+			<!-- State Of Michigan - Wed Feb 10 10:18:29 2021 -->
+			
+	<!-- e-Michigan Portal - Process #2 -->
+<!-- Begin Global Nav section --><!-- End Global Nav section -->
+
+		<!-- Begin Responsive Navigation -->
+		<li  id='100467' class='id-100467 has-subs'>
+		<a class='lvl1' title="MI Safe Start" href='/coronavirus/0,9753,7-406-100467---,00.html'>MI Safe Start</a>
+		<a title="show sub link for MI Safe Start" href='#ul_100467' data-target-list='ul_98144' class='toggle-sub-list' style='display:none;'></a>
+
+
+			<ul id='ul_100467' class='sub-list'>
+			<li  id='100843' class='id-100843 '>
+			<a class='lvl2' title="MI Safe Start, Employer Guidance & Resources" href='/coronavirus/0,9753,7-406-100467_100477_100487_100494---,00.html'>Employer Guidance & Resources</a>
+
+			</li>
+			<li  id='100913' class='id-100913 has-subs'>
+			<a class='lvl2' title="MI Safe Start, Public Guidance" href='/coronavirus/0,9753,7-406-100467_100913---,00.html'>Public Guidance</a>
+			<a title="show sub link for Public Guidance" href='#ul_100913' data-target-list='ul_100467' class='toggle-sub-list' style='display:none;'></a>
+
+
+				<ul id='ul_100913' class='sub-list'>
+				<li  id='104006' class='id-104006 has-subs'>
+				<a class='lvl3' title="MI Safe Start, Public Guidance, Celebrating the Holidays During COVID-19" href='/coronavirus/0,9753,7-406-100467_100913_104006---,00.html'>Celebrating the Holidays During COVID-19</a>
+				<a title="show sub link for Celebrating the Holidays During COVID-19" href='#ul_104006' data-target-list='ul_100913' class='toggle-sub-list' style='display:none;'></a>
+
+
+			</li>
+			</ul>
+			</li>
+			<li  id='100844' class='id-100844 '>
+			<a class='lvl2' title="MI Safe Start, Employee Guidance & Resources" href='/coronavirus/0,9753,7-406-100467_100477_100487_100493---,00.html'>Employee Guidance & Resources</a>
+
+			</li>
+			<li  id='100845' class='id-100845 '>
+			<a class='lvl2' title="MI Safe Start, Report a Concern" href='/coronavirus/0,9753,7-406-100467_100477_100487_100493_100531---,00.html'>Report a Concern</a>
+
+		</li>
+		</ul>
+		</li>
+		<li  id='99891' class='id-99891 has-subs'>
+		<a class='lvl1' title="Contain COVID" href='/coronavirus/0,9753,7-406-99891---,00.html'>Contain COVID</a>
+		<a title="show sub link for Contain COVID" href='#ul_99891' data-target-list='ul_98144' class='toggle-sub-list' style='display:none;'></a>
+
+
+			<ul id='ul_99891' class='sub-list'>
+			<li  id='99912' class='id-99912 '>
+			<a class='lvl2' title="Contain COVID, Test" href='/coronavirus/0,9753,7-406-99891_99912---,00.html'>Test</a>
+
+			</li>
+			<li  id='99913' class='id-99913 '>
+			<a class='lvl2' title="Contain COVID, Trace" href='/coronavirus/0,9753,7-406-99891_99913---,00.html'>Trace</a>
+
+			</li>
+			<li  id='99914' class='id-99914 '>
+			<a class='lvl2' title="Contain COVID, Protect" href='/coronavirus/0,9753,7-406-99891_99914---,00.html'>Protect</a>
+
+			</li>
+			<li  id='102592' class='id-102592 has-subs'>
+			<a class='lvl2' title="Contain COVID, COVIDAlert" href='/coronavirus/0,9753,7-406-99891_102592---,00.html'>COVIDAlert</a>
+			<a title="show sub link for COVIDAlert" href='#ul_102592' data-target-list='ul_99891' class='toggle-sub-list' style='display:none;'></a>
+
+
+				<ul id='ul_102592' class='sub-list'>
+				<li  id='102593' class='id-102593 '>
+				<a class='lvl3' title="Contain COVID, COVIDAlert, Why use the app" href='/coronavirus/0,9753,7-406-99891_102592_102593---,00.html'>Why use the app</a>
+
+				</li>
+				<li  id='102594' class='id-102594 '>
+				<a class='lvl3' title="Contain COVID, COVIDAlert, How the app works" href='/coronavirus/0,9753,7-406-99891_102592_102594---,00.html'>How the app works</a>
+
+				</li>
+				<li  id='102596' class='id-102596 '>
+				<a class='lvl3' title="Contain COVID, COVIDAlert, Privacy and data" href='/coronavirus/0,9753,7-406-99891_102592_102596---,00.html'>Privacy and data</a>
+
+		</li>
+		</ul>
+		</li>
+		</ul>
+		</li>
+		<li  id='98178' class='id-98178 has-subs'>
+		<a class='lvl1' title="Resources" href='/coronavirus/0,9753,7-406-98178---,00.html'>Resources</a>
+		<a title="show sub link for Resources" href='#ul_98178' data-target-list='ul_98144' class='toggle-sub-list' style='display:none;'></a>
+
+
+			<ul id='ul_98178' class='sub-list'>
+			<li  id='98155' class='id-98155 '>
+			<a class='lvl2' title="Resources, For Residents" href='/coronavirus/0,9753,7-406-98178_98155---,00.html'>For Residents</a>
+
+			</li>
+			<li  id='98156' class='id-98156 '>
+			<a class='lvl2' title="Resources, For Health Professionals" href='/coronavirus/0,9753,7-406-98178_98156---,00.html'>For Health Professionals</a>
+
+			</li>
+			<li  id='98157' class='id-98157 '>
+			<a class='lvl2' title="Resources, For Childcare" href='/coronavirus/0,9753,7-406-98178_98157---,00.html'>For Childcare</a>
+
+			</li>
+			<li  id='101429' class='id-101429 '>
+			<a class='lvl2' title="Resources, Agricultural Workers" href='/coronavirus/0,9753,7-406-98178_101429---,00.html'>Agricultural Workers</a>
+
+			</li>
+			<li  id='98541' class='id-98541 '>
+			<a class='lvl2' title="Resources, Alternate Languages" href='/coronavirus/0,9753,7-406-98178_98541---,00.html'>Alternate Languages</a>
+
+			</li>
+			<li  id='103214' class='id-103214 has-subs'>
+			<a class='lvl2' title="Resources, COVID-19 Vaccine" href='/coronavirus/0,9753,7-406-98178_103214---,00.html'>COVID-19 Vaccine</a>
+			<a title="show sub link for COVID-19 Vaccine" href='#ul_103214' data-target-list='ul_98178' class='toggle-sub-list' style='display:none;'></a>
+
+
+				<ul id='ul_103214' class='sub-list'>
+				<li  id='104822' class='id-104822 '>
+				<a class='lvl3' title="Resources, COVID-19 Vaccine, Vaccine Locations" href='/coronavirus/0,9753,7-406-98178_103214_104822---,00.html'>Vaccine Locations</a>
+
+			</li>
+			</ul>
+			</li>
+			<li  id='98179' class='id-98179 '>
+			<a class='lvl2' title="Resources, For Employers & Workers" href='/coronavirus/0,9753,7-406-98178_98179---,00.html'>For Employers & Workers</a>
+
+			</li>
+			<li  id='104888' class='id-104888 '>
+			<a class='lvl2' title="Resources, FOR AFC & HFA OPERATORS" href='/coronavirus/0,9753,7-406-98178_104888---,00.html'>FOR AFC & HFA OPERATORS</a>
+
+			</li>
+			<li  id='104699' class='id-104699 '>
+			<a class='lvl2' title="Resources, K-12 School Opening Guidance" href='/coronavirus/0,9753,7-406-98178_104699---,00.html'>K-12 School Opening Guidance</a>
+
+			</li>
+			<li  id='104834' class='id-104834 '>
+			<a class='lvl2' title="Resources, Local Health Department Map" href='/coronavirus/0,9753,7-406-98178_104834---,00.html'>Local Health Department Map</a>
+
+			</li>
+			<li  id='100722' class='id-100722 '>
+			<a class='lvl2' title="Resources, Long Term Care COVID-19 Plan" href='/coronavirus/0,9753,7-406-98178_100722---,00.html'>Long Term Care COVID-19 Plan</a>
+
+			</li>
+			<li  id='99557' class='id-99557 '>
+			<a class='lvl2' title="Resources, Mental Health Resources" href='/coronavirus/0,9753,7-406-98178_99557---,00.html'>Mental Health Resources</a>
+
+			</li>
+			<li  id='105299' class='id-105299 '>
+			<a class='lvl2' title="Resources, Protect Michigan Commission" href='https://www.michigan.gov/mdhhs/0,5885,7-339-71551_5460_105209---,00.html'>Protect Michigan Commission</a>
+
+			</li>
+			<li  id='105173' class='id-105173 '>
+			<a class='lvl2' title="Resources, MI COVID-19 Safer Dining Program" href='/coronavirus/0,9753,7-406-98178_105173---,00.html'>MI COVID-19 Safer Dining Program</a>
+
+			</li>
+			<li  id='105410' class='id-105410 '>
+			<a class='lvl2' title="Resources, Sports and Athletics" href='/coronavirus/0,9753,7-406-98178_105410---,00.html'>Sports and Athletics</a>
+
+			</li>
+			<li  id='98281' class='id-98281 '>
+			<a class='lvl2' title="Resources, Communications Resources Toolkit" href='/coronavirus/0,9753,7-406-98178_98281---,00.html'>Communications Resources Toolkit</a>
+
+			</li>
+			<li  id='98455' class='id-98455 '>
+			<a class='lvl2' title="Resources, State Orders & Directives" href='/coronavirus/0,9753,7-406-98178_98455---,00.html'>State Orders & Directives</a>
+
+		</li>
+		</ul>
+		</li>
+		<li  id='98158' class='id-98158 '>
+		<a class='lvl1' title="Press Releases" href='/coronavirus/0,9753,7-406-98158---,00.html'>Press Releases</a>
+
+		</li>
+		<li  id='99423' class='id-99423 '>
+		<a class='lvl1' title="Donate" href='/coronavirus/0,9753,7-406-98178_98811---,00.html#block-3_115140'>Donate</a>
+
+		</li>
+		<li  id='98414' class='id-98414 '>
+		<a class='lvl1' title="Video Updates" href='/coronavirus/0,9753,7-406-98414---,00.html'>Video Updates</a>
+
+		</li>
+		</ul>
+		<ul id='desktopMobileButton' style='display:none;'>
+		<li><a aria-haspopup='true' href='#mobile-canvas-menu-container' data-toggle-class='show-mobile-nav' class='toggle-mobile-menu outer-link text-center toggle-mobile-menu-controls'>
+				<span class='fa fa-bars mobile-menu-closed-icon toggle-mobile-menu-controls'></span><span class='fa fa-times mobile-menu-showing-icon toggle-mobile-menu-controls'></span>
+				<!--<div class='clearfix'>MENU</div>-->
+			</a></li>
+		</ul>
+	</nav>
+	</div>
+	<!-- End Flyout Navigation --><!-- Left Links --><!-- End Left Links --></div></div><div class='siteBannerTxt'>Description: Coronavirus </div>
+	<div id="horzMenuSubLinksBlock_container" class="container"><div id="horzMenuSubLinksRow"><div id="horzMenuSubLinksBlockBreadCrumb"></div></div><div id="horzMenuSubLinksBlock"></div></div></div>
+			<div id='topNavSearch'>
+<!-- SEARCH --><form id='searchform' onsubmit="location.href='https://search.michigan.gov/AppBuilder/search?ctx=CORONAVIRUS&q=' + document.getElementById('query').value;return false;">
+			<input accesskey='s' type='TEXT' autocomplete='off' id='query' name='q' placeholder='Search' title='Search'>
+			<input id='go' type='submit' value='search' name='button' onClick="location.href='https://search.michigan.gov/AppBuilder/search?ctx=CORONAVIRUS&q=' + document.getElementById('query').value;return false;">
+			</form><!-- /SEARCH --></div><!-- LEFTNAV agencyCreateLeftNavRD -->
+<!-- bodyWrapper -->
+<div id='bodyWrapper'>
+
+	<!-- contentWrapper -->
+<div id='contentWrapper'>
+	<!-- main --><div id='main' class='DW page' role='main'>
+	<div id='breadcrumbContainer'><div id='breadcrumb' role='navigation' aria-label='breadcrumbs'><span style='display: none' id='breadcrumblabel'>You are here</span><ol class='breadcrumb' aria-labelledby='breadcrumblabel'><li><a href='/coronavirus/'>Coronavirus</a></li> <li><a href='/coronavirus/0,9753,7-406-98178---,00.html' title='Resources'>Resources</a></li> <li><a href='/coronavirus/0,9753,7-406-98178_103214---,00.html' title='COVID-19 Vaccine'>COVID-19 Vaccine</a></li></ol></div></div>
+	
+		      <div class='page-header sr-only'><h1>COVID-19 Vaccine</h1></div>
+
+	<!-- Body Begin -->
+		
+			  <!-- State Of Michigan - Thu Feb 11 15:10:31 2021 -->
+			<!-- BEGIN MAIN CONTENT AREA ROW --><div class='row row-eq-height'><div class='row-eq-height col-sm-12 '><!-- ID COMPONENT_119869 --><!-- BS PANEL COMPONENT -->
+					<script type='text/javascript'>window.hidePageTitle = true;</script><div id='panels_119869' style='width:100%'><!-- Panel GROUP --><div class="panel-group"><!-- Panel --><div class='panel background-image-cover hide-panel-heading padding-bottom-80' style='background-image:url(/images/coronavirus/Vaccine_Hero_3_714959_7.jpg);' id='block-1_119869'>
+							<h2 class='panel-heading'><span class='panel-heading-inner'>Vaccine Plan</span></h2>
+							<!-- Panel BODY --><div class='panel-body'><!-- State Of Michigan - Mon Feb 01 18:07:27 2021 -->
+			<!-- BEGIN MAIN CONTENT AREA ROW --><div class='row row-eq-height'><div class='row-eq-height col-sm-7 '><!-- ID COMPONENT_119871 -->
+	<!-- BEGIN CDA Generic Content Display --><div id='comp_119871' class='comp list splash-feature-component list-no-ctitle title-align-left   bg bg-default-2 transparent-10                             read-more-secondary-2 read-more-left first-featured'  ><h2 class='cTitle' style=''>COVID-19 Vaccine</h2>
+		<!-- displayContent RD 001 --><!--PAGEWATCH--><!-- open table RD -->  <ul class='contentList NONE '><li class='contentItem' style=''><span class='inner'><span class='contentBlock '><span class='bodylinks'><span class="sr-only">Content</span></span><span class='shortdesc'><p><span style="font-size:48px;"><strong>COVID-19 Vaccine</strong></span><br />
+<span style="font-size:26px;"><strong>Safe. Effective. No Cost.</strong></span></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><span class="readLink"><a href="/coronavirus/0,9753,7-406-98178_103214_104822---,00.html#comp_121341" style="padding: 5px 40px 5px 40px;">Find a site in your county</a></span></p>
+</span></span></span></li>
+				</ul><!--/PAGEWATCH--><!-- /displayContent RD 001 --></div> <!-- END CDA Generic Content Display --><!-- /ID COMPONENT_119871 --></div></div><!-- END MAIN CONTENT AREA ROW --><!-- END Panel BODY --></div><!-- END Panel block-1 --></div><!-- Panel --><div class='panel hide-panel-heading padding-top-10' style='background-image:url();' id='block-2_119869'>
+							<h2 class='panel-heading'><span class='panel-heading-inner'>Links</span></h2>
+							<!-- Panel BODY --><div class='panel-body'><!-- State Of Michigan - Thu Feb 11 12:08:00 2021 -->
+			<!-- BEGIN MAIN CONTENT AREA ROW --><div class='row row-eq-height'><div class='row-eq-height col-sm-12 '><!-- ID COMPONENT_119870 -->
+	<!-- BEGIN CDA Generic Content Display --><div id='comp_119870' class='comp list title-align-center           padding-top-10 padding-bottom-0   margin-top-0 margin-bottom-0    item-col-bs-4            list-group-links-secondary-2'  >
+		<!-- displayContent RD 001 --><!--PAGEWATCH--><!-- open table RD -->  <ul class='contentList NONE '><li class='contentItem' style=''><span class='inner'><span class='contentBlock '> <a class='bodylinks'  href='/coronavirus/0,9753,7-406-98178_103214_104822---,00.html' title='How to Get a Vaccine'>How to Get a Vaccine </a></span></span></li><li class='contentItem' style=''><span class='inner'><span class='contentBlock '> <a class='bodylinks'  href='/coronavirus/0,9753,7-406-98178_103214-547150--,00.html' title='Access the state&#039;s vaccine data'>Access the state's vaccine data </a></span></span></li><li class='contentItem' style=''><span class='inner'><span class='contentBlock '> <a class='bodylinks'  href='/documents/coronavirus/COVID-19_Vaccine_Public_FAQ_FINAL_710077_7.pdf' target='_blank' title='Get Your Questions Answered'>Get Your Questions Answered <img class='docIcon' src='/images/PDF.gif' alt='PDF icon'></a></span></span></li><li class='contentItem' style=''><span class='inner'><span class='contentBlock '> <a class='bodylinks'  href='/coronavirus/0,9753,7-406-98178_103214-549767--,00.html' title='Attend an Upcoming Town Hall'>Attend an Upcoming Town Hall </a></span></span></li>
+				</ul><!--/PAGEWATCH--><!-- /displayContent RD 001 --></div> <!-- END CDA Generic Content Display --><!-- /ID COMPONENT_119870 --></div></div><div class='row row-eq-height'><div class='row-eq-height col-sm-12 '><!-- ID COMPONENT_121085 --><!-- /ID COMPONENT_121085 --></div></div><div class='row row-eq-height'><div class='row-eq-height col-sm-10 col-sm-offset-1'><!-- ID COMPONENT_120987 --><!-- /ID COMPONENT_120987 --></div></div><!-- END MAIN CONTENT AREA ROW --><!-- END Panel BODY --></div><!-- END Panel block-2 --></div><!-- Panel --><div class='panel hide-panel-heading bg bg-gray-light padding-bottom-0' style='background-image:url();' id='block-3_119869'>
+							<h2 class='panel-heading'><span class='panel-heading-inner'>Panel - Resources</span></h2>
+							<!-- Panel BODY --><div class='panel-body'><!-- State Of Michigan - Thu Feb 11 01:14:37 2021 -->
+			<!-- BEGIN MAIN CONTENT AREA ROW --><div class='row row-eq-height'><div class='row-eq-height col-sm-12 '><!-- ID COMPONENT_121360 -->
+	<!-- BEGIN CDA Generic Content Display --><div id='comp_121360' class='comp list title-align-center         padding-0 margin-0 padding-top-10 padding-bottom-0   margin-top-0 margin-bottom-0    item-col-bs-4            list-group-links-primary-2'  ><h2 class='cTitle' style=''>Resources</h2>
+		<!-- displayContent RD 001 --><!--PAGEWATCH--><!-- open table RD -->  <ul class='contentList NONE '><li class='contentItem' style=''><span class='inner'><span class='contentBlock '> <a class='bodylinks'  href='/mdhhs/0,5885,7-339-71551_5460_105209---,00.html' title='Protect Michigan Commission'>Protect Michigan Commission </a></span></span></li><li class='contentItem' style=''><span class='inner'><span class='contentBlock '> <a class='bodylinks'  href='/documents/coronavirus/1.29.21_Michigan_Vaccine_Strategy_FINAL_714811_7.pdf' title='Interim COVID-19 Vaccination Strategy'>Interim COVID-19 Vaccination Strategy <img class='docIcon' src='/images/PDF.gif' alt='PDF icon'></a></span></span></li><li class='contentItem' style=''><span class='inner'><span class='contentBlock '> <a class='bodylinks'  href='/documents/coronavirus/Social_Vulnerability_and_COVID-19-v4_715525_7.pdf' title='Social Vulnerability and COVID-19'>Social Vulnerability and COVID-19 <img class='docIcon' src='/images/PDF.gif' alt='PDF icon'></a></span></span></li><li class='contentItem' style=''><span class='inner'><span class='contentBlock '> <a class='bodylinks'  href='/documents/coronavirus/Population_Estimates_for_Allocation_Planning_020521_715523_7.pdf' title='Vaccine Allocation Planning'>Vaccine Allocation Planning <img class='docIcon' src='/images/PDF.gif' alt='PDF icon'></a></span></span></li><li class='contentItem' style=''><span class='inner'><span class='contentBlock '> <a class='bodylinks'  href='/coronavirus/0,9753,7-406-98178_103214_104868_105263---,00.html' title='Vaccine Testimonials'>Vaccine Testimonials </a></span></span></li><li class='contentItem' style=''><span class='inner'><span class='contentBlock '> <a class='bodylinks'  href='/documents/coronavirus/MI_COVID-19_Vaccination_Prioritization_Guidance_710349_7.pdf' title='COVID-19 Vaccine Prioritization Guidance'>COVID-19 Vaccine Prioritization Guidance <img class='docIcon' src='/images/PDF.gif' alt='PDF icon'></a></span></span></li><li class='contentItem' style=''><span class='inner'><span class='contentBlock '> <a class='bodylinks'  href='https://app.box.com/s/4cy0so8b5ux8dzmdcj5297bikvc4sejz' title='COVID-19 Vaccine Communication Materials'>COVID-19 Vaccine Communication Materials </a></span></span></li>
+				</ul><!--/PAGEWATCH--><!-- /displayContent RD 001 --></div> <!-- END CDA Generic Content Display --><!-- /ID COMPONENT_121360 --></div></div><!-- END MAIN CONTENT AREA ROW --><!-- END Panel BODY --></div><!-- END Panel block-3 --></div><!-- Panel --><div class='panel hide-panel-heading bg bg-primary-1 padding-bottom-0' style='background-image:url();' id='block-4_119869'>
+							<h2 class='panel-heading'><span class='panel-heading-inner'>Panel more</span></h2>
+							<!-- Panel BODY --><div class='panel-body'><!-- State Of Michigan - Fri Jan 08 16:53:54 2021 -->
+			<!-- BEGIN MAIN CONTENT AREA ROW --><div class='row row-eq-height'><div class='row-eq-height col-sm-6 '><!-- ID COMPONENT_121351 -->
+	<!-- BEGIN CDA Generic Content Display --><div id='comp_121351' class='comp list   comp-top-short-title-line bg bg-gray-light    list-read-more-primary-1 list-read-more-left    padding-bottom-0    margin-bottom-0                 read-more-secondary-2 read-more-center first-featured   first-like-ctitle-small'  ><h2 class='cTitle' style=''>Provider Guidance and Education</h2>
+		<!-- displayContent RD 001 --><!--PAGEWATCH--><!-- open table RD -->  <ul class='contentList NONE '><li class='contentItem' style=''><span class='inner'><span class='contentBlock '><span class='bodylinks'></span><span class='shortdesc'><p>Materials and information to support COVID-19 vaccine providers.</p>
+
+<p><span class="readLink"><a href="/mdhhs/0,5885,7-339-73971_4911_4914-545768--,00.html
+" style="padding: 5px 40px 5px 40px;">More Information</a></span></p>
+</span></span></span></li>
+				</ul><!--/PAGEWATCH--><!-- /displayContent RD 001 --></div> <!-- END CDA Generic Content Display --><!-- /ID COMPONENT_121351 --></div><div class='row-eq-height col-sm-6 '><!-- ID COMPONENT_121352 -->
+	<!-- BEGIN CDA Generic Content Display --><div id='comp_121352' class='comp list   comp-top-short-title-line bg bg-gray-light    list-read-more-primary-1 list-read-more-left    padding-bottom-0    margin-bottom-0                 read-more-secondary-2 read-more-center first-featured   first-like-ctitle-small'  ><h2 class='cTitle' style=''>LTC Pharmacy Partnership</h2>
+		<!-- displayContent RD 001 --><!--PAGEWATCH--><!-- open table RD -->  <ul class='contentList NONE '><li class='contentItem' style=''><span class='inner'><span class='contentBlock '><span class='bodylinks'></span><span class='shortdesc'><p>This national initiative provides vaccine to priority groups in long-term care facilities.</p>
+<p><span class="readLink"><a href="/coronavirus/0,9753,7-406-103272-548023--,00.html
+" style="padding: 5px 40px 5px 40px;">More Information</a></span></p></span></span></span></li>
+				</ul><!--/PAGEWATCH--><!-- /displayContent RD 001 --></div> <!-- END CDA Generic Content Display --><!-- /ID COMPONENT_121352 --></div></div><!-- END MAIN CONTENT AREA ROW --><!-- END Panel BODY --></div><!-- END Panel block-4 --></div><!-- Panel --><div class='panel background-image-cover hide-panel-heading' style='background-image:url(/images/coronavirus/Image_bottom_of_COVIDVaccine_page_709113_7.png);' id='block-5_119869'>
+							<h2 class='panel-heading'><span class='panel-heading-inner'>Panel CDC</span></h2>
+							<!-- Panel BODY --><div class='panel-body'><!-- State Of Michigan - Fri Jan 08 16:53:55 2021 -->
+			<!-- BEGIN MAIN CONTENT AREA ROW --><div class='row row-eq-height'><div class='row-eq-height col-sm-8 col-sm-offset-2'><!-- ID COMPONENT_119935 -->
+	<!-- BEGIN CDA Generic Content Display --><div id='comp_119935' class='comp list title-align-center   bg bg-accent-black transparent-60   list-read-more-primary-1 list-read-more-center                         read-more-primary-1 read-more-center'  ><h2 class='cTitle' style=''>Visit CDC.gov for the latest information on the COVID-19 vaccine</h2>
+		<!-- displayContent RD 001 --><!--PAGEWATCH--><!-- open table RD -->  <ul class='contentList NONE '><li class='contentItem' style=''><span class='inner'><span class='contentBlock '><span class='bodylinks'><span class="sr-only">Latest From CDC</span></span><span class='shortdesc'><p style="text-align: center;">The United States Center for Disease Control and Prevention has more information at a federal level about COVID-19 and our current pandemic. Click the link below to access the federal government&#39;s information and resources.&nbsp;</p>
+
+<p style="text-align: center;"><span class="moreLink"><a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/index.html" target="_blank">Visit CDC.GOV</a></span></p>
+</span></span></span></li>
+				</ul><!--/PAGEWATCH--><!-- /displayContent RD 001 --></div> <!-- END CDA Generic Content Display --><!-- /ID COMPONENT_119935 --></div></div><!-- END MAIN CONTENT AREA ROW --><!-- END Panel BODY --></div><!-- END Panel block-5 --></div><!-- END Panel GROUP --></div><!-- END Panel COMPONENT --></div><!-- /ID COMPONENT_119869 --></div></div><!-- END MAIN CONTENT AREA ROW --> <!-- Body End -->
+	</div>
+	
+		  
+		<!-- START RIGHT_NAV 98144__98144__103214 ~ 7-406-98144__98144__103214--- ~ 7-406-98144__98144__103214--- -->
+		
+
+<!-- State Of Michigan - Fri Jan 08 16:53:55 2021 -->
+
+<!-- BEGIN RIGHTNAV HTML CODE  -->
+
+<!-- Agency category --><!-- Begin Global Nav section RD --><!-- End Global Nav section RD --><!-- End My Interests/RightNav Links/Related Content/Right Links -->
+<!-- Cache Debug Info
+
+-->
+ <!-- END RIGHT_NAV -->
+		<!-- /div -->
+		 </div><!-- /contentWrapper -->
+	</div><!-- /bodyWrapper -->
+<!-- BOTTOMNAV -->
+<!-- BEGIN FOOTER RD -->
+<div id="footerArea" role="contentinfo" style="clear: both">
+
+	<!-- begin expanded footer --><div id='expandedFooter'><div id='cat_98152' class='footer_1'><h2>brandarea</h2><ul><li><a href='/som'><img src="/images/som/somFooterLogoBOW2015_491229_7.png" alt="Michigan.gov"></a></li></ul></div><div id='agencylinks' class='footer_1'><ul></ul></div><div id='policylinks' class='footer_1'><ul><li><a href='/'>Michigan.gov Home</a></li><li><a href='/adaform'>ADA</a></li><li><a href='/minewswire'>Michigan News</a></li><li><a href='/coronavirus/0,9753,7-406--281460--,00.html'>Policies</a></li></ul></div><span class='disclaimer'><!-- This is the button text to be pasted into the content item because our WISIWYG destroys it and the classes and styles are different after it is loaded, so you can't grab it from the developer tools -->
+<button type="button" class="chatLauncher" style="display: none;">
+  <div>
+    <img src="/coronavirus/ChatBotRobin.png" alt="Robin COVID Questions Chatbot">
+    <span class="wacFullButtonText">
+      <strong>Have questions?</strong>
+      <div>Chat with Robin</div>
+    </span>
+  </div>
+</button></span></div><br><span class='copyright'><br>Copyright 2021 State of Michigan</span><!-- end expanded footer --><script type="text/javascript">
+if (typeof jQuery == 'undefined') {
+    document.querySelector('body').classList.remove('matching-heights-processing');
+	document.getElementById("noAdBlock").style.display = "block";
+}
+</script>
+
+</div>
+<!--END DIV CONTAINER-->
+</div>
+
+<!-- Mega Menu Block -->
+<div id="megaMenuBlock">
+	<div id="megaMenuSubLinksBlock_container">
+		<div class="container">
+			<div class="col-xs-3">
+				<div id="megaMenuLogoBlock" >
+					<a href='/coronavirus'>
+						<img src="/images/som/final_logo_migov_white_526452_7.png" class="img-responsive logo" alt="Description: Coronavirus " />
+					</a>
+				</div>
+			</div>
+			<div class="col-xs-9">
+				<div id="megaMenuSubLinksBlockBreadCrumb"></div>
+				<div id="megaMenuSubLinksBlock"></div>
+			</div>
+		</div>
+	</div>
+	<div id="megaMenuSearchBlock"></div>
+</div>
+<style type="text/css">
+
+</style>
+<!-- stmiws101.prdcloud.fms.ibmcloud.com rjp NT -->
+</body>
+</html>

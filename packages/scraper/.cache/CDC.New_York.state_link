@@ -1,0 +1,983 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+  <head>
+    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"a873d11659",applicationID:"1026055521"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(6),c=e(7),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(8);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(5),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,w=["click","keydown","mousedown","pointerdown","touchstart"];w.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],4:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],5:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],6:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],7:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],8:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?u(e,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){e&&a&&e(n,r,i);for(var c=t(i),f=v(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[h[n]];return p&&p.push([b,n,r,c]),c}}function o(e,t){y[e]=v(e).concat(t)}function m(e,t){var n=y[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return y[e]||[]}function g(e){return p[e]=p[e]||i(n)}function w(e,t){s(e,function(e,n){t=t||"feature",h[n]=t,t in d||(d[t]=[])})}var y={},h={},b={on:o,addEventListener:o,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:w,abort:c,aborted:!1};return b}function o(e){return u(e,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=e("gos"),s=e(6),d={},p={},l=t.exports=i();t.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=b.info=NREUM.info,t=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(y,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+b.offset],null,"api"),c("timing",["load",n]);var r=p.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===p.readyState&&o()}function o(){c("mark",["domContent",a()+b.offset],null,"api")}var a=e(2),c=e("handle"),f=e(6),u=e("ee"),s=e(4),d=window,p=d.document,l="addEventListener",m="attachEvent",v=d.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:v,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var w=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1198.min.js"},h=v&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),b=t.exports={offset:a.getLastTimestamp(),now:a,origin:w,features:{},xhrWrappable:h,userAgent:s};e(1),e(3),p[l]?(p[l]("DOMContentLoaded",o,!1),d[l]("load",r,!1)):(p[m]("onreadystatechange",i),d[m]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var x=0},{}],"wrap-function":[function(e,t,n){function r(e,t){function n(t,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],e)}c(n+"start",[o,a,f],s,u);try{return p=t.apply(a,o)}catch(m){throw c(n+"err",[o,a,m],s,u),m}finally{c(n+"end",[o,a,p],s,u)}}return a(t)?t:(n||(n=""),nrWrapper[p]=t,o(t,nrWrapper,e),nrWrapper)}function r(e,t,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<t.length;u++)f=t[u],c=e[f],a(c)||(e[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!m||t){var c=m;m=!0;try{e.emit(n,r,o,t,a)}catch(f){i([f,n,r,o],e)}m=c}}return e||(e=s),n.inPlace=r,n.flag=p,n}function i(e,t){t||(t=s);try{t.emit("internal-error",e)}catch(n){}}function o(e,t,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(e);return r.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(o){i([o],n)}for(var a in e)l.call(e,a)&&(t[a]=e[a]);return t}function a(e){return!(e&&e instanceof Function&&e.apply&&!e[p])}function c(e,t){var n=t(e);return n[p]=e,o(e,n,s),n}function f(e,t,n){var r=e[t];e[t]=c(r,n)}function u(){for(var e=arguments.length,t=new Array(e),n=0;n<e;++n)t[n]=arguments[n];return t}var s=e("ee"),d=e(7),p="nr@original",l=Object.prototype.hasOwnProperty,m=!1;t.exports=r,t.exports.wrapFunction=c,t.exports.wrapInPlace=f,t.exports.argsToArray=u},{}]},{},["loader"]);</script>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-184659760-1", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");</script>
+<meta name="title" content="COVID-19 Vaccine | COVID-19 Vaccine" />
+<link rel="shortcut icon" href="/profiles/custom/webny/themes/custom/webny_theme/favicon.ico" />
+<meta property="og:site_name" content="COVID-19 Vaccine" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="canonical" href="https://covid19vaccine.health.ny.gov/" />
+<link rel="shortlink" href="https://covid19vaccine.health.ny.gov/" />
+<link rel="icon" sizes="16x16" href="/profiles/custom/webny/themes/custom/webny_theme/icons/icon-16x16.png" />
+<link rel="icon" sizes="32x32" href="/profiles/custom/webny/themes/custom/webny_theme/icons/icon-32x32.png" />
+<meta property="og:title" content="COVID-19 Vaccine: Get the Facts" />
+<link rel="icon" sizes="96x96" href="/profiles/custom/webny/themes/custom/webny_theme/icons/icon-96x96.png" />
+<link rel="icon" sizes="192x192" href="/profiles/custom/webny/themes/custom/webny_theme/icons/icon-192x192.png" />
+<meta name="twitter:image" content="https://covid19vaccine.health.ny.gov/sites/g/files/oee1181/files/media/2020/12/vaccine_twitter_meta_0.png" />
+<link rel="apple-touch-icon" href="/profiles/custom/webny/themes/custom/webny_theme/icons/apple-touch/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="/profiles/custom/webny/themes/custom/webny_theme/icons/apple-touch/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon" sizes="76x76" href="/profiles/custom/webny/themes/custom/webny_theme/icons/apple-touch/apple-touch-icon-76x76.png" />
+<meta property="og:image" content="https://covid19vaccine.health.ny.gov/sites/g/files/oee1181/files/media/2020/12/vaccine_twitter_meta_0.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="/profiles/custom/webny/themes/custom/webny_theme/icons/apple-touch/apple-touch-icon-114x114.png" />
+<meta property="og:image:url" content="https://covid19vaccine.health.ny.gov/profiles/custom/webny/themes/custom/webny_theme/images/nys-default.png" />
+<link rel="apple-touch-icon" sizes="120x120" href="/profiles/custom/webny/themes/custom/webny_theme/icons/apple-touch/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="/profiles/custom/webny/themes/custom/webny_theme/icons/apple-touch/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon" sizes="152x152" href="/profiles/custom/webny/themes/custom/webny_theme/icons/apple-touch/apple-touch-icon-152x152.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/profiles/custom/webny/themes/custom/webny_theme/icons/apple-touch/apple-touch-icon-180x180.png" />
+<link rel="apple-touch-icon-precomposed" href="/profiles/custom/webny/themes/custom/webny_theme/icons/apple-touch/apple-touch-icon-57x57-precomposed.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/profiles/custom/webny/themes/custom/webny_theme/icons/apple-touch/apple-touch-icon-72x72-precomposed.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/profiles/custom/webny/themes/custom/webny_theme/icons/apple-touch/apple-touch-icon-76x76-precomposed.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/profiles/custom/webny/themes/custom/webny_theme/icons/apple-touch/apple-touch-icon-114x114-precomposed.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/profiles/custom/webny/themes/custom/webny_theme/icons/apple-touch/apple-touch-icon-120x120-precomposed.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/profiles/custom/webny/themes/custom/webny_theme/icons/apple-touch/apple-touch-icon-144x144-precomposed.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/profiles/custom/webny/themes/custom/webny_theme/icons/apple-touch/apple-touch-icon-152x152-precomposed.png" />
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/profiles/custom/webny/themes/custom/webny_theme/icons/apple-touch/apple-touch-icon-180x180-precomposed.png" />
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="revision" href="https://covid19vaccine.health.ny.gov/covid-19-vaccine" />
+
+    <title>COVID-19 Vaccine | COVID-19 Vaccine</title>
+    <link rel="stylesheet" media="all" href="/sites/g/files/oee1181/files/css/css_F-qKM0HT1zcr19frJ7D57NQ9mnRvK2p0ZlBmrUHgBao.css" />
+<link rel="stylesheet" media="all" href="/sites/g/files/oee1181/files/css/css_Btt98VVgCzqCJki0c1sOKphXrT9DjEUc91Xa_HV20nY.css" />
+<link rel="stylesheet" media="print" href="/sites/g/files/oee1181/files/css/css_zMJSiCCVIgmvArV4vWSupHGzZ9mJKD5wKHkhSB2svT0.css" />
+<link rel="stylesheet" media="all" href="/sites/g/files/oee1181/files/css/css_hDsqhFadU1k4CFfjH-jKODJZVymHHy-DP3Eb2hcn4D4.css" />
+
+    
+<!--[if lte IE 8]>
+<script src="/sites/g/files/oee1181/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+<script src="/sites/g/files/oee1181/files/js/js_EPRM1MB5PA_zLkCDTPWtwJFxfSmzfG7dEVgjNXp8r90.js"></script>
+
+  </head>
+  <body class="body-sidebars-none">
+        <div class="nygov-logo">
+      <img src="/profiles/custom/webny/themes/custom/webny_theme/images/nygov-logo.png" alt="nygov-logo" />
+    </div>
+    <a href="#main-content" class="visually-hidden focusable skip-to-main">
+      Skip to main content
+    </a>
+    <div id="nygov-universal-navigation" class="nygov-universal-container" data-iframe="true" data-updated="2014-11-07 08:30">
+    <noscript>
+        <iframe width="100%" height="86px" src="//static-assets.ny.gov/load_global_menu/ajax?iframe=true" frameborder="0" style="border:none; overflow:hidden; width:100%; height:86px;" scrolling="no">
+            Your browser does not support iFrames
+        </iframe>
+    </noscript>
+    <script type="text/javascript">
+        var _NY = {
+            HOST: "static-assets.ny.gov",
+            BASE_HOST: "www.ny.gov",
+            hideSettings: false,
+            hideSearch: false
+        };
+        (function (document, bundle, head) {
+            head = document.getElementsByTagName('head')[0];
+            bundle = document.createElement('script');
+            bundle.type = 'text/javascript';
+            bundle.async = true;
+            bundle.src = "//static-assets.ny.gov/sites/all/widgets/universal-navigation/js/dist/global-nav-bundle.js";
+            head.appendChild(bundle);
+        }(document));
+    </script>
+</div>
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    <div class="layout-container front">
+
+  <header role="banner">
+                        <nav id="webny-global-header" class="webny-global-header horizontal unstacked" aria-label="primary-site" >
+            <div class="nav-toggle">
+            <a href="#" role="button" id="webny-menu-control">Navigation menu</a>
+        </div>
+            <h1><a href="/">COVID-19 Vaccine</a></h1>
+        <ul class="gnav-ul"><li class="gnav-mitems gnav-topli solotop" aria-expanded="false"><a href="/what-you-need-know">What You Need to Know</a></li><li class="gnav-mitems gnav-topli solotop" aria-expanded="false"><a href="/phased-distribution-vaccine">Distribution Plan</a></li><li class="gnav-mitems gnav-topli solotop" aria-expanded="false"><a href="/safety-measures">Safety</a></li><li class="gnav-mitems gnav-topli solotop" aria-expanded="false"><a href="https://coronavirus.health.ny.gov/covid-19-vaccine-information-providers">Providers</a></li><li class="gnav-mitems gnav-topli" aria-expanded="false"><a href="/education">Education</a><ul class="gnav-items-ul" aria-hidden="true"><li class="gnav-toplink"><a href="/education">Education</a></li><li><a href="/covid-19-vaccine-equity-task-force">Vaccine Equity Task Force</a></li></ul></li><li class="gnav-mitems gnav-topli solotop" aria-expanded="false"><a href="/frequently-asked-questions">FAQs</a></li><li class="gnav-mitems gnav-topli solotop" aria-expanded="false"><a href="/covid-19-vaccine-tracker">Vaccine Tracker</a></li></ul>
+    </nav>
+
+    
+
+    
+
+                
+        
+                                
+    
+        
+        <nav role="navigation" aria-label="Secondary Navigation Menu" id="secondary-navigation">
+
+                
+                        <div class="secnav-secone secnav-full-space" aria-label="Secondary Navigation - Information Section One">
+                <p>
+<style type="text/css">#secondary-navigation { background-color:#D83731 !important } #secondary-navigation p {font-size: 16px !important}
+</style>
+</p>
+
+<p>*<strong>ALERT: The Federal Government determines how much vaccine New York State receives.&nbsp;The Federal Government has only given New York approximately&nbsp;300,000&nbsp;vaccines/week for over 7 million people who are eligible – as a result supply is very limited</strong>*</p>
+
+<p>Vaccines are available at pharmacies, hospitals and through local health departments statewide – please contact your provider of choice to schedule your vaccine appointment.<br />
+Additionally, there is a network of State-run sites distributing vaccine statewide – to determine eligibility and to schedule a first-dose appointment through April 16 at&nbsp;<strong>New York State-run vaccination sites only,&nbsp;</strong><strong><a href="https://am-i-eligible.covid19vaccine.health.ny.gov/">use the Am I Eligible app</a></strong><strong>.</strong><br />
+<strong>AN APPOINTMENT IS REQUIRED. IF YOU VISIT A LOCATION WITHOUT AN APPOINTMENT YOU WILL NOT RECEIVE A VACCINE.</strong></p>
+
+<p>&nbsp;</p>
+
+            </div>
+
+        
+                    
+            
+
+
+                
+    </nav>
+
+
+
+
+  </header>
+
+  
+  
+
+  
+
+  
+
+  
+
+  <main role="main">
+    <a id="main-content" tabindex="-1"></a>
+    <div class="layout-content">
+        <div>
+    <div data-drupal-messages-fallback class="hidden"></div>
+
+
+
+
+
+
+
+
+    
+
+
+                    
+
+    
+
+
+<!-- Logic to Display or Not to Display the Hero section -->
+
+<article  data-history-node-id="1" role="article" about="/covid-19-vaccine" class="hero-layout">
+
+        
+    
+            <div class="hero-header hero-has-image hero-landing">
+                <div class="hero-image">
+            
+            <div><article>
+  
+      
+            <div>    <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+              <source srcset="/sites/g/files/oee1181/files/styles/wide_lead/public/media/2021/01/javits-vaccine1_0.png?h=b5f6a62e&amp;itok=vMwphxIs 1x" media="all and (min-width: 769px)" type="image/png"/>
+              <source srcset="/sites/g/files/oee1181/files/styles/narrow_lead/public/media/2021/01/javits-vaccine1_0.png?h=b5f6a62e&amp;itok=w17cAQ_D 1x" media="all and (min-width: 461px) and (max-width: 768px)" type="image/png"/>
+              <source srcset="/sites/g/files/oee1181/files/styles/mobile_lead/public/media/2021/01/javits-vaccine1_0.png?h=b5f6a62e&amp;itok=vydvCync 1x" type="image/png"/>
+            <!--[if IE 9]></video><![endif]-->
+            <img src="/sites/g/files/oee1181/files/styles/mobile_lead/public/media/2021/01/javits-vaccine1_0.png?h=b5f6a62e&amp;itok=vydvCync" alt="Javits Vaccination Center" title="Javits Vaccination Center" typeof="foaf:Image" />
+
+  </picture>
+
+</div>
+      
+  </article>
+</div>
+      
+            </div>
+        <!-- BACKGROUND GRAD -->
+            <div class="hero-bkg"></div>
+        </div>
+
+            <div class="hero-inner hero-landing-inner hero-has-image-content">
+    
+            <!-- LIVE NOW FOR BRIGHTCOVE -->
+            
+            <!-- HEADLINE LABEL -->
+                            <h2>COVID-19 Vaccine: Safe, Effective, Free</h2>
+            
+            <div class="hero-summary">
+                
+            <div class="webny-card-teaser">See if you are eligible. Find a New York State operated vaccination site.</div>
+      
+            </div>
+
+            <!-- HERO BUTTONS -->
+            <div class="hero-buttons">
+
+                
+                
+            <div><a href="https://am-i-eligible.covid19vaccine.health.ny.gov/">Check Eligibility</a></div>
+      
+
+                                    
+            <div><a href="/covid-19-vaccine-tracker">Vaccine Tracker</a></div>
+      
+                
+            </div>
+        </div>
+
+    <!-- VIDEO PLACEMENT -->
+
+         
+
+
+    
+
+</article>
+
+
+
+<div class="page-paragraphs landing-paragraphs">
+    <div class="page-paragraphs-in">
+    
+      <div>
+              <div>  <div class="paragraph paragraph--type--webny-wysiwyg-pgtype paragraph--view-mode--default">
+          
+            <div class="wysiwyg--field-webny-wysiwyg-title">Get the Facts</div>
+      
+            <div class="wysiwyg--field-webny-wysiwyg-headline">The COVID-19 Vaccine Is Here!</div>
+      
+            <div class="wysiwyg--field-webny-wysiwyg-body"><p>The first COVID-19 vaccines are here. Supply from the Federal Government is extremely limited. Additional New Yorkers will become eligible as the vaccine supply increases.&nbsp;While the vaccination&nbsp;process is underway, every&nbsp;New Yorker&nbsp;should&nbsp;wear a mask, social distance&nbsp;and avoid small and large gatherings.</p>
+
+<p>Over seven million New Yorkers are now&nbsp;<a href="https://covid19vaccine.health.ny.gov/phased-distribution-vaccine" target="_blank">eligible</a>&nbsp;for the vaccine. Eligible groups include doctors, nurses and health care workers, people age 65 and over, first responders, teachers, public transit workers, grocery store workers and public safety workers.&nbsp;</p>
+
+<p>Beginning February 15, New Yorkers with certain&nbsp;<a href="/phased-distribution-vaccine#phase-1a---phase-1b" title="List of Comorbidities and Underlying Conditions">comorbidities and underlying&nbsp;conditions</a>&nbsp;will be eligible to receive&nbsp;the vaccine.</p>
+
+<p>Vaccines are available at pharmacies, hospitals and through local health departments statewide – please contact your provider of choice to schedule your vaccine appointment.&nbsp;You can use this website for scheduling a first-dose appointment at a New York State-run site only. To&nbsp;determine eligibility and schedule a first-dose appointment at one of these sites, use the&nbsp;<a data-sk="tooltip_parent" data-stringify-link="https://am-i-eligible.covid19vaccine.health.ny.gov/" delay="150" href="https://am-i-eligible.covid19vaccine.health.ny.gov/" rel="noopener noreferrer" target="_blank">Am I Eligible app</a>.&nbsp;Remember: Both vaccines require two doses for effectiveness. Your second-dose appointment will be scheduled automatically at the time you receive your first vaccine dose.&nbsp;<i data-stringify-type="italic">Appointments are not transferrable.</i></p>
+
+<center>
+<p class="button"><a href="/covid-19-vaccine-tracker" title="COVID-19 Vaccine Tracker">COVID-19 Vaccine Tracker</a></p>
+</center>
+
+<h5>Instructions for New York State-Operated Vaccination Sites:</h5>
+
+<p><strong>Step 1:</strong>&nbsp;<strong>Determine eligibility and schedule an appointment.&nbsp;</strong>The&nbsp;<a href="https://am-i-eligible.covid19vaccine.health.ny.gov/" target="_blank">Am I Eligible app</a>&nbsp;is the quickest way to see if you're eligible and make an appointment. You can also call the New York State COVID-19 Vaccination Hotline at 1-833-NYS-4-VAX (<a href="tel:18336974829" target="_blank">1-833-697-4829</a>). Once you have successfully scheduled an appointment, you will receive a confirmation email that contains a barcode. You will need to bring this to your appointment.</p>
+
+<p><strong>Step 2:&nbsp;Complete the Vaccine Form.&nbsp;</strong><em><u>Once you have a confirmed appointment</u></em>, you must complete the&nbsp;<a href="https://forms.ny.gov/s3/vaccine" target="_blank" title="New York State COVID-19 Vaccine Form">New York State COVID-19 Vaccine Form</a>. This form should&nbsp;be filled out&nbsp;online and you will receive a submission ID indicating completion. You will need to bring the submission ID to your appointment.&nbsp;If you cannot submit the&nbsp;form online, it&nbsp;will be available&nbsp;at the vaccination sites.</p>
+
+<p><strong>Step 3:&nbsp;Bring proof of eligibility to your appointment.&nbsp;</strong>Depending on&nbsp;your&nbsp;eligibility category, proof can include an employee ID card, a letter from an employer or affiliated organization, a pay stub, a driver's license, passport,&nbsp;or any legal proof of your date of birth and residency. At the time of your appointment, you'll be asked a series of clinical questions to ensure readiness for a vaccine. You will be asked for insurance information BUT the vaccine is free and there will never be a charge to you. This information is for administrative use only.</p>
+
+<p><strong>Step 4: Your second dose appointment will be scheduled&nbsp;automatically&nbsp;when&nbsp;you receive your first vaccine dose.&nbsp;</strong>Your second appointment will be scheduled for the same time and at the same location, three weeks following your first dose. You will receive a card&nbsp;onsite&nbsp;with the date and time indicated&nbsp;and a confirmation email will follow a few days later.&nbsp;Please keep in mind when scheduling your first appointment that your second appointment will occur at the same time of day.</p>
+
+<div class="nys-modal__wrapper">
+<div class="nys-modal__content">
+<div class="nys-modal__close">X</div>
+
+<div class="nys-modal__body">
+<div class="nys-modal__logo override" style="height: 115px; background: url('https://www.governor.ny.gov/sites/governor.ny.gov/files/thumbnails/image/NYS-NewYorkTough-Hashtag-Logo.png'); background-size: contain; background-position-x: center; background-repeat: no-repeat; width: 70%;">&nbsp;</div>
+
+<h2 class="nys-modal__title black">GET DAILY COVID-19 AND VACCINE UPDATES</h2>
+
+<p class="nys-modal__btn-wrapper"><a class="nys-modal__btn" href="https://now.ny.gov/page/s/coronavirus-updates">Sign up here</a></p>
+</div>
+</div>
+</div>
+<script>
+// Initalize the modal.
+init();
+/**
+ * Init
+ */
+function init(){ 
+  // This functionality may change in the future.
+  if(getLocalStorage() === 'true') return;
+  const modal = document.getElementsByClassName('nys-modal__wrapper')[0];
+  const close = document.getElementsByClassName('nys-modal__close')[0];
+  const visitBtn = document.getElementsByClassName('nys-modal__btn')[0];
+  const governor = document.querySelector('.governor-wrap');
+  if(governor !== null) {
+    governor.parentNode.insertBefore(modal, governor)
+  }
+  // On load show the modal.
+  modal.style.display = "flex";
+  close.addEventListener('click', handleClose)
+  window.addEventListener('click', handleWindowClick)
+  visitBtn.addEventListener('click', handleClose);
+}
+function handleClose() {
+  const modal = document.getElementsByClassName('nys-modal__wrapper')[0];
+  modal.style.display = 'none';
+  setLocalStorage();
+}
+function handleWindowClick(event) {
+  const modal = document.getElementsByClassName('nys-modal__wrapper')[0];
+  if(event.target === modal) {
+    modal.style.display = 'none';
+    setLocalStorage();
+  }
+}
+function setLocalStorage(){
+  localStorage.setItem('nys_modal', 'true');
+}
+function getLocalStorage(){
+  return localStorage.getItem('nys_modal');
+}
+</script>
+<style type="text/css">/* Modal Content */
+/* Modal Content */
+.nys-modal__content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  animation-name: animatetop;
+  animation-duration: 0.5s;
+  max-width: 624px;
+  padding: 25px;
+  text-align: center;
+}
+.nys-modal__btn-wrapper {
+  padding: 0px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 767px) {
+  .nys-modal__content {
+    padding: 50px;
+  }
+  .nys-modal__btn-wrapper{
+    width: 60%;
+  }
+}
+.nys-modal__logo {
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0 auto;
+  background-position: center;
+}
+/* Modal Close Button */
+.nys-modal__close {
+  top: 0;
+  position: absolute;
+  right: 0;
+  padding: 15px;
+  font-size: 30px;
+  background-color: #128EC3;
+  color: #FFFFFF;
+  transition: ease-in-out 250ms background-color;
+}
+.nys-modal__close:hover{
+  cursor: pointer;
+  background: #d51515;
+}
+/* The Modal (background) */
+.nys-modal__wrapper {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 999; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.75); /* Black w/ opacity */
+}
+.nys-modal__title {
+  font-family: "Proxima Nova",sans-serif;
+  font-weight: 800;
+  font-size: 34px;
+  letter-spacing: 1px;
+  line-height: 34px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0;
+}
+.nys-modal__title.black{
+  color: #000000;
+}
+.nys-modal__title.blue{
+  color: #128EC3;
+}
+.nys-modal__body{
+  color: #62666A;
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+}
+.nys-modal__footer {
+  color: #62666A;
+  font-family: "Proxima Nova", sans-serif;
+  font-style: italic;
+  font-size: 14px;
+}
+.nys-modal__btn:visited{
+  color: #FFFFFF;
+}
+a.nys-modal__btn{
+  color: white;
+  text-decoration: none;
+}
+.nys-modal__btn {
+  font-family: "Proxima Nova",sans-serif;
+  font-weight: 800;
+  font-size: 13px;
+  letter-spacing: 0.25em;
+  background-color: #128EC3;
+  padding: 16px 24px;
+  text-align: center;
+  color: #fff;
+  border: none;
+  text-transform: uppercase;
+  transition: ease-in-out 250ms background-color;
+  text-decoration: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.nys-modal__btn:hover{
+  cursor: pointer;
+  background-color: #24387E;
+}
+.nys-modal__close .fa-times:before{
+  font-family: "Fontawesome";
+  font-style: normal;
+}
+@keyframes animatetop {
+  from {
+    top: -300px; opacity: 0
+  }
+  to {
+    top: 0; opacity: 1
+  }
+}
+</style>
+</div>
+      
+      </div>
+</div>
+              <div>    <div class="paragraph paragraph--type--webny-card-paragraph-type paragraph--view-mode--default">
+        
+            <div class="webny-card-frame-inner">
+                                
+            </div>
+
+            <div>
+                                                                            <div>
+                        <article class="webny-card">
+                            
+<div  data-history-node-id="236" role="article" about="/covid-19-vaccine-tracker-0" class="webny-card">
+
+                            <a target="_self" href="/covid-19-vaccine-tracker-0">
+                <div class="card-image" style="background-image: url('/sites/g/files/oee1181/files/styles/card_vertical/public/media/2020/12/covid19vaccine.png?h=b5f6a62e&amp;itok=nKpUaAyz');">
+                </div>
+            </a>
+            
+    <div class="card-content">
+        <div class="card-content-top">
+                            
+
+                <h1>
+                                <a target="_self" href="/covid-19-vaccine-tracker-0" rel="bookmark">
+                                                    COVID-19 Vaccine Tracker
+</a>
+                </h1>
+
+                
+            
+                    </div>
+            <div class="webny-card-description"><p>This dashboard is updated daily with data as of approximately <strong>11 am</strong> the same day. It reports the number of 1<sup>st</sup> and 2<sup>nd</sup> dose vaccinations distributed and administered across the state of New York.</p></div>
+
+            </div>
+</div>
+
+                                                                                                                    <div class="webny-card-cta">
+                                    <span class="icon-right-caret">
+                                                                                                                                                                                                                                                                                                                    <a target="_self" href="/covid-19-vaccine-tracker" title="Find Data">Find Data</a>
+                                                                                                                                                                                                                </span>
+                                </div>
+                                                    </article>
+                    </div>
+                                                                                <div>
+                        <article class="webny-card">
+                            
+<div  data-history-node-id="191" role="article" about="/phases-vaccine-distribution" class="webny-card">
+
+                            <a target="_self" href="/phases-vaccine-distribution">
+                <div class="card-image" style="background-image: url('/sites/g/files/oee1181/files/styles/card_vertical/public/media/2021/01/javits_covid_vaccine_1280.jpg?h=b5f6a62e&amp;itok=O1jqQFT6');">
+                </div>
+            </a>
+            
+    <div class="card-content">
+        <div class="card-content-top">
+                            
+
+                <h1>
+                                <a target="_self" href="/phases-vaccine-distribution" rel="bookmark">
+                                                    Phases of the Vaccine Distribution
+</a>
+                </h1>
+
+                
+            
+                    </div>
+            <div class="webny-card-description"><p>New York State is currently vaccinating eligible New Yorkers who are in Phase 1a and Phase 1b population groups. See the list of who is currently eligible.</p></div>
+
+            </div>
+</div>
+
+                                                                                                                    <div class="webny-card-cta">
+                                    <span class="icon-right-caret">
+                                                                                                                                                                                                                                                                                                                    <a target="_self" href="/phased-distribution-vaccine#phase-1a---phase-1b" title="Learn More">Learn More</a>
+                                                                                                                                                                                                                </span>
+                                </div>
+                                                    </article>
+                    </div>
+                                                                                <div>
+                        <article class="webny-card">
+                            
+<div  data-history-node-id="196" role="article" about="/am-i-eligible" class="webny-card">
+
+                            <a target="_blank" href="/am-i-eligible">
+                <div class="card-image" style="background-image: url('/sites/g/files/oee1181/files/styles/card_vertical/public/media/2021/01/vaccine_javits_vaccination_site_1280.jpg?h=b5f6a62e&amp;itok=dbidt55N');">
+                </div>
+            </a>
+            
+    <div class="card-content">
+        <div class="card-content-top">
+                            
+
+                <h1>
+                        	    <a target="_blank" href="/am-i-eligible" rel="bookmark">
+                                                    Am I Eligible?
+</a>
+                </h1>
+
+                
+            
+                    </div>
+            <div class="webny-card-description"><p>Check to see if you are eligible for the COVID-19 vaccine and to schedule an appointment at a New York State operated vaccination site.</p></div>
+
+            </div>
+</div>
+
+                                                                                                                    <div class="webny-card-cta">
+                                    <span class="icon-right-caret">
+                                                                                                                                                                                                                                                                                                                    <a target="_blank" href="https://am-i-eligible.covid19vaccine.health.ny.gov/" title="Check Your Eligibility">Check Your Eligibility</a>
+                                                                                                                                                                                                                </span>
+                                </div>
+                                                    </article>
+                    </div>
+                                        </div>
+
+            </div>
+</div>
+              <div>    
+
+  <div class="summary-frame paragraph paragraph--type--webny-summary-pgtype paragraph--view-mode--default primary">
+          <div class="summaryframe-inner">
+        
+            <div class="keypoint--field-webny-summary-title">Check Your Eligibility</div>
+      
+            <div class="keypoint--field-webny-summary-headline">Am I Eligible App</div>
+      
+<div  class="keypoints">
+      
+<div  class="keypoint">
+      
+            <div class="keypoint--field-webny-summary-keypoint1">Check Your Eligibility</div>
+      
+            <div class="keypoint--field-webny-summary-argument1"><p>Visit the Am I Eligible app and complete a simple set of questions to determine if you are eligible for the COVID-19 vaccine.</p></div>
+      
+  </div>
+<div  class="keypoint">
+      
+            <div class="keypoint--field-webny-summary-keypoint2">Make an Appointment</div>
+      
+            <div class="keypoint--field-webny-summary-argument2"><p>If you are eligible, you will see a list of New York State operated vaccination sites and available appointments. </p></div>
+      
+  </div>
+<div  class="keypoint">
+      
+            <div class="keypoint--field-webny-summary-keypoint3">Recheck at Any Time</div>
+      
+            <div class="keypoint--field-webny-summary-argument3"><p>The Am I Eligible app is kept up to date. New Yorkers can recheck their eligibility at any time.</p></div>
+      
+  </div>
+  </div>
+<div>
+            <div class="keypoint--field-webny-summary-cta">
+            <a title="Learn More" href="https://covid19vaccine.health.ny.gov/what-you-need-know#check-your-eligibility">Learn More</a>
+        </div>
+    </div>
+
+      </div>
+      </div>
+</div>
+              <div>
+    
+  <div class="paragraph paragraph--type--webny-get-involved-pgtype paragraph--view-mode--default secondary">
+          
+
+
+            <div class="get-involved--field-webny-get-involved-title">New York State COVID-19 Vaccination Hotline</div> 
+      
+
+
+            <div class="get-involved--field-webny-get-inv-headline">1-833-NYS-4-VAX (1-833-697-4829)</div> 
+      
+
+
+            <div class="get-involved--field-webny-get-inv-description">The COVID-19 Vaccination Hotline is open 7AM - 10PM, 7 days week, to help New Yorkers determine if they are eligible and schedule vaccination appointments.</div> 
+      
+      </div>
+</div>
+              <div>
+    
+  <div class="paragraph paragraph--type--webny-get-involved-pgtype paragraph--view-mode--default primary">
+          
+
+
+            <div class="get-involved--field-webny-get-involved-title">Vaccination Training</div> 
+      
+
+
+            <div class="get-involved--field-webny-get-inv-headline">Become a Vaccinator</div> 
+      
+
+
+            <div class="get-involved--field-webny-get-inv-description">New York State is encouraging eligible New Yorkers to take trainings to become vaccinators.</div> 
+      
+<div  class="get-involved--cta-wrapper">
+      
+<div>
+            <div class="get-involved--field-webny-get-inv-cta">
+            <a title="Become a Vaccinator" href="/vaccination-training">Become a Vaccinator</a>
+        </div>
+    </div>
+
+  </div>
+      </div>
+</div>
+              <div>
+
+
+
+
+
+
+
+<div  class="webny-photo-gallery">
+    <div  class="webny-photo-gallery webny-photo-gallery-in">
+
+                                <div class="webny-gallery-meta">
+
+                                                                        <h2>
+                                                                    <span class="frame-title">Help Stop the Spread of COVID-19</span>
+                                
+                                                                    <span class="frame-headline">COVID-19 Is Still a Threat</span>
+                                                                                    </h2>
+                    
+                    
+                                        
+                </div>
+
+        
+                <div class="webny-gallery">
+            <div class="webny-gallery-main">
+                <div class="webny-gallery-container">
+                    <div class="webny-gallery-container-in" id="galleyinmob">
+
+                                                    
+                                                                                        
+                            <div class="webny-gallery-entry gallery-entry-1 gallery-current-img" data-webny-cell="1">
+
+                                                                <div class="gallery-imgdiv gallery-imgdiv-1" data-webny-img="1">
+                                                                        <img src="/sites/g/files/oee1181/files/styles/webny_gallery_image/public/media/2020/12/social_distance_masks_outside_fall_winter_1280.jpg?h=b5f6a62e&amp;itok=fTpvLXQ_"
+                                         alt="Young People Social Distancing Outside"
+                                         title="Young People Social Distancing Outside" />
+                                </div>
+
+                            </div>
+
+                                                    
+                                                                                        
+                            <div class="webny-gallery-entry gallery-entry-2 " data-webny-cell="2">
+
+                                                                <div class="gallery-imgdiv gallery-imgdiv-2" data-webny-img="2">
+                                                                        <img src="/sites/g/files/oee1181/files/styles/webny_gallery_image/public/media/2020/12/zucker_washing_hands.png?h=b5f6a62e&amp;itok=ka3pXrsK"
+                                         alt="Dr. Zucker Washing Hands"
+                                         title="Dr. Zucker Washing Hands" />
+                                </div>
+
+                            </div>
+
+                                                    
+                                                                                        
+                            <div class="webny-gallery-entry gallery-entry-3 " data-webny-cell="3">
+
+                                                                <div class="gallery-imgdiv gallery-imgdiv-3" data-webny-img="3">
+                                                                        <img src="/sites/g/files/oee1181/files/styles/webny_gallery_image/public/media/2020/12/elderly_visiting_covid_masks.jpg?h=b5f6a62e&amp;itok=hqt9MiZe"
+                                         alt="Elderly woman visited by daughter during COVID-19"
+                                         title="Elderly woman visited by daughter during COVID-19" />
+                                </div>
+
+                            </div>
+
+                        
+                    </div>
+
+                                        <div class="webny-gallery-desc">
+                        <div class="webny-gallery-back" tabindex="0" title="previous"></div>
+                        <div class="webny-gallery-text">
+                                                            
+                                                                                                    
+                                <div class="galdescactive gallery-desc-entry gallery-des-1" data-webny-pgdesc="1">
+                                    <p>Wear a Mask and Practice Social Distancing: Even if you feel well, stay at home as much as possible. In public, keep at least 6 feet distance from others.</p>
+                                </div>
+                                                            
+                                                                                                    
+                                <div class=" gallery-desc-entry gallery-des-2" data-webny-pgdesc="2">
+                                    <p>Wash Your Hands, Cover Your Cough: Cover your cough and sneezes. Use your elbow or a tissue. Avoid touching your eyes, nose and mouth.</p>
+                                </div>
+                                                            
+                                                                                                    
+                                <div class=" gallery-desc-entry gallery-des-3" data-webny-pgdesc="3">
+                                    <p>Take Caution with New Yorkers At-Risk: Avoid exposing the elderly and people with underlying health conditions to the virus. Instead of visiting, call. Offer help with groceries and other goods.</p>
+                                </div>
+                                                    </div>
+                        <div class="webny-gallery-fwd" tabindex="0" title="next"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+                <div class="webny-gallery-mobile-pages">
+                            
+                                                                    <div class="galpage galactive" data-galpage="1" title="gallery item 1"></div>
+                            
+                                                                    <div class="galpage " data-galpage="2" title="gallery item 2"></div>
+                            
+                                                                    <div class="galpage " data-galpage="3" title="gallery item 3"></div>
+                    </div>
+
+    </div>
+</div>
+</div>
+              <div>
+    
+  <div class="paragraph paragraph--type--webny-bio-pgtype paragraph--view-mode--default default">
+          
+<div  class="bioframe">
+      
+            <div>
+
+
+<article data-history-node-id="66" role="article" about="/dr-howard-zucker" class="webny_contact-bioframe">
+    
+
+    <div  class="bio-frame-meta">
+        <h2>
+            <span class="frame-title">
+                 
+            <div>Commissioner, New York State Department of Health</div>
+      
+            </span>
+            <span class="frame-headline">
+                
+            <div>Howard A. Zucker, M.D., J.D.</div>
+      
+            </span>
+        </h2>
+    </div>
+        
+<div  class="bio-frame-meta">
+      <div class="webny-bioframe-pro-subtitle">
+    <h4 class="bioframe-pro-subtitle">Vaccines are Safe</h4>
+</div>
+<div class="caption">
+  &quot;The vaccine is here and I have full confidence it is safe and effective. When it&#039;s your turn I urge you to get vaccinated to protect yourself and your  community from COVID-19. To stop the spread now, continue to follow all health guidelines. Together we will beat this virus.&quot;
+</div>
+  </div>
+
+    <div class="bio-frame-image">
+        
+            <div><article>
+  
+      
+            <div class="blazy" data-blazy="">
+
+
+
+                    <div class="media media--blazy media--responsive media--image">
+        <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+              <source srcset="/sites/g/files/oee1181/files/styles/bio_frame/public/media/2020/12/howardzucker_bioimage.png?itok=LPLEsvah 1x" media="all and (min-width: 769px)" type="image/png"/>
+              <source srcset="/sites/g/files/oee1181/files/styles/bio_frame/public/media/2020/12/howardzucker_bioimage.png?itok=LPLEsvah 1x" media="all and (min-width: 461px) and (max-width: 768px)" type="image/png"/>
+              <source srcset="/sites/g/files/oee1181/files/styles/bio_frame/public/media/2020/12/howardzucker_bioimage.png?itok=LPLEsvah 1x" type="image/png"/>
+            <!--[if IE 9]></video><![endif]-->
+            <img class="media__image media__element" src="/sites/g/files/oee1181/files/styles/bio_frame/public/media/2020/12/howardzucker_bioimage.png?itok=LPLEsvah" alt="Dr. Zucker head shot" title="Dr. Zucker head shot" typeof="foaf:Image" />
+
+  </picture>
+
+        
+      
+    </div>
+        
+  
+</div>
+      
+  </article>
+</div>
+      
+    </div>
+
+    
+</article>
+</div>
+      
+  </div>
+      </div>
+</div>
+              <div>    
+
+  <div class="summary-frame paragraph paragraph--type--webny-summary-pgtype paragraph--view-mode--default monochrome">
+          <div class="summaryframe-inner">
+        
+            <div class="keypoint--field-webny-summary-title">COVID-19 Vaccine Program Task Forces</div>
+      
+<div  class="keypoints">
+      
+<div  class="keypoint">
+      
+            <div class="keypoint--field-webny-summary-keypoint1">Clinical Advisory Task Force</div>
+      
+            <div class="keypoint--field-webny-summary-argument1"><p>New York’s independent COVID-19 Vaccine Clinical Advisory Task Force, comprised of leading health experts, was formed to provide an additional level of review to help build public trust in COVID-19 vaccines.</p>
+
+<p> </p>
+
+<p> </p>
+
+<p> </p>
+
+<p class="text-align-center"><a href="https://forward.ny.gov/covid-19-clinical-advisory-task-force"><span class="button">Learn More</span></a></p></div>
+      
+  </div>
+<div  class="keypoint">
+      
+            <div class="keypoint--field-webny-summary-keypoint2">Vaccine Distribution and Implementation Task Force</div>
+      
+            <div class="keypoint--field-webny-summary-argument2"><p>Comprised of experts in public health, logistics and vaccine administration, this task force will advise on the operational side of the state’s COVID-19 vaccination program.</p>
+
+<p> </p>
+
+<p> </p>
+
+<p> </p>
+
+<p class="text-align-center"><a href="https://forward.ny.gov/covid-19-vaccine-distribution-and-implementation-task-force"><span class="button">Learn More</span></a></p></div>
+      
+  </div>
+<div  class="keypoint">
+      
+            <div class="keypoint--field-webny-summary-keypoint3">Vaccine Equity Task Force</div>
+      
+            <div class="keypoint--field-webny-summary-argument3"><p>New York's Vaccine Equity Task Force was established to break down barriers to vaccination and ensure there is equitable distribution of the vaccine across the state, leaving no community behind.</p>
+
+<p> </p>
+
+<p> </p>
+
+<p> </p>
+
+<p class="text-align-center"><a href="https://forward.ny.gov/new-yorks-vaccine-equity-task-force"><span class="button">Learn More</span></a></p></div>
+      
+  </div>
+  </div>
+      </div>
+      </div>
+</div>
+          </div>
+  
+    </div>
+</div>
+
+<!-- VIEWFIELD -->
+
+  </div>
+
+    </div>
+    
+    
+  </main>
+
+  
+</div>
+  </div>
+
+     
+
+<div class="webny-global-footer">
+
+    <div id="block-sitebranding">
+        <div class="agency-name">
+            <a href="/" title="Home" rel="home">COVID-19 Vaccine</a>
+        </div>
+    </div>
+    <nav id="block-global-footer-menu"  class="footer-menu footer-horizontal">
+            
+        <ul class="global-footer-top-links">
+                        <li>
+                <a href="/accessibility" data-drupal-link-system-path="node/61">Accessibility</a>
+                            </li>
+                    <li>
+                <a href="/website-disclaimer" data-drupal-link-system-path="node/71">Disclaimer</a>
+                            </li>
+                    <li>
+                <a href="https://www.ny.gov/language-access-policy">Language Access</a>
+                            </li>
+                    <li>
+                <a href="/privacy-policy" data-drupal-link-system-path="node/76">Privacy Policy</a>
+                            </li>
+                    <li>
+                <a href="http://forward.ny.gov">NY Forward</a>
+                            </li>
+                    <li>
+                <a href="http://coronavirus.health.ny.gov">Novel Coronavirus (COVID-19)</a>
+                            </li>
+                    <li>
+                <a href="https://now.ny.gov/page/s/coronavirus-updates">Sign Up for Email Updates</a>
+                            </li>
+                    <li>
+                <a href="https://forward.ny.gov/covid-19-clinical-advisory-task-force">COVID-19 Clinical Advisory Task Force</a>
+                            </li>
+                    <li>
+                <a href="https://forward.ny.gov/covid-19-vaccine-distribution-and-implementation-task-force">Vaccine Distribution and Implementation Task Force</a>
+                            </li>
+            </ul>
+        
+
+
+    </nav>
+
+    
+</div>
+<!-- uNav interactive footer -->
+<div id="nygov-universal-footer">
+    <noscript>
+        <iframe width="100%" height="200px" src="//static-assets.ny.gov/load_global_footer/ajax?iframe=true" frameborder="0" style="border:none; overflow:hidden; width:100%; height:200px;" scrolling="no">
+            Your browser does not support iFrames
+        </iframe>
+    </noscript>
+</div>
+<!-- end uNav interactive footer -->
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/1","currentPathIsAdmin":false,"isFront":true,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"google_analytics":{"trackOutbound":true,"trackMailto":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"field_group":{"html_element":{"mode":"default","context":"view","settings":{"label":"Key Point 1","id":"","classes":"keypoint","element":"div","show_label":false,"label_element":"h3","attributes":"","effect":"none","speed":"fast"}}},"blazy":{"loadInvisible":false,"offset":100,"saveViewportOffsetDelay":50},"user":{"uid":0,"permissionsHash":"92d2db088989606042e2ed7148ff8b6ba3cffa49c49166a8825e633c55c46bf2"}}</script>
+<script src="/sites/g/files/oee1181/files/js/js_7U-_gzn9IVyZEP0UqgsRgqkaWSqy9eLt6FcIyVXYRHM.js"></script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","licenseKey":"a873d11659","applicationID":"1026055521,141443075","transactionName":"YANVY0BRC0tQW01fW1lJdlRGWQpWHnxLQ0RWCmtZXVQAZHJXV0JGWApbUkBsK1dVXW9fUUAlWFlGQgpUXV1LGwpBD1JA","queueTime":0,"applicationTime":220,"atts":"TERWFQhLGEU=","errorBeacon":"bam-cell.nr-data.net","agent":""}</script></body>
+</html>

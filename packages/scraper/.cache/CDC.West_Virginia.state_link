@@ -1,0 +1,1599 @@
+<!DOCTYPE html>
+<html lang="en" __expr-val-dir="ltr" dir="ltr">
+<head><title>
+	
+	COVID-19 Vaccine
+
+</title>
+<!-- Security Trim includes meta for prompting IE9 into compatibility mode -->
+<!-- Supresses core ans init js and css only required for admin -->
+<meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta name="description" content="Coronavirus Disease 2019 (COVID-19) is a respiratory illness caused by a novel (new) coronavirus designated SARS-CoV-2." /> 
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TKM9CWD');</script>
+<!-- End Google Tag Manager --><!-- Additionally, paste this code immediately after the opening <body> tag: -->
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TKM9CWD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+<meta property='og:description' content='' /><meta property='og:image' content='https://dhhr.wv.gov/COVID-19/PublishingImages/vaccine.jpg' /><meta property='og:title' content='COVID-19 Vaccine' /><meta name="twitter:card" content="summary_large_image" /><meta name="twitter:site" content="@WV_DHHR" /><meta name='twitter:description' content='' /><meta name='twitter:image' content='https://dhhr.wv.gov/COVID-19/PublishingImages/vaccine.jpg' /><meta name='twitter:title' content='COVID-19 Vaccine' /><script type="text/javascript">
+// <![CDATA[
+document.write('<script type="text/javascript" src="/_layouts/1033/init.js?rev=mdjxRHK1V7KZ%2BuOTcNNcmQ%3D%3D"></' + 'script>');
+document.write('<script type="text/javascript" src="/ScriptResource.axd?d=bjNzjQi8eMdNVSqFjcJsM3UN8MO4RXY8ZnEklKqD6b-mesgIDzaRR9PEbrTPARG6MFQB4vvrbmPZlj6iUXNW346vsul23OvtJx4WD4X4r8kc_3dtl35Eb7ln1TpG-KWJWOlXJrlPmqLf2ZMQ0EvxMwCmfz41&amp;t=3f4a792d"></' + 'script>');
+document.write('<script type="text/javascript" src="/_layouts/blank.js?rev=QGOYAJlouiWgFRlhHVlMKA%3D%3D"></' + 'script>');
+document.write('<script type="text/javascript" src="/ScriptResource.axd?d=T3Eisd0pGK7S6KNlEsCZRoQ1u1dnxsrIz9ABmEb1mW2-34qyObszNJjWnBQZVxrECt81FvHrqy4jOr6jNhMRE41xgvXCiFttc9hpXs6SNcgEwS49wzsuAjSnCz1Ex33vJdUm3tAIx21cHVgVkUPQy9HjrDjbrC_Rf6WCNFfBQzPR1cPH0&amp;t=638b6e4e"></' + 'script>');
+document.write('<script type="text/javascript" src="/ScriptResource.axd?d=zDhBo5rM5kjNq_TrnbWaBDqkiveXL5GBBHn4hbiwRwQyeYVLL-x-wxp9oBt1-SoAojvENCaJtuRgvU6KU4KaaJyhTbHwq59LLlQLBOMk_lRVrRv_VuxzKIEkoGdYjViApw-SrUDWo1ndeBoHEOpKaFMV-P3Jrx-244LsAWHUGXg-t6ne0&amp;t=638b6e4e"></' + 'script>');
+document.write('<script type="text/javascript" src="/ScriptResource.axd?d=hx5j2ufpDyE61kQ781hgIoE8udkds9TBl_bJRWEq3sXKne8qcHyC0rlZ066zB1-S404Xxp0lvxcWegtyujKV1Vj6cFCyhFlQzQadDRMhK3v5sPSVQDlVUoSa9FyXkgomVVBH_YQQCl1l8J2vrNAd2XrPUDKCT_mhnrbEIs1OufQEKRxW0&amp;t=638b6e4e"></' + 'script>');
+document.write('<script type="text/javascript" src="/ScriptResource.axd?d=OZeAFm8H3nq_Z967J3bKs_RenwnGM4kGOZ2eIZ3mRPyLTfeR_bKU7Fg3xEV-5jTyODa9p0bceZ1usoAmBYRflDaO_qbiouGiC0eWBO2kpgQ0G8lDVZlE1diRUaCmDmt5SuB_-Y6xc0vg_UUbw9hWHAW0hUY_Hy1KT3k9LRZA5nL-i6eGbtI3xqhR4nGjhKoS2xvj6w2&amp;t=638b6e4e"></' + 'script>');
+document.write('<script type="text/javascript" src="/ScriptResource.axd?d=qBvIeyzq6nhYuDPJlb9EYZyqlz8jaaTzj6flLj8ZHVxilkoUr1x0rPbjiYdTt6ZWsnspmr82DBOuR0UX9rEKqeCnISq4IWu0SUUxrkYzGpBnWXnm3OWjqZUnSgbHMf7LGURZOshJvGncv2ddpA0qwS0UgobCrClS7495xQymn5pOVaV24lgRLgZBYShO1TEW9MhBew2&amp;t=638b6e4e"></' + 'script>');
+document.write('<script type="text/javascript" src="/ScriptResource.axd?d=eTspuCuJFrRF8i5knxbHNbr7z6meoJ-CZCgsj3eIfi-Ss3lIoiZuVtwKjSyNiBKKlHkNceppsIZN-ZKwAg_qIE5Co_wdVyFKmKV3OW6OVPlavavImi0WUpLHqtBAGxQ9BU-bLn0TjH0XtCWBwacFPDlz2-7AgniGhsl7cUAReNHMJH7QQB-ewWixnaXqF410LI71hSFohD9fxsugXkBGWY-hkX81&amp;t=638b6e4e"></' + 'script>');
+document.write('<script type="text/javascript" src="/ScriptResource.axd?d=vQCcJvbooBMMHDOBVfPo25CVxLEyNtH6J-B5F25hT2s_ZqW4Rw4KvknbBWg3vpTBwkkyOx_UiWRlsnngrjPll4VI6bjtS8MoEYPpVOr-0v_74J7wJpX1bKJnzCDHzxgEb5raGugyzMVFzgfzMjIZcVrjdzg9eokF4YPsafphgX4OjYnE5laIH1scaMnXftwG_Hye0Q2&amp;t=638b6e4e"></' + 'script>');
+document.write('<script type="text/javascript" src="/ScriptResource.axd?d=GFOudg-spyFAybtSVfhAsOFc-uv386zcnOSaZ5v6jIxfFxBqhk_qgx5l-j35Iw6suDUjgM_wZeD4HcySprlkJRXH9bVvgMY5JL_h1kML-JGom8RYTzEOfhvzWVd9WE6gc_QmljFmNHSDtQqjZJUv2c3H8wLgktonu62YMOH8fm_mL4X4s_jVaOnK6xH_dcpDCn8szQ2&amp;t=638b6e4e"></' + 'script>');
+document.write('<script type="text/javascript" src="/ScriptResource.axd?d=tGORQ8p-54ARel514-MTYcqfG9GdVpd2t-tzAsKiDQ3Ie-jddnwA3gLTZcfFhxisTmPr7HyWjFwotIMDb9UAzwsoHhULZR6VJUqY2fSdETGakGm59ONh_9-3ue4DoQc_3_H9Bunm5UZ6QKpMZJNNGt3uBNMPd2lR5OKFu6K73BlpSKJX0&amp;t=638b6e4e"></' + 'script>');
+document.write('<script type="text/javascript" src="/ScriptResource.axd?d=bomL7tWnhxkbkITvFc7wdLnESafNUocxT-tqLF-KyY6Z3qWpcAvXepKNEDPqAjR8yrWB5zc2dAeCQKErSKyKrskuwpAax83Wd6BehnU-Mhljs3v8LQd_be-UGwZYdEseuhi1uMBPBD0l9ZbgJBe2raSp6Xf0lg7EUxcA9uuqv0ndSDtBgdtpL0XyMKs9e_ipc1S4cg2&amp;t=638b6e4e"></' + 'script>');
+document.write('<script type="text/javascript" src="/ScriptResource.axd?d=oNXZJ0d2HMHIPBoy9-aNabcNt3HElZG2q9oj2JV9l0Qt5Vz7iUcHK976TwiPl6ASWHLNVo2QCU4KiM3rpxWD6nJq9Zk8PKFwhGdyqI8flILu-Al5Atrq940Cb0StTfI-HaG_RV6I65TCJO70KYXFft892ODdYJ2JIwx_5h-YBrmWqBdo0DpWAp7YIsiXz91osKZDAw2&amp;t=638b6e4e"></' + 'script>');
+// ]]>
+</script>
+<link type="text/xml" rel="alternate" href="/COVID-19/_vti_bin/spsdisco.aspx" /><link rel="stylesheet" type="text/css" href="/Style%20Library/en-US/Themable/Core%20Styles/controls.css"/>
+<link rel="stylesheet" type="text/css" href="/_layouts/1033/styles/Themable/layouts.css?rev=ntZm7Swfe3gVlwGtlb8OdQ%3D%3D"/>
+<link rel="stylesheet" type="text/css" href="/_layouts/1033/styles/Themable/corev4.css?rev=cubXjmzpjBGT%2FzzR9ULbAw%3D%3D"/>
+<link rel="stylesheet" type="text/css" href="/Style%20Library/coronavirus.css"/>
+<meta http-equiv="Expires" content="0" />
+
+<!-- favicon -->
+<link rel="shortcut icon" href="/images/icon.ico" type="image/x-icon" />
+
+
+<!-- Custom Style Sheets -->
+<link rel="stylesheet" type="text/css" href="https://ajax.aspnetcdn.com/ajax/bootstrap/4.3.1/css/bootstrap.min.css" /><link rel="stylesheet" type="text/css" href="/Style Library/css/all.min.css" /><link rel="stylesheet" type="text/css" href="/Style%20Library/coronavirus.css" /><link rel="stylesheet" type="text/css" href="/Style Library/animate.css" />
+
+
+<!--Scripts-->
+<script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="/_catalogs/masterpage/scripts/main-coronavirus.js"></script>
+<script type="text/javascript" src="/_catalogs/masterpage/scripts/hidelead.js"></script>
+<script type="text/javascript" src="/_catalogs/masterpage/scripts/bootstrap.js"></script>
+
+<!-- Fix for Bootstrap -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+<script type="text/javascript" src="https://apps.wv.gov/scripts/redirect.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-160455912-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-160455912-1');
+</script>
+<script type="text/javascript">
+$(document).ready(function() {
+$(".navigation").hideAway();
+$('#search').css('display', 'block');
+});
+</script>
+<script type="text/javascript">
+var sdkInstance="appInsightsSDK";window[sdkInstance]="appInsights";var aiName=window[sdkInstance],aisdk=window[aiName]||function(n){var o={config:n,initialize:!0},t=document,e=window,i="script";setTimeout(function(){var e=t.createElement(i);e.src=n.url||"https://az416426.vo.msecnd.net/scripts/b/ai.2.min.js",t.getElementsByTagName(i)[0].parentNode.appendChild(e)});try{o.cookie=t.cookie}catch(e){}function a(n){o[n]=function(){var e=arguments;o.queue.push(function(){o[n].apply(o,e)})}}o.queue=[],o.version=2;for(var s=["Event","PageView","Exception","Trace","DependencyData","Metric","PageViewPerformance"];s.length;)a("track"+s.pop());var r="Track",c=r+"Page";a("start"+c),a("stop"+c);var u=r+"Event";if(a("start"+u),a("stop"+u),a("addTelemetryInitializer"),a("setAuthenticatedUserContext"),a("clearAuthenticatedUserContext"),a("flush"),o.SeverityLevel={Verbose:0,Information:1,Warning:2,Error:3,Critical:4},!(!0===n.disableExceptionTracking||n.extensionConfig&&n.extensionConfig.ApplicationInsightsAnalytics&&!0===n.extensionConfig.ApplicationInsightsAnalytics.disableExceptionTracking)){a("_"+(s="onerror"));var p=e[s];e[s]=function(e,n,t,i,a){var r=p&&p(e,n,t,i,a);return!0!==r&&o["_"+s]({message:e,url:n,lineNumber:t,columnNumber:i,error:a}),r},n.autoExceptionInstrumented=!0}return o}(
+{
+  instrumentationKey:"c8e7d292-5053-45dd-a698-33591201dd15"
+}
+);(window[aiName]=aisdk).queue&&0===aisdk.queue.length&&aisdk.trackPageView({});
+</script>
+<script src="https://www.atmrum.net/rum.js"></script>
+<script>rum.start("6ecbfd64671519c5a2376f700db9fbe3");</script>
+<link href="/WebResource.axd?d=EBncOikqRffNrAcH77qR2xxsMJoSLNt_w3EMckg8gDJzW3Ic3kOg5A7RtzWfkeAH_hAQZM3Za9-PtSkwboibP2Fe7vMUbFSm20AZBCYXuNFSJkoblDtf0-CAwtFb3_Py8K89ecpMNUBUnuJeuVGsMo4ARTUWRkWnUkrvctzPlUYOw0Hx0&amp;t=637357178075791223" type="text/css" rel="stylesheet" class="Telerik_stylesheet" /></head>
+
+
+<body onload="javascript:_spBodyOnLoadWrapper();">
+<form name="aspnetForm" method="post" action="Vaccine.aspx" id="aspnetForm">
+<input type="hidden" name="MSOWebPartPage_PostbackSource" id="MSOWebPartPage_PostbackSource" value="" />
+<input type="hidden" name="MSOTlPn_SelectedWpId" id="MSOTlPn_SelectedWpId" value="" />
+<input type="hidden" name="MSOTlPn_View" id="MSOTlPn_View" value="0" />
+<input type="hidden" name="MSOTlPn_ShowSettings" id="MSOTlPn_ShowSettings" value="False" />
+<input type="hidden" name="MSOGallery_SelectedLibrary" id="MSOGallery_SelectedLibrary" value="" />
+<input type="hidden" name="MSOGallery_FilterString" id="MSOGallery_FilterString" value="" />
+<input type="hidden" name="MSOTlPn_Button" id="MSOTlPn_Button" value="none" />
+<input type="hidden" name="__REQUESTDIGEST" id="__REQUESTDIGEST" value="noDigest" />
+<input type="hidden" name="MSOSPWebPartManager_DisplayModeName" id="MSOSPWebPartManager_DisplayModeName" value="Browse" />
+<input type="hidden" name="MSOSPWebPartManager_ExitingDesignMode" id="MSOSPWebPartManager_ExitingDesignMode" value="false" />
+<input type="hidden" name="MSOWebPartPage_Shared" id="MSOWebPartPage_Shared" value="" />
+<input type="hidden" name="MSOLayout_LayoutChanges" id="MSOLayout_LayoutChanges" value="" />
+<input type="hidden" name="MSOLayout_InDesignMode" id="MSOLayout_InDesignMode" value="" />
+<input type="hidden" name="_wpSelected" id="_wpSelected" value="" />
+<input type="hidden" name="_wzSelected" id="_wzSelected" value="" />
+<input type="hidden" name="MSOSPWebPartManager_OldDisplayModeName" id="MSOSPWebPartManager_OldDisplayModeName" value="Browse" />
+<input type="hidden" name="MSOSPWebPartManager_StartWebPartEditingName" id="MSOSPWebPartManager_StartWebPartEditingName" value="false" />
+<input type="hidden" name="MSOSPWebPartManager_EndWebPartEditing" id="MSOSPWebPartManager_EndWebPartEditing" value="false" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUBMA9kFgJmD2QWAgIBD2QWBAIBD2QWDmYPZBYCZg9kFgICAQ8WAh4TUHJldmlvdXNDb250cm9sTW9kZQspiAFNaWNyb3NvZnQuU2hhcmVQb2ludC5XZWJDb250cm9scy5TUENvbnRyb2xNb2RlLCBNaWNyb3NvZnQuU2hhcmVQb2ludCwgVmVyc2lvbj0xNC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj03MWU5YmNlMTExZTk0MjljAWQCCA8WAh8ACysEAWQCCw8WAh8ACysEAWQCDg8WAh8ACysEAWQCEw8WAh8ACysEAWQCFg8WAh8ACysEAWQCGQ8WAh8ACysEAWQCAw9kFggCBA9kFgIFJmdfOTQyN2NhOTVfZjc5M180ZTg1XzhjYjBfMTg5MmQwMTg5M2UyD2QWBGYPFgIeB1Zpc2libGVoZAIBDxYCHwFoZAIID2QWAgIBD2QWBGYPZBYCAgEPFgIfAWgWAmYPZBYEAgIPZBYGAgEPFgIfAWhkAgMPFggeE0NsaWVudE9uQ2xpY2tTY3JpcHQFdWphdmFTY3JpcHQ6Q29yZUludm9rZSgnVGFrZU9mZmxpbmVUb0NsaWVudFJlYWwnLDEsIDM5LCAnaHR0cHM6XHUwMDJmXHUwMDJmZGhoci53di5nb3ZcdTAwMmZDT1ZJRC0xOScsIC0xLCAtMSwgJycsICcnKR4YQ2xpZW50T25DbGlja05hdmlnYXRlVXJsZB4oQ2xpZW50T25DbGlja1NjcmlwdENvbnRhaW5pbmdQcmVmaXhlZFVybGQeDEhpZGRlblNjcmlwdAUiVGFrZU9mZmxpbmVEaXNhYmxlZCgxLCAzOSwgLTEsIC0xKWQCBQ8WAh8BaGQCAw8PFgoeCUFjY2Vzc0tleQUBLx4PQXJyb3dJbWFnZVdpZHRoAgUeEEFycm93SW1hZ2VIZWlnaHQCAx4RQXJyb3dJbWFnZU9mZnNldFhmHhFBcnJvd0ltYWdlT2Zmc2V0WQLrA2RkAgEPZBYEAgMPZBYCAgEPEBYCHwFoZBQrAQBkAgUPZBYCZg9kFgJmDxQrAANkZGRkAg4PFCsAAhQrAAIPFgYeC18hRGF0YUJvdW5kZx4SUmVzb2x2ZWRSZW5kZXJNb2RlCylyVGVsZXJpay5XZWIuVUkuUmVuZGVyTW9kZSwgVGVsZXJpay5XZWIuVUksIFZlcnNpb249MjAxNC4xLjIyNS4zNSwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xMjFmYWU3ODE2NWJhM2Q0AR4XRW5hYmxlQWpheFNraW5SZW5kZXJpbmdoZA8UKwAIFCsAAg8WCB4EVGV4dAUGUHVibGljHgtOYXZpZ2F0ZVVybAUgL0NPVklELTE5L1BhZ2VzL2NvbW11bml0aWVzLmFzcHgeBVZhbHVlBQZQdWJsaWMeB1Rvb2xUaXBlZBAWAWYWARQrAAIPFggfDgU0V2VzdCBWaXJnaW5pYSBTdHJvbmcgU3VtbWVyIEZvb2QgQXNzaXN0YW5jZSBQcm9ncmFtcx8PBUkvQ09WSUQtMTkvUGFnZXMvV2VzdC1WaXJnaW5pYS1TdHJvbmctU3VtbWVyLUZvb2QtQXNzaXN0YW5jZS1Qcm9ncmFtcy5hc3B4HxAFNFdlc3QgVmlyZ2luaWEgU3Ryb25nIFN1bW1lciBGb29kIEFzc2lzdGFuY2UgUHJvZ3JhbXMfEWVkZA8WAWYWAQVzVGVsZXJpay5XZWIuVUkuUmFkTWVudUl0ZW0sIFRlbGVyaWsuV2ViLlVJLCBWZXJzaW9uPTIwMTQuMS4yMjUuMzUsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49MTIxZmFlNzgxNjViYTNkNBQrAAIPFgwfDgUQQ09WSUQtMTkgVmFjY2luZR8PBRwvQ09WSUQtMTkvUGFnZXMvVmFjY2luZS5hc3B4HxAFEENPVklELTE5IFZhY2NpbmUfEWUeCENzc0NsYXNzBQlybUZvY3VzZWQeBF8hU0ICAmRkFCsAAg8WCB8OBQlQcm92aWRlcnMfDwUnL0NPVklELTE5L1BhZ2VzL1Byb3ZpZGVyLVJlc291cmNlcy5hc3B4HxAFCVByb3ZpZGVycx8RZWRkFCsAAg8WCB8OBQxMb2NhbCBIZWFsdGgfDwUgL0NPVklELTE5L1BhZ2VzL2hlYWx0aC1kZXB0LmFzcHgfEAUMTG9jYWwgSGVhbHRoHxFlZGQUKwACDxYIHw4FFlNjaG9vbHMgJiBVbml2ZXJzaXRpZXMfDwUcL0NPVklELTE5L1BhZ2VzL1NjaG9vbHMuYXNweB8QBRZTY2hvb2xzICYgVW5pdmVyc2l0aWVzHxFlZGQUKwACDxYIHw4FBlRyYXZlbB8PBR4vQ09WSUQtMTkvUGFnZXMvdHJhdmVsZXJzLmFzcHgfEAUGVHJhdmVsHxFlZGQUKwACDxYIHw4FEUJlaGF2aW9yYWwgSGVhbHRoHw8FJi9DT1ZJRC0xOS9QYWdlcy9CZWhhdmlvcmFsLUhlYWx0aC5hc3B4HxAFEUJlaGF2aW9yYWwgSGVhbHRoHxFlZGQUKwACDxYIHw4FFUZyZWUgQ09WSUQtMTkgVGVzdGluZx8PBRwvQ09WSUQtMTkvUGFnZXMvdGVzdGluZy5hc3B4HxAFFUZyZWUgQ09WSUQtMTkgVGVzdGluZx8RZWRkDxQrAQhmZmZmZmZmZhYBBXNUZWxlcmlrLldlYi5VSS5SYWRNZW51SXRlbSwgVGVsZXJpay5XZWIuVUksIFZlcnNpb249MjAxNC4xLjIyNS4zNSwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xMjFmYWU3ODE2NWJhM2Q0ZBYQZg8PFggfDgUGUHVibGljHw8FIC9DT1ZJRC0xOS9QYWdlcy9jb21tdW5pdGllcy5hc3B4HxAFBlB1YmxpYx8RZWQWAmYPDxYIHw4FNFdlc3QgVmlyZ2luaWEgU3Ryb25nIFN1bW1lciBGb29kIEFzc2lzdGFuY2UgUHJvZ3JhbXMfDwVJL0NPVklELTE5L1BhZ2VzL1dlc3QtVmlyZ2luaWEtU3Ryb25nLVN1bW1lci1Gb29kLUFzc2lzdGFuY2UtUHJvZ3JhbXMuYXNweB8QBTRXZXN0IFZpcmdpbmlhIFN0cm9uZyBTdW1tZXIgRm9vZCBBc3Npc3RhbmNlIFByb2dyYW1zHxFlZGQCAQ8PFgwfDgUQQ09WSUQtMTkgVmFjY2luZR8PBRwvQ09WSUQtMTkvUGFnZXMvVmFjY2luZS5hc3B4HxAFEENPVklELTE5IFZhY2NpbmUfEWUfEgUJcm1Gb2N1c2VkHxMCAmRkAgIPDxYIHw4FCVByb3ZpZGVycx8PBScvQ09WSUQtMTkvUGFnZXMvUHJvdmlkZXItUmVzb3VyY2VzLmFzcHgfEAUJUHJvdmlkZXJzHxFlZGQCAw8PFggfDgUMTG9jYWwgSGVhbHRoHw8FIC9DT1ZJRC0xOS9QYWdlcy9oZWFsdGgtZGVwdC5hc3B4HxAFDExvY2FsIEhlYWx0aB8RZWRkAgQPDxYIHw4FFlNjaG9vbHMgJiBVbml2ZXJzaXRpZXMfDwUcL0NPVklELTE5L1BhZ2VzL1NjaG9vbHMuYXNweB8QBRZTY2hvb2xzICYgVW5pdmVyc2l0aWVzHxFlZGQCBQ8PFggfDgUGVHJhdmVsHw8FHi9DT1ZJRC0xOS9QYWdlcy90cmF2ZWxlcnMuYXNweB8QBQZUcmF2ZWwfEWVkZAIGDw8WCB8OBRFCZWhhdmlvcmFsIEhlYWx0aB8PBSYvQ09WSUQtMTkvUGFnZXMvQmVoYXZpb3JhbC1IZWFsdGguYXNweB8QBRFCZWhhdmlvcmFsIEhlYWx0aB8RZWRkAgcPDxYIHw4FFUZyZWUgQ09WSUQtMTkgVGVzdGluZx8PBRwvQ09WSUQtMTkvUGFnZXMvdGVzdGluZy5hc3B4HxAFFUZyZWUgQ09WSUQtMTkgVGVzdGluZx8RZWRkAhAPZBYEAgUPFgIfAAsrBAFkAgkPFgIfAAsrBAFkGAEFHl9fQ29udHJvbHNSZXF1aXJlUG9zdEJhY2tLZXlfXxYBBQ5jdGwwMCRSYWRNZW51McpmfemhQ0w+A46ii7Z42Xy5NCz8" />
+
+
+<script type="text/javascript">
+//<![CDATA[
+var MSOWebPartPageFormName = 'aspnetForm';
+var g_presenceEnabled = true;
+var g_wsaEnabled = false;
+var g_wsaLCID = 1033;
+var g_wsaSiteTemplateId = 'CMSPUBLISHING#0';
+var g_wsaListTemplateId = 850;
+var _fV4UI=true;var _spPageContextInfo = {webServerRelativeUrl: "\u002fCOVID-19", webLanguage: 1033, currentLanguage: 1033, webUIVersion:4,pageListId:"{4ab7029e-bb9d-4c72-aeb6-c7eb0af44be1}",pageItemId:17, alertsEnabled:true, siteServerRelativeUrl: "\u002f", allowSilverlightPrompt:'True'};document.onreadystatechange=fnRemoveAllStatus; function fnRemoveAllStatus(){removeAllStatus(true)};var _spWebPartComponents = new Object();//]]>
+</script>
+
+<script src="/_layouts/blank.js?rev=QGOYAJlouiWgFRlhHVlMKA%3D%3D" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(DeferWebFormInitCallback) == 'function') DeferWebFormInitCallback();//]]>
+</script>
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="7160338A" />
+
+
+
+<noscript><div class='noindex'>You may be trying to access this site from a secured browser on the server. Please enable scripts and reload this page.</div></noscript>
+  
+<!-- ribbon -->  
+
+ 
+<!-- Page Content -->
+
+<!-- Accessibility -->
+<div class="skip"><a href="#nav" class="hidden-print">Skip to Navigation</a></div>
+<div class="skip"><a href="#readmaincontent" class="hidden-print">Skip to Main Content</a></div>
+
+<!-- Code For Website Starts Here -->
+<div class="fullsite">
+
+
+
+
+
+
+
+<!--Enterprise Header-->
+<div class="headerbkg d-none d-md-block">
+<div class="container-fluid">
+<div class="row">
+
+
+<div class="col-6 col-sm-8 d-none d-sm-block whitelink">
+<a href="https://www.wv.gov" target="_blank"><img class="wvlogo" src="/images/coronavirus/wvgovlogo.png" alt="The Official Website of the State of West Virginia" /></a>
+<a class="whitelink" href="https://www.wv.gov/agencies" target="_blank">Agency Directory</a> | <a class="whitelink" target="_blank" href="https://www.wv.gov/pages/state-phone-directory.aspx">Phone Directory</a> | <a class="whitelink" target="_blank" href="https://www.wv.gov/services">Online Services</a>
+</div>
+
+<div class="col-6 col-sm-4 d-none d-sm-block whitelink">
+<div class="hotline">COVID-19 Vaccine Info Line: <a href="tel:+18337340965">1-833-734-0965</a><br/>
+COVID-19 Hotline: <a href="tel:+18008874304">1-800-887-4304</a></div>
+</div>
+
+
+</div></div></div>
+<!--End Enterprise Header-->
+
+
+<!--Sidebar-->
+<div class="stickySettings">
+
+<div class="stickyLink">
+<a href="https://www.facebook.com/wv.dhhr/" target="_blank" title="Facebook"><img src="/images/coronavirus/facebook.png" alt="Facebook"></a></div>
+
+<div class="stickyLink">
+<a href="https://twitter.com/WV_DHHR" target="_blank" title="Twitter"><img alt="Twitter" src="/images/coronavirus/twitter.png"></a></div>
+
+<div class="stickyLink">
+<a href="https://www.youtube.com/channel/UCr26TniHeEDCj9vmEnpiN8A" target="_blank" title="YouTube"><img alt="YouTube" src="/images/coronavirus/youtube.png"></a></div>
+
+
+<div class="stickyLink"><a href="https://dhhr.wv.gov/_layouts/feed.aspx?xsl=1&web=%2FCOVID%2D19&page=7dc4b362-3a85-4dc6-b0dd-ebd1870dd2d1&wp=781b7fbe-36ee-41a3-8fcd-d2ddd1ebcfef" target="_blank" title="RSS Feed"><img src="/images/coronavirus/rss.png" alt="RSS Feed"></a>
+</div>
+
+</div>
+<!--End Sidebar-->
+
+
+<!-- Top Heading and Nav -->
+<div class="imgbkg d-md-block">
+
+<!--Alerts-->
+
+
+<!--End Alerts-->
+
+<div class="container-fluid">
+<div class="row">
+<div class="d-none d-md-block col-md-9 col-lg-10 heading">
+
+
+
+<a href="https://dhhr.wv.gov/" target="_blank" class="dhhrlogo"><img src="/images/coronavirus/dhhr.png" alt="Department of Health and Human Resources"></a><a href="/COVID-19" class="covidlogo"><img src="/images/coronavirus/heading.png" alt="Coronavirus Disease 2019 (COVID-19)" /></a>
+</div>
+
+<div class="d-none d-md-block col-md-3 col-lg-2">
+<a href="/COVID-19/Pages/Vaccine.aspx" class="btn vaccbtnhide" style="font-size:1.3em; margin-top:10px; width:100%;">Vaccine<br/>Pre-Registration&nbsp;<i class="fas fa-caret-right"></i></a>
+
+<a href="/COVID-19/pages/testing.aspx" class="btn" style="font-size:1.3em; margin-top:10px; width:100%;">Free Testing&nbsp;<i class="fas fa-caret-right"></i></a>
+</div>
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Navigation-->
+<div class="navbkg">
+
+<div class="d-block d-md-none" style="position:absolute; z-index:9998!important; text-align:right; width:100%; margin-top:12px; right:15px; display:block;">
+<a href="https://www.wv.gov" target="_blank"><img class="wvlogo" src="/images/coronavirus/wvgovlogo.png" alt="The Official Website of the State of West Virginia" /></a></div>
+  
+
+<div class="d-block d-md-none whitelink" style="position:absolute; z-index:9998!important; text-align:center; width:100%; margin-top:12px; right:15px; display:block;">
+COVID-19 Vaccine Info Line:<br/><a href="tel:+18337340965">1-833-734-0965</a><br/>
+
+Hotline: <a href="tel:+18008874304">1-800-887-4304</a></div>
+  
+
+      
+<div class="menumargin">
+<div class="navigation">
+
+<div class="control"><img src="/images/coronavirus/mobile_menu.png" alt="Navigation Menu" /></div>
+<div id="menu">
+<div class="container-fluid hidden-print">
+<div class="row navbkg">    
+<div class="col-12"> 
+<div id="content">
+<a name="nav"></a>
+
+<div id="ctl00_RadMenu1" class="RadMenu RadMenu_WVI" ExpandMode="SingleExpandedItem ">
+	<!-- 2014.1.225.35 --><ul class="rmRootGroup rmHorizontal">
+		<li class="rmItem rmFirst"><a class="rmLink rmRootLink" href="/COVID-19/Pages/communities.aspx"><span class="rmText">Public</span></a><div class="rmSlide">
+			<ul class="rmVertical rmGroup rmLevel1">
+				<li class="rmItem rmFirst rmLast"><a class="rmLink" href="/COVID-19/Pages/West-Virginia-Strong-Summer-Food-Assistance-Programs.aspx"><span class="rmText">West Virginia Strong Summer Food Assistance Programs</span></a></li>
+			</ul>
+		</div></li><li class="rmItem "><a class="rmLink rmRootLink rmFocused" href="/COVID-19/Pages/Vaccine.aspx"><span class="rmText">COVID-19 Vaccine</span></a></li><li class="rmItem "><a class="rmLink rmRootLink" href="/COVID-19/Pages/Provider-Resources.aspx"><span class="rmText">Providers</span></a></li><li class="rmItem "><a class="rmLink rmRootLink" href="/COVID-19/Pages/health-dept.aspx"><span class="rmText">Local Health</span></a></li><li class="rmItem "><a class="rmLink rmRootLink" href="/COVID-19/Pages/Schools.aspx"><span class="rmText">Schools & Universities</span></a></li><li class="rmItem "><a class="rmLink rmRootLink" href="/COVID-19/Pages/travelers.aspx"><span class="rmText">Travel</span></a></li><li class="rmItem "><a class="rmLink rmRootLink" href="/COVID-19/Pages/Behavioral-Health.aspx"><span class="rmText">Behavioral Health</span></a></li><li class="rmItem rmLast"><a class="rmLink rmRootLink" href="/COVID-19/Pages/testing.aspx"><span class="rmText">Free COVID-19 Testing</span></a></li>
+	</ul><input id="ctl00_RadMenu1_ClientState" name="ctl00_RadMenu1_ClientState" type="hidden" />
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<!-- End Navigation -->
+
+<!--Mobile Header-->
+<div class="container-fluid">
+<div class="row">
+<div class="d-md-none col-sm-12 heading">
+<a href="https://dhhr.wv.gov/" target="_blank" class="dhhrlogo"><img src="/images/coronavirus/dhhr.png" alt="Department of Health and Human Resources"></a><a href="/COVID-19" class="covidlogo"><img src="/images/coronavirus/heading.png" alt="Coronavirus Disease 2019 (COVID-19)" /></a>
+</div>
+<div class="d-md-none col-sm-12">
+<a href="/COVID-19/Pages/Vaccine.aspx" class="btn vaccbtnhide" style="font-size:1.3em; width:100%;">Vaccine<br/>Pre-Registration&nbsp;<i class="fas fa-caret-right"></i></a>
+
+<a href="/COVID-19/pages/testing.aspx" class="btn" style="font-size:1.3em; width:100%;">Free Testing&nbsp;<i class="fas fa-caret-right"></i></a></div>
+</div>
+</div>
+
+<!--End Mobile Header-->
+
+
+
+
+<!--Search-->
+
+<div class="container-fluid">
+<div class="row">
+<div class="col-12 col-md-12 col-lg-12">
+<div id="search">
+<div id="searchBox">
+
+<script type="text/javascript">
+$(document).ready(function() { 
+//attach function to input and make text grayed out on page load 
+textReplacement($('#GoogleSearch').css("color", "black")); 
+}); 
+// the function: 
+
+function textReplacement(input){ //input focus text function 
+    var originalvalue = input.val(); 
+    input.focus( function(){ 
+        if( $.trim(input.val()) == originalvalue ){ input.val('').css("color", "black"); } 
+    }); 
+    input.blur( function(){ 
+        if( $.trim(input.val()) == '' ){ input.val(originalvalue).css("color", "black"); } 
+    }); 
+} 
+</script>
+<label for="GoogleSearch" class="obscure">Search this site</label> 
+<input onkeypress="javascript:OverrrideForms(this);" type="text" id="GoogleSearch" class="GoogleSearchTextBox hidden-print" placeholder="Search this site" style="vertical-align:top;"/><input name='btnG' onclick="javascript:SearchGoogleAlternate();return false;" type='image' value='Search' src='/images/coronavirus/search.png' style="vertical-align:top;" class="searchbtn" alt='Search'/><!-- go Button -->
+</div>
+</div></div></div>
+
+<!-- End Search --></div>
+
+
+
+</div>
+</div>
+<!--End Top Heading and Nav-->
+
+
+
+
+
+
+
+
+
+<!--Main Content-->
+
+      
+
+<style>
+.vaccbtnhide {
+	display:none!important;
+}
+</style>
+
+
+
+<!--Main Content-->
+<a name="readmaincontent"></a>
+
+<div class="container-fluid contpad">
+<div class="row">
+<div class="col-12">
+<div id="breadcrumbs">
+				<span id="ctl00_PlaceHolderMain_SiteMapPath1"><a href="#ctl00_PlaceHolderMain_SiteMapPath1_SkipLink"><img alt="Skip Navigation Links" height="0" width="0" src="/WebResource.axd?d=49_k3zeUhoVt7O_BpeLX0ceuE-xbKCb4A47JWWWlhdgG2hlELZ1dp7HMw6Nf-tq-QLOK9LO09NeFxqshRPnprBb8js81&amp;t=637291921376503783" border="0" /></a><span><a title="West Virginia Department of Health and Human Resources home page. Bureaus: Behavioral Health &amp;amp; Health Facilities, Child Support Enforcement, Children &amp;amp; Families, Medical Services and Public Health." href="/Pages/default.aspx">WVDHHR</a></span><span> &gt; </span><span><a href="/COVID-19/Pages/default.aspx">Coronavirus Disease 2019 (COVID-19)</a></span><span> &gt; </span><span>COVID-19 Vaccine</span><a id="ctl00_PlaceHolderMain_SiteMapPath1_SkipLink"></a></span>
+<!--end breadcrumbs--></div>
+
+<h1><span>COVID-19 Vaccine</span></h1>
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+	<tr>
+		<td id="MSOZoneCell_WebPartWPQ1" valign="top" class="s4-wpcell-plain"><table class="s4-wpTopTable" border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tr>
+				<td valign="top"><div WebPartID="9427ca95-f793-4e85-8cb0-1892d01893e2" HasPers="false" id="WebPartWPQ1" width="100%" class="ms-WPBody" allowDelete="false" style="" ><style>
+	.center {
+		text-align: center;
+	}
+	h1,
+	h2,
+	h3,
+	h4,
+	h5 {
+		font-weight: 700;
+	}
+	iframe.clinic-list {
+		width: 100%;
+		min-height: 320px;
+		height: 50vh;
+		border: 2px solid #999;
+		border-radius: 15px;
+		margin: 20px 0px;
+	}
+	img.cdc {
+		width: 100%;
+	}
+</style>
+
+<!-- Header -->
+<div class="container">
+
+	<p></p>
+
+
+
+	<div class="alert alert-danger" role="alert">
+		<strong>Alert:</strong>  <a href="/News/2021/Pages/COVID-19-Vaccination-Clinics-in-all-55-West-Virginia-Counties-for-Residents-Age-65-and-Older-Feb.-10-13.aspx">Click here</a> for information regarding this week&#39;s free vaccination clinics for West Virginians who are age 65 years of age and older.
+	</div>
+
+
+
+	<p></p>
+	<p class="Default" style="text-align: justify;"><span style="font-size: 11pt;">Due
+to possible inclement weather, please check local news media, social
+media, and </span><a href="http://www.vaccinate.wv.gov/"><span style="font-size: 11pt;">www.vaccinate.wv.gov</span></a><span style="font-size: 11pt;"> for any
+changes or delays. Counties that have alerted this office of&#160;changes&#160;to their&#160;events include Cabell,&#160;Grant,
+Hampshire, Jefferson, Kanawha, Lincoln, Marion, McDowell, Mingo, Nicholas, Pendleton,
+Pleasants, Pocahontas,&#160;Preston, Putnam, Raleigh, Ritchie, and Wood counties. Please always check with your local venue for last minute changes.</span></p>
+<hr/>
+	<p></p>
+
+
+	<div class="row">
+
+		<div class="col-sm center">
+			<p><a class="btn btn-primary align-self-center" href="/News/2021/Pages/COVID-19-Vaccination-Clinics-in-all-55-West-Virginia-Counties-for-Residents-Age-65-and-Older-Feb.-10-13.aspx" role="button">Vaccination Clinic Information</a>
+			</p>
+		</div>
+		<div class="col-sm center">
+			<p><a class="btn btn-primary align-self-center" href="#timeline" role="button">Distribution Timeline</a>
+			</p>
+		</div>
+		<div class="col-sm center">
+			<p><a class="btn btn-primary align-self-center" href="#faq" role="button">Frequently Asked Questions</a>
+			</p>
+		</div>
+		<div class="col-sm center">
+			<p><a class="btn btn-primary align-self-center" href="#reg" role="button">Vaccine Pre-Registration</a>
+			</p>
+		</div>
+
+	</div>
+
+</div>
+
+<!-- Body -->
+
+<div class="container">
+	<div class="row">
+		<div class="col-12 col-md-8">
+<div>
+	<!-- Slider  -->
+</div>
+<div id="carouselExampleIndicators" class="carousel slide pointer-event" data-ride="carousel">
+	<ol class="carousel-indicators">
+		<li data-target="#carouselExampleIndicators" data-slide-to="0"></li>
+		<li data-target="#carouselExampleIndicators" data-slide-to="1" class="active"></li>
+		<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+	</ol>
+	<div class="carousel-inner">
+		<div class="carousel-item">
+			<a href="tel:1-833-734-0965">
+				<img class="d-block w-100" src="https://wvvaccine.s3.amazonaws.com/20_CRHD_0006_VaccineHotline_Powerpoint-final.jpg" title="Call 1-833-734-0965 for COVID-19 Vaccine Information" alt="Call 1-833-734-0965 for COVID-19 Vaccine Information"/>
+			</a>&#160;</div>
+		<div class="carousel-item active">
+			<img class="d-block w-100" src="https://wvvaccine.s3.amazonaws.com/CovidHero-V3_copy.jpg" title="COVID-19 Vaccine Priorities: 1. Reduce the number of deaths. 2. Reduce hospital admittance. 3. Protect the most vulnerable. 4. Maintain hospital capacity." alt="COVID-19 Vaccine Priorities: 1. Reduce the number of deaths. 2. Reduce hospital admittance. 3. Protect the most vulnerable. 4. Maintain hospital capacity."/>&#160;
+		</div>
+		&#160;</div>
+	<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		<span class="sr-only">Previous</span>
+	</a>
+	<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+		<span class="sr-only">Next</span>
+	</a>
+</div>
+<div>
+
+
+</div>
+<hr/>
+<div>
+</div>
+<div>
+
+</div>
+<h2 id="reg"><span>COVID-19 Vaccination Registration</span></h2>
+<div>
+
+</div>
+<p class="p1" style="margin-bottom: 5px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal; font-family: arial; color: rgb(25, 28, 31);"><span class="s1" style="text-decoration-line: underline;"><b><br/></b></span>
+</p>
+<p class="p1" style="margin-bottom: 5px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal; font-family: arial; color: rgb(25, 28, 31);"><span class="s1" style="text-decoration-line: underline;"><b>ALL </b></span><b>West Virginians over the age of 16 are encouraged to pre-register through the West Virginia COVID-19 Vaccine Registration System.<span class="Apple-converted-space">&#160;</span></b>
+</p>
+<div>
+</div>
+<p class="p1" style="margin-bottom: 5px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal; font-family: arial; color: rgb(25, 28, 31);"><b><span class="Apple-converted-space"><br/></span></b>
+</p>
+<div>
+</div>
+<p class="p1" style="margin-bottom: 5px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal; font-family: arial; color: rgb(25, 28, 31);"><b>Vaccine supplies are limited, so pre-registration does not mean immediate access to vaccination. Pre-registration offers West Virginians the opportunity to receive real-time updates on vaccine availability and schedule an appointment when available as vaccine supplies allow.</b>
+</p>
+<div>
+</div>
+<p class="p1" style="margin-bottom: 5px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal; font-family: arial; color: rgb(25, 28, 31);"><b><br/></b>
+</p>
+<div>
+</div>
+<p class="p1" style="margin-bottom: 5px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal; font-family: arial; color: rgb(25, 28, 31);">The state&#39;s driving principles for COVID-19 vaccinations are to build community immunity in West Virginia by protecting our most vulnerable, reducing deaths, reducing hospitalizations, and maintaining our critical services such as acute
+	care.</p>
+<div>
+</div>
+<p class="p1" style="margin-bottom: 5px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal; font-family: arial; color: rgb(25, 28, 31);">
+	<br/>
+</p>
+<div>
+</div>
+<p></p>
+<div>
+</div>
+<p class="p2" style="margin-bottom: 7.5px; text-align: justify; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal; font-family: arial; color: rgb(0, 0, 0);"><b>Note: </b>You are encouraged to<b> </b>create an account in this system even if you have received a first dose of the vaccine or you are already on a waitlist through a local health department or healthcare provider.<b>&#160;</b>
+</p>
+<div>
+</div>
+<p class="p2" style="margin-bottom: 7.5px; text-align: justify; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal; font-family: arial; color: rgb(0, 0, 0);"><b><br/></b>
+</p>
+<div>
+</div>
+<p class="p1" style="margin-bottom: 5px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal; font-family: arial; color: rgb(25, 28, 31);">Please click the “Sign Up Here” button below to input your information for pre-registration.*<span class="Apple-converted-space">&#160;</span>
+</p>
+<div>
+</div>
+<p class="p1" style="margin-bottom: 5px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal; font-family: arial; color: rgb(25, 28, 31);">
+	<br/>
+</p>
+<p class="p1" style="margin-bottom: 5px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal; font-family: arial; color: rgb(25, 28, 31);">West Virginians who need assistance with registration for any reason should call our COVID-19 Vaccine Info Line for help at 1-833-734-0965. The info line is open Monday-Friday 8 a.m. to 6 p.m., and Saturday 9 a.m. to 5 p.m.
+	<br/>
+</p>
+<div>
+</div>
+<p class="p2" style="margin-bottom: 7.5px; text-align: justify; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal; font-family: arial; color: rgb(0, 0, 0);">
+	<br/>
+</p>
+<div>
+</div>
+<ul>
+	<a class="btn btn-primary" href="https://member.everbridge.net/747122446041089/login" title="Vaccination Pre-Registration" target="_blank">Sign Up Here</a>
+	<p></p>
+	<p class="p1" style="margin-bottom: 5px; margin-left: 36px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal; font-family: arial; color: rgb(25, 28, 31);"></p>
+</ul>
+
+<div dir="ltr" style="text-align: left;"><span style="color: rgb(25, 28, 31); font-family: arial;">*Note: DHHR will never share or distribute your personal information, unless required to do so by law. Additionally, DHHR will never use your information for any purpose other than to send notifications or information pertaining to COVID-19 pandemic response in West Virginia.</span>
+</div>
+
+			<p></p>
+			<div dir="ltr" style="text-align: left;">
+			</div>
+			<div dir="ltr" style="text-align: left;">
+				<p class="p1" style="margin-bottom: 5px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal; font-family: arial; color: rgb(25, 28, 31);"><b>Thank you for your interest in COVID-19 vaccination to protect yourselves, your family, and our community.</b>
+				</p>
+			</div>
+			<div>
+			</div>
+			<hr/>
+			<div>
+			</div>
+			<p></p>
+			<div>
+
+				<!-- Clinic List -->
+				<!-- <p>
+		  <h2>Current Clinic Sites</h2>
+		  <iframe  class="clinic-list" src="https://vaccine.wvfreetesting.com/"></iframe>
+		  </p> -->
+
+			</div>
+			<div title="WHEN CAN I GET THE VACCINE?" data-toggle="collapse" href="#when" role="button" aria-expanded="false" aria-controls="when" class="collapsed">
+				<h2>+ When can I get the vaccine?</h2>
+			</div>
+			<div>
+
+				<em>Click to Expand</em>
+
+			</div>
+			<p></p>
+			<div>
+
+			</div>
+			<div class="collapse" id="when">
+				<ul>
+					<li>
+						65 years of age and older population
+						<ul>
+							<li>There will be ongoing supply of vaccines available through community vaccination events for West Virginians age 65 and older. Clinics will be announced each week with specific dates, times, locations and registration requirements
+								that are necessary for each site.</li>
+							<li>As vaccine supply increases, there will be more vaccines available to the general population based on age.</li>
+						</ul>
+					</li>
+					<li>Community clinics are operating throughout the state to offer vaccination to our identified vulnerable and priority populations. Clinics will continue to expand with more locations and venues each week. All counties are planning so
+						that they are ready to hold events as vaccine supply increases.</li>
+					<li><strong>Community vaccination clinics are open to any West Virginian</strong> regardless of county of residence as long as they fit the identified vulnerable and/or priority population being served at that time and have registered in
+						advance.</li>
+					<li>
+						All counties and community partners play an integral role in getting vaccines to those West Virginians who choose to get vaccinated. This all-of-West Virginia approach is made possible by valuable local partnerships.
+						<ul>
+							<li>As a reminder, due to high traffic volume at websites and phone lines, eligible residents may encounter delays scheduling appointments to receive the COVID-19 vaccine. Please try back later. Appointment availability is limited
+								but will continue to open up slots as they become available. Community vaccination clinics are maintaining waitlists once registration is full, so West Virginians 65+ are encouraged to add their names to the list.</li>
+						</ul>
+					</li>
+					<li>
+						Remainder of general population:
+						<ul>
+							<li>West Virginia is dedicated to ensuring that all West Virginians have access to a COVID-19 vaccination as soon as possible.</li>
+							<li>The estimated timeframe for the general population is March - October at this time, which is based on the federal supply.</li>
+							<li>The supply of COVID-19 vaccines remains limited nationally and the state only receives around 23,000 doses each week at this time. The state remains dedicated to making sure that vaccines are available to every West Virginian
+								as soon as possible.</li>
+						</ul>
+					</li>
+					<li>
+						Healthcare worker (Physician&#39;s office, medical clinic, Dentists, etc.)
+						<ul>
+							<li>In an effort to expedite access and availability for critical healthcare workforce and priority populations across the state to receive the COVID-19 vaccine, the West Virginia Joint Interagency Task Force (JIATF) for COVID-19
+								Vaccines has opened up availability to these population groups via community vaccination clinics beginning this week on THIS FRIDAY (1/22/2021) and THIS SATURDAY (1/23/2021). If you are unable to attend an event this week,
+								there will be additional opportunities to schedule in future weeks.</li>
+							<li>Healthcare workers should have received an email in from <strong>no-reply@mail.vams.cdc.gov</strong> on Wednesday, Jan. 20, indicating that they are now eligible to schedule a vaccination appointment. Individuals must follow
+								the link in the email to register in the VAMS system and set up an account. If they are unable to locate the email, it is important to check spam/junk email folders.</li>
+							<li>Through VAMS, they MUST schedule appointments to be vaccinated at one of the 16 Community Vaccination Clinics. Your appointment will be CANCELLED if they pick a different site. VAMS allows selection for 10, 20, 50 and 100-mile
+								radius, so please expand the search to locate one of these sites. They may schedule at any of the 16 sites across the state based on availability. The state will continue to hold additional clinics in the coming weeks.
+								If someone lives in another state but works in West Virginia, they are still eligible to receive the vaccine in West Virginia.</li>
+							<li>When scheduling in the VAMS system, the individual MUST PICK ONE OF THE 16 LOCATIONS FOR A VACCINE APPOINTMENT. Selecting any other location will result in cancellation of the appointment.</li>
+						</ul>
+					</li>
+					<li>
+						Retailers/manufacturing.
+						<ul>
+							<li>Due to limited supply, this group is not yet being scheduled for the vaccine. If you fall into this eligibility category due to your job and have not yet heard from your employer or your association yet - please be patient.
+								Your employer and or association is working with the state to coordinate the COVID-19 vaccination process and more information will be coming soon.</li>
+						</ul>
+					</li>
+					<li>
+						Teachers 50 years of age or older
+						<ul>
+							<li>The Department of Education is managing the vaccine distribution process for educators through the local superintendents. Specific details related to when and where teachers can receive a vaccine will be handled by their respective
+								superintendents.</li>
+							<li>Teachers who are under the age of 50 will be offered vaccine(s) at a later date in the State&#39;s overlapping phased COVID-19 vaccination plan.</li>
+						</ul>
+					</li>
+					<li>
+						Other healthcare workers
+						<ul>
+							<li>Currently, vaccine supplies are slowly increasing in West Virginia. As that takes place, more doses are being shared with healthcare locations throughout the state. It is not possible to give an accurate timeline as to when
+								your location or facility will receive the vaccine, but you remain in the highest priority category in the State&#39;s COVID-19 vaccination plan. Maintain regular contact with your facility/location for important details
+								on when the vaccine may be offered.</li>
+						</ul>
+					</li>
+				</ul>
+				<h2><br/></h2>
+			</div>
+			<div>
+
+			</div>
+			<div title="How do I sign up to get a vaccine?" data-toggle="collapse" href="#how" role="button" aria-expanded="false" aria-controls="how" class="collapsed">
+				<h2>+ Additional Vaccine Distribution Information</h2>
+			</div>
+			<div>
+
+				<em>Click to Expand</em>	
+
+			</div>
+			<div class="collapse" id="how">
+				<ul>
+					<li>
+						For clinicians and employers
+						<ul>
+							<li>In order to expedite access to vaccination for our critical workforce, healthcare workers may receive their vaccine at a community vaccination clinics. Please refer to details above for entry into the VAMS system.</li>
+						</ul>
+					</li>
+					<li>
+						For others:
+						<ul>
+							<li>65+ population: There will be ongoing supply of vaccines available through community vaccination clinic events for West Virginians age 65 and older. Appointment requirements for each clinic will be announced weekly.</li>
+							<li>As a reminder, due to high traffic volume at websites and phone lines, residents may encounter delays scheduling appointments to receive the COVID-19 vaccine. Please try back later. Appointment availability is limited but we
+								will continue to open up slots as they become available.</li>
+						</ul>
+					</li>
+					<li>
+						What is West Virginia&#39;s vaccination plan?
+						<ul>
+							<li>The guiding principles in decision making for allocating the limited supplies of vaccines include reducing hospitalizations, reducing the rate of deaths, protecting the most vulnerable West Virginians, and ensuring the state
+								and local communities can maintain critical services including our acute care system.</li>
+							<li>Initially vaccines were offered to those in long term care and assisted living facilities - including staff and residents, pharmacists, healthcare workers in hospital ICUs, emergency rooms and COVID-19 wards, as well as first
+								responders.</li>
+							<li>As vaccine allocations are increasing, the plan has expanded to include various priority groups in 1 A-D and portions of the most vulnerable of the general population (those above age 65 currently). <strong>Not all priority groups in Phase 1 A-D are being served as this time as vaccine allocations are limited. </strong>
+							</li>
+							<li>West Virginia&#39;s vaccination plan overlaps between the various sections in Phase 1 A-D. More information is available on vaccinate.wv.gov&#160;</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div>
+
+			</div>
+			<p>
+				<br/>
+			</p>
+			<div>
+
+			</div>
+			<p><i>Information as of 1/21/2021. Vaccine distribution is a dynamic process, and this document will be updated as new information becomes available.</i>
+			</p>
+			<div>
+
+			</div>
+			<p id="faq">
+			</p>
+			<div>
+			</div>
+			<hr/>
+			<div>
+			</div>
+			<p></p>
+			<div>
+
+			</div>
+			<h2>Frequently Asked Questions (Updated January 18, 2021)</h2>
+			<div>
+
+				<em>Click to Expand</em>
+
+			</div>
+			<p></p>
+			<div>
+
+			</div>
+			<div>
+				<div title="FAQ: COVID-19 Vaccination Basics" data-toggle="collapse" href="#group1" role="button" aria-expanded="false" aria-controls="group1" class="collapsed">
+					<h4>+ COVID-19 Vaccination Basics</h4>
+				</div>
+				<div class="collapse" id="group1">
+					<div class="wp-block-group__inner-container">
+						<span><hr/></span>
+						<div class="wp-block-group">
+							<div class="wp-block-group__inner-container">
+								<h3>What role do COVID-19 vaccinations play in helping to curb the pandemic?</h3>
+								<div>
+									<p>COVID-19 vaccination will help protect ourselves, our families, and our communities from the disease and save lives. Vaccines can both prevent and reduce the severity of disease. Vaccines provide immunity without the
+										serious risks associated with getting infected naturally.&#160;Wearing masks and physical distancing help reduce the chance of being exposed to the virus or spreading it to others, but these measures are not enough.</p>
+									<p>The COVID-19 vaccines are designed to work with our immune systems so the body is ready to fight the virus if we are exposed to the virus. When enough people in a community get vaccinated against COVID-19, immunity
+										rates in our communities substantially increase, which reduces the spread of the virus.</p>
+								</div>
+								<h3><br/></h3>
+								<h3><a name="_Toc61798687"></a>Are the COVID-19 vaccines safe?</h3>
+								<div>
+									<p><strong>Yes.</strong>&#160;COVID-19 vaccines have been evaluated in tens of thousands of individuals who volunteered to participate in clinical trials. These clinical trials met the same rigorous standards set for all
+										vaccines by the Food and Drug Administration (FDA).</p>
+									<p>The information from these clinical trials allowed the FDA to determine that the newly authorized COVID-19 vaccines meet its safety and effectiveness standards. Based on these findings, the FDA has made the vaccines
+										available for use in the United States under what is known as an Emergency Use Authorization (EUA).</p>
+									<p>The Centers for Disease Control and Prevention (CDC) and the FDA will continue to monitor the safety of the vaccines now that they are in use.</p>
+								</div>
+								<h3><br/></h3>
+								<h3><a name="_Toc61798688"></a>How effective will the vaccines be for disease prevention?</h3>
+								<div>
+									<p>The COVID-19 vaccines currently authorized for use were found to be highly effective in preventing COVID-19 in clinical trials.</p>
+									<p>For example, in Phase 3 trials, the Pfizer vaccine showed a 95% efficacy rate seven days after the second dose. The Moderna vaccine showed a 94% efficacy rate 14 days after the second dose.</p>
+									<p>These results for both vaccines were consistent across gender, age, race, and ethnicity.</p>
+								</div>
+								<h3><br/></h3>
+								<h3><a name="_Toc61798689"></a>How do COVID-19 mRNA vaccines (Pfizer and Moderna) work?</h3>
+								<div>
+									<p>The vaccines contain synthetic mRNA, which is genetic information used to make the SARS-CoV-2 spike protein. The spike protein is the part of the virus that attaches to human cells.&#160;<u>The spike protein alone cannot cause COVID-19.</u>
+									</p>
+									<p>Once the spike protein is created, it causes the immune system to make antibodies against the virus. These antibodies can then provide protection if a person comes into contact with the virus.</p>
+									<p>Since the vaccine does not contain any virus, it is not possible to spread COVID-19 from receiving the vaccine. The mRNA does not enter the center of the human cell where DNA is made (the nucleus); so, it cannot alter
+										the genetic material of the cell (DNA). The mRNA is rapidly broken down, making the chance for long-term side effects less likely. The mRNA vaccines do not have the ability to cause cancer.</p>
+									<p>Learn more here:&#160;<a href="https://www.cdc.gov/vaccines/covid-19/downloads/healthcare-professionals-mRNA.pdf">https://www.cdc.gov/vaccines/covid-19/downloads/healthcare-professionals-mRNA.pdf</a>
+									</p>
+								</div>
+								<h3><br/></h3>
+								<h3><a name="_Toc61798690"></a>Can I get COVID-19 from a vaccine?</h3>
+								<div>
+									<p><strong>No.</strong>&#160;None of the COVID-19 vaccines currently authorized for use or in development in the United States use the live virus that causes COVID-19.</p>
+									<p>What many people experience as a result of receiving the vaccine are not side effects, but rather the body&#39;s immune system responding to the COVID-19 vaccine. Both COVID-19 mRNA vaccines (Pfizer and Moderna) work
+										with your immune system so it will be ready to fight the virus if you are exposed. The most common immune responses are short-term injection site pain, swelling or redness, tiredness, headache, muscle pain, joint
+										pain, chills or fever.</p>
+									<p>It usually takes a few weeks for the body to build immunity after receiving the second dose of the vaccine. That means it is possible for an individual to be infected with the virus that causes COVID-19 if exposed just
+										before or just after vaccination. The vaccine itself does not cause infection.</p>
+								</div>
+								<h3><br/></h3>
+								<h3><a name="_Toc61798691"></a>What is an Emergency Use Authorization (EUA)?</h3>
+								<h2>(EUA). This process allows the use of medical products that are not yet approved to diagnose, treat, or prevent serious or life-threatening diseases when certain criteria are met.</h2>
+								<p>Several additional COVID-19 vaccines are currently being developed and tested for their safety and effectiveness in clinical trials (efficacy). Once vaccine manufacturers submit for authorization, the FDA evaluates the
+									EUA request and determines whether they are safe and effective, taking scientific evidence into account. For a vaccine to receive an EUA, the FDA must determine if the vaccine&#39;s benefits outweigh its risks based
+									on data from rigorous clinical trial(s).</p>
+								<p>Additional information on EUAs:&#160;<a href="https://www.fda.gov/vaccines-blood-biologics/vaccines/emergency-use-authorization-vaccines-explained">https://www.fda.gov/vaccines-blood-biologics/vaccines/emergency-use-authorization-vaccines-explained</a>
+								</p>
+
+								<h3><br/></h3>
+								<h3><a name="_Toc61798692"></a>How does the FDA Assess Safety and Effectiveness of a COVID-19 Vaccine Submitted for Emergency Use Authorization (EUA)?</h3>
+								<div>
+									<p>COVID-19 vaccines are undergoing a rigorous development process that includes tens of thousands of study participants to gather required safety and efficacy data, in the same way as many other currently approved vaccines.
+										The FDA evaluates the information submitted by a vaccine manufacturer and uses all available tools and information, including records reviews, site visits, and previous manufacturing compliance history.</p>
+									<p>For an EUA to be issued, the FDA must determine that the known and potential benefits outweigh the known and potential risks of the vaccine.</p>
+									<p>Link:&#160;<a href="https://www.fda.gov/vaccines-blood-biologics/vaccines/emergency-use-authorization-vaccines-explained">https://www.fda.gov/vaccines-blood-biologics/vaccines/emergency-use-authorization-vaccines-explained</a>
+									</p>
+								</div>
+								<h3><br/></h3>
+								<h3><a name="_Toc61798693"></a>Which COVID-19 vaccines have been authorized for use by the FDA?</h3>
+								<div>
+									<p>At this time, there are two COVID-19 vaccines authorized for use by the FDA. The&#160;<strong>Pfizer mRNA COVID-19 vaccine</strong>&#160;received FDA authorization December 11, 2020 for individuals&#160;<strong>ages 16 and older</strong>.
+										It is a 2-dose vaccination series, given intramuscularly, recommended&#160;<strong>at least 3 weeks</strong>&#160;<strong>apart</strong>. For the full FDA statement on the authorization of this vaccine:&#160;
+										<a href="https://www.fda.gov/news-events/press-announcements/fda-takes-key-action-fight-against-covid-19-issuing-emergency-use-authorization-first-covid-19">https://www.fda.gov/news-events/press-announcements/fda-takes-key-action-fight-against-covid-19-issuing-emergency-use-authorization-first-covid-19</a>
+									</p>
+									<p>The&#160;<strong>Moderna mRNA COVID-19 vaccine</strong>&#160;received FDA authorization December 18, 2020 for individuals&#160;<strong>18 and older</strong>. It is a 2-dose vaccination series, given intramuscularly,
+										recommended&#160;<strong>at least 1 month apart</strong>. For the full FDA statement on the authorization of this vaccine:&#160;<a href="https://www.fda.gov/news-events/press-announcements/fda-takes-additional-action-fight-against-covid-19-issuing-emergency-use-authorization-second-covid">https://www.fda.gov/news-events/press-announcements/fda-takes-additional-action-fight-against-covid-19-issuing-emergency-use-authorization-second-covid</a>
+									</p>
+								</div>
+								<h3><br/></h3>
+								<h3><a name="_Toc61798694"></a>Why have vaccines been developed so quickly?</h3>
+								<div>
+									<p>The vaccine process has happened faster because vaccine research and development, clinical trials, manufacturing, and plans for distribution have occurred at the same time. This method removed delays that occur when
+										these processes are carried out one after the other. Steps to ensure safety were&#160;<strong>NOT</strong>&#160;eliminated.</p>
+								</div>
+								<h3><br/></h3>
+								<h3><a name="_Toc61798695"></a>Why do we need a vaccine if we can take other COVID-19 precautions, like masking and physical distancing, to slow or prevent the spread?</h3>
+								<div>
+									<p>It is vital that each person uses all tools available to stop the pandemic. Vaccines work with the immune system and allow a strengthened response to the virus if exposure occurs.</p>
+									<p>Other steps, like covering the mouth and nose with a mask, washing hands, and staying at least 6 feet away from others, help reduce chances of exposure to the virus or spreading it to others.</p>
+									<p>Together, COVID-19 vaccination and following recommendations&#160;for self-protection and to protect others&#160;will offer the best prevention for further spread of COVID-19. For more information:&#160;<a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html</a>
+									</p>
+									<p>
+										<br/>
+									</p>
+								</div>
+								<h3></h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+			</div>
+			<p></p>
+			<div>
+			</div>
+			<p></p>
+			<div>
+			</div>
+			<div>
+				<div title="FAQ: Before Getting Vaccinated" data-toggle="collapse" href="#group2" role="button" aria-expanded="false" aria-controls="group2" class="collapsed">
+					<h4>+ Before Getting Vaccinated</h4>
+				</div>
+				<div class="collapse" id="group2">
+					<div class="wp-block-group__inner-container">
+						<span><hr/></span>
+						<div class="wp-block-group">
+							<div class="wp-block-group__inner-container">
+								<h3>Should I take COVID-19 vaccines if I have a significant history of allergic reactions?</h3>
+								<div>
+									<p>This section addresses contraindications and precautions to mRNA COVID-19 vaccines.&#160;<strong>Individuals with allergy questions or concerns should consult a health care provider</strong>. Disclose any allergies
+										to medical staff prior to vaccination.</p>
+									<p>While rare, anaphylactic reactions have been reported following vaccination with mRNA COVID-19 vaccines. Although investigations are ongoing, persons with a history of an immediate allergic reaction (of any severity)
+										to an mRNA COVID-19 vaccine or any of its components might be at greater risk for severe reaction upon taking additional doses. For the purposes of this guidance,&#160;<strong>an immediate allergic reaction&#160;</strong>to
+										a vaccine or medication is defined as any hypersensitivity-related signs or symptoms such as hives (urticaria); swelling around the face, lips, and tongue (angioedema); wheezing or other respiratory distress; or
+										anaphylaxis that occur within four hours following getting the vaccine.</p>
+									<p>Recommendations for contraindications and precautions are described below and summarized in the figure from CDC at the end of this question section. The following recommendations may change as further information becomes
+										available.</p>
+									<p><strong><u>Contraindication to vaccination:</u></strong>
+									</p>
+									<p>Contraindications are conditions or factors that would be a reason to not get vaccination due to harm. (Individuals with a contraindication should<strong>&#160;not&#160;</strong>get the COVID-19 vaccine.)</p>
+									<p>CDC considers a history of the following to be a contraindication to vaccination with both the Pfizer-BioNTech and Moderna COVID-19 vaccines:</p>
+									<ol>
+										<li><strong>Severe allergic reaction</strong>&#160;(e.g., anaphylaxis) after a previous dose of an mRNA COVID-19 vaccine&#160;<strong>or</strong>&#160;any of its components</li>
+										<li>2<strong>. Immediate</strong>&#160;<strong>allergic reaction*&#160;</strong>(within 4 hours)<strong>&#160;of any severity&#160;</strong>to a&#160;<strong>previous dose of an mRNA COVID-19</strong>&#160;vaccine or
+											any of its components (including polyethylene glycol [PEG])</li>
+										<li><strong>Immediate allergic</strong>&#160;<strong>reaction*&#160;</strong>(within 4 hours)<strong>&#160;of any severity to polysorbate</strong>&#160;(due to potential cross-reactive hypersensitivity with the vaccine
+											ingredient PEG)*</li>
+									</ol>
+									<p>*As noted above: For the purposes of this guidance,&#160;<strong>an immediate allergic reaction&#160;</strong>to a vaccine or medication is defined as any hypersensitivity-related signs or symptoms such as hives (urticaria);
+										swelling around the face, lips, and tongue (angioedema); wheezing or other respiratory distress; or anaphylaxis that occur within four hours following getting the vaccine.</p>
+									<p>Persons with an immediate allergic reaction to the first dose of an mRNA COVID-19 vaccine should&#160;<strong>NOT</strong>&#160;receive additional doses of either of the mRNA COVID-19 vaccines. Providers should attempt
+										to determine whether reactions reported following vaccination are consistent with immediate allergic reactions versus other types of reactions commonly observed following vaccination, such as passing out (a vasovagal
+										reaction) or post-vaccination side effects—which are not contraindications to receiving the second vaccine dose (see the figure at the bottom of this question section).</p>
+									<p>The following fact sheets contain additional information about who should not receive the vaccine.</p>
+									<p><strong>Pfizer-BioNTech Fact Sheet for Vaccine Recipients and Caregivers:&#160;</strong><a href="https://www.fda.gov/media/144414/download">https://www.fda.gov/media/144414/download</a>
+									</p>
+									<p><strong>Moderna Fact Sheet for Vaccine Recipients and Caregivers:</strong>&#160;<a href="https://www.fda.gov/media/144638/download">https://www.fda.gov/media/144638/download</a>
+									</p>
+									<p>The following ingredients list is available from:&#160;<a href="https://www.cdc.gov/vaccines/acip/meetings/downloads/slides-2020-12/slides-12-19/06-COVID-Mbaeyi.pdf">https://www.cdc.gov/vaccines/acip/meetings/downloads/slides-2020-12/slides-12-19/06-COVID-Mbaeyi.pdf</a>
+									</p>
+
+
+
+
+
+
+
+
+
+
+
+
+									<p><strong><u>Precaution to vaccination:</u></strong>
+									</p>
+									<p>Precautions are conditions or factors that would be a reason to consult with a health care provider before proceeding with vaccination. Vaccine providers should observe these patients for 30 minutes after vaccination
+										to monitor for the development of immediate adverse reactions.</p>
+									<p>The CDC considers a history of immediate allergic reaction to&#160;<em>any other&#160;</em>vaccine or injectable therapy (e.g., intramuscular, intravenous, or subcutaneous) as a&#160;<strong>precaution</strong>&#160;but
+										not a contraindication to vaccination. These persons may still receive vaccination but should be counseled about unknown risks of developing a severe allergic reaction and balance these risks against the benefits
+										of vaccination. All vaccination sites will have the medication they need, and the trained medical professionals, to respond to an allergic reaction if one occurs. The CDC advises that individuals who are concerned
+										about their history of allergies may prefer to be vaccinated in a setting where more comprehensive medical care is immediately available for anaphylaxis.</p>
+									<p><strong><u>&#160;</u></strong>
+									</p>
+									<p><strong><u>No contraindication or precaution</u></strong><strong>:</strong>
+									</p>
+									<p>There are allergies that do not constitute a contraindication or precaution to vaccination, including:</p>
+									<ul>
+										<li>History of food, pet, insect, venom, environmental/seasonal, latex, or other allergies not related to vaccines or injectable therapies</li>
+										<li>History of allergy to oral medications (including the oral equivalent of an injectable medication)</li>
+										<li>Family history of anaphylaxis</li>
+										<li>Any other history of anaphylaxis that is not related to a vaccine or injectable therapy</li>
+									</ul>
+									<p>For rare instances when individuals experience immediate allergic reactions, appropriate medical treatments are available (and are mandatory on site) to manage the symptoms. Clinical considerations are available here:&#160;
+										<a href="https://www.cdc.gov/vaccines/covid-19/info-by-product/pfizer/anaphylaxis-management.html">https://www.cdc.gov/vaccines/covid-19/info-by-product/pfizer/anaphylaxis-management.html</a>
+									</p>
+									<p>Triage of Individuals Presenting for COVID-19 Vaccination:</p>
+
+									<p>The above figure is available at:&#160;<a href="https://www.cdc.gov/vaccines/covid-19/info-by-product/clinical-considerations.html">https://www.cdc.gov/vaccines/covid-19/info-by-product/clinical-considerations.html</a>
+									</p>
+									<p>&#160;</p>
+								</div>
+								<h3>Are children and adolescents recommended to receive COVID-19 mRNA (Pfizer and Moderna) vaccines?</h3>
+								<div>
+									<p><strong><u>Children/adolescents under age 16.</u></strong>
+									</p>
+									<p>COVID-19 vaccines are not recommended for children/teens under age 16 (Pfizer) or under age 18 (Moderna) at this time. In early clinical trials for various COVID-19 vaccines, only adults who were not pregnant participated.
+										Older children (12 and up) were added in later trials. However, clinical trials continue to expand and include other groups, so these recommendations may change in the future.</p>
+									<p>&#160;</p>
+									<p><strong><u>Adolescents age 16 and older.</u></strong>
+									</p>
+									<p>Individuals aged 16-17 years are eligible to receive the Pfizer-BioNTech COVID-19 vaccines (but&#160;<strong>not</strong>&#160;the Moderna COVID-19 vaccine at this time). No safety concerns were identified in this group
+										during Pfizer-BioNTech COVID-19 clinical trials. Although vaccine safety and efficacy data in this age group are somewhat limited, there is no medical reason to believe that responses from this group would be different
+										from those who are 18 years of age and older. Adolescents aged 16-17 years who are part of a group recommended to receive a COVID-19 vaccine may be vaccinated with the Pfizer-BioNTech vaccine.</p>
+								</div>
+								<h3><br/></h3>
+								<h3><a name="_Toc61798699"></a>Should I take the vaccine if I am pregnant?</h3>
+								<div>
+									<p>Currently, there are no data on the safety and efficacy of COVID-19 vaccines in pregnant women. However, people who are pregnant and become infected with COVID-19 can have an increased risk of severe illness or negative
+										pregnancy outcomes, such as preterm birth. Based on current knowledge, experts believe that mRNA vaccines are unlikely to pose a risk for people who are pregnant. Reputable sources, such as the American College
+										of Obstetricians and Gynecologists, have advised that the benefit of vaccination may outweigh the risk of severe COVID-19 disease. For this reason, if a person who is pregnant is part of a group who is recommended
+										to receive a COVID-19 vaccine,&#160;<strong>they may choose to be vaccinated.</strong>&#160;A discussion with a health care provider can help make an informed decision. Although a conversation with a healthcare
+										provider may be helpful, it is not required prior to vaccination.</p>
+								</div>
+								<h3><br/></h3>
+								<h3><a name="_Toc61798700"></a>Should I take the vaccine if I am breastfeeding?</h3>
+								<div>
+									<p>If someone who is breastfeeding is part of a group who is recommended to receive a COVID-19 vaccine,&#160;<strong>they may choose to be vaccinated.&#160;&#160;</strong>Currently, there is no data on the safety and efficacy
+										of COVID-19 vaccines in breastfeeding women as they were excluded from clinical trials. However, the CDC has stated that since the mRNA vaccine does not contain live virus, it is not thought to be a risk to breastfeeding
+										infants. A discussion with a health care provider can help to make an informed decision. Although a conversation with a healthcare provider may be helpful, it is not required prior to vaccination.</p>
+									<br/>
+									<h3><a name="_Toc61798701"></a>Are the mRNA vaccines safe for people who want to become pregnant?</h3>
+									<div>
+										<p>There is no evidence the COVID-19 vaccine affects fertility. People who are trying to become pregnant or who are pregnant and for whom the vaccine is recommended may choose to be vaccinated. A discussion with a
+											health care provider can help to make an informed decision.</p>
+										<p>More information from the American Society for Reproductive Medicine is available here: https://www.asrm.org/news-and-publications/news-and-research/press-releases-and-bulletins/asrm-issues-statement-on-covid-19-vaccines-joins-other-obgyn-groups-on-community-wide-statement/</p>
+									</div>
+									<h3><br/></h3>
+									<h3><a name="_Toc61798702"></a>Should I take the vaccine if I am immunocompromised?</h3>
+									<div>
+										<p>Currently, there is no data on the safety and efficacy of COVID-19 vaccines in immunocompromised people. However, persons with immunocompromising conditions or who take immunosuppressive medications or therapies
+											might be at increased risk for severe disease if they get COVID-19. Therefore, the CDC recommends these individuals receive the COVID-19 vaccine. Immunocompromised individuals should discuss this with a healthcare
+											provider. It is important to note that the mRNA vaccines do not contain live virus; so, it is not possible to develop COVID-19 from vaccination.</p>
+									</div>
+									<h3><br/></h3>
+									<h3><a name="_Toc61798703"></a>Are COVID-19 vaccines safe for people with autoimmune disease?</h3>
+									<div>
+										<p>Experts say there is no reason to believe that the currently approved mRNA COVID-19 vaccines will be unsafe for people with autoimmune disease. Additionally, authorized mRNA vaccines are expected to be safe for
+											immunocompromised patients and those on immunosuppressant drugs. However, it is yet unconfirmed whether immunosuppressant medications or unchecked disease activity may reduce vaccine effectiveness. Persons with
+											autoimmune conditions who have no contraindications to vaccination may receive an mRNA COVID-19 vaccine. A discussion with a health care provider can help to make an informed decision.</p>
+									</div>
+									<h3><br/></h3>
+									<h3><a name="_Toc61798704"></a>Should I take the vaccine if I have Guillain-Barré syndrome?</h3>
+									<div>
+										<p>To date, no cases of Guillain-Barré syndrome (GBS) have been reported following vaccination among participants in the mRNA COVID-19 vaccines clinical trials. With few exceptions, Advisory Committee on Immunization
+											Practices (ACIP) general best practice guidelines for immunization does not include history of GBS as a contraindication or precaution to vaccination. Persons with a history of GBS may receive an mRNA COVID-19
+											vaccine unless they have a contraindication to vaccination. Any occurrence of GBS following mRNA COVID-19 vaccination should be reported to VAERS.</p>
+									</div>
+									<h3><br/></h3>
+									<h3><a name="_Toc61798705"></a>Should I take the vaccine if I have a history of Bell&#39;s palsy?</h3>
+									<div>
+										<p>Cases of Bell&#39;s palsy were reported following vaccination in participants in both the Pfizer-BioNTech and Moderna COVID-19 vaccines&#39; clinical trials. However, the FDA does not consider these to be above
+											the frequency expected in the general population and has not concluded that these cases were causally related to vaccination. The FDA and CDC will continue to monitor the vaccines&#39; safety. In the absence
+											of such evidence, persons with a history of Bell&#39;s palsy may receive an mRNA COVID-19 vaccine unless they have a contraindication to vaccination. Any occurrence of Bell&#39;s palsy following mRNA COVID-19
+											vaccination should be reported to VAERS.</p>
+									</div>
+									<h3><br/></h3>
+									<h3><a name="_Toc61798706"></a>Should I take the vaccine if I have had convalescent plasma or monoclonal antibody?</h3>
+									<div>
+										<p>The Advisory Committee on Immunization Practices (ACIP) recommends that vaccination should be deferred until 90 days after receiving convalescent plasma or monoclonal antibodies. Currently, there are no data on
+											the safety and efficacy of COVID-19 vaccines in people who received convalescent plasma or monoclonal antibody therapy. This is to avoid interference of these treatments with vaccine-induced immune responses.
+											The risks and benefits of vaccination based upon the underlying risk factors, including living in a nursing home, could be considered. A discussion with a health care provider can help make an informed decision.</p>
+									</div>
+									<h3><br/></h3>
+									<h3><a name="_Toc61798707"></a>Should I take the vaccine if I already had COVID-19 and recovered?</h3>
+									<div>
+										<p>Data from clinical trials indicate that mRNA COVID-19 vaccines are safe in persons with evidence of a prior SARS-CoV-2 infection. Vaccination should be offered to individuals regardless of history of COVID-19 (symptomatic
+											or asymptomatic). The length of immunity after recovering from COVID-19 is unknown; early studies show that it is not long lasting and rare cases of reinfection have been reported.</p>
+										<p>Testing specifically to determine whether a person has active or prior COVID-19 infection is not recommended solely for the purpose of vaccine decision-making.</p>
+									</div>
+									<h3><br/></h3>
+									<h3><a name="_Toc61798708"></a>How long after recovering from COVID-19 should I take the vaccine?</h3>
+									<div>
+										<p>The CDC states current evidence suggests reinfection is uncommon within 90 days after initial infection, so vaccination&#160;<em>could</em>&#160;be deferred until the end of this period; however, given initially
+											limited supply of vaccines, it is not certain when another opportunity for vaccination will be available.</p>
+									</div>
+									<h3><br/></h3>
+									<h3><a name="_Toc61798709"></a>Should I take the vaccine if I currently am infected with COVID-19?</h3>
+									<div>
+										<p>No. Those infected should wait until they have recovered from the acute illness (if the person had symptoms) and criteria have been met for them to end their isolation. This waiting period is essential to avoid
+											exposing healthcare personnel (HCP) or other persons during the vaccination visit. Getting the vaccine while infected is not expected to harm you, but leaving isolation will put others in danger of getting COVID-19.
+											This recommendation applies to persons who get COVID-19 before receiving any vaccine doses as well as those who get COVID-19 after the first dose but before taking the second dose.</p>
+									</div>
+									<h3><br/></h3>
+									<h3><a name="_Toc61798710"></a>Should I get the vaccine if I am in quarantine?</h3>
+									<div>
+										<p><u>Individuals in a community or outpatient setting</u>&#160;should defer vaccination until quarantine period has ended to avoid exposing healthcare personnel (HCP) or other persons during the vaccination visit.</p>
+										<p>&#160;</p>
+										<p><u>Residents of congregate healthcare settings</u>&#160;(e.g., long-term care facilities) may be vaccinated, as this likely would not result in any additional exposures. HCP are already in close contact with residents
+											and should employ appropriate infection prevention and control procedures.</p>
+										<p>&#160;</p>
+										<p><u>Residents of other congregate settings</u>&#160;(e.g., correctional facilities, homeless shelters, residential settings) may be vaccinated, in order to avoid delays and missed opportunities for vaccination. Where
+											possible, precautions should be taken to limit mixing of these individuals with other residents or non-essential staff.</p>
+										<p>&#160;</p>
+									</div>
+									<h3><a name="_Toc61798711"></a>How long after the flu shot or other vaccines do I have to wait to take the COVID-19 vaccine?</h3>
+									<div>
+										<p>Given the lack of data on the safety and efficacy of mRNA COVID-19 vaccines administered simultaneously with other vaccines, the vaccine series should routinely be administered alone, with a minimum interval of
+											14 days before or after administration with any other vaccine. However, mRNA COVID-19 and other vaccines may be administered within a shorter period in situations where the benefits of vaccination are deemed
+											to outweigh the potential unknown risks of vaccine co-administration (e.g., tetanus toxoid-containing vaccination as part of wound management, measles or hepatitis A vaccination during an outbreak) or to avoid
+											barriers or delays to mRNA COVID-19 vaccination (e.g., in long-term care facility residents or healthcare personnel who received influenza or other vaccinations prior to/upon admission or onboarding). If mRNA
+											COVID-19 vaccines are administered within 14 days of another vaccine, doses do not need to be repeated for either vaccine.</p>
+									</div>
+									<h3><br/></h3>
+									<h3><a name="_Toc61798712"></a>Should premedication be given prior to vaccination?</h3>
+									<div>
+										<p>Taking medications such as acetaminophen or ibuprofen before receiving the vaccine to try to prevent symptoms like fever or pain is not recommended at this time. This is because there is not enough information on
+											how pain-relieving medications will impact immune responses. These medications may be taken after receiving the vaccine for the treatment of symptoms.</p>
+										<p>
+											<br/>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<p></p>
+				<p>
+				</p>
+				<div>
+					<div title="FAQ: Getting Vaccinated" data-toggle="collapse" href="#group3" role="button" aria-expanded="true" aria-controls="group3">
+						<h4>+ Getting Vaccinated</h4>
+					</div>
+					<div class="collapse show" id="group3">
+						<div class="wp-block-group__inner-container">
+							<span><hr/></span>
+							<div class="wp-block-group">
+								<div class="wp-block-group__inner-container">
+									<h3>What is the Vaccine Administration Management System (VAMS)?</h3>
+									<div>
+										<p>The Vaccine Administration Management System (VAMS) is an easy-to-use, secure, online tool to manage vaccine administration from the time the vaccine arrives at a clinic to when it is administered to a person. VAMS
+											is free for approved clinics and can be used on computers, tablets, and other mobile devices. It is not a smartphone app; no installation or download is required for this web-based platform.</p>
+										<p>West Virginians in Phase 1 will use VAMS to schedule their vaccination appointment. Phase 1 participants may receive an email from&#160;<a href="mailto:no-reply@mail.vams.cdc.gov">no-reply@mail.vams.cdc.gov</a>&#160;to
+											schedule the appointment. Appointments may also be scheduled by an employer or long-term care facility.</p>
+										<p>VAMS will allow clinicians to set up customized vaccine schedules and allow recipients to make vaccination appointments, in addition to sending a reminder about returning for a second dose.</p>
+										<p>https://www.cdc.gov/vaccines/covid-19/reporting/vams/faqs.html</p>
+									</div>
+									<h3><br/></h3>
+									<h3><a name="_Toc61798715"></a>When will I get the vaccine?</h3>
+									<div>
+										<p>After receiving FDA authorization for use in the U.S., Pfizer and Moderna vaccines began arriving in West Virginia in early-mid December. Vaccines remain in limited supply nationally. West Virginia is dedicated
+											to ensuring that all West Virginians have access to a COVID-19 vaccination as soon as possible. The guiding principles in decision making for getting COVID-19 vaccines to our higher-risk groups include: protecting
+											our most vulnerable, reducing deaths, reducing hospitalizations, and maintaining our critical services and acute care.</p>
+										<p>As vaccine availability increases over the coming months, the state will able to reach more and more of the general public to offer COVID-19 vaccines as the national supply can meet demand.</p>
+										<p>Decisions regarding overlapping phased distribution of limited vaccine supplies will remain flexible to ensure West Virginians are offered access as quickly, efficiently, and equitably as possible. It is not necessary
+											to fully complete vaccination in one phase before beginning the next phase.</p>
+										<p>To view the state&#39;s overlapping phased allocation plan and more details regarding particular age groups and high-risk settings: vaccinate.wv.gov</p>
+									</div>
+									<h3><br/></h3>
+									<h3><a name="_Toc61798716"></a>How is the COVID-19 vaccine administered?</h3>
+									<h3><font color="#000000" face="sans-serif" size="3"><span>COVID-19 vaccines are given through intramuscular (IM) injections, typically in the upper arm. Each person receives the recommended dose set forth by the manufacturer.</span></font>&#160;</h3>
+									<h3><br/></h3>
+									<h3><a name="_Toc61798718"></a>Who will administer the COVID-19 vaccine?</h3>
+									<div>
+										<p>The vaccine will be administered by a health care professional trained in giving an injection into the muscle.</p>
+										<p><strong>&#160;</strong>
+										</p>
+									</div>
+									<h3><a name="_Toc61798719"></a>How long between mRNA COVID-19 vaccine doses? What happens if I&#39;m late for the second dose?</h3>
+									<div>
+										<p><strong>Pfizer-BioNTech.</strong>&#160;The Pfizer product requires a 2-dose vaccination series administered three weeks (21 days) apart. Administration of second dose is allowed within a 4-day grace period (meaning
+											days 17-21) or after. If more than 21 days have passed since the first dose, the second dose should be administered at the earliest opportunity.</p>
+										<p>&#160;</p>
+										<p><strong><u>Moderna.</u></strong>&#160;The Moderna vaccine requires a 2-dose vaccination series administered one month (28 days) apart. Administration of second dose is allowed within a 4-day grace period (meaning
+											days 24-28) or after. If more than 28 days have passed since the first dose, the second dose should be administered at the earliest opportunity.</p>
+										<p>&#160;</p>
+										<p>Any individual who is late to receive their second dose will still mount an immune response upon receipt of the second dose. However, in the meantime between first and second doses, the individual will not have
+											maximum protection against COVID-19. Further, the longer one waits after the recommended dosage period (3-4 weeks after the first dose), it is unknown how protected they will be. Thus it is advised for the second
+											dose to be administered as close to the recommended time period as possible.</p>
+										<p><strong>&#160;</strong>
+										</p>
+									</div>
+									<h3><a name="_Toc61798720"></a>For 2-dose vaccines, what happens if I only receive one dose of the vaccine and not both?</h3>
+									<div>
+										<p>It is recommended to receive both doses of the vaccine for maximum protection.</p>
+										<p><strong>&#160;</strong>
+										</p>
+									</div>
+									<h3><a name="_Toc61798721"></a>Can I get one dose of one mRNA vaccine (e.g., Pfizer) and the second dose of another mRNA vaccine (e.g., Moderna)?</h3>
+									<div>
+										<p>Individuals should receive the second dose of the COVID-19 vaccine from the same manufacturer as the first dose. The COVID-19 vaccine products are not interchangeable. The safety and efficacy of mixing products
+											in the vaccination series have not been evaluated. However, if two doses of different mRNA COVID-19 vaccine products are&#160;<em>inadvertently</em>&#160;administered, no additional doses of either product are
+											recommended at this time. Recommendations may be updated as further information becomes available or other vaccine types (e.g., viral vector, protein subunit vaccines) are authorized. As further information
+											becomes available and other vaccine types are authorized, recommendations may be updated.</p>
+										<p><span><br/></span>
+										</p>
+										<p></p>
+<h3>How will the second dose of the vaccine be ensured?</h3>
+										<p></p>
+									</div>
+									<div>
+										<p>The Vaccine Administration Management System (VAMS) will allow clinicians to set up customized vaccine schedules and allow recipients to make vaccination appointments, in addition to sending a reminder about returning
+											for a second dose.</p>
+										<p><span><br/></span>
+										</p>
+										<p></p>
+<h3>Is taking the COVID-19 vaccine mandatory?</h3>
+										<p></p>
+									</div>
+									<div>
+										<p>The vaccine is not mandatory.</p>
+										<p>
+											<br/>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div>
+					<div title="FAQ: After Getting Vaccinated" data-toggle="collapse" href="#group4" role="button" aria-expanded="false" aria-controls="group4" class="collapsed">
+						<h4>+ After Getting Vaccinated</h4>
+					</div>
+					<div class="collapse" id="group4">
+						<div class="wp-block-group__inner-container">
+							<span><hr/></span>
+							<div class="wp-block-group">
+								<div class="wp-block-group__inner-container">
+									<h3>What are common side effects or immune responses after receiving mRNA COVID-19 vaccines?</h3>
+									<div>
+										<p><strong>Short-Term:&#160;</strong>The majority of short-term effects reported in clinical trials were mild to moderate and occurred within the first few days of receiving a COVID-19 vaccine. Examples of common mild
+											to moderate immune responses include pain at the injection site, headache, fatigue, fever, or chills.</p>
+										<p>It is also worth noting that clinical trials showed stronger immune responses (and reported short-term side effects) after the second dose. The second dose remains essential for maximum protection.</p>
+										<p><strong>Long-Term:&#160;</strong>Historically, long-term side effects from vaccines have been rare and most side effects have been seen within the first 60 days of receiving vaccines.</p>
+										<p>Before vaccination, COVID-19 vaccine recipients should be counseled about expected local (e.g., pain, swelling, erythema at the injection site) and systemic (e.g., fever, fatigue, headache, chills, myalgia, arthralgia)
+											post-vaccination symptoms.</p>
+									</div>
+									<h3><br/></h3>
+									<h3><a name="_Toc61798726"></a>What is the V-safe after vaccination health checker?</h3>
+									<div>
+										<p>V-safe&#160;is a smartphone-based tool that uses text messaging and web surveys to provide personalized health check-ins after a person receives a COVID-19 vaccination. Through&#160;V-safe, a person can quickly
+											tell the CDC if they experience side effects after getting the COVID-19 vaccine. Depending on the person&#39;s responses, a CDC staff member may call for additional information. V-safe&#160;also sends reminders
+											to get the second COVID-19 vaccine dose. Participation in the CDC&#39;s&#160;V-safe&#160;initiative makes a difference — it helps keep COVID-19 vaccines safe.</p>
+										<p><a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/safety/vsafe.html">https://www.cdc.gov/coronavirus/2019-ncov/vaccines/safety/vsafe.html</a>
+										</p>
+									</div>
+									<div>
+										<p>&#160;</p>
+									</div>
+									<h3><a name="_Toc61798728"></a>Should side effects from COVID-19 vaccines be reported? What is VAERS?</h3>
+									<div>
+										<p>Individuals concerned about their health after getting vaccinated should talk with a health care provider, who will determine the appropriate treatment and reporting requirements. Anyone also can choose to report
+											a side effect. Reporting is encouraged for any other clinically significant adverse event, even if it is uncertain whether the vaccine caused the event.</p>
+										<p>&#160;</p>
+										<p>Vaccination providers are required by the FDA to report the following occurring after mRNA COVID-19 vaccination:</p>
+										<ul>
+											<li>Vaccine administration errors</li>
+											<li>Serious adverse events</li>
+											<li>Cases of Multisystem Inflammatory Syndrome</li>
+											<li>Cases of COVID-19 that result in hospitalization or death</li>
+										</ul>
+										<p>&#160;</p>
+										<p>Information on how to submit a report to VAERS is available at&#160;<a href="https://vaers.hhs.gov/">https://vaers.hhs.gov/</a>&#160;or by calling 1-800-822-7967.</p>
+									</div>
+									<h3><a name="_Toc61798729"></a>If I develop COVID-19 symptoms after getting the vaccine, should I quarantine?</h3>
+									<div>
+										<p>Yes. It typically takes a few weeks for the body to build immunity after the second dose of the vaccine. That means it is possible a person could be infected with the virus that causes COVID-19 just before or just
+											after vaccination and get sick as the vaccine has not had enough time to provide protection for disease.</p>
+										<p>Individuals who have COVID-19 virus symptoms after getting the vaccine or at any time should contact a health care provider and consider getting tested for COVID-19.</p>
+									</div>
+									<h3><br/></h3>
+									<h3><a name="_Toc61798730"></a>Do I need to quarantine if I am exposed between doses?</h3>
+									<div>
+										<p>If exposure occurs between doses, follow quarantine guidance as advised by the local health department.</p>
+										<p>Quarantine is used to keep someone who might have been exposed to COVID-19 away from others.&#160; Quarantine helps prevent spread of disease that can occur before a person knows they are sick or if they are infected
+											with the virus without feeling symptoms.</p>
+									</div>
+									<h3><br/></h3>
+									<h3><a name="_Toc61798731"></a>How long will immunity last after I get vaccinated?&#160;Will I need to be vaccinated every year?</h3>
+									<div>
+										<p>The length of immunity following vaccination is not yet known for COVID-19.</p>
+										<p><strong>&#160;</strong>
+										</p>
+									</div>
+									<h3><a name="_Toc61798732"></a>Do I still need to wear a mask and take other COVID-19 precautions after I get the vaccine?</h3>
+									<div>
+										<p>Yes. Wearing a mask, washing hands, and staying at least 6 feet away from others will remain important after receiving the vaccine. Since there will be limited doses available initially, and people will be vaccinated
+											in phases, it will take time to vaccinate enough of the population to stop the spread of COVID-19.</p>
+										<p>Additionally, as the length of immunity is unknown, infection after a receiving a vaccine may still be possible. It is likely that infection after receiving the COVID-19 vaccine would be less severe, with mild or
+											asymptomatic conditions.</p>
+										<p>Other factors for continuing precautions include how many people get vaccinated and how the virus is spreading in West Virginia communities.</p>
+									</div>
+									<h3><br/></h3>
+									<h3><a name="_Toc61798733"></a>How many people need to get the vaccine for community immunity (herd immunity)?</h3>
+									<div>
+										<p>
+										</p>
+										<p>
+											<br/>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<p></p>
+				<p></p>
+
+				<div>
+					<div title="References/Related Links" data-toggle="collapse" href="#group5" role="button" aria-controls="group5">
+						<h4>+ References/Related Links</h4>
+					</div>
+					<div class="collapse" id="group5">
+						<div class="wp-block-group__inner-container">
+							<span><hr/></span>
+							<ul>
+								<li>Advisory Committee on Immunization Practices Meeting Webcast. December 12, 2020.</li>
+								<li>BioNTech conclude phase 3 study of COVID-19 vaccine candidate meeting all primary efficacy endpoints. Available from&#160;<a href="https://www.pfizer.com/news/press-release/press-release-detail/pfizer-and-biontechconclude-phase-3-study-covid-19-vaccine">https://www.pfizer.com/news/press-release/press-release-detail/pfizer-and-biontechconclude-phase-3-study-covid-19-vaccine</a>
+								</li>
+								<li>Centers for Disease Control and Prevention Clinical Partner Call: What Clinicians need to know about the Pfizer-BioNTech COVID-19 Vaccine. December 13, 2020.</li>
+								<li>Centers for Disease Control and Prevention. Interim Clinical Considerations for Use of Pfizer-BioNTech COVID-19 Vaccine. Available from&#160;<a href="https://www.cdc.gov/vaccines/covid-19/info-by-product/pfizer/clinical-considerations.html">https://www.cdc.gov/vaccines/covid-19/info-by-product/pfizer/clinical-considerations.html</a>.
+									January 13, 2021.</li>
+								<li>Centers for Disease Control and Prevention. Frequently asked questions about vaccination. Available from&#160;<a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/faq.html">https://www.cdc.gov/coronavirus/2019-ncov/vaccines/faq.html</a>
+								</li>
+								<li>Centers for Disease Control and Prevention. Vaccines &amp; Immunizations. Vaccination Communication Toolkit. Available from&#160;<a href="https://www.cdc.gov/vaccines/covid-19/health-systems-communication-toolkit.html">https://www.cdc.gov/vaccines/covid-19/health-systems-communication-toolkit.html</a>
+								</li>
+								<li>Centers for Disease Control and Prevention. Ensuring the safety of COVID-19 vaccines in the United States. Available from&#160;<a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/recommendations-process.html%20COVID-19">https://www.cdc.gov/coronavirus/2019-ncov/vaccines/recommendations-process.html COVID-19</a>&#160;
+									Update: First two vaccines nearing approval demonstrate 95% efficacy. IPD Analytics. Nov 2020.&#160; Food and Drug Administration. Emergency Use Authorization. Available from&#160;<a href="https://www.fda.gov/emergencypreparedness-and-response/mcm-legal-regulatory-and-policy-framework/emergency-use-authorization">https://www.fda.gov/emergencypreparedness-and-response/mcm-legal-regulatory-and-policy-framework/emergency-use-authorization</a>&#160;
+									Pfizer. Pfizer and</li>
+								<li>Mehta M, Reece R. WVU Medicine COVID-19 Vaccine Frequently Asked Questions. Updated 12/13/2020.</li>
+								<li>Vaccine and Related Biological Products Advisory Committee Meeting. December 10 2020.</li>
+								<li>Mbaeyi, S. ACIP COVID-19 Vaccines Work Group. Use of mRNA COVID-19 Vaccines: Interim Clinical Considerations. Available from:&#160;<a href="https://www.cdc.gov/vaccines/acip/meetings/downloads/slides-2020-12/slides-12-19/06-COVID-Mbaeyi.pdf">https://www.cdc.gov/vaccines/acip/meetings/downloads/slides-2020-12/slides-12-19/06-COVID-Mbaeyi.pdf</a>
+								</li>
+								<li>Vaccine side effects. US Department of Health and Human Services. Available from</li>
+								<li><a href="https://www.vaccines.gov/basics/safety/side_effects">https://www.vaccines.gov/basics/safety/side_effects</a>
+								</li>
+								<li>Vaccine Management System. Deloitte. Available from&#160;<a href="https://www2.deloitte.com/us/en/pages/publicsector/solutions/vaccine-management-system.html">https://www2.deloitte.com/us/en/pages/publicsector/solutions/vaccine-management-system.html</a>
+								</li>
+								<li>Zhang et al. Advances in mRNA vaccine for infectious diseases. Front. Immunol. March 2019; 10:594</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<p></p>
+				<p></p>
+
+				<div>
+					<div title="References/Related Links" data-toggle="collapse" href="#group6" role="button" aria-expanded="false" aria-controls="group6" class="collapsed">
+						<h4>+ About FAQ</h4>
+					</div>
+					<div class="collapse" id="group6">
+						<div class="wp-block-group__inner-container">
+							<span><hr/></span>
+							This information is based on currently available evidence, resources, information, emergency use authorization, and expert opinion, and is subject to change. As evidence regarding the use of COVID-19 vaccine for individuals emerges, it will be necessary
+							to modify this document.
+						</div>
+					</div>
+				</div>
+
+				<a class="btn btn-primary" href="https://wvvaccine.s3.amazonaws.com/COVID-19-Vaccine-FAQ-WV-DHHR-1.18.2021.pdf" role="button">Download Full FAQ</a>
+
+				<p>
+				</p>
+				<hr/>
+				<p></p>
+
+				<h2 id="timeline">Distribution Timeline</h2>
+
+				<!-- Dr. Marsh Youtube Video -->
+				<div class="videowrapper d-xs-block d-sm-block d-md-none d-lg-none d-xl-none">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/sVeikQuqr9w?rel=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fdhhr.wv.gov" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" data-gtm-yt-inspected-36655545_10="true" id="946859870"></iframe>&#160;</div>
+				<div class="d-none d-md-block">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/sVeikQuqr9w?rel=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fdhhr.wv.gov" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" data-gtm-yt-inspected-36655545_10="true" id="946859870"></iframe>&#160;</div>
+				<!-- Button trigger modal -->
+
+				<p>
+					<br/>
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">View the Slides</button>
+				</p>
+
+				<!-- Modal -->
+				<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLabel">Distribution Slides</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">Close</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<style>
+									.embed-container {
+										position: relative;
+										padding-bottom: 56.25%;
+										height: 0;
+										overflow: hidden;
+										max-width: 100%;
+									}
+									.embed-container iframe,
+									.embed-container object,
+									.embed-container embed {
+										position: absolute;
+										top: 0;
+										left: 0;
+										width: 100%;
+										height: 100%;
+									}
+								</style>
+								<div class="embed-container">
+									<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQ7nRzTss5n1U12fqlYCa2zgI6yd7l4vbu-mkkOjRYyE1_HlxDMFxuw6VDhEreI0quqnnmEbGxohT27/embed?start=false&amp;loop=false&amp;delayms=300000" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" data-gtm-yt-inspected-36655545_10="true"></iframe>
+								</div>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<p id="cdc">
+				</p>
+				<hr/>
+				<p></p>
+
+				<h2>Additional CDC Information</h2>
+				<p>This web section provides COVID-19 vaccine information. All of the information is available in Spanish, Chinese, Vietnamese &amp; Korean through the languages dropdown at the top of each page.</p>
+
+				<p>
+					<a class="btn btn-primary" href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/index.html" role="button">Additional CDC Information</a>
+				</p>
+
+				<p id="healthcare">
+				</p>
+				<hr/>
+				<p></p>
+
+
+				<div class="row">
+					<!-- Section 4 - Healthcare -->
+					<div class="col-sm-12 col-lg-4">
+						<a href="https://thesocialpresskit.com/communityimmunitywv">
+							<img class="cdc" src="https://wvvaccine.s3.amazonaws.com/ncird-hcp-vaccines.jpg" alt=""/>
+						</a>
+						&#160;</div>
+					<div class="col-sm-12 col-lg-8 health">
+						<h2>For Healthcare Providers</h2>
+						<p>Resources for the planning, allocation, distribution, administration, storage &amp; handling, patient education, and more for COVID-19 vaccine.</p>
+						<p>
+							<a class="btn btn-primary" href="https://thesocialpresskit.com/communityimmunitywv" role="button">Social Press Kit</a>
+							<!-- <a class="btn btn-primary" href="#" role="button">Latest Toolkit</a> -->
+							<a class="btn btn-primary" href="/COVID-19/Pages/Provider-Resources.aspx" role="button">DHHR Provider Resources</a>
+							<!-- <a class="btn btn-primary" href="#" role="button">Toolkit Archive</a> -->
+						</p>
+					</div>
+				</div>
+
+			</div>
+
+
+			<div>
+			</div>
+
+<p></p>
+				<hr/>
+				<p></p>
+
+<h2>West Virginians Receive COVID-19 Vaccine</h2>
+<iframe width="100%" height="420" src="https://www.youtube.com/embed/playlist?list=PLfnPZMmLOkWLk6UcpheETMfA3BWjsdx1p&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fdhhr.wv.gov" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" data-gtm-yt-inspected-36655545_10="true" id="551334244"></iframe>
+
+
+
+		</div>
+
+		<div class="col-6 col-md-4">
+			<ul class="list-group">
+				<li class="list-group-item">
+					<h3>More Information</h3>
+				</li>
+				<li class="list-group-item"><a href="#cdc">Additional CDC Information</a>
+				</li>
+				<li class="list-group-item"><a href="#healthcare">For Healthcare Providers</a>
+				</li>
+				<li class="list-group-item"><a href="/News/2021/Pages/default.aspx">News and Announcements</a>
+				</li>
+
+				<li class="list-group-item"><a rel="noopener noreferrer" target="_blank" href="https://media.thesocialpresskit.com/the-center-for-rural-health-development-inc/20CRHD0006RegisterPrint.pdf">Click here to download flyers about COVID-19 Vaccination Registration to share with your communities.</a>
+				</li>
+
+				<!-- <li class="list-group-item"><a href="#">Additional CDC Information</a></li> -->
+			</ul>
+		</div>
+	</div>
+</div>
+
+​​​​​​​​</div></td>
+			</tr>
+		</table></td>
+	</tr>
+</table>
+
+<div id="ctl00_PlaceHolderMain_ctl01_label" style='display:none'>Page Content</div><div id="ctl00_PlaceHolderMain_ctl01__ControlWrapper_RichHtmlField" class="ms-rtestate-field" style="display:inline" aria-labelledby="ctl00_PlaceHolderMain_ctl01_label"></div>
+
+<menu class="ms-SrvMenuUI">
+	<ie:menuitem id="MSOMenu_Help" iconsrc="/_layouts/images/HelpIcon.gif" onmenuclick="MSOWebPartPage_SetNewWindowLocation(MenuWebPart.getAttribute('helpLink'), MenuWebPart.getAttribute('helpMode'))" text="Help" type="option" style="display:none">
+
+	</ie:menuitem>
+</menu>
+
+</div>
+
+</div></div>
+
+
+     
+ <!-- End Main Content -->
+  <div class="whitelink footerbkg centertext">
+ <div class="container-fluid">
+<div class="row">
+<div class="col-12 col-md-12 col-lg-12">
+
+ 
+  
+<a href="/COVID-19#contactus">Contact Us</a> | <a href="/COVID-19/Pages/site-map.aspx">Site Map</a><br/><script type="text/javascript" src="https://apps.wv.gov/Scripts/wvgovfooter.js"></script></div>
+
+  
+  </div></div></div>
+  
+
+
+<!-- End Full Site -->
+<div id="ctl00_panelZone">
+	<div style='display:none' id='hidZone'></div>
+</div><input type='hidden' id='_wpcmWpid' name='_wpcmWpid' value='' /><input type='hidden' id='wpcmVal' name='wpcmVal' value=''/>
+
+<script type="text/javascript">
+//<![CDATA[
+var _spFormDigestRefreshInterval = 1440000;window.g_updateFormDigestPageLoaded = new Date(); window.g_updateFormDigestPageLoaded.setDate(window.g_updateFormDigestPageLoaded.getDate() -5);
+function EnsureScripts(scriptInfoList, finalFunction)
+{
+if (scriptInfoList.length == 0)
+{
+finalFunction();
+}
+else
+{
+var scriptInfo = scriptInfoList.shift();
+var rest = function () { EnsureScripts(scriptInfoList, finalFunction); };
+var defd;
+try
+{
+eval('defd = typeof(' + scriptInfo[1] + ');');
+}
+catch (e)
+{
+defd = 'undefined';
+}
+if (scriptInfo[2])
+{
+EnsureScript(scriptInfo[0], defd, null);
+ExecuteOrDelayUntilScriptLoaded(rest, scriptInfo[0]);
+}
+else
+{
+EnsureScript(scriptInfo[0], defd, rest);
+}
+}
+}
+function PublishingRibbonUpdateRibbon()
+{
+var pageManager = SP.Ribbon.PageManager.get_instance();
+if (pageManager)
+{
+pageManager.get_commandDispatcher().executeCommand('appstatechanged', null);
+}
+}var _fV4UI = true;
+function _RegisterWebPartPageCUI()
+{
+    var initInfo = {editable: false,isEditMode: false,allowWebPartAdder: false,listId: "{4ab7029e-bb9d-4c72-aeb6-c7eb0af44be1}",itemId: 17,recycleBinEnabled: true,enableMinorVersioning: true,enableModeration: false,forceCheckout: true,rootFolderUrl: "\u002fCOVID-19\u002fPages",itemPermissions:{High:16,Low:196673}};
+    SP.Ribbon.WebPartComponent.registerWithPageManager(initInfo);
+    var wpcomp = SP.Ribbon.WebPartComponent.get_instance();
+    var hid;
+    hid = document.getElementById("_wpSelected");
+    if (hid != null)
+    {
+        var wpid = hid.value;
+        if (wpid.length > 0)
+        {
+            var zc = document.getElementById(wpid);
+            if (zc != null)
+                wpcomp.selectWebPart(zc, false);
+        }
+    }
+    hid = document.getElementById("_wzSelected");
+    if (hid != null)
+    {
+        var wzid = hid.value;
+        if (wzid.length > 0)
+        {
+            wpcomp.selectWebPartZone(null, wzid);
+        }
+    }
+}
+ExecuteOrDelayUntilScriptLoaded(_RegisterWebPartPageCUI, "sp.ribbon.js"); var __wpmExportWarning='This Web Part Page has been personalized. As a result, one or more Web Part properties may contain confidential information. Make sure the properties contain information that is safe for others to read. After exporting this Web Part, view properties in the Web Part description file (.WebPart) by using a text editor such as Microsoft Notepad.';var __wpmCloseProviderWarning='You are about to close this Web Part.  It is currently providing data to other Web Parts, and these connections will be deleted if this Web Part is closed.  To close this Web Part, click OK.  To keep this Web Part, click Cancel.';var __wpmDeleteWarning='You are about to permanently delete this Web Part.  Are you sure you want to do this?  To delete this Web Part, click OK.  To keep this Web Part, click Cancel.';//]]>
+</script>
+<script type="text/javascript">
+// <![CDATA[
+// ]]>
+</script>
+<script type="text/javascript">RegisterSod("sp.core.js", "\u002f_layouts\u002fsp.core.js?rev=7ByNlH\u00252BvcgRJg\u00252BRCctdC0w\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSod("sp.res.resx", "\u002f_layouts\u002fScriptResx.ashx?culture=en\u00252Dus\u0026name=SP\u00252ERes\u0026rev=b6\u00252FcRx1a6orhAQ\u00252FcF\u00252B0ytQ\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSod("sp.ui.dialog.js", "\u002f_layouts\u002fsp.ui.dialog.js?rev=Tpcmo1\u00252FSu6R0yewHowDl5g\u00253D\u00253D");RegisterSodDep("sp.ui.dialog.js", "sp.core.js");RegisterSodDep("sp.ui.dialog.js", "sp.res.resx");</script>
+<script type="text/javascript">RegisterSod("core.js", "\u002f_layouts\u002f1033\u002fcore.js?rev=RiGU6\u00252FvAzNgOjxKFQLw9pw\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSod("sp.runtime.js", "\u002f_layouts\u002fsp.runtime.js?rev=IGffcZfunndj0247nOxKVg\u00253D\u00253D");RegisterSodDep("sp.runtime.js", "sp.core.js");RegisterSodDep("sp.runtime.js", "sp.res.resx");</script>
+<script type="text/javascript">RegisterSod("sp.js", "\u002f_layouts\u002fsp.js?rev=\u00252B4ZEyA892P3T0504qi0paw\u00253D\u00253D");RegisterSodDep("sp.js", "sp.core.js");RegisterSodDep("sp.js", "sp.runtime.js");RegisterSodDep("sp.js", "sp.ui.dialog.js");RegisterSodDep("sp.js", "sp.res.resx");</script>
+<script type="text/javascript">RegisterSod("cui.js", "\u002f_layouts\u002fcui.js?rev=OOyJv78CADNBeet\u00252FvTvniQ\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSod("inplview", "\u002f_layouts\u002finplview.js?rev=WB6Gy8a027aeNCq7koVCUg\u00253D\u00253D");RegisterSodDep("inplview", "core.js");RegisterSodDep("inplview", "sp.js");</script>
+<script type="text/javascript">RegisterSod("ribbon", "\u002f_layouts\u002fsp.ribbon.js?rev=F\u00252BUEJ66rbXzSvpf7nN69wQ\u00253D\u00253D");RegisterSodDep("ribbon", "core.js");RegisterSodDep("ribbon", "sp.core.js");RegisterSodDep("ribbon", "sp.js");RegisterSodDep("ribbon", "cui.js");RegisterSodDep("ribbon", "sp.res.resx");RegisterSodDep("ribbon", "sp.runtime.js");RegisterSodDep("ribbon", "inplview");</script>
+<script type="text/javascript">RegisterSod("sp.publishing.resources.resx", "\u002f_layouts\u002fScriptResx.ashx?culture=en\u00252Dus\u0026name=SP\u00252EPublishing\u00252EResources\u0026rev=q6nxzZIVVXE5X1SPZIMD3A\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSod("sp.ui.pub.ribbon.js", "\u002f_layouts\u002fsp.ui.pub.ribbon.js?rev=epwnP\u00252FbdljnctbCVld1nnA\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSod("msstring.js", "\u002f_layouts\u002f1033\u002fmsstring.js?rev=QtiIcPH3HV7LgVSO7vONFg\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSod("browserScript", "\u002f_layouts\u002f1033\u002fnon_ie.js?rev=EVTj1bu32\u00252FMla6SDN\u00252FsNTA\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSodDep("browserScript", "msstring.js");</script>
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadMenu, {"_childListElementCssClass":null,"_skin":"WVI","attributes":{"ExpandMode":"SingleExpandedItem "},"clientStateFieldID":"ctl00_RadMenu1_ClientState","collapseAnimation":"{\"duration\":450}","expandAnimation":"{\"duration\":450}","itemData":[{"items":[{"value":"West Virginia Strong Summer Food Assistance Programs","navigateUrl":"/COVID-19/Pages/West-Virginia-Strong-Summer-Food-Assistance-Programs.aspx"}],"value":"Public","navigateUrl":"/COVID-19/Pages/communities.aspx"},{"value":"COVID-19 Vaccine","navigateUrl":"/COVID-19/Pages/Vaccine.aspx","cssClass":"rmFocused"},{"value":"Providers","navigateUrl":"/COVID-19/Pages/Provider-Resources.aspx"},{"value":"Local Health","navigateUrl":"/COVID-19/Pages/health-dept.aspx"},{"value":"Schools & Universities","navigateUrl":"/COVID-19/Pages/Schools.aspx"},{"value":"Travel","navigateUrl":"/COVID-19/Pages/travelers.aspx"},{"value":"Behavioral Health","navigateUrl":"/COVID-19/Pages/Behavioral-Health.aspx"},{"value":"Free COVID-19 Testing","navigateUrl":"/COVID-19/Pages/testing.aspx"}]}, null, null, $get("ctl00_RadMenu1"));
+});
+//]]>
+</script>
+</form>
+<!--  Hidden Placeholders -->
+
+<!--  End of Hidden Placeholders -->
+
+
+
+<script type="text/javascript" >
+	var pattern = /http(s)*:\/\/translate.google.com+/;
+
+    if (window.top !== window.self && !pattern.test(window.top.location)) {
+        document.body.innerHTML='The official website is hosted at coronavirus.wv.gov.';
+      
+        window.self.onload=function(evt){
+            document.body.innerHTML='The official website is hosted at coronavirus.wv.gov.';
+        };
+    }
+</script>
+
+
+</body>
+</html>

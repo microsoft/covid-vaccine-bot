@@ -3,7 +3,8 @@
 	"links": {
 		"info": {
 			"text": "c19.links/info.AZ.Cochise",
-			"url": "https://covid-cochisehealth.hub.arcgis.com/pages/vaccines"
+			"url": "https://covid-cochisehealth.hub.arcgis.com/pages/vaccines",
+			"scrape": false
 		}
 	}
 }

@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7]><html class="iem7"  lang="en" dir="ltr"><![endif]-->
+<!--[if lte IE 6]><html class="lt-ie9 lt-ie8 lt-ie7"  lang="en" dir="ltr"><![endif]-->
+<!--[if (IE 7)&(!IEMobile)]><html class="lt-ie9 lt-ie8"  lang="en" dir="ltr"><![endif]-->
+<!--[if IE 8]><html class="lt-ie9"  lang="en" dir="ltr"><![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!-->
+<html  lang="en" dir="ltr" prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# book: http://ogp.me/ns/book# profile: http://ogp.me/ns/profile# video: http://ogp.me/ns/video# product: http://ogp.me/ns/product# content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8" />
+<meta about="/covid-19/vaccine" typeof="skos:Concept" property="rdfs:label skos:prefLabel" content="Vaccine" />
+<link rel="shortcut icon" href="https://www.healthvermont.gov/sites/all/themes/vdh/favicon.ico" type="image/vnd.microsoft.icon" />
+<meta name="description" content="Safe and effective COVID-19 vaccines are important tools to help end the COVID-19 pandemic. Vaccine distribution is underway in Vermont, and planning continues to ensure equitable access to COVID-19 vaccines." />
+<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="canonical" href="https://www.healthvermont.gov/covid-19/vaccine" />
+<link rel="shortlink" href="https://www.healthvermont.gov/taxonomy/term/6216" />
+<meta property="fb:app_id" content="114960415615366" />
+<meta property="og:site_name" content="Vermont Department of Health" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.healthvermont.gov/covid-19/vaccine" />
+<meta property="og:title" content="Vaccine" />
+<meta property="og:description" content="Safe and effective COVID-19 vaccines are important tools to help end the COVID-19 pandemic. Vaccine distribution is underway in Vermont, and planning continues to ensure equitable access to COVID-19 vaccines." />
+<meta property="og:image" content="http://www.healthvermont.gov/sites/all/themes/vdh/images/logo-opengraph.png" />
+  <title>Vaccine | Vermont Department of Health</title>
+
+      <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="viewport" content="width=device-width" />
+    <!--[if IEMobile]><meta http-equiv="cleartype" content="on" /><![endif]-->
+
+  <link type="text/css" rel="stylesheet" href="https://www.healthvermont.gov/sites/default/files/css/css_lQaZfjVpwP_oGNqdtWCSpJT1EMqXdMiU84ekLLxQnc4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.healthvermont.gov/sites/default/files/css/css_hTLrwzbU9bZhjvzx-j5entbJFEHkjJyd6RgHEla8FhA.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.healthvermont.gov/sites/default/files/css/css_qCVCse_lfUWhnMPPeQOc3f-qpHbKnnCUSvQk_zdf-OQ.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.healthvermont.gov/sites/default/files/css/css_dvb1PVZqxwYdELCEIHKqMeMMU7RXl2UKrQVw9M8JBj0.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.healthvermont.gov/sites/default/files/css/css_YkLH0yeDvR6TS-CeMJvHkkHmJ5pe_SBfX7LdilmW56U.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.healthvermont.gov/sites/default/files/css/css_9uw2W-UNx0nqc4rcqusSPlD6ffS7xzUFbvpXT5e3L_s.css" media="all" />
+  <script src="https://www.healthvermont.gov/sites/default/files/js/js_zS-CmNFGyegtLYJmqFRpxQvvQrfPIFrOMq_3T3C8sZE.js"></script>
+<script src="https://www.healthvermont.gov/sites/default/files/js/js_NgWESZEZxPhe7sLn8EWUccYa3iy3Pye6UdBNv5EmIwQ.js"></script>
+<script src="https://www.healthvermont.gov/sites/default/files/js/js_qinKaxt5q2dFbnlB1PZuMdw_6_niGxEyNi6ORLDcGNE.js"></script>
+<script src="https://www.healthvermont.gov/sites/default/files/js/js_QyQSZnzMt-W8C-7fdKWyaXAXk1ZA8YUDoBkQfdWDi2Q.js"></script>
+<script src="https://www.healthvermont.gov/sites/default/files/js/js_2pBP9mAY4a9zdU6Qi9_d7UsfYTm4zMWyQPPryDOd3Hc.js"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"vdh","theme_token":"54QYkZf0PhUYlfBg8fMtz7y9IECjlBGAGxSAHzufglk","jquery_version":"1.7","js":{"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/1.7\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.widget.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.position.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.menu.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.autocomplete.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/external\/jquery.cookie.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/misc\/jquery.form.min.js":1,"misc\/ajax.js":1,"sites\/all\/modules\/contrib\/jquery_update\/js\/jquery_update.js":1,"sites\/all\/modules\/contrib\/extlink\/extlink.js":1,"sites\/all\/modules\/contrib\/apachesolr_autocomplete\/apachesolr_autocomplete_jqueryui.js":1,"sites\/all\/modules\/contrib\/fancybox\/fancybox.js":1,"sites\/all\/libraries\/fancybox\/source\/jquery.fancybox.pack.js":1,"sites\/all\/libraries\/fancybox\/lib\/jquery.mousewheel.pack.js":1,"sites\/all\/modules\/contrib\/views_load_more\/views_load_more.js":1,"sites\/all\/modules\/contrib\/views\/js\/base.js":1,"misc\/progress.js":1,"sites\/all\/modules\/contrib\/views\/js\/ajax_view.js":1,"sites\/all\/modules\/contrib\/responsive_menus\/styles\/ResponsiveMultiLevelMenu\/js\/responsive_menus_codrops_responsive_multi.js":1,"sites\/all\/libraries\/ResponsiveMultiLevelMenu\/js\/modernizr.custom.js":1,"sites\/all\/libraries\/ResponsiveMultiLevelMenu\/js\/jquery.dlmenu.js":1,"sites\/all\/libraries\/DataTables\/datatables.min.js":1,"sites\/all\/themes\/vdh\/js\/jquery.dynamicmaxheight.js":1,"sites\/all\/themes\/vdh\/js\/script.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"misc\/ui\/jquery.ui.menu.css":1,"misc\/ui\/jquery.ui.autocomplete.css":1,"modules\/aggregator\/aggregator.css":1,"sites\/all\/modules\/contrib\/calendar\/css\/calendar_multiday.css":1,"sites\/all\/modules\/contrib\/date\/date_api\/date.css":1,"sites\/all\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/contrib\/views_sexy_throbber\/css\/views_sexy_throbber.css":1,"sites\/all\/modules\/contrib\/extlink\/extlink.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/contrib\/apachesolr_autocomplete\/apachesolr_autocomplete.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/libraries\/fancybox\/source\/jquery.fancybox.css":1,"sites\/all\/libraries\/ResponsiveMultiLevelMenu\/css\/component.css":1,"https:\/\/fonts.googleapis.com\/css?family=Noto+Sans":1,"sites\/all\/libraries\/DataTables\/datatables.min.css":1,"modules\/taxonomy\/taxonomy.css":1,"sites\/all\/themes\/vdh\/system.menus.css":1,"sites\/all\/themes\/vdh\/system.messages.css":1,"sites\/all\/themes\/vdh\/system.theme.css":1,"sites\/all\/themes\/vdh\/css\/styles.css":1}},"fancybox":{"selectors":["#vdh-social-media .youtube a"]},"better_exposed_filters":{"views":{"latest_tweet":{"displays":{"block":{"filters":[]}}},"division_listing":{"displays":{"block":{"filters":[]}}},"program_content":{"displays":{"block":{"filters":[]}}},"alerts":{"displays":{"block":{"filters":[]}}}}},"apachesolr_autocomplete":{"forms":{"search-block-form":{"id":"search-block-form","path":"\/apachesolr_autocomplete_callback\/apachesolr_search_page%3Acore_search"}}},"views":{"ajax_path":"\/views\/ajax","ajaxViews":{"views_dom_id:f281748cf67b8660a070fea94e644fa4":{"view_name":"program_content","view_display_id":"block","view_args":"6216","view_path":"taxonomy\/term\/6216","view_base_path":null,"view_dom_id":"f281748cf67b8660a070fea94e644fa4","pager_element":0}}},"urlIsAjaxTrusted":{"\/views\/ajax":true,"\/covid-19\/vaccine":true},"responsive_menus":[{"selectors":"#block-system-main-menu","media_size":"767","animation_in":"dl-animate-in-4","animation_out":"dl-animate-out-5","responsive_menus_style":"codrops_responsive_multi"}],"extlink":{"extTarget":"_blank","extClass":"ext","extLabel":"(link is external)","extImgClass":0,"extSubdomains":1,"extExclude":"(apps\\.health\\.vermont\\.gov)","extInclude":"","extCssExclude":"#block-views-home-page-slider-block,\r\n#vdh-social-media,\r\n.panic-button,\r\n.view-search-acquia","extCssExplicit":"#content","extAlert":0,"extAlertText":"This link will take you to an external web site.","mailtoClass":0,"mailtoLabel":"(link sends e-mail)"}});</script>
+  
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-TVVFFD8');
+  </script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Facebook Pixel Code -->
+  <script>
+    ! function(f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function() {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = '2.0';
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', '2190532644570674');
+    fbq('track', 'PageView');
+
+    function downLoadActionPlan() {
+      fbq('trackCustom', 'download_actionplan');
+    }
+
+    function downLoadTriggerBro() {
+      fbq('trackCustom', 'download_triggerbro');
+    }
+  </script>
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2190532644570674&ev=PageView&noscript=1" /></noscript>
+  <!-- End Facebook Pixel Code -->
+</head>
+
+<body class="html not-front not-logged-in no-sidebars page-taxonomy page-taxonomy-term page-taxonomy-term- page-taxonomy-term-6216 page-program section-covid-19" >
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TVVFFD8" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+      <p id="skip-link">
+      <a href="#block-system-main-menu" class="element-invisible element-focusable">Jump to navigation</a>
+    </p>
+      
+<div id="page">
+
+  <aside class="vertical-navigation">
+          <a href="/" title="Home" rel="home" class="header__logo" id="logo"><img src="https://www.healthvermont.gov/sites/all/themes/vdh/logo-small.gif" alt="Home" class="header__logo-image" /></a>
+          <div class="region region-vertical-nav">
+    <div id="block-system-main-menu" class="block block-system block-menu first last odd" role="navigation">
+
+      
+  <ul class="menu"><li class="menu__item is-leaf menu__item is-leaf first leaf home"><a href="/" class="menu__link menu__link">Home</a></li>
+<li class="menu__item is-expanded is-active-trail menu__item is-expanded is-active-trail expanded active-trail covid-19"><a href="/covid-19" class="menu__link is-active-trail menu__link is-active-trail active-trail">COVID-19</a><ul class="menu"><li class="menu__item is-leaf menu__item is-leaf first leaf"><a href="/covid-19/current-activity" class="menu__link menu__link">Current Activity</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/covid-19/protect-yourself-others" class="menu__link menu__link">Protect Yourself &amp; Others</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/covid-19/symptoms-sickness" class="menu__link menu__link">Symptoms &amp; Sickness</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/covid-19/testing" class="menu__link menu__link">Testing</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/covid-19/travel-quarantine" class="menu__link menu__link">Travel &amp; Quarantine</a></li>
+<li class="menu__item is-leaf is-active-trail menu__item is-leaf is-active-trail leaf active-trail"><a href="/covid-19/vaccine" class="menu__link is-active-trail menu__link is-active-trail active-trail active">Vaccine</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/covid-19/health-care-professionals" class="menu__link menu__link">Health Care Professionals</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/covid-19/your-community" class="menu__link menu__link">Your Community</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/covid-19/resources" class="menu__link menu__link">Resources</a></li>
+<li class="menu__item is-leaf menu__item is-leaf last leaf"><a href="/covid-19/faqs" class="menu__link menu__link">FAQs</a></li>
+</ul></li>
+<li class="menu__item is-expanded menu__item is-expanded expanded alcohol" data-contactinfo="Alcohol &amp; Drug Abuse Programs&lt;br /&gt;
+Phone: 802-651-1550&lt;br /&gt;
+&lt;a href=&quot;mailto:AHS.VDHADAP@vermont.gov&quot;&gt;AHS.VDHADAP@vermont.gov&lt;/a&gt;"><a href="/alcohol-drugs" class="menu__link menu__link">Alcohol &amp; Drugs</a><ul class="menu"><li class="menu__item is-leaf menu__item is-leaf first leaf"><a href="/alcohol-drugs/help" class="menu__link menu__link">How to Get Help</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/alcohol-drugs/by-substance" class="menu__link menu__link">Alcohol &amp; Drugs</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/alcohol-drugs/lets-talk-cannabis" class="menu__link menu__link">Let&#039;s Talk Cannabis</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/alcohol-drugs/services" class="menu__link menu__link">Programs &amp; Services</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/alcohol-drugs/grants-contracts" class="menu__link menu__link">Grantees &amp; Contractors</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/alcohol-drugs/professionals" class="menu__link menu__link">Health Professionals</a></li>
+<li class="menu__item is-leaf menu__item is-leaf last leaf"><a href="/alcohol-drugs/reports" class="menu__link menu__link">Plans &amp; Reports</a></li>
+</ul></li>
+<li class="menu__item is-expanded menu__item is-expanded expanded children-families" data-contactinfo="Maternal &amp; Child Health Division&lt;br /&gt;
+108 Cherry Street&lt;br /&gt;
+Burlington, VT 05401&lt;br /&gt;
+Phone: 802-863-7333"><a href="/family" class="menu__link menu__link">Children, Youth &amp; Families</a><ul class="menu"><li class="menu__item is-leaf menu__item is-leaf first leaf"><a href="/family/relationships" class="menu__link menu__link">Healthy Relationships</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/family/pregnancy" class="menu__link menu__link">Family Planning &amp; Pregnancy</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/family/babies" class="menu__link menu__link">Infants &amp; Young Children</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/family/special-health-needs" class="menu__link menu__link">Children With Special Health Needs</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/family/school" class="menu__link menu__link">School Health</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/family/adolescents" class="menu__link menu__link">Adolescent Health</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/family/health-care" class="menu__link menu__link">Health Care for Children &amp; Youth</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/family/wic" class="menu__link menu__link">WIC</a></li>
+<li class="menu__item is-leaf menu__item is-leaf last leaf"><a href="/family/reports" class="menu__link menu__link">Plans &amp; Reports</a></li>
+</ul></li>
+<li class="menu__item is-expanded menu__item is-expanded expanded health-environment" data-contactinfo="Environmental Health Division&lt;br /&gt;
+108 Cherry Street&lt;br /&gt; 
+P.O. Box 70 – Drawer 30&lt;br /&gt;
+Burlington, VT 05402-0070&lt;br /&gt;
+Phone: 802-863-7220 or 800-439-8550 (in Vermont)&lt;br /&gt;
+Fax: 802-863-7483&lt;br /&gt;
+&lt;a href=&quot;mailto:AHS.VDHEnvHealth@vermont.gov&quot;&gt;AHS.VDHEnvHealth@vermont.gov&lt;/a&gt;&lt;br /&gt;"><a href="/environment" class="menu__link menu__link">Health &amp; The Environment</a><ul class="menu"><li class="menu__item is-leaf menu__item is-leaf first leaf"><a href="/environment/asbestos-lead" class="menu__link menu__link">Asbestos &amp; Lead in Buildings</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/environment/children" class="menu__link menu__link">Children&#039;s Environmental Health</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/environment/climate" class="menu__link menu__link">Climate &amp; Health</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/environment/drinking-water" class="menu__link menu__link">Drinking Water</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/environment/chemicals" class="menu__link menu__link">Environmental Chemicals &amp; Pollutants</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/tracking" class="menu__link menu__link">Environmental Public Health Tracking</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/environment/food-lodging" class="menu__link menu__link">Food &amp; Lodging Program</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/environment/home" class="menu__link menu__link">Healthy Homes</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/environment/school" class="menu__link menu__link">Healthy Schools</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/environment/radiological" class="menu__link menu__link">Radiological Health</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/environment/recreational-water" class="menu__link menu__link">Recreational Water</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/environment/town-health-officer" class="menu__link menu__link">Town Health Officers</a></li>
+<li class="menu__item is-leaf menu__item is-leaf last leaf"><a href="/environment/reports" class="menu__link menu__link">Plans &amp; Reports</a></li>
+</ul></li>
+<li class="menu__item is-expanded menu__item is-expanded expanded chronic-diseases" data-contactinfo="Health Promotion &amp; Disease Prevention Division&lt;br /&gt;
+108 Cherry Street&lt;br /&gt;
+Burlington, VT 05401&lt;br /&gt;
+Phone: 802-863-7330"><a href="/wellness" class="menu__link menu__link">Health Promotion &amp; Chronic Disease</a><ul class="menu"><li class="menu__item is-leaf menu__item is-leaf first leaf"><a href="/3-4-50" class="menu__link menu__link">3-4-50: Prevent Chronic Disease</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/wellness/worksite-wellness" class="menu__link menu__link">Worksite Wellness</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/wellness/you-first" class="menu__link menu__link">You First</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/wellness/you-first-providers" class="menu__link menu__link">You First for Providers</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/wellness/physical-activity-nutrition" class="menu__link menu__link">Physical Activity &amp; Nutrition</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/wellness/tobacco" class="menu__link menu__link">Tobacco</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/wellness/oral-health" class="menu__link menu__link">Oral Health</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/wellness/cancer" class="menu__link menu__link">Cancer</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/wellness/diabetes" class="menu__link menu__link">Diabetes</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/wellness/heart-disease" class="menu__link menu__link">Heart Disease</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/wellness/asthma" class="menu__link menu__link">Asthma &amp; Lung Disease</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/wellness/other" class="menu__link menu__link">Other Chronic Conditions</a></li>
+<li class="menu__item is-leaf menu__item is-leaf last leaf"><a href="/wellness/reports" class="menu__link menu__link">Plans &amp; Reports</a></li>
+</ul></li>
+<li class="menu__item is-expanded menu__item is-expanded expanded infectious-diseases" data-contactinfo="Health Surveillance Division&lt;br /&gt;
+P.O. Box 70&lt;br /&gt;
+Burlington, VT 05402&lt;br /&gt;
+Phone: 802-863-7240&lt;br /&gt;
+Fax: 802-865-7701"><a href="/disease-control" class="menu__link menu__link">Immunizations &amp; Infectious Disease</a><ul class="menu"><li class="menu__item is-leaf menu__item is-leaf first leaf"><a href="/disease-control/food-water" class="menu__link menu__link">Food &amp; Waterborne Diseases</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/disease-control/hai" class="menu__link menu__link">Healthcare-Associated Infections</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/disease-control/hepatitis" class="menu__link menu__link">Hepatitis</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/disease-control/hiv" class="menu__link menu__link">HIV</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/disease-control/hiv-std-hepatitis-community-resources" class="menu__link menu__link">HIV, STD &amp; Hepatitis Community Resources</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/disease-control/immunization" class="menu__link menu__link">Immunizations</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/disease-control/immunization-providers" class="menu__link menu__link">Immunization &amp; Health Care Professionals</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/disease-control/disease-reporting" class="menu__link menu__link">Infectious Disease Reporting and Data</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/disease-control/flu" class="menu__link menu__link">Influenza</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/disease-control/measles" class="menu__link menu__link">Measles</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/disease-control/mosquito-borne-diseases" class="menu__link menu__link">Mosquito-borne Diseases</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/disease-control/other-diseases" class="menu__link menu__link">Other Reportable Diseases</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/disease-control/sepsis" class="menu__link menu__link">Sepsis</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/disease-control/std" class="menu__link menu__link">Sexually Transmitted Diseases</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/disease-control/tickborne-diseases" class="menu__link menu__link">Tickborne Diseases</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/disease-control/tb" class="menu__link menu__link">Tuberculosis</a></li>
+<li class="menu__item is-leaf menu__item is-leaf last leaf"><a href="/disease-control/zoonotic-diseases" class="menu__link menu__link">Zoonotic Diseases</a></li>
+</ul></li>
+<li class="menu__item is-expanded menu__item is-expanded expanded local-offices" data-contactinfo="Local Health Division&lt;br /&gt;
+108 Cherry Street, Room 102&lt;br /&gt;
+Burlington, VT 05402&lt;br /&gt;
+Phone: 802-863-7333&lt;br /&gt;
+Fax: 802-863-7229&lt;br /&gt;"><a href="/local" class="menu__link menu__link">Local Health Offices</a><ul class="menu"><li class="menu__item is-leaf menu__item is-leaf first leaf"><a href="/local/barre" class="menu__link menu__link">Barre</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/local/bennington" class="menu__link menu__link">Bennington</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/local/brattleboro" class="menu__link menu__link">Brattleboro</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/local/burlington" class="menu__link menu__link">Burlington</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/local/middlebury" class="menu__link menu__link">Middlebury</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/local/morrisville" class="menu__link menu__link">Morrisville</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/local/newport" class="menu__link menu__link">Newport</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/local/rutland" class="menu__link menu__link">Rutland</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/local/springfield" class="menu__link menu__link">Springfield</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/local/st-albans" class="menu__link menu__link">St. Albans</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/local/st-johnsbury" class="menu__link menu__link">St. Johnsbury</a></li>
+<li class="menu__item is-leaf menu__item is-leaf last leaf"><a href="/local/white-river-junction" class="menu__link menu__link">White River Junction</a></li>
+</ul></li>
+<li class="menu__item is-expanded menu__item is-expanded expanded public-health" data-contactinfo="Public Health Laboratory&lt;br /&gt;
+359 South Park Drive&lt;br /&gt;
+Colchester, VT 05446&lt;br /&gt;
+Phone: 802-338-4724 or 800-660-9997 (in Vermont)"><a href="/lab" class="menu__link menu__link">Public Health Laboratory</a><ul class="menu"><li class="menu__item is-leaf menu__item is-leaf first leaf"><a href="/lab/drinking-water" class="menu__link menu__link">Drinking Water Testing</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/lab/environmental" class="menu__link menu__link">Environmental Testing</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/lab/clinical" class="menu__link menu__link">Clinical Testing</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/lab/rabies" class="menu__link menu__link">Rabies Testing</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/lab/food-safety" class="menu__link menu__link">Food Safety Testing</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/lab/preparedness" class="menu__link menu__link">Laboratory Emergency Preparedness</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/lab/certification" class="menu__link menu__link">Laboratory Certification or Approval</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/lab/forms" class="menu__link menu__link">Forms &amp; Ordering Information</a></li>
+<li class="menu__item is-leaf menu__item is-leaf last leaf"><a href="/lab/contact" class="menu__link menu__link">Contact Us/Directions</a></li>
+</ul></li>
+<li class="menu__item is-expanded menu__item is-expanded expanded research-records" data-contactinfo="Health Surveillance Division&lt;br /&gt;
+P.O. Box 70&lt;br /&gt;
+Burlington, VT 05402&lt;br /&gt;
+Phone: 802-863-7300&lt;br /&gt;"><a href="/stats" class="menu__link menu__link">Health Statistics &amp; Vital Records</a><ul class="menu"><li class="menu__item is-leaf menu__item is-leaf first leaf"><a href="/stats/data" class="menu__link menu__link">How Healthy Are We? Public Health Data</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/stats/vital-records" class="menu__link menu__link">Vital Records &amp; Population Data</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/GIS" class="menu__link menu__link">Public Health GIS</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/stats/surveys" class="menu__link menu__link">Population Health Surveys &amp; Data</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/stats/systems" class="menu__link menu__link">Health Care Systems Reporting</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/stats/registries" class="menu__link menu__link">Registries</a></li>
+<li class="menu__item is-leaf menu__item is-leaf last leaf"><a href="/stats/topics" class="menu__link menu__link">Surveillance &amp; Reporting by Topic</a></li>
+</ul></li>
+<li class="menu__item is-expanded menu__item is-expanded expanded health-professionals" data-contactinfo="Department of Health&lt;br /&gt;
+108 Cherry Street&lt;br /&gt;
+Burlington, VT 05402&lt;br /&gt;
+802-863-7200 or 800-464-4343 (in Vermont)"><a href="/systems" class="menu__link menu__link">Health Professionals &amp; Systems</a><ul class="menu"><li class="menu__item is-leaf menu__item is-leaf first leaf"><a href="/systems/advance-directives" class="menu__link menu__link">Advance Directives</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/systems/end-of-life-decisions" class="menu__link menu__link">End of Life Decisions</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/systems/health-professionals" class="menu__link menu__link">Health Professionals</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/systems/medical-practice-board" class="menu__link menu__link">Board of Medical Practice</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/systems/medical-examiner" class="menu__link menu__link">Office of The Chief Medical Examiner</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/systems/health-system-reform" class="menu__link menu__link">Health System Reform</a></li>
+<li class="menu__item is-leaf menu__item is-leaf last leaf"><a href="/systems/hospitals" class="menu__link menu__link">Hospitals &amp; Health Systems</a></li>
+</ul></li>
+<li class="menu__item is-expanded menu__item is-expanded expanded emergency" data-contactinfo="Emergency Preparedness, Response &amp; Injury Prevention Division&lt;br /&gt;
+108 Cherry Street&lt;br /&gt;
+P.O. Box 70&lt;br /&gt;
+Burlington, VT 05402&lt;br /&gt;"><a href="/emergency" class="menu__link menu__link">Emergency Preparedness, EMS &amp; Injury Prevention</a><ul class="menu"><li class="menu__item is-leaf menu__item is-leaf first leaf"><a href="/emergency/prepare" class="menu__link menu__link">Public Health Preparedness</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/emergency/injury" class="menu__link menu__link">Injury Prevention</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/emergency/ems" class="menu__link menu__link">Emergency Medical Services</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/emergency/ems-children" class="menu__link menu__link">Emergency Medical Services for Children</a></li>
+<li class="menu__item is-leaf menu__item is-leaf last leaf"><a href="/emergency/volunteer" class="menu__link menu__link">Volunteering</a></li>
+</ul></li>
+<li class="menu__item is-expanded menu__item is-expanded expanded response" data-contactinfo="Department of Health&lt;br /&gt;
+108 Cherry Street&lt;br /&gt;
+Burlington, VT 05402&lt;br /&gt;"><a href="/response" class="menu__link menu__link">Public Health Response</a><ul class="menu"><li class="menu__item is-leaf menu__item is-leaf first leaf"><a href="/response/alerts" class="menu__link menu__link">Alerts</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/response/coronavirus-covid-19" class="menu__link menu__link">Coronavirus (COVID-19)</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/response/covid-19-response" class="menu__link menu__link">COVID-19 Response</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/response/infectious-disease" class="menu__link menu__link">Disease Outbreaks</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/response/environmental" class="menu__link menu__link">Environmental Contamination</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/response/alcohol-drugs" class="menu__link menu__link">Opioids</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/response/safe-needle-disposal-vermont" class="menu__link menu__link">Safe Needle Disposal in Vermont</a></li>
+<li class="menu__item is-leaf menu__item is-leaf last leaf"><a href="/response/reports" class="menu__link menu__link">Plans &amp; Reports</a></li>
+</ul></li>
+<li class="menu__item is-expanded menu__item is-expanded expanded news-social" data-contactinfo="Communication Office&lt;br /&gt;
+108 Cherry Street&lt;br /&gt;
+Burlington, VT 05402&lt;br /&gt;
+Phone: 802-863-7281&lt;br /&gt;
+&lt;a href=&quot;mailto:AHS.VDHPublicCommunication@vermont.gov&quot;&gt;Email the Communication Office&lt;a/&gt;&lt;br /&gt;"><a href="/media" class="menu__link menu__link">News &amp; Information Resources</a><ul class="menu"><li class="menu__item is-leaf menu__item is-leaf first leaf"><a href="/media/newsroom" class="menu__link menu__link">News Room</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/media/social" class="menu__link menu__link">Social Media</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/media/translation" class="menu__link menu__link">Translated Information</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/media/deaf" class="menu__link menu__link">Resources for Deaf and Hard of Hearing People</a></li>
+<li class="menu__item is-leaf menu__item is-leaf last leaf"><a href="/media/calendar" class="menu__link menu__link">Events Calendar</a></li>
+</ul></li>
+<li class="menu__item is-expanded menu__item is-expanded last expanded about-us" data-contactinfo="Department of Health&lt;br /&gt;
+108 Cherry Street&lt;br /&gt;
+Burlington, VT 05402"><a href="/about" class="menu__link menu__link">About Us</a><ul class="menu"><li class="menu__item is-leaf menu__item is-leaf first leaf"><a href="/about/vision" class="menu__link menu__link">Our Vision &amp; Mission</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/about/organization" class="menu__link menu__link">Organization &amp; Locations</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/about/performance" class="menu__link menu__link">How Are We Doing? Performance Scorecards</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/about/laws" class="menu__link menu__link">Laws &amp; Regulations</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/about/reports" class="menu__link menu__link">Plans &amp; Reports</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/about/financial-transparency-vermont-state-government" class="menu__link menu__link">Financial Transparency in Vermont State Government</a></li>
+<li class="menu__item is-leaf menu__item is-leaf last leaf"><a href="/about/contact" class="menu__link menu__link">Contact Us</a></li>
+</ul></li>
+</ul>
+</div>
+  </div>
+    <a class="nav-return">Return</a>
+  </aside>
+
+  <div id="main">
+
+    <header class="header" id="header" role="banner">
+
+      
+      
+        <div class="header__region region region-header">
+    <div id="block-menu-menu-header-links" class="block block-menu block-header-links first odd" role="navigation">
+
+      
+  <ul class="menu"><li class="menu__item is-expanded menu__item is-expanded first expanded quicklinks"><a href="/" class="menu__link menu__link">Quick Links</a><ul class="menu"><li class="menu__item is-expanded menu__item is-expanded first expanded"><a href="/" class="menu__link menu__link">Column 1</a><ul class="menu"><li class="menu__item is-leaf menu__item is-leaf first leaf"><a href="/systems/advance-directives" class="menu__link menu__link">Advance Directives</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/stats/vital-records" class="menu__link menu__link">Birth, Death &amp; Marriage</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/systems/medical-practice-board" class="menu__link menu__link">Board of Medical Practice</a></li>
+<li class="menu__item is-leaf menu__item is-leaf last leaf"><a href="https://www.healthvermont.gov/covid-19/current-activity/vermont-dashboard" class="menu__link menu__link">COVID-19 Vermont Dashboard</a></li>
+</ul></li>
+<li class="menu__item is-expanded menu__item is-expanded expanded"><a href="/" class="menu__link menu__link">Column 2</a><ul class="menu"><li class="menu__item is-leaf menu__item is-leaf first leaf"><a href="/environment/food-lodging" class="menu__link menu__link">Food &amp; Lodging</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/about-us/contact-us/get-help-now" class="menu__link menu__link">Get Help Now</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/children-youth-families/health-care-children-youth/find-health-insurance" class="menu__link menu__link">Health Insurance</a></li>
+<li class="menu__item is-leaf menu__item is-leaf last leaf"><a href="/environment/home" class="menu__link menu__link">Healthy Homes</a></li>
+</ul></li>
+<li class="menu__item is-expanded menu__item is-expanded expanded"><a href="/" class="menu__link menu__link">Column 3</a><ul class="menu"><li class="menu__item is-leaf menu__item is-leaf first leaf"><a href="/health-statistics-vital-records/health-care-systems-reporting/hospital-report-cards" class="menu__link menu__link">Hospital Report Cards</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/disease-control/immunization" class="menu__link menu__link">Immunization</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/lab" class="menu__link menu__link">Laboratory Services</a></li>
+<li class="menu__item is-leaf menu__item is-leaf last leaf"><a href="/about-us/laws-regulations/rules-and-regulations" class="menu__link menu__link">Rules &amp; Regulations</a></li>
+</ul></li>
+<li class="menu__item is-expanded menu__item is-expanded last expanded"><a href="/" class="menu__link menu__link">Column 4</a><ul class="menu"><li class="menu__item is-leaf menu__item is-leaf first leaf"><a href="/environment/town-health-officer" class="menu__link menu__link">Town Health Officers</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/media/translation" class="menu__link menu__link">Translated Information</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="http://www.vermont.gov" target="_blank" class="menu__link menu__link">Vermont.gov</a></li>
+<li class="menu__item is-leaf menu__item is-leaf last leaf"><a href="/family/wic" class="menu__link menu__link">WIC</a></li>
+</ul></li>
+</ul></li>
+<li class="menu__item is-expanded menu__item is-expanded expanded alerts"><a href="/response/alerts" class="menu__link menu__link">Alerts</a><ul class="menu"><li class="menu__item is-leaf first last leaf menu-views"><div class="view view-alerts view-id-alerts view-display-id-block view-dom-id-d829886bf5ecc9273a82caea3f8fe6b8">
+        
+  
+  
+      <div class="view-empty">
+      <h3>No emergency alerts at this time</h3>
+<a href="/response/alerts/health-alerts-advisories">Check for Health Advisories</a>    </div>
+  
+  
+  
+  
+  
+  
+</div></li>
+</ul></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/about-us/contact-us/get-help-now" class="menu__link menu__link">Get Help Now</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/response/coronavirus-covid-19" style="color:#EB0000;" class="menu__link menu__link">COVID-19 in Vermont</a></li>
+<li class="menu__item is-leaf menu__item is-leaf last leaf search"><a href="/search/site" class="menu__link menu__link">Search</a></li>
+</ul>
+</div>
+<div id="block-views-latest-tweet-block" class="block block-views even">
+
+      
+  <div class="view view-latest-tweet view-id-latest_tweet view-display-id-block view-dom-id-cc7191cf9694973cd5d8503803a8ce71">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+      
+          
+  <div class="field-tweet-contents">
+    RT <a target="_self" href="http://twitter.com/GovPhilScott">@GovPhilScott</a>: Black history is American history. As we celebrate Black History Month, we'll highlight the many ways in which Black Amer…  </div>
+    </div>
+    </div>
+  
+  
+  
+  
+      <div class="view-footer">
+      <p><a href="http://twitter.com/healthvermont">Read More</a></p>
+    </div>
+  
+  
+</div>
+</div>
+<div id="block-block-3" class="block block-block block-social-media-icons odd">
+
+      
+  <div class="social-icons"><a class="icon youtube" href="http://www.youtube.com/user/HealthVermont">YouTube</a><a class="icon facebook" href="http://www.facebook.com/HealthVermont">Facebook</a><a class="icon twitter" href="http://twitter.com/healthvermont">Twitter</a></div>
+</div>
+<div id="block-search-form" class="block block-search last even" role="search">
+
+      
+  <form action="/covid-19/vaccine" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+      <h2 class="element-invisible">Search form</h2>
+    <div class="form-item form-type-textfield form-item-search-block-form">
+  <label class="element-invisible" for="edit-search-block-form--2">Search </label>
+ <input title="Enter the terms you wish to search for." class="apachesolr-autocomplete form-text" data-apachesolr-autocomplete-id="search-block-form" placeholder="Search" type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" />
+</div>
+<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Search" class="form-submit" /></div><input type="hidden" name="form_build_id" value="form-8FsKBkbg90fSEZaH-S-879Yj-r2bzM5a8erSxZ7Fvpk" />
+<input type="hidden" name="form_id" value="search_block_form" />
+</div>
+</div></form>
+</div>
+  </div>
+
+    </header>
+
+    <div id="content" class="column" role="main">
+      <nav class="breadcrumb" role="navigation"><h2 class="element-invisible">You are here</h2><ol><li><a href="/">Home</a> / </li><li><a href="/covid-19">COVID-19</a> / </li></ol></nav>      <a id="main-content"></a>
+                    <h1 class="page__title title" id="page-title">Vaccine</h1>
+        <!-- used to fix ADA hierarchy issue -->
+        <h2 class="ada-page-title">Vaccine</h2>
+                                          
+
+
+<div class="term-listing-heading"><div id="taxonomy-term-6216" class="taxonomy-term vocabulary-division">
+
+  
+  <div class="content js-dynamic-height enabled" data-maxheight="500">
+    <div class="dynamic-height-wrap">
+      <div class="field-related-content"><div class="field-label">Related Content:&nbsp;</div><div class="field-items"><div class="field-item even"><a href="https://www.healthvermont.gov/covid-19/health-care-professionals/vaccine-information-health-care-professionals">Vaccine Information for Health Care Professionals</a></div><div class="field-item odd"><a href="https://www.healthvermont.gov/disease-control/immunization">Vermont Immunization Program</a></div><div class="field-item even"><a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/8-things.html">Things you need to know about the new COVID-19 vaccines (CDC)</a></div><div class="field-item odd"><a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/index.html">More information about COVID-19 vaccines (CDC)</a></div></div></div>
+  <div class="field-body">
+    <p><a class="button-link" href="/covid-19/vaccine/getting-covid-19-vaccine">Find out about Vaccine appointments</a></p>
+
+<p>Safe and effective COVID-19 vaccines are important tools to help end the COVID-19 pandemic. Vaccine distribution is underway in Vermont, and planning continues to ensure equitable access to COVID-19 vaccines. </p>
+
+<p>The Health Department is committed to sharing new information when we have it to help keep Vermonters informed.</p>
+
+<p><a class="cue-to-action ext" href="https://lp.constantcontactpages.com/su/sFxLaby/covid19" target="_blank">Sign up for our Weekly COVID-19 Update</a></p>
+
+<p><a class="button-link" href="/covid-19/health-care-professionals/vaccine-information-health-care-professionals">Information for Health Care Professionals</a></p>
+  </div>
+    </div>
+    <div class="js-dynamic-show-hide-wrapper"><button class="js-dynamic-show-hide button" title="Continue Reading" data-replace-text="Collapse">Continue Reading</button></div>
+  </div>
+
+</div>
+</div><div id="block-views-program-content-block" class="block block-views last even">
+
+      
+  <div class="view view-program-content view-id-program_content view-display-id-block view-dom-id-f281748cf67b8660a070fea94e644fa4">
+            <div class="view-header">
+      <h2>In This Section</h2>    </div>
+  
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+      
+  <div class="views-field views-field-nothing">        <span class="field-content"><div class="content-item">
+<div class="views-field-title"><a href="/covid-19/vaccine/about-covid-19-vaccines-vermont">About COVID-19 Vaccines in Vermont</a></div>
+<div class="field-body">
+  <div class="field-body">
+    <p>The Health Department is working closely with the Centers for Disease Control and Prevention (CDC) and other partners to prepare for vaccines as they become available. Please check back often as we update this page with new information.</p>
+  </div>
+</div>
+<div class="views-field-view-node"><a href="/covid-19/vaccine/about-covid-19-vaccines-vermont">Read More</a></div>
+</div></span>  </div>  </div>
+  <div class="views-row views-row-2 views-row-even">
+      
+  <div class="views-field views-field-nothing">        <span class="field-content"><div class="content-item">
+<div class="views-field-title"><a href="/covid-19/vaccine/getting-covid-19-vaccine">Getting the COVID-19 Vaccine</a></div>
+<div class="field-body">
+  <div class="field-body">
+    <p>Find information about getting your COVID-19 vaccine.</p>
+  </div>
+</div>
+<div class="views-field-view-node"><a href="/covid-19/vaccine/getting-covid-19-vaccine">Read More</a></div>
+</div></span>  </div>  </div>
+  <div class="views-row views-row-3 views-row-odd">
+      
+  <div class="views-field views-field-nothing">        <span class="field-content"><div class="content-item">
+<div class="views-field-title"><a href="/covid-19/vaccine/vermont-covid-19-vaccine-planning">Vermont COVID-19 Vaccine Planning</a></div>
+<div class="field-body">
+  <div class="field-body">
+    <p>Safe and effective vaccines are critical to ending the COVID-19 pandemic. We are building on a strong existing infrastructure, experience, and valuable partnerships to make sure all Vermonters have access to the vaccine. </p>
+  </div>
+</div>
+<div class="views-field-view-node"><a href="/covid-19/vaccine/vermont-covid-19-vaccine-planning">Read More</a></div>
+</div></span>  </div>  </div>
+  <div class="views-row views-row-4 views-row-even views-row-last">
+      
+  <div class="views-field views-field-nothing">        <span class="field-content"><div class="content-item">
+<div class="views-field-title"><a href="/covid-19/vaccine/covid-19-vaccine-dashboard">COVID-19 Vaccine Dashboard</a></div>
+<div class="field-body">
+  <div class="field-body">
+    <p>View the weekly update on the number of people in Vermont who have received the vaccine. See vaccination rates by sex, age, race, ethnicity, and county. </p>
+  </div>
+</div>
+<div class="views-field-view-node"><a href="/covid-19/vaccine/covid-19-vaccine-dashboard">Read More</a></div>
+</div></span>  </div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>
+</div>
+          </div>
+
+    
+    <a id="goto-top" href="#top">^ Top of the page</a>
+
+  </div>
+
+  <div class="bottom" role="region" aria-label="Bottom">
+      <div class="region region-bottom">
+    <div id="block-block-1" class="block block-block block-copyright first odd">
+
+      
+  <p>© 2021 Vermont Department of Health</p>
+
+<p>802-863-7200 • 800-464-4343</p>
+
+<p><a href="/about-us/contact-us/public-records">Public Records Request</a></p>
+
+<p><a href="http://aoa.vermont.gov/stay-informed" target="_blank">Statewide Public Records Request</a></p>
+
+<div class="field-topics"> </div>
+
+</div>
+<div id="block-menu-menu-footer-links" class="block block-menu block-footer-links even" role="navigation">
+
+      
+  <ul class="menu"><li class="menu__item is-expanded menu__item is-expanded first expanded"><a href="/" class="menu__link menu__link">Column 1</a><ul class="menu"><li class="menu__item is-leaf menu__item is-leaf first leaf"><a href="/media/calendar" class="menu__link menu__link">Events</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/media/newsroom" class="menu__link menu__link">News Room</a></li>
+<li class="menu__item is-leaf menu__item is-leaf last leaf"><a href="/interest-groups" class="menu__link menu__link">Interest Groups</a></li>
+</ul></li>
+<li class="menu__item is-expanded menu__item is-expanded expanded"><a href="/" class="menu__link menu__link">Column 2</a><ul class="menu"><li class="menu__item is-leaf menu__item is-leaf first leaf"><a href="https://vermontgov.sharepoint.com/sites/AHSIntra/VDH" target="_blank" class="menu__link menu__link">Intranet</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="http://careers.vermont.gov" target="_blank" class="menu__link menu__link">Jobs</a></li>
+<li class="menu__item is-leaf menu__item is-leaf last leaf"><a href="http://www.vermont.gov/portal/policies/" target="_blank" class="menu__link menu__link">Policies</a></li>
+</ul></li>
+<li class="menu__item is-expanded menu__item is-expanded last expanded"><a href="/" class="menu__link menu__link">Column 3</a><ul class="menu"><li class="menu__item is-expanded menu__item is-expanded first last expanded"><a href="/about/contact" class="menu__link menu__link">Contact Us</a><ul class="menu"><li class="menu__item is-leaf menu__item is-leaf first leaf"><a href="/about/contact" class="menu__link menu__link">Ask a Question</a></li>
+<li class="menu__item is-leaf menu__item is-leaf leaf"><a href="/about/contact" class="menu__link menu__link">Report a Problem</a></li>
+<li class="menu__item is-leaf menu__item is-leaf last leaf"><a href="/about/contact" class="menu__link menu__link">Suggest an Idea</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+<div id="block-block-2" class="block block-block block-follow-translate odd">
+
+      
+  <p style="margin-top:0;"><a href="/about/laws">Rules & Public Comment</a><br />
+<a href="/response/alerts">Health Alerts & Advisories</a></p>
+
+<div id="google_translate_element"></div>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+}
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</div>
+<div id="block-block-4" class="block block-block block-footer-links-mobile last even">
+
+      
+  <ul><li><a href="/about/contact">Contact Us</a></li>
+</ul>
+</div>
+  </div>
+  </div>
+
+</div>
+
+  </body>
+
+</html>

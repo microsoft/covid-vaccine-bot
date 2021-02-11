@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en"><!-- InstanceBegin template="/Templates/main-w-box-new.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8">
+<!-- InstanceBeginEditable name="head" -->
+<title>Vaccine Information | Resources Guidelines | COVID-19</title>
+<meta name="description" content="Interim Draft COVID-19 Vaccination Plan for New Hampshire." />
+<meta name="keywords" content="vaccine, planning, resources, guidelines, COVID, 19, coronavirus, New Hampshire, NH" />
+<!-- InstanceEndEditable -->
+	<!--[if lte IE 8]>
+	<link href="/covid19/css/lg-screen-ie.css" rel="stylesheet" type="text/css" media="screen" />
+<![endif]-->
+<link href="../css/lg-screen.css" rel="stylesheet" type="text/css" media="screen and (min-width: 730px)" />
+<link href="../css/sm-screen.css" rel="stylesheet" type="text/css" media="screen and (min-width: 320px) and (max-width: 729px)" />
+<link href="../css/cms.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="../css/print.css" rel="stylesheet" type="text/css" media="print" />
+<script type="text/javascript" src="../scripts/textsizer2.js"></script>
+<meta name="viewport" content="width=device-width"/>
+</head>
+<body>
+<!-- This is an optional area that should only be used for HIGH priority content like storm notices and other emergencies  --> 
+<!--<div id="high-profile"><h1>Important Notice</h1><p>This is the location that extremely high profile information will go.</p></div> --> 
+<!-- end of High Profile Information area  -->
+<div id="pagecontainer">
+	<div class="nh-seal"></div>
+	<div>
+		<header>
+			 <div id="top-header"> 
+			
+				<!-- Begin Skip Nav feature -->
+				<div class="skip-link"><a href="#skip">Skip to Main Content</a></div>
+				<!-- End Skip Nav feature -->
+				<div class="official-nh"><img src="../css/graphics/trans.gif" alt="COVID-19 - Official State of NH website" /></div>
+				
+				<!-- Begin Fontsizer -->
+				<div class="fontsizer"> <a href="javascript:ts('body',-1)"><img src="../css/graphics/a-small.png" alt="Smaller text size" width="16" height="18" /></a> <a href="javascript:ts('body',0)"><img src="../css/graphics/a-med.png" alt="Reset text size" width="16" height="18" /></a> <a href="javascript:ts('body',1)"><img src="../css/graphics/a-large.png" alt="Larger text size" width="16" height="18" /></a><br>
+				</div>
+				<!-- End Fontsizer --> 
+		
+				<!-- Begin Translator -->
+				<a href="../translate/index.htm"><div id="translate" class="translate"><img src="../css/graphics/trans.gif" alt="link to website language translation page" width="105" height="34" /></div></a>
+				<!-- End Translator --> 
+				
+			</div>
+			<div class="header-branding">
+				<h1><span class="small-name">New Hampshire Department of Health and Human Services</span>COVID-19</h1>
+				
+			</div>
+			<!-- End Agency Header -->
+			
+			<nav class="menu">
+				<section class="dropdown">
+					<input type="checkbox" id="home" name="menu" />
+					<label for="home" class="drop-title"><a href="../index.htm">Home</a></label>
+				</section>
+                <section class="dropdown">
+					<input type="checkbox" id="resources-guidance" name="resources-guidance" />
+					<label for="resources-guidance" class="drop-title-tri"><a href="index.htm" class="dd-lg-screen-only">Resources &amp; Guidance</a><span class="dd-sm-screen-only">Resources &amp; Guidance</span></label>
+					<ul class="drop-content">
+                        <li><a href="vaccination-planning.htm">Vaccine</a></li>
+						<li><a href="testing-guidance.htm">Testing</a></li>
+                        <li><a href="treatment.htm">Treatment</a></li>
+					  <li><a href="residents.htm">Residents</a></li>
+						<li><a href="healthcare-providers.htm">Healthcare Providers</a></li>
+						<li><a href="long-term-care.htm">Long Term Care Facilities</a></li>
+					  <li><a href="schools.htm">Schools</a></li>
+						<li><a href="parents.htm">Parents</a></li>
+					  <li><a href="businesses.htm">Businesses</a></li>
+						<li><a href="other-guidance.htm">Other Guidance</a></li>
+					  <li><a href="../volunteers/index.htm">Volunteers</a></li>
+					</ul>
+				</section>
+				
+				<section class="dropdown">
+					<input type="checkbox" id="faqs" name="menu" />
+					<label for="faqs" class="drop-title"><a href="../faqs">FAQs</a></label>
+				</section>
+				<section class="dropdown">
+					<input type="checkbox" id="news" name="news" />
+					<label for="news" class="drop-title-tri"><a href="../news" class="dd-lg-screen-only">News</a><span class="dd-sm-screen-only">News</span></label>
+					<ul class="drop-content">
+						<li><a href="../news/updates.htm">Updates</a></li>
+					  <li><a href="../news/press-releases.htm">Press Releases</a></li>
+						<li><a href="../news/emergency-orders.htm">Emergency Orders</a></li>
+						<li><a href="../news/public-notices.htm">Public Notices</a></li>
+					</ul>
+				</section>
+				
+				<section class="dropdown">
+					<input type="checkbox" id="dhhs" name="menu" />
+					<label for="dhhs" class="drop-title"><a href="https://www.dhhs.nh.gov">DHHS Website</a></label>
+				</section>
+			
+				<!--<section class="dropdown">
+					<input type="checkbox" id="initiatives" name="initiatives" />
+					<label for="initiatives" class="drop-title-tri"><a href="#" class="dd-lg-screen-only">Initiatives</a><span class="dd-sm-screen-only">Initiatives</span></label>
+					<ul class="drop-content">
+						<li><a href="#">Initiative 1</a></li>
+						<li><a href="#">Initiative 2</a></li>
+						<li><a href="#">Initiative 3</a></li>
+						<li><a href="#">Initiative 4</a></li>
+						<li><a href="#">Initiative 5</a></li>
+						<li><span class="diamond">&diams;&nbsp;</span><a href="#">All Links for Initiatives</a></li>
+					</ul>
+				</section>-->
+				
+			</nav>
+		</header>
+		<div id="bodycontainer">
+			<div id="photo-and-search"> 
+				<!-- Begin Left Sidebar --> 
+			
+				<!-- Begin Main Content Area -->
+				
+				<div id="main-photo"><img src="../graphics/covid-19-collage.jpg" class="big-photo" alt="collage of covid 19 images"/><small></small></div>
+				
+				<div class="search-div"> 
+					<!-- Begin Search Code  -->
+					<div class="mno-search-div">
+						<form method="get" action="https://search.nh.gov/covid19-search.htm">
+							<div class="mno-inputs">
+								<label for="q">searchable</label>
+								<!-- the two inputs below must not have any spaces (whitespace) between them or an added gap will appear between the search box and button  -->
+								<input type="search" name="q" id="q" placeholder="Search This Website" autocomplete="off" /><input type="submit" name="cmd" class="mno-button" value="" title="search" />
+							</div>
+						</form>
+						<!--</div> --> 
+					</div>
+					<!--End Search Code--> 
+				</div>
+			</div>
+			<main>
+				<!-- Skip Navigation Landing Point -->
+				<p><a id="skip"></a><a id="top"></a></p>
+				<!-- Skip Navigation Landing Point -->
+				<div class="full-width">
+					<h1><!-- InstanceBeginEditable name="title" -->Vaccine Information<!-- InstanceEndEditable --></h1>
+				</div>
+				<div class="full-width">
+					<h2><!-- InstanceBeginEditable name="introduction" -->Interim Draft COVID-19 Vaccination Plan for New Hampshire <!-- InstanceEndEditable --></h2>
+				</div>
+            
+				<div class="wide-width"><aside class="side-col">
+                    <section class="vaccine-phase"><a href="https://www.vaccines.nh.gov">Vaccine Registration</a></section>
+<!--                    <section class="vaccine-btn"><a href="../resources-guidance/vaccination-planning.htm">Vaccine Information</a></section>
+-->				<section class="support-btn"><a href="../support/index.htm">Mental Health/<br>Stress/Anxiety Support</a></section>
+				<section class="guidance-btn"><a href="https://www.covidguidance.nh.gov/">Safer at Home</a></section>
+				<section class="masks-btn"><a href="https://business.nh.gov/DOS_COVID19Testing/">Get Tested</a></section>
+				<section class="side-box"><div class="call211"><h3>Have questions about COVID-19?</h3>
+				<p>Call 2-1-1</p>
+				<p>Phone dial:  1-866-444-4211</p>
+				<p>TTY: 603-634-3388</p></div>
+				<h1>National/State Resources</h1>
+                <ul>
+				<li><a href="../documents/covid-19-epidemic-20200409.pdf">COVID-19 The Future of the Epidemic in NH</a> <!-- #BeginLibraryItem "/Library/pdf-icon.lbi" -->&nbsp;<img class="moveDown" src="/covid19/graphics/pdf-icon.gif" alt="pdf file" width="16" height="16" /><!-- #EndLibraryItem --></li>
+                <li><a href="https://www.dhhs.nh.gov/dphs/cdcs/">NH DHHS Bureau of Infectious Disease Control</a></li>
+				<li><a href="https://www.doj.nh.gov/covid-19-scams/">NH DOJ COVID-19 Scam Alerts</a></li>
+                <li><a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html">CDC Coronavirus (COVID-19)</a></li>
+                <li><a href="https://www.who.int/health-topics/coronavirus">World Health Organization - Coronavirus</a></li>
+                <li><a href="https://www.hhs.gov/sites/default/files/ocr-bulletin-3-28-20.pdf">Civil Rights, HIPAA, and COVID-19</a><!-- #BeginLibraryItem "/Library/pdf-icon.lbi" -->&nbsp;<img class="moveDown" src="/covid19/graphics/pdf-icon.gif" alt="pdf file" width="16" height="16" /><!-- #EndLibraryItem --></li>
+                <li><a href="https://youtu.be/6zDpHJdwBvw?list=PLvrp9iOILTQatwnqm61jqFrsfUB4RKh6J">CDC-ASL: 10 Things You Can do to Manage COVID-19 at Home</a></li>
+                <li><a href="residents.htm#asl-videos">American Sign Language Videos</a></li>
+				<li><a href="https://www.apha.org/topics-and-issues/communicable-disease/coronavirus/guidance">American Public Health Association (APHA) COVID-19 Guidance</a>
+					<ul>
+				<li lang="es"><a href="https://www.apha.org/topics-and-issues/communicable-disease/coronavirus/guia">APHA Guia de COVID-19</a></li>
+					</ul>
+					</li>
+                </ul>
+				</section></aside><!-- InstanceBeginEditable name="content" -->
+                    <section>
+                      <div class="box-border">NH is committed to a safe and effective <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/">vaccine</a> that will protect against COVID-19. We are prepared to receive the initial batches of FDA-approved COVID-19 vaccine in mid-December 2020. The vaccine will be distributed in a phased approach and the initial allocation will be used to vaccinate at-risk health workers, residents of long-term care facilities, and first responders.</div></section>
+                    <section><h3>New Hampshire Interim Draft COVID-19 Vaccination Plan</h3>
+                      <ul>
+                        <li>Interim  Draft: <a href="https://www.dhhs.nh.gov/dphs/cdcs/covid19/documents/covid19-vac-plan-draft.pdf">New Hampshire COVID-19 Vaccination Plan</a><!-- #BeginLibraryItem "/Library/pdf-icon.lbi" -->&nbsp;<img class="moveDown" src="/covid19/graphics/pdf-icon.gif" alt="pdf file" width="16" height="16" /><!-- #EndLibraryItem --></li>
+                        <li>In  September, the Center for Disease Control and Prevention (CDC) announced every  state would be required to submit an Interim Draft COVID-19 Vaccine Plan by  October 16, 2020, based on <a href="https://www.cdc.gov/vaccines/imz-managers/downloads/COVID-19-Vaccination-Program-Interim_Playbook.pdf">COVID-19 Vaccination Program Interim  Playbook for Jurisdiction Operations</a><!-- #BeginLibraryItem "/Library/pdf-icon.lbi" -->&nbsp;<img class="moveDown" src="/covid19/graphics/pdf-icon.gif" alt="pdf file" width="16" height="16" /><!-- #EndLibraryItem --> provided by the CDC.</li>
+                      </ul>
+                        <p>This <strong>draft plan</strong> is a living document and will be revised as necessary as new information and guidance is known about the vaccine candidates. NH is taking steps to ensure we are ready to receive a vaccine and have a plan that allows for equitable access for every New Hampshire resident.</p>
+                    </section>
+                    
+                    <section><h3>New Hampshire COVID-19 Vaccine Allocation for All Phases</h3>
+                      <ul>
+                        <li><a href="https://www.dhhs.nh.gov/dphs/cdcs/covid19/documents/covid19-vaccine-allocation-plan-summary.pdf">New Hampshire COVID-19 Vaccine Allocation Plan Summary</a> <!-- #BeginLibraryItem "/Library/pdf-icon.lbi" -->&nbsp;<img class="moveDown" src="/covid19/graphics/pdf-icon.gif" alt="pdf file" width="16" height="16" /><!-- #EndLibraryItem --> (January 16, 2021)</li></ul>
+                    </section>
+                    
+                    <section><h3>Phase 1a</h3>
+                      <p>At-risk health workers, residents of long-term care facilities and first responders.</p>
+                      <ul>
+                        <li><a href="https://www.dhhs.nh.gov/dphs/cdcs/covid19/documents/phase-1a-technical-assistance.pdf">NH COVID-19 Vaccination Allocation Guidelines for Phase 1a</a><!-- #BeginLibraryItem "/Library/pdf-icon.lbi" -->&nbsp;<img class="moveDown" src="/covid19/graphics/pdf-icon.gif" alt="pdf file" width="16" height="16" /><!-- #EndLibraryItem -->
+(February 5, 2021)                          
+  <ul>
+                  <li><a href="../media/phase1a-video.htm">ASL NH COVID-19 Vaccination Allocation Guidelines for Phase 1a</a><!-- #BeginLibraryItem "/Library/video-icon.lbi" -->&nbsp;<img class="moveDown" src="/covid19/graphics/video-icon.png" alt="video file" width="15" height="16" /><!-- #EndLibraryItem --> | <a href="documents/phase-1a-technical-assistance-ar.pdf"><span lang="ar">توجيهات تخصيص لقاح كوفيد-19 في ولاية نيوهامبشر للمرحلة 1(أ)</span> (Arabic)</a><!-- #BeginLibraryItem "/Library/pdf-icon.lbi" -->&nbsp;<img class="moveDown" src="/covid19/graphics/pdf-icon.gif" alt="pdf file" width="16" height="16" /><!-- #EndLibraryItem --> |<a href="documents/phase-1a-technical-assistance-sp.pdf"> <span lang="es">Lineamientos de NH para la Fase 1a de asignación de vacunas contra el COVID-19</span>  (Spanish</a>)<!-- #BeginLibraryItem "/Library/pdf-icon.lbi" -->&nbsp;<img class="moveDown" src="/covid19/graphics/pdf-icon.gif" alt="pdf file" width="16" height="16" /><!-- #EndLibraryItem --> | <a href="documents/phase-1a-technical-assistance-fr.pdf"><span lang="fr">Lignes directrices du NH concernant la phase 1a de l'attribution des vaccins contre le COVID-19</span>  (French</a>)<!-- #BeginLibraryItem "/Library/pdf-icon.lbi" -->&nbsp;<img class="moveDown" src="/covid19/graphics/pdf-icon.gif" alt="pdf file" width="16" height="16" /><!-- #EndLibraryItem --> | <a href="documents/phase-1a-technical-assistance-por.pdf"><span lang="pt">Orientações de NH para a Fase 1a da alocação da vacinação contra o COVID-19 de NH</span>  (Portuguese</a>)<!-- #BeginLibraryItem "/Library/pdf-icon.lbi" -->&nbsp;<img class="moveDown" src="/covid19/graphics/pdf-icon.gif" alt="pdf file" width="16" height="16" /><!-- #EndLibraryItem --> |<a href="documents/phase-1a-technical-assistance-ne.pdf"> <span lang="ne">चरण 1a को लागि NH COVID-19 खोप विनियोजनका मार्गदर्शनहरू</span> (Nepali</a>)<!-- #BeginLibraryItem "/Library/pdf-icon.lbi" -->&nbsp;<img class="moveDown" src="/covid19/graphics/pdf-icon.gif" alt="pdf file" width="16" height="16" /><!-- #EndLibraryItem --> |<a href="documents/phase-1a-technical-assistance-kin.pdf"> <span lang="rw">Amabwiriza Arebana no Gukwirakwiza Urukingo rwa COVID-19 muri Leta ya New Hampshire Icyiciro cya 1a</span> (Kinyarwanda</a>)<!-- #BeginLibraryItem "/Library/pdf-icon.lbi" -->&nbsp;<img class="moveDown" src="/covid19/graphics/pdf-icon.gif" alt="pdf file" width="16" height="16" /><!-- #EndLibraryItem --> |<a href="documents/phase-1a-technical-assistance-swa.pdf"> <span lang="sw">Miongozo ya Ugawaji wa Chanjo ya NH COVID-19 kwa Awamu ya 1a</span> (Swahili)</a><!-- #BeginLibraryItem "/Library/pdf-icon.lbi" -->&nbsp;<img class="moveDown" src="/covid19/graphics/pdf-icon.gif" alt="pdf file" width="16" height="16" /><!-- #EndLibraryItem --> |<a href="documents/phase-1a-technical-assistance-viet.pdf"> <span lang="vi">Hướng Dẫn Phân Bổ Tiêm Vắc Xin Ngừa COVID-19 Giai Đoạn 1a Tại NH</span> (Vietnamese</a>)<!-- #BeginLibraryItem "/Library/pdf-icon.lbi" -->&nbsp;<img class="moveDown" src="/covid19/graphics/pdf-icon.gif" alt="pdf file" width="16" height="16" /><!-- #EndLibraryItem --></li>
+                  </ul>
+                        </li>
+                      </ul>
+                        <p>*Additional phases will be added as future vaccine allocation is determined.</p>
+                    </section>
+                    
+                     <section><h3>Phase 1b</h3>
+                    <p>Persons &ge;65, the medically vulnerable, intellectual and developmental disability residential facilities, correctional facility staff, and remaining health workers and first responders.</p>
+    <ul>
+    <li><a href="https://www.dhhs.nh.gov/dphs/cdcs/alerts/documents/covid-19-update34.pdf">Instructions for Healthcare Providers to Register Medically Vulnerable Patients</a><!-- #BeginLibraryItem "/Library/pdf-icon.lbi" -->&nbsp;<img class="moveDown" src="/covid19/graphics/pdf-icon.gif" alt="pdf file" width="16" height="16" /><!-- #EndLibraryItem --> (January 17, 2021)</li>
+    <li><a href="https://www.dhhs.nh.gov/dphs/cdcs/covid19/documents/covid19-vaccine-med-verification-form.pdf">Medical Verification Form</a><!-- #BeginLibraryItem "/Library/pdf-icon.lbi" -->&nbsp;<img class="moveDown" src="/covid19/graphics/pdf-icon.gif" alt="pdf file" width="16" height="16" /><!-- #EndLibraryItem --> (January 27, 2021)</li>
+      <li><a href="https://www.dhhs.nh.gov/dphs/cdcs/covid19/documents/multipatient-verfication.xlsx">Multipatient Medical Verification File</a><!-- #BeginLibraryItem "/Library/excel-icon.lbi" -->&nbsp;<img class="moveDown" src="../graphics/xls-icon.gif" alt="Excel file" width="16" height="16" /><!-- #EndLibraryItem -->  (January 17, 2021)</li>
+    <li><a href="https://www.dhhs.nh.gov/dphs/cdcs/covid19/documents/phase-1b-technical-assistance.pdf">NH COVID-19 Vaccination Allocation Guidelines for Phase 1b</a> <!-- #BeginLibraryItem "/Library/pdf-icon.lbi" -->&nbsp;<img class="moveDown" src="/covid19/graphics/pdf-icon.gif" alt="pdf file" width="16" height="16" /><!-- #EndLibraryItem --> (February 5, 2021)</li></ul>
+</section>
+                    
+                    <section><h3>COVID-19 Vaccination Provider Agreement</h3>
+                    <p>As additional COVID-19 vaccine becomes available for Phase 1b individuals and beyond, NH DHHS will distribute COVID-19 vaccines to provider offices, urgent care, pharmacies and other local health care facilities that have the capacity to offer vaccination to patients. To receive/administer COVID-19 vaccine, constituent products, and ancillary supplies, health care organizations that want to receive COVID-19 vaccine must enroll in the federal COVID-19 Vaccination Program coordinated through the New Hampshire Immunization Program. Enrolled COVID-19 vaccination providers must be credentialed/licensed in the jurisdiction where vaccination takes place and sign and agree to the conditions in the CDC COVID-19 Vaccination Program Provider Agreements. These conditions are detailed in the agreement itself. Note that NH DHHS will only be able to begin providing vaccine to these entities when vaccine supply allows.</p>
+
+<p>In order to enroll as a COVID-19 vaccination provider, download the <a href="https://www.dhhs.nh.gov/dphs/cdcs/covid19/documents/provider-agreement.pdf">Provider Agreement</a><!-- #BeginLibraryItem "/Library/pdf-icon.lbi" -->&nbsp;<img class="moveDown" src="/covid19/graphics/pdf-icon.gif" alt="pdf file" width="16" height="16" /><!-- #EndLibraryItem --> complete the form electronically, being careful to follow the instructions, and email to <a href="mailto:C19Enrollment@dhhs.nh.gov">C19Enrollment@dhhs.nh.gov</a>.</p>
+<ul>
+  <li><a href="https://www.dhhs.nh.gov/dphs/cdcs/covid19/documents/covid19-agreement-instructions.pdf">Provider Agreement Instructions</a><!-- #BeginLibraryItem "/Library/pdf-icon.lbi" -->&nbsp;<img class="moveDown" src="/covid19/graphics/pdf-icon.gif" alt="pdf file" width="16" height="16" /><!-- #EndLibraryItem --></li>
+  <li><a href="https://www.dhhs.nh.gov/dphs/cdcs/covid19/documents/provider-agreement.pdf">Provider Agreement</a><!-- #BeginLibraryItem "/Library/pdf-icon.lbi" -->&nbsp;<img class="moveDown" src="/covid19/graphics/pdf-icon.gif" alt="pdf file" width="16" height="16" /><!-- #EndLibraryItem --> <em><strong>(must be downloaded and opened in Adobe Acrobat, not completed in the web browser)</strong></em><strong></strong></li>
+</ul>
+                </section>
+                    
+                <section><h3>Frequently Asked Questions</h3>
+					<ul>
+                        <li><a href="https://www.dhhs.nh.gov/media/pr/2021/01262021-vaccine-faqs.htm">State Clarifies Vaccine FAQs</a> (January 25, 2021)</li>
+                        <li><a href="https://www.dhhs.nh.gov/dphs/cdcs/covid19/documents/covid-immunization-info-system-faq.pdf">COVID-19 Immunization Information System Frequently Asked Questions</a> <!-- #BeginLibraryItem "/Library/pdf-icon.lbi" -->&nbsp;<img class="moveDown" src="/covid19/graphics/pdf-icon.gif" alt="pdf file" width="16" height="16" /><!-- #EndLibraryItem --> (January 4, 2021)</li>
+					  <li><a href="https://www.dhhs.nh.gov/dphs/cdcs/covid19/documents/vaccination-planning-faq.pdf">NH COVID-19 Vaccination Information  Frequently Asked Questions</a><!-- #BeginLibraryItem "/Library/pdf-icon.lbi" -->&nbsp;<img class="moveDown" src="/covid19/graphics/pdf-icon.gif" alt="pdf file" width="16" height="16" /><!-- #EndLibraryItem --> (January 25, 2021)
+                          <ul><li><a href="../media/vaccination-planning-video.htm">ASL COVID-19  Vaccination Planning Frequently Asked Questions</a> | <a href="documents/vaccination-planning-faq-ar.pdf"><span lang="ar"> توجيه السفر والفحص واالستبعاد  ألرباب العمل</span>  (Arabic)</a><!-- #BeginLibraryItem "/Library/pdf-icon.lbi" -->&nbsp;<img class="moveDown" src="/covid19/graphics/pdf-icon.gif" alt="pdf file" width="16" height="16" /><!-- #EndLibraryItem --> | <a href="documents/vaccination-planning-faq-fr.pdf"><span lang="fr">Conseils sur les voyages, le dépistage et les  exclusions pour les employeurs</span>  (French)</a><!-- #BeginLibraryItem "/Library/pdf-icon.lbi" -->&nbsp;<img class="moveDown" src="/covid19/graphics/pdf-icon.gif" alt="pdf file" width="16" height="16" /><!-- #EndLibraryItem -->  | <a href="documents/vaccination-planning-faq-kin.pdf"><span lang="rw">Amabwiriza y&rsquo;Umukoresha ku bijyanye  n&rsquo;Ingendo, Kwipimisha, ndetse no Gushyirwa mu Muhezo</span> (Kinyarwanda)</a><!-- #BeginLibraryItem "/Library/pdf-icon.lbi" -->&nbsp;<img class="moveDown" src="/covid19/graphics/pdf-icon.gif" alt="pdf file" width="16" height="16" /><!-- #EndLibraryItem --> | <a href="documents/vaccination-planning-faq-ne.pdf"><span lang="ne">रोजगारदाता यात्रा, परीक्षण तथा बहिष्करण मागगदर्गन</span> (Nepali)</a> <!-- #BeginLibraryItem "/Library/pdf-icon.lbi" -->&nbsp;<img class="moveDown" src="/covid19/graphics/pdf-icon.gif" alt="pdf file" width="16" height="16" /><!-- #EndLibraryItem --> | <a href="documents/vaccination-planning-faq-por.pdf"><span lang="pt">Orientação para viagem, triagem e exclusão do  empregador</span> (Portuguese)</a><!-- #BeginLibraryItem "/Library/pdf-icon.lbi" -->&nbsp;<img class="moveDown" src="/covid19/graphics/pdf-icon.gif" alt="pdf file" width="16" height="16" /><!-- #EndLibraryItem --> | <a href="documents/vaccination-planning-faq-sp.pdf"><span lang="es">Guía de viajes, detección y exclusión para  empleadores</span> (Spanish)</a><!-- #BeginLibraryItem "/Library/pdf-icon.lbi" -->&nbsp;<img class="moveDown" src="/covid19/graphics/pdf-icon.gif" alt="pdf file" width="16" height="16" /><!-- #EndLibraryItem --> | <a href="documents/vaccination-planning-faq-swa.pdf"><span lang="sw">Mwongozo wa Usafiri wa Mwajiri, Uchunguzi na Kujitenga</span>  (Swahili)</a><!-- #BeginLibraryItem "/Library/pdf-icon.lbi" -->&nbsp;<img class="moveDown" src="/covid19/graphics/pdf-icon.gif" alt="pdf file" width="16" height="16" /><!-- #EndLibraryItem -->  | <a href="documents/vaccination-planning-faq-viet.pdf"><span lang="vi">Hướng Dẫn về Đi Lại, Sàng Lọc và Loại Trừ Dành Cho Nhân Viên</span>  (Vietnamese)</a><!-- #BeginLibraryItem "/Library/pdf-icon.lbi" -->&nbsp;<img class="moveDown" src="/covid19/graphics/pdf-icon.gif" alt="pdf file" width="16" height="16" /><!-- #EndLibraryItem --></li></ul></li>
+                    <li>CDC <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/faq.html">Frequently  Asked Questions about COVID-19 Vaccination</a></li>
+                    <li><a href="https://www.dhhs.nh.gov/dphs/cdcs/covid19/documents/covid-19-hcp-vaccine-faq.pdf">COVID-19 Vaccine FAQs for Healthcare Providers and Public Health Partners</a><!-- #BeginLibraryItem "/Library/pdf-icon.lbi" -->&nbsp;<img class="moveDown" src="/covid19/graphics/pdf-icon.gif" alt="pdf file" width="16" height="16" /><!-- #EndLibraryItem --> (December 31, 2020)</li>
+					</ul>
+                </section>
+					  <section><h3>Resources for Families and Individuals</h3>
+					    <ul>
+                            <li><a href="https://www.dhhs.nh.gov/dphs/cdcs/covid19/documents/coping-covid-vaccine-stress.pdf">Coping with COVID-19 Vaccine Stress</a><!-- #BeginLibraryItem "/Library/pdf-icon.lbi" -->&nbsp;<img class="moveDown" src="/covid19/graphics/pdf-icon.gif" alt="pdf file" width="16" height="16" /><!-- #EndLibraryItem --> (January 15, 2021)</li>
+					      <li><a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/index.html">CDC Vaccine  Information for You and Your Family</a></li>
+				        </ul>
+					  </section>
+                    <section><h3>Educational Information and Resources</h3>
+                      <ul><li><a href="https://www.dhhs.nh.gov/dphs/cdcs/covid19/documents/covid-vaccine-comm-leader-training.pdf">COVID-19 Vaccine Training for Community Leaders</a><!-- #BeginLibraryItem "/Library/pdf-icon.lbi" -->&nbsp;<img class="moveDown" src="/covid19/graphics/pdf-icon.gif" alt="pdf file" width="16" height="16" /><!-- #EndLibraryItem --> (January 2021)</li></ul>
+                    </section>
+                <section><h3>Resources for Healthcare Providers</h3>
+                    <ul>
+                        <li><a href="https://www.modernatx.com/covid19vaccine-eua/providers/storage-handling.pdf">Moderna COVID-19 Vaccine Storage &amp; Handling</a> <!-- #BeginLibraryItem "/Library/pdf-icon.lbi" -->&nbsp;<img class="moveDown" src="/covid19/graphics/pdf-icon.gif" alt="pdf file" width="16" height="16" /><!-- #EndLibraryItem --></li>  
+<li><a href="https://www.dhhs.nh.gov/dphs/cdcs/covid19/documents/pfizer-handling-administration-guide.pdf">Pfizer-BioNTech COVID-19 Vaccine Handling and Administration</a> <!-- #BeginLibraryItem "/Library/pdf-icon.lbi" -->&nbsp;<img class="moveDown" src="/covid19/graphics/pdf-icon.gif" alt="pdf file" width="16" height="16" /><!-- #EndLibraryItem --></li>
+
+                      <li><a href="https://www.dhhs.nh.gov/dphs/cdcs/covid19/documents/vaccine-clinical-protocol.pdf">Interim Guidance for NH State-Managed COVID-19 Vaccination Clinics</a><!-- #BeginLibraryItem "/Library/pdf-icon.lbi" -->&nbsp;<img class="moveDown" src="/covid19/graphics/pdf-icon.gif" alt="pdf file" width="16" height="16" /><!-- #EndLibraryItem --> (January 4, 2021)</li>
+                      <li><a href="https://www.dhhs.nh.gov/dphs/cdcs/covid19/documents/covid-19-hcp-vaccine-faq.pdf">NH DHHS COVID-19 Vaccine Frequently Asked Questions (FAQs) for Healthcare Providers and Public Health Partners</a><!-- #BeginLibraryItem "/Library/pdf-icon.lbi" -->&nbsp;<img class="moveDown" src="/covid19/graphics/pdf-icon.gif" alt="pdf file" width="16" height="16" /><!-- #EndLibraryItem --> (December 31, 2020)</li>
+                      <li><a href="https://www.cdc.gov/vaccines/covid-19/health-systems-communication-toolkit.html">CDC's COVID-19 Vaccination Communication Toolkit for Medical Centers, Clinics, and Clinicians</a></li>
+                      <li><a href="https://www.cdc.gov/vaccines/covid-19/index.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fvaccines%2Fcovid-19%2Fvaccination-resources.html">CDC COVID-19 Information for  Healthcare Professionals and Jurisdictions</a></li>
+                      <li>CDC  COVID-19 Vaccine Training Module: <a href="https://www2.cdc.gov/vaccines/ed/covid19/">General Overview of Immunization Best Practices for  Healthcare Professionals</a></li>
+                    </ul>
+                    </section>
+                    
+                <section>
+                  <h3>Health Alert Network (HAN): COVID-19 vaccine related </h3>
+                  <ul>
+                      <li>01/17/2021: <a href="https://www.dhhs.nh.gov/dphs/cdcs/alerts/documents/covid-19-update34.pdf">COVID-19 Update #34b: Instructions for Registering Medically Vulnerable Patients for Vaccination</a> <!-- #BeginLibraryItem "/Library/pdf-icon.lbi" -->&nbsp;<img class="moveDown" src="/covid19/graphics/pdf-icon.gif" alt="pdf file" width="16" height="16" /><!-- #EndLibraryItem --></li>
+                      
+                <li>01/11/2021: <a href="https://www.dhhs.nh.gov/dphs/cdcs/alerts/documents/covid-19-update33.pdf">COVID-19 Update  #33: Vaccination Allocation Plan Update; Quarantine Guidance Update</a><!-- #BeginLibraryItem "/Library/pdf-icon.lbi" -->&nbsp;<img class="moveDown" src="/covid19/graphics/pdf-icon.gif" alt="pdf file" width="16" height="16" /><!-- #EndLibraryItem --></li>                <li>12/31/2020:  <a href="https://www.dhhs.nh.gov/dphs/cdcs/alerts/documents/covid-19-update32.pdf">COVID-19 Update #32: CDC Updates COVID-19 Vaccine Clinical Guidance Changes to Vaccine Contraindications and Precautions</a><!-- #BeginLibraryItem "/Library/pdf-icon.lbi" -->&nbsp;<img class="moveDown" src="/covid19/graphics/pdf-icon.gif" alt="pdf file" width="16" height="16" /><!-- #EndLibraryItem --></li>
+                    <li>12/29/2020:<a href="https://www.dhhs.nh.gov/dphs/cdcs/alerts/documents/covid-19-update31.pdf">COVID-19 Update #31: Instructions for Ambulatory Care Providers to Access Vaccine Instructions for Enrolling to Become a Vaccine Provider</a><!-- #BeginLibraryItem "/Library/pdf-icon.lbi" -->&nbsp;<img class="moveDown" src="/covid19/graphics/pdf-icon.gif" alt="pdf file" width="16" height="16" /><!-- #EndLibraryItem --></li>
+                    <li>12/20/2020: <a href="https://www.dhhs.nh.gov/dphs/cdcs/alerts/documents/covid-19-update30.pdf">COVID-19 Update #30: Moderna COVID-19 Vaccine Receives EUA, CDC and ACIP Issue Recommendations for Use; Update on Doses of Pfizer-BioNTech Vaccine in Multi-Dose Vials</a> <!-- #BeginLibraryItem "/Library/pdf-icon.lbi" -->&nbsp;<img class="moveDown" src="/covid19/graphics/pdf-icon.gif" alt="pdf file" width="16" height="16" /><!-- #EndLibraryItem --></li>
+                    <li>12/13/2020: <a href="https://www.dhhs.nh.gov/dphs/cdcs/alerts/documents/covid-19-update29.pdf">COVID-19 Update #29: Pfizer-BioNTech COVID-19 Vaccine Receives EUA, CDC and ACIP Issue Recommendations for Use</a><!-- #BeginLibraryItem "/Library/pdf-icon.lbi" -->&nbsp;<img class="moveDown" src="/covid19/graphics/pdf-icon.gif" alt="pdf file" width="16" height="16" /><!-- #EndLibraryItem --></li>
+                    <li>12/11/2020: <a href="https://www.dhhs.nh.gov/dphs/cdcs/alerts/documents/covid-19-update28.pdf">COVID-19 Update #28: Vaccine Allocation and Administration Guidelines for Phase 1a New Vaccine Frequently Asked Questions (FAQs)</a><!-- #BeginLibraryItem "/Library/pdf-icon.lbi" -->&nbsp;<img class="moveDown" src="/covid19/graphics/pdf-icon.gif" alt="pdf file" width="16" height="16" /><!-- #EndLibraryItem --></li>
+                  </ul>
+                  </section>
+                    
+                <section><h3><a href="../news/">Media and  Press</a></h3>
+                  <ul>
+                        <li>Press Release: <a href="https://www.dhhs.nh.gov/media/pr/2020/12132020-covid19-vaccine.htm">Pfizer/BioNTech Vaccine Achieves FDA Approval: First Shipment Coming to New Hampshire</a></li>
+                      </ul>
+                  </section>
+			   <section><h3><a href="https://www.dhhs.nh.gov/dphs/immunization/index.htm">NH DHHS Immunization Program</a></h3>
+                   <ul><li><a href="https://www.dhhs.nh.gov/dphs/immunization/nhiis.htm">New  Hampshire Immunization Information System (NHIIS)</a></li>
+                   </ul>
+			   </section>
+                    <p>&nbsp;</p>
+                    <section>
+                    <p class="center">If you have a question  not answered in the <a href="https://www.dhhs.nh.gov/dphs/cdcs/covid19/documents/vaccination-planning-faq.pdf">FAQs</a><!-- #BeginLibraryItem "/Library/pdf-icon.lbi" -->&nbsp;<img class="moveDown" src="/covid19/graphics/pdf-icon.gif" alt="pdf file" width="16" height="16" /><!-- #EndLibraryItem --> regarding COVID-19 vaccine planning in  New Hampshire, reach out to <a href="mailto:covidvaccine@dhhs.nh.gov">covidvaccine@dhhs.nh.gov</a>.</p></section>
+                <!-- InstanceEndEditable --></div>
+			</main>
+			<!-- End Main Content Area -->
+			<section>
+				<div id="footnote"><!-- InstanceBeginEditable name="footnote" --><!-- #BeginLibraryItem "/Library/pdf-footnote.lbi" -->
+				    <p><img class="moveDown" src="/covid19/graphics/pdf-icon.gif" alt="Portable Document Format Symbol" width="16" height="16" /> Portable Document Format (.pdf). Visit nh.gov for a list of <a href="https://www.nh.gov/file-format/pdf.htm">free .pdf readers</a> for a variety of operating systems.</p>
+				<!-- #EndLibraryItem --><!-- #BeginLibraryItem "/Library/excel-footnote.lbi" -->
+				<p><img class="moveDown" src="../graphics/xls-icon.gif" alt="Microsoft Excel Symbol" width="16" height="16" /> Microsoft Excel format.</p>
+				<!-- #EndLibraryItem --><!-- InstanceEndEditable --></div>
+			</section>
+			<!-- Start Address -->
+
+			<div class="g-translate">
+				<div class="hide" id="google_translate_element"></div>
+                
+				<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en'
+  }, 'google_translate_element');
+}
+</script> 
+                <!--[if gte IE 9]><!--><script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script><!--<![endif]-->
+				</div>
+			<section><div class="address"><p>New Hampshire Department of Health and Human Services<br>129 Pleasant Street | Concord, NH | 03301-3852</p></div></section>
+			<!-- End Address --> 
+	
+
+		</div>
+		<!-- Begin Footer -->
+		<footer>
+<div class="footerleft"> <a href="https://www.nh.gov/index.htm">NH.gov</a> | <a href="https://www.nh.gov/policy/index.htm">privacy policy</a> | <a href="https://www.nh.gov/policy/accessibility.htm">accessibility policy</a> | <a href="mailto:web.master@doit.nh.gov">webmaster</a> | <a href="https://www.dhhs.nh.gov/oos/ombudsman/nondiscrimination.htm">DHHS Non-Discrimination Policy</a></div>
+			<div class="footerright"> <span class="copyright-year">copyright&nbsp;&nbsp;</span>. State of New Hampshire</div>
+		</footer>	
+		<!-- End Footer -->
+	</div>
+</div>
+</body>
+<!-- InstanceEnd --></html>

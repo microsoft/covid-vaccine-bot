@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html  lang="en-US">
+<head id="Head">
+<!--*********************************************-->
+<!-- DNN Platform - http://www.dnnsoftware.com   -->
+<!-- Copyright (c) 2002-2016, by DNN Corporation -->
+<!--*********************************************-->
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+<meta name="REVISIT-AFTER" content="1 DAYS" />
+<meta name="RATING" content="GENERAL" />
+<meta name="RESOURCE-TYPE" content="DOCUMENT" />
+<meta content="text/javascript" http-equiv="Content-Script-Type" />
+<meta content="text/css" http-equiv="Content-Style-Type" />
+<title>
+	Novel Coronavirus - COVID-19 Vaccine Information
+</title><meta id="MetaDescription" name="DESCRIPTION" content="Information on Iowa&#39;s COVID-19 vaccination campaign." /><meta id="MetaKeywords" name="KEYWORDS" content="vaccine, vaccination, COVID-19, corona virus,DotNetNuke,DNN" /><meta id="MetaGenerator" name="GENERATOR" content="DotNetNuke " /><meta id="MetaRobots" name="ROBOTS" content="INDEX, FOLLOW" /><link href="/Resources/Shared/stylesheets/dnndefault/7.0.0/default.css?cdv=531" type="text/css" rel="stylesheet"/><link href="/Resources/Search/SearchSkinObjectPreview.css?cdv=531" type="text/css" rel="stylesheet"/><link href="/Portals/_default/Skins/20047-UnlimitedColorPack-033/skin.css?cdv=531" type="text/css" rel="stylesheet"/><link href="/Portals/_default/Skins/20047-UnlimitedColorPack-033/IdphInsideLeftMenu.css?cdv=531" type="text/css" rel="stylesheet"/><link href="/Portals/_default/Containers/20047-UnlimitedColorPack-033/container.css?cdv=531" type="text/css" rel="stylesheet"/><link href="/Portals/1/portal.css?cdv=531" type="text/css" rel="stylesheet"/><script src="/Resources/libraries/jQuery/01_09_01/jquery.js?cdv=531" type="text/javascript"></script><script src="/Resources/libraries/jQuery-Migrate/01_02_01/jquery-migrate.js?cdv=531" type="text/javascript"></script><script src="/Resources/libraries/jQuery-UI/01_11_03/jquery-ui.js?cdv=531" type="text/javascript"></script><link  rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans" /><link  rel="stylesheet" type="text/css" href="/DesktopModules/DNNGo_xPlugin/Resource/css/jquery.mmenu.css?cdv=531" /><!--[if LT IE 9]><link id="IE6Minus" rel="stylesheet" type="text/css" href="/Portals/_default/Skins/20047-UnlimitedColorPack-033/ie.css" /><![endif]--><script type='text/javascript'>
+//<![CDATA[
+    var analytics_page_startTime = (new Date()).getTime();
+//]]>
+</script>
+
+
+          <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-97730360-1']);
+            _gaq.push(['_setDomainName', 'none']);
+            _gaq.push(['_setAllowHash', true]);
+            
+
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+          </script>
+
+		  <script type="text/javascript">
+		if (typeof jQuery != 'undefined') {
+		  jQuery(document).ready(function($) {
+			var filetypes = /\.(zip|exe|dmg|pdf|doc.*|xls.*|ppt.*|mp3|txt|rar|wma|mov|avi|wmv|flv|wav)$/i;
+			var baseHref = '';
+			if (jQuery('base').attr('href') != undefined) baseHref = jQuery('base').attr('href');
+
+			jQuery('a').on('click', function(event) {
+			  var el = jQuery(this);
+			  var track = true;
+			  var href = (typeof(el.attr('href')) != 'undefined' ) ? el.attr('href') :"";
+			  var isThisDomain = href.match(document.domain.split('.').reverse()[1] + '.' + document.domain.split('.').reverse()[0]);
+			  if (!href.match(/^javascript:/i)) {
+				var elEv = []; elEv.value=0, elEv.non_i=false;
+				if (href.match(/^mailto\:/i)) {
+				  elEv.category = "email";
+				  elEv.action = "click";
+				  elEv.label = href.replace(/^mailto\:/i, '');
+				  elEv.loc = href;
+				}
+				else if (href.match(filetypes)) {
+				  var extension = (/[.]/.exec(href)) ? /[^.]+$/.exec(href) : undefined;
+				  elEv.category = "download";
+				  elEv.action = "click-" + extension[0];
+				  elEv.label = href.replace(/ /g,"-");
+				  elEv.loc = baseHref + href;
+				}
+				else if (href.match(/^https?\:/i) && !isThisDomain) {
+				  elEv.category = "external";
+				  elEv.action = "click";
+				  elEv.label = href.replace(/^https?\:\/\//i, '');
+				  elEv.non_i = true;
+				  elEv.loc = href;
+				}
+				else if (href.match(/^tel\:/i)) {
+				  elEv.category = "telephone";
+				  elEv.action = "click";
+				  elEv.label = href.replace(/^tel\:/i, '');
+				  elEv.loc = href;
+				}
+				else track = false;
+
+				if (track) {
+				  _gaq.push(['_trackEvent', elEv.category.toLowerCase(), elEv.action.toLowerCase(), elEv.label.toLowerCase(), elEv.value, elEv.non_i]);
+				  if ( el.attr('target') == undefined || el.attr('target').toLowerCase() != '_blank') {
+					setTimeout(function() { location.href = elEv.loc; }, 400);
+					return false;
+			  }
+			}
+			  }
+			});
+		  });
+		}
+		</script>
+
+        <link rel='SHORTCUT ICON' href='/Portals/1/favicon.ico?ver=2020-07-30-085942-997' type='image/x-icon' /><meta name="viewport" content="width=device-width,height=device-height, minimum-scale=1.0, maximum-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+                          <script>!function(a){var e="https://s.go-mpulse.net/boomerang/",t="addEventListener";if("False"=="True")a.BOOMR_config=a.BOOMR_config||{},a.BOOMR_config.PageParams=a.BOOMR_config.PageParams||{},a.BOOMR_config.PageParams.pci=!0,e="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="RYDVS-SB99L-MTVJH-7E27H-ZETAM",function(){function n(e){a.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!a.BOOMR||!a.BOOMR.version&&!a.BOOMR.snippetExecuted){a.BOOMR=a.BOOMR||{},a.BOOMR.snippetExecuted=!0;var i,_,o,r=document.createElement("iframe");if(a[t])a[t]("load",n,!1);else if(a.attachEvent)a.attachEvent("onload",n);r.src="javascript:void(0)",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="width:0;height:0;border:0;display:none;",o=document.getElementsByTagName("script")[0],o.parentNode.insertBefore(r,o);try{_=r.contentWindow.document}catch(O){i=document.domain,r.src="javascript:var d=document.open();d.domain='"+i+"';void(0);",_=r.contentWindow.document}_.open()._l=function(){var a=this.createElement("script");if(i)this.domain=i;a.id="boomr-if-as",a.src=e+"RYDVS-SB99L-MTVJH-7E27H-ZETAM",BOOMR_lstart=(new Date).getTime(),this.body.appendChild(a)},_.write("<bo"+'dy onload="document._l();">'),_.close()}}(),"".length>0)if(a&&"performance"in a&&a.performance&&"function"==typeof a.performance.setResourceTimingBufferSize)a.performance.setResourceTimingBufferSize();!function(){if(BOOMR=a.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var e=""=="true"?1:0,t="",n="iosxqbixeaxkaybftm3a-f-d6d9af11a-clientnsv4-s.akamaihd.net",i={"ak.v":"30","ak.cp":"951535","ak.ai":parseInt("609456",10),"ak.ol":"0","ak.cr":22,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"e27f3ec","ak.r":29172,"ak.a2":e,"ak.m":"dscb","ak.n":"essl","ak.bpcip":"67.165.120.0","ak.cport":51910,"ak.gh":"23.32.46.156","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.csrc":"-","ak.acc":"reno","ak.t":"1613077302","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==yl5uJGEgO6MfE3jS1HOYFQxfi/4MEavYJx3bOOQQbap8AquWxQHQrZDI6cXDWXu0OfnGzFCmJqvjhbgnFsi6ncUD9VFHU+Y5PVveT3Ig1g+SDJKIFo/ntawEA/EcQOw5hiJY383xRb1qixm8MDIVX7fSAHSgHtdyKt/we+0d3W2PIoBUZ2q6mEPIId3SjJF4WTFk3kPxP55XdWBX2gvjM2VLoF1SLUUtpOjHNEEOASc9h5KQSgiq9Rqz5jHhhdsrR2GqLk9b35rFbLxdsZbW8quWXK6vw13P8lRN2NQ7DB1bHH3W5hvmfKgpKGtwwmGrWNnNYcXEEjFNapaBYGCD+VUhfT7octbgB+MM3rldPud7kZZNEfxUIkuad6k3DRkOTqKm3MJUaT4qnMAMEnDtwWnFYVP3G0GuE+85ynkqLcc=","ak.pv":"88","ak.dpoabenc":""};if(""!==t)i["ak.ruds"]=t;var _={i:!1,av:function(e){var t="http.initiator";if(e&&(!e[t]||"spa_hard"===e[t]))i["ak.feo"]=void 0!==a.aFeoApplied?1:0,BOOMR.addVar(i)},rv:function(){var a=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.r","ak.acc","ak.t"];BOOMR.removeVar(a)}};BOOMR.plugins.AK={akVars:i,akDNSPreFetchDomain:n,init:function(){if(!_.i){var a=BOOMR.subscribe;a("before_beacon",_.av,null,null),a("onbeacon",_.rv,null,null),_.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+<body id="Body">
+    
+    <form method="post" action="/Emerging-Health-Issues/Novel-Coronavirus/Vaccine" id="Form" enctype="multipart/form-data">
+<div class="aspNetHidden">
+<input type="hidden" name="StylesheetManager_TSSM" id="StylesheetManager_TSSM" value="" />
+<input type="hidden" name="ScriptManager_TSM" id="ScriptManager_TSM" value="" />
+<input type="hidden" name="KB_JSTester_JSEnabled" id="KB_JSTester_JSEnabled" value="0" />
+<input type="hidden" name="KB_JSTester_JQueryVsn" id="KB_JSTester_JQueryVsn" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+
+<script src="/Telerik.Web.UI.WebResource.axd?_TSM_HiddenField_=ScriptManager_TSM&amp;compress=1&amp;_TSM_CombinedScripts_=%3b%3bSystem.Web.Extensions%2c+Version%3d4.0.0.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d31bf3856ad364e35%3aen-US%3abc17b1ef-7a1b-49cb-a795-5f1c64597a53%3aea597d4b%3ab25378d2" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="rT5VlLPIlS8BgPyNMVHet3m2J4pqZYFnB0xNW5JSqWQUPQ3CwDVQtuwlZYZgu/iQDKArcWcQdUVN34TycRSql+pOb9+EjkpL2uNjaleFhqjP571E71BhnVxtioM7mhTulKjXq/bmVPQ3fF0e0ebVNvun0LaqLEuv9CBuvyM9AhhZxqlvpTEg/eBLNFksSV/C6WoL75zWndXoI9vMPR4hD3jAYi0=" />
+</div><script src="/js/dnn.js?cdv=531" type="text/javascript"></script><script src="/js/dnn.modalpopup.js?cdv=531" type="text/javascript"></script><script src="/js/dnncore.js?cdv=531" type="text/javascript"></script><script src="/Resources/Search/SearchSkinObjectPreview.js?cdv=531" type="text/javascript"></script><script src="/DesktopModules/DNNCorp/EvoqContentLibrary/ClientScripts/dnn.analytics.Injected.js?cdv=531" type="text/javascript"></script><script src="/js/dnn.servicesframework.js?cdv=531" type="text/javascript"></script><script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [], 90, '');
+//]]>
+</script>
+
+        
+        
+        
+
+
+ 
+
+
+<!--[if lt IE 9]>
+<script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]--> 
+<script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false"></script> 
+<script type="text/javascript" src="/Portals/_default/Skins/20047-UnlimitedColorPack-033/scripts/jquery.gmap.min.js"></script> 
+<!-- header7 --> 
+
+<!-- header7 End --> 
+<div class="body_bg full"> 
+
+  
+  <div id="dnn_wrapper">
+    <div class="wrapper">
+      <div class="hidden-xs"> 
+          <!-- header1~6 --> 
+          <!--header1 ~ header6 -->
+
+<!-- header3 -->
+<div id="header3">
+  <header>
+    <div class="dnn_layout LogoMenuBox  ">
+      <div class="head_mid clearfix">
+        <div class="dnn_logo ElementHide-xs">
+          <a id="dnn_dnnLOGO_hypLogo" title="Iowa Department of Public Health - Protecting and Improving the Health of Iowans" href="https://idph.iowa.gov/"><img id="dnn_dnnLOGO_imgLogo" src="/Portals/1/idph-web-banner-2020.gif?ver=2020-01-29-162111-857" alt="Iowa Department of Public Health - Protecting and Improving the Health of Iowans" style="border-width:0px;" /></a>
+        </div>
+        <div class="HeaderRight">
+          <div class="Login ElementHide-xs">
+            
+
+            <span class="sep">|</span>
+            
+<div id="dnn_dnnLogin_loginGroup" class="loginGroup">
+    <a id="dnn_dnnLogin_enhancedLoginLink" title="Login" class="LoginLink" rel="nofollow" onclick="this.disabled=true;" href="https://idph.iowa.gov/Account-Login?returnurl=%2fEmerging-Health-Issues%2fNovel-Coronavirus%2fVaccine">Login</a>
+</div>
+          </div>
+          <div class="languageBox  ">
+            <div class="language-object" >
+
+
+</div>
+          </div>
+          <div id="dnn_HeadPane" class="HeadPane   DNNEmptyPane"></div>
+        </div>
+      </div>
+    </div>
+    <div class="roll_menu">
+      <div class="header_top  ">
+        <div class="dnn_layout">
+          <div class="head_mid clearfix">
+            <div class="roll_logo ElementHide-xs">
+              <a id="dnn_dnnLOGO2_hypLogo" title="Iowa Department of Public Health - Protecting and Improving the Health of Iowans" href="https://idph.iowa.gov/"><img id="dnn_dnnLOGO2_imgLogo" src="/Portals/1/idph-web-banner-2020.gif?ver=2020-01-29-162111-857" alt="Iowa Department of Public Health - Protecting and Improving the Health of Iowans" style="border-width:0px;" /></a>
+            </div>
+            
+            <!-- Fix - Use static Search box -->            
+            <div class="IdphStaticSearch">
+                <div class="IdphSearchBox" id="search">
+                    <span id="dnn_dnnSEARCH_ClassicSearch">
+    
+    <span class="search" title="Site Search"><input id="dnn_dnnSEARCH_SiteRadioButton" type="radio" name="dnn$dnnSEARCH$Search" value="SiteRadioButton" checked="checked" /><label for="dnn_dnnSEARCH_SiteRadioButton">Site</label></span>
+    <span class="searchInputContainer" data-moreresults="See More Results" data-noresult="No Results Found">
+        <input name="dnn$dnnSEARCH$txtSearch" type="text" maxlength="255" size="20" id="dnn_dnnSEARCH_txtSearch" class="NormalTextBox" aria-label="Search IDPH" autocomplete="off" placeholder="Search..." />
+        <a class="dnnSearchBoxClearText" title="Clear search text"></a>
+    </span>
+    <a id="dnn_dnnSEARCH_cmdSearch" class="search" href="javascript:__doPostBack(&#39;dnn$dnnSEARCH$cmdSearch&#39;,&#39;&#39;)">Go</a>
+</span>
+
+
+<script type="text/javascript">
+    $(function() {
+        if (typeof dnn != "undefined" && typeof dnn.searchSkinObject != "undefined") {
+            var searchSkinObject = new dnn.searchSkinObject({
+                delayTriggerAutoSearch : 400,
+                minCharRequiredTriggerAutoSearch : 2,
+                searchType: 'S',
+                enableWildSearch: true,
+                cultureCode: 'en-US',
+                portalId: -1
+                }
+            );
+            searchSkinObject.init();
+            
+            
+            // attach classic search
+            var siteBtn = $('#dnn_dnnSEARCH_SiteRadioButton');
+            var webBtn = $('#dnn_dnnSEARCH_WebRadioButton');
+            var clickHandler = function() {
+                if (siteBtn.is(':checked')) searchSkinObject.settings.searchType = 'S';
+                else searchSkinObject.settings.searchType = 'W';
+            };
+            siteBtn.on('change', clickHandler);
+            webBtn.on('change', clickHandler);
+            
+            
+        }
+    });
+</script>
+
+                </div>
+            </div>
+            <!-- End Fix -->
+
+            <nav>
+              <div class="dnn_menu hidden-xs">
+                <div id="dnngo_megamenu" class="IHide-sm IHide-md">
+                  
+    <div class="dnngo_gomenu" id="dnngo_megamenu365446a4a1">
+      
+         <ul class="primary_structure">
+ <li class=" ">
+<a href="https://idph.iowa.gov/"   title="Home"  ><span>Home</span></a>
+</li>
+ <li class=" ">
+<a href="https://idph.iowa.gov/Calendar"   title="IDPH Events Calendar"  ><span>Calendar</span></a>
+</li>
+ <li class=" ">
+<a href="https://idph.iowa.gov/News"   title="IDPH News"  ><span>News</span></a>
+</li>
+ <li class=" ">
+<a href="https://idph.iowa.gov/Licensing"   title="IDPH Licensing Links"  ><span>Licensing</span></a>
+</li>
+ <li class=" ">
+<a href="https://idph.iowa.gov/A-Z"   title="A-Z Index"  ><span>A-Z Index</span></a>
+</li>
+ <li class="dir ">
+<a href="https://idph.iowa.gov/Contact-Us"   title="Contact Us"  ><span>Contact Us</span></a>
+ <div class="dnngo_menuslide">
+ <ul class="dnngo_slide_menu ">
+ <li class=" ">
+<a href="https://idph.iowa.gov/Contact-Us"   title="Contact Us - Online Form"  ><span>Online Form</span></a>
+</li>
+ <li class=" ">
+<a href="https://idph.iowa.gov/Contact-Us/Public-Records-Requests"   title="Public Records Requests"  ><span>Public Records Requests</span></a>
+</li>
+ <li class=" ">
+<a href="https://idph.iowa.gov/Contact-Us/Address-Phone-Hours-of-Operation"   title="Contact Us - Address, Phone & Hours of Operation"  ><span>Address, Phone & Hours of Operation</span></a>
+</li>
+</ul>
+</div>
+</li>
+ <li class="dir ">
+<a href="https://idph.iowa.gov/About"   title="About IDPH"  ><span>About IDPH</span></a>
+ <div class="dnngo_menuslide">
+ <ul class="dnngo_slide_menu ">
+ <li class=" ">
+<a href="https://idph.iowa.gov/do"   title="Director's Office"  ><span>Director's Office</span></a>
+</li>
+ <li class=" ">
+<a href="https://idph.iowa.gov/about/leadership-team"   title="About IDPH - Leadership Team"  ><span>Leadership Team</span></a>
+</li>
+ <li class=" ">
+<a href="https://idph.iowa.gov/about/phab-accreditation"   title="About IDPH - PHAB Accreditation"  ><span>PHAB Accreditation</span></a>
+</li>
+ <li class=" ">
+<a href="https://idph.iowa.gov/About/Department-Priorities"   title="About IDPH - Department Scorecards"  ><span>Department Scorecards</span></a>
+</li>
+ <li class=" ">
+<a href="https://idph.iowa.gov/About/Program-Profiles"   title="Profiles of IDPH Programs, Services, and Activities"  ><span>Profiles of IDPH Programs, Services, and Activities</span></a>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+
+      
+    </div>
+    
+    
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+        $("#dnngo_megamenu365446a4a1").dnngomegamenu({
+            slide_speed: 200,
+            delay_disappear: 500,
+            popUp: "vertical",//level
+			delay_show:150,
+			direction:"ltr",//rtl ltr
+			megamenuwidth:"box",//full box
+			WidthBoxClassName:".dnn_layout"
+        });
+    });
+
+
+	jQuery(document).ready(function () {
+		jQuery("#dnngo_megamenu365446a4a1").has("ul").find(".dir > a").attr("aria-haspopup", "true");
+	}); 
+
+</script>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
+<!-- header3 End --> 
+<!-- header6 --> 
+
+          <!-- header1~6 end --> 
+      </div>
+      <div class="visible-xs">
+          <!-- mobile header --> 
+          
+<header>
+    <div class=" phoneHeadTop clearfix"> 
+        <!-- JCW change made to display the logo in mobile -->
+        <!--<span class=" ElementHide-xs">-->
+        <span class="">
+            <a id="dnn_dnnLOGO3_hypLogo" title="Iowa Department of Public Health - Protecting and Improving the Health of Iowans" href="https://idph.iowa.gov/"><img id="dnn_dnnLOGO3_imgLogo" src="/Portals/1/idph-web-banner-2020.gif?ver=2020-01-29-162111-857" alt="Iowa Department of Public Health - Protecting and Improving the Health of Iowans" style="border-width:0px;" /></a>
+        </span> 
+        <span class="fa fa-search  " id="mobile_search"></span>
+        
+<a href="#gomenu004d15ed2b" class="mobilemenu_close">X</a>
+<div id="gomenu004d15ed2b" class="mobile_menu ">
+    <ul  class="menu_list"><li class="   first-item Item-1 "><a href="https://idph.iowa.gov/"   title="Home"  ><span>Home</span></a></li><li class="   Item-2 "><a href="https://idph.iowa.gov/Calendar"   title="IDPH Events Calendar"  ><span>Calendar</span></a></li><li class="   Item-3 "><a href="https://idph.iowa.gov/News"   title="IDPH News"  ><span>News</span></a></li><li class="   Item-4 "><a href="https://idph.iowa.gov/Licensing"   title="IDPH Licensing Links"  ><span>Licensing</span></a></li><li class="   Item-5 "><a href="https://idph.iowa.gov/A-Z"   title="A-Z Index"  ><span>A-Z Index</span></a></li><li class="dir   Item-6 "><a href="https://idph.iowa.gov/Contact-Us"   title="Contact Us"  ><span>Contact Us</span></a><ul><li class="   first-item SunItem-1 "><a href="https://idph.iowa.gov/Contact-Us"   title="Contact Us - Online Form"  ><span>Online Form</span></a></li><li class="   SunItem-2 "><a href="https://idph.iowa.gov/Contact-Us/Public-Records-Requests"   title="Public Records Requests"  ><span>Public Records Requests</span></a></li><li class="   last-item SunItem-3 "><a href="https://idph.iowa.gov/Contact-Us/Address-Phone-Hours-of-Operation"   title="Contact Us - Address, Phone & Hours of Operation"  ><span>Address, Phone & Hours of Operation</span></a></li></ul></li><li class="dir   last-item Item-7 "><a href="https://idph.iowa.gov/About"   title="About IDPH"  ><span>About IDPH</span></a><ul><li class="   first-item SunItem-1 "><a href="https://idph.iowa.gov/do"   title="Director's Office"  ><span>Director's Office</span></a></li><li class="   SunItem-2 "><a href="https://idph.iowa.gov/about/leadership-team"   title="About IDPH - Leadership Team"  ><span>Leadership Team</span></a></li><li class="   SunItem-3 "><a href="https://idph.iowa.gov/about/phab-accreditation"   title="About IDPH - PHAB Accreditation"  ><span>PHAB Accreditation</span></a></li><li class="   SunItem-4 "><a href="https://idph.iowa.gov/About/Department-Priorities"   title="About IDPH - Department Scorecards"  ><span>Department Scorecards</span></a></li><li class="   last-item SunItem-5 "><a href="https://idph.iowa.gov/About/Program-Profiles"   title="Profiles of IDPH Programs, Services, and Activities"  ><span>Profiles of IDPH Programs, Services, and Activities</span></a></li></ul></li></ul>
+</div>
+ 
+ <script type="text/javascript">
+     jQuery(document).ready(function ($) {
+
+
+		 $('#gomenu004d15ed2b').find(".dir.mm-selected").removeClass("mm-selected").parent().parent().addClass("mm-selected")
+		 
+         $('#gomenu004d15ed2b').mobile_menu({
+             slidingSubmenus: true,
+             counters: true,
+             navbartitle: "Menu",
+             headerbox: ".menu_header",
+             footerbox: ".menu_footer"			 
+         });
+		 
+		  $('#gomenu004d15ed2b').find("a[href='javascript:;']").on("click",function () {
+			  $('#gomenu004d15ed2b').find(".mm-close.mm-btn").click();
+		  })
+     });
+</script>
+
+
+ 
+    </div>
+    <div class="phoneHeadBottom">
+        <div class="HeadPane_mobile menu_header   " ></div>
+        <div class="searchBox2   " id="search2" >
+          <span id="dnn_dnnSEARCH2_ClassicSearch">
+    
+    
+    <span class="searchInputContainer" data-moreresults="See More Results" data-noresult="No Results Found">
+        <input name="dnn$dnnSEARCH2$txtSearch" type="text" maxlength="255" size="20" id="dnn_dnnSEARCH2_txtSearch" class="NormalTextBox" aria-label="Search IDPH" autocomplete="off" placeholder="Search..." />
+        <a class="dnnSearchBoxClearText" title="Clear search text"></a>
+    </span>
+    <a id="dnn_dnnSEARCH2_cmdSearch" class="search" href="javascript:__doPostBack(&#39;dnn$dnnSEARCH2$cmdSearch&#39;,&#39;&#39;)">GO</a>
+</span>
+
+
+<script type="text/javascript">
+    $(function() {
+        if (typeof dnn != "undefined" && typeof dnn.searchSkinObject != "undefined") {
+            var searchSkinObject = new dnn.searchSkinObject({
+                delayTriggerAutoSearch : 400,
+                minCharRequiredTriggerAutoSearch : 2,
+                searchType: 'S',
+                enableWildSearch: true,
+                cultureCode: 'en-US',
+                portalId: -1
+                }
+            );
+            searchSkinObject.init();
+            
+            
+            // attach classic search
+            var siteBtn = $('#dnn_dnnSEARCH2_SiteRadioButton');
+            var webBtn = $('#dnn_dnnSEARCH2_WebRadioButton');
+            var clickHandler = function() {
+                if (siteBtn.is(':checked')) searchSkinObject.settings.searchType = 'S';
+                else searchSkinObject.settings.searchType = 'W';
+            };
+            siteBtn.on('change', clickHandler);
+            webBtn.on('change', clickHandler);
+            
+            
+        }
+    });
+</script>
+
+        </div>
+        <div class="Login  ElementHide-xs">
+          
+
+          <span class="sep">|</span>
+          
+<div id="dnn_dnnLogin3_loginGroup" class="loginGroup">
+    <a id="dnn_dnnLogin3_enhancedLoginLink" title="Login" class="LoginLink" rel="nofollow" onclick="this.disabled=true;" href="https://idph.iowa.gov/Account-Login?returnurl=%2fEmerging-Health-Issues%2fNovel-Coronavirus%2fVaccine">Login</a>
+</div>
+        </div>
+        <div class="languageBox  ">
+          <div class="language-object" >
+
+
+</div>
+        </div>
+    </div>
+</header>
+
+
+          <!-- mobile end --> 
+      </div>
+      <div class="Breadcrumb_bg" id="Breadcrumb_style_4">
+      
+        <!-- breadcrumb  --> 
+        
+<div class="shade"></div>
+<div class="breadcrumbBox   ">
+  <div class="dnn_layout">
+    <div class="content_mid clearfix">
+      <div class="breadcrumbborder">
+          <!-- Fix - Remove h3 tag from breadcrumb -->
+          <!--<h3><*%=PortalSettings.ActiveTab.TabName %> </h3>-->
+          <!-- End Fix -->
+        <div class="breadcrumbRight"> <a href="https://idph.iowa.gov/" > <span class="fa fa-home"></span></a> 
+          <span id="dnn_dnnBREADCRUMB_lblBreadCrumb" itemprop="breadcrumb" itemscope="" itemtype="https://schema.org/breadcrumb"><span itemscope itemtype="http://schema.org/BreadcrumbList"><span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="https://idph.iowa.gov/ehi" class="breadcrumb" itemprop="item"><span itemprop="name">Emerging Health Issues</span></a><meta itemprop="position" content="1" /></span>   >   <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus" class="breadcrumb" itemprop="item"><span itemprop="name">Novel Coronavirus</span></a><meta itemprop="position" content="2" /></span>   >   <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus/Vaccine" class="breadcrumb" itemprop="item"><span itemprop="name">Vaccine</span></a><meta itemprop="position" content="3" /></span></span></span>
+        </div>
+        <div class="clear"></div>
+        <div id="dnn_breadcrumb_Pane" class="breadcrumb_Pane DNNEmptyPane"></div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+        <!-- breadcrumb end --> 
+          
+        <section id="dnn_content">
+          <div class="dnn_layout">
+            <div class="content_mid clearfix">
+              <div  class="row LeftPage_Box">
+		<!-- Fix for hidden left menu in mobile -->
+                <div class="col-sm-3 LeftBox" id="ListBox">
+		<!--<div class="hidden-xs col-sm-3 LeftBox" id="ListBox">-->
+		<!-- End Fix -->
+                  <div id="left_menu">
+                    
+<div id="gomenuc2f7e65ba0" class="gomenu ">
+    <ul  class=""><li class="   Item-1"><a href="https://idph.iowa.gov/ehi/lung-disease-vaping"   title="EHI - Severe Lung Disease Associated with Vaping"  ><span>Severe Lung Disease Associated with Vaping</span></a></li><li class="dir current  Item-2"><a href="https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus"   title="Emerging Health Issues - Novel Coronavirus"  ><span>Novel Coronavirus</span></a><ul><li class="   first-item SunItem-1"><a href="https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus/Business-and-Organizations"   title="Novel Coronavirus - Business & Organizations"  ><span>Business & Organizations</span></a></li><li class="   SunItem-2"><a href="https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus/Communication-Resources"   title="Novel Coronavirus - Communication Resources"  ><span>Communication Resources</span></a></li><li class="   SunItem-3"><a href="https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus/ELL"   title="Novel Coronavirus - COVID-19 in Multiple Languages"  ><span>COVID-19 in Multiple Languages</span></a></li><li class="dir   SunItem-4"><a href="https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus/Monoclonal-Antibody-Therapeutics"   title="Novel Coronavirus - COVID-19 Monoclonal Antibody Therapeutics"  ><span>COVID-19 Monoclonal Antibody Therapeutics</span></a><ul><li class="   first-item SunItem-1"><a href="https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus/Monoclonal-Antibody-Therapeutics/Information-for-the-Public"   title="Novel Coronavirus - COVID-19 Monoclonal Antibody Therapeutics Information for the Public"  ><span>COVID-19 Monoclonal Antibody Therapeutics Information for the Public</span></a></li><li class="   last-item SunItem-2"><a href="https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus/Monoclonal-Antibody-Therapeutics/Information-for-Providers"   title="Novel Coronavirus - COVID-19 Monoclonal Antibody Therapeutics Information for Providers"  ><span>COVID-19 Monoclonal Antibody Therapeutics Information for Providers</span></a></li></ul></li><li class="   SunItem-5"><a href="https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus/Essential-Services-Personnel"   title="Novel Coronavirus - Essential Services Personnel"  ><span>Essential Services Personnel</span></a></li><li class="   SunItem-6"><a href="https://dia.iowa.gov/document/iowa-bar-and-restaurant-reopening-and-operating-criteria-during-covid-19"   title="Novel Coronavirus - Food Establishments"  target="_blank"><span>Food Establishments</span></a></li><li class="   SunItem-7"><a href="https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus/Guidance"   title="Novel Coronavirus - Guidance"  ><span>Guidance</span></a></li><li class="   SunItem-8"><a href="https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus/Healthcare"   title="Novel Coronavirus - Healthcare"  ><span>Healthcare</span></a></li><li class="   SunItem-9"><a href="https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus/IDAC"   title="Novel Coronavirus - Infectious Disease Advisory Council"  ><span>Infectious Disease Advisory Council</span></a></li><li class="   SunItem-10"><a href="https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus/Local-Public-Health"   title="Novel Coronavirus - Local Public Health"  ><span>Local Public Health</span></a></li><li class="   SunItem-11"><a href="https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus/Long-Term-Care"   title="Novel Coronavirus - Long Term Care"  ><span>Long Term Care</span></a></li><li class="   SunItem-12"><a href="https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus/Press-Release-Archive"   title="Emerging Health Issues - Novel Coronavirus - Press Release Archive"  ><span>Press Release Archive</span></a></li><li class="   SunItem-13"><a href="https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus/Public"   title="Novel Coronavirus - Public"  ><span>Public</span></a></li><li class="dir subcurrent  last-item SunItem-14"><a href="https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus/Vaccine" class="acurrent"  title="Novel Coronavirus - COVID-19 Vaccine Information"  ><span>Vaccine</span></a><ul><li class="   first-item SunItem-1"><a href="https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus/Vaccine/Information-for-the-Public"   title="Novel Coronavirus - COVID-19 Vaccine Information - For the Public"  ><span>Information for the Public</span></a></li><li class="dir   last-item SunItem-2"><a href="https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus/Vaccine/Information-for-Vaccine-Providers"   title="Novel Coronavirus - COVID-19 Vaccine Information - For Vaccine Providers"  ><span>Information for Vaccine Providers</span></a><ul><li class="   first-item SunItem-1"><a href="https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus/Vaccine/Information-for-Vaccine-Providers/IRIS-Instructions"   title="Novel Coronavirus - COVID-19 Vaccine Information - For Vaccine Providers - IRIS Instructions"  ><span>IRIS Instructions</span></a></li><li class="   SunItem-2"><a href="https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus/Vaccine/Information-for-Vaccine-Providers/Vaccine-Administration-Aids"   title="Novel Coronavirus - COVID-19 Vaccine Information - For Vaccine Providers - Vaccine Administration Job Aids"  ><span>Vaccine Administration Job Aids</span></a></li><li class="   last-item SunItem-3"><a href="https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus/Vaccine/Information-for-Vaccine-Providers/Vaccine-Administration-Videos"   title="Novel Coronavirus - COVID-19 Vaccine Information - For Vaccine Providers - Vaccine Administration Videos"  ><span>Vaccine Administration Videos</span></a></li></ul></li></ul></li></ul></li><li class="   Item-3"><a href="https://idph.iowa.gov/ehi/acute-flaccid-myelitis"   title="EHI - Acute Flaccid Myelitis (AFM)"  ><span>Acute Flaccid Myelitis (AFM)</span></a></li><li class="   Item-4"><a href="https://idph.iowa.gov/ehi/zika"   title="EHI - Zika Virus"  ><span>Zika Virus</span></a></li></ul>
+</div>
+ 
+
+                  </div>
+                  <div id="dnn_LeftOutPane" class="LeftOutPane DNNEmptyPane"></div>
+                </div>
+                <div class="col-sm-9" id="ContentBox"> 
+                <!-- content pane --> 
+                <div class="pane_layout">
+  <section class="row">
+    <div class="col-sm-12">
+      <div id="dnn_TopPane" class="TopPane"><div class="DnnModule DnnModule-DNN_HTML DnnModule-12158 DnnVersionableControl"><a name="12158"></a>
+<div class="White">
+     <div id="dnn_ctr12158_ContentPane" class="contentpane"><!-- Start_Module_12158 --><div id="dnn_ctr12158_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+	<div id="dnn_ctr12158_HtmlModule_lblContent"><h1>COVID-19 Vaccine Information</h1>
+<p>Welcome to Iowa's COVID-19 Vaccine information page.  Please choose one of the options below.
+</p>
+<div class="row">
+	<div class="col-sm-12">
+		<div class="col-sm-6" style="margin-top: 30px; text-align: center;"><a href="/Emerging-Health-Issues/Novel-Coronavirus/Vaccine/Information-for-the-Public"><img alt="Information for the Public" class="dropshadow" role="button" src="/portals/1/userfiles/61/covid19/vaccine/imgs/button_information-for-the-public%20%283%29.png" title="Information for the Public" style="width: 100%;"></a>
+		</div>
+		<div class="col-sm-6" style="margin-top:30px;"><a href="/Portals/1/userfiles/61/covid19/vaccine/imgs/button_information-for-providers%20%284%29.png"><img alt="Information for Vaccine Providers" class="dropshadow" role="button" src="/portals/1/userfiles/61/covid19/vaccine/imgs/button_information-for-providers%20%284%29.png" title="Information for Vaccine Providers" style="width: 100%;"></a>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-sm-12">
+		<div class="col-sm-6" style="margin-top:30px;"><a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/index.html"><img alt="CDC COVID-19 Vaccine Information" class="dropshadow" role="button" src="/portals/1/userfiles/61/covid19/vaccine/imgs/button_cdc-vaccine-information.png" title="CDC COVID-19 Vaccine Information" style="width: 100%;"></a>
+		</div>
+		<div class="col-sm-6" style="margin-top:30px;"><a href="/Portals/1/userfiles/61/covid19/vaccine/V%202%20IOWA%20COVID-19%20VACCINATION%20STRATEGY%2012_4_20_FINAL.pdf"><img alt="Iowa's COVID-19 Vaccine Strategy" class="dropshadow" role="button" src="/portals/1/userfiles/61/covid19/vaccine/imgs/button_iowas-vaccination-strategy.png" title="Iowa's COVID-19 Vaccine Strategy" style="width: 100%;"></a>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-sm-12">
+		<div class="col-sm-3"> 
+		</div>
+		<div class="col-sm-6" style="margin-top:30px;"><a href="http://coronavirus.iowa.gov/"><img alt="Go to coronavirus.iowa.gov" class="dropshadow" role="button" src="/portals/1/userfiles/61/covid19/vaccine/imgs/button_coronavirus-iowa-gov.png" title="Go to coronavirus.iowa.gov" style="width: 100%;"></a>
+		</div>
+		<div class="col-sm-3"> 
+		</div>
+	</div>
+</div>
+<p> 
+</p>
+<p> 
+</p>
+<h2>Webinar Recordings</h2>
+<div>
+	<ul>
+		<li><a href="https://youtu.be/C-74PVvGz-0">January 22 Department of Education Webinar</a> </li>
+		<li><a href="https://youtu.be/N0pH_hwKdNg">January 8th Webinar for Business, Agriculture and Industry</a> 
+		<ul>
+			<li><a href="/Portals/1/userfiles/61/covid19/Vaccine%20Presentation%20for%20Iowa%20Businesses%201-8-21.pdf">Powerpoint Presentation for Jan 8 webinar</a></li>
+		</ul>
+		</li>
+	</ul>
+</div></div>
+
+
+
+
+</div><!-- End_Module_12158 --></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div></div>
+    </div>
+  </section>
+  <section class="row">
+    <div class="col-sm-3">
+      <div id="dnn_RowOne_Grid3_Pane" class="RowOne_Grid3_Pane DNNEmptyPane"></div>
+    </div>
+    <div class="col-sm-9">
+      <div id="dnn_RowOne_Grid9_Pane" class="RowOne_Grid9_Pane DNNEmptyPane"></div>
+    </div>
+  </section>
+  <section class="row">
+    <div class="col-sm-4">
+      <div id="dnn_RowTwo_Grid4_Pane" class="RowTwo_Grid4_Pane DNNEmptyPane"></div>
+    </div>
+    <div class="col-sm-8">
+      <div id="dnn_RowTwo_Grid8_Pane" class="RowTwo_Grid8_Pane DNNEmptyPane"></div>
+    </div>
+  </section>
+  <section class="row">
+    <div class="col-sm-5">
+      <div id="dnn_RowThree_Grid5_Pane" class="RowThree_Grid5_Pane DNNEmptyPane"></div>
+    </div>
+    <div class="col-sm-7">
+      <div id="dnn_RowThree_Grid7_Pane" class="RowThree_Grid7_Pane DNNEmptyPane"></div>
+    </div>
+  </section>
+  <section class="row">
+    <div class="col-sm-6">
+      <div id="dnn_RowFour_Grid6_Pane1" class="RowFour_Grid6_Pane1 DNNEmptyPane"></div>
+    </div>
+    <div class="col-sm-6">
+      <div id="dnn_RowFour_Grid6_Pane2" class="RowFour_Grid6_Pane2 DNNEmptyPane"></div>
+    </div>
+  </section>
+  <section class="row">
+    <div class="col-sm-7">
+      <div id="dnn_RowFive_Grid7_Pane" class="RowFive_Grid7_Pane DNNEmptyPane"></div>
+    </div>
+    <div class="col-sm-5">
+      <div id="dnn_RowFive_Grid5_Pane" class="RowFive_Grid5_Pane DNNEmptyPane"></div>
+    </div>
+  </section>
+  <section class="row">
+    <div class="col-sm-8">
+      <div id="dnn_RowSix_Grid8_Pane" class="RowSix_Grid8_Pane DNNEmptyPane"></div>
+    </div>
+    <div class="col-sm-4">
+      <div id="dnn_RowSix_Grid4_Pane" class="RowSix_Grid4_Pane DNNEmptyPane"></div>
+    </div>
+  </section>
+  <section class="row">
+    <div class="col-sm-9">
+      <div id="dnn_RowSeven_Grid9_Pane" class="RowSeven_Grid9_Pane DNNEmptyPane"></div>
+    </div>
+    <div class="col-sm-3">
+      <div id="dnn_RowSeven_Grid3_Pane" class="RowSeven_Grid3_Pane DNNEmptyPane"></div>
+    </div>
+  </section>
+  <section class="row">
+    <div class="col-sm-4">
+      <div id="dnn_RowEight_Grid4_Pane1" class="RowEight_Grid4_Pane1 DNNEmptyPane"></div>
+    </div>
+    <div class="col-sm-4">
+      <div id="dnn_RowEight_Grid4_Pane2" class="RowEight_Grid4_Pane2 DNNEmptyPane"></div>
+    </div>
+    <div class="col-sm-4">
+      <div id="dnn_RowEight_Grid4_Pane3" class="RowEight_Grid4_Pane3 DNNEmptyPane"></div>
+    </div>
+  </section>
+  <section class="row">
+    <div class="col-sm-3">
+      <div id="dnn_RowNine_Grid3_Pane1" class="RownNine_Grid3_Pane1 DNNEmptyPane"></div>
+    </div>
+    <div class="col-sm-3">
+      <div id="dnn_RowNine_Grid3_Pane2" class="RowNine_Grid3_Pane2 DNNEmptyPane"></div>
+    </div>
+    <div class="col-sm-3">
+      <div id="dnn_RowNine_Grid3_Pane3" class="RowNine_Grid3_Pane3 DNNEmptyPane"></div>
+    </div>
+    <div class="col-sm-3">
+      <div id="dnn_RowNine_Grid3_Pane4" class="RowNine_Grid3_Pane4 DNNEmptyPane"></div>
+    </div>
+  </section>
+  <section class="row">
+    <div class="col-sm-12">
+      <div id="dnn_ContentPane" class="ContentPane DNNEmptyPane"></div>
+    </div>
+  </section>
+  <section class="row">
+    <div class="col-sm-4">
+      <div id="dnn_RowTen_Grid4_Pane1" class="RowTen_Grid4_Pane1 DNNEmptyPane"></div>
+    </div>
+    <div class="col-sm-4">
+      <div id="dnn_RowTen_Grid4_Pane2" class="RowTen_Grid4_Pane2 DNNEmptyPane"></div>
+    </div>
+    <div class="col-sm-4">
+      <div id="dnn_RowTen_Grid4_Pane3" class="RowTen_Grid4_Pane3 DNNEmptyPane"></div>
+    </div>
+  </section>
+  <section class="row">
+    <div class="col-sm-9">
+      <div id="dnn_RowEleven_Grid9_Pane" class="RowEleven_Grid9_Pane DNNEmptyPane"></div>
+    </div>
+    <div class="col-sm-3">
+      <div id="dnn_RowEleven_Grid3_Pane" class="RowEleven_Grid3_Pane DNNEmptyPane"></div>
+    </div>
+  </section>
+  <section class="row">
+    <div class="col-sm-8">
+      <div id="dnn_RowTwelve_Grid8_Pane" class="RowTwelve_Grid8_Pane DNNEmptyPane"></div>
+    </div>
+    <div class="col-sm-4">
+      <div id="dnn_RowTwelve_Grid4_Pane" class="RowTwelve_Grid4_Pane DNNEmptyPane"></div>
+    </div>
+  </section>
+  <section class="row">
+    <div class="col-sm-7">
+      <div id="dnn_RowThirteen_Grid7_Pane" class="RowThirteen_Grid7_Pane DNNEmptyPane"></div>
+    </div>
+    <div class="col-sm-5">
+      <div id="dnn_RowThirteen_Grid5_Pane" class="RowThirteen_Grid5_Pane DNNEmptyPane"></div>
+    </div>
+  </section>
+  <section class="row">
+    <div class="col-sm-6">
+      <div id="dnn_RowFourteen_Grid6_Pane1" class="RowFourteen_Grid6_Pane1 DNNEmptyPane"></div>
+    </div>
+    <div class="col-sm-6">
+      <div id="dnn_RowFourteen_Grid6_Pane2" class="RowFourteen_Grid6_Pane2 DNNEmptyPane"></div>
+    </div>
+  </section>
+  <section class="row">
+    <div class="col-sm-5">
+      <div id="dnn_RowFifteen_Grid5_Pane" class="RowFifteen_Grid5_Pane DNNEmptyPane"></div>
+    </div>
+    <div class="col-sm-7">
+      <div id="dnn_RowFifteen_Grid7_Pane" class="RowFifteen_Grid7_Pane DNNEmptyPane"></div>
+    </div>
+  </section>
+  <section class="row">
+    <div class="col-sm-4">
+      <div id="dnn_RowSixteen_Grid4_Pane" class="RowSixteen_Grid4_Pane DNNEmptyPane"></div>
+    </div>
+    <div class="col-sm-8">
+      <div id="dnn_RowSixteen_Grid8_Pane" class="RowSixteen_Grid8_Pane DNNEmptyPane"></div>
+    </div>
+  </section>
+  <section class="row">
+    <div class="col-sm-3">
+      <div id="dnn_RowSeventeen_Grid3_Pane" class="RowSeventeen_Grid3_Pane DNNEmptyPane"></div>
+    </div>
+    <div class="col-sm-9">
+      <div id="dnn_RowSeventeen_Grid9_Pane" class="RowSeventeen_Grid9_Pane DNNEmptyPane"></div>
+    </div>
+  </section>
+  <div class="row">
+    <div class="col-sm-12">
+      <div id="dnn_BottomPane" class="BottomPane DNNEmptyPane"></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <div id="dnn_IdphInnerFooter" class="IdphInnerFooter DNNEmptyPane"></div>
+    </div>
+  </div>
+</div>
+
+
+                <!-- content pane end --> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Footer --> 
+        <!-- Footer -->
+
+<div id="footer1">
+  <footer>
+    <div class="Footer_Contentbg  ">
+      <div class="dnn_layout">
+        <div class="footer_mid clearfix">
+          <div class="row">
+            <div class="col-sm-3">
+              <div id="dnn_FootPaneA" class="FootPaneA   DNNEmptyPane"></div>
+            </div>
+            <div class="col-sm-3">
+              <div id="dnn_FootPaneB" class="FootPaneB   DNNEmptyPane"></div>
+            </div>
+            <div class="col-sm-3">
+              <div id="dnn_FootPaneC" class="FootPaneC   DNNEmptyPane"></div>
+            </div>
+            <div class="col-sm-3">
+              <div id="dnn_FootPaneD" class="FootPaneD   DNNEmptyPane"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div id="dnn_FootPaneE" class="FootPaneE   DNNEmptyPane"></div>
+            </div>
+            <div class="col-sm-4">
+              <div id="dnn_FootPaneF" class="FootPaneF   DNNEmptyPane"></div>
+            </div>
+            <div class="col-sm-4">
+              <div id="dnn_FootPaneG" class="FootPaneG   DNNEmptyPane"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Footer_Bottombg  ">
+      <div class="dnn_layout">
+        <div class="footer_mid clearfix">
+	  <div class="col-sm-3 footer-phab-logo">
+	    <img src="https://idph.iowa.gov/Portals/1/Images/PHAB/idph-phab-accreditation-seal-140-color.png" alt="Accredited Health Department - Public Health Accreditation Board" />
+	  </div>
+          <div class="col-sm-6 copyright_style" style="text-align:center;color:#333333;">
+	    <span id="dnn_dnnCOPYRIGHT_lblCopyright" class="footer   ">&copy; Copyright 2021 -- Iowa Department of Public Health</span>
+
+            <span><br />Lucas State Office Building<br />321 E. 12th Street - Des Moines, IA 50319-0075<br />Phone: (515) 281-7689<br />Deaf Relay: (Hearing or Speech Impaired) 711 or 1-800-735-2942<br /></span>
+            <a id="dnn_dnnPRIVACY_hypPrivacy" class="terms  " rel="nofollow" href="https://idph.iowa.gov/Privacy">Privacy Statement</a>
+            <span class="sep    ">|</span>
+            <a id="dnn_dnnTERMS_hypTerms" class="terms  " rel="nofollow" href="https://idph.iowa.gov/Terms">Terms Of Use</a>
+            
+            <span class="sep ">|</span>
+	    <span><a href="./SiteMap.aspx">Sitemap</a></span>
+	  </div>
+          <div class="col-sm-3 footer-social-media-icons">
+            <a href="https://www.facebook.com/IowaDepartmentOfPublicHealth#!" target="_blank"><span class="fa fa-facebook-square footer-icon" style="font-size:32px;"></span></a>
+            <a href="https://twitter.com/IAPublicHealth" target="_blank"><span class="fa fa-twitter-square footer-icon" style="font-size:32px;"></span></a>
+            <a href="https://www.linkedin.com/company/iowa-department-of-public-health" target="_blank"><span class="fa fa-linkedin-square footer-icon" style="font-size:32px;"></span></a>
+            <a href="https://www.pinterest.com/iapublichealth/" target="_blank"><span class="fa fa-pinterest-square footer-icon" style="font-size:32px;"></span></a>
+            <a href="https://www.youtube.com/channel/UCG03jwEzHzM60tTC9Wzuyjw" target="_blank"><span class="fa fa-youtube-square footer-icon" style="font-size:32px;"></span></a>
+          </div>
+          <div id="dnn_FooterPane" class="FooterPane   DNNEmptyPane"></div>
+          <div id="to_top" class=" "><span> </span></div>
+        </div>
+        <div id="dnn_FooterPanePiwik" class="FooterPanePiwik"><div class="DnnModule DnnModule-XModPro DnnModule-9216"><a name="9216"></a>
+<div class="White">
+     <div id="dnn_ctr9216_ContentPane" class="contentpane"><!-- Start_Module_9216 --><div id="dnn_ctr9216_ModuleContent" class="DNNModuleContent ModXModProC">
+	
+
+
+
+
+<script type="text/javascript">
+  var _monsido = _monsido || [];
+  _monsido.push(['_setDomainToken', 'eROt8jJRiHI7DeahlRWbbA']);
+  _monsido.push(['_withStatistics', 'true']);
+</script>
+<script src="//cdn.monsido.com/tool/javascripts/monsido.js"></script>
+
+</div><!-- End_Module_9216 --></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div></div>
+      </div>
+    </div>
+  </footer>
+</div>
+<!-- Footer End --> 
+<!-- Footer2 --> 
+
+      <!-- Footer end--> 
+      </div>
+  </div>
+</div>
+
+<script type="text/javascript" src="/Portals/_default/Skins/20047-UnlimitedColorPack-033/scripts/script.js"></script> 
+<script type="text/javascript" src="/Portals/_default/Skins/20047-UnlimitedColorPack-033/scripts/custom.js"></script>
+<script type="text/javascript" src="//sliver.iowa.gov/sliver.js" async defer></script>
+<!--<script type="text/javascript" src="//iowa.gov/sliver/sliver.js"></script>-->
+<script type="text/javascript">if (self != top) { top.location = self.location; }</script>
+
+
+
+        <input name="ScrollTop" type="hidden" id="ScrollTop" />
+        <input name="__dnnVariable" type="hidden" id="__dnnVariable" autocomplete="off" value="`{`__scdoff`:`1`,`sf_siteRoot`:`/`,`sf_tabId`:`6945`,`evoq_TabId`:`6945`,`evoq_PageLanguage`:`en-US`,`evoq_ContentItemId`:`-1`,`evoq_UrlReferrer`:``,`evoq_UrlPath`:`https%3a%2f%2fidph.iowa.gov%2fEmerging-Health-Issues%2fNovel-Coronavirus%2fVaccine`,`evoq_UrlQuery`:`%3fTabId%3d6945%26language%3den-US`,`evoq_ContentItemReferrer`:`-1`,`evoq_PersonalizedUrlReferrer`:`-1`,`evoq_DisableAnalytics`:`False`}" />
+        <input name="__RequestVerificationToken" type="hidden" value="pFjjUqU9Ka1bbxjQ3uXTo9HWMwul1R6ocNTloHAMozaYZf8balr2Ch34j-8v3UYwUGSx_Q2" />
+    
+<script type='text/javascript'>
+//<![CDATA[
+(function() {
+
+  var analyticsSettings;
+  var initAnalyticsSettings = function (e) {
+    analyticsSettings = {
+      pageStart: analytics_page_startTime,
+      servicesFramework: $.ServicesFramework(-1)
+    };
+  };
+  if(window.addEventListener) {
+    window.addEventListener('load', initAnalyticsSettings, false);
+  } else {
+    window.attachEvent('onload', initAnalyticsSettings);
+  };
+
+  var eventName = (window.onpagehide || window.onpagehide === null) ? 'pagehide' : 'unload';
+  if (window.addEventListener) {
+    window.addEventListener(eventName, function (e) {
+      if (analyticsSettings) {
+        analyticsSettings.eventSource = 'pagehide';
+        if(dnn && dnn.analytics) { dnn.analytics.clientUnloading(e,analyticsSettings); }
+      }
+    }, false);
+  } else {
+    window.attachEvent('on' + eventName, function (e) {
+      if (analyticsSettings) {
+        analyticsSettings.eventSource = 'pagehide';
+        if(dnn && dnn.analytics) { dnn.analytics.clientUnloading(e,analyticsSettings); }
+      }
+    });
+  }
+
+})();
+//]]>
+</script>
+
+<script type="text/javascript" src="/DesktopModules/DNNGo_xPlugin/Resource/js/dnngo-xplugin.js?cdv=531"></script><script type="text/javascript">
+  document.getElementById("KB_JSTester_JSEnabled").value = "1";
+  if(typeof jQuery != 'undefined'){document.getElementById("KB_JSTester_JQueryVsn").value = jQuery.fn.jquery;}
+</script>
+</form>
+    <!--CDF(Javascript|/js/dnncore.js?cdv=531)--><!--CDF(Javascript|/js/dnn.modalpopup.js?cdv=531)--><!--CDF(Css|/Resources/Shared/stylesheets/dnndefault/7.0.0/default.css?cdv=531)--><!--CDF(Css|/Portals/_default/Skins/20047-UnlimitedColorPack-033/skin.css?cdv=531)--><!--CDF(Css|/Portals/_default/Skins/20047-UnlimitedColorPack-033/IdphInsideLeftMenu.css?cdv=531)--><!--CDF(Css|/Portals/_default/Containers/20047-UnlimitedColorPack-033/container.css?cdv=531)--><!--CDF(Css|/Portals/_default/Containers/20047-UnlimitedColorPack-033/container.css?cdv=531)--><!--CDF(Css|/Portals/1/portal.css?cdv=531)--><!--CDF(Css|/Resources/Search/SearchSkinObjectPreview.css?cdv=531)--><!--CDF(Javascript|/Resources/Search/SearchSkinObjectPreview.js?cdv=531)--><!--CDF(Css|/Resources/Search/SearchSkinObjectPreview.css?cdv=531)--><!--CDF(Javascript|/Resources/Search/SearchSkinObjectPreview.js?cdv=531)--><!--CDF(Javascript|/DesktopModules/DNNCorp/EvoqContentLibrary/ClientScripts/dnn.analytics.Injected.js?cdv=531)--><!--CDF(Javascript|/js/dnn.js?cdv=531)--><!--CDF(Javascript|/js/dnn.servicesframework.js?cdv=531)--><!--CDF(Javascript|/Resources/libraries/jQuery/01_09_01/jquery.js?cdv=531)--><!--CDF(Javascript|/Resources/libraries/jQuery-Migrate/01_02_01/jquery-migrate.js?cdv=531)--><!--CDF(Javascript|/Resources/libraries/jQuery-UI/01_11_03/jquery-ui.js?cdv=531)-->
+    
+</body>
+</html>

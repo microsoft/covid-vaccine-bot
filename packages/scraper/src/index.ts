@@ -9,6 +9,7 @@ import chalk from 'chalk'
 import fetch from 'node-fetch'
 import ssri from 'ssri'
 import { Link } from '@ms-covidbot/state-plan-schema'
+const CACHE_DIR = path.join(__dirname, '../.cache/')
 
 type IntegrityRecord = Record<string, { integrity: string }>
 type RunResult = {
@@ -18,8 +19,13 @@ type RunResult = {
 }
 
 async function scrapeSites(): Promise<void> {
+	if (!fs.existsSync(CACHE_DIR)) {
+		fs.mkdirSync(CACHE_DIR)
+	}
 	const lastResult = require('../last_run.json') as RunResult
-	const links = require('@ms-covidbot/state-plans/dist/info_links.json') as Link[]
+	const links = (require('@ms-covidbot/state-plans/dist/info_links.json') as Link[]).filter(
+		(link) => link.scrape !== false
+	)
 	console.log(`aggregating ${links.length} sites`)
 	const result: RunResult = {
 		integrity: {},
@@ -30,11 +36,18 @@ async function scrapeSites(): Promise<void> {
 	let link: Link
 	for (link of links) {
 		try {
-			console.log(chalk.grey.dim(`checking ${link.text}`))
-			const response = await fetch(link.url, { timeout: 10000 })
+			console.log(chalk.grey.dim(`checking ${printLink(link)}`))
+			const scrapeUrl = getScrapeUrl(link)
+			const response = await fetch(scrapeUrl, { timeout: 10000 })
 			const body = await response.text()
 			const integrity = ssri.fromData(body)
 			const integrityString = integrity.toString() as string
+
+			// write the response out
+			fs.writeFileSync(
+				path.join(CACHE_DIR, link.text.replace(/\//g, '.')),
+				body
+			)
 
 			// Save the current integrity
 			result.integrity[link.url] = {
@@ -43,7 +56,7 @@ async function scrapeSites(): Promise<void> {
 
 			if (integrityString !== lastResult.integrity[link.url]?.integrity) {
 				console.log(
-					chalk.green(`✔ integrity for [${link.text}] changed, ${link.url}`)
+					chalk.green(`✔ integrity changed for [${link.text}](${link.url})`)
 				)
 				result.changes.push(link)
 			}
@@ -65,6 +78,15 @@ async function scrapeSites(): Promise<void> {
 			100
 		).toFixed(2)}%) changed links since last run`
 	)
+}
+
+function getScrapeUrl(link: Link): string {
+	return typeof link.scrape === 'string' ? link.scrape : link.url
+}
+
+function printLink(link: Link): string {
+	const url = getScrapeUrl(link)
+	return `[${link.text}](${url})`
 }
 
 scrapeSites()

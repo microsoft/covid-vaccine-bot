@@ -1,0 +1,2912 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+			<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+	<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+
+				<script type='text/javascript'>
+					var enableTelemetry = 'false'
+					var aiConfig = {
+					instrumentationKey: '1cde048e-3185-4906-aa46-c92a7312b60f'						
+					}
+					var appInsights = window.appInsights || function (a) { function b(a) { c[a] = function () { var b = arguments; c.queue.push(function () { c[a].apply(c, b) }) } } var c = { config: a }, d = document, e = window; setTimeout(function () { var b = d.createElement('script'); b.src = a.url || 'https://az416426.vo.msecnd.net/scripts/a/ai.0.js', d.getElementsByTagName('script')[0].parentNode.appendChild(b) }); try { c.cookie = d.cookie } catch (a) { } c.queue = []; for (var f = ['Event', 'Exception', 'Metric', 'PageView', 'Trace', 'Dependency']; f.length;)b('track' + f.pop()); if (b('setAuthenticatedUserContext'), b('clearAuthenticatedUserContext'), b('startTrackEvent'), b('stopTrackEvent'), b('startTrackPage'), b('stopTrackPage'), b('flush'), !a.disableExceptionTracking) { f = 'onerror', b('_' + f); var g = e[f]; e[f] = function (a, b, d, e, h) { var i = g && g(a, b, d, e, h); return !0 !== i && c['_' + f](a, b, d, e, h), i } } return c }(aiConfig);
+					window.appInsights = appInsights, appInsights.queue && 0 === appInsights.queue.length;
+					// Add telemetry initializer
+					appInsights.queue.push(function() {
+						appInsights.context.addTelemetryInitializer(function(envelope) {
+							var telemetryItem = envelope.data.baseData;
+							// To check the telemetry item’s type:
+							if (!false)
+							{
+								//If the telemetry is not enabled, we still want to capture Google map custom event, so only allow that
+								if (envelope.name.indexOf('.Event') == -1)
+									return false;
+							}
+						});
+					});						
+					appInsights.trackPageView();
+				</script>
+			<script>
+				document.addEventListener("DOMContentLoaded", function () {
+					var forms = document.getElementsByTagName("form");
+					var absPat = /^https?:\/\/|^\/\//i;
+					for (var i = 0; i < forms.length; i++)
+					{
+						if (forms[i].method == "post" && !forms[i].querySelector('[name="__RequestVerificationToken"]') && !absPat.test(forms[i].getAttribute("action"))) {
+							forms[i].insertAdjacentHTML("beforeend", "<input name=\"__RequestVerificationToken\" type=\"hidden\" value=\"biXZDv3s534KhFdSUvndim9Uar6UE44dJcvGgn4Rb_VZ-DCRfibTaXncqdeIwDcWt0kDtvaIM1S1bbc2C1IhXQa3o-wH-33_f-Vwp7rtvv41\" />");
+						}
+					}
+				}, false);
+			</script>
+			
+	
+	<script type="text/javascript">
+        window.isResponsiveEnabled = true;
+		window.isRemoveSetHeights= false;
+		if (window.isRemoveSetHeights) {
+			document.documentElement.className += ' removeSetHeights';
+		}
+		window.mainMenuMediaQuery = 'screen and (max-width: 40em)';
+		window.isMobileBrowserIncludingTablets = false;
+		window.fixedResponsiveMenu = false;
+		window.fullWidthResponsiveMenu = true;
+		window.responsiveMenuHeight = '';
+		window.responsiveMenuFontSize = '';
+		(function () {
+			window.devicePixelRatio = window.devicePixelRatio || Math.round(window.screen.availWidth / document.documentElement.clientWidth);
+			window.innerWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+			window.innerHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+
+			window.setSizeCookie = function () {
+				document.cookie = "dpi=" + window.devicePixelRatio + "; path=/";
+				document.cookie = "viewportWidth=" + window.innerWidth + "; path=/";
+				document.cookie = "viewportHeight=" + window.innerHeight + "; path=/";
+				if (screen && screen.width && screen.height) {
+					document.cookie = "screenWidth=" + screen.width + "; path=/";
+					document.cookie = "screenHeight=" + screen.height + "; path=/";
+				}
+				document.cookie = "responsiveGhost=1; path=/";
+			};
+
+			setSizeCookie();
+		}());
+	</script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	
+	<meta name="theme-color" content="#2e4e84">
+	<link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+		<title>KDHE Vaccine KS | Official Website</title>
+		
+		<meta name="description" content="">
+		<meta name="keywords" content="Home">
+				
+	<!--[if IE 6]><script language="JavaScript" type="text/javascript"> var isie6 = true; </script><![endif]-->
+	<!--[if IE 7]><script language="JavaScript" type="text/javascript"> var isie7 = true; </script><![endif]-->
+	<!--[if IE 8]><script language="JavaScript" type="text/javascript"> var isie8 = true; </script><![endif]-->
+	<!--[if IE 9]><script language="JavaScript" type="text/javascript"> var isie8 = true; </script><![endif]-->
+	<script type="text/javascript"><!--
+	var intCountryCode = 840;
+	var externalSiteDialogHeight = '390px';
+	var order = '';
+//--></script>
+	
+	<link href="/901781768.css" rel="stylesheet" type="text/css" />	<link href="/-828149624.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" type="text/css" href="/Assets/Styles/Print.css" media="print">
+<script type="text/javascript" src="/Scripts/2011.3.1115/jquery-1.6.4.min.js"></script>
+	<script type="text/javascript">
+		window.Pages = window.Pages || {};
+		// FrontEnd RWD initialization
+		window.Pages.rwdReady = $.Deferred();
+		window.Pages.toolBarDeferred = $.Deferred();
+		window.Pages.rwdSetupComplete = $.Deferred();
+		window.Pages.megaMenuLoaded = $.Deferred();
+		window.Pages.angularToolbarComplete = $.Deferred();
+		window.Pages.frontEndToolbarComplete = $.Deferred();
+	</script>
+	<!--CPHeadContent-->
+	<script src="/-2031684067.js" type="text/javascript"></script>
+	
+	
+	
+	
+
+
+
+
+	<!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="/App_Themes/ie8.css"><![endif]-->
+	<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="/App_Themes/ie7.css"><![endif]-->
+	<!--[if lte IE 6]><link rel="stylesheet" type="text/css" href="/App_Themes/ie6.css"><![endif]-->
+	<!--[if lt IE 9]><script type="text/javascript" src="/Scripts/html5.js"></script><![endif]-->
+
+	<script type="text/javascript">
+		setEditorVariables(false, 840);
+		function getPrintPreviewType() { return 0; } function printPreview() {pPreview(getPrintPreviewType()); }
+	</script>
+	
+</head>
+<body class="wide " >
+
+	
+
+	<div id="fb-root"></div>
+<div id=skipToContentLinks>
+<a href="#cc9b263b9d-a7e2-4e23-b747-b6d686e76be0" target="_self" class="skipToContentLink">Skip to Main Content</a>
+</div>
+	<form id="frmReferenceFormForTelerikEditorDialogs"></form>
+
+		<input type="hidden" id="GoogleMapsKey" value="AIzaSyDWUuE-ifkbhxblF920N8MjpBdTg1Wt784" />
+
+
+
+
+
+	<input type="hidden" id="cpcDomain" value="https://cp-civicplusuniversity2.civicplus.com">
+	<input type="hidden" id="hdnStructureID" value="3" />
+	<input type="hidden" id="hdnContentCollectionID" value="e55bf360-9e33-49fb-b4ed-4c32d1e661a7" />
+	<input type="hidden" id="hdnWorkingCopyID" value="00000000-0000-0000-0000-000000000000" />
+	<input type="hidden" id="hdnThemeID" value="16" />
+	<input type="hidden" id="pageIsFrontEnd" value="true" />
+	<input type="hidden" id="pageModuleID" />
+	<input type="hidden" id="pagePageID" value="1" />
+	<input type="hidden" id="hdnModuleEligibleForJquery224Upgrade" value="true" />
+
+		<div id="stickyPlaceholder"></div>
+	<div id="outer-wrap" class="outer-wrap">
+		<div id="inner-wrap" class="inner-wrap">
+				<div id="divToolbars" class="cpToolbars newCP" style="">
+					
+<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="/App_Themes/CP/ie7.css"><![endif]-->
+<!-- Allow Dashboard, Favorites Enabled -->
+
+				</div>
+			<div id="bodyWrapper">
+				<div id="mainNavHolderMobile" class="mainNavHolderMobile"></div>
+				
+<div data-cpRole="structuralContainer" id="bodyContainerTS">
+<!-- Header Container --><header data-cpRole="structuralContainer" id="headerContainerTS" class="fixedTopTS">
+<div class="siteWrap3"><div data-cpRole="banner" id="bannerLogoTS" class="bannerLogoTS empty">
+
+
+
+
+				<a style="			display: block; text-align: center;
+" class="bannerObject" href="/" target="_self"><img alt="Home Page" class="bannerObject" height="174" src="/ImageRepository/Document?documentID=63" width="272" /></a>
+
+</div><div data-cpRole="structuralContainer" id="headerContentTS">
+<div data-cpRole="contentContainer" id="searchTS">	<div id="cc3f293dca-826c-46a2-b2ce-fd5b6fe037e9" data-containerid="3f293dca-826c-46a2-b2ce-fd5b6fe037e9" class="pageContent cpGrid cpGrid24 isLockedContainer showInMobile">
+				                
+
+		<div class="row outer wide"><!--
+--><div class="outer col col24 first last" style="" data-widgetcontainerid="31516f98-eaf9-4584-a032-f7f84d22ae17">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col24 first last id02f2db89-b6ef-4ede-a540-1ee6a46fd84a" style="" data-widgetcontainerid="02f2db89-b6ef-4ede-a540-1ee6a46fd84a">	
+<div data-widget-id="77ea8b59-0cc1-40c9-a812-a8e512280df8" data-widget-controller-path="/Layout/WidgetSearch">
+	
+		<script defer type="text/javascript" src="/Common/Controls/jquery-ui/js/jquery.ui.autocomplete.min.js"></script>
+	<script defer src="/Areas/Layout/Assets/Scripts/Search.js" type="text/javascript"></script>
+	<script defer type="text/javascript">
+
+		$(document).ready(function () {
+			try {
+				$(".widgetSearchButton.widgetSearchButton77ea8b59-0cc1-40c9-a812-a8e512280df8").click(function (e) {
+				e.preventDefault();
+					if ($("#ysnSearchOnlyDept77ea8b59-0cc1-40c9-a812-a8e512280df8").is(':checked')) {
+						doWidgetSearch($(this).siblings(".widgetSearchBox").val(), Number(0));
+					} else {
+						doWidgetSearch($(this).siblings(".widgetSearchBox").val(), 0);
+					}
+			});
+			$("#searchField77ea8b59-0cc1-40c9-a812-a8e512280df8").keypress(function (e) {
+				if (window.clipboardData) {
+					if (e.keyCode == 13) {
+							if ($("#ysnSearchOnlyDept77ea8b59-0cc1-40c9-a812-a8e512280df8").is(':checked')) {
+								doWidgetSearch($(this).val(), Number(0));
+							} else {
+								doWidgetSearch($(this).val(), 0);
+							}
+						return false;
+					}
+				} else {
+					if (e.which == 13) {
+							if ($("#ysnSearchOnlyDept77ea8b59-0cc1-40c9-a812-a8e512280df8").is(':checked')) {
+								doWidgetSearch($(this).val(), Number(0));
+							} else {
+								doWidgetSearch($(this).val(), 0);
+							}
+						return false;
+					}
+				}
+				return true;
+			});
+
+				if (true) {
+					var currentRequest = null;
+
+					var $searchField = $("#searchField77ea8b59-0cc1-40c9-a812-a8e512280df8").autocomplete({
+						source: function (request, response) {
+							currentRequest = $.ajax({
+								url: '/Search/AutoComplete',
+								dataType: "json",
+								timeout: 10000,
+								beforeSend: function () {
+									if (currentRequest != null) {
+										currentRequest.abort();
+									}
+								},
+								data:
+								{
+									term: request.term,
+								},
+								success: function (data) {
+									response(data);
+									$('.autoCompleteError').remove();
+								},
+								error: function (xmlhttprequest, textstatus, message) {
+									if (textstatus === "timeout") {
+										if ($("#searchField77ea8b59-0cc1-40c9-a812-a8e512280df8").siblings('.autoCompleteError').length == 0)
+											$('<span class="autoCompleteError"><p class="alert error">Search autocomplete is currently not responding. Please try again later.</p></span>').insertAfter($("#searchField77ea8b59-0cc1-40c9-a812-a8e512280df8"));
+									}
+								}
+							});
+						},
+						html: true,
+						delay: 500,
+						select: function (event, ui) {
+							$(this).val(ui.item.value);
+							$(this).next().click();
+						}
+					});
+
+					if (false && true) {
+						$searchField.data("ui-autocomplete")._renderItem = function (ul, item) {
+							return $("<li class=\"itemList\"></li>")
+								.data("ui-autocomplete-item", item)
+								.append("<a>" + item.label + "</a>")
+								.appendTo(ul);
+						};
+					}
+					else {
+						$searchField.data("autocomplete")._renderItem = function (ul, item) {
+							return $("<li></li>")
+								.data("item.autocomplete", item)
+								.append("<a>" + item.label + "</a>")
+								.appendTo(ul);
+						};
+					}
+}
+}
+			catch(e) {} //we're going to eat this error. Autocomplete won't work but we dont wan't to break anything else on the page.
+		});
+	</script>
+
+	<section id="widgetPreviewSearch" class="widget widgetSearch skin43 widgetOptionSet15" style="display: block;" aria-label="Search">
+				<!-- For the button right and inside -->
+		<div class="widgetBody buttonRightInside">
+			<input class="widgetSearchBox widgetSearchBox77ea8b59-0cc1-40c9-a812-a8e512280df8" cp5ph="true" id="searchField77ea8b59-0cc1-40c9-a812-a8e512280df8" name="searchField" onchange="searchBtnApplyQuery();" placeholder="Search" title="Search" type="text" value="" />
+							<a href="/Search/Results" id="btnSearchIcon" class="widgetSearchButton widgetSearchButton77ea8b59-0cc1-40c9-a812-a8e512280df8" role="button"><img alt="Search" class="imageHover" data-hover="/ImageRepository/Document?documentID=64" data-image="/ImageRepository/Document?documentID=65" src="/ImageRepository/Document?documentID=65" /></a>
+
+			<label class="searchLabel" for="searchField77ea8b59-0cc1-40c9-a812-a8e512280df8">Search</label>
+		</div>
+
+	</section>
+
+
+<style scoped>
+    
+        .widgetSearch ::-webkit-input-placeholder {
+        color: #444;
+      }
+        .widgetSearch :-moz-placeholder { /* Firefox 18- */
+       color: #444;
+    }
+        .widgetSearch ::-moz-placeholder {  /* Firefox 19+ */
+       color: #444;
+    }
+    .widgetSearch :-ms-input-placeholder {
+       color: #444;
+    }
+    
+
+	.widgetSearch .widgetBody .widgetSearchBox77ea8b59-0cc1-40c9-a812-a8e512280df8
+	{
+        color: #444;
+		font-family: Nunito;
+font-size:1.1em;
+height: 70px;
+border: 2px solid #1B3E7C;
+background-clip: padding-box;
+padding: 0 80px 0 20px;
+	}
+	.widgetSearch .widgetBody .widgetSearchButton77ea8b59-0cc1-40c9-a812-a8e512280df8
+	{
+		height:66px;
+width:66px;
+margin:2px;
+	}
+	.widgetSearch .widgetSearch-onlyDept77ea8b59-0cc1-40c9-a812-a8e512280df8
+	{
+		display: inline-block;
+		color: #333;
+		
+		
+		 padding-top: 10px;
+	}
+	#ysnSearchOnlyDept77ea8b59-0cc1-40c9-a812-a8e512280df8
+	{
+		position: relative;
+		top: .125em;
+	}
+
+</style>
+
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" onkeypress="this.onclick();" onclick="return showExternalSiteDialog(this);">
+
+
+	<script type="text/javascript">
+	//Updates search icons href to have the correct queryString
+	function searchBtnApplyQuery() {
+		document.getElementById("btnSearchIcon").href = "/Search?searchPhrase=" + document.getElementById("searchField77ea8b59-0cc1-40c9-a812-a8e512280df8").value;
+    }
+	</script>
+
+</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!--		--></div> <!-- outer row -->
+
+
+	</div>
+</div><nav data-cpRole="nav" id="mainNav" class="siteNav mainNav" role="navigation">
+<ol id="mainNavMenu" data-parent="1" class="rootNavMenu" role="menu"><!--
+--><li id="MainItem27" class="topMenuItem" aria-haspopup="true" role="menuitem" data-pageid="27" data-displaymegamenu="True"><!--
+			--><!--
+			--><a id="mainNavKansans" class="navMainItem mainNavItem mainNavItem1" href="/27/Kansans" target="_self">Kansans</a><!--
+			--><!--
+			--></li><!----><li id="MainItem31" class="topMenuItem" aria-haspopup="true" role="menuitem" data-pageid="31" data-displaymegamenu="True"><!--
+			--><!--
+			--><a id="mainNavVaccineProviders" class="navMainItem mainNavItem mainNavItem2" href="/31/Vaccine-Providers" target="_self">Vaccine Providers</a><!--
+			--><!--
+			--></li><!----><li id="MainItem35" class="topMenuItem" aria-haspopup="true" role="menuitem" data-pageid="35" data-displaymegamenu="True"><!--
+			--><!--
+			--><a id="mainNavVaccineInfo" class="navMainItem mainNavItem mainNavItem3" href="/35/Vaccine-Info" target="_self">Vaccine Info</a><!--
+			--><!--
+			--></li><!----><li id="MainItem158" class="topMenuItem" aria-haspopup="true" role="menuitem" data-pageid="158" data-displaymegamenu="False"><!--
+			--><!--
+			--><a id="mainNavData" class="navMainItem mainNavItem mainNavItem4" href="/158/Data" target="_self">Data</a><!--
+			--><!--
+			--></li><!----><li id="MainItem160" class="topMenuItem" aria-haspopup="true" role="menuitem" data-pageid="160" data-displaymegamenu="False"><!--
+			--><!--
+			--><a id="mainNavFindMyVaccine" class="navMainItem mainNavItem mainNavItem5" href="/160/Find-My-Vaccine" target="_self">Find My Vaccine</a><!--
+			--><!--
+			--></li><!---->
+</ol>
+
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			var menuID = 'mainNavMenu';
+			var menuType = MAIN_MENU;
+
+			//setup menu manager properties for main menu
+			if (!menuManager.mobileMainNav && true)
+				menuManager.adjustMainItemsWidth('#' + menuID);
+			menuManager.isMainMenuEditable = false;
+			menuManager.mainMenuMaxSubMenuLevels = 4;
+			menuManager.setMOMMode(2, menuType);
+
+			//Init main menu
+			var setupDraggable = menuManager.isMainMenuEditable;
+			var urlToGetHiddenMenus = '/Pages/MenuMain/HiddenMainSubMenus?pageID=1&moduleID=&themeID=16&menuContainerID=mainNav';
+
+			menuManager.setupMenu(menuID, 'mainNav', menuType, setupDraggable, urlToGetHiddenMenus);
+			menuManager.mainMenuInit = true;
+			menuManager.mainMenuTextResizer = true;
+			if (1.00 > 0)
+				menuManager.mainMenuTextResizerRatio = 1.00;
+			if (window.isResponsiveEnabled)
+				menuManager.mainMenuReady.resolve();
+
+		});
+	</script>
+
+
+<aside data-cpRole="megaMenu" id="megaMenu" class="megaMenu" style="display: none;"><input type="hidden" id="megaMenuPopupDirection" value="0"><input type="hidden" id="megaMenuWidthReference" value="1"><aside data-cpRole="contentContainer" id="mainNavMegaMenu27" class="contentTop mainNavMegaMenu megaMenuContainer pageID_27 hidden" data-orientation="horizontal">	<div id="cc06016a84-3cce-425e-9082-f89ccd7e6173" data-containerid="06016a84-3cce-425e-9082-f89ccd7e6173" class="pageContent cpGrid cpGrid24">
+				                
+
+
+
+	</div>
+</aside><aside data-cpRole="contentContainer" id="mainNavMegaMenu31" class="contentTop mainNavMegaMenu megaMenuContainer pageID_31 hidden" data-orientation="horizontal">	<div id="cc50746bd2-15d6-4326-8a51-6e817163c3d4" data-containerid="50746bd2-15d6-4326-8a51-6e817163c3d4" class="pageContent cpGrid cpGrid24">
+				                
+
+
+
+	</div>
+</aside><aside data-cpRole="contentContainer" id="mainNavMegaMenu35" class="contentTop mainNavMegaMenu megaMenuContainer pageID_35 hidden" data-orientation="horizontal">	<div id="cc54836382-99f4-4810-afb4-330ce9dd3a1d" data-containerid="54836382-99f4-4810-afb4-330ce9dd3a1d" class="pageContent cpGrid cpGrid24">
+				                
+
+
+
+	</div>
+</aside></aside></nav>
+</div></div>
+</header><!-- Banner --><div data-cpRole="structuralContainer" id="bannerContainerTS">
+<div class="siteWrap3"><div data-cpRole="contentContainer" id="slideshowContent1a">	<div id="cc3b2b4557-d32f-47b1-a1ac-cae6862ffc7f" data-containerid="3b2b4557-d32f-47b1-a1ac-cae6862ffc7f" class="pageContent cpGrid cpGrid24 showInMobile">
+				                
+
+		<div class="row outer wide"><!--
+--><div class="outer col col24 first last" style="" data-widgetcontainerid="d2f30cc6-1789-4729-9b62-0468b7b18f79">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col24 first last id100cf36f-392a-4e88-8fad-440197547ba6" style="" data-widgetcontainerid="100cf36f-392a-4e88-8fad-440197547ba6">	
+
+	<div class="widget slideShow  skin58" id="slideshow3e9fcf65-4f77-4f24-aa20-c50628e341e6" data-widgetID="3e9fcf65-4f77-4f24-aa20-c50628e341e6">
+        <input type="hidden" class="slideTiming" value="1"/>
+        <input type="hidden" class="transitionTiming" value="1"/>
+	<input type="hidden" class="hdnSlideshowUniqueID" value="33" />
+		<div id="divSlideshow33" class="cpSlideshow widgetBody cpSlideshowJS33 narrow">
+			<script src="/-1604850456.js" type="text/javascript"></script>
+	<div class="cpWindow cpWindowJS33 ">
+		<ol class="semanticList cpSlider fade cpSliderJS33">
+			<li class="hidden" id="33_126" data-index="0">
+
+
+					<img src="/ImageRepository/Document?documentID=90" alt="Banner multiple people" title="Banner multiple people" data-delayed-image="" style="height: 1px"/>
+
+							</li>
+		</ol>
+
+	
+	</div>
+	<script type="text/javascript">
+	    // <!--
+	    var $1 = typeof $ == 'undefined' ? window.parent.$ : $;
+	    $1(document).ready(function () {
+		    var slideshow59fa9a4b3e984d95bda2216c1a216b53 = new Slideshow();
+slideshow59fa9a4b3e984d95bda2216c1a216b53.generate('33','1','1', false,false);
+
+
+		});
+		var $pages = typeof window.Pages == 'undefined' ? window.parent.Pages : window.Pages;
+		$1.when($pages.rwdReady).done(function () {
+			var divSlideshowID = 'divSlideshow33';
+			var mediaQuerySize = 25;
+			if (mediaQuerySize == 0)
+				mediaQuerySize = 25; //default for not widget slide show
+			var mediaElementQuery = '#' + divSlideshowID + ':media(this-min-width:' + mediaQuerySize + 'em)';
+			var $cpMedia = typeof window.cpMedia == 'undefined' ? window.parent.cpMedia : window.cpMedia;
+			var $divSlideShow = $('#' + divSlideshowID);
+			var $arrows = $divSlideShow.find('a.arrow');
+			var $arrowsNew = $divSlideShow.find('a.arrowNew');
+			var $divExternalSlideshow = $('.bannerSlideshowControlsNew').last();
+			var $overlays = $(document.getElementsByName('captionOverlay_33'));
+
+		    if(window.isMobileBrowserIncludingTablets){
+				$overlays.each(function (overlay) {
+		            $(overlay).removeClass('overlay')
+		        });
+		    }
+
+			$cpMedia.unregister(mediaElementQuery)
+				.register(mediaElementQuery,
+				{
+				deferSetup: false,
+				setup: function () {
+					cpMedia.diag('$(element).removeClass("wide"), mediaQuery: ' + mediaElementQuery);
+					$divSlideShow.removeClass('wide').addClass('narrow');
+						if ($divExternalSlideshow.length > 0) {
+							$divExternalSlideshow.hide();
+						}
+					if ($arrows.length > 0) {
+						$arrows.hide();
+						if (typeof ($$) !== 'undefined') {
+								$$('#' + divSlideshowID)
+									.on('swipeRight',
+										function (e, a) {
+								$arrows.filter('.prev').click();
+							});
+								$$('#' + divSlideshowID)
+									.on('swipeLeft',
+										function (e) {
+								$arrows.filter('.next').click();
+							});
+						}
+					}
+						if ($arrowsNew.length > 0) {
+
+							if (!(false && !window.isMobileBrowserIncludingTablets)) {
+							$arrowsNew.hide();
+							}
+							if (typeof ($$) !== 'undefined') {
+								$$('#' + divSlideshowID)
+									.on('swipeRight',
+										function (e, a) {
+											$arrowsNew.filter('.prev').click();
+										});
+								$$('#' + divSlideshowID)
+									.on('swipeLeft',
+										function (e) {
+											$arrowsNew.filter('.next').click();
+										});
+							}
+						}
+						if ($overlays.length > 0 && window.isMobileBrowserIncludingTablets) {
+							if (2 == 1) {
+								$overlays.hide();
+							} else if (2 == 2) {
+								$overlays.removeClass('overlay');
+							}
+						}
+				},
+				match: function () {
+					cpMedia.diag('$(element).addClass("wide"), mediaQuery: ' + mediaElementQuery);
+					$divSlideShow.addClass('wide').removeClass('narrow');
+					if ($divExternalSlideshow.length > 0 && !$divExternalSlideshow.hasClass('none')) {
+						$divExternalSlideshow.show();
+					}
+					if ($arrows.length > 0) {
+						$arrows.show();
+						if (typeof ($$) !== 'undefined') {
+							$$('#' + divSlideshowID).off('swipeRight');
+							$$('#' + divSlideshowID).off('swipeLeft');
+						}
+					}
+					if ($arrowsNew.length > 0) {
+						$arrowsNew.show();
+						if (typeof ($$) !== 'undefined') {
+							$$('#' + divSlideshowID).off('swipeRight');
+							$$('#' + divSlideshowID).off('swipeLeft');
+						}
+					}
+					if ($overlays.length > 0) {
+						if (2 == 1) {
+							$overlays.show();
+					} else if (2 == 2 && !window.isMobileBrowserIncludingTablets) {
+							$overlays.addClass('overlay');
+						}
+					}
+				},
+				unmatch: function () {
+					cpMedia.diag('$(element).removeClass("wide"), mediaQuery: ' + mediaElementQuery);
+					$divSlideShow.removeClass('wide').addClass('narrow');
+					if ($divExternalSlideshow.length > 0) {
+						$divExternalSlideshow.hide();
+					}
+					if ($arrows.length > 0) {
+						$arrows.hide();
+
+						if (typeof ($$) !== 'undefined') {
+							$$('#' + divSlideshowID).on('swipeRight', function (e) {
+								$arrows.filter('.prev').click();
+							});
+							$$('#' + divSlideshowID).on('swipeLeft', function (e) {
+								$arrows.filter('.next').click();
+							});
+						}
+					}
+					if ($arrowsNew.length > 0) {
+						if (typeof ($$) !== 'undefined') {
+							$$('#' + divSlideshowID).on('swipeRight', function (e) {
+								$arrowsNew.filter('.prev').click();
+							});
+							$$('#' + divSlideshowID).on('swipeLeft', function (e) {
+								$arrowsNew.filter('.next').click();
+							});
+						}
+					}
+                    if ($overlays.length > 0 && window.isMobileBrowserIncludingTablets) {
+						if (2 == 1) {
+							$overlays.hide();
+						} else if (2 == 2) {
+							$overlays.removeClass('overlay');
+						}
+					}
+				}
+			});
+		});
+		// -->
+	</script>	
+
+
+		</div>	
+
+<script type="text/javascript">
+	$(document).ready(function (e) {
+		$('.slideshowOptions.nonEmpty').unbind('click').click(function (e) {
+			var $this = $(this);
+			// If the parent is a slider we need to tweak our "this" reference to refer to the options handle. 
+			// This came about, because we needed to use slider images to trigger options. - JE
+			if ($this.parent().hasClass('cpSlider')) {
+				$this = $this.closest('.widget.slideShow').siblings('.handle.options');
+			}
+
+			//Set values for global variables for slideshow.
+			if (attrOrProps($this, 'data-widgetID').length !== 0) {
+				parentID_Slideshow = 'slideshow' + attrOrProps($this, 'data-widgetID');
+			}
+			callbackfnSlideshowSave = null;
+			var pageID = ContentCollectionInstance.PageID;
+			var moduleID = ContentCollectionInstance.ModuleID;
+			var qs = '?pageID=' + pageID + '&moduleID=' + moduleID;
+			//Set slideshow widgetID
+			ContentCollectionInstance.SlideshowWidgetID = $this.siblings('.widgetID').val();
+			$popUp_Slideshow = openCpModal({
+				title: 'Slideshow',
+				className: 'newCP adminWrap cpPopOver admin modalSlideshow',
+				isFrontEnd: false,
+				useIframe: false,
+				draggable: true,
+				url: '/Slideshow/SlideshowConfiguration/' + $this.siblings('.slideShow').find('.hdnSlideshowUniqueID').val() + qs
+			});
+		});
+
+		$('.slideshowOptions.empty').unbind('click').click(function (e) {
+			var $this = $(this);
+			parentID_Slideshow = attrOrProps($this.parents('.slideShow'), 'id');
+			var pageID = ContentCollectionInstance.PageID;
+			var moduleID = ContentCollectionInstance.ModuleID;
+			var qs = '?pageID=' + pageID + '&moduleID=' + moduleID;
+			ContentCollectionInstance.SlideshowWidgetID = attrOrProps($(this).parents('.slideShow'), 'data-widgetID');
+			$popUp_Slideshow = openCpModal({
+				title: 'Slideshow',
+				className: 'newCP adminWrap cpPopOver admin modalSlideshow',
+				isFrontEnd: false,
+				useIframe: false,
+				draggable: true,
+				url: '/Slideshow/SlideshowConfiguration/' + $(this).next('.hdnSlideshowUniqueID').val() + qs
+			});
+		});
+	});
+    </script>
+	</div>
+
+
+<script type="text/javascript">
+	$(document).ready(function () {
+		ua = navigator.userAgent;
+		/* MSIE used to detect old browsers and Trident used to newer ones*/
+		var is_ie = ua.indexOf("MSIE ") > -1 || ua.indexOf("Trident/") > -1;
+
+		if (is_ie) {
+			$('.widget.slideShow').css('overflow', 'hidden').parents('.row.nest').css('overflow', 'hidden');
+		}
+		
+        var hasEditRights = false;
+        if (window.File && window.FileList && window.FileReader && hasEditRights) {
+            var SlideshowWidget = 3;
+            makeWidgetAreaDroppable('3e9fcf65-4f77-4f24-aa20-c50628e341e6', $('#slideshow' + '3e9fcf65-4f77-4f24-aa20-c50628e341e6'), SlideshowWidget, true, SlideshowWidgetCallback);
+        }
+
+		if(hasEditRights)
+    		browserVersionNotCompatibleWithDragDropTextUpdate($('#slideshowPlaceholder' + '3e9fcf65-4f77-4f24-aa20-c50628e341e6'), 'Click to start adding images.');    	
+    });
+
+    function SlideshowWidgetCallback(widgetID, response) {
+        if (window.ContentCollectionInstance.IsWorkingCopy) {
+            //Remove this field since the partial view adds it back.
+            $('#slideshow' + widgetID).find('.hdnSlideshowUniqueID').remove();
+            if ($('#slideshow' + widgetID).find('.cpSlideshow').length > 0)
+                $('#slideshow' + widgetID).find('.cpSlideshow').replaceWith(response);
+            else
+                $('#slideshow' + widgetID).find('.slideshowOptions.empty.placeholder').replaceWith(response);
+
+            contentUpdated();
+        }
+        else {
+            ContentCollectionInstance.reloadContent();
+        }
+
+        $('.slideshowOptions.nonEmpty').unbind('click').click(function (e) {
+            var $this = $(this);
+            // If the parent is a slider we need to tweak our "this" reference to refer to the options handle. 
+            // This came about, because we needed to use slider images to trigger options. - JE
+            if ($this.parent().hasClass('cpSlider')) {
+                $this = $this.closest('.widget.slideShow').siblings('.handle.options');
+            }
+
+            //Set values for global variables for slideshow.
+			if (attrOrProps($this,'data-widgetID').length !== 0) {
+				parentID_Slideshow = 'slideshow' + attrOrProps($this,'data-widgetID');
+            }
+            callbackfnSlideshowSave = null;
+            var pageID = ContentCollectionInstance.PageID;
+            var moduleID = ContentCollectionInstance.ModuleID;
+            var qs = '?pageID=' + pageID + '&moduleID=' + moduleID;
+            //Set slideshow widgetID
+            ContentCollectionInstance.SlideshowWidgetID = $this.siblings('.widgetID').val();
+            $popUp_Slideshow = openCpModal({
+                title: 'Slideshow',
+                className: 'newCP adminWrap cpPopOver admin modalSlideshow',
+                isFrontEnd: false,
+                useIframe: false,
+                draggable: true,
+                url: '/Slideshow/SlideshowConfiguration/' + $this.siblings('.slideShow').find('.hdnSlideshowUniqueID').val() + qs
+            });
+        });
+
+        $('.slideshowOptions.empty').unbind('click').click(function (e) {
+            var $this = $(this);
+			parentID_Slideshow = attrOrProps($this.parents('.slideShow'), 'id');
+            var pageID = ContentCollectionInstance.PageID;
+            var moduleID = ContentCollectionInstance.ModuleID;
+            var qs = '?pageID=' + pageID + '&moduleID=' + moduleID;
+			ContentCollectionInstance.SlideshowWidgetID = attrOrProps($(this).parents('.slideShow'), 'data-widgetID');
+            $popUp_Slideshow = openCpModal({
+                title: 'Slideshow',
+                className: 'newCP adminWrap cpPopOver admin modalSlideshow',
+                isFrontEnd: false,
+                useIframe: false,
+                draggable: true,
+                url: '/Slideshow/SlideshowConfiguration/' + $(this).next('.hdnSlideshowUniqueID').val() + qs
+            });
+        });
+    }
+</script>	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!--		--></div> <!-- outer row -->
+
+
+	</div>
+</div></div>
+</div><!-- News Callout --><div data-cpRole="structuralContainer" id="homeContainer3">
+<div class="siteWrap"><div data-cpRole="contentContainer" id="homeContent3a">	<div id="cc9f595263-62b6-4280-beeb-e09c5c47000e" data-containerid="9f595263-62b6-4280-beeb-e09c5c47000e" class="pageContent cpGrid cpGrid24 showInMobile">
+				                
+
+		<div class="row outer wide"><!--
+--><div class="outer col col24 first last" style="" data-widgetcontainerid="c9a46265-b55c-4985-9837-5b8353dd560b">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col24 first last id47ce0966-a78b-4319-addc-f0d2e472b7a7" style="" data-widgetcontainerid="47ce0966-a78b-4319-addc-f0d2e472b7a7">	
+<div data-widget-id="4e67f75a-771f-4c3f-8047-4ffc7bb0ac08" data-widget-controller-path="/NewsFlash/Widget">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<section class="widget widgetNewsFlash skin62 widgetOptionSet46 wide" data-modulewidgettype="newsFlash" id="widgetNewsFlash4e67f75a-771f-4c3f-8047-4ffc7bb0ac08" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}' data-elementquerymatch='matchMultiColumn' data-elementqueryunmatch='unmatchMultiColumn' aria-labelledby="newsFlashHeader4e67f75a-771f-4c3f-8047-4ffc7bb0ac08">
+				<header class="widgetHeader" id="newsFlashHeader4e67f75a-771f-4c3f-8047-4ffc7bb0ac08">
+			<div class="">
+						<h3><a  style="" href="/CivicAlerts.aspx?CID=6" >Latest Updates</a></h3>
+											</div>
+		</header>
+	<div class="widgetBody cpGrid cpGrid1 ">
+	<div class="row  wide" style="">
+				<div class="col col1 first last">
+					<ol class="semanticList">
+			<li class="widgetItem inlineTitle" data-news-i-d="16">
+
+					<h4 id="newsFlashItemHeader16" class="widgetTitle">
+	<a href="/158/Doses-Administered" target="_blank">Doses Administered In Kansas - 		<span class="htmlChar"></span>
+</a></h4>
+<div class="widgetDesc">
+Kansas WebIZ is reporting 331,022 doses have been administered in Kansas as of 12 p.m. on February 10. This includes first and second doses.				<a href="/158/Doses-Administered" target="_blank" id="newsFlashReadOn16" aria-labelledby="newsFlashItemHeader16 newsFlashReadOn16" class="readOn sameLine">Learn more...</a>
+</div>
+
+			</li>
+					</ol>
+				</div>
+	</div>
+
+			</div>
+	<div class="widgetFooter">
+	</div>
+	<div class="addItemModal hidden">
+		<div class="url hidden">/CivicAlerts.aspx</div>
+	</div>
+
+	</section>
+
+
+
+
+
+
+
+
+</div>	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!--		--></div> <!-- outer row -->
+
+
+	</div>
+</div></div>
+</div><!-- GBs --><div data-cpRole="structuralContainer" id="gbsContainerTS">
+<div class="siteWrap"><div data-cpRole="contentContainer" id="gbsTS">	<div id="cc9ccf1665-8b24-4a10-a457-592fb62070a6" data-containerid="9ccf1665-8b24-4a10-a457-592fb62070a6" class="pageContent cpGrid cpGrid24 showInMobile" data-contentcontainerbreakpoint="55">
+				                
+
+		<div class="row outer wide"><!--
+--><div class="outer col col12 first" style="" data-widgetcontainerid="8acb562f-5fa9-4431-9a96-40d71dc4a52c">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col12 first last id40d3c42c-6b13-4b69-8afa-df0fb46c6b8c" style="" data-widgetcontainerid="40d3c42c-6b13-4b69-8afa-df0fb46c6b8c">	
+<div data-widget-id="e591de6e-e99a-4ae0-a1ec-13ce87497d09" data-widget-controller-path="/GraphicLinks/Widget">
+
+
+
+
+<div id="graphicLinkWidgete591de6e-e99a-4ae0-a1ec-13ce87497d09" class="widget widgetGraphicLinks skin45 widgetOptionSet41 wide" data-elementqueryclasses='{"wide-narrow":"min-width:1em"}' data-elementquerymatch='matchMultiColumn' data-elementqueryunmatch='unmatchMultiColumn' data-modulewidgettype="graphicLinks">
+	<div class="widgetHeader">
+		<div class="">
+				</div>
+	</div>
+	<div class="widgetBody cpGrid cpGrid2 ">	
+			<div class="row   wide"><!--
+--><div class="col col1 first "><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks">
+
+<div>
+	<a href="/178/Safety" target="_self" class="fancyButton fancyButton54 " >
+		<span>
+			<span><span class="text">Safety<br><span class="textStyle1">Safety is incorporated into every level of vaccine development</span><span class="textStyle2">Learn more</span></span></span>
+		</span>
+	</a>
+</div>
+		<style scoped="scoped">.fancyButton54.fancyButton:link,.fancyButton54.fancyButton:visited, .fancyButton54div.fancyButton{
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-right: 1em;
+	padding-left: 1em;
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.fancyButton54.fancyButton:hover,.fancyButton54.fancyButton:focus,.fancyButton54.fancyButton:active,.fancyButton54.fancyButton.hover{
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.fancyButton54.fancyButton:link > span,.fancyButton54.fancyButton:visited > span, .fancyButton54div.fancyButton > span{
+}
+.fancyButton54.fancyButton:hover > span,.fancyButton54.fancyButton:focus > span,.fancyButton54.fancyButton:active > span,.fancyButton54.fancyButton.hover > span{
+}
+.fancyButton54.fancyButton .text{
+	color: #333333;
+	font-size: 1.3em;
+	font-family: "Montserrat";
+	text-align: center;
+	padding-top: 9.5em;
+	font-weight: 800;
+	text-decoration: none;
+	padding-top: 9.5em;
+	background-image: url('/ImageRepository/Document?documentID=76');
+	background-repeat: no-repeat;
+	background-position: center 10px ;
+background-size:140px;
+transition:.2s ease-in-out;
+}
+.fancyButton54.fancyButton:hover .text,.fancyButton54.fancyButton:focus .text,.fancyButton54.fancyButton:active .text,.fancyButton54.fancyButton.hover .text{
+	text-decoration: none;
+	background-repeat: no-repeat;
+	background-position: center top;
+background-size:160px;
+}
+@media(max-width:35em){
+.fancyButton.fancyButton54:hover .text,
+.fancyButton.fancyButton54:focus .text,
+.fancyButton.fancyButton54:active .text{
+background-size:140px;
+background-position:center 10px;
+}
+}
+.fancyButton54.fancyButton .textStyle1{
+	color: #333333;
+	font-size: .75em;
+	font-family: Nunito Sans;
+	text-align: center;
+	font-weight: 300;
+	text-decoration: none;
+display:block;
+padding:1em 0 .25em 0;}
+.fancyButton54.fancyButton:hover .textStyle1, .fancyButton54.fancyButton.hover .textStyle1{
+	text-decoration: none;
+
+}
+.fancyButton54.fancyButton .textStyle2{
+	color: #ffffff;
+	font-size: .75em;
+	font-family: Nunito Sans;
+	text-align: center;
+	font-style: normal;
+	text-decoration: none;
+display:block;
+padding:.5em 1em;
+background:#1B3E7C;
+width:150px;
+margin:1em auto 0;
+border-radius:3px;
+transition:.2s ease-in-out;}
+.fancyButton54.fancyButton:hover .textStyle2, .fancyButton54.fancyButton.hover .textStyle2{
+	color: #1b3e7c;
+	text-align: center;
+	text-decoration: none;
+background:#fbb621;}
+</style>
+
+ </div><!--
+--></div></div><!----><div class="col col1  last"><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks">
+
+<div>
+	<a href="/157/Availability" target="_self" class="fancyButton fancyButton58 " >
+		<span>
+			<span><span class="text">Availability<br><span class="textStyle1">As supply increases, vaccines will be available to all from convenient locations</span><span class="textStyle2">Learn more</span></span></span>
+		</span>
+	</a>
+</div>
+		<style scoped="scoped">.fancyButton58.fancyButton:link,.fancyButton58.fancyButton:visited, .fancyButton58div.fancyButton{
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-right: 1em;
+	padding-left: 1em;
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.fancyButton58.fancyButton:hover,.fancyButton58.fancyButton:focus,.fancyButton58.fancyButton:active,.fancyButton58.fancyButton.hover{
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.fancyButton58.fancyButton:link > span,.fancyButton58.fancyButton:visited > span, .fancyButton58div.fancyButton > span{
+}
+.fancyButton58.fancyButton:hover > span,.fancyButton58.fancyButton:focus > span,.fancyButton58.fancyButton:active > span,.fancyButton58.fancyButton.hover > span{
+}
+.fancyButton58.fancyButton .text{
+	color: #333333;
+	font-size: 1.3em;
+	font-family: "Montserrat";
+	text-align: center;
+	padding-top: 9.5em;
+	font-weight: 800;
+	text-decoration: none;
+	padding-top: 9.5em;
+	background-image: url('/ImageRepository/Document?documentID=85');
+	background-repeat: no-repeat;
+	background-position: center 10px ;
+background-size:140px;
+transition:.2s ease-in-out;
+}
+.fancyButton58.fancyButton:hover .text,.fancyButton58.fancyButton:focus .text,.fancyButton58.fancyButton:active .text,.fancyButton58.fancyButton.hover .text{
+	text-decoration: none;
+	background-repeat: no-repeat;
+	background-position: center top;
+background-size:160px;
+}
+@media(max-width:35em){
+.fancyButton.fancyButton58:hover .text,
+.fancyButton.fancyButton58:focus .text,
+.fancyButton.fancyButton58:active .text{
+background-size:140px;
+background-position:0px 10px;
+}
+}
+.fancyButton58.fancyButton .textStyle1{
+	color: #333333;
+	font-size: .75em;
+	font-family: Nunito Sans;
+	text-align: center;
+	font-weight: 300;
+	text-decoration: none;
+display:block;
+padding:1em 0 .25em 0;}
+.fancyButton58.fancyButton:hover .textStyle1, .fancyButton58.fancyButton.hover .textStyle1{
+	text-decoration: none;
+
+}
+.fancyButton58.fancyButton .textStyle2{
+	color: #ffffff;
+	font-size: .75em;
+	font-family: Nunito Sans;
+	text-align: center;
+	font-style: normal;
+	text-decoration: none;
+display:block;
+padding:.5em 1em;
+background:#1B3E7C;
+width:150px;
+margin:1em auto 0;
+border-radius:3px;
+transition:.2s ease-in-out;}
+.fancyButton58.fancyButton:hover .textStyle2, .fancyButton58.fancyButton.hover .textStyle2{
+	color: #1b3e7c;
+	text-align: center;
+	text-decoration: none;
+background:#fbb621;}
+</style>
+
+ </div><!--
+--></div></div><!--			--></div>
+	</div>
+	<div class="widgetFooter">
+			</div>
+</div>
+
+</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!----><div class="outer col col12 last" style="" data-widgetcontainerid="578291de-a6d2-42a9-a870-408b2bf73071">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col12 first last idd38ce731-ffeb-4553-bd5e-2bf3b1796e49" style="" data-widgetcontainerid="d38ce731-ffeb-4553-bd5e-2bf3b1796e49">	
+<div data-widget-id="05a6e2ef-b0f5-436c-92f6-9c5ac072f8d5" data-widget-controller-path="/GraphicLinks/Widget">
+
+
+
+
+<div id="graphicLinkWidget05a6e2ef-b0f5-436c-92f6-9c5ac072f8d5" class="widget widgetGraphicLinks skin45 widgetOptionSet41 wide" data-elementqueryclasses='{"wide-narrow":"min-width:1em"}' data-elementquerymatch='matchMultiColumn' data-elementqueryunmatch='unmatchMultiColumn' data-modulewidgettype="graphicLinks">
+	<div class="widgetHeader">
+		<div class="">
+				</div>
+	</div>
+	<div class="widgetBody cpGrid cpGrid2 ">	
+			<div class="row   wide"><!--
+--><div class="col col1 first "><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks">
+
+<div>
+	<a href="/faq.aspx" target="_self" class="fancyButton fancyButton59 " >
+		<span>
+			<span><span class="text">FAQs<br><span class="textStyle1">Find answers to frequently asked questions about the COVID-19 vaccine</span><span class="textStyle2">Learn more</span></span></span>
+		</span>
+	</a>
+</div>
+		<style scoped="scoped">.fancyButton59.fancyButton:link,.fancyButton59.fancyButton:visited, .fancyButton59div.fancyButton{
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-right: 1em;
+	padding-left: 1em;
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.fancyButton59.fancyButton:hover,.fancyButton59.fancyButton:focus,.fancyButton59.fancyButton:active,.fancyButton59.fancyButton.hover{
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.fancyButton59.fancyButton:link > span,.fancyButton59.fancyButton:visited > span, .fancyButton59div.fancyButton > span{
+}
+.fancyButton59.fancyButton:hover > span,.fancyButton59.fancyButton:focus > span,.fancyButton59.fancyButton:active > span,.fancyButton59.fancyButton.hover > span{
+}
+.fancyButton59.fancyButton .text{
+	color: #333333;
+	font-size: 1.3em;
+	font-family: "Montserrat";
+	text-align: center;
+	padding-top: 9.5em;
+	font-weight: 800;
+	text-decoration: none;
+	padding-top: 9.5em;
+	background-image: url('/ImageRepository/Document?documentID=86');
+	background-repeat: no-repeat;
+	background-position: center 10px ;
+background-size:140px;
+transition:.2s ease-in-out;
+}
+.fancyButton59.fancyButton:hover .text,.fancyButton59.fancyButton:focus .text,.fancyButton59.fancyButton:active .text,.fancyButton59.fancyButton.hover .text{
+	text-decoration: none;
+	background-repeat: no-repeat;
+	background-position: center top;
+background-size:160px;
+}
+@media(max-width:35em){
+.fancyButton.fancyButton59:hover .text,
+.fancyButton.fancyButton59:focus .text,
+.fancyButton.fancyButton59:active .text{
+background-size:140px;
+background-position:0px 10px;
+}
+}
+.fancyButton59.fancyButton .textStyle1{
+	color: #333333;
+	font-size: .75em;
+	font-family: Nunito Sans;
+	text-align: center;
+	font-weight: 300;
+	text-decoration: none;
+display:block;
+padding:1em 0 .25em 0;}
+.fancyButton59.fancyButton:hover .textStyle1, .fancyButton59.fancyButton.hover .textStyle1{
+	text-decoration: none;
+
+}
+.fancyButton59.fancyButton .textStyle2{
+	color: #ffffff;
+	font-size: .75em;
+	font-family: Nunito Sans;
+	text-align: center;
+	font-style: normal;
+	text-decoration: none;
+display:block;
+padding:.5em 1em;
+background:#1B3E7C;
+width:150px;
+margin:1em auto 0;
+border-radius:3px;
+transition:.2s ease-in-out;}
+.fancyButton59.fancyButton:hover .textStyle2, .fancyButton59.fancyButton.hover .textStyle2{
+	color: #1b3e7c;
+	text-align: center;
+	text-decoration: none;
+background:#fbb621;}
+</style>
+
+ </div><!--
+--></div></div><!----><div class="col col1  last"><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks">
+
+<div>
+	<a href="/176/Have-You-Heard" target="_self" class="fancyButton fancyButton60 " >
+		<span>
+			<span><span class="text">Have You Heard?<br><span class="textStyle1">Distinguish fact from fiction about the COVID-19 vaccine</span><span class="textStyle2">Learn more</span></span></span>
+		</span>
+	</a>
+</div>
+		<style scoped="scoped">.fancyButton60.fancyButton:link,.fancyButton60.fancyButton:visited, .fancyButton60div.fancyButton{
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-right: 1em;
+	padding-left: 1em;
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.fancyButton60.fancyButton:hover,.fancyButton60.fancyButton:focus,.fancyButton60.fancyButton:active,.fancyButton60.fancyButton.hover{
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.fancyButton60.fancyButton:link > span,.fancyButton60.fancyButton:visited > span, .fancyButton60div.fancyButton > span{
+}
+.fancyButton60.fancyButton:hover > span,.fancyButton60.fancyButton:focus > span,.fancyButton60.fancyButton:active > span,.fancyButton60.fancyButton.hover > span{
+}
+.fancyButton60.fancyButton .text{
+	color: #333333;
+	font-size: 1.3em;
+	font-family: "Montserrat";
+	text-align: center;
+	padding-top: 9.5em;
+	font-weight: 800;
+	text-decoration: none;
+	padding-top: 9.5em;
+	background-image: url('/ImageRepository/Document?documentID=87');
+	background-repeat: no-repeat;
+	background-position: center 10px ;
+background-size:140px;
+transition:.2s ease-in-out;
+}
+.fancyButton60.fancyButton:hover .text,.fancyButton60.fancyButton:focus .text,.fancyButton60.fancyButton:active .text,.fancyButton60.fancyButton.hover .text{
+	text-decoration: none;
+	background-repeat: no-repeat;
+	background-position: center top;
+background-size:160px;
+}
+@media(max-width:35em){
+.fancyButton.fancyButton60:hover .text,
+.fancyButton.fancyButton60:focus .text,
+.fancyButton.fancyButton60:active .text{
+background-size:140px;
+background-position:0px 10px;
+}
+}
+.fancyButton60.fancyButton .textStyle1{
+	color: #333333;
+	font-size: .75em;
+	font-family: Nunito Sans;
+	text-align: center;
+	font-weight: 300;
+	text-decoration: none;
+display:block;
+padding:1em 0 .25em 0;}
+.fancyButton60.fancyButton:hover .textStyle1, .fancyButton60.fancyButton.hover .textStyle1{
+	text-decoration: none;
+
+}
+.fancyButton60.fancyButton .textStyle2{
+	color: #ffffff;
+	font-size: .75em;
+	font-family: Nunito Sans;
+	text-align: center;
+	font-style: normal;
+	text-decoration: none;
+display:block;
+padding:.5em 1em;
+background:#1B3E7C;
+width:150px;
+margin:1em auto 0;
+border-radius:3px;
+transition:.2s ease-in-out;}
+.fancyButton60.fancyButton:hover .textStyle2, .fancyButton60.fancyButton.hover .textStyle2{
+	color: #1b3e7c;
+	text-align: center;
+	text-decoration: none;
+background:#fbb621;}
+</style>
+
+ </div><!--
+--></div></div><!--			--></div>
+	</div>
+	<div class="widgetFooter">
+			</div>
+</div>
+
+</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!--		--></div> <!-- outer row -->
+
+
+	</div>
+</div></div>
+</div><!-- Content container --><div data-cpRole="structuralContainer" id="mainContainerTS">
+<div class="siteWrap"><div data-cpRole="structuralContainer" id="mainWrapTS" class="mainWrap" role="main">
+<div data-cpRole="structuralContainer" id="outerContentWrapTS" class="outerContentWrap">
+<div data-cpRole="structuralContainer" id="contentWrapTS" class="contentWrap">
+<div data-cpRole="breadCrumbs" id="breadCrumbs" class="breadCrumbContainer"><script type='text/javascript'>$('#breadCrumbs').hide();</script></div><div data-cpRole="mainContentContainer" id="moduleContent">
+	
+	<div id="page" class="moduleContentNew">
+		
+
+	<input id="hdnPageID" name="hdnPageID" type="hidden" value="1" />
+	<input id="hdnParentID" name="hdnParentID" type="hidden" value="" />
+	<input id="hdnVersionID" name="hdnVersionID" type="hidden" value="1286" />
+	<input id="pageMenuTitle" name="pageMenuTitle" type="hidden" value="Home" />
+	<input id="pageShowFeatureColumn" name="pageShowFeatureColumn" type="hidden" value="True" />
+	<input id="hdnIsLayoutPage" name="hdnIsLayoutPage" type="hidden" value="False" />
+	<input id="hdnPageStatus" name="hdnPageStatus" type="hidden" value="Active" />
+
+					<div id="cc9b263b9d-a7e2-4e23-b747-b6d686e76be0" data-containerid="9b263b9d-a7e2-4e23-b747-b6d686e76be0" class="pageContent cpGrid cpGrid24"  data-contentcontainerbreakpoint="40" >
+			
+
+
+
+		</div>
+
+	</div>
+
+	
+	<div class="newCP">
+
+	</div>
+</div>
+</div>
+</div>
+</div></div>
+</div><!-- Carousel --><div data-cpRole="structuralContainer" id="homeContainer1">
+<div class="siteWrap"><div data-cpRole="contentContainer" id="homeContent1a">	<div id="cc96da701d-2d59-4e80-baab-c04e404a300a" data-containerid="96da701d-2d59-4e80-baab-c04e404a300a" class="pageContent cpGrid cpGrid24 isLockedContainer showInMobile">
+				                
+
+		<div class="row outer wide"><!--
+--><div class="outer col col24 first last" style="" data-widgetcontainerid="d2d488a0-20da-4151-ac60-e6a4f2745378">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col24 first last id5fdabd2f-b2b8-4b49-9750-31f28509cf6e" style="" data-widgetcontainerid="5fdabd2f-b2b8-4b49-9750-31f28509cf6e">	
+<div data-widget-id="f17fcc70-9c65-497f-aadf-dc13b031dcf8" data-widget-controller-path="/NewsFlash/Widget">
+	<script defer src="/Areas/NewsFlash/Assets/Scripts/Carousel.jquery.js" type="text/javascript"></script>
+	<script defer src="/Areas/NewsFlash/Assets/Scripts/Easing.1.3.jquery.js" type="text/javascript"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<section class="widget widgetNewsFlash skin59 widgetOptionSet32 wide" data-modulewidgettype="newsFlash" id="widgetNewsFlashf17fcc70-9c65-497f-aadf-dc13b031dcf8" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}' data-elementquerymatch='matchMultiColumn' data-elementqueryunmatch='unmatchMultiColumn' aria-label="News Flash">
+			<div class="widgetBody cpGrid cpGrid1 ">
+
+
+
+
+<div class="cpCarousel cpCarouself17fcc70-9c65-497f-aadf-dc13b031dcf8">
+	<div class="cpWindow cpWindowf17fcc70-9c65-497f-aadf-dc13b031dcf8">
+		<ol class="semanticList cpSlider">
+						<li class="widgetItem" data-index="0">
+								<a href="https://www.coronavirus.kdheks.gov/" onkeypress="this.onclick();" onclick="return showExternalSiteDialog(this);" target="_blank"><img class="media" src="/ImageRepository/Document?documentID=108" alt="Website" data-delayed-image="" /></a>
+						<div class="text">
+								<h4 id="newsFlashItemHeader14" class="widgetTitle">
+		<a href="https://www.coronavirus.kdheks.gov/" onkeypress="this.onclick();" onclick="return showExternalSiteDialog(this);" target="_blank">Learn More About COVID-19 </a>
+	</h4>
+	<div class="widgetDesc">
+Do you have questions about COVID-19? Find answers today.			<a href="https://www.coronavirus.kdheks.gov/" onkeypress="this.onclick();" onclick="return showExternalSiteDialog(this);" target="_blank" rel="noopener" class="readOn">Visit the COVID-19 Resource Center</a>
+	</div>
+
+						</div>
+						</li>
+						<li class="widgetItem" data-index="1">
+								<a href="https://www.gogettested.com/kansas" onkeypress="this.onclick();" onclick="return showExternalSiteDialog(this);" target="_blank"><img class="media" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-delay-load="/ImageRepository/Document?documentID=70" alt="Person on a phone" data-delayed-image="" /></a>
+						<div class="text">
+								<h4 id="newsFlashItemHeader13" class="widgetTitle">
+		<a href="https://www.gogettested.com/kansas" onkeypress="this.onclick();" onclick="return showExternalSiteDialog(this);" target="_blank">Find COVID-19 Testing </a>
+	</h4>
+	<div class="widgetDesc">
+Testing is an important tool in stopping the spread of COVID-19.			<a href="https://www.gogettested.com/kansas" onkeypress="this.onclick();" onclick="return showExternalSiteDialog(this);" target="_blank" rel="noopener" class="readOn">Find your testing location</a>
+	</div>
+
+						</div>
+						</li>
+						<li class="widgetItem" data-index="2">
+								<a href="https://covid.ks.gov/" onkeypress="this.onclick();" onclick="return showExternalSiteDialog(this);" target="_blank"><img class="media" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-delay-load="/ImageRepository/Document?documentID=109" alt="COVID Recovery Website" data-delayed-image="" /></a>
+						<div class="text">
+								<h4 id="newsFlashItemHeader12" class="widgetTitle">
+		<a href="https://covid.ks.gov/" onkeypress="this.onclick();" onclick="return showExternalSiteDialog(this);" target="_blank">Kansas COVID-19 Response & Recovery </a>
+	</h4>
+	<div class="widgetDesc">
+Learn more about the statewide response to COVID-19.			<a href="https://covid.ks.gov/" onkeypress="this.onclick();" onclick="return showExternalSiteDialog(this);" target="_blank" rel="noopener" class="readOn">Visit covid.ks.gov </a>
+	</div>
+
+						</div>
+						</li>
+
+		</ol>
+	</div>
+</div>
+<script type="text/javascript">
+	// <!--
+	window.$ = window.$ || window.parent.$;
+
+	$(document).ready(function () {
+		//Wait for the DOM to load completely before executing carousel logic since its all based on carousel width which wont come out correct until the DOM has loaded. Vishal
+		if(!window.carouselsToInit){
+			window.carouselsToInit = new Array();
+		}
+		var widgetNewsFlashf17fcc709c65497faadfdc13b031dcf8 = function()
+		{
+			var widgetWindow = $('#widgetNewsFlashf17fcc70-9c65-497f-aadf-dc13b031dcf8').find('.cpWindow')[0];
+			if(widgetWindow){
+				if(widgetWindow.clientWidth != 0){
+					window.setTimeout(function(){
+						$('#widgetNewsFlashf17fcc70-9c65-497f-aadf-dc13b031dcf8').adaptiveCarousel({
+							minSlideWidth: 250,
+							maxSlideWidth: 250,
+							gutterWidth: 40,
+							circular: true,
+							teaser: false,
+							transitionTiming: 500
+							});
+					}, 250);
+					var index = window.carouselsToInit.indexOf(widgetNewsFlashf17fcc709c65497faadfdc13b031dcf8);
+					if (index > -1) {
+						window.carouselsToInit.splice(index, 1);
+					}
+				}
+			}
+		}
+		if(!window.carouselsToInit.widgetNewsFlashf17fcc709c65497faadfdc13b031dcf8){
+			window.carouselsToInit.push(widgetNewsFlashf17fcc709c65497faadfdc13b031dcf8);
+		}
+		window.carouselsToInit.forEach(function(carouselToInit) {carouselToInit();});
+		if(window.Pages.onResizeHandlers){
+			window.Pages.onResizeHandlers.forEach(function(car){car();});
+		}
+	});
+
+	if (Modernizr.touch) {
+		var $pages = typeof window.Pages == 'undefined' ? window.parent.Pages : window.Pages;
+		$.when($pages.rwdReady).done(function () {
+			//only for responsive sites
+			if (typeof($$) !== 'undefined') {
+				$$('#widgetNewsFlashf17fcc70-9c65-497f-aadf-dc13b031dcf8').on('swipeRight', function (e, a) {
+					$(this).adaptiveCarousel("moveBack");
+				});
+				$$('#widgetNewsFlashf17fcc70-9c65-497f-aadf-dc13b031dcf8').on('swipeLeft', function (e) {
+					$(this).adaptiveCarousel("moveForward");
+				});
+			}
+		});
+	}
+	// -->
+</script>
+
+			</div>
+	<div class="widgetFooter">
+	</div>
+	<div class="addItemModal hidden">
+		<div class="url hidden">/CivicAlerts.aspx</div>
+	</div>
+
+	</section>
+
+
+
+
+
+
+
+
+</div>	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!--		--></div> <!-- outer row -->
+
+
+	</div>
+</div></div>
+</div><!-- Additional Resources --><div data-cpRole="structuralContainer" id="homeContainer2">
+<div class="siteWrap"><div data-cpRole="contentContainer" id="homeContent2a">	<div id="cce12fe053-350a-4836-b25a-143160d2c173" data-containerid="e12fe053-350a-4836-b25a-143160d2c173" class="pageContent cpGrid cpGrid24 isLockedContainer showInMobile">
+				                
+
+		<div class="row outer wide"><!--
+--><div class="outer col col24 first last" style="" data-widgetcontainerid="9bf995e1-bae2-4185-9344-60b6c76452fa">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col24 first last idedcbfd0d-20ef-43d6-97fd-b89cbfebecac" style="" data-widgetcontainerid="edcbfd0d-20ef-43d6-97fd-b89cbfebecac">	
+<div class="widget editor pageStyles narrow" id="divEditorbc8d6ded-5713-47a0-a8b3-3f24e82728bf" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}'>
+        <div class="fr-view">
+
+
+        <h1 style='box-sizing: border-box; border: 0px none; font-family: "Nunito Sans"; font-style: normal; font-weight: 700; color: rgb(51, 51, 51); font-size: 1.6em; text-decoration: none; display: block; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;'>Additional Resources</h1><p style='box-sizing: border-box; margin-top: 0px; margin-bottom: 1.4em; border: 0px none; font-style: normal; font-weight: 400; color: rgb(20, 20, 12); font-family: "Nunito Sans"; font-size: 14px; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'>Rumors and scams can easily circulate in times of crisis. Do your part to the stop the spread of misinformation and protect Kansans by relying on trusted sources of information.&nbsp;<a href="https://www.coronavirus.kdheks.gov/CivicAlerts.aspx?AID=18" onkeypress="this.onclick();" onclick="return showExternalSiteDialog(this);" rel="noopener noreferrer" style="box-sizing: border-box; user-select: auto; color: rgb(46, 78, 132); text-decoration: underline;" target="_blank">Learn more</a> about how to protect yourself and your loved ones from the latest COVID-19 scams.</p>
+    </div>
+
+<script type="text/javascript">
+	$(document).ready(function (e) {		
+	    renderSlideshowIfApplicable($('#divEditor' + 'bc8d6ded-5713-47a0-a8b3-3f24e82728bf'));
+	});
+</script>
+</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!--		--></div> <!-- outer row -->
+		<div class="row outer wide"><!--
+--><div class="outer col col24 first last" style="" data-widgetcontainerid="a8999f98-c0f0-4b6a-bfb2-6bf7620056f3">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col24 first last idc92050f3-c33f-40f0-8c6f-b659ec89450b" style="" data-widgetcontainerid="c92050f3-c33f-40f0-8c6f-b659ec89450b">	
+<div data-widget-id="ad6e9b27-bb70-4664-8b36-fd9178f4ca48" data-widget-controller-path="/GraphicLinks/Widget">
+
+
+
+
+<div id="graphicLinkWidgetad6e9b27-bb70-4664-8b36-fd9178f4ca48" class="widget widgetGraphicLinks skin45 widgetOptionSet41 wide" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}' data-elementquerymatch='matchMultiColumn' data-elementqueryunmatch='unmatchMultiColumn' data-modulewidgettype="graphicLinks">
+	<div class="widgetHeader">
+		<div class="">
+				</div>
+	</div>
+	<div class="widgetBody cpGrid cpGrid2 ">	
+			<div class="row   wide"><!--
+--><div class="col col1 first "><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks">
+
+<div>
+	<a href="https://www.cdc.gov/coronavirus/2019-nCoV/index.html" onkeypress="this.onclick();" onclick="return showExternalSiteDialog(this);" target="_blank" class="fancyButton fancyButton69 "  aria-label="Learn the facts with CDC.gov opens in new window">
+		<span>
+			<span><span class="text">Learn the facts with CDC.gov</span></span>
+		</span>
+	</a>
+</div>
+		<style scoped="scoped">.fancyButton69.fancyButton:link,.fancyButton69.fancyButton:visited, .fancyButton69div.fancyButton{
+	background-image: url('/ImageRepository/Document?documentID=93');
+	background-repeat: no-repeat;
+	background-position: left center;
+transition:.25s ease all;
+background-size:35px;}
+.fancyButton69.fancyButton:hover,.fancyButton69.fancyButton:focus,.fancyButton69.fancyButton:active,.fancyButton69.fancyButton.hover{
+	background-image: url('/ImageRepository/Document?documentID=94');
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+.fancyButton69.fancyButton:link > span,.fancyButton69.fancyButton:visited > span, .fancyButton69div.fancyButton > span{
+}
+.fancyButton69.fancyButton:hover > span,.fancyButton69.fancyButton:focus > span,.fancyButton69.fancyButton:active > span,.fancyButton69.fancyButton.hover > span{
+}
+.fancyButton69.fancyButton .text{
+	color: #2e4e84;
+	font-family: "Nunito Sans";
+	text-align: left;
+	padding-top: .5em;
+	padding-bottom: .5em;
+	padding-right: 2em;
+	padding-left: 3em;
+	font-weight: 700;
+	text-decoration: none;
+	padding-top: .5em;
+	padding-bottom: .5em;
+	padding-right: 2em;
+	padding-left: 3em;
+	background-repeat: no-repeat;
+	background-position: left top;
+
+
+}
+.fancyButton69.fancyButton:hover .text,.fancyButton69.fancyButton:focus .text,.fancyButton69.fancyButton:active .text,.fancyButton69.fancyButton.hover .text{
+	text-decoration: underline;
+	background-repeat: no-repeat;
+	background-position: left top;
+
+
+}
+</style>
+
+ </div><!--
+	    --><div class="widgetItem GraphicLinks">
+
+<div>
+	<a href="https://www.fema.gov/Coronavirus-Rumor-Control" onkeypress="this.onclick();" onclick="return showExternalSiteDialog(this);" target="_blank" class="fancyButton fancyButton70 "  aria-label="Dispel rumors with FEMA.gov opens in new window">
+		<span>
+			<span><span class="text">Dispel rumors with FEMA.gov</span></span>
+		</span>
+	</a>
+</div>
+		<style scoped="scoped">.fancyButton70.fancyButton:link,.fancyButton70.fancyButton:visited, .fancyButton70div.fancyButton{
+	background-image: url('/ImageRepository/Document?documentID=97');
+	background-repeat: no-repeat;
+	background-position: left center;
+transition:.25s ease all;
+background-size:35px;}
+.fancyButton70.fancyButton:hover,.fancyButton70.fancyButton:focus,.fancyButton70.fancyButton:active,.fancyButton70.fancyButton.hover{
+	background-image: url('/ImageRepository/Document?documentID=98');
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+.fancyButton70.fancyButton:link > span,.fancyButton70.fancyButton:visited > span, .fancyButton70div.fancyButton > span{
+}
+.fancyButton70.fancyButton:hover > span,.fancyButton70.fancyButton:focus > span,.fancyButton70.fancyButton:active > span,.fancyButton70.fancyButton.hover > span{
+}
+.fancyButton70.fancyButton .text{
+	color: #2e4e84;
+	font-family: "Nunito Sans";
+	text-align: left;
+	padding-top: .5em;
+	padding-bottom: .5em;
+	padding-right: 2em;
+	padding-left: 3em;
+	font-weight: 700;
+	text-decoration: none;
+	padding-top: .5em;
+	padding-bottom: .5em;
+	padding-right: 2em;
+	padding-left: 3em;
+	background-repeat: no-repeat;
+	background-position: left top;
+
+
+}
+.fancyButton70.fancyButton:hover .text,.fancyButton70.fancyButton:focus .text,.fancyButton70.fancyButton:active .text,.fancyButton70.fancyButton.hover .text{
+	text-decoration: underline;
+	background-repeat: no-repeat;
+	background-position: left top;
+
+
+}
+</style>
+
+ </div><!--
+--></div></div><!----><div class="col col1  last"><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks">
+
+<div>
+	<a href="https://oig.hhs.gov/coronavirus/fraud-alert-covid19.asp?utm_source=web&amp;utm_medium=web&amp;utm_campaign=covid19-fraud-alert" onkeypress="this.onclick();" onclick="return showExternalSiteDialog(this);" target="_blank" class="fancyButton fancyButton71 "  aria-label="Identify &amp; report scams courtesy of HHS.gov opens in new window">
+		<span>
+			<span><span class="text">Identify &amp; report scams courtesy of HHS.gov</span></span>
+		</span>
+	</a>
+</div>
+		<style scoped="scoped">.fancyButton71.fancyButton:link,.fancyButton71.fancyButton:visited, .fancyButton71div.fancyButton{
+	background-image: url('/ImageRepository/Document?documentID=99');
+	background-repeat: no-repeat;
+	background-position: left center;
+transition:.25s ease all;
+background-size:35px;}
+.fancyButton71.fancyButton:hover,.fancyButton71.fancyButton:focus,.fancyButton71.fancyButton:active,.fancyButton71.fancyButton.hover{
+	background-image: url('/ImageRepository/Document?documentID=100');
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+.fancyButton71.fancyButton:link > span,.fancyButton71.fancyButton:visited > span, .fancyButton71div.fancyButton > span{
+}
+.fancyButton71.fancyButton:hover > span,.fancyButton71.fancyButton:focus > span,.fancyButton71.fancyButton:active > span,.fancyButton71.fancyButton.hover > span{
+}
+.fancyButton71.fancyButton .text{
+	color: #2e4e84;
+	font-family: "Nunito Sans";
+	text-align: left;
+	padding-top: .5em;
+	padding-bottom: .5em;
+	padding-right: 2em;
+	padding-left: 3em;
+	font-weight: 700;
+	text-decoration: none;
+	padding-top: .5em;
+	padding-bottom: .5em;
+	padding-right: 2em;
+	padding-left: 3em;
+	background-repeat: no-repeat;
+	background-position: left top;
+
+
+}
+.fancyButton71.fancyButton:hover .text,.fancyButton71.fancyButton:focus .text,.fancyButton71.fancyButton:active .text,.fancyButton71.fancyButton.hover .text{
+	text-decoration: underline;
+	background-repeat: no-repeat;
+	background-position: left top;
+
+
+}
+</style>
+
+ </div><!--
+	    --><div class="widgetItem GraphicLinks">
+
+<div>
+	<a href="https://www.usa.gov/coronavirus" onkeypress="this.onclick();" onclick="return showExternalSiteDialog(this);" target="_blank" class="fancyButton fancyButton72 "  aria-label="Learn more about the U.S. government response opens in new window">
+		<span>
+			<span><span class="text">Learn more about the U.S. government response</span></span>
+		</span>
+	</a>
+</div>
+		<style scoped="scoped">.fancyButton72.fancyButton:link,.fancyButton72.fancyButton:visited, .fancyButton72div.fancyButton{
+	background-image: url('/ImageRepository/Document?documentID=102');
+	background-repeat: no-repeat;
+	background-position: left center;
+transition:.25s ease all;
+background-size:35px;}
+.fancyButton72.fancyButton:hover,.fancyButton72.fancyButton:focus,.fancyButton72.fancyButton:active,.fancyButton72.fancyButton.hover{
+	background-image: url('/ImageRepository/Document?documentID=101');
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+.fancyButton72.fancyButton:link > span,.fancyButton72.fancyButton:visited > span, .fancyButton72div.fancyButton > span{
+}
+.fancyButton72.fancyButton:hover > span,.fancyButton72.fancyButton:focus > span,.fancyButton72.fancyButton:active > span,.fancyButton72.fancyButton.hover > span{
+}
+.fancyButton72.fancyButton .text{
+	color: #2e4e84;
+	font-family: "Nunito Sans";
+	text-align: left;
+	padding-top: .5em;
+	padding-bottom: .5em;
+	padding-right: 2em;
+	padding-left: 3em;
+	font-weight: 700;
+	text-decoration: none;
+	padding-top: .5em;
+	padding-bottom: .5em;
+	padding-right: 2em;
+	padding-left: 3em;
+	background-repeat: no-repeat;
+	background-position: left top;
+
+
+}
+.fancyButton72.fancyButton:hover .text,.fancyButton72.fancyButton:focus .text,.fancyButton72.fancyButton:active .text,.fancyButton72.fancyButton.hover .text{
+	text-decoration: underline;
+	background-repeat: no-repeat;
+	background-position: left top;
+
+
+}
+</style>
+
+ </div><!--
+--></div></div><!--			--></div>
+	</div>
+	<div class="widgetFooter">
+			</div>
+</div>
+
+</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!--		--></div> <!-- outer row -->
+
+
+	</div>
+</div></div>
+</div><!-- Footer --><footer data-cpRole="structuralContainer" id="footerContainerTS">
+<div class="siteWrap"><div data-cpRole="contentContainer" id="footerTS">	<div id="cc5ee49421-fc11-4ead-9ef6-3ddde37cf4e5" data-containerid="5ee49421-fc11-4ead-9ef6-3ddde37cf4e5" class="pageContent cpGrid cpGrid24 isLockedContainer showInMobile" data-contentcontainerbreakpoint="48">
+				                
+
+		<div class="row outer wide"><!--
+--><div class="outer col col3 first" style="" data-widgetcontainerid="97b65977-5e96-4d62-b0e5-89e741a21ef2">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col3 first last id4e7aa6e7-f509-40a5-818f-feff0e33ede6" style="" data-widgetcontainerid="4e7aa6e7-f509-40a5-818f-feff0e33ede6">	
+    <div data-widget-id="1b704121-ad51-47c1-a6a5-34d79e48da19" data-widget-controller-path="/InfoAdvanced/Widget">
+
+
+
+
+
+	<section id="divInfoAdv1b704121-ad51-47c1-a6a5-34d79e48da19" class="widget widgetInfoAdvanced skin56 widgetOptionSet5 wide" data-modulewidgettype="infoAdv" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}' data-elementquerymatch='matchMultiColumn' data-elementqueryunmatch='unmatchMultiColumn' aria-label="Info Advanced">
+			<header class="widgetHeader" id="header1b704121-ad51-47c1-a6a5-34d79e48da19">
+		<div class="">
+								</div>
+	</header>
+	<div class="widgetBody  cpGrid cpGrid1 ">
+		<div class="row  wide">
+					<div class="col col1 first last">
+						<ol class="pageStyles semanticList">
+
+<li class="InfoAdvanced widgetItem ">
+	<div style="" class="imageAlignWrapper"><img src="/ImageRepository/Document?documentID=67" alt="KDHE Logo" title="KDHE Logo" style="text-align: center;" class="floatCenter"></div>
+</li>						</ol>
+					</div>
+		</div>
+	</div>
+	<div class="widgetFooter">
+
+	</div>
+
+	</section>
+
+
+
+<script type="text/javascript">
+	//Render slideshow if info advacned items contain one.
+	$(document).ready(function (e) {
+		$('#divInfoAdv1b704121-ad51-47c1-a6a5-34d79e48da19 .InfoAdvanced.widgetItem').each(function () {
+			renderSlideshowIfApplicable($(this));		
+		});
+	});
+</script></div>	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!----><div class="outer col col10" style="" data-widgetcontainerid="6c68c884-6af0-4d53-abdc-0689fa7326e4">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col10 first last id373fb668-8d9b-4aa0-af1b-a777b3f82d4b" style="" data-widgetcontainerid="373fb668-8d9b-4aa0-af1b-a777b3f82d4b">	
+
+<div class="widget widgetSpacer" id="96828d6c-cff2-4285-a14a-85694e070289"></div>	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!----><div class="outer col col11 last" style="" data-widgetcontainerid="9e45f32c-6dec-4685-999b-b40199c06640">				
+	<div class="row nest first wide">
+	
+	<div class="inner col col11 first last id2e8db2cc-14ee-4ed1-9efa-499bfd9eedc1" style="" data-widgetcontainerid="2e8db2cc-14ee-4ed1-9efa-499bfd9eedc1">	
+    <div data-widget-id="383bdf01-d71a-4fe5-a947-1fc1c482f2a6" data-widget-controller-path="/InfoAdvanced/Widget">
+
+
+
+
+
+	<section id="divInfoAdv383bdf01-d71a-4fe5-a947-1fc1c482f2a6" class="widget widgetInfoAdvanced skin37 widgetOptionSet5 wide" data-modulewidgettype="infoAdv" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}' data-elementquerymatch='matchMultiColumn' data-elementqueryunmatch='unmatchMultiColumn' aria-labelledby="header383bdf01-d71a-4fe5-a947-1fc1c482f2a6">
+			<header class="widgetHeader" id="header383bdf01-d71a-4fe5-a947-1fc1c482f2a6">
+		<div class="">
+					<h3 >Kansas Department of Health and Environment</h3>
+								</div>
+	</header>
+	<div class="widgetBody  cpGrid cpGrid1 ">
+		<div class="row  wide">
+					<div class="col col1 first last">
+						<ol class="pageStyles semanticList">
+
+<li class="InfoAdvanced widgetItem ">
+	<em><abbr>KDHE</abbr> cannot provide lab test results or medical advice. Please contact your healthcare provider to discuss your needs.
+</em><br>
+<br>
+<strong>Phone: <a href="tel:8665343463" target="_self" class="Hyperlink">866-534-3463</a> (866-<abbr>KDHEINF</abbr>)</strong><br>
+Monday through Friday, 8:30 <abbr>am</abbr> to 5:00 <abbr>pm</abbr><br>
+<br>
+</li>						</ol>
+					</div>
+		</div>
+	</div>
+	<div class="widgetFooter">
+
+	</div>
+
+	</section>
+
+
+
+<script type="text/javascript">
+	//Render slideshow if info advacned items contain one.
+	$(document).ready(function (e) {
+		$('#divInfoAdv383bdf01-d71a-4fe5-a947-1fc1c482f2a6 .InfoAdvanced.widgetItem').each(function () {
+			renderSlideshowIfApplicable($(this));		
+		});
+	});
+</script></div>	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+	<div class="row nest last wide">
+	
+	<div class="inner col col11 first last id7175df51-ab85-41a3-ab8a-ed85a631854b" style="" data-widgetcontainerid="7175df51-ab85-41a3-ab8a-ed85a631854b">	
+<div data-widget-id="cc7152f0-163b-424a-a00e-880f78bab935" data-widget-controller-path="/GraphicLinks/Widget">
+
+
+
+
+<div id="graphicLinkWidgetcc7152f0-163b-424a-a00e-880f78bab935" class="widget widgetGraphicLinks skin58 widgetOptionSet43 wide" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}' data-elementquerymatch='matchMultiColumn' data-elementqueryunmatch='unmatchMultiColumn' data-modulewidgettype="graphicLinks">
+	<div class="widgetHeader">
+		<div class="">
+				</div>
+	</div>
+	<div class="widgetBody cpGrid cpGrid1 ">	
+			<div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks">
+
+<div>
+	<a href="/cdn-cgi/l/email-protection#6f0c0019060b425e562f041c41080019" target="_self" class="fancyButton fancyButton66 ">
+		<span>
+			<span><span class="text">E-mail your question</span></span>
+		</span>
+	</a>
+</div>
+		<style scoped="scoped">.fancyButton66.fancyButton:link,.fancyButton66.fancyButton:visited, .fancyButton66div.fancyButton{
+	background-color: #fbb621;
+	padding-top: .45em;
+	padding-bottom: .45em;
+	padding-right: .45em;
+	padding-left: .45em;
+	background-repeat: no-repeat;
+	background-position: left top;
+margin-top:.5em;
+margin-left: calc(100% - 250px);
+border-radius:3px;}
+.fancyButton66.fancyButton:hover,.fancyButton66.fancyButton:focus,.fancyButton66.fancyButton:active,.fancyButton66.fancyButton.hover{
+	background-color: #ffffff;
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.fancyButton66.fancyButton:link > span,.fancyButton66.fancyButton:visited > span, .fancyButton66div.fancyButton > span{
+}
+.fancyButton66.fancyButton:hover > span,.fancyButton66.fancyButton:focus > span,.fancyButton66.fancyButton:active > span,.fancyButton66.fancyButton.hover > span{
+}
+.fancyButton66.fancyButton .text{
+	font-size: .9em;
+	font-family: "Nunito Sans";
+	font-style: normal;
+	text-decoration: none;
+	background-repeat: no-repeat;
+	background-position: left top;
+transition:.2s ease all;
+}
+.fancyButton66.fancyButton:hover .text,.fancyButton66.fancyButton:focus .text,.fancyButton66.fancyButton:active .text,.fancyButton66.fancyButton.hover .text{
+	text-decoration: none;
+	background-repeat: no-repeat;
+	background-position: left top;
+
+
+}
+</style>
+
+ </div><!--
+	    --><div class="widgetItem GraphicLinks">
+
+<div>
+	<a href="https://www.coronavirus.kdheks.gov/" onkeypress="this.onclick();" onclick="return showExternalSiteDialog(this);" target="_self" class="fancyButton fancyButton67 " >
+		<span>
+			<span><span class="text">Visit the KDHE COVID-19 website</span></span>
+		</span>
+	</a>
+</div>
+		<style scoped="scoped">.fancyButton67.fancyButton:link,.fancyButton67.fancyButton:visited, .fancyButton67div.fancyButton{
+	background-color: #fbb621;
+	padding-top: .45em;
+	padding-bottom: .45em;
+	padding-right: .45em;
+	padding-left: .45em;
+	background-repeat: no-repeat;
+	background-position: left top;
+margin-top:.5em;
+margin-left: calc(100% - 250px);
+border-radius:3px;}
+.fancyButton67.fancyButton:hover,.fancyButton67.fancyButton:focus,.fancyButton67.fancyButton:active,.fancyButton67.fancyButton.hover{
+	background-color: #ffffff;
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.fancyButton67.fancyButton:link > span,.fancyButton67.fancyButton:visited > span, .fancyButton67div.fancyButton > span{
+}
+.fancyButton67.fancyButton:hover > span,.fancyButton67.fancyButton:focus > span,.fancyButton67.fancyButton:active > span,.fancyButton67.fancyButton.hover > span{
+}
+.fancyButton67.fancyButton .text{
+	font-size: .9em;
+	font-family: "Nunito Sans";
+	font-style: normal;
+	text-decoration: none;
+	background-repeat: no-repeat;
+	background-position: left top;
+transition:.2s ease all;
+}
+.fancyButton67.fancyButton:hover .text,.fancyButton67.fancyButton:focus .text,.fancyButton67.fancyButton:active .text,.fancyButton67.fancyButton.hover .text{
+	text-decoration: none;
+	background-repeat: no-repeat;
+	background-position: left top;
+
+
+}
+</style>
+
+ </div><!--
+	    --><div class="widgetItem GraphicLinks">
+
+<div>
+	<a href="https://www.kdheks.gov/" onkeypress="this.onclick();" onclick="return showExternalSiteDialog(this);" target="_self" class="fancyButton fancyButton68 " >
+		<span>
+			<span><span class="text">Visit the KDHE website</span></span>
+		</span>
+	</a>
+</div>
+		<style scoped="scoped">.fancyButton68.fancyButton:link,.fancyButton68.fancyButton:visited, .fancyButton68div.fancyButton{
+	background-color: #fbb621;
+	padding-top: .45em;
+	padding-bottom: .45em;
+	padding-right: .45em;
+	padding-left: .45em;
+	background-repeat: no-repeat;
+	background-position: left top;
+margin-top:.5em;
+margin-left: calc(100% - 250px);
+border-radius:3px;}
+.fancyButton68.fancyButton:hover,.fancyButton68.fancyButton:focus,.fancyButton68.fancyButton:active,.fancyButton68.fancyButton.hover{
+	background-color: #ffffff;
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.fancyButton68.fancyButton:link > span,.fancyButton68.fancyButton:visited > span, .fancyButton68div.fancyButton > span{
+}
+.fancyButton68.fancyButton:hover > span,.fancyButton68.fancyButton:focus > span,.fancyButton68.fancyButton:active > span,.fancyButton68.fancyButton.hover > span{
+}
+.fancyButton68.fancyButton .text{
+	font-size: .9em;
+	font-family: "Nunito Sans";
+	font-style: normal;
+	text-decoration: none;
+	background-repeat: no-repeat;
+	background-position: left top;
+transition:.2s ease all;
+}
+.fancyButton68.fancyButton:hover .text,.fancyButton68.fancyButton:focus .text,.fancyButton68.fancyButton:active .text,.fancyButton68.fancyButton.hover .text{
+	text-decoration: none;
+	background-repeat: no-repeat;
+	background-position: left top;
+
+
+}
+</style>
+
+ </div><!--
+			--></div>
+	</div>
+	<div class="widgetFooter">
+			</div>
+</div>
+
+</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!--		--></div> <!-- outer row -->
+
+
+	</div>
+</div></div>
+</footer><!-- Socials --><div data-cpRole="structuralContainer" id="socialsContainerTS">
+<div class="siteWrap"><div data-cpRole="contentContainer" id="socialsTS">	<div id="cc6869fefe-028d-4a95-b0ca-ab95119d60d2" data-containerid="6869fefe-028d-4a95-b0ca-ab95119d60d2" class="pageContent cpGrid cpGrid24 isLockedContainer showInMobile" data-contentcontainerbreakpoint="55">
+				                
+
+		<div class="row outer wide"><!--
+--><div class="outer col col19 first" style="" data-widgetcontainerid="175a491c-b787-4f0f-bee8-ad197cd9fd33">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col19 first last id39917253-2c04-432a-97d1-5a122d22355c" style="" data-widgetcontainerid="39917253-2c04-432a-97d1-5a122d22355c">	
+<div data-widget-id="fae6f4df-44d8-42b3-9e2e-0ab62d705270" data-widget-controller-path="/GraphicLinks/Widget">
+
+
+
+
+<div id="graphicLinkWidgetfae6f4df-44d8-42b3-9e2e-0ab62d705270" class="widget widgetGraphicLinks skin55 widgetOptionSet35 wide" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}' data-elementquerymatch='matchMultiColumn' data-elementqueryunmatch='unmatchMultiColumn' data-modulewidgettype="graphicLinks">
+	<div class="widgetHeader">
+		<div class="">
+			<h3 >Social Media</h3>
+				</div>
+	</div>
+	<div class="widgetBody cpGrid cpGrid5 ">	
+			<div class="row   wide"><!--
+--><div class="col col1 first "><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks">
+
+<div>
+	<a href="https://www.facebook.com/KDHEnews" onkeypress="this.onclick();" onclick="return showExternalSiteDialog(this);" target="_blank" class="fancyButton fancyButton48 "  aria-label="Facebook opens in new window">
+		<span>
+			<span><span class="text">Facebook</span></span>
+		</span>
+	</a>
+</div>
+		<style scoped="scoped">.fancyButton48.fancyButton:link,.fancyButton48.fancyButton:visited, .fancyButton48div.fancyButton{
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-right: 1em;
+	padding-left: 1em;
+	background-image: url('/ImageRepository/Document?documentID=40');
+	background-repeat: no-repeat;
+	background-position: center center;
+transition:.2s ease all;
+background-size:34px;}
+.fancyButton48.fancyButton:hover,.fancyButton48.fancyButton:focus,.fancyButton48.fancyButton:active,.fancyButton48.fancyButton.hover{
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.fancyButton48.fancyButton:link > span,.fancyButton48.fancyButton:visited > span, .fancyButton48div.fancyButton > span{
+}
+.fancyButton48.fancyButton:hover > span,.fancyButton48.fancyButton:focus > span,.fancyButton48.fancyButton:active > span,.fancyButton48.fancyButton.hover > span{
+}
+.fancyButton48.fancyButton .text{
+	text-align: center;
+	text-decoration: none;
+	background-repeat: no-repeat;
+	background-position: left top;
+
+color:rgba(0,0,0,0);
+transition:.2s ease all;
+transform:translateY(0);}
+.fancyButton48.fancyButton:hover .text,.fancyButton48.fancyButton:focus .text,.fancyButton48.fancyButton:active .text,.fancyButton48.fancyButton.hover .text{
+	text-decoration: none;
+	background-repeat: no-repeat;
+	background-position: left top;
+
+color:rgba(37,61,102,1);
+transform:translateY(20px);}
+</style>
+
+ </div><!--
+--></div></div><!----><div class="col col1  "><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks">
+
+<div>
+	<a href="https://twitter.com/KDHE" onkeypress="this.onclick();" onclick="return showExternalSiteDialog(this);" target="_blank" class="fancyButton fancyButton49 "  aria-label="Twitter opens in new window">
+		<span>
+			<span><span class="text">Twitter</span></span>
+		</span>
+	</a>
+</div>
+		<style scoped="scoped">.fancyButton49.fancyButton:link,.fancyButton49.fancyButton:visited, .fancyButton49div.fancyButton{
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-right: 1em;
+	padding-left: 1em;
+	background-image: url('/ImageRepository/Document?documentID=42');
+	background-repeat: no-repeat;
+	background-position: center center;
+transition:.2s ease all;
+background-size:34px;}
+.fancyButton49.fancyButton:hover,.fancyButton49.fancyButton:focus,.fancyButton49.fancyButton:active,.fancyButton49.fancyButton.hover{
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.fancyButton49.fancyButton:link > span,.fancyButton49.fancyButton:visited > span, .fancyButton49div.fancyButton > span{
+}
+.fancyButton49.fancyButton:hover > span,.fancyButton49.fancyButton:focus > span,.fancyButton49.fancyButton:active > span,.fancyButton49.fancyButton.hover > span{
+}
+.fancyButton49.fancyButton .text{
+	text-decoration: none;
+	background-repeat: no-repeat;
+	background-position: left top;
+
+color:rgba(0,0,0,0);
+transition:.2s ease all;
+transform:translateY(0);}
+.fancyButton49.fancyButton:hover .text,.fancyButton49.fancyButton:focus .text,.fancyButton49.fancyButton:active .text,.fancyButton49.fancyButton.hover .text{
+	text-decoration: none;
+	background-repeat: no-repeat;
+	background-position: left top;
+
+color:rgba(37,61,102,1);
+transform:translateY(20px);}
+</style>
+
+ </div><!--
+--></div></div><!----><div class="col col1  "><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks">
+
+<div>
+	<a href="https://vimeo.com/kdhe" onkeypress="this.onclick();" onclick="return showExternalSiteDialog(this);" target="_blank" class="fancyButton fancyButton50 "  aria-label="Vimeo opens in new window">
+		<span>
+			<span><span class="text">Vimeo</span></span>
+		</span>
+	</a>
+</div>
+		<style scoped="scoped">.fancyButton50.fancyButton:link,.fancyButton50.fancyButton:visited, .fancyButton50div.fancyButton{
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-right: 1em;
+	padding-left: 1em;
+	background-image: url('/ImageRepository/Document?documentID=72');
+	background-repeat: no-repeat;
+	background-position: center center;
+transition:.2s ease all;
+background-size:34px;}
+.fancyButton50.fancyButton:hover,.fancyButton50.fancyButton:focus,.fancyButton50.fancyButton:active,.fancyButton50.fancyButton.hover{
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.fancyButton50.fancyButton:link > span,.fancyButton50.fancyButton:visited > span, .fancyButton50div.fancyButton > span{
+}
+.fancyButton50.fancyButton:hover > span,.fancyButton50.fancyButton:focus > span,.fancyButton50.fancyButton:active > span,.fancyButton50.fancyButton.hover > span{
+}
+.fancyButton50.fancyButton .text{
+	text-decoration: none;
+	background-repeat: no-repeat;
+	background-position: left top;
+
+color:rgba(0,0,0,0);
+transition:.2s ease all;
+transform:translateY(0);}
+.fancyButton50.fancyButton:hover .text,.fancyButton50.fancyButton:focus .text,.fancyButton50.fancyButton:active .text,.fancyButton50.fancyButton.hover .text{
+	text-decoration: none;
+	background-repeat: no-repeat;
+	background-position: left top;
+
+color:rgba(37,61,102,1);
+transform:translateY(20px);}
+</style>
+
+ </div><!--
+--></div></div><!----><div class="col col1  "><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks">
+
+<div>
+	<a href="https://www.instagram.com/kdheks" onkeypress="this.onclick();" onclick="return showExternalSiteDialog(this);" target="_blank" class="fancyButton fancyButton51 "  aria-label="Instagram opens in new window">
+		<span>
+			<span><span class="text">Instagram</span></span>
+		</span>
+	</a>
+</div>
+		<style scoped="scoped">.fancyButton51.fancyButton:link,.fancyButton51.fancyButton:visited, .fancyButton51div.fancyButton{
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-right: 1em;
+	padding-left: 1em;
+	background-image: url('/ImageRepository/Document?documentID=41');
+	background-repeat: no-repeat;
+	background-position: center center;
+transition:.2s ease all;
+background-size:34px;}
+.fancyButton51.fancyButton:hover,.fancyButton51.fancyButton:focus,.fancyButton51.fancyButton:active,.fancyButton51.fancyButton.hover{
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.fancyButton51.fancyButton:link > span,.fancyButton51.fancyButton:visited > span, .fancyButton51div.fancyButton > span{
+}
+.fancyButton51.fancyButton:hover > span,.fancyButton51.fancyButton:focus > span,.fancyButton51.fancyButton:active > span,.fancyButton51.fancyButton.hover > span{
+}
+.fancyButton51.fancyButton .text{
+	text-decoration: none;
+	background-repeat: no-repeat;
+	background-position: left top;
+
+color:rgba(0,0,0,0);
+transition:.2s ease all;
+transform:translateY(0);}
+.fancyButton51.fancyButton:hover .text,.fancyButton51.fancyButton:focus .text,.fancyButton51.fancyButton:active .text,.fancyButton51.fancyButton.hover .text{
+	text-decoration: none;
+	background-repeat: no-repeat;
+	background-position: left top;
+
+color:rgba(37,61,102,1);
+transform:translateY(20px);}
+</style>
+
+ </div><!--
+--></div></div><!----><div class="col col1  last"><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks">
+
+<div>
+	<a href="https://www.linkedin.com/company/kansas-department-of-health-and-environment" onkeypress="this.onclick();" onclick="return showExternalSiteDialog(this);" target="_blank" class="fancyButton fancyButton52 "  aria-label="LinkedIn opens in new window">
+		<span>
+			<span><span class="text">LinkedIn</span></span>
+		</span>
+	</a>
+</div>
+		<style scoped="scoped">.fancyButton52.fancyButton:link,.fancyButton52.fancyButton:visited, .fancyButton52div.fancyButton{
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-right: 1em;
+	padding-left: 1em;
+	background-image: url('/ImageRepository/Document?documentID=44');
+	background-repeat: no-repeat;
+	background-position: center center;
+transition:.2s ease all;
+background-size:34px;}
+.fancyButton52.fancyButton:hover,.fancyButton52.fancyButton:focus,.fancyButton52.fancyButton:active,.fancyButton52.fancyButton.hover{
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.fancyButton52.fancyButton:link > span,.fancyButton52.fancyButton:visited > span, .fancyButton52div.fancyButton > span{
+}
+.fancyButton52.fancyButton:hover > span,.fancyButton52.fancyButton:focus > span,.fancyButton52.fancyButton:active > span,.fancyButton52.fancyButton.hover > span{
+}
+.fancyButton52.fancyButton .text{
+	text-decoration: none;
+	background-repeat: no-repeat;
+	background-position: left top;
+
+color:rgba(0,0,0,0);
+transition:.2s ease all;
+transform:translateY(0);}
+.fancyButton52.fancyButton:hover .text,.fancyButton52.fancyButton:focus .text,.fancyButton52.fancyButton:active .text,.fancyButton52.fancyButton.hover .text{
+	text-decoration: none;
+	background-repeat: no-repeat;
+	background-position: left top;
+
+color:rgba(37,61,102,1);
+transform:translateY(20px);}
+</style>
+
+ </div><!--
+--></div></div><!--			--></div>
+	</div>
+	<div class="widgetFooter">
+			</div>
+</div>
+
+</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!----><div class="outer col col3" style="" data-widgetcontainerid="45d97797-e187-4efa-87ff-8680f82dc8bd">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col3 first last id8ea0ea5b-cc48-49ff-9f58-e5c9a65d4db1" style="" data-widgetcontainerid="8ea0ea5b-cc48-49ff-9f58-e5c9a65d4db1">	
+<div data-widget-id="6b8aca84-f599-45b6-a641-75dd621a42c3" data-widget-controller-path="/Layout/WidgetSiteTools">
+
+		<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript">
+			$(document).ready(function () {
+				setWidgetServiceClicking($("#widgetSiteToolsHeader6b8aca84-f599-45b6-a641-75dd621a42c3"), true, function () {
+					var $widgetBody = $('#widgetSiteToolsBody6b8aca84-f599-45b6-a641-75dd621a42c3');
+
+					if ($widgetBody.is(':visible')) {
+						var menuItems = $('.widgetItem a', $widgetBody);
+
+						$(menuItems[0]).focus();
+
+						$('.widgetItem', $widgetBody).unbind("keydown").bind("keydown", function (e) {
+
+							if (e.which === 9) {
+								var index = menuItems.index(e.target);
+
+								if ((index === 0 && e.shiftKey) || (index === (menuItems.length - 1) && !e.shiftKey)) {
+									$("#widgetSiteToolsHeader6b8aca84-f599-45b6-a641-75dd621a42c3").trigger('click').focus();
+								}
+							}
+						});
+					} else {
+						$('.widgetItem', $widgetBody).unbind("keydown");
+					}
+				});
+			});
+		</script>
+
+	<section id="widgetSiteTools6b8aca84-f599-45b6-a641-75dd621a42c3" class="widget widgetSiteTools skin61 widgetOptionSet7 flyOutParent wide"  aria-label="Site Tools">
+				<header id="widgetSiteToolsHeader6b8aca84-f599-45b6-a641-75dd621a42c3" class="widgetHeader" tabindex="0" role="button" aria-haspopup="true">
+			<h3><img alt="Site Tools " class="imageHover" data-hover="/ImageRepository/Document?documentID=116" data-image="/ImageRepository/Document?documentID=115" src="/ImageRepository/Document?documentID=115" /></h3>
+		</header>
+	<div id="widgetSiteToolsBody6b8aca84-f599-45b6-a641-75dd621a42c3" class="widgetBody blackIcons flyOut top leftEdge widget widgetSiteTools skin61 cpGrid cpGrid1" style="display:none;">
+         <div class="row                   
+ wide">
+	<div class="col col1 first last">
+		<ol class="semanticList">
+					<li class="widgetItem"><a tabindex="0" role="button" aria-label="Site Tools Home" class="widgetSiteToolsHome siteToolsService" href="/">Home</a></li>
+					<li id="PrinterFriendly6b8aca84-f599-45b6-a641-75dd621a42c3" class="widgetItem"><a tabindex="0" aria-label="Site Tools Printer Friendly opens in new window" role="button" class="widgetSiteToolsPrinterFriendly siteToolsService" onkeypress="if (event.which == 13) { this.onclick(); }" onclick="Core.Layout.dynamicJavascript('printPreview();'); return false;" href="#PrinterFriendly6b8aca84-f599-45b6-a641-75dd621a42c3">Printer Friendly</a></li>
+					<li class="widgetItem"><a tabindex="0" role="button" aria-label="Site Tools Email Page" class="widgetSiteToolsEmailPage siteToolsService" href="/EmailPage">Email Page</a></li>
+					<li id="TranslatePage6b8aca84-f599-45b6-a641-75dd621a42c3" class="widgetItem"><a tabindex="0" aria-label="Site Tools Translate Page opens in new window" role="button" class="widgetSiteToolsTranslatePage siteToolsService" onkeypress="if (event.which == 13) { this.onclick(); }" onclick="Core.Layout.dynamicJavascript('window.open(\&#39;http://translate.google.com/translate?js=n&amp;sl=auto&amp;tl=es&amp;u=\&#39; + document.location.href, \&quot;TranslateWindow\&quot;);'); return false;" href="#TranslatePage6b8aca84-f599-45b6-a641-75dd621a42c3">Translate Page</a></li>
+		</ol>
+	</div>
+
+		 </div>
+	</div>
+
+	</section>
+
+
+
+</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!----><div class="outer col col2 last" style="" data-widgetcontainerid="a4fa3ba8-b505-4056-8c1d-22cdff5d08e6">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col2 first last idaba81de7-1bb4-4f62-97b6-af3638ce321e" style="" data-widgetcontainerid="aba81de7-1bb4-4f62-97b6-af3638ce321e">	
+<div data-widget-id="3d7bc177-c546-4138-b623-3a992c459991" data-widget-controller-path="/Layout/WidgetShare">
+
+		<script type="text/javascript">
+			$(document).ready(function () {
+				setWidgetServiceClicking($("#widgetShareHeader3d7bc177-c546-4138-b623-3a992c459991"), true, function () {
+					var $widgetBody = $('#widgetShareBody3d7bc177-c546-4138-b623-3a992c459991');
+
+					if ($widgetBody.is(':visible')) {
+						var menuItems = $('.widgetItem a', $widgetBody);
+
+						$(menuItems[0]).focus();
+
+						$('.widgetItem', $widgetBody).unbind("keydown").bind("keydown", function (e) {
+
+							if (e.which === 9) {
+								var index = menuItems.index(e.target);
+
+								if ((index === 0 && e.shiftKey) || (index === (menuItems.length - 1) && !e.shiftKey)) {
+									$("#widgetShareHeader3d7bc177-c546-4138-b623-3a992c459991").trigger('click').focus();
+								}
+							}
+			});
+					} else {
+						$('.widgetItem', $widgetBody).unbind("keydown");
+					}
+				});
+			});
+		</script>
+
+	<section id="widgetShare3d7bc177-c546-4138-b623-3a992c459991" class="widget widgetShare skin61 widgetOptionSet14 flyOutParent wide"  aria-label="Share">
+			<header id="widgetShareHeader3d7bc177-c546-4138-b623-3a992c459991" class="widgetHeader" tabindex="0" role="button" aria-haspopup="true">
+				<h3><img alt="Share " class="imageHover" data-hover="/ImageRepository/Document?documentID=114" data-image="/ImageRepository/Document?documentID=113" src="/ImageRepository/Document?documentID=113" /></h3>
+	</header>
+    <div id="widgetShareBody3d7bc177-c546-4138-b623-3a992c459991" class="widgetBody flyOut top leftEdge widget widgetShare skin61 cpGrid cpGrid1" style="display:none;">
+        <div class="row                   
+ wide">
+	<div class="col col1 first last">
+		<ol class="semanticList">
+                <li class="widgetItem" ><a tabindex="0" role="button" class="widgetShareFacebook shareService" onkeypress="if(event.which == 13) { this.onclick(); }" href="/Layout/WidgetShare/ShareLink/Facebook" target="_blank" aria-label="Share on Facebook opens in new window">Facebook</a></li>
+                <li class="widgetItem" ><a tabindex="0" role="button" class="widgetShareTwitter shareService" onkeypress="if(event.which == 13) { this.onclick(); }" href="/Layout/WidgetShare/ShareLink/Twitter" target="_blank" aria-label="Share on Twitter opens in new window">Twitter</a></li>
+                <li class="widgetItem" ><a tabindex="0" role="button" class="widgetSharePinterest shareService" onkeypress="if(event.which == 13) { this.onclick(); }" href="/Layout/WidgetShare/ShareLink/Pinterest" target="_blank" aria-label="Share on Pinterest opens in new window">Pinterest</a></li>
+                <li class="widgetItem" ><a tabindex="0" role="button" class="widgetShareDelicious shareService" onkeypress="if(event.which == 13) { this.onclick(); }" href="/Layout/WidgetShare/ShareLink/Delicious" target="_blank" aria-label="Share on Delicious opens in new window">Delicious</a></li>
+                <li class="widgetItem" ><a tabindex="0" role="button" class="widgetShareBlogger shareService" onkeypress="if(event.which == 13) { this.onclick(); }" href="/Layout/WidgetShare/ShareLink/Blogger" target="_blank" aria-label="Share on Blogger opens in new window">Blogger</a></li>
+                <li class="widgetItem" ><a tabindex="0" role="button" class="widgetShareLinkedIn shareService" onkeypress="if(event.which == 13) { this.onclick(); }" href="/Layout/WidgetShare/ShareLink/LinkedIn" target="_blank" aria-label="Share on LinkedIn opens in new window">LinkedIn</a></li>
+		</ol>
+	</div>
+
+        </div>
+    </div>
+
+	</section>
+
+</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!--		--></div> <!-- outer row -->
+
+
+	</div>
+</div></div>
+</div><!-- Quick Links --><div data-cpRole="structuralContainer" id="linksContainerTS">
+<div class="siteWrap"><div data-cpRole="contentContainer" id="linksTS">	<div id="ccc27e5b73-c7cd-4e33-8f08-a3eb74d45e7b" data-containerid="c27e5b73-c7cd-4e33-8f08-a3eb74d45e7b" class="pageContent cpGrid cpGrid24 showInMobile">
+				                
+
+
+
+	</div>
+</div></div>
+</div><!-- Powered By --><div data-cpRole="structuralContainer" id="poweredByContainerTS">
+<div class="siteWrap"><div data-cpRole="contentContainer" id="poweredByTS">	<div id="cc4af65a4a-1cb9-426a-8f22-850b7797b359" data-containerid="4af65a4a-1cb9-426a-8f22-850b7797b359" class="pageContent cpGrid cpGrid24 isLockedContainer showInMobile">
+				                
+
+		<div class="row outer wide"><!--
+--><div class="outer col col24 first last" style="" data-widgetcontainerid="db19e75d-63af-407b-8929-bcc827ae34ac">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col24 first last id805f460f-b9be-4c0a-ac49-f2f035eec09a" style="" data-widgetcontainerid="805f460f-b9be-4c0a-ac49-f2f035eec09a">	
+ 
+	<div data-widget-id='b687e44a-d0a7-481b-9feb-1bb68e2d6221' data-moduleName="customHtml" id='widgetCustomHtmlb687e44a-d0a7-481b-9feb-1bb68e2d6221' class="widget widgetCustomHtml skin58 narrow" >
+	<div class="widgetBody pageStyles" id="widgetBodyb687e44a-d0a7-481b-9feb-1bb68e2d6221">
+		<div id="customHtmlb687e44a-d0a7-481b-9feb-1bb68e2d6221"><div><style>
+  /* CP icon */
+  .cpBylineIconTS {
+    color: #fff!important;
+  }
+  /* CP Text */
+  .cpBylineTextTS,
+  .cpBylineTextTS a:link,
+  .cpBylineTextTS a:visited {
+    color: #fff!important;
+  }
+
+  .cpBylineTS {
+    text-align: center;
+  }
+  
+  .cpBylineIconTS {
+    fill: currentColor;
+    width: 39px;
+    height: 26px;
+    display: inline;
+    vertical-align: middle;
+  }
+</style>
+
+<div class="widgetItem cpBylineTS">
+  <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 100 100" class="cpBylineIconTS">
+    <path class="c" d="M73.4,23.2h-19v16.7h19c2.8,0,5,2.2,5,5c0,2.8-2.2,5-5,5h-19v28.4h5.5l11.3-11.7h2.2c11.9,0,21.6-9.7,21.6-21.6C95,33,85.3,23.2,73.4,23.2"></path>
+    <path class="p" d="M45.8,66.5H26.6C14.7,66.5,5,56.8,5,44.9C5,33,14.7,23.2,26.6,23.2h19.1v16.7H26.6c-2.8,0-5,2.2-5,5c0,2.8,2.2,5,5,5h19.1V66.5z"></path>
+  </svg>
+  <span class="cpBylineTextTS">Government Websites by <a href="https://connect.civicplus.com/referral" onkeypress="this.onclick();" onclick="return showExternalSiteDialog(this);">CivicPlus&reg;</a></span>
+</div>
+</div></div>
+	</div>
+	</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!--		--></div> <!-- outer row -->
+
+
+	</div>
+</div></div>
+</div>
+</div>
+
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	
+	
+
+
+
+	
+
+
+
+
+
+
+	<script src="/237693563.js" type="text/javascript"></script>
+	<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['setCustomUrl', location.href.toLowerCase()]); _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  $(window).load(function(){
+    var u="//analytics.civicplus.com/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '6447']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  });
+</script>
+<noscript><p><img src="//analytics.civicplus.com/piwik.php?idsite=6447" style="border:0;" alt="Piwik" /></p></noscript>
+<!-- End Piwik Code -->
+
+<!-- Fixed Nav Adjustment -->
+<script>
+  function getValueTS(elem, attr) {
+    var val = elem.css(attr);
+    if (val === undefined) return undefined;
+    var num = parseInt(val, 10);
+    if (num === NaN) return undefined;
+    return num;
+  }
+
+  function clampTS(number, min, max) {
+    return Math.min(Math.max(number, min), max);
+  }
+
+  function isPageEditingTS() {
+    return (
+      $("#doneEditing").length > 0 || // In live edit
+      typeof DesignCenter !== "undefined" // In theme manager
+    );
+  }
+
+  var bgColorRegexTS = new RegExp("rgba\((\d+), (\d+), (\d+), (\d*\.?\d*)\)");
+  function isTransparentTS(elem) {
+    var bg = elem.css('background-color');
+    if (typeof bg !== "string") return false;
+    if (bg === "transparent") return true;
+    if (!bg.startsWith('rgba(')) return false;
+    var matchState = bg.match(bgColorRegexTS);
+    if (!matchState || matchState.length !== 5) return false;
+    var alpha = parseFloat(matchState[4], 10);
+    if (!(alpha >= 0 && alpha < 1)) return false;
+    return true;
+  }
+
+  function iterateLeftpads(cb) {
+    var containersTS = $("[class^='siteWrap'],[class*=' siteWrap']");
+    for (var i = 0; i < containersTS.length; i++) {
+      var containerTS = containersTS[i];
+      // Skip the body container and anything with data-skip-leftpad
+      if (
+        containerTS.id !== "bodyContainerTS" &&
+        containerTS.getAttribute('data-skip-leftpad') === null
+      ) {
+        cb(containerTS);
+      }
+    }
+  }
+
+  function iterateRightpads(cb) {
+    var containersTS = $("[class^='siteWrap'],[class*=' siteWrap']");
+    for (var i = 0; i < containersTS.length; i++) {
+      var containerTS = containersTS[i];
+      // Skip the body container and anything with data-skip-rightpad
+      if (
+        containerTS.id !== "bodyContainerTS" &&
+        containerTS.getAttribute('data-skip-rightpad') === null
+      ) {
+        cb(containerTS);
+      }
+    }
+  }
+
+  var anchor = $("#divToolbars");
+  var bodyContainerTS = $("#bodyContainerTS");
+
+  // Outer banner padding (push banner down)
+  var outerSizingTS = $("#bannerContainerTS");
+  // Inner banner padding (push banner content down) - Transparent header OR on attaching headers
+  var innerSizingTS = $("#bannerSizingTS");
+
+  var forceUnfixClassTS = "forceUnfixTS";
+
+  var fixedTopTS = $(".fixedTopTS");
+  var fixedBottomTS = $(".fixedBottomTS");
+  var fixedLeftTS = $(".fixedLeftTS");
+  var fixedRightTS = $(".fixedRightTS");
+
+  var initialTopTS;
+  var topAttachTS;
+  if (fixedTopTS && fixedTopTS.length === 1) {
+    initialTopTS = getValueTS(fixedTopTS, 'top');
+    var attachment = fixedTopTS.attr('data-attach');
+    if (attachment) topAttachTS = $("#" + attachment);
+    if (!topAttachTS || topAttachTS.length !== 1) topAttachTS = undefined;
+  }
+
+  function resizeAdjustmentTS() {
+    var editing = isPageEditingTS();
+
+    // Fixed top script
+    (function () {
+      if (!fixedTopTS || fixedTopTS.length !== 1 || initialTopTS === undefined) return;
+
+      if (editing) {
+        fixedTopTS[0].classList.add(forceUnfixClassTS);
+      } else {
+        fixedTopTS[0].classList.remove(forceUnfixClassTS);
+      }
+
+      var topPosition = fixedTopTS.css('position');
+      if (topPosition === 'fixed') {
+        if (topAttachTS) {
+          scrollAdjustmentTS();
+        } else {
+          var anchorHeight = anchor.outerHeight() - 1;
+          fixedTopTS.css('top', anchorHeight + initialTopTS);
+        }
+      } else {
+        fixedTopTS.css('top', initialTopTS);
+      }
+
+      if (topPosition === 'fixed' || topPosition === 'absolute') {
+        // Bump the banner content down
+        if (isTransparentTS(fixedTopTS)) {
+          innerSizingTS.css('padding-top', initialTopTS + fixedTopTS.outerHeight());
+          outerSizingTS.css('padding-top', '');
+
+          try {
+            window.Pages.onResizeHandlersExecute();
+          } catch (e) { }
+        } else {
+          outerSizingTS.css('padding-top', fixedTopTS.outerHeight() - 1);
+          innerSizingTS.css('padding-top', '');
+        }
+      } else {
+        innerSizingTS.css('padding-top', '');
+        outerSizingTS.css('padding-top', '');
+      }
+    })();
+
+    // Fixed bottom script
+    (function () {
+      if (!fixedBottomTS || fixedBottomTS.length === 0) return;
+
+      // If the widget has gone narrow, force unfix
+      if (editing || fixedBottomTS.outerHeight() > 200) {
+        fixedBottomTS[0].classList.add(forceUnfixClassTS);
+      } else {
+        fixedBottomTS[0].classList.remove(forceUnfixClassTS);
+      }
+
+      if (fixedBottomTS.css('position') === 'fixed') {
+        bodyContainerTS.css('padding-bottom', fixedBottomTS.outerHeight());
+      } else {
+        bodyContainerTS.css('padding-bottom', '');
+      }
+    })();
+
+    // Fixed left script
+    (function () {
+      if (!fixedLeftTS || fixedLeftTS.length === 0) return;
+
+      if (editing) {
+        fixedLeftTS[0].classList.add(forceUnfixClassTS);
+      } else {
+        fixedLeftTS[0].classList.remove(forceUnfixClassTS);
+      }
+
+      if (fixedLeftTS.css('position') === 'fixed') {
+        var anchorHeight = anchor.outerHeight() - 1;
+        fixedLeftTS.css('top', anchorHeight);
+        var leftBoundingTS = fixedLeftTS[0].getBoundingClientRect();
+        iterateLeftpads(function (containerTS) {
+          var containerBoundingTS = containerTS.getBoundingClientRect();
+          if (containerBoundingTS.left <= leftBoundingTS.right) {
+            $(containerTS).css('padding-left', leftBoundingTS.width + 16);
+          } else {
+            $(containerTS).css('padding-left', '');
+          }
+        });
+      } else {
+        fixedLeftTS.css('top', '');
+        iterateLeftpads(function (containerTS) {
+          $(containerTS).css('padding-left', '');
+        });
+      }
+    })();
+
+    // Fixed right script
+    (function () {
+      if (!fixedRightTS || fixedRightTS.length === 0) return;
+
+      if (editing) {
+        fixedRightTS[0].classList.add(forceUnfixClassTS);
+      } else {
+        fixedRightTS[0].classList.remove(forceUnfixClassTS);
+      }
+
+      if (fixedRightTS.css('position') === 'fixed') {
+        var anchorHeight = anchor.outerHeight() - 1;
+        fixedRightTS.css('top', anchorHeight);
+        var rightBoundingTS = fixedRightTS[0].getBoundingClientRect();
+        iterateRightpads(function (containerTS) {
+          var containerBoundingTS = containerTS.getBoundingClientRect();
+          if (containerBoundingTS.right >= rightBoundingTS.left) {
+            $(containerTS).css('padding-right', rightBoundingTS.width + 16);
+          }
+        });
+      } else {
+        fixedRightTS.css('top', '');
+        iterateRightpads(function (containerTS) {
+          $(containerTS).css('padding-right', '');
+        });
+      }
+    })();
+  }
+
+  function scrollAdjustmentTS() {
+    if (!fixedTopTS || fixedTopTS.length !== 1 || !topAttachTS || topAttachTS.length !== 1) return;
+    var topPosition = fixedTopTS.css('position');
+    if (topPosition === 'fixed' || topPosition === 'absolute') {
+      var anchorBounding = anchor[0].getBoundingClientRect();
+      var attachBounding = topAttachTS[0].getBoundingClientRect();
+      var scrollTop = $(window).scrollTop();
+
+      fixedTopTS.css('top', Math.max(anchorBounding.bottom - 1, attachBounding.bottom));
+    } else {
+      fixedTopTS.css('top', initialTopTS);
+    }
+  }
+
+  $(window).load(function () {
+    setTimeout(function () {
+      try {
+        resizeAdjustmentTS();
+      } catch (e) {
+        console.error(e);
+      }
+    }, 350);
+
+    $(window).scroll(function () {
+      try {
+        scrollAdjustmentTS();
+      } catch (e) {
+        console.error(e);
+      }
+    });
+
+    var adjustTimeoutTS;
+    $(window).resize(function () {
+      clearTimeout(adjustTimeoutTS);
+      adjustTimeoutTS = setTimeout(function () {
+        try {
+          resizeAdjustmentTS();
+        } catch (e) {
+          console.error(e);
+        }
+      }, 350);
+    });
+
+    $.when(window.Pages.angularToolbarComplete).done(function () {
+      try {
+        resizeAdjustmentTS();
+      } catch (e) {
+        console.error(e);
+      }
+    });
+  });
+</script>
+<!-- End Fixed Nav Adjustment -->
+
+
+<!----------Google Translate (Mobile Friendly)--------->
+
+<style>
+  
+#google-translate-container {
+    float: right;
+    padding: 3px 5px 0px 0px;
+    position: fixed; 
+    top:40px;
+    right: 10px; 
+    z-index: 5;
+  }
+ @media(min-width:63em){
+  #google-translate-container {
+    top: 110px;
+  }
+  }
+ @media(max-width:35em){
+  #google-translate-container {
+   top:1px;
+  }
+  }  
+  .goog-te-combo, .goog-te-banner *, .goog-te-ftab *, .goog-te-menu *, .goog-te-menu2 *, .goog-te-balloon * {
+    font-family: arial;
+    font-size: 10pt;
+    background-image: url("https://www.gstatic.com/images/branding/product/2x/translate_24dp.png");
+    background-position: 5px 5px;
+    background-size: 18px;
+    background-repeat: no-repeat;
+    text-indent: 16px;
+    background-color: #fff;
+    color: #000 !important;
+  }
+  
+  .goog-logo-link {
+    display: none !important;
+  }
+  
+  .goog-te-gadget {
+    color: transparent !important;
+  }
+  
+  .goog-te-gadget .goog-te-combo {
+    margin: 2px 0 !important;
+    border-radius: 15px !important;
+    }
+  
+  .goog-te-combo{
+    border: 1px solid !important;
+    border-color: #bcc9d7 #96a3b1 #96a3b1 #bcc9d7 !important;
+    border-radius: 50px !important;
+    height:31px !important;
+    padding: 0 1px 0 .25rem !important;
+                width: 156px;
+  }
+
+  #launcher-wrapper {
+    bottom: 50px !important;
+  }
+
+</style>
+
+<div id="google-translate-container">
+  <div id="google_translate_element">
+  </div>
+</div>
+
+<script>
+
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({ pageLanguage: "en" }, "google_translate_element");
+    // begin accessibility compliance
+    $('img.goog-te-gadget-icon').attr('alt','Google Translate');
+    $('div#goog-gt-tt div.logo img').attr('alt','translate');
+    $('div#goog-gt-tt .original-text').css('text-align','left');
+    $('.goog-te-gadget-simple .goog-te-menu-value span').css('color','#000000');
+    $('.goog-te-combo').attr('aria-label','google translate languages');
+    $('svg.goog-te-spinner').attr('title','Google Translate Spinner');
+    $('.goog-te-gadget-simple .goog-te-menu-value span').css('color','#000000');
+  }
+
+  $(function() {
+    $.getScript("//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit");
+  });
+
+</script>
+
+<!--------------End Google Translate----------------->
+
+
+	<script type="text/javascript">
+		$(function () {
+			document.cookie = "responsiveGhost=0; path=/";
+		});
+		onOrLive($(window), function () {
+			$('body').addClass('doneLoading').removeClass('hideContent');
+
+			if ($('#404Content').length > 0)
+				$('div#bodyWrapper').css('padding', '0px');
+		}, 'load');
+	</script>
+
+	<noscript>
+		<style>
+			body.hideContent {
+				opacity: 1 !important;
+			}
+		</style>
+	</noscript>
+
+		
+<div style="display: none;">
+	<svg xmlns="http://www.w3.org/2000/svg" style="display:none;">
+
+		<symbol id="iconArrow--left" viewbox="0 0 25 25">
+			<title>Arrow Left</title>
+			<polygon style="fill:currentcolor" points="18.044,25 19.498,23.545 8.409,12.454 19.408,1.455 17.954,0 5.502,12.452"></polygon>
+		</symbol>
+
+		<symbol id="iconArrow--right" viewbox="0 0 25 25">
+			<title>Arrow Right</title>
+			<polygon style="fill:currentcolor" points="6.957,0 5.502,1.455 16.591,12.546 5.592,23.545 7.047,25 19.498,12.548"></polygon>
+		</symbol>
+
+	</svg>
+</div>
+	<script type="text/javascript">loadCSS('//fonts.googleapis.com/css?family=Montserrat:500,700,800,regular|Nunito+Sans:300,300italic,600,600italic,700,700italic,800,800italic,900,900italic,italic,regular|');</script>
+	
+
+	<div class="hidden activeWidgetSkinComponentsOnPageJson">[]</div>
+		<div style="display: none;">
+			<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+				<symbol id="iconSlideshowArrowLeft" viewBox="0 0 22.68 40">
+					<title>Slideshow Left Arrow</title>
+					<g>
+						<path style="fill:currentcolor;" d="M20,40a2.67,2.67,0,0,1-1.9-.79L.79,21.9a2.68,2.68,0,0,1,0-3.79L18.1.79a2.68,2.68,0,1,1,3.79,3.79L6.47,20,21.89,35.42A2.68,2.68,0,0,1,20,40Z"></path>
+					</g>
+				</symbol>
+				<symbol id="iconSlideshowArrowRight" viewBox="0 0 22.68 40">
+					<title>Slideshow Right Arrow</title>
+					<g>
+						<path style="fill:currentcolor;" d="M2.68,0a2.67,2.67,0,0,1,1.9.79L21.89,18.1a2.68,2.68,0,0,1,0,3.79L4.58,39.21A2.68,2.68,0,0,1,.79,35.42L16.21,20,.79,4.58A2.68,2.68,0,0,1,2.68,0Z"></path>
+					</g>
+				</symbol>
+			</svg>
+		</div>
+	
+	
+
+	</body>
+</html>

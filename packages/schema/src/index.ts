@@ -89,6 +89,12 @@ export interface Link {
 	url: string
 	text: string
 	description?: string
+	/**
+	 * Scraping hins for the current link (only applies to info links ATM).
+	 * When false, scraping is disabled for this link.
+	 * When a string, the URL is overridden by this URL
+	 */
+	scrape?: boolean | string
 }
 
 export interface RolloutPhase {

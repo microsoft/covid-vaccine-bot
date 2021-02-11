@@ -1,0 +1,607 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Coronavirus Vaccine Information</title>
+    <meta name="description" content="The South Dakota Department of Health (SD-DOH) vaccine distribution and resources" />
+    <meta name="keywords" content="South Dakota Department of Health, Coronavirus, COVID-19, Novel Coronavirus, Respiratory, Vaccine, Immunization, Vaccination" />
+
+    <link rel="stylesheet" type="text/css" href="/stylesheets/user.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/screen.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/print.css" media="print">
+
+
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <meta name="robots" content="index, follow" />
+    <meta name="revisit-after" content="30 days" />
+
+	    
+    <meta name="viewport" content="width=1000, initial-scale=1, minimum-scale=0.45"/>
+    
+   	<link rel="stylesheet" type="text/css" href="/includes/css/user.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="/includes/css/screen.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="/includes/css/form.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="/includes/css/search.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="/includes/css/print.css" media="print">
+    
+	
+	<link rel="shortcut icon" href="/images/favicon.ico">
+	<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+
+	
+    <!--[if lt IE 8]>
+    <link href="/includes/css/screen_ie7.css" rel="stylesheet" type="text/css" media="screen"/>
+    <![endif]-->
+
+	
+    <script src="https://cdn.sd.gov/lib/jquery-test/jquery.min.js"></script>
+    
+    
+	<script type="text/javascript" src="/includes/js/jquery/jquery.easing.1.3.js"></script>
+	<script type="text/javascript">
+	    $(function () {
+
+	        if ($(window).width() > 830) {
+	            $("#middle #main").show();
+	        }
+
+	        $(window).resize(function () {
+	            if ($(window).width() > 813) {
+	                $('#main li').bind('mouseenter', function () {
+	                    $(this).find('.dropdown_box').stop(true, true).slideDown(500, 'easeOutBounce');
+	                }).bind('mouseleave', function () {
+	                    $(this).find('.dropdown_box').stop(true, true).hide();
+	                });
+	                $("#middle #main").show();
+	            }
+	            else {
+	                $('#main li').bind('mouseenter', function () {
+	                    $(this).find('.dropdown_box').stop(true, true).hide();
+	                }).bind('mouseleave', function () {
+	                    $(this).find('.dropdown_box').stop(true, true).hide();
+	                });
+	                $("#middle #main").hide();
+	            }
+
+	        });
+	        //This will fire each time the window is resized:
+	        if ($(window).width() > 813) {
+
+	            $('#main li').bind('mouseenter', function () {
+	                $(this).find('.dropdown_box').stop(true, true).slideDown(500, 'easeOutBounce');
+	            }).bind('mouseleave', function () {
+	                $(this).find('.dropdown_box').stop(true, true).hide();
+	            });
+	            $("#middle #main").show();
+	        }
+	        else {
+	            $('#main li').bind('mouseenter', function () {
+	                $(this).find('.dropdown_box').stop(true, true).hide();
+	            }).bind('mouseleave', function () {
+	                $(this).find('.dropdown_box').stop(true, true).hide();
+	            });
+	            $("#middle #main").hide();
+	        }
+
+
+
+
+	    });
+    </script>           
+	
+
+	
+	<script src="/includes/js/jquery/jquery-treeview/jquery.treeview.js"></script>
+    
+	
+	
+	<script type="text/javascript" src="/includes/js/jquery/jquery.li-scroller.1.0.js"></script>
+	<script type="text/javascript" src="/includes/js/jquery/jquery.cookie.js"></script>
+ 
+	<script type="text/javascript">
+		$(function(){
+			$("#alerts ul").liScroll();		
+		});
+
+		$(document).ready(function(){
+			var n = $("#alerts ul li").length;
+			
+			if(n<2){
+				$('#alerts_section').hide();
+			}
+			
+			if($.cookie('alert_status') == "off"){
+				$('#alerts_section').hide();
+			}
+			
+			$('#close_btn').click(function(){
+				$.cookie('alert_status', 'off', {expires: 1}); //create cookie and set value, expires 1 day
+				$('#alerts_section').hide();
+			});
+		});
+	</script>
+    <script>
+    $(document).ready(function () {
+        $(".stateDOTsdDOTus").click(function () {
+            var domain = $(this).attr("class");
+            domain = domain.replace(/DOT/, '.');
+            domain = domain.replace(/DOT/, '.');
+            var name = $(this).children("span").attr("class");
+
+            var email = name + "@" + domain;
+            location.href = "mailto:" + email;
+        });
+    });
+</script>
+
+<script>
+       $(document).ready(function () {
+              $(".stateDOTsdDOTusSUBJECT").click(function () {
+                     var domain = $(this).attr("class");
+                     domain = domain.replace(/DOT/, '.');
+                     domain = domain.replace(/DOT/, '.');
+                     domain = domain.replace(/SUBJECT/, '?subject=' + $(this).attr("name"));
+                     var name = $(this).children("span").attr("class");
+
+                     var email = name + "@" + domain;
+                     location.href = "mailto:" + email;
+              });
+       });
+</script>
+
+
+    <script language="javascript">
+        if (top.frames.length != 0)
+            top.location = self.document.location;
+    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <style type="text/css">
+        <!--
+        p.MsoNormal {
+            margin: 0in;
+            margin-bottom: .0001pt;
+            font-size: 11.0pt;
+            font-family: "Calibri","sans-serif";
+        }
+
+        table.MsoNormalTable {
+            font-size: 10.0pt;
+            font-family: "Times New Roman","serif";
+        }
+        -->
+    </style>
+    <style type="text/css">
+        <!--
+        table.MsoTableGrid {
+            border: solid windowtext 1.0pt;
+            font-size: 11.0pt;
+            font-family: "Calibri",sans-serif;
+        }
+        -->
+    </style>
+    <style type="text/css">
+        <!--
+        p.TableParagraph {
+            margin: 0in;
+            margin-bottom: .0001pt;
+            text-autospace: none;
+            font-size: 11.0pt;
+            font-family: "Segoe UI",sans-serif;
+        }
+        -->
+    </style>
+    <style type="text/css">
+        <!--
+        li.MsoListParagraphCxSpFirst {
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: .0001pt;
+            margin-left: .5in;
+            line-height: 105%;
+            font-size: 11.0pt;
+            font-family: "Calibri",sans-serif;
+        }
+
+        li.MsoListParagraphCxSpMiddle {
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: .0001pt;
+            margin-left: .5in;
+            line-height: 105%;
+            font-size: 11.0pt;
+            font-family: "Calibri",sans-serif;
+        }
+
+        li.MsoListParagraphCxSpLast {
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 8.0pt;
+            margin-left: .5in;
+            line-height: 105%;
+            font-size: 11.0pt;
+            font-family: "Calibri",sans-serif;
+        }
+        -->
+    </style>
+    <style type="text/css">
+        <!--
+        li.MsoListParagraph {
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: .0001pt;
+            margin-left: .5in;
+            font-size: 11.0pt;
+            font-family: "Calibri",sans-serif;
+        }
+        -->
+    </style>
+
+    <style>
+        .tableWrapper {
+            display: flex;
+            flex-direction: row;
+        }
+        .tableWrapper > div {
+            width: 50%;
+        }
+        @media screen and (max-width: 767px) {
+            .tableWrapper {
+                flex-direction: column;
+            }
+            .tableWrapper > div {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<p>&nbsp;</p>
+<style type="text/css">
+.container.clearfix #upper font {
+	font-family: Arial, Helvetica, sans-serif;
+}
+</style>
+<div id="alerts_section">
+	<a id="close_btn">CLOSE<div id="alert_x"></div></a>
+    
+	<div class="tkr_container">
+		<div id="alert_box">
+			<div id="alerts">
+                                    
+                                    		
+                                    
+            </div>
+        </div>
+    </div>
+</div>
+            
+<header>
+    <div class="container clearfix">
+        <div id="logo"><a href="/" title="SD DOH Home"><img src="/images/layout/logo.png" alt="South Dakota Department of Health logo" /></a></div>
+        <div id="upper" class="clearfix">
+        <!--<a href="/social/" title="Social media links" class="button">Social Media links</a>-->
+		WEBSITE OF THE STATE OF SOUTH DAKOTA DEPARTMENT OF HEALTH<br />
+		<strong><font face="Times New Roman, Times, serif">Kim Malsam-Rysdon, Secretary of Health
+            </font></strong><a href="https://www.youtube.com/user/GoodandHealthySD/videos" target="_blank">
+          <div class="YTLogo"></div></a>
+        <a href="https://twitter.com/SDDOH" target="_blank">
+        <div class="twLogo"></div></a>
+        <a href="https://www.facebook.com/SDHealthDepartment" target="_blank"><div class="fbLogo"></div></a>
+        </div>
+		
+        <div id="lower" class="clearfix">  
+            <div id="search">
+                <form id="cse-search-box" action="https://google.com/cse" target="search">
+                  <input type="hidden" name="cx" value="012382400048732927914:v2d9d_dbrdw" />
+                  <input type="hidden" name="ie" value="UTF-8" />
+                  <input type="text" name="q" id="search_text" style="border:none;" /><input type="submit" name="sa" id="search_arrow" value="" />                  
+                </form>
+                  <script type="text/javascript" src="/includes/js/brand.js"></script>            
+            </div>
+            
+            
+                
+            <a href="/contact/" title="Contact us" class="button" id="head_contact">Contact us</a>
+            <a href="https://listserv.sd.gov/scripts/wa.exe?SUBED1=SDEPI&A=1" title="Subscribe to Listserv" class="button" target="_blank" id="subscribe">Subscribe to Listserv</a>
+        </div>
+        <div id="menu"><img src="/images/menu.png" alt="menu" /><br />MENU</div>
+    </div>
+</header>
+        
+<div class="force-clear"></div>
+
+    <div id="middle" class="clearfix">
+        <div class="container clearfix">
+            <nav id="main" class="clearfix">
+                	<div class="centerer">
+                    
+					
+                            
+                            
+					<ul>
+                    
+                    	<li><a href="/a-z-topics/" title="A-Z Topics" class="">A-Z Topics</a>
+						  
+                            
+                           
+                        </li>
+                        
+						<li id="coronavirusNavItem"><a href="/news/Coronavirus.aspx" title="Coronavirus" class="">COVID-19</a>
+							
+						</li>
+
+                        <li><a href="/news/" title="News" class="">News</a>
+						  <br /><div class='dropdown_box'><ul id='subtree' class='treeview'><li><a href='/news/recent-releases.aspx' title='Recent Releases'>Recent Releases</a></li></ul></div>
+                        </li>
+                        
+                        
+                        <li><a href="/local-offices/" title="Local Offices" class="">Local Offices</a>
+						  <br /><div class='dropdown_box'><ul id='subtree' class='treeview'><li><a href='/local-offices/child-family-services/' title='Child & Family Services, WIC'>Child & Family Services, WIC</a></li><li><a href='/local-offices/family-planning/' title='Family Planning'>Family Planning</a></li><li><a href='/local-offices/hiv-std-testing/' title='HIV &amp; STD Testing'>HIV &amp; STD Testing</a></li><li><a href='/local-offices/vaccine-providers/' title='Vaccine Providers'>Vaccine Providers</a></li></ul></div>
+                        </li>
+                          
+                        
+                        <li><a href="/boards/" title="Licensing Boards" class="">Licensing Boards</a>
+						  <br /><div class='dropdown_box'><ul id='subtree' class='treeview'><li><a href='/boards/chiropractic/' title='South Dakota Board of Chiropractic Examiners'>South Dakota Board of Chiropractic Examiners</a></li><li><a href='/boards/dentistry/' title='South Dakota Board of Dentistry'>South Dakota Board of Dentistry</a></li><li><a href='/boards/funeral/' title='South Dakota Board of Funeral Service'>South Dakota Board of Funeral Service</a></li><li><a href='/boards/audiology/' title='South Dakota Board of Hearing Aid Dispensers and Audiologists'>South Dakota Board of Hearing Aid Dispensers and Audiologists</a></li><li><a href='/boards/massage/' title='South Dakota Board of Massage Therapy'>South Dakota Board of Massage Therapy</a></li><li><a href='/boards/medicine/' title='South Dakota Board of Medical and Osteopathic Examiners'>South Dakota Board of Medical and Osteopathic Examiners</a></li><li><a href='/boards/midwives/' title='South Dakota Board of Certified Professional Midwives'>South Dakota Board of Certified Professional Midwives</a></li><li><a href='/boards/nursing/' title='South Dakota Board of Nursing'>South Dakota Board of Nursing</a></li><li><a href='/boards/nursingfacility/' title='South Dakota Board of Nursing Facility Administrators '>South Dakota Board of Nursing Facility Administrators </a></li><li><a href='/boards/optometry/' title='South Dakota Board of Examiners in Optometry'>South Dakota Board of Examiners in Optometry</a></li><li><a href='/boards/pharmacy/' title='South Dakota Board of Pharmacy'>South Dakota Board of Pharmacy</a></li><li><a href='/boards/podiatry/' title='South Dakota Board of Podiatry Examiners'>South Dakota Board of Podiatry Examiners</a></li><li><a href='/boards/speechpath/' title='South Dakota Board of Examiners for Speech-Language Pathology '>South Dakota Board of Examiners for Speech-Language Pathology </a></li></ul></div>
+                        </li>
+                        
+                        <li><a href="/calendar/" title="Event Calendar" class="">Event Calendar</a>
+							  
+                        </li>
+                        
+                        <li><a href="/resources/" title="Resources and Publications" class="">Resources &amp; Publications</a>
+						  <br /><div class='dropdown_box'><ul id='subtree' class='treeview'><li><a href='/resources/publications/' title='Publications'>Publications</a></li><li><a href='/resources/statute-rules/' title='Statute &amp; Rules'>Statute &amp; Rules</a></li><li><a href='/resources/links/' title='Links'>Links</a></li><li><a href='/resources/bulletin.aspx' title='SD Public Health Bulletin'>SD Public Health Bulletin</a></li></ul></div>
+                        </li>
+                        
+                        <li><a href="/faqs/" title="FAQs" class="">FAQs</a>
+						  
+                        </li>
+                        
+                       
+                       
+                  	</ul>
+                   	</div>
+				</nav>
+            	<div class="force-clear"></div>
+
+
+<nav id="breadcrumbs" class="clearfix">
+    <div class="centerer">
+    <a href="/" title="Home">Home</a>
+    
+<img src='/images/layout/breadcrumb.png' alt='separator' /><a href='/COVID' title='COVID-19'>COVID-19</a><img src='/images/layout/breadcrumb.png' alt='separator' /><a href='/COVID/Vaccine' title='Vaccination'>Vaccination</a>
+    </div>
+</nav>
+
+<div class="force-clear"></div>
+
+
+                    <div id="covidBanner">
+                        <a href="../COVID/default.aspx">COVID-19 Updates and Information</a>
+                    </div>
+<div class="force-clear"></div>
+            <div id="content" class="clearfix COVID">
+                	<div id="sidebar">
+    	<h2><a href='/COVID/' title='COVID-19'>COVID-19</a></h2><div id='treecontrol'><a title='Collapse the entire tree below' href='#'> Collapse All</a> | <a title='Expand the entire tree below' href='#'> Expand All</a></div><ul id='subtree' class='treeview'><li class='COVID sub'><a href='/COVID/Dashboard.aspx?' title='Dashboard' >Dashboard</a><li class='COVID sub'><a href='/COVID/YourHealth.aspx?' title='Your Health' >Your Health</a><li class='COVID sub'><a href='/COVID/Community.aspx?' title='Community, Work & School' >Community, Work & School</a><li class='COVID sub'><a href='/COVID/Vaccine/' title='Vaccination' >Vaccination</a><ul><li ><a href='/COVID/Vaccine/Providers.aspx' title='Healthcare Providers' >Healthcare Providers</a></li><li ><a href='/COVID/Vaccine/Public.aspx' title='Public' >Public</a></li></ul></li><li class='COVID sub'><a href='/COVID/Providers.aspx?' title='Healthcare Providers' >Healthcare Providers</a></ul>    
+    </div>   
+                <div id="content_block">
+                    <h1 style="text-align: center"><a href="../default.aspx"><img src="../../images/COVID_Header_DOH.jpg" alt="South Dakota Department of Health Logo and covid.sd.gov button." id="top" /></a></h1>
+                    <h1 style="text-align: center">COVID-19 Vaccine Information</h1>
+                  <p style="text-align: center"><a href="Providers.aspx"><img src="../../images/COVID/HealthCareButton.jpg" alt="Healthcare Provider Vaccine Resources Button
+"/></a> <a href="Public.aspx"><img src="../../images/COVID/PublicButton.jpg" alt="Public Vaccination Resources Button
+"/></a><a href="https://covid.sd.gov/vaccine/default.aspx"><img src="../../images/WhenVax_Button_500px.jpg" alt="When can I get vaccinated? Click here to find out which priority group you're in."/></a><br />
+                  <a href="VaccineProviders.aspx"><img src="../../images/VaxProvidersCounty.jpg" alt="Vaccine Providers by County"/> </a> <a href="../../documents/COVID19/Vaccine/COVIDVaccineAvailability_Distribution.pdf"><img src="../../images/Infographic.jpg" alt="Vaccine Priority Groups Infographic and Timeline"/></a><a href="https://docs.google.com/forms/d/e/1FAIpQLSd4mM6ZvwXie9WSi0BL9V-F8gWLFR-JfHLVfwbNzT6nalphQQ/viewform" target="_blank"><img src="../../images/Volunteer_Button_500px.jpg" alt="Volunteer! Sign up to help with COVID-19 vaccination in your area. Button to sign-up form."/></a></p>
+                    <hr />
+                    <p style="text-align: center"><a href="../../documents/COVID19/SD_COVID-19VaccinationPlan.pdf">South Dakota COVID-19 Vaccination Plan</a><strong class="err"><br />
+                    </strong> <a href="../../documents/COVID19/Vaccine/covid_vaccine_FAQ.pdf">COVID-19 Vaccination  FAQs<br />
+                    </a><a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/vaccine-benefits.html" target="_blank">Benefits of Getting a COVID-19 Vaccine</a> (CDC)</p>
+                    <p style="text-align: center"><a href="https://www.defense.gov/Explore/Spotlight/Coronavirus/Operation-Warp-Speed/" target="_blank">Click here</a> to find out more about Operation Warp Speed from the U.S. Department of Defense.</p>
+                    <blockquote>
+                      <blockquote>&nbsp;</blockquote>
+</blockquote>
+                </div>
+                <div class="force-clear">&nbsp;</div>
+            </div>
+            <nav id="quicklinks-footer">
+    <hr class="top" />
+    
+    <div id="quicklinks-lnk" class="centerer clearfix">
+        <a href="/records/">
+            <img src="/images/layout/sections/records-small.png" alt="Certificates and Records" /><br />
+            Certificates <br />
+            &amp; Records
+        </a>
+        
+        <a href="/statistics/">
+            <img src="/images/layout/sections/statistics-small.png" alt="Health Data and Statistics" /><br />
+            Health Data <br />
+            &amp; Statistics
+        </a>
+        
+        <a href="/diseases/">
+            <img src="/images/layout/sections/diseases-small.png" alt="Diseases and Conditions" /><br />
+            Diseases &amp; <br />
+            Conditions
+        </a>
+        
+        <a href="/family/">
+            <img src="/images/layout/sections/family-small.png" alt="Family and Child Development" /><br />
+            Family &amp; Child <br />
+            Development
+        </a>
+        
+        <a href="/prevention/">
+            <img src="/images/layout/sections/prevention-small.png" alt="Prevention and Healthy Living" /><br />
+            Prevention &amp; <br />
+            Healthy Living
+        </a>
+        
+        <a href="/food/">
+            <img src="/images/layout/sections/food-small.png" alt="Food and Lodging Safety" /><br />
+            Food &amp; <br />
+            Lodging Safety
+        </a>
+        
+        <a href="/providers/">
+            <img src="/images/layout/sections/providers-small.png" alt="Healthcare Providers" /><br />
+            Healthcare <br />
+            Providers
+        </a>
+    
+        <a href="/services/">
+            <img src="/images/layout/sections/services-small.png" alt="Services and Programs" /><br />
+            Services &amp;<br />
+            Programs
+        </a>
+        
+        <a href="/a-z-topics/" class="quicklast">
+            <img src="/images/layout/sections/a-z-topics-small.png" alt="A-Z Topics" /><br />
+            A-Z <br />
+            Topics
+        </a>
+    </div>
+    
+    <hr />
+    <hr />
+</nav>
+                
+
+            <div class="force-clear">&nbsp;</div>
+        </div>
+        <!--#container-->
+    </div>
+    <!--#middle-->
+    	<footer>
+        <div class="container">
+            <div id="left"><a href="http://sd.gov/" target="_blank" title="State of SD Home"><img src="/images/layout/sdgov.png" alt="State of South Dakota Home" title="State of South Dakota Home" /></a></div>
+            <div id="center">
+            	<p><a href="/" title="Dept of Healh Home">DOH Home</a>&nbsp;    <a href="http://intranet.doh.sd.gov/">DOH Intranet&nbsp;</a>&nbsp;&nbsp;<a href="http://sd.gov/accpolicy.aspx" target="_blank" title="Accessibility Policy" target="_blank">Accessibility Policy</a>&nbsp;&nbsp;&nbsp;<a href="http://sd.gov/privacy.aspx" target="_blank" title="Privacy Policy" target="_blank">Privacy Policy</a>&nbsp;&nbsp;&nbsp;<a href="http://sd.gov/disclaim.aspx">Disclaimer</a></a>&nbsp;&nbsp;&nbsp;<a href="/documents/HIPAANotice.pdf" title="DOH HIPAA" target="_blank">DOH HIPAA</a>	            </p>
+            	<div id="disclaimer">
+    		        &copy;2019 South Dakota Department of Health. All Rights Reserved.&nbsp;&nbsp;|&nbsp;&nbsp;<a href="mailto:DOH.info@state.sd.us">DOH.info@state.sd.us</a><br />
+            		600 East Capitol Avenue&nbsp;&nbsp;|&nbsp;&nbsp;Pierre, SD 57501-2536&nbsp;&nbsp;|&nbsp;&nbsp;605-773-3361&nbsp;&nbsp;|&nbsp;&nbsp;1-800-738-2301 (In State)<br />
+		            <div id="imd"></div>
+        	    </div>
+            </div>
+            <div id="right"><a href="/contact/" title="Contact DOH" class="button">Contact DOH</a></div>
+        </div>
+	</footer>
+
+	
+	<script src="/includes/js/jquery/slides.jquery.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('#slides').slides({				
+				preload: true, 
+				generateNextPrev: false, 
+				pagination: true, 
+				generatePagination: true, 
+				paginationClass: 'pagination', 
+				fadeSpeed: 1000, 
+				effect: 'slide', 
+				crossfade: true, 
+				play: 5000, 
+				pause: 2500, 
+				hoverPause: true, 
+				autoHeight: false, 
+				bigTarget: false 
+			});
+		});
+	</script>
+
+	
+	<script type="text/javascript">
+		$(function(){
+			$('#program_slides').slides({
+				preload: true, 
+				container: 'program_slides_container', 
+				generateNextPrev: true, 
+				pagination: false, 
+				generatePagination: false, 
+				effect: 'slide', 
+				play: 5000, 
+				pause: 2500, 
+				hoverPause: true, 
+				bigTarget: false 
+				
+				
+			});
+		});
+	</script>
+
+
+
+<script>// This 
+    var dropdown = $(".dropdown-btn");
+        dropdown.click( function() {
+            $(".active").removeClass("active")
+            $(this).toggleClass("active")
+            $(".dropdown-container").hide()
+            var dropdownContent = $(this).next();
+            if (dropdownContent.is(":visible")){
+                dropdownContent.hide()
+            }
+            else dropdownContent.show()
+        });
+</script>
+
+
+
+    
+	<script type="text/javascript">
+	    $(document).ready(function () {
+
+	        if ($(window).width() > 830) {
+	            $("#sidebar").treeview({
+	                animated: "fast",
+	                collapsed: true,
+	                control: "#treecontrol",
+	                persist: "location"
+	            });
+	        }
+	        else {
+	            $("#sidebar").treeview({
+
+	            });
+	        }
+
+	        $("#menu").click(function () {
+	            $("#middle #main").toggle();
+
+	        });
+
+	        $("#sidebar").click(function () {
+
+	            $("#sidebar #subtree").toggle();
+	            $("#sidebar h2").toggleClass("select");
+
+            });
+
+	        $("#sidebar li, #subtree, .treeview").click(function (e) {
+	           //e.stopPropagation()
+	        });
+
+            
+
+	    });
+	</script>
+    
+    
+    
+    <script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	
+	  ga('create', 'UA-41724005-1', 'auto');
+	  ga('send', 'pageview');	
+	</script>
+</body>
+</html>

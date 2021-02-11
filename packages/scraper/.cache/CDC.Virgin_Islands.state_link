@@ -1,0 +1,786 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# " class="h-100">
+  <head>
+    <meta charset="utf-8" />
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-149281952-2"></script>
+<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments)};gtag("js", new Date());gtag("config", "UA-149281952-2", {"groups":"default","anonymize_ip":true});</script>
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="/themes/contrib/gvidoh/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="canonical" href="https://www.covid19usvi.com/node/1" />
+<link rel="shortlink" href="https://www.covid19usvi.com/node/1" />
+<link rel="revision" href="https://www.covid19usvi.com/node/1" />
+
+    <title>Home | Virgin Islands Department of Health</title>
+    <link rel="stylesheet" media="all" href="/core/assets/vendor/normalize-css/normalize.css?qod9lx" />
+<link rel="stylesheet" media="all" href="/core/misc/normalize-fixes.css?qod9lx" />
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/@frontkom/section-row@0.1.0/build/style.css" />
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/@frontkom/g-hero-section@0.7.5/build/style.css" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/ajax-progress.module.css?qod9lx" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/align.module.css?qod9lx" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/autocomplete-loading.module.css?qod9lx" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/fieldgroup.module.css?qod9lx" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/container-inline.module.css?qod9lx" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/clearfix.module.css?qod9lx" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/details.module.css?qod9lx" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/hidden.module.css?qod9lx" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/item-list.module.css?qod9lx" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/js.module.css?qod9lx" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/nowrap.module.css?qod9lx" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/position-container.module.css?qod9lx" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/progress.module.css?qod9lx" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/reset-appearance.module.css?qod9lx" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/resize.module.css?qod9lx" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/sticky-header.module.css?qod9lx" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/system-status-counter.css?qod9lx" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/system-status-report-counters.css?qod9lx" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/system-status-report-general-info.css?qod9lx" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/tabledrag.module.css?qod9lx" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/tablesort.module.css?qod9lx" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/tree-child.module.css?qod9lx" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/views/views.module.css?qod9lx" />
+<link rel="stylesheet" media="all" href="/core/modules/layout_discovery/layouts/onecol/onecol.css?qod9lx" />
+<link rel="stylesheet" media="all" href="/modules/contrib/gutenberg/vendor/gutenberg/block-library/style.css?qod9lx" />
+<link rel="stylesheet" media="all" href="/modules/contrib/gutenberg/vendor/gutenberg/block-library/theme.css?qod9lx" />
+<link rel="stylesheet" media="all" href="/modules/contrib/gutenberg/css/block-library.css?qod9lx" />
+<link rel="stylesheet" media="all" href="/modules/contrib/gutenberg/modules/example_block/css/style.css?qod9lx" />
+<link rel="stylesheet" media="all" href="/modules/contrib/google_translator/css/element.css?qod9lx" />
+<link rel="stylesheet" media="all" href="/modules/contrib/google_translator/css/disclaimer.css?qod9lx" />
+<link rel="stylesheet" media="all" href="/core/themes/classy/css/components/action-links.css?qod9lx" />
+<link rel="stylesheet" media="all" href="/core/themes/classy/css/components/breadcrumb.css?qod9lx" />
+<link rel="stylesheet" media="all" href="/core/themes/classy/css/components/button.css?qod9lx" />
+<link rel="stylesheet" media="all" href="/core/themes/classy/css/components/collapse-processed.css?qod9lx" />
+<link rel="stylesheet" media="all" href="/core/themes/classy/css/components/container-inline.css?qod9lx" />
+<link rel="stylesheet" media="all" href="/core/themes/classy/css/components/details.css?qod9lx" />
+<link rel="stylesheet" media="all" href="/core/themes/classy/css/components/exposed-filters.css?qod9lx" />
+<link rel="stylesheet" media="all" href="/core/themes/classy/css/components/field.css?qod9lx" />
+<link rel="stylesheet" media="all" href="/core/themes/classy/css/components/form.css?qod9lx" />
+<link rel="stylesheet" media="all" href="/core/themes/classy/css/components/icons.css?qod9lx" />
+<link rel="stylesheet" media="all" href="/core/themes/classy/css/components/inline-form.css?qod9lx" />
+<link rel="stylesheet" media="all" href="/core/themes/classy/css/components/item-list.css?qod9lx" />
+<link rel="stylesheet" media="all" href="/core/themes/classy/css/components/link.css?qod9lx" />
+<link rel="stylesheet" media="all" href="/core/themes/classy/css/components/links.css?qod9lx" />
+<link rel="stylesheet" media="all" href="/core/themes/classy/css/components/menu.css?qod9lx" />
+<link rel="stylesheet" media="all" href="/core/themes/classy/css/components/more-link.css?qod9lx" />
+<link rel="stylesheet" media="all" href="/core/themes/classy/css/components/pager.css?qod9lx" />
+<link rel="stylesheet" media="all" href="/core/themes/classy/css/components/tabledrag.css?qod9lx" />
+<link rel="stylesheet" media="all" href="/core/themes/classy/css/components/tableselect.css?qod9lx" />
+<link rel="stylesheet" media="all" href="/core/themes/classy/css/components/tablesort.css?qod9lx" />
+<link rel="stylesheet" media="all" href="/core/themes/classy/css/components/tabs.css?qod9lx" />
+<link rel="stylesheet" media="all" href="/core/themes/classy/css/components/textarea.css?qod9lx" />
+<link rel="stylesheet" media="all" href="/core/themes/classy/css/components/ui-dialog.css?qod9lx" />
+<link rel="stylesheet" media="all" href="/core/themes/classy/css/components/messages.css?qod9lx" />
+<link rel="stylesheet" media="all" href="/core/themes/classy/css/components/node.css?qod9lx" />
+<link rel="stylesheet" media="all" href="/themes/contrib/gvidoh/css/style.css?qod9lx" />
+
+    
+<!--[if lte IE 8]>
+<script src="/core/assets/vendor/html5shiv/html5shiv.min.js?v=3.7.3"></script>
+<![endif]-->
+
+  </head>
+  <body class="path-frontpage page-node-type-page  text-dark   d-flex flex-column h-100">
+        <a href="#main-content" class="visually-hidden focusable skip-link">
+      Skip to main content
+    </a>
+    
+      <div class="dialog-off-canvas-main-canvas d-flex flex-column h-100" data-off-canvas-main-canvas>
+    
+
+<header class="navbar-expand-lg">
+    <div class="region region-header">
+    <div class="views-element-container settings-tray-editable block block-views block-views-blockalerts-block-1" id="block-views-block-alerts-block-1" data-drupal-settingstray="editable">
+  
+    
+      <div><div class="view view-alerts view-id-alerts view-display-id-block_1 js-view-dom-id-5dc99319750a3d17018b7402a5112289d9c4b3a5bca5b3539b755cf489103774">
+  
+    
+      
+  
+          </div>
+</div>
+
+  </div>
+<div id="block-gviheader" class="settings-tray-editable block block-block-content block-block-contentd3ae383c-4a51-473a-8ffc-e72e753b87e8" data-drupal-settingstray="editable">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><div class="container">Government of the Virgin Islands of the United States</div>
+</div>
+      
+  </div>
+
+  </div>
+  
+
+    
+
+  <nav class="navbar navbar-expand-lg navbar-light text-dark bg-light">
+    <div class="container">
+      <div class="navbar-brand">
+          <div class="region region-nav-branding">
+    <div id="block-gvidoh-branding" class="settings-tray-editable block block-system block-system-branding-block" data-drupal-settingstray="editable">
+  
+    
+  <div class="navbar-brand row d-flex m-0 p-0">
+
+    <div class="col-2 p-0">
+  <a href="/" title="Home" rel="home" class="site-logo">
+    <img src="/themes/contrib/gvidoh/logo.svg" alt="Home" />
+  </a>
+  </div>
+  
+    <div class="col-10">
+  <a href="/" title="Home" rel="home" class="site-title">
+    Virgin Islands Department of Health
+  </a>
+  </div>
+  
+
+  </div>
+</div>
+
+  </div>
+  
+      </div>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse"
+              data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav d-flex mr-auto">
+            <div class="region region-nav-main">
+    <nav role="navigation" aria-labelledby="block-gvidoh-main-menu-menu" id="block-gvidoh-main-menu" class="settings-tray-editable block block-menu navigation menu--main" data-drupal-settingstray="editable">
+            
+  <h5 class="visually-hidden" id="block-gvidoh-main-menu-menu">Main navigation</h5>
+  
+
+        
+          <ul class="navbar-nav mr-auto">
+                              <li class="nav-item">
+                      <a href="/" class="nav-item nav-link is-active" data-drupal-link-system-path="&lt;front&gt;">Home</a>
+                  </li>
+                              <li class="nav-item dropdown">
+                      <a href="/covid-19" class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" data-drupal-link-system-path="node/2177">COVID-19</a>
+                    <div class="dropdown-menu dropdown-menu-right">
+          <a href="https://www.youtube.com/playlist?list=PLvrp9iOILTQatwnqm61jqFrsfUB4RKh6J" class="dropdown-item">CDC ASL Resources</a>
+              <a href="/covid-19/cdc-video-resources" class="dropdown-item" data-drupal-link-system-path="node/2184">CDC Video Resources</a>
+              <a href="/covid-19/covid-19-public-educationtraining-request-form" class="dropdown-item" data-drupal-link-system-path="node/2185">COVID-19 Public Education/Training Request Form</a>
+              <a href="/vaccines" class="dropdown-item dropdown-toggle" data-drupal-link-system-path="node/3056">Vaccines and the COVID-19 Vaccine</a>
+                  <div class="dropdown-menu dropdown-menu-right">
+          <a href="/covid-19/vaccines/moderna" class="dropdown-item" data-drupal-link-system-path="node/3062">Moderna COVID-19 Vaccine</a>
+              <a href="/covid-19/vaccines/pfizer-biontech" class="dropdown-item" data-drupal-link-system-path="node/3063">Pfizer-BioNTech COVID-19 Vaccine</a>
+              <a href="/covid-19/vaccines-and-covid-19-vaccine/vaccine-phases" class="dropdown-item" data-drupal-link-system-path="node/3082">Vaccine Phases</a>
+      </div>
+      
+              <a href="/testing" class="dropdown-item" data-drupal-link-system-path="node/2880">COVID-19 Testing</a>
+              <a href="/covid-19/do-you-think-you-might-have-coronavirus" class="dropdown-item" data-drupal-link-system-path="node/2178">Do you think you might have coronavirus?</a>
+              <a href="/covid-19/community" class="dropdown-item" data-drupal-link-system-path="node/2182">For Community</a>
+              <a href="/covid-19/healthcare-professionals" class="dropdown-item" data-drupal-link-system-path="node/2181">For Healthcare Professionals</a>
+              <a href="/covid-19/home-child-care-centers-work" class="dropdown-item" data-drupal-link-system-path="node/2183">For Home, Child Care Centers, Work</a>
+              <a href="https://usviupdate.com/" class="dropdown-item">For Travelers</a>
+              <a href="/covid-19/how-make-facemask" class="dropdown-item" data-drupal-link-system-path="node/2186">How to make a Facemask</a>
+              <a href="/covid-19/salon-and-barbers-issues-safety-guidelines-reopening" class="dropdown-item" data-drupal-link-system-path="node/2229">Salon and Barbers Issues Safety Guidelines for Reopening</a>
+              <a href="/covid-19/social-distancing-quarantine-and-isolation" class="dropdown-item" data-drupal-link-system-path="node/2187">Social Distancing, Quarantine, and Isolation</a>
+              <a href="/covid-19/what-exactly-does-recovered-mean" class="dropdown-item" data-drupal-link-system-path="node/2179">What exactly does “recovered” mean?</a>
+      </div>
+      
+                  </li>
+                              <li class="nav-item">
+                      <a href="/news" class="nav-item nav-link" data-drupal-link-system-path="news">News</a>
+                  </li>
+        </ul>
+      
+
+
+
+  </nav>
+
+  </div>
+      
+        </div>
+          <div class="region region-nav-additional">
+    <div id="block-googletranslator" class="settings-tray-editable block block-google-translator" data-drupal-settingstray="editable">
+  
+    
+      <a href="#" class="notranslate google-translator-switch">Translate</a>
+
+  </div>
+<div class="search-block-form settings-tray-editable block block-search container-inline" data-drupal-selector="search-block-form" id="block-gvidoh-search" role="search" data-drupal-settingstray="editable">
+  
+    
+      <form action="/search/node" method="get" id="search-block-form" accept-charset="UTF-8">
+  <div class="js-form-item form-item js-form-type-search form-type-search js-form-item-keys form-item-keys form-no-label">
+      <label for="edit-keys" class="visually-hidden">Search</label>
+        
+  <input title="Enter the terms you wish to search for." data-drupal-selector="edit-keys" type="search" id="edit-keys" name="keys" value="" size="15" maxlength="128" class="form-search form-control" />
+
+
+        </div>
+<div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions">
+  <input data-drupal-selector="edit-submit" type="submit" id="edit-submit" value="Search" class="button js-form-submit form-submit btn btn-primary" />
+
+</div>
+
+</form>
+
+  </div>
+
+  </div>
+      
+      </div>
+    </div>
+  </nav>
+
+  
+</header>
+
+<main role="main">
+  <a id="main-content" tabindex="-1"></a>
+    
+    
+  
+      <div class="breadcrumbs">
+      <div class="container">
+      
+      </div>
+    </div>
+      
+    <div class="Full">
+    <div class="row">
+            <div class="order-1 order-lg-2 col-12">
+          <div class="region region-content">
+    <div data-drupal-messages-fallback class="hidden"></div>
+<div id="block-gvidoh-content" class="block block-system block-system-main-block">
+  
+    
+      
+<article data-history-node-id="1" role="article" about="/node/1" typeof="schema:WebPage" class="node node--type-page node--view-mode-full">
+
+  
+      <span property="schema:name" content="Home" class="rdf-meta hidden"></span>
+
+
+  
+  <div class="node__content">
+      <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-layout-builder block-field-blocknodepagebody">
+  
+    
+      
+            <div property="schema:text" class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item">
+<div class="wp-block-group"><div class="wp-block-group__inner-container">
+<div class="wp-block-cover has-background-dim" style="background-image:url(/sites/default/files/inline-images/nIrAmLApqjoxeXPKKtb0UsFLcMUgcf2KmlvI9hAdKXMJI8h1l8.jpg)"><div class="wp-block-cover__inner-container">
+<p class="has-text-align-right has-huge-font-size">COVID-19</p>
+</div></div>
+</div></div>
+
+
+
+
+<div class="wp-block-group has-background" style="background-color:#fdd712"><div class="wp-block-group__inner-container">
+<h2 class="has-text-align-center"><img class="wp-image-393" style="width: 70px;" src="/sites/default/files/2020-05/safer_at_home.png" alt="">  <a style="color:#FFF" href="/current-status">Current Status: Safer At Home</a></h2>
+</div></div>
+
+
+
+
+<div class="wp-block-group container padded-top dohandcovid"><div class="wp-block-group__inner-container">
+<h2>What the Department of Health Is Doing</h2>
+
+
+
+
+<p><img class="wp-image-12" style="width: 150px; float:left;" src="/sites/default/files/2020-04/commissioner_justa_encarnacion_600.jpg" alt="">The U.S. Virgin Islands is reinforcing critical public health messaging like symptom-monitoring, infection prevention and ways to avoid the spread of disease into our territory. By following the health department’s guidance, you can keep yourself and your family safe if you come into contact with someone with COVID-19 or other viral respiratory pathogens like the flu.</p>
+
+
+
+
+<p><a href="/what-us-virgin-islands-department-health-doing-about-covid-19">Read more</a></p>
+</div></div>
+
+
+
+
+<div class="wp-block-group padded-bottom"><div class="wp-block-group__inner-container">
+<div class="wp-block-columns container">
+<div class="wp-block-column">
+<div class="wp-block-button btn_full_width"><a class="wp-block-button__link" href="https://www.covid19usvi.com/node/2178">Do you think you might have the coronavirus?</a></div>
+
+
+
+
+<p></p>
+</div>
+
+
+
+
+<div class="wp-block-column">
+<div class="wp-block-button btn_full_width"><a class="wp-block-button__link" href="https://www.covid19usvi.com/node/2179">What exactly does "recovered" mean?</a></div>
+
+
+
+
+<p></p>
+</div>
+</div>
+
+
+
+
+<div class="wp-block-columns container">
+<div class="wp-block-column" style="flex-basis:20%">
+<div class="wp-block-button btn_full_width"><a class="wp-block-button__link" href="https://usviupdate.com/">For Travelers and Tourism</a></div>
+
+
+
+
+<p></p>
+</div>
+
+
+
+
+<div class="wp-block-column" style="flex-basis:0%"></div>
+
+
+
+
+<div class="wp-block-column" style="flex-basis:26.67%">
+<div class="wp-block-button btn_full_width"><a class="wp-block-button__link" href="https://www.covid19usvi.com/node/2183">For Home, Child Care, Work</a></div>
+</div>
+
+
+
+
+<div class="wp-block-column" style="flex-basis:26.67%">
+<div class="wp-block-button btn_full_width"><a class="wp-block-button__link" href="https://www.covid19usvi.com/node/2181">For Healthcare Professionals</a></div>
+</div>
+
+
+
+
+<div class="wp-block-column" style="flex-basis:26.67%">
+<div class="wp-block-button btn_full_width"><a class="wp-block-button__link" href="https://www.covid19usvi.com/node/2182">For Community</a></div>
+</div>
+</div>
+
+
+
+
+<div class="wp-block-columns container">
+<div class="wp-block-column">
+<div class="wp-block-button btn_full_width"><a class="wp-block-button__link" href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/living-in-close-quarters.html"> Households Living in Close Quarters </a></div>
+</div>
+
+
+
+
+<div class="wp-block-column">
+<div class="wp-block-button btn_full_width"><a class="wp-block-button__link" href="https://nam12.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.vi.gov%2Fwp-content%2Fuploads%2F2020%2F06%2FGuidance-Memo-and-Screening-Questions-for-Taxis-limos-with-Attachment-A.pdf&amp;data=02%7C01%7CJahnesta.Ritter%40doh.vi.gov%7C35a74088569b43b7cbfe08d86952cdab%7Cc6c12b2587cc4f048d48314ff405b090%7C0%7C0%7C637375151668875903&amp;sdata=u5H%2FVrqIolhdvNTkxLnsCu%2FP0oh43VUYIG7aPNTfA1w%3D&amp;reserved=0"> Taxi Vans, Safaris, and Limo Services </a></div>
+</div>
+
+
+
+
+<div class="wp-block-column">
+<div class="wp-block-button btn_full_width"><a class="wp-block-button__link" href="https://www.covid19usvi.com/node/2255">Reopening of Bars and Restaurants</a></div>
+</div>
+
+
+
+
+<div class="wp-block-column">
+<div class="wp-block-button btn_full_width"><a class="wp-block-button__link" href="https://www.covid19usvi.com/node/2252/"> Employers and Office Buildings </a></div>
+</div>
+
+
+
+
+<div class="wp-block-column">
+<div class="wp-block-button btn_full_width"><a class="wp-block-button__link" href="https://www.covid19usvi.com/sites/default/files/2020-06/Guidance%20Daycare%20and%20HeadStart%20.pdf" target="_blank" rel="noreferrer noopener"> Daycare Centers &amp; HeadStart </a></div>
+</div>
+
+
+
+
+<div class="wp-block-column">
+<div class="wp-block-button btn_full_width"><a class="wp-block-button__link" href="https://www.covid19usvi.com/visiting-beaches-and-pools" target="_blank"> Visiting Beaches and Pools </a></div>
+</div>
+</div>
+</div></div>
+
+
+
+
+<div class="wp-block-group alignfull covid_19_epi_summary"><div class="wp-block-group__inner-container">
+<div class="wp-block-group container padded"><div class="wp-block-group__inner-container"><div class="views-element-container block block-views block-views-blockcovid-19-epi-summary-block-1">
+  
+      <h2>COVID-19 Summary</h2>
+    
+      <div><div class="view view-covid-19-epi-summary view-id-covid_19_epi_summary view-display-id-block_1 js-view-dom-id-306fa4566c8955081cb7147372e4c7d0c3aeca1e209d12b61e12e1aa31f94f98">
+  
+    
+      <div class="view-header">
+      Last updated Thu, February 11, 2021, 09:27 am
+    </div>
+      
+      <div class="view-content">
+          <div class="views-row"><div class="views-field views-field-field-covid-positive"><span class="views-label views-label-field-covid-positive">Positive</span><div class="field-content">2505</div></div><div class="views-field views-field-field-covid-negative"><span class="views-label views-label-field-covid-negative">Negative</span><div class="field-content">41876</div></div><div class="views-field views-field-field-covid-pending"><span class="views-label views-label-field-covid-pending">Pending</span><div class="field-content">99</div></div><div class="views-field views-field-field-covid-tested"><span class="views-label views-label-field-covid-tested">Tested</span><div class="field-content">44480</div></div><div class="views-field views-field-field-covid-fatality"><span class="views-label views-label-field-covid-fatality">Deaths</span><div class="field-content">25</div></div><div class="views-field views-field-field-covid-active"><span class="views-label views-label-field-covid-active">Active</span><div class="field-content">84</div></div><div class="views-field views-field-field-covid-recovered"><span class="views-label views-label-field-covid-recovered">Recovered</span><div class="field-content">2396/2505</div></div><div class="views-field views-field-title"><span class="field-content"><a href="/sites/default/files/epi_reports/COVID-19_Epi%20Report_02102021.pdf">Download Report</a></span></div></div>
+
+
+    </div>
+  
+            <div class="view-footer">
+      <div style="text-align:center"><a href="/covid19-report">Previous Reports</a></div>
+    </div>
+    </div>
+</div>
+
+
+  </div>
+</div></div>
+</div></div>
+
+
+
+
+<div class="youtube"><iframe class="video" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" type="text/html" src="https://www.youtube.com/embed/q5ojDXDmQ_s?autoplay=0&amp;fs=1&amp;iv_load_policy=3&amp;showinfo=0&amp;rel=0&amp;cc_load_policy=0&amp;start=0&amp;end=0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+
+
+
+
+<div class="wp-block-group"><div class="wp-block-group__inner-container"></div></div>
+
+
+
+
+<div class="wp-block-group container padded covid_links"><div class="wp-block-group__inner-container">
+<div class="wp-block-columns">
+<div class="wp-block-column" style="flex-basis:66.66%">
+<h2><i class="fas fa-bullhorn"></i> News</h2>
+
+
+
+<div class="views-element-container block block-views block-views-blocknews-block-1">
+  
+    
+      <div><div class="view view-news view-id-news view-display-id-block_1 js-view-dom-id-0efe2bb0acc69f6af33679a0a9c8d53be88415bc4dcb7f1241912f50fd962474">
+  
+    
+      
+      <div class="view-content">
+      <div class="item-list">
+  
+  <ul>
+
+
+          <li><div class="views-field views-field-title"><span class="field-content"><a href="/node/3121">Opportunity for St Thomas/St John Veterans to receive COVID-19 Vaccination</a></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><a href="/node/3115">Governor Bryan Requests Extension to State of Emergency</a></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><a href="/node/3113">VITEMA Announces Vaccination Hotline;  Health Operating Pop-Up Sites for Free COVID-19 Testing</a></span></div></li>
+    
+  </ul>
+
+
+</div>
+
+
+    </div>
+  
+          <div class="more-link"><a href="/news">more</a></div>
+
+
+      </div>
+</div>
+
+
+  </div>
+
+
+
+
+<h2><i class="fa fa-exclamation-triangle">  Public Health Orders</i></h2>
+
+
+
+
+<div class="wp-block-group"><div class="wp-block-group__inner-container">
+<ul><li><a href="https://www.covid19usvi.com/sites/default/files/2020-12/2020-12-15%20Public%20Health%20%20Order%20XII%20Vessels.pdf">2020 Public Health Order - Vessels</a>  </li><li><a href="https://www.covid19usvi.com/sites/default/files/2020-07/Public%20Health%20Order-%20Bars%20and%20Restaurants%202020-001%20JE.pdf">2020 Public Health Order - Bars &amp; Restaurants </a></li><li><a href="https://www.covid19usvi.com/sites/default/files/2020-07/public%20health%20order-masks%202020-002%20JE.pdf">2020 Public Health Order - Masks</a></li><li><a href="https://www.covid19usvi.com/sites/default/files/2020-07/public%20health%20order-limetree%202020-003%20JE%20%281%29.pdf">2020 Public Health Order - Limetree Bay</a></li><li><a href="https://www.covid19usvi.com/sites/default/files/2020-08/Exec%20Order%20Returning%20to%20Stay-At-Home.pdf">2020 Public Health Order - Stay At Home Order</a></li><li><a href="https://www.covid19usvi.com/sites/default/files/2020-08/%2111th%20Supplemental%20Exec%20Order.pdf">2020 Public Health Order - Open Doors Phase</a></li><li><a href="https://www.covid19usvi.com/sites/default/files/2020-08/%2111th%20Supplemental%20Exec%20Order.pdf">Executive order extending the State of Emergency </a></li><li><a href="https://www.covid19usvi.com/sites/default/files/2020-09/%2114th%20Supplemental%20Executive%20Order-Modifying%20Conditions%202020-08.17.pdf">14th Supplemental Executive Order</a></li><li><a href="https://www.covid19usvi.com/sites/default/files/2020-09/%2115th%20Supplimental%20EXO%20-Modifying%20Consditions.pdf">15th Supplemental Executive Order</a></li><li><a href="https://www.covid19usvi.com/sites/default/files/2020-09/%2116th%20Supplemental%20EO%20and%20proclamation%20%281%29.pdf">16th Supplemental Executive Order</a></li><li><a href="https://www.covid19usvi.com/sites/default/files/2020-10/2020-09.30%2018th%20Supplemental%20Exec_%20Order--fully%20signed.pdf">18th Supplemental Executive Order</a></li><li><a href="https://www.covid19usvi.com/sites/default/files/2020-12/%2119th%20Supplemental%20Executive%20Order.pdf">19th Supplemental Executive Order</a></li></ul>
+
+
+
+
+<p></p>
+
+
+
+
+<h2><i class="fas fa-check"> Recommendations</i></h2>
+
+
+
+
+<ul><li><a rel="noreferrer noopener" href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/cloth-face-cover.html" target="_blank">Recommendation Regarding the Use of Cloth Face Coverings, Especially in Areas of Significant Community-Based Transmission</a></li><li><a rel="noreferrer noopener" href="https://www.cdc.gov/coronavirus/2019-ncov/hcp/ppe-strategy/face-masks.html" target="_blank">Strategies for Optimizing the Supply of Facemasks</a></li><li><a rel="noreferrer noopener" href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/diy-cloth-face-coverings.html" target="_blank">Use of Cloth Face Coverings to Help Slow the Spread of COVID-19</a></li><li><a rel="noreferrer noopener" aria-label="%s (opens in a new tab)" href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/children.html" target="_blank">Keeping Children Healthy While School’s Out | CDC</a></li><li><a href="https://www.cdc.gov/coronavirus/2019-ncov/community/reopen-guidance.html">Reopening Guidance for Cleaning and Disinfecting Public Spaces, Workplaces, Businesses, Schools, and Homes | CDC</a></li><li><a rel="noreferrer noopener" aria-label="What Rideshare, Taxi, Limo, and other Passenger Drivers-for-Hire Need to Know about COVID-19 (opens in a new tab)" href="https://www.cdc.gov/coronavirus/2019-ncov/community/organizations/rideshare-drivers-for-hire.html" target="_blank">What Rideshare, Taxi, Limo, and other Passenger Drivers-for-Hire Need to Know about COVID-19</a></li><li><a rel="noreferrer noopener" aria-label="Preparing for Hurricanes During the COVID-19 Pandemic (opens in a new tab)" href="https://www.cdc.gov/disasters/hurricanes/covid-19/prepare-for-hurricane.html" target="_blank">Preparing for Hurricanes During the COVID-19 Pandemic | CDC</a></li><li><a rel="noreferrer noopener" aria-label="Funeral Guidance for Individuals and Families | CDC (opens in a new tab)" href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/funeral-guidance.html" target="_blank">Funeral Guidance for Individuals and Families | CDC</a></li><li><a rel="noreferrer noopener" aria-label="CDC Decision Tree: Restaurants and Bars During the COVID-19 Pandemic (opens in a new tab)" href="https://www.covid19usvi.com/sites/default/files/2020-05/restaurants-and-bars-decision-tree.pdf" target="_blank">CDC Decision Tree: Restaurants and Bars During the COVID-19 Pandemic</a></li><li><a href="https://www.fema.gov/blog/2020-05-08/preparing-hurricane-season-during-covid-pandemic">Preparing for Hurricane Season During the COVID-19 Pandemic | FEMA.gov</a></li><li><a rel="noreferrer noopener" aria-label=" (opens in a new tab)" href="https://www.covid19usvi.com/sites/default/files/2020-05/Lab%20Faqs.pdf" target="_blank">United States Virgin Islands Testing and Rapid Response FAQS</a></li><li><a href="https://www.cdc.gov/coronavirus/2019-ncov/community/organizations/business-employers/bars-restaurants.html" target="_blank" rel="noreferrer noopener" aria-label="Considerations for Restaurants and Bars (opens in a new tab)">Considerations for Restaurants and Bars</a></li></ul>
+</div></div>
+
+
+
+
+<div class="wp-block-group"><div class="wp-block-group__inner-container">
+<h2><i class="fas fa-medkit"></i> Hospital Updates</h2>
+
+
+
+
+<p><strong>Juan F. Luis Hospital</strong></p>
+
+
+
+
+<ul><li><a rel="noreferrer noopener" aria-label="%s (opens in a new tab)" href="https://www.covid19usvi.com/sites/default/files/2020-04/Press%20Release%20JFL%20COVID19%201.pdf" target="_blank">Press Release JFL COVID19&nbsp;</a></li><li><a href="https://www.covid19usvi.com/sites/default/files/2020-04/JFL%20is%20Hiring%20Critical%20Care%20Response%20Team.JPG">JFL is Hiring Critical Care Response Team</a></li><li><a rel="noreferrer noopener" aria-label="%s (opens in a new tab)" href="https://www.covid19usvi.com/sites/default/files/2020-04/Letter%20to%20Healthcare%20Professionals%20-%20signed.pdf" target="_blank">HIRING - Letter to Healthcare Professionals</a></li><li><a rel="noreferrer noopener" aria-label="%s (opens in a new tab)" href="https://www.covid19usvi.com/sites/default/files/2020-04/Letter%20to%20Birthing%20Mothers.pdf" target="_blank">Letter to Birthing Mothers</a></li><li><a rel="noreferrer noopener" aria-label="%s (opens in a new tab)" href="https://www.covid19usvi.com/sites/default/files/2020-04/Birthing%20Visitor%20policy.pdf" target="_blank">Birthing Visitor Policy</a> </li></ul>
+
+
+
+
+<div class="wp-block-group"><div class="wp-block-group__inner-container">
+<p> <strong>Schneider Regional Medical Center</strong> </p>
+
+
+
+
+<p>If you are sick with COVID-19 or think you might have COVID-19, follow the steps in our video to care for yourself and to help protect other people in your home and our community.&nbsp;If you have any questions call our COVID-19 Hotline at (340)776-8311 ext. 5704</p>
+
+
+
+
+<p><a href="https://www.facebook.com/111621568940388/posts/2242152342553956/?vh=e&amp;d=n" target="_blank" rel="noreferrer noopener">Learn more</a></p>
+</div></div>
+</div></div>
+
+
+
+
+<div class="wp-block-group"><div class="wp-block-group__inner-container">
+<h2><i class="fas fa-hands-helping"></i> Resources</h2>
+
+
+
+
+<ul><li><a href="https://dpnr.vi.gov/environmental-enforcement/">Boating and Environmental Enforcement Guidance </a></li><li><a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/recommendations/pregnancy.html">Vaccination Considerations for People who are Pregnant or Breastfeeding | CDC </a></li><li><a href="https://www.covid19usvi.com/sites/default/files/2020-12/FINAL%20Guidance%20for%20social%20events%2012.04.2020.pdf">Guidance for Social Events | DOH</a></li><li><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/hand-sanitizer.html">How to Select and Use Hand Sanitizer</a></li><li><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/personal-social-activities.html">Engaging in Personal and Social Activities</a></li><li><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/holidays/thanksgiving.html">Celebrating Thanksgiving Safely</a></li><li><a href="https://doh.vi.gov/programs/environmental-health/certificates-exemption">Establishments Approved to Use Glassware</a></li><li><a href="https://www.covid19usvi.com/sites/default/files/2020-09/IMG_7622.JPG.jpg">Interpreting COVID-19 Test Results</a></li><li><a href="https://www.cdc.gov/coronavirus/2019-ncov/community/organizations/construction-workers.html">What Construction Workers Need to Know about COVID-19 | CDC</a></li><li><a href="https://www.covid19usvi.com/sites/default/files/2020-08/COVID-19-Quarantine-vs-Isolation%20%281%29.pdf">Quarantine vs. Isolation</a></li><li><a href="https://www.covid19usvi.com/sites/default/files/2020-08/cloth-face-covering.pdf">How to Safely Wear and Take Off a Mask</a></li><li><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wear-cloth-face-coverings.html">How to Wear Masks Safely </a></li><li><a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/testing.html">Types of COVID-19 Testing</a></li><li><a href="https://www.covid19usvi.com/sites/default/files/2020-08/Business%20Guidance%20DOH%207.27.2020%20%281%29.pdf">COVID-19 Guidance for Businesses | DOH</a></li><li><a href="/sites/default/files/2020-05/Cover_Your_Face.pdf">Cover Your Face sign for businesses</a></li><li><a rel="noreferrer noopener" href="https://www.whitehouse.gov/wp-content/uploads/2020/03/03.16.20_coronavirus-guidance_8.5x11_315PM.pdf" target="_blank">The President's Coronavirus Guidelines for America</a></li><li><a rel="noreferrer noopener" aria-label="%s (opens in a new tab)" href="https://www.covid19usvi.com/sites/default/files/2020-04/2019-ncov-factsheet.pdf" target="_blank">What you need to know about coronavirus disease 2019 (COVID-19)</a> | <a href="https://www.covid19usvi.com/sites/default/files/2020-04/2019-ncov-factsheet-spanish.pdf">Spanish</a> | <a href="https://www.covid19usvi.com/sites/default/files/2020-04/2019-ncov-factsheet-chinese.pdf">Chinese</a> | <a href="https://www.covid19usvi.com/sites/default/files/2020-04/315252-A_FS_COVID19Symptoms_M_HT.pdf">French Haitian Creole</a> | <a rel="noreferrer noopener" href="https://www.cdc.gov/coronavirus/2019-ncov/communication/videos.html" target="_blank">Videos</a></li><li><a rel="noreferrer noopener" href="https://wwwnc.cdc.gov/travel/destinations/list" target="_blank">Coronavirus Travel Advisories and Alerts Updates</a></li><li><a rel="noreferrer noopener" aria-label=" (opens in a new tab)" href="https://www.covid19usvi.com/sites/default/files/2020-06/COVID19_ENG_postcard_5.25x3.75_wbleed.pdf" target="_blank">VI Department of Health Coronavirus Health Alert</a> | <a rel="noreferrer noopener" aria-label=" (opens in a new tab)" href="https://www.covid19usvi.com/sites/default/files/2020-06/COVID19_SPA_postcard_5.25x3.75_wbleed.pdf" target="_blank">Spanish</a></li><li><a rel="noreferrer noopener" href="https://drive.google.com/file/d/1bnoWtXYzip6nR23N1VMPeuKpVpggmbOd/view?usp=sharing" target="_blank">Informational Video</a></li><li><a rel="noreferrer noopener" href="https://www.cdc.gov/coronavirus/2019-ncov/community/organizations/guidance-community-faith-organizations.html" target="_blank">Get Your Community- and Faith-Based Organizations Ready for Coronavirus Disease 2019</a></li><li><a rel="noreferrer noopener" aria-label="How to Protect Yourself and Others (opens in a new tab)" href="https://www.covid19usvi.com/sites/default/files/2020-05/prevention-H.pdf" target="_blank">How to Protect Yourself and Others</a> </li><li><a rel="noreferrer noopener" href="https://www.cdc.gov/coronavirus/2019-ncov/prepare/get-your-household-ready-for-COVID-19.html" target="_blank">Get Your Household Ready for Coronavirus Disease 2019</a></li><li><a rel="noreferrer noopener" href="https://www.cdc.gov/coronavirus/2019-ncov/communication/factsheets.html" target="_blank">CDC COVID-19 Factsheets</a></li><li><a rel="noreferrer noopener" href="https://www.cdc.gov/coronavirus/2019-ncov/prepare/managing-stress-anxiety.html" target="_blank">Manage Anxiety &amp; Stress</a></li><li><a rel="noreferrer noopener" aria-label="%s (opens in a new tab)" href="https://www.covid19usvi.com/sites/default/files/2020-04/Tips%20For%20Social%20Distancing%2C%20Quarantine%2C%20And%20Isolation%20During%20An%20Infectious%20Disease%20Outbreak_0.pdf" target="_blank">Tips For Social Distancing, Quarantine, And Isolation During An Infectious Disease Outbreak</a></li><li><a rel="noreferrer noopener" aria-label="%s (opens in a new tab)" href="https://www.covid19usvi.com/sites/default/files/2020-04/OSHA3994.pdf" target="_blank">Ten Steps All Workplaces Can Take to Reduce Risk of Exposure to Coronavirus</a> | <a rel="noreferrer noopener" aria-label="%s (opens in a new tab)" href="https://www.covid19usvi.com/sites/default/files/2020-04/OSHA3995.pdf" target="_blank">Spanish</a></li><li><a href="https://www.covid19usvi.com/covid-19/salon-and-barbers-issues-safety-guidelines-reopening">Salon and Barbers Issues Safety Guidelines for Reopening</a></li><li><a rel="noreferrer noopener" aria-label="6 Steps for Safe &amp; Effective Disinfectant UseDisinfectant Use (opens in a new tab)" href="https://www.covid19usvi.com/sites/default/files/2020-05/disinfectants-onepager.pdf" target="_blank">6 Steps for Safe &amp; Effective Disinfectant Use Disinfectant Use</a> </li><li><a rel="noreferrer noopener" aria-label="Healthcare Personnel and First Responders: How to Cope with Stress and Build Resilience During the COVID-19 Pandemic (opens in a new tab)" href="https://www.cdc.gov/coronavirus/2019-ncov/community/mental-health-healthcare.html" target="_blank">Healthcare Personnel and First Responders: How to Cope with Stress and Build Resilience During the COVID-19 Pandemic</a> </li><li><a rel="noreferrer noopener" aria-label="How COVID-19 Can Spread in a Community (opens in a new tab)" href="https://www.youtube.com/watch?v=9pVy8sRC440" target="_blank">How COVID-19 Can Spread in a Community</a> </li><li><a rel="noreferrer noopener" aria-label="Have Difficulty Breathing in a Face Mask? Advice for People with Asthma and Lung Disease (opens in a new tab)" href="https://creakyjoints.org/living-with-arthritis/coronavirus/managing-symptoms/difficulty-breathing-face-mask-asthma-lung-disease/" target="_blank">Have Difficulty Breathing in a Face Mask? Advice for People with Asthma and Lung Disease</a></li><li><a rel="noreferrer noopener" aria-label="Considerations for Restaurants and Bars | COVID-19 | CDC (opens in a new tab)" href="https://www.cdc.gov/coronavirus/2019-ncov/community/organizations/business-employers/bars-restaurants.html" target="_blank">Considerations for Restaurants and Bars | COVID-19 | CDC</a></li><li><a rel="noreferrer noopener" aria-label="Considerations for Youth and Summer Camps | CDC (opens in a new tab)" href="https://www.cdc.gov/coronavirus/2019-ncov/community/schools-childcare/summer-camps.html" target="_blank">Considerations for Youth and Summer Camps | CDC</a></li><li><a rel="noreferrer noopener" aria-label=" (opens in a new tab)" href="https://www.covid19usvi.com/sites/default/files/2020-06/Guidance%20for%20Cleaning%20and%20Disinfecting.pdf" target="_blank">Guidance for Cleaning and Disinfecting | DOH/DEH</a></li></ul>
+</div></div>
+
+
+
+
+<p></p>
+</div>
+
+
+
+
+<div class="wp-block-column" style="flex-basis:33.33%">
+<h2><i class="fas fa-chart-bar"></i> COVID-19 Reports</h2>
+
+
+
+
+<div class="wp-block-group"><div class="wp-block-group__inner-container"><div class="views-element-container block block-views block-views-blockcovid-19-epi-list-block-1">
+  
+    
+      <div><div class="view view-covid-19-epi-list view-id-covid_19_epi_list view-display-id-block_1 js-view-dom-id-6c4fc529674098f5ef43748d02220499bd5a3074344d27c1d3dd6d5841293449">
+  
+    
+      
+      <div class="view-content">
+          <div class="views-row"><span class="views-field views-field-title"><span class="field-content"><a href="/sites/default/files/epi_reports/COVID-19_Epi%20Report_02102021.pdf">Download</a></span></span> - <span class="views-field views-field-field-date"><span class="field-content">February 10, 2021</span></span></div>
+    <div class="views-row"><span class="views-field views-field-title"><span class="field-content"><a href="/sites/default/files/epi_reports/COVID-19_Epi%20Report_02092021.pdf">Download</a></span></span> - <span class="views-field views-field-field-date"><span class="field-content">February 09, 2021</span></span></div>
+    <div class="views-row"><span class="views-field views-field-title"><span class="field-content"><a href="/sites/default/files/epi_reports/COVID-19_Epi%20Report_02082021.pdf">Download</a></span></span> - <span class="views-field views-field-field-date"><span class="field-content">February 08, 2021</span></span></div>
+
+
+    </div>
+  
+          <div class="more-link"><a href="/covid19-report">more</a></div>
+
+
+      </div>
+</div>
+
+
+  </div>
+
+
+
+
+<figure class="wp-block-image size-large"><a href="/sites/default/files/2020-05/Cover_Your_Face.pdf"><img src="/sites/default/files/styles/large/public/inline-images/s4KbX1ipHwn0j2ekNLpQHznKZ09L7XWRpluqZPvUwHiXYdhGs8.png?itok=RmyQwAv-" alt="" class="wp-image-397" data-entity-type="file" data-entity-uuid="336e6bc2-c418-48d0-9a39-6b9b09348140" data-image-style="original"/></a></figure>
+
+
+
+
+<h2><i class="fas fa-phone-alt"></i> Contact</h2>
+
+
+
+
+<p>Text COVID19USVI to 888777</p>
+
+
+
+
+<ul><li><a href="http://www.vitema.vi.gov/">Virgin Islands Territorial Emergency Management Agency (VITEMA)</a></li><li><a href="http://www.dhs.gov.vi/home/index.html" rel="noreferrer noopener" target="_blank">Virgin Islands Department of Human Services</a></li><li><a href="http://www.viport.com/" rel="noreferrer noopener" target="_blank">Virgin Islands Port Authority</a></li></ul>
+
+
+
+
+<p>HOTLINE RESOURCES<br>1-800-950-NAMI&nbsp;(6264)</p>
+
+
+
+
+<p>National Suicide Prevention Lifeline<br>1-800-273-8255</p>
+
+
+
+
+<p>National Suicide Prevention Lifeline (Spanish)<br>1-888-628-9454</p>
+
+
+
+
+<p>National Hopeline Network<br>1-800-784-2433 (1-800-SUICIDE) </p>
+
+
+
+
+<p>Options for Deaf &amp; Hard of Hearing<br>1-800-799-4889</p>
+
+
+
+
+<p>National Domestic Violence Hotline<br>1-800-799-7233 </p>
+
+
+
+
+<p>National Council on Alcoholism and Drug Dependence (NCADD)&nbsp;<br>1-800-622-2255 </p>
+
+
+
+
+<p>Substance Abuse and Mental Health Services Administration (SAMHSA)<br>1-800-662-4357 </p>
+
+
+
+
+<p> Children &amp; Adults with Attention Deficit/Hyperactivity Disorder Resource Center (CHADD)<br>1-800-233-4050 </p>
+
+
+
+
+<p>National Center for Learning Disabilities<br>1-888-575-7373 </p>
+
+
+
+
+<p>I'm Alive -&nbsp;instant text&nbsp;resource<br><a rel="noreferrer noopener" href="https://www.imalive.org/" target="_blank">https://www.imalive.org/</a> </p>
+
+
+
+
+<p>Disaster Distress Helpline<br>1-800-985-5990</p>
+
+
+
+
+<p>Veterans Crisis Line<br>1-800-273-8255</p>
+
+
+
+
+<p>Government Employees can also tap into the Employee Assistant Program through our group health insurance by calling the EAP line&nbsp;<br>1-888-371-1125</p>
+</div></div>
+
+
+
+
+<div class="wp-block-group"><div class="wp-block-group__inner-container"></div></div>
+</div>
+</div>
+</div></div>
+</div>
+      
+  </div>
+<div class="block block-layout-builder block-extra-field-blocknodepagelinks">
+  
+    
+      
+  </div>
+
+    </div>
+  </div>
+
+  </div>
+
+</article>
+
+  </div>
+
+  </div>
+
+      </div>
+          </div>
+  </div>
+
+</main>
+
+<footer class="mt-auto  navbar-dark text-light bg-secondary">
+  <div class="container">
+      <div class="region region-footer">
+    <nav role="navigation" aria-labelledby="block-gvidoh-footer-menu" id="block-gvidoh-footer" class="settings-tray-editable block block-menu navigation menu--footer" data-drupal-settingstray="editable">
+            
+  <h5 class="visually-hidden" id="block-gvidoh-footer-menu">Footer menu</h5>
+  
+
+        
+        <ul class="nav navbar-nav">
+            <li class="nav-item">
+      <a href="/contact" class="nav-link" data-drupal-link-system-path="contact">Contact</a>
+          </li>
+  </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+  </div>
+</footer>
+
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/1","currentPathIsAdmin":false,"isFront":true,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"google_analytics":{"account":"UA-149281952-2","trackOutbound":true,"trackMailto":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"ajaxTrustedUrl":{"\/search\/node":true},"googleTranslatorDisclaimer":{"jquerySelector":".google-translator-switch","disclaimer":"\u003Cstrong\u003EAutomatic translation disclaimer\u003C\/strong\u003E\r\n Translation of this page is provided by the third-party Google Translate service. In case of dispute, the original language content should prevail.","acceptText":"Accept","dontAcceptText":"Do Not Accept","element":"\u003Cspan id=\u0022google_translator_element\u0022\u003E\u003C\/span\u003E\n\u003Cscript src=\u0022\/\/translate.google.com\/translate_a\/element.js?cb=Drupal.behaviors.googleTranslatorElement.init\u0022\u003E\u003C\/script\u003E\n"},"googleTranslatorElement":{"id":"google_translator_element","languages":"da,en,ht,pt,es","displayMode":"SIMPLE"},"user":{"uid":0,"permissionsHash":"9f35f5423bb53ff4926aba42dd791eec06d1f3640d6cf58ca109ecd1ac7c5c6b"}}</script>
+<script src="/core/assets/vendor/jquery/jquery.min.js?v=3.5.1"></script>
+<script src="/core/misc/drupalSettingsLoader.js?v=8.9.12"></script>
+<script src="/core/misc/drupal.js?v=8.9.12"></script>
+<script src="/core/misc/drupal.init.js?v=8.9.12"></script>
+<script src="/modules/contrib/google_analytics/js/google_analytics.js?v=8.9.12"></script>
+<script src="/themes/contrib/bootstrap4/dist/bootstrap/4.4.1/dist/js/bootstrap.min.js?v=4.4.1"></script>
+<script src="https://kit.fontawesome.com/a4bdb5326f.js"></script>
+<script src="/modules/contrib/google_translator/js/init.js?v=1.x"></script>
+<script src="/modules/contrib/google_translator/js/disclaimer.js?v=1.x"></script>
+
+    
+<!-- This site is converting visitors into subscribers and customers with OptinMonster - https://optinmonster.com-->
+<script type="text/javascript" src="https://a.omappapi.com/app/js/api.min.js" data-account="6833" data-user="30887" async></script>
+<!-- / OptinMonster -->    
+  </body>
+</html>

@@ -1,0 +1,29 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>404</title>
+<link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+<link href="/css/maintenance.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="csLogoWrapper">
+    <div class="csLogo"><img src="/images/main_logo.png"></div>
+  </div>
+<div class="csNfWrapper">
+    <div class="csNf">404 Not Found</div>
+  </div>
+  <div class="csTitleWrapper">
+    <div class="csTitle">
+      <h1>This page may have been moved or deleted.</h1>
+    </div>
+  </div>
+  <div class="csContentWrapper">
+    <div class="csContent">
+      <p>Please try refreshing your browser or return to the <a href="/">home page</a>.</p>
+    </div>
+  </div>
+</body>
+</html>

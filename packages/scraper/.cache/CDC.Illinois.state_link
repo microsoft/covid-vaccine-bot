@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7]><html class="iem7"  lang="en" dir="ltr"><![endif]-->
+<!--[if lte IE 6]><html class="lt-ie9 lt-ie8 lt-ie7"  lang="en" dir="ltr"><![endif]-->
+<!--[if (IE 7)&(!IEMobile)]><html class="lt-ie9 lt-ie8"  lang="en" dir="ltr"><![endif]-->
+<!--[if IE 8]><html class="lt-ie9"  lang="en" dir="ltr"><![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!--><html  lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#"><!--<![endif]-->
+
+<head>
+  <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"b1bb1b892b",applicationID:"55445753"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(6),c=e(7),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(8);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(5),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,w=["click","keydown","mousedown","pointerdown","touchstart"];w.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],4:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],5:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],6:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],7:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],8:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?u(e,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){e&&a&&e(n,r,i);for(var c=t(i),f=v(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[h[n]];return p&&p.push([b,n,r,c]),c}}function o(e,t){y[e]=v(e).concat(t)}function m(e,t){var n=y[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return y[e]||[]}function g(e){return p[e]=p[e]||i(n)}function w(e,t){s(e,function(e,n){t=t||"feature",h[n]=t,t in d||(d[t]=[])})}var y={},h={},b={on:o,addEventListener:o,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:w,abort:c,aborted:!1};return b}function o(e){return u(e,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=e("gos"),s=e(6),d={},p={},l=t.exports=i();t.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=b.info=NREUM.info,t=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(y,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+b.offset],null,"api"),c("timing",["load",n]);var r=p.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===p.readyState&&o()}function o(){c("mark",["domContent",a()+b.offset],null,"api")}var a=e(2),c=e("handle"),f=e(6),u=e("ee"),s=e(4),d=window,p=d.document,l="addEventListener",m="attachEvent",v=d.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:v,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var w=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1198.min.js"},h=v&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),b=t.exports={offset:a.getLastTimestamp(),now:a,origin:w,features:{},xhrWrappable:h,userAgent:s};e(1),e(3),p[l]?(p[l]("DOMContentLoaded",o,!1),d[l]("load",r,!1)):(p[m]("onreadystatechange",i),d[m]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var x=0},{}],"wrap-function":[function(e,t,n){function r(e,t){function n(t,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],e)}c(n+"start",[o,a,f],s,u);try{return p=t.apply(a,o)}catch(m){throw c(n+"err",[o,a,m],s,u),m}finally{c(n+"end",[o,a,p],s,u)}}return a(t)?t:(n||(n=""),nrWrapper[p]=t,o(t,nrWrapper,e),nrWrapper)}function r(e,t,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<t.length;u++)f=t[u],c=e[f],a(c)||(e[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!m||t){var c=m;m=!0;try{e.emit(n,r,o,t,a)}catch(f){i([f,n,r,o],e)}m=c}}return e||(e=s),n.inPlace=r,n.flag=p,n}function i(e,t){t||(t=s);try{t.emit("internal-error",e)}catch(n){}}function o(e,t,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(e);return r.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(o){i([o],n)}for(var a in e)l.call(e,a)&&(t[a]=e[a]);return t}function a(e){return!(e&&e instanceof Function&&e.apply&&!e[p])}function c(e,t){var n=t(e);return n[p]=e,o(e,n,s),n}function f(e,t,n){var r=e[t];e[t]=c(r,n)}function u(){for(var e=arguments.length,t=new Array(e),n=0;n<e;++n)t[n]=arguments[n];return t}var s=e("ee"),d=e(7),p="nr@original",l=Object.prototype.hasOwnProperty,m=!1;t.exports=r,t.exports.wrapFunction=c,t.exports.wrapInPlace=f,t.exports.argsToArray=u},{}]},{},["loader"]);</script>
+<link rel="shortcut icon" href="https://www.dph.illinois.gov/sites/all/themes/idph/favicon.ico" type="image/vnd.microsoft.icon" />
+<meta name="description" content="picture_as_pdfVaccination Phase 1A – Eligible Individuals Hospitals Nurses and Nursing Assistants Physicians/Nurse Practitioners/Physician Assistants Respiratory Technicians Pharmacists Environmental Services Staff Phlebotomist Infectious Waste Workers COVID Sample Lab Organ Harvester Students on Clinical Rotations Dietary staff Clergy/pastoral/chaplains Interpreters Crisis" />
+<meta name="generator" content="Drupal 7 (https://www.drupal.org)" />
+<link rel="canonical" href="https://www.dph.illinois.gov/covid19/vaccine-faq" />
+<link rel="shortlink" href="https://www.dph.illinois.gov/node/27421" />
+  <title>COVID-19 Vaccine | IDPH</title>
+
+      <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width">
+    <!--[if IEMobile]><meta http-equiv="cleartype" content="on"><![endif]-->
+
+
+  <link type="text/css" rel="stylesheet" href="https://www.dph.illinois.gov/sites/default/files/css/css_lQaZfjVpwP_oGNqdtWCSpJT1EMqXdMiU84ekLLxQnc4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.dph.illinois.gov/sites/default/files/css/css_Q7R7Blo9EYqLDI5rIlO_T3uTFBjIXjLpcqMHjTvVdmg.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.dph.illinois.gov/sites/default/files/css/css_iuqxt2oum2SeOMCUyrEJA1ydKik3MDBg9v2R71t6L1E.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.dph.illinois.gov/sites/default/files/css/css_O6LrS5eVtwCZV7L5Vz5GTGv4ER9I-k0K8AYOr5kLrUk.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.dph.illinois.gov/sites/default/files/css/css_X0_gVh4iLWZKmnY8-uHv4FDmoSGCQb9yRGaQGhrzbbI.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.dph.illinois.gov/sites/default/files/css/css_6T9uo6bccJeu1x68ntgZh-PHo1P7OAZKUFZUsrNQi6I.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.dph.illinois.gov/sites/default/files/css/css_rqlo3CpKf2_oPN1SdPMBcS-I6Ghme2UclZ4uaM-O1A8.css" media="print" />
+<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,700,700italic,900,900italic,italic,regular&amp;subset=latin" media="all" />
+  <link href="/CSS/custom-041118.css" rel="stylesheet" />  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script><link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script><script src="/bootstrap/3.3.7/js/bootstrap.min.js"></script>  <script src="https://www.dph.illinois.gov/sites/all/libraries/modernizr/modernizr.min.js?qo0k1v"></script>
+<script src="//code.jquery.com/jquery-1.8.3.min.js"></script>
+<script>window.jQuery || document.write("<script src='/sites/all/modules/jquery_update/replace/jquery/1.8/jquery.min.js'>\x3C/script>")</script>
+<script src="https://www.dph.illinois.gov/misc/jquery-extend-3.4.0.js?v=1.8.3"></script>
+<script src="https://www.dph.illinois.gov/misc/jquery-html-prefilter-3.5.0-backport.js?v=1.8.3"></script>
+<script src="https://www.dph.illinois.gov/misc/jquery.once.js?v=1.2"></script>
+<script src="https://www.dph.illinois.gov/misc/drupal.js?qo0k1v"></script>
+<script src="https://www.dph.illinois.gov/sites/all/libraries/fitvids/jquery.fitvids.js?qo0k1v"></script>
+<script src="//code.jquery.com/ui/1.10.2/jquery-ui.min.js"></script>
+<script>window.jQuery.ui || document.write("<script src='/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery-ui.min.js'>\x3C/script>")</script>
+<script src="https://www.dph.illinois.gov/sites/all/modules/jquery_update/replace/ui/external/jquery.cookie.js?v=67fb34f6a866c40d0570"></script>
+<script src="https://www.dph.illinois.gov/sites/all/modules/autoupload/js/autoupload.js?qo0k1v"></script>
+<script src="https://www.dph.illinois.gov/sites/all/modules/ckeditor_accordion/js/ckeditor-accordion.js?qo0k1v"></script>
+<script src="https://www.dph.illinois.gov/sites/all/modules/ckeditor_tabber/semantic-tabs.js?qo0k1v"></script>
+<script src="https://www.dph.illinois.gov/sites/all/modules/fitvids/fitvids.js?qo0k1v"></script>
+<script src="https://www.dph.illinois.gov/sites/all/modules/accordion_blocks/accordion_init.js?qo0k1v"></script>
+<script src="https://www.dph.illinois.gov/sites/all/modules/apachesolr_autocomplete/apachesolr_autocomplete.js?qo0k1v"></script>
+<script src="https://www.dph.illinois.gov/sites/all/modules/apachesolr_autocomplete/jquery-autocomplete/jquery.autocomplete.js?qo0k1v"></script>
+<script>var text_resize_scope = "content,article";
+          var text_resize_minimum = "15";
+          var text_resize_maximum = "25";
+          var text_resize_line_height_allow = 0;
+          var text_resize_line_height_min = "16";
+          var text_resize_line_height_max = "36";</script>
+<script src="https://www.dph.illinois.gov/sites/all/modules/text_resize/text_resize.js?qo0k1v"></script>
+<script src="https://www.dph.illinois.gov/sites/all/modules/responsive_menus/styles/sidr/js/responsive_menus_sidr.js?qo0k1v"></script>
+<script src="https://www.dph.illinois.gov/sites/all/libraries/sidr/jquery.sidr.min.js?qo0k1v"></script>
+<script src="https://www.dph.illinois.gov/sites/all/modules/google_analytics/googleanalytics.js?qo0k1v"></script>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-64509648-1", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");</script>
+<script src="https://www.dph.illinois.gov/sites/all/modules/extlink/js/extlink.js?qo0k1v"></script>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script src="https://code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+<script src="https://www.dph.illinois.gov/sites/all/libraries/superfish/jquery.hoverIntent.minified.js?qo0k1v"></script>
+<script src="https://www.dph.illinois.gov/sites/all/libraries/superfish/sfsmallscreen.js?qo0k1v"></script>
+<script src="https://www.dph.illinois.gov/sites/all/libraries/superfish/supposition.js?qo0k1v"></script>
+<script src="https://www.dph.illinois.gov/sites/all/libraries/superfish/superfish.js?qo0k1v"></script>
+<script src="https://www.dph.illinois.gov/sites/all/libraries/superfish/supersubs.js?qo0k1v"></script>
+<script src="https://www.dph.illinois.gov/sites/all/modules/superfish/superfish.js?qo0k1v"></script>
+<script src="https://www.dph.illinois.gov/sites/all/themes/idph/js/idph.js?qo0k1v"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"idph","theme_token":"1y_BEu-FtWAiP0nZkUaUay4PxC0s6OqV84MKHAIDY0A","js":{"sites\/all\/libraries\/respondjs\/respond.min.js":1,"sites\/all\/libraries\/modernizr\/modernizr.min.js":1,"\/\/code.jquery.com\/jquery-1.8.3.min.js":1,"0":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/libraries\/fitvids\/jquery.fitvids.js":1,"\/\/code.jquery.com\/ui\/1.10.2\/jquery-ui.min.js":1,"1":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/external\/jquery.cookie.js":1,"sites\/all\/modules\/autoupload\/js\/autoupload.js":1,"sites\/all\/modules\/ckeditor_accordion\/js\/ckeditor-accordion.js":1,"sites\/all\/modules\/ckeditor_tabber\/semantic-tabs.js":1,"sites\/all\/modules\/fitvids\/fitvids.js":1,"sites\/all\/modules\/accordion_blocks\/accordion_init.js":1,"sites\/all\/modules\/apachesolr_autocomplete\/apachesolr_autocomplete.js":1,"sites\/all\/modules\/apachesolr_autocomplete\/jquery-autocomplete\/jquery.autocomplete.js":1,"2":1,"sites\/all\/modules\/text_resize\/text_resize.js":1,"sites\/all\/modules\/responsive_menus\/styles\/sidr\/js\/responsive_menus_sidr.js":1,"sites\/all\/libraries\/sidr\/jquery.sidr.min.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"3":1,"sites\/all\/modules\/extlink\/js\/extlink.js":1,"https:\/\/cdn.plot.ly\/plotly-latest.min.js":1,"https:\/\/code.jquery.com\/ui\/1.11.3\/jquery-ui.js":1,"sites\/all\/libraries\/superfish\/jquery.hoverIntent.minified.js":1,"sites\/all\/libraries\/superfish\/sfsmallscreen.js":1,"sites\/all\/libraries\/superfish\/supposition.js":1,"sites\/all\/libraries\/superfish\/superfish.js":1,"sites\/all\/libraries\/superfish\/supersubs.js":1,"sites\/all\/modules\/superfish\/superfish.js":1,"sites\/all\/themes\/idph\/js\/idph.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"misc\/ui\/jquery.ui.accordion.css":1,"sites\/all\/modules\/ckeditor_accordion\/css\/ckeditor-accordion.css":1,"sites\/all\/modules\/ckeditor_tabber\/ckeditor_tabber.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/fitvids\/fitvids.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/youtube\/css\/youtube.css":1,"sites\/all\/modules\/extlink\/css\/extlink.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/accordion_blocks\/accordion_init.css":1,"sites\/all\/modules\/apachesolr_autocomplete\/apachesolr_autocomplete.css":1,"sites\/all\/modules\/apachesolr_autocomplete\/jquery-autocomplete\/jquery.autocomplete.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/seo_checklist\/seo_checklist.css":1,"sites\/all\/modules\/text_resize\/text_resize.css":1,"sites\/all\/libraries\/sidr\/stylesheets\/jquery.sidr.dark.css":1,"bootstrap\/3.3.7\/css\/bootstrap.css":1,"https:\/\/fonts.googleapis.com\/icon?family=Material+Icons|Material+Icons+Round":1,"sites\/all\/libraries\/superfish\/css\/superfish.css":1,"sites\/all\/libraries\/superfish\/css\/superfish-smallscreen.css":1,"sites\/all\/libraries\/superfish\/style\/default.css":1,"sites\/all\/themes\/idph\/system.menus.css":1,"sites\/all\/themes\/idph\/system.messages.css":1,"sites\/all\/themes\/idph\/system.theme.css":1,"sites\/all\/themes\/idph\/css\/styles.css":1,"sites\/all\/themes\/idph\/css\/idph_overrides.css":1,"sites\/all\/themes\/idph\/fonts\/font-awesome.css":1,"sites\/all\/themes\/idph\/fonts\/font-awesome-ie7.min.css":1,"sites\/all\/themes\/idph\/css\/print.css":1,"https:\/\/fonts.googleapis.com\/css?family=Lato:100,100italic,300,300italic,700,700italic,900,900italic,italic,regular\u0026subset=latin":1}},"apachesolr_autocomplete":{"path":"\/apachesolr_autocomplete","forms":{"search-block-form":{"id":"search-block-form","path":"\/apachesolr_autocomplete_callback\/apachesolr_search_page%3Acore_search"}}},"jcarousel":{"ajaxPath":"\/jcarousel\/ajax\/views"},"better_exposed_filters":{"views":{"tweets":{"displays":{"block":{"filters":[]}}},"landing_page_alerts":{"displays":{"block":{"filters":[]}}}}},"ckeditor_accordion":{"collapseAll":1},"fitvids":{"custom_domains":[],"selectors":["body"],"simplifymarkup":true},"responsive_menus":[{"selectors":["#tb-megamenu","#nav-collapse"],"trigger_txt":"Menu","side":"left","speed":"200","media_size":"768","displace":"1","renaming":"1","onOpen":"","onClose":"","responsive_menus_style":"sidr"}],"ckeditor_tabber":{"elements":"dl.ckeditor-tabber"},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"urlIsAjaxTrusted":{"\/covid19\/vaccine-faq":true},"superfish":{"2":{"id":"2","sf":{"animation":{"opacity":"show"},"speed":"fast"},"plugins":{"smallscreen":{"mode":"window_width","breakpointUnit":"px","title":"COVID-19 Menu"},"supposition":true,"supersubs":true}}},"extlink":{"extTarget":"_blank","extClass":0,"extLabel":"(link is external)","extImgClass":0,"extIconPlacement":"append","extSubdomains":1,"extExclude":"","extInclude":"","extCssExclude":"","extCssExplicit":"","extAlert":0,"extAlertText":"This link will take you to an external web site.","mailtoClass":0,"mailtoLabel":"(link sends e-mail)","extUseFontAwesome":false}});</script>
+      <!--[if lt IE 9]>
+    <script src="/sites/all/themes/zen/js/html5-respond.js"></script>
+    <![endif]-->
+  </head>
+<body class="html not-front not-logged-in two-sidebars page-node page-node- page-node-27421 node-type-guidance section-covid19" >
+      <p id="skip-link">
+      <a href="#main-menu" class="element-invisible element-focusable">Jump to navigation</a>
+    </p>
+      
+<div id="page">
+
+  <header class="header" id="header" role="banner">
+
+          <a href="/" title="Home" rel="home" class="header__logo" id="logo"><img src="https://www.dph.illinois.gov/sites/all/themes/idph/logo.png" alt="Home" class="header__logo-image" /></a>
+    
+        <div id="searchsloganwrapper">
+          <div class="header__region region region-header">
+    <div id="block-search-form" class="block block-search searchtop first last odd" role="search">
+
+      
+  <form action="/covid19/vaccine-faq" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+  <div class="form-item form-type-textfield form-item-search-block-form">
+  <label class="element-invisible" for="edit-search-block-form--2">Search </label>
+ <input title="Enter the terms you wish to search for." class="apachesolr-autocomplete form-text" data-apachesolr-autocomplete-id="search-block-form" type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" />
+</div>
+<div class="form-actions form-wrapper" id="edit-actions"><input alt="Search IDPH" type="image" id="edit-submit" name="submit" src="/sites/all/themes/idph/images/icon_search.png" class="form-submit" /></div><input type="hidden" name="form_build_id" value="form-KIqX3LWBy16qaP55deizxLU2W6PmCstQZ7-MwI6AnJY" />
+<input type="hidden" name="form_id" value="search_block_form" />
+</div>
+</div></form>
+</div>
+  </div>
+                    <div class="headheadslogan">Protecting health, improving lives.</div>
+            </div>
+      <div class="region region-topheadermenu">
+    <div id="block-menu-menu-topheadermenu" class="block block-menu topheadermenu first odd" role="navigation">
+
+      
+  <ul class="menu"><li class="menu__item is-leaf first leaf"><a href="/about-idph" title="" class="menu__link">About</a></li>
+<li class="menu__item is-leaf leaf"><a href="/events" title="" class="menu__link">Events</a></li>
+<li class="menu__item is-leaf last leaf"><a href="/employment-opportunities" title="IDPH Employment Opportunities " class="menu__link">Careers</a></li>
+</ul>
+</div>
+<div id="block-block-1" class="block block-block SocialMediaIcons last even">
+
+      
+  <style>
+<!--/*--><![CDATA[/* ><!--*/
+
+.goog-te-combo {padding:4px;background: #0D5AA2; color:white;border: 1px solid white; border-radius:10px;}
+
+/*--><!]]>*/
+</style><p style="margin-bottom:0px;"><a href="https://www.facebook.com/IDPH.Illinois" rel="noopener noreferrer" target="_blank"><i class="fa fa-facebook fa-fw"> </i> </a> <a href="https://twitter.com/IDPH" rel="noopener noreferrer" target="_blank"> <i class="fa fa-twitter fa-fw"> </i> </a> <a href="https://www.instagram.com/illinoisdph/" rel="noopener noreferrer" target="_blank"> <i class="fa fa-instagram fa-fw"> </i> </a></p>
+<div id="google_translate_element"> </div>
+<script type="text/javascript">
+<!--//--><![CDATA[// ><!--
+
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+
+//--><!]]>
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</div>
+  </div>
+
+  </header>
+    <div class="region region-landingpagealert">
+    <div id="block-views-landing-page-alerts-block" class="block block-views first last odd">
+
+      
+  <div class="view view-landing-page-alerts view-id-landing_page_alerts view-display-id-block homepageAlert view-dom-id-dd2387595dc93dfed5ad55f13bd0bd80">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+      
+  <div class="views-field views-field-body">        <a href="https://www.dph.illinois.gov/regionmetrics" target="_blank"><!--<h3 style="margin: 5px;"><a href="https://www.illinois.gov/livevideo"><i class="material-icons" style="font-size:30px;">ondemand_video</i>Today's Press Conference for COVID-19 will begin at 12:00 pm Click Here to Watch Live</a></h3>--><h3 style="margin:2px;"><a href="/covid19/vaccine-faq">Illinois is now in Phase 1B of the Vaccination Rollout. Find more information here.</a></h3>
+<h3 style="margin:2px;"><a href="/regionmetrics">Illinois Resurgence Region Tiers and Metrics can be found here.</a></h3>
+</a>  </div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>
+</div>
+  </div>
+<div id="navigation">
+
+      
+        <div class="region region-navigation">
+    <div id="block-superfish-2" class="block block-superfish nav-collapsed first last odd">
+
+      
+  <ul  id="superfish-2" class="menu sf-menu sf-menu-covid-19-menu sf-horizontal sf-style-default sf-total-items-8 sf-parent-items-7 sf-single-items-1"><li id="menu-134321-2" class="first odd sf-item-1 sf-depth-1 sf-no-children"><a href="/covid19" class="sf-depth-1">COVID-19 Home</a></li><li id="menu-145586-2" class="middle even sf-item-2 sf-depth-1 sf-total-children-10 sf-parent-children-3 sf-single-children-7 menuparent"><a href="/covid19/community-guidance" title="" class="sf-depth-1 menuparent">Guidance</a><ul><li id="menu-145751-2" class="first odd sf-item-1 sf-depth-2 sf-total-children-1 sf-parent-children-0 sf-single-children-1 menuparent"><a href="/covid19/community-guidance/workplace-health-and-safety-guidance" class="sf-depth-2 menuparent">Workplace Health and Safety Guidance</a><ul><li id="menu-148971-2" class="firstandlast odd sf-item-1 sf-depth-3 sf-no-children"><a href="/covid19/community-guidance/workplace-health-and-safety-guidance/employee-employer-rights-and-safety" class="sf-depth-3">Workplace Rights and Safety</a></li></ul></li><li id="menu-145801-2" class="middle even sf-item-2 sf-depth-2 sf-no-children"><a href="/covid19/community-guidance/places-worship-guidance" class="sf-depth-2">Places of Worship Guidance</a></li><li id="menu-149081-2" class="middle odd sf-item-3 sf-depth-2 sf-no-children"><a href="/covid19/community-guidance/quarantine-guidance" class="sf-depth-2">Quarantine Guidance</a></li><li id="menu-148981-2" class="middle even sf-item-4 sf-depth-2 sf-total-children-3 sf-parent-children-0 sf-single-children-3 menuparent"><a href="/covid19/community-guidance/school-guidance" class="sf-depth-2 menuparent">School Guidance</a><ul><li id="menu-148996-2" class="first odd sf-item-1 sf-depth-3 sf-no-children"><a href="/covid19/community-guidance/guidance-pre-k-12-schools-and-day-care-programs-addressing-covid-19" class="sf-depth-3">Addressing COVID-19 in Schools</a></li><li id="menu-149001-2" class="middle even sf-item-2 sf-depth-3 sf-no-children"><a href="/covid19/community-guidance/child-face-coverings-schools" class="sf-depth-3">Child Face Coverings in Schools</a></li><li id="menu-148986-2" class="last odd sf-item-3 sf-depth-3 sf-no-children"><a href="/covid19/community-guidance/school-guidance-faq" class="sf-depth-3">School Guidance FAQs</a></li></ul></li><li id="menu-148946-2" class="middle odd sf-item-5 sf-depth-2 sf-no-children"><a href="/covid19/community-guidance/daycare-centers" class="sf-depth-2">Daycare Guidance</a></li><li id="menu-145636-2" class="middle even sf-item-6 sf-depth-2 sf-no-children"><a href="/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus/pregnancy-children" class="sf-depth-2">Children &amp; Pregnant Women Guidance</a></li><li id="menu-145656-2" class="middle odd sf-item-7 sf-depth-2 sf-no-children"><a href="/covid19/community-guidance/ems-first-responder" class="sf-depth-2">EMS &amp; First Responder Guidance</a></li><li id="menu-148966-2" class="middle even sf-item-8 sf-depth-2 sf-no-children"><a href="/covid19/community-guidance/sports-safety-guidance" class="sf-depth-2">Sports Safety Guidance</a></li><li id="menu-145616-2" class="middle odd sf-item-9 sf-depth-2 sf-total-children-5 sf-parent-children-0 sf-single-children-5 menuparent"><a href="/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus/long-term-care-guidance" class="sf-depth-2 menuparent">Long Term Care Facilities Guidance</a><ul><li id="menu-149076-2" class="first odd sf-item-1 sf-depth-3 sf-no-children"><a href="/covid19/community-guidance/essential-caregiver-guidance-long-term-care-facilities" class="sf-depth-3">Essential Caregiver Guidance</a></li><li id="menu-145826-2" class="middle even sf-item-2 sf-depth-3 sf-no-children"><a href="/covid19/community-guidance/long-term-care-covid-19-testing-requirements" class="sf-depth-3">Long Term Care Testing Requirements</a></li><li id="menu-149031-2" class="middle odd sf-item-3 sf-depth-3 sf-no-children"><a href="/covid19/community-guidance/ltc-antigen-testing" class="sf-depth-3">Long-Term Care Antigen Testing</a></li><li id="menu-145836-2" class="middle even sf-item-4 sf-depth-3 sf-no-children"><a href="/covid19/community-guidance/outdoor-visitation-guidance-long-term-care-facilities" class="sf-depth-3">Outdoor Visitation Guidance</a></li><li id="menu-145851-2" class="last odd sf-item-5 sf-depth-3 sf-no-children"><a href="/covid19/community-guidance/ppe-guidance-covid-19-long-term-care-settings" class="sf-depth-3">PPE Guidance in LTC Facilities</a></li></ul></li><li id="menu-145756-2" class="last even sf-item-10 sf-depth-2 sf-no-children"><a href="/covid19/community-guidance/oral-and-dental-care-guidance" class="sf-depth-2">Oral and Dental Care Guidance</a></li></ul></li><li id="menu-145671-2" class="middle odd sf-item-3 sf-depth-1 sf-total-children-11 sf-parent-children-2 sf-single-children-9 menuparent"><a href="/covid19/covid19-statistics" class="sf-depth-1 menuparent">Illinois Data</a><ul><li id="menu-148956-2" class="first odd sf-item-1 sf-depth-2 sf-no-children"><a href="/regionmetrics" class="sf-depth-2">Regional COVID-19 Metrics</a></li><li id="menu-145861-2" class="middle even sf-item-2 sf-depth-2 sf-total-children-5 sf-parent-children-0 sf-single-children-5 menuparent"><a href="/covid19/contact-tracing" class="sf-depth-2 menuparent">Contact Tracing</a><ul><li id="menu-149051-2" class="first odd sf-item-1 sf-depth-3 sf-no-children"><a href="/covid19/contact-tracing-data" class="sf-depth-3">Contact Tracing Data</a></li><li id="menu-149056-2" class="middle even sf-item-2 sf-depth-3 sf-no-children"><a href="/covid19/outbreak-locations" class="sf-depth-3">Outbreak Locations</a></li><li id="menu-149061-2" class="middle odd sf-item-3 sf-depth-3 sf-no-children"><a href="/covid19/location-exposure" class="sf-depth-3">Potential Exposure Location</a></li><li id="menu-149071-2" class="middle even sf-item-4 sf-depth-3 sf-no-children"><a href="/covid19/school-aged-metrics" class="sf-depth-3">School Outbreaks</a></li><li id="menu-149066-2" class="last odd sf-item-5 sf-depth-3 sf-no-children"><a href="/covid19/school-exposures" class="sf-depth-3">Schools Potential Exposures</a></li></ul></li><li id="menu-145856-2" class="middle odd sf-item-3 sf-depth-2 sf-total-children-1 sf-parent-children-0 sf-single-children-1 menuparent"><a href="/countymetrics" class="sf-depth-2 menuparent">County Level Risk Metrics</a><ul><li id="menu-149006-2" class="firstandlast odd sf-item-1 sf-depth-3 sf-no-children"><a href="/countyschool" class="sf-depth-3">County &amp; School Metrics</a></li></ul></li><li id="menu-145716-2" class="middle even sf-item-4 sf-depth-2 sf-no-children"><a href="/covid19/hospitalization-utilization" class="sf-depth-2">Hospitalization Utilization</a></li><li id="menu-145846-2" class="middle odd sf-item-5 sf-depth-2 sf-no-children"><a href="/covid19/statistics/covid-raceethnicity-metrics" class="sf-depth-2">Race/Ethnicity Metrics</a></li><li id="menu-145811-2" class="middle even sf-item-6 sf-depth-2 sf-no-children"><a href="/covid19/syndromic-surveillance" class="sf-depth-2">Syndromic Surveillance</a></li><li id="menu-145731-2" class="middle odd sf-item-7 sf-depth-2 sf-no-children"><a href="/covid19/long-term-care-facility-outbreaks-covid-19" class="sf-depth-2">LTC Facility Outbreaks</a></li><li id="menu-152226-2" class="middle even sf-item-8 sf-depth-2 sf-no-children"><a href="/covid19/data-portal" title="" class="sf-depth-2">Data Portal</a></li><li id="menu-149036-2" class="middle odd sf-item-9 sf-depth-2 sf-no-children"><a href="/covid19/testing-statistics" class="sf-depth-2">Testing Statistics</a></li><li id="menu-148991-2" class="middle even sf-item-10 sf-depth-2 sf-no-children"><a href="/travel" class="sf-depth-2">Travel Data</a></li><li id="menu-157586-2" class="last odd sf-item-11 sf-depth-2 sf-no-children"><a href="/covid19/variants" class="sf-depth-2">Variants</a></li></ul></li><li id="menu-145721-2" class="middle even sf-item-4 sf-depth-1 sf-total-children-1 sf-parent-children-0 sf-single-children-1 menuparent"><a href="/testing" class="sf-depth-1 menuparent">Testing</a><ul><li id="menu-148961-2" class="firstandlast odd sf-item-1 sf-depth-2 sf-no-children"><a href="/testing/mobile-testing-sites" class="sf-depth-2">Mobile Testing Sites</a></li></ul></li><li id="menu-137011-2" class="middle odd sf-item-5 sf-depth-1 sf-total-children-5 sf-parent-children-0 sf-single-children-5 menuparent"><a href="/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus/symptoms" class="sf-depth-1 menuparent">Resources &amp; Information</a><ul><li id="menu-152201-2" class="first odd sf-item-1 sf-depth-2 sf-no-children"><a href="/covid19/treatment" class="sf-depth-2">Treatment Information</a></li><li id="menu-139711-2" class="middle even sf-item-2 sf-depth-2 sf-no-children"><a href="/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus/faq" class="sf-depth-2">Frequently Asked Questions</a></li><li id="menu-145681-2" class="middle odd sf-item-3 sf-depth-2 sf-no-children"><a href="/covid19/recovered-covid19-patient-plasma-request" class="sf-depth-2">Donation of Convalescent Plasma</a></li><li id="menu-152191-2" class="middle even sf-item-4 sf-depth-2 sf-no-children"><a href="/covid19/daily-communications" class="sf-depth-2">Public Communication</a></li><li id="menu-154891-2" class="last odd sf-item-5 sf-depth-2 sf-no-children"><a href="/covid19/ambassador-program" class="sf-depth-2">COVID-19 Ambassadors</a></li></ul></li><li id="menu-145666-2" class="middle even sf-item-6 sf-depth-1 sf-total-children-6 sf-parent-children-0 sf-single-children-6 menuparent"><a href="/covid19/health-care-providers" class="sf-depth-1 menuparent">Health Care Providers &amp; Facilities</a><ul><li id="menu-145711-2" class="first odd sf-item-1 sf-depth-2 sf-no-children"><a href="/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus/health-care-providers/elective-procedures-guidance" class="sf-depth-2">Elective Surgical Procedure Guidance</a></li><li id="menu-148976-2" class="middle even sf-item-2 sf-depth-2 sf-no-children"><a href="/covid19/health-care-providers/lab-testing-procedures" class="sf-depth-2">Lab and Testing Procedures</a></li><li id="menu-145786-2" class="middle odd sf-item-3 sf-depth-2 sf-no-children"><a href="/covid19/community-guidance/multisystem-inflammatory-syndrome-children" class="sf-depth-2">Multisystem Inflammatory Syndrome in Children</a></li><li id="menu-145781-2" class="middle even sf-item-4 sf-depth-2 sf-no-children"><a href="/covid19/community-guidance/routine-oral-and-dental-care" class="sf-depth-2">Routine Oral and Dental Care</a></li><li id="menu-149046-2" class="middle odd sf-item-5 sf-depth-2 sf-no-children"><a href="/covid19/community-guidance/provider-guidance-testing" class="sf-depth-2">Testing Recommendations</a></li><li id="menu-157536-2" class="last even sf-item-6 sf-depth-2 sf-no-children"><a href="/covid19/health-care-providers/vaccine-provider-instructions" class="sf-depth-2">Vaccine Provider Instructions</a></li></ul></li><li id="menu-137006-2" class="middle odd sf-item-7 sf-depth-1 sf-total-children-3 sf-parent-children-0 sf-single-children-3 menuparent"><a href="/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus/media-publications" class="sf-depth-1 menuparent">Media &amp; Publications</a><ul><li id="menu-139706-2" class="first odd sf-item-1 sf-depth-2 sf-no-children"><a href="/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus/media-publications/daily-press-briefings" title="" class="sf-depth-2">COVID-19 Press Briefings</a></li><li id="menu-137001-2" class="middle even sf-item-2 sf-depth-2 sf-no-children"><a href="/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus/translated-resources" class="sf-depth-2">External &amp; Translated Resources</a></li><li id="menu-145576-2" class="last odd sf-item-3 sf-depth-2 sf-no-children"><a href="/covid19/governor-pritzkers-executive-orders-and-rules" class="sf-depth-2">Governor Pritzker&#039;s Executive Orders and Rules</a></li></ul></li><li id="menu-149096-2" class="active-trail last even sf-item-8 sf-depth-1 sf-total-children-3 sf-parent-children-0 sf-single-children-3 menuparent"><a href="/covid19/vaccine-faq" class="sf-depth-1 menuparent active">Vaccine Information</a><ul><li id="menu-149101-2" class="first odd sf-item-1 sf-depth-2 sf-no-children"><a href="/covid19/vaccination-plan" class="sf-depth-2">Vaccination Planning Guide</a></li><li id="menu-152196-2" class="middle even sf-item-2 sf-depth-2 sf-no-children"><a href="/covid19/vaccinedata" class="sf-depth-2">Vaccine Data</a></li><li id="menu-152186-2" class="last odd sf-item-3 sf-depth-2 sf-no-children"><a href="/covid19/vaccine-distribution" class="sf-depth-2">Vaccine Distribution</a></li></ul></li></ul>
+</div>
+  </div>
+
+</div>
+  <div class="breadcrumb"><a href="/">Home</a> » <a href="/covid19">COVID-19 Home</a> » COVID-19 Vaccine</div>      
+    <div id="main">
+      
+                <div id="content" class="column columnshadow" role="main">
+                            <a id="main-content"></a>
+                
+                        <h1 class="page__title title" id="page-title">COVID-19 Vaccine</h1>
+                                
+                                                
+
+
+<article class="node-27421 node node-guidance view-mode-full clearfix" about="/covid19/vaccine-faq" typeof="sioc:Item foaf:Document">
+
+      <header>
+                  <span property="dc:title" content="COVID-19 Vaccine" class="rdf-meta element-hidden"></span>
+      
+          </header>
+  
+  <div class="field field-name-field-header-highlight field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"><style type="text/css">
+<!--/*--><![CDATA[/* ><!--*/
+.btnLink > div {min-width:32%; flex-grow:1}
+    @media (max-width:800px) {
+.btnLink > div {width:32%;} {
+            width: 100%
+        }
+    }
+   .btnMenu {
+        color: white;
+        background: #002b77;
+    }
+
+        .btnMenu h3 {
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        .btnMenu a, .btnMenu a:visited, .btnMenu a:hover {
+            color: white !important;
+        }
+
+    .flex-menu {
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+        .flex-menu > div {
+            margin: 5px;
+            border-radius: 12px;
+            padding: 10px;
+            max-width: 100%;
+            min-width: 20%;
+            transition: all 0.3s ease;
+        }
+
+            .flex-menu > div:hover {
+                transform: scale(1.05);
+                box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            }
+
+/*--><!]]>*/
+</style><div class="flex-menu">
+<div class="btnMenu">
+<h3><a href="/covid19/vaccination-plan">Vaccination Plan</a></h3>
+</div>
+<div class="btnMenu">
+<h3>Download Document<br />
+(<a href="/sites/default/files/COVID19/COVID-19_Vaccine_FAQs_Sp.pdf" target="_blank">Spanish</a>) (<a href="/sites/default/files/COVID19/COVID-19_Vaccine_FAQs_Polish20201221.pdf" target="_blank">Polish</a>) (<a href="/sites/default/files/COVID19/COVID-19_Vaccine_FAQs_French.pdf" target="_blank">French</a>) (<a href="/sites/default/files/COVID19/COVID-19_Vaccine_FAQs_Chinese.pdf" target="_blank">Chinese</a>)</h3>
+</div>
+<div class="btnMenu">
+<h3><a href="https://coronavirus.illinois.gov/s/vaccine-plan-overview" target="_blank">Vaccine Eligibility</a></h3>
+</div>
+<div class="btnMenu">
+<h3><a href="https://coronavirus.illinois.gov/s/vaccination-location" target="_blank">Vaccination Locations</a></h3>
+</div>
+<div class="btnMenu">
+<h3><a href="/sites/default/files/COVID19/IDPH EMT Proclamation 12.14.20 FINAL.pdf" target="_blank">EMT Scope of Practice</a></h3>
+</div>
+</div>
+</div></div></div><div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><style type="text/css">
+<!--/*--><![CDATA[/* ><!--*/
+.padded-table td, th {
+        background: #adadad;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+        .flex-container > div {
+            width: 48%;
+            margin: 5px;
+        }
+
+        .flex-container h2 {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 0px;
+            color: #fff;
+            padding: 10px;
+        }
+
+    .highRiskul, .medRiskul, .lowRiskul {
+        list-style: none;
+        margin-top: 0px;
+        margin-left: 0px;
+        padding: 0px;
+    }
+
+        .highRiskul li, .medRiskul li, .lowRiskul li {
+            margin: 1px;
+            padding-left: 10px;
+            width: 100%;
+        }
+
+        .highRiskul li {
+            background: #d4e8ff;
+        }
+
+
+    @media (max-width:800px) {
+        .flex-container > div {
+            width: 100%
+        }
+    }
+
+/*--><!]]>*/
+</style><div class="boxHighlight" style="display:none;">
+<h1><a href="/sites/default/files/COVID19/PHASE1aVaccineEligibility.pdf" target="_blank"><i class="material-icons-round">picture_as_pdf</i>Vaccination Phase 1A – Eligible Individuals</a></h1>
+<div class="flex-container">
+<div>
+<h2 style="background:#00232a">Hospitals</h2>
+<ul class="highRiskul"><li>Nurses and Nursing Assistants</li>
+<li>Physicians/Nurse Practitioners/Physician Assistants</li>
+<li>Respiratory Technicians</li>
+<li>Pharmacists</li>
+<li>Environmental Services Staff</li>
+<li>Phlebotomist</li>
+<li>Infectious Waste Workers</li>
+<li>COVID Sample Lab</li>
+<li>Organ Harvester</li>
+<li>Students on Clinical Rotations</li>
+<li>Dietary staff</li>
+<li>Clergy/pastoral/chaplains</li>
+<li>Interpreters</li>
+<li>Crisis intervention staff</li>
+<li>Laundry or security staff</li>
+<li>Reception Staff</li>
+<li>Emergency Medical Services (EMS)</li>
+<li>Fire Department Staff acting as EMS</li>
+<li>Air Medical Transport (Rotor &amp; Fixed Wing)</li>
+<li>X-Ray Technician</li>
+</ul></div>
+<div>
+<div style="background:#00232a; color:white;">
+<h2>Non-hospital Health Care</h2>
+<ul><li>Medical Outpatient</li>
+<li>Public Health Clinics</li>
+<li>LHD Points of Distribution (POD’s)</li>
+<li>Federally Qualified Health Center</li>
+</ul></div>
+<ul class="highRiskul"><li>Nurses and Nursing Assistants</li>
+<li>Physicians/Nurse Practitioners/ Physician Assistants</li>
+<li>Respiratory Technicians</li>
+<li>Dentists and Hygienists</li>
+<li>Pharmacists</li>
+<li>Plasma and Blood Donation Staff</li>
+<li>Morticians</li>
+<li>Public Health Nurses</li>
+<li>Home Health</li>
+<li>School Nurses</li>
+<li>Optometrist</li>
+<li>COVID Testing Staff</li>
+<li>Dermatologist</li>
+<li>Dialysis staff</li>
+<li>Urgent care workers</li>
+<li>Corrections nurses/aides</li>
+<li>Medical/flight transport</li>
+<li>Physical/occupational/speech therapists</li>
+<li>Vaccine clinic workers</li>
+</ul></div>
+<div>
+<div style="background:#00232a; color:white;">
+<h2>Long-term Care Facilities</h2>
+<h3>All Residents of the following settings are eligible</h3>
+<ul><li>Skilled nursing facilities</li>
+<li>Assisted living facilities</li>
+<li>Intermediate care facilities for persons w/developmental disability</li>
+<li>Intermediate care facility for persons w/severe mental illness</li>
+<li>State-run veterans’ homes</li>
+<li>State Operated Center for the Developmentally Disabled</li>
+<li>State Operated Mental Health Centers</li>
+<li>Residential treatment for substance use</li>
+</ul></div>
+<ul class="highRiskul"><li>Nurses and Nursing Assistants</li>
+<li>Physicians / MD, NP, PA</li>
+<li>Respiratory Technicians</li>
+<li>Dentists and Hygienists</li>
+<li>Long-Term Care Facility Staff</li>
+<li>Pharmacists</li>
+<li>Mental health clinicians</li>
+<li>Environmental Services Staff</li>
+<li>Reception Staff</li>
+<li>Medical Facility Surveyor</li>
+<li>Dietary staff</li>
+<li>Interpreters</li>
+<li>Laundry or security staff</li>
+</ul></div>
+<div>
+<div style="background:#00232a; color:white;">
+<h2>Other Congregate Care</h2>
+<h3>All Residents of the following settings are eligible</h3>
+<ul><li>Continuing care residential</li>
+<li>Residential care adult homes</li>
+<li>Supportive housing for seniors</li>
+<li>Supportive residential for persons w/developmental disability</li>
+<li>Supportive residential for persons w/severe mental illness</li>
+<li>Community Integrated Living Arrangement</li>
+<li>Supervised residential for persons w/developmental disability</li>
+<li>Supervised residential for persons w/severe mental illness</li>
+</ul></div>
+<ul class="highRiskul"><li>Nurses and Nursing Assistants</li>
+<li>Physicians / MD, NP, PA</li>
+<li>Respiratory Technicians</li>
+<li>Group Home/Residential Staff</li>
+<li>Pharmacists</li>
+<li>Environmental Services Staff</li>
+<li>Reception Staff</li>
+<li>Home Aide/Caregiver</li>
+<li>Corrections nurses/assistants</li>
+<li>Congregate Care Surveyor</li>
+<li>Hospice/palliative care staff</li>
+<li>Community health workers when acting as health aid or health translator</li>
+</ul></div>
+</div>
+</div>
+<div class="boxHighlight" style="display:none;">
+<h1><a href="/sites/default/files/COVID19/PHASE%201b%20VaccineDistribution.pdf" target="_blank"><i class="material-icons-round">picture_as_pdf</i>Vaccination Phase 1B – Eligible Individuals</a></h1>
+<div class="flex-container">
+<div style="width:100%;">
+<h2 style="background:#00232a">Illinois Individuals Age 65+</h2>
+<p class="highRiskul">To provide more equitable vaccine access to elder populations given data showing people of color die of COVID-19 at younger ages, Illinois lowered the age eligibility recommended by ACIP by 10 years, from age 75 to age 65. Illinois has 1.3 million people who qualify as “frontline essential workers” and 1.9 million adults age 65 and over, totaling 3.2 million eligible Illinoisans.</p>
+</div>
+<h1 style=" width: 100%; background: #1d64b7; color: white; text-align: center;">Frontline Workers</h1>
+<hr /><div>
+<h2 style="background:#00232a">First Responders</h2>
+<ul class="highRiskul"><li>Fire</li>
+<li>Law Enforcement</li>
+<li>911 workers</li>
+<li>Security Personnel</li>
+<li>School Officers</li>
+</ul></div>
+<div>
+<h2 style="background:#00232a">Education (Congregate Child Care, Pre-K through 12th grade)</h2>
+<ul class="highRiskul"><li>Teachers</li>
+<li>Principals</li>
+<li>Student Support</li>
+<li>Student Aids</li>
+<li>Day Care Workers</li>
+</ul></div>
+<div>
+<h2 style="background:#00232a">Food and Agriculture</h2>
+<ul class="highRiskul"><li>Processing</li>
+<li>Plants</li>
+<li>Veterinary Health</li>
+<li>Livestock Services</li>
+<li>Animal Care </li>
+</ul></div>
+<div>
+<h2 style="background:#00232a">Manufacturing</h2>
+<ul class="highRiskul"><li>Industrial Production of Goods for Distribution to Retail</li>
+<li>Wholesale or Other Manufactures</li>
+</ul></div>
+<div>
+<h2 style="background:#00232a">Corrections Workers and Inmates</h2>
+<ul class="highRiskul"><li>Prison/Jail Officers</li>
+<li>Juvenile Facility Staff</li>
+<li>Workers Providing In-Person Support</li>
+<li>Inmates</li>
+</ul></div>
+<div>
+<h2 style="background:#00232a">United State Postal Services Workers</h2>
+</div>
+<div>
+<h2 style="background:#00232a">Public Transit Workers</h2>
+<ul class="highRiskul"><li>Flight Crew</li>
+<li>Bus Drivers</li>
+<li>Train Conductors</li>
+<li>Taxi Drivers</li>
+<li>Para-Transit Drivers</li>
+<li>In-Person Support</li>
+<li>Ride Sharing Services</li>
+</ul></div>
+<div>
+<h2 style="background:#00232a">Grocery Store Workers</h2>
+<ul class="highRiskul"><li>Baggers</li>
+<li>Cashiers</li>
+<li>Stockers</li>
+<li>Pick-Up</li>
+<li>Customer Service</li>
+</ul></div>
+<div>
+<h2 style="background:#00232a">Shelters/Adult Day Care</h2>
+<ul class="highRiskul"><li>Homeless Shelter</li>
+<li>Women's Shelter</li>
+<li>Adult Day/Drop-In Program</li>
+<li>Sheltered Workshop</li>
+<li>Psycho-Social Rehab</li>
+</ul></div>
+</div>
+</div>
+<p>A safe and effective COVID-19 vaccine is a critical component of the U.S. strategy to reduce COVID-19-related illnesses, hospitalizations, and deaths.</p>
+<p>Easy access to COVID-19 vaccines is equally important. The Centers for Disease Control and Prevention (CDC) is working with public health departments, health care providers, and other partners to make sure people can easily get a COVID-19 vaccine and that cost is not a barrier. Within Illinois, the CDC recognizes the state and the city of Chicago as separate jurisdictions for the distribution of vaccine. Both Illinois and Chicago, however, are collaborating to ensure that vaccines are delivered and available in accordance with the CDC guidelines and recommendations of the Advisory Committee on Immunization Practices (ACIP).</p>
+<h1>Vaccine availability</h1>
+<h2>Q. When can I get a COVID-19 vaccine?</h2>
+<p>A. The first supply of COVID-19 vaccine receiving Emergency Use Authorization (EUA) by the U.S. Food and Drug Administration (FDA) began being distributed in the U.S. on December 14, 2020.  During the initial period, referred to as Phase 1a, supplies of the vaccine will be limited, and therefore allocated to health care personnel and Long-term care (LTC) residents and staff.  We expect vaccine supply to increase over time and Phase 1b is expected to begin when Phase 1a is substantially completed.  (To view the categories of priority populations in Phase 1a and Phase 1b, please see the chart below.) </p>
+<h2>Q. Where can I get the vaccine?</h2>
+<p>A. If you are an eligible individual as outlined in Phase 1a or 1b, such as health care workers, first responders, essential workers, or anyone 65 years of age and older, you can find your nearest vaccination site <a href="https://coronavirus.illinois.gov/s/vaccination-location">here</a>.</p>
+<h2>Q. Will the state (or federal government) establish mass immunization programs, like they did in the 1960’s?</h2>
+<p>A. Illinois is working with local health departments and providers across the state to provide COVID-19 vaccinations that resemble larger versions of yearly flu clinics, rather than the mass vaccination activities of the past.</p>
+<h2>Q. Will undocumented people be able to get the vaccine?</h2>
+<p>A. All populations in Illinois, including individuals who are undocumented, can receive the vaccine.  No one will be turned away when it is their time to be vaccinated. </p>
+<h2>Q. My family member was offered a vaccine through their employer. Why can’t the rest of my family get the vaccine?</h2>
+<p>A. Because vaccine will be very limited when it first comes out, administration will be limited to those identified in prioritized (high-risk) groups by the Advisory Committee on Immunization Practices (ACIP) and the CDC. This is to ensure that all individuals in the high-risk groups are able to receive the vaccine. As more vaccine becomes available, those groups eligible to receive the vaccine will expand.</p>
+<h2>Q. Is there a scheduled date for distribution per phases?</h2>
+<p>A. There is not a scheduled calendar date, but once ACIP provides its recommendation on priority vaccination groups, IDPH will distribute vaccine to Regional Hospital Coordinating Centers (RHCC) partners throughout the state. From there, the distribution will continue ultimately through local health departments to local health care providers.</p>
+<h2>Q. Will distribution of vaccine be divided per capita?</h2>
+<p>A. Vaccine will be distributed according to the population of each county, adjusted to ensure health equity using the COVID-19 Community Vulnerability Index (CCVI).</p>
+<h2>Q. What about one municipality that has very high numbers of COVID-19 cases within a county that otherwise had less cases? (in reference to prioritizing vaccine distribution)</h2>
+<p>A. Distribution within counties will be overseen by local health departments (LHD). IDPH will work with LHDs to ensure providers have adequate amounts of vaccine to support the municipalities/communities they serve.</p>
+<h2>Q. I understand the vaccination requires two shots. Why, and what if I am unable (or do not want) to get a second shot?</h2>
+<p>A. The currently available COVID-19 vaccines require two shots to be fully effective. This helps make sure that enough antibodies are being produced to provide effective and long-lasting protection. We do not know if receiving only one dose of the COVID-19 vaccine is protective. If you choose not to get a second dose, you may reduce the effectiveness of the vaccine. The first dose of the vaccine will provide some protection, but the recommendation is to receive two doses to be protected as intended.</p>
+<h2>Q. Different COVID-19 vaccines are expected to be available. Which vaccine should I take?</h2>
+<p>A. Any COVID-19 vaccine authorized by the U.S. Food and Drug Administration (FDA) is expected to be effective. Data available at this point would suggest that the Pfizer and Moderna vaccines are very similar in their abilities to produce immunity to the virus. The recommendation would be to take whatever vaccine is made available to you and be sure to receive the booster shot of that same vaccine at the appropriate time. If you choose not to get a second dose, you may reduce the effectiveness of the vaccine.</p>
+<h2>Q. What happens if they run out of the vaccine before I get my second shot?</h2>
+<p>A. CDC is structuring shipments in such a way that 21 or 28 days after the first shipment, the same number of doses will be shipped, so providers will have enough vaccine for a second dose. The 21- or 28-day requirement between doses is a minimum requirement, not a maximum. If, for some reason, you are unable to receive the second dose at the recommended interval, you can receive the second dose at a later date.</p>
+<h2>Q. Who besides healthcare workers will be able to administer the vaccine? For example, we recently passed a law allowing dentists to administer flu shots. Will dentists, pharmacists and other qualified professionals, besides doctors and nurses, be able to administer the vaccine?</h2>
+<p>A. IDPH licenses EMTs and CNAs. All other healthcare professionals including but not limited to doctors, nurses, pharmacists, and dentists are licensed by the Illinois Department of Financial and Professional Regulation (IDFPR). Currently dentists, pharmacists and pharmacy technicians have had their scope of practice extended by IDFPR to allow them to administer the COVID-19 vaccine when it becomes available. IDPH has issued recommendations to allow EMT’s at the advanced and intermediate levels to administer vaccine, as long as their Medical Director for their EMS system follows certain guidelines.</p>
+<h1>Vaccine Requirements/Mandates</h1>
+<h2>Q. Do I have to get a COVID-19 vaccine?</h2>
+<p>A. There is no federal or state mandate to receive the COVID-19 vaccine. The CDC recommends the vaccine to all Americans 16 and over.</p>
+<h2>Q. Can my employer require that I receive a COVID-19 vaccine before returning to work?</h2>
+<p>A. Decisions regarding immunization at private workplaces are up to the employer.</p>
+<h2>Q. Are schools requiring students to receive a COVID-19 vaccine, similar to mumps and measles? Will restrictions be placed on my child if we refuse to vaccinate?</h2>
+<p>A. There is no requirement for students to receive the COVID-19 vaccine at this time. Currently, a pediatric vaccine is not available, and it may be some time before one is approved and becomes available.</p>
+<h2>Q. What happens if I refuse to get vaccinated?</h2>
+<p>A. There are no legal repercussions (such as fines, sanctions or punishments) for refusing the vaccine. If you do not get vaccinated, you will not be protected against the virus that causes COVID-19 and will be more likely to be infected with the virus. Additionally, you will be at risk of transmitting this deadly virus to loved ones and other community members.</p>
+<h2>Q. Do I need a vaccine if I have already had COVID-19?</h2>
+<p>A. Yes, people who have already had COVID-19 should plan to take the COVID-19 vaccine, because the science is currently inconclusive as to whether you will be naturally protected from a second COVID-19 infection in the future. The CDC currently suggests that if you were infected with COVID-19 during the previous 90 days, it is likely that you still have immune protection and that you will be asked to wait to receive your vaccine to allow others to be vaccinated first.</p>
+<h2>Q. Do I have to get both the flu vaccine and the COVID-19 vaccine?</h2>
+<p>A. A seasonal flu vaccine will not protect you from COVID-19. Being infected with both the flu and COVID-19 at the same time could lead to a more severe illness, which is why it is more important now than ever to get the flu vaccine.</p>
+<h1>Vaccine Safety</h1>
+<h2>Q. Is a COVID-19 vaccine safe?</h2>
+<p>A. The U.S. vaccine safety system is a deliberate and multi-phase process to ensure all vaccines are as safe as possible. Safety is a top priority. Vaccine candidates conduct clinical trials with many thousands of study participants to generate scientific data and other information for the FDA to determine their safety and effectiveness.</p>
+<p>If the FDA determines a vaccine meets its safety and effectiveness standards, it can make these vaccines available for use in the U.S. by approval or Emergency Use Authorization (EUA). After the FDA makes its determination, ACIP will review the available data in order to make vaccine recommendations to the CDC. ACIP will then recommend vaccine use. After a vaccine is authorized or approved for use, vaccine safety monitoring systems will watch for adverse events (possible side effects). CDC is working to expand safety surveillance through new systems and additional information sources, as well as enhancing existing safety monitoring systems.</p>
+<h2>Q: How was the COVID-19 vaccine studied?</h2>
+<p>A: Each authorized COVID-19 vaccine has been studied in large trials of over 30,000 volunteers and shown to be highly effective in preventing COVID-19 disease. The trials involved people of different ages, sex, race/ethnicity, weight, and medical conditions.</p>
+<p>Pregnant women and people with weakened immune systems were excluded from the COVID-19 vaccine trials, and so the currently available studies do not provide direct information about vaccine safety and effectiveness in these groups of people. The CDC recommends that those who are pregnant consult with their doctor before taking the vaccine.</p>
+<h2>Q. Can the COVID-19 vaccine cause me to become infected or infect others?</h2>
+<p>A. No, you cannot become infected or infect others from receiving the COVID-19 vaccine, because the vaccine contains no live virus. Instead, the vaccine directs your body to produce a protein that teaches your body how to fight off the virus.</p>
+<h2>Q. How long will it take for COVID-19 vaccines to take effect?</h2>
+<p>A. The COVID-19 vaccine is expected to provide some protection a couple of weeks after your first shot and reaches its greatest effectiveness after your second shot. It is very important to take the second shot within the recommended time period for maximum vaccine effectiveness.</p>
+<h2>Q. What have the trials revealed?</h2>
+<p>A. Through their respective clinical trials, Pfizer and Moderna have indicated their vaccines are approximately 95% effective.</p>
+<p>Information gathered through clinical trials becomes public in the course of the EUA submission. Once the EUA is submitted, these documents become accessible by the public through the FDA.</p>
+<h2>Q. Can I get a COVID-19 vaccine if I am pregnant?</h2>
+<p>A. COVID-19 vaccines should be administered to pregnant individuals who choose to be vaccinated.  Pregnant individuals can receive a COVID-19 vaccine in any setting authorized to administer these vaccines, including any clinical setting and nonclinical community-based vaccination sites, such as schools, community centers, and other mass vaccination locations. If you have questions about getting vaccinated, talking with a health care provider may help you make an informed decision.  While a conversation with a health care provider may be helpful, it is not required prior to vaccination.</p>
+<h2>Q. Can children get a COVID-19 vaccine?</h2>
+<p>A. Currently, a pediatric vaccine is not available, and it may be some time before one is approved and becomes available. Clinical trials need to be conducted with children before determining if the existing COVID-19 vaccines are safe and effective for them.</p>
+<h2>Q. Will youth with high risk conditions be included in any of the phases?</h2>
+<p>A. The availability of a vaccine for youth, under the age of 16 years, will depend on the availability of a pediatric vaccine. Clinical trials need to be conducted with children before determining if the existing COVID-19 vaccines are safe and effective for them.</p>
+<h2>Q. When injected with the vaccine, are you injecting me with COVID-19?</h2>
+<p>A. No, you are not being injected with the virus that causes COVID-19. None of the early COVID-19 vaccines tested in the U.S. use a live virus that causes COVID-19. The goal for each vaccine is to teach our immune systems how to recognize and to fight the virus that causes COVID-19. At this time, the vaccines closest to receiving approval are mRNA - messenger ribonucleic acid - vaccines. Like other vaccines, mRNA vaccines work by training the immune system to recognize a virus threat and begin producing antibodies to protect itself.</p>
+<h2>Q. After getting a flu shot, I always get the flu. Will this cause me to get COVID-19?</h2>
+<p>A. No, you cannot become infected, or infect others, from receiving the COVID-19 vaccine, because the vaccine contains no live virus. Instead, the vaccine directs your body to produce a protein that teaches your body how to fight off the virus. Some people develop flu-like symptoms, such as mild fever and muscle aches, after getting a flu vaccination. These symptoms are not the same as having influenza.</p>
+<h2>Q. I have allergies. Is this vaccine safe for me?</h2>
+<p>A. While serious allergic reactions were not seen in vaccine clinical trials of thousands of patients, rare allergic reactions to vaccines are possible. If you have a history of serious allergic reactions, you should discuss your situation with your healthcare provider. The COVID-19 vaccine does not contain any animal products such as eggs.</p>
+<h2>Q. What are the side effects of this vaccine?</h2>
+<p>A. Some people may experience side effects, which are a part of the normal immune response to a vaccine. The majority of the side effects, while not seen in every individual, are signs that your body is recognizing the vaccine and mounting an immune response. Based on prior studies, side effects may include pain, redness and swelling at the site of the injection., fatigue, headache, muscle pain, chills, joint pain, fever, nausea, malaise, and swollen lymph nodes. These symptoms may occur within 2 days after the shot and last 1 to 2 days. Side effects may be more frequent after the 2<sup>nd</sup> shot (booster) and less frequent among older adults</p>
+<p>Long-term side effects are unknown, although most vaccines do not have long-term side effects. Vaccine studies are ongoing and will continue to monitor and watch for adverse events.</p>
+<h2>Q. It took four years to develop the mumps vaccine, how can the COVID-19 vaccine be safe and thoroughly tested so quickly?</h2>
+<p>A. Many things helped this vaccine get developed so rapidly. Significant resources were invested to fund the basic research and clinical trials, accelerating timelines greatly. Joining existing trial sites instead of developing new sites was a time saver. The virus has a good vaccination target and relatively low mutation rate. Additionally, the amount of infection in the communities allowed scientists to quickly compare vaccinated to unvaccinated populations and conclusively shows the vaccine worked. Last, but not least, are the huge number of brave volunteers willing to try the “novel” vaccines during the clinical trials.</p>
+<h2>Q. How long will the vaccine protect me from COVID-19? Will this be an annual vaccination, like the flu?</h2>
+<p>A. We are still learning about length of immunity. To determine how long protection lasts, follow-up studies are required to detect levels of both types of immune responses – antibody and T cell – as well as any repeated exposure risks. As more information becomes available, more information will be shared on the length of immunity.</p>
+<h2>Q. Can I get COVID-19 after the first dose of the vaccine?</h2>
+<p>A. Although the first dose of vaccine offers some immunity, you will still be considered susceptible to COVID-19. The first dose of the vaccine will provide some protection, but the recommendation is to receive two doses to be protected as intended. Pfizer and Moderna have indicated their vaccines are approximately 95% effective.</p>
+<h2>Q. All the research indicates that I am at high risk for contracting COVID-19, yet I am not considered eligible for the vaccine. How is that fair?</h2>
+<p>A. The vaccine manufacturers, CDC, and the state are all committed to getting the vaccine to everyone as soon as possible. ACIP is a group of medical and public health experts that develop recommendations on how to use vaccines to control diseases in the U.S. ACIP decides on vaccine prioritization recommendations by reviewing the FDA information, clinical trial data, and other information. Initially, the limited supply of vaccine will only be available to those determined to be most at risk of exposure to COVID-19. As the vaccine supply increases, more people will be added to those prioritized until it is available to the adult population at large.</p>
+<h2>Q. Is this vaccine preservative free?</h2>
+<p>A. Yes. The vaccine candidates that are likely to be the first offered are preservative free.</p>
+<h1>Other</h1>
+<h2>Q. How does the vaccine cause my body to be protected?</h2>
+<p>A. Your immune system makes antibodies to fight infections. The COVID-19 vaccine causes your body to make antibodies that target the COVID-19 virus. In the event that your body is exposed to the actual COVID-19 virus, the new antibodies prevent infection.</p>
+<h2>Q. I would like to know how we plan to roll out an educational campaign for vaccine.</h2>
+<p>A. Along with educational and communications campaigns from the federal government, the state will use multiple traditional, social, and community media platforms to communicate across Illinois. Providers, statewide, will be educated in the particular vaccine products after EUA approval, but before administering vaccine.</p>
+<h2>Q. Is a COVID-19 vaccine a guarantee that I will not get the virus?</h2>
+<p>A. Like any vaccine, there is no guarantee that you won’t get the virus, but early indications are the vaccines under consideration are 90%-95% effective in protecting against COVID-19.</p>
+<h2>Q. How many people need to get vaccinated to have herd immunity to COVID-19?</h2>
+<p>A. The percentage of people who need to have protection in order to achieve herd immunity varies by disease. Experts do not know what percentage of people would need to get vaccinated to achieve herd immunity to COVID-19.</p>
+<h2>Q. What are the vaccine recommendations for children under age 16?</h2>
+<p>A. Until more studies are completed, a vaccine for children under 16 is not expected to be available in the immediate future.</p>
+<h2>Q. The vaccine is now available, when will we move to Phase 5 of the Restore Illinois plan? If not now, what is required to get to Phase 5?</h2>
+<p>A. At this time, we are not able to immediately move to Phase 5. The vaccine and/or a highly effective treatment needs to be widely available, and new cases need to be eliminated for a sustained period of time, before we can move to Phase 5 or we risk the possibility of increased cases, hospitalizations, and deaths.</p>
+<h2>Q. If I get the vaccine, can I quit wearing a mask?</h2>
+<p>A. No. While the COVID-19 vaccine is highly effective, it not 100% effective. Until the COVID-19 pandemic is controlled, people who receive the vaccine need to continue following Illinois Department of Public Health guidance such as the use of facemasks, social distancing, and regular hand washing. This protects you as well as your family and community.</p>
+<h2>Q: When will masking and social distancing be able to end, allowing us to get back to normal life?</h2>
+<p>A: Given the time it takes to get large quantities of the vaccine produced and distributed, we will need to continue our current mitigation practices for some time. It will remain important that vaccinated people continue to wear masks, practice social distancing and good hand hygiene to help prevent spread. Community infection rates will be continuously monitored and will be used to guide the decision process.</p>
+<h2>Q. What entity will be paying for the vaccines?</h2>
+<p>A. The US Department of Health &amp; Human Services (HHS) will absorb the cost of the vaccines.</p>
+<h2>Q. Can the State purchase more?</h2>
+<p>A. There is no cost to the State for the vaccine. The federal government, through HHS and the CDC, oversees the allocation of vaccine to states.</p>
+<h2>Q. How much will this vaccine cost me? Is it covered by my insurance?</h2>
+<p>A. There is no cost for the vaccine. However, vaccination providers will be able to charge an administration fee for giving the shot. Vaccine providers can get this fee reimbursed by the patient’s public or private insurance company or, for uninsured patients, by the Health Resources and Services Administration at the US Department of Health and Human Services.</p>
+<h2>Q. Will the administrative fees be passed on to the patient in the form of a co-pay or deductible?</h2>
+<p>A. No.</p>
+<h2>Q. Will the manufacturing workers who were deemed essential also be in the first round?</h2>
+<p>A. Individuals who have been disproportionately affected by COVID-19 and frontline workers with higher risk of exposure because of their inability to perform work duties remotely and proximity to other co-workers or members of the public will be included in Phase 1b.   </p>
+<h2>What are the priority groups?</h2>
+<p>The current priority groups that have been released, based on the guidance of ACIP, are as follows:</p>
+<table class="padded-table"><tbody><tr><th>Phase</th>
+<th>Population Group</th>
+<th>Examples of individuals in priority population groups</th>
+</tr><tr><th>1a</th>
+<td>High risk workers in health care facilities</td>
+<td>Physicians, nurses, respiratory technicians, dentists and hygienists, nursing assistants, assisted living facility staff, long-term care facility staff, group home staff, home caregivers, Emergency Medical Services (EMS), Doulas, etc.</td>
+</tr><tr><th>1a</th>
+<td>Residents in Long Term Care (LTC) facilities and Congregate Care Residential Facilities</td>
+<td>Adults who live in facilities that provide a variety of services including medical and personal care to persons who are unable to live independently.</td>
+</tr><tr><th>1b</th>
+<td>Frontline essential workers</td>
+<td>First responders, K-12 education workers including teachers, support staff and childcare workers, manufacturing, distribution, and agriculture workers, United Sates Postal Service workers, correction workers and incarcerated people, public transit workers, grocery store workers, shelter and day care workers.</td>
+</tr><tr><th>1b</th>
+<td>All Illinois residents age 65 and over</td>
+<td> </td>
+</tr></tbody></table><p>After adjusted COVID-19 mortality rates by age, the CDC found that Hispanic and Black Americans were dying at a rate of almost 3 times that of White Americans.</p>
+<p>In Illinois, the average age of COVID-19 death is 81 for white residents, 72 for Black residents and 68 for Latino residents.</p>
+<p>While the highest count of COVID-19 deaths is among those 75 years and older, minority populations are dying at younger ages.  Given those facts, vaccine is being made available to those age 65 and older.</p>
+<p>Additional information on confirmed and potential priority groups can be found here:</p>
+<p><strong>Health care personnel</strong> continue to be on the front line of the nation’s fight against this deadly pandemic. By providing critical care to those infected with the virus that causes COVID-19, many health care personnel are at high risk of being exposed to and getting sick with COVID-19. Health care personnel who get COVID-19 can also spread the virus to patients seeking care for other medical conditions that, in turn, increase patients’ risk for severe COVID-19 illness. Early vaccine access is critical to ensuring the health and safety of this essential workforce of approximately 21 million people across the USA, protecting not only them but also their patients, communities, and the broader health of our country.</p>
+<p><strong>People with certain</strong> <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html">underlying medical conditions</a> are at increased risk for severe COVID-19 illness, regardless of their age. Severe illness means that the person with COVID-19 may require hospitalization, intensive care, or a ventilator to help them breathe, or that they are at increased risk of dying. Early vaccine access is essential to ensuring the health and safety of this population that is disproportionately affected by COVID-19.</p>
+<p><strong>Among adults</strong>, the risk for severe illness and death from COVID-19 increases with age, with <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/older-adults.html">older adults</a> considered to be at the highest risk. Early vaccine access is vital to help protect this population that has been disproportionately affected by COVID-19.</p>
+<p><strong>Workers in essential and critical industries</strong> are considered part of America’s critical infrastructure, as defined by the <a href="https://www.cisa.gov/publication/guidance-essential-critical-infrastructure-workforce">Cybersecurity &amp; Infrastructure Security Agency</a>. Current data show that many of these workers are at increased risk for getting COVID-19. Early vaccine access is to protect them in order to maintain the essential services they provide U.S. communities.</p>
+<p><a href="https://www.cdc.gov/vaccines/acip/meetings/downloads/slides-2020-12/COVID-02-Dooling.pdf">https://www.cdc.gov/vaccines/acip/meetings/downloads/slides-2020-12/COVID-02-Dooling.pdf</a></p>
+</div></div></div><div class="field field-name-field-guidance-document field-type-file field-label-inline clearfix"><div class="field-label">Guidance Document:&nbsp;</div><div class="field-items"><div class="field-item even"><span class="file"><img class="file-icon" alt="PDF icon" title="application/pdf" src="/modules/file/icons/application-pdf.png" /> <a href="https://www.dph.illinois.gov/sites/default/files/COVID-19_Vaccine_FAQs20210106_0.pdf" type="application/pdf; length=348579" title="COVID-19_Vaccine_FAQs20210106_0.pdf">COVID-19 Vaccine FAQ&#039;s</a></span></div></div></div><div class="field field-name-field-audience field-type-taxonomy-term-reference field-label-above"><div class="field-label">Audience:&nbsp;</div><div class="field-items"><div class="field-item even"><a href="/community-settings" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">Community Settings</a></div><div class="field-item odd"><a href="/healthcare-facilities-workers" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">Healthcare Facilities &amp; Workers</a></div><div class="field-item even"><a href="/home" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">Home</a></div><div class="field-item odd"><a href="/local-health-departments" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">Local Health Departments</a></div><div class="field-item even"><a href="/long-term-care-facilities" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">Long Term Care Facilities</a></div></div></div>
+  
+  
+</article>
+                      </div>
+      
+              <aside class="sidebars">
+            <section class="region region-sidebar-first column sidebar">
+    <div id="block-menu-block-6" class="block block-menu-block menu-name-main-menu menu-name-highlight first last odd" role="navigation">
+
+      
+  <div class="menu-block-wrapper menu-block-6 menu-name-menu-covid-19-menu parent-mlid-0 menu-level-1">
+  <ul class="menu"><li class="menu__item is-collapsed first collapsed menu-mlid-134321"><a href="/covid19" class="menu__link sf-depth-1">COVID-19 Home</a></li>
+<li class="menu__item is-expanded expanded menu-mlid-145586"><a href="/covid19/community-guidance" title="" class="menu__link">Guidance</a><ul class="menu"><li class="menu__item is-expanded first expanded menu-mlid-145751"><a href="/covid19/community-guidance/workplace-health-and-safety-guidance" class="menu__link sf-depth-2 menuparent">Workplace Health and Safety Guidance</a><ul class="menu"><li class="menu__item is-leaf first last leaf menu-mlid-148971"><a href="/covid19/community-guidance/workplace-health-and-safety-guidance/employee-employer-rights-and-safety" class="menu__link sf-depth-3">Workplace Rights and Safety</a></li>
+</ul></li>
+<li class="menu__item is-leaf leaf menu-mlid-145801"><a href="/covid19/community-guidance/places-worship-guidance" class="menu__link sf-depth-2">Places of Worship Guidance</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-149081"><a href="/covid19/community-guidance/quarantine-guidance" class="menu__link sf-depth-2">Quarantine Guidance</a></li>
+<li class="menu__item is-expanded expanded menu-mlid-148981"><a href="/covid19/community-guidance/school-guidance" class="menu__link sf-depth-2 menuparent">School Guidance</a><ul class="menu"><li class="menu__item is-leaf first leaf menu-mlid-148996"><a href="/covid19/community-guidance/guidance-pre-k-12-schools-and-day-care-programs-addressing-covid-19" class="menu__link sf-depth-3">Addressing COVID-19 in Schools</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-149001"><a href="/covid19/community-guidance/child-face-coverings-schools" class="menu__link sf-depth-3">Child Face Coverings in Schools</a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-148986"><a href="/covid19/community-guidance/school-guidance-faq" class="menu__link sf-depth-3">School Guidance FAQs</a></li>
+</ul></li>
+<li class="menu__item is-leaf leaf menu-mlid-148946"><a href="/covid19/community-guidance/daycare-centers" class="menu__link sf-depth-2">Daycare Guidance</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-145636"><a href="/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus/pregnancy-children" class="menu__link sf-depth-2">Children &amp; Pregnant Women Guidance</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-145656"><a href="/covid19/community-guidance/ems-first-responder" class="menu__link sf-depth-2">EMS &amp; First Responder Guidance</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-148966"><a href="/covid19/community-guidance/sports-safety-guidance" class="menu__link sf-depth-2">Sports Safety Guidance</a></li>
+<li class="menu__item is-expanded expanded menu-mlid-145616"><a href="/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus/long-term-care-guidance" class="menu__link sf-depth-2 menuparent">Long Term Care Facilities Guidance</a><ul class="menu"><li class="menu__item is-leaf first leaf menu-mlid-149076"><a href="/covid19/community-guidance/essential-caregiver-guidance-long-term-care-facilities" class="menu__link sf-depth-3">Essential Caregiver Guidance</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-145826"><a href="/covid19/community-guidance/long-term-care-covid-19-testing-requirements" class="menu__link sf-depth-3">Long Term Care Testing Requirements</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-149031"><a href="/covid19/community-guidance/ltc-antigen-testing" class="menu__link sf-depth-3">Long-Term Care Antigen Testing</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-145836"><a href="/covid19/community-guidance/outdoor-visitation-guidance-long-term-care-facilities" class="menu__link sf-depth-3">Outdoor Visitation Guidance</a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-145851"><a href="/covid19/community-guidance/ppe-guidance-covid-19-long-term-care-settings" class="menu__link sf-depth-3">PPE Guidance in LTC Facilities</a></li>
+</ul></li>
+<li class="menu__item is-leaf last leaf menu-mlid-145756"><a href="/covid19/community-guidance/oral-and-dental-care-guidance" class="menu__link sf-depth-2">Oral and Dental Care Guidance</a></li>
+</ul></li>
+<li class="menu__item is-expanded expanded menu-mlid-145671"><a href="/covid19/covid19-statistics" class="menu__link sf-depth-1 menuparent">Illinois Data</a><ul class="menu"><li class="menu__item is-leaf first leaf menu-mlid-148956"><a href="/regionmetrics" class="menu__link sf-depth-2">Regional COVID-19 Metrics</a></li>
+<li class="menu__item is-expanded expanded menu-mlid-145861"><a href="/covid19/contact-tracing" class="menu__link sf-depth-2 menuparent">Contact Tracing</a><ul class="menu"><li class="menu__item is-leaf first leaf menu-mlid-149051"><a href="/covid19/contact-tracing-data" class="menu__link sf-depth-3">Contact Tracing Data</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-149056"><a href="/covid19/outbreak-locations" class="menu__link sf-depth-3">Outbreak Locations</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-149061"><a href="/covid19/location-exposure" class="menu__link sf-depth-3">Potential Exposure Location</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-149071"><a href="/covid19/school-aged-metrics" class="menu__link sf-depth-3">School Outbreaks</a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-149066"><a href="/covid19/school-exposures" class="menu__link sf-depth-3">Schools Potential Exposures</a></li>
+</ul></li>
+<li class="menu__item is-expanded expanded menu-mlid-145856"><a href="/countymetrics" class="menu__link sf-depth-2 menuparent">County Level Risk Metrics</a><ul class="menu"><li class="menu__item is-leaf first last leaf menu-mlid-149006"><a href="/countyschool" class="menu__link sf-depth-3">County &amp; School Metrics</a></li>
+</ul></li>
+<li class="menu__item is-leaf leaf menu-mlid-145716"><a href="/covid19/hospitalization-utilization" class="menu__link sf-depth-2">Hospitalization Utilization</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-145846"><a href="/covid19/statistics/covid-raceethnicity-metrics" class="menu__link sf-depth-2">Race/Ethnicity Metrics</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-145811"><a href="/covid19/syndromic-surveillance" class="menu__link sf-depth-2">Syndromic Surveillance</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-145731"><a href="/covid19/long-term-care-facility-outbreaks-covid-19" class="menu__link sf-depth-2">LTC Facility Outbreaks</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-152226"><a href="/covid19/data-portal" title="" class="menu__link">Data Portal</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-149036"><a href="/covid19/testing-statistics" class="menu__link sf-depth-2">Testing Statistics</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-148991"><a href="/travel" class="menu__link sf-depth-2">Travel Data</a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-157586"><a href="/covid19/variants" class="menu__link sf-depth-2">Variants</a></li>
+</ul></li>
+<li class="menu__item is-expanded expanded menu-mlid-145721"><a href="/testing" class="menu__link sf-depth-1 menuparent">Testing</a><ul class="menu"><li class="menu__item is-leaf first last leaf menu-mlid-148961"><a href="/testing/mobile-testing-sites" class="menu__link sf-depth-2">Mobile Testing Sites</a></li>
+</ul></li>
+<li class="menu__item is-expanded expanded menu-mlid-137011"><a href="/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus/symptoms" class="menu__link sf-depth-1 menuparent">Resources &amp; Information</a><ul class="menu"><li class="menu__item is-leaf first leaf menu-mlid-152201"><a href="/covid19/treatment" class="menu__link sf-depth-2">Treatment Information</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-139711"><a href="/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus/faq" class="menu__link sf-depth-2">Frequently Asked Questions</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-145681"><a href="/covid19/recovered-covid19-patient-plasma-request" class="menu__link sf-depth-2">Donation of Convalescent Plasma</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-152191"><a href="/covid19/daily-communications" class="menu__link sf-depth-2">Public Communication</a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-154891"><a href="/covid19/ambassador-program" class="menu__link sf-depth-2">COVID-19 Ambassadors</a></li>
+</ul></li>
+<li class="menu__item is-expanded expanded menu-mlid-145666"><a href="/covid19/health-care-providers" class="menu__link sf-depth-1 menuparent">Health Care Providers &amp; Facilities</a><ul class="menu"><li class="menu__item is-leaf first leaf menu-mlid-145711"><a href="/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus/health-care-providers/elective-procedures-guidance" class="menu__link sf-depth-2">Elective Surgical Procedure Guidance</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-148976"><a href="/covid19/health-care-providers/lab-testing-procedures" class="menu__link sf-depth-2">Lab and Testing Procedures</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-145786"><a href="/covid19/community-guidance/multisystem-inflammatory-syndrome-children" class="menu__link sf-depth-2">Multisystem Inflammatory Syndrome in Children</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-145781"><a href="/covid19/community-guidance/routine-oral-and-dental-care" class="menu__link sf-depth-2">Routine Oral and Dental Care</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-149046"><a href="/covid19/community-guidance/provider-guidance-testing" class="menu__link sf-depth-2">Testing Recommendations</a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-157536"><a href="/covid19/health-care-providers/vaccine-provider-instructions" class="menu__link sf-depth-2">Vaccine Provider Instructions</a></li>
+</ul></li>
+<li class="menu__item is-expanded expanded menu-mlid-137006"><a href="/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus/media-publications" class="menu__link sf-depth-1 menuparent">Media &amp; Publications</a><ul class="menu"><li class="menu__item is-leaf first leaf menu-mlid-139706"><a href="/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus/media-publications/daily-press-briefings" title="" class="menu__link">COVID-19 Press Briefings</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-137001"><a href="/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus/translated-resources" class="menu__link sf-depth-2">External &amp; Translated Resources</a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-145576"><a href="/covid19/governor-pritzkers-executive-orders-and-rules" class="menu__link sf-depth-2">Governor Pritzker&#039;s Executive Orders and Rules</a></li>
+</ul></li>
+<li class="menu__item is-expanded is-active-trail is-active last expanded active-trail active menu-mlid-149096"><a href="/covid19/vaccine-faq" class="menu__link is-active-trail sf-depth-1 menuparent active-trail active">Vaccine Information</a><ul class="menu"><li class="menu__item is-leaf first leaf menu-mlid-149101"><a href="/covid19/vaccination-plan" class="menu__link sf-depth-2">Vaccination Planning Guide</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-152196"><a href="/covid19/vaccinedata" class="menu__link sf-depth-2">Vaccine Data</a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-152186"><a href="/covid19/vaccine-distribution" class="menu__link sf-depth-2">Vaccine Distribution</a></li>
+</ul></li>
+</ul></div>
+
+</div>
+  </section>
+            <section class="region region-sidebar-second column sidebar">
+    <div id="block-block-556" class="block block-block first last odd">
+
+        <h2 class="block__title block-title">Resources</h2>
+    
+  <style type="text/css">
+<!--/*--><![CDATA[/* ><!--*/
+.ulSpace{list-style:none; padding-left:0px;}
+.ulSpace li { margin-top:5px;}
+
+/*--><!]]>*/
+</style><ul class="ulSpace"><li><a href="https://www.cdc.gov/vaccines/covid-19/reporting/vaxtext/index.html">VaxText Second Dose Reminder</a></li>
+<li><a href="https://www.fda.gov/media/144637/download" target="_blank">Moderna Emergency Use Authorization</a></li>
+<li><a href="https://www.fda.gov/media/144637/download" target="_blank">Moderna Healthcare Provider Fact Sheet</a></li>
+<li><a href="https://www.fda.gov/media/144638/download" target="_blank">Moderna Patient Fact Sheet</a></li>
+<li><a href="https://www.fda.gov/media/144414/download" target="_blank">Pfizer Emergency Use Authorization</a></li>
+<li><a href="https://www.fda.gov/media/144413/download" target="_blank">Pfizer Healthcare Provider Fact Sheet</a></li>
+<li><a href="https://www.fda.gov/media/144414/download" target="_blank">Pfizer Patient Fact Sheet</a></li>
+<li><a href="https://www.cdc.gov/vaccines/acip/meetings/downloads/slides-2020-12/slides-12-12/COVID-03-Mbaeyi.pdf" target="_blank">ACIP Slide Deck for vote on Pfizer COVID vaccine</a></li>
+</ul>
+</div>
+  </section>
+        </aside>
+      
+    </div>
+
+      <div class="header__name-and-slogan" id="name-and-slogan">
+        
+                  <div class="header__site-slogan" id="site-slogan">Protecting health, improving lives.</div>
+              </div>
+      <div class="footerBlocks groupBlock">
+      <footer id="footer" class="region region-footer">
+    <div id="block-menu-menu-usability" class="block block-menu block-footer block-footer1 first odd" role="navigation">
+
+        <h2 class="block__title block-title">Usability</h2>
+    
+  <ul class="menu"><li class="menu__item is-leaf first last leaf"><a href="http://www.dhs.state.il.us/page.aspx?item=32765" title="" class="menu__link">Accessibility</a></li>
+</ul>
+</div>
+<div id="block-menu-menu-resources" class="block block-menu block-footer block-footer2 even" role="navigation">
+
+        <h2 class="block__title block-title">Resources</h2>
+    
+  <ul class="menu"><li class="menu__item is-leaf first leaf"><a href="/advisory-boards" title="" class="menu__link">Advisory Boards</a></li>
+<li class="menu__item is-leaf leaf"><a href="http://www2.illinois.gov/oeig/" title="Illinois Inspector General  " class="menu__link">Office of the Inspector General</a></li>
+<li class="menu__item is-leaf leaf"><a href="http://www.cdc.gov/" title="Centers for Disease Control and Prevention " class="menu__link">Centers for Disease Control</a></li>
+<li class="menu__item is-leaf leaf"><a href="http://www2.illinois.gov/Gov" title="Illinois Governor&#039;s Office" class="menu__link">Office of Governor JB Pritzker</a></li>
+<li class="menu__item is-leaf leaf"><a href="http://work.illinois.gov/" title="State of Illinois Employment Opportunities" class="menu__link">Illinois Jobs</a></li>
+<li class="menu__item is-leaf leaf"><a href="http://www.illinois.gov/" title="State of Illinois Official Website" class="menu__link">Illinois.gov home page</a></li>
+<li class="menu__item is-leaf leaf"><a href="/employment-opportunities" title="" class="menu__link">Employment Opportunities</a></li>
+<li class="menu__item is-leaf leaf"><a href="/contact-us/idph-regional-health-departments" title="" class="menu__link">List of Local Health Departments</a></li>
+<li class="menu__item is-leaf last leaf"><a href="http://www.missingkids.com/home" title="" class="menu__link">National Center for Missing and Exploited Children</a></li>
+</ul>
+</div>
+<div id="block-menu-menu-quick-links" class="block block-menu block-footer block-footer3 odd" role="navigation">
+
+        <h2 class="block__title block-title">Quick links</h2>
+    
+  <ul class="menu"><li class="menu__item is-leaf first leaf"><a href="/topics-services/health-care-regulation/complaints" title="" class="menu__link">File a Health Care Complaint </a></li>
+<li class="menu__item is-leaf leaf"><a href="/topics-services/diseases-and-conditions/diseases-a-z-list" title="" class="menu__link">Diseases A-Z List</a></li>
+<li class="menu__item is-leaf leaf"><a href="/foia" title="" class="menu__link">FOIA Requests</a></li>
+<li class="menu__item is-leaf leaf"><a href="https://data.illinois.gov/organization/department-of-public-health" title="" class="menu__link">Health Data</a></li>
+<li class="menu__item is-leaf leaf"><a href="/events" title="" class="menu__link">IDPH Calendar</a></li>
+<li class="menu__item is-leaf leaf"><a href="/laws-rules" title="" class="menu__link">Laws &amp; Rules</a></li>
+<li class="menu__item is-leaf leaf"><a href="/forms-publications" title="" class="menu__link">Forms &amp; Publications</a></li>
+<li class="menu__item is-leaf last leaf"><a href="/GATA" title="" class="menu__link">Grant Accountability and Transparency (GATA)</a></li>
+</ul>
+</div>
+<div id="block-text-resize-0" class="block block-text-resize resizer even">
+
+      
+  <a href="javascript:;" class="changer" id="text_resize_decrease"><sup>-</sup>A</a> <a href="javascript:;" class="changer" id="text_resize_reset">A</a> <a href="javascript:;" class="changer" id="text_resize_increase"><sup>+</sup>A</a><div id="text_resize_clear"></div>
+</div>
+<div id="block-views-tweets-block" class="block block-views block-footer block-footer4 last odd">
+
+        <h2 class="block__title block-title">TRENDING TOPICS @IDPH</h2>
+    
+  <div class="view view-tweets view-id-tweets view-display-id-block view-dom-id-b0b5ff5cf15c3614675eee0f24589623">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="views-row views-row-1 views-row-odd views-row-first">  
+  <span class="views-field views-field-text">        <span class="field-content">More than 1.5 million doses of vaccine administered in Illinois - Public Health Officials Announce 2,838 New Cases… <a href="https://t.co/pZduo42sRt">https://t.co/pZduo42sRt</a></span>  </span>  
+  <span class="views-field views-field-created-time">        <span class="field-content">- <em class="placeholder">2 hours 48 min</em> ago</span>  </span></li>
+          <li class="views-row views-row-2 views-row-even views-row-last">  
+  <span class="views-field views-field-text">        <span class="field-content">More Than 300 New COVID-19 Vaccination Locations Added - Federal vaccine allocations going directly to some pharmac… <a href="https://t.co/Y7TKUg5Zz1">https://t.co/Y7TKUg5Zz1</a></span>  </span>  
+  <span class="views-field views-field-created-time">        <span class="field-content">- <em class="placeholder">4 hours 23 min</em> ago</span>  </span></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+      <div class="view-footer">
+      <p><a href="https://twitter.com/IDPH">Visit our twitter page</a></p>
+    </div>
+  
+  
+</div>
+</div>
+  </footer>
+  </div>
+  <div class="footermobile">
+      </div>
+</div>
+<div class="region-bottom-wrapper">
+    <div class="region region-bottom">
+    <div id="block-block-9" class="block block-block copyright first odd">
+
+      
+  <p>© 2021 Illinois Department of Public Health.</p>
+
+</div>
+<div id="block-menu-menu-pagebottomemenu" class="block block-menu pagebottomemenu last even" role="navigation">
+
+      
+  <ul class="menu"><li class="menu__item is-leaf first last leaf"><a href="/content/privacy-policy" title="" class="menu__link">Privacy</a></li>
+</ul>
+</div>
+  </div>
+</div>
+    <div class="region region-page-bottom">
+    <div id="seo-checklist-volacci-link"><a href="http://www.volacci.com/contact?utm_source=seo_checklist&amp;utm_medium=footer&amp;utm_campaign=volacci_seo">Drupal SEO</a></div>  </div>
+<script src="https://www.dph.illinois.gov/sites/all/libraries/respondjs/respond.min.js?qo0k1v"></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","licenseKey":"b1bb1b892b","applicationID":"55445753","transactionName":"b1RRY0BYXEcFUUVaVlYeclRGUF1aS1xeV1xnQVJQV2ZEXQFF","queueTime":0,"applicationTime":184,"atts":"QxNSFQhCT0k=","errorBeacon":"bam-cell.nr-data.net","agent":""}</script></body>
+</html>

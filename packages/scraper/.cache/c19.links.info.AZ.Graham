@@ -1,0 +1,1811 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+			<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+	<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+
+				<script type='text/javascript'>
+					var enableTelemetry = 'false'
+					var aiConfig = {
+					instrumentationKey: '1cde048e-3185-4906-aa46-c92a7312b60f'						
+					}
+					var appInsights = window.appInsights || function (a) { function b(a) { c[a] = function () { var b = arguments; c.queue.push(function () { c[a].apply(c, b) }) } } var c = { config: a }, d = document, e = window; setTimeout(function () { var b = d.createElement('script'); b.src = a.url || 'https://az416426.vo.msecnd.net/scripts/a/ai.0.js', d.getElementsByTagName('script')[0].parentNode.appendChild(b) }); try { c.cookie = d.cookie } catch (a) { } c.queue = []; for (var f = ['Event', 'Exception', 'Metric', 'PageView', 'Trace', 'Dependency']; f.length;)b('track' + f.pop()); if (b('setAuthenticatedUserContext'), b('clearAuthenticatedUserContext'), b('startTrackEvent'), b('stopTrackEvent'), b('startTrackPage'), b('stopTrackPage'), b('flush'), !a.disableExceptionTracking) { f = 'onerror', b('_' + f); var g = e[f]; e[f] = function (a, b, d, e, h) { var i = g && g(a, b, d, e, h); return !0 !== i && c['_' + f](a, b, d, e, h), i } } return c }(aiConfig);
+					window.appInsights = appInsights, appInsights.queue && 0 === appInsights.queue.length;
+					// Add telemetry initializer
+					appInsights.queue.push(function() {
+						appInsights.context.addTelemetryInitializer(function(envelope) {
+							var telemetryItem = envelope.data.baseData;
+							// To check the telemetry item’s type:
+							if (!false)
+							{
+								//If the telemetry is not enabled, we still want to capture Google map custom event, so only allow that
+								if (envelope.name.indexOf('.Event') == -1)
+									return false;
+							}
+						});
+					});						
+					appInsights.trackPageView();
+				</script>
+			<script>
+				document.addEventListener("DOMContentLoaded", function () {
+					var forms = document.getElementsByTagName("form");
+					var absPat = /^https?:\/\/|^\/\//i;
+					for (var i = 0; i < forms.length; i++)
+					{
+						if (forms[i].method == "post" && !forms[i].querySelector('[name="__RequestVerificationToken"]') && !absPat.test(forms[i].getAttribute("action"))) {
+							forms[i].insertAdjacentHTML("beforeend", "<input name=\"__RequestVerificationToken\" type=\"hidden\" value=\"zxkEWDZPCI0F1PDrp1H-qai4APT_qWmwEG9UaP54GXNDYbunHYX4Rf3bungLh8f8kCWqssTaHla9f_wDTT5ojJH4tJlnPShnSuwOjXSngmE1\" />");
+						}
+					}
+				}, false);
+			</script>
+			
+	
+	<script type="text/javascript">
+        window.isResponsiveEnabled = true;
+		window.isRemoveSetHeights= false;
+		if (window.isRemoveSetHeights) {
+			document.documentElement.className += ' removeSetHeights';
+		}
+		window.mainMenuMediaQuery = 'screen and (max-width: 40em)';
+		window.isMobileBrowserIncludingTablets = false;
+		window.fixedResponsiveMenu = false;
+		window.fullWidthResponsiveMenu = false;
+		window.responsiveMenuHeight = '';
+		window.responsiveMenuFontSize = '';
+		(function () {
+			window.devicePixelRatio = window.devicePixelRatio || Math.round(window.screen.availWidth / document.documentElement.clientWidth);
+			window.innerWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+			window.innerHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+
+			window.setSizeCookie = function () {
+				document.cookie = "dpi=" + window.devicePixelRatio + "; path=/";
+				document.cookie = "viewportWidth=" + window.innerWidth + "; path=/";
+				document.cookie = "viewportHeight=" + window.innerHeight + "; path=/";
+				if (screen && screen.width && screen.height) {
+					document.cookie = "screenWidth=" + screen.width + "; path=/";
+					document.cookie = "screenHeight=" + screen.height + "; path=/";
+				}
+				document.cookie = "responsiveGhost=1; path=/";
+			};
+
+			setSizeCookie();
+		}());
+	</script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	
+	<meta name="theme-color" content="#4b4744">
+	<link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+		<title>Graham County, AZ</title>
+		
+				
+	<!--[if IE 6]><script language="JavaScript" type="text/javascript"> var isie6 = true; </script><![endif]-->
+	<!--[if IE 7]><script language="JavaScript" type="text/javascript"> var isie7 = true; </script><![endif]-->
+	<!--[if IE 8]><script language="JavaScript" type="text/javascript"> var isie8 = true; </script><![endif]-->
+	<!--[if IE 9]><script language="JavaScript" type="text/javascript"> var isie8 = true; </script><![endif]-->
+	<script type="text/javascript"><!--
+	var intCountryCode = 840;
+	var externalSiteDialogHeight = '390px';
+	var order = '';
+//--></script>
+	
+	<link href="/901781768.css" rel="stylesheet" type="text/css" />	<link href="/-1895153750.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" type="text/css" href="/Assets/Styles/Print.css" media="print">
+<script type="text/javascript" src="/Scripts/2011.3.1115/jquery-1.6.4.min.js"></script>
+	<script type="text/javascript">
+		window.Pages = window.Pages || {};
+		// FrontEnd RWD initialization
+		window.Pages.rwdReady = $.Deferred();
+		window.Pages.toolBarDeferred = $.Deferred();
+		window.Pages.rwdSetupComplete = $.Deferred();
+		window.Pages.megaMenuLoaded = $.Deferred();
+		window.Pages.angularToolbarComplete = $.Deferred();
+		window.Pages.frontEndToolbarComplete = $.Deferred();
+	</script>
+	
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+	
+        <meta property="og:image" content="https://www.graham.az.gov/Images/SocialMedia/IconModuleAlertCenter.png" />
+        <meta name="twitter:image" content="https://www.graham.az.gov/Images/SocialMedia/IconModuleAlertCenter.png" />
+	<meta property="og:title" content="Graham County COVID-19 Vaccine Information" />
+	<meta name="twitter:title" content="Graham County COVID-19 Vaccine Information" />
+	<meta property="og:url" content="https://www.graham.az.gov/AlertCenter.aspx?AID=11" />
+	<meta name="twitter:url" content="https://www.graham.az.gov/AlertCenter.aspx?AID=11" />
+	<meta property="og:site_name" content="Graham County, AZ" />
+	<meta name="twitter:site" content="Graham County, AZ" />
+	<meta property="og:description" content="COVID-19 Vaccination Campaign" />
+	<meta name="twitter:description" content="COVID-19 Vaccination Campaign" />
+
+
+
+	<link rel="stylesheet" href="/App_Themes/CP/nmenu.css" type="text/css">
+
+    
+	<!-- Dynamic Header Scripts -->
+	
+	<!--Reference Stylesheet-->
+	
+    
+		<!--Dynamic Header Styles-->
+	<style type="text/css">
+	
+	</style>
+	
+	
+	
+
+<script src="/600025254.js" type="text/javascript"></script>
+
+	<script src="/-2031684067.js" type="text/javascript"></script>
+	
+	
+
+	<!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="/App_Themes/ie8.css"><![endif]-->
+	<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="/App_Themes/ie7.css"><![endif]-->
+	<!--[if lte IE 6]><link rel="stylesheet" type="text/css" href="/App_Themes/ie6.css"><![endif]-->
+	<!--[if lt IE 9]><script type="text/javascript" src="/Scripts/html5.js"></script><![endif]-->
+
+	<script type="text/javascript">
+		setEditorVariables(false, 840);
+		function getPrintPreviewType() { return 0; } function printPreview() {pPreview(getPrintPreviewType()); }
+	</script>
+	
+</head>
+<body class="wide " >
+
+	
+
+	<div id="fb-root"></div>
+<div id=skipToContentLinks>
+<a href="#contentarea" target="_self" class="skipToContentLink">Skip to Main Content</a>
+</div>
+	<form id="frmReferenceFormForTelerikEditorDialogs"></form>
+
+		<input type="hidden" id="GoogleMapsKey" value="AIzaSyDWUuE-ifkbhxblF920N8MjpBdTg1Wt784" />
+
+
+
+
+
+	<input type="hidden" id="cpcDomain" value="https://cp-civicplusuniversity2.civicplus.com">
+	<input type="hidden" id="hdnStructureID" value="1" />
+	<input type="hidden" id="hdnContentCollectionID" value="02f983b6-7689-4083-a6ae-95a7c95ecb35" />
+	<input type="hidden" id="hdnWorkingCopyID" value="00000000-0000-0000-0000-000000000000" />
+	<input type="hidden" id="hdnThemeID" value="1" />
+	<input type="hidden" id="pageIsFrontEnd" value="true" />
+	<input type="hidden" id="pageModuleID" value="63" />
+	<input type="hidden" id="pagePageID" />
+	<input type="hidden" id="hdnModuleEligibleForJquery224Upgrade" value="true" />
+
+		<input type="hidden" id="hdnModuleID" value="63" />
+		<div id="stickyPlaceholder"></div>
+	<div id="outer-wrap" class="outer-wrap">
+		<div id="inner-wrap" class="inner-wrap">
+				<div id="divToolbars" class="cpToolbars newCP" style="">
+					
+<style>
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700); 
+.alertText .customAlert {
+    color: #EAEAEA;
+    display: inline-block;
+    font-family: 'Open Sans Condensed', sans-serif; 
+    text-transform: uppercase;
+    font-weight: bold;
+    height: 27px;
+    left: 57px;
+    line-height: 27px;
+    overflow: hidden;
+    position: absolute;
+    top: 15px;
+    white-space: nowrap;
+    width: 268px;
+}
+</style>
+  <div id="1_divAlertBar" class="alertToolbar cpToolbar" style="background: #222222;">
+    <div id="1_divAlertToolbarInner" class="alertToolbarInner" style="font-size: 16px;">
+        <a href="/AlertCenter.aspx" id="1_lnkAlertText" class="alertText" style="border-right: 1px solid #000000;">
+            <img src="/Common/Images/AlertCenter/alertBarBlink.svg" id="1_imgDot" alt="Emergency Alert" class="redDot" />
+            <span id="1_customAlert" class="customAlert">COVID-19 Alerts</span>
+        </a>
+        <span id="1_spnAlertContainer" class="alertContainer"><a href="/AlertCenter.aspx?AID=Graham-County-COVID19-Vaccine-Informatio-11" target="_self" class="alert" style="border-left: 1px solid #635e65; border-right: 1px solid #000000;background: #030303 url(/Common/images/AlertCenter/alertBarBlackTextBckg.png) repeat-x; color: #FFFFFF;">
+	Graham County COVID-19 Vaccine Information
+	<span style="color: #FC4C2F;">Read On...</span>
+</a>
+<a href="https://www.graham.az.gov/CivicAlerts.aspx?AID=181" target="_self" class="alert" style="border-left: 1px solid #635e65; border-right: 1px solid #000000;background: #030303 url(/Common/images/AlertCenter/alertBarBlackTextBckg.png) repeat-x; color: #FFFFFF;">
+	Coronavirus (COVID-19) in Graham County
+	<span style="color: #FC4C2F;">Read On...</span>
+</a>
+</span>
+    </div>
+  </div>
+  <div id="1_divAlertBarEmpty" class="alertBarEmpty"></div>
+  
+<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="/App_Themes/CP/ie7.css"><![endif]-->
+<!-- Allow Dashboard, Favorites Enabled -->
+
+<!-- Begin Signed Out Bar -->
+<div class="cpToolbar user public">
+    <div class="inner selfClear">
+        <p class="dropdown"><a href="/MyAccount/ProfileCreate" role="button" class="myConnections" id="signedOutToolbarCreateProfileButton">Create an Account</a> <span class="welcomeMessage">- Increase your productivity, customize your experience, and engage in information you care about. &nbsp;&nbsp;</span></p>
+        <ul class="nav secondary">
+			<li><a href="/MyAccount" onkeypress="if (event.which == 13) this.onclick();" onclick="popupSignIn(); return false;" role="button" class="button" id="loggedOutToolbarSignInButton"><span>Sign In</span></a></li>
+        </ul>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        $('#signedOutToolbarCreateProfileButton').keypress(function (e) { if (e.which === 0) return; $(this).click(); });
+        $('#signedOutToolbarCreateProfileButton').click(function (event) {
+        	event.preventDefault();
+        	window.location.href = '/MyAccount/ProfileCreate?from=url&url=/&dn=' + window.location.origin;
+        });
+
+
+		if ('False' == 'True') {
+            $('#loggedOutToolbarSignInButton').hide();
+		}
+    })
+</script>
+<!-- End Signed Out Bar -->
+
+				</div>
+			<div id="bodyWrapper">
+				<div id="mainNavHolderMobile" class="mainNavHolderMobile"></div>
+				
+<!-- Parent structural container -->
+<div data-cpRole="structuralContainer" id="structuralContainer1">
+<!-- Header Container --><div data-cpRole="structuralContainer" id="structuralContainer2">
+<div class="siteWrap"><!-- Logo/Site ID --><div data-cpRole="banner" id="banner2" class="logo empty">
+
+
+
+
+				<a style="			display: block; text-align: left;
+" class="bannerObject" href="/" target="_self"><img alt="Click to Home" class="bannerObject" height="109" src="/ImageRepository/Document?documentID=32" width="594" /></a>
+
+</div><!-- Search container --><aside data-cpRole="contentContainer" id="contentContainer2a" class="search_ts">	<div id="cc9fd6f60b-a3a0-4074-bc3f-4f4a860ff9ff" data-containerid="9fd6f60b-a3a0-4074-bc3f-4f4a860ff9ff" class="pageContent cpGrid cpGrid24 isLockedContainer showInMobile">
+				                
+
+		<div class="row outer wide"><!--
+--><div class="outer col col24 first last" style="" data-widgetcontainerid="2a520a78-1fa3-4186-a3e1-bf876efc979c">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col24 first last idbc5d96e1-4cdf-4c95-a7db-388fd29c6c9b" style="" data-widgetcontainerid="bc5d96e1-4cdf-4c95-a7db-388fd29c6c9b">	
+<div data-widget-id="7e56de60-52e2-4822-9f2a-7610b9e153a4" data-widget-controller-path="/Layout/WidgetSearch">
+	
+		<script defer type="text/javascript" src="/Common/Controls/jquery-ui/js/jquery.ui.autocomplete.min.js"></script>
+	<script defer src="/Areas/Layout/Assets/Scripts/Search.js" type="text/javascript"></script>
+	<script defer type="text/javascript">
+
+		$(document).ready(function () {
+			try {
+				$(".widgetSearchButton.widgetSearchButton7e56de60-52e2-4822-9f2a-7610b9e153a4").click(function (e) {
+				e.preventDefault();
+					if ($("#ysnSearchOnlyDept7e56de60-52e2-4822-9f2a-7610b9e153a4").is(':checked')) {
+						doWidgetSearch($(this).siblings(".widgetSearchBox").val(), Number(0));
+					} else {
+						doWidgetSearch($(this).siblings(".widgetSearchBox").val(), 0);
+					}
+			});
+			$("#searchField7e56de60-52e2-4822-9f2a-7610b9e153a4").keypress(function (e) {
+				if (window.clipboardData) {
+					if (e.keyCode == 13) {
+							if ($("#ysnSearchOnlyDept7e56de60-52e2-4822-9f2a-7610b9e153a4").is(':checked')) {
+								doWidgetSearch($(this).val(), Number(0));
+							} else {
+								doWidgetSearch($(this).val(), 0);
+							}
+						return false;
+					}
+				} else {
+					if (e.which == 13) {
+							if ($("#ysnSearchOnlyDept7e56de60-52e2-4822-9f2a-7610b9e153a4").is(':checked')) {
+								doWidgetSearch($(this).val(), Number(0));
+							} else {
+								doWidgetSearch($(this).val(), 0);
+							}
+						return false;
+					}
+				}
+				return true;
+			});
+
+				if (true) {
+					var currentRequest = null;
+
+					var $searchField = $("#searchField7e56de60-52e2-4822-9f2a-7610b9e153a4").autocomplete({
+						source: function (request, response) {
+							currentRequest = $.ajax({
+								url: '/Search/AutoComplete',
+								dataType: "json",
+								timeout: 10000,
+								beforeSend: function () {
+									if (currentRequest != null) {
+										currentRequest.abort();
+									}
+								},
+								data:
+								{
+									term: request.term,
+								},
+								success: function (data) {
+									response(data);
+									$('.autoCompleteError').remove();
+								},
+								error: function (xmlhttprequest, textstatus, message) {
+									if (textstatus === "timeout") {
+										if ($("#searchField7e56de60-52e2-4822-9f2a-7610b9e153a4").siblings('.autoCompleteError').length == 0)
+											$('<span class="autoCompleteError"><p class="alert error">Search autocomplete is currently not responding. Please try again later.</p></span>').insertAfter($("#searchField7e56de60-52e2-4822-9f2a-7610b9e153a4"));
+									}
+								}
+							});
+						},
+						html: true,
+						delay: 500,
+						select: function (event, ui) {
+							$(this).val(ui.item.value);
+							$(this).next().click();
+						}
+					});
+
+					if (false && true) {
+						$searchField.data("ui-autocomplete")._renderItem = function (ul, item) {
+							return $("<li class=\"itemList\"></li>")
+								.data("ui-autocomplete-item", item)
+								.append("<a>" + item.label + "</a>")
+								.appendTo(ul);
+						};
+					}
+					else {
+						$searchField.data("autocomplete")._renderItem = function (ul, item) {
+							return $("<li></li>")
+								.data("item.autocomplete", item)
+								.append("<a>" + item.label + "</a>")
+								.appendTo(ul);
+						};
+					}
+}
+}
+			catch(e) {} //we're going to eat this error. Autocomplete won't work but we dont wan't to break anything else on the page.
+		});
+	</script>
+	<style scoped type="text/css">.widgetOptionSet15 .widgetSearchButton:focus, .widgetSearchBox:focus {
+outline: none !important;
+}</style>
+
+	<section id="widgetPreviewSearch" class="widget widgetSearch skin43 widgetOptionSet15" style="display: block;" aria-label="Search">
+				<!-- For the button right and inside -->
+		<div class="widgetBody buttonRightInside">
+			<input class="widgetSearchBox widgetSearchBox7e56de60-52e2-4822-9f2a-7610b9e153a4" cp5ph="true" id="searchField7e56de60-52e2-4822-9f2a-7610b9e153a4" name="searchField" onchange="searchBtnApplyQuery();" placeholder="Search..." title="Search..." type="text" value="" />
+							<a href="/Search/Results" id="btnSearchIcon" class="widgetSearchButton widgetSearchButton7e56de60-52e2-4822-9f2a-7610b9e153a4" role="button"><img alt="Search Icon 1" class="imageHover" data-hover="/ImageRepository/Document?documentID=51" data-image="/ImageRepository/Document?documentID=50" src="/ImageRepository/Document?documentID=50" /></a>
+
+			<label class="searchLabel" for="searchField7e56de60-52e2-4822-9f2a-7610b9e153a4">Search</label>
+		</div>
+
+	</section>
+
+
+<style scoped>
+    
+        .widgetSearch ::-webkit-input-placeholder {
+        color: #fff;
+      }
+        .widgetSearch :-moz-placeholder { /* Firefox 18- */
+       color: #fff;
+    }
+        .widgetSearch ::-moz-placeholder {  /* Firefox 19+ */
+       color: #fff;
+    }
+    .widgetSearch :-ms-input-placeholder {
+       color: #fff;
+    }
+    
+
+	.widgetSearch .widgetBody .widgetSearchBox7e56de60-52e2-4822-9f2a-7610b9e153a4
+	{
+        color: #fff;
+		background-color: #302c29; 
+height: 40px; 
+padding: 5px 40px 5px 10px;
+border: 1px solid #999896;
+	}
+	.widgetSearch .widgetBody .widgetSearchButton7e56de60-52e2-4822-9f2a-7610b9e153a4
+	{
+		margin: 9px;
+	}
+	.widgetSearch .widgetSearch-onlyDept7e56de60-52e2-4822-9f2a-7610b9e153a4
+	{
+		display: inline-block;
+		color: #333;
+		
+		
+		 padding-top: 10px;
+	}
+	#ysnSearchOnlyDept7e56de60-52e2-4822-9f2a-7610b9e153a4
+	{
+		position: relative;
+		top: .125em;
+	}
+
+</style>
+
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+
+
+	<script type="text/javascript">
+	//Updates search icons href to have the correct queryString
+	function searchBtnApplyQuery() {
+		document.getElementById("btnSearchIcon").href = "/Search?searchPhrase=" + document.getElementById("searchField7e56de60-52e2-4822-9f2a-7610b9e153a4").value;
+    }
+	</script>
+
+</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!--		--></div> <!-- outer row -->
+
+
+	</div>
+</aside><!-- Navigation --><nav data-cpRole="nav" id="mainNav" class="siteNav mainNav" role="navigation">
+<ol id="mainNavMenu" data-parent="1" class="rootNavMenu" role="menu"><!--
+--><li id="MainItem27" class="topMenuItem" aria-haspopup="true" role="menuitem" data-pageid="27" data-displaymegamenu="True"><!--
+			--><!--
+			--><a id="mainNavDepartments" class="navMainItem mainNavItem mainNavItem1" href="/27/Departments" target="_self">Departments</a><!--
+			--><!--
+			--></li><!----><li id="MainItem101" class="topMenuItem" aria-haspopup="true" role="menuitem" data-pageid="101" data-displaymegamenu="True"><!--
+			--><!--
+			--><a id="mainNavServices" class="navMainItem mainNavItem mainNavItem2" href="/101/Services" target="_self">Services</a><!--
+			--><!--
+			--></li><!----><li id="MainItem31" class="topMenuItem" aria-haspopup="true" role="menuitem" data-pageid="31" data-displaymegamenu="True"><!--
+			--><!--
+			--><a id="mainNavVisitors" class="navMainItem mainNavItem mainNavItem3" href="/31/Visitors" target="_self">Visitors</a><!--
+			--><!--
+			--></li><!----><li id="MainItem9" class="topMenuItem" aria-haspopup="true" role="menuitem" data-pageid="9" data-displaymegamenu="True"><!--
+			--><!--
+			--><a id="mainNavHowDoI" class="navMainItem mainNavItem mainNavItem4" href="/9/How-Do-I" target="_self">How Do I...</a><!--
+			--><!--
+			--></li><!---->
+</ol>
+
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			var menuID = 'mainNavMenu';
+			var menuType = MAIN_MENU;
+
+			//setup menu manager properties for main menu
+			if (!menuManager.mobileMainNav && true)
+				menuManager.adjustMainItemsWidth('#' + menuID);
+			menuManager.isMainMenuEditable = false;
+			menuManager.mainMenuMaxSubMenuLevels = 4;
+			menuManager.setMOMMode(2, menuType);
+
+			//Init main menu
+			var setupDraggable = menuManager.isMainMenuEditable;
+			var urlToGetHiddenMenus = '/Pages/MenuMain/HiddenMainSubMenus?pageID=1&moduleID=63&themeID=1&menuContainerID=mainNav';
+
+			menuManager.setupMenu(menuID, 'mainNav', menuType, setupDraggable, urlToGetHiddenMenus);
+			menuManager.mainMenuInit = true;
+			menuManager.mainMenuTextResizer = true;
+			if (1.00 > 0)
+				menuManager.mainMenuTextResizerRatio = 1.00;
+			if (window.isResponsiveEnabled)
+				menuManager.mainMenuReady.resolve();
+
+		});
+	</script>
+
+
+<!-- Mega Menu --><aside data-cpRole="megaMenu" id="megaMenu" class="megaMenu" style="display: none;"><input type="hidden" id="megaMenuPopupDirection" value="0"><input type="hidden" id="megaMenuWidthReference" value="1"><aside data-cpRole="contentContainer" id="mainNavMegaMenu27" class="contentTop mainNavMegaMenu megaMenuContainer pageID_27 hidden" data-orientation="horizontal">	<div id="cc600bad3f-aee2-4505-8a40-a9dd38117e8e" data-containerid="600bad3f-aee2-4505-8a40-a9dd38117e8e" class="pageContent cpGrid cpGrid24 showInMobile">
+				                
+
+
+
+	</div>
+</aside><aside data-cpRole="contentContainer" id="mainNavMegaMenu101" class="contentTop mainNavMegaMenu megaMenuContainer pageID_101 hidden" data-orientation="horizontal">	<div id="ccd42d6ca4-2043-421a-bdbf-1facd8df833c" data-containerid="d42d6ca4-2043-421a-bdbf-1facd8df833c" class="pageContent cpGrid cpGrid24 showInMobile">
+				                
+
+
+
+	</div>
+</aside><aside data-cpRole="contentContainer" id="mainNavMegaMenu31" class="contentTop mainNavMegaMenu megaMenuContainer pageID_31 hidden" data-orientation="horizontal">	<div id="cc389729bb-1956-4227-90d9-3ae0e099ed0c" data-containerid="389729bb-1956-4227-90d9-3ae0e099ed0c" class="pageContent cpGrid cpGrid24 showInMobile">
+				                
+
+
+
+	</div>
+</aside><aside data-cpRole="contentContainer" id="mainNavMegaMenu9" class="contentTop mainNavMegaMenu megaMenuContainer pageID_9 hidden" data-orientation="horizontal">	<div id="cc4667252b-6534-4d10-a351-39b0fb4778ad" data-containerid="4667252b-6534-4d10-a351-39b0fb4778ad" class="pageContent cpGrid cpGrid24 showInMobile">
+				                
+
+
+
+	</div>
+</aside></aside></nav></div>
+</div><!-- Top Banner --><div data-cpRole="banner" id="banner1"><div data-cpRole="structuralContainer" id="structuralContainer3">
+<div class="siteWrap"><aside data-cpRole="contentContainer" id="contentContainer3a">	<div id="cc5a2c3a79-daa8-46bc-aab5-4594102bcaa7" data-containerid="5a2c3a79-daa8-46bc-aab5-4594102bcaa7" class="pageContent cpGrid cpGrid24 showInMobile">
+				                
+
+
+
+	</div>
+</aside></div>
+</div><!-- Main content container --><div data-cpRole="structuralContainer" id="structuralContainer4">
+<div class="siteWrap"><div data-cpRole="structuralContainer" id="structuralContainer5" class="mainWrap" role="main">
+<div data-cpRole="structuralContainer" id="structuralContainer6" class="outerContentWrap">
+<div data-cpRole="structuralContainer" id="structuralContainer7" class="contentWrap">
+<div data-cpRole="breadCrumbs" class="breadCrumbContainer" id="breadCrumbs">		<ol class="semanticList breadCrumbs">
+			<li><a class="breadCrumb" href="/">Home</a></li><li>Alert Center</li>
+		</ol>
+
+	   
+    
+</div>
+<div data-cpRole="mainContentContainer" id="moduleContent">
+
+<div id="ctl00_ctl00_MainContent_BodyWrapper">
+	
+	<script type="text/javascript"><!--
+	var isie6 = false, isie7 = false, isie6or7 = false;
+	var intCountryCode = 840;
+
+	function setUrlLength(editor) {
+		//Toggle Image Context Menu Items
+		setMenuItems(editor);
+		//setContentBackgroundColor(editor);
+		removeIEParagraphs(editor);
+	}
+	function setUrlLengthAndToolToggle(editor) {
+		var minToolsGroups = 2; // Number of MinimumSetOfTools tools groups.
+		
+		// Hide the MinimumSetOfTools on load.
+		var toolbar = editor.get_toolContainer(); // Get toolbar container.
+		var toolgroups = toolbar.getElementsByTagName("UL"); // Get all toolgroups containers.
+		
+		for (var i = toolgroups.length - 1; i >= minToolsGroups; i--)			toolgroups[i].style.display = "none";
+		
+		if (editor.isIE) {
+			var elem = editor.get_element();
+			elem.style.height = "430px";
+ 			elem.style.minHeight = "430px";
+		}
+		
+		// Toggle Image Context Menu Items.
+		setMenuItems(editor);
+		//setContentBackgroundColor(editor);
+		removeIEParagraphs(editor);
+	}
+//--></script><!--[if IE 6]><script type="text/javascript">isie6 = true; isie6or7 = true;</script><![endif]-->
+<!--[if IE 7]><script type="text/javascript">isie7 = true; isie6or7 = true;</script><![endif]-->
+
+	
+
+	<form name="aspnetForm" method="post" action="./AlertCenter.aspx?AID=Graham-County-COVID19-Vaccine-Informatio-11" id="aspnetForm" style="display:inline;" enctype="multipart/form-data" autocomplete="off">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="hIGUtqSTzh9KgxAdFbdRt0f1CVcJUCe8kJTkOoqFv2g1yPlWyzlvQZmwt+ELeIc136dPrnBbcKrj78X95pn5yJF4YqCW9/Q5PFM/0MxY/5w3IDzWdQ7w8oX/C7pGE/TGCH67XetB0912aHwKVZMIWQBU76lQNG00AzGhLLlNYhpA1qnAn+EteppzxiASeSDP1hIrpd5C4k6iUO2PhfbrEBgOaIfGjBsJc8bVX/umaFpBW0VnOVZr6rtOxaofqrYY3XWjy9xrIruCtvmMUJnCqh059bJeCzPz6+MPpMahaS5+LEdgPGHimjFVFdzBNISM3IsewqlX0s9lokkLSsNe9PY/wcFXTUQZeW5PP+R4xU+dCEo7IHPbvKLPjWq/0ragXMjlvDqWOaW6sJHjMtQErGZgLZ012aI+JFk8na7uY7un0d6mEsbl1OCU3CqA2BxPyzJolEY+Ms91gfuA3QN4/qnX92VBNEmjow5fOrv8wYfdl6MCJ6UaIinWmlee3oJCqOA72SclhXbPKty6bmpQgGizITajmcYfM+4xtRJvqGzLCM2B5SW6t1iAqq2XadRrzKurmfvf4SRRyTY1T0RhBbawaeMvuxIR3Pldr60YrGj1TpAlVm44t7rtdvh7pnm/cfhPvlzWlrT8TGJt8T4kE1oLVVXo6OsYQ2QXu08N+3sglcihcb4Io5DHRQ9Gr7IFIxyGaowKNjcfB+9NRBHHqLPoaTeOjTmwtGi8HQ1GZ7vzYKYn5vhlz4zF9FJu4+3JPPzftv2o/s59B16Xu2Iz2snJbge0B92ZvXfez3zkF/eIBT9idklo/4qZFWxqedjwdZpbbymWgpQKStd/iW42eJ6ucggWy46rwrFUOYE3QfbUGnR3dgpyiemqQm/dZyE8aHPq2aIQjqDKeOPerLbAeFo6NmFwfEBiTb53oV2vUQRjij8jkLGnH05KkErgCTph0o2URZ9hS/2QS2bhHRaz5Nw+a780EYCk7DL5BPV5quTJKAC4LvraHppK8qDGsGMVMcWsFXcN/vCkhYhrcmT32GammfdECIw0ju2Y8KD8jJyFYeJno907/IluvSr4E5532gJPue8C2oXy/ShUpMoGvw==" />
+
+
+<script type="text/javascript">
+//<![CDATA[
+window.location.querystring = ["AID"];//]]>
+</script>
+
+<script src="/ScriptResource.axd?d=IbGCVwT4JGY5FmbA6ikjAKx1AvL9grzcpBja1e-0_2JH4Us4YSu5-fwTE4FmWeXJ1Sc8KBvOgRmWk6ka6VdzNXD_ujtGAN4EuCqAQg8KxT-9UUOW_p4MbXwcA_V9Rm33SYyQnpyhqC1wtxXIw7cZqGRtyy9HwVOqRpFvMGc1HzrHoAFW_r01gZrfHJdnvz7wfKH5W2lYoYqBnCpdtBYtvkVbVoPAMVFWsb-wENAxRSSPv7nQm5_lm09O3slxzIFMTn_77k79VCUScOuWhz60r0q6q8EgHNvv7i2v9Wa5emV8-xA_KDL7XVVQsIjCq9Sbx48m9PeGJN2j2KmX-tzMptdcXEEVpPZVwSmkBIlaY8tCUDrAPiiG3EQwXtx7yiun60zAJNsltt6cqoLPZMm1ao7FoD_LaiBqIUSm3KvetGYUHTLCmm59_gRnVAKmx_gHroIQ_rjwmcCrMxfPZB258sBuWYydObP-fU-jMuhmLO_xGWUArNkIQyIZaAq8RexJkjfuRmwtJqXhUlw4qRlCsdvo6f4niLUpDlkWx9MxSyuks4TSPYvshZryq-yV7ta7y-PmqPJ28uHQGrwj89EYAs-OEMBlMtd7NZchy2Q-Zh58YgP3EpSUCv0mqxRPEnc9GVAWV5C4ps8N_T3yYRo1_2ROHVf220ebsVhXwGwMUKqXbwoMdqa-pCFzAu5P55PNRT-kj7Y18esRU4RdYZ_apWHb8SCYIvXJKJ8hBKSRhPPbLo1qgyp06KJTN0GCzlHrYAKorz8VptbCkjNbVJ6amPEs3ogYKKIILIjlNNLRWxP26bhXJPD31bjzChNo5ozVMKbQmHlvRi90KROh4OPxPg2" type="text/javascript"></script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="5DAAF125" />
+		<input name="__RequestVerificationToken" type="hidden" value="E3pAEddXf-KCLywx2NlTAMiuOSu9GirPNLWQLQffJbarVkK9_rYfxE2BoS1mATvWYX4k2vLtww1QkyBj6iO_pLqmDrAB6U7HGYKI0XYn8pg1" />
+		<!--for archiving purpose-->
+		<input name="ysnNotifyMe" type="hidden">
+		<input name="strPage" type="hidden">
+		<input name="intArchMainCatID" type="hidden">
+		<input name="intArchMainItemID" type="hidden">
+		 
+		<script type="text/javascript">
+			Sys.WebForms.PageRequestManager.getInstance().add_beginRequest(beginRequest);
+			Sys.WebForms.PageRequestManager.getInstance().add_pageLoaded(pageLoaded);
+		</script>
+		
+		<div id="modulecontent" name="modulecontent.aspx" style="padding-top: 0px;">
+<a id="contentarea" name="contentarea" title="Content Area"></a>
+<link href="/1434036390.css" rel="stylesheet" type="text/css" />
+
+<div id="AlertCenterContent" class="newCP moduleContentNew">
+	
+	
+	<div id="ctl00_ctl00_MainContent_ModuleContent_ctl00_contentUpdatePanel">
+	
+			<div id="ctl00_ctl00_MainContent_ModuleContent_ctl00_divSideBar" class="sidebar">
+    			<div class="section search">
+    				<label for="alertsSearch" class="h3">Search</label>
+    				<div class="searchInput">
+    					<input name="ctl00$ctl00$MainContent$ModuleContent$ctl00$txtSearch" type="search" id="ctl00_ctl00_MainContent_ModuleContent_ctl00_txtSearch" placeholder="Word or Phrase" title="Word or Phrase" />
+						<input type="image" id="alertsSearch" class="searchButton" title="Search Alerts" alt="Search Alerts" src="/Common/images/ModuleSearchIcon.png" onkeypress="this.onclick();" onclick="alertCenterSearchFE(ctl00_ctl00_MainContent_ModuleContent_ctl00_txtSearch,ctl00_ctl00_MainContent_ModuleContent_ctl00_ddlCategories); return false;">
+    				</div>
+					<select name="ctl00$ctl00$MainContent$ModuleContent$ctl00$ddlCategories" id="ctl00_ctl00_MainContent_ModuleContent_ctl00_ddlCategories" title="Categories">
+		<option value="0">All Categories</option>
+		<option value="4">Community Alerts</option>
+		<option value="7">Coronavirus (COVID-19)</option>
+		<option value="6">Office Closures</option>
+		<option value="5">Road Closures</option>
+
+	</select>
+    			</div>
+				<div class="section tools">
+					<h3>Tools</h3>
+					<ol>
+						<li id="ctl00_ctl00_MainContent_ModuleContent_ctl00_RSS"><a class="RSS" href="/Rss.aspx">RSS</a></li>
+						<li id="ctl00_ctl00_MainContent_ModuleContent_ctl00_liNotifyMe"><a class="notifyMe" href="/list.aspx?Mode=Subscribe#alertCenter">Notify Me</a></li>
+						<li><a class="archLinkColor" href="#" onkeypress="this.onclick();" onclick="gotoArchives(-1, -1); return false;">Show Archived</a></li>
+					</ol>
+				</div>
+				
+
+				<div class="section categories">
+					<h3>Categories</h3>
+					<ol>
+						<li class="all"><a href="/AlertCenter.aspx">All Categories</a></li>
+						
+								
+								<li><a href="/AlertCenter.aspx?CID=Community-Alerts-4">Community Alerts</a></li>
+							
+								<li><a href="/AlertCenter.aspx?CID=Coronavirus-COVID19-7">Coronavirus (COVID-19)</a></li>
+							
+								<li><a href="/AlertCenter.aspx?CID=Office-Closures-6">Office Closures</a></li>
+							
+								<li><a href="/AlertCenter.aspx?CID=Road-Closures-5">Road Closures</a></li>
+							
+							
+					</ol>
+				</div>
+			</div>
+			<div id="ctl00_ctl00_MainContent_ModuleContent_ctl00_divContentMain" class="contentMain selfClear">
+				
+				
+						
+
+<script type="text/javascript"><!--
+	function backLinkClicked() {
+		// Notes:
+		// * Mozilla says history.length == 1, when no page to return to.
+		// * MSIE says history.length == 0, when no page to return to.
+		// * MSIE cannot use location.pathname, ignores your value and reloads page.
+
+		var lnkACBackTo = document.getElementById('lnkACBackTo');
+
+		if (lnkACBackTo && lnkACBackTo.innerHTML.indexOf('to Archive') > 0)
+			gotoArchives(-1, -1);
+		else {
+			try { window.history.back(); } catch (ex) { }
+
+			setTimeout(
+				function () {
+					window.location.href = window.location.protocol + "//" + window.location.host + "/AlertCenter.aspx";
+				}, 200);
+		}
+	}
+//--></script>
+
+<div id="ctl00_ctl00_MainContent_ModuleContent_ctl00_alertDetailControl_alertUpdatePanel">
+		
+		<div id="ctl00_ctl00_MainContent_ModuleContent_ctl00_alertDetailControl_divSingleAlert" class="listing singleAlert noBorder" style="z-index: 2;">
+			<div id="ctl00_ctl00_MainContent_ModuleContent_ctl00_alertDetailControl_divAuxCatLiveEdit">
+				<h2>Community Alerts</h2>
+				<a class="return" id="lnkACBackTo" href="javascript:backLinkClicked();">&#9668;&nbsp;Back</a>
+				
+			</div>
+			<div id="ctl00_ctl00_MainContent_ModuleContent_ctl00_alertDetailControl_divAlert" class="alert on noPhotos noImages">
+				
+				<span id="alertDate_11" class="date">December 31, 2020 9:19 PM</span>
+				<h3 id="alertTitle_11">Graham County COVID-19 Vaccine Information</h3>
+				<p><BR/><BR/>UPDATE!  Our Graham County Health Department is currently registering anyone 65 and older for the COVID-19 vaccine.<BR/><BR/><strong><a href="/665/COVID-19-Vaccine-Registration" target="_blank" rel="noopener">REGISTER FOR THE COVID-19 VACCINE HERE IF YOU ARE 65 AND OLDER.</a></strong><BR/><BR/><BR/>FOR IMMEDIATE RELEASE<BR/>Thursday, January 21, 2021<BR/>Graham County, Arizona<BR/>Brian Douglas, Health Department Director<BR/><BR/>NEWS RELEASE<BR/>Update on COVID-19 Vaccination Campaign<BR/><BR/>Health and Human Services (HHS) is now recommending everyone 65 years and older to be immediately eligible to receive the COVID-19 vaccine.<BR/><BR/>Due to the size of the populations in our 1B subgroups the amount of vaccine needed is far greater than we are receiving. At this time, we will continue our efforts to work with our community partners by vaccinating the 75 and older population, educators, first responders, and healthcare workers.  We will incorporate the newly added 65 and older population, but progress will be slow for this group due to limited allocations of vaccine and the large number of residents in the 1B group.<BR/><BR/>The number of vaccines each county receives from the CDC and ADHS is based on a population formula. Recently, all County Health Departments were notified by ADHS that their vaccine allocations may be reduced. This reduction is due to national demand for the vaccine outpacing the production.  Graham County has successfully distributed vaccine to our residents as quickly as we have received it.  <BR/><BR/>If you are over 75 years of age and would like a COVID-19 vaccination, please call the Graham County Health Department at 428-0110 to be placed on our stand-by list.  Or, you can call your primary care physician.<BR/><BR/>If your are between 65-74 years of age and would like to sign up for a COVID-19 vaccination, please register at https://www.graham.az.gov/665/COVID-19-Vaccine-Registration.  We will begin vaccinating this group as early as possible, but based on the rate we have received vaccine distributions from the state, we anticipate this group to be available in March.   <BR/><BR/>In addition, when the vaccine is available to the 65 and older population, our primary care physicians will provide COVID-19 vaccine to this age group as well.  <BR/><BR/>At this time, we are asking everyone to please be patient.  We are being advised that vaccine production will increase soon.  Our goal is to provide every resident the opportunity for COVID-19 vaccine as quickly as can be made available.   <BR/></p>
+				<ul>
+									<li><a class="addLink" target="_blank" href="/DocumentCenter/View/4991/Covid19-Vaccine-Prioritization-Chart-PDF">COVID-19 Vaccine Prioritization Chart</a></li>
+
+				</ul>
+				
+			</div>
+		</div>
+		<div style="margin-bottom: .5em;">
+			<a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.graham.az.gov%2fAlertCenter.aspx%3fAID%3d11&amp;t=Check out this alert for Graham County, AZ" class="button" target="_blank">
+	<span><img src="/Assets/Images/IconShareFacebook.png" alt="Facebook" title="Share on Facebook"/></span>
+</a>
+<a href="https://twitter.com/share?url=https%3a%2f%2fwww.graham.az.gov%2fAlertCenter.aspx%3fAID%3d11&amp;text=Check out this alert for Graham County, AZ" class="button" target="_blank">
+	<span><img src="/Assets/Images/IconShareTwitter.png" alt="Twitter" title="Share on Twitter"/></span>
+</a>
+
+
+<a href="#" id="shareViaEmailButton" class="button" target="_blank"
+	data-email-subject ="Check out this alert for Graham County, AZ"
+	data-share-url = "https://www.graham.az.gov/AlertCenter.aspx?AID=11">
+	<span><img src="/Assets/Images/IconShareEmail.png" alt="Email" title="Share via Email"/></span>
+</a>
+
+	<script language="javascript" type="text/javascript" src="/Assets/Scripts/SocialShare.js"></script>
+	<script language="javascript" type="text/javascript">
+		$(document).ready(function () {
+			var socialShareJs = new SocialShare();
+			socialShareJs.setup('Check out this alert for Graham County, AZ', 'https://www.graham.az.gov/AlertCenter.aspx?AID=11');
+		});
+	</script>
+
+
+
+		</div>
+		<a name="updates"></a>
+		
+		
+	
+	</div>
+					
+			</div>
+			
+		
+</div>
+	<div id="ctl00_ctl00_MainContent_ModuleContent_ctl00_archiveUpdatePanel">
+	
+			
+			
+		
+</div>
+	
+</div>
+
+<!-- BEGIN Notify Me Fields -->
+<input type="hidden" name="ysnSave">
+<input type="hidden" name="ysnSend" value="0">
+<input type="hidden" name="ysnSendAtStart" value="0">
+<input type="hidden" name="ysnSendBeforeDays" value="0">
+<input type="hidden" name="intSendBeforeDays" value="-1">
+<input type="hidden" name="txtComments" value="">
+<input type="hidden" name="txtSMSComments" value="">
+<input type="hidden" name="txtSubject" value="" >
+<input type="hidden" id="dtiCurDate" name="dtiCurDate" value="Thursday, February 11, 2021 2:01 PM">
+<!-- END Notify Me Fields -->
+
+<script type="text/javascript" language="javascript"><!--
+	var popupWindowID = '';
+	var mainUpdatePanelID = 'ctl00_ctl00_MainContent_ModuleContent_ctl00_contentUpdatePanel';
+
+	function redrawContent(closeModal, argument) {
+		raiseAsyncPostbackAC(mainUpdatePanelID, closeModal, argument);
+	}
+//--></script>
+</div>
+<script type="text/javascript">order+='ModuleContent\n'</script>
+
+		<div id="ctl00_ctl00_MainContent_ctl00_liveEditPopupWindow" class="modalContainer modalContainerCP" style="display: none;">
+	<div id="ctl00_liveEditTitleBar" class="modalTitleLeft"><h3 id="ctl00_LiveEditModalTitle" class="modalTitle">Live Edit</h3><a id="ctl00_LiveEditCloseButton" class="modalClose" href="/" title="Close this window">Close</a></div><div id="ctl00_liveEditContentLeft" class="modalContentLeft"><div id="ctl00_liveEditContentRight" class="modalContentRight"><div id="ctl00_liveEditContent" class="modalContent"><iframe style="display: none; border: none;" src="about:blank" id="liveEditDialog" title="Live Edit Dialog" name="liveEditDialog"></iframe></div></div></div><div id="ctl00_liveEditFooter" class="modalBottomLeft"><div id="ctl00_liveEditfooterbar" class="modalBottomRight"><div id="ctl00_liveEditfooterbar1" class="modalBottom"></div></div></div>
+</div><input type="submit" name="ctl00$ctl00$MainContent$ctl00_liveEditSpawnWindow" value="" id="ctl00_ctl00_MainContent_ctl00_liveEditSpawnWindow" disabled="disabled" style="display: none;" />
+	
+
+<script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager.getInstance().add_pageLoaded(
+	function() {
+		var elem = document.getElementById('ctl00_ctl00_MainContent_ModuleContent_ctl00_txtSearch');
+		setPlaceholder(elem);
+	}
+);
+
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.ModalPopupBehavior, {"BackgroundCssClass":"modalBackground","CancelControlID":"ctl00_LiveEditCloseButton","PopupControlID":"ctl00_ctl00_MainContent_ctl00_liveEditPopupWindow","PopupDragHandleControlID":"ctl00_liveEditTitleBar","dynamicServicePath":"/AlertCenter.aspx","id":"editItemBehavior"}, null, null, $get("ctl00_ctl00_MainContent_ctl00_liveEditSpawnWindow"));
+});
+//]]>
+</script>
+</form>
+	<form id="aspnetSearchForm" name="aspnetSearchForm" style="display:none;" action="/Search.aspx" method="get">
+		<input name="SearchString" type = "hidden" value ="" />
+	</form>
+	
+	
+	
+	</div>
+	 
+</div>	
+
+</div><aside data-cpRole="contentContainer" id="featureColumn" class="secondaryContent">	<div id="ccd6923f64-2522-4bce-8783-61ad1b416b69" data-containerid="d6923f64-2522-4bce-8783-61ad1b416b69" class="pageContent cpGrid cpGrid24 showInMobile" data-contentcontainerbreakpoint="40">
+				                
+
+
+
+	</div>
+</aside>
+</div><div data-cpRole="structuralContainer" id="structuralContainer8" class="siteSidebar">
+<aside data-cpRole="contentContainer" id="contentContainer8a">	<div id="ccd4dcb28b-1fec-43de-bb6a-b9a0206a66d7" data-containerid="d4dcb28b-1fec-43de-bb6a-b9a0206a66d7" class="pageContent cpGrid cpGrid24 showInMobile">
+				                
+
+
+
+	</div>
+</aside><nav data-cpRole="nav" id="secondaryNav" class="siteNav secondaryNav">
+
+
+
+
+
+
+	<script type="text/javascript">
+        $(document).ready(function () {
+            //setup menu manager properties for secondary menu
+            menuManager.isSideMenuEditable = false;
+		    menuManager.sideMenuMaxSubMenuLevels = 4;
+            menuManager.sideMenuHasCustomLinks = true;
+        });
+	</script>
+	<script type="text/javascript">
+        $(document).ready(function () {
+            //Init secondary menu
+            var setupDraggable = menuManager.isSideMenuEditable;
+			var urlToGetHiddenMenus = '/Pages/MenuSecondary/HiddenSecondarySubMenus?pageID=1&moduleID=63&themeID=1&menuContainerID=secondaryNav';
+            var menuID = 'secondaryMenusecondaryNav';
+            menuManager.setMOMMode(2, SIDE_MENU);
+            menuManager.setupMenu(menuID, 'secondaryNav', SIDE_MENU, setupDraggable, urlToGetHiddenMenus);
+        });
+	</script>
+
+
+
+
+</nav><aside data-cpRole="contentContainer" id="contentContainer8b">	<div id="cc640cb347-299f-4107-bcca-853e11a977da" data-containerid="640cb347-299f-4107-bcca-853e11a977da" class="pageContent cpGrid cpGrid24 showInMobile">
+				                
+
+
+
+	</div>
+</aside>
+</div>
+</div></div>
+</div>
+
+
+
+
+			<div id="bannerImagesJSON2" class="hidden"></div>
+				<div id="bannerSlideshowControls_banner1" class="bannerSlideshowControlsNew none " style="display:none">
+					<button id="arrowPrev_banner1" class="arrowNew prev cp-Btn--nonStyled" aria-label="Banner Arrow Previous"><svg class=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#iconSlideshowArrowLeft"></use></svg></button>
+					<button id="arrowNext_banner1" class="arrowNew next cp-Btn--nonStyled" aria-label="Banner Arrow Next"><svg class=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#iconSlideshowArrowRight"></use></svg></button>
+				</div>
+			<script type="text/javascript">
+				onOrLive($(window), function () {
+					$.when(window.Pages.rwdSetupComplete)
+						.done(function () {
+							renderExternalBannerSlideshow('banner1',
+									{"BannerOptionID":2,"ThemeID":1,"SlotName":"banner1","Name":"Default","IsDefault":true,"BannerMode":2,"SlideShowSlideTiming":"10","SlideshowTransition":0,"SlideShowTransitionTiming":null,"ImageScale":false,"ImageAlignment":2,"ImageScroll":true,"MuteSound":true,"VideoType":0,"Status":40,"SlideshowControlsPosition":0,"SlideshowControlsAlignment":0,"SlideshowBannerControlsColorScheme":0,"BannerImages":[{"BannerImageID":305,"BannerOptionID":2,"FileName":"/ImageRepository/Document?documentID=2908","Height":410,"Width":2200,"StartingOn":null,"StoppingOn":null,"IsLink":false,"LinkAddress":null,"Sequence":0,"RecordStatus":0,"ModifiedBy":0,"ModifiedOn":"\/Date(-62135575200000)\/","AltText":""},{"BannerImageID":310,"BannerOptionID":2,"FileName":"/ImageRepository/Document?documentID=2438","Height":691,"Width":2200,"StartingOn":null,"StoppingOn":null,"IsLink":false,"LinkAddress":null,"Sequence":1,"RecordStatus":0,"ModifiedBy":0,"ModifiedOn":"\/Date(-62135575200000)\/","AltText":""},{"BannerImageID":309,"BannerOptionID":2,"FileName":"/ImageRepository/Document?documentID=2675","Height":410,"Width":2200,"StartingOn":null,"StoppingOn":null,"IsLink":false,"LinkAddress":null,"Sequence":2,"RecordStatus":0,"ModifiedBy":0,"ModifiedOn":"\/Date(-62135575200000)\/","AltText":""}],"BannerVideos":[],"RecordStatus":0,"ModifiedBy":0,"ModifiedOn":"\/Date(-62135575200000)\/"},
+								'/App_Themes/Interior/Images/',
+								'Rotating',
+								'1');
+						});
+				}, "load");				
+			</script>
+
+
+</div><!-- Sidebar --><div data-cpRole="structuralContainer" id="structuralContainer9" class="fixedButtons_ts">
+<aside data-cpRole="contentContainer" id="contentContainer9a">	<div id="cc9fbee710-a667-4bbb-814e-b3136eb09df9" data-containerid="9fbee710-a667-4bbb-814e-b3136eb09df9" class="pageContent cpGrid cpGrid24 isLockedContainer showInMobile" data-contentcontainerbreakpoint="1000">
+				                
+
+		<div class="row outer wide"><!--
+--><div class="outer col col24 first last" style="" data-widgetcontainerid="588aad85-4fc5-4b06-b5d5-d6cfa4e4cbab">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col24 first last ide7fb0365-cb7e-42e7-ac00-925608d296c7" style="" data-widgetcontainerid="e7fb0365-cb7e-42e7-ac00-925608d296c7">	
+<div data-widget-id="3303d314-67d3-4dc8-bde3-1f0c36e3ed1b" data-widget-controller-path="/GraphicLinks/Widget">
+
+
+
+	<style type="text/css">.widgetOptionSet26 img {
+    background-color: rgba(45, 43, 38, 0.8);
+    padding: .5em;
+}</style>
+
+<div id="graphicLinkWidget3303d314-67d3-4dc8-bde3-1f0c36e3ed1b" class="widget widgetGraphicLinks skin45 widgetOptionSet26 wide" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}' data-elementquerymatch='matchMultiColumn' data-elementqueryunmatch='unmatchMultiColumn' data-modulewidgettype="graphicLinks">
+	<div class="widgetHeader">
+		<div class="">
+				</div>
+	</div>
+	<div class="widgetBody cpGrid cpGrid1 ">	
+			<div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks">
+
+<div>
+	<a href="https://www.facebook.com/Graham-County-Human-Resources-712257875546685/" target="_self" class="fancyButton fancyButton45 " >
+		<span>
+			<span><span class="text">Facebook</span></span>
+		</span>
+	</a>
+</div>
+		<style scoped="scoped">.fancyButton45.fancyButton:link,.fancyButton45.fancyButton:visited, .fancyButton45div.fancyButton{
+	padding-top: .5em;
+	padding-bottom: .5em;
+	padding-left: 0em;
+	background-image: url('/ImageRepository/Document?documentID=49');
+	background-repeat: no-repeat;
+	background-position: .5em  center;
+	border-top: 1px solid #b95a27;
+	border-left: 1px solid #b95a27;
+	border-right: 1px solid #b95a27;
+	border-bottom: 1px solid #b95a27;
+background-color: rgba(45, 43, 38, 0.8);
+width: 57px;
+transition: all 0.3s ease-in-out;}
+.fancyButton45.fancyButton:hover,.fancyButton45.fancyButton:focus,.fancyButton45.fancyButton:active,.fancyButton45.fancyButton.hover{
+	background-repeat: no-repeat;
+	background-position: .5em  center;
+width: 180px;
+transition: all 0.3s ease-in-out;}
+.fancyButton45.fancyButton:link > span,.fancyButton45.fancyButton:visited > span, .fancyButton45div.fancyButton > span{
+}
+.fancyButton45.fancyButton:hover > span,.fancyButton45.fancyButton:focus > span,.fancyButton45.fancyButton:active > span,.fancyButton45.fancyButton.hover > span{
+}
+.fancyButton45.fancyButton .text{
+	color: #fff;
+	font-family: "Raleway";
+	text-align: left;
+	font-weight: 200;
+	text-decoration: none;
+	background-repeat: no-repeat;
+	background-position: left top;
+
+text-transform: uppercase;
+padding-left: 4em;
+height: 40px;
+opacity: 0;
+transition: all 0.3s ease-in-out;}
+.fancyButton45.fancyButton:hover .text,.fancyButton45.fancyButton:focus .text,.fancyButton45.fancyButton:active .text,.fancyButton45.fancyButton.hover .text{
+	text-decoration: none;
+	background-repeat: no-repeat;
+	background-position: left top;
+
+opacity: 1;
+transition: all 0.3s ease-in-out;}
+</style>
+
+ </div><!--
+			--></div>
+	</div>
+	<div class="widgetFooter">
+			</div>
+</div>
+
+</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!--		--></div> <!-- outer row -->
+		<div class="row outer wide"><!--
+--><div class="outer col col24 first last" style="" data-widgetcontainerid="c448c202-324c-4b76-a2f0-bbc6b127564d">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col24 first last id61dd90c6-603b-4c52-80b6-e8de5cceb1a0" style="" data-widgetcontainerid="61dd90c6-603b-4c52-80b6-e8de5cceb1a0">	
+<div data-widget-id="71fe543a-c402-45db-9814-f86133997e90" data-widget-controller-path="/Layout/WidgetShare">
+
+		<script type="text/javascript">
+			$(document).ready(function () {
+				setWidgetServiceClicking($("#widgetShareHeader71fe543a-c402-45db-9814-f86133997e90"), true, function () {
+					var $widgetBody = $('#widgetShareBody71fe543a-c402-45db-9814-f86133997e90');
+
+					if ($widgetBody.is(':visible')) {
+						var menuItems = $('.widgetItem a', $widgetBody);
+
+						$(menuItems[0]).focus();
+
+						$('.widgetItem', $widgetBody).unbind("keydown").bind("keydown", function (e) {
+
+							if (e.which === 9) {
+								var index = menuItems.index(e.target);
+
+								if ((index === 0 && e.shiftKey) || (index === (menuItems.length - 1) && !e.shiftKey)) {
+									$("#widgetShareHeader71fe543a-c402-45db-9814-f86133997e90").trigger('click').focus();
+								}
+							}
+			});
+					} else {
+						$('.widgetItem', $widgetBody).unbind("keydown");
+					}
+				});
+			});
+		</script>
+<style type="text/css">.widgetOptionSet14 img {
+    background-color: rgba(45, 43, 38, 0.8);
+    padding: .5em;
+    border: 1px solid #b95a27;
+    margin-top: 1em;
+}</style>
+	<section id="widgetShare71fe543a-c402-45db-9814-f86133997e90" class="widget widgetShare skin41 widgetOptionSet14 flyOutParent wide"  aria-label="Share">
+			<header id="widgetShareHeader71fe543a-c402-45db-9814-f86133997e90" class="widgetHeader" tabindex="0" role="button" aria-haspopup="true">
+				<h3><img alt="share" src="/ImageRepository/Document?documentID=47" /></h3>
+	</header>
+    <div id="widgetShareBody71fe543a-c402-45db-9814-f86133997e90" class="widgetBody flyOut right topEdge  widget widgetShare skin41 cpGrid cpGrid1" style="display:none;">
+        <div class="row                   
+ wide">
+	<div class="col col1 first last">
+		<ol class="semanticList">
+                <li class="widgetItem" ><a tabindex="0" role="button" class="widgetShareFacebook shareService" onkeypress="if(event.which == 13) { this.onclick(); }" href="/Layout/WidgetShare/ShareLink/Facebook" target="_blank" aria-label="Share on Facebook opens in new window">Facebook</a></li>
+                <li class="widgetItem" ><a tabindex="0" role="button" class="widgetShareTwitter shareService" onkeypress="if(event.which == 13) { this.onclick(); }" href="/Layout/WidgetShare/ShareLink/Twitter" target="_blank" aria-label="Share on Twitter opens in new window">Twitter</a></li>
+                <li class="widgetItem" ><a tabindex="0" role="button" class="widgetSharePinterest shareService" onkeypress="if(event.which == 13) { this.onclick(); }" href="/Layout/WidgetShare/ShareLink/Pinterest" target="_blank" aria-label="Share on Pinterest opens in new window">Pinterest</a></li>
+                <li class="widgetItem" ><a tabindex="0" role="button" class="widgetShareDelicious shareService" onkeypress="if(event.which == 13) { this.onclick(); }" href="/Layout/WidgetShare/ShareLink/Delicious" target="_blank" aria-label="Share on Delicious opens in new window">Delicious</a></li>
+                <li class="widgetItem" ><a tabindex="0" role="button" class="widgetShareBlogger shareService" onkeypress="if(event.which == 13) { this.onclick(); }" href="/Layout/WidgetShare/ShareLink/Blogger" target="_blank" aria-label="Share on Blogger opens in new window">Blogger</a></li>
+                <li class="widgetItem" ><a tabindex="0" role="button" class="widgetShareLinkedIn shareService" onkeypress="if(event.which == 13) { this.onclick(); }" href="/Layout/WidgetShare/ShareLink/LinkedIn" target="_blank" aria-label="Share on LinkedIn opens in new window">LinkedIn</a></li>
+		</ol>
+	</div>
+
+        </div>
+    </div>
+
+	</section>
+
+</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!--		--></div> <!-- outer row -->
+		<div class="row outer wide"><!--
+--><div class="outer col col24 first last" style="" data-widgetcontainerid="508a3232-6e2e-4dbd-b688-353a5580e737">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col24 first last id3b9cf1b1-5c72-49d8-b872-00961707655f" style="" data-widgetcontainerid="3b9cf1b1-5c72-49d8-b872-00961707655f">	
+<div data-widget-id="7857b5e8-bb61-43ea-b9fa-fa13070b42fb" data-widget-controller-path="/Layout/WidgetSiteTools">
+
+		<script type="text/javascript">
+			$(document).ready(function () {
+				setWidgetServiceClicking($("#widgetSiteToolsHeader7857b5e8-bb61-43ea-b9fa-fa13070b42fb"), true, function () {
+					var $widgetBody = $('#widgetSiteToolsBody7857b5e8-bb61-43ea-b9fa-fa13070b42fb');
+
+					if ($widgetBody.is(':visible')) {
+						var menuItems = $('.widgetItem a', $widgetBody);
+
+						$(menuItems[0]).focus();
+
+						$('.widgetItem', $widgetBody).unbind("keydown").bind("keydown", function (e) {
+
+							if (e.which === 9) {
+								var index = menuItems.index(e.target);
+
+								if ((index === 0 && e.shiftKey) || (index === (menuItems.length - 1) && !e.shiftKey)) {
+									$("#widgetSiteToolsHeader7857b5e8-bb61-43ea-b9fa-fa13070b42fb").trigger('click').focus();
+								}
+							}
+						});
+					} else {
+						$('.widgetItem', $widgetBody).unbind("keydown");
+					}
+				});
+			});
+		</script>
+	<style type="text/css">.widgetOptionSet7 img {
+    background-color: rgba(45, 43, 38, 0.8);
+    padding: .5em;
+    border: 1px solid #b95a27;
+    margin-top: 1em;
+}</style>
+
+	<section id="widgetSiteTools7857b5e8-bb61-43ea-b9fa-fa13070b42fb" class="widget widgetSiteTools skin41 widgetOptionSet7 flyOutParent wide"  aria-label="Site Tools">
+				<header id="widgetSiteToolsHeader7857b5e8-bb61-43ea-b9fa-fa13070b42fb" class="widgetHeader" tabindex="0" role="button" aria-haspopup="true">
+			<h3><img alt="site tools" src="/ImageRepository/Document?documentID=48" /></h3>
+		</header>
+	<div id="widgetSiteToolsBody7857b5e8-bb61-43ea-b9fa-fa13070b42fb" class="widgetBody blackIcons flyOut right topEdge widget widgetSiteTools skin41 cpGrid cpGrid1" style="display:none;">
+         <div class="row                   
+ wide">
+	<div class="col col1 first last">
+		<ol class="semanticList">
+					<li class="widgetItem"><a tabindex="0" role="button" aria-label="Site Tools Home" class="widgetSiteToolsHome siteToolsService" href="/">Home</a></li>
+					<li class="widgetItem"><a tabindex="0" role="button" aria-label="Site Tools My Account" class="widgetSiteToolsMyAccount siteToolsService" href="/MyAccount">My Account</a></li>
+					<li id="PrinterFriendly7857b5e8-bb61-43ea-b9fa-fa13070b42fb" class="widgetItem"><a tabindex="0" aria-label="Site Tools Printer Friendly opens in new window" role="button" class="widgetSiteToolsPrinterFriendly siteToolsService" onkeypress="if (event.which == 13) { this.onclick(); }" onclick="Core.Layout.dynamicJavascript('printPreview();'); return false;" href="#PrinterFriendly7857b5e8-bb61-43ea-b9fa-fa13070b42fb">Printer Friendly</a></li>
+					<li class="widgetItem"><a tabindex="0" role="button" aria-label="Site Tools Email Page" class="widgetSiteToolsEmailPage siteToolsService" href="/EmailPage">Email Page</a></li>
+					<li class="widgetItem"><a tabindex="0" role="button" aria-label="Site Tools Contact Us" class="widgetSiteToolsContactUs siteToolsService" href="/directory.aspx">Contact Us</a></li>
+					<li class="widgetItem"><a tabindex="0" role="button" aria-label="Site Tools RSS" class="widgetSiteToolsRSS siteToolsService" href="/rss.aspx">RSS</a></li>
+					<li class="widgetItem"><a tabindex="0" role="button" aria-label="Site Tools Site Map" class="widgetSiteToolsSiteMap siteToolsService" href="/SiteMap">Site Map</a></li>
+					<li id="TranslatePage7857b5e8-bb61-43ea-b9fa-fa13070b42fb" class="widgetItem"><a tabindex="0" aria-label="Site Tools Translate Page opens in new window" role="button" class="widgetSiteToolsTranslatePage siteToolsService" onkeypress="if (event.which == 13) { this.onclick(); }" onclick="Core.Layout.dynamicJavascript('window.open(\&#39;http://translate.google.com/translate?js=n&amp;sl=auto&amp;tl=es&amp;u=\&#39; + document.location.href, \&quot;TranslateWindow\&quot;);'); return false;" href="#TranslatePage7857b5e8-bb61-43ea-b9fa-fa13070b42fb">Translate Page</a></li>
+					<li class="widgetItem"><a tabindex="0" role="button" aria-label="Site Tools Notifications" class="widgetSiteToolsNotifications siteToolsService" href="/list.aspx">Notifications</a></li>
+					<li class="widgetItem"><a tabindex="0" role="button" aria-label="Site Tools Documents" class="widgetSiteToolsDocuments siteToolsService" href="/DocumentCenter">Documents</a></li>
+		</ol>
+	</div>
+
+		 </div>
+	</div>
+
+	</section>
+
+
+
+</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!--		--></div> <!-- outer row -->
+
+
+	</div>
+</aside>
+</div><!-- Graphic Links --><div data-cpRole="structuralContainer" id="structuralContainer10">
+<div class="siteWrap"><aside data-cpRole="contentContainer" id="contentContainer10a">	<div id="ccbe82bc8c-c721-4ba7-942e-e97055ae1db6" data-containerid="be82bc8c-c721-4ba7-942e-e97055ae1db6" class="pageContent cpGrid cpGrid24 isLockedContainer showInMobile" data-contentcontainerbreakpoint="60">
+				                
+
+		<div class="row outer wide"><!--
+--><div class="outer col col24 first last" style="" data-widgetcontainerid="e61bdb5d-230c-42d3-b973-7694263bbf34">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col24 first last id0933d2cb-8d37-4131-97c4-40c6b2a4ba27" style="" data-widgetcontainerid="0933d2cb-8d37-4131-97c4-40c6b2a4ba27">	
+<div data-widget-id="0ac1fc59-fa08-4cfa-ba26-0899b0aa3c60" data-widget-controller-path="/GraphicLinks/Widget">
+
+
+
+
+<div id="graphicLinkWidget0ac1fc59-fa08-4cfa-ba26-0899b0aa3c60" class="widget widgetGraphicLinks skin45 widgetOptionSet25 wide" data-elementqueryclasses='{"wide-narrow":"min-width:60em"}' data-elementquerymatch='matchMultiColumn' data-elementqueryunmatch='unmatchMultiColumn' data-modulewidgettype="graphicLinks">
+	<div class="widgetHeader">
+		<div class="">
+				</div>
+	</div>
+	<div class="widgetBody cpGrid cpGrid5 ">	
+			<div class="row   wide"><!--
+--><div class="col col1 first "><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks">
+
+<div>
+	<a href="/229/Geographical-Information-Systems-GIS" target="_self" class="fancyButton fancyButton39 " >
+		<span>
+			<span><span class="text">Maps</span></span>
+		</span>
+	</a>
+</div>
+		<style scoped="scoped">.fancyButton39.fancyButton:link,.fancyButton39.fancyButton:visited, .fancyButton39div.fancyButton{
+	height: 13em;
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.fancyButton39.fancyButton:hover,.fancyButton39.fancyButton:focus,.fancyButton39.fancyButton:active,.fancyButton39.fancyButton.hover{
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+}
+.fancyButton39.fancyButton:link > span,.fancyButton39.fancyButton:visited > span, .fancyButton39div.fancyButton > span{
+}
+.fancyButton39.fancyButton:hover > span,.fancyButton39.fancyButton:focus > span,.fancyButton39.fancyButton:active > span,.fancyButton39.fancyButton.hover > span{
+}
+.fancyButton39.fancyButton .text{
+	color: #fff;
+	font-size: 1.2em;
+	font-family: "Raleway";
+	text-align: center;
+	padding-top: 8em;
+	font-weight: 200;
+	text-decoration: none;
+	padding-top: 8em;
+	background-image: url('/ImageRepository/Document?documentID=43');
+	background-repeat: no-repeat;
+	background-position: center center;
+
+text-transform: uppercase;}
+.fancyButton39.fancyButton:hover .text,.fancyButton39.fancyButton:focus .text,.fancyButton39.fancyButton:active .text,.fancyButton39.fancyButton.hover .text{
+	color: #b95a27;
+	font-family: Raleway;
+	font-weight: 700;
+	text-decoration: none;
+	background-image: url('/ImageRepository/Document?documentID=44');
+	background-repeat: no-repeat;
+	background-position: center center;
+
+
+}
+</style>
+
+ </div><!--
+--></div></div><!----><div class="col col1  "><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks">
+
+<div>
+	<a href="/135/Employment-Opportunities" target="_self" class="fancyButton fancyButton40 " >
+		<span>
+			<span><span class="text">Employment</span></span>
+		</span>
+	</a>
+</div>
+		<style scoped="scoped">.fancyButton40.fancyButton:link,.fancyButton40.fancyButton:visited, .fancyButton40div.fancyButton{
+	height: 13em;
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.fancyButton40.fancyButton:hover,.fancyButton40.fancyButton:focus,.fancyButton40.fancyButton:active,.fancyButton40.fancyButton.hover{
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+}
+.fancyButton40.fancyButton:link > span,.fancyButton40.fancyButton:visited > span, .fancyButton40div.fancyButton > span{
+}
+.fancyButton40.fancyButton:hover > span,.fancyButton40.fancyButton:focus > span,.fancyButton40.fancyButton:active > span,.fancyButton40.fancyButton.hover > span{
+}
+.fancyButton40.fancyButton .text{
+	color: #fff;
+	font-size: 1.2em;
+	font-family: "Raleway";
+	text-align: center;
+	padding-top: 8em;
+	font-weight: 200;
+	text-decoration: none;
+	padding-top: 8em;
+	background-image: url('/ImageRepository/Document?documentID=42');
+	background-repeat: no-repeat;
+	background-position: center center;
+
+text-transform: uppercase;}
+.fancyButton40.fancyButton:hover .text,.fancyButton40.fancyButton:focus .text,.fancyButton40.fancyButton:active .text,.fancyButton40.fancyButton.hover .text{
+	color: #b95a27;
+	font-family: Raleway;
+	font-weight: 700;
+	text-decoration: none;
+	background-image: url('/ImageRepository/Document?documentID=41');
+	background-repeat: no-repeat;
+	background-position: center center;
+
+
+}
+</style>
+
+ </div><!--
+--></div></div><!----><div class="col col1  "><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks">
+
+<div>
+	<a href="/AgendaCenter" target="_self" class="fancyButton fancyButton41 " >
+		<span>
+			<span><span class="text">Agendas &amp; Minutes</span></span>
+		</span>
+	</a>
+</div>
+		<style scoped="scoped">.fancyButton41.fancyButton:link,.fancyButton41.fancyButton:visited, .fancyButton41div.fancyButton{
+	height: 13em;
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.fancyButton41.fancyButton:hover,.fancyButton41.fancyButton:focus,.fancyButton41.fancyButton:active,.fancyButton41.fancyButton.hover{
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+}
+.fancyButton41.fancyButton:link > span,.fancyButton41.fancyButton:visited > span, .fancyButton41div.fancyButton > span{
+}
+.fancyButton41.fancyButton:hover > span,.fancyButton41.fancyButton:focus > span,.fancyButton41.fancyButton:active > span,.fancyButton41.fancyButton.hover > span{
+}
+.fancyButton41.fancyButton .text{
+	color: #fff;
+	font-size: 1.2em;
+	font-family: "Raleway";
+	text-align: center;
+	padding-top: 8em;
+	font-weight: 200;
+	text-decoration: none;
+	padding-top: 8em;
+	background-image: url('/ImageRepository/Document?documentID=37');
+	background-repeat: no-repeat;
+	background-position: center center;
+
+text-transform: uppercase;}
+.fancyButton41.fancyButton:hover .text,.fancyButton41.fancyButton:focus .text,.fancyButton41.fancyButton:active .text,.fancyButton41.fancyButton.hover .text{
+	color: #b95a27;
+	font-family: Raleway;
+	font-weight: 700;
+	text-decoration: none;
+	background-image: url('/ImageRepository/Document?documentID=38');
+	background-repeat: no-repeat;
+	background-position: center center;
+
+
+}
+</style>
+
+ </div><!--
+--></div></div><!----><div class="col col1  "><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks">
+
+<div>
+	<a href="/476/Elections" target="_self" class="fancyButton fancyButton42 " >
+		<span>
+			<span><span class="text">Elections</span></span>
+		</span>
+	</a>
+</div>
+		<style scoped="scoped">.fancyButton42.fancyButton:link,.fancyButton42.fancyButton:visited, .fancyButton42div.fancyButton{
+	height: 13em;
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.fancyButton42.fancyButton:hover,.fancyButton42.fancyButton:focus,.fancyButton42.fancyButton:active,.fancyButton42.fancyButton.hover{
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+}
+.fancyButton42.fancyButton:link > span,.fancyButton42.fancyButton:visited > span, .fancyButton42div.fancyButton > span{
+}
+.fancyButton42.fancyButton:hover > span,.fancyButton42.fancyButton:focus > span,.fancyButton42.fancyButton:active > span,.fancyButton42.fancyButton.hover > span{
+}
+.fancyButton42.fancyButton .text{
+	color: #fff;
+	font-size: 1.2em;
+	font-family: "Raleway";
+	text-align: center;
+	padding-top: 8em;
+	font-weight: 200;
+	text-decoration: none;
+	padding-top: 8em;
+	background-image: url('/ImageRepository/Document?documentID=39');
+	background-repeat: no-repeat;
+	background-position: center center;
+
+text-transform: uppercase;}
+.fancyButton42.fancyButton:hover .text,.fancyButton42.fancyButton:focus .text,.fancyButton42.fancyButton:active .text,.fancyButton42.fancyButton.hover .text{
+	color: #b95a27;
+	font-family: Raleway;
+	font-weight: 700;
+	text-decoration: none;
+	background-image: url('/ImageRepository/Document?documentID=40');
+	background-repeat: no-repeat;
+	background-position: center center;
+
+
+}
+</style>
+
+ </div><!--
+--></div></div><!----><div class="col col1  last"><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks">
+
+<div>
+	<a href="/FormCenter/Contact-Us-12/Contact-Us-52" target="_self" class="fancyButton fancyButton43 " >
+		<span>
+			<span><span class="text">Ask a Question</span></span>
+		</span>
+	</a>
+</div>
+		<style scoped="scoped">.fancyButton43.fancyButton:link,.fancyButton43.fancyButton:visited, .fancyButton43div.fancyButton{
+	height: 13em;
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.fancyButton43.fancyButton:hover,.fancyButton43.fancyButton:focus,.fancyButton43.fancyButton:active,.fancyButton43.fancyButton.hover{
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+}
+.fancyButton43.fancyButton:link > span,.fancyButton43.fancyButton:visited > span, .fancyButton43div.fancyButton > span{
+}
+.fancyButton43.fancyButton:hover > span,.fancyButton43.fancyButton:focus > span,.fancyButton43.fancyButton:active > span,.fancyButton43.fancyButton.hover > span{
+}
+.fancyButton43.fancyButton .text{
+	color: #fff;
+	font-size: 1.2em;
+	font-family: "Raleway";
+	text-align: center;
+	padding-top: 8em;
+	font-weight: 200;
+	text-decoration: none;
+	padding-top: 8em;
+	background-image: url('/ImageRepository/Document?documentID=45');
+	background-repeat: no-repeat;
+	background-position: center center;
+
+text-transform: uppercase;}
+.fancyButton43.fancyButton:hover .text,.fancyButton43.fancyButton:focus .text,.fancyButton43.fancyButton:active .text,.fancyButton43.fancyButton.hover .text{
+	color: #b95a27;
+	font-family: Raleway;
+	font-weight: 700;
+	text-decoration: none;
+	background-image: url('/ImageRepository/Document?documentID=46');
+	background-repeat: no-repeat;
+	background-position: center center;
+
+
+}
+</style>
+
+ </div><!--
+--></div></div><!--			--></div>
+	</div>
+	<div class="widgetFooter">
+			</div>
+</div>
+
+</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!--		--></div> <!-- outer row -->
+
+
+	</div>
+</aside></div>
+</div><!-- Footer --><div data-cpRole="structuralContainer" id="structuralContainer11">
+<div class="siteWrap"><aside data-cpRole="contentContainer" id="contentContainer11a">	<div id="cc5a8b711d-6b81-402a-9b48-b396109f317d" data-containerid="5a8b711d-6b81-402a-9b48-b396109f317d" class="pageContent cpGrid cpGrid24 isLockedContainer showInMobile" data-contentcontainerbreakpoint="60">
+				                
+
+		<div class="row outer wide"><!--
+--><div class="outer col col6 first" style="" data-widgetcontainerid="6224a522-1ecc-44e7-9393-ee556f3f7294">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col6 first last id95b1edb2-fcf9-43f8-a575-e69d14a29e63" style="" data-widgetcontainerid="95b1edb2-fcf9-43f8-a575-e69d14a29e63">	
+    <div data-widget-id="4009f30c-e7d4-4d51-a40f-1af9a44c9fef" data-widget-controller-path="/InfoAdvanced/Widget">
+
+
+
+
+
+	<section id="divInfoAdv4009f30c-e7d4-4d51-a40f-1af9a44c9fef" class="widget widgetInfoAdvanced skin37 widgetOptionSet5 wide" data-modulewidgettype="infoAdv" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}' data-elementquerymatch='matchMultiColumn' data-elementqueryunmatch='unmatchMultiColumn' aria-label="Info Advanced">
+			<header class="widgetHeader" id="header4009f30c-e7d4-4d51-a40f-1af9a44c9fef">
+		<div class="">
+								</div>
+	</header>
+	<div class="widgetBody  cpGrid cpGrid1 ">
+		<div class="row  wide">
+					<div class="col col1 first last">
+						<ol class="pageStyles semanticList">
+
+<li class="InfoAdvanced widgetItem ">
+	<img src="/ImageRepository/Document?documentID=36" alt="A Place We Call Home" title="A Place We Call Home">
+</li>						</ol>
+					</div>
+		</div>
+	</div>
+	<div class="widgetFooter">
+
+	</div>
+
+	</section>
+
+
+
+<script type="text/javascript">
+	//Render slideshow if info advacned items contain one.
+	$(document).ready(function (e) {
+		$('#divInfoAdv4009f30c-e7d4-4d51-a40f-1af9a44c9fef .InfoAdvanced.widgetItem').each(function () {
+			renderSlideshowIfApplicable($(this));		
+		});
+	});
+</script></div>	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!----><div class="outer col col6" style="" data-widgetcontainerid="88cf900b-5eb5-4a78-ad5f-c79a659300ea">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col6 first last id7a654597-5a53-441f-81e4-f527ba47cd0a" style="" data-widgetcontainerid="7a654597-5a53-441f-81e4-f527ba47cd0a">	
+    <div data-widget-id="aaae827a-694a-4f1b-a92c-5a9e0732cf29" data-widget-controller-path="/InfoAdvanced/Widget">
+
+
+
+
+
+	<section id="divInfoAdvaaae827a-694a-4f1b-a92c-5a9e0732cf29" class="widget widgetInfoAdvanced skin37 widgetOptionSet5 wide" data-modulewidgettype="infoAdv" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}' data-elementquerymatch='matchMultiColumn' data-elementqueryunmatch='unmatchMultiColumn' aria-labelledby="headeraaae827a-694a-4f1b-a92c-5a9e0732cf29">
+			<header class="widgetHeader" id="headeraaae827a-694a-4f1b-a92c-5a9e0732cf29">
+		<div class="">
+					<h3 >Contact Us</h3>
+								</div>
+	</header>
+	<div class="widgetBody  cpGrid cpGrid1 ">
+		<div class="row  wide">
+					<div class="col col1 first last">
+						<ol class="pageStyles semanticList">
+
+<li class="InfoAdvanced widgetItem ">
+	921 W. Thatcher Boulevard<br>
+Safford, AZ 85546<br>
+<br>
+<div>
+Phone: <a href="tel:9284283250">928-428-3250 </a></div>
+<div>Toll Free: <a href="tel:8884283252" target="_self" class="Hyperlink">1-888-428-3252</a><br>
+</div>
+<div id="extension-is-installed"></div>
+</li>						</ol>
+					</div>
+		</div>
+	</div>
+	<div class="widgetFooter">
+
+	</div>
+
+	</section>
+
+
+
+<script type="text/javascript">
+	//Render slideshow if info advacned items contain one.
+	$(document).ready(function (e) {
+		$('#divInfoAdvaaae827a-694a-4f1b-a92c-5a9e0732cf29 .InfoAdvanced.widgetItem').each(function () {
+			renderSlideshowIfApplicable($(this));		
+		});
+	});
+</script></div>	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!----><div class="outer col col6" style="" data-widgetcontainerid="a91cb9c7-da83-46cc-9c17-2f579a42d65e">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col6 first last id4bfeba87-960f-4b41-960a-cfe74b7a3ab9" style="" data-widgetcontainerid="4bfeba87-960f-4b41-960a-cfe74b7a3ab9">	
+	<div data-widget-id="f2616844-5145-4042-84c8-ef59d2364317" data-widget-controller-path="/QuickLinks/Widget">
+
+
+
+
+
+ 
+
+
+	<section id="widgetQuicklinkf2616844-5145-4042-84c8-ef59d2364317" class="widget widgetQuickLinks skin37 widgetOptionSet24 narrow" data-modulewidgettype="quickLinks" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}' data-elementquerymatch='matchMultiColumn' data-elementqueryunmatch='unmatchMultiColumn' aria-labelledby="quickLinksHeaderf2616844-5145-4042-84c8-ef59d2364317">
+			<header class="widgetHeader" id="quickLinksHeaderf2616844-5145-4042-84c8-ef59d2364317">
+		<div class="">
+					<h3><a  style="" href="/QuickLinks.aspx?CID=13," >Quick Links</a></h3>
+						</div>
+	</header>
+	<div class="widgetBody cpGrid cpGrid1 ">
+        <div class="row  narrow">
+				<div class="col col1 first last">
+					<ol class="semanticList">
+
+    <li style="position:relative" class="widgetItem QuickLinks">
+        <a class="widgetDesc widgetQuickLinksLink" href="/344/Online-Court-Payments" target="_self" >Online Court Payments</a>
+    </li>
+
+    <li style="position:relative" class="widgetItem QuickLinks">
+        <a class="widgetDesc widgetQuickLinksLink" href="/421/Transfer-Sites" target="_self" >Transfer Sites</a>
+    </li>
+
+    <li style="position:relative" class="widgetItem QuickLinks">
+        <a class="widgetDesc widgetQuickLinksLink" href="https://www.wunderground.com/weather/us/az/safford" target="_blank"  aria-label="Safford Weather opens in new window">Safford Weather</a>
+    </li>
+
+    <li style="position:relative" class="widgetItem QuickLinks">
+        <a class="widgetDesc widgetQuickLinksLink" href="https://ein.az.gov/" target="_blank"  aria-label="Arizona Emergency Information Network opens in new window">Arizona Emergency Information Network</a>
+    </li>
+
+    <li style="position:relative" class="widgetItem QuickLinks">
+        <a class="widgetDesc widgetQuickLinksLink" href="/632/Community-Bulletin-Board" target="_self" >Community Bulletin Board</a>
+    </li>
+
+    <li style="position:relative" class="widgetItem QuickLinks">
+        <a class="widgetDesc widgetQuickLinksLink" href="http://www.visitgrahamcounty.com/" target="_blank"  aria-label="Visit Graham County opens in new window">Visit Graham County</a>
+    </li>
+					</ol>
+				</div>
+		</div>
+        
+	</div>
+	<div class="widgetFooter">
+	</div>
+	<div class="addItemModal hidden">
+		<div class="url hidden">/QuickLinks.aspx</div>
+	</div>
+
+	</section>
+</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!----><div class="outer col col6 last" style="" data-widgetcontainerid="d087a96f-7367-4615-b59d-9a7c195e6138">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col6 first last id7eddbb75-50d5-4f10-8b29-a7bc57e51a58" style="" data-widgetcontainerid="7eddbb75-50d5-4f10-8b29-a7bc57e51a58">	
+	<div data-widget-id="2816371b-57b8-4a4b-ac33-f644137cc027" data-widget-controller-path="/QuickLinks/Widget">
+
+
+
+
+
+ 
+
+
+	<section id="widgetQuicklink2816371b-57b8-4a4b-ac33-f644137cc027" class="widget widgetQuickLinks skin37 widgetOptionSet24 narrow" data-modulewidgettype="quickLinks" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}' data-elementquerymatch='matchMultiColumn' data-elementqueryunmatch='unmatchMultiColumn' aria-labelledby="quickLinksHeader2816371b-57b8-4a4b-ac33-f644137cc027">
+			<header class="widgetHeader" id="quickLinksHeader2816371b-57b8-4a4b-ac33-f644137cc027">
+		<div class="">
+					<h3><a  style="" href="/QuickLinks.aspx?CID=14," >Site Links</a></h3>
+						</div>
+	</header>
+	<div class="widgetBody cpGrid cpGrid1 ">
+        <div class="row  narrow">
+				<div class="col col1 first last">
+					<ol class="semanticList">
+
+    <li style="position:relative" class="widgetItem QuickLinks">
+        <a class="widgetDesc widgetQuickLinksLink" href="/" target="_self" >Home</a>
+    </li>
+
+    <li style="position:relative" class="widgetItem QuickLinks">
+        <a class="widgetDesc widgetQuickLinksLink" href="/sitemap" target="_self" >Site Map</a>
+    </li>
+
+    <li style="position:relative" class="widgetItem QuickLinks">
+        <a class="widgetDesc widgetQuickLinksLink" href="/Directory.aspx" target="_self" >Contact Us</a>
+    </li>
+
+    <li style="position:relative" class="widgetItem QuickLinks">
+        <a class="widgetDesc widgetQuickLinksLink" href="/662/County-Seal" target="_self" >County Seal</a>
+    </li>
+
+    <li style="position:relative" class="widgetItem QuickLinks">
+        <a class="widgetDesc widgetQuickLinksLink" href="/accessibility" target="_self" >Accessibility</a>
+    </li>
+
+    <li style="position:relative" class="widgetItem QuickLinks">
+        <a class="widgetDesc widgetQuickLinksLink" href="/site/copyright" target="_self" >Copyright Notices</a>
+    </li>
+
+    <li style="position:relative" class="widgetItem QuickLinks">
+        <a class="widgetDesc widgetQuickLinksLink" href="/124/Privacy-Policy" target="_self" >Privacy Policy</a>
+    </li>
+					</ol>
+				</div>
+		</div>
+        
+	</div>
+	<div class="widgetFooter">
+	</div>
+	<div class="addItemModal hidden">
+		<div class="url hidden">/QuickLinks.aspx</div>
+	</div>
+
+	</section>
+</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!--		--></div> <!-- outer row -->
+
+
+	</div>
+</aside></div>
+</div><!-- CP --><div data-cpRole="structuralContainer" id="structuralContainer12">
+<div class="siteWrap"><aside data-cpRole="contentContainer" id="contentContainer12a">	<div id="ccbf4d0672-1865-49d0-8373-131ab64022c8" data-containerid="bf4d0672-1865-49d0-8373-131ab64022c8" class="pageContent cpGrid cpGrid24 isLockedContainer showInMobile">
+				                
+
+		<div class="row outer wide"><!--
+--><div class="outer col col24 first last" style="" data-widgetcontainerid="05e15d2a-18f7-4b5c-a0cf-f14e4ac14799">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col24 first last ida1301904-c7f3-4fdc-8592-18442a8076d5" style="" data-widgetcontainerid="a1301904-c7f3-4fdc-8592-18442a8076d5">	
+ 
+	<div data-widget-id='f2e70e6f-37e1-40dc-baf0-6e124e964147' data-moduleName="customHtml" id='widgetCustomHtmlf2e70e6f-37e1-40dc-baf0-6e124e964147' class="widget widgetCustomHtml skin43 narrow" >
+	<div class="widgetBody pageStyles" id="widgetBodyf2e70e6f-37e1-40dc-baf0-6e124e964147">
+		<div id="customHtmlf2e70e6f-37e1-40dc-baf0-6e124e964147"><div><div style="color: #fff;">Government Websites by <a href="https://www.civicplus.com/" style="text-decoration: none; color: #fff;">CivicPlus&reg;</a> &nbsp | &nbsp <a href="https://outlook.office365.com" target="_blank" style="text-decoration: none; color: #fff;">County Email Access</a> &nbsp | &nbsp <a href="http://10.72.29.59/intranet/" target="_blank" style="text-decoration: none; color: #fff;">County Intranet</a></div></div></div>
+	</div>
+	</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!--		--></div> <!-- outer row -->
+
+
+	</div>
+</aside></div>
+</div>
+</div>
+
+			</div>
+		</div>
+	</div>
+	
+	
+	<script type="text/javascript">function dynamicStretchContainers () {Core.Layout.stretchContainers('#structuralContainer2, #structuralContainer1, #structuralContainer8, #structuralContainer6');}</script>
+
+
+
+
+
+
+	<script src="/237693563.js" type="text/javascript"></script>
+	<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['setCustomUrl', location.href.toLowerCase()]); _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  $(window).load(function(){
+    var u="//analytics.civicplus.com/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 4911]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  });
+</script>
+<noscript><p><img src="//analytics.civicplus.com/piwik.php?idsite=4911" style="border:0;" alt="Piwik" /></p></noscript>
+<!-- End Piwik Code -->
+
+
+
+<!-- Google Translate -->
+<script type="text/javascript">
+    var translateActiveCookie = getCookieValue('translateActive');
+    if (translateActiveCookie == 'true') {
+        enableGoogleTranslate();
+    } else {
+        var button = '<a class="translateWidget" title="Enable Google Translate" style="background-color: #FFF;border-color: #9b9b9b #d5d5d5 transparent #d5d5d5;border-style: solid;border-width: 1px 1px 0 1px;bottom: 0px;color: #000;cursor: pointer;font-size: .9em;padding: 2px 6px 3px 4px;position: fixed;right: 20px;z-index: 5;">';
+        button += '<img alt="Google Translate Icon" src="/Assets/Images/GoogleTranslate.gif" style="box-sizing: content-box !important;height:19px;margin: -2px 0 0 -2px;padding-right: 5px;width:19px;">Enable Google Translate</a>';
+        $('div[data-cprole="structuralContainer"]').last().after(button);
+    }
+    function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+    }
+    function enableGoogleTranslate() {
+        $('#google_translate_element').show();
+        var sz = document.createElement('script'); sz.type = 'text/javascript'; sz.async = true;
+        sz.src = '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sz, s);
+        $('div[data-cprole="structuralContainer"]').last().after('<div id="google_translate_element" style="position: fixed; bottom: 0px; right: 20px; z-index: 5;"></div>');
+            document.cookie = "translateActive=true; expires=12/31/2999; path=/";
+    }
+    $('a.translateWidget').unbind('click').click(function (e) {
+        $(this).hide();
+        enableGoogleTranslate();
+    });
+</script>
+<!-- End Google Translate -->
+
+
+	<script type="text/javascript">
+		$(function () {
+			document.cookie = "responsiveGhost=0; path=/";
+		});
+		onOrLive($(window), function () {
+			$('body').addClass('doneLoading').removeClass('hideContent');
+
+			if ($('#404Content').length > 0)
+				$('div#bodyWrapper').css('padding', '0px');
+		}, 'load');
+	</script>
+
+	<noscript>
+		<style>
+			body.hideContent {
+				opacity: 1 !important;
+			}
+		</style>
+	</noscript>
+
+		
+<div style="display: none;">
+	<svg xmlns="http://www.w3.org/2000/svg" style="display:none;">
+
+		<symbol id="iconArrow--left" viewbox="0 0 25 25">
+			<title>Arrow Left</title>
+			<polygon style="fill:currentcolor" points="18.044,25 19.498,23.545 8.409,12.454 19.408,1.455 17.954,0 5.502,12.452"></polygon>
+		</symbol>
+
+		<symbol id="iconArrow--right" viewbox="0 0 25 25">
+			<title>Arrow Right</title>
+			<polygon style="fill:currentcolor" points="6.957,0 5.502,1.455 16.591,12.546 5.592,23.545 7.047,25 19.498,12.548"></polygon>
+		</symbol>
+
+	</svg>
+</div>
+	<script type="text/javascript">loadCSS('//fonts.googleapis.com/css?family=Playfair+Display:700,regular|Raleway:200,500,700,italic,regular|');</script>
+	
+
+	<div class="hidden activeWidgetSkinComponentsOnPageJson">[]</div>
+		<div style="display: none;">
+			<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+				<symbol id="iconSlideshowArrowLeft" viewBox="0 0 22.68 40">
+					<title>Slideshow Left Arrow</title>
+					<g>
+						<path style="fill:currentcolor;" d="M20,40a2.67,2.67,0,0,1-1.9-.79L.79,21.9a2.68,2.68,0,0,1,0-3.79L18.1.79a2.68,2.68,0,1,1,3.79,3.79L6.47,20,21.89,35.42A2.68,2.68,0,0,1,20,40Z"></path>
+					</g>
+				</symbol>
+				<symbol id="iconSlideshowArrowRight" viewBox="0 0 22.68 40">
+					<title>Slideshow Right Arrow</title>
+					<g>
+						<path style="fill:currentcolor;" d="M2.68,0a2.67,2.67,0,0,1,1.9.79L21.89,18.1a2.68,2.68,0,0,1,0,3.79L4.58,39.21A2.68,2.68,0,0,1,.79,35.42L16.21,20,.79,4.58A2.68,2.68,0,0,1,2.68,0Z"></path>
+					</g>
+				</symbol>
+			</svg>
+		</div>
+	
+	
+
+	</body>
+</html>
