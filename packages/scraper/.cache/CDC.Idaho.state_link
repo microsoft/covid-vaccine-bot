@@ -30,7 +30,7 @@
 	<meta name="DCTERMS.description" content="">
 	<meta name="DCTERMS.creator" content="Access Idaho">
 	<meta name="DCTERMS.created" content="2020-12-02T12:31:22">
-	<meta name="DCTERMS.modified" content="2021-02-09T16:47:35">
+	<meta name="DCTERMS.modified" content="2021-02-11T14:03:34">
 	<meta name="DCTERMS.language" content="EN">
 	<meta name="DCTERMS.publisher" content="State of Idaho">
 	<meta name="DCTERMS.format" content="text/html">
@@ -44,10 +44,10 @@
 	<meta property="og:locale" content="en_US" />
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content="COVID-19 Vaccine - Novel Coronavirus (COVID-19)" />
-	<meta property="og:description" content="Page last updated on February 9th, 2021 at 04:47 pmWhen and where to get your vaccination When and where to get a COVID-19 vaccination information is now available for Idahoans. [&hellip;]" />
+	<meta property="og:description" content="Page last updated on February 11th, 2021 at 02:03 pmWhen and where to get your vaccination When and where to get a COVID-19 vaccination information is now available for Idahoans. [&hellip;]" />
 	<meta property="og:url" content="https://coronavirus.idaho.gov/covid-19-vaccine/" />
 	<meta property="og:site_name" content="Novel Coronavirus (COVID-19)" />
-	<meta property="article:modified_time" content="2021-02-09T23:47:35+00:00" />
+	<meta property="article:modified_time" content="2021-02-11T21:03:34+00:00" />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:label1" content="Written by">
 	<meta name="twitter:data1" content="Chris Gozzo">
@@ -98,7 +98,7 @@
 
 
 <!-- This site is optimized with the Schema plugin v1.7.8.3 - https://schema.press -->
-<script type="application/ld+json">{"@context":"http:\/\/schema.org\/","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/coronavirus.idaho.gov\/covid-19-vaccine\/"},"url":"https:\/\/coronavirus.idaho.gov\/covid-19-vaccine\/","headline":"COVID-19...","datePublished":"2020-12-02T12:31:22-07:00","dateModified":"2021-02-09T16:47:35-07:00","publisher":{"@type":"Organization","@id":"https:\/\/coronavirus.idaho.gov\/#organization","name":"Novel Coronavirus (COVID-19)","logo":{"@type":"ImageObject","url":"","width":600,"height":60}},"description":"When and where to get your vaccination When and where to get a COVID-19 vaccination information is now available for Idahoans. When the vaccine is available to your priority group, it is anticipated that you will be able to get the vaccine through normal vaccination locations such as your","author":{"@type":"Person","name":"Chris Gozzo","url":"https:\/\/coronavirus.idaho.gov\/author\/cgozzo\/","image":{"@type":"ImageObject","url":"https:\/\/secure.gravatar.com\/avatar\/0804f84b523709ced12d0a75b2b3307e?s=96&d=mm&r=g","height":96,"width":96}}}</script>
+<script type="application/ld+json">{"@context":"http:\/\/schema.org\/","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/coronavirus.idaho.gov\/covid-19-vaccine\/"},"url":"https:\/\/coronavirus.idaho.gov\/covid-19-vaccine\/","headline":"COVID-19...","datePublished":"2020-12-02T12:31:22-07:00","dateModified":"2021-02-11T14:03:34-07:00","publisher":{"@type":"Organization","@id":"https:\/\/coronavirus.idaho.gov\/#organization","name":"Novel Coronavirus (COVID-19)","logo":{"@type":"ImageObject","url":"","width":600,"height":60}},"description":"When and where to get your vaccination When and where to get a COVID-19 vaccination information is now available for Idahoans. When the vaccine is available to your priority group, it is anticipated that you will be able to get the vaccine through normal vaccination locations such as your","author":{"@type":"Person","name":"Chris Gozzo","url":"https:\/\/coronavirus.idaho.gov\/author\/cgozzo\/","image":{"@type":"ImageObject","url":"https:\/\/secure.gravatar.com\/avatar\/0804f84b523709ced12d0a75b2b3307e?s=96&d=mm&r=g","height":96,"width":96}}}</script>
 
 <meta name="tec-api-version" content="v1"><meta name="tec-api-origin" content="https://coronavirus.idaho.gov"><link rel="https://theeventscalendar.com/" href="https://coronavirus.idaho.gov/wp-json/tribe/events/v1/" />			<style type="text/css">
 				
@@ -299,7 +299,7 @@ if(GTranslateGetCurrentLang() != null)jQuery(document).ready(function() {var lan
 					<header class="entry-header">
 			<h1 class="entry-title">COVID-19 Vaccine</h1>		</header>
 			<div class="entry-content">
-        <p class="last-updated">Page last updated on February 9th, 2021 at 04:47 pm</p>
+        <p class="last-updated">Page last updated on February 11th, 2021 at 02:03 pm</p>
 <div class="wp-block-columns">
 <div class="wp-block-column" style="flex-basis:66.66%">
 <p style="font-size:32px"><a href="https://healthandwelfare.idaho.gov/covid-19-vaccination"><strong>When and where to get your vaccination</strong></a></p>
@@ -378,7 +378,7 @@ if(GTranslateGetCurrentLang() != null)jQuery(document).ready(function() {var lan
 
 
 <div class="wp-block-advgb-accordion-item advgb-accordion-item" style="margin-bottom:15px"><div class="advgb-accordion-header" style="background-color:#003459;color:#eee;border-style:solid;border-radius:2px"><span class="advgb-accordion-header-icon"><svg fill="#fff" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24"><path fill="none" d="M0,0h24v24H0V0z"></path><path d="M12,5.83L15.17,9l1.41-1.41L12,3L7.41,7.59L8.83,9L12,5.83z M12,18.17L8.83,15l-1.41,1.41L12,21l4.59-4.59L15.17,15 L12,18.17z"></path></svg></span><h4 class="advgb-accordion-header-title" style="color:inherit">DHW COVID-19 Vaccine Media Briefings</h4></div><div class="advgb-accordion-body" style="border-style:solid !important;border-color:undefined !important;border-top:none !important;border-radius:2px !important">
-<ul><li><a href="https://youtu.be/XFW2a2_gcxQ">Feb. 2 COVID19 Media Briefing</a></li><li><a href="https://www.youtube.com/watch?v=bXgZ5ao64G4&amp;feature=youtu.be">Jan 26 COVID19 Media Briefing</a></li><li><a href="https://youtu.be/1irGxoYSvZY">Jan 19 COVID19 Media Briefing</a></li><li><a href="https://youtu.be/VIw74xVc8zQ">Jan 12 COVID19 Media Briefing</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/watch?v=bPonGgD-Of4&amp;feature=youtu.be" target="_blank">Jan 5 COVID19 Media Briefing</a></li></ul>
+<ul><li><a href="https://youtu.be/HI6ELFhpYW0">Feb 9 COVID19 Media Briefing</a></li><li><a href="https://youtu.be/XFW2a2_gcxQ">Feb. 2 COVID19 Media Briefing</a></li><li><a href="https://www.youtube.com/watch?v=bXgZ5ao64G4&amp;feature=youtu.be">Jan 26 COVID19 Media Briefing</a></li><li><a href="https://youtu.be/1irGxoYSvZY">Jan 19 COVID19 Media Briefing</a></li><li><a href="https://youtu.be/VIw74xVc8zQ">Jan 12 COVID19 Media Briefing</a></li><li><a rel="noreferrer noopener" href="https://www.youtube.com/watch?v=bPonGgD-Of4&amp;feature=youtu.be" target="_blank">Jan 5 COVID19 Media Briefing</a></li></ul>
 </div></div>
 
 
@@ -462,7 +462,7 @@ if(GTranslateGetCurrentLang() != null)jQuery(document).ready(function() {var lan
 			body.className = body.className.replace( /\btribe-no-js\b/, 'tribe-js' );
 		} )( document.body );
 		</script>
-		<div class='versioning'>ver: 3.3.9 | last updated: <time>February 9, 2021 at 04:47 pm</time></div><script> /* <![CDATA[ */var tribe_l10n_datatables = {"aria":{"sort_ascending":": activate to sort column ascending","sort_descending":": activate to sort column descending"},"length_menu":"Show _MENU_ entries","empty_table":"No data available in table","info":"Showing _START_ to _END_ of _TOTAL_ entries","info_empty":"Showing 0 to 0 of 0 entries","info_filtered":"(filtered from _MAX_ total entries)","zero_records":"No matching records found","search":"Search:","all_selected_text":"All items on this page were selected. ","select_all_link":"Select all pages","clear_selection":"Clear Selection.","pagination":{"all":"All","next":"Next","previous":"Previous"},"select":{"rows":{"0":"","_":": Selected %d rows","1":": Selected 1 row"}},"datepicker":{"dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesMin":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Prev","currentText":"Today","closeText":"Done","today":"Today","clear":"Clear"}};/* ]]> */ </script><link rel='stylesheet' id='advgb_blocks_styles_min-css'  href='https://coronavirus.idaho.gov/wp-content/plugins/advanced-gutenberg/assets/css/blocks_styles/blocks.min.css?ver=5.5.3' type='text/css' media='all' />
+		<div class='versioning'>ver: 3.3.9 | last updated: <time>February 11, 2021 at 02:03 pm</time></div><script> /* <![CDATA[ */var tribe_l10n_datatables = {"aria":{"sort_ascending":": activate to sort column ascending","sort_descending":": activate to sort column descending"},"length_menu":"Show _MENU_ entries","empty_table":"No data available in table","info":"Showing _START_ to _END_ of _TOTAL_ entries","info_empty":"Showing 0 to 0 of 0 entries","info_filtered":"(filtered from _MAX_ total entries)","zero_records":"No matching records found","search":"Search:","all_selected_text":"All items on this page were selected. ","select_all_link":"Select all pages","clear_selection":"Clear Selection.","pagination":{"all":"All","next":"Next","previous":"Previous"},"select":{"rows":{"0":"","_":": Selected %d rows","1":": Selected 1 row"}},"datepicker":{"dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesMin":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Prev","currentText":"Today","closeText":"Done","today":"Today","clear":"Clear"}};/* ]]> */ </script><link rel='stylesheet' id='advgb_blocks_styles_min-css'  href='https://coronavirus.idaho.gov/wp-content/plugins/advanced-gutenberg/assets/css/blocks_styles/blocks.min.css?ver=5.5.3' type='text/css' media='all' />
 <script type='text/javascript' id='contact-form-7-js-extra'>
 /* <![CDATA[ */
 var wpcf7 = {"apiSettings":{"root":"https:\/\/coronavirus.idaho.gov\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"}};

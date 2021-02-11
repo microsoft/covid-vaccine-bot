@@ -18,7 +18,7 @@
     
     <form method="post" action="/publichealth/cdepi/diseases/coronavirusvaccine/loginstate.aspx" id="Form" enctype="multipart/form-data">
 <div class="aspNetHidden">
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="4/Nnknsd6KBEOYsj546advqiO4WyMjMIXgLigYYCBP9rlUc+kKcLvtFY3Xoi8KGuJtVTdaDO3nkbHKCnQPY9/JxPzVFpRpiHn54lfhmxRFlHNtr/xqwGHSHzQczQj5cxirCstbvSo7TwDgq+vP6eAtr1/A0=" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="Uh996xtJiwrLfokDuZiY9HtzAWMNWJ2SjzzsAn/qQr63WB0FrRUjn50XZTtNkPHi2OAqr+yH2BOyDFhmuOjmKqUNzJyFfxRUgFWhVKCDb0RJmWsfXzgw8Pp8NBIrecYjT74MG5z5EhoeYxi0XuYvL/7CTV8=" />
 </div>
 
 
@@ -28,7 +28,7 @@
 
 	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
 	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
-	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="+9JqPvKdzywltebQAw+N+A403P11f9NvKFWhhAT+r5Oe+z/C0wrsSwWc2lsH6FnKarbA/qHRZXvqWQEvb1BXlZfyunoyOB2jlYY4JnNwZ15WBHTl" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="doN+KqbvFJ5iHT10igfQBWrGy3feX+m3shiatq6pSbmdHoQTijYnz8Y3Rk3Ff9/A9ZPz0XtQzu0O5hVgiMUC7VhYC+DXY3Fkp+JekIKyrnrFcsPb" />
 </div><script src="/js/dnn.js?cdv=6023" type="text/javascript"></script><script src="/js/dnncore.js?cdv=6023" type="text/javascript"></script><script src="/js/dnn.servicesframework.js?cdv=6023" type="text/javascript"></script><script type="text/javascript">
 //<![CDATA[
 Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [], 150, '');
@@ -215,7 +215,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sz
 
         <input name="ScrollTop" type="hidden" id="ScrollTop" />
         <input name="__dnnVariable" type="hidden" id="__dnnVariable" autocomplete="off" value="`{`trackLinks`:`false`,`__scdoff`:`1`,`sf_siteRoot`:`/`,`sf_tabId`:`7206`,`evoq_TabId`:`7206`,`evoq_PageLanguage`:`en-US`,`evoq_ContentItemId`:`-1`,`evoq_UrlReferrer`:null,`evoq_UrlPath`:null,`evoq_UrlQuery`:null,`evoq_ContentItemReferrer`:null,`evoq_PersonalizedUrlReferrer`:null,`evoq_DisableAnalytics`:`False`}" />
-        <input name="__RequestVerificationToken" type="hidden" value="esQtpx2gJvrX3lXudHedZF9tVJqd-Mm0s-L_JiSf9MUSIDEtAqAU09IXVjMjPleQ1lgOpQ2" />
+        <input name="__RequestVerificationToken" type="hidden" value="zcthYiA_1po_G-oNgoDFyaph1XEXyST4M13A6sZ_EeDU4UFtzTItZS4lFMF9xcfrOgPb8A2" />
     </form>
     <!--CDF(Javascript|/js/dnncore.js?cdv=6023|DnnBodyProvider|100)--><!--CDF(Css|/Resources/Shared/stylesheets/dnndefault/7.0.0/default.css?cdv=6023|DnnPageHeaderProvider|5)--><!--CDF(Css|/Portals/85/portal.css?cdv=6023|DnnPageHeaderProvider|35)--><!--CDF(Javascript|/js/dnn.js?cdv=6023|DnnBodyProvider|12)--><!--CDF(Javascript|/js/dnn.servicesframework.js?cdv=6023|DnnBodyProvider|100)--><!--CDF(Javascript|/Resources/libraries/jQuery/03_02_01/jquery.js?cdv=6023|DnnPageHeaderProvider|5)--><!--CDF(Javascript|/Resources/libraries/jQuery-Migrate/03_00_00/jquery-migrate.js?cdv=6023|DnnPageHeaderProvider|6)-->
     

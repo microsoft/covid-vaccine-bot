@@ -35,7 +35,7 @@
 					for (var i = 0; i < forms.length; i++)
 					{
 						if (forms[i].method == "post" && !forms[i].querySelector('[name="__RequestVerificationToken"]') && !absPat.test(forms[i].getAttribute("action"))) {
-							forms[i].insertAdjacentHTML("beforeend", "<input name=\"__RequestVerificationToken\" type=\"hidden\" value=\"zxkEWDZPCI0F1PDrp1H-qai4APT_qWmwEG9UaP54GXNDYbunHYX4Rf3bungLh8f8kCWqssTaHla9f_wDTT5ojJH4tJlnPShnSuwOjXSngmE1\" />");
+							forms[i].insertAdjacentHTML("beforeend", "<input name=\"__RequestVerificationToken\" type=\"hidden\" value=\"61gtT1XeW7pOwLQvkKIBFQpr2X9sP7_cFdC-AyW2tV6K93z1QxoxWnKYsvFpuvxp_OdliraTS_wGlJyZj5ea-Ny9NqQUgX_BhKDlsv2B7SU1\" />");
 						}
 					}
 				}, false);
@@ -588,7 +588,7 @@ border: 1px solid #999896;
 	
 
 	<form name="aspnetForm" method="post" action="./AlertCenter.aspx?AID=Graham-County-COVID19-Vaccine-Informatio-11" id="aspnetForm" style="display:inline;" enctype="multipart/form-data" autocomplete="off">
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="hIGUtqSTzh9KgxAdFbdRt0f1CVcJUCe8kJTkOoqFv2g1yPlWyzlvQZmwt+ELeIc136dPrnBbcKrj78X95pn5yJF4YqCW9/Q5PFM/0MxY/5w3IDzWdQ7w8oX/C7pGE/TGCH67XetB0912aHwKVZMIWQBU76lQNG00AzGhLLlNYhpA1qnAn+EteppzxiASeSDP1hIrpd5C4k6iUO2PhfbrEBgOaIfGjBsJc8bVX/umaFpBW0VnOVZr6rtOxaofqrYY3XWjy9xrIruCtvmMUJnCqh059bJeCzPz6+MPpMahaS5+LEdgPGHimjFVFdzBNISM3IsewqlX0s9lokkLSsNe9PY/wcFXTUQZeW5PP+R4xU+dCEo7IHPbvKLPjWq/0ragXMjlvDqWOaW6sJHjMtQErGZgLZ012aI+JFk8na7uY7un0d6mEsbl1OCU3CqA2BxPyzJolEY+Ms91gfuA3QN4/qnX92VBNEmjow5fOrv8wYfdl6MCJ6UaIinWmlee3oJCqOA72SclhXbPKty6bmpQgGizITajmcYfM+4xtRJvqGzLCM2B5SW6t1iAqq2XadRrzKurmfvf4SRRyTY1T0RhBbawaeMvuxIR3Pldr60YrGj1TpAlVm44t7rtdvh7pnm/cfhPvlzWlrT8TGJt8T4kE1oLVVXo6OsYQ2QXu08N+3sglcihcb4Io5DHRQ9Gr7IFIxyGaowKNjcfB+9NRBHHqLPoaTeOjTmwtGi8HQ1GZ7vzYKYn5vhlz4zF9FJu4+3JPPzftv2o/s59B16Xu2Iz2snJbge0B92ZvXfez3zkF/eIBT9idklo/4qZFWxqedjwdZpbbymWgpQKStd/iW42eJ6ucggWy46rwrFUOYE3QfbUGnR3dgpyiemqQm/dZyE8aHPq2aIQjqDKeOPerLbAeFo6NmFwfEBiTb53oV2vUQRjij8jkLGnH05KkErgCTph0o2URZ9hS/2QS2bhHRaz5Nw+a780EYCk7DL5BPV5quTJKAC4LvraHppK8qDGsGMVMcWsFXcN/vCkhYhrcmT32GammfdECIw0ju2Y8KD8jJyFYeJno907/IluvSr4E5532gJPue8C2oXy/ShUpMoGvw==" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="mMv3F16RMF/54IQdyLFJcDn8OKL2g9sfGKGtH+wyEjRylM8YKqqAA/FdSZ1d9bh22Ix29a9VLfWGdpDt+vJY2EhMzWQP6SE+aeplYSb3TKPwf6HZCBNCb4U3a2KbVVizZt7aGlHfrVuA/XDoSgh/PeRYbmshmREp3YirsyIy4KpBNwSQ5TVEyEznJi/8ppXy25YZsZQppK1SYjdL8EBtCzKC2mk5yaXAFPb95ybz4CMR+NlonQpVGWttflwr2Vtelr7UzQr6YLHNsyar2lw1kqAonkv0dYFb8IUZkphbRuuTzl61P64qpRF197U+bylTndHYsZ5XveSuEQCJ48SwYRE0FqIqBVLNSxlcE0Du2iXCVjRhZrSUUmG/ZShaM4peWPxuQXXe1h1ZtrzvoSQ+dwIGCGvuQQgZHubn9crDdO2R/oG8dUjX0qiiV9UPSfbvhgZhbDj8OKisPZ01yIPH83BK5bil1aggU0FW94Q89oP4htS2CL+JaYpdzal9DwG5JVUrjsHe8ahoVAmCZV08uQuKd2QMQcMGY/o+OVn73mgJRFWbf1cHWPN/2CjjHMM9yB2JAOegRMbDtmXHS17Vulj+oDq/Ppnhxer3uNR/2PUaBsIibkzUR+pDmhk+6xNb5aUCTkyeiGVrERVGXTlXLPMtKbdsJMxf7d6AkoDGaWvSj6edamrcZQcjC0CsOdx50bHvWXOQkKuEUvn03ZjJS+w7vShJ97Zz6NK1losHnFjz3OtF4T/dMyVLMEXpPPc2WNISh3rhKA4lOd9Z/NIHhmNSZqI14D9pMjxVg20+JnTs5HX4T7xKxYphgkclnZIQjBd9heZ2pQcqJ16IS+BXK0CUtk7s9uHEDALMbkfonlEkYXiCfWSLKhsSOKB7kkhVGBoba/gA8IH0ZQ0Pv6Ke8MYiVO6PYnSPKTwGTl4wKPMnbPI3ZRRbm7ja2xNiMTgJtcW87/Zf9QOSaJKHcNA7CtGpsqYitxvx4VJ2tmPeS6BTtoPPZ6gT5qXpElUNZ2/cUkOMHjezqki/hKm5+Sc16ePVnZs08BbEPO1PtBit7GjD/2HQsT4SNvJvBXB1B1brcWpOtxvGzEOQo3/wgDVWgw==" />
 
 
 <script type="text/javascript">
@@ -598,7 +598,7 @@ window.location.querystring = ["AID"];//]]>
 
 <script src="/ScriptResource.axd?d=IbGCVwT4JGY5FmbA6ikjAKx1AvL9grzcpBja1e-0_2JH4Us4YSu5-fwTE4FmWeXJ1Sc8KBvOgRmWk6ka6VdzNXD_ujtGAN4EuCqAQg8KxT-9UUOW_p4MbXwcA_V9Rm33SYyQnpyhqC1wtxXIw7cZqGRtyy9HwVOqRpFvMGc1HzrHoAFW_r01gZrfHJdnvz7wfKH5W2lYoYqBnCpdtBYtvkVbVoPAMVFWsb-wENAxRSSPv7nQm5_lm09O3slxzIFMTn_77k79VCUScOuWhz60r0q6q8EgHNvv7i2v9Wa5emV8-xA_KDL7XVVQsIjCq9Sbx48m9PeGJN2j2KmX-tzMptdcXEEVpPZVwSmkBIlaY8tCUDrAPiiG3EQwXtx7yiun60zAJNsltt6cqoLPZMm1ao7FoD_LaiBqIUSm3KvetGYUHTLCmm59_gRnVAKmx_gHroIQ_rjwmcCrMxfPZB258sBuWYydObP-fU-jMuhmLO_xGWUArNkIQyIZaAq8RexJkjfuRmwtJqXhUlw4qRlCsdvo6f4niLUpDlkWx9MxSyuks4TSPYvshZryq-yV7ta7y-PmqPJ28uHQGrwj89EYAs-OEMBlMtd7NZchy2Q-Zh58YgP3EpSUCv0mqxRPEnc9GVAWV5C4ps8N_T3yYRo1_2ROHVf220ebsVhXwGwMUKqXbwoMdqa-pCFzAu5P55PNRT-kj7Y18esRU4RdYZ_apWHb8SCYIvXJKJ8hBKSRhPPbLo1qgyp06KJTN0GCzlHrYAKorz8VptbCkjNbVJ6amPEs3ogYKKIILIjlNNLRWxP26bhXJPD31bjzChNo5ozVMKbQmHlvRi90KROh4OPxPg2" type="text/javascript"></script>
 <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="5DAAF125" />
-		<input name="__RequestVerificationToken" type="hidden" value="E3pAEddXf-KCLywx2NlTAMiuOSu9GirPNLWQLQffJbarVkK9_rYfxE2BoS1mATvWYX4k2vLtww1QkyBj6iO_pLqmDrAB6U7HGYKI0XYn8pg1" />
+		<input name="__RequestVerificationToken" type="hidden" value="wVLXHKDlPwC_MlH8iYyJh_DfmyGZlr8B7_mvjXG5i20NRZQYUCyk2Fb-tvEXJaJsNR24gRQdRrRVfpjZYSQ2MHL-Pc3_L0i99xoAkxUHl6s1" />
 		<!--for archiving purpose-->
 		<input name="ysnNotifyMe" type="hidden">
 		<input name="strPage" type="hidden">
@@ -764,7 +764,7 @@ window.location.querystring = ["AID"];//]]>
 <input type="hidden" name="txtComments" value="">
 <input type="hidden" name="txtSMSComments" value="">
 <input type="hidden" name="txtSubject" value="" >
-<input type="hidden" id="dtiCurDate" name="dtiCurDate" value="Thursday, February 11, 2021 2:01 PM">
+<input type="hidden" id="dtiCurDate" name="dtiCurDate" value="Thursday, February 11, 2021 2:04 PM">
 <!-- END Notify Me Fields -->
 
 <script type="text/javascript" language="javascript"><!--
@@ -878,7 +878,7 @@ Sys.Application.add_init(function() {
 									{"BannerOptionID":2,"ThemeID":1,"SlotName":"banner1","Name":"Default","IsDefault":true,"BannerMode":2,"SlideShowSlideTiming":"10","SlideshowTransition":0,"SlideShowTransitionTiming":null,"ImageScale":false,"ImageAlignment":2,"ImageScroll":true,"MuteSound":true,"VideoType":0,"Status":40,"SlideshowControlsPosition":0,"SlideshowControlsAlignment":0,"SlideshowBannerControlsColorScheme":0,"BannerImages":[{"BannerImageID":305,"BannerOptionID":2,"FileName":"/ImageRepository/Document?documentID=2908","Height":410,"Width":2200,"StartingOn":null,"StoppingOn":null,"IsLink":false,"LinkAddress":null,"Sequence":0,"RecordStatus":0,"ModifiedBy":0,"ModifiedOn":"\/Date(-62135575200000)\/","AltText":""},{"BannerImageID":310,"BannerOptionID":2,"FileName":"/ImageRepository/Document?documentID=2438","Height":691,"Width":2200,"StartingOn":null,"StoppingOn":null,"IsLink":false,"LinkAddress":null,"Sequence":1,"RecordStatus":0,"ModifiedBy":0,"ModifiedOn":"\/Date(-62135575200000)\/","AltText":""},{"BannerImageID":309,"BannerOptionID":2,"FileName":"/ImageRepository/Document?documentID=2675","Height":410,"Width":2200,"StartingOn":null,"StoppingOn":null,"IsLink":false,"LinkAddress":null,"Sequence":2,"RecordStatus":0,"ModifiedBy":0,"ModifiedOn":"\/Date(-62135575200000)\/","AltText":""}],"BannerVideos":[],"RecordStatus":0,"ModifiedBy":0,"ModifiedOn":"\/Date(-62135575200000)\/"},
 								'/App_Themes/Interior/Images/',
 								'Rotating',
-								'1');
+								'0');
 						});
 				}, "load");				
 			</script>

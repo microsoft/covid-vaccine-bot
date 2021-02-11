@@ -215,7 +215,7 @@ var g_wsaQoSDataPoints = [];
 var g_wsaLCID = 1033;
 var g_wsaListTemplateId = 850;
 var g_wsaSiteTemplateId = 'CMSPUBLISHING#0';
-var _fV4UI=true;var _spPageContextInfo = {webServerRelativeUrl: "\u002fPrograms\u002fCID\u002fDCDC", webAbsoluteUrl: "https:\u002f\u002fwww.cdph.ca.gov\u002fPrograms\u002fCID\u002fDCDC", siteAbsoluteUrl: "https:\u002f\u002fwww.cdph.ca.gov", serverRequestPath: "\u002fPrograms\u002fCID\u002fDCDC\u002fPages\u002fCOVID-19\u002fCOVID-19Vaccine.aspx", layoutsUrl: "_layouts\u002f15", webTitle: "Division of Communicable Disease Control", webTemplate: "39", tenantAppVersion: "0", isAppWeb: false, Has2019Era: true, webLogoUrl: "_layouts\u002f15\u002fimages\u002fsiteicon.png", webLanguage: 1033, currentLanguage: 1033, currentUICultureName: "en-US", currentCultureName: "en-US", clientServerTimeDelta: new Date("2021-02-11T20:58:38.1958012Z") - new Date(), siteClientTag: "1885$$15.0.5285.1000", crossDomainPhotosEnabled:false, webUIVersion:15, webPermMasks:{High:16,Low:2147680353},pageListId:"{6aad4e4a-f5c6-484e-8d56-fd7746cd9d60}",pageItemId:893, pagePersonalizationScope:1, alertsEnabled:true, siteServerRelativeUrl: "\u002f", allowSilverlightPrompt:'True'};document.onreadystatechange=fnRemoveAllStatus; function fnRemoveAllStatus(){removeAllStatus(true)};
+var _fV4UI=true;var _spPageContextInfo = {webServerRelativeUrl: "\u002fPrograms\u002fCID\u002fDCDC", webAbsoluteUrl: "https:\u002f\u002fwww.cdph.ca.gov\u002fPrograms\u002fCID\u002fDCDC", siteAbsoluteUrl: "https:\u002f\u002fwww.cdph.ca.gov", serverRequestPath: "\u002fPrograms\u002fCID\u002fDCDC\u002fPages\u002fCOVID-19\u002fCOVID-19Vaccine.aspx", layoutsUrl: "_layouts\u002f15", webTitle: "Division of Communicable Disease Control", webTemplate: "39", tenantAppVersion: "0", isAppWeb: false, Has2019Era: true, webLogoUrl: "_layouts\u002f15\u002fimages\u002fsiteicon.png", webLanguage: 1033, currentLanguage: 1033, currentUICultureName: "en-US", currentCultureName: "en-US", clientServerTimeDelta: new Date("2021-02-11T21:05:00.2946572Z") - new Date(), siteClientTag: "1885$$15.0.5285.1000", crossDomainPhotosEnabled:false, webUIVersion:15, webPermMasks:{High:16,Low:2147680353},pageListId:"{6aad4e4a-f5c6-484e-8d56-fd7746cd9d60}",pageItemId:893, pagePersonalizationScope:1, alertsEnabled:true, siteServerRelativeUrl: "\u002f", allowSilverlightPrompt:'True'};document.onreadystatechange=fnRemoveAllStatus; function fnRemoveAllStatus(){removeAllStatus(true)};
 function _spNavigateHierarchy(nodeDiv, dataSourceId, dataPath, url, listInContext, type) {
 
     CoreInvoke('ProcessDefaultNavigateHierarchy', nodeDiv, dataSourceId, dataPath, url, listInContext, type, document.forms.aspnetForm, "", "\u002fPrograms\u002fCID\u002fDCDC\u002fPages\u002fCOVID-19\u002fCOVID-19Vaccine.aspx");
@@ -2052,7 +2052,7 @@ Background-color: green;
         if (!((formDigestElement == null) || (formDigestElement.tagName.toLowerCase() != 'input') || (formDigestElement.type.toLowerCase() != 'hidden') ||
             (formDigestElement.value == null) || (formDigestElement.value.length <= 0)))
         {
-            formDigestElement.value = '0x028EF5611421B24B68943DFEE7DDE0008B46F4AF5B6C975563230DBCCCC83344D73286527FD70C79D1897D511FF5C0B1B0BE9EF3597238E2235BF1E38FC2F951,11 Feb 2021 21:01:28 -0000';
+            formDigestElement.value = '0x19362B8C57C3DA005A5B959C19496C80BBA6AEDE3E579B3BFC7FEFF9114FC1FA236366DA495F2E60279B30680DEFFC309947FB13DA8ABAE4B63665A91E726B3D,11 Feb 2021 21:05:01 -0000';
             g_updateFormDigestPageLoaded = new Date();
         }
         //]]>
