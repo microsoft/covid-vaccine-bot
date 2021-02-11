@@ -1,0 +1,339 @@
+{
+	"integrity": {
+		"https://www.alabamapublichealth.gov/covid19/vaccine.html": {
+			"integrity": "sha512-TsHCcVdDh/I94YVSbqHEK9KA33xdSylYARJCLxcdP51CqvOgWhjRqF+ICn8CSc1tohm/m5T5bDBbOoYyaWGeQA=="
+		},
+		"https://anchoragecovidvaccine.org/": {
+			"integrity": "sha512-/hm3s5+RfRs+Zer9qTohuw28zC/IzfaCc9ydVcmXeC0kGQmXNIYPyqkiOszCTH6kMGMPLXA9zJ0xjg26CQzGyg=="
+		},
+		"http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/VaccineInfo.aspx": {
+			"integrity": "sha512-5kpVccqpG0Bdjp5scW9zWr+0+aWoaLNjm9iNZqujo2pSSZf8Tj08sXR2K8oct6vhe1cMS2tUhkmMHQfclWBmvw=="
+		},
+		"https://www.americansamoa.gov/": {
+			"integrity": "sha512-vC2a4ApJQpJYrtrw8bVU9QrkZsVDnJPW2es6pEp5vFyhxcZ9sVrG3udPiwCArmK5j2Y1SsHzRWB7SXbF1X/O2w=="
+		},
+		"https://311info.net/covid-19/": {
+			"integrity": "sha512-LgidaVPYu5Q5uKIcHsiJi/RclnUW9RT2ah3+Wo5wohmuUlhQ1Ubfw4IVQYsJ45nW7YIcyUEpLPMXcRKygIVm2w=="
+		},
+		"https://covid-cochisehealth.hub.arcgis.com/pages/vaccines": {
+			"integrity": "sha512-7T3Y4VoDYYGHOBbqcBtaQGE34NL6EblXRj9iCtfGUaMLUavSiymtKQc5ScHDYs1GDq/UsCTzSuoGNJkqlIXFhQ=="
+		},
+		"https://www.coconino.az.gov/covid19vaccine": {
+			"integrity": "sha512-kn6QCit/G/vGKa0zq/DdLf8JnxIm/QVcWH3sSONiJu5fKx2N4NPyvxHrm+wIIGAvssS4lWdic2kXUEAJCKGC5g=="
+		},
+		"https://www.gilacountyaz.gov/government/health_and_emergency_services/health_services/vaccination_information.php": {
+			"integrity": "sha512-8cqC6Iz6qx6kfJMUl4baEzM76q4vGApXdT8nS2zUpUEddRqJ0uD8TBShH37PdfqV4kbzex8JZaYeHPCM7XzE/A=="
+		},
+		"https://www.graham.az.gov/AlertCenter.aspx?AID=Graham-County-COVID19-Vaccine-Informatio-11": {
+			"integrity": "sha512-W5RlAgVsr4d9YNmKQanTUwMp0ME6yfJMzS+TpskSK4gixo78ORyij6JOeYERfmuwnT7CGJyzkSkTneiRpxlPVg=="
+		},
+		"https://greenlee.az.gov/departments/health-county-services/": {
+			"integrity": "sha512-oVCW7AdkX6GmON331Fg5FJhZr9k+sI5tOKBkQ+Yv4B894e0E1xL1Pp3fpR09KnT43xUjD8YErIJGyuZGoX1g2A=="
+		},
+		"https://www.lpchd.com/": {
+			"integrity": "sha512-2U+pu/Ige0MFuWSQx6DiQ7UK5ePEW3f0ZS1f9SHbfrdgKf0OgcuRPlGhOcK+gYv1YYZE50yAzYY3YRtdmSfJRA=="
+		},
+		"https://www.maricopa.gov/5641/COVID-19-Vaccine": {
+			"integrity": "sha512-caMPa8tY0zI8p/GIkKhVWSD3eTzkBY3PKwFkdlLzyPaGe72mwE/YOL93iGqYjO2t2o89AAXmpv8GUakQDtkk2w=="
+		},
+		"https://covid-19-vaccine-mohave.hub.arcgis.com/": {
+			"integrity": "sha512-b6se8XkNMqpOY63aSsQKM/frWUIeEqbyT+daxnKFPspK7Gda5b1A9DvV1VJLhA2CStZSUn58MdPkCLA2aR1JyQ=="
+		},
+		"https://webcms.pima.gov/cms/One.aspx?portalId=169&pageId=669257": {
+			"integrity": "sha512-FZB7pnNE8quZFiBH2jEPUsf4c7eloQIvZZWb8OBtup308iVeAWpVqvf2fpvOxxtGRUgi9S/6GS+jGK4gllQP3A=="
+		},
+		"https://www.santacruzcountyaz.gov/732/COVID-19-Novel-Coronavirus": {
+			"integrity": "sha512-rR5usAbGtDQF+Bmlf6MM2wTAT7CbOsQuzST4XdIpl3xKMh5sE+n1lbT0b3660fxuvmB71vl5DW9OX3GIIxdCKw=="
+		},
+		"https://www.yavapai.us/chs/Home/COVID-19/Vaccine": {
+			"integrity": "sha512-Wm3ywMD80li4VVFGCP2Dg6P1hkKy8IkuIGxuo7JCNGAVNER8KhBCUCiAEwh3KBpyUe2S8/FHHZzviVV1qKoW6g=="
+		},
+		"https://www.yumacountyaz.gov/government/health-district/divisions/emergency-preparedness-program/coronavirus-2019-covid-19-yuma-county-updates/covid-19-vaccine-information/who-can-get-vaccinated-and-when": {
+			"integrity": "sha512-wSxCG6G3q9tYvjDzt9YPZY9qqvK+pD014Ixo720qoeSd0EyERp+zZyKUn0b9bmR/qjvavO3jvDRdfrVWiqS7+A=="
+		},
+		"https://azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-vaccine": {
+			"integrity": "sha512-MaQOHmzvvml/g2uKNDkvRUnRbiuXMW5WjEtY52CV3P2pcEaVPwZsKvTWSpmaegudACdbCR0/+10UIPTD1kvNgw=="
+		},
+		"https://www.healthy.arkansas.gov/programs-services/topics/covid-19-vaccination-plan": {
+			"integrity": "sha512-KXdCkugnywMatE4qOcbxdEF5fQiIxeO/ab7hVrPWWK30L7JesT0JmRL1vV6WmGf3uvWhSN6oSeE9o1vHVTYKTw=="
+		},
+		"https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/COVID-19/COVID-19Vaccine.aspx": {
+			"integrity": "sha512-p7YakO2f3FyTiUcXh8MXm+Ho2l0sjfIMmcYTJxq6mBKsL7WoTFgi/urw0EjIYgqOnGMPNxNYqj42hmeCOvApUQ=="
+		},
+		"https://covid19.colorado.gov/vaccine": {
+			"integrity": "sha512-rmRivGN4EmqhgTBDlFC4NCspxQ0Gh7pxe3z0QmgJ9yoDcn2qLjl/fLkSKAd5cTaZm4OjFA7c4E6zJrqf0X4yIw=="
+		},
+		"https://portal.ct.gov/Coronavirus/covid-19%20vaccinations": {
+			"integrity": "sha512-CBB9xnLPg6cbWbF9FdhUCsyn4BiaRsugYPiwD4LcWc/qyJprccBGAB4QOTR4T1muMgtMPQUJ+1lWtJqgkZvaIA=="
+		},
+		"https://coronavirus.delaware.gov/vaccine/": {
+			"integrity": "sha512-KLeai0cDVe3bo5naWBlBD/my9MTqG/L6SGyD2gO/+Jz7JKq/rn7WVRVOz+rJespkxEWqhjqy3JH1MINuMs9bpA=="
+		},
+		"https://coronavirus.dc.gov/vaccine": {
+			"integrity": "sha512-tEgJOka06qhvbTg8XLh9sxW+HTs9VutZiIk/EOj96TsPqYLQghJyYqokHrSkyoJKkII8KCVLqqbXA+/F+M1Dqg=="
+		},
+		"https://www.fsmgov.org/index.html": {
+			"integrity": "sha512-/FKneee2qPF0QAxH149RQ7WHNbvOj+itpzLAeAitmqEt65Kd0vsuAs1cDDFayTTtk8EahO8+XKSVHGhs2TI8SA=="
+		},
+		"https://floridahealthcovid19.gov/covid-19-vaccines-in-florida/": {
+			"integrity": "sha512-g6SWydUrROMphEjO9Kr+D0zUq6cHvyfw7czeXygYCa20vAI46QZkzYHUr7xCD4rwWHHFVYZdwRS61eeEydeYNA=="
+		},
+		"https://dph.georgia.gov/covid-vaccine": {
+			"integrity": "sha512-RzZZyxADePywdsBK/sF6+JlcbWp/8nAmoxFW5XvrpzDGUyciIlGhd9iztvj33n5hZtOqqqxy8/jM+o8Wkmgyfg=="
+		},
+		"https://dphss.guam.gov/": {
+			"integrity": "sha512-rd5qcvs0wI23EKtlwK90piPKL1LRXt1pLRzt/q2G6D17RJvB0tibV4LfnAzPSkoL9bAoWmCJ6Iz7nDT0mIubLA=="
+		},
+		"https://hawaiicovid19.com/vaccine/": {
+			"integrity": "sha512-qDwqvmCpE39YqJymjBkR3g/7N3Nw0cMBlw7+49ikOSoHaYsBn/o17OmySurhWtc3j2mUzKMy3D82ZyB5kJ2mkg=="
+		},
+		"https://coronavirus.idaho.gov/covid-19-vaccine/": {
+			"integrity": "sha512-VoLCWacfuvvMNJZpofwsjTMHm6WW5UI5RVn7mtG2RLSTPetKiCMGGnMIHKYQHMfvPo1l23yElyGhwvFZ/0OqUw=="
+		},
+		"https://www.dph.illinois.gov/covid19/vaccine-faq": {
+			"integrity": "sha512-Xvv8sSuRPklMQqf00nJEEbhE9w0ypWTcHCop1jViJNIJwoXxdz4+YVeDMn2RXn97FB65wGpAqy5MF68QzRs0QQ=="
+		},
+		"https://www.coronavirus.in.gov/vaccine/index.htm": {
+			"integrity": "sha512-wzv7tsAr2PdcOeqJtU5B5NtMCY6ylni6hm7CktP9d//5dSmuxLyBEgu+PSyGUVZcwKQPsmjkLu6J7NwesnTQWg=="
+		},
+		"https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus/Vaccine": {
+			"integrity": "sha512-9PNeQv1mPANvoYBvicqYBWouhNGgiOswQFA7vwTWh6zCMRxHE1h1YCJZEsqvtoaZZ1XR/E7yxnWo6GVhEtyXsw=="
+		},
+		"https://www.kansasvaccine.gov/": {
+			"integrity": "sha512-ztIwzTzQu2qHyVeLc9EMHA4LHq9WkL76vS/R7BFq4TYUd1V5GVYle5c+rGmJC0DH3xnHmzOizJff3TxsGdMu4g=="
+		},
+		"https://govstatus.egov.com/ky-covid-vaccine": {
+			"integrity": "sha512-cGjqBuFyZENt8IYrPjvTqPl5Lel3xusSsX0n4c/rKt5RJIw/HYyWechOrAGLDbSqBTc1c72BIBoo8DyXwbxMwA=="
+		},
+		"https://ldh.la.gov/index.cfm/page/4042": {
+			"integrity": "sha512-oNCIwOqiY2MvSY+4/AvaMAYEt1em9LIKmNmJXw+Vjbfzej8Pd0x6Y1bAXjDuuGHDqEu8boMjkyhU7PfZsxz22w=="
+		},
+		"https://www.maine.gov/covid19/vaccines": {
+			"integrity": "sha512-H3o8ejKop+ZQyrsDwy6MddN0dYW61z1q4pBZsLx6TWKDgJ2Q0bxPRx9zlfunMrIFYxmdoYhLIxjH/niGj21nQw=="
+		},
+		"http://rmihealth.org/": {
+			"integrity": "sha512-ySQS538xVyv/lUVE9FFjw57zFCBfgkuhaIEa94WM8H6TIQhGzBxoYBEPmkA0LttV3nXP1qWCsTJRCuB6jz7gsg=="
+		},
+		"https://covidlink.maryland.gov/content/vaccine/": {
+			"integrity": "sha512-QHUO6kz2f6luMpCnXVce+oSFZBnavYazmcR276rs/5rpkQnHUyS1wLgGzRMjVHjTsxVL+AxHo9vVHNps61XuzQ=="
+		},
+		"https://www.barnstablecountyhealth.org/vaccine-information": {
+			"integrity": "sha512-F0H+F3ax7iZyYnblfAm+H0buQ/PcGRA9X5pmbNvxeP9ab1W5rlf/GQjRED7+OU4eG+5+n+I3PW08hNnIwLLP3w=="
+		},
+		"https://www.getvaccinatedberkshires.org/": {
+			"integrity": "sha512-nvB9ZyYY6z8mG/Fv7Z3cPDflP+t9j7tmB90mArjLx9SJwjrtielJ5aS7KyhG8qfc9WLF9LPulZw9q8wNdQn8ng=="
+		},
+		"https://www.mass.gov/info-details/massachusetts-covid-19-vaccine-information": {
+			"integrity": "sha512-Bn2TXA3CG22q5qSMZDpVNfPK22zG9T1iFlaGwyj3TXjsff6XAdwNamhirT/SWMwGIX0ALNfir17KNBeaHDjzNg=="
+		},
+		"https://www.michigan.gov/coronavirus/0,9753,7-406-98178_103214---,00.html": {
+			"integrity": "sha512-aDCvef/G0hVhhACuh1/m0GQZpYpCsz8QtiHl4GPklPVmxHw57iBm8qlRVHYSDjfJeK9be5cFc9G7LyAieqvkBw=="
+		},
+		"https://www.health.state.mn.us/diseases/coronavirus/vaccine.html": {
+			"integrity": "sha512-1XjdzFAjTAkRUhoA9r4BKkBqobhyxMzLKuDaBA2HaGIh9DAl/on21tN5PQC1ozC1qYo5tcqoGybo89mpDAse5w=="
+		},
+		"https://msdh.ms.gov/msdhsite/_static/14,0,420,976.html": {
+			"integrity": "sha512-T7bRM35WcZ+qhBn0w5QtKVW//IQS3hK6dTMgkv4kVp9MzwJgRjofXPZWsiPp33VZ2wAfne2H4kSPijwNfwXtyQ=="
+		},
+		"https://dphhs.mt.gov/publichealth/cdepi/diseases/coronavirusvaccine/loginstate.aspx": {
+			"integrity": "sha512-d432Q38wnIA0xx37Li+1udr3Y6izFA0oHtAu8k3A0tZ5Bd5+qsWMtFkuUFs9Qx98LxBp3mtG87nyHuovNdk6Sw=="
+		},
+		"http://dhhs.ne.gov/Pages/COVID-19-Vaccine-Information.aspx": {
+			"integrity": "sha512-CbD2GoVZbcrFLjFhAXQF8aecGg5NUHzYhgmL/XpU5Z0RpODBx515A7d8a3/xhKUdRnYq0G1y6KzVa8WBLwPfUQ=="
+		},
+		"https://www.immunizenevada.org/nv-covid-fighter": {
+			"integrity": "sha512-NdHlvwVtU1vS2okeTCqlPzCRQfC2cIW0NdiQYmepi53h7padtwkEA+cEB+a4ZgbPHUqATQqpEWGUgcHQXw1ASg=="
+		},
+		"https://www.nh.gov/covid19/resources-guidance/vaccination-planning.htm": {
+			"integrity": "sha512-5p9rTCYGGU9tcaG0ezoQoglkDmJYy50nWUdUwOVnu7e+acjetvfIWvjPaTa/jeHwZMDh+r88n07lQOmVoBrrow=="
+		},
+		"https://www.nj.gov/health/cd/topics/covid2019_vaccination.shtml": {
+			"integrity": "sha512-rUVB+DebvdoOdAVzppr3rDU3DvjYjq5C63IjYsCmqXg0zCrX2PQanDzf0tk0QzW5TWskt80KSxpiHz89UgxXQg=="
+		},
+		"https://cv.nmhealth.org/covid-vaccine/": {
+			"integrity": "sha512-Seib+x0tNDDLOy7h03Xyzoy2rTNIhL/IAa4f8gTlu9hmV4/Nh4hEcWgSgamm+w5zj6/M/PmvpwmJ0LOkFJwmJA=="
+		},
+		"https://covid19vaccine.health.ny.gov/": {
+			"integrity": "sha512-Q5BH/bBzay+65neRwCiS2Uxs2x6HfPDY9bGjTmeGNqCmPrnttBy8KltEholrR8pqddSHDDkgfj2BtJbkDH8SRQ=="
+		},
+		"https://covid19.ncdhhs.gov/vaccines": {
+			"integrity": "sha512-17V/cNmCHIZ1N1nE3eOfM1D/7ZUVbBfeMCEywotucXRdK1DtS++PrRZtsly/XDJ1+50N3UeoiehhTh+JciTYqQ=="
+		},
+		"https://www.health.nd.gov/immunization-guidance-public": {
+			"integrity": "sha512-hXgZvX9nGi7XU2g9CGKTr2LZ4a8zhYA6YP1z6uxvgAzqHolCiqvKZfDgFOVLylgxvEIX3jPpjxJG/je5g7lwog=="
+		},
+		"https://www.vaccinatecnmi.com/": {
+			"integrity": "sha512-UKRLPNT7jHJTScjj89tlXQe7eMrVAGjCLkTFszfK9S73z7UVwzbqHsZEe2ZR2BaGiiwh02tLgB7Seo+N76mIlA=="
+		},
+		"https://coronavirus.ohio.gov/wps/portal/gov/covid-19/covid-19-vaccination-program": {
+			"integrity": "sha512-fuzFYXBaMuM1BkMT3HupO5r0sHxiQIas/xEfJ7Y3Fp57X1Itt7ffkunBqpO56KyHYj0dJ4ATYkS7RKxpV/+saQ=="
+		},
+		"https://oklahoma.gov/covid19/vaccine-information.html": {
+			"integrity": "sha512-jHm6oaKIpN5iVVpeFS5e26kr5Zm6efuYIa4bCJ7t8zT8kly1xjb5q1c5afgjeC+FQjgWsToztFt+QB8rJkb2Bw=="
+		},
+		"https://covidvaccine.oregon.gov/": {
+			"integrity": "sha512-ZhmuhnuKZlsUVZ2ZEPJMjKmztHW/Yyx0Uy8rl0pgD/TO+7a4McFUyW+mY4AXzzkMlUQ/SiunLJ2Zgbut1u4Naw=="
+		},
+		"http://www.palauhealth.org/": {
+			"integrity": "sha512-qLx9IEZm76pNcPOg1JqNrGefJ9YL7cc2hfSvZTLzOAc5JEYnyDhYTqkC38xBKBqXtxfELrCZ3J3YXWFve8vgsw=="
+		},
+		"https://www.health.pa.gov/topics/disease/coronavirus/Pages/Vaccine.aspx": {
+			"integrity": "sha512-IESULkDHcvqkExkEt5RX9vzdXp0FVSd3bd2LiGbSvEm+3xT08BbKBFxhIjQ1CGN6ny1Wfq3qp4Z6Rib3513qBQ=="
+		},
+		"https://covid.ri.gov/vaccination": {
+			"integrity": "sha512-pmhK2LMUlDXxQCSiEPN3vYBr3XybfG6pfw8vWPgcpUUIN7VaX+L1fU8YfyYJQ6muprlnSMB3ws4ApKKplmRPMw=="
+		},
+		"https://scdhec.gov/covid19/covid-19-vaccine": {
+			"integrity": "sha512-pypOwCLtQTo31YPWmwUKXWcZ4O628iF/U7T/XdS++r80cKzPjLlQT8nGpa/hXFbNOhhh4zHOhOrCzQwz0YDRHQ=="
+		},
+		"https://doh.sd.gov/COVID/Vaccine/default.aspx": {
+			"integrity": "sha512-ShZfNSKzikUJ8T9zHZz/INjyl/LQ/XkVjxu3t2EY8GtlSGcil0kQiCOfGtD57uGg9lEyklKH7uIjYb547xt8AQ=="
+		},
+		"https://www.tn.gov/health/cedep/ncov/covid-19-vaccine-information.html": {
+			"integrity": "sha512-qL5ZfjNxQ40U6+5i/389jIANzhb6P8xmXtHE3qGnCh7vy/zWTTm/BSKzEHfHpMN807ZwvSNLh/pqgf4UPdTH4Q=="
+		},
+		"https://www.dshs.state.tx.us/coronavirus/immunize/vaccine.aspx": {
+			"integrity": "sha512-aITyvqm7xp1QTgmPKXuHSn0FYfVwJVECvcP0XsMzPdfA+AZ8gbZgc/Ryo+qAd6Th0LtyppADU//MklwHxBgHKw=="
+		},
+		"https://www.covid19usvi.com/": {
+			"integrity": "sha512-nYsPOQ0NgIF7Ywi32LpfjclRTluVHVyCR7FRE85CSf2irBdblMqLKq7YfzyNnnePCf9f8hChS3aD1wuh1qSfiw=="
+		},
+		"https://coronavirus.utah.gov/vaccine/": {
+			"integrity": "sha512-+bmto7QbbK4cTsQ0jk14JsD8KOmt2iYokE0lgsX/X080/fWveD5DLhf0SA6VXkxoQ5vblq/L8ksuzuxqiklv8g=="
+		},
+		"https://www.healthvermont.gov/covid-19/vaccine": {
+			"integrity": "sha512-Ta7wPfjkWCMx2WFwuY//WiSyI+QgPpED8PchIkyDd93oCqkYgYPsqlI1sn1sIQADC7TNL4l0pk2LfWRo+Y7C5A=="
+		},
+		"https://www.vdh.virginia.gov/covid-19-vaccine/": {
+			"integrity": "sha512-OoNHyELs/k79x/xgiIjZtHVgjYcyKeACtxjhWvt4DboLleG7mB9oK4apKbDJQv2KwMYlj2G5zXcsA71MLLPiQw=="
+		},
+		"https://kingcounty.gov/depts/health/covid-19/vaccine/distribution.aspx": {
+			"integrity": "sha512-0Gg+UkrCXWksOMdu0+wV6W6A6J/Z55DtgWNlwfTHKfUiEtzlpKM0C9jVrOYsptCJrZfClG/Qova15Csph6vhPQ=="
+		},
+		"https://kitsappublichealth.org/CommunityHealth/CoronaVirus_Vaccine.php": {
+			"integrity": "sha512-+r6E/pVS31/a5Jb6pkgGIy3GsTEgVXZJ08lakJMS62qUBvOtgrPlK0tO4QZGHtTO3dgq6PDRQZKYAFNIRnG5DQ=="
+		},
+		"https://www.doh.wa.gov/Emergencies/COVID19/vaccine": {
+			"integrity": "sha512-NkBl5lrnHR2H0P2kbWNxF7L6z55Hmt2GaFZ4AtSCxq99SDZi3H8FbLtN4UDtXtyLvEJfjqYi+k6HgUOmqofVPg=="
+		},
+		"https://dhhr.wv.gov/COVID-19/Pages/Vaccine.aspx": {
+			"integrity": "sha512-bJ+3xHhiCz2Bk7BJLARX45LWxu15IaSmzHGq6JX86tU9N/zxrlb9OMzYx9+yQoZ9SR/0gyetSKKaDGbYzlskmA=="
+		},
+		"https://www.dhs.wisconsin.gov/covid-19/vaccine.htm": {
+			"integrity": "sha512-GiYR99SmGgZATGBsaH7+bheufh/mGiVrNgYU4LGS12DBU/yt1hlz9tI1WNmo1agLfJtR98S5L2Bc59k1mQaMdA=="
+		},
+		"https://health.wyo.gov/publichealth/immunization/wyoming-covid-19-vaccine-information/": {
+			"integrity": "sha512-lKNqvU8iu4y5haP0iEclm+wApziRzK5oero8oLRjnth4WJJ8ZaJQxC9Va0sxamPOS4ByF94pA1zB2NRNKMrStg=="
+		}
+	},
+	"changes": [
+		{
+			"text": "c19.links/info.AZ.Cochise",
+			"url": "https://covid-cochisehealth.hub.arcgis.com/pages/vaccines"
+		},
+		{
+			"text": "c19.links/info.AZ.Cococino",
+			"url": "https://www.coconino.az.gov/covid19vaccine"
+		},
+		{
+			"text": "c19.links/info.AZ.Graham",
+			"url": "https://www.graham.az.gov/AlertCenter.aspx?AID=Graham-County-COVID19-Vaccine-Informatio-11"
+		},
+		{
+			"text": "c19.links/info.AZ.Maricopa",
+			"url": "https://www.maricopa.gov/5641/COVID-19-Vaccine"
+		},
+		{
+			"text": "c19.links/info.AZ.Mojave",
+			"url": "https://covid-19-vaccine-mohave.hub.arcgis.com/"
+		},
+		{
+			"text": "c19.links/info.AZ.SantaCruz",
+			"url": "https://www.santacruzcountyaz.gov/732/COVID-19-Novel-Coronavirus"
+		},
+		{
+			"text": "c19.links/info.AZ.Yavapai",
+			"url": "https://www.yavapai.us/chs/Home/COVID-19/Vaccine"
+		},
+		{
+			"text": "CDC/Arkansas/state_link",
+			"url": "https://www.healthy.arkansas.gov/programs-services/topics/covid-19-vaccination-plan"
+		},
+		{
+			"text": "CDC/California/state_link",
+			"url": "https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/COVID-19/COVID-19Vaccine.aspx"
+		},
+		{
+			"text": "CDC/Connecticut/state_link",
+			"url": "https://portal.ct.gov/Coronavirus/covid-19%20vaccinations"
+		},
+		{
+			"text": "CDC/Illinois/state_link",
+			"url": "https://www.dph.illinois.gov/covid19/vaccine-faq"
+		},
+		{
+			"text": "CDC/Iowa/state_link",
+			"url": "https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus/Vaccine"
+		},
+		{
+			"text": "CDC/Kansas/state_link",
+			"url": "https://www.kansasvaccine.gov/"
+		},
+		{
+			"text": "CDC/Marshall_Islands/state_link",
+			"url": "http://rmihealth.org/"
+		},
+		{
+			"text": "CDC/Maryland/state_link",
+			"url": "https://covidlink.maryland.gov/content/vaccine/"
+		},
+		{
+			"text": "CDC/Massachusetts/state_link",
+			"url": "https://www.mass.gov/info-details/massachusetts-covid-19-vaccine-information"
+		},
+		{
+			"text": "CDC/Montana/state_link",
+			"url": "https://dphhs.mt.gov/publichealth/cdepi/diseases/coronavirusvaccine/loginstate.aspx"
+		},
+		{
+			"text": "CDC/Nebraska/state_link",
+			"url": "http://dhhs.ne.gov/Pages/COVID-19-Vaccine-Information.aspx"
+		},
+		{
+			"text": "CDC/Pennsylvania/state_link",
+			"url": "https://www.health.pa.gov/topics/disease/coronavirus/Pages/Vaccine.aspx"
+		},
+		{
+			"text": "CDC/Rhode_Island/state_link",
+			"url": "https://covid.ri.gov/vaccination"
+		},
+		{
+			"text": "CDC/South_Carolina/state_link",
+			"url": "https://scdhec.gov/covid19/covid-19-vaccine"
+		},
+		{
+			"text": "CDC/Texas/state_link",
+			"url": "https://www.dshs.state.tx.us/coronavirus/immunize/vaccine.aspx"
+		},
+		{
+			"text": "CDC/Washington/state_link",
+			"url": "https://www.doh.wa.gov/Emergencies/COVID19/vaccine"
+		},
+		{
+			"text": "CDC/West_Virginia/state_link",
+			"url": "https://dhhr.wv.gov/COVID-19/Pages/Vaccine.aspx"
+		}
+	],
+	"errors": [
+		{
+			"message": "request to https://covidvaccine.mo.gov/residents/ failed, reason: Parse Error: Invalid header value char",
+			"type": "system",
+			"errno": "HPE_INVALID_HEADER_TOKEN",
+			"code": "HPE_INVALID_HEADER_TOKEN"
+		},
+		{
+			"message": "network timeout at: http://www.salud.gov.pr/Pages/coronavirus.aspx",
+			"type": "request-timeout"
+		}
+	]
+}
