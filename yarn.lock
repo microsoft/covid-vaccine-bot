@@ -2477,6 +2477,23 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@ms-covidbot/source-scraper@workspace:packages/scraper":
+  version: 0.0.0-use.local
+  resolution: "@ms-covidbot/source-scraper@workspace:packages/scraper"
+  dependencies:
+    "@essex/scripts": ^12.0.2
+    "@ms-covidbot/state-plan-schema": "workspace:packages/schema"
+    "@ms-covidbot/state-plans": "workspace:packages/plans"
+    "@types/node": ^14.14.25
+    "@types/node-fetch": ^2
+    "@types/ssri": ^7.1.0
+    chalk: ^4.1.0
+    node-fetch: ^2.6.1
+    ssri: ^8.0.1
+    ts-node: ^9.1.1
+  languageName: unknown
+  linkType: soft
+
 "@ms-covidbot/state-plan-schema@workspace:packages/schema":
   version: 0.0.0-use.local
   resolution: "@ms-covidbot/state-plan-schema@workspace:packages/schema"
@@ -3699,7 +3716,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node-fetch@npm:^2.5.0, @types/node-fetch@npm:^2.5.4":
+"@types/node-fetch@npm:^2, @types/node-fetch@npm:^2.5.0, @types/node-fetch@npm:^2.5.4":
   version: 2.5.8
   resolution: "@types/node-fetch@npm:2.5.8"
   dependencies:
@@ -3713,6 +3730,13 @@ __metadata:
   version: 14.14.22
   resolution: "@types/node@npm:14.14.22"
   checksum: e46e32685b4d0261779c13c10ba3ff220cfa714b5c12f8f571fd52cc309546bdbc8ffc86cbad20559ad88e7b17e66fc51c98b067d8c3766597092c05df157b9b
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^14.14.25":
+  version: 14.14.25
+  resolution: "@types/node@npm:14.14.25"
+  checksum: 64c42730f4169e49ec378870622ef06c5d820b31340e224cc1b45bf06c8b0cfa28daa587b4ae2b8ea1f712ef049bae4d9c92925b157ba9ba7cde3b22ff552513
   languageName: node
   linkType: hard
 
@@ -3850,6 +3874,15 @@ __metadata:
   version: 0.1.2
   resolution: "@types/source-list-map@npm:0.1.2"
   checksum: 191f0e3b056b481e7a0bbb38f3d5b54b015556e38075726ca2637a35d3694df85cd16761b1b188729ac687a55aec3cbc2b07033ac090bcc13efe09ad10a3e935
+  languageName: node
+  linkType: hard
+
+"@types/ssri@npm:^7.1.0":
+  version: 7.1.0
+  resolution: "@types/ssri@npm:7.1.0"
+  dependencies:
+    "@types/node": "*"
+  checksum: ee6cd9d735fee43bb0a6a9584db80a6642180f6400914abc3b069ca09849b78e969c7af0d7953f6a642a3e142bf02ffc5059cc14ddbc9b4b82a7aecbfd191779
   languageName: node
   linkType: hard
 
@@ -14066,7 +14099,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"node-fetch@npm:^2.6.0":
+"node-fetch@npm:^2.6.0, node-fetch@npm:^2.6.1":
   version: 2.6.1
   resolution: "node-fetch@npm:2.6.1"
   checksum: cbb171635e538162b977eac5dfe7a1e07a9a02e991924377a6435502291e2f823d306b95aabc455caebf4a118ccf836868462bc70ccc3095af02bb9da61fda37
@@ -17707,6 +17740,15 @@ fsevents@^1.2.7:
   dependencies:
     minipass: ^3.1.1
   checksum: 97964745a80846b4a50d4506b10b08d35384c3cec482d687cae5f4b7c842afe239c8c368d620f5d7d92642ab75379b409aa809072c2b8e94ec15d9c70d843da5
+  languageName: node
+  linkType: hard
+
+"ssri@npm:^8.0.1":
+  version: 8.0.1
+  resolution: "ssri@npm:8.0.1"
+  dependencies:
+    minipass: ^3.1.1
+  checksum: d45f9a1d5676f8ebd888a3ae469772d75858e4095087217c2361a6b07a6eefd5a85350bb0fed63128b0025fdf242e81813be0979e6cb956a38dbf26295dca09c
   languageName: node
   linkType: hard
 

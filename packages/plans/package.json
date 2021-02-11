@@ -6,6 +6,7 @@
 		"clean": "essex clean",
 		"assemble_localization": "ts-node scripts/assembleLocalization",
 		"assemble_policies": "ts-node scripts/assemblePolicies",
+		"assemble_sitelist": "ts-node scripts/aggregateInfoSites",
 		"test": "ts-node scripts/validatePolicies",
 		"build": "run-s assemble_localization assemble_policies generate_review_document",
 		"generate_review_document": "ts-node scripts/generateReviewDocument",

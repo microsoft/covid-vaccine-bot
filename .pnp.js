@@ -33,12 +33,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       {
         "name": "@ms-covidbot/state-plan-schema",
         "reference": "workspace:packages/schema"
+      },
+      {
+        "name": "@ms-covidbot/source-scraper",
+        "reference": "workspace:packages/scraper"
       }
     ],
     "enableTopLevelFallback": true,
     "ignorePatternData": "(^(?:\\.yarn\\/sdks(?:\\/(?!\\.)(?:(?:(?!(?:^|\\/)\\.).)*?)|$))$)",
     "fallbackExclusionList": [
       ["@ms-covidbot/policy-locator", ["workspace:packages/locator"]],
+      ["@ms-covidbot/source-scraper", ["workspace:packages/scraper"]],
       ["@ms-covidbot/state-plan-schema", ["workspace:packages/schema"]],
       ["@ms-covidbot/state-plans", ["workspace:packages/plans"]],
       ["ms-covid-bot", ["workspace:."]]
@@ -4402,6 +4407,25 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "SOFT",
         }]
       ]],
+      ["@ms-covidbot/source-scraper", [
+        ["workspace:packages/scraper", {
+          "packageLocation": "./packages/scraper/",
+          "packageDependencies": [
+            ["@ms-covidbot/source-scraper", "workspace:packages/scraper"],
+            ["@essex/scripts", "virtual:6d8ddb46071017f1f8aa92fb51776b483addb259daee6f82da20492d8ff6a83b38599a5b4e22686d1c3a997cf0164e3f6096794c7f3014ca9346d647e271728d#npm:12.0.2"],
+            ["@ms-covidbot/state-plan-schema", "workspace:packages/schema"],
+            ["@ms-covidbot/state-plans", "workspace:packages/plans"],
+            ["@types/node", "npm:14.14.25"],
+            ["@types/node-fetch", "npm:2.5.8"],
+            ["@types/ssri", "npm:7.1.0"],
+            ["chalk", "npm:4.1.0"],
+            ["node-fetch", "npm:2.6.1"],
+            ["ssri", "npm:8.0.1"],
+            ["ts-node", "virtual:e4f77feae9737ada2b831b3864a655804d6ebc6cb9f84832e847c235e4b3a775036444a8e5149c43799c6d7d7212362475fe4653753276ab5b585b1256b9165f#npm:9.1.1"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
       ["@ms-covidbot/state-plan-schema", [
         ["workspace:packages/schema", {
           "packageLocation": "./packages/schema/",
@@ -5987,6 +6011,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/node", "npm:14.14.22"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:14.14.25", {
+          "packageLocation": "./.yarn/cache/@types-node-npm-14.14.25-cd44243469-64c42730f4.zip/node_modules/@types/node/",
+          "packageDependencies": [
+            ["@types/node", "npm:14.14.25"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["@types/node-fetch", [
@@ -6160,6 +6191,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-source-list-map-npm-0.1.2-1983e10da7-191f0e3b05.zip/node_modules/@types/source-list-map/",
           "packageDependencies": [
             ["@types/source-list-map", "npm:0.1.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@types/ssri", [
+        ["npm:7.1.0", {
+          "packageLocation": "./.yarn/cache/@types-ssri-npm-7.1.0-2bddaf260e-ee6cd9d735.zip/node_modules/@types/ssri/",
+          "packageDependencies": [
+            ["@types/ssri", "npm:7.1.0"],
+            ["@types/node", "npm:14.14.22"]
           ],
           "linkType": "HARD",
         }]
@@ -22579,6 +22620,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["minipass", "npm:3.1.3"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:8.0.1", {
+          "packageLocation": "./.yarn/cache/ssri-npm-8.0.1-a369e72ce2-d45f9a1d56.zip/node_modules/ssri/",
+          "packageDependencies": [
+            ["ssri", "npm:8.0.1"],
+            ["minipass", "npm:3.1.3"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["stable", [
@@ -23698,6 +23747,25 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["make-error", "npm:1.3.6"],
             ["source-map-support", "npm:0.5.19"],
             ["typescript", "patch:typescript@npm%3A4.1.3#builtin<compat/typescript>::version=4.1.3&hash=cc6730"],
+            ["yn", "npm:3.1.1"]
+          ],
+          "packagePeers": [
+            "@types/typescript",
+            "typescript"
+          ],
+          "linkType": "HARD",
+        }],
+        ["virtual:e4f77feae9737ada2b831b3864a655804d6ebc6cb9f84832e847c235e4b3a775036444a8e5149c43799c6d7d7212362475fe4653753276ab5b585b1256b9165f#npm:9.1.1", {
+          "packageLocation": "./.yarn/$$virtual/ts-node-virtual-72095e2d58/0/cache/ts-node-npm-9.1.1-4ad31da228-a90db4a342.zip/node_modules/ts-node/",
+          "packageDependencies": [
+            ["ts-node", "virtual:e4f77feae9737ada2b831b3864a655804d6ebc6cb9f84832e847c235e4b3a775036444a8e5149c43799c6d7d7212362475fe4653753276ab5b585b1256b9165f#npm:9.1.1"],
+            ["@types/typescript", null],
+            ["arg", "npm:4.1.3"],
+            ["create-require", "npm:1.1.1"],
+            ["diff", "npm:4.0.2"],
+            ["make-error", "npm:1.3.6"],
+            ["source-map-support", "npm:0.5.19"],
+            ["typescript", null],
             ["yn", "npm:3.1.1"]
           ],
           "packagePeers": [
