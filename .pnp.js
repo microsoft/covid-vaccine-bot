@@ -33,12 +33,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       {
         "name": "@ms-covidbot/state-plan-schema",
         "reference": "workspace:packages/schema"
+      },
+      {
+        "name": "@ms-covidbot/source-scraper",
+        "reference": "workspace:packages/scraper"
       }
     ],
     "enableTopLevelFallback": true,
     "ignorePatternData": "(^(?:\\.yarn\\/sdks(?:\\/(?!\\.)(?:(?:(?!(?:^|\\/)\\.).)*?)|$))$)",
     "fallbackExclusionList": [
       ["@ms-covidbot/policy-locator", ["workspace:packages/locator"]],
+      ["@ms-covidbot/source-scraper", ["workspace:packages/scraper"]],
       ["@ms-covidbot/state-plan-schema", ["workspace:packages/schema"]],
       ["@ms-covidbot/state-plans", ["workspace:packages/plans"]],
       ["ms-covid-bot", ["workspace:."]]
@@ -4402,6 +4407,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "SOFT",
         }]
       ]],
+      ["@ms-covidbot/source-scraper", [
+        ["workspace:packages/scraper", {
+          "packageLocation": "./packages/scraper/",
+          "packageDependencies": [
+            ["@ms-covidbot/source-scraper", "workspace:packages/scraper"],
+            ["@essex/scripts", "virtual:6d8ddb46071017f1f8aa92fb51776b483addb259daee6f82da20492d8ff6a83b38599a5b4e22686d1c3a997cf0164e3f6096794c7f3014ca9346d647e271728d#npm:12.0.2"],
+            ["@types/node", "npm:14.14.25"],
+            ["@types/node-fetch", "npm:2.5.8"],
+            ["node-fetch", "npm:2.6.1"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
       ["@ms-covidbot/state-plan-schema", [
         ["workspace:packages/schema", {
           "packageLocation": "./packages/schema/",
@@ -5985,6 +6003,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-node-npm-14.14.22-fe4ed4ddc2-e46e32685b.zip/node_modules/@types/node/",
           "packageDependencies": [
             ["@types/node", "npm:14.14.22"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:14.14.25", {
+          "packageLocation": "./.yarn/cache/@types-node-npm-14.14.25-cd44243469-64c42730f4.zip/node_modules/@types/node/",
+          "packageDependencies": [
+            ["@types/node", "npm:14.14.25"]
           ],
           "linkType": "HARD",
         }]
