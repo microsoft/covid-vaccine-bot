@@ -60,7 +60,7 @@
 
 <!-- Google Tag Manager for WordPress by gtm4wp.com -->
 <script data-cfasync="false" data-pagespeed-no-defer>//<![CDATA[
-	var dataLayer_content = {"visitorDoNotTrack":0,"visitorIP":"192.156.164.6","pagePostType":"page","pagePostType2":"single-page","pagePostAuthor":"smadmin","browserName":"","browserVersion":"","browserEngineName":"","browserEngineVersion":"","osName":"","osVersion":"","deviceType":"","deviceManufacturer":"","deviceModel":"","gtm.whitelist":["d","jsm","c","k","e","j","v","r","f","u","v"],"gtm.blacklist":[]};
+	var dataLayer_content = {"visitorDoNotTrack":0,"visitorIP":"35.138.8.165","pagePostType":"page","pagePostType2":"single-page","pagePostAuthor":"smadmin","browserName":"Internet Explorer","browserVersion":"11.0","browserEngineName":"Trident","browserEngineVersion":"7.0","osName":"Windows","osVersion":"10.0","deviceType":"desktop","deviceManufacturer":"","deviceModel":"","gtm.whitelist":["d","jsm","c","k","e","j","v","r","f","u","v"],"gtm.blacklist":[]};
 	dataLayer.push( dataLayer_content );//]]>
 </script>
 <script data-cfasync="false">//<![CDATA[

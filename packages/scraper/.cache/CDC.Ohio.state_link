@@ -696,7 +696,7 @@ if (Object.keys(site)[0] == siteId) {
 											
 <script type="text/javascript">
 		var WASReqURL = '/wps/myportal/gov/covid-19/covid-19-vaccination-program/!ut/p/z1/04_Sj9CPykssy0xPLMnMz0vMAfIjo8zi_SzdHQ0NvQ38_L383QwCXSxMjY2DLC3NXI30w1EVGBj5WRgEGhp6BTqa-Zg4BxrqRxGj3wAHcDQgrD8KVQkWF4AV4LGiIDc0wiDTUREAr56laA!!/dz/d5/L2dJQSEvUUt3QS80TmxFL1o2X045R0ExMUswTk9KT0YwUUQ4NTMzUjk5NkUy/';
-		var loginUrl = '/wps/portal/gov/covid-19/covid-19-vaccination-program/!ut/p/z1/04_Sj9CPykssy0xPLMnMz0vMAfIjo8zi_SzdHQ0NvQ38_L383QwCXSxMjY2DLC3NXI30w1EVGBj5WRgEGhp6BTqa-Zg4BxrqRxGj3wAHcDQgrD8KVQkWF4AV4LGiIDc0wiDTUREAr56laA!!/dz/d5/L3dJVkNwQSEhL0lCakFBQXlBQkVRaUlBISEvNE5sRkNvWTRWSEZnSkEhIS9aNl9OOUdBMTFLME5PSk9GMFFEODUzM1I5OTZFMi8wLzg4OTExMjkvbGk!/';
+		var loginUrl = '/wps/portal/gov/covid-19/covid-19-vaccination-program/!ut/p/z1/04_Sj9CPykssy0xPLMnMz0vMAfIjo8zi_SzdHQ0NvQ38_L383QwCXSxMjY2DLC3NXI30w1EVGBj5WRgEGhp6BTqa-Zg4BxrqRxGj3wAHcDQgrD8KVQkWF4AV4LGiIDc0wiDTUREAr56laA!!/dz/d5/L3dJVkNwQSEhL0lCakFBQXlBQkVRaUlBISEvNE5sRkNvWTRWSEZnSkEhIS9aNl9OOUdBMTFLME5PSk9GMFFEODUzM1I5OTZFMi8wLzg5MTU0NDkvbGk!/';
 		
 	</script>
 </div>

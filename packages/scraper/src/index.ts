@@ -6,9 +6,11 @@
 import * as fs from 'fs'
 import * as path from 'path'
 import chalk from 'chalk'
-import fetch from 'node-fetch'
+import Crawler from 'crawler'
+import jsdom from 'jsdom'
 import ssri from 'ssri'
 import { Link } from '@ms-covidbot/state-plan-schema'
+
 const CACHE_DIR = path.join(__dirname, '../.cache/')
 
 type IntegrityRecord = Record<string, { integrity: string }>
@@ -18,66 +20,96 @@ type RunResult = {
 	errors: Error[]
 }
 
+function loadLastRun(): RunResult {
+	return require('../last_run.json') as RunResult
+}
+
+function loadLinksToScrape(): Link[] {
+	const data = require('@ms-covidbot/state-plans/dist/info_links.json') as Link[]
+	return data.filter((link) => link.scrape !== false)
+}
+
 async function scrapeSites(): Promise<void> {
-	if (!fs.existsSync(CACHE_DIR)) {
-		fs.mkdirSync(CACHE_DIR)
-	}
-	const lastResult = require('../last_run.json') as RunResult
-	const links = (require('@ms-covidbot/state-plans/dist/info_links.json') as Link[]).filter(
-		(link) => link.scrape !== false
-	)
-	console.log(`aggregating ${links.length} sites`)
-	const result: RunResult = {
-		integrity: {},
-		changes: [],
-		errors: [],
-	}
-
-	let link: Link
-	for (link of links) {
-		try {
-			console.log(chalk.grey.dim(`checking ${printLink(link)}`))
-			const scrapeUrl = getScrapeUrl(link)
-			const response = await fetch(scrapeUrl, { timeout: 10000 })
-			const body = await response.text()
-			const integrity = ssri.fromData(body)
-			const integrityString = integrity.toString() as string
-
-			// write the response out
-			fs.writeFileSync(
-				path.join(CACHE_DIR, link.text.replace(/\//g, '.')),
-				body
-			)
-
-			// Save the current integrity
-			result.integrity[link.url] = {
-				integrity: integrityString,
-			}
-
-			if (integrityString !== lastResult.integrity[link.url]?.integrity) {
-				console.log(
-					chalk.green(`✔ integrity changed for [${link.text}](${link.url})`)
-				)
-				result.changes.push(link)
-			}
-		} catch (err) {
-			result.errors.push(err)
+	return new Promise((resolve, reject) => {
+		if (!fs.existsSync(CACHE_DIR)) {
+			fs.mkdirSync(CACHE_DIR)
 		}
-	}
+		const lastResult = loadLastRun()
+		const links = loadLinksToScrape()
+		console.log(`aggregating ${links.length} sites`)
+		const result: RunResult = {
+			integrity: {},
+			changes: [],
+			errors: [],
+		}
+		const c = new Crawler({
+			maxConnections: 10,
+			jQuery: jsdom,
+		})
+		links.forEach((link) => {
+			const scrapeUrl = getScrapeUrl(link)
+			c.queue({
+				uri: scrapeUrl,
+				callback: (err, res, done) => {
+					if (err) {
+						result.errors.push(err)
+						done()
+					} else {
+						try {
+							const body = res.body
+							const integrity = ssri.fromData(body)
+							const integrityString = integrity.toString() as string
 
-	// Write out integrity file
-	fs.writeFileSync(
-		path.join(__dirname, '../last_run.json'),
-		JSON.stringify(result, null, 4),
-		{ encoding: 'utf8' }
-	)
-	console.log(`could not process ${result.errors.length} urls`, result.errors)
-	console.log(
-		`${result.changes.length}/${links.length} (${(
-			(result.changes.length / links.length) *
-			100
-		).toFixed(2)}%) changed links since last run`
-	)
+							// write the response out
+							fs.writeFileSync(
+								path.join(CACHE_DIR, link.text.replace(/\//g, '.')),
+								body
+							)
+
+							// Save the current integrity
+							result.integrity[scrapeUrl] = {
+								integrity: integrityString,
+							}
+
+							if (
+								integrityString !== lastResult.integrity[scrapeUrl]?.integrity
+							) {
+								console.log(
+									chalk.green(
+										`✔ integrity changed for [${link.text}](${scrapeUrl})`
+									)
+								)
+								result.changes.push(link)
+							}
+						} catch (err) {
+							result.errors.push(err)
+						} finally {
+							done()
+						}
+					}
+				},
+			})
+		})
+		c.on('drain', () => {
+			// Write out integrity file
+			fs.writeFileSync(
+				path.join(__dirname, '../last_run.json'),
+				JSON.stringify(result, null, 4),
+				{ encoding: 'utf8' }
+			)
+			console.log(
+				`could not process ${result.errors.length} urls`,
+				result.errors
+			)
+			console.log(
+				`${result.changes.length}/${links.length} (${(
+					(result.changes.length / links.length) *
+					100
+				).toFixed(2)}%) changed links since last run`
+			)
+			resolve()
+		})
+	})
 }
 
 function getScrapeUrl(link: Link): string {

@@ -27,19 +27,14 @@
 <body id="Body">
     
     <form method="post" action="/chs/Home/COVID-19/Vaccine" id="Form" enctype="multipart/form-data">
-<div class="aspNetHidden">
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="QJttTmoHBpvmGGZmCTjq5hWYCPIKyPlVR/31cqXvNBsuOqOCubcN09fMvAV9Kad6evtivUIg8joMC/72OsORSJY+C2xlpY+sGtBgHU5OEv5syn/Xkon0C2JrvDqpDdQSYRvBjkV7AAjgczVXiudX1slTxloxqIb21BV7L1y7qGZkVCpHNwIs+hkC3p2nP+CygBnBMp07dTkYrEAOi7KWvmTk2cg1JzPhlzm1Kg==" />
-</div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="30wHI+xwNDYqEkYqZYabmJ+XikScggtoR75lkU5HY5v8bC64GlzpuVTzQOlAV+8/xM0l90uhu8cXGZXdOjzO6Ti3wP+A1Y23UWp5GveeH0t2hyGKUIYByGm/PR1EVLw53+r2A7OoDHewVSDU4yGMuZYNBhwbvoQH1bigyCN/U7QvzUcplSrCUWvEY7/c4flJK0TanJ1ph2+i16+ldSQeL8yo8TrvLThG1GrSgw==" />
 
 
 <script src="/ScriptResource.axd?d=NJmAwtEo3Ipfzdi9kcu5wa7JanYEmBlW8mAHM4wywQL8oPWzbORhlktBLsuOT7IBAvyX0GVchyuReuqJqjqjyW1m4SAo2wrIO_zYxK0k-0KtQ0kMCLhocfGNlmPMGdh0TW-FuQ2&amp;t=ffffffffdfc97409" type="text/javascript"></script>
 <script src="/ScriptResource.axd?d=dwY9oWetJoKb9xTp7w8lR6ZSLMdU1D9isnAJsH3gHFogas4Y4OrvjJrZ59CBfPIR0Ohx0VDrDZsEIcoOfKGW8fDGFpoZWV1oofPN47kGylOa244RDz0apHhtUp0x8zMuq0HcdXQzVMKYqphc0&amp;t=ffffffffdfc97409" type="text/javascript"></script>
-<div class="aspNetHidden">
-
-	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
-	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
-	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="4hxMgBn3WvDiltECXbkiy0NOvQq7MuRO0LnG8//w+CrHgOo8HNQnKL2iXq9EJzJ5WlxJkNel0B26bSoMoI6hi0V8OizKYO9sOXRqHqyRhavXyfFnia/phFw3UbiwetzlFP+j3PG6SpWHK3qKEKILARFw9RM=" />
-</div><script src="/js/dnn.js?cdv=1076" type="text/javascript"></script><script src="/js/dnn.modalpopup.js?cdv=1076" type="text/javascript"></script><script src="/Portals/_default/Skins/Ozone/bootstrap/js/bootstrap.min.js?cdv=1076" type="text/javascript"></script><script src="/Portals/_default/Skins/Ozone/common/js/main.js?cdv=1076" type="text/javascript"></script><script src="/js/dnncore.js?cdv=1076" type="text/javascript"></script><script src="/Resources/Search/SearchSkinObjectPreview.js?cdv=1076" type="text/javascript"></script><script src="/js/dnn.servicesframework.js?cdv=1076" type="text/javascript"></script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="nTGhNg/+dybl8AbKM8pCnCojApYRHCb0+BcMU7DMaCdvF3gC4/jGaX3na8jj4nLW6oWMwxMNT+Piv839eLq82dBrhtPrLiL4rWCr7h2c18JkDGej1PLxD/SadlQrMvngeSgQ+wCQXHXBCsN+tb/om/Y4XcU=" /><script src="/js/dnn.js?cdv=1076" type="text/javascript"></script><script src="/js/dnn.modalpopup.js?cdv=1076" type="text/javascript"></script><script src="/Portals/_default/Skins/Ozone/bootstrap/js/bootstrap.min.js?cdv=1076" type="text/javascript"></script><script src="/Portals/_default/Skins/Ozone/common/js/main.js?cdv=1076" type="text/javascript"></script><script src="/js/dnncore.js?cdv=1076" type="text/javascript"></script><script src="/Resources/Search/SearchSkinObjectPreview.js?cdv=1076" type="text/javascript"></script><script src="/js/dnn.servicesframework.js?cdv=1076" type="text/javascript"></script>
 <script type="text/javascript">
 //<![CDATA[
 Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [], 90, '');
@@ -676,8 +671,8 @@ and for any remaining Phase 1a essential healthcare workers and long-term care s
 
 
         <input name="ScrollTop" type="hidden" id="ScrollTop" />
-        <input name="__dnnVariable" type="hidden" id="__dnnVariable" autocomplete="off" value="`{`__scdoff`:`1`,`sf_siteRoot`:`/chs/`,`sf_tabId`:`2942`}" />
-        <input name="__RequestVerificationToken" type="hidden" value="OuVfTuRGACYCUIjkalFADIfJLLtrLgy1DP8QKq0iGFKSZNVqF1L3JgDUxbOoXszCT6YCAw2" />
+        <input name="__dnnVariable" type="hidden" id="__dnnVariable" autocomplete="off" value="`{`__scdoff`:`1`,`dnn.scripts.js.resx`:`/WebResource.axd?d=DKiEc2s7S-61jCf-XeiOsiPQ1qhIcH0siyNxbri1dwZc9hyp_Ol3qSnDLXdfQShx6wpzhhLEHtn3HA8ilNvAfwiNMrY1\u0026t=636837654065416322`,`sf_siteRoot`:`/chs/`,`sf_tabId`:`2942`}" />
+        <input name="__RequestVerificationToken" type="hidden" value="TkNkJYmybx5XVRJoOiYUQo259EoPZOoAHnlj4HgyHzAdG5CIaa3B5qWiZu1ez6Ll1CFBMw2" />
     </form>
     <!--CDF(Javascript|/js/dnncore.js?cdv=1076)--><!--CDF(Javascript|/js/dnn.modalpopup.js?cdv=1076)--><!--CDF(Css|/Resources/Shared/stylesheets/dnndefault/7.0.0/default.css?cdv=1076)--><!--CDF(Css|/Portals/_default/Skins/Ozone/skin.css?cdv=1076)--><!--CDF(Css|/Portals/_default/Containers/Ozone/container.css?cdv=1076)--><!--CDF(Css|/Portals/_default/Containers/Ozone/container.css?cdv=1076)--><!--CDF(Css|/Portals/_default/Containers/Ozone/container.css?cdv=1076)--><!--CDF(Css|/Portals/_default/Containers/Ozone/container.css?cdv=1076)--><!--CDF(Css|/Portals/_default/Containers/Galore/container.css?cdv=1076)--><!--CDF(Css|/Portals/_default/Containers/Ozone/container.css?cdv=1076)--><!--CDF(Css|/Portals/_default/Containers/Ozone/container.css?cdv=1076)--><!--CDF(Css|/Portals/_default/Containers/Ozone/container.css?cdv=1076)--><!--CDF(Css|/Portals/_default/Containers/Ozone/container.css?cdv=1076)--><!--CDF(Css|/Portals/_default/Containers/Ozone/container.css?cdv=1076)--><!--CDF(Css|/Portals/_default/Containers/Ozone/container.css?cdv=1076)--><!--CDF(Css|/Portals/_default/Containers/Ozone/container.css?cdv=1076)--><!--CDF(Css|/Portals/_default/Containers/Ozone/container.css?cdv=1076)--><!--CDF(Css|/Portals/39/portal.css?cdv=1076)--><!--CDF(Css|/Resources/Search/SearchSkinObjectPreview.css?cdv=1076)--><!--CDF(Javascript|/Resources/Search/SearchSkinObjectPreview.js?cdv=1076)--><!--CDF(Javascript|/js/dnn.js?cdv=1076)--><!--CDF(Javascript|/js/dnn.servicesframework.js?cdv=1076)--><!--CDF(Javascript|/Resources/libraries/jQuery/01_09_01/jquery.js?cdv=1076)--><!--CDF(Javascript|/Resources/libraries/jQuery-UI/01_11_03/jquery-ui.js?cdv=1076)-->
     

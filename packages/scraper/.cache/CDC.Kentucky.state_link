@@ -901,7 +901,7 @@ h3.table-toppers {
  
 <div>
   <h3 class="text-center" style="margin: 25px 0px 0px;">Kentucky COVID-19 Vaccine Monitoring</h3>
-  <p class="text-center" style="margin: 0px 0px 30px;">Current as of February 10, 2021</p>
+  <p class="text-center" style="margin: 0px 0px 30px;">Current as of February 11, 2021</p>
   
  <h3 class="table-toppers">COVID-19 Vaccination Program-to-Date Performance</h3>
   <div class="table-responsive-md">
@@ -917,23 +917,23 @@ h3.table-toppers {
       <tbody>
         <tr>
           <td>State Program</td>
-          <td>475,025</td>
-          <td>389,649</td>
+          <td>479,900</td>
+          <td>403,004</td>
         </tr>
         <tr>
           <td>LTCF Program</td>
-          <td>80,925</td>
-          <td>75,013</td>
+          <td>76,050</td>
+          <td>76,875</td>
         </tr>
         <tr>
           <td>Federal Entities</td>
           <td>Direct Federal Allocation</td>
-          <td>17.377</td>
+          <td>17,377</td>
         </tr>
         <tr>
           <td>Total</td>
           <td>555,950</td>
-          <td>482,039</td>
+          <td>497,256</td>
         </tr>
       </tbody>
     </table>
@@ -1013,15 +1013,15 @@ h3.table-toppers {
 <tr>
             <td>9</td>
             <td>Feb 9</td>
-            <td>12,130</td>
+            <td>27,347</td>
             <td>68,475</td>
-            <td>18%</td>
+            <td>40%</td>
           </tr>
           <tr>
             <td colspan="2">Total</td>
-            <td>464,662</td>
+            <td>479,879</td>
             <td>555,950</td>
-            <td>83%</td>
+            <td>86%</td>
           </tr>
         </tbody>
       </table>
@@ -1143,7 +1143,8 @@ h3.table-toppers {
 <p><a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/recommendations/specific-groups.html" target="_blank">COVID-19 Vaccine Information for Specific Groups</a></p>
 <!--EndFragment-->
 <h3>Weekly Reports</h3><p><b>Jan 11, 2021</b> - <a href="https://gscdn.govshare.site/a0f6d8c0872e778a4428d6bf02c51ea2063a0096/Weekly-Report-Jan-11-2021.pdf">View Report</a> - <a href="https://gscdn.govshare.site/a0f6d8c0872e778a4428d6bf02c51ea2063a0096/Weekly-Report-Jan-21-2021-slides.pdf">View Slides</a></p>
-<p><b>Jan 22, 2021</b> - <a href="https://gscdn.govshare.site/a0f6d8c0872e778a4428d6bf02c51ea2063a0096/ky-weekly-report-Jan-22-2021.pdf">View Report</a> - <a href="https://gscdn.govshare.site/a0f6d8c0872e778a4428d6bf02c51ea2063a0096/ky-weekly-report-slides-Jan%2022-2021.pdf">View Slides</a></p><p><b>Jan 29, 2021&nbsp;</b>﻿- <a href="https://chfs.ky.gov/agencies/dph/covid19/Vaxxweeklyreport01292021.pdf" target="_blank">View Report</a> - <a href="https://chfs.ky.gov/agencies/dph/covid19/Vaxxslides01292021.pdf" target="_blank">View Slides&nbsp;</a><b></b><b></b></p><p><b>Feb 5, 2021&nbsp;</b>﻿- <a href="https://chfs.ky.gov/agencies/dph/covid19/Vaxxweeklyreport02052021.pdf" target="_blank">View Report</a> -&nbsp;&nbsp;<a href="https://chfs.ky.gov/agencies/dph/covid19/Vaxxslides02052021.pdf" target="_blank">View Slides</a><b></b></p><h3>Frequently Asked Questions</h3><p><a href="https://chfs.ky.gov/agencies/dph/covid19/Cv19VaccineFAskedQ.pdf" target="_blank">COVID-19 Vaccine- Frequently Asked Questions</a>&nbsp;<span class="badge badge-primary">Updated</span></p>
+<p><b>Jan 22, 2021</b> - <a href="https://gscdn.govshare.site/a0f6d8c0872e778a4428d6bf02c51ea2063a0096/ky-weekly-report-Jan-22-2021.pdf">View Report</a> - <a href="https://gscdn.govshare.site/a0f6d8c0872e778a4428d6bf02c51ea2063a0096/ky-weekly-report-slides-Jan%2022-2021.pdf">View Slides</a></p><p><b>Jan 29, 2021&nbsp;</b>﻿- <a href="https://chfs.ky.gov/agencies/dph/covid19/Vaxxweeklyreport01292021.pdf" target="_blank">View Report</a> - <a href="https://chfs.ky.gov/agencies/dph/covid19/Vaxxslides01292021.pdf" target="_blank">View Slides&nbsp;</a><b></b><b></b></p><p><b>Feb 5, 2021&nbsp;</b>﻿- <a href="https://chfs.ky.gov/agencies/dph/covid19/Vaxxweeklyreport02052021.pdf" target="_blank">View Report</a> -&nbsp;&nbsp;<a href="https://chfs.ky.gov/agencies/dph/covid19/Vaxxslides02052021.pdf" target="_blank">View Slides</a><b></b></p><h3>Frequently Asked Questions</h3><p><a href="https://chfs.ky.gov/agencies/dph/covid19/Cv19VaccineFAskedQ.pdf" target="_blank">COVID-19 Vaccine- Frequently Asked Questions</a>&nbsp;</p><p>The Kentucky Department for Public Health is providing hardship assistance for persons who received their first dose of COVID-19 vaccine more than 100 miles outside the Kentucky border and it is not possible to return to that location for substantial reasons largely outside their control. Persons who received a first dose at a Kentucky regional or local site must return to the provider/site who administered their first dose. </p>
+<p>Assistance is requested by completing the “COVID-19 Vaccine Unsupported Second Dose Assistance” form at <a href="https://redcap.chfs.ky.gov/surveys/?s=MJ8CDF9AMK">COVID-19 Unsupported Second Dose Assistance Survey</a>. Applicants are required to upload a picture of their photo ID and COVID-19 Vaccination Record Card. General public inquiries and questions may contact the Vaccine Management Call Center at <b>(855) 598-2246.</b></p>
 
 
 

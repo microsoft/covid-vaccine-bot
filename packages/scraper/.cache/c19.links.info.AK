@@ -85,7 +85,7 @@
       <p class="description"><strong>Need Help? </strong> More options to get support are available, including over the phone. You can call  <a href="tel:19076463322">1-907-646-3322</a>. </p>
       <!-- <p display="inline" class="description"> <strong>General Vaccine Questions?</strong> You can email  <strong>covid19vaccine@alaska.gov</strong> or call <strong>1-907-646-3322</strong>.</p> -->
 
-      <p display="inline" class="description"> <strong>About:</strong> This page is a collaboration between the <a href="https://medium.com/anchorage-i-team/about-us-574f8ac4d839">Muncipality of Anchorage's Innovation Team</a>, the <a href = "http://dhss.alaska.gov/Pages/default.aspx" target="_blank">Alaska Department of Health and Social Services</a>, and the <a href="https://oit.alaska.gov/" target="_blank">Office of Information Technology</a>.  <strong>Questions about this website?</strong> Email ben.matheson@anchorageak.gov</p>
+      <p display="inline" class="description"> <strong>About:</strong> This page is a collaboration between the <a href="https://medium.com/anchorage-i-team/about-us-574f8ac4d839">Muncipality of Anchorage's Innovation Team</a>, the <a href = "http://dhss.alaska.gov/Pages/default.aspx" target="_blank">Alaska Department of Health and Social Services</a>, and the <a href="https://oit.alaska.gov/" target="_blank">Office of Information Technology</a>. You can find the code behind this project on <a href="https://github.com/MunicipalityOfAnchorage/prepmod-scrape" target="_blank">Github.</a> <strong>Questions about this website?</strong> Email ben.matheson@anchorageak.gov</p>
   <img height="60px" display="inline"   src="images/iteam_small.png">
 <!-- </div> -->
 
