@@ -12,6 +12,7 @@ export type RunResult = {
 }
 
 export interface PageScrapeResult {
+	link: Link
 	integrity: ssri.Integrity
 	content: string
 }

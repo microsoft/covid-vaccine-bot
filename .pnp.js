@@ -4419,6 +4419,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/ssri", "npm:7.1.0"],
             ["chalk", "npm:4.1.0"],
             ["puppeteer", "npm:7.0.4"],
+            ["queue", "npm:6.0.2"],
             ["ssri", "npm:8.0.1"],
             ["ts-node", "virtual:e4f77feae9737ada2b831b3864a655804d6ebc6cb9f84832e847c235e4b3a775036444a8e5149c43799c6d7d7212362475fe4653753276ab5b585b1256b9165f#npm:9.1.1"]
           ],
@@ -20375,6 +20376,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/querystringify-npm-2.2.0-4e77c9f606-6235036be3.zip/node_modules/querystringify/",
           "packageDependencies": [
             ["querystringify", "npm:2.2.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["queue", [
+        ["npm:6.0.2", {
+          "packageLocation": "./.yarn/cache/queue-npm-6.0.2-ebbcf599cf-07e7c28203.zip/node_modules/queue/",
+          "packageDependencies": [
+            ["queue", "npm:6.0.2"],
+            ["inherits", "npm:2.0.4"]
           ],
           "linkType": "HARD",
         }]

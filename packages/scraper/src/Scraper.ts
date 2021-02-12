@@ -9,6 +9,7 @@ import { PubSub, Handler, Unsubscribe } from './PubSub'
 import { extractPageData } from './extractPageData'
 import { PageScrapeResult, RunResult } from './types'
 import { Link } from '@ms-covidbot/state-plan-schema'
+import Queue from 'queue'
 
 const createRunResult = (): RunResult => ({
 	integrity: {},
@@ -17,10 +18,16 @@ const createRunResult = (): RunResult => ({
 })
 
 export class Scraper {
+	// Arguments
 	private lastRun: RunResult
+	private links: Link[]
+
+	// State
 	private result: RunResult | undefined
 	private browser: puppeteer.Browser | undefined
-	private links: Link[]
+	private queue: Queue | undefined
+
+	// Events
 	private onLinkStartedHandlers = new PubSub<Link>()
 	private onIntegrityMismatchHandlers = new PubSub<Link>()
 	private onLinkScrapedHandlers = new PubSub<[Link, PageScrapeResult]>()
@@ -54,35 +61,48 @@ export class Scraper {
 	}
 
 	private async _scrapeLinks(): Promise<void> {
+		const result = this.result
+		if (!result) {
+			throw new Error('bad state')
+		}
+		const queue = Queue({ concurrency: 10 })
+		return new Promise((resolve) => {
+			const textLinks = this.links.filter((l) => l.content == null)
+			for (const link of textLinks) {
+				queue?.push(() => this._scrapeLinkContent(link))
+			}
+
+			queue?.on('end', () => resolve())
+			queue?.on('error', (err) => {
+				result.errors.push(err)
+			})
+			queue?.on('success', (scrapeResult: PageScrapeResult) => {
+				const { link } = scrapeResult
+				this.onLinkScrapedHandlers.fire([link, scrapeResult])
+				this._checkLinkIntegrity(scrapeResult)
+			})
+			queue?.start()
+		})
+	}
+
+	private _checkLinkIntegrity({ integrity, link }: PageScrapeResult) {
 		if (!this.result) {
 			throw new Error('bad state')
 		}
-		const textLinks = this.links.filter((l) => l.content == null)
-		for (const link of textLinks) {
-			try {
-				// scrape the link
-				this.onLinkStartedHandlers.fire(link)
-				const scrapeResult = await this._scrapeLink(link)
-				this.onLinkScrapedHandlers.fire([link, scrapeResult])
-
-				// check content integrity
-				const integrityHash = scrapeResult.integrity.toString()
-				this.result.integrity[link.url] = integrityHash
-				if (integrityHash !== this.lastRun.integrity[link.url]) {
-					this.onIntegrityMismatchHandlers.fire(link)
-				}
-			} catch (err) {
-				this.result.errors.push(err)
-			}
+		// check content integrity
+		const integrityHash = integrity.toString()
+		console.log('INTEGRITY', integrityHash)
+		this.result.integrity[link.url] = integrityHash
+		if (integrityHash !== this.lastRun.integrity[link.url]) {
+			this.onIntegrityMismatchHandlers.fire(link)
 		}
-
-		// TODO: Handle PDF, Image Links
 	}
 
-	private async _scrapeLink(link: Link): Promise<PageScrapeResult> {
+	private async _scrapeLinkContent(link: Link): Promise<PageScrapeResult> {
 		if (!this.browser) {
 			throw new Error('bad state')
 		}
+		this.onLinkStartedHandlers.fire(link)
 		const page = await this.browser.newPage()
 		try {
 			// navigate to the page and wait for it to load
@@ -96,6 +116,7 @@ export class Scraper {
 
 			return {
 				...pageResult,
+				link,
 				integrity: ssri.fromData(pageResult.content),
 			} as PageScrapeResult
 		} finally {

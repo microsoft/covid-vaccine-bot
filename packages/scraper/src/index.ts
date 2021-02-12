@@ -52,6 +52,7 @@ async function scrapeSites(): Promise<void> {
 		).toFixed(2)}%) changed links since last run`
 	)
 	result.errors = result.errors.map((e) => e.message || e.toString()) as any
+	console.log(JSON.stringify(result.integrity, null, 4))
 	writeRunResult(result)
 }
 

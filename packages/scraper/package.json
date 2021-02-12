@@ -17,6 +17,7 @@
 	"dependencies": {
 		"chalk": "^4.1.0",
 		"puppeteer": "^7.0.4",
+		"queue": "^6.0.2",
 		"ssri": "^8.0.1"
 	},
 	"devDependencies": {
