@@ -2,7 +2,8 @@
 	"links": {
 		"info": {
 			"text": "CDC/Maryland/state_link",
-			"url": "https://covidlink.maryland.gov/content/vaccine/"
+			"url": "https://covidlink.maryland.gov/content/vaccine/",
+			"scrapeQuery": ["#primary_content_Block"]
 		}
 	},
 	"activePhase": "1a",

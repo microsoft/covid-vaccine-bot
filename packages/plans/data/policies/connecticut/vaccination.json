@@ -5,7 +5,8 @@
 			"url": "https://portal.ct.gov/Coronavirus/covid-19%20vaccinations"
 		},
 		"eligibility": {
-			"url": "https://portal.ct.gov/Coronavirus/COVID-19-Vaccination---Phases"
+			"url": "https://portal.ct.gov/Coronavirus/COVID-19-Vaccination---Phases",
+			"scrapeQuery": ["main"]
 		}
 	},
 	"activePhase": "1a",

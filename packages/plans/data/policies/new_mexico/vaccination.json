@@ -2,7 +2,8 @@
 	"links": {
 		"info": {
 			"text": "CDC/New_Mexico/state_link",
-			"url": "https://cv.nmhealth.org/covid-vaccine/"
+			"url": "https://cv.nmhealth.org/covid-vaccine/",
+			"scrapeQuery": ["#main-content"]
 		}
 	},
 	"activePhase": "1b",

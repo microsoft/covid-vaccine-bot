@@ -2,7 +2,8 @@
 	"links": {
 		"info": {
 			"text": "CDC/South_Carolina/state_link",
-			"url": "https://scdhec.gov/covid19/covid-19-vaccine"
+			"url": "https://scdhec.gov/covid19/covid-19-vaccine",
+			"scrapeQuery": ["main#main"]
 		}
 	},
 	"activePhase": "1a",

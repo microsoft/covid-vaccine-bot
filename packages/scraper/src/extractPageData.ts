@@ -36,3 +36,12 @@ export function extractPageData(link: Link): PageExtractResult {
 
 	return { content }
 }
+
+/*
+	function strip(html) {
+		const tmp = document.createElement('div')
+		tmp.innerHTML = html
+		return tmp.textContent || tmp.innerText
+	}
+
+ */

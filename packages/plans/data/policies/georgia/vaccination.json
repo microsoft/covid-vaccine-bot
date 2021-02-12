@@ -2,7 +2,8 @@
 	"links": {
 		"info": {
 			"text": "CDC/Georgia/state_link",
-			"url": "https://dph.georgia.gov/covid-vaccine"
+			"url": "https://dph.georgia.gov/covid-vaccine",
+			"scrapeQuery": [".landing-page"]
 		}
 	},
 	"activePhase": "1a",

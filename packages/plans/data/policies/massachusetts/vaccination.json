@@ -5,7 +5,8 @@
 			"url": "https://www.mass.gov/info-details/massachusetts-covid-19-vaccine-information"
 		},
 		"eligibility": {
-			"url": "https://www.mass.gov/info-details/massachusetts-covid-19-vaccination-phases"
+			"url": "https://www.mass.gov/info-details/massachusetts-covid-19-vaccination-phases",
+			"scrapeQuery": ["#main-content"]
 		},
 		"workflow": {
 			"text": "c19.links/vax_quiz",

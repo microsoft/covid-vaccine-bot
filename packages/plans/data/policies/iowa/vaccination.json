@@ -2,7 +2,8 @@
 	"links": {
 		"info": {
 			"text": "CDC/Iowa/state_link",
-			"url": "https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus/Vaccine/Information-for-the-Public"
+			"url": "https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus/Vaccine/Information-for-the-Public",
+			"scrapeQuery": [".body_bg"]
 		}
 	},
 	"activePhase": "1a",

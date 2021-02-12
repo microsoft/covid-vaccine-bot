@@ -2,7 +2,8 @@
 	"links": {
 		"info": {
 			"text": "CDC/Rhode_Island/state_link",
-			"url": "https://covid.ri.gov/vaccination"
+			"url": "https://covid.ri.gov/vaccination",
+			"scrapeQuery": ["main"]
 		}
 	},
 	"activePhase": "1a",
