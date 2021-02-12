@@ -4,12 +4,12 @@
  */
 /* eslint-disable @essex/adjacent-await */
 import puppeteer from 'puppeteer'
+import Queue from 'queue'
 import ssri from 'ssri'
 import { PubSub, Handler, Unsubscribe } from './PubSub'
 import { extractPageData } from './extractPageData'
 import { PageScrapeResult, RunResult } from './types'
 import { Link } from '@ms-covidbot/state-plan-schema'
-import Queue from 'queue'
 
 const createRunResult = (): RunResult => ({
 	integrity: {},
@@ -91,9 +91,9 @@ export class Scraper {
 		}
 		// check content integrity
 		const integrityHash = integrity.toString()
-		console.log('INTEGRITY', integrityHash)
 		this.result.integrity[link.url] = integrityHash
 		if (integrityHash !== this.lastRun.integrity[link.url]) {
+			this.result.changes.push(link)
 			this.onIntegrityMismatchHandlers.fire(link)
 		}
 	}
