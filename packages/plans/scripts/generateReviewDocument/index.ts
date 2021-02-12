@@ -152,7 +152,7 @@ function writeLink(
 	key: string
 ): string | undefined {
 	if (link != null) {
-		const textLoc = localizations.get(link.text)
+		const textLoc = link.text != null ? localizations.get(link.text) : undefined
 		const descriptionLoc = link.description
 			? localizations.get(link.description)
 			: undefined
