@@ -49,7 +49,7 @@
 # Alaska (state)
 - Active Phase: **Phase 1B**
 
-- Info Link: **[Alaska Department of Health and Social Services](http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/VaccineAvailability.aspx)**
+- Info Link: **[Alaska Department of Health and Social Services](http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/vaccine.aspx)**
 - Workflow Link: **[Vaccine Eligibility Questionnaire](https://survey123.arcgis.com/share/c0037dd8735d44cfbd53d192cb2ffed3?portalUrl=https://Alaska-DHSS.maps.arcgis.com)**
 
 ## Phases
@@ -497,7 +497,7 @@
 # Delaware (state)
 - Active Phase: **Phase 1A**
 
-- Info Link: **[Delaware Division of Public Health](https://coronavirus.delaware.gov/vaccine/)**
+- Info Link: **[Delaware Division of Public Health](https://coronavirus.delaware.gov/vaccine/vaccine-information-for-the-general-public/)**
 
 ## Phases
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
@@ -895,7 +895,7 @@
 # Iowa (state)
 - Active Phase: **Phase 1A**
 
-- Info Link: **[Iowa Department of Public Health](https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus/Vaccine)**
+- Info Link: **[Iowa Department of Public Health](https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus/Vaccine/Information-for-the-Public)**
 
 ## Phases
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
@@ -1011,7 +1011,7 @@
 # Louisiana (state)
 - Active Phase: **Phase 1B**
 
-- Info Link: **[Louisiana Department of Health](https://ldh.la.gov/index.cfm/page/4042)**
+- Info Link: **[Louisiana Department of Health](https://ldh.la.gov/covidvaccine/)**
 
 ## Phases
 ### *Phase 1A* 
@@ -1486,7 +1486,7 @@
 # Montana (state)
 - Active Phase: **Phase 1A**
 
-- Info Link: **[Montana Department of Public Health and Human Services](https://dphhs.mt.gov/publichealth/cdepi/diseases/coronavirusvaccine/loginstate.aspx)**
+- Info Link: **[Montana Department of Public Health and Human Services](https://dphhs.mt.gov/covid19vaccine)**
 
 ## Phases
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
@@ -1530,6 +1530,7 @@
 - Active Phase: **Phase 1A**
 
 - Info Link: **[Nebraska Department of Health and Human Services](http://dhhs.ne.gov/Pages/COVID-19-Vaccine-Information.aspx)**
+- Workflow Link: **[workflow](https://vaccinate.ne.gov/)**
 
 ## Phases
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
@@ -1733,6 +1734,7 @@
 - Active Phase: **Phase 1B**
 
 - Info Link: **[New York State Department of Health](https://covid19vaccine.health.ny.gov/)**
+- Workflow Link: **[Am I Eligible app](https://am-i-eligible.covid19vaccine.health.ny.gov/)**
 
 ## Phases
 ### *Phase 1A* 
@@ -1771,6 +1773,7 @@
 - Active Phase: **Phase 1A**
 
 - Info Link: **[North Carolina Department of Health and Human Services](https://covid19.ncdhhs.gov/vaccines)**
+- Workflow Link: **[workflow](https://findmygroup.nc.gov/)**
 
 ## Phases
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
@@ -1971,6 +1974,7 @@
 - Active Phase: **Phase 1A**
 
 - Info Link: **[Oregon Health Authority, Public Health Division](https://covidvaccine.oregon.gov/)**
+- Workflow Link: **[workflow](https://getvaccinated.oregon.gov/#/)**
 
 ## Phases
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
@@ -2203,6 +2207,7 @@
 - Active Phase: **Phase 1A**
 
 - Info Link: **[South Dakota Department of Health](https://doh.sd.gov/COVID/Vaccine/default.aspx)**
+- Workflow Link: **[workflow](https://covid.sd.gov/vaccine/default.aspx)**
 
 ## Phases
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
@@ -2406,6 +2411,8 @@
 - Active Phase: **Phase 1A**
 
 - Info Link: **[Vermont Department of Health](https://www.healthvermont.gov/covid-19/vaccine)**
+- Workflow Link: **[workflow](https://vermont.force.com/events/s/selfregistration)**
+- Providers Link: **[providers](https://www.healthvermont.gov/covid-19/vaccine/getting-covid-19-vaccine)**
 
 ## Phases
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
@@ -2841,6 +2848,7 @@
 |c19.links/info.MA.Barnstable|Barnstable County Vaccination Information|not defined|not defined|not defined|not defined|none
 |c19.links/registration.MA.Barnstable|Barnstable County COVID-19 Vaccine Registration|not defined|not defined|not defined|not defined|none
 |c19.links/info.MA.Berkshire|Get Vaccinated Berkshires|not defined|not defined|not defined|not defined|none
+|c19.links/workflow.NY|Am I Eligible app|not defined|not defined|not defined|not defined|none
 |c19.links/workflow.WA|Washington State PhaseFinder|not defined|not defined|not defined|not defined|none
 
 	

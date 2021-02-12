@@ -1,0 +1,1666 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+			<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+	<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+
+				<script type='text/javascript'>
+					var enableTelemetry = 'false'
+					var aiConfig = {
+					instrumentationKey: '1cde048e-3185-4906-aa46-c92a7312b60f'						
+					}
+					var appInsights = window.appInsights || function (a) { function b(a) { c[a] = function () { var b = arguments; c.queue.push(function () { c[a].apply(c, b) }) } } var c = { config: a }, d = document, e = window; setTimeout(function () { var b = d.createElement('script'); b.src = a.url || 'https://az416426.vo.msecnd.net/scripts/a/ai.0.js', d.getElementsByTagName('script')[0].parentNode.appendChild(b) }); try { c.cookie = d.cookie } catch (a) { } c.queue = []; for (var f = ['Event', 'Exception', 'Metric', 'PageView', 'Trace', 'Dependency']; f.length;)b('track' + f.pop()); if (b('setAuthenticatedUserContext'), b('clearAuthenticatedUserContext'), b('startTrackEvent'), b('stopTrackEvent'), b('startTrackPage'), b('stopTrackPage'), b('flush'), !a.disableExceptionTracking) { f = 'onerror', b('_' + f); var g = e[f]; e[f] = function (a, b, d, e, h) { var i = g && g(a, b, d, e, h); return !0 !== i && c['_' + f](a, b, d, e, h), i } } return c }(aiConfig);
+					window.appInsights = appInsights, appInsights.queue && 0 === appInsights.queue.length;
+					// Add telemetry initializer
+					appInsights.queue.push(function() {
+						appInsights.context.addTelemetryInitializer(function(envelope) {
+							var telemetryItem = envelope.data.baseData;
+							// To check the telemetry item’s type:
+							if (!false)
+							{
+								//If the telemetry is not enabled, we still want to capture Google map custom event, so only allow that
+								if (envelope.name.indexOf('.Event') == -1)
+									return false;
+							}
+						});
+					});						
+					appInsights.trackPageView();
+				</script>
+			<script>
+				document.addEventListener("DOMContentLoaded", function () {
+					var forms = document.getElementsByTagName("form");
+					var absPat = /^https?:\/\/|^\/\//i;
+					for (var i = 0; i < forms.length; i++)
+					{
+						if (forms[i].method == "post" && !forms[i].querySelector('[name="__RequestVerificationToken"]') && !absPat.test(forms[i].getAttribute("action"))) {
+							forms[i].insertAdjacentHTML("beforeend", "<input name=\"__RequestVerificationToken\" type=\"hidden\" value=\"TGXI_I80MJkScmnYAJcgA_Xe6VCBd2Cm1bkXu0FDneGG6nFEys_zNKwKHK_5MMN0k-xfMY0no0wWADeV6rrU3rGoJ-ATXVN9JaRXnzOCYdQ1\" />");
+						}
+					}
+				}, false);
+			</script>
+			
+	
+	<script type="text/javascript">
+        window.isResponsiveEnabled = true;
+		window.isRemoveSetHeights= false;
+		if (window.isRemoveSetHeights) {
+			document.documentElement.className += ' removeSetHeights';
+		}
+		window.mainMenuMediaQuery = 'screen and (max-width: 40em)';
+		window.isMobileBrowserIncludingTablets = false;
+		window.fixedResponsiveMenu = false;
+		window.fullWidthResponsiveMenu = false;
+		window.responsiveMenuHeight = '';
+		window.responsiveMenuFontSize = '';
+		(function () {
+			window.devicePixelRatio = window.devicePixelRatio || Math.round(window.screen.availWidth / document.documentElement.clientWidth);
+			window.innerWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+			window.innerHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+
+			window.setSizeCookie = function () {
+				document.cookie = "dpi=" + window.devicePixelRatio + "; path=/";
+				document.cookie = "viewportWidth=" + window.innerWidth + "; path=/";
+				document.cookie = "viewportHeight=" + window.innerHeight + "; path=/";
+				if (screen && screen.width && screen.height) {
+					document.cookie = "screenWidth=" + screen.width + "; path=/";
+					document.cookie = "screenHeight=" + screen.height + "; path=/";
+				}
+				document.cookie = "responsiveGhost=1; path=/";
+			};
+
+			setSizeCookie();
+		}());
+	</script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	
+	<meta name="theme-color" content="#710000">
+	<link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+		<title> COVID-19 (Novel Coronavirus) | Santa Cruz County, AZ - Official Website</title>
+		
+		<meta name="description" content="">
+		<meta name="keywords" content="COVID-19,Coronavirus">
+				
+	<!--[if IE 6]><script language="JavaScript" type="text/javascript"> var isie6 = true; </script><![endif]-->
+	<!--[if IE 7]><script language="JavaScript" type="text/javascript"> var isie7 = true; </script><![endif]-->
+	<!--[if IE 8]><script language="JavaScript" type="text/javascript"> var isie8 = true; </script><![endif]-->
+	<!--[if IE 9]><script language="JavaScript" type="text/javascript"> var isie8 = true; </script><![endif]-->
+	<script type="text/javascript"><!--
+	var intCountryCode = 840;
+	var externalSiteDialogHeight = '390px';
+	var order = '';
+//--></script>
+	
+	<link href="/901781768.css" rel="stylesheet" type="text/css" />	<link href="/-1622784513.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" type="text/css" href="/Assets/Styles/Print.css" media="print">
+<script type="text/javascript" src="/Scripts/2011.3.1115/jquery-1.6.4.min.js"></script>
+	<script type="text/javascript">
+		window.Pages = window.Pages || {};
+		// FrontEnd RWD initialization
+		window.Pages.rwdReady = $.Deferred();
+		window.Pages.toolBarDeferred = $.Deferred();
+		window.Pages.rwdSetupComplete = $.Deferred();
+		window.Pages.megaMenuLoaded = $.Deferred();
+		window.Pages.angularToolbarComplete = $.Deferred();
+		window.Pages.frontEndToolbarComplete = $.Deferred();
+	</script>
+	<!--CPHeadContent-->
+	<script src="/1036081542.js" type="text/javascript"></script>
+	
+	
+	
+	
+
+
+
+
+	<!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="/App_Themes/ie8.css"><![endif]-->
+	<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="/App_Themes/ie7.css"><![endif]-->
+	<!--[if lte IE 6]><link rel="stylesheet" type="text/css" href="/App_Themes/ie6.css"><![endif]-->
+	<!--[if lt IE 9]><script type="text/javascript" src="/Scripts/html5.js"></script><![endif]-->
+
+	<script type="text/javascript">
+		setEditorVariables(false, 840);
+		function getPrintPreviewType() { return 0; } function printPreview() {pPreview(getPrintPreviewType()); }
+	</script>
+	
+</head>
+<body class="wide " >
+
+	
+
+	<div id="fb-root"></div>
+<div id=skipToContentLinks>
+<a href="#cc5f8c90dc-b4cb-431b-90ee-10648f8df655" target="_self" class="skipToContentLink">Skip to Main Content</a>
+</div>
+	<form id="frmReferenceFormForTelerikEditorDialogs"></form>
+
+		<input type="hidden" id="GoogleMapsKey" value="AIzaSyDWUuE-ifkbhxblF920N8MjpBdTg1Wt784" />
+
+
+
+
+
+	<input type="hidden" id="cpcDomain" value="https://cp-civicplusuniversity2.civicplus.com">
+	<input type="hidden" id="hdnStructureID" value="1" />
+	<input type="hidden" id="hdnContentCollectionID" value="4993f4d1-25d7-4e3e-b9d5-4ab915036860" />
+	<input type="hidden" id="hdnWorkingCopyID" value="00000000-0000-0000-0000-000000000000" />
+	<input type="hidden" id="hdnThemeID" value="1" />
+	<input type="hidden" id="pageIsFrontEnd" value="true" />
+	<input type="hidden" id="pageModuleID" />
+	<input type="hidden" id="pagePageID" value="732" />
+	<input type="hidden" id="hdnModuleEligibleForJquery224Upgrade" value="true" />
+
+		<div id="stickyPlaceholder"></div>
+	<div id="outer-wrap" class="outer-wrap">
+		<div id="inner-wrap" class="inner-wrap">
+				<div id="divToolbars" class="cpToolbars newCP" style="">
+					
+<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="/App_Themes/CP/ie7.css"><![endif]-->
+<!-- Allow Dashboard, Favorites Enabled -->
+
+<!-- Begin Signed Out Bar -->
+<div class="cpToolbar user public">
+    <div class="inner selfClear">
+        <p class="dropdown"><a href="/MyAccount/ProfileCreate" role="button" class="myConnections" id="signedOutToolbarCreateProfileButton">Create an Account</a> <span class="welcomeMessage">- Increase your productivity, customize your experience, and engage in information you care about. &nbsp;&nbsp;</span></p>
+        <ul class="nav secondary">
+	        <li><a href="/MyAccount" role="button" class="button" id="loggedOutToolbarSignInButton"><span>Sign In</span></a></li>
+        </ul>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        $('#signedOutToolbarCreateProfileButton').keypress(function (e) { if (e.which === 0) return; $(this).click(); });
+        $('#signedOutToolbarCreateProfileButton').click(function (event) {
+        	event.preventDefault();
+        	window.location.href = '/MyAccount/ProfileCreate?from=url&url=/&dn=' + window.location.origin;
+        });
+
+			
+				$('#loggedOutToolbarSignInButton').click(function (event) {
+					event.preventDefault();
+					window.location.href = '/MyAccount/?from=url&url=' + encodeURIComponent(window.location.href.replace(window.location.origin, '')) + '&dn=' + window.location.host;
+				});
+			
+
+		if ('False' == 'True') {
+            $('#loggedOutToolbarSignInButton').hide();
+		}
+    })
+</script>
+<!-- End Signed Out Bar -->
+
+				</div>
+			<div id="bodyWrapper">
+				<div id="mainNavHolderMobile" class="mainNavHolderMobile"></div>
+				
+<div data-cpRole="structuralContainer" id="structuralContainer18">
+<div data-cpRole="structuralContainer" id="structuralContainer12">
+<div data-cpRole="banner" id="banner1"><div data-cpRole="structuralContainer" id="structuralContainer9" class="mainNavFloat">
+<header class="siteHeader"><div data-cpRole="structuralContainer" id="structuralContainer2">
+<div class="siteWrap"><aside data-cpRole="contentContainer" id="contentContainer1" class="shareSearchWrap">	<div id="cc4f1ce383-10fc-453f-8f8c-79e71a956b20" data-containerid="4f1ce383-10fc-453f-8f8c-79e71a956b20" class="pageContent cpGrid cpGrid24 isLockedContainer showInMobile" data-contentcontainerbreakpoint="1">
+				                
+
+		<div class="row outer wide"><!--
+--><div class="outer col col16 first" style="" data-widgetcontainerid="94baa520-7fdf-458f-81ae-d9e61e3661d8">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col16 first last id38fdb517-604b-4e7b-bfee-3dac4cfae6a3" style="" data-widgetcontainerid="38fdb517-604b-4e7b-bfee-3dac4cfae6a3">	
+
+<div class="widget widgetSpacer" id="c230e920-80cc-469a-bca8-153ec679132f"></div>	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!----><div class="outer col col4" style="" data-widgetcontainerid="b618a886-b879-4dac-bf9b-73f25523c648">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col4 first last id000d4291-9e67-4aa6-877b-c5410bbf35ff" style="" data-widgetcontainerid="000d4291-9e67-4aa6-877b-c5410bbf35ff">	
+<div data-widget-id="3a200517-6cea-4ea3-b3dc-eeda47843fb7" data-widget-controller-path="/Layout/WidgetSiteTools">
+
+		<script type="text/javascript">
+			$(document).ready(function () {
+				setWidgetServiceClicking($("#widgetSiteToolsHeader3a200517-6cea-4ea3-b3dc-eeda47843fb7"), true, function () {
+					var $widgetBody = $('#widgetSiteToolsBody3a200517-6cea-4ea3-b3dc-eeda47843fb7');
+
+					if ($widgetBody.is(':visible')) {
+						var menuItems = $('.widgetItem a', $widgetBody);
+
+						$(menuItems[0]).focus();
+
+						$('.widgetItem', $widgetBody).unbind("keydown").bind("keydown", function (e) {
+
+							if (e.which === 9) {
+								var index = menuItems.index(e.target);
+
+								if ((index === 0 && e.shiftKey) || (index === (menuItems.length - 1) && !e.shiftKey)) {
+									$("#widgetSiteToolsHeader3a200517-6cea-4ea3-b3dc-eeda47843fb7").trigger('click').focus();
+								}
+							}
+						});
+					} else {
+						$('.widgetItem', $widgetBody).unbind("keydown");
+					}
+				});
+			});
+		</script>
+
+	<section id="widgetSiteTools3a200517-6cea-4ea3-b3dc-eeda47843fb7" class="widget widgetSiteTools skin41 widgetOptionSet7 flyOutParent wide"  aria-label="Site Tools">
+				<header id="widgetSiteToolsHeader3a200517-6cea-4ea3-b3dc-eeda47843fb7" class="widgetHeader" tabindex="0" role="button" aria-haspopup="true">
+			<h3><img alt="Site Tools" class="imageHover" data-hover="/ImageRepository/Document?documentID=2953" data-image="/ImageRepository/Document?documentID=2952" src="/ImageRepository/Document?documentID=2952" /></h3>
+		</header>
+	<div id="widgetSiteToolsBody3a200517-6cea-4ea3-b3dc-eeda47843fb7" class="widgetBody blackIcons flyOut bottom leftEdge widget widgetSiteTools skin41 cpGrid cpGrid1" style="display:none;">
+         <div class="row                   
+ wide">
+	<div class="col col1 first last">
+		<ol class="semanticList">
+					<li class="widgetItem"><a tabindex="0" role="button" aria-label="Site Tools Home" class="widgetSiteToolsHome siteToolsService" href="/">Home</a></li>
+					<li class="widgetItem"><a tabindex="0" role="button" aria-label="Site Tools My Account" class="widgetSiteToolsMyAccount siteToolsService" href="/MyAccount">My Account</a></li>
+					<li id="PrinterFriendly3a200517-6cea-4ea3-b3dc-eeda47843fb7" class="widgetItem"><a tabindex="0" aria-label="Site Tools Printer Friendly opens in new window" role="button" class="widgetSiteToolsPrinterFriendly siteToolsService" onkeypress="if (event.which == 13) { this.onclick(); }" onclick="Core.Layout.dynamicJavascript('printPreview();'); return false;" href="#PrinterFriendly3a200517-6cea-4ea3-b3dc-eeda47843fb7">Printer Friendly</a></li>
+					<li class="widgetItem"><a tabindex="0" role="button" aria-label="Site Tools Email Page" class="widgetSiteToolsEmailPage siteToolsService" href="/EmailPage">Email Page</a></li>
+					<li class="widgetItem"><a tabindex="0" role="button" aria-label="Site Tools Contact Us" class="widgetSiteToolsContactUs siteToolsService" href="/directory.aspx">Contact Us</a></li>
+					<li class="widgetItem"><a tabindex="0" role="button" aria-label="Site Tools RSS" class="widgetSiteToolsRSS siteToolsService" href="/rss.aspx">RSS</a></li>
+					<li class="widgetItem"><a tabindex="0" role="button" aria-label="Site Tools Site Map" class="widgetSiteToolsSiteMap siteToolsService" href="/SiteMap">Site Map</a></li>
+					<li id="TranslatePage3a200517-6cea-4ea3-b3dc-eeda47843fb7" class="widgetItem"><a tabindex="0" aria-label="Site Tools Translate Page opens in new window" role="button" class="widgetSiteToolsTranslatePage siteToolsService" onkeypress="if (event.which == 13) { this.onclick(); }" onclick="Core.Layout.dynamicJavascript('window.open(\&#39;http://translate.google.com/translate?js=n&amp;sl=auto&amp;tl=es&amp;u=\&#39; + document.location.href, \&quot;TranslateWindow\&quot;);'); return false;" href="#TranslatePage3a200517-6cea-4ea3-b3dc-eeda47843fb7">Translate Page</a></li>
+					<li class="widgetItem"><a tabindex="0" role="button" aria-label="Site Tools Notifications" class="widgetSiteToolsNotifications siteToolsService" href="/list.aspx">Notifications</a></li>
+					<li class="widgetItem"><a tabindex="0" role="button" aria-label="Site Tools Documents" class="widgetSiteToolsDocuments siteToolsService" href="/DocumentCenter">Documents</a></li>
+		</ol>
+	</div>
+
+		 </div>
+	</div>
+
+	</section>
+
+
+
+</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!----><div class="outer col col4 last" style="" data-widgetcontainerid="ae4d5ff6-a6d0-42d8-b30d-98ea15f47a84">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col4 first last id4a397540-e768-4708-8e96-c0df244456b1" style="" data-widgetcontainerid="4a397540-e768-4708-8e96-c0df244456b1">	
+<div data-widget-id="fcbd2dff-e8f7-46e0-9a7b-72e8522981d9" data-widget-controller-path="/Layout/WidgetShare">
+
+		<script type="text/javascript">
+			$(document).ready(function () {
+				setWidgetServiceClicking($("#widgetShareHeaderfcbd2dff-e8f7-46e0-9a7b-72e8522981d9"), true, function () {
+					var $widgetBody = $('#widgetShareBodyfcbd2dff-e8f7-46e0-9a7b-72e8522981d9');
+
+					if ($widgetBody.is(':visible')) {
+						var menuItems = $('.widgetItem a', $widgetBody);
+
+						$(menuItems[0]).focus();
+
+						$('.widgetItem', $widgetBody).unbind("keydown").bind("keydown", function (e) {
+
+							if (e.which === 9) {
+								var index = menuItems.index(e.target);
+
+								if ((index === 0 && e.shiftKey) || (index === (menuItems.length - 1) && !e.shiftKey)) {
+									$("#widgetShareHeaderfcbd2dff-e8f7-46e0-9a7b-72e8522981d9").trigger('click').focus();
+								}
+							}
+			});
+					} else {
+						$('.widgetItem', $widgetBody).unbind("keydown");
+					}
+				});
+			});
+		</script>
+
+	<section id="widgetSharefcbd2dff-e8f7-46e0-9a7b-72e8522981d9" class="widget widgetShare skin41 widgetOptionSet14 flyOutParent wide"  aria-label="Share">
+			<header id="widgetShareHeaderfcbd2dff-e8f7-46e0-9a7b-72e8522981d9" class="widgetHeader" tabindex="0" role="button" aria-haspopup="true">
+				<h3><img alt="Share" class="imageHover" data-hover="/ImageRepository/Document?documentID=2951" data-image="/ImageRepository/Document?documentID=2950" src="/ImageRepository/Document?documentID=2950" /></h3>
+	</header>
+    <div id="widgetShareBodyfcbd2dff-e8f7-46e0-9a7b-72e8522981d9" class="widgetBody flyOut bottom leftEdge widget widgetShare skin41 cpGrid cpGrid1" style="display:none;">
+        <div class="row                   
+ wide">
+	<div class="col col1 first last">
+		<ol class="semanticList">
+                <li class="widgetItem" ><a tabindex="0" role="button" class="widgetShareFacebook shareService" onkeypress="if(event.which == 13) { this.onclick(); }" href="/Layout/WidgetShare/ShareLink/Facebook" target="_blank" aria-label="Share on Facebook opens in new window">Facebook</a></li>
+                <li class="widgetItem" ><a tabindex="0" role="button" class="widgetShareTwitter shareService" onkeypress="if(event.which == 13) { this.onclick(); }" href="/Layout/WidgetShare/ShareLink/Twitter" target="_blank" aria-label="Share on Twitter opens in new window">Twitter</a></li>
+                <li class="widgetItem" ><a tabindex="0" role="button" class="widgetSharePinterest shareService" onkeypress="if(event.which == 13) { this.onclick(); }" href="/Layout/WidgetShare/ShareLink/Pinterest" target="_blank" aria-label="Share on Pinterest opens in new window">Pinterest</a></li>
+                <li class="widgetItem" ><a tabindex="0" role="button" class="widgetShareDelicious shareService" onkeypress="if(event.which == 13) { this.onclick(); }" href="/Layout/WidgetShare/ShareLink/Delicious" target="_blank" aria-label="Share on Delicious opens in new window">Delicious</a></li>
+                <li class="widgetItem" ><a tabindex="0" role="button" class="widgetShareBlogger shareService" onkeypress="if(event.which == 13) { this.onclick(); }" href="/Layout/WidgetShare/ShareLink/Blogger" target="_blank" aria-label="Share on Blogger opens in new window">Blogger</a></li>
+                <li class="widgetItem" ><a tabindex="0" role="button" class="widgetShareLinkedIn shareService" onkeypress="if(event.which == 13) { this.onclick(); }" href="/Layout/WidgetShare/ShareLink/LinkedIn" target="_blank" aria-label="Share on LinkedIn opens in new window">LinkedIn</a></li>
+		</ol>
+	</div>
+
+        </div>
+    </div>
+
+	</section>
+
+</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!--		--></div> <!-- outer row -->
+
+
+	</div>
+</aside><h1 data-cpRole="banner" id="banner2" class="logo empty">
+
+
+
+
+				<a style="			display: block; text-align: left;
+" class="bannerObject" href="/" target="_self"><img alt="Logo" class="bannerObject" src="/ImageRepository/Document?documentID=3619" /></a>
+
+</h1><aside data-cpRole="contentContainer" id="contentContainer3" class="shareSearchWrap">	<div id="cc17fc1b17-a660-41d3-b47a-b7691b8b110a" data-containerid="17fc1b17-a660-41d3-b47a-b7691b8b110a" class="pageContent cpGrid cpGrid24 isLockedContainer showInMobile" data-contentcontainerbreakpoint="1">
+				                
+
+		<div class="row outer wide"><!--
+--><div class="outer col col11 first" style="" data-widgetcontainerid="feec267f-bf9b-40b0-b4e0-500ba785d0d8">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col11 first last idfcbf4172-230c-4d8e-b5a7-076c698821a2" style="" data-widgetcontainerid="fcbf4172-230c-4d8e-b5a7-076c698821a2">	
+<div data-widget-id="11ef8011-0154-4bdb-beb4-cfa6a51e3df6" data-widget-controller-path="/GraphicLinks/Widget">
+
+
+
+
+<div id="graphicLinkWidget11ef8011-0154-4bdb-beb4-cfa6a51e3df6" class="widget widgetGraphicLinks skin39 widgetOptionSet16 wide" data-elementqueryclasses='{"wide-narrow":"min-width:1em"}' data-elementquerymatch='matchMultiColumn' data-elementqueryunmatch='unmatchMultiColumn' data-modulewidgettype="graphicLinks">
+	<div class="widgetHeader">
+		<div class="">
+				</div>
+	</div>
+	<div class="widgetBody cpGrid cpGrid2 ">	
+			<div class="row autoWidths center wide"><!--
+--><div class="col col1 first "><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks"><a class="widgetDesc widgetGraphicLinksLink" href="/facebook" target="_self"  aria-label="Facebook graphic"><img src="/ImageRepository/Document?documentID=2956" 
+     class="graphicButtonLink" alt="Facebook" 
+     onmouseover="this.src='/ImageRepository/Document?documentID=2954'" 
+	onmouseout="this.src='/ImageRepository/Document?documentID=2956'"
+     onfocus="this.src='/ImageRepository/Document?documentID=2954'" 
+	onblur="this.src='/ImageRepository/Document?documentID=2956'"> </a></div><!--
+--></div></div><!----><div class="col col1  last"><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks"><a class="widgetDesc widgetGraphicLinksLink" href="/twitter" target="_self"  aria-label="Twitter graphic"><img src="/ImageRepository/Document?documentID=2957" 
+     class="graphicButtonLink" alt="Twitter" 
+     onmouseover="this.src='/ImageRepository/Document?documentID=2955'" 
+	onmouseout="this.src='/ImageRepository/Document?documentID=2957'"
+     onfocus="this.src='/ImageRepository/Document?documentID=2955'" 
+	onblur="this.src='/ImageRepository/Document?documentID=2957'"> </a></div><!--
+--></div></div><!--			--></div>
+	</div>
+	<div class="widgetFooter">
+			</div>
+</div>
+
+</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!----><div class="outer col col13 last" style="" data-widgetcontainerid="72843278-c385-4e2c-9ea2-7d17f0d32ccc">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col13 first last id19fe9315-f193-41bb-aae0-44ca9d3afc92" style="" data-widgetcontainerid="19fe9315-f193-41bb-aae0-44ca9d3afc92">	
+
+<div class="widget widgetSpacer" id="81415e21-335f-4cba-b458-98a28882eff4"></div>	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!--		--></div> <!-- outer row -->
+
+
+	</div>
+</aside></div>
+</div><div data-cpRole="structuralContainer" id="structuralContainer7">
+<div class="siteWrap"><nav data-cpRole="nav" id="mainNav" class="siteNav mainNav mainNavWrapper" role="navigation">
+<ol id="mainNavMenu" data-parent="1" class="rootNavMenu" role="menu"><!--
+--><li id="MainItem27" class="topMenuItem" aria-haspopup="true" role="menuitem" data-pageid="27" data-displaymegamenu="True"><!--
+			--><!--
+			--><a id="mainNavGovernment" class="navMainItem mainNavItem mainNavItem1" href="/27/Government" target="_self">Government</a><!--
+			--><!--
+			--></li><!----><li id="MainItem101" class="topMenuItem" aria-haspopup="true" role="menuitem" data-pageid="101" data-displaymegamenu="True"><!--
+			--><!--
+			--><a id="mainNavServices" class="navMainItem mainNavItem mainNavItem2" href="/101/Services" target="_self">Services</a><!--
+			--><!--
+			--></li><!----><li id="MainItem31" class="topMenuItem" aria-haspopup="true" role="menuitem" data-pageid="31" data-displaymegamenu="True"><!--
+			--><!--
+			--><a id="mainNavResidents" class="navMainItem mainNavItem mainNavItem3" href="/31/Residents" target="_self">Residents</a><!--
+			--><!--
+			--></li><!----><li id="MainItem35" class="topMenuItem" aria-haspopup="true" role="menuitem" data-pageid="35" data-displaymegamenu="True"><!--
+			--><!--
+			--><a id="mainNavVisitors" class="navMainItem mainNavItem mainNavItem4" href="/35/Visitors" target="_self">Visitors</a><!--
+			--><!--
+			--></li><!----><li id="MainItem9" class="topMenuItem" aria-haspopup="true" role="menuitem" data-pageid="9" data-displaymegamenu="True"><!--
+			--><!--
+			--><a id="mainNavHelpCenter" class="navMainItem mainNavItem mainNavItem5" href="/9/Help-Center" target="_self">Help Center</a><!--
+			--><!--
+			--></li><!----><li id="MainItem735" class="topMenuItem" aria-haspopup="true" role="menuitem" data-pageid="735" data-displaymegamenu="False"><!--
+			--><!--
+			--><a id="mainNavOpenBusinessesduringCOVID19" class="navMainItem mainNavItem mainNavItem6" href="/734/Inventory-and-status-of-local-food-store" target="_self">Open Businesses during COVID-19</a><!--
+			--><!--
+			--></li><!---->
+</ol>
+
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			var menuID = 'mainNavMenu';
+			var menuType = MAIN_MENU;
+
+			//setup menu manager properties for main menu
+			if (!menuManager.mobileMainNav && true)
+				menuManager.adjustMainItemsWidth('#' + menuID);
+			menuManager.isMainMenuEditable = false;
+			menuManager.mainMenuMaxSubMenuLevels = 4;
+			menuManager.setMOMMode(2, menuType);
+
+			//Init main menu
+			var setupDraggable = menuManager.isMainMenuEditable;
+			var urlToGetHiddenMenus = '/Pages/MenuMain/HiddenMainSubMenus?pageID=1&moduleID=&themeID=1&menuContainerID=mainNav';
+
+			menuManager.setupMenu(menuID, 'mainNav', menuType, setupDraggable, urlToGetHiddenMenus);
+			menuManager.mainMenuInit = true;
+			menuManager.mainMenuTextResizer = false;
+			if (0.50 > 0)
+				menuManager.mainMenuTextResizerRatio = 0.50;
+			if (window.isResponsiveEnabled)
+				menuManager.mainMenuReady.resolve();
+
+		});
+	</script>
+
+
+<aside data-cpRole="megaMenu" id="megaMenu" class="megaMenu" style="display: none;"><input type="hidden" id="megaMenuPopupDirection" value="0"><input type="hidden" id="megaMenuWidthReference" value="0"><aside data-cpRole="contentContainer" id="mainNavMegaMenu27" class="contentTop mainNavMegaMenu megaMenuContainer pageID_27 hidden" data-orientation="horizontal">	<div id="cc3f12a3b6-2f37-46db-9e12-4eeaa58898a3" data-containerid="3f12a3b6-2f37-46db-9e12-4eeaa58898a3" class="pageContent cpGrid cpGrid24">
+				                
+
+
+
+	</div>
+</aside><aside data-cpRole="contentContainer" id="mainNavMegaMenu101" class="contentTop mainNavMegaMenu megaMenuContainer pageID_101 hidden" data-orientation="horizontal">	<div id="cc6756f5a1-65c6-488e-b1eb-6438fdc94dc7" data-containerid="6756f5a1-65c6-488e-b1eb-6438fdc94dc7" class="pageContent cpGrid cpGrid24">
+				                
+
+
+
+	</div>
+</aside><aside data-cpRole="contentContainer" id="mainNavMegaMenu31" class="contentTop mainNavMegaMenu megaMenuContainer pageID_31 hidden" data-orientation="horizontal">	<div id="cc47fabd28-9b27-45c3-a250-6f017245bdcb" data-containerid="47fabd28-9b27-45c3-a250-6f017245bdcb" class="pageContent cpGrid cpGrid24">
+				                
+
+
+
+	</div>
+</aside><aside data-cpRole="contentContainer" id="mainNavMegaMenu35" class="contentTop mainNavMegaMenu megaMenuContainer pageID_35 hidden" data-orientation="horizontal">	<div id="cc48986f6f-5df6-42f1-924f-a3cd351f6936" data-containerid="48986f6f-5df6-42f1-924f-a3cd351f6936" class="pageContent cpGrid cpGrid24">
+				                
+
+
+
+	</div>
+</aside><aside data-cpRole="contentContainer" id="mainNavMegaMenu9" class="contentTop mainNavMegaMenu megaMenuContainer pageID_9 hidden" data-orientation="horizontal">	<div id="cc064a9a5d-db37-49ff-a4fe-eb5e89295ea0" data-containerid="064a9a5d-db37-49ff-a4fe-eb5e89295ea0" class="pageContent cpGrid cpGrid24">
+				                
+
+
+
+	</div>
+</aside></aside></nav></div>
+</div></header>
+</div><div data-cpRole="structuralContainer" id="structuralContainer11" class="mainBodyFloat">
+<div class="siteWrap"><div data-cpRole="structuralContainer" id="structuralContainer16" class="outerMainWrap">
+<div data-cpRole="structuralContainer" id="structuralContainer1" class="mainWrap" role="main">
+<div data-cpRole="structuralContainer" id="structuralContainer17" class="outerContentWrap">
+<div data-cpRole="structuralContainer" id="structuralContainer13" class="contentWrap">
+<div data-cpRole="breadCrumbs" class="breadCrumbContainer" id="breadCrumbs">		<ol class="semanticList breadCrumbs">
+			<li><a class="breadCrumb" href="/">Home</a></li><li><a class="breadCrumb" href="/27/Government">Government</a></li><li><a class="breadCrumb" href="/129/Departments">Departments</a></li><li><a class="breadCrumb" href="/148/Health-Services">Health Services</a></li><li id="currentBCPage" data-pageid="732"> COVID-19 (Novel Coronavirus)</li>
+		</ol>
+
+	   
+    
+</div><div data-cpRole="mainContentContainer" id="moduleContent">
+	
+	<div id="page" class="moduleContentNew">
+		
+
+	<input id="hdnPageID" name="hdnPageID" type="hidden" value="732" />
+	<input id="hdnParentID" name="hdnParentID" type="hidden" value="148" />
+	<input id="hdnVersionID" name="hdnVersionID" type="hidden" value="10151" />
+	<input id="pageMenuTitle" name="pageMenuTitle" type="hidden" value=" COVID-19 (Novel Coronavirus)" />
+	<input id="pageShowFeatureColumn" name="pageShowFeatureColumn" type="hidden" value="False" />
+	<input id="hdnIsLayoutPage" name="hdnIsLayoutPage" type="hidden" value="False" />
+	<input id="hdnPageStatus" name="hdnPageStatus" type="hidden" value="Active" />
+
+				<h1 id="versionHeadLine" class="headline">
+ COVID-19 (Novel Coronavirus)		</h1>
+			<div id="cc5f8c90dc-b4cb-431b-90ee-10648f8df655" data-containerid="5f8c90dc-b4cb-431b-90ee-10648f8df655" class="pageContent cpGrid cpGrid24"  data-contentcontainerbreakpoint="3" data-smoothscrolling="True">
+			
+
+		<div class="row outer wide"><!--
+--><div class="outer col col24 first last" style="" data-widgetcontainerid="d5a4c02e-f464-4d06-b179-160c490e55e3">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col24 first last id58aaa650-eda7-4a4b-8d0d-78849d44fa3f" style="" data-widgetcontainerid="58aaa650-eda7-4a4b-8d0d-78849d44fa3f">	
+ 
+	<div data-widget-id='bf83cb76-28b4-4387-91ed-04c6e01e6e13' data-moduleName="customHtml" id='widgetCustomHtmlbf83cb76-28b4-4387-91ed-04c6e01e6e13' class="widget widgetCustomHtml skin43 narrow" >
+	<div class="widgetBody pageStyles" id="widgetBodybf83cb76-28b4-4387-91ed-04c6e01e6e13">
+		<div id="customHtmlbf83cb76-28b4-4387-91ed-04c6e01e6e13"><div>Embed<style>.embed-container {position: relative; height: 0; padding-bottom:80%; max-width: 100%;} .embed-container iframe, .embed-container object, .embed-container iframe{position: absolute; top: 0; left: 0; width: 100%; height: 100%;} small{position: absolute; z-index: 40; bottom: 0; margin-bottom: -15px;}</style><div class="embed-container"><iframe name="survey123webform" width="500" height="400" frameborder="0" marginheight="0" marginwidth="0" title="Santa Cruz County AZ COVID Vaccination Registration 1.1" src="//survey123.arcgis.com/share/b0c6ce208fc94cf4a30b173810caab53" allow="geolocation https://survey123.arcgis.com; camera https://survey123.arcgis.com"></iframe></div><script>var survey123webform = document.getElementsByName('survey123webform')[0];window.addEventListener("message",e=>{if(e.data){var t=JSON.parse(e.data);"survey123:onFormLoaded"===t.event&&t.contentHeight&&(survey123webform.parentNode.style.height=t.contentHeight+"px")&&(survey123webform.parentNode.style["padding-bottom"]="unset")}});</script></div></div>
+	</div>
+	</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!--		--></div> <!-- outer row -->
+		<div class="row outer wide"><!--
+--><div class="outer col col24 first last" style="" data-widgetcontainerid="bee5cbf0-f675-4878-8283-02408e0fc8ba">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col24 first last idb698e9e6-8e72-4222-ba67-c1205386d1c4" style="" data-widgetcontainerid="b698e9e6-8e72-4222-ba67-c1205386d1c4">	
+<div class="widget editor pageStyles narrow" id="divEditor8cfd5ecd-a229-446a-91d9-5ec876a63cf9" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}'>
+        <div class="fr-view">
+
+
+        <p style='margin: 0in 0in 0pt;text-align: center;line-height: 107%;font-family: "Calibri",sans-serif;font-size:15px;'><strong><span style="font-size:21px;line-height:107%;">Santa Cruz County Health Department</span></strong></p><p style='margin: 0in 0in 0pt;text-align: center;line-height: 107%;font-family: "Calibri",sans-serif;font-size:15px;'><strong><span style="font-size:21px;line-height:107%;">Covid-19 Testing</span></strong></p><p style='margin-right:0in;margin-left:0in;font-size:15px;font-family:"Calibri",sans-serif;margin-top:0in;margin-bottom:.0001pt;line-height:107%;'>&nbsp;</p><p style='margin-right:0in;margin-left:0in;font-size:15px;font-family:"Calibri",sans-serif;margin-top:0in;margin-bottom:.0001pt;line-height:107%;'>Location: 275 Rio Rico Dr., Rio Rico, AZ &nbsp;85648</p><p style='margin-right:0in;margin-left:0in;font-size:15px;font-family:"Calibri",sans-serif;margin-top:0in;margin-bottom:.0001pt;line-height:107%;'>Times: Monday thru Friday 8:30am to 12pm and 1:00pm to 5:30pm</p><p style='margin-right:0in;margin-left:0in;font-size:15px;font-family:"Calibri",sans-serif;margin-top:0in;margin-bottom:.0001pt;line-height:107%;'>Appointment phone: 520-604-9321</p><p style='margin-right:0in;margin-left:0in;font-size:15px;font-family:"Calibri",sans-serif;margin-top:0in;margin-bottom:.0001pt;line-height:107%;'>&nbsp;</p><p><strong>By Appointment Only</strong>. &nbsp;To ensure appropriate precautions are maintained, and to minimize wait times, walk-ins are not accepted during either of the testing hours. &nbsp;Please call to make an appointment.</p><p>Forms are available <a href="https://www.santacruzcountyaz.gov/DocumentCenter/View/13164" target="_blank">here</a>. &nbsp;We recommend that you download and complete all of the forms, and bring them to your appointment. &nbsp;If you are not able to retrieve the forms from the website, please arrive 15 minutes before your appointment to allow time to complete your paperwork. &nbsp;<strong>Please bring a government form of identification.</strong> &nbsp;</p><p><strong>If you are late for your appointment, you may need to reschedule</strong>. &nbsp;</p><p>****<strong><em>To ensure availability of testing for those in the community who need it most, the following criteria will be applied to obtain an appointment for testing:</em></strong></p><ol><li><em><strong>Once positive, retesting is not recommended for the following 3 months. &nbsp;If you had a positive result in the last 3 months, an appointment for testing will not be scheduled for you at this test site.</strong></em></li><li><em><strong>If you have tested negative within the last 2 weeks, have not had &quot;close contact&quot; with a confirmed positive covid-19 case within the last 10 days, and/or are not symptomatic, you will need to wait for 2 weeks from the date of your last test before we will re-test you.</strong></em></li><li><strong><em>Appointments may not be made more than 5 days in advance.</em></strong></li></ol><p><strong>Per CDC guidance:</strong></p><p>Considerations for who should get tested</p><ol><li>People who have symptoms of COVID-19</li><li>People who have had close contact (within 6 feet of an infected person for at least 15 minutes) with someone with confirmed COVID-19</li><li>People who have been asked or referred to get testing by their healthcare provider, or health department.</li></ol><p>Not everyone needs to be tested. If you do get tested, you should self-quarantine/isolate at home pending test results and follow the advice of your health care provider or a public health professional.</p><p style='margin-right:0in;margin-left:0in;font-size:15px;font-family:"Calibri",sans-serif;margin-top:0in;margin-bottom:.0001pt;line-height:107%;'><br></p><p style='margin-right:0in;margin-left:0in;font-size:15px;font-family:"Calibri",sans-serif;margin-top:0in;margin-bottom:.0001pt;line-height:107%;'><br></p><p style='margin-right:0in;margin-left:0in;font-size:15px;font-family:"Calibri",sans-serif;margin-top:0in;margin-bottom:8.0pt;line-height:107%;'><strong>OTHER TESTING OPTIONS:</strong></p><p style='margin-right:0in;margin-left:0in;font-size:15px;font-family:"Calibri",sans-serif;margin-top:0in;margin-bottom:8.0pt;line-height:107%;'>Mariposa Community Health Center - Locations in Nogales, Rio Rico, and Patagonia. Phone: 520-281-1550</p><p style='margin-right:0in;margin-left:0in;font-size:15px;font-family:"Calibri",sans-serif;margin-top:0in;margin-bottom:8.0pt;line-height:107%;'>NextCare Urgent Care - 298 W. Mariposa Rd. #2, Nogales, AZ. Phone: 520-394-7388</p><p style='margin-right:0in;margin-left:0in;font-size:15px;font-family:"Calibri",sans-serif;margin-top:0in;margin-bottom:8.0pt;line-height:107%;'>Holy Cross Hospital - 1171 W. Target Range Rd., Nogales, AZ. Phone: 520-285-3000</p><p style='margin-right:0in;margin-left:0in;font-size:15px;font-family:"Calibri",sans-serif;margin-top:0in;margin-bottom:8.0pt;line-height:107%;'><br></p><h1 class="headline" style="margin: 0in 0in 8pt; font-size: 15px; font-family: Calibri, sans-serif; line-height: 107%; text-align: center;"><a href="https://www.youtube.com/watch?v=vi2ID6YnRU0&feature=youtu.be" rel="noopener" target="_blank">Board of Supervisors COVID-19 study session January 5, 2021</a></h1>
+    </div>
+
+<script type="text/javascript">
+	$(document).ready(function (e) {		
+	    renderSlideshowIfApplicable($('#divEditor' + '8cfd5ecd-a229-446a-91d9-5ec876a63cf9'));
+	});
+</script>
+</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!--		--></div> <!-- outer row -->
+		<div class="row outer wide"><!--
+--><div class="outer col col24 first last" style="" data-widgetcontainerid="6fc51a25-58a5-4c79-a592-1c29772172c6">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col24 first last id62a58ebd-fc0c-4005-b59e-df29e813b1b2" style="" data-widgetcontainerid="62a58ebd-fc0c-4005-b59e-df29e813b1b2">	
+<div class="widget editor pageStyles narrow" id="divEditor8caecfee-4808-4ead-bb91-a6099caed26b" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}'>
+        <div class="fr-view">
+
+
+        <h1 class="headline" style="text-align: justify;"><strong><span style="text-decoration: underline;">COVID-19 Vaccine&nbsp;</span></strong></h1><p>In coordination with the <a aria-label="Arizona Department of Health Services COVID-19 Vaccination Plan Opens in new window" href="https://www.azdhs.gov/documents/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/novel-coronavirus/draft-covid19-vaccine-plan.pdf" rel="noopener" target="_blank">Arizona Department of Health Services COVID-19 Vaccination Plan</a>, our planning efforts include involvement from hospital and healthcare systems, emergency response agencies, community-based organizations, and others. The role of different partners in vaccine distribution will depend on vaccine supply and the stage of the vaccine distribution plan. As more information becomes available about COVID-19 vaccine, this page will be updated.</p><p>CDC guidance in the <a aria-label="COVID-19 Vaccine Interim Playbook Opens in new window" href="https://www.cdc.gov/vaccines/imz-managers/downloads/COVID-19-Vaccination-Program-Interim_Playbook.pdf" rel="noopener" target="_blank">COVID-19 Vaccine Interim Playbook</a> describes a phased approach to distribution. Because there is likely to be limited supply when vaccine first becomes available, CDC will direct what groups are prioritized based on their risk levels.&nbsp;</p><h1 class="headline">Santa Cruz County (SCC) and Mariposa Community Health Center announce the following developments and plans for the continuation of the COVID-19 vaccination program. &nbsp;SCC is currently in Phase 1B of vaccine distribution and will begin vaccinating individuals in the following subgroups;</h1><ul style="list-style-type: square;"><li><h2 class="subhead1">Educators and childcare workers</h2></li><li><h2 class="subhead1">Essential workers (defined below)</h2><ul><li><h2 class="subhead1">Food and agriculture related occupations (packaging and distribution workers, grocery and restaurant workers)</h2></li><li><h2 class="subhead1">Power and utility workers</h2></li><li><h2 class="subhead1">State or local government workers that provide critical services for the continuity of government</h2></li><li><h2 class="subhead1">Transportation &amp; material moving occupations (public transportation providers, airlines, gas stations, auto shop workers and other transport services)</h2></li><li><h2 class="subhead1">Other essential workers (e.g., business and financial services, supply chain for critical goods, funeral services, critical trades, etc.)</h2></li></ul></li></ul><p>&nbsp;All residents in Phase 1B wishing to receive the vaccine are asked to pre-register on-line <a href="https://survey123.arcgis.com/share/b0c6ce208fc94cf4a30b173810caab53" rel="noopener" target="_blank">here</a>. &nbsp; Residents who have already pre-registered do not need to do anything. &nbsp;Once residents have pre-registered, they will receive a phone call from the SCC Call Center when vaccine appointments are available for the subgroup that individual falls into. &nbsp;If you do not have access to internet, you can pre-register by calling 520-375-7626. <strong><span style="text-decoration: underline;">&nbsp;Currently, appointments cannot be made through email or by phone.</span></strong></p><h1 class="headline" style="text-align: center;"><a aria-label="COVID-19 Vaccine Pre-Registration for Phase 1B Opens in new window" href="https://arcg.is/40rWv" rel="noopener" target="_blank">COVID-19 Vaccine Pre-Registration for Phase 1B</a></h1><h3 class="subhead2" style="text-align: center;"><a href="/DocumentCenter/View/13839" rel="noopener" target="_blank">COVID-19 Vaccine Consent Form</a></h3><h3 class="subhead2" style="text-align: center;"><a href="/DocumentCenter/View/13840" rel="noopener" target="_blank">Formulario en espa&ntilde;ol de para la vacuna contra el Covid-19</a></h3><h2 class="subhead1" style="text-align: justify;">More information about vaccine eligibility and the vaccine distribution process for the remaining populations in phase 1B will be shared as soon as it becomes available.</h2><h2 class="subhead1" style="text-align: justify;">&nbsp;Vaccine doses available are currently limited and state allocations are expected to be updated weekly, with a federal reserve available to ensure a second dose of the same vaccine is available 28 days after the initial dose.</h2><p><br></p><h2 class="subhead1" style="text-align: center;"><a href="https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-find-vaccine" rel="noopener" target="_blank">For additional information visit the Arizona Department of Health Services</a></h2><p><img src="/ImageRepository/Document?documentId=13814" class="fr-fil fr-dib" alt="Capture"></p><p><img src="/ImageRepository/Document?documentId=13812" class="fr-fil fr-dib" alt="covid19-vp-infographic-eng (1)"></p><h1 class="headline" style="text-align: center;"><span style="text-decoration: underline;">Phase 1B Essential Employer COVID-19 Vaccine Request Form</span></h1><p>This form is intended for <strong><span style="text-decoration: underline;">employers of Phase 1B essential workers</span></strong>* to attest that they meet the prioritization criteria and request a COVID-19 vaccine allocation for their workforce. In order to be considered for a vaccine allocation during Phase 1B when vaccine is available, employers are encouraged to share their vaccination plans including how many essential employees require vaccination.&nbsp;</p><p>Phase 1B will include essential workers defined in VAPAC recommended guidance (based on CISA and EO 2020-12 definitions), and groups will be sub-prioritized while vaccine supplies are limited to include risk of exposure and mission critical positions.&nbsp;</p><p>Please note that the sub-prioritization process will be based on vaccine availability, local allocation and risk assessment of each group. It is recommended that employers consider their continuity of operations plans while completing this form.</p><h1 class="headline" style="text-align: center;"><a href="https://docs.google.com/forms/d/e/1FAIpQLSemDRU6FqOAp96LVUAfH7WGUJRiyEZcCpfGtROqI4JjTPGaXQ/viewform" rel="noopener" target="_blank">Employer Vaccine Request Form</a></h1><p><br></p><p style="text-align: center;">For more information regarding the COVID-19 Vaccine visit the<a href="https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-vaccine" rel="noopener" target="_blank">&nbsp;Arizona Department of Health Services</a>&nbsp;</p><p><br></p><h3 class="subhead2" style="text-align: center;"><strong><span style="text-decoration: underline;">Frequently Asked Questions about the vaccine</span></strong></h3><p>&nbsp;<strong>Who will be eligible to get the vaccine?</strong></p><p>Eventually, everyone who wants a vaccine will be able to get one. However, when the vaccine is first available there will be limited supply.</p><p><strong>Who will get the vaccine first?</strong></p><p>On Dec. 1st, the CDC  <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/recommendations-process.html" target="_blank">Advisory Council on Immunization Practices</a> (ACIP) voted to approve the recommendation of healthcare workers and long-term care facility residents as priority groups to receive initial doses of vaccine once it is approved by the FDA.</p><p>Per ACIP, health care workers are paid and unpaid persons serving in healthcare settings who have the potential for direct or indirect exposure to patients or infectious materials (includes EMS).</p><p><strong>Why have these groups been chosen first to receive vaccine?</strong></p><p>Health-care personnel are a top priority because of their exposure to the virus and their critical role of keeping emergency services, hospitals, health clinics and other critical health services functioning. Residents and staff of long-term-care facilities were prioritized because they account for nearly 40 percent of deaths nationwide from COVID-19.</p><p>What other groups will be prioritized to receive vaccine in early stages.</p><p><strong>Why can&rsquo;t all of the vaccine be shipped at the same time?</strong></p><p>There will be a limited supply of COVID-19 vaccines in December 2020, but supply will continually increase in the weeks and months that follow. The timeline for when vaccine is available is dependent on the results of the clinical trials that are currently underway among tens of thousands of voluntary participants. SCCHD is planning for a variety of possible timelines for a phased vaccination process as vaccine candidates apply for Emergency Use Authorization (EUA) and begin the Food and Drug Administration (FDA) review process to ensure they are safe and effective before distributing them. Moderna&rsquo;s EUA review will take place on Dec. 17th.</p><p><strong>&nbsp;</strong></p><p><strong>How can we trust the vaccine will be safe when its production and distribution are being expedited?</strong></p><p>Like all vaccines, COVID-19 vaccines must go through a rigorous and multi-step testing and <a href="https://www.cdc.gov/vaccines/basics/test-approve.html" target="_blank">approval process</a> before they can be used. Throughout vaccine development and distribution, there are numerous safety measures. These include:</p><ol><li>The Federal Food and Drug Administration (FDA) authorizes and monitors all clinical trials.</li><li>To get an Emergency Use Authorization, developers of a vaccine must provide a large amount of data on its safety and effectiveness to meet the <a href="https://www.fda.gov/media/142749/download" target="_blank">rigorous standards</a> set by the FDA</li><li>Independent advisory committees provide oversight and monitor for safety during vaccine development and testing.</li><li>Clinical trials for a vaccine continue after EUA is granted until enough data is available to grant full approval<br><br>After a vaccine is authorized for use, multiple <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/safety.html" target="_blank">safety monitoring systems&nbsp;</a>are in place to watch for possible adverse events. If an unexpected serious adverse event is detected, experts work as quickly as possible to determine whether it is a true safety concern.</li></ol><p><strong>What side effects could there be from the vaccine?</strong></p><p>According to clinical trial data reviewed by the FDA, the most commonly reported side effects, which typically lasted several days, were pain at the injection site, tiredness, headache, muscle pain, chills, joint pain, and fever. Of note, more people experienced these side effects after the second dose than after the first dose, so it is important for vaccination providers and recipients to expect that there may be some side effects after either dose, but even more so after the second dose.</p><p><strong>Will I need more than one dose of vaccine?</strong></p><p>Yes. The two leading vaccine candidates (Pfizer and Moderna) will require two doses given 3 to 4 weeks apart to provide maximum protection. Your vaccine provider will let you know if you need an additional dose and help provide a way to remind you to return in the right amount of time so you can receive your second dose.</p><p><strong>If I get a COVID-19 vaccine, do I still have to take other precautions?</strong></p><p>Yes, even if you get vaccinated, we recommend you continue with the other prevention measures you&apos;ve been doing, such as washing your hands, wearing a mask, staying six feet apart, and limiting gatherings.</p><p><strong>How much will it cost to be vaccinated?</strong></p><p>There will be no cost to get the COVID-19 vaccine, regardless of insurance status. In early December,<strong>&nbsp;</strong>Gov. Ducey issued an Executive Order that ensures Arizonans can receive the COVID-19 vaccine free of charge for as long as the state&apos;s public health emergency declaration is in effect.</p><p><strong>Will a vaccine end the pandemic?</strong></p><p>No, a vaccine will not end the pandemic by itself. A safe and effective vaccine against COVID-19 will be a major breakthrough in preventing COVID-19 infections but needs to be used in combination with other prevention measures until enough people have immunity (either from a vaccine or a past infection). Even after a vaccine is available, it will be necessary to continue with the core COVID-19 <a href="https://www.maricopa.gov/5489/Protect-Yourself-and-Others">safety precautions</a> including limiting activities outside the home, physical distancing, and mask wearing for the foreseeable future as we learn more about how long the protection lasts and as more people become protected through vaccination over time.</p>
+    </div>
+
+<script type="text/javascript">
+	$(document).ready(function (e) {		
+	    renderSlideshowIfApplicable($('#divEditor' + '8caecfee-4808-4ead-bb91-a6099caed26b'));
+	});
+</script>
+</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!--		--></div> <!-- outer row -->
+		<div class="row outer wide"><!--
+--><div class="outer col col24 first last" style="" data-widgetcontainerid="44d5fc3f-f791-437a-8205-b2408d38f106">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col24 first last id6aad7378-e103-4b30-baed-c7e105aecc26" style="" data-widgetcontainerid="6aad7378-e103-4b30-baed-c7e105aecc26">	
+<div class="widget editor pageStyles narrow" id="divEditor917613cf-37ae-4b2b-a73a-5ae281569c87" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}'>
+        <div class="fr-view">
+
+
+        <h1 class="headline" style="text-align: center;"><strong><span style="text-decoration: underline;">COVID-19 CASE COUNT INFORMATION UPDATE&nbsp;</span></strong></h1><h3 class="subhead2 ">As of 2/11/2021 Santa Cruz County has had a total of 7,518 confirmed cases of COVID-19.</h3><h3 class="subhead2 ">Community transmission is present in Santa Cruz County. &nbsp;Please take adequate precautions if you leave your home and adhere to social distancing guidelines.</h3><h2 class="subhead1 ">Arizona level of community COVID-19 spread &ndash;<strong>Widespread</strong></h2><h2 class="subhead1 ">Arizona Community Risk -<strong>Increasing</strong> <strong>with some areas of heightened risk.</strong></h2><table style="width: 84%; margin-right: calc(16%);"><tbody><tr><td colspan="6" style="width: 99.7%; text-align: center;"><h1 class="headline "><strong>Current Santa Cruz County COVID-19 Case Information</strong></h1><strong><br></strong></td></tr><tr><td style="width: 32.91%; text-align: center; background-color: rgb(235, 107, 86);"><strong>Total Cases</strong></td><td style="width: 10.6691%; text-align: center; background-color: rgb(255, 255, 255);">7,518</td><td style="width: 15.9169%; text-align: center; background-color: rgb(84, 172, 210);"><strong>Cases Recovered</strong></td><td colspan="3" style="width: 41.4068%; text-align: center; background-color: rgb(255, 255, 255);">4,978</td></tr><tr><td colspan="6" style="width: 99.7%; text-align: center; background-color: rgb(209, 213, 216);"><strong>Gender</strong></td></tr><tr><td style="width: 32.91%; text-align: center; background-color: rgb(209, 213, 216);"><strong>Female</strong></td><td style="width: 10.6691%; text-align: center; background-color: rgb(255, 255, 255);">4,049</td><td style="width: 15.9169%; text-align: center; background-color: rgb(209, 213, 216);"><strong>Male</strong></td><td style="width: 22.7811%; text-align: center; background-color: rgb(255, 255, 255);">3,464</td><td style="width: 11.3924%; text-align: center; background-color: rgb(204, 204, 204);"><strong>Unknown</strong></td><td style="width: 5.425%; text-align: center; background-color: rgb(255, 255, 255);">5</td></tr><tr><td colspan="6" style="width: 99.7%; text-align: center; background-color: rgb(97, 189, 109);"><strong>Case Breakdown by Age&nbsp;</strong></td></tr><tr><td style="width: 32.91%; text-align: center; background-color: rgb(97, 189, 109);"><strong>0-19</strong></td><td colspan="5" style="width: 66.9%; text-align: center; background-color: rgb(255, 255, 255);"><em>1242 (16%)</em></td></tr><tr><td style="width: 32.91%; text-align: center; background-color: rgb(97, 189, 109);"><strong>20-44</strong></td><td colspan="5" style="width: 66.9%; text-align: center; background-color: rgb(255, 255, 255);"><em><strong>2882&nbsp;</strong>(39%)</em></td></tr><tr><td style="width: 32.91%; text-align: center; background-color: rgb(97, 189, 109);"><strong>45-64</strong></td><td colspan="5" style="width: 66.9%; text-align: center; background-color: rgb(255, 255, 255);"><em><strong>2318&nbsp;</strong>(31%)</em></td></tr><tr><td style="width: 32.91%; text-align: center; background-color: rgb(97, 189, 109);"><strong>65 and up</strong></td><td colspan="5" style="width: 66.9%; text-align: center; background-color: rgb(255, 255, 255);"><em><strong>1067&nbsp;</strong>(14%)</em></td></tr><tr><td style="width: 32.91%; text-align: center; background-color: rgb(97, 189, 109);"><strong>Age&nbsp;</strong><span style="font-size: 12.8px;"><strong>Unknown</strong></span></td><td colspan="5" style="width: 66.9%; text-align: center; background-color: rgb(255, 255, 255);"><strong>9&nbsp;</strong><em>(0.12%)</em></td></tr><tr><td style="width: 32.91%; text-align: center; background-color: rgb(247, 218, 100);"><strong>Total hospitalizations to date:</strong>&nbsp;</td><td style="width: 10.6691%; text-align: center; background-color: rgb(247, 218, 100);"><br></td><td style="width: 15.9169%; text-align: center; background-color: rgb(255, 255, 255);">521</td><td style="width: 22.7811%; text-align: center; background-color: rgb(255, 255, 255);"><br></td><td style="width: 11.3924%; text-align: center; background-color: rgb(255, 255, 255);"><br></td><td style="width: 5.425%; text-align: center; background-color: rgb(255, 255, 255);"><br></td></tr><tr><td colspan="2" style="width: 38.8788%; text-align: center; background-color: rgb(247, 218, 100);"><strong>Total Number of Deaths</strong></td><td colspan="4" style="width: 60.9404%; text-align: center; background-color: rgb(255, 255, 255);">165</td></tr><tr><td colspan="6" style="width: 99.7%; text-align: center; background-color: rgb(251, 160, 38);"><strong>Deaths by Age</strong></td></tr><tr><td style="width: 32.91%; text-align: center; background-color: rgb(251, 160, 38);"><strong>0-19</strong></td><td colspan="5" style="width: 66.9%; background-color: rgb(255, 255, 255);"><br></td></tr><tr><td style="width: 32.91%; text-align: center; background-color: rgb(251, 160, 38);"><strong>20-44</strong></td><td colspan="5" style="width: 66.9%; text-align: center; background-color: rgb(255, 255, 255);">3 (2.5%)</td></tr><tr><td style="width: 32.91%; text-align: center; background-color: rgb(251, 160, 38);"><strong>45-64</strong></td><td colspan="5" style="width: 66.9%; text-align: center; background-color: rgb(255, 255, 255);"><strong>37&nbsp;</strong><em>(22%)</em></td></tr><tr><td style="width: 32.91%; text-align: center; background-color: rgb(251, 160, 38);"><strong>65 and up</strong></td><td colspan="5" style="width: 66.9%; text-align: center; background-color: rgb(255, 255, 255);"><strong>125&nbsp;</strong><em>(74.5%)</em></td></tr><tr><td style="width: 32.91%; text-align: center; background-color: rgb(251, 160, 38);"><strong>Age Unknown</strong></td><td colspan="5" style="width: 66.9%; background-color: rgb(255, 255, 255);"><br></td></tr></tbody></table><table><tbody><tr><td style="width: 39.88%;" valign="top" width="402"><h2 class="subhead1" style="text-align: center;"><a href="https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home" rel="noopener" target="_blank">Current Cases in Arizona</a></h2></td></tr><tr><td style="width: 39.88%; text-align: center;" valign="top" width="402"><h3 class="subhead2 "><strong>Updated 2/11/2021</strong></h3></td></tr><tr><td style="width: 39.88%; text-align: right;" valign="top" width="402"><p align="center"><strong><em>The information above represents cases reported and verified by Santa Cruz County Health Services by 5:00 P.M. &nbsp;Cases received after 5:00 P.M. will be included on the next day&rsquo;s totals. Totals may vary slightly from those found on the Arizona Dept. of Health Services website.</em></strong></p></td></tr></tbody></table><p>COVID-19 spreads through the air when an infected person coughs or sneezes. Symptoms are thought to appear within 2 to 14 days after exposure and consist of fever, cough, runny nose, or difficulty breathing. Those considered at highest risk for contracting the virus are individuals with travel to an area where the virus is spreading, or individuals in close contact with a person who is diagnosed as having COVID-19. Public health officials are working with anybody who may have been exposed.</p><p>Public health officials are advising residents that flu and other respiratory diseases are circulating in the community, and are recommending everyone get a flu shot and follow basic prevention guidelines.</p><p>If you have recently traveled to an area where COVID-19 is circulating, and have developed fever with cough or shortness of breath within 14 days of your travel, or have had contact with someone who is suspected to have 2019 novel coronavirus, please stay home. Most people with COVID-19 develop mild symptoms. If you have mild symptoms, please do not seek medical care, but do stay home and practice social distancing from others in the household where possible. If you do have shortness of breath or more severe symptoms, please call your health care provider to get instructions before arriving.</p><h2 class="subhead1 "><span style="text-decoration: underline;">Help Control the Spread of COVID-19</span></h2><ul><li>Wash your hands often with soap and water for at least 20 seconds. If soap and water are not available, use an alcohol-based hand sanitizer containing at least 60% alcohol.</li><li>Avoid touching your eyes, nose, and mouth with unwashed hands.</li><li>Avoid close contact with people who are sick.</li><li>Stay home when you are sick.</li><li>Cover your cough or sneeze with a tissue, then immediately throw the tissue in the trash.</li><li>Clean and disinfect frequently touched objects and surfaces.</li></ul><p><br></p>
+    </div>
+
+<script type="text/javascript">
+	$(document).ready(function (e) {		
+	    renderSlideshowIfApplicable($('#divEditor' + '917613cf-37ae-4b2b-a73a-5ae281569c87'));
+	});
+</script>
+</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!--		--></div> <!-- outer row -->
+		<div class="row outer wide"><!--
+--><div class="outer col col24 first last" style="" data-widgetcontainerid="5baa0f1d-4cfd-4ed0-b7d0-195b53c4464b">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col24 first last iddff694cf-c4a5-4943-8abd-c7bb591cf915" style="" data-widgetcontainerid="dff694cf-c4a5-4943-8abd-c7bb591cf915">	
+<div class="widget editor pageStyles narrow" id="divEditorb29d438e-c290-4960-8305-f34d14807118" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}'>
+        <div class="fr-view">
+
+
+        <table style="width: 100%;"><tbody><tr><td colspan="3" style="width: 99.8503%; text-align: center;"><h1 class="headline ">Re-Opening Guidance&nbsp;</h1></td></tr><tr><td style="width: 33.3333%; background-color: rgb(255, 255, 255); vertical-align: middle; text-align: center;"><a aria-label="Best Practices for Re-Opening Retail Food Establishments During the COVID-19 Pandemic Opens in new window" href="/DocumentCenter/View/12711" target="_blank">Best Practices for Re-Opening Retail Food Establishments During the COVID-19 Pandemic</a>&nbsp;</td><td style="width: 33.3333%; background-color: rgb(255, 255, 255); vertical-align: middle; text-align: center;"><a aria-label="Best Practices for Re-Opening Retail Food Establishments During the COVID-19 Pandemic – Food Safety Checklist Opens in new window" href="/DocumentCenter/View/12712" target="_blank">Best Practices for Re-Opening Retail Food Establishments During the COVID-19 Pandemic &ndash; Food Safety Checklist</a>&nbsp;</td><td style="width: 33.3333%; background-color: rgb(255, 255, 255); vertical-align: middle; text-align: center;"><a aria-label="Glove Use Guidance Opens in new window" href="/DocumentCenter/View/12688" target="_blank">Glove Use Guidance</a>&nbsp;</td></tr><tr><td style="background-color: rgb(255, 255, 255); text-align: center; vertical-align: middle;"><a aria-label="Guidance for Retail Stores Opens in new window" href="/DocumentCenter/View/12682" target="_blank">Guidance for Retail Stores</a>&nbsp;</td><td style="background-color: rgb(255, 255, 255); text-align: center; vertical-align: middle;"><a aria-label="Guidance for Barbers & Cosmetologists Opens in new window" href="/DocumentCenter/View/12683" target="_blank">Guidance for Barbers &amp; Cosmetologists</a>&nbsp;</td><td style="background-color: rgb(255, 255, 255); text-align: center; vertical-align: middle;"><a aria-label="Guidance for Public and Semi-Public Pools Opens in new window" href="/DocumentCenter/View/12714" target="_blank">Guidance for Public and Semi-Public Pools</a>&nbsp;</td></tr><tr><td style="background-color: rgb(255, 255, 255); vertical-align: middle; text-align: center;"><a aria-label="Guidance for Spas, Massage Therapists, and Personal Services Opens in new window" href="/DocumentCenter/View/12715" target="_blank">Guidance for Spas, Massage Therapists, and Personal Services</a>&nbsp;</td><td style="background-color: rgb(255, 255, 255); text-align: center; vertical-align: middle;"><a aria-label="Guidance for Gyms and Fitness Providers Opens in new window" href="/DocumentCenter/View/12713" target="_blank">Guidance for Gyms and Fitness Providers</a>&nbsp;</td><td style="background-color: rgb(255, 255, 255); text-align: center; vertical-align: middle;"><a aria-label="Interim Guidance: Mass Gatherings or Large Community Events Ready for Coronavirus Disease 2019 (COVID-19)  Opens in new window" href="/DocumentCenter/View/12788" rel="noopener noreferrer" target="_blank">Interim Guidance: Mass Gatherings or Large Community Events Ready for Coronavirus Disease 2019 (COVID-19)&nbsp;</a>&nbsp;</td></tr><tr><td style="background-color: rgb(255, 255, 255); text-align: left; vertical-align: middle;"><a aria-label="Guidance for Funeral Attendees Opens in new window" href="/DocumentCenter/View/12787" target="_blank">Guidance for Funeral Attendees</a>&nbsp;</td><td style="background-color: rgb(255, 255, 255); text-align: center; vertical-align: middle;"><a aria-label="Funeral Guidance for Individuals and Families Opens in new window" href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/funeral-guidance.html" rel="noopener noreferrer" target="_blank">Funeral Guidance for Individuals and Families</a>&nbsp;</td><td style="background-color: rgb(255, 255, 255); text-align: center; vertical-align: middle;"><a aria-label="Private Event Guidance Opens in new window" href="/DocumentCenter/View/13338" rel="noopener" target="_blank">Private Event Guidance</a> <br></td></tr></tbody></table><div title="Page 1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<h1 class="headline" style="text-align: center;"><a aria-label="South32 and Local First Arizona Small Business Relief Fund Opens in new window" href="/DocumentCenter/View/12823" target="_blank">South32 and Local First Arizona Small Business Relief Fund</a></h1><p>South32 and Local First Arizona have partnered to serve as many small businesses and entrepreneurs in need as possible. Micro-entrepreneurs in Santa Cruz County that are struggling to surmount the financial impact of the novel coronavirus may apply for funds to cover business expenses, employee salaries, and other operation-related costs.</p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a aria-label="South32 and Local First Arizona Small Business Relief Fund Opens in new window" href="/DocumentCenter/View/12823" target="_blank">South32 and Local First Arizona Small Business Relief Fund</a></div>
+    </div>
+
+<script type="text/javascript">
+	$(document).ready(function (e) {		
+	    renderSlideshowIfApplicable($('#divEditor' + 'b29d438e-c290-4960-8305-f34d14807118'));
+	});
+</script>
+</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!--		--></div> <!-- outer row -->
+		<div class="row outer wide"><!--
+--><div class="outer col col24 first last" style="" data-widgetcontainerid="29d3df35-716c-40a3-943e-95ce11a82c0d">				
+	<div class="row nest first wide">
+	
+	<div class="inner col col24 first last id0c1bc72c-1217-42c6-90d4-7068a677abb9" style="" data-widgetcontainerid="0c1bc72c-1217-42c6-90d4-7068a677abb9">	
+<div class="widget editor pageStyles narrow" id="divEditore835b931-7b64-41af-a4d6-85fbc23f3b46" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}'>
+        <div class="fr-view">
+
+
+        <h1 class="headline "><strong><span style="text-decoration: underline;">COVID-19 Hotline</span></strong></h1><p>A COVID-19 hotline has been set up to answer any questions from the public and healthcare providers about testing, symptoms, and any other questions you have about the virus.</p><h1 class="headline " style="text-align: center;">Call <strong>1-844-542-8201</strong> to reach a health care professional.</h1>
+    </div>
+
+<script type="text/javascript">
+	$(document).ready(function (e) {		
+	    renderSlideshowIfApplicable($('#divEditor' + 'e835b931-7b64-41af-a4d6-85fbc23f3b46'));
+	});
+</script>
+</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+	<div class="row nest last wide">
+	
+	<div class="inner col col24 first last id220a25d6-68c9-4f48-9195-68791b1b3e95" style="" data-widgetcontainerid="220a25d6-68c9-4f48-9195-68791b1b3e95">	
+<div class="widget editor pageStyles narrow" id="divEditora89df537-967c-47d8-aaca-9d52b575cc42" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}'>
+        <div class="fr-view">
+
+
+        <h2 class="subhead1 ">Stay Healthy, Return Smarter, Return Stronger &mdash; Amending the Stay Home, Stay Healthy, Stay Connected Order</h2><p>On May 12, 2020, Governor Doug A. Ducey announced that Arizona&rsquo;s Stay Home, Stay Healthy, Stay Connected Order would be ending on Friday May, 15, 2020. This will be replaced by the new Stay Healthy, Return Smarter, Return Stronger Executive Order, which takes effect on Saturday, May 16, 2020.</p><p>The new guidance for the next stage of economic recovery aligns with gating criteria that was issued by the White House and the Centers for Disease Control and Prevention and aims to mitigate the risk of COVID-19 resurgence, protect vulnerable populations, and guide the reopening of businesses with enhanced physical distancing and safety measures in place. Arizona will gradually phase in formerly restricted operations through the months of May and June with policy that promotes social distancing, as well as encouraging social connectedness.</p><p>Under the new order:</p><ul><li>Testing availability and frequency will be ramped up,</li><li>Tracking of key health metrics such as reported symptomatic cases and emergency room usage will be implemented,</li><li>Surge hospital capacity will be stood up and used as needed,</li><li>Statewide contact tracing will be expanded,</li><li>Supply chains for PPE for frontline medical workers and emergency responders will be bolstered,</li><li>Enhanced safety protocols to protect those living and working in high-risk facilities such as nursing homes will be implemented,</li><li>Additional public health guidance for businesses and individuals to ensure continued physical distancing will be provided.</li></ul><p>&ldquo;Since the start of this pandemic, Arizona has taken a calm and steady approach to protecting health and slowing the spread of COVID-19,&rdquo; said Governor Ducey. &ldquo;Today, our hospitals have capacity to provide care to those who need it; our businesses are implementing and adapting to new physical distancing measures; and data shows Arizona is headed in the right direction. It is time to move forward with the next steps of Arizona&rsquo;s economic recovery &mdash; while continuing to make health and safety our number one priority. I&rsquo;m grateful to all Arizonans for their partnership and cooperation during these trying times. By continuing to follow the data and recommendations of public health officials, we can continue to move forward safely and responsibly together.&rdquo;</p><p>Arizona is now allowing barbers and cosmetologists, retail establishments, casinos, pools, gyms and fitness providers, and spas to reopen with physical distancing and enhance sanitation. Additionally, restaurants are able to offer dine-in services to customers.</p><h3 class="subhead2 "><strong>Recommendations and Control Measures for Employees Exposed to COVID-19.</strong></h3><ul><li>Contact your <a href="https://www.azdhs.gov/preparedness/epidemiology-disease-control/index.php#resources-county" target="_blank">local health department</a> for questions in regard to:</li><li>Potential exposure of COVID-19 in the workplace.</li><li>If staff have tested positive for COVID-19, they should remain under home isolation precautions for 7 days from specimen collection OR until 72 hours after fever is gone and symptoms of acute infection resolve, whichever is longer.</li><li>If staff have tested negative for COVID-19 and have compatible symptoms (fever, cough, shortness of breath), they should stay home from others until 72 hours after all symptoms of acute infection resolve.</li><li>If staff have fever with cough or shortness of breath and have not been tested for COVID-19, they should stay home, away from others until 72 hours after fever is gone and symptoms for acute infection resolve.</li><li>If staff have other non-compatible symptoms and have not been tested for COVID-19, they should stay home until 24 hours after all symptoms are gone without the use of medicine.</li><li>At this time, a healthcare provider&rsquo;s note for employees who are sick with acute respiratory illness should not be required to validate their illness or to return to work, as healthcare provider offices and medical facilities may be extremely busy and not able to provide such documentation in a timely way.</li></ul>
+    </div>
+
+<script type="text/javascript">
+	$(document).ready(function (e) {		
+	    renderSlideshowIfApplicable($('#divEditor' + 'a89df537-967c-47d8-aaca-9d52b575cc42'));
+	});
+</script>
+</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!--		--></div> <!-- outer row -->
+		<div class="row outer wide"><!--
+--><div class="outer col col24 first last" style="" data-widgetcontainerid="9d45daff-ac2f-469c-97b5-c6346eb04670">				
+	<div class="row nest first wide">
+	
+	<div class="inner col col24 first last id79613dec-77e9-43f7-87b8-347b6d16e241" style="" data-widgetcontainerid="79613dec-77e9-43f7-87b8-347b6d16e241">	
+
+	<div id="divTabbed8431b751-a313-4cf0-961a-59535eddb9a3" class="widget widgetTabbed  wide skin43  " data-widgetid="8431b751-a313-4cf0-961a-59535eddb9a3">
+		<ol class="tabbedWidget cpTabs  " style=" ">
+			<!--
+					--><li class="active">	<a href="#tab8431b751-a313-4cf0-961a-59535eddb9a3_0" onkeypress="this.onclick();" onclick="window.setTimeout(function(){reinitCarousels();},2);sizeTabbedContent(this);"><span class="tabName editable" data-sequence="0" data-tabname="Business and Community Guidance" contenteditable="false">Business and Community Guidance</span></a>
+</li><!--
+					--><li class="">	<a href="#tab8431b751-a313-4cf0-961a-59535eddb9a3_1" onkeypress="this.onclick();" onclick="window.setTimeout(function(){reinitCarousels();},2);sizeTabbedContent(this);"><span class="tabName editable" data-sequence="1" data-tabname="Testing Questions" contenteditable="false">Testing Questions</span></a>
+</li><!--
+					--><li class="">	<a href="#tab8431b751-a313-4cf0-961a-59535eddb9a3_2" onkeypress="this.onclick();" onclick="window.setTimeout(function(){reinitCarousels();},2);sizeTabbedContent(this);"><span class="tabName editable" data-sequence="2" data-tabname="Protect Yourself" contenteditable="false">Protect Yourself</span></a>
+</li><!--
+					--><li class="">	<a href="#tab8431b751-a313-4cf0-961a-59535eddb9a3_3" onkeypress="this.onclick();" onclick="window.setTimeout(function(){reinitCarousels();},2);sizeTabbedContent(this);"><span class="tabName editable" data-sequence="3" data-tabname="Resources" contenteditable="false">Resources</span></a>
+</li><!--
+					--><li class="">	<a href="#tab8431b751-a313-4cf0-961a-59535eddb9a3_4" onkeypress="this.onclick();" onclick="window.setTimeout(function(){reinitCarousels();},2);sizeTabbedContent(this);"><span class="tabName editable" data-sequence="4" data-tabname="Press Releases" contenteditable="false">Press Releases</span></a>
+</li><!--
+					--><li class="">	<a href="#tab8431b751-a313-4cf0-961a-59535eddb9a3_5" onkeypress="this.onclick();" onclick="window.setTimeout(function(){reinitCarousels();},2);sizeTabbedContent(this);"><span class="tabName editable" data-sequence="5" data-tabname="COVID-19 FAQ" contenteditable="false">COVID-19 FAQ</span></a>
+</li><!--
+					--><li class="">	<a href="#tab8431b751-a313-4cf0-961a-59535eddb9a3_6" onkeypress="this.onclick();" onclick="window.setTimeout(function(){reinitCarousels();},2);sizeTabbedContent(this);"><span class="tabName editable" data-sequence="6" data-tabname="Printable Materials" contenteditable="false">Printable Materials</span></a>
+</li><!--
+					-->
+		</ol>
+
+		<div class="cpTabPanels">
+					<ol class="tabbedWidgetNarrow cpTabs" style='display: none;'>
+						<li class="active"><a href="#tab8431b751-a313-4cf0-961a-59535eddb9a3_0" onclick="window.setTimeout(function () { reinitCarousels(); }, 2);sizeTabbedContent(this);">Business and Community Guidance</a></li>
+					</ol>
+				<div class="tabbedWidget cpTabPanel showing" style="" id="tab8431b751-a313-4cf0-961a-59535eddb9a3_0">
+
+<div class="widget editor pageStyles narrow" id="divEditor9c48562c-6938-4566-b7dd-f3aaea3f45b4" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}'>
+        <div class="fr-view">
+
+
+        <h1 class="headline "><span style="text-decoration: underline;">Rental Assistance</span></h1><p>ADOH has partnered with SEACAP (the Southeastern Arizona Community Action Program) to provide rental assistance to people in Santa Cruz County. &nbsp;Clink on he link below to apply for Rental Assistance</p><h2 class="subhead1"><a aria-label="Rental Assistance Application Page Opens in new window" href="https://housing.az.gov/general-public/eviction-prevention-assistance" rel="noopener" target="_blank">Rental Assistance Application Page</a></h2><h1 class="headline "><br></h1><h1 class="headline ">Arizona is here for you <a aria-label="#AZTOGETHER Opens in new window" href="https://arizonatogether.org/" rel="noopener noreferrer" target="_blank">#AZTOGETHER</a></h1><p>We are committed to making sure Arizonans have access to the resources they need as we work to get our state through the COVID-19 outbreak. We&rsquo;re in this together.</p><p><em>For more information about COVID-19 in English or Spanish, dial 2-1-1.</em></p><p><em>If you need public assistance, email <a href="mailto:publicassistance@az.gov" rel="noopener" target="_blank">publicassistance@az.gov</a>.</em></p><h3 class="subhead2 "><strong><em>Emergency Services</em></strong></h3><p><em>If you have an emergency, dial 9-1-1.</em></p><p><em>If you are a victim of domestic violence, help is available immediately. <strong><a href="https://www.thehotline.org/" rel="noopener" target="_blank">Click here</a></strong> for help or talk to someone now by calling 1.800.799.7233 or texting &quot;LOVEIS&quot; to 22522.</em></p><table style="width: 100%;"><tbody><tr><td style="width: 50%; background-color: rgb(255, 255, 255);"><a href="/DocumentCenter/View/12232" target="_blank">Business Guidance</a>&nbsp;</td><td style="width: 50%; background-color: rgb(255, 255, 255);"><a href="/DocumentCenter/View/12254" target="_blank">COVID-19 Restaurant Guidance</a>&nbsp;</td></tr><tr><td style="width: 50%; background-color: rgb(255, 255, 255);"><a href="https://disasterloan.sba.gov/ela/" rel="noopener noreferrer" target="_blank">Small Business Administration</a>&nbsp;</td><td style="width: 50%; background-color: rgb(255, 255, 255);"><a aria-label="Food Service Sanitizing Guidance Opens in new window" href="/DocumentCenter/View/12230" target="_blank">Food Service Sanitizing Guidance</a>&nbsp;</td></tr><tr><td style="background-color: rgb(255, 255, 255);"><a href="/DocumentCenter/View/12360" target="_blank">How to Apply for Unemployment Insurance Benefits</a>&nbsp;</td><td style="background-color: rgb(255, 255, 255);"><a aria-label="RELIEF AND ECONOMIC SECURITY (CARES) ACT Opens in new window" href="/DocumentCenter/View/12361" target="_blank">RELIEF AND ECONOMIC SECURITY (CARES) ACT</a>&nbsp;</td></tr><tr><td><a aria-label="Best Practices for Retail Food Stores, Restaurants, and Food Pick-Up/Delivery Services During the COVID-19 Pandemic  Opens in new window" href="/DocumentCenter/View/12417" target="_blank">Best Practices for Retail Food Stores, Restaurants, and Food Pick-Up/Delivery Services During the COVID-19 Pandemic&nbsp;</a></td><td><a aria-label="Prácticas recomendadas para tiendas de alimentos minoristas, restaurantes, y servicios para llevar y entregar alimentos durante la pandemia del COVID-19 Opens in new window" href="/DocumentCenter/View/12483" target="_blank">Pr&aacute;cticas recomendadas para tiendas de alimentos minoristas, restaurantes, y servicios para llevar y entregar alimentos durante la pandemia del COVID-19</a></td></tr></tbody></table><h2 class="subhead1 ">Small Business Administration Hotline 1-800-659-2955</h2><h1 class="headline "><strong><span style="text-decoration: underline;">Community Guidance</span></strong></h1><table style="width: 100%;"><tbody><tr><td style="width: 50%; background-color: rgb(255, 255, 255);"><a aria-label="Coronavirus Guidelines for America  Opens in new window" href="/DocumentCenter/View/12353" target="_blank">Coronavirus Guidelines for America&nbsp;</a></td><td style="width: 50%; background-color: rgb(255, 255, 255);"><a aria-label="Lista de Preparacion Para Una Pandemia de Influenza Para Organizaciones Communitarias Religiosas  Opens in new window" href="/DocumentCenter/View/12259" target="_blank">Lista de Preparacion Para Una Pandemia de Influenza Para Organizaciones Communitarias Religiosas&nbsp;</a></td></tr><tr><td style="width: 50%; background-color: rgb(255, 255, 255);"><a aria-label="Faith Based Organization Guidance Opens in new window" href="/DocumentCenter/View/12256" target="_blank">Faith Based Organization Guidance</a>&nbsp;</td><td style="width: 50%; background-color: rgb(255, 255, 255);"><a href="/DocumentCenter/View/12354" target="_blank">Directrices del Presidente Sobre el Coronavirus&nbsp;</a></td></tr><tr><td style="width: 50%; background-color: rgb(255, 255, 255);"><a aria-label="Pandemic Influenza Faith Based  Community Checklist Opens in new window" href="/DocumentCenter/View/12258" target="_blank">Pandemic Influenza Faith Based &nbsp;Community Checklist</a>&nbsp;</td><td style="width: 50%; background-color: rgb(255, 255, 255);"><a href="/DocumentCenter/View/12285" rel="noopener noreferrer" target="_blank">Liberty Utilities COVID-19 Update</a><br><br></td></tr><tr><td style="background-color: rgb(255, 255, 255);"><a aria-label="Save Our Home AZ – Foreclosure Assistance Opens in new window" href="https://housing.az.gov/save-our-home" rel="noopener noreferrer" target="_blank">Save Our Home AZ &ndash; Foreclosure Assistance</a>&nbsp;</td><td style="background-color: rgb(255, 255, 255);"><a href="https://www.safehome.org/resources/keeping-house-clean-flu-coronavirus/" rel="noopener noreferrer" target="_blank">Keeping Your House Disinfected&nbsp;</a></td></tr></tbody></table><p><br></p><p><br></p>
+    </div>
+
+<script type="text/javascript">
+	$(document).ready(function (e) {		
+	    renderSlideshowIfApplicable($('#divEditor' + '9c48562c-6938-4566-b7dd-f3aaea3f45b4'));
+	});
+</script>
+</div>
+				</div>
+					<ol class="tabbedWidgetNarrow cpTabs" style='display: none;'>
+						<li class=""><a href="#tab8431b751-a313-4cf0-961a-59535eddb9a3_1" onclick="window.setTimeout(function () { reinitCarousels(); }, 2);sizeTabbedContent(this);">Testing Questions</a></li>
+					</ol>
+				<div class="tabbedWidget cpTabPanel " style="display: none;" id="tab8431b751-a313-4cf0-961a-59535eddb9a3_1">
+
+<div class="widget editor pageStyles narrow" id="divEditor835b5398-9ee8-478f-ae6a-2996a11dfd89" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}'>
+        <div class="fr-view">
+
+
+        <h1 class="headline "><strong>Questi</strong><strong>o</strong><strong>ns about Testing</strong></h1><p>The Centers for Disease Control and Prevention recently expanded the criteria for testing of individuals who, through the appropriate consideration of a physician, should be tested for COVID-19.</p><p>In Arizona, the supply of test kits to conduct these tests is limited and only the AZ State Public Health Laboratory and some commercial laboratories are capable of conducting the test. Until there are enough test supplies and sites available to support wider-spread testing, health care facilities in Santa Cruz County are using the following assessment to determine the urgency for testing in three categories related to their contact with a confirmed COVID-19 case, high risk travel, or highly severe symptoms:</p><table style="width: 100%;"><tbody><tr><td style="width: 13.8191%; text-align: center; vertical-align: middle;">People with</td><td style="width: 35.8694%; text-align: center; vertical-align: middle;">Fever<sup>1</sup> <strong>OR</strong> signs/symptoms of lower respiratory illness (e.g., cough or shortness of breath) <strong>NOT</strong>requiring hospitalization</td><td style="width: 7.5886%; text-align: center; vertical-align: middle;">who</td><td style="width: 42.4114%; text-align: center; vertical-align: middle;">have had <strong>close contact</strong><sup>3</sup> with Any person, including healthcare workers<sup>2</sup>, <strong>with a laboratory-confirmed</strong><sup>4</sup><strong>&nbsp;</strong>COVID-19 patient within 14 days of symptom onset. &nbsp;</td></tr><tr><td style="width: 13.8191%; text-align: center; vertical-align: middle;">People with</td><td style="width: 35.8694%; text-align: center; vertical-align: middle;">Fever<sup>1</sup> <strong>AND</strong> signs/symptoms of a lower respiratory illness (e.g., cough or shortness of breath)<strong>&nbsp;NOT</strong> requiring hospitalization in a person with a high-risk occupation* OR who lives in a congregate setting<sup>&dagger;</sup>&nbsp;</td><td style="width: 7.5886%; text-align: center; vertical-align: middle;">who</td><td style="width: 42.4114%; text-align: center; vertical-align: middle;">No source of exposure has been identified</td></tr><tr><td style="width: 13.8191%; text-align: center; vertical-align: middle;">People with</td><td style="width: 35.8694%; text-align: center; vertical-align: middle;">Fever<sup>1</sup> <strong>AND&nbsp;</strong>severe acute lower respiratory illness (e.g., pneumonia, ARDS) <strong>requiring hospitalization, radiographic confirmation of bilateral pulmonary infiltrates, &amp; without alternative explanatory diagnosis</strong> (negative respiratory viral panel) <sup>5,6</sup>&nbsp;</td><td style="width: 7.5886%; text-align: center; vertical-align: middle;">who</td><td style="width: 42.4114%; text-align: center; vertical-align: middle;">No source of exposure has been identified</td></tr><tr><td colspan="4" style="width: 100%;"><sup>1</sup> Fever may be subjective or confirmed.<br><sup>2</sup> For healthcare personnel, testing may be considered if there has been exposure to a person with suspected COVID-19 without laboratory confirmation<br><sup>3</sup> Close contact is defined at the <a href="https://www.cdc.gov/coronavirus/2019-ncov/php/risk-assessment.html" rel="noopener noreferrer" target="_blank">CDC website</a>:<br><sup>4</sup> Documentation of laboratory-confirmation of 2019-nCoV may not be possible for travelers or persons caring for patients in other countries.<br><sup>5</sup> Category includes single or clusters of patients with severe acute lower respiratory illness (e.g., pneumonia, ARDS) of unknown etiology in which COVID-19 is being considered<br><sup>6</sup> Also consider testing for Coccidioidomycosis and Legionella<br><sup>*</sup>Healthcare personnel, school personnel, childcare worker, jail/prison personnel, or other similar occupation <sup>&dagger;</sup>Jail/prison, long-term care facility or nursing home, university, or other similar setting</td></tr></tbody></table><p>If you have respiratory illness symptoms but do not fit into the categories above, you should do the same thing we should always do when we are sick:</p><ul type="disc"><li>Stay home from work or school</li><li>Get plenty of rest</li><li>Stay hydrated with clear liquids</li><li>Limit contact with other members of your household</li><li>Keep your home clean using approved cleaning products</li><li>Contact your doctor immediately if your symptoms get worse</li></ul>
+    </div>
+
+<script type="text/javascript">
+	$(document).ready(function (e) {		
+	    renderSlideshowIfApplicable($('#divEditor' + '835b5398-9ee8-478f-ae6a-2996a11dfd89'));
+	});
+</script>
+</div>
+				</div>
+					<ol class="tabbedWidgetNarrow cpTabs" style='display: none;'>
+						<li class=""><a href="#tab8431b751-a313-4cf0-961a-59535eddb9a3_2" onclick="window.setTimeout(function () { reinitCarousels(); }, 2);sizeTabbedContent(this);">Protect Yourself</a></li>
+					</ol>
+				<div class="tabbedWidget cpTabPanel " style="display: none;" id="tab8431b751-a313-4cf0-961a-59535eddb9a3_2">
+
+<div class="widget editor pageStyles narrow" id="divEditor97dd771c-632f-439c-9ee3-c5c2a9e4648d" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}'>
+        <div class="fr-view">
+
+
+        <h2><span style="text-decoration: underline;">Know How it Spreads</span></h2><p>There is currently no vaccine to prevent coronavirus disease 2019 (COVID-19).</p><p><strong>The best way to prevent illness is to avoid being exposed to this virus.</strong></p><p>The virus is thought to spread mainly from person-to-person.</p><p>Through respiratory droplets produced when an infected person coughs or sneezes.</p><p>These droplets can land in the mouths or noses of people who are nearby or possibly be inhaled into the lungs.</p><h2><span style="text-decoration: underline;">Take steps to protect yourself</span></h2><h3>Clean your hands often</h3><p><strong>Wash your hands often</strong> with soap and water for at least 20 seconds especially after you have been in a public place, or after blowing your nose, coughing, or sneezing.</p><p>If soap and water are not readily available, <strong>use a hand sanitizer that contains at least 60% alcohol</strong>. Cover all surfaces of your hands and rub them together until they feel dry.</p><p><strong>Avoid touching your eyes, nose, and mouth</strong> with unwashed hands.</p><h3>Avoid close contact</h3><p><strong>Avoid close contact</strong> with people who are sick</p><p>Put <strong>distance between yourself and other people</strong> if COVID-19 is spreading in your community. This is especially important for people who are at higher risk of getting very sick.</p><h2><span style="text-decoration: underline;"><strong>Take steps to protect others</strong></span></h2><h3>Stay home if you&rsquo;re sick</h3><p><strong>Stay home</strong> if you are sick, except to get medical care. Learn what to do if you are sick.</p><h3>Cover coughs and sneezes</h3><p><strong>Cover your mouth and nose</strong> with a tissue when you cough or sneeze or use the inside of your elbow.</p><p><strong>Throw used tissues</strong> in the trash.</p><p>Immediately <strong>wash your hands</strong> with soap and water for at least 20 seconds. If soap and water are not readily available, clean your hands with a hand sanitizer that contains at least 60% alcohol.</p><h3>Wear a facemask if you are sick</h3><p><strong>If you are sick</strong>: You should wear a facemask when you are around other people (e.g., sharing a room or vehicle) and before you enter a healthcare provider&rsquo;s office. If you are not able to wear a facemask (for example, because it causes trouble breathing), then you should do your best to cover your coughs and sneezes, and people who are caring for you should wear a facemask if they enter your room. Learn what to do if you are sick.</p><p><strong>If you are NOT sick</strong>: You do not need to wear a facemask unless you are caring for someone who is sick (and they are not able to wear a facemask). Facemasks may be in short supply and they should be saved for caregivers.</p><h3>Clean and disinfect</h3><p><strong>Clean AND disinfect <a aria-label="frequently touched surfaces Opens in new window" href="https://www.cdc.gov/coronavirus/2019-ncov/prepare/cleaning-disinfection.html" target="_blank" title="frequently touched surfaces">frequently touched surfaces</a> daily</strong>. This includes tables, doorknobs, light switches, countertops, handles, desks, phones, keyboards, toilets, faucets, and sinks.</p><p><strong>If surfaces are dirty, clean them</strong>: Use detergent or soap and water prior to disinfection.</p><p>Most common EPA-registered household disinfectants will work. Use disinfectants appropriate for the surface. Follow all manufacturers instructions (e.g., concentration, application method and contact time, etc.)</p><p>Cleaning options:</p><p>Diluted household bleach - mix: 5 tablespoons (1/3 cup) bleach per gallon of water OR 4 teaspoons bleach per quart of water. Follow manufacturer&rsquo;s instructions for application and proper ventilation. Ensure the product is not past its expiration date. <strong>Never mix household bleach with any other cleaner, especially ammonia, vinegar, rubbing alcohol or hydrogen peroxide</strong>.</p><p>Alcohol solutions - ensure solution has at least 70% alcohol.</p><p>Other common household disinfectants - retail cleaning products such as wipes and sprays that contain EPA-approved ingredients should be effective against COVID-19 based on data for harder-to-kill viruses.</p><h2><span style="text-decoration: underline;"><strong>Social Distancing Recommendations</strong></span></h2><p>As local social distancing recommendations change, we will provide updates and links to more information here:<br><br>March 15, 2020 - <a aria-label="AZ Governor Ducey and Superintendent Hoffman Announce Closure Of Arizona Schools  Opens in new window" href="https://azgovernor.gov/governor/news/2020/03/governor-doug-ducey-and-superintendent-kathy-hoffman-announce-closure-arizona" target="_blank" title="School Closures">AZ Governor Ducey and Superintendent Hoffman Announce Closure Of Arizona Schools&nbsp;</a></p><p>Statewide closure of Arizona schools from Monday, March 16, 2020 through Friday, March 27, 2020. Governor Ducey and Superintendent Hoffman will work with education officials and public health officials to reassess the need for the school closures and provide further guidance through March 27, 2020.</p><p>March 15, 2020 - <a aria-label="Centers for Disease Control and Prevention Issues New Mass Gatherings Guidance Opens in new window" href="https://www.cdc.gov/coronavirus/2019-ncov/community/large-events/mass-gatherings-ready-for-covid-19.html" target="_blank" title="CDC Mass Gatherings">Centers for Disease Control and Prevention Issues New Mass Gatherings Guidance</a></p><p>CDC guidance recommends the cancellation of non-essential large gatherings of more than 10 people for the next 8 weeks. This recommendation <em><strong>does not</strong></em> apply to the day to day operation of organizations such as businesses.</p><p>CDC also recommends that individuals older than 60 years of age and those with chronic medical conditions should not attend gatherings of more than 10 people, or be around anyone with symptoms of illness, due to their high risk of severe COVID-19 disease.</p>
+    </div>
+
+<script type="text/javascript">
+	$(document).ready(function (e) {		
+	    renderSlideshowIfApplicable($('#divEditor' + '97dd771c-632f-439c-9ee3-c5c2a9e4648d'));
+	});
+</script>
+</div>
+				</div>
+					<ol class="tabbedWidgetNarrow cpTabs" style='display: none;'>
+						<li class=""><a href="#tab8431b751-a313-4cf0-961a-59535eddb9a3_3" onclick="window.setTimeout(function () { reinitCarousels(); }, 2);sizeTabbedContent(this);">Resources</a></li>
+					</ol>
+				<div class="tabbedWidget cpTabPanel " style="display: none;" id="tab8431b751-a313-4cf0-961a-59535eddb9a3_3">
+
+<div class="widget editor pageStyles narrow" id="divEditor3d47bf70-2187-4380-83e4-5d8720ad50b8" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}'>
+        <div class="fr-view">
+
+
+        <h1 class="headline "><span style="text-decoration: underline;"><strong>2-1-1 Arizona</strong></span></h1><p>If you need assistance finding food, paying house bills, accessing free childcare, or other essential services, dial 211, search on the homepage of <a aria-label="211Arizona.com Opens in new window" href="https://211arizona.org/" rel="noopener noreferrer" target="_blank">211Arizona.com</a> or download the 211 Arizona app.&nbsp;</p><h2 class="subhead1 "><a aria-label="Arizona 2-1-1 Opens in new window" href="https://211arizona.org/covid-19/" rel="noopener noreferrer" target="_blank">Arizona 2-1-1</a></h2><h1 class="headline "><span style="text-decoration: underline;"><strong>Business Resources</strong></span></h1><p><span style="text-decoration: underline;"><strong><a aria-label="SAFEST OUTSIDE RESTAURANT ASSISTANCE PROGRAM Opens in new window" href="https://www.azcommerce.com/covid-19/financial-resources/safest-outside-restaurant-assistance-program/" rel="noopener" target="_blank">SAFEST OUTSIDE RESTAURANT ASSISTANCE PROGRAM</a></strong></span></p><p><span style="text-decoration: underline;"><strong><a href="https://azlta.com/azsafe/" rel="noopener" target="_blank">AZSAFE + CLEAN CERTIFICATION</a></strong></span></p><p><span style="text-decoration: underline;"><strong><a aria-label="Coronavirus Prestamos de Emergencia Opens in new window" href="/DocumentCenter/View/12342" rel="noopener noreferrer" target="_blank">Coronavirus Prestamos de Emergencia</a></strong></span></p><p><span style="text-decoration: underline;"><strong><a href="/DocumentCenter/View/12341" target="_blank">Coronavirus Emergency Loans</a></strong></span></p><h3 class="subhead2 "><strong><span style="text-decoration: underline;">Federal Resources</span></strong></h3><p><a href="https://www.cdc.gov/coronavirus/2019-nCoV/index.html" rel="noopener noreferrer" target="_blank">Centers for Disease Control and Prevention</a></p><p><a href="https://www.nih.gov/health-information/coronavirus" rel="noopener noreferrer" target="_blank">National Institutes of Health</a></p><p><a href="https://www.sba.gov/page/coronavirus-covid-19-small-business-guidance-loan-resources" rel="noopener noreferrer" target="_blank">U.S. Small Business Administration</a></p><p><a href="https://coronavirus.jhu.edu/map.html" rel="noopener noreferrer" target="_blank">Johns Hopkins University &amp; Medicine Coronavirus Resource Center</a></p><p><a href="https://travel.state.gov/content/travel/en/traveladvisories/COVID-19-Country-Specific-Information.html"></a><a href="https://travel.state.gov/content/travel/en/traveladvisories/COVID-19-Country-Specific-Information.html" rel="noopener noreferrer" target="_blank">U.S. Department of State</a></p><h3 class="subhead2 "><strong><span style="text-decoration: underline;">State Resources</span></strong></h3><p><span class="hyperlink"><a href="/DocumentCenter/View/13369/Arizona-Small-Business-Rent-and-Mortgage-Relief-Grants-Reopen-Oct-8" target="_blank" rel="noopener"></a></span><a href="/DocumentCenter/View/13369/Arizona-Small-Business-Rent-and-Mortgage-Relief-Grants-Reopen-Oct-8" rel="noopener" target="_blank"></a><a href="/DocumentCenter/View/13369/Arizona-Small-Business-Rent-and-Mortgage-Relief-Grants-Reopen-Oct-8" rel="noopener" target="_blank"><span style="text-decoration: underline;">ARIZONA SMALL BUSINESS RENT AND MORTGAGE RELIEF GRANT PROGRAM</span></a><a href="/DocumentCenter/View/13369/Arizona-Small-Business-Rent-and-Mortgage-Relief-Grants-Reopen-Oct-8" rel="noopener" target="_blank"></a><span class="hyperlink"><a href="/DocumentCenter/View/13369/Arizona-Small-Business-Rent-and-Mortgage-Relief-Grants-Reopen-Oct-8" rel="noopener" target="_blank"></a></span></p><p><a href="https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home" rel="noopener noreferrer" target="_blank">AZ Department of Health Services</a></p><p><a href="https://azgovernor.gov/governor/news/2020/03/covid-19-frequently-asked-questions" rel="noopener noreferrer" target="_blank">Office of Governor Doug Ducey</a></p><p><a href="https://www.azed.gov/communications/2020/03/10/guidance-to-schools-on-covid-19/" rel="noopener noreferrer" target="_blank">AZ Department of Education K-12 School Updates/Resources</a></p><p><a href="https://www.firstthingsfirst.org/first-things/tips-for-talking-with-young-children-about-coronovirus/" rel="noopener noreferrer" target="_blank">First Things First, Tips for talking to kids about Coronavirus</a></p><h3 class="subhead2 "><strong><span style="text-decoration: underline;">Education</span></strong></h3><p><a href="https://eoss.asu.edu/health/announcements/coronavirus/faqs" rel="noopener noreferrer" target="_blank">Arizona State University</a></p><p><a href="https://www.arizona.edu/coronavirus-covid-19-information" rel="noopener noreferrer" target="_blank">University of Arizona</a></p><p><a href="https://nau.edu/coronavirus/" rel="noopener noreferrer" target="_blank">Northern Arizona University</a></p><p><a href="https://www.pima.edu/press-room/coronavirus/index.html" rel="noopener noreferrer" target="_blank">Pima Community College</a></p><h1 class="headline ">At Home Learning for Kids</h1><p><a href="https://www.boeingfutureu.com/" rel="noopener noreferrer" target="_blank">FUTURE U, from Boeing and Discovery Education&nbsp;</a></p><p><a href="https://vft.asu.edu/" rel="noopener noreferrer" target="_blank">ASU World Exploration&nbsp;</a></p><p><a href="https://sites.google.com/view/learningfromhome/home" rel="noopener noreferrer" target="_blank">AZ Game and Fish Dept&nbsp;</a></p><p><a href="http://cincinnatizoo.org/home-safari-resources/?fbclid=IwAR2Xzztb5w7zLQZW9H_hTsccqTjKnfBfcybVqbuI5yhpHmNMpYvofe62hq0" rel="noopener noreferrer" target="_blank">Cincinnati Zoo Home Safari</a>&nbsp;</p><p><a href="https://zoo.sandiegozoo.org/live-cams?fbclid=IwAR0h4SyM5o2yW7A5pVMb_mOo42cSzqILz-klPofBT8D8U9KoVOpM2leylSM" rel="noopener noreferrer" target="_blank">San Diego Zoo Live Cam</a>&nbsp;</p><p><a href="https://www.youtube.com/user/crashcourse?fbclid=IwAR1w84SYAAHXYmYJt_xCVtJTDDV9UkGl1fdyPUUlg_PNcIhAvr2fIv4O_Uw" rel="noopener noreferrer" target="_blank">A wide variety of topics, CrashCourse</a></p><p><a href="https://www.santacruzcountyaz.gov/DocumentCenter/View/12442/Santa-Cruz-County-WiFi-Hotspots" rel="noopener" target="_blank">Santa Cruz County WiFi Hotspots</a>&nbsp;</p>
+    </div>
+
+<script type="text/javascript">
+	$(document).ready(function (e) {		
+	    renderSlideshowIfApplicable($('#divEditor' + '3d47bf70-2187-4380-83e4-5d8720ad50b8'));
+	});
+</script>
+</div>
+				</div>
+					<ol class="tabbedWidgetNarrow cpTabs" style='display: none;'>
+						<li class=""><a href="#tab8431b751-a313-4cf0-961a-59535eddb9a3_4" onclick="window.setTimeout(function () { reinitCarousels(); }, 2);sizeTabbedContent(this);">Press Releases</a></li>
+					</ol>
+				<div class="tabbedWidget cpTabPanel " style="display: none;" id="tab8431b751-a313-4cf0-961a-59535eddb9a3_4">
+
+<div class="widget editor pageStyles narrow" id="divEditor9c54e5bb-ee8f-4fee-a7d6-7d38676fb524" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}'>
+        <div class="fr-view">
+
+
+        <h1 class="headline "><span style="text-decoration: underline;"><strong>March 31, 2020</strong></span></h1><p><a href="/DocumentCenter/View/12344" target="_blank">Third Confirmed COVID-19 Case Press Release</a></p><p><a aria-label="Comunicado de prensa del tercer caso de COVID-19 confirmado Opens in new window" href="/DocumentCenter/View/12345" target="_blank">Comunicado de prensa del tercer caso de COVID-19 confirmado</a></p><h1 class="headline "><strong><span style="text-decoration: underline;">March 25, 2020</span></strong></h1><p><a href="/DocumentCenter/View/12302" target="_blank"></a></p><p><a href="https://www.santacruzcountyaz.gov/Admin/DocumentCenter/Document/Edit/12303?folderID=354&renderMode=0&type=0"></a><a aria-label="Second Confirmed Case Press Release 3-25-20 (UPDATED) Opens in new window" href="/DocumentCenter/View/12304" rel="noopener noreferrer" target="_blank">Second Confirmed COVID-19 Case Press Release 3-25-20 (UPDATED)</a></p><p><a aria-label="Comunicado de prensa del segundo caso confirmado 25-3-2020 (actualizado) Opens in new window" href="/DocumentCenter/View/12305" rel="noopener noreferrer" target="_blank">Comunicado de prensa del segundo caso de COVID-19 confirmado 25-3-2020 (actualizado)</a></p><p><a aria-label="Second Confirmed Case Press Release  Opens in new window" href="/DocumentCenter/View/12288" rel="noopener noreferrer" target="_blank">Second Confirmed COVID-19 Case Press Release </a></p><p><a aria-label="Comunicado de prensa del segundo caso confirmado Opens in new window" href="/DocumentCenter/View/12289" rel="noopener noreferrer" target="_blank">Comunicado de prensa del segundo caso de COVID-19 confirmado</a></p><h1 class="headline "><span style="text-decoration: underline;"><strong>March 19, 2020</strong></span></h1><p><a aria-label="First Positive Case Press Release Opens in new window" href="/DocumentCenter/View/12291" rel="noopener noreferrer" target="_blank">First Positive COVID-19 Case Press Release</a></p><p><a aria-label="Comunicado de prensa del primer caso confirmado Opens in new window" href="/DocumentCenter/View/12290" rel="noopener noreferrer" target="_blank">Comunicado de prensa del primer caso de COVID-19 confirmado</a></p><p><br></p>
+    </div>
+
+<script type="text/javascript">
+	$(document).ready(function (e) {		
+	    renderSlideshowIfApplicable($('#divEditor' + '9c54e5bb-ee8f-4fee-a7d6-7d38676fb524'));
+	});
+</script>
+</div>
+				</div>
+					<ol class="tabbedWidgetNarrow cpTabs" style='display: none;'>
+						<li class=""><a href="#tab8431b751-a313-4cf0-961a-59535eddb9a3_5" onclick="window.setTimeout(function () { reinitCarousels(); }, 2);sizeTabbedContent(this);">COVID-19 FAQ</a></li>
+					</ol>
+				<div class="tabbedWidget cpTabPanel " style="display: none;" id="tab8431b751-a313-4cf0-961a-59535eddb9a3_5">
+
+<div class="widget editor pageStyles narrow" id="divEditor8301c53e-e583-45e5-a34f-780851aa8f56" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}'>
+        <div class="fr-view">
+
+
+        <p><strong>What is the coronavirus disease 2019?</strong></p><p>COVID-19 (previously known as 2019 novel coronavirus or 2019-nCoV), is a new respiratory virus first identified in Wuhan, Hubei Province, China.<br><br>It is part of a larger family of viruses called coronavirus, some of which are in circulation normally and can cause illnesses like the common cold. See the &ldquo;About the Virus&rdquo; section of this FAQ for more about this family of viruses. You can learn more about coronavirus disease 2019 at the <a href="https://www.cdc.gov/coronavirus/2019-ncov/faq.html#spreads" target="_blank" title="CDC website">CDC website</a>.<br><!--[if !supportLineBreakNewLine]--></p><p><strong>Has anyone in the United States been infected?</strong></p><p>Yes. Monitoring and testing are ongoing across the United States. A current case count table is available on the <a href="https://www.cdc.gov/coronavirus/2019-ncov/cases-in-us.html" target="_blank" title="CDC website">CDC website</a>.<br><!--[if !supportLineBreakNewLine]--></p><p><strong>Am I at risk for COVID-19 infection in the United States?</strong></p><p>Currently, risk to the public in Santa Cruz County is low. This is a rapidly-evolving situation and the risk assessment may change daily. Please visit the <a href="https://www.cdc.gov/coronavirus/2019-ncov/faq.html#spreads" target="_blank" title="CDC Website">CDC website</a> for the most up-to-date national information.<br><!--[if !supportLineBreakNewLine]--></p><p><strong>Should I be tested for COVID-19?</strong></p><p>If you develop a fever and symptoms of respiratory illness, such as cough or shortness of breath, within 14 days after travel from an affected area, you should call ahead to a healthcare provider and mention your recent travel. Public health will work with your healthcare provider to get you tested if recommended.<br><br>Individuals who are being monitored by public health will be given specific recommendations to seek care for testing for COVID-19, if needed.<br><!--[if !supportLineBreakNewLine]--></p><p><img src="/ImageRepository/Document?documentId=12307" class="fr-fil fr-dib" alt="Am I Sick Flow"></p><p><strong>How can I protect myself?</strong></p><p>Wash your hands often with soap and water for at least 20 seconds. If soap and water are not available, use an alcohol-based hand sanitizer.</p><ul><li>Avoid touching your eyes, nose, and mouth with unwashed hands.</li><li>Avoid close contact with people who are sick.</li><li>Stay home when you are sick.</li><li>Cover your cough or sneeze with a tissue, then throw the tissue in the trash.</li><li>Clean and disinfect frequently touched objects and surfaces.</li><li>These are everyday habits that can help prevent the spread of several viruses. See the &quot;Protect Yourself&quot; tab for more detailed information.<br><!--[if !supportLineBreakNewLine]--></li></ul><p><strong>What if I recently traveled to an affected area and got sick?</strong></p><p>If you were in a place with community spread of COVID-19 and feel sick with fever, cough, or difficulty breathing within 14 days after you left that area, you should contact a healthcare provider. Before you go to a doctor&rsquo;s office or emergency room, call ahead and tell them about your recent travel and symptoms.<br><br>Still have questions? Find more answers here:<br><br><a href="https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php" target="_blank" title="ADHS FAQ Page">AZ Department of Health Services Frequently Asked Questions</a><br><a href="https://www.cdc.gov/coronavirus/2019-nCoV/index.html" target="_blank" title="CDC COVID-19 Webpage">Centers for Diseases Control and Prevention Frequently Asked Questions</a></p>
+    </div>
+
+<script type="text/javascript">
+	$(document).ready(function (e) {		
+	    renderSlideshowIfApplicable($('#divEditor' + '8301c53e-e583-45e5-a34f-780851aa8f56'));
+	});
+</script>
+</div>
+				</div>
+					<ol class="tabbedWidgetNarrow cpTabs" style='display: none;'>
+						<li class=""><a href="#tab8431b751-a313-4cf0-961a-59535eddb9a3_6" onclick="window.setTimeout(function () { reinitCarousels(); }, 2);sizeTabbedContent(this);">Printable Materials</a></li>
+					</ol>
+				<div class="tabbedWidget cpTabPanel " style="display: none;" id="tab8431b751-a313-4cf0-961a-59535eddb9a3_6">
+
+
+
+
+	<section class="widget widgetRelatedDocuments skin43 narrow" id="widgetRelDoc0bb6d8f5-68e3-4af7-b1b0-152704d96ab0" data-widgetid="0bb6d8f5-68e3-4af7-b1b0-152704d96ab0" data-sections="[{&quot;Title&quot;:&quot;&quot;,&quot;DocumentIDs&quot;:&quot;12235,12234,12233,12244,12243,12278,12280,12947,12946,&quot;,&quot;FolderIds&quot;:&quot;,&quot;,&quot;SortedDocumentIds&quot;:&quot;12243,12244,12278,12280,12234,12235,&quot;}]" data-columncount="1" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}' data-elementquerymatch='matchMultiColumn' data-elementqueryunmatch='unmatchMultiColumn' aria-label="Related Documents">
+			<div id="divRelatedDocuments_0bb6d8f5-68e3-4af7-b1b0-152704d96ab0" class="relatedDocuments">
+		<div class="widgetBody cpGrid cpGrid1">
+			
+<div class="row narrow sortableWidgetTitle">
+        <div class="relatedDocumentsSection selfClear" data-documentids="12235,12234,12233,12244,12243,12278,12280,12947,12946," data-folderids="," data-sorteddocumentids="12243,12244,12278,12280,12234,12235,">
+        
+	<div class=" first last">
+		<ol class="semanticList bullets" style="min-height:8px;">
+					<li class="widgetItem" data-documentid="12243"><a target="_blank" href="/DocumentCenter/View/12243/Stop-the-Spread-of-Coronavirus" class="fileType pdf" aria-label="Stop the Spread of Coronavirus pdf file">Stop the Spread of Coronavirus</a>
+					</li>
+					<li class="widgetItem" data-documentid="12244"><a target="_blank" href="/DocumentCenter/View/12244/Ayude-A-Detener-El-Coronavirus" class="fileType pdf" aria-label="Ayude A Detener El Coronavirus pdf file">Ayude A Detener El Coronavirus</a>
+					</li>
+					<li class="widgetItem" data-documentid="12278"><a target="_blank" href="/DocumentCenter/View/12278/Handwashing" class="fileType pdf" aria-label="Handwashing pdf file">Handwashing</a>
+					</li>
+					<li class="widgetItem" data-documentid="12280"><a target="_blank" href="/DocumentCenter/View/12280/Lavese-Las-Manos" class="fileType pdf" aria-label="Lavese Las Manos pdf file">Lavese Las Manos</a>
+					</li>
+					<li class="widgetItem" data-documentid="12234"><a target="_blank" href="/DocumentCenter/View/12234/Stop-the-Spread-of-Germs" class="fileType pdf" aria-label="Stop the Spread of Germs pdf file">Stop the Spread of Germs</a>
+					</li>
+					<li class="widgetItem" data-documentid="12235"><a target="_blank" href="/DocumentCenter/View/12235/Stop-the-Spread-of-Germs-Spanish" class="fileType pdf" aria-label="Stop the Spread of Germs (Spanish) pdf file">Stop the Spread of Germs (Spanish)</a>
+					</li>
+					<li class="widgetItem" data-documentid="12947"><a target="_blank" href="/DocumentCenter/View/12947/Masks-Required" class="fileType pdf" aria-label="Masks Required pdf file">Masks Required</a>
+					</li>
+					<li class="widgetItem" data-documentid="12946"><a target="_blank" href="/DocumentCenter/View/12946/Masks-Required-SPANISH" class="fileType pdf" aria-label="Masks Required SPANISH pdf file">Masks Required SPANISH</a>
+					</li>
+
+		</ol>
+	</div>
+                    </div>
+</div>
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        //Remove section heading when it is empty and live edit is off.
+        if ('false' === 'false') {
+            var jqh4Selector = $('#widgetRelDoc' + '0bb6d8f5-68e3-4af7-b1b0-152704d96ab0').find('div.widgetBody div.row div.relatedDocumentsSection h4.widgetTitle');
+    		if (jqh4Selector.val() == "") {
+    			jqh4Selector
+                    .filter(function () {
+                        return $.trim($(this).text()) === ''
+                    })
+                    .remove();
+            }
+        }
+    });
+</script>
+		</div>
+
+</div>
+
+	</section>
+
+
+<script type="text/javascript">
+    var documentsToInsert = [];
+    var foldersToInsert = [];
+
+    $(document).ready(function () {
+        var hasEditRights = false;        
+        if (window.File && window.FileList && window.FileReader && hasEditRights) {
+            var RelatedDocumentsWidget = 5;
+            makeWidgetAreaDroppable('0bb6d8f5-68e3-4af7-b1b0-152704d96ab0', $('#widgetRelDoc' + '0bb6d8f5-68e3-4af7-b1b0-152704d96ab0'), RelatedDocumentsWidget, true, RelatedDocumentsCallback);
+        }
+
+		if(hasEditRights)
+    		browserVersionNotCompatibleWithDragDropTextUpdate($('#addFile' + '0bb6d8f5-68e3-4af7-b1b0-152704d96ab0'), 'Add a new file');
+    });
+
+    function RelatedDocumentsCallback(widgetID, response)
+    {
+        if (window.ContentCollectionInstance.IsWorkingCopy) {
+        	$('#widgetRelDoc' + widgetID).replaceWith(response);            
+            contentUpdated();
+            attachRelatedDocumentsHandlers();            
+        }
+        else {
+            ContentCollectionInstance.reloadContent();
+        }      
+    }
+</script>
+				</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$.when(window.Pages.rwdReady).done(function () {
+			var tabbedWidgetID = 'divTabbed8431b751-a313-4cf0-961a-59535eddb9a3';
+			var mediaQuerySize = 26;
+			if (mediaQuerySize > 0) {
+				var mediaElementQuery = '#' + tabbedWidgetID + ':media(this-min-width:' + mediaQuerySize + 'em)';
+				var $tabbedWidget = $('#' + tabbedWidgetID);
+				window.cpMedia.unregister(mediaElementQuery).register(mediaElementQuery, {
+					deferSetup: false,
+					setup: function () {
+						var liveEditEnabled = $.cookie("enableLiveEdit") === "true";
+						if (!liveEditEnabled) {
+							$tabbedWidget.addClass('narrow').removeClass('wide');
+							cpMedia.diag('$(element).addClass("narrow"), mediaQuery: ' + mediaElementQuery);
+							$tabbedWidget.find('.tabbedWidget.cpTabs').hide();
+							$tabbedWidget.find('.tabbedWidgetNarrow.cpTabs').show();
+							$tabbedWidget.data("tabHeightSet", false);
+						}
+					},
+					match: function () {
+						$tabbedWidget.addClass('wide').removeClass('narrow');
+						cpMedia.diag('$(element).removeClass("narrow"), mediaQuery: ' + mediaElementQuery);
+						$tabbedWidget.find('.tabbedWidget.cpTabs').show();
+						$tabbedWidget.find('.tabbedWidgetNarrow.cpTabs').hide();
+
+						if($tabbedWidget.data("tabHeightSet") == false)
+						{
+							$tabbedWidget.data("tabHeightSet", true);
+
+							var tabbedWidgetID = 'divTabbed8431b751-a313-4cf0-961a-59535eddb9a3';
+							setTabbedWidgetsTabHeight(tabbedWidgetID);
+						}
+						$('.cpTabPanels').unbind('click');
+					},
+					unmatch: function () {
+						var liveEditEnabled = $.cookie("enableLiveEdit") === "true";
+						if (!liveEditEnabled) {
+							$tabbedWidget.addClass('narrow').removeClass('wide');
+							cpMedia.diag('$(element).addClass("narrow"), mediaQuery: ' + mediaElementQuery);
+							$tabbedWidget.find('.tabbedWidget.cpTabs').hide();
+							$tabbedWidget.find('.tabbedWidgetNarrow.cpTabs').show();
+						}
+						$('.cpTabPanels').click(function() {
+							this.scrollIntoView();
+						});
+					}
+				});
+			}
+		});
+
+		//Used for when page is initially loaded
+		if($('#divTabbed8431b751-a313-4cf0-961a-59535eddb9a3').hasClass('narrow'))
+		{
+			$('.cpTabPanels').click(function() {
+				this.scrollIntoView();
+			});
+		}
+
+		//If responsive not enabled, execute this after a timeout
+		if(!isResponsiveEnabled)
+		{
+			window.setTimeout(function(){
+				var tabbedWidgetID = 'divTabbed8431b751-a313-4cf0-961a-59535eddb9a3';
+				setTabbedWidgetsTabHeight(tabbedWidgetID);
+			}, 1500);
+		}
+
+		function reinitCarousels() {
+			if (window.carouselsToInit) {
+				for (var i = 0; i < window.carouselsToInit.length; i++) {
+					carouselsToInit[i]();
+				}
+			}
+		}
+		function sizeTabbedContent(element){
+			if(window.Pages){
+				if(window.Pages.onResizeHandlers){
+					var setTabbedInterval = setInterval(function () {
+						window.Pages.onResizeHandlers.forEach(function(car){car();});
+					}, 25)
+
+
+					setTimeout(function () {
+						clearInterval(setTabbedInterval);
+						if ($.cookie("enableLiveEdit") === "true") {
+							setInterval(function () {
+								window.Pages.onResizeHandlers.forEach(function(car){car();});
+							}, 2000);
+						}
+					}, 2500);
+					element.onclick="window.setTimeout(function(){reinitCarousels();},2);"
+				}
+			}
+		}
+	</script>
+
+
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+	<div class="row nest last wide">
+	
+	<div class="inner col col24 first last id0ba93f23-2700-4805-b5b8-c5ae552942a8" style="" data-widgetcontainerid="0ba93f23-2700-4805-b5b8-c5ae552942a8">	
+<div class="widget image pageStyles" id="divImageOuter1140660e-033b-42a7-8992-35a5c340d551" data-widget-id="1140660e-033b-42a7-8992-35a5c340d551">
+    
+	<div class="widgetBody imageBorder" id="divImage1140660e-033b-42a7-8992-35a5c340d551"><img src="/ImageRepository/Document?documentID=12415" alt="Stop the Spread SCC 6 feet apart twitter" title="Stop the Spread SCC 6 feet apart twitter"/>	</div></div>
+
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!--		--></div> <!-- outer row -->
+
+
+		</div>
+
+	</div>
+
+	
+	<div class="newCP">
+
+	</div>
+</div>
+</div><aside data-cpRole="contentContainer" id="featureColumn" class="secondaryContent">	<div id="ccd6923f64-2522-4bce-8783-61ad1b416b69" data-containerid="d6923f64-2522-4bce-8783-61ad1b416b69" class="pageContent cpGrid cpGrid24 showInMobile" data-contentcontainerbreakpoint="25"data-smoothscrolling="True">
+				                
+
+
+
+	</div>
+</aside>
+</div><div data-cpRole="structuralContainer" id="structuralContainer3" class="siteSidebar">
+<aside data-cpRole="contentContainer" id="contentContainer5">	<div id="cc92d455f9-a39d-402e-a85e-d9b3f689dcca" data-containerid="92d455f9-a39d-402e-a85e-d9b3f689dcca" class="pageContent cpGrid cpGrid24 isLockedContainer showInMobile" data-contentcontainerbreakpoint="40">
+				                
+
+		<div class="row outer wide"><!--
+--><div class="outer col col24 first last" style="" data-widgetcontainerid="50de49fe-7b55-47f2-ba59-f0f033adff3f">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col24 first last id68fe4c55-82ed-4aa9-9f90-da9dbb330256" style="" data-widgetcontainerid="68fe4c55-82ed-4aa9-9f90-da9dbb330256">	
+<div data-widget-id="37a52cf4-7048-4dfa-b02d-27d1d41f2ade" data-widget-controller-path="/Layout/WidgetSearch">
+	
+		<script defer type="text/javascript" src="/Common/Controls/jquery-ui/js/jquery.ui.autocomplete.min.js"></script>
+	<script defer src="/Areas/Layout/Assets/Scripts/Search.js" type="text/javascript"></script>
+	<script defer type="text/javascript">
+
+		$(document).ready(function () {
+			try {
+				$(".widgetSearchButton.widgetSearchButton37a52cf4-7048-4dfa-b02d-27d1d41f2ade").click(function (e) {
+				e.preventDefault();
+					if ($("#ysnSearchOnlyDept37a52cf4-7048-4dfa-b02d-27d1d41f2ade").is(':checked')) {
+						doWidgetSearch($(this).siblings(".widgetSearchBox").val(), Number(0));
+					} else {
+						doWidgetSearch($(this).siblings(".widgetSearchBox").val(), 0);
+					}
+			});
+			$("#searchField37a52cf4-7048-4dfa-b02d-27d1d41f2ade").keypress(function (e) {
+				if (window.clipboardData) {
+					if (e.keyCode == 13) {
+							if ($("#ysnSearchOnlyDept37a52cf4-7048-4dfa-b02d-27d1d41f2ade").is(':checked')) {
+								doWidgetSearch($(this).val(), Number(0));
+							} else {
+								doWidgetSearch($(this).val(), 0);
+							}
+						return false;
+					}
+				} else {
+					if (e.which == 13) {
+							if ($("#ysnSearchOnlyDept37a52cf4-7048-4dfa-b02d-27d1d41f2ade").is(':checked')) {
+								doWidgetSearch($(this).val(), Number(0));
+							} else {
+								doWidgetSearch($(this).val(), 0);
+							}
+						return false;
+					}
+				}
+				return true;
+			});
+
+				if (true) {
+					var currentRequest = null;
+
+					var $searchField = $("#searchField37a52cf4-7048-4dfa-b02d-27d1d41f2ade").autocomplete({
+						source: function (request, response) {
+							currentRequest = $.ajax({
+								url: '/Search/AutoComplete',
+								dataType: "json",
+								timeout: 10000,
+								beforeSend: function () {
+									if (currentRequest != null) {
+										currentRequest.abort();
+									}
+								},
+								data:
+								{
+									term: request.term,
+								},
+								success: function (data) {
+									response(data);
+									$('.autoCompleteError').remove();
+								},
+								error: function (xmlhttprequest, textstatus, message) {
+									if (textstatus === "timeout") {
+										if ($("#searchField37a52cf4-7048-4dfa-b02d-27d1d41f2ade").siblings('.autoCompleteError').length == 0)
+											$('<span class="autoCompleteError"><p class="alert error">Search autocomplete is currently not responding. Please try again later.</p></span>').insertAfter($("#searchField37a52cf4-7048-4dfa-b02d-27d1d41f2ade"));
+									}
+								}
+							});
+						},
+						html: true,
+						delay: 500,
+						select: function (event, ui) {
+							$(this).val(ui.item.value);
+							$(this).next().click();
+						}
+					});
+
+					if (false && true) {
+						$searchField.data("ui-autocomplete")._renderItem = function (ul, item) {
+							return $("<li class=\"itemList\"></li>")
+								.data("ui-autocomplete-item", item)
+								.append("<a>" + item.label + "</a>")
+								.appendTo(ul);
+						};
+					}
+					else {
+						$searchField.data("autocomplete")._renderItem = function (ul, item) {
+							return $("<li></li>")
+								.data("item.autocomplete", item)
+								.append("<a>" + item.label + "</a>")
+								.appendTo(ul);
+						};
+					}
+}
+}
+			catch(e) {} //we're going to eat this error. Autocomplete won't work but we dont wan't to break anything else on the page.
+		});
+	</script>
+
+	<section id="widgetPreviewSearch" class="widget widgetSearch skin17 widgetOptionSet15" style="display: block;" aria-label="Search">
+				<!-- For the button right and inside -->
+		<div class="widgetBody buttonRightInside">
+			<input class="widgetSearchBox widgetSearchBox37a52cf4-7048-4dfa-b02d-27d1d41f2ade" cp5ph="true" id="searchField37a52cf4-7048-4dfa-b02d-27d1d41f2ade" name="searchField" onchange="searchBtnApplyQuery();" placeholder="Search" title="Search" type="text" value="" />
+							<a href="/Search/Results" id="btnSearchIcon" class="widgetSearchButton widgetSearchButton37a52cf4-7048-4dfa-b02d-27d1d41f2ade" role="button"><img alt="Go" class="imageHover" data-hover="/ImageRepository/Document?documentID=2958" data-image="/ImageRepository/Document?documentID=2959" src="/ImageRepository/Document?documentID=2959" /></a>
+
+			<label class="searchLabel" for="searchField37a52cf4-7048-4dfa-b02d-27d1d41f2ade">Search</label>
+		</div>
+
+	</section>
+
+
+<style scoped>
+    
+        .widgetSearch ::-webkit-input-placeholder {
+        color: #000000;
+      }
+        .widgetSearch :-moz-placeholder { /* Firefox 18- */
+       color: #000000;
+    }
+        .widgetSearch ::-moz-placeholder {  /* Firefox 19+ */
+       color: #000000;
+    }
+    .widgetSearch :-ms-input-placeholder {
+       color: #000000;
+    }
+    
+
+	.widgetSearch .widgetBody .widgetSearchBox37a52cf4-7048-4dfa-b02d-27d1d41f2ade
+	{
+        color: #000000;
+		background-color: #fff; height: 40px; padding: 5px 40px 5px 10px;  border: 0px;
+	}
+	.widgetSearch .widgetBody .widgetSearchButton37a52cf4-7048-4dfa-b02d-27d1d41f2ade
+	{
+		margin: 8px;
+	}
+	.widgetSearch .widgetSearch-onlyDept37a52cf4-7048-4dfa-b02d-27d1d41f2ade
+	{
+		display: inline-block;
+		color: #333;
+		
+		
+		 padding-top: 10px;
+	}
+	#ysnSearchOnlyDept37a52cf4-7048-4dfa-b02d-27d1d41f2ade
+	{
+		position: relative;
+		top: .125em;
+	}
+
+</style>
+
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+
+
+	<script type="text/javascript">
+	//Updates search icons href to have the correct queryString
+	function searchBtnApplyQuery() {
+		document.getElementById("btnSearchIcon").href = "/Search?searchPhrase=" + document.getElementById("searchField37a52cf4-7048-4dfa-b02d-27d1d41f2ade").value;
+    }
+	</script>
+
+</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!--		--></div> <!-- outer row -->
+		<div class="row outer wide"><!--
+--><div class="outer col col24 first last" style="" data-widgetcontainerid="9ec5665f-46c1-4a01-b4d9-1c8915bb64be">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col24 first last idb8e417a9-a676-4e9a-b101-4c4b02ea1def" style="" data-widgetcontainerid="b8e417a9-a676-4e9a-b101-4c4b02ea1def">	
+ 
+	<div data-widget-id='e5d8d35b-2bfe-4809-bc4d-ae77523fc851' data-moduleName="customHtml" id='widgetCustomHtmle5d8d35b-2bfe-4809-bc4d-ae77523fc851' class="widget widgetCustomHtml skin43 narrow" >
+	<div class="widgetBody pageStyles" id="widgetBodye5d8d35b-2bfe-4809-bc4d-ae77523fc851">
+		<div id="customHtmle5d8d35b-2bfe-4809-bc4d-ae77523fc851"><div><span style="font-family: gafata; padding-left: .5em; font-size: 1.7em; color: #8b3231;">Popular Links</span></div></div>
+	</div>
+	</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!--		--></div> <!-- outer row -->
+
+
+	</div>
+</aside><nav data-cpRole="nav" id="secondaryNav" class="siteNav secondaryNav">
+
+
+
+
+	<ol role="menu" id="secondaryMenusecondaryNav" data-parent="148" class="rootNavMenu flyoutNav">
+	<li role="menuitem" aria-haspopup="true" id="SideItem732" class="topMenuItem" data-display-main-item-sub-menu-indicators="False" data-pageid="732" data-displaymegamenu="False">
+					<a onclick="return false;" class="navMainItem secondaryNavItem" href="/732/COVID-19-Novel-Coronavirus" target="_self"> COVID-19 (Novel Coronavirus)</a>
+			</li>
+	<li role="menuitem" aria-haspopup="true" id="SideItem734" class="topMenuItem" data-display-main-item-sub-menu-indicators="False" data-pageid="734" data-displaymegamenu="False">
+					<a class="navMainItem secondaryNavItem" href="/734/Inventory-and-status-of-local-food-store" target="_self">Inventory and status of local food stores</a>
+			</li>
+	<li role="menuitem" aria-haspopup="true" id="SideItem154" class="topMenuItem" data-display-main-item-sub-menu-indicators="False" data-pageid="154" data-displaymegamenu="False">
+					<a class="navMainItem secondaryNavItem" href="/154/Emergency-Preparedness" target="_self">Emergency Preparedness</a>
+			</li>
+	<li role="menuitem" aria-haspopup="true" id="SideItem149" class="topMenuItem" data-display-main-item-sub-menu-indicators="False" data-pageid="149" data-displaymegamenu="False">
+					<a class="navMainItem secondaryNavItem" href="/149/Environmental-Health" target="_self">Environmental Health</a>
+			</li>
+	<li role="menuitem" aria-haspopup="true" id="SideItem153" class="topMenuItem" data-display-main-item-sub-menu-indicators="False" data-pageid="153" data-displaymegamenu="False">
+					<a class="navMainItem secondaryNavItem" href="/153/Public-Health" target="_self">Public Health</a>
+			</li>
+	<li role="menuitem" aria-haspopup="true" id="SideItem428" class="topMenuItem" data-display-main-item-sub-menu-indicators="False" data-pageid="428" data-displaymegamenu="False">
+					<a class="navMainItem secondaryNavItem" href="/428/Vital-Records" target="_self">Vital Records</a>
+			</li>
+	<li role="menuitem" aria-haspopup="true" id="SideItem535" class="topMenuItem" data-display-main-item-sub-menu-indicators="False" data-pageid="535" data-displaymegamenu="False">
+					<a class="navMainItem secondaryNavItem" href="/535/Health-Services-Alerts" target="_self">Health Services Alerts</a>
+			</li>
+	<li role="menuitem" aria-haspopup="true" id="SideItem684" class="topMenuItem" data-display-main-item-sub-menu-indicators="False" data-pageid="684" data-displaymegamenu="False">
+					<a class="navMainItem secondaryNavItem" href="/684/Public-Notices" target="_self">Public Notices</a>
+			</li>
+
+	</ol>
+
+
+	<script type="text/javascript">
+        $(document).ready(function () {
+            //setup menu manager properties for secondary menu
+            menuManager.isSideMenuEditable = false;
+		    menuManager.sideMenuMaxSubMenuLevels = 4;
+            menuManager.sideMenuHasCustomLinks = false;
+        });
+	</script>
+	<script type="text/javascript">
+        $(document).ready(function () {
+            //Init secondary menu
+            var setupDraggable = menuManager.isSideMenuEditable;
+			var urlToGetHiddenMenus = '/Pages/MenuSecondary/HiddenSecondarySubMenus?pageID=732&moduleID=&themeID=1&menuContainerID=secondaryNav';
+            var menuID = 'secondaryMenusecondaryNav';
+            menuManager.setMOMMode(2, SIDE_MENU);
+            menuManager.setupMenu(menuID, 'secondaryNav', SIDE_MENU, setupDraggable, urlToGetHiddenMenus);
+        });
+	</script>
+
+
+
+
+</nav><aside data-cpRole="contentContainer" id="contentContainer4">	<div id="cc59051760-3cf5-4d76-b748-0f1d3a9a7a96" data-containerid="59051760-3cf5-4d76-b748-0f1d3a9a7a96" class="pageContent cpGrid cpGrid24 isLockedContainer showInMobile" data-contentcontainerbreakpoint="40">
+				                
+
+		<div class="row outer wide"><!--
+--><div class="outer col col24 first last" style="" data-widgetcontainerid="3467c157-e608-4f8d-8732-a920997a6933">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col24 first last id38ca4ceb-f0a2-4cfd-abee-a02e775a9ffc" style="" data-widgetcontainerid="38ca4ceb-f0a2-4cfd-abee-a02e775a9ffc">	
+<div data-widget-id="eee26d5a-3370-41e9-b183-59f686facd3f" data-widget-controller-path="/GraphicLinks/Widget">
+
+
+
+
+<div id="graphicLinkWidgeteee26d5a-3370-41e9-b183-59f686facd3f" class="widget widgetGraphicLinks skin45 widgetOptionSet17 wide" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}' data-elementquerymatch='matchMultiColumn' data-elementqueryunmatch='unmatchMultiColumn' data-modulewidgettype="graphicLinks">
+	<div class="widgetHeader">
+		<div class="">
+				</div>
+	</div>
+	<div class="widgetBody cpGrid cpGrid1 ">	
+			<div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks"><a class="widgetDesc widgetGraphicLinksLink" href="/317/Treasurer" target="_self"  aria-label="Pay Taxes graphic"><img src="/ImageRepository/Document?documentID=2966" 
+     class="graphicButtonLink" alt="Pay Taxes" 
+     onmouseover="this.src='/ImageRepository/Document?documentID=2965'" 
+	onmouseout="this.src='/ImageRepository/Document?documentID=2966'"
+     onfocus="this.src='/ImageRepository/Document?documentID=2965'" 
+	onblur="this.src='/ImageRepository/Document?documentID=2966'"> </a></div><!--
+	    --><div class="widgetItem GraphicLinks"><a class="widgetDesc widgetGraphicLinksLink" href="/jobs.aspx" target="_self"  aria-label="Employment graphic"><img src="/ImageRepository/Document?documentID=2961" 
+     class="graphicButtonLink" alt="Employment" 
+     onmouseover="this.src='/ImageRepository/Document?documentID=2963'" 
+	onmouseout="this.src='/ImageRepository/Document?documentID=2961'"
+     onfocus="this.src='/ImageRepository/Document?documentID=2963'" 
+	onblur="this.src='/ImageRepository/Document?documentID=2961'"> </a></div><!--
+	    --><div class="widgetItem GraphicLinks"><a class="widgetDesc widgetGraphicLinksLink" href="http://parcelsearch.co.santa-cruz.az.us/RWDataMartPropertyInquiry/default.aspx" target="_blank"  aria-label="Parcel Search graphic opens in new window"><img src="/ImageRepository/Document?documentID=2962" 
+     class="graphicButtonLink" alt="Parcel Search" 
+     onmouseover="this.src='/ImageRepository/Document?documentID=2964'" 
+	onmouseout="this.src='/ImageRepository/Document?documentID=2962'"
+     onfocus="this.src='/ImageRepository/Document?documentID=2964'" 
+	onblur="this.src='/ImageRepository/Document?documentID=2962'"> </a></div><!--
+	    --><div class="widgetItem GraphicLinks"><a class="widgetDesc widgetGraphicLinksLink" href="/list.aspx" target="_self"  aria-label="NotifyMe1 graphic"><img src="/ImageRepository/Document?documentID=3620" 
+     class="graphicButtonLink" alt="NotifyMe1" 
+     onmouseover="this.src='/ImageRepository/Document?documentID=3621'" 
+	onmouseout="this.src='/ImageRepository/Document?documentID=3620'"
+     onfocus="this.src='/ImageRepository/Document?documentID=3621'" 
+	onblur="this.src='/ImageRepository/Document?documentID=3620'"> </a></div><!--
+			--></div>
+	</div>
+	<div class="widgetFooter">
+			</div>
+</div>
+
+</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!--		--></div> <!-- outer row -->
+
+
+	</div>
+</aside>
+</div>
+</div>
+</div></div>
+</div><div data-cpRole="structuralContainer" id="structuralContainer6">
+<div class="siteWrap"><footer data-cpRole="contentContainer" id="contentContainer6" class="siteFooter">	<div id="cc7e33c007-a92d-4e0b-a28a-4fca2d132de9" data-containerid="7e33c007-a92d-4e0b-a28a-4fca2d132de9" class="pageContent cpGrid cpGrid24 isLockedContainer showInMobile" data-contentcontainerbreakpoint="1">
+				                
+
+		<div class="row outer wide"><!--
+--><div class="outer col col24 first last" style="" data-widgetcontainerid="ff52a6a9-3676-4484-9286-a7636106e53a">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col24 first last id4aba0c53-0960-4834-831c-3e92ce550ec3" style="" data-widgetcontainerid="4aba0c53-0960-4834-831c-3e92ce550ec3">	
+<div data-widget-id="04a365d5-54f3-49d1-af22-118088103d76" data-widget-controller-path="/GraphicLinks/Widget">
+
+
+
+
+<div id="graphicLinkWidget04a365d5-54f3-49d1-af22-118088103d76" class="widget widgetGraphicLinks skin39 widgetOptionSet22 wide" data-elementqueryclasses='{"wide-narrow":"min-width:15em"}' data-elementquerymatch='matchMultiColumn' data-elementqueryunmatch='unmatchMultiColumn' data-modulewidgettype="graphicLinks">
+	<div class="widgetHeader">
+		<div class="">
+				</div>
+	</div>
+	<div class="widgetBody cpGrid cpGrid7 ">	
+			<div class="row   wide"><!--
+--><div class="col col1 first "><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks"><a class="widgetDesc widgetGraphicLinksLink" href="/facebook" target="_self"  aria-label="Facebook graphic"><img src="/ImageRepository/Document?documentID=3315" 
+     class="graphicButtonLink" alt="Facebook" 
+     onmouseover="this.src='/ImageRepository/Document?documentID=3306'" 
+	onmouseout="this.src='/ImageRepository/Document?documentID=3315'"
+     onfocus="this.src='/ImageRepository/Document?documentID=3306'" 
+	onblur="this.src='/ImageRepository/Document?documentID=3315'"> </a></div><!--
+--></div></div><!----><div class="col col1  "><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks"><a class="widgetDesc widgetGraphicLinksLink" href="/twitter" target="_self"  aria-label="Twitter graphic"><img src="/ImageRepository/Document?documentID=3317" 
+     class="graphicButtonLink" alt="Twitter" 
+     onmouseover="this.src='/ImageRepository/Document?documentID=3310'" 
+	onmouseout="this.src='/ImageRepository/Document?documentID=3317'"
+     onfocus="this.src='/ImageRepository/Document?documentID=3310'" 
+	onblur="this.src='/ImageRepository/Document?documentID=3317'"> </a></div><!--
+--></div></div><!----><div class="col col1  "><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks"><a class="widgetDesc widgetGraphicLinksLink" href="/youtube" target="_self"  aria-label="YouTube graphic"><img src="/ImageRepository/Document?documentID=3318" 
+     class="graphicButtonLink" alt="YouTube" 
+     onmouseover="this.src='/ImageRepository/Document?documentID=3311'" 
+	onmouseout="this.src='/ImageRepository/Document?documentID=3318'"
+     onfocus="this.src='/ImageRepository/Document?documentID=3311'" 
+	onblur="this.src='/ImageRepository/Document?documentID=3318'"> </a></div><!--
+--></div></div><!----><div class="col col1  "><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks"><a class="widgetDesc widgetGraphicLinksLink" href="/instagram" target="_self"  aria-label="Instagram graphic"><img src="/ImageRepository/Document?documentID=3316" 
+     class="graphicButtonLink" alt="Instagram" 
+     onmouseover="this.src='/ImageRepository/Document?documentID=3307'" 
+	onmouseout="this.src='/ImageRepository/Document?documentID=3316'"
+     onfocus="this.src='/ImageRepository/Document?documentID=3307'" 
+	onblur="this.src='/ImageRepository/Document?documentID=3316'"> </a></div><!--
+--></div></div><!----><div class="col col1  "><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks"><a class="widgetDesc widgetGraphicLinksLink" href="/317/Treasurer" target="_self"  aria-label="Pay Taxes graphic"><img src="/ImageRepository/Document?documentID=3312" 
+     class="graphicButtonLink" alt="Pay Taxes" 
+     onmouseover="this.src='/ImageRepository/Document?documentID=3305'" 
+	onmouseout="this.src='/ImageRepository/Document?documentID=3312'"
+     onfocus="this.src='/ImageRepository/Document?documentID=3305'" 
+	onblur="this.src='/ImageRepository/Document?documentID=3312'"> </a></div><!--
+--></div></div><!----><div class="col col1  "><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks"><a class="widgetDesc widgetGraphicLinksLink" href="/Jobs.aspx" target="_self"  aria-label="Employment graphic"><img src="/ImageRepository/Document?documentID=3313" 
+     class="graphicButtonLink" alt="Employment" 
+     onmouseover="this.src='/ImageRepository/Document?documentID=3308'" 
+	onmouseout="this.src='/ImageRepository/Document?documentID=3313'"
+     onfocus="this.src='/ImageRepository/Document?documentID=3308'" 
+	onblur="this.src='/ImageRepository/Document?documentID=3313'"> </a></div><!--
+--></div></div><!----><div class="col col1  last"><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks"><a class="widgetDesc widgetGraphicLinksLink" href="/323/Parcel-Tax-Search" target="_self"  aria-label="Parcel Search graphic"><img src="/ImageRepository/Document?documentID=3314" 
+     class="graphicButtonLink" alt="Parcel Search" 
+     onmouseover="this.src='/ImageRepository/Document?documentID=3309'" 
+	onmouseout="this.src='/ImageRepository/Document?documentID=3314'"
+     onfocus="this.src='/ImageRepository/Document?documentID=3309'" 
+	onblur="this.src='/ImageRepository/Document?documentID=3314'"> </a></div><!--
+--></div></div><!--			--></div>
+	</div>
+	<div class="widgetFooter">
+			</div>
+</div>
+
+</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!--		--></div> <!-- outer row -->
+
+
+	</div>
+</footer></div>
+</div><div data-cpRole="structuralContainer" id="structuralContainer14">
+<div class="siteWrap"><footer data-cpRole="contentContainer" id="contentContainer9" class="siteFooter">	<div id="cca9590c68-eac9-425e-9bca-f154beb656fa" data-containerid="a9590c68-eac9-425e-9bca-f154beb656fa" class="pageContent cpGrid cpGrid24 isLockedContainer showInMobile" data-contentcontainerbreakpoint="40">
+				                
+
+		<div class="row outer autoWidths center wide"><!--
+--><div class="outer col col24 first last" style="" data-widgetcontainerid="44c1f410-4afc-4d8c-a5d4-5303f733adf3">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col24 first last idc60b2f41-09e8-4240-897b-027fa4305ac6" style="" data-widgetcontainerid="c60b2f41-09e8-4240-897b-027fa4305ac6">	
+    <div data-widget-id="8af4e741-0c11-4b54-80ae-704d4bdbf9ff" data-widget-controller-path="/InfoAdvanced/Widget">
+
+
+
+
+
+	<section id="divInfoAdv8af4e741-0c11-4b54-80ae-704d4bdbf9ff" class="widget widgetInfoAdvanced skin37 widgetOptionSet5 wide" data-modulewidgettype="infoAdv" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}' data-elementquerymatch='matchMultiColumn' data-elementqueryunmatch='unmatchMultiColumn' aria-label="Info Advanced">
+			<header class="widgetHeader" id="header8af4e741-0c11-4b54-80ae-704d4bdbf9ff">
+		<div class="">
+								</div>
+	</header>
+	<div class="widgetBody  cpGrid cpGrid1 ">
+		<div class="row  wide">
+					<div class="col col1 first last">
+						<ol class="pageStyles semanticList">
+
+<li class="InfoAdvanced widgetItem ">
+	<a href="/">Home</a>  <a href="/directory.aspx">Contact Us</a> <a href="/sitemap">Site Map</a>      <a href="/accessibility">Accessibility</a>      <a href="/copyright">Copyright Notices</a>     <a href="/disclaimer">Disclaimer</a>      <a class="Hyperlink" title="Government Websites by CivicPlus" href="http://www.civicplus.com" target="_self">Government Websites by CivicPlus®</a> <a class="Hyperlink" title="Employee Login" href="http://az-santacruzcounty.civicplus.com/574/5059/Employee-Portal?activeLiveTab=widgets" target="_blank">Employee Portal</a>&nbsp;<a href="https://owa.santacruzcountyaz.gov/owa/auth/logon.aspx?replaceCurrent=1&amp;url=https%3a%2f%2fowa.santacruzcountyaz.gov%2fowa%2f" target="_self" class="Hyperlink">Employee Email</a><br>
+2150 N. Congress Drive &nbsp; &nbsp; &nbsp;Nogales, AZ 85621 &nbsp; &nbsp; &nbsp;Ph: 520-375-7800&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TDD for the Hearing Impaired 520-375-7934
+</li>						</ol>
+					</div>
+		</div>
+	</div>
+	<div class="widgetFooter">
+
+	</div>
+
+	</section>
+
+
+
+<script type="text/javascript">
+	//Render slideshow if info advacned items contain one.
+	$(document).ready(function (e) {
+		$('#divInfoAdv8af4e741-0c11-4b54-80ae-704d4bdbf9ff .InfoAdvanced.widgetItem').each(function () {
+			renderSlideshowIfApplicable($(this));		
+		});
+	});
+</script></div>	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!--		--></div> <!-- outer row -->
+
+
+	</div>
+</footer></div>
+</div>
+
+
+
+
+			<div id="bannerImagesJSON2" class="hidden"></div>
+				<div id="bannerSlideshowControls_banner1" class="bannerSlideshowControlsNew none " style="display:none">
+					<button id="arrowPrev_banner1" class="arrowNew prev cp-Btn--nonStyled" aria-label="Banner Arrow Previous"><svg class=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#iconSlideshowArrowLeft"></use></svg></button>
+					<button id="arrowNext_banner1" class="arrowNew next cp-Btn--nonStyled" aria-label="Banner Arrow Next"><svg class=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#iconSlideshowArrowRight"></use></svg></button>
+				</div>
+			<script type="text/javascript">
+				onOrLive($(window), function () {
+					$.when(window.Pages.rwdSetupComplete)
+						.done(function () {
+							renderExternalBannerSlideshow('banner1',
+									{"BannerOptionID":2,"ThemeID":1,"SlotName":"banner1","Name":"Default","IsDefault":true,"BannerMode":2,"SlideShowSlideTiming":null,"SlideshowTransition":0,"SlideShowTransitionTiming":null,"ImageScale":true,"ImageAlignment":1,"ImageScroll":true,"MuteSound":true,"VideoType":0,"Status":40,"SlideshowControlsPosition":0,"SlideshowControlsAlignment":0,"SlideshowBannerControlsColorScheme":0,"BannerImages":[{"BannerImageID":53,"BannerOptionID":2,"FileName":"/ImageRepository/Document?documentID=1421","Height":893,"Width":2000,"StartingOn":null,"StoppingOn":null,"IsLink":false,"LinkAddress":null,"Sequence":0,"RecordStatus":0,"ModifiedBy":0,"ModifiedOn":"\/Date(-62135575200000)\/","AltText":""},{"BannerImageID":55,"BannerOptionID":2,"FileName":"/ImageRepository/Document?documentID=1419","Height":893,"Width":2000,"StartingOn":null,"StoppingOn":null,"IsLink":false,"LinkAddress":null,"Sequence":1,"RecordStatus":0,"ModifiedBy":0,"ModifiedOn":"\/Date(-62135575200000)\/","AltText":""},{"BannerImageID":79,"BannerOptionID":2,"FileName":"/ImageRepository/Document?documentID=3617","Height":936,"Width":1998,"StartingOn":null,"StoppingOn":null,"IsLink":false,"LinkAddress":null,"Sequence":2,"RecordStatus":0,"ModifiedBy":0,"ModifiedOn":"\/Date(-62135575200000)\/","AltText":""},{"BannerImageID":83,"BannerOptionID":2,"FileName":"/ImageRepository/Document?documentID=3841","Height":936,"Width":1998,"StartingOn":null,"StoppingOn":null,"IsLink":false,"LinkAddress":null,"Sequence":3,"RecordStatus":0,"ModifiedBy":0,"ModifiedOn":"\/Date(-62135575200000)\/","AltText":""}],"BannerVideos":[],"RecordStatus":0,"ModifiedBy":0,"ModifiedOn":"\/Date(-62135575200000)\/"},
+								'/App_Themes/Interior/Images/',
+								'Rotating',
+								'1');
+						});
+				}, "load");				
+			</script>
+
+
+</div>
+</div>
+</div>
+
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	
+	
+
+
+
+	<script type="text/javascript">function dynamicStretchContainers () {Core.Layout.stretchContainers('#featureColumn, #structuralContainer1, #structuralContainer3');}</script>
+
+
+
+
+
+
+	<script src="/237693563.js" type="text/javascript"></script>
+	<!-- Piwik -->
+<script type="text/javascript"> 
+  var _paq = _paq || [];
+  _paq.push(['setCustomUrl', location.href.toLowerCase()]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  $(window).load(function(){
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://analytics.civicplus.com//";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 1856]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  });
+
+</script>
+<noscript><p><img src="http://analytics.civicplus.com/piwik.php?idsite=1856" style="border:0" alt="Piwik" /></p></noscript>
+<!-- End Piwik Code -->
+<!-- Google Translate -->
+<script type="text/javascript">
+	var translateActiveCookie = getCookieValue('translateActive');
+
+	if (translateActiveCookie == 'true') {
+		enableGoogleTranslate();
+	} else {
+		var button = '<a href="#translate" class="translateWidget" title="Enable Google Translate" style="background-color: #FFF;border-color: #9b9b9b #d5d5d5 transparent #d5d5d5;border-style: solid;border-width: 1px 1px 0 1px;bottom: 0px;color: #000;cursor: pointer;font-size: .9em;padding: 2px 6px 3px 4px;position: fixed;right: 20px;z-index: 5;">';
+		button += '<img alt="Google Translate Icon" src="/Assets/Images/GoogleTranslate.gif" style="box-sizing: content-box !important;height:19px;margin: -2px 0 0 -2px;padding-right: 5px;width:19px;">Enable Google Translate</a>';
+		$('div[data-cprole="structuralContainer"]').last().after(button);
+	}
+
+	function googleTranslateElementInit() {
+  		new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+	}
+
+	function enableGoogleTranslate() {
+		$('#google_translate_element').show();
+		var sz = document.createElement('script'); sz.type = 'text/javascript'; sz.async = true;
+		sz.src = '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sz, s);
+		$('div[data-cprole="structuralContainer"]').last().after('<div id="google_translate_element" style="position: fixed; bottom: 0px; right: 20px; z-index: 5;"></div>');
+	        document.cookie = "translateActive=true; expires=12/31/2999; path=/";
+	}
+
+	$('a.translateWidget').unbind('click').click(function (e) {
+		$(this).hide();
+		enableGoogleTranslate();
+		return false;
+	});
+</script><!-- End Translate -->
+	
+
+
+
+	<script type="text/javascript">
+		$(function () {
+			document.cookie = "responsiveGhost=0; path=/";
+		});
+		onOrLive($(window), function () {
+			$('body').addClass('doneLoading').removeClass('hideContent');
+
+			if ($('#404Content').length > 0)
+				$('div#bodyWrapper').css('padding', '0px');
+		}, 'load');
+	</script>
+
+	<noscript>
+		<style>
+			body.hideContent {
+				opacity: 1 !important;
+			}
+		</style>
+	</noscript>
+
+		
+<div style="display: none;">
+	<svg xmlns="http://www.w3.org/2000/svg" style="display:none;">
+
+		<symbol id="iconArrow--left" viewbox="0 0 25 25">
+			<title>Arrow Left</title>
+			<polygon style="fill:currentcolor" points="18.044,25 19.498,23.545 8.409,12.454 19.408,1.455 17.954,0 5.502,12.452"></polygon>
+		</symbol>
+
+		<symbol id="iconArrow--right" viewbox="0 0 25 25">
+			<title>Arrow Right</title>
+			<polygon style="fill:currentcolor" points="6.957,0 5.502,1.455 16.591,12.546 5.592,23.545 7.047,25 19.498,12.548"></polygon>
+		</symbol>
+
+	</svg>
+</div>
+	<script type="text/javascript">loadCSS('//fonts.googleapis.com/css?family=Gafata:regular|');</script>
+	
+
+	<div class="hidden activeWidgetSkinComponentsOnPageJson">[]</div>
+		<div style="display: none;">
+			<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+				<symbol id="iconSlideshowArrowLeft" viewBox="0 0 22.68 40">
+					<title>Slideshow Left Arrow</title>
+					<g>
+						<path style="fill:currentcolor;" d="M20,40a2.67,2.67,0,0,1-1.9-.79L.79,21.9a2.68,2.68,0,0,1,0-3.79L18.1.79a2.68,2.68,0,1,1,3.79,3.79L6.47,20,21.89,35.42A2.68,2.68,0,0,1,20,40Z"></path>
+					</g>
+				</symbol>
+				<symbol id="iconSlideshowArrowRight" viewBox="0 0 22.68 40">
+					<title>Slideshow Right Arrow</title>
+					<g>
+						<path style="fill:currentcolor;" d="M2.68,0a2.67,2.67,0,0,1,1.9.79L21.89,18.1a2.68,2.68,0,0,1,0,3.79L4.58,39.21A2.68,2.68,0,0,1,.79,35.42L16.21,20,.79,4.58A2.68,2.68,0,0,1,2.68,0Z"></path>
+					</g>
+				</symbol>
+			</svg>
+		</div>
+	
+	
+
+	</body>
+</html>

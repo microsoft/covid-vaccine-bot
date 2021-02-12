@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>COVID-19 Vaccination Information | Department of Health | State of Louisiana</title>
+    <meta name="description" content="The Louisiana Department of Health protects and promotes health and ensures access to medical, preventive and rehabilitative services for all citizens of the State of Louisiana.">
+    <meta name="keywords" content="health, louisiana, LDH">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700,600|Playfair+Display:400" rel="stylesheet" type="text/css">
+    <link href="/css/dhh-styles.css?v=4" rel="stylesheet" type="text/css">
+    <link href="/css/wysiwyg.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <script src="/js/jquery-1.11.3.min.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/ie8-and-down.css" />
+<![endif]-->
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+          'gtm.start':
+            new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-M6QZVTF');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- MESH Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+          'gtm.start':
+            new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-PHQ8XH2');</script>
+    <!-- End MESH Google Tag Manager -->
+
+
+  </head>
+
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M6QZVTF" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="force-wrapper">
+      <!--HEADER-->
+      <header id="header" class="subhome">
+        <div class="container">
+          <div class="logo-bar">
+            <div class="row">
+              <div class="col-sm-8 col-xs-6 mob-wdth">
+                <div class="logo-wrap">
+                  <div class="seal"><a href="http://gov.la.gov"><img src="/images/state-seal.png" alt="Louisiana State Seal"></a></div>
+                  <div class="logo"><a href="/"><img src="/images/dhh-logo.png" alt="Department of Health and Hospitals logo"></a></div>
+                </div>
+              </div>
+              <div class="col-sm-4 col-xs-6 mob-wdth">
+                <div class="rt-content">
+                  <div class="wrapper">
+                    <div class="sec-bar pull-right">
+                      <div class="sec-title">Secretary</div>
+                      <div class="sec-name"><span>Dr. Courtney N. Phillips</span></div>
+                    </div>
+                  </div>
+                  <div class="wrapper"> <a class="pull-right" href="/">
+                      <div class="btn dhh"><i class="fa fa-chevron-left" aria-hidden="true"></i> Back to LDH</div>
+                    </a> </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sub-header">
+          <div class="container">
+            <div class="wrapper">
+              <div>
+                <div>
+
+                  <div class="title">COVID-19</div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="breadcrumb-bar">
+          <div class="container">
+
+            <a href="http://gov.la.gov">Louisiana.gov</a> &gt; <a href="/">LDH</a>
+            &gt; <a href="/index.cfm/subhome/65">Louisiana Coronavirus COVID-19</a>
+          </div>
+        </div>
+      </header>
+      <!--/HEADER-->
+      <!--CONTENT-->
+
+      <section id="news">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-2 col-sm-3">
+
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle secondary-collapse collapsed" data-toggle="collapse" data-target="#secondary-nav"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+              </div>
+              <nav id="secondary-nav" class="secondary-nav collapse navbar-collapse">
+
+                <ul>
+
+                  <li class="menu-item dropdown-submenu">
+                    <a href="/index.cfm/page/3937" tabindex="-1" shpid="65" class="link-off">ABOUT COVID-19</a>
+
+                  </li>
+
+                  <li class="menu-item dropdown-submenu">
+                    <a href="http://covidvaccine.la.gov" tabindex="-1" shpid="65" class="link-off">VACCINE INFORMATION</a>
+
+                  </li>
+
+                  <li class="menu-item dropdown-submenu">
+                    <a href="/covid19testing" tabindex="-1" target="_blank" shpid="65" class="link-off">TESTING SITES</a>
+
+                  </li>
+
+                  <li class="menu-item dropdown-submenu">
+                    <a href="/index.cfm/page/3957" tabindex="-1" shpid="65" class="link-off">Contact Tracing</a>
+
+                  </li>
+
+                  <li class="menu-item dropdown-submenu">
+                    <a href="/index.cfm/newsroom/category/227" tabindex="-1" shpid="65" class="link-off">COVID-19 NEWS</a>
+
+                  </li>
+
+                  <li class="menu-item dropdown-submenu">
+                    <a href="http://ldh.la.gov/COVID-19Outbreaks" tabindex="-1" shpid="65" class="link-off">COVID-19 OUTBREAKS</a>
+
+                  </li>
+
+                  <li class="menu-item dropdown-submenu">
+                    <a href="/index.cfm/page/3878" tabindex="-1" shpid="65" class="link-off">GUIDANCE &amp; RESOURCES</a>
+
+                  </li>
+
+                  <li class="menu-item dropdown-submenu">
+                    <a href="/COVID-19IHEReporting" tabindex="-1" target="_blank" shpid="65" class="link-off">INSTITUTION-LEVEL DATA</a>
+
+                  </li>
+
+                  <li class="menu-item dropdown-submenu">
+                    <a href="/index.cfm/page/3965" tabindex="-1" shpid="65" class="link-off">Long-Term Care Facilities</a>
+
+                  </li>
+
+                  <li class="menu-item dropdown-submenu">
+                    <a href="/index.cfm/subhome/64" tabindex="-1" target="_blank" shpid="65" class="link-off">MEDICAL MONITORING STATIONS</a>
+
+                  </li>
+
+                  <li class="menu-item dropdown-submenu">
+                    <a href="/index.cfm/page/3968" tabindex="-1" shpid="65" class="link-off">MIS-C</a>
+
+                  </li>
+
+                  <li class="menu-item dropdown-submenu">
+                    <a href="/index.cfm/page/3884" tabindex="-1" shpid="65" class="link-off">PPE REQUESTS</a>
+
+                  </li>
+
+                  <li class="menu-item dropdown-submenu">
+                    <a href="/index.cfm/page/3880" tabindex="-1" shpid="65" class="link-off">PROVIDER INFORMATION</a>
+
+                  </li>
+
+                  <li class="menu-item dropdown-submenu">
+                    <a href="http://ldh.la.gov/COVID-19TestingPlan" tabindex="-1" shpid="65" class="link-off">TESTING PLAN</a>
+
+                  </li>
+
+                </ul>
+
+              </nav>
+            </div>
+            <div class="col-md-8 col-sm-9">
+
+
+
+
+
+
+
+              <div class="row main-content">
+                <div class="col-sm-12">
+                  <p><span class="header">COVID-19 Vaccination Information</span></p>
+                  <p><a class="btn btn-primary full-width" href="https://ldh.la.gov/covidvaccine-locations/">Vaccine Locations</a></p>
+								  <p><a class="btn btn-primary full-width" href="https://ldh.la.gov/index.cfm/newsroom/category/233">Vaccination News</a></p>
+				<p><a title="SLEEVES UP - to help end the pandemic" href="/assets/oph/Coronavirus/Vaccine/img/DigitalAd_MobileInterstitial_Vaccine.jpg" target="_blank" rel="noopener noreferrer"><img style="border-width: 0px; float: right; margin: 10px;" src="/assets/oph/Coronavirus/Vaccine/img/DigitalAd_MobileInterstitial_Vaccine-th.jpg" alt="SLEEVES UP - to help end the pandemic" width="259" /></a>The Louisiana Department of Health is coordinating the COVID-19 vaccine distribution effort in Louisiana. As more vaccines become available from the CDC, more individuals and groups will be offered a vaccination.</p>
+                  <p></p>
+                <p>Limited amounts of COVID vaccines are available at select locations only for:</p>
+                <ul>
+<li>Persons 65 and older</li>
+<li>Dialysis providers and patients</li>
+<li>Ambulatory and outpatient providers and staff
+<ul>
+<li>Behavioral health providers and staff</li>
+<li>Urgent care clinic providers and staff</li>
+<li>Community care providers and staff</li>
+<li>Dental providers and staff</li>
+</ul>
+</li>
+<li>Professional home care providers (including hospice workers) and home care recipients (including older and younger people with disabilities over the age of 16 who receive community or home-based care, as well as clients of home health agencies)</li>
+<li>American Sign Language (ASL) and foreign language interpreters and Support Service Providers (SSPs) working in community and clinic-based settings, and clients who are both deaf and blind</li>
+<li>Health-related support personnel (lab staff, mortuary staff who have contact with corpses, pharmacy staff)</li>
+<li>Schools of allied health students, residents and staff</li>
+<li>Law enforcement and other first responders</li>
+<li>Louisiana Unified Command Group</li>
+<li>State and local essential COVID emergency response personnel</li>
+<li>Some elections staff ahead of March elections</li>
+</ul>
+<p><strong>Patients must contact a participating location and make an appointment</strong> at the location. Do not arrive at a location without an appointment. LDH cannot make appointments for residents; only participating locations can.&nbsp;Appointments do not have to be made to receive the second dose of the vaccine.&nbsp;<strong>Second doses are given at the same location a person receives their first dose and the appointment for the second dose will be made during the appointment for the first dose.</strong></p>
+                  <div class="row">
+
+                    <div class="col-sm-12">
+
+                      <!-- DASHBOARD -->
+
+                      <div id="covid-dashboard">
+
+                        <iframe scrolling="yes" frameborder="0" src="https://ladhh.maps.arcgis.com/apps/opsdashboard/index.html#/7b2a0703a129451eaaf9046c213331ed"></iframe>
+                        <br>
+                        <p style="text-align: center;">The dashboard above is best viewed in Chrome, Safari, or Firefox. If you are having trouble viewing the dashboard, <a href="https://ladhh.maps.arcgis.com/apps/opsdashboard/index.html#/4ecc2bfa2fa54b6eb5c0eccda972d203" target="_blank" rel="noopener noreferrer">click here for COVID-19 information</a> or <a href="https://ladhh.maps.arcgis.com/apps/opsdashboard/index.html#/7b2a0703a129451eaaf9046c213331ed" target="_blank" rel="noopener noreferrer">click here for vaccination information.</a></p><p><a class="btn btn-primary full-width" href="https://ldh.la.gov/assets/docs/covid/Vaccine-Delivered-Release.pdf" target="_blank">COVID-19 Vaccine Initial Deliveries</a></p>
+                      </div>
+                      <!-- DASHBOARD -->
+
+                    </div>
+
+                  </div>
+                  <p><span class="wysiwyg-subbar-dark">Vaccine Communication Materials&nbsp;<img src="/assets/images/new.png" alt="" width="25" height="25" /></span></p>
+<ul>
+<li><a title="COVID-19 Vaccines Will Be Free" href="/assets/oph/Coronavirus/Vaccine/resources/Vaccine-Cost-FB.png" target="_blank" rel="noopener noreferrer"><img style="border-width: 0px; float: right;" src="/assets/oph/Coronavirus/Vaccine/resources/Vaccine-Cost-FB-th.png" alt="COVID-19 Vaccines Will Be Free" width="234" height="132" /></a>So You Have Covid-19: Have You Considered Monoclonal Antibody Treatment?:&nbsp;<a href="/assets/oph/Coronavirus/Vaccine/Monoclonal-Antibodies-public.pdf" target="_blank" rel="noopener noreferrer">English</a>&nbsp;|&nbsp;<a href="/assets/oph/Coronavirus/Vaccine/resources/sp/Monoclonal-Antibodies-ES.pdf" target="_blank" rel="noopener noreferrer">Spanish</a>&nbsp;|&nbsp;<a href="/assets/oph/Coronavirus/Vaccine/resources/vt/Monoclonal-Antibodies-VI.pdf" target="_blank" rel="noopener noreferrer">Vietnamese</a></li>
+<li>Help Others Who Qualify for a Vaccine:
+<ul>
+<li>English:&nbsp;<a href="/assets/oph/Coronavirus/Vaccine/resources/Help-Others-1.png" target="_blank" rel="noopener noreferrer">1</a>&nbsp;|&nbsp;<a href="/assets/oph/Coronavirus/Vaccine/resources/Help-Others-2.png" target="_blank" rel="noopener noreferrer">2</a>&nbsp;|&nbsp;<a href="/assets/oph/Coronavirus/Vaccine/resources/Help-Others-3.png" target="_blank" rel="noopener noreferrer">3</a>&nbsp;|&nbsp;<a href="/assets/oph/Coronavirus/Vaccine/resources/Help-Others-4.png" target="_blank" rel="noopener noreferrer">4</a></li>
+<li>Spanish:&nbsp;<a href="/assets/oph/Coronavirus/Vaccine/resources/sp/ES-Help-Others-1.png" target="_blank" rel="noopener noreferrer">1</a>&nbsp;|&nbsp;<a href="/assets/oph/Coronavirus/Vaccine/resources/sp/ES-Help-Others-2.png" target="_blank" rel="noopener noreferrer">2</a>&nbsp;|&nbsp;<a href="/assets/oph/Coronavirus/Vaccine/resources/sp/ES-Help-Others-3.png" target="_blank" rel="noopener noreferrer">3</a>&nbsp;|&nbsp;<a href="/assets/oph/Coronavirus/Vaccine/resources/sp/ES-Help-Others-4.png" target="_blank" rel="noopener noreferrer">4</a></li>
+<li>Vietnamese:&nbsp;<a href="/assets/oph/Coronavirus/Vaccine/resources/vt/VI-Help-Others-1.png" target="_blank" rel="noopener noreferrer">1</a>&nbsp;|&nbsp;<a href="/assets/oph/Coronavirus/Vaccine/resources/vt/VI-Help-Others-2.png" target="_blank" rel="noopener noreferrer">2</a>&nbsp;|&nbsp;<a href="/assets/oph/Coronavirus/Vaccine/resources/vt/VI-Help-Others-3.png" target="_blank" rel="noopener noreferrer">3</a>&nbsp;|&nbsp;<a href="/assets/oph/Coronavirus/Vaccine/resources/vt/VI-Help-Others-4.png" target="_blank" rel="noopener noreferrer">4</a></li>
+</ul>
+</li>
+<li>How Much Does It Cost?:
+<ul>
+<li>English:&nbsp;<a href="/assets/oph/Coronavirus/Vaccine/resources/Vaccine-Cost-FB.png" target="_blank" rel="noopener noreferrer">Facebook</a> | <a href="/assets/oph/Coronavirus/Vaccine/resources/Vaccine-Cost-IG-TW.png" target="_blank" rel="noopener noreferrer">Instagram/Twitter</a></li>
+<li style="text-align: left;">Spanish:&nbsp;<a href="/assets/oph/Coronavirus/Vaccine/resources/sp/ES-Vaccine-Cost-FB.png" target="_blank" rel="noopener noreferrer">Facebook</a> | <a href="/assets/oph/Coronavirus/Vaccine/resources/sp/ES-Vaccine-Cost-IG-TW.png" target="_blank" rel="noopener noreferrer">Instagram/Twitter</a></li>
+<li>Vietnamese:&nbsp;<a href="/assets/oph/Coronavirus/Vaccine/resources/vt/VI-Vaccine-Cost-FB.png" target="_blank" rel="noopener noreferrer">Facebook</a>&nbsp;|&nbsp;<a href="/assets/oph/Coronavirus/Vaccine/resources/vt/VI-Vaccine-Cost-IG-TW.png" target="_blank" rel="noopener noreferrer">Instagram/Twitter</a></li>
+</ul>
+</li>
+<li>Scheduling a COVID Vaccine:
+<ul>
+<li>English for Facebook:&nbsp;<a href="/assets/oph/Coronavirus/Vaccine/resources/SchedulingAVaccine-FB-1.png" target="_blank" rel="noopener noreferrer">1</a>&nbsp;|&nbsp;<a href="/assets/oph/Coronavirus/Vaccine/resources/SchedulingAVaccine-FB-2.png" target="_blank" rel="noopener noreferrer">2&nbsp;</a>|&nbsp;<a href="/assets/oph/Coronavirus/Vaccine/resources/SchedulingAVaccine-3-FB.png" target="_blank" rel="noopener noreferrer">3&nbsp;</a>|&nbsp;<a href="/assets/oph/Coronavirus/Vaccine/resources/SchedulingAVaccine-4-FB.png" target="_blank" rel="noopener noreferrer">4</a></li>
+<li>English for Instagram/Twitter:&nbsp;&nbsp;<a href="/assets/oph/Coronavirus/Vaccine/resources/SchedulingAVaccine_1.png" target="_blank" rel="noopener noreferrer">1</a>&nbsp;|&nbsp;<a href="/assets/oph/Coronavirus/Vaccine/resources/SchedulingAVaccine_2.png" target="_blank" rel="noopener noreferrer">2&nbsp;</a>|&nbsp;<a href="/assets/oph/Coronavirus/Vaccine/resources/SchedulingAVaccine-3-IG-TW.png" target="_blank" rel="noopener noreferrer">3&nbsp;</a>|&nbsp;<a href="/assets/oph/Coronavirus/Vaccine/resources/SchedulingAVaccine_4.png" target="_blank" rel="noopener noreferrer">4</a></li>
+<li>Spanish for Facebook:&nbsp;&nbsp;<a href="/assets/oph/Coronavirus/Vaccine/resources/sp/ES-Vaccine-Scheduling-1-FB.png" target="_blank" rel="noopener noreferrer">1</a>&nbsp;|&nbsp;<a href="/assets/oph/Coronavirus/Vaccine/resources/sp/ES-Vaccine-Scheduling-2-FB.png" target="_blank" rel="noopener noreferrer">2&nbsp;</a>|&nbsp;<a href="/assets/oph/Coronavirus/Vaccine/resources/sp/ES-Vaccine-Scheduling-3-FB.png" target="_blank" rel="noopener noreferrer">3&nbsp;</a>|&nbsp;<a href="/assets/oph/Coronavirus/Vaccine/resources/sp/ES-Vaccine-Scheduling-4-FB.png" target="_blank" rel="noopener noreferrer">4</a></li>
+<li>Spanish for Instagram/Twitter:&nbsp;&nbsp;<a href="/assets/oph/Coronavirus/Vaccine/resources/sp/ES-Vaccine-Scheduling-1-IG-TW.png" target="_blank" rel="noopener noreferrer">1</a>&nbsp;|&nbsp;<a href="/assets/oph/Coronavirus/Vaccine/resources/sp/ES-Vaccine-Scheduling-2-IG-TW.png" target="_blank" rel="noopener noreferrer">2&nbsp;</a>|&nbsp;<a href="/assets/oph/Coronavirus/Vaccine/resources/sp/ES-Vaccine-Scheduling-3-IG-TW.png" target="_blank" rel="noopener noreferrer">3&nbsp;</a>|&nbsp;<a href="/assets/oph/Coronavirus/Vaccine/resources/sp/ES-Vaccine-Scheduling-4-IG-TW.png" target="_blank" rel="noopener noreferrer">4</a></li>
+<li>Vietnamese for Facebook:&nbsp;&nbsp;<a href="/assets/oph/Coronavirus/Vaccine/resources/vt/VT-Vaccine-Scheduling-1-FB.png" target="_blank" rel="noopener noreferrer">1</a>&nbsp;|&nbsp;<a href="/assets/oph/Coronavirus/Vaccine/resources/vt/VT-Vaccine-Scheduling-2-FB.png" target="_blank" rel="noopener noreferrer">2&nbsp;</a>|&nbsp;<a href="/assets/oph/Coronavirus/Vaccine/resources/vt/VT-Vaccine-Scheduling-3-FB.png" target="_blank" rel="noopener noreferrer">3&nbsp;</a>|&nbsp;<a href="/assets/oph/Coronavirus/Vaccine/resources/vt/VT-Vaccine-Scheduling-4-FB.png" target="_blank" rel="noopener noreferrer">4</a></li>
+<li>Vietnamese for Instagram/Twitter:&nbsp;&nbsp;<a href="/assets/oph/Coronavirus/Vaccine/resources/vt/VT-Vaccine-Scheduling-1-IG-TW.png" target="_blank" rel="noopener noreferrer">1</a>&nbsp;|&nbsp;<a href="/assets/oph/Coronavirus/Vaccine/resources/vt/VT-Vaccine-Scheduling-2-IG-TW.png" target="_blank" rel="noopener noreferrer">2&nbsp;</a>|&nbsp;<a href="/assets/oph/Coronavirus/Vaccine/resources/vt/VT-Vaccine-Scheduling-3-IG-TW.png" target="_blank" rel="noopener noreferrer">3&nbsp;</a>|&nbsp;<a href="/assets/oph/Coronavirus/Vaccine/resources/vt/VT-Vaccine-Scheduling-4-IG-TW.png" target="_blank" rel="noopener noreferrer">4</a></li>
+</ul>
+</li>
+<li><a title="COVID-19 Vaccine FAQs" href="/index.cfm/faq/category/138" target="_blank" rel="noopener noreferrer">COVID-19 Vaccine FAQs</a></li>
+<li>FAQ Graphics: <a href="/assets/oph/Coronavirus/Vaccine/resources/faqgraphics/1.png" target="_blank" rel="noopener noreferrer">1</a> | <a href="/assets/oph/Coronavirus/Vaccine/resources/faqgraphics/2.png" target="_blank" rel="noopener noreferrer">2</a> | <a href="/assets/oph/Coronavirus/Vaccine/resources/faqgraphics/3.png" target="_blank" rel="noopener noreferrer">3</a> | <a href="/assets/oph/Coronavirus/Vaccine/resources/faqgraphics/4.png" target="_blank" rel="noopener noreferrer">4</a> | <a href="/assets/oph/Coronavirus/Vaccine/resources/faqgraphics/5.png" target="_blank" rel="noopener noreferrer">5</a> | <a href="/assets/oph/Coronavirus/Vaccine/resources/faqgraphics/6.png" target="_blank" rel="noopener noreferrer">6</a> | <a href="/assets/oph/Coronavirus/Vaccine/resources/faqgraphics/7.png" target="_blank" rel="noopener noreferrer">7</a> | <a href="/assets/oph/Coronavirus/Vaccine/resources/faqgraphics/8.png" target="_blank" rel="noopener noreferrer">8</a> | <a href="/assets/oph/Coronavirus/Vaccine/resources/faqgraphics/9.png" target="_blank" rel="noopener noreferrer">9 </a>| <a href="/assets/oph/Coronavirus/Vaccine/resources/faqgraphics/10.png" target="_blank" rel="noopener noreferrer">10</a></li>
+<li><a title="FAQs about Long-Term Care Pharmacy Partnerships" href="https://www.cdc.gov/vaccines/covid-19/long-term-care/pharmacy-partnerships-faqs.html" target="_blank" rel="noopener noreferrer">FAQs about Long-Term Care Pharmacy Partnerships</a></li>
+<li>Clinical Trials and Safety: <a href="/assets/oph/Coronavirus/Vaccine/COVID_Vaccine_ClinicalTrials-Safety.pdf" target="_blank" rel="noopener noreferrer">English</a> | <a href="/assets/oph/Coronavirus/Vaccine/COVID_Vaccine_ClinicalTrialsSafety_ES.pdf" target="_blank" rel="noopener noreferrer">Spanish</a> | <a href="/assets/oph/Coronavirus/Vaccine/COVID_Vaccine_ClinicalTrialsSafety_VT.pdf" target="_blank" rel="noopener noreferrer">Vietnamese</a></li>
+<li>Who Gets It Now:
+<ul>
+<li>English:&nbsp; &nbsp;<a href="/assets/oph/Coronavirus/resources/Vaccine/Vaccine-Who-Gets-It-Now-FB.png" target="_blank" rel="noopener noreferrer">Facebook</a>&nbsp;|&nbsp;<a href="/assets/oph/Coronavirus/resources/Vaccine/Vaccine-Who-Gets-It-Now-IGTW.png" target="_blank" rel="noopener noreferrer">Instagram/Twitter</a></li>
+<li>Spanish:&nbsp;&nbsp;<a href="/assets/oph/Coronavirus/Vaccine/resources/sp/ES-Who-Gets-It-Right-Now-FB.png" target="_blank" rel="noopener noreferrer">Facebook</a>&nbsp;|&nbsp;<a href="/assets/oph/Coronavirus/Vaccine/resources/sp/ES-Who-Gets-It-Right-Now-IG-TW.png" target="_blank" rel="noopener noreferrer">Instagram/Twitter</a></li>
+<li>Vietnamese:&nbsp;&nbsp;<a href="/assets/oph/Coronavirus/Vaccine/resources/vt/VT-Who-Gets-It-Right-Now-FB.png" target="_blank" rel="noopener noreferrer">Facebook</a>&nbsp;|&nbsp;<a href="/assets/oph/Coronavirus/Vaccine/resources/vt/VT-Who-Gets-It-Right-Now-IG-TW.png" target="_blank" rel="noopener noreferrer">Instagram/Twitter</a></li>
+</ul>
+</li>
+<li>Who Gets It Next:&nbsp; &nbsp;<a href="/assets/oph/Coronavirus/resources/Vaccine/Vaccine-1BT2-FB.png" target="_blank" rel="noopener noreferrer">Facebook</a>&nbsp;|&nbsp;<a href="/assets/oph/Coronavirus/resources/Vaccine/Vaccine-1BT2-IGTW.png" target="_blank" rel="noopener noreferrer">Instagram/Twitter</a>&nbsp;</li>
+<li>Vaccine Fact Sheet (What You Need to Know): <a href="/assets/oph/Coronavirus/Vaccine/COVID_Vaccine_WhatYouNeedToKnow.pdf" target="_blank" rel="noopener noreferrer">English</a> | <a href="/assets/oph/Coronavirus/Vaccine/resources/sp/COVID_Vaccine_WhatYouNeedToKnow_ES.pdf" target="_blank" rel="noopener noreferrer">Spanish</a> | <a href="/assets/oph/Coronavirus/Vaccine/resources/vt/COVID_Vaccine_WhatYouNeedToKnow_VT.pdf" target="_blank" rel="noopener noreferrer">Vietnamese</a></li>
+<li>Vaccine Recipient Q &amp; A:&nbsp;<a href="/assets/oph/Coronavirus/Vaccine/resources/COVID_Vaccine_FAQs.pdf" target="_blank" rel="noopener noreferrer">English</a>&nbsp;|&nbsp;<a href="/assets/oph/Coronavirus/Vaccine/resources/sp/COVID_Vaccine_FAQs_ES.pdf" target="_blank" rel="noopener noreferrer">Spanish&nbsp;</a>&nbsp;|&nbsp;<a href="/assets/oph/Coronavirus/Vaccine/resources/vt/COVID_Vaccine_FAQs_VI.pdf" target="_blank" rel="noopener noreferrer">Vietnamese</a></li>
+<li>Safe and Effective:
+<ul>
+<li>English:&nbsp;<a href="/assets/oph/Coronavirus/resources/Vaccine/Vaccine-Safe-Effective-FB.png" target="_blank" rel="noopener noreferrer">Facebook</a>&nbsp;|&nbsp;<a href="/assets/oph/Coronavirus/resources/Vaccine/Vaccine-Safe-Effective-IG-TW.png" target="_blank" rel="noopener noreferrer">Instagram/Twitter</a></li>
+<li>Spanish:&nbsp;&nbsp;<a href="/assets/oph/Coronavirus/Vaccine/resources/sp/SP-Safe-and-Effective-FB.png" target="_blank" rel="noopener noreferrer">Facebook</a>&nbsp;|&nbsp;<a href="/assets/oph/Coronavirus/Vaccine/resources/sp/SP-Safe-and-Effective-IG-TW.png" target="_blank" rel="noopener noreferrer">Instagram/Twitter</a></li>
+<li>Vietnamese:&nbsp;&nbsp;<a href="/assets/oph/Coronavirus/Vaccine/resources/vt/VT-Safe-and-Effective-FB.png" target="_blank" rel="noopener noreferrer">Facebook</a>&nbsp;|&nbsp;<a href="/assets/oph/Coronavirus/Vaccine/resources/vt/VT-Safe-and-Effective-IG-TW.png" target="_blank" rel="noopener noreferrer">Instagram/Twitter</a></li>
+</ul>
+</li>
+<li>How it Works:
+<ul>
+<li>English:&nbsp;<a href="/assets/oph/Coronavirus/resources/Vaccine/Vaccine-How-it-Works-FB.png" target="_blank" rel="noopener noreferrer">Facebook</a>&nbsp;|&nbsp;<a href="/assets/oph/Coronavirus/resources/Vaccine/Vaccine-How-it-Works-IG-TW.png" target="_blank" rel="noopener noreferrer">Instagram/Twitter</a></li>
+<li>Spanish:&nbsp;&nbsp;<a href="/assets/oph/Coronavirus/Vaccine/resources/sp/SP-How-it-Works-FB.png" target="_blank" rel="noopener noreferrer">Facebook</a>&nbsp;|&nbsp;<a href="/assets/oph/Coronavirus/Vaccine/resources/sp/SP-How-it-Works-IG-TW.png" target="_blank" rel="noopener noreferrer">Instagram/Twitter</a></li>
+<li>Vietnamese:&nbsp;&nbsp;<a href="/assets/oph/Coronavirus/Vaccine/resources/vt/VT-How-it-Works-FB.png" target="_blank" rel="noopener noreferrer">Facebook</a>&nbsp;|&nbsp;<a href="/assets/oph/Coronavirus/Vaccine/resources/vt/VT-How-it-Works-IG-TW.png" target="_blank" rel="noopener noreferrer">Instagram/Twitter</a></li>
+</ul>
+</li>
+<li>Light at the End of the Tunnel:
+<ul>
+<li>English:&nbsp;<a href="/assets/oph/Coronavirus/resources/Vaccine/Vaccine-Light-at-End-Tunnel-FB.png" target="_blank" rel="noopener noreferrer">Facebook</a>&nbsp;|&nbsp;<a href="/assets/oph/Coronavirus/resources/Vaccine/Vaccine-Light-at-End-of-Tunnel-IG-TW.png" target="_blank" rel="noopener noreferrer">Instagram/Twitter</a></li>
+<li>Spanish:&nbsp;&nbsp;<a href="/assets/oph/Coronavirus/Vaccine/resources/sp/SP-Light-at-the-End-of-the-Tunnel-FB.png" target="_blank" rel="noopener noreferrer">Facebook</a>&nbsp;|&nbsp;<a href="/assets/oph/Coronavirus/Vaccine/resources/sp/SP-Light-at-the-End-of-the-Tunnel-IG-TW.png" target="_blank" rel="noopener noreferrer">Instagram/Twitter</a></li>
+<li>Vietnamese:&nbsp;&nbsp;<a href="/assets/oph/Coronavirus/Vaccine/resources/vt/VT-Light-at-the-End-of-the-Tunnel-FB.png" target="_blank" rel="noopener noreferrer">Facebook</a>&nbsp;|&nbsp;<a href="/assets/oph/Coronavirus/Vaccine/resources/vt/VT-Light-at-the-End-of-the-Tunnel-IG-TW.png" target="_blank" rel="noopener noreferrer">Instagram/Twitter</a></li>
+</ul>
+</li>
+</ul>
+<p style="text-align: center;">&nbsp;<a title="COVID Defense - Click for more information" href="https://coviddefensela.com" target="_blank" rel="noopener noreferrer"><img style="border-width: 0px;" src="/assets/oph/Coronavirus/images/COVID-DEFENSE-LOGO.png" alt="COVID Defense - Click for more information" width="300" height="88" /></a></p>
+                  <p><span class="wysiwyg-subbar wysiwyg-subbar-dark"><strong>Reporting Adverse Reactions</strong></span></p>
+                  <p>After a vaccine is authorized or approved for use, many vaccine safety monitoring systems watch for adverse events (possible side effects). This continued monitoring can pick up on adverse events that may not have been seen in clinical trials. If an unexpected adverse event is seen, experts quickly study it further to assess whether it is a true safety concern. Experts then decide whether changes are needed in U.S. vaccine recommendations. This monitoring is critical to help ensure that the benefits continue to outweigh the risks for people who receive vaccines.</p>
+                  <p>Immediately (24/7) report severe COVID-19 vaccine reactions&nbsp;<strong>requiring hospitalization</strong>&nbsp;to the Office of Public Health (OPH) at&nbsp;<strong>1-800-256-2748</strong>. For more information, view the&nbsp;<a href="/assets/oph/Center-PHCH/Center-PH/immunizations/HANS20-52-COVID-19-Vaccination-Severe-Allergic-Reaction-Reporting.pdf" target="_blank" rel="noopener noreferrer">Health Alert Networks Message 20-52: COVID-19 Vaccination Severe/Allergic Reaction Reporting</a>.</p>
+                  <p><span class="wysiwyg-subbar">v-safe</span></p>
+                  <p>v-safe is a smartphone-based tool that uses text messaging and web surveys to&nbsp;<strong>provide personalized health check-ins after you receive a COVID-19 vaccination</strong>. Through v-safe, you can quickly tell CDC if you have any side effects after getting the COVID-19 vaccine. Depending on your answers, someone from CDC may call to check on you and get more information. V-safe will also remind you to get your second COVID-19 vaccine dose if needed. For more information, click <a title="Links to vaccine safety &amp; development page" href="/index.cfm/page/4086" target="_blank" rel="noopener noreferrer">here</a>.</p>
+                  <p><span class="wysiwyg-subbar">Vaccine Adverse Emergency Reporting System (VAERS)</span></p>
+                  <p>VAERS is a national early warning system to detect possible safety problems in U.S.-licensed vaccines. VAERS is co-managed by the Centers for Disease Control and Prevention (CDC) and the U.S. Food and Drug Administration (FDA). VAERS accepts and analyzes reports of adverse events (possible side effects) after a person has received a vaccination. Anyone can report an adverse event to VAERS. Healthcare professionals are required to report certain adverse events and vaccine manufacturers are required to report all adverse events that come to their attention.</p>
+                  <p><a href="https://vaers.hhs.gov/reportevent.html" target="_blank" rel="noopener noreferrer">Report an Adverse Event</a></p>
+                  <p><a href="https://vaers.hhs.gov/index.html" target="_blank" rel="noopener noreferrer">More Information on VAERS</a></p>
+                  <p><span class="wysiwyg-subbar wysiwyg-subbar-dark"><strong>Achieving Herd Immunity Through Vaccinations</strong></span></p>
+                  <p>To access more information on COVID-19 vaccines and Herd Immunity, click <a href="/index.cfm/page/4088" target="_blank" rel="noopener noreferrer"><strong>here</strong></a>.</p>
+                  <p><span class="wysiwyg-subbar-dark">Federal Pharmacy Partnership for LTC Program in Louisiana</span></p>
+                  <p>All licensed LTCs in Louisiana are set to receive on-site COVID-19 vaccinations through either Walgreens or CVS. Click <a href="/index.cfm/page/4100" target="_blank" rel="noopener noreferrer">here</a> for more information.</p>
+                  <p><span class="wysiwyg-subbar-dark">Additional information</span></p>
+                  <table style="width: 299px; height: 200px; background-color: white;" border="0" cellspacing="0" cellpadding="0" align="right">
+                    <tbody>
+                      <tr style="height: 25px;">
+                        <td style="width: 15px; height: 25px;" align="center" valign="top"><img src="/snippets/images/imgSpacer.gif" width="15" height="1" /></td>
+                        <td style="width: 281px; height: 25px;" bgcolor="#6e8eaa">
+                          <table style="width: 392.45px; height: 34px;" border="0" cellspacing="0" cellpadding="12">
+                            <tbody>
+                              <tr style="height: 133px; background-color: white;">
+                                <td style="width: 392.45px; height: 133px; text-align: center;" align="left" valign="top"><span class="wysiwyg-pht-caption-box tertiary-header"><a style="color: #117176; outline: 0px; font-size: 14px; font-weight: 400; text-align: left;" title="COVID-19 Vaccine Information" href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/index.html" target="_blank" rel="noopener noreferrer"><img src="/assets/oph/Coronavirus/images/CDC-Vaccine-Information.png" width="340" /></a></span></td>
+                              </tr>
+                              <tr style="height: 4px; background-color: white;">
+                                <td style="width: 392.45px; height: 4px; text-align: center;" align="left" valign="top"><iframe src="https://www.youtube-nocookie.com/embed/Z06JQhyZLUI" width="340" height="198" frameborder="0" allowfullscreen="allowfullscreen"></iframe></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p>To view a U.S. Health and Human Services video called "<strong>Tell Me More About Vaccines</strong>" click <strong><a title="Links to Youtube video" href="https://www.youtube.com/watch?reload=9&amp;v=Z06JQhyZLUI" target="_blank" rel="noopener noreferrer">here</a></strong>.</p>
+                  <ul>
+                    <li><a title="Links to CDC website" href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/8-things.html" target="_blank" rel="noopener noreferrer">8</a><a title="Links to CDC website" href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/8-things.html" target="_blank" rel="noopener noreferrer"> things to know</a></li>
+                    <li><a title="Links to CDC website" href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/recommendations-process.html" target="_blank" rel="noopener noreferrer">How the CDC is</a><a title="Links to CDC website" href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/recommendations-process.html" target="_blank" rel="noopener noreferrer"> m</a><a title="Links to CDC website" href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/recommendations-process.html" target="_blank" rel="noopener noreferrer">aking</a><a title="Links to CDC website" href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/recommendations-process.html" target="_blank" rel="noopener noreferrer"> vaccine recommendations?</a></li>
+                    <li><a title="Links to CDC website" href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/safety.html" target="_blank" rel="noopener noreferrer">Ensuring the safety of vaccines</a></li>
+                    <li><a title="Links to CDC website" href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/faq.html" target="_blank" rel="noopener noreferrer">Frequently Asked Questions</a></li>
+                  </ul>
+                  <p>Below are other key updates on the COVID-19 vaccine:</p>
+                  <ul>
+                    <li>The Louisiana Department of Health&rsquo;s (LDH) Office of Public Health will follow the CDC's Advisory Committee for Immunization Practices (ACIP) to guide recommendations on which populations should be vaccinated with any of the COVID-19 vaccines that come on to the market after FDA approval.</li>
+                    <li>A multi-platform communications and marketing plan is&nbsp; being developed that includes steps for conducting outreach to groups most affected by COVID-19 and continues efforts to ensure reaching the most vulnerable groups and underserved areas.</li>
+                    <li>Public health officials will be reaching out proactively to vaccination sites to ensure that the infrastructure and systems are in place for populations to receive vaccinations as soon as&nbsp;they become available in Louisiana.&nbsp;</li>
+                  </ul>
+                  <p>&nbsp;<img style="border-width: 0px; width: auto; max-width: 100%; height: auto;" src="/assets/oph/Center-PHCH/Center-PH/immunizations/Masks.PNG" alt="Wear a Mask" width="750" height="136" /></p>
+                  <div style="left: -3000px; width: 1000px; overflow: hidden; position: fixed;" contenteditable="false">
+                    <div contenteditable="true">&nbsp;</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 col-md-offset-0 col-sm-9 col-sm-offset-3">
+              <div class="rt-sidebar">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="push"></div>
+        <a href="/index.cfm?md=form&amp;tmp=site_feedback&amp;nowrap=1" class="feedback-modal-btn" data-toggle="modal" data-target="#feedback-modal">Feedback</a>
+        <span data-acsb="trigger" class="side-accessibility-btn" title="Accessibility Options">Accessibility</span>
+      </section>
+
+      <!--/CONTENT-->
+    </div>
+    <!--FOOTER-->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="txt">
+            <table style="height: 39px; width: 192.5px; margin-left: auto; margin-right: auto;">
+              <tbody>
+                <tr style="height: 40px;">
+                  <td style="width: 10px; vertical-align: middle; height: 40px;"><a title="LDH Facebook" href="https://www.facebook.com/LaDeptHealth/" target="_blank" rel="noopener noreferrer"><img style="display: block; margin-left: auto; margin-right: auto;" src="/assets/images/social/blue-facebook-social-icon.png" alt="LDH Facebook" width="34" /></a></td>
+                  <td style="width: 34px; vertical-align: middle; height: 40px;"><a title="LDH Blog" href="http://ladepthealth.blogspot.com/" target="_blank" rel="noopener noreferrer"><img style="display: block; margin-left: auto; margin-right: auto;" src="/assets/images/social/blog-icon.png" alt="LDH Blog" width="34" /></a></td>
+                  <td style="width: 10px; vertical-align: middle; height: 40px;"><a title="LDH Twitter" href="https://twitter.com/LADeptHealth" target="_blank" rel="noopener noreferrer"><img style="display: block; margin-left: auto; margin-right: auto;" src="/assets/images/social/Twitter-PNG-Photo.png" alt="LDH Twitter" width="34" /></a></td>
+                </tr>
+              </tbody>
+            </table>
+            <!--Google Translate-->
+            <div style="text-align:center; display:block; padding: 14px 0 10px 23px;">
+              <div id="google_translate_element"></div>
+              <script type="text/javascript">
+                function googleTranslateElementInit() {
+                  new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: 'de,el,en,es,fr,it,ja,ko,la,tl,vi,zh-CN,zh-TW', gaTrack: true, gaId: 'UA-3632381-1' }, 'google_translate_element');
+                }
+              </script>
+              <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            </div>
+            <!--
+<strong>Mailing Address:</strong> Louisiana Department of Health | P. O. Box 629 | Baton Rouge, LA 70821-0629<br /><address><strong>Physical Address:</strong> 628 N. 4th Street | Baton Rouge, LA 70802 | PHONE: 225-342-9500 | FAX: 225-342-5568 |&nbsp; <a href="/index.cfm/page/1426">Disclaimer</a>&nbsp;&nbsp;&nbsp; <a href="/index.cfm/page/1709" target="_blank">Custodian of Records</a><br /></address><strong>Medicaid Customer Service </strong><em>1-888-342-6207</em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Healthy Louisiana</strong> <em>1-855-229-6848</em>
+-->
+            <strong>Mailing Address:</strong> Louisiana Department of Health | P. O. Box 629 | Baton Rouge, LA 70821-0629<br /><strong>Physical Address:</strong> 628 N. 4th Street | Baton Rouge, LA 70802 | PHONE: 225-342-9500 | FAX: 225-342-5568<br /> <strong>Medicaid Customer Service </strong><em>1-888-342-6207</em> | <strong>Healthy Louisiana</strong> <em>1-855-229-6848</em>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-6">
+              <div class="social">
+                <a href="http://www.facebook.com/pages/Baton-Rouge-LA/Louisiana-Department-of-Health-and-Hospitals/146961108650086?ref=ts" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/LaDeptHealth" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="https://www.youtube.com/user/MyHealthLa/videos" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <div class="col-xs-6">
+              <div id="siteCredits"><a href="http://www.covalentlogic.com" target="_blank">Site by Covalent Logic</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--/FOOTER-->
+
+
+    <div id="feedback-modal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content"></div>
+      </div>
+    </div>
+
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/retina.min.js"></script>
+    <script src="/js/navigation.js"></script>
+    <script src="/js/jquery.placeholder.min.js"></script>
+    <script src="/js/common.js?u=2"></script>
+    <script src="/js/subhome_carousel.js?u=1"></script>
+
+    <script src="https://www.google.com/recaptcha/api.js?render=explicit"></script>
+    <script>
+      $(function () {
+        //for feedback modal
+        $('#feedback-modal').on('loaded.bs.modal', function (e) {
+          //for feedback modal
+          var recaptcha_site_key = $('#feedback-form-recapcha').attr('site-key');
+          var recaptcha_widget_id = grecaptcha.render("feedback-form-recapcha", { "sitekey": recaptcha_site_key });
+
+          $("#frm-feedback").submit(function () {
+            var firstName = $("#frm-feedback input[name=firstName]").val().trim();
+            var lastName = $("#frm-feedback input[name=lastName]").val().trim();
+            var phone = $("#frm-feedback input[name=phone]").val().trim();
+            var email = $("#frm-feedback input[name=email]").val().trim();
+            var city = $("#frm-feedback input[name=city]").val().trim();
+            var state = $("#frm-feedback select[name=state]").val();
+            var subject = $("#frm-feedback input[name=subject]").val().trim();
+            var contactMethod = "";
+            if ($("#frm-feedback input[name=contactMethod]:checked").length > 0) {
+              contactMethod = $("#frm-feedback input[name=contactMethod]:checked").val();
+            }
+            var comments = $("#frm-feedback textarea[name=comments]").val().trim();
+
+            var g_recaptcha_response = grecaptcha.getResponse(recaptcha_widget_id);
+
+            if (!email.isEmail()) {
+              alert("Please enter a valid email.");
+              return false;
+            }
+
+            if (comments == "") {
+              alert("Please enter your comments.");
+              return false;
+            }
+
+            var formData = {
+              "firstName": firstName, "lastName": lastName, "phone": phone, "email": email,
+              "city": city, "state": state, "subject": subject, "contactMethod": contactMethod,
+              "comments": comments, "g-recaptcha-response": g_recaptcha_response
+            };
+
+            var actionURL = "/action.cfm?md=form&task=submitSiteFeedback";
+
+            $.ajax({
+              url: actionURL,
+              type: "post",
+              data: formData
+            }).done(function (data) {
+              if (data == "1") {
+                $('#feedback-modal .form-body').hide();
+                $('#feedback-modal button[type=submit]').hide();
+                $('#feedback-modal .submission-response').show();
+              } else if (data == "-1") {
+                //Recaptcha.reload();
+                grecaptcha.reset(recaptcha_widget_id);
+                alert("You did not pass the reCAPTCHA test.");
+              } else {
+                alert("Sorry, an error ocurred on the server.");
+              }
+            }).fail(function () {
+              alert("Sorry, an error ocurred on the server.");
+            });
+
+            return false;
+          });
+        });
+      });
+    </script>
+    <script>
+      //accessibility button - code from client
+      (function (document, tag) { var script = document.createElement(tag); var element = document.getElementsByTagName('body')[0]; script.src = 'https://acsbap.com/api/app/assets/js/acsb.js'; script.async = true; script.defer = true; (typeof element === 'undefined' ? document.getElementsByTagName('html')[0] : element).appendChild(script); script.onload = function () { acsbJS.init({ statementLink: '', feedbackLink: '', footerHtml: '', hideMobile: false, hideTrigger: true, language: 'en', position: 'right', leadColor: '#0d2b3f', triggerColor: '#16828c', triggerRadius: '50%', triggerPositionX: 'right', triggerPositionY: 'center', triggerIcon: 'settings', triggerSize: 'medium', triggerOffsetX: 20, triggerOffsetY: 20, mobile: { triggerSize: 'small', triggerPositionX: 'left', triggerPositionY: 'center', triggerOffsetX: 0, triggerOffsetY: 0, triggerRadius: '0' } }); }; }(document, 'script'));
+    </script>
+    <!-- pixel tracking -->
+    <img height="1" width="1" style="border-style:none;" alt="" src="https://insight.adsrvr.org/track/pxl/?adv=m3xe91r&ct=0:qkmwwga&fmt=3" />
+    <img height="1" width="1" style="border-style:none;" alt="" src="https://insight.adsrvr.org/track/pxl/?adv=m3xe91r&ct=0:4hxs5nd&fmt=3" />
+    <img height="1" width="1" style="border-style:none;" alt="" src="https://insight.adsrvr.org/track/pxl/?adv=m3xe91r&ct=0:8768k5m&fmt=3" />
+    <!-- Facebook Pixel Code -->
+    <script>
+      !function (f, b, e, v, n, t, s) {
+        if (f.fbq) return; n = f.fbq = function () {
+          n.callMethod ?
+            n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        };
+        if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+        n.queue = []; t = b.createElement(e); t.async = !0;
+        t.src = v; s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s)
+      }(window, document, 'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '926121631528414');
+      fbq('track', 'PageView');
+    </script>
+    <noscript>
+      <img height="1" width="1" src="https://www.facebook.com/tr?id=926121631528414&ev=PageView
+&noscript=1" />
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+
+  </body>
+
+</html>

@@ -11,3 +11,4 @@ coverage/
 public/
 bot_backups/*
 DATA_REVIEW.md
+.cache

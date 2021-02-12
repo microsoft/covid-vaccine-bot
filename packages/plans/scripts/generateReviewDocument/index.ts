@@ -96,36 +96,45 @@ ${phasesToWrite
 		: ''
 
 	const infoLink = region.plan?.links?.info
-		? `- Info Link: **${writeLink(region.plan?.links?.info, localizations)}**\n`
+		? `- Info Link: **${writeLink(
+				region.plan?.links?.info,
+				localizations,
+				'info'
+		  )}**\n`
 		: ''
 	const workflowLink = region.plan?.links?.workflow
 		? `- Workflow Link: **${writeLink(
 				region.plan?.links?.workflow,
-				localizations
+				localizations,
+				'workflow'
 		  )}**\n`
 		: ''
 	const schedulingLink = region.plan?.links?.scheduling
 		? `- Scheduling Link: **${writeLink(
 				region.plan?.links?.scheduling,
-				localizations
+				localizations,
+				'scheduling'
 		  )}**\n`
 		: ''
 	const registrationLink = region.plan?.links?.registration
 		? `- Registration Link: **${writeLink(
 				region.plan?.links?.registration,
-				localizations
+				localizations,
+				'registration'
 		  )}**\n`
 		: ''
 	const providersLink = region.plan?.links?.providers
 		? `- Providers Link: **${writeLink(
 				region.plan?.links?.providers,
-				localizations
+				localizations,
+				'providers'
 		  )}**\n`
 		: ''
 	const hotlineLink = region.plan?.links?.scheduling_phone
 		? `- Scheduling Hotline: **${writeLink(
 				region.plan?.links?.scheduling_phone,
-				localizations
+				localizations,
+				'scheduling_phone'
 		  )}**\n`
 		: ''
 
@@ -139,18 +148,15 @@ ${phaseData}
 
 function writeLink(
 	link: Link | undefined,
-	localizations: LocalizationMap
+	localizations: LocalizationMap,
+	key: string
 ): string | undefined {
 	if (link != null) {
 		const textLoc = localizations.get(link.text)
 		const descriptionLoc = link.description
 			? localizations.get(link.description)
 			: undefined
-
-		if (!textLoc) {
-			throw new Error('could not find text for link' + link.text)
-		}
-		const text = textLoc['en-us']
+		const text = textLoc ? textLoc['en-us'] : key
 		const description = (descriptionLoc && descriptionLoc['en-us']) || undefined
 		return `[${text}](${link.url})${
 			description != null ? ' description=' + description : ''

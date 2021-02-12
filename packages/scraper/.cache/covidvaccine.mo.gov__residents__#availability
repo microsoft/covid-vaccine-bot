@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Covid Vaccine | Residents</title>
+
+    
+<!-- GA Google Analytics @ https://m0n.co/ga -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-7798951-22', 'auto');
+ga('send', 'pageview');
+</script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="keywords" content="Covid, Missouri, MO stops Covid, mo stops Covid, missouri stops covid, MOStopsCovid, Vaccine,FAQ, Regester to get vaccinated">
+
+
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/fontawesome-all.min.css">
+<link rel="stylesheet" href="/css/custom.css">
+
+<!-- GTranslate: https://gtranslate.io/ -->
+<style type="text/css">
+    #goog-gt-tt {display:none !important;}
+    .goog-te-banner-frame {display:none !important;}
+    .goog-te-menu-value:hover {text-decoration:none !important;}
+    /*body {top:0 !important;}*/
+    #google_translate_element2 {display:none!important;}
+</style>
+
+
+</head>
+<body>
+
+<!--<div id="primaryNavbar" class="navbar navbar-expand-lg fixed-top navbar-light bg-light">-->
+<!--<div id="primaryNavbar" class="navbar navbar-expand-md navbar-transparent" style="position:absolute;width:100%;">-->
+<!--<div class="navbar navbar-expand-md navbar-transparent" style="">-->
+<div id="primaryNavbar" class="navbar navbar-expand-lg fixed-top navbar-transparent" style="">
+    <div class="container">
+        <a class="sr-only sr-only-focusable" href="#mainContent">Skip to Main Content</a>
+        <a href="/" class="navbar-brand">Stronger<br class="d-none d-md-block"/> Together.</a>
+        <button class="navbar-toggler navbar-light" style="background-color:#fff;" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav mr-auto ml-auto">
+
+                <li class="nav-item pl-2 pr-2">
+                    <div class="dropdown">
+                      <a class="nav-link dropdown-toggle" data-toggle="dropdown">Residents</a>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="/residents">General Information</a>
+                        <a class="dropdown-item" href="/map">Map</a>
+                        <a class="dropdown-item" href="/events">Events</a>
+                        <a class="dropdown-item" href="/priority">Priority Phases</a>
+                      </div>
+                    </div>
+
+                </li>
+                <li class="nav-item d-none d-lg-block" style="padding-top:7px;">|</li>
+                <li class="nav-item pl-2 pr-2">
+                    <a class="nav-link" href="/vaccinators">Vaccinators</a>
+                </li>
+                <li class="nav-item d-none d-lg-block" style="padding-top:7px;">|</li>
+                <li class="nav-item pl-2 pr-2">
+                    <a class="nav-link" href="/facts">Get the Facts</a>
+                </li>
+                <li class="nav-item d-none d-lg-block" style="padding-top:7px;">|</li>
+                <li class="nav-item pl-2 pr-2">
+                    <a class="nav-link" href="/data">Data</a>
+                </li>
+                <li class="nav-item d-none d-lg-block" style="padding-top:7px;">|</li>
+                <li class="nav-item pl-2 pr-2">
+                    <a class="nav-link" href="/navigator">Register Now</a>
+                </li>
+                <li class="nav-item d-none d-lg-block" style="padding-top:7px;">|</li>
+                <li class="nav-item pl-2 pr-2" style="padding-top:7px;">
+                    <select id="translateSelect" onchange="doGTranslate(this);">
+                        <option value="">Translate</option><option value="en|af">Afrikaans</option>
+                        <option value="en|sq">Albanian</option><option value="en|ar">Arabic</option>
+                        <option value="en|hy">Armenian</option><option value="en|az">Azerbaijani</option>
+                        <option value="en|eu">Basque</option><option value="en|be">Belarusian</option>
+                        <option value="en|bg">Bulgarian</option><option value="en|ca">Catalan</option>
+                        <option value="en|zh-CN">Chinese (Simplified)</option><option value="en|zh-TW">Chinese (Traditional)</option>
+                        <option value="en|hr">Croatian</option><option value="en|cs">Czech</option><option value="en|da">Danish</option>
+                        <option value="en|nl">Dutch</option><option value="en|en">English</option><option value="en|et">Estonian</option>
+                        <option value="en|tl">Filipino</option><option value="en|fi">Finnish</option><option value="en|fr">French</option>
+                        <option value="en|gl">Galician</option><option value="en|ka">Georgian</option><option value="en|de">German</option>
+                        <option value="en|el">Greek</option><option value="en|ht">Haitian Creole</option><option value="en|iw">Hebrew</option>
+                        <option value="en|hi">Hindi</option><option value="en|hu">Hungarian</option><option value="en|is">Icelandic</option>
+                        <option value="en|id">Indonesian</option><option value="en|ga">Irish</option><option value="en|it">Italian</option>
+                        <option value="en|ja">Japanese</option><option value="en|ko">Korean</option><option value="en|lv">Latvian</option>
+                        <option value="en|lt">Lithuanian</option><option value="en|mk">Macedonian</option><option value="en|ms">Malay</option>
+                        <option value="en|mt">Maltese</option><option value="en|no">Norwegian</option><option value="en|fa">Persian</option>
+                        <option value="en|pl">Polish</option><option value="en|pt">Portuguese</option><option value="en|ro">Romanian</option>
+                        <option value="en|ru">Russian</option><option value="en|sr">Serbian</option><option value="en|sk">Slovak</option>
+                        <option value="en|sl">Slovenian</option><option value="en|es">Spanish</option><option value="en|sw">Swahili</option>
+                        <option value="en|sv">Swedish</option><option value="en|th">Thai</option><option value="en|tr">Turkish</option>
+                        <option value="en|uk">Ukrainian</option><option value="en|ur">Urdu</option><option value="en|vi">Vietnamese</option>
+                        <option value="en|cy">Welsh</option><option value="en|yi">Yiddish</option>
+                    </select>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+    <div id="mainContent">
+
+        <div id="pageHeader">
+            <div class="flexContainerWrapper">
+                <div id="heroTopBackground" class="flexContainer citizensHero">
+                    <div class="flexItem">
+                        <div class="container">
+                            <div id="heroStatementContainer">
+                                <h1>residents</h1>
+                                <div>
+                                    Are you ready to get vaccinated? We know it's a loaded question. The choice to be vaccinated for COVID-19 is a personal one.
+                                    We've outlined the facts below to help you make that choice for your family and community.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="centered mt-4">
+        <a class="btn btn-custom-primary" href="/priority/">High Risk Population Information</a>
+      </div>
+        <div class="container dark" style="margin-top:75px;">
+
+            <div class="row">
+                <div class="col-md-5 text-center text-md-right">
+                    <img src="/img/citizens_subimg_1.jpg" class="img-fluid"/>
+                </div>
+                <div class="col-md-7">
+                    <h2 class="dark">COVID-19 Vaccine</h2>
+                    <p>
+                        The CDC's Advisory Committee on Immunization Practices has identified the purposes of a COVID-19
+                        vaccine as (1) decrease death and serious disease, (2) preserve functioning of society, (3) reduce
+                        extra burden that COVID-19 is having on people already facing disparities and (4) increase the
+                        chance for everyone to enjoy health and well-being.
+                    </p>
+
+
+                    <div class="d-flex mb-3">
+                        <div class="mr-4">
+                            <div style="width:60px;height:auto;">
+                                <img src="/img/icon-ethics.png" class="img-fluid mt-2"/>
+                            </div>
+                        </div>
+                        <div class="flex-grow-1">
+                            <span class="smallBold1">Ethics</span>
+                            <p style="font-size:15px;">
+                                  The vaccine will be made available based on ethical principles of maximizing benefits, minimizing harm, striving for equity, justice and fairness, and making transparent decisions. Ethical considerations include prioritizing Missourians who have been disproportionally impacted by the COVID-19 pandemic. Missouri’s Advisory Committee for Equitable COVID-19 Vaccine Distribution meets weekly and includes partners from the <a href="https://web.mhanet.com/" target="_blank">Missouri Hospital Association</a>, <a href="https://www.msma.org/" target="_blank">Missouri State Medical Association</a>, <a href="https://www.morx.com/" target="_blank">Missouri Pharmacy Association</a>, <a href="https://www.mocphe.org/" target="_blank">Missouri Center for Public Health Excellence</a>, <a href="https://www.mo-pca.org/" target="_blank">Missouri Primary Care Association</a>, <a href="https://www.mo-afp.org/" target="_blank">Missouri Academy of Family Physicians</a>, <a href="https://www.mohealthcare.com/" target="_blank">Missouri Health Care Association</a>, <a href="https://www.stlouis-mo.gov/government/departments/health/" target="_blank">St. Louis City Department of Health</a>, <a href="https://www.kcmo.gov/city-hall/departments/health" target="_blank">Kansas City Health Department</a>, <a href="https://missourinurses.org/" target="_blank">Missouri Nurses Association</a>, <a href="https://www.marc.org/Home" target="_blank">Mid-America Regional Council</a>, <a href="https://www.ulstl.com/" target="_blank">Urban League of St. Louis</a>, <a href="http://www.monaacp.org/" target="_blank">Missouri Chapter of NAACP</a>, <a href="https://www.hccstl.com/" target="_blank">Hispanic Chamber of Commerce of St. Louis</a>, <a href="https://mocatholic.org/" target="_blank">Missouri Catholic Conference and <a href="https://casadesaludstl.org/" target="_blank">Casa de Salud</a>. Additionally, the state of Missouri is vetting vaccinators before they receive an allotment of vaccines.
+                              </p>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-3">
+                        <div class="mr-4">
+                            <div style="width:60px;height:auto;">
+                                <img src="/img/icon-dna.png" class="img-fluid mt-2"/>
+                            </div>
+                        </div>
+                        <div class="flex-grow-1">
+                            <span class="smallBold1">Availability</span>
+                            <p style="font-size:15px;">
+                                Vaccines will be opened up to all Missourians and distributed to convenient locations as
+                                availability increases. See our graphic below.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="d-flex mb-3">
+                        <div class="mr-4">
+                            <div style="width:60px;height:auto;">
+                                <img src="/img/icon-doctor.png" class="img-fluid mt-2"/>
+                            </div>
+                        </div>
+                        <div class="flex-grow-1">
+                            <span class="smallBold1">Doses</span>
+                            <p style="font-size:15px;">
+                                Three of the four most advanced vaccines require two doses that are administered at least 21 days apart.
+                                It is important patients return for the second dose to develop the highest level of immunity.
+                            </p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+            <div id="safety"></div>
+            <div class="row infoBox" style="margin-top:75px;">
+                <div class="col-md-1"></div>
+                <div class="col-md-4 text-center order-md-12 my-auto">
+                    <img src="/img/safety_icon.jpg" class="img-fluid mb-4" alt="Safety"/>
+                </div>
+                <div class="col-md-6 my-auto order-md-1 text-center text-md-left">
+                    <h4>Safety First</h4>
+                    <p class="mb-4">
+                      Safety is incorporated into every level of a vaccine’s development cycle. Clinical trials are an important part of determining vaccine safety and efficacy. Currently, Pfizer and Moderna have completed phase 3 clinical trials involving many thousands of participants. The trials determined the safety and efficacy of the vaccines in thousands of participants. The purpose of clinical trials is to generate scientific data and other information for the Food and Drug Administration to review and base their recommendations on.
+                    </p>
+                    <p>The safety and efficacy data has also been reviewed by an independent expert committee called the <a href="https://www.cdc.gov/vaccines/acip/index.html">Advisory Committee on Immunization Practices (ACIP)</a> which also recommended the vaccines for emergency use. Pfizer’s clinical trial enrolled 44,000+ participants with 42% globally having racially and ethnically diverse backgrounds. Additionally, 37% of Moderna’s 30,000 trial participants are from minority communities, including 6,000 Hispanic and 3,000 Black participants. AstraZeneca’s initial trial data included participants from Brazil and the United Kingdom while the company continues to conduct trials in South Africa, Kenya, Latin America, Japan, Russia and the United States. </p>
+                    <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/recommendations-process.html"
+                       class="btn btn-custom-primary mr-3" title="Learn more about covid vaccine safety">learn more</a>
+                    <a href="https://www.youtube.com/watch?v=Z06JQhyZLUI" class="btn btn-custom-primary" title="Watch video">watch video</a>
+                </div>
+            </div>
+
+            <div id="cost"></div>
+            <div class="row infoBox" style="margin-top:75px;">
+                <div class="col-md-1"></div>
+                <div class="col-md-4 text-center text-md-left my-auto">
+                    <img src="/img/free_low_cost_icon.jpg" class="img-fluid mb-4" alt="Safety" />
+                </div>
+                <div class="col-md-6 my-auto text-center text-md-left">
+                    <h4>Free Vaccination</h4>
+                    <p class="mb-4">
+                      We are committed to providing a free COVID-19 vaccination experience to all Missourians, including those without insurance. No person can be billed for the COVID-19 vaccine. Vaccination providers may charge an administration fee to insurance, Medicaid or Medicare, if applicable in your situation. Uninsured Missourians will be able to receive the vaccination regardless of their health insurance status.
+
+                </div>
+            </div>
+
+            <div id="availability"></div>
+            <div id="subpageTitleContainer" class="" style="margin-top:75px;">
+                <h1 class="dark text-uppercase">When can I get vaccinated?</h1>
+                <div class="mr-auto ml-auto subpageTitleType">
+                    <div class="mb-5">
+                        The state of Missouri is currently working to vaccinate residents that are eligible under our phased approach.
+                    </div>
+
+
+                    <a href="/info-graphic-alt/vaccine-availability.html" title="COVID-19 Vaccine Availability">
+                        <img src="/img/vaccine-availability.jpg" class="img-fluid d-none d-md-inline" alt="COVID-19 Vaccine Availability"/>
+                        <img src="/img/vaccine-availability-mobile.jpg" class="img-fluid d-inline d-md-none" alt="COVID-19 Vaccine Availability"/>
+                    </a>
+                    <div class="centered">
+                      <button class="btn btn-custom-primary  col-md-4 mt-2 mb-2"  id="availability_t">Ver imagen en Español</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="margin-top:75px; color:black;">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="card bg-light">
+                       <div class="card-body">
+                         <h4 class="card-title">Phase 1B – Tier 1</h4><hr><p>Protecting those who keep us safe and help us during an emergency</p><hr>
+                    <p class="card-text">
+                      <ul style="list-style-type:none; margin:0; padding:0">
+                        <li>Public Health Administrators and Staff </li>
+                        <li>Law Enforcement </li>
+                        <li>Fire Services </li>
+                        <li>Corrections </li>
+                        <li>Emergency Management </li>
+                        <li>Public Works </li>
+                        <li>Emergency Services </li>
+                      </ul>
+                      <div class="centered pt-4">
+                      <a class="btn btn-custom-primary" href="/priority/Phase1b/#phase1b-1" target="_blank">Tier 1</a>
+                    </div>
+                  </p>
+                    </div>
+                  </div>
+                </div>
+                  <div class="col-md-4">
+                    <div class="card bg-light">
+                       <div class="card-body">
+                         <h4 class="card-title">Phase 1B – Tier 2</h4><hr><p>Protecting those who are at increased risk for severe illness</p><hr>
+                    <p class="card-text">
+                    <ul style="list-style-type:none; margin:0; padding:0">
+                      <li>Anyone 65 and older </li>
+                      <li>Any adults with:
+                                <ul>
+                                  <li>Cancer</li>
+                                  <li>Chronic Kidney Disease</li>
+                                  <li>COPD</li>
+                                  <li>Heart Conditions</li>
+                                  <li>Weakened immune system due to organ transplant</li>
+                                  <li>Severe obesity (BMI >40)</li>
+                                  <li>Pregnancy</li>
+                                  <li>Sickle Cell Disease</li>
+                                  <li>Type 2 Diabetes Mellitus</li>
+                                  <li>Individuals with intellectual and/or developmental disabilities such as Down Syndrome</li>
+                                </ul>
+                          </li>
+                      </li>
+                  </ul>
+                <div class="centered pt-4">
+                  <a class="btn btn-custom-primary" href="/priority/Phase1b/#phase1b-2" target="_blank">Tier 2</a>
+                </div>
+                </p>
+              </div>
+            </div>
+          </div>
+                  <div class="col-md-4">
+                    <div class="card bg-light">
+                       <div class="card-body">
+                         <h4 class="card-title">Phase 1B – Tier 3</h4><hr><p>Protecting those who keep the essential functions of society running </p><hr>
+                    <p class="card-text">
+                      <ul style="list-style-type:none; margin:0; padding:0">
+                      <li>Education (K-12)</li>
+                      <li>Childcare</li>
+                      <li>Communications Infrastructure</li>
+                      <li>Dams Sector </li>
+                      <li>Energy Sector</li>
+                      <li>Food & Agriculture Sector 1</li>
+                      <li>Government</li>
+                      <li>Information Technology</li>
+                      <li>Nuclear Reactor Sector</li>
+                      <li>Transportation Systems  </li>
+                      <li>Water and Wastewater Systems</li>
+                  </ul>
+                <div class="centered pt-4">
+                  <a class="btn btn-custom-primary" href="/priority/Phase1b/#phase1b-3" target="_blank">Tier 3</a>
+                </div>
+                </p>
+              </div>
+            </div>
+          </div>
+                </div>
+
+            </div>
+            <div id="effectiveness"></div>
+            <div class="row infoBox" style="margin-top:75px;">
+                <div class="col-md-1"></div>
+                <div class="col-md-4 text-center order-md-12 my-auto">
+                    <img src="/img/lifesaving_icon.jpg" class="img-fluid mb-4" alt="Safety" />
+                </div>
+                <div class="col-md-6 my-auto order-md-1 text-center text-md-left">
+                    <h4>Lifesaving Vaccine</h4>
+                    <p class="mb-4">
+                      Vaccinations have saved hundreds of millions of lives over the last century. Scientists have developed vaccines for Smallpox, Polio, Measles, Mumps, Rubella, Hepatitis, Meningitis and more. The COVID-19 vaccine will undergo the same level of review and meet the same expectations as these other lifesaving vaccines. Data from clinical trials indicate a 95% efficacy rate for Pfizer’s vaccine, a 94.5% efficacy rate for Moderna’s vaccine and a 90% efficacy rate for AstraZeneca’s vaccine.</p>
+                </div>
+            </div>
+
+            <div class="text-center infoBox" style="margin-top:75px;">
+                <h4>Convenience</h4>
+                <p class="mb-4">
+                    Once a vaccine is available to all Missourians, we will provide a map of convenient vaccination locations on this web page.
+                    <a href="/map/" class="btn btn-custom-primary mt-4" title="map">Vaccinator Map</a>
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+
+    <footer>
+    <div id="socialMediaContainer">
+        <div class="container text-center">
+            <a href="https://www.facebook.com/HealthyLivingMo/">
+                <img src="/img/facebook.png" alt="Facebook"/>
+            </a>
+            <a href="https://twitter.com/healthylivingmo">
+                <img src="/img/twitter.png" alt="Twitter"/>
+            </a>
+            <a href="https://www.instagram.com/healthylivingmo/">
+                <img src="/img/instagram.png" alt="Instagram"/>
+            </a>
+
+            <div class="text-center mt-2">
+                <a href="https://health.mo.gov/" style="color:white;text-decoration:none;">Missouri Department of Health & Senior Services</a>
+            </div>
+            <div class="text-center mt-2">
+                <a href="https://health.mo.gov/" style="color:white;text-decoration:none;">Health.Mo.Gov</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <button id="backToTopButton" class="btn btn-custom-primary">
+    <i class="fas fa-angle-up"></i>
+    <br/>
+    <span style="">Top</span>
+</button>
+
+<span class="d-block d-sm-none d-md-none d-lg-none d-xl-none viewport-size" data-size="xs"></span>
+<span class="d-none d-sm-block d-md-none d-lg-none d-xl-none viewport-size" data-size="sm"></span>
+<span class="d-none d-md-none d-md-block d-lg-none d-xl-none viewport-size" data-size="md"></span>
+<span class="d-none d-md-none d-md-none d-lg-block d-xl-none viewport-size" data-size="lg"></span>
+<span class="d-none d-md-none d-md-none d-lg-none d-xl-block viewport-size" data-size="xl"></span>
+
+<script src="/js/jquery-3.5.1.min.js"></script>
+<script src="/js/popper.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/custom.js"></script>
+
+<div id="google_translate_element2"></div>
+<script type="text/javascript">
+    function googleTranslateElementInit2() {new google.translate.TranslateElement({pageLanguage: 'en',autoDisplay: false}, 'google_translate_element2');}
+</script><script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"></script>
+<script type="text/javascript">
+    /* <![CDATA[ */
+    eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('6 7(a,b){n{4(2.9){3 c=2.9("o");c.p(b,f,f);a.q(c)}g{3 c=2.r();a.s(\'t\'+b,c)}}u(e){}}6 h(a){4(a.8)a=a.8;4(a==\'\')v;3 b=a.w(\'|\')[1];3 c;3 d=2.x(\'y\');z(3 i=0;i<d.5;i++)4(d[i].A==\'B-C-D\')c=d[i];4(2.j(\'k\')==E||2.j(\'k\').l.5==0||c.5==0||c.l.5==0){F(6(){h(a)},G)}g{c.8=b;7(c,\'m\');7(c,\'m\')}}',43,43,'||document|var|if|length|function|GTranslateFireEvent|value|createEvent||||||true|else|doGTranslate||getElementById|google_translate_element2|innerHTML|change|try|HTMLEvents|initEvent|dispatchEvent|createEventObject|fireEvent|on|catch|return|split|getElementsByTagName|select|for|className|goog|te|combo|null|setTimeout|500'.split('|'),0,{}))
+    /* ]]> */
+</script>
+
+<script>
+
+    $(document).ready(function(){
+
+        resizeHeroTopBackground();
+        $(window).resize(function(){
+            resizeHeroTopBackground();
+        });
+
+        addDocumentClasses();
+
+        $('#backToTopButton').click(function(){
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        });
+
+        $('.img-hoverable').on("mouseenter", function(){
+            $(this).attr("src", $(this).data('hover-src'));
+        })
+        .on("mouseleave", function(){
+            $(this).attr("src", $(this).data('normal-src'));
+        });
+
+        $(".card-header").keypress(function(e){
+            if(e.key === "Enter")
+            {
+                $(this).click();
+            }
+        });
+
+        $(".navbar-toggler").click(function(){
+
+            var $nb = $("#primaryNavbar");
+
+            if($(window).scrollTop() <= 50)
+            {
+                if($nb.hasClass("navbar-transparent"))
+                {
+                    $nb.removeClass("navbar-transparent");
+                    $nb.addClass("navbar-background");
+                }
+                else
+                {
+                    $nb.removeClass("navbar-background");
+                    $nb.addClass("navbar-transparent");
+                }
+            }
+        });
+
+        $(window).scroll(function () {
+
+            var $nb = $('.navbar');
+
+            if ($(window).scrollTop() >= 50)
+            {
+                $nb.removeClass('navbar-transparent');
+                $nb.addClass('navbar-background');
+                $('#backToTopButton').show();
+            }
+            else
+            {
+                $nb.addClass('navbar-transparent');
+                $nb.removeClass('navbar-background');
+                $('#backToTopButton').hide();
+            }
+        });
+
+    });
+
+    function addDocumentClasses()
+    {
+        // Add specific icon classes to links to documents
+        $('a[href$=".pdf"],.pdf').addClass("pdf");
+        $('.pdf').each(function(key, val){
+
+            var nl = $(val).find(".news-link");
+            if(nl.length !== 0)
+            {
+                nl.append('<span class="pdf-label" aria-hidden="true"><b class="hide">PDF Document</b></span>');
+            }
+            else
+            {
+                $(val).append('<span class="pdf-label" aria-hidden="true"><b class="hide">PDF Document</b></span>');
+            }
+
+        });
+
+
+        $("a[href$='.xls'], a[href$='.xlsx'],.xls").addClass("xls");
+        $('.xls').each(function(key, val){
+
+            var nl = $(val).find(".news-link");
+            if(nl.length !== 0)
+            {
+                nl.append("<span class='xls-label' aria-hidden='true'><b class='hide'>Excel Spreadsheet</b></span>");
+            }
+            else
+            {
+                $(val).append("<span class='xls-label' aria-hidden='true'><b class='hide'>Excel Spreadsheet</b></span>");
+            }
+
+        });
+
+
+        $("a[href$='.doc'], a[href$='.docx'], a[href$='.txt'],.doc").addClass("doc");
+        $('.doc').each(function(key, val){
+
+            var nl = $(val).find(".news-link");
+            if(nl.length !== 0)
+            {
+                nl.append("<span class='doc-label' aria-hidden='true'><b class='hide'>Word Document</b></span>");
+            }
+            else
+            {
+                $(val).append("<span class='doc-label' aria-hidden='true'><b class='hide'>Word Document</b></span>");
+            }
+
+        });
+
+
+        $("a[href$='.ppt'], a[href$='.pptx'],.ppt").addClass("ppt");
+        $('.ppt').each(function(key, val){
+
+            var nl = $(link).find(".news-link");
+            if(nl.length !== 0)
+            {
+                nl.append("<span class='ppt-label' aria-hidden='true'><b class='hide'>Powerpoint Presentation</b></span>");
+            }
+            else
+            {
+                $(val).append("<span class='ppt-label' aria-hidden='true'><b class='hide'>Powerpoint Presentation</b></span>");
+            }
+
+        });
+
+
+        $("a[href$='.zip'], a[href$='.gzip'], a[href$='.rar'],.zip").addClass("zip");
+        $('.zip').each(function(){
+
+            var nl = $(val).find(".news-link");
+            if(nl.length !== 0)
+            {
+                nl.append("<span class='zip-label' aria-hidden='true'><b class='hide'>Compressed Archive</b></span>");
+            }
+            else
+            {
+                $(val).append("<span class='zip-label' aria-hidden='true'><b class='hide'>Compressed Archive</b></span>");
+            }
+
+        });
+
+
+        $("a[href$='.xml'],.xml").addClass("xml");
+        $('.xml').each(function(){
+
+            var nl = $(val).find(".news-link");
+            if(nl.length !== 0)
+            {
+                nl.append("<span class='xml-label' aria-hidden='true'><b class='hide'>XML Document</b></span>");
+            }
+            else
+            {
+                $(val).append("<span class='xml-label' aria-hidden='true'><b class='hide'>XML Document</b></span>");
+            }
+
+        });
+
+    }
+
+    function resizeHeroTopBackground()
+    {
+        if($("#heroTopBackground").length)
+        {
+            var vph = $(window).height();
+
+            if(vpSize === 'xs' || vpSize === 'sm')
+            {
+                if(vph > 450)
+                {
+                    $("#heroTopBackground").css('min-height', vph);
+                }
+                else
+                {
+                    $("#heroTopBackground").css('min-height', 450);
+                }
+            }
+            else
+            {
+                if((vph * 0.6) > 450)
+                {
+                    $("#heroTopBackground").css('min-height', vph * 0.6);
+                }
+                else
+                {
+                    $("#heroTopBackground").css('min-height', 450);
+                }
+            }
+        }
+    }
+
+
+</script>
+
+<!-- GA Google Analytics @ https://m0n.co/ga -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-7798951-22', 'auto');
+ga('send', 'pageview');
+</script>
+
+<!-- used to share on social media -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ff5ecc5a8a60bbc"></script>
+
+
+<script>
+
+
+$(document).ready(function(){
+
+  $('#availability_t').click(function(){
+    var availability_translate
+    var availability_translate_mobile
+    var availability_new_path
+    var availability_new_path_mobile
+
+    var link
+    var view
+
+    availability_translate=$(this).parent().parent().find('img').eq(0).attr('src');
+    availability_translate_mobile =$(this).parent().parent().find('img').eq(1).attr('src');
+
+
+    link = availability_translate.substr(0,6);
+
+
+  if(link == "/img/v"){
+    availability_new_path = "/img/translate/"+ availability_translate.substr(5);
+    availability_new_path_mobile = "/img/translate/"+ availability_translate_mobile.substr(5);
+    view = "View in English";
+  }else if(link == "/img/t"){
+    availability_new_path = "/img/"+ availability_translate.substr(15);
+    availability_new_path_mobile = "/img/"+ availability_translate_mobile.substr(15);
+    view = "Ver imagen en Español";
+  }
+  $(this).parent().parent().find('img').eq(0).attr('src',availability_new_path);
+  $(this).parent().parent().find('img').eq(1).attr('src',availability_new_path_mobile);
+  $(this).text(view);
+
+  });
+});
+
+
+</script>
+</body>
+</html>

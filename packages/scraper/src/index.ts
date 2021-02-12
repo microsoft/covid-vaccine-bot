@@ -47,7 +47,7 @@ async function scrapeSites(): Promise<void> {
 			jQuery: jsdom,
 		})
 		links.forEach((link) => {
-			const scrapeUrl = getScrapeUrl(link)
+			const scrapeUrl = link.url
 			c.queue({
 				uri: scrapeUrl,
 				callback: (err, res, done) => {
@@ -63,10 +63,11 @@ async function scrapeSites(): Promise<void> {
 							const integrityString = integrity.toString() as string
 
 							// write the response out
-							fs.writeFileSync(
-								path.join(CACHE_DIR, link.text.replace(/\//g, '.')),
-								body
-							)
+							const filename = link.url
+								.replace('http://', '')
+								.replace('https://', '')
+								.replace(/\//g, '__')
+							fs.writeFileSync(path.join(CACHE_DIR, filename), body)
 
 							// Save the current integrity
 							result.integrity[scrapeUrl] = {
@@ -78,7 +79,9 @@ async function scrapeSites(): Promise<void> {
 							) {
 								console.log(
 									chalk.green(
-										`✔ integrity changed for [${link.text}](${scrapeUrl})`
+										`✔ integrity changed for [${
+											link.text || 'link'
+										}](${scrapeUrl})`
 									)
 								)
 								result.changes.push(link)
@@ -113,15 +116,6 @@ async function scrapeSites(): Promise<void> {
 			resolve()
 		})
 	})
-}
-
-function getScrapeUrl(link: Link): string {
-	return typeof link.scrape === 'string' ? link.scrape : link.url
-}
-
-function printLink(link: Link): string {
-	const url = getScrapeUrl(link)
-	return `[${link.text}](${url})`
 }
 
 scrapeSites()

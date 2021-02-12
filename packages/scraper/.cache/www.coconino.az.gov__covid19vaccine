@@ -1,0 +1,1687 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+			<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+	<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+
+				<script type='text/javascript'>
+					var enableTelemetry = 'false'
+					var aiConfig = {
+					instrumentationKey: '1cde048e-3185-4906-aa46-c92a7312b60f'						
+					}
+					var appInsights = window.appInsights || function (a) { function b(a) { c[a] = function () { var b = arguments; c.queue.push(function () { c[a].apply(c, b) }) } } var c = { config: a }, d = document, e = window; setTimeout(function () { var b = d.createElement('script'); b.src = a.url || 'https://az416426.vo.msecnd.net/scripts/a/ai.0.js', d.getElementsByTagName('script')[0].parentNode.appendChild(b) }); try { c.cookie = d.cookie } catch (a) { } c.queue = []; for (var f = ['Event', 'Exception', 'Metric', 'PageView', 'Trace', 'Dependency']; f.length;)b('track' + f.pop()); if (b('setAuthenticatedUserContext'), b('clearAuthenticatedUserContext'), b('startTrackEvent'), b('stopTrackEvent'), b('startTrackPage'), b('stopTrackPage'), b('flush'), !a.disableExceptionTracking) { f = 'onerror', b('_' + f); var g = e[f]; e[f] = function (a, b, d, e, h) { var i = g && g(a, b, d, e, h); return !0 !== i && c['_' + f](a, b, d, e, h), i } } return c }(aiConfig);
+					window.appInsights = appInsights, appInsights.queue && 0 === appInsights.queue.length;
+					// Add telemetry initializer
+					appInsights.queue.push(function() {
+						appInsights.context.addTelemetryInitializer(function(envelope) {
+							var telemetryItem = envelope.data.baseData;
+							// To check the telemetry item’s type:
+							if (!false)
+							{
+								//If the telemetry is not enabled, we still want to capture Google map custom event, so only allow that
+								if (envelope.name.indexOf('.Event') == -1)
+									return false;
+							}
+						});
+					});						
+					appInsights.trackPageView();
+				</script>
+			<script>
+				document.addEventListener("DOMContentLoaded", function () {
+					var forms = document.getElementsByTagName("form");
+					var absPat = /^https?:\/\/|^\/\//i;
+					for (var i = 0; i < forms.length; i++)
+					{
+						if (forms[i].method == "post" && !forms[i].querySelector('[name="__RequestVerificationToken"]') && !absPat.test(forms[i].getAttribute("action"))) {
+							forms[i].insertAdjacentHTML("beforeend", "<input name=\"__RequestVerificationToken\" type=\"hidden\" value=\"yyKF3d0rm50XrGoBCztQ4shG8S5ll8ECaUjDpcMHm3k6cho1iq1hR8ZiSfB3mC3g-ybvdGdowhpt-zS4proYCuKR9CD0ld3sz0lxrGHaOik1\" />");
+						}
+					}
+				}, false);
+			</script>
+			
+	
+	<script type="text/javascript">
+        window.isResponsiveEnabled = true;
+		window.isRemoveSetHeights= false;
+		if (window.isRemoveSetHeights) {
+			document.documentElement.className += ' removeSetHeights';
+		}
+		window.mainMenuMediaQuery = 'screen and (max-width: 40em)';
+		window.isMobileBrowserIncludingTablets = false;
+		window.fixedResponsiveMenu = false;
+		window.fullWidthResponsiveMenu = false;
+		window.responsiveMenuHeight = '';
+		window.responsiveMenuFontSize = '';
+		(function () {
+			window.devicePixelRatio = window.devicePixelRatio || Math.round(window.screen.availWidth / document.documentElement.clientWidth);
+			window.innerWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+			window.innerHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+
+			window.setSizeCookie = function () {
+				document.cookie = "dpi=" + window.devicePixelRatio + "; path=/";
+				document.cookie = "viewportWidth=" + window.innerWidth + "; path=/";
+				document.cookie = "viewportHeight=" + window.innerHeight + "; path=/";
+				if (screen && screen.width && screen.height) {
+					document.cookie = "screenWidth=" + screen.width + "; path=/";
+					document.cookie = "screenHeight=" + screen.height + "; path=/";
+				}
+				document.cookie = "responsiveGhost=1; path=/";
+			};
+
+			setSizeCookie();
+		}());
+	</script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	
+	<meta name="theme-color" content="#773c1a">
+	<link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+		<title>Vaccine Information | Coconino</title>
+		
+		<meta name="description" content="">
+				
+	<!--[if IE 6]><script language="JavaScript" type="text/javascript"> var isie6 = true; </script><![endif]-->
+	<!--[if IE 7]><script language="JavaScript" type="text/javascript"> var isie7 = true; </script><![endif]-->
+	<!--[if IE 8]><script language="JavaScript" type="text/javascript"> var isie8 = true; </script><![endif]-->
+	<!--[if IE 9]><script language="JavaScript" type="text/javascript"> var isie8 = true; </script><![endif]-->
+	<script type="text/javascript"><!--
+	var intCountryCode = 840;
+	var externalSiteDialogHeight = '390px';
+	var order = '';
+//--></script>
+	
+	<link href="/901781768.css" rel="stylesheet" type="text/css" />	<link href="/105059652.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" type="text/css" href="/Assets/Styles/Print.css" media="print">
+<script type="text/javascript" src="/Scripts/2011.3.1115/jquery-1.6.4.min.js"></script>
+	<script type="text/javascript">
+		window.Pages = window.Pages || {};
+		// FrontEnd RWD initialization
+		window.Pages.rwdReady = $.Deferred();
+		window.Pages.toolBarDeferred = $.Deferred();
+		window.Pages.rwdSetupComplete = $.Deferred();
+		window.Pages.megaMenuLoaded = $.Deferred();
+		window.Pages.angularToolbarComplete = $.Deferred();
+		window.Pages.frontEndToolbarComplete = $.Deferred();
+	</script>
+	<!--CPHeadContent-->
+	<script src="/-2031684067.js" type="text/javascript"></script>
+	
+	
+	
+	
+
+
+
+
+	<!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="/App_Themes/ie8.css"><![endif]-->
+	<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="/App_Themes/ie7.css"><![endif]-->
+	<!--[if lte IE 6]><link rel="stylesheet" type="text/css" href="/App_Themes/ie6.css"><![endif]-->
+	<!--[if lt IE 9]><script type="text/javascript" src="/Scripts/html5.js"></script><![endif]-->
+
+	<script type="text/javascript">
+		setEditorVariables(false, 840);
+		function getPrintPreviewType() { return 0; } function printPreview() {pPreview(getPrintPreviewType()); }
+	</script>
+	
+</head>
+<body class="wide " >
+
+	
+
+	<div id="fb-root"></div>
+<div id=skipToContentLinks>
+<a href="#cca0248a29-d9a1-4217-b88a-4183c528babf" target="_self" class="skipToContentLink">Skip to Main Content</a>
+</div>
+	<form id="frmReferenceFormForTelerikEditorDialogs"></form>
+
+		<input type="hidden" id="GoogleMapsKey" value="AIzaSyDWUuE-ifkbhxblF920N8MjpBdTg1Wt784" />
+
+
+
+
+
+	<input type="hidden" id="cpcDomain" value="https://cp-civicplusuniversity2.civicplus.com">
+	<input type="hidden" id="hdnStructureID" value="1" />
+	<input type="hidden" id="hdnContentCollectionID" value="3e0590bf-a2af-413d-b288-0fd71fe98c4a" />
+	<input type="hidden" id="hdnWorkingCopyID" value="00000000-0000-0000-0000-000000000000" />
+	<input type="hidden" id="hdnThemeID" value="1" />
+	<input type="hidden" id="pageIsFrontEnd" value="true" />
+	<input type="hidden" id="pageModuleID" />
+	<input type="hidden" id="pagePageID" value="2547" />
+	<input type="hidden" id="hdnModuleEligibleForJquery224Upgrade" value="true" />
+
+		<div id="stickyPlaceholder"></div>
+	<div id="outer-wrap" class="outer-wrap">
+		<div id="inner-wrap" class="inner-wrap">
+				<div id="divToolbars" class="cpToolbars newCP" style="">
+					
+<style>
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700); 
+.alertText .customAlert {
+    color: #EAEAEA;
+    display: inline-block;
+    font-family: 'Open Sans Condensed', sans-serif; 
+    text-transform: uppercase;
+    font-weight: bold;
+    height: 27px;
+    left: 57px;
+    line-height: 27px;
+    overflow: hidden;
+    position: absolute;
+    top: 15px;
+    white-space: nowrap;
+    width: 268px;
+}
+</style>
+  <div id="1_divAlertBar" class="alertToolbar cpToolbar" style="background: #222222;">
+    <div id="1_divAlertToolbarInner" class="alertToolbarInner" style="font-size: 16px;">
+        <a href="/AlertCenter.aspx" id="1_lnkAlertText" class="alertText" style="border-right: 1px solid #000000;">
+            <img src="/Common/Images/AlertCenter/alertBarBlink.svg" id="1_imgDot" alt="Emergency Alert" class="redDot" />
+            <span id="1_customAlert" class="customAlert">Emergency Alerts</span>
+        </a>
+        <span id="1_spnAlertContainer" class="alertContainer"><a href="https://www.coconino.az.gov/2294/COVID-19-Information" target="_blank" class="alert" style="border-left: 1px solid #635e65; border-right: 1px solid #000000;background: #030303 url(/Common/images/AlertCenter/alertBarBlackTextBckg.png) repeat-x; color: #FFFFFF;">
+	Click here for COVID-19 Information
+	<span style="color: #FC4C2F;">Testing, Vaccine, and COVID-19 Data and Resources</span>
+</a>
+<a href="https://www.coconino.az.gov/2294/COVID-19-Information" target="_blank" class="alert" style="border-left: 1px solid #635e65; border-right: 1px solid #000000;background: #030303 url(/Common/images/AlertCenter/alertBarBlackTextBckg.png) repeat-x; color: #FFFFFF;">
+	COVID-19 Information
+	<span style="color: #FC4C2F;">Read On...</span>
+</a>
+</span>
+    </div>
+  </div>
+  <div id="1_divAlertBarEmpty" class="alertBarEmpty"></div>
+  
+<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="/App_Themes/CP/ie7.css"><![endif]-->
+<!-- Allow Dashboard, Favorites Enabled -->
+
+<!-- Begin Signed Out Bar -->
+<div class="cpToolbar user public">
+    <div class="inner selfClear">
+        <p class="dropdown"><a href="/MyAccount/ProfileCreate" role="button" class="myConnections" id="signedOutToolbarCreateProfileButton">Create an Account</a> <span class="welcomeMessage">- Increase your productivity, customize your experience, and engage in information you care about. &nbsp;&nbsp;</span></p>
+        <ul class="nav secondary">
+	        <li><a href="/MyAccount" role="button" class="button" id="loggedOutToolbarSignInButton"><span>Sign In</span></a></li>
+        </ul>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        $('#signedOutToolbarCreateProfileButton').keypress(function (e) { if (e.which === 0) return; $(this).click(); });
+        $('#signedOutToolbarCreateProfileButton').click(function (event) {
+        	event.preventDefault();
+        	window.location.href = '/MyAccount/ProfileCreate?from=url&url=/&dn=' + window.location.origin;
+        });
+
+			
+				$('#loggedOutToolbarSignInButton').click(function (event) {
+					event.preventDefault();
+					window.location.href = '/MyAccount/?from=url&url=' + encodeURIComponent(window.location.href.replace(window.location.origin, '')) + '&dn=' + window.location.host;
+				});
+			
+
+		if ('False' == 'True') {
+            $('#loggedOutToolbarSignInButton').hide();
+		}
+    })
+</script>
+<!-- End Signed Out Bar -->
+
+				</div>
+			<div id="bodyWrapper">
+				<div id="mainNavHolderMobile" class="mainNavHolderMobile"></div>
+				
+<div data-cpRole="structuralContainer" id="structuralContainer1">
+<div data-cpRole="structuralContainer" id="structuralContainer2" class="fixedTop_ts">
+<header class="siteHeader"><div data-cpRole="structuralContainer" id="structuralContainer3">
+<div class="siteWrap"><h1 data-cpRole="banner" id="banner2" class="logo empty">
+
+
+
+
+				<a style="			display: block; text-align: center;
+" class="bannerObject" href="/" target="_self"><img alt="Click to Home" class="bannerObject" height="83" src="/ImageRepository/Document?documentID=16084" width="368" /></a>
+
+</h1><aside data-cpRole="contentContainer" id="contentContainer1" class="searchTS">	<div id="ccf33c9271-b950-402b-b7fa-252a59c50a66" data-containerid="f33c9271-b950-402b-b7fa-252a59c50a66" class="pageContent cpGrid cpGrid24 isLockedContainer showInMobile" data-contentcontainerbreakpoint="20">
+				                
+
+		<div class="row outer wide"><!--
+--><div class="outer col col13 first" style="" data-widgetcontainerid="8785e756-8fb3-46a4-8707-fcb7e0538b35">				
+	<div class="row nest first wide">
+	
+	<div class="inner col col9 first idd00805ed-998c-4520-a32d-a2f6a44d2ed2" style="" data-widgetcontainerid="d00805ed-998c-4520-a32d-a2f6a44d2ed2">	
+<div data-widget-id="6c219e76-4472-426c-a470-5e05adb7e391" data-widget-controller-path="/GraphicLinks/Widget">
+
+
+
+	<style type="text/css">.widgetOptionSet15.widget { padding-top: .25em;}</style>
+
+<div id="graphicLinkWidget6c219e76-4472-426c-a470-5e05adb7e391" class="widget widgetGraphicLinks skin1 widgetOptionSet15 wide" data-elementqueryclasses='{"wide-narrow":"min-width:1em"}' data-elementquerymatch='matchMultiColumn' data-elementqueryunmatch='unmatchMultiColumn' data-modulewidgettype="graphicLinks">
+	<div class="widgetHeader">
+		<div class="">
+				</div>
+	</div>
+	<div class="widgetBody cpGrid cpGrid5 ">	
+			<div class="row   wide"><!--
+--><div class="col col1 first "><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks"><a class="widgetDesc widgetGraphicLinksLink" href="/instagram" target="_self"  aria-label="Instagram graphic"><img src="/ImageRepository/Document?documentID=16097" 
+     class="graphicButtonLink" alt="Instagram" 
+     onmouseover="this.src='/ImageRepository/Document?documentID=16098'" 
+	onmouseout="this.src='/ImageRepository/Document?documentID=16097'"
+     onfocus="this.src='/ImageRepository/Document?documentID=16098'" 
+	onblur="this.src='/ImageRepository/Document?documentID=16097'"> </a></div><!--
+--></div></div><!----><div class="col col1  "><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks"><a class="widgetDesc widgetGraphicLinksLink" href="/facebook" target="_blank"  aria-label="Facebook graphic opens in new window"><img src="/ImageRepository/Document?documentID=16095" 
+     class="graphicButtonLink" alt="Facebook" 
+     onmouseover="this.src='/ImageRepository/Document?documentID=16096'" 
+	onmouseout="this.src='/ImageRepository/Document?documentID=16095'"
+     onfocus="this.src='/ImageRepository/Document?documentID=16096'" 
+	onblur="this.src='/ImageRepository/Document?documentID=16095'"> </a></div><!--
+--></div></div><!----><div class="col col1  "><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks"><a class="widgetDesc widgetGraphicLinksLink" href="/YouTube" target="_self"  aria-label="YouTube graphic"><img src="/ImageRepository/Document?documentID=16101" 
+     class="graphicButtonLink" alt="YouTube" 
+     onmouseover="this.src='/ImageRepository/Document?documentID=16102'" 
+	onmouseout="this.src='/ImageRepository/Document?documentID=16101'"
+     onfocus="this.src='/ImageRepository/Document?documentID=16102'" 
+	onblur="this.src='/ImageRepository/Document?documentID=16101'"> </a></div><!--
+--></div></div><!----><div class="col col1  "><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks"><a class="widgetDesc widgetGraphicLinksLink" href="/twitter" target="_self"  aria-label="Twitter graphic"><img src="/ImageRepository/Document?documentID=16099" 
+     class="graphicButtonLink" alt="Twitter" 
+     onmouseover="this.src='/ImageRepository/Document?documentID=16100'" 
+	onmouseout="this.src='/ImageRepository/Document?documentID=16099'"
+     onfocus="this.src='/ImageRepository/Document?documentID=16100'" 
+	onblur="this.src='/ImageRepository/Document?documentID=16099'"> </a></div><!--
+--></div></div><!----><div class="col col1  last"><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks"><a class="widgetDesc widgetGraphicLinksLink" href="http://www.coconino.az.gov/list.aspx" target="_self"  aria-label="Notifications Icon graphic"><img src="/ImageRepository/Document?documentID=19463" 
+     class="graphicButtonLink" alt="Notifications Icon" 
+     onmouseover="this.src='/ImageRepository/Document?documentID=19463'" 
+	onmouseout="this.src='/ImageRepository/Document?documentID=19463'"
+     onfocus="this.src='/ImageRepository/Document?documentID=19463'" 
+	onblur="this.src='/ImageRepository/Document?documentID=19463'"> </a></div><!--
+--></div></div><!--			--></div>
+	</div>
+	<div class="widgetFooter">
+			</div>
+</div>
+
+</div>
+	</div> <!-- inner column -->
+	<div class="inner col col2 id468f3d95-0f77-41e6-970c-cf8143bcec5e" style="" data-widgetcontainerid="468f3d95-0f77-41e6-970c-cf8143bcec5e">	
+<div data-widget-id="319acf83-262e-4810-a299-a519eca1b7ae" data-widget-controller-path="/Layout/WidgetSiteTools">
+
+		<script type="text/javascript">
+			$(document).ready(function () {
+				setWidgetServiceHovering($("#widgetSiteToolsHeader319acf83-262e-4810-a299-a519eca1b7ae"), true, function () {
+					var $widgetBody = $('#widgetSiteToolsBody319acf83-262e-4810-a299-a519eca1b7ae');
+
+					if ($widgetBody.is(':visible')) {
+						var menuItems = $('.widgetItem a', $widgetBody);
+
+						$(menuItems[0]).focus();
+
+						$('.widgetItem', $widgetBody).unbind("keydown").bind("keydown", function (e) {
+
+							if (e.which === 9) {
+								var index = menuItems.index(e.target);
+
+								if ((index === 0 && e.shiftKey) || (index === (menuItems.length - 1) && !e.shiftKey)) {
+									$("#widgetSiteToolsHeader319acf83-262e-4810-a299-a519eca1b7ae").trigger("mouseleave.services").focus();
+								}
+							}
+						});
+					} else {
+						$('.widgetItem', $widgetBody).unbind("keydown");
+					}
+				});
+			});
+		</script>
+
+	<section id="widgetSiteTools319acf83-262e-4810-a299-a519eca1b7ae" class="widget widgetSiteTools skin5 widgetOptionSet8 flyOutParent wide"  aria-label="Site Tools">
+				<header id="widgetSiteToolsHeader319acf83-262e-4810-a299-a519eca1b7ae" class="widgetHeader" tabindex="0" role="button" aria-haspopup="true">
+			<h3><img alt="Site Tools" class="imageHover" data-hover="/ImageRepository/Document?documentID=16094" data-image="/ImageRepository/Document?documentID=16093" src="/ImageRepository/Document?documentID=16093" /></h3>
+		</header>
+	<div id="widgetSiteToolsBody319acf83-262e-4810-a299-a519eca1b7ae" class="widgetBody whiteIcons flyOut bottom rightEdge widget widgetSiteTools skin5 cpGrid cpGrid1" style="display:none;">
+         <div class="row                   
+ wide">
+	<div class="col col1 first last">
+		<ol class="semanticList">
+					<li class="widgetItem"><a tabindex="0" role="button" aria-label="Site Tools Home" class="widgetSiteToolsHome siteToolsService" href="/">Home</a></li>
+					<li class="widgetItem"><a tabindex="0" role="button" aria-label="Site Tools My Account" class="widgetSiteToolsMyAccount siteToolsService" href="/MyAccount">My Account</a></li>
+					<li id="PrinterFriendly319acf83-262e-4810-a299-a519eca1b7ae" class="widgetItem"><a tabindex="0" aria-label="Site Tools Printer Friendly opens in new window" role="button" class="widgetSiteToolsPrinterFriendly siteToolsService" onkeypress="if (event.which == 13) { this.onclick(); }" onclick="Core.Layout.dynamicJavascript('printPreview();'); return false;" href="#PrinterFriendly319acf83-262e-4810-a299-a519eca1b7ae">Printer Friendly</a></li>
+					<li class="widgetItem"><a tabindex="0" role="button" aria-label="Site Tools Email Page" class="widgetSiteToolsEmailPage siteToolsService" href="/EmailPage">Email Page</a></li>
+					<li class="widgetItem"><a tabindex="0" role="button" aria-label="Site Tools Contact Us" class="widgetSiteToolsContactUs siteToolsService" href="/directory.aspx">Contact Us</a></li>
+					<li class="widgetItem"><a tabindex="0" role="button" aria-label="Site Tools RSS" class="widgetSiteToolsRSS siteToolsService" href="/rss.aspx">RSS</a></li>
+					<li class="widgetItem"><a tabindex="0" role="button" aria-label="Site Tools Site Map" class="widgetSiteToolsSiteMap siteToolsService" href="/SiteMap">Site Map</a></li>
+					<li id="TranslatePage319acf83-262e-4810-a299-a519eca1b7ae" class="widgetItem"><a tabindex="0" aria-label="Site Tools Translate Page opens in new window" role="button" class="widgetSiteToolsTranslatePage siteToolsService" onkeypress="if (event.which == 13) { this.onclick(); }" onclick="Core.Layout.dynamicJavascript('window.open(\&#39;http://translate.google.com/translate?js=n&amp;sl=auto&amp;tl=es&amp;u=\&#39; + document.location.href, \&quot;TranslateWindow\&quot;);'); return false;" href="#TranslatePage319acf83-262e-4810-a299-a519eca1b7ae">Translate Page</a></li>
+					<li class="widgetItem"><a tabindex="0" role="button" aria-label="Site Tools Notifications" class="widgetSiteToolsNotifications siteToolsService" href="/list.aspx">Notifications</a></li>
+					<li class="widgetItem"><a tabindex="0" role="button" aria-label="Site Tools Documents" class="widgetSiteToolsDocuments siteToolsService" href="/DocumentCenter">Documents</a></li>
+		</ol>
+	</div>
+
+		 </div>
+	</div>
+
+	</section>
+
+
+
+</div>
+	</div> <!-- inner column -->
+	<div class="inner col col2 last id8b935b7e-0b71-4863-ad7f-2376f6d40b64" style="" data-widgetcontainerid="8b935b7e-0b71-4863-ad7f-2376f6d40b64">	
+<div data-widget-id="3c7d176e-2421-46a6-8a83-c216dbd5a07e" data-widget-controller-path="/Layout/WidgetShare">
+
+		<script type="text/javascript">
+			$(document).ready(function () {
+				setWidgetServiceHovering($("#widgetShareHeader3c7d176e-2421-46a6-8a83-c216dbd5a07e"), true, function () {
+					var $widgetBody = $('#widgetShareBody3c7d176e-2421-46a6-8a83-c216dbd5a07e');
+
+					if ($widgetBody.is(':visible')) {
+						var menuItems = $('.widgetItem a', $widgetBody);
+
+						$(menuItems[0]).focus();
+
+						$('.widgetItem', $widgetBody).unbind("keydown").bind("keydown", function (e) {
+
+							if (e.which === 9) {
+								var index = menuItems.index(e.target);
+
+								if ((index === 0 && e.shiftKey) || (index === (menuItems.length - 1) && !e.shiftKey)) {
+									$("#widgetShareHeader3c7d176e-2421-46a6-8a83-c216dbd5a07e").trigger("mouseleave.services").focus();
+								}
+							}
+			});
+					} else {
+						$('.widgetItem', $widgetBody).unbind("keydown");
+					}
+				});
+			});
+		</script>
+
+	<section id="widgetShare3c7d176e-2421-46a6-8a83-c216dbd5a07e" class="widget widgetShare skin5 widgetOptionSet6 flyOutParent wide"  aria-label="Share">
+			<header id="widgetShareHeader3c7d176e-2421-46a6-8a83-c216dbd5a07e" class="widgetHeader" tabindex="0" role="button" aria-haspopup="true">
+				<h3><img alt="Share" class="imageHover" data-hover="/ImageRepository/Document?documentID=16092" data-image="/ImageRepository/Document?documentID=16091" src="/ImageRepository/Document?documentID=16091" /></h3>
+	</header>
+    <div id="widgetShareBody3c7d176e-2421-46a6-8a83-c216dbd5a07e" class="widgetBody flyOut bottom rightEdge widget widgetShare skin5 cpGrid cpGrid1" style="display:none;">
+        <div class="row                   
+ wide">
+	<div class="col col1 first last">
+		<ol class="semanticList">
+                <li class="widgetItem" ><a tabindex="0" role="button" class="widgetShareFacebook shareService" onkeypress="if(event.which == 13) { this.onclick(); }" href="/Layout/WidgetShare/ShareLink/Facebook" target="_blank" aria-label="Share on Facebook opens in new window">Facebook</a></li>
+                <li class="widgetItem" ><a tabindex="0" role="button" class="widgetShareTwitter shareService" onkeypress="if(event.which == 13) { this.onclick(); }" href="/Layout/WidgetShare/ShareLink/Twitter" target="_blank" aria-label="Share on Twitter opens in new window">Twitter</a></li>
+                <li class="widgetItem" ><a tabindex="0" role="button" class="widgetSharePinterest shareService" onkeypress="if(event.which == 13) { this.onclick(); }" href="/Layout/WidgetShare/ShareLink/Pinterest" target="_blank" aria-label="Share on Pinterest opens in new window">Pinterest</a></li>
+                <li class="widgetItem" ><a tabindex="0" role="button" class="widgetShareDelicious shareService" onkeypress="if(event.which == 13) { this.onclick(); }" href="/Layout/WidgetShare/ShareLink/Delicious" target="_blank" aria-label="Share on Delicious opens in new window">Delicious</a></li>
+                <li class="widgetItem" ><a tabindex="0" role="button" class="widgetShareBlogger shareService" onkeypress="if(event.which == 13) { this.onclick(); }" href="/Layout/WidgetShare/ShareLink/Blogger" target="_blank" aria-label="Share on Blogger opens in new window">Blogger</a></li>
+                <li class="widgetItem" ><a tabindex="0" role="button" class="widgetShareLinkedIn shareService" onkeypress="if(event.which == 13) { this.onclick(); }" href="/Layout/WidgetShare/ShareLink/LinkedIn" target="_blank" aria-label="Share on LinkedIn opens in new window">LinkedIn</a></li>
+		</ol>
+	</div>
+
+        </div>
+    </div>
+
+	</section>
+
+</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+	<div class="row nest last wide">
+	
+	<div class="inner col col13 first last idb134507c-2d68-47a7-9405-7f09cc8a3569" style="" data-widgetcontainerid="b134507c-2d68-47a7-9405-7f09cc8a3569">	
+
+<div class="widget widgetSpacer" id="7c159003-1097-4bbb-946e-91e6f5e480b6"></div>	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!----><div class="outer col col11 last" style="" data-widgetcontainerid="df2149e9-721d-4d56-a5f8-c93ee2aec521">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col11 first last idc55b0177-51f0-43df-bce3-d9f42c57f96e" style="" data-widgetcontainerid="c55b0177-51f0-43df-bce3-d9f42c57f96e">	
+<div data-widget-id="b20ca11d-fb5a-460d-b81f-144932a6b917" data-widget-controller-path="/Layout/WidgetSearch">
+	
+		<script defer type="text/javascript" src="/Common/Controls/jquery-ui/js/jquery.ui.autocomplete.min.js"></script>
+	<script defer src="/Areas/Layout/Assets/Scripts/Search.js" type="text/javascript"></script>
+	<script defer type="text/javascript">
+
+		$(document).ready(function () {
+			try {
+				$(".widgetSearchButton.widgetSearchButtonb20ca11d-fb5a-460d-b81f-144932a6b917").click(function (e) {
+				e.preventDefault();
+					if ($("#ysnSearchOnlyDeptb20ca11d-fb5a-460d-b81f-144932a6b917").is(':checked')) {
+						doWidgetSearch($(this).siblings(".widgetSearchBox").val(), Number(0));
+					} else {
+						doWidgetSearch($(this).siblings(".widgetSearchBox").val(), 0);
+					}
+			});
+			$("#searchFieldb20ca11d-fb5a-460d-b81f-144932a6b917").keypress(function (e) {
+				if (window.clipboardData) {
+					if (e.keyCode == 13) {
+							if ($("#ysnSearchOnlyDeptb20ca11d-fb5a-460d-b81f-144932a6b917").is(':checked')) {
+								doWidgetSearch($(this).val(), Number(0));
+							} else {
+								doWidgetSearch($(this).val(), 0);
+							}
+						return false;
+					}
+				} else {
+					if (e.which == 13) {
+							if ($("#ysnSearchOnlyDeptb20ca11d-fb5a-460d-b81f-144932a6b917").is(':checked')) {
+								doWidgetSearch($(this).val(), Number(0));
+							} else {
+								doWidgetSearch($(this).val(), 0);
+							}
+						return false;
+					}
+				}
+				return true;
+			});
+
+				if (true) {
+					var currentRequest = null;
+
+					var $searchField = $("#searchFieldb20ca11d-fb5a-460d-b81f-144932a6b917").autocomplete({
+						source: function (request, response) {
+							currentRequest = $.ajax({
+								url: '/Search/AutoComplete',
+								dataType: "json",
+								timeout: 10000,
+								beforeSend: function () {
+									if (currentRequest != null) {
+										currentRequest.abort();
+									}
+								},
+								data:
+								{
+									term: request.term,
+								},
+								success: function (data) {
+									response(data);
+									$('.autoCompleteError').remove();
+								},
+								error: function (xmlhttprequest, textstatus, message) {
+									if (textstatus === "timeout") {
+										if ($("#searchFieldb20ca11d-fb5a-460d-b81f-144932a6b917").siblings('.autoCompleteError').length == 0)
+											$('<span class="autoCompleteError"><p class="alert error">Search autocomplete is currently not responding. Please try again later.</p></span>').insertAfter($("#searchFieldb20ca11d-fb5a-460d-b81f-144932a6b917"));
+									}
+								}
+							});
+						},
+						html: true,
+						delay: 500,
+						select: function (event, ui) {
+							$(this).val(ui.item.value);
+							$(this).next().click();
+						}
+					});
+
+					if (false && true) {
+						$searchField.data("ui-autocomplete")._renderItem = function (ul, item) {
+							return $("<li class=\"itemList\"></li>")
+								.data("ui-autocomplete-item", item)
+								.append("<a>" + item.label + "</a>")
+								.appendTo(ul);
+						};
+					}
+					else {
+						$searchField.data("autocomplete")._renderItem = function (ul, item) {
+							return $("<li></li>")
+								.data("item.autocomplete", item)
+								.append("<a>" + item.label + "</a>")
+								.appendTo(ul);
+						};
+					}
+}
+}
+			catch(e) {} //we're going to eat this error. Autocomplete won't work but we dont wan't to break anything else on the page.
+		});
+	</script>
+
+	<section id="widgetPreviewSearch" class="widget widgetSearch skin4 widgetOptionSet12" style="display: block;" aria-label="Search">
+				<!-- For the button right and inside -->
+		<div class="widgetBody buttonRightInside">
+			<input class="widgetSearchBox widgetSearchBoxb20ca11d-fb5a-460d-b81f-144932a6b917" cp5ph="true" id="searchFieldb20ca11d-fb5a-460d-b81f-144932a6b917" name="searchField" onchange="searchBtnApplyQuery();" placeholder="Search Coconino County..." title="Search Coconino County..." type="text" value="" />
+							<a href="/Search/Results" id="btnSearchIcon" class="widgetSearchButton widgetSearchButtonb20ca11d-fb5a-460d-b81f-144932a6b917" role="button"><img alt="Search" class="imageHover" data-hover="/ImageRepository/Document?documentID=16090" data-image="/ImageRepository/Document?documentID=16089" src="/ImageRepository/Document?documentID=16089" /></a>
+
+			<label class="searchLabel" for="searchFieldb20ca11d-fb5a-460d-b81f-144932a6b917">Search</label>
+		</div>
+
+	</section>
+
+
+<style scoped>
+    
+        .widgetSearch ::-webkit-input-placeholder {
+        color: #301708;
+      }
+        .widgetSearch :-moz-placeholder { /* Firefox 18- */
+       color: #301708;
+    }
+        .widgetSearch ::-moz-placeholder {  /* Firefox 19+ */
+       color: #301708;
+    }
+    .widgetSearch :-ms-input-placeholder {
+       color: #301708;
+    }
+    
+
+	.widgetSearch .widgetBody .widgetSearchBoxb20ca11d-fb5a-460d-b81f-144932a6b917
+	{
+        color: #301708;
+		height: 36px; background: #fff; font-family: Questrial; font-size: 1; padding: 0 40px 0 20px; border: none;
+	}
+	.widgetSearch .widgetBody .widgetSearchButtonb20ca11d-fb5a-460d-b81f-144932a6b917
+	{
+		
+	}
+	.widgetSearch .widgetSearch-onlyDeptb20ca11d-fb5a-460d-b81f-144932a6b917
+	{
+		display: inline-block;
+		color: #333;
+		
+		
+		 padding-top: 10px;
+	}
+	#ysnSearchOnlyDeptb20ca11d-fb5a-460d-b81f-144932a6b917
+	{
+		position: relative;
+		top: .125em;
+	}
+
+</style>
+
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+
+
+	<script type="text/javascript">
+	//Updates search icons href to have the correct queryString
+	function searchBtnApplyQuery() {
+		document.getElementById("btnSearchIcon").href = "/Search?searchPhrase=" + document.getElementById("searchFieldb20ca11d-fb5a-460d-b81f-144932a6b917").value;
+    }
+	</script>
+
+</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!--		--></div> <!-- outer row -->
+
+
+	</div>
+</aside><nav data-cpRole="nav" id="mainNav" class="siteNav mainNav" role="navigation">
+<ol id="mainNavMenu" data-parent="1" class="rootNavMenu" role="menu"><!--
+--><li id="MainItem27" class="topMenuItem" aria-haspopup="true" role="menuitem" data-pageid="27" data-displaymegamenu="True"><!--
+			--><!--
+			--><a id="mainNavYourGovernment" class="navMainItem mainNavItem mainNavItem1" href="/27/Your-Government" target="_self">Your Government</a><!--
+			--><!--
+			--></li><!----><li id="MainItem419" class="topMenuItem" aria-haspopup="true" role="menuitem" data-pageid="419" data-displaymegamenu="True"><!--
+			--><!--
+			--><a id="mainNavAboutUs" class="navMainItem mainNavItem mainNavItem2" href="/419/About-Us" target="_self">About Us</a><!--
+			--><!--
+			--></li><!----><li id="MainItem31" class="topMenuItem" aria-haspopup="true" role="menuitem" data-pageid="31" data-displaymegamenu="True"><!--
+			--><!--
+			--><a id="mainNavResidents" class="navMainItem mainNavItem mainNavItem3" href="/31/Residents" target="_self">Residents</a><!--
+			--><!--
+			--></li><!----><li id="MainItem9" class="topMenuItem" aria-haspopup="true" role="menuitem" data-pageid="9" data-displaymegamenu="True"><!--
+			--><!--
+			--><a id="mainNavVisitors" class="navMainItem mainNavItem mainNavItem4" href="/9/Visitors" target="_self">Visitors</a><!--
+			--><!--
+			--></li><!----><li id="MainItem8" class="topMenuItem" aria-haspopup="true" role="menuitem" data-pageid="8" data-displaymegamenu="True"><!--
+			--><!--
+			--><a id="mainNavIWantTo" class="navMainItem mainNavItem mainNavItem5" href="/8/I-Want-To" target="_self">I Want To…</a><!--
+			--><!--
+			--></li><!---->
+</ol>
+
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			var menuID = 'mainNavMenu';
+			var menuType = MAIN_MENU;
+
+			//setup menu manager properties for main menu
+			if (!menuManager.mobileMainNav && true)
+				menuManager.adjustMainItemsWidth('#' + menuID);
+			menuManager.isMainMenuEditable = false;
+			menuManager.mainMenuMaxSubMenuLevels = 4;
+			menuManager.setMOMMode(2, menuType);
+
+			//Init main menu
+			var setupDraggable = menuManager.isMainMenuEditable;
+			var urlToGetHiddenMenus = '/Pages/MenuMain/HiddenMainSubMenus?pageID=1&moduleID=&themeID=1&menuContainerID=mainNav';
+
+			menuManager.setupMenu(menuID, 'mainNav', menuType, setupDraggable, urlToGetHiddenMenus);
+			menuManager.mainMenuInit = true;
+			menuManager.mainMenuTextResizer = true;
+			if (1.00 > 0)
+				menuManager.mainMenuTextResizerRatio = 1.00;
+			if (window.isResponsiveEnabled)
+				menuManager.mainMenuReady.resolve();
+
+		});
+	</script>
+
+
+<aside data-cpRole="megaMenu" id="megaMenu" class="megaMenu" style="display: none;"><input type="hidden" id="megaMenuPopupDirection" value="0"><input type="hidden" id="megaMenuWidthReference" value="1"><aside data-cpRole="contentContainer" id="mainNavMegaMenu27" class="contentTop mainNavMegaMenu megaMenuContainer pageID_27 hidden" data-orientation="horizontal">	<div id="cc2b40b120-dc0b-4c93-afc7-309d0a937fc3" data-containerid="2b40b120-dc0b-4c93-afc7-309d0a937fc3" class="pageContent cpGrid cpGrid24">
+				                
+
+
+
+	</div>
+</aside><aside data-cpRole="contentContainer" id="mainNavMegaMenu419" class="contentTop mainNavMegaMenu megaMenuContainer pageID_419 hidden" data-orientation="horizontal">	<div id="cca0af5f58-a841-4c51-a0fa-02b1f8081307" data-containerid="a0af5f58-a841-4c51-a0fa-02b1f8081307" class="pageContent cpGrid cpGrid24">
+				                
+
+
+
+	</div>
+</aside><aside data-cpRole="contentContainer" id="mainNavMegaMenu31" class="contentTop mainNavMegaMenu megaMenuContainer pageID_31 hidden" data-orientation="horizontal">	<div id="cc02264616-4f62-4a5d-96cc-c5c862d864e2" data-containerid="02264616-4f62-4a5d-96cc-c5c862d864e2" class="pageContent cpGrid cpGrid24">
+				                
+
+
+
+	</div>
+</aside><aside data-cpRole="contentContainer" id="mainNavMegaMenu9" class="contentTop mainNavMegaMenu megaMenuContainer pageID_9 hidden" data-orientation="horizontal">	<div id="cc0ec91d97-0609-487c-b457-d1739b42867c" data-containerid="0ec91d97-0609-487c-b457-d1739b42867c" class="pageContent cpGrid cpGrid24">
+				                
+
+
+
+	</div>
+</aside><aside data-cpRole="contentContainer" id="mainNavMegaMenu8" class="contentTop mainNavMegaMenu megaMenuContainer pageID_8 hidden" data-orientation="horizontal">	<div id="cce3230cf1-4df1-4057-9027-39c56cd712d8" data-containerid="e3230cf1-4df1-4057-9027-39c56cd712d8" class="pageContent cpGrid cpGrid24">
+				                
+
+
+
+	</div>
+</aside></aside></nav></div>
+</div><div data-cpRole="structuralContainer" id="structuralContainer4">
+<div class="siteWrap"><aside data-cpRole="contentContainer" id="contentContainer2">	<div id="cc441b9a34-2cc2-409e-aaab-4fec81549a3b" data-containerid="441b9a34-2cc2-409e-aaab-4fec81549a3b" class="pageContent cpGrid cpGrid24 isLockedContainer showInMobile" data-contentcontainerbreakpoint="51">
+				                
+
+		<div class="row outer wide"><!--
+--><div class="outer col col12 first" style="" data-widgetcontainerid="05a29e9d-3622-40ca-8f1c-7eb3a393ecb4">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col12 first last id28b50231-0a52-46f2-b46a-b9c3eff76f3d" style="" data-widgetcontainerid="28b50231-0a52-46f2-b46a-b9c3eff76f3d">	
+<div data-widget-id="ed0eb995-53e3-44fe-8666-2d7ec52e9df8" data-widget-controller-path="/GraphicLinks/Widget">
+
+
+
+
+<div id="graphicLinkWidgeted0eb995-53e3-44fe-8666-2d7ec52e9df8" class="widget widgetGraphicLinks skin1 widgetOptionSet16 wide" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}' data-elementquerymatch='matchMultiColumn' data-elementqueryunmatch='unmatchMultiColumn' data-modulewidgettype="graphicLinks">
+	<div class="widgetHeader">
+		<div class="">
+				</div>
+	</div>
+	<div class="widgetBody cpGrid cpGrid3 ">	
+			<div class="row   wide"><!--
+--><div class="col col1 first "><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks">
+
+<div>
+	<a href="/104/Board-of-Supervisors" target="_self" class="fancyButton fancyButton499 " >
+		<span>
+			<span><span class="text">Board of Supervisors</span></span>
+		</span>
+	</a>
+</div>
+		<style scoped="scoped">.fancyButton499.fancyButton:link,.fancyButton499.fancyButton:visited, .fancyButton499div.fancyButton{
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.fancyButton499.fancyButton:hover,.fancyButton499.fancyButton:focus,.fancyButton499.fancyButton:active,.fancyButton499.fancyButton.hover{
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.fancyButton499.fancyButton:link > span,.fancyButton499.fancyButton:visited > span, .fancyButton499div.fancyButton > span{
+}
+.fancyButton499.fancyButton:hover > span,.fancyButton499.fancyButton:focus > span,.fancyButton499.fancyButton:active > span,.fancyButton499.fancyButton.hover > span{
+}
+.fancyButton499.fancyButton .text{
+	color: #fff;
+	font-size: 1.em;
+	font-family: "Open Sans";
+	text-align: left;
+	padding-left: 65px;
+	font-weight: 600;
+	text-decoration: none;
+	padding-left: 65px;
+	background-image: url('/ImageRepository/Document?documentID=16103');
+	background-repeat: no-repeat;
+	background-position: left center;
+height: 55px; opacity: 1;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;text-transform: uppercase;}
+.fancyButton499.fancyButton:hover .text,.fancyButton499.fancyButton:focus .text,.fancyButton499.fancyButton:active .text,.fancyButton499.fancyButton.hover .text{
+	text-decoration: none;
+	background-image: url('/ImageRepository/Document?documentID=16104');
+	background-repeat: no-repeat;
+	background-position: left center;
+
+
+}
+</style>
+
+ </div><!--
+--></div></div><!----><div class="col col1  "><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks">
+
+<div>
+	<a href="/FormCenter/Contact-Us-Form-2/A-Citizen-Request-77" target="_self" class="fancyButton fancyButton505 " >
+		<span>
+			<span><span class="text">Report a Concern</span></span>
+		</span>
+	</a>
+</div>
+		<style scoped="scoped">.fancyButton505.fancyButton:link,.fancyButton505.fancyButton:visited, .fancyButton505div.fancyButton{
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.fancyButton505.fancyButton:hover,.fancyButton505.fancyButton:focus,.fancyButton505.fancyButton:active,.fancyButton505.fancyButton.hover{
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.fancyButton505.fancyButton:link > span,.fancyButton505.fancyButton:visited > span, .fancyButton505div.fancyButton > span{
+}
+.fancyButton505.fancyButton:hover > span,.fancyButton505.fancyButton:focus > span,.fancyButton505.fancyButton:active > span,.fancyButton505.fancyButton.hover > span{
+}
+.fancyButton505.fancyButton .text{
+	color: #fff;
+	font-size: 1.em;
+	font-family: "Open Sans";
+	text-align: left;
+	padding-left: 65px;
+	font-weight: 600;
+	text-decoration: none;
+	padding-left: 65px;
+	background-image: url('/ImageRepository/Document?documentID=16109');
+	background-repeat: no-repeat;
+	background-position: left center;
+height: 55px; opacity: 1;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;text-transform: uppercase;}
+.fancyButton505.fancyButton:hover .text,.fancyButton505.fancyButton:focus .text,.fancyButton505.fancyButton:active .text,.fancyButton505.fancyButton.hover .text{
+	text-decoration: none;
+	background-image: url('/ImageRepository/Document?documentID=16110');
+	background-repeat: no-repeat;
+	background-position: left center;
+
+
+}
+</style>
+
+ </div><!--
+--></div></div><!----><div class="col col1  last"><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks">
+
+<div>
+	<a href="https://www.governmentjobs.com/careers/coconino" target="_blank" class="fancyButton fancyButton506 "  aria-label="Employment opens in new window">
+		<span>
+			<span><span class="text">Employment</span></span>
+		</span>
+	</a>
+</div>
+		<style scoped="scoped">.fancyButton506.fancyButton:link,.fancyButton506.fancyButton:visited, .fancyButton506div.fancyButton{
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.fancyButton506.fancyButton:hover,.fancyButton506.fancyButton:focus,.fancyButton506.fancyButton:active,.fancyButton506.fancyButton.hover{
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.fancyButton506.fancyButton:link > span,.fancyButton506.fancyButton:visited > span, .fancyButton506div.fancyButton > span{
+}
+.fancyButton506.fancyButton:hover > span,.fancyButton506.fancyButton:focus > span,.fancyButton506.fancyButton:active > span,.fancyButton506.fancyButton.hover > span{
+}
+.fancyButton506.fancyButton .text{
+	color: #fff;
+	font-size: 1.em;
+	font-family: "Open Sans";
+	text-align: left;
+	padding-left: 65px;
+	font-weight: 600;
+	text-decoration: none;
+	padding-left: 65px;
+	background-image: url('/ImageRepository/Document?documentID=16111');
+	background-repeat: no-repeat;
+	background-position: left center;
+height: 55px; opacity: 1;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;text-transform: uppercase;}
+.fancyButton506.fancyButton:hover .text,.fancyButton506.fancyButton:focus .text,.fancyButton506.fancyButton:active .text,.fancyButton506.fancyButton.hover .text{
+	text-decoration: none;
+	background-image: url('/ImageRepository/Document?documentID=16112');
+	background-repeat: no-repeat;
+	background-position: left center;
+
+
+}
+</style>
+
+ </div><!--
+--></div></div><!--			--></div>
+	</div>
+	<div class="widgetFooter">
+			</div>
+</div>
+
+</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!----><div class="outer col col12 last" style="" data-widgetcontainerid="0af52afa-4c23-4b4f-b305-ea007b1a65eb">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col12 first last id1b63cdb8-2d43-445a-be49-063818e9eac3" style="" data-widgetcontainerid="1b63cdb8-2d43-445a-be49-063818e9eac3">	
+<div data-widget-id="6f130aaf-060e-407c-a091-854f29e175d5" data-widget-controller-path="/GraphicLinks/Widget">
+
+
+
+
+<div id="graphicLinkWidget6f130aaf-060e-407c-a091-854f29e175d5" class="widget widgetGraphicLinks skin1 widgetOptionSet16 wide" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}' data-elementquerymatch='matchMultiColumn' data-elementqueryunmatch='unmatchMultiColumn' data-modulewidgettype="graphicLinks">
+	<div class="widgetHeader">
+		<div class="">
+				</div>
+	</div>
+	<div class="widgetBody cpGrid cpGrid3 ">	
+			<div class="row   wide"><!--
+--><div class="col col1 first "><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks">
+
+<div>
+	<a href="/389/View-County-Maps" target="_self" class="fancyButton fancyButton502 " >
+		<span>
+			<span><span class="text">County Maps</span></span>
+		</span>
+	</a>
+</div>
+		<style scoped="scoped">.fancyButton502.fancyButton:link,.fancyButton502.fancyButton:visited, .fancyButton502div.fancyButton{
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.fancyButton502.fancyButton:hover,.fancyButton502.fancyButton:focus,.fancyButton502.fancyButton:active,.fancyButton502.fancyButton.hover{
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.fancyButton502.fancyButton:link > span,.fancyButton502.fancyButton:visited > span, .fancyButton502div.fancyButton > span{
+}
+.fancyButton502.fancyButton:hover > span,.fancyButton502.fancyButton:focus > span,.fancyButton502.fancyButton:active > span,.fancyButton502.fancyButton.hover > span{
+}
+.fancyButton502.fancyButton .text{
+	color: #fff;
+	font-size: 1.em;
+	font-family: "Open Sans";
+	text-align: left;
+	padding-left: 65px;
+	font-weight: 600;
+	text-decoration: none;
+	padding-left: 65px;
+	background-image: url('/ImageRepository/Document?documentID=16113');
+	background-repeat: no-repeat;
+	background-position: left center;
+height: 55px; opacity: 1;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;text-transform: uppercase;}
+.fancyButton502.fancyButton:hover .text,.fancyButton502.fancyButton:focus .text,.fancyButton502.fancyButton:active .text,.fancyButton502.fancyButton.hover .text{
+	text-decoration: none;
+	background-image: url('/ImageRepository/Document?documentID=16114');
+	background-repeat: no-repeat;
+	background-position: left center;
+
+
+}
+</style>
+
+ </div><!--
+--></div></div><!----><div class="col col1  "><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks">
+
+<div>
+	<a href="/591/On-Line-Payments" target="_self" class="fancyButton fancyButton507 " >
+		<span>
+			<span><span class="text">Online Bill Pay</span></span>
+		</span>
+	</a>
+</div>
+		<style scoped="scoped">.fancyButton507.fancyButton:link,.fancyButton507.fancyButton:visited, .fancyButton507div.fancyButton{
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.fancyButton507.fancyButton:hover,.fancyButton507.fancyButton:focus,.fancyButton507.fancyButton:active,.fancyButton507.fancyButton.hover{
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.fancyButton507.fancyButton:link > span,.fancyButton507.fancyButton:visited > span, .fancyButton507div.fancyButton > span{
+}
+.fancyButton507.fancyButton:hover > span,.fancyButton507.fancyButton:focus > span,.fancyButton507.fancyButton:active > span,.fancyButton507.fancyButton.hover > span{
+}
+.fancyButton507.fancyButton .text{
+	color: #fff;
+	font-size: 1.em;
+	font-family: "Open Sans";
+	text-align: left;
+	padding-left: 65px;
+	font-weight: 600;
+	text-decoration: none;
+	padding-left: 65px;
+	background-image: url('/ImageRepository/Document?documentID=16107');
+	background-repeat: no-repeat;
+	background-position: left center;
+height: 55px; opacity: 1;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;text-transform: uppercase;}
+.fancyButton507.fancyButton:hover .text,.fancyButton507.fancyButton:focus .text,.fancyButton507.fancyButton:active .text,.fancyButton507.fancyButton.hover .text{
+	text-decoration: none;
+	background-image: url('/ImageRepository/Document?documentID=16108');
+	background-repeat: no-repeat;
+	background-position: left center;
+
+
+}
+</style>
+
+ </div><!--
+--></div></div><!----><div class="col col1  last"><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks">
+
+<div>
+	<a href="/calendar.aspx" target="_self" class="fancyButton fancyButton508 " >
+		<span>
+			<span><span class="text">Calendar</span></span>
+		</span>
+	</a>
+</div>
+		<style scoped="scoped">.fancyButton508.fancyButton:link,.fancyButton508.fancyButton:visited, .fancyButton508div.fancyButton{
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.fancyButton508.fancyButton:hover,.fancyButton508.fancyButton:focus,.fancyButton508.fancyButton:active,.fancyButton508.fancyButton.hover{
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.fancyButton508.fancyButton:link > span,.fancyButton508.fancyButton:visited > span, .fancyButton508div.fancyButton > span{
+}
+.fancyButton508.fancyButton:hover > span,.fancyButton508.fancyButton:focus > span,.fancyButton508.fancyButton:active > span,.fancyButton508.fancyButton.hover > span{
+}
+.fancyButton508.fancyButton .text{
+	color: #fff;
+	font-size: 1.em;
+	font-family: "Open Sans";
+	text-align: left;
+	padding-left: 65px;
+	font-weight: 600;
+	text-decoration: none;
+	padding-left: 65px;
+	background-image: url('/ImageRepository/Document?documentID=16105');
+	background-repeat: no-repeat;
+	background-position: left center;
+height: 55px; opacity: 1;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;text-transform: uppercase;}
+.fancyButton508.fancyButton:hover .text,.fancyButton508.fancyButton:focus .text,.fancyButton508.fancyButton:active .text,.fancyButton508.fancyButton.hover .text{
+	text-decoration: none;
+	background-image: url('/ImageRepository/Document?documentID=16106');
+	background-repeat: no-repeat;
+	background-position: left center;
+
+
+}
+</style>
+
+ </div><!--
+--></div></div><!--			--></div>
+	</div>
+	<div class="widgetFooter">
+			</div>
+</div>
+
+</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!--		--></div> <!-- outer row -->
+
+
+	</div>
+</aside></div>
+</div></header>
+</div><div data-cpRole="banner" id="banner1"><div data-cpRole="structuralContainer" id="structuralContainer5">
+<div class="siteWrap"><div data-cpRole="structuralContainer" id="structuralContainer6" class="mainWrap" role="main">
+<div data-cpRole="structuralContainer" id="structuralContainer7" class="outerContentWrap">
+<div data-cpRole="structuralContainer" id="structuralContainer8" class="contentWrap">
+<div data-cpRole="breadCrumbs" class="breadCrumbContainer" id="breadCrumbs">		<ol class="semanticList breadCrumbs">
+			<li><a class="breadCrumb" href="/2309/CustomLinks-46">CustomLinks_46</a></li><li id="currentBCPage" data-pageid="2547">Vaccine Info</li>
+		</ol>
+
+	   
+    
+</div><div data-cpRole="mainContentContainer" id="moduleContent">
+	
+	<div id="page" class="moduleContentNew">
+		
+
+	<input id="hdnPageID" name="hdnPageID" type="hidden" value="2547" />
+	<input id="hdnParentID" name="hdnParentID" type="hidden" value="2309" />
+	<input id="hdnVersionID" name="hdnVersionID" type="hidden" value="40328" />
+	<input id="pageMenuTitle" name="pageMenuTitle" type="hidden" value="Vaccine Info" />
+	<input id="pageShowFeatureColumn" name="pageShowFeatureColumn" type="hidden" value="False" />
+	<input id="hdnIsLayoutPage" name="hdnIsLayoutPage" type="hidden" value="False" />
+	<input id="hdnPageStatus" name="hdnPageStatus" type="hidden" value="Active" />
+
+				<h1 id="versionHeadLine" class="headline">
+Vaccine Information		</h1>
+			<div id="cca0248a29-d9a1-4217-b88a-4183c528babf" data-containerid="a0248a29-d9a1-4217-b88a-4183c528babf" class="pageContent cpGrid cpGrid24"  data-contentcontainerbreakpoint="10" data-smoothscrolling="True">
+			
+
+		<div class="row outer wide"><!--
+--><div class="outer col col24 first last" style="" data-widgetcontainerid="cfa3d880-f0ad-4838-afa0-1073c83581ed">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col24 first last id0802cfb2-69a3-454d-83bf-d278579a543e" style="" data-widgetcontainerid="0802cfb2-69a3-454d-83bf-d278579a543e">	
+<div class="widget editor pageStyles narrow" id="divEditore67b0916-5c2f-43b8-bbe1-24f9ec418e54" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}'>
+        <div class="fr-view">
+
+
+        <h1 class="headline">Coconino County COVID-19 Information Line: 928-679-7300</h1><p><br></p><table style="width: 100%;"><tbody><tr><td style="width: 100%; background-color: rgb(253, 204, 167);"><h3 class="subhead2" style="text-align: center;"><strong>SPECIAL REGISTRATION - Fort Tuthill, Flagstaff First Dose, 2/10 - 2/12/2021<br></strong></h3><h3 style='box-sizing: border-box; margin-top: 1.4em; border: 0px none; font-family: "Open Sans"; font-style: normal; font-weight: 600; color: rgb(173, 56, 36); font-size: 1.25em; text-decoration: none; display: block; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-align: center;'><a aria-label="Click here to register Opens in new window" href="https://www.eventbrite.com/e/new-appts-covid-19-vaccination-february-2021-210-216-tickets-141196798425" rel="noopener" style='box-sizing: border-box; user-select: auto; color: rgb(173, 56, 36); text-decoration: underline; font-size: 1em; font-style: normal; font-weight: 600; margin-top: 1.4em; border: 0px none; font-family: "Open Sans"; display: inline-block;' target="_blank"><strong style="box-sizing: border-box; font-weight: 700;">Click here to register</strong></a></h3></td></tr></tbody></table><table style="width: 100%;"><tbody><tr></tr></tbody></table><table style="width: 100%;"><tbody><tr></tr></tbody></table><p><br></p><table style="width: 100%;"><tbody><tr><td style="width: 100%; background-color: rgb(253, 204, 167);"><h3 class="subhead2" style="text-align: center;">Tuba City - February 12-13 - <a href="/DocumentCenter/View/42523" rel="noopener" target="_blank">click here for details</a></h3></td></tr></tbody></table><p>Coconino County is currently administering both Moderna and Pfizer COVID-19 vaccinations at the Fort Tuthill vaccination location to individuals in Phase 1a and Priority Groups within Phase 1b. The vaccine administered is determined by vaccine supply. Individuals eligible for vaccination cannot select a preferred vaccine type. There is no guarantee as to the type of vaccine available for an appointment time. Second vaccine doses will be provided using the same vaccine type as the first dose as required by the manufacturer. Appointments are required to receive a vaccination. Those without an appointment on the day they are seeking vaccination will be turned away.&nbsp;</p><p>Other vaccination site&apos;s vaccine type may vary by location. Moderna is the only vaccine type being administered by partner sites located in Coconino County, until further notice.</p><h2><a href="https://www.coconino.az.gov/2580/COVID-19-Vaccination-Locations"><img src="/ImageRepository/Document?documentId=42198" class="fr-fil fr-dib" alt="Graphic that says &quot; CLICK HERE FOR VACCINATION LOCATIONS & TO MAKE APPOINTMENTS&quot;"></a></h2><p>The entrance to Fort Tuthill County Park, 2446 Fort Tuthill Loop, Flagstaff, for COVID-19 vaccination appointments is permanently changing effective Friday, Feb. 12. Individuals at Fort Tuthill for COVID-19 vaccines will only be permitted to enter the park at Purple Sage Trail, located approximately 1/2 mile north of the main park entrance off Beulah Blvd. Those with vaccine appointments are asked to approach the park from the north on Beulah Blvd. and turn right onto Purple Sage Trail. After completing the vaccine appointments, individuals will be directed to exit the park through the main entrance for easy access to I-17. Click here to view a <a aria-label="MAP Opens in new window" href="/DocumentCenter/View/42549" rel="noopener" target="_blank">MAP</a> of the vaccination site access.</p>
+    </div>
+
+<script type="text/javascript">
+	$(document).ready(function (e) {		
+	    renderSlideshowIfApplicable($('#divEditor' + 'e67b0916-5c2f-43b8-bbe1-24f9ec418e54'));
+	});
+</script>
+</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!--		--></div> <!-- outer row -->
+		<div class="row outer wide"><!--
+--><div class="outer col col24 first last" style="" data-widgetcontainerid="024f23c1-393a-445c-9900-25254c91fca9">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col24 first last idefaf663c-b9b3-4d45-bb1e-74d616f3893b" style="" data-widgetcontainerid="efaf663c-b9b3-4d45-bb1e-74d616f3893b">	
+<div class="widget image pageStyles" id="divImageOuterbd044c5d-45fe-4049-9d81-14db035da019" data-widget-id="bd044c5d-45fe-4049-9d81-14db035da019">
+    
+	<div class="widgetBody imageBorder" id="divImagebd044c5d-45fe-4049-9d81-14db035da019"><img src="/ImageRepository/Document?documentID=42421" alt="Contact Your Legislators 2021 0204" title="Contact Your Legislators 2021 0204"/>	</div></div>
+
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!--		--></div> <!-- outer row -->
+		<div class="row outer wide"><!--
+--><div class="outer col col24 first last" style="" data-widgetcontainerid="2cad4ded-a309-4883-8612-a6f7645145f9">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col24 first last idd10c15d2-2d07-4969-8927-055063cf2daa" style="" data-widgetcontainerid="d10c15d2-2d07-4969-8927-055063cf2daa">	
+<div class="widget editor pageStyles narrow" id="divEditor6b686c80-de67-40d3-976a-36c11d5e1983" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}'>
+        <div class="fr-view">
+
+
+        <table style="width: 100%;"><tbody><tr><td style="width: 100.0000%;"><h2 class="subhead1">Vaccine Data</h2></td></tr></tbody></table><p><strong>For up-to-date information on the number of vaccines administered in Coconino County and vaccination rate per 100,000 visit the&nbsp;</strong><a aria-label="ADHS Vaccine Phases Page Opens in new window" href="https://www.azdhs.gov/documents/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/novel-coronavirus/vaccine-phases.pdf" rel="noopener" target="_blank"><strong>ADHS Vaccine Phases Page</strong></a><strong>.</strong></p><p><strong>For a national overview, visit the&nbsp;</strong><a href="https://covid.cdc.gov/covid-data-tracker/#vaccinations" rel="noopener" target="_blank"><strong>CDC COVID-19 Data Tracker</strong></a><strong>.</strong></p>
+    </div>
+
+<script type="text/javascript">
+	$(document).ready(function (e) {		
+	    renderSlideshowIfApplicable($('#divEditor' + '6b686c80-de67-40d3-976a-36c11d5e1983'));
+	});
+</script>
+</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!--		--></div> <!-- outer row -->
+		<div class="row outer wide"><!--
+--><div class="outer col col24 first last" style="" data-widgetcontainerid="acf62b47-7e83-4864-90cb-48576ea23436">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col24 first last id9d3d0b68-31f6-4e8f-a5f5-bd47aa1a641f" style="" data-widgetcontainerid="9d3d0b68-31f6-4e8f-a5f5-bd47aa1a641f">	
+<div class="widget editor pageStyles narrow" id="divEditorb75f22d5-c246-4896-9b99-bfa0e564d4b0" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}'>
+        <div class="fr-view">
+
+
+        <div style='margin: 0px; padding: 0px; user-select: text; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; overflow: visible; cursor: text; clear: both; position: relative; direction: ltr; color: rgb(0, 0, 0); font-family: "Segoe UI", "Segoe UI Web", Arial, Verdana, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'><table style="width: 100%;"><tbody><tr><td style="width: 100.0000%;"><h2 class="subhead1"><strong>COVID-19 Vaccination Status Update</strong></h2></td></tr></tbody></table><h3 class="subhead2"><strong><span style="color: rgb(15, 56, 49); font-family: Arial; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"><strong>Coconino County is currently vaccinating Phase 1a eligible individuals and priority populations within Phase 1b by appointment at Fort Tuthill County Park, 2446 Fort Tuthill Loop in Flagstaff.</strong></span></strong></h3></div><p style="text-align: right;"><strong>(</strong><a aria-label="en español Opens in new window" href="/DocumentCenter/View/41967" rel="noopener" target="_blank"><strong>en espa<span style="color: rgb(15, 56, 49); font-family: Arial; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">&ntilde;</span>ol</strong></a><strong>)</strong></p><div style='box-sizing: border-box; font-family: "Segoe UI", system-ui, "Apple Color Emoji", "Segoe UI Emoji", sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;'><p style="font-size:16.2px;"><img src="/ImageRepository/Document?documentId=41937" class="fr-fil fr-dib" alt="Vaccine Phase Graphic (6)"></p><p style="font-size:16.2px;">For Navajo Nation COVID-19 Vaccine Prioritization Information <a href="https://www.coconino.az.gov/2312/Navajo" rel="noopener" target="_blank">click here</a>.</p><p style="font-size:16.2px;"><strong>Phase 1a</strong> includes healthcare workers and long-term care facility residents and staff.</p><p style="font-size:16.2px;"><strong><span style="font-size:16.2px;">Priority populations within Phase 1b</span></strong><span style="font-size:16.2px;">&nbsp;include<strong>&nbsp;</strong>education and childcare workers, law enforcement and protective</span><span style="font-size:16.2px;">&nbsp;services, and individuals aged <strong>65</strong> and older.&nbsp;</span></p><p style="font-size:16.2px;">Vaccination opportunities will open at a later time for other populations in Phase 1b including essential workers and adults with high-risk conditions in congregate settings.&nbsp;</p><p style="font-size:16.2px;">Definitions of priority populations within Phase 1b are:</p><ul style="font-size:16.2px;"><li>Education and childcare workers, teachers, and staff. This includes all school and higher education staff who normally interact with other staff and students, and bus drivers, cafeteria workers, facilities staff, etc. &nbsp; &nbsp; &nbsp;&nbsp;</li><li>Law enforcement and protective services (corrections and other emergency response staff). &nbsp; &nbsp;&nbsp;</li><li>Individuals aged <strong>65</strong> and older.</li></ul></div><p style="line-height:normal;"><strong><span style="color:black;">Proof of eligibility within the Phase 1a and Phase 1b priority groups is required.</span></strong><span style="color:black;">&nbsp;Those seeking vaccination are asked to bring proof of occupation such as a paystub, employment badge, a letter from an employer or a driver&rsquo;s license or ID displaying date of birth. Those without proper eligibility identification may be turned away. The Fort Tuthill vaccination site is currently open to the defined eligible groups and is not opened to the general public.</span></p><p style="line-height:normal;">Vaccine supplies continue to be limited at this time and appointments are available on a first come first served basis at the Fort Tuthill vaccination site.&nbsp;</p><p>There is no cost to receive the vaccine, however, individuals with insurance should bring their insurance card. No one will be turned away for lack of insurance. Individuals without internet access in priority groups (now including those age 65 years and older) or who require assistance with registration can call the COVID-19 Information Line at 928-679-7300. &nbsp;</p><p>Additional partner vaccination sites will be added as available. Coconino County Health and Human Services is actively working with state and local partners to facilitate agreements that will allow vaccine to be allocated for additional distribution outside of current operations, such as pharmacies and other private providers. This will help increase access to vaccine among priority populations.&nbsp;</p><p>The exact timeline of vaccine distribution among remaining Phase 1 priority groups and Phase 2 and 3 populations will depend on factors such as how many vaccine types have been approved, how many doses have been manufactured and allocated to Coconino County, how many individuals decide to get vaccinated, and other logistical factors. As more vaccine is available to more groups of people, more locations will open to provide vaccine. Eventually, COVID-19 vaccine will be available through doctors&rsquo; offices, pharmacies, clinics, outpatient providers, and other healthcare facilities.</p><p>The <a href="https://www.coconino.az.gov/2317/Information-Line---928-679-7300">COVID-19 Information Line</a> is available to assist.&nbsp;</p><p><br></p>
+    </div>
+
+<script type="text/javascript">
+	$(document).ready(function (e) {		
+	    renderSlideshowIfApplicable($('#divEditor' + 'b75f22d5-c246-4896-9b99-bfa0e564d4b0'));
+	});
+</script>
+</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!--		--></div> <!-- outer row -->
+		<div class="row outer wide"><!--
+--><div class="outer col col24 first last" style="" data-widgetcontainerid="952bff7a-ccc4-4ec5-9e72-3edc04e301a7">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col24 first last id0597c3b2-e3be-4cfc-a1d7-c4450348def6" style="" data-widgetcontainerid="0597c3b2-e3be-4cfc-a1d7-c4450348def6">	
+ 
+	<div data-widget-id='5ae02046-926a-4eaf-b9a4-4a8e47241b17' data-moduleName="customHtml" id='widgetCustomHtml5ae02046-926a-4eaf-b9a4-4a8e47241b17' class="widget widgetCustomHtml skin1 narrow" >
+	<div class="widgetBody pageStyles" id="widgetBody5ae02046-926a-4eaf-b9a4-4a8e47241b17">
+		<div id="customHtml5ae02046-926a-4eaf-b9a4-4a8e47241b17"><div><p><img src="/ImageRepository/Document?documentId=40641" class="fr-fil fr-dib" alt="1"></p>
+ 
+<b>Click on the questions to see the answers.</b></div></div>
+	</div>
+	</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!--		--></div> <!-- outer row -->
+		<div class="row outer wide"><!--
+--><div class="outer col col24 first last" style="" data-widgetcontainerid="775734a4-7e4c-4bc0-acec-41d403553439">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col24 first last idf63a05c9-ea1a-4fd9-8b2e-fd46ace08737" style="" data-widgetcontainerid="f63a05c9-ea1a-4fd9-8b2e-fd46ace08737">	
+<div data-widget-id="ad8126e6-25a2-4f2c-8000-bdf615e77f05" data-widget-controller-path="/Faq/Widget">
+  
+
+
+
+
+
+
+
+	<section id="widgetFaqad8126e6-25a2-4f2c-8000-bdf615e77f05" class="widget widgetFAQ skin4 widgetOptionSet1 narrow" data-modulewidgettype="FAQ" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}' data-elementquerymatch='matchMultiColumn' data-elementqueryunmatch='unmatchMultiColumn' aria-labelledby="faqHeaderad8126e6-25a2-4f2c-8000-bdf615e77f05">
+			<header class="widgetHeader" id="faqHeaderad8126e6-25a2-4f2c-8000-bdf615e77f05">
+		<div class="">
+			<h3><a href="/Faq.aspx?TID=58">COVID-19 Vaccine Frequently Asked Questions (FAQs)</a></h3>
+				</div>
+	</header>
+	<div class="widgetBody cpGrid cpGrid2 ">
+        <div class="row  narrow">
+				<div class="col col1 first ">
+					<ol class="semanticList bullets">
+   
+	 <li style="position: relative" class="widgetItem">
+		 <a class="widgetDesc widgetFAQQuestion" href="/Faq.aspx?QID=461">Who will get a COVID-19 vaccine?</a>
+	 </li>
+   
+	 <li style="position: relative" class="widgetItem">
+		 <a class="widgetDesc widgetFAQQuestion" href="/Faq.aspx?QID=462">What Phase of vaccination is Coconino County in?</a>
+	 </li>
+   
+	 <li style="position: relative" class="widgetItem">
+		 <a class="widgetDesc widgetFAQQuestion" href="/Faq.aspx?QID=479">Where can I get vaccinated?</a>
+	 </li>
+   
+	 <li style="position: relative" class="widgetItem">
+		 <a class="widgetDesc widgetFAQQuestion" href="/Faq.aspx?QID=483">I am a resident of a different county. Can I get my vaccine in Coconino County?</a>
+	 </li>
+   
+	 <li style="position: relative" class="widgetItem">
+		 <a class="widgetDesc widgetFAQQuestion" href="/Faq.aspx?QID=485">I received my first dose at another location, can I receive second dose from Coconino County Health and Human Services?</a>
+	 </li>
+   
+	 <li style="position: relative" class="widgetItem">
+		 <a class="widgetDesc widgetFAQQuestion" href="/Faq.aspx?QID=464">How will CCHHS verify if someone is in a certain priority group?</a>
+	 </li>
+   
+	 <li style="position: relative" class="widgetItem">
+		 <a class="widgetDesc widgetFAQQuestion" href="/Faq.aspx?QID=480">Why did the County move to vaccinating priority populations within Phase 1b when my family member who lives in a congregate setting and therefore is part of 1a hasn’t received their vaccine yet?</a>
+	 </li>
+   
+	 <li style="position: relative" class="widgetItem">
+		 <a class="widgetDesc widgetFAQQuestion" href="/Faq.aspx?QID=481">When will individuals aged 65+ be eligible to receive a COVID-19 vaccination?</a>
+	 </li>
+   
+	 <li style="position: relative" class="widgetItem">
+		 <a class="widgetDesc widgetFAQQuestion" href="/Faq.aspx?QID=465">What verification is needed for place of residence? </a>
+	 </li>
+					</ol>
+				</div>
+				<div class="col col1  last">
+					<ol class="semanticList bullets">
+   
+	 <li style="position: relative" class="widgetItem">
+		 <a class="widgetDesc widgetFAQQuestion" href="/Faq.aspx?QID=466">How many shots of COVID-19 vaccine will be needed?</a>
+	 </li>
+   
+	 <li style="position: relative" class="widgetItem">
+		 <a class="widgetDesc widgetFAQQuestion" href="/Faq.aspx?QID=467">What can I do to protect myself from getting COVID-19 until I am eligible to get the vaccine?</a>
+	 </li>
+   
+	 <li style="position: relative" class="widgetItem">
+		 <a class="widgetDesc widgetFAQQuestion" href="/Faq.aspx?QID=486">How can I tell if I am having side effects from the vaccine or if I am sick?</a>
+	 </li>
+   
+	 <li style="position: relative" class="widgetItem">
+		 <a class="widgetDesc widgetFAQQuestion" href="/Faq.aspx?QID=468">Do I need to wear a mask when I receive the COVID-19 vaccine?</a>
+	 </li>
+   
+	 <li style="position: relative" class="widgetItem">
+		 <a class="widgetDesc widgetFAQQuestion" href="/Faq.aspx?QID=469">Who SHOULDN’T be vaccinated? </a>
+	 </li>
+   
+	 <li style="position: relative" class="widgetItem">
+		 <a class="widgetDesc widgetFAQQuestion" href="/Faq.aspx?QID=470">Who is paying for the vaccine?</a>
+	 </li>
+   
+	 <li style="position: relative" class="widgetItem">
+		 <a class="widgetDesc widgetFAQQuestion" href="/Faq.aspx?QID=471">If I have already had COVID-19 and recovered, do I still need to get the COVID-19 vaccine when it’s available?</a>
+	 </li>
+   
+	 <li style="position: relative" class="widgetItem">
+		 <a class="widgetDesc widgetFAQQuestion" href="/Faq.aspx?QID=472">Do I need to wear a mask and avoid close contact with others if I have received 2 doses of vaccine? </a>
+	 </li>
+   
+	 <li style="position: relative" class="widgetItem">
+		 <a class="widgetDesc widgetFAQQuestion" href="/Faq.aspx?QID=473">When can I stop wearing a mask and avoiding close contact with others after I have been vaccinated?</a>
+	 </li>
+					</ol>
+				</div>
+		</div>
+        	</div>
+	<div class="widgetFooter">	
+	</div>
+    <div class="addItemModal hidden">
+        <div class="url hidden">/FAQ.aspx</div>
+    </div>
+
+	</section>
+
+</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!--		--></div> <!-- outer row -->
+		<div class="row outer wide"><!--
+--><div class="outer col col24 first last" style="" data-widgetcontainerid="7a419f1b-c0c4-4a40-9f31-3d2045980fb5">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col24 first last idbf80f549-9416-482e-af26-439c1e8530a0" style="" data-widgetcontainerid="bf80f549-9416-482e-af26-439c1e8530a0">	
+<div class="widget editor pageStyles narrow" id="divEditor221d8465-f499-4f8a-9983-007fc48a29c1" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}'>
+        <div class="fr-view">
+
+
+        <p><img src="/ImageRepository/Document?documentId=40633" class="fr-fil fr-dib" alt="1"></p><p style="text-align: right;"><a href="/ImageRepository/Document?documentId=41876" rel="noopener" target="_blank">(en espa<span style="color: rgb(15, 56, 49); font-family: Arial; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">&ntilde;</span>ol)</a></p><h2 class="subhead1" style="box-sizing: border-box; margin-bottom: 1.4em; border: 0px none; color: rgb(15, 56, 49); font-family: Arial; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">Coconino County has been anticipating the arrival of the COVID-19 vaccine for several months. In preparation we have: &nbsp;</h2><ul style="box-sizing: border-box; margin: 0px 0px 1.4em; padding: 0px 0px 0px 2em; color: rgb(15, 56, 49); font-family: Arial; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"><li style="box-sizing: border-box; margin-bottom: 0.35em; border: 0px none;">Prepared to immunize small to mid-sized organization healthcare personnel for Phase 1a (defined below in the section titled, &ldquo;About the rollout&rdquo;)</li><li style="box-sizing: border-box; margin-bottom: 0.35em; border: 0px none;">Established an immunization site at Fort Tuthill County Park for 2021 vaccination. The site opened on January 4<sup style="box-sizing: border-box; font-size: 10.5px; line-height: 0; position: relative; vertical-align: baseline; top: -0.5em;">th</sup> for Phase 1a priority groups</li><li style="box-sizing: border-box; margin-bottom: 0.35em; border: 0px none;">Partnered with TGEN in Flagstaff to store ultracold vaccine, increasing vaccine shelf life</li><li style="box-sizing: border-box; margin-bottom: 0.35em; border: 0px none;">Worked with Long Term Care (LTC) facilities to schedule Points of Dispensing (PODs) or ensure onboarding with Centers for Disease Control and Prevention (CDC) Pharmacy Program which provides end-to-end management of the COVID-19 vaccination process</li><li style="box-sizing: border-box; margin-bottom: 0.35em; border: 0px none;">Partnered with Emergency Medical Services (EMS), hospitals, and local providers to administer vaccine</li><li style="box-sizing: border-box; margin-bottom: 0.35em; border: 0px none;">Participated in weekly COVID-19 Vaccine Task Force meetings, vaccine management tool onboarding, and operational readiness meetings</li><li style="box-sizing: border-box; margin-bottom: 0.35em; border: 0px none;">Collaborated with Coconino County Sheriff&rsquo;s Office which is lending Coconino County Health and Human Services (CCHHS) a mobile trailer unit to be used for vaccine administration</li><li style="box-sizing: border-box; margin-bottom: 0.35em; border: 0px none;">Worked with the Navajo Nation on planning immunization for Native American residents of Page as future eligibility groups are announced. The Navajo Nation and other tribal entities are receiving a direct allocation from the federal government.</li><li style="box-sizing: border-box; margin-bottom: 0.35em; border: 0px none;">Planned for various possible scenarios and timelines of priority population vaccine rollout to ensure readiness when subsequent priority populations are finalized in the first phase of rollout. As it relates to schools, Arizona has currently identified school staff as a high priority population to receive COVID-19 vaccines, however the final determination of eligible priority populations rests with the federal Advisory Committee on Immunization Practices (ACIP). &nbsp;</li></ul><p><img src="/ImageRepository/Document?documentId=40634" class="fr-fil fr-dib" alt="2"></p><p style="text-align: right;"><a href="/ImageRepository/Document?documentId=41877" rel="noopener" target="_blank">(en espa<span style="color: rgb(15, 56, 49); font-family: Arial; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">&ntilde;ol</span>)</a></p><p>The COVID-19 vaccines from Pfizer and Moderna received Emergency Use Authorization (EUA). Both show extremely high efficacy rates (~90-95%) and both have been found to be <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/safety.html" target="_blank">safe</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/effectiveness.html" target="_blank">effective</a>.</p><p><img src="/ImageRepository/Document?documentId=40635" class="fr-fil fr-dib" alt="3"></p><p style="text-align: right;"><a href="/ImageRepository/Document?documentId=41878" rel="noopener" target="_blank">(en espa<span style="color: rgb(15, 56, 49); font-family: Arial; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">&ntilde;o</span>l)</a></p><p><strong>COVID-19 vaccination will help keep you from getting COVID-19</strong></p><ul type="disc"><li>COVID-19 vaccines are authorized or approved only if they make it substantially less likely you&rsquo;ll get COVID-19 and are safe.</li><li>Based on what we know about vaccines for other diseases, experts believe that getting a COVID-19 vaccine may help keep you from getting seriously ill even if you do get COVID-19.</li><li>Getting vaccinated yourself may also protect people around you, <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/index.html">particularly people at increased risk for severe illness from COVID-19.</a></li><li>Experts continue to conduct more studies about the effect of COVID-19 vaccination on severity of illness from COVID-19, as well as its ability to keep people from spreading the virus that causes COVID-19.</li></ul><p><strong>COVID-19 vaccination will be a safer way to help build protection</strong></p><ul type="disc"><li>COVID-19 illness can have <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">serious, life-threatening complications</a>, and there is no way to know how COVID-19 will affect you. And if you get sick, you could spread the disease to friends, family, and others around you.</li><li>Clinical trials of COVID-19 vaccines must first show they are safe and effective before any vaccine can be authorized or approved for use. The known and potential benefits of a COVID-19 vaccine must outweigh the known and potential risks of the vaccine for use under what is known as an Emergency Use Authorization (EUA). <a href="https://www.youtube.com/watch?v=iGkwaESsGBQ" rel="noopener" target="_blank">Watch a video on what an EUA is</a>.</li><li>Getting COVID-19 may offer some natural protection, known as natural immunity. But experts don&rsquo;t know how long this protection lasts, and the risk of severe illness and death from COVID-19 far outweighs any benefits of natural immunity. COVID-19 vaccination will help protect you by creating an antibody response without having to experience illness.</li></ul><p><strong>COVID-19 vaccination will be an important tool to help stop the pandemic</strong></p><ul><li>The COVID-19 vaccine will lead to a future where we don&apos;t need to wear masks because there will be underlying immunity in case of exposure. That day is not here yet and will not be until we reach a certain threshold of immunization and achieve herd immunity, therefore, people should continue to mask and social distance.</li></ul><ul type="disc"><li>The combination of getting vaccinated and following CDC&rsquo;s recommendations <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html" rel="noopener" target="_blank">to protect yourself and others</a> will offer the best protection from COVID-19.</li><li>Stopping a pandemic requires using all the tools we have available.&nbsp;</li></ul><p style="text-align: left;">Source: CDC&nbsp;</p><p><img src="/ImageRepository/Document?documentId=40636" class="fr-fil fr-dib" alt="4"></p><p style="text-align: right;"><a href="/ImageRepository/Document?documentId=41879" rel="noopener" target="_blank">(en espa<span style="color: rgb(15, 56, 49); font-family: Arial; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">&ntilde;</span>ol)</a></p><p>Every resident in the U.S. will eventually be eligible for COVID-19 immunization. Current vaccines are approved for those aged 16 and older.</p><p>Due to limited initial supply, eligibility will be determined by the Centers for Disease Control and Prevention (CDC) and Arizona Department of Health Services (ADHS) and will occur in Phases according to risk and maximum benefit to society as determined by the CDC&rsquo;s &nbsp;<a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/recommendations-process.html" target="_blank">Advisory Council on Immunization Practices</a> (ACIP).&nbsp;</p><h3 style='box-sizing: border-box; margin-top: 1.4em; border: 0px none; font-family: "Open Sans"; font-style: normal; font-weight: 600; color: rgb(173, 56, 36); font-size: 1.25em; text-decoration: none; display: block; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;'><strong style="box-sizing: border-box; font-weight: 700;"><span style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-weight: 400; font-style: normal; font-size: 14px; font-family: Arial; vertical-align: baseline; outline: 0px; color: rgb(15, 56, 49); font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important;"><strong style="box-sizing: border-box; font-weight: 700;">Coconino County is currently vaccinating Phase 1a eligible individuals and priority populations within Phase 1b by appointment.</strong></span></strong></h3><p><strong>The first phase (Phase 1) has three components (a, b, c). Phase 1a is the first group of individuals vaccinated, inclusive of Healthcare personnel and long-term care facility residents.</strong> Healthcare personnel is defined as those who work in:</p><ul><li>Hospitals&nbsp;</li><li>Long Term Care Facilities&nbsp;</li><li>Homes for adults with developmental disabilities&nbsp;</li><li>Outpatient&nbsp;</li><li>Home Health Care&nbsp;</li><li>Pharmacies&nbsp;</li><li>Emergency Medical Services (EMS)&nbsp;</li><li>Laboratories&nbsp;</li></ul><p>Healthcare workers can include physicians, nurses, emergency medical personnel, dental professionals and students, medical and nursing students, laboratory technicians, pharmacists, hospital volunteers, administrative and support staff. More information is available at <a href="https://www.cdc.gov/mmwr/volumes/69/wr/mm6949e1.htm" rel="noopener" target="_blank">https://www.cdc.gov/mmwr/volumes/69/wr/mm6949e1.htm</a>&nbsp;</p><p style='box-sizing: border-box; margin-bottom: 1.4em; border: 0px none; color: rgb(15, 56, 49); font-family: "Segoe UI", system-ui, "Apple Color Emoji", "Segoe UI Emoji", sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(254, 253, 253); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-size: 16.2px;'><strong style="box-sizing: border-box; font-weight: 700;"><span style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-weight: inherit; font-style: inherit; font-size: 16.2px; font-family: inherit; vertical-align: baseline; outline: 0px;">Priority populations within Phase 1b</span></strong><span style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-weight: inherit; font-style: inherit; font-size: 16.2px; font-family: inherit; vertical-align: baseline; outline: 0px;">&nbsp;include<strong style="box-sizing: border-box; font-weight: 700;">&nbsp;</strong>education and childcare workers, law enforcement and protective</span><span style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-weight: inherit; font-style: inherit; font-size: 16.2px; font-family: inherit; vertical-align: baseline; outline: 0px;">&nbsp;services, and individuals aged <strong style="box-sizing: border-box; font-weight: 700;">65</strong> and older.&nbsp;</span></p><p style='box-sizing: border-box; margin-bottom: 1.4em; border: 0px none; color: rgb(15, 56, 49); font-family: "Segoe UI", system-ui, "Apple Color Emoji", "Segoe UI Emoji", sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(254, 253, 253); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-size: 16.2px;'>Vaccination opportunities will open at a later time for other populations in Phase 1b including essential workers and adults with high-risk conditions in congregate settings.&nbsp;</p><p style='box-sizing: border-box; margin-bottom: 1.4em; border: 0px none; color: rgb(15, 56, 49); font-family: "Segoe UI", system-ui, "Apple Color Emoji", "Segoe UI Emoji", sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(254, 253, 253); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-size: 16.2px;'>Definitions of priority populations within Phase 1b are:</p><ul style='box-sizing: border-box; margin: 0px 0px 1.4em; padding: 0px 0px 0px 2em; color: rgb(15, 56, 49); font-family: "Segoe UI", system-ui, "Apple Color Emoji", "Segoe UI Emoji", sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(254, 253, 253); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-size: 16.2px;'><li style="box-sizing: border-box; margin-bottom: 0.35em; border: 0px none;">Education and childcare workers, teachers, and staff. This includes all school and higher education staff who normally interact with other staff and students, and bus drivers, cafeteria workers, facilities staff, etc. &nbsp; &nbsp; &nbsp;&nbsp;</li><li style="box-sizing: border-box; margin-bottom: 0.35em; border: 0px none;">Law enforcement and protective services (corrections and other emergency response staff). &nbsp; &nbsp;&nbsp;</li><li style="box-sizing: border-box; margin-bottom: 0.35em; border: 0px none;">Individuals aged <strong style="box-sizing: border-box; font-weight: 700;">65</strong> and older.</li></ul><p><img src="/ImageRepository/Document?documentId=40637" class="fr-fil fr-dib" alt="5"></p><p style="text-align: right;"><a href="/ImageRepository/Document?documentId=41881" rel="noopener" target="_blank">(en espa<span style="color: rgb(15, 56, 49); font-family: Arial; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">&ntilde;</span>ol)</a></p><p>Accurate vaccine information is vital. Learn the facts about it <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/vaccine-benefits/facts.html">here</a>.<strong>&nbsp;</strong></p><p><img src="/ImageRepository/Document?documentId=40638" class="fr-fil fr-dib" alt="6"></p><p style="text-align: right;"><a href="/ImageRepository/Document?documentId=41882" rel="noopener" target="_blank">(en espa<span style="color: rgb(15, 56, 49); font-family: Arial; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">&ntilde;</span>ol)</a></p><p><strong>Providers:</strong></p><ul><li>ADHS <a href="https://redcapaipo.azdhs.gov/surveys/?s=DY8CA9LMJ8" rel="noopener" target="_blank">Pandemic Vaccine Provider Onboard Form</a></li></ul><p><strong>Long term care facilities:</strong></p><ul><li>Many LTC facilities will receive their vaccinations from the&nbsp;CDC Pharmacy Program</li><li>Those not in the program will be contacted by a Coconino County liaison to work on their immunization plan&nbsp;</li></ul><p>Please contact <a href="mailto:covidvaccination@coconino.az.gov">covidvaccination@coconino.az.gov</a> to inquire about providing COVID-19 vaccinations or for other questions about Phase 1a immunization in Coconino County.</p><p><strong>Additional provider resources:</strong></p><p><a href="https://www.cdc.gov/vaccines/covid-19/hcp/index.html" rel="noopener" target="_blank">Healthcare Professionals: Preparing for COVID-19 Vaccination</a></p>
+    </div>
+
+<script type="text/javascript">
+	$(document).ready(function (e) {		
+	    renderSlideshowIfApplicable($('#divEditor' + '221d8465-f499-4f8a-9983-007fc48a29c1'));
+	});
+</script>
+</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!--		--></div> <!-- outer row -->
+
+
+		</div>
+
+	</div>
+
+	
+	<div class="newCP">
+
+	</div>
+</div>
+</div><aside data-cpRole="contentContainer" id="featureColumn" class="secondaryContent">	<div id="cc4dc7a26f-a9e7-4e28-a695-0a5930e487f6" data-containerid="4dc7a26f-a9e7-4e28-a695-0a5930e487f6" class="pageContent cpGrid cpGrid24 showInMobile" data-contentcontainerbreakpoint="3"data-smoothscrolling="True">
+				                
+
+
+
+	</div>
+</aside>
+</div><div data-cpRole="structuralContainer" id="structuralContainer9" class="siteSidebar">
+<nav data-cpRole="nav" id="secondaryNav" class="siteNav secondaryNav">
+
+
+
+
+	<ol role="menu" id="secondaryMenusecondaryNav" data-parent="2547" class="rootNavMenu flyoutNav">
+	<li role="menuitem" aria-haspopup="true" id="SideItem2580" class="topMenuItem" data-display-main-item-sub-menu-indicators="False" data-pageid="2580" data-displaymegamenu="False">
+					<a class="navMainItem secondaryNavItem" href="/2580/COVID-19-Vaccination-Locations" target="_self">COVID-19 Vaccination Locations</a>
+			</li>
+
+	</ol>
+
+
+	<script type="text/javascript">
+        $(document).ready(function () {
+            //setup menu manager properties for secondary menu
+            menuManager.isSideMenuEditable = false;
+		    menuManager.sideMenuMaxSubMenuLevels = 4;
+            menuManager.sideMenuHasCustomLinks = true;
+        });
+	</script>
+	<script type="text/javascript">
+        $(document).ready(function () {
+            //Init secondary menu
+            var setupDraggable = menuManager.isSideMenuEditable;
+			var urlToGetHiddenMenus = '/Pages/MenuSecondary/HiddenSecondarySubMenus?pageID=2547&moduleID=&themeID=1&menuContainerID=secondaryNav';
+            var menuID = 'secondaryMenusecondaryNav';
+            menuManager.setMOMMode(2, SIDE_MENU);
+            menuManager.setupMenu(menuID, 'secondaryNav', SIDE_MENU, setupDraggable, urlToGetHiddenMenus);
+        });
+	</script>
+
+
+
+
+</nav>
+</div>
+</div></div>
+</div><div data-cpRole="structuralContainer" id="structuralContainer10">
+<div class="siteWrap"><footer data-cpRole="contentContainer" id="contentContainer3" class="siteFooter">	<div id="ccebfb08df-41a4-49dd-8ec9-eddbace0011a" data-containerid="ebfb08df-41a4-49dd-8ec9-eddbace0011a" class="pageContent cpGrid cpGrid24 isLockedContainer showInMobile">
+				                
+
+		<div class="row outer wide"><!--
+--><div class="outer col col24 first last" style="" data-widgetcontainerid="8dc9dc98-17df-4648-b587-3579c11804d0">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col24 first last id2342b12d-e1cf-4412-a06f-10b0f04c1d81" style="" data-widgetcontainerid="2342b12d-e1cf-4412-a06f-10b0f04c1d81">	
+    <div data-widget-id="49104b7c-dcc8-4ca2-88d6-41c628408aba" data-widget-controller-path="/InfoAdvanced/Widget">
+
+
+
+
+
+	<section id="divInfoAdv49104b7c-dcc8-4ca2-88d6-41c628408aba" class="widget widgetInfoAdvanced skin6 widgetOptionSet5 wide" data-modulewidgettype="infoAdv" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}' data-elementquerymatch='matchMultiColumn' data-elementqueryunmatch='unmatchMultiColumn' aria-label="Info Advanced">
+			<header class="widgetHeader" id="header49104b7c-dcc8-4ca2-88d6-41c628408aba">
+		<div class="">
+								</div>
+	</header>
+	<div class="widgetBody  cpGrid cpGrid1 ">
+		<div class="row  wide">
+					<div class="col col1 first last">
+						<ol class="pageStyles semanticList">
+
+<li class="InfoAdvanced widgetItem ">
+	<div style="text-align: center;">Coconino County &nbsp; &nbsp; &nbsp; 219 East Cherry Avenue &nbsp; &nbsp; &nbsp; Flagstaff, AZ 86001&nbsp; &nbsp; &nbsp; &nbsp;Phone: <a href="tel: 928-679-7120" target="_self" class="Hyperlink">928-679-7120</a>&nbsp; &nbsp; &nbsp; &nbsp;Toll Free: 877-679-7120<br>
+</div>
+</li>						</ol>
+					</div>
+		</div>
+	</div>
+	<div class="widgetFooter">
+
+	</div>
+
+	</section>
+
+
+
+<script type="text/javascript">
+	//Render slideshow if info advacned items contain one.
+	$(document).ready(function (e) {
+		$('#divInfoAdv49104b7c-dcc8-4ca2-88d6-41c628408aba .InfoAdvanced.widgetItem').each(function () {
+			renderSlideshowIfApplicable($(this));		
+		});
+	});
+</script></div>	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!--		--></div> <!-- outer row -->
+		<div class="row outer wide"><!--
+--><div class="outer col col24 first last" style="" data-widgetcontainerid="8ea0817e-3623-40e3-b178-32ac286db896">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col24 first last id7f77cbae-4d4a-4e09-8567-00640bc2c7e9" style="" data-widgetcontainerid="7f77cbae-4d4a-4e09-8567-00640bc2c7e9">	
+	<div data-widget-id="63089bcd-d126-4668-a901-cfe4501e4931" data-widget-controller-path="/QuickLinks/Widget">
+
+
+
+
+
+ 
+
+
+	<section id="widgetQuicklink63089bcd-d126-4668-a901-cfe4501e4931" class="widget widgetQuickLinks skin6 widgetOptionSet17 narrow" data-modulewidgettype="quickLinks" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}' data-elementquerymatch='matchMultiColumn' data-elementqueryunmatch='unmatchMultiColumn' aria-label="Quick Links">
+			<header class="widgetHeader" id="quickLinksHeader63089bcd-d126-4668-a901-cfe4501e4931">
+		<div class="">
+						</div>
+	</header>
+	<div class="widgetBody cpGrid cpGrid6 ">
+        <div class="row autoWidths center narrow">
+				<div class="col col1 first ">
+					<ol class="semanticList">
+
+    <li style="position:relative" class="widgetItem QuickLinks">
+        <a class="widgetDesc widgetQuickLinksLink" href="/accessibility" target="_self" >Accessibility</a>
+    </li>
+					</ol>
+				</div>
+				<div class="col col1  ">
+					<ol class="semanticList">
+
+    <li style="position:relative" class="widgetItem QuickLinks">
+        <a class="widgetDesc widgetQuickLinksLink" href="/sitemap.aspx" target="_self" >Site Map</a>
+    </li>
+					</ol>
+				</div>
+				<div class="col col1  ">
+					<ol class="semanticList">
+
+    <li style="position:relative" class="widgetItem QuickLinks">
+        <a class="widgetDesc widgetQuickLinksLink" href="/site/copyright" target="_self" >Copyright Notices</a>
+    </li>
+					</ol>
+				</div>
+				<div class="col col1  ">
+					<ol class="semanticList">
+
+    <li style="position:relative" class="widgetItem QuickLinks">
+        <a class="widgetDesc widgetQuickLinksLink" href="/" target="_self" >Privacy</a>
+    </li>
+					</ol>
+				</div>
+				<div class="col col1  ">
+					<ol class="semanticList">
+
+    <li style="position:relative" class="widgetItem QuickLinks">
+        <a class="widgetDesc widgetQuickLinksLink" href="/71/Employee-Access" target="_self" >Employee Access</a>
+    </li>
+					</ol>
+				</div>
+				<div class="col col1  last">
+					<ol class="semanticList">
+
+    <li style="position:relative" class="widgetItem QuickLinks">
+        <a class="widgetDesc widgetQuickLinksLink" href="http://civicplus.com/referral" target="_self" >Government Websites by CivicPlus®</a>
+    </li>
+					</ol>
+				</div>
+		</div>
+        
+	</div>
+	<div class="widgetFooter">
+	</div>
+	<div class="addItemModal hidden">
+		<div class="url hidden">/QuickLinks.aspx</div>
+	</div>
+
+	</section>
+</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!--		--></div> <!-- outer row -->
+
+
+	</div>
+</footer></div>
+</div>
+
+
+
+
+			<div id="banner1-1" style="display: none"></div>
+				<script type="text/javascript">
+					onOrLive($(window), function () {
+							$.when(window.Pages.rwdSetupComplete)
+								.done(function () {
+									renderBanner('banner1-1',
+										'banner1',
+										{"BannerOptionID":1,"ThemeID":1,"SlotName":"banner1","Name":"Default","IsDefault":true,"BannerMode":1,"SlideShowSlideTiming":"5","SlideshowTransition":0,"SlideShowTransitionTiming":"1","ImageScale":false,"ImageAlignment":2,"ImageScroll":true,"MuteSound":true,"VideoType":0,"Status":40,"SlideshowControlsPosition":0,"SlideshowControlsAlignment":0,"SlideshowBannerControlsColorScheme":0,"BannerImages":[{"BannerImageID":21,"BannerOptionID":1,"FileName":"/ImageRepository/Document?documentID=16085","Height":1,"Width":1,"StartingOn":null,"StoppingOn":null,"IsLink":false,"LinkAddress":null,"Sequence":1,"RecordStatus":0,"ModifiedBy":0,"ModifiedOn":"\/Date(-62135575200000)\/","AltText":null},{"BannerImageID":22,"BannerOptionID":1,"FileName":"/ImageRepository/Document?documentID=16085","Height":1,"Width":1,"StartingOn":null,"StoppingOn":null,"IsLink":false,"LinkAddress":null,"Sequence":2,"RecordStatus":0,"ModifiedBy":0,"ModifiedOn":"\/Date(-62135575200000)\/","AltText":null},{"BannerImageID":23,"BannerOptionID":1,"FileName":"/ImageRepository/Document?documentID=16085","Height":1,"Width":1,"StartingOn":null,"StoppingOn":null,"IsLink":false,"LinkAddress":null,"Sequence":3,"RecordStatus":0,"ModifiedBy":0,"ModifiedOn":"\/Date(-62135575200000)\/","AltText":null}],"BannerVideos":[{"BannerVideoID":1,"BannerOptionID":1,"VideoFileName":"","ImageFileName":"EmptyBannerBkg201703011302406582.png","IsLink":false,"LinkAddress":null,"ModifiedBy":0,"ModifiedOn":"\/Date(-62135575200000)\/","VideoFileID":"00000000-0000-0000-0000-000000000000","ImageFileID":"00000000-0000-0000-0000-000000000000","VideoWidth":0,"VideoHeight":0,"ImageWidth":0,"ImageHeight":0,"LinkedVideoUrl":"","RecordStatus":0,"AltText":null}],"RecordStatus":0,"ModifiedBy":0,"ModifiedOn":"\/Date(-62135575200000)\/"},
+										{"BannerImageID":21,"BannerOptionID":1,"FileName":"/ImageRepository/Document?documentID=16085","Height":1,"Width":1,"StartingOn":null,"StoppingOn":null,"IsLink":false,"LinkAddress":null,"Sequence":1,"RecordStatus":0,"ModifiedBy":0,"ModifiedOn":"\/Date(-62135575200000)\/","AltText":null},
+										'/App_Themes/Interior/Images/',
+										'<img alt="" class="bannerObject" src="/ImageRepository/Document?documentID=16085" />');
+								});
+						}, "load");
+				</script>
+
+
+</div>
+</div>
+
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	
+	
+
+
+
+	<script type="text/javascript">function dynamicStretchContainers () {Core.Layout.stretchContainers('#structuralContainer9');}</script>
+
+
+
+
+
+
+	<script src="/237693563.js" type="text/javascript"></script>
+	<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['setCustomUrl', location.href.toLowerCase()]); _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  $(window).load(function(){
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://analytics.civicplus.com/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 1128]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  });
+</script>
+<noscript><p><img src="http://analytics.civicplus.com/piwik.php?idsite=1128" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+
+<script type="text/javascript">
+/*<![CDATA[*/
+(function() {
+var sz = document.createElement('script'); sz.type = 'text/javascript'; sz.async = true;
+sz.src = '//us2.siteimprove.com/js/siteanalyze_1309575.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sz, s);
+})();
+/*]]>*/
+</script>
+
+<!----------Google Translate (Mobile Friendly)--------->
+<style>#google-translate-container {float: right;padding: 3px 5px 0px 0px;}.goog-te-combo,.goog-te-banner *,.goog-te-ftab *,.goog-te-menu *,.goog-te-menu2 *,.goog-te-balloon * {font-family: arial;font-size: 10pt;background-image: url("https://theme.zdassets.com/theme_assets/958586/bae8aa24db8d43595871692a9d259186f2db3fb4.png");background-position: 3px 4px;background-size: 22px;background-repeat: no-repeat;text-indent: 20px;background-color: #fff;color: #000 !important;}.goog-logo-link {display: none !important;}.goog-te-gadget {color: transparent !important;}.goog-te-gadget .goog-te-combo {margin: 2px 0 !important;border-radius: 15px !important;}.goog-te-combo{border: 1px solid !important;border-color: #bcc9d7 #96a3b1 #96a3b1 #bcc9d7 !important;border-radius: 0 !important;height:32px; !important;padding: 0 1px 0 .25rem !important;}
+#launcher-wrapper {bottom: 50px !important;}
+</style>
+<div id="google-translate-container">
+ <div id="google_translate_element" style="position: fixed; bottom: 0px; left: 20px; z-index: 5;"></div>
+</div>
+<script>
+function googleTranslateElementInit() {
+ new google.translate.TranslateElement({ pageLanguage: "en" }, "google_translate_element");
+ // begin accessibility compliance
+ $('img.goog-te-gadget-icon').attr('alt','Google Translate');
+ $('div#goog-gt-tt div.logo img').attr('alt','translate');
+ $('div#goog-gt-tt .original-text').css('text-align','left');
+ $('.goog-te-gadget-simple .goog-te-menu-value span').css('color','#000000');
+ $('.goog-te-combo').attr('aria-label','google translate languages');
+ $('svg.goog-te-spinner').attr('title','Google Translate Spinner');
+ $('.goog-te-gadget-simple .goog-te-menu-value span').css('color','#000000');
+}
+$(function() {
+ $.getScript("//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit");
+});
+</script>
+<!--------------End Google Translate----------------->
+
+
+	<script type="text/javascript">
+		$(function () {
+			document.cookie = "responsiveGhost=0; path=/";
+		});
+		onOrLive($(window), function () {
+			$('body').addClass('doneLoading').removeClass('hideContent');
+
+			if ($('#404Content').length > 0)
+				$('div#bodyWrapper').css('padding', '0px');
+		}, 'load');
+	</script>
+
+	<noscript>
+		<style>
+			body.hideContent {
+				opacity: 1 !important;
+			}
+		</style>
+	</noscript>
+
+		
+<div style="display: none;">
+	<svg xmlns="http://www.w3.org/2000/svg" style="display:none;">
+
+		<symbol id="iconArrow--left" viewbox="0 0 25 25">
+			<title>Arrow Left</title>
+			<polygon style="fill:currentcolor" points="18.044,25 19.498,23.545 8.409,12.454 19.408,1.455 17.954,0 5.502,12.452"></polygon>
+		</symbol>
+
+		<symbol id="iconArrow--right" viewbox="0 0 25 25">
+			<title>Arrow Right</title>
+			<polygon style="fill:currentcolor" points="6.957,0 5.502,1.455 16.591,12.546 5.592,23.545 7.047,25 19.498,12.548"></polygon>
+		</symbol>
+
+	</svg>
+</div>
+	<script type="text/javascript">loadCSS('//fonts.googleapis.com/css?family=Open+Sans:300,300italic,600,600italic,700,700italic,800,800italic,italic,regular|Questrial:regular|');</script>
+	
+
+	<div class="hidden activeWidgetSkinComponentsOnPageJson">[]</div>
+		<div style="display: none;">
+			<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+				<symbol id="iconSlideshowArrowLeft" viewBox="0 0 22.68 40">
+					<title>Slideshow Left Arrow</title>
+					<g>
+						<path style="fill:currentcolor;" d="M20,40a2.67,2.67,0,0,1-1.9-.79L.79,21.9a2.68,2.68,0,0,1,0-3.79L18.1.79a2.68,2.68,0,1,1,3.79,3.79L6.47,20,21.89,35.42A2.68,2.68,0,0,1,20,40Z"></path>
+					</g>
+				</symbol>
+				<symbol id="iconSlideshowArrowRight" viewBox="0 0 22.68 40">
+					<title>Slideshow Right Arrow</title>
+					<g>
+						<path style="fill:currentcolor;" d="M2.68,0a2.67,2.67,0,0,1,1.9.79L21.89,18.1a2.68,2.68,0,0,1,0,3.79L4.58,39.21A2.68,2.68,0,0,1,.79,35.42L16.21,20,.79,4.58A2.68,2.68,0,0,1,2.68,0Z"></path>
+					</g>
+				</symbol>
+			</svg>
+		</div>
+	
+	
+
+	</body>
+</html>

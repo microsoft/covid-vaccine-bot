@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html  lang="en-US">
+<head id="Head">
+<!--*********************************************-->
+<!-- DNN Platform - http://www.dnnsoftware.com   -->
+<!-- Copyright (c) 2002-2018, by DNN Corporation -->
+<!--*********************************************-->
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+<meta name="REVISIT-AFTER" content="1 DAYS" />
+<meta name="RATING" content="GENERAL" />
+<meta name="RESOURCE-TYPE" content="DOCUMENT" />
+<meta content="text/javascript" http-equiv="Content-Script-Type" />
+<meta content="text/css" http-equiv="Content-Style-Type" />
+<title>
+	Covid-19 Vaccine
+</title><meta id="MetaDescription" name="DESCRIPTION" content="Official site of Montana Department of Public Health &amp; Human Services" /><meta id="MetaKeywords" name="KEYWORDS" content="public health,public assistance,healthcare,DotNetNuke,DNN" /><meta id="MetaGenerator" name="GENERATOR" content="DotNetNuke " /><meta id="MetaRobots" name="ROBOTS" content="INDEX, FOLLOW" /><link href="/Resources/Shared/stylesheets/dnndefault/7.0.0/default.css?cdv=6023" type="text/css" rel="stylesheet"/><link href="/Portals/_default/Containers/Gravity/container.css?cdv=6023" type="text/css" rel="stylesheet"/><link href="/Portals/85/portal.css?cdv=6023" type="text/css" rel="stylesheet"/><script src="/Resources/libraries/jQuery/03_02_01/jquery.js?cdv=6023" type="text/javascript"></script><script src="/Resources/libraries/jQuery-Migrate/03_00_00/jquery-migrate.js?cdv=6023" type="text/javascript"></script></head>
+<body id="Body">
+    
+    <form method="post" action="/covid19vaccine" id="Form" enctype="multipart/form-data">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="N/gumPZn4Y/zFch7j3VUk4yfTDANKAxUgHo6QxoyCn06SbeBI0WT+XGPV2EJe/vngNXG3qBTTdiK5kRqVqTK0sOWRSN3uoDdUG8vvTk8ASsmmVEgQRBBbnDq/64ZjBXUxQdXzVxxRmTtVXMuerLxsd0N/5Q2N2vSw4Df3dj5RjRZZrAWg8zRR0Jvrku1nj8hxasGWgdMTnLRF1USl2Knq6yuSTM=" />
+
+
+<script src="/ScriptResource.axd?d=NJmAwtEo3IrkGg5q3gAmpt82pY5SnhoOyc2GOLmxiwrn4PKhiaEe6KkmhHdNX9aUgYYtlpTdGoKyBobj0XQ2zhZiepWNr-ytb1MxpP6XgFio2594dPMogUDTFMALA8NT3_El3Q2&amp;t=ffffffffdfc97409" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=dwY9oWetJoLjJrQJ_q2KoB5wGT7GUKhgGOaCMdHBb1NCIJXyvWsRSTrZcGorr6JYZzQtpH4YDWfjj8UvYNoDYss_wOnkyMxSde87dsqAg_kkm5Sz_iCLwEoDRbPgHHdRkGu1DJJCiEybgDPZ0&amp;t=ffffffffdfc97409" type="text/javascript"></script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="7IFo0tCu5O8yf5ANXxEE7vcjBuMMBlFNjB28N9iqO4ImgsquvEUiKEr9D7l+YcbiOReFK7XCCPWxVyyZ4xOgO7b7a+P+ncej4evCMvVjdbpmeSWB" /><script src="/js/dnn.js?cdv=6023" type="text/javascript"></script><script src="/js/dnncore.js?cdv=6023" type="text/javascript"></script><script src="/js/dnn.servicesframework.js?cdv=6023" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [], 150, '');
+//]]>
+</script>
+
+        
+        
+        
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="//template.mt.gov/resources/template/template.css" rel="stylesheet" type="text/css" />
+<script src="//template.mt.gov/resources/template/template.js"></script>
+<script src="/Portals/85/Skins/DPHHS/Styles/js/bootstrap.js"></script>
+<script src="/Portals/85/Skins/DPHHS/Styles/js/bootstrap.min.js"></script>
+
+
+
+<link href="/portals/85/Skins/DPHHS/Styles/all.css" rel="stylesheet" type="text/css" media="screen">
+<link href="/portals/85/Skins/DPHHS/Styles/reset.css" rel="stylesheet" type="text/css" media="screen">
+<link href="/portals/85/Skins/DPHHS/Styles/layout.css" rel="stylesheet" type="text/css" media="screen">
+<!--<link href="/portals/85/Skins/DPHHS/Styles/text.css" rel="stylesheet" type="text/css" media="screen"> -->
+<link href="/portals/85/Skins/DPHHS/Styles/fonts/stylesheet.css" rel="stylesheet" type="text/css" media="screen">
+<link href="/portals/85/Skins/DPHHS/Styles/sprites.css" rel="stylesheet" type="text/css" media="screen">
+<link href="/portals/85/Skins/DPHHS/Styles/responsive.css" rel="stylesheet" type="text/css" media="screen">
+<link href="/portals/85/Skins/DPHHS/Styles/tables.css" rel="stylesheet" type="text/css" media="screen">
+<link href="/portals/85/Skins/DPHHS/Styles/responsive-tables.css" rel="stylesheet" type="text/css" media="screen">
+<link href="/portals/85/Skins/DPHHS/Styles/print.css" rel="stylesheet" type="text/css" media="print">
+<link href="/portals/85/Skins/DPHHS/Styles/buttons.css" rel="stylesheet" type="text/css" media="screen">
+<!--<link href="/portals/85/Skins/DPHHS/Styles/bootstrap.css" rel="stylesheet" type="text/css">-->
+<link href="/portals/85/Skins/DPHHS/Styles/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen">
+
+
+<!-- <script>advancedSearch.init([{"id":"dphhs.mt.gov","gcs":"013380590290877010950:cml775tndfu"}]) </script> -->
+<div id="skipnavigation"><a href="#mainContentPane" class="skip">Skip navigation</a></div>
+<div id="template-header-wrapper">
+    <header id="template-header" aria-label="mt.gov header">
+
+    </header>
+</div>
+
+<div id="template-page-wrapper">
+<div id="pagecontent-wrapper"> 
+
+	<div id="pagewrap"> 
+		<div id="agencywrapper">
+			<div id="agencycontent">
+            	
+				<p class="hidden" style="font-size:200%"><strong>Department of Public Health and Human Services</strong></p>
+				<header id="agencyHead" class="group">
+					<a href="/" title="DPHHS Logo &amp; Homepage Link"><div id="HHSLogo"></div></a>	
+					<div id="aboutHHS">
+						<div class="director">Adam Meier, Director</div>		
+						<ul id="nav" class="inlinePipe">
+                          <li><a href="/AboutUs" title="About Us">About DPHHS</a></li>
+                          <li><a href="https://app.mt.gov/cal/html/event?eventCollectionCode=dphhs" title="Meetings and Events" >Meetings &amp; Events</a></li>
+                          <li><a href="/StatisticalInformation" title="Health Data and Statistics">Health Data &amp; Statistics</a></li>
+                          <li><a href="/contact" title="Contact Us">Contact DPHHS</a></li>
+                          <li><a href="/atoz" title="A to Z Index">A - Z Index</a></li>
+                          <li><a href="/DPHHSSearchPage" title="DPHHS search page">Search DPHHS</a></li>
+						</ul>
+                        
+
+					</div><!-- about -->		  					  
+				</header>
+	 
+				<script src="/portals/85/Skins/DPHHS/Styles/js/responsive-nav.js"></script>
+				<script src="/portals/85/Skins/DPHHS/Styles/js/selectnav.js"></script>
+                 <script src="/portals/85/Skins/DPHHS/Styles/js/responsive-tables.js"></script> 
+				<script>selectnav('nav'); </script>					
+				<nav id="HHSNav" class="group nav-collapse">
+					<p class="hidden" style="font-size:200%"><strong>Main Navigation</strong></p>
+					<ul>
+                      <li><strong><a href="/ChildrenandFamilies" title="ChildrenandFamilies">Children/Families</a></strong></li>
+                      <li><a href="/Disabilities" title="Disabilities"><strong>Disabilities</strong></a></li>
+                      <li><a href="/seniors" title="Seniors"><strong>Seniors</strong></a></li>
+                      <li><a href="/health" title="Health"><strong>Health</strong></a></li>
+                      <li><strong><a href="/medical" title="Medical">Medical</a></strong></li>
+                      <li><strong><a href="/assistance">Assistance</a></strong></li>
+					</ul>
+					<script>
+						var nav = responsiveNav(".nav-collapse");
+					</script>
+                    <script src="/portals/85/Skins/DPHHS/Styles/js/responsive-tables.js"></script> 
+				</nav><!-- HHSNav -->	 
+				<div id="mainContent">
+               
+                	<a href="/" title="Breadcrumb page navagation">Home » </a>
+                	<span id="dnn_dnnBreadcrumb_lblBreadCrumb" itemprop="breadcrumb" itemscope="" itemtype="https://schema.org/breadcrumb"><span itemscope itemtype="http://schema.org/BreadcrumbList"><span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="/covid19vaccine" class="SkinObject" itemprop="item"><span itemprop="name">Covid-19 Vaccine</span></a><meta itemprop="position" content="1" /></span></span></span>
+					<p class="hidden" style="margin-top:1em; font-size:200%"><strong>Main Content</strong></p>
+              
+
+          
+					<article class="fullPage noBorder group">
+								<h1 class="hidden">Covid-19 Vaccine<a name="mainContentPane" id="mainContentPane"></a></h1> 
+						<div id="dnn_contentPane" class="contentPane" role="main"><div class="DnnModule DnnModule-DNN_HTML DnnModule-99769 DnnVersionableControl"><a name="99769"></a>
+<div class="DNNContainer_Title_h2 SpacingBottom">
+    <h2><span id="dnn_ctr99769_dnnTITLE_titleLabel" class="TitleH2">Covid19 Vaccine Information</span>
+
+
+</h2>
+    <div id="dnn_ctr99769_ContentPane"><!-- Start_Module_99769 --><div id="dnn_ctr99769_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+	<div id="dnn_ctr99769_HtmlModule_lblContent"><style type="text/css">.covidHeading {font-size:2em !important; }
+</style>
+<p><img alt="Covid-19 Vaccine" class="imgR responsive" src="/portals/85/publichealth/images/CDEpi/covid19vaccine/MontanaVaccineLogo.png" style="width: 500px; height: 295px; margin-top: -25px;" title="Covid-19 Vaccine" unselectable="on" /></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<h1 style="text-align: center;"><span class="covidHeading">COVID-19 Vaccination Information for Montana</span></h1>
+
+<div style="clear: both;">&nbsp;</div>
+
+<div class="fluid-container">
+<div class="row">
+<div class="col-md-3" style="display: inherit;">
+<p style="text-align: center;"><a href="https://montana.maps.arcgis.com/apps/MapSeries/index.html?appid=7c34f3412536439491adcc2103421d4b"><img alt=" Information on Number of Vaccines Administered in Montana" class="responsive" src="/portals/85/publichealth/images/CDEpi/covid19vaccine/vaccinedistributionbutton.png?ver=2021-01-27-103944-197" style="width: 300px;" title=" Information on Number of Vaccines Administered in Montana" unselectable="on" /><br />
+<strong>Vaccine Distribution to Critical Population by Phases</strong></a></p>
+</div>
+
+<div class="col-md-3" style="display: inherit;">
+<p style="text-align: center;"><a href="/publichealth/cdepi/diseases/coronavirusmt/covid19vaccineavailability"><img alt=" " class="responsive" src="/portals/85/publichealth/images/CDEpi/covid19vaccine/vaccinecontactsbutton.png" style="width: 300px;" title=" " unselectable="on" /><br />
+<strong>Local Information on Vaccine Availability and Scheduling in your Community</strong></a></p>
+</div>
+
+<div class="col-md-3" style="display: inherit;">
+<p style="text-align: center;"><a href="/covid19vaccine/covid19vaccinefaq"><img alt=" " class="responsive" src="/portals/85/publichealth/images/CDEpi/covid19vaccine/covid19vaccinefaqbutton.png" style="width: 300px;" title=" " unselectable="on" /><br />
+<strong>Montana COVID-19 vaccine frequently asked questions</strong></a></p>
+</div>
+
+<div class="col-md-3" style="display: inherit;">
+<p style="text-align: center;"><a href="https://www.cdc.gov/vaccines/covid-19/index.html"><img alt=" " class="responsive" src="/portals/85/publichealth/images/CDEpi/covid19vaccine/covid19vaccinecdcbutton.png?ver=2021-01-21-085150-093" style="width: 300px;" title=" " unselectable="on" /><br />
+<strong>COVID-19 Vaccine Information from the CDC</strong></a></p>
+</div>
+</div>
+</div>
+
+<h2><strong>COVID-19 Allocation Information </strong></h2>
+
+<p style="margin-top: 0px;"><em>(Last updated 2-8-21)</em></p>
+
+<p><strong><span style="font-size: larger;">Status</span>:</strong>&nbsp;</p>
+
+<ul>
+ <li>COVID-19 vaccine doses are being administered to Montanans on a daily basis. Data showing total&nbsp;doses administered and those fully immunized is updated daily on the <a href="https://montana.maps.arcgis.com/apps/MapSeries/index.html?appid=7c34f3412536439491adcc2103421d4b">state&#39;s vaccine dashboard here.</a>&nbsp;As of February 8, 2021 there were over&nbsp;140,000 total doses administered and nearly 40,000 Montanans fully immunized.&nbsp;</li>
+ <li>Montana has now moved into Phase 1b of the COVID-19 vaccine distribution plan.</li>
+ <li>In Phase 1B, COVID-19 vaccines are available to Montanans 70 years of age and older, 16 to 69 years of age with a high-risk medical condition, and American Indians and other persons of color who may be at elevated risk for COVID-19 complications.</li>
+ <li>Montana&rsquo;s COVID-19 vaccine supply continues to be dependent on federal supply and allocations. Individuals in Phase 1B are encouraged to contact their local county or tribal health departments to check on vaccination availability and scheduling.<a href="/publichealth/cdepi/diseases/coronavirusmt/covid19vaccineavailability"> Local contact information, websites and social media links</a>&nbsp;</li>
+ <li>In addition, vaccine distribution to long term care facilities (including nursing homes and assisted living facilities) is ongoing. All staff and residents at these nearly 300 facilities are expected to receive their first dose by the end of the January.</li>
+ <li>The Department of Public Health and Human Services (DPHHS) is distributing vaccine to local county and Tribal health departments, pharmacies, hospitals, and community health centers on a weekly basis across Montana.</li>
+ <li>The <a href="/Portals/85/publichealth/documents/HAN/2021/HANUD2021-1.pdf">COVID-19 vaccine distribution recommendations</a> were updated on January 5, 2021.</li>
+ <li>Phase 1c includes frontline essential workers, persons aged 60 years and older, individuals living in congregate care and correctional facilities, persons aged 16-59 with medical conditions not included in Phase 1b that may have elevated risk of COVID-19 complications.</li>
+ <li>Phase 2 is the final phase for all remaining Montanans aged 16 or older.</li>
+ <li><a href="/Portals/85/Documents/Coronavirus/Montana COVID-19 Vax Plan V5  1_06_21.pdf">Montana&#39;s current COVID-19 Vaccination Plan</a>.</li>
+</ul>
+
+<p><strong>RESOURCES:</strong></p>
+
+<p><a href="/Portals/85/Documents/Coronavirus/2-2-21 FINAL EDUCATOR MESSAGE.pdf?ver=2021-02-02-164339-957">Message to Montana&#39;s Educators</a></p>
+</div>
+
+
+
+
+
+
+
+
+</div><!-- End_Module_99769 --></div>
+	<div class="clear"></div>
+</div>
+</div></div>
+					</article><!--full-page article-->   
+				</div><!-- mainContent -->
+				<footer id="HHSFooter">
+					<p class="hidden" style="font-size:200%"><strong>HHS Footer</strong></p> 
+
+  
+ 
+				<section id="copyright">
+						<p class="hidden" style="font-size:175%"><strong>Contact Information</strong></p>
+						<ul class="noIndent">
+							<li><a href="/NondiscriminationPolicy"> Nondiscrimination Notice/Policy</a></li>
+							<li><a href="/HIPAA"> Notice of Use of Protected Health Information</a></li>	
+							<li><a href="https://mt.gov/discover/disclaimer.asp#disclaimer" title="Disclaimer">Disclaimer</a></li>
+							<li><a href="/ContactWebmaster" title="Contact Webmaster" target="_blank">Contact Webmaster</a></li>		
+						</ul>
+					</section> 
+				  <section id="Languages">
+
+           
+	  <div class="footerLang">
+	    <p style="text-align:center"><strong>Language Assistance Available</strong><br>
+	      <a href="/languageassistance#Spanish"><span lang="es" xml:lang="es">Español</span></a> | <a href="/languageassistance#German"><span lang="de" xml:lang="de">Deutsch</span></a> | <a href="/languageassistance#Chinese"><span lang="zh" xml:lang="zh">繁體中文</span></a> | <a href="/languageassistance#Japanese"><span lang="ja" xml:lang="ja">日本語</span></a> | <a href="/languageassistance#Tagalog"><span lang="tl" xml:lang="tl">Tagalog</span></a> | <a href="/languageassistance#French"><span lang="fr" xml:lang="fr">Français</span></a> | <a href="/languageassistance#Russian"><span lang="ru" xml:lang="ru">Русский</span></a> | <a href="/languageassistance#Korean"><span lang="ko" xml:lang="ko">한국어</span></a> | <a href="/languageassistance#Arabic"><span lang="ar" xml:lang="ar">العربية</span></a> | <a href="/languageassistance#Thai"><span lang="th" xml:lang="th">ไทย</span></a> | <a href="/languageassistance#Norwegian"><span lang="no" xml:lang="no">Norsk</span></a> | <a href="/languageassistance#Vietnamese"><span lang="vi" xml:lang="vi">Tiếng Việt</span></a> | <a href="/languageassistance#Ukrainian"><span lang="uk" xml:lang="uk">український</span></a> | <a href="/languageassistance#Dutch"><span lang="nl" xml:lang="nl">Pennsilfaanisch Deitsch</span></a> | <a href="/languageassistance#Italian"><span lang="it" xml:lang="it">Italiano</span></a></p>
+      </div>
+</section>
+				</footer>
+				
+			</div><!-- agencycontent -->  
+		</div><!-- agencywrapper -->
+	</div><!-- pagewrap --> 
+
+
+
+
+	</div>
+    </div>
+
+<div id="template-footer-wrapper">
+    <footer id="template-footer"></footer>
+</div>
+
+<!-- scripts that load after the page contents go here -->
+
+
+
+
+<script>
+/*<![CDATA[*/
+(function() {
+var sz = document.createElement('script'); sz.type = 'text/javascript'; sz.async = true;
+sz.src = '//siteimproveanalytics.com/js/siteanalyze_77176.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sz, s);
+})();
+/*]]>*/
+</script>
+
+
+
+
+
+
+
+
+
+        <input name="ScrollTop" type="hidden" id="ScrollTop" />
+        <input name="__dnnVariable" type="hidden" id="__dnnVariable" autocomplete="off" value="`{`trackLinks`:`false`,`__scdoff`:`1`,`dnn.scripts.js.resx`:`/WebResource.axd?d=DKiEc2s7S-4CC48CSU5YsuiCFNpvYAIuXh-Z07c3BWWnmP2JKXXE58FJa_vQxfS9Vl81mse509DfX6k__CbkT96pivs1\u0026t=636899494740000000`,`sf_siteRoot`:`/`,`sf_tabId`:`39288`,`evoq_TabId`:`39288`,`evoq_PageLanguage`:`en-US`,`evoq_ContentItemId`:`-1`,`evoq_UrlReferrer`:``,`evoq_UrlPath`:`http%3a%2f%2fdphhs.mt.gov%2fcovid19vaccine`,`evoq_UrlQuery`:`%3fTabId%3d39288%26language%3den-US`,`evoq_ContentItemReferrer`:`-1`,`evoq_PersonalizedUrlReferrer`:`-1`,`evoq_DisableAnalytics`:`False`}" />
+        <input name="__RequestVerificationToken" type="hidden" value="GBznRXS-964sJfeYN6UtlHNj3ee-aXMsJNomGYgK9_XylAH0EuX_F2no5YAN06S_qIuLgw2" />
+    </form>
+    <!--CDF(Javascript|/js/dnncore.js?cdv=6023|DnnBodyProvider|100)--><!--CDF(Css|/Resources/Shared/stylesheets/dnndefault/7.0.0/default.css?cdv=6023|DnnPageHeaderProvider|5)--><!--CDF(Css|/Portals/_default/Containers/Gravity/container.css?cdv=6023|DnnPageHeaderProvider|25)--><!--CDF(Css|/Portals/85/portal.css?cdv=6023|DnnPageHeaderProvider|35)--><!--CDF(Javascript|/js/dnn.js?cdv=6023|DnnBodyProvider|12)--><!--CDF(Javascript|/js/dnn.servicesframework.js?cdv=6023|DnnBodyProvider|100)--><!--CDF(Javascript|/Resources/libraries/jQuery/03_02_01/jquery.js?cdv=6023|DnnPageHeaderProvider|5)--><!--CDF(Javascript|/Resources/libraries/jQuery-Migrate/03_00_00/jquery-migrate.js?cdv=6023|DnnPageHeaderProvider|6)-->
+    
+</body>
+</html>

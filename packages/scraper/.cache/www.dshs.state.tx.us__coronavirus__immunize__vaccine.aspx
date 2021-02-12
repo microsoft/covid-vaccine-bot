@@ -1,0 +1,499 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head><script type="text/javascript" src="/ruxitagentjs_ICA23SVfgjqrtux_10207210127152629.js" data-dtconfig="rid=RID_-34838194|rpid=-387976111|domain=state.tx.us|reportUrl=/rb_bf35299gib|app=fb61825848b339be|featureHash=ICA23SVfgjqrtux|rdnt=1|uxrgce=1|bp=2|cuc=2tgs02ew|mel=100000|dpvc=1|lastModification=1611841646373|dtVersion=10207210127152629|tp=500,50,0,1|uxdcw=1500|vs=2|tal=3|agentUri=/ruxitagentjs_ICA23SVfgjqrtux_10207210127152629.js"></script><link rel="stylesheet" type="text/css" href="/WorkArea/FrameworkUI/css/ektron.stylesheet.ashx?id=-1759591071+-300771134+1985268503" /><script type="text/javascript" src="/WorkArea/FrameworkUI/js/ektron.javascript.ashx?id=-569449246+-1939951303+-1080527330+-1687560804+-1388997516+2009761168+27274999+1979897163+-422906301+-1818005853+-1008700845+-991739241+-1793043690"></script><title>COVID-19 Vaccine Information</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="Author" content="Texas Department of State Health Services" />
+    <!--These style sheets apply to IE7 and IE8 Compatibility mode -->
+    <!--[if lt IE 8]><link rel="stylesheet" href="/css/blueprint/ie.css" type="text/css" media="screen, projection" /><![endif]-->
+    <link href="/css/blueprint/print.css" rel="stylesheet" type="text/css" media="print" /><link href="/css/dshsPrint.css" rel="stylesheet" type="text/css" media="print" />
+    <!-- import several css files in one to avoid IE limit on @ of css files -->
+    <link rel="stylesheet" href="/css/DSHS.css" type="text/css" />
+    <!--[if lt IE 8]><link rel="stylesheet" href="/css/DSHSie.css" type="text/css" media="screen, projection" /><![endif]-->
+    <!--[if lt IE 7.0000]>
+      <link rel="stylesheet" href="/css/DSHSIE6.css" type="text/css" />
+    <![endif]-->
+    <link href="/css/editorStyles.css" rel="stylesheet" type="text/css" /><link href="/css/internet-styles.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/js/master-min.js"></script>
+
+    <!-- superfish jQuery extension -->
+    <script type="text/javascript">
+        // initialize plugins
+		$ektron().ready(function(){
+			$ektron('ul#mainNav').superfish();
+						
+            $ektron(".sort_color_off").click(function(){        
+                $ektron("#srchloading").show();
+            });            
+		});
+    </script>
+
+    
+
+    <link href="/css/glossy.css" type="text/css" rel="stylesheet" />
+    <script src="/js/ddaccordion.js" type="text/javascript">
+      /***********************************************
+      * Accordion Content script- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+      * Visit http://www.dynamicDrive.com for hundreds of DHTML scripts
+      * This notice must stay intact for legal use
+      ***********************************************/
+    </script>
+    <script src="/js/locNav.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/WorkArea/java/thickbox.js" id="EktronThickBoxJS"></script>
+   <link rel="stylesheet" type="text/css" href="/WorkArea/csslib/box.css" id="EktronThickBoxCss" />
+
+<link rel="canonical" href="https://www.dshs.state.tx.us/covidvaccine/" /></head>
+<body id="bodymain">
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-76662241-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    <form method="post" action="/coronavirus/immunize/vaccine.aspx" id="aspnetForm">
+<div class="aspNetHidden">
+<input type="hidden" name="EktronClientManager" id="EktronClientManager" value="-1759591071,-569449246,-1939951303,-1080527330,-1687560804,-1388997516,2009761168,27274999,1979897163,-422906301,-1818005853,-1008700845,-991739241,-1793043690,-300771134,1985268503" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE2MjIzNTA4NjQPZBYCZg9kFgICARBkZBYEAgkPZBYCZg9kFgICAQ9kFgJmDxYCHgdWaXNpYmxlZ2QCEQ9kFgYCAw9kFgICAw9kFgJmD2QWBGYPZBYCAgMPZBYCZg9kFgICAQ8WAh4FY2xhc3MFEGRyb3B6b25lIFBCQ2xlYXJkAgEPZBYCAgEPZBYCZg9kFgICAQ9kFgICAQ8WAh4LXyFJdGVtQ291bnQCARYCZg9kFgZmDxUCEyBzdHlsZT0nd2lkdGg6MTAwJScAZAIBDxYCHwBoZAIDDxYCHwJmZAIFDxYCHwEFDHNwYW4tMjAgbGFzdBYIAgEPZBYCZg9kFgICBQ8WAh4JaW5uZXJodG1sBRxDT1ZJRC0xOSBWYWNjaW5lIEluZm9ybWF0aW9uZAIFD2QWAmYPZBYEAgEPFgIfAGhkAgMPFgIfAGhkAgcPDxYCHwBnZGQCCQ9kFgJmD2QWBGYPZBYCAgMPZBYCZg9kFgICAQ8WAh8BBRBkcm9wem9uZSBQQkNsZWFyZAIBD2QWAgIBD2QWAmYPZBYCAgEPZBYCAgEPFgIfAgIBFgJmD2QWBmYPFQITIHN0eWxlPSd3aWR0aDoxMDAlJwBkAgEPFgIfAGhkAgMPFgIfAgICFgICAQ9kFgICAQ9kFgJmD2QWAgIBD2QWAgIBD2QWAmYPZBYCAgEPZBYCZg9kFgICAQ9kFgICAQ9kFgICAQ8QZGQWAGQCCQ9kFgJmD2QWBGYPZBYCAgMPZBYCZg9kFgICAQ8WAh8BBRBkcm9wem9uZSBQQkNsZWFyZAIBD2QWAgIBD2QWAmYPZBYCAgEPZBYCAgEPFgIfAgIBFgJmD2QWBmYPFQITIHN0eWxlPSd3aWR0aDoxMDAlJwBkAgEPFgIfAGhkAgMPFgIfAmZkGAoFLmN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkUGFnZUhvc3QxJHV4VVhTd2l0Y2gPD2QCAWQFE2N0bDAwJFV4SGVhZGVyTGlua3MPD2RmZAVnY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSREcm9wWm9uZTIkdXhDb2x1bW5EaXNwbGF5JGN0bDAwJHV4Q29udHJvbENvbHVtbiRjdGwwMCR1eFdpZGdldEhvc3QkdXhVWFN3aXRjaA8PZAIBZAV4Y3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSREcm9wWm9uZTIkdXhDb2x1bW5EaXNwbGF5JGN0bDAwJHV4Q29udHJvbENvbHVtbiRjdGwwMSR1eFdpZGdldEhvc3QkdXhXaWRnZXRIb3N0X3dpZGdldCRWaWV3U2V0Dw9kZmQFZ2N0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkRHJvcFpvbmUyJHV4Q29sdW1uRGlzcGxheSRjdGwwMCR1eENvbnRyb2xDb2x1bW4kY3RsMDEkdXhXaWRnZXRIb3N0JHV4VVhTd2l0Y2gPD2QCAWQFLmN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkRHJvcFpvbmUzJHV4VVhTd2l0Y2gPD2QCAWQFLmN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkRHJvcFpvbmUyJHV4VVhTd2l0Y2gPD2QCAWQFeGN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkRHJvcFpvbmUyJHV4Q29sdW1uRGlzcGxheSRjdGwwMCR1eENvbnRyb2xDb2x1bW4kY3RsMDAkdXhXaWRnZXRIb3N0JHV4V2lkZ2V0SG9zdF93aWRnZXQkVmlld1NldA8PZGZkBS5jdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJERyb3Bab25lMSR1eFVYU3dpdGNoDw9kAgFkBRBjdGwwMCRVeE5vU2NyaXB0Dw9kZmR1A0om7enChPLdntEE/L7RkmOpLHUgzyKnB7vZzFg77A==" />
+</div>
+
+
+<script src="/ScriptResource.axd?d=1tK-jKVHmtLw7td9etlJn6gKL9POT1Y-BFev7F_wwd_GCP-56c3MAqY6px18FmgMTv68r68FGzktqoBJca8J9WKBNkxj9J_s8jem3hSqCaKB2oO1sS8JeBugCbaOwpeT63CNuQHtQon_M1ipEnBu9epkhhiOetkX812CZs9knsY1&amp;t=3d6efc1f" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="87D830E2" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAbQtnJGaWir7TnN+DhsKZZAcieQ/WfpLZhvHgCegzlLdNVlF/coop++mN+bxLaCDVxmXvGgHrs7mNQmm+eN8H7Na2gLGVgKpH+jWEFt9V1+FhU+utmBSnThH8LCg0aE6ANLHUk0qEK9+rduCxp7qJruZvvowCvkqw5lHLrN98Xf4g==" />
+</div>
+    
+            <noscript>
+                Note: Javascript is disabled or is not supported by your browser. All 
+            content is viewable but it will not display as intended.
+            </noscript>
+        
+    <a id="ctl00_jshack" href="javascript:__doPostBack(&#39;ctl00$jshack&#39;,&#39;&#39;)" style="display: none;"></a>
+    
+    <div id="header">
+        <div id="headerTop">
+        </div>
+        <div class="container">
+            <div class="span-10">
+                <div id="logo">
+                    <a href="/" accesskey="1">
+                        <img src="/images/HHSDSHS-Logo.png" alt="Texas Department of State Health Services" />
+                    </a>
+                   
+                </div>
+            </div>
+            <a class="skiplink" href="#globalmenu" accesskey="5">Skip to global menu 5</a>
+            <a class="skiplink" href="#startpage" accesskey="2">Skip to local menu 2</a>
+	    <a class="skiplink" href="#startcontent" accesskey="3">Skip to content 3</a>
+            <a class="skiplink" href="#footermenu" accesskey="6">Skip to footer 6</a>
+            <div class="span-12">
+                <div id="search">
+                    <div id="ctl00_srchBox">
+	
+                        <div class="searchBoxes">
+                            <input name="ctl00$txtSearchText" type="text" id="ctl00_txtSearchText" accesskey="4" class="searchBox" title="Search" />
+                            <input type="button" name="ctl00$UxSearch" value="" onclick="javascript:__doPostBack(&#39;ctl00$UxSearch&#39;,&#39;&#39;)" id="ctl00_UxSearch" class="searchButton" />
+                            <div class="advLink">
+                                <a id="ctl00_txtAdvanced" class="searchButton" href="javascript:__doPostBack(&#39;ctl00$txtAdvanced&#39;,&#39;&#39;)">Advanced</a></div>
+                        </div>
+                    
+</div>
+                    <div class="span-11">
+                        
+<ul class="alphabet">
+    <li>Topics:</li>
+    <li><a href="/HealthTopics.aspx?alp=A">A</a></li>
+    <li><a href="/HealthTopics.aspx?alp=B">B</a> </li>
+    <li><a href="/HealthTopics.aspx?alp=C">C</a> </li>
+    <li><a href="/HealthTopics.aspx?alp=D">D</a> </li>
+    <li><a href="/HealthTopics.aspx?alp=E">E</a> </li>
+    <li><a href="/HealthTopics.aspx?alp=F">F</a> </li>
+    <li><a href="/HealthTopics.aspx?alp=G">G</a> </li>
+    <li><a href="/HealthTopics.aspx?alp=H">H</a> </li>
+    <li><a href="/HealthTopics.aspx?alp=I">I</a> </li>
+    <li><a href="/HealthTopics.aspx?alp=J">J</a> </li>
+    <li><a href="/HealthTopics.aspx?alp=K">K</a> </li>
+    <li><a href="/HealthTopics.aspx?alp=L">L</a> </li>
+    <li><a href="/HealthTopics.aspx?alp=M">M</a> </li>
+    <li><a href="/HealthTopics.aspx?alp=N">N</a> </li>
+    <li><a href="/HealthTopics.aspx?alp=O">O</a> </li>
+    <li><a href="/HealthTopics.aspx?alp=P">P</a> </li>
+    <li><a href="/HealthTopics.aspx?alp=Q">Q</a> </li>
+    <li><a href="/HealthTopics.aspx?alp=R">R</a> </li>
+    <li><a href="/HealthTopics.aspx?alp=S">S</a> </li>
+    <li><a href="/HealthTopics.aspx?alp=T">T</a> </li>
+    <li><a href="/HealthTopics.aspx?alp=U">U</a> </li>
+    <li><a href="/HealthTopics.aspx?alp=V">V</a> </li>
+    <li><a href="/HealthTopics.aspx?alp=W">W</a> </li>
+    <li><a href="/HealthTopics.aspx?alp=X">X</a> </li>
+    <li><a href="/HealthTopics.aspx?alp=Y">Y</a> </li>
+    <li><a href="/HealthTopics.aspx?alp=Z">Z</a> </li>
+    <li><a href="/HealthTopics.aspx?alp=all">All</a> </li>
+</ul>
+
+                    </div>
+                </div>
+            </div>
+            <div class="span-3 last">
+                <div class="headerLinks pull-1">
+                    
+                             <span id="ctl00_MobileLogic1_UxMobileLink"><a href="/Mobile/Mobile.aspx">Mobile</a> | </span> 
+                            <a id="ctl00_UxSpanish" href="javascript:__doPostBack(&#39;ctl00$UxSpanish&#39;,&#39;&#39;)">Inicio en español</a>
+<br />
+                            Text Size:
+                        
+                    
+<span id="resize">
+<a id="increase" class="textLg" href="#" title="Font Larger">Font Larger</a>
+<a id="decrease" class="textSm" href="#" title="Font Smaller">Font Smaller</a>
+</span>
+<br />
+                    <span id="ctl00_uxLoginMenu_lblWelcomeMessage"></span>
+<span id="ctl00_uxLoginMenu_logoutBar"></span>
+
+<span id="ctl00_uxLoginMenu_accountlinkbar"></span>
+
+
+                </div>
+            </div>
+            <div class="span-25 last">
+                <a name="globalmenu" id="globalmenu"></a>
+                <div id="globalNav"><ul id="mainNav"><li><a href="/" target="_self">Home</a></li><li><a href="/coronavirus/">COVID-19</a></li><li><a href="/about-DSHS.shtm">About DSHS</a><ul><li><a href="/orgchart/contact_list.shtm">Administrative Contacts</a></li><li><a href="/Advisory-Committees.aspx">Advisory Committees</a></li><li><a href="/contracts/default.shtm">Contracts and Budgets</a></li><li><a href="/policy/compact.shtm#customerservice">Customer Service</a></li><li><a href="/datareports.shtm">Data and Reports</a></li><li><a href="/contractor/">Doing Business with DSHS</a></li><li><a href="/exec-team.aspx">Executive Team</a></li><li><a href="https://hhs.texas.gov/laws-regulations/policies-rules/health-human-services-rulemaking" target="_self">HHS Rulemaking</a></li><li><a href="https://hhs.texas.gov/about-hhs/leadership/councils/health-human-services-commission-executive-council" target="_self">HHSC Executive Council</a></li><li><a href="/legislative/default.shtm">Legislative Information</a></li><li><a href="/closures/covid19.aspx">Office Closures</a></li><li><a href="/orgchart/default.shtm">Organization Chart</a></li><li><a href="/about-DSHS/campaigns/">Public Health Campaigns</a></li><li><a href="/visitor/default.shtm">Visitor Information</a></li><li><a href="/volunteer/default.shtm">Volunteer with DSHS</a></li><li class="menuCornerTabbed"><div class="menuCorners"></div></li></ul></li><li><a href="/news/">News</a><ul><li><a href="/WorkArea/linkit.aspx?LinkIdentifier=ID&amp;ItemID=34370">News Releases</a></li><li><a href="/news/alerts.aspx">Health Alerts &amp; Advisories</a></li><li><a href="/news/updates.shtm">News Updates</a></li><li class="menuCornerTabbed"><div class="menuCorners"></div></li></ul></li><li><a href="/I-am-a.shtm">I am a...</a><ul><li><a href="/texas-resident/">Citizen</a></li><li><a href="/contractor/">Contractor</a></li><li><a href="/grant-writer/">Grant Writer</a></li><li><a href="/health-professional/">Health Professional</a></li><li><a href="/texas-resident/">Individual or Family</a></li><li><a href="/news/">Journalist</a></li><li><a href="/Licensee-Registrant-Permittee">Licensee or Business</a></li><li><a href="/texas-resident/">Parent/Guardian</a></li><li><a href="/public-servant/">Public Servant</a></li><li><a href="/chs/">Researcher</a></li><li><a href="/texas-resident/#student">Student</a></li><li><a href="/texas-resident/">Texas Resident</a></li><li><a href="/volunteer/default.shtm">Volunteer</a></li><li class="menuCornerTabbed"><div class="menuCorners"></div></li></ul></li><li><a href="/Most-Popular/">Most Popular</a><ul><li><a href="/coronavirus/">Coronavirus Disease 2019</a></li><li><a href="/vs/reqproc/certified_copy.shtm">Birth Certificates</a></li><li><a href="/vs/reqproc/deathcert.shtm">Death Certificates</a></li><li><a href="/emstraumasystems/default.shtm">EMS Certification and Licensing</a></li><li><a href="/flu/surveillance.aspx">Flu Surveillance</a></li><li><a href="/Search-Jobs.aspx">Jobs at DSHS</a></li><li><a href="/immunize/">Immunizations</a></li><li><a href="/Vital_Statistics/Verification_of_a_Marriage_or_Divorce.aspx">Marriage/Divorce Verification</a></li><li><a href="https://vo.ras.dshs.state.tx.us/" target="_self">Online Licenses</a></li><li><a href="/txever">TxEVER</a></li><li><a href="/Im-looking-for.aspx">All Most Popular...</a></li><li class="menuCornerTabbed"><div class="menuCorners"></div></li></ul></li><li><a href="/Resources.htm">Resources</a><ul><li><a href="/Advisory-Committees.aspx">Advisory Committees</a></li><li><a href="/avlib/default.shtm">Audiovisual Library</a></li><li><a href="/idcu/investigation/conditions/">Disease Reporting</a></li><li><a href="/library/DSHSauthors.shtm">DSHS Research Articles</a></li><li><a href="/eGrants/">eGrants System</a></li><li><a href="http://hhsc.pinnaclecart.com/dshs/" target="_self">Forms and Publications</a></li><li><a href="/fic/default.shtm">Funding Information Center</a></li><li><a href="/library/">Medical and Research Library</a></li><li><a href="/open/default.shtm">Open Meetings</a></li><li><a href="/policy/openrecords.shtm">Open Records Requests</a></li><li><a href="/regions/default.shtm">Public Health Regions</a></li><li><a href="/links/default.shtm">Related Websites</a></li><li><a href="/about/rules-regs.aspx">Rules and Regulations</a></li><li><a href="http://www.texashealthlibrary.com/" target="_self">Texas Health Library</a></li></ul></li><li><a href="/Online-Services.aspx">Online Services</a><ul><li><a href="/vs/reqproc/Ordering-Birth-Certificates-Online.shtm">Birth Certificates</a></li><li><a href="https://vo.ras.dshs.state.tx.us">Business/Professional Licenses</a></li><li><a href="/vs/reqproc/Ordering-Death-Certificates-Online/">Death Certificates</a></li><li><a href="/eGrants/">eGrants System</a></li><li><a href="/emstraumasystems/newcert.shtm">EMS Certification &amp; Licenses</a></li><li><a href="/food-handlers/training/online.aspx">Food Handler Training</a></li><li><a href="http://hhsc.pinnaclecart.com/dshs/">Forms and Publications</a></li><li><a href="/fic/default.shtm">Funding Opportunities</a></li><li><a href="/Search-Jobs.aspx">Job Opportunities</a></li><li><a href="/vs/reqproc/Ordering-Marriage-and-Divorce-Verifications-Online.shtm">Marriage/Divorce Verifications</a></li><li><a href="/immunize/immtrac/default.shtm">Texas Immunization Registry</a></li><li class="menuCornerTabbed"><div class="menuCorners"></div></li></ul></li><li><a href="/contact.shtm">Contact Us</a></li></ul></div>
+            </div>
+        </div>
+    </div>
+    <div id="body">
+        <div class="container">
+            <a name="startpage" id="startpage"></a>
+            
+    <a class="skiplink" href="#startcontent" accesskey="3">Skip to content 3</a>
+    
+
+    <script type="text/javascript">
+        Ektron.PBSettings = { 'dontClose': false }
+    </script>
+
+
+
+
+        <div class="ektron-ux-UITheme ux-app-siteApppageBuilder-setSizeTemplate">
+            
+        </div>
+        <script id="EktronScriptBlockviywc" type="text/javascript">
+
+Ektron.ready(function(event, eventName){
+
+                $ektron(".ux-app-siteApppageBuilder-setSizeTemplate .ui-dialog-buttonpane a").button();
+                $ektron(".ux-app-siteApppageBuilder-setSizeTemplate .framework").accordion({
+                    heightStyle: "content",
+                    activate: function(event, ui){
+                        $ektron(ui).closest(".ui-accordion").accordion("refresh");
+                    }
+                });
+                $ektron(".ux-app-siteApppageBuilder-setSizeTemplate").draggable({ handle: "div.ui-dialog-titlebar ", containment: $ektron("body") });
+            
+});
+
+
+</script>
+		
+        
+    
+
+    <div id="ctl00_ContentPlaceHolder1_leftFlex" class="span-5" style="float:left !Important">
+        <div class="leftMargin">
+            <div class="glossymenu"><a class="menuitem" href="/coronavirus/immunize/vaccine.aspx" target="_self">COVID-19 Vaccine Home</a><a class="menuitem submenuheader" href="#" target="_self">Find Vaccine</a><div class="submenu"><ul><li><a href="/coronavirus/immunize/vaccine-hubs.aspx" target="_self">Hub Providers</a></li><li><a href="https://tdem.maps.arcgis.com/apps/webappviewer/index.html?id=3700a84845c5470cb0dc3ddace5c376b" target="_self">Vaccine Availability Map</a></li><li><a href="https://genesis.soc.texas.gov/files/accessibility/vaccineprovideraccessibilitydata.csv" target="_self">Accessible List of Vaccine Providers</a></li></ul></div><a class="menuitem" href="/coronavirus/immunize/vaccine-faqs.aspx" target="_self">COVID-19 Vaccine FAQs</a><a class="menuitem submenuheader" href="#" target="_self">Information for Vaccination Providers</a><div class="submenu"><ul><li><a href="/coronavirus/immunize/vaccination-providers.aspx" target="_self">Information for Providers</a></li><li><a href="/coronavirus/immunize/provider-enrollment.aspx" target="_self">Provider Enrollment</a></li><li><a href="/coronavirus/immunize/vaccine-manage-resources.aspx" target="_self">Vaccine Management</a></li><li><a href="/coronavirus/immunize/vaccine/providerfaq.aspx" target="_self">Provider FAQs</a></li></ul></div><a class="menuitem" href="/coronavirus/immunize/vaccineallocations.aspx" target="_self">COVID-19 Vaccine Allocations</a><a class="menuitem" href="/coronavirus/immunize/evap.aspx" target="_self">Expert Vaccine Allocation Panel</a><a class="menuitem" href="/immunize/covid19/Public-Health-Entity-Forums/" target="_self">Public Health Entity Forums</a><a class="menuitem" href="/immunize/safety/" target="_self">Vaccine Safety</a><a class="menuitem" href="/coronavirus/tools/vaccine-comm.aspx" target="_self">COVID-19 Vaccine Communication Tools</a></div>
+      
+        
+        <div id="ctl00_ContentPlaceHolder1_DropZone1_uxUpdatePanel" class="">
+	
+                <div id="ctl00_ContentPlaceHolder1_DropZone1_uxDropZone" data-ux-pagebuilder="DropZone">
+                    
+                            <div data-ux-pagebuilder="Column" style='width:100%'>
+                                
+                                <ul>
+                                    
+                                </ul>
+                            </div>
+                        
+                </div>
+            
+</div>
+    
+        </div>
+          </div>
+     <div id="ctl00_ContentPlaceHolder1_ContentPageColumnCenter" class="span-20 last">
+        <ul id="ctl00_ContentPlaceHolder1_UxBreadCrumb_uxBreadcrumb" class="breadcrumb"><li><a href="/">Home</a><span> &gt; </span></li><li><a href="/coronavirus/default.aspx">COVID-19</a><span> &gt; </span></li><li><a href="/immunize/">Immunizations</a><span> &gt; </span></li><li><a href="/coronavirus/immunize/vaccine.aspx">COVID-19 Vaccine</a><span> &gt; </span></li>
+    
+   <li id="ctl00_ContentPlaceHolder1_UxBreadCrumb_uxLastli" class="selected">COVID-19 Vaccine Information</li>
+</ul>
+
+    
+        <div id="ctl00_ContentPlaceHolder1_SectionTitleUpdater">
+	
+                   
+        <a name="startcontent" id="startcontent"></a>
+                
+        
+</div>
+        <div id="ctl00_ContentPlaceHolder1_pnlContent">
+	
+        <!--PAGEWATCH-->
+        <h1 class="contentTitle">
+            COVID-19 Vaccine Information
+        </h1>
+        <div class="content editorStyles">
+            <div id="ctl00_ContentPlaceHolder1_uxContent">
+		<style type="text/css">
+span.red {
+    background: #AB2328;
+	border-radius: 0.8em;
+	-moz-border-radius: 0.8em;
+	-webkit-border-radius: 0.8em;
+	color: #ffffff;
+	display: inline-block;
+	font-weight: bold;
+	line-height: 1.6em;
+	margin-right: 15px;
+	text-align: center;
+	width: 1.6em;
+	float: left;
+	margin-bottom: 60%;
+}
+div.fourThings, div.fourThings p {
+	overflow: hidden;
+}
+.asideMenu a, .asideMenu a:visited {
+	padding: .5em .5em!important;
+}
+small {
+	font-size: 70%;
+}
+a.ctaButton {
+   margin: .25em 0; 
+}
+div.contentTwoCols {
+    margin-top: .5em;
+}
+</style>
+<div class="commButtons" style="margin: 0 0 .5em 0;"><a href="/Workarea/linkit.aspx?LinkIdentifier=id&ItemID=12884944154&Langtype=1034" class="langButton" lang="es" role="button">en español</a><a href="https://www.facebook.com/TexasDSHS" class="fbButton" aria-label="DSHS on Facebook" title="DSHS on Facebook" role="button"><span>Facebook</span></a><a href="https://www.instagram.com/TexasDSHS" class="igButton" aria-label="DSHS on Instagram" title="DSHS on Instagram" role="button"><span>Instagram</span></a><a href="https://twitter.com/TexasDSHS" class="twButton" aria-label="DSHS on Twitter" title="DSHS on Twitter" role="button"><span><span>Twitter</span></span></a><a href="https://www.youtube.com/TexasDSHS" class="ytButton" aria-label="DSHS on YouTube" title="DSHS on YouTube" role="button"><span>YouTube</span></a></div>
+<img src="/uploadedImages/Content/Prevention_and_Preparedness/immunize/covid19/banner-interior-full.png" alt="microscopic example of a coronavirus" class="bannerTop"/>
+<div class="asideMenu" style="width: 31%;">
+	<h2 style="padding: 1em .7em;">More information</h2>
+	<ul>
+		<li><a href="/news/updates/Texas-Vaccine-Plan-10-16-2020-DRAFT-CDC-Submission.pdf">Texas Vaccination Plan <small>(PDF)</small></a></li>
+		<li><a href="/immunize/covid19/COVID-19-Expert-Vaccine-Allocation-Panel/">Expert Vaccine Allocation Panel</a></li>
+        <li><a href="/coronavirus/immunize/vaccine/COVIDVaccine-AllocationPrinciples.pdf">Vaccine Allocation Guiding Principles <small>(PDF)</small></a></li>
+		<li><a href="/coronavirus/immunize/vaccine/EVAP-Phase1A.pdf">Phase 1A: Who Is Eligible for Vaccine Now <small>(PDF)</small></a></li>
+		<li><a href="/coronavirus/immunize/vaccine/EVAP-Phase1B.pdf">Phase 1B: Who Is Eligible for Vaccine Now <small>(PDF)</small></a></li>
+		<li><a href="/coronavirus/immunize/vaccineallocations.aspx">COVID-19 Vaccine Allocations</a></li>
+		<li><a href="/coronavirus/immunize/vaccine-faqs.aspx">Vaccine FAQs</a></li>
+		<li><a href="/immunize/covid19/vsafe_info_sheet.pdf">V-safe Information Sheet <small>(PDF)</small></a></li>
+		<li><a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/index.html">CDC Vaccine Information</a></li>
+		<li><a href="https://www.fda.gov/emergency-preparedness-and-response/coronavirus-disease-2019-covid-19/covid-19-vaccines">FDA Vaccine Information</a></li>
+        <li><a href="https://tabexternal.dshs.texas.gov/t/THD/views/COVID-19VaccineinTexasDashboard/Summary?:origin=card_share_link&:embed=n">Texas Vaccine Data Dashboard</a></li>
+        <li><a href="/immunize/covid19/COVID-19-Vaccine-Data-by-County.xls">Accessible Vaccine Data <small>(XLS)</small></a></li>
+	</ul>
+</div>
+<div style="width: 70%; text-align: center">
+	<a href="#eligible" class="ctaButton floatLeft noArrow" style="width: calc(42% - .5em);" role="button">Who's Eligible Now?</a> <a href="#where" style="width: calc(42% - .5em);" class="ctaButton floatLeft noArrow" role="button">Where to Get Vaccinated</a>
+</div>
+<div style="width: 70%; text-align: center">
+    <a href="#important" style="width: calc(42% - .5em);" class="ctaButton floatLeft noArrow" role="button">Important to Know</a> <a href="#timeline" style="width: calc(42% - .5em); " class="ctaButton floatLeft noArrow" role="button">TX Vaccine Timeline</a></div>
+<hr style="max-width: 66%; clear: left;"/>
+<h2 id="eligible">Who's Eligible to Get the Vaccine Now?</h2>
+<p style="margin-top: .6em;"><strong><a href="/coronavirus/immunize/vaccine/EVAP-Phase1A.pdf">Phase 1A:</a></strong> Front-line healthcare workers and residents at long-term care facilities</p>
+<p><strong><a href="/coronavirus/immunize/vaccine/EVAP-Phase1B.pdf">Phase 1B:</a></strong> People 65+ or people 16+ with a <a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html" title="CDC's list of medical conditions that increase risk of severe COVID-19 illness">health condition</a> that increases risk of severe COVID‑19 illness, including but not limited to:</p>
+  <ul>
+    <li>Cancer</li>
+    <li>Chronic kidney disease</li>
+    <li>COPD (chronic obstructive pulmonary disease)</li>
+    <li>Down Syndrome</li>
+    <li>Heart conditions, such as heart failure, coronary artery disease, or cardiomyopathies</li>
+    <li>Organ transplantation</li>
+    <li>Obesity</li>
+    <li>Pregnancy</li>
+    <li>Sickle cell disease</li>
+    <li>Type 2 diabetes</li>
+  </ul>
+<p>If you have a medical condition not listed above, you may still qualify for the vaccine. Talk to your provider to confirm.</p>
+<p>Spring 2021 is the best estimate of when vaccines will be available for the general public. Availability will depend on vaccine supply. Check back here for updates.</p>
+<hr style="clear: left;"/>
+<h2 id="where">Where to Get Vaccinated</h2>
+<p>If you’re eligible to get vaccinated now, you can check with a large vaccination hub and/or a local vaccine provider, like a nearby pharmacy or your doctor. </p>
+<p style="margin-bottom: .25em;"><strong>Find Vaccine:</strong> </p>
+<a href="/coronavirus/immunize/vaccine-hubs.aspx" class="ctaButton floatLeft">Large Vaccination Hubs <span class="arrow"></span> </a> <a href="https://tdem.maps.arcgis.com/apps/webappviewer/index.html?id=3700a84845c5470cb0dc3ddace5c376b" class="ctaButton floatLeft">Vaccine Availability Map <span class="arrow"></span> </a> <a href="https://genesis.soc.texas.gov/files/accessibility/vaccineprovideraccessibilitydata.csv" class="ctaButton floatLeft">List of All Providers <span class="arrow"></span> </a>
+<p style="margin-top: .65em;">When searching for a vaccination site, remember:</p>
+<ul>
+    <li>Vaccine supply is limited. Not all local providers have vaccine each week and hubs may have long waiting lists.</li>
+    <li>Do not show up at a hub or provider looking for a vaccine.</li>
+    <li>Instead, check the provider’s website. Call only if the website doesn’t answer your questions.</li>
+</ul>
+<div class="alertBox" style="width: 768px; float: left; border-left: 15px solid #ab2328; border-top: 1px solid #efefef; border-right: 1px solid #efefef; border-bottom: 1px solid #efefef; padding-top: .5em; padding-bottom: 0;">
+  <p><strong>Do you know someone who is eligible for a vaccine but doesn’t have internet access? Please let them know they can call 2‑1‑1 for referral to a local vaccine provider.</strong></p>  
+</div>
+<p style="clear:left;">Vaccine supply is still limited in Texas, but more arrives each week.</p>
+<hr/>
+<h2 id="important">Important to Know</h2>
+<div class="contentTwoCols">
+<h3>Two Doses</h3>
+    <p>Moderna and Pfizer COVID-19 vaccines both require two doses. It’s best if you get your second dose from the same brand as your first dose. For example, if you got a Moderna first dose, it’s best to get Moderna for your second dose.</p>
+    <p>The timing between your first and second dose depends on which vaccine you received:</p>
+<ul>
+    <li><strong>Moderna:</strong> 4 to 6 weeks after your first dose</li>
+    <li><strong>Pfizer:</strong> 3 to 6 weeks after your first dose</li>
+</ul>
+</div>
+<div class="contentTwoCols lastColumn">
+    <img src="/uploadedImages/Content/Prevention_and_Preparedness/immunize/covid19/VaccineVials.png" alt="If you got a Moderna first dose, it's best to get the Moderna second dose 4-6 weeks after your first dose. If you got a Pfizer first dose, it's best to get the Pfizer second dose 3-6 weeks after your first dose." style="width: 90%;"/>
+</div>
+<h3 style="clear: left;">Side Effects &amp; Allergic Reactions</h3>
+<p>Mild side effects are normal signs your body is building protection, and they usually go away after a few days. The chance of a severe reaction is less than 0.5%. To be safe, your provider will have you wait on-site for 15-30 minutes after your shot.</p>
+<p><strong>V-safe:</strong> Register with CDC's <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/safety/vsafe.html">V-safe After Vaccination Health Checker</a> on your smartphone to report any side effects after getting the COVID-19 vaccine. You’ll also get reminders for your second vaccine dose.</p>
+<hr/>
+<h2 id="timeline">Texas Vaccine Rollout Timeline</h2>
+<img style="max-width: 100%; margin-top: 1em; margin-bottom: 1em;" src="/uploadedImages/Content/zz_Reskin_2019/coronavirus/Vaccine/Vaccine-timeline.png" alt="Vaccine timeline. We are currently in Phase one: direct care worker and long-term care residents."/>
+<p>Texas continues to receive doses of the Pfizer and Moderna COVID-19 vaccines, and is distributing statewide to hospitals, pharmacies, local health departments, freestanding ERs, and other clinics.</p>
+<p>Spring 2021 is the best estimate of when vaccine will be available for the general public, but that may change. It depends on vaccine production and how quickly other vaccines become available. Please check this page regularly for updates.</p>
+<p style="text-align:right;"> <a href="#top">▲ Top</a> </p>
+<hr/>
+	</div>
+        </div>
+        
+<script type="text/javascript">
+    $ektron('table.zebra tr:nth-child(even)')
+        .add('table.zebraBorder tr:nth-child(even)')
+        .addClass('zebraEven');
+ </script>
+        <!--/PAGEWATCH-->
+        
+</div>
+        
+        <div id="ctl00_ContentPlaceHolder1_DropZone2_uxUpdatePanel" class="">
+	
+                <div id="ctl00_ContentPlaceHolder1_DropZone2_uxDropZone" data-ux-pagebuilder="DropZone">
+                    
+                            <div data-ux-pagebuilder="Column" style='width:100%'>
+                                
+                                <ul>
+                                    
+                                            <li>
+                                                
+        <div id="ctl00_ContentPlaceHolder1_DropZone2_uxColumnDisplay_ctl00_uxControlColumn_ctl00_uxWidgetHost_uxUpdatePanel">
+		
+                <div data-ux-pagebuilder="Widget">
+                    
+                    <div class="widgetBody">
+                        
+        
+        
+        <span id="ctl00_ContentPlaceHolder1_DropZone2_uxColumnDisplay_ctl00_uxControlColumn_ctl00_uxWidgetHost_uxWidgetHost_widget_errorLb"></span>
+    
+
+                    </div>
+                </div>
+            
+	</div>
+    
+                                            </li>
+                                        
+                                            <li>
+                                                
+        <div id="ctl00_ContentPlaceHolder1_DropZone2_uxColumnDisplay_ctl00_uxControlColumn_ctl01_uxWidgetHost_uxUpdatePanel">
+		
+                <div data-ux-pagebuilder="Widget">
+                    
+                    <div class="widgetBody">
+                        
+	<script type="text/javascript">
+	$ektron().ready(function(){				
+		 $ektron('#navigation').accordion({
+			    active: false,
+			    header: '.head',
+			    navigation: true,
+			    event: 'mouseover',
+			    fillSpace: true,
+			    animated: 'slide'
+		    });
+		    $ektron('.navigation1').accordion({
+			    active: false,
+			    header: '.head',
+			    navigation: true,
+			    event: 'mouseover',
+			    fillSpace: true,
+			    animated: 'slide'
+		    });
+	});	
+	</script>
+	
+    <style type="text/css">
+	#navigation ul
+        {
+	      height: auto !important;	      
+        }
+	</style>
+
+        
+    
+
+                    </div>
+                </div>
+            
+	</div>
+    
+                                            </li>
+                                        
+                                </ul>
+                            </div>
+                        
+                </div>
+            
+</div>
+    
+        
+        <span id="ctl00_ContentPlaceHolder1_UxLastUpdatedDate_UxLastUpdated" class="lastUpdated">Last updated </span><span class="lastUpdatedDate"> February 10, 2021</span>
+        
+    </div>
+        <div class="span-5 last">
+            <div class="rightMargin page">
+                <div class="suppNav"><ul></ul></div>
+                
+        <div id="ctl00_ContentPlaceHolder1_DropZone3_uxUpdatePanel" class="">
+	
+                <div id="ctl00_ContentPlaceHolder1_DropZone3_uxDropZone" data-ux-pagebuilder="DropZone">
+                    
+                            <div data-ux-pagebuilder="Column" style='width:100%'>
+                                
+                                <ul>
+                                    
+                                </ul>
+                            </div>
+                        
+                </div>
+            
+</div>
+    
+            </div>
+        </div>
+
+        </div>
+    </div>
+    <div id="footer">
+        <div id="footerShadow">
+            <div class="container">
+                <div id="footerContent">
+                    <a name="footermenu" id="footermenu"></a>
+                     <a href="/contact.shtm">Contact Us</a> | <a href="/visitor/default.shtm">Visitor Information</a> | <a href="/policy/compact.shtm">Compact with Texans</a> | <a href="/viewing.shtm">File Viewing Information</a> | <a href="/policy.shtm">Site Policies</a> | <a href="https://hhs.texas.gov/">Texas HHS</a> | <a href="/Search-Jobs.aspx">Jobs at DSHS</a><p><a href="http://governor.state.tx.us/homeland">Texas Homeland Security</a> | <a href="https://www.tsl.texas.gov/trail/index.html">Statewide Search</a> | <a href="http://www.texas.gov">Texas.gov</a> | <a href="https://veterans.portal.texas.gov/">Texas Veterans Portal</a> | <a href="/privacypractices.aspx">Privacy Practices</a> | <a href="https://oig.hhsc.texas.gov/report-fraud">Report Fraud, Waste, and Abuse</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="/Archived-Content/"><!-- Link is only for TRAIL spider --></a>
+    <script src="/js/TrackDownloads.js"></script>
+    </form>
+</body>
+</html>
