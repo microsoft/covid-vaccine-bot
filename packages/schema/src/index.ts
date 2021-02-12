@@ -45,53 +45,52 @@ export interface Region {
 	regions?: Region[]
 }
 
+export type LinkType =
+	/**
+	 * General information link for the region
+	 */
+	| 'info'
+	/**
+	 * A link to an eligibility workflow tool
+	 */
+	| 'workflow'
+	/**
+	 * A site where a user can self-service schedule themselves
+	 * for a vaccination
+	 */
+	| 'scheduling'
+	/**
+	 * A scheduling hotline
+	 */
+	| 'scheduling_phone'
+	/**
+	 * A site where a user can submit a registration form so
+	 * that the region can follow up with them to schedule an
+	 * appointment
+	 */
+	| 'registration'
+	/**
+	 * A site where a user can view a list of scheduling providers
+	 * and locations
+	 */
+	| 'providers'
+	/**
+	 * Documentation describing eligibility criteria about the current phase. If not present, defaults to info link
+	 */
+	| 'eligibility'
+	/**
+	 * Documentation describing the rollout phases in detail - may be more technical, or provide additional content than the info link
+	 */
+	| 'eligibility_plan'
+
+type ContentType = 'pdf' | 'image'
+
 export interface VaccinationPlan {
 	/**
 	 * Informational links about the vaccination plan
 	 */
-	links?: {
-		/**
-		 * General information link for the region
-		 */
-		info?: Link
-		/**
-		 * A link to an eligibility workflow tool
-		 */
-		workflow?: Link
-		/**
-		 * A scheduling hotline
-		 */
-		scheduling_phone?: Link
-		/**
-		 * A site where a user can self-service schedule themselves
-		 * for a vaccination
-		 */
-		scheduling?: Link
-		/**
-		 * A site where a user can submit a registration form so
-		 * that the region can follow up with them to schedule an
-		 * appointment
-		 */
-		registration?: Link
-		/**
-		 * A site where a user can view a list of scheduling providers
-		 * and locations
-		 */
-		providers?: Link
-
-		/**
-		 * Documentation describing eligibility criteria about the current phase. If not present, defaults to info link
-		 */
-		eligibility?: Link
-
-		/**
-		 * Documentation describing the rollout phases in detail - may be more technical, or provide additional content than the info link
-		 */
-		eligibility_plan?: Link
-	}
-
+	links?: Partial<Record<LinkType, Link>>
 	activePhase?: string
-
 	phases?: RolloutPhase[]
 }
 
@@ -99,6 +98,7 @@ export interface Link {
 	url: string
 	text: string
 	description?: string
+
 	/**
 	 * Scraping hins for the current link (only applies to info links ATM).
 	 * When false, scraping is disabled for this link.
@@ -107,9 +107,15 @@ export interface Link {
 	scrape?: boolean
 
 	/**
+	 * A hint to use a querySelectorAll expressions to extract portions of the document.
+	 * The default is to extract the full document
+	 */
+	scrapeQuery?: [string]
+
+	/**
 	 * A content-type hint for binary formats
 	 */
-	content?: 'pdf' | 'image'
+	content?: ContentType
 }
 
 export interface RolloutPhase {

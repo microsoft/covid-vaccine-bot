@@ -2,26 +2,76 @@
  * Copyright (c) Microsoft. All rights reserved.
  * Licensed under the MIT license. See LICENSE file in the project.
  */
-/* eslint-disable @typescript-eslint/no-var-requires */
+/* eslint-disable @typescript-eslint/no-var-requires, @essex/adjacent-await */
 import * as fs from 'fs'
 import * as path from 'path'
 import chalk from 'chalk'
-import Crawler from 'crawler'
-import jsdom from 'jsdom'
-import ssri from 'ssri'
+import { Scraper } from './Scraper'
+import { RunResult } from './types'
 import { Link } from '@ms-covidbot/state-plan-schema'
 
 const CACHE_DIR = path.join(__dirname, '../.cache/')
 
-type IntegrityRecord = Record<string, { integrity: string }>
-type RunResult = {
-	integrity: IntegrityRecord
-	changes: Link[]
-	errors: Error[]
+async function scrapeSites(): Promise<void> {
+	if (!fs.existsSync(CACHE_DIR)) {
+		fs.mkdirSync(CACHE_DIR)
+	}
+	const lastRun = loadLastRun()
+	const links = loadLinksToScrape()
+	const scraper = new Scraper(lastRun, links)
+	scraper.onLinkStarted((link) => {
+		console.log(
+			chalk.grey.dim(`checking [${link.text || 'link'}](${link.url})`)
+		)
+	})
+	scraper.onIntegrityMismatch((link) => {
+		console.log(
+			chalk.green(
+				`✔ integrity mismatch for  [${link.text || 'link'}](${link.url})`
+			)
+		)
+	})
+	scraper.onLinkScraped(([link, scraping]) => {
+		saveFile(
+			cacheFilename(`${getLinkFilename(link)}-${epochNow()}.txt`),
+			scraping.content
+		)
+	})
+
+	console.log(`aggregating ${links.length} sites`)
+
+	// Execute the Scraper
+	const result = await scraper.execute()
+	if (result.errors.length > 0) {
+		console.log(`could not process ${result.errors.length} urls`, result.errors)
+	}
+	console.log(
+		`${result.changes.length}/${links.length} (${(
+			(result.changes.length / links.length) *
+			100
+		).toFixed(2)}%) changed links since last run`
+	)
+	result.errors = result.errors.map((e) => e.message || e.toString()) as any
+	writeRunResult(result)
+}
+
+function cacheFilename(name: string): string {
+	return path.join(__dirname, `../.cache/${name}`)
+}
+
+function saveFile(path: string, content: string) {
+	fs.writeFileSync(path, content, { encoding: 'utf8' })
 }
 
 function loadLastRun(): RunResult {
 	return require('../last_run.json') as RunResult
+}
+
+function writeRunResult(run: RunResult) {
+	saveFile(
+		path.join(__dirname, '../last_run.json'),
+		JSON.stringify(run, null, 4)
+	)
 }
 
 function loadLinksToScrape(): Link[] {
@@ -29,94 +79,14 @@ function loadLinksToScrape(): Link[] {
 	return data.filter((link) => link.scrape !== false)
 }
 
-async function scrapeSites(): Promise<void> {
-	return new Promise((resolve, reject) => {
-		if (!fs.existsSync(CACHE_DIR)) {
-			fs.mkdirSync(CACHE_DIR)
-		}
-		const lastResult = loadLastRun()
-		const links = loadLinksToScrape()
-		console.log(`aggregating ${links.length} sites`)
-		const result: RunResult = {
-			integrity: {},
-			changes: [],
-			errors: [],
-		}
-		const c = new Crawler({
-			maxConnections: 10,
-			jQuery: jsdom,
-		})
-		links.forEach((link) => {
-			const scrapeUrl = link.url
-			c.queue({
-				uri: scrapeUrl,
-				callback: (err, res, done) => {
-					if (err) {
-						result.errors.push(
-							new Error(`error crawling ${scrapeUrl}: ` + err.message)
-						)
-						done()
-					} else {
-						try {
-							const body = res.body
-							const integrity = ssri.fromData(body)
-							const integrityString = integrity.toString() as string
+const epochNow = () => new Date().getTime() / 1000
 
-							// write the response out
-							const filename = link.url
-								.replace('http://', '')
-								.replace('https://', '')
-								.replace(/\//g, '__')
-							fs.writeFileSync(path.join(CACHE_DIR, filename), body)
-
-							// Save the current integrity
-							result.integrity[scrapeUrl] = {
-								integrity: integrityString,
-							}
-
-							if (
-								integrityString !== lastResult.integrity[scrapeUrl]?.integrity
-							) {
-								console.log(
-									chalk.green(
-										`✔ integrity changed for [${
-											link.text || 'link'
-										}](${scrapeUrl})`
-									)
-								)
-								result.changes.push(link)
-							}
-						} catch (err) {
-							result.errors.push(err)
-						} finally {
-							done()
-						}
-					}
-				},
-			})
-		})
-		c.on('drain', () => {
-			result.errors = result.errors.map((e) => e.message) as any
-			// Write out integrity file
-			fs.writeFileSync(
-				path.join(__dirname, '../last_run.json'),
-				JSON.stringify(result, null, 4),
-				{ encoding: 'utf8' }
-			)
-			console.log(
-				`could not process ${result.errors.length} urls`,
-				result.errors
-			)
-			console.log(
-				`${result.changes.length}/${links.length} (${(
-					(result.changes.length / links.length) *
-					100
-				).toFixed(2)}%) changed links since last run`
-			)
-			resolve()
-		})
-	})
+function writeBodyToCache(link: Link, body: string): void {
+	fs.writeFileSync(path.join(CACHE_DIR, getLinkFilename(link)), body)
 }
+
+const getLinkFilename = (link: Link): string =>
+	link.url.replace('http://', '').replace('https://', '').replace(/\//g, '__')
 
 scrapeSites()
 	.then(() => console.log('sites scraped'))

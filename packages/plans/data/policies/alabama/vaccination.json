@@ -6,7 +6,7 @@
 		},
 		"eligibility_plan": {
 			"url": "https://www.alabamapublichealth.gov/covid19vaccine/assets/adph-covid19-vaccination-allocation-plan.pdf",
-			"pdf": true
+			"content": "pdf"
 		},
 		"scheduling_phone": {
 			"description": "c19.link/scheduling.phone.description.AL",
