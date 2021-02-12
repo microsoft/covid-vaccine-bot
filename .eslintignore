@@ -8,3 +8,4 @@ public/
 .yarn/
 .pnp.js
 bot_backups/*
+.cache/

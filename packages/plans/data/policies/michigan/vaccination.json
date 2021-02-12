@@ -3,6 +3,10 @@
 		"info": {
 			"text": "CDC/Michigan/state_link",
 			"url": "https://www.michigan.gov/coronavirus/0,9753,7-406-98178_103214---,00.html"
+		},
+		"eligibility": {
+			"url": "https://www.michigan.gov/documents/coronavirus/MI_COVID-19_Vaccination_Prioritization_Guidance_710349_7.pdf",
+			"content": "pdf"
 		}
 	},
 	"activePhase": "1b",

@@ -3,6 +3,10 @@
 		"info": {
 			"text": "CDC/Tennessee/state_link",
 			"url": "https://www.tn.gov/health/cedep/ncov/covid-19-vaccine-information.html"
+		},
+		"eligibility": {
+			"url": "https://www.tn.gov/content/tn/health/cedep/ncov/covid-19-vaccine-information/getting-a-covid-19-vaccine-information.html",
+			"content": "pdf"
 		}
 	},
 	"activePhase": "1b",

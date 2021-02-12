@@ -3,6 +3,9 @@
 		"info": {
 			"text": "CDC/Idaho/state_link",
 			"url": "https://coronavirus.idaho.gov/covid-19-vaccine/"
+		},
+		"eligibility": {
+			"url": "https://healthandwelfare.idaho.gov/covid-19-vaccination"
 		}
 	},
 	"activePhase": "1a",

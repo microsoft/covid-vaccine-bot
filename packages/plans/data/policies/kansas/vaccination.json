@@ -3,6 +3,9 @@
 		"info": {
 			"text": "CDC/Kansas/state_link",
 			"url": "https://www.kansasvaccine.gov/"
+		},
+		"eligibility": {
+			"url": "https://www.kansasvaccine.gov/Faq.aspx?QID=114"
 		}
 	},
 	"activePhase": "1a",

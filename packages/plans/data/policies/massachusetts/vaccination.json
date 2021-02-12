@@ -4,6 +4,9 @@
 			"text": "CDC/Massachusetts/state_link",
 			"url": "https://www.mass.gov/info-details/massachusetts-covid-19-vaccine-information"
 		},
+		"eligibility": {
+			"url": "https://www.mass.gov/info-details/massachusetts-covid-19-vaccination-phases"
+		},
 		"workflow": {
 			"text": "c19.links/vax_quiz",
 			"url": "https://www.mass.gov/covid-19-vaccine"

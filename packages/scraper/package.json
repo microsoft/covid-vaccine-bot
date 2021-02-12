@@ -16,7 +16,7 @@
 	},
 	"dependencies": {
 		"chalk": "^4.1.0",
-		"node-fetch": "^2.6.1",
+		"puppeteer": "^7.0.4",
 		"ssri": "^8.0.1"
 	},
 	"devDependencies": {
@@ -24,7 +24,6 @@
 		"@ms-covidbot/state-plan-schema": "workspace:packages/schema",
 		"@ms-covidbot/state-plans": "workspace:packages/plans",
 		"@types/node": "^14.14.25",
-		"@types/node-fetch": "^2",
 		"@types/ssri": "^7.1.0",
 		"ts-node": "^9.1.1"
 	}

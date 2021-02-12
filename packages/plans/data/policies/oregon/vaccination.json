@@ -3,6 +3,12 @@
 		"info": {
 			"text": "CDC/Oregon/state_link",
 			"url": "https://covidvaccine.oregon.gov/"
+		},
+		"eligibility": {
+			"url": "https://covidvaccine.oregon.gov/#prioritization"
+		},
+		"workflow": {
+			"url": "https://getvaccinated.oregon.gov/#/"
 		}
 	},
 	"activePhase": "1a",

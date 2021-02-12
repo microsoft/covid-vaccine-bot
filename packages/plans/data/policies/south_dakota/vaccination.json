@@ -3,6 +3,13 @@
 		"info": {
 			"text": "CDC/South_Dakota/state_link",
 			"url": "https://doh.sd.gov/COVID/Vaccine/default.aspx"
+		},
+		"workflow": {
+			"url": "https://covid.sd.gov/vaccine/default.aspx"
+		},
+		"eligibility": {
+			"url": "https://doh.sd.gov/documents/COVID19/Vaccine/COVIDVaccineAvailability_Distribution.pdf",
+			"content": "pdf"
 		}
 	},
 	"activePhase": "1a",

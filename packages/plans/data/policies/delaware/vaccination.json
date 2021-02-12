@@ -2,6 +2,9 @@
 	"links": {
 		"info": {
 			"text": "CDC/Delaware/state_link",
+			"url": "https://coronavirus.delaware.gov/vaccine/vaccine-information-for-the-general-public/"
+		},
+		"eligibility": {
 			"url": "https://coronavirus.delaware.gov/vaccine/"
 		}
 	},

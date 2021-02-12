@@ -14,8 +14,22 @@ async function aggregateInfoSites(): Promise<void> {
 	files.forEach((file) => {
 		// eslint-disable-next-line @typescript-eslint/no-var-requires
 		const data: VaccinationPlan = require(file)
-		if (data.links?.info != null) {
-			links.push(data.links.info)
+
+		// Eligibility plan > info site
+		if (data.links?.eligibility != null) {
+			if (data.links.eligibility.scrape !== false) {
+				links.push(data.links.eligibility)
+			}
+		} else if (data.links?.info != null) {
+			if (data.links.info.scrape !== false) {
+				links.push(data.links.info)
+			}
+		}
+
+		if (data.links?.eligibility_plan != null) {
+			if (data.links.eligibility_plan.scrape !== false) {
+				links.push(data.links.eligibility_plan)
+			}
 		}
 	})
 

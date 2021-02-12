@@ -3,6 +3,13 @@
 		"info": {
 			"text": "CDC/New_York/state_link",
 			"url": "https://covid19vaccine.health.ny.gov/"
+		},
+		"workflow": {
+			"text": "c19.links/workflow.NY",
+			"url": "https://am-i-eligible.covid19vaccine.health.ny.gov/"
+		},
+		"eligibility": {
+			"url": "https://covid19vaccine.health.ny.gov/phased-distribution-vaccine"
 		}
 	},
 	"activePhase": "1b",

@@ -2,7 +2,8 @@
 	"links": {
 		"info": {
 			"text": "CDC/California/state_link",
-			"url": "https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/COVID-19/COVID-19Vaccine.aspx"
+			"url": "https://covid19.ca.gov/vaccines/#When-can-I-get-vaccinated",
+			"scrapeQuery": ["main"]
 		}
 	},
 	"activePhase": "1a",

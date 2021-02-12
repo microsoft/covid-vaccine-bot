@@ -2,7 +2,9 @@
 	"extends": "../../tsconfig",
 	"compilerOptions": {
 		"outDir": "dist/",
-		"declaration": true
+		"declaration": true,
+		"lib": ["ESNext", "DOM"],
+		"skipLibCheck": true
 	},
 	"include": ["src"]
 }
