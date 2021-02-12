@@ -3,6 +3,10 @@
 		"info": {
 			"text": "CDC/Kentucky/state_link",
 			"url": "https://govstatus.egov.com/ky-covid-vaccine"
+		},
+		"eligibility": {
+			"url": "https://chfs.ky.gov/agencies/dph/covid19/Phasesgraphic1-4.pdf",
+			"content": "pdf"
 		}
 	},
 	"activePhase": "1a",

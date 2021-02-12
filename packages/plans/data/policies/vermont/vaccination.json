@@ -3,6 +3,15 @@
 		"info": {
 			"text": "CDC/Vermont/state_link",
 			"url": "https://www.healthvermont.gov/covid-19/vaccine"
+		},
+		"providers": {
+			"url": "https://www.healthvermont.gov/covid-19/vaccine/getting-covid-19-vaccine"
+		},
+		"workflow": {
+			"url": "https://vermont.force.com/events/s/selfregistration"
+		},
+		"eligibility": {
+			"url": "https://www.healthvermont.gov/covid-19/vaccine/about-covid-19-vaccines-vermont"
 		}
 	},
 	"activePhase": "1a",

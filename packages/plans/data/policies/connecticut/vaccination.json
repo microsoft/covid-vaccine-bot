@@ -3,6 +3,9 @@
 		"info": {
 			"text": "CDC/Connecticut/state_link",
 			"url": "https://portal.ct.gov/Coronavirus/covid-19%20vaccinations"
+		},
+		"eligibility": {
+			"url": "https://portal.ct.gov/Coronavirus/COVID-19-Vaccination---Phases"
 		}
 	},
 	"activePhase": "1a",

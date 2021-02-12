@@ -4,7 +4,7 @@
 			"text": "CDC/Alabama/state_link",
 			"url": "https://www.alabamapublichealth.gov/covid19/vaccine.html"
 		},
-		"plan": {
+		"eligibility_plan": {
 			"url": "https://www.alabamapublichealth.gov/covid19vaccine/assets/adph-covid19-vaccination-allocation-plan.pdf",
 			"pdf": true
 		},

@@ -3,6 +3,9 @@
 		"info": {
 			"text": "CDC/New_Jersey/state_link",
 			"url": "https://www.nj.gov/health/cd/topics/covid2019_vaccination.shtml"
+		},
+		"eligibility": {
+			"url": "https://covid19.nj.gov/faqs/nj-information/slowing-the-spread/who-is-eligible-for-vaccination-in-new-jersey-who-is-included-in-the-vaccination-phases"
 		}
 	},
 	"activePhase": "1b",

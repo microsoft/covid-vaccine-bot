@@ -80,9 +80,14 @@ export interface VaccinationPlan {
 		providers?: Link
 
 		/**
+		 * Documentation describing eligibility criteria about the current phase. If not present, defaults to info link
+		 */
+		eligibility?: Link
+
+		/**
 		 * Documentation describing the rollout phases in detail - may be more technical, or provide additional content than the info link
 		 */
-		plan?: Link
+		eligibility_plan?: Link
 	}
 
 	activePhase?: string
@@ -99,7 +104,7 @@ export interface Link {
 	 * When false, scraping is disabled for this link.
 	 * When a string, the URL is overridden by this URL
 	 */
-	scrape?: boolean | string
+	scrape?: boolean
 
 	/**
 	 * A content-type hint for binary formats

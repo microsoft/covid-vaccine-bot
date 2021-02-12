@@ -3,6 +3,9 @@
 		"info": {
 			"text": "CDC/Nebraska/state_link",
 			"url": "http://dhhs.ne.gov/Pages/COVID-19-Vaccine-Information.aspx"
+		},
+		"workflow": {
+			"url": "https://vaccinate.ne.gov/"
 		}
 	},
 	"activePhase": "1a",

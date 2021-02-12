@@ -3,6 +3,9 @@
 		"info": {
 			"text": "CDC/Maine/state_link",
 			"url": "https://www.maine.gov/covid19/vaccines"
+		},
+		"eligibility": {
+			"url": "https://www.maine.gov/covid19/vaccines/public-faq"
 		}
 	},
 	"activePhase": "1a",

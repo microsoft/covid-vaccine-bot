@@ -3,6 +3,9 @@
 		"info": {
 			"text": "CDC/Illinois/state_link",
 			"url": "https://www.dph.illinois.gov/covid19/vaccine-faq"
+		},
+		"eligibility": {
+			"url": "https://www.dph.illinois.gov/covid19/vaccine-distribution"
 		}
 	},
 	"activePhase": "1a",

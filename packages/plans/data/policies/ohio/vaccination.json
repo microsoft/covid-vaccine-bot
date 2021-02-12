@@ -3,6 +3,13 @@
 		"info": {
 			"text": "CDC/Ohio/state_link",
 			"url": "https://coronavirus.ohio.gov/wps/portal/gov/covid-19/covid-19-vaccination-program"
+		},
+		"locator": {
+			"url": "https://vaccine.coronavirus.ohio.gov/"
+		},
+		"eligibility": {
+			"url": "https://coronavirus.ohio.gov/static/vaccine/general_fact_sheet.pdf",
+			"content": "pdf"
 		}
 	},
 	"activePhase": "1a",

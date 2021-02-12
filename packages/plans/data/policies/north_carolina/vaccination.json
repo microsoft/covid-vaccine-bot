@@ -3,6 +3,12 @@
 		"info": {
 			"text": "CDC/North_Carolina/state_link",
 			"url": "https://covid19.ncdhhs.gov/vaccines"
+		},
+		"workflow": {
+			"url": "https://findmygroup.nc.gov/"
+		},
+		"eligibility": {
+			"url": "https://covid19.ncdhhs.gov/vaccines/find-your-spot-take-your-shot"
 		}
 	},
 	"activePhase": "1a",

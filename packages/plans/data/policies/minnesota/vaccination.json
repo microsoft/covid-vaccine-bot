@@ -3,6 +3,9 @@
 		"info": {
 			"text": "CDC/Minnesota/state_link",
 			"url": "https://www.health.state.mn.us/diseases/coronavirus/vaccine.html"
+		},
+		"eligibility": {
+			"url": "https://mn.gov/covid19/vaccine/whos-getting-vaccinated/index.jsp"
 		}
 	},
 	"activePhase": "1a",

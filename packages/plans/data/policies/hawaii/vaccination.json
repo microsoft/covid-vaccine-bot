@@ -3,6 +3,9 @@
 		"info": {
 			"text": "CDC/Hawaii/state_link",
 			"url": "https://hawaiicovid19.com/vaccine/"
+		},
+		"eligibility": {
+			"url": "https://hawaiicovid19.com/vaccination-registration/"
 		}
 	},
 	"activePhase": "1a",
