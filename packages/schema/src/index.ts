@@ -96,7 +96,7 @@ export interface VaccinationPlan {
 
 export interface Link {
 	url: string
-	text: string
+	text?: string
 	description?: string
 
 	/**

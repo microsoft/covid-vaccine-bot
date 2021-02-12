@@ -134,12 +134,13 @@ function checkStringIds(
 
 	const links = vaccinationPlan.links as Record<string, Link>
 	if (vaccinationPlan.links) {
-		Object.keys(links).forEach((link) => {
-			if (links[link].text != null) {
-				checkString(links[link].text!)
+		Object.keys(links).forEach((linkKey) => {
+			const link = links[linkKey]
+			if (link.text != null) {
+				checkString(link.text)
 			}
-			if (links[link].description) {
-				checkString(links[link].description as string)
+			if (link.description != null) {
+				checkString(link.description as string)
 			}
 		})
 	}
