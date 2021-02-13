@@ -6,7 +6,6 @@ import { getAppStore } from '../store/store'
 import { processCSVData, convertCSVDataToObj } from '../utils/dataUtils'
 import { b64_to_utf8, utf8_to_b64 } from '../utils/textUtils'
 
-console.log('proc', process.env)
 const github = {
 	REPO_OWNER: process.env.REACT_APP_REPO_OWNER,
 	REPO_NAME: process.env.REACT_APP_REPO_NAME,
@@ -222,6 +221,7 @@ export const repoServices = async (
 			)
 
 			const newBranch = await response.json()
+			console.log('newbranch', newBranch)
 
 			const fileResp = await fetch(
 				`https://api.github.com/repos/${github.REPO_OWNER}/${github.REPO_NAME}/contents/packages/plans/data/policies/${extraData.path}`,
@@ -238,6 +238,7 @@ export const repoServices = async (
 					}),
 				}
 			)
+			console.log('fileresp', fileResp)
 
 			const prResp = await fetch(
 				`https://api.github.com/repos/${github.REPO_OWNER}/${github.REPO_NAME}/pulls`,
