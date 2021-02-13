@@ -4,6 +4,18 @@
 	"private": true,
 	"dependencies": {
 		"@fluentui/react": "^7.158.0",
+		"@uifabric/react-hooks": "^7.13.11",
+		"firebase": "^8.2.5",
+		"mobx": "^5.15.7",
+		"mobx-react-lite": "^2.2.2",
+		"office-ui-fabric-react": "^7.160.1",
+		"react": "^17.0.1",
+		"react-dom": "^17.0.1",
+		"react-router-dom": "^5.2.0",
+		"satcheljs": "^4.2.3",
+		"web-vitals": "^0.2.4"
+	},
+	"devDependencies": {
 		"@testing-library/jest-dom": "^5.11.4",
 		"@testing-library/react": "^11.1.0",
 		"@testing-library/user-event": "^12.1.10",
@@ -11,19 +23,11 @@
 		"@types/node": "^12.0.0",
 		"@types/react": "^16.9.53",
 		"@types/react-dom": "^17.0.0",
-		"@uifabric/react-hooks": "^7.13.11",
-		"firebase": "^8.2.5",
-		"mobx": "^5.15.7",
-		"mobx-react-lite": "^2.2.2",
-		"node-sass": "4.14.1",
-		"office-ui-fabric-react": "^7.160.1",
-		"react": "^17.0.1",
-		"react-dom": "^17.0.1",
-		"react-router-dom": "^5.2.0",
+		"@types/react-router-dom": "^5.1.7",
+		"eslint-config-react-app": "^6.0.0",
+		"react-refresh": "^0.9.0",
 		"react-scripts": "4.0.1",
-		"satcheljs": "^4.2.3",
-		"typescript": "^4.0.3",
-		"web-vitals": "^0.2.4"
+		"typescript": "^4.0.3"
 	},
 	"scripts": {
 		"start": "react-scripts start",
@@ -48,10 +52,5 @@
 			"last 1 firefox version",
 			"last 1 safari version"
 		]
-	},
-	"devDependencies": {
-		"@types/react-router-dom": "^5.1.7",
-		"eslint-config-react-app": "^6.0.0",
-		"react-refresh": "^0.9.0"
 	}
 }
