@@ -8050,6 +8050,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"chokidar@npm:>=2.0.0 <4.0.0, chokidar@npm:^3.3.0, chokidar@npm:^3.3.1, chokidar@npm:^3.4.1, chokidar@npm:^3.4.2":
+  version: 3.5.1
+  resolution: "chokidar@npm:3.5.1"
+  dependencies:
+    anymatch: ~3.1.1
+    braces: ~3.0.2
+    fsevents: ~2.3.1
+    glob-parent: ~5.1.0
+    is-binary-path: ~2.1.0
+    is-glob: ~4.0.1
+    normalize-path: ~3.0.0
+    readdirp: ~3.5.0
+  dependenciesMeta:
+    fsevents:
+      optional: true
+  checksum: 61b3f710f9e7dc69d76f638d8b0d37bad586497444165125ca8062f7192695f35403b5f622cbd7dfdd06805201ceaba40ff90e53ea2974df9a8087861192a99b
+  languageName: node
+  linkType: hard
+
 "chokidar@npm:^2.0.0, chokidar@npm:^2.1.8":
   version: 2.1.8
   resolution: "chokidar@npm:2.1.8"
@@ -8070,25 +8089,6 @@ __metadata:
     fsevents:
       optional: true
   checksum: 0758dcc7c6c7ace5924cf3c68088210932d391ab41026376b0adb8e07013ac87232e029f13468dfc9ca4dd59adae62a2b7eaedebb6c4e4f0ba92cbf3ac9e3721
-  languageName: node
-  linkType: hard
-
-"chokidar@npm:^3.3.0, chokidar@npm:^3.3.1, chokidar@npm:^3.4.1, chokidar@npm:^3.4.2":
-  version: 3.5.1
-  resolution: "chokidar@npm:3.5.1"
-  dependencies:
-    anymatch: ~3.1.1
-    braces: ~3.0.2
-    fsevents: ~2.3.1
-    glob-parent: ~5.1.0
-    is-binary-path: ~2.1.0
-    is-glob: ~4.0.1
-    normalize-path: ~3.0.0
-    readdirp: ~3.5.0
-  dependenciesMeta:
-    fsevents:
-      optional: true
-  checksum: 61b3f710f9e7dc69d76f638d8b0d37bad586497444165125ca8062f7192695f35403b5f622cbd7dfdd06805201ceaba40ff90e53ea2974df9a8087861192a99b
   languageName: node
   linkType: hard
 
@@ -8858,6 +8858,7 @@ __metadata:
     office-ui-fabric-react: ^7.160.1
     react: ^17.0.1
     react-dom: ^17.0.1
+    react-refresh: ^0.9.0
     react-router-dom: ^5.2.0
     react-scripts: 4.0.1
     satcheljs: ^4.2.3
@@ -16902,7 +16903,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"node-sass@npm:4.14.1, node-sass@npm:^4":
+"node-sass@npm:4.14.1":
   version: 4.14.1
   resolution: "node-sass@npm:4.14.1"
   dependencies:
@@ -19856,6 +19857,13 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
+"react-refresh@npm:^0.9.0":
+  version: 0.9.0
+  resolution: "react-refresh@npm:0.9.0"
+  checksum: 300dc431389f4c532bdfec08d5bc59b591c8c440486a7d5770c8954adf3afe62501b659c5acbdb7831751e8be506eb90a6f72491fab40352f3b3fba16897acf6
+  languageName: node
+  linkType: hard
+
 "react-router-dom@npm:^5.2.0":
   version: 5.2.0
   resolution: "react-router-dom@npm:5.2.0"
@@ -21151,6 +21159,17 @@ resolve@1.18.1:
     sass:
       optional: true
   checksum: 725245f0259453fcc51c4a1012c484dda1340ebb10b9c461e2b3b4408105f5426ad5613282ad0861c1f32744533d8a584450b11daf42aa1237b04287f01223d4
+  languageName: node
+  linkType: hard
+
+"sass@npm:^1.32.7":
+  version: 1.32.7
+  resolution: "sass@npm:1.32.7"
+  dependencies:
+    chokidar: ">=2.0.0 <4.0.0"
+  bin:
+    sass: sass.js
+  checksum: 92c785120b1e9c4a6e7591ca323876bb40dbade8ebfafac0c353ea665bb3c421585788bc6233e9efe649a20c3a607b84ee95f81f7cadfadf3a8cc005ec9c9653
   languageName: node
   linkType: hard
 
