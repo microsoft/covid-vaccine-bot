@@ -2,7 +2,8 @@
 	"links": {
 		"info": {
 			"text": "CDC/Virginia/state_link",
-			"url": "https://www.vdh.virginia.gov/covid-19-vaccine/"
+			"url": "https://www.vdh.virginia.gov/covid-19-vaccine/",
+			"scrapeQuery": ["main"]
 		}
 	},
 	"activePhase": "1a",

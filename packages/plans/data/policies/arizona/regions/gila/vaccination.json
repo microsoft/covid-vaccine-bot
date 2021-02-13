@@ -2,7 +2,8 @@
 	"links": {
 		"info": {
 			"text": "c19.links/info.AZ.Gila",
-			"url": "https://www.gilacountyaz.gov/government/health_and_emergency_services/health_services/vaccination_information.php"
+			"url": "https://www.gilacountyaz.gov/government/health_and_emergency_services/health_services/vaccination_information.php",
+			"scrapeQuery": ["main"]
 		}
 	}
 }

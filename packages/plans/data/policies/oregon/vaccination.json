@@ -5,7 +5,8 @@
 			"url": "https://covidvaccine.oregon.gov/"
 		},
 		"eligibility": {
-			"url": "https://covidvaccine.oregon.gov/#prioritization"
+			"url": "https://covidvaccine.oregon.gov/#prioritization",
+			"scrapeQuery": [".text-white.bg-primary.p-5.mt-5.rounded-sm.shadow-lg"]
 		},
 		"workflow": {
 			"url": "https://getvaccinated.oregon.gov/#/"

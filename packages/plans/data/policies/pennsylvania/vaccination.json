@@ -3,7 +3,7 @@
 		"info": {
 			"text": "CDC/Pennsylvania/state_link",
 			"url": "https://www.health.pa.gov/topics/disease/coronavirus/Pages/Vaccine.aspx",
-			"scrapeQuery": ["#page"]
+			"scrapeQuery": ["div[data-name='Page Field: Page Content']"]
 		}
 	},
 	"activePhase": "1a",

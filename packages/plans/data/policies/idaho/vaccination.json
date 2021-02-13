@@ -5,7 +5,8 @@
 			"url": "https://coronavirus.idaho.gov/covid-19-vaccine/"
 		},
 		"eligibility": {
-			"url": "https://healthandwelfare.idaho.gov/covid-19-vaccination"
+			"url": "https://healthandwelfare.idaho.gov/covid-19-vaccination",
+			"scrapeQuery": [".layout__row.layout--twocol-section__row"]
 		}
 	},
 	"activePhase": "1a",

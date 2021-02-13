@@ -2,154 +2,85 @@
 	"integrity": {
 		"https://www.americansamoa.gov/": "sha512-y/T1iMEvKyByMuKmQfMV87H+dVVyO6Okk7PgRzSua1NH3RuyBD7LIcAg5CLIek2/NJzL144KWBr7KLuK5QDZPg==",
 		"https://greenlee.az.gov/departments/health-county-services/": "sha512-hOuUdWCDY6sMX+0+Pnm/BCiDNYCpvRSY4WgjNtD6EkXk2MIhzlahm1wH++dElrU7ac/lli8KSJWf2E+dag6gbQ==",
-		"http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/VaccineAvailability.aspx": "sha512-yQUxXRd6c1S25Oputh61/QUQ3oEwKDd5NyPgFN2eX+VhZuVsnoYJCCBevUFoce4AFTtJbSHXWvMRIJB38do8oA==",
 		"https://www.alabamapublichealth.gov/covid19/vaccine.html": "sha512-O/cq0HvKf3Tsikac4mhHmY5M7Se7UsdbsdwQFX/0tEhLGul9a2yVrWAU+2+ZStVXSTjsj3ShjXI+TpFpKPHwvg==",
 		"https://311info.net/covid-19/": "sha512-1D4MUAtjBdE5jIIB96jS35WhburlNusJPGpu43zB5Xu08CdssGjvppnIgkzUhwkCMUc4e2yOs0Y/WTDTYfbPfQ==",
-		"https://www.gilacountyaz.gov/government/health_and_emergency_services/health_services/vaccination_information.php": "sha512-BJ43BqeTCMYZj6DRru+lRTcL4nHCVhtxiaq7XOTVXIytitAg38ePZqVi/cehPrqtN/wMEGoqFiyDGPq2nFKwdQ==",
-		"https://www.lpchd.com/": "sha512-Na/kFZy4KK0TmqpJbZ2GQe6dBKO9I9yowo+7ZdqQubzbSDCizfKKtMHVWcQT1FalWbAQZo/YQbVx9VJe0KLVPw==",
-		"https://www.maricopa.gov/5641/COVID-19-Vaccine": "sha512-qm4XdtxcQRqc12J2ydRFHjNro6m5CujfUYx1ObLaFSA+YGaexjBC3A8bJvtc7xscGs/SOuC9rnVVVSI50EvJ0g==",
 		"https://covid-19-vaccine-mohave.hub.arcgis.com/": "sha512-Lm00C1pKtBEXQP4eWeH7g9XaHj/cA/0BCNnkQqC3wH9wGf6FGuPxDwmFUtSdaQVMz+x3ZPWHOEOMWmNrXoah2Q==",
-		"https://www.coconino.az.gov/covid19vaccine": "sha512-0bFFlGxe+KBvKU0SsoV6wH3dM8wINyt2fAV9wTK0LtKjPQyrUbs1KPW3NjIGaIvzAZNZNZZaRzACNviJVCx33Q==",
+		"https://www.gilacountyaz.gov/government/health_and_emergency_services/health_services/vaccination_information.php": "sha512-iE4CBv+zyjGj8uM6SLE0ATZqhFSqZGyvuDnqqDQJcDizMrKXlre2HSgKSgDKWV0/noNx7A3oZkTbO1UJjjp5DQ==",
+		"https://www.maricopa.gov/5641/COVID-19-Vaccine": "sha512-qm4XdtxcQRqc12J2ydRFHjNro6m5CujfUYx1ObLaFSA+YGaexjBC3A8bJvtc7xscGs/SOuC9rnVVVSI50EvJ0g==",
+		"https://www.coconino.az.gov/covid19vaccine": "sha512-h7lCI32loEJiKPMK/caOENOoynOFVCYaL6m864rFux3apT/f7A3hZmYhEwIo/qfYZfCOIrc826k5z7up2+4NNA==",
+		"http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/VaccineAvailability.aspx": "sha512-yQUxXRd6c1S25Oputh61/QUQ3oEwKDd5NyPgFN2eX+VhZuVsnoYJCCBevUFoce4AFTtJbSHXWvMRIJB38do8oA==",
 		"https://covid19.ca.gov/vaccines/#When-can-I-get-vaccinated": "sha512-QweFxLVQCVNLYRkRknHyKvexwdoS66eeVB8jzGROzygVl0FA7f9CDAc8ZT3qnDKyxrBMUtUh2gaIe4mi6mSKyQ==",
-		"https://www.yumacountyaz.gov/government/health-district/divisions/emergency-preparedness-program/coronavirus-2019-covid-19-yuma-county-updates/covid-19-vaccine-information/who-can-get-vaccinated-and-when": "sha512-nVZa7XlSmaFpf+qrRtBbXlgQw0rfkdSoSYtfWqYlivbqcfieewCwrFoOQfz9voJ0sG1QsrrKxzAyzztyCDpeig==",
-		"https://www.yavapai.us/chs/Home/COVID-19/Vaccine": "sha512-gfDARPGJCZVDWSHaB9IicQ/iQf1Yj1ZstD2QYXNyceN9riffOzwEPO6fp/5JBZCAvDLPfBMgtcHobfiKm13J9Q==",
-		"https://covid19.colorado.gov/for-coloradans/vaccine/vaccine-for-coloradans": "sha512-Xn6WM47Ubn5v7+c+3TGZ8j5Kefhe0TyLKjplStH7RvHfuTgYbJmLT73epjVvempoOo3Yum9KOhG1anusN3l1NA==",
-		"https://www.fsmgov.org/index.html": "sha512-yxnn5JZPgLFFAUUtGXvNBo3K+vpg5p2QP1Urh0zbBSDlEwWIFez/Bbe4Ejyv2d5Cw3iyRuq/+XrdWvVYVXohSQ==",
-		"https://coronavirus.delaware.gov/vaccine/": "sha512-eBPs+9FiudRHa0s/iiSlgiChcMxuhfT6Cueka4Sew/bzcgXQkGLGr6GmzNCPqcRKu6H/GDyvvxlS0JZKT+6nMA==",
+		"https://www.yumacountyaz.gov/government/health-district/divisions/emergency-preparedness-program/coronavirus-2019-covid-19-yuma-county-updates/covid-19-vaccine-information/who-can-get-vaccinated-and-when": "sha512-+p14jqHIEBmT/9R5Xv5UiQz5zG9QYvM4JQDfMxba/MVteD+6chYVk4s+UTyMufWrz4pIBGNMOok9/APcfo9GiA==",
 		"https://www.healthy.arkansas.gov/programs-services/topics/covid-19-vaccination-plan": "sha512-meeckEtUcknIwbPVL9BXiOHvuzOTmD3AF769PzCZIFrVr+BZnHMLV/JRQNbJ2Nz3cxBociYQHZMBY7Npqo0sYA==",
+		"https://covid19.colorado.gov/for-coloradans/vaccine/vaccine-for-coloradans": "sha512-6eGhhsCoHxom8iu+zhS2zYxvs80JlZytKUKo11kuz64zVWwrNJPug1q6n7P49AdAK8hO+jG4ko0jxbG7aucgDw==",
+		"https://www.fsmgov.org/index.html": "sha512-yxnn5JZPgLFFAUUtGXvNBo3K+vpg5p2QP1Urh0zbBSDlEwWIFez/Bbe4Ejyv2d5Cw3iyRuq/+XrdWvVYVXohSQ==",
 		"https://portal.ct.gov/Coronavirus/COVID-19-Vaccination---Phases": "sha512-SP/SjGlIm1bHVRdhpvbBf+NpM1rf+cyOAypa+TXVRFIGMKN2CiH5oy2V9fEorQn31CG2Jam+TFa3VlcbSecsow==",
-		"https://coronavirus.dc.gov/vaccine": "sha512-VFD1//Hfk+VY6awwjio0EWP8NfKSiKQt9a3O4QmzimnSAw0OOtA271Sv54bj070YhcxqEqH0WusFwWLTvb9FZQ==",
-		"https://www.santacruzcountyaz.gov/732/COVID-19-Novel-Coronavirus": "sha512-5dzNDx1GZUpHuAJe6RsDUp01PYDGeRccYGTQuXUELio+0NX0beGu2pkjLTPa9wOzmAmrhRDJhs7Ex9GG1RahVA==",
+		"https://www.yavapai.us/chs/Home/COVID-19/Vaccine": "sha512-9KQaGrMsg3Gfrgt3KeMV3sGRS2/ofAbrMqDnsOnxrQvTmZ6ziW1DgjmGkhFSBkNnndaSOEToE53On0vfFE9NSw==",
+		"https://coronavirus.delaware.gov/vaccine/": "sha512-eBPs+9FiudRHa0s/iiSlgiChcMxuhfT6Cueka4Sew/bzcgXQkGLGr6GmzNCPqcRKu6H/GDyvvxlS0JZKT+6nMA==",
+		"https://www.santacruzcountyaz.gov/732/COVID-19-Novel-Coronavirus": "sha512-dXlkXGCjYmn/3/EBk1poaEESRddWT5byBRAs+V7+rueZov5QstC7lx4d9MRpSTc4dt4JQP/Rf+fisDiKlgJQ0Q==",
+		"https://healthandwelfare.idaho.gov/covid-19-vaccination": "sha512-WaDav7mjM4x/9Bgms2BeuHsg7dz6Kbifl7t8CMFLg2Niwh1HN3fDWWtE4keImzEEGgYiXM7kO0iZw6P3iPVLCw==",
 		"https://floridahealthcovid19.gov/covid-19-vaccines-in-florida/": "sha512-iHcrz0LlcwVvPLZ6YJTJL9x4CAeuJ+pjHytWa4OKmLjnsrYYZpC5xymOnm3gjoJnX9HyoKGd/rJDMRYNqk/PiA==",
-		"https://hawaiicovid19.com/vaccination-registration/": "sha512-Jq/4JYO2pe6uodn74FzAI7t+lxMKJkX1flKrytsf1S0hsyD/BxZkqg+KSJT6iViuJhAQOnde5xl4Zwm+xncBYw==",
-		"https://healthandwelfare.idaho.gov/covid-19-vaccination": "sha512-G6qe+RG/cj+I28c23zUTkHXjmhtEdLQdKJ9MigXdVgBYjY78XHI5q8N6QOzT8rv161/SLMKHMlosK4tIB1kbsw==",
-		"https://www.maine.gov/covid19/vaccines/public-faq": "sha512-RLpJAjp/Ldnz2prlJVOk3KV+k9kYgE7RAKF8V6MafjvN/mELUwYPBt+FxQmRDS09v8LwMTjB7HDq7I4Jz2zJ9w==",
-		"https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus/Vaccine/Information-for-the-Public": "sha512-twzrDPC0HFZd18Duqh9T79VQ+x+aVtjF3O4k+4dE9BTiCbPZs5xDnDP8+b2Mv4o5436bjzdVgJB0y7VSeKiL9w==",
+		"https://coronavirus.dc.gov/vaccine": "sha512-VFD1//Hfk+VY6awwjio0EWP8NfKSiKQt9a3O4QmzimnSAw0OOtA271Sv54bj070YhcxqEqH0WusFwWLTvb9FZQ==",
 		"https://www.dph.illinois.gov/covid19/vaccine-distribution": "sha512-NuOLkN/2tKzPbUz22KL6OxAruw+XmCM0zcun/xp/GTH5qdhka34H0gCbyytj7X3RpTP8uUDs86E7+PNRKs1w6g==",
-		"https://www.coronavirus.in.gov/vaccine/index.htm": "sha512-Ez+7NgNXyqA3X2YY2DUWZLU3K/aYgiz9oyJnIi0gRleIHaJFbwj2dHKJKG0vzF1+jk2CCYjZ1HL5hv7k1682Kw==",
+		"https://hawaiicovid19.com/vaccination-registration/": "sha512-Jq/4JYO2pe6uodn74FzAI7t+lxMKJkX1flKrytsf1S0hsyD/BxZkqg+KSJT6iViuJhAQOnde5xl4Zwm+xncBYw==",
+		"https://www.coronavirus.in.gov/vaccine/index.htm": "sha512-gH3byWGQS5TdWl5EIilF4reoNZeypS/FQddWpuZpK/1h0faS0O1gskw7stD52BBmrZFU2iExmKlxftUvDIXL6A==",
+		"https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus/Vaccine/Information-for-the-Public": "sha512-Q3VIgs8J1uasuPjTA1kFTU6VqXEJSDnHmHdF66m4C2HL3Ki6ZJe3V+DsldTT/BC7Yui8XT3Prt2AL3mob+tM4A==",
+		"https://www.maine.gov/covid19/vaccines/public-faq": "sha512-AS0BS2ODPzaGPAWsLMzOAOAFY0KYLKZ4g4MXLF1Ri4WX0UOb4vc5wP3T2VpVYaOaBgvvOgTkQFRiKhRSa9y3Ng==",
 		"https://www.mass.gov/info-details/massachusetts-covid-19-vaccination-phases": "sha512-oKj8ZBUIkwjkvTz0GznCmSGWLbrXlekCebEbzzvfeQj177StUBx3JKbzDgoiR2fW+o4aBiGsIO7Gj3MhxyVwcQ==",
-		"http://rmihealth.org/": "sha512-sFQaQOJ1dboNYHujpebazOf9uTJ01cNb8vif4JfiX3uqFQIDaYMGPZQArf1fCwbHUWOSHqas2uKv5GmTbXVcGQ==",
-		"https://www.getvaccinatedberkshires.org/": "sha512-AW9kKpGFYAwj7qDfnb/TXKyxP+f4dShnjxm44/qEc87fvnRco+W7qvuHGtldEv7YmQWy2bjBQdgVLDR6gMrUpg==",
-		"https://mn.gov/covid19/vaccine/whos-getting-vaccinated/index.jsp": "sha512-VJhaDp7CNLPsouEIJNH8ieGqF0nV005r0SUlVBkvT/IZ/FWO6AhuSg3YhPVhywonx+UK5oofwGx1Ck6uD/0LIQ==",
 		"https://covidlink.maryland.gov/content/vaccine/": "sha512-12+ekJe3E921QgB5r1v/KSVu5683o/PMkehgWnu8gVMZwFK94L18rPr9pEA8WFpIt4tCaGEQquzK68OimLjwqg==",
-		"https://msdh.ms.gov/msdhsite/_static/14,22816,420,976.html#eligible": "sha512-mFU8VSSFFa08L7wxuvj3GBFEwTUt+gaMJJZiqE7QNtfF9BqVrs3niFDswyP10w1CrfMl59XZgcjAXARx6g/aFw==",
-		"https://ldh.la.gov/covidvaccine/": "sha512-o3WCqDkF8Q9xusj4cxnXS/f0N7RsVvKfRB4EmTpBgRo+tJNyw08+8AC3sDzLeyDLfcSD/PSjf3ilKdJg6pzEeg==",
+		"https://dph.georgia.gov/covid-vaccine": "sha512-hUkcFICPbsm0n5L1ROs8I0flvVS39PYtqeFW/2QV8rx/9gDZ92oYwEIODzpJCh00DwR6QU05ZIIUgaHNzGxPYg==",
+		"https://www.getvaccinatedberkshires.org/": "sha512-3EtnW4M7s24ocp2yObWH0vqC10xrie5LRRIlhlAJNvOZXp6Km9YJBDHWsJ9/nWmsAxgaaDH5WAy6LOyn4IneKA==",
+		"https://msdh.ms.gov/msdhsite/_static/14,22816,420,976.html#eligible": "sha512-I2gf4DxULepZmIlkr3FXbcR4YJwyI1RucJTJ0u1DqGSPT0tMr2G1WIxfwOoqfhS09oYCVCw0vH2Asrkzh85/PQ==",
+		"https://mn.gov/covid19/vaccine/whos-getting-vaccinated/index.jsp": "sha512-VJhaDp7CNLPsouEIJNH8ieGqF0nV005r0SUlVBkvT/IZ/FWO6AhuSg3YhPVhywonx+UK5oofwGx1Ck6uD/0LIQ==",
 		"https://covidvaccine.mo.gov/residents/": "sha512-ve9HG9eD7ptsvkjtTSp4d4LtOy7O02vwa2h/dBik6R0Bz7TgOLUZZgGd+zJIZsOnZ1iuHXnV8KhtRX3ThkfeSw==",
-		"https://covidvaccine.mo.gov/residents/#availability": "sha512-/EY2brArDYjtf30tsZLejaHQAuF5srWpPo0e8aBicx8O12u0CMMWkVE0VKe/rYguK5B6iuQ0X7+we1w8bPICxQ==",
+		"http://rmihealth.org/": "sha512-sFQaQOJ1dboNYHujpebazOf9uTJ01cNb8vif4JfiX3uqFQIDaYMGPZQArf1fCwbHUWOSHqas2uKv5GmTbXVcGQ==",
+		"https://dphss.guam.gov/": "sha512-ZpLfc87vqUScCTfD7C+4tcRk+GDKMwqRWWY1nrn0J+qMiE8jkIg7Q3huVPS/R+XCbMvnfKRbsO5i5fKSuA8uQw==",
+		"https://covidvaccine.mo.gov/residents/#availability": "sha512-a6/nSmVf1HDptAVY6xNT/FSweuCSONIjCLWlVTi3jMOUDvBfnn8ZTh0ht6pOosoydeCidwH/Lq+P2FMp5n7znw==",
 		"https://dphhs.mt.gov/covid19vaccine": "sha512-TfDUTxwFKX/OcXlqQ53ZmaaCaDJ79iiwVKmg5IA2aSufvhqSSiNrHE0aujMEUasjwYrMdXzA6j6cTLRo8yzGkw==",
-		"https://dphss.guam.gov/": "sha512-KkyAFiP1u7wt/RHZeC+Wr55PaTyZFGAp3p2eZmQR7zr4wVxRKqcqx+JjAuyQGCwPvfFwLu1Cj0iEp5qY1V0HNA==",
+		"https://ldh.la.gov/covidvaccine/": "sha512-o3WCqDkF8Q9xusj4cxnXS/f0N7RsVvKfRB4EmTpBgRo+tJNyw08+8AC3sDzLeyDLfcSD/PSjf3ilKdJg6pzEeg==",
 		"https://cv.nmhealth.org/covid-vaccine/": "sha512-SG0YvVjPWoSTwhkRIGm/IO3WCLelqL+YrSaZDXOOopQXy7sq1H7OTIVQuOyUwzJlS4RSiRdjw5EDe2yj5beAtw==",
-		"https://dph.georgia.gov/covid-vaccine": "sha512-kvU7oNORnM72YqIf3wcpvF73qdwf+5eD3KzbNzPYfUOWo2sVnt+tTaSdJmvfneuOdtrGx8JdVC2yOIK227Z/CA==",
 		"https://www.nh.gov/covid19/resources-guidance/vaccination-planning.htm": "sha512-PY2YO2SEj66AuQzsdgqRQfyOpMut3dvzkFsnL2vA64my8BwepK+lD68uOHDtloiQ6Iufp5UirNFBooPsys+fzA==",
-		"https://covid19.nj.gov/faqs/nj-information/slowing-the-spread/who-is-eligible-for-vaccination-in-new-jersey-who-is-included-in-the-vaccination-phases": "sha512-Dtk1d2QDvjUg9x/WJKIm1RNqn6n+umCBL9FIURUKvQA2rpjAScdP4wqAltptmztQShgBLWMy4FtctUXuCI2VJQ==",
 		"https://covid19vaccine.health.ny.gov/phased-distribution-vaccine": "sha512-DlThrScYAIU+tNu+cEL+pVdUe/UT9A0j2ODtKGqVf4gqZYmIwl5PiZQwVZAB0Kf+v28nRVriZLwxoMIjiKNvCw==",
+		"https://covid19.nj.gov/faqs/nj-information/slowing-the-spread/who-is-eligible-for-vaccination-in-new-jersey-who-is-included-in-the-vaccination-phases": "sha512-Dtk1d2QDvjUg9x/WJKIm1RNqn6n+umCBL9FIURUKvQA2rpjAScdP4wqAltptmztQShgBLWMy4FtctUXuCI2VJQ==",
+		"https://covid19.ncdhhs.gov/vaccines/find-your-spot-take-your-shot": "sha512-lofJseuT8hvuEb2Ro6b+fmj581pOx+/8CWYvD0ybYk9EdAN9MneXLu+jhWtxPwmEkqaR5sl52UMfQ9sUCqbwlQ==",
+		"http://dhhs.ne.gov/Pages/COVID-19-Vaccine-Information.aspx": "sha512-dcD3RWV4sfe2pjrKPiYv77DHHJHidPBLI0YRY37+n267aA83pVl2iOz0PHs0CfqwGgHO3qKaRqQsMpSSodGFzQ==",
+		"https://www.health.nd.gov/immunization-guidance-public": "sha512-CYUXLag5UwI164SDu1DLFprTXdntIhjqEDnrSrANWAAOHtQiXn95hxGYfzKKXFxpV+BaWznDZZhz+g55oEh30A==",
 		"https://www.health.nd.gov/covid-19-vaccine-priority-groups": "sha512-CzyV4kZ9GJHZTVljs1X/GiXRr9ftgU3svOx29EmKwTFffkBX3ZOQvLr++NTFXLrNZe2sykX9FRg/k5PMEEMRnQ==",
-		"https://covid19.ncdhhs.gov/vaccines/find-your-spot-take-your-shot": "sha512-BEtbO4v146DWoJLrjobqbzD1CmZ+aLDiZdTFT++izP9zeKEIWvQXKj/QCcRGV7gfDmYrQpc+t/NaGMKpqTcKfA==",
-		"http://dhhs.ne.gov/Pages/COVID-19-Vaccine-Information.aspx": "sha512-0Vh19ddQDDluxMwWLRjKR5rQtLmqVHe/hvtiA3Wc4/scwN+Cyvr5j5m42YDC60CCyeeBgDHwOIKrOvyM4E2TYA==",
 		"https://www.vaccinatecnmi.com/": "sha512-ueHoQLRZX3DkRK42YmfwcvMxcyhwQA4EHQp/NaIUPxrZx4wleR3SGjr2frRs5txDqDEZtmTdxIb7mAo8bxsDBg==",
-		"https://www.health.nd.gov/immunization-guidance-public": "sha512-eQKfBCR9McosutNiHQ/RCmzpQDSWL2BnCpiQh+dAArObpxq+++6Ip+59l44Xhc0sUJW2nH1gnEud2WO3fNYVOg==",
+		"https://covid.ri.gov/vaccination": "sha512-0W7pAUOrZJccRI117LDFJ6LBtLlW7hshmiT1Vb5I8kGnJPUjDEqq4taEUvwxzli91v77kbSv1uF65GbVvlzt/w==",
 		"https://oklahoma.gov/covid19/vaccine-information.html": "sha512-SoQXmCDlcZs9AQ7rCQj36ZyyQZUJihFb7aSO7HdDgRM8KZnxOduUmdbg5Y7OwWcAYjkNRIT+CKK+HzdTMwhEIA==",
-		"https://covidvaccine.oregon.gov/#prioritization": "sha512-sY5lgTEw8BJX8ChL4rJ9DjanQ+dh4uezkT5NTOF36Oj439i2eUPx0xqiZIgiIwJt3BaLWfr5GimS9gcZo8ftaw==",
-		"https://covid.ri.gov/vaccination": "sha512-J1FWr0D1i0glf24ml89Sdylmkx0c+ZZFXzxTg8L0BXRh9/Thb9Tz7FBU4qT6drtpAdk4YVPgP4utreIssVB/xg==",
-		"https://scdhec.gov/covid19/covid-19-vaccine": "sha512-meAWQl0Z2kuIhjVWXU5H3dHjAuYqABH5OJze5T1W4kcs+SiMnmOwTUSB/jJl63AwjSI4grJM1fYBfF1yHctlyA==",
+		"https://covidvaccine.oregon.gov/#prioritization": "sha512-+shh27QujeP8gOQpJJBv58RxPqPOp1HDwBvxUzVsnyzPsFVFAMbNtyeOirYiTNrfrutNu/afMNbbGOLxcDUBbQ==",
 		"https://www.immunizenevada.org/county-specific-covid-19-vaccine-plan": "sha512-ppv/S5Mg45wrQWmIY+b+CXGOH0YBbgmnNIL5fzMHyqg/6Y9QVZiruYr4JwTMnfySYOL6EeAq5VpT0Nd4Nz81dA==",
 		"https://www.covid19usvi.com/": "sha512-XzqpZN0wb1xFz047RxHhbuD/ahGqagPgaIBbNp759RYL1ysnwmhqEjMribgCUJvM/IeeD9BVuR+JL7PQ5UVJqg==",
+		"https://scdhec.gov/covid19/covid-19-vaccine": "sha512-q30Fnb5mi/5qk4QbwYVe0zjuaAV6bcaqN7XhMMm4osVa8jS8Lnxcf2ESwnpNDBIIgrZipfmI7pjc8TDeQce+HA==",
 		"https://www.dshs.state.tx.us/coronavirus/immunize/vaccine.aspx": "sha512-ZCCWCx0iu4HofNqdkz93k+shNgvqP3Qqp44d1yCBsyY6O6Hcjx2Ee2P1y7t2VTDClqY4EAXvx1a2GMjXOdYzZg==",
-		"https://www.healthvermont.gov/covid-19/vaccine/about-covid-19-vaccines-vermont": "sha512-segyGYfzk3hBo0on5PqiKeIPLVV5g04M+F4yv+dM1Bb7/I3My93EBVAzBE5MoTwMqYN+JuSKin2Q597TaN20yw==",
+		"https://www.healthvermont.gov/covid-19/vaccine/about-covid-19-vaccines-vermont": "sha512-3lb8LKGwsQ+xgYGDhNHk2pBQQIgmlWCRllR6lk6mlpjn24R95UNRjKh1ZBRd6X2AUZCYAk/W0GJ1cirTqzJ0ig==",
 		"https://coronavirus.utah.gov/vaccine/": "sha512-p2ex6e/qCSgLcSqFyhtKpj3EIr5oMtaibKeAynOKD0wIoSmciqbezshr8KWlK/ClENSiK7I6aRnIkR95XBOV2Q==",
-		"https://kingcounty.gov/depts/health/covid-19/vaccine/distribution.aspx": "sha512-z/HnhRxA6tAPFGEdwv4aPk12BoCPwnzj/PmuDFWjMw+nlepfJlQXSEPB7HTAL+uCdR7lZsehWh5SxgTcvy2VHA==",
 		"https://kitsappublichealth.org/CommunityHealth/CoronaVirus_Vaccine.php": "sha512-p+xRuhRYQofOaAwH8Vd3HRm2ALtoER5+iL4pljiPEBNFtw/5iOJp2Txh7tqpXxNuBhAg3mlIKwCLYIipfw0Yaw==",
-		"https://www.health.pa.gov/topics/disease/coronavirus/Pages/Vaccine.aspx": "sha512-g9Ee3lFctKBDcR/4C6c3T9/2/GT6f1fFldY5OdO4ezPcqd3cCg88GOcMM8k0/PtaH7ayVEVgjgDia8gkrGN4AQ==",
+		"https://www.health.pa.gov/topics/disease/coronavirus/Pages/Vaccine.aspx": "sha512-hBuldUxuKjL3k3SiSjrxGCFx5jjv90z65cLqbS5UDHpnHahCyCrG/sB9SUk8iScrB0vMMKpdMPIoky8Qo7+ppA==",
+		"http://www.palauhealth.org/": "sha512-wadM/NPzYsGvoZYgWGonj/5oddZEUxi4jmIP3/hYglevVo+vnOvQDtbGpJXjrxCKkGK0lc6GBM2JCi5/Ae4MyA==",
 		"https://www.doh.wa.gov/Emergencies/COVID19/VaccineInformation/AllocationandPrioritization": "sha512-BV980wHItoRdzrbPZigi5MyrI3MC6ogZA+Sd/Fqb8FQ5f5EpFo4DXcxYfYqRoSuytv+/DXpT25McnKOStHquwA==",
 		"https://health.wyo.gov/publichealth/immunization/wyoming-covid-19-vaccine-information/": "sha512-yJCBU8xRmh4IGWpYZ66fggfyBmRiyLdu2wPt97TYO3wRCbypHcKK50D3wdJ6mrwqdBPmv9yaFav4deHGCj6dBg==",
-		"https://www.vdh.virginia.gov/covid-19-vaccine/": "sha512-Mfcz9qfA0Nylbe3SFzfvc8iqJpVsjVn2yRg/JVmTEAYlGwXODl+zfBqGlaSkLATR1hrt9mVMM98rLMX4HN93cQ==",
-		"http://www.palauhealth.org/": "sha512-wadM/NPzYsGvoZYgWGonj/5oddZEUxi4jmIP3/hYglevVo+vnOvQDtbGpJXjrxCKkGK0lc6GBM2JCi5/Ae4MyA==",
 		"https://www.dhs.wisconsin.gov/covid-19/vaccine-about.htm": "sha512-DXa7tpAbYaSGZFNUBsMpy/7vcKqbnaHoaBCfhNcO/w2/7whu8saaQkU0t66ine+Y2S0hmFyVN5x4pi5KR1spzA==",
+		"https://www.vdh.virginia.gov/covid-19-vaccine/": "sha512-bZHIiLyxx1lxKBL6cvhOWdYcQtBGtS5qcvCdCbFUNXKyJ7Hewla3iCqHlFh0o3DVUhaezHLky2vqXUXIz9wadw==",
+		"https://kingcounty.gov/depts/health/covid-19/vaccine/distribution.aspx": "sha512-z/HnhRxA6tAPFGEdwv4aPk12BoCPwnzj/PmuDFWjMw+nlepfJlQXSEPB7HTAL+uCdR7lZsehWh5SxgTcvy2VHA==",
 		"http://www.salud.gov.pr/Pages/coronavirus.aspx": "sha512-Z2/ERt51kIrIkVxREn6n+r8QYVTDKCFcgz7WWQViaf/2UL8cAGf469HFqlChZPbUZ/FNSxli8G2/cQfvhO1KcA=="
 	},
 	"changes": [
-		{
-			"url": "https://covid19.colorado.gov/for-coloradans/vaccine/vaccine-for-coloradans"
-		},
-		{
-			"text": "CDC/Arkansas/state_link",
-			"url": "https://www.healthy.arkansas.gov/programs-services/topics/covid-19-vaccination-plan"
-		},
-		{
-			"text": "c19.links/info.AZ.SantaCruz",
-			"url": "https://www.santacruzcountyaz.gov/732/COVID-19-Novel-Coronavirus"
-		},
-		{
-			"url": "https://healthandwelfare.idaho.gov/covid-19-vaccination"
-		},
-		{
-			"text": "CDC/Iowa/state_link",
-			"url": "https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus/Vaccine/Information-for-the-Public",
-			"scrapeQuery": [".body_bg"]
-		},
-		{
-			"text": "CDC/Indiana/state_link",
-			"url": "https://www.coronavirus.in.gov/vaccine/index.htm",
-			"scrapeQuery": ["#main"]
-		},
 		{
 			"text": "c19.links/info.MA.Berkshire",
 			"url": "https://www.getvaccinatedberkshires.org/"
 		},
 		{
-			"text": "CDC/Maryland/state_link",
-			"url": "https://covidlink.maryland.gov/content/vaccine/",
-			"scrapeQuery": ["#primary_content_Block"]
-		},
-		{
 			"url": "https://msdh.ms.gov/msdhsite/_static/14,22816,420,976.html#eligible"
 		},
 		{
-			"text": "CDC/Missouri/state_link",
-			"url": "https://covidvaccine.mo.gov/residents/",
+			"url": "https://covidvaccine.mo.gov/residents/#availability",
 			"scrapeQuery": ["#mainContent"]
 		},
 		{
-			"url": "https://covidvaccine.mo.gov/residents/#availability"
-		},
-		{
-			"text": "CDC/Georgia/state_link",
-			"url": "https://dph.georgia.gov/covid-vaccine",
-			"scrapeQuery": [".landing-page"]
-		},
-		{
-			"url": "https://covid19.ncdhhs.gov/vaccines/find-your-spot-take-your-shot"
-		},
-		{
-			"text": "CDC/Nebraska/state_link",
-			"url": "http://dhhs.ne.gov/Pages/COVID-19-Vaccine-Information.aspx",
-			"scrapeQuery": ["#s4-bodyContainer"]
-		},
-		{
-			"url": "https://covidvaccine.oregon.gov/#prioritization"
-		},
-		{
-			"url": "https://www.immunizenevada.org/county-specific-covid-19-vaccine-plan"
-		},
-		{
-			"url": "https://www.healthvermont.gov/covid-19/vaccine/about-covid-19-vaccines-vermont"
-		},
-		{
-			"text": "CDC/Pennsylvania/state_link",
-			"url": "https://www.health.pa.gov/topics/disease/coronavirus/Pages/Vaccine.aspx",
-			"scrapeQuery": ["#page"]
-		},
-		{
-			"url": "https://www.doh.wa.gov/Emergencies/COVID19/VaccineInformation/AllocationandPrioritization"
-		},
-		{
-			"text": "CDC/Wyoming/state_link",
-			"url": "https://health.wyo.gov/publichealth/immunization/wyoming-covid-19-vaccine-information/",
-			"scrapeQuery": ["#content-area"]
-		},
-		{
-			"text": "CDC/Virginia/state_link",
-			"url": "https://www.vdh.virginia.gov/covid-19-vaccine/"
+			"text": "CDC/Utah/state_link",
+			"url": "https://coronavirus.utah.gov/vaccine/"
 		}
 	],
 	"errors": ["no content at https://dhhr.wv.gov/COVID-19/Pages/Vaccine.aspx"]
