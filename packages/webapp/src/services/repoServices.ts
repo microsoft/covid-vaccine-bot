@@ -2,10 +2,15 @@
  * Copyright (c) Microsoft. All rights reserved.
  * Licensed under the MIT license. See LICENSE file in the project.
  */
-import github from '../configs/github.json'
 import { getAppStore } from '../store/store'
 import { processCSVData, convertCSVDataToObj } from '../utils/dataUtils'
 import { b64_to_utf8, utf8_to_b64 } from '../utils/textUtils'
+
+console.log('proc', process.env)
+const github = {
+	REPO_OWNER: process.env.REACT_APP_REPO_OWNER,
+	REPO_NAME: process.env.REACT_APP_REPO_NAME,
+}
 
 const createPath = (obj: any, pathInput: string, value: any = undefined) => {
 	let path = pathInput.split('/')
