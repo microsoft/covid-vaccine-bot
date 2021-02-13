@@ -1,0 +1,18 @@
+.loginPageContainer {
+	background-color: #0078d4;
+	height: 100vh;
+}
+
+.loginContainer {
+	width: 600px;
+	margin: auto;
+	position: relative;
+	top: 30%;
+
+	h3 {
+		color: white;
+		font-weight: 400;
+		font-size: 2em;
+		margin-bottom: 20px;
+	}
+}
