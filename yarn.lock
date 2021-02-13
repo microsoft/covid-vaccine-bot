@@ -8849,11 +8849,13 @@ __metadata:
     "@types/react": ^16.9.53
     "@types/react-dom": ^17.0.0
     "@types/react-router-dom": ^5.1.7
+    "@uifabric/react-hooks": ^7.13.11
     eslint-config-react-app: ^6.0.0
     firebase: ^8.2.5
     mobx: ^5.15.7
     mobx-react-lite: ^2.2.2
     node-sass: 4.14.1
+    office-ui-fabric-react: ^7.160.1
     react: ^17.0.1
     react-dom: ^17.0.1
     react-router-dom: ^5.2.0

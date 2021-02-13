@@ -1,6 +1,10 @@
-import * as React from 'react'
-import { observer } from 'mobx-react-lite'
+/*!
+ * Copyright (c) Microsoft. All rights reserved.
+ * Licensed under the MIT license. See LICENSE file in the project.
+ */
 import { DetailsList, DetailsListLayoutMode } from '@fluentui/react'
+import { observer } from 'mobx-react-lite'
+import * as React from 'react'
 import { toProperCase } from '../utils/textUtils'
 import LocationsPhases from './LocationsPhases'
 
@@ -68,7 +72,7 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 
 	React.useEffect(() => {
 		if (selectedState?.regions > 0) {
-			let tempList: any[] = []
+			const tempList: any[] = []
 			Object.entries(selectedState.value.regions).forEach(([key, value]) => {
 				const valObj = value as any
 				tempList.push({

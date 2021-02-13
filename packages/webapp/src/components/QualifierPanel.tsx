@@ -1,6 +1,10 @@
-import * as React from 'react'
-import { observer } from 'mobx-react-lite'
+/*!
+ * Copyright (c) Microsoft. All rights reserved.
+ * Licensed under the MIT license. See LICENSE file in the project.
+ */
 import { IGroup, DetailsList } from '@fluentui/react'
+import { observer } from 'mobx-react-lite'
+import * as React from 'react'
 import { getAppStore } from '../store/store'
 import { toProperCase } from '../utils/textUtils'
 

@@ -1,5 +1,9 @@
+/*!
+ * Copyright (c) Microsoft. All rights reserved.
+ * Licensed under the MIT license. See LICENSE file in the project.
+ */
 export const toProperCase = (text: string): string => {
-	let res = text
+	const res = text
 		.replace(/_/g, ' ')
 		.toLowerCase()
 		.replace(/\b[a-z](?=[a-z]{2})/g, function (letter) {
@@ -16,7 +20,7 @@ export const getLanguageDisplayText = (
 	currentLanguage: string,
 	languageCode: string
 ): string => {
-	//@ts-expect-error
+	// @ts-expect-error DisplayNames not on Intl
 	const languageName = new Intl.DisplayNames([currentLanguage], {
 		type: 'language',
 	})

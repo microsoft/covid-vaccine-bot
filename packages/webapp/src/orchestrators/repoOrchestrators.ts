@@ -1,3 +1,7 @@
+/*!
+ * Copyright (c) Microsoft. All rights reserved.
+ * Licensed under the MIT license. See LICENSE file in the project.
+ */
 import { orchestrator } from 'satcheljs'
 import {
 	getBranches,
@@ -5,12 +9,12 @@ import {
 	getRepoFileData,
 	initializeGitData,
 } from '../actions/repoActions'
-import { repoServices } from '../services/repoServices'
 import {
 	setBranchList,
 	handleCreatePR,
 	setRepoFileData,
 } from '../mutators/repoMutators'
+import { repoServices } from '../services/repoServices'
 
 orchestrator(getBranches, async () => {
 	const resp = await repoServices('getBranches')

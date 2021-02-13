@@ -1,7 +1,11 @@
+/*!
+ * Copyright (c) Microsoft. All rights reserved.
+ * Licensed under the MIT license. See LICENSE file in the project.
+ */
+import github from '../configs/github.json'
 import { getAppStore } from '../store/store'
 import { processCSVData, convertCSVDataToObj } from '../utils/dataUtils'
 import { b64_to_utf8, utf8_to_b64 } from '../utils/textUtils'
-import github from '../configs/github.json'
 
 const createPath = (obj: any, pathInput: string, value: any = undefined) => {
 	let path = pathInput.split('/')
@@ -77,7 +81,7 @@ export const repoServices = async (
 			},
 		})
 		const data = await response.json()
-		let stateData: any = {}
+		const stateData: any = {}
 		data.tree.forEach(async (element: any) => {
 			if (element.type === 'tree') {
 				createPath(stateData, element.path)
@@ -86,7 +90,7 @@ export const repoServices = async (
 				const filePath = element.path.substring(0, lastInstance)
 				const fileName: string = element.path.substring(lastInstance + 1)
 				const fileType: string = fileName.split('.')[0]
-				let fileObj: any = {}
+				const fileObj: any = {}
 
 				const fileData = await getContent(
 					String(element.url),

@@ -1,7 +1,11 @@
-import * as React from 'react'
+/*!
+ * Copyright (c) Microsoft. All rights reserved.
+ * Licensed under the MIT license. See LICENSE file in the project.
+ */
 import { observer } from 'mobx-react-lite'
-import { loginUser } from '../actions/authActions'
 import { DefaultButton } from 'office-ui-fabric-react'
+import * as React from 'react'
+import { loginUser } from '../actions/authActions'
 
 import './Login.scss'
 

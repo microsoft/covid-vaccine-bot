@@ -1,10 +1,14 @@
-import * as React from 'react'
+/*!
+ * Copyright (c) Microsoft. All rights reserved.
+ * Licensed under the MIT license. See LICENSE file in the project.
+ */
 import { observer } from 'mobx-react-lite'
+import * as React from 'react'
+import { Switch, Route, Redirect } from 'react-router-dom'
 import { isUserAuthenticated } from '../selectors/authSelectors'
-import Login from './Login'
 import About from './About'
 import Dashboard from './Dashboard'
-import { Switch, Route, Redirect } from 'react-router-dom'
+import Login from './Login'
 
 import './App.scss'
 

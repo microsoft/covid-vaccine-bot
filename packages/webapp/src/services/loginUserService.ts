@@ -1,7 +1,11 @@
+/*!
+ * Copyright (c) Microsoft. All rights reserved.
+ * Licensed under the MIT license. See LICENSE file in the project.
+ */
 import firebase from 'firebase/app'
 import 'firebase/auth'
-import { AppState } from '../store/schema/AppState'
 import firebaseConfig from '../configs/firebase.json'
+import { AppState } from '../store/schema/AppState'
 
 export const loginUserService = async (): Promise<AppState | undefined> => {
 	let authResp = undefined

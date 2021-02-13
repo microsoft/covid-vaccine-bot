@@ -1,6 +1,7 @@
-import * as React from 'react'
-import { observer } from 'mobx-react-lite'
-import { getAppStore } from '../store/store'
+/*!
+ * Copyright (c) Microsoft. All rights reserved.
+ * Licensed under the MIT license. See LICENSE file in the project.
+ */
 import {
 	DetailsList,
 	IDetailsGroupRenderProps,
@@ -8,6 +9,9 @@ import {
 	FontIcon,
 	IGroupDividerProps,
 } from '@fluentui/react'
+import { observer } from 'mobx-react-lite'
+import * as React from 'react'
+import { getAppStore } from '../store/store'
 
 import './Dashboard.scss'
 
@@ -66,7 +70,7 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 
 				phase.qualifications.forEach((qualification: any) => {
 					const keyId: string = String(qualification.question).toLowerCase()
-					let label: string = `*Translation not found* (${keyId})`
+					let label = `*Translation not found* (${keyId})`
 
 					if (
 						currentStateObj.strings &&

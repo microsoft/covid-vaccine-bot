@@ -1,11 +1,15 @@
-import * as React from 'react'
-import { observer } from 'mobx-react-lite'
-import { getAppStore } from '../store/store'
+/*!
+ * Copyright (c) Microsoft. All rights reserved.
+ * Licensed under the MIT license. See LICENSE file in the project.
+ */
 import { IconButton, Persona, PersonaSize, Dropdown } from '@fluentui/react'
-import LocationsStates from './LocationsStates'
-import LocationsRegions from './LocationsRegions'
+import { observer } from 'mobx-react-lite'
+import * as React from 'react'
 import { setCurrentLanguage } from '../mutators/repoMutators'
+import { getAppStore } from '../store/store'
 import { getLanguageDisplayText } from '../utils/textUtils'
+import LocationsRegions from './LocationsRegions'
+import LocationsStates from './LocationsStates'
 import QualifierPanel from './QualifierPanel'
 
 import './Dashboard.scss'

@@ -1,6 +1,7 @@
-import * as React from 'react'
-import { observer } from 'mobx-react-lite'
-import { getAppStore } from '../store/store'
+/*!
+ * Copyright (c) Microsoft. All rights reserved.
+ * Licensed under the MIT license. See LICENSE file in the project.
+ */
 import {
 	DetailsList,
 	DetailsListLayoutMode,
@@ -11,6 +12,9 @@ import {
 	TextField,
 } from '@fluentui/react'
 import { useBoolean } from '@uifabric/react-hooks'
+import { observer } from 'mobx-react-lite'
+import * as React from 'react'
+import { getAppStore } from '../store/store'
 
 import './Dashboard.scss'
 
@@ -48,7 +52,7 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 
 	React.useEffect(() => {
 		if (state.repoFileData) {
-			let tempList: any[] = []
+			const tempList: any[] = []
 			Object.entries(state.repoFileData).forEach(([key, value]) => {
 				const stateId = value?.info?.content.id
 				const stateNames = state?.globalFileData?.cdcStateNames.content
