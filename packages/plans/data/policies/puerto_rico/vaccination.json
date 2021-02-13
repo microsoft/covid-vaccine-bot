@@ -2,7 +2,8 @@
 	"links": {
 		"info": {
 			"text": "CDC/Puerto_Rico/state_link",
-			"url": "http://www.salud.gov.pr/Pages/coronavirus.aspx"
+			"url": "http://www.salud.gov.pr/Pages/coronavirus.aspx",
+			"scrapeQuery": ["#s4-workspace"]
 		}
 	},
 	"activePhase": "1a",

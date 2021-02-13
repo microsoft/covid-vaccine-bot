@@ -5,7 +5,8 @@
 			"url": "https://www.dph.illinois.gov/covid19/vaccine-faq"
 		},
 		"eligibility": {
-			"url": "https://www.dph.illinois.gov/covid19/vaccine-distribution"
+			"url": "https://www.dph.illinois.gov/covid19/vaccine-distribution",
+			"scrapeQuery": ["#main"]
 		}
 	},
 	"activePhase": "1a",

@@ -2,7 +2,8 @@
 	"links": {
 		"info": {
 			"text": "CDC/American_Samoa/state_link",
-			"url": "https://www.americansamoa.gov/"
+			"url": "https://www.americansamoa.gov/",
+			"scrape": false
 		}
 	},
 	"activePhase": "1a",

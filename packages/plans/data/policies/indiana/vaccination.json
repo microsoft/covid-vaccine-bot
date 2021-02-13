@@ -2,7 +2,8 @@
 	"links": {
 		"info": {
 			"text": "CDC/Indiana/state_link",
-			"url": "https://www.coronavirus.in.gov/vaccine/index.htm"
+			"url": "https://www.coronavirus.in.gov/vaccine/index.htm",
+			"scrapeQuery": [".subpage-text-container .subpage-text-inner"]
 		}
 	},
 	"activePhase": "1b",

@@ -5,7 +5,8 @@
 			"url": "https://www.health.state.mn.us/diseases/coronavirus/vaccine.html"
 		},
 		"eligibility": {
-			"url": "https://mn.gov/covid19/vaccine/whos-getting-vaccinated/index.jsp"
+			"url": "https://mn.gov/covid19/vaccine/whos-getting-vaccinated/index.jsp",
+			"scrapeQuery": [".internal-norow-content"]
 		}
 	},
 	"activePhase": "1a",

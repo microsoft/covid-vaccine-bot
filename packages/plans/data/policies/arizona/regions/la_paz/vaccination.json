@@ -3,7 +3,8 @@
 	"links": {
 		"info": {
 			"text": "c19.links/info.AZ.LaPaz",
-			"url": "https://www.lpchd.com/"
+			"url": "https://www.lpchd.com/",
+			"scrape": false
 		},
 		"scheduling_phone": {
 			"url": "tel:928-503-5763",

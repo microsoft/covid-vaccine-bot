@@ -9,7 +9,8 @@
 			"url": "https://am-i-eligible.covid19vaccine.health.ny.gov/"
 		},
 		"eligibility": {
-			"url": "https://covid19vaccine.health.ny.gov/phased-distribution-vaccine"
+			"url": "https://covid19vaccine.health.ny.gov/phased-distribution-vaccine",
+			"scrapeQuery": [".toc-chapters"]
 		}
 	},
 	"activePhase": "1b",

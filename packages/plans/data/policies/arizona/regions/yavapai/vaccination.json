@@ -3,7 +3,8 @@
 	"links": {
 		"info": {
 			"text": "c19.links/info.AZ.Yavapai",
-			"url": "https://www.yavapai.us/chs/Home/COVID-19/Vaccine"
+			"url": "https://www.yavapai.us/chs/Home/COVID-19/Vaccine",
+			"scrapeQuery": ["#dnn_ContentPane"]
 		},
 		"scheduling_phone": {
 			"text": "c19.links/hotline.AZ.Yavapai",

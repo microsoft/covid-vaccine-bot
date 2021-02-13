@@ -5,7 +5,8 @@
 			"url": "https://msdh.ms.gov/msdhsite/_static/14,0,420,976.html"
 		},
 		"eligibility": {
-			"url": "https://msdh.ms.gov/msdhsite/_static/14,22816,420,976.html#eligible"
+			"url": "https://msdh.ms.gov/msdhsite/_static/14,22816,420,976.html#eligible",
+			"scrapeQuery": [".msdh"]
 		}
 	},
 	"activePhase": "1b",

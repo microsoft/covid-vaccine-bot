@@ -114,6 +114,10 @@ export class Scraper {
 				link as Record<string, any>
 			)
 
+			if (!pageResult.content) {
+				throw new Error(`no content at ${link.url}`)
+			}
+
 			return {
 				...pageResult,
 				link,

@@ -2,7 +2,8 @@
 	"links": {
 		"info": {
 			"text": "CDC/Wyoming/state_link",
-			"url": "https://health.wyo.gov/publichealth/immunization/wyoming-covid-19-vaccine-information/"
+			"url": "https://health.wyo.gov/publichealth/immunization/wyoming-covid-19-vaccine-information/",
+			"scrapeQuery": ["#content-area"]
 		}
 	},
 	"activePhase": "1a",

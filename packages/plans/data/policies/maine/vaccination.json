@@ -5,7 +5,8 @@
 			"url": "https://www.maine.gov/covid19/vaccines"
 		},
 		"eligibility": {
-			"url": "https://www.maine.gov/covid19/vaccines/public-faq"
+			"url": "https://www.maine.gov/covid19/vaccines/public-faq",
+			"scrapeQuery": [".narrow-para"]
 		}
 	},
 	"activePhase": "1a",
