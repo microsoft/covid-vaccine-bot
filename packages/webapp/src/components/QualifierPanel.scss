@@ -1,0 +1,35 @@
+@import '@fluentui/react/dist/sass/_References';
+
+.qualifierPanelContainer {
+	display: flex;
+	flex-direction: column;
+}
+
+.panelHeader {
+	padding: 50px 20px;
+	display: flex;
+}
+
+.panelHeaderTitle {
+	font-size: 24px;
+}
+
+.panelBody {
+	padding: 0 20px;
+}
+
+.qualifierGroupItem {
+	.ms-DetailsRow {
+		background-color: transparent;
+		cursor: pointer;
+
+		&:hover {
+			background-color: $ms-color-gray40;
+			font-weight: 600;
+		}
+		&.is-selected {
+			background-color: $ms-color-gray40;
+			font-weight: 600;
+		}
+	}
+}
