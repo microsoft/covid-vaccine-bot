@@ -3,6 +3,7 @@
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
+		"@ms-covidbot/state-plan-schema": "workspace:packages/schema",
 		"@fluentui/react": "^7.158.0",
 		"@uifabric/react-hooks": "^7.13.11",
 		"firebase": "^8.2.5",
@@ -32,7 +33,6 @@
 	"scripts": {
 		"start": "react-scripts start",
 		"build": "react-scripts build",
-		"test": "react-scripts test",
 		"eject": "react-scripts eject"
 	},
 	"eslintConfig": {
