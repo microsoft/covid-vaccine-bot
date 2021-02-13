@@ -2,7 +2,8 @@
 	"links": {
 		"info": {
 			"text": "CDC/Utah/state_link",
-			"url": "https://coronavirus.utah.gov/vaccine/"
+			"url": "https://coronavirus.utah.gov/vaccine/",
+			"scrapeQuery": [".x-text"]
 		}
 	},
 	"activePhase": "1a",
