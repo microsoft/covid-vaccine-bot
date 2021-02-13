@@ -3,7 +3,7 @@
 		"info": {
 			"text": "CDC/California/state_link",
 			"url": "https://covid19.ca.gov/vaccines/#When-can-I-get-vaccinated",
-			"scrapeQuery": ["main"]
+			"scrapeQuery": ["div.col-lg-10.mx-auto"]
 		}
 	},
 	"activePhase": "1a",

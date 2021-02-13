@@ -2,7 +2,8 @@
 	"links": {
 		"info": {
 			"text": "c19.links/vax_info",
-			"url": "https://kitsappublichealth.org/CommunityHealth/CoronaVirus_Vaccine.php"
+			"url": "https://kitsappublichealth.org/CommunityHealth/CoronaVirus_Vaccine.php",
+			"scrape": false
 		}
 	}
 }

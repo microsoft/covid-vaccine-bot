@@ -3,7 +3,7 @@
 		"info": {
 			"text": "CDC/West_Virginia/state_link",
 			"url": "https://dhhr.wv.gov/COVID-19/Pages/Vaccine.aspx",
-			"scrapeQuery": ["main"]
+			"scrapeQuery": [".col-12.col-md-8"]
 		}
 	},
 	"activePhase": "1a",

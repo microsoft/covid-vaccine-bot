@@ -5,7 +5,8 @@
 			"url": "https://www.immunizenevada.org/nv-covid-fighter"
 		},
 		"eligibility": {
-			"url": "https://www.immunizenevada.org/county-specific-covid-19-vaccine-plan"
+			"url": "https://www.immunizenevada.org/county-specific-covid-19-vaccine-plan",
+			"scrapeQuery": ["main"]
 		}
 	},
 	"activePhase": "1a",

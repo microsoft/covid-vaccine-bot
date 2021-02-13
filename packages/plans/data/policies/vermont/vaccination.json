@@ -11,7 +11,8 @@
 			"url": "https://vermont.force.com/events/s/selfregistration"
 		},
 		"eligibility": {
-			"url": "https://www.healthvermont.gov/covid-19/vaccine/about-covid-19-vaccines-vermont"
+			"url": "https://www.healthvermont.gov/covid-19/vaccine/about-covid-19-vaccines-vermont",
+			"scrapeQuery": ["article .paragraphs-items .content .field-body"]
 		}
 	},
 	"activePhase": "1a",

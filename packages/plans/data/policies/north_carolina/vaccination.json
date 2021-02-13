@@ -8,7 +8,8 @@
 			"url": "https://findmygroup.nc.gov/"
 		},
 		"eligibility": {
-			"url": "https://covid19.ncdhhs.gov/vaccines/find-your-spot-take-your-shot"
+			"url": "https://covid19.ncdhhs.gov/vaccines/find-your-spot-take-your-shot",
+			"scrapeQuery": ["article"]
 		}
 	},
 	"activePhase": "1a",
