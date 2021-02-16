@@ -111,7 +111,7 @@
 
 .bodyContent {
 	section {
-		//box-shadow: $ms-depth-shadow-4;
+		/*box-shadow: $ms-depth-shadow-4;*/
 		padding: 10px;
 		margin-bottom: 20px;
 		border-radius: 2px;
@@ -133,11 +133,24 @@
 	display: flex;
 	justify-content: space-between;
 
+	.activeGroup {
+		display: flex;
+	}
+
 	&:hover {
 		background-color: $ms-color-gray40;
 	}
 
 	.groupToggleIcon {
 		padding: 0 10px;
+	}
+}
+.phaseGridContainer {
+	.ms-FocusZone {
+		max-width: 100% !important;
+		width: 100%;
+	}
+	.ms-DetailsRow-cell {
+		padding-left: 48px;
 	}
 }
