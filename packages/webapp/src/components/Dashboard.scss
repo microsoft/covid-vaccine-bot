@@ -1,0 +1,7 @@
+@import '@fluentui/react/dist/sass/_References';
+
+.dashboardPageWrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: calc(100vh - 130px);
+}
