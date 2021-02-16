@@ -2,7 +2,7 @@
  * Copyright (c) Microsoft. All rights reserved.
  * Licensed under the MIT license. See LICENSE file in the project.
  */
-import React, { FC, memo } from 'react'
+import { FC, memo } from 'react'
 
 export const Footer: FC = memo(function Footer() {
 	const year = new Date().getFullYear()

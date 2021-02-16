@@ -4,7 +4,7 @@
  */
 import { IconButton, Persona, PersonaSize, Dropdown } from '@fluentui/react'
 import { observer } from 'mobx-react-lite'
-import * as React from 'react'
+import { useState, useCallback } from 'react'
 import { setCurrentLanguage } from '../mutators/repoMutators'
 import { getAppStore } from '../store/store'
 import { getLanguageDisplayText } from '../utils/textUtils'
@@ -15,10 +15,10 @@ import QualifierPanel from './QualifierPanel'
 import './Dashboard.scss'
 
 export default observer(function Dashboard() {
-	const [selectedState, setSelectedState] = React.useState<any>(null)
+	const [selectedState, setSelectedState] = useState<any>(null)
 	const state = getAppStore()
 
-	const onNavigateBack = React.useCallback(() => {
+	const onNavigateBack = useCallback(() => {
 		setSelectedState(null)
 	}, [])
 
