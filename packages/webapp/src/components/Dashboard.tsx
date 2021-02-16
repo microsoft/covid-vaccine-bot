@@ -18,7 +18,14 @@ export default observer(function Dashboard() {
 					</div>
 				</div>
 				<div className="bodyContent">
-					<section>this is the body</section>
+					<section>
+						<div className="sectionHeader">Pending PRs</div>
+						<div className="sectionContent">list of PRs</div>
+					</section>
+					<section>
+						<div className="sectionHeader">Location Updates</div>
+						<div className="sectionContent">list of updated locations</div>
+					</section>
 				</div>
 			</div>
 		</div>
