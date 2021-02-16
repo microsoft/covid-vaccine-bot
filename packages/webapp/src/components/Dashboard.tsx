@@ -93,21 +93,6 @@ export default observer(function Dashboard() {
 							onNavigateBack={onNavigateBack}
 						/>
 					)}
-					<div className="footerPrivacy">
-						<div
-							style={{ cursor: 'pointer' }}
-							onClick={() =>
-								window.open(
-									'https://go.microsoft.com/fwlink/?LinkId=521839',
-									'_blank'
-								)
-							}
-						>
-							Privacy &amp; Cookies
-						</div>
-						&nbsp;&nbsp;&nbsp;&nbsp;
-						<div>© Microsoft 2021</div>
-					</div>
 				</div>
 				{state.toggleQualifier && (
 					<div className="dashboardBodyRight">
