@@ -1,3 +1,7 @@
+/*!
+ * Copyright (c) Microsoft. All rights reserved.
+ * Licensed under the MIT license. See LICENSE file in the project.
+ */
 import React, { FC, memo } from 'react'
 
 export const Footer: FC = memo(function Footer() {
@@ -26,7 +30,7 @@ export const Footer: FC = memo(function Footer() {
 			</div>
 			<div className="footerPrivacy">
 				<Link href="https://microsoft.com">
-					<span style={{ marginRight: 10 }}>Microsoft</span>
+					<span style={{ marginRight: 5 }}>Microsoft</span>
 					<img alt="Microsoft Logo" src="mslogo.jpg" height={20} width={20} />
 				</Link>
 			</div>
@@ -40,7 +44,13 @@ const Link: FC<{
 	return (
 		<div
 			className="div"
-			style={{ cursor: 'pointer', marginLeft: 15, marginRight: 15 }}
+			style={{
+				cursor: 'pointer',
+				marginLeft: 15,
+				marginRight: 15,
+				display: 'flex',
+				alignContent: 'center',
+			}}
 			onClick={() => href && window.open(href, '_blank')}
 		>
 			{children}
