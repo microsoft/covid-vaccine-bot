@@ -4,7 +4,7 @@
 	"scripts": {
 		"preinstall": "npx only-allow yarn",
 		"clean:all": "yarn workspaces foreach -pv run clean",
-		"build:": "yarn workspaces foreach -pvt run build",
+		"build:all": "yarn workspaces foreach -pvt run build",
 		"test:all": "yarn workspaces foreach -pvt run test",
 		"start:all": "yarn workspaces foreach -piv run start",
 		"deploy:all": "yarn workspaces foreach -piv run deploy",
@@ -13,7 +13,7 @@
 		"lint:fix": "essex lint --fix",
 		"git_is_clean": "essex git-is-clean",
 		"prettify": "essex prettify",
-		"ci": "run-s build_all lint test:all test:unit git_is_clean"
+		"ci": "run-s build:all lint test:all test:unit git_is_clean"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.12.10",
