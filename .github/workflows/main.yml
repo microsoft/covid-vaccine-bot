@@ -42,7 +42,7 @@ jobs:
         run: yarn ci
 
       - name: Deploy to Dev
-        run: yarn deploy_all
+        run: yarn deploy:all
         if: github.ref == 'refs/heads/main'
         env:
           HEALTHBOT_HOST: ${{ secrets.HEALTHBOT_HOST }}
@@ -50,7 +50,7 @@ jobs:
           HEALTHBOT_API_SECRET: ${{ secrets.HEALTHBOT_API_KEY_DEV }}
 
       - name: Deploy to Integ
-        run: yarn deploy_all
+        run: yarn deploy:all
         if: github.ref == 'refs/heads/main'
         env:
           HEALTHBOT_HOST: ${{ secrets.HEALTHBOT_HOST }}
