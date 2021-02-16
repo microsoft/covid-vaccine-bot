@@ -2807,7 +2807,9 @@
 |c19/how_did_we_do|Let us know how we did at [covidbot-feedback@microsoft.com](mailto:covidbot-feedback@microsoft.com)|not defined|not defined|not defined|not defined|none
 |c19.entry/prompt|How can I help you?|not defined|not defined|not defined|not defined|none
 |c19.entry/welcome|Welcome to the Microsoft COVID-19 Bot. You can provide feedback by emailing [covidbot-feedback@microsoft.com](mailto:covidbot-feedback@microsoft.com)|not defined|not defined|not defined|not defined|none
-|c19.entry/options|["Am I eligible to receive the COVID-19 vaccine?", "Is the COVID-19 vaccine safe?", "How vaccinated is my community?"]|not defined|not defined|not defined|not defined|none
+|c19.entry/tos|The COVID-19 Vaccine Eligibility bot aggregate data from trusted and verified sources to help understand your vaccine eligibility. This system does not provide medical advice and is not intended for use as a diagnostic or treatment tool for any disease, including COVID-19. Please do not provide any personally identifying information to this system, please refer to the [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839) for more information.  You can provide feedback by emailing [covidbot-feedback@microsoft.com](mailto:covidbot-feedback@microsoft.com)|not defined|not defined|not defined|not defined|none
+|c19.entry/do_you_agree_to_terms|Do you agree to these terms?|not defined|not defined|not defined|not defined|none
+|c19.entry/agreement_options|["I Agree", "Cancel"]|not defined|not defined|not defined|not defined|none
 |c19.entry/unknown_question|I'm not sure how to help you with that. Please try one of the prepared questions.|not defined|not defined|not defined|not defined|none
 |c19.locate/what_is_your_location|I'll need to determine your location to look up your local plan. Where do you live?|not defined|not defined|not defined|not defined|none
 |c19.locate/api_error|Oops. Something went wrong.|not defined|not defined|not defined|not defined|none
