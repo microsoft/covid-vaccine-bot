@@ -251,6 +251,8 @@ export const repoServices = async (
 				}
 			)
 
+			console.log(newBranch, fileResp)
+
 			return prResp.json()
 		}
 	}
