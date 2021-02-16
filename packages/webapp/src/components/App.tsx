@@ -11,6 +11,7 @@ import Dashboard from './Dashboard'
 import Login from './Login'
 
 import './App.scss'
+import { Footer } from './Footer'
 
 export default observer(function App() {
 	return (
@@ -39,6 +40,7 @@ export default observer(function App() {
 					</Route>
 				</Switch>
 			)}
+			<Footer />
 		</div>
 	)
 })
