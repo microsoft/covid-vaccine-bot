@@ -13,7 +13,7 @@ import { observer } from 'mobx-react-lite'
 import * as React from 'react'
 import { getAppStore } from '../store/store'
 
-import './Dashboard.scss'
+import './Locations.scss'
 
 export interface LocationsPhasesProp {
 	isRegion: boolean

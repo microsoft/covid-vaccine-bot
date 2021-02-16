@@ -8,7 +8,7 @@ import * as React from 'react'
 import { toProperCase } from '../utils/textUtils'
 import LocationsPhases from './LocationsPhases'
 
-import './Dashboard.scss'
+import './Locations.scss'
 
 export interface LocationsRegionsProp {
 	selectedState: any

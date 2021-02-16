@@ -12,9 +12,9 @@ import LocationsRegions from './LocationsRegions'
 import LocationsStates from './LocationsStates'
 import QualifierPanel from './QualifierPanel'
 
-import './Dashboard.scss'
+import './Locations.scss'
 
-export default observer(function Dashboard() {
+export default observer(function Locations() {
 	const [selectedState, setSelectedState] = React.useState<any>(null)
 	const state = getAppStore()
 
@@ -33,8 +33,8 @@ export default observer(function Dashboard() {
 	})
 
 	return (
-		<div className="dashboardPageContainer">
-			<div className="dashboardHeaderWrapper">
+		<div className="locationPageContainer">
+			<div className="locationHeaderWrapper">
 				<div className="headerContainer">
 					<IconButton
 						iconProps={{ iconName: 'waffle' }}
@@ -83,8 +83,8 @@ export default observer(function Dashboard() {
 				</div>
 			</div>
 
-			<div className="dashboardBodyWrapper">
-				<div className="dashboardBodyLeft">
+			<div className="locationBodyWrapper">
+				<div className="locationBodyLeft">
 					{!selectedState ? (
 						<LocationsStates onSelectedItem={setSelectedState} />
 					) : (
@@ -110,7 +110,7 @@ export default observer(function Dashboard() {
 					</div>
 				</div>
 				{state.toggleQualifier && (
-					<div className="dashboardBodyRight">
+					<div className="locationBodyRight">
 						<QualifierPanel />
 					</div>
 				)}

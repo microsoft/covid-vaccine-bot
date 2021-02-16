@@ -7,7 +7,7 @@ import * as React from 'react'
 import { Switch, Route, Redirect } from 'react-router-dom'
 import { isUserAuthenticated } from '../selectors/authSelectors'
 import About from './About'
-import Dashboard from './Dashboard'
+import Locations from './Locations'
 import Login from './Login'
 
 import './App.scss'
@@ -19,7 +19,7 @@ export default observer(function App() {
 				<>
 					<Switch>
 						<Route exact path="/">
-							<Dashboard />
+							<Locations />
 						</Route>
 						<Route path="/about">
 							<About />

@@ -1,12 +1,12 @@
 @import '@fluentui/react/dist/sass/_References';
 
-.dashboardPageContainer {
+.locationPageContainer {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
 }
 
-.dashboardHeaderWrapper {
+.locationHeaderWrapper {
 	display: flex;
 	background-color: $ms-color-themePrimary;
 	height: 30px;
@@ -49,7 +49,7 @@
 	}
 }
 
-.dashboardBodyWrapper {
+.locationBodyWrapper {
 	display: flex;
 	flex-direction: row;
 	flex: 1;
@@ -57,7 +57,7 @@
 */
 }
 
-.dashboardBodyLeft {
+.locationBodyLeft {
 	display: flex;
 	flex-direction: column;
 	margin: 0 40px;
@@ -65,7 +65,7 @@
 	min-width: 900px;
 }
 
-.dashboardBodyRight {
+.locationBodyRight {
 	display: flex;
 	flex-direction: column;
 	background-color: $ms-color-gray20;
