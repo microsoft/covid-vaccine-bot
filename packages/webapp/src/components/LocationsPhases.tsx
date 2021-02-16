@@ -24,7 +24,7 @@ export interface LocationsPhasesProp {
 const phaseColumns = [
 	{
 		key: 'question',
-		name: '',
+		name: 'Question',
 		fieldName: 'text',
 		minWidth: 200,
 		isResizable: false,
@@ -54,13 +54,13 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 					isActivePhase = value.phase === phase.id
 				} else {
 					isActivePhase =
-						value.key.includes('active') && value.key.includes(phase.id)
+						phase.id === currentStateObj.vaccination.content.activePhase
 				}
 
 				tempPhaseGroup.push({
 					key: phase.id,
-					name: 'Phase ' + phase.id,
-					startIndex: 0,
+					name: phase.label,
+					startIndex: tempPhaseGroupItems.length,
 					count: phase.qualifications.length,
 					isCollapsed: isCollapsed,
 					data: {
@@ -115,7 +115,13 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 							iconName={group.isCollapsed ? 'ChevronRight' : 'ChevronDown'}
 							className="groupToggleIcon"
 						/>
-						{group.name}
+						{group.name ? (
+							<span>
+								{group.name} <small>({group.key})</small>
+							</span>
+						) : (
+							`Phase ${group.key}`
+						)}
 					</div>
 					{group.data.isActive && (
 						<div className="activeGroup">
@@ -139,8 +145,9 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 	}
 
 	return (
-		<div>
+		<div className="phaseGridContainer">
 			<DetailsList
+				indentWidth={0}
 				items={phaseGroupItems}
 				groups={phaseGroup}
 				columns={phaseColumns}
@@ -151,6 +158,7 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 				isHeaderVisible={false}
 				checkboxVisibility={2}
 				constrainMode={1}
+				selectionMode={1}
 			/>
 		</div>
 	)

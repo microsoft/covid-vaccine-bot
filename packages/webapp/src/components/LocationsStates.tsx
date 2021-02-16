@@ -112,7 +112,7 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 		<div className="bodyContainer">
 			<div className="bodyHeader">
 				<div className="bodyHeaderTitle">
-					<div className="breadCrumbs">/Locations</div>
+					<div className="breadCrumbs">/ Locations</div>
 					<div className="mainTitle">Locations</div>
 				</div>
 				{state.toggleAddLocation && (

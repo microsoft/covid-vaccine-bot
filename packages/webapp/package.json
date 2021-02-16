@@ -6,6 +6,7 @@
 		"@fluentui/react": "^7.158.0",
 		"@ms-covidbot/state-plan-schema": "workspace:packages/schema",
 		"@uifabric/react-hooks": "^7.13.11",
+		"csv-parse": "^4.15.1",
 		"firebase": "^8.2.5",
 		"mobx": "^5.15.7",
 		"mobx-react-lite": "^2.2.2",

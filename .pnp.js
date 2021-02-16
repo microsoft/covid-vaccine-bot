@@ -6882,6 +6882,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react-dom", "npm:17.0.1"],
             ["@types/react-router-dom", "npm:5.1.7"],
             ["@uifabric/react-hooks", "virtual:bfefbaeed7a76de0302e79ec49642207d6800ce498d118ecca130599dd9bd536cfb0110ea455ee7855f3b0f4435ef18bf9f8373269f4a50e7772f229ec7e4bcc#npm:7.13.11"],
+            ["csv-parse", "npm:4.15.1"],
             ["eslint-config-react-app", "virtual:bfefbaeed7a76de0302e79ec49642207d6800ce498d118ecca130599dd9bd536cfb0110ea455ee7855f3b0f4435ef18bf9f8373269f4a50e7772f229ec7e4bcc#npm:6.0.0"],
             ["firebase", "npm:8.2.7"],
             ["mobx", "npm:5.15.7"],

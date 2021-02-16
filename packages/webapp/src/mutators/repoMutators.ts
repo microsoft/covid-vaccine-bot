@@ -21,7 +21,7 @@ export const handleCreatePR = mutatorAction(
 	'handleCreatePR',
 	(data: any[] | undefined) => {
 		if (data) {
-			alert('Go Checkout Github!')
+			alert('Checkout Github!')
 		}
 	}
 )

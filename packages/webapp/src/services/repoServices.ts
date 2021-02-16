@@ -2,14 +2,10 @@
  * Copyright (c) Microsoft. All rights reserved.
  * Licensed under the MIT license. See LICENSE file in the project.
  */
+import parse from 'csv-parse/lib/sync'
 import { getAppStore } from '../store/store'
-import { processCSVData, convertCSVDataToObj } from '../utils/dataUtils'
+import { convertCSVDataToObj } from '../utils/dataUtils'
 import { b64_to_utf8, utf8_to_b64 } from '../utils/textUtils'
-
-const github = {
-	REPO_OWNER: process.env.REACT_APP_REPO_OWNER,
-	REPO_NAME: process.env.REACT_APP_REPO_NAME,
-}
 
 const createPath = (obj: any, pathInput: string, value: any = undefined) => {
 	let path = pathInput.split('/')
@@ -47,10 +43,12 @@ export const repoServices = async (
 	extraData: any = undefined
 ): Promise<any | undefined> => {
 	const state = getAppStore()
+	const githubRepoOwner = process.env.REACT_APP_REPO_OWNER
+	const githubRepoName = process.env.REACT_APP_REPO_NAME
 
 	if (command === 'getBranches') {
 		const response = await fetch(
-			`https://api.github.com/repos/${github.REPO_OWNER}/${github.REPO_NAME}/branches`,
+			`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/branches`,
 			{
 				method: 'GET',
 				headers: {
@@ -66,7 +64,7 @@ export const repoServices = async (
 
 	if (command === 'getRepoFileData') {
 		const dataFolderResp = await fetch(
-			`https://api.github.com/repos/${github.REPO_OWNER}/${github.REPO_NAME}/contents/packages/plans/data`,
+			`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/contents/packages/plans/data`,
 			{
 				method: 'GET',
 				headers: {
@@ -131,7 +129,7 @@ export const repoServices = async (
 							url: element.url,
 							path: element.path,
 							content: convertCSVDataToObj(
-								processCSVData(b64_to_utf8(fileData.content))
+								parse(b64_to_utf8(fileData.content), { columns: true })
 							),
 						}
 
@@ -179,7 +177,7 @@ export const repoServices = async (
 			String(state.accessToken)
 		)
 		customStringsData = convertCSVDataToObj(
-			processCSVData(b64_to_utf8(customStringsDataParse.content))
+			parse(b64_to_utf8(customStringsDataParse.content), { columns: true })
 		)
 
 		const cdcStateNamesDataParse = await getContent(
@@ -187,7 +185,7 @@ export const repoServices = async (
 			String(state.accessToken)
 		)
 		cdcStateNamesData = convertCSVDataToObj(
-			processCSVData(b64_to_utf8(cdcStateNamesDataParse.content))
+			parse(b64_to_utf8(cdcStateNamesDataParse.content), { columns: true })
 		)
 
 		const cdcStateLinksDataParse = await getContent(
@@ -195,7 +193,7 @@ export const repoServices = async (
 			String(state.accessToken)
 		)
 		cdcStateLinksData = convertCSVDataToObj(
-			processCSVData(b64_to_utf8(cdcStateLinksDataParse.content))
+			parse(b64_to_utf8(cdcStateLinksDataParse.content), { columns: true })
 		)
 
 		customStrings['content'] = customStringsData
@@ -210,7 +208,7 @@ export const repoServices = async (
 			const mainBranch = state?.mainBranch
 			const branchName = `refs/heads/${state.username}-policy-${Date.now()}`
 			const response = await fetch(
-				`https://api.github.com/repos/${github.REPO_OWNER}/${github.REPO_NAME}/git/refs`,
+				`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/git/refs`,
 				{
 					method: 'POST',
 					headers: {
@@ -221,10 +219,9 @@ export const repoServices = async (
 			)
 
 			const newBranch = await response.json()
-			console.log('newbranch', newBranch)
 
 			const fileResp = await fetch(
-				`https://api.github.com/repos/${github.REPO_OWNER}/${github.REPO_NAME}/contents/packages/plans/data/policies/${extraData.path}`,
+				`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/contents/packages/plans/data/policies/${extraData.path}`,
 				{
 					method: 'PUT',
 					headers: {
@@ -238,10 +235,9 @@ export const repoServices = async (
 					}),
 				}
 			)
-			console.log('fileresp', fileResp)
 
 			const prResp = await fetch(
-				`https://api.github.com/repos/${github.REPO_OWNER}/${github.REPO_NAME}/pulls`,
+				`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/pulls`,
 				{
 					method: 'POST',
 					headers: {
@@ -254,6 +250,8 @@ export const repoServices = async (
 					}),
 				}
 			)
+
+			console.log(newBranch, fileResp)
 
 			return prResp.json()
 		}

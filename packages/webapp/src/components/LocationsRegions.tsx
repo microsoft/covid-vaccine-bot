@@ -96,7 +96,7 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 			return {
 				key: String(phase.id) + (phase.id === activePhase ? ' (active)' : ''),
 				name:
-					toProperCase(phase.label ? phase.label : phase.id) +
+					toProperCase(phase.label ?? phase.id) +
 					(phase.id === activePhase ? ' (active)' : ''),
 				qualifications: phase.qualifications.length,
 				value: phase,
@@ -117,7 +117,7 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 				<div className="bodyHeaderTitle">
 					<div className="breadCrumbs">
 						<span className="crumbLink" onClick={onNavigateBack}>
-							/Locations
+							/ Locations{' '}
 						</span>
 						{selectedPhaseItem.value ? (
 							<>
@@ -131,16 +131,16 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 										})
 									}
 								>
-									/{selectedState.text}
+									/ {selectedState.text + ' '}
 								</span>
 								{selectedPhaseItem.isRegion ? (
-									<>/{selectedPhaseItem.value.name}</>
+									<>/ {selectedPhaseItem.value.name}</>
 								) : (
-									<>/Phase Overview</>
+									<>/ Phase Overview</>
 								)}
 							</>
 						) : (
-							<>/{selectedState.text}</>
+							<>/ {selectedState.text}</>
 						)}
 					</div>
 					<div className="mainTitle">

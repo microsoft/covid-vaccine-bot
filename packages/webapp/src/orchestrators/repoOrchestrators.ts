@@ -38,6 +38,4 @@ orchestrator(initializeGitData, async () => {
 
 	resp = await repoServices('getRepoFileData')
 	setRepoFileData(resp)
-
-	//Load permissions for User
 })
