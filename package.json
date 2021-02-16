@@ -3,18 +3,17 @@
 	"description": "Microsoft COVID-19 Eligibility Bot",
 	"scripts": {
 		"preinstall": "npx only-allow yarn",
-		"clean_all": "yarn workspaces foreach -pv run clean",
-		"build_all": "yarn workspaces foreach -pvt run build",
-		"test_all": "yarn workspaces foreach -pvt run test",
-		"start_all": "yarn workspaces foreach -piv run start",
-		"deploy_all": "yarn workspaces foreach -piv run deploy",
-		"unit_test": "jest --ci --coverage",
+		"clean:all": "yarn workspaces foreach -pv run clean",
+		"build:": "yarn workspaces foreach -pvt run build",
+		"test:all": "yarn workspaces foreach -pvt run test",
+		"start:all": "yarn workspaces foreach -piv run start",
+		"deploy:all": "yarn workspaces foreach -piv run deploy",
+		"test:unit": "jest --ci --coverage",
 		"lint": "essex lint --docs",
 		"lint:fix": "essex lint --fix",
 		"git_is_clean": "essex git-is-clean",
 		"prettify": "essex prettify",
-		"git-is-clean": "essex git-is-clean",
-		"ci": "run-s build_all lint test_all unit_test git_is_clean"
+		"ci": "run-s build_all lint test:all test:unit git_is_clean"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.12.10",
