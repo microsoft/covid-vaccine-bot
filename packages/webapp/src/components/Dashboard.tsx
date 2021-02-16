@@ -52,6 +52,7 @@ export default observer(function Dashboard() {
 						<Dropdown
 							defaultSelectedKey={state.currentLanguage}
 							onChange={(e, o) => setCurrentLanguage(o)}
+							ariaLabel="Pick Language"
 							options={languageOptions}
 							styles={{
 								dropdown: { border: 'none' },
