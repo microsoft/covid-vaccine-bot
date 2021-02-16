@@ -5,6 +5,7 @@
 import React, { FC, memo } from 'react'
 
 export const Footer: FC = memo(function Footer() {
+	const year = new Date().getFullYear()
 	return (
 		<div style={{ display: 'flex', flexDirection: 'column' }}>
 			<div className="footerPrivacy">
@@ -26,7 +27,7 @@ export const Footer: FC = memo(function Footer() {
 					Trademarks
 				</Link>
 				{' | '}
-				<Link>&copy; 2021 Microsoft</Link>
+				<Link>&copy; {year} Microsoft</Link>
 			</div>
 			<div className="footerPrivacy">
 				<Link href="https://microsoft.com">
