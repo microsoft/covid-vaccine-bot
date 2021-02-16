@@ -7,8 +7,6 @@ import { getAppStore } from '../store/store'
 import { convertCSVDataToObj } from '../utils/dataUtils'
 import { b64_to_utf8, utf8_to_b64 } from '../utils/textUtils'
 
-const github = require('../configs/github.json')
-
 const createPath = (obj: any, pathInput: string, value: any = undefined) => {
 	let path = pathInput.split('/')
 	let current = obj
@@ -45,10 +43,12 @@ export const repoServices = async (
 	extraData: any = undefined
 ): Promise<any | undefined> => {
 	const state = getAppStore()
+	const githubRepoOwner = process.env.REACT_APP_REPO_OWNER
+	const githubRepoName = process.env.REACT_APP_REPO_NAME
 
 	if (command === 'getBranches') {
 		const response = await fetch(
-			`https://api.github.com/repos/${github.REPO_OWNER}/${github.REPO_NAME}/branches`,
+			`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/branches`,
 			{
 				method: 'GET',
 				headers: {
@@ -64,7 +64,7 @@ export const repoServices = async (
 
 	if (command === 'getRepoFileData') {
 		const dataFolderResp = await fetch(
-			`https://api.github.com/repos/${github.REPO_OWNER}/${github.REPO_NAME}/contents/packages/plans/data`,
+			`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/contents/packages/plans/data`,
 			{
 				method: 'GET',
 				headers: {
@@ -208,7 +208,7 @@ export const repoServices = async (
 			const mainBranch = state?.mainBranch
 			const branchName = `refs/heads/${state.username}-policy-${Date.now()}`
 			const response = await fetch(
-				`https://api.github.com/repos/${github.REPO_OWNER}/${github.REPO_NAME}/git/refs`,
+				`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/git/refs`,
 				{
 					method: 'POST',
 					headers: {
@@ -221,7 +221,7 @@ export const repoServices = async (
 			const newBranch = await response.json()
 
 			const fileResp = await fetch(
-				`https://api.github.com/repos/${github.REPO_OWNER}/${github.REPO_NAME}/contents/packages/plans/data/policies/${extraData.path}`,
+				`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/contents/packages/plans/data/policies/${extraData.path}`,
 				{
 					method: 'PUT',
 					headers: {
@@ -237,7 +237,7 @@ export const repoServices = async (
 			)
 
 			const prResp = await fetch(
-				`https://api.github.com/repos/${github.REPO_OWNER}/${github.REPO_NAME}/pulls`,
+				`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/pulls`,
 				{
 					method: 'POST',
 					headers: {
