@@ -2816,6 +2816,7 @@
 |c19.locate/reenter_location_option|Re-enter location|not defined|not defined|not defined|not defined|none
 |c19.locate/location_outside_region_scope|$LOCATION falls outside of $REGION.|not defined|not defined|not defined|not defined|none
 |c19.locate/api_error|Oops. Something went wrong.|not defined|not defined|not defined|not defined|none
+|c19.locate/location_entry_submit_button|Submit|not defined|not defined|not defined|not defined|none
 |c19.moreinfo/lookup|Let me see if I can find more details on the question: $QUESTION|not defined|not defined|not defined|not defined|none
 |c19.moreinfo/no_info_available|Unfortunately, I don't have any more details on that yet. Try checking your state's COVID-19 info site at $INFO_LINK|not defined|not defined|not defined|not defined|none
 |c19.safety/cdc_link|You can find more information about the safety of the COVID-19 vaccine at the [CDC's Website](https://www.cdc.gov/coronavirus/2019-ncov/vaccines/safety.html)|not defined|not defined|not defined|not defined|none
