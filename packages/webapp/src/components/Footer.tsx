@@ -8,7 +8,7 @@ export const Footer: FC = memo(function Footer() {
 	const year = new Date().getFullYear()
 	return (
 		<div style={{ display: 'flex', flexDirection: 'column' }}>
-			<div className="appFooterPrivacy">
+			<div className="appFooterRow">
 				<Link href="mailto:covidbot-feedback@microsoft.com">Contact Us</Link>
 				{' | '}
 				<Link href="https://go.microsoft.com/fwlink/?LinkId=521839">
@@ -29,7 +29,7 @@ export const Footer: FC = memo(function Footer() {
 				{' | '}
 				<Link>&copy; {year} Microsoft</Link>
 			</div>
-			<div className="appFooterPrivacy">
+			<div className="appFooterRow">
 				<Link href="https://microsoft.com">
 					<span style={{ marginRight: 5 }}>Microsoft</span>
 					<img alt="Microsoft Logo" src="mslogo.jpg" height={20} width={20} />
