@@ -1,13 +1,12 @@
 .loginPageContainer {
 	background-color: #0078d4;
-	height: 100vh;
+	height: calc(100vh - 76px);
+	display: flex;
 }
 
 .loginContainer {
 	width: 600px;
 	margin: auto;
-	position: relative;
-	top: 30%;
 
 	h3 {
 		color: white;

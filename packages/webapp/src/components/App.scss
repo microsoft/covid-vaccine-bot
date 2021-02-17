@@ -1,168 +1,116 @@
-html,
-body,
-div,
-span,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-abbr,
-address,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-samp,
-small,
-strong,
-sub,
-sup,
-var,
-b,
-i,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: 0;
-	font-size: 1rem;
-	vertical-align: baseline;
-	background: transparent;
-	font-family: 'Segoe UI', 'Segoe UI Web (West European)', 'Segoe UI',
-		-apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', sans-serif;
+@import '@fluentui/react/dist/sass/_References';
+
+.appPageContainer {
+	display: flex;
+	flex-direction: column;
+	min-height: calc(100vh - 76px);
 }
 
-body {
-	line-height: 1;
-	//background-color: #faf9f8;
-}
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-	display: block;
-}
-
-nav ul {
-	list-style: none;
-}
-
-blockquote,
-q {
-	quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-	content: '';
-	content: none;
-}
-
-a {
-	margin: 0;
-	padding: 0;
-	font-size: 100%;
-	vertical-align: baseline;
-	background: transparent;
-}
-
-del {
-	text-decoration: line-through;
-}
-
-abbr[title],
-dfn[title] {
-	border-bottom: 1px dotted;
-	cursor: help;
-}
-
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-hr {
-	display: block;
-	height: 1px;
-	border: 0;
-	margin: 1em 0;
-	padding: 0;
-}
-
-input,
-select {
-	vertical-align: middle;
-}
-
-body::-webkit-scrollbar {
-	width: 0.7em;
-	//background: rgba(255,255,255, 0);
-}
-body::-webkit-scrollbar-thumb {
-	background: #8a8886;
+.appHeaderWrapper {
+	display: flex;
+	background-color: $ms-color-themePrimary;
 	height: 30px;
+	color: white;
+	align-items: center;
+	padding: 10px 20px;
 }
 
-body::-webkit-scrollbar-track-piece {
-	display: none;
+.appHeaderContainer {
+	font-weight: 600;
+	align-items: center;
+	display: flex;
+	margin-left: -10px;
 }
 
-small {
-	font-size: smaller;
+.appHeaderTitle {
+	margin-left: 10px;
+}
+
+.appHeaderPersona {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-left: auto;
+}
+
+.appHeaderUsername {
+	font-size: 14px;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.appBodyWrapper {
+	display: flex;
+	flex-direction: row;
+	flex: 1;
+}
+
+.appBodyLeft {
+	display: flex;
+	flex-direction: column;
+	margin: 0 40px;
+	flex: 1;
+	min-width: 900px;
+}
+
+.appBodyRight {
+	display: flex;
+	flex-direction: column;
+	background-color: $ms-color-gray20;
+	width: 500px;
+}
+
+.appFooterRow {
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+
+	div {
+		font-size: 12px;
+	}
+}
+
+.bodyContainer {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	padding: 0 8px;
+}
+
+.bodyHeader {
+	padding: 50px 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	&.subContent {
+		justify-content: unset;
+	}
+}
+
+.bodyHeaderTitle {
+	display: flex;
+	flex-direction: column;
+
+	.mainTitle {
+		font-size: 32px;
+	}
+
+	.breadCrumbs {
+		font-size: 14px;
+		margin-bottom: 10px;
+
+		.crumbLink {
+			font-size: 14px;
+			cursor: pointer;
+			color: $ms-color-themePrimary;
+		}
+	}
+}
+
+.bodyContent {
+	section {
+		margin-bottom: 20px;
+		border-radius: 2px;
+	}
 }

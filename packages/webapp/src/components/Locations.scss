@@ -1,0 +1,43 @@
+@import '@fluentui/react/dist/sass/_References';
+
+.locationPageContainer {
+	display: flex;
+	flex-direction: column;
+}
+
+.newLocationPanel {
+	margin-top: 50px;
+}
+
+.newLocationPanelBody {
+	margin-top: 30px;
+}
+
+.phaseGroupHeader {
+	padding: 20px 10px;
+	border-bottom: 1px solid $ms-color-gray40;
+	cursor: pointer;
+	display: flex;
+	justify-content: space-between;
+
+	.activeGroup {
+		display: flex;
+	}
+
+	&:hover {
+		background-color: $ms-color-gray40;
+	}
+
+	.groupToggleIcon {
+		padding: 0 10px;
+	}
+}
+.phaseGridContainer {
+	.ms-FocusZone {
+		max-width: 100% !important;
+		width: 100%;
+	}
+	.ms-DetailsRow-cell {
+		padding-left: 48px;
+	}
+}

@@ -8,7 +8,7 @@ import { observer } from 'mobx-react-lite'
 import { toProperCase } from '../utils/textUtils'
 import LocationsPhases from './LocationsPhases'
 
-import './Dashboard.scss'
+import './Locations.scss'
 
 export interface LocationsRegionsProp {
 	selectedState: any
