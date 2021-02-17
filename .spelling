@@ -18,3 +18,5 @@ zipfs
 http
 localhost:3000
 minified
+WebChat
+autodetect
