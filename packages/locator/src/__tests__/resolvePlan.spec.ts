@@ -93,10 +93,10 @@ describe('The Plan Locator', () => {
 			},
 		]
 		const plan = resolvePlan(
-			({
+			{
 				adminDistrict: 'AZ',
 				adminDistrict2: 'Maricopa',
-			} as any) as BingLocation,
+			} as BingLocation,
 			regions
 		)
 		expect(plan).toBeDefined()
@@ -134,10 +134,10 @@ describe('The Plan Locator', () => {
 			},
 		]
 		const plan = resolvePlan(
-			({
+			{
 				adminDistrict: 'AZ',
 				adminDistrict2: 'Maricopa',
-			} as any) as BingLocation,
+			} as BingLocation,
 			regions
 		)
 		expect(plan).toBeDefined()
