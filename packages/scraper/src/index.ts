@@ -51,7 +51,8 @@ async function scrapeSites(): Promise<void> {
 			100
 		).toFixed(2)}%) changed links since last run`
 	)
-	result.errors = result.errors.map((e) => e.message || e.toString()) as any
+	// @ts-expect-error downcasting to string[] for persistence
+	result.errors = result.errors.map((e) => e.message || e.toString())
 	saveRunResult(result)
 }
 
