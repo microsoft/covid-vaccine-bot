@@ -3,7 +3,7 @@
 .appPageContainer {
 	display: flex;
 	flex-direction: column;
-	min-height: 100vh;
+	min-height: calc(100vh - 76px);
 }
 
 .appHeaderWrapper {
@@ -63,6 +63,7 @@
 .appFooterPrivacy {
 	padding: 10px;
 	display: flex;
+	justify-content: center;
 
 	div {
 		font-size: 12px;

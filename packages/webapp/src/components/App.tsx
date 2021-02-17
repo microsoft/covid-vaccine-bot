@@ -17,8 +17,8 @@ import { setCurrentLanguage } from '../mutators/repoMutators'
 import { isUserAuthenticated } from '../selectors/authSelectors'
 import { getAppStore } from '../store/store'
 import { getLanguageDisplayText } from '../utils/textUtils'
-import AppFooter from './AppFooter'
 import Dashboard from './Dashboard'
+import { Footer } from './Footer'
 import Locations from './Locations'
 import Login from './Login'
 import QualifierPanel from './QualifierPanel'
@@ -41,7 +41,7 @@ export default observer(function App() {
 	})
 
 	return (
-		<div>
+		<div className="rootContentWrapper">
 			{isUserAuthenticated() ? (
 				<>
 					<Switch>
@@ -112,7 +112,6 @@ export default observer(function App() {
 												<Locations />
 											</PivotItem>
 										</Pivot>
-										<AppFooter />
 									</div>
 									{state.toggleQualifier && (
 										<div className="appBodyRight">
@@ -137,6 +136,7 @@ export default observer(function App() {
 					</Route>
 				</Switch>
 			)}
+			<Footer />
 		</div>
 	)
 })
