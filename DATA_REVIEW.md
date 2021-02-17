@@ -2812,6 +2812,9 @@
 |c19.entry/agreement_options|["I Agree", "Cancel"]|not defined|not defined|not defined|not defined|none
 |c19.entry/unknown_question|I'm not sure how to help you with that. Please try one of the prepared questions.|not defined|not defined|not defined|not defined|none
 |c19.locate/what_is_your_location|I'll need to determine your location to look up your local plan. Where do you live?|not defined|not defined|not defined|not defined|none
+|c19.locate/select_location|I found multiple matching locations. Please select the correct location or re-enter your location.|not defined|not defined|not defined|not defined|none
+|c19.locate/reenter_location_option|Re-enter location|not defined|not defined|not defined|not defined|none
+|c19.locate/location_outside_region_scope|$LOCATION falls outside of $REGION.|not defined|not defined|not defined|not defined|none
 |c19.locate/api_error|Oops. Something went wrong.|not defined|not defined|not defined|not defined|none
 |c19.moreinfo/lookup|Let me see if I can find more details on the question: $QUESTION|not defined|not defined|not defined|not defined|none
 |c19.moreinfo/no_info_available|Unfortunately, I don't have any more details on that yet. Try checking your state's COVID-19 info site at $INFO_LINK|not defined|not defined|not defined|not defined|none
