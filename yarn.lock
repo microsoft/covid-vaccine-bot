@@ -3299,6 +3299,19 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@ms-covidbot/healthbot-app@workspace:packages/healthbotapp":
+  version: 0.0.0-use.local
+  resolution: "@ms-covidbot/healthbot-app@workspace:packages/healthbotapp"
+  dependencies:
+    cookie-parser: ^1.4.5
+    dotenv: ^8.2.0
+    express: ^4.17.1
+    jsonwebtoken: ^8.5.1
+    request: ^2.88.2
+    request-promise: ^4.2.5
+  languageName: unknown
+  linkType: soft
+
 "@ms-covidbot/policy-locator@workspace:packages/locator":
   version: 0.0.0-use.local
   resolution: "@ms-covidbot/policy-locator@workspace:packages/locator"
@@ -7436,7 +7449,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"bluebird@npm:^3.3.5, bluebird@npm:^3.5.5":
+"bluebird@npm:^3.3.5, bluebird@npm:^3.5.0, bluebird@npm:^3.5.5":
   version: 3.7.2
   resolution: "bluebird@npm:3.7.2"
   checksum: 4f2288662f3d4eadbb82d4daa4a7d7976a28fa3c7eb4102c9b4033b03e5be4574ba123ac52a7c103cde4cb7b2d2afc1dbe41817ca15a29ff21ecd258d0286047
@@ -8717,6 +8730,16 @@ __metadata:
   version: 0.3.5
   resolution: "convert-source-map@npm:0.3.5"
   checksum: d31937554444da25c0a23f75158cc420f13d9b6ae54fd1217522184670c9bcac6e458e53c03fe3fd191b7f1b13c6d135f9771916fcd1d5667d65ce5e4f00ab6d
+  languageName: node
+  linkType: hard
+
+"cookie-parser@npm:^1.4.5":
+  version: 1.4.5
+  resolution: "cookie-parser@npm:1.4.5"
+  dependencies:
+    cookie: 0.4.0
+    cookie-signature: 1.0.6
+  checksum: a3eeda832d81862477e40444a8d411595b91e15f9b1d2b397a173e9efa744a29129de9aaa99342cf9468641d854a464c4e215cd60d1df49374c9ccffa1af52bf
   languageName: node
   linkType: hard
 
@@ -20299,6 +20322,20 @@ fsevents@^1.2.7:
   peerDependencies:
     request: ^2.34
   checksum: 532570f00559f826ad372d36a152c3cf1aa184d0876b04ed7c18a9fa391fa2108978eca837ae1fb681d2dab63bd6c74c6660022b82ecdb2682d77859314d0b6e
+  languageName: node
+  linkType: hard
+
+"request-promise@npm:^4.2.5":
+  version: 4.2.6
+  resolution: "request-promise@npm:4.2.6"
+  dependencies:
+    bluebird: ^3.5.0
+    request-promise-core: 1.1.4
+    stealthy-require: ^1.1.1
+    tough-cookie: ^2.3.3
+  peerDependencies:
+    request: ^2.34
+  checksum: 6a715e7817dd11a77ac2a1eaa334a3fb5616436be1a2ffe07f605711a1cd6bf87149aa6173dfda8897f81e399b86f98ed088c594fa1a726958777fcb4a26a991
   languageName: node
   linkType: hard
 

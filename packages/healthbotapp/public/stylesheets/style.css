@@ -1,0 +1,114 @@
+html, body {
+  height: 100%;
+}
+body {
+  margin: 0;
+}
+
+#webchat {
+  height: 100%;
+  width: 100%;
+}
+
+#webchat[watermark="true"] [role="complementary"] ul[role="list"]::after {
+  content: "Powered By ...";
+  background: linear-gradient(rgba(248, 248, 248, 0), rgba(248, 248, 248, .63), #F8F8F8 40%);
+  bottom: 0;
+  right: 0;
+  color: #707070;
+  display: block;
+  font-family: 'Segoe Semibold', Calibri, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 12px;
+  padding: 15px 10px 10px;
+  position: absolute;
+  position: sticky;
+  text-align: right;
+}
+
+#webchat[watermark="true"] .webchat__scrollToEndButton {
+  bottom: 32px;
+  left: 50%;
+  right: unset;
+  transform: translate(-50%, 0);
+}
+
+.old-button, .ac-pushButton {
+  font-size: medium !important;
+  line-height: 1.2rem;
+  padding: 0.2rem !important;
+}
+
+.ac-pushButton:hover {
+  background-color:rgb(0, 120, 215) !important;
+  color: white !important;
+  cursor: pointer;
+}
+
+.webchat__stackedLayout--fromUser .webchat__bubble__content{
+  border-radius: 10px;
+  background-color: rgb(169, 226, 246) !important;
+  color: black;
+}
+
+.webchat__bubble__content{
+  border-radius: 10px;
+  background-color: rgb(212, 226, 235) !important;
+  border-radius: 10px !important;
+  color: white;
+  margin: 0 10px;
+}
+
+.webchat__stacked_indented_content {
+  direction: rtl;
+  text-align: right
+}
+
+.webchat__stackedLayout--fromUser {
+  direction: ltr;
+}
+
+.webchat__stackedLayout--fromUser .webchat__stackedLayout__avatar {
+  display: none;
+}
+
+.webchat__stackedLayout__content .css-1s8geyi {
+  display: none;
+}
+
+.ac-pushButton > div, .old-button > div {
+  white-space: pre-wrap !important;
+  text-overflow: unset !important;
+}
+
+.old-button {
+  border-style: solid;
+    border-width: 1px;
+    padding: 10px;
+    color: black!important;
+}
+
+div.css-y1c0xs {
+  scroll-behavior: smooth
+}
+
+.ac-input p {
+  font-size: medium;
+  line-height: 1.2rem;
+  white-space: pre-wrap;
+  overflow: unset;
+}
+
+
+input[type="checkbox" i]:checked + * + *{
+  color: #00589d !important;
+  background-color: white;
+  font-weight: bold !important;
+
+}
+.ac-input input {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin: 0.3em !important;
+
+
+}
