@@ -3,16 +3,16 @@
  * Licensed under the MIT license. See LICENSE file in the project.
  */
 import { observer } from 'mobx-react-lite'
-import * as React from 'react'
+import { useState, useCallback } from 'react'
 import LocationsRegions from './LocationsRegions'
 import LocationsStates from './LocationsStates'
 
 import './Locations.scss'
 
 export default observer(function Locations() {
-	const [selectedState, setSelectedState] = React.useState<any>(null)
+	const [selectedState, setSelectedState] = useState<any>(null)
 
-	const onNavigateBack = React.useCallback(() => {
+	const onNavigateBack = useCallback(() => {
 		setSelectedState(null)
 	}, [])
 
