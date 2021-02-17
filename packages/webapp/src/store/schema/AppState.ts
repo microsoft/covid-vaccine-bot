@@ -16,4 +16,5 @@ export interface AppState {
 	currentLanguage: string
 	toggleQualifier: boolean
 	toggleAddLocation: boolean
+	isEditable: boolean
 }

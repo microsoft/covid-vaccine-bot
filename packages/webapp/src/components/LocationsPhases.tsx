@@ -8,10 +8,13 @@ import {
 	IGroup,
 	FontIcon,
 	IGroupDividerProps,
+	IDetailsListProps,
+	DetailsRow,
 } from '@fluentui/react'
 import { observer } from 'mobx-react-lite'
 import { useState, useEffect } from 'react'
 import { getAppStore } from '../store/store'
+import PhaseForm from './PhaseForm'
 
 import './Locations.scss'
 
@@ -33,7 +36,7 @@ const phaseColumns = [
 ]
 
 export default observer(function LocationsPhases(props: LocationsPhasesProp) {
-	const { globalFileData, currentLanguage, repoFileData } = getAppStore()
+	const { globalFileData, currentLanguage, repoFileData, isEditable } = getAppStore()
 	const { isRegion, value, selectedState } = props
 
 	const [phaseGroup, setPhaseGroup] = useState<IGroup[]>([])
@@ -116,15 +119,27 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 							`Phase ${group.key}`
 						)}
 					</div>
-					{group.data.isActive && (
-						<div className="activeGroup">
-							<FontIcon
-								iconName="StatusCircleInner"
-								style={{ color: '#00b7c3' }}
-							/>
-							Active Phase
+					<div className='groupHeaderButtons'>
+						<div className='addQualifierGroup'>
+							<FontIcon iconName='CircleAdditionSolid' style={{color: '#0078d4'}}/>
+							Add Qualifier
 						</div>
-					)}
+						<div className='removePhaseGroup'>
+							<FontIcon iconName='Blocked2Solid' style={{color: '#d13438'}}/>
+							Remove
+						</div>
+						{group.data.isActive ? (
+							<div className='activeGroup'>
+								<FontIcon iconName='CircleFill' style={{color: '#00b7c3'}}/>
+								Active Phase
+							</div>
+						) : (
+							<div className='activeGroup'>
+								<FontIcon iconName='CircleRing' style={{color: '#00b7c3'}}/>
+								Set as Active
+							</div>
+						)}
+					</div>
 				</div>
 			)
 		}
@@ -135,6 +150,19 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 		return () => {
 			props!.onToggleCollapse!(props!.group!)
 		}
+	}
+
+	const onRenderRow: IDetailsListProps['onRenderRow'] = props => {
+		if (props) {
+			return isEditable ?
+			<PhaseForm
+				rowItems={props}
+				selectedState={selectedState}
+			/>
+			:
+			<DetailsRow {...props} />
+		}
+		return null;
 	}
 
 	return (
@@ -148,6 +176,7 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 					showEmptyGroups: false,
 					onRenderHeader: onRenderHeader,
 				}}
+				onRenderRow={onRenderRow}
 				isHeaderVisible={false}
 				checkboxVisibility={2}
 				constrainMode={1}

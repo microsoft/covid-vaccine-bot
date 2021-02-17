@@ -1,0 +1,22 @@
+@import '@fluentui/react/dist/sass/_References';
+
+.phaseDetailRow {
+	display: flex;
+	flex-direction: column;
+	padding: 20px 0;
+    width: calc(100% - 8px);
+
+	.mainRow {
+		display: flex;
+		flex-direction: row;
+
+		.tagDropdown {
+			padding: 0 10px 5px 0;
+		}
+	}
+
+	.detailsRow {
+		display: flex;
+		flex-direction: column;
+	}
+}
