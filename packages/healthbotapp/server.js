@@ -6,7 +6,6 @@
 require('dotenv').config()
 const crypto = require('crypto')
 const path = require('path')
-const cookieParser = require('cookie-parser')
 const express = require('express')
 const jwt = require('jsonwebtoken')
 const rp = require('request-promise')
@@ -19,7 +18,6 @@ const directLineTokenEp = `https://${
 
 // Initialize the web app instance,
 const app = express()
-app.use(cookieParser())
 
 let options = {}
 // uncomment the line below if you wish to allow only specific domains to embed this page as a frame
@@ -34,11 +32,6 @@ const region = process.env.REGION || 'Unknown'
 app.listen(port, function () {
 	console.log('Express server listening on port ' + port)
 })
-
-function isUserAuthenticated() {
-	// add here the logic to verify the user is authenticated
-	return true
-}
 
 const appConfig = {
 	isHealthy: false,
@@ -82,16 +75,12 @@ app.get('/health', function (req, res) {
 })
 
 app.post('/chatBot', function (req, res) {
-	if (!isUserAuthenticated()) {
-		res.status(403).send()
-		return
-	}
 	rp(appConfig.options)
 		.then(function (parsedBody) {
-			var userid = req.query.userId || req.cookies.userid
+			var userid = req.query.userId
 			if (!userid) {
 				userid = crypto.randomBytes(4).toString('hex')
-				res.cookie('userid', userid)
+				// res.cookie('userid', userid)
 			}
 
 			var response = {}
