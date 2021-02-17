@@ -4,7 +4,7 @@
  */
 import { IGroup, DetailsList } from '@fluentui/react'
 import { observer } from 'mobx-react-lite'
-import * as React from 'react'
+import { useState, useEffect } from 'react'
 import { getAppStore } from '../store/store'
 import { toProperCase } from '../utils/textUtils'
 
@@ -12,12 +12,10 @@ import './QualifierPanel.scss'
 
 export default observer(function QualifierPanel() {
 	const { globalFileData, currentLanguage } = getAppStore()
-	const [qualifierGroup, setQualifierGroup] = React.useState<IGroup[]>([])
-	const [qualifierGroupItems, setQualifierGroupItems] = React.useState<any[]>(
-		[]
-	)
+	const [qualifierGroup, setQualifierGroup] = useState<IGroup[]>([])
+	const [qualifierGroupItems, setQualifierGroupItems] = useState<any[]>([])
 
-	React.useEffect(() => {
+	useEffect(() => {
 		if (globalFileData?.customStrings) {
 			const groupKeys: any[] = []
 			const questionItemKeys: any[] = []
@@ -68,12 +66,7 @@ export default observer(function QualifierPanel() {
 			setQualifierGroup(tempQualifierGroup)
 			setQualifierGroupItems(tempQualifierGroupItems)
 		}
-	}, [
-		globalFileData,
-		currentLanguage,
-		setQualifierGroup,
-		setQualifierGroupItems,
-	])
+	}, [globalFileData, currentLanguage, setQualifierGroup, setQualifierGroupItems])
 
 	const columns = [
 		{

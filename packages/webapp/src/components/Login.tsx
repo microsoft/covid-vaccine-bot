@@ -4,7 +4,6 @@
  */
 import { observer } from 'mobx-react-lite'
 import { DefaultButton } from 'office-ui-fabric-react'
-import * as React from 'react'
 import { loginUser } from '../actions/authActions'
 
 import './Login.scss'

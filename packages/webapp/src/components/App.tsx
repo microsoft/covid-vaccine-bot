@@ -11,7 +11,6 @@ import {
 	PivotItem,
 } from '@fluentui/react'
 import { observer } from 'mobx-react-lite'
-import * as React from 'react'
 import { Switch, Route, Redirect } from 'react-router-dom'
 import { setCurrentLanguage } from '../mutators/repoMutators'
 import { isUserAuthenticated } from '../selectors/authSelectors'

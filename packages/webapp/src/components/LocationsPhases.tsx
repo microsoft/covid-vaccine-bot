@@ -10,7 +10,7 @@ import {
 	IGroupDividerProps,
 } from '@fluentui/react'
 import { observer } from 'mobx-react-lite'
-import * as React from 'react'
+import { useState, useEffect } from 'react'
 import { getAppStore } from '../store/store'
 
 import './Locations.scss'
@@ -36,10 +36,10 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 	const { globalFileData, currentLanguage, repoFileData } = getAppStore()
 	const { isRegion, value, selectedState } = props
 
-	const [phaseGroup, setPhaseGroup] = React.useState<IGroup[]>([])
-	const [phaseGroupItems, setPhaseGroupItems] = React.useState<any[]>([])
+	const [phaseGroup, setPhaseGroup] = useState<IGroup[]>([])
+	const [phaseGroupItems, setPhaseGroupItems] = useState<any[]>([])
 
-	React.useEffect(() => {
+	useEffect(() => {
 		if (repoFileData) {
 			const tempPhaseGroup: IGroup[] = []
 			const tempPhaseGroupItems: any[] = []
@@ -94,14 +94,7 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 			setPhaseGroup(tempPhaseGroup)
 			setPhaseGroupItems(tempPhaseGroupItems)
 		}
-	}, [
-		repoFileData,
-		globalFileData,
-		selectedState,
-		currentLanguage,
-		isRegion,
-		value,
-	])
+	}, [repoFileData, globalFileData, selectedState, currentLanguage, isRegion, value])
 
 	const onRenderHeader: IDetailsGroupRenderProps['onRenderHeader'] = (
 		props
