@@ -3,7 +3,6 @@
  * Licensed under the MIT license. See LICENSE file in the project.
  */
 import { observer } from 'mobx-react-lite'
-import * as React from 'react'
 import { Switch, Route, Redirect } from 'react-router-dom'
 import { isUserAuthenticated } from '../selectors/authSelectors'
 import About from './About'

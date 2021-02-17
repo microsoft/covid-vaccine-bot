@@ -13,7 +13,7 @@ import {
 } from '@fluentui/react'
 import { useBoolean } from '@uifabric/react-hooks'
 import { observer } from 'mobx-react-lite'
-import * as React from 'react'
+import { useState, useRef, useEffect, useCallback, FormEvent } from 'react'
 import { getAppStore } from '../store/store'
 
 import './Dashboard.scss'
@@ -28,8 +28,8 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 	const [isOpen, { setTrue: openPanel, setFalse: dismissPanel }] = useBoolean(
 		false
 	)
-	const [filteredStateList, setFilteredStateList] = React.useState<any[]>([])
-	const stateRepoFullList = React.useRef<any[]>([])
+	const [filteredStateList, setFilteredStateList] = useState<any[]>([])
+	const stateRepoFullList = useRef<any[]>([])
 
 	const state = getAppStore()
 
@@ -50,7 +50,7 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 		},
 	]
 
-	React.useEffect(() => {
+	useEffect(() => {
 		if (state.repoFileData) {
 			const tempList: any[] = []
 			Object.entries(state.repoFileData).forEach(([key, value]) => {
@@ -76,16 +76,11 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 			setFilteredStateList(tempList)
 			stateRepoFullList.current = tempList
 		}
-	}, [
-		state.repoFileData,
-		state.globalFileData,
-		state.currentLanguage,
-		stateRepoFullList,
-	])
+	}, [state.repoFileData, state.globalFileData, state.currentLanguage, stateRepoFullList])
 
-	const onStateFilter = React.useCallback(
+	const onStateFilter = useCallback(
 		(
-			event: React.FormEvent<HTMLInputElement | HTMLTextAreaElement>,
+			event: FormEvent<HTMLInputElement | HTMLTextAreaElement>,
 			text?: string | undefined
 		) => {
 			if (text) {
@@ -101,7 +96,7 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 		[stateRepoFullList]
 	)
 
-	const openSelection = React.useCallback(
+	const openSelection = useCallback(
 		(item: any) => {
 			onSelectedItem(item)
 		},

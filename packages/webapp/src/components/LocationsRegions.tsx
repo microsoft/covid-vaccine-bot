@@ -3,8 +3,8 @@
  * Licensed under the MIT license. See LICENSE file in the project.
  */
 import { DetailsList, DetailsListLayoutMode } from '@fluentui/react'
+import { useState, useRef, useEffect, useCallback } from 'react'
 import { observer } from 'mobx-react-lite'
-import * as React from 'react'
 import { toProperCase } from '../utils/textUtils'
 import LocationsPhases from './LocationsPhases'
 
@@ -16,11 +16,9 @@ export interface LocationsRegionsProp {
 }
 
 export default observer(function LocationsRegions(props: LocationsRegionsProp) {
-	const [filteredRegionsList, setFilteredRegionsList] = React.useState<any[]>(
-		[]
-	)
-	const stateRegionsFullList = React.useRef<any[]>([])
-	const [selectedPhaseItem, setSelectedPhaseItem] = React.useState<{
+	const [filteredRegionsList, setFilteredRegionsList] = useState<any[]>([])
+	const stateRegionsFullList = useRef<any[]>([])
+	const [selectedPhaseItem, setSelectedPhaseItem] = useState<{
 		isRegion: boolean
 		value: any
 		selectedState: any
@@ -70,7 +68,7 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 		},
 	]
 
-	React.useEffect(() => {
+	useEffect(() => {
 		if (selectedState?.regions > 0) {
 			const tempList: any[] = []
 			Object.entries(selectedState.value.regions).forEach(([key, value]) => {
@@ -104,7 +102,7 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 		}
 	)
 
-	const selectedPhase = React.useCallback(
+	const selectedPhase = useCallback(
 		(isRegion: boolean, value: any) => {
 			setSelectedPhaseItem({ isRegion, value, selectedState })
 		},
