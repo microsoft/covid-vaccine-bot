@@ -55,7 +55,7 @@ export default observer(function Dashboard() {
 
 	const onIssueActionRender =  (item?: any, index?: number, column?: IColumn) =>  {
 
-		return (<a className="tableActionLink" href={item?.action?.html_url} target="_blank" >
+		return (<a className="tableActionLink" href={item?.action?.html_url} target="_blank" rel="noreferrer">
 							<FontIcon
 								iconName="CircleAdditionSolid"
 							/> 
@@ -66,7 +66,7 @@ export default observer(function Dashboard() {
 
 	const onPRActionRender =  (item?: any, index?: number, column?: IColumn) =>  {
 
-		return (<a className="tableActionLink" href={item?.action?.html_url} target="_blank" >
+		return (<a className="tableActionLink" href={item?.action?.html_url} target="_blank" rel="noreferrer">
 							<FontIcon
 								iconName="CircleAdditionSolid"
 							/> 
