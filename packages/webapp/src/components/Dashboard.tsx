@@ -10,8 +10,8 @@
 	FontIcon
 } from '@fluentui/react'
 import { observer } from 'mobx-react-lite'
-import { getAppStore } from '../store/store'
 import { useState, useEffect } from 'react'
+import { getAppStore } from '../store/store'
 
 
 
@@ -28,8 +28,8 @@ export default observer(function Dashboard() {
 	useEffect(() => { 
 		if(state.issues){
 
-			let tempPRList:any = [];
-			let tempIssueList:any = [];
+			const tempPRList:any = [];
+			const tempIssueList:any = [];
 			state.issues.forEach( (item:any) => {
 
 				const requestUpdate:Date = new Date(item.updated_at);
@@ -55,7 +55,7 @@ export default observer(function Dashboard() {
 
 	const onIssueActionRender =  (item?: any, index?: number, column?: IColumn) =>  {
 
-		return (<a className="tableActionLink" href={item?.action?.html_url} target="_blank" >
+		return (<a className="tableActionLink" href={item?.action?.html_url} target="_blank" rel="noreferrer">
 							<FontIcon
 								iconName="CircleAdditionSolid"
 							/> 
@@ -66,7 +66,7 @@ export default observer(function Dashboard() {
 
 	const onPRActionRender =  (item?: any, index?: number, column?: IColumn) =>  {
 
-		return (<a className="tableActionLink" href={item?.action?.html_url} target="_blank" >
+		return (<a className="tableActionLink" href={item?.action?.html_url} target="_blank" rel="noreferrer">
 							<FontIcon
 								iconName="CircleAdditionSolid"
 							/> 
