@@ -61,12 +61,13 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 				}
 
 				tempPhaseGroup.push({
-					key: phase.id,
+					key: phase.id + tempPhaseGroup.length,
 					name: phase.label,
 					startIndex: tempPhaseGroupItems.length,
 					count: phase.qualifications.length,
 					isCollapsed: isCollapsed,
 					data: {
+						keyId: phase.id,
 						isActive: isActivePhase,
 					},
 				})
@@ -113,10 +114,10 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 						/>
 						{group.name ? (
 							<span>
-								{group.name} <small>({group.key})</small>
+								{group.name} <small>({group.data.keyId})</small>
 							</span>
 						) : (
-							`Phase ${group.key}`
+							`Phase ${group.data.keyId}`
 						)}
 					</div>
 					<div className='groupHeaderButtons'>

@@ -47,7 +47,7 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 		{
 			key: 'idCol',
 			name: 'Phase ID',
-			fieldName: 'key',
+			fieldName: 'keyId',
 			minWidth: 50,
 			maxWidth: 200,
 			isResizable: false,
@@ -88,11 +88,12 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 	}, [selectedState, stateRegionsFullList])
 
 	const phaseItems: any[] = selectedState.value.vaccination.content.phases.map(
-		(phase: any) => {
+		(phase: any, idx:number) => {
 			const activePhase: string =
 				selectedState.value.vaccination.content.activePhase
 			return {
-				key: String(phase.id) + (phase.id === activePhase ? ' (active)' : ''),
+				key: String(phase.id) + idx,
+				keyId: String(phase.id) + (phase.id === activePhase ? ' (active)' : ''),
 				name:
 					toProperCase(phase.label ?? phase.id) +
 					(phase.id === activePhase ? ' (active)' : ''),
