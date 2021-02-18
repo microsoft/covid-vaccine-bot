@@ -23,6 +23,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:."
       },
       {
+        "name": "@ms-covidbot/healthbot-app",
+        "reference": "workspace:packages/healthbotapp"
+      },
+      {
         "name": "@ms-covidbot/policy-locator",
         "reference": "workspace:packages/locator"
       },
@@ -47,6 +51,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     "ignorePatternData": "(^(?:\\.yarn\\/sdks(?:\\/(?!\\.)(?:(?:(?!(?:^|\\/)\\.).)*?)|$))$)",
     "fallbackExclusionList": [
       ["@ms-covidbot/data-portal", ["workspace:packages/webapp"]],
+      ["@ms-covidbot/healthbot-app", ["workspace:packages/healthbotapp"]],
       ["@ms-covidbot/policy-locator", ["workspace:packages/locator"]],
       ["@ms-covidbot/source-scraper", ["workspace:packages/scraper"]],
       ["@ms-covidbot/state-plan-schema", ["workspace:packages/schema"]],
@@ -6896,6 +6901,21 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["satcheljs", "virtual:bfefbaeed7a76de0302e79ec49642207d6800ce498d118ecca130599dd9bd536cfb0110ea455ee7855f3b0f4435ef18bf9f8373269f4a50e7772f229ec7e4bcc#npm:4.2.3"],
             ["typescript", "patch:typescript@npm%3A4.1.5#builtin<compat/typescript>::version=4.1.5&hash=cc6730"],
             ["web-vitals", "npm:1.1.0"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
+      ["@ms-covidbot/healthbot-app", [
+        ["workspace:packages/healthbotapp", {
+          "packageLocation": "./packages/healthbotapp/",
+          "packageDependencies": [
+            ["@ms-covidbot/healthbot-app", "workspace:packages/healthbotapp"],
+            ["cookie-parser", "npm:1.4.5"],
+            ["dotenv", "npm:8.2.0"],
+            ["express", "npm:4.17.1"],
+            ["jsonwebtoken", "npm:8.5.1"],
+            ["request", "npm:2.88.2"],
+            ["request-promise", "virtual:532d65881dd8bb736e4fb8baf65b0fd97ed4f5cf77b34397bdbbb1f195e458a83c0566f3ae483b710c80f0093f7ffeb039a177559e6123b1d478af0867a637d3#npm:4.2.6"]
           ],
           "linkType": "SOFT",
         }]
@@ -13836,6 +13856,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/cookie-npm-0.4.0-4b3d629e45-7aaef4b642.zip/node_modules/cookie/",
           "packageDependencies": [
             ["cookie", "npm:0.4.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["cookie-parser", [
+        ["npm:1.4.5", {
+          "packageLocation": "./.yarn/cache/cookie-parser-npm-1.4.5-85a59b20ec-a3eeda832d.zip/node_modules/cookie-parser/",
+          "packageDependencies": [
+            ["cookie-parser", "npm:1.4.5"],
+            ["cookie", "npm:0.4.0"],
+            ["cookie-signature", "npm:1.0.6"]
           ],
           "linkType": "HARD",
         }]
@@ -27542,6 +27573,32 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["tough-cookie", "npm:2.5.0"],
             ["tunnel-agent", "npm:0.6.0"],
             ["uuid", "npm:3.4.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["request-promise", [
+        ["npm:4.2.6", {
+          "packageLocation": "./.yarn/cache/request-promise-npm-4.2.6-37010e90c3-6a715e7817.zip/node_modules/request-promise/",
+          "packageDependencies": [
+            ["request-promise", "npm:4.2.6"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:532d65881dd8bb736e4fb8baf65b0fd97ed4f5cf77b34397bdbbb1f195e458a83c0566f3ae483b710c80f0093f7ffeb039a177559e6123b1d478af0867a637d3#npm:4.2.6", {
+          "packageLocation": "./.yarn/$$virtual/request-promise-virtual-896fa36e8e/0/cache/request-promise-npm-4.2.6-37010e90c3-6a715e7817.zip/node_modules/request-promise/",
+          "packageDependencies": [
+            ["request-promise", "virtual:532d65881dd8bb736e4fb8baf65b0fd97ed4f5cf77b34397bdbbb1f195e458a83c0566f3ae483b710c80f0093f7ffeb039a177559e6123b1d478af0867a637d3#npm:4.2.6"],
+            ["@types/request", null],
+            ["bluebird", "npm:3.7.2"],
+            ["request", "npm:2.88.2"],
+            ["request-promise-core", "virtual:48c169dfbc5a20d482f6f53981d833171684cd2526b8af843d2d7920648dd2b6d6a5b397ca0d4752f7a67ecf52b6f6a45eeb4cdd147c8c5ff574670fde8eb1b8#npm:1.1.4"],
+            ["stealthy-require", "npm:1.1.1"],
+            ["tough-cookie", "npm:2.5.0"]
+          ],
+          "packagePeers": [
+            "@types/request",
+            "request"
           ],
           "linkType": "HARD",
         }]

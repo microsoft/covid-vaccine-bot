@@ -2810,9 +2810,15 @@
 |c19.entry/tos|The COVID-19 Vaccine Eligibility bot aggregate data from trusted and verified sources to help understand your vaccine eligibility. This system does not provide medical advice and is not intended for use as a diagnostic or treatment tool for any disease, including COVID-19. Please do not provide any personally identifying information to this system, please refer to the [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839) for more information.  You can provide feedback by emailing [covidbot-feedback@microsoft.com](mailto:covidbot-feedback@microsoft.com)|not defined|not defined|not defined|not defined|none
 |c19.entry/do_you_agree_to_terms|Do you agree to these terms?|not defined|not defined|not defined|not defined|none
 |c19.entry/agreement_options|["I Agree", "Cancel"]|not defined|not defined|not defined|not defined|none
+|c19.question_series/answer_options_yesno|["Yes", "No"]|not defined|not defined|not defined|not defined|none
+|c19.question_series/answer_options_yesnoinfo|["Yes", "No", "More Info"]|not defined|not defined|not defined|not defined|none
 |c19.entry/unknown_question|I'm not sure how to help you with that. Please try one of the prepared questions.|not defined|not defined|not defined|not defined|none
 |c19.locate/what_is_your_location|I'll need to determine your location to look up your local plan. Where do you live?|not defined|not defined|not defined|not defined|none
+|c19.locate/select_location|I found multiple matching locations. Please select the correct location or re-enter your location.|not defined|not defined|not defined|not defined|none
+|c19.locate/reenter_location_option|Re-enter location|not defined|not defined|not defined|not defined|none
+|c19.locate/location_outside_region_scope|$LOCATION falls outside of $REGION.|not defined|not defined|not defined|not defined|none
 |c19.locate/api_error|Oops. Something went wrong.|not defined|not defined|not defined|not defined|none
+|c19.locate/location_entry_submit_button|Submit|not defined|not defined|not defined|not defined|none
 |c19.moreinfo/lookup|Let me see if I can find more details on the question: $QUESTION|not defined|not defined|not defined|not defined|none
 |c19.moreinfo/no_info_available|Unfortunately, I don't have any more details on that yet. Try checking your state's COVID-19 info site at $INFO_LINK|not defined|not defined|not defined|not defined|none
 |c19.safety/cdc_link|You can find more information about the safety of the COVID-19 vaccine at the [CDC's Website](https://www.cdc.gov/coronavirus/2019-ncov/vaccines/safety.html)|not defined|not defined|not defined|not defined|none

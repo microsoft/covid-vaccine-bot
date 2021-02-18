@@ -135,9 +135,10 @@ const REGION_TYPES: Record<
 
 // from https://youmightnotneed.com/lodash/
 const get = (
-	obj: Record<string, any>,
+	/* eslint-disable-next-line @typescript-eslint/no-explicit-any */
+	obj: any,
 	path: string | string[],
-	defValue: any = undefined
+	defValue: unknown = undefined
 ) => {
 	// If path is not defined or it has false value
 	if (!path) return undefined

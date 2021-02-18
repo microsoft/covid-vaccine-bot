@@ -4,7 +4,6 @@
  */
 import { orchestrator } from 'satcheljs'
 import {
-	getBranches,
 	createPR,
 	getRepoFileData,
 	initializeGitData,
@@ -13,13 +12,10 @@ import {
 	setBranchList,
 	handleCreatePR,
 	setRepoFileData,
+	setIssuesList
 } from '../mutators/repoMutators'
 import { repoServices } from '../services/repoServices'
 
-orchestrator(getBranches, async () => {
-	const resp = await repoServices('getBranches')
-	setBranchList(resp)
-})
 
 orchestrator(createPR, async (message) => {
 	const { fileData } = message
@@ -38,4 +34,7 @@ orchestrator(initializeGitData, async () => {
 
 	resp = await repoServices('getRepoFileData')
 	setRepoFileData(resp)
+
+	resp = await repoServices('getIssues')
+	setIssuesList(resp)
 })

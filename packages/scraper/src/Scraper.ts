@@ -109,10 +109,8 @@ export class Scraper {
 			await page.goto(link.url)
 			await page.waitForSelector('body')
 
-			const pageResult = await page.evaluate(
-				extractPageData,
-				link as Record<string, any>
-			)
+			// eslint-disable-next-line @typescript-eslint/no-explicit-any
+			const pageResult = await page.evaluate(extractPageData, link as any)
 
 			if (!pageResult.content) {
 				throw new Error(`no content at ${link.url}`)
