@@ -19,8 +19,8 @@ export const getPhaseTagItems = (selectedState?: any) => {
     const tagKeys: any[] = []
     const tagList: any[] = []
     phaseQualifiers.forEach(qualifier => {
-        let baseKey = qualifier.key.split('/')
-        let tagKey = baseKey[1].split('.')[0];
+        const baseKey = qualifier.key.split('/')
+        const tagKey = baseKey[1].split('.')[0];
 
         if (!tagKeys.includes(tagKey)) {
             tagKeys.push(tagKey)

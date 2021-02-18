@@ -47,7 +47,6 @@ export const setRepoFileData = mutatorAction(
 				cdcStateNames: data[2],
 				cdcStateLinks: data[3],
 			}
-			console.log(data)
 		}
 	}
 )

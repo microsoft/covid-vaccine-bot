@@ -3,8 +3,8 @@
  * Licensed under the MIT license. See LICENSE file in the project.
  */
 import { DetailsList, DetailsListLayoutMode } from '@fluentui/react'
-import { useState, useRef, useEffect, useCallback } from 'react'
 import { observer } from 'mobx-react-lite'
+import { useState, useRef, useEffect, useCallback } from 'react'
 import { toProperCase } from '../utils/textUtils'
 import LocationsPhases from './LocationsPhases'
 
