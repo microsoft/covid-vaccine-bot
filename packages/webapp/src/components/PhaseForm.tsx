@@ -49,6 +49,7 @@ export default observer(function PhaseForm(props: PhaseFormProps) {
 				)
 			)
 			setMoreInfoText('')
+            setMoreInfoUrl('')
 		},
 		[phaseQualifierItems]
 	)
