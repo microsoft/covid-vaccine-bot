@@ -8,8 +8,7 @@ import {
 	IGroup,
 	FontIcon,
 	IGroupDividerProps,
-	IDetailsListProps,
-	DetailsRow,
+	IDetailsListProps
 } from '@fluentui/react'
 import { observer } from 'mobx-react-lite'
 import { useState, useEffect } from 'react'
@@ -91,6 +90,10 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 					tempPhaseGroupItems.push({
 						key: phase.id + '-' + keyId,
 						text: label,
+						moreInfoKey: qualification?.moreInfoText ? qualification.moreInfoText.toLowerCase() : '',
+						moreInfoUrl: qualification.moreInfoUrl,
+						qualifierId: keyId,
+						tagKey: keyId.split('/')[1].split('.')[0]
 					})
 				})
 			})
@@ -155,13 +158,7 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 
 	const onRenderRow: IDetailsListProps['onRenderRow'] = props => {
 		if (props) {
-			return isEditable ?
-			<PhaseForm
-				rowItems={props}
-				selectedState={selectedState}
-			/>
-			:
-			<DetailsRow {...props} />
+			return <PhaseForm rowItems={props} selectedState={selectedState} isEditable={isEditable} />
 		}
 		return null;
 	}
