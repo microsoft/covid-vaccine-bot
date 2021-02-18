@@ -29,9 +29,9 @@ export default observer(function PhaseForm(props: PhaseFormProps) {
             const phases = selectedState.value.vaccination.content.phases as Array<any>;
             phases.forEach(phase => {
                 phase.qualifications.forEach((qualification: any) => {
-                    let tagKey = qualification.question.split('/')[1].split('.')[0];
                     let baseQuestionKeys = qualification.question.split('/')
-                    let questionKey = `${baseQuestionKeys[0]}/${baseQuestionKeys[1].split('.')[0]}`
+                    let tagKey = baseQuestionKeys[1].split('.')[0];
+                    let questionKey = `${baseQuestionKeys[0]}/${tagKey}`
 
                     if (!tempTagKeyList.includes(tagKey)) {
                         tempTagKeyList.push(tagKey);
@@ -51,9 +51,9 @@ export default observer(function PhaseForm(props: PhaseFormProps) {
 			)
 
             questionKeys.forEach(qualification => {
-                let tagKey = qualification.split('/')[1].split('.')[0];
                 let baseQuestionKeys = qualification.split('/')
-                let questionKey = `${baseQuestionKeys[0]}/${baseQuestionKeys[1].split('.')[0]}`
+                let tagKey = baseQuestionKeys[1].split('.')[0];
+                let questionKey = `${baseQuestionKeys[0]}/${tagKey}`
 
                 if (!tempTagKeyList.includes(tagKey)) {
                     tempTagKeyList.push(tagKey);
@@ -71,12 +71,15 @@ export default observer(function PhaseForm(props: PhaseFormProps) {
 
     const onTagChange = useCallback((_event, option) => {
         // TODO: need to filter between health and healthcare
-        const { questionKey } = option;
+        const { questionKey, key:tagKey } = option;
         const tempQualifierList: any[] = []
         if (questionKey) {
             // add state level qualifiers
             Object.entries(selectedState.value.strings.content).forEach(([key, value]:[string, any]) => {
-                if(key.startsWith(questionKey)) {
+                let baseQuestionKeys = key.split('/')
+                let qKey = baseQuestionKeys[1].split('.')[0];
+                console.log(qKey, tagKey)
+                if(qKey == tagKey) {
                     tempQualifierList.push({
                         key: key,
                         text: value[currentLanguage]
@@ -86,7 +89,10 @@ export default observer(function PhaseForm(props: PhaseFormProps) {
 
             // add global qualifiers
             Object.entries(globalFileData.customStrings.content).filter(([key, value]: [string, any]) => {
-                if(key.startsWith(questionKey)) {
+                let baseQuestionKeys = key.split('/')
+                let qKey = baseQuestionKeys[1].split('.')[0];
+                console.log(qKey, tagKey)
+                if(qKey == tagKey) {
                     tempQualifierList.push({
                         key: key,
                         text: value[currentLanguage]
