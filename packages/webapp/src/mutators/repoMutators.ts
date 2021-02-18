@@ -17,6 +17,16 @@ export const setBranchList = mutatorAction(
 	}
 )
 
+export const setIssuesList = mutatorAction(
+	'setIssuesList',
+	(data: any[] | undefined) => {
+		if (data) {
+			const store = getAppStore()
+			store.issues = data
+		}
+	}
+)
+
 export const handleCreatePR = mutatorAction(
 	'handleCreatePR',
 	(data: any[] | undefined) => {

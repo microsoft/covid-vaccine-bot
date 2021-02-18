@@ -9,6 +9,7 @@ export interface AppState {
 	email?: string
 	userDisplayName?: string
 	branches?: any[]
+	issues?: any[]
 	mainBranch?: any
 	repoFileData?: any[]
 	globalFileData?: any

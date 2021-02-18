@@ -13,6 +13,7 @@ export const getAppState = (): AppState => {
 		email: undefined,
 		userDisplayName: undefined,
 		branches: undefined,
+		issues: undefined,
 		repoFileData: undefined,
 		globalFileData: undefined,
 		mainBranch: undefined,

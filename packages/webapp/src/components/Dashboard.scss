@@ -12,5 +12,15 @@
 
 	.sectionContent {
 		padding: 20px 0;
+
+		.tableActionLink{
+			text-decoration:none;
+			color:unset;
+			i {
+				color: #0078d4;
+				vertical-align:middle; 
+				padding-right:5px;
+			}
+		}
 	}
 }
