@@ -14,15 +14,21 @@
 }
 
 .phaseGroupHeader {
-	padding: 20px 10px;
 	border-bottom: 1px solid $ms-color-gray40;
 	cursor: pointer;
 	display: flex;
 	justify-content: space-between;
 
+	.groupHeaderLabel {
+		display: flex;
+		padding: 20px 10px;
+		flex-grow: 1;
+	}
+
     .groupHeaderButtons {
         display: flex;
         flex-direction: row;
+		padding: 20px 10px;
 
         div {
             margin-right: 40px;

@@ -11,7 +11,7 @@ import {
 	IDetailsListProps
 } from '@fluentui/react'
 import { observer } from 'mobx-react-lite'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 import { getAppStore } from '../store/store'
 import PhaseForm from './PhaseForm'
 
@@ -93,7 +93,8 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 						moreInfoKey: qualification?.moreInfoText ? qualification.moreInfoText.toLowerCase() : '',
 						moreInfoUrl: qualification.moreInfoUrl,
 						qualifierId: keyId,
-						tagKey: keyId.split('/')[1].split('.')[0]
+						tagKey: keyId.split('/')[1].split('.')[0],
+						groupId: phase.id
 					})
 				})
 			})
@@ -103,14 +104,56 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 		}
 	}, [repoFileData, globalFileData, selectedState, currentLanguage, isRegion, value])
 
+	const onAddQualifierClick = useCallback((phaseId: any) => {
+		let newPhaseGroupItems: any[] = [];
+		let newPhaseGroup: any[] = [];
+		const insertIdx = phaseGroupItems.map(i => i.key.startsWith(phaseId)).lastIndexOf(true) + 1
+
+		const newItem = {
+			key: `${phaseId}-c19.eligibility.question/new_qualifier`,
+			text: '',
+			moreInfoKey: '',
+			moreInfoUrl: '',
+			qualifierId: 'c19.eligibility.question/new_qualifier',
+			tagKey: 'new_tagKey',
+			groupId: phaseId
+		}
+
+		for (let i=0; i < phaseGroupItems.length; i++) {
+			if (i === insertIdx) {
+				newPhaseGroupItems.push(newItem)
+				newPhaseGroupItems.push(phaseGroupItems[i])
+			} else {
+				newPhaseGroupItems.push(phaseGroupItems[i])
+			}
+		}
+
+		if (insertIdx === phaseGroupItems.length) {
+			newPhaseGroupItems.push(newItem)
+		}
+
+		phaseGroup.forEach(group => {
+			newPhaseGroup.push({
+				...group,
+					...{
+						startIndex: newPhaseGroupItems.findIndex(i => i.groupId === group.data.keyId),
+						count: newPhaseGroupItems.filter(i => i.groupId === group.data.keyId).length
+					}
+				})
+		})
+
+		setPhaseGroup(newPhaseGroup)
+		setPhaseGroupItems(newPhaseGroupItems)
+	},[phaseGroupItems, phaseGroup])
+
 	const onRenderHeader: IDetailsGroupRenderProps['onRenderHeader'] = (
 		props
 	) => {
 		if (props?.group) {
 			const { group } = props
 			return (
-				<div className="phaseGroupHeader" onClick={onToggleCollapse(props)}>
-					<div>
+				<div className="phaseGroupHeader">
+					<div className="groupHeaderLabel" onClick={onToggleCollapse(props)}>
 						<FontIcon
 							iconName={group.isCollapsed ? 'ChevronRight' : 'ChevronDown'}
 							className="groupToggleIcon"
@@ -124,7 +167,7 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 						)}
 					</div>
 					<div className='groupHeaderButtons'>
-						<div className='addQualifierGroup'>
+						<div className='addQualifierGroup' onClick={() => onAddQualifierClick(group.data.keyId)}>
 							<FontIcon iconName='CircleAdditionSolid' style={{color: '#0078d4'}}/>
 							Add Qualifier
 						</div>
@@ -179,6 +222,7 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 				checkboxVisibility={2}
 				constrainMode={1}
 				selectionMode={1}
+				onShouldVirtualize={() => false}
 			/>
 		</div>
 	)
