@@ -14,7 +14,14 @@ import {
 	createOutputFolder,
 } from './io'
 
+import { config } from 'dotenv'
+import {checkConnection, createIssue} from './GitHub'
+config()
+
+
 async function scrapeSites(): Promise<void> {
+
+	await checkConnection()
 	createOutputFolder()
 	const lastRun = loadLastRun()
 	const links = loadLinksToScrape()
@@ -24,12 +31,14 @@ async function scrapeSites(): Promise<void> {
 			chalk.grey.dim(`checking [${link.text || 'link'}](${link.url})`)
 		)
 	})
-	scraper.onIntegrityMismatch((link) => {
+	scraper.onIntegrityMismatch(async (link) => {
 		console.log(
 			chalk.green(
 				`✔ integrity mismatch for  [${link.text || 'link'}](${link.url})`
 			)
 		)
+		await createIssue("Detected Website Change", link.url);
+
 	})
 	scraper.onLinkScraped(([link, scraping]) => {
 		saveFile(
