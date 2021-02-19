@@ -46,21 +46,20 @@ export const repoServices = async (
 	const githubRepoOwner = process.env.REACT_APP_REPO_OWNER
 	const githubRepoName = process.env.REACT_APP_REPO_NAME
 
-	switch(command){
+	switch (command) {
 		case 'checkAccess':
-
 			const loadAccessResponse = await fetch(
-					`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/collaborators/${state.username}`,
-					{
-						method: 'GET',
-						headers: {
-							Authorization: `token ${state.accessToken}`,
-						},
-					}
-				)
-			return await loadAccessResponse;
+				`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/collaborators/${state.username}`,
+				{
+					method: 'GET',
+					headers: {
+						Authorization: `token ${state.accessToken}`,
+					},
+				}
+			)
+			return loadAccessResponse
 
-		break;
+			break
 		case 'getBranches':
 			const loadBranchesResponse = await fetch(
 				`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/branches`,
@@ -72,7 +71,7 @@ export const repoServices = async (
 				}
 			)
 
-			return await loadBranchesResponse.json();
+			return await loadBranchesResponse.json()
 		case 'getPullRequests':
 			const loadPRResponse = await fetch(
 				`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/pulls`,
@@ -84,7 +83,7 @@ export const repoServices = async (
 				}
 			)
 
-			return await loadPRResponse.json();
+			return await loadPRResponse.json()
 		case 'getIssues':
 			const loadIssuesResponse = await fetch(
 				`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/issues`,
@@ -96,9 +95,9 @@ export const repoServices = async (
 				}
 			)
 
-			return await loadIssuesResponse.json();
-		break
-		break;
+			return await loadIssuesResponse.json()
+			break
+			break
 		case 'getRepoFileData':
 			const dataFolderResp = await fetch(
 				`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/contents/packages/plans/data`,
@@ -113,12 +112,15 @@ export const repoServices = async (
 			const policyFolderGitUrl = dataFolderObj.find(
 				(folder: { name: string }) => folder.name === 'policies'
 			).git_url
-			const loadPolicyFolderResponse = await fetch(`${policyFolderGitUrl}?recursive=true`, {
-				method: 'GET',
-				headers: {
-					Authorization: `token ${state.accessToken}`,
-				},
-			})
+			const loadPolicyFolderResponse = await fetch(
+				`${policyFolderGitUrl}?recursive=true`,
+				{
+					method: 'GET',
+					headers: {
+						Authorization: `token ${state.accessToken}`,
+					},
+				}
+			)
 			const policyFolderData = await loadPolicyFolderResponse.json()
 			const stateData: any = {}
 			policyFolderData.tree.forEach(async (element: any) => {
@@ -238,7 +240,7 @@ export const repoServices = async (
 			cdcStateLinks['content'] = cdcStateLinksData
 
 			return [stateData, customStrings, cdcStateNames, cdcStateLinks]
-		break;
+			break
 		case 'createPR':
 			if (state?.mainBranch) {
 				const mainBranch = state?.mainBranch
@@ -250,7 +252,10 @@ export const repoServices = async (
 						headers: {
 							Authorization: `token ${state.accessToken}`,
 						},
-						body: JSON.stringify({ ref: branchName, sha: mainBranch.commit.sha }),
+						body: JSON.stringify({
+							ref: branchName,
+							sha: mainBranch.commit.sha,
+						}),
 					}
 				)
 
@@ -291,7 +296,7 @@ export const repoServices = async (
 
 				return prResp.json()
 			}
-		break;
+			break
 	}
 
 	return undefined

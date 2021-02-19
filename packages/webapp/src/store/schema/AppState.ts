@@ -4,6 +4,7 @@
  */
 export interface AppState {
 	isAuthenticated: boolean
+	isAuthorized: boolean
 	accessToken?: string
 	username?: string
 	email?: string
