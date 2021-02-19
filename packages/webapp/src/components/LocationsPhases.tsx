@@ -206,25 +206,38 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 						)}
 					</div>
 					<div className='groupHeaderButtons'>
-						<div className='addQualifierGroup' onClick={() => onAddQualifierClick(group.data.keyId)}>
-							<FontIcon iconName='CircleAdditionSolid' style={{color: '#0078d4'}}/>
-							Add Qualifier
-						</div>
-						<div className='removePhaseGroup' onClick={() => onRemovePhaseGroupClick(group.data.keyId)}>
-							<FontIcon iconName='Blocked2Solid' style={{color: '#d13438'}}/>
-							Remove
-						</div>
-						{group.data.isActive ? (
-							<div className='activeGroup'>
-								<FontIcon iconName='CircleFill' style={{color: '#00b7c3'}}/>
-								Active Phase
-							</div>
-						) : (
-							<div className='activeGroup'>
-								<FontIcon iconName='CircleRing' style={{color: '#00b7c3'}}/>
-								Set as Active
-							</div>
-						)}
+						{isEditable ? (
+							<>
+								<div className='addQualifierGroup' onClick={() => onAddQualifierClick(group.data.keyId)}>
+									<FontIcon iconName='CircleAdditionSolid' style={{color: '#0078d4'}}/>
+									Add Qualifier
+								</div>
+								<div className='removePhaseGroup' onClick={() => onRemovePhaseGroupClick(group.data.keyId)}>
+									<FontIcon iconName='Blocked2Solid' style={{color: '#d13438'}}/>
+									Remove
+								</div>
+								{group.data.isActive ? (
+									<div className='activeGroup'>
+										<FontIcon iconName='CircleFill' style={{color: '#00b7c3'}}/>
+										Active Phase
+									</div>
+								) : (
+									<div className='activeGroup'>
+										<FontIcon iconName='CircleRing' style={{color: '#00b7c3'}}/>
+										Set as Active
+									</div>
+								)}
+							</>
+							):(
+								<>
+									{group.data.isActive && (
+										<div className='activeGroup'>
+											<FontIcon iconName='CircleFill' style={{color: '#00b7c3'}}/>
+											Active Phase
+										</div>
+									)}
+								</>
+							)}
 					</div>
 				</div>
 			)
