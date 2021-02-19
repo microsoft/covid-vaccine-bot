@@ -164,6 +164,26 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 		setPhaseGroupItems(newPhaseGroupItems)
 	},[phaseGroupItems, phaseGroup])
 
+	const onRemovePhaseGroupClick = useCallback((phaseId: any) => {
+		const newPhaseGroupItems = phaseGroupItems.filter(groupItem => groupItem.groupId !== phaseId)
+
+		const newPhaseGroup: any[] = []
+		phaseGroup
+			.filter(group => group.data.keyId !== phaseId)
+			.forEach(group => {
+			newPhaseGroup.push({
+				...group,
+					...{
+						startIndex: newPhaseGroupItems.findIndex(i => i.groupId === group.data.keyId),
+						count: newPhaseGroupItems.filter(i => i.groupId === group.data.keyId).length
+					}
+				})
+		})
+
+		setPhaseGroup(newPhaseGroup)
+		setPhaseGroupItems(newPhaseGroupItems)
+	},[phaseGroupItems, phaseGroup])
+
 	const onRenderHeader: IDetailsGroupRenderProps['onRenderHeader'] = (
 		props
 	) => {
@@ -189,7 +209,7 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 							<FontIcon iconName='CircleAdditionSolid' style={{color: '#0078d4'}}/>
 							Add Qualifier
 						</div>
-						<div className='removePhaseGroup'>
+						<div className='removePhaseGroup' onClick={() => onRemovePhaseGroupClick(group.data.keyId)}>
 							<FontIcon iconName='Blocked2Solid' style={{color: '#d13438'}}/>
 							Remove
 						</div>
