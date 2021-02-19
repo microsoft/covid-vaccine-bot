@@ -47,6 +47,20 @@ export const repoServices = async (
 	const githubRepoName = process.env.REACT_APP_REPO_NAME
 
 	switch(command){
+		case 'checkAccess':
+
+			const loadAccessResponse = await fetch(
+					`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/collaborators/${state.username}`,
+					{
+						method: 'GET',
+						headers: {
+							Authorization: `token ${state.accessToken}`,
+						},
+					}
+				)
+			return await loadAccessResponse;
+
+		break;
 		case 'getBranches':
 			const loadBranchesResponse = await fetch(
 				`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/branches`,
