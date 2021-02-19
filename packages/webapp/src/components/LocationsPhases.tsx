@@ -91,6 +91,7 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 						key: phase.id + '-' + keyId,
 						text: label,
 						moreInfoKey: qualification?.moreInfoText ? qualification.moreInfoText.toLowerCase() : '',
+						moreInfoContent: '',
 						moreInfoUrl: qualification.moreInfoUrl,
 						qualifierId: keyId,
 						tagKey: keyId.split('/')[1].split('.')[0],
@@ -243,7 +244,7 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 						rowItems={props}
 						selectedState={selectedState}
 						isEditable={isEditable}
-						onRemoveRowItem={onRemoveRowItem}
+						onRowItemRemove={onRemoveRowItem}
 					/>
 		}
 		return null;
