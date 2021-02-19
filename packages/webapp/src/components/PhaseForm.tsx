@@ -24,10 +24,11 @@ export interface PhaseFormProps {
 	selectedState: any
 	rowItems: IDetailsRowProps
 	isEditable: boolean
+    onRemoveRowItem?: (item: any) => void
 }
 
 export default observer(function PhaseForm(props: PhaseFormProps) {
-	const { selectedState, rowItems, isEditable } = props
+	const { selectedState, rowItems, isEditable, onRemoveRowItem } = props
 	const phaseTagItems = useRef(getPhaseTagItems(selectedState))
 	const phaseQualifierItems = useRef(getPhaseQualifierItems(selectedState))
 	const phaseMoreInfoItems = useRef(getPhaseMoreInfoItems(selectedState))
@@ -106,6 +107,7 @@ export default observer(function PhaseForm(props: PhaseFormProps) {
 							{
 								key: 'removeRow',
 								text: 'Remove',
+                                onClick: () => onRemoveRowItem?.(rowItems.item),
 							},
 							{
 								key: 'details',

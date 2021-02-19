@@ -146,6 +146,24 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 		setPhaseGroupItems(newPhaseGroupItems)
 	},[phaseGroupItems, phaseGroup])
 
+	const onRemoveRowItem = useCallback((item: any) => {
+		const newPhaseGroupItems = phaseGroupItems.filter(groupItem => groupItem.key !== item.key)
+
+		const newPhaseGroup: any[] = []
+		phaseGroup.forEach(group => {
+			newPhaseGroup.push({
+				...group,
+					...{
+						startIndex: newPhaseGroupItems.findIndex(i => i.groupId === group.data.keyId),
+						count: newPhaseGroupItems.filter(i => i.groupId === group.data.keyId).length
+					}
+				})
+		})
+
+		setPhaseGroup(newPhaseGroup)
+		setPhaseGroupItems(newPhaseGroupItems)
+	},[phaseGroupItems, phaseGroup])
+
 	const onRenderHeader: IDetailsGroupRenderProps['onRenderHeader'] = (
 		props
 	) => {
@@ -201,7 +219,12 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 
 	const onRenderRow: IDetailsListProps['onRenderRow'] = props => {
 		if (props) {
-			return <PhaseForm rowItems={props} selectedState={selectedState} isEditable={isEditable} />
+			return <PhaseForm
+						rowItems={props}
+						selectedState={selectedState}
+						isEditable={isEditable}
+						onRemoveRowItem={onRemoveRowItem}
+					/>
 		}
 		return null;
 	}
@@ -214,7 +237,7 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 				groups={phaseGroup}
 				columns={phaseColumns}
 				groupProps={{
-					showEmptyGroups: false,
+					showEmptyGroups: true,
 					onRenderHeader: onRenderHeader,
 				}}
 				onRenderRow={onRenderRow}
