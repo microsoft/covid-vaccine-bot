@@ -19,3 +19,16 @@ export const setUserAuthData = mutatorAction(
 		}
 	}
 )
+
+export const unsetUserAuthData = mutatorAction(
+	'unsetUserAuthData',
+	() => {
+			const store = getAppStore()
+			store.accessToken = undefined
+			store.email = undefined
+			store.isAuthenticated = false
+			store.userDisplayName = undefined
+			store.username = undefined
+	}
+)
+
