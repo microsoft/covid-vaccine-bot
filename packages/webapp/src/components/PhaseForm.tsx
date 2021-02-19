@@ -24,12 +24,18 @@ export interface PhaseFormProps {
 	selectedState: any
 	rowItems: IDetailsRowProps
 	isEditable: boolean
-    onRowItemRemove?: (item: any) => void
-    onRowItemChange?: (item: IDetailsRowProps) => void
+	onRowItemRemove?: (item: any) => void
+	onRowItemChange?: (item: IDetailsRowProps) => void
 }
 
 export default observer(function PhaseForm(props: PhaseFormProps) {
-	const { selectedState, rowItems, isEditable, onRowItemRemove, onRowItemChange } = props
+	const {
+		selectedState,
+		rowItems,
+		isEditable,
+		onRowItemRemove,
+		onRowItemChange,
+	} = props
 	const phaseTagItems = useRef(getPhaseTagItems(selectedState))
 	const phaseQualifierItems = useRef(getPhaseQualifierItems(selectedState))
 	const phaseMoreInfoItems = useRef(getPhaseMoreInfoItems(selectedState))
@@ -42,7 +48,7 @@ export default observer(function PhaseForm(props: PhaseFormProps) {
 	const [moreInfoUrl, setMoreInfoUrl] = useState<string>(
 		rowItems.item.moreInfoUrl
 	)
-    const changedItem = useRef<any>(rowItems.item)
+	const changedItem = useRef<any>(rowItems.item)
 
 	const onTagChange = useCallback(
 		(_event, option) => {
@@ -52,20 +58,21 @@ export default observer(function PhaseForm(props: PhaseFormProps) {
 				)
 			)
 			setMoreInfoText('')
-            setMoreInfoUrl('')
-            changedItem.current = {
-                ...changedItem.current,
-                ...{
-                    key: `${rowItems.item.groupId}-c19.eligibility.question/${option.key}`,
-                    tagKey: option.key,
-                    qualifierId: undefined,
-                    text: '',
-                    moreInfoKey: '',
-                    moreInfoContent: ''
-                }}
-            onRowItemChange?.({...rowItems, ...{item: changedItem.current}})
+			setMoreInfoUrl('')
+			changedItem.current = {
+				...changedItem.current,
+				...{
+					key: `${rowItems.item.groupId}-c19.eligibility.question/${option.key}`,
+					tagKey: option.key,
+					qualifierId: undefined,
+					text: '',
+					moreInfoKey: '',
+					moreInfoContent: '',
+				},
+			}
+			onRowItemChange?.({ ...rowItems, ...{ item: changedItem.current } })
 		},
-		[phaseQualifierItems]
+		[phaseQualifierItems, onRowItemChange, rowItems]
 	)
 
 	const onQualifierChange = useCallback(
@@ -78,38 +85,48 @@ export default observer(function PhaseForm(props: PhaseFormProps) {
 			)
 			moreInfoObj ? setMoreInfoText(moreInfoObj.text) : setMoreInfoText('')
 
-            changedItem.current = {
-                ...changedItem.current,
-                ...{
-                    qualifierId: option.key,
-                    text: option.text,
-                    moreInfoContent: moreInfoObj?.text,
-                    moreInfoKey: moreInfoObj?.key || option.key.replace('question', 'moreinfo')
-                }}
-            onRowItemChange?.({...rowItems, ...{item: changedItem.current}})
+			changedItem.current = {
+				...changedItem.current,
+				...{
+					qualifierId: option.key,
+					text: option.text,
+					moreInfoContent: moreInfoObj?.text,
+					moreInfoKey:
+						moreInfoObj?.key || option.key.replace('question', 'moreinfo'),
+				},
+			}
+			onRowItemChange?.({ ...rowItems, ...{ item: changedItem.current } })
 		},
-		[phaseMoreInfoItems]
+		[phaseQualifierItems, onRowItemChange, rowItems]
 	)
 
-	const onMoreInfoTextChange = useCallback((_event, value) => {
-        changedItem.current = {
-            ...changedItem.current,
-            ...{
-                moreInfoContent: value
-            }}
-        onRowItemChange?.({...rowItems, ...{item: changedItem.current}})
-		setMoreInfoText(value)
-	}, [])
+	const onMoreInfoTextChange = useCallback(
+		(_event, value) => {
+			changedItem.current = {
+				...changedItem.current,
+				...{
+					moreInfoContent: value,
+				},
+			}
+			onRowItemChange?.({ ...rowItems, ...{ item: changedItem.current } })
+			setMoreInfoText(value)
+		},
+		[phaseQualifierItems, onRowItemChange, rowItems]
+	)
 
-	const onMoreInfoUrlChange = useCallback((_event, value) => {
-        changedItem.current = {
-            ...changedItem.current,
-            ...{
-                moreInfoUrl: value
-            }}
-        onRowItemChange?.({...rowItems, ...{item: changedItem.current}})
-		setMoreInfoUrl(value)
-	}, [])
+	const onMoreInfoUrlChange = useCallback(
+		(_event, value) => {
+			changedItem.current = {
+				...changedItem.current,
+				...{
+					moreInfoUrl: value,
+				},
+			}
+			onRowItemChange?.({ ...rowItems, ...{ item: changedItem.current } })
+			setMoreInfoUrl(value)
+		},
+		[phaseQualifierItems, onRowItemChange, rowItems]
+	)
 
 	return (
 		<div
@@ -142,7 +159,7 @@ export default observer(function PhaseForm(props: PhaseFormProps) {
 							{
 								key: 'removeRow',
 								text: 'Remove',
-                                onClick: () => onRowItemRemove?.(rowItems.item),
+								onClick: () => onRowItemRemove?.(rowItems.item),
 							},
 							{
 								key: 'details',

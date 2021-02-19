@@ -8,7 +8,7 @@ import {
 	IGroup,
 	FontIcon,
 	IGroupDividerProps,
-	IDetailsListProps
+	IDetailsListProps,
 } from '@fluentui/react'
 import { observer } from 'mobx-react-lite'
 import { useState, useEffect, useCallback } from 'react'
@@ -35,7 +35,12 @@ const phaseColumns = [
 ]
 
 export default observer(function LocationsPhases(props: LocationsPhasesProp) {
-	const { globalFileData, currentLanguage, repoFileData, isEditable } = getAppStore()
+	const {
+		globalFileData,
+		currentLanguage,
+		repoFileData,
+		isEditable,
+	} = getAppStore()
 	const { isRegion, value, selectedState } = props
 
 	const [phaseGroup, setPhaseGroup] = useState<IGroup[]>([])
@@ -90,12 +95,14 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 					tempPhaseGroupItems.push({
 						key: phase.id + '-' + keyId,
 						text: label,
-						moreInfoKey: qualification?.moreInfoText ? qualification.moreInfoText.toLowerCase() : '',
+						moreInfoKey: qualification?.moreInfoText
+							? qualification.moreInfoText.toLowerCase()
+							: '',
 						moreInfoContent: '',
 						moreInfoUrl: qualification.moreInfoUrl,
 						qualifierId: keyId,
 						tagKey: keyId.split('/')[1].split('.')[0],
-						groupId: phase.id
+						groupId: phase.id,
 					})
 				})
 			})
@@ -105,85 +112,113 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 		}
 	}, [repoFileData, globalFileData, selectedState, currentLanguage, isRegion, value])
 
-	const onAddQualifierClick = useCallback((phaseId: any) => {
-		let newPhaseGroupItems: any[] = [];
-		let newPhaseGroup: any[] = [];
-		const insertIdx = phaseGroupItems.map(i => i.key.startsWith(phaseId)).lastIndexOf(true) + 1
+	const onAddQualifierClick = useCallback(
+		(phaseId: any) => {
+			const newPhaseGroupItems: any[] = []
+			const newPhaseGroup: any[] = []
+			const insertIdx =
+				phaseGroupItems
+					.map((i) => i.key.startsWith(phaseId))
+					.lastIndexOf(true) + 1
 
-		const newItem = {
-			key: `${phaseId}-c19.eligibility.question/new_qualifier`,
-			text: '',
-			moreInfoKey: '',
-			moreInfoUrl: '',
-			qualifierId: 'c19.eligibility.question/new_qualifier',
-			tagKey: 'new_tagKey',
-			groupId: phaseId
-		}
-
-		for (let i=0; i < phaseGroupItems.length; i++) {
-			if (i === insertIdx) {
-				newPhaseGroupItems.push(newItem)
-				newPhaseGroupItems.push(phaseGroupItems[i])
-			} else {
-				newPhaseGroupItems.push(phaseGroupItems[i])
+			const newItem = {
+				key: `${phaseId}-c19.eligibility.question/new_qualifier`,
+				text: '',
+				moreInfoKey: '',
+				moreInfoUrl: '',
+				qualifierId: 'c19.eligibility.question/new_qualifier',
+				tagKey: 'new_tagKey',
+				groupId: phaseId,
 			}
-		}
 
-		if (insertIdx === phaseGroupItems.length) {
-			newPhaseGroupItems.push(newItem)
-		}
+			for (let i = 0; i < phaseGroupItems.length; i++) {
+				if (i === insertIdx) {
+					newPhaseGroupItems.push(newItem)
+					newPhaseGroupItems.push(phaseGroupItems[i])
+				} else {
+					newPhaseGroupItems.push(phaseGroupItems[i])
+				}
+			}
 
-		phaseGroup.forEach(group => {
-			newPhaseGroup.push({
-				...group,
+			if (insertIdx === phaseGroupItems.length) {
+				newPhaseGroupItems.push(newItem)
+			}
+
+			phaseGroup.forEach((group) => {
+				newPhaseGroup.push({
+					...group,
 					...{
-						startIndex: newPhaseGroupItems.findIndex(i => i.groupId === group.data.keyId),
-						count: newPhaseGroupItems.filter(i => i.groupId === group.data.keyId).length
-					}
+						startIndex: newPhaseGroupItems.findIndex(
+							(i) => i.groupId === group.data.keyId
+						),
+						count: newPhaseGroupItems.filter(
+							(i) => i.groupId === group.data.keyId
+						).length,
+					},
 				})
-		})
+			})
 
-		setPhaseGroup(newPhaseGroup)
-		setPhaseGroupItems(newPhaseGroupItems)
-	},[phaseGroupItems, phaseGroup])
+			setPhaseGroup(newPhaseGroup)
+			setPhaseGroupItems(newPhaseGroupItems)
+		},
+		[phaseGroupItems, phaseGroup]
+	)
 
-	const onRemoveRowItem = useCallback((item: any) => {
-		const newPhaseGroupItems = phaseGroupItems.filter(groupItem => groupItem.key !== item.key)
+	const onRemoveRowItem = useCallback(
+		(item: any) => {
+			const newPhaseGroupItems = phaseGroupItems.filter(
+				(groupItem) => groupItem.key !== item.key
+			)
 
-		const newPhaseGroup: any[] = []
-		phaseGroup.forEach(group => {
-			newPhaseGroup.push({
-				...group,
+			const newPhaseGroup: any[] = []
+			phaseGroup.forEach((group) => {
+				newPhaseGroup.push({
+					...group,
 					...{
-						startIndex: newPhaseGroupItems.findIndex(i => i.groupId === group.data.keyId),
-						count: newPhaseGroupItems.filter(i => i.groupId === group.data.keyId).length
-					}
+						startIndex: newPhaseGroupItems.findIndex(
+							(i) => i.groupId === group.data.keyId
+						),
+						count: newPhaseGroupItems.filter(
+							(i) => i.groupId === group.data.keyId
+						).length,
+					},
 				})
-		})
+			})
 
-		setPhaseGroup(newPhaseGroup)
-		setPhaseGroupItems(newPhaseGroupItems)
-	},[phaseGroupItems, phaseGroup])
+			setPhaseGroup(newPhaseGroup)
+			setPhaseGroupItems(newPhaseGroupItems)
+		},
+		[phaseGroupItems, phaseGroup]
+	)
 
-	const onRemovePhaseGroupClick = useCallback((phaseId: any) => {
-		const newPhaseGroupItems = phaseGroupItems.filter(groupItem => groupItem.groupId !== phaseId)
+	const onRemovePhaseGroupClick = useCallback(
+		(phaseId: any) => {
+			const newPhaseGroupItems = phaseGroupItems.filter(
+				(groupItem) => groupItem.groupId !== phaseId
+			)
 
-		const newPhaseGroup: any[] = []
-		phaseGroup
-			.filter(group => group.data.keyId !== phaseId)
-			.forEach(group => {
-			newPhaseGroup.push({
-				...group,
-					...{
-						startIndex: newPhaseGroupItems.findIndex(i => i.groupId === group.data.keyId),
-						count: newPhaseGroupItems.filter(i => i.groupId === group.data.keyId).length
-					}
+			const newPhaseGroup: any[] = []
+			phaseGroup
+				.filter((group) => group.data.keyId !== phaseId)
+				.forEach((group) => {
+					newPhaseGroup.push({
+						...group,
+						...{
+							startIndex: newPhaseGroupItems.findIndex(
+								(i) => i.groupId === group.data.keyId
+							),
+							count: newPhaseGroupItems.filter(
+								(i) => i.groupId === group.data.keyId
+							).length,
+						},
+					})
 				})
-		})
 
-		setPhaseGroup(newPhaseGroup)
-		setPhaseGroupItems(newPhaseGroupItems)
-	},[phaseGroupItems, phaseGroup])
+			setPhaseGroup(newPhaseGroup)
+			setPhaseGroupItems(newPhaseGroupItems)
+		},
+		[phaseGroupItems, phaseGroup]
+	)
 
 	const onRenderHeader: IDetailsGroupRenderProps['onRenderHeader'] = (
 		props
@@ -205,39 +240,60 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 							`Phase ${group.data.keyId}`
 						)}
 					</div>
-					<div className='groupHeaderButtons'>
+					<div className="groupHeaderButtons">
 						{isEditable ? (
 							<>
-								<div className='addQualifierGroup' onClick={() => onAddQualifierClick(group.data.keyId)}>
-									<FontIcon iconName='CircleAdditionSolid' style={{color: '#0078d4'}}/>
+								<div
+									className="addQualifierGroup"
+									onClick={() => onAddQualifierClick(group.data.keyId)}
+								>
+									<FontIcon
+										iconName="CircleAdditionSolid"
+										style={{ color: '#0078d4' }}
+									/>
 									Add Qualifier
 								</div>
-								<div className='removePhaseGroup' onClick={() => onRemovePhaseGroupClick(group.data.keyId)}>
-									<FontIcon iconName='Blocked2Solid' style={{color: '#d13438'}}/>
+								<div
+									className="removePhaseGroup"
+									onClick={() => onRemovePhaseGroupClick(group.data.keyId)}
+								>
+									<FontIcon
+										iconName="Blocked2Solid"
+										style={{ color: '#d13438' }}
+									/>
 									Remove
 								</div>
 								{group.data.isActive ? (
-									<div className='activeGroup'>
-										<FontIcon iconName='CircleFill' style={{color: '#00b7c3'}}/>
+									<div className="activeGroup">
+										<FontIcon
+											iconName="CircleFill"
+											style={{ color: '#00b7c3' }}
+										/>
 										Active Phase
 									</div>
 								) : (
-									<div className='activeGroup'>
-										<FontIcon iconName='CircleRing' style={{color: '#00b7c3'}}/>
+									<div className="activeGroup">
+										<FontIcon
+											iconName="CircleRing"
+											style={{ color: '#00b7c3' }}
+										/>
 										Set as Active
 									</div>
 								)}
 							</>
-							):(
-								<>
-									{group.data.isActive && (
-										<div className='activeGroup'>
-											<FontIcon iconName='CircleFill' style={{color: '#00b7c3'}}/>
-											Active Phase
-										</div>
-									)}
-								</>
-							)}
+						) : (
+							<>
+								{group.data.isActive && (
+									<div className="activeGroup">
+										<FontIcon
+											iconName="CircleFill"
+											style={{ color: '#00b7c3' }}
+										/>
+										Active Phase
+									</div>
+								)}
+							</>
+						)}
 					</div>
 				</div>
 			)
@@ -251,16 +307,18 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 		}
 	}
 
-	const onRenderRow: IDetailsListProps['onRenderRow'] = props => {
+	const onRenderRow: IDetailsListProps['onRenderRow'] = (props) => {
 		if (props) {
-			return <PhaseForm
-						rowItems={props}
-						selectedState={selectedState}
-						isEditable={isEditable}
-						onRowItemRemove={onRemoveRowItem}
-					/>
+			return (
+				<PhaseForm
+					rowItems={props}
+					selectedState={selectedState}
+					isEditable={isEditable}
+					onRowItemRemove={onRemoveRowItem}
+				/>
+			)
 		}
-		return null;
+		return null
 	}
 
 	return (
