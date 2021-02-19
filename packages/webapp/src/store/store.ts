@@ -21,6 +21,7 @@ export const getAppState = (): AppState => {
 		currentLanguage: 'en-us',
 		toggleAddLocation: false,
 		toggleQualifier: false,
+		isEditable: false,
 	}
 }
 

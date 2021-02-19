@@ -20,9 +20,27 @@
 	display: flex;
 	justify-content: space-between;
 
-	.activeGroup {
-		display: flex;
-	}
+    .groupHeaderButtons {
+        display: flex;
+        flex-direction: row;
+
+        div {
+            margin-right: 40px;
+            display: flex;
+
+            i {
+                margin-right: 4px;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &:hover {
+                font-weight: 600;
+            }
+        }
+    }
 
 	&:hover {
 		background-color: $ms-color-gray40;
