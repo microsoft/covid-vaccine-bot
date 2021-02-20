@@ -5,6 +5,20 @@
 	flex-direction: column;
 }
 
+.addLocationHeaderButton {
+	display: flex;
+	padding: 20px;
+	cursor: pointer;
+
+	i {
+		margin-right: 4px;
+	}
+
+	&:hover {
+		font-weight: 600;
+	}
+}
+
 .newLocationPanel {
 	margin-top: 50px;
 }

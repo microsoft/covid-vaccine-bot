@@ -5,16 +5,16 @@
 import {
 	DetailsList,
 	DetailsListLayoutMode,
-	Dropdown,
-	Panel,
-	PrimaryButton,
 	ProgressIndicator,
 	TextField,
+	FontIcon,
+	Modal
 } from '@fluentui/react'
 import { useBoolean } from '@uifabric/react-hooks'
 import { observer } from 'mobx-react-lite'
 import { useState, useRef, useEffect, useCallback, FormEvent } from 'react'
 import { getAppStore } from '../store/store'
+import AddLocationForm from './AddLocationForm'
 
 import './Locations.scss'
 
@@ -25,7 +25,7 @@ export interface LocationsStatesProp {
 export default observer(function LocationsStates(props: LocationsStatesProp) {
 	const { onSelectedItem } = props
 
-	const [isOpen, { setTrue: openPanel, setFalse: dismissPanel }] = useBoolean(
+	const [isLocationModalOpen, { setTrue: openLocationModal, setFalse: dismissLocationModal }] = useBoolean(
 		false
 	)
 	const [filteredStateList, setFilteredStateList] = useState<any[]>([])
@@ -110,8 +110,14 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 					<div className="breadCrumbs">/ Locations</div>
 					<div className="mainTitle">Locations</div>
 				</div>
-				{state.toggleAddLocation && (
-					<PrimaryButton text="+ Add location" onClick={openPanel} />
+				{state.isEditable && (
+					<div className="addLocationHeaderButton" onClick={openLocationModal}>
+						<FontIcon
+							iconName="CircleAdditionSolid"
+							style={{ color: '#0078d4' }}
+						/>
+						Add Location
+					</div>
 				)}
 			</div>
 			<div className="bodyContent">
@@ -137,28 +143,12 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 					</section>
 				)}
 			</div>
-			<Panel
-				isLightDismiss={true}
-				headerText="Add new location"
-				isBlocking={true}
-				isOpen={isOpen}
-				onDismiss={dismissPanel}
-				closeButtonAriaLabel="Close"
-				className="newLocationPanel"
-			>
-				<div className="newLocationPanelBody">
-					<Dropdown
-						label="Locations"
-						selectedKey={undefined}
-						placeholder="Select a location"
-						options={stateRepoFullList.current}
-					/>
-					<br />
-					<TextField label="New sub-location " required />
-					<br />
-					<PrimaryButton text="Save" />
-				</div>
-			</Panel>
+			<Modal
+				isOpen={isLocationModalOpen}
+				onDismiss={dismissLocationModal}
+				isBlocking={false}>
+					<AddLocationForm/>
+			</Modal>
 		</div>
 	)
 })
