@@ -23,5 +23,8 @@ yarn start
 
 **Supported query parameters**
 
-- `locale`: set the locale, e.g., `locale=en-us` or set the locale to autodetect language based on `navigator.language` with `locale=autodetect`.
-- `region`: scope the running bot to a specific state or territory using state codes, e.g., `region=WA`.
+- `locale`: set the locale, e.g., `locale=en-us`. Defaults to `navigator.language`.
+- `countryRegion`: scope the running bot to a specific country, e.g., `countryRegion=United States`. Defaults to `United States`.
+- `adminDistrict`: scope the running bot to a specific state or territory territory using state codes, e.g., `region=WA`.
+- `shareLocation`: setting this query parameter will prompt for the user location using the browser location API and bypass location input.
+  If the user denies access to location then the bot will fallback to asking for the location.
