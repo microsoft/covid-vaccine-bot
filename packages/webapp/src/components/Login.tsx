@@ -12,7 +12,7 @@ export default observer(function Login() {
 	return (
 		<div className="loginPageContainer">
 			<div className="loginContainer">
-				<h3>Covid19 Vaccine Data Policy Composer</h3>
+				<h3>Data Composer</h3>
 				<DefaultButton text="Login with Github" onClick={loginUser} />
 			</div>
 		</div>

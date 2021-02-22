@@ -61,7 +61,7 @@ export default observer(function App() {
 											}}
 										/>
 										<div className="appHeaderTitle">
-											Covid-19 Vaccine Policy Composer
+											Data Composer
 										</div>
 									</div>
 									<div className="appHeaderPersona">
@@ -136,7 +136,7 @@ export default observer(function App() {
 												<section style={{ width: '70%', margin: '0px auto' }}>
 													<p>
 														Thank you for your interest in helping to manage the
-														Covid-19 Vaccine Policy data, unfortunately right
+														data, unfortunately right
 														now access to this tool requires collaborator
 														permissions on{' '}
 														<a
