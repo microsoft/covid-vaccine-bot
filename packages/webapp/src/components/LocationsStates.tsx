@@ -14,7 +14,7 @@ import { useBoolean } from '@uifabric/react-hooks'
 import { observer } from 'mobx-react-lite'
 import { useState, useRef, useEffect, useCallback, FormEvent } from 'react'
 import { getAppStore } from '../store/store'
-import AddLocationForm from './AddLocationForm'
+import LocationForm from './LocationForm'
 
 import './Locations.scss'
 
@@ -103,6 +103,10 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 		[onSelectedItem]
 	)
 
+	const onLocationFormSubmit = useCallback((_newLocation) => {
+		dismissLocationModal()
+	},[dismissLocationModal])
+
 	return (
 		<div className="bodyContainer">
 			<div className="bodyHeader">
@@ -145,9 +149,13 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 			</div>
 			<Modal
 				isOpen={isLocationModalOpen}
-				onDismiss={dismissLocationModal}
+				isModeless={false}
+				isDarkOverlay={true}
 				isBlocking={false}>
-					<AddLocationForm/>
+					<LocationForm
+						onCancel={dismissLocationModal}
+						onSubmit={onLocationFormSubmit}
+					/>
 			</Modal>
 		</div>
 	)
