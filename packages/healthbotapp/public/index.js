@@ -6,11 +6,12 @@
 const defaultLocale = 'en-US';
 
 const params = new URLSearchParams(location.search);
+const locale = params.get("locale") || navigator.language;
 
 function requestChatBot(loc) {
     const oReq = new XMLHttpRequest();
     oReq.addEventListener("load", initBotConversation);
-    var path = "/chatBot?locale=" + extractLocale(params.get('locale'));
+    var path = "/chatBot?locale=" + locale;
 
     if (loc) {
         path += "&lat=" + loc.lat + "&long=" + loc.long;
@@ -26,18 +27,6 @@ function requestChatBot(loc) {
     }
     oReq.open("POST", path);
     oReq.send();
-}
-
-function extractLocale(localeParam) {
-    if (!localeParam) {
-        return defaultLocale;
-    }
-    else if (localeParam === 'autodetect') {
-        return navigator.language;
-    }
-    else {
-        return localeParam;
-    }
 }
 
 function chatRequested() {
@@ -77,7 +66,10 @@ function initBotConversation() {
     // extract the data from the JWT
     console.log(this.response)
     const jsonWebToken = this.response;
-    const tokenPayload = JSON.parse(atob(jsonWebToken.split('.')[1]));
+		const tokenPayload = JSON.parse(atob(jsonWebToken.split('.')[1]));
+		const lat = tokenPayload.location && tokenPayload.location.lat ? tokenPayload.location.lat : null;
+		const long = tokenPayload.location && tokenPayload.location.long ? tokenPayload.location.long : null;
+		console.log('Point: ', lat, long)
     const user = {
         id: tokenPayload.userId,
         name: tokenPayload.userName,
@@ -119,7 +111,10 @@ function initBotConversation() {
                             triggeredScenario: {
                                 trigger: "c19_entry",
                                 args: {
-                                    region: params.get("region") || null
+																		countryRegion: params.get("countryRegion") || null,
+																		adminDistrict: params.get("adminDistrict") || null,
+																		lat: lat,
+																		long: long
                                 }
                             }
                         }

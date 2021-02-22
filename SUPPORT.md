@@ -20,6 +20,6 @@ For help and questions about using this project, please **REPO MAINTAINER: INSER
 FOR HOW TO ENGAGE REPO OWNERS OR COMMUNITY FOR HELP. COULD BE A STACK OVERFLOW TAG OR OTHER
 CHANNEL. WHERE WILL YOU HELP PEOPLE?**.
 
-## Microsoft Support Policy
+## Support Policy
 
 Support for this **PROJECT or PRODUCT** is limited to the resources listed above.

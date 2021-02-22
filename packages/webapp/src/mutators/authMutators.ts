@@ -19,3 +19,8 @@ export const setUserAuthData = mutatorAction(
 		}
 	}
 )
+
+export const setUserNoAccess = mutatorAction('setUserNoAccess', () => {
+	const store = getAppStore()
+	store.isAuthorized = false
+})

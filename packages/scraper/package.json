@@ -1,5 +1,5 @@
 {
-	"name": "@ms-covidbot/source-scraper",
+	"name": "@covid-vax-bot/source-scraper",
 	"version": "0.0.1",
 	"private": true,
 	"description": "A utility that scrapes official websites that provide eligibility information to aid policy workers.",
@@ -23,9 +23,9 @@
 		"ssri": "^8.0.1"
 	},
 	"devDependencies": {
+		"@covid-vax-bot/state-plan-schema": "workspace:packages/schema",
+		"@covid-vax-bot/state-plans": "workspace:packages/plans",
 		"@essex/scripts": "^12.0.2",
-		"@ms-covidbot/state-plan-schema": "workspace:packages/schema",
-		"@ms-covidbot/state-plans": "workspace:packages/plans",
 		"@types/node": "^14.14.28",
 		"@types/node-fetch": "^2",
 		"@types/ssri": "^7.1.0",

@@ -8,6 +8,7 @@ import { AppState } from './schema/AppState'
 export const getAppState = (): AppState => {
 	return {
 		isAuthenticated: false,
+		isAuthorized: true,
 		accessToken: undefined,
 		username: undefined,
 		email: undefined,
@@ -21,6 +22,7 @@ export const getAppState = (): AppState => {
 		currentLanguage: 'en-us',
 		toggleAddLocation: false,
 		toggleQualifier: false,
+		isEditable: false,
 	}
 }
 

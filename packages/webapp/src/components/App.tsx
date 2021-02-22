@@ -13,7 +13,10 @@ import {
 import { observer } from 'mobx-react-lite'
 import { Switch, Route, Redirect } from 'react-router-dom'
 import { setCurrentLanguage } from '../mutators/repoMutators'
-import { isUserAuthenticated } from '../selectors/authSelectors'
+import {
+	isUserAuthenticated,
+	isUserAuthorized,
+} from '../selectors/authSelectors'
 import { getAppStore } from '../store/store'
 import { getLanguageDisplayText } from '../utils/textUtils'
 import Dashboard from './Dashboard'
@@ -102,19 +105,51 @@ export default observer(function App() {
 									</div>
 								</div>
 								<div className="appBodyWrapper">
-									<div className="appBodyLeft">
-										<Pivot>
-											<PivotItem headerText="Dashboard">
-												<Dashboard />
-											</PivotItem>
-											<PivotItem headerText="Locations">
-												<Locations />
-											</PivotItem>
-										</Pivot>
-									</div>
-									{state.toggleQualifier && (
-										<div className="appBodyRight">
-											<QualifierPanel />
+									{isUserAuthorized() ? (
+										<>
+											<div className="appBodyLeft">
+												<Pivot>
+													<PivotItem headerText="Dashboard">
+														<Dashboard />
+													</PivotItem>
+													<PivotItem headerText="Locations">
+														<Locations />
+													</PivotItem>
+												</Pivot>
+											</div>
+											{state.toggleQualifier && (
+												<div className="appBodyRight">
+													<QualifierPanel />
+												</div>
+											)}
+										</>
+									) : (
+										<div className="appBodyLeft">
+											<div className="dashboardPageWrapper">
+												<div className="bodyContainer">
+													<div className="bodyHeader">
+														<div className="bodyHeaderTitle">
+															<div className="mainTitle">Welcome!</div>
+														</div>
+													</div>
+												</div>
+												<section style={{ width: '70%', margin: '0px auto' }}>
+													<p>
+														Thank you for your interest in helping to manage the
+														Covid-19 Vaccine Policy data, unfortunately right
+														now access to this tool requires collaborator
+														permissions on{' '}
+														<a
+															target="_blank"
+															rel="noreferrer"
+															href={`https://www.github.com/${process.env.REACT_APP_REPO_OWNER}/${process.env.REACT_APP_REPO_NAME}`}
+														>
+															this repo
+														</a>
+														. Feel free to request access over on GitHub!
+													</p>
+												</section>
+											</div>
 										</div>
 									)}
 								</div>

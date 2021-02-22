@@ -1843,6 +1843,126 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@covid-vax-bot/data-portal@workspace:packages/webapp":
+  version: 0.0.0-use.local
+  resolution: "@covid-vax-bot/data-portal@workspace:packages/webapp"
+  dependencies:
+    "@covid-vax-bot/state-plan-schema": "workspace:packages/schema"
+    "@fluentui/react": ^7.160.2
+    "@testing-library/jest-dom": ^5.11.9
+    "@testing-library/react": ^11.2.5
+    "@testing-library/user-event": ^12.7.1
+    "@types/jest": ^26.0.20
+    "@types/node": ^14.14.28
+    "@types/react": ^17.0.2
+    "@types/react-dom": ^17.0.1
+    "@types/react-router-dom": ^5.1.7
+    "@uifabric/react-hooks": ^7.13.11
+    csv-parse: ^4.15.1
+    eslint-config-react-app: ^6.0.0
+    firebase: ^8.2.7
+    mobx: ^5.15.7
+    mobx-react-lite: ^2.2.2
+    office-ui-fabric-react: ^7.160.2
+    react: ^17.0.1
+    react-dom: ^17.0.1
+    react-refresh: ^0.9.0
+    react-router-dom: ^5.2.0
+    react-scripts: 4.0.2
+    satcheljs: ^4.2.3
+    typescript: ^4.1.5
+    web-vitals: ^1.1.0
+  languageName: unknown
+  linkType: soft
+
+"@covid-vax-bot/healthbot-app@workspace:packages/healthbotapp":
+  version: 0.0.0-use.local
+  resolution: "@covid-vax-bot/healthbot-app@workspace:packages/healthbotapp"
+  dependencies:
+    cookie-parser: ^1.4.5
+    dotenv: ^8.2.0
+    express: ^4.17.1
+    jsonwebtoken: ^8.5.1
+    request: ^2.88.2
+    request-promise: ^4.2.5
+  languageName: unknown
+  linkType: soft
+
+"@covid-vax-bot/policy-locator@workspace:packages/locator":
+  version: 0.0.0-use.local
+  resolution: "@covid-vax-bot/policy-locator@workspace:packages/locator"
+  dependencies:
+    "@covid-vax-bot/state-plan-schema": "workspace:packages/schema"
+    "@covid-vax-bot/state-plans": "workspace:packages/plans"
+    "@essex/scripts": ^12.0.2
+    "@rollup/plugin-commonjs": ^17.1.0
+    "@rollup/plugin-node-resolve": ^11.2.0
+    "@tsconfig/node12": ^1.0.7
+    "@types/jest": ^26.0.20
+    "@types/node": ^14.14.28
+    core-js: ^3.8.3
+    npm-run-all: ^4.1.5
+    rollup: ^2.39.0
+  languageName: unknown
+  linkType: soft
+
+"@covid-vax-bot/source-scraper@workspace:packages/scraper":
+  version: 0.0.0-use.local
+  resolution: "@covid-vax-bot/source-scraper@workspace:packages/scraper"
+  dependencies:
+    "@covid-vax-bot/state-plan-schema": "workspace:packages/schema"
+    "@covid-vax-bot/state-plans": "workspace:packages/plans"
+    "@essex/scripts": ^12.0.2
+    "@types/node": ^14.14.28
+    "@types/ssri": ^7.1.0
+    chalk: ^4.1.0
+    puppeteer: ^7.1.0
+    queue: ^6.0.2
+    ssri: ^8.0.1
+    ts-node: ^9.1.1
+  languageName: unknown
+  linkType: soft
+
+"@covid-vax-bot/state-plan-schema@workspace:packages/schema":
+  version: 0.0.0-use.local
+  resolution: "@covid-vax-bot/state-plan-schema@workspace:packages/schema"
+  dependencies:
+    "@essex/scripts": ^12.0.2
+    "@types/node": ^14.14.28
+    npm-run-all: ^4.1.5
+    ts-node: ^9.1.1
+    typescript: ^4.1.5
+    typescript-json-schema: ^0.49.0
+  languageName: unknown
+  linkType: soft
+
+"@covid-vax-bot/state-plans@workspace:packages/plans":
+  version: 0.0.0-use.local
+  resolution: "@covid-vax-bot/state-plans@workspace:packages/plans"
+  dependencies:
+    "@azure/storage-blob": ^12.4.1
+    "@covid-vax-bot/state-plan-schema": "workspace:packages/schema"
+    "@essex/scripts": ^12.0.2
+    "@types/config": ^0.0.38
+    "@types/jsonwebtoken": ^8.5.0
+    "@types/node": ^14.14.28
+    ajv: ^7.1.0
+    axios: ^0.21.1
+    chalk: ^4.1.0
+    config: ^3.3.3
+    csv-parse: ^4.15.1
+    csv-stringify: ^5.6.1
+    dotenv: ^8.2.0
+    form-data: ^3.0.1
+    jsonwebtoken: ^8.5.1
+    moment: ^2.29.1
+    npm-run-all: ^4.1.5
+    ts-node: ^9.1.1
+    typescript: ^4.1.5
+    typescript-json-schema: ^0.49.0
+  languageName: unknown
+  linkType: soft
+
 "@csstools/convert-colors@npm:^1.4.0":
   version: 1.4.0
   resolution: "@csstools/convert-colors@npm:1.4.0"
@@ -3266,129 +3386,6 @@ __metadata:
   checksum: e01193b783ed7682710a9af87ba05c69d15cc2183eedca36e37c720bbb7d7449f7d5cd8ad15c991f20c5d95cdce1a3a10ef6d82b1bb8a9762a193ad4245cc9da
   languageName: node
   linkType: hard
-
-"@ms-covidbot/data-portal@workspace:packages/webapp":
-  version: 0.0.0-use.local
-  resolution: "@ms-covidbot/data-portal@workspace:packages/webapp"
-  dependencies:
-    "@fluentui/react": ^7.160.2
-    "@ms-covidbot/state-plan-schema": "workspace:packages/schema"
-    "@testing-library/jest-dom": ^5.11.9
-    "@testing-library/react": ^11.2.5
-    "@testing-library/user-event": ^12.7.1
-    "@types/jest": ^26.0.20
-    "@types/node": ^14.14.28
-    "@types/react": ^17.0.2
-    "@types/react-dom": ^17.0.1
-    "@types/react-router-dom": ^5.1.7
-    "@uifabric/react-hooks": ^7.13.11
-    csv-parse: ^4.15.1
-    eslint-config-react-app: ^6.0.0
-    firebase: ^8.2.7
-    mobx: ^5.15.7
-    mobx-react-lite: ^2.2.2
-    office-ui-fabric-react: ^7.160.2
-    react: ^17.0.1
-    react-dom: ^17.0.1
-    react-refresh: ^0.9.0
-    react-router-dom: ^5.2.0
-    react-scripts: 4.0.2
-    satcheljs: ^4.2.3
-    typescript: ^4.1.5
-    web-vitals: ^1.1.0
-  languageName: unknown
-  linkType: soft
-
-"@ms-covidbot/healthbot-app@workspace:packages/healthbotapp":
-  version: 0.0.0-use.local
-  resolution: "@ms-covidbot/healthbot-app@workspace:packages/healthbotapp"
-  dependencies:
-    cookie-parser: ^1.4.5
-    dotenv: ^8.2.0
-    express: ^4.17.1
-    jsonwebtoken: ^8.5.1
-    request: ^2.88.2
-    request-promise: ^4.2.5
-  languageName: unknown
-  linkType: soft
-
-"@ms-covidbot/policy-locator@workspace:packages/locator":
-  version: 0.0.0-use.local
-  resolution: "@ms-covidbot/policy-locator@workspace:packages/locator"
-  dependencies:
-    "@essex/scripts": ^12.0.2
-    "@ms-covidbot/state-plan-schema": "workspace:packages/schema"
-    "@ms-covidbot/state-plans": "workspace:packages/plans"
-    "@rollup/plugin-commonjs": ^17.1.0
-    "@rollup/plugin-node-resolve": ^11.2.0
-    "@tsconfig/node12": ^1.0.7
-    "@types/jest": ^26.0.20
-    "@types/node": ^14.14.28
-    core-js: ^3.8.3
-    npm-run-all: ^4.1.5
-    rollup: ^2.39.0
-  languageName: unknown
-  linkType: soft
-
-"@ms-covidbot/source-scraper@workspace:packages/scraper":
-  version: 0.0.0-use.local
-  resolution: "@ms-covidbot/source-scraper@workspace:packages/scraper"
-  dependencies:
-    "@essex/scripts": ^12.0.2
-    "@ms-covidbot/state-plan-schema": "workspace:packages/schema"
-    "@ms-covidbot/state-plans": "workspace:packages/plans"
-    "@types/node": ^14.14.28
-    "@types/node-fetch": ^2
-    "@types/ssri": ^7.1.0
-    chalk: ^4.1.0
-    dotenv: ^8.2.0
-    node-fetch: ^2.6.1
-    puppeteer: ^7.1.0
-    queue: ^6.0.2
-    ssri: ^8.0.1
-    ts-node: ^9.1.1
-  languageName: unknown
-  linkType: soft
-
-"@ms-covidbot/state-plan-schema@workspace:packages/schema":
-  version: 0.0.0-use.local
-  resolution: "@ms-covidbot/state-plan-schema@workspace:packages/schema"
-  dependencies:
-    "@essex/scripts": ^12.0.2
-    "@types/node": ^14.14.28
-    npm-run-all: ^4.1.5
-    ts-node: ^9.1.1
-    typescript: ^4.1.5
-    typescript-json-schema: ^0.49.0
-  languageName: unknown
-  linkType: soft
-
-"@ms-covidbot/state-plans@workspace:packages/plans":
-  version: 0.0.0-use.local
-  resolution: "@ms-covidbot/state-plans@workspace:packages/plans"
-  dependencies:
-    "@azure/storage-blob": ^12.4.1
-    "@essex/scripts": ^12.0.2
-    "@ms-covidbot/state-plan-schema": "workspace:packages/schema"
-    "@types/config": ^0.0.38
-    "@types/jsonwebtoken": ^8.5.0
-    "@types/node": ^14.14.28
-    ajv: ^7.1.0
-    axios: ^0.21.1
-    chalk: ^4.1.0
-    config: ^3.3.3
-    csv-parse: ^4.15.1
-    csv-stringify: ^5.6.1
-    dotenv: ^8.2.0
-    form-data: ^3.0.1
-    jsonwebtoken: ^8.5.1
-    moment: ^2.29.1
-    npm-run-all: ^4.1.5
-    ts-node: ^9.1.1
-    typescript: ^4.1.5
-    typescript-json-schema: ^0.49.0
-  languageName: unknown
-  linkType: soft
 
 "@nodelib/fs.scandir@npm:2.1.4":
   version: 2.1.4

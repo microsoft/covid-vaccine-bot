@@ -4,9 +4,9 @@
  */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import Ajv, { ErrorObject, JSONSchemaType } from 'ajv'
-import { Region, VaccinationPlan } from '@ms-covidbot/state-plan-schema'
-import regionSchemaJson from '@ms-covidbot/state-plan-schema/dist/schema/Region.json'
-import planSchemaJson from '@ms-covidbot/state-plan-schema/dist/schema/VaccinationPlan.json'
+import { Region, VaccinationPlan } from '@covid-vax-bot/state-plan-schema'
+import regionSchemaJson from '@covid-vax-bot/state-plan-schema/dist/schema/Region.json'
+import planSchemaJson from '@covid-vax-bot/state-plan-schema/dist/schema/VaccinationPlan.json'
 
 const ajv = new Ajv()
 const RegionSchema: JSONSchemaType<Region> = regionSchemaJson as any
@@ -14,7 +14,9 @@ const VaccinationPlanSchema: JSONSchemaType<VaccinationPlan> = planSchemaJson as
 
 export type SchemaValidationError = ErrorObject<string, Record<string, any>>
 
-export function validateRegionInfo(data: unknown): SchemaValidationError[] {
+export function validateRegionInfoSchema(
+	data: unknown
+): SchemaValidationError[] {
 	const validate = ajv.compile<Region>(RegionSchema)
 	if (validate(data)) {
 		return []
@@ -22,7 +24,7 @@ export function validateRegionInfo(data: unknown): SchemaValidationError[] {
 	return validate.errors || []
 }
 
-export function validateVaccinationPlan(
+export function validateVaccinationPlanSchema(
 	data: unknown
 ): SchemaValidationError[] {
 	const validate = ajv.compile<VaccinationPlan>(VaccinationPlanSchema)

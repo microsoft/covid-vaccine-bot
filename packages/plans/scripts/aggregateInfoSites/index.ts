@@ -6,7 +6,7 @@ import * as fs from 'fs'
 import * as path from 'path'
 import { createDistDir, DIST_DIR } from '../createDistDir'
 import { DATA_DIR, getFiles } from '../getFiles'
-import { Link, VaccinationPlan } from '@ms-covidbot/state-plan-schema'
+import { Link, VaccinationPlan } from '@covid-vax-bot/state-plan-schema'
 
 async function aggregateInfoSites(): Promise<void> {
 	const files = getFiles(DATA_DIR, (file) => file === 'vaccination.json')

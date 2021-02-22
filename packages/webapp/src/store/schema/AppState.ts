@@ -4,6 +4,7 @@
  */
 export interface AppState {
 	isAuthenticated: boolean
+	isAuthorized: boolean
 	accessToken?: string
 	username?: string
 	email?: string
@@ -17,4 +18,5 @@ export interface AppState {
 	currentLanguage: string
 	toggleQualifier: boolean
 	toggleAddLocation: boolean
+	isEditable: boolean
 }

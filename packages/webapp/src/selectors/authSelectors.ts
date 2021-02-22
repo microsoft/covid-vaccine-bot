@@ -7,3 +7,7 @@ import { getAppStore } from '../store/store'
 export const isUserAuthenticated = (): boolean => {
 	return getAppStore().isAuthenticated
 }
+
+export const isUserAuthorized = (): boolean => {
+	return getAppStore().isAuthorized
+}
