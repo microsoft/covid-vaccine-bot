@@ -3,7 +3,7 @@
  * Licensed under the MIT license. See LICENSE file in the project.
  */
 import ssri from 'ssri'
-import { Link } from '@ms-covidbot/state-plan-schema'
+import { Link } from '@covid-vax-bot/state-plan-schema'
 
 export type RunResult = {
 	integrity: Record<string, string>

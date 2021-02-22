@@ -9,7 +9,7 @@ import ssri from 'ssri'
 import { PubSub, Handler, Unsubscribe } from './PubSub'
 import { extractPageData } from './extractPageData'
 import { PageScrapeResult, RunResult } from './types'
-import { Link } from '@ms-covidbot/state-plan-schema'
+import { Link } from '@covid-vax-bot/state-plan-schema'
 
 const createRunResult = (): RunResult => ({
 	integrity: {},

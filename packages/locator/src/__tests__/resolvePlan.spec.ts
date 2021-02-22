@@ -3,8 +3,8 @@
  * Licensed under the MIT license. See LICENSE file in the project.
  */
 import { BingLocation, resolvePlan } from '..'
-import { Region } from '@ms-covidbot/state-plan-schema'
-import statesData from '@ms-covidbot/state-plans/dist/states.json'
+import { Region } from '@covid-vax-bot/state-plan-schema'
+import statesData from '@covid-vax-bot/state-plans/dist/states.json'
 
 describe('The Plan Locator', () => {
 	it('exists', () => {

@@ -11,7 +11,7 @@ import {
 	Qualification,
 	Region,
 	RolloutPhase,
-} from '@ms-covidbot/state-plan-schema'
+} from '@covid-vax-bot/state-plan-schema'
 
 const REPO_TOP = path.join(__dirname, '../../../../')
 const DIST_DIR = path.join(__dirname, '../../dist')
