@@ -1,10 +1,7 @@
 ﻿String ID,en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th
 c19/how_did_we_do,Let us know how we did at [$SUPPORT_EMAIL](mailto:$SUPPORT_EMAIL),,,,,,,,,,,,,,
 c19.entry/prompt,How can I help you?,,,,,,,,,,,,,,
-c19.entry/welcome,Welcome to the COVID-19 Vaccine Eligibility Bot. You can provide feedback by emailing [$SUPPORT_EMAIL](mailto:$SUPPORT_EMAIL),,,,,,,,,,,,,,
 c19.entry/tos,"The COVID-19 Vaccine Eligibility bot aggregate data from trusted and verified sources to help understand your vaccine eligibility. This system does not provide medical advice and is not intended for use as a diagnostic or treatment tool for any disease, including COVID-19. You can provide feedback by emailing [$SUPPORT_EMAIL](mailto:$SUPPORT_EMAIL)",,,,,,,,,,,,,,
-c19.entry/do_you_agree_to_terms,Do you agree to these terms?,,,,,,,,,,,,,,
-c19.entry/agreement_options,"[""I Agree"", ""Cancel""]",,,,,,,,,,,,,,
 c19.question_series/answer_options_yesno,"[""Yes"", ""No""]",,,,,,,,,,,,,,
 c19.question_series/answer_options_yesnoinfo,"[""Yes"", ""No"", ""More Info""]",,,,,,,,,,,,,,
 c19.entry/unknown_question,I'm not sure how to help you with that. Please try one of the prepared questions.,,,,,,,,,,,,,,
