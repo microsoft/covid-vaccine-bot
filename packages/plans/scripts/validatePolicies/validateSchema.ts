@@ -14,7 +14,9 @@ const VaccinationPlanSchema: JSONSchemaType<VaccinationPlan> = planSchemaJson as
 
 export type SchemaValidationError = ErrorObject<string, Record<string, any>>
 
-export function validateRegionInfo(data: unknown): SchemaValidationError[] {
+export function validateRegionInfoSchema(
+	data: unknown
+): SchemaValidationError[] {
 	const validate = ajv.compile<Region>(RegionSchema)
 	if (validate(data)) {
 		return []
@@ -22,7 +24,7 @@ export function validateRegionInfo(data: unknown): SchemaValidationError[] {
 	return validate.errors || []
 }
 
-export function validateVaccinationPlan(
+export function validateVaccinationPlanSchema(
 	data: unknown
 ): SchemaValidationError[] {
 	const validate = ajv.compile<VaccinationPlan>(VaccinationPlanSchema)
