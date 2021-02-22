@@ -10,22 +10,59 @@ import {
     Dropdown
 } from '@fluentui/react'
 import { useRef } from 'react'
+import { getCustomStrings } from '../selectors/locationSelectors'
 
 import './LocationForm.scss'
 
 export interface LocationFormProp {
-    onSubmit?: (newLocation: any) => void
+    item?: any
+    onSubmit?: (locationData: any) => void
     onCancel?: () => void
 }
 
 export default observer(function LocationForm(props: LocationFormProp) {
-    const { onSubmit, onCancel } = props
+    const { onSubmit, onCancel, item } = props
     const formData = useRef<any>({})
+
+    const regionTypeOptions = [
+        {
+            key: 'state',
+            text: 'State'
+        },{
+            key: 'territory',
+            text: 'Territory'
+        },{
+            key: 'tribal_land',
+            text: 'Tribal land'
+        },{
+            key: 'county',
+            text: 'County'
+        },{
+            key: 'city',
+            text: 'City'
+        }
+    ]
+
+    if (item) {
+        const { info, vaccination } = item.value
+        const { info: vacInfo, scheduling_phone, eligibility_plan } = vaccination.content.links
+
+        console.log(item.value)
+        formData.current = {
+            details: info.content.name,
+            selectedRegionKey: info.content.type,
+            info: vacInfo?.url || '',
+            schedulingPhone: scheduling_phone?.text ? getCustomStrings(item, scheduling_phone.text) : '',
+            eligibilityPlan: eligibility_plan?.url || ''
+        }
+    }
+
+    const formTitle = item ? `Edit location` : 'Add new location'
 
 	return (
         <div className="modalWrapper">
             <div className="modalHeader">
-                <div className="title">Add new location</div>
+                <div className="title">{formTitle}</div>
             </div>
             <div className="modalBody">
                 <div className="detailsGroup">
@@ -35,44 +72,45 @@ export default observer(function LocationForm(props: LocationFormProp) {
                         onChange={(_ev, value) => formData.current.details = value as string}
                     />
                     <Dropdown
+                        selectedKey={formData.current.selectedRegionKey}
                         placeholder="Region type"
-                        options={[]}
+                        options={regionTypeOptions}
                     />
                 </div>
                 <TextField
                     label="General information link for the region:"
-                    value={formData.current.regionInfoLink}
-                    onChange={(_ev, value) => formData.current.regionInfoLink = value as string}
+                    value={formData.current.info}
+                    onChange={(_ev, value) => formData.current.info = value as string}
                 />
                 <TextField
                     label="Link to an existing eligibility workflow tool:"
-                    value={formData.current.workflowToolLink}
-                    onChange={(_ev, value) => formData.current.workflowToolLink = value as string}
+                    value={formData.current.workflow}
+                    onChange={(_ev, value) => formData.current.workflow = value as string}
                 />
                 <TextField
                     label="Appointment registration scheduler:"
-                    value={formData.current.appointmentSchedulerLink}
-                    onChange={(_ev, value) => formData.current.appointmentSchedulerLink = value as string}
+                    value={formData.current.scheduling}
+                    onChange={(_ev, value) => formData.current.scheduling = value as string}
                 />
                 <TextField
                     label="List of scheduling providers and locations:"
-                    value={formData.current.providersAndLocationsLink}
-                    onChange={(_ev, value) => formData.current.providersAndLocationsLink = value as string}
+                    value={formData.current.providers}
+                    onChange={(_ev, value) => formData.current.providers = value as string}
                 />
                 <TextField
                     label="Eligibility criteria about the current phase:"
-                    value={formData.current.currentPhaseCriteriaLink}
-                    onChange={(_ev, value) => formData.current.currentPhaseCriteriaLink = value as string}
+                    value={formData.current.eligibility}
+                    onChange={(_ev, value) => formData.current.eligibility = value as string}
                 />
                 <TextField
                     label="Documentation describing the rollout phases in detail:"
-                    value={formData.current.rolloutPhasesDocLink}
-                    onChange={(_ev, value) => formData.current.rolloutPhasesDocLink = value as string}
+                    value={formData.current.eligibilityPlan}
+                    onChange={(_ev, value) => formData.current.eligibilityPlan = value as string}
                 />
                 <TextField
                     label="A scheduling hotline:"
-                    value={formData.current.schedulingHotline}
-                    onChange={(_ev, value) => formData.current.schedulingHotline = value as string}
+                    value={formData.current.schedulingPhone}
+                    onChange={(_ev, value) => formData.current.schedulingPhone = value as string}
                 />
             </div>
             <div className="modalFooter">

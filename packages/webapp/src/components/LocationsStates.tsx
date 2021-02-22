@@ -8,7 +8,8 @@ import {
 	ProgressIndicator,
 	TextField,
 	FontIcon,
-	Modal
+	Modal,
+	IColumn
 } from '@fluentui/react'
 import { useBoolean } from '@uifabric/react-hooks'
 import { observer } from 'mobx-react-lite'
@@ -30,6 +31,7 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 	)
 	const [filteredStateList, setFilteredStateList] = useState<any[]>([])
 	const stateRepoFullList = useRef<any[]>([])
+	const selectedLocationItem = useRef<any>(null)
 
 	const state = getAppStore()
 
@@ -43,12 +45,19 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 		},
 		{
 			key: 'regionCol',
-			name: 'Number of regions',
+			name: 'Sublocations',
 			fieldName: 'regions',
 			minWidth: 200,
 			isResizable: true,
 		},
-	]
+		{
+			key: 'editCol',
+			name: '',
+			fieldName: 'editLocation',
+			minWidth: 50,
+			isResizable: false,
+		}
+	].filter(loc => state.isEditable ? true : loc.key !== 'editCol')
 
 	useEffect(() => {
 		if (state.repoFileData) {
@@ -80,7 +89,7 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 
 	const onStateFilter = useCallback(
 		(
-			event: FormEvent<HTMLInputElement | HTMLTextAreaElement>,
+			_event: FormEvent<HTMLInputElement | HTMLTextAreaElement>,
 			text?: string | undefined
 		) => {
 			if (text) {
@@ -103,9 +112,28 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 		[onSelectedItem]
 	)
 
-	const onLocationFormSubmit = useCallback((_newLocation) => {
+	const onLocationFormSubmit = useCallback((_locationData) => {
 		dismissLocationModal()
 	},[dismissLocationModal])
+
+	const onLocationFormOpen = useCallback((item?: any) => {
+		selectedLocationItem.current = item ?? null
+		openLocationModal()
+	},[openLocationModal])
+
+	const onRenderItemColumn = useCallback((item?: any, _index?: number, column?: IColumn) => {
+		const fieldContent = item[column?.fieldName as keyof any] as string;
+
+		if (column?.key === 'editCol') {
+			return state.isEditable ? <FontIcon
+						iconName='Edit'
+						style={{ color: '#0078d4', cursor: 'pointer' }}
+						onClick={() => onLocationFormOpen(item)}
+					/> : null
+		} else {
+			return <span>{fieldContent}</span>;
+		}
+	},[onLocationFormOpen, state.isEditable])
 
 	return (
 		<div className="bodyContainer">
@@ -115,7 +143,7 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 					<div className="mainTitle">Locations</div>
 				</div>
 				{state.isEditable && (
-					<div className="addLocationHeaderButton" onClick={openLocationModal}>
+					<div className="addLocationHeaderButton" onClick={() => onLocationFormOpen(null)}>
 						<FontIcon
 							iconName="CircleAdditionSolid"
 							style={{ color: '#0078d4' }}
@@ -139,6 +167,7 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 							checkButtonAriaLabel="Row checkbox"
 							checkboxVisibility={2}
 							onItemInvoked={openSelection}
+							onRenderItemColumn={onRenderItemColumn}
 						/>
 					</section>
 				) : (
@@ -153,6 +182,7 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 				isDarkOverlay={true}
 				isBlocking={false}>
 					<LocationForm
+						item={selectedLocationItem.current}
 						onCancel={dismissLocationModal}
 						onSubmit={onLocationFormSubmit}
 					/>
