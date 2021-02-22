@@ -9,8 +9,8 @@ import { DIST_DIR } from '../createDistDir'
 import { getFiles, DATA_DIR } from '../getFiles'
 import { readCsvFile } from '../readCsvFile'
 import {
-	validateRegionInfo,
-	validateVaccinationPlan,
+	validateRegionInfoSchema,
+	validateVaccinationPlanSchema,
 	SchemaValidationError,
 } from './validateSchema'
 import {
@@ -18,7 +18,7 @@ import {
 	Link,
 	RolloutPhase,
 	Qualification,
-} from '@ms-covidbot/state-plan-schema'
+} from '@covid-vax-bot/state-plan-schema'
 
 const LOCALIZATION_TABLE_PATH = path.join(DIST_DIR, 'localization.csv')
 
@@ -52,7 +52,7 @@ function validateDataFiles() {
 		try {
 			/* eslint-disable-next-line @typescript-eslint/no-var-requires */
 			const data = require(file)
-			const validationErrors = validateRegionInfo(data)
+			const validationErrors = validateRegionInfoSchema(data)
 			schemaValidationErrors.push(...validationErrors)
 			errorCount += validationErrors.length
 
@@ -73,13 +73,17 @@ function validateDataFiles() {
 	function validateVaccinationInfo(file: string) {
 		try {
 			/* eslint-disable-next-line @typescript-eslint/no-var-requires */
-			const data = require(file)
-			const validationErrors = validateVaccinationPlan(data)
+			const data = require(file) as VaccinationPlan
+
+			const validationErrors = validateVaccinationPlanSchema(data)
 			const dataLinkErrors: string[] = []
 			checkStringIds(data, stringChecker, dataLinkErrors)
 			linkErrors.push(...dataLinkErrors)
 			schemaValidationErrors.push(...validationErrors)
 			errorCount += dataLinkErrors.length + validationErrors.length
+			const phaseErrors = verifyPhaseIdsNotDuplicated(data)
+			dataLinkErrors.push(...phaseErrors)
+			errorCount += phaseErrors.length
 
 			// handle results
 			if (validationErrors.length === 0 && dataLinkErrors.length === 0) {
@@ -112,6 +116,18 @@ function validateDataFiles() {
 }
 
 validateDataFiles()
+
+function verifyPhaseIdsNotDuplicated(plan: VaccinationPlan): string[] {
+	const errors: string[] = []
+	const idSet = new Set<string>()
+	plan?.phases?.forEach((phase) => {
+		if (idSet.has(phase.id)) {
+			errors.push(`found duplicate phase id ${phase.id} in vaccination plan`)
+		}
+		idSet.add(phase.id)
+	})
+	return errors
+}
 
 function getStringChecker(): StringChecker {
 	const records: Record<string, string>[] = []

@@ -4,36 +4,17 @@
  */
 import { FC, memo } from 'react'
 
+const CONTACT_EMAIL = process.env.REACT_APP_CONTACT_US_EMAIL
+const CODE_OF_CONDUCT_URL = process.env.REACT_APP_CODE_OF_CONDUCT_URL
+
 export const Footer: FC = memo(function Footer() {
 	const year = new Date().getFullYear()
 	return (
 		<div style={{ display: 'flex', flexDirection: 'column' }}>
 			<div className="appFooterRow">
-				<Link href="mailto:covidbot-feedback@microsoft.com">Contact Us</Link>
+				<Link href={`mailto:${CONTACT_EMAIL}`}>Contact Us</Link>
 				{' | '}
-				<Link href="https://go.microsoft.com/fwlink/?LinkId=521839">
-					Privacy &amp; Cookies
-				</Link>
-				{' | '}
-				<Link href="https://go.microsoft.com/fwlink/?LinkID=246338">
-					Terms of Use
-				</Link>
-				{' | '}
-				<Link href="https://github.com/microsoft/covid-vaccine-bot/blob/main/CODE_OF_CONDUCT.md">
-					Code of Conduct
-				</Link>
-				{' | '}
-				<Link href="https://www.microsoft.com/en-us/legal/intellectualproperty/Trademarks/EN-US.aspx">
-					Trademarks
-				</Link>
-				{' | '}
-				<Link>&copy; {year} Microsoft</Link>
-			</div>
-			<div className="appFooterRow">
-				<Link href="https://microsoft.com">
-					<span style={{ marginRight: 5 }}>Microsoft</span>
-					<img alt="Microsoft Logo" src="mslogo.jpg" height={20} width={20} />
-				</Link>
+				<Link href={CODE_OF_CONDUCT_URL}>Code of Conduct</Link>
 			</div>
 		</div>
 	)

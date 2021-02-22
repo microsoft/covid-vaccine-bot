@@ -7,7 +7,7 @@ import * as fs from 'fs'
 import * as path from 'path'
 import { DIST_DIR } from '../createDistDir'
 import { DATA_DIR } from '../getFiles'
-import { Region } from '@ms-covidbot/state-plan-schema'
+import { Region } from '@covid-vax-bot/state-plan-schema'
 
 export const POLICIES_DIR = path.join(DATA_DIR, 'policies')
 
