@@ -2804,10 +2804,10 @@
 |CDC/North_Dakota/state_name|North Dakota|Dakota del Norte|北达科他州|노스다코타|North Dakota|none
 |CDC/Tennessee/state_name|Tennessee|Tennessee|田纳西州|테네시|Tennessee|none
 |CDC/Virgin_Islands/state_name|Virgin Islands|Islas Vírgenes|维尔京群岛|버진아일랜드|Virgin Islands|none
-|c19/how_did_we_do|Let us know how we did at [covidbot-feedback@microsoft.com](mailto:covidbot-feedback@microsoft.com)|not defined|not defined|not defined|not defined|none
+|c19/how_did_we_do|Let us know how we did at [todo@todo.com](mailto:todo@todo.com)|not defined|not defined|not defined|not defined|none
 |c19.entry/prompt|How can I help you?|not defined|not defined|not defined|not defined|none
-|c19.entry/welcome|Welcome to the Microsoft COVID-19 Bot. You can provide feedback by emailing [covidbot-feedback@microsoft.com](mailto:covidbot-feedback@microsoft.com)|not defined|not defined|not defined|not defined|none
-|c19.entry/tos|The COVID-19 Vaccine Eligibility bot aggregate data from trusted and verified sources to help understand your vaccine eligibility. This system does not provide medical advice and is not intended for use as a diagnostic or treatment tool for any disease, including COVID-19. Please do not provide any personally identifying information to this system, please refer to the [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839) for more information.  You can provide feedback by emailing [covidbot-feedback@microsoft.com](mailto:covidbot-feedback@microsoft.com)|not defined|not defined|not defined|not defined|none
+|c19.entry/welcome|Welcome to the COVID-19 Vaccine Eligibility Bot. You can provide feedback by emailing [todo@todo.com](mailto:todo@todo.com)|not defined|not defined|not defined|not defined|none
+|c19.entry/tos|The COVID-19 Vaccine Eligibility bot aggregate data from trusted and verified sources to help understand your vaccine eligibility. This system does not provide medical advice and is not intended for use as a diagnostic or treatment tool for any disease, including COVID-19. You can provide feedback by emailing [todo@todo.com](mailto:todo@todo.com)|not defined|not defined|not defined|not defined|none
 |c19.entry/do_you_agree_to_terms|Do you agree to these terms?|not defined|not defined|not defined|not defined|none
 |c19.entry/agreement_options|["I Agree", "Cancel"]|not defined|not defined|not defined|not defined|none
 |c19.question_series/answer_options_yesno|["Yes", "No"]|not defined|not defined|not defined|not defined|none

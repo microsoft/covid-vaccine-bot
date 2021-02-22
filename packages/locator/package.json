@@ -1,5 +1,5 @@
 {
-	"name": "@ms-covidbot/policy-locator",
+	"name": "@covid-vax-bot/policy-locator",
 	"version": "0.0.1",
 	"private": true,
 	"main": "src/index.ts",
@@ -19,9 +19,9 @@
 		"core-js": "^3.8.3"
 	},
 	"devDependencies": {
+		"@covid-vax-bot/state-plan-schema": "workspace:packages/schema",
+		"@covid-vax-bot/state-plans": "workspace:packages/plans",
 		"@essex/scripts": "^12.0.2",
-		"@ms-covidbot/state-plan-schema": "workspace:packages/schema",
-		"@ms-covidbot/state-plans": "workspace:packages/plans",
 		"@rollup/plugin-node-resolve": "^11.2.0",
 		"@tsconfig/node12": "^1.0.7",
 		"@types/jest": "^26.0.20",

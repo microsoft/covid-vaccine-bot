@@ -18,7 +18,7 @@ import {
 	Link,
 	RolloutPhase,
 	Qualification,
-} from '@ms-covidbot/state-plan-schema'
+} from '@covid-vax-bot/state-plan-schema'
 
 const LOCALIZATION_TABLE_PATH = path.join(DIST_DIR, 'localization.csv')
 
@@ -73,7 +73,9 @@ function validateDataFiles() {
 	function validateVaccinationInfo(file: string) {
 		try {
 			/* eslint-disable-next-line @typescript-eslint/no-var-requires */
-			const data = require(file)
+			const data = require(file) as VaccinationPlan
+			inspectPlan(data)
+
 			const validationErrors = validateVaccinationPlan(data)
 			const dataLinkErrors: string[] = []
 			checkStringIds(data, stringChecker, dataLinkErrors)
@@ -112,6 +114,16 @@ function validateDataFiles() {
 }
 
 validateDataFiles()
+
+function inspectPlan(plan: VaccinationPlan): void {
+	const idSet = new Set<string>()
+	plan?.phases?.forEach((phase) => {
+		if (idSet.has(phase.id)) {
+			throw new Error(`found duplicate phase id ${phase.id}`)
+		}
+		idSet.add(phase.id)
+	})
+}
 
 function getStringChecker(): StringChecker {
 	const records: Record<string, string>[] = []

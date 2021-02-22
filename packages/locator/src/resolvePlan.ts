@@ -3,7 +3,7 @@
  * Licensed under the MIT license. See LICENSE file in the project.
  */
 import { BingLocation, PlanResult, PlanRegion } from './types'
-import { Region, RolloutPhase } from '@ms-covidbot/state-plan-schema'
+import { Region, RolloutPhase } from '@covid-vax-bot/state-plan-schema'
 
 export function resolvePlan(
 	location: BingLocation,
