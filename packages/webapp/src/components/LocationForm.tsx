@@ -2,7 +2,6 @@
  * Copyright (c) Microsoft. All rights reserved.
  * Licensed under the MIT license. See LICENSE file in the project.
  */
-import { observer } from 'mobx-react-lite'
 import {
 	PrimaryButton,
     DefaultButton,
@@ -10,6 +9,7 @@ import {
     Dropdown,
     IDropdownOption
 } from '@fluentui/react'
+import { observer } from 'mobx-react-lite'
 import { useCallback, useRef, useState } from 'react'
 import { getCustomStrings } from '../selectors/locationSelectors'
 
