@@ -25,12 +25,26 @@
 	justify-content: space-between;
 }
 
-.newLocationPanel {
-	margin-top: 50px;
-}
+.locationDetailsList {
+	.ms-DetailsRow {
+		.editIcon {
+			visibility: hidden;
+			cursor: pointer;
+			color: $ms-color-themePrimary;
+		}
 
-.newLocationPanelBody {
-	margin-top: 30px;
+		&.is-selected {
+			.editIcon {
+				visibility: visible;
+			}
+		}
+
+		&:hover {
+			.editIcon {
+				visibility: visible;
+			}
+		}
+	}
 }
 
 .phaseGroupHeader {
@@ -76,6 +90,7 @@
 		padding: 0 10px;
 	}
 }
+
 .phaseGridContainer {
 	.ms-FocusZone {
 		max-width: 100% !important;

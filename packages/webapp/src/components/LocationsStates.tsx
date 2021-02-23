@@ -128,7 +128,7 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 		if (column?.key === 'editCol') {
 			return state.isEditable ? <FontIcon
 						iconName='Edit'
-						style={{ color: '#0078d4', cursor: 'pointer' }}
+						className="editIcon"
 						onClick={() => onLocationFormOpen(item)}
 					/> : null
 		} else {
@@ -175,6 +175,7 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 							checkboxVisibility={2}
 							onItemInvoked={openSelection}
 							onRenderItemColumn={onRenderItemColumn}
+							className="locationDetailsList"
 						/>
 					</section>
 				) : (
