@@ -2,11 +2,14 @@
  * Copyright (c) Microsoft. All rights reserved.
  * Licensed under the MIT license. See LICENSE file in the project.
  */
-import { DetailsList, DetailsListLayoutMode } from '@fluentui/react'
+import { DetailsList, DetailsListLayoutMode, IColumn, FontIcon, Modal } from '@fluentui/react'
 import { observer } from 'mobx-react-lite'
 import { useState, useRef, useEffect, useCallback } from 'react'
 import { toProperCase } from '../utils/textUtils'
 import LocationsPhases from './LocationsPhases'
+import { getAppStore } from '../store/store'
+import LocationForm from './LocationForm'
+import { useBoolean } from '@uifabric/react-hooks'
 
 import './Locations.scss'
 
@@ -23,6 +26,12 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 		value: any
 		selectedState: any
 	}>({ isRegion: false, value: null, selectedState: null })
+	const [isLocationModalOpen, { setTrue: openLocationModal, setFalse: dismissLocationModal }] = useBoolean(
+		false
+	)
+	const selectedSublocationItem = useRef<any>(null)
+
+	const state = getAppStore()
 
 	const { selectedState, onNavigateBack } = props
 
@@ -41,7 +50,14 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 			minWidth: 200,
 			isResizable: true,
 		},
-	]
+		{
+			key: 'editCol',
+			name: '',
+			fieldName: 'editLocation',
+			minWidth: 50,
+			isResizable: false,
+		}
+	].filter(loc => state.isEditable ? true : loc.key !== 'editCol')
 
 	const phaseColumns = [
 		{
@@ -109,6 +125,29 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 		},
 		[selectedState]
 	)
+
+	const onLocationFormSubmit = useCallback((_locationData) => {
+		dismissLocationModal()
+	},[dismissLocationModal])
+
+	const onLocationFormOpen = useCallback((item?: any) => {
+		selectedSublocationItem.current = item ?? null
+		openLocationModal()
+	},[openLocationModal])
+
+	const onRenderItemColumn = useCallback((item?: any, _index?: number, column?: IColumn) => {
+		const fieldContent = item[column?.fieldName as keyof any] as string;
+
+		if (column?.key === 'editCol') {
+			return state.isEditable ? <FontIcon
+						iconName='Edit'
+						className="editIcon"
+						onClick={() => onLocationFormOpen(item)}
+					/> : null
+		} else {
+			return <span>{fieldContent}</span>;
+		}
+	},[onLocationFormOpen, state.isEditable])
 
 	return (
 		<div className="bodyContainer">
@@ -183,7 +222,6 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 							<div>No phases available at this time.</div>
 						)}
 					</section>
-
 					<section>
 						{selectedState.regions > 0 ? (
 							<DetailsList
@@ -197,6 +235,8 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 								checkButtonAriaLabel="Row checkbox"
 								checkboxVisibility={2}
 								onItemInvoked={(item) => selectedPhase(true, item)}
+								onRenderItemColumn={onRenderItemColumn}
+								className="locationDetailsList"
 							/>
 						) : (
 							<div>No regions available at this time.</div>
@@ -204,6 +244,18 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 					</section>
 				</div>
 			)}
+			<Modal
+				isOpen={isLocationModalOpen}
+				isModeless={false}
+				isDarkOverlay={true}
+				isBlocking={false}>
+					<LocationForm
+						item={selectedSublocationItem.current}
+						onCancel={dismissLocationModal}
+						onSubmit={onLocationFormSubmit}
+						isRegion={true}
+					/>
+			</Modal>
 		</div>
 	)
 })
