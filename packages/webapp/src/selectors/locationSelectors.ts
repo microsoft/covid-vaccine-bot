@@ -11,7 +11,6 @@ export const getCustomStrings = (selectedState: any, keyFilter: string) => {
         ? [...Object.entries(selectedState.value.strings.content), ...Object.entries(globalFileData.customStrings.content)]
         : [...Object.entries(globalFileData.customStrings.content)]
 
-    console.log(keyFilter)
     const filteredList = keyFilter ? customStringsList.filter(([key, _value]:[string, any]) => key.includes(keyFilter.toLowerCase())) : customStringsList
 
     return filteredList

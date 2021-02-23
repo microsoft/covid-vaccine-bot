@@ -19,6 +19,12 @@
 	}
 }
 
+.searchRow {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
 .newLocationPanel {
 	margin-top: 50px;
 }

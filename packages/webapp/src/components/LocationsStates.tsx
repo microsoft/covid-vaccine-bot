@@ -9,7 +9,8 @@ import {
 	TextField,
 	FontIcon,
 	Modal,
-	IColumn
+	IColumn,
+	SearchBox
 } from '@fluentui/react'
 import { useBoolean } from '@uifabric/react-hooks'
 import { observer } from 'mobx-react-lite'
@@ -89,7 +90,7 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 
 	const onStateFilter = useCallback(
 		(
-			_event: FormEvent<HTMLInputElement | HTMLTextAreaElement>,
+			_event: any,
 			text?: string | undefined
 		) => {
 			if (text) {
@@ -142,20 +143,26 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 					<div className="breadCrumbs">/ Locations</div>
 					<div className="mainTitle">Locations</div>
 				</div>
-				{state.isEditable && (
-					<div className="addLocationHeaderButton" onClick={() => onLocationFormOpen(null)}>
-						<FontIcon
-							iconName="CircleAdditionSolid"
-							style={{ color: '#0078d4' }}
-						/>
-						Add Location
-					</div>
-				)}
 			</div>
 			<div className="bodyContent">
 				{state.repoFileData ? (
 					<section>
-						<TextField label="Filter by name:" onChange={onStateFilter} />
+						<div className="searchRow">
+							<SearchBox
+							styles={{root: { width: 400}}}
+								placeholder="Search"
+								onChange={(ev, text) => onStateFilter(ev, text)}
+							/>
+							{state.isEditable && (
+								<div className="addLocationHeaderButton" onClick={() => onLocationFormOpen(null)}>
+									<FontIcon
+										iconName="CircleAdditionSolid"
+										style={{ color: '#0078d4' }}
+									/>
+									Add Location
+								</div>
+							)}
+						</div>
 						<DetailsList
 							items={filteredStateList}
 							columns={locationColumns}
