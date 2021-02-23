@@ -54,7 +54,7 @@ export default observer(function PhaseForm(props: PhaseFormProps) {
 		(_event, option) => {
 			setFilteredQualifierItems(
 				phaseQualifierItems.current.filter(
-					(q) => q.key.split('/')[1].split('.')[0] == option.key
+					(q) => q.key.split('/')[1].split('.')[0] === option.key
 				)
 			)
 			setMoreInfoText('')
@@ -97,7 +97,7 @@ export default observer(function PhaseForm(props: PhaseFormProps) {
 			}
 			onRowItemChange?.({ ...rowItems, ...{ item: changedItem.current } })
 		},
-		[phaseQualifierItems, onRowItemChange, rowItems]
+		[phaseMoreInfoItems, onRowItemChange, rowItems]
 	)
 
 	const onMoreInfoTextChange = useCallback(
@@ -111,7 +111,7 @@ export default observer(function PhaseForm(props: PhaseFormProps) {
 			onRowItemChange?.({ ...rowItems, ...{ item: changedItem.current } })
 			setMoreInfoText(value)
 		},
-		[phaseQualifierItems, onRowItemChange, rowItems]
+		[onRowItemChange, rowItems]
 	)
 
 	const onMoreInfoUrlChange = useCallback(
@@ -125,7 +125,7 @@ export default observer(function PhaseForm(props: PhaseFormProps) {
 			onRowItemChange?.({ ...rowItems, ...{ item: changedItem.current } })
 			setMoreInfoUrl(value)
 		},
-		[phaseQualifierItems, onRowItemChange, rowItems]
+		[onRowItemChange, rowItems]
 	)
 
 	return (

@@ -5,16 +5,18 @@
 import {
 	DetailsList,
 	DetailsListLayoutMode,
-	Dropdown,
-	Panel,
-	PrimaryButton,
 	ProgressIndicator,
 	TextField,
+	FontIcon,
+	Modal,
+	IColumn,
+	SearchBox
 } from '@fluentui/react'
 import { useBoolean } from '@uifabric/react-hooks'
 import { observer } from 'mobx-react-lite'
 import { useState, useRef, useEffect, useCallback, FormEvent } from 'react'
 import { getAppStore } from '../store/store'
+import LocationForm from './LocationForm'
 
 import './Locations.scss'
 
@@ -25,11 +27,12 @@ export interface LocationsStatesProp {
 export default observer(function LocationsStates(props: LocationsStatesProp) {
 	const { onSelectedItem } = props
 
-	const [isOpen, { setTrue: openPanel, setFalse: dismissPanel }] = useBoolean(
+	const [isLocationModalOpen, { setTrue: openLocationModal, setFalse: dismissLocationModal }] = useBoolean(
 		false
 	)
 	const [filteredStateList, setFilteredStateList] = useState<any[]>([])
 	const stateRepoFullList = useRef<any[]>([])
+	const selectedLocationItem = useRef<any>(null)
 
 	const state = getAppStore()
 
@@ -43,12 +46,19 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 		},
 		{
 			key: 'regionCol',
-			name: 'Number of regions',
+			name: 'Sublocations',
 			fieldName: 'regions',
 			minWidth: 200,
 			isResizable: true,
 		},
-	]
+		{
+			key: 'editCol',
+			name: '',
+			fieldName: 'editLocation',
+			minWidth: 50,
+			isResizable: false,
+		}
+	].filter(loc => state.isEditable ? true : loc.key !== 'editCol')
 
 	useEffect(() => {
 		if (state.repoFileData) {
@@ -80,7 +90,7 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 
 	const onStateFilter = useCallback(
 		(
-			event: FormEvent<HTMLInputElement | HTMLTextAreaElement>,
+			_event: any,
 			text?: string | undefined
 		) => {
 			if (text) {
@@ -103,6 +113,29 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 		[onSelectedItem]
 	)
 
+	const onLocationFormSubmit = useCallback((_locationData) => {
+		dismissLocationModal()
+	},[dismissLocationModal])
+
+	const onLocationFormOpen = useCallback((item?: any) => {
+		selectedLocationItem.current = item ?? null
+		openLocationModal()
+	},[openLocationModal])
+
+	const onRenderItemColumn = useCallback((item?: any, _index?: number, column?: IColumn) => {
+		const fieldContent = item[column?.fieldName as keyof any] as string;
+
+		if (column?.key === 'editCol') {
+			return state.isEditable ? <FontIcon
+						iconName='Edit'
+						className="editIcon"
+						onClick={() => onLocationFormOpen(item)}
+					/> : null
+		} else {
+			return <span>{fieldContent}</span>;
+		}
+	},[onLocationFormOpen, state.isEditable])
+
 	return (
 		<div className="bodyContainer">
 			<div className="bodyHeader">
@@ -110,14 +143,26 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 					<div className="breadCrumbs">/ Locations</div>
 					<div className="mainTitle">Locations</div>
 				</div>
-				{state.toggleAddLocation && (
-					<PrimaryButton text="+ Add location" onClick={openPanel} />
-				)}
 			</div>
 			<div className="bodyContent">
 				{state.repoFileData ? (
 					<section>
-						<TextField label="Filter by name:" onChange={onStateFilter} />
+						<div className="searchRow">
+							<SearchBox
+							styles={{root: { width: 400}}}
+								placeholder="Search"
+								onChange={(ev, text) => onStateFilter(ev, text)}
+							/>
+							{state.isEditable && (
+								<div className="addLocationHeaderButton" onClick={() => onLocationFormOpen(null)}>
+									<FontIcon
+										iconName="CircleAdditionSolid"
+										style={{ color: '#0078d4' }}
+									/>
+									Add Location
+								</div>
+							)}
+						</div>
 						<DetailsList
 							items={filteredStateList}
 							columns={locationColumns}
@@ -129,6 +174,8 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 							checkButtonAriaLabel="Row checkbox"
 							checkboxVisibility={2}
 							onItemInvoked={openSelection}
+							onRenderItemColumn={onRenderItemColumn}
+							className="locationDetailsList"
 						/>
 					</section>
 				) : (
@@ -137,28 +184,17 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 					</section>
 				)}
 			</div>
-			<Panel
-				isLightDismiss={true}
-				headerText="Add new location"
-				isBlocking={true}
-				isOpen={isOpen}
-				onDismiss={dismissPanel}
-				closeButtonAriaLabel="Close"
-				className="newLocationPanel"
-			>
-				<div className="newLocationPanelBody">
-					<Dropdown
-						label="Locations"
-						selectedKey={undefined}
-						placeholder="Select a location"
-						options={stateRepoFullList.current}
+			<Modal
+				isOpen={isLocationModalOpen}
+				isModeless={false}
+				isDarkOverlay={true}
+				isBlocking={false}>
+					<LocationForm
+						item={selectedLocationItem.current}
+						onCancel={dismissLocationModal}
+						onSubmit={onLocationFormSubmit}
 					/>
-					<br />
-					<TextField label="New sub-location " required />
-					<br />
-					<PrimaryButton text="Save" />
-				</div>
-			</Panel>
+			</Modal>
 		</div>
 	)
 })
