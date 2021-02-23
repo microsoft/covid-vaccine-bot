@@ -2,7 +2,7 @@
  * Copyright (c) Microsoft. All rights reserved.
  * Licensed under the MIT license. See LICENSE file in the project.
  */
-import { DetailsList, DetailsListLayoutMode, IColumn, FontIcon, Modal } from '@fluentui/react'
+import { DetailsList, DetailsListLayoutMode, IColumn, FontIcon, Modal, SearchBox } from '@fluentui/react'
 import { observer } from 'mobx-react-lite'
 import { useState, useRef, useEffect, useCallback } from 'react'
 import { toProperCase } from '../utils/textUtils'
@@ -149,6 +149,24 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 		}
 	},[onLocationFormOpen, state.isEditable])
 
+	const onRegionFilter = useCallback(
+		(
+			_event: any,
+			text?: string | undefined
+		) => {
+			if (text) {
+				setFilteredRegionsList(
+					stateRegionsFullList.current.filter(
+						(region) => region.name.toLowerCase().indexOf(text) > -1
+					)
+				)
+			} else {
+				setFilteredRegionsList(stateRegionsFullList.current)
+			}
+		},
+		[stateRegionsFullList]
+	)
+
 	return (
 		<div className="bodyContainer">
 			<div className="bodyHeader subContent">
@@ -210,34 +228,60 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 				<div className="bodyContent">
 					<section>
 						{selectedState.value.vaccination.content.phases.length > 0 ? (
-							<DetailsList
-								items={phaseItems}
-								columns={phaseColumns}
-								setKey="set"
-								layoutMode={DetailsListLayoutMode.justified}
-								checkboxVisibility={2}
-								onItemInvoked={(item) => selectedPhase(false, item)}
-							/>
+							<>
+								<div className="listTitle">
+									Phases
+								</div>
+								<DetailsList
+									items={phaseItems}
+									columns={phaseColumns}
+									setKey="set"
+									layoutMode={DetailsListLayoutMode.justified}
+									checkboxVisibility={2}
+									onItemInvoked={(item) => selectedPhase(false, item)}
+								/>
+							</>
 						) : (
 							<div>No phases available at this time.</div>
 						)}
 					</section>
 					<section>
 						{selectedState.regions > 0 ? (
-							<DetailsList
-								items={filteredRegionsList}
-								columns={subLocationsColumns}
-								setKey="set"
-								layoutMode={DetailsListLayoutMode.justified}
-								selectionPreservedOnEmptyClick={true}
-								ariaLabelForSelectionColumn="Toggle selection"
-								ariaLabelForSelectAllCheckbox="Toggle selection for all items"
-								checkButtonAriaLabel="Row checkbox"
-								checkboxVisibility={2}
-								onItemInvoked={(item) => selectedPhase(true, item)}
-								onRenderItemColumn={onRenderItemColumn}
-								className="locationDetailsList"
-							/>
+							<>
+								<div className="listTitle">
+									Sublocation
+								</div>
+								<div className="searchRow">
+									<SearchBox
+									styles={{root: { width: 400}}}
+										placeholder="Search"
+										onChange={(ev, text) => onRegionFilter(ev, text)}
+									/>
+									{state.isEditable && (
+										<div className="addLocationHeaderButton" onClick={() => onLocationFormOpen(null)}>
+											<FontIcon
+												iconName="CircleAdditionSolid"
+												style={{ color: '#0078d4' }}
+											/>
+											Add Sublocation
+										</div>
+									)}
+								</div>
+								<DetailsList
+									items={filteredRegionsList}
+									columns={subLocationsColumns}
+									setKey="set"
+									layoutMode={DetailsListLayoutMode.justified}
+									selectionPreservedOnEmptyClick={true}
+									ariaLabelForSelectionColumn="Toggle selection"
+									ariaLabelForSelectAllCheckbox="Toggle selection for all items"
+									checkButtonAriaLabel="Row checkbox"
+									checkboxVisibility={2}
+									onItemInvoked={(item) => selectedPhase(true, item)}
+									onRenderItemColumn={onRenderItemColumn}
+									className="locationDetailsList"
+								/>
+							</>
 						) : (
 							<div>No regions available at this time.</div>
 						)}
