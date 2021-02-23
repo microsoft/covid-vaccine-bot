@@ -13,7 +13,7 @@ import {
 import { observer } from 'mobx-react-lite'
 import { useState, useEffect, useCallback } from 'react'
 import { getAppStore } from '../store/store'
-import PhaseForm from './PhaseForm'
+import PhaseQualifierForm from './PhaseQualifierForm'
 
 import './Locations.scss'
 
@@ -106,6 +106,20 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 					})
 				})
 			})
+
+			if (value.isNew) {
+				tempPhaseGroup.push({
+					key: value.keyId + tempPhaseGroup.length,
+					name: `Phase ${value.value.id}`,
+					startIndex: tempPhaseGroupItems.length,
+					count: value.qualifications.length,
+					isCollapsed: false,
+					data: {
+						keyId: value.value.id,
+						isActive: value.isActive,
+					},
+				})
+			}
 
 			setPhaseGroup(tempPhaseGroup)
 			setPhaseGroupItems(tempPhaseGroupItems)
@@ -310,7 +324,7 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 	const onRenderRow: IDetailsListProps['onRenderRow'] = (props) => {
 		if (props) {
 			return (
-				<PhaseForm
+				<PhaseQualifierForm
 					rowItems={props}
 					selectedState={selectedState}
 					isEditable={isEditable}

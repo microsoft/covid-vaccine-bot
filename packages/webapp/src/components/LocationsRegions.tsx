@@ -10,6 +10,7 @@ import LocationsPhases from './LocationsPhases'
 import { getAppStore } from '../store/store'
 import LocationForm from './LocationForm'
 import { useBoolean } from '@uifabric/react-hooks'
+import PhaseForm from './PhaseForm'
 
 import './Locations.scss'
 
@@ -27,6 +28,9 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 		selectedState: any
 	}>({ isRegion: false, value: null, selectedState: null })
 	const [isLocationModalOpen, { setTrue: openLocationModal, setFalse: dismissLocationModal }] = useBoolean(
+		false
+	)
+	const [isPhaseModalOpen, { setTrue: openPhaseModal, setFalse: dismissPhaseModal }] = useBoolean(
 		false
 	)
 	const selectedSublocationItem = useRef<any>(null)
@@ -84,6 +88,8 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 		},
 	]
 
+	const [ phaseItemList, setPhaseItemList ] = useState<any[]>(setInitialPhaseItems(selectedState))
+
 	useEffect(() => {
 		if (selectedState?.regions > 0) {
 			const tempList: any[] = []
@@ -102,22 +108,6 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 			stateRegionsFullList.current = tempList
 		}
 	}, [selectedState, stateRegionsFullList])
-
-	const phaseItems: any[] = selectedState.value.vaccination.content.phases.map(
-		(phase: any, idx:number) => {
-			const activePhase: string =
-				selectedState.value.vaccination.content.activePhase
-			return {
-				key: String(phase.id) + idx,
-				keyId: String(phase.id) + (phase.id === activePhase ? ' (active)' : ''),
-				name:
-					toProperCase(phase.label ?? phase.id) +
-					(phase.id === activePhase ? ' (active)' : ''),
-				qualifications: phase.qualifications.length,
-				value: phase,
-			}
-		}
-	)
 
 	const selectedPhase = useCallback(
 		(isRegion: boolean, value: any) => {
@@ -166,6 +156,27 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 		},
 		[stateRegionsFullList]
 	)
+
+	const onPhaseFormSubmit = useCallback((phaseData) => {
+		dismissPhaseModal()
+
+		//TODO: check to move added phase to repoFileData level if possible
+		const updatedList: any[] = phaseItemList
+		updatedList.push({
+			key: String(phaseData.phaseId) + phaseItemList.length,
+			keyId: phaseData.name + (phaseData.isActive ? ' (active)' : ''),
+			name: phaseData.name + (phaseData.isActive ? ' (active)' : ''),
+			qualifications: 0,
+			value: {
+				id: phaseData.phaseId,
+				qualifications: []
+			},
+			isActive: phaseData.isActive,
+			isNew: true
+		})
+
+		setPhaseItemList(updatedList)
+	},[phaseItemList, setPhaseItemList, dismissPhaseModal])
 
 	return (
 		<div className="bodyContainer">
@@ -232,8 +243,20 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 								<div className="listTitle">
 									Phases
 								</div>
+								<div className="searchRow">
+									<div></div>
+									{state.isEditable && (
+										<div className="addLocationHeaderButton" onClick={openPhaseModal}>
+											<FontIcon
+												iconName="CircleAdditionSolid"
+												style={{ color: '#0078d4' }}
+											/>
+											Add Phase
+										</div>
+									)}
+								</div>
 								<DetailsList
-									items={phaseItems}
+									items={phaseItemList}
 									columns={phaseColumns}
 									setKey="set"
 									layoutMode={DetailsListLayoutMode.justified}
@@ -300,6 +323,35 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 						isRegion={true}
 					/>
 			</Modal>
+			<Modal
+				isOpen={isPhaseModalOpen}
+				isModeless={false}
+				isDarkOverlay={true}
+				isBlocking={false}>
+					<PhaseForm
+						onCancel={dismissPhaseModal}
+						onSubmit={onPhaseFormSubmit}
+					/>
+			</Modal>
 		</div>
 	)
 })
+
+const setInitialPhaseItems = (selectedState: any): any[] => {
+	return selectedState.value.vaccination.content.phases.map(
+		(phase: any, idx:number) => {
+			const activePhase: string =
+				selectedState.value.vaccination.content.activePhase
+			return {
+				key: String(phase.id) + idx,
+				keyId: String(phase.id) + (phase.id === activePhase ? ' (active)' : ''),
+				name:
+					toProperCase(phase.label ?? phase.id) +
+					(phase.id === activePhase ? ' (active)' : ''),
+				qualifications: phase.qualifications.length,
+				value: phase,
+				isNew: false
+			}
+		}
+	)
+}
