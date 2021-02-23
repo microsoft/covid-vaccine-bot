@@ -3,7 +3,7 @@
 .appPageContainer {
 	display: flex;
 	flex-direction: column;
-	min-height: calc(100vh - 76px);
+	min-height: calc(100vh - 56px);
 }
 
 .appHeaderWrapper {
@@ -61,9 +61,11 @@
 }
 
 .appFooterRow {
-	padding: 10px;
+	padding: 20px;
 	display: flex;
 	justify-content: center;
+	align-items: center;
+	background-color: $ms-color-gray20;
 
 	div {
 		font-size: 12px;

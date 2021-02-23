@@ -1,6 +1,6 @@
 .loginPageContainer {
 	background-color: #0078d4;
-	height: calc(100vh - 76px);
+	height: calc(100vh - 56px);
 	display: flex;
 }
 
@@ -13,5 +13,9 @@
 		font-weight: 400;
 		font-size: 2em;
 		margin-bottom: 20px;
+	}
+
+	button {
+		border: none;
 	}
 }
