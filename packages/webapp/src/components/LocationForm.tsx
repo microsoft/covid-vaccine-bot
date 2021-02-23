@@ -95,7 +95,7 @@ export default observer(function LocationForm(props: LocationFormProp) {
         }
 
         setFormData({...formData, ...fieldChanges.current})
-    },[fieldChanges])
+    },[formData, fieldChanges])
 
     const handleTextChange = useCallback(ev => {
         const value = ev.target.value
@@ -107,7 +107,7 @@ export default observer(function LocationForm(props: LocationFormProp) {
         }
 
         setFormData({...formData, ...fieldChanges.current})
-    },[fieldChanges])
+    },[formData, fieldChanges])
 
 	return (
         <div className="modalWrapper">
