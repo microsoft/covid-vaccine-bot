@@ -3,6 +3,7 @@
  * Licensed under the MIT license. See LICENSE file in the project.
  */
 import chalk from 'chalk'
+import { loadGithubLinkData, createIssues } from './GitHub'
 import { Scraper } from './Scraper'
 import {
 	loadLinksToScrape,
@@ -16,13 +17,11 @@ import {
 
 import { ScrapeLink } from './types'
 
-import { loadGithubLinkData, createIssues } from './GitHub'
-
 async function scrapeSites(): Promise<void> {
 	createOutputFolder()
 	const links = await loadGithubLinkData()
 	const lastRun = loadLastRun()
-	let issuesList: any = {}
+	const issuesList: any = {}
 	const scraper = new Scraper(lastRun, links)
 	scraper.onLinkStarted((link) => {
 		console.log(

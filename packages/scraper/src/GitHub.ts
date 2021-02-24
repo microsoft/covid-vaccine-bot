@@ -15,7 +15,7 @@ const githubRepoName = process.env.SCRAPER_REPO_NAME
 const githubToken = process.env.SCRAPER_REPO_TOKEN
 
 export async function loadGithubLinkData(): Promise<ScrapeLink[]> {
-	let linkList = []
+	const linkList = []
 
 	const dataFolderResp = await fetch(
 		`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/contents/packages/plans/data`,
@@ -89,7 +89,7 @@ export async function createIssues(linkIssues: any): Promise<void> {
 
 	// Specifically using a for here since array.forEach + async calls
 	// can cause issues.
-	for (let location of Object.keys(linkIssues)) {
+	for (const location of Object.keys(linkIssues)) {
 		const titleLabel = `Scraped changes for ${location}`
 		let bodyText = ''
 		linkIssues[location].forEach((link: ScrapeLink) => {
