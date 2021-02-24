@@ -12,6 +12,10 @@ export const Footer: FC = memo(function Footer() {
 	return (
 		<div style={{ display: 'flex', flexDirection: 'column' }}>
 			<div className="appFooterRow">
+				<Link href="https://go.microsoft.com/fwlink/?LinkId=521839">
+					Privacy &amp; Cookies
+				</Link>
+				{' | '}
 				<Link href={`mailto:${CONTACT_EMAIL}`}>Contact Us</Link>
 				{' | '}
 				<Link href={CODE_OF_CONDUCT_URL}>Code of Conduct</Link>
