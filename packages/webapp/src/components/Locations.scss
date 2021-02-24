@@ -5,12 +5,51 @@
 	flex-direction: column;
 }
 
-.newLocationPanel {
-	margin-top: 50px;
+.addLocationHeaderButton {
+	display: flex;
+	padding: 20px;
+	cursor: pointer;
+
+	i {
+		margin-right: 4px;
+	}
+
+	&:hover {
+		font-weight: 600;
+	}
 }
 
-.newLocationPanelBody {
-	margin-top: 30px;
+.searchRow {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.listTitle {
+	padding: 20px 0;
+	font-size: 20px;
+}
+
+.locationDetailsList {
+	.ms-DetailsRow {
+		.editIcon {
+			visibility: hidden;
+			cursor: pointer;
+			color: $ms-color-themePrimary;
+		}
+
+		&.is-selected {
+			.editIcon {
+				visibility: visible;
+			}
+		}
+
+		&:hover {
+			.editIcon {
+				visibility: visible;
+			}
+		}
+	}
 }
 
 .phaseGroupHeader {
@@ -56,6 +95,7 @@
 		padding: 0 10px;
 	}
 }
+
 .phaseGridContainer {
 	.ms-FocusZone {
 		max-width: 100% !important;
