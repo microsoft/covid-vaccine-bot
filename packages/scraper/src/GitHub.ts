@@ -90,7 +90,7 @@ export async function createIssues(linkIssues: any): Promise<void> {
 	// Specifically using a for here since array.forEach + async calls
 	// can cause issues.
 	for (let location of Object.keys(linkIssues)) {
-		const titleLabel = `Webscrapping changes for ${location}`
+		const titleLabel = `Scraped changes for ${location}`
 		let bodyText = ''
 		linkIssues[location].forEach((link: ScrapeLink) => {
 			bodyText += link.url + '\n'
