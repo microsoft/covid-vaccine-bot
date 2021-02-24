@@ -54,10 +54,12 @@ export default observer(function PhaseForm(props: PhaseFormProp) {
 		[formData, fieldChanges]
 	)
 
+	const formTitle = item ? 'Edit Phase' : 'New Phase'
+
     return (
         <div className="modalWrapper">
             <div className="modalHeader">
-                <div className="title">New Phase</div>
+                <div className="title">{formTitle}</div>
             </div>
             <div className="modalBody">
                 <TextField
