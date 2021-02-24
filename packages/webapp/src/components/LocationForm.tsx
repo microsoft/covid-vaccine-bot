@@ -82,9 +82,10 @@ export default observer(function LocationForm(props: LocationFormProp) {
             key: 'city',
             text: 'City'
         }
-    ]
+    ].filter(region => isRegion ? region.key !== 'state' : true)
 
-    const formTitle = item ? `Edit location` : 'Add new location'
+    const baseTitle = isRegion ? 'sublocation' : 'location'
+    const formTitle = item ? `Edit ${baseTitle}` : `Add new ${baseTitle}`
 
     const handleRegionChange = useCallback((_ev:any, item?: IDropdownOption) => {
         fieldChanges.current = {
