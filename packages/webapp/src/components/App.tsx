@@ -24,6 +24,7 @@ import { Footer } from './Footer'
 import Locations from './Locations'
 import Login from './Login'
 import QualifierPanel from './QualifierPanel'
+import Translate from './Translate'
 
 import './App_reset_styles.scss'
 import './App.scss'
@@ -60,9 +61,7 @@ export default observer(function App() {
 												rootPressed: { backgroundColor: 'transparent' },
 											}}
 										/>
-										<div className="appHeaderTitle">
-											Covid-19 Vaccine Policy Composer
-										</div>
+										<div className="appHeaderTitle">Data Composer</div>
 									</div>
 									<div className="appHeaderPersona">
 										<div>
@@ -115,6 +114,9 @@ export default observer(function App() {
 													<PivotItem headerText="Locations">
 														<Locations />
 													</PivotItem>
+													<PivotItem headerText="Translate">
+														<Translate />
+													</PivotItem>
 												</Pivot>
 											</div>
 											{state.toggleQualifier && (
@@ -136,9 +138,8 @@ export default observer(function App() {
 												<section style={{ width: '70%', margin: '0px auto' }}>
 													<p>
 														Thank you for your interest in helping to manage the
-														Covid-19 Vaccine Policy data, unfortunately right
-														now access to this tool requires collaborator
-														permissions on{' '}
+														data, unfortunately right now access to this tool
+														requires collaborator permissions on{' '}
 														<a
 															target="_blank"
 															rel="noreferrer"

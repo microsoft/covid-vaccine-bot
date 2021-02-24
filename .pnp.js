@@ -4568,9 +4568,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@covid-vax-bot/state-plan-schema", "workspace:packages/schema"],
             ["@covid-vax-bot/state-plans", "workspace:packages/plans"],
             ["@essex/scripts", "virtual:4ba239f8ca1280cfb9a050add4f331c8a31f59443b0bff56561f0dd8770e186b0b5f93e7f82cb4018d8355a6243d91b88868ffcedf391635a3b3fcdbcf3c42e7#npm:12.0.2"],
+            ["@types/atob", "npm:2.1.2"],
             ["@types/node", "npm:14.14.28"],
+            ["@types/node-fetch", "npm:2.5.8"],
             ["@types/ssri", "npm:7.1.0"],
+            ["atob", "npm:2.1.2"],
             ["chalk", "npm:4.1.0"],
+            ["dotenv", "npm:8.2.0"],
+            ["node-fetch", "npm:2.6.1"],
             ["puppeteer", "npm:7.1.0"],
             ["queue", "npm:6.0.2"],
             ["ssri", "npm:8.0.1"],
@@ -8620,6 +8625,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-aria-query-npm-4.2.1-4248197909-1b64d16e09.zip/node_modules/@types/aria-query/",
           "packageDependencies": [
             ["@types/aria-query", "npm:4.2.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@types/atob", [
+        ["npm:2.1.2", {
+          "packageLocation": "./.yarn/cache/@types-atob-npm-2.1.2-d1b3aa7dd7-df8e9efd3c.zip/node_modules/@types/atob/",
+          "packageDependencies": [
+            ["@types/atob", "npm:2.1.2"]
           ],
           "linkType": "HARD",
         }]

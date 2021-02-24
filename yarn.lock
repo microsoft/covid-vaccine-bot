@@ -1913,9 +1913,14 @@ __metadata:
     "@covid-vax-bot/state-plan-schema": "workspace:packages/schema"
     "@covid-vax-bot/state-plans": "workspace:packages/plans"
     "@essex/scripts": ^12.0.2
+    "@types/atob": ^2
     "@types/node": ^14.14.28
+    "@types/node-fetch": ^2
     "@types/ssri": ^7.1.0
+    atob: ^2.1.2
     chalk: ^4.1.0
+    dotenv: ^8.2.0
+    node-fetch: ^2.6.1
     puppeteer: ^7.1.0
     queue: ^6.0.2
     ssri: ^8.0.1
@@ -4549,6 +4554,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/atob@npm:^2":
+  version: 2.1.2
+  resolution: "@types/atob@npm:2.1.2"
+  checksum: df8e9efd3c4f842a5183b9a11877adb96d78b1d1559280afa87bc2c77c04ef1abd0004ab1947de0265292ab032497c679b6c1b954efce5eb6b455fb2404ab348
+  languageName: node
+  linkType: hard
+
 "@types/babel__core@npm:^7.0.0, @types/babel__core@npm:^7.1.7":
   version: 7.1.12
   resolution: "@types/babel__core@npm:7.1.12"
@@ -4897,7 +4909,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node-fetch@npm:^2.5.0, @types/node-fetch@npm:^2.5.4":
+"@types/node-fetch@npm:^2, @types/node-fetch@npm:^2.5.0, @types/node-fetch@npm:^2.5.4":
   version: 2.5.8
   resolution: "@types/node-fetch@npm:2.5.8"
   dependencies:
