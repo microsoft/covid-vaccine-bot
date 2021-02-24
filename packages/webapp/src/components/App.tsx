@@ -61,9 +61,7 @@ export default observer(function App() {
 												rootPressed: { backgroundColor: 'transparent' },
 											}}
 										/>
-										<div className="appHeaderTitle">
-											Data Composer
-										</div>
+										<div className="appHeaderTitle">Data Composer</div>
 									</div>
 									<div className="appHeaderPersona">
 										<div>
@@ -140,9 +138,8 @@ export default observer(function App() {
 												<section style={{ width: '70%', margin: '0px auto' }}>
 													<p>
 														Thank you for your interest in helping to manage the
-														data, unfortunately right
-														now access to this tool requires collaborator
-														permissions on{' '}
+														data, unfortunately right now access to this tool
+														requires collaborator permissions on{' '}
 														<a
 															target="_blank"
 															rel="noreferrer"

@@ -64,28 +64,28 @@
 		flex-grow: 1;
 	}
 
-    .groupHeaderButtons {
-        display: flex;
-        flex-direction: row;
+	.groupHeaderButtons {
+		display: flex;
+		flex-direction: row;
 		padding: 20px 10px;
 
-        div {
-            margin-right: 40px;
-            display: flex;
+		div {
+			margin-right: 40px;
+			display: flex;
 
-            i {
-                margin-right: 4px;
-            }
+			i {
+				margin-right: 4px;
+			}
 
-            &:last-child {
-                margin-right: 0;
-            }
+			&:last-child {
+				margin-right: 0;
+			}
 
-            &:hover {
-                font-weight: 600;
-            }
-        }
-    }
+			&:hover {
+				font-weight: 600;
+			}
+		}
+	}
 
 	&:hover {
 		background-color: $ms-color-gray40;

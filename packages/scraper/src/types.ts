@@ -7,7 +7,7 @@ import { Link } from '@covid-vax-bot/state-plan-schema'
 
 /* Extending this Link type definition to include
  * the root level path from the GitHub repo link set.
- * This is needed to help group issue creation from 
+ * This is needed to help group issue creation from
  * the scraper results.
  */
 export type ScrapeLink = Link & { LocationPath: string }

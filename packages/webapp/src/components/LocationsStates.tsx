@@ -9,7 +9,7 @@ import {
 	FontIcon,
 	Modal,
 	IColumn,
-	SearchBox
+	SearchBox,
 } from '@fluentui/react'
 import { useBoolean } from '@uifabric/react-hooks'
 import { observer } from 'mobx-react-lite'
@@ -26,9 +26,10 @@ export interface LocationsStatesProp {
 export default observer(function LocationsStates(props: LocationsStatesProp) {
 	const { onSelectedItem } = props
 
-	const [isLocationModalOpen, { setTrue: openLocationModal, setFalse: dismissLocationModal }] = useBoolean(
-		false
-	)
+	const [
+		isLocationModalOpen,
+		{ setTrue: openLocationModal, setFalse: dismissLocationModal },
+	] = useBoolean(false)
 	const [filteredStateList, setFilteredStateList] = useState<any[]>([])
 	const stateRepoFullList = useRef<any[]>([])
 	const selectedLocationItem = useRef<any>(null)
@@ -56,8 +57,8 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 			fieldName: 'editLocation',
 			minWidth: 50,
 			isResizable: false,
-		}
-	].filter(loc => state.isEditable ? true : loc.key !== 'editCol')
+		},
+	].filter((loc) => (state.isEditable ? true : loc.key !== 'editCol'))
 
 	useEffect(() => {
 		if (state.repoFileData) {
@@ -88,10 +89,7 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 	}, [state.repoFileData, state.globalFileData, state.currentLanguage, stateRepoFullList])
 
 	const onStateFilter = useCallback(
-		(
-			_event: any,
-			text?: string | undefined
-		) => {
+		(_event: any, text?: string | undefined) => {
 			if (text) {
 				setFilteredStateList(
 					stateRepoFullList.current.filter(
@@ -112,28 +110,39 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 		[onSelectedItem]
 	)
 
-	const onLocationFormSubmit = useCallback((_locationData) => {
-		dismissLocationModal()
-	},[dismissLocationModal])
+	const onLocationFormSubmit = useCallback(
+		(_locationData) => {
+			dismissLocationModal()
+		},
+		[dismissLocationModal]
+	)
 
-	const onLocationFormOpen = useCallback((item?: any) => {
-		selectedLocationItem.current = item ?? null
-		openLocationModal()
-	},[openLocationModal])
+	const onLocationFormOpen = useCallback(
+		(item?: any) => {
+			selectedLocationItem.current = item ?? null
+			openLocationModal()
+		},
+		[openLocationModal]
+	)
 
-	const onRenderItemColumn = useCallback((item?: any, _index?: number, column?: IColumn) => {
-		const fieldContent = item[column?.fieldName as keyof any] as string;
+	const onRenderItemColumn = useCallback(
+		(item?: any, _index?: number, column?: IColumn) => {
+			const fieldContent = item[column?.fieldName as keyof any] as string
 
-		if (column?.key === 'editCol') {
-			return state.isEditable ? <FontIcon
-						iconName='Edit'
+			if (column?.key === 'editCol') {
+				return state.isEditable ? (
+					<FontIcon
+						iconName="Edit"
 						className="editIcon"
 						onClick={() => onLocationFormOpen(item)}
-					/> : null
-		} else {
-			return <span>{fieldContent}</span>;
-		}
-	},[onLocationFormOpen, state.isEditable])
+					/>
+				) : null
+			} else {
+				return <span>{fieldContent}</span>
+			}
+		},
+		[onLocationFormOpen, state.isEditable]
+	)
 
 	return (
 		<div className="bodyContainer">
@@ -148,12 +157,15 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 					<section>
 						<div className="searchRow">
 							<SearchBox
-							styles={{root: { width: 400}}}
+								styles={{ root: { width: 400 } }}
 								placeholder="Search"
 								onChange={(ev, text) => onStateFilter(ev, text)}
 							/>
 							{state.isEditable && (
-								<div className="addLocationHeaderButton" onClick={() => onLocationFormOpen(null)}>
+								<div
+									className="addLocationHeaderButton"
+									onClick={() => onLocationFormOpen(null)}
+								>
 									<FontIcon
 										iconName="CircleAdditionSolid"
 										style={{ color: '#0078d4' }}
@@ -187,12 +199,13 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 				isOpen={isLocationModalOpen}
 				isModeless={false}
 				isDarkOverlay={true}
-				isBlocking={false}>
-					<LocationForm
-						item={selectedLocationItem.current}
-						onCancel={dismissLocationModal}
-						onSubmit={onLocationFormSubmit}
-					/>
+				isBlocking={false}
+			>
+				<LocationForm
+					item={selectedLocationItem.current}
+					onCancel={dismissLocationModal}
+					onSubmit={onLocationFormSubmit}
+				/>
 			</Modal>
 		</div>
 	)
