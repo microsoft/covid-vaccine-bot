@@ -45,7 +45,7 @@ export const getPhaseMoreInfoTextByKey = (selectedState?: any, selectedKey?: any
 const getCustomStrings = (selectedState?: any, keyFilter?: string) => {
     const { globalFileData, currentLanguage } = getAppStore();
     const qualifierList: any[] = selectedState
-        ? [...Object.entries(selectedState.value.strings.content), ...Object.entries(globalFileData.customStrings.content)]
+        ? [...Object.entries(selectedState.value?.strings?.content ?? {}), ...Object.entries(globalFileData.customStrings.content)]
         : [...Object.entries(globalFileData.customStrings.content)]
 
     const filteredList = keyFilter ? qualifierList.filter(([key, _value]:[string, any]) => key.includes(keyFilter)) : qualifierList

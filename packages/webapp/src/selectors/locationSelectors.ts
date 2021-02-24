@@ -27,7 +27,7 @@ const getCustomStrings = (selectedState: any, keyFilter: string) => {
 
 	const customStringsList: any[] = selectedState
 		? [
-				...Object.entries(selectedState.strings.content),
+				...Object.entries(selectedState?.strings?.content ?? {}),
 				...Object.entries(globalFileData.customStrings.content),
 		  ]
 		: [...Object.entries(globalFileData.customStrings.content)]
