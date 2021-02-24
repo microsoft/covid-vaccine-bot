@@ -11,7 +11,7 @@ import {
 } from '@fluentui/react'
 import { observer } from 'mobx-react-lite'
 import { useCallback, useRef, useState } from 'react'
-import { getCustomStrings } from '../selectors/locationSelectors'
+import { getStateCustomStrings, getRegionCustomStrings } from '../selectors/locationSelectors'
 
 import './LocationForm.scss'
 
@@ -19,12 +19,21 @@ export interface LocationFormProp {
     item?: any
     onSubmit?: (locationData: any) => void
     onCancel?: () => void
+    isRegion?: boolean
 }
 
-const setInitialData = (item?: any) => {
+const setInitialData = (item?: any, isRegion?: boolean) => {
+
+    const getStrings = (item: any, keyFilter:string, isRegion?:boolean) => {
+        return isRegion ?
+            getRegionCustomStrings(item, keyFilter)
+            :
+            getStateCustomStrings(item, keyFilter)
+    }
+
     if (item) {
-        const { info, vaccination } = item?.value
-        const { info: vacInfo, scheduling_phone, eligibility_plan } = vaccination?.content?.links
+        const { info, vaccination } = item?.value || {}
+        const { info: vacInfo, scheduling_phone, eligibility_plan } = vaccination?.content?.links || {}
 
         return {
             details: info.content.name,
@@ -35,7 +44,7 @@ const setInitialData = (item?: any) => {
             providers: '',
             eligibility: '',
             eligibilityPlan: eligibility_plan?.url || '',
-            schedulingPhone: scheduling_phone?.text ? getCustomStrings(item, scheduling_phone.text) : ''
+            schedulingPhone: scheduling_phone?.text ? getStrings(item, scheduling_phone.text, isRegion) : ''
         }
     } else {
         return {
@@ -53,8 +62,8 @@ const setInitialData = (item?: any) => {
 }
 
 export default observer(function LocationForm(props: LocationFormProp) {
-    const { onSubmit, onCancel, item } = props
-    const [formData, setFormData] = useState<any>(setInitialData(item))
+    const { onSubmit, onCancel, item, isRegion } = props
+    const [formData, setFormData] = useState<any>(setInitialData(item, isRegion))
     const fieldChanges = useRef<any>(formData)
     const regionTypeOptions = [
         {
@@ -86,7 +95,7 @@ export default observer(function LocationForm(props: LocationFormProp) {
         }
 
         setFormData({...formData, ...fieldChanges.current})
-    },[fieldChanges])
+    },[formData, fieldChanges])
 
     const handleTextChange = useCallback(ev => {
         const value = ev.target.value
@@ -98,7 +107,7 @@ export default observer(function LocationForm(props: LocationFormProp) {
         }
 
         setFormData({...formData, ...fieldChanges.current})
-    },[fieldChanges])
+    },[formData, fieldChanges])
 
 	return (
         <div className="modalWrapper">

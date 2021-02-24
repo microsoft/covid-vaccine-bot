@@ -24,6 +24,7 @@ import { Footer } from './Footer'
 import Locations from './Locations'
 import Login from './Login'
 import QualifierPanel from './QualifierPanel'
+import Translate from './Translate'
 
 import './App_reset_styles.scss'
 import './App.scss'
@@ -114,6 +115,9 @@ export default observer(function App() {
 													</PivotItem>
 													<PivotItem headerText="Locations">
 														<Locations />
+													</PivotItem>
+													<PivotItem headerText="Translate">
+														<Translate />
 													</PivotItem>
 												</Pivot>
 											</div>

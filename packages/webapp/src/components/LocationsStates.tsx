@@ -6,7 +6,6 @@ import {
 	DetailsList,
 	DetailsListLayoutMode,
 	ProgressIndicator,
-	TextField,
 	FontIcon,
 	Modal,
 	IColumn,
@@ -14,7 +13,7 @@ import {
 } from '@fluentui/react'
 import { useBoolean } from '@uifabric/react-hooks'
 import { observer } from 'mobx-react-lite'
-import { useState, useRef, useEffect, useCallback, FormEvent } from 'react'
+import { useState, useRef, useEffect, useCallback } from 'react'
 import { getAppStore } from '../store/store'
 import LocationForm from './LocationForm'
 
