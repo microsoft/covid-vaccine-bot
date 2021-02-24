@@ -3,6 +3,7 @@
  * Licensed under the MIT license. See LICENSE file in the project.
  */
 import chalk from 'chalk'
+import { loadGithubLinkData, createIssues } from './GitHub'
 import { Scraper } from './Scraper'
 import {
 	loadLinksToScrape,
@@ -14,23 +15,31 @@ import {
 	createOutputFolder,
 } from './io'
 
+import { ScrapeLink } from './types'
+
 async function scrapeSites(): Promise<void> {
 	createOutputFolder()
+	const links = await loadGithubLinkData()
 	const lastRun = loadLastRun()
-	const links = loadLinksToScrape()
+	const issuesList: any = {}
 	const scraper = new Scraper(lastRun, links)
 	scraper.onLinkStarted((link) => {
 		console.log(
 			chalk.grey.dim(`checking [${link.text || 'link'}](${link.url})`)
 		)
 	})
-	scraper.onIntegrityMismatch((link) => {
+	scraper.onIntegrityMismatch(async (link) => {
 		console.log(
 			chalk.green(
 				`✔ integrity mismatch for  [${link.text || 'link'}](${link.url})`
 			)
 		)
+		if (!issuesList[link.LocationPath]) {
+			issuesList[link.LocationPath] = []
+		}
+		issuesList[link.LocationPath].push(link)
 	})
+
 	scraper.onLinkScraped(([link, scraping]) => {
 		saveFile(
 			getCacheFilename(`${getLinkFilename(link)}-${epochNow()}.txt`),
@@ -53,6 +62,9 @@ async function scrapeSites(): Promise<void> {
 	)
 	// @ts-expect-error downcasting to string[] for persistence
 	result.errors = result.errors.map((e) => e.message || e.toString())
+	if (Object.keys(issuesList).length > 0) {
+		await createIssues(issuesList)
+	}
 	saveRunResult(result)
 }
 

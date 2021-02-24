@@ -28,7 +28,9 @@ export interface PhaseQualifierFormProps {
 	onRowItemChange?: (item: IDetailsRowProps) => void
 }
 
-export default observer(function PhaseQualiferForm(props: PhaseQualifierFormProps) {
+export default observer(function PhaseQualiferForm(
+	props: PhaseQualifierFormProps
+) {
 	const {
 		selectedState,
 		rowItems,

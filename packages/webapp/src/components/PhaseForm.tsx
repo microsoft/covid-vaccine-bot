@@ -39,17 +39,20 @@ export default observer(function PhaseForm(props: PhaseFormProp) {
     const [formData, setFormData] = useState<any>(setInitialData(item))
     const fieldChanges = useRef<any>(formData)
 
-    const handleTextChange = useCallback(ev => {
-        const value = ev.target.value
-        fieldChanges.current = {
-            ...fieldChanges.current,
-            ...{
-                [ev.target.name]: value
-            }
-        }
+	const handleTextChange = useCallback(
+		(ev) => {
+			const value = ev.target.value
+			fieldChanges.current = {
+				...fieldChanges.current,
+				...{
+					[ev.target.name]: value,
+				},
+			}
 
-        setFormData({...formData, ...fieldChanges.current})
-    },[formData, fieldChanges])
+			setFormData({ ...formData, ...fieldChanges.current })
+		},
+		[formData, fieldChanges]
+	)
 
     return (
         <div className="modalWrapper">
