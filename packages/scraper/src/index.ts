@@ -14,17 +14,15 @@ import {
 	createOutputFolder,
 } from './io'
 
-import { config } from 'dotenv'
-import {checkConnection, createIssue} from './GitHub'
-config()
+import { ScrapeLink } from './types'
 
+import { loadGithubLinkData, createIssues } from './GitHub'
 
 async function scrapeSites(): Promise<void> {
-
-	await checkConnection()
 	createOutputFolder()
+	const links = await loadGithubLinkData()
 	const lastRun = loadLastRun()
-	const links = loadLinksToScrape()
+	let issuesList: any = {}
 	const scraper = new Scraper(lastRun, links)
 	scraper.onLinkStarted((link) => {
 		console.log(
@@ -37,9 +35,12 @@ async function scrapeSites(): Promise<void> {
 				`✔ integrity mismatch for  [${link.text || 'link'}](${link.url})`
 			)
 		)
-		await createIssue("Detected Website Change", link.url);
-
+		if (!issuesList[link.RootLocation]) {
+			issuesList[link.RootLocation] = []
+		}
+		issuesList[link.RootLocation].push(link)
 	})
+
 	scraper.onLinkScraped(([link, scraping]) => {
 		saveFile(
 			getCacheFilename(`${getLinkFilename(link)}-${epochNow()}.txt`),
@@ -62,6 +63,10 @@ async function scrapeSites(): Promise<void> {
 	)
 	// @ts-expect-error downcasting to string[] for persistence
 	result.errors = result.errors.map((e) => e.message || e.toString())
+	if (Object.keys(issuesList).length > 0) {
+		await createIssues(issuesList)
+	}
+	return
 	saveRunResult(result)
 }
 

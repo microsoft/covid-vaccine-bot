@@ -8,8 +8,7 @@ import Queue from 'queue'
 import ssri from 'ssri'
 import { PubSub, Handler, Unsubscribe } from './PubSub'
 import { extractPageData } from './extractPageData'
-import { PageScrapeResult, RunResult } from './types'
-import { Link } from '@covid-vax-bot/state-plan-schema'
+import { PageScrapeResult, RunResult, ScrapeLink } from './types'
 
 const createRunResult = (): RunResult => ({
 	integrity: {},
@@ -20,7 +19,7 @@ const createRunResult = (): RunResult => ({
 export class Scraper {
 	// Arguments
 	private lastRun: RunResult
-	private links: Link[]
+	private links: ScrapeLink[]
 
 	// State
 	private result: RunResult | undefined
@@ -28,11 +27,11 @@ export class Scraper {
 	private queue: Queue | undefined
 
 	// Events
-	private onLinkStartedHandlers = new PubSub<Link>()
-	private onIntegrityMismatchHandlers = new PubSub<Link>()
-	private onLinkScrapedHandlers = new PubSub<[Link, PageScrapeResult]>()
+	private onLinkStartedHandlers = new PubSub<ScrapeLink>()
+	private onIntegrityMismatchHandlers = new PubSub<ScrapeLink>()
+	private onLinkScrapedHandlers = new PubSub<[ScrapeLink, PageScrapeResult]>()
 
-	public constructor(lastRun: RunResult, links: Link[]) {
+	public constructor(lastRun: RunResult, links: ScrapeLink[]) {
 		this.lastRun = lastRun
 		this.links = links
 	}
@@ -46,16 +45,16 @@ export class Scraper {
 		return this.result
 	}
 
-	public onLinkStarted(handler: Handler<Link>): Unsubscribe {
+	public onLinkStarted(handler: Handler<ScrapeLink>): Unsubscribe {
 		return this.onLinkStartedHandlers.subscribe(handler)
 	}
 
-	public onIntegrityMismatch(handler: Handler<Link>): Unsubscribe {
+	public onIntegrityMismatch(handler: Handler<ScrapeLink>): Unsubscribe {
 		return this.onIntegrityMismatchHandlers.subscribe(handler)
 	}
 
 	public onLinkScraped(
-		handler: Handler<[Link, PageScrapeResult]>
+		handler: Handler<[ScrapeLink, PageScrapeResult]>
 	): Unsubscribe {
 		return this.onLinkScrapedHandlers.subscribe(handler)
 	}
@@ -98,7 +97,9 @@ export class Scraper {
 		}
 	}
 
-	private async _scrapeLinkContent(link: Link): Promise<PageScrapeResult> {
+	private async _scrapeLinkContent(
+		link: ScrapeLink
+	): Promise<PageScrapeResult> {
 		if (!this.browser) {
 			throw new Error('bad state')
 		}

@@ -1914,8 +1914,11 @@ __metadata:
     "@covid-vax-bot/state-plans": "workspace:packages/plans"
     "@essex/scripts": ^12.0.2
     "@types/node": ^14.14.28
+    "@types/node-fetch": ^2
     "@types/ssri": ^7.1.0
     chalk: ^4.1.0
+    dotenv: ^8.2.0
+    node-fetch: ^2.6.1
     puppeteer: ^7.1.0
     queue: ^6.0.2
     ssri: ^8.0.1

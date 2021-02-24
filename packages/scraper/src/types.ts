@@ -5,14 +5,16 @@
 import ssri from 'ssri'
 import { Link } from '@covid-vax-bot/state-plan-schema'
 
+export type ScrapeLink = Link & { RootLocation: string }
+
 export type RunResult = {
 	integrity: Record<string, string>
-	changes: Link[]
+	changes: ScrapeLink[]
 	errors: Error[]
 }
 
 export interface PageScrapeResult {
-	link: Link
+	link: ScrapeLink
 	integrity: ssri.Integrity
 	content: string
 }
