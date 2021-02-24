@@ -7,6 +7,7 @@
 import { config } from 'dotenv'
 import fetch from 'node-fetch'
 import { ScrapeLink } from './types'
+var atob = require('atob');
 
 config()
 
@@ -50,13 +51,13 @@ export async function loadGithubLinkData(): Promise<ScrapeLink[]> {
 	for (let i = 0; i < gitFiles.length; i++) {
 		const file = gitFiles[i]
 		const fileData = JSON.parse(b64_to_utf8(await getContent(file.url)))
-		const rootLocation = file.path.split('/')[0]
+		const locationPath = file.path.split('/')[0]
 
 		if (fileData.links?.eligibility != null) {
 			if (fileData.links.eligibility.scrape !== false) {
 				linkList.push(
 					Object.assign(fileData.links.eligibility, {
-						RootLocation: rootLocation,
+						LocationPath: locationPath,
 					}) as ScrapeLink
 				)
 			}
@@ -64,7 +65,7 @@ export async function loadGithubLinkData(): Promise<ScrapeLink[]> {
 			if (fileData.links.info.scrape !== false) {
 				linkList.push(
 					Object.assign(fileData.links.info, {
-						RootLocation: rootLocation,
+						LocationPath: locationPath,
 					}) as ScrapeLink
 				)
 			}
@@ -74,7 +75,7 @@ export async function loadGithubLinkData(): Promise<ScrapeLink[]> {
 			if (fileData.links.eligibility_plan.scrape !== false) {
 				linkList.push(
 					Object.assign(fileData.links.eligibility_plan, {
-						RootLocation: rootLocation,
+						LocationPath: locationPath,
 					}) as ScrapeLink
 				)
 			}
@@ -88,7 +89,7 @@ export async function createIssues(linkIssues: any): Promise<void> {
 	console.log('creating github issues for integrity mismatches')
 
 	// Specifically using a for here since array.forEach + async calls
-	// can cause issues.
+	// can cause issues with execution.
 	for (const location of Object.keys(linkIssues)) {
 		const titleLabel = `Scraped changes for ${location}`
 		let bodyText = ''
@@ -125,49 +126,12 @@ const getContent = async (url: string) => {
 	return data.content
 }
 
-function atobLookup(chr: any) {
-	const keystr =
-		'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
-	const index = keystr.indexOf(chr)
-	return index
-}
+/*
+	The following method allow for the decoding of the base64 encoded,
+	UTF-8 content that GitHub uses to store the file data on their end.
+*/
 
 function b64_to_utf8(str: string) {
 	const blob = atob(str) || ''
 	return decodeURIComponent(escape(blob))
-}
-
-function atob(data: string) {
-	data = `${data}`
-	data = data.replace(/[ \t\n\f\r]/g, '')
-	if (data.length % 4 === 0) {
-		data = data.replace(/==?$/, '')
-	}
-	if (data.length % 4 === 1 || /[^+/0-9A-Za-z]/.test(data)) {
-		return null
-	}
-	let output = ''
-	let buffer = 0
-	let accumulatedBits = 0
-	for (let i = 0; i < data.length; i++) {
-		buffer <<= 6
-		buffer |= atobLookup(data[i])
-		accumulatedBits += 6
-		if (accumulatedBits === 24) {
-			output += String.fromCharCode((buffer & 0xff0000) >> 16)
-			output += String.fromCharCode((buffer & 0xff00) >> 8)
-			output += String.fromCharCode(buffer & 0xff)
-			buffer = accumulatedBits = 0
-		}
-	}
-
-	if (accumulatedBits === 12) {
-		buffer >>= 4
-		output += String.fromCharCode(buffer)
-	} else if (accumulatedBits === 18) {
-		buffer >>= 2
-		output += String.fromCharCode((buffer & 0xff00) >> 8)
-		output += String.fromCharCode(buffer & 0xff)
-	}
-	return output
 }

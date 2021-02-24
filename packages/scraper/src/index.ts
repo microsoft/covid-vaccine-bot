@@ -34,10 +34,10 @@ async function scrapeSites(): Promise<void> {
 				`✔ integrity mismatch for  [${link.text || 'link'}](${link.url})`
 			)
 		)
-		if (!issuesList[link.RootLocation]) {
-			issuesList[link.RootLocation] = []
+		if (!issuesList[link.LocationPath]) {
+			issuesList[link.LocationPath] = []
 		}
-		issuesList[link.RootLocation].push(link)
+		issuesList[link.LocationPath].push(link)
 	})
 
 	scraper.onLinkScraped(([link, scraping]) => {
@@ -65,7 +65,6 @@ async function scrapeSites(): Promise<void> {
 	if (Object.keys(issuesList).length > 0) {
 		await createIssues(issuesList)
 	}
-	return
 	saveRunResult(result)
 }
 

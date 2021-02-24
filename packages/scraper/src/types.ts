@@ -5,7 +5,12 @@
 import ssri from 'ssri'
 import { Link } from '@covid-vax-bot/state-plan-schema'
 
-export type ScrapeLink = Link & { RootLocation: string }
+/* Extending this Link type definition to include
+ * the root level path from the GitHub repo link set.
+ * This is needed to help group issue creation from 
+ * the scraper results.
+ */
+export type ScrapeLink = Link & { LocationPath: string }
 
 export type RunResult = {
 	integrity: Record<string, string>
