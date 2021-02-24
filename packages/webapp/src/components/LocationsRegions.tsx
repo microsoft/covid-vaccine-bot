@@ -33,7 +33,7 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 	const [isPhaseModalOpen, { setTrue: openPhaseModal, setFalse: dismissPhaseModal }] = useBoolean(
 		false
 	)
-	const selectedSublocationItem = useRef<any>(null)
+	const selectedModalFormItem = useRef<any>(null)
 
 	const state = getAppStore()
 
@@ -86,7 +86,14 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 			minWidth: 200,
 			isResizable: false,
 		},
-	]
+		{
+			key: 'editCol',
+			name: '',
+			fieldName: 'editPhase',
+			minWidth: 50,
+			isResizable: false,
+		}
+	].filter(loc => state.isEditable ? true : loc.key !== 'editCol')
 
 	const [ phaseItemList, setPhaseItemList ] = useState<any[]>(setInitialPhaseItems(selectedState))
 
@@ -121,7 +128,7 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 	},[dismissLocationModal])
 
 	const onLocationFormOpen = useCallback((item?: any) => {
-		selectedSublocationItem.current = item ?? null
+		selectedModalFormItem.current = item ?? null
 		openLocationModal()
 	},[openLocationModal])
 
@@ -132,12 +139,16 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 			return state.isEditable ? <FontIcon
 						iconName='Edit'
 						className="editIcon"
-						onClick={() => onLocationFormOpen(item)}
+						onClick={() =>
+							column?.fieldName === 'editLocation'
+							? onLocationFormOpen(item)
+							: onPhaseFormOpen(item)}
 					/> : null
 		} else {
 			return <span>{fieldContent}</span>;
 		}
 	},[onLocationFormOpen, state.isEditable])
+
 
 	const onRegionFilter = useCallback(
 		(
@@ -162,21 +173,35 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 
 		//TODO: check to move added phase to repoFileData level if possible
 		const updatedList: any[] = phaseItemList
-		updatedList.push({
-			key: String(phaseData.phaseId) + phaseItemList.length,
-			keyId: phaseData.name + (phaseData.isActive ? ' (active)' : ''),
-			name: phaseData.name + (phaseData.isActive ? ' (active)' : ''),
-			qualifications: 0,
-			value: {
-				id: phaseData.phaseId,
-				qualifications: []
-			},
-			isActive: phaseData.isActive,
-			isNew: true
-		})
+
+		if (selectedModalFormItem.current == null) {
+			updatedList.push({
+				key: String(phaseData.phaseId) + phaseItemList.length,
+				keyId: phaseData.name,
+				name: phaseData.name,
+				qualifications: 0,
+				value: {
+					id: phaseData.phaseId,
+					qualifications: []
+				},
+				isActive: phaseData.isActive,
+				isNew: true
+			})
+		} else {
+			updatedList.forEach(item => {
+				if (item.keyId === phaseData.phaseId) {
+					item.name = phaseData.name + (phaseData.isActive ? ' (active)' : '')
+				}
+			})
+		}
 
 		setPhaseItemList(updatedList)
-	},[phaseItemList, setPhaseItemList, dismissPhaseModal])
+	},[phaseItemList, selectedModalFormItem, setPhaseItemList, dismissPhaseModal])
+
+	const onPhaseFormOpen = useCallback((item?: any) => {
+		selectedModalFormItem.current = item ?? null
+		openPhaseModal()
+	},[openPhaseModal])
 
 	return (
 		<div className="bodyContainer">
@@ -262,6 +287,8 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 									layoutMode={DetailsListLayoutMode.justified}
 									checkboxVisibility={2}
 									onItemInvoked={(item) => selectedPhase(false, item)}
+									onRenderItemColumn={onRenderItemColumn}
+									className="locationDetailsList"
 								/>
 							</>
 						) : (
@@ -317,7 +344,7 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 				isDarkOverlay={true}
 				isBlocking={false}>
 					<LocationForm
-						item={selectedSublocationItem.current}
+						item={selectedModalFormItem.current}
 						onCancel={dismissLocationModal}
 						onSubmit={onLocationFormSubmit}
 						isRegion={true}
@@ -329,6 +356,7 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 				isDarkOverlay={true}
 				isBlocking={false}>
 					<PhaseForm
+						item={selectedModalFormItem.current}
 						onCancel={dismissPhaseModal}
 						onSubmit={onPhaseFormSubmit}
 					/>

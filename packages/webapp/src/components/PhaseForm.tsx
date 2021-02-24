@@ -5,22 +5,38 @@
 import {
 	PrimaryButton,
     DefaultButton,
-    TextField,
-    Checkbox
+    TextField
 } from '@fluentui/react'
 import { observer } from 'mobx-react-lite'
 import { useCallback, useRef, useState } from 'react'
 
-import './PhaseForm.scss'
+import './LocationForm.scss'
 
 export interface PhaseFormProp {
+    item?: any
     onSubmit?: (phaseData: any) => void
     onCancel?: () => void
 }
 
+const setInitialData = (item: any) => {
+    if (item) {
+        return {
+            phaseId: item.keyId,
+            name: item.name.includes(' (active)') ? item.name.replace(' (active)','') : item.name,
+            isActive: item.keyId.includes(' (active)')
+        }
+    } else {
+        return {
+            phaseId: null,
+            name: null,
+            isActive: false
+        }
+    }
+}
+
 export default observer(function PhaseForm(props: PhaseFormProp) {
-    const { onSubmit, onCancel } = props
-    const [formData, setFormData] = useState<any>({})
+    const { onSubmit, onCancel, item } = props
+    const [formData, setFormData] = useState<any>(setInitialData(item))
     const fieldChanges = useRef<any>(formData)
 
     const handleTextChange = useCallback(ev => {
@@ -35,17 +51,6 @@ export default observer(function PhaseForm(props: PhaseFormProp) {
         setFormData({...formData, ...fieldChanges.current})
     },[formData, fieldChanges])
 
-    const handleCheckboxChange = useCallback((_ev:any, checked?: boolean) => {
-        fieldChanges.current = {
-            ...fieldChanges.current,
-            ...{
-                isActive: checked
-            }
-        }
-
-        setFormData({...formData, ...fieldChanges.current})
-    },[formData, fieldChanges])
-
     return (
         <div className="modalWrapper">
             <div className="modalHeader">
@@ -53,18 +58,11 @@ export default observer(function PhaseForm(props: PhaseFormProp) {
             </div>
             <div className="modalBody">
                 <TextField
-                    label="Phase Id:"
-                    name="phaseId"
-                    value={formData.phaseId}
-                    onChange={handleTextChange}
-                />
-                <TextField
                     label="Phase Name:"
                     name="name"
                     value={formData.name}
                     onChange={handleTextChange}
                 />
-                <Checkbox label="Active" onChange={handleCheckboxChange} />
             </div>
             <div className="modalFooter">
                 <PrimaryButton text="Submit" onClick={() => onSubmit?.(formData)} />

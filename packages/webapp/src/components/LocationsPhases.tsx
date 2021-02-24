@@ -116,7 +116,7 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 					isCollapsed: false,
 					data: {
 						keyId: value.value.id,
-						isActive: value.isActive,
+						isActive: false,
 					},
 				})
 			}
