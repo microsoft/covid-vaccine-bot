@@ -12,7 +12,6 @@
 			"url": "https://www.doh.wa.gov/Emergencies/COVID19/VaccineInformation/AllocationandPrioritization"
 		},
 		"providers": {
-			"text": "c19.links/vax_providers",
 			"url": "https://www.doh.wa.gov/YouandYourFamily/Immunization/VaccineLocations"
 		}
 	},

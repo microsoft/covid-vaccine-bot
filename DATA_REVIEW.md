@@ -2477,7 +2477,7 @@
 
 - Info Link: **[Washington State Department of Health](https://www.doh.wa.gov/Emergencies/COVID19/vaccine)**
 - Workflow Link: **[Washington State PhaseFinder](https://form.findyourphasewa.org/210118771253954)**
-- Providers Link: **[View locations providing vaccines](https://www.doh.wa.gov/YouandYourFamily/Immunization/VaccineLocations)**
+- Providers Link: **[providers](https://www.doh.wa.gov/YouandYourFamily/Immunization/VaccineLocations)**
 
 ## Phases
 ### *Phase 1A* 
