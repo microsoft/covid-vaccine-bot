@@ -28,7 +28,7 @@ const setInitialData = (item: any) => {
     } else {
         return {
             phaseId: null,
-            name: null,
+            name: '',
             isActive: false
         }
     }

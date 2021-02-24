@@ -176,15 +176,15 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 
 		if (selectedModalFormItem.current == null) {
 			updatedList.push({
-				key: String(phaseData.phaseId) + phaseItemList.length,
+				key: String(phaseData.name) + phaseItemList.length,
 				keyId: phaseData.name,
 				name: phaseData.name,
 				qualifications: 0,
 				value: {
-					id: phaseData.phaseId,
+					id: phaseData.name,
 					qualifications: []
 				},
-				isActive: phaseData.isActive,
+				isActive: false,
 				isNew: true
 			})
 		} else {
@@ -271,7 +271,7 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 								<div className="searchRow">
 									<div></div>
 									{state.isEditable && (
-										<div className="addLocationHeaderButton" onClick={openPhaseModal}>
+										<div className="addLocationHeaderButton" onClick={() => onPhaseFormOpen(null)}>
 											<FontIcon
 												iconName="CircleAdditionSolid"
 												style={{ color: '#0078d4' }}
