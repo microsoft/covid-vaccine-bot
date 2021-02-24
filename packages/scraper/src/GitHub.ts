@@ -7,7 +7,7 @@
 import { config } from 'dotenv'
 import fetch from 'node-fetch'
 import { ScrapeLink } from './types'
-var atob = require('atob');
+const atob = require('atob')
 
 config()
 
