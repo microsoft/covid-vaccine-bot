@@ -63,19 +63,33 @@ export const setCurrentLanguage = mutatorAction(
 	}
 )
 
-export const updateMainLocationList = mutatorAction('updateMainLocationList', (locationData: any, isRegion: boolean) => {
+export const updateMainLocationList = mutatorAction('updateMainLocationList', (locationData: any, isRegion: boolean, selectedState?: any) => {
 	if (locationData) {
 		const store = getAppStore()
-		if (!isRegion) {
-			const newLocObj = createLocationDataObj(locationData)
+		const newLocObj = createLocationDataObj(locationData)
 
+		if (!isRegion) {
 			store.globalFileData.cdcStateNames.content[`cdc/${newLocObj.info.content.id}/state_name`] = {
 				"en-us": locationData.details,
 				"es-us": locationData.details,
 				"vi-vn": locationData.details,
 			}
 
-			store.repoFileData = {...store.repoFileData, ...{[newLocObj.info.content.id]:newLocObj}}
+			store.repoFileData[newLocObj.info.content.id] = newLocObj
+			store.repoFileData = {...store.repoFileData}
+		} else {
+			newLocObj.info.path = `${selectedState.key}/regions/${newLocObj.info.path}`
+			newLocObj.vaccination.path = `${selectedState.key}/regions/${newLocObj.vaccination.path}`
+
+			if (store.repoFileData[selectedState.key].regions) {
+				store.repoFileData[selectedState.key].regions[newLocObj.info.content.id] = newLocObj
+			} else {
+				store.repoFileData[selectedState.key].regions = {
+					[newLocObj.info.content.id]: newLocObj
+				}
+			}
+
+			store.repoFileData = {...store.repoFileData}
 		}
 	}
 })

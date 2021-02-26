@@ -72,7 +72,7 @@ export const createLocationDataObj = (locationData: any) => {
 						description: ''
 					}
 				},
-				phases: {}
+				phases: []
 			},
 			name: 'vaccination.json',
 			path: `${locationName}/vaccination.json`,

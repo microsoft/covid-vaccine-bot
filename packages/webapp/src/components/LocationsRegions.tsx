@@ -18,6 +18,7 @@ import { toProperCase } from '../utils/textUtils'
 import LocationForm from './LocationForm'
 import LocationsPhases from './LocationsPhases'
 import PhaseForm from './PhaseForm'
+import { updateMainLocationList } from '../mutators/repoMutators'
 
 import './Locations.scss'
 
@@ -107,9 +108,11 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 	)
 
 	useEffect(() => {
-		if (selectedState?.regions > 0) {
+		const selectedStateObj = state.repoFileData[selectedState.key]
+		const regions = selectedStateObj?.regions ?? {}
+		if (Object.keys(regions).length > 0) {
 			const tempList: any[] = []
-			Object.entries(selectedState.value.regions).forEach(([key, value]) => {
+			Object.entries(regions).forEach(([key, value]) => {
 				const valObj = value as any
 				tempList.push({
 					key: key,
@@ -117,13 +120,13 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 					value: value,
 					phase: valObj.vaccination.content.activePhase
 						? valObj.vaccination.content.activePhase
-						: selectedState.value.vaccination.content.activePhase,
+						: selectedStateObj.vaccination.content.activePhase,
 				})
 			})
 			setFilteredRegionsList(tempList)
 			stateRegionsFullList.current = tempList
 		}
-	}, [selectedState, stateRegionsFullList])
+	}, [state.repoFileData, selectedState, stateRegionsFullList])
 
 	const selectedPhase = useCallback(
 		(isRegion: boolean, value: any) => {
@@ -133,10 +136,11 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 	)
 
 	const onLocationFormSubmit = useCallback(
-		(_locationData) => {
+		(locationData) => {
 			dismissLocationModal()
+			updateMainLocationList(locationData, true, selectedState)
 		},
-		[dismissLocationModal]
+		[dismissLocationModal, selectedState]
 	)
 
 	const onLocationFormOpen = useCallback((item?: any) => {
@@ -275,74 +279,74 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 			) : (
 				<div className="bodyContent">
 					<section>
-						{selectedState.value.vaccination.content.phases.length > 0 ? (
-							<>
-								<div className="listTitle">Phases</div>
-								<div className="searchRow">
-									<div></div>
-									{state.isEditable && (
-										<div className="addLocationHeaderButton" onClick={() => onPhaseFormOpen(null)}>
-											<FontIcon
-												iconName="CircleAdditionSolid"
-												style={{ color: '#0078d4' }}
-											/>
-											Add Phase
-										</div>
-									)}
+						<div className="listTitle">Phases</div>
+						<div className="searchRow">
+							<div></div>
+							{state.isEditable && (
+								<div className="addLocationHeaderButton" onClick={() => onPhaseFormOpen(null)}>
+									<FontIcon
+										iconName="CircleAdditionSolid"
+										style={{ color: '#0078d4' }}
+									/>
+									Add Phase
 								</div>
-								<DetailsList
-									items={phaseItemList}
-									columns={phaseColumns}
-									setKey="set"
-									layoutMode={DetailsListLayoutMode.justified}
-									checkboxVisibility={2}
-									onItemInvoked={(item) => selectedPhase(false, item)}
-									onRenderItemColumn={onRenderItemColumn}
-									className="locationDetailsList"
-								/>
-							</>
+							)}
+						</div>
+						{selectedState.value.vaccination.content.phases.length > 0 ? (
+							<DetailsList
+								items={phaseItemList}
+								columns={phaseColumns}
+								setKey="set"
+								layoutMode={DetailsListLayoutMode.justified}
+								checkboxVisibility={2}
+								onItemInvoked={(item) => selectedPhase(false, item)}
+								onRenderItemColumn={onRenderItemColumn}
+								className="locationDetailsList"
+							/>
 						) : (
 							<div>No phases available at this time.</div>
 						)}
 					</section>
 					<section>
-						{selectedState.regions > 0 ? (
-							<>
-								<div className="listTitle">Sublocation</div>
-								<div className="searchRow">
-									<SearchBox
-										styles={{ root: { width: 400 } }}
-										placeholder="Search"
-										onChange={(ev, text) => onRegionFilter(ev, text)}
-									/>
-									{state.isEditable && (
-										<div
-											className="addLocationHeaderButton"
-											onClick={() => onLocationFormOpen(null)}
-										>
-											<FontIcon
-												iconName="CircleAdditionSolid"
-												style={{ color: '#0078d4' }}
-											/>
-											Add Sublocation
-										</div>
-									)}
-								</div>
-								<DetailsList
-									items={filteredRegionsList}
-									columns={subLocationsColumns}
-									setKey="set"
-									layoutMode={DetailsListLayoutMode.justified}
-									selectionPreservedOnEmptyClick={true}
-									ariaLabelForSelectionColumn="Toggle selection"
-									ariaLabelForSelectAllCheckbox="Toggle selection for all items"
-									checkButtonAriaLabel="Row checkbox"
-									checkboxVisibility={2}
-									onItemInvoked={(item) => selectedPhase(true, item)}
-									onRenderItemColumn={onRenderItemColumn}
-									className="locationDetailsList"
+						<div className="listTitle">Sublocation</div>
+						<div className="searchRow">
+							{stateRegionsFullList.current.length > 0 ? (
+								<SearchBox
+									styles={{ root: { width: 400 } }}
+									placeholder="Search"
+									onChange={(ev, text) => onRegionFilter(ev, text)}
 								/>
-							</>
+							): (
+								<div></div>
+							)}
+							{state.isEditable && (
+								<div
+									className="addLocationHeaderButton"
+									onClick={() => onLocationFormOpen(null)}
+								>
+									<FontIcon
+										iconName="CircleAdditionSolid"
+										style={{ color: '#0078d4' }}
+									/>
+									Add Sublocation
+								</div>
+							)}
+						</div>
+						{stateRegionsFullList.current.length > 0 ? (
+							<DetailsList
+								items={filteredRegionsList}
+								columns={subLocationsColumns}
+								setKey="set"
+								layoutMode={DetailsListLayoutMode.justified}
+								selectionPreservedOnEmptyClick={true}
+								ariaLabelForSelectionColumn="Toggle selection"
+								ariaLabelForSelectAllCheckbox="Toggle selection for all items"
+								checkButtonAriaLabel="Row checkbox"
+								checkboxVisibility={2}
+								onItemInvoked={(item) => selectedPhase(true, item)}
+								onRenderItemColumn={onRenderItemColumn}
+								className="locationDetailsList"
+							/>
 						) : (
 							<div>No regions available at this time.</div>
 						)}
