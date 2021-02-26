@@ -39,7 +39,15 @@ export const getPhaseMoreInfoItems = (selectedState?: any) => {
 }
 
 export const getPhaseMoreInfoTextByKey = (selectedState?: any, selectedKey?: any) => {
-    return getCustomStrings(selectedState, selectedKey)[0].text
+    if (selectedKey) {
+        const res = getExactCustomStrings(selectedState, selectedKey)
+        if (res.length > 0) {
+            console.log(res)
+            return res[0].text
+        }
+    }
+
+    return ''
 }
 
 const getCustomStrings = (selectedState?: any, keyFilter?: string) => {
@@ -49,6 +57,23 @@ const getCustomStrings = (selectedState?: any, keyFilter?: string) => {
         : [...Object.entries(globalFileData.customStrings.content)]
 
     const filteredList = keyFilter ? qualifierList.filter(([key, _value]:[string, any]) => key.includes(keyFilter)) : qualifierList
+    return filteredList
+        .map(([key, value]:[string, any]) => {
+            return {
+                key: key,
+                text: value[currentLanguage]
+            }
+        })
+        .sort((a,b) => (a.text > b.text) ? 1 : -1)
+}
+
+const getExactCustomStrings = (selectedState?: any, keyFilter?: string) => {
+    const { globalFileData, currentLanguage } = getAppStore();
+    const qualifierList: any[] = selectedState
+        ? [...Object.entries(selectedState.value?.strings?.content ?? {}), ...Object.entries(globalFileData.customStrings.content)]
+        : [...Object.entries(globalFileData.customStrings.content)]
+
+    const filteredList = keyFilter ? qualifierList.filter(([key, _value]:[string, any]) => key.toLowerCase() === keyFilter) : qualifierList
     return filteredList
         .map(([key, value]:[string, any]) => {
             return {
