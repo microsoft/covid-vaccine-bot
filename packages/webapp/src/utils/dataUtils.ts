@@ -17,3 +17,68 @@ export const convertCSVDataToObj = (csvData: any) => {
 
 	return returnObj
 }
+
+export const createLocationDataObj = (locationData: any) => {
+	const locationName = locationData.details.replace(' ', '_').toLowerCase()
+	return {
+		info: {
+			content: {
+				id: locationName,
+				metadata: {
+					code_alpha: '',
+					code_numeric: 0,
+				},
+				name: locationData.details,
+				type: locationData.regionType
+			},
+			name: 'info.json',
+			path: `${locationName}/info.json`,
+			sha: '',
+			type: 'info',
+			url: ''
+		},
+		string: {},
+		vaccination: {
+			content: {
+				activePhase: '',
+				links: {
+					eligibility: {
+						url: locationData.eligibility,
+						text: ''
+					},
+					eligibility_plan: {
+						url: locationData.eligibilityPlan,
+						text: ''
+					},
+					info: {
+						url: locationData.info,
+						text: `cdc/${locationName}/state_link`
+					},
+					providers: {
+						url: locationData.providers,
+						text: 'c19.links/vax_providers'
+					},
+					workflow: {
+						url: locationData.workflow,
+						text: 'c19.links/vax_quiz'
+					},
+					scheduling: {
+						url: locationData.scheduling,
+						text: 'c19.links/schedule_vax'
+					},
+					scheduling_phone: {
+						url: `tel:${locationData.schedulingPhone}`,
+						text: '',
+						description: ''
+					}
+				},
+				phases: {}
+			},
+			name: 'vaccination.json',
+			path: `${locationName}/vaccination.json`,
+			sha: '',
+			type: 'vaccination',
+			url: ''
+		},
+	}
+}

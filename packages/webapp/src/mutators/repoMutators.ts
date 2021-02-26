@@ -4,6 +4,7 @@
  */
 import { mutatorAction } from 'satcheljs'
 import { getAppStore } from '../store/store'
+import { createLocationDataObj } from '../utils/dataUtils'
 
 export const setBranchList = mutatorAction(
 	'setBranchList',
@@ -61,3 +62,20 @@ export const setCurrentLanguage = mutatorAction(
 		}
 	}
 )
+
+export const updateMainLocationList = mutatorAction('updateMainLocationList', (locationData: any, isRegion: boolean) => {
+	if (locationData) {
+		const store = getAppStore()
+		if (!isRegion) {
+			const newLocObj = createLocationDataObj(locationData)
+
+			store.globalFileData.cdcStateNames.content[`cdc/${newLocObj.info.content.id}/state_name`] = {
+				"en-us": locationData.details,
+				"es-us": locationData.details,
+				"vi-vn": locationData.details,
+			}
+
+			store.repoFileData = {...store.repoFileData, ...{[newLocObj.info.content.id]:newLocObj}}
+		}
+	}
+})

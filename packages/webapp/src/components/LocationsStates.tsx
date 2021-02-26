@@ -16,6 +16,7 @@ import { observer } from 'mobx-react-lite'
 import { useState, useRef, useEffect, useCallback } from 'react'
 import { getAppStore } from '../store/store'
 import LocationForm from './LocationForm'
+import { updateMainLocationList } from '../mutators/repoMutators'
 
 import './Locations.scss'
 
@@ -63,7 +64,7 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 	useEffect(() => {
 		if (state.repoFileData) {
 			const tempList: any[] = []
-			Object.entries(state.repoFileData).forEach(([key, value]) => {
+			Object.entries(state.repoFileData).forEach(([key, value]: [string, any]) => {
 				const stateId = value?.info?.content.id
 				const stateNames = state?.globalFileData?.cdcStateNames.content
 
@@ -111,8 +112,9 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 	)
 
 	const onLocationFormSubmit = useCallback(
-		(_locationData) => {
+		(locationData) => {
 			dismissLocationModal()
+			updateMainLocationList(locationData, false)
 		},
 		[dismissLocationModal]
 	)
