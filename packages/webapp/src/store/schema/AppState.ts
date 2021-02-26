@@ -13,8 +13,8 @@ export interface AppState {
 	issues?: any[]
 	mainBranch?: any
 	repoFileData?: any[]
+	initRepoFileData?: any[]
 	globalFileData?: any
-	fileChanges?: any[]
 	currentLanguage: string
 	toggleQualifier: boolean
 	toggleAddLocation: boolean

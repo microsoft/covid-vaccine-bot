@@ -42,6 +42,7 @@ export const setRepoFileData = mutatorAction(
 		if (data) {
 			const store = getAppStore()
 			store.repoFileData = data[0]
+			store.initRepoFileData = data[0]
 			store.globalFileData = {
 				customStrings: data[1],
 				cdcStateNames: data[2],
