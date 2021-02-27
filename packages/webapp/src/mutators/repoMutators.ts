@@ -97,11 +97,12 @@ export const updateLocationList = mutatorAction('updateLocationList', (locationD
 export const updatePhaseList = mutatorAction('updatePhaseList', (phaseItems: any[], isRegion: boolean, selectedState: any) => {
 	if (phaseItems) {
 		const store = getAppStore()
+		console.log('covid: ', phaseItems)
 		store.repoFileData[selectedState.key].vaccination.content.phases = phaseItems.map(item => {
 			return {
 				id: item.keyId,
 				label: item.name,
-				qualifications: []
+				qualifications: item.value.qualifications
 			}
 		})
 
