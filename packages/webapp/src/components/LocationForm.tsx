@@ -120,6 +120,10 @@ export default observer(function LocationForm(props: LocationFormProp) {
 		[formData, fieldChanges]
 	)
 
+	const canSubmit = useCallback(() => {
+		return formData.details !== '' && formData.regionType !== ''
+	},[formData])
+
 	return (
 		<div className="modalWrapper">
 			<div className="modalHeader">
@@ -184,7 +188,7 @@ export default observer(function LocationForm(props: LocationFormProp) {
 				/>
 			</div>
 			<div className="modalFooter">
-				<PrimaryButton text="Submit" onClick={() => onSubmit?.(formData)} />
+				<PrimaryButton text="Submit" disabled={!canSubmit()} onClick={() => onSubmit?.(formData)} />
 				<DefaultButton text="Cancel" onClick={() => onCancel?.()} />
 			</div>
 		</div>
