@@ -9,11 +9,13 @@ import {
 	FontIcon,
 	IGroupDividerProps,
 	IDetailsListProps,
+	IDetailsRowProps
 } from '@fluentui/react'
 import { observer } from 'mobx-react-lite'
 import { useState, useEffect, useCallback } from 'react'
 import { getAppStore } from '../store/store'
 import PhaseQualifierForm from './PhaseQualifierForm'
+import {modifyStateStrings} from '../mutators/repoMutators'
 
 import './Locations.scss'
 
@@ -321,6 +323,30 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 		}
 	}
 
+	const onChangeRowItemText = (currentItem: any, initItem:any) =>{
+
+		if(initItem.moreInfoUrl?.toLowerCase() !== currentItem.moreInfoUrl?.toLowerCase()){
+			console.log("update more info url for this item, good luck.")
+		}
+		else if(initItem.moreInfoContent !== currentItem.moreInfoContent) {
+			let calcInfoKey = currentItem.qualifierId.replace("question","moreinfo") 
+			calcInfoKey += `.${selectedState.value.info.content.metadata.code_alpha.toLowerCase()}`
+			if(isRegion){
+				calcInfoKey += `.${value.name.toLowerCase()}`
+			}
+			calcInfoKey += `.${currentItem.groupId}`
+
+			console.log(calcInfoKey)
+			modifyStateStrings({ 'infoKey': calcInfoKey, 'locationKey':selectedState.key, 'item':currentItem, 'regionInfo': ( isRegion ? value : null ) })
+			console.log(repoFileData)
+		}
+		
+	}
+
+	const onChangeRowItemQualifier = (currentItem: any, initItem:any) =>{
+		console.log(currentItem, initItem)
+	}
+
 	const onRenderRow: IDetailsListProps['onRenderRow'] = (props) => {
 		if (props) {
 			return (
@@ -329,11 +355,15 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 					selectedState={selectedState}
 					isEditable={isEditable}
 					onRowItemRemove={onRemoveRowItem}
+					onRowItemTextChange={onChangeRowItemText}
+					onRowItemQualifierChange={onChangeRowItemQualifier}
 				/>
 			)
 		}
 		return null
 	}
+
+
 
 	return (
 		<div className="phaseGridContainer">

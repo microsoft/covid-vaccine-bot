@@ -25,7 +25,8 @@ export interface PhaseQualifierFormProps {
 	rowItems: IDetailsRowProps
 	isEditable: boolean
 	onRowItemRemove?: (item: any) => void
-	onRowItemChange?: (item: IDetailsRowProps) => void
+	onRowItemTextChange: (item: any, prevItem: any) => void
+	onRowItemQualifierChange: (item: any, prevItem: any) => void
 }
 
 export default observer(function PhaseQualiferForm(
@@ -36,7 +37,8 @@ export default observer(function PhaseQualiferForm(
 		rowItems,
 		isEditable,
 		onRowItemRemove,
-		onRowItemChange,
+		onRowItemTextChange,
+		onRowItemQualifierChange
 	} = props
 	const phaseTagItems = useRef(getPhaseTagItems(selectedState))
 	const phaseQualifierItems = useRef(getPhaseQualifierItems(selectedState))
@@ -44,13 +46,16 @@ export default observer(function PhaseQualiferForm(
 	const [filteredQualifierItems, setFilteredQualifierItems] = useState<any[]>(
 		getPhaseQualifierItemsByKey(selectedState, rowItems.item.tagKey)
 	)
+
 	const [moreInfoText, setMoreInfoText] = useState<string>(
 		getPhaseMoreInfoTextByKey(selectedState, rowItems.item.moreInfoKey)
 	)
+
 	const [moreInfoUrl, setMoreInfoUrl] = useState<string>(
 		rowItems.item.moreInfoUrl
 	)
 	const changedItem = useRef<any>(rowItems.item)
+	changedItem.current.moreInfoContent = moreInfoText
 
 	const onTagChange = useCallback(
 		(_event, option) => {
@@ -72,34 +77,28 @@ export default observer(function PhaseQualiferForm(
 					moreInfoContent: '',
 				},
 			}
-			onRowItemChange?.({ ...rowItems, ...{ item: changedItem.current } })
 		},
-		[phaseQualifierItems, onRowItemChange, rowItems]
+		[phaseQualifierItems, rowItems]
 	)
 
 	const onQualifierChange = useCallback(
 		(_event, option) => {
-			const moreInfoKey = option.key
-				.replace('question', 'moreinfo')
-				.split('/')[1]
-			const moreInfoObj = phaseMoreInfoItems.current.find(
-				(mi) => mi.key.split('/')[1] === moreInfoKey
-			)
-			moreInfoObj ? setMoreInfoText(moreInfoObj.text) : setMoreInfoText('')
+
+			setMoreInfoText('')
+			setMoreInfoUrl('')
 
 			changedItem.current = {
 				...changedItem.current,
 				...{
 					qualifierId: option.key,
 					text: option.text,
-					moreInfoContent: moreInfoObj?.text,
-					moreInfoKey:
-						moreInfoObj?.key || option.key.replace('question', 'moreinfo'),
+					moreInfoKey:'',
+					moreInfoContent: '',
 				},
 			}
-			onRowItemChange?.({ ...rowItems, ...{ item: changedItem.current } })
+			onRowItemQualifierChange(changedItem.current, rowItems.item)
 		},
-		[phaseMoreInfoItems, onRowItemChange, rowItems]
+		[phaseMoreInfoItems, onRowItemQualifierChange, rowItems]
 	)
 
 	const onMoreInfoTextChange = useCallback(
@@ -110,10 +109,9 @@ export default observer(function PhaseQualiferForm(
 					moreInfoContent: value,
 				},
 			}
-			onRowItemChange?.({ ...rowItems, ...{ item: changedItem.current } })
 			setMoreInfoText(value)
 		},
-		[onRowItemChange, rowItems]
+		[rowItems]
 	)
 
 	const onMoreInfoUrlChange = useCallback(
@@ -124,10 +122,9 @@ export default observer(function PhaseQualiferForm(
 					moreInfoUrl: value,
 				},
 			}
-			onRowItemChange?.({ ...rowItems, ...{ item: changedItem.current } })
 			setMoreInfoUrl(value)
 		},
-		[onRowItemChange, rowItems]
+		[rowItems]
 	)
 
 	return (
@@ -182,12 +179,14 @@ export default observer(function PhaseQualiferForm(
 					styles={{ root: { width: 'calc(100% - 32px)', padding: '5px 0' } }}
 					value={moreInfoText}
 					onChange={onMoreInfoTextChange}
+					onBlur={ () => onRowItemTextChange(changedItem.current, rowItems.item) }
 				/>
 				<TextField
 					placeholder="More info url"
 					styles={{ root: { width: 'calc(100% - 32px)', padding: '5px 0' } }}
 					value={moreInfoUrl}
 					onChange={onMoreInfoUrlChange}
+					onBlur={ () => onRowItemTextChange(changedItem.current, rowItems.item) }
 				/>
 			</div>
 		</div>

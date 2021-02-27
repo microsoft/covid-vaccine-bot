@@ -42,6 +42,7 @@ export const setRepoFileData = mutatorAction(
 	(data: any[] | undefined) => {
 		if (data) {
 			const store = getAppStore()
+			console.log(data)
 			store.repoFileData = data[0]
 			store.initRepoFileData = data[0]
 			store.globalFileData = {
@@ -62,7 +63,6 @@ export const setCurrentLanguage = mutatorAction(
 		}
 	}
 )
-
 export const updateLocationList = mutatorAction('updateLocationList', (locationData: any, isRegion: boolean, selectedState?: any) => {
 	if (locationData) {
 		const store = getAppStore()
@@ -108,3 +108,69 @@ export const updatePhaseList = mutatorAction('updatePhaseList', (phaseItems: any
 		store.repoFileData = {...store.repoFileData}
 	}
 })
+
+export const modifyStateStrings = mutatorAction(
+	'modifyStateStrings',
+	(data:any | undefined) => {
+
+		if(data){
+			const store = getAppStore()
+			if(store?.repoFileData){
+			const location = store.repoFileData[data.locationKey]
+			if(!location.strings?.content[data.infoKey]){
+				const newStringsObj:any = {}
+				newStringsObj[store.currentLanguage] = data.item.moreInfoContent
+				location.strings.content[data.infoKey] = newStringsObj
+				if(!data.regionInfo){
+
+					const affectedPhase = location.vaccination.content.phases.find( (phase:any) => phase.id === data.item.groupId)
+					const affectedQualifier = affectedPhase.qualifications.find( (qualification:any) => qualification.question === data.item.qualifierId )
+					affectedQualifier.moreInfoText = data.infoKey
+				} else {
+					const regionVaccinationObj = location.regions[data.regionInfo.key].vaccination
+
+					if(regionVaccinationObj.content?.phases){
+
+						console.log("in here")
+
+						const affectedPhase = regionVaccinationObj.content.phases.find( (phase:any) => phase.id === data.item.groupId)
+						console.log(affectedPhase)
+
+						if(affectedPhase){
+
+							const affectedQualifier = affectedPhase.qualifications.find( (qualification:any) => qualification.question === data.item.qualifierId )
+							if(affectedQualifier){
+								affectedQualifier.moreInfoText = data.infoKey
+							}
+							else{
+								affectedPhase.qualifications.push({ 'question': data.item.qualifierId , 'moreInfoText':data.infoKey})
+							}
+
+
+
+						}
+						else{
+							const phaseObj:any = { 'id': data.item.groupId, 'qualifications':[] }
+							phaseObj.qualifications.push({ 'question': data.item.qualifierId , 'moreInfoText':data.infoKey})
+							console.log("here", phaseObj)
+							regionVaccinationObj.content['phases'].push( phaseObj)
+						}
+
+
+					}else
+					{
+						const phaseObj:any = { 'id': data.item.groupId, 'qualifications':[] }
+						phaseObj.qualifications.push({ 'question': data.item.qualifierId , 'moreInfoText':data.infoKey})
+						regionVaccinationObj.content['phases'] = [phaseObj]
+					}
+
+				}
+
+			} else {
+				location.strings.content[data.infoKey][store.currentLanguage] = data.item.moreInfoContent
+			}
+		}
+		}
+
+	}
+)

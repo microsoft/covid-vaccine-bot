@@ -42,7 +42,6 @@ export const getPhaseMoreInfoTextByKey = (selectedState?: any, selectedKey?: any
     if (selectedKey) {
         const res = getExactCustomStrings(selectedState, selectedKey)
         if (res.length > 0) {
-            console.log(res)
             return res[0].text
         }
     }
