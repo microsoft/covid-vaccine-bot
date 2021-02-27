@@ -63,7 +63,7 @@ export const setCurrentLanguage = mutatorAction(
 	}
 )
 
-export const updateMainLocationList = mutatorAction('updateMainLocationList', (locationData: any, isRegion: boolean, selectedState?: any) => {
+export const updateLocationList = mutatorAction('updateLocationList', (locationData: any, isRegion: boolean, selectedState?: any) => {
 	if (locationData) {
 		const store = getAppStore()
 		const newLocObj = createLocationDataObj(locationData)
@@ -91,5 +91,20 @@ export const updateMainLocationList = mutatorAction('updateMainLocationList', (l
 
 			store.repoFileData = {...store.repoFileData}
 		}
+	}
+})
+
+export const updatePhaseList = mutatorAction('updatePhaseList', (phaseItems: any[], isRegion: boolean, selectedState: any) => {
+	if (phaseItems) {
+		const store = getAppStore()
+		store.repoFileData[selectedState.key].vaccination.content.phases = phaseItems.map(item => {
+			return {
+				id: item.keyId,
+				label: item.name,
+				qualifications: []
+			}
+		})
+
+		store.repoFileData = {...store.repoFileData}
 	}
 })

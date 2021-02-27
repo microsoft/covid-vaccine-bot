@@ -18,7 +18,7 @@ import { toProperCase } from '../utils/textUtils'
 import LocationForm from './LocationForm'
 import LocationsPhases from './LocationsPhases'
 import PhaseForm from './PhaseForm'
-import { updateMainLocationList } from '../mutators/repoMutators'
+import { updateLocationList, updatePhaseList } from '../mutators/repoMutators'
 
 import './Locations.scss'
 
@@ -138,7 +138,7 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 	const onLocationFormSubmit = useCallback(
 		(locationData) => {
 			dismissLocationModal()
-			updateMainLocationList(locationData, true, selectedState)
+			updateLocationList(locationData, true, selectedState)
 		},
 		[dismissLocationModal, selectedState]
 	)
@@ -187,7 +187,6 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 		(phaseData) => {
 			dismissPhaseModal()
 
-		//TODO: check to move added phase to repoFileData level if possible
 		const updatedList: any[] = phaseItemList
 
 		if (selectedModalFormItem.current == null) {
@@ -211,8 +210,9 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 			})
 		}
 
+		updatePhaseList(updatedList, false, selectedState)
 		setPhaseItemList(updatedList)
-	},[phaseItemList, selectedModalFormItem, setPhaseItemList, dismissPhaseModal])
+	},[phaseItemList, selectedModalFormItem, setPhaseItemList, dismissPhaseModal, updatePhaseList])
 
 	const onPhaseFormOpen = useCallback((item?: any) => {
 		selectedModalFormItem.current = item ?? null

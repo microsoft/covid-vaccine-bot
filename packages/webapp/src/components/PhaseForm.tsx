@@ -70,7 +70,7 @@ export default observer(function PhaseForm(props: PhaseFormProp) {
                 />
             </div>
             <div className="modalFooter">
-                <PrimaryButton text="Submit" onClick={() => onSubmit?.(formData)} />
+                <PrimaryButton text="Submit" disabled={formData.name === ''} onClick={() => onSubmit?.(formData)} />
                 <DefaultButton text="Cancel" onClick={() => onCancel?.()}/>
             </div>
         </div>
