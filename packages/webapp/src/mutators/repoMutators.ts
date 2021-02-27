@@ -132,10 +132,7 @@ export const modifyStateStrings = mutatorAction(
 
 					if(regionVaccinationObj.content?.phases){
 
-						console.log("in here")
-
 						const affectedPhase = regionVaccinationObj.content.phases.find( (phase:any) => phase.id === data.item.groupId)
-						console.log(affectedPhase)
 
 						if(affectedPhase){
 
@@ -153,7 +150,6 @@ export const modifyStateStrings = mutatorAction(
 						else{
 							const phaseObj:any = { 'id': data.item.groupId, 'qualifications':[] }
 							phaseObj.qualifications.push({ 'question': data.item.qualifierId , 'moreInfoText':data.infoKey})
-							console.log("here", phaseObj)
 							regionVaccinationObj.content['phases'].push( phaseObj)
 						}
 
