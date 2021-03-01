@@ -15,7 +15,7 @@ import { observer } from 'mobx-react-lite'
 import { useState, useEffect, useCallback } from 'react'
 import { getAppStore } from '../store/store'
 import PhaseQualifierForm from './PhaseQualifierForm'
-import {modifyStateStrings, modifyMoreInfoLinks} from '../mutators/repoMutators'
+import {modifyStateStrings, modifyMoreInfoLinks, setActivePhase} from '../mutators/repoMutators'
 
 import './Locations.scss'
 
@@ -57,6 +57,8 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 
 			phaseObj.forEach((phase: any) => {
 				const isCollapsed: boolean = !isRegion && value.value.id !== phase.id
+
+				console.log(value.phase)
 
 				let isActivePhase = false
 				if (isRegion) {
@@ -222,6 +224,9 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 		},
 		[phaseGroupItems, phaseGroup]
 	)
+	const onSetActivePhase = ( phaseId:string ) => {
+		setActivePhase({'locationKey':selectedState.key, 'phaseId':phaseId, 'regionInfo': ( isRegion ? value : null ) })
+	}
 
 	const onRenderHeader: IDetailsGroupRenderProps['onRenderHeader'] = (
 		props
@@ -275,7 +280,10 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 										Active Phase
 									</div>
 								) : (
-									<div className="activeGroup">
+									<div 
+										className="activeGroup"
+										onClick={() => onSetActivePhase(group.data.keyId)}
+									>
 										<FontIcon
 											iconName="CircleRing"
 											style={{ color: '#00b7c3' }}

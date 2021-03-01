@@ -236,3 +236,31 @@ export const modifyMoreInfoLinks = mutatorAction(
 			}
 		}
 )
+
+export const setActivePhase = mutatorAction(
+	'setActivePhase',
+	(data:any | undefined) => {
+
+		if(data){
+			const store = getAppStore()
+			if(store?.repoFileData){
+				const location = store.repoFileData[data.locationKey]
+
+				if(data.repoInfo){
+
+					const regionVaccinationObj = location.regions[data.regionInfo.key].vaccination
+					regionVaccinationObj.content['activePhase'] = data.phaseId
+					store.repoFileData = {...store.repoFileData}
+
+
+
+				}
+				else {
+					location.vaccination.content['activePhase'] = data.phaseId
+					store.repoFileData = {...store.repoFileData}
+
+				}
+			}
+		}
+
+	})
