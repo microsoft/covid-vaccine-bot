@@ -246,8 +246,8 @@ export const setActivePhase = mutatorAction(
 			if(store?.repoFileData){
 				const location = store.repoFileData[data.locationKey]
 
-				if(data.repoInfo){
-
+				if(data.regionInfo){
+					console.log("in here")
 					const regionVaccinationObj = location.regions[data.regionInfo.key].vaccination
 					regionVaccinationObj.content['activePhase'] = data.phaseId
 					store.repoFileData = {...store.repoFileData}

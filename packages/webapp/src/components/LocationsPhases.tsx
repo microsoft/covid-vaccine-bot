@@ -54,15 +54,15 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 			const tempPhaseGroupItems: any[] = []
 			const currentStateObj: any = repoFileData[selectedState.key]
 			const phaseObj = currentStateObj.vaccination.content.phases
+			const regionObj = isRegion ? repoFileData[selectedState.key].regions[value.key] : null
+
 
 			phaseObj.forEach((phase: any) => {
 				const isCollapsed: boolean = !isRegion && value.value.id !== phase.id
 
-				console.log(value.phase)
-
 				let isActivePhase = false
-				if (isRegion) {
-					isActivePhase = value.phase === phase.id
+				if (isRegion && regionObj.vaccination.content.activePhase) {
+					isActivePhase = phase.id === regionObj.vaccination.content.activePhase
 				} else {
 					isActivePhase =
 						phase.id === currentStateObj.vaccination.content.activePhase
@@ -225,6 +225,7 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 		[phaseGroupItems, phaseGroup]
 	)
 	const onSetActivePhase = ( phaseId:string ) => {
+		console.log("Here",{'locationKey':selectedState.key, 'phaseId':phaseId, 'regionInfo': ( isRegion ? value : null ) })
 		setActivePhase({'locationKey':selectedState.key, 'phaseId':phaseId, 'regionInfo': ( isRegion ? value : null ) })
 	}
 
