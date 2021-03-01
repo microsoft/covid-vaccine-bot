@@ -126,7 +126,12 @@ export const modifyStateStrings = mutatorAction(
 
 					const affectedPhase = location.vaccination.content.phases.find( (phase:any) => phase.id === data.item.groupId)
 					const affectedQualifier = affectedPhase.qualifications.find( (qualification:any) => qualification.question === data.item.qualifierId )
-					affectedQualifier.moreInfoText = data.infoKey
+					if(affectedQualifier){
+						affectedQualifier.moreInfoText = data.infoKey
+					}
+					else{
+						affectedPhase.qualifications.push({ 'question': data.item.qualifierId , 'moreInfoText':data.infoKey})
+					}
 				} else {
 					const regionVaccinationObj = location.regions[data.regionInfo.key].vaccination
 
@@ -218,7 +223,12 @@ export const modifyMoreInfoLinks = mutatorAction(
 
 					const affectedPhase = location.vaccination.content.phases.find( (phase:any) => phase.id === data.item.groupId)
 					const affectedQualifier = affectedPhase.qualifications.find( (qualification:any) => qualification.question === data.item.qualifierId )
-					affectedQualifier.moreInfoUrl = data.item.moreInfoUrl
+					if(affectedQualifier){
+						affectedQualifier.moreInfoUrl = data.item.moreInfoUrl
+					}
+					else{
+						affectedPhase.qualifications.push({ 'question': data.item.qualifierId , 'moreInfoUrl':data.item.moreInfoUrl})
+					}
 
 				}
 
