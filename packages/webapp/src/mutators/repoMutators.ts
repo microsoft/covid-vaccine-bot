@@ -171,3 +171,58 @@ export const modifyStateStrings = mutatorAction(
 
 	}
 )
+
+export const modifyMoreInfoLinks = mutatorAction(
+	'modifyMoreInfoLinks',
+	(data:any | undefined) => {
+
+		if(data){
+			const store = getAppStore()
+			if(store?.repoFileData){
+				const location = store.repoFileData[data.locationKey]
+				if(data.regionInfo){
+
+					const regionVaccinationObj = location.regions[data.regionInfo.key].vaccination
+
+					if(regionVaccinationObj.content?.phases){
+
+						const affectedPhase = regionVaccinationObj.content.phases.find( (phase:any) => phase.id === data.item.groupId)
+
+						if(affectedPhase){
+
+							const affectedQualifier = affectedPhase.qualifications.find( (qualification:any) => qualification.question === data.item.qualifierId )
+							if(affectedQualifier){
+								affectedQualifier.moreInfoUrl = data.item.moreInfoUrl
+							}
+							else{
+								affectedPhase.qualifications.push({ 'question': data.item.qualifierId , 'moreInfoUrl':data.item.moreInfoUrl})
+							}
+
+
+
+						}
+						else{
+							const phaseObj:any = { 'id': data.item.groupId, 'qualifications':[] }
+							phaseObj.qualifications.push({ 'question': data.item.qualifierId , 'moreInfoUrl':data.item.moreInfoUrl})
+							regionVaccinationObj.content['phases'].push( phaseObj)
+						}
+
+					}else{
+						const phaseObj:any = { 'id': data.item.groupId, 'qualifications':[] }
+						phaseObj.qualifications.push({ 'question': data.item.qualifierId , 'moreInfoUrl':data.item.moreInfoUrl})
+						regionVaccinationObj.content['phases'] = [phaseObj]
+					}
+
+				}
+				else{
+
+					const affectedPhase = location.vaccination.content.phases.find( (phase:any) => phase.id === data.item.groupId)
+					const affectedQualifier = affectedPhase.qualifications.find( (qualification:any) => qualification.question === data.item.qualifierId )
+					affectedQualifier.moreInfoUrl = data.item.moreInfoUrl
+
+				}
+
+				}
+			}
+		}
+)

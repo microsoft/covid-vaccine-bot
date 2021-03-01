@@ -15,7 +15,7 @@ import { observer } from 'mobx-react-lite'
 import { useState, useEffect, useCallback } from 'react'
 import { getAppStore } from '../store/store'
 import PhaseQualifierForm from './PhaseQualifierForm'
-import {modifyStateStrings} from '../mutators/repoMutators'
+import {modifyStateStrings, modifyMoreInfoLinks} from '../mutators/repoMutators'
 
 import './Locations.scss'
 
@@ -326,7 +326,10 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 	const onChangeRowItemText = (currentItem: any, initItem:any) =>{
 
 		if(initItem.moreInfoUrl?.toLowerCase() !== currentItem.moreInfoUrl?.toLowerCase()){
-			console.log("update more info url for this item, good luck.")
+			console.log(currentItem,initItem)
+			modifyMoreInfoLinks({'locationKey':selectedState.key, 'item':currentItem, 'regionInfo': ( isRegion ? value : null ) })
+			console.log(repoFileData)
+
 		}
 		else if(initItem.moreInfoContent !== currentItem.moreInfoContent) {
 			let calcInfoKey = currentItem.qualifierId.replace("question","moreinfo") 
@@ -336,9 +339,7 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 			}
 			calcInfoKey += `.${currentItem.groupId}`
 
-			console.log(calcInfoKey)
 			modifyStateStrings({ 'infoKey': calcInfoKey, 'locationKey':selectedState.key, 'item':currentItem, 'regionInfo': ( isRegion ? value : null ) })
-			console.log(repoFileData)
 		}
 		
 	}
