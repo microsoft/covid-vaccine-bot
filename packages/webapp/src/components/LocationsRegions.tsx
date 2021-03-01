@@ -103,7 +103,9 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 		}
 	].filter(loc => state.isEditable ? true : loc.key !== 'editCol')
 
-	const [phaseItemList, setPhaseItemList] = useState<any[]>([])
+	const [phaseItemList, setPhaseItemList] = useState<any[]>(
+		setInitialPhaseItems(selectedState)
+	)
 
 	useEffect(() => {
 		const selectedStateObj = state.repoFileData[selectedState.key]
