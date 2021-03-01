@@ -105,6 +105,7 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 						qualifierId: keyId,
 						tagKey: keyId.split('/')[1].split('.')[0],
 						groupId: phase.id,
+						location: value
 					})
 				})
 			})
@@ -341,6 +342,7 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 					rowItems={props}
 					selectedState={selectedState}
 					isEditable={isEditable}
+					isRegion={isRegion}
 					onRowItemRemove={onRemoveRowItem}
 					onRowItemTextChange={onChangeRowItemText}
 					onRowItemQualifierChange={onChangeRowItemQualifier}

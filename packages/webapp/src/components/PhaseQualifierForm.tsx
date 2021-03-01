@@ -24,6 +24,7 @@ export interface PhaseQualifierFormProps {
 	selectedState: any
 	rowItems: IDetailsRowProps
 	isEditable: boolean
+	isRegion: boolean
 	onRowItemRemove?: (item: any) => void
 	onRowItemTextChange: (item: any, prevItem: any) => void
 	onRowItemQualifierChange: (item: any, prevItem: any) => void
@@ -36,6 +37,7 @@ export default observer(function PhaseQualiferForm(
 		selectedState,
 		rowItems,
 		isEditable,
+		isRegion,
 		onRowItemRemove,
 		onRowItemTextChange,
 		onRowItemQualifierChange
@@ -47,8 +49,20 @@ export default observer(function PhaseQualiferForm(
 		getPhaseQualifierItemsByKey(selectedState, rowItems.item.tagKey)
 	)
 
+	let moreInfoKey = rowItems.item.moreInfoKey
+	if(isRegion) {
+		const regionPhases = rowItems.item.location.value.vaccination.content.phases
+		const currPhase = regionPhases?.find((phase: { id: any }) => phase.id === rowItems.item.groupId)
+		if (currPhase){
+			const currQualification = currPhase?.qualifications.find((qualification: { question: any }) => qualification.question === rowItems.item.qualifierId)
+			if (currQualification) {
+				moreInfoKey = currQualification.moreInfoText
+			}
+		}
+	}
+
 	const [moreInfoText, setMoreInfoText] = useState<string>(
-		getPhaseMoreInfoTextByKey(selectedState, rowItems.item.moreInfoKey)
+		getPhaseMoreInfoTextByKey(selectedState, moreInfoKey)
 	)
 
 	const [moreInfoUrl, setMoreInfoUrl] = useState<string>(
