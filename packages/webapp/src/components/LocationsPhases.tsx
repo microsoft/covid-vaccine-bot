@@ -109,20 +109,6 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 				})
 			})
 
-			if (value.isNew) {
-				tempPhaseGroup.push({
-					key: value.keyId + tempPhaseGroup.length,
-					name: `Phase ${value.value.id}`,
-					startIndex: tempPhaseGroupItems.length,
-					count: value.qualifications.length,
-					isCollapsed: false,
-					data: {
-						keyId: value.value.id,
-						isActive: false,
-					},
-				})
-			}
-
 			setPhaseGroup(tempPhaseGroup)
 			setPhaseGroupItems(tempPhaseGroupItems)
 		}
