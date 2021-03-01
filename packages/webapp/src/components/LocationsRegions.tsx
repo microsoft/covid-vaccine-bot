@@ -103,9 +103,7 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 		}
 	].filter(loc => state.isEditable ? true : loc.key !== 'editCol')
 
-	const [phaseItemList, setPhaseItemList] = useState<any[]>(
-		setInitialPhaseItems(selectedState)
-	)
+	const [phaseItemList, setPhaseItemList] = useState<any[]>([])
 
 	useEffect(() => {
 		const selectedStateObj = state.repoFileData[selectedState.key]
@@ -125,10 +123,11 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 			})
 			setFilteredRegionsList(tempList)
 			stateRegionsFullList.current = tempList
-			if (selectedStateObj) {
-				const newList = setInitialPhaseItems({key: selectedStateObj.info.content.id ,value: selectedStateObj})
-				setPhaseItemList(newList)
-			}
+		}
+
+		if (selectedStateObj) {
+			const newList = setInitialPhaseItems({key: selectedStateObj.info.content.id ,value: selectedStateObj})
+			setPhaseItemList(newList)
 		}
 	}, [state.repoFileData, selectedState, stateRegionsFullList, setInitialPhaseItems, setPhaseItemList])
 
