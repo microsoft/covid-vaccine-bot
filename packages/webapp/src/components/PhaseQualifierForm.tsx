@@ -8,6 +8,7 @@ import {
 	DirectionalHint,
 	TextField,
 	IDetailsRowProps,
+	FontIcon,
 } from '@fluentui/react'
 import { observer } from 'mobx-react-lite'
 import { useCallback, useState, useRef } from 'react'
@@ -50,6 +51,7 @@ export default observer(function PhaseQualiferForm(
 		getPhaseQualifierItemsByKey(selectedState, rowItems.item.tagKey)
 	)
 
+	let overrideIconFlag = false;
 	let moreInfoKey = rowItems.item.moreInfoKey
 	if(isRegion) {
 		const regionPhases = rowItems.item.location.value.vaccination.content.phases
@@ -57,6 +59,7 @@ export default observer(function PhaseQualiferForm(
 		if (currPhase){
 			const currQualification = currPhase?.qualifications.find((qualification: { question: any }) => qualification.question === rowItems.item.qualifierId)
 			if (currQualification) {
+				overrideIconFlag = true
 				moreInfoKey = currQualification.moreInfoText
 			}
 		}
@@ -151,6 +154,11 @@ export default observer(function PhaseQualiferForm(
 			style={{ pointerEvents: isEditable ? 'unset' : 'none' }}
 		>
 			<div className="mainRow">
+				<FontIcon
+					iconName="InfoSolid"
+					className="infoIcon"
+					style={{visibility: overrideIconFlag ? 'visible': 'hidden'}}
+				/>
 				<Dropdown
 					options={phaseTagItems.current}
 					defaultSelectedKey={rowItems.item.tagKey}
