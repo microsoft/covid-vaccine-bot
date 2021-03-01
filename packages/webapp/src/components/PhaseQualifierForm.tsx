@@ -17,6 +17,7 @@ import {
 	getPhaseMoreInfoItems,
 	getPhaseMoreInfoTextByKey,
 	getPhaseQualifierItemsByKey,
+	getPhaseMoreInfoUrl
 } from '../selectors/phaseSelectors'
 
 import './PhaseQualifierForm.scss'
@@ -66,8 +67,9 @@ export default observer(function PhaseQualiferForm(
 	)
 
 	const [moreInfoUrl, setMoreInfoUrl] = useState<string>(
-		rowItems.item.moreInfoUrl
+		getPhaseMoreInfoUrl(isRegion, rowItems)
 	)
+
 	const changedItem = useRef<any>(rowItems.item)
 	changedItem.current.moreInfoContent = moreInfoText
 
@@ -94,6 +96,8 @@ export default observer(function PhaseQualiferForm(
 		},
 		[phaseQualifierItems, rowItems]
 	)
+
+	
 
 	const onQualifierChange = useCallback(
 		(_event, option) => {

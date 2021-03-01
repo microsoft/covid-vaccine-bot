@@ -48,7 +48,19 @@ export const getPhaseMoreInfoTextByKey = (selectedState?: any, selectedKey?: any
 
     return ''
 }
-
+export const getPhaseMoreInfoUrl = (isRegion:boolean, rowItems:any) => {
+        if(isRegion){
+        const regionPhases = rowItems.item.location.value.vaccination.content.phases
+        const currPhase = regionPhases?.find((phase: { id: any }) => phase.id === rowItems.item.groupId)
+        if (currPhase){
+            const currQualification = currPhase?.qualifications.find((qualification: { question: any }) => qualification.question === rowItems.item.qualifierId)
+            if (currQualification) {
+                return currQualification.moreInfoUrl 
+            }
+        }
+        }
+        return rowItems.item.moreInfoUrl
+    }
 const getCustomStrings = (selectedState?: any, keyFilter?: string) => {
     const { globalFileData, currentLanguage } = getAppStore();
     const qualifierList: any[] = selectedState
