@@ -10,12 +10,21 @@ import App from './components/App'
 import './orchestrators/authOrchestrators'
 import './orchestrators/repoOrchestrators'
 
-initializeIcons()
-ReactDOM.render(
-	<React.StrictMode>
-		<Router>
-			<App />
-		</Router>
-	</React.StrictMode>,
-	document.getElementById('root')
-)
+function render() {
+	try {
+		const basePath = process.env.REACT_APP_BASE_PATH
+		initializeIcons()
+		ReactDOM.render(
+			<React.StrictMode>
+				<Router basename={basePath}>
+					<App />
+				</Router>
+			</React.StrictMode>,
+			document.getElementById('root')
+		)
+	} catch (err) {
+		console.error('error rendering app', err)
+	}
+}
+
+render()
