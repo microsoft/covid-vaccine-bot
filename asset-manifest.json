@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.348009f0.chunk.css",
-    "main.js": "/static/js/main.c170f08d.chunk.js",
-    "main.js.map": "/static/js/main.c170f08d.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.932d83a0.js",
-    "runtime-main.js.map": "/static/js/runtime-main.932d83a0.js.map",
-    "static/js/2.f5a2e533.chunk.js": "/static/js/2.f5a2e533.chunk.js",
-    "static/js/2.f5a2e533.chunk.js.map": "/static/js/2.f5a2e533.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.348009f0.chunk.css.map": "/static/css/main.348009f0.chunk.css.map",
-    "static/js/2.f5a2e533.chunk.js.LICENSE.txt": "/static/js/2.f5a2e533.chunk.js.LICENSE.txt",
-    "static/js/main.c170f08d.chunk.js.LICENSE.txt": "/static/js/main.c170f08d.chunk.js.LICENSE.txt"
+    "main.css": "/covid-vaccine-bot/static/css/main.348009f0.chunk.css",
+    "main.js": "/covid-vaccine-bot/static/js/main.c170f08d.chunk.js",
+    "main.js.map": "/covid-vaccine-bot/static/js/main.c170f08d.chunk.js.map",
+    "runtime-main.js": "/covid-vaccine-bot/static/js/runtime-main.82e5142f.js",
+    "runtime-main.js.map": "/covid-vaccine-bot/static/js/runtime-main.82e5142f.js.map",
+    "static/js/2.a25da4ea.chunk.js": "/covid-vaccine-bot/static/js/2.a25da4ea.chunk.js",
+    "static/js/2.a25da4ea.chunk.js.map": "/covid-vaccine-bot/static/js/2.a25da4ea.chunk.js.map",
+    "index.html": "/covid-vaccine-bot/index.html",
+    "static/css/main.348009f0.chunk.css.map": "/covid-vaccine-bot/static/css/main.348009f0.chunk.css.map",
+    "static/js/2.a25da4ea.chunk.js.LICENSE.txt": "/covid-vaccine-bot/static/js/2.a25da4ea.chunk.js.LICENSE.txt",
+    "static/js/main.c170f08d.chunk.js.LICENSE.txt": "/covid-vaccine-bot/static/js/main.c170f08d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.932d83a0.js",
-    "static/js/2.f5a2e533.chunk.js",
+    "static/js/runtime-main.82e5142f.js",
+    "static/js/2.a25da4ea.chunk.js",
     "static/css/main.348009f0.chunk.css",
     "static/js/main.c170f08d.chunk.js"
   ]
