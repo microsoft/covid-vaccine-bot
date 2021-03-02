@@ -20,7 +20,9 @@ import {
 	modifyMoreInfoLinks,
 	setActivePhase,
 	updateQualifier,
-	addQualifier
+	addQualifier,
+	removeQualifier,
+	removePhase
 } from '../mutators/repoMutators'
 
 import './Locations.scss'
@@ -67,6 +69,7 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 			if(isRegion && regionObj.vaccination.content.phases){
 				phaseObj = regionObj.vaccination.content.phases
 			}
+
 
 			phaseObj.forEach((phase: any) => {
 				const isCollapsed: boolean = !isRegion && value.value.id !== phase.id
@@ -181,61 +184,54 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 		[phaseGroupItems, phaseGroup]
 	)
 
-	const onRemoveRowItem = useCallback(
-		(item: any) => {
-			const newPhaseGroupItems = phaseGroupItems.filter(
-				(groupItem) => groupItem.key !== item.key
-			)
+	const onRemoveRowItem = (item: any) => {
 
-			const newPhaseGroup: any[] = []
-			phaseGroup.forEach((group) => {
-				newPhaseGroup.push({
-					...group,
-					...{
-						startIndex: newPhaseGroupItems.findIndex(
-							(i) => i.groupId === group.data.keyId
-						),
-						count: newPhaseGroupItems.filter(
-							(i) => i.groupId === group.data.keyId
-						).length,
-					},
-				})
+		removeQualifier({
+				locationKey: selectedState.key,
+				item: item,
+				regionInfo: isRegion ? value : null,
 			})
+	}
 
-			setPhaseGroup(newPhaseGroup)
-			setPhaseGroupItems(newPhaseGroupItems)
-		},
-		[phaseGroupItems, phaseGroup]
-	)
+	const onRemovePhaseGroupClick = (phaseId: any) => {
 
-	const onRemovePhaseGroupClick = useCallback(
-		(phaseId: any) => {
-			const newPhaseGroupItems = phaseGroupItems.filter(
-				(groupItem) => groupItem.groupId !== phaseId
-			)
+		removePhase({
+				locationKey: selectedState.key,
+				phaseId: phaseId,
+				regionInfo: isRegion ? value : null,
+			})
+	}
 
-			const newPhaseGroup: any[] = []
-			phaseGroup
-				.filter((group) => group.data.keyId !== phaseId)
-				.forEach((group) => {
-					newPhaseGroup.push({
-						...group,
-						...{
-							startIndex: newPhaseGroupItems.findIndex(
-								(i) => i.groupId === group.data.keyId
-							),
-							count: newPhaseGroupItems.filter(
-								(i) => i.groupId === group.data.keyId
-							).length,
-						},
-					})
-				})
 
-			setPhaseGroup(newPhaseGroup)
-			setPhaseGroupItems(newPhaseGroupItems)
-		},
-		[phaseGroupItems, phaseGroup]
-	)
+
+	// const onRemovePhaseGroupClick = useCallback(
+	// 	(phaseId: any) => {
+	// 		const newPhaseGroupItems = phaseGroupItems.filter(
+	// 			(groupItem) => groupItem.groupId !== phaseId
+	// 		)
+
+	// 		const newPhaseGroup: any[] = []
+	// 		phaseGroup
+	// 			.filter((group) => group.data.keyId !== phaseId)
+	// 			.forEach((group) => {
+	// 				newPhaseGroup.push({
+	// 					...group,
+	// 					...{
+	// 						startIndex: newPhaseGroupItems.findIndex(
+	// 							(i) => i.groupId === group.data.keyId
+	// 						),
+	// 						count: newPhaseGroupItems.filter(
+	// 							(i) => i.groupId === group.data.keyId
+	// 						).length,
+	// 					},
+	// 				})
+	// 			})
+
+	// 		setPhaseGroup(newPhaseGroup)
+	// 		setPhaseGroupItems(newPhaseGroupItems)
+	// 	},
+	// 	[phaseGroupItems, phaseGroup]
+	// )
 	const onSetActivePhase = (phaseId: string) => {
 		setActivePhase({
 			locationKey: selectedState.key,
@@ -363,9 +359,7 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 	}
 
 	const onChangeRowItemQualifier = (currentItem: any, initItem: any) => {
-		console.log(currentItem,initItem)
 		if(initItem.qualifierId != "c19.eligibility.question/new_qualifier"){
-			console.log("update quals")
 			updateQualifier({
 				oldId: initItem.qualifierId,
 				locationKey: selectedState.key,
@@ -374,7 +368,6 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 			})
 		}
 		else {
-			console.log("add quals")
 			addQualifier({
 				locationKey: selectedState.key,
 				item: currentItem,

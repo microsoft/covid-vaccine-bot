@@ -23,6 +23,7 @@ export const getAppState = (): AppState => {
 		toggleAddLocation: false,
 		toggleQualifier: false,
 		isEditable: true,
+		pendingChanges: false
 	}
 }
 
