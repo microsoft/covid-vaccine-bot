@@ -68,7 +68,7 @@ export default observer(function QualifierPanel() {
 			})
 
 			// open the first group:
-			tempQualifierGroup[0].isCollapsed = true
+			//tempQualifierGroup[0].isCollapsed = false
 
 			setQualifierGroup(tempQualifierGroup)
 			setQualifierGroupItems(tempQualifierGroupItems)

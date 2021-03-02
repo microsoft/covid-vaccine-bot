@@ -25,13 +25,17 @@ export interface AddQualifierFormProp {
 const setInitialData = (item: any) => {
     if (item) {
         return {
-            tagKey: item.tagKey,
+            tagKey: item.key.split('/')[1].split('.')[0],
+            key: item.key,
             qualifier: item.text,
+            isNew: false
         }
     } else {
         return {
             tagKey: '',
+            key: '',
             qualifier: '',
+            isNew: true
         }
     }
 }
@@ -43,18 +47,16 @@ export default observer(function AddQualifierForm(props: AddQualifierFormProp) {
     const globalQualifiersList = useRef<string[]>(getGlobalQualifierValidationTexts())
     const [hasError, setHasError] = useState<boolean>(false)
 
-    console.log(item)
-
 	const handleTagChange = useCallback(
 		(_ev: any, item?: IDropdownOption) => {
-			fieldChanges.current = {
-				...fieldChanges.current,
-				...{
-					tagKey: item?.key,
-				},
-			}
+            fieldChanges.current = {
+                ...fieldChanges.current,
+                ...{
+                    tagKey: item?.key,
+                },
+            }
 
-			setFormData({ ...formData, ...fieldChanges.current })
+            setFormData({ ...formData, ...fieldChanges.current })
 		},
 		[formData, fieldChanges]
 	)
@@ -106,6 +108,7 @@ export default observer(function AddQualifierForm(props: AddQualifierFormProp) {
                         placeholder="Tag"
                         options={tagsOptions}
                         onChange={handleTagChange}
+                        disabled={!formData.isNew}
                     />
                     <div></div>
                 </div>

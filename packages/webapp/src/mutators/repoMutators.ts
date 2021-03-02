@@ -470,37 +470,44 @@ export const setActivePhase = mutatorAction(
 
 	})
 
-export const updateGlobalQualifiers = mutatorAction('updateGlobalQualifiers', (newItem: any | undefined) => {
-	if (newItem) {
+export const updateGlobalQualifiers = mutatorAction('updateGlobalQualifiers', (item: any | undefined) => {
+	if (item) {
 		const store = getAppStore()
 		const { customStrings } = store.globalFileData
-
-		const qualifierKeyBank = newItem.qualifier.toLowerCase().replace(/[^A-Za-z0-9]/g,'_').split(' ') as string[]
 		let qualifierKey = ''
 
-		const customStringKeys = Object.keys(customStrings.content)
+		if (item.isNew) {
+			const qualifierKeyBank = item.qualifier.toLowerCase().replace(/[^A-Za-z0-9]/g,'_').split(' ') as string[]
 
-		let qKey = ''
-		for (let i = 0; i < qualifierKeyBank.length; i++) {
-			if (i == 0) {
-				qKey = qualifierKeyBank[0]
-			} else {
-				qKey = `${qKey}_${qualifierKeyBank[i]}`
+			const customStringKeys = Object.keys(customStrings.content)
+
+			let qKey = ''
+			for (let i = 0; i < qualifierKeyBank.length; i++) {
+				if (i == 0) {
+					qKey = qualifierKeyBank[0]
+				} else {
+					qKey = `${qKey}_${qualifierKeyBank[i]}`
+				}
+
+				qualifierKey = `c19.eligibility.question/${item.tagKey}.${qKey}`
+
+				if (!customStringKeys.includes(qualifierKey)) {
+					break;
+				}
 			}
 
-			qualifierKey = `c19.eligibility.question/${newItem.tagKey}.${qKey}`
-
-			if (!customStringKeys.includes(qualifierKey)) {
-				break;
-			}
+			qualifierKey = qualifierKey.endsWith('_') ? qualifierKey.substr(0, qualifierKey.length - 1) : qualifierKey
+		} else {
+			qualifierKey = item.key
 		}
 
-		qualifierKey = qualifierKey.endsWith('_') ? qualifierKey.substr(0, qualifierKey.length - 1) : qualifierKey
-
 		store.globalFileData.customStrings.content[qualifierKey] = {
-			[store.currentLanguage]: newItem.qualifier
+			...store.globalFileData.customStrings.content[qualifierKey],
+			[store.currentLanguage]: item.qualifier
 		}
 
 		store.globalFileData = {...store.globalFileData}
+
+		console.log(store.globalFileData.customStrings.content)
 	}
 })
