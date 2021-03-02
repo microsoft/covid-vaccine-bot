@@ -18,6 +18,11 @@ jobs:
       - run: yarn install
       - run: yarn build:all
       - run: yarn build:webapp
+        env:
+          FIREBASE_KEY: ${{ secrets.FIREBASE_KEY }}
+          FIREBASE_AUTH_DOMAIN: ${{ secrets.FIREBASE_AUTH_DOMAIN }}
+          REPO_OWNER: microsoft
+          REPO_NAME: covid-vaccine-bot
 
       - name: deploy
         uses: peaceiris/actions-gh-pages@v3
