@@ -29,6 +29,7 @@ import QualifierPanel from './QualifierPanel'
 import Translate from './Translate'
 import { useCallback } from 'react'
 import { useBoolean } from '@uifabric/react-hooks'
+import Review from './Review'
 
 import './App_reset_styles.scss'
 import './App.scss'
@@ -146,7 +147,7 @@ export default observer(function App() {
 													</PivotItem>
 													{state.pendingChanges && (
 													<PivotItem headerText="Review">
-														<div> Review tab content </div>
+														<Review />
 													</PivotItem>
 													)}
 												</Pivot>

@@ -113,8 +113,9 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 
 	const onLocationFormSubmit = useCallback(
 		(locationData) => {
-			dismissLocationModal()
-			updateLocationList(locationData, false)
+			console.log(locationData)
+			// dismissLocationModal()
+			// updateLocationList(locationData, false)
 		},
 		[dismissLocationModal]
 	)
