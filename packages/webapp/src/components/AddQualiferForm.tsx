@@ -46,6 +46,7 @@ export default observer(function AddQualifierForm(props: AddQualifierFormProp) {
     const fieldChanges = useRef<any>(formData)
     const globalQualifiersList = useRef<string[]>(getGlobalQualifierValidationTexts())
     const [hasError, setHasError] = useState<boolean>(false)
+    const [isAddingTag, setIsAddingTag] = useState<boolean>(false)
 
 	const handleTagChange = useCallback(
 		(_ev: any, item?: IDropdownOption) => {
@@ -88,11 +89,38 @@ export default observer(function AddQualifierForm(props: AddQualifierFormProp) {
 
     }, [globalQualifiersList, hasError])
 
+    const isTagDuplicate = useCallback((newTag: string) => {
+        const newTagKey = newTag.toLowerCase().replaceAll(' ', '_')
+        const tagKeys = tagsOptions.map(t => t.key)
+        if (tagKeys.includes(newTagKey)) {
+            setHasError(true)
+            return 'Tag already exist, please revise.'
+        } else {
+            setHasError(false)
+            return ''
+        }
+    }, [hasError, tagsOptions])
 
     const disableSubmit = useCallback((): boolean => {
         if (hasError) return true
         return formData.qualifier === ''
     },[formData, hasError])
+
+    const createNewTag = useCallback(() => {
+        const newTagKey = formData.tagKey.replaceAll(' ', '_')
+        tagsOptions.push({key: newTagKey, text: formData.tagKey})
+        tagsOptions.sort((a,b) => (a.text > b.text) ? 1 : -1)
+
+        fieldChanges.current = {
+            ...fieldChanges.current,
+            ...{
+                tagKey: newTagKey,
+            },
+        }
+
+        setIsAddingTag(false)
+        setFormData({ ...formData, ...fieldChanges.current })
+    }, [formData, tagsOptions, fieldChanges, setIsAddingTag])
 
 	const formTitle = item ? 'Edit Qualifier' : 'New Qualifier'
 
@@ -103,13 +131,30 @@ export default observer(function AddQualifierForm(props: AddQualifierFormProp) {
             </div>
             <div className="modalBody">
                 <div className="tagRow">
-                    <Dropdown
-                        selectedKey={formData.tagKey}
-                        placeholder="Tag"
-                        options={tagsOptions}
-                        onChange={handleTagChange}
-                        disabled={!formData.isNew}
-                    />
+                    {!isAddingTag ? (
+                        <>
+                            <Dropdown
+                                selectedKey={formData.tagKey}
+                                placeholder="Tag"
+                                options={tagsOptions}
+                                onChange={handleTagChange}
+                                disabled={!formData.isNew}
+                            />
+                            <PrimaryButton text="New tag" onClick={() => setIsAddingTag(true)}/>
+                        </>
+                    ):(
+                        <>
+                            <TextField
+                                name="tagKey"
+                                placeholder="Type new tag"
+                                onChange={handleTextChange}
+                                validateOnLoad={false}
+                                onGetErrorMessage={() => isTagDuplicate(formData.tagKey)}
+                            />
+                            <PrimaryButton text="Ok" onClick={() => createNewTag()}/>
+                            <DefaultButton text="Cancel" onClick={() => setIsAddingTag(false)}/>
+                        </>
+                    )}
                     <div></div>
                 </div>
                 <TextField
@@ -121,7 +166,7 @@ export default observer(function AddQualifierForm(props: AddQualifierFormProp) {
                     multiline={true}
                     autoAdjustHeight={false}
                     resizable={false}
-                    disabled={!formData.tagKey}
+                    disabled={!formData.tagKey || isAddingTag}
                     validateOnLoad={false}
                     onGetErrorMessage={() => isDuplicate(formData.qualifier)}
                 />

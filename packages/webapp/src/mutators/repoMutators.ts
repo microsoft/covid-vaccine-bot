@@ -477,7 +477,11 @@ export const updateGlobalQualifiers = mutatorAction('updateGlobalQualifiers', (i
 		let qualifierKey = ''
 
 		if (item.isNew) {
-			const qualifierKeyBank = item.qualifier.toLowerCase().replace(/[^A-Za-z0-9]/g,'_').split(' ') as string[]
+			const qualifierKeyBank = item.qualifier
+				.toLowerCase()
+				.replace(/[^A-Za-z0-9]/g,'_')
+				.split('_')
+				.filter((i:string) => i) as string[]
 
 			const customStringKeys = Object.keys(customStrings.content)
 
@@ -488,8 +492,7 @@ export const updateGlobalQualifiers = mutatorAction('updateGlobalQualifiers', (i
 				} else {
 					qKey = `${qKey}_${qualifierKeyBank[i]}`
 				}
-
-				qualifierKey = `c19.eligibility.question/${item.tagKey}.${qKey}`
+				qualifierKey = `c19.eligibility.question/${item.tagKey.toLowerCase()}.${qKey}`
 
 				if (!customStringKeys.includes(qualifierKey)) {
 					break;

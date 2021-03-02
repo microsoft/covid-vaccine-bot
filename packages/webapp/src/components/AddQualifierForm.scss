@@ -7,7 +7,18 @@
 
         .ms-Dropdown-container {
             flex: 2;
+			margin-right: 10px;
+			margin-bottom: 10px;
         }
+
+		.ms-TextField {
+			margin-right: 5px;
+			flex: 4;
+		}
+
+		button {
+			margin: 0 5px;
+		}
 
         div {
             flex: 2;
