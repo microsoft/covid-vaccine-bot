@@ -9,13 +9,21 @@ import {
 	FontIcon,
 	IGroupDividerProps,
 	IDetailsListProps,
-	IDetailsRowProps
+	IDetailsRowProps,
 } from '@fluentui/react'
 import { observer } from 'mobx-react-lite'
 import { useState, useEffect, useCallback } from 'react'
 import { getAppStore } from '../store/store'
 import PhaseQualifierForm from './PhaseQualifierForm'
-import {modifyStateStrings, modifyMoreInfoLinks, setActivePhase} from '../mutators/repoMutators'
+import {
+	modifyStateStrings,
+	modifyMoreInfoLinks,
+	setActivePhase,
+	updateQualifier,
+	addQualifier,
+	removeQualifier,
+	removePhase
+} from '../mutators/repoMutators'
 
 import './Locations.scss'
 
@@ -53,8 +61,14 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 			const tempPhaseGroup: IGroup[] = []
 			const tempPhaseGroupItems: any[] = []
 			const currentStateObj: any = repoFileData[selectedState.key]
-			const phaseObj = currentStateObj.vaccination.content.phases
-			const regionObj = isRegion ? repoFileData[selectedState.key].regions[value.key] : null
+			let phaseObj = currentStateObj.vaccination.content.phases
+			const regionObj = isRegion
+				? repoFileData[selectedState.key].regions[value.key]
+				: null
+
+			if(isRegion && regionObj.vaccination.content.phases){
+				phaseObj = regionObj.vaccination.content.phases
+			}
 
 
 			phaseObj.forEach((phase: any) => {
@@ -97,7 +111,7 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 					}
 
 					tempPhaseGroupItems.push({
-						key: phase.id + '-' + keyId,
+						key: phase.id + '-' + keyId + '-' + tempPhaseGroupItems.length,
 						text: label,
 						moreInfoKey: qualification?.moreInfoText
 							? qualification.moreInfoText.toLowerCase()
@@ -107,7 +121,7 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 						qualifierId: keyId,
 						tagKey: keyId.split('/')[1].split('.')[0],
 						groupId: phase.id,
-						location: value
+						location: value,
 					})
 				})
 			})
@@ -134,6 +148,7 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 				qualifierId: 'c19.eligibility.question/new_qualifier',
 				tagKey: 'new_tagKey',
 				groupId: phaseId,
+				location: value,
 			}
 
 			for (let i = 0; i < phaseGroupItems.length; i++) {
@@ -169,64 +184,30 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 		[phaseGroupItems, phaseGroup]
 	)
 
-	const onRemoveRowItem = useCallback(
-		(item: any) => {
-			const newPhaseGroupItems = phaseGroupItems.filter(
-				(groupItem) => groupItem.key !== item.key
-			)
+	const onRemoveRowItem = (item: any) => {
 
-			const newPhaseGroup: any[] = []
-			phaseGroup.forEach((group) => {
-				newPhaseGroup.push({
-					...group,
-					...{
-						startIndex: newPhaseGroupItems.findIndex(
-							(i) => i.groupId === group.data.keyId
-						),
-						count: newPhaseGroupItems.filter(
-							(i) => i.groupId === group.data.keyId
-						).length,
-					},
-				})
+		removeQualifier({
+				locationKey: selectedState.key,
+				item: item,
+				regionInfo: isRegion ? value : null,
 			})
+	}
 
-			setPhaseGroup(newPhaseGroup)
-			setPhaseGroupItems(newPhaseGroupItems)
-		},
-		[phaseGroupItems, phaseGroup]
-	)
+	const onRemovePhaseGroupClick = (phaseId: any) => {
 
-	const onRemovePhaseGroupClick = useCallback(
-		(phaseId: any) => {
-			const newPhaseGroupItems = phaseGroupItems.filter(
-				(groupItem) => groupItem.groupId !== phaseId
-			)
+		removePhase({
+				locationKey: selectedState.key,
+				phaseId: phaseId,
+				regionInfo: isRegion ? value : null,
+			})
+	}
 
-			const newPhaseGroup: any[] = []
-			phaseGroup
-				.filter((group) => group.data.keyId !== phaseId)
-				.forEach((group) => {
-					newPhaseGroup.push({
-						...group,
-						...{
-							startIndex: newPhaseGroupItems.findIndex(
-								(i) => i.groupId === group.data.keyId
-							),
-							count: newPhaseGroupItems.filter(
-								(i) => i.groupId === group.data.keyId
-							).length,
-						},
-					})
-				})
-
-			setPhaseGroup(newPhaseGroup)
-			setPhaseGroupItems(newPhaseGroupItems)
-		},
-		[phaseGroupItems, phaseGroup]
-	)
-	const onSetActivePhase = ( phaseId:string ) => {
-		console.log("Here",{'locationKey':selectedState.key, 'phaseId':phaseId, 'regionInfo': ( isRegion ? value : null ) })
-		setActivePhase({'locationKey':selectedState.key, 'phaseId':phaseId, 'regionInfo': ( isRegion ? value : null ) })
+	const onSetActivePhase = (phaseId: string) => {
+		setActivePhase({
+			locationKey: selectedState.key,
+			phaseId: phaseId,
+			regionInfo: isRegion ? value : null,
+		})
 	}
 
 	const onRenderHeader: IDetailsGroupRenderProps['onRenderHeader'] = (
@@ -281,7 +262,7 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 										Active Phase
 									</div>
 								) : (
-									<div 
+									<div
 										className="activeGroup"
 										onClick={() => onSetActivePhase(group.data.keyId)}
 									>
@@ -319,29 +300,50 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 		}
 	}
 
-	const onChangeRowItemText = (currentItem: any, initItem:any) =>{
-
-		if(initItem.moreInfoUrl?.toLowerCase() !== currentItem.moreInfoUrl?.toLowerCase()){
-			console.log(currentItem,initItem)
-			modifyMoreInfoLinks({'locationKey':selectedState.key, 'item':currentItem, 'regionInfo': ( isRegion ? value : null ) })
+	const onChangeRowItemText = (currentItem: any, initItem: any) => {
+		if (
+			initItem.moreInfoUrl?.toLowerCase() !==
+			currentItem.moreInfoUrl?.toLowerCase()
+		) {
+			modifyMoreInfoLinks({
+				locationKey: selectedState.key,
+				item: currentItem,
+				regionInfo: isRegion ? value : null,
+			})
 			console.log(repoFileData)
-
-		}
-		else if(initItem.moreInfoContent !== currentItem.moreInfoContent) {
-			let calcInfoKey = currentItem.qualifierId.replace("question","moreinfo") 
+		} else if (initItem.moreInfoContent !== currentItem.moreInfoContent) {
+			let calcInfoKey = currentItem.qualifierId.replace('question', 'moreinfo')
 			calcInfoKey += `.${selectedState.value.info.content.metadata.code_alpha.toLowerCase()}`
-			if(isRegion){
+			if (isRegion) {
 				calcInfoKey += `.${value.name.toLowerCase()}`
 			}
 			calcInfoKey += `.${currentItem.groupId}`
 
-			modifyStateStrings({ 'infoKey': calcInfoKey, 'locationKey':selectedState.key, 'item':currentItem, 'regionInfo': ( isRegion ? value : null ) })
+			modifyStateStrings({
+				infoKey: calcInfoKey,
+				locationKey: selectedState.key,
+				item: currentItem,
+				regionInfo: isRegion ? value : null,
+			})
 		}
-		
 	}
 
-	const onChangeRowItemQualifier = (currentItem: any, initItem:any) =>{
-		console.log(currentItem, initItem)
+	const onChangeRowItemQualifier = (currentItem: any, initItem: any) => {
+		if(initItem.qualifierId != "c19.eligibility.question/new_qualifier"){
+			updateQualifier({
+				oldId: initItem.qualifierId,
+				locationKey: selectedState.key,
+				item: currentItem,
+				regionInfo: isRegion ? value : null,
+			})
+		}
+		else {
+			addQualifier({
+				locationKey: selectedState.key,
+				item: currentItem,
+				regionInfo: isRegion ? value : null,
+			})
+		}
 	}
 
 	const onRenderRow: IDetailsListProps['onRenderRow'] = (props) => {
@@ -360,8 +362,6 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 		}
 		return null
 	}
-
-
 
 	return (
 		<div className="phaseGridContainer">

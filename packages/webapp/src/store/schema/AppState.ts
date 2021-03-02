@@ -19,4 +19,5 @@ export interface AppState {
 	toggleQualifier: boolean
 	toggleAddLocation: boolean
 	isEditable: boolean
+	pendingChanges: boolean
 }

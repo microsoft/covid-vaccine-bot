@@ -3,12 +3,14 @@
  * Licensed under the MIT license. See LICENSE file in the project.
  */
 import {
+	DefaultButton,
 	Dropdown,
 	IconButton,
 	Persona,
 	PersonaSize,
 	Pivot,
 	PivotItem,
+	MessageBar
 } from '@fluentui/react'
 import { observer } from 'mobx-react-lite'
 import { Switch, Route, Redirect } from 'react-router-dom'
@@ -41,6 +43,7 @@ export default observer(function App() {
 	const languageKeys = 'en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th'.split(
 		','
 	)
+
 
 	const languageOptions = languageKeys.map((key) => {
 		return {
@@ -123,15 +126,31 @@ export default observer(function App() {
 											<div className="appBodyLeft">
 												<Pivot onLinkClick={togglePanel}>
 													<PivotItem headerText="Dashboard">
+													{state.pendingChanges && (
+														<MessageBar styles={{root:{margin:"10px 5px"}}}>
+														    You have pending changes, please click on the review tab to submit these changes.
+														  </MessageBar>
+														  )}
 														<Dashboard />
 													</PivotItem>
 													<PivotItem headerText="Locations">
+													{state.pendingChanges && (
+														<MessageBar styles={{root:{margin:"10px 5px"}}}>
+														    You have pending changes, please click on the review tab to submit these changes.
+														  </MessageBar>
+														  )}
 														<Locations />
 													</PivotItem>
 													<PivotItem headerText="Translate">
 														<Translate />
 													</PivotItem>
+													{state.pendingChanges && (
+													<PivotItem headerText="Review">
+														<div> Review tab content </div>
+													</PivotItem>
+													)}
 												</Pivot>
+
 											</div>
 											{state.isEditable && isPanelOpen && (
 												<div className="appBodyRight">

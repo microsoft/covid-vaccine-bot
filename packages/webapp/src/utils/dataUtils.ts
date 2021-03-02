@@ -25,7 +25,7 @@ export const createLocationDataObj = (locationData: any) => {
 			content: {
 				id: locationName,
 				metadata: {
-					code_alpha: '',
+					code_alpha: locationName,
 					code_numeric: 0,
 				},
 				name: locationData.details,
@@ -37,7 +37,7 @@ export const createLocationDataObj = (locationData: any) => {
 			type: 'info',
 			url: ''
 		},
-		string: {},
+		strings: { content : {}},
 		vaccination: {
 			content: {
 				activePhase: '',
@@ -72,7 +72,6 @@ export const createLocationDataObj = (locationData: any) => {
 						description: ''
 					}
 				},
-				phases: []
 			},
 			name: 'vaccination.json',
 			path: `${locationName}/vaccination.json`,
