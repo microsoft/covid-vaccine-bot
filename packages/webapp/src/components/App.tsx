@@ -142,9 +142,10 @@ export default observer(function App() {
 														  )}
 														<Locations />
 													</PivotItem>
+													{false && (
 													<PivotItem headerText="Translate">
 														<Translate />
-													</PivotItem>
+													</PivotItem>)}
 													{state.pendingChanges && (
 													<PivotItem headerText="Review">
 														<Review />

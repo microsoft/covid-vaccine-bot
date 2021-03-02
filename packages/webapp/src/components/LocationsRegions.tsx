@@ -18,7 +18,7 @@ import { toProperCase } from '../utils/textUtils'
 import LocationForm from './LocationForm'
 import LocationsPhases from './LocationsPhases'
 import PhaseForm from './PhaseForm'
-import { updateLocationList, addPhase, updatePhase } from '../mutators/repoMutators'
+import { updateLocationList, addPhase, updatePhase, updateLocationData } from '../mutators/repoMutators'
 
 import './Locations.scss'
 
@@ -114,7 +114,7 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 				const valObj = value as any
 				tempList.push({
 					key: key,
-					name: toProperCase(key),
+					name: toProperCase(valObj.info.content.name),
 					value: value,
 					phase: valObj.vaccination.content.activePhase
 						? valObj.vaccination.content.activePhase
@@ -139,9 +139,15 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 	)
 
 	const onLocationFormSubmit = useCallback(
-		(locationData) => {
+		(locationData, prevItem) => {
 			dismissLocationModal()
+			if(!prevItem){
 			updateLocationList(locationData, true, selectedState)
+
+			}
+			else {
+			updateLocationData(locationData, true, prevItem, selectedState)
+			}
 		},
 		[dismissLocationModal, selectedState]
 	)

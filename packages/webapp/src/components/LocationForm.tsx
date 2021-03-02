@@ -20,7 +20,7 @@ import './LocationForm.scss'
 
 export interface LocationFormProp {
 	item?: any
-	onSubmit?: (locationData: any) => void
+	onSubmit?: (locationData: any, prevItem:any) => void
 	onCancel?: () => void
 	isRegion?: boolean
 }
@@ -34,17 +34,17 @@ const setInitialData = (item?: any, isRegion?: boolean) => {
 
 	if (item) {
 		const { info, vaccination } = item?.value || {}
-		const { info: vacInfo, scheduling_phone, eligibility_plan } =
+		const { info: vacInfo, scheduling_phone, eligibility_plan, workflow, scheduling, providers, eligibility } =
 			vaccination?.content?.links || {}
 
 		return {
 			details: info.content.name,
 			regionType: info.content.type,
 			info: vacInfo?.url || '',
-			workflow: '',
-			scheduling: '',
-			providers: '',
-			eligibility: '',
+			workflow: workflow?.url || '',
+			scheduling: scheduling?.url ||'',
+			providers: providers?.url || '',
+			eligibility: eligibility?.url || '',
 			eligibilityPlan: eligibility_plan?.url || '',
 			schedulingPhone: scheduling_phone?.text
 				? getStrings(item, scheduling_phone.text, isRegion)
@@ -188,7 +188,7 @@ export default observer(function LocationForm(props: LocationFormProp) {
 				/>
 			</div>
 			<div className="modalFooter">
-				<PrimaryButton text="Submit" disabled={!canSubmit()} onClick={() => onSubmit?.(formData)} />
+				<PrimaryButton text="Submit" disabled={!canSubmit()} onClick={() => onSubmit?.(formData, item)} />
 				<DefaultButton text="Cancel" onClick={() => onCancel?.()} />
 			</div>
 		</div>

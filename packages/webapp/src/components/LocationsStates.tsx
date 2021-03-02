@@ -16,7 +16,7 @@ import { observer } from 'mobx-react-lite'
 import { useState, useRef, useEffect, useCallback } from 'react'
 import { getAppStore } from '../store/store'
 import LocationForm from './LocationForm'
-import { updateLocationList } from '../mutators/repoMutators'
+import { updateLocationList,  updateLocationData } from '../mutators/repoMutators'
 
 import './Locations.scss'
 
@@ -112,10 +112,16 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 	)
 
 	const onLocationFormSubmit = useCallback(
-		(locationData) => {
-			console.log(locationData)
-			// dismissLocationModal()
-			// updateLocationList(locationData, false)
+		(locationData, prevItem) => {
+			dismissLocationModal()
+			if(!prevItem){
+				updateLocationList(locationData, false)
+
+			}
+			else {
+
+				updateLocationData(locationData, false, prevItem)
+			}
 		},
 		[dismissLocationModal]
 	)

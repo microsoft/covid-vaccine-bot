@@ -102,6 +102,107 @@ export const updateLocationList = mutatorAction(
 	}
 )
 
+export const updateLocationData = mutatorAction(
+	'updateLocationData',
+		(locationData: any, isRegion: boolean, prevItem:any, selectedState?: any) => {
+			if (locationData) {
+				const store = getAppStore()
+				store.pendingChanges = true
+				if (!isRegion) {
+
+					const location = store.repoFileData[prevItem.key]
+
+					store.globalFileData.cdcStateNames.content[
+						`cdc/${prevItem.key}/state_name`
+					] = {
+						'en-us': locationData.details,
+						'es-us': locationData.details,
+						'vi-vn': locationData.details,
+					}
+
+					location.info.content.name = locationData.details
+					const schedulingPhoneKey = `c19.link/scheduling.phone.${prevItem.value.info.content.metadata.code_alpha}`.toLowerCase()
+					location.strings.content[schedulingPhoneKey] = { [store.currentLanguage]:locationData.schedulingPhone}
+
+					location.vaccination.content.links = {
+									'eligibility': {
+										'url': locationData.eligibility
+									},
+									'eligibility_plan': {
+										'url': locationData.eligibilityPlan,
+									},
+									'info': {
+										'url': locationData.info,
+										'text': `cdc/${prevItem.key}/state_link`
+									},
+									'providers': {
+										'url': locationData.providers,
+										'text': 'c19.links/vax_providers'
+									},
+									'workflow': {
+										'url': locationData.workflow,
+										'text': 'c19.links/vax_quiz'
+									},
+									'scheduling': {
+										'url': locationData.scheduling,
+										'text': 'c19.links/schedule_vax'
+									},
+									'scheduling_phone': {
+										'url': `tel:${locationData.schedulingPhone}`,
+										'text': schedulingPhoneKey,
+										'description': ''
+									}
+								}
+
+				} else {
+					const location = store.repoFileData[selectedState.key]
+					const regionObj = location.regions[prevItem.key]
+					regionObj.info.content.name = locationData.details
+
+					const schedulingPhoneKey = `c19.link/scheduling.phone.${regionObj.info.content.id}`.toLowerCase()
+					location.strings.content[schedulingPhoneKey] = { [store.currentLanguage]:locationData.schedulingPhone}
+
+					regionObj.vaccination.content.links = {
+									'eligibility': {
+										'url': locationData.eligibility
+									},
+									'eligibility_plan': {
+										'url': locationData.eligibilityPlan,
+									},
+									'info': {
+										'url': locationData.info,
+										'text': `cdc/${selectedState.key}/state_link`
+									},
+									'providers': {
+										'url': locationData.providers,
+										'text': 'c19.links/vax_providers'
+									},
+									'workflow': {
+										'url': locationData.workflow,
+										'text': 'c19.links/vax_quiz'
+									},
+									'scheduling': {
+										'url': locationData.scheduling,
+										'text': 'c19.links/schedule_vax'
+									},
+									'scheduling_phone': {
+										'url': `tel:${locationData.schedulingPhone}`,
+										'text': schedulingPhoneKey,
+										'description': ''
+									}
+								}
+
+
+
+				}
+
+
+
+				store.repoFileData = { ...store.repoFileData }
+			}
+		}
+	)
+
 export const modifyStateStrings = mutatorAction(
 	'modifyStateStrings',
 	(data: any | undefined) => {
@@ -511,6 +612,5 @@ export const updateGlobalQualifiers = mutatorAction('updateGlobalQualifiers', (i
 
 		store.globalFileData = {...store.globalFileData}
 
-		console.log(store.globalFileData.customStrings.content)
 	}
 })

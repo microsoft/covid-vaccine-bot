@@ -8,7 +8,11 @@ export const getStateCustomStrings = (
 	selectedState: any,
 	keyFilter: string
 ) => {
-	return getCustomStrings(selectedState.value, keyFilter)
+	const returnVal = getCustomStrings(selectedState.value, keyFilter)
+	if(returnVal.length > 0)
+		return returnVal[0].text
+
+	return ''
 }
 
 export const getRegionCustomStrings = (
@@ -19,7 +23,11 @@ export const getRegionCustomStrings = (
 	const selectedState =
 		repoFileData?.[selectedRegion.value.info.path.split('/')[0]]
 
-	return getCustomStrings(selectedState, keyFilter)
+		const returnVal = getCustomStrings(selectedState, keyFilter)
+		if(returnVal.length > 0)
+			return returnVal[0].text
+
+		return ''
 }
 
 const getCustomStrings = (selectedState: any, keyFilter: string) => {
@@ -31,7 +39,6 @@ const getCustomStrings = (selectedState: any, keyFilter: string) => {
 				...Object.entries(globalFileData.customStrings.content),
 		  ]
 		: [...Object.entries(globalFileData.customStrings.content)]
-
 	const filteredList = keyFilter
 		? customStringsList.filter(([key, _value]: [string, any]) =>
 				key.includes(keyFilter.toLowerCase())
@@ -43,5 +50,5 @@ const getCustomStrings = (selectedState: any, keyFilter: string) => {
 			key: key,
 			text: value[currentLanguage],
 		}
-	})[0].text
+	})
 }

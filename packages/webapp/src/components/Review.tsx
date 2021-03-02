@@ -42,7 +42,6 @@ export default observer(function Review() {
 
 	setChangesList(tempChangesList)
 
-
 }, [state.initRepoFileData, state.repoFileData] )
 
 	console.log(changesList)
