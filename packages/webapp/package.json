@@ -1,5 +1,6 @@
 {
 	"name": "@covid-vax-bot/data-portal",
+	"homepage": "https://microsoft.github.io/covid-vaccine-bot",
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
