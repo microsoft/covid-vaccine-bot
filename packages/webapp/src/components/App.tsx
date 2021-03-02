@@ -119,7 +119,7 @@ export default observer(function App() {
 													</PivotItem>
 												</Pivot>
 											</div>
-											{state.toggleQualifier && (
+											{state.isEditable && (
 												<div className="appBodyRight">
 													<QualifierPanel />
 												</div>

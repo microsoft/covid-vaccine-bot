@@ -33,3 +33,14 @@
 		}
 	}
 }
+
+.addQualiferHeaderButton {
+	cursor: pointer;
+	margin: 10px 0;
+	display: flex;
+
+	.addQualifierIcon {
+		color: $ms-color-themePrimary;
+		margin-right: 5px;
+	}
+}

@@ -2,11 +2,14 @@
  * Copyright (c) Microsoft. All rights reserved.
  * Licensed under the MIT license. See LICENSE file in the project.
  */
-import { IGroup, DetailsList } from '@fluentui/react'
+import { IGroup, DetailsList, FontIcon, Modal, IDropdownOption } from '@fluentui/react'
 import { observer } from 'mobx-react-lite'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback, useRef } from 'react'
 import { getAppStore } from '../store/store'
 import { toProperCase } from '../utils/textUtils'
+import { useBoolean } from '@uifabric/react-hooks'
+import AddQualifierForm from './AddQualiferForm'
+import { updateGlobalQualifiers } from '../mutators/repoMutators'
 
 import './QualifierPanel.scss'
 
@@ -14,6 +17,10 @@ export default observer(function QualifierPanel() {
 	const { globalFileData, currentLanguage } = getAppStore()
 	const [qualifierGroup, setQualifierGroup] = useState<IGroup[]>([])
 	const [qualifierGroupItems, setQualifierGroupItems] = useState<any[]>([])
+	const [isAddQualifierModalOpen, { setTrue: openAddQualifierModal, setFalse: dismissAddQualifierModal }] = useBoolean(
+		false
+	)
+	const formItem = useRef<any>(null)
 
 	useEffect(() => {
 		if (globalFileData?.customStrings) {
@@ -61,7 +68,7 @@ export default observer(function QualifierPanel() {
 			})
 
 			// open the first group:
-			tempQualifierGroup[0].isCollapsed = false
+			tempQualifierGroup[0].isCollapsed = true
 
 			setQualifierGroup(tempQualifierGroup)
 			setQualifierGroupItems(tempQualifierGroupItems)
@@ -78,6 +85,23 @@ export default observer(function QualifierPanel() {
 		},
 	]
 
+	const onAddQualifierFormOpen = useCallback((item?: any) => {
+		formItem.current = item ?? null
+		openAddQualifierModal()
+	},[openAddQualifierModal])
+
+	const addQualifierSubmit = useCallback((newQualifier) => {
+		updateGlobalQualifiers(newQualifier)
+		dismissAddQualifierModal()
+	},[dismissAddQualifierModal])
+
+	const tagsOptions: IDropdownOption[] = qualifierGroup.map(tag => {
+		return {
+			key: tag.key,
+			text: tag.name
+		}
+	})
+
 	return (
 		<div className="qualifierPanelContainer">
 			<div className="panelHeader">
@@ -85,6 +109,16 @@ export default observer(function QualifierPanel() {
 			</div>
 			<div className="panelBody">
 				<section>
+					<div className="searchRow">
+						<div></div>
+							<div className="addQualiferHeaderButton" onClick={() => onAddQualifierFormOpen(null)}>
+								<FontIcon
+									iconName="CircleAdditionSolid"
+									className="addQualifierIcon"
+								/>
+								Add Qualifier
+							</div>
+					</div>
 					<DetailsList
 						items={qualifierGroupItems}
 						groups={qualifierGroup}
@@ -99,6 +133,17 @@ export default observer(function QualifierPanel() {
 					/>
 				</section>
 			</div>
+			<Modal
+				isOpen={isAddQualifierModalOpen}
+				isModeless={false}
+				isDarkOverlay={true}
+				isBlocking={false}>
+					<AddQualifierForm
+						tagsOptions={tagsOptions}
+						onSubmit={addQualifierSubmit}
+						onCancel={dismissAddQualifierModal}
+					/>
+			</Modal>
 		</div>
 	)
 })

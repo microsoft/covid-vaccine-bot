@@ -264,3 +264,36 @@ export const setActivePhase = mutatorAction(
 		}
 
 	})
+
+export const updateGlobalQualifiers = mutatorAction('updateGlobalQualifiers', (newItem: any | undefined) => {
+	if (newItem) {
+		const store = getAppStore()
+		const { customStrings } = store.globalFileData
+
+		const qualifierKeyBank = newItem.qualifier.toLowerCase().replace(/[^A-Za-z0-9]/g,'_').split(' ') as string[]
+		let qualifierKey = ''
+
+		const customStringKeys = Object.keys(customStrings.content)
+
+		let qKey = ''
+		for (let i = 0; i < qualifierKeyBank.length; i++) {
+			if (i == 0) {
+				qKey = qualifierKeyBank[0]
+			} else {
+				qKey = `${qKey}_${qualifierKeyBank[i]}`
+			}
+
+			qualifierKey = `c19.eligibility.question/${newItem.tagKey}.${qKey}`
+
+			if (!customStringKeys.includes(qualifierKey)) {
+				break;
+			}
+		}
+
+		store.globalFileData.customStrings.content[qualifierKey] = {
+			[store.currentLanguage]: newItem.qualifier
+		}
+
+		store.globalFileData = {...store.globalFileData}
+	}
+})

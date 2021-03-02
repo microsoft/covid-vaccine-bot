@@ -1,0 +1,16 @@
+@import '@fluentui/react/dist/sass/_References';
+
+.modalBody {
+    .tagRow {
+        display: flex;
+        margin-bottom: 10px;
+
+        .ms-Dropdown-container {
+            flex: 2;
+        }
+
+        div {
+            flex: 2;
+        }
+    }
+}
