@@ -80,24 +80,37 @@ export const updateLocationList = mutatorAction(
 					'vi-vn': locationData.details,
 				}
 
+				const schedulingPhoneKey:string = `c19.link/scheduling.phone.${newLocObj.info.content.id}`.toLowerCase()
+				newLocObj.strings.content= { [schedulingPhoneKey] : { [store.currentLanguage]:locationData.schedulingPhone} }
+				newLocObj.vaccination.content.links.scheduling_phone.text = schedulingPhoneKey
+
 				store.repoFileData[newLocObj.info.content.id] = newLocObj
 				store.repoFileData = { ...store.repoFileData }
 			} else {
+
+				const location = store.repoFileData[selectedState.key]
 				newLocObj.info.path = `${selectedState.key}/regions/${newLocObj.info.path}`
 				newLocObj.vaccination.path = `${selectedState.key}/regions/${newLocObj.vaccination.path}`
 
-				if (store.repoFileData[selectedState.key].regions) {
-					store.repoFileData[selectedState.key].regions[
+				const schedulingPhoneKey:string = `c19.link/scheduling.phone.${newLocObj.info.content.id}`.toLowerCase()
+
+				location.strings.content[schedulingPhoneKey] = { [store.currentLanguage]:locationData.schedulingPhone}
+				newLocObj.vaccination.content.links.scheduling_phone.text = schedulingPhoneKey
+
+				if (location.regions) {
+					location.regions[
 						newLocObj.info.content.id
 					] = newLocObj
 				} else {
-					store.repoFileData[selectedState.key].regions = {
+					location.regions = {
 						[newLocObj.info.content.id]: newLocObj,
 					}
 				}
 
 				store.repoFileData = { ...store.repoFileData }
 			}
+							console.log(store.repoFileData)
+
 		}
 	}
 )
@@ -191,13 +204,7 @@ export const updateLocationData = mutatorAction(
 										'description': ''
 									}
 								}
-
-
-
 				}
-
-
-
 				store.repoFileData = { ...store.repoFileData }
 			}
 		}

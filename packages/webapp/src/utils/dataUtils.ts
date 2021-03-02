@@ -68,7 +68,7 @@ export const createLocationDataObj = (locationData: any) => {
 					},
 					scheduling_phone: {
 						url: `tel:${locationData.schedulingPhone}`,
-						text: '',
+						text: locationData.schedulingPhone,
 						description: ''
 					}
 				},
