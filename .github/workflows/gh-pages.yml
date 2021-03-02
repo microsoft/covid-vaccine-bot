@@ -19,10 +19,9 @@ jobs:
       - run: yarn build:all
       - run: yarn build:webapp
 
-      # Pending approval
-      #- name: deploy
-      #  uses: peaceiris/actions-gh-pages@v3
-      #  with:
-      #    # GITHUB_TOKEN is automatically provided. See this page for first deploy: https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-first-deployment-with-github_token
-      #    github_token: ${{ secrets.GITHUB_TOKEN }}
-      #    publish_dir: ./packages/webapp/build
+      - name: deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          # GITHUB_TOKEN is automatically provided. See this page for first deploy: https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-first-deployment-with-github_token
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./packages/webapp/build
