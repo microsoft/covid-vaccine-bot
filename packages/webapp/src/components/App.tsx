@@ -10,6 +10,7 @@ import {
 	PersonaSize,
 	Pivot,
 	PivotItem,
+	MessageBar
 } from '@fluentui/react'
 import { observer } from 'mobx-react-lite'
 import { Switch, Route, Redirect } from 'react-router-dom'
@@ -111,14 +112,29 @@ export default observer(function App() {
 											<div className="appBodyLeft">
 												<Pivot>
 													<PivotItem headerText="Dashboard">
+													{state.pendingChanges && (
+														<MessageBar styles={{root:{margin:"10px 5px"}}}>
+														    You have pending changes, please click on the review tab to submit these changes.
+														  </MessageBar>
+														  )}
 														<Dashboard />
 													</PivotItem>
 													<PivotItem headerText="Locations">
+													{state.pendingChanges && (
+														<MessageBar styles={{root:{margin:"10px 5px"}}}>
+														    You have pending changes, please click on the review tab to submit these changes.
+														  </MessageBar>
+														  )}
 														<Locations />
 													</PivotItem>
 													<PivotItem headerText="Translate">
 														<Translate />
 													</PivotItem>
+													{state.pendingChanges && (
+													<PivotItem headerText="Review">
+														<div> Review tab content </div>
+													</PivotItem>
+													)}
 												</Pivot>
 
 											</div>
