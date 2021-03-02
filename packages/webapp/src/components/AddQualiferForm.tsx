@@ -26,7 +26,7 @@ const setInitialData = (item: any) => {
     if (item) {
         return {
             tagKey: item.tagKey,
-            qualifierId: item.qualifierId,
+            qualifier: item.text,
         }
     } else {
         return {
@@ -42,6 +42,8 @@ export default observer(function AddQualifierForm(props: AddQualifierFormProp) {
     const fieldChanges = useRef<any>(formData)
     const globalQualifiersList = useRef<string[]>(getGlobalQualifierValidationTexts())
     const [hasError, setHasError] = useState<boolean>(false)
+
+    console.log(item)
 
 	const handleTagChange = useCallback(
 		(_ev: any, item?: IDropdownOption) => {
@@ -117,6 +119,7 @@ export default observer(function AddQualifierForm(props: AddQualifierFormProp) {
                     autoAdjustHeight={false}
                     resizable={false}
                     disabled={!formData.tagKey}
+                    validateOnLoad={false}
                     onGetErrorMessage={() => isDuplicate(formData.qualifier)}
                 />
             </div>

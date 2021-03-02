@@ -14,3 +14,25 @@
         }
     }
 }
+
+.qualifierGroupItem {
+	.ms-DetailsRow {
+		.editIcon {
+			visibility: hidden;
+			cursor: pointer;
+			color: $ms-color-themePrimary;
+		}
+
+		&.is-selected {
+			.editIcon {
+				visibility: visible;
+			}
+		}
+
+		&:hover {
+			.editIcon {
+				visibility: visible;
+			}
+		}
+	}
+}

@@ -2,7 +2,7 @@
  * Copyright (c) Microsoft. All rights reserved.
  * Licensed under the MIT license. See LICENSE file in the project.
  */
-import { IGroup, DetailsList, FontIcon, Modal, IDropdownOption } from '@fluentui/react'
+import { IGroup, DetailsList, FontIcon, Modal, IDropdownOption, IColumn } from '@fluentui/react'
 import { observer } from 'mobx-react-lite'
 import { useState, useEffect, useCallback, useRef } from 'react'
 import { getAppStore } from '../store/store'
@@ -14,7 +14,7 @@ import { updateGlobalQualifiers } from '../mutators/repoMutators'
 import './QualifierPanel.scss'
 
 export default observer(function QualifierPanel() {
-	const { globalFileData, currentLanguage } = getAppStore()
+	const { globalFileData, currentLanguage, isEditable } = getAppStore()
 	const [qualifierGroup, setQualifierGroup] = useState<IGroup[]>([])
 	const [qualifierGroupItems, setQualifierGroupItems] = useState<any[]>([])
 	const [isAddQualifierModalOpen, { setTrue: openAddQualifierModal, setFalse: dismissAddQualifierModal }] = useBoolean(
@@ -83,17 +83,40 @@ export default observer(function QualifierPanel() {
 			minWidth: 100,
 			isResizable: false,
 		},
-	]
+		{
+			key: 'editCol',
+			name: '',
+			fieldName: 'editQualifier',
+			minWidth: 50,
+			isResizable: false,
+		}
+	].filter(loc => isEditable ? true : loc.key !== 'editCol')
 
 	const onAddQualifierFormOpen = useCallback((item?: any) => {
 		formItem.current = item ?? null
 		openAddQualifierModal()
-	},[openAddQualifierModal])
+	},[openAddQualifierModal, formItem])
 
 	const addQualifierSubmit = useCallback((newQualifier) => {
 		updateGlobalQualifiers(newQualifier)
 		dismissAddQualifierModal()
 	},[dismissAddQualifierModal])
+
+	const onRenderItemColumn = useCallback(
+		(item?: any, _index?: number, column?: IColumn) => {
+			const fieldContent = item[column?.fieldName as keyof any] as string
+
+			if (column?.key === 'editCol') {
+				return isEditable ? (
+					<FontIcon
+						iconName="Edit"
+						className="editIcon"
+						onClick={() => onAddQualifierFormOpen(item)}
+					/>) : null
+		} else {
+			return <span>{fieldContent}</span>;
+		}
+	},[onAddQualifierFormOpen, isEditable])
 
 	const tagsOptions: IDropdownOption[] = qualifierGroup.map(tag => {
 		return {
@@ -130,6 +153,7 @@ export default observer(function QualifierPanel() {
 						isHeaderVisible={false}
 						checkboxVisibility={2}
 						className="qualifierGroupItem"
+						onRenderItemColumn={onRenderItemColumn}
 					/>
 				</section>
 			</div>
@@ -139,6 +163,7 @@ export default observer(function QualifierPanel() {
 				isDarkOverlay={true}
 				isBlocking={false}>
 					<AddQualifierForm
+						item={formItem.current}
 						tagsOptions={tagsOptions}
 						onSubmit={addQualifierSubmit}
 						onCancel={dismissAddQualifierModal}
