@@ -37,6 +37,7 @@ export default observer(function App() {
 		','
 	)
 
+
 	const languageOptions = languageKeys.map((key) => {
 		return {
 			key: key,
@@ -119,6 +120,7 @@ export default observer(function App() {
 														<Translate />
 													</PivotItem>
 												</Pivot>
+
 											</div>
 											{state.toggleQualifier && (
 												<div className="appBodyRight">

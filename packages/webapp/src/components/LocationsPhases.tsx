@@ -202,36 +202,6 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 			})
 	}
 
-
-
-	// const onRemovePhaseGroupClick = useCallback(
-	// 	(phaseId: any) => {
-	// 		const newPhaseGroupItems = phaseGroupItems.filter(
-	// 			(groupItem) => groupItem.groupId !== phaseId
-	// 		)
-
-	// 		const newPhaseGroup: any[] = []
-	// 		phaseGroup
-	// 			.filter((group) => group.data.keyId !== phaseId)
-	// 			.forEach((group) => {
-	// 				newPhaseGroup.push({
-	// 					...group,
-	// 					...{
-	// 						startIndex: newPhaseGroupItems.findIndex(
-	// 							(i) => i.groupId === group.data.keyId
-	// 						),
-	// 						count: newPhaseGroupItems.filter(
-	// 							(i) => i.groupId === group.data.keyId
-	// 						).length,
-	// 					},
-	// 				})
-	// 			})
-
-	// 		setPhaseGroup(newPhaseGroup)
-	// 		setPhaseGroupItems(newPhaseGroupItems)
-	// 	},
-	// 	[phaseGroupItems, phaseGroup]
-	// )
 	const onSetActivePhase = (phaseId: string) => {
 		setActivePhase({
 			locationKey: selectedState.key,

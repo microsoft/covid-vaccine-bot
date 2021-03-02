@@ -18,7 +18,7 @@ import { toProperCase } from '../utils/textUtils'
 import LocationForm from './LocationForm'
 import LocationsPhases from './LocationsPhases'
 import PhaseForm from './PhaseForm'
-import { updateLocationList, updatePhaseList } from '../mutators/repoMutators'
+import { updateLocationList, addPhase, updatePhase } from '../mutators/repoMutators'
 
 import './Locations.scss'
 
@@ -186,36 +186,24 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 		[stateRegionsFullList]
 	)
 
-	const onPhaseFormSubmit = useCallback(
-		(phaseData) => {
-			dismissPhaseModal()
+	const onPhaseFormSubmit =  	(phaseData:any) => {
+	 		dismissPhaseModal()
 
-		const updatedList: any[] = phaseItemList
-
-		if (selectedModalFormItem.current == null) {
-			updatedList.push({
-				key: String(phaseData.name) + phaseItemList.length,
-				keyId: phaseData.name,
-				name: phaseData.name,
-				qualifications: 0,
-				value: {
-					id: phaseData.name,
-					qualifications: []
-				},
-				isActive: false,
-				isNew: true
+	 		if(phaseData.phaseId){
+	 			updatePhase({
+				locationKey: selectedState.key,
+				item: phaseData,
 			})
-		} else {
-			updatedList.forEach(item => {
-				if (item.keyId === phaseData.phaseId) {
-					item.name = phaseData.name + (phaseData.isActive ? ' (active)' : '')
-				}
+	 		} else {
+	 			addPhase({
+				locationKey: selectedState.key,
+				item: phaseData,
 			})
-		}
+	 		}
 
-		updatePhaseList(updatedList, false, selectedState)
-		setPhaseItemList(updatedList)
-	},[phaseItemList, selectedModalFormItem, setPhaseItemList, dismissPhaseModal, updatePhaseList])
+	 		
+
+	 }
 
 	const onPhaseFormOpen = useCallback((item?: any) => {
 		selectedModalFormItem.current = item ?? null
@@ -295,7 +283,7 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 								</div>
 							)}
 						</div>
-						{selectedState.value.vaccination.content.phases.length > 0 ? (
+						{selectedState.value.vaccination.content.phases && selectedState.value.vaccination.content.phases.length > 0 ? (
 							<DetailsList
 								items={phaseItemList}
 								columns={phaseColumns}
@@ -384,6 +372,9 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 })
 
 const setInitialPhaseItems = (selectedState: any): any[] => {
+	if(!selectedState.value.vaccination.content.phases){
+		return []
+	}
 	return selectedState.value.vaccination.content.phases.map(
 		(phase: any, idx: number) => {
 			const activePhase: string =

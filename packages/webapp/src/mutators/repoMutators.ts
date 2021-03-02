@@ -102,27 +102,6 @@ export const updateLocationList = mutatorAction(
 	}
 )
 
-export const updatePhaseList = mutatorAction(
-	'updatePhaseList',
-	(phaseItems: any[], isRegion: boolean, selectedState: any) => {
-		if (phaseItems) {
-			const store = getAppStore()
-			store.pendingChanges = true
-			store.repoFileData[
-				selectedState.key
-			].vaccination.content.phases = phaseItems.map((item) => {
-				return {
-					id: item.keyId,
-					label: item.name,
-					qualifications: item.value.qualifications,
-				}
-			})
-
-			store.repoFileData = { ...store.repoFileData }
-		}
-	}
-)
-
 export const modifyStateStrings = mutatorAction(
 	'modifyStateStrings',
 	(data: any | undefined) => {
@@ -412,6 +391,57 @@ export const removePhase = mutatorAction(
 					location.vaccination.content.phases.splice(removeIndex,1)
 					store.repoFileData = { ...store.repoFileData }
 				}
+			}
+		}
+	}
+
+)
+
+export const addPhase = mutatorAction(
+	'addPhase',
+	(data: any | undefined) => {
+		if (data) {
+			const store = getAppStore()
+			if (store?.repoFileData) {
+				store.pendingChanges = true
+				const location = store.repoFileData[data.locationKey]
+
+				const phaseId = data.item.name.replace(/\s/g, "").toLowerCase()
+
+				const emptyQualifications:any = []
+
+				if(!location.vaccination.content.phases){
+					location.vaccination.content.phases = []
+				}
+
+				location.vaccination.content.phases.push({ 'id':phaseId, 'label': data.item.name, 'qualifications':emptyQualifications})
+				store.repoFileData = { ...store.repoFileData }
+				
+			}
+		}
+	}
+
+)
+
+export const updatePhase = mutatorAction(
+	'updatePhase',
+	(data: any | undefined) => {
+		if (data) {
+			const store = getAppStore()
+			if (store?.repoFileData) {
+				store.pendingChanges = true
+				const location = store.repoFileData[data.locationKey]
+				const phaseId = data.item.phaseId.toLowerCase().replace(" (active)","").trim()
+
+
+				const affectedPhase = location.vaccination.content.phases.find(
+						(phase: any) => phase.id === phaseId
+					)
+
+				affectedPhase.label=data.item.name
+				store.repoFileData = { ...store.repoFileData }
+
+				
 			}
 		}
 	}
