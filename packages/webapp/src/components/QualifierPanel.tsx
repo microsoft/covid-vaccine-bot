@@ -33,7 +33,7 @@ export default observer(function QualifierPanel() {
 			const contentObj = globalFileData.customStrings.content
 			const questionKeys = Object.keys(contentObj).filter((k) =>
 				k.includes('eligibility.question')
-			)
+			).sort((a,b) => (a > b) ? 1 : -1)
 
 			questionKeys.forEach((key) => {
 				const questionGroupKey = key.split('/')[1].split('.')

@@ -290,6 +290,8 @@ export const updateGlobalQualifiers = mutatorAction('updateGlobalQualifiers', (n
 			}
 		}
 
+		qualifierKey = qualifierKey.endsWith('_') ? qualifierKey.substr(0, qualifierKey.length - 1) : qualifierKey
+
 		store.globalFileData.customStrings.content[qualifierKey] = {
 			[store.currentLanguage]: newItem.qualifier
 		}

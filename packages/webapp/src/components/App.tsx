@@ -25,12 +25,18 @@ import Locations from './Locations'
 import Login from './Login'
 import QualifierPanel from './QualifierPanel'
 import Translate from './Translate'
+import { useCallback } from 'react'
+import { useBoolean } from '@uifabric/react-hooks'
 
 import './App_reset_styles.scss'
 import './App.scss'
 
 export default observer(function App() {
 	const state = getAppStore()
+	const [
+		isPanelOpen,
+		{ setTrue: showPanel, setFalse: hidePanel },
+	] = useBoolean(false)
 
 	const languageKeys = 'en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th'.split(
 		','
@@ -42,6 +48,14 @@ export default observer(function App() {
 			text: getLanguageDisplayText(key, key),
 		}
 	})
+
+	const togglePanel = useCallback((item?: any) => {
+		if (item.props.headerText === 'Locations') {
+			showPanel()
+		} else {
+			hidePanel()
+		}
+	},[state, showPanel, hidePanel])
 
 	return (
 		<div className="rootContentWrapper">
@@ -107,7 +121,7 @@ export default observer(function App() {
 									{isUserAuthorized() ? (
 										<>
 											<div className="appBodyLeft">
-												<Pivot>
+												<Pivot onLinkClick={togglePanel}>
 													<PivotItem headerText="Dashboard">
 														<Dashboard />
 													</PivotItem>
@@ -119,7 +133,7 @@ export default observer(function App() {
 													</PivotItem>
 												</Pivot>
 											</div>
-											{state.isEditable && (
+											{state.isEditable && isPanelOpen && (
 												<div className="appBodyRight">
 													<QualifierPanel />
 												</div>
