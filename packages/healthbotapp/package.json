@@ -2,16 +2,37 @@
 	"name": "@covid-vax-bot/healthbot-app",
 	"version": "0.0.1",
 	"description": "A simple web page to handoff users to the Health bot",
-	"main": "server.js",
+	"main": "lib/index.js",
+	"scripts": {
+		"clean": "rimraf lib dist",
+		"start": "nodemon",
+		"compile": "tsc -b .",
+		"writeDeployPackageJson": "node writeDeployPackageJson",
+		"copyConfiguration": "shx cp -r config/ dist/",
+		"copyPublic": "shx cp -r public/ dist/",
+		"copyLib": "shx cp -r lib/ dist/",
+		"build": "run-s compile writeDeployPackageJson copyConfiguration copyPublic copyLib"
+	},
+	"devDependencies": {
+		"@tsconfig/node12": "^1.0.7",
+		"@types/config": "^0.0.38",
+		"@types/express": "^4.17.11",
+		"@types/jsonwebtoken": "^8.5.0",
+		"@types/node": "^12",
+		"@types/rimraf": "^3.0.0",
+		"nodemon": "^2.0.7",
+		"npm-run-all": "^4.1.5",
+		"rimraf": "^3.0.2",
+		"shx": "^0.3.3",
+		"ts-node": "^9.1.1",
+		"typescript": "^4.1.5"
+	},
 	"dependencies": {
+		"config": "^3.3.4",
 		"cookie-parser": "^1.4.5",
 		"dotenv": "^8.2.0",
 		"express": "^4.17.1",
-		"jsonwebtoken": "^8.5.1",
-		"request": "^2.88.2",
-		"request-promise": "^4.2.5"
-	},
-	"scripts": {
-		"start": "yarn node server.js"
+		"got": "^11.8.2",
+		"jsonwebtoken": "^8.5.1"
 	}
 }

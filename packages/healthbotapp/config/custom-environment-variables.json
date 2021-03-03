@@ -1,0 +1,11 @@
+{
+	"healthbot": {
+		"webchatSecret": "WEBCHAT_SECRET",
+		"directlineEndpointUri": "DIRECTLINE_ENDPOINT_URI"
+	},
+	"service": {
+		"appSecret": "APP_SECRET",
+		"port": "PORT",
+		"region": "REGION"
+	}
+}

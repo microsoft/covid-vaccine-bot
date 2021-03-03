@@ -8,7 +8,6 @@ const CONTACT_EMAIL = process.env.REACT_APP_CONTACT_US_EMAIL
 const CODE_OF_CONDUCT_URL = process.env.REACT_APP_CODE_OF_CONDUCT_URL
 
 export const Footer: FC = memo(function Footer() {
-	const year = new Date().getFullYear()
 	return (
 		<div style={{ display: 'flex', flexDirection: 'column' }}>
 			<div className="appFooterRow">

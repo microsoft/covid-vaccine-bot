@@ -42,7 +42,6 @@ function chatRequested() {
 function getUserLocation(callback) {
     navigator.geolocation.getCurrentPosition(
         function(position) {
-            console.log(position);
             var latitude  = position.coords.latitude;
             var longitude = position.coords.longitude;
             var location = {
@@ -64,13 +63,11 @@ function initBotConversation() {
         return;
     }
     // extract the data from the JWT
-    console.log(this.response)
     const jsonWebToken = this.response;
 		const tokenPayload = JSON.parse(atob(jsonWebToken.split('.')[1]));
 		const lat = tokenPayload.location && tokenPayload.location.lat ? tokenPayload.location.lat : null;
 		const long = tokenPayload.location && tokenPayload.location.long ? tokenPayload.location.long : null;
-		console.log('Point: ', lat, long)
-    const user = {
+		const user = {
         id: tokenPayload.userId,
         name: tokenPayload.userName,
         locale: tokenPayload.locale

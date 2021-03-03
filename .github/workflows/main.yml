@@ -13,6 +13,11 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
+env:
+  AZURE_WEBAPP_NAME: covid-healthbot-container
+  AZURE_WEBAPP_PACKAGE_PATH: 'packages/healthbotapp/dist'
+  NODE_VERSION: '12.x'
+
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
@@ -25,7 +30,7 @@ jobs:
       - name: Setup Node.js environment
         uses: actions/setup-node@v2.1.4
         with:
-          node-version: '14.x'
+          node-version: ${{ env.NODE_VERSION }}
 
       - name: install yarn
         run: npm i -g yarn
@@ -41,7 +46,7 @@ jobs:
       - name: verify packages
         run: yarn ci
 
-      - name: Deploy to Dev
+      - name: Deploy Resources to Dev HealthBot
         run: yarn deploy:all
         if: github.ref == 'refs/heads/main'
         env:
@@ -49,10 +54,22 @@ jobs:
           HEALTHBOT_TENANT: ${{ secrets.HEALTHBOT_TENANT_DEV }}
           HEALTHBOT_API_SECRET: ${{ secrets.HEALTHBOT_API_KEY_DEV }}
 
-      - name: Deploy to Integ
+      - name: Deploy Resources to Integ HealthBot
         run: yarn deploy:all
         if: github.ref == 'refs/heads/main'
         env:
           HEALTHBOT_HOST: ${{ secrets.HEALTHBOT_HOST }}
           HEALTHBOT_TENANT: ${{ secrets.HEALTHBOT_TENANT_INTEG }}
           HEALTHBOT_API_SECRET: ${{ secrets.HEALTHBOT_API_KEY_INTEG }}
+
+      - name: Install Bot Container Deployment Modules
+        if: github.ref == 'refs/heads/main'
+        run: pushd packages/healthbotapp/dist && npm install && popd
+
+      - name: 'Deploy Bot Container to Azure WebApp'
+        if: github.ref == 'refs/heads/main'
+        uses: azure/webapps-deploy@v2
+        with:
+          app-name: ${{ env.AZURE_WEBAPP_NAME }}
+          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
+          package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
