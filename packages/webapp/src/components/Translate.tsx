@@ -2,7 +2,7 @@
  * Copyright (c) Microsoft. All rights reserved.
  * Licensed under the MIT license. See LICENSE file in the project.
  */
-import { Dropdown, TextField } from '@fluentui/react'
+import { Dropdown, TextField, FontIcon } from '@fluentui/react'
 import { observer } from 'mobx-react-lite'
 import { getLanguageOptions, toProperCase, getLanguageDisplayText } from '../utils/textUtils'
 import { useState, useCallback, useEffect, useRef } from 'react'
@@ -48,6 +48,7 @@ export default observer(function Translate() {
 		}
 	]
 	const translationFilterState = useRef<any>(translationFilter[0].key)
+	const [isSectionCollapse, setSectionCollapse] = useState<any>({locations: false, qualifiers: false, info: false})
 
 	const buildLocationList = useCallback(() => {
 		if (repoFileData) {
@@ -138,6 +139,10 @@ export default observer(function Translate() {
 		[setTranslateLanguage]
 	)
 
+	const onCollapseSection = useCallback((name: string) => {
+		setSectionCollapse({...isSectionCollapse, ...{[name]: !isSectionCollapse[name]}})
+	},[setSectionCollapse, isSectionCollapse])
+
 	const handleLocationTextChange = useCallback(
 		(ev, rowItem) => {
 			const value = ev.target.value
@@ -224,48 +229,64 @@ export default observer(function Translate() {
 						/>
 					</div>
 					<section>
-						<div className="listTitle">Locations</div>
-						{locationList.length > 0 ? (
-							locationList.map((val:any, idx:number) => {
-								return (
-									<div key={`locationRow-${idx}`} className={`translateListRow${idx % 2 > 0 ? '': ' altRow'}`}>
-										<div className="fromCol">{val.from}</div>
-										<TextField
-											name={val.to}
-											value={val.to}
-											className="toCol"
-											onChange={(ev) => handleLocationTextChange(ev, val)}
-											onBlur={() => updateLocationTranslation(val)}
-										/>
-									</div>
-								)
-							})
-						):(
-							<div className="translateListRow">No missing location translations found for: {getLanguageDisplayText(translateLanguage.key, translateLanguage.key)}.</div>
+						<div className="listTitle" onClick={() => onCollapseSection('locations')}>
+							<FontIcon
+								iconName={isSectionCollapse.locations ? 'ChevronRight' : 'ChevronDown'}
+								className="groupToggleIcon"
+							/>
+							<div>Locations</div>
+						</div>
+						{!isSectionCollapse.locations && (
+							locationList.length > 0 ? (
+								locationList.map((val:any, idx:number) => {
+									return (
+										<div key={`locationRow-${idx}`} className={`translateListRow${idx % 2 > 0 ? '': ' altRow'}`}>
+											<div className="fromCol">{val.from}</div>
+											<TextField
+												name={val.to}
+												value={val.to}
+												className="toCol"
+												onChange={(ev) => handleLocationTextChange(ev, val)}
+												onBlur={() => updateLocationTranslation(val)}
+											/>
+										</div>
+									)
+								})
+							):(
+								<div className="emptyTranslateListRow">No missing location translations found for: {getLanguageDisplayText(translateLanguage.key, translateLanguage.key)}.</div>
+							)
 						)}
 					</section>
 					<section>
-						<div className="listTitle">Qualifiers</div>
-						{qualifierList.length > 0 ? (
-							qualifierList.map((val:any, idx:number) => {
-								return (
-									<div key={`qualifierRow-${idx}`} className={`translateListRow${idx % 2 > 0 ? '': ' altRow'} qualifier`}>
-										<div className="fromCol">{val.from}</div>
-										<TextField
-											name={val.to}
-											value={val.to}
-											className="toCol"
-											autoAdjustHeight={true}
-											resizable={false}
-											multiline={true}
-											onChange={(ev) => handleQualifierTextChange(ev, val)}
-											onBlur={() => updateQualifierTranslation(val)}
-										/>
-									</div>
-								)
-							})
-						):(
-							<div className="translateListRow">No missing qualifier translations found for: {getLanguageDisplayText(translateLanguage.key, translateLanguage.key)}.</div>
+						<div className="listTitle" onClick={() => onCollapseSection('qualifiers')}>
+							<FontIcon
+								iconName={isSectionCollapse.qualifiers ? 'ChevronRight' : 'ChevronDown'}
+								className="groupToggleIcon"
+							/>
+							<div>Qualifiers</div>
+						</div>
+						{!isSectionCollapse.qualifiers && (
+							qualifierList.length > 0 ? (
+								qualifierList.map((val:any, idx:number) => {
+									return (
+										<div key={`qualifierRow-${idx}`} className={`translateListRow${idx % 2 > 0 ? '': ' altRow'} qualifier`}>
+											<div className="fromCol">{val.from}</div>
+											<TextField
+												name={val.to}
+												value={val.to}
+												className="toCol"
+												autoAdjustHeight={true}
+												resizable={false}
+												multiline={true}
+												onChange={(ev) => handleQualifierTextChange(ev, val)}
+												onBlur={() => updateQualifierTranslation(val)}
+											/>
+										</div>
+									)
+								})
+							):(
+								<div className="emptyTranslateListRow">No missing qualifier translations found for: {getLanguageDisplayText(translateLanguage.key, translateLanguage.key)}.</div>
+							)
 						)}
 					</section>
 				</div>

@@ -645,11 +645,10 @@ export const translateLocationName = mutatorAction('translateLocationName', (ite
 				}
 			}
 
-				store.globalFileData = { ...store.globalFileData }
-			}
+			store.globalFileData = { ...store.globalFileData }
 		}
 	}
-)
+})
 
 export const translateQualifier = mutatorAction('translateQualifier', (item: any) => {
 	if (item) {
@@ -670,10 +669,7 @@ export const translateQualifier = mutatorAction('translateQualifier', (item: any
 				}
 			}
 
-				store.globalFileData = { ...store.globalFileData }
-			}
-
-			console.log(store.globalFileData.customStrings.content)
+			store.globalFileData = { ...store.globalFileData }
 		}
 	}
-)
+})

@@ -5,7 +5,13 @@
 	flex-direction: column;
 
 	.listTitle {
+		display: flex;
 		border-bottom: 1px solid $ms-color-gray40;
+		cursor: pointer;
+	}
+
+	.groupToggleIcon {
+		padding: 0 10px;
 	}
 
 	section {
@@ -52,4 +58,9 @@
 	.toCol {
 		flex: 2;
 	}
+}
+
+.emptyTranslateListRow {
+	display: flex;
+	padding: 20px 20px 20px 36px;
 }
