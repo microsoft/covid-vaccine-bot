@@ -53,6 +53,8 @@ export const setRepoFileData = mutatorAction(
 				cdcStateNames: data[2],
 				cdcStateLinks: data[3],
 			}
+
+			console.log(data)
 		}
 	}
 )
@@ -625,29 +627,53 @@ export const updateGlobalQualifiers = mutatorAction(
 )
 
 export const translateLocationName = mutatorAction('translateLocationName', (item: any) => {
-	console.log(item)
 	if (item) {
 		const store = getAppStore()
 		if (store?.globalFileData) {
 			store.pendingChanges = true
-			if (store.globalFileData.cdcStateNames.content[item.locKey]) {
-				store.globalFileData.cdcStateNames.content[item.locKey] = {
-					...store.globalFileData.cdcStateNames.content[item.locKey],
+			if (store.globalFileData.cdcStateNames.content[item.key]) {
+				store.globalFileData.cdcStateNames.content[item.key] = {
+					...store.globalFileData.cdcStateNames.content[item.key],
 					[item.toKey]: item.to
 				}
 			} else {
 				store.globalFileData.cdcStateNames.content = {
 					...store.globalFileData.cdcStateNames.content,
-					...{[item.locKey]: {
+					...{[item.key]: {
 						[item.toKey]: item.to
 					}}
 				}
 			}
 
 				store.globalFileData = { ...store.globalFileData }
-
-				console.log(store.globalFileData.cdcStateNames.content)
 			}
+		}
+	}
+)
+
+export const translateQualifier = mutatorAction('translateQualifier', (item: any) => {
+	if (item) {
+		const store = getAppStore()
+		if (store?.globalFileData) {
+			store.pendingChanges = true
+			if (store.globalFileData.customStrings.content[item.key]) {
+				store.globalFileData.customStrings.content[item.key] = {
+					...store.globalFileData.customStrings.content[item.key],
+					[item.toKey]: item.to
+				}
+			} else {
+				store.globalFileData.customStrings.content = {
+					...store.globalFileData.customStrings.content,
+					...{[item.key]: {
+						[item.toKey]: item.to
+					}}
+				}
+			}
+
+				store.globalFileData = { ...store.globalFileData }
+			}
+
+			console.log(store.globalFileData.customStrings.content)
 		}
 	}
 )

@@ -25,7 +25,7 @@
 	}
 }
 
-.locationListRow {
+.translateListRow {
 	display: flex;
 	flex-direction: row;
 	padding: 10px;
@@ -33,6 +33,16 @@
 
 	&.altRow {
 		background-color: $ms-color-gray20;
+	}
+
+	&.qualifier {
+		.fromCol {
+			flex: 2;
+		}
+
+		.toCol {
+			flex: 2;
+		}
 	}
 
 	.fromCol {

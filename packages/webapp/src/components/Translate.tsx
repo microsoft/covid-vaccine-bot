@@ -6,7 +6,7 @@ import { Dropdown, TextField } from '@fluentui/react'
 import { observer } from 'mobx-react-lite'
 import { getLanguageOptions, toProperCase, getLanguageDisplayText } from '../utils/textUtils'
 import { useState, useCallback, useEffect, useRef } from 'react'
-import { translateLocationName } from '../mutators/repoMutators'
+import { translateLocationName, translateQualifier } from '../mutators/repoMutators'
 import { getAppStore } from '../store/store'
 
 import './Translate.scss'
@@ -27,13 +27,16 @@ const filterDropdownStyles = {
 }
 
 export default observer(function Translate() {
-	const [locationsList, setLocationsList] = useState<any[]>([])
+	const [locationList, setLocationList] = useState<any[]>([])
+	const [qualifierList, setQualifierList] = useState<any[]>([])
 	const { globalFileData, repoFileData,currentLanguage } = getAppStore()
 	const languageOptions = getLanguageOptions()
 	const [translateLanguage, setTranslateLanguage]= useState<any>(languageOptions[0])
-	const fieldChanges = useRef<any>({})
+	const locationChanges = useRef<any>({})
+	const qualifierChanges = useRef<any>({})
 	const mainLanguage = useRef<string>(currentLanguage)
 	const locationFullList = useRef<any[]>([])
+	const qualifierFullList = useRef<any[]>([])
 	const translationFilter = [
 		{
 			key: 'missing',
@@ -67,7 +70,7 @@ export default observer(function Translate() {
 						: stateNames?.[`cdc/${stateId}/state_name`]?.[translateLanguage.key]
 
 				tempList.push({
-					locKey: `cdc/${stateId}/state_name`,
+					key: `cdc/${stateId}/state_name`,
 					fromKey: mainLanguage.current,
 					from: stateLabel,
 					toKey: translateLanguage.key,
@@ -78,16 +81,45 @@ export default observer(function Translate() {
 			const locationNames = tempList.sort((a,b) => (a.from > b.from) ? 1 : -1)
 
 			if (translationFilterState.current === 'missing') {
-				setLocationsList(
+				setLocationList(
 					locationNames.filter(location => !location._to)
 				)
 			} else {
-				setLocationsList(locationNames)
+				setLocationList(locationNames)
 			}
 
 			locationFullList.current = locationNames
 		}
-	},[globalFileData, repoFileData, translateLanguage, mainLanguage, locationFullList, translationFilterState, setLocationsList])
+	},[globalFileData, repoFileData, translateLanguage, mainLanguage, locationFullList, translationFilterState, setLocationList])
+
+	const buildQualifierList = useCallback(() => {
+		if (globalFileData) {
+			const tempList: any[] = []
+			Object.entries(globalFileData.customStrings.content).forEach(([key, value]: [string, any]) => {
+				if (key.startsWith('c19.eligibility.question')) {
+					tempList.push({
+						key: key,
+						fromKey: mainLanguage.current,
+						from: value[mainLanguage.current],
+						toKey: translateLanguage.key,
+						to: value[translateLanguage.key],
+						_to: value[translateLanguage.key]
+					})
+				}
+			})
+			const qualifiers = tempList.sort((a,b) => (a.from > b.from) ? 1 : -1)
+
+			if (translationFilterState.current === 'missing') {
+				setQualifierList(
+					qualifiers.filter(qualifier => !qualifier._to)
+				)
+			} else {
+				setQualifierList(qualifiers)
+			}
+
+			qualifierFullList.current = qualifiers
+		}
+	},[globalFileData, translateLanguage, mainLanguage, qualifierFullList, translationFilterState, setQualifierList])
 
 	useEffect(() => {
 		mainLanguage.current = currentLanguage
@@ -96,7 +128,8 @@ export default observer(function Translate() {
 
 	useEffect(() => {
 		buildLocationList()
-	},[translationFilterState, translateLanguage, mainLanguage, buildLocationList])
+		buildQualifierList()
+	},[translationFilterState, translateLanguage, mainLanguage, buildLocationList, buildQualifierList])
 
 	const onTranslateLanguageChange = useCallback(
 		(_ev, option) => {
@@ -105,18 +138,32 @@ export default observer(function Translate() {
 		[setTranslateLanguage]
 	)
 
-	const handleTextChange = useCallback(
+	const handleLocationTextChange = useCallback(
 		(ev, rowItem) => {
 			const value = ev.target.value
-			const idx = locationsList.findIndex((i) => i.from === rowItem.from)
-			locationsList[idx] = {
+			const idx = locationList.findIndex((i) => i.from === rowItem.from)
+			locationList[idx] = {
 				...rowItem,
 				to: value,
 			}
-			setLocationsList([...locationsList])
-			fieldChanges.current = locationsList[idx]
+			setLocationList([...locationList])
+			locationChanges.current = locationList[idx]
 		},
-		[fieldChanges, locationsList, setLocationsList]
+		[locationChanges, locationList, setLocationList]
+	)
+
+	const handleQualifierTextChange = useCallback(
+		(ev, rowItem) => {
+			const value = ev.target.value
+			const idx = qualifierList.findIndex((i) => i.from === rowItem.from)
+			qualifierList[idx] = {
+				...rowItem,
+				to: value,
+			}
+			setQualifierList([...qualifierList])
+			qualifierChanges.current = qualifierList[idx]
+		},
+		[qualifierChanges, qualifierList, setQualifierList]
 	)
 
 	const updateLocationTranslation = useCallback((item) => {
@@ -126,17 +173,29 @@ export default observer(function Translate() {
 		}
 	},[])
 
+	const updateQualifierTranslation = useCallback((item) => {
+		if (item.to && (item.to.toLowerCase() !== item._to.toLowerCase())) {
+			item.to = String(item.to).trim()
+			console.log(item)
+			translateQualifier(item)
+		}
+	},[])
+
 	const onTranslateFilterChange = useCallback((_ev, option) => {
 		if (option.key === 'missing') {
-			setLocationsList(
-				locationFullList.current.filter(location => !location._to)
+			setLocationList(
+				locationFullList.current.filter(i => !i._to)
+			)
+			setQualifierList(
+				qualifierFullList.current.filter(i => !i._to)
 			)
 		} else {
-			setLocationsList(locationFullList.current)
+			setLocationList(locationFullList.current)
+			setQualifierList(qualifierFullList.current)
 		}
 
 		translationFilterState.current = option.key
-	},[setLocationsList, locationFullList, translationFilterState])
+	},[setLocationList, setQualifierList, locationFullList, qualifierFullList, translationFilterState])
 
 	return (
 		<div className="translatePageContainer">
@@ -166,23 +225,47 @@ export default observer(function Translate() {
 					</div>
 					<section>
 						<div className="listTitle">Locations</div>
-						{locationsList.length > 0 ? (
-							locationsList.map((val:any, idx:number) => {
+						{locationList.length > 0 ? (
+							locationList.map((val:any, idx:number) => {
 								return (
-									<div key={`locationRow-${idx}`} className={`locationListRow${idx % 2 > 0 ? '': ' altRow'}`}>
+									<div key={`locationRow-${idx}`} className={`translateListRow${idx % 2 > 0 ? '': ' altRow'}`}>
 										<div className="fromCol">{val.from}</div>
 										<TextField
 											name={val.to}
 											value={val.to}
 											className="toCol"
-											onChange={(ev) => handleTextChange(ev, val)}
+											onChange={(ev) => handleLocationTextChange(ev, val)}
 											onBlur={() => updateLocationTranslation(val)}
 										/>
 									</div>
 								)
 							})
 						):(
-							<div className="locationListRow">No missing translation found for: {getLanguageDisplayText(translateLanguage.key, translateLanguage.key)}.</div>
+							<div className="translateListRow">No missing location translations found for: {getLanguageDisplayText(translateLanguage.key, translateLanguage.key)}.</div>
+						)}
+					</section>
+					<section>
+						<div className="listTitle">Qualifiers</div>
+						{qualifierList.length > 0 ? (
+							qualifierList.map((val:any, idx:number) => {
+								return (
+									<div key={`qualifierRow-${idx}`} className={`translateListRow${idx % 2 > 0 ? '': ' altRow'} qualifier`}>
+										<div className="fromCol">{val.from}</div>
+										<TextField
+											name={val.to}
+											value={val.to}
+											className="toCol"
+											autoAdjustHeight={true}
+											resizable={false}
+											multiline={true}
+											onChange={(ev) => handleQualifierTextChange(ev, val)}
+											onBlur={() => updateQualifierTranslation(val)}
+										/>
+									</div>
+								)
+							})
+						):(
+							<div className="translateListRow">No missing qualifier translations found for: {getLanguageDisplayText(translateLanguage.key, translateLanguage.key)}.</div>
 						)}
 					</section>
 				</div>
