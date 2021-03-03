@@ -59,7 +59,6 @@ export const repoServices = async (
 			)
 			return loadAccessResponse
 
-			break
 		case 'getBranches':
 			const loadBranchesResponse = await fetch(
 				`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/branches`,
@@ -96,8 +95,7 @@ export const repoServices = async (
 			)
 
 			return await loadIssuesResponse.json()
-			break
-			break
+
 		case 'getRepoFileData':
 			const dataFolderResp = await fetch(
 				`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/contents/packages/plans/data`,
@@ -240,7 +238,7 @@ export const repoServices = async (
 			cdcStateLinks['content'] = cdcStateLinksData
 
 			return [stateData, customStrings, cdcStateNames, cdcStateLinks]
-			break
+
 		case 'createPR':
 			if (state?.mainBranch) {
 				const mainBranch = state?.mainBranch
