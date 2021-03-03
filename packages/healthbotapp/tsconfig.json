@@ -1,5 +1,5 @@
 {
-	"extends": "@tsconfig/node14/tsconfig",
+	"extends": "@tsconfig/node12/tsconfig",
 	"compilerOptions": {
 		"moduleResolution": "node",
 		"target": "ES2019",

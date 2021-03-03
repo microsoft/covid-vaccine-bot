@@ -4561,8 +4561,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@covid-vax-bot/healthbot-app", "workspace:packages/healthbotapp"],
             ["@tsconfig/node12", "npm:1.0.7"],
+            ["@types/config", "npm:0.0.38"],
             ["@types/express", "npm:4.17.11"],
-            ["@types/node", "npm:14.14.31"],
+            ["@types/jsonwebtoken", "npm:8.5.0"],
+            ["@types/node", "npm:12.20.4"],
             ["@types/rimraf", "npm:3.0.0"],
             ["config", "npm:3.3.4"],
             ["cookie-parser", "npm:1.4.5"],
@@ -9137,6 +9139,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@types/node", [
+        ["npm:12.20.4", {
+          "packageLocation": "./.yarn/cache/@types-node-npm-12.20.4-ff56381fc9-16d0024342.zip/node_modules/@types/node/",
+          "packageDependencies": [
+            ["@types/node", "npm:12.20.4"]
+          ],
+          "linkType": "HARD",
+        }],
         ["npm:13.13.45", {
           "packageLocation": "./.yarn/cache/@types-node-npm-13.13.45-6520cf6fde-f168574f1e.zip/node_modules/@types/node/",
           "packageDependencies": [

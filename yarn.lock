@@ -1895,8 +1895,10 @@ __metadata:
   resolution: "@covid-vax-bot/healthbot-app@workspace:packages/healthbotapp"
   dependencies:
     "@tsconfig/node12": ^1.0.7
+    "@types/config": ^0.0.38
     "@types/express": ^4.17.11
-    "@types/node": ^14.14.31
+    "@types/jsonwebtoken": ^8.5.0
+    "@types/node": ^12
     "@types/rimraf": ^3.0.0
     config: ^3.3.4
     cookie-parser: ^1.4.5
@@ -5000,6 +5002,13 @@ __metadata:
   version: 14.14.31
   resolution: "@types/node@npm:14.14.31"
   checksum: 635dc8a0898a923621e02ca179e17baa39fdfa44f0096fcc1b7046c9b32317e74a99956a7b45ca0e8069874f51f4e7873a418239a318a4b6e7936f6510ac5992
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^12":
+  version: 12.20.4
+  resolution: "@types/node@npm:12.20.4"
+  checksum: 16d002434239f11379819fc3d2a85f0c2652cf9fb0dcaf581e8652b85aef3816bba915552388d7db72f4f6d079822ab0f16a571980eeedb2acceedf2a9e5c940
   languageName: node
   linkType: hard
 
