@@ -7,7 +7,6 @@ import {
 	PrimaryButton,
 	DetailsList,
 	DetailsListLayoutMode,
-	IColumn,
 	ProgressIndicator,
 } from 'office-ui-fabric-react'
 import { useState, useEffect } from 'react'
@@ -45,7 +44,7 @@ export default observer(function Review(props: ReviewProp) {
 		const tempGlobalUpdates: any[] = []
 
 		if (
-			JSON.stringify(state.initGlobalFileData.customStrings).toLowerCase() !=
+			JSON.stringify(state.initGlobalFileData.customStrings).toLowerCase() !==
 			JSON.stringify(state.globalFileData.customStrings).toLowerCase()
 		) {
 			tempChangesList.push({
@@ -56,7 +55,7 @@ export default observer(function Review(props: ReviewProp) {
 		}
 
 		if (
-			JSON.stringify(state.initGlobalFileData.cdcStateNames).toLowerCase() !=
+			JSON.stringify(state.initGlobalFileData.cdcStateNames).toLowerCase() !==
 			JSON.stringify(state.globalFileData.cdcStateNames).toLowerCase()
 		) {
 			tempChangesList.push({
@@ -67,7 +66,7 @@ export default observer(function Review(props: ReviewProp) {
 		}
 
 		if (
-			JSON.stringify(state.initGlobalFileData.cdcStateLinks).toLowerCase() !=
+			JSON.stringify(state.initGlobalFileData.cdcStateLinks).toLowerCase() !==
 			JSON.stringify(state.globalFileData.cdcStateLinks).toLowerCase()
 		) {
 			tempChangesList.push({
@@ -90,7 +89,7 @@ export default observer(function Review(props: ReviewProp) {
 					if (
 						JSON.stringify(
 							state.initRepoFileData[location].info
-						).toLowerCase() !=
+						).toLowerCase() !==
 						JSON.stringify(state.repoFileData[location].info).toLowerCase()
 					) {
 						tempChangesList.push({
@@ -103,7 +102,7 @@ export default observer(function Review(props: ReviewProp) {
 						state.repoFileData[location].regions &&
 						JSON.stringify(
 							state.initRepoFileData[location].regions
-						)?.toLowerCase() !=
+						)?.toLowerCase() !==
 							JSON.stringify(state.repoFileData[location].regions).toLowerCase()
 					) {
 						tempChangesList.push({
@@ -115,7 +114,7 @@ export default observer(function Review(props: ReviewProp) {
 					if (
 						JSON.stringify(
 							state.initRepoFileData[location].vaccination
-						).toLowerCase() !=
+						).toLowerCase() !==
 						JSON.stringify(
 							state.repoFileData[location].vaccination
 						).toLowerCase()

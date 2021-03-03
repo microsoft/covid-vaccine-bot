@@ -139,7 +139,7 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 			})
 			setPhaseItemList(newList)
 		}
-	}, [state.repoFileData, selectedState, stateRegionsFullList, setInitialPhaseItems, setPhaseItemList])
+	}, [state.repoFileData, selectedState, stateRegionsFullList, setPhaseItemList])
 
 	const selectedPhase = useCallback(
 		(isRegion: boolean, value: any) => {
@@ -168,6 +168,14 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 		[openLocationModal]
 	)
 
+	const onPhaseFormOpen = useCallback(
+		(item?: any) => {
+			selectedModalFormItem.current = item ?? null
+			openPhaseModal()
+		},
+		[openPhaseModal]
+	)
+
 	const onRenderItemColumn = useCallback(
 		(item?: any, _index?: number, column?: IColumn) => {
 			const fieldContent = item[column?.fieldName as keyof any] as string
@@ -188,7 +196,7 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 				return <span>{fieldContent}</span>
 			}
 		},
-		[onLocationFormOpen, state.isEditable]
+		[onLocationFormOpen, onPhaseFormOpen, state.isEditable]
 	)
 
 	const onRegionFilter = useCallback(
@@ -221,14 +229,6 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 			})
 		}
 	}
-
-	const onPhaseFormOpen = useCallback(
-		(item?: any) => {
-			selectedModalFormItem.current = item ?? null
-			openPhaseModal()
-		},
-		[openPhaseModal]
-	)
 
 	return (
 		<div className="bodyContainer">

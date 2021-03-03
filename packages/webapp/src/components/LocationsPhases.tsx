@@ -9,7 +9,6 @@ import {
 	FontIcon,
 	IGroupDividerProps,
 	IDetailsListProps,
-	IDetailsRowProps,
 } from '@fluentui/react'
 import { observer } from 'mobx-react-lite'
 import { useState, useEffect, useCallback } from 'react'
@@ -180,7 +179,7 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 			setPhaseGroup(newPhaseGroup)
 			setPhaseGroupItems(newPhaseGroupItems)
 		},
-		[phaseGroupItems, phaseGroup]
+		[phaseGroupItems, phaseGroup, value]
 	)
 
 	const onRemoveRowItem = (item: any) => {
@@ -326,7 +325,7 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 	}
 
 	const onChangeRowItemQualifier = (currentItem: any, initItem: any) => {
-		if (initItem.qualifierId != 'c19.eligibility.question/new_qualifier') {
+		if (initItem.qualifierId !== 'c19.eligibility.question/new_qualifier') {
 			updateQualifier({
 				oldId: initItem.qualifierId,
 				locationKey: selectedState.key,

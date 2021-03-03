@@ -39,7 +39,7 @@ export default observer(function Translate() {
 	useEffect(() => {
 		mainLanguage.current = currentLanguage
 		setTranslateLanguage(getLanguageOptions(currentLanguage)[0])
-	}, [currentLanguage, mainLanguage, setTranslateLanguage, getLanguageOptions])
+	}, [currentLanguage, mainLanguage, setTranslateLanguage])
 
 	useEffect(() => {
 		const stateNames = Object.entries(globalFileData.cdcStateNames.content)

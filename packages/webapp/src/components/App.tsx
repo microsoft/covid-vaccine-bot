@@ -49,7 +49,7 @@ export default observer(function App() {
 			}
 			setSelectedKey(item.props.headerText)
 		},
-		[state, showPanel, hidePanel, setSelectedKey]
+		[showPanel, hidePanel, setSelectedKey]
 	)
 
 	const showDashboard = useCallback(() => {

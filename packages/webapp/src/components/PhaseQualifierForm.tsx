@@ -18,7 +18,7 @@ import {
 	getPhaseMoreInfoItems,
 	getPhaseMoreInfoTextByKey,
 	getPhaseQualifierItemsByKey,
-	getPhaseMoreInfoUrl
+	getPhaseMoreInfoUrl,
 } from '../selectors/phaseSelectors'
 
 import './PhaseQualifierForm.scss'
@@ -42,7 +42,7 @@ export default observer(function PhaseQualiferForm(
 		isRegion,
 		onRowItemRemove,
 		onRowItemTextChange,
-		onRowItemQualifierChange
+		onRowItemQualifierChange,
 	} = props
 	const phaseTagItems = useRef(getPhaseTagItems(selectedState))
 	const phaseQualifierItems = useRef(getPhaseQualifierItems(selectedState))
@@ -51,13 +51,18 @@ export default observer(function PhaseQualiferForm(
 		getPhaseQualifierItemsByKey(selectedState, rowItems.item.tagKey)
 	)
 
-	let overrideIconFlag = false;
+	let overrideIconFlag = false
 	let moreInfoKey = rowItems.item.moreInfoKey
-	if(isRegion) {
+	if (isRegion) {
 		const regionPhases = rowItems.item.location.value.vaccination.content.phases
-		const currPhase = regionPhases?.find((phase: { id: any }) => phase.id === rowItems.item.groupId)
-		if (currPhase){
-			const currQualification = currPhase?.qualifications.find((qualification: { question: any }) => qualification.question === rowItems.item.qualifierId)
+		const currPhase = regionPhases?.find(
+			(phase: { id: any }) => phase.id === rowItems.item.groupId
+		)
+		if (currPhase) {
+			const currQualification = currPhase?.qualifications.find(
+				(qualification: { question: any }) =>
+					qualification.question === rowItems.item.qualifierId
+			)
 			if (currQualification) {
 				overrideIconFlag = true
 				moreInfoKey = currQualification.moreInfoText
@@ -100,11 +105,8 @@ export default observer(function PhaseQualiferForm(
 		[phaseQualifierItems, rowItems]
 	)
 
-	
-
 	const onQualifierChange = useCallback(
 		(_event, option) => {
-
 			setMoreInfoText('')
 			setMoreInfoUrl('')
 
@@ -113,13 +115,13 @@ export default observer(function PhaseQualiferForm(
 				...{
 					qualifierId: option.key,
 					text: option.text,
-					moreInfoKey:'',
+					moreInfoKey: '',
 					moreInfoContent: '',
 				},
 			}
 			onRowItemQualifierChange(changedItem.current, rowItems.item)
 		},
-		[phaseMoreInfoItems, onRowItemQualifierChange, rowItems]
+		[onRowItemQualifierChange, rowItems]
 	)
 
 	const onMoreInfoTextChange = useCallback(
@@ -132,7 +134,7 @@ export default observer(function PhaseQualiferForm(
 			}
 			setMoreInfoText(value)
 		},
-		[rowItems]
+		[setMoreInfoText]
 	)
 
 	const onMoreInfoUrlChange = useCallback(
@@ -145,7 +147,7 @@ export default observer(function PhaseQualiferForm(
 			}
 			setMoreInfoUrl(value)
 		},
-		[rowItems]
+		[setMoreInfoUrl]
 	)
 
 	return (
@@ -157,7 +159,7 @@ export default observer(function PhaseQualiferForm(
 				<FontIcon
 					iconName="InfoSolid"
 					className="infoIcon"
-					style={{visibility: overrideIconFlag ? 'visible': 'hidden'}}
+					style={{ visibility: overrideIconFlag ? 'visible' : 'hidden' }}
 				/>
 				<Dropdown
 					options={phaseTagItems.current}
@@ -205,14 +207,14 @@ export default observer(function PhaseQualiferForm(
 					styles={{ root: { width: 'calc(100% - 32px)', padding: '5px 0' } }}
 					value={moreInfoText}
 					onChange={onMoreInfoTextChange}
-					onBlur={ () => onRowItemTextChange(changedItem.current, rowItems.item) }
+					onBlur={() => onRowItemTextChange(changedItem.current, rowItems.item)}
 				/>
 				<TextField
 					placeholder="More info url"
 					styles={{ root: { width: 'calc(100% - 32px)', padding: '5px 0' } }}
 					value={moreInfoUrl}
 					onChange={onMoreInfoUrlChange}
-					onBlur={ () => onRowItemTextChange(changedItem.current, rowItems.item) }
+					onBlur={() => onRowItemTextChange(changedItem.current, rowItems.item)}
 				/>
 			</div>
 		</div>

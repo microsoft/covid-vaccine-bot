@@ -38,27 +38,25 @@ const getContent = async (url: string, token: string) => {
 	return data
 }
 
-const createCSVDataString = ( contentObj:any ) => {
+const createCSVDataString = (contentObj: any) => {
 	const languageKeys = getLanguageKeys()
 	const contentKeys = Object.keys(contentObj)
 
-	let result = "String ID,"+languageKeys.join(',')+"\n"
+	let result = 'String ID,' + languageKeys.join(',') + '\n'
 
-	for(const key of contentKeys){
+	for (const key of contentKeys) {
 		const rowValues = [key]
-		languageKeys.forEach((lang:string) => {
-			if(contentObj[key][lang]){
-				rowValues.push(`"${contentObj[key][lang].replace(/"/g,'""')}"`)
+		languageKeys.forEach((lang: string) => {
+			if (contentObj[key][lang]) {
+				rowValues.push(`"${contentObj[key][lang].replace(/"/g, '""')}"`)
 			} else {
 				rowValues.push('')
 			}
 		})
 
-		result += rowValues.join(",")+"\n"
-
+		result += rowValues.join(',') + '\n'
 	}
 	return result
-
 }
 
 export const repoServices = async (
@@ -77,7 +75,7 @@ export const repoServices = async (
 					method: 'GET',
 					headers: {
 						Authorization: `token ${state.accessToken}`,
-						Accept: 'application/vnd.github.v3+json'
+						Accept: 'application/vnd.github.v3+json',
 					},
 				}
 			)
@@ -287,14 +285,12 @@ export const repoServices = async (
 				)
 
 				const newBranch = await createBranchResponse.json()
-				if(newBranch){
-
-					if(globalUpdates){
-
-						for(const i in globalUpdates){
+				if (newBranch) {
+					if (globalUpdates) {
+						for (const i in globalUpdates) {
 							const updateObj = globalUpdates[i]
 							const fileData = createCSVDataString(updateObj.content)
-							const fileResp = await fetch(
+							await fetch(
 								`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/contents/packages/plans/data/localization/${updateObj.path}`,
 								{
 									method: 'PUT',
@@ -310,17 +306,14 @@ export const repoServices = async (
 								}
 							)
 						}
-
 					}
 
-					if(locationUpdates){
-
-						for(const i in locationUpdates){
-							const locationKey = locationUpdates[i].key
+					if (locationUpdates) {
+						for (const i in locationUpdates) {
 							const locationObj = locationUpdates[i].data
 
 							//Info
-							let fileResp = await fetch(
+							await fetch(
 								`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/contents/packages/plans/data/policies/${locationObj.info.path}`,
 								{
 									method: 'PUT',
@@ -330,13 +323,15 @@ export const repoServices = async (
 									body: JSON.stringify({
 										branch: branchName,
 										message: 'auto file update',
-										content: utf8_to_b64(JSON.stringify(locationObj.info.content,null,'\t')),
+										content: utf8_to_b64(
+											JSON.stringify(locationObj.info.content, null, '\t')
+										),
 										sha: locationObj.info.sha,
 									}),
 								}
 							)
 							//Vaccingation
-							fileResp = await fetch(
+							await fetch(
 								`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/contents/packages/plans/data/policies/${locationObj.vaccination.path}`,
 								{
 									method: 'PUT',
@@ -346,13 +341,19 @@ export const repoServices = async (
 									body: JSON.stringify({
 										branch: branchName,
 										message: 'auto file update',
-										content: utf8_to_b64(JSON.stringify(locationObj.vaccination.content,null,'\t')),
+										content: utf8_to_b64(
+											JSON.stringify(
+												locationObj.vaccination.content,
+												null,
+												'\t'
+											)
+										),
 										sha: locationObj.vaccination.sha,
 									}),
 								}
 							)
 							//Strings
-							fileResp = await fetch(
+							await fetch(
 								`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/contents/packages/plans/data/policies/${locationObj.strings.path}`,
 								{
 									method: 'PUT',
@@ -362,19 +363,21 @@ export const repoServices = async (
 									body: JSON.stringify({
 										branch: branchName,
 										message: 'auto file update',
-										content: utf8_to_b64(createCSVDataString(locationObj.strings.content)),
+										content: utf8_to_b64(
+											createCSVDataString(locationObj.strings.content)
+										),
 										sha: locationObj.strings.sha,
 									}),
 								}
 							)
 
 							// Regions
-							if(locationObj.regions){
+							if (locationObj.regions) {
 								const regionKeys = Object.keys(locationObj.regions)
-								for(const key of regionKeys){
+								for (const key of regionKeys) {
 									const regionObj = locationObj.regions[key]
 									//Info
-									fileResp = await fetch(
+									await fetch(
 										`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/contents/packages/plans/data/policies/${regionObj.info.path}`,
 										{
 											method: 'PUT',
@@ -384,13 +387,15 @@ export const repoServices = async (
 											body: JSON.stringify({
 												branch: branchName,
 												message: 'auto file update',
-												content: utf8_to_b64(JSON.stringify(regionObj.info.content,null,'\t')),
+												content: utf8_to_b64(
+													JSON.stringify(regionObj.info.content, null, '\t')
+												),
 												sha: regionObj.info.sha,
 											}),
 										}
 									)
 									//Vaccination
-									fileResp = await fetch(
+									await fetch(
 										`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/contents/packages/plans/data/policies/${regionObj.vaccination.path}`,
 										{
 											method: 'PUT',
@@ -400,7 +405,13 @@ export const repoServices = async (
 											body: JSON.stringify({
 												branch: branchName,
 												message: 'auto file update',
-												content: utf8_to_b64(JSON.stringify(regionObj.vaccination.content,null,'\t')),
+												content: utf8_to_b64(
+													JSON.stringify(
+														regionObj.vaccination.content,
+														null,
+														'\t'
+													)
+												),
 												sha: regionObj.vaccination.sha,
 											}),
 										}
@@ -408,11 +419,8 @@ export const repoServices = async (
 								}
 							}
 						}
-
 					}
-
 				}
-
 
 				const prResp = await fetch(
 					`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/pulls`,
@@ -428,7 +436,6 @@ export const repoServices = async (
 						}),
 					}
 				)
-
 
 				return prResp.json()
 			}

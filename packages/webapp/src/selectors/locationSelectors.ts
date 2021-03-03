@@ -7,10 +7,9 @@ import { getAppStore } from '../store/store'
 export const getStateCustomStrings = (
 	selectedState: any,
 	keyFilter: string
-) => {
+): string => {
 	const returnVal = getCustomStrings(selectedState.value, keyFilter)
-	if(returnVal.length > 0)
-		return returnVal[0].text
+	if (returnVal.length > 0) return returnVal[0].text
 
 	return ''
 }
@@ -18,19 +17,18 @@ export const getStateCustomStrings = (
 export const getRegionCustomStrings = (
 	selectedRegion: any,
 	keyFilter: string
-) => {
+): string => {
 	const { repoFileData } = getAppStore()
 	const selectedState =
 		repoFileData?.[selectedRegion.value.info.path.split('/')[0]]
 
-		const returnVal = getCustomStrings(selectedState, keyFilter)
-		if(returnVal.length > 0)
-			return returnVal[0].text
+	const returnVal = getCustomStrings(selectedState, keyFilter)
+	if (returnVal.length > 0) return returnVal[0].text
 
-		return ''
+	return ''
 }
 
-const getCustomStrings = (selectedState: any, keyFilter: string) => {
+const getCustomStrings = (selectedState: any, keyFilter: string): any[] => {
 	const { globalFileData, currentLanguage } = getAppStore()
 
 	const customStringsList: any[] = selectedState
