@@ -579,7 +579,7 @@
 # Federated States of Micronesia (territory)
 - Active Phase: **Phase 1A**
 
-- Info Link: **[Federated States of Micronesia National Government, Department of Health and Social Affairs](https://www.fsmgov.org/index.html)**
+- Info Link: **[info](https://www.fsmgov.org/index.html)**
 
 ## Phases
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
@@ -2681,11 +2681,11 @@
 |CDC/Marshall_Islands/state_link|Republic of the Marshall Islands Ministry of Health and Human Services|Ministerio de Salud y Servicios Humanos de la República de las Islas Marshall|马绍尔群岛共和国卫生与公共服务部|마셜 제도 공화국 보건복지부|Bộ Y tế và Dịch vụ Nhân sinh Cộng hòa Quần đảo Marshall|none
 |CDC/Northern_Mariana_Islands/state_link|Commonwealth of the Northern Mariana Islands, Commonwealth Healthcare Corporation|Commonwealth de las Islas Marianas del Norte, Commonwealth Healthcare Corporation|北马里亚纳群岛自由联邦的联邦医疗保健公司|북마리아나 제도 연방 보건의료 공단|Khối thịnh vượng Quần đảo Bắc Mariana, Cơ quan Y tế Khối thịnh vượng|none
 |CDC/Rhode_Island/state_link|Rhode Island Department of Health|Departamento de Salud de Rhode Island|罗得岛州卫生部|로드아일랜드 보건부|Sở Y tế Đảo Rhode|none
-|CDC/Virgin_Islands/state_link|US Virgin Islands Department of Health|Departamento de Salud de las Islas Vírgenes de los EE. UU.|美属维尔京群岛卫生部|미국령 버진아일랜드 보건부|Sở Y tế Quần đảo Virgin thuộc Hoa Kỳ|none
+|CDC/us_virgin_islands/state_link|US Virgin Islands Department of Health|Departamento de Salud de las Islas Vírgenes de los EE. UU.|美属维尔京群岛卫生部|미국령 버진아일랜드 보건부|Sở Y tế Quần đảo Virgin thuộc Hoa Kỳ|none
 |CDC/New_Hampshire/state_link|New Hampshire Department of Health and Human Services|Departamento de Salud y Servicios Humanos de Nuevo Hampshire|新罕布什尔州卫生与公共服务部|뉴햄프셔 보건복지부|Sở Y tế và Dịch vụ Nhân sinh New Hampshire|none
 |CDC/Wisconsin/state_link|Wisconsin Department of Health Services|Departamento de Servicios de Salud de Wisconsin|威斯康星州卫生服务部|위스콘신 보건부|Sở Y tế Wisconsin|none
 |CDC/Kansas/state_link|Kansas Department of Health and Environment|Departamento de Salud y Medio Ambiente de Kansas|堪萨斯州卫生与环境部|캔자스 공중보건환경부|Sở Y tế và Môi trường Kansas|none
-|CDC/Federated_States_Of_Micronesia/state_link|Federated States of Micronesia National Government, Department of Health and Social Affairs|Estados Federados del Gobierno Nacional de Micronesia, Departamento de Salud y Asuntos Sociales|密克罗尼西亚联邦国民政府卫生与社会事务部|미크로네시아 연방 중앙 정부, 보건사회부|Bộ Y tế và Xã hội, Chính phủ Liên bang Micronesia|none
+|CDC/federated_states_of_micronesia/state_link|Federated States of Micronesia National Government, Department of Health and Social Affairs|Estados Federados del Gobierno Nacional de Micronesia, Departamento de Salud y Asuntos Sociales|密克罗尼西亚联邦国民政府卫生与社会事务部|미크로네시아 연방 중앙 정부, 보건사회부|Bộ Y tế và Xã hội, Chính phủ Liên bang Micronesia|none
 |CDC/Kentucky/state_link|Kentucky Department for Public Health|Departamento de Salud Pública de Kentucky|肯塔基州公共卫生部|켄터키 공중보건부|Sở Y tế Công cộng Kentucky|none
 |CDC/South_Carolina/state_link|South Carolina Department of Health and Environmental Control|Departamento de Salud y Control Ambiental de Carolina del Sur|南卡罗来纳州卫生与环境控制部|사우스캐롤라이나 보건환경관리과|Sở Y tế và Kiểm soát Môi trường Nam Carolina|none
 |CDC/Minnesota/state_link|Minnesota Department of Health|Departamento de Salud de Minnesota|明尼苏达州卫生部|미네소타 보건부|Sở Y tế Minnesota|none
@@ -2754,7 +2754,7 @@
 |CDC/Rhode_Island/state_name|Rhode Island|Rhode Island|罗得岛|로드아일랜드|Rhode Island|none
 |CDC/American_Samoa/state_name|American Samoa|Samoa Estadounidense|美属萨摩亚|미국령 사모아|American Samoa|none
 |CDC/New_Hampshire/state_name|New Hampshire|Nuevo Hampshire|新罕布什尔州|뉴햄프셔|New Hampshire|none
-|CDC/Federated_States_Of_Micronesia/state_name|Federated States Of Micronesia|Estados Federados de Micronesia|密克罗尼西亚联邦|미크로네시아 연방|Federated States Of Micronesia|none
+|CDC/federated_states_of_micronesia/state_name|Federated States Of Micronesia|Estados Federados de Micronesia|密克罗尼西亚联邦|미크로네시아 연방|Federated States Of Micronesia|none
 |CDC/Vermont/state_name|Vermont|Vermont|佛蒙特州|버몬트|Vermont|none
 |CDC/Arizona/state_name|Arizona|Arizona|亚利桑那州|애리조나|Arizona|none
 |CDC/South_Carolina/state_name|South Carolina|Carolina del Sur|南卡罗来纳州|사우스캐롤라이나|South Carolina|none
@@ -2788,7 +2788,7 @@
 |CDC/Maine/state_name|Maine|Maine|缅因州|메인|Maine|none
 |CDC/North_Dakota/state_name|North Dakota|Dakota del Norte|北达科他州|노스다코타|North Dakota|none
 |CDC/Tennessee/state_name|Tennessee|Tennessee|田纳西州|테네시|Tennessee|none
-|CDC/Virgin_Islands/state_name|Virgin Islands|Islas Vírgenes|维尔京群岛|버진아일랜드|Virgin Islands|none
+|CDC/us_virgin_islands/state_name|Virgin Islands|Islas Vírgenes|维尔京群岛|버진아일랜드|Virgin Islands|none
 |c19/how_did_we_do|Let us know how we did at [$SUPPORT_EMAIL](mailto:$SUPPORT_EMAIL)|not defined|not defined|not defined|not defined|none
 |c19.entry/prompt|How can I help you?|not defined|not defined|not defined|not defined|none
 |c19.entry/tos|The COVID-19 Vaccine Eligibility bot aggregate data from trusted and verified sources to help understand your vaccine eligibility. This system does not provide medical advice and is not intended for use as a diagnostic or treatment tool for any disease, including COVID-19. You can provide feedback by emailing [$SUPPORT_EMAIL](mailto:$SUPPORT_EMAIL)|not defined|not defined|not defined|not defined|none

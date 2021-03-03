@@ -16,13 +16,14 @@ export const getAppState = (): AppState => {
 		branches: undefined,
 		issues: undefined,
 		repoFileData: undefined,
+		initRepoFileData: undefined,
 		globalFileData: undefined,
+		initGlobalFileData: undefined,
 		mainBranch: undefined,
-		fileChanges: [],
 		currentLanguage: 'en-us',
-		toggleAddLocation: false,
 		toggleQualifier: false,
-		isEditable: false,
+		isEditable: true,
+		pendingChanges: false
 	}
 }
 

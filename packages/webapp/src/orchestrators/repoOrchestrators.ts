@@ -19,8 +19,20 @@ import { repoServices } from '../services/repoServices'
 
 orchestrator(createPR, async (message) => {
 	const { fileData } = message
-	const resp = await repoServices('createPR', fileData)
-	handleCreatePR(resp)
+	let resp = await repoServices('createPR', fileData)
+
+	if(resp){
+
+		resp = await repoServices('getBranches')
+		setBranchList(resp)
+
+		resp = await repoServices('getRepoFileData')
+		setRepoFileData(resp)
+
+		resp = await repoServices('getIssues')
+		setIssuesList(resp, fileData[2]())
+		handleCreatePR()
+	}
 })
 
 orchestrator(getRepoFileData, async () => {

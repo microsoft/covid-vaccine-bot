@@ -20,7 +20,7 @@ import './LocationForm.scss'
 
 export interface LocationFormProp {
 	item?: any
-	onSubmit?: (locationData: any) => void
+	onSubmit?: (locationData: any, prevItem:any) => void
 	onCancel?: () => void
 	isRegion?: boolean
 }
@@ -34,17 +34,17 @@ const setInitialData = (item?: any, isRegion?: boolean) => {
 
 	if (item) {
 		const { info, vaccination } = item?.value || {}
-		const { info: vacInfo, scheduling_phone, eligibility_plan } =
+		const { info: vacInfo, scheduling_phone, eligibility_plan, workflow, scheduling, providers, eligibility } =
 			vaccination?.content?.links || {}
 
 		return {
 			details: info.content.name,
 			regionType: info.content.type,
 			info: vacInfo?.url || '',
-			workflow: '',
-			scheduling: '',
-			providers: '',
-			eligibility: '',
+			workflow: workflow?.url || '',
+			scheduling: scheduling?.url ||'',
+			providers: providers?.url || '',
+			eligibility: eligibility?.url || '',
 			eligibilityPlan: eligibility_plan?.url || '',
 			schedulingPhone: scheduling_phone?.text
 				? getStrings(item, scheduling_phone.text, isRegion)
@@ -66,33 +66,30 @@ const setInitialData = (item?: any, isRegion?: boolean) => {
 }
 
 export default observer(function LocationForm(props: LocationFormProp) {
-	const { onSubmit, onCancel, item, isRegion } = props
-	const [formData, setFormData] = useState<any>(setInitialData(item, isRegion))
-	const fieldChanges = useRef<any>(formData)
-	const regionTypeOptions = [
-		{
-			key: 'state',
-			text: 'State',
-		},
-		{
-			key: 'territory',
-			text: 'Territory',
-		},
-		{
-			key: 'tribal_land',
-			text: 'Tribal land',
-		},
-		{
-			key: 'county',
-			text: 'County',
-		},
-		{
-			key: 'city',
-			text: 'City',
-		},
-	]
+    const { onSubmit, onCancel, item, isRegion } = props
+    const [formData, setFormData] = useState<any>(setInitialData(item, isRegion))
+    const fieldChanges = useRef<any>(formData)
+    const regionTypeOptions = [
+        {
+            key: 'state',
+            text: 'State'
+        },{
+            key: 'territory',
+            text: 'Territory'
+        },{
+            key: 'tribal_land',
+            text: 'Tribal land'
+        },{
+            key: 'county',
+            text: 'County'
+        },{
+            key: 'city',
+            text: 'City'
+        }
+    ].filter(region => isRegion ? region.key !== 'state' : true)
 
-	const formTitle = item ? `Edit location` : 'Add new location'
+    const baseTitle = isRegion ? 'sublocation' : 'location'
+    const formTitle = item ? `Edit ${baseTitle}` : `Add new ${baseTitle}`
 
 	const handleRegionChange = useCallback(
 		(_ev: any, item?: IDropdownOption) => {
@@ -122,6 +119,10 @@ export default observer(function LocationForm(props: LocationFormProp) {
 		},
 		[formData, fieldChanges]
 	)
+
+	const canSubmit = useCallback(() => {
+		return formData.details !== '' && formData.regionType !== ''
+	},[formData])
 
 	return (
 		<div className="modalWrapper">
@@ -187,7 +188,7 @@ export default observer(function LocationForm(props: LocationFormProp) {
 				/>
 			</div>
 			<div className="modalFooter">
-				<PrimaryButton text="Submit" onClick={() => onSubmit?.(formData)} />
+				<PrimaryButton text="Submit" disabled={!canSubmit()} onClick={() => onSubmit?.(formData, item)} />
 				<DefaultButton text="Cancel" onClick={() => onCancel?.()} />
 			</div>
 		</div>

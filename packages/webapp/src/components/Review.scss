@@ -1,0 +1,22 @@
+@import '@fluentui/react/dist/sass/_References';
+
+.reviewPageContainer {
+	display: flex;
+	flex-direction: column;
+
+	.submitContainer {
+		margin: 10px 0px;
+		text-align:center;
+	}
+
+	.loadingContainer{
+		display: flex;
+	    justify-content: center;
+	    text-align: center;
+
+	    .ms-ProgressIndicator{
+	    width:90%;
+	    margin-top:20%;
+	    }
+	}
+}

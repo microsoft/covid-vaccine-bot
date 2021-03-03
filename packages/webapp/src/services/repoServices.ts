@@ -5,7 +5,7 @@
 import parse from 'csv-parse/lib/sync'
 import { getAppStore } from '../store/store'
 import { convertCSVDataToObj } from '../utils/dataUtils'
-import { b64_to_utf8, utf8_to_b64 } from '../utils/textUtils'
+import { b64_to_utf8, utf8_to_b64, getLanguageKeys } from '../utils/textUtils'
 
 const createPath = (obj: any, pathInput: string, value: any = undefined) => {
 	let path = pathInput.split('/')
@@ -38,6 +38,27 @@ const getContent = async (url: string, token: string) => {
 	return data
 }
 
+const createCSVDataString = (contentObj: any) => {
+	const languageKeys = getLanguageKeys()
+	const contentKeys = Object.keys(contentObj)
+
+	let result = 'String ID,' + languageKeys.join(',') + '\n'
+
+	for (const key of contentKeys) {
+		const rowValues = [key]
+		languageKeys.forEach((lang: string) => {
+			if (contentObj[key][lang]) {
+				rowValues.push(`"${contentObj[key][lang].replace(/"/g, '""')}"`)
+			} else {
+				rowValues.push('')
+			}
+		})
+
+		result += rowValues.join(',') + '\n'
+	}
+	return result
+}
+
 export const repoServices = async (
 	command: string,
 	extraData: any = undefined
@@ -54,6 +75,7 @@ export const repoServices = async (
 					method: 'GET',
 					headers: {
 						Authorization: `token ${state.accessToken}`,
+						Accept: 'application/vnd.github.v3+json',
 					},
 				}
 			)
@@ -243,6 +265,9 @@ export const repoServices = async (
 			if (state?.mainBranch) {
 				const mainBranch = state?.mainBranch
 				const branchName = `refs/heads/${state.username}-policy-${Date.now()}`
+				const globalUpdates = extraData[0]
+				const locationUpdates = extraData[1]
+
 				const createBranchResponse = await fetch(
 					`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/git/refs`,
 					{
@@ -258,22 +283,142 @@ export const repoServices = async (
 				)
 
 				const newBranch = await createBranchResponse.json()
-
-				const fileResp = await fetch(
-					`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/contents/packages/plans/data/policies/${extraData.path}`,
-					{
-						method: 'PUT',
-						headers: {
-							Authorization: `token ${state.accessToken}`,
-						},
-						body: JSON.stringify({
-							branch: branchName,
-							message: 'auto file creation',
-							content: utf8_to_b64('[FileContent]'),
-							sha: extraData.sha,
-						}),
+				if (newBranch) {
+					if (globalUpdates) {
+						for (const i in globalUpdates) {
+							const updateObj = globalUpdates[i]
+							const fileData = createCSVDataString(updateObj.content)
+							await fetch(
+								`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/contents/packages/plans/data/localization/${updateObj.path}`,
+								{
+									method: 'PUT',
+									headers: {
+										Authorization: `token ${state.accessToken}`,
+									},
+									body: JSON.stringify({
+										branch: branchName,
+										message: 'auto file update',
+										content: utf8_to_b64(fileData),
+										sha: updateObj.sha,
+									}),
+								}
+							)
+						}
 					}
-				)
+
+					if (locationUpdates) {
+						for (const i in locationUpdates) {
+							const locationObj = locationUpdates[i].data
+
+							//Info
+							await fetch(
+								`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/contents/packages/plans/data/policies/${locationObj.info.path}`,
+								{
+									method: 'PUT',
+									headers: {
+										Authorization: `token ${state.accessToken}`,
+									},
+									body: JSON.stringify({
+										branch: branchName,
+										message: 'auto file update',
+										content: utf8_to_b64(
+											JSON.stringify(locationObj.info.content, null, '\t')
+										),
+										sha: locationObj.info.sha,
+									}),
+								}
+							)
+							//Vaccingation
+							await fetch(
+								`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/contents/packages/plans/data/policies/${locationObj.vaccination.path}`,
+								{
+									method: 'PUT',
+									headers: {
+										Authorization: `token ${state.accessToken}`,
+									},
+									body: JSON.stringify({
+										branch: branchName,
+										message: 'auto file update',
+										content: utf8_to_b64(
+											JSON.stringify(
+												locationObj.vaccination.content,
+												null,
+												'\t'
+											)
+										),
+										sha: locationObj.vaccination.sha,
+									}),
+								}
+							)
+							//Strings
+							await fetch(
+								`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/contents/packages/plans/data/policies/${locationObj.strings.path}`,
+								{
+									method: 'PUT',
+									headers: {
+										Authorization: `token ${state.accessToken}`,
+									},
+									body: JSON.stringify({
+										branch: branchName,
+										message: 'auto file update',
+										content: utf8_to_b64(
+											createCSVDataString(locationObj.strings.content)
+										),
+										sha: locationObj.strings.sha,
+									}),
+								}
+							)
+
+							// Regions
+							if (locationObj.regions) {
+								const regionKeys = Object.keys(locationObj.regions)
+								for (const key of regionKeys) {
+									const regionObj = locationObj.regions[key]
+									//Info
+									await fetch(
+										`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/contents/packages/plans/data/policies/${regionObj.info.path}`,
+										{
+											method: 'PUT',
+											headers: {
+												Authorization: `token ${state.accessToken}`,
+											},
+											body: JSON.stringify({
+												branch: branchName,
+												message: 'auto file update',
+												content: utf8_to_b64(
+													JSON.stringify(regionObj.info.content, null, '\t')
+												),
+												sha: regionObj.info.sha,
+											}),
+										}
+									)
+									//Vaccination
+									await fetch(
+										`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/contents/packages/plans/data/policies/${regionObj.vaccination.path}`,
+										{
+											method: 'PUT',
+											headers: {
+												Authorization: `token ${state.accessToken}`,
+											},
+											body: JSON.stringify({
+												branch: branchName,
+												message: 'auto file update',
+												content: utf8_to_b64(
+													JSON.stringify(
+														regionObj.vaccination.content,
+														null,
+														'\t'
+													)
+												),
+												sha: regionObj.vaccination.sha,
+											}),
+										}
+									)
+								}
+							}
+						}
+					}
+				}
 
 				const prResp = await fetch(
 					`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/pulls`,
@@ -289,8 +434,6 @@ export const repoServices = async (
 						}),
 					}
 				)
-
-				console.log(newBranch, fileResp)
 
 				return prResp.json()
 			}

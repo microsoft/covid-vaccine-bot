@@ -13,6 +13,12 @@ import {
 import { useBoolean } from '@uifabric/react-hooks'
 import { observer } from 'mobx-react-lite'
 import { useState, useRef, useEffect, useCallback } from 'react'
+import {
+	updateLocationList,
+	addPhase,
+	updatePhase,
+	updateLocationData,
+} from '../mutators/repoMutators'
 import { getAppStore } from '../store/store'
 import { toProperCase } from '../utils/textUtils'
 import LocationForm from './LocationForm'
@@ -42,7 +48,7 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 		isPhaseModalOpen,
 		{ setTrue: openPhaseModal, setFalse: dismissPhaseModal },
 	] = useBoolean(false)
-	const selectedSublocationItem = useRef<any>(null)
+	const selectedModalFormItem = useRef<any>(null)
 
 	const state = getAppStore()
 
@@ -95,30 +101,45 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 			minWidth: 200,
 			isResizable: false,
 		},
-	]
+		{
+			key: 'editCol',
+			name: '',
+			fieldName: 'editPhase',
+			minWidth: 50,
+			isResizable: false,
+		},
+	].filter((loc) => (state.isEditable ? true : loc.key !== 'editCol'))
 
-	const [phaseItemList, setPhaseItemList] = useState<any[]>(
-		setInitialPhaseItems(selectedState)
-	)
+	const [phaseItemList, setPhaseItemList] = useState<any[]>([])
 
 	useEffect(() => {
-		if (selectedState?.regions > 0) {
+		const selectedStateObj = state.repoFileData[selectedState.key]
+		const regions = selectedStateObj?.regions ?? {}
+		if (Object.keys(regions).length > 0) {
 			const tempList: any[] = []
-			Object.entries(selectedState.value.regions).forEach(([key, value]) => {
+			Object.entries(regions).forEach(([key, value]) => {
 				const valObj = value as any
 				tempList.push({
 					key: key,
-					name: toProperCase(key),
+					name: toProperCase(valObj.info.content.name),
 					value: value,
 					phase: valObj.vaccination.content.activePhase
 						? valObj.vaccination.content.activePhase
-						: selectedState.value.vaccination.content.activePhase,
+						: selectedStateObj.vaccination.content.activePhase,
 				})
 			})
 			setFilteredRegionsList(tempList)
 			stateRegionsFullList.current = tempList
 		}
-	}, [selectedState, stateRegionsFullList])
+
+		if (selectedStateObj) {
+			const newList = setInitialPhaseItems({
+				key: selectedStateObj.info.content.id,
+				value: selectedStateObj,
+			})
+			setPhaseItemList(newList)
+		}
+	}, [state.repoFileData, selectedState, stateRegionsFullList, setPhaseItemList])
 
 	const selectedPhase = useCallback(
 		(isRegion: boolean, value: any) => {
@@ -128,18 +149,31 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 	)
 
 	const onLocationFormSubmit = useCallback(
-		(_locationData) => {
+		(locationData, prevItem) => {
 			dismissLocationModal()
+			if (!prevItem) {
+				updateLocationList(locationData, true, selectedState)
+			} else {
+				updateLocationData(locationData, true, prevItem, selectedState)
+			}
 		},
-		[dismissLocationModal]
+		[dismissLocationModal, selectedState]
 	)
 
 	const onLocationFormOpen = useCallback(
 		(item?: any) => {
-			selectedSublocationItem.current = item ?? null
+			selectedModalFormItem.current = item ?? null
 			openLocationModal()
 		},
 		[openLocationModal]
+	)
+
+	const onPhaseFormOpen = useCallback(
+		(item?: any) => {
+			selectedModalFormItem.current = item ?? null
+			openPhaseModal()
+		},
+		[openPhaseModal]
 	)
 
 	const onRenderItemColumn = useCallback(
@@ -151,14 +185,18 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 					<FontIcon
 						iconName="Edit"
 						className="editIcon"
-						onClick={() => onLocationFormOpen(item)}
+						onClick={() =>
+							column?.fieldName === 'editLocation'
+								? onLocationFormOpen(item)
+								: onPhaseFormOpen(item)
+						}
 					/>
 				) : null
 			} else {
 				return <span>{fieldContent}</span>
 			}
 		},
-		[onLocationFormOpen, state.isEditable]
+		[onLocationFormOpen, onPhaseFormOpen, state.isEditable]
 	)
 
 	const onRegionFilter = useCallback(
@@ -176,29 +214,21 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 		[stateRegionsFullList]
 	)
 
-	const onPhaseFormSubmit = useCallback(
-		(phaseData) => {
-			dismissPhaseModal()
+	const onPhaseFormSubmit = (phaseData: any) => {
+		dismissPhaseModal()
 
-			//TODO: check to move added phase to repoFileData level if possible
-			const updatedList: any[] = phaseItemList
-			updatedList.push({
-				key: String(phaseData.phaseId) + phaseItemList.length,
-				keyId: phaseData.name + (phaseData.isActive ? ' (active)' : ''),
-				name: phaseData.name + (phaseData.isActive ? ' (active)' : ''),
-				qualifications: 0,
-				value: {
-					id: phaseData.phaseId,
-					qualifications: [],
-				},
-				isActive: phaseData.isActive,
-				isNew: true,
+		if (phaseData.phaseId) {
+			updatePhase({
+				locationKey: selectedState.key,
+				item: phaseData,
 			})
-
-			setPhaseItemList(updatedList)
-		},
-		[phaseItemList, setPhaseItemList, dismissPhaseModal]
-	)
+		} else {
+			addPhase({
+				locationKey: selectedState.key,
+				item: phaseData,
+			})
+		}
+	}
 
 	return (
 		<div className="bodyContainer">
@@ -260,75 +290,78 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 			) : (
 				<div className="bodyContent">
 					<section>
-						{selectedState.value.vaccination.content.phases.length > 0 ? (
-							<>
-								<div className="listTitle">Phases</div>
-								<div className="searchRow">
-									<div></div>
-									{state.isEditable && (
-										<div
-											className="addLocationHeaderButton"
-											onClick={openPhaseModal}
-										>
-											<FontIcon
-												iconName="CircleAdditionSolid"
-												style={{ color: '#0078d4' }}
-											/>
-											Add Phase
-										</div>
-									)}
+						<div className="listTitle">Phases</div>
+						<div className="searchRow">
+							<div></div>
+							{state.isEditable && (
+								<div
+									className="addLocationHeaderButton"
+									onClick={() => onPhaseFormOpen(null)}
+								>
+									<FontIcon
+										iconName="CircleAdditionSolid"
+										style={{ color: '#0078d4' }}
+									/>
+									Add Phase
 								</div>
-								<DetailsList
-									items={phaseItemList}
-									columns={phaseColumns}
-									setKey="set"
-									layoutMode={DetailsListLayoutMode.justified}
-									checkboxVisibility={2}
-									onItemInvoked={(item) => selectedPhase(false, item)}
-								/>
-							</>
+							)}
+						</div>
+						{selectedState.value.vaccination.content.phases &&
+						selectedState.value.vaccination.content.phases.length > 0 ? (
+							<DetailsList
+								items={phaseItemList}
+								columns={phaseColumns}
+								setKey="set"
+								layoutMode={DetailsListLayoutMode.justified}
+								checkboxVisibility={2}
+								onItemInvoked={(item) => selectedPhase(false, item)}
+								onRenderItemColumn={onRenderItemColumn}
+								className="locationDetailsList"
+							/>
 						) : (
 							<div>No phases available at this time.</div>
 						)}
 					</section>
 					<section>
-						{selectedState.regions > 0 ? (
-							<>
-								<div className="listTitle">Sublocation</div>
-								<div className="searchRow">
-									<SearchBox
-										styles={{ root: { width: 400 } }}
-										placeholder="Search"
-										onChange={(ev, text) => onRegionFilter(ev, text)}
-									/>
-									{state.isEditable && (
-										<div
-											className="addLocationHeaderButton"
-											onClick={() => onLocationFormOpen(null)}
-										>
-											<FontIcon
-												iconName="CircleAdditionSolid"
-												style={{ color: '#0078d4' }}
-											/>
-											Add Sublocation
-										</div>
-									)}
-								</div>
-								<DetailsList
-									items={filteredRegionsList}
-									columns={subLocationsColumns}
-									setKey="set"
-									layoutMode={DetailsListLayoutMode.justified}
-									selectionPreservedOnEmptyClick={true}
-									ariaLabelForSelectionColumn="Toggle selection"
-									ariaLabelForSelectAllCheckbox="Toggle selection for all items"
-									checkButtonAriaLabel="Row checkbox"
-									checkboxVisibility={2}
-									onItemInvoked={(item) => selectedPhase(true, item)}
-									onRenderItemColumn={onRenderItemColumn}
-									className="locationDetailsList"
+						<div className="listTitle">Sublocation</div>
+						<div className="searchRow">
+							{stateRegionsFullList.current.length > 0 ? (
+								<SearchBox
+									styles={{ root: { width: 400 } }}
+									placeholder="Search"
+									onChange={(ev, text) => onRegionFilter(ev, text)}
 								/>
-							</>
+							) : (
+								<div></div>
+							)}
+							{state.isEditable && (
+								<div
+									className="addLocationHeaderButton"
+									onClick={() => onLocationFormOpen(null)}
+								>
+									<FontIcon
+										iconName="CircleAdditionSolid"
+										style={{ color: '#0078d4' }}
+									/>
+									Add Sublocation
+								</div>
+							)}
+						</div>
+						{stateRegionsFullList.current.length > 0 ? (
+							<DetailsList
+								items={filteredRegionsList}
+								columns={subLocationsColumns}
+								setKey="set"
+								layoutMode={DetailsListLayoutMode.justified}
+								selectionPreservedOnEmptyClick={true}
+								ariaLabelForSelectionColumn="Toggle selection"
+								ariaLabelForSelectAllCheckbox="Toggle selection for all items"
+								checkButtonAriaLabel="Row checkbox"
+								checkboxVisibility={2}
+								onItemInvoked={(item) => selectedPhase(true, item)}
+								onRenderItemColumn={onRenderItemColumn}
+								className="locationDetailsList"
+							/>
 						) : (
 							<div>No regions available at this time.</div>
 						)}
@@ -342,7 +375,7 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 				isBlocking={false}
 			>
 				<LocationForm
-					item={selectedSublocationItem.current}
+					item={selectedModalFormItem.current}
 					onCancel={dismissLocationModal}
 					onSubmit={onLocationFormSubmit}
 					isRegion={true}
@@ -354,13 +387,20 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 				isDarkOverlay={true}
 				isBlocking={false}
 			>
-				<PhaseForm onCancel={dismissPhaseModal} onSubmit={onPhaseFormSubmit} />
+				<PhaseForm
+					item={selectedModalFormItem.current}
+					onCancel={dismissPhaseModal}
+					onSubmit={onPhaseFormSubmit}
+				/>
 			</Modal>
 		</div>
 	)
 })
 
 const setInitialPhaseItems = (selectedState: any): any[] => {
+	if (!selectedState.value.vaccination.content.phases) {
+		return []
+	}
 	return selectedState.value.vaccination.content.phases.map(
 		(phase: any, idx: number) => {
 			const activePhase: string =

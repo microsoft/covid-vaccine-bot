@@ -14,6 +14,10 @@ import {
 import { useBoolean } from '@uifabric/react-hooks'
 import { observer } from 'mobx-react-lite'
 import { useState, useRef, useEffect, useCallback } from 'react'
+import {
+	updateLocationList,
+	updateLocationData,
+} from '../mutators/repoMutators'
 import { getAppStore } from '../store/store'
 import LocationForm from './LocationForm'
 
@@ -63,26 +67,28 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 	useEffect(() => {
 		if (state.repoFileData) {
 			const tempList: any[] = []
-			Object.entries(state.repoFileData).forEach(([key, value]) => {
-				const stateId = value?.info?.content.id
-				const stateNames = state?.globalFileData?.cdcStateNames.content
+			Object.entries(state.repoFileData).forEach(
+				([key, value]: [string, any]) => {
+					const stateId = value?.info?.content.id
+					const stateNames = state?.globalFileData?.cdcStateNames.content
 
-				const stateLabel =
-					stateNames[`cdc/${stateId}/state_name`] &&
-					stateNames[`cdc/${stateId}/state_name`][state.currentLanguage] &&
-					stateNames[`cdc/${stateId}/state_name`][
-						state.currentLanguage
-					].trim() !== ''
-						? stateNames[`cdc/${stateId}/state_name`][state.currentLanguage]
-						: `*Translation Not Found* (${stateId})`
+					const stateLabel =
+						stateNames[`cdc/${stateId}/state_name`] &&
+						stateNames[`cdc/${stateId}/state_name`][state.currentLanguage] &&
+						stateNames[`cdc/${stateId}/state_name`][
+							state.currentLanguage
+						].trim() !== ''
+							? stateNames[`cdc/${stateId}/state_name`][state.currentLanguage]
+							: `*Translation Not Found* (${stateId})`
 
-				tempList.push({
-					key: key,
-					text: stateLabel,
-					regions: value?.regions ? Object.keys(value.regions).length : 0,
-					value: value,
-				})
-			})
+					tempList.push({
+						key: key,
+						text: stateLabel,
+						regions: value?.regions ? Object.keys(value.regions).length : 0,
+						value: value,
+					})
+				}
+			)
 			setFilteredStateList(tempList)
 			stateRepoFullList.current = tempList
 		}
@@ -111,8 +117,13 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 	)
 
 	const onLocationFormSubmit = useCallback(
-		(_locationData) => {
+		(locationData, prevItem) => {
 			dismissLocationModal()
+			if (!prevItem) {
+				updateLocationList(locationData, false)
+			} else {
+				updateLocationData(locationData, false, prevItem)
+			}
 		},
 		[dismissLocationModal]
 	)

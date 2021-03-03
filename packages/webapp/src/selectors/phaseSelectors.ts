@@ -39,16 +39,52 @@ export const getPhaseMoreInfoItems = (selectedState?: any) => {
 }
 
 export const getPhaseMoreInfoTextByKey = (selectedState?: any, selectedKey?: any) => {
-    return getCustomStrings(selectedState, selectedKey)[0].text
-}
+    if (selectedKey) {
+        const res = getExactCustomStrings(selectedState, selectedKey)
+        if (res.length > 0) {
+            return res[0].text
+        }
+    }
 
+    return ''
+}
+export const getPhaseMoreInfoUrl = (isRegion:boolean, rowItems:any) => {
+        if(isRegion){
+        const regionPhases = rowItems.item.location.value.vaccination.content.phases
+        const currPhase = regionPhases?.find((phase: { id: any }) => phase.id === rowItems.item.groupId)
+        if (currPhase){
+            const currQualification = currPhase?.qualifications.find((qualification: { question: any }) => qualification.question === rowItems.item.qualifierId)
+            if (currQualification) {
+                return currQualification.moreInfoUrl 
+            }
+        }
+        }
+        return rowItems.item.moreInfoUrl
+    }
 const getCustomStrings = (selectedState?: any, keyFilter?: string) => {
     const { globalFileData, currentLanguage } = getAppStore();
     const qualifierList: any[] = selectedState
-        ? [...Object.entries(selectedState.value.strings.content), ...Object.entries(globalFileData.customStrings.content)]
+        ? [...Object.entries(selectedState.value?.strings?.content ?? {}), ...Object.entries(globalFileData.customStrings.content)]
         : [...Object.entries(globalFileData.customStrings.content)]
 
     const filteredList = keyFilter ? qualifierList.filter(([key, _value]:[string, any]) => key.includes(keyFilter)) : qualifierList
+    return filteredList
+        .map(([key, value]:[string, any]) => {
+            return {
+                key: key,
+                text: value[currentLanguage]
+            }
+        })
+        .sort((a,b) => (a.text > b.text) ? 1 : -1)
+}
+
+const getExactCustomStrings = (selectedState?: any, keyFilter?: string) => {
+    const { globalFileData, currentLanguage } = getAppStore();
+    const qualifierList: any[] = selectedState
+        ? [...Object.entries(selectedState.value?.strings?.content ?? {}), ...Object.entries(globalFileData.customStrings.content)]
+        : [...Object.entries(globalFileData.customStrings.content)]
+
+    const filteredList = keyFilter ? qualifierList.filter(([key, _value]:[string, any]) => key.toLowerCase() === keyFilter) : qualifierList
     return filteredList
         .map(([key, value]:[string, any]) => {
             return {

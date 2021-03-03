@@ -8,15 +8,16 @@ import {
 	DirectionalHint,
 	TextField,
 	IDetailsRowProps,
+	FontIcon,
 } from '@fluentui/react'
 import { observer } from 'mobx-react-lite'
 import { useCallback, useState, useRef } from 'react'
 import {
 	getPhaseTagItems,
 	getPhaseQualifierItems,
-	getPhaseMoreInfoItems,
 	getPhaseMoreInfoTextByKey,
 	getPhaseQualifierItemsByKey,
+	getPhaseMoreInfoUrl,
 } from '../selectors/phaseSelectors'
 
 import './PhaseQualifierForm.scss'
@@ -24,8 +25,10 @@ export interface PhaseQualifierFormProps {
 	selectedState: any
 	rowItems: IDetailsRowProps
 	isEditable: boolean
+	isRegion: boolean
 	onRowItemRemove?: (item: any) => void
-	onRowItemChange?: (item: IDetailsRowProps) => void
+	onRowItemTextChange: (item: any, prevItem: any) => void
+	onRowItemQualifierChange: (item: any, prevItem: any) => void
 }
 
 export default observer(function PhaseQualiferForm(
@@ -35,22 +38,46 @@ export default observer(function PhaseQualiferForm(
 		selectedState,
 		rowItems,
 		isEditable,
+		isRegion,
 		onRowItemRemove,
-		onRowItemChange,
+		onRowItemTextChange,
+		onRowItemQualifierChange,
 	} = props
 	const phaseTagItems = useRef(getPhaseTagItems(selectedState))
 	const phaseQualifierItems = useRef(getPhaseQualifierItems(selectedState))
-	const phaseMoreInfoItems = useRef(getPhaseMoreInfoItems(selectedState))
 	const [filteredQualifierItems, setFilteredQualifierItems] = useState<any[]>(
 		getPhaseQualifierItemsByKey(selectedState, rowItems.item.tagKey)
 	)
+
+	let overrideIconFlag = false
+	let moreInfoKey = rowItems.item.moreInfoKey
+	if (isRegion) {
+		const regionPhases = rowItems.item.location.value.vaccination.content.phases
+		const currPhase = regionPhases?.find(
+			(phase: { id: any }) => phase.id === rowItems.item.groupId
+		)
+		if (currPhase) {
+			const currQualification = currPhase?.qualifications.find(
+				(qualification: { question: any }) =>
+					qualification.question === rowItems.item.qualifierId
+			)
+			if (currQualification) {
+				overrideIconFlag = true
+				moreInfoKey = currQualification.moreInfoText
+			}
+		}
+	}
+
 	const [moreInfoText, setMoreInfoText] = useState<string>(
-		getPhaseMoreInfoTextByKey(selectedState, rowItems.item.moreInfoKey)
+		getPhaseMoreInfoTextByKey(selectedState, moreInfoKey)
 	)
+
 	const [moreInfoUrl, setMoreInfoUrl] = useState<string>(
-		rowItems.item.moreInfoUrl
+		getPhaseMoreInfoUrl(isRegion, rowItems)
 	)
+
 	const changedItem = useRef<any>(rowItems.item)
+	changedItem.current.moreInfoContent = moreInfoText
 
 	const onTagChange = useCallback(
 		(_event, option) => {
@@ -72,34 +99,27 @@ export default observer(function PhaseQualiferForm(
 					moreInfoContent: '',
 				},
 			}
-			onRowItemChange?.({ ...rowItems, ...{ item: changedItem.current } })
 		},
-		[phaseQualifierItems, onRowItemChange, rowItems]
+		[phaseQualifierItems, rowItems]
 	)
 
 	const onQualifierChange = useCallback(
 		(_event, option) => {
-			const moreInfoKey = option.key
-				.replace('question', 'moreinfo')
-				.split('/')[1]
-			const moreInfoObj = phaseMoreInfoItems.current.find(
-				(mi) => mi.key.split('/')[1] === moreInfoKey
-			)
-			moreInfoObj ? setMoreInfoText(moreInfoObj.text) : setMoreInfoText('')
+			setMoreInfoText('')
+			setMoreInfoUrl('')
 
 			changedItem.current = {
 				...changedItem.current,
 				...{
 					qualifierId: option.key,
 					text: option.text,
-					moreInfoContent: moreInfoObj?.text,
-					moreInfoKey:
-						moreInfoObj?.key || option.key.replace('question', 'moreinfo'),
+					moreInfoKey: '',
+					moreInfoContent: '',
 				},
 			}
-			onRowItemChange?.({ ...rowItems, ...{ item: changedItem.current } })
+			onRowItemQualifierChange(changedItem.current, rowItems.item)
 		},
-		[phaseMoreInfoItems, onRowItemChange, rowItems]
+		[onRowItemQualifierChange, rowItems]
 	)
 
 	const onMoreInfoTextChange = useCallback(
@@ -110,10 +130,9 @@ export default observer(function PhaseQualiferForm(
 					moreInfoContent: value,
 				},
 			}
-			onRowItemChange?.({ ...rowItems, ...{ item: changedItem.current } })
 			setMoreInfoText(value)
 		},
-		[onRowItemChange, rowItems]
+		[setMoreInfoText]
 	)
 
 	const onMoreInfoUrlChange = useCallback(
@@ -124,10 +143,9 @@ export default observer(function PhaseQualiferForm(
 					moreInfoUrl: value,
 				},
 			}
-			onRowItemChange?.({ ...rowItems, ...{ item: changedItem.current } })
 			setMoreInfoUrl(value)
 		},
-		[onRowItemChange, rowItems]
+		[setMoreInfoUrl]
 	)
 
 	return (
@@ -136,6 +154,11 @@ export default observer(function PhaseQualiferForm(
 			style={{ pointerEvents: isEditable ? 'unset' : 'none' }}
 		>
 			<div className="mainRow">
+				<FontIcon
+					iconName="InfoSolid"
+					className="infoIcon"
+					style={{ visibility: overrideIconFlag ? 'visible' : 'hidden' }}
+				/>
 				<Dropdown
 					options={phaseTagItems.current}
 					defaultSelectedKey={rowItems.item.tagKey}
@@ -182,12 +205,14 @@ export default observer(function PhaseQualiferForm(
 					styles={{ root: { width: 'calc(100% - 32px)', padding: '5px 0' } }}
 					value={moreInfoText}
 					onChange={onMoreInfoTextChange}
+					onBlur={() => onRowItemTextChange(changedItem.current, rowItems.item)}
 				/>
 				<TextField
 					placeholder="More info url"
 					styles={{ root: { width: 'calc(100% - 32px)', padding: '5px 0' } }}
 					value={moreInfoUrl}
 					onChange={onMoreInfoUrlChange}
+					onBlur={() => onRowItemTextChange(changedItem.current, rowItems.item)}
 				/>
 			</div>
 		</div>

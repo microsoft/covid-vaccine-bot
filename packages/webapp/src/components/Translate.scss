@@ -3,4 +3,42 @@
 .translatePageContainer {
 	display: flex;
 	flex-direction: column;
+
+	.listTitle {
+		border-bottom: 1px solid $ms-color-gray40;
+	}
+
+	section {
+		margin: 0 6px;
+	}
+}
+
+
+.filterGroup {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 10px;
+
+	.ms-Dropdown-container {
+		margin-right: 20px;
+	}
+}
+
+.locationListRow {
+	display: flex;
+	flex-direction: row;
+	padding: 10px;
+	align-items: center;
+
+	&.altRow {
+		background-color: $ms-color-gray20;
+	}
+
+	.fromCol {
+		flex: 1;
+	}
+
+	.toCol {
+		flex: 2;
+	}
 }

@@ -12,11 +12,12 @@ export interface AppState {
 	branches?: any[]
 	issues?: any[]
 	mainBranch?: any
-	repoFileData?: any[]
+	repoFileData?: any
+	initRepoFileData?: any[]
 	globalFileData?: any
-	fileChanges?: any[]
+	initGlobalFileData?: any
 	currentLanguage: string
 	toggleQualifier: boolean
-	toggleAddLocation: boolean
 	isEditable: boolean
+	pendingChanges: boolean
 }

@@ -1,0 +1,49 @@
+@import '@fluentui/react/dist/sass/_References';
+
+.modalBody {
+    .tagRow {
+        display: flex;
+        margin-bottom: 10px;
+
+        .ms-Dropdown-container {
+            flex: 2;
+			margin-right: 10px;
+			margin-bottom: 10px;
+        }
+
+		.ms-TextField {
+			margin-right: 5px;
+			flex: 4;
+		}
+
+		button {
+			margin: 0 5px;
+		}
+
+        div {
+            flex: 2;
+        }
+    }
+}
+
+.qualifierGroupItem {
+	.ms-DetailsRow {
+		.editIcon {
+			visibility: hidden;
+			cursor: pointer;
+			color: $ms-color-themePrimary;
+		}
+
+		&.is-selected {
+			.editIcon {
+				visibility: visible;
+			}
+		}
+
+		&:hover {
+			.editIcon {
+				visibility: visible;
+			}
+		}
+	}
+}
