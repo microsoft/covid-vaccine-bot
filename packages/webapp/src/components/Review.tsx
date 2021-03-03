@@ -59,7 +59,7 @@ export default observer(function Review() {
 				tempChangesList.push({"label": `Updated information for ${location}`, "value":state.repoFileData[location]})
 				addChanges = true
 			}
-			if( state.repoFileData[location].regions && JSON.stringify(state.initRepoFileData[location].regions).toLowerCase() != JSON.stringify(state.repoFileData[location].regions).toLowerCase() ){
+			if( state.repoFileData[location].regions && JSON.stringify(state.initRepoFileData[location].regions)?.toLowerCase() != JSON.stringify(state.repoFileData[location].regions).toLowerCase() ){
 				tempChangesList.push({"label": `Updated regions for ${location}`, "value":state.repoFileData[location]})
 				addChanges = true
 			}
@@ -68,7 +68,7 @@ export default observer(function Review() {
 				addChanges = true
 			}
 			if(addChanges){
-				tempLocationUpdates.push(state.repoFileData[location])
+				tempLocationUpdates.push({ 'key':location, 'data':state.repoFileData[location]})
 			}
 
 		}
@@ -96,7 +96,7 @@ export default observer(function Review() {
 					<section><ul>
 						{ changesList.map( item => ( <li key={item.label} >{item.label}</li> ) ) }
 						</ul>
-						<DefaultButton text="Submit changes" onClick={ () => createPR({ 'path':'test.json', 'sha':'' }) } />
+						<DefaultButton text="Submit changes" onClick={ () => createPR([ globalUpdates, locationUpdates ]) } />
 						
 					</section>
 				</div>

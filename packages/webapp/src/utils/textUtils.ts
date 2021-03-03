@@ -16,6 +16,12 @@ export const toProperCase = (text: string): string => {
 	return res
 }
 
+export const getLanguageKeys = () => {
+	return 'en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th'.split(
+		','
+	)
+}
+
 export const getLanguageOptions = (excludeLanguage?: string) => {
 	const languageKeys = 'en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th'.split(
 		','
