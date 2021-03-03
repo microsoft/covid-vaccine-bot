@@ -57,7 +57,7 @@ export default observer(function Review() {
 				</div>
 				<div className="bodyContent">
 					<section>
-						{ changesList.map( item => ( <div>{item.label}</div> ) ) }
+						{ changesList.map( item => ( <div key={item.label} >{item.label}</div> ) ) }
 					</section>
 				</div>
 			</div>
