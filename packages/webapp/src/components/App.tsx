@@ -3,7 +3,6 @@
  * Licensed under the MIT license. See LICENSE file in the project.
  */
 import {
-	DefaultButton,
 	Dropdown,
 	IconButton,
 	Persona,
@@ -20,7 +19,7 @@ import {
 	isUserAuthorized,
 } from '../selectors/authSelectors'
 import { getAppStore } from '../store/store'
-import { getLanguageDisplayText } from '../utils/textUtils'
+import { getLanguageOptions } from '../utils/textUtils'
 import Dashboard from './Dashboard'
 import { Footer } from './Footer'
 import Locations from './Locations'
@@ -40,18 +39,6 @@ export default observer(function App() {
 		isPanelOpen,
 		{ setTrue: showPanel, setFalse: hidePanel },
 	] = useBoolean(false)
-
-	const languageKeys = 'en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th'.split(
-		','
-	)
-
-
-	const languageOptions = languageKeys.map((key) => {
-		return {
-			key: key,
-			text: getLanguageDisplayText(key, key),
-		}
-	})
 
 	const togglePanel = useCallback((item?: any) => {
 		if (item.props.headerText === 'Locations') {
@@ -87,7 +74,7 @@ export default observer(function App() {
 												defaultSelectedKey={state.currentLanguage}
 												onChange={(e, o) => setCurrentLanguage(o)}
 												ariaLabel="Pick Language"
-												options={languageOptions}
+												options={getLanguageOptions()}
 												styles={{
 													dropdown: { border: 'none' },
 													title: {
@@ -142,7 +129,7 @@ export default observer(function App() {
 														  )}
 														<Locations />
 													</PivotItem>
-													{false && (
+													{state.isEditable && (
 													<PivotItem headerText="Translate">
 														<Translate />
 													</PivotItem>)}

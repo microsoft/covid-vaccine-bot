@@ -621,3 +621,19 @@ export const updateGlobalQualifiers = mutatorAction('updateGlobalQualifiers', (i
 
 	}
 })
+
+export const translateLocationName = mutatorAction('translateLocationName', (item: any) => {
+	console.log(item)
+	if (item) {
+		const store = getAppStore()
+		if (store?.globalFileData) {
+			store.pendingChanges = true
+			const location = store.globalFileData.cdcStateNames.content[item.locKey]
+			location[item.toKey] = item.to
+
+			store.globalFileData = {...store.globalFileData}
+
+			console.log(store.globalFileData.cdcStateNames.content)
+		}
+	}
+})

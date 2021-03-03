@@ -16,6 +16,19 @@ export const toProperCase = (text: string): string => {
 	return res
 }
 
+export const getLanguageOptions = (excludeLanguage?: string) => {
+	const languageKeys = 'en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th'.split(
+		','
+	)
+
+	return languageKeys.map((key) => {
+		return {
+			key: key,
+			text: getLanguageDisplayText(key, key),
+		}
+	}).filter(l => l.key !== excludeLanguage)
+}
+
 export const getLanguageDisplayText = (
 	currentLanguage: string,
 	languageCode: string
