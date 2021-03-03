@@ -624,16 +624,25 @@ export const updateGlobalQualifiers = mutatorAction(
 	}
 )
 
-export const translateLocationName = mutatorAction(
-	'translateLocationName',
-	(item: any) => {
-		console.log(item)
-		if (item) {
-			const store = getAppStore()
-			if (store?.globalFileData) {
-				store.pendingChanges = true
-				const location = store.globalFileData.cdcStateNames.content[item.locKey]
-				location[item.toKey] = item.to
+export const translateLocationName = mutatorAction('translateLocationName', (item: any) => {
+	console.log(item)
+	if (item) {
+		const store = getAppStore()
+		if (store?.globalFileData) {
+			store.pendingChanges = true
+			if (store.globalFileData.cdcStateNames.content[item.locKey]) {
+				store.globalFileData.cdcStateNames.content[item.locKey] = {
+					...store.globalFileData.cdcStateNames.content[item.locKey],
+					[item.toKey]: item.to
+				}
+			} else {
+				store.globalFileData.cdcStateNames.content = {
+					...store.globalFileData.cdcStateNames.content,
+					...{[item.locKey]: {
+						[item.toKey]: item.to
+					}}
+				}
+			}
 
 				store.globalFileData = { ...store.globalFileData }
 
