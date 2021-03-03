@@ -194,7 +194,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/core@npm:7.13.8, @babel/core@npm:^7.1.0, @babel/core@npm:^7.12.1, @babel/core@npm:^7.12.16, @babel/core@npm:^7.12.3, @babel/core@npm:^7.12.9, @babel/core@npm:^7.7.5, @babel/core@npm:^7.8.4":
+"@babel/core@npm:7.13.8, @babel/core@npm:^7.1.0, @babel/core@npm:^7.12.1, @babel/core@npm:^7.12.3, @babel/core@npm:^7.12.9, @babel/core@npm:^7.13.8, @babel/core@npm:^7.7.5, @babel/core@npm:^7.8.4":
   version: 7.13.8
   resolution: "@babel/core@npm:7.13.8"
   dependencies:
@@ -1588,7 +1588,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/preset-env@npm:^7.12.1, @babel/preset-env@npm:^7.12.16, @babel/preset-env@npm:^7.12.7, @babel/preset-env@npm:^7.8.4":
+"@babel/preset-env@npm:^7.12.1, @babel/preset-env@npm:^7.12.7, @babel/preset-env@npm:^7.13.9, @babel/preset-env@npm:^7.8.4":
   version: 7.13.9
   resolution: "@babel/preset-env@npm:7.13.9"
   dependencies:
@@ -1737,7 +1737,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/preset-typescript@npm:^7.12.1, @babel/preset-typescript@npm:^7.12.16, @babel/preset-typescript@npm:^7.12.7":
+"@babel/preset-typescript@npm:^7.12.1, @babel/preset-typescript@npm:^7.12.7, @babel/preset-typescript@npm:^7.13.0":
   version: 7.13.0
   resolution: "@babel/preset-typescript@npm:7.13.0"
   dependencies:
@@ -1863,22 +1863,22 @@ __metadata:
   resolution: "@covid-vax-bot/data-portal@workspace:packages/webapp"
   dependencies:
     "@covid-vax-bot/state-plan-schema": "workspace:packages/schema"
-    "@fluentui/react": ^7.160.2
+    "@fluentui/react": ^7.162.1
     "@testing-library/jest-dom": ^5.11.9
     "@testing-library/react": ^11.2.5
-    "@testing-library/user-event": ^12.7.1
+    "@testing-library/user-event": ^12.8.1
     "@types/jest": ^26.0.20
     "@types/node": ^14.14.31
     "@types/react": ^17.0.2
     "@types/react-dom": ^17.0.1
     "@types/react-router-dom": ^5.1.7
-    "@uifabric/react-hooks": ^7.13.11
-    csv-parse: ^4.15.1
+    "@uifabric/react-hooks": ^7.13.12
+    csv-parse: ^4.15.3
     eslint-config-react-app: ^6.0.0
-    firebase: ^8.2.7
+    firebase: ^8.2.9
     mobx: ^5.15.7
     mobx-react-lite: ^2.2.2
-    office-ui-fabric-react: ^7.160.2
+    office-ui-fabric-react: ^7.162.1
     react: ^17.0.1
     react-dom: ^17.0.1
     react-refresh: ^0.9.0
@@ -1897,7 +1897,7 @@ __metadata:
     "@tsconfig/node12": ^1.0.7
     "@types/express": ^4.17.11
     "@types/node": ^14.14.31
-    "@types/rimraf": ^3
+    "@types/rimraf": ^3.0.0
     config: ^3.3.4
     cookie-parser: ^1.4.5
     dotenv: ^8.2.0
@@ -1924,9 +1924,9 @@ __metadata:
     "@tsconfig/node12": ^1.0.7
     "@types/jest": ^26.0.20
     "@types/node": ^14.14.31
-    core-js: ^3.8.3
+    core-js: ^3.9.1
     npm-run-all: ^4.1.5
-    rollup: ^2.39.0
+    rollup: ^2.40.0
   languageName: unknown
   linkType: soft
 
@@ -1937,9 +1937,9 @@ __metadata:
     "@covid-vax-bot/state-plan-schema": "workspace:packages/schema"
     "@covid-vax-bot/state-plans": "workspace:packages/plans"
     "@essex/scripts": ^12.0.2
-    "@types/atob": ^2
+    "@types/atob": ^2.1.2
     "@types/node": ^14.14.31
-    "@types/node-fetch": ^2
+    "@types/node-fetch": ^2.5.8
     "@types/ssri": ^7.1.0
     atob: ^2.1.2
     chalk: ^4.1.0
@@ -1975,12 +1975,12 @@ __metadata:
     "@types/config": ^0.0.38
     "@types/jsonwebtoken": ^8.5.0
     "@types/node": ^14.14.31
-    ajv: ^7.1.0
+    ajv: ^7.1.1
     axios: ^0.21.1
     chalk: ^4.1.0
     config: ^3.3.4
-    csv-parse: ^4.15.1
-    csv-stringify: ^5.6.1
+    csv-parse: ^4.15.3
+    csv-stringify: ^5.6.2
     dotenv: ^8.2.0
     form-data: ^3.0.1
     jsonwebtoken: ^8.5.1
@@ -3024,7 +3024,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fluentui/react@npm:^7.160.2":
+"@fluentui/react@npm:^7.162.1":
   version: 7.162.1
   resolution: "@fluentui/react@npm:7.162.1"
   dependencies:
@@ -4571,7 +4571,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/user-event@npm:^12.7.1":
+"@testing-library/user-event@npm:^12.8.1":
   version: 12.8.1
   resolution: "@testing-library/user-event@npm:12.8.1"
   dependencies:
@@ -4603,7 +4603,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/atob@npm:^2":
+"@types/atob@npm:^2.1.2":
   version: 2.1.2
   resolution: "@types/atob@npm:2.1.2"
   checksum: df8e9efd3c4f842a5183b9a11877adb96d78b1d1559280afa87bc2c77c04ef1abd0004ab1947de0265292ab032497c679b6c1b954efce5eb6b455fb2404ab348
@@ -4986,7 +4986,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node-fetch@npm:^2, @types/node-fetch@npm:^2.5.0, @types/node-fetch@npm:^2.5.4":
+"@types/node-fetch@npm:^2.5.0, @types/node-fetch@npm:^2.5.4, @types/node-fetch@npm:^2.5.8":
   version: 2.5.8
   resolution: "@types/node-fetch@npm:2.5.8"
   dependencies:
@@ -5184,7 +5184,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/rimraf@npm:^3":
+"@types/rimraf@npm:^3.0.0":
   version: 3.0.0
   resolution: "@types/rimraf@npm:3.0.0"
   dependencies:
@@ -5575,7 +5575,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@uifabric/react-hooks@npm:^7.13.11, @uifabric/react-hooks@npm:^7.13.12":
+"@uifabric/react-hooks@npm:^7.13.12":
   version: 7.13.12
   resolution: "@uifabric/react-hooks@npm:7.13.12"
   dependencies:
@@ -6012,7 +6012,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ajv@npm:^7.0.2, ajv@npm:^7.1.0":
+"ajv@npm:^7.0.2, ajv@npm:^7.1.1":
   version: 7.1.1
   resolution: "ajv@npm:7.1.1"
   dependencies:
@@ -8893,7 +8893,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"core-js@npm:^3.0.1, core-js@npm:^3.0.4, core-js@npm:^3.6.5, core-js@npm:^3.8.0, core-js@npm:^3.8.3":
+"core-js@npm:^3.0.1, core-js@npm:^3.0.4, core-js@npm:^3.6.5, core-js@npm:^3.8.0, core-js@npm:^3.9.1":
   version: 3.9.1
   resolution: "core-js@npm:3.9.1"
   checksum: 3f360466246e816ff745f349bf0ea0c54bc3a05203638d84c5f0eae3583f07e7d848d6aa9b69c30467efb418e526bae034a6da50bcfda8b2cd413e5144cd1444
@@ -9455,14 +9455,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"csv-parse@npm:^4.15.1":
+"csv-parse@npm:^4.15.3":
   version: 4.15.3
   resolution: "csv-parse@npm:4.15.3"
   checksum: 7b125fd77f757c8ab605f107dffbd60a91a0a423d2c44b89f20ba050d11e7c5ae2130b58a05216caccea5f5ffee8f2fb9863c8a14ec580ed7532a268a362eb60
   languageName: node
   linkType: hard
 
-"csv-stringify@npm:^5.6.1":
+"csv-stringify@npm:^5.6.2":
   version: 5.6.2
   resolution: "csv-stringify@npm:5.6.2"
   checksum: e4a30ab9631b739b14130042f558700298856724f0674e50700198057b9d7cf0dd64097b933b6243d050139c085ba365977f80f392d863c64fe4800ce8e06023
@@ -10678,7 +10678,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-jest@npm:^24.1.0, eslint-plugin-jest@npm:^24.1.3, eslint-plugin-jest@npm:^24.1.4":
+"eslint-plugin-jest@npm:^24.1.0, eslint-plugin-jest@npm:^24.1.3, eslint-plugin-jest@npm:^24.1.5":
   version: 24.1.5
   resolution: "eslint-plugin-jest@npm:24.1.5"
   dependencies:
@@ -10810,7 +10810,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^7.11.0, eslint@npm:^7.14.0, eslint@npm:^7.20.0":
+"eslint@npm:^7.11.0, eslint@npm:^7.14.0, eslint@npm:^7.21.0":
   version: 7.21.0
   resolution: "eslint@npm:7.21.0"
   dependencies:
@@ -11567,7 +11567,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"firebase@npm:^8.2.7":
+"firebase@npm:^8.2.9":
   version: 8.2.9
   resolution: "firebase@npm:8.2.9"
   dependencies:
@@ -13170,7 +13170,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"husky@npm:^5.0.9":
+"husky@npm:^5.1.3":
   version: 5.1.3
   resolution: "husky@npm:5.1.3"
   bin:
@@ -16617,10 +16617,10 @@ fsevents@^1.2.7:
   version: 0.0.0-use.local
   resolution: "ms-covid-bot@workspace:."
   dependencies:
-    "@babel/core": ^7.12.16
-    "@babel/preset-env": ^7.12.16
+    "@babel/core": ^7.13.8
+    "@babel/preset-env": ^7.13.9
     "@babel/preset-react": ^7.12.13
-    "@babel/preset-typescript": ^7.12.16
+    "@babel/preset-typescript": ^7.13.0
     "@essex/eslint-config": ^10.0.4
     "@essex/eslint-plugin": ^10.0.4
     "@essex/jest-config": ^11.0.2
@@ -16629,15 +16629,15 @@ fsevents@^1.2.7:
     "@types/jest": ^26.0.20
     "@typescript-eslint/eslint-plugin": ^4.16.1
     "@typescript-eslint/parser": ^4.16.1
-    eslint: ^7.20.0
+    eslint: ^7.21.0
     eslint-import-resolver-node: ^0.3.4
     eslint-plugin-header: ^3.1.1
     eslint-plugin-import: ^2.22.1
-    eslint-plugin-jest: ^24.1.4
+    eslint-plugin-jest: ^24.1.5
     eslint-plugin-jsx-a11y: ^6.4.1
     eslint-plugin-react: ^7.22.0
     eslint-plugin-react-hooks: ^4.2.0
-    husky: ^5.0.9
+    husky: ^5.1.3
     jest: ^26.6.3
     lint-staged: ^10.5.4
     npm-run-all: ^4.1.5
@@ -17336,7 +17336,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"office-ui-fabric-react@npm:^7.160.2, office-ui-fabric-react@npm:^7.162.1":
+"office-ui-fabric-react@npm:^7.162.1":
   version: 7.162.1
   resolution: "office-ui-fabric-react@npm:7.162.1"
   dependencies:
@@ -21064,7 +21064,7 @@ resolve@1.18.1:
   languageName: node
   linkType: hard
 
-"rollup@npm:^2.39.0":
+"rollup@npm:^2.40.0":
   version: 2.40.0
   resolution: "rollup@npm:2.40.0"
   dependencies:
