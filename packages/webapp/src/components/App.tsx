@@ -131,6 +131,11 @@ export default observer(function App() {
 													</PivotItem>
 													{state.isEditable && (
 													<PivotItem headerText="Translate">
+														{state.pendingChanges && (
+														<MessageBar styles={{root:{margin:"10px 5px"}}}>
+														    You have pending changes, please click on the review tab to submit these changes.
+														  </MessageBar>
+														  )}
 														<Translate />
 													</PivotItem>)}
 													{state.pendingChanges && (

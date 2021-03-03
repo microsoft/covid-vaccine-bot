@@ -32,20 +32,26 @@ export default observer(function Translate() {
 	const languageOptions = getLanguageOptions(currentLanguage)
 	const [translateLanguage, setTranslateLanguage]= useState<any>(languageOptions[0])
 	const fieldChanges = useRef<any>({})
+	const mainLanguage = useRef<string>(currentLanguage)
+
+	useEffect(() => {
+		mainLanguage.current = currentLanguage
+		setTranslateLanguage(getLanguageOptions(currentLanguage)[0])
+	},[currentLanguage, mainLanguage, setTranslateLanguage, getLanguageOptions])
 
 	useEffect(() => {
 		const stateNames = Object.entries(globalFileData.cdcStateNames.content).map(([key, value]: [string, any]) => {
 			return {
 				locKey: key,
-				fromKey: currentLanguage,
-				from: value[currentLanguage],
+				fromKey: mainLanguage.current,
+				from: value[mainLanguage.current],
 				toKey: translateLanguage.key,
 				to: !translateLanguage.key ? '' : !value[translateLanguage.key] ? '' : value[translateLanguage.key]
 			}
 		}).sort((a,b) => (a.from > b.from) ? 1 : -1)
 
 		setLocationsList(stateNames)
-	},[globalFileData, translateLanguage, currentLanguage, setLocationsList])
+	},[globalFileData, translateLanguage, mainLanguage, setLocationsList])
 
 	const onTranslateLanguageChange = useCallback((_ev, option) => {
 		setTranslateLanguage(option)
