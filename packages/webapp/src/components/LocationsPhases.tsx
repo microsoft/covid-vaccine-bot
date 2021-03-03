@@ -13,8 +13,6 @@ import {
 } from '@fluentui/react'
 import { observer } from 'mobx-react-lite'
 import { useState, useEffect, useCallback } from 'react'
-import { getAppStore } from '../store/store'
-import PhaseQualifierForm from './PhaseQualifierForm'
 import {
 	modifyStateStrings,
 	modifyMoreInfoLinks,
@@ -22,8 +20,10 @@ import {
 	updateQualifier,
 	addQualifier,
 	removeQualifier,
-	removePhase
+	removePhase,
 } from '../mutators/repoMutators'
+import { getAppStore } from '../store/store'
+import PhaseQualifierForm from './PhaseQualifierForm'
 
 import './Locations.scss'
 
@@ -66,10 +66,9 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 				? repoFileData[selectedState.key].regions[value.key]
 				: null
 
-			if(isRegion && regionObj.vaccination.content.phases){
+			if (isRegion && regionObj.vaccination.content.phases) {
 				phaseObj = regionObj.vaccination.content.phases
 			}
-
 
 			phaseObj.forEach((phase: any) => {
 				const isCollapsed: boolean = !isRegion && value.value.id !== phase.id
@@ -185,21 +184,19 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 	)
 
 	const onRemoveRowItem = (item: any) => {
-
 		removeQualifier({
-				locationKey: selectedState.key,
-				item: item,
-				regionInfo: isRegion ? value : null,
-			})
+			locationKey: selectedState.key,
+			item: item,
+			regionInfo: isRegion ? value : null,
+		})
 	}
 
 	const onRemovePhaseGroupClick = (phaseId: any) => {
-
 		removePhase({
-				locationKey: selectedState.key,
-				phaseId: phaseId,
-				regionInfo: isRegion ? value : null,
-			})
+			locationKey: selectedState.key,
+			phaseId: phaseId,
+			regionInfo: isRegion ? value : null,
+		})
 	}
 
 	const onSetActivePhase = (phaseId: string) => {
@@ -329,15 +326,14 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 	}
 
 	const onChangeRowItemQualifier = (currentItem: any, initItem: any) => {
-		if(initItem.qualifierId != "c19.eligibility.question/new_qualifier"){
+		if (initItem.qualifierId != 'c19.eligibility.question/new_qualifier') {
 			updateQualifier({
 				oldId: initItem.qualifierId,
 				locationKey: selectedState.key,
 				item: currentItem,
 				regionInfo: isRegion ? value : null,
 			})
-		}
-		else {
+		} else {
 			addQualifier({
 				locationKey: selectedState.key,
 				item: currentItem,

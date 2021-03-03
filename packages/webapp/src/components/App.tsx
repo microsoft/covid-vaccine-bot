@@ -9,9 +9,11 @@ import {
 	PersonaSize,
 	Pivot,
 	PivotItem,
-	MessageBar
+	MessageBar,
 } from '@fluentui/react'
+import { useBoolean } from '@uifabric/react-hooks'
 import { observer } from 'mobx-react-lite'
+import { useCallback, useState } from 'react'
 import { Switch, Route, Redirect } from 'react-router-dom'
 import { setCurrentLanguage } from '../mutators/repoMutators'
 import {
@@ -25,36 +27,34 @@ import { Footer } from './Footer'
 import Locations from './Locations'
 import Login from './Login'
 import QualifierPanel from './QualifierPanel'
-import Translate from './Translate'
-import { useCallback, useState } from 'react'
-import { useBoolean } from '@uifabric/react-hooks'
 import Review from './Review'
+import Translate from './Translate'
 
 import './App_reset_styles.scss'
 import './App.scss'
 
 export default observer(function App() {
 	const state = getAppStore()
-	const [
-		isPanelOpen,
-		{ setTrue: showPanel, setFalse: hidePanel },
-	] = useBoolean(false)
-	 const [selectedKey, setSelectedKey] = useState<string>("Dashboard")
-
-	const togglePanel = useCallback((item?: any) => {
-		if (item.props.headerText === 'Locations') {
-			showPanel()
-		} else {
-			hidePanel()
-		}
-		setSelectedKey(item.props.headerText)
-	},[state, showPanel, hidePanel, setSelectedKey])
-
-	const showDashboard = useCallback( () => {
-		setSelectedKey ("Dashboard")
-	}, [setSelectedKey]
-
+	const [isPanelOpen, { setTrue: showPanel, setFalse: hidePanel }] = useBoolean(
+		false
 	)
+	const [selectedKey, setSelectedKey] = useState<string>('Dashboard')
+
+	const togglePanel = useCallback(
+		(item?: any) => {
+			if (item.props.headerText === 'Locations') {
+				showPanel()
+			} else {
+				hidePanel()
+			}
+			setSelectedKey(item.props.headerText)
+		},
+		[state, showPanel, hidePanel, setSelectedKey]
+	)
+
+	const showDashboard = useCallback(() => {
+		setSelectedKey('Dashboard')
+	}, [setSelectedKey])
 
 	return (
 		<div className="rootContentWrapper">
@@ -120,39 +120,54 @@ export default observer(function App() {
 									{isUserAuthorized() ? (
 										<>
 											<div className="appBodyLeft">
-												<Pivot onLinkClick={togglePanel} selectedKey={selectedKey}>
+												<Pivot
+													onLinkClick={togglePanel}
+													selectedKey={selectedKey}
+												>
 													<PivotItem headerText="Dashboard" itemKey="Dashboard">
-													{state.pendingChanges && (
-														<MessageBar styles={{root:{margin:"10px 5px"}}}>
-														    You have pending changes, please click on the review tab to submit these changes.
-														  </MessageBar>
-														  )}
+														{state.pendingChanges && (
+															<MessageBar
+																styles={{ root: { margin: '10px 5px' } }}
+															>
+																You have pending changes, please click on the
+																review tab to submit these changes.
+															</MessageBar>
+														)}
 														<Dashboard />
 													</PivotItem>
 													<PivotItem headerText="Locations" itemKey="Locations">
-													{state.pendingChanges && (
-														<MessageBar styles={{root:{margin:"10px 5px"}}}>
-														    You have pending changes, please click on the review tab to submit these changes.
-														  </MessageBar>
-														  )}
+														{state.pendingChanges && (
+															<MessageBar
+																styles={{ root: { margin: '10px 5px' } }}
+															>
+																You have pending changes, please click on the
+																review tab to submit these changes.
+															</MessageBar>
+														)}
 														<Locations />
 													</PivotItem>
 													{false && state.isEditable && (
-													<PivotItem headerText="Translate" itemKey="Translate">
-														{state.pendingChanges && (
-														<MessageBar styles={{root:{margin:"10px 5px"}}}>
-														    You have pending changes, please click on the review tab to submit these changes.
-														  </MessageBar>
-														  )}
-														<Translate />
-													</PivotItem>)}
+														<PivotItem
+															headerText="Translate"
+															itemKey="Translate"
+														>
+															{state.pendingChanges && (
+																<MessageBar
+																	styles={{ root: { margin: '10px 5px' } }}
+																>
+																	You have pending changes, please click on the
+																	review tab to submit these changes.
+																</MessageBar>
+															)}
+															<Translate />
+														</PivotItem>
+													)}
 													{state.pendingChanges && (
-													<PivotItem headerText="Review" itemKey="Review">
-														<Review showDashboard={showDashboard} />
-													</PivotItem>
+														<PivotItem headerText="Review" itemKey="Review">
+															<Review showDashboard={showDashboard} />
+														</PivotItem>
 													)}
 												</Pivot>
-
 											</div>
 											{state.isEditable && isPanelOpen && (
 												<div className="appBodyRight">

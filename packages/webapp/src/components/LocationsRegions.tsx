@@ -13,12 +13,17 @@ import {
 import { useBoolean } from '@uifabric/react-hooks'
 import { observer } from 'mobx-react-lite'
 import { useState, useRef, useEffect, useCallback } from 'react'
+import {
+	updateLocationList,
+	addPhase,
+	updatePhase,
+	updateLocationData,
+} from '../mutators/repoMutators'
 import { getAppStore } from '../store/store'
 import { toProperCase } from '../utils/textUtils'
 import LocationForm from './LocationForm'
 import LocationsPhases from './LocationsPhases'
 import PhaseForm from './PhaseForm'
-import { updateLocationList, addPhase, updatePhase, updateLocationData } from '../mutators/repoMutators'
 
 import './Locations.scss'
 
@@ -35,12 +40,14 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 		value: any
 		selectedState: any
 	}>({ isRegion: false, value: null, selectedState: null })
-	const [isLocationModalOpen, { setTrue: openLocationModal, setFalse: dismissLocationModal }] = useBoolean(
-		false
-	)
-	const [isPhaseModalOpen, { setTrue: openPhaseModal, setFalse: dismissPhaseModal }] = useBoolean(
-		false
-	)
+	const [
+		isLocationModalOpen,
+		{ setTrue: openLocationModal, setFalse: dismissLocationModal },
+	] = useBoolean(false)
+	const [
+		isPhaseModalOpen,
+		{ setTrue: openPhaseModal, setFalse: dismissPhaseModal },
+	] = useBoolean(false)
 	const selectedModalFormItem = useRef<any>(null)
 
 	const state = getAppStore()
@@ -100,8 +107,8 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 			fieldName: 'editPhase',
 			minWidth: 50,
 			isResizable: false,
-		}
-	].filter(loc => state.isEditable ? true : loc.key !== 'editCol')
+		},
+	].filter((loc) => (state.isEditable ? true : loc.key !== 'editCol'))
 
 	const [phaseItemList, setPhaseItemList] = useState<any[]>([])
 
@@ -126,7 +133,10 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 		}
 
 		if (selectedStateObj) {
-			const newList = setInitialPhaseItems({key: selectedStateObj.info.content.id ,value: selectedStateObj})
+			const newList = setInitialPhaseItems({
+				key: selectedStateObj.info.content.id,
+				value: selectedStateObj,
+			})
 			setPhaseItemList(newList)
 		}
 	}, [state.repoFileData, selectedState, stateRegionsFullList, setInitialPhaseItems, setPhaseItemList])
@@ -141,21 +151,22 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 	const onLocationFormSubmit = useCallback(
 		(locationData, prevItem) => {
 			dismissLocationModal()
-			if(!prevItem){
-			updateLocationList(locationData, true, selectedState)
-
-			}
-			else {
-			updateLocationData(locationData, true, prevItem, selectedState)
+			if (!prevItem) {
+				updateLocationList(locationData, true, selectedState)
+			} else {
+				updateLocationData(locationData, true, prevItem, selectedState)
 			}
 		},
 		[dismissLocationModal, selectedState]
 	)
 
-	const onLocationFormOpen = useCallback((item?: any) => {
-		selectedModalFormItem.current = item ?? null
-		openLocationModal()
-	},[openLocationModal])
+	const onLocationFormOpen = useCallback(
+		(item?: any) => {
+			selectedModalFormItem.current = item ?? null
+			openLocationModal()
+		},
+		[openLocationModal]
+	)
 
 	const onRenderItemColumn = useCallback(
 		(item?: any, _index?: number, column?: IColumn) => {
@@ -168,14 +179,17 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 						className="editIcon"
 						onClick={() =>
 							column?.fieldName === 'editLocation'
-							? onLocationFormOpen(item)
-							: onPhaseFormOpen(item)}
-					/>) : null
-		} else {
-			return <span>{fieldContent}</span>;
-		}
-	},[onLocationFormOpen, state.isEditable])
-
+								? onLocationFormOpen(item)
+								: onPhaseFormOpen(item)
+						}
+					/>
+				) : null
+			} else {
+				return <span>{fieldContent}</span>
+			}
+		},
+		[onLocationFormOpen, state.isEditable]
+	)
 
 	const onRegionFilter = useCallback(
 		(_event: any, text?: string | undefined) => {
@@ -192,29 +206,29 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 		[stateRegionsFullList]
 	)
 
-	const onPhaseFormSubmit =  	(phaseData:any) => {
-	 		dismissPhaseModal()
+	const onPhaseFormSubmit = (phaseData: any) => {
+		dismissPhaseModal()
 
-	 		if(phaseData.phaseId){
-	 			updatePhase({
+		if (phaseData.phaseId) {
+			updatePhase({
 				locationKey: selectedState.key,
 				item: phaseData,
 			})
-	 		} else {
-	 			addPhase({
+		} else {
+			addPhase({
 				locationKey: selectedState.key,
 				item: phaseData,
 			})
-	 		}
+		}
+	}
 
-	 		
-
-	 }
-
-	const onPhaseFormOpen = useCallback((item?: any) => {
-		selectedModalFormItem.current = item ?? null
-		openPhaseModal()
-	},[openPhaseModal])
+	const onPhaseFormOpen = useCallback(
+		(item?: any) => {
+			selectedModalFormItem.current = item ?? null
+			openPhaseModal()
+		},
+		[openPhaseModal]
+	)
 
 	return (
 		<div className="bodyContainer">
@@ -280,7 +294,10 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 						<div className="searchRow">
 							<div></div>
 							{state.isEditable && (
-								<div className="addLocationHeaderButton" onClick={() => onPhaseFormOpen(null)}>
+								<div
+									className="addLocationHeaderButton"
+									onClick={() => onPhaseFormOpen(null)}
+								>
 									<FontIcon
 										iconName="CircleAdditionSolid"
 										style={{ color: '#0078d4' }}
@@ -289,7 +306,8 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 								</div>
 							)}
 						</div>
-						{selectedState.value.vaccination.content.phases && selectedState.value.vaccination.content.phases.length > 0 ? (
+						{selectedState.value.vaccination.content.phases &&
+						selectedState.value.vaccination.content.phases.length > 0 ? (
 							<DetailsList
 								items={phaseItemList}
 								columns={phaseColumns}
@@ -313,7 +331,7 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 									placeholder="Search"
 									onChange={(ev, text) => onRegionFilter(ev, text)}
 								/>
-							): (
+							) : (
 								<div></div>
 							)}
 							{state.isEditable && (
@@ -354,31 +372,33 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 				isOpen={isLocationModalOpen}
 				isModeless={false}
 				isDarkOverlay={true}
-				isBlocking={false}>
-					<LocationForm
-						item={selectedModalFormItem.current}
-						onCancel={dismissLocationModal}
-						onSubmit={onLocationFormSubmit}
-						isRegion={true}
-					/>
+				isBlocking={false}
+			>
+				<LocationForm
+					item={selectedModalFormItem.current}
+					onCancel={dismissLocationModal}
+					onSubmit={onLocationFormSubmit}
+					isRegion={true}
+				/>
 			</Modal>
 			<Modal
 				isOpen={isPhaseModalOpen}
 				isModeless={false}
 				isDarkOverlay={true}
-				isBlocking={false}>
-					<PhaseForm
-						item={selectedModalFormItem.current}
-						onCancel={dismissPhaseModal}
-						onSubmit={onPhaseFormSubmit}
-					/>
+				isBlocking={false}
+			>
+				<PhaseForm
+					item={selectedModalFormItem.current}
+					onCancel={dismissPhaseModal}
+					onSubmit={onPhaseFormSubmit}
+				/>
 			</Modal>
 		</div>
 	)
 })
 
 const setInitialPhaseItems = (selectedState: any): any[] => {
-	if(!selectedState.value.vaccination.content.phases){
+	if (!selectedState.value.vaccination.content.phases) {
 		return []
 	}
 	return selectedState.value.vaccination.content.phases.map(

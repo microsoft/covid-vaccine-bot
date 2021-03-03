@@ -2,14 +2,21 @@
  * Copyright (c) Microsoft. All rights reserved.
  * Licensed under the MIT license. See LICENSE file in the project.
  */
-import { IGroup, DetailsList, FontIcon, Modal, IDropdownOption, IColumn } from '@fluentui/react'
+import {
+	IGroup,
+	DetailsList,
+	FontIcon,
+	Modal,
+	IDropdownOption,
+	IColumn,
+} from '@fluentui/react'
+import { useBoolean } from '@uifabric/react-hooks'
 import { observer } from 'mobx-react-lite'
 import { useState, useEffect, useCallback, useRef } from 'react'
+import { updateGlobalQualifiers } from '../mutators/repoMutators'
 import { getAppStore } from '../store/store'
 import { toProperCase } from '../utils/textUtils'
-import { useBoolean } from '@uifabric/react-hooks'
 import AddQualifierForm from './AddQualiferForm'
-import { updateGlobalQualifiers } from '../mutators/repoMutators'
 
 import './QualifierPanel.scss'
 
@@ -17,9 +24,10 @@ export default observer(function QualifierPanel() {
 	const { globalFileData, currentLanguage, isEditable } = getAppStore()
 	const [qualifierGroup, setQualifierGroup] = useState<IGroup[]>([])
 	const [qualifierGroupItems, setQualifierGroupItems] = useState<any[]>([])
-	const [isAddQualifierModalOpen, { setTrue: openAddQualifierModal, setFalse: dismissAddQualifierModal }] = useBoolean(
-		false
-	)
+	const [
+		isAddQualifierModalOpen,
+		{ setTrue: openAddQualifierModal, setFalse: dismissAddQualifierModal },
+	] = useBoolean(false)
 	const formItem = useRef<any>(null)
 
 	useEffect(() => {
@@ -31,9 +39,9 @@ export default observer(function QualifierPanel() {
 			const tempQualifierGroupItems: any[] = []
 
 			const contentObj = globalFileData.customStrings.content
-			const questionKeys = Object.keys(contentObj).filter((k) =>
-				k.includes('eligibility.question')
-			).sort((a,b) => (a > b) ? 1 : -1)
+			const questionKeys = Object.keys(contentObj)
+				.filter((k) => k.includes('eligibility.question'))
+				.sort((a, b) => (a > b ? 1 : -1))
 
 			questionKeys.forEach((key) => {
 				const questionGroupKey = key.split('/')[1].split('.')
@@ -86,18 +94,24 @@ export default observer(function QualifierPanel() {
 			fieldName: 'editQualifier',
 			minWidth: 50,
 			isResizable: false,
-		}
-	].filter(loc => isEditable ? true : loc.key !== 'editCol')
+		},
+	].filter((loc) => (isEditable ? true : loc.key !== 'editCol'))
 
-	const onAddQualifierFormOpen = useCallback((item?: any) => {
-		formItem.current = item ?? null
-		openAddQualifierModal()
-	},[openAddQualifierModal, formItem])
+	const onAddQualifierFormOpen = useCallback(
+		(item?: any) => {
+			formItem.current = item ?? null
+			openAddQualifierModal()
+		},
+		[openAddQualifierModal, formItem]
+	)
 
-	const addQualifierSubmit = useCallback((newQualifier) => {
-		updateGlobalQualifiers(newQualifier)
-		dismissAddQualifierModal()
-	},[dismissAddQualifierModal])
+	const addQualifierSubmit = useCallback(
+		(newQualifier) => {
+			updateGlobalQualifiers(newQualifier)
+			dismissAddQualifierModal()
+		},
+		[dismissAddQualifierModal]
+	)
 
 	const onRenderItemColumn = useCallback(
 		(item?: any, _index?: number, column?: IColumn) => {
@@ -109,16 +123,19 @@ export default observer(function QualifierPanel() {
 						iconName="Edit"
 						className="editIcon"
 						onClick={() => onAddQualifierFormOpen(item)}
-					/>) : null
-		} else {
-			return <span>{fieldContent}</span>;
-		}
-	},[onAddQualifierFormOpen, isEditable])
+					/>
+				) : null
+			} else {
+				return <span>{fieldContent}</span>
+			}
+		},
+		[onAddQualifierFormOpen, isEditable]
+	)
 
-	const tagsOptions: IDropdownOption[] = qualifierGroup.map(tag => {
+	const tagsOptions: IDropdownOption[] = qualifierGroup.map((tag) => {
 		return {
 			key: tag.key,
-			text: tag.name
+			text: tag.name,
 		}
 	})
 
@@ -131,13 +148,16 @@ export default observer(function QualifierPanel() {
 				<section>
 					<div className="searchRow">
 						<div></div>
-							<div className="addQualiferHeaderButton" onClick={() => onAddQualifierFormOpen(null)}>
-								<FontIcon
-									iconName="CircleAdditionSolid"
-									className="addQualifierIcon"
-								/>
-								Add Qualifier
-							</div>
+						<div
+							className="addQualiferHeaderButton"
+							onClick={() => onAddQualifierFormOpen(null)}
+						>
+							<FontIcon
+								iconName="CircleAdditionSolid"
+								className="addQualifierIcon"
+							/>
+							Add Qualifier
+						</div>
 					</div>
 					<DetailsList
 						items={qualifierGroupItems}
@@ -158,13 +178,14 @@ export default observer(function QualifierPanel() {
 				isOpen={isAddQualifierModalOpen}
 				isModeless={false}
 				isDarkOverlay={true}
-				isBlocking={false}>
-					<AddQualifierForm
-						item={formItem.current}
-						tagsOptions={tagsOptions}
-						onSubmit={addQualifierSubmit}
-						onCancel={dismissAddQualifierModal}
-					/>
+				isBlocking={false}
+			>
+				<AddQualifierForm
+					item={formItem.current}
+					tagsOptions={tagsOptions}
+					onSubmit={addQualifierSubmit}
+					onCancel={dismissAddQualifierModal}
+				/>
 			</Modal>
 		</div>
 	)
