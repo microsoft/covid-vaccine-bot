@@ -1,0 +1,11 @@
+{
+	"healthbot": {
+		"webchatSecret": null,
+		"directlineEndpointUri": null
+	},
+	"service": {
+		"port": 8080,
+		"region": "Unknown",
+		"appSecret": null
+	}
+}

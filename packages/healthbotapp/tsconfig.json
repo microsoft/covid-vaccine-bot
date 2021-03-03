@@ -1,0 +1,13 @@
+{
+	"extends": "@tsconfig/node14/tsconfig",
+	"compilerOptions": {
+		"moduleResolution": "node",
+		"target": "ES2019",
+		"outDir": "lib",
+		"declaration": true,
+		"allowSyntheticDefaultImports": true,
+		"isolatedModules": true
+	},
+	"include": ["src"],
+	"exclude": ["**/__tests__/**"]
+}
