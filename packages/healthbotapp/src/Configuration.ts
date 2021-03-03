@@ -19,7 +19,7 @@ export class Configuration {
 		return this.config.get<string>('service.region')
 	}
 
-	public get healthbotWebchatSecret(): string {
+	public get webchatSecret(): string {
 		return this.config.get<string>('healthbot.webchatSecret')
 	}
 

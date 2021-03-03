@@ -11,10 +11,14 @@ const deployPackage = {
 	name,
 	version,
 	dependencies,
-	main: 'index.js',
+	main: 'lib/index.js',
 }
 
+const distDir = path.join(__dirname, 'dist')
+if (!fs.existsSync(distDir)) {
+	fs.mkdirSync(distDir)
+}
 fs.writeFileSync(
-	path.join(__dirname, 'dist/package.json'),
+	path.join(distDir, 'package.json'),
 	JSON.stringify(deployPackage, null, 2)
 )

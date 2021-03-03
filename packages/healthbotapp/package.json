@@ -6,12 +6,12 @@
 	"scripts": {
 		"clean": "rimraf lib dist",
 		"start": "nodemon",
-		"build": "tsc -b .",
-		"bundle": "rollup -c rollup.config.js",
+		"compile": "tsc -b .",
 		"writeDeployPackageJson": "node writeDeployPackageJson",
 		"copyConfiguration": "shx cp -r config/ dist/",
 		"copyPublic": "shx cp -r public/ dist/",
-		"predeploy:bot": "run-s writeDeployPackageJson copyConfiguration copyPublic"
+		"copyLib": "shx cp -r lib/ dist/",
+		"build": "run-s compile writeDeployPackageJson copyConfiguration copyPublic copyLib"
 	},
 	"devDependencies": {
 		"@tsconfig/node12": "^1.0.7",

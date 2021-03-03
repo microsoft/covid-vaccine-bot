@@ -48,9 +48,9 @@ export class Application {
 				)
 				res.send(jwtToken)
 			} catch (err) {
+				console.error('error creating chatbox token', err)
 				this.isHealthy = false
-				res.status(err.statusCode).send()
-				console.log('failed')
+				res.status(err?.statusCode ?? 500).send()
 			}
 		})
 	}
@@ -73,7 +73,7 @@ export class Application {
 		}
 		await got.post(this.config.directlineEndpoint, {
 			headers: {
-				Authorization: `Bearer ${this.config.healthbotWebchatSecret}`,
+				Authorization: `Bearer ${this.config.webchatSecret}`,
 			},
 			responseType: 'json',
 		})
@@ -89,7 +89,7 @@ export class Application {
 	): Promise<string> {
 		const { body } = await got.post(this.config.tokenEndpoint, {
 			headers: {
-				Authorization: `Bearer ${this.config.healthbotWebchatSecret}`,
+				Authorization: `Bearer ${this.config.webchatSecret}`,
 			},
 			responseType: 'json',
 		})
