@@ -2315,7 +2315,7 @@
 # U.S. Virgin Islands (territory)
 - Active Phase: **Phase 1A**
 
-- Info Link: **[info](https://www.covid19usvi.com/)**
+- Info Link: **[US Virgin Islands Department of Health](https://www.covid19usvi.com/)**
 
 ## Phases
 ### *Phase 1A* **(CURRENTLY ACTIVE)**
