@@ -27,7 +27,7 @@ CDC/Kansas/state_name,Kansas,캔자스,Kansas,堪萨斯州,Kansas
 CDC/Rhode_Island/state_name,Rhode Island,로드아일랜드,Rhode Island,罗得岛,Rhode Island
 CDC/American_Samoa/state_name,American Samoa,미국령 사모아,American Samoa,美属萨摩亚,Samoa Estadounidense
 CDC/New_Hampshire/state_name,New Hampshire,뉴햄프셔,New Hampshire,新罕布什尔州,Nuevo Hampshire
-CDC/Federated_States_Of_Micronesia/state_name,Federated States Of Micronesia,미크로네시아 연방,Federated States Of Micronesia,密克罗尼西亚联邦,Estados Federados de Micronesia
+CDC/federated_states_of_micronesia/state_name,Federated States Of Micronesia,미크로네시아 연방,Federated States Of Micronesia,密克罗尼西亚联邦,Estados Federados de Micronesia
 CDC/Vermont/state_name,Vermont,버몬트,Vermont,佛蒙特州,Vermont
 CDC/Arizona/state_name,Arizona,애리조나,Arizona,亚利桑那州,Arizona
 CDC/South_Carolina/state_name,South Carolina,사우스캐롤라이나,South Carolina,南卡罗来纳州,Carolina del Sur
@@ -61,4 +61,4 @@ CDC/Missouri/state_name,Missouri,미주리,Missouri,密苏里州,Misuri
 CDC/Maine/state_name,Maine,메인,Maine,缅因州,Maine
 CDC/North_Dakota/state_name,North Dakota,노스다코타,North Dakota,北达科他州,Dakota del Norte
 CDC/Tennessee/state_name,Tennessee,테네시,Tennessee,田纳西州,Tennessee
-CDC/Virgin_Islands/state_name,Virgin Islands,버진아일랜드,Virgin Islands,维尔京群岛,Islas Vírgenes
+CDC/us_virgin_islands/state_name,Virgin Islands,버진아일랜드,Virgin Islands,维尔京群岛,Islas Vírgenes

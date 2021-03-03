@@ -8,12 +8,12 @@ export class StringChecker {
 
 	public constructor(idList: string[]) {
 		this.idSet = new Set<string>()
-		idList.forEach((id) => this.idSet.add(id))
+		idList.forEach((id) => this.idSet.add(id.toLowerCase()))
 	}
 
 	public has(id: string): boolean {
-		const result = this.idSet.has(id)
-		this.visitedSet.add(id)
+		const result = this.idSet.has(id.toLowerCase())
+		this.visitedSet.add(id.toLowerCase())
 		return result
 	}
 
