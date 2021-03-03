@@ -144,7 +144,6 @@ function checkStringIds(
 ): void {
 	function checkString(str: string): void {
 		if (!validStrings.has(str)) {
-			console.log(validStrings)
 			errors.push(`no defined string with id "${str}"`)
 		}
 	}
