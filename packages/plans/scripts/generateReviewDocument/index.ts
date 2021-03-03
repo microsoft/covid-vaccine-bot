@@ -30,7 +30,7 @@ function generateReviewDocument(): void {
 
 	const localizations: LocalizationMap = new Map()
 	csvData.forEach((datum) => {
-		localizations.set(datum['String ID'], datum)
+		localizations.set(datum['String ID'].toLowerCase(), datum)
 	})
 
 	const result = `
@@ -189,9 +189,9 @@ function writePhaseInfo(
 	isActive: boolean
 ): string {
 	function writeQualificationRow(row: Qualification): string {
-		const questionLoc = localizations.get(row.question)
+		const questionLoc = localizations.get(row.question.toLowerCase())
 		const moreInfoLoc: LocalizationRecord | undefined = row.moreInfoText
-			? localizations.get(row.moreInfoText)
+			? localizations.get(row.moreInfoText.toLowerCase())
 			: undefined
 		if (questionLoc == null) {
 			throw new Error(`could not find string with id ${row.question}`)
