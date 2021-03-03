@@ -2,7 +2,7 @@
 	"name": "@covid-vax-bot/healthbot-app",
 	"version": "0.0.1",
 	"description": "A simple web page to handoff users to the Health bot",
-	"main": "server.js",
+	"main": "lib/index.js",
 	"scripts": {
 		"clean": "rimraf lib dist",
 		"start": "nodemon",
@@ -21,6 +21,7 @@
 		"@types/node": "^12",
 		"@types/rimraf": "^3.0.0",
 		"nodemon": "^2.0.7",
+		"npm-run-all": "^4.1.5",
 		"rimraf": "^3.0.2",
 		"shx": "^0.3.3",
 		"ts-node": "^9.1.1",

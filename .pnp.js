@@ -4573,6 +4573,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["got", "npm:11.8.2"],
             ["jsonwebtoken", "npm:8.5.1"],
             ["nodemon", "npm:2.0.7"],
+            ["npm-run-all", "npm:4.1.5"],
             ["rimraf", "npm:3.0.2"],
             ["shx", "npm:0.3.3"],
             ["ts-node", "virtual:cbb849f74e44bc83785218332db5748abf69b79ef46fe2bb3425242e52398f8b4a03d6dbcae0b97c84794593958f7d2e89535f33a5ff585d0d6545ac8ab5410f#npm:9.1.1"],
