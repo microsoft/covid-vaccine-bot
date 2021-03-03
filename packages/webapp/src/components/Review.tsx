@@ -14,7 +14,6 @@ import { useState, useEffect } from 'react'
 import { createPR } from '../actions/repoActions'
 
 import { getAppStore } from '../store/store'
-import { deepDiffMapper } from '../utils/dataUtils'
 
 import './Review.scss'
 
