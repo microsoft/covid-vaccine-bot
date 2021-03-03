@@ -15,9 +15,9 @@ export interface AppState {
 	repoFileData?: any
 	initRepoFileData?: any[]
 	globalFileData?: any
+	initGlobalFileData?: any
 	currentLanguage: string
 	toggleQualifier: boolean
-	toggleAddLocation: boolean
 	isEditable: boolean
 	pendingChanges: boolean
 }

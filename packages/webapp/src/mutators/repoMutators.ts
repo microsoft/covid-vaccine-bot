@@ -50,6 +50,11 @@ export const setRepoFileData = mutatorAction(
 				cdcStateNames: data[2],
 				cdcStateLinks: data[3],
 			}
+			store.initGlobalFileData = {	
+				customStrings: data[1],
+				cdcStateNames: data[2],
+				cdcStateLinks: data[3],
+			}
 		}
 	}
 )

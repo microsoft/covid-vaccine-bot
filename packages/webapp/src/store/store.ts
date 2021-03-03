@@ -18,9 +18,9 @@ export const getAppState = (): AppState => {
 		repoFileData: undefined,
 		initRepoFileData: undefined,
 		globalFileData: undefined,
+		initGlobalFileData: undefined,
 		mainBranch: undefined,
 		currentLanguage: 'en-us',
-		toggleAddLocation: false,
 		toggleQualifier: false,
 		isEditable: true,
 		pendingChanges: false
