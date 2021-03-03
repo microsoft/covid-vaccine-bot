@@ -306,7 +306,6 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 				item: currentItem,
 				regionInfo: isRegion ? value : null,
 			})
-			console.log(repoFileData)
 		} else if (initItem.moreInfoContent !== currentItem.moreInfoContent) {
 			let calcInfoKey = currentItem.qualifierId.replace('question', 'moreinfo')
 			calcInfoKey += `.${selectedState.value.info.content.metadata.code_alpha.toLowerCase()}`

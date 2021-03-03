@@ -15,7 +15,6 @@ import { useCallback, useState, useRef } from 'react'
 import {
 	getPhaseTagItems,
 	getPhaseQualifierItems,
-	getPhaseMoreInfoItems,
 	getPhaseMoreInfoTextByKey,
 	getPhaseQualifierItemsByKey,
 	getPhaseMoreInfoUrl,
@@ -46,7 +45,6 @@ export default observer(function PhaseQualiferForm(
 	} = props
 	const phaseTagItems = useRef(getPhaseTagItems(selectedState))
 	const phaseQualifierItems = useRef(getPhaseQualifierItems(selectedState))
-	const phaseMoreInfoItems = useRef(getPhaseMoreInfoItems(selectedState))
 	const [filteredQualifierItems, setFilteredQualifierItems] = useState<any[]>(
 		getPhaseQualifierItemsByKey(selectedState, rowItems.item.tagKey)
 	)
