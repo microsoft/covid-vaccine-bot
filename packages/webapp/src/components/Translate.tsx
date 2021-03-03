@@ -55,9 +55,9 @@ export default observer(function Translate() {
 
 				const stateLabel =
 					stateNames[`cdc/${stateId}/state_name`] &&
-					stateNames[`cdc/${stateId}/state_name`][currentLanguage] &&
-					stateNames[`cdc/${stateId}/state_name`][currentLanguage].trim() !== ''
-						? stateNames[`cdc/${stateId}/state_name`][currentLanguage]
+					stateNames[`cdc/${stateId}/state_name`][mainLanguage.current] &&
+					stateNames[`cdc/${stateId}/state_name`][mainLanguage.current].trim() !== ''
+						? stateNames[`cdc/${stateId}/state_name`][mainLanguage.current]
 						: `*Translation Not Found* (${stateId})`
 
 				const translateToValue = !translateLanguage.key
@@ -92,11 +92,11 @@ export default observer(function Translate() {
 	useEffect(() => {
 		mainLanguage.current = currentLanguage
 		setTranslateLanguage(getLanguageOptions()[0])
-	},[currentLanguage, mainLanguage, setTranslateLanguage, getLanguageOptions])
+	},[currentLanguage, mainLanguage, setTranslateLanguage])
 
 	useEffect(() => {
 		buildLocationList()
-	},[translationFilterState, translateLanguage, mainLanguage])
+	},[translationFilterState, translateLanguage, mainLanguage, buildLocationList])
 
 	const onTranslateLanguageChange = useCallback(
 		(_ev, option) => {
