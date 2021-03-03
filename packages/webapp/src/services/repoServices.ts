@@ -48,7 +48,7 @@ const createCSVDataString = ( contentObj:any ) => {
 		const rowValues = [key]
 		languageKeys.forEach((lang:string) => {
 			if(contentObj[key][lang]){
-				rowValues.push(`"${contentObj[key][lang]}"`)
+				rowValues.push(`"${contentObj[key][lang].replace(/"/g,'""')}"`)
 			} else {
 				rowValues.push('')
 			}
@@ -77,6 +77,7 @@ export const repoServices = async (
 					method: 'GET',
 					headers: {
 						Authorization: `token ${state.accessToken}`,
+						Accept: 'application/vnd.github.v3+json'
 					},
 				}
 			)
@@ -428,7 +429,6 @@ export const repoServices = async (
 					}
 				)
 
-				// console.log(newBranch, fileResp)
 
 				return prResp.json()
 			}

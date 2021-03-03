@@ -5,7 +5,9 @@
 import { observer } from 'mobx-react-lite'
 import { deepDiffMapper } from '../utils/dataUtils'
 import { getAppStore } from '../store/store'
-import { DefaultButton } from 'office-ui-fabric-react'
+import { PrimaryButton, DetailsList,
+	DetailsListLayoutMode,
+	IColumn, ProgressIndicator } from 'office-ui-fabric-react'
 import {createPR} from '../actions/repoActions'
 
 
@@ -14,11 +16,25 @@ import { useState, useEffect } from 'react'
 
 import './Review.scss'
 
-export default observer(function Review() {
+export interface ReviewProp {
+	showDashboard: () => void
+}
+
+export default observer(function Review(props:ReviewProp) {
+		const {showDashboard} = props
+		const changesColumns = [
+		{
+			key: 'labelCol',
+			name: 'Pending Changes',
+			fieldName: 'label',
+			minWidth: 200,
+			isResizable: true,
+		}]
 
 	const [changesList, setChangesList] = useState<any[]>([])
 	const [locationUpdates, setLocationUpdates] = useState<any[]>([])
 	const [globalUpdates, setGlobalUpdates] = useState<any[]>([])
+	const [showLoading, setShowLoading] = useState<boolean>(false)
 
 	const state = getAppStore()
 	useEffect(() => {
@@ -86,19 +102,28 @@ export default observer(function Review() {
 	return (
 		<div className="reviewPageContainer">
 			<div className="bodyContainer">
-				<div className="bodyHeader">
-					<div className="bodyHeaderTitle">
-						<div className="breadCrumbs">/ Review</div>
-						<div className="mainTitle">Changes</div>
-					</div>
-				</div>
+				
 				<div className="bodyContent">
-					<section><ul>
-						{ changesList.map( item => ( <li key={item.label} >{item.label}</li> ) ) }
-						</ul>
-						<DefaultButton text="Submit changes" onClick={ () => createPR([ globalUpdates, locationUpdates ]) } />
+					{!showLoading ? (
+					<section>
+					<DetailsList 
+						items={changesList}
+						columns={changesColumns}
+								setKey="set"
+								layoutMode={DetailsListLayoutMode.justified}
+								checkboxVisibility={2}
+					/>
+					<div className = "submitContainer">
+						<PrimaryButton text="Submit changes" onClick={ () => { setShowLoading(true);createPR([ globalUpdates, locationUpdates, showDashboard ]) } } />
+						</div>
 						
 					</section>
+					) : (
+						<section className="loadingContainer">
+						<ProgressIndicator description="Saving changes..." />
+					</section>
+
+					)}
 				</div>
 			</div>
 		</div>

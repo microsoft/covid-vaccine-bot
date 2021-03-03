@@ -20,20 +20,22 @@ export const setBranchList = mutatorAction(
 
 export const setIssuesList = mutatorAction(
 	'setIssuesList',
-	(data: any[] | undefined) => {
+	(data: any[] | undefined, callback?: any | undefined) => {
 		if (data) {
 			const store = getAppStore()
 			store.issues = data
+			if(callback){
+				callback()
+			}
 		}
 	}
 )
 
 export const handleCreatePR = mutatorAction(
 	'handleCreatePR',
-	(data: any[] | undefined) => {
-		if (data) {
-			alert('Checkout Github!')
-		}
+	() => {
+		const store = getAppStore()
+			store.pendingChanges = false
 	}
 )
 
@@ -42,7 +44,6 @@ export const setRepoFileData = mutatorAction(
 	(data: any[] | undefined) => {
 		if (data) {
 			const store = getAppStore()
-			console.log(data)
 			store.repoFileData = data[0]
 			store.initRepoFileData = data[0]
 			store.globalFileData = {
@@ -587,6 +588,7 @@ export const updateGlobalQualifiers = mutatorAction('updateGlobalQualifiers', (i
 	if (item) {
 		const store = getAppStore()
 		const { customStrings } = store.globalFileData
+		store.pendingChanges = true
 		let qualifierKey = ''
 
 		if (item.isNew) {

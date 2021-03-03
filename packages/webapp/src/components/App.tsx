@@ -26,7 +26,7 @@ import Locations from './Locations'
 import Login from './Login'
 import QualifierPanel from './QualifierPanel'
 import Translate from './Translate'
-import { useCallback } from 'react'
+import { useCallback, useState } from 'react'
 import { useBoolean } from '@uifabric/react-hooks'
 import Review from './Review'
 
@@ -39,6 +39,7 @@ export default observer(function App() {
 		isPanelOpen,
 		{ setTrue: showPanel, setFalse: hidePanel },
 	] = useBoolean(false)
+	 const [selectedKey, setSelectedKey] = useState<string>("Dashboard")
 
 	const togglePanel = useCallback((item?: any) => {
 		if (item.props.headerText === 'Locations') {
@@ -46,7 +47,14 @@ export default observer(function App() {
 		} else {
 			hidePanel()
 		}
-	},[state, showPanel, hidePanel])
+		setSelectedKey(item.props.headerText)
+	},[state, showPanel, hidePanel, setSelectedKey])
+
+	const showDashboard = useCallback( () => {
+		setSelectedKey ("Dashboard")
+	}, [setSelectedKey]
+
+	)
 
 	return (
 		<div className="rootContentWrapper">
@@ -112,8 +120,8 @@ export default observer(function App() {
 									{isUserAuthorized() ? (
 										<>
 											<div className="appBodyLeft">
-												<Pivot onLinkClick={togglePanel}>
-													<PivotItem headerText="Dashboard">
+												<Pivot onLinkClick={togglePanel} selectedKey={selectedKey}>
+													<PivotItem headerText="Dashboard" itemKey="Dashboard">
 													{state.pendingChanges && (
 														<MessageBar styles={{root:{margin:"10px 5px"}}}>
 														    You have pending changes, please click on the review tab to submit these changes.
@@ -121,7 +129,7 @@ export default observer(function App() {
 														  )}
 														<Dashboard />
 													</PivotItem>
-													<PivotItem headerText="Locations">
+													<PivotItem headerText="Locations" itemKey="Locations">
 													{state.pendingChanges && (
 														<MessageBar styles={{root:{margin:"10px 5px"}}}>
 														    You have pending changes, please click on the review tab to submit these changes.
@@ -129,8 +137,8 @@ export default observer(function App() {
 														  )}
 														<Locations />
 													</PivotItem>
-													{state.isEditable && (
-													<PivotItem headerText="Translate">
+													{false && state.isEditable && (
+													<PivotItem headerText="Translate" itemKey="Translate">
 														{state.pendingChanges && (
 														<MessageBar styles={{root:{margin:"10px 5px"}}}>
 														    You have pending changes, please click on the review tab to submit these changes.
@@ -139,8 +147,8 @@ export default observer(function App() {
 														<Translate />
 													</PivotItem>)}
 													{state.pendingChanges && (
-													<PivotItem headerText="Review">
-														<Review />
+													<PivotItem headerText="Review" itemKey="Review">
+														<Review showDashboard={showDashboard} />
 													</PivotItem>
 													)}
 												</Pivot>
