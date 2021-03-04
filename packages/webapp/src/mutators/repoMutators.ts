@@ -6,6 +6,11 @@ import { mutatorAction } from 'satcheljs'
 import { getAppStore } from '../store/store'
 import { createLocationDataObj } from '../utils/dataUtils'
 
+export const initStoreData = mutatorAction('initStoreData', (isDataRefreshing: boolean) => {
+	const store = getAppStore()
+	store.isDataRefreshing = isDataRefreshing
+})
+
 export const setBranchList = mutatorAction(
 	'setBranchList',
 	(data: any[] | undefined) => {
