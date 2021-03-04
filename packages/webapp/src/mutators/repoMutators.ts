@@ -572,7 +572,6 @@ export const addPhase = mutatorAction('addPhase', (data: any | undefined) => {
 			const location = store.repoFileData[data.locationKey]
 
 			const phaseId = data.item.name.replace(/[\s.]/g, '').toLowerCase()
-			console.log(phaseId)
 
 			const emptyQualifications: any = []
 
