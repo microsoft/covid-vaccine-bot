@@ -146,7 +146,7 @@ export default observer(function App() {
 														)}
 														<Locations />
 													</PivotItem>
-													{false && state.isEditable && (
+													{state.isEditable && (
 														<PivotItem
 															headerText="Translate"
 															itemKey="Translate"
