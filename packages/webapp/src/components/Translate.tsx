@@ -59,11 +59,14 @@ export default observer(function Translate() {
 	const [isSectionCollapse, setSectionCollapse] = useState<any>({locations: false, qualifiers: false, misc: false})
 
 	const buildTranslationsLists = useCallback(() => {
+		const tempMiscList: any[] = []
+
 		if (repoFileData) {
 			const tempList: any[] = []
 			Object.entries(repoFileData).forEach(([_key, value]: [string, any]) => {
 				const stateId = value?.info?.content.id
 				const stateNames = globalFileData?.cdcStateNames.content
+				const stateLinks = globalFileData?.cdcStateLinks.content
 
 				const stateLabel =
 					stateNames[`cdc/${stateId}/state_name`] &&
@@ -72,11 +75,24 @@ export default observer(function Translate() {
 						? stateNames[`cdc/${stateId}/state_name`][mainLanguage.current]
 						: `*Translation Not Found* (${stateId})`
 
+				const stateLinkLabel =
+				stateLinks[`cdc/${stateId}/state_link`] &&
+				stateLinks[`cdc/${stateId}/state_link`][mainLanguage.current] &&
+				stateLinks[`cdc/${stateId}/state_link`][mainLanguage.current].trim() !== ''
+					? stateLinks[`cdc/${stateId}/state_link`][mainLanguage.current]
+					: `*Translation Not Found* (${stateId})`
+
 				const translateToValue = !toLanguage.current
 					? ''
 					: !stateNames?.[`cdc/${stateId}/state_name`]?.[toLanguage.current]
 						? ''
 						: stateNames?.[`cdc/${stateId}/state_name`]?.[toLanguage.current]
+
+				const translateLinkToValue = !toLanguage.current
+					? ''
+					: !stateLinks?.[`cdc/${stateId}/state_link`]?.[toLanguage.current]
+						? ''
+						: stateLinks?.[`cdc/${stateId}/state_link`]?.[toLanguage.current]
 
 				tempList.push({
 					key: `cdc/${stateId}/state_name`,
@@ -86,14 +102,21 @@ export default observer(function Translate() {
 					to: translateToValue,
 					_to: translateToValue
 				})
+
+				tempMiscList.push({
+					key: `cdc/${stateId}/state_link`,
+					fromKey: mainLanguage.current,
+					from: stateLinkLabel,
+					toKey: toLanguage.current,
+					to: translateLinkToValue,
+					_to: translateLinkToValue
+				})
 			})
-			const locationNames = tempList.sort((a,b) => (a.from > b.from) ? 1 : -1)
-			locationFullList.current = locationNames
+			locationFullList.current = tempList.sort((a,b) => (a.from > b.from) ? 1 : -1)
 		}
 
 		if (globalFileData) {
 			const tempQualifierList: any[] = []
-			const tempMiscList: any[] = []
 			Object.entries(globalFileData.customStrings.content).forEach(([key, value]: [string, any]) => {
 				if (key.startsWith('c19.eligibility.question')) {
 					tempQualifierList.push({
@@ -116,8 +139,9 @@ export default observer(function Translate() {
 				}
 			})
 			qualifierFullList.current = tempQualifierList.sort((a,b) => (a.from > b.from) ? 1 : -1)
-			miscFullList.current = tempMiscList.sort((a,b) => (a.from > b.from) ? 1 : -1)
 		}
+
+		miscFullList.current = tempMiscList.sort((a,b) => (a.key > b.key) ? 1 : -1)
 	},[globalFileData, repoFileData])
 
 	useEffect(() => {

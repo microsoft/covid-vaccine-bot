@@ -737,17 +737,36 @@ export const translateMisc = mutatorAction('translateMisc', (item: any) => {
 		const store = getAppStore()
 		if (store?.globalFileData) {
 			store.pendingChanges = true
-			if (store.globalFileData.customStrings.content[item.key]) {
-				store.globalFileData.customStrings.content[item.key] = {
-					...store.globalFileData.customStrings.content[item.key],
-					[item.toKey]: item.to
+			const customStringKeys = Object.keys(store.globalFileData.customStrings.content)
+			const isCustomString = customStringKeys.includes(item.key)
+
+			if (isCustomString) {
+				if (store.globalFileData.customStrings.content[item.key]) {
+					store.globalFileData.customStrings.content[item.key] = {
+						...store.globalFileData.customStrings.content[item.key],
+						[item.toKey]: item.to
+					}
+				} else {
+					store.globalFileData.customStrings.content = {
+						...store.globalFileData.customStrings.content,
+						...{[item.key]: {
+							[item.toKey]: item.to
+						}}
+					}
 				}
 			} else {
-				store.globalFileData.customStrings.content = {
-					...store.globalFileData.customStrings.content,
-					...{[item.key]: {
+				if (store.globalFileData.cdcStateLinks.content[item.key]) {
+					store.globalFileData.cdcStateLinks.content[item.key] = {
+						...store.globalFileData.cdcStateLinks.content[item.key],
 						[item.toKey]: item.to
-					}}
+					}
+				} else {
+					store.globalFileData.cdcStateLinks.content = {
+						...store.globalFileData.cdcStateLinks.content,
+						...{[item.key]: {
+							[item.toKey]: item.to
+						}}
+					}
 				}
 			}
 
