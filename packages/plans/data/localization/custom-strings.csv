@@ -53,4 +53,5 @@ c19.eligibility.question/essential_worker.firefighter_leo,"Are you a firefighter
 c19.eligibility.question/essential_worker.leo_corrections,"Are you a law enforcement office or corrections staff?",,,,,,,,,,,,,,
 c19.eligibility.question/essential_worker.ff_leo_corrections,"Are you a firefighter, law enforcement officer, or corrections staff?",,,,,,,,,,,,,,
 c19.eligibility.question/congregate,"Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?",,,,,,,,,,,,,,
+c19.eligibility.question/multigenerational.do,"Do you live in a multigenerational household?",,,,,,,,,,,,,,
 c19.eligibility.question/congregate.do,"Do you work or live in a congregate setting? ",,,,,,,,,,,,,,

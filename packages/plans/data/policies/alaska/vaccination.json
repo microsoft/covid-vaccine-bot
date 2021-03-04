@@ -12,7 +12,7 @@
 			"url": "http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/VaccineAvailability.aspx"
 		}
 	},
-	"activePhase": "1b",
+	"activePhase": "1c",
 	"phases": [
 		{
 			"id": "1a",
@@ -58,19 +58,28 @@
 					"question": "c19.eligibility.question/long_term_care_resident"
 				},
 				{
-					"question": "c19.eligibility.question/essential_worker"
+					"question": "c19.eligibility.question/essential_worker",
+					"moreInfoUrl": "http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/VaccineAvailability.aspx#essentialworkers"
 				},
 				{
-					"question": "c19.eligibility.question/health"
+					"question": "c19.eligibility.question/health",
+					"moreInfoUrl": "http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/VaccineAvailability.aspx#medicalconditions"
 				},
 				{
 					"question": "c19.eligibility.question/age.55_up"
 				},
 				{
-					"question": "c19.eligibility.question/congregate"
+					"question": "c19.eligibility.question/congregate",
+					"moreInfoUrl": "http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/VaccineAvailability.aspx#congregatesettings"
 				},
 				{
-					"question": "c19.eligibility.question/unserved.1c.AK"
+					"question": "c19.eligibility.question/unserved.1c.AK",
+					"moreInfoText": "c19.eligibility.moreinfo/unserved.1c.ak.ak.1c",
+					"moreInfoUrl": "https://dec.alaska.gov/water/water-sewer-challenge/rural-communities/"
+				},
+				{
+					"question": "c19.eligibility.question/multigenerational.do",
+					"moreInfoText": "c19.eligibility.moreinfo/multigenerational.do.ak.1c"
 				}
 			]
 		}
