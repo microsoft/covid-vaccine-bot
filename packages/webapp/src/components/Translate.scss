@@ -5,7 +5,13 @@
 	flex-direction: column;
 
 	.listTitle {
+		display: flex;
 		border-bottom: 1px solid $ms-color-gray40;
+		cursor: pointer;
+	}
+
+	.groupToggleIcon {
+		padding: 0 10px;
 	}
 
 	section {
@@ -21,17 +27,29 @@
 
 	.ms-Dropdown-container {
 		margin-right: 20px;
+		width: 200px;
 	}
 }
 
-.locationListRow {
+.translateListRow {
 	display: flex;
 	flex-direction: row;
-	padding: 10px;
+	padding: 10px 10px 10px 36px;
 	align-items: center;
 
 	&.altRow {
 		background-color: $ms-color-gray20;
+	}
+
+	&.qualifier {
+		.fromCol {
+			flex: 2;
+			padding-right: 35px;
+		}
+
+		.toCol {
+			flex: 2;
+		}
 	}
 
 	.fromCol {
@@ -41,4 +59,9 @@
 	.toCol {
 		flex: 2;
 	}
+}
+
+.emptyTranslateListRow {
+	display: flex;
+	padding: 20px 20px 20px 36px;
 }
