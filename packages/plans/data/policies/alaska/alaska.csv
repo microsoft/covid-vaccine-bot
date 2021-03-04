@@ -1,4 +1,5 @@
 String ID,en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th
-c19.eligibility.question/health.1b.AK,"Are you age 50+ with 2 or more high-risk health conditions, or are you age 16+ and are a member of an unserved community?",,,,,,,,,,,,,,
-c19.eligibility.question/unserved.1c.AK,Are you age 16+ and a member of an unserved community?,,,,,,,,,,,,,,
-c19.links/info.AK,"Anchorage COVID-19 Vaccination",,,,,,,,,,,,,,
+c19.eligibility.question/health.1b.ak,"Are you age 50+ with 2 or more high-risk health conditions, or are you age 16+ and are a member of an unserved community?",,,,,,,,,,,,,,
+c19.eligibility.question/unserved.1c.ak,"Are you age 16+ and a member of an unserved community?",,,,,,,,,,,,,,
+c19.links/info.ak,"Anchorage COVID-19 Vaccination",,,,,,,,,,,,,,
+c19.link/scheduling.phone.ak,,,,,,,,,,,,,,,
