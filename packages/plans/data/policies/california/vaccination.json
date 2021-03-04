@@ -3,10 +3,12 @@
 		"info": {
 			"text": "CDC/California/state_link",
 			"url": "https://covid19.ca.gov/vaccines/#When-can-I-get-vaccinated",
-			"scrapeQuery": ["div.col-lg-10.mx-auto"]
+			"scrapeQuery": [
+				"div.col-lg-10.mx-auto"
+			]
 		}
 	},
-	"activePhase": "1a",
+	"activePhase": "1b",
 	"phases": [
 		{
 			"id": "1a",
@@ -29,7 +31,8 @@
 					"question": "c19.eligibility.question/long_term_care_resident"
 				},
 				{
-					"question": "c19.eligibility.question/essential_worker.1b.CA"
+					"question": "c19.eligibility.question/essential_worker",
+					"moreInfoUrl": "https://covid19.ca.gov/essential-workforce/"
 				},
 				{
 					"question": "c19.eligibility.question/age.65_up"
@@ -49,10 +52,13 @@
 					"question": "c19.eligibility.question/long_term_care_resident"
 				},
 				{
-					"question": "c19.eligibility.question/essential_worker"
+					"question": "c19.eligibility.question/essential_worker",
+					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.ca.1c",
+					"moreInfoUrl": "https://covid19.ca.gov/essential-workforce/"
 				},
 				{
-					"question": "c19.eligibility.question/health"
+					"question": "c19.eligibility.question/health",
+					"moreInfoUrl": "https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/COVID-19/Provider-Bulletin-2-12-21.aspx"
 				},
 				{
 					"question": "c19.eligibility.question/age.65_up"
