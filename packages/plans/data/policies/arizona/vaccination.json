@@ -1,16 +1,31 @@
 {
 	"links": {
-		"info": {
-			"text": "CDC/Arizona/state_link",
-			"url": "https://azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-vaccine"
-		},
 		"eligibility": {
-			"url": "https://www.azdhs.gov/documents/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/novel-coronavirus/vaccine-phases.pdf",
-			"content": "pdf"
+			"url": "https://www.azdhs.gov/documents/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/novel-coronavirus/vaccine-phases.pdf"
+		},
+		"eligibility_plan": {
+			"url": ""
+		},
+		"info": {
+			"url": "https://azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-vaccine",
+			"text": "cdc/arizona/state_link"
+		},
+		"providers": {
+			"url": "",
+			"text": "c19.links/vax_providers"
+		},
+		"workflow": {
+			"url": "http://azhealth.gov/covid19vaccines",
+			"text": "c19.links/vax_quiz"
 		},
 		"scheduling": {
-			"text": "c19.links/schedule_vax",
-			"url": "https://podvaccine.azdhs.gov/"
+			"url": "https://podvaccine.azdhs.gov/",
+			"text": "c19.links/schedule_vax"
+		},
+		"scheduling_phone": {
+			"url": "tel:",
+			"text": "c19.link/scheduling.phone.az",
+			"description": ""
 		}
 	},
 	"activePhase": "1b_prioritized_75",
