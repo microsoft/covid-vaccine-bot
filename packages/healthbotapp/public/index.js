@@ -3,13 +3,12 @@
  * Licensed under the MIT license. See LICENSE file in the project.
  */
 
-const defaultLocale = 'en-US';
-
-const params = new URLSearchParams(location.search);
-const locale = params.get("locale") || navigator.language;
+var defaultLocale = 'en-US';
+var params = new URLSearchParams(location.search);
+var locale = params.get("locale") || navigator.language;
 
 function requestChatBot(loc) {
-    const oReq = new XMLHttpRequest();
+    var oReq = new XMLHttpRequest();
     oReq.addEventListener("load", initBotConversation);
     var path = "/chatBot?locale=" + locale;
 
@@ -30,7 +29,6 @@ function requestChatBot(loc) {
 }
 
 function chatRequested() {
-    // const params = new URLSearchParams(location.search);
     if (params.has('shareLocation')) {
         getUserLocation(requestChatBot);
     }
@@ -70,6 +68,10 @@ function initBotConversation() {
         locale: tokenPayload.locale
     };
     var domain = undefined;
+		var preamble = 'bing'
+		if (params.has('preamble')) {
+			preamble = params.get('preamble')
+		}
     if (tokenPayload.directLineURI) {
         domain =  "https://" +  tokenPayload.directLineURI + "/v3/directline";
     }
@@ -105,7 +107,7 @@ function initBotConversation() {
                             triggeredScenario: {
                                 trigger: "c19_entry",
                                 args: {
-                                    preamble: 'bing',
+                                    preamble,
                                     countryRegion: params.get("countryRegion") || null,
                                     adminDistrict: params.get("adminDistrict") || null,
                                     lat: lat,
@@ -131,7 +133,7 @@ function initBotConversation() {
         }
         return next(action);
     }}});
-		
+
     startChat(user, {
 			directLine: botConnection,
 			styleOptions: styleOptions,
