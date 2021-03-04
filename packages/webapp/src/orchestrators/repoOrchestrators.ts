@@ -12,7 +12,8 @@ import {
 	setBranchList,
 	handleCreatePR,
 	setRepoFileData,
-	setIssuesList
+	setIssuesList,
+	initStoreData
 } from '../mutators/repoMutators'
 import { repoServices } from '../services/repoServices'
 
@@ -41,6 +42,8 @@ orchestrator(getRepoFileData, async () => {
 })
 
 orchestrator(initializeGitData, async () => {
+	initStoreData(true)
+
 	let resp = await repoServices('getBranches')
 	setBranchList(resp)
 
@@ -49,4 +52,8 @@ orchestrator(initializeGitData, async () => {
 
 	resp = await repoServices('getIssues')
 	setIssuesList(resp)
+
+	handleCreatePR()
+
+	initStoreData(false)
 })

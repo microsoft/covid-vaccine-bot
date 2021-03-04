@@ -6,6 +6,11 @@ import { mutatorAction } from 'satcheljs'
 import { getAppStore } from '../store/store'
 import { createLocationDataObj } from '../utils/dataUtils'
 
+export const initStoreData = mutatorAction('initStoreData', (isDataRefreshing: boolean) => {
+	const store = getAppStore()
+	store.isDataRefreshing = isDataRefreshing
+})
+
 export const setBranchList = mutatorAction(
 	'setBranchList',
 	(data: any[] | undefined) => {
@@ -85,13 +90,27 @@ export const updateLocationList = mutatorAction(
 					'vi-vn': locationData.details,
 				}
 
+				newLocObj.strings.path = `${newLocObj.info.content.id}/${newLocObj.info.content.id}.csv`
+
 				const schedulingPhoneKey: string = `c19.link/scheduling.phone.${newLocObj.info.content.id}`.toLowerCase()
-				newLocObj.strings.content = {
+				const stringsContentObj: any = {
 					[schedulingPhoneKey]: {
 						[store.currentLanguage]: locationData.schedulingPhone,
 					},
 				}
 				newLocObj.vaccination.content.links.scheduling_phone.text = schedulingPhoneKey
+
+				if (locationData.schedulingPhoneDesc !== '') {
+					const schedulingPhoneDescKey = `c19.link/scheduling.phone.description.${newLocObj.info.content.id}`.toLowerCase()
+
+					stringsContentObj[schedulingPhoneDescKey] = {
+						[store.currentLanguage]: locationData.schedulingPhoneDesc,
+					}
+
+					newLocObj.vaccination.content.links.scheduling_phone.description = schedulingPhoneDescKey
+				}
+
+				newLocObj.strings.content = stringsContentObj
 
 				store.repoFileData[newLocObj.info.content.id] = newLocObj
 				store.repoFileData = { ...store.repoFileData }
@@ -106,6 +125,16 @@ export const updateLocationList = mutatorAction(
 					[store.currentLanguage]: locationData.schedulingPhone,
 				}
 				newLocObj.vaccination.content.links.scheduling_phone.text = schedulingPhoneKey
+
+				if (locationData.schedulingPhoneDesc !== '') {
+					const schedulingPhoneDescKey = `c19.link/scheduling.phone.description.${newLocObj.info.content.id}`.toLowerCase()
+
+					location.strings.content[schedulingPhoneDescKey] = {
+						[store.currentLanguage]: locationData.schedulingPhoneDesc,
+					}
+
+					newLocObj.vaccination.content.links.scheduling_phone.description = schedulingPhoneDescKey
+				}
 
 				if (location.regions) {
 					location.regions[newLocObj.info.content.id] = newLocObj
@@ -175,8 +204,23 @@ export const updateLocationData = mutatorAction(
 					scheduling_phone: {
 						url: `tel:${locationData.schedulingPhone}`,
 						text: schedulingPhoneKey,
-						description: '',
 					},
+				}
+				if (locationData.schedulingPhoneDesc !== '') {
+					let schedulingPhoneDescKey = `c19.link/scheduling.phone.description.${prevItem.value.info.content.metadata.code_alpha}`.toLowerCase()
+
+					if (
+						prevItem.value.vaccination.content.links.scheduling_phone
+							.description
+					) {
+						schedulingPhoneDescKey =
+							prevItem.value.vaccination.content.scheduling_phone.description
+					}
+					location.strings.content[schedulingPhoneDescKey] = {
+						[store.currentLanguage]: locationData.schedulingPhoneDesc,
+					}
+
+					location.vaccination.content.links.scheduling_phone.description = schedulingPhoneDescKey
 				}
 			} else {
 				const location = store.repoFileData[selectedState.key]
@@ -214,8 +258,24 @@ export const updateLocationData = mutatorAction(
 					scheduling_phone: {
 						url: `tel:${locationData.schedulingPhone}`,
 						text: schedulingPhoneKey,
-						description: '',
 					},
+				}
+
+				if (locationData.schedulingPhoneDesc !== '') {
+					let schedulingPhoneDescKey = `c19.link/scheduling.phone.description.${regionObj.info.content.id}`.toLowerCase()
+
+					if (
+						prevItem.value.vaccination.content.links.scheduling_phone
+							.description
+					) {
+						schedulingPhoneDescKey =
+							prevItem.value.vaccination.content.scheduling_phone.description
+					}
+					location.strings.content[schedulingPhoneDescKey] = {
+						[store.currentLanguage]: locationData.schedulingPhoneDesc,
+					}
+
+					regionObj.vaccination.content.links.scheduling_phone.description = schedulingPhoneDescKey
 				}
 			}
 			store.repoFileData = { ...store.repoFileData }

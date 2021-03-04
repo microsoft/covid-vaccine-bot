@@ -23,7 +23,8 @@ export const getAppState = (): AppState => {
 		currentLanguage: 'en-us',
 		toggleQualifier: false,
 		isEditable: true,
-		pendingChanges: false
+		pendingChanges: false,
+		isDataRefreshing: false
 	}
 }
 

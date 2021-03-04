@@ -1,20 +1,34 @@
 {
 	"links": {
-		"info": {
-			"text": "CDC/Alabama/state_link",
-			"url": "https://www.alabamapublichealth.gov/covid19/vaccine.html"
+		"eligibility": {
+			"url": ""
 		},
 		"eligibility_plan": {
-			"url": "https://www.alabamapublichealth.gov/covid19vaccine/assets/adph-covid19-vaccination-allocation-plan.pdf",
-			"content": "pdf"
+			"url": "https://www.alabamapublichealth.gov/covid19vaccine/assets/cov-vaccine-prioritization.pdf"
+		},
+		"info": {
+			"url": "https://www.alabamapublichealth.gov/covid19/vaccine.html",
+			"text": "cdc/alabama/state_link"
+		},
+		"providers": {
+			"url": "",
+			"text": "c19.links/vax_providers"
+		},
+		"workflow": {
+			"url": "https://govstatus.egov.com/vaccine-eligibility-form",
+			"text": "c19.links/vax_quiz"
+		},
+		"scheduling": {
+			"url": "",
+			"text": "c19.links/schedule_vax"
 		},
 		"scheduling_phone": {
-			"description": "c19.link/scheduling.phone.description.AL",
-			"text": "c19.link/scheduling.phone.AL",
-			"url": "tel:1-855-566-5333"
+			"url": "tel:1-855-566-5333",
+			"text": "c19.link/scheduling.phone.al",
+			"description": "c19.link/scheduling.phone.description.al"
 		}
 	},
-	"activePhase": "1a",
+	"activePhase": "1c_group1",
 	"phases": [
 		{
 			"id": "1a",
@@ -37,13 +51,19 @@
 					"question": "c19.eligibility.question/long_term_care_resident"
 				},
 				{
-					"question": "c19.eligibility.question/essential_worker.1b"
+					"question": "c19.eligibility.question/essential_worker",
+					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.al.1b",
+					"moreInfoUrl": "https://www.alabamapublichealth.gov/covid19vaccine/assets/adph-covid19-vaccination-allocation-plan.pdf"
 				},
 				{
 					"question": "c19.eligibility.question/age.75_up"
 				},
 				{
-					"question": "c19.eligibility.question/congregate"
+					"question": "c19.eligibility.question/congregate",
+					"moreInfoText": "c19.eligibility.moreinfo/congregate.al.1b"
+				},
+				{
+					"question": "c19.eligibility.question/congregate.do"
 				}
 			]
 		},
@@ -57,16 +77,44 @@
 					"question": "c19.eligibility.question/long_term_care_resident"
 				},
 				{
-					"question": "c19.eligibility.question/essential_worker"
+					"question": "c19.eligibility.question/essential_worker",
+					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.al.1c",
+					"moreInfoUrl": "https://www.alabamapublichealth.gov/covid19vaccine/assets/adph-covid19-vaccination-allocation-plan.pdf"
 				},
 				{
-					"question": "c19.eligibility.question/health"
+					"question": "c19.eligibility.question/health",
+					"moreInfoText": "c19.eligibility.moreinfo/health.al.1c",
+					"moreInfoUrl": "https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html"
 				},
 				{
 					"question": "c19.eligibility.question/age.65_up"
 				},
 				{
-					"question": "c19.eligibility.question/congregate"
+					"question": "c19.eligibility.question/congregate.do",
+					"moreInfoText": "c19.eligibility.moreinfo/congregate.do.al.1c"
+				}
+			]
+		},
+		{
+			"id": "1c_group1",
+			"label": "1c_Group1",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/healthcare_worker"
+				},
+				{
+					"question": "c19.eligibility.question/long_term_care_resident"
+				},
+				{
+					"question": "c19.eligibility.question/essential_worker",
+					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.al.1c_group1"
+				},
+				{
+					"question": "c19.eligibility.question/age.65_up"
+				},
+				{
+					"question": "c19.eligibility.question/congregate.do",
+					"moreInfoText": "c19.eligibility.moreinfo/congregate.do.al.1c_group1"
 				}
 			]
 		}

@@ -7,11 +7,18 @@
 	DetailsListLayoutMode,
 	ProgressIndicator,
 	IColumn,
-	FontIcon
+	FontIcon,
+	Dialog,
+	DialogType,
+	DialogFooter,
+	PrimaryButton,
+	DefaultButton
 } from '@fluentui/react'
+import { useBoolean } from '@uifabric/react-hooks'
 import { observer } from 'mobx-react-lite'
-import { useState, useEffect } from 'react'
+import React, { useState, useEffect, useCallback } from 'react'
 import { getAppStore } from '../store/store'
+import { initializeGitData } from '../actions/repoActions'
 
 
 
@@ -23,11 +30,10 @@ export default observer(function Dashboard() {
 
 	const [prList, setPRList] = useState<any[]>([])
 	const [issueList, setIssueList] = useState<any[]>([])
-
+	const [hideDialog, { toggle: toggleHideDialog }] = useBoolean(true);
 
 	useEffect(() => { 
 		if(state.issues){
-
 			const tempPRList:any = [];
 			const tempIssueList:any = [];
 			state.issues.forEach( (item:any) => {
@@ -38,7 +44,7 @@ export default observer(function Dashboard() {
 				if(item.pull_request){
 
 					tempPRList.push({ title:item.title, author:item.user.login, update:requestUpdate.toLocaleString(), action:item});
-				} 
+				}
 				else if (isScrappedIssue){
 					tempIssueList.push({ title:item.title, author:item.user.login, update:requestUpdate.toLocaleString(), action:item});
 				}
@@ -47,10 +53,7 @@ export default observer(function Dashboard() {
 
 			setPRList(tempPRList);
 			setIssueList(tempIssueList);
-
 		}
-
-
 	},[state.issues])
 
 	const onIssueActionRender =  (item?: any, index?: number, column?: IColumn) =>  {
@@ -141,6 +144,19 @@ export default observer(function Dashboard() {
 
 	];
 
+	const refreshData = useCallback(() => {
+		initializeGitData()
+		toggleHideDialog()
+	},[toggleHideDialog])
+
+	const onRefreshDataClick = useCallback(() => {
+		if (state.pendingChanges) {
+			toggleHideDialog()
+		} else {
+			initializeGitData()
+		}
+	},[state.pendingChanges, toggleHideDialog])
+
 	return (
 		<div className="dashboardPageWrapper">
 			<div className="bodyContainer">
@@ -151,8 +167,21 @@ export default observer(function Dashboard() {
 					</div>
 				</div>
 				<div className="bodyContent">
-					{ state.issues ? (
+					{!state.isDataRefreshing ? (
 						<section>
+						<div className="refreshRow">
+							<div></div>
+							<div
+								className="refreshDataHeaderButton"
+								onClick={onRefreshDataClick}
+							>
+								<FontIcon
+									iconName="Refresh"
+									className="refreshIcon"
+								/>
+								Refresh Data
+							</div>
+						</div>
 						<div className="sectionHeader">Pending PRs</div>
 						<div className="sectionContent">
 						<DetailsList
@@ -192,6 +221,22 @@ export default observer(function Dashboard() {
 					) }
 				</div>
 			</div>
+			<Dialog
+				hidden={hideDialog}
+				onDismiss={toggleHideDialog}
+				dialogContentProps={{
+					type: DialogType.normal,
+					closeButtonAriaLabel: 'Close',
+					title: 'Refresh Data'
+				}}
+				modalProps={{isBlocking: false}}
+			>
+			<div className="dialogBodyText">You have pending changes in the review tab to be submitted, refreshing the data will revert those changes.<br/><br/>Do you want to proceed?</div>
+			<DialogFooter>
+				<PrimaryButton onClick={refreshData} text="Ok" />
+				<DefaultButton onClick={toggleHideDialog} text="Cancel" />
+				</DialogFooter>
+			</Dialog>
 		</div>
 	)
 })

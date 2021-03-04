@@ -20,4 +20,5 @@ export interface AppState {
 	toggleQualifier: boolean
 	isEditable: boolean
 	pendingChanges: boolean
+	isDataRefreshing: boolean
 }
