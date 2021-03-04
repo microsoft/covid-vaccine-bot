@@ -42,17 +42,14 @@ function chatRequested() {
 function getUserLocation(callback) {
     navigator.geolocation.getCurrentPosition(
         function(position) {
-            var latitude  = position.coords.latitude;
-            var longitude = position.coords.longitude;
-            var location = {
-                lat: latitude,
-                long: longitude
-            }
-            callback(location);
+            callback({
+                lat: position.coords.latitude,
+                long: position.coords.longitude
+            });
         },
         function(error) {
             // user declined to share location
-            console.log("location error:" + error.message);
+            console.log("could not use location api:" + error.message);
             callback();
         });
 }
@@ -63,16 +60,16 @@ function initBotConversation() {
         return;
     }
     // extract the data from the JWT
-    const jsonWebToken = this.response;
-		const tokenPayload = JSON.parse(atob(jsonWebToken.split('.')[1]));
-		const lat = tokenPayload.location && tokenPayload.location.lat ? tokenPayload.location.lat : null;
-		const long = tokenPayload.location && tokenPayload.location.long ? tokenPayload.location.long : null;
-		const user = {
+    var jsonWebToken = this.response;
+    var tokenPayload = JSON.parse(atob(jsonWebToken.split('.')[1]));
+    var lat = tokenPayload.location && tokenPayload.location.lat ? tokenPayload.location.lat : null;
+    var long = tokenPayload.location && tokenPayload.location.long ? tokenPayload.location.long : null;
+    var user = {
         id: tokenPayload.userId,
         name: tokenPayload.userName,
         locale: tokenPayload.locale
     };
-    let domain = undefined;
+    var domain = undefined;
     if (tokenPayload.directLineURI) {
         domain =  "https://" +  tokenPayload.directLineURI + "/v3/directline";
     }
@@ -80,17 +77,17 @@ function initBotConversation() {
         token: tokenPayload.connectorToken,
         domain: domain
     });
-    const styleOptions = {
+    var styleOptions = {
         botAvatarImage: 'https://docs.microsoft.com/en-us/azure/bot-service/v4sdk/media/logo_bot.svg?view=azure-bot-service-4.0',
         // botAvatarInitials: '',
         // userAvatarImage: '',
-        hideSendBox: true, /* set to true to hide the send box from the view */
+        hideSendBox: true,
         botAvatarInitials: 'Bot',
         userAvatarInitials: 'You',
         backgroundColor: '#F8F8F8'
     };
 
-    const store = window.WebChat.createStore({}, function(store) { return function(next) { return function(action) {
+    var store = window.WebChat.createStore({}, function(store) { return function(next) { return function(action) {
         if (action.type === 'DIRECT_LINE/CONNECT_FULFILLED') {
             store.dispatch({
                 type: 'DIRECT_LINE/POST_ACTIVITY',
@@ -108,10 +105,11 @@ function initBotConversation() {
                             triggeredScenario: {
                                 trigger: "c19_entry",
                                 args: {
-																		countryRegion: params.get("countryRegion") || null,
-																		adminDistrict: params.get("adminDistrict") || null,
-																		lat: lat,
-																		long: long
+                                    preamble: 'bing',
+                                    countryRegion: params.get("countryRegion") || null,
+                                    adminDistrict: params.get("adminDistrict") || null,
+                                    lat: lat,
+                                    long: long
                                 }
                             }
                         }
@@ -133,18 +131,18 @@ function initBotConversation() {
         }
         return next(action);
     }}});
-    const webchatOptions = {
-        directLine: botConnection,
-        styleOptions: styleOptions,
-        store: store,
-        userID: user.id,
-        username: user.name,
-        locale: user.locale
-    };
-    startChat(user, webchatOptions);
+		
+    startChat(user, {
+			directLine: botConnection,
+			styleOptions: styleOptions,
+			store: store,
+			userID: user.id,
+			username: user.name,
+			locale: user.locale
+	});
 }
 
 function startChat(user, webchatOptions) {
-    const botContainer = document.getElementById('webchat');
+    var botContainer = document.getElementById('webchat');
     window.WebChat.renderWebChat(webchatOptions, botContainer);
 }

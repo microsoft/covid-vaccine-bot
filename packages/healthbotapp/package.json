@@ -6,6 +6,7 @@
 	"scripts": {
 		"clean": "rimraf lib dist",
 		"start": "nodemon",
+		"start:bot": "yarn start",
 		"compile": "tsc -b .",
 		"writeDeployPackageJson": "node writeDeployPackageJson",
 		"copyConfiguration": "shx cp -r config/ dist/",
