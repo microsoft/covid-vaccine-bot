@@ -2792,6 +2792,7 @@
 |c19/how_did_we_do|Let us know how we did at [$SUPPORT_EMAIL](mailto:$SUPPORT_EMAIL)|not defined|not defined|not defined|not defined|none
 |c19.entry/prompt|How can I help you?|not defined|not defined|not defined|not defined|none
 |c19.entry/tos|The COVID-19 Vaccine Eligibility bot aggregate data from trusted and verified sources to help understand your vaccine eligibility. This system does not provide medical advice and is not intended for use as a diagnostic or treatment tool for any disease, including COVID-19. You can provide feedback by emailing [$SUPPORT_EMAIL](mailto:$SUPPORT_EMAIL)|not defined|not defined|not defined|not defined|none
+|c19.entry/preamble_bing|This project was made possible through a partnership with the MITRE Corporation and is enabled by Microsoft's Azure platform.|not defined|not defined|not defined|not defined|none
 |c19.question_series/answer_options_yesno|["Yes", "No"]|not defined|not defined|not defined|not defined|none
 |c19.question_series/answer_options_yesnoinfo|["Yes", "No", "More Info"]|not defined|not defined|not defined|not defined|none
 |c19.entry/unknown_question|I'm not sure how to help you with that. Please try one of the prepared questions.|not defined|not defined|not defined|not defined|none
