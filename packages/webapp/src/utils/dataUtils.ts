@@ -18,8 +18,8 @@ export const convertCSVDataToObj = (csvData: any) => {
 	return returnObj
 }
 
-export const createLocationDataObj = (locationData: any) => {
-	const locationName = locationData.details.replace(' ', '_').toLowerCase()
+export const createLocationDataObj = (locationData: any): any => {
+	const locationName = locationData.details.replace(/\s/g, '_').toLowerCase()
 	return {
 		info: {
 			content: {
@@ -69,7 +69,6 @@ export const createLocationDataObj = (locationData: any) => {
 					scheduling_phone: {
 						url: `tel:${locationData.schedulingPhone}`,
 						text: locationData.schedulingPhone,
-						description: '',
 					},
 				},
 			},
