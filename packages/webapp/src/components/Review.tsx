@@ -83,7 +83,10 @@ export default observer(function Review(props: ReviewProp) {
 						label: `New location added - ${location}`,
 						value: state.repoFileData[location],
 					})
-					tempLocationUpdates.push(state.repoFileData[location])
+					tempLocationUpdates.push({
+						key: location,
+						data: state.repoFileData[location],
+					})
 				} else {
 					let addChanges = false
 					if (
