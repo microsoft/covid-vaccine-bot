@@ -44,7 +44,7 @@
 			"label": "1b.1"
 		},
 		{
-			"id": "1b.2",
+			"id": "1b2",
 			"label": "1b.2",
 			"qualifications": [
 				{
@@ -70,12 +70,12 @@
 			]
 		},
 		{
-			"id": "1b.3",
+			"id": "1b3",
 			"label": "1b.3",
 			"qualifications": []
 		},
 		{
-			"id": "1b.4",
+			"id": "1b4",
 			"label": "1B.4",
 			"qualifications": []
 		}
