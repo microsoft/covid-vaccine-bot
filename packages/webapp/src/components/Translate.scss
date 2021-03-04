@@ -41,7 +41,7 @@
 		background-color: $ms-color-gray20;
 	}
 
-	&.qualifier {
+	&.qualifier, &.misc {
 		.fromCol {
 			flex: 2;
 			padding-right: 35px;

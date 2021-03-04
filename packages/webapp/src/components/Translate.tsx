@@ -6,7 +6,7 @@ import { Dropdown, TextField, FontIcon } from '@fluentui/react'
 import { observer } from 'mobx-react-lite'
 import { getLanguageOptions, toProperCase, getLanguageDisplayText } from '../utils/textUtils'
 import { useState, useCallback, useEffect, useRef } from 'react'
-import { translateLocationName, translateQualifier } from '../mutators/repoMutators'
+import { translateLocationName, translateQualifier, translateMisc } from '../mutators/repoMutators'
 import { getAppStore } from '../store/store'
 
 import './Translate.scss'
@@ -42,15 +42,21 @@ export default observer(function Translate() {
 
 	const locationChanges = useRef<any>({})
 	const qualifierChanges = useRef<any>({})
-	const mainLanguage = useRef<string>(currentLanguage)
+	const miscChanges = useRef<any>({})
+
 	const locationFullList = useRef<any[]>([])
 	const qualifierFullList = useRef<any[]>([])
+	const miscFullList = useRef<any[]>([])
+
+	const mainLanguage = useRef<string>(currentLanguage)
 	const toLanguage = useRef<any>(languageOptions[0].key)
 
 	const [locationList, setLocationList] = useState<any[]>([])
 	const [qualifierList, setQualifierList] = useState<any[]>([])
+	const [miscList, setMiscList] = useState<any[]>([])
+
 	const [translationFilterState, setTranslationFilterState] = useState<any>(translationFilter[0].key)
-	const [isSectionCollapse, setSectionCollapse] = useState<any>({locations: false, qualifiers: false, info: false})
+	const [isSectionCollapse, setSectionCollapse] = useState<any>({locations: false, qualifiers: false, misc: false})
 
 	const buildTranslationsLists = useCallback(() => {
 		if (repoFileData) {
@@ -86,10 +92,20 @@ export default observer(function Translate() {
 		}
 
 		if (globalFileData) {
-			const tempList: any[] = []
+			const tempQualifierList: any[] = []
+			const tempMiscList: any[] = []
 			Object.entries(globalFileData.customStrings.content).forEach(([key, value]: [string, any]) => {
 				if (key.startsWith('c19.eligibility.question')) {
-					tempList.push({
+					tempQualifierList.push({
+						key: key,
+						fromKey: mainLanguage.current,
+						from: value[mainLanguage.current],
+						toKey: toLanguage.current,
+						to: value[toLanguage.current],
+						_to: value[toLanguage.current]
+					})
+				} else {
+					tempMiscList.push({
 						key: key,
 						fromKey: mainLanguage.current,
 						from: value[mainLanguage.current],
@@ -99,8 +115,8 @@ export default observer(function Translate() {
 					})
 				}
 			})
-			const qualifiers = tempList.sort((a,b) => (a.from > b.from) ? 1 : -1)
-			qualifierFullList.current = qualifiers
+			qualifierFullList.current = tempQualifierList.sort((a,b) => (a.from > b.from) ? 1 : -1)
+			miscFullList.current = tempMiscList.sort((a,b) => (a.from > b.from) ? 1 : -1)
 		}
 	},[globalFileData, repoFileData])
 
@@ -141,6 +157,20 @@ export default observer(function Translate() {
 		[qualifierChanges, qualifierList, setQualifierList]
 	)
 
+	const handleMiscTextChange = useCallback(
+		(ev, rowItem) => {
+			const value = ev.target.value
+			const idx = miscList.findIndex((i) => i.from === rowItem.from)
+			miscList[idx] = {
+				...rowItem,
+				to: value,
+			}
+			setMiscList([...miscList])
+			miscChanges.current = miscList[idx]
+		},
+		[miscChanges, miscList, setMiscList]
+	)
+
 	const updateLocationTranslation = useCallback((item) => {
 		if (item.to && (item.to.toLowerCase() !== item._to.toLowerCase())) {
 			item.to = toProperCase(item.to).trim()
@@ -155,6 +185,13 @@ export default observer(function Translate() {
 		}
 	},[])
 
+	const updateMiscTranslation = useCallback((item) => {
+		if (item.to && (item.to.toLowerCase() !== item._to.toLowerCase())) {
+			item.to = String(item.to).trim()
+			translateMisc(item)
+		}
+	},[])
+
 	const onLanguageChange = useCallback(
 		(_ev, option) => {
 			toLanguage.current = option.key
@@ -166,12 +203,16 @@ export default observer(function Translate() {
 				setQualifierList(
 					qualifierFullList.current.filter(i => !i._to)
 				)
+				setMiscList(
+					miscFullList.current.filter(i => !i._to)
+				)
 			} else {
 				setLocationList(locationFullList.current)
 				setQualifierList(qualifierFullList.current)
+				setMiscList(miscFullList.current)
 			}
 		},
-		[translationFilterState, buildTranslationsLists, setLocationList, setQualifierList]
+		[translationFilterState, buildTranslationsLists, setLocationList, setQualifierList, setMiscList]
 	)
 
 	const onTranslationFilterChange = useCallback((_ev, option) => {
@@ -182,9 +223,13 @@ export default observer(function Translate() {
 			setQualifierList(
 				qualifierFullList.current.filter(i => !i._to)
 			)
+			setMiscList(
+				miscFullList.current.filter(i => !i._to)
+			)
 		} else {
 			setLocationList(locationFullList.current)
 			setQualifierList(qualifierFullList.current)
+			setMiscList(miscFullList.current)
 		}
 
 		setTranslationFilterState(option.key)
@@ -274,6 +319,38 @@ export default observer(function Translate() {
 								})
 							):(
 								<div className="emptyTranslateListRow">No missing qualifier translations found for: {getLanguageDisplayText(toLanguage.current, toLanguage.current)}.</div>
+							)
+						)}
+					</section>
+					<section>
+						<div className="listTitle" onClick={() => onCollapseSection('misc')}>
+							<FontIcon
+								iconName={isSectionCollapse.misc ? 'ChevronRight' : 'ChevronDown'}
+								className="groupToggleIcon"
+							/>
+							<div>Miscellaneous</div>
+						</div>
+						{!isSectionCollapse.misc && (
+							miscList.length > 0 ? (
+								miscList.map((val:any, idx:number) => {
+									return (
+										<div key={`miscRow-${idx}`} className={`translateListRow${idx % 2 > 0 ? '': ' altRow'} misc`}>
+											<div className="fromCol">{val.from}</div>
+											<TextField
+												name={val.to}
+												value={val.to}
+												className="toCol"
+												autoAdjustHeight={true}
+												resizable={false}
+												multiline={true}
+												onChange={(ev) => handleMiscTextChange(ev, val)}
+												onBlur={() => updateMiscTranslation(val)}
+											/>
+										</div>
+									)
+								})
+							):(
+								<div className="emptyTranslateListRow">No missing miscellaneous translations found for: {getLanguageDisplayText(toLanguage.current, toLanguage.current)}.</div>
 							)
 						)}
 					</section>

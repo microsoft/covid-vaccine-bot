@@ -731,3 +731,27 @@ export const translateQualifier = mutatorAction('translateQualifier', (item: any
 		}
 	}
 })
+
+export const translateMisc = mutatorAction('translateMisc', (item: any) => {
+	if (item) {
+		const store = getAppStore()
+		if (store?.globalFileData) {
+			store.pendingChanges = true
+			if (store.globalFileData.customStrings.content[item.key]) {
+				store.globalFileData.customStrings.content[item.key] = {
+					...store.globalFileData.customStrings.content[item.key],
+					[item.toKey]: item.to
+				}
+			} else {
+				store.globalFileData.customStrings.content = {
+					...store.globalFileData.customStrings.content,
+					...{[item.key]: {
+						[item.toKey]: item.to
+					}}
+				}
+			}
+
+			store.globalFileData = { ...store.globalFileData }
+		}
+	}
+})
