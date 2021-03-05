@@ -65,3 +65,6 @@ c19.eligibility.question/clinical_trial.are,"Are you age 18+ and are someone who
 c19.eligibility.question/healthcare_worker.are,"Are you a healthcare worker with direct patient contact?",,,,,,,,,,,,,,
 c19.eligibility.question/essential_worker.are_you_a,"Are you a sworn law enforcement officer or firefighter, 50 years of age or older?",,,,,,,,,,,,,,
 c19.eligibility.question/essential_worker.are_you_a_k,"Are you a K-12 school employee, 50 years of age or older?",,,,,,,,,,,,,,
+c19.eligibility.question/health.are_you,"Are you a parent of a child with a complex medical condition?",,,,,,,,,,,,,,
+c19.eligibility.question/health.are_you_an,"Are you an adult with intellectual or developmental disabilities or are you a caregiver to an adult with intellectual or developmental disabilities?",,,,,,,,,,,,,,
+c19.eligibility.question/healthcare_worker.are_you,"Are you a caregiver to an adult aged 65 or older?",,,,,,,,,,,,,,
