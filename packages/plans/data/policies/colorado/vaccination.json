@@ -91,7 +91,8 @@
 					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.co.1b3"
 				},
 				{
-					"question": "c19.eligibility.question/health.are"
+					"question": "c19.eligibility.question/health.are",
+					"moreInfoText": "c19.eligibility.moreinfo/health.are.co.1b3"
 				}
 			]
 		},
