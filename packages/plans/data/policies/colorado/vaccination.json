@@ -48,7 +48,8 @@
 			"label": "1b.2",
 			"qualifications": [
 				{
-					"question": "c19.eligibility.question/healthcare_worker"
+					"question": "c19.eligibility.question/congregate.do",
+					"moreInfoText": "c19.eligibility.moreinfo/congregate.do.co.1b2"
 				},
 				{
 					"question": "c19.eligibility.question/long_term_care_resident.are"
@@ -63,9 +64,6 @@
 				{
 					"question": "c19.eligibility.question/essential_worker.are_you",
 					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.are_you.co.1b.2"
-				},
-				{
-					"question": "c19.eligibility.question/government.are"
 				}
 			]
 		},
