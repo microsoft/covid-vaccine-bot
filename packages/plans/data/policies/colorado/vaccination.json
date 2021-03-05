@@ -11,7 +11,7 @@
 			]
 		}
 	},
-	"activePhase": "1b",
+	"activePhase": "1b3",
 	"phases": [
 		{
 			"id": "1a",
@@ -72,12 +72,57 @@
 		{
 			"id": "1b3",
 			"label": "1b.3",
-			"qualifications": []
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.60_up"
+				},
+				{
+					"question": "c19.eligibility.question/healthcare_worker"
+				},
+				{
+					"question": "c19.eligibility.question/long_term_care_resident.are"
+				},
+				{
+					"question": "c19.eligibility.question/essential_worker.are",
+					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.are.co.1b3"
+				},
+				{
+					"question": "c19.eligibility.question/essential_worker",
+					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.co.1b3"
+				},
+				{
+					"question": "c19.eligibility.question/health.are"
+				}
+			]
 		},
 		{
 			"id": "1b4",
 			"label": "1B.4",
-			"qualifications": []
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.are"
+				},
+				{
+					"question": "c19.eligibility.question/essential_worker",
+					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.co.1b4"
+				},
+				{
+					"question": "c19.eligibility.question/health",
+					"moreInfoText": "c19.eligibility.moreinfo/health.co.1b4"
+				},
+				{
+					"question": "c19.eligibility.question/clinical_trial.are"
+				}
+			]
+		},
+		{
+			"id": "2",
+			"label": "2",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.16_up"
+				}
+			]
 		}
 	]
 }
