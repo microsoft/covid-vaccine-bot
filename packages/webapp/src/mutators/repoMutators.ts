@@ -735,42 +735,59 @@ export const translateQualifier = mutatorAction('translateQualifier', (item: any
 export const translateMisc = mutatorAction('translateMisc', (item: any) => {
 	if (item) {
 		const store = getAppStore()
-		if (store?.globalFileData) {
-			store.pendingChanges = true
-			const customStringKeys = Object.keys(store.globalFileData.customStrings.content)
-			const isCustomString = customStringKeys.includes(item.key)
+		console.log(item)
+		if (item.category === 'state' && item.parent !== 'global') {
+			if (store?.repoFileData) {
+				store.pendingChanges = true
+				if (store.repoFileData[item.parent].strings.content[item.key][item.toKey]) {
+					store.repoFileData[item.parent].strings.content[item.key][item.toKey] = item.to
+				} else {
+					store.repoFileData[item.parent].strings.content[item.key] = {
+						...store.repoFileData[item.parent].strings.content[item.key],
+						...{[item.toKey]: item.to}
+					}
+				}
 
-			if (isCustomString) {
-				if (store.globalFileData.customStrings.content[item.key]) {
-					store.globalFileData.customStrings.content[item.key] = {
-						...store.globalFileData.customStrings.content[item.key],
-						[item.toKey]: item.to
-					}
-				} else {
-					store.globalFileData.customStrings.content = {
-						...store.globalFileData.customStrings.content,
-						...{[item.key]: {
-							[item.toKey]: item.to
-						}}
-					}
-				}
-			} else {
-				if (store.globalFileData.cdcStateLinks.content[item.key]) {
-					store.globalFileData.cdcStateLinks.content[item.key] = {
-						...store.globalFileData.cdcStateLinks.content[item.key],
-						[item.toKey]: item.to
-					}
-				} else {
-					store.globalFileData.cdcStateLinks.content = {
-						...store.globalFileData.cdcStateLinks.content,
-						...{[item.key]: {
-							[item.toKey]: item.to
-						}}
-					}
-				}
+				store.repoFileData = {...store.repoFileData}
 			}
+		} else {
+			if (store?.globalFileData) {
+				store.pendingChanges = true
+				const customStringKeys = Object.keys(store.globalFileData.customStrings.content)
+				const isCustomString = customStringKeys.includes(item.key)
 
-			store.globalFileData = { ...store.globalFileData }
+				if (isCustomString) {
+					if (store.globalFileData.customStrings.content[item.key]) {
+						store.globalFileData.customStrings.content[item.key] = {
+							...store.globalFileData.customStrings.content[item.key],
+							[item.toKey]: item.to
+						}
+					} else {
+						store.globalFileData.customStrings.content = {
+							...store.globalFileData.customStrings.content,
+							...{[item.key]: {
+								[item.toKey]: item.to
+							}}
+						}
+					}
+				} else {
+					if (store.globalFileData.cdcStateLinks.content[item.key]) {
+						store.globalFileData.cdcStateLinks.content[item.key] = {
+							...store.globalFileData.cdcStateLinks.content[item.key],
+							[item.toKey]: item.to
+						}
+					} else {
+						store.globalFileData.cdcStateLinks.content = {
+							...store.globalFileData.cdcStateLinks.content,
+							...{[item.key]: {
+								[item.toKey]: item.to
+							}}
+						}
+					}
+				}
+
+				store.globalFileData = { ...store.globalFileData }
+			}
 		}
 	}
 })

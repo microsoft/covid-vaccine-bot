@@ -100,7 +100,9 @@ export default observer(function Translate() {
 					from: stateLabel,
 					toKey: toLanguage.current,
 					to: translateToValue,
-					_to: translateToValue
+					_to: translateToValue,
+					parent: 'global',
+					category: 'locations'
 				})
 
 				tempMiscList.push({
@@ -109,7 +111,9 @@ export default observer(function Translate() {
 					from: stateLinkLabel,
 					toKey: toLanguage.current,
 					to: translateLinkToValue,
-					_to: translateLinkToValue
+					_to: translateLinkToValue,
+					parent: 'global',
+					category: 'state_link'
 				})
 			})
 			locationFullList.current = tempList.sort((a,b) => (a.from > b.from) ? 1 : -1)
@@ -125,7 +129,9 @@ export default observer(function Translate() {
 						from: value[mainLanguage.current],
 						toKey: toLanguage.current,
 						to: value[toLanguage.current],
-						_to: value[toLanguage.current]
+						_to: value[toLanguage.current],
+						parent: 'global',
+						category: 'qualifiers'
 					})
 				} else {
 					tempMiscList.push({
@@ -134,14 +140,36 @@ export default observer(function Translate() {
 						from: value[mainLanguage.current],
 						toKey: toLanguage.current,
 						to: value[toLanguage.current],
-						_to: value[toLanguage.current]
+						_to: value[toLanguage.current],
+						parent: 'global',
+						category: 'other'
 					})
 				}
 			})
 			qualifierFullList.current = tempQualifierList.sort((a,b) => (a.from > b.from) ? 1 : -1)
 		}
 
-		miscFullList.current = tempMiscList.sort((a,b) => (a.key > b.key) ? 1 : -1)
+		const stateStrings: any[] = []
+		if (repoFileData) {
+			Object.entries(repoFileData)
+				.filter(([_key, value]: [string, any]) => value.strings)
+				.forEach(([aKey, value]: [string, any]) => {
+					Object.entries(value.strings.content)
+						.forEach(([bKey, value]: [string, any]) => {
+							stateStrings.push({
+								key: bKey,
+								fromKey: mainLanguage.current,
+								from: value[mainLanguage.current],
+								toKey: toLanguage.current,
+								to: value[toLanguage.current],
+								_to: value[toLanguage.current],
+								parent: aKey,
+								category: 'state'
+							})
+						})
+				})
+		}
+		miscFullList.current = tempMiscList.concat(stateStrings).sort((a,b) => (a.key > b.key) ? 1 : -1)
 	},[globalFileData, repoFileData])
 
 	useEffect(() => {
