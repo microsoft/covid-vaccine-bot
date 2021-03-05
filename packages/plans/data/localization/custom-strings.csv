@@ -59,3 +59,6 @@ c19.eligibility.question/long_term_care_resident.are,"Are you a long term care r
 c19.eligibility.question/essential_worker.are,"Are you a first responder?",,,,,,,,,,,,,,
 c19.eligibility.question/essential_worker.are_you,"Are you a K-12 educator or work in a licensed child care facility? ",,,,,,,,,,,,,,
 c19.eligibility.question/government.are,"Are you a member of the state executive or judiciary branch?",,,,,,,,,,,,,,
+c19.eligibility.question/health.are,"Are you age 16+, and have two or more high-risk medical conditions?",,,,,,,,,,,,,,
+c19.eligibility.question/age.are,"Are you age 50+?",,,,,,,,,,,,,,
+c19.eligibility.question/clinical_trial.are,"Are you age 18+ and are someone who received a placebo during a COVID-19 clinical trial?",,,,,,,,,,,,,,
