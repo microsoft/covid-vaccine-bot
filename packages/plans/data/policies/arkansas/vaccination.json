@@ -3,10 +3,12 @@
 		"info": {
 			"text": "CDC/Arkansas/state_link",
 			"url": "https://www.healthy.arkansas.gov/programs-services/topics/covid-19-vaccination-plan",
-			"scrapeQuery": ["#contentBody"]
+			"scrapeQuery": [
+				"#contentBody"
+			]
 		}
 	},
-	"activePhase": "1a",
+	"activePhase": "1b",
 	"phases": [
 		{
 			"id": "1a",
@@ -29,16 +31,14 @@
 					"question": "c19.eligibility.question/healthcare_worker"
 				},
 				{
-					"question": "c19.eligibility.question/long_term_care_resident"
+					"question": "c19.eligibility.question/long_term_care_resident.are"
 				},
 				{
-					"question": "c19.eligibility.question/essential_worker.firefighter_leo"
+					"question": "c19.eligibility.question/essential_worker",
+					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.ar.1b"
 				},
 				{
-					"question": "c19.eligibility.question/essential_worker.1b"
-				},
-				{
-					"question": "c19.eligibility.question/age.70_up"
+					"question": "c19.eligibility.question/age.65_up"
 				}
 			]
 		},
@@ -49,13 +49,34 @@
 					"question": "c19.eligibility.question/healthcare_worker"
 				},
 				{
-					"question": "c19.eligibility.question/long_term_care_resident"
+					"question": "c19.eligibility.question/long_term_care_resident.are",
+					"moreInfoText": "c19.eligibility.moreinfo/long_term_care_resident.are.ar.1c"
 				},
 				{
-					"question": "c19.eligibility.question/essential_worker"
+					"question": "c19.eligibility.question/essential_worker",
+					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.ar.1c"
 				},
 				{
 					"question": "c19.eligibility.question/health"
+				},
+				{
+					"question": "c19.eligibility.question/age.65_up"
+				}
+			]
+		},
+		{
+			"id": "1bgroup2",
+			"label": "1b Group 2",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/healthcare_worker"
+				},
+				{
+					"question": "c19.eligibility.question/long_term_care_resident.are"
+				},
+				{
+					"question": "c19.eligibility.question/essential_worker",
+					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.ar.1bgroup2"
 				},
 				{
 					"question": "c19.eligibility.question/age.65_up"
