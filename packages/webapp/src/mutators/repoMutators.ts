@@ -86,9 +86,10 @@ export const updateLocationList = mutatorAction(
 				store.globalFileData.cdcStateNames.content[
 					`cdc/${newLocObj.info.content.id}/state_name`
 				] = {
-					'en-us': locationData.details,
-					'es-us': locationData.details,
-					'vi-vn': locationData.details,
+					...store.globalFileData.cdcStateNames.content[
+						`cdc/${newLocObj.info.content.id}/state_name`
+					],
+					[store.currentLanguage]: locationData.details
 				}
 
 				newLocObj.strings.path = `${newLocObj.info.content.id}/${newLocObj.info.content.id}.csv`
@@ -168,9 +169,10 @@ export const updateLocationData = mutatorAction(
 				store.globalFileData.cdcStateNames.content[
 					`cdc/${prevItem.key}/state_name`
 				] = {
-					'en-us': locationData.details,
-					'es-us': locationData.details,
-					'vi-vn': locationData.details,
+					...store.globalFileData.cdcStateNames.content[
+						`cdc/${prevItem.key}/state_name`
+					],
+					[store.currentLanguage]: locationData.details
 				}
 
 				location.info.content.name = locationData.details
