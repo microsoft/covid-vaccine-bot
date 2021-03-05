@@ -40,6 +40,25 @@ export default observer(function Translate() {
 		}
 	]
 
+	const miscFilter = [
+		{
+			key: 'all',
+			text: 'All'
+		},
+		{
+			key: 'state',
+			text: 'State-specific'
+		},
+		{
+			key: 'state_link',
+			text: 'State Links'
+		},
+		{
+			key: 'other',
+			text: 'Uncategorized'
+		}
+	]
+
 	const locationChanges = useRef<any>({})
 	const qualifierChanges = useRef<any>({})
 	const miscChanges = useRef<any>({})
@@ -47,15 +66,18 @@ export default observer(function Translate() {
 	const locationFullList = useRef<any[]>([])
 	const qualifierFullList = useRef<any[]>([])
 	const miscFullList = useRef<any[]>([])
+	const stateSpecificOptions = useRef<any[]>([])
 
 	const mainLanguage = useRef<string>(currentLanguage)
-	const toLanguage = useRef<any>(languageOptions[0].key)
+	const toLanguage = useRef<string>(languageOptions[0].key)
 
 	const [locationList, setLocationList] = useState<any[]>([])
 	const [qualifierList, setQualifierList] = useState<any[]>([])
 	const [miscList, setMiscList] = useState<any[]>([])
 
-	const [translationFilterState, setTranslationFilterState] = useState<any>(translationFilter[0].key)
+	const [translationFilterState, setTranslationFilterState] = useState<string>(translationFilter[0].key)
+	const [miscFilterState, setMiscFilterState] = useState<string>(miscFilter[0].key)
+	const [miscStateSpecFilterState, setMiscStateSpecFilterState] = useState<string>('')
 	const [isSectionCollapse, setSectionCollapse] = useState<any>({locations: false, qualifiers: false, misc: false})
 
 	const buildTranslationsLists = useCallback(() => {
@@ -170,6 +192,20 @@ export default observer(function Translate() {
 				})
 		}
 		miscFullList.current = tempMiscList.concat(stateStrings).sort((a,b) => (a.key > b.key) ? 1 : -1)
+
+		const tempMiscStateSpecificList: any[] = []
+		const tempKeys: any[] = []
+		miscFullList.current.forEach(i => {
+			if (!tempKeys.includes(i.parent) && i.category === 'state'){
+				tempMiscStateSpecificList.push({
+					key: i.parent,
+					text: toProperCase(i.parent)
+				})
+
+				tempKeys.push(i.parent)
+			}
+		})
+		stateSpecificOptions.current = tempMiscStateSpecificList.sort((a,b) => (a.key > b.key) ? 1 : -1)
 	},[globalFileData, repoFileData])
 
 	useEffect(() => {
@@ -255,16 +291,32 @@ export default observer(function Translate() {
 				setQualifierList(
 					qualifierFullList.current.filter(i => !i._to)
 				)
-				setMiscList(
-					miscFullList.current.filter(i => !i._to)
-				)
+
+				if (miscFilterState === 'all') {
+					setMiscList(miscFullList.current.filter(i => !i._to))
+				} else {
+					if (miscFilterState === 'state') {
+						setMiscList(miscFullList.current.filter(i => !i._to && i.category === miscFilterState && i.parent === miscStateSpecFilterState))
+					} else {
+						setMiscList(miscFullList.current.filter(i => !i._to && i.category === miscFilterState))
+					}
+				}
 			} else {
 				setLocationList(locationFullList.current)
 				setQualifierList(qualifierFullList.current)
-				setMiscList(miscFullList.current)
+
+				if (miscFilterState === 'all') {
+					setMiscList(miscFullList.current)
+				} else {
+					if (miscFilterState === 'state') {
+						setMiscList(miscFullList.current.filter(i => i.category === miscFilterState && i.parent === miscStateSpecFilterState))
+					} else {
+						setMiscList(miscFullList.current.filter(i => i.category === miscFilterState))
+					}
+				}
 			}
 		},
-		[translationFilterState, buildTranslationsLists, setLocationList, setQualifierList, setMiscList]
+		[translationFilterState, miscFilterState, miscStateSpecFilterState, buildTranslationsLists, setLocationList, setQualifierList, setMiscList]
 	)
 
 	const onTranslationFilterChange = useCallback((_ev, option) => {
@@ -275,17 +327,65 @@ export default observer(function Translate() {
 			setQualifierList(
 				qualifierFullList.current.filter(i => !i._to)
 			)
-			setMiscList(
-				miscFullList.current.filter(i => !i._to)
-			)
+
+			if (miscFilterState === 'all') {
+				setMiscList(miscFullList.current.filter(i => !i._to))
+			} else {
+				if (miscFilterState === 'state') {
+					setMiscList(miscFullList.current.filter(i => !i._to && i.category === miscFilterState && i.parent === miscStateSpecFilterState))
+				} else {
+					setMiscList(miscFullList.current.filter(i => !i._to && i.category === miscFilterState))
+				}
+			}
 		} else {
 			setLocationList(locationFullList.current)
 			setQualifierList(qualifierFullList.current)
-			setMiscList(miscFullList.current)
+
+			if (miscFilterState === 'all') {
+				setMiscList(miscFullList.current)
+			} else {
+				if (miscFilterState === 'state') {
+					setMiscList(miscFullList.current.filter(i => i.category === miscFilterState && i.parent === miscStateSpecFilterState))
+				} else {
+					setMiscList(miscFullList.current.filter(i => i.category === miscFilterState))
+				}
+			}
 		}
 
 		setTranslationFilterState(option.key)
-	},[setLocationList, setQualifierList, locationFullList, qualifierFullList, setTranslationFilterState])
+	},[setMiscList, setLocationList, setQualifierList, locationFullList, qualifierFullList, miscFullList, miscFilterState, miscStateSpecFilterState, setTranslationFilterState])
+
+	const onMiscFilterChange = useCallback((_ev, option) => {
+		const selectedMiscStateOptionKey = miscStateSpecFilterState || stateSpecificOptions.current[0].key
+		const filteredList = miscFullList.current.filter(i => {
+			if (option.key === 'all') {
+				return translationFilterState === 'missing' ? !i._to : i
+			} else {
+				if (translationFilterState === 'missing') {
+					if (option.key === 'state') {
+						return !i._to && i.category === option.key && i.parent === selectedMiscStateOptionKey
+					} else {
+						return !i._to && i.category === option.key
+					}
+				} else {
+					if (option.key === 'state') {
+						return i.category === option.key && selectedMiscStateOptionKey
+					} else {
+						return i.category === option.key
+					}
+				}
+			}
+		})
+
+		setMiscList(filteredList)
+		setMiscFilterState(option.key)
+		setMiscStateSpecFilterState(selectedMiscStateOptionKey)
+	},[miscFullList, translationFilterState, miscStateSpecFilterState, setMiscStateSpecFilterState, setMiscList, setMiscFilterState])
+
+	const onMiscStateSpecificFilterChange = useCallback((_ev, option) => {
+		setMiscList(miscFullList.current.filter(i => i.parent === option.key))
+		setMiscStateSpecFilterState(option.key)
+	},[setMiscList, miscFullList])
 
 	return (
 		<div className="translatePageContainer">
@@ -384,7 +484,27 @@ export default observer(function Translate() {
 						</div>
 						{!isSectionCollapse.misc && (
 							miscList.length > 0 ? (
-								miscList.map((val:any, idx:number) => {
+								<>
+								<div className="miscFilterGroup">
+									<Dropdown
+										selectedKey={miscFilterState}
+										placeholder="Filter Miscellaneous"
+										options={miscFilter}
+										styles={filterDropdownStyles}
+										onChange={onMiscFilterChange}
+									/>
+									{miscFilterState === 'state' ? (
+										<Dropdown
+											selectedKey={miscStateSpecFilterState}
+											options={stateSpecificOptions.current}
+											styles={filterDropdownStyles}
+											onChange={onMiscStateSpecificFilterChange}
+										/>
+										):(
+										<div></div>
+									)}
+								</div>
+								{miscList.map((val:any, idx:number) => {
 									return (
 										<div key={`miscRow-${idx}`} className={`translateListRow${idx % 2 > 0 ? '': ' altRow'} misc`}>
 											<div className="fromCol">{val.from}</div>
@@ -400,7 +520,8 @@ export default observer(function Translate() {
 											/>
 										</div>
 									)
-								})
+								})}
+								</>
 							):(
 								<div className="emptyTranslateListRow">No missing miscellaneous translations found for: {getLanguageDisplayText(toLanguage.current, toLanguage.current)}.</div>
 							)

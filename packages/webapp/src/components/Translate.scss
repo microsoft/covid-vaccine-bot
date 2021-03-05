@@ -31,6 +31,19 @@
 	}
 }
 
+.miscFilterGroup {
+	display: flex;
+	flex-direction: row;
+	padding: 10px 10px 10px 30px;
+    margin-bottom: 10px;
+    background-color: $ms-color-gray30;
+
+	.ms-Dropdown-container {
+		margin-right: 20px;
+		width: 200px;
+	}
+}
+
 .translateListRow {
 	display: flex;
 	flex-direction: row;
