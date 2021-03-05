@@ -294,7 +294,6 @@ export const modifyStateStrings = mutatorAction(
 			if (store?.repoFileData) {
 				store.pendingChanges = true
 				const location = store.repoFileData[data.locationKey]
-				if (!location.strings?.content[data.infoKey]) {
 					const newStringsObj: any = {}
 					newStringsObj[store.currentLanguage] = data.item.moreInfoContent
 					location.strings.content[data.infoKey] = newStringsObj
@@ -333,10 +332,7 @@ export const modifyStateStrings = mutatorAction(
 
 						affectedQualifier.moreInfoText = data.infoKey
 					}
-				} else {
-					location.strings.content[data.infoKey][store.currentLanguage] =
-						data.item.moreInfoContent
-				}
+				
 			}
 		}
 	}
