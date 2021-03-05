@@ -128,6 +128,20 @@ export default observer(function Review(props: ReviewProp) {
 						})
 						addChanges = true
 					}
+					if (
+						JSON.stringify(
+							state.initRepoFileData[location].strings
+						).toLowerCase() !==
+						JSON.stringify(
+							state.repoFileData[location].strings
+						).toLowerCase()
+					) {
+						tempChangesList.push({
+							label: `Updated strings information for ${location}`,
+							value: state.repoFileData[location],
+						})
+						addChanges = true
+					}
 					if (addChanges) {
 						tempLocationUpdates.push({
 							key: location,
