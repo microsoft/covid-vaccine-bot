@@ -571,7 +571,7 @@ export const addPhase = mutatorAction('addPhase', (data: any | undefined) => {
 			store.pendingChanges = true
 			const location = store.repoFileData[data.locationKey]
 
-			const phaseId = data.item.name.replace(/\s/g, '').toLowerCase()
+			const phaseId = data.item.name.replace(/[\s.]/g, '').toLowerCase()
 
 			const emptyQualifications: any = []
 
