@@ -16,20 +16,14 @@ async function aggregateInfoSites(): Promise<void> {
 		const data: VaccinationPlan = require(file)
 
 		// Eligibility plan > info site
-		if (data.links?.eligibility != null) {
-			if (data.links.eligibility.scrape !== false) {
-				links.push(data.links.eligibility)
-			}
-		} else if (data.links?.info != null) {
-			if (data.links.info.scrape !== false) {
-				links.push(data.links.info)
-			}
+		if (isScrapeableLink(data.links?.eligibility)) {
+			links.push(data.links?.eligibility as Link)
+		} else if (isScrapeableLink(data.links?.info)) {
+			links.push(data.links?.info as Link)
 		}
 
-		if (data.links?.eligibility_plan != null) {
-			if (data.links.eligibility_plan.scrape !== false) {
-				links.push(data.links.eligibility_plan)
-			}
+		if (isScrapeableLink(data.links?.eligibility_plan)) {
+			links.push(data.links?.eligibility_plan as Link)
 		}
 	})
 
@@ -38,6 +32,10 @@ async function aggregateInfoSites(): Promise<void> {
 		path.join(DIST_DIR, 'info_links.json'),
 		JSON.stringify(links, null, 4)
 	)
+}
+
+function isScrapeableLink(link: Link | null | undefined): boolean {
+	return link != null && !!link.url && link.scrape !== false
 }
 
 aggregateInfoSites()
