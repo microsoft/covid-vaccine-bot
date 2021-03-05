@@ -1,11 +1,30 @@
 {
 	"links": {
+		"eligibility": {
+			"url": ""
+		},
+		"eligibility_plan": {
+			"url": ""
+		},
 		"info": {
-			"text": "CDC/California/state_link",
 			"url": "https://covid19.ca.gov/vaccines/#When-can-I-get-vaccinated",
-			"scrapeQuery": [
-				"div.col-lg-10.mx-auto"
-			]
+			"text": "cdc/california/state_link"
+		},
+		"providers": {
+			"url": "",
+			"text": "c19.links/vax_providers"
+		},
+		"workflow": {
+			"url": "https://myturn.ca.gov/",
+			"text": "c19.links/vax_quiz"
+		},
+		"scheduling": {
+			"url": "",
+			"text": "c19.links/schedule_vax"
+		},
+		"scheduling_phone": {
+			"url": "tel:",
+			"text": "c19.link/scheduling.phone.ca"
 		}
 	},
 	"activePhase": "1b",
