@@ -8,6 +8,10 @@
 		display: flex;
 		border-bottom: 1px solid $ms-color-gray40;
 		cursor: pointer;
+
+		&:hover {
+			background-color: $ms-color-gray40;
+		}
 	}
 
 	.groupToggleIcon {
@@ -19,11 +23,24 @@
 	}
 }
 
-
 .filterGroup {
 	display: flex;
 	flex-direction: row;
 	margin-bottom: 10px;
+	margin-left: 30px;
+
+	.ms-Dropdown-container {
+		margin-right: 20px;
+		width: 200px;
+	}
+}
+
+.miscFilterGroup {
+	display: flex;
+	flex-direction: row;
+	padding: 10px 10px 10px 30px;
+	margin-bottom: 10px;
+	background-color: $ms-color-gray30;
 
 	.ms-Dropdown-container {
 		margin-right: 20px;
@@ -34,14 +51,15 @@
 .translateListRow {
 	display: flex;
 	flex-direction: row;
-	padding: 10px 10px 10px 36px;
+	padding: 10px 10px 10px 46px;
 	align-items: center;
 
 	&.altRow {
 		background-color: $ms-color-gray20;
 	}
 
-	&.qualifier {
+	&.qualifier,
+	&.misc {
 		.fromCol {
 			flex: 2;
 			padding-right: 35px;
@@ -63,5 +81,5 @@
 
 .emptyTranslateListRow {
 	display: flex;
-	padding: 20px 20px 20px 36px;
+	padding: 20px 20px 20px 46px;
 }
