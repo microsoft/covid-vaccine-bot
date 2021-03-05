@@ -62,3 +62,6 @@ c19.eligibility.question/government.are,"Are you a member of the state executive
 c19.eligibility.question/health.are,"Are you age 16+, and have two or more high-risk medical conditions?",,,,,,,,,,,,,,
 c19.eligibility.question/age.are,"Are you age 50+?",,,,,,,,,,,,,,
 c19.eligibility.question/clinical_trial.are,"Are you age 18+ and are someone who received a placebo during a COVID-19 clinical trial?",,,,,,,,,,,,,,
+c19.eligibility.question/healthcare_worker.are,"Are you a healthcare worker with direct patient contact?",,,,,,,,,,,,,,
+c19.eligibility.question/essential_worker.are_you_a,"Are you a sworn law enforcement officer or firefighter, 50 years of age or older?",,,,,,,,,,,,,,
+c19.eligibility.question/essential_worker.are_you_a_k,"Are you a K-12 school employee, 50 years of age or older?",,,,,,,,,,,,,,
