@@ -1,13 +1,8 @@
 {
 	"activePhase": "",
 	"links": {
-		"eligibility": {
-			"url": "",
-			"text": ""
-		},
 		"eligibility_plan": {
 			"url": "https://www.covid19usvi.com/current-status",
-			"text": ""
 		},
 		"info": {
 			"url": "https://www.covid19usvi.com/",
