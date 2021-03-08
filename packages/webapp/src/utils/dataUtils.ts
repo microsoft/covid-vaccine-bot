@@ -19,7 +19,8 @@ export const convertCSVDataToObj = (csvData: any) => {
 }
 
 export const createLocationDataObj = (locationData: any): any => {
-	const locationName = locationData.details.replace(/[^A-Za-z0-9]/g, '_').toLowerCase()
+	console.log(locationData)
+	const locationName = locationData.details.replace(/[^a-z0-9\s]/gi,'').replace(/\s/g, '_').toLowerCase()
 	return {
 		info: {
 			content: {
