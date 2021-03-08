@@ -3,6 +3,9 @@ html, body {
 }
 body {
   margin: 0;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,
+  "Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji",
+  "Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 
 #webchat {
@@ -109,6 +112,33 @@ input[type="checkbox" i]:checked + * + *{
   width: 1.2rem;
   height: 1.2rem;
   margin: 0.3em !important;
+}
 
+header {
+  background: #fff;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+}
 
+i {
+  padding: 15px;
+}
+
+.restart {
+  display: inline-flex;
+  align-items: center;
+}
+
+.restart:hover {
+  cursor: pointer;
+}
+
+.restart > span:hover {
+  text-decoration: underline;
+}
+
+.hidden {
+  display: none !important;
 }

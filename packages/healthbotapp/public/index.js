@@ -58,7 +58,7 @@ function initBotConversation() {
         return;
     }
     // extract the data from the JWT
-    var jsonWebToken = this.response;
+		var jsonWebToken = this.response;
     var tokenPayload = JSON.parse(atob(jsonWebToken.split('.')[1]));
     var lat = tokenPayload.location && tokenPayload.location.lat ? tokenPayload.location.lat : null;
     var long = tokenPayload.location && tokenPayload.location.long ? tokenPayload.location.long : null;

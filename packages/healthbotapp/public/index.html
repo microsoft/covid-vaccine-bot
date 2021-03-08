@@ -4,10 +4,17 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.botframework.com/botframework-webchat/latest/webchat-es5.js"></script>
     <script src="index.js"></script>
+    <script src="hide-elements.js"></script>
+    <link rel="stylesheet"
+        href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css"
+    />
     <link href="stylesheets/style.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    
 </head>
 <body>
+    <header>
+        <a class="restart" onclick="chatRequested()"><i class="ms-Icon ms-Icon--Refresh" aria-hidden="true"></i><span>RESTART</span></a>
+    </header>
 <div id="webchat" role="main" watermark="false"></div>
 <script>chatRequested();</script>
 </body>
