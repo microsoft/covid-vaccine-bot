@@ -69,4 +69,5 @@ c19.eligibility.question/health.are_you,"Are you a parent of a child with a comp
 c19.eligibility.question/health.are_you_an,"Are you an adult with intellectual or developmental disabilities or are you a caregiver to an adult with intellectual or developmental disabilities?",,,,,,,,,,,,,,
 c19.eligibility.question/healthcare_worker.are_you,"Are you a caregiver to an adult aged 65 or older?",,,,,,,,,,,,,,
 c19.eligibility.question/essential_worker.are_you_an,"Are you an educator or child care provider?",,,,,,,,,,,,,,
+c19.eligibility.question/health.are_you_a,"Are you a person age 26+ with a high-risk medical condition?",,,,,,,,,,,,,,
 c19.eligibility.question/exposure_to_infectious_material.do,"Do you have exposure to COVID-19 infectious material?",,,,,,,,,,,,,,
