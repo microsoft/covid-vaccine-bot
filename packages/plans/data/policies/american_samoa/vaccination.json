@@ -1,9 +1,31 @@
 {
 	"links": {
+		"eligibility": {
+			"url": ""
+		},
+		"eligibility_plan": {
+			"url": ""
+		},
 		"info": {
-			"text": "CDC/American_Samoa/state_link",
 			"url": "https://www.americansamoa.gov/",
-			"scrape": false
+			"text": "cdc/american_samoa/state_link"
+		},
+		"providers": {
+			"url": "",
+			"text": "c19.links/vax_providers"
+		},
+		"workflow": {
+			"url": "",
+			"text": "c19.links/vax_quiz"
+		},
+		"scheduling": {
+			"url": "",
+			"text": "c19.links/schedule_vax"
+		},
+		"scheduling_phone": {
+			"url": "tel:633-5871",
+			"text": "c19.link/scheduling.phone.as",
+			"description": "c19.link/scheduling.phone.description.as"
 		}
 	},
 	"activePhase": "1a",
