@@ -6,8 +6,11 @@ body {
 }
 
 #webchat {
-  height: 100%;
-  width: 100%;
+  position: absolute;
+  top: 50px;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 #webchat[watermark="true"] [role="complementary"] ul[role="list"]::after {
@@ -32,83 +35,186 @@ body {
   transform: translate(-50%, 0);
 }
 
-.old-button, .ac-pushButton {
-  font-size: medium !important;
-  line-height: 1.2rem;
-  padding: 0.2rem !important;
+#webchat .ac-input {
+  position: relative;
 }
 
-.ac-pushButton:hover {
-  background-color:rgb(0, 120, 215) !important;
-  color: white !important;
-  cursor: pointer;
+#webchat .ac-input > div {
+  align-items: start !important;
 }
 
-.webchat__stackedLayout--fromUser .webchat__bubble__content{
-  border-radius: 10px;
-  background-color: rgb(169, 226, 246) !important;
-  color: black;
+/* CSS for vertical aligning checkboxes to the top of a label */
+#webchat .ac-input input[type="checkbox"] {
+  vertical-align: top !important;
+  margin-top: 4px !important;
 }
 
-.webchat__bubble__content{
-  border-radius: 10px;
-  background-color: rgb(212, 226, 235) !important;
-  border-radius: 10px !important;
-  color: white;
-  margin: 0 10px;
+#webchat .ac-actionSet {
+  margin-bottom: 4px;
 }
 
-.webchat__stacked_indented_content {
-  direction: rtl;
-  text-align: right
-}
-
-.webchat__stackedLayout--fromUser {
-  direction: ltr;
-}
-
-.webchat__stackedLayout--fromUser .webchat__stackedLayout__avatar {
-  display: none;
-}
-
-.webchat__stackedLayout__content .css-1s8geyi {
-  display: none;
-}
-
-.ac-pushButton > div, .old-button > div {
+/* CSS for removing the "..." triming of buttons and checkbox labels */
+#webchat .ac-input input[type="checkbox"] ~label,
+#webchat .ac-input button div,
+#webchat .ac-actionSet button div {
   white-space: pre-wrap !important;
   text-overflow: unset !important;
 }
 
-.old-button {
-  border-style: solid;
-    border-width: 1px;
-    padding: 10px;
-    color: black!important;
+/* CSS for buttons, inputs & checkbox labels */
+#webchat .ac-actionSet button,
+#webchat .ac-input button,
+#webchat .ac-input input,
+#webchat .ac-input input[type="checkbox"] ~label {
+  cursor: pointer;
+}
+#webchat .ac-actionSet button,
+#webchat .ac-input button,
+#webchat .ac-input input {
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  color: #00809D;
+}
+
+/* CSS For PAST SELECTED buttons */
+#webchat .ac-input button.selected-button,
+#webchat .ac-input button:hover,
+#webchat .ac-input button[disabled].selected-button,
+#webchat .ac-actionSet button.selected-button,
+#webchat .ac-actionSet button:hover,
+#webchat .ac-actionSet button[disabled].selected-button {
+  /* background: rgb(0, 99, 177);
+  color: white;
+  opacity: 1; */
+}
+
+/* CSS For PAST buttons and inputs */
+#webchat .ac-actionSet button.past,
+#webchat .ac-input button.past,
+#webchat .ac-input input.past,
+#webchat .ac-input input.past ~ label {
+  cursor: not-allowed !important;
+  mouse-events: none !important;
+  opacity: 0.5;
+  background: rgb(255, 255, 255) !important;
+}
+
+/* CSS For PAST buttons and inputs */
+#webchat .ac-actionSet button.past div,
+#webchat .ac-input button.past div,
+#webchat .ac-input input.past div,
+#webchat .ac-input input.past ~ label {
+  color: black !important;
+}
+
+/* CSS for labels of checked checkbox */
+#webchat input[type="checkbox"]:checked ~ label {
+  color: rgb(0, 99, 177) !important;
+  font-weight: 600 !important;
+}
+
+#webchat .ac-actionSet button.past.button-selected,
+#webchat .ac-input button.past.button-selected
+{
+  background-color: rgb(0, 99, 177) !important;
+}
+
+#webchat .ac-actionSet button.past.button-selected div,
+#webchat .ac-input button.past.button-selected div {
+  color: white !important;
+}
+
+body * {
+  font-family: 'Segoe UI', 'Segoe Semibold', 'Calibri', 'Helvetica Neue', 'Arial', 'sans-serif' !important;
+  font-size: 16px;
+}
+
+body > header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  padding: 0;
+  border-radius: 8px, 8px, 0px, 0px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16);
+  background-color: #f5f5f5;
+}
+
+body > header > h1 {
+  color: #333333;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 500;
+  position: absolute;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  top: 0;
+  left: 10px;
+  right: 0;
+  line-height: 40px;
+  padding: 0;
+  margin: 0;
+  height: 40px;
+}
+
+#start-over {
+  height: 18px;
+  width: 16px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 12px;
+  right: 45px;
+  cursor: pointer;
+}
+
+#start-over img {
+  width: 100%;
+  height: 100%;
+} 
+
+.ac-horizontal-separator,
+.ac-vertical-separator {
+  border-color: #cdcdcd !important;
+}
+
+.webchat__bubble__content a,
+.webchat__bubble__content a:hover,
+.webchat__bubble__content a:active,
+.webchat__bubble__content a:visited {
+  color: #00809D;
+  text-decoration: none;
+}
+
+.ac-container.ac-selectable {
+  cursor: pointer;
+}
+
+.ac-container .ac-textBlock {
+  line-height: 17px !important;
+}
+
+.ac-container .ac-textBlock a {
+  font-size: 14px;
 }
 
 div.css-y1c0xs {
-  scroll-behavior: smooth
+  scroll-behavior: smooth;
 }
 
-.ac-input p {
-  font-size: medium;
-  line-height: 1.2rem;
-  white-space: pre-wrap;
-  overflow: unset;
+/* following 2 selectors are bug fixes for IPhone auto zooming */
+select {
+  font-size: 50px;
 }
-
-
-input[type="checkbox" i]:checked + * + *{
-  color: #00589d !important;
-  background-color: white;
-  font-weight: bold !important;
-
-}
-.ac-input input {
-  width: 1.2rem;
-  height: 1.2rem;
-  margin: 0.3em !important;
-
-
+.ac-input, 
+select > option {
+  font-size: 16px !important; 
 }
