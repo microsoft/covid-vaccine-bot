@@ -1,6 +1,6 @@
 String ID,en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th
 c19.eligibility.question/essential_worker.1a.ga.caregiver_of_65_up,"Are you a caregiver of a person aged 65+?",,,,,,,,,,,,,,
-c19.link/scheduling.phone.ga,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.ga,Scheduling Hotline,,,,,,,,,,,,,,
 c19.eligibility.moreinfo/healthcare_worker.ga.1a,"This includes physicians, nurses, laboratory technicians, EMS personnel, environmental services, etc.",,,,,,,,,,,,,,
 c19.eligibility.moreinfo/essential_worker.are.ga.1a,"This includes sworn law enforcement, firefighters, and first responders",,,,,,,,,,,,,,
 c19.eligibility.moreinfo/healthcare_worker.ga.1b,"This includes physicians, nurses, laboratory technicians, EMS personnel, environmental services, etc.",,,,,,,,,,,,,,
