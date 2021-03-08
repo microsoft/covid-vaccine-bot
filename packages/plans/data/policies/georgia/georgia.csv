@@ -1,2 +1,21 @@
 String ID,en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th
-c19.eligibility.question/essential_worker.1a.GA.caregiver_of_65_up,Are you a caregiver of a person aged 65+?,,,,,,,,,,,,,,
+c19.eligibility.question/essential_worker.1a.ga.caregiver_of_65_up,"Are you a caregiver of a person aged 65+?",,,,,,,,,,,,,,
+c19.link/scheduling.phone.ga,,,,,,,,,,,,,,,
+c19.eligibility.moreinfo/healthcare_worker.ga.1a,"This includes physicians, nurses, laboratory technicians, EMS personnel, environmental services, etc.",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/essential_worker.are.ga.1a,"This includes sworn law enforcement, firefighters, and first responders",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/healthcare_worker.ga.1b,"This includes physicians, nurses, laboratory technicians, EMS personnel, environmental services, etc.",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/essential_worker.are.ga.1b,"This includes sworn law enforcement, firefighters, and first responders",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/essential_worker.are_you.ga.1b,"Workers in Pre-K, K-12, DECAL licensed or exempt childcare programs are eligible",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/health.are_you_an.ga.1b,"Intellectual Disability is a disability characterized by significant limitations in both intellectual functioning and in adaptive behavior, which covers many everyday social and practical skills. This disability originates before the age of 22.
+A developmental disability is a physical or mental impairment that happens before the age of 22, is expected to last a lifetime, and impacts at least three activities of daily living. Activities of daily living include self-care; receptive and expressive language; learning; mobility; self-direction; capacity for independent living; and economic self-sufficiency",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/health.are_you.ga.1b,"This includes children with one or more of the following conditions considered at high risk for COVID complications: 
+Malignancies requiring active treatment
+Immunocompromised state (weakened immune system) including organ transplant (bone marrow or solid organ) within 2 years
+Critical congenital heart disease
+Asthma (moderate to severe)
+Sickle cell disease
+Diabetes
+Obesity (BMI >95%)
+Cystic fibrosis
+Significant neurologic injury or condition (e.g. hypoxic ischemic encephalopathy, traumatic brain injury, congenital anomaly, acute flaccid myelitis) with functional/developmental impairment (e.g. cerebral palsy, developmental disability, prematurity, mitochondrial disease)
+Technology dependence (e.g. BiPAP, trach)",,,,,,,,,,,,,,

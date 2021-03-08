@@ -9,11 +9,11 @@ import {
 	PersonaSize,
 	Pivot,
 	PivotItem,
-	MessageBar,
+	MessageBar
 } from '@fluentui/react'
 import { useBoolean } from '@uifabric/react-hooks'
 import { observer } from 'mobx-react-lite'
-import { useCallback, useState } from 'react'
+import { useCallback, useState, useEffect } from 'react'
 import { Switch, Route, Redirect } from 'react-router-dom'
 import { setCurrentLanguage } from '../mutators/repoMutators'
 import {
@@ -39,6 +39,16 @@ export default observer(function App() {
 		false
 	)
 	const [selectedKey, setSelectedKey] = useState<string>('Dashboard')
+
+	useEffect(() => {
+		if (state.pendingChanges) {
+			window.onbeforeunload = function() {
+				return true;
+			};
+		} else {
+			window.onbeforeunload = null
+		}
+	}, [state.pendingChanges]);
 
 	const togglePanel = useCallback(
 		(item?: any) => {

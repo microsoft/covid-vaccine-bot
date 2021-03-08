@@ -6,10 +6,13 @@ import { mutatorAction } from 'satcheljs'
 import { getAppStore } from '../store/store'
 import { createLocationDataObj } from '../utils/dataUtils'
 
-export const initStoreData = mutatorAction('initStoreData', (isDataRefreshing: boolean) => {
-	const store = getAppStore()
-	store.isDataRefreshing = isDataRefreshing
-})
+export const initStoreData = mutatorAction(
+	'initStoreData',
+	(isDataRefreshing: boolean) => {
+		const store = getAppStore()
+		store.isDataRefreshing = isDataRefreshing
+	}
+)
 
 export const setBranchList = mutatorAction(
 	'setBranchList',
@@ -83,9 +86,10 @@ export const updateLocationList = mutatorAction(
 				store.globalFileData.cdcStateNames.content[
 					`cdc/${newLocObj.info.content.id}/state_name`
 				] = {
-					'en-us': locationData.details,
-					'es-us': locationData.details,
-					'vi-vn': locationData.details,
+					...store.globalFileData.cdcStateNames.content[
+						`cdc/${newLocObj.info.content.id}/state_name`
+					],
+					[store.currentLanguage]: locationData.details
 				}
 
 				newLocObj.strings.path = `${newLocObj.info.content.id}/${newLocObj.info.content.id}.csv`
@@ -165,9 +169,10 @@ export const updateLocationData = mutatorAction(
 				store.globalFileData.cdcStateNames.content[
 					`cdc/${prevItem.key}/state_name`
 				] = {
-					'en-us': locationData.details,
-					'es-us': locationData.details,
-					'vi-vn': locationData.details,
+					...store.globalFileData.cdcStateNames.content[
+						`cdc/${prevItem.key}/state_name`
+					],
+					[store.currentLanguage]: locationData.details
 				}
 
 				location.info.content.name = locationData.details
@@ -289,7 +294,6 @@ export const modifyStateStrings = mutatorAction(
 			if (store?.repoFileData) {
 				store.pendingChanges = true
 				const location = store.repoFileData[data.locationKey]
-				if (!location.strings?.content[data.infoKey]) {
 					const newStringsObj: any = {}
 					newStringsObj[store.currentLanguage] = data.item.moreInfoContent
 					location.strings.content[data.infoKey] = newStringsObj
@@ -328,10 +332,7 @@ export const modifyStateStrings = mutatorAction(
 
 						affectedQualifier.moreInfoText = data.infoKey
 					}
-				} else {
-					location.strings.content[data.infoKey][store.currentLanguage] =
-						data.item.moreInfoContent
-				}
+				
 			}
 		}
 	}
@@ -684,50 +685,129 @@ export const updateGlobalQualifiers = mutatorAction(
 	}
 )
 
-export const translateLocationName = mutatorAction('translateLocationName', (item: any) => {
-	if (item) {
-		const store = getAppStore()
-		if (store?.globalFileData) {
-			store.pendingChanges = true
-			if (store.globalFileData.cdcStateNames.content[item.key]) {
-				store.globalFileData.cdcStateNames.content[item.key] = {
-					...store.globalFileData.cdcStateNames.content[item.key],
-					[item.toKey]: item.to
+export const translateLocationName = mutatorAction(
+	'translateLocationName',
+	(item: any) => {
+		if (item) {
+			const store = getAppStore()
+			if (store?.globalFileData) {
+				store.pendingChanges = true
+				if (store.globalFileData.cdcStateNames.content[item.key]) {
+					store.globalFileData.cdcStateNames.content[item.key] = {
+						...store.globalFileData.cdcStateNames.content[item.key],
+						[item.toKey]: item.to,
+					}
+				} else {
+					store.globalFileData.cdcStateNames.content = {
+						...store.globalFileData.cdcStateNames.content,
+						...{
+							[item.key]: {
+								[item.toKey]: item.to,
+							},
+						},
+					}
 				}
-			} else {
-				store.globalFileData.cdcStateNames.content = {
-					...store.globalFileData.cdcStateNames.content,
-					...{[item.key]: {
-						[item.toKey]: item.to
-					}}
-				}
-			}
 
-			store.globalFileData = { ...store.globalFileData }
+				store.globalFileData = { ...store.globalFileData }
+			}
 		}
 	}
-})
+)
 
-export const translateQualifier = mutatorAction('translateQualifier', (item: any) => {
+export const translateQualifier = mutatorAction(
+	'translateQualifier',
+	(item: any) => {
+		if (item) {
+			const store = getAppStore()
+			if (store?.globalFileData) {
+				store.pendingChanges = true
+				if (store.globalFileData.customStrings.content[item.key]) {
+					store.globalFileData.customStrings.content[item.key] = {
+						...store.globalFileData.customStrings.content[item.key],
+						[item.toKey]: item.to,
+					}
+				} else {
+					store.globalFileData.customStrings.content = {
+						...store.globalFileData.customStrings.content,
+						...{
+							[item.key]: {
+								[item.toKey]: item.to,
+							},
+						},
+					}
+				}
+
+				store.globalFileData = { ...store.globalFileData }
+			}
+		}
+	}
+)
+
+export const translateMisc = mutatorAction('translateMisc', (item: any) => {
 	if (item) {
 		const store = getAppStore()
-		if (store?.globalFileData) {
-			store.pendingChanges = true
-			if (store.globalFileData.customStrings.content[item.key]) {
-				store.globalFileData.customStrings.content[item.key] = {
-					...store.globalFileData.customStrings.content[item.key],
-					[item.toKey]: item.to
+		if (item.category === 'state' && item.parent !== 'global') {
+			if (store?.repoFileData) {
+				store.pendingChanges = true
+				if (
+					store.repoFileData[item.parent].strings.content[item.key][item.toKey]
+				) {
+					store.repoFileData[item.parent].strings.content[item.key][
+						item.toKey
+					] = item.to
+				} else {
+					store.repoFileData[item.parent].strings.content[item.key] = {
+						...store.repoFileData[item.parent].strings.content[item.key],
+						...{ [item.toKey]: item.to },
+					}
 				}
-			} else {
-				store.globalFileData.customStrings.content = {
-					...store.globalFileData.customStrings.content,
-					...{[item.key]: {
-						[item.toKey]: item.to
-					}}
-				}
-			}
 
-			store.globalFileData = { ...store.globalFileData }
+				store.repoFileData = { ...store.repoFileData }
+			}
+		} else {
+			if (store?.globalFileData) {
+				store.pendingChanges = true
+				const customStringKeys = Object.keys(
+					store.globalFileData.customStrings.content
+				)
+				const isCustomString = customStringKeys.includes(item.key)
+
+				if (isCustomString) {
+					if (store.globalFileData.customStrings.content[item.key]) {
+						store.globalFileData.customStrings.content[item.key] = {
+							...store.globalFileData.customStrings.content[item.key],
+							[item.toKey]: item.to,
+						}
+					} else {
+						store.globalFileData.customStrings.content = {
+							...store.globalFileData.customStrings.content,
+							...{
+								[item.key]: {
+									[item.toKey]: item.to,
+								},
+							},
+						}
+					}
+				} else {
+					if (store.globalFileData.cdcStateLinks.content[item.key]) {
+						store.globalFileData.cdcStateLinks.content[item.key] = {
+							...store.globalFileData.cdcStateLinks.content[item.key],
+							[item.toKey]: item.to,
+						}
+					} else {
+						store.globalFileData.cdcStateLinks.content = {
+							...store.globalFileData.cdcStateLinks.content,
+							...{
+								[item.key]: {
+									[item.toKey]: item.to,
+								},
+							},
+						}
+					}
+				}
+
+				store.globalFileData = { ...store.globalFileData }
+			}
 		}
 	}
 })

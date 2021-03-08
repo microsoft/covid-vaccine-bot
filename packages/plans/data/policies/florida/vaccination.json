@@ -11,56 +11,23 @@
 			"id": "1a",
 			"qualifications": [
 				{
-					"question": "c19.eligibility.question/healthcare_worker"
+					"question": "c19.eligibility.question/healthcare_worker.are"
 				},
 				{
-					"question": "c19.eligibility.question/long_term_care_resident"
+					"question": "c19.eligibility.question/long_term_care_resident.are"
 				},
 				{
-					"question": "c19.eligibility.question/health.1a.FL.extremely_vulnerable"
-				},
-				{
-					"question": "c19.eligibility.question/age.65_up"
-				}
-			]
-		},
-		{
-			"id": "1b",
-			"qualifications": [
-				{
-					"question": "c19.eligibility.question/healthcare_worker"
-				},
-				{
-					"question": "c19.eligibility.question/long_term_care_resident"
-				},
-				{
-					"question": "c19.eligibility.question/health.1a.FL.extremely_vulnerable"
-				},
-				{
-					"question": "c19.eligibility.question/essential_worker.1b"
-				},
-				{
-					"question": "c19.eligibility.question/age.75_up"
-				}
-			]
-		},
-		{
-			"id": "1c",
-			"qualifications": [
-				{
-					"question": "c19.eligibility.question/healthcare_worker"
-				},
-				{
-					"question": "c19.eligibility.question/long_term_care_resident"
-				},
-				{
-					"question": "c19.eligibility.question/essential_worker"
-				},
-				{
-					"question": "c19.eligibility.question/health"
+					"question": "c19.eligibility.question/health.1a.FL.extremely_vulnerable",
+					"moreInfoUrl": "http://ww11.doh.state.fl.us/comm/_partners/covid19_report_archive/covid-physician-form/EO-21-47-Form.pdf"
 				},
 				{
 					"question": "c19.eligibility.question/age.65_up"
+				},
+				{
+					"question": "c19.eligibility.question/essential_worker.are_you_a"
+				},
+				{
+					"question": "c19.eligibility.question/essential_worker.are_you_a_k"
 				}
 			]
 		}

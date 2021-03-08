@@ -3,12 +3,8 @@
  * Licensed under the MIT license. See LICENSE file in the project.
  */
 import {
-	DetailsList,
-	IDetailsGroupRenderProps,
 	IGroup,
 	FontIcon,
-	IGroupDividerProps,
-	IDetailsListProps,
 } from '@fluentui/react'
 import { observer } from 'mobx-react-lite'
 import { useState, useEffect, useCallback } from 'react'
@@ -31,17 +27,6 @@ export interface LocationsPhasesProp {
 	value: any
 	selectedState: any
 }
-
-const phaseColumns = [
-	{
-		key: 'question',
-		name: 'Question',
-		fieldName: 'text',
-		minWidth: 200,
-		isResizable: false,
-		isMultiline: true,
-	},
-]
 
 export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 	const {
@@ -206,95 +191,11 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 		})
 	}
 
-	const onRenderHeader: IDetailsGroupRenderProps['onRenderHeader'] = (
-		props
-	) => {
-		if (props?.group) {
-			const { group } = props
-			return (
-				<div className="phaseGroupHeader">
-					<div className="groupHeaderLabel" onClick={onToggleCollapse(props)}>
-						<FontIcon
-							iconName={group.isCollapsed ? 'ChevronRight' : 'ChevronDown'}
-							className="groupToggleIcon"
-						/>
-						{group.name ? (
-							<span>
-								{group.name} <small>({group.data.keyId})</small>
-							</span>
-						) : (
-							`Phase ${group.data.keyId}`
-						)}
-					</div>
-					<div className="groupHeaderButtons">
-						{isEditable ? (
-							<>
-								<div
-									className="addQualifierGroup"
-									onClick={() => onAddQualifierClick(group.data.keyId)}
-								>
-									<FontIcon
-										iconName="CircleAdditionSolid"
-										style={{ color: '#0078d4' }}
-									/>
-									Add Qualifier
-								</div>
-								<div
-									className="removePhaseGroup"
-									onClick={() => onRemovePhaseGroupClick(group.data.keyId)}
-								>
-									<FontIcon
-										iconName="Blocked2Solid"
-										style={{ color: '#d13438' }}
-									/>
-									Remove
-								</div>
-								{group.data.isActive ? (
-									<div className="activeGroup">
-										<FontIcon
-											iconName="CircleFill"
-											style={{ color: '#00b7c3' }}
-										/>
-										Active Phase
-									</div>
-								) : (
-									<div
-										className="activeGroup"
-										onClick={() => onSetActivePhase(group.data.keyId)}
-									>
-										<FontIcon
-											iconName="CircleRing"
-											style={{ color: '#00b7c3' }}
-										/>
-										Set as Active
-									</div>
-								)}
-							</>
-						) : (
-							<>
-								{group.data.isActive && (
-									<div className="activeGroup">
-										<FontIcon
-											iconName="CircleFill"
-											style={{ color: '#00b7c3' }}
-										/>
-										Active Phase
-									</div>
-								)}
-							</>
-						)}
-					</div>
-				</div>
-			)
-		}
-		return null
-	}
-
-	const onToggleCollapse = (props: IGroupDividerProps): (() => void) => {
-		return () => {
-			props!.onToggleCollapse!(props!.group!)
-		}
-	}
+	const onToggleCollapse = useCallback((group) => {
+		const groupIdx = phaseGroup.findIndex(g => g.key === group.key)
+		phaseGroup[groupIdx].isCollapsed = !group.isCollapsed
+		setPhaseGroup([...phaseGroup])
+	},[setPhaseGroup, phaseGroup])
 
 	const onChangeRowItemText = (currentItem: any, initItem: any) => {
 		if (
@@ -340,41 +241,111 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 		}
 	}
 
-	const onRenderRow: IDetailsListProps['onRenderRow'] = (props) => {
-		if (props) {
-			return (
-				<PhaseQualifierForm
-					rowItems={props}
-					selectedState={selectedState}
-					isEditable={isEditable}
-					isRegion={isRegion}
-					onRowItemRemove={onRemoveRowItem}
-					onRowItemTextChange={onChangeRowItemText}
-					onRowItemQualifierChange={onChangeRowItemQualifier}
-				/>
-			)
-		}
-		return null
-	}
-
 	return (
 		<div className="phaseGridContainer">
-			<DetailsList
-				indentWidth={0}
-				items={phaseGroupItems}
-				groups={phaseGroup}
-				columns={phaseColumns}
-				groupProps={{
-					showEmptyGroups: true,
-					onRenderHeader: onRenderHeader,
-				}}
-				onRenderRow={onRenderRow}
-				isHeaderVisible={false}
-				checkboxVisibility={2}
-				constrainMode={1}
-				selectionMode={1}
-				onShouldVirtualize={() => false}
-			/>
+			{phaseGroup.length > 0 ? (
+				phaseGroup.map((group: any, idx: number) => {
+					return(
+						<div key={`phasegroup-${idx}`}>
+							<div className="phaseGroupHeader">
+								<div className="groupHeaderLabel" onClick={() => {onToggleCollapse(group)}}>
+									<FontIcon
+										iconName={group.isCollapsed ? 'ChevronRight' : 'ChevronDown'}
+										className="groupToggleIcon"
+									/>
+									{group.name ? (
+										<span>
+											{group.name} <small>({group.data.keyId})</small>
+										</span>
+									) : (
+										`Phase ${group.data.keyId}`
+									)}
+								</div>
+								<div className="groupHeaderButtons">
+									{isEditable ? (
+										<>
+											<div
+												className="addQualifierGroup"
+												onClick={() => onAddQualifierClick(group.data.keyId)}
+											>
+												<FontIcon
+													iconName="CircleAdditionSolid"
+													style={{ color: '#0078d4' }}
+												/>
+												Add Qualifier
+											</div>
+											<div
+												className="removePhaseGroup"
+												onClick={() => onRemovePhaseGroupClick(group.data.keyId)}
+											>
+												<FontIcon
+													iconName="Blocked2Solid"
+													style={{ color: '#d13438' }}
+												/>
+												Remove
+											</div>
+											{group.data.isActive ? (
+												<div className="activeGroup">
+													<FontIcon
+														iconName="CircleFill"
+														style={{ color: '#00b7c3' }}
+													/>
+													Active Phase
+												</div>
+											) : (
+												<div
+													className="activeGroup"
+													onClick={() => onSetActivePhase(group.data.keyId)}
+												>
+													<FontIcon
+														iconName="CircleRing"
+														style={{ color: '#00b7c3' }}
+													/>
+													Set as Active
+												</div>
+											)}
+										</>
+									) : (
+										<>
+											{group.data.isActive && (
+												<div className="activeGroup">
+													<FontIcon
+														iconName="CircleFill"
+														style={{ color: '#00b7c3' }}
+													/>
+													Active Phase
+												</div>
+											)}
+										</>
+									)}
+								</div>
+							</div>
+							<div style={{display: group.isCollapsed ? 'none': 'block'}}>
+								{phaseGroupItems.length > 0 ? (
+									phaseGroupItems.filter(i => i.groupId === group.data.keyId).map((groupItem: any, idx: number) => {
+										return (
+											<PhaseQualifierForm
+												key={idx}
+												rowItems={{item: groupItem}}
+												selectedState={selectedState}
+												isEditable={isEditable}
+												isRegion={isRegion}
+												onRowItemRemove={onRemoveRowItem}
+												onRowItemTextChange={onChangeRowItemText}
+												onRowItemQualifierChange={onChangeRowItemQualifier}
+											/>
+										)
+									})
+								):(
+									null
+								)}
+							</div>
+						</div>
+					)
+					})
+				):(
+					null
+				)}
 		</div>
 	)
 })

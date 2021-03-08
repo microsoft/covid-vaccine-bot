@@ -7,7 +7,6 @@ import {
 	Dropdown,
 	DirectionalHint,
 	TextField,
-	IDetailsRowProps,
 	FontIcon,
 } from '@fluentui/react'
 import { observer } from 'mobx-react-lite'
@@ -23,7 +22,7 @@ import {
 import './PhaseQualifierForm.scss'
 export interface PhaseQualifierFormProps {
 	selectedState: any
-	rowItems: IDetailsRowProps
+	rowItems: any
 	isEditable: boolean
 	isRegion: boolean
 	onRowItemRemove?: (item: any) => void
