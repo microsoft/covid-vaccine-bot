@@ -1,8 +1,30 @@
 {
 	"links": {
+		"eligibility": {
+			"url": ""
+		},
+		"eligibility_plan": {
+			"url": "https://coronavirus.dc.gov/sites/default/files/dc/sites/coronavirus/page_content/attachments/Vaccination-Program-Phases-with-Tiers.pdf"
+		},
 		"info": {
-			"text": "CDC/District_Of_Columbia/state_link",
-			"url": "https://coronavirus.dc.gov/vaccine"
+			"url": "https://coronavirus.dc.gov/vaccine",
+			"text": "cdc/district_of_columbia/state_link"
+		},
+		"providers": {
+			"url": "",
+			"text": "c19.links/vax_providers"
+		},
+		"workflow": {
+			"url": "",
+			"text": "c19.links/vax_quiz"
+		},
+		"scheduling": {
+			"url": "",
+			"text": "c19.links/schedule_vax"
+		},
+		"scheduling_phone": {
+			"url": "tel:",
+			"text": "c19.link/scheduling.phone.dc"
 		}
 	},
 	"activePhase": "1b",
