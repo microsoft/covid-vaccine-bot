@@ -11,7 +11,7 @@
 		},
 		"info": {
 			"url": "",
-			"text": "cdc/st._thomas/state_link"
+			"text": "cdc/st_thomas/state_link"
 		},
 		"providers": {
 			"url": "https://www.covid19usvi.com/vaccines",
@@ -27,7 +27,7 @@
 		},
 		"scheduling_phone": {
 			"url": "tel:(340) 777 8227",
-			"text": "c19.link/scheduling.phone.st._thomas"
+			"text": "c19.link/scheduling.phone.st_thomas"
 		}
 	}
 }
