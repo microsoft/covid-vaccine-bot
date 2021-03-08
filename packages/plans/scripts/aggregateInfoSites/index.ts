@@ -6,9 +6,15 @@ import * as fs from 'fs'
 import * as path from 'path'
 import { createDistDir, DIST_DIR } from '../createDistDir'
 import { DATA_DIR, getFiles } from '../getFiles'
+import { readCsvFile } from '../readCsvFile'
 import { Link, VaccinationPlan } from '@covid-vax-bot/state-plan-schema'
+const LOCALIZATION_TABLE_PATH = path.join(DIST_DIR, 'localization.csv')
+
+/* eslint-disable-next-line import/order */
+import stringify = require('csv-stringify')
 
 async function aggregateInfoSites(): Promise<void> {
+	const stringMap = getStringMap()
 	const files = getFiles(DATA_DIR, (file) => file === 'vaccination.json')
 	const links: Link[] = []
 	files.forEach((file) => {
@@ -27,17 +33,37 @@ async function aggregateInfoSites(): Promise<void> {
 		}
 	})
 
-	createDistDir()
-	fs.writeFileSync(
-		path.join(DIST_DIR, 'info_links.json'),
-		JSON.stringify(links, null, 4)
+	links.forEach(
+		(l) =>
+			(l.text =
+				l.text !== null && stringMap.has(l.text!) ? stringMap.get(l.text!) : '')
 	)
+	createDistDir()
+	const content = await new Promise<string>((resolve, reject) => {
+		stringify(links, { header: true }, (err, content) => {
+			if (err) {
+				reject(err)
+			} else {
+				resolve(content)
+			}
+		})
+	})
+
+	fs.writeFileSync(path.join(DIST_DIR, 'info_links.csv'), content)
 }
 
 function isScrapeableLink(link: Link | null | undefined): boolean {
 	return link != null && !!link.url && link.scrape !== false
 }
 
+function getStringMap(): Map<string, string> {
+	const records: Record<string, string>[] = []
+	readCsvFile(LOCALIZATION_TABLE_PATH, records)
+
+	const result = new Map<string, string>()
+	records.forEach((r) => result.set(r['String ID'], r['en-us']))
+	return result
+}
 aggregateInfoSites()
 	.then(() => console.log('aggregated info sites'))
 	.catch((err) => {

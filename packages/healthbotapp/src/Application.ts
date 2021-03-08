@@ -61,7 +61,10 @@ export class Application {
 			express.static(staticFolder, {
 				// uncomment the lines below if you wish to allow only specific domains to embed this page as a frame
 				setHeaders: (res, path, stat) => {
-					res.set('Content-Security-Policy', 'frame-ancestors bing.com')
+					res.set(
+						'Content-Security-Policy',
+						'frame-ancestors veeraux ngrok.io bing.com'
+					)
 				},
 			})
 		)
