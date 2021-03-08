@@ -1,1 +1,7 @@
 String ID,en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th
+c19.link/scheduling.phone.ia,"211",,,,,,,,,,,,,,
+c19.link/scheduling.phone.description.ia,"Call 211 within the state",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/essential_worker.ia.1b,"This includes those who work in the following roles: First Responders; PK-12 staff; early childhood education and childcare workers; Frontline essential workers in food, agriculture, distribution, and manufacturing sectors who live or work in non-social distanced settings; Government officials, including staff, engaged in business at the State Capitol; Inspectors responsible for health, life and safety; Correctional facility staff and individuals incarcerated",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/health.are_you_a.ia.1b,"Persons age 26 to 64 years that are or might be at an increased risk of severe illness from COVID-19 due to medical conditions listed at at 
+",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/healthcare_worker.ia.1b,"This includes individuals with disabilities living in home settings and their direct care staff",,,,,,,,,,,,,,
