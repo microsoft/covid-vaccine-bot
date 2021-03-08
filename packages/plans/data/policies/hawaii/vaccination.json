@@ -1,14 +1,33 @@
 {
 	"links": {
-		"info": {
-			"text": "CDC/Hawaii/state_link",
-			"url": "https://hawaiicovid19.com/vaccine/"
-		},
 		"eligibility": {
 			"url": "https://hawaiicovid19.com/vaccination-registration/"
+		},
+		"eligibility_plan": {
+			"url": ""
+		},
+		"info": {
+			"url": "https://hawaiicovid19.com/vaccine/",
+			"text": "cdc/hawaii/state_link"
+		},
+		"providers": {
+			"url": "",
+			"text": "c19.links/vax_providers"
+		},
+		"workflow": {
+			"url": "",
+			"text": "c19.links/vax_quiz"
+		},
+		"scheduling": {
+			"url": "https://hawaiicovid19.com/vaccination-registration/",
+			"text": "c19.links/schedule_vax"
+		},
+		"scheduling_phone": {
+			"url": "tel:800-300-1120",
+			"text": "c19.link/scheduling.phone.hi"
 		}
 	},
-	"activePhase": "1a",
+	"activePhase": "1b",
 	"phases": [
 		{
 			"id": "1a",
@@ -31,10 +50,11 @@
 					"question": "c19.eligibility.question/long_term_care_resident"
 				},
 				{
-					"question": "c19.eligibility.question/essential_worker.1b"
+					"question": "c19.eligibility.question/essential_worker",
+					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.hi.1b"
 				},
 				{
-					"question": "c19.eligibility.question/age.75_up"
+					"question": "c19.eligibility.question/age.70_up"
 				}
 			]
 		},
@@ -48,7 +68,8 @@
 					"question": "c19.eligibility.question/long_term_care_resident"
 				},
 				{
-					"question": "c19.eligibility.question/essential_worker"
+					"question": "c19.eligibility.question/essential_worker",
+					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.hi.1c"
 				},
 				{
 					"question": "c19.eligibility.question/health"

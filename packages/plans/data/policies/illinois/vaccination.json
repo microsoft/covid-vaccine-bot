@@ -1,24 +1,43 @@
 {
 	"links": {
-		"info": {
-			"text": "CDC/Illinois/state_link",
-			"url": "https://www.dph.illinois.gov/covid19/vaccine-faq"
-		},
 		"eligibility": {
-			"url": "https://www.dph.illinois.gov/covid19/vaccine-distribution",
-			"scrapeQuery": ["#main"]
+			"url": "https://www.dph.illinois.gov/covid19/vaccine-distribution"
+		},
+		"eligibility_plan": {
+			"url": ""
+		},
+		"info": {
+			"url": "https://www.dph.illinois.gov/covid19/vaccination-plan",
+			"text": "cdc/illinois/state_link"
+		},
+		"providers": {
+			"url": "",
+			"text": "c19.links/vax_providers"
+		},
+		"workflow": {
+			"url": "",
+			"text": "c19.links/vax_quiz"
+		},
+		"scheduling": {
+			"url": "",
+			"text": "c19.links/schedule_vax"
+		},
+		"scheduling_phone": {
+			"url": "tel:",
+			"text": "c19.link/scheduling.phone.il"
 		}
 	},
-	"activePhase": "1a",
+	"activePhase": "1b",
 	"phases": [
 		{
 			"id": "1a",
 			"qualifications": [
 				{
-					"question": "c19.eligibility.question/healthcare_worker"
+					"question": "c19.eligibility.question/healthcare_worker",
+					"moreInfoUrl": "https://www.dph.illinois.gov/covid19/vaccination-plan"
 				},
 				{
-					"question": "c19.eligibility.question/long_term_care_resident"
+					"question": "c19.eligibility.question/long_term_care_resident.are"
 				}
 			]
 		},
@@ -26,42 +45,79 @@
 			"id": "1b",
 			"qualifications": [
 				{
-					"question": "c19.eligibility.question/healthcare_worker"
+					"question": "c19.eligibility.question/healthcare_worker",
+					"moreInfoText": "c19.eligibility.moreinfo/healthcare_worker.il.1b",
+					"moreInfoUrl": "https://www.dph.illinois.gov/covid19/vaccination-plan"
 				},
 				{
-					"question": "c19.eligibility.question/long_term_care_resident"
+					"question": "c19.eligibility.question/long_term_care_resident.are"
 				},
 				{
-					"question": "c19.eligibility.question/essential_worker.1b"
+					"question": "c19.eligibility.question/essential_worker",
+					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.il.1b",
+					"moreInfoUrl": "https://www.dph.illinois.gov/covid19/vaccination-plan"
 				},
 				{
 					"question": "c19.eligibility.question/age.65_up"
-				},
-				{
-					"question": "c19.eligibility.question/congregate.IL"
 				}
-			]
+			],
+			"label": "1b part i"
 		},
 		{
 			"id": "1c",
 			"qualifications": [
 				{
-					"question": "c19.eligibility.question/healthcare_worker"
+					"question": "c19.eligibility.question/healthcare_worker",
+					"moreInfoUrl": "https://www.dph.illinois.gov/covid19/vaccination-plan"
 				},
 				{
-					"question": "c19.eligibility.question/long_term_care_resident"
+					"question": "c19.eligibility.question/long_term_care_resident.are"
 				},
 				{
-					"question": "c19.eligibility.question/essential_worker"
+					"question": "c19.eligibility.question/essential_worker",
+					"moreInfoUrl": "https://www.dph.illinois.gov/covid19/vaccination-plan"
 				},
 				{
-					"question": "c19.eligibility.question/health"
+					"question": "c19.eligibility.question/health",
+					"moreInfoText": "c19.eligibility.moreinfo/health.il.1c",
+					"moreInfoUrl": "https://www.dph.illinois.gov/covid19/vaccination-plan"
 				},
 				{
 					"question": "c19.eligibility.question/age.65_up"
 				},
 				{
-					"question": "c19.eligibility.question/congregate.IL"
+					"question": "c19.eligibility.question/congregate.do",
+					"moreInfoText": "c19.eligibility.moreinfo/congregate.il.il.1c"
+				}
+			]
+		},
+		{
+			"id": "1bpartii",
+			"label": "1b Part II",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/healthcare_worker",
+					"moreInfoText": "c19.eligibility.moreinfo/healthcare_worker.il.1bpartii",
+					"moreInfoUrl": "https://www.dph.illinois.gov/covid19/vaccination-plan"
+				},
+				{
+					"question": "c19.eligibility.question/long_term_care_resident.are"
+				},
+				{
+					"question": "c19.eligibility.question/essential_worker",
+					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.il.1bpartii",
+					"moreInfoUrl": "https://www.dph.illinois.gov/covid19/vaccination-plan"
+				},
+				{
+					"question": "c19.eligibility.question/age.65_up"
+				},
+				{
+					"question": "c19.eligibility.question/health",
+					"moreInfoText": "c19.eligibility.moreinfo/health.il.1bpartii",
+					"moreInfoUrl": "https://www.dph.illinois.gov/covid19/vaccination-plan"
+				},
+				{
+					"question": "c19.eligibility.question/congregate"
 				}
 			]
 		}

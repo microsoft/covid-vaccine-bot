@@ -1,2 +1,17 @@
 String ID,en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th
-c19.eligibility.question/congregate.IL,"Do you live in a sheltered population (e.g. homeless, day programs, inmates?)",,,,,,,,,,,,,,
+c19.eligibility.question/congregate.il,"Do you live in a sheltered population (e.g. homeless, day programs, inmates?)",,,,,,,,,,,,,,
+c19.link/scheduling.phone.il,Scheduling Hotline,,,,,,,,,,,,,,
+c19.eligibility.moreinfo/healthcare_worker.il.1b,"Health care personnel are defined by the CDC as paid and unpaid workers in health care settings who have the potential for direct or indirect exposure to patients or infectious materials. This includes hospital, non-hospital, congregate, and home health care settings.",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/essential_worker.il.1b,"Frontline essential workers (who do not work remotely) are defined as those workers who are essential for the functioning of society and include the following: first responders, corrections officers/inmates, food and agriculture workers, US Postal Service workers, manufacturing workers, grocery store workers, public transit workers, education workers (congregate child care, pre-K through 12th grade), and shelters/adult day care",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/healthcare_worker.il.1bpartii,"Health care personnel are defined by the CDC as paid and unpaid workers in health care settings who have the potential for direct or indirect exposure to patients or infectious materials. This includes hospital, non-hospital, congregate, and home health care settings.",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/essential_worker.il.1bpartii,"Frontline essential workers (who do not work remotely) are defined as those workers who are essential for the functioning of society and include the following: first responders, corrections officers/inmates, food and agriculture workers, US Postal Service workers, manufacturing workers, grocery store workers, public transit workers, education workers (congregate child care, pre-K through 12th grade), and shelters/adult day care",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/health.il.1bpartii,"Persons aged 16 to 64 years with medical conditions that increase the risk for severe COVID-19. Conditions include Obesity, Diabetes, Pulmonary Diseases, Smoking, Heart Conditions, Chronic Kidney Disease, Cancer, Solid Organ Transplant, Sickle Cell Disease, Pregnancy, and Persons with Disability.(Not otherwise covered in previous categories).",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/health.il.1c,"Medical conditions that increase the risk for severe COVID-19 include Obesity, Diabetes, Pulmonary Diseases, Smoking, Heart Conditions, Chronic Kidney Disease, Cancer, Solid Organ Transplant, Sickle Cell Disease, Pregnancy, and Persons with Disability.(Not otherwise covered in previous categories).",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/congregate.il.il.1c,"Continuing Care Residential Facilities
+Residential Care Adult Homes
+Support Housing for Seniors
+Supportive Residential Facilities for Persons with Developmental Disabilities
+Supportive Residential Facilities for Persons with Severe Mental Illness
+Community Integrated Living Arrangements
+Supervised Residential Facilities for Persons with Developmental Disabilities
+Supervised Residential Facilities for Persons with Severe Mental Illness",,,,,,,,,,,,,,

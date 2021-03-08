@@ -26,11 +26,21 @@ const LOCALIZATION_TABLE_PATH = path.join(DIST_DIR, 'localization.csv')
  * Validate that state-level data files adhere to the schema
  */
 function validateDataFiles() {
-	const stringChecker = getStringChecker()
+	const records = readRecords()
+	const stringChecker = getStringChecker(records)
 
 	let errorCount = 0
 	const schemaValidationErrors: SchemaValidationError[] = []
 	const linkErrors: string[] = []
+
+	records.forEach((rec) => {
+		if (!rec['en-us']) {
+			errorCount++
+			linkErrors.push(
+				`string "${rec['String ID']} is missing an en-us localization"`
+			)
+		}
+	})
 
 	// Validate data files
 	getFiles(DATA_DIR, (f) => f === 'info.json').forEach(validateStateInfo)
@@ -129,10 +139,12 @@ function verifyPhaseIdsNotDuplicated(plan: VaccinationPlan): string[] {
 	return errors
 }
 
-function getStringChecker(): StringChecker {
+function readRecords(): Record<string, string>[] {
 	const records: Record<string, string>[] = []
 	readCsvFile(LOCALIZATION_TABLE_PATH, records)
-
+	return records
+}
+function getStringChecker(records: Record<string, string>[]): StringChecker {
 	const recordIds = records.map((r) => r['String ID'])
 	return new StringChecker(recordIds)
 }

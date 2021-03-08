@@ -1,15 +1,34 @@
 {
 	"links": {
-		"info": {
-			"text": "CDC/Connecticut/state_link",
-			"url": "https://portal.ct.gov/Coronavirus/covid-19%20vaccinations"
-		},
 		"eligibility": {
-			"url": "https://portal.ct.gov/Coronavirus/COVID-19-Vaccination---Phases",
-			"scrapeQuery": ["main"]
+			"url": "https://portal.ct.gov/vaccine-portal/COVID-19-Vaccination-Phases"
+		},
+		"eligibility_plan": {
+			"url": ""
+		},
+		"info": {
+			"url": "https://portal.ct.gov/Vaccine-Portal",
+			"text": "cdc/connecticut/state_link"
+		},
+		"providers": {
+			"url": "https://portal.ct.gov/vaccine-portal/COVID-19-Vaccination-Scheduling-Options",
+			"text": "c19.links/vax_providers"
+		},
+		"workflow": {
+			"url": "",
+			"text": "c19.links/vax_quiz"
+		},
+		"scheduling": {
+			"url": "",
+			"text": "c19.links/schedule_vax"
+		},
+		"scheduling_phone": {
+			"url": "tel:877-918-2224",
+			"text": "c19.link/scheduling.phone.ct",
+			"description": "c19.link/scheduling.phone.description.ct"
 		}
 	},
-	"activePhase": "1a",
+	"activePhase": "1b",
 	"phases": [
 		{
 			"id": "1a",
@@ -26,19 +45,28 @@
 			"id": "1b",
 			"qualifications": [
 				{
-					"question": "c19.eligibility.question/healthcare_worker"
+					"question": "c19.eligibility.question/healthcare_worker",
+					"moreInfoText": "c19.eligibility.moreinfo/healthcare_worker.ct.1b"
 				},
 				{
-					"question": "c19.eligibility.question/long_term_care_resident"
+					"question": "c19.eligibility.question/long_term_care_resident.are",
+					"moreInfoText": "c19.eligibility.moreinfo/long_term_care_resident.are.ct.1b"
 				},
 				{
-					"question": "c19.eligibility.question/essential_worker.1b"
+					"question": "c19.eligibility.question/essential_worker.are",
+					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.are.ct.1b"
 				},
 				{
-					"question": "c19.eligibility.question/age.75_up"
+					"question": "c19.eligibility.question/age.55_up",
+					"moreInfoText": "c19.eligibility.moreinfo/age.55_up.ct.1b"
 				},
 				{
-					"question": "c19.eligibility.question/congregate"
+					"question": "c19.eligibility.question/congregate.do",
+					"moreInfoText": "c19.eligibility.moreinfo/congregate.do.ct.1b"
+				},
+				{
+					"question": "c19.eligibility.question/essential_worker.are_you_an",
+					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.are_you_an.ct.1b"
 				}
 			]
 		},
