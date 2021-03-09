@@ -6,7 +6,7 @@ import * as fs from 'fs'
 import * as path from 'path'
 
 export const DIST_DIR = path.join(__dirname, '../dist')
-export const DIST_STATES_DIR = path.join(__dirname, '../dist', 'states')
+export const DIST_STATES_DIR = path.join(__dirname, '../dist', 'regions')
 
 export function createDistDir(): void {
 	if (!fs.existsSync(DIST_DIR)) {
