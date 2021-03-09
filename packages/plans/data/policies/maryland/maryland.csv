@@ -1,4 +1,32 @@
 String ID,en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th
-c19.eligibility.question/essential_worker.1a.MD.judiciary_or_nursing_home_staff,Are you frontline judiciary staff or long-term care facility staff within a nursing home?,,,,,,,,,,,,,,
-c19.eligibility.question/essential_worker.1b.MD,"Are you a K-12 personnel, continuity of government staff, or developmentally disabled?",,,,,,,,,,,,,,
-c19.eligibility.question/congregate.MD,"Do you live in an assisted living facility, special needs group home, or are a high-risk inmate?",,,,,,,,,,,,,,
+c19.eligibility.question/essential_worker.1a.md.judiciary_or_nursing_home_staff,"Are you frontline judiciary staff or long-term care facility staff within a nursing home?",,,,,,,,,,,,,,
+c19.eligibility.question/essential_worker.1b.md,"Are you a K-12 personnel, continuity of government staff, or developmentally disabled?",,,,,,,,,,,,,,
+c19.eligibility.question/congregate.md,"Do you live in an assisted living facility, special needs group home, or are a high-risk inmate?",,,,,,,,,,,,,,
+c19.link/scheduling.phone.md,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.description.md,"For updates on appointments for mass vaccination sites, text ‘MdReady’ to 898-211.",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/congregate.do.md.1c,"This includes assisted living, independent living, behavioral health and developmentally disabled group homes, and other congregate facilities",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/essential_worker.md.1c,"This includes: 
+All licensed, registered and certified health care providers
+Front line hospital staff
+Nursing home residents and staff
+Individuals with intellectual and developmental disabilities
+Assisted living, independent living, behavioral health and developmentally disabled group homes, and other congregate facilities
+Law enforcement and firefighters, EMS
+Education staff, including K-12 teachers, support staff and daycare providers
+Correctional health care staff and officers
+Public safety workers not covered in Phase 1A
+Health care workers not covered in Phase 1A, including but not limited to lab services, public health, vaccine manufacturing and other health care professions
+Front line judiciary staff
+Continuity of government
+Food/agriculture production, critical manufacturing, U.S. Postal Service, public mass transit, grocery store employees
+Veterinarians and support staff
+Clergy and other essential support for houses of worship",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/health.md.1c,"Individuals who are currently receiving hospital-based treatment, including in hospital outpatient centers, AND diagnosed with at least one of the following conditions:
+Cancer patients who are currently in active treatment
+End stage renal disease patients requiring hemodialysis
+Chronic Obstructive Pulmonary Disease (COPD)
+Solid organ transplant recipients
+Sickle cell disease patients
+Diabetic patients (Type 1 and Type 2)
+
+Individuals who are diagnosed with these medical conditions but are not currently receiving hospital-based treatment, including in hospital outpatient centers, will be eligible to receive the vaccine in Maryland’s Phase 2 COVID-19 vaccine distribution.",,,,,,,,,,,,,,
