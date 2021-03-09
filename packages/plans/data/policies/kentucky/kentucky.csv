@@ -1,2 +1,40 @@
 String ID,en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th
-c19.eligibility.question/essential_worker.1b.KY,Are you a K-12 personnel or first responder?,,,,,,,,,,,,,,
+c19.eligibility.question/essential_worker.1b.ky,"Are you a K-12 personnel or first responder?",,,,,,,,,,,,,,
+c19.link/scheduling.phone.ky,"855-598-2246",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/long_term_care_resident.are.ky.1a,"This also includes assisted living facilities.",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/long_term_care_resident.ky.1b,"This also includes assisted living facilities.",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/health.ky.1c,"Per CDC, adults of any age with the following conditions are at increased risk of severe illness from the virus that causes COVID-19:
+Cancer
+Chronic kidney disease
+COPD (chronic obstructive pulmonary disease)
+Down Syndrome
+Heart conditions, such as heart failure, coronary artery disease, or cardiomyopathies
+Immunocompromised state (weakened immune system) from solid organ transplant
+Obesity (body mass index [BMI] of 30 kg/m2 or higher but less than 40 kg/m2)
+Severe Obesity (body mass index [BMI] equal to or greater than 40 kg/m2)
+Pregnancy
+Sickle cell disease
+Type 2 diabetes mellitus ",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/essential_worker.ky.1c,"Frontline Essential Workers include: 
+Healthcare Personnel
+First Responders (Firefighters, Police)
+Corrections
+Education (teachers, support staff, daycare)
+Food & Agriculture
+Manufacturing
+U.S. Postal service workers
+Public transit workers
+Grocery store workers
+
+Other Essential Workers include: 
+Transportation and logistics
+Food Service Shelter & Housing (construction)
+Finance
+IT & Communication
+Energy
+Media
+Legal
+Public Safety (Engineers)
+Water & Wastewater
+Clergy",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/essential_worker.are.ky.1b,"This includes firefighters, police, and other emergency response as well as corrections officers",,,,,,,,,,,,,,

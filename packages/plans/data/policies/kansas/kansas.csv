@@ -1,2 +1,90 @@
 String ID,en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th
-c19.eligibility.question/essential_worker.1b.KS,"Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, retail, warehousing, sales, supplying critical material to the COVID-19 response, or child care.",,,,,,,,,,,,,,
+c19.eligibility.question/essential_worker.1b.ks,"Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, retail, warehousing, sales, supplying critical material to the COVID-19 response, or child care.",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/essential_worker.ks.1a,"Workers that are critical to pandemic response continuity are prioritized on a county-by-county level. ",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/essential_worker.ks.1b,"High-contact critical workers include but are not limited to the following:
+
+Firefighters; police officers; first responders; emergency dispatchers; correction officers
+Grocery store workers and food services
+K-12 and childcare workers, including teachers, custodians, drivers and other staff
+Food processing, including meat processing plants
+Large-scale aviation manufacturing plants
+Transportation workers
+Workers in the following industries, if they regularly need to be in high-risk settings to perform their duties:
+Retail, warehouses and sales outlets
+Agriculture
+Supply of critical services or materials for the COVID response (e.g. personal protective equipment (PPE))
+The U.S. Postal Service
+Department of Motor Vehicles",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/congregate.do.ks.1b,"Congregate settings include but are not limited to the following:
+
+Homeless shelters and other homeless housing settings and dwelling places
+Congregate childcare institutions, adult and child protective services
+Emergency shelters or safe houses for victims of domestic violence
+Corrections facilities, including jails and juvenile justice facilities
+Behavioral Health institutions (including mental health institutions) and residential treatment centers
+Adult care homes, residents and staff in home plus facilities not covered in Phase 1
+Senior living homes
+Home care givers (paid or unpaid), personal care aides",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/healthcare_worker.ks.1b,"Healthcare workers include but are not limited to the following:
+
+Staff in long-term care facilities
+Workers in direct contact with patients, e.g., Medical Doctors (MD); Doctors of Osteopathy (DO); Doctors of Podiatric medicine (DPM); nurses; Emergency Medical Technicians (EMT); clinical students and trainees -- does not include first responders and dispatch who are prioritized in Phase 2.
+Diagnostic labs, phlebotomists, pandemic health workers (e.g., individuals performing COVID tests)
+Mental healthcare providers, pharmacy staff, non-medical staff –- if exposed to patients or infectious materials
+Healthcare-associated contractors, including food, waste management, etc.
+Dentists, physical therapists, professionals performing elective procedures
+Workers providing institutional care to community-based long-term services and supports (LTSS); personal care assistants (PCAs); home care workers regulated by the state; Centers for Medicare & Medicaid Services (CMS) designated caretakers; and other caregivers providing services to disabled peoples or those with severe medical risks
+Morticians, forensic and funeral service workers
+Staff in Federally Qualified Health Centers (FQHC); community health centers (CHC); safety-net/ free clinics; faith-based outreach clinics -- inclusive of state-funded clinics
+Home health aides, nursing assistants
+Veterinarians
+",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/congregate.ks.1c,"Congregate settings include but are not limited to the following:
+
+Homeless shelters and other homeless housing settings and dwelling places
+Congregate childcare institutions, adult and child protective services
+Emergency shelters or safe houses for victims of domestic violence
+Corrections facilities, including jails and juvenile justice facilities
+Behavioral Health institutions (including mental health institutions) and residential treatment centers
+Adult care homes, residents and staff in home plus facilities not covered in Phase 1
+Senior living homes
+Home care givers (paid or unpaid), personal care aides",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/healthcare_worker.ks.1c,"Healthcare workers include but are not limited to the following:
+
+Staff in long-term care facilities
+Workers in direct contact with patients, e.g., Medical Doctors (MD); Doctors of Osteopathy (DO); Doctors of Podiatric medicine (DPM); nurses; Emergency Medical Technicians (EMT); clinical students and trainees -- does not include first responders and dispatch who are prioritized in Phase 2.
+Diagnostic labs, phlebotomists, pandemic health workers (e.g., individuals performing COVID tests)
+Mental healthcare providers, pharmacy staff, non-medical staff –- if exposed to patients or infectious materials
+Healthcare-associated contractors, including food, waste management, etc.
+Dentists, physical therapists, professionals performing elective procedures
+Workers providing institutional care to community-based long-term services and supports (LTSS); personal care assistants (PCAs); home care workers regulated by the state; Centers for Medicare & Medicaid Services (CMS) designated caretakers; and other caregivers providing services to disabled peoples or those with severe medical risks
+Morticians, forensic and funeral service workers
+Staff in Federally Qualified Health Centers (FQHC); community health centers (CHC); safety-net/ free clinics; faith-based outreach clinics -- inclusive of state-funded clinics
+Home health aides, nursing assistants
+Veterinarians
+",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/healthcare_worker.ks.1a,"Healthcare workers include but are not limited to the following:
+
+Staff in long-term care facilities
+Workers in direct contact with patients, e.g., Medical Doctors (MD); Doctors of Osteopathy (DO); Doctors of Podiatric medicine (DPM); nurses; Emergency Medical Technicians (EMT); clinical students and trainees -- does not include first responders and dispatch who are prioritized in Phase 2.
+Diagnostic labs, phlebotomists, pandemic health workers (e.g., individuals performing COVID tests)
+Mental healthcare providers, pharmacy staff, non-medical staff –- if exposed to patients or infectious materials
+Healthcare-associated contractors, including food, waste management, etc.
+Dentists, physical therapists, professionals performing elective procedures
+Workers providing institutional care to community-based long-term services and supports (LTSS); personal care assistants (PCAs); home care workers regulated by the state; Centers for Medicare & Medicaid Services (CMS) designated caretakers; and other caregivers providing services to disabled peoples or those with severe medical risks
+Morticians, forensic and funeral service workers
+Staff in Federally Qualified Health Centers (FQHC); community health centers (CHC); safety-net/ free clinics; faith-based outreach clinics -- inclusive of state-funded clinics
+Home health aides, nursing assistants
+Veterinarians
+",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/congregate.do.ks.4,"Congregate settings include but are not limited to the following:
+
+Homeless shelters and other homeless housing settings and dwelling places
+Congregate childcare institutions, adult and child protective services
+Emergency shelters or safe houses for victims of domestic violence
+Corrections facilities, including jails and juvenile justice facilities
+Behavioral Health institutions (including mental health institutions) and residential treatment centers
+Adult care homes, residents and staff in home plus facilities not covered in Phase 1
+Senior living homes
+Home care givers (paid or unpaid), personal care aides",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/health.ks.4,"Aged 16‐64 with other medical risks",,,,,,,,,,,,,,
