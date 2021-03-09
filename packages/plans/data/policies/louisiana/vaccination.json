@@ -1,11 +1,18 @@
 {
 	"links": {
+		"eligibility_plan": {
+			"url": "https://ldh.la.gov/index.cfm/page/4137"
+		},
 		"info": {
-			"text": "CDC/Louisiana/state_link",
-			"url": "https://ldh.la.gov/covidvaccine/"
+			"url": "https://ldh.la.gov/covidvaccine/",
+			"text": "cdc/louisiana/state_link"
+		},
+		"providers": {
+			"url": "https://ldh.la.gov/covidvaccine-locations/",
+			"text": "c19.links/vax_providers"
 		}
 	},
-	"activePhase": "1b",
+	"activePhase": "1c",
 	"phases": [
 		{
 			"id": "1a",
@@ -39,19 +46,21 @@
 			"id": "1c",
 			"qualifications": [
 				{
-					"question": "c19.eligibility.question/healthcare_worker"
+					"question": "c19.eligibility.question/essential_worker",
+					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.la.1c",
+					"moreInfoUrl": "https://ldh.la.gov/index.cfm/page/4137"
 				},
 				{
-					"question": "c19.eligibility.question/long_term_care_resident"
-				},
-				{
-					"question": "c19.eligibility.question/essential_worker"
-				},
-				{
-					"question": "c19.eligibility.question/health"
+					"question": "c19.eligibility.question/health.are_you_age",
+					"moreInfoText": "c19.eligibility.moreinfo/health.are_you_age.la.1c",
+					"moreInfoUrl": "https://ldh.la.gov/index.cfm/page/4137"
 				},
 				{
 					"question": "c19.eligibility.question/age.65_up"
+				},
+				{
+					"question": "c19.eligibility.question/health.are_you_currently",
+					"moreInfoUrl": ""
 				}
 			]
 		}
