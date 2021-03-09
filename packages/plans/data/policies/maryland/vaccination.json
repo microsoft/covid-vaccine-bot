@@ -23,7 +23,7 @@
 			"text": "c19.links/schedule_vax"
 		},
 		"scheduling_phone": {
-			"url": "tel:",
+			"url": "tel:410-767-6500",
 			"text": "c19.link/scheduling.phone.md",
 			"description": "c19.link/scheduling.phone.description.md"
 		}
