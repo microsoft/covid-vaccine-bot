@@ -202,7 +202,7 @@ export default observer(function LocationForm(props: LocationFormProp) {
 					onChange={handleTextChange}
 				/>
 				<TextField
-					label="Descripton of scheduling hotline:"
+					label="Description of scheduling hotline:"
 					name="schedulingPhoneDesc"
 					value={formData.schedulingPhoneDesc}
 					onChange={handleTextChange}

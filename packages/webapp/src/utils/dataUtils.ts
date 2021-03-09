@@ -19,7 +19,10 @@ export const convertCSVDataToObj = (csvData: any) => {
 }
 
 export const createLocationDataObj = (locationData: any): any => {
-	const locationName = locationData.details.replace(/\s/g, '_').toLowerCase()
+	const locationName = locationData.details
+		.replace(/[^a-z0-9\s]/gi, '')
+		.replace(/\s/g, '_')
+		.toLowerCase()
 	return {
 		info: {
 			content: {
@@ -42,34 +45,46 @@ export const createLocationDataObj = (locationData: any): any => {
 			content: {
 				activePhase: '',
 				links: {
-					eligibility: {
-						url: locationData.eligibility,
-						text: '',
-					},
-					eligibility_plan: {
-						url: locationData.eligibilityPlan,
-						text: '',
-					},
-					info: {
-						url: locationData.info,
-						text: `cdc/${locationName}/state_link`,
-					},
-					providers: {
-						url: locationData.providers,
-						text: 'c19.links/vax_providers',
-					},
-					workflow: {
-						url: locationData.workflow,
-						text: 'c19.links/vax_quiz',
-					},
-					scheduling: {
-						url: locationData.scheduling,
-						text: 'c19.links/schedule_vax',
-					},
-					scheduling_phone: {
-						url: `tel:${locationData.schedulingPhone}`,
-						text: locationData.schedulingPhone,
-					},
+					...(locationData?.eligibility !== '' && {
+						eligibility: {
+							url: locationData.eligibility,
+						},
+					}),
+					...(locationData?.eligibilityPlan !== '' && {
+						eligibility_plan: {
+							url: locationData.eligibilityPlan,
+						},
+					}),
+					...(locationData?.info !== '' && {
+						info: {
+							url: locationData.info,
+							text: `cdc/${locationName}/state_link`,
+						},
+					}),
+					...(locationData?.providers !== '' && {
+						providers: {
+							url: locationData.providers,
+							text: 'c19.links/vax_providers',
+						},
+					}),
+					...(locationData?.workflow !== '' && {
+						workflow: {
+							url: locationData.workflow,
+							text: 'c19.links/vax_quiz',
+						},
+					}),
+					...(locationData?.scheduling !== '' && {
+						scheduling: {
+							url: locationData.scheduling,
+							text: 'c19.links/schedule_vax',
+						},
+					}),
+					...(locationData?.schedulingPhone !== '' && {
+						scheduling_phone: {
+							url: `tel:${locationData.schedulingPhone}`,
+							text: locationData.schedulingPhone,
+						},
+					}),
 				},
 			},
 			name: 'vaccination.json',
