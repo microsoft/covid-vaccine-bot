@@ -1,12 +1,34 @@
 {
 	"links": {
+		"eligibility": {
+			"url": ""
+		},
+		"eligibility_plan": {
+			"url": ""
+		},
 		"info": {
-			"text": "CDC/Maryland/state_link",
-			"url": "https://covidlink.maryland.gov/content/vaccine/",
-			"scrapeQuery": ["#primary_content_Block"]
+			"url": "https://coronavirus.maryland.gov/pages/vaccine",
+			"text": "cdc/maryland/state_link"
+		},
+		"providers": {
+			"url": "https://coronavirus.maryland.gov/pages/vaccine",
+			"text": "c19.links/vax_providers"
+		},
+		"workflow": {
+			"url": "",
+			"text": "c19.links/vax_quiz"
+		},
+		"scheduling": {
+			"url": "",
+			"text": "c19.links/schedule_vax"
+		},
+		"scheduling_phone": {
+			"url": "tel:",
+			"text": "c19.link/scheduling.phone.md",
+			"description": "c19.link/scheduling.phone.description.md"
 		}
 	},
-	"activePhase": "1a",
+	"activePhase": "1c",
 	"phases": [
 		{
 			"id": "1a",
@@ -55,28 +77,24 @@
 			"id": "1c",
 			"qualifications": [
 				{
-					"question": "c19.eligibility.question/healthcare_worker"
+					"question": "c19.eligibility.question/long_term_care_resident.are"
 				},
 				{
-					"question": "c19.eligibility.question/long_term_care_resident"
+					"question": "c19.eligibility.question/congregate.do",
+					"moreInfoText": "c19.eligibility.moreinfo/congregate.do.md.1c"
 				},
 				{
-					"question": "c19.eligibility.question/essential_worker.leo_corrections"
-				},
-				{
-					"question": "c19.eligibility.question/essential_worker.1a.MD.judiciary_or_nursing_home_staff"
-				},
-				{
-					"question": "c19.eligibility.question/essential_worker"
-				},
-				{
-					"question": "c19.eligibility.question/health"
+					"question": "c19.eligibility.question/essential_worker",
+					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.md.1c",
+					"moreInfoUrl": "https://coronavirus.maryland.gov/pages/vaccine"
 				},
 				{
 					"question": "c19.eligibility.question/age.65_up"
 				},
 				{
-					"question": "c19.eligibility.question/congregate.MD"
+					"question": "c19.eligibility.question/health",
+					"moreInfoText": "c19.eligibility.moreinfo/health.md.1c",
+					"moreInfoUrl": "https://coronavirus.maryland.gov/pages/vaccine"
 				}
 			]
 		}
