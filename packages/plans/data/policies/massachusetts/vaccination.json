@@ -6,7 +6,9 @@
 		},
 		"eligibility": {
 			"url": "https://www.mass.gov/info-details/massachusetts-covid-19-vaccination-phases",
-			"scrapeQuery": ["#main-content"]
+			"scrapeQuery": [
+				"#main-content"
+			]
 		},
 		"workflow": {
 			"text": "c19.links/vax_quiz",
@@ -72,6 +74,25 @@
 					"question": "c19.eligibility.question/age.75_up",
 					"moreInfoText": "c19.eligibility.moreinfo/age.75_up.MA",
 					"moreInfoUrl": "https://www.mass.gov/info-details/covid-19-vaccinations-for-people-ages-75-and-older"
+				}
+			]
+		},
+		{
+			"id": "phase2,step2",
+			"label": "Phase 2, Step 2",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.75_up"
+				},
+				{
+					"question": "c19.eligibility.question/age.65_up"
+				},
+				{
+					"question": "c19.eligibility.question/health.are"
+				},
+				{
+					"question": "c19.eligibility.question/congregate.are",
+					"moreInfoUrl": "https://www.mass.gov/doc/massachusetts-senior-affordable-housing-covid-19-vaccine-information/download"
 				}
 			]
 		}

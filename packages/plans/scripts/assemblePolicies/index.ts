@@ -4,8 +4,8 @@
  */
 import { createDistDir } from '../createDistDir'
 import { assembleAllData } from './assembleAllData'
-import { assembleStates } from './assembleStates'
+import { assembleRegions } from './assembleRegions'
 
 createDistDir()
-assembleStates()
+assembleRegions()
 assembleAllData()

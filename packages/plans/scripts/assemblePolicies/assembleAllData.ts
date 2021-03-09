@@ -11,11 +11,11 @@ import { getFiles } from '../getFiles'
 export function assembleAllData(): void {
 	console.log('assembling combined file')
 	const result: unknown[] = []
-	getFiles(path.join(DIST_DIR, 'states')).forEach((stateDataFile) => {
-		result.push(require(stateDataFile))
+	getFiles(path.join(DIST_DIR, 'regions')).forEach((regionDataFile) => {
+		result.push(require(regionDataFile))
 	})
 	fs.writeFileSync(
-		path.join(DIST_DIR, 'states.json'),
+		path.join(DIST_DIR, 'policies.json'),
 		JSON.stringify(result, null, 4),
 		{ encoding: 'utf8' }
 	)

@@ -13,7 +13,7 @@ async function uploadFiles() {
 	const { Resources } = require('../Resources')
 	const resources = new Resources()
 
-	await resources.upload([path.join(DIST_DIR, 'states.json')])
+	await resources.upload([path.join(DIST_DIR, 'policies.json')])
 }
 
 uploadFiles().then(() => console.log('successfully uploaded resources'))
