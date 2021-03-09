@@ -144,11 +144,26 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 	}
 
 	const onRemoveRowItem = (item: any, groupKey:any) => {
-		removeQualifier({
-			locationKey: selectedState.key,
-			item: item,
-			regionInfo: isRegion ? value : null,
+		if(item.qualifierId !== 'c19.eligibility.question/new_qualifier'){
+			removeQualifier({
+				locationKey: selectedState.key,
+				item: item,
+				regionInfo: isRegion ? value : null,
+			})
+		}else{
+
+			const tempPhaseList = phaseList.map((group) => {
+			if (group.key === groupKey) {
+				const newItemIndex = group.items.findIndex( (i:any) => i.qualifierId ===  'c19.eligibility.question/new_qualifier')
+				if(newItemIndex !== -1){
+					group.items.splice(newItemIndex,1)
+				}
+			}
+
+			return group
 		})
+		setPhaseList(tempPhaseList)
+		}
 	}
 
 	const onRemovePhaseGroupClick = (phaseId: any) => {
