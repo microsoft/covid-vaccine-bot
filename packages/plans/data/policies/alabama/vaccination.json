@@ -115,6 +115,11 @@
 				{
 					"question": "c19.eligibility.question/congregate.do",
 					"moreInfoText": "c19.eligibility.moreinfo/congregate.do.al.1c_group1"
+				},
+				{
+					"question": "c19.eligibility.question/essential_worker.k12",
+					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.k12.al.1c_group1",
+					"moreInfoUrl": "example.microsoft.com"
 				}
 			]
 		}
