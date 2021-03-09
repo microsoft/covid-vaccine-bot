@@ -51,7 +51,7 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 			}
 
 			phaseObj.forEach((phase: any) => {
-				let isCollapsed: boolean = !isRegion && value.value.id !== phase.id
+				const isCollapsed: boolean = !isRegion && value.value.id !== phase.id
 
 				let isActivePhase = false
 				if (isRegion && regionObj.vaccination.content.activePhase) {

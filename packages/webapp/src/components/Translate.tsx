@@ -4,11 +4,6 @@
  */
 import { Dropdown, TextField, FontIcon } from '@fluentui/react'
 import { observer } from 'mobx-react-lite'
-import {
-	getLanguageOptions,
-	toProperCase,
-	getLanguageDisplayText,
-} from '../utils/textUtils'
 import { useState, useCallback, useEffect, useRef } from 'react'
 import {
 	translateLocationName,
@@ -16,6 +11,11 @@ import {
 	translateMisc,
 } from '../mutators/repoMutators'
 import { getAppStore } from '../store/store'
+import {
+	getLanguageOptions,
+	toProperCase,
+	getLanguageDisplayText,
+} from '../utils/textUtils'
 
 import './Translate.scss'
 
