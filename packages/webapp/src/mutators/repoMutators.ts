@@ -124,7 +124,7 @@ export const updateLocationList = mutatorAction(
 				newLocObj.vaccination.path = `${selectedState.key}/regions/${newLocObj.vaccination.path}`
 
 				if (locationData.info !== '') {
-					delete newLocObj.vaccination.content.links.info.text //= `c19.link/info.${newLocObj.info.content.id}`.toLowerCase()
+					newLocObj.vaccination.content.links.info.text = `cdc/${location.info.id}/state_link`//`c19.link/info.${newLocObj.info.content.id}`.toLowerCase()
 				}
 
 				if (locationData.schedulingPhone !== '') {
@@ -391,11 +391,14 @@ export const updateLocationData = mutatorAction(
 						) {
 							regionObj.vaccination.content.links.info = {
 								url: locationData.info,
+								text: `cdc/${location.info.content.id}/state_link`,
+
 							}
 						}
 					} else {
 						regionObj.vaccination.content.links.info = {
 							url: locationData.info,
+							text: `cdc/${location.info.content.id}/state_link`,
 						}
 					}
 				}
