@@ -1,5 +1,5 @@
 String ID,en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th
-c19.eligibility.question/health.1b.MA,Are you age 16+ with at least 2 high-risk medical conditions?,,,,,,,,,,,,,,
+c19.eligibility.question/health.1b.MA,"Are you age 16+ with at least 2 high-risk medical conditions?",,,,,,,,,,,,,,
 c19.links/workflow.MA,"Massachusetts PhaseFinder",,,,,,,,,,,,,,
 c19.eligibility.question/long_term_care_resident_or_worker.MA,"Do you live or work in a long-term care facility?",,,,,,,,,,,,,,
 c19.eligibility.moreinfo/long_term_care_resident_or_worker.MA,"Examples of this include: skilled nursing facilities, assisted living residences, and rest homes.",,,,,,,,,,,,,,
