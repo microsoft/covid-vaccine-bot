@@ -566,7 +566,7 @@ const copyPhaseData = (newObj: any, oldObj: any) => {
 		phase.qualifications.forEach((qual: any) => {
 			currPhaseObj.qualifications.push({
 				question: qual.question.toLowerCase(),
-				moreInfoText: qual.moreInfoText?.toLowerCase(),
+				moreInfoText: qual.moreInfoText?.replace(/[^a-z0-9\s]/gi, '').replace(/\s/g, '_').toLowerCase(),
 				moreInfoUrl: qual.moreInfoUrl,
 			})
 		})
@@ -738,6 +738,7 @@ export const removeQualifier = mutatorAction(
 						(phase: any) => phase.id === data.item.groupId
 					)
 
+					console.log(affectedPhase)
 					const removeIndex = affectedPhase.qualifications.findIndex(
 						(qualification: any) =>
 							qualification.question.toLowerCase() ===
@@ -789,7 +790,7 @@ export const addPhase = mutatorAction('addPhase', (data: any | undefined) => {
 			store.pendingChanges = true
 			const location = store.repoFileData[data.locationKey]
 
-			const phaseId = data.item.name.replace(/[\s.]/g, '').toLowerCase()
+			const phaseId = data.item.name.replace(/[^a-z0-9\s]/gi, '').replace(/\s/g, '_').toLowerCase()
 
 			const emptyQualifications: any = []
 
