@@ -43,33 +43,45 @@ export const createLocationDataObj = (locationData: any): any => {
 			content: {
 				activePhase: '',
 				links: {
-					eligibility: {
-						url: locationData.eligibility,
-						text: '',
+					...(locationData?.eligibility) && {
+							eligibility: {
+							url: locationData.eligibility,
+						},
 					},
-					eligibility_plan: {
-						url: locationData.eligibilityPlan,
-						text: '',
+					...(locationData?.eligibilityPlan) && {
+						eligibility_plan: {
+							url: locationData.eligibilityPlan,
+						},
 					},
-					info: {
-						url: locationData.info,
-						text: `cdc/${locationName}/state_link`,
+					...(locationData?.info) && {
+						info: {
+							url: locationData.info,
+							text: `cdc/${locationName}/state_link`,
+						},
 					},
-					providers: {
-						url: locationData.providers,
-						text: 'c19.links/vax_providers',
+					...(locationData?.providers) && {
+						providers: {
+							url: locationData.providers,
+							text: 'c19.links/vax_providers',
+						},
 					},
-					workflow: {
-						url: locationData.workflow,
-						text: 'c19.links/vax_quiz',
+					...(locationData?.workflow) && {
+						workflow: {
+							url: locationData.workflow,
+							text: 'c19.links/vax_quiz',
+						},
 					},
-					scheduling: {
-						url: locationData.scheduling,
-						text: 'c19.links/schedule_vax',
+					...(locationData?.scheduling) && {
+						scheduling: {
+							url: locationData.scheduling,
+							text: 'c19.links/schedule_vax',
+						},
 					},
-					scheduling_phone: {
-						url: `tel:${locationData.schedulingPhone}`,
-						text: locationData.schedulingPhone,
+					...(locationData?.schedulingPhone) && {
+						scheduling_phone: {
+							url: `tel:${locationData.schedulingPhone}`,
+							text: locationData.schedulingPhone,
+						},
 					},
 				},
 			},

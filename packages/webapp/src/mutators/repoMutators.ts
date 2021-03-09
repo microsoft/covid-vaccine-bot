@@ -94,13 +94,15 @@ export const updateLocationList = mutatorAction(
 
 				newLocObj.strings.path = `${newLocObj.info.content.id}/${newLocObj.info.content.id}.csv`
 
-				const schedulingPhoneKey: string = `c19.link/scheduling.phone.${newLocObj.info.content.id}`.toLowerCase()
-				const stringsContentObj: any = {
-					[schedulingPhoneKey]: {
+				const stringsContentObj: any = {}
+				if (locationData.schedulingPhone !== '') {
+					const schedulingPhoneKey: string = `c19.link/scheduling.phone.${newLocObj.info.content.id}`.toLowerCase()
+
+					stringsContentObj[schedulingPhoneKey] = {
 						[store.currentLanguage]: locationData.schedulingPhone,
-					},
+					}
+					newLocObj.vaccination.content.links.scheduling_phone.text = schedulingPhoneKey
 				}
-				newLocObj.vaccination.content.links.scheduling_phone.text = schedulingPhoneKey
 
 				if (locationData.schedulingPhoneDesc !== '') {
 					const schedulingPhoneDescKey = `c19.link/scheduling.phone.description.${newLocObj.info.content.id}`.toLowerCase()
@@ -121,12 +123,18 @@ export const updateLocationList = mutatorAction(
 				newLocObj.info.path = `${selectedState.key}/regions/${newLocObj.info.path}`
 				newLocObj.vaccination.path = `${selectedState.key}/regions/${newLocObj.vaccination.path}`
 
-				const schedulingPhoneKey: string = `c19.link/scheduling.phone.${newLocObj.info.content.id}`.toLowerCase()
-
-				location.strings.content[schedulingPhoneKey] = {
-					[store.currentLanguage]: locationData.schedulingPhone,
+				if (locationData.info !== '') {
+					newLocObj.vaccination.content.links.info.text = `c19.link/info.${newLocObj.info.content.id}`.toLowerCase()
 				}
-				newLocObj.vaccination.content.links.scheduling_phone.text = schedulingPhoneKey
+
+				if (locationData.schedulingPhone !== '') {
+					const schedulingPhoneKey: string = `c19.link/scheduling.phone.${newLocObj.info.content.id}`.toLowerCase()
+
+					location.strings.content[schedulingPhoneKey] = {
+						[store.currentLanguage]: locationData.schedulingPhone,
+					}
+					newLocObj.vaccination.content.links.scheduling_phone.text = schedulingPhoneKey
+				}
 
 				if (locationData.schedulingPhoneDesc !== '') {
 					const schedulingPhoneDescKey = `c19.link/scheduling.phone.description.${newLocObj.info.content.id}`.toLowerCase()
