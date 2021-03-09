@@ -4,7 +4,7 @@
  */
 import { BingLocation, resolvePlan } from '..'
 import { Region } from '@covid-vax-bot/state-plan-schema'
-import statesData from '@covid-vax-bot/state-plans/dist/states.json'
+import statesData from '@covid-vax-bot/state-plans/dist/policies.json'
 
 describe('The Plan Locator', () => {
 	it('exists', () => {
