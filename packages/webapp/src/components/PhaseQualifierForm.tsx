@@ -26,7 +26,8 @@ export interface PhaseQualifierFormProps {
 	rowItems: any
 	isEditable: boolean
 	isRegion: boolean
-	onRowItemRemove?: (item: any) => void
+	groupKey: string 
+	onRowItemRemove?: (item: any, groupKey:any) => void
 	onRowItemTextChange: (item: any, prevItem: any) => void
 	onRowItemQualifierChange: (item: any, prevItem: any) => void
 }
@@ -42,6 +43,7 @@ export default observer(function PhaseQualiferForm(
 		onRowItemRemove,
 		onRowItemTextChange,
 		onRowItemQualifierChange,
+		groupKey
 	} = props
 	const phaseTagItems = useRef(getPhaseTagItems(selectedState))
 	const phaseQualifierItems = useRef(getPhaseQualifierItems(selectedState))
@@ -193,7 +195,7 @@ export default observer(function PhaseQualiferForm(
 							{
 								key: 'removeRow',
 								text: 'Remove',
-								onClick: () => onRowItemRemove?.(rowItems.item),
+								onClick: () => onRowItemRemove?.(rowItems.item, groupKey),
 							},
 							{
 								key: 'details',

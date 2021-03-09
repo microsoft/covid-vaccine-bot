@@ -143,7 +143,7 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 		setPhaseList(tempPhaseList)
 	}
 
-	const onRemoveRowItem = (item: any) => {
+	const onRemoveRowItem = (item: any, groupKey:any) => {
 		removeQualifier({
 			locationKey: selectedState.key,
 			item: item,
@@ -316,6 +316,7 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 												return (
 													<PhaseQualifierForm
 														key={groupItem.key}
+														groupKey={group.key}
 														rowItems={{ item: groupItem }}
 														selectedState={selectedState}
 														isEditable={isEditable}
