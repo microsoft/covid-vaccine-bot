@@ -124,7 +124,7 @@ export const updateLocationList = mutatorAction(
 				newLocObj.vaccination.path = `${selectedState.key}/regions/${newLocObj.vaccination.path}`
 
 				if (locationData.info !== '') {
-					newLocObj.vaccination.content.links.info.text = `cdc/${location.info.content.id}/state_link`//`c19.link/info.${newLocObj.info.content.id}`.toLowerCase()
+					newLocObj.vaccination.content.links.info.text = `cdc/${location.info.content.id}/state_link` //`c19.link/info.${newLocObj.info.content.id}`.toLowerCase()
 				}
 
 				if (locationData.schedulingPhone !== '') {
@@ -392,7 +392,6 @@ export const updateLocationData = mutatorAction(
 							regionObj.vaccination.content.links.info = {
 								url: locationData.info,
 								text: `cdc/${location.info.content.id}/state_link`,
-
 							}
 						}
 					} else {
@@ -771,14 +770,12 @@ export const removePhase = mutatorAction(
 					)
 
 					regionVaccinationObj.content.phases.splice(removeIndex, 1)
-					store.repoFileData = { ...store.repoFileData }
 				} else {
 					const removeIndex = location.vaccination.content.phases.findIndex(
 						(phase: any) => phase.id === data.phaseId
 					)
 
 					location.vaccination.content.phases.splice(removeIndex, 1)
-					store.repoFileData = { ...store.repoFileData }
 				}
 			}
 		}
