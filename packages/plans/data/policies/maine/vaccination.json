@@ -1,11 +1,5 @@
 {
 	"links": {
-		"eligibility": {
-			"url": "https://www.maine.gov/covid19/vaccines/public-faq"
-		},
-		"eligibility_plan": {
-			"url": ""
-		},
 		"info": {
 			"url": "https://www.maine.gov/covid19/vaccines",
 			"text": "cdc/maine/state_link"
@@ -14,18 +8,6 @@
 			"url": "https://www.maine.gov/covid19/vaccines/vaccination-sites",
 			"text": "c19.links/vax_providers"
 		},
-		"workflow": {
-			"url": "",
-			"text": "c19.links/vax_quiz"
-		},
-		"scheduling": {
-			"url": "",
-			"text": "c19.links/schedule_vax"
-		},
-		"scheduling_phone": {
-			"url": "tel:",
-			"text": "c19.link/scheduling.phone.me"
-		}
 	},
 	"activePhase": "1b",
 	"phases": [
