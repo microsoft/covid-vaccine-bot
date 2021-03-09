@@ -147,10 +147,10 @@ export default observer(function AddQualifierForm(props: AddQualifierFormProp) {
 								onChange={handleTagChange}
 								disabled={!formData.isNew}
 							/>
-							<PrimaryButton
+							{formData.isNew && <PrimaryButton
 								text="New tag"
 								onClick={() => setIsAddingTag(true)}
-							/>
+							/>}
 						</>
 					) : (
 						<>

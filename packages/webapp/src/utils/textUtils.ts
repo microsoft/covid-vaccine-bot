@@ -13,6 +13,10 @@ export const toProperCase = (text: string): string => {
 	if (res.startsWith('us ')) {
 		return res.replace('us ', 'US ')
 	}
+
+	if (res.startsWith('st. ')) {
+		return res.replace('st. ', 'St. ')
+	}
 	return res
 }
 

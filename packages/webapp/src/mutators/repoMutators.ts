@@ -89,18 +89,20 @@ export const updateLocationList = mutatorAction(
 					...store.globalFileData.cdcStateNames.content[
 						`cdc/${newLocObj.info.content.id}/state_name`
 					],
-					[store.currentLanguage]: locationData.details
+					[store.currentLanguage]: locationData.details,
 				}
 
 				newLocObj.strings.path = `${newLocObj.info.content.id}/${newLocObj.info.content.id}.csv`
 
-				const schedulingPhoneKey: string = `c19.link/scheduling.phone.${newLocObj.info.content.id}`.toLowerCase()
-				const stringsContentObj: any = {
-					[schedulingPhoneKey]: {
+				const stringsContentObj: any = {}
+				if (locationData.schedulingPhone !== '') {
+					const schedulingPhoneKey: string = `c19.link/scheduling.phone.${newLocObj.info.content.id}`.toLowerCase()
+
+					stringsContentObj[schedulingPhoneKey] = {
 						[store.currentLanguage]: locationData.schedulingPhone,
-					},
+					}
+					newLocObj.vaccination.content.links.scheduling_phone.text = schedulingPhoneKey
 				}
-				newLocObj.vaccination.content.links.scheduling_phone.text = schedulingPhoneKey
 
 				if (locationData.schedulingPhoneDesc !== '') {
 					const schedulingPhoneDescKey = `c19.link/scheduling.phone.description.${newLocObj.info.content.id}`.toLowerCase()
@@ -121,12 +123,18 @@ export const updateLocationList = mutatorAction(
 				newLocObj.info.path = `${selectedState.key}/regions/${newLocObj.info.path}`
 				newLocObj.vaccination.path = `${selectedState.key}/regions/${newLocObj.vaccination.path}`
 
-				const schedulingPhoneKey: string = `c19.link/scheduling.phone.${newLocObj.info.content.id}`.toLowerCase()
-
-				location.strings.content[schedulingPhoneKey] = {
-					[store.currentLanguage]: locationData.schedulingPhone,
+				if (locationData.info !== '') {
+					newLocObj.vaccination.content.links.info.text = `cdc/${location.info.content.id}/state_link`//`c19.link/info.${newLocObj.info.content.id}`.toLowerCase()
 				}
-				newLocObj.vaccination.content.links.scheduling_phone.text = schedulingPhoneKey
+
+				if (locationData.schedulingPhone !== '') {
+					const schedulingPhoneKey: string = `c19.link/scheduling.phone.${newLocObj.info.content.id}`.toLowerCase()
+
+					location.strings.content[schedulingPhoneKey] = {
+						[store.currentLanguage]: locationData.schedulingPhone,
+					}
+					newLocObj.vaccination.content.links.scheduling_phone.text = schedulingPhoneKey
+				}
 
 				if (locationData.schedulingPhoneDesc !== '') {
 					const schedulingPhoneDescKey = `c19.link/scheduling.phone.description.${newLocObj.info.content.id}`.toLowerCase()
@@ -172,44 +180,148 @@ export const updateLocationData = mutatorAction(
 					...store.globalFileData.cdcStateNames.content[
 						`cdc/${prevItem.key}/state_name`
 					],
-					[store.currentLanguage]: locationData.details
+					[store.currentLanguage]: locationData.details,
 				}
 
 				location.info.content.name = locationData.details
 				const schedulingPhoneKey = `c19.link/scheduling.phone.${prevItem.value.info.content.metadata.code_alpha}`.toLowerCase()
-				location.strings.content[schedulingPhoneKey] = {
-					[store.currentLanguage]: locationData.schedulingPhone,
+
+				if (locationData?.eligibility !== '') {
+					if (location.vaccination.content.links.eligibility) {
+						if (
+							location.vaccination.content.links.eligibility.url.toLowerCase() !==
+							locationData.eligibility.toLowerCase()
+						) {
+							location.vaccination.content.links.eligibility = {
+								url: locationData.eligibility,
+							}
+						}
+					} else {
+						location.vaccination.content.links.eligibility = {
+							url: locationData.eligibility,
+						}
+					}
 				}
 
-				location.vaccination.content.links = {
-					eligibility: {
-						url: locationData.eligibility,
-					},
-					eligibility_plan: {
-						url: locationData.eligibilityPlan,
-					},
-					info: {
-						url: locationData.info,
-						text: `cdc/${prevItem.key}/state_link`,
-					},
-					providers: {
-						url: locationData.providers,
-						text: 'c19.links/vax_providers',
-					},
-					workflow: {
-						url: locationData.workflow,
-						text: 'c19.links/vax_quiz',
-					},
-					scheduling: {
-						url: locationData.scheduling,
-						text: 'c19.links/schedule_vax',
-					},
-					scheduling_phone: {
-						url: `tel:${locationData.schedulingPhone}`,
-						text: schedulingPhoneKey,
-					},
+				if (locationData?.eligibilityPlan !== '') {
+					if (location.vaccination.content.links.eligibility_plan) {
+						if (
+							location.vaccination.content.links.eligibility_plan.url.toLowerCase() !==
+							locationData.eligibilityPlan.toLowerCase()
+						) {
+							location.vaccination.content.links.eligibility_plan = {
+								url: locationData.eligibilityPlan,
+							}
+						}
+					} else {
+						location.vaccination.content.links.eligibility_plan = {
+							url: locationData.eligibilityPlan,
+						}
+					}
 				}
-				if (locationData.schedulingPhoneDesc !== '') {
+
+				if (locationData?.info !== '') {
+					if (location.vaccination.content.links.info) {
+						if (
+							location.vaccination.content.links.info.url.toLowerCase() !==
+							locationData.info.toLowerCase()
+						) {
+							location.vaccination.content.links.info = {
+								url: locationData.info,
+								text: `cdc/${prevItem.key}/state_link`,
+							}
+						}
+					} else {
+						location.vaccination.content.links.info = {
+							url: locationData.info,
+							text: `cdc/${prevItem.key}/state_link`,
+						}
+					}
+				}
+
+				if (locationData?.providers !== '') {
+					if (location.vaccination.content.links.providers) {
+						if (
+							location.vaccination.content.links.providers.url.toLowerCase() !==
+							locationData.providers.toLowerCase()
+						) {
+							location.vaccination.content.links.providers = {
+								url: locationData.providers,
+								text: 'c19.links/vax_providers',
+							}
+						}
+					} else {
+						location.vaccination.content.links.providers = {
+							url: locationData.providers,
+							text: 'c19.links/vax_providers',
+						}
+					}
+				}
+
+				if (locationData?.workflow !== '') {
+					if (location.vaccination.content.links.workflow) {
+						if (
+							location.vaccination.content.links.workflow.url.toLowerCase() !==
+							locationData.workflow.toLowerCase()
+						) {
+							location.vaccination.content.links.workflow = {
+								url: locationData.workflow,
+								text: 'c19.links/vax_quiz',
+							}
+						}
+					} else {
+						location.vaccination.content.links.workflow = {
+							url: locationData.workflow,
+							text: 'c19.links/vax_quiz',
+						}
+					}
+				}
+
+				if (locationData?.scheduling !== '') {
+					if (location.vaccination.content.links.scheduling) {
+						if (
+							location.vaccination.content.links.scheduling.url.toLowerCase() !==
+							locationData.scheduling.toLowerCase()
+						) {
+							location.vaccination.content.links.scheduling = {
+								url: locationData.scheduling,
+								text: 'c19.links/schedule_vax',
+							}
+						}
+					} else {
+						location.vaccination.content.links.scheduling = {
+							url: locationData.scheduling,
+							text: 'c19.links/schedule_vax',
+						}
+					}
+				}
+
+				if (locationData?.schedulingPhone !== '') {
+					location.strings.content[schedulingPhoneKey] = {
+						[store.currentLanguage]: locationData.schedulingPhone,
+					}
+					if (location.vaccination.content.links.scheduling_phone) {
+						if (
+							location.vaccination.content.links.scheduling_phone.url.toLowerCase() !==
+							`tel:${locationData.schedulingPhone}`.toLowerCase()
+						) {
+							location.vaccination.content.links.scheduling_phone = {
+								url: `tel:${locationData.schedulingPhone}`,
+								text: schedulingPhoneKey,
+							}
+						}
+					} else {
+						location.vaccination.content.links.scheduling_phone = {
+							url: `tel:${locationData.schedulingPhone}`,
+							text: schedulingPhoneKey,
+						}
+					}
+				}
+
+				if (
+					location.vaccination.content.links.scheduling_phone &&
+					locationData.schedulingPhoneDesc !== ''
+				) {
 					let schedulingPhoneDescKey = `c19.link/scheduling.phone.description.${prevItem.value.info.content.metadata.code_alpha}`.toLowerCase()
 
 					if (
@@ -231,40 +343,149 @@ export const updateLocationData = mutatorAction(
 				regionObj.info.content.name = locationData.details
 
 				const schedulingPhoneKey = `c19.link/scheduling.phone.${regionObj.info.content.id}`.toLowerCase()
-				location.strings.content[schedulingPhoneKey] = {
-					[store.currentLanguage]: locationData.schedulingPhone,
+				if (locationData?.schedulingPhone !== '') {
+					location.strings.content[schedulingPhoneKey] = {
+						[store.currentLanguage]: locationData.schedulingPhone,
+					}
 				}
 
-				regionObj.vaccination.content.links = {
-					eligibility: {
-						url: locationData.eligibility,
-					},
-					eligibility_plan: {
-						url: locationData.eligibilityPlan,
-					},
-					info: {
-						url: locationData.info,
-						text: `cdc/${selectedState.key}/state_link`,
-					},
-					providers: {
-						url: locationData.providers,
-						text: 'c19.links/vax_providers',
-					},
-					workflow: {
-						url: locationData.workflow,
-						text: 'c19.links/vax_quiz',
-					},
-					scheduling: {
-						url: locationData.scheduling,
-						text: 'c19.links/schedule_vax',
-					},
-					scheduling_phone: {
-						url: `tel:${locationData.schedulingPhone}`,
-						text: schedulingPhoneKey,
-					},
+				if (locationData?.eligibility !== '') {
+					if (regionObj.vaccination.content.links.eligibility) {
+						if (
+							regionObj.vaccination.content.links.eligibility.url.toLowerCase() !==
+							locationData.eligibility.toLowerCase()
+						) {
+							regionObj.vaccination.content.links.eligibility = {
+								url: locationData.eligibility,
+							}
+						}
+					} else {
+						regionObj.vaccination.content.links.eligibility = {
+							url: locationData.eligibility,
+						}
+					}
 				}
 
-				if (locationData.schedulingPhoneDesc !== '') {
+				if (locationData?.eligibilityPlan !== '') {
+					if (regionObj.vaccination.content.links.eligibility_plan) {
+						if (
+							regionObj.vaccination.content.links.eligibility_plan.url.toLowerCase() !==
+							locationData.eligibilityPlan.toLowerCase()
+						) {
+							regionObj.vaccination.content.links.eligibility_plan = {
+								url: locationData.eligibilityPlan,
+							}
+						}
+					} else {
+						regionObj.vaccination.content.links.eligibility_plan = {
+							url: locationData.eligibilityPlan,
+						}
+					}
+				}
+
+				if (locationData?.info !== '') {
+					if (regionObj.vaccination.content.links.info) {
+						if (
+							regionObj.vaccination.content.links.info.url.toLowerCase() !==
+							locationData.info.toLowerCase()
+						) {
+							regionObj.vaccination.content.links.info = {
+								url: locationData.info,
+								text: `cdc/${location.info.content.id}/state_link`,
+
+							}
+						}
+					} else {
+						regionObj.vaccination.content.links.info = {
+							url: locationData.info,
+							text: `cdc/${location.info.content.id}/state_link`,
+						}
+					}
+				}
+
+				if (locationData?.providers !== '') {
+					if (regionObj.vaccination.content.links.providers) {
+						if (
+							regionObj.vaccination.content.links.providers.url.toLowerCase() !==
+							locationData.providers.toLowerCase()
+						) {
+							regionObj.vaccination.content.links.providers = {
+								url: locationData.providers,
+								text: 'c19.links/vax_providers',
+							}
+						}
+					} else {
+						regionObj.vaccination.content.links.providers = {
+							url: locationData.providers,
+							text: 'c19.links/vax_providers',
+						}
+					}
+				}
+
+				if (locationData?.workflow !== '') {
+					if (regionObj.vaccination.content.links.workflow) {
+						if (
+							regionObj.vaccination.content.links.workflow.url.toLowerCase() !==
+							locationData.workflow.toLowerCase()
+						) {
+							regionObj.vaccination.content.links.workflow = {
+								url: locationData.workflow,
+								text: 'c19.links/vax_quiz',
+							}
+						}
+					} else {
+						regionObj.vaccination.content.links.workflow = {
+							url: locationData.workflow,
+							text: 'c19.links/vax_quiz',
+						}
+					}
+				}
+
+				if (locationData?.scheduling !== '') {
+					if (regionObj.vaccination.content.links.scheduling) {
+						if (
+							regionObj.vaccination.content.links.scheduling.url.toLowerCase() !==
+							locationData.scheduling.toLowerCase()
+						) {
+							regionObj.vaccination.content.links.scheduling = {
+								url: locationData.scheduling,
+								text: 'c19.links/schedule_vax',
+							}
+						}
+					} else {
+						regionObj.vaccination.content.links.scheduling = {
+							url: locationData.scheduling,
+							text: 'c19.links/schedule_vax',
+						}
+					}
+				}
+
+				if (locationData?.schedulingPhone !== '') {
+					location.strings.content[schedulingPhoneKey] = {
+						[store.currentLanguage]: locationData.schedulingPhone,
+					}
+					if (regionObj.vaccination.content.links.scheduling_phone) {
+						if (
+							regionObj.vaccination.content.links.scheduling_phone.url.toLowerCase() !==
+							`tel:${locationData.schedulingPhone}`.toLowerCase()
+						) {
+							regionObj.vaccination.content.links.scheduling_phone = {
+								url: `tel:${locationData.schedulingPhone}`,
+								text: schedulingPhoneKey,
+							}
+						}
+					} else {
+						regionObj.vaccination.content.links.scheduling_phone = {
+							url: `tel:${locationData.schedulingPhone}`,
+							text: schedulingPhoneKey,
+						}
+					}
+				}
+
+				if (
+					regionObj.vaccination.content.links.scheduling_phone &&
+					locationData.schedulingPhoneDesc !== ''
+				) {
 					let schedulingPhoneDescKey = `c19.link/scheduling.phone.description.${regionObj.info.content.id}`.toLowerCase()
 
 					if (
@@ -294,45 +515,44 @@ export const modifyStateStrings = mutatorAction(
 			if (store?.repoFileData) {
 				store.pendingChanges = true
 				const location = store.repoFileData[data.locationKey]
-					const newStringsObj: any = {}
-					newStringsObj[store.currentLanguage] = data.item.moreInfoContent
-					location.strings.content[data.infoKey] = newStringsObj
-					if (!data.regionInfo) {
-						const affectedPhase = location.vaccination.content.phases.find(
-							(phase: any) => phase.id === data.item.groupId
-						)
-						const affectedQualifier = affectedPhase.qualifications.find(
-							(qualification: any) =>
-								qualification.question.toLowerCase() ===
-								data.item.qualifierId.toLowerCase()
-						)
-						if (affectedQualifier) {
-							affectedQualifier.moreInfoText = data.infoKey
-						} else {
-							affectedPhase.qualifications.push({
-								question: data.item.qualifierId,
-								moreInfoText: data.infoKey,
-							})
-						}
-					} else {
-						const regionVaccinationObj =
-							location.regions[data.regionInfo.key].vaccination
-
-						if (!regionVaccinationObj.content?.phases) {
-							copyPhaseData(regionVaccinationObj, location.vaccination)
-						}
-						const affectedPhase = regionVaccinationObj.content.phases.find(
-							(phase: any) => phase.id === data.item.groupId
-						)
-						const affectedQualifier = affectedPhase.qualifications.find(
-							(qualification: any) =>
-								qualification.question.toLowerCase() ===
-								data.item.qualifierId.toLowerCase()
-						)
-
+				const newStringsObj: any = {}
+				newStringsObj[store.currentLanguage] = data.item.moreInfoContent
+				location.strings.content[data.infoKey] = newStringsObj
+				if (!data.regionInfo) {
+					const affectedPhase = location.vaccination.content.phases.find(
+						(phase: any) => phase.id === data.item.groupId
+					)
+					const affectedQualifier = affectedPhase.qualifications.find(
+						(qualification: any) =>
+							qualification.question.toLowerCase() ===
+							data.item.qualifierId.toLowerCase()
+					)
+					if (affectedQualifier) {
 						affectedQualifier.moreInfoText = data.infoKey
+					} else {
+						affectedPhase.qualifications.push({
+							question: data.item.qualifierId,
+							moreInfoText: data.infoKey,
+						})
 					}
-				
+				} else {
+					const regionVaccinationObj =
+						location.regions[data.regionInfo.key].vaccination
+
+					if (!regionVaccinationObj.content?.phases) {
+						copyPhaseData(regionVaccinationObj, location.vaccination)
+					}
+					const affectedPhase = regionVaccinationObj.content.phases.find(
+						(phase: any) => phase.id === data.item.groupId
+					)
+					const affectedQualifier = affectedPhase.qualifications.find(
+						(qualification: any) =>
+							qualification.question.toLowerCase() ===
+							data.item.qualifierId.toLowerCase()
+					)
+
+					affectedQualifier.moreInfoText = data.infoKey
+				}
 			}
 		}
 	}
