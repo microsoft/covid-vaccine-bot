@@ -1,2 +1,39 @@
 String ID,en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th
-c19.eligibility.question/essential_worker.1b.LA,"Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, healthcare workers, security personnel, USPS, manufacturing, grocery stores, public transit, education, or child care.",,,,,,,,,,,,,,
+c19.eligibility.question/essential_worker.1b.la,"Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, healthcare workers, security personnel, USPS, manufacturing, grocery stores, public transit, education, or child care.",,,,,,,,,,,,,,
+c19.link/scheduling.phone.la,,,,,,,,,,,,,,,
+c19.eligibility.moreinfo/essential_worker.la.1c,"Eligible workers include:
+Ambulatory and outpatient providers and staff
+Dialysis providers
+Behavioral health providers and staff
+Urgent care clinic providers and staff
+Community care providers and staff
+Dental providers and staff
+Non-emergency Medical Transportation (NEMT) providers and staff
+Professional home care providers (including hospice workers) and home care recipients (including older and younger people with disabilities over the age of 16 who receive community or home-based care, as well as clients of home health agencies)
+American Sign Language (ASL) and foreign language interpreters and Support Service Providers (SSPs) working in community and clinic-based settings, and clients who are both deaf and blind
+Health-related support personnel (lab staff, mortuary staff who have contact with corpses, pharmacy staff)
+Schools of allied health students, residents and staff
+Law enforcement and other first responders
+Louisiana Unified Command Group
+State Legislators
+State and local essential COVID emergency response personnel
+Some elections staff ahead of March and April elections
+Teachers and any other support staff working on site in K-12 or daycare
+",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/health.are_you_age.la.1c,"People 55-64 with at least one of the conditions listed by the CDC as placing them at an “increased risk of severe illness from the virus that causes COVID-19."" 
+Cancer
+Chronic kidney disease
+COPD (chronic obstructive pulmonary disease)
+Down Syndrome
+Heart conditions, such as heart failure, coronary artery disease or cardiomyopathies
+Immunocompromised state (weakened immune system) from solid organ transplant
+Obesity (body mass index [BMI] of 30kg/m2 or higher but < 40kg/m2 )
+Severe obesity (BMIC >40kg/m2 )
+Severe neurologic conditions, such as dementia
+Sickle Cell Disease
+Smoking
+Type 2 diabetes mellitus
+
+Persons with the following qualifying underlying medical conditions are advised to complete the Louisiana COVID-19 Vaccine Attestation Form before their appointment to receive the vaccine (see link)
+
+",,,,,,,,,,,,,,
