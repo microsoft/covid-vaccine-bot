@@ -9,22 +9,6 @@
 		"info": {
 			"url": "https://www.kansasvaccine.gov/",
 			"text": "cdc/kansas/state_link"
-		},
-		"providers": {
-			"url": "",
-			"text": "c19.links/vax_providers"
-		},
-		"workflow": {
-			"url": "",
-			"text": "c19.links/vax_quiz"
-		},
-		"scheduling": {
-			"url": "",
-			"text": "c19.links/schedule_vax"
-		},
-		"scheduling_phone": {
-			"url": "tel:",
-			"text": "c19.link/scheduling.phone.ks"
 		}
 	},
 	"activePhase": "1b",
