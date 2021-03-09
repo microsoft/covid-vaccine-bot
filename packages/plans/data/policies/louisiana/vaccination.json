@@ -1,8 +1,5 @@
 {
 	"links": {
-		"eligibility": {
-			"url": ""
-		},
 		"eligibility_plan": {
 			"url": "https://ldh.la.gov/index.cfm/page/4137"
 		},
@@ -13,18 +10,6 @@
 		"providers": {
 			"url": "https://ldh.la.gov/covidvaccine-locations/",
 			"text": "c19.links/vax_providers"
-		},
-		"workflow": {
-			"url": "",
-			"text": "c19.links/vax_quiz"
-		},
-		"scheduling": {
-			"url": "",
-			"text": "c19.links/schedule_vax"
-		},
-		"scheduling_phone": {
-			"url": "tel:",
-			"text": "c19.link/scheduling.phone.la"
 		}
 	},
 	"activePhase": "1c",
