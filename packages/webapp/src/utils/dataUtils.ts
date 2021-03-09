@@ -19,8 +19,10 @@ export const convertCSVDataToObj = (csvData: any) => {
 }
 
 export const createLocationDataObj = (locationData: any): any => {
-	console.log(locationData)
-	const locationName = locationData.details.replace(/[^a-z0-9\s]/gi,'').replace(/\s/g, '_').toLowerCase()
+	const locationName = locationData.details
+		.replace(/[^a-z0-9\s]/gi, '')
+		.replace(/\s/g, '_')
+		.toLowerCase()
 	return {
 		info: {
 			content: {
@@ -43,46 +45,46 @@ export const createLocationDataObj = (locationData: any): any => {
 			content: {
 				activePhase: '',
 				links: {
-					...(locationData?.eligibility) && {
-							eligibility: {
+					...(locationData?.eligibility !== '' && {
+						eligibility: {
 							url: locationData.eligibility,
 						},
-					},
-					...(locationData?.eligibilityPlan) && {
+					}),
+					...(locationData?.eligibilityPlan !== '' && {
 						eligibility_plan: {
 							url: locationData.eligibilityPlan,
 						},
-					},
-					...(locationData?.info) && {
+					}),
+					...(locationData?.info !== '' && {
 						info: {
 							url: locationData.info,
 							text: `cdc/${locationName}/state_link`,
 						},
-					},
-					...(locationData?.providers) && {
+					}),
+					...(locationData?.providers !== '' && {
 						providers: {
 							url: locationData.providers,
 							text: 'c19.links/vax_providers',
 						},
-					},
-					...(locationData?.workflow) && {
+					}),
+					...(locationData?.workflow !== '' && {
 						workflow: {
 							url: locationData.workflow,
 							text: 'c19.links/vax_quiz',
 						},
-					},
-					...(locationData?.scheduling) && {
+					}),
+					...(locationData?.scheduling !== '' && {
 						scheduling: {
 							url: locationData.scheduling,
 							text: 'c19.links/schedule_vax',
 						},
-					},
-					...(locationData?.schedulingPhone) && {
+					}),
+					...(locationData?.schedulingPhone !== '' && {
 						scheduling_phone: {
 							url: `tel:${locationData.schedulingPhone}`,
 							text: locationData.schedulingPhone,
 						},
-					},
+					}),
 				},
 			},
 			name: 'vaccination.json',
