@@ -17,8 +17,8 @@
 import { useBoolean } from '@uifabric/react-hooks'
 import { observer } from 'mobx-react-lite'
 import React, { useState, useEffect, useCallback } from 'react'
-import { getAppStore } from '../store/store'
 import { initializeGitData } from '../actions/repoActions'
+import { getAppStore } from '../store/store'
 
 
 
