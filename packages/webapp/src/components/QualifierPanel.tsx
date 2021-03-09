@@ -108,7 +108,7 @@ export default observer(function QualifierPanel() {
 	const addQualifierSubmit = useCallback(
 		(newQualifier) => {
 			updateGlobalQualifiers(newQualifier)
-			dismissAddQualifierModal()
+			setTimeout(() => dismissAddQualifierModal(), 100)
 		},
 		[dismissAddQualifierModal]
 	)

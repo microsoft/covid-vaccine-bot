@@ -10,7 +10,7 @@ import {
 	FontIcon,
 } from '@fluentui/react'
 import { observer } from 'mobx-react-lite'
-import { useCallback, useState, useRef } from 'react'
+import { useCallback, useState, useRef, useEffect } from 'react'
 import {
 	getPhaseTagItems,
 	getPhaseQualifierItems,
@@ -18,6 +18,7 @@ import {
 	getPhaseQualifierItemsByKey,
 	getPhaseMoreInfoUrl,
 } from '../selectors/phaseSelectors'
+import { getAppStore } from '../store/store'
 
 import './PhaseQualifierForm.scss'
 export interface PhaseQualifierFormProps {
@@ -48,6 +49,8 @@ export default observer(function PhaseQualiferForm(
 		getPhaseQualifierItemsByKey(selectedState, rowItems.item.tagKey)
 	)
 
+	const { globalFileData } = getAppStore()
+
 	let overrideIconFlag = false
 	let moreInfoKey = rowItems.item.moreInfoKey
 	if (isRegion) {
@@ -77,6 +80,13 @@ export default observer(function PhaseQualiferForm(
 
 	const changedItem = useRef<any>(rowItems.item)
 	changedItem.current.moreInfoContent = moreInfoText
+
+	useEffect(() => {
+		if (globalFileData) {
+			phaseQualifierItems.current = getPhaseQualifierItems(selectedState)
+			setFilteredQualifierItems(getPhaseQualifierItemsByKey(selectedState, rowItems.item.tagKey))
+		}
+	},[globalFileData, phaseQualifierItems, selectedState, rowItems])
 
 	const onTagChange = useCallback(
 		(_event, option) => {
