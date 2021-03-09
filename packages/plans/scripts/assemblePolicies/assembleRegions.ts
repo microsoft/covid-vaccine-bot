@@ -4,9 +4,9 @@
  */
 /* eslint-disable @typescript-eslint/no-var-requires */
 import * as fs from 'fs'
-import { assembleState, POLICIES_DIR } from './assembleState'
+import { assembleRegion, POLICIES_DIR } from './assembleRegion'
 
-export function assembleStates(): void {
-	const statePaths = fs.readdirSync(POLICIES_DIR)
-	statePaths.forEach(assembleState)
+export function assembleRegions(): void {
+	const regionsPaths = fs.readdirSync(POLICIES_DIR)
+	regionsPaths.forEach(assembleRegion)
 }

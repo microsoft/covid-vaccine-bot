@@ -11,22 +11,22 @@ import { Region } from '@covid-vax-bot/state-plan-schema'
 
 export const POLICIES_DIR = path.join(DATA_DIR, 'policies')
 
-const stateOutputPath = (state: string): string =>
-	path.join(DIST_DIR, 'states', `${state}.json`)
+const regionOutputPath = (state: string): string =>
+	path.join(DIST_DIR, 'regions', `${state}.json`)
 const infoJsonPath = (state: string): string =>
 	path.join(POLICIES_DIR, state, 'info.json')
 const planJsonPath = (state: string): string =>
 	path.join(POLICIES_DIR, state, 'vaccination.json')
 
 /**
- * Assembles a state's information into a combined JSON file.
+ * Assembles a region's information into a combined JSON file.
  * TODO: handle nested regions in regions/ folder
- * @param state The state to assemble
+ * @param region The state to assemble
  */
-export function assembleState(state: string): void {
-	console.log('assembling ' + state)
-	const content = getPolicyNodeData(state)
-	fs.writeFileSync(stateOutputPath(state), JSON.stringify(content, null, 4), {
+export function assembleRegion(region: string): void {
+	console.log('assembling ' + region)
+	const content = getPolicyNodeData(region)
+	fs.writeFileSync(regionOutputPath(region), JSON.stringify(content, null, 4), {
 		encoding: 'utf8',
 	})
 }
