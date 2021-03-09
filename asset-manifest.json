@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/covid-vaccine-bot/static/css/main.1ff070f2.chunk.css",
-    "main.js": "/covid-vaccine-bot/static/js/main.c080c022.chunk.js",
-    "main.js.map": "/covid-vaccine-bot/static/js/main.c080c022.chunk.js.map",
+    "main.js": "/covid-vaccine-bot/static/js/main.af5e231f.chunk.js",
+    "main.js.map": "/covid-vaccine-bot/static/js/main.af5e231f.chunk.js.map",
     "runtime-main.js": "/covid-vaccine-bot/static/js/runtime-main.82e5142f.js",
     "runtime-main.js.map": "/covid-vaccine-bot/static/js/runtime-main.82e5142f.js.map",
     "static/js/2.4c3b7842.chunk.js": "/covid-vaccine-bot/static/js/2.4c3b7842.chunk.js",
@@ -10,12 +10,12 @@
     "index.html": "/covid-vaccine-bot/index.html",
     "static/css/main.1ff070f2.chunk.css.map": "/covid-vaccine-bot/static/css/main.1ff070f2.chunk.css.map",
     "static/js/2.4c3b7842.chunk.js.LICENSE.txt": "/covid-vaccine-bot/static/js/2.4c3b7842.chunk.js.LICENSE.txt",
-    "static/js/main.c080c022.chunk.js.LICENSE.txt": "/covid-vaccine-bot/static/js/main.c080c022.chunk.js.LICENSE.txt"
+    "static/js/main.af5e231f.chunk.js.LICENSE.txt": "/covid-vaccine-bot/static/js/main.af5e231f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.82e5142f.js",
     "static/js/2.4c3b7842.chunk.js",
     "static/css/main.1ff070f2.chunk.css",
-    "static/js/main.c080c022.chunk.js"
+    "static/js/main.af5e231f.chunk.js"
   ]
 }
