@@ -130,12 +130,12 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 
 		const tempPhaseList = phaseList.map((group) => {
 			if (group.key === phaseId) {
-				const checkNewQualIndex = group.items.findIndex(
-					(i: any) => i.key === newItem.key
-				)
-				if (checkNewQualIndex === -1) {
+				// const checkNewQualIndex = group.items.findIndex(
+				// 	(i: any) => i.key === newItem.key
+				// )
+				// if (checkNewQualIndex === -1) {
 					group.items.push(newItem)
-				}
+				//}
 			}
 
 			return group
@@ -330,7 +330,7 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 										? group.items.map((groupItem: any, idx: number) => {
 												return (
 													<PhaseQualifierForm
-														key={groupItem.key}
+														key={groupItem.key+'_'+idx}
 														groupKey={group.key}
 														rowItems={{ item: groupItem }}
 														selectedState={selectedState}
