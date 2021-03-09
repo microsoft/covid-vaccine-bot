@@ -1,9 +1,0 @@
-{
-	"id": "district_of_columbia",
-	"name": "District of Columbia",
-	"type": "territory",
-	"metadata": {
-		"code_alpha": "DC",
-		"code_numeric": 11
-	}
-}

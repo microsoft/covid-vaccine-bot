@@ -1,9 +1,0 @@
-{
-	"id": "puerto_rico",
-	"name": "Puerto Rico",
-	"type": "territory",
-	"metadata": {
-		"code_alpha": "PR",
-		"code_numeric": 72
-	}
-}

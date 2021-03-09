@@ -1,0 +1,10 @@
+{
+	"id": "navajo",
+	"name": "Navajo",
+	"code_alpha": "AZ",
+	"code_numeric": 4,
+	"type": "county",
+	"metadata": {
+		"id_bing": "Navajo"
+	}
+}

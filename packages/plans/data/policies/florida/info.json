@@ -1,9 +1,0 @@
-{
-	"id": "florida",
-	"name": "Florida",
-	"type": "state",
-	"metadata": {
-		"code_alpha": "FL",
-		"code_numeric": 12
-	}
-}

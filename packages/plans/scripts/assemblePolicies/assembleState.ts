@@ -19,11 +19,11 @@ const planJsonPath = (state: string): string =>
 	path.join(POLICIES_DIR, state, 'vaccination.json')
 
 /**
- * Assembles a state's information into a combined JSON file.
+ * Assembles a region's information into a combined JSON file.
  * TODO: handle nested regions in regions/ folder
  * @param state The state to assemble
  */
-export function assembleState(state: string): void {
+export function assembleRegion(state: string): void {
 	console.log('assembling ' + state)
 	const content = getPolicyNodeData(state)
 	fs.writeFileSync(stateOutputPath(state), JSON.stringify(content, null, 4), {
