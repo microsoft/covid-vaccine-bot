@@ -2,6 +2,8 @@
  * Copyright (c) Microsoft. All rights reserved.
  * Licensed under the MIT license. See LICENSE file in the project.
  */
+import * as fs from 'fs'
+import * as path from 'path'
 import axios from 'axios'
 import { token, urlPrefix } from './configuration'
 
@@ -12,35 +14,43 @@ export class Localizations {
 	 * Red available
 	 */
 	public async read(): Promise<Record<string, string>[]> {
-		try {
-			const localization = await axios.get(LOCALIZATION_URL, {
-				headers: { Authorization: `Bearer ${token()}` },
-			})
-			console.table(localization.data)
-			return localization.data
-		} catch (error) {
-			console.error(error)
-			throw error
-		}
+		const localization = await axios.get(LOCALIZATION_URL, {
+			headers: { Authorization: `Bearer ${token()}` },
+		})
+		console.table(localization.data)
+		return localization.data
 	}
 
 	public async upload(records: Record<string, string>[]): Promise<void> {
-		try {
-			console.log(
-				`uploading ${records.length} localization records to ${LOCALIZATION_URL}`
-			)
-			await axios.post(LOCALIZATION_URL, {
-				headers: {
-					Authorization: `Bearer ${token()}`,
-				},
-				data: {
-					custom: records,
-				},
-			})
-			console.log('uploading localizations completed !')
-		} catch (error) {
-			console.error(error)
-			throw error
-		}
+		console.log(
+			`uploading ${records.length} localization records to ${LOCALIZATION_URL}`
+		)
+		const uploadRecords: Record<string, string>[] = []
+		records.forEach((rec) => {
+			// Add an object for each localization
+			Object.keys(rec)
+				.filter((t) => t !== 'String ID')
+				.forEach((loc) => {
+					const localization = rec[loc]
+					if (localization) {
+						uploadRecords.push({
+							'String ID': rec['String ID'],
+							[loc]: localization,
+						})
+					}
+				})
+		})
+		await axios({
+			method: 'POST',
+			url: LOCALIZATION_URL,
+			headers: {
+				Authorization: `Bearer ${token()}`,
+			},
+			data: {
+				custom: uploadRecords,
+				system: [],
+			},
+		})
+		console.log('uploading localizations completed !')
 	}
 }

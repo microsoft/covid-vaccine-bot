@@ -16,4 +16,9 @@ async function uploadFiles() {
 	await resources.upload([path.join(DIST_DIR, 'policies.json')])
 }
 
-uploadFiles().then(() => console.log('successfully uploaded resources'))
+uploadFiles()
+	.then(() => console.log('successfully uploaded resources'))
+	.catch((err) => {
+		console.log('error uploading resources', err.message)
+		process.exit(1)
+	})

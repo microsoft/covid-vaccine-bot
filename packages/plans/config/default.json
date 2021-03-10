@@ -1,6 +1,6 @@
 {
 	"healthbot": {
-		"host": null,
+		"host": "https://us.healthbot.microsoft.com",
 		"tenantName": null,
 		"apiSecret": null
 	}

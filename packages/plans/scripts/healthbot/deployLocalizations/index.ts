@@ -19,6 +19,9 @@ async function uploadLocalizationRecords() {
 	await localizations.upload(records)
 }
 
-uploadLocalizationRecords().then(() =>
-	console.log('successfully uploaded Localizations')
-)
+uploadLocalizationRecords()
+	.then(() => console.log('successfully uploaded Localizations'))
+	.catch((err) => {
+		console.log('error uploading localizations', err.message, err.toJSON())
+		process.exit(1)
+	})

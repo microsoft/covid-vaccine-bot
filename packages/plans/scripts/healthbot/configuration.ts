@@ -9,8 +9,12 @@ import moment from 'moment'
 export function token(): string {
 	const secret = config.get<string>('healthbot.apiSecret')
 	const tenantName = config.get<string>('healthbot.tenantName')
-	if (!secret || !tenantName) {
-		throw new Error('healthbot CI not configured correctly')
+
+	if (!secret) {
+		throw new Error('process.env.HEALTHBOT_API_SECRET not defined')
+	}
+	if (!tenantName) {
+		throw new Error('process.env.HEALTHBOT_TENANT not defined')
 	}
 
 	const iat = moment().subtract(1, 'minutes').unix()
@@ -21,5 +25,11 @@ export function token(): string {
 export function urlPrefix(): string {
 	const host = config.get<string>('healthbot.host')
 	const tenantName = config.get<string>('healthbot.tenantName')
+	if (!host) {
+		throw new Error('process.env.HEALTHBOT_HOST not defined')
+	}
+	if (!tenantName) {
+		throw new Error('process.env.HEALTHBOT_TENANT not defined')
+	}
 	return `${host}/api/account/${tenantName}`
 }
