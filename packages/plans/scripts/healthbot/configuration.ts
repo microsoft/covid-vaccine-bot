@@ -9,6 +9,9 @@ import moment from 'moment'
 export function token(): string {
 	const secret = config.get<string>('healthbot.apiSecret')
 	const tenantName = config.get<string>('healthbot.tenantName')
+	if (!secret || !tenantName) {
+		throw new Error('healthbot CI not configured correctly')
+	}
 
 	const iat = moment().subtract(1, 'minutes').unix()
 	const token = sign({ tenantName, iat }, secret)

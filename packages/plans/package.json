@@ -9,7 +9,9 @@
 		"assemble_sitelist": "ts-node scripts/aggregateInfoSites",
 		"test": "ts-node scripts/validatePolicies",
 		"build": "run-s assemble_localization assemble_policies assemble_sitelist",
-		"deploy": "ts-node scripts/healthbot/deployResources"
+		"deploy_resources": "ts-node scripts/healthbot/deployResources",
+		"deploy_localizations": "ts-node scripts/healthbot/deployLocalizations",
+		"deploy": "run-s deploy_localizations deploy_resources"
 	},
 	"devDependencies": {
 		"@azure/storage-blob": "^12.4.1",

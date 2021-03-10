@@ -2,46 +2,38 @@
  * Copyright (c) Microsoft. All rights reserved.
  * Licensed under the MIT license. See LICENSE file in the project.
  */
-import * as fs from 'fs'
-import * as path from 'path'
 import axios from 'axios'
-import FormData from 'form-data'
 import { token, urlPrefix } from './configuration'
 
-export class Resources {
+export class Localizations {
 	/**
 	 * Red available
 	 */
-	public async read(): Promise<void> {
+	public async read(): Promise<Record<string, string>[]> {
 		try {
-			const files = await axios.get(`${urlPrefix()}/resources`, {
+			const localization = await axios.get(`${urlPrefix()}/localization`, {
 				headers: { Authorization: `Bearer ${token()}` },
 			})
-			console.table(files.data.entries)
+			console.table(localization.data)
+			return localization.data
 		} catch (error) {
 			console.error(error)
 			throw error
 		}
 	}
 
-	public async upload(files: string[]): Promise<void> {
+	public async upload(records: Record<string, string>[]): Promise<void> {
 		try {
-			console.log('uploading files', files)
-			const form = new FormData()
-			for (const file of files) {
-				const basename = path.basename(file)
-				console.log('add file', basename)
-				form.append(basename, fs.createReadStream(file))
-			}
-			const request_config = {
+			console.log(`uploading ${records.length} localization records`)
+			await axios.post(`${urlPrefix()}/localization`, {
 				headers: {
 					Authorization: `Bearer ${token()}`,
-					...form.getHeaders(),
 				},
-			}
-			console.log('uploading files')
-			await axios.post(`${urlPrefix()}/resources`, form, request_config)
-			console.log('uploading files completed !')
+				data: {
+					custom: records,
+				},
+			})
+			console.log('uploading localizations completed !')
 		} catch (error) {
 			console.error(error)
 			throw error
@@ -57,7 +49,6 @@ export class Resources {
 			console.log(`removing ${files} completed`)
 		} catch (error) {
 			console.error(error)
-			throw error
 		}
 	}
 }
