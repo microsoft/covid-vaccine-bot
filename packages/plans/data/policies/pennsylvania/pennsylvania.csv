@@ -1,3 +1,34 @@
 String ID,en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th
-c19.eligibility.question/essential_worker.1b.PA,"Are you as an essential frontline worker? This includes first responders; corrections officers; clergy; the staff of early childhood and adult day programs; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.",,,,,,,,,,,,,,
-c19.eligibility.question/health.1b.PA,Are you receiving home and community based services?,,,,,,,,,,,,,,
+c19.eligibility.question/essential_worker.1b.pa,"Are you as an essential frontline worker? This includes first responders; corrections officers; clergy; the staff of early childhood and adult day programs; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.",,,,,,,,,,,,,,
+c19.eligibility.question/health.1b.pa,"Are you receiving home and community based services?",,,,,,,,,,,,,,
+c19.link/scheduling.phone.pa,"1-877-724-3258",,,,,,,,,,,,,,
+c19.link/scheduling.phone.description.pa,"PA Health Hotline",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/healthcare_worker.pa.1a,"- Emergency medical service personnel
+- Nurses
+- Nursing assistants
+- Physicians
+- Dentists
+- Dental hygienists
+- Chiropractors
+- Therapists
+- Phlebotomists
+- Pharmacists
+- Technicians
+- Pharmacy technicians
+- Health professions students and trainees
+- Direct support professionals
+- Clinical personnel in school settings or correctional facilities
+- Contractual HCP not directly employed by the health care facility",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/exposure_to_infectious_material.do.pa.1a,"Persons not directly involved in patient care but potentially exposed to infectious material that can transmit disease among or from health care personnel and patients",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/age.are_you_age.pa.1a,"- Cancer
+- Chronic kidney disease
+- COPD
+- Down Syndrome
+- Heart conditions, such as heart failure, coronary artery disease, or cardiomyopathies
+- Immunocompromised state (weakened immune system) from solid organ transplant or from blood or bone marrow transplant, immune deficiencies, HIV, use of corticosteroids, or use of other immune weakening medicines
+- Obesity (body mass index [BMI] of 30 kg/m2 or higher but < 40 kg/m2)
+- Severe Obesity (BMI ≥ 40 kg/m2)
+- Pregnancy
+- Sickle cell disease
+- Smoking
+- Type 2 diabetes mellitus",,,,,,,,,,,,,,
