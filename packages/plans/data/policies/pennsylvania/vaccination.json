@@ -3,7 +3,18 @@
 		"info": {
 			"text": "CDC/Pennsylvania/state_link",
 			"url": "https://www.health.pa.gov/topics/disease/coronavirus/Pages/Vaccine.aspx",
-			"scrapeQuery": ["div[data-name='Page Field: Page Content']"]
+			"scrapeQuery": [
+				"div[data-name='Page Field: Page Content']"
+			]
+		},
+		"workflow": {
+			"url": "https://covidportal.health.pa.gov/s/Your-Turn?language=en_US",
+			"text": "c19.links/vax_quiz"
+		},
+		"scheduling_phone": {
+			"url": "tel:1-877-724-3258",
+			"text": "c19.link/scheduling.phone.pa",
+			"description": "c19.link/scheduling.phone.description.pa"
 		}
 	},
 	"activePhase": "1a",
@@ -12,10 +23,22 @@
 			"id": "1a",
 			"qualifications": [
 				{
-					"question": "c19.eligibility.question/healthcare_worker"
+					"question": "c19.eligibility.question/healthcare_worker",
+					"moreInfoText": "c19.eligibility.moreinfo/healthcare_worker.pa.1a"
 				},
 				{
 					"question": "c19.eligibility.question/long_term_care_resident"
+				},
+				{
+					"question": "c19.eligibility.question/exposure_to_infectious_material.do",
+					"moreInfoText": "c19.eligibility.moreinfo/exposure_to_infectious_material.do.pa.1a"
+				},
+				{
+					"question": "c19.eligibility.question/age.65_up"
+				},
+				{
+					"question": "c19.eligibility.question/age.are_you_age",
+					"moreInfoText": "c19.eligibility.moreinfo/age.are_you_age.pa.1a"
 				}
 			]
 		},
