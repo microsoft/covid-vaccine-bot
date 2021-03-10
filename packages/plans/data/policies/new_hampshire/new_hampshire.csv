@@ -1,4 +1,16 @@
 String ID,en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th
-c19.eligibility.question/essential_worker.1b.NH,Are you a corrections officer or staff member?,,,,,,,,,,,,,,
-c19.eligibility.question/health.1b.NH,"Are you age 16+ with 2 or more underlying health conditions, or a caregiver to such?",,,,,,,,,,,,,,
-c19.eligibility.question/congregate.NH,Are you a resident of a facility for people with intellectual and developmental disabilities?,,,,,,,,,,,,,,
+c19.eligibility.question/essential_worker.1b.nh,"Are you a corrections officer or staff member?",,,,,,,,,,,,,,
+c19.eligibility.question/health.1b.nh,"Are you age 16+ with 2 or more underlying health conditions, or a caregiver to such?",,,,,,,,,,,,,,
+c19.eligibility.question/congregate.nh,"Are you a resident of a facility for people with intellectual and developmental disabilities?",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/health.1b.nh.nh.1b," - Cancer
+ - Chronic Kidney Disease
+ - COPD (Chronic Obstructive Pulmonary Disease)
+ - Down Syndrome
+ - Heart Conditions, such as heart failure, coronary artery disease, or cardiomyopathies
+ - Immunocompromised state (weakened immune system) from solid organ transplant
+ - Obesity
+ - Severe Obesity
+ - Pregnancy
+ - Sickle cell disease
+ - Other high risk pulmonary disease
+ - Type 2 Diabetes Mellitus",,,,,,,,,,,,,,
