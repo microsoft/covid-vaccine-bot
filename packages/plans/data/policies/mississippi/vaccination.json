@@ -6,7 +6,21 @@
 		},
 		"eligibility": {
 			"url": "https://msdh.ms.gov/msdhsite/_static/14,22816,420,976.html#eligible",
-			"scrapeQuery": [".msdh"]
+			"scrapeQuery": [
+				".msdh"
+			]
+		},
+		"providers": {
+			"url": "https://msdh.ms.gov/msdhsite/_static/14,0,420,976.html#providerMap",
+			"text": "c19.links/vax_providers"
+		},
+		"scheduling": {
+			"url": "https://covidvaccine.umc.edu/",
+			"text": "c19.links/schedule_vax"
+		},
+		"scheduling_phone": {
+			"url": "tel:877-978-6453",
+			"text": "c19.link/scheduling.phone.ms"
 		}
 	},
 	"activePhase": "1b",
@@ -26,13 +40,16 @@
 			"id": "1b",
 			"qualifications": [
 				{
-					"question": "c19.eligibility.question/healthcare_worker"
+					"question": "c19.eligibility.question/healthcare_worker",
+					"moreInfoText": "c19.eligibility.moreinfo/healthcare_worker.ms.1b",
+					"moreInfoUrl": "https://msdh.ms.gov/msdhsite/_static/14,22816,420,976.html"
 				},
 				{
 					"question": "c19.eligibility.question/long_term_care_resident"
 				},
 				{
-					"question": "c19.eligibility.question/essential_worker.1b"
+					"question": "c19.eligibility.question/essential_worker.are",
+					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.are.ms.1b"
 				},
 				{
 					"question": "c19.eligibility.question/age.75_up"
@@ -43,22 +60,25 @@
 			"id": "1c",
 			"qualifications": [
 				{
-					"question": "c19.eligibility.question/healthcare_worker"
+					"question": "c19.eligibility.question/healthcare_worker",
+					"moreInfoText": "c19.eligibility.moreinfo/healthcare_worker.ms.1c",
+					"moreInfoUrl": "https://msdh.ms.gov/msdhsite/_static/14,22816,420,976.html"
 				},
 				{
-					"question": "c19.eligibility.question/long_term_care_resident"
+					"question": "c19.eligibility.question/long_term_care_resident.are"
 				},
 				{
-					"question": "c19.eligibility.question/essential_worker"
+					"question": "c19.eligibility.question/essential_worker",
+					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.ms.1c",
+					"moreInfoUrl": "https://msdh.ms.gov/msdhsite/_static/14,22816,420,976.html"
 				},
 				{
-					"question": "c19.eligibility.question/health"
+					"question": "c19.eligibility.question/health",
+					"moreInfoText": "c19.eligibility.moreinfo/health.ms.1c",
+					"moreInfoUrl": "https://msdh.ms.gov/msdhsite/_static/14,22816,420,976.html"
 				},
 				{
-					"question": "c19.eligibility.question/age.65_up"
-				},
-				{
-					"question": "c19.eligibility.question/congregate.MS"
+					"question": "c19.eligibility.question/age.are"
 				}
 			]
 		}
