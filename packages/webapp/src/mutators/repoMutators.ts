@@ -329,7 +329,7 @@ export const updateLocationData = mutatorAction(
 							.description
 					) {
 						schedulingPhoneDescKey =
-							prevItem.value.vaccination.content.scheduling_phone.description
+							prevItem.value.vaccination.content.links.scheduling_phone.description
 					}
 					location.strings.content[schedulingPhoneDescKey] = {
 						[store.currentLanguage]: locationData.schedulingPhoneDesc,
@@ -492,7 +492,7 @@ export const updateLocationData = mutatorAction(
 							.description
 					) {
 						schedulingPhoneDescKey =
-							prevItem.value.vaccination.content.scheduling_phone.description
+							prevItem.value.vaccination.content.links.scheduling_phone.description
 					}
 					location.strings.content[schedulingPhoneDescKey] = {
 						[store.currentLanguage]: locationData.schedulingPhoneDesc,
