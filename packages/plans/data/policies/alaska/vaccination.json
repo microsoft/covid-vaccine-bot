@@ -11,7 +11,7 @@
 			"text": "cdc/alaska/state_link"
 		},
 		"providers": {
-			"url": "",
+			"url": "https://anchoragecovidvaccine.org/",
 			"text": "c19.links/vax_providers"
 		},
 		"workflow": {
@@ -95,6 +95,17 @@
 				{
 					"question": "c19.eligibility.question/multigenerational.do",
 					"moreInfoText": "c19.eligibility.moreinfo/multigenerational.do.ak.1c"
+				}
+			]
+		},
+		{
+			"id": "2",
+			"label": "2",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.16_up",
+					"moreInfoText": "c19.eligibility.moreinfo/age.16_up.ak.2",
+					"moreInfoUrl": "http://dhss.alaska.gov/dph/epi/id/pages/COVID-19/vaccine.aspx"
 				}
 			]
 		}
