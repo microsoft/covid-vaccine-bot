@@ -3,14 +3,23 @@
 		"info": {
 			"text": "CDC/Missouri/state_link",
 			"url": "https://covidvaccine.mo.gov/residents/",
-			"scrapeQuery": [".container .row"]
+			"scrapeQuery": [
+				".container .row"
+			]
 		},
 		"eligibility_plan": {
-			"url": "https://covidvaccine.mo.gov/residents/#availability",
-			"scrapeQuery": [".container .row"]
+			"url": "https://covidvaccine.mo.gov/info-graphic-alt/vaccine-availability.html"
+		},
+		"providers": {
+			"url": "https://covidvaccine.mo.gov/map/",
+			"text": "c19.links/vax_providers"
+		},
+		"scheduling_phone": {
+			"url": "tel:(877) 435-8411",
+			"text": "c19.link/scheduling.phone.mo"
 		}
 	},
-	"activePhase": "1a",
+	"activePhase": "1c",
 	"phases": [
 		{
 			"id": "1a",
@@ -41,27 +50,40 @@
 				{
 					"question": "c19.eligibility.question/age.65_up"
 				}
-			]
+			],
+			"label": "1B Tier 1"
 		},
 		{
 			"id": "1c",
 			"qualifications": [
 				{
-					"question": "c19.eligibility.question/healthcare_worker"
+					"question": "c19.eligibility.question/healthcare_worker",
+					"moreInfoText": "c19.eligibility.moreinfo/healthcare_worker.mo.1c",
+					"moreInfoUrl": "https://covidvaccine.mo.gov/info-graphic-alt/vaccine-availability.html"
 				},
 				{
-					"question": "c19.eligibility.question/long_term_care_resident"
+					"question": "c19.eligibility.question/long_term_care_resident.are"
 				},
 				{
-					"question": "c19.eligibility.question/essential_worker"
+					"question": "c19.eligibility.question/essential_worker.are",
+					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.are.mo.1c",
+					"moreInfoUrl": "https://covidvaccine.mo.gov/info-graphic-alt/vaccine-availability.html"
 				},
 				{
-					"question": "c19.eligibility.question/health"
+					"question": "c19.eligibility.question/health.are_you_an_adult",
+					"moreInfoText": "c19.eligibility.moreinfo/health.mo.1c",
+					"moreInfoUrl": "https://covidvaccine.mo.gov/info-graphic-alt/vaccine-availability.html"
 				},
 				{
 					"question": "c19.eligibility.question/age.65_up"
+				},
+				{
+					"question": "c19.eligibility.question/congregate.do",
+					"moreInfoText": "c19.eligibility.moreinfo/congregate.do.mo.1c",
+					"moreInfoUrl": "https://covidvaccine.mo.gov/info-graphic-alt/vaccine-availability.html"
 				}
-			]
+			],
+			"label": "1b Tier 2"
 		}
 	]
 }
