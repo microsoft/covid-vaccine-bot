@@ -1,2 +1,11 @@
 String ID,en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th
-c19.eligibility.question/essential_worker.1a.NV.safety_natsec,"Are public safety officer or a deployed and mission-critical personnell with an essential national security role, or a staff member with state and local emergency operations?",,,,,,,,,,,,,,
+c19.eligibility.question/essential_worker.1a.nv.safety_natsec,"Are public safety officer or a deployed and mission-critical personnell with an essential national security role, or a staff member with state and local emergency operations?",,,,,,,,,,,,,,
+c19.link/scheduling.phone.nv,"1-800-401-0946",,,,,,,,,,,,,,
+c19.link/scheduling.phone.carson_city,"1-800-401-0946",,,,,,,,,,,,,,
+c19.link/scheduling.phone.description.carson_city,"Nevada COVID-19 Vaccine Call Center",,,,,,,,,,,,,,
+c19.link/scheduling.phone.churchill,"1-800-401-0946",,,,,,,,,,,,,,
+c19.link/scheduling.phone.description.churchill,"Nevada Vaccine Call Center",,,,,,,,,,,,,,
+c19.link/scheduling.phone.clark,"1-800-401-0946",,,,,,,,,,,,,,
+c19.link/scheduling.phone.description.clark,"Nevada COVID-19 Vaccine Call Center",,,,,,,,,,,,,,
+c19.link/scheduling.phone.esmeralda,"775-482-6711",,,,,,,,,,,,,,
+c19.link/scheduling.phone.eureka,"775-237-5372",,,,,,,,,,,,,,
