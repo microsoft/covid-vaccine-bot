@@ -124,7 +124,7 @@ export const updateLocationList = mutatorAction(
 				newLocObj.vaccination.path = `${selectedState.key}/regions/${newLocObj.vaccination.path}`
 
 				if (locationData.info !== '') {
-					newLocObj.vaccination.content.links.info.text = `cdc/${location.info.content.id}/state_link`//`c19.link/info.${newLocObj.info.content.id}`.toLowerCase()
+					newLocObj.vaccination.content.links.info.text = `cdc/${location.info.content.id}/state_link` //`c19.link/info.${newLocObj.info.content.id}`.toLowerCase()
 				}
 
 				if (locationData.schedulingPhone !== '') {
@@ -392,7 +392,6 @@ export const updateLocationData = mutatorAction(
 							regionObj.vaccination.content.links.info = {
 								url: locationData.info,
 								text: `cdc/${location.info.content.id}/state_link`,
-
 							}
 						}
 					} else {
@@ -567,7 +566,7 @@ const copyPhaseData = (newObj: any, oldObj: any) => {
 		phase.qualifications.forEach((qual: any) => {
 			currPhaseObj.qualifications.push({
 				question: qual.question.toLowerCase(),
-				moreInfoText: qual.moreInfoText?.toLowerCase(),
+				moreInfoText: qual.moreInfoText?.replace(/[^a-z0-9\s]/gi, '').replace(/\s/g, '_').toLowerCase(),
 				moreInfoUrl: qual.moreInfoUrl,
 			})
 		})
@@ -669,6 +668,8 @@ export const updateQualifier = mutatorAction(
 						affectedQualifier.question = data.item.qualifierId.toLowerCase()
 					}
 				}
+
+				store.repoFileData = { ...store.repoFileData }
 			}
 		}
 	}
@@ -704,6 +705,8 @@ export const addQualifier = mutatorAction(
 						question: data.item.qualifierId,
 					})
 				}
+
+				store.repoFileData = {...store.repoFileData }
 			}
 		}
 	}
@@ -771,14 +774,12 @@ export const removePhase = mutatorAction(
 					)
 
 					regionVaccinationObj.content.phases.splice(removeIndex, 1)
-					store.repoFileData = { ...store.repoFileData }
 				} else {
 					const removeIndex = location.vaccination.content.phases.findIndex(
 						(phase: any) => phase.id === data.phaseId
 					)
 
 					location.vaccination.content.phases.splice(removeIndex, 1)
-					store.repoFileData = { ...store.repoFileData }
 				}
 			}
 		}
@@ -792,7 +793,7 @@ export const addPhase = mutatorAction('addPhase', (data: any | undefined) => {
 			store.pendingChanges = true
 			const location = store.repoFileData[data.locationKey]
 
-			const phaseId = data.item.name.replace(/[\s.]/g, '').toLowerCase()
+			const phaseId = data.item.name.replace(/[^a-z0-9\s]/gi, '').replace(/\s/g, '_').toLowerCase()
 
 			const emptyQualifications: any = []
 

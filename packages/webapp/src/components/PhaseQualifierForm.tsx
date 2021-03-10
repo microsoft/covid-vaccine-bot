@@ -10,7 +10,7 @@ import {
 	FontIcon,
 } from '@fluentui/react'
 import { observer } from 'mobx-react-lite'
-import { useCallback, useState, useRef } from 'react'
+import { useCallback, useState, useRef, useEffect } from 'react'
 import {
 	getPhaseTagItems,
 	getPhaseQualifierItems,
@@ -18,6 +18,7 @@ import {
 	getPhaseQualifierItemsByKey,
 	getPhaseMoreInfoUrl,
 } from '../selectors/phaseSelectors'
+import { getAppStore } from '../store/store'
 
 import './PhaseQualifierForm.scss'
 export interface PhaseQualifierFormProps {
@@ -25,7 +26,8 @@ export interface PhaseQualifierFormProps {
 	rowItems: any
 	isEditable: boolean
 	isRegion: boolean
-	onRowItemRemove?: (item: any) => void
+	groupKey: string
+	onRowItemRemove?: (item: any, groupKey: any) => void
 	onRowItemTextChange: (item: any, prevItem: any) => void
 	onRowItemQualifierChange: (item: any, prevItem: any) => void
 }
@@ -41,12 +43,15 @@ export default observer(function PhaseQualiferForm(
 		onRowItemRemove,
 		onRowItemTextChange,
 		onRowItemQualifierChange,
+		groupKey,
 	} = props
 	const phaseTagItems = useRef(getPhaseTagItems(selectedState))
 	const phaseQualifierItems = useRef(getPhaseQualifierItems(selectedState))
 	const [filteredQualifierItems, setFilteredQualifierItems] = useState<any[]>(
 		getPhaseQualifierItemsByKey(selectedState, rowItems.item.tagKey)
 	)
+
+	const { globalFileData, repoFileData } = getAppStore()
 
 	let overrideIconFlag = false
 	let moreInfoKey = rowItems.item.moreInfoKey
@@ -77,6 +82,21 @@ export default observer(function PhaseQualiferForm(
 
 	const changedItem = useRef<any>(rowItems.item)
 	changedItem.current.moreInfoContent = moreInfoText
+
+	useEffect(() => {
+		if (globalFileData) {
+			phaseQualifierItems.current = getPhaseQualifierItems(selectedState)
+			setFilteredQualifierItems(
+				getPhaseQualifierItemsByKey(selectedState, rowItems.item.tagKey)
+			)
+		}
+	}, [
+		globalFileData,
+		repoFileData,
+		phaseQualifierItems,
+		selectedState,
+		rowItems,
+	])
 
 	const onTagChange = useCallback(
 		(_event, option) => {
@@ -183,7 +203,7 @@ export default observer(function PhaseQualiferForm(
 							{
 								key: 'removeRow',
 								text: 'Remove',
-								onClick: () => onRowItemRemove?.(rowItems.item),
+								onClick: () => onRowItemRemove?.(rowItems.item, groupKey),
 							},
 							{
 								key: 'details',
