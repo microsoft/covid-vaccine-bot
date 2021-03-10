@@ -329,7 +329,8 @@ export const updateLocationData = mutatorAction(
 							.description
 					) {
 						schedulingPhoneDescKey =
-							prevItem.value.vaccination.content.links.scheduling_phone.description
+							prevItem.value.vaccination.content.links.scheduling_phone
+								.description
 					}
 					location.strings.content[schedulingPhoneDescKey] = {
 						[store.currentLanguage]: locationData.schedulingPhoneDesc,
@@ -492,7 +493,8 @@ export const updateLocationData = mutatorAction(
 							.description
 					) {
 						schedulingPhoneDescKey =
-							prevItem.value.vaccination.content.links.scheduling_phone.description
+							prevItem.value.vaccination.content.links.scheduling_phone
+								.description
 					}
 					location.strings.content[schedulingPhoneDescKey] = {
 						[store.currentLanguage]: locationData.schedulingPhoneDesc,
@@ -566,7 +568,10 @@ const copyPhaseData = (newObj: any, oldObj: any) => {
 		phase.qualifications.forEach((qual: any) => {
 			currPhaseObj.qualifications.push({
 				question: qual.question.toLowerCase(),
-				moreInfoText: qual.moreInfoText?.replace(/[^a-z0-9\s]/gi, '').replace(/\s/g, '_').toLowerCase(),
+				moreInfoText: qual.moreInfoText
+					?.replace(/[^a-z0-9\s]/gi, '')
+					.replace(/\s/g, '_')
+					.toLowerCase(),
 				moreInfoUrl: qual.moreInfoUrl,
 			})
 		})
@@ -706,7 +711,7 @@ export const addQualifier = mutatorAction(
 					})
 				}
 
-				store.repoFileData = {...store.repoFileData }
+				store.repoFileData = { ...store.repoFileData }
 			}
 		}
 	}
@@ -781,6 +786,7 @@ export const removePhase = mutatorAction(
 
 					location.vaccination.content.phases.splice(removeIndex, 1)
 				}
+				store.repoFileData = { ...store.repoFileData }
 			}
 		}
 	}
@@ -793,7 +799,10 @@ export const addPhase = mutatorAction('addPhase', (data: any | undefined) => {
 			store.pendingChanges = true
 			const location = store.repoFileData[data.locationKey]
 
-			const phaseId = data.item.name.replace(/[^a-z0-9\s]/gi, '').replace(/\s/g, '_').toLowerCase()
+			const phaseId = data.item.name
+				.replace(/[^a-z0-9\s]/gi, '')
+				.replace(/\s/g, '_')
+				.toLowerCase()
 
 			const emptyQualifications: any = []
 
