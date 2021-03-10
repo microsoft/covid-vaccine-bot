@@ -5,13 +5,15 @@
 import axios from 'axios'
 import { token, urlPrefix } from './configuration'
 
+const LOCALIZATION_URL = `${urlPrefix()}/localization`
+
 export class Localizations {
 	/**
 	 * Red available
 	 */
 	public async read(): Promise<Record<string, string>[]> {
 		try {
-			const localization = await axios.get(`${urlPrefix()}/localization`, {
+			const localization = await axios.get(LOCALIZATION_URL, {
 				headers: { Authorization: `Bearer ${token()}` },
 			})
 			console.table(localization.data)
@@ -24,8 +26,10 @@ export class Localizations {
 
 	public async upload(records: Record<string, string>[]): Promise<void> {
 		try {
-			console.log(`uploading ${records.length} localization records`)
-			await axios.post(`${urlPrefix()}/localization`, {
+			console.log(
+				`uploading ${records.length} localization records to ${LOCALIZATION_URL}`
+			)
+			await axios.post(LOCALIZATION_URL, {
 				headers: {
 					Authorization: `Bearer ${token()}`,
 				},
@@ -37,18 +41,6 @@ export class Localizations {
 		} catch (error) {
 			console.error(error)
 			throw error
-		}
-	}
-
-	public async remove(files: string[]): Promise<void> {
-		try {
-			await axios.delete(`${urlPrefix()}/resources`, {
-				headers: { Authorization: `Bearer ${token()}` },
-				params: { name: files },
-			})
-			console.log(`removing ${files} completed`)
-		} catch (error) {
-			console.error(error)
 		}
 	}
 }
