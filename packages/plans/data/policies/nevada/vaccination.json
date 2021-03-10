@@ -21,16 +21,19 @@
 			"id": "1a",
 			"qualifications": [
 				{
-					"question": "c19.eligibility.question/healthcare_worker"
+					"question": "c19.eligibility.question/healthcare_worker",
+					"moreInfoText": "c19.eligibility.moreinfo/healthcare_worker.nv.1a"
 				},
 				{
 					"question": "c19.eligibility.question/long_term_care_resident"
 				},
 				{
-					"question": "c19.eligibility.question/essential_worker.leo_corrections"
+					"question": "c19.eligibility.question/essential_worker.leo_corrections",
+					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.leo_corrections.nv.1a"
 				},
 				{
-					"question": "c19.eligibility.question/essential_worker.1a.NV.safety_natsec"
+					"question": "c19.eligibility.question/essential_worker.1b",
+					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.nv.1a"
 				}
 			]
 		},
