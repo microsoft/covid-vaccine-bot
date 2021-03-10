@@ -1,0 +1,24 @@
+{
+	"activePhase": "",
+	"links": {
+		"eligibility": {
+			"url": "https://www.washoecounty.us/health/files/COVID19/Cov-priority-lanes-graphic.pdf"
+		},
+		"eligibility_plan": {
+			"url": "https://nvhealthresponse.nv.gov/wp-content/uploads/2021/01/NEVADA-COVID-19-VACCINE-PLAYBOOK-V3-BRIEF_011121.pdf"
+		},
+		"info": {
+			"url": "https://www.covid19washoevaccine.com/",
+			"text": "cdc/nevada/state_link"
+		},
+		"workflow": {
+			"url": "https://gis.washoecounty.us/agolHost?id=COVIDTierSurvey&lang=en",
+			"text": "c19.links/vax_quiz"
+		},
+		"scheduling_phone": {
+			"url": "tel:775-328-2427",
+			"text": "c19.link/scheduling.phone.washoe",
+			"description": "c19.link/scheduling.phone.description.washoe"
+		}
+	}
+}
