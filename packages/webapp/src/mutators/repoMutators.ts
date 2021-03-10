@@ -668,6 +668,8 @@ export const updateQualifier = mutatorAction(
 						affectedQualifier.question = data.item.qualifierId.toLowerCase()
 					}
 				}
+
+				store.repoFileData = { ...store.repoFileData }
 			}
 		}
 	}
@@ -703,6 +705,8 @@ export const addQualifier = mutatorAction(
 						question: data.item.qualifierId,
 					})
 				}
+
+				store.repoFileData = {...store.repoFileData }
 			}
 		}
 	}

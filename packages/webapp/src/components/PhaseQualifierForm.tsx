@@ -51,7 +51,7 @@ export default observer(function PhaseQualiferForm(
 		getPhaseQualifierItemsByKey(selectedState, rowItems.item.tagKey)
 	)
 
-	const { globalFileData } = getAppStore()
+	const { globalFileData, repoFileData } = getAppStore()
 
 	let overrideIconFlag = false
 	let moreInfoKey = rowItems.item.moreInfoKey
@@ -85,11 +85,11 @@ export default observer(function PhaseQualiferForm(
 
 	useEffect(() => {
 		if (globalFileData) {
-			console.log(rowItems.item)
-			phaseQualifierItems.current = getPhaseQualifierItems(selectedState)
-			setFilteredQualifierItems(getPhaseQualifierItemsByKey(selectedState, rowItems.item.tagKey))
+			const currState = repoFileData[selectedState.key]
+			phaseQualifierItems.current = getPhaseQualifierItems(currState)
+			setFilteredQualifierItems(getPhaseQualifierItemsByKey(currState, rowItems.item.tagKey))
 		}
-	},[globalFileData, phaseQualifierItems, selectedState, rowItems])
+	},[globalFileData, repoFileData, phaseQualifierItems, selectedState, rowItems])
 
 	const onTagChange = useCallback(
 		(_event, option) => {
