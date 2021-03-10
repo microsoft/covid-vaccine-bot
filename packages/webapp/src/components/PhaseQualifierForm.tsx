@@ -26,8 +26,8 @@ export interface PhaseQualifierFormProps {
 	rowItems: any
 	isEditable: boolean
 	isRegion: boolean
-	groupKey: string 
-	onRowItemRemove?: (item: any, groupKey:any) => void
+	groupKey: string
+	onRowItemRemove?: (item: any, groupKey: any) => void
 	onRowItemTextChange: (item: any, prevItem: any) => void
 	onRowItemQualifierChange: (item: any, prevItem: any) => void
 }
@@ -43,7 +43,7 @@ export default observer(function PhaseQualiferForm(
 		onRowItemRemove,
 		onRowItemTextChange,
 		onRowItemQualifierChange,
-		groupKey
+		groupKey,
 	} = props
 	const phaseTagItems = useRef(getPhaseTagItems(selectedState))
 	const phaseQualifierItems = useRef(getPhaseQualifierItems(selectedState))
@@ -85,11 +85,18 @@ export default observer(function PhaseQualiferForm(
 
 	useEffect(() => {
 		if (globalFileData) {
-			const currState = repoFileData[selectedState.key]
-			phaseQualifierItems.current = getPhaseQualifierItems(currState)
-			setFilteredQualifierItems(getPhaseQualifierItemsByKey(currState, rowItems.item.tagKey))
+			phaseQualifierItems.current = getPhaseQualifierItems(selectedState)
+			setFilteredQualifierItems(
+				getPhaseQualifierItemsByKey(selectedState, rowItems.item.tagKey)
+			)
 		}
-	},[globalFileData, repoFileData, phaseQualifierItems, selectedState, rowItems])
+	}, [
+		globalFileData,
+		repoFileData,
+		phaseQualifierItems,
+		selectedState,
+		rowItems,
+	])
 
 	const onTagChange = useCallback(
 		(_event, option) => {
