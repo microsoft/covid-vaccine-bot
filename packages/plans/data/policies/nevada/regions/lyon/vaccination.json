@@ -1,0 +1,24 @@
+{
+	"activePhase": "",
+	"links": {
+		"eligibility": {
+			"url": "https://nvhealthresponse.nv.gov/wp-content/uploads/2021/01/NEVADA-COVID-19-VACCINE-PLAYBOOK-V3-BRIEF_011121.pdf"
+		},
+		"eligibility_plan": {
+			"url": "https://nvhealthresponse.nv.gov/wp-content/uploads/2021/01/NEVADA-COVID-19-VACCINE-PLAYBOOK-V3-BRIEF_011121.pdf"
+		},
+		"info": {
+			"url": "https://gethealthycarsoncity.org/novel-coronavirus-2019/covid-19-vaccine/",
+			"text": "cdc/nevada/state_link"
+		},
+		"scheduling": {
+			"url": "https://booking.appointy.com/en-US/immunizenevada/bookings/service?st=458106",
+			"text": "c19.links/schedule_vax"
+		},
+		"scheduling_phone": {
+			"url": "tel:1-800-401-0946",
+			"text": "c19.link/scheduling.phone.lyon",
+			"description": "c19.link/scheduling.phone.description.lyon"
+		}
+	}
+}
