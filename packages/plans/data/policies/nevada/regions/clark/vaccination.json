@@ -1,0 +1,24 @@
+{
+	"activePhase": "",
+	"links": {
+		"eligibility": {
+			"url": "https://media.southernnevadahealthdistrict.org/download/COVID-19/resources/playbook/NEVADA-COVID-19-VACCINE-PLAYBOOK-V3-BRIEF.pdf"
+		},
+		"eligibility_plan": {
+			"url": "https://media.southernnevadahealthdistrict.org/download/COVID-19/resources/playbook/NEVADA-COVID-19-VACCINE-PLAYBOOK-V3-BRIEF.pdf"
+		},
+		"info": {
+			"url": "https://covid.southernnevadahealthdistrict.org/",
+			"text": "cdc/nevada/state_link"
+		},
+		"scheduling": {
+			"url": "https://covid.southernnevadahealthdistrict.org/vaccine/distribution/",
+			"text": "c19.links/schedule_vax"
+		},
+		"scheduling_phone": {
+			"url": "tel:1-800-401-0946",
+			"text": "c19.link/scheduling.phone.clark",
+			"description": "c19.link/scheduling.phone.description.clark"
+		}
+	}
+}
