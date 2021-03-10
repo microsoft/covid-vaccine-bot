@@ -85,6 +85,7 @@ export default observer(function PhaseQualiferForm(
 
 	useEffect(() => {
 		if (globalFileData) {
+			console.log(rowItems.item)
 			phaseQualifierItems.current = getPhaseQualifierItems(selectedState)
 			setFilteredQualifierItems(getPhaseQualifierItemsByKey(selectedState, rowItems.item.tagKey))
 		}

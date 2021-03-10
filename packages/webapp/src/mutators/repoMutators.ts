@@ -738,7 +738,6 @@ export const removeQualifier = mutatorAction(
 						(phase: any) => phase.id === data.item.groupId
 					)
 
-					console.log(affectedPhase)
 					const removeIndex = affectedPhase.qualifications.findIndex(
 						(qualification: any) =>
 							qualification.question.toLowerCase() ===

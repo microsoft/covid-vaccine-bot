@@ -4,7 +4,7 @@
  */
 import { FontIcon } from '@fluentui/react'
 import { observer } from 'mobx-react-lite'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import {
 	modifyStateStrings,
 	modifyMoreInfoLinks,
@@ -35,11 +35,11 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 	const { isRegion, value, selectedState } = props
 
 	const [phaseList, setPhaseList] = useState<any[]>([])
+	const groupToggleState = useRef<any[]>([])
 
 	useEffect(() => {
 		if (repoFileData) {
 			const tempPhaseList: any[] = []
-			// const prevOpenPhaseItems = phaseList.filter( group => !group.isCollapsed ).map(group => group.key)
 			const currentStateObj: any = repoFileData[selectedState.key]
 			let phaseObj = currentStateObj.vaccination.content.phases
 			const regionObj = isRegion
@@ -51,7 +51,7 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 			}
 
 			phaseObj.forEach((phase: any) => {
-				const isCollapsed: boolean = !isRegion && value.value.id !== phase.id
+				let isCollapsed: boolean = !isRegion && value.value.id !== phase.id
 
 				let isActivePhase = false
 				if (isRegion && regionObj.vaccination.content.activePhase) {
@@ -61,9 +61,9 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 						phase.id === currentStateObj.vaccination.content.activePhase
 				}
 
-				// if(prevOpenPhaseItems.indexOf(phase.id) !== -1){
-				// 	isCollapsed = false
-				// }
+				if(groupToggleState.current.length > 0 && groupToggleState.current.indexOf(phase.id) !== -1){
+					isCollapsed = false
+				}
 
 				const tempPhaseObj: any = {
 					key: phase.id,
@@ -190,6 +190,7 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 
 			return group
 		})
+		groupToggleState.current = tempPhaseList.filter( group => !group.isCollapsed ).map(group => group.key)
 		setPhaseList(tempPhaseList)
 	}
 
