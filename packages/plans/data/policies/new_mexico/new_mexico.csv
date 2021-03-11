@@ -1,3 +1,29 @@
 String ID,en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th
-c19.eligibility.question/essential_worker.1b.NM,"Are you as an essential frontline worker? This includes first responders; corrections officers; adult and child protective services; court personnel; personnel who provide services to maintain the safety of homes and businesses; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, hardware/construction stores, laundromats/dry cleaners, or child care.",,,,,,,,,,,,,,
-c19.eligibility.question/health.1b.NM,Are you age 16+ with a high risk medical condition?,,,,,,,,,,,,,,
+c19.eligibility.question/essential_worker.1b.nm,"Are you as an essential frontline worker? This includes first responders; corrections officers; adult and child protective services; court personnel; personnel who provide services to maintain the safety of homes and businesses; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, hardware/construction stores, laundromats/dry cleaners, or child care.",,,,,,,,,,,,,,
+c19.eligibility.question/health.1b.nm,"Are you age 16+ with a high risk medical condition?",,,,,,,,,,,,,,
+c19.link/scheduling.phone.nm,"COVID-19 Vaccine Hotline",,,,,,,,,,,,,,
+c19.link/scheduling.phone.description.nm,"1-855-600-3453",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/age.are_you_age.nm.current_phase,"Conditions with increased risk of severe illness:
+● Cancer
+● Chronic kidney disease
+● COPD (chronic obstructive pulmonary disease), pulmonary fibrosis, cystic fibrosis
+● Down syndrome
+● Heart conditions (heart failure, hypertension, coronary artery disease or cardiomyopathies)
+● Immunocompromised state from solid organ transplant
+● Obesity (BMI>=30)
+● Pregnancy
+● Sickle cell disease
+● Type 2 Diabetes
+
+Conditions that might involve increased risk:
+● Asthma
+● Cerebrovascular disease (previous stroke, TIA)
+● Hypertension or high blood pressure
+● Immunocompromised state from blood or bone marrow transplant, immune deficiencies, HIV, use of
+corticosteroids or use of other immune-weakening medicines
+● Neurologic conditions such as dementia
+● Liver disease
+● Overweight (BMI >25 but <30)
+● Pulmonary fibrosis (having damaged or scarred lung tissues)
+● Thalassemia
+● Type 1 diabetes",,,,,,,,,,,,,,
