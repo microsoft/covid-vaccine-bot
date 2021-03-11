@@ -3,65 +3,56 @@
 		"info": {
 			"text": "CDC/New_Mexico/state_link",
 			"url": "https://cv.nmhealth.org/covid-vaccine/",
-			"scrapeQuery": ["#main-content"]
-		}
-	},
-	"activePhase": "1b",
-	"phases": [
-		{
-			"id": "1a",
-			"qualifications": [
-				{
-					"question": "c19.eligibility.question/healthcare_worker"
-				},
-				{
-					"question": "c19.eligibility.question/long_term_care_resident"
-				}
+			"scrapeQuery": [
+				"#main-content"
 			]
 		},
+		"eligibility": {
+			"url": "https://cv.nmhealth.org/covid-vaccine/"
+		},
+		"eligibility_plan": {
+			"url": "https://cv.nmhealth.org/wp-content/uploads/2021/02/2021.1.28-DOH-Phase-Guidance.pdf"
+		},
+		"scheduling": {
+			"url": "https://cvvaccine.nmhealth.org/",
+			"text": "c19.links/schedule_vax"
+		},
+		"scheduling_phone": {
+			"url": "tel:COVID-19 Vaccine Hotline",
+			"text": "c19.link/scheduling.phone.nm",
+			"description": "c19.link/scheduling.phone.description.nm"
+		}
+	},
+	"activePhase": "current_phase",
+	"phases": [
 		{
-			"id": "1b",
+			"id": "current_phase",
+			"label": "Current Phase",
 			"qualifications": [
 				{
+					"question": "c19.eligibility.question/healthcare_worker.in_hospital"
+				},
+				{
+					"question": "c19.eligibility.question/long_term_care_resident.are"
+				},
+				{
+					"question": "c19.eligibility.question/essential_worker.are_you_a_medical"
+				},
+				{
+					"question": "c19.eligibility.question/congregate.do_you"
+				},
+				{
 					"question": "c19.eligibility.question/healthcare_worker"
-				},
-				{
-					"question": "c19.eligibility.question/long_term_care_resident"
-				},
-				{
-					"question": "c19.eligibility.question/essential_worker.1b.NM"
 				},
 				{
 					"question": "c19.eligibility.question/age.75_up"
 				},
 				{
-					"question": "c19.eligibility.question/health.1b.NM"
+					"question": "c19.eligibility.question/age.are_you_age",
+					"moreInfoText": "c19.eligibility.moreinfo/age.are_you_age.nm.current_phase"
 				},
 				{
-					"question": "c19.eligibility.question/congregate"
-				}
-			]
-		},
-		{
-			"id": "1c",
-			"qualifications": [
-				{
-					"question": "c19.eligibility.question/healthcare_worker"
-				},
-				{
-					"question": "c19.eligibility.question/long_term_care_resident"
-				},
-				{
-					"question": "c19.eligibility.question/essential_worker"
-				},
-				{
-					"question": "c19.eligibility.question/health"
-				},
-				{
-					"question": "c19.eligibility.question/age.65_up"
-				},
-				{
-					"question": "c19.eligibility.question/congregate"
+					"question": "c19.eligibility.question/essential_worker.are_you"
 				}
 			]
 		}
