@@ -1,3 +1,4 @@
 String ID,en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th
-c19.eligibility.question/health.1a.TN.non_independent,"Are you age 18-74, but unable to live independently?",,,,,,,,,,,,,,
-c19.eligibility.question/essential_worker.1b.TN,"Are you a first responder, K-12 personnel, or child-care personnel?",,,,,,,,,,,,,,
+c19.eligibility.question/health.1a.tn.non_independent,"Are you age 18-74, but unable to live independently?",,,,,,,,,,,,,,
+c19.eligibility.question/essential_worker.1b.tn,"Are you a first responder, K-12 personnel, or child-care personnel?",,,,,,,,,,,,,,
+c19.link/scheduling.phone.tn,"866-442-5301",,,,,,,,,,,,,,
