@@ -10,64 +10,54 @@
 		"eligibility": {
 			"url": "https://coronavirus.ohio.gov/static/vaccine/general_fact_sheet.pdf",
 			"content": "pdf"
+		},
+		"workflow": {
+			"url": "https://gettheshot.coronavirus.ohio.gov/",
+			"text": "c19.links/vax_quiz"
+		},
+		"scheduling_phone": {
+			"url": "tel:1-833-427-5634",
+			"text": "c19.link/scheduling.phone.oh",
+			"description": "c19.link/scheduling.phone.description.oh"
 		}
 	},
 	"activePhase": "1a",
 	"phases": [
 		{
-			"id": "1a",
+			"id": "current",
+			"label": "Current",
 			"qualifications": [
 				{
-					"question": "c19.eligibility.question/healthcare_worker"
+					"question": "c19.eligibility.question/healthcare_worker",
+					"moreInfoText": "c19.eligibility.moreinfo/healthcare_worker.oh.current"
 				},
 				{
-					"question": "c19.eligibility.question/long_term_care_resident"
+					"question": "c19.eligibility.question/age.are"
 				},
 				{
-					"question": "c19.eligibility.question/health.1a.OH.psychiatric"
-				}
-			]
-		},
-		{
-			"id": "1b",
-			"qualifications": [
-				{
-					"question": "c19.eligibility.question/healthcare_worker"
+					"question": "c19.eligibility.question/long_term_care_resident.are"
 				},
 				{
-					"question": "c19.eligibility.question/long_term_care_resident"
-				},
-				{
-					"question": "c19.eligibility.question/health.1a.OH.psychiatric"
-				},
-				{
-					"question": "c19.eligibility.question/health.1b.OH"
+					"question": "c19.eligibility.question/congregate",
+					"moreInfoText": "c19.eligibility.moreinfo/congregate.oh.current"
 				},
 				{
 					"question": "c19.eligibility.question/essential_worker.k12"
 				},
 				{
-					"question": "c19.eligibility.question/age.65_up"
-				}
-			]
-		},
-		{
-			"id": "1c",
-			"qualifications": [
-				{
-					"question": "c19.eligibility.question/healthcare_worker"
+					"question": "c19.eligibility.question/essential_worker.ff_leo_corrections",
+					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.ff_leo_corrections.oh.current",
+					"moreInfoUrl": "https://coronavirus.ohio.gov/wps/portal/gov/covid-19/covid-19-vaccination-program/covid-19-vaccination-program"
 				},
 				{
-					"question": "c19.eligibility.question/long_term_care_resident"
+					"question": "c19.eligibility.question/worker.do",
+					"moreInfoText": "c19.eligibility.moreinfo/worker.do.oh.current",
+					"moreInfoUrl": "https://coronavirus.ohio.gov/wps/portal/gov/covid-19/covid-19-vaccination-program/covid-19-vaccination-program"
 				},
 				{
-					"question": "c19.eligibility.question/essential_worker"
-				},
-				{
-					"question": "c19.eligibility.question/health"
-				},
-				{
-					"question": "c19.eligibility.question/age.65_up"
+					"question": "c19.eligibility.question/essential_worker.are_you",
+					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.are_you.oh.current",
+					"moreInfoUrl": "https://coronavirus.ohio.gov/wps/portal/gov/covid-19/covid-19-vaccination-program/covid-19-vaccination-program"
 				}
 			]
 		}
