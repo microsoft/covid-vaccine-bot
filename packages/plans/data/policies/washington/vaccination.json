@@ -13,6 +13,15 @@
 		},
 		"providers": {
 			"url": "https://www.doh.wa.gov/YouandYourFamily/Immunization/VaccineLocations"
+		},
+		"scheduling": {
+			"url": "https://prepmod.doh.wa.gov/",
+			"text": "c19.links/schedule_vax"
+		},
+		"scheduling_phone": {
+			"url": "tel:1-888-856-5816",
+			"text": "c19.link/scheduling.phone.wa",
+			"description": "c19.link/scheduling.phone.description.wa"
 		}
 	},
 	"activePhase": "1b_tier1",
