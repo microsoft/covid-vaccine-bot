@@ -12,7 +12,13 @@
 		},
 		"eligibility": {
 			"url": "https://www.healthvermont.gov/covid-19/vaccine/about-covid-19-vaccines-vermont",
-			"scrapeQuery": ["article .paragraphs-items .content .field-body"]
+			"scrapeQuery": [
+				"article .paragraphs-items .content .field-body"
+			]
+		},
+		"scheduling_phone": {
+			"url": "tel:855-722-7878",
+			"text": "c19.link/scheduling.phone.vt"
 		}
 	},
 	"activePhase": "1a",
@@ -25,6 +31,22 @@
 				},
 				{
 					"question": "c19.eligibility.question/long_term_care_resident"
+				},
+				{
+					"question": "c19.eligibility.question/essential_worker.are"
+				},
+				{
+					"question": "c19.eligibility.question/essential_worker.are_you"
+				},
+				{
+					"question": "c19.eligibility.question/essential_worker.ff_leo_corrections"
+				},
+				{
+					"question": "c19.eligibility.question/age.65_up"
+				},
+				{
+					"question": "c19.eligibility.question/age.are_you_age",
+					"moreInfoText": "c19.eligibility.moreinfo/age.are_you_age.vt.1a"
 				}
 			]
 		},
