@@ -93,5 +93,6 @@ c19.eligibility.question/congregate.do_you,"Do you work in a congregate setting?
 c19.eligibility.question/worker.are_you,"Are you a grocery store worker?",,,,,,,,,,,,,,
 c19.eligibility.question/worker.are_you_a,"Are you a restaurant or delivery worker?",,,,,,,,,,,,,,
 c19.eligibility.question/worker.are_you_a_hotel,"Are you a hotel worker?",,,,,,,,,,,,,,
+c19.eligibility.question/essential_worker.are_you_a_frontline,"Are you a frontline healthcare worker?",,,,,,,,,,,,,,
 c19.eligibility.question/essential_worker.are_you_an_essential,"Are you an essential worker outside of healthcare?",,,,,,,,,,,,,,
 c19.eligibility.question/essential_worker.are_you_an_educator,"Are you an educator with age of 40+?",,,,,,,,,,,,,,
