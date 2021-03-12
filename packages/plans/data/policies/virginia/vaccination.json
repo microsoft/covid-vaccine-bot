@@ -3,10 +3,23 @@
 		"info": {
 			"text": "CDC/Virginia/state_link",
 			"url": "https://www.vdh.virginia.gov/covid-19-vaccine/",
-			"scrapeQuery": ["main"]
+			"scrapeQuery": [
+				"main"
+			]
+		},
+		"eligibility": {
+			"url": "https://www.vdh.virginia.gov/content/uploads/sites/191/2021/01/Vaccine-Eligibility-Text-Version.pdf"
+		},
+		"workflow": {
+			"url": "https://vdh.jebbit.com/amkwk6m1?L=Owned%20Web&JC=Vaccine",
+			"text": "c19.links/vax_quiz"
+		},
+		"scheduling_phone": {
+			"url": "tel:877-829-4682",
+			"text": "c19.link/scheduling.phone.va"
 		}
 	},
-	"activePhase": "1a",
+	"activePhase": "1b",
 	"phases": [
 		{
 			"id": "1a",
@@ -32,10 +45,13 @@
 					"question": "c19.eligibility.question/essential_worker.1b"
 				},
 				{
-					"question": "c19.eligibility.question/age.75_up"
+					"question": "c19.eligibility.question/age.65_up"
 				},
 				{
 					"question": "c19.eligibility.question/congregate.VA"
+				},
+				{
+					"question": "c19.eligibility.question/age.are_you_age"
 				}
 			]
 		},
