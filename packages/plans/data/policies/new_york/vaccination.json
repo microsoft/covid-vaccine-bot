@@ -10,56 +10,58 @@
 		},
 		"eligibility": {
 			"url": "https://covid19vaccine.health.ny.gov/phased-distribution-vaccine",
-			"scrapeQuery": [".toc-chapters"]
+			"scrapeQuery": [
+				".toc-chapters"
+			]
+		},
+		"scheduling": {
+			"url": "https://am-i-eligible.covid19vaccine.health.ny.gov/",
+			"text": "c19.links/schedule_vax"
+		},
+		"scheduling_phone": {
+			"url": "tel:1-833-697-4829",
+			"text": "c19.link/scheduling.phone.ny",
+			"description": "c19.link/scheduling.phone.description.ny"
 		}
 	},
-	"activePhase": "1b",
+	"activePhase": "current",
 	"phases": [
 		{
-			"id": "1a",
+			"id": "current",
+			"label": "Current",
 			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.60_up"
+				},
 				{
 					"question": "c19.eligibility.question/healthcare_worker"
 				},
 				{
-					"question": "c19.eligibility.question/long_term_care_resident"
-				}
-			]
-		},
-		{
-			"id": "1b",
-			"qualifications": [
-				{
-					"question": "c19.eligibility.question/healthcare_worker"
+					"question": "c19.eligibility.question/essential_worker.are_you_an"
 				},
 				{
-					"question": "c19.eligibility.question/long_term_care_resident"
+					"question": "c19.eligibility.question/essential_worker.are"
 				},
 				{
-					"question": "c19.eligibility.question/essential_worker.1b.NY"
+					"question": "c19.eligibility.question/essential_worker.ff_leo_corrections"
 				},
 				{
-					"question": "c19.eligibility.question/age.75_up"
-				}
-			]
-		},
-		{
-			"id": "1c",
-			"qualifications": [
-				{
-					"question": "c19.eligibility.question/healthcare_worker"
+					"question": "c19.eligibility.question/long_term_care_resident.are"
 				},
 				{
-					"question": "c19.eligibility.question/long_term_care_resident"
+					"question": "c19.eligibility.question/congregate.do"
 				},
 				{
-					"question": "c19.eligibility.question/essential_worker"
+					"question": "c19.eligibility.question/worker.are_you"
 				},
 				{
-					"question": "c19.eligibility.question/health"
+					"question": "c19.eligibility.question/worker.are_you_a"
 				},
 				{
-					"question": "c19.eligibility.question/age.65_up"
+					"question": "c19.eligibility.question/worker.are_you_a_hotel"
+				},
+				{
+					"question": "c19.eligibility.question/essential_worker.are_you_a_transportation"
 				}
 			]
 		}
