@@ -6,6 +6,15 @@
 		},
 		"eligibility": {
 			"url": "https://www.dhs.wisconsin.gov/covid-19/vaccine-about.htm"
+		},
+		"providers": {
+			"url": "https://www.dhs.wisconsin.gov/covid-19/vaccine-map.htm",
+			"text": "c19.links/vax_providers"
+		},
+		"scheduling_phone": {
+			"url": "tel:844-684-1064",
+			"text": "c19.link/scheduling.phone.wi",
+			"description": "c19.link/scheduling.phone.description.wi"
 		}
 	},
 	"activePhase": "1a",
