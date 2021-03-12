@@ -1,4 +1,25 @@
 String ID,en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th
 c19.eligibility.question/health.1a.dc.inpatient_psychiatric,"Are you an inpatient psychiatric patient?",,,,,,,,,,,,,,
 c19.eligibility.question/congregate.dc,"Do you live in an intermediate care facility, a group home, or another high-risk congregate setting?",,,,,,,,,,,,,,
-c19.link/scheduling.phone.dc,Scheduling Hotline,,,,,,,,,,,,,,
+c19.link/scheduling.phone.dc,"1-855-363-0333",,,,,,,,,,,,,,
+c19.link/scheduling.phone.description.dc,"COVID-19 Call Center",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/health.dc.1b," * Asthma, Chronic Obstructive Pulmonary Disease (COPD), and other Chronic Lung Disease
+ * Bone Marrow and Solid Organ Transplantation
+ * Cancer
+ * Cerebrovascular Disease
+ * Chronic Kidney Disease
+ * Congenital Heart Disease
+ * Diabetes Mellitus
+ * Heart Conditions, such as Heart Failure, Coronary Artery Disease, or Cardiomyopathies
+ * HIV
+ * Hypertension
+ * Immunocompromised State
+ * Inherited Metabolic Disorders
+ * Intellectual and Developmental Disabilities
+ * Liver Disease
+ * Neurologic Conditions
+ * Obesity, BMI - 30 kg/m2
+ * Pregnancy
+ * Severe Genetic Disorders
+ * Sickle Cell Disease
+ * Thalassemia",,,,,,,,,,,,,,

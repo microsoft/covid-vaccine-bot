@@ -86,5 +86,7 @@ c19.eligibility.question/essential_worker.are_you_a_transportation,"Are you a tr
 c19.eligibility.question/housing.are,"Are you experiencing homelessness or living in a shelter?",,,,,,,,,,,,,,
 c19.eligibility.question/tribal.are,"Are you a member of a tribal community?",,,,,,,,,,,,,,
 c19.eligibility.question/worker.are,"Are you a migrant farm worker?",,,,,,,,,,,,,,
+c19.eligibility.question/housing.are_you,"Are you experiencing homelessness?",,,,,,,,,,,,,,
+c19.eligibility.question/government.are_you,"Are you a Continuity of Government personnel?",,,,,,,,,,,,,,
 c19.eligibility.question/essential_worker.are_you_a_medical,"Are you a medical first responder?",,,,,,,,,,,,,,
 c19.eligibility.question/congregate.do_you,"Do you work in a congregate setting?",,,,,,,,,,,,,,

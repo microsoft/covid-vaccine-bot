@@ -23,26 +23,13 @@
 			"text": "c19.links/schedule_vax"
 		},
 		"scheduling_phone": {
-			"url": "tel:",
-			"text": "c19.link/scheduling.phone.dc"
+			"url": "tel:1-855-363-0333",
+			"text": "c19.link/scheduling.phone.dc",
+			"description": "c19.link/scheduling.phone.description.dc"
 		}
 	},
 	"activePhase": "1b",
 	"phases": [
-		{
-			"id": "1a",
-			"qualifications": [
-				{
-					"question": "c19.eligibility.question/healthcare_worker"
-				},
-				{
-					"question": "c19.eligibility.question/long_term_care_resident"
-				},
-				{
-					"question": "c19.eligibility.question/health.1a.DC.inpatient_psychiatric"
-				}
-			]
-		},
 		{
 			"id": "1b",
 			"qualifications": [
@@ -63,34 +50,19 @@
 				},
 				{
 					"question": "c19.eligibility.question/congregate.DC"
+				},
+				{
+					"question": "c19.eligibility.question/housing.are_you"
+				},
+				{
+					"question": "c19.eligibility.question/government.are_you"
+				},
+				{
+					"question": "c19.eligibility.question/health",
+					"moreInfoText": "c19.eligibility.moreinfo/health.dc.1b"
 				}
-			]
-		},
-		{
-			"id": "1c",
-			"qualifications": [
-				{
-					"question": "c19.eligibility.question/healthcare_worker"
-				},
-				{
-					"question": "c19.eligibility.question/long_term_care_resident"
-				},
-				{
-					"question": "c19.eligibility.question/health.1a.DC.inpatient_psychiatric"
-				},
-				{
-					"question": "c19.eligibility.question/essential_worker"
-				},
-				{
-					"question": "c19.eligibility.question/age.65_up"
-				},
-				{
-					"question": "c19.eligibility.question/health"
-				},
-				{
-					"question": "c19.eligibility.question/congregate.DC"
-				}
-			]
+			],
+			"label": "Current Phase"
 		}
 	]
 }
