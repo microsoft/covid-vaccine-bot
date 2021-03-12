@@ -1,6 +1,8 @@
 String ID,en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th
-c19.eligibility.question/multigen.WA,"Are you age 50+ in a multi-generational household?",,,,,,,,,,,,,,
-c19.eligibility.question/health.1b.WA,"Are you 16+ with 2 or more medical conditions?",,,,,,,,,,,,,,
-c19.eligibility.question/congregate_worker.WA,"Do you work in a congregate setting such as a group home",,,,,,,,,,,,,,
-c19.eligibility.question/congregate_services.WA,"Do you experience homelessness and access services or live in a congregate setting such as a shelter or temporary housing?",,,,,,,,,,,,,,
-c19.links/workflow.WA,Washington State PhaseFinder,,,,,,,,,,,,,,
+c19.eligibility.question/multigen.wa,"Are you age 50+ in a multi-generational household?",,,,,,,,,,,,,,
+c19.eligibility.question/health.1b.wa,"Are you 16+ with 2 or more medical conditions?",,,,,,,,,,,,,,
+c19.eligibility.question/congregate_worker.wa,"Do you work in a congregate setting such as a group home",,,,,,,,,,,,,,
+c19.eligibility.question/congregate_services.wa,"Do you experience homelessness and access services or live in a congregate setting such as a shelter or temporary housing?",,,,,,,,,,,,,,
+c19.links/workflow.wa,"Washington State PhaseFinder",,,,,,,,,,,,,,
+c19.link/scheduling.phone.wa,"1-888-856-5816",,,,,,,,,,,,,,
+c19.link/scheduling.phone.description.wa,"State COVID-19 Assistance Hotline",,,,,,,,,,,,,,
