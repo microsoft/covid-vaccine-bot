@@ -1,3 +1,5 @@
 String ID,en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th
-c19.eligibility.question/essential_worker.1b.NY,"Are you a K-12 personnel, first responder, public safety worker, or public transit worker?",,,,,,,,,,,,,,
-c19.links/workflow.NY,"Am I Eligible app",,,,,,,,,,,,,,
+c19.eligibility.question/essential_worker.1b.ny,"Are you a K-12 personnel, first responder, public safety worker, or public transit worker?",,,,,,,,,,,,,,
+c19.links/workflow.ny,"Am I Eligible app",,,,,,,,,,,,,,
+c19.link/scheduling.phone.ny,"1-833-697-4829",,,,,,,,,,,,,,
+c19.link/scheduling.phone.description.ny,"New York State COVID-19 Vaccination Hotline",,,,,,,,,,,,,,
