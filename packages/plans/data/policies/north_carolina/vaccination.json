@@ -9,59 +9,48 @@
 		},
 		"eligibility": {
 			"url": "https://covid19.ncdhhs.gov/vaccines/find-your-spot-take-your-shot",
-			"scrapeQuery": ["article"]
+			"scrapeQuery": [
+				"article"
+			]
+		},
+		"scheduling_phone": {
+			"url": "tel:1-888-675-4567",
+			"text": "c19.link/scheduling.phone.nc",
+			"description": "c19.link/scheduling.phone.description.nc"
 		}
 	},
-	"activePhase": "1a",
+	"activePhase": "current",
 	"phases": [
 		{
-			"id": "1a",
+			"id": "current",
+			"label": "Current",
 			"qualifications": [
 				{
-					"question": "c19.eligibility.question/healthcare_worker"
+					"question": "c19.eligibility.question/healthcare_worker.are"
 				},
 				{
-					"question": "c19.eligibility.question/long_term_care_resident"
-				}
-			]
-		},
-		{
-			"id": "1b",
-			"qualifications": [
-				{
-					"question": "c19.eligibility.question/healthcare_worker"
-				},
-				{
-					"question": "c19.eligibility.question/long_term_care_resident"
-				},
-				{
-					"question": "c19.eligibility.question/essential_worker.1b"
-				},
-				{
-					"question": "c19.eligibility.question/age.75_up"
-				}
-			]
-		},
-		{
-			"id": "1c",
-			"qualifications": [
-				{
-					"question": "c19.eligibility.question/healthcare_worker"
-				},
-				{
-					"question": "c19.eligibility.question/long_term_care_resident"
-				},
-				{
-					"question": "c19.eligibility.question/essential_worker"
-				},
-				{
-					"question": "c19.eligibility.question/health"
+					"question": "c19.eligibility.question/long_term_care_resident.are"
 				},
 				{
 					"question": "c19.eligibility.question/age.65_up"
 				},
 				{
+					"question": "c19.eligibility.question/essential_worker",
+					"moreInfoUrl": "https://covid19.ncdhhs.gov/vaccines/find-your-spot-take-your-shot/deeper-dive-group-3"
+				}
+			]
+		},
+		{
+			"id": "next",
+			"label": "Next",
+			"qualifications": [
+				{
 					"question": "c19.eligibility.question/congregate"
+				},
+				{
+					"question": "c19.eligibility.question/age.are_you_age",
+					"moreInfoText": "c19.eligibility.moreinfo/age.are_you_age.nc.next",
+					"moreInfoUrl": "https://covid19.ncdhhs.gov/vaccines/find-your-spot-take-your-shot/deeper-dive-group-4"
 				}
 			]
 		}
