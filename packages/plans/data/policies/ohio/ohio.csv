@@ -1,3 +1,28 @@
 String ID,en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th
-c19.eligibility.question/health.1a.OH.psychiatric,Are you a psychiatric hospital patient?,,,,,,,,,,,,,,
-c19.eligibility.question/health.1b.OH,"Are you living with severe congenital, developmental, or early-onset conditions?",,,,,,,,,,,,,,
+c19.eligibility.question/health.1a.oh.psychiatric,"Are you a psychiatric hospital patient?",,,,,,,,,,,,,,
+c19.eligibility.question/health.1b.oh,"Are you living with severe congenital, developmental, or early-onset conditions?",,,,,,,,,,,,,,
+c19.link/scheduling.phone.oh,"1-833-427-5634",,,,,,,,,,,,,,
+c19.link/scheduling.phone.description.oh,"COVID-19 Hotline",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/healthcare_worker.oh.current,"Healthcare workers and personnel who are routinely involved in the care of COVID-19 patients.",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/congregate.oh.current,"* Residents and staff in nursing homes.
+* Residents and staff in assisted living facilities.
+* Patients and staff at state psychiatric hospitals.
+* Residents and staff at our two state-run homes for Ohio veterans.
+",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/essential_worker.ff_leo_corrections.oh.current,"Law enforcement and corrections officers: There are approximately 76,000 Ohioans eligible in this category.
+ * This group includes sworn law enforcement officers and peace officers who have first responder or direct supervisory responsibilities. These individuals must be active duty, working a regular minimum of 20 hours a week. Eligibility does not include retired, “special,” or reserve officers.  
+      * Police officers.
+      * Sheriff’s deputies.
+      * Ohio State Highway Patrol troopers.
+      * Special jurisdiction officers: Other state or federal enforcement officers such as Ohio Department of Natural Resources (ODNR) enforcement staff, pharmacy board investigators, BCI agents, state fire marshal investigators, federal transportation security officers, and other federal law enforcement officers who do not have access to vaccination from federal sources.
+ * Corrections staff: Eligible are corrections staff, including probation and parole staff, who provide direct services to an adult or juvenile inmate or court-supervised individuals.
+ * Firefighters: Individuals who have a valid active firefighting certificate in the State of Ohio who are active members or employees of a recognized fire department. This does not include retired, emeritus or reserve individuals.",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/worker.do.oh.current,"Funeral services: This group includes licensed staff and active apprentices in the funeral services industry. There are approximately 3,600 eligible Ohioans in this category. 
+ * Embalmers/morticians.
+ * Funeral home directors.
+ * Crematory operators.
+ * Apprentices.",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/essential_worker.are_you.oh.current,"Child care services: Staff members at child care centers and pre-kindergarten programs who have regular, ongoing direct contact with children enrolled in these programs. There are approximately 40,400 eligible Ohioans in this category.
+ * Administrators, lead and assistant teachers, and substitute teachers enrolled in Ohio’s Professional Registry who are currently working in open child care or pre-kindergarten programs. 
+ * Licensing specialists employed by the Ohio Department of Job and Family Services or a county job and family services agency. 
+ * The program does NOT include parent volunteers, board members, or owners/administrators who do not provide in-classroom support.",,,,,,,,,,,,,,
