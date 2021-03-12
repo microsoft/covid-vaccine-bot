@@ -3,7 +3,15 @@
 		"info": {
 			"text": "CDC/Utah/state_link",
 			"url": "https://coronavirus.utah.gov/vaccine/",
-			"scrapeQuery": [".x-text"]
+			"scrapeQuery": [
+				".x-text"
+			]
+		},
+		"eligibility_plan": {
+			"url": "https://coronavirus-download.utah.gov/Health/Vaccine_Timeline.pdf"
+		},
+		"eligibility": {
+			"url": "https://coronavirus.utah.gov/vaccine-distribution/#eligibility"
 		}
 	},
 	"activePhase": "1a",
