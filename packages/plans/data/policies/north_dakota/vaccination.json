@@ -9,18 +9,30 @@
 		},
 		"locator": {
 			"url": "https://www.health.nd.gov/covidvaccinelocator"
+		},
+		"providers": {
+			"url": "https://www.health.nd.gov/covidvaccinelocator",
+			"text": "c19.links/vax_providers"
+		},
+		"scheduling_phone": {
+			"url": "tel:701-328-2372",
+			"text": "c19.link/scheduling.phone.nd",
+			"description": "c19.link/scheduling.phone.description.nd"
 		}
 	},
-	"activePhase": "1a",
+	"activePhase": "1c",
 	"phases": [
 		{
 			"id": "1a",
 			"qualifications": [
 				{
-					"question": "c19.eligibility.question/healthcare_worker"
+					"question": "c19.eligibility.question/healthcare_worker.are"
 				},
 				{
-					"question": "c19.eligibility.question/long_term_care_resident"
+					"question": "c19.eligibility.question/essential_worker.are"
+				},
+				{
+					"question": "c19.eligibility.question/long_term_care_resident.are"
 				}
 			]
 		},
@@ -28,22 +40,27 @@
 			"id": "1b",
 			"qualifications": [
 				{
-					"question": "c19.eligibility.question/healthcare_worker"
+					"question": "c19.eligibility.question/healthcare_worker.are"
 				},
 				{
-					"question": "c19.eligibility.question/long_term_care_resident"
+					"question": "c19.eligibility.question/long_term_care_resident.are"
 				},
 				{
-					"question": "c19.eligibility.question/essential_worker.1b.ND"
+					"question": "c19.eligibility.question/essential_worker.are"
 				},
 				{
-					"question": "c19.eligibility.question/health.1b.ND"
+					"question": "c19.eligibility.question/health.1b.ND",
+					"moreInfoText": "c19.eligibility.moreinfo/health.1b.nd.nd.1b",
+					"moreInfoUrl": "https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html"
 				},
 				{
 					"question": "c19.eligibility.question/age.65_up"
 				},
 				{
 					"question": "c19.eligibility.question/congregate"
+				},
+				{
+					"question": "c19.eligibility.question/essential_worker.1b.nd"
 				}
 			]
 		},
@@ -57,13 +74,17 @@
 					"question": "c19.eligibility.question/long_term_care_resident"
 				},
 				{
-					"question": "c19.eligibility.question/essential_worker"
+					"question": "c19.eligibility.question/essential_worker",
+					"moreInfoUrl": "https://www.health.nd.gov/covid-19-vaccine-priority-groups"
 				},
 				{
-					"question": "c19.eligibility.question/health"
+					"question": "c19.eligibility.question/health",
+					"moreInfoText": "c19.eligibility.moreinfo/health.nd.1c"
 				},
 				{
-					"question": "c19.eligibility.question/age.65_up"
+					"question": "c19.eligibility.question/essential_worker.are_you_a_transportation",
+					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.are_you_a_transportation.nd.1c",
+					"moreInfoUrl": "https://www.health.nd.gov/covidvaccinelocator"
 				},
 				{
 					"question": "c19.eligibility.question/congregate"
