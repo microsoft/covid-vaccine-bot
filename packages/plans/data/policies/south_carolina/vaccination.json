@@ -16,7 +16,7 @@
 			"description": "c19.link/scheduling.phone.description.sc"
 		}
 	},
-	"activePhase": "1a",
+	"activePhase": "1b",
 	"phases": [
 		{
 			"id": "1a",
@@ -42,7 +42,17 @@
 					"question": "c19.eligibility.question/essential_worker.1b"
 				},
 				{
-					"question": "c19.eligibility.question/age.75_up"
+					"question": "c19.eligibility.question/age.55_up"
+				},
+				{
+					"question": "c19.eligibility.question/age.are_you_age",
+					"moreInfoText": "c19.eligibility.moreinfo/age.are_you_age.sc.1b"
+				},
+				{
+					"question": "c19.eligibility.question/congregate"
+				},
+				{
+					"question": "c19.eligibility.question/healthcare_worker.are"
 				}
 			]
 		},
