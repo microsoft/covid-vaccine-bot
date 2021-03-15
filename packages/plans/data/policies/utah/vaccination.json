@@ -23,13 +23,20 @@
 					"question": "c19.eligibility.question/healthcare_worker"
 				},
 				{
-					"question": "c19.eligibility.question/long_term_care_resident"
+					"question": "c19.eligibility.question/long_term_care_resident.are"
 				},
 				{
 					"question": "c19.eligibility.question/essential_worker.k12"
 				},
 				{
-					"question": "c19.eligibility.question/essential_worker.1a.UT.first_responder"
+					"question": "c19.eligibility.question/essential_worker.are"
+				},
+				{
+					"question": "c19.eligibility.question/age.are"
+				},
+				{
+					"question": "c19.eligibility.question/age.are_you_age",
+					"moreInfoText": "c19.eligibility.moreinfo/age.are_you_age.ut.1a"
 				}
 			]
 		},
