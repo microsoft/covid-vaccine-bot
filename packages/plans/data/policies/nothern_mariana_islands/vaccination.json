@@ -3,6 +3,14 @@
 		"info": {
 			"text": "CDC/Northern_Mariana_Islands/state_link",
 			"url": "https://www.vaccinatecnmi.com/"
+		},
+		"scheduling": {
+			"url": "https://www.vaccinatecnmi.com/covid-19/registration/",
+			"text": "c19.links/schedule_vax"
+		},
+		"scheduling_phone": {
+			"url": "tel:670-682-7468",
+			"text": "c19.link/scheduling.phone.mp"
 		}
 	},
 	"activePhase": "1a",
@@ -15,43 +23,19 @@
 				},
 				{
 					"question": "c19.eligibility.question/long_term_care_resident"
-				}
-			]
-		},
-		{
-			"id": "1b",
-			"qualifications": [
-				{
-					"question": "c19.eligibility.question/healthcare_worker"
 				},
 				{
-					"question": "c19.eligibility.question/long_term_care_resident"
+					"question": "c19.eligibility.question/age.are"
 				},
 				{
-					"question": "c19.eligibility.question/essential_worker.1b"
+					"question": "c19.eligibility.question/worker.are_you"
 				},
 				{
-					"question": "c19.eligibility.question/age.75_up"
-				}
-			]
-		},
-		{
-			"id": "1c",
-			"qualifications": [
-				{
-					"question": "c19.eligibility.question/healthcare_worker"
+					"question": "c19.eligibility.question/essential_worker.are_you_an_essential",
+					"moreInfoUrl": "https://www.vaccinatecnmi.com/#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJ1cmwiOiJodHRwczpcL1wvd3d3LnZhY2NpbmF0ZWNubWkuY29tXC93cC1jb250ZW50XC91cGxvYWRzXC8yMDIxXC8wM1wvUGhhc2VzLVdlYnNpdGUuanBnIiwidHlwZSI6ImltYWdlIiwidGl0bGUiOiJQaGFzZXMtV2Vic2l0ZSJ9"
 				},
 				{
-					"question": "c19.eligibility.question/long_term_care_resident"
-				},
-				{
-					"question": "c19.eligibility.question/essential_worker"
-				},
-				{
-					"question": "c19.eligibility.question/health"
-				},
-				{
-					"question": "c19.eligibility.question/age.65_up"
+					"question": "c19.eligibility.question/essential_worker.are_you_an"
 				}
 			]
 		}
