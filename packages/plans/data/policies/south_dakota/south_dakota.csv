@@ -1,3 +1,5 @@
 String ID,en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th
-c19.eligibility.question/essential_worker.1b.SD,"Are you K-12 or college personnel, or a funeral service worker?",,,,,,,,,,,,,,
-c19.eligibility.question/health.1b.SD,Are you age 16+ with 2 or more high-risk medical conditions?,,,,,,,,,,,,,,
+c19.eligibility.question/essential_worker.1b.sd,"Are you K-12 or college personnel, or a funeral service worker?",,,,,,,,,,,,,,
+c19.eligibility.question/health.1b.sd,"Are you age 16+ with 2 or more high-risk medical conditions?",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/essential_worker.sd.1d,"This includes EMS, public health workers, law enforcement, correctional officers, teachers and other school/college staff, and funeral service workers.",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/health.sd.1d,"This includes those undergoing dialysis, post-transplant, and active cancer, as well as those with medical conditions that put them at a higher risk for severe COVID-19 infection, including ",,,,,,,,,,,,,,
