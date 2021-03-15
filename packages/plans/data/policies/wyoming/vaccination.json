@@ -3,7 +3,9 @@
 		"info": {
 			"text": "CDC/Wyoming/state_link",
 			"url": "https://health.wyo.gov/publichealth/immunization/wyoming-covid-19-vaccine-information/",
-			"scrapeQuery": ["#content-area"]
+			"scrapeQuery": [
+				"#content-area"
+			]
 		}
 	},
 	"activePhase": "1a",
@@ -15,10 +17,13 @@
 					"question": "c19.eligibility.question/healthcare_worker"
 				},
 				{
-					"question": "c19.eligibility.question/long_term_care_resident"
+					"question": "c19.eligibility.question/long_term_care_resident.are"
 				},
 				{
 					"question": "c19.eligibility.question/essential_worker.leo"
+				},
+				{
+					"question": "c19.eligibility.question/exposure_to_infectious_material.do"
 				}
 			]
 		},
@@ -38,7 +43,13 @@
 					"question": "c19.eligibility.question/essential_worker.1b"
 				},
 				{
-					"question": "c19.eligibility.question/age.70_up"
+					"question": "c19.eligibility.question/age.65_up"
+				},
+				{
+					"question": "c19.eligibility.question/health.are_you_an"
+				},
+				{
+					"question": "c19.eligibility.question/health.are_you_on"
 				}
 			]
 		},
@@ -58,7 +69,13 @@
 					"question": "c19.eligibility.question/health"
 				},
 				{
-					"question": "c19.eligibility.question/age.65_up"
+					"question": "c19.eligibility.question/age.are"
+				},
+				{
+					"question": "c19.eligibility.question/congregate"
+				},
+				{
+					"question": "c19.eligibility.question/housing.do"
 				}
 			]
 		}
