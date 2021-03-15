@@ -3,7 +3,17 @@
 		"info": {
 			"text": "CDC/Wyoming/state_link",
 			"url": "https://health.wyo.gov/publichealth/immunization/wyoming-covid-19-vaccine-information/",
-			"scrapeQuery": ["#content-area"]
+			"scrapeQuery": [
+				"#content-area"
+			]
+		},
+		"eligibility_plan": {
+			"url": "https://health.wyo.gov/wp-content/uploads/2021/03/WDH_Phase-1-COVID-19-Vaccination-Priorities3.8.21.pdf"
+		},
+		"scheduling_phone": {
+			"url": "tel:800-438-5795",
+			"text": "c19.link/scheduling.phone.wy",
+			"description": "c19.link/scheduling.phone.description.wy"
 		}
 	},
 	"activePhase": "1a",
