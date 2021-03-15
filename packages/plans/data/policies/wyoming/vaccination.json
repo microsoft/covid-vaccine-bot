@@ -55,9 +55,6 @@
 				},
 				{
 					"question": "c19.eligibility.question/health.are_you_an"
-				},
-				{
-					"question": "c19.eligibility.question/health.are_you_on"
 				}
 			]
 		},
