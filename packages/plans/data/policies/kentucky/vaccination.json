@@ -2,7 +2,7 @@
 	"links": {
 		"eligibility": {
 			"url": "https://chfs.ky.gov/agencies/dph/covid19/Phasesgraphic1-4.pdf"
-		},
+		}, 
 		"eligibility_plan": {
 			"url": ""
 		},
@@ -27,7 +27,7 @@
 			"text": "c19.link/scheduling.phone.ky"
 		}
 	},
-	"activePhase": "1b",
+	"activePhase": "1c",
 	"phases": [
 		{
 			"id": "1a",
