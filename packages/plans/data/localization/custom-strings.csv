@@ -101,3 +101,4 @@ c19.eligibility.question/health.are_you_on,"Are you on the Wyoming Medicaid Comm
 c19.eligibility.question/housing.do,"Do you live in a college dormitory?",,,,,,,,,,,,,,
 c19.eligibility.question/healthcare_worker.are_you_a,"Are you a non-frontline essential health care worker?",,,,,,,,,,,,,,
 c19.eligibility.question/congregate.are_you,"Are you a high-risk resident in a congregate setting?",,,,,,,,,,,,,,
+c19.eligibility.question/age.are_you_aged,"Are you aged 55+ with underlying health conditions?",,,,,,,,,,,,,,
