@@ -10,9 +10,13 @@
 		"eligibility": {
 			"url": "https://doh.sd.gov/documents/COVID19/Vaccine/COVIDVaccineAvailability_Distribution.pdf",
 			"content": "pdf"
+		},
+		"providers": {
+			"url": "https://doh.sd.gov/COVID/Vaccine/ProviderMap/default.aspx",
+			"text": "c19.links/vax_providers"
 		}
 	},
-	"activePhase": "1a",
+	"activePhase": "1d",
 	"phases": [
 		{
 			"id": "1a",
@@ -74,6 +78,30 @@
 				},
 				{
 					"question": "c19.eligibility.question/congregate"
+				}
+			]
+		},
+		{
+			"id": "1d",
+			"label": "1d",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/healthcare_worker"
+				},
+				{
+					"question": "c19.eligibility.question/long_term_care_resident.are"
+				},
+				{
+					"question": "c19.eligibility.question/essential_worker",
+					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.sd.1d"
+				},
+				{
+					"question": "c19.eligibility.question/age.65_up"
+				},
+				{
+					"question": "c19.eligibility.question/health",
+					"moreInfoText": "c19.eligibility.moreinfo/health.sd.1d",
+					"moreInfoUrl": "https://doh.sd.gov/COVID/Vaccine/medicalconditions/"
 				}
 			]
 		}
