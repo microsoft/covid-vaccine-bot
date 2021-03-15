@@ -47,6 +47,9 @@
 				{
 					"question": "c19.eligibility.question/age.are_you_age",
 					"moreInfoText": "c19.eligibility.moreinfo/age.are_you_age.vt.1a"
+				},
+				{
+					"question": "c19.eligibility.question/people_of_color.are"
 				}
 			]
 		},
