@@ -97,3 +97,5 @@ c19.eligibility.question/essential_worker.are_you_a_frontline,"Are you a frontli
 c19.eligibility.question/essential_worker.are_you_an_essential,"Are you an essential worker outside of healthcare?",,,,,,,,,,,,,,
 c19.eligibility.question/essential_worker.are_you_an_educator,"Are you an educator with age of 40+?",,,,,,,,,,,,,,
 c19.eligibility.question/worker.do,"Do you work in the funeral services industry?",,,,,,,,,,,,,,
+c19.eligibility.question/health.are_you_on,"Are you on the Wyoming Medicaid Community Choices Waiver and Developmental waivers?",,,,,,,,,,,,,,
+c19.eligibility.question/housing.do,"Do you live in a college dormitory?",,,,,,,,,,,,,,
