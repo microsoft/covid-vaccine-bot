@@ -11,9 +11,17 @@
 		"scheduling": {
 			"text": "c19.links/schedule_vax",
 			"url": "https://podvaccine.azdhs.gov/"
+		},
+		"workflow": {
+			"url": "https://azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-find-vaccine",
+			"text": "c19.links/vax_quiz"
+		},
+		"scheduling_phone": {
+			"url": "tel:602-542-1000",
+			"text": "c19.link/scheduling.phone.az"
 		}
 	},
-	"activePhase": "1b_prioritized_75",
+	"activePhase": "1b",
 	"phases": [
 		{
 			"id": "1a",
@@ -30,78 +38,6 @@
 			]
 		},
 		{
-			"id": "1b_prioritized_75",
-			"label": "Prioritized Phase 1B",
-			"qualifications": [
-				{
-					"question": "c19.eligibility.question/healthcare_worker.AZ"
-				},
-				{
-					"question": "c19.eligibility.question/long_term_care_resident.AZ"
-				},
-				{
-					"question": "c19.eligibility.question/ems_worker.AZ"
-				},
-				{
-					"question": "c19.eligibility.question/education_childcare_worker.AZ"
-				},
-				{
-					"question": "c19.eligibility.question/proctective_services_worker.AZ"
-				},
-				{
-					"question": "c19.eligibility.question/age.75_up"
-				}
-			]
-		},
-		{
-			"id": "1b_prioritized_70",
-			"label": "Prioritized Phase 1B",
-			"qualifications": [
-				{
-					"question": "c19.eligibility.question/healthcare_worker.AZ"
-				},
-				{
-					"question": "c19.eligibility.question/long_term_care_resident.AZ"
-				},
-				{
-					"question": "c19.eligibility.question/ems_worker.AZ"
-				},
-				{
-					"question": "c19.eligibility.question/education_childcare_worker.AZ"
-				},
-				{
-					"question": "c19.eligibility.question/proctective_services_worker.AZ"
-				},
-				{
-					"question": "c19.eligibility.question/age.70_up"
-				}
-			]
-		},
-		{
-			"id": "1b_prioritized_65",
-			"label": "Prioritized Phase 1B",
-			"qualifications": [
-				{
-					"question": "c19.eligibility.question/healthcare_worker.AZ"
-				},
-				{
-					"question": "c19.eligibility.question/long_term_care_resident.AZ"
-				},
-				{
-					"question": "c19.eligibility.question/ems_worker.AZ"
-				},
-				{
-					"question": "c19.eligibility.question/education_childcare_worker.AZ"
-				},
-				{
-					"question": "c19.eligibility.question/proctective_services_worker.AZ"
-				},
-				{
-					"question": "c19.eligibility.question/age.65_up"
-				}
-			]
-		},
-		{
 			"id": "1b",
 			"qualifications": [
 				{
@@ -111,39 +47,46 @@
 					"question": "c19.eligibility.question/long_term_care_resident.AZ"
 				},
 				{
-					"question": "c19.eligibility.question/ems_worker.AZ"
-				},
-				{
 					"question": "c19.eligibility.question/education_childcare_worker.AZ"
-				},
-				{
-					"question": "c19.eligibility.question/proctective_services_worker.AZ"
 				},
 				{
 					"question": "c19.eligibility.question/age.65_up"
 				},
 				{
-					"question": "c19.eligibility.question/essential_worker.1b"
-				},
-				{
-					"question": "c19.eligibility.question/congregate.AZ"
+					"question": "c19.eligibility.question/essential_worker",
+					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.az.1b"
 				}
-			]
+			],
+			"label": "1b_65 and older"
 		},
 		{
 			"id": "1c",
 			"qualifications": [
 				{
-					"question": "c19.eligibility.question/essential_worker.1b"
+					"question": "c19.eligibility.question/age.55_up"
 				},
 				{
-					"question": "c19.eligibility.question/age.65_up"
+					"question": "c19.eligibility.question/healthcare_worker.az"
 				},
 				{
-					"question": "c19.eligibility.question/congregate.AZ"
+					"question": "c19.eligibility.question/long_term_care_resident.are"
 				},
 				{
-					"question": "c19.eligibility.question/health"
+					"question": "c19.eligibility.question/education_childcare_worker.az"
+				},
+				{
+					"question": "c19.eligibility.question/essential_worker",
+					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.az.1c"
+				}
+			],
+			"label": "1b 55 and older"
+		},
+		{
+			"id": "1b_16_and_older",
+			"label": "1b 16 and older",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.16_up"
 				}
 			]
 		}
