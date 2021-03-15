@@ -10,7 +10,7 @@
 		{
 			"id": "1a",
 			"qualifications": [
-				{
+				{ 
 					"question": "c19.eligibility.question/healthcare_worker.are"
 				},
 				{
@@ -18,10 +18,11 @@
 				},
 				{
 					"question": "c19.eligibility.question/health.1a.FL.extremely_vulnerable",
-					"moreInfoUrl": "http://ww11.doh.state.fl.us/comm/_partners/covid19_report_archive/covid-physician-form/EO-21-47-Form.pdf"
+					"moreInfoUrl": "",
+					"moreInfoText": "c19.eligibility.moreinfo/health.1a.fl.extremely_vulnerable.fl.1a"
 				},
 				{
-					"question": "c19.eligibility.question/age.65_up"
+					"question": "c19.eligibility.question/age.60_up"
 				},
 				{
 					"question": "c19.eligibility.question/essential_worker.are_you_a"
@@ -29,7 +30,8 @@
 				{
 					"question": "c19.eligibility.question/essential_worker.are_you_a_k"
 				}
-			]
+			],
+			"label": "Current phase"
 		}
 	]
 }
