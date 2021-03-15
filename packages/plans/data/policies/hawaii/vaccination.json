@@ -27,7 +27,7 @@
 			"text": "c19.link/scheduling.phone.hi"
 		}
 	},
-	"activePhase": "1b",
+	"activePhase": "1c",
 	"phases": [
 		{
 			"id": "1a",
@@ -72,7 +72,8 @@
 					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.hi.1c"
 				},
 				{
-					"question": "c19.eligibility.question/health"
+					"question": "c19.eligibility.question/health",
+					"moreInfoText": "c19.eligibility.moreinfo/health.hi.1c"
 				},
 				{
 					"question": "c19.eligibility.question/age.65_up"
