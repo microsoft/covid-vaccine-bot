@@ -17,9 +17,13 @@
 		"providers": {
 			"text": "c19.links/vax_providers",
 			"url": "https://www.mass.gov/info-details/covid-19-vaccination-locations"
+		},
+		"scheduling": {
+			"url": "https://vaccinesignup.mass.gov/",
+			"text": "c19.links/schedule_vax"
 		}
 	},
-	"activePhase": "2step1",
+	"activePhase": "phase2step2",
 	"phases": [
 		{
 			"id": "1",
@@ -52,27 +56,27 @@
 			"qualifications": [
 				{
 					"question": "c19.eligibility.question/healthcare_worker",
-					"moreInfoText": "c19.eligibility.moreinfo/healthcare_worker.MA",
+					"moreInfoText": "c19.eligibility.moreinfo/healthcare_worker.ma.2step1",
 					"moreInfoUrl": "https://www.mass.gov/info-details/covid-19-vaccinations-for-health-care-workers"
 				},
 				{
 					"question": "c19.eligibility.question/long_term_care_resident_or_worker.MA",
-					"moreInfoText": "c19.eligibility.moreinfo/long_term_care_resident_or_worker.MA",
-					"moreInfoUrl": "https://www.mass.gov/info-details/massachusetts-covid-19-vaccination-phases#phase-1-"
+					"moreInfoText": "c19.eligibility.moreinfo/long_term_care_resident_or_worker.ma.ma.2step1",
+					"moreInfoUrl": "https://www.mass.gov/info-details/covid-19-vaccinations-for-nursing-homes-rest-homes-and-assisted-living-residences"
 				},
 				{
 					"question": "c19.eligibility.question/first_responders.MA",
-					"moreInfoText": "c19.eligibility.moreinfo/first_responders.MA",
+					"moreInfoText": "c19.eligibility.moreinfo/first_responders.ma.ma.2step1",
 					"moreInfoUrl": "https://www.mass.gov/info-details/covid-19-vaccinations-for-first-responders"
 				},
 				{
 					"question": "c19.eligibility.question/congregate.MA",
-					"moreInfoText": "c19.eligibility.moreinfo/congregate.MA",
+					"moreInfoText": "c19.eligibility.moreinfo/congregate.ma.ma.2step1",
 					"moreInfoUrl": "https://www.mass.gov/info-details/covid-19-vaccinations-for-congregate-care-settings"
 				},
 				{
 					"question": "c19.eligibility.question/age.75_up",
-					"moreInfoText": "c19.eligibility.moreinfo/age.75_up.MA",
+					"moreInfoText": "c19.eligibility.moreinfo/age.75_up.ma.2step1",
 					"moreInfoUrl": "https://www.mass.gov/info-details/covid-19-vaccinations-for-people-ages-75-and-older"
 				}
 			]
@@ -82,17 +86,40 @@
 			"label": "Phase 2, Step 2",
 			"qualifications": [
 				{
-					"question": "c19.eligibility.question/age.75_up"
+					"question": "c19.eligibility.question/age.65_up",
+					"moreInfoUrl": "https://www.mass.gov/info-details/covid-19-vaccinations-for-people-ages-65-and-older"
 				},
 				{
-					"question": "c19.eligibility.question/age.65_up"
-				},
-				{
-					"question": "c19.eligibility.question/health.are"
+					"question": "c19.eligibility.question/health.are",
+					"moreInfoUrl": "https://www.mass.gov/info-details/covid-19-vaccinations-for-individuals-with-certain-medical-conditions"
 				},
 				{
 					"question": "c19.eligibility.question/congregate.are",
-					"moreInfoUrl": "https://www.mass.gov/doc/massachusetts-senior-affordable-housing-covid-19-vaccine-information/download"
+					"moreInfoUrl": "https://www.mass.gov/doc/massachusetts-senior-affordable-housing-covid-19-vaccine-information/"
+				},
+				{
+					"question": "c19.eligibility.question/healthcare_worker",
+					"moreInfoText": "c19.eligibility.moreinfo/healthcare_worker.ma.phase2step2",
+					"moreInfoUrl": "https://www.mass.gov/info-details/covid-19-vaccinations-for-health-care-workers"
+				},
+				{
+					"question": "c19.eligibility.question/long_term_care_resident.are",
+					"moreInfoText": "c19.eligibility.moreinfo/long_term_care_resident.are.ma.phase2step2",
+					"moreInfoUrl": "https://www.mass.gov/info-details/covid-19-vaccinations-for-nursing-homes-rest-homes-and-assisted-living-residences"
+				},
+				{
+					"question": "c19.eligibility.question/essential_worker.are",
+					"moreInfoUrl": "https://www.mass.gov/info-details/covid-19-vaccinations-for-first-responders",
+					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.are.ma.phase2step2"
+				},
+				{
+					"question": "c19.eligibility.question/congregate.ma",
+					"moreInfoText": "c19.eligibility.moreinfo/congregate.ma.ma.phase2step2",
+					"moreInfoUrl": "https://www.mass.gov/info-details/covid-19-vaccinations-for-congregate-care-settings"
+				},
+				{
+					"question": "c19.eligibility.question/essential_worker.are_you",
+					"moreInfoUrl": "https://www.mass.gov/info-details/covid-19-vaccinations-for-k-12-educators-child-care-workers-and-school-staff"
 				}
 			]
 		}
