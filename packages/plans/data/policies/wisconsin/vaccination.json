@@ -42,6 +42,13 @@
 				},
 				{
 					"question": "c19.eligibility.question/healthcare_worker"
+				},
+				{
+					"question": "c19.eligibility.question/congregate.do"
+				},
+				{
+					"question": "c19.eligibility.question/healthcare_worker.are_you_a",
+					"moreInfoText": "c19.eligibility.moreinfo/healthcare_worker.are_you_a.wi.1a"
 				}
 			]
 		},
