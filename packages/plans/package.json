@@ -7,6 +7,7 @@
 		"assemble_localization": "ts-node scripts/assembleLocalization",
 		"assemble_policies": "ts-node scripts/assemblePolicies",
 		"assemble_sitelist": "ts-node scripts/aggregateInfoSites",
+		"generate_review_document": "ts-node scripts/generateReviewDocument",
 		"test": "ts-node scripts/validatePolicies",
 		"build": "run-s assemble_localization assemble_policies assemble_sitelist",
 		"deploy_resources": "ts-node scripts/healthbot/deployResources",

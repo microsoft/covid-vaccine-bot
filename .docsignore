@@ -7,3 +7,4 @@ packages/plans/data/
 .cache/
 robots.txt
 build/
+dist/
