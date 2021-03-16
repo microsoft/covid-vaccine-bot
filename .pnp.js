@@ -4542,6 +4542,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["firebase", "npm:8.2.9"],
             ["mobx", "npm:5.15.7"],
             ["mobx-react-lite", "virtual:e6c1b5daae5e8ccf3df7b139ce564cb8182744026a2afe18b1f1344b3a16751fcb5766cc6d853f830e1b4e8af99f8651156df30eb774535cab3b155e18c5e599#npm:2.2.2"],
+            ["npm-run-all", "npm:4.1.5"],
             ["office-ui-fabric-react", "virtual:e6c1b5daae5e8ccf3df7b139ce564cb8182744026a2afe18b1f1344b3a16751fcb5766cc6d853f830e1b4e8af99f8651156df30eb774535cab3b155e18c5e599#npm:7.162.1"],
             ["react", "npm:17.0.1"],
             ["react-dom", "virtual:e6c1b5daae5e8ccf3df7b139ce564cb8182744026a2afe18b1f1344b3a16751fcb5766cc6d853f830e1b4e8af99f8651156df30eb774535cab3b155e18c5e599#npm:17.0.1"],
@@ -4549,6 +4550,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-router-dom", "virtual:e6c1b5daae5e8ccf3df7b139ce564cb8182744026a2afe18b1f1344b3a16751fcb5766cc6d853f830e1b4e8af99f8651156df30eb774535cab3b155e18c5e599#npm:5.2.0"],
             ["react-scripts", "virtual:e6c1b5daae5e8ccf3df7b139ce564cb8182744026a2afe18b1f1344b3a16751fcb5766cc6d853f830e1b4e8af99f8651156df30eb774535cab3b155e18c5e599#npm:4.0.3"],
             ["satcheljs", "virtual:e6c1b5daae5e8ccf3df7b139ce564cb8182744026a2afe18b1f1344b3a16751fcb5766cc6d853f830e1b4e8af99f8651156df30eb774535cab3b155e18c5e599#npm:4.2.3"],
+            ["shx", "npm:0.3.3"],
             ["typescript", "patch:typescript@npm%3A4.1.5#builtin<compat/typescript>::version=4.1.5&hash=cc6730"],
             ["web-vitals", "npm:1.1.0"]
           ],

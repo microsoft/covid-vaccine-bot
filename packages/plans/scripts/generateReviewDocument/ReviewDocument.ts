@@ -20,7 +20,9 @@ export class ReviewDocument {
 	}
 
 	private printRegion(region: Region, prefix = '', level = 1): string {
-		const links = region.plan?.links || ({} as Record<string, Link>)
+		const links =
+			(region.plan?.links as Record<string, Link>) ||
+			({} as Record<string, Link>)
 		const phases: RolloutPhase[] = region.plan?.phases || []
 		const subregions = region.regions || []
 		const activePhase = region.plan?.activePhase
