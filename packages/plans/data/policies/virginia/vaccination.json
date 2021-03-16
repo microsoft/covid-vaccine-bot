@@ -46,7 +46,7 @@
 					"question": "c19.eligibility.question/age.65_up"
 				},
 				{
-					"question": "c19.eligibility.question/congregate.VA"
+					"question": "c19.eligibility.question/congregate.va"
 				},
 				{
 					"question": "c19.eligibility.question/age.are_you_age"
@@ -72,7 +72,7 @@
 					"question": "c19.eligibility.question/age.65_up"
 				},
 				{
-					"question": "c19.eligibility.question/congregate.VA"
+					"question": "c19.eligibility.question/congregate.va"
 				}
 			]
 		}

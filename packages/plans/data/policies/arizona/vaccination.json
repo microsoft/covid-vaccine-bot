@@ -27,13 +27,13 @@
 			"id": "1a",
 			"qualifications": [
 				{
-					"question": "c19.eligibility.question/healthcare_worker.AZ"
+					"question": "c19.eligibility.question/healthcare_worker.az"
 				},
 				{
-					"question": "c19.eligibility.question/long_term_care_resident.AZ"
+					"question": "c19.eligibility.question/long_term_care_resident.az"
 				},
 				{
-					"question": "c19.eligibility.question/ems_worker.AZ"
+					"question": "c19.eligibility.question/ems_worker.az"
 				}
 			]
 		},
@@ -41,13 +41,13 @@
 			"id": "1b",
 			"qualifications": [
 				{
-					"question": "c19.eligibility.question/healthcare_worker.AZ"
+					"question": "c19.eligibility.question/healthcare_worker.az"
 				},
 				{
-					"question": "c19.eligibility.question/long_term_care_resident.AZ"
+					"question": "c19.eligibility.question/long_term_care_resident.az"
 				},
 				{
-					"question": "c19.eligibility.question/education_childcare_worker.AZ"
+					"question": "c19.eligibility.question/education_childcare_worker.az"
 				},
 				{
 					"question": "c19.eligibility.question/age.65_up"

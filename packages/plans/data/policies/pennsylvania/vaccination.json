@@ -50,13 +50,13 @@
 					"question": "c19.eligibility.question/long_term_care_resident"
 				},
 				{
-					"question": "c19.eligibility.question/essential_worker.1b.PA"
+					"question": "c19.eligibility.question/essential_worker.1b.pa"
 				},
 				{
 					"question": "c19.eligibility.question/age.75_up"
 				},
 				{
-					"question": "c19.eligibility.question/health.1b.PA"
+					"question": "c19.eligibility.question/health.1b.pa"
 				},
 				{
 					"question": "c19.eligibility.question/congregate"
@@ -79,7 +79,7 @@
 					"question": "c19.eligibility.question/health"
 				},
 				{
-					"question": "c19.eligibility.question/health.1b.PA"
+					"question": "c19.eligibility.question/health.1b.pa"
 				},
 				{
 					"question": "c19.eligibility.question/age.65_up"

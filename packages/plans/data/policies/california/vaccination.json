@@ -57,7 +57,7 @@
 					"question": "c19.eligibility.question/age.65_up"
 				},
 				{
-					"question": "c19.eligibility.question/congregate.CA"
+					"question": "c19.eligibility.question/congregate.ca"
 				}
 			]
 		},
@@ -83,7 +83,7 @@
 					"question": "c19.eligibility.question/age.65_up"
 				},
 				{
-					"question": "c19.eligibility.question/congregate.CA"
+					"question": "c19.eligibility.question/congregate.ca"
 				}
 			]
 		}

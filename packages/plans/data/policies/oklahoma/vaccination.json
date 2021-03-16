@@ -50,7 +50,7 @@
 					"question": "c19.eligibility.question/health"
 				},
 				{
-					"question": "c19.eligibility.question/congregate.OK"
+					"question": "c19.eligibility.question/congregate.ok"
 				}
 			],
 			"label": "Phase 2"

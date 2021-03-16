@@ -53,7 +53,7 @@
 					"question": "c19.eligibility.question/age.65_up"
 				},
 				{
-					"question": "c19.eligibility.question/multigen.WA"
+					"question": "c19.eligibility.question/multigen.wa"
 				}
 			]
 		},
@@ -76,16 +76,16 @@
 					"question": "c19.eligibility.question/congregate"
 				},
 				{
-					"question": "c19.eligibility.question/congregate_services.WA"
+					"question": "c19.eligibility.question/congregate_services.wa"
 				},
 				{
-					"question": "c19.eligibility.question/congregate_worker.WA"
+					"question": "c19.eligibility.question/congregate_worker.wa"
 				},
 				{
-					"question": "c19.eligibility.question/multigen.WA"
+					"question": "c19.eligibility.question/multigen.wa"
 				},
 				{
-					"question": "c19.eligibility.question/health.1b.WA"
+					"question": "c19.eligibility.question/health.1b.wa"
 				}
 			]
 		},
@@ -111,13 +111,13 @@
 					"question": "c19.eligibility.question/congregate"
 				},
 				{
-					"question": "c19.eligibility.question/congregate_services.WA"
+					"question": "c19.eligibility.question/congregate_services.wa"
 				},
 				{
-					"question": "c19.eligibility.question/congregate_worker.WA"
+					"question": "c19.eligibility.question/congregate_worker.wa"
 				},
 				{
-					"question": "c19.eligibility.question/multigen.WA"
+					"question": "c19.eligibility.question/multigen.wa"
 				}
 			]
 		}

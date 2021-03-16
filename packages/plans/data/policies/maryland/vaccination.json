@@ -43,7 +43,7 @@
 					"question": "c19.eligibility.question/essential_worker.leo_corrections"
 				},
 				{
-					"question": "c19.eligibility.question/essential_worker.1a.MD.judiciary_or_nursing_home_staff"
+					"question": "c19.eligibility.question/essential_worker.1a.md.judiciary_or_nursing_home_staff"
 				}
 			]
 		},
@@ -60,16 +60,16 @@
 					"question": "c19.eligibility.question/essential_worker.leo_corrections"
 				},
 				{
-					"question": "c19.eligibility.question/essential_worker.1a.MD.judiciary_or_nursing_home_staff"
+					"question": "c19.eligibility.question/essential_worker.1a.md.judiciary_or_nursing_home_staff"
 				},
 				{
-					"question": "c19.eligibility.question/essential_worker.1b.MD"
+					"question": "c19.eligibility.question/essential_worker.1b.md"
 				},
 				{
 					"question": "c19.eligibility.question/age.75_up"
 				},
 				{
-					"question": "c19.eligibility.question/congregate.MD"
+					"question": "c19.eligibility.question/congregate.md"
 				}
 			]
 		},

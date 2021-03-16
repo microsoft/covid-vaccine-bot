@@ -49,7 +49,7 @@
 					"question": "c19.eligibility.question/essential_worker.are"
 				},
 				{
-					"question": "c19.eligibility.question/health.1b.ND",
+					"question": "c19.eligibility.question/health.1b.nd",
 					"moreInfoText": "c19.eligibility.moreinfo/health.1b.nd.nd.1b",
 					"moreInfoUrl": "https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html"
 				},

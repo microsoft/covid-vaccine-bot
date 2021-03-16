@@ -56,7 +56,7 @@
 					"question": "c19.eligibility.question/age.55_up"
 				},
 				{
-					"question": "c19.eligibility.question/health.1b.AK"
+					"question": "c19.eligibility.question/health.1b.ak"
 				},
 				{
 					"question": "c19.eligibility.question/congregate"
@@ -88,7 +88,7 @@
 					"moreInfoUrl": "http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/VaccineAvailability.aspx#congregatesettings"
 				},
 				{
-					"question": "c19.eligibility.question/unserved.1c.AK",
+					"question": "c19.eligibility.question/unserved.1c.ak",
 					"moreInfoText": "c19.eligibility.moreinfo/unserved.1c.ak.ak.1c",
 					"moreInfoUrl": "https://dec.alaska.gov/water/water-sewer-challenge/rural-communities/"
 				},
