@@ -1,11 +1,9 @@
 {
 	"links": {
 		"info": {
-			"text": "c19.links/info.MA.Berkshire",
+			"text": "c19.links/info.ma.berkshire",
 			"url": "https://www.getvaccinatedberkshires.org/",
-			"scrapeQuery": [
-				".content-wrapper"
-			]
+			"scrapeQuery": [".content-wrapper"]
 		},
 		"scheduling": {
 			"text": "c19.links/schedule_vax",
