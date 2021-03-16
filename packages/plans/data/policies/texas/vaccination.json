@@ -1,7 +1,7 @@
 {
 	"links": {
 		"info": {
-			"text": "CDC/Texas/state_link",
+			"text": "cdc/texas/state_link",
 			"url": "https://www.dshs.state.tx.us/coronavirus/immunize/vaccine.aspx"
 		},
 		"providers": {

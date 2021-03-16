@@ -1,7 +1,7 @@
 {
 	"links": {
 		"info": {
-			"text": "CDC/Vermont/state_link",
+			"text": "cdc/vermont/state_link",
 			"url": "https://www.healthvermont.gov/covid-19/vaccine"
 		},
 		"providers": {
@@ -12,9 +12,7 @@
 		},
 		"eligibility": {
 			"url": "https://www.healthvermont.gov/covid-19/vaccine/about-covid-19-vaccines-vermont",
-			"scrapeQuery": [
-				"article .paragraphs-items .content .field-body"
-			]
+			"scrapeQuery": ["article .paragraphs-items .content .field-body"]
 		},
 		"scheduling_phone": {
 			"url": "tel:855-722-7878",

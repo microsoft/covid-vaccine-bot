@@ -1,11 +1,9 @@
 {
 	"links": {
 		"info": {
-			"text": "CDC/Wyoming/state_link",
+			"text": "cdc/wyoming/state_link",
 			"url": "https://health.wyo.gov/publichealth/immunization/wyoming-covid-19-vaccine-information/",
-			"scrapeQuery": [
-				"#content-area"
-			]
+			"scrapeQuery": ["#content-area"]
 		},
 		"eligibility_plan": {
 			"url": "https://health.wyo.gov/wp-content/uploads/2021/03/WDH_Phase-1-COVID-19-Vaccination-Priorities3.8.21.pdf"

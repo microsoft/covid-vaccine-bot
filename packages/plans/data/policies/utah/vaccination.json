@@ -1,11 +1,9 @@
 {
 	"links": {
 		"info": {
-			"text": "CDC/Utah/state_link",
+			"text": "cdc/utah/state_link",
 			"url": "https://coronavirus.utah.gov/vaccine/",
-			"scrapeQuery": [
-				".x-text"
-			]
+			"scrapeQuery": [".x-text"]
 		},
 		"eligibility_plan": {
 			"url": "https://coronavirus-download.utah.gov/Health/Vaccine_Timeline.pdf"
@@ -53,7 +51,7 @@
 					"question": "c19.eligibility.question/essential_worker.k12"
 				},
 				{
-					"question": "c19.eligibility.question/essential_worker.1a.UT.first_responder"
+					"question": "c19.eligibility.question/essential_worker.1a.ut.first_responder"
 				},
 				{
 					"question": "c19.eligibility.question/age.70_up"

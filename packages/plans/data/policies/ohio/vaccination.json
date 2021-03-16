@@ -1,7 +1,7 @@
 {
 	"links": {
 		"info": {
-			"text": "CDC/Ohio/state_link",
+			"text": "cdc/ohio/state_link",
 			"url": "https://coronavirus.ohio.gov/wps/portal/gov/covid-19/covid-19-vaccination-program"
 		},
 		"locator": {

@@ -1,7 +1,7 @@
 {
 	"links": {
 		"info": {
-			"text": "CDC/Montana/state_link",
+			"text": "cdc/montana/state_link",
 			"url": "https://dphhs.mt.gov/covid19vaccine"
 		},
 		"eligibility_plan": {
@@ -44,7 +44,7 @@
 					"question": "c19.eligibility.question/health"
 				},
 				{
-					"question": "c19.eligibility.question/american_indian_poc.MT"
+					"question": "c19.eligibility.question/american_indian_poc.mt"
 				},
 				{
 					"question": "c19.eligibility.question/congregate"

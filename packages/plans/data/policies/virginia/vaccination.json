@@ -1,11 +1,9 @@
 {
 	"links": {
 		"info": {
-			"text": "CDC/Virginia/state_link",
+			"text": "cdc/virginia/state_link",
 			"url": "https://www.vdh.virginia.gov/covid-19-vaccine/",
-			"scrapeQuery": [
-				"main"
-			]
+			"scrapeQuery": ["main"]
 		},
 		"eligibility": {
 			"url": "https://www.vdh.virginia.gov/content/uploads/sites/191/2021/01/Vaccine-Eligibility-Text-Version.pdf"
@@ -48,7 +46,7 @@
 					"question": "c19.eligibility.question/age.65_up"
 				},
 				{
-					"question": "c19.eligibility.question/congregate.VA"
+					"question": "c19.eligibility.question/congregate.va"
 				},
 				{
 					"question": "c19.eligibility.question/age.are_you_age"
@@ -74,7 +72,7 @@
 					"question": "c19.eligibility.question/age.65_up"
 				},
 				{
-					"question": "c19.eligibility.question/congregate.VA"
+					"question": "c19.eligibility.question/congregate.va"
 				}
 			]
 		}

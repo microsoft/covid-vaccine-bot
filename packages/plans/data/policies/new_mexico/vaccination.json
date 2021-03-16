@@ -1,11 +1,9 @@
 {
 	"links": {
 		"info": {
-			"text": "CDC/New_Mexico/state_link",
+			"text": "cdc/new_mexico/state_link",
 			"url": "https://cv.nmhealth.org/covid-vaccine/",
-			"scrapeQuery": [
-				"#main-content"
-			]
+			"scrapeQuery": ["#main-content"]
 		},
 		"eligibility": {
 			"url": "https://cv.nmhealth.org/covid-vaccine/"

@@ -1,11 +1,9 @@
 {
 	"links": {
 		"info": {
-			"text": "CDC/Pennsylvania/state_link",
+			"text": "cdc/pennsylvania/state_link",
 			"url": "https://www.health.pa.gov/topics/disease/coronavirus/Pages/Vaccine.aspx",
-			"scrapeQuery": [
-				"div[data-name='Page Field: Page Content']"
-			]
+			"scrapeQuery": ["div[data-name='Page Field: Page Content']"]
 		},
 		"workflow": {
 			"url": "https://covidportal.health.pa.gov/s/Your-Turn?language=en_US",
@@ -52,13 +50,13 @@
 					"question": "c19.eligibility.question/long_term_care_resident"
 				},
 				{
-					"question": "c19.eligibility.question/essential_worker.1b.PA"
+					"question": "c19.eligibility.question/essential_worker.1b.pa"
 				},
 				{
 					"question": "c19.eligibility.question/age.75_up"
 				},
 				{
-					"question": "c19.eligibility.question/health.1b.PA"
+					"question": "c19.eligibility.question/health.1b.pa"
 				},
 				{
 					"question": "c19.eligibility.question/congregate"
@@ -81,7 +79,7 @@
 					"question": "c19.eligibility.question/health"
 				},
 				{
-					"question": "c19.eligibility.question/health.1b.PA"
+					"question": "c19.eligibility.question/health.1b.pa"
 				},
 				{
 					"question": "c19.eligibility.question/age.65_up"

@@ -1,7 +1,7 @@
 {
 	"links": {
 		"info": {
-			"text": "CDC/South_Dakota/state_link",
+			"text": "cdc/south_dakota/state_link",
 			"url": "https://doh.sd.gov/COVID/Vaccine/default.aspx"
 		},
 		"workflow": {
@@ -45,10 +45,10 @@
 					"question": "c19.eligibility.question/essential_worker.leo_corrections"
 				},
 				{
-					"question": "c19.eligibility.question/essential_worker.1b.SD"
+					"question": "c19.eligibility.question/essential_worker.1b.sd"
 				},
 				{
-					"question": "c19.eligibility.question/health.1b.SD"
+					"question": "c19.eligibility.question/health.1b.sd"
 				},
 				{
 					"question": "c19.eligibility.question/age.65_up"

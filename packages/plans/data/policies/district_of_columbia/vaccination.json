@@ -40,7 +40,7 @@
 					"question": "c19.eligibility.question/long_term_care_resident"
 				},
 				{
-					"question": "c19.eligibility.question/health.1a.DC.inpatient_psychiatric"
+					"question": "c19.eligibility.question/health.1a.dc.inpatient_psychiatric"
 				},
 				{
 					"question": "c19.eligibility.question/essential_worker.1b"
@@ -49,7 +49,7 @@
 					"question": "c19.eligibility.question/age.65_up"
 				},
 				{
-					"question": "c19.eligibility.question/congregate.DC"
+					"question": "c19.eligibility.question/congregate.dc"
 				},
 				{
 					"question": "c19.eligibility.question/housing.are_you"

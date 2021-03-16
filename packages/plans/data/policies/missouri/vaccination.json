@@ -1,11 +1,9 @@
 {
 	"links": {
 		"info": {
-			"text": "CDC/Missouri/state_link",
+			"text": "cdc/missouri/state_link",
 			"url": "https://covidvaccine.mo.gov/residents/",
-			"scrapeQuery": [
-				".container .row"
-			]
+			"scrapeQuery": [".container .row"]
 		},
 		"eligibility_plan": {
 			"url": "https://covidvaccine.mo.gov/info-graphic-alt/vaccine-availability.html"

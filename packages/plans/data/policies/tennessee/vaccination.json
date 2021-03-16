@@ -1,7 +1,7 @@
 {
 	"links": {
 		"info": {
-			"text": "CDC/Tennessee/state_link",
+			"text": "cdc/tennessee/state_link",
 			"url": "https://www.tn.gov/health/cedep/ncov/covid-19-vaccine-information.html"
 		},
 		"eligibility": {
@@ -36,7 +36,7 @@
 					"question": "c19.eligibility.question/long_term_care_resident"
 				},
 				{
-					"question": "c19.eligibility.question/health.1a.TN.non_independent"
+					"question": "c19.eligibility.question/health.1a.tn.non_independent"
 				},
 				{
 					"question": "c19.eligibility.question/age.75_up"
@@ -56,10 +56,10 @@
 					"question": "c19.eligibility.question/age.65_up"
 				},
 				{
-					"question": "c19.eligibility.question/health.1a.TN.non_independent"
+					"question": "c19.eligibility.question/health.1a.tn.non_independent"
 				},
 				{
-					"question": "c19.eligibility.question/essential_worker.1b.TN"
+					"question": "c19.eligibility.question/essential_worker.1b.tn"
 				}
 			]
 		},

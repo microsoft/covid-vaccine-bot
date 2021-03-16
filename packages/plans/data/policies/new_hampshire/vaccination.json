@@ -1,7 +1,7 @@
 {
 	"links": {
 		"info": {
-			"text": "CDC/New_Hampshire/state_link",
+			"text": "cdc/new_hampshire/state_link",
 			"url": "https://www.nh.gov/covid19/resources-guidance/vaccination-planning.htm"
 		}
 	},
@@ -34,17 +34,17 @@
 					"question": "c19.eligibility.question/essential_worker.are"
 				},
 				{
-					"question": "c19.eligibility.question/essential_worker.1b.NH"
+					"question": "c19.eligibility.question/essential_worker.1b.nh"
 				},
 				{
 					"question": "c19.eligibility.question/age.65_up"
 				},
 				{
-					"question": "c19.eligibility.question/health.1b.NH",
+					"question": "c19.eligibility.question/health.1b.nh",
 					"moreInfoText": "c19.eligibility.moreinfo/health.1b.nh.nh.1b"
 				},
 				{
-					"question": "c19.eligibility.question/congregate.NH"
+					"question": "c19.eligibility.question/congregate.nh"
 				}
 			]
 		},

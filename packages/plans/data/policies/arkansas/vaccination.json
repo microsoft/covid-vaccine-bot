@@ -1,11 +1,9 @@
 {
 	"links": {
 		"info": {
-			"text": "CDC/Arkansas/state_link",
+			"text": "cdc/arkansas/state_link",
 			"url": "https://www.healthy.arkansas.gov/programs-services/topics/covid-19-vaccination-plan",
-			"scrapeQuery": [
-				"#contentBody"
-			]
+			"scrapeQuery": ["#contentBody"]
 		}
 	},
 	"activePhase": "1b",

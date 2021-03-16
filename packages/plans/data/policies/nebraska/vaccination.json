@@ -1,11 +1,9 @@
 {
 	"links": {
 		"info": {
-			"text": "CDC/Nebraska/state_link",
+			"text": "cdc/nebraska/state_link",
 			"url": "http://dhhs.ne.gov/Pages/COVID-19-Vaccine-Information.aspx",
-			"scrapeQuery": [
-				".dhhs-page-content.dhhs-clearfix"
-			]
+			"scrapeQuery": [".dhhs-page-content.dhhs-clearfix"]
 		},
 		"workflow": {
 			"url": "https://vaccinate.ne.gov/"

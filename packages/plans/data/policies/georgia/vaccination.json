@@ -47,7 +47,7 @@
 					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.are.ga.1a"
 				},
 				{
-					"question": "c19.eligibility.question/essential_worker.1a.GA.caregiver_of_65_up"
+					"question": "c19.eligibility.question/essential_worker.1a.ga.caregiver_of_65_up"
 				}
 			]
 		},
@@ -69,7 +69,7 @@
 					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.are.ga.1b"
 				},
 				{
-					"question": "c19.eligibility.question/essential_worker.1a.GA.caregiver_of_65_up"
+					"question": "c19.eligibility.question/essential_worker.1a.ga.caregiver_of_65_up"
 				},
 				{
 					"question": "c19.eligibility.question/essential_worker.are_you",

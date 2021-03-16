@@ -1,7 +1,7 @@
 {
 	"links": {
 		"info": {
-			"text": "CDC/Florida/state_link",
+			"text": "cdc/florida/state_link",
 			"url": "https://floridahealthcovid19.gov/covid-19-vaccines-in-florida/"
 		}
 	},
@@ -10,14 +10,14 @@
 		{
 			"id": "1a",
 			"qualifications": [
-				{ 
+				{
 					"question": "c19.eligibility.question/healthcare_worker.are"
 				},
 				{
 					"question": "c19.eligibility.question/long_term_care_resident.are"
 				},
 				{
-					"question": "c19.eligibility.question/health.1a.FL.extremely_vulnerable",
+					"question": "c19.eligibility.question/health.1a.fl.extremely_vulnerable",
 					"moreInfoUrl": "",
 					"moreInfoText": "c19.eligibility.moreinfo/health.1a.fl.extremely_vulnerable.fl.1a"
 				},

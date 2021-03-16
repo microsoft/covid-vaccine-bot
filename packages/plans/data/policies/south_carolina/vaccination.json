@@ -1,11 +1,9 @@
 {
 	"links": {
 		"info": {
-			"text": "CDC/South_Carolina/state_link",
+			"text": "cdc/south_carolina/state_link",
 			"url": "https://scdhec.gov/covid19/covid-19-vaccine",
-			"scrapeQuery": [
-				"main#main"
-			]
+			"scrapeQuery": ["main#main"]
 		},
 		"eligibility_plan": {
 			"url": "https://scdhec.gov/sites/default/files/Library/CR-012931.pdf"
