@@ -94,13 +94,13 @@
 
 Counties and tribes may also choose to vaccinate the following groups defined by ACIP as a subset of essential workers at highest risk for work-related exposure. Confirm with your county department of health if your group is being prioritized.
 
-■ Food and agriculture
-■ Grocery store, convenience store, and carniceria workers
-■ U.S. Postal Service
-■ Manufacturing workers
-■ Public transit workers, including buses, Light Rail, Uber, Lyft, taxis, and rideshare
-■ State and local government workers
-■ Funeral home workers
+- Food and agriculture
+- Grocery store, convenience store, and carniceria workers
+- U.S. Postal Service
+- Manufacturing workers
+- Public transit workers, including buses, Light Rail, Uber, Lyft, taxis, and rideshare
+- State and local government workers
+- Funeral home workers
 
 ## Arizona Regions
 
@@ -325,7 +325,7 @@ Counties and tribes may also choose to vaccinate the following groups defined by
 * Are you classified as an essential worker?
 	* This includes K-12 and child care workers in licensed child care programs, teachers (full-time and substitutes), bus, food, counselors, administrative, safety and other support services offered inside the school, members of the state executive and judiciary branches, and frontline grocery or agriculture workers. The intent of this classification is to prioritize current workers who cannot maintain physical distance from others at their place of employment, who work in close contact with many people, especially indoors, and in places with poor ventilation including meatpacking workers; grocery store workers; and agricultural processing workers.
 * Are you age 16+, and have two or more high-risk medical conditions?
-	* The intent of this classification is to vaccinate Coloradans who have a high risk of severe outcomes from COVID-19. This includes Coloradans with two or more of the following: Cancer (defined as patients who are currently receiving treatment or have received treatment within the last month for cancer), chronic kidney disease, COPD, diabetes mellitus (types 1 and 2), Down syndrome, specific heart conditions (heart failure, cardiomyopathies or coronary heart disease, and severe valvular/congenital heart disease), obesity (BMI ≥ 30kg/m^2), pregnancy, sickle cell disease, solid organ transplant, individuals with disabilities who require direct care in their home, and people with disabilities that prevent them from wearing masks.	
+	* The intent of this classification is to vaccinate Coloradans who have a high risk of severe outcomes from COVID-19. This includes Coloradans with two or more of the following: Cancer (defined as patients who are currently receiving treatment or have received treatment within the last month for cancer), chronic kidney disease, COPD, diabetes mellitus (types 1 and 2), Down syndrome, specific heart conditions (heart failure, cardiomyopathies or coronary heart disease, and severe valvular/congenital heart disease), obesity (BMI >= 30kg/m^2), pregnancy, sickle cell disease, solid organ transplant, individuals with disabilities who require direct care in their home, and people with disabilities that prevent them from wearing masks.	
 
 # Connecticut
 
@@ -557,7 +557,7 @@ People with other chronic conditions also qualify for vaccine in Phase 1c, but n
 - Dentists, dental hygienists and dental assistants
 - Emergency medical services
 - First responders (firefighters/police) and safety (protective services/community support)
-- Home care providers for adults ≥ 65  years of age, or for other adults/children with high-risk medical conditions (includes staff of certified family homes but does not include adult family members who provide in-home personal care for adults 65 years of age and older or for other adults or children with high-risk medical conditions)
+- Home care providers for adults >= 65  years of age, or for other adults/children with high-risk medical conditions (includes staff of certified family homes but does not include adult family members who provide in-home personal care for adults 65 years of age and older or for other adults or children with high-risk medical conditions)
 - Hospital staff essential for care of COVID-19 patients and maintaining hospital capacity (includes support staff, clinical staff, and medical imaging professionals)
 - Idaho Fish and Game and USDA law enforcement officers
 - Idaho National Guard medical staff
@@ -567,7 +567,7 @@ People with other chronic conditions also qualify for vaccine in Phase 1c, but n
 - Outpatient clinic staff essential for care of COVID-19 patients and maintaining hospital capacity (includes vaccine administrators and behavioral health workers, including counselors for substance abuse treatment centers and suicide prevention hotline workers)
 - Outpatient and inpatient medical staff (not included above) who are unable to telework
 - Pharmacists, pharmacy technicians, and pharmacy aids
-- Pre-K–12 school staff and teachers and daycare (childcare) workers
+- Pre-K-12 school staff and teachers and daycare (childcare) workers
 - Psychiatric residential treatment facility staff
 - Public health and emergency management response workers who are unable to telework (includes Idaho National - Guard deployed to support public health response, state and local public health COVID-19 responders who are unable to telework)
 - Radiation therapists
@@ -590,7 +590,7 @@ Down Syndrome
 Heart conditions, such as heart failure, coronary artery disease, or cardiomyopathies
 Immunocompromised state (weakened immune system) from solid organ transplant
 Obesity (body mass index [BMI] of 30 kg/m2 or higher but < 40 kg/m2)
-Severe Obesity (BMI ≥ 40 kg/m2)
+Severe Obesity (BMI >= 40 kg/m2)
 Pregnancy
 Sickle cell disease
 Smoking
@@ -816,7 +816,7 @@ This includes all clinical and non-clinical positions: clinicians, dietary, envi
 This also includes local health department staff who interact with patients at test sites, health clinics or provide direct patient care (see [here](https://www.coronavirus.in.gov/vaccine/index.htm))
 * Are you a long-term care resident?
 * Are you a first responder?
-	* This includes those who are who are regularly called to the scene of an emergency to give medical aid, including firefighters, police officers and sheriff’s deputies, emergency medical services, reservists and correctional officers (see [here](https://www.coronavirus.in.gov/vaccine/index.htm))
+	* This includes those who are who are regularly called to the scene of an emergency to give medical aid, including firefighters, police officers and sheriff's deputies, emergency medical services, reservists and correctional officers (see [here](https://www.coronavirus.in.gov/vaccine/index.htm))
 * Do you have exposure to COVID-19 infectious material?
 	* Examples include cleaning of rooms or material from COVID-19 patients, performing COVID-19 testing, other exposure to infected tissue, performing autopsies or other post-mortem examinations of COVID-19 patients)
 * Are you age 50+?
@@ -871,7 +871,7 @@ People who are actively in treatment (chemotherapy, radiation, surgery) for canc
 Staff in long-term care facilities
 Workers in direct contact with patients, e.g., Medical Doctors (MD); Doctors of Osteopathy (DO); Doctors of Podiatric medicine (DPM); nurses; Emergency Medical Technicians (EMT); clinical students and trainees -- does not include first responders and dispatch who are prioritized in Phase 2.
 Diagnostic labs, phlebotomists, pandemic health workers (e.g., individuals performing COVID tests)
-Mental healthcare providers, pharmacy staff, non-medical staff –- if exposed to patients or infectious materials
+Mental healthcare providers, pharmacy staff, non-medical staff - if exposed to patients or infectious materials
 Healthcare-associated contractors, including food, waste management, etc.
 Dentists, physical therapists, professionals performing elective procedures
 Workers providing institutional care to community-based long-term services and supports (LTSS); personal care assistants (PCAs); home care workers regulated by the state; Centers for Medicare & Medicaid Services (CMS) designated caretakers; and other caregivers providing services to disabled peoples or those with severe medical risks
@@ -1093,7 +1093,7 @@ Solid organ transplant recipients
 Sickle cell disease patients
 Diabetic patients (Type 1 and Type 2)
 
-Individuals who are diagnosed with these medical conditions but are not currently receiving hospital-based treatment, including in hospital outpatient centers, will be eligible to receive the vaccine in Maryland’s Phase 2 COVID-19 vaccine distribution. (see [here](https://coronavirus.maryland.gov/pages/vaccine))
+Individuals who are diagnosed with these medical conditions but are not currently receiving hospital-based treatment, including in hospital outpatient centers, will be eligible to receive the vaccine in Maryland's Phase 2 COVID-19 vaccine distribution. (see [here](https://coronavirus.maryland.gov/pages/vaccine))
 
 # Massachusetts
 
@@ -1198,33 +1198,33 @@ Individuals who are diagnosed with these medical conditions but are not currentl
 * Are you a healthcare worker? (see [here](https://www.michigan.gov/documents/coronavirus/MI_COVID-19_Vaccination_Prioritization_Guidance_710349_7.pdf))
 * Are you a long term care resident or work in a long term care facility?
 	* This includes 
-• Skilled nursing facility residents
-• Psychiatric hospitals patients
-• Homes for aged residents
-• Adult foster care centers residents
-• Assisted living facility residents
+- Skilled nursing facility residents
+- Psychiatric hospitals patients
+- Homes for aged residents
+- Adult foster care centers residents
+- Assisted living facility residents
 
 As well as staff for these long-term care facilities and home health care workers caring for high risk clients with large patient loads (e.g. people with a tracheostomy/ventilator at home) (see [here](https://www.michigan.gov/documents/coronavirus/MI_COVID-19_Vaccination_Prioritization_Guidance_710349_7.pdf))
 * Are you classified as an essential worker?
 	* This includes prioritized frontline workers whose work role has frequent or intense exposure, and, due to the nature of the work, are not able to maintain social distance. For example, a first responder may have to physically touch other people in their response, and a child care provider cannot maintain social distance from children
 when caring for their physical needs. The specific prioritized categories are:
-• Pre-Kindergarten through high school teachers, support staff and child care
+- Pre-Kindergarten through high school teachers, support staff and child care
 workers who usually have direct contact with children
-• First responders not covered in Phase 1A (e.g., firefighters, police, conservation
+- First responders not covered in Phase 1A (e.g., firefighters, police, conservation
 officers ,inspectors)
-• Corrections workers (e.g. staff in prisons, jails, juvenile justice facilities)
-• Workers in homeless shelters, congregate child care institutions, and adult
+- Corrections workers (e.g. staff in prisons, jails, juvenile justice facilities)
+- Workers in homeless shelters, congregate child care institutions, and adult
 and child protective services
 
 Other frontline essential workers in sectors essential to the functioning of society and are at substantially higher risk of exposure to SARS-CoV-2 because their work-related duties must be performed on site and involve being in close proximity (i.e. within 6 feet) to the public or to coworkers are also eligible, including frontline essential workers in the food processing and agricultural industries. (see [here](https://www.michigan.gov/documents/coronavirus/MI_COVID-19_Vaccination_Prioritization_Guidance_710349_7.pdf))
 * Are you age 65+?
 * Are you a long term care resident or work in a long term care facility?
 	* This includes 
-• Skilled nursing facility residents
-• Psychiatric hospitals patients
-• Homes for aged residents
-• Adult foster care centers residents
-• Assisted living facility residents
+- Skilled nursing facility residents
+- Psychiatric hospitals patients
+- Homes for aged residents
+- Adult foster care centers residents
+- Assisted living facility residents
 * Do you work or live in a congregate setting?
 	* This includes homeless shelters, congregate child care institutions, and adult and child protective services
 
@@ -1369,7 +1369,7 @@ o COPD (chronic obstructive pulmonary disease)
 o Down Syndrome
 o Heart conditions, such as heart failure, coronary artery disease, or cardiomyopathies
 o Immunocompromised state (weakened immune system) from solid organ transplant
-o Severe Obesity (BMI ≥ 40 kg/m2)
+o Severe Obesity (BMI >= 40 kg/m2)
 o Sickle cell disease
 o Type 1 & 2 Diabetes mellitus
 o Asthma (moderate to severe)
@@ -1594,8 +1594,8 @@ Immunocompromised state (weakened immune system)
 Liver Disease
 Neurologic conditions (e.g. dementia)
 Obesity (body mass index [BMI] of 30 kg/m2 or higher but < 40 kg/m2)
-Severe Obesity (BMI ≥ 40 kg/m2)
-Overweight (BMI ≥ 25 kg/m2)
+Severe Obesity (BMI >= 40 kg/m2)
+Overweight (BMI >= 25 kg/m2)
 Pregnancy
 Pulmonary Fibrosis (damaged or scarred lung tissues)
 Sickle cell disease
@@ -1637,29 +1637,29 @@ Note: Individuals who are pregnant and those in an immunocompromised state (weak
 * Are you age 75+?
 * Are you age 16+ and have a high-risk medical conditions?
 	* Conditions with increased risk of severe illness:
-● Cancer
-● Chronic kidney disease
-● COPD (chronic obstructive pulmonary disease), pulmonary fibrosis, cystic fibrosis
-● Down syndrome
-● Heart conditions (heart failure, hypertension, coronary artery disease or cardiomyopathies)
-● Immunocompromised state from solid organ transplant
-● Obesity (BMI>=30)
-● Pregnancy
-● Sickle cell disease
-● Type 2 Diabetes
+- Cancer
+- Chronic kidney disease
+- COPD (chronic obstructive pulmonary disease), pulmonary fibrosis, cystic fibrosis
+- Down syndrome
+- Heart conditions (heart failure, hypertension, coronary artery disease or cardiomyopathies)
+- Immunocompromised state from solid organ transplant
+- Obesity (BMI>=30)
+- Pregnancy
+- Sickle cell disease
+- Type 2 Diabetes
 
 Conditions that might involve increased risk:
-● Asthma
-● Cerebrovascular disease (previous stroke, TIA)
-● Hypertension or high blood pressure
-● Immunocompromised state from blood or bone marrow transplant, immune deficiencies, HIV, use of
+- Asthma
+- Cerebrovascular disease (previous stroke, TIA)
+- Hypertension or high blood pressure
+- Immunocompromised state from blood or bone marrow transplant, immune deficiencies, HIV, use of
 corticosteroids or use of other immune-weakening medicines
-● Neurologic conditions such as dementia
-● Liver disease
-● Overweight (BMI >25 but <30)
-● Pulmonary fibrosis (having damaged or scarred lung tissues)
-● Thalassemia
-● Type 1 diabetes
+- Neurologic conditions such as dementia
+- Liver disease
+- Overweight (BMI >25 but <30)
+- Pulmonary fibrosis (having damaged or scarred lung tissues)
+- Thalassemia
+- Type 1 diabetes
 * Are you a K-12 educator or work in a licensed child care facility?
 
 # New York
@@ -1736,7 +1736,7 @@ corticosteroids or use of other immune-weakening medicines
  * Heart conditions, such as heart failure, coronary artery disease, or cardiomyopathies
  * Immunocompromised state (weakened immune system) from solid organ transplant
  * Obesity (body mass index [BMI] of 30 kg/m2 or higher but < 40 kg/m2)
- * Severe Obesity (BMI ≥ 40 kg/m2)
+ * Severe Obesity (BMI >= 40 kg/m2)
  * Pregnancy
  * Sickle cell disease
  * Smoking
@@ -1828,30 +1828,30 @@ corticosteroids or use of other immune-weakening medicines
 
 * Are you a healthcare worker?
 	* This includes
-• Hospital staff with patient care responsibilities
-• Urgent care
-• Skilled nursing and memory care facility healthcare personnel (HCP) and residents
-• Tribal health programs
-• Emergency medical services (EMS) providers and other first responders
-• All health care interpreters and traditional health workers in any setting within Phase 1a
-• HCPs in outpatient settings serving specific high-risk groups
-• Day treatment services
-• Non-emergency medical transport (NEMT)
-• Paid or unpaid caregivers (including parents or foster parents) of medically fragile children or adults who live at home
-• Adults and age-eligible children who have a medical condition or disability who receive services in their homes
-• All other outpatient HCPs
-• Other HCP who provide direct service to people with I/DD and other high-risk populations.
-• Other public health settings, such as HCP serving WIC, or CBO’s with direct or indirect exposures (see [here](https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le3527A.pdf))
+- Hospital staff with patient care responsibilities
+- Urgent care
+- Skilled nursing and memory care facility healthcare personnel (HCP) and residents
+- Tribal health programs
+- Emergency medical services (EMS) providers and other first responders
+- All health care interpreters and traditional health workers in any setting within Phase 1a
+- HCPs in outpatient settings serving specific high-risk groups
+- Day treatment services
+- Non-emergency medical transport (NEMT)
+- Paid or unpaid caregivers (including parents or foster parents) of medically fragile children or adults who live at home
+- Adults and age-eligible children who have a medical condition or disability who receive services in their homes
+- All other outpatient HCPs
+- Other HCP who provide direct service to people with I/DD and other high-risk populations.
+- Other public health settings, such as HCP serving WIC, or CBO's with direct or indirect exposures (see [here](https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le3527A.pdf))
 * Are you a long term care resident or work in a long term care facility? (see [here](https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le3527A.pdf))
 * Are you a K-12 educator or work in a licensed child care facility?
-	* This includes childcare providers, early learning and K–12 educators and staff (see [here](https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le3527A.pdf))
+	* This includes childcare providers, early learning and K-12 educators and staff (see [here](https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le3527A.pdf))
 * Are you age 65+? (see [here](https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le3527A.pdf))
 * Do you work or live in a congregate setting?
 	* This includes all paid and unpaid healthcare personnel, all staff and contractors, including residents who meet the age requirements of Residential care facilities, Adult foster care, Group homes for people with intellectual and developmental disabilities, Other similar congregate care sites; 
-• Hospice programs
-• Mobile crisis care and related services
-• Individuals working in a correctional setting
-• Adults and youth in custody 16 years and older (see [here](https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le3527A.pdf))
+- Hospice programs
+- Mobile crisis care and related services
+- Individuals working in a correctional setting
+- Adults and youth in custody 16 years and older (see [here](https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le3527A.pdf))
 
 ## Oregon Regions
 
@@ -2056,7 +2056,7 @@ corticosteroids or use of other immune-weakening medicines
 - Heart conditions, such as heart failure, coronary artery disease, or cardiomyopathies
 - Immunocompromised state (weakened immune system) from solid organ transplant or from blood or bone marrow transplant, immune deficiencies, HIV, use of corticosteroids, or use of other immune weakening medicines
 - Obesity (body mass index [BMI] of 30 kg/m2 or higher but < 40 kg/m2)
-- Severe Obesity (BMI ≥ 40 kg/m2)
+- Severe Obesity (BMI >= 40 kg/m2)
 - Pregnancy
 - Sickle cell disease
 - Smoking
@@ -2271,17 +2271,17 @@ likely
 
 * Are you a healthcare worker?
 	* This includes:
-• Paid and unpaid workers in hospital settings working directly with patients who are positive or at high risk for COVID-19.
-• Long-term care staff working directly with vulnerable residents. 
-• EMS providers who engage in 9-1-1 emergency services like pre-hospital care and transport
-• Home health care workers, including hospice care, who directly interface with vulnerable and high-risk patients
-• Residents of long-term care facilities
-• Staff in outpatient care settings who interact with symptomatic patients.
-• Direct care staff in freestanding emergency medical care facilities and urgent care clinics
-• Community pharmacy staff who may provide direct services to clients, including vaccination or testing for individuals who may have COVID
-• Public health and emergency response staff directly involved in administration of COVID testing and vaccinations
-• Last responders who provide mortuary or death services to decedents with COVID-19.
-• School nurses who provide health care to students and teachers (see [here](https://www.dshs.state.tx.us/coronavirus/immunize/vaccine/EVAP-Phase1A.pdf))
+- Paid and unpaid workers in hospital settings working directly with patients who are positive or at high risk for COVID-19.
+- Long-term care staff working directly with vulnerable residents. 
+- EMS providers who engage in 9-1-1 emergency services like pre-hospital care and transport
+- Home health care workers, including hospice care, who directly interface with vulnerable and high-risk patients
+- Residents of long-term care facilities
+- Staff in outpatient care settings who interact with symptomatic patients.
+- Direct care staff in freestanding emergency medical care facilities and urgent care clinics
+- Community pharmacy staff who may provide direct services to clients, including vaccination or testing for individuals who may have COVID
+- Public health and emergency response staff directly involved in administration of COVID testing and vaccinations
+- Last responders who provide mortuary or death services to decedents with COVID-19.
+- School nurses who provide health care to students and teachers (see [here](https://www.dshs.state.tx.us/coronavirus/immunize/vaccine/EVAP-Phase1A.pdf))
 * Are you a long term care resident or work in a long term care facility? (see [here](https://www.dshs.state.tx.us/coronavirus/immunize/vaccine/EVAP-Phase1A.pdf))
 * Are you age 65+? (see [here](https://www.dshs.state.tx.us/coronavirus/immunize/vaccine/EVAP-Phase1B.pdf))
 * Are you age 16+, and have a high-risk medical condition? (see [here](https://www.dshs.state.tx.us/coronavirus/immunize/vaccine/EVAP-Phase1B.pdf))
@@ -2339,16 +2339,16 @@ likely
 - Chronic kidney disease
 - Chronic liver disease including chronic hepatitis B or C, alcohol-related liver disease, primary biliary cirrhosis, or primary sclerosing cholangitis or hemochromatosis
 - Cancer diagnosed within the last 5 years that began in the blood, bone marrow, or cells in the immune system. This type of cancer is called hematologic cancer (such as leukemia, lymphoma, and multiple myeloma). 
-- Cancer diagnosed within the last 1 year that didn’t begin in the blood or bone marrow. This type of cancer is called non-hematologic cancer (excluding basal and squamous cell cancer diagnoses).
+- Cancer diagnosed within the last 1 year that didn't begin in the blood or bone marrow. This type of cancer is called non-hematologic cancer (excluding basal and squamous cell cancer diagnoses).
 - Diabetes (Type I or Type II)
 - Immunocompromised state (weakened immune system) from blood, bone marrow, or organ transplant; HIV; long-term use of corticosteroids; or other medicines that weaken the immune system
-- Neurologic conditions that impair respiratory function, including cerebral palsy, Down syndrome, epilepsy, motor neuron disease, multiple sclerosis, myasthenia gravis, Parkinson’s disease, progressive cerebellar disease, and quadriplegia or hemiplegia 
+- Neurologic conditions that impair respiratory function, including cerebral palsy, Down syndrome, epilepsy, motor neuron disease, multiple sclerosis, myasthenia gravis, Parkinson's disease, progressive cerebellar disease, and quadriplegia or hemiplegia 
 - Receiving dialysis for severe kidney disease
 - Receiving immunosuppression therapy
 - Sickle cell disease
 - Severe chronic respiratory disease (other than asthma) including severe chronic obstructive pulmonary disease, fibrosing lung disease, bronchiectasis, or cystic fibrosis
 - Solid organ transplant recipient
-- Stroke and dementia (Alzheimer’s, vascular, or frontotemporal)
+- Stroke and dementia (Alzheimer's, vascular, or frontotemporal)
 
 ## Utah Regions
 
