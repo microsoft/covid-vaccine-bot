@@ -3,55 +3,21 @@
 		"info": {
 			"text": "cdc/marshall_islands/state_link",
 			"url": "http://rmihealth.org/"
+		},
+		"scheduling_phone": {
+			"url": "tel:+692 625-7710",
+			"text": "c19.link/scheduling.phone.mh",
+			"description": "c19.link/scheduling.phone.description.mh"
 		}
 	},
-	"activePhase": "1a",
+	"activePhase": "current",
 	"phases": [
 		{
-			"id": "1a",
+			"id": "current",
+			"label": "Current",
 			"qualifications": [
 				{
-					"question": "c19.eligibility.question/healthcare_worker"
-				},
-				{
-					"question": "c19.eligibility.question/long_term_care_resident"
-				}
-			]
-		},
-		{
-			"id": "1b",
-			"qualifications": [
-				{
-					"question": "c19.eligibility.question/healthcare_worker"
-				},
-				{
-					"question": "c19.eligibility.question/long_term_care_resident"
-				},
-				{
-					"question": "c19.eligibility.question/essential_worker.1b"
-				},
-				{
-					"question": "c19.eligibility.question/age.75_up"
-				}
-			]
-		},
-		{
-			"id": "1c",
-			"qualifications": [
-				{
-					"question": "c19.eligibility.question/healthcare_worker"
-				},
-				{
-					"question": "c19.eligibility.question/long_term_care_resident"
-				},
-				{
-					"question": "c19.eligibility.question/essential_worker"
-				},
-				{
-					"question": "c19.eligibility.question/health"
-				},
-				{
-					"question": "c19.eligibility.question/age.65_up"
+					"question": "c19.eligibility.question/age.are_you_age_18"
 				}
 			]
 		}
