@@ -7,8 +7,8 @@
 		},
 		"scheduling_phone": {
 			"url": "tel:208-737-1138",
-			"text": "c19.link/scheduling.phone.lincoln",
-			"description": "c19.link/scheduling.phone.description.lincoln"
+			"text": "c19.link/scheduling.phone.id.lincoln",
+			"description": "c19.link/scheduling.phone.description.id.lincoln"
 		}
 	}
 }

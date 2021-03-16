@@ -17,8 +17,8 @@
 		},
 		"scheduling_phone": {
 			"url": "tel:1-800-401-0946",
-			"text": "c19.link/scheduling.phone.clark",
-			"description": "c19.link/scheduling.phone.description.clark"
+			"text": "c19.link/scheduling.phone.nv.clark",
+			"description": "c19.link/scheduling.phone.description.nv.clark"
 		}
 	}
 }
