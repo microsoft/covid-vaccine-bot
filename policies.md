@@ -1043,12 +1043,12 @@ Persons with the following qualifying underlying medical conditions are advised 
 | link type | link |
 | --- | --- |
 | info | [Republic of the Marshall Islands Ministry of Health and Human Services](http://rmihealth.org/) |
+| scheduling_phone | [+692 625-7710](tel:+692 625-7710) |
 
 
-## Marshall Islands Active Phase (1a)
+## Marshall Islands Active Phase (current)
 
-* Are you a healthcare worker?
-* Are you a long-term care resident?
+* Are you age 18+?
 
 # Maryland
 
