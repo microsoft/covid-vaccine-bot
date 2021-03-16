@@ -7,7 +7,8 @@ import { Link, Region, RolloutPhase } from '@covid-vax-bot/state-plan-schema'
 interface Section {
 	level: number
 	title: string
-	text?: string
+	text?: string | null
+	requiresText?: boolean
 }
 export class ReviewDocument {
 	public constructor(
@@ -33,19 +34,21 @@ export class ReviewDocument {
 			level,
 			title: name,
 		}
-		const linksSection: Section = {
-			level: level + 1,
-			title: name,
-			text: this.printLinkTable(links),
-		}
-		const phaseSection: Section | null =
+		const linksSection: Section | null =
 			!activePhase && phase == null
 				? null
 				: {
 						level: level + 1,
-						title: `${name} Active Phase (${activePhase})`,
-						text: this.printPhase(phase!),
+						title: `${name} Links`,
+						text: this.printLinkTable(links),
+						requiresText: true,
 				  }
+
+		const phaseSection: Section = {
+			level: level + 1,
+			title: `${name} Active Phase (${activePhase})`,
+			text: this.printPhase(phase!),
+		}
 
 		const subregionSection: Section | null =
 			subregions.length === 0
@@ -61,32 +64,36 @@ export class ReviewDocument {
 		return [regionName, linksSection, phaseSection, subregionSection]
 			.filter((t) => !!t)
 			.map((sec) => this.printSection(sec as Section))
+			.filter((r) => !!r)
 			.join('\n\n')
 	}
 
-	private printLinkTable(links: Record<string, Link>): string {
+	private printLinkTable(links: Record<string, Link>): string | null {
 		if (links == null) {
-			return `none`
+			return null
 		}
 		const rows = Object.keys(links).map((linkKey) => {
 			const link = links[linkKey]
 			const linkText = (link.text || '').trim()
+			const linkUrl = (link.url || '').trim()
 			const linkTextToShow =
 				linkText.length > 0
 					? this.localization.get(linkText.toLowerCase())
-					: link.url
-			return `| ${linkKey} | [${linkTextToShow}](${link.url}) |`
+					: linkUrl
+			return linkUrl.length === 0
+				? null
+				: `| ${linkKey} | [${linkTextToShow}](${linkUrl}) |`
 		})
 
 		return `| link type | link |
 | --- | --- |
-${rows.join('\n')}
+${rows.filter((r) => !!r).join('\n')}
 `
 	}
 
-	private printPhase(phase: RolloutPhase | undefined): string {
+	private printPhase(phase: RolloutPhase | undefined): string | null {
 		if (phase == null) {
-			return 'none'
+			return null
 		}
 		const qualifications = phase.qualifications.map(
 			({ question, moreInfoText: moreInfoTextId, moreInfoUrl }) => {
@@ -109,7 +116,10 @@ ${rows.join('\n')}
 		return `${qualifications.join('\n')}`
 	}
 
-	private printSection(section: Section): string {
+	private printSection(section: Section): string | null {
+		if (section.requiresText && section.text == null) {
+			return null
+		}
 		let heading = ''
 		for (let i = 0; i < section.level; ++i) {
 			heading += '#'
