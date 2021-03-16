@@ -59,14 +59,16 @@
 
 | link type | link |
 | --- | --- |
+| eligibility_plan | [https://www.cdc.gov/vaccines/covid-19/downloads/american-samoa-jurisdiction-executive-summary.pdf](https://www.cdc.gov/vaccines/covid-19/downloads/american-samoa-jurisdiction-executive-summary.pdf) |
 | info | [American Samoa Government Department of Human and Social Services](https://www.americansamoa.gov/) |
-| scheduling_phone | [633-5871](tel:633-5871) |
+| scheduling_phone | [684-633-5871](tel: 684-633-5871) |
 
 
 ## American Samoa Active Phase (1a)
 
 * Are you a healthcare worker?
-* Are you a long-term care resident?
+	* Paid and unpaid persons serving in healthcare settings who have the potential for direct or indirect exposure to patients or infectious materials
+* Are you an essential worker outside of healthcare?
 
 # Arizona
 
