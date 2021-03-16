@@ -128,7 +128,7 @@ export const updateLocationList = mutatorAction(
 				}
 
 				if (locationData.schedulingPhone !== '') {
-					const schedulingPhoneKey: string = `c19.link/scheduling.phone.${newLocObj.info.content.id}`.toLowerCase()
+					const schedulingPhoneKey: string = `c19.link/scheduling.phone.${location.info.content.metadata.code_alpha}.${newLocObj.info.content.id}`.toLowerCase()
 
 					location.strings.content[schedulingPhoneKey] = {
 						[store.currentLanguage]: locationData.schedulingPhone,
@@ -137,7 +137,7 @@ export const updateLocationList = mutatorAction(
 				}
 
 				if (locationData.schedulingPhoneDesc !== '') {
-					const schedulingPhoneDescKey = `c19.link/scheduling.phone.description.${newLocObj.info.content.id}`.toLowerCase()
+					const schedulingPhoneDescKey = `c19.link/scheduling.phone.description.${location.info.content.metadata.code_alpha}.${newLocObj.info.content.id}`.toLowerCase()
 
 					location.strings.content[schedulingPhoneDescKey] = {
 						[store.currentLanguage]: locationData.schedulingPhoneDesc,
@@ -343,7 +343,7 @@ export const updateLocationData = mutatorAction(
 				const regionObj = location.regions[prevItem.key]
 				regionObj.info.content.name = locationData.details
 
-				const schedulingPhoneKey = `c19.link/scheduling.phone.${regionObj.info.content.id}`.toLowerCase()
+				const schedulingPhoneKey = `c19.link/scheduling.phone.${location.info.content.metadata.code_alpha}.${regionObj.info.content.id}`.toLowerCase()
 				if (locationData?.schedulingPhone !== '') {
 					location.strings.content[schedulingPhoneKey] = {
 						[store.currentLanguage]: locationData.schedulingPhone,
@@ -486,7 +486,7 @@ export const updateLocationData = mutatorAction(
 					regionObj.vaccination.content.links.scheduling_phone &&
 					locationData.schedulingPhoneDesc !== ''
 				) {
-					let schedulingPhoneDescKey = `c19.link/scheduling.phone.description.${regionObj.info.content.id}`.toLowerCase()
+					let schedulingPhoneDescKey = `c19.link/scheduling.phone.description.${location.info.content.metadata.code_alpha}.${regionObj.info.content.id}`.toLowerCase()
 
 					if (
 						prevItem.value.vaccination.content.links.scheduling_phone
