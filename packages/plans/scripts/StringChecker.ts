@@ -5,10 +5,21 @@
 export class StringChecker {
 	private idSet = new Set<string>()
 	private visitedSet = new Set<string>()
+	private duplicateIds = new Set<string>()
 
 	public constructor(idList: string[]) {
 		this.idSet = new Set<string>()
-		idList.forEach((id) => this.idSet.add(id.toLowerCase()))
+		idList.forEach((id) => {
+			if (this.idSet.has(id)) {
+				this.duplicateIds.add(id)
+			} else {
+				this.idSet.add(id.toLowerCase())
+			}
+		})
+	}
+
+	public get duplicates(): Set<string> {
+		return this.duplicateIds
 	}
 
 	public has(id: string): boolean {

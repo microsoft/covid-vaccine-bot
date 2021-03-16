@@ -47,6 +47,14 @@ function validateDataFiles() {
 	getFiles(DATA_DIR, (f) => f === 'vaccination.json').forEach(
 		validateVaccinationInfo
 	)
+
+	// Check duplicates
+	stringChecker.duplicates.forEach((key) => {
+		errorCount++
+		linkErrors.push(`duplicated id: ${key}`)
+	})
+
+	// Check unvisited
 	stringChecker
 		.getUnvisited()
 		.filter(
@@ -57,6 +65,19 @@ function validateDataFiles() {
 		.forEach((s) => {
 			console.warn(chalk.yellow(`unused string id ${s}`))
 		})
+
+	if (errorCount > 0) {
+		if (schemaValidationErrors.length > 0) {
+			console.log(schemaValidationErrors)
+		}
+		if (linkErrors.length > 0) {
+			console.log(linkErrors)
+		}
+		console.log('💥 ' + chalk.red(`${errorCount} errors`))
+		process.exit(1)
+	} else {
+		console.log('🚀 ' + chalk.green(`all files passed validation`))
+	}
 
 	function validateStateInfo(file: string) {
 		try {
@@ -107,18 +128,6 @@ function validateDataFiles() {
 			if (dataLinkErrors.length > 0) {
 				console.log(chalk.red(`❌ ${file} has ${dataLinkErrors} linker errors`))
 			}
-			if (errorCount > 0) {
-				if (schemaValidationErrors.length > 0) {
-					console.log(schemaValidationErrors)
-				}
-				if (linkErrors.length > 0) {
-					console.log(linkErrors)
-				}
-				console.log('💥 ' + chalk.red(`${errorCount} errors`))
-				process.exit(1)
-			} else {
-				console.log('🚀 ' + chalk.green(`all files passed validation`))
-			}
 		} catch (err) {
 			console.log(`error caught in ${file}`, err)
 		}
@@ -144,6 +153,7 @@ function readRecords(): Record<string, string>[] {
 	readCsvFile(LOCALIZATION_TABLE_PATH, records)
 	return records
 }
+
 function getStringChecker(records: Record<string, string>[]): StringChecker {
 	const recordIds = records.map((r) => r['String ID'])
 	return new StringChecker(recordIds)
