@@ -103,3 +103,4 @@ c19.eligibility.question/healthcare_worker.are_you_a,"Are you a non-frontline es
 c19.eligibility.question/congregate.are_you,"Are you a high-risk resident in a congregate setting?",,,,,,,,,,,,,,
 c19.eligibility.question/age.are_you_aged,"Are you aged 55+ with underlying health conditions?",,,,,,,,,,,,,,
 c19.eligibility.question/age.are_you_a,"Are you a school age child or in daycare?",,,,,,,,,,,,,,
+c19.eligibility.question/age.are_you_age_18,"Are you age 18+?",,,,,,,,,,,,,,
