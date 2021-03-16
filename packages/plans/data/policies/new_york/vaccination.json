@@ -5,7 +5,7 @@
 			"url": "https://covid19vaccine.health.ny.gov/"
 		},
 		"workflow": {
-			"text": "c19.links/workflow.NY",
+			"text": "c19.links/workflow.ny",
 			"url": "https://am-i-eligible.covid19vaccine.health.ny.gov/"
 		},
 		"eligibility": {

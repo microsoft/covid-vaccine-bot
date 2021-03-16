@@ -2,14 +2,12 @@
 	"activePhase": "1b",
 	"links": {
 		"info": {
-			"text": "c19.links/info.AZ.SantaCruz",
+			"text": "c19.links/info.az.santacruz",
 			"url": "https://www.santacruzcountyaz.gov/732/COVID-19-Novel-Coronavirus",
-			"scrapeQuery": [
-				".headline"
-			]
+			"scrapeQuery": [".headline"]
 		},
 		"registration": {
-			"text": "c19.links/registration.AZ.SantaCruz",
+			"text": "c19.links/registration.az.santacruz",
 			"url": "https://survey123.arcgis.com/share/b0c6ce208fc94cf4a30b173810caab53"
 		}
 	}

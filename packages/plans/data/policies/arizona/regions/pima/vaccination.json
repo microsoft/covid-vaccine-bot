@@ -2,11 +2,11 @@
 	"activePhase": "1c",
 	"links": {
 		"info": {
-			"text": "c19.links/info.AZ.Pima",
+			"text": "c19.links/info.az.pima",
 			"url": "https://webcms.pima.gov/cms/One.aspx?portalId=169&pageId=669257"
 		},
 		"registration": {
-			"text": "c19.links/registration.AZ.Pima",
+			"text": "c19.links/registration.az.pima",
 			"url": "https://webcms.pima.gov/cms/One.aspx?portalId=169&pageId=690372"
 		}
 	}

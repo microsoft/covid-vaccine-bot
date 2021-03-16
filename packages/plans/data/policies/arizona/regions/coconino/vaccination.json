@@ -2,11 +2,9 @@
 	"activePhase": "1c",
 	"links": {
 		"info": {
-			"text": "c19.links/info.AZ.Cococino",
+			"text": "c19.links/info.az.cococino",
 			"url": "https://www.coconino.az.gov/covid19vaccine",
-			"scrapeQuery": [
-				".inner.col .fr-view"
-			]
+			"scrapeQuery": [".inner.col .fr-view"]
 		}
 	}
 }
