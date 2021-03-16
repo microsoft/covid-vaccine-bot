@@ -1,11 +1,9 @@
 {
 	"links": {
 		"info": {
-			"text": "CDC/Virginia/state_link",
+			"text": "cdc/virginia/state_link",
 			"url": "https://www.vdh.virginia.gov/covid-19-vaccine/",
-			"scrapeQuery": [
-				"main"
-			]
+			"scrapeQuery": ["main"]
 		},
 		"eligibility": {
 			"url": "https://www.vdh.virginia.gov/content/uploads/sites/191/2021/01/Vaccine-Eligibility-Text-Version.pdf"

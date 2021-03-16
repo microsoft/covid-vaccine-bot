@@ -1,14 +1,12 @@
 {
 	"links": {
 		"info": {
-			"text": "CDC/Nevada/state_link",
+			"text": "cdc/nevada/state_link",
 			"url": "https://www.immunizenevada.org/nv-covid-fighter"
 		},
 		"eligibility": {
 			"url": "https://www.immunizenevada.org/county-specific-covid-19-vaccine-plan",
-			"scrapeQuery": [
-				"main"
-			]
+			"scrapeQuery": ["main"]
 		},
 		"scheduling_phone": {
 			"url": "tel:1-800-401-0946",

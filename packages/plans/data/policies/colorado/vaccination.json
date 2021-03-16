@@ -1,14 +1,12 @@
 {
 	"links": {
 		"info": {
-			"text": "CDC/Colorado/state_link",
+			"text": "cdc/colorado/state_link",
 			"url": "https://covid19.colorado.gov/vaccine"
 		},
 		"eligibility": {
 			"url": "https://covid19.colorado.gov/for-coloradans/vaccine/vaccine-for-coloradans",
-			"scrapeQuery": [
-				"section.col-sm-9"
-			]
+			"scrapeQuery": ["section.col-sm-9"]
 		}
 	},
 	"activePhase": "1b3",

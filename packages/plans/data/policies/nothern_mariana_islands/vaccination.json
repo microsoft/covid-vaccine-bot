@@ -1,7 +1,7 @@
 {
 	"links": {
 		"info": {
-			"text": "CDC/Northern_Mariana_Islands/state_link",
+			"text": "cdc/northern_mariana_islands/state_link",
 			"url": "https://www.vaccinatecnmi.com/"
 		},
 		"scheduling": {

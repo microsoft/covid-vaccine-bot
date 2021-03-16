@@ -1,7 +1,7 @@
 {
 	"links": {
 		"info": {
-			"text": "CDC/Florida/state_link",
+			"text": "cdc/florida/state_link",
 			"url": "https://floridahealthcovid19.gov/covid-19-vaccines-in-florida/"
 		}
 	},
@@ -10,7 +10,7 @@
 		{
 			"id": "1a",
 			"qualifications": [
-				{ 
+				{
 					"question": "c19.eligibility.question/healthcare_worker.are"
 				},
 				{

@@ -1,11 +1,9 @@
 {
 	"links": {
 		"info": {
-			"text": "CDC/West_Virginia/state_link",
+			"text": "cdc/west_virginia/state_link",
 			"url": "https://dhhr.wv.gov/COVID-19/Pages/Vaccine.aspx",
-			"scrapeQuery": [
-				".col-12.col-md-8"
-			]
+			"scrapeQuery": [".col-12.col-md-8"]
 		},
 		"scheduling": {
 			"url": "https://member.everbridge.net/747122446041089/login",

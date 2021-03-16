@@ -1,11 +1,9 @@
 {
 	"links": {
 		"info": {
-			"text": "CDC/Rhode_Island/state_link",
+			"text": "cdc/rhode_island/state_link",
 			"url": "https://covid.ri.gov/vaccination",
-			"scrapeQuery": [
-				"article"
-			]
+			"scrapeQuery": ["article"]
 		},
 		"scheduling": {
 			"url": "https://www.vaccinateri.org/",

@@ -1,7 +1,7 @@
 {
 	"links": {
 		"info": {
-			"text": "CDC/New_York/state_link",
+			"text": "cdc/new_york/state_link",
 			"url": "https://covid19vaccine.health.ny.gov/"
 		},
 		"workflow": {
@@ -10,9 +10,7 @@
 		},
 		"eligibility": {
 			"url": "https://covid19vaccine.health.ny.gov/phased-distribution-vaccine",
-			"scrapeQuery": [
-				".toc-chapters"
-			]
+			"scrapeQuery": [".toc-chapters"]
 		},
 		"scheduling": {
 			"url": "https://am-i-eligible.covid19vaccine.health.ny.gov/",

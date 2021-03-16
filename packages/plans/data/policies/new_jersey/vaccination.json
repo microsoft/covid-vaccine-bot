@@ -1,7 +1,7 @@
 {
 	"links": {
 		"info": {
-			"text": "CDC/New_Jersey/state_link",
+			"text": "cdc/new_jersey/state_link",
 			"url": "https://www.nj.gov/health/cd/topics/covid2019_vaccination.shtml"
 		},
 		"eligibility": {

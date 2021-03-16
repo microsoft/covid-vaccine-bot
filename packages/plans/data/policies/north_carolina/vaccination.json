@@ -1,7 +1,7 @@
 {
 	"links": {
 		"info": {
-			"text": "CDC/North_Carolina/state_link",
+			"text": "cdc/north_carolina/state_link",
 			"url": "https://covid19.ncdhhs.gov/vaccines"
 		},
 		"workflow": {
@@ -9,9 +9,7 @@
 		},
 		"eligibility": {
 			"url": "https://covid19.ncdhhs.gov/vaccines/find-your-spot-take-your-shot",
-			"scrapeQuery": [
-				"article"
-			]
+			"scrapeQuery": ["article"]
 		},
 		"scheduling_phone": {
 			"url": "tel:1-888-675-4567",

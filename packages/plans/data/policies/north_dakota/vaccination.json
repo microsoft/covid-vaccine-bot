@@ -1,7 +1,7 @@
 {
 	"links": {
 		"info": {
-			"text": "CDC/North_Dakota/state_link",
+			"text": "cdc/north_dakota/state_link",
 			"url": "https://www.health.nd.gov/immunization-guidance-public"
 		},
 		"eligibility_plan": {

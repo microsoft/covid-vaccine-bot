@@ -1,7 +1,7 @@
 {
 	"links": {
 		"info": {
-			"text": "CDC/Montana/state_link",
+			"text": "cdc/montana/state_link",
 			"url": "https://dphhs.mt.gov/covid19vaccine"
 		},
 		"eligibility_plan": {
