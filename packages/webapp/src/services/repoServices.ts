@@ -267,6 +267,7 @@ export const repoServices = async (
 				const branchName = `refs/heads/${state.username}-policy-${Date.now()}`
 				const globalUpdates = extraData[0]
 				const locationUpdates = extraData[1]
+				const prFormData = extraData[3]
 
 				const createBranchResponse = await fetch(
 					`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/git/refs`,
@@ -309,7 +310,6 @@ export const repoServices = async (
 					if (locationUpdates) {
 						for (const i in locationUpdates) {
 							const locationObj = locationUpdates[i].data
-							console.log(locationObj, i)
 
 							//Info
 							await fetch(
@@ -421,6 +421,8 @@ export const repoServices = async (
 					}
 				}
 
+				const prTitle = !prFormData.prTitle ? 'auto PR creation' : prFormData.prTitle
+
 				const prResp = await fetch(
 					`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/pulls`,
 					{
@@ -431,7 +433,8 @@ export const repoServices = async (
 						body: JSON.stringify({
 							head: branchName,
 							base: 'main',
-							title: 'auto PR creation',
+							title: prTitle,
+							body: prFormData.prDetails
 						}),
 					}
 				)
