@@ -297,7 +297,7 @@ export const repoServices = async (
 									},
 									body: JSON.stringify({
 										branch: branchName,
-										message: 'auto file update',
+										message: `updated ${updateObj.path}`,
 										content: utf8_to_b64(fileData),
 										sha: updateObj.sha,
 									}),
@@ -309,6 +309,7 @@ export const repoServices = async (
 					if (locationUpdates) {
 						for (const i in locationUpdates) {
 							const locationObj = locationUpdates[i].data
+							console.log(locationObj, i)
 
 							//Info
 							await fetch(
@@ -320,7 +321,7 @@ export const repoServices = async (
 									},
 									body: JSON.stringify({
 										branch: branchName,
-										message: 'auto file update',
+										message: `updated ${locationObj.info.path}`,
 										content: utf8_to_b64(
 											JSON.stringify(locationObj.info.content, null, '\t')
 										),
@@ -338,7 +339,7 @@ export const repoServices = async (
 									},
 									body: JSON.stringify({
 										branch: branchName,
-										message: 'auto file update',
+										message: `updated ${locationObj.vaccination.path}`,
 										content: utf8_to_b64(
 											JSON.stringify(
 												locationObj.vaccination.content,
@@ -360,7 +361,7 @@ export const repoServices = async (
 									},
 									body: JSON.stringify({
 										branch: branchName,
-										message: 'auto file update',
+										message: `updated ${locationObj.strings.path}`,
 										content: utf8_to_b64(
 											createCSVDataString(locationObj.strings.content)
 										),
@@ -384,7 +385,7 @@ export const repoServices = async (
 											},
 											body: JSON.stringify({
 												branch: branchName,
-												message: 'auto file update',
+												message: `updated ${regionObj.info.path}`,
 												content: utf8_to_b64(
 													JSON.stringify(regionObj.info.content, null, '\t')
 												),
@@ -402,7 +403,7 @@ export const repoServices = async (
 											},
 											body: JSON.stringify({
 												branch: branchName,
-												message: 'auto file update',
+												message: `updated ${regionObj.vaccination.path}`,
 												content: utf8_to_b64(
 													JSON.stringify(
 														regionObj.vaccination.content,
