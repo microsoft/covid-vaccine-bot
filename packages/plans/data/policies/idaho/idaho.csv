@@ -10,7 +10,7 @@ Down Syndrome
 Heart conditions, such as heart failure, coronary artery disease, or cardiomyopathies
 Immunocompromised state (weakened immune system) from solid organ transplant
 Obesity (body mass index [BMI] of 30 kg/m2 or higher but < 40 kg/m2)
-Severe Obesity (BMI ≥ 40 kg/m2)
+Severe Obesity (BMI >= 40 kg/m2)
 Pregnancy
 Sickle cell disease
 Smoking
@@ -26,7 +26,7 @@ c19.eligibility.moreinfo/essential_worker.id.1c,"This includes
 - Dentists, dental hygienists and dental assistants
 - Emergency medical services
 - First responders (firefighters/police) and safety (protective services/community support)
-- Home care providers for adults ≥ 65  years of age, or for other adults/children with high-risk medical conditions (includes staff of certified family homes but does not include adult family members who provide in-home personal care for adults 65 years of age and older or for other adults or children with high-risk medical conditions)
+- Home care providers for adults >= 65  years of age, or for other adults/children with high-risk medical conditions (includes staff of certified family homes but does not include adult family members who provide in-home personal care for adults 65 years of age and older or for other adults or children with high-risk medical conditions)
 - Hospital staff essential for care of COVID-19 patients and maintaining hospital capacity (includes support staff, clinical staff, and medical imaging professionals)
 - Idaho Fish and Game and USDA law enforcement officers
 - Idaho National Guard medical staff
@@ -36,7 +36,7 @@ c19.eligibility.moreinfo/essential_worker.id.1c,"This includes
 - Outpatient clinic staff essential for care of COVID-19 patients and maintaining hospital capacity (includes vaccine administrators and behavioral health workers, including counselors for substance abuse treatment centers and suicide prevention hotline workers)
 - Outpatient and inpatient medical staff (not included above) who are unable to telework
 - Pharmacists, pharmacy technicians, and pharmacy aids
-- Pre-K–12 school staff and teachers and daycare (childcare) workers
+- Pre-K-12 school staff and teachers and daycare (childcare) workers
 - Psychiatric residential treatment facility staff
 - Public health and emergency management response workers who are unable to telework (includes Idaho National - Guard deployed to support public health response, state and local public health COVID-19 responders who are unable to telework)
 - Radiation therapists
