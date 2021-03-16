@@ -4,9 +4,18 @@
 	display: flex;
 	flex-direction: column;
 
+	.bodyHeader {
+		padding: 50px 0 20px 0;
+	}
+
 	.submitContainer {
-		margin: 10px 0px;
+		margin: 40px 0 10px 0;
 		text-align:center;
+
+		.ms-TextField {
+			text-align: left;
+			margin-bottom: 20px;
+		}
 	}
 
 	.loadingContainer{

@@ -267,6 +267,7 @@ export const repoServices = async (
 				const branchName = `refs/heads/${state.username}-policy-${Date.now()}`
 				const globalUpdates = extraData[0]
 				const locationUpdates = extraData[1]
+				const prFormData = extraData[3]
 
 				const createBranchResponse = await fetch(
 					`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/git/refs`,
@@ -297,7 +298,7 @@ export const repoServices = async (
 									},
 									body: JSON.stringify({
 										branch: branchName,
-										message: 'auto file update',
+										message: `updated ${updateObj.path}`,
 										content: utf8_to_b64(fileData),
 										sha: updateObj.sha,
 									}),
@@ -320,7 +321,7 @@ export const repoServices = async (
 									},
 									body: JSON.stringify({
 										branch: branchName,
-										message: 'auto file update',
+										message: `updated ${locationObj.info.path}`,
 										content: utf8_to_b64(
 											JSON.stringify(locationObj.info.content, null, '\t')
 										),
@@ -338,7 +339,7 @@ export const repoServices = async (
 									},
 									body: JSON.stringify({
 										branch: branchName,
-										message: 'auto file update',
+										message: `updated ${locationObj.vaccination.path}`,
 										content: utf8_to_b64(
 											JSON.stringify(
 												locationObj.vaccination.content,
@@ -360,7 +361,7 @@ export const repoServices = async (
 									},
 									body: JSON.stringify({
 										branch: branchName,
-										message: 'auto file update',
+										message: `updated ${locationObj.strings.path}`,
 										content: utf8_to_b64(
 											createCSVDataString(locationObj.strings.content)
 										),
@@ -384,7 +385,7 @@ export const repoServices = async (
 											},
 											body: JSON.stringify({
 												branch: branchName,
-												message: 'auto file update',
+												message: `updated ${regionObj.info.path}`,
 												content: utf8_to_b64(
 													JSON.stringify(regionObj.info.content, null, '\t')
 												),
@@ -402,7 +403,7 @@ export const repoServices = async (
 											},
 											body: JSON.stringify({
 												branch: branchName,
-												message: 'auto file update',
+												message: `updated ${regionObj.vaccination.path}`,
 												content: utf8_to_b64(
 													JSON.stringify(
 														regionObj.vaccination.content,
@@ -420,6 +421,8 @@ export const repoServices = async (
 					}
 				}
 
+				const prTitle = !prFormData.prTitle ? 'auto PR creation' : prFormData.prTitle
+
 				const prResp = await fetch(
 					`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/pulls`,
 					{
@@ -430,7 +433,8 @@ export const repoServices = async (
 						body: JSON.stringify({
 							head: branchName,
 							base: 'main',
-							title: 'auto PR creation',
+							title: prTitle,
+							body: prFormData.prDetails
 						}),
 					}
 				)

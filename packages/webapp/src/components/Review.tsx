@@ -8,8 +8,9 @@ import {
 	DetailsList,
 	DetailsListLayoutMode,
 	ProgressIndicator,
+	TextField,
 } from 'office-ui-fabric-react'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback, useRef } from 'react'
 import { createPR } from '../actions/repoActions'
 
 import { getAppStore } from '../store/store'
@@ -36,6 +37,9 @@ export default observer(function Review(props: ReviewProp) {
 	const [locationUpdates, setLocationUpdates] = useState<any[]>([])
 	const [globalUpdates, setGlobalUpdates] = useState<any[]>([])
 	const [showLoading, setShowLoading] = useState<boolean>(false)
+
+	const [formData, setFormData] = useState<any>({})
+	const fieldChanges = useRef<any>(formData)
 
 	const state = getAppStore()
 	useEffect(() => {
@@ -157,9 +161,30 @@ export default observer(function Review(props: ReviewProp) {
 		setGlobalUpdates(tempGlobalUpdates)
 	}, [state.initRepoFileData, state.repoFileData, state.initGlobalFileData, state.globalFileData])
 
+	const handleTextChange = useCallback(
+		(ev) => {
+			const value = ev.target.value
+			fieldChanges.current = {
+				...fieldChanges.current,
+				...{
+					[ev.target.name]: value,
+				},
+			}
+
+			setFormData({ ...formData, ...fieldChanges.current })
+		},
+		[formData, fieldChanges]
+	)
+
 	return (
 		<div className="reviewPageContainer">
 			<div className="bodyContainer">
+				<div className="bodyHeader">
+					<div className="bodyHeaderTitle">
+						<div className="breadCrumbs">/ Review</div>
+						<div className="mainTitle">Review</div>
+					</div>
+				</div>
 				<div className="bodyContent">
 					{!showLoading ? (
 						<section>
@@ -171,11 +196,27 @@ export default observer(function Review(props: ReviewProp) {
 								checkboxVisibility={2}
 							/>
 							<div className="submitContainer">
+								<TextField
+									label="Optional Title:"
+									name="prTitle"
+									value={formData.prTitle}
+									onChange={handleTextChange}
+								/>
+								<TextField
+									label="Optional Details:"
+									name="prDetails"
+									multiline={true}
+									rows={5}
+									autoAdjustHeight={true}
+									resizable={false}
+									value={formData.prDetails}
+									onChange={handleTextChange}
+								/>
 								<PrimaryButton
 									text="Submit changes"
 									onClick={() => {
 										setShowLoading(true)
-										createPR([globalUpdates, locationUpdates, showDashboard])
+										createPR([globalUpdates, locationUpdates, showDashboard, formData])
 									}}
 								/>
 							</div>
