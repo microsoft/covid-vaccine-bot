@@ -131,9 +131,29 @@ export interface Qualification {
 	question: string
 
 	/**
+	 * A short-form, SMS-friendly variant of the question. The system wil default to 'question'
+	 */
+	questionSms?: string
+
+	/**
+	 * A voice-agent friendly of the question. The system wil default to 'question'
+	 */
+	questionVoice?: string
+
+	/**
 	 * The ID of the clarifying text to provide (e.g. what defines an essential worker)
 	 */
 	moreInfoText?: string
+
+	/**
+	 * A short-form, SMS-friendly variant of the more-info text. The system will default to 'moreInfoText'
+	 */
+	moreInfoTextSms?: string
+
+	/**
+	 * A voice-agent friendly variant of the more-info text. The system will default to 'moreInfoText'
+	 */
+	moreInfoTextVoice?: string
 
 	/**
 	 * A URL to provide to elaborate on eligibility details
