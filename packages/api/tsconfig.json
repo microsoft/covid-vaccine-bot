@@ -1,0 +1,6 @@
+{
+	"extends": "@tsconfig/node14",
+	"compilerOptions": {},
+	"include": ["src/**/*"],
+	"exclude": ["**/__tests__/**"]
+}
