@@ -439,6 +439,21 @@ export const repoServices = async (
 					}
 				)
 
+				const prRespClone = await prResp.clone().json()
+
+				await fetch(
+					`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/issues/${prRespClone.number}/labels`,
+					{
+						method: 'POST',
+						headers: {
+							Authorization: `token ${state.accessToken}`,
+						},
+						body: JSON.stringify({
+							labels: ['data-composer-submission', 'requires-data-accuracy-review']
+						}),
+					}
+				)
+
 				return prResp.json()
 			}
 			break
