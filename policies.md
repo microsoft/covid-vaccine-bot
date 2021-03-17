@@ -301,9 +301,34 @@ Counties and tribes may also choose to vaccinate the following groups defined by
 
 * Are you a healthcare worker?
 * Are you a long-term care resident?
-* Are you classified as an essential worker? (see [here](https://covid19.ca.gov/essential-workforce/))
+* Are you classified as an essential worker?
+	* Sectors currently eligible for vaccines include: 
+- Agriculture and food
+- Education and childcare
+- Emergency services
+- Public transit/airport and commercial airlines (see [here](https://covid19.ca.gov/essential-workforce/))
 * Are you age 65+?
-* Are you homeless or incarcerated?
+* Do you work or live in a congregate setting?
+	* Individuals who reside or work in a high risk congregate residential setting, such as an incarceration/detention facility, homeless shelter, or behavioral health facility, as these settings are high risk for outbreaks and have a concentration of individuals with high risk chronic health conditions. This includes all people experiencing homelessness, who are at risk of transitioning into congregate settings at short notice. 
+* Are you age 16+, and have a high-risk medical condition?
+	* Beginning March 15, healthcare providers may use their clinical judgement to vaccinate individuals age 16-64 who are deemed to be at the very highest risk for morbidity and mortality from COVID-19 as a direct result of one or more of the following severe health conditions, and individuals in specified settings are eligible to be vaccinated due to increased risk, as specified in this provider bulletin:
+
+- Cancer, current with debilitated or immunocompromised state
+- Chronic kidney disease, stage 4 or above
+- Chronic pulmonary disease,  oxygen dependent
+- Down syndrome
+- Immunocompromised state (weakened immune system) from solid organ transplant
+- Pregnancy
+- Sickle cell disease
+- Heart conditions, such as heart failure, coronary artery disease, or cardiomyopathies (excludes hypertension)
+- Severe obesity (Body Mass Index ≥ 40 kg/m2)
+- Type 2 diabetes mellitus with hemoglobin A1c level greater than 7.5%
+
+OR If as a result of a developmental or other severe high-risk disability one or more of the following applies:
+
+- The individual is likely to develop severe life-threatening illness or death from COVID-19 infection
+- Acquiring COVID-19 will limit the individual's ability to receive ongoing care or services vital to their well-being and survival
+- Providing adequate and timely COVID care will be particularly challenging as a result of the individual's disability (see [here](https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/COVID-19/Provider-Bulletin-2-12-21.aspx))
 
 # Colorado
 
