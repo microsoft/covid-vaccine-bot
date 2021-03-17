@@ -1,3 +1,7 @@
+/*!
+ * Copyright (c) Microsoft. All rights reserved.
+ * Licensed under the MIT license. See LICENSE file in the project.
+ */
 import { OpenAPIV3 } from 'openapi-types'
 
 export const apiDoc: OpenAPIV3.Document = {

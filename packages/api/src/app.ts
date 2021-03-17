@@ -2,13 +2,13 @@
  * Copyright (c) Microsoft. All rights reserved.
  * Licensed under the MIT license. See LICENSE file in the project.
  */
+import path from 'path'
+import bodyParser from 'body-parser'
+import cors from 'cors'
 import express, { Request, Response } from 'express'
 import { initialize } from 'express-openapi'
-import cors from 'cors'
-import bodyParser from 'body-parser'
-import { OpenApiError } from './types'
 import { apiDoc } from './apiDoc'
-import path from 'path'
+import { OpenApiError } from './types'
 
 export function createApp() {
 	const app = express()
