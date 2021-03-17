@@ -1387,7 +1387,7 @@ Healthcare settings include acute care facilities, long-term acute care faciliti
 | scheduling_phone | [(877) 435-8411](tel:(877) 435-8411) |
 
 
-## Missouri Active Phase (1c)
+## Missouri Active Phase (1b_tier_3)
 
 * Are you a healthcare worker?
 	* This includes those at:
@@ -1397,19 +1397,25 @@ Healthcare settings include acute care facilities, long-term acute care faciliti
 - High-risk non-congregate healthcare, including clinics, physicians, and home care providers.
 - All remaining patient-facing healthcare providers, including but not limited to health care workers in emergency shelters, dental offices, school nurses, pharmacies, public health clinics, mental/behavioral health providers, and correctional settings. (see [here](https://covidvaccine.mo.gov/info-graphic-alt/vaccine-availability.html))
 * Are you a long term care resident or work in a long term care facility?
-* Are you a first responder?
-	* This includes:
-
-Public Health Administrators and Staff
-Law Enforcement
-Fire Services
-Corrections
-Emergency Management
-Public Works
-Emergency Services (see [here](https://covidvaccine.mo.gov/info-graphic-alt/vaccine-availability.html))
-* Are you an adult with a high-risk medical condition?
-	* Any adults with cancer, Chronic Kidney Disease, COPD, Heart Conditions, weakened immune system due to organ transplant, severe obesity (BMI >40), pregnancy, Sickle Cell Disease, Type 2 Diabetes Mellitus, or individuals with intellectual and/or developmental disabilities such as Down Syndrome. (see [here](https://covidvaccine.mo.gov/info-graphic-alt/vaccine-availability.html))
+* Are you classified as an essential worker?
+	* This includes: 
+- First responders & emergency services
+- EMS/EMT/Paramedics
+- Education (K-12)
+- Childcare
+- Communications Infrastructure
+- Dams Sector
+- Energy Sector
+- Food & Agriculture Sector 1
+- Government
+- Information Technology
+- Nuclear Reactor Sector
+- Transportation Systems
+- Water and Wastewater Systems
+ (see [here](https://covidvaccine.mo.gov/priority/Phase1b/#phase1b-3))
 * Are you age 65+?
+* Are you an adult with a high-risk medical condition?
+	* Any adults with cancer, Chronic Kidney Disease, COPD, Heart Conditions, weakened immune system due to organ transplant, severe obesity (BMI >40), pregnancy, Sickle Cell Disease, Type 2 Diabetes Mellitus, or individuals with intellectual and/or developmental disabilities such as Down Syndrome. (see [here](https://health.mo.gov/living/healthcondiseases/communicable/novel-coronavirus/pdf/so-vac-distribution-order.pdf))
 * Do you work or live in a congregate setting?
 	* Congregate community healthcare settings staff and residents, including DMH contracted settings and adult day cares. (see [here](https://covidvaccine.mo.gov/info-graphic-alt/vaccine-availability.html))
 
