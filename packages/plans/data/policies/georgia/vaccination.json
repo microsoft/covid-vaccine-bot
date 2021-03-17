@@ -27,7 +27,7 @@
 			"text": "c19.link/scheduling.phone.ga"
 		}
 	},
-	"activePhase": "1a",
+	"activePhase": "1b",
 	"phases": [
 		{
 			"id": "1a",
@@ -62,28 +62,34 @@
 					"question": "c19.eligibility.question/long_term_care_resident.are"
 				},
 				{
-					"question": "c19.eligibility.question/age.65_up"
+					"question": "c19.eligibility.question/age.55_up"
 				},
 				{
 					"question": "c19.eligibility.question/essential_worker.are",
 					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.are.ga.1b"
 				},
 				{
-					"question": "c19.eligibility.question/essential_worker.1a.ga.caregiver_of_65_up"
+					"question": "c19.eligibility.question/health.are_you_an",
+					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.are_you_a_caregiver.ga.1b",
+					"moreInfoUrl": "https://dph.georgia.gov/covid-vaccine-eligibility"
 				},
 				{
 					"question": "c19.eligibility.question/essential_worker.are_you",
 					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.are_you.ga.1b"
 				},
 				{
-					"question": "c19.eligibility.question/health.are_you_an",
-					"moreInfoText": "c19.eligibility.moreinfo/health.are_you_an.ga.1b",
-					"moreInfoUrl": "https://dph.georgia.gov/covid-vaccine"
-				},
-				{
 					"question": "c19.eligibility.question/health.are_you",
 					"moreInfoText": "c19.eligibility.moreinfo/health.are_you.ga.1b",
 					"moreInfoUrl": "https://dph.georgia.gov/covid-vaccine"
+				},
+				{
+					"question": "c19.eligibility.question/health",
+					"moreInfoText": "c19.eligibility.moreinfo/health.ga.1b",
+					"moreInfoUrl": "https://dph.georgia.gov/covid-vaccine-eligibility"
+				},
+				{
+					"question": "c19.eligibility.question/essential_worker",
+					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.ga.1b"
 				}
 			]
 		},
