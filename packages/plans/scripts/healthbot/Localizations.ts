@@ -40,7 +40,7 @@ export class Localizations {
 					}
 				})
 		})
-		await axios({
+		const response = await axios({
 			method: 'POST',
 			url: LOCALIZATION_URL,
 			headers: {
@@ -51,6 +51,14 @@ export class Localizations {
 				system: [],
 			},
 		})
-		console.log('uploading localizations completed !')
+		if (response.status >= 400) {
+			throw new Error(`error uploading files: ${response.status} - ${response.statusText}
+			
+	${response.data}
+			`)
+		}
+		console.log(
+			`uploading localizations completed! response=${response.status}`
+		)
 	}
 }

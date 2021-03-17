@@ -29,13 +29,19 @@ export class Resources {
 			console.log('add file', basename)
 			form.append(basename, fs.createReadStream(file))
 		}
-		await axios.post(RESOURCES_URL, form, {
+		const response = await axios.post(RESOURCES_URL, form, {
 			headers: {
 				Authorization: `Bearer ${token()}`,
 				...form.getHeaders(),
 			},
 		})
-		console.log('uploading files completed !')
+		if (response.status >= 400) {
+			throw new Error(`error uploading files: ${response.status} - ${response.statusText}
+
+	${response.data}
+			`)
+		}
+		console.log(`uploading files completed! response=${response.status}`)
 	}
 
 	public async remove(files: string[]): Promise<void> {
