@@ -9,7 +9,7 @@
 			"text": "c19.links/vax_providers"
 		}
 	},
-	"activePhase": "1b",
+	"activePhase": "1c",
 	"phases": [
 		{
 			"id": "1a",
@@ -40,7 +40,8 @@
 				},
 				{
 					"question": "c19.eligibility.question/health",
-					"moreInfoUrl": "https://www.dshs.state.tx.us/coronavirus/immunize/vaccine/EVAP-Phase1B.pdf"
+					"moreInfoUrl": "https://www.dshs.state.tx.us/coronavirus/immunize/vaccine/EVAP-Phase1B.pdf",
+					"moreInfoText": "c19.eligibility.moreinfo/health.tx.1b"
 				}
 			]
 		},
@@ -48,19 +49,27 @@
 			"id": "1c",
 			"qualifications": [
 				{
-					"question": "c19.eligibility.question/healthcare_worker"
+					"question": "c19.eligibility.question/healthcare_worker",
+					"moreInfoText": "c19.eligibility.moreinfo/healthcare_worker.tx.1c",
+					"moreInfoUrl": "https://www.dshs.state.tx.us/coronavirus/immunize/vaccine/EVAP-Phase1A.pdf"
 				},
 				{
-					"question": "c19.eligibility.question/long_term_care_resident"
+					"question": "c19.eligibility.question/long_term_care_resident.are",
+					"moreInfoUrl": "https://www.dshs.state.tx.us/coronavirus/immunize/vaccine/EVAP-Phase1A.pdf"
 				},
 				{
-					"question": "c19.eligibility.question/essential_worker"
+					"question": "c19.eligibility.question/essential_worker.are_you",
+					"moreInfoUrl": "https://www.dshs.state.tx.us/coronavirus/immunize/vaccine/EVAP-Phase1C.pdf",
+					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.are_you.tx.1c"
 				},
 				{
-					"question": "c19.eligibility.question/health"
+					"question": "c19.eligibility.question/health",
+					"moreInfoText": "c19.eligibility.moreinfo/health.tx.1c",
+					"moreInfoUrl": "https://www.dshs.state.tx.us/coronavirus/immunize/vaccine/EVAP-Phase1B.pdf"
 				},
 				{
-					"question": "c19.eligibility.question/age.65_up"
+					"question": "c19.eligibility.question/age.are",
+					"moreInfoUrl": "https://www.dshs.state.tx.us/coronavirus/immunize/vaccine/EVAP-Phase1C.pdf"
 				}
 			]
 		}
