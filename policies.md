@@ -489,15 +489,60 @@ OR If as a result of a developmental or other severe high-risk disability one or
 | scheduling_phone | [Scheduling Hotline](tel:) |
 
 
-## Georgia Active Phase (1a)
+## Georgia Active Phase (1b)
 
 * Are you a healthcare worker?
 	* This includes physicians, nurses, laboratory technicians, EMS personnel, environmental services, etc.
 * Are you a long term care resident or work in a long term care facility?
-* Are you age 65+?
+* Are you age 55+?
 * Are you a first responder?
 	* This includes sworn law enforcement, firefighters, and first responders
-* Are you a caregiver of a person aged 65+?
+* Are you an adult with intellectual or developmental disabilities or are you a caregiver to an adult with intellectual or developmental disabilities?
+	* Among Georgia’s current eligible populations for vaccination are individuals aged 16 and older with disabilities and their caregivers, parents of children with complex medical conditions who are at high risk for COVID-19 complications and individuals with certain medical conditions as defined below.
+
+Intellectual Disability is a disability characterized by significant limitations in both intellectual functioning and in adaptive behavior, which covers many everyday social and practical skills. This disability originates before the age of 22.
+
+Developmental disability is a physical or mental impairment that happens before the age of 22, is expected to last a lifetime, and impacts at least three activities of daily living. Activities of daily living include self-care; receptive and expressive language; learning; mobility; self-direction; capacity for independent living; and economic self-sufficiency.
+
+Disabilities also include disabilities caused by an injury (e.g., traumatic brain injury or spinal cord injury), a disability due to a longstanding condition that could cause vision loss, nerve damage or loss of a limb, or a disability due to illness such as ALS or multiple sclerosis.
+
+Caregivers provide care to people who need some degree of ongoing assistance with everyday tasks on a regular or daily basis. The recipients of care can live either in residential or institutional settings, range from children to older adults, and have chronic illnesses or disabling conditions. (see [here](https://dph.georgia.gov/covid-vaccine-eligibility))
+* Are you a K-12 educator or work in a licensed child care facility?
+	* Workers in Pre-K, K-12, DECAL licensed or exempt childcare programs are eligible
+* Are you a parent of a child with a complex medical condition?
+	* This includes children with one or more of the following conditions considered at high risk for COVID complications: 
+Malignancies requiring active treatment
+Immunocompromised state (weakened immune system) including organ transplant (bone marrow or solid organ) within 2 years
+Critical congenital heart disease
+Asthma (moderate to severe)
+Sickle cell disease
+Diabetes
+Obesity (BMI >95%)
+Cystic fibrosis
+Significant neurologic injury or condition (e.g. hypoxic ischemic encephalopathy, traumatic brain injury, congenital anomaly, acute flaccid myelitis) with functional/developmental impairment (e.g. cerebral palsy, developmental disability, prematurity, mitochondrial disease)
+Technology dependence (e.g. BiPAP, trach) (see [here](https://dph.georgia.gov/covid-vaccine))
+* Are you age 16+, and have a high-risk medical condition?
+	* Individuals aged 16 and older with certain underlying medical conditions are at increased risk for severe illness from the virus that causes COVID-19. Severe illness from COVID-19 is defined as hospitalization, admission to the ICU, intubation or mechanical ventilation, or death. These conditions include:
+
+Asthma (moderate to severe)                           
+Cancer                                                  
+Cerebrovascular disease (affects blood vessels and blood supply to the brain)            
+Chronic kidney disease                         
+Chronic Obstructive Pulmonary Disease
+Cystic Fibrosis                                                 
+Diabetes                                               
+Hypertension or high blood pressure                
+Heart conditions     
+Immunocompromised (from blood or bone marrow transplant, immune deficiencies, HIV, use of corticosteroids, or use of other immune weakening medicines)
+Liver disease
+Neurological conditions
+Overweight and obesity (Having obesity, defined as a body mass index (BMI) between 30 kg/m2 and <40 kg/m2 or severe obesity (BMI of 40 kg/m2 or above), increases your risk of severe illness from COVID-19. Having overweight, defined as a BMI > 25 kg/m2 but less than 30 kg/m2 might increase your risk of severe illness from COVID-19.)
+Pregnancy
+Pulmonary fibrosis
+Sickle Cell disease
+Thalassemia (blood disorder) (see [here](https://dph.georgia.gov/covid-vaccine-eligibility))
+* Are you classified as an essential worker?
+	* Essential workers that are prioritized include judges and court staff, healthcare workers, first responders, educators and staff, childcare workers, and staff in long-term care facilities. 
 
 # Guam
 
