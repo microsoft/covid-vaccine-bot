@@ -1,5 +1,5 @@
 String ID,en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th
-c19.test/special_chars,•■≥’–,,,,,,,,,,,,,,
+c19.test/special_chars,"•■≥’–",,,,,,,,,,,,,,
 c19/how_did_we_do,"Let us know how we did at [$SUPPORT_EMAIL](mailto:$SUPPORT_EMAIL)",,,,,,,,,,,,,,
 c19.entry/prompt,"How can I help you?",,,,,,,,,,,,,,
 c19.entry/tos,"A coalition of world-leading medical and research institutions, blood centers, life science companies, technology companies, philanthropic organizations, and survivor groups has come together to support the rapid development of potential new therapies for COVID-19 prevention, including vaccines.
@@ -114,3 +114,4 @@ c19.eligibility.question/congregate.are_you,"Are you a high-risk resident in a c
 c19.eligibility.question/age.are_you_aged,"Are you aged 55+ with underlying health conditions?",,,,,,,,,,,,,,
 c19.eligibility.question/age.are_you_a,"Are you a school age child or in daycare?",,,,,,,,,,,,,,
 c19.eligibility.question/age.are_you_age_18,"Are you age 18+?",,,,,,,,,,,,,,
+c19.eligibility.question/essential_worker.are_you_a_caregiver,"Are you a caregiver to an individual 16 or older with disabilities?",,,,,,,,,,,,,,
