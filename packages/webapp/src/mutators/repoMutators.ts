@@ -523,7 +523,6 @@ export const modifyStateStrings = mutatorAction(
 		if (data) {
 			const store = getAppStore()
 			if (store?.repoFileData) {
-				console.log(data)
 				store.pendingChanges = true
 				const location = store.repoFileData[data.locationKey]
 
