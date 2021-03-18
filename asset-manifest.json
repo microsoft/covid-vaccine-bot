@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/covid-vaccine-bot/static/css/main.0917ee51.chunk.css",
-    "main.js": "/covid-vaccine-bot/static/js/main.e4423776.chunk.js",
-    "main.js.map": "/covid-vaccine-bot/static/js/main.e4423776.chunk.js.map",
+    "main.css": "/covid-vaccine-bot/static/css/main.42278bbc.chunk.css",
+    "main.js": "/covid-vaccine-bot/static/js/main.fcc4ecd7.chunk.js",
+    "main.js.map": "/covid-vaccine-bot/static/js/main.fcc4ecd7.chunk.js.map",
     "runtime-main.js": "/covid-vaccine-bot/static/js/runtime-main.7e6c0a3a.js",
     "runtime-main.js.map": "/covid-vaccine-bot/static/js/runtime-main.7e6c0a3a.js.map",
-    "static/js/2.0cb70c20.chunk.js": "/covid-vaccine-bot/static/js/2.0cb70c20.chunk.js",
-    "static/js/2.0cb70c20.chunk.js.map": "/covid-vaccine-bot/static/js/2.0cb70c20.chunk.js.map",
+    "static/js/2.e559a2bd.chunk.js": "/covid-vaccine-bot/static/js/2.e559a2bd.chunk.js",
+    "static/js/2.e559a2bd.chunk.js.map": "/covid-vaccine-bot/static/js/2.e559a2bd.chunk.js.map",
     "index.html": "/covid-vaccine-bot/index.html",
-    "static/css/main.0917ee51.chunk.css.map": "/covid-vaccine-bot/static/css/main.0917ee51.chunk.css.map",
-    "static/js/2.0cb70c20.chunk.js.LICENSE.txt": "/covid-vaccine-bot/static/js/2.0cb70c20.chunk.js.LICENSE.txt",
-    "static/js/main.e4423776.chunk.js.LICENSE.txt": "/covid-vaccine-bot/static/js/main.e4423776.chunk.js.LICENSE.txt"
+    "static/css/main.42278bbc.chunk.css.map": "/covid-vaccine-bot/static/css/main.42278bbc.chunk.css.map",
+    "static/js/2.e559a2bd.chunk.js.LICENSE.txt": "/covid-vaccine-bot/static/js/2.e559a2bd.chunk.js.LICENSE.txt",
+    "static/js/main.fcc4ecd7.chunk.js.LICENSE.txt": "/covid-vaccine-bot/static/js/main.fcc4ecd7.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.7e6c0a3a.js",
-    "static/js/2.0cb70c20.chunk.js",
-    "static/css/main.0917ee51.chunk.css",
-    "static/js/main.e4423776.chunk.js"
+    "static/js/2.e559a2bd.chunk.js",
+    "static/css/main.42278bbc.chunk.css",
+    "static/js/main.fcc4ecd7.chunk.js"
   ]
 }
