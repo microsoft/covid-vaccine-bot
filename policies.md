@@ -51,7 +51,12 @@
 
 ## Alaska::Anchorage
 
-### Alaska::Anchorage Active Phase (undefined)
+### Alaska::Anchorage Links
+
+| link type | link |
+| --- | --- |
+| info | [Anchorage COVID-19 Vaccination](https://anchoragecovidvaccine.org/) |
+
 
 # American Samoa
 
@@ -197,7 +202,13 @@ Counties and tribes may also choose to vaccinate the following groups defined by
 
 ## Arizona::Mohave
 
-### Arizona::Mohave Active Phase (undefined)
+### Arizona::Mohave Links
+
+| link type | link |
+| --- | --- |
+| info | [Mojave County COVID-19 Vaccine Statu](https://covid-19-vaccine-mohave.hub.arcgis.com/) |
+| providers | [Mojave County Vaccination Providers](https://www.mohavecounty.us/ContentPage.aspx?id=127&cid=1444&page=2&rid=2230) |
+
 
 ## Arizona::Navajo
 
@@ -566,11 +577,23 @@ Thalassemia (blood disorder) (see [here](https://dph.georgia.gov/covid-vaccine-e
 
 ## Guam::Agat
 
-### Guam::Agat Active Phase (undefined)
+### Guam::Agat Links
+
+| link type | link |
+| --- | --- |
+| eligibility | [https://dphss.guam.gov/wp-content/uploads/2021/03/Agat_2.jpg](https://dphss.guam.gov/wp-content/uploads/2021/03/Agat_2.jpg) |
+| scheduling_phone | [565-2524](tel:565-2524) |
+
 
 ## Guam::Mangilao
 
-### Guam::Mangilao Active Phase (undefined)
+### Guam::Mangilao Links
+
+| link type | link |
+| --- | --- |
+| eligibility | [https://dphss.guam.gov/wp-content/uploads/2021/03/Mangilao_2.jpg](https://dphss.guam.gov/wp-content/uploads/2021/03/Mangilao_2.jpg) |
+| scheduling_phone | [734-2163](tel:734-2163) |
+
 
 # Hawaii
 
@@ -672,179 +695,430 @@ Type 2 diabetes mellitus (see [here](https://www.cdc.gov/coronavirus/2019-ncov/n
 
 ## Idaho::Ada
 
-### Idaho::Ada Active Phase (undefined)
+### Idaho::Ada Links
+
+| link type | link |
+| --- | --- |
+| info | [Idaho Department of Health and Welfare](https://www.cdh.idaho.gov/covid-vaccine.php) |
+| scheduling_phone | [208-321-2222](tel:208-321-2222) |
+
 
 ## Idaho::Adams
 
-### Idaho::Adams Active Phase (undefined)
+### Idaho::Adams Links
+
+| link type | link |
+| --- | --- |
+| info | [Idaho Department of Health and Welfare](https://phd3.idaho.gov/covid19/#Vaccine) |
+| scheduling_phone | [208-455-5411](tel:208-455-5411) |
+
 
 ## Idaho::Bannock
 
-### Idaho::Bannock Active Phase (undefined)
+### Idaho::Bannock Links
+
+| link type | link |
+| --- | --- |
+| info | [Idaho Department of Health and Welfare](https://www.siphidaho.org/covid19-vaccine-clinics.php) |
+| scheduling_phone | [208-234-5875](tel:208-234-5875) |
+
 
 ## Idaho::Bear Lake
 
-### Idaho::Bear Lake Active Phase (undefined)
+### Idaho::Bear Lake Links
+
+| link type | link |
+| --- | --- |
+| info | [Idaho Department of Health and Welfare](https://www.siphidaho.org/covid19-vaccine-clinics.php) |
+| scheduling_phone | [208-234-5875](tel:208-234-5875) |
+
 
 ## Idaho::Benewah
 
-### Idaho::Benewah Active Phase (undefined)
+### Idaho::Benewah Links
+
+| link type | link |
+| --- | --- |
+| info | [Idaho Department of Health and Welfare](https://panhandlehealthdistrict.org/covid-19/vaccine) |
+
 
 ## Idaho::Bingham
 
-### Idaho::Bingham Active Phase (undefined)
+### Idaho::Bingham Links
+
+| link type | link |
+| --- | --- |
+| info | [Idaho Department of Health and Welfare](https://www.siphidaho.org/covid19-vaccine-clinics.php) |
+| scheduling_phone | [208-234-5875](tel:208-234-5875) |
+
 
 ## Idaho::Blaine
 
-### Idaho::Blaine Active Phase (undefined)
+### Idaho::Blaine Links
+
+| link type | link |
+| --- | --- |
+| info | [Idaho Department of Health and Welfare](www.phd5.idaho.gov/covid-vaccine/) |
+| scheduling_phone | [208-737-1138](tel:208-737-1138) |
+
 
 ## Idaho::Boise
 
-### Idaho::Boise Active Phase (undefined)
+### Idaho::Boise Links
+
+| link type | link |
+| --- | --- |
+| info | [Idaho Department of Health and Welfare](https://www.cdh.idaho.gov/covid-vaccine.php) |
+| scheduling_phone | [208-321-2222](tel:208-321-2222) |
+
 
 ## Idaho::Bonner
 
-### Idaho::Bonner Active Phase (undefined)
+### Idaho::Bonner Links
+
+| link type | link |
+| --- | --- |
+| info | [Idaho Department of Health and Welfare](https://panhandlehealthdistrict.org/covid-19/vaccine) |
+
 
 ## Idaho::Bonneville
 
-### Idaho::Bonneville Active Phase (undefined)
+### Idaho::Bonneville Links
+
+| link type | link |
+| --- | --- |
+| info | [Idaho Department of Health and Welfare](www.eiph.idaho.gov) |
+
 
 ## Idaho::Boundary
 
-### Idaho::Boundary Active Phase (undefined)
+### Idaho::Boundary Links
+
+| link type | link |
+| --- | --- |
+| info | [Idaho Department of Health and Welfare](https://panhandlehealthdistrict.org/covid-19/vaccine) |
+
 
 ## Idaho::Butte
 
-### Idaho::Butte Active Phase (undefined)
+### Idaho::Butte Links
+
+| link type | link |
+| --- | --- |
+| info | [Idaho Department of Health and Welfare](https://www.siphidaho.org/covid19-vaccine-clinics.php) |
+| scheduling_phone | [208-234-5875](tel:208-234-5875) |
+
 
 ## Idaho::Camas
 
-### Idaho::Camas Active Phase (undefined)
+### Idaho::Camas Links
+
+| link type | link |
+| --- | --- |
+| info | [Idaho Department of Health and Welfare](www.phd5.idaho.gov/covid-vaccine/) |
+| scheduling_phone | [208-737-1138](tel:208-737-1138) |
+
 
 ## Idaho::Canyon
 
-### Idaho::Canyon Active Phase (undefined)
+### Idaho::Canyon Links
+
+| link type | link |
+| --- | --- |
+| info | [Idaho Department of Health and Welfare](https://phd3.idaho.gov/covid19/#Vaccine) |
+| scheduling_phone | [208-455-5411](tel:208-455-5411) |
+
 
 ## Idaho::Caribou
 
-### Idaho::Caribou Active Phase (undefined)
+### Idaho::Caribou Links
+
+| link type | link |
+| --- | --- |
+| info | [Idaho Department of Health and Welfare](https://www.siphidaho.org/covid19-vaccine-clinics.php) |
+| scheduling_phone | [208-234-5875](tel:208-234-5875) |
+
 
 ## Idaho::Cassia
 
-### Idaho::Cassia Active Phase (undefined)
+### Idaho::Cassia Links
+
+| link type | link |
+| --- | --- |
+| info | [Idaho Department of Health and Welfare](www.phd5.idaho.gov/covid-vaccine/) |
+| scheduling_phone | [208-737-1138](tel:208-737-1138) |
+
 
 ## Idaho::Clark
 
-### Idaho::Clark Active Phase (undefined)
+### Idaho::Clark Links
+
+| link type | link |
+| --- | --- |
+| info | [Idaho Department of Health and Welfare](www.eiph.idaho.gov) |
+
 
 ## Idaho::Clearwater
 
-### Idaho::Clearwater Active Phase (undefined)
+### Idaho::Clearwater Links
+
+| link type | link |
+| --- | --- |
+| info | [Idaho Department of Health and Welfare](www.idahopublichealth.com) |
+| scheduling_phone | [866-736-6632](tel:866-736-6632) |
+
 
 ## Idaho::Custer
 
-### Idaho::Custer Active Phase (undefined)
+### Idaho::Custer Links
+
+| link type | link |
+| --- | --- |
+| info | [Idaho Department of Health and Welfare](www.eiph.idaho.gov) |
+
 
 ## Idaho::Elmore
 
-### Idaho::Elmore Active Phase (undefined)
+### Idaho::Elmore Links
+
+| link type | link |
+| --- | --- |
+| info | [Idaho Department of Health and Welfare](https://www.cdh.idaho.gov/covid-vaccine.php) |
+| scheduling_phone | [208-321-2222](tel:208-321-2222) |
+
 
 ## Idaho::Franklin
 
-### Idaho::Franklin Active Phase (undefined)
+### Idaho::Franklin Links
+
+| link type | link |
+| --- | --- |
+| info | [Idaho Department of Health and Welfare](https://www.siphidaho.org/covid19-vaccine-clinics.php) |
+| scheduling_phone | [208-234-5875](tel:208-234-5875) |
+
 
 ## Idaho::Fremont
 
-### Idaho::Fremont Active Phase (undefined)
+### Idaho::Fremont Links
+
+| link type | link |
+| --- | --- |
+| info | [Idaho Department of Health and Welfare](www.eiph.idaho.gov) |
+
 
 ## Idaho::Gem
 
-### Idaho::Gem Active Phase (undefined)
+### Idaho::Gem Links
+
+| link type | link |
+| --- | --- |
+| info | [Idaho Department of Health and Welfare](https://phd3.idaho.gov/covid19/#Vaccine) |
+| scheduling_phone | [208-455-5411](tel:208-455-5411) |
+
 
 ## Idaho::Gooding
 
-### Idaho::Gooding Active Phase (undefined)
+### Idaho::Gooding Links
+
+| link type | link |
+| --- | --- |
+| info | [Idaho Department of Health and Welfare](www.phd5.idaho.gov/covid-vaccine/) |
+| scheduling_phone | [208-737-1138](tel:208-737-1138) |
+
 
 ## Idaho::Idaho
 
-### Idaho::Idaho Active Phase (undefined)
+### Idaho::Idaho Links
+
+| link type | link |
+| --- | --- |
+| info | [Idaho Department of Health and Welfare](www.idahopublichealth.com) |
+| scheduling_phone | [866-736-6632](tel:866-736-6632) |
+
 
 ## Idaho::Jefferson
 
-### Idaho::Jefferson Active Phase (undefined)
+### Idaho::Jefferson Links
+
+| link type | link |
+| --- | --- |
+| info | [Idaho Department of Health and Welfare](www.eiph.idaho.gov) |
+
 
 ## Idaho::Jerome
 
-### Idaho::Jerome Active Phase (undefined)
+### Idaho::Jerome Links
+
+| link type | link |
+| --- | --- |
+| info | [Idaho Department of Health and Welfare](www.phd5.idaho.gov/covid-vaccine/) |
+| scheduling_phone | [208-737-1138](tel:208-737-1138) |
+
 
 ## Idaho::Kootenai
 
-### Idaho::Kootenai Active Phase (undefined)
+### Idaho::Kootenai Links
+
+| link type | link |
+| --- | --- |
+| info | [Idaho Department of Health and Welfare](https://panhandlehealthdistrict.org/covid-19/vaccine) |
+
 
 ## Idaho::Latah
 
-### Idaho::Latah Active Phase (undefined)
+### Idaho::Latah Links
+
+| link type | link |
+| --- | --- |
+| info | [Idaho Department of Health and Welfare](www.idahopublichealth.com) |
+| scheduling_phone | [866-736-6632](tel:866-736-6632) |
+
 
 ## Idaho::Lemhi
 
-### Idaho::Lemhi Active Phase (undefined)
+### Idaho::Lemhi Links
+
+| link type | link |
+| --- | --- |
+| info | [Idaho Department of Health and Welfare](www.eiph.idaho.gov) |
+
 
 ## Idaho::Lewis
 
-### Idaho::Lewis Active Phase (undefined)
+### Idaho::Lewis Links
+
+| link type | link |
+| --- | --- |
+| info | [Idaho Department of Health and Welfare](www.idahopublichealth.com) |
+| scheduling_phone | [866-736-6632](tel:866-736-6632) |
+
 
 ## Idaho::Lincoln
 
-### Idaho::Lincoln Active Phase (undefined)
+### Idaho::Lincoln Links
+
+| link type | link |
+| --- | --- |
+| info | [Idaho Department of Health and Welfare](www.phd5.idaho.gov/covid-vaccine/) |
+| scheduling_phone | [208-737-1138](tel:208-737-1138) |
+
 
 ## Idaho::Madison
 
-### Idaho::Madison Active Phase (undefined)
+### Idaho::Madison Links
+
+| link type | link |
+| --- | --- |
+| info | [Idaho Department of Health and Welfare](www.eiph.idaho.gov) |
+
 
 ## Idaho::Minidoka
 
-### Idaho::Minidoka Active Phase (undefined)
+### Idaho::Minidoka Links
+
+| link type | link |
+| --- | --- |
+| info | [Idaho Department of Health and Welfare](www.phd5.idaho.gov/covid-vaccine/) |
+| scheduling_phone | [208-737-1138](tel:208-737-1138) |
+
 
 ## Idaho::Nez Perce
 
-### Idaho::Nez Perce Active Phase (undefined)
+### Idaho::Nez Perce Links
+
+| link type | link |
+| --- | --- |
+| info | [Idaho Department of Health and Welfare](www.idahopublichealth.com) |
+| scheduling_phone | [866-736-6632](tel:866-736-6632) |
+
 
 ## Idaho::Oneida
 
-### Idaho::Oneida Active Phase (undefined)
+### Idaho::Oneida Links
+
+| link type | link |
+| --- | --- |
+| info | [Idaho Department of Health and Welfare](https://www.siphidaho.org/covid19-vaccine-clinics.php) |
+| scheduling_phone | [208-234-5875](tel:208-234-5875) |
+
 
 ## Idaho::Owyhee
 
-### Idaho::Owyhee Active Phase (undefined)
+### Idaho::Owyhee Links
+
+| link type | link |
+| --- | --- |
+| info | [Idaho Department of Health and Welfare](https://phd3.idaho.gov/covid19/#Vaccine) |
+| scheduling_phone | [208-455-5411](tel:208-455-5411) |
+
 
 ## Idaho::Payette
 
-### Idaho::Payette Active Phase (undefined)
+### Idaho::Payette Links
+
+| link type | link |
+| --- | --- |
+| info | [Idaho Department of Health and Welfare](https://phd3.idaho.gov/covid19/#Vaccine) |
+| scheduling_phone | [208-455-5411](tel:208-455-5411) |
+
 
 ## Idaho::Power
 
-### Idaho::Power Active Phase (undefined)
+### Idaho::Power Links
+
+| link type | link |
+| --- | --- |
+| info | [Idaho Department of Health and Welfare](https://www.siphidaho.org/covid19-vaccine-clinics.php) |
+| scheduling_phone | [208-234-5875](tel:208-234-5875) |
+
 
 ## Idaho::Shoshone
 
-### Idaho::Shoshone Active Phase (undefined)
+### Idaho::Shoshone Links
+
+| link type | link |
+| --- | --- |
+| info | [Idaho Department of Health and Welfare](https://panhandlehealthdistrict.org/covid-19/vaccine) |
+
 
 ## Idaho::Teton
 
-### Idaho::Teton Active Phase (undefined)
+### Idaho::Teton Links
+
+| link type | link |
+| --- | --- |
+| info | [Idaho Department of Health and Welfare](www.eiph.idaho.gov) |
+
 
 ## Idaho::Twin Falls
 
-### Idaho::Twin Falls Active Phase (undefined)
+### Idaho::Twin Falls Links
+
+| link type | link |
+| --- | --- |
+| info | [Idaho Department of Health and Welfare](www.phd5.idaho.gov/covid-vaccine/) |
+| scheduling_phone | [208-737-1138](tel:208-737-1138) |
+
 
 ## Idaho::Valley
 
-### Idaho::Valley Active Phase (undefined)
+### Idaho::Valley Links
+
+| link type | link |
+| --- | --- |
+| info | [Idaho Department of Health and Welfare](https://www.cdh.idaho.gov/covid-vaccine.php) |
+| scheduling_phone | [208-321-2222](tel:208-321-2222) |
+
 
 ## Idaho::Washington
 
-### Idaho::Washington Active Phase (undefined)
+### Idaho::Washington Links
+
+| link type | link |
+| --- | --- |
+| info | [Idaho Department of Health and Welfare](https://phd3.idaho.gov/covid19/#Vaccine) |
+| scheduling_phone | [208-455-5411](tel:208-455-5411) |
+
 
 # Illinois
 
@@ -1197,59 +1471,131 @@ Individuals who are diagnosed with these medical conditions but are not currentl
 
 ## Massachusetts::Barnstable
 
-### Massachusetts::Barnstable Active Phase (undefined)
+### Massachusetts::Barnstable Links
+
+| link type | link |
+| --- | --- |
+| info | [Barnstable County Vaccination Information](https://www.barnstablecountyhealth.org/vaccine-information) |
+| registration | [Barnstable County COVID-19 Vaccine Registration](https://www.barnstablecountyhealth.org/vaccine-registration) |
+
 
 ## Massachusetts::Berkshire
 
-### Massachusetts::Berkshire Active Phase (undefined)
+### Massachusetts::Berkshire Links
+
+| link type | link |
+| --- | --- |
+| info | [Get Vaccinated Berkshires](https://www.getvaccinatedberkshires.org/) |
+| scheduling | [Schedule a Vaccination](https://www.maimmunizations.org/clinic/search?commit=Search&location=Pittsfield%2C%20MA%2001201%2C%20USA&q%5Bclinic_date_eq%5D=&q%5Bvaccinations_name_i_cont%5D=&q%5Bvenue_search_name_or_venue_name_i_cont%5D=&search_radius=50%20miles#search_results#search_results) |
+
 
 ## Massachusetts::Bristol
 
-### Massachusetts::Bristol Active Phase (undefined)
+### Massachusetts::Bristol Links
+
+| link type | link |
+| --- | --- |
+
+
 
 ## Massachusetts::Dukes
 
-### Massachusetts::Dukes Active Phase (undefined)
+### Massachusetts::Dukes Links
+
+| link type | link |
+| --- | --- |
+
+
 
 ## Massachusetts::Essex
 
-### Massachusetts::Essex Active Phase (undefined)
+### Massachusetts::Essex Links
+
+| link type | link |
+| --- | --- |
+
+
 
 ## Massachusetts::Franklin
 
-### Massachusetts::Franklin Active Phase (undefined)
+### Massachusetts::Franklin Links
+
+| link type | link |
+| --- | --- |
+
+
 
 ## Massachusetts::Hampden
 
-### Massachusetts::Hampden Active Phase (undefined)
+### Massachusetts::Hampden Links
+
+| link type | link |
+| --- | --- |
+
+
 
 ## Massachusetts::Hampshire
 
-### Massachusetts::Hampshire Active Phase (undefined)
+### Massachusetts::Hampshire Links
+
+| link type | link |
+| --- | --- |
+
+
 
 ## Massachusetts::Middlesex
 
-### Massachusetts::Middlesex Active Phase (undefined)
+### Massachusetts::Middlesex Links
+
+| link type | link |
+| --- | --- |
+
+
 
 ## Massachusetts::Nantucket
 
-### Massachusetts::Nantucket Active Phase (undefined)
+### Massachusetts::Nantucket Links
+
+| link type | link |
+| --- | --- |
+
+
 
 ## Massachusetts::Norfolk
 
-### Massachusetts::Norfolk Active Phase (undefined)
+### Massachusetts::Norfolk Links
+
+| link type | link |
+| --- | --- |
+
+
 
 ## Massachusetts::Plymouth
 
-### Massachusetts::Plymouth Active Phase (undefined)
+### Massachusetts::Plymouth Links
+
+| link type | link |
+| --- | --- |
+
+
 
 ## Massachusetts::Suffolk
 
-### Massachusetts::Suffolk Active Phase (undefined)
+### Massachusetts::Suffolk Links
+
+| link type | link |
+| --- | --- |
+
+
 
 ## Massachusetts::Worcester
 
-### Massachusetts::Worcester Active Phase (undefined)
+### Massachusetts::Worcester Links
+
+| link type | link |
+| --- | --- |
+
+
 
 # Michigan
 
@@ -1534,71 +1880,189 @@ food processing, transportation, US Postal Service, public transit (see [here](h
 
 ## Nevada::Carson City
 
-### Nevada::Carson City Active Phase (undefined)
+### Nevada::Carson City Links
+
+| link type | link |
+| --- | --- |
+| eligibility | [https://nvhealthresponse.nv.gov/wp-content/uploads/2021/01/NEVADA-COVID-19-VACCINE-PLAYBOOK-V3-BRIEF_011121.pdf](https://nvhealthresponse.nv.gov/wp-content/uploads/2021/01/NEVADA-COVID-19-VACCINE-PLAYBOOK-V3-BRIEF_011121.pdf) |
+| info | [Nevada Division of Public and Behavioral Health](https://gethealthycarsoncity.org/novel-coronavirus-2019/covid-19-vaccine/) |
+| providers | [View locations providing vaccines](https://gethealthycarsoncity.org/novel-coronavirus-2019/covid-19-vaccine/) |
+| scheduling | [Schedule a Vaccination](https://booking.appointy.com/en-US/immunizenevada/bookings/service?st=458106) |
+| scheduling_phone | [1-800-401-0946](tel:1-800-401-0946) |
+| eligibility_plan | [https://nvhealthresponse.nv.gov/wp-content/uploads/2021/01/NEVADA-COVID-19-VACCINE-PLAYBOOK-V3-BRIEF_011121.pdf](https://nvhealthresponse.nv.gov/wp-content/uploads/2021/01/NEVADA-COVID-19-VACCINE-PLAYBOOK-V3-BRIEF_011121.pdf) |
+
 
 ## Nevada::Churchill
 
-### Nevada::Churchill Active Phase (undefined)
+### Nevada::Churchill Links
+
+| link type | link |
+| --- | --- |
+| info | [Nevada Division of Public and Behavioral Health](http://www.churchillcountynv.gov/1015/COVID-19-Vaccines) |
+| workflow | [Vaccine Eligibility Questionnaire](https://nvhealthresponse.nv.gov/wp-content/uploads/2021/01/NEVADA-COVID-19-VACCINE-PLAYBOOK-V3-1.pdf) |
+| scheduling_phone | [1-800-401-0946](tel:1-800-401-0946) |
+| eligibility | [https://nvhealthresponse.nv.gov/wp-content/uploads/2021/01/NEVADA-COVID-19-VACCINE-PLAYBOOK-V3-1.pdf](https://nvhealthresponse.nv.gov/wp-content/uploads/2021/01/NEVADA-COVID-19-VACCINE-PLAYBOOK-V3-1.pdf) |
+| eligibility_plan | [https://nvhealthresponse.nv.gov/wp-content/uploads/2021/01/NEVADA-COVID-19-VACCINE-PLAYBOOK-V3-1.pdf](https://nvhealthresponse.nv.gov/wp-content/uploads/2021/01/NEVADA-COVID-19-VACCINE-PLAYBOOK-V3-1.pdf) |
+
 
 ## Nevada::Clark
 
-### Nevada::Clark Active Phase (undefined)
+### Nevada::Clark Links
+
+| link type | link |
+| --- | --- |
+| eligibility | [https://media.southernnevadahealthdistrict.org/download/COVID-19/resources/playbook/NEVADA-COVID-19-VACCINE-PLAYBOOK-V3-BRIEF.pdf](https://media.southernnevadahealthdistrict.org/download/COVID-19/resources/playbook/NEVADA-COVID-19-VACCINE-PLAYBOOK-V3-BRIEF.pdf) |
+| eligibility_plan | [https://media.southernnevadahealthdistrict.org/download/COVID-19/resources/playbook/NEVADA-COVID-19-VACCINE-PLAYBOOK-V3-BRIEF.pdf](https://media.southernnevadahealthdistrict.org/download/COVID-19/resources/playbook/NEVADA-COVID-19-VACCINE-PLAYBOOK-V3-BRIEF.pdf) |
+| info | [Nevada Division of Public and Behavioral Health](https://covid.southernnevadahealthdistrict.org/) |
+| scheduling | [Schedule a Vaccination](https://covid.southernnevadahealthdistrict.org/vaccine/distribution/) |
+| scheduling_phone | [1-800-401-0946](tel:1-800-401-0946) |
+
 
 ## Nevada::Douglas
 
-### Nevada::Douglas Active Phase (undefined)
+### Nevada::Douglas Links
+
+| link type | link |
+| --- | --- |
+| info | [Nevada Division of Public and Behavioral Health](https://gethealthycarsoncity.org/novel-coronavirus-2019/covid-19-vaccine/) |
+
 
 ## Nevada::Elko
 
-### Nevada::Elko Active Phase (undefined)
+### Nevada::Elko Links
+
+| link type | link |
+| --- | --- |
+| info | [Nevada Division of Public and Behavioral Health](https://www.elkocountynv.net/boards/health_board/diseases_and_conditions.php#outer-2066sub-2719) |
+
 
 ## Nevada::Esmeralda
 
-### Nevada::Esmeralda Active Phase (undefined)
+### Nevada::Esmeralda Links
+
+| link type | link |
+| --- | --- |
+| info | [Nevada Division of Public and Behavioral Health](https://www.accessesmeralda.com/coronavirus_updates.php) |
+| scheduling_phone | [775-482-6711](tel:775-482-6711) |
+
 
 ## Nevada::Eureka
 
-### Nevada::Eureka Active Phase (undefined)
+### Nevada::Eureka Links
+
+| link type | link |
+| --- | --- |
+| scheduling_phone | [775-237-5372](tel:775-237-5372) |
+
 
 ## Nevada::Humboldt
 
-### Nevada::Humboldt Active Phase (undefined)
+### Nevada::Humboldt Links
+
+| link type | link |
+| --- | --- |
+
+
 
 ## Nevada::Lander
 
-### Nevada::Lander Active Phase (undefined)
+### Nevada::Lander Links
+
+| link type | link |
+| --- | --- |
+| info | [Nevada Division of Public and Behavioral Health](http://www.landercountynv.org/government/executive_director/index.php) |
+| scheduling_phone | [775-539-9136](tel:775-539-9136) |
+
 
 ## Nevada::Lincoln
 
-### Nevada::Lincoln Active Phase (undefined)
+### Nevada::Lincoln Links
+
+| link type | link |
+| --- | --- |
+| info | [Nevada Division of Public and Behavioral Health](https://lincolncountynv.org/departments/public-health/) |
+| scheduling_phone | [775-962-8086](tel:775-962-8086) |
+
 
 ## Nevada::Lyon
 
-### Nevada::Lyon Active Phase (undefined)
+### Nevada::Lyon Links
+
+| link type | link |
+| --- | --- |
+| eligibility | [https://nvhealthresponse.nv.gov/wp-content/uploads/2021/01/NEVADA-COVID-19-VACCINE-PLAYBOOK-V3-BRIEF_011121.pdf](https://nvhealthresponse.nv.gov/wp-content/uploads/2021/01/NEVADA-COVID-19-VACCINE-PLAYBOOK-V3-BRIEF_011121.pdf) |
+| eligibility_plan | [https://nvhealthresponse.nv.gov/wp-content/uploads/2021/01/NEVADA-COVID-19-VACCINE-PLAYBOOK-V3-BRIEF_011121.pdf](https://nvhealthresponse.nv.gov/wp-content/uploads/2021/01/NEVADA-COVID-19-VACCINE-PLAYBOOK-V3-BRIEF_011121.pdf) |
+| info | [Nevada Division of Public and Behavioral Health](https://gethealthycarsoncity.org/novel-coronavirus-2019/covid-19-vaccine/) |
+| scheduling | [Schedule a Vaccination](https://booking.appointy.com/en-US/immunizenevada/bookings/service?st=458106) |
+| scheduling_phone | [1-800-401-0946](tel:1-800-401-0946) |
+
 
 ## Nevada::Mineral
 
-### Nevada::Mineral Active Phase (undefined)
+### Nevada::Mineral Links
+
+| link type | link |
+| --- | --- |
+| eligibility_plan | [http://cms.revize.com/revize/mineralcounty/NEVADA%20COVID-19%20VACCINE%20PLAYBOOK%20V3.pdf](http://cms.revize.com/revize/mineralcounty/NEVADA%20COVID-19%20VACCINE%20PLAYBOOK%20V3.pdf) |
+| info | [Nevada Division of Public and Behavioral Health](http://cms.revize.com/revize/mineralcounty/departments/coronavirus_vaccination_information.php) |
+
 
 ## Nevada::Nye
 
-### Nevada::Nye Active Phase (undefined)
+### Nevada::Nye Links
+
+| link type | link |
+| --- | --- |
+| eligibility_plan | [https://nvhealthresponse.nv.gov/wp-content/uploads/2021/01/NEVADA-COVID-19-VACCINE-PLAYBOOK-V3-BRIEF_011121.pdf](https://nvhealthresponse.nv.gov/wp-content/uploads/2021/01/NEVADA-COVID-19-VACCINE-PLAYBOOK-V3-BRIEF_011121.pdf) |
+| info | [Nevada Division of Public and Behavioral Health](https://www.nyecounty.net/1066/Coronavirus-COVID-19-Information) |
+| scheduling | [Schedule a Vaccination](https://booking.appointy.com/en-US/snyecovid/snyecovid) |
+| scheduling_phone | [1-800-401-0946](tel:1-800-401-0946) |
+
 
 ## Nevada::Pershing
 
-### Nevada::Pershing Active Phase (undefined)
+### Nevada::Pershing Links
+
+| link type | link |
+| --- | --- |
+| info | [Nevada Division of Public and Behavioral Health](https://www.pershingcountynv.gov/community/covid-19_information.php) |
+| scheduling_phone | [(775) 273-2041](tel:(775) 273-2041) |
+
 
 ## Nevada::Storey
 
-### Nevada::Storey Active Phase (undefined)
+### Nevada::Storey Links
+
+| link type | link |
+| --- | --- |
+| eligibility | [https://nvhealthresponse.nv.gov/wp-content/uploads/2021/01/NEVADA-COVID-19-VACCINE-PLAYBOOK-V3-BRIEF_011121.pdf](https://nvhealthresponse.nv.gov/wp-content/uploads/2021/01/NEVADA-COVID-19-VACCINE-PLAYBOOK-V3-BRIEF_011121.pdf) |
+| eligibility_plan | [https://nvhealthresponse.nv.gov/wp-content/uploads/2021/01/NEVADA-COVID-19-VACCINE-PLAYBOOK-V3-BRIEF_011121.pdf](https://nvhealthresponse.nv.gov/wp-content/uploads/2021/01/NEVADA-COVID-19-VACCINE-PLAYBOOK-V3-BRIEF_011121.pdf) |
+| info | [Nevada Division of Public and Behavioral Health](https://gethealthycarsoncity.org/novel-coronavirus-2019/covid-19-vaccine/) |
+| scheduling | [Schedule a Vaccination](https://booking.appointy.com/en-US/immunizenevada/bookings/service?st=458106) |
+| scheduling_phone | [1-800-401-0946](tel:1-800-401-0946) |
+
 
 ## Nevada::Washoe
 
-### Nevada::Washoe Active Phase (undefined)
+### Nevada::Washoe Links
+
+| link type | link |
+| --- | --- |
+| eligibility | [https://www.washoecounty.us/health/files/COVID19/Cov-priority-lanes-graphic.pdf](https://www.washoecounty.us/health/files/COVID19/Cov-priority-lanes-graphic.pdf) |
+| eligibility_plan | [https://nvhealthresponse.nv.gov/wp-content/uploads/2021/01/NEVADA-COVID-19-VACCINE-PLAYBOOK-V3-BRIEF_011121.pdf](https://nvhealthresponse.nv.gov/wp-content/uploads/2021/01/NEVADA-COVID-19-VACCINE-PLAYBOOK-V3-BRIEF_011121.pdf) |
+| info | [Nevada Division of Public and Behavioral Health](https://www.covid19washoevaccine.com/) |
+| workflow | [Vaccine Eligibility Questionnaire](https://gis.washoecounty.us/agolHost?id=COVIDTierSurvey&lang=en) |
+| scheduling_phone | [775-328-2427](tel:775-328-2427) |
+
 
 ## Nevada::White Pine
 
-### Nevada::White Pine Active Phase (undefined)
+### Nevada::White Pine Links
+
+| link type | link |
+| --- | --- |
+| scheduling_phone | [775-293-6558](tel:775-293-6558) |
+
 
 # New Hampshire
 
@@ -1933,147 +2397,359 @@ corticosteroids or use of other immune-weakening medicines
 
 ## Oregon::Baker
 
-### Oregon::Baker Active Phase (undefined)
+### Oregon::Baker Links
+
+| link type | link |
+| --- | --- |
+| info | [Oregon Health Authority, Public Health Division](http://bakercountycovid19.com/) |
+| scheduling_phone | [541-523-8211](tel:541-523-8211) |
+
 
 ## Oregon::Benton
 
-### Oregon::Benton Active Phase (undefined)
+### Oregon::Benton Links
+
+| link type | link |
+| --- | --- |
+| info | [Oregon Health Authority, Public Health Division](https://www.co.benton.or.us/covid19/page/covid-19-vaccine) |
+| scheduling | [Schedule a Vaccination](https://www.samhealth.org/getthevaccine) |
+
 
 ## Oregon::Clackamas
 
-### Oregon::Clackamas Active Phase (undefined)
+### Oregon::Clackamas Links
+
+| link type | link |
+| --- | --- |
+| info | [Oregon Health Authority, Public Health Division](https://www.clackamas.us/coronavirus) |
+
 
 ## Oregon::Clatsop
 
-### Oregon::Clatsop Active Phase (undefined)
+### Oregon::Clatsop Links
+
+| link type | link |
+| --- | --- |
+| scheduling_phone | [503-325-8500](tel:503-325-8500) |
+
 
 ## Oregon::Columbia
 
-### Oregon::Columbia Active Phase (undefined)
+### Oregon::Columbia Links
+
+| link type | link |
+| --- | --- |
+| info | [Oregon Health Authority, Public Health Division](https://www.columbiacountyor.gov/departments/PublicHealth/COVID-19Vaccine) |
+| scheduling_phone | [503-397-7247](tel:503-397-7247) |
+
 
 ## Oregon::Coos
 
-### Oregon::Coos Active Phase (undefined)
+### Oregon::Coos Links
+
+| link type | link |
+| --- | --- |
+| info | [Oregon Health Authority, Public Health Division](https://cooshealthandwellness.org/) |
+
 
 ## Oregon::Crook
 
-### Oregon::Crook Active Phase (undefined)
+### Oregon::Crook Links
+
+| link type | link |
+| --- | --- |
+| info | [Oregon Health Authority, Public Health Division](https://co.crook.or.us/health) |
+| scheduling | [Schedule a Vaccination](https://crookcounty.simplybook.me/v2/) |
+| scheduling_phone | [541-447-5165](tel:541-447-5165) |
+
 
 ## Oregon::Curry
 
-### Oregon::Curry Active Phase (undefined)
+### Oregon::Curry Links
+
+| link type | link |
+| --- | --- |
+| info | [Oregon Health Authority, Public Health Division](http://www.curryhealthnetwork.com/education?left=Patient+Information) |
+| scheduling_phone | [541-247-3119](tel:541-247-3119) |
+
 
 ## Oregon::Deschutes
 
-### Oregon::Deschutes Active Phase (undefined)
+### Oregon::Deschutes Links
+
+| link type | link |
+| --- | --- |
+| info | [Oregon Health Authority, Public Health Division](https://www.deschutes.org/health/page/covid-19-novel-coronavirus) |
+| scheduling_phone | [541-699-5109](tel:541-699-5109) |
+
 
 ## Oregon::Douglas
 
-### Oregon::Douglas Active Phase (undefined)
+### Oregon::Douglas Links
+
+| link type | link |
+| --- | --- |
+| info | [Oregon Health Authority, Public Health Division](http://douglaspublichealthnetwork.org/) |
+| scheduling_phone | [541-464-6550](tel:541-464-6550) |
+
 
 ## Oregon::Gilliam
 
-### Oregon::Gilliam Active Phase (undefined)
+### Oregon::Gilliam Links
+
+| link type | link |
+| --- | --- |
+| info | [Oregon Health Authority, Public Health Division](https://www.ncphd.org/covid-vaccines) |
+| scheduling_phone | [541-506-2600](tel:541-506-2600) |
+
 
 ## Oregon::Grant
 
-### Oregon::Grant Active Phase (undefined)
+### Oregon::Grant Links
+
+| link type | link |
+| --- | --- |
+| scheduling_phone | [541-575-0429](tel:541-575-0429) |
+
 
 ## Oregon::Harney
 
-### Oregon::Harney Active Phase (undefined)
+### Oregon::Harney Links
+
+| link type | link |
+| --- | --- |
+| info | [Oregon Health Authority, Public Health Division](https://www.facebook.com/HarneyCountyHealthDepartment/) |
+| scheduling_phone | [541-573-2271](tel:541-573-2271) |
+
 
 ## Oregon::Hood River
 
-### Oregon::Hood River Active Phase (undefined)
+### Oregon::Hood River Links
+
+| link type | link |
+| --- | --- |
+| info | [Oregon Health Authority, Public Health Division](https://hrccovid19.org/) |
+| scheduling_phone | [541-399-8022](tel:541-399-8022) |
+
 
 ## Oregon::Jackson
 
-### Oregon::Jackson Active Phase (undefined)
+### Oregon::Jackson Links
+
+| link type | link |
+| --- | --- |
+| info | [Oregon Health Authority, Public Health Division](https://jacksoncountyor.org/hhs/General/News-Information/covid-19-vaccine) |
+
 
 ## Oregon::Jefferson
 
-### Oregon::Jefferson Active Phase (undefined)
+### Oregon::Jefferson Links
+
+| link type | link |
+| --- | --- |
+| info | [Oregon Health Authority, Public Health Division](https://www.jeffco.net/publichealth) |
+| scheduling | [Schedule a Vaccination](https://www.stcharleshealthcare.org/covidvaccine) |
+| scheduling_phone | [541-699-5109](tel:541-699-5109) |
+
 
 ## Oregon::Josephine
 
-### Oregon::Josephine Active Phase (undefined)
+### Oregon::Josephine Links
+
+| link type | link |
+| --- | --- |
+| info | [Oregon Health Authority, Public Health Division](http://co.josephine.or.us/Page.asp?NavID=2288) |
+| scheduling_phone | [541-789-2813](tel:541-789-2813) |
+
 
 ## Oregon::Klamath
 
-### Oregon::Klamath Active Phase (undefined)
+### Oregon::Klamath Links
+
+| link type | link |
+| --- | --- |
+| info | [Oregon Health Authority, Public Health Division](http://www.klamathcounty.org/1117/COVID-19-vaccine) |
+| scheduling_phone | [1-833-606-4370](tel:1-833-606-4370) |
+
 
 ## Oregon::Lake
 
-### Oregon::Lake Active Phase (undefined)
+### Oregon::Lake Links
+
+| link type | link |
+| --- | --- |
+| scheduling_phone | [541-947-6045](tel:541-947-6045) |
+
 
 ## Oregon::Lane
 
-### Oregon::Lane Active Phase (undefined)
+### Oregon::Lane Links
+
+| link type | link |
+| --- | --- |
+| info | [Oregon Health Authority, Public Health Division](https://lanecounty.org/cms/One.aspx?portalId=3585881&pageId=16503774) |
+| scheduling_phone | [541-682-1380](tel:541-682-1380) |
+
 
 ## Oregon::Lincoln
 
-### Oregon::Lincoln Active Phase (undefined)
+### Oregon::Lincoln Links
+
+| link type | link |
+| --- | --- |
+| info | [Oregon Health Authority, Public Health Division](https://www.co.lincoln.or.us/hhs/page/covid-19-vaccine) |
+| scheduling | [Schedule a Vaccination](https://www.co.lincoln.or.us/hhs/page/lincoln-county-covid-19-vaccination-schedule) |
+| scheduling_phone | [541-265-0621](tel:541-265-0621) |
+
 
 ## Oregon::Linn
 
-### Oregon::Linn Active Phase (undefined)
+### Oregon::Linn Links
+
+| link type | link |
+| --- | --- |
+| info | [Oregon Health Authority, Public Health Division](https://www.linncountyhealth.org/) |
+| scheduling_phone | [541-967-3888](tel:541-967-3888) |
+
 
 ## Oregon::Malheur
 
-### Oregon::Malheur Active Phase (undefined)
+### Oregon::Malheur Links
+
+| link type | link |
+| --- | --- |
+| info | [Oregon Health Authority, Public Health Division](https://malheurhealth.org/) |
+| scheduling_phone | [541-889-7279](tel:541-889-7279) |
+
 
 ## Oregon::Marion
 
-### Oregon::Marion Active Phase (undefined)
+### Oregon::Marion Links
+
+| link type | link |
+| --- | --- |
+| info | [Oregon Health Authority, Public Health Division](https://www.co.marion.or.us/HLT/COVID-19/) |
+
 
 ## Oregon::Morrow
 
-### Oregon::Morrow Active Phase (undefined)
+### Oregon::Morrow Links
+
+| link type | link |
+| --- | --- |
+| info | [Oregon Health Authority, Public Health Division](https://docs.google.com/forms/d/e/1FAIpQLSe2jLBUI6tLA_7KN_FSTHaYy7ahwcG_FHGvIYaMPKV5zHpZ4Q/viewform) |
+| scheduling_phone | [541-676-5649](tel:541-676-5649) |
+
 
 ## Oregon::Multnomah
 
-### Oregon::Multnomah Active Phase (undefined)
+### Oregon::Multnomah Links
+
+| link type | link |
+| --- | --- |
+| info | [Oregon Health Authority, Public Health Division](https://multco.us/novel-coronavirus-covid-19/covid-19-vaccine-information) |
+| providers | [View locations providing vaccines](https://multco.us/novel-coronavirus-covid-19/how-do-i-make-appointment-covid-19-vaccine) |
+
 
 ## Oregon::Polk
 
-### Oregon::Polk Active Phase (undefined)
+### Oregon::Polk Links
+
+| link type | link |
+| --- | --- |
+| info | [Oregon Health Authority, Public Health Division](https://www.co.polk.or.us/ph/covid-19-vaccine) |
+| scheduling | [Schedule a Vaccination](https://www.salemhealth.org/covid-19/covid-vaccine) |
+
 
 ## Oregon::Sherman
 
-### Oregon::Sherman Active Phase (undefined)
+### Oregon::Sherman Links
+
+| link type | link |
+| --- | --- |
+| info | [Oregon Health Authority, Public Health Division](https://www.ncphd.org/covid-vaccines) |
+| scheduling_phone | [541-506-2600](tel:541-506-2600) |
+
 
 ## Oregon::Tillamook
 
-### Oregon::Tillamook Active Phase (undefined)
+### Oregon::Tillamook Links
+
+| link type | link |
+| --- | --- |
+| info | [Oregon Health Authority, Public Health Division](https://www.facebook.com/TillamookCHC) |
+| providers | [View locations providing vaccines](https://tillamookchc.org/) |
+| scheduling_phone | [503-842-3914](tel:503-842-3914) |
+
 
 ## Oregon::Umatilla
 
-### Oregon::Umatilla Active Phase (undefined)
+### Oregon::Umatilla Links
+
+| link type | link |
+| --- | --- |
+| info | [Oregon Health Authority, Public Health Division](http://ucohealth.net/) |
+| scheduling_phone | [541-278-5432](tel:541-278-5432) |
+
 
 ## Oregon::Union
 
-### Oregon::Union Active Phase (undefined)
+### Oregon::Union Links
+
+| link type | link |
+| --- | --- |
+| scheduling | [Schedule a Vaccination](https://www.chdinc.org/get-vaccinated) |
+| scheduling_phone | [541-962-8800](tel:541-962-8800) |
+
 
 ## Oregon::Wallowa
 
-### Oregon::Wallowa Active Phase (undefined)
+### Oregon::Wallowa Links
+
+| link type | link |
+| --- | --- |
+| info | [Oregon Health Authority, Public Health Division](https://www.wchcd.org/vaccine-information/) |
+| scheduling_phone | [541-426-5437](tel:541-426-5437) |
+
 
 ## Oregon::Wasco
 
-### Oregon::Wasco Active Phase (undefined)
+### Oregon::Wasco Links
+
+| link type | link |
+| --- | --- |
+| info | [Oregon Health Authority, Public Health Division](https://www.ncphd.org/covid-vaccines) |
+| scheduling_phone | [541-506-2600](tel:541-506-2600) |
+
 
 ## Oregon::Washington
 
-### Oregon::Washington Active Phase (undefined)
+### Oregon::Washington Links
+
+| link type | link |
+| --- | --- |
+| info | [Oregon Health Authority, Public Health Division](http://www.co.washington.or.us/vaccine (English) https://www.co.washington.or.us/vacuna (Spanish)) |
+
 
 ## Oregon::Wheeler
 
-### Oregon::Wheeler Active Phase (undefined)
+### Oregon::Wheeler Links
+
+| link type | link |
+| --- | --- |
+| info | [Oregon Health Authority, Public Health Division](https://www.wheelercountyoregon.com/covid-19-wheeler-county) |
+| scheduling_phone | [971-762-0527](tel:971-762-0527) |
+
 
 ## Oregon::Yamhill
 
-### Oregon::Yamhill Active Phase (undefined)
+### Oregon::Yamhill Links
+
+| link type | link |
+| --- | --- |
+| info | [Oregon Health Authority, Public Health Division](https://hhs.co.yamhill.or.us/publichealth/page/covid-19-vaccines) |
+| scheduling_phone | [503-474-4100](tel:503-474-4100) |
+
 
 # Palau
 
@@ -2193,71 +2869,182 @@ corticosteroids or use of other immune-weakening medicines
 
 ## Rhode Island::Barrington
 
-### Rhode Island::Barrington Active Phase (undefined)
+### Rhode Island::Barrington Links
+
+| link type | link |
+| --- | --- |
+| info | [Rhode Island Department of Health](https://www.barrington.ri.gov/) |
+| scheduling | [Schedule a Vaccination](https://barringtonlearningctr.org/event-4153003) |
+| scheduling_phone | [(401) 247-1926](tel:(401) 247-1926) |
+
 
 ## Rhode Island::Charlestown
 
-### Rhode Island::Charlestown Active Phase (undefined)
+### Rhode Island::Charlestown Links
+
+| link type | link |
+| --- | --- |
+| info | [Rhode Island Department of Health](https://www.charlestownri.org/covid19) |
+| scheduling_phone | [401-218-1968](tel:401-218-1968) |
+
 
 ## Rhode Island::Cumberland
 
-### Rhode Island::Cumberland Active Phase (undefined)
+### Rhode Island::Cumberland Links
+
+| link type | link |
+| --- | --- |
+| info | [Rhode Island Department of Health](https://www.cumberlandri.org/covid-19-vaccine-info/) |
+| scheduling | [Schedule a Vaccination](https://docs.google.com/forms/d/e/1FAIpQLSdOakNkylozT0632cjIxql_hMkW1vdO5DR3Ztuf2QFlzLf3nQ/viewform) |
+| scheduling_phone | [401-335-5888](tel:401-335-5888) |
+
 
 ## Rhode Island::East Providence
 
-### Rhode Island::East Providence Active Phase (undefined)
+### Rhode Island::East Providence Links
+
+| link type | link |
+| --- | --- |
+| info | [Rhode Island Department of Health](https://eastprovidenceri.gov/COVID-19) |
+| scheduling | [Schedule a Vaccination](https://forms.office.com/Pages/ResponsePage.aspx?id=YE0olO7ffEq0TvvkRuQeJTXKGHd4Tg9NkNCx2R08jS1UMk5FVFBBQjJROVlMMVNVWUxLQjFGVElBRC4u) |
+| scheduling_phone | [401-533-9812](tel:401-533-9812) |
+
 
 ## Rhode Island::Exeter
 
-### Rhode Island::Exeter Active Phase (undefined)
+### Rhode Island::Exeter Links
+
+| link type | link |
+| --- | --- |
+| info | [Rhode Island Department of Health](http://town.exeter.ri.us/) |
+| scheduling | [Schedule a Vaccination](https://forms.office.com/Pages/ResponsePage.aspx?id=J6m5eb94vkKt48ITjSNEcjws_dWtTi1CqgFvFCWLiL1UQlpNNUZVNzgxNVFCOFNMWEU0SzZDUTdLOC4u) |
+
 
 ## Rhode Island::Hopkinton
 
-### Rhode Island::Hopkinton Active Phase (undefined)
+### Rhode Island::Hopkinton Links
+
+| link type | link |
+| --- | --- |
+| info | [Rhode Island Department of Health](http://www.hopkintonri.org/covid-19/) |
+| scheduling | [Schedule a Vaccination](http://www.hopkintonri.org/noitfication-list/) |
+| scheduling_phone | [(401) 388-8476](tel:(401) 388-8476) |
+
 
 ## Rhode Island::Jamestown
 
-### Rhode Island::Jamestown Active Phase (undefined)
+### Rhode Island::Jamestown Links
+
+| link type | link |
+| --- | --- |
+| info | [Rhode Island Department of Health](https://www.jamestownri.gov/town-departments/police/covid-vaccine) |
+| scheduling_phone | [423-1213 Ext 4328](tel:423-1213 Ext 4328) |
+
 
 ## Rhode Island::Little Compton
 
-### Rhode Island::Little Compton Active Phase (undefined)
+### Rhode Island::Little Compton Links
+
+| link type | link |
+| --- | --- |
+| info | [Rhode Island Department of Health](http://www.littlecomptonri.org/news_detail_T6_R144.php) |
+| scheduling_phone | [635-4400](tel:635-4400) |
+
 
 ## Rhode Island::Middletown
 
-### Rhode Island::Middletown Active Phase (undefined)
+### Rhode Island::Middletown Links
+
+| link type | link |
+| --- | --- |
+| info | [Rhode Island Department of Health](https://middletownri.com/covid-19/) |
+| scheduling | [Schedule a Vaccination](https://www.surveymonkey.com/r/VaccineMiddletown) |
+| scheduling_phone | [401-842-6565](tel:401-842-6565) |
+
 
 ## Rhode Island::Narragansett
 
-### Rhode Island::Narragansett Active Phase (undefined)
+### Rhode Island::Narragansett Links
+
+| link type | link |
+| --- | --- |
+| info | [Rhode Island Department of Health](https://www.narragansettri.gov/vaccination) |
+| scheduling_phone | [401-782-0611](tel:401-782-0611) |
+
 
 ## Rhode Island::Newport
 
-### Rhode Island::Newport Active Phase (undefined)
+### Rhode Island::Newport Links
+
+| link type | link |
+| --- | --- |
+| scheduling | [Schedule a Vaccination](https://www.cityofnewport.com/en-us/city-hall/departments/fire/community-resources/covid19/vaccine) |
+| scheduling_phone | [(401) 846-7426](tel:(401) 846-7426) |
+
 
 ## Rhode Island::North Providence
 
-### Rhode Island::North Providence Active Phase (undefined)
+### Rhode Island::North Providence Links
+
+| link type | link |
+| --- | --- |
+| info | [Rhode Island Department of Health](https://northprovidenceri.gov/vaccine/) |
+| scheduling_phone | [401-437-6418](tel:401-437-6418) |
+
 
 ## Rhode Island::Pawtucket
 
-### Rhode Island::Pawtucket Active Phase (undefined)
+### Rhode Island::Pawtucket Links
+
+| link type | link |
+| --- | --- |
+| info | [Rhode Island Department of Health](http://www.pawtucketri.com/COVID19) |
+| scheduling_phone | [855-843-7620](tel:855-843-7620) |
+
 
 ## Rhode Island::Portsmouth
 
-### Rhode Island::Portsmouth Active Phase (undefined)
+### Rhode Island::Portsmouth Links
+
+| link type | link |
+| --- | --- |
+| info | [Rhode Island Department of Health](https://www.portsmouthri.com/1594/Portsmouth-Specific-Coronavirus-Informat) |
+| workflow | [Vaccine Eligibility Questionnaire](https://www.portsmouthri.com/1642/Vaccine-Eligibility-Procedures) |
+| scheduling | [Schedule a Vaccination](https://rwu.co1.qualtrics.com/jfe/form/SV_eJrE4ouKOsmDWku) |
+| scheduling_phone | [(401) 643-0323](tel:(401) 643-0323) |
+
 
 ## Rhode Island::Providence
 
-### Rhode Island::Providence Active Phase (undefined)
+### Rhode Island::Providence Links
+
+| link type | link |
+| --- | --- |
+| info | [Rhode Island Department of Health](https://www.providenceri.gov/vaccinate/) |
+| scheduling | [Schedule a Vaccination](http://www.providenceri.gov/vaccine-notification-eng/) |
+| scheduling_phone | [(401)421-2489](tel:(401)421-2489) |
+
 
 ## Rhode Island::Smithfield
 
-### Rhode Island::Smithfield Active Phase (undefined)
+### Rhode Island::Smithfield Links
+
+| link type | link |
+| --- | --- |
+| info | [Rhode Island Department of Health](https://www.smithfieldri.com/vaccine/) |
+| scheduling | [Schedule a Vaccination](https://www.smithfieldri.com/vaccine/) |
+| scheduling_phone | [233-1010](tel:233-1010) |
+
 
 ## Rhode Island::Tiverton
 
-### Rhode Island::Tiverton Active Phase (undefined)
+### Rhode Island::Tiverton Links
+
+| link type | link |
+| --- | --- |
+| info | [Rhode Island Department of Health](https://tivertoncovid19.com/) |
+| scheduling_phone | [(401) 222-8022](tel:(401) 222-8022) |
+
 
 # South Carolina
 
@@ -2402,11 +3189,29 @@ Type 2 diabetes (see [here](https://www.dshs.state.tx.us/coronavirus/immunize/va
 
 ## Virgin Islands::St. Croix
 
-### Virgin Islands::St. Croix Active Phase (undefined)
+### Virgin Islands::St. Croix Links
+
+| link type | link |
+| --- | --- |
+| eligibility_plan | [https://www.covid19usvi.com/current-status](https://www.covid19usvi.com/current-status) |
+| info | [US Virgin Islands Department of Health](https://www.covid19usvi.com/) |
+| providers | [View locations providing vaccines](https://www.covid19usvi.com/vaccines) |
+| scheduling | [Schedule a Vaccination](https://covid19vaccines-stx.usvi.care/) |
+| scheduling_phone | [(340) 777 8227](tel:(340) 777 8227) |
+
 
 ## Virgin Islands::St. Thomas
 
-### Virgin Islands::St. Thomas Active Phase (undefined)
+### Virgin Islands::St. Thomas Links
+
+| link type | link |
+| --- | --- |
+| eligibility_plan | [https://www.covid19usvi.com/current-status](https://www.covid19usvi.com/current-status) |
+| info | [US Virgin Islands Department of Health](https://www.covid19usvi.com/) |
+| providers | [View locations providing vaccines](https://www.covid19usvi.com/vaccines) |
+| scheduling | [Schedule a Vaccination](https://covid19vaccines-stt.usvi.care/) |
+| scheduling_phone | [(340) 777 8227](tel:(340) 777 8227) |
+
 
 # Utah
 
@@ -2448,55 +3253,145 @@ Type 2 diabetes (see [here](https://www.dshs.state.tx.us/coronavirus/immunize/va
 
 ## Utah::Bear River
 
-### Utah::Bear River Active Phase (undefined)
+### Utah::Bear River Links
+
+| link type | link |
+| --- | --- |
+| info | [Utah Department of Health](http://brhd.org/covid-19-vaccine-information) |
+| scheduling_phone | [1-800-456-7707](tel:1-800-456-7707) |
+
 
 ## Utah::Central Utah
 
-### Utah::Central Utah Active Phase (undefined)
+### Utah::Central Utah Links
+
+| link type | link |
+| --- | --- |
+| info | [Utah Department of Health](https://centralutahpublichealth.org/coronavirus-information/) |
+| providers | [View locations providing vaccines](https://centralutahpublichealth.org/coronavirus-information/) |
+| scheduling | [Schedule a Vaccination](https://patportal.cdpehs.com/ezEMRxPHR/html/login/newPortalReg.jsp) |
+
 
 ## Utah::Davis
 
-### Utah::Davis Active Phase (undefined)
+### Utah::Davis Links
+
+| link type | link |
+| --- | --- |
+| info | [Utah Department of Health](https://www.daviscountyutah.gov/health/covid-19/vaccine) |
+| scheduling | [Schedule a Vaccination](https://webportal.daviscountyutah.gov/App/CovidPublic/home) |
+| scheduling_phone | [801-525-4900](tel:801-525-4900) |
+
 
 ## Utah::Salt Lake
 
-### Utah::Salt Lake Active Phase (undefined)
+### Utah::Salt Lake Links
+
+| link type | link |
+| --- | --- |
+| info | [Utah Department of Health](https://slco.org/health/COVID-19/vaccine/) |
+| scheduling_phone | [385-468-7468](tel:385-468-7468) |
+| scheduling | [Schedule a Vaccination](https://vaccinate.utah.gov/s/login/?language=en_US) |
+
 
 ## Utah::San Juan
 
-### Utah::San Juan Active Phase (undefined)
+### Utah::San Juan Links
+
+| link type | link |
+| --- | --- |
+| info | [Utah Department of Health](https://sanjuanpublichealth.org/vaccine-data-information) |
+| scheduling | [Schedule a Vaccination](https://vaccinate.utah.gov/s/login/?language=en_US) |
+| scheduling_phone | [435-587-3838](tel:435-587-3838) |
+
 
 ## Utah::Southeast Utah
 
-### Utah::Southeast Utah Active Phase (undefined)
+### Utah::Southeast Utah Links
+
+| link type | link |
+| --- | --- |
+| eligibility | [https://4e6bd201-e3fb-408c-938c-c65baf6521c2.filesusr.com/ugd/0df2c0_f32289e4c5854c819be5c2ac6ae371d7.pdf](https://4e6bd201-e3fb-408c-938c-c65baf6521c2.filesusr.com/ugd/0df2c0_f32289e4c5854c819be5c2ac6ae371d7.pdf) |
+| info | [Utah Department of Health](https://www.seuhealth.com/covid-vaccine) |
+| scheduling | [Schedule a Vaccination](https://www.seuhealth.com/vaccine-scheduling) |
+
 
 ## Utah::Southwest Utah
 
-### Utah::Southwest Utah Active Phase (undefined)
+### Utah::Southwest Utah Links
+
+| link type | link |
+| --- | --- |
+| eligibility | [https://coronavirus.utah.gov/vaccine-distribution/#eligibility](https://coronavirus.utah.gov/vaccine-distribution/#eligibility) |
+| info | [Utah Department of Health](https://swuhealth.org/covid-vaccine/) |
+| scheduling_phone | [435-986-2549](tel:435-986-2549) |
+
 
 ## Utah::Summit
 
-### Utah::Summit Active Phase (undefined)
+### Utah::Summit Links
+
+| link type | link |
+| --- | --- |
+| info | [Utah Department of Health](http://summitcountyhealth.org/vaccine/) |
+| workflow | [Vaccine Eligibility Questionnaire](http://summitcountyhealth.org/vaccine/) |
+| scheduling_phone | [435-333-0050](tel:435-333-0050) |
+
 
 ## Utah::Tooele
 
-### Utah::Tooele Active Phase (undefined)
+### Utah::Tooele Links
+
+| link type | link |
+| --- | --- |
+| info | [Utah Department of Health](https://tooelehealth.org/covid-19-vaccination-plan/) |
+| scheduling | [Schedule a Vaccination](https://tooelehealth.jotform.com/210105171161134) |
+| scheduling_phone | [435-277-2484](tel:435-277-2484) |
+
 
 ## Utah::TriCounty
 
-### Utah::TriCounty Active Phase (undefined)
+### Utah::TriCounty Links
+
+| link type | link |
+| --- | --- |
+| eligibility | [https://coronavirus.utah.gov/vaccine-distribution/#eligibility](https://coronavirus.utah.gov/vaccine-distribution/#eligibility) |
+| info | [Utah Department of Health](https://tricountyhealth.com/local-covid-update/) |
+| scheduling_phone | [435-247-1177](tel:435-247-1177) |
+
 
 ## Utah::Utah County
 
-### Utah::Utah County Active Phase (undefined)
+### Utah::Utah County Links
+
+| link type | link |
+| --- | --- |
+| scheduling | [Schedule a Vaccination](https://healthevents.utahcounty.gov/) |
+| scheduling_phone | [1-800-456-7707](tel:1-800-456-7707) |
+| info | [Utah Department of Health](https://health.utahcounty.gov/covid-19-vaccine/) |
+
 
 ## Utah::Wasatch
 
-### Utah::Wasatch Active Phase (undefined)
+### Utah::Wasatch Links
+
+| link type | link |
+| --- | --- |
+| eligibility | [http://coronavirus.wasatch.utah.gov/Portals/9/Eligible%20Medical%20Conditions%20%28Effective%203_8_21%29.pdf](http://coronavirus.wasatch.utah.gov/Portals/9/Eligible%20Medical%20Conditions%20%28Effective%203_8_21%29.pdf) |
+| info | [Utah Department of Health](http://coronavirus.wasatch.utah.gov/) |
+| scheduling_phone | [435-657-3276](tel:435-657-3276) |
+
 
 ## Utah::Weber-Morgan
 
-### Utah::Weber-Morgan Active Phase (undefined)
+### Utah::Weber-Morgan Links
+
+| link type | link |
+| --- | --- |
+| info | [Utah Department of Health](http://www.webermorganhealth.org/) |
+| scheduling | [Schedule a Vaccination](https://vaccinate.utah.gov/s/login/?language=en_US) |
+| scheduling_phone | [(801) 399-7777](tel:(801) 399-7777) |
+
 
 # Vermont
 
@@ -2579,11 +3474,21 @@ Type 2 diabetes (see [here](https://www.dshs.state.tx.us/coronavirus/immunize/va
 
 ## Washington::King
 
-### Washington::King Active Phase (undefined)
+### Washington::King Links
+
+| link type | link |
+| --- | --- |
+| info | [Vaccine Information Pgae](https://kingcounty.gov/depts/health/covid-19/vaccine/distribution.aspx) |
+
 
 ## Washington::Kitsap
 
-### Washington::Kitsap Active Phase (undefined)
+### Washington::Kitsap Links
+
+| link type | link |
+| --- | --- |
+| info | [Vaccine Information Pgae](https://kitsappublichealth.org/CommunityHealth/CoronaVirus_Vaccine.php) |
+
 
 # West Virginia
 
@@ -2650,203 +3555,545 @@ Categories of non-frontline essential health care personnel job titles and setti
 
 ## Wisconsin::Appleton
 
-### Wisconsin::Appleton Active Phase (undefined)
+### Wisconsin::Appleton Links
+
+| link type | link |
+| --- | --- |
+| info | [Wisconsin Department of Health Services](https://covid-19-appleton.hub.arcgis.com/) |
+| scheduling | [Schedule a Vaccination](https://foxcitiescovidvaccine.com/) |
+| scheduling_phone | [920-832-6429](tel:920-832-6429) |
+
 
 ## Wisconsin::Ashland
 
-### Wisconsin::Ashland Active Phase (undefined)
+### Wisconsin::Ashland Links
+
+| link type | link |
+| --- | --- |
+| info | [Wisconsin Department of Health Services](https://co.ashland.wi.us/covid_vaccination) |
+| scheduling | [Schedule a Vaccination](https://co.ashland.wi.us/covid_vaccination) |
+| scheduling_phone | [715-682-7028](tel: 715-682-7028) |
+
 
 ## Wisconsin::Barron
 
-### Wisconsin::Barron Active Phase (undefined)
+### Wisconsin::Barron Links
+
+| link type | link |
+| --- | --- |
+| info | [Wisconsin Department of Health Services](https://www.barroncountywi.gov/index.asp?Type=B_PR&SEC={A03C10D0-957E-49C9-AE31-BE9B081F026D}&DE={81B3EAFA-2410-4701-84D1-2D2037166EEB}) |
+| scheduling | [Schedule a Vaccination](https://www.surveymonkey.com/r/VRLDB7Y) |
+| scheduling_phone | [715-537-6123](tel:715-537-6123) |
+
 
 ## Wisconsin::Bayfield
 
-### Wisconsin::Bayfield Active Phase (undefined)
+### Wisconsin::Bayfield Links
+
+| link type | link |
+| --- | --- |
+| info | [Wisconsin Department of Health Services](https://www.bayfieldcounty.org/1178/CORONAVIRUS-COVID-19) |
+| scheduling | [Schedule a Vaccination](https://www.bayfieldcounty.wi.gov/FormCenter/Health-8/Online-Form-to-Register-for-COVID19-Vacc-143) |
+| scheduling_phone | [(715) 373-3324](tel:(715) 373-3324) |
+
 
 ## Wisconsin::Buffalo
 
-### Wisconsin::Buffalo Active Phase (undefined)
+### Wisconsin::Buffalo Links
+
+| link type | link |
+| --- | --- |
+| info | [Wisconsin Department of Health Services](https://www.buffalocounty.com/489/COVID-19) |
+| scheduling_phone | [608-685-4412](tel:608-685-4412) |
+
 
 ## Wisconsin::Burnett
 
-### Wisconsin::Burnett Active Phase (undefined)
+### Wisconsin::Burnett Links
+
+| link type | link |
+| --- | --- |
+| info | [Wisconsin Department of Health Services](https://www.burnettcounty.com/1206/COVID-19-Vaccine-Information) |
+| scheduling | [Schedule a Vaccination](https://www.burnettcounty.com/1206/COVID-19-Vaccine-Information) |
+| scheduling_phone | [715-349-7600](tel:715-349-7600) |
+
 
 ## Wisconsin::Calumet
 
-### Wisconsin::Calumet Active Phase (undefined)
+### Wisconsin::Calumet Links
+
+| link type | link |
+| --- | --- |
+| info | [Wisconsin Department of Health Services](https://www.calumetcounty.org/COVID-19) |
+| scheduling_phone | [(920) 849-1466](tel:(920) 849-1466) |
+
 
 ## Wisconsin::Chippewa
 
-### Wisconsin::Chippewa Active Phase (undefined)
+### Wisconsin::Chippewa Links
+
+| link type | link |
+| --- | --- |
+| info | [Wisconsin Department of Health Services](https://covid19-chipcogis.hub.arcgis.com/) |
+| scheduling | [Schedule a Vaccination](https://covid19-chipcogis.hub.arcgis.com/pages/covid-19-vaccine-appointments) |
+| scheduling_phone | [715-726-7900](tel:715-726-7900) |
+
 
 ## Wisconsin::Clark
 
-### Wisconsin::Clark Active Phase (undefined)
+### Wisconsin::Clark Links
+
+| link type | link |
+| --- | --- |
+| info | [Wisconsin Department of Health Services](https://www.clarkcountywi.com/vaccine-information) |
+| scheduling | [Schedule a Vaccination](https://www.signupgenius.com/go/3-18-21-clarkcountydrivethroughclinic) |
+| scheduling_phone | [715-743-5105](tel:715-743-5105) |
+
 
 ## Wisconsin::Columbia
 
-### Wisconsin::Columbia Active Phase (undefined)
+### Wisconsin::Columbia Links
+
+| link type | link |
+| --- | --- |
+| info | [Wisconsin Department of Health Services](https://www.co.columbia.wi.us/columbiacounty/hhs/HealthHumanService/PublicHealth/Coronavirus/tabid/9196/Default.aspx) |
+| scheduling | [Schedule a Vaccination](https://www.co.columbia.wi.us/ColumbiaCounty/hhs/HealthHumanService/PublicHealth/Coronavirus/VaccineClinicFull/tabid/9271/Default.aspx) |
+| scheduling_phone | [608-742-9227](tel:608-742-9227) |
+
 
 ## Wisconsin::Crawford
 
-### Wisconsin::Crawford Active Phase (undefined)
+### Wisconsin::Crawford Links
+
+| link type | link |
+| --- | --- |
+| info | [Wisconsin Department of Health Services](https://www.crawfordcountywi.org/health.html) |
+| scheduling | [Schedule a Vaccination](https://form.jotform.com/210196226105143) |
+| scheduling_phone | [608-326-0229](tel:608-326-0229) |
+
 
 ## Wisconsin::Dane
 
-### Wisconsin::Dane Active Phase (undefined)
+### Wisconsin::Dane Links
+
+| link type | link |
+| --- | --- |
+| info | [Wisconsin Department of Health Services](https://publichealthmdc.com/coronavirus/covid-19-vaccine) |
+| scheduling | [Schedule a Vaccination](http://survey.alchemer.com/s3/6183089/Dane-COVID-Vaccine-Sign-Up-Form) |
+| scheduling_phone | [608-266-4821](tel:608-266-4821) |
+
 
 ## Wisconsin::Dodge
 
-### Wisconsin::Dodge Active Phase (undefined)
+### Wisconsin::Dodge Links
+
+| link type | link |
+| --- | --- |
+| info | [Wisconsin Department of Health Services](https://www.co.dodge.wi.gov/departments/departments-e-m/human-services-health-department/coronavirus-information/covid-19-vaccination) |
+| scheduling | [Schedule a Vaccination](https://www.co.dodge.wi.gov/departments/departments-e-m/human-services-health-department/coronavirus-information/covid-19-vaccination/covid-19-vaccine-interest-form) |
+| scheduling_phone | [920-386-4304](tel: 920-386-4304) |
+
 
 ## Wisconsin::Door
 
-### Wisconsin::Door Active Phase (undefined)
+### Wisconsin::Door Links
+
+| link type | link |
+| --- | --- |
+| info | [Wisconsin Department of Health Services](https://www.co.door.wi.gov/909/Situation-Update-March-11-2021) |
+| scheduling | [Schedule a Vaccination](https://dcphwaitlist.timetap.com/#/) |
+| scheduling_phone | [1-844-684-1064](tel:1-844-684-1064) |
+
 
 ## Wisconsin::Eau Claire
 
-### Wisconsin::Eau Claire Active Phase (undefined)
+### Wisconsin::Eau Claire Links
+
+| link type | link |
+| --- | --- |
+| info | [Wisconsin Department of Health Services](https://coronavirus-and-covid-19-information-hub-eccounty.hub.arcgis.com/) |
+| scheduling | [Schedule a Vaccination](https://coronavirus-and-covid-19-information-hub-eccounty.hub.arcgis.com/pages/covid-19-vaccine-appointments) |
+| scheduling_phone | [715) 831-7425](tel:715) 831-7425) |
+
 
 ## Wisconsin::Florence
 
-### Wisconsin::Florence Active Phase (undefined)
+### Wisconsin::Florence Links
+
+| link type | link |
+| --- | --- |
+| info | [Wisconsin Department of Health Services](https://florencewipublichealth.com/covid.htm) |
+| scheduling | [Schedule a Vaccination](https://www.signupgenius.com/go/10c0c4faeab2dabf5c70-covid4) |
+| scheduling_phone | [715-528-4837](tel:715-528-4837) |
+
 
 ## Wisconsin::Forest
 
-### Wisconsin::Forest Active Phase (undefined)
+### Wisconsin::Forest Links
+
+| link type | link |
+| --- | --- |
+| info | [Wisconsin Department of Health Services](http://forestcountypublichealth.org/) |
+| scheduling_phone | [715-478-3371](tel:715-478-3371) |
+
 
 ## Wisconsin::Green
 
-### Wisconsin::Green Active Phase (undefined)
+### Wisconsin::Green Links
+
+| link type | link |
+| --- | --- |
+| info | [Wisconsin Department of Health Services](https://gcpublichealth.org/coronavirus/) |
+| scheduling | [Schedule a Vaccination](https://vaccinate.wi.gov/) |
+| scheduling_phone | [(608) 328-9390](tel:(608) 328-9390) |
+
 
 ## Wisconsin::Iowa
 
-### Wisconsin::Iowa Active Phase (undefined)
+### Wisconsin::Iowa Links
+
+| link type | link |
+| --- | --- |
+| info | [Wisconsin Department of Health Services](https://www.iowacounty.org/departments/COVID-19/VaccineInformation) |
+| scheduling | [Schedule a Vaccination](https://www.signupgenius.com/go/10c0d4aada92fa5fcce9-vaccine) |
+| scheduling_phone | [608.930.9870](tel:608.930.9870) |
+
 
 ## Wisconsin::Kenosha
 
-### Wisconsin::Kenosha Active Phase (undefined)
+### Wisconsin::Kenosha Links
+
+| link type | link |
+| --- | --- |
+| info | [Wisconsin Department of Health Services](https://kenosha-county-covid-19-response-kenoshacounty.hub.arcgis.com/) |
+| scheduling | [Schedule a Vaccination](https://www.kenoshacounty.org/vaccine) |
+| scheduling_phone | [262-605-6799](tel:262-605-6799) |
+
 
 ## Wisconsin::Kewaunee
 
-### Wisconsin::Kewaunee Active Phase (undefined)
+### Wisconsin::Kewaunee Links
+
+| link type | link |
+| --- | --- |
+| info | [Wisconsin Department of Health Services](https://www.kewauneeco.org/departments/public-health/) |
+| scheduling | [Schedule a Vaccination](https://www.kewauneeco.org/departments/public-health/general-information/contact-us/) |
+| scheduling_phone | [(920) 388-7160](tel:(920) 388-7160) |
+
 
 ## Wisconsin::La Crosse
 
-### Wisconsin::La Crosse Active Phase (undefined)
+### Wisconsin::La Crosse Links
+
+| link type | link |
+| --- | --- |
+| info | [Wisconsin Department of Health Services](https://www.lacrossecounty.org/covid19) |
+| scheduling | [Schedule a Vaccination](http://vaccinate.wi.gov/) |
+| scheduling_phone | [608-785-6240](tel:608-785-6240) |
+
 
 ## Wisconsin::Lafayette
 
-### Wisconsin::Lafayette Active Phase (undefined)
+### Wisconsin::Lafayette Links
+
+| link type | link |
+| --- | --- |
+| info | [Wisconsin Department of Health Services](https://www.lafayettecountywi.org/covid19) |
+| scheduling_phone | [608-776-4895](tel:608-776-4895) |
+
 
 ## Wisconsin::Langlade
 
-### Wisconsin::Langlade Active Phase (undefined)
+### Wisconsin::Langlade Links
+
+| link type | link |
+| --- | --- |
+| info | [Wisconsin Department of Health Services](https://www.co.langlade.wi.us/departments/health-department/general/covid-19-vaccines/) |
+| scheduling | [Schedule a Vaccination](http://forms.gle/tpHjKbUDGWkjEjA2A) |
+| scheduling_phone | [608-266-1683](tel:608-266-1683) |
+
 
 ## Wisconsin::Lincoln
 
-### Wisconsin::Lincoln Active Phase (undefined)
+### Wisconsin::Lincoln Links
+
+| link type | link |
+| --- | --- |
+| info | [Wisconsin Department of Health Services](https://co.lincoln.wi.us/health/page/covid-19-vaccine) |
+| scheduling | [Schedule a Vaccination](https://hipaa.jotform.com/210314348090042) |
+| scheduling_phone | [715-539-1375](tel:715-539-1375) |
+
 
 ## Wisconsin::Manitowoc
 
-### Wisconsin::Manitowoc Active Phase (undefined)
+### Wisconsin::Manitowoc Links
+
+| link type | link |
+| --- | --- |
+| info | [Wisconsin Department of Health Services](https://www.co.manitowoc.wi.us/departments/health-department/covid-19-information/) |
+| scheduling | [Schedule a Vaccination](https://app.acuityscheduling.com/schedule.php?owner=20765476&calendarID=4914714) |
+| scheduling_phone | [920-683-4155](tel:920-683-4155) |
+
 
 ## Wisconsin::Milwaukee
 
-### Wisconsin::Milwaukee Active Phase (undefined)
+### Wisconsin::Milwaukee Links
+
+| link type | link |
+| --- | --- |
+| info | [Wisconsin Department of Health Services](https://city.milwaukee.gov/coronavirus) |
+| scheduling | [Schedule a Vaccination](https://mke-vaccines.egov.com/) |
+| scheduling_phone | [(414) 286-6800](tel:(414) 286-6800) |
+
 
 ## Wisconsin::Monroe
 
-### Wisconsin::Monroe Active Phase (undefined)
+### Wisconsin::Monroe Links
+
+| link type | link |
+| --- | --- |
+| info | [Wisconsin Department of Health Services](https://healthymonroecowi.org/covid-19/) |
+| scheduling | [Schedule a Vaccination](https://hipaa.jotform.com/210146141990045) |
+| scheduling_phone | [608-269-8666](tel:608-269-8666) |
+
 
 ## Wisconsin::Oneida
 
-### Wisconsin::Oneida Active Phase (undefined)
+### Wisconsin::Oneida Links
+
+| link type | link |
+| --- | --- |
+| info | [Wisconsin Department of Health Services](https://publichealth.co.oneida.wi.us/covid-19-vaccine/) |
+| scheduling | [Schedule a Vaccination](https://publichealth.co.oneida.wi.us/covid-19-vaccine-registration/) |
+| scheduling_phone | [715.369.6111](tel:715.369.6111) |
+
 
 ## Wisconsin::Washington-Ozaukee
 
-### Wisconsin::Washington-Ozaukee Active Phase (undefined)
+### Wisconsin::Washington-Ozaukee Links
+
+| link type | link |
+| --- | --- |
+| info | [Wisconsin Department of Health Services](http://www.washozwi.gov/) |
+| scheduling | [Schedule a Vaccination](https://form.jotform.com/210616326165147) |
+| scheduling_phone | [844-684-1064](tel:844-684-1064) |
+
 
 ## Wisconsin::Pepin
 
-### Wisconsin::Pepin Active Phase (undefined)
+### Wisconsin::Pepin Links
+
+| link type | link |
+| --- | --- |
+| info | [Wisconsin Department of Health Services](https://www.co.pepin.wi.us/index.asp?SEC=B2DD7216-4847-43E4-8194-54931F2D07C0&Type=B_BASIC) |
+| scheduling | [Schedule a Vaccination](https://forms.office.com/Pages/ResponsePage.aspx?id=Ro56gexDrkmjljL9IjHFehE3VKcHZWNJkTrUmML_z0lUNjVQRlhISENDVVRCMTdINVhBUkdZTFBVMi4u) |
+| scheduling_phone | [715-672-5961](tel:715-672-5961) |
+
 
 ## Wisconsin::Pierce
 
-### Wisconsin::Pierce Active Phase (undefined)
+### Wisconsin::Pierce Links
+
+| link type | link |
+| --- | --- |
+| info | [Wisconsin Department of Health Services](https://covid-piercecounty-wi.hub.arcgis.com/) |
+| scheduling | [Schedule a Vaccination](https://piercecountycovid19vaccine.as.me/schedule.php?owner=21608524&template=weekly&id[]=PHPSESSID=uhfnqm94ocok1vad695orj2g7e) |
+| scheduling_phone | [844-684-1064](tel:844-684-1064) |
+
 
 ## Wisconsin::Polk
 
-### Wisconsin::Polk Active Phase (undefined)
+### Wisconsin::Polk Links
+
+| link type | link |
+| --- | --- |
+| info | [Wisconsin Department of Health Services](http://www.polkcountyhealthdept.org/home/covid-19-information/) |
+| scheduling | [Schedule a Vaccination](http://www.polkcountyhealthdept.org/home/covid-19-information/covid-19-vaccine-appointments/) |
+| scheduling_phone | [715-485-8400](tel:715-485-8400) |
+
 
 ## Wisconsin::Portage
 
-### Wisconsin::Portage Active Phase (undefined)
+### Wisconsin::Portage Links
+
+| link type | link |
+| --- | --- |
+| info | [Wisconsin Department of Health Services](https://www.co.portage.wi.us/department/health-and-human-services/division-of-public-health/vaccine-information) |
+| scheduling | [Schedule a Vaccination](https://wi-telegov.egov.com/portage-county) |
+| scheduling_phone | [715-345-5350](tel:715-345-5350) |
+
 
 ## Wisconsin::Price
 
-### Wisconsin::Price Active Phase (undefined)
+### Wisconsin::Price Links
+
+| link type | link |
+| --- | --- |
+| info | [Wisconsin Department of Health Services](https://co.price.wi.us/970/COVID-19) |
+| scheduling_phone | [715-339-3054](tel:715-339-3054) |
+
 
 ## Wisconsin::Racine
 
-### Wisconsin::Racine Active Phase (undefined)
+### Wisconsin::Racine Links
+
+| link type | link |
+| --- | --- |
+| info | [Wisconsin Department of Health Services](https://www.racinecoronavirus.org/racine-covid-19-vaccine/) |
+| scheduling | [Schedule a Vaccination](https://www.surveymonkey.com/r/RacineCOVIDVaccineEligible) |
+| scheduling_phone | [262-636-9201](tel:262-636-9201) |
+
 
 ## Wisconsin::Richland
 
-### Wisconsin::Richland Active Phase (undefined)
+### Wisconsin::Richland Links
+
+| link type | link |
+| --- | --- |
+| info | [Wisconsin Department of Health Services](https://covid.co.richland.wi.us/vaccine-information/) |
+| scheduling | [Schedule a Vaccination](https://richlandhospitalclinics.rsvpify.com/) |
+| scheduling_phone | [608-647-8821](tel:608-647-8821) |
+
 
 ## Wisconsin::Rock
 
-### Wisconsin::Rock Active Phase (undefined)
+### Wisconsin::Rock Links
+
+| link type | link |
+| --- | --- |
+| info | [Wisconsin Department of Health Services](https://www.co.rock.wi.us/publichealth-familycommunity/publichealth-communicabledisease/coronavirus-disease-2019) |
+| scheduling | [Schedule a Vaccination](https://www.co.rock.wi.us/publichealth-familycommunity/publichealth-communicabledisease/coronavirus-disease-2019/232-departments-category/health-department/coronavirus/2436-coronavirus-vaccine) |
+| scheduling_phone | [608-757-5440](tel:608-757-5440) |
+
 
 ## Wisconsin::Sauk
 
-### Wisconsin::Sauk Active Phase (undefined)
+### Wisconsin::Sauk Links
+
+| link type | link |
+| --- | --- |
+| info | [Wisconsin Department of Health Services](https://www.co.sauk.wi.us/publichealth/coronavirus) |
+| scheduling | [Schedule a Vaccination](https://www.signupgenius.com/go/10c0c4cafa629aafcce9-covid19) |
+| scheduling_phone | [608-355-3290](tel: 608-355-3290) |
+
 
 ## Wisconsin::Shawano-Menominee
 
-### Wisconsin::Shawano-Menominee Active Phase (undefined)
+### Wisconsin::Shawano-Menominee Links
+
+| link type | link |
+| --- | --- |
+| info | [Wisconsin Department of Health Services](https://www.co.shawano.wi.us/departments/?department=5c6edb95d748) |
+| scheduling | [Schedule a Vaccination](https://wi-telegov.egov.com/shawano-menominee-co?fbclid=IwAR0KAhNbm4MPwsN-ESwQ6_kygyd8SsB8VmZZjOEZpgTPy1w_3AP7am7SYNk) |
+| scheduling_phone | [715-526-4818](tel:715-526-4818) |
+
 
 ## Wisconsin::Sheboygan
 
-### Wisconsin::Sheboygan Active Phase (undefined)
+### Wisconsin::Sheboygan Links
+
+| link type | link |
+| --- | --- |
+| info | [Wisconsin Department of Health Services](https://www.sheboygancounty.com/departments/departments-f-q/health-and-human-services/public-health/communicable-disease/coronavirus-covid-19) |
+| scheduling | [Schedule a Vaccination](https://wi-telegov.egov.com/Sheboygan-Vaccines/AppointmentWizard) |
+
 
 ## Wisconsin::St. Croix
 
-### Wisconsin::St. Croix Active Phase (undefined)
+### Wisconsin::St. Croix Links
+
+| link type | link |
+| --- | --- |
+| info | [Wisconsin Department of Health Services](https://www.sccwi.gov/982/COVID-19-Vaccine) |
+| scheduling | [Schedule a Vaccination](https://forms.office.com/Pages/ResponsePage.aspx?id=Ubapzb9Es06zkGL8S873L_gE7FqZBJxHkPUYb1r024FUNkFOTTcwWUZTOERXNlo3U0c3T1BGODZUVi4u) |
+| scheduling_phone | [715-246-8263](tel: 715-246-8263) |
+
 
 ## Wisconsin::Walworth
 
-### Wisconsin::Walworth Active Phase (undefined)
+### Wisconsin::Walworth Links
+
+| link type | link |
+| --- | --- |
+| info | [Wisconsin Department of Health Services](https://wi-walworthcounty.civicplus.com/896/COVID-19-Vaccine-Information) |
+| scheduling | [Schedule a Vaccination](https://www.co.walworth.wi.us/FormCenter/Public-Health-Division-4/COVID19-Vaccine-Inquiry-Phase-1a-63) |
+| scheduling_phone | [(262) 741-3200](tel:(262) 741-3200) |
+
 
 ## Wisconsin::Washburn
 
-### Wisconsin::Washburn Active Phase (undefined)
+### Wisconsin::Washburn Links
+
+| link type | link |
+| --- | --- |
+| info | [Wisconsin Department of Health Services](https://www.washburncodisaster.org/) |
+| scheduling | [Schedule a Vaccination](https://www.washburncodisaster.org/covid-vaccine-scheduling) |
+| scheduling_phone | [715-635-4402](tel:715-635-4402) |
+
 
 ## Wisconsin::Watertown
 
-### Wisconsin::Watertown Active Phase (undefined)
+### Wisconsin::Watertown Links
+
+| link type | link |
+| --- | --- |
+| info | [Wisconsin Department of Health Services](https://www.ci.watertown.wi.us/covid-19_community_updates/index.php#.XnoSLYhKjIU) |
+| scheduling_phone | [888-519-8405](tel:888-519-8405) |
+
 
 ## Wisconsin::Waukesha
 
-### Wisconsin::Waukesha Active Phase (undefined)
+### Wisconsin::Waukesha Links
+
+| link type | link |
+| --- | --- |
+| info | [Wisconsin Department of Health Services](https://www.waukeshacounty.gov/HealthAndHumanServices/PublicHealth/public-health-preparedness/COVID19/covid-vaccine/) |
+| scheduling | [Schedule a Vaccination](https://forms.microsoft.com/Pages/ResponsePage.aspx?id=rHo-5yO_U0ezPfQFUpw_tqgEU4KKS6xBp9dghikserpUN1c1TjlONzlEQkw2VVhFTEwyR1RUV1k4VS4u) |
+| scheduling_phone | [262-548-7626](tel:262-548-7626) |
+
 
 ## Wisconsin::Waupaca
 
-### Wisconsin::Waupaca Active Phase (undefined)
+### Wisconsin::Waupaca Links
+
+| link type | link |
+| --- | --- |
+| info | [Wisconsin Department of Health Services](https://www.waupacacounty-wi.gov/departments/health_and_human_services/vaccine_information.php) |
+| scheduling | [Schedule a Vaccination](https://www.waupacacounty-wi.gov/departments/health_and_human_services/vaccine_information.php) |
+| scheduling_phone | [1-844-684-1064](tel:1-844-684-1064) |
+
 
 ## Wisconsin::Waushara
 
-### Wisconsin::Waushara Active Phase (undefined)
+### Wisconsin::Waushara Links
+
+| link type | link |
+| --- | --- |
+| info | [Wisconsin Department of Health Services](https://www.co.waushara.wi.us/pview.aspx?catid=636&id=44912) |
+| scheduling_phone | [1-844-684-1064](tel:1-844-684-1064) |
+
 
 ## Wisconsin::Winnebago
 
-### Wisconsin::Winnebago Active Phase (undefined)
+### Wisconsin::Winnebago Links
+
+| link type | link |
+| --- | --- |
+| info | [Wisconsin Department of Health Services](https://www.co.winnebago.wi.us/health/divisions-program-areas/communicable-disease/covid-19-coronavirus/covid-19-vaccine/vaccine-1) |
+| scheduling | [Schedule a Vaccination](https://www.signupgenius.com/go/10c0c4ca8ad2baafdc52-march2) |
+| scheduling_phone | [920-232-3026](tel:920-232-3026) |
+
 
 ## Wisconsin::Wood
 
-### Wisconsin::Wood Active Phase (undefined)
+### Wisconsin::Wood Links
+
+| link type | link |
+| --- | --- |
+| info | [Wisconsin Department of Health Services](https://www.co.wood.wi.us/Departments/Health/CovidVaccination.aspx) |
+| scheduling | [Schedule a Vaccination](https://www.co.wood.wi.us/Departments/Health/CovidVaccineContact.aspx) |
+| scheduling_phone | [715-421-8931](tel:715-421-8931) |
+
 
 # Wyoming
 
@@ -2870,92 +4117,251 @@ Categories of non-frontline essential health care personnel job titles and setti
 
 ## Wyoming::Albany
 
-### Wyoming::Albany Active Phase (undefined)
+### Wyoming::Albany Links
+
+| link type | link |
+| --- | --- |
+| info | [Wyoming Department of Health](https://www.publichealthlaramie.org/covid/) |
+| scheduling | [Schedule a Vaccination](https://mychart.uchealth.org/mhcweb/register.aspx) |
+| scheduling_phone | [307-766-8222](tel:307-766-8222) |
+
 
 ## Wyoming::Bighorn
 
-### Wyoming::Bighorn Active Phase (undefined)
+### Wyoming::Bighorn Links
+
+| link type | link |
+| --- | --- |
+| info | [Wyoming Department of Health](https://www.bighorncountywy.gov/#covid) |
+| scheduling | [Schedule a Vaccination](https://wy.covidreadi.com/) |
+| scheduling_phone | [1-800-438-5795](tel:1-800-438-5795) |
+
 
 ## Wyoming::Campbell
 
-### Wyoming::Campbell Active Phase (undefined)
+### Wyoming::Campbell Links
+
+| link type | link |
+| --- | --- |
+| info | [Wyoming Department of Health](https://www.ccgov.net/2104/Coronavirus-COVID-19) |
+| scheduling | [Schedule a Vaccination](https://wy.covidreadi.com/) |
+| scheduling_phone | [1-800-438-5795](tel:1-800-438-5795) |
+
 
 ## Wyoming::Carbon
 
-### Wyoming::Carbon Active Phase (undefined)
+### Wyoming::Carbon Links
+
+| link type | link |
+| --- | --- |
+| info | [Wyoming Department of Health](http://carbonwy.com/1157/COVID-19-Status) |
+| scheduling | [Schedule a Vaccination](https://wy.covidreadi.com/) |
+| scheduling_phone | [1-800-438-5795](tel:1-800-438-5795) |
+
 
 ## Wyoming::Converse
 
-### Wyoming::Converse Active Phase (undefined)
+### Wyoming::Converse Links
+
+| link type | link |
+| --- | --- |
+| info | [Wyoming Department of Health](https://conversecounty.org/473/COVID-19) |
+| scheduling | [Schedule a Vaccination](https://wy.covidreadi.com/) |
+| scheduling_phone | [1-800-438-5795](tel:1-800-438-5795) |
+
 
 ## Wyoming::Crook
 
-### Wyoming::Crook Active Phase (undefined)
+### Wyoming::Crook Links
+
+| link type | link |
+| --- | --- |
+| info | [Wyoming Department of Health](https://www.crookcounty.wy.gov/departments/emergency_management/index.php) |
+| scheduling | [Schedule a Vaccination](https://wy.covidreadi.com/) |
+| scheduling_phone | [1-800-438-5795](tel:1-800-438-5795) |
+
 
 ## Wyoming::Fremont
 
-### Wyoming::Fremont Active Phase (undefined)
+### Wyoming::Fremont Links
+
+| link type | link |
+| --- | --- |
+| info | [Wyoming Department of Health](https://www.fremontcountywy.org/government/departments/public_health/covid-19.php) |
+| scheduling | [Schedule a Vaccination](https://docs.google.com/forms/d/e/1FAIpQLSdpmuAhg4tWNgEx7g7Oq9kysA6kzQLnUpCwrIFvvPShdOmoyQ/viewform?usp=sf_link) |
+| scheduling_phone | [800-438-5795](tel:800-438-5795) |
+
 
 ## Wyoming::Goshen
 
-### Wyoming::Goshen Active Phase (undefined)
+### Wyoming::Goshen Links
+
+| link type | link |
+| --- | --- |
+| info | [Wyoming Department of Health](https://goshencounty.org/covid-19-goshen-county-community-information-3/) |
+| scheduling | [Schedule a Vaccination](https://wy.covidreadi.com/) |
+| scheduling_phone | [1-800-438-5795](tel:1-800-438-5795) |
+
 
 ## Wyoming::Hot Springs
 
-### Wyoming::Hot Springs Active Phase (undefined)
+### Wyoming::Hot Springs Links
+
+| link type | link |
+| --- | --- |
+| info | [Wyoming Department of Health](https://www.hscounty.com/covid) |
+| scheduling | [Schedule a Vaccination](https://www.hscounty.com/vaccine) |
+| scheduling_phone | [1-800-438-5795](tel:1-800-438-5795) |
+
 
 ## Wyoming::Johnson
 
-### Wyoming::Johnson Active Phase (undefined)
+### Wyoming::Johnson Links
+
+| link type | link |
+| --- | --- |
+| info | [Wyoming Department of Health](http://www.johnsoncountywyoming.org/covid-19/) |
+| scheduling | [Schedule a Vaccination](https://wy.covidreadi.com/) |
+| scheduling_phone | [1-800-438-5795](tel:1-800-438-5795) |
+
 
 ## Wyoming::Laramie
 
-### Wyoming::Laramie Active Phase (undefined)
+### Wyoming::Laramie Links
+
+| link type | link |
+| --- | --- |
+| info | [Wyoming Department of Health](https://www.laramiecounty.com/_departments/Health/coronavirus_info.aspx) |
+| scheduling | [Schedule a Vaccination](https://form.jotform.com/203565004101034) |
+| scheduling_phone | [307-633-4000](tel:307-633-4000) |
+
 
 ## Wyoming::Lincoln
 
-### Wyoming::Lincoln Active Phase (undefined)
+### Wyoming::Lincoln Links
+
+| link type | link |
+| --- | --- |
+| info | [Wyoming Department of Health](https://www.lcwy.org/departments/public_health/covid-19_vaccine_.php) |
+| scheduling | [Schedule a Vaccination](https://docs.google.com/forms/d/1Ck2JSIG3O1t0EfeuO08S9YQGlStMf2AjFBKPSGRBSqE/viewform?edit_requested=true) |
+| scheduling_phone | [307-885-9598](tel:307-885-9598) |
+
 
 ## Wyoming::Natrona
 
-### Wyoming::Natrona Active Phase (undefined)
+### Wyoming::Natrona Links
+
+| link type | link |
+| --- | --- |
+| info | [Wyoming Department of Health](https://casperpublichealth.org/covid-19/) |
+| scheduling | [Schedule a Vaccination](https://wy.covidreadi.com/) |
+| scheduling_phone | [1-800-438-5795](tel:1-800-438-5795) |
+
 
 ## Wyoming::Niobrara
 
-### Wyoming::Niobrara Active Phase (undefined)
+### Wyoming::Niobrara Links
+
+| link type | link |
+| --- | --- |
+| info | [Wyoming Department of Health](https://www.facebook.com/niobraracountyPH) |
+| scheduling | [Schedule a Vaccination](https://forms.gle/vhfwhhxcUPpdk7Ub7) |
+| scheduling_phone | [800-438-5795](tel:800-438-5795) |
+
 
 ## Wyoming::Park
 
-### Wyoming::Park Active Phase (undefined)
+### Wyoming::Park Links
+
+| link type | link |
+| --- | --- |
+| info | [Wyoming Department of Health](http://www.parkcounty.us/CoronaVirus.html) |
+| scheduling | [Schedule a Vaccination](https://wy.covidreadi.com/) |
+| scheduling_phone | [1-800-438-5795](tel:1-800-438-5795) |
+
 
 ## Wyoming::Platte
 
-### Wyoming::Platte Active Phase (undefined)
+### Wyoming::Platte Links
+
+| link type | link |
+| --- | --- |
+| info | [Wyoming Department of Health](https://www.plattecountywyoming.com/departments/covid-19/covid-19info) |
+| scheduling | [Schedule a Vaccination](https://wy.covidreadi.com/) |
+| scheduling_phone | [1-800-438-5795](tel:1-800-438-5795) |
+
 
 ## Wyoming::Sheridan
 
-### Wyoming::Sheridan Active Phase (undefined)
+### Wyoming::Sheridan Links
+
+| link type | link |
+| --- | --- |
+| info | [Wyoming Department of Health](http://www.sheridancounty.com/covid-19/) |
+| scheduling | [Schedule a Vaccination](https://wy.covidreadi.com/) |
+| scheduling_phone | [1-800-438-5795](tel:1-800-438-5795) |
+
 
 ## Wyoming::Sublette
 
-### Wyoming::Sublette Active Phase (undefined)
+### Wyoming::Sublette Links
+
+| link type | link |
+| --- | --- |
+| info | [Wyoming Department of Health](https://www.sublettewycovid.com/) |
+| scheduling | [Schedule a Vaccination](https://bit.ly/2LovKQU) |
+| scheduling_phone | [307-367-2157](tel:307-367-2157) |
+
 
 ## Wyoming::Sweetwater
 
-### Wyoming::Sweetwater Active Phase (undefined)
+### Wyoming::Sweetwater Links
+
+| link type | link |
+| --- | --- |
+| info | [Wyoming Department of Health](http://sweetwatercares.com/) |
+| scheduling_phone | [307-922-5390](tel:307-922-5390) |
+
 
 ## Wyoming::Teton
 
-### Wyoming::Teton Active Phase (undefined)
+### Wyoming::Teton Links
+
+| link type | link |
+| --- | --- |
+| info | [Wyoming Department of Health](http://www.tetoncountywy.gov/2061/COVID-19) |
+| scheduling | [Schedule a Vaccination](http://www.tetoncountywy.gov/covidvax) |
+| scheduling_phone | [307-732-8628](tel:307-732-8628) |
+
 
 ## Wyoming::Uinta
 
-### Wyoming::Uinta Active Phase (undefined)
+### Wyoming::Uinta Links
+
+| link type | link |
+| --- | --- |
+| info | [Wyoming Department of Health](https://www.uintacounty.com/904/Corona-Virus---COVID-19) |
+| scheduling | [Schedule a Vaccination](https://forms.gle/fbvGPciMf7gTQqZQA) |
+| scheduling_phone | [307-789-9203](tel:307-789-9203) |
+
 
 ## Wyoming::Washakie
 
-### Wyoming::Washakie Active Phase (undefined)
+### Wyoming::Washakie Links
+
+| link type | link |
+| --- | --- |
+| info | [Wyoming Department of Health](http://www.washakiecounty.net/covid19) |
+| scheduling | [Schedule a Vaccination](https://wy.covidreadi.com/) |
+| scheduling_phone | [1-800-438-5795](tel:1-800-438-5795) |
+
 
 ## Wyoming::Weston
 
-### Wyoming::Weston Active Phase (undefined)
+### Wyoming::Weston Links
+
+| link type | link |
+| --- | --- |
+| info | [Wyoming Department of Health](https://www.wcph.net/covid-19-corner) |
+| scheduling | [Schedule a Vaccination](https://wy.covidreadi.com/) |
+| scheduling_phone | [1-800-438-5795](tel:1-800-438-5795) |
