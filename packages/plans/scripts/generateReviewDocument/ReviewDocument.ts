@@ -34,21 +34,21 @@ export class ReviewDocument {
 			level,
 			title: name,
 		}
-		const linksSection: Section | null =
-			!activePhase && phase == null
+		const linksSection: Section | null = {
+			level: level + 1,
+			title: `${name} Links`,
+			text: this.printLinkTable(links),
+			requiresText: true,
+		}
+
+		const phaseSection: Section | null =
+			activePhase == null && phase == null
 				? null
 				: {
 						level: level + 1,
-						title: `${name} Links`,
-						text: this.printLinkTable(links),
-						requiresText: true,
+						title: `${name} Active Phase (${activePhase})`,
+						text: this.printPhase(phase!),
 				  }
-
-		const phaseSection: Section = {
-			level: level + 1,
-			title: `${name} Active Phase (${activePhase})`,
-			text: this.printPhase(phase!),
-		}
 
 		const subregionSection: Section | null =
 			subregions.length === 0

@@ -112,7 +112,7 @@ function validateDataFiles() {
 			linkErrors.push(...dataLinkErrors)
 			schemaValidationErrors.push(...validationErrors)
 			errorCount += dataLinkErrors.length + validationErrors.length
-			const phaseErrors = verifyPhaseIdsNotDuplicated(data)
+			const phaseErrors = checkForPhaseErrors(data)
 			dataLinkErrors.push(...phaseErrors)
 			errorCount += phaseErrors.length
 
@@ -136,7 +136,7 @@ function validateDataFiles() {
 
 validateDataFiles()
 
-function verifyPhaseIdsNotDuplicated(plan: VaccinationPlan): string[] {
+function checkForPhaseErrors(plan: VaccinationPlan): string[] {
 	const errors: string[] = []
 	const idSet = new Set<string>()
 	plan?.phases?.forEach((phase) => {
@@ -145,6 +145,9 @@ function verifyPhaseIdsNotDuplicated(plan: VaccinationPlan): string[] {
 		}
 		idSet.add(phase.id)
 	})
+	if (plan.activePhase?.trim() === '') {
+		errors.push('activePhase must not be an empty string')
+	}
 	return errors
 }
 

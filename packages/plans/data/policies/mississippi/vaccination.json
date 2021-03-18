@@ -6,7 +6,9 @@
 		},
 		"eligibility": {
 			"url": "https://msdh.ms.gov/msdhsite/_static/14,22816,420,976.html#eligible",
-			"scrapeQuery": [".msdh"]
+			"scrapeQuery": [
+				".msdh"
+			]
 		},
 		"providers": {
 			"url": "https://msdh.ms.gov/msdhsite/_static/14,0,420,976.html#providerMap",
@@ -77,6 +79,17 @@
 				},
 				{
 					"question": "c19.eligibility.question/age.are"
+				}
+			]
+		},
+		{
+			"id": "2",
+			"label": "2",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.16_up",
+					"moreInfoText": "c19.eligibility.moreinfo/age.16_up.ms.2",
+					"moreInfoUrl": "https://msdh.ms.gov/msdhsite/_static/14,22816,420,976.html"
 				}
 			]
 		}

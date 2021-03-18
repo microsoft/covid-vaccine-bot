@@ -51,13 +51,20 @@
 				},
 				{
 					"question": "c19.eligibility.question/essential_worker",
-					"moreInfoUrl": "https://covid19.ca.gov/essential-workforce/"
+					"moreInfoUrl": "https://covid19.ca.gov/essential-workforce/",
+					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.ca.1b"
 				},
 				{
 					"question": "c19.eligibility.question/age.65_up"
 				},
 				{
-					"question": "c19.eligibility.question/congregate.ca"
+					"question": "c19.eligibility.question/congregate.do",
+					"moreInfoText": "c19.eligibility.moreinfo/congregate.ca.ca.1b"
+				},
+				{
+					"question": "c19.eligibility.question/health",
+					"moreInfoText": "c19.eligibility.moreinfo/health.ca.1b",
+					"moreInfoUrl": "https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/COVID-19/Provider-Bulletin-2-12-21.aspx"
 				}
 			]
 		},

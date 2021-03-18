@@ -15,16 +15,16 @@
 		"deploy": "run-s deploy_localizations deploy_resources"
 	},
 	"devDependencies": {
-		"@azure/storage-blob": "^12.4.1",
+		"@azure/storage-blob": "^12.5.0",
 		"@covid-vax-bot/state-plan-schema": "workspace:packages/schema",
 		"@essex/scripts": "^12.0.2",
 		"@types/config": "^0.0.38",
-		"@types/jsonwebtoken": "^8.5.0",
-		"@types/node": "^14.14.31",
+		"@types/jsonwebtoken": "^8.5.1",
+		"@types/node": "^14.14.35",
 		"ajv": "^7.1.1",
 		"axios": "^0.21.1",
 		"chalk": "^4.1.0",
-		"config": "^3.3.4",
+		"config": "^3.3.6",
 		"csv-parse": "^4.15.3",
 		"csv-stringify": "^5.6.2",
 		"dotenv": "^8.2.0",
@@ -33,7 +33,7 @@
 		"moment": "^2.29.1",
 		"npm-run-all": "^4.1.5",
 		"ts-node": "^9.1.1",
-		"typescript": "^4.1.5",
-		"typescript-json-schema": "^0.49.0"
+		"typescript": "^4.2.3",
+		"typescript-json-schema": "^0.50.0"
 	}
 }
