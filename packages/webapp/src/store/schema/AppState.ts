@@ -21,4 +21,5 @@ export interface AppState {
 	isEditable: boolean
 	pendingChanges: boolean
 	isDataRefreshing: boolean
+	prChanges?: any[]
 }

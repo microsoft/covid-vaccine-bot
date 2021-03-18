@@ -116,7 +116,24 @@ export const repoServices = async (
 				}
 			)
 
-			return await loadIssuesResponse.json()
+			const prList = await loadIssuesResponse.clone().json()
+			const prChangeList: any[] = []
+			prList.forEach(async (item: any) => {
+				const commentResp = await fetch(
+					`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/issues/${item.number}/comments`,
+					{
+						method: 'GET',
+						headers: {
+							Authorization: `token ${state.accessToken}`,
+						},
+					}
+				)
+				const commentsObj = await commentResp.json()
+				const changes = JSON.parse(commentsObj[0].body.substr(1, commentsObj[0].body.length - 2))
+				prChangeList.push({prNumber: item.number, prDescription: item.body, prChanges: changes})
+			});
+
+			return [await loadIssuesResponse.json(), prChangeList]
 
 		case 'getRepoFileData':
 			const dataFolderResp = await fetch(
@@ -268,6 +285,7 @@ export const repoServices = async (
 				const globalUpdates = extraData[0]
 				const locationUpdates = extraData[1]
 				const prFormData = extraData[3]
+				const changeSummary = extraData[4]
 
 				const createBranchResponse = await fetch(
 					`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/git/refs`,
@@ -435,6 +453,34 @@ export const repoServices = async (
 							base: 'main',
 							title: prTitle,
 							body: prFormData.prDetails
+						}),
+					}
+				)
+
+				const prRespClone = await prResp.clone().json()
+
+				await fetch(
+					`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/issues/${prRespClone.number}/labels`,
+					{
+						method: 'POST',
+						headers: {
+							Authorization: `token ${state.accessToken}`,
+						},
+						body: JSON.stringify({
+							labels: ['data-composer-submission', 'requires-data-accuracy-review']
+						}),
+					}
+				)
+
+				await fetch(
+					`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/issues/${prRespClone.number}/comments`,
+					{
+						method: 'POST',
+						headers: {
+							Authorization: `token ${state.accessToken}`,
+						},
+						body: JSON.stringify({
+							body: `\`${JSON.stringify(changeSummary)}\``
 						}),
 					}
 				)

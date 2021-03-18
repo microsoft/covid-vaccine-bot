@@ -12,8 +12,9 @@ import {
 } from 'office-ui-fabric-react'
 import { useState, useEffect, useCallback, useRef } from 'react'
 import { createPR } from '../actions/repoActions'
-
 import { getAppStore } from '../store/store'
+import { getObjDiffs } from '../utils/dataUtils'
+
 
 import './Review.scss'
 
@@ -40,6 +41,7 @@ export default observer(function Review(props: ReviewProp) {
 
 	const [formData, setFormData] = useState<any>({})
 	const fieldChanges = useRef<any>(formData)
+	const changeSummary = useRef<any[]>([])
 
 	const state = getAppStore()
 	useEffect(() => {
@@ -56,7 +58,14 @@ export default observer(function Review(props: ReviewProp) {
 				value: state.globalFileData.customStrings,
 			})
 			tempGlobalUpdates.push(state.globalFileData.customStrings)
+
+			changeSummary.current.push({key: 'global', type: 'customStrings', value: getObjDiffs(JSON.parse(JSON.stringify(
+				state.initGlobalFileData.customStrings
+			)), JSON.parse(JSON.stringify(
+				state.globalFileData.customStrings
+			)))})
 		}
+
 
 		if (
 			JSON.stringify(state.initGlobalFileData.cdcStateNames).toLowerCase() !==
@@ -67,6 +76,12 @@ export default observer(function Review(props: ReviewProp) {
 				value: state.globalFileData.cdcStateNames,
 			})
 			tempGlobalUpdates.push(state.globalFileData.cdcStateNames)
+
+			changeSummary.current.push({key: 'global', type: 'cdcStateNames', value: getObjDiffs(JSON.parse(JSON.stringify(
+				state.initGlobalFileData.cdcStateNames
+			)), JSON.parse(JSON.stringify(
+				state.globalFileData.cdcStateNames
+			)))})
 		}
 
 		if (
@@ -78,6 +93,12 @@ export default observer(function Review(props: ReviewProp) {
 				value: state.globalFileData.cdcStateLinks,
 			})
 			tempGlobalUpdates.push(state.globalFileData.cdcStateLinks)
+
+			changeSummary.current.push({key: 'global', type: 'cdcStateLinks', value: getObjDiffs(JSON.parse(JSON.stringify(
+				state.initGlobalFileData.cdcStateLinks
+			)), JSON.parse(JSON.stringify(
+				state.globalFileData.cdcStateLinks
+			)))})
 		}
 
 		Object.keys(state.repoFileData).forEach((location: any) => {
@@ -103,6 +124,12 @@ export default observer(function Review(props: ReviewProp) {
 							label: `Updated information for ${location}`,
 							value: state.repoFileData[location],
 						})
+
+						changeSummary.current.push({key: location, type: 'info', value: getObjDiffs(JSON.parse(JSON.stringify(
+							state.initRepoFileData[location].info
+						)), JSON.parse(JSON.stringify(
+							state.repoFileData[location].info
+						)))})
 						addChanges = true
 					}
 					if (
@@ -116,6 +143,12 @@ export default observer(function Review(props: ReviewProp) {
 							label: `Updated regions for ${location}`,
 							value: state.repoFileData[location],
 						})
+
+						changeSummary.current.push({key: location, type: 'regions', value: getObjDiffs(JSON.parse(JSON.stringify(
+							state.initRepoFileData[location].regions ?? {}
+						)), JSON.parse(JSON.stringify(
+							state.repoFileData[location].regions
+						)))})
 						addChanges = true
 					}
 					if (
@@ -130,6 +163,12 @@ export default observer(function Review(props: ReviewProp) {
 							label: `Updated phase information for ${location}`,
 							value: state.repoFileData[location],
 						})
+
+						changeSummary.current.push({key: location, type: 'vaccination', value: getObjDiffs(JSON.parse(JSON.stringify(
+							state.initRepoFileData[location].vaccination
+						)), JSON.parse(JSON.stringify(
+							state.repoFileData[location].vaccination
+						)))})
 						addChanges = true
 					}
 					if (
@@ -144,6 +183,12 @@ export default observer(function Review(props: ReviewProp) {
 							label: `Updated strings information for ${location}`,
 							value: state.repoFileData[location],
 						})
+
+						changeSummary.current.push({key: location, type: 'strings', value: getObjDiffs(JSON.parse(JSON.stringify(
+							state.initRepoFileData[location].strings
+						)), JSON.parse(JSON.stringify(
+							state.repoFileData[location].strings
+						)))})
 						addChanges = true
 					}
 					if (addChanges) {
@@ -156,10 +201,12 @@ export default observer(function Review(props: ReviewProp) {
 			}
 		})
 
+		console.log(changeSummary.current)
+
 		setLocationUpdates(tempLocationUpdates)
 		setChangesList(tempChangesList)
 		setGlobalUpdates(tempGlobalUpdates)
-	}, [state.initRepoFileData, state.repoFileData, state.initGlobalFileData, state.globalFileData])
+	}, [state.initRepoFileData, state.repoFileData, state.initGlobalFileData, state.globalFileData, changeSummary])
 
 	const handleTextChange = useCallback(
 		(ev) => {
@@ -188,22 +235,16 @@ export default observer(function Review(props: ReviewProp) {
 				<div className="bodyContent">
 					{!showLoading ? (
 						<section>
-							<DetailsList
-								items={changesList}
-								columns={changesColumns}
-								setKey="set"
-								layoutMode={DetailsListLayoutMode.justified}
-								checkboxVisibility={2}
-							/>
+							
 							<div className="submitContainer">
 								<TextField
-									label="Optional Title:"
+									label="Title (Optional):"
 									name="prTitle"
 									value={formData.prTitle}
 									onChange={handleTextChange}
 								/>
 								<TextField
-									label="Optional Details:"
+									label="Details (Optional):"
 									name="prDetails"
 									multiline={true}
 									rows={5}
@@ -211,15 +252,23 @@ export default observer(function Review(props: ReviewProp) {
 									resizable={false}
 									value={formData.prDetails}
 									onChange={handleTextChange}
+								/>								
+								<DetailsList
+								items={changesList}
+								columns={changesColumns}
+								setKey="set"
+								layoutMode={DetailsListLayoutMode.justified}
+								checkboxVisibility={2}
 								/>
 								<PrimaryButton
 									text="Submit changes"
 									onClick={() => {
 										setShowLoading(true)
-										createPR([globalUpdates, locationUpdates, showDashboard, formData])
+										createPR([globalUpdates, locationUpdates, showDashboard, formData, changeSummary.current])
 									}}
 								/>
 							</div>
+							
 						</section>
 					) : (
 						<section className="loadingContainer">

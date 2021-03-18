@@ -2,9 +2,9 @@
  * Copyright (c) Microsoft. All rights reserved.
  * Licensed under the MIT license. See LICENSE file in the project.
  */
+import statesData from '@covid-vax-bot/plans/dist/policies.json'
 import { BingLocation, resolvePlan } from '..'
 import { Region } from '@covid-vax-bot/plan-schema'
-import statesData from '@covid-vax-bot/plans/dist/policies.json'
 
 describe('The Plan Locator', () => {
 	it('exists', () => {

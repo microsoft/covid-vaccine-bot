@@ -10,11 +10,15 @@
 
 	.submitContainer {
 		margin: 40px 0 10px 0;
-		text-align:center;
+		
 
 		.ms-TextField {
 			text-align: left;
 			margin-bottom: 20px;
+			width: 60%;
+		}
+		.ms-Button{
+			margin-top:20px;
 		}
 	}
 

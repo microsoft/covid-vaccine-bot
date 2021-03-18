@@ -26,7 +26,32 @@
 				padding-right:5px;
 			}
 		}
+
+		.infoButton {
+			color: $ms-color-themePrimary;
+			cursor: pointer;
+		}
 	}
+}
+
+.infoCallout {
+	width: 300px;
+	max-width: 500px;
+}
+
+.infoCalloutBody {
+	height: 100%;
+	padding: 0 20px 10px 20px;
+}
+
+.infoHeader {
+	color: $ms-color-themePrimary;
+	padding: 10px 0;
+	font-weight: 600;
+}
+
+.infoBody {
+	white-space: pre-wrap;
 }
 
 .refreshRow {
