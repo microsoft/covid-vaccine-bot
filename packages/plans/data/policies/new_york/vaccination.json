@@ -10,7 +10,9 @@
 		},
 		"eligibility": {
 			"url": "https://covid19vaccine.health.ny.gov/phased-distribution-vaccine",
-			"scrapeQuery": [".toc-chapters"]
+			"scrapeQuery": [
+				".toc-chapters"
+			]
 		},
 		"scheduling": {
 			"url": "https://am-i-eligible.covid19vaccine.health.ny.gov/",
@@ -38,28 +40,20 @@
 					"question": "c19.eligibility.question/essential_worker.are_you_an"
 				},
 				{
-					"question": "c19.eligibility.question/essential_worker.are"
-				},
-				{
-					"question": "c19.eligibility.question/essential_worker.ff_leo_corrections"
-				},
-				{
 					"question": "c19.eligibility.question/long_term_care_resident.are"
 				},
 				{
 					"question": "c19.eligibility.question/congregate.do"
 				},
 				{
-					"question": "c19.eligibility.question/worker.are_you"
+					"question": "c19.eligibility.question/essential_worker",
+					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.ny.current",
+					"moreInfoUrl": "https://covid19vaccine.health.ny.gov/phased-distribution-vaccine#phase-1a---phase-1b"
 				},
 				{
-					"question": "c19.eligibility.question/worker.are_you_a"
-				},
-				{
-					"question": "c19.eligibility.question/worker.are_you_a_hotel"
-				},
-				{
-					"question": "c19.eligibility.question/essential_worker.are_you_a_transportation"
+					"question": "c19.eligibility.question/health",
+					"moreInfoText": "c19.eligibility.moreinfo/health.ny.current",
+					"moreInfoUrl": "https://covid19vaccine.health.ny.gov/phased-distribution-vaccine#phase-1a---phase-1b"
 				}
 			]
 		}
