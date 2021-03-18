@@ -7,7 +7,7 @@ import * as path from 'path'
 import { createDistDir, DIST_DIR } from '../createDistDir'
 import { DATA_DIR, getFiles } from '../getFiles'
 import { readCsvFile } from '../readCsvFile'
-import { Link, VaccinationPlan } from '@covid-vax-bot/state-plan-schema'
+import { Link, VaccinationPlan } from '@covid-vax-bot/plan-schema'
 const LOCALIZATION_TABLE_PATH = path.join(DIST_DIR, 'localization.csv')
 
 /* eslint-disable-next-line import/order */

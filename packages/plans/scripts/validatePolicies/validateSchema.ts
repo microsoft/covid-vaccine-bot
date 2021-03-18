@@ -4,9 +4,9 @@
  */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import Ajv, { ErrorObject, JSONSchemaType } from 'ajv'
-import { Region, VaccinationPlan } from '@covid-vax-bot/state-plan-schema'
-import regionSchemaJson from '@covid-vax-bot/state-plan-schema/dist/schema/Region.json'
-import planSchemaJson from '@covid-vax-bot/state-plan-schema/dist/schema/VaccinationPlan.json'
+import { Region, VaccinationPlan } from '@covid-vax-bot/plan-schema'
+import regionSchemaJson from '@covid-vax-bot/plan-schema/dist/schema/Region.json'
+import planSchemaJson from '@covid-vax-bot/plan-schema/dist/schema/VaccinationPlan.json'
 
 const ajv = new Ajv()
 const RegionSchema: JSONSchemaType<Region> = regionSchemaJson as any

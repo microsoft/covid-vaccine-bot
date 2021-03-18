@@ -2,7 +2,7 @@
  * Copyright (c) Microsoft. All rights reserved.
  * Licensed under the MIT license. See LICENSE file in the project.
  */
-import { Link, Region, RolloutPhase } from '@covid-vax-bot/state-plan-schema'
+import { Link, Region, RolloutPhase } from '@covid-vax-bot/plan-schema'
 
 interface Section {
 	level: number

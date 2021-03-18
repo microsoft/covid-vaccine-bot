@@ -2,7 +2,7 @@
  * Copyright (c) Microsoft. All rights reserved.
  * Licensed under the MIT license. See LICENSE file in the project.
  */
-import { Link } from '@covid-vax-bot/state-plan-schema'
+import { Link } from '@covid-vax-bot/plan-schema'
 
 export interface PageExtractResult {
 	content: string

@@ -18,7 +18,7 @@ import {
 	Link,
 	RolloutPhase,
 	Qualification,
-} from '@covid-vax-bot/state-plan-schema'
+} from '@covid-vax-bot/plan-schema'
 
 const LOCALIZATION_TABLE_PATH = path.join(DIST_DIR, 'localization.csv')
 

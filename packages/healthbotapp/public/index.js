@@ -3,28 +3,18 @@
  * Licensed under the MIT license. See LICENSE file in the project.
  */
 
-var defaultLocale = 'en-US';
 var params = new URLSearchParams(location.search);
-var locale = params.get("locale") || navigator.language;
+var locale = params.get("locale") || navigator.language || 'en-us';
+var chatBotEndpoint = "/chatbot"// ?locale=" + locale;
+var lat = null;
+var long = null;
 
 function requestChatBot(loc) {
+	lat = loc ? loc.lat : null;
+	long = loc ? loc.long : null;
 	var oReq = new XMLHttpRequest();
 	oReq.addEventListener("load", initBotConversation);
-	var path = "/chatBot?locale=" + locale;
-
-	if (loc) {
-		path += "&lat=" + loc.lat + "&long=" + loc.long;
-	}
-	if (params.has('userId')) {
-		path += "&userId=" + params.get('userId');
-	}
-	if (params.has('userName')) {
-		path += "&userName=" + params.get('userName');
-	}
-	if (params.has('region')) {
-		path += '&region=' + params.get('region');
-	}
-	oReq.open("POST", path);
+	oReq.open("POST", chatBotEndpoint);
 	oReq.send();
 }
 
@@ -59,16 +49,11 @@ function initBotConversation() {
     }
     // extract the data from the JWT
 		var jsonWebToken = this.response;
-    var tokenPayload = JSON.parse(atob(jsonWebToken.split('.')[1]));
-    var lat = tokenPayload.location && tokenPayload.location.lat ? tokenPayload.location.lat : null;
-    var long = tokenPayload.location && tokenPayload.location.long ? tokenPayload.location.long : null;
-    var user = {
-			id: tokenPayload.userId,
-			name: tokenPayload.userName,
-			locale: tokenPayload.locale
-    };
+		var tokenPayload = JSON.parse(atob(jsonWebToken.split('.')[1]));
     var domain = undefined;
 		var preamble = 'bing'
+		var channel = (params.get('channel') || 'webchat').toLowerCase();
+
 		if (params.has('preamble')) {
 			preamble = params.get('preamble')
 		}
@@ -82,11 +67,15 @@ function initBotConversation() {
     var styleOptions = {
 			// botAvatarImage: "https://docs.microsoft.com/en-us/azure/bot-service/v4sdk/media/logo_bot.svg?view=azure-bot-service-4.0",
 			// userAvatarImage: '',
-			hideSendBox: true,
+			/* 
+			* Hide the sendbox for web based chats.
+			* Show the sendbox when testing the SMS channel.
+			*/
+			hideSendBox: channel === 'webchat',
 			botAvatarInitials: 'MITRE',
 			userAvatarInitials: 'You',
 			backgroundColor: '#F8F8F8'
-    };
+		};
 
     var store = window.WebChat.createStore({}, function(store) { return function(next) { return function(action) {
         if (action.type === 'DIRECT_LINE/CONNECT_FULFILLED') {
@@ -97,7 +86,7 @@ function initBotConversation() {
 							activity: {
 								type: "invoke",
 								name: "InitConversation",
-								locale: user.locale,
+								locale: locale,
 								value: {
 									// must use for authenticated conversation.
 									jsonWebToken: jsonWebToken,
@@ -106,9 +95,10 @@ function initBotConversation() {
 									triggeredScenario: {
 										trigger: "c19_entry",
 										args: {
-												preamble,
+												preamble: preamble,
 												countryRegion: params.get("countryRegion") || null,
 												adminDistrict: params.get("adminDistrict") || null,
+												channel: channel,
 												lat: lat,
 												long: long
 										}
@@ -132,17 +122,17 @@ function initBotConversation() {
         return next(action);
     }}});
 
-    startChat(user, {
+    startChat({
 			directLine: botConnection,
 			styleOptions: styleOptions,
 			store: store,
-			userID: user.id,
-			username: user.name,
-			locale: user.locale
+			userID: tokenPayload.userId,
+			username: tokenPayload.userName,
+			locale: locale
 	});
 }
 
-function startChat(user, webchatOptions) {
+function startChat(webchatOptions) {
     var botContainer = document.getElementById('webchat');
     window.WebChat.renderWebChat(webchatOptions, botContainer);
 }

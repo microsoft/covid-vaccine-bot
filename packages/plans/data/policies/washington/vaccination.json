@@ -24,7 +24,7 @@
 			"description": "c19.link/scheduling.phone.description.wa"
 		}
 	},
-	"activePhase": "1b_tier1",
+	"activePhase": "1b_tier_2",
 	"phases": [
 		{
 			"id": "1a",
@@ -118,6 +118,36 @@
 				},
 				{
 					"question": "c19.eligibility.question/multigen.wa"
+				}
+			]
+		},
+		{
+			"id": "1b_tier_2",
+			"label": "1b Tier 2",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/healthcare_worker"
+				},
+				{
+					"question": "c19.eligibility.question/age.65_up"
+				},
+				{
+					"question": "c19.eligibility.question/multigenerational.are"
+				},
+				{
+					"question": "c19.eligibility.question/long_term_care_resident.are"
+				},
+				{
+					"question": "c19.eligibility.question/essential_worker",
+					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.wa.1b_tier_2"
+				},
+				{
+					"question": "c19.eligibility.question/health",
+					"moreInfoText": "c19.eligibility.moreinfo/health.wa.1b_tier_2",
+					"moreInfoUrl": "https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html"
+				},
+				{
+					"question": "c19.eligibility.question/health.are_you_currently"
 				}
 			]
 		}
