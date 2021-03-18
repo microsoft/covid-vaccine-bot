@@ -253,6 +253,13 @@ export default observer(function Review(props: ReviewProp) {
 									value={formData.prDetails}
 									onChange={handleTextChange}
 								/>								
+								<DetailsList
+								items={changesList}
+								columns={changesColumns}
+								setKey="set"
+								layoutMode={DetailsListLayoutMode.justified}
+								checkboxVisibility={2}
+								/>
 								<PrimaryButton
 									text="Submit changes"
 									onClick={() => {
@@ -261,13 +268,7 @@ export default observer(function Review(props: ReviewProp) {
 									}}
 								/>
 							</div>
-							<DetailsList
-								items={changesList}
-								columns={changesColumns}
-								setKey="set"
-								layoutMode={DetailsListLayoutMode.justified}
-								checkboxVisibility={2}
-								/>
+							
 						</section>
 					) : (
 						<section className="loadingContainer">
