@@ -53,7 +53,7 @@
 					"moreInfoUrl": "https://www.coronavirus.in.gov/vaccine/index.htm"
 				},
 				{
-					"question": "c19.eligibility.question/long_term_care_resident"
+					"question": "c19.eligibility.question/long_term_care_resident.are"
 				},
 				{
 					"question": "c19.eligibility.question/essential_worker.are",
@@ -65,12 +65,16 @@
 					"moreInfoText": "c19.eligibility.moreinfo/exposure_to_infectious_material.do.in.1b"
 				},
 				{
-					"question": "c19.eligibility.question/age.are"
+					"question": "c19.eligibility.question/age.are_you_age_45"
 				},
 				{
 					"question": "c19.eligibility.question/health",
 					"moreInfoText": "c19.eligibility.moreinfo/health.in.1b",
 					"moreInfoUrl": "https://www.coronavirus.in.gov/vaccine/index.htm"
+				},
+				{
+					"question": "c19.eligibility.question/essential_worker.are_you",
+					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.are_you.in.1b"
 				}
 			]
 		}
