@@ -12,9 +12,9 @@ import {
 } from 'office-ui-fabric-react'
 import { useState, useEffect, useCallback, useRef } from 'react'
 import { createPR } from '../actions/repoActions'
+import { getAppStore } from '../store/store'
 import { getObjDiffs } from '../utils/dataUtils'
 
-import { getAppStore } from '../store/store'
 
 import './Review.scss'
 

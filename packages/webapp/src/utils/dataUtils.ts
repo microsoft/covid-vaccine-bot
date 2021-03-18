@@ -103,7 +103,7 @@ export const getObjDiffs = (obj1: any, obj2: any) => {
         return obj1;
     }
 
-    let diffs: any = {};
+    const diffs: any = {};
     let key;
 
     /**
@@ -112,7 +112,7 @@ export const getObjDiffs = (obj1: any, obj2: any) => {
      * @param  {Array}   arr2 The second array
      * @return {Boolean}      If true, both arrays are equal
      */
-    let arraysMatch = function (arr1: any, arr2: any) {
+    const arraysMatch = function (arr1: any, arr2: any) {
 
         // Check if the arrays are the same length
         if (arr1.length !== arr2.length) return false;
@@ -133,10 +133,10 @@ export const getObjDiffs = (obj1: any, obj2: any) => {
      * @param  {*}      item2 The second item
      * @param  {String} key   The key in our object
      */
-    let compare = function (item1: any, item2: any, key: string) {
+    const compare = function (item1: any, item2: any, key: string) {
         // Get the object type
-        let type1 = Object.prototype.toString.call(item1);
-        let type2 = Object.prototype.toString.call(item2);
+        const type1 = Object.prototype.toString.call(item1);
+        const type2 = Object.prototype.toString.call(item2);
 
         // If type2 is undefined it has been removed
         if (type2 === '[object Undefined]') {
@@ -152,7 +152,7 @@ export const getObjDiffs = (obj1: any, obj2: any) => {
 
         // If an object, compare recursively
         if (type1 === '[object Object]') {
-            let objDiff = getObjDiffs(item1, item2);
+            const objDiff = getObjDiffs(item1, item2);
             if (Object.keys(objDiff).length > 0) {
                 diffs[key] = objDiff;
             }
