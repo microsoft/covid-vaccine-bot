@@ -2309,14 +2309,6 @@ The list is subject to change as additional scientific evidence is published and
 * Are you a long term care resident or work in a long term care facility?
 * Are you age 65+?
 * Are you classified as an essential worker? (see [here](https://covid19.ncdhhs.gov/vaccines/find-your-spot-take-your-shot/deeper-dive-group-3))
-* Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?
-	* This population includes anyone who is living in congregate or close group living settings who is not already vaccinated due to age, medical condition or job function, including:
-
-People experiencing homelessness or living in a homeless shelter
-Correctional facility, such as jail or prison
-
-* Are you age 16+, and have a high-risk medical condition?
-	* Anyone 16-64 years old with high-risk medical conditions that increase risk of severe disease from COVID-19 such as cancer, COPD, serious heart conditions, sickle cell disease, Type 2 diabetes, among others, regardless of living situation (see [here](https://covid19.ncdhhs.gov/vaccines/find-your-spot-take-your-shot/deeper-dive-group-4))
 
 # North Dakota
 
