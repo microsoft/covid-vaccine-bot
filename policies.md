@@ -404,14 +404,45 @@ OR If as a result of a developmental or other severe high-risk disability one or
 | scheduling_phone | [Scheduling Hotline](tel:) |
 
 
-## Delaware Active Phase (1b)
+## Delaware Active Phase (1c)
 
 * Are you a healthcare worker?
-	* This includes health care personnel with direct patient contact and care and Emergency Medical Services agencies
 * Are you a long term care resident or work in a long term care facility?
-* Are you a first responder?
-	* This includes police, fire, teachers, childcare providers, food processing workers, correctional officers, and postal service, public transit and grocery workers 
-* Are you age 65+?
+* Are you classified as an essential worker?
+	* Frontline essential and other essential workers including educators or school staff, child care worker, first responders, food service, construction, transportation (those with greatest risk based on inability to work from home, frequency of contact with public, age and underlying health factors will be eligible sooner)
+* Are you age 16+, and have a high-risk medical condition?
+	* This includes 
+High risk:
+Cancer
+Chronic Kidney Disease
+COPD (Chronic Obstructive Pulmonary Disease)
+Diabetes Mellitus
+Down Syndrome
+Serious Heart Conditions, such as heart failure, coronary artery disease, or cardiomyopathies
+Immunocompromised state (weak immune system) from solid organ transplant
+Obesity (body mass index of 30 kg/m or higher)
+Sickle Cell Disease
+Current or Former Cigarette Smoker
+Intellectual or Developmental Disability
+Severe and Persistent Mental/Behavioral Health Condition
+Pregnancy
+
+Moderate risk:
+Asthma (moderate-to-severe)
+Cerebrovascular disease (affects blood vessels and blood supply to the brain)
+Cystic fibrosis
+Hypertension or high blood pressure
+Immunocompromised state (weakened immune system) from blood or bone marrow transplant, immune deficiencies, HIV, use of corticosteroids, or use of other immune weakening medicines
+Neurologic conditions, such as dementia
+Liver disease
+Overweight (BMI > 25 kg/m2, but < 30 kg/m2)
+Pulmonary fibrosis (having damaged or scarred lung tissues)
+
+Family caregivers of those with high/moderate-risk conditions may also be eligible at the discretion of medical provider based on clinical judgement
+* Are you age 50+?
+	* Those who are age 50-64 can get the vaccine at pharmacies only. Those 65+ are eligible at any vaccination location.
+* Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?
+	* This includes correctional facilities, homeless shelters, and group homes
 
 # District of Columbia
 
