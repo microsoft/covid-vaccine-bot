@@ -199,6 +199,10 @@ body > header > h1 {
   text-decoration: none;
 }
 
+.webchat__initialsAvatar__initials {
+  font-size: 9pt;
+}
+
 .ac-container.ac-selectable {
   cursor: pointer;
 }
