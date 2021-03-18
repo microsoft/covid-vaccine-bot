@@ -21,6 +21,7 @@ c19.locate/select_location,"I found multiple matching locations. Please select t
 c19.locate/reenter_location_option,"Re-enter location",,,,,,,,,,,,,,
 c19.locate/location_outside_region_scope,"$LOCATION falls outside of $REGION.",,,,,,,,,,,,,,
 c19.locate/api_error,"Oops. Something went wrong.",,,,,,,,,,,,,,
+c19.locate/empty_maps_results,"Unfortunately, I was unable to locate information for $LOCATION.",,,,,,,,,,,,,,
 c19.locate/location_entry_submit_button,"Submit",,,,,,,,,,,,,,
 c19.moreinfo/lookup,"Let me see if I can find more details on the question: $QUESTION",,,,,,,,,,,,,,
 c19.moreinfo/no_info_available,"Unfortunately, I don't have any more details on that yet. Try checking your state's COVID-19 info site at $INFO_LINK",,,,,,,,,,,,,,
