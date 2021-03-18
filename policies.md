@@ -2257,14 +2257,39 @@ corticosteroids or use of other immune-weakening medicines
 * Are you age 60+?
 * Are you a healthcare worker?
 * Are you an educator or child care provider?
-* Are you a first responder?
-* Are you a firefighter, law enforcement officer, or corrections staff?
 * Are you a long term care resident or work in a long term care facility?
 * Do you work or live in a congregate setting?
-* Are you a grocery store worker?
-* Are you a restaurant or delivery worker?
-* Are you a hotel worker?
-* Are you a transportation worker?
+* Are you classified as an essential worker?
+	* This includes:
+✓ Public Transit Workers
+✓ Grocery Store Workers
+✓ Hotel Workers
+✓ First Responders & Corrections Workers
+✓ Restaurant Workers & Restaurant Delivery Workers
+✓ For-Hire Vehicle Drivers
+✓ In-Person College Faculty & Essential Staff
+✓ Public-Facing Government/Public Employees
+✓ Public-Facing Not-For-Profit Workers
+✓ Essential In-Person Building Service Workers (see [here](https://covid19vaccine.health.ny.gov/phased-distribution-vaccine#phase-1a---phase-1b))
+* Are you age 16+, and have a high-risk medical condition?
+	* New Yorkers age 16 and older with the following conditions qualify for the vaccine:
+
+Cancer (current or in remission, including 9/11-related cancers)
+Chronic kidney disease
+Pulmonary Disease, including but not limited to, COPD (chronic obstructive pulmonary disease), asthma (moderate-to-severe), pulmonary fibrosis, cystic fibrosis, and 9/11 related pulmonary diseases
+Intellectual and Developmental Disabilities including Down Syndrome
+Heart conditions, including but not limited to heart failure, coronary artery disease, cardiomyopathies, or hypertension (high blood pressure)
+Immunocompromised state (weakened immune system) including but not limited to solid organ transplant or from blood or bone marrow transplant, immune deficiencies, HIV, use of corticosteroids, use of other immune weakening medicines, or other causes
+Severe Obesity (BMI 40 kg/m2), Obesity (body mass index [BMI] of 30 kg/m2 or higher but < 40 kg/m2)
+Pregnancy
+Sickle cell disease or Thalassemia
+Type 1 or 2 diabetes mellitus 
+Cerebrovascular disease (affects blood vessels and blood supply to the brain)
+Neurologic conditions including but not limited to Alzheimer's Disease or dementia
+Liver disease
+The list is subject to change as additional scientific evidence is published and as New York State obtains and analyzes additional state-specific data.
+
+ (see [here](https://covid19vaccine.health.ny.gov/phased-distribution-vaccine#phase-1a---phase-1b))
 
 # North Carolina
 
@@ -2284,6 +2309,14 @@ corticosteroids or use of other immune-weakening medicines
 * Are you a long term care resident or work in a long term care facility?
 * Are you age 65+?
 * Are you classified as an essential worker? (see [here](https://covid19.ncdhhs.gov/vaccines/find-your-spot-take-your-shot/deeper-dive-group-3))
+* Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?
+	* This population includes anyone who is living in congregate or close group living settings who is not already vaccinated due to age, medical condition or job function, including:
+
+People experiencing homelessness or living in a homeless shelter
+Correctional facility, such as jail or prison
+
+* Are you age 16+, and have a high-risk medical condition?
+	* Anyone 16-64 years old with high-risk medical conditions that increase risk of severe disease from COVID-19 such as cancer, COPD, serious heart conditions, sickle cell disease, Type 2 diabetes, among others, regardless of living situation (see [here](https://covid19.ncdhhs.gov/vaccines/find-your-spot-take-your-shot/deeper-dive-group-4))
 
 # North Dakota
 
