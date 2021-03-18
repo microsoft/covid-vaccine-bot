@@ -1,5 +1,5 @@
 {
-	"name": "@covid-vax-bot/policy-locator",
+	"name": "@covid-vax-bot/plan-locator",
 	"version": "0.0.1",
 	"private": true,
 	"main": "src/index.ts",

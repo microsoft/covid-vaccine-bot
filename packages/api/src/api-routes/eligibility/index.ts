@@ -4,11 +4,28 @@
  */
 import { Request, Response } from 'express'
 import { Operation } from 'express-openapi'
+import { Locator } from '../../components/Locator'
+import { resolvePlan } from '@covid-vax-bot/plan-locator'
+import regions from '@covid-vax-bot/plans/dist/policies.json'
 
+const locator = new Locator()
 export const GET: Operation = [
-	(req: Request, res: Response) => {
-		console.log('Get Eligibility', req.query.lat, req.query.long)
-		res.json({ test: 'hello world GET response' })
+	async (req: Request, res: Response) => {
+		const lat = (req.query.lat as any) as number
+		const long = (req.query.long as any) as number
+		const address = await locator.getLocationInformation(lat, long)
+		const response = resolvePlan(
+			{
+				adminDistrict: address.countrySubdivision,
+				adminDistrict2: address.countrySecondarySubdivision,
+				countryRegion: address.countryCode,
+				locality: address.municipality,
+				formattedAddress: address.freeformAddress,
+				postalCode: address.postalCode,
+			},
+			regions as any
+		)
+		res.json(response)
 	},
 ]
 GET.apiDoc = {
