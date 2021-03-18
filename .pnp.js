@@ -35,11 +35,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:packages/locator"
       },
       {
-        "name": "@covid-vax-bot/state-plans",
+        "name": "@covid-vax-bot/plans",
         "reference": "workspace:packages/plans"
       },
       {
-        "name": "@covid-vax-bot/state-plan-schema",
+        "name": "@covid-vax-bot/plan-schema",
         "reference": "workspace:packages/schema"
       },
       {
@@ -57,10 +57,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ["@covid-vax-bot/api", ["workspace:packages/api"]],
       ["@covid-vax-bot/data-portal", ["workspace:packages/webapp"]],
       ["@covid-vax-bot/healthbot-app", ["workspace:packages/healthbotapp"]],
+      ["@covid-vax-bot/plan-schema", ["workspace:packages/schema"]],
+      ["@covid-vax-bot/plans", ["workspace:packages/plans"]],
       ["@covid-vax-bot/policy-locator", ["workspace:packages/locator"]],
       ["@covid-vax-bot/source-scraper", ["workspace:packages/scraper"]],
-      ["@covid-vax-bot/state-plan-schema", ["workspace:packages/schema"]],
-      ["@covid-vax-bot/state-plans", ["workspace:packages/plans"]],
       ["ms-covid-bot", ["workspace:."]]
     ],
     "fallbackPool": [
@@ -4541,6 +4541,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/api/",
           "packageDependencies": [
             ["@covid-vax-bot/api", "workspace:packages/api"],
+            ["@covid-vax-bot/plan-schema", "workspace:packages/schema"],
+            ["@covid-vax-bot/plans", "workspace:packages/plans"],
             ["@tsconfig/node14", "npm:1.0.0"],
             ["@types/body-parser", "npm:1.19.0"],
             ["@types/cors", "npm:2.8.10"],
@@ -4552,7 +4554,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["express-openapi", "npm:7.5.0"],
             ["nodemon", "npm:2.0.7"],
             ["openapi-types", "npm:7.2.3"],
-            ["ts-node", "virtual:fb6087411169c0acccd3a060948afdb2a98f0b0362be45bc247c14f8265510dd9b0faab93f17b8f1aa20667940e14a7f0b485623c267b48f74a508a102c60b0d#npm:9.1.1"],
+            ["ts-node", "virtual:f37703c95ab859815e9119a2e3ca6bab49c50b4a26a9fbfa7e47c06cdbe7398b822c114e558e7b2c0a0b2a5991aedb7288f4319bcfc9b66feda7b2f84e7d106d#npm:9.1.1"],
             ["typescript", "patch:typescript@npm%3A4.2.3#builtin<compat/typescript>::version=4.2.3&hash=a45b0e"]
           ],
           "linkType": "SOFT",
@@ -4563,7 +4565,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/webapp/",
           "packageDependencies": [
             ["@covid-vax-bot/data-portal", "workspace:packages/webapp"],
-            ["@covid-vax-bot/state-plan-schema", "workspace:packages/schema"],
+            ["@covid-vax-bot/plan-schema", "workspace:packages/schema"],
             ["@fluentui/react", "virtual:e6c1b5daae5e8ccf3df7b139ce564cb8182744026a2afe18b1f1344b3a16751fcb5766cc6d853f830e1b4e8af99f8651156df30eb774535cab3b155e18c5e599#npm:7.164.1"],
             ["@testing-library/jest-dom", "npm:5.11.9"],
             ["@testing-library/react", "virtual:e6c1b5daae5e8ccf3df7b139ce564cb8182744026a2afe18b1f1344b3a16751fcb5766cc6d853f830e1b4e8af99f8651156df30eb774535cab3b155e18c5e599#npm:11.2.5"],
@@ -4615,8 +4617,52 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["npm-run-all", "npm:4.1.5"],
             ["rimraf", "npm:3.0.2"],
             ["shx", "npm:0.3.3"],
-            ["ts-node", "virtual:fb6087411169c0acccd3a060948afdb2a98f0b0362be45bc247c14f8265510dd9b0faab93f17b8f1aa20667940e14a7f0b485623c267b48f74a508a102c60b0d#npm:9.1.1"],
+            ["ts-node", "virtual:f37703c95ab859815e9119a2e3ca6bab49c50b4a26a9fbfa7e47c06cdbe7398b822c114e558e7b2c0a0b2a5991aedb7288f4319bcfc9b66feda7b2f84e7d106d#npm:9.1.1"],
             ["typescript", "patch:typescript@npm%3A4.2.3#builtin<compat/typescript>::version=4.2.3&hash=a45b0e"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
+      ["@covid-vax-bot/plan-schema", [
+        ["workspace:packages/schema", {
+          "packageLocation": "./packages/schema/",
+          "packageDependencies": [
+            ["@covid-vax-bot/plan-schema", "workspace:packages/schema"],
+            ["@essex/scripts", "virtual:60853e3ec114b18e51ada69bf7f7262fad510a1e30b0986acd76239812ac4168db7c91e526b4a5675f1b268a6c00bac056c55159fb9bbbd0ac7afdf773825fda#npm:12.0.2"],
+            ["@types/node", "npm:14.14.35"],
+            ["npm-run-all", "npm:4.1.5"],
+            ["ts-node", "virtual:f37703c95ab859815e9119a2e3ca6bab49c50b4a26a9fbfa7e47c06cdbe7398b822c114e558e7b2c0a0b2a5991aedb7288f4319bcfc9b66feda7b2f84e7d106d#npm:9.1.1"],
+            ["typescript", "patch:typescript@npm%3A4.2.3#builtin<compat/typescript>::version=4.2.3&hash=a45b0e"],
+            ["typescript-json-schema", "npm:0.50.0"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
+      ["@covid-vax-bot/plans", [
+        ["workspace:packages/plans", {
+          "packageLocation": "./packages/plans/",
+          "packageDependencies": [
+            ["@covid-vax-bot/plans", "workspace:packages/plans"],
+            ["@azure/storage-blob", "npm:12.5.0"],
+            ["@covid-vax-bot/plan-schema", "workspace:packages/schema"],
+            ["@essex/scripts", "virtual:60853e3ec114b18e51ada69bf7f7262fad510a1e30b0986acd76239812ac4168db7c91e526b4a5675f1b268a6c00bac056c55159fb9bbbd0ac7afdf773825fda#npm:12.0.2"],
+            ["@types/config", "npm:0.0.38"],
+            ["@types/jsonwebtoken", "npm:8.5.1"],
+            ["@types/node", "npm:14.14.35"],
+            ["ajv", "npm:7.2.1"],
+            ["axios", "npm:0.21.1"],
+            ["chalk", "npm:4.1.0"],
+            ["config", "npm:3.3.6"],
+            ["csv-parse", "npm:4.15.3"],
+            ["csv-stringify", "npm:5.6.2"],
+            ["dotenv", "npm:8.2.0"],
+            ["form-data", "npm:3.0.1"],
+            ["jsonwebtoken", "npm:8.5.1"],
+            ["moment", "npm:2.29.1"],
+            ["npm-run-all", "npm:4.1.5"],
+            ["ts-node", "virtual:f37703c95ab859815e9119a2e3ca6bab49c50b4a26a9fbfa7e47c06cdbe7398b822c114e558e7b2c0a0b2a5991aedb7288f4319bcfc9b66feda7b2f84e7d106d#npm:9.1.1"],
+            ["typescript", "patch:typescript@npm%3A4.2.3#builtin<compat/typescript>::version=4.2.3&hash=a45b0e"],
+            ["typescript-json-schema", "npm:0.50.0"]
           ],
           "linkType": "SOFT",
         }]
@@ -4626,8 +4672,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/locator/",
           "packageDependencies": [
             ["@covid-vax-bot/policy-locator", "workspace:packages/locator"],
-            ["@covid-vax-bot/state-plan-schema", "workspace:packages/schema"],
-            ["@covid-vax-bot/state-plans", "workspace:packages/plans"],
+            ["@covid-vax-bot/plan-schema", "workspace:packages/schema"],
+            ["@covid-vax-bot/plans", "workspace:packages/plans"],
             ["@essex/scripts", "virtual:83e8798ed0e1e5b058a74b60d64a1840966b494d61baade5485dfff0d54afb4f7ad885871e6a48769485d8f285792dd7e633de305ed9a119ad455ed08630129f#npm:12.0.2"],
             ["@rollup/plugin-commonjs", "virtual:83e8798ed0e1e5b058a74b60d64a1840966b494d61baade5485dfff0d54afb4f7ad885871e6a48769485d8f285792dd7e633de305ed9a119ad455ed08630129f#npm:17.1.0"],
             ["@rollup/plugin-node-resolve", "virtual:83e8798ed0e1e5b058a74b60d64a1840966b494d61baade5485dfff0d54afb4f7ad885871e6a48769485d8f285792dd7e633de305ed9a119ad455ed08630129f#npm:11.2.0"],
@@ -4646,9 +4692,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/scraper/",
           "packageDependencies": [
             ["@covid-vax-bot/source-scraper", "workspace:packages/scraper"],
-            ["@covid-vax-bot/state-plan-schema", "workspace:packages/schema"],
-            ["@covid-vax-bot/state-plans", "workspace:packages/plans"],
-            ["@essex/scripts", "virtual:4ba239f8ca1280cfb9a050add4f331c8a31f59443b0bff56561f0dd8770e186b0b5f93e7f82cb4018d8355a6243d91b88868ffcedf391635a3b3fcdbcf3c42e7#npm:12.0.2"],
+            ["@covid-vax-bot/plan-schema", "workspace:packages/schema"],
+            ["@covid-vax-bot/plans", "workspace:packages/plans"],
+            ["@essex/scripts", "virtual:60853e3ec114b18e51ada69bf7f7262fad510a1e30b0986acd76239812ac4168db7c91e526b4a5675f1b268a6c00bac056c55159fb9bbbd0ac7afdf773825fda#npm:12.0.2"],
             ["@types/atob", "npm:2.1.2"],
             ["@types/node", "npm:14.14.35"],
             ["@types/node-fetch", "npm:2.5.8"],
@@ -4661,50 +4707,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["queue", "npm:6.0.2"],
             ["ssri", "npm:8.0.1"],
             ["ts-node", "virtual:18b31d5783d7fdd7d687c0410cfba7cdf711fa7661ebc1d81bccf6048c0077586ed2bfc37fb615f2641fea7640834ff86a62e26bb7a2b44217dd8f9b69bd01f9#npm:9.1.1"]
-          ],
-          "linkType": "SOFT",
-        }]
-      ]],
-      ["@covid-vax-bot/state-plan-schema", [
-        ["workspace:packages/schema", {
-          "packageLocation": "./packages/schema/",
-          "packageDependencies": [
-            ["@covid-vax-bot/state-plan-schema", "workspace:packages/schema"],
-            ["@essex/scripts", "virtual:4ba239f8ca1280cfb9a050add4f331c8a31f59443b0bff56561f0dd8770e186b0b5f93e7f82cb4018d8355a6243d91b88868ffcedf391635a3b3fcdbcf3c42e7#npm:12.0.2"],
-            ["@types/node", "npm:14.14.35"],
-            ["npm-run-all", "npm:4.1.5"],
-            ["ts-node", "virtual:fb6087411169c0acccd3a060948afdb2a98f0b0362be45bc247c14f8265510dd9b0faab93f17b8f1aa20667940e14a7f0b485623c267b48f74a508a102c60b0d#npm:9.1.1"],
-            ["typescript", "patch:typescript@npm%3A4.2.3#builtin<compat/typescript>::version=4.2.3&hash=a45b0e"],
-            ["typescript-json-schema", "npm:0.50.0"]
-          ],
-          "linkType": "SOFT",
-        }]
-      ]],
-      ["@covid-vax-bot/state-plans", [
-        ["workspace:packages/plans", {
-          "packageLocation": "./packages/plans/",
-          "packageDependencies": [
-            ["@covid-vax-bot/state-plans", "workspace:packages/plans"],
-            ["@azure/storage-blob", "npm:12.5.0"],
-            ["@covid-vax-bot/state-plan-schema", "workspace:packages/schema"],
-            ["@essex/scripts", "virtual:4ba239f8ca1280cfb9a050add4f331c8a31f59443b0bff56561f0dd8770e186b0b5f93e7f82cb4018d8355a6243d91b88868ffcedf391635a3b3fcdbcf3c42e7#npm:12.0.2"],
-            ["@types/config", "npm:0.0.38"],
-            ["@types/jsonwebtoken", "npm:8.5.1"],
-            ["@types/node", "npm:14.14.35"],
-            ["ajv", "npm:7.2.1"],
-            ["axios", "npm:0.21.1"],
-            ["chalk", "npm:4.1.0"],
-            ["config", "npm:3.3.6"],
-            ["csv-parse", "npm:4.15.3"],
-            ["csv-stringify", "npm:5.6.2"],
-            ["dotenv", "npm:8.2.0"],
-            ["form-data", "npm:3.0.1"],
-            ["jsonwebtoken", "npm:8.5.1"],
-            ["moment", "npm:2.29.1"],
-            ["npm-run-all", "npm:4.1.5"],
-            ["ts-node", "virtual:fb6087411169c0acccd3a060948afdb2a98f0b0362be45bc247c14f8265510dd9b0faab93f17b8f1aa20667940e14a7f0b485623c267b48f74a508a102c60b0d#npm:9.1.1"],
-            ["typescript", "patch:typescript@npm%3A4.2.3#builtin<compat/typescript>::version=4.2.3&hash=a45b0e"],
-            ["typescript-json-schema", "npm:0.50.0"]
           ],
           "linkType": "SOFT",
         }]
@@ -5077,10 +5079,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:54f51b18db3aca7b033009fd882c2051cefcbcf313e3ea40506cf3457e7a5e88c8e53f5a87e8ef7f1d4e497af4a6b11537d9c00434f5d08bcf82d96fd4f73d12#npm:10.0.5", {
-          "packageLocation": "./.yarn/$$virtual/@essex-build-step-lint-staged-virtual-f116f5dffb/0/cache/@essex-build-step-lint-staged-npm-10.0.5-8bdb2154bc-dcdf45f23b.zip/node_modules/@essex/build-step-lint-staged/",
+        ["virtual:40182200dcb013a6e13882eb002c72143dd4ac9460138974f2377d0021a653fbc9ed9c2b303fb76364d06d69077b070af34dd360c93cd89c6614e3408781527f#npm:10.0.5", {
+          "packageLocation": "./.yarn/$$virtual/@essex-build-step-lint-staged-virtual-29b1eeb5c1/0/cache/@essex-build-step-lint-staged-npm-10.0.5-8bdb2154bc-dcdf45f23b.zip/node_modules/@essex/build-step-lint-staged/",
           "packageDependencies": [
-            ["@essex/build-step-lint-staged", "virtual:54f51b18db3aca7b033009fd882c2051cefcbcf313e3ea40506cf3457e7a5e88c8e53f5a87e8ef7f1d4e497af4a6b11537d9c00434f5d08bcf82d96fd4f73d12#npm:10.0.5"],
+            ["@essex/build-step-lint-staged", "virtual:40182200dcb013a6e13882eb002c72143dd4ac9460138974f2377d0021a653fbc9ed9c2b303fb76364d06d69077b070af34dd360c93cd89c6614e3408781527f#npm:10.0.5"],
             ["@essex/build-utils", "npm:10.0.5"],
             ["@essex/shellrunner", "npm:10.0.5"],
             ["@types/lint-staged", null],
@@ -5386,10 +5388,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:54f51b18db3aca7b033009fd882c2051cefcbcf313e3ea40506cf3457e7a5e88c8e53f5a87e8ef7f1d4e497af4a6b11537d9c00434f5d08bcf82d96fd4f73d12#npm:10.0.4", {
-          "packageLocation": "./.yarn/$$virtual/@essex-eslint-plugin-virtual-7538ee2fc8/0/cache/@essex-eslint-plugin-npm-10.0.4-7a1519a74f-9500b4fc94.zip/node_modules/@essex/eslint-plugin/",
+        ["virtual:40182200dcb013a6e13882eb002c72143dd4ac9460138974f2377d0021a653fbc9ed9c2b303fb76364d06d69077b070af34dd360c93cd89c6614e3408781527f#npm:10.0.4", {
+          "packageLocation": "./.yarn/$$virtual/@essex-eslint-plugin-virtual-12987ffe2d/0/cache/@essex-eslint-plugin-npm-10.0.4-7a1519a74f-9500b4fc94.zip/node_modules/@essex/eslint-plugin/",
           "packageDependencies": [
-            ["@essex/eslint-plugin", "virtual:54f51b18db3aca7b033009fd882c2051cefcbcf313e3ea40506cf3457e7a5e88c8e53f5a87e8ef7f1d4e497af4a6b11537d9c00434f5d08bcf82d96fd4f73d12#npm:10.0.4"],
+            ["@essex/eslint-plugin", "virtual:40182200dcb013a6e13882eb002c72143dd4ac9460138974f2377d0021a653fbc9ed9c2b303fb76364d06d69077b070af34dd360c93cd89c6614e3408781527f#npm:10.0.4"],
             ["@babel/core", "npm:7.13.10"],
             ["@babel/types", "npm:7.13.0"],
             ["@types/eslint-import-resolver-node", null],
@@ -5404,7 +5406,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-import-resolver-node", null],
             ["eslint-plugin-header", "virtual:c77376b364bbd6ccf86418089bab4dc597688e30d62b69b19876926358a19d5bf7a642a5fb000413c6e856a692bd77b262fcd55310c78cfbc2814333babe66e4#npm:3.1.1"],
             ["eslint-plugin-import", "virtual:c77376b364bbd6ccf86418089bab4dc597688e30d62b69b19876926358a19d5bf7a642a5fb000413c6e856a692bd77b262fcd55310c78cfbc2814333babe66e4#npm:2.22.1"],
-            ["eslint-plugin-jest", "virtual:7538ee2fc8b9d6c8b014ebd0caffc9921416c443d15aa4b87a4a4cc6e3cdc50ab55aa812474b72c933c95b30125dabab00a000f7cac796ccb282e93b2a6c3e4e#npm:24.3.2"],
+            ["eslint-plugin-jest", "virtual:12987ffe2d761ea6ce542ad0896865cab9a72966b6c2ca914a6795ecb55bc64185cd5fd99ab0813d4dc4bf909b687482a47f16ca4a68e646d5888fa7c5d08478#npm:24.3.2"],
             ["eslint-plugin-jsx-a11y", "virtual:c77376b364bbd6ccf86418089bab4dc597688e30d62b69b19876926358a19d5bf7a642a5fb000413c6e856a692bd77b262fcd55310c78cfbc2814333babe66e4#npm:6.4.1"],
             ["eslint-plugin-react", "virtual:c77376b364bbd6ccf86418089bab4dc597688e30d62b69b19876926358a19d5bf7a642a5fb000413c6e856a692bd77b262fcd55310c78cfbc2814333babe66e4#npm:7.22.0"],
             ["eslint-plugin-react-hooks", "virtual:c77376b364bbd6ccf86418089bab4dc597688e30d62b69b19876926358a19d5bf7a642a5fb000413c6e856a692bd77b262fcd55310c78cfbc2814333babe66e4#npm:4.2.0"],
@@ -5520,10 +5522,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:4ba239f8ca1280cfb9a050add4f331c8a31f59443b0bff56561f0dd8770e186b0b5f93e7f82cb4018d8355a6243d91b88868ffcedf391635a3b3fcdbcf3c42e7#npm:12.0.2", {
-          "packageLocation": "./.yarn/$$virtual/@essex-scripts-virtual-54f51b18db/0/cache/@essex-scripts-npm-12.0.2-c07b12fc9f-570146de30.zip/node_modules/@essex/scripts/",
+        ["virtual:60853e3ec114b18e51ada69bf7f7262fad510a1e30b0986acd76239812ac4168db7c91e526b4a5675f1b268a6c00bac056c55159fb9bbbd0ac7afdf773825fda#npm:12.0.2", {
+          "packageLocation": "./.yarn/$$virtual/@essex-scripts-virtual-40182200dc/0/cache/@essex-scripts-npm-12.0.2-c07b12fc9f-570146de30.zip/node_modules/@essex/scripts/",
           "packageDependencies": [
-            ["@essex/scripts", "virtual:4ba239f8ca1280cfb9a050add4f331c8a31f59443b0bff56561f0dd8770e186b0b5f93e7f82cb4018d8355a6243d91b88868ffcedf391635a3b3fcdbcf3c42e7#npm:12.0.2"],
+            ["@essex/scripts", "virtual:60853e3ec114b18e51ada69bf7f7262fad510a1e30b0986acd76239812ac4168db7c91e526b4a5675f1b268a6c00bac056c55159fb9bbbd0ac7afdf773825fda#npm:12.0.2"],
             ["@babel/core", "npm:7.13.10"],
             ["@essex/build-step-azure", "npm:10.0.5"],
             ["@essex/build-step-babel", "npm:10.0.5"],
@@ -5532,7 +5534,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@essex/build-step-eslint", "npm:10.0.5"],
             ["@essex/build-step-init", "npm:12.0.2"],
             ["@essex/build-step-jest", "npm:11.0.2"],
-            ["@essex/build-step-lint-staged", "virtual:54f51b18db3aca7b033009fd882c2051cefcbcf313e3ea40506cf3457e7a5e88c8e53f5a87e8ef7f1d4e497af4a6b11537d9c00434f5d08bcf82d96fd4f73d12#npm:10.0.5"],
+            ["@essex/build-step-lint-staged", "virtual:40182200dcb013a6e13882eb002c72143dd4ac9460138974f2377d0021a653fbc9ed9c2b303fb76364d06d69077b070af34dd360c93cd89c6614e3408781527f#npm:10.0.5"],
             ["@essex/build-step-pretty-quick", "npm:10.0.5"],
             ["@essex/build-step-recipes", "npm:10.0.5"],
             ["@essex/build-step-rollup", "virtual:ce059eb2a838cb0f85ac28698f4660e9c0d0fba7e9fbdef06d074284487f6e99edc38b5a08734cf927085490e5e5e3f40fb4917a6d80a96effcfc78609243aba#npm:10.0.5"],
@@ -5543,7 +5545,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@essex/build-step-zip", "npm:10.0.5"],
             ["@essex/build-utils", "npm:10.0.5"],
             ["@essex/eslint-config", null],
-            ["@essex/eslint-plugin", "virtual:54f51b18db3aca7b033009fd882c2051cefcbcf313e3ea40506cf3457e7a5e88c8e53f5a87e8ef7f1d4e497af4a6b11537d9c00434f5d08bcf82d96fd4f73d12#npm:10.0.4"],
+            ["@essex/eslint-plugin", "virtual:40182200dcb013a6e13882eb002c72143dd4ac9460138974f2377d0021a653fbc9ed9c2b303fb76364d06d69077b070af34dd360c93cd89c6614e3408781527f#npm:10.0.4"],
             ["@essex/jest-config", null],
             ["@essex/prettier-config", null],
             ["@essex/shellrunner", "npm:10.0.5"],
@@ -5625,7 +5627,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@essex/build-step-eslint", "npm:10.0.5"],
             ["@essex/build-step-init", "npm:12.0.2"],
             ["@essex/build-step-jest", "npm:11.0.2"],
-            ["@essex/build-step-lint-staged", "virtual:54f51b18db3aca7b033009fd882c2051cefcbcf313e3ea40506cf3457e7a5e88c8e53f5a87e8ef7f1d4e497af4a6b11537d9c00434f5d08bcf82d96fd4f73d12#npm:10.0.5"],
+            ["@essex/build-step-lint-staged", "virtual:40182200dcb013a6e13882eb002c72143dd4ac9460138974f2377d0021a653fbc9ed9c2b303fb76364d06d69077b070af34dd360c93cd89c6614e3408781527f#npm:10.0.5"],
             ["@essex/build-step-pretty-quick", "npm:10.0.5"],
             ["@essex/build-step-recipes", "npm:10.0.5"],
             ["@essex/build-step-rollup", "virtual:fd0846a73c06f461d3cfd7b63df81899f8c9986154a20491e0960e9160838a8d9f6cc1b2f75bf1ca510deeef6e77afb262da9e0ddea0e54563fc8471a70f35b7#npm:10.0.5"],
@@ -5636,7 +5638,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@essex/build-step-zip", "npm:10.0.5"],
             ["@essex/build-utils", "npm:10.0.5"],
             ["@essex/eslint-config", null],
-            ["@essex/eslint-plugin", "virtual:54f51b18db3aca7b033009fd882c2051cefcbcf313e3ea40506cf3457e7a5e88c8e53f5a87e8ef7f1d4e497af4a6b11537d9c00434f5d08bcf82d96fd4f73d12#npm:10.0.4"],
+            ["@essex/eslint-plugin", "virtual:40182200dcb013a6e13882eb002c72143dd4ac9460138974f2377d0021a653fbc9ed9c2b303fb76364d06d69077b070af34dd360c93cd89c6614e3408781527f#npm:10.0.4"],
             ["@essex/jest-config", null],
             ["@essex/prettier-config", null],
             ["@essex/shellrunner", "npm:10.0.5"],
@@ -16418,13 +16420,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:409c3dcd0502e7e3941896a11fe5e8b869b78149f2342b9373457c4745507e22a26159699ff01f089f56d00196cebee00bf26c637b6bdac5169d92043adf868a#npm:24.3.2", {
-          "packageLocation": "./.yarn/$$virtual/eslint-plugin-jest-virtual-ebff7609b4/0/cache/eslint-plugin-jest-npm-24.3.2-c01c1d5a96-caf92f0bab.zip/node_modules/eslint-plugin-jest/",
+        ["virtual:12987ffe2d761ea6ce542ad0896865cab9a72966b6c2ca914a6795ecb55bc64185cd5fd99ab0813d4dc4bf909b687482a47f16ca4a68e646d5888fa7c5d08478#npm:24.3.2", {
+          "packageLocation": "./.yarn/$$virtual/eslint-plugin-jest-virtual-38e5f08b68/0/cache/eslint-plugin-jest-npm-24.3.2-c01c1d5a96-caf92f0bab.zip/node_modules/eslint-plugin-jest/",
           "packageDependencies": [
-            ["eslint-plugin-jest", "virtual:409c3dcd0502e7e3941896a11fe5e8b869b78149f2342b9373457c4745507e22a26159699ff01f089f56d00196cebee00bf26c637b6bdac5169d92043adf868a#npm:24.3.2"],
+            ["eslint-plugin-jest", "virtual:12987ffe2d761ea6ce542ad0896865cab9a72966b6c2ca914a6795ecb55bc64185cd5fd99ab0813d4dc4bf909b687482a47f16ca4a68e646d5888fa7c5d08478#npm:24.3.2"],
             ["@types/eslint", null],
             ["@types/typescript-eslint__eslint-plugin", null],
-            ["@typescript-eslint/eslint-plugin", "virtual:bf8b017bd1f03389da1b5c0e5e1c5c563e4275a21de8f3b8cd52b4850e52398c3d446da20846f559948350b0d857c15e4f8bf479f386e204c503e3d9aec24ccd#npm:4.18.0"],
+            ["@typescript-eslint/eslint-plugin", null],
             ["@typescript-eslint/experimental-utils", "virtual:ebff7609b44fc45b6ac6e5edaa882dd86853b97cb81379b1c6d32fb0d850b815f359c565acd5ad9af3113af4ac7736056d170939e348be9dad5cee1a2b19c052#npm:4.18.0"],
             ["eslint", "npm:7.22.0"]
           ],
@@ -16436,13 +16438,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["virtual:7538ee2fc8b9d6c8b014ebd0caffc9921416c443d15aa4b87a4a4cc6e3cdc50ab55aa812474b72c933c95b30125dabab00a000f7cac796ccb282e93b2a6c3e4e#npm:24.3.2", {
-          "packageLocation": "./.yarn/$$virtual/eslint-plugin-jest-virtual-736e5bb64e/0/cache/eslint-plugin-jest-npm-24.3.2-c01c1d5a96-caf92f0bab.zip/node_modules/eslint-plugin-jest/",
+        ["virtual:409c3dcd0502e7e3941896a11fe5e8b869b78149f2342b9373457c4745507e22a26159699ff01f089f56d00196cebee00bf26c637b6bdac5169d92043adf868a#npm:24.3.2", {
+          "packageLocation": "./.yarn/$$virtual/eslint-plugin-jest-virtual-ebff7609b4/0/cache/eslint-plugin-jest-npm-24.3.2-c01c1d5a96-caf92f0bab.zip/node_modules/eslint-plugin-jest/",
           "packageDependencies": [
-            ["eslint-plugin-jest", "virtual:7538ee2fc8b9d6c8b014ebd0caffc9921416c443d15aa4b87a4a4cc6e3cdc50ab55aa812474b72c933c95b30125dabab00a000f7cac796ccb282e93b2a6c3e4e#npm:24.3.2"],
+            ["eslint-plugin-jest", "virtual:409c3dcd0502e7e3941896a11fe5e8b869b78149f2342b9373457c4745507e22a26159699ff01f089f56d00196cebee00bf26c637b6bdac5169d92043adf868a#npm:24.3.2"],
             ["@types/eslint", null],
             ["@types/typescript-eslint__eslint-plugin", null],
-            ["@typescript-eslint/eslint-plugin", null],
+            ["@typescript-eslint/eslint-plugin", "virtual:bf8b017bd1f03389da1b5c0e5e1c5c563e4275a21de8f3b8cd52b4850e52398c3d446da20846f559948350b0d857c15e4f8bf479f386e204c503e3d9aec24ccd#npm:4.18.0"],
             ["@typescript-eslint/experimental-utils", "virtual:ebff7609b44fc45b6ac6e5edaa882dd86853b97cb81379b1c6d32fb0d850b815f359c565acd5ad9af3113af4ac7736056d170939e348be9dad5cee1a2b19c052#npm:4.18.0"],
             ["eslint", "npm:7.22.0"]
           ],
@@ -31131,10 +31133,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["virtual:fb6087411169c0acccd3a060948afdb2a98f0b0362be45bc247c14f8265510dd9b0faab93f17b8f1aa20667940e14a7f0b485623c267b48f74a508a102c60b0d#npm:9.1.1", {
-          "packageLocation": "./.yarn/$$virtual/ts-node-virtual-cba8404248/0/cache/ts-node-npm-9.1.1-4ad31da228-a90db4a342.zip/node_modules/ts-node/",
+        ["virtual:f37703c95ab859815e9119a2e3ca6bab49c50b4a26a9fbfa7e47c06cdbe7398b822c114e558e7b2c0a0b2a5991aedb7288f4319bcfc9b66feda7b2f84e7d106d#npm:9.1.1", {
+          "packageLocation": "./.yarn/$$virtual/ts-node-virtual-97e7cbab84/0/cache/ts-node-npm-9.1.1-4ad31da228-a90db4a342.zip/node_modules/ts-node/",
           "packageDependencies": [
-            ["ts-node", "virtual:fb6087411169c0acccd3a060948afdb2a98f0b0362be45bc247c14f8265510dd9b0faab93f17b8f1aa20667940e14a7f0b485623c267b48f74a508a102c60b0d#npm:9.1.1"],
+            ["ts-node", "virtual:f37703c95ab859815e9119a2e3ca6bab49c50b4a26a9fbfa7e47c06cdbe7398b822c114e558e7b2c0a0b2a5991aedb7288f4319bcfc9b66feda7b2f84e7d106d#npm:9.1.1"],
             ["@types/typescript", null],
             ["arg", "npm:4.1.3"],
             ["create-require", "npm:1.1.1"],
@@ -31455,7 +31457,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/node", "npm:14.14.35"],
             ["glob", "npm:7.1.6"],
             ["json-stable-stringify", "npm:1.0.1"],
-            ["ts-node", "virtual:fb6087411169c0acccd3a060948afdb2a98f0b0362be45bc247c14f8265510dd9b0faab93f17b8f1aa20667940e14a7f0b485623c267b48f74a508a102c60b0d#npm:9.1.1"],
+            ["ts-node", "virtual:f37703c95ab859815e9119a2e3ca6bab49c50b4a26a9fbfa7e47c06cdbe7398b822c114e558e7b2c0a0b2a5991aedb7288f4319bcfc9b66feda7b2f84e7d106d#npm:9.1.1"],
             ["typescript", "patch:typescript@npm%3A4.2.3#builtin<compat/typescript>::version=4.2.3&hash=a45b0e"],
             ["yargs", "npm:16.2.0"]
           ],

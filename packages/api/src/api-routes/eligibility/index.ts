@@ -5,32 +5,38 @@
 import { Request, Response } from 'express'
 import { Operation } from 'express-openapi'
 
-export const POST: Operation = [
-	(req: Request, res: Response) => {
-		res.json({ test: 'hello world' })
-	},
-]
-// POST.apiDoc = {
-//   description: 'A description for retrieving a user.',
-//   tags: ['users'],
-//   operationId: 'getUser',
-//   // parameters for this operation
-//   parameters: [
-//     {
-//       in: 'query',
-//       name: 'firstName',
-//       type: 'string'
-//     }
-//   ],
-//   responses: {
-//     default: {
-//       $ref: '#/definitions/Error'
-//     }
-//   }
-// };
-
 export const GET: Operation = [
 	(req: Request, res: Response) => {
-		res.json({ test: 'hello world' })
+		console.log('Get Eligibility', req.query.lat, req.query.long)
+		res.json({ test: 'hello world GET response' })
 	},
 ]
+GET.apiDoc = {
+	description: 'Retrieves C19 vaccine eligibility rules based on a location.',
+	tags: ['eligibility'],
+	operationId: 'getEligibility',
+	parameters: [
+		{
+			in: 'query',
+			name: 'lat',
+			type: 'number',
+			format: 'double',
+			required: true,
+		},
+		{
+			in: 'query',
+			name: 'long',
+			type: 'number',
+			format: 'double',
+			required: true,
+		},
+	],
+	responses: {
+		default: {
+			description: 'Unexpected error',
+			schema: {
+				$ref: '#/definitions/Error',
+			},
+		},
+	},
+}

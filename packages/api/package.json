@@ -7,6 +7,8 @@
 		"start:api": "yarn start"
 	},
 	"dependencies": {
+		"@covid-vax-bot/plan-schema": "workspace:packages/schema",
+		"@covid-vax-bot/plans": "workspace:packages/plans",
 		"cors": "^2.8.5",
 		"express": "^4.17.1",
 		"express-openapi": "^7.5.0"

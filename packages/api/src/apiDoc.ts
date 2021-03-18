@@ -2,55 +2,20 @@
  * Copyright (c) Microsoft. All rights reserved.
  * Licensed under the MIT license. See LICENSE file in the project.
  */
-import { OpenAPIV3 } from 'openapi-types'
+import { OpenAPIV2 } from 'openapi-types'
 
-export const apiDoc: OpenAPIV3.Document = {
-	openapi: '3.0.0',
+export const apiDoc: OpenAPIV2.Document = {
+	swagger: '2.0',
 	info: {
 		title: 'COVID-19 Vaccine Eligibility API',
 		version: '0.0.1',
 	},
-	paths: {
-		'/eligibility': {
-			get: {
-				responses: {
-					'200': {
-						description: 'OK Response',
-					},
-				},
-			},
-			post: {
-				requestBody: {
-					required: true,
-					content: {
-						'application/json': {
-							schema: {
-								type: 'object',
-								properties: {
-									lat: {
-										type: 'number',
-									},
-									long: {
-										type: 'number',
-									},
-								},
-							},
-						},
-					},
-				},
-				responses: {
-					'200': {
-						description: 'OK Response',
-						content: {
-							'application/json': {
-								schema: {
-									type: 'object',
-								},
-							},
-						},
-					},
-				},
-			},
+	definitions: {
+		Error: {
+			additionalProperties: true,
 		},
 	},
+
+	// paths are derived from args.routes.  These are filled in by fs-routes.
+	paths: {},
 }

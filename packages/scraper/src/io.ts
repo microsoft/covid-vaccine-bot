@@ -6,7 +6,7 @@
 import * as fs from 'fs'
 import * as path from 'path'
 import { RunResult } from './types'
-import { Link } from '@covid-vax-bot/state-plan-schema'
+import { Link } from '@covid-vax-bot/plan-schema'
 
 const CACHE_DIR = path.join(__dirname, '../.cache/')
 
@@ -17,7 +17,7 @@ export function createOutputFolder(): void {
 }
 
 export function loadLinksToScrape(): Link[] {
-	const data = require('@covid-vax-bot/state-plans/dist/info_links.json') as Link[]
+	const data = require('@covid-vax-bot/plans/dist/info_links.json') as Link[]
 	return data.filter((link) => link.scrape !== false)
 }
 
