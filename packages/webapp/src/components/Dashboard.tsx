@@ -12,15 +12,14 @@
 	DialogType,
 	DialogFooter,
 	PrimaryButton,
-	DefaultButton
+	DefaultButton,
+	Callout
 } from '@fluentui/react'
 import { useBoolean } from '@uifabric/react-hooks'
 import { observer } from 'mobx-react-lite'
-import React, { useState, useEffect, useCallback } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 import { initializeGitData } from '../actions/repoActions'
 import { getAppStore } from '../store/store'
-
-
 
 import './Dashboard.scss'
 
@@ -31,8 +30,9 @@ export default observer(function Dashboard() {
 	const [prList, setPRList] = useState<any[]>([])
 	const [issueList, setIssueList] = useState<any[]>([])
 	const [hideDialog, { toggle: toggleHideDialog }] = useBoolean(true);
+	const [noteKeys, setNoteKeys] = useState<any>([])
 
-	useEffect(() => { 
+	useEffect(() => {
 		if(state.issues){
 			const tempPRList:any = [];
 			const tempIssueList:any = [];
@@ -77,6 +77,53 @@ export default observer(function Dashboard() {
 
 	};
 
+	const toggleCallout = useCallback((id: number) => {
+		const tempItems = [...noteKeys]
+		const index = tempItems.indexOf(id)
+		if (index > -1) {
+			tempItems.splice(index, 1)
+		} else {
+			tempItems.push(id)
+		}
+
+		setNoteKeys(tempItems)
+	},[noteKeys])
+
+
+	const onPRNotesRender =  (item?: any, index?: number, column?: IColumn) =>  {
+		if (!item.action.body) {
+			return null
+		}
+
+		return (
+			<>
+				<FontIcon
+					className={`infoButton pr-${item.action.number}`}
+					iconName="InfoSolid"
+					onClick={() => toggleCallout(item.action.number)}
+				/>
+				{noteKeys.includes(item.action.number) && (
+					<Callout
+						onDismiss={() => toggleCallout(item.action.number)}
+						target={`.infoButton.pr-${item.action.number}`}
+						gapSpace={0}
+						setInitialFocus={true}
+						role="alertDialog"
+						className="infoCallout"
+						directionalHint={9}
+					>
+						<div className="infoCalloutBody">
+							<div className="infoHeader">Notes</div>
+							<div className="infoBody">
+								{item.action.body}
+							</div>
+						</div>
+					</Callout>
+				)}
+			</>
+		)
+	};
+
 	const prColumns = [
 		{
 			key: 'titleCol',
@@ -84,6 +131,14 @@ export default observer(function Dashboard() {
 			fieldName: 'title',
 			minWidth: 200,
 			isResizable: true,
+		},
+		{
+			key: 'notesCol',
+			name: 'Notes',
+			fieldName: 'notes',
+			minWidth: 100,
+			isResizable: true,
+			onRender: onPRNotesRender
 		},
 		{
 			key: 'authorCol',
