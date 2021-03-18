@@ -566,11 +566,11 @@ Thalassemia (blood disorder) (see [here](https://dph.georgia.gov/covid-vaccine-e
 
 ## Guam::Agat
 
-### Guam::Agat Active Phase ()
+### Guam::Agat Active Phase (undefined)
 
 ## Guam::Mangilao
 
-### Guam::Mangilao Active Phase ()
+### Guam::Mangilao Active Phase (undefined)
 
 # Hawaii
 
@@ -672,179 +672,179 @@ Type 2 diabetes mellitus (see [here](https://www.cdc.gov/coronavirus/2019-ncov/n
 
 ## Idaho::Ada
 
-### Idaho::Ada Active Phase ()
+### Idaho::Ada Active Phase (undefined)
 
 ## Idaho::Adams
 
-### Idaho::Adams Active Phase ()
+### Idaho::Adams Active Phase (undefined)
 
 ## Idaho::Bannock
 
-### Idaho::Bannock Active Phase ()
+### Idaho::Bannock Active Phase (undefined)
 
 ## Idaho::Bear Lake
 
-### Idaho::Bear Lake Active Phase ()
+### Idaho::Bear Lake Active Phase (undefined)
 
 ## Idaho::Benewah
 
-### Idaho::Benewah Active Phase ()
+### Idaho::Benewah Active Phase (undefined)
 
 ## Idaho::Bingham
 
-### Idaho::Bingham Active Phase ()
+### Idaho::Bingham Active Phase (undefined)
 
 ## Idaho::Blaine
 
-### Idaho::Blaine Active Phase ()
+### Idaho::Blaine Active Phase (undefined)
 
 ## Idaho::Boise
 
-### Idaho::Boise Active Phase ()
+### Idaho::Boise Active Phase (undefined)
 
 ## Idaho::Bonner
 
-### Idaho::Bonner Active Phase ()
+### Idaho::Bonner Active Phase (undefined)
 
 ## Idaho::Bonneville
 
-### Idaho::Bonneville Active Phase ()
+### Idaho::Bonneville Active Phase (undefined)
 
 ## Idaho::Boundary
 
-### Idaho::Boundary Active Phase ()
+### Idaho::Boundary Active Phase (undefined)
 
 ## Idaho::Butte
 
-### Idaho::Butte Active Phase ()
+### Idaho::Butte Active Phase (undefined)
 
 ## Idaho::Camas
 
-### Idaho::Camas Active Phase ()
+### Idaho::Camas Active Phase (undefined)
 
 ## Idaho::Canyon
 
-### Idaho::Canyon Active Phase ()
+### Idaho::Canyon Active Phase (undefined)
 
 ## Idaho::Caribou
 
-### Idaho::Caribou Active Phase ()
+### Idaho::Caribou Active Phase (undefined)
 
 ## Idaho::Cassia
 
-### Idaho::Cassia Active Phase ()
+### Idaho::Cassia Active Phase (undefined)
 
 ## Idaho::Clark
 
-### Idaho::Clark Active Phase ()
+### Idaho::Clark Active Phase (undefined)
 
 ## Idaho::Clearwater
 
-### Idaho::Clearwater Active Phase ()
+### Idaho::Clearwater Active Phase (undefined)
 
 ## Idaho::Custer
 
-### Idaho::Custer Active Phase ()
+### Idaho::Custer Active Phase (undefined)
 
 ## Idaho::Elmore
 
-### Idaho::Elmore Active Phase ()
+### Idaho::Elmore Active Phase (undefined)
 
 ## Idaho::Franklin
 
-### Idaho::Franklin Active Phase ()
+### Idaho::Franklin Active Phase (undefined)
 
 ## Idaho::Fremont
 
-### Idaho::Fremont Active Phase ()
+### Idaho::Fremont Active Phase (undefined)
 
 ## Idaho::Gem
 
-### Idaho::Gem Active Phase ()
+### Idaho::Gem Active Phase (undefined)
 
 ## Idaho::Gooding
 
-### Idaho::Gooding Active Phase ()
+### Idaho::Gooding Active Phase (undefined)
 
 ## Idaho::Idaho
 
-### Idaho::Idaho Active Phase ()
+### Idaho::Idaho Active Phase (undefined)
 
 ## Idaho::Jefferson
 
-### Idaho::Jefferson Active Phase ()
+### Idaho::Jefferson Active Phase (undefined)
 
 ## Idaho::Jerome
 
-### Idaho::Jerome Active Phase ()
+### Idaho::Jerome Active Phase (undefined)
 
 ## Idaho::Kootenai
 
-### Idaho::Kootenai Active Phase ()
+### Idaho::Kootenai Active Phase (undefined)
 
 ## Idaho::Latah
 
-### Idaho::Latah Active Phase ()
+### Idaho::Latah Active Phase (undefined)
 
 ## Idaho::Lemhi
 
-### Idaho::Lemhi Active Phase ()
+### Idaho::Lemhi Active Phase (undefined)
 
 ## Idaho::Lewis
 
-### Idaho::Lewis Active Phase ()
+### Idaho::Lewis Active Phase (undefined)
 
 ## Idaho::Lincoln
 
-### Idaho::Lincoln Active Phase ()
+### Idaho::Lincoln Active Phase (undefined)
 
 ## Idaho::Madison
 
-### Idaho::Madison Active Phase ()
+### Idaho::Madison Active Phase (undefined)
 
 ## Idaho::Minidoka
 
-### Idaho::Minidoka Active Phase ()
+### Idaho::Minidoka Active Phase (undefined)
 
 ## Idaho::Nez Perce
 
-### Idaho::Nez Perce Active Phase ()
+### Idaho::Nez Perce Active Phase (undefined)
 
 ## Idaho::Oneida
 
-### Idaho::Oneida Active Phase ()
+### Idaho::Oneida Active Phase (undefined)
 
 ## Idaho::Owyhee
 
-### Idaho::Owyhee Active Phase ()
+### Idaho::Owyhee Active Phase (undefined)
 
 ## Idaho::Payette
 
-### Idaho::Payette Active Phase ()
+### Idaho::Payette Active Phase (undefined)
 
 ## Idaho::Power
 
-### Idaho::Power Active Phase ()
+### Idaho::Power Active Phase (undefined)
 
 ## Idaho::Shoshone
 
-### Idaho::Shoshone Active Phase ()
+### Idaho::Shoshone Active Phase (undefined)
 
 ## Idaho::Teton
 
-### Idaho::Teton Active Phase ()
+### Idaho::Teton Active Phase (undefined)
 
 ## Idaho::Twin Falls
 
-### Idaho::Twin Falls Active Phase ()
+### Idaho::Twin Falls Active Phase (undefined)
 
 ## Idaho::Valley
 
-### Idaho::Valley Active Phase ()
+### Idaho::Valley Active Phase (undefined)
 
 ## Idaho::Washington
 
-### Idaho::Washington Active Phase ()
+### Idaho::Washington Active Phase (undefined)
 
 # Illinois
 
@@ -1534,71 +1534,71 @@ food processing, transportation, US Postal Service, public transit (see [here](h
 
 ## Nevada::Carson City
 
-### Nevada::Carson City Active Phase ()
+### Nevada::Carson City Active Phase (undefined)
 
 ## Nevada::Churchill
 
-### Nevada::Churchill Active Phase ()
+### Nevada::Churchill Active Phase (undefined)
 
 ## Nevada::Clark
 
-### Nevada::Clark Active Phase ()
+### Nevada::Clark Active Phase (undefined)
 
 ## Nevada::Douglas
 
-### Nevada::Douglas Active Phase ()
+### Nevada::Douglas Active Phase (undefined)
 
 ## Nevada::Elko
 
-### Nevada::Elko Active Phase ()
+### Nevada::Elko Active Phase (undefined)
 
 ## Nevada::Esmeralda
 
-### Nevada::Esmeralda Active Phase ()
+### Nevada::Esmeralda Active Phase (undefined)
 
 ## Nevada::Eureka
 
-### Nevada::Eureka Active Phase ()
+### Nevada::Eureka Active Phase (undefined)
 
 ## Nevada::Humboldt
 
-### Nevada::Humboldt Active Phase ()
+### Nevada::Humboldt Active Phase (undefined)
 
 ## Nevada::Lander
 
-### Nevada::Lander Active Phase ()
+### Nevada::Lander Active Phase (undefined)
 
 ## Nevada::Lincoln
 
-### Nevada::Lincoln Active Phase ()
+### Nevada::Lincoln Active Phase (undefined)
 
 ## Nevada::Lyon
 
-### Nevada::Lyon Active Phase ()
+### Nevada::Lyon Active Phase (undefined)
 
 ## Nevada::Mineral
 
-### Nevada::Mineral Active Phase ()
+### Nevada::Mineral Active Phase (undefined)
 
 ## Nevada::Nye
 
-### Nevada::Nye Active Phase ()
+### Nevada::Nye Active Phase (undefined)
 
 ## Nevada::Pershing
 
-### Nevada::Pershing Active Phase ()
+### Nevada::Pershing Active Phase (undefined)
 
 ## Nevada::Storey
 
-### Nevada::Storey Active Phase ()
+### Nevada::Storey Active Phase (undefined)
 
 ## Nevada::Washoe
 
-### Nevada::Washoe Active Phase ()
+### Nevada::Washoe Active Phase (undefined)
 
 ## Nevada::White Pine
 
-### Nevada::White Pine Active Phase ()
+### Nevada::White Pine Active Phase (undefined)
 
 # New Hampshire
 
@@ -1933,147 +1933,147 @@ corticosteroids or use of other immune-weakening medicines
 
 ## Oregon::Baker
 
-### Oregon::Baker Active Phase ()
+### Oregon::Baker Active Phase (undefined)
 
 ## Oregon::Benton
 
-### Oregon::Benton Active Phase ()
+### Oregon::Benton Active Phase (undefined)
 
 ## Oregon::Clackamas
 
-### Oregon::Clackamas Active Phase ()
+### Oregon::Clackamas Active Phase (undefined)
 
 ## Oregon::Clatsop
 
-### Oregon::Clatsop Active Phase ()
+### Oregon::Clatsop Active Phase (undefined)
 
 ## Oregon::Columbia
 
-### Oregon::Columbia Active Phase ()
+### Oregon::Columbia Active Phase (undefined)
 
 ## Oregon::Coos
 
-### Oregon::Coos Active Phase ()
+### Oregon::Coos Active Phase (undefined)
 
 ## Oregon::Crook
 
-### Oregon::Crook Active Phase ()
+### Oregon::Crook Active Phase (undefined)
 
 ## Oregon::Curry
 
-### Oregon::Curry Active Phase ()
+### Oregon::Curry Active Phase (undefined)
 
 ## Oregon::Deschutes
 
-### Oregon::Deschutes Active Phase ()
+### Oregon::Deschutes Active Phase (undefined)
 
 ## Oregon::Douglas
 
-### Oregon::Douglas Active Phase ()
+### Oregon::Douglas Active Phase (undefined)
 
 ## Oregon::Gilliam
 
-### Oregon::Gilliam Active Phase ()
+### Oregon::Gilliam Active Phase (undefined)
 
 ## Oregon::Grant
 
-### Oregon::Grant Active Phase ()
+### Oregon::Grant Active Phase (undefined)
 
 ## Oregon::Harney
 
-### Oregon::Harney Active Phase ()
+### Oregon::Harney Active Phase (undefined)
 
 ## Oregon::Hood River
 
-### Oregon::Hood River Active Phase ()
+### Oregon::Hood River Active Phase (undefined)
 
 ## Oregon::Jackson
 
-### Oregon::Jackson Active Phase ()
+### Oregon::Jackson Active Phase (undefined)
 
 ## Oregon::Jefferson
 
-### Oregon::Jefferson Active Phase ()
+### Oregon::Jefferson Active Phase (undefined)
 
 ## Oregon::Josephine
 
-### Oregon::Josephine Active Phase ()
+### Oregon::Josephine Active Phase (undefined)
 
 ## Oregon::Klamath
 
-### Oregon::Klamath Active Phase ()
+### Oregon::Klamath Active Phase (undefined)
 
 ## Oregon::Lake
 
-### Oregon::Lake Active Phase ()
+### Oregon::Lake Active Phase (undefined)
 
 ## Oregon::Lane
 
-### Oregon::Lane Active Phase ()
+### Oregon::Lane Active Phase (undefined)
 
 ## Oregon::Lincoln
 
-### Oregon::Lincoln Active Phase ()
+### Oregon::Lincoln Active Phase (undefined)
 
 ## Oregon::Linn
 
-### Oregon::Linn Active Phase ()
+### Oregon::Linn Active Phase (undefined)
 
 ## Oregon::Malheur
 
-### Oregon::Malheur Active Phase ()
+### Oregon::Malheur Active Phase (undefined)
 
 ## Oregon::Marion
 
-### Oregon::Marion Active Phase ()
+### Oregon::Marion Active Phase (undefined)
 
 ## Oregon::Morrow
 
-### Oregon::Morrow Active Phase ()
+### Oregon::Morrow Active Phase (undefined)
 
 ## Oregon::Multnomah
 
-### Oregon::Multnomah Active Phase ()
+### Oregon::Multnomah Active Phase (undefined)
 
 ## Oregon::Polk
 
-### Oregon::Polk Active Phase ()
+### Oregon::Polk Active Phase (undefined)
 
 ## Oregon::Sherman
 
-### Oregon::Sherman Active Phase ()
+### Oregon::Sherman Active Phase (undefined)
 
 ## Oregon::Tillamook
 
-### Oregon::Tillamook Active Phase ()
+### Oregon::Tillamook Active Phase (undefined)
 
 ## Oregon::Umatilla
 
-### Oregon::Umatilla Active Phase ()
+### Oregon::Umatilla Active Phase (undefined)
 
 ## Oregon::Union
 
-### Oregon::Union Active Phase ()
+### Oregon::Union Active Phase (undefined)
 
 ## Oregon::Wallowa
 
-### Oregon::Wallowa Active Phase ()
+### Oregon::Wallowa Active Phase (undefined)
 
 ## Oregon::Wasco
 
-### Oregon::Wasco Active Phase ()
+### Oregon::Wasco Active Phase (undefined)
 
 ## Oregon::Washington
 
-### Oregon::Washington Active Phase ()
+### Oregon::Washington Active Phase (undefined)
 
 ## Oregon::Wheeler
 
-### Oregon::Wheeler Active Phase ()
+### Oregon::Wheeler Active Phase (undefined)
 
 ## Oregon::Yamhill
 
-### Oregon::Yamhill Active Phase ()
+### Oregon::Yamhill Active Phase (undefined)
 
 # Palau
 
@@ -2193,71 +2193,71 @@ corticosteroids or use of other immune-weakening medicines
 
 ## Rhode Island::Barrington
 
-### Rhode Island::Barrington Active Phase ()
+### Rhode Island::Barrington Active Phase (undefined)
 
 ## Rhode Island::Charlestown
 
-### Rhode Island::Charlestown Active Phase ()
+### Rhode Island::Charlestown Active Phase (undefined)
 
 ## Rhode Island::Cumberland
 
-### Rhode Island::Cumberland Active Phase ()
+### Rhode Island::Cumberland Active Phase (undefined)
 
 ## Rhode Island::East Providence
 
-### Rhode Island::East Providence Active Phase ()
+### Rhode Island::East Providence Active Phase (undefined)
 
 ## Rhode Island::Exeter
 
-### Rhode Island::Exeter Active Phase ()
+### Rhode Island::Exeter Active Phase (undefined)
 
 ## Rhode Island::Hopkinton
 
-### Rhode Island::Hopkinton Active Phase ()
+### Rhode Island::Hopkinton Active Phase (undefined)
 
 ## Rhode Island::Jamestown
 
-### Rhode Island::Jamestown Active Phase ()
+### Rhode Island::Jamestown Active Phase (undefined)
 
 ## Rhode Island::Little Compton
 
-### Rhode Island::Little Compton Active Phase ()
+### Rhode Island::Little Compton Active Phase (undefined)
 
 ## Rhode Island::Middletown
 
-### Rhode Island::Middletown Active Phase ()
+### Rhode Island::Middletown Active Phase (undefined)
 
 ## Rhode Island::Narragansett
 
-### Rhode Island::Narragansett Active Phase ()
+### Rhode Island::Narragansett Active Phase (undefined)
 
 ## Rhode Island::Newport
 
-### Rhode Island::Newport Active Phase ()
+### Rhode Island::Newport Active Phase (undefined)
 
 ## Rhode Island::North Providence
 
-### Rhode Island::North Providence Active Phase ()
+### Rhode Island::North Providence Active Phase (undefined)
 
 ## Rhode Island::Pawtucket
 
-### Rhode Island::Pawtucket Active Phase ()
+### Rhode Island::Pawtucket Active Phase (undefined)
 
 ## Rhode Island::Portsmouth
 
-### Rhode Island::Portsmouth Active Phase ()
+### Rhode Island::Portsmouth Active Phase (undefined)
 
 ## Rhode Island::Providence
 
-### Rhode Island::Providence Active Phase ()
+### Rhode Island::Providence Active Phase (undefined)
 
 ## Rhode Island::Smithfield
 
-### Rhode Island::Smithfield Active Phase ()
+### Rhode Island::Smithfield Active Phase (undefined)
 
 ## Rhode Island::Tiverton
 
-### Rhode Island::Tiverton Active Phase ()
+### Rhode Island::Tiverton Active Phase (undefined)
 
 # South Carolina
 
@@ -2402,11 +2402,11 @@ Type 2 diabetes (see [here](https://www.dshs.state.tx.us/coronavirus/immunize/va
 
 ## Virgin Islands::St. Croix
 
-### Virgin Islands::St. Croix Active Phase ()
+### Virgin Islands::St. Croix Active Phase (undefined)
 
 ## Virgin Islands::St. Thomas
 
-### Virgin Islands::St. Thomas Active Phase ()
+### Virgin Islands::St. Thomas Active Phase (undefined)
 
 # Utah
 
@@ -2448,55 +2448,55 @@ Type 2 diabetes (see [here](https://www.dshs.state.tx.us/coronavirus/immunize/va
 
 ## Utah::Bear River
 
-### Utah::Bear River Active Phase ()
+### Utah::Bear River Active Phase (undefined)
 
 ## Utah::Central Utah
 
-### Utah::Central Utah Active Phase ()
+### Utah::Central Utah Active Phase (undefined)
 
 ## Utah::Davis
 
-### Utah::Davis Active Phase ()
+### Utah::Davis Active Phase (undefined)
 
 ## Utah::Salt Lake
 
-### Utah::Salt Lake Active Phase ()
+### Utah::Salt Lake Active Phase (undefined)
 
 ## Utah::San Juan
 
-### Utah::San Juan Active Phase ()
+### Utah::San Juan Active Phase (undefined)
 
 ## Utah::Southeast Utah
 
-### Utah::Southeast Utah Active Phase ()
+### Utah::Southeast Utah Active Phase (undefined)
 
 ## Utah::Southwest Utah
 
-### Utah::Southwest Utah Active Phase ()
+### Utah::Southwest Utah Active Phase (undefined)
 
 ## Utah::Summit
 
-### Utah::Summit Active Phase ()
+### Utah::Summit Active Phase (undefined)
 
 ## Utah::Tooele
 
-### Utah::Tooele Active Phase ()
+### Utah::Tooele Active Phase (undefined)
 
 ## Utah::TriCounty
 
-### Utah::TriCounty Active Phase ()
+### Utah::TriCounty Active Phase (undefined)
 
 ## Utah::Utah County
 
-### Utah::Utah County Active Phase ()
+### Utah::Utah County Active Phase (undefined)
 
 ## Utah::Wasatch
 
-### Utah::Wasatch Active Phase ()
+### Utah::Wasatch Active Phase (undefined)
 
 ## Utah::Weber-Morgan
 
-### Utah::Weber-Morgan Active Phase ()
+### Utah::Weber-Morgan Active Phase (undefined)
 
 # Vermont
 
@@ -2650,203 +2650,203 @@ Categories of non-frontline essential health care personnel job titles and setti
 
 ## Wisconsin::Appleton
 
-### Wisconsin::Appleton Active Phase ()
+### Wisconsin::Appleton Active Phase (undefined)
 
 ## Wisconsin::Ashland
 
-### Wisconsin::Ashland Active Phase ()
+### Wisconsin::Ashland Active Phase (undefined)
 
 ## Wisconsin::Barron
 
-### Wisconsin::Barron Active Phase ()
+### Wisconsin::Barron Active Phase (undefined)
 
 ## Wisconsin::Bayfield
 
-### Wisconsin::Bayfield Active Phase ()
+### Wisconsin::Bayfield Active Phase (undefined)
 
 ## Wisconsin::Buffalo
 
-### Wisconsin::Buffalo Active Phase ()
+### Wisconsin::Buffalo Active Phase (undefined)
 
 ## Wisconsin::Burnett
 
-### Wisconsin::Burnett Active Phase ()
+### Wisconsin::Burnett Active Phase (undefined)
 
 ## Wisconsin::Calumet
 
-### Wisconsin::Calumet Active Phase ()
+### Wisconsin::Calumet Active Phase (undefined)
 
 ## Wisconsin::Chippewa
 
-### Wisconsin::Chippewa Active Phase ()
+### Wisconsin::Chippewa Active Phase (undefined)
 
 ## Wisconsin::Clark
 
-### Wisconsin::Clark Active Phase ()
+### Wisconsin::Clark Active Phase (undefined)
 
 ## Wisconsin::Columbia
 
-### Wisconsin::Columbia Active Phase ()
+### Wisconsin::Columbia Active Phase (undefined)
 
 ## Wisconsin::Crawford
 
-### Wisconsin::Crawford Active Phase ()
+### Wisconsin::Crawford Active Phase (undefined)
 
 ## Wisconsin::Dane
 
-### Wisconsin::Dane Active Phase ()
+### Wisconsin::Dane Active Phase (undefined)
 
 ## Wisconsin::Dodge
 
-### Wisconsin::Dodge Active Phase ()
+### Wisconsin::Dodge Active Phase (undefined)
 
 ## Wisconsin::Door
 
-### Wisconsin::Door Active Phase ()
+### Wisconsin::Door Active Phase (undefined)
 
 ## Wisconsin::Eau Claire
 
-### Wisconsin::Eau Claire Active Phase ()
+### Wisconsin::Eau Claire Active Phase (undefined)
 
 ## Wisconsin::Florence
 
-### Wisconsin::Florence Active Phase ()
+### Wisconsin::Florence Active Phase (undefined)
 
 ## Wisconsin::Forest
 
-### Wisconsin::Forest Active Phase ()
+### Wisconsin::Forest Active Phase (undefined)
 
 ## Wisconsin::Green
 
-### Wisconsin::Green Active Phase ()
+### Wisconsin::Green Active Phase (undefined)
 
 ## Wisconsin::Iowa
 
-### Wisconsin::Iowa Active Phase ()
+### Wisconsin::Iowa Active Phase (undefined)
 
 ## Wisconsin::Kenosha
 
-### Wisconsin::Kenosha Active Phase ()
+### Wisconsin::Kenosha Active Phase (undefined)
 
 ## Wisconsin::Kewaunee
 
-### Wisconsin::Kewaunee Active Phase ()
+### Wisconsin::Kewaunee Active Phase (undefined)
 
 ## Wisconsin::La Crosse
 
-### Wisconsin::La Crosse Active Phase ()
+### Wisconsin::La Crosse Active Phase (undefined)
 
 ## Wisconsin::Lafayette
 
-### Wisconsin::Lafayette Active Phase ()
+### Wisconsin::Lafayette Active Phase (undefined)
 
 ## Wisconsin::Langlade
 
-### Wisconsin::Langlade Active Phase ()
+### Wisconsin::Langlade Active Phase (undefined)
 
 ## Wisconsin::Lincoln
 
-### Wisconsin::Lincoln Active Phase ()
+### Wisconsin::Lincoln Active Phase (undefined)
 
 ## Wisconsin::Manitowoc
 
-### Wisconsin::Manitowoc Active Phase ()
+### Wisconsin::Manitowoc Active Phase (undefined)
 
 ## Wisconsin::Milwaukee
 
-### Wisconsin::Milwaukee Active Phase ()
+### Wisconsin::Milwaukee Active Phase (undefined)
 
 ## Wisconsin::Monroe
 
-### Wisconsin::Monroe Active Phase ()
+### Wisconsin::Monroe Active Phase (undefined)
 
 ## Wisconsin::Oneida
 
-### Wisconsin::Oneida Active Phase ()
+### Wisconsin::Oneida Active Phase (undefined)
 
 ## Wisconsin::Washington-Ozaukee
 
-### Wisconsin::Washington-Ozaukee Active Phase ()
+### Wisconsin::Washington-Ozaukee Active Phase (undefined)
 
 ## Wisconsin::Pepin
 
-### Wisconsin::Pepin Active Phase ()
+### Wisconsin::Pepin Active Phase (undefined)
 
 ## Wisconsin::Pierce
 
-### Wisconsin::Pierce Active Phase ()
+### Wisconsin::Pierce Active Phase (undefined)
 
 ## Wisconsin::Polk
 
-### Wisconsin::Polk Active Phase ()
+### Wisconsin::Polk Active Phase (undefined)
 
 ## Wisconsin::Portage
 
-### Wisconsin::Portage Active Phase ()
+### Wisconsin::Portage Active Phase (undefined)
 
 ## Wisconsin::Price
 
-### Wisconsin::Price Active Phase ()
+### Wisconsin::Price Active Phase (undefined)
 
 ## Wisconsin::Racine
 
-### Wisconsin::Racine Active Phase ()
+### Wisconsin::Racine Active Phase (undefined)
 
 ## Wisconsin::Richland
 
-### Wisconsin::Richland Active Phase ()
+### Wisconsin::Richland Active Phase (undefined)
 
 ## Wisconsin::Rock
 
-### Wisconsin::Rock Active Phase ()
+### Wisconsin::Rock Active Phase (undefined)
 
 ## Wisconsin::Sauk
 
-### Wisconsin::Sauk Active Phase ()
+### Wisconsin::Sauk Active Phase (undefined)
 
 ## Wisconsin::Shawano-Menominee
 
-### Wisconsin::Shawano-Menominee Active Phase ()
+### Wisconsin::Shawano-Menominee Active Phase (undefined)
 
 ## Wisconsin::Sheboygan
 
-### Wisconsin::Sheboygan Active Phase ()
+### Wisconsin::Sheboygan Active Phase (undefined)
 
 ## Wisconsin::St. Croix
 
-### Wisconsin::St. Croix Active Phase ()
+### Wisconsin::St. Croix Active Phase (undefined)
 
 ## Wisconsin::Walworth
 
-### Wisconsin::Walworth Active Phase ()
+### Wisconsin::Walworth Active Phase (undefined)
 
 ## Wisconsin::Washburn
 
-### Wisconsin::Washburn Active Phase ()
+### Wisconsin::Washburn Active Phase (undefined)
 
 ## Wisconsin::Watertown
 
-### Wisconsin::Watertown Active Phase ()
+### Wisconsin::Watertown Active Phase (undefined)
 
 ## Wisconsin::Waukesha
 
-### Wisconsin::Waukesha Active Phase ()
+### Wisconsin::Waukesha Active Phase (undefined)
 
 ## Wisconsin::Waupaca
 
-### Wisconsin::Waupaca Active Phase ()
+### Wisconsin::Waupaca Active Phase (undefined)
 
 ## Wisconsin::Waushara
 
-### Wisconsin::Waushara Active Phase ()
+### Wisconsin::Waushara Active Phase (undefined)
 
 ## Wisconsin::Winnebago
 
-### Wisconsin::Winnebago Active Phase ()
+### Wisconsin::Winnebago Active Phase (undefined)
 
 ## Wisconsin::Wood
 
-### Wisconsin::Wood Active Phase ()
+### Wisconsin::Wood Active Phase (undefined)
 
 # Wyoming
 
@@ -2870,92 +2870,92 @@ Categories of non-frontline essential health care personnel job titles and setti
 
 ## Wyoming::Albany
 
-### Wyoming::Albany Active Phase ()
+### Wyoming::Albany Active Phase (undefined)
 
 ## Wyoming::Bighorn
 
-### Wyoming::Bighorn Active Phase ()
+### Wyoming::Bighorn Active Phase (undefined)
 
 ## Wyoming::Campbell
 
-### Wyoming::Campbell Active Phase ()
+### Wyoming::Campbell Active Phase (undefined)
 
 ## Wyoming::Carbon
 
-### Wyoming::Carbon Active Phase ()
+### Wyoming::Carbon Active Phase (undefined)
 
 ## Wyoming::Converse
 
-### Wyoming::Converse Active Phase ()
+### Wyoming::Converse Active Phase (undefined)
 
 ## Wyoming::Crook
 
-### Wyoming::Crook Active Phase ()
+### Wyoming::Crook Active Phase (undefined)
 
 ## Wyoming::Fremont
 
-### Wyoming::Fremont Active Phase ()
+### Wyoming::Fremont Active Phase (undefined)
 
 ## Wyoming::Goshen
 
-### Wyoming::Goshen Active Phase ()
+### Wyoming::Goshen Active Phase (undefined)
 
 ## Wyoming::Hot Springs
 
-### Wyoming::Hot Springs Active Phase ()
+### Wyoming::Hot Springs Active Phase (undefined)
 
 ## Wyoming::Johnson
 
-### Wyoming::Johnson Active Phase ()
+### Wyoming::Johnson Active Phase (undefined)
 
 ## Wyoming::Laramie
 
-### Wyoming::Laramie Active Phase ()
+### Wyoming::Laramie Active Phase (undefined)
 
 ## Wyoming::Lincoln
 
-### Wyoming::Lincoln Active Phase ()
+### Wyoming::Lincoln Active Phase (undefined)
 
 ## Wyoming::Natrona
 
-### Wyoming::Natrona Active Phase ()
+### Wyoming::Natrona Active Phase (undefined)
 
 ## Wyoming::Niobrara
 
-### Wyoming::Niobrara Active Phase ()
+### Wyoming::Niobrara Active Phase (undefined)
 
 ## Wyoming::Park
 
-### Wyoming::Park Active Phase ()
+### Wyoming::Park Active Phase (undefined)
 
 ## Wyoming::Platte
 
-### Wyoming::Platte Active Phase ()
+### Wyoming::Platte Active Phase (undefined)
 
 ## Wyoming::Sheridan
 
-### Wyoming::Sheridan Active Phase ()
+### Wyoming::Sheridan Active Phase (undefined)
 
 ## Wyoming::Sublette
 
-### Wyoming::Sublette Active Phase ()
+### Wyoming::Sublette Active Phase (undefined)
 
 ## Wyoming::Sweetwater
 
-### Wyoming::Sweetwater Active Phase ()
+### Wyoming::Sweetwater Active Phase (undefined)
 
 ## Wyoming::Teton
 
-### Wyoming::Teton Active Phase ()
+### Wyoming::Teton Active Phase (undefined)
 
 ## Wyoming::Uinta
 
-### Wyoming::Uinta Active Phase ()
+### Wyoming::Uinta Active Phase (undefined)
 
 ## Wyoming::Washakie
 
-### Wyoming::Washakie Active Phase ()
+### Wyoming::Washakie Active Phase (undefined)
 
 ## Wyoming::Weston
 
-### Wyoming::Weston Active Phase ()
+### Wyoming::Weston Active Phase (undefined)
