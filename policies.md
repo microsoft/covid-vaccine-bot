@@ -288,14 +288,42 @@ Counties and tribes may also choose to vaccinate the following groups defined by
 | info | [Arkansas Department of Health](https://www.healthy.arkansas.gov/programs-services/topics/covid-19-vaccination-plan) |
 
 
-## Arkansas Active Phase (1b)
+## Arkansas Active Phase (1c)
 
 * Are you a healthcare worker?
-	* This includes those who work in primary care, urgent care, pharmacies, home health, private care/personal care, hospice care, dialysis centers, correctional staff involved in patient care and transfer, blood donation centers, college/university student health center, K-12 health clinics and school nurses, and dental clinics
 * Are you a long term care resident or work in a long term care facility?
 * Are you classified as an essential worker?
-	* Essential workers include those who work in EMS/fire/law enforcement who serve as first responders, morticians/funeral home staff involved in direct contact, education workers (including K-12, child care, and higher ed), corrections officers, food and agriculture workers, essential government positions, grocery store workers, meal delivery workers, postal/package delivery service workers, public transit workers, workers in houses of worship, and workers in manufacturing.
+	* High priority essential workers include those who work in pharmacies, home health, private care/personal care, hospice care, dialysis centers, correctional officers, blood donation centers, primary care, urgent care, college/university student health center, K-12 health clinics and school nurses, dental clinics, EMS/fire/law enforcement, morticians/funeral home staff involved in direct contact, education workers including K-12, child care, and higher ed, food and agriculture, manufacturing, grocery stores, public transit, US Postal Service, essential government roles. 
+
+Other roles now eligible include essential personnel in transportation and logistics, water and wastewater, food service, shelter and housing, public safety, finance, IT and communications, energy, media, and public health workers.
+* Are you age 16+, and have a high-risk medical condition?
+	* The conditions included are listed below. People who are uncertain if they have a condition on
+the list should speak with their doctor.
+Asthma (moderate-to-severe)
+Cancer
+Cerebrovascular disease (affects blood vessels and blood supply to the brain), includes history
+of stroke
+Chronic kidney disease
+Chronic Obstructive Pulmonary Disease (COPD)
+Cystic fibrosis
+Diabetes mellitus (Type 1and 2)
+Heart conditions
+Hypertension or high blood pressure
+Immunocompromised state (weakened immune system) from solid organ transplant, blood or
+bone marrow transplant, immune deficiencies, HIV, use of corticosteroids, or use of other
+immune weakening medicines
+Liver disease
+Neurologic conditions, such as dementia
+Obesity (BMI of 30 or greater)
+Overweight (BMI > 25 kg/m2, but < 30 kg/m2)
+Pregnancy
+Pulmonary fibrosis (having damaged or scarred lung tissues)
+Sickle cell disease
+Thalassemia (a type of blood disorder) (see [here](https://www.healthy.arkansas.gov/images/uploads/pdf/Definitions_of_1C_Priority_Groups-03-17-21.pdf))
 * Are you age 65+?
+* Do you work or live in a congregate setting?
+	* People residing in high-risk settings
+Includes those who are incarcerated or detained; those living in group homes, congregate settings, or crowded housing; and student housing such as dorms and Greek housing.
 
 # California
 
@@ -2309,6 +2337,14 @@ The list is subject to change as additional scientific evidence is published and
 * Are you a long term care resident or work in a long term care facility?
 * Are you age 65+?
 * Are you classified as an essential worker? (see [here](https://covid19.ncdhhs.gov/vaccines/find-your-spot-take-your-shot/deeper-dive-group-3))
+* Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?
+	* This population includes anyone who is living in congregate or close group living settings who is not already vaccinated due to age, medical condition or job function, including:
+
+People experiencing homelessness or living in a homeless shelter
+Correctional facility, such as jail or prison
+
+* Are you age 16+, and have a high-risk medical condition?
+	* Anyone 16-64 years old with high-risk medical conditions that increase risk of severe disease from COVID-19 such as cancer, COPD, serious heart conditions, sickle cell disease, Type 2 diabetes, among others, regardless of living situation (see [here](https://covid19.ncdhhs.gov/vaccines/find-your-spot-take-your-shot/deeper-dive-group-4))
 
 # North Dakota
 
