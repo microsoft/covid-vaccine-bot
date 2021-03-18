@@ -116,7 +116,24 @@ export const repoServices = async (
 				}
 			)
 
-			return await loadIssuesResponse.json()
+			const prList = await loadIssuesResponse.clone().json()
+			const prChangeList: any[] = []
+			prList.forEach(async (item: any) => {
+				const commentResp = await fetch(
+					`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/issues/${item.number}/comments`,
+					{
+						method: 'GET',
+						headers: {
+							Authorization: `token ${state.accessToken}`,
+						},
+					}
+				)
+				const commentsObj = await commentResp.json()
+				const changes = JSON.parse(commentsObj[0].body.substr(1, commentsObj[0].body.length - 2))
+				prChangeList.push({prNumber: item.number, prDescription: item.body, prChanges: changes})
+			});
+
+			return [await loadIssuesResponse.json(), prChangeList]
 
 		case 'getRepoFileData':
 			const dataFolderResp = await fetch(

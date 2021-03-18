@@ -31,7 +31,8 @@ export const setIssuesList = mutatorAction(
 	(data: any[] | undefined, callback?: any | undefined) => {
 		if (data) {
 			const store = getAppStore()
-			store.issues = data
+			store.issues = data[0]
+			store.prChanges= data[1]
 			if (callback) {
 				callback()
 			}

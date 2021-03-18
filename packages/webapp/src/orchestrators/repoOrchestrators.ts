@@ -52,7 +52,7 @@ orchestrator(initializeGitData, async () => {
 
 	resp = await repoServices('getIssues')
 	setIssuesList(resp)
-
+	console.log(resp[1])
 	handleCreatePR()
 
 	initStoreData(false)

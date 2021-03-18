@@ -61,9 +61,9 @@ export default observer(function Review(props: ReviewProp) {
 
 			changeSummary.current.push({key: 'global', type: 'customStrings', value: getObjDiffs(JSON.parse(JSON.stringify(
 				state.initGlobalFileData.customStrings
-			).toLowerCase()), JSON.parse(JSON.stringify(
+			)), JSON.parse(JSON.stringify(
 				state.globalFileData.customStrings
-			).toLowerCase()))})
+			)))})
 		}
 
 
@@ -79,9 +79,9 @@ export default observer(function Review(props: ReviewProp) {
 
 			changeSummary.current.push({key: 'global', type: 'cdcStateNames', value: getObjDiffs(JSON.parse(JSON.stringify(
 				state.initGlobalFileData.cdcStateNames
-			).toLowerCase()), JSON.parse(JSON.stringify(
+			)), JSON.parse(JSON.stringify(
 				state.globalFileData.cdcStateNames
-			).toLowerCase()))})
+			)))})
 		}
 
 		if (
@@ -96,9 +96,9 @@ export default observer(function Review(props: ReviewProp) {
 
 			changeSummary.current.push({key: 'global', type: 'cdcStateLinks', value: getObjDiffs(JSON.parse(JSON.stringify(
 				state.initGlobalFileData.cdcStateLinks
-			).toLowerCase()), JSON.parse(JSON.stringify(
+			)), JSON.parse(JSON.stringify(
 				state.globalFileData.cdcStateLinks
-			).toLowerCase()))})
+			)))})
 		}
 
 		Object.keys(state.repoFileData).forEach((location: any) => {
@@ -127,9 +127,9 @@ export default observer(function Review(props: ReviewProp) {
 
 						changeSummary.current.push({key: location, type: 'info', value: getObjDiffs(JSON.parse(JSON.stringify(
 							state.initRepoFileData[location].info
-						).toLowerCase()), JSON.parse(JSON.stringify(
+						)), JSON.parse(JSON.stringify(
 							state.repoFileData[location].info
-						).toLowerCase()))})
+						)))})
 						addChanges = true
 					}
 					if (
@@ -146,9 +146,9 @@ export default observer(function Review(props: ReviewProp) {
 
 						changeSummary.current.push({key: location, type: 'regions', value: getObjDiffs(JSON.parse(JSON.stringify(
 							state.initRepoFileData[location].regions ?? {}
-						).toLowerCase()), JSON.parse(JSON.stringify(
+						)), JSON.parse(JSON.stringify(
 							state.repoFileData[location].regions
-						).toLowerCase()))})
+						)))})
 						addChanges = true
 					}
 					if (
@@ -166,9 +166,9 @@ export default observer(function Review(props: ReviewProp) {
 
 						changeSummary.current.push({key: location, type: 'vaccination', value: getObjDiffs(JSON.parse(JSON.stringify(
 							state.initRepoFileData[location].vaccination
-						).toLowerCase()), JSON.parse(JSON.stringify(
+						)), JSON.parse(JSON.stringify(
 							state.repoFileData[location].vaccination
-						).toLowerCase()))})
+						)))})
 						addChanges = true
 					}
 					if (
@@ -186,9 +186,9 @@ export default observer(function Review(props: ReviewProp) {
 
 						changeSummary.current.push({key: location, type: 'strings', value: getObjDiffs(JSON.parse(JSON.stringify(
 							state.initRepoFileData[location].strings
-						).toLowerCase()), JSON.parse(JSON.stringify(
+						)), JSON.parse(JSON.stringify(
 							state.repoFileData[location].strings
-						).toLowerCase()))})
+						)))})
 						addChanges = true
 					}
 					if (addChanges) {

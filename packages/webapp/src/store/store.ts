@@ -24,7 +24,8 @@ export const getAppState = (): AppState => {
 		toggleQualifier: false,
 		isEditable: true,
 		pendingChanges: false,
-		isDataRefreshing: false
+		isDataRefreshing: false,
+		prChanges: undefined
 	}
 }
 
