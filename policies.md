@@ -1158,12 +1158,12 @@ Type 2 diabetes mellitus (see [here](https://www.cdc.gov/coronavirus/2019-ncov/n
 	* This includes those who work or volunteer in healthcare and have (physical or close) contact or face to face interactions with patients. Examples include: Inpatient, outpatient, provider office setting, nursing homes, residential care facilities, assisted living facilities, in-home services.
 This includes all clinical and non-clinical positions: clinicians, dietary, environmental services, administrators who have direct contact with patients, clergy who see patients in the healthcare setting, non-clinicians who assist in procedures, transportation staff, etc.
 This also includes local health department staff who interact with patients at test sites, health clinics or provide direct patient care (see [here](https://www.coronavirus.in.gov/vaccine/index.htm))
-* Are you a long-term care resident?
+* Are you a long term care resident or work in a long term care facility?
 * Are you a first responder?
 	* This includes those who are who are regularly called to the scene of an emergency to give medical aid, including firefighters, police officers and sheriff's deputies, emergency medical services, reservists and correctional officers (see [here](https://www.coronavirus.in.gov/vaccine/index.htm))
 * Do you have exposure to COVID-19 infectious material?
 	* Examples include cleaning of rooms or material from COVID-19 patients, performing COVID-19 testing, other exposure to infected tissue, performing autopsies or other post-mortem examinations of COVID-19 patients)
-* Are you age 50+?
+* Are you age 45+?
 * Are you age 16+, and have a high-risk medical condition?
 	* Initial groups of patients at highest risk of severe illness from COVID-19 who are identified by their healthcare provider are also eligible. These individuals will receive a unique registration link by text or email, or may call 211 after receiving the notification:
 
@@ -1172,6 +1172,12 @@ Sickle cell disease patients
 Down syndrome
 Post-solid organ transplant
 People who are actively in treatment (chemotherapy, radiation, surgery) for cancer now or in the last three months, or with active primary lung cancer or active hematologic cancers (lymphoma, leukemia and multiple myeloma) (see [here](https://www.coronavirus.in.gov/vaccine/index.htm))
+* Are you a K-12 educator or work in a licensed child care facility?
+	* Examples include:
+Teacher or staff in pre-K through high school, childcare center or Head Start and Early Start programs
+Licensed childcare providers, including center-based and family care providers
+Classroom aides, bus drivers, janitors, counselors, administration staff, cafeteria workers and substitute teachers
+
 
 # Iowa
 
