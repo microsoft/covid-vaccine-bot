@@ -9,7 +9,9 @@
 		},
 		"eligibility": {
 			"url": "https://covid19.ncdhhs.gov/vaccines/find-your-spot-take-your-shot",
-			"scrapeQuery": ["article"]
+			"scrapeQuery": [
+				"article"
+			]
 		},
 		"scheduling_phone": {
 			"url": "tel:1-888-675-4567",
@@ -35,22 +37,22 @@
 				{
 					"question": "c19.eligibility.question/essential_worker",
 					"moreInfoUrl": "https://covid19.ncdhhs.gov/vaccines/find-your-spot-take-your-shot/deeper-dive-group-3"
+				},
+				{
+					"question": "c19.eligibility.question/congregate",
+					"moreInfoText": "c19.eligibility.moreinfo/congregate.nc.current"
+				},
+				{
+					"question": "c19.eligibility.question/health",
+					"moreInfoText": "c19.eligibility.moreinfo/health.nc.current",
+					"moreInfoUrl": "https://covid19.ncdhhs.gov/vaccines/find-your-spot-take-your-shot/deeper-dive-group-4"
 				}
 			]
 		},
 		{
 			"id": "next",
 			"label": "Next",
-			"qualifications": [
-				{
-					"question": "c19.eligibility.question/congregate"
-				},
-				{
-					"question": "c19.eligibility.question/age.are_you_age",
-					"moreInfoText": "c19.eligibility.moreinfo/age.are_you_age.nc.next",
-					"moreInfoUrl": "https://covid19.ncdhhs.gov/vaccines/find-your-spot-take-your-shot/deeper-dive-group-4"
-				}
-			]
+			"qualifications": []
 		}
 	]
 }
