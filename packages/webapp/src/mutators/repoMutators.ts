@@ -100,6 +100,7 @@ export const updateLocationList = mutatorAction(
 					const schedulingPhoneKey: string = `c19.link/scheduling.phone.${newLocObj.info.content.id}`.toLowerCase()
 
 					stringsContentObj[schedulingPhoneKey] = {
+						...stringsContentObj[schedulingPhoneKey],
 						[store.currentLanguage]: locationData.schedulingPhone,
 					}
 					newLocObj.vaccination.content.links.scheduling_phone.text = schedulingPhoneKey
@@ -109,6 +110,7 @@ export const updateLocationList = mutatorAction(
 					const schedulingPhoneDescKey = `c19.link/scheduling.phone.description.${newLocObj.info.content.id}`.toLowerCase()
 
 					stringsContentObj[schedulingPhoneDescKey] = {
+						...stringsContentObj[schedulingPhoneDescKey],
 						[store.currentLanguage]: locationData.schedulingPhoneDesc,
 					}
 
@@ -132,6 +134,7 @@ export const updateLocationList = mutatorAction(
 					const schedulingPhoneKey: string = `c19.link/scheduling.phone.${location.info.content.metadata.code_alpha}.${newLocObj.info.content.id}`.toLowerCase()
 
 					location.strings.content[schedulingPhoneKey] = {
+						...location.strings.content[schedulingPhoneKey],
 						[store.currentLanguage]: locationData.schedulingPhone,
 					}
 					newLocObj.vaccination.content.links.scheduling_phone.text = schedulingPhoneKey
@@ -141,6 +144,7 @@ export const updateLocationList = mutatorAction(
 					const schedulingPhoneDescKey = `c19.link/scheduling.phone.description.${location.info.content.metadata.code_alpha}.${newLocObj.info.content.id}`.toLowerCase()
 
 					location.strings.content[schedulingPhoneDescKey] = {
+						...location.strings.content[schedulingPhoneDescKey],
 						[store.currentLanguage]: locationData.schedulingPhoneDesc,
 					}
 
@@ -299,6 +303,7 @@ export const updateLocationData = mutatorAction(
 
 				if (locationData?.schedulingPhone !== '') {
 					location.strings.content[schedulingPhoneKey] = {
+						...location.strings.content[schedulingPhoneKey],
 						[store.currentLanguage]: locationData.schedulingPhone,
 					}
 					if (location.vaccination.content.links.scheduling_phone) {
@@ -334,6 +339,7 @@ export const updateLocationData = mutatorAction(
 								.description
 					}
 					location.strings.content[schedulingPhoneDescKey] = {
+						...location.strings.content[schedulingPhoneDescKey],
 						[store.currentLanguage]: locationData.schedulingPhoneDesc,
 					}
 
@@ -463,6 +469,7 @@ export const updateLocationData = mutatorAction(
 
 				if (locationData?.schedulingPhone !== '') {
 					location.strings.content[schedulingPhoneKey] = {
+						...location.strings.content[schedulingPhoneKey],
 						[store.currentLanguage]: locationData.schedulingPhone,
 					}
 					if (regionObj.vaccination.content.links.scheduling_phone) {
@@ -498,6 +505,7 @@ export const updateLocationData = mutatorAction(
 								.description
 					}
 					location.strings.content[schedulingPhoneDescKey] = {
+						...location.strings.content[schedulingPhoneDescKey],
 						[store.currentLanguage]: locationData.schedulingPhoneDesc,
 					}
 
