@@ -4552,6 +4552,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["axios", "npm:0.21.1"],
             ["body-parser", "npm:1.19.0"],
             ["cors", "npm:2.8.5"],
+            ["csv-parse", "npm:4.15.3"],
             ["express", "npm:4.17.1"],
             ["express-openapi", "npm:7.5.0"],
             ["nodemon", "npm:2.0.7"],

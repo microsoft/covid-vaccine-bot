@@ -96,8 +96,8 @@ export interface VaccinationPlan {
 
 export interface Link {
 	url: string
-	text?: string
-	description?: string
+	text?: string | undefined
+	description?: string | undefined
 
 	/**
 	 * Scraping hins for the current link (only applies to info links ATM).

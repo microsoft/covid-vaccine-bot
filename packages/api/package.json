@@ -12,6 +12,7 @@
 		"@covid-vax-bot/plans": "workspace:packages/plans",
 		"axios": "^0.21.1",
 		"cors": "^2.8.5",
+		"csv-parse": "^4.15.3",
 		"express": "^4.17.1",
 		"express-openapi": "^7.5.0"
 	},
