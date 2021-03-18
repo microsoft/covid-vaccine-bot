@@ -515,11 +515,18 @@ export const modifyStateStrings = mutatorAction(
 		if (data) {
 			const store = getAppStore()
 			if (store?.repoFileData) {
+				console.log(data)
 				store.pendingChanges = true
 				const location = store.repoFileData[data.locationKey]
-				const newStringsObj: any = {}
-				newStringsObj[store.currentLanguage] = data.item.moreInfoContent
-				location.strings.content[data.infoKey] = newStringsObj
+
+				if (!data.item.moreInfoContent) {
+					delete(location.strings.content[data.infoKey])
+				} else {
+					const newStringsObj: any = {}
+					newStringsObj[store.currentLanguage] = data.item.moreInfoContent
+					location.strings.content[data.infoKey] = newStringsObj
+				}
+
 				if (!data.regionInfo) {
 					const affectedPhase = location.vaccination.content.phases.find(
 						(phase: any) => phase.id === data.item.groupId
@@ -530,7 +537,11 @@ export const modifyStateStrings = mutatorAction(
 							data.item.qualifierId.toLowerCase()
 					)
 					if (affectedQualifier) {
-						affectedQualifier.moreInfoText = data.infoKey
+						if (data.item.moreInfoContent) {
+							affectedQualifier.moreInfoText = data.infoKey
+						} else {
+							delete(affectedQualifier.moreInfoText)
+						}
 					} else {
 						affectedPhase.qualifications.push({
 							question: data.item.qualifierId,
