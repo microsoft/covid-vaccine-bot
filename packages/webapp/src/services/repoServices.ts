@@ -268,6 +268,7 @@ export const repoServices = async (
 				const globalUpdates = extraData[0]
 				const locationUpdates = extraData[1]
 				const prFormData = extraData[3]
+				const changeSummary = extraData[4]
 
 				const createBranchResponse = await fetch(
 					`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/git/refs`,
@@ -450,6 +451,19 @@ export const repoServices = async (
 						},
 						body: JSON.stringify({
 							labels: ['data-composer-submission', 'requires-data-accuracy-review']
+						}),
+					}
+				)
+
+				await fetch(
+					`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/issues/${prRespClone.number}/comments`,
+					{
+						method: 'POST',
+						headers: {
+							Authorization: `token ${state.accessToken}`,
+						},
+						body: JSON.stringify({
+							body: `\`${JSON.stringify(changeSummary)}\``
 						}),
 					}
 				)
