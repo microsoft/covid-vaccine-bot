@@ -11,8 +11,130 @@ export const apiDoc: OpenAPIV2.Document = {
 		version: '0.0.1',
 	},
 	definitions: {
+		/**
+		 * General Error Object
+		 */
 		Error: {
 			additionalProperties: true,
+		},
+		/**
+		 * A region hierarchy (e.g. US -> WA -> Kitsap)
+		 */
+		RegionHieararchy: {
+			type: 'array',
+			items: {
+				type: 'object',
+				$ref: '#/definitions/RegionHierarchyItem',
+			},
+		},
+		/**
+		 * An item in a region Hierarchy
+		 */
+		RegionHierarchyItem: {
+			type: 'object',
+			properties: {
+				id: {
+					type: 'string',
+				},
+				name: {
+					type: 'string',
+				},
+				type: {
+					type: 'string',
+				},
+			},
+			required: ['id', 'name', 'type'],
+		},
+		/**
+		 * An informational or actionable link
+		 */
+		Link: {
+			type: 'object',
+			properties: {
+				url: {
+					type: 'string',
+				},
+				text: {
+					type: 'string',
+				},
+				description: {
+					type: 'string',
+				},
+				content: {
+					description: 'A content-type hint for binary formats',
+					enum: ['image', 'pdf'],
+					type: 'string',
+				},
+			},
+			required: ['url'],
+		},
+		/**
+		 * An object of utility links
+		 */
+		Links: {
+			type: 'object',
+			properties: {
+				info: {
+					$ref: '#/definitions/Link',
+				},
+				workflow: {
+					$ref: '#/definitions/Link',
+				},
+				scheduling: {
+					$ref: '#/definitions/Link',
+				},
+				scheduling_phone: {
+					$ref: '#/definitions/Link',
+				},
+				registration: {
+					$ref: '#/definitions/Link',
+				},
+				providers: {
+					$ref: '#/definitions/Link',
+				},
+				eligibility: {
+					$ref: '#/definitions/Link',
+				},
+				eligibility_plan: {
+					$ref: '#/definitions/Link',
+				},
+			},
+		},
+		/**
+		 * Vaccination Phase Info
+		 */
+		Phase: {
+			type: 'object',
+			properties: {
+				id: {
+					type: 'string',
+				},
+				qualifications: {
+					type: 'array',
+					items: {
+						type: 'object',
+						$ref: '#/definitions/Qualification',
+					},
+				},
+			},
+			required: ['id'],
+		},
+		/**
+		 * The top-level plan response
+		 */
+		Plan: {
+			type: 'object',
+			properties: {
+				regionalHierarchy: {
+					$ref: '#/definitions/RegionHieararchy',
+				},
+				links: {
+					$ref: '#/definitions/Links',
+				},
+				phase: {
+					$ref: '#/definitions/Phase',
+				},
+			},
 		},
 	},
 
