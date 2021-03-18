@@ -3526,13 +3526,25 @@ Other Public Health Workers (see [here](https://www.vdh.virginia.gov/covid-19-va
 | scheduling_phone | [1-888-856-5816](tel:1-888-856-5816) |
 
 
-## Washington Active Phase (1b_tier1)
+## Washington Active Phase (1b_tier_2)
 
 * Are you a healthcare worker?
-* Are you a long-term care resident?
-* Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.
 * Are you age 65+?
-* Are you age 50+ in a multi-generational household?
+* Are you age 50+ and live in a multigenerational household?
+* Are you a long term care resident or work in a long term care facility?
+* Are you classified as an essential worker?
+	* This includes high-risk critical workers* in the following industries: agriculture, fishing vessel crews, food processing, grocery store/food bank, corrections (prisons, jails, detention centers), court of law, public transit, and remaining first responders
+*Work in an enclosed space around other people and cannot maintain physical distance.
+
+This also includes educators and school staff for pre-kindergarten through 12th grade, and child care workers
+* Are you age 16+, and have a high-risk medical condition?
+	* People with disabilities wondering about their eligibility should apply the definition to their situation: Does their disability put them at increased risk for COVID-19? They can also work with their health care provider to assess their eligibility. In particular, Down syndrome increases risk for severe illness and is on the CDC list. Research continues to emerge on other developmental and intellectual disabilities that put someone at increased risk, so these eligibility guidelines lean toward inclusiveness.
+
+People with disabilities are eligible in 1B tier 2 if:
+
+Their disability alone puts them at higher risk for severe illness from COVID-19 (e.g. Down syndrome).
+They have a disability that doesn’t alone put them at higher risk but they also have another underlying condition from the CDC list. (e.g. A person who is deaf and has Type 2 diabetes). (see [here](https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html))
+* Are you currently pregnant?
 
 ## Washington Regions
 
