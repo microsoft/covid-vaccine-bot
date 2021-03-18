@@ -2,3 +2,9 @@ String ID,en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-j
 c19.link/scheduling.phone.nc,"1-888-675-4567",,,,,,,,,,,,,,
 c19.link/scheduling.phone.description.nc,"COVID-19 Vaccine Help Center",,,,,,,,,,,,,,
 c19.eligibility.moreinfo/age.are_you_age.nc.next,"Anyone 16-64 years old with high-risk medical conditions that increase risk of severe disease from COVID-19 such as cancer, COPD, serious heart conditions, sickle cell disease, Type 2 diabetes, among others, regardless of living situation",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/health.nc.current,"Anyone 16-64 years old with high-risk medical conditions that increase risk of severe disease from COVID-19 such as cancer, COPD, serious heart conditions, sickle cell disease, Type 2 diabetes, among others, regardless of living situation",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/congregate.nc.current,"This population includes anyone who is living in congregate or close group living settings who is not already vaccinated due to age, medical condition or job function, including:
+
+People experiencing homelessness or living in a homeless shelter
+Correctional facility, such as jail or prison
+",,,,,,,,,,,,,,
