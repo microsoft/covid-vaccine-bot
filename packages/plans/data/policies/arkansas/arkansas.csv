@@ -1,10 +1,33 @@
 String ID,en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th
 c19.eligibility.moreinfo/essential_worker.ar.1b,"Essential workers include those who work in EMS/fire/law enforcement who serve as first responders, morticians/funeral home staff involved in direct contact, education workers (including K-12, child care, and higher ed), corrections officers, food and agriculture workers, essential government positions, grocery store workers, meal delivery workers, postal/package delivery service workers, public transit workers, workers in houses of worship, and workers in manufacturing.",,,,,,,,,,,,,,
-c19.eligibility.moreinfo/long_term_care_resident.are.ar.1c,"High priority essential workers include those who work in pharmacies, home health, private care/personal care, hospice care, dialysis centers, correctional officers, blood donation centers, primary care, urgent care, college/university student health center, K-12 health clinics and school nurses, dental clinics, EMS/fire/law enforcement, morticians/funeral home staff involved in direct contact, education workers including K-12, child care, and higher ed, food and agriculture, manufacturing, grocery stores, public transit, US Postal Service, essential government roles. 
-
-Other roles now eligible include essential personnel in transportation and logistics, water and wastewater, food service, shelter and housing, public safety, finance, IT and communications, energy, media, and public health workers.",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/long_term_care_resident.are.ar.1c,,,,,,,,,,,,,,,
 c19.eligibility.moreinfo/essential_worker.ar.1c,"High priority essential workers include those who work in pharmacies, home health, private care/personal care, hospice care, dialysis centers, correctional officers, blood donation centers, primary care, urgent care, college/university student health center, K-12 health clinics and school nurses, dental clinics, EMS/fire/law enforcement, morticians/funeral home staff involved in direct contact, education workers including K-12, child care, and higher ed, food and agriculture, manufacturing, grocery stores, public transit, US Postal Service, essential government roles. 
 
 Other roles now eligible include essential personnel in transportation and logistics, water and wastewater, food service, shelter and housing, public safety, finance, IT and communications, energy, media, and public health workers.",,,,,,,,,,,,,,
 c19.eligibility.moreinfo/essential_worker.ar.1bgroup2,"High priority essential workers include those who work in pharmacies, home health, private care/personal care, hospice care, dialysis centers, correctional officers, blood donation centers, primary care, urgent care, college/university student health center, K-12 health clinics and school nurses, dental clinics, EMS/fire/law enforcement, morticians/funeral home staff involved in direct contact, education workers including K-12, child care, and higher ed, food and agriculture, manufacturing, grocery stores, public transit, US Postal Service, essential government roles. ",,,,,,,,,,,,,,
 c19.eligibility.moreinfo/healthcare_worker.ar.1b,"This includes those who work in primary care, urgent care, pharmacies, home health, private care/personal care, hospice care, dialysis centers, correctional staff involved in patient care and transfer, blood donation centers, college/university student health center, K-12 health clinics and school nurses, and dental clinics",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/health.ar.1c,"The conditions included are listed below. People who are uncertain if they have a condition on
+the list should speak with their doctor.
+Asthma (moderate-to-severe)
+Cancer
+Cerebrovascular disease (affects blood vessels and blood supply to the brain), includes history
+of stroke
+Chronic kidney disease
+Chronic Obstructive Pulmonary Disease (COPD)
+Cystic fibrosis
+Diabetes mellitus (Type 1and 2)
+Heart conditions
+Hypertension or high blood pressure
+Immunocompromised state (weakened immune system) from solid organ transplant, blood or
+bone marrow transplant, immune deficiencies, HIV, use of corticosteroids, or use of other
+immune weakening medicines
+Liver disease
+Neurologic conditions, such as dementia
+Obesity (BMI of 30 or greater)
+Overweight (BMI > 25 kg/m2, but < 30 kg/m2)
+Pregnancy
+Pulmonary fibrosis (having damaged or scarred lung tissues)
+Sickle cell disease
+Thalassemia (a type of blood disorder)",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/congregate.do.ar.1c,"People residing in high-risk settings
+Includes those who are incarcerated or detained; those living in group homes, congregate settings, or crowded housing; and student housing such as dorms and Greek housing.",,,,,,,,,,,,,,
