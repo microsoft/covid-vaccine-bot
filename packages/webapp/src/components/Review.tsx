@@ -235,22 +235,16 @@ export default observer(function Review(props: ReviewProp) {
 				<div className="bodyContent">
 					{!showLoading ? (
 						<section>
-							<DetailsList
-								items={changesList}
-								columns={changesColumns}
-								setKey="set"
-								layoutMode={DetailsListLayoutMode.justified}
-								checkboxVisibility={2}
-							/>
+							
 							<div className="submitContainer">
 								<TextField
-									label="Optional Title:"
+									label="Title (Optional):"
 									name="prTitle"
 									value={formData.prTitle}
 									onChange={handleTextChange}
 								/>
 								<TextField
-									label="Optional Details:"
+									label="Details (Optional):"
 									name="prDetails"
 									multiline={true}
 									rows={5}
@@ -258,7 +252,7 @@ export default observer(function Review(props: ReviewProp) {
 									resizable={false}
 									value={formData.prDetails}
 									onChange={handleTextChange}
-								/>
+								/>								
 								<PrimaryButton
 									text="Submit changes"
 									onClick={() => {
@@ -267,6 +261,13 @@ export default observer(function Review(props: ReviewProp) {
 									}}
 								/>
 							</div>
+							<DetailsList
+								items={changesList}
+								columns={changesColumns}
+								setKey="set"
+								layoutMode={DetailsListLayoutMode.justified}
+								checkboxVisibility={2}
+								/>
 						</section>
 					) : (
 						<section className="loadingContainer">
