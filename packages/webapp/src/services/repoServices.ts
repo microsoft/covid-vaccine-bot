@@ -129,8 +129,10 @@ export const repoServices = async (
 					}
 				)
 				const commentsObj = await commentResp.json()
-				const changes = JSON.parse(commentsObj[0].body.substr(1, commentsObj[0].body.length - 2))
-				prChangeList.push({prNumber: item.number, prDescription: item.body, prChanges: changes})
+				if (commentsObj && commentsObj.length > 0) {
+					const changes = JSON.parse(commentsObj[0].body.substr(1, commentsObj[0].body.length - 2))
+					prChangeList.push({prNumber: item.number, prDescription: item.body, prChanges: changes})
+				}
 			});
 
 			return [await loadIssuesResponse.json(), prChangeList]
