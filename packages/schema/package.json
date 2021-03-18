@@ -1,5 +1,5 @@
 {
-	"name": "@covid-vax-bot/state-plan-schema",
+	"name": "@covid-vax-bot/plan-schema",
 	"version": "0.0.1",
 	"private": true,
 	"main": "src/index.ts",

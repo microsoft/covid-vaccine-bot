@@ -1,5 +1,5 @@
 {
-	"name": "@covid-vax-bot/state-plans",
+	"name": "@covid-vax-bot/plans",
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
@@ -16,7 +16,7 @@
 	},
 	"devDependencies": {
 		"@azure/storage-blob": "^12.5.0",
-		"@covid-vax-bot/state-plan-schema": "workspace:packages/schema",
+		"@covid-vax-bot/plan-schema": "workspace:packages/schema",
 		"@essex/scripts": "^12.0.2",
 		"@types/config": "^0.0.38",
 		"@types/jsonwebtoken": "^8.5.1",

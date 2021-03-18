@@ -3,7 +3,7 @@
  * Licensed under the MIT license. See LICENSE file in the project.
  */
 
-import { RolloutPhase, Link } from '@covid-vax-bot/state-plan-schema'
+import { RolloutPhase, Link } from '@covid-vax-bot/plan-schema'
 
 export interface PlanRegion {
 	id: string

@@ -21,10 +21,14 @@ export function createApp() {
 		paths: path.resolve(__dirname, 'api-routes'),
 		routesGlob: '**/*.{ts,js}',
 		routesIndexFileRegExp: /(?:index)?\.[tj]s$/,
-	})
-
-	app.use((err: OpenApiError, req: Request, res: Response, next: any) => {
-		res.status(err.status).json(err)
+		errorMiddleware: (
+			err: OpenApiError,
+			req: Request,
+			res: Response,
+			next: any
+		) => {
+			res.status(err.status).json(err)
+		},
 	})
 
 	return app
