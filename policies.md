@@ -484,27 +484,12 @@ Family caregivers of those with high/moderate-risk conditions may also be eligib
 
 * Are you a healthcare worker?
 * Are you a long-term care resident?
-* Are you classified as an essential worker?
-	* This includes:
-- Members of the Metropolitan Police Department
-- Department of Corrections Employees
-- Continuity of Government Operations personnel
-- All teachers and staff who work for a school or licensed child care facility in DC
-- Grocery Store workers
-- Outreach workers and other essential employees who work in health, human, and social services
-- Individuals working in manufacturing
-- Individuals working in food packaging
-- Staff working in courts and individuals providing legal services
-- Frontline employees of public (mass) transit
-- Employees of the US Postal Service
-- Staff working in food service
-- Essential employees in local government agencies
-- Essential employees of public utilities
-- Individuals working in commercial and residential property maintenance and environmental services
+* Are you an inpatient psychiatric patient?
+* Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.
 * Are you age 65+?
 * Do you live in an intermediate care facility, a group home, or another high-risk congregate setting?
-	* This also includes individuals in in-patient psychiatric care facilities and those who are currently incarcerated.
 * Are you experiencing homelessness?
+* Are you a Continuity of Government personnel?
 * Are you age 16+, and have a high-risk medical condition?
 	*  * Asthma, Chronic Obstructive Pulmonary Disease (COPD), and other Chronic Lung Disease
  * Bone Marrow and Solid Organ Transplantation
