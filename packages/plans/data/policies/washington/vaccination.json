@@ -148,6 +148,10 @@
 				},
 				{
 					"question": "c19.eligibility.question/health.are_you_currently"
+				},
+				{
+					"question": "c19.eligibility.question/veteran.are",
+					"moreInfoText": "c19.eligibility.moreinfo/veteran.are.wa.1b_tier_2"
 				}
 			]
 		}

@@ -117,4 +117,5 @@ c19.eligibility.question/age.are_you_a,"Are you a school age child or in daycare
 c19.eligibility.question/age.are_you_age_18,"Are you age 18+?",,,,,,,,,,,,,,
 c19.eligibility.question/essential_worker.are_you_a_caregiver,"Are you a caregiver to an individual 16 or older with disabilities?",,,,,,,,,,,,,,
 c19.eligibility.question/age.are_you_age_45,"Are you age 45+?",,,,,,,,,,,,,,
+c19.eligibility.question/veteran.are,"Are you a veteran?",,,,,,,,,,,,,,
 c19.eligibility.question/congregate.are_you_currently,"Are you currently incarcerated?",,,,,,,,,,,,,,
