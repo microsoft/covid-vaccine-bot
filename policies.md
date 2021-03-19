@@ -379,17 +379,14 @@ OR If as a result of a developmental or other severe high-risk disability one or
 | eligibility | [https://covid19.colorado.gov/for-coloradans/vaccine/vaccine-for-coloradans](https://covid19.colorado.gov/for-coloradans/vaccine/vaccine-for-coloradans) |
 
 
-## Colorado Active Phase (1b3)
+## Colorado Active Phase (1b4)
 
-* Are you age 60+?
-* Are you a healthcare worker?
-* Are you a long term care resident or work in a long term care facility?
-* Are you a first responder?
-	* This includes firefighters, police, COVID-19 response personnel, corrections officers, and funeral service providers.
+* Are you age 50+?
 * Are you classified as an essential worker?
-	* This includes K-12 and child care workers in licensed child care programs, teachers (full-time and substitutes), bus, food, counselors, administrative, safety and other support services offered inside the school, members of the state executive and judiciary branches, and frontline grocery or agriculture workers. The intent of this classification is to prioritize current workers who cannot maintain physical distance from others at their place of employment, who work in close contact with many people, especially indoors, and in places with poor ventilation including meatpacking workers; grocery store workers; and agricultural processing workers.
-* Are you age 16+, and have two or more high-risk medical conditions?
-	* The intent of this classification is to vaccinate Coloradans who have a high risk of severe outcomes from COVID-19. This includes Coloradans with two or more of the following: Cancer (defined as patients who are currently receiving treatment or have received treatment within the last month for cancer), chronic kidney disease, COPD, diabetes mellitus (types 1 and 2), Down syndrome, specific heart conditions (heart failure, cardiomyopathies or coronary heart disease, and severe valvular/congenital heart disease), obesity (BMI >= 30kg/m^2), pregnancy, sickle cell disease, solid organ transplant, individuals with disabilities who require direct care in their home, and people with disabilities that prevent them from wearing masks.	
+	* Essential workers include healthcare workers, first responders, K-12 educators and licensed child care workers, members of state judiciary and executive branches, grocery and food/agricultural workers that can't distance, as well as frontline workers in student-facing higher education employees, food/restaurant services, manufacturing, the US Postal Service, public transit and specialized transportation, public health, human services, faith direct care for those experiencing homelessness, journalism, workers required for continuity of local or state government, and faith leaders
+* Are you age 16+, and have a high-risk medical condition?
+	* The intent of this classification is to vaccinate Coloradans who have a high risk of severe outcomes from COVID-19. This includes Coloradans with one or more of the following: Cancer (defined as patients who are currently receiving treatment or have received treatment within the last month for cancer), chronic kidney disease, COPD, diabetes mellitus (types 1 and 2), Down syndrome, specific heart conditions (heart failure, cardiomyopathies or coronary heart disease, and severe valvular/congenital heart disease), obesity (BMI >= 30kg/m^2), pregnancy, sickle cell disease, solid organ transplant, individuals with disabilities who require direct care in their home, and people with disabilities that prevent them from wearing masks.
+* Are you age 18+ and are someone who received a placebo during a COVID-19 clinical trial?
 
 # Connecticut
 
@@ -487,12 +484,27 @@ Family caregivers of those with high/moderate-risk conditions may also be eligib
 
 * Are you a healthcare worker?
 * Are you a long-term care resident?
-* Are you an inpatient psychiatric patient?
-* Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.
+* Are you classified as an essential worker?
+	* This includes:
+- Members of the Metropolitan Police Department
+- Department of Corrections Employees
+- Continuity of Government Operations personnel
+- All teachers and staff who work for a school or licensed child care facility in DC
+- Grocery Store workers
+- Outreach workers and other essential employees who work in health, human, and social services
+- Individuals working in manufacturing
+- Individuals working in food packaging
+- Staff working in courts and individuals providing legal services
+- Frontline employees of public (mass) transit
+- Employees of the US Postal Service
+- Staff working in food service
+- Essential employees in local government agencies
+- Essential employees of public utilities
+- Individuals working in commercial and residential property maintenance and environmental services
 * Are you age 65+?
 * Do you live in an intermediate care facility, a group home, or another high-risk congregate setting?
+	* This also includes individuals in in-patient psychiatric care facilities and those who are currently incarcerated.
 * Are you experiencing homelessness?
-* Are you a Continuity of Government personnel?
 * Are you age 16+, and have a high-risk medical condition?
 	*  * Asthma, Chronic Obstructive Pulmonary Disease (COPD), and other Chronic Lung Disease
  * Bone Marrow and Solid Organ Transplantation
