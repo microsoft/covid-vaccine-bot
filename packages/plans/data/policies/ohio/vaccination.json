@@ -19,6 +19,10 @@
 			"url": "tel:1-833-427-5634",
 			"text": "c19.link/scheduling.phone.oh",
 			"description": "c19.link/scheduling.phone.description.oh"
+		},
+		"providers": {
+			"url": "https://coronavirus.ohio.gov/wps/portal/gov/covid-19/covid-19-vaccination-program/resources/covid-19-mass-vaccination-clinics",
+			"text": "c19.links/vax_providers"
 		}
 	},
 	"activePhase": "1a",
@@ -32,7 +36,7 @@
 					"moreInfoText": "c19.eligibility.moreinfo/healthcare_worker.oh.current"
 				},
 				{
-					"question": "c19.eligibility.question/age.are"
+					"question": "c19.eligibility.question/age.are_you"
 				},
 				{
 					"question": "c19.eligibility.question/long_term_care_resident.are"
@@ -58,6 +62,13 @@
 					"question": "c19.eligibility.question/essential_worker.are_you",
 					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.are_you.oh.current",
 					"moreInfoUrl": "https://coronavirus.ohio.gov/wps/portal/gov/covid-19/covid-19-vaccination-program/covid-19-vaccination-program"
+				},
+				{
+					"question": "c19.eligibility.question/health",
+					"moreInfoText": "c19.eligibility.moreinfo/health.oh.current"
+				},
+				{
+					"question": "c19.eligibility.question/health.are_you_currently"
 				}
 			]
 		}
