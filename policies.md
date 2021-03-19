@@ -3626,6 +3626,8 @@ People with disabilities are eligible in 1B tier 2 if:
 Their disability alone puts them at higher risk for severe illness from COVID-19 (e.g. Down syndrome).
 They have a disability that doesn’t alone put them at higher risk but they also have another underlying condition from the CDC list. (e.g. A person who is deaf and has Type 2 diabetes). (see [here](https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html))
 * Are you currently pregnant?
+* Are you a veteran?
+	* VA Puget Sound is now providing Pfizer, Moderna, and Johnson & Johnson’s Janssen vaccines depending on the site, which include:  Seattle, American Lake, Silverdale, Mount Vernon, and our Mobile Medical Unit. We continue to proactively contact Veterans to make vaccine appointments. Please, no walk-in vaccines, they are by appointment only. Eligible Veterans can also call us directly at 206-716-5716 to schedule, or contact their primary care team.
 
 ## Washington Regions
 
