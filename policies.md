@@ -2414,6 +2414,7 @@ Correctional facility, such as jail or prison
 | eligibility | [https://coronavirus.ohio.gov/static/vaccine/general_fact_sheet.pdf](https://coronavirus.ohio.gov/static/vaccine/general_fact_sheet.pdf) |
 | workflow | [Vaccine Eligibility Questionnaire](https://gettheshot.coronavirus.ohio.gov/) |
 | scheduling_phone | [1-833-427-5634](tel:1-833-427-5634) |
+| providers | [View locations providing vaccines](https://coronavirus.ohio.gov/wps/portal/gov/covid-19/covid-19-vaccination-program/resources/covid-19-mass-vaccination-clinics) |
 
 
 ## Ohio Active Phase (1a)
