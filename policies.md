@@ -400,20 +400,27 @@ OR If as a result of a developmental or other severe high-risk disability one or
 | scheduling_phone | [877-918-2224](tel:877-918-2224) |
 
 
-## Connecticut Active Phase (1b)
+## Connecticut Active Phase (1c)
 
 * Are you a healthcare worker?
-	* Paid and unpaid people serving in healthcare settings with potential for direct or indirect exposure to patients of infectious materials.
+	* Healthcare Personnel:
+• Paid and unpaid people serving in healthcare settings with potential for direct or indirect exposure to patients of infectious materials.
 * Are you a long term care resident or work in a long term care facility?
-	* Adults who reside in facilities that provide a range of services, including medical and personal care, to persons who are unable to live independently.
-* Are you a first responder?
-	* Individuals who respond to medical 911 calls and face risk of exposure to COVID-19.
-* Are you age 55+?
-	* Residents and workers within the State of CT who are 55+.
+	* Long-Term Care Facility Residents and staff:
+• Adults who reside in facilities that provide a range of services, including medical and personal care, to persons who are unable to live independently.
+* Are you classified as an essential worker?
+	* This includes: 
+
+Medical First Responders:
+• Individuals who respond to medical 911 calls and face risk of exposure to COVID-19.
+
+Educators and Child Care Providers:
+• Pre-K-12 Teachers, paraprofessionals, custodial staff, food service providers, school bus drivers and childcare providers as well as in-school administrative staff. Does not include individuals who are not required to work on-site in a school.
+* Are you age 45+?
+	* This includes those who are residents or workers within the state of Connecticut
 * Do you work or live in a congregate setting?
-	*  Staff and residents of halfway homes, inpatient mental health facilities, correction facilities, homeless shelters, domestic violence shelters, substance use and residential treatment facilities along with others.
-* Are you an educator or child care provider?
-	* Pre-K-12 Teachers, paraprofessionals, custodial staff, food service providers, school bus drivers and childcare providers as well as in-school administrative staff. Does not include individuals who are not required to work on-site in a school.
+	* Residents and Staff of select congregate settings:
+• Staff and residents of halfway homes, inpatient mental health facilities, correction facilities, homeless shelters, domestic violence shelters, substance use and residential treatment facilities along with others.
 
 # Delaware
 
@@ -484,12 +491,27 @@ Family caregivers of those with high/moderate-risk conditions may also be eligib
 
 * Are you a healthcare worker?
 * Are you a long-term care resident?
-* Are you an inpatient psychiatric patient?
-* Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.
+* Are you classified as an essential worker?
+	* This includes:
+- Members of the Metropolitan Police Department
+- Department of Corrections Employees
+- Continuity of Government Operations personnel
+- All teachers and staff who work for a school or licensed child care facility in DC
+- Grocery Store workers
+- Outreach workers and other essential employees who work in health, human, and social services
+- Individuals working in manufacturing
+- Individuals working in food packaging
+- Staff working in courts and individuals providing legal services
+- Frontline employees of public (mass) transit
+- Employees of the US Postal Service
+- Staff working in food service
+- Essential employees in local government agencies
+- Essential employees of public utilities
+- Individuals working in commercial and residential property maintenance and environmental services
 * Are you age 65+?
 * Do you live in an intermediate care facility, a group home, or another high-risk congregate setting?
+	* This also includes individuals in in-patient psychiatric care facilities and those who are currently incarcerated.
 * Are you experiencing homelessness?
-* Are you a Continuity of Government personnel?
 * Are you age 16+, and have a high-risk medical condition?
 	*  * Asthma, Chronic Obstructive Pulmonary Disease (COPD), and other Chronic Lung Disease
  * Bone Marrow and Solid Organ Transplantation
