@@ -4,6 +4,11 @@
  */
 import axios from 'axios'
 
+export interface GeoPoint {
+	lat: number
+	long: number
+}
+
 export interface LocationInformation {
 	/**
 	 * The country name (e.g. United States)
@@ -53,10 +58,10 @@ const SUBSCRIPTION_KEY = 'ORMjHZDPj50P11bBJ9iiCOryTSOaETw77PhKj3Wh5C4'
 //
 
 export class Locator {
-	public async getLocationInformation(
-		lat: number,
-		long: number
-	): Promise<LocationInformation> {
+	public async getLocationInformation({
+		lat,
+		long,
+	}: GeoPoint): Promise<LocationInformation> {
 		const response = await axios.get(
 			`https://atlas.microsoft.com/search/address/reverse/json?query=${lat},${long}&api-version=1.0&subscription-key=${SUBSCRIPTION_KEY}`,
 			{
