@@ -40,22 +40,18 @@
 					"question": "c19.eligibility.question/long_term_care_resident"
 				},
 				{
-					"question": "c19.eligibility.question/health.1a.dc.inpatient_psychiatric"
-				},
-				{
-					"question": "c19.eligibility.question/essential_worker.1b"
+					"question": "c19.eligibility.question/essential_worker",
+					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.dc.1b"
 				},
 				{
 					"question": "c19.eligibility.question/age.65_up"
 				},
 				{
-					"question": "c19.eligibility.question/congregate.dc"
+					"question": "c19.eligibility.question/congregate.dc",
+					"moreInfoText": "c19.eligibility.moreinfo/congregate.dc.dc.1b"
 				},
 				{
 					"question": "c19.eligibility.question/housing.are_you"
-				},
-				{
-					"question": "c19.eligibility.question/government.are_you"
 				},
 				{
 					"question": "c19.eligibility.question/health",
