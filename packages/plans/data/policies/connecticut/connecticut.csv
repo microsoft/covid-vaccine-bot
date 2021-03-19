@@ -7,3 +7,17 @@ c19.eligibility.moreinfo/long_term_care_resident.are.ct.1b,"Adults who reside in
 c19.eligibility.moreinfo/age.55_up.ct.1b,"Residents and workers within the State of CT who are 55+.",,,,,,,,,,,,,,
 c19.eligibility.moreinfo/congregate.do.ct.1b," Staff and residents of halfway homes, inpatient mental health facilities, correction facilities, homeless shelters, domestic violence shelters, substance use and residential treatment facilities along with others.",,,,,,,,,,,,,,
 c19.eligibility.moreinfo/essential_worker.are_you_an.ct.1b,"Pre-K-12 Teachers, paraprofessionals, custodial staff, food service providers, school bus drivers and childcare providers as well as in-school administrative staff. Does not include individuals who are not required to work on-site in a school.",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/essential_worker.ct.1c,"This includes: 
+
+Medical First Responders:
+• Individuals who respond to medical 911 calls and face risk of exposure to COVID-19.
+
+Educators and Child Care Providers:
+• Pre-K-12 Teachers, paraprofessionals, custodial staff, food service providers, school bus drivers and childcare providers as well as in-school administrative staff. Does not include individuals who are not required to work on-site in a school.",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/age.are_you_age_45.ct.1c,"This includes those who are residents or workers within the state of Connecticut",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/healthcare_worker.ct.1c,"Healthcare Personnel:
+• Paid and unpaid people serving in healthcare settings with potential for direct or indirect exposure to patients of infectious materials.",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/long_term_care_resident.are.ct.1c,"Long-Term Care Facility Residents and staff:
+• Adults who reside in facilities that provide a range of services, including medical and personal care, to persons who are unable to live independently.",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/congregate.do.ct.1c,"Residents and Staff of select congregate settings:
+• Staff and residents of halfway homes, inpatient mental health facilities, correction facilities, homeless shelters, domestic violence shelters, substance use and residential treatment facilities along with others.",,,,,,,,,,,,,,
