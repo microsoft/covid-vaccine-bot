@@ -106,11 +106,11 @@ export default observer(function Dashboard() {
 					<Callout
 						onDismiss={() => toggleCallout(item.action.number)}
 						target={`.infoButton.pr-${item.action.number}`}
-						gapSpace={0}
+						gapSpace={4}
 						setInitialFocus={true}
 						role="alertDialog"
 						className="infoCallout"
-						directionalHint={9}
+						directionalHint={5}
 					>
 						<div className="infoCalloutBody">
 							<div className="infoHeader">Notes</div>
