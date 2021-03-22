@@ -327,8 +327,9 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 									</div>
 								</div>
 								<div style={{ display: group.isCollapsed ? 'none' : 'block' }}>
-									{group.items.length > 0
-										? group.items.map((groupItem: any, idx: number) => {
+									{group.items.length > 0 && (
+										<>
+										{group.items.map((groupItem: any, idx: number) => {
 												return (
 													<PhaseQualifierForm
 														key={groupItem.key+'_'+idx}
@@ -343,7 +344,7 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 													/>
 												)
 										  })
-										: null}
+										}
 										<div className="phaseBottomGroup">
 											<div
 												className="addQualifierGroup"
@@ -356,6 +357,8 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 												Add Qualifier
 											</div>
 										</div>
+										</>
+									)}
 								</div>
 							</div>
 						)
