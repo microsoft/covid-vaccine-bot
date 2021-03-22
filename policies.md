@@ -16,7 +16,7 @@
 * Are you a long-term care resident?
 * Are you classified as an essential worker?
 	* This includes first responders (firefighters and police officers); corrections officers and support staff; Food and agriculture workers; U.S. Postal Service workers; manufacturing workers; grocery store workers; public transit workers; educators including child care workers, k-12, community colleges, and all higher education institutions (teachers and support staff members); judiciary (including but not limited to district judges, circuit judges, and district attorneys); clergy/ministers; and veterinarians. Also includes state of Alabama continuity of Government strategy (state legislators, supreme court and appellate judges, constitutional officers, and cabinet agency heads). 
-* Are you age 65+?
+* Are you age 55+?
 * Do you work or live in a congregate setting?
 	* This includes homeless shelters and group homes
 
