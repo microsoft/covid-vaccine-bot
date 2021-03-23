@@ -1693,40 +1693,68 @@ Individuals who are diagnosed with these medical conditions but are not currentl
 | scheduling_phone | [888-535-6136](tel:888-535-6136) |
 
 
-## Michigan Active Phase (1b)
+## Michigan Active Phase (1c)
 
-* Are you a healthcare worker? (see [here](https://www.michigan.gov/documents/coronavirus/MI_COVID-19_Vaccination_Prioritization_Guidance_710349_7.pdf))
+* Are you a healthcare worker? (see [here](https://www.michigan.gov/documents/coronavirus/MI_COVID-19_Vaccination_Prioritization_Guidance_2152021_716344_7.pdf))
 * Are you a long term care resident or work in a long term care facility?
-	* This includes 
-- Skilled nursing facility residents
-- Psychiatric hospitals patients
-- Homes for aged residents
-- Adult foster care centers residents
-- Assisted living facility residents
+	* Group A: Vaccinate workers who have direct contact with large number of vulnerable residents. Note: this would include staff who come in and out of the buildings.
+• Skilled nursing facility staff
+• Psychiatric hospital staff
+• Homes for aged staff
+• Adult foster care centers staff
+• Assisted living facility staff
+• Home health care workers caring for high risk clients with large patient loads (e.g., people with a tracheostomy/ventilator at home)
 
-As well as staff for these long-term care facilities and home health care workers caring for high risk clients with large patient loads (e.g. people with a tracheostomy/ventilator at home) (see [here](https://www.michigan.gov/documents/coronavirus/MI_COVID-19_Vaccination_Prioritization_Guidance_710349_7.pdf))
+Group B: Vaccinate vulnerable residents in long-term care facilities.
+• Skilled nursing facility residents
+• Psychiatric hospitals patients
+• Homes for aged residents
+• Adult foster care centers residents
+• Assisted living facility residents (see [here](https://www.michigan.gov/documents/coronavirus/MI_COVID-19_Vaccination_Prioritization_Guidance_2152021_716344_7.pdf))
 * Are you classified as an essential worker?
-	* This includes prioritized frontline workers whose work role has frequent or intense exposure, and, due to the nature of the work, are not able to maintain social distance. For example, a first responder may have to physically touch other people in their response, and a child care provider cannot maintain social distance from children
-when caring for their physical needs. The specific prioritized categories are:
-- Pre-Kindergarten through high school teachers, support staff and child care
-workers who usually have direct contact with children
-- First responders not covered in Phase 1A (e.g., firefighters, police, conservation
-officers ,inspectors)
-- Corrections workers (e.g. staff in prisons, jails, juvenile justice facilities)
-- Workers in homeless shelters, congregate child care institutions, and adult
-and child protective services
+	* Prioritized frontline workers whose work role has frequent or intense exposure, and, due to the nature of the work, are not able to maintain social distance. For example, a first responder may have to physically touch other people in their response, and a child care provider cannot maintain social distance from children when caring for their physical needs. Per CDC guidance, vaccinating staff and incarcerated/detained persons is recommended because of shared increased risk of disease. The specific prioritized categories are:
+• Pre-Kindergarten through high school teachers, support staff and child care workers who usually have direct contact with children
+• First responders not covered in Phase 1A (e.g., firefighters, police, conservation officers, inspectors)
+• Corrections workers (e.g., staff in prisons, jails, juvenile justice facilities) and incarcerated or detained individuals, due to shared increased risk of disease and the difficulty in controlling outbreaks in correctional facilities
+• Workers in homeless shelters, as well as residents, given congregate settings could facilitate the spread of infection.
+• Workers in congregate child care institutions*, and adult and child protective services.
 
-Other frontline essential workers in sectors essential to the functioning of society and are at substantially higher risk of exposure to SARS-CoV-2 because their work-related duties must be performed on site and involve being in close proximity (i.e. within 6 feet) to the public or to coworkers are also eligible, including frontline essential workers in the food processing and agricultural industries. (see [here](https://www.michigan.gov/documents/coronavirus/MI_COVID-19_Vaccination_Prioritization_Guidance_710349_7.pdf))
-* Are you age 65+?
-* Are you a long term care resident or work in a long term care facility?
-	* This includes 
-- Skilled nursing facility residents
-- Psychiatric hospitals patients
-- Homes for aged residents
-- Adult foster care centers residents
-- Assisted living facility residents
-* Do you work or live in a congregate setting?
-	* This includes homeless shelters, congregate child care institutions, and adult and child protective services
+Other frontline essential workers in sectors essential to the functioning of society and are at substantially higher risk of exposure to SARS-CoV-2 because their work-related duties must be performed on site and involve being in close proximity (i.e., within 6 feet) to the public or to coworkers. Frontline essential workers in critical infrastructures included by ACIP are:
+• Food and agriculture workers;
+• Critical manufacturing workers
+• Public transit workers
+• Grocery store workers
+• U.S. Postal Service workers
+• Workers with unique skill sets not covered above, such as non-hospital
+laboratories  (see [here](https://www.michigan.gov/documents/coronavirus/MI_COVID-19_Vaccination_Prioritization_Guidance_2152021_716344_7.pdf))
+* Are you age 16+, and have a high-risk medical condition?
+	*  Individuals age 16 to 64 years living with disabilities*, substance use disorders, severe mental illness, and/or with COPD, hypertension, chronic kidney disease, heart disease, diabetes, obesity or other conditions that puts them at high risk of negative COVID-19 outcome. These include:
+Cancer
+Chronic kidney disease
+COPD (chronic obstructive pulmonary disease)
+Down Syndrome
+Heart conditions, such as heart failure, coronary artery disease, or cardiomyopathies
+Immunocompromised state (weakened immune system) from solid organ transplant
+Obesity (body mass index [BMI] of 30 kg/m2 or higher but < 40 kg/m2)
+Severe Obesity (BMI ≥ 40 kg/m2)
+Pregnancy
+Sickle cell disease
+Smoking
+Type 2 diabetes mellitus
+Asthma (moderate-to-severe)
+Cerebrovascular disease (affects blood vessels and blood supply to the brain)
+Cystic fibrosis
+Hypertension or high blood pressure
+Immunocompromised state (weakened immune system) from blood or bone marrow transplant, immune deficiencies, HIV, use of corticosteroids, or use of other immune weakening medicines
+Neurologic conditions, such as dementia
+Liver disease
+Overweight (BMI > 25 kg/m2, but < 30 kg/m2)
+Pulmonary fibrosis (having damaged or scarred lung tissues)
+Thalassemia (a type of blood disorder)
+Type 1 diabetes mellitus
+
+Group C: Caregiver family members and guardians age 16 and over of children with special health care needs, including any physical, developmental, mental, sensory, behavioral, cognitive, or emotional impairment or limiting condition that requires medical management, health care intervention and/or use of specialized services or programs. The condition may be congenital, developmental, or acquired through disease, trauma, or environmental cause and may impose limitations in performing daily self-maintenance activities or substantial limitations in a major life activity. (see [here](https://www.michigan.gov/documents/coronavirus/MI_COVID-19_Vaccination_Prioritization_Guidance_2152021_716344_7.pdf))
+* Are you age 50+? (see [here](https://www.michigan.gov/documents/coronavirus/MI_COVID-19_Vaccination_Prioritization_Guidance_2152021_716344_7.pdf))
 
 # Minnesota
 
