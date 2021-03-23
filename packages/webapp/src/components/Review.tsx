@@ -10,7 +10,6 @@ import {
 	ProgressIndicator,
 	TextField,
 	MessageBar,
-	MessageBarButton,
 	MessageBarType,
 } from 'office-ui-fabric-react'
 import { useState, useEffect, useCallback, useRef } from 'react'
@@ -282,18 +281,6 @@ export default observer(function Review(props: ReviewProp) {
 						<MessageBar
 							messageBarType={MessageBarType.error}
 							dismissButtonAriaLabel="Close"
-							actions={
-								<div>
-									<MessageBarButton
-										href={`mailto:${CONTACT_EMAIL}?subject=${encodeURI(
-											'DATA COMPOSER ERROR'
-										)}&body=${encodeURI(errorMessage.toString())}`}
-										target="_blank"
-									>
-										Report Error
-									</MessageBarButton>
-								</div>
-							}
 						>
 							<p>
 								Unexpected Error
