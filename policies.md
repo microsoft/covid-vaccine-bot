@@ -575,7 +575,7 @@ Family caregivers of those with high/moderate-risk conditions may also be eligib
 | --- | --- |
 | info | [Georgia Department of Public Health](https://dph.georgia.gov/covid-vaccine) |
 | providers | [View locations providing vaccines](https://dph.georgia.gov/locations/covid-vaccination-site) |
-| scheduling_phone | [Scheduling Hotline](tel:) |
+| scheduling_phone | [(888) 457-0186](tel:(888) 457-0186) |
 
 
 ## Georgia Active Phase (1b)
