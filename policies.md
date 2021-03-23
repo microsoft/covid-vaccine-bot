@@ -34,18 +34,10 @@
 | scheduling_phone | [907-646-3322](tel:907-646-3322) |
 
 
-## Alaska Active Phase (1c)
+## Alaska Active Phase (2)
 
-* Are you a healthcare worker?
-* Are you a long-term care resident?
-* Are you classified as an essential worker? (see [here](http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/VaccineAvailability.aspx#essentialworkers))
-* Are you age 16+, and have a high-risk medical condition? (see [here](http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/VaccineAvailability.aspx#medicalconditions))
-* Are you age 55+?
-* Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)? (see [here](http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/VaccineAvailability.aspx#congregatesettings))
-* Are you age 16+ and a member of an unserved community?
-	* A served community is one in which more than 55% of homes are served by a piped, septic tank & well, or covered haul system. An unserved community is one where 45% or more homes have not been served either via pipe, septic tank & well, or covered haul system. (see [here](https://dec.alaska.gov/water/water-sewer-challenge/rural-communities/))
-* Do you live in a multigenerational household?
-	* A multigenerational household includes with 3 or more generations, or “skipped” generations (e.g., a grandchild living with an elder)
+* Are you age 16+?
+	* The COVID-19 vaccine is now available for anyone living or working in Alaska who is age 16 or older. (see [here](http://dhss.alaska.gov/dph/epi/id/pages/COVID-19/vaccine.aspx))
 
 ## Alaska Regions
 
