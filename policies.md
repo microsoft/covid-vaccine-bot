@@ -387,6 +387,7 @@ OR If as a result of a developmental or other severe high-risk disability one or
 * Are you age 16+, and have a high-risk medical condition?
 	* The intent of this classification is to vaccinate Coloradans who have a high risk of severe outcomes from COVID-19. This includes Coloradans with one or more of the following: Cancer (defined as patients who are currently receiving treatment or have received treatment within the last month for cancer), chronic kidney disease, COPD, diabetes mellitus (types 1 and 2), Down syndrome, specific heart conditions (heart failure, cardiomyopathies or coronary heart disease, and severe valvular/congenital heart disease), obesity (BMI >= 30kg/m^2), pregnancy, sickle cell disease, solid organ transplant, individuals with disabilities who require direct care in their home, and people with disabilities that prevent them from wearing masks.
 * Are you age 18+ and are someone who received a placebo during a COVID-19 clinical trial?
+* Are you a long term care resident or work in a long term care facility?
 
 # Connecticut
 
