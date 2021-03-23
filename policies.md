@@ -1423,62 +1423,27 @@ State Legislators
 State and local essential COVID emergency response personnel
 Some elections staff ahead of March and April elections
 Teachers and any other support staff working on site in K-12 or daycare
-Any staff working in congregate facilities (prisons/jails, shelters, dorms, rehab/detox centers, group homes)
-
-As of March 22nd, the following essential workers are also eligible:
-Bank tellers
-Child, youth and family service workers
-Clergy
-Construction workers
-Energy workers
-Food and agricultural workers
-Food service (restaurant) workers, hotel workers and other hospitality workers
-Frontline government workers
-Grocery store workers
-Institutes of higher education faculty/staff
-IT and communications workers
-Judges, court staff, clerks of court and staff, district attorneys and public defenders
-Manufacturing workers
-Media workers
-Postal workers
-Public and private security and emergency preparedness workers
-Public health workers
-Public safety engineers and other workers
-Transportation workers including river pilots
-Veterinarians and support staff
-Water and wastewater workers
-Waste management workers (see [here](https://ldh.la.gov/index.cfm/page/4137))
-* Are you age 16+, and have a high-risk medical condition?
-	* People 16-64 with at least one of the conditions listed by the CDC as placing them at an “increased risk of severe illness from the virus that causes COVID-19." 
-
-Asthma (moderate to severe)
+ (see [here](https://ldh.la.gov/index.cfm/page/4137))
+* Are you age 55+ and have a high-risk medical condition?
+	* People 55-64 with at least one of the conditions listed by the CDC as placing them at an “increased risk of severe illness from the virus that causes COVID-19." 
 Cancer
-Cerebrovascular disease (affects blood vessels and blood supply to the brain)
 Chronic kidney disease
-Chronic liver disease
 COPD (chronic obstructive pulmonary disease)
-Current or former smoker
-Cystic fibrosis
-Down syndrome
+Down Syndrome
 Heart conditions, such as heart failure, coronary artery disease or cardiomyopathies
-Hypertension or high blood pressure
 Immunocompromised state (weakened immune system) from solid organ transplant
-Immunocompromised state (weakened immune system) from blood or bone marrow transplant, immune deficiencies, HIV, use of corticosteroids, or use of other immune weakening medicines
-Overweight (body mass index [BMI] of 25 or higher but less than 30)
-Obesity (BMI of 30 or higher but less than 40)
-Severe obesity (BMI of 40 or higher)
-Pregnancy
-Pulmonary fibrosis (having damaged or scarred lung tissues)
+Obesity (body mass index [BMI] of 30kg/m2 or higher but < 40kg/m2 )
+Severe obesity (BMIC >40kg/m2 )
 Severe neurologic conditions, such as dementia
-Sickle cell disease
-Thalassemia (a type of blood disorder)
-Type 1 diabetes mellitus
+Sickle Cell Disease
+Smoking
 Type 2 diabetes mellitus
 
-Persons with the following qualifying underlying medical conditions are advised to complete the Louisiana COVID-19 Vaccine Attestation Form before their appointment to receive the vaccine (see link). Note that ages 16 and 17 are eligible for the Pfizer vaccine only
+Persons with the following qualifying underlying medical conditions are advised to complete the Louisiana COVID-19 Vaccine Attestation Form before their appointment to receive the vaccine (see link)
 
  (see [here](https://ldh.la.gov/index.cfm/page/4137))
 * Are you age 65+?
+* Are you currently pregnant?
 
 # Maine
 
