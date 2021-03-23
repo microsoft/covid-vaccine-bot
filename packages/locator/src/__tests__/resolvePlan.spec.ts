@@ -2,9 +2,9 @@
  * Copyright (c) Microsoft. All rights reserved.
  * Licensed under the MIT license. See LICENSE file in the project.
  */
-import statesData from '@covid-vax-bot/plans/dist/policies.json'
 import { BingLocation, resolvePlan } from '..'
 import { Region } from '@covid-vax-bot/plan-schema'
+import statesData from '@covid-vax-bot/plans/dist/policies.json'
 
 describe('The Plan Locator', () => {
 	it('exists', () => {
@@ -41,6 +41,24 @@ describe('The Plan Locator', () => {
 		expect(plan.phase).toBeDefined()
 		expect(plan.phase?.id).toBeDefined()
 		expect(plan.phase?.qualifications).not.toHaveLength(0)
+		expect(plan.noPhaseLabel).toEqual(false)
+	})
+
+	it('can look up a plan in NY', () => {
+		const location: BingLocation = {
+			adminDistrict: 'NY',
+			adminDistrict2: 'New York',
+			countryRegion: 'United States',
+			formattedAddress: '00011, NY',
+			locality: 'New York',
+			postalCode: '00011',
+		}
+		const plan = resolvePlan(location, statesData as Region[])
+		expect(plan).toBeDefined()
+		expect(plan.phase).toBeDefined()
+		expect(plan.phase?.id).toBeDefined()
+		expect(plan.phase?.qualifications).not.toHaveLength(0)
+		expect(plan.noPhaseLabel).toEqual(true)
 	})
 
 	it('can look up an overridden link with parent scope still available', () => {

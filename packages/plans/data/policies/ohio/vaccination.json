@@ -30,7 +30,6 @@
 	"phases": [
 		{
 			"id": "current",
-			"label": "Current",
 			"qualifications": [
 				{
 					"question": "c19.eligibility.question/healthcare_worker",
