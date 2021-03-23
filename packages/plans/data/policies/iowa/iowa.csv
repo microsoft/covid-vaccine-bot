@@ -5,3 +5,17 @@ c19.eligibility.moreinfo/essential_worker.ia.1b,"This includes those who work in
 c19.eligibility.moreinfo/health.are_you_a.ia.1b,"Persons age 26 to 64 years that are or might be at an increased risk of severe illness from COVID-19 due to medical conditions listed at at 
 ",,,,,,,,,,,,,,
 c19.eligibility.moreinfo/healthcare_worker.ia.1b,"This includes individuals with disabilities living in home settings and their direct care staff",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/health.ia.1b,"Adults of any age with the following conditions are at increased risk of severe illness from the virus that causes COVID-19:
+
+Cancer
+Chronic kidney disease
+COPD (chronic obstructive pulmonary disease)
+Down Syndrome
+Heart conditions, such as heart failure, coronary artery disease, or cardiomyopathies
+Immunocompromised state (weakened immune system) from solid organ transplant
+Obesity (body mass index [BMI] of 30 kg/m2 or higher but < 40 kg/m2)
+Severe Obesity (BMI ≥ 40 kg/m2)
+Pregnancy
+Sickle cell disease
+Smoking
+Type 2 diabetes mellitus",,,,,,,,,,,,,,
