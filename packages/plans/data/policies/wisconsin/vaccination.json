@@ -23,69 +23,35 @@
 			"id": "1a",
 			"qualifications": [
 				{
-					"question": "c19.eligibility.question/essential_worker.are_you_a_frontline"
+					"question": "c19.eligibility.question/long_term_care_resident.are",
+					"moreInfoText": "c19.eligibility.moreinfo/long_term_care_resident.are.wi.1a"
 				},
 				{
-					"question": "c19.eligibility.question/long_term_care_resident.are"
-				},
-				{
-					"question": "c19.eligibility.question/essential_worker.ff_leo_corrections"
-				},
-				{
-					"question": "c19.eligibility.question/age.65_up"
-				},
-				{
-					"question": "c19.eligibility.question/essential_worker.are_you"
-				},
-				{
-					"question": "c19.eligibility.question/essential_worker"
-				},
-				{
-					"question": "c19.eligibility.question/healthcare_worker"
-				},
-				{
-					"question": "c19.eligibility.question/congregate.do"
-				},
-				{
-					"question": "c19.eligibility.question/healthcare_worker.are_you_a",
-					"moreInfoText": "c19.eligibility.moreinfo/healthcare_worker.are_you_a.wi.1a"
-				}
-			]
-		},
-		{
-			"id": "1b",
-			"qualifications": [
-				{
-					"question": "c19.eligibility.question/healthcare_worker"
-				},
-				{
-					"question": "c19.eligibility.question/long_term_care_resident"
-				},
-				{
-					"question": "c19.eligibility.question/essential_worker.1b"
-				},
-				{
-					"question": "c19.eligibility.question/age.75_up"
-				}
-			]
-		},
-		{
-			"id": "1c",
-			"qualifications": [
-				{
-					"question": "c19.eligibility.question/healthcare_worker"
-				},
-				{
-					"question": "c19.eligibility.question/long_term_care_resident"
-				},
-				{
-					"question": "c19.eligibility.question/essential_worker"
-				},
-				{
-					"question": "c19.eligibility.question/health"
+					"question": "c19.eligibility.question/essential_worker.ff_leo_corrections",
+					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.ff_leo_corrections.wi.1a"
 				},
 				{
 					"question": "c19.eligibility.question/age.65_up"
+				},
+				{
+					"question": "c19.eligibility.question/essential_worker.are_you",
+					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.are_you.wi.1a"
+				},
+				{
+					"question": "c19.eligibility.question/essential_worker",
+					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.wi.1a"
+				},
+				{
+					"question": "c19.eligibility.question/congregate.do",
+					"moreInfoText": "c19.eligibility.moreinfo/congregate.do.wi.1a"
+				},
+				{
+					"question": "c19.eligibility.question/health",
+					"moreInfoText": "c19.eligibility.moreinfo/health.wi.1a"
+				},
+				{
+					"question": "c19.eligibility.question/healthcare_worker",
+					"moreInfoText": "c19.eligibility.moreinfo/healthcare_worker.wi.1a"
 				}
 			]
 		}
