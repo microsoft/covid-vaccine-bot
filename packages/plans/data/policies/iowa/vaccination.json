@@ -63,8 +63,8 @@
 					"question": "c19.eligibility.question/congregate.do"
 				},
 				{
-					"question": "c19.eligibility.question/health.are_you_a",
-					"moreInfoText": "c19.eligibility.moreinfo/health.are_you_a.ia.1b",
+					"question": "c19.eligibility.question/health",
+					"moreInfoText": "c19.eligibility.moreinfo/health.ia.1b",
 					"moreInfoUrl": "https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html"
 				}
 			]

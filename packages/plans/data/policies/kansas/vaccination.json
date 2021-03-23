@@ -11,7 +11,7 @@
 			"text": "cdc/kansas/state_link"
 		}
 	},
-	"activePhase": "1b",
+	"activePhase": "4",
 	"phases": [
 		{
 			"id": "1a",
@@ -92,13 +92,15 @@
 			"label": "4",
 			"qualifications": [
 				{
-					"question": "c19.eligibility.question/healthcare_worker"
+					"question": "c19.eligibility.question/healthcare_worker",
+					"moreInfoText": "c19.eligibility.moreinfo/healthcare_worker.ks.4"
 				},
 				{
 					"question": "c19.eligibility.question/long_term_care_resident.are"
 				},
 				{
-					"question": "c19.eligibility.question/essential_worker"
+					"question": "c19.eligibility.question/essential_worker",
+					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.ks.4"
 				},
 				{
 					"question": "c19.eligibility.question/health",

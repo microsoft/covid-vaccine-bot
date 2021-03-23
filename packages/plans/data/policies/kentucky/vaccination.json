@@ -70,11 +70,13 @@
 			"id": "1c",
 			"qualifications": [
 				{
-					"question": "c19.eligibility.question/long_term_care_resident.are"
+					"question": "c19.eligibility.question/long_term_care_resident.are",
+					"moreInfoText": "c19.eligibility.moreinfo/long_term_care_resident.are.ky.1c"
 				},
 				{
 					"question": "c19.eligibility.question/essential_worker",
-					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.ky.1c"
+					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.ky.1c",
+					"moreInfoUrl": "https://www.cdc.gov/vaccines/covid-19/categories-essential-workers.html"
 				},
 				{
 					"question": "c19.eligibility.question/health",

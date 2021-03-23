@@ -1,6 +1,6 @@
 String ID,en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th
 c19.eligibility.question/congregate.il,"Do you live in a sheltered population (e.g. homeless, day programs, inmates?)",,,,,,,,,,,,,,
-c19.link/scheduling.phone.il,Scheduling Hotline,,,,,,,,,,,,,,
+c19.link/scheduling.phone.il,"Scheduling Hotline",,,,,,,,,,,,,,
 c19.eligibility.moreinfo/healthcare_worker.il.1b,"Health care personnel are defined by the CDC as paid and unpaid workers in health care settings who have the potential for direct or indirect exposure to patients or infectious materials. This includes hospital, non-hospital, congregate, and home health care settings.",,,,,,,,,,,,,,
 c19.eligibility.moreinfo/essential_worker.il.1b,"Frontline essential workers (who do not work remotely) are defined as those workers who are essential for the functioning of society and include the following: first responders, corrections officers/inmates, food and agriculture workers, US Postal Service workers, manufacturing workers, grocery store workers, public transit workers, education workers (congregate child care, pre-K through 12th grade), and shelters/adult day care",,,,,,,,,,,,,,
 c19.eligibility.moreinfo/healthcare_worker.il.1bpartii,"Health care personnel are defined by the CDC as paid and unpaid workers in health care settings who have the potential for direct or indirect exposure to patients or infectious materials. This includes hospital, non-hospital, congregate, and home health care settings.",,,,,,,,,,,,,,

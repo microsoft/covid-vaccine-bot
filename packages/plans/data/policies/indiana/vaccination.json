@@ -65,7 +65,7 @@
 					"moreInfoText": "c19.eligibility.moreinfo/exposure_to_infectious_material.do.in.1b"
 				},
 				{
-					"question": "c19.eligibility.question/age.are_you_age_45"
+					"question": "c19.eligibility.question/age.are_you"
 				},
 				{
 					"question": "c19.eligibility.question/health",

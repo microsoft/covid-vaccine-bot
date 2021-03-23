@@ -23,8 +23,9 @@
 			"text": "c19.links/schedule_vax"
 		},
 		"scheduling_phone": {
-			"url": "tel:",
-			"text": "c19.link/scheduling.phone.ga"
+			"url": "tel:(888) 457-0186",
+			"text": "c19.link/scheduling.phone.ga",
+			"description": "c19.link/scheduling.phone.description.ga"
 		}
 	},
 	"activePhase": "1b",
