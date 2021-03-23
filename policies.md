@@ -433,7 +433,7 @@ Educators and Child Care Providers:
 | info | [Delaware Division of Public Health](https://coronavirus.delaware.gov/vaccine/vaccine-information-for-the-general-public/) |
 | providers | [View locations providing vaccines](https://coronavirus.delaware.gov/vaccine/where-can-i-get-my-vaccine/) |
 | scheduling | [Schedule a Vaccination](https://vaccinerequest.delaware.gov/s/?language=en_US) |
-| scheduling_phone | [Scheduling Hotline](tel:) |
+| scheduling_phone | [1-833-643-1715](tel:1-833-643-1715) |
 
 
 ## Delaware Active Phase (1c)
