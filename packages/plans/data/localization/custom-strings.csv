@@ -12,7 +12,7 @@ You can provide feedback by emailing [$SUPPORT_EMAIL](mailto:$SUPPORT_EMAIL)
 
 Do you accept these terms?",,,,,,,,,,,,,,
 c19.entry/tos_rejected,"Unfortunately I cannot help you if you do not accept the terms. Goodbye.",,,,,,,,,,,,,,
-c19.entry/preamble_bing,"This project was made possible through a partnership with the MITRE Corporation and is enabled by Microsoft's Azure platform.",,,,,,,,,,,,,,
+c19.entry/preamble_bing,"This project was made possible through a partnership with The MITRE Corporation and is enabled by Microsoft's Azure platform.",,,,,,,,,,,,,,
 c19.question_series/answer_options_yesno,"[""Yes"", ""No""]",,,,,,,,,,,,,,
 c19.question_series/answer_options_yesnoinfo,"[""Yes"", ""No"", ""More Info""]",,,,,,,,,,,,,,
 c19.entry/unknown_question,"I'm not sure how to help you with that. Please try one of the prepared questions.",,,,,,,,,,,,,,
