@@ -29,6 +29,7 @@ function resolvePlanInState(
 	let region = stateRegion
 	let currentPhases = stateRegion.plan?.phases ?? []
 	let currentActivePhaseLabel = stateRegion.plan?.activePhase ?? ''
+	let currentNoPhaseLabel = stateRegion.plan?.noPhaseLabel ?? false
 	let currentActivePhase = getActivePhase(
 		currentActivePhaseLabel,
 		currentPhases
@@ -67,6 +68,7 @@ function resolvePlanInState(
 				type: region.type,
 			})
 			currentPhases = region.plan?.phases ?? currentPhases
+			currentNoPhaseLabel = region.plan?.noPhaseLabel ?? currentNoPhaseLabel
 			currentActivePhaseLabel =
 				region.plan?.activePhase ?? currentActivePhaseLabel
 			currentActivePhase = getActivePhase(
@@ -84,6 +86,7 @@ function resolvePlanInState(
 		regionalHierarchy,
 		links: currentLinks,
 		phase: currentActivePhase,
+		noPhaseLabel: currentNoPhaseLabel,
 	}
 }
 

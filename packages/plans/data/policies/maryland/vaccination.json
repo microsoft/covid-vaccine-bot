@@ -1,11 +1,5 @@
 {
 	"links": {
-		"eligibility": {
-			"url": ""
-		},
-		"eligibility_plan": {
-			"url": ""
-		},
 		"info": {
 			"url": "https://coronavirus.maryland.gov/pages/vaccine",
 			"text": "cdc/maryland/state_link"
@@ -13,14 +7,6 @@
 		"providers": {
 			"url": "https://coronavirus.maryland.gov/pages/vaccine",
 			"text": "c19.links/vax_providers"
-		},
-		"workflow": {
-			"url": "",
-			"text": "c19.links/vax_quiz"
-		},
-		"scheduling": {
-			"url": "",
-			"text": "c19.links/schedule_vax"
 		},
 		"scheduling_phone": {
 			"url": "tel:410-767-6500",

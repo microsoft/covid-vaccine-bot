@@ -1,26 +1,12 @@
 {
 	"links": {
-		"eligibility": {
-			"url": ""
-		},
-		"eligibility_plan": {
-			"url": ""
-		},
 		"info": {
 			"url": "https://covid19.ca.gov/vaccines/",
 			"text": "cdc/california/state_link"
 		},
-		"providers": {
-			"url": "",
-			"text": "c19.links/vax_providers"
-		},
 		"workflow": {
 			"url": "https://myturn.ca.gov/",
 			"text": "c19.links/vax_quiz"
-		},
-		"scheduling": {
-			"url": "",
-			"text": "c19.links/schedule_vax"
 		},
 		"scheduling_phone": {
 			"url": "tel:(833) 422-4255",

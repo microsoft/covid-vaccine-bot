@@ -3,9 +3,6 @@
 		"eligibility": {
 			"url": "http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/VaccineAvailability.aspx"
 		},
-		"eligibility_plan": {
-			"url": ""
-		},
 		"info": {
 			"url": "http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/vaccine.aspx",
 			"text": "cdc/alaska/state_link"

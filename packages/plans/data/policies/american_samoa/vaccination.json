@@ -1,26 +1,11 @@
 {
 	"links": {
-		"eligibility": {
-			"url": ""
-		},
 		"eligibility_plan": {
 			"url": "https://www.cdc.gov/vaccines/covid-19/downloads/american-samoa-jurisdiction-executive-summary.pdf"
 		},
 		"info": {
 			"url": "https://www.americansamoa.gov/",
 			"text": "cdc/american_samoa/state_link"
-		},
-		"providers": {
-			"url": "",
-			"text": "c19.links/vax_providers"
-		},
-		"workflow": {
-			"url": "",
-			"text": "c19.links/vax_quiz"
-		},
-		"scheduling": {
-			"url": "",
-			"text": "c19.links/schedule_vax"
 		},
 		"scheduling_phone": {
 			"url": "tel: 684-633-5871",

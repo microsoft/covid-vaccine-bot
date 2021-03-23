@@ -1,26 +1,11 @@
 {
 	"links": {
-		"eligibility": {
-			"url": ""
-		},
 		"eligibility_plan": {
 			"url": "https://www.vacunatepr.com/fases-vacunacion-covid-19"
 		},
 		"info": {
 			"url": "http://www.salud.gov.pr/Pages/coronavirus.aspx",
 			"text": "cdc/puerto_rico/state_link"
-		},
-		"providers": {
-			"url": "",
-			"text": "c19.links/vax_providers"
-		},
-		"workflow": {
-			"url": "",
-			"text": "c19.links/vax_quiz"
-		},
-		"scheduling": {
-			"url": "",
-			"text": "c19.links/schedule_vax"
 		},
 		"scheduling_phone": {
 			"url": "tel:(787) 999-6202",

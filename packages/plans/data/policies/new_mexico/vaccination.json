@@ -22,10 +22,10 @@
 		}
 	},
 	"activePhase": "current_phase",
+	"noPhaseLabel": true,
 	"phases": [
 		{
 			"id": "current_phase",
-			"label": "Current Phase",
 			"qualifications": [
 				{
 					"question": "c19.eligibility.question/healthcare_worker.in_hospital"

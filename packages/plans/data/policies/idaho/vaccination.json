@@ -3,20 +3,9 @@
 		"eligibility": {
 			"url": "https://healthandwelfare.idaho.gov/covid-19-vaccination"
 		},
-		"eligibility_plan": {
-			"url": ""
-		},
 		"info": {
 			"url": "https://coronavirus.idaho.gov/covid-19-vaccine/",
 			"text": "cdc/idaho/state_link"
-		},
-		"providers": {
-			"url": "",
-			"text": "c19.links/vax_providers"
-		},
-		"workflow": {
-			"url": "",
-			"text": "c19.links/vax_quiz"
 		},
 		"scheduling": {
 			"url": "https://covidvaccine.idaho.gov/",

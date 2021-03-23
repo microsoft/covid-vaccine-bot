@@ -15,6 +15,7 @@ export interface PlanResult {
 	regionalHierarchy: PlanRegion[]
 	links: Record<string, Link | undefined>
 	phase: RolloutPhase | undefined
+	noPhaseLabel: boolean
 }
 
 export interface BingLocation {
