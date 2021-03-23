@@ -1353,6 +1353,7 @@ Home care givers (paid or unpaid), personal care aides (see [here](https://www.k
 ## Kentucky Active Phase (1c)
 
 * Are you a long term care resident or work in a long term care facility?
+	* Residents of long-term care and assisted living facilities, as well as health care personnel, including clinicians residing outside of Kentucky but who provide care in Kentucky
 * Are you classified as an essential worker?
 	* Frontline Essential Workers include: 
 Healthcare Personnel
@@ -1375,20 +1376,39 @@ Media
 Legal
 Public Safety (Engineers)
 Water & Wastewater
-Clergy
+Clergy (see [here](https://www.cdc.gov/vaccines/covid-19/categories-essential-workers.html))
 * Are you age 16+, and have a high-risk medical condition?
-	* Per CDC, adults of any age with the following conditions are at increased risk of severe illness from the virus that causes COVID-19:
+	* Anyone age 16 or older with any medical or behavioral health condition or conditions that the CDC reports ‘are’ or ‘might’ be at increased risk of severe COVID-19 illness is eligible. These include the following:
+
+Adults of any age with the following conditions are at increased risk of severe illness from the virus that causes COVID-19:
+
 Cancer
 Chronic kidney disease
 COPD (chronic obstructive pulmonary disease)
 Down Syndrome
 Heart conditions, such as heart failure, coronary artery disease, or cardiomyopathies
 Immunocompromised state (weakened immune system) from solid organ transplant
-Obesity (body mass index [BMI] of 30 kg/m2 or higher but less than 40 kg/m2)
-Severe Obesity (body mass index [BMI] equal to or greater than 40 kg/m2)
+Obesity (body mass index [BMI] of 30 kg/m2 or higher but < 40 kg/m2)
+Severe Obesity (BMI ≥ 40 kg/m2)
 Pregnancy
 Sickle cell disease
-Type 2 diabetes mellitus  (see [here](https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html))
+Smoking
+Type 2 diabetes mellitus
+
+COVID-19 is a new disease. Currently there are limited data and information about the impact of many underlying medical conditions on the risk for severe illness from COVID-19. Based on what we know at this time, adults of any age with the following conditions might be at an increased risk for severe illness from the virus that causes COVID-19:
+
+Asthma (moderate-to-severe)
+Cerebrovascular disease (affects blood vessels and blood supply to the brain)
+Cystic fibrosis
+Hypertension or high blood pressure
+Immunocompromised state (weakened immune system) from blood or bone marrow transplant, immune deficiencies, HIV, use of corticosteroids, or use of other immune weakening medicines
+Neurologic conditions, such as dementia
+Liver disease
+Overweight (BMI > 25 kg/m2, but < 30 kg/m2)
+Pulmonary fibrosis (having damaged or scarred lung tissues)
+Thalassemia (a type of blood disorder)
+Type 1 diabetes mellitus
+ (see [here](https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html))
 * Are you age 60+?
 
 # Louisiana
@@ -1423,27 +1443,62 @@ State Legislators
 State and local essential COVID emergency response personnel
 Some elections staff ahead of March and April elections
 Teachers and any other support staff working on site in K-12 or daycare
- (see [here](https://ldh.la.gov/index.cfm/page/4137))
-* Are you age 55+ and have a high-risk medical condition?
-	* People 55-64 with at least one of the conditions listed by the CDC as placing them at an “increased risk of severe illness from the virus that causes COVID-19." 
+Any staff working in congregate facilities (prisons/jails, shelters, dorms, rehab/detox centers, group homes)
+
+As of March 22nd, the following essential workers are also eligible:
+Bank tellers
+Child, youth and family service workers
+Clergy
+Construction workers
+Energy workers
+Food and agricultural workers
+Food service (restaurant) workers, hotel workers and other hospitality workers
+Frontline government workers
+Grocery store workers
+Institutes of higher education faculty/staff
+IT and communications workers
+Judges, court staff, clerks of court and staff, district attorneys and public defenders
+Manufacturing workers
+Media workers
+Postal workers
+Public and private security and emergency preparedness workers
+Public health workers
+Public safety engineers and other workers
+Transportation workers including river pilots
+Veterinarians and support staff
+Water and wastewater workers
+Waste management workers (see [here](https://ldh.la.gov/index.cfm/page/4137))
+* Are you age 16+, and have a high-risk medical condition?
+	* People 16-64 with at least one of the conditions listed by the CDC as placing them at an “increased risk of severe illness from the virus that causes COVID-19." 
+
+Asthma (moderate to severe)
 Cancer
+Cerebrovascular disease (affects blood vessels and blood supply to the brain)
 Chronic kidney disease
+Chronic liver disease
 COPD (chronic obstructive pulmonary disease)
-Down Syndrome
+Current or former smoker
+Cystic fibrosis
+Down syndrome
 Heart conditions, such as heart failure, coronary artery disease or cardiomyopathies
+Hypertension or high blood pressure
 Immunocompromised state (weakened immune system) from solid organ transplant
-Obesity (body mass index [BMI] of 30kg/m2 or higher but < 40kg/m2 )
-Severe obesity (BMIC >40kg/m2 )
+Immunocompromised state (weakened immune system) from blood or bone marrow transplant, immune deficiencies, HIV, use of corticosteroids, or use of other immune weakening medicines
+Overweight (body mass index [BMI] of 25 or higher but less than 30)
+Obesity (BMI of 30 or higher but less than 40)
+Severe obesity (BMI of 40 or higher)
+Pregnancy
+Pulmonary fibrosis (having damaged or scarred lung tissues)
 Severe neurologic conditions, such as dementia
-Sickle Cell Disease
-Smoking
+Sickle cell disease
+Thalassemia (a type of blood disorder)
+Type 1 diabetes mellitus
 Type 2 diabetes mellitus
 
-Persons with the following qualifying underlying medical conditions are advised to complete the Louisiana COVID-19 Vaccine Attestation Form before their appointment to receive the vaccine (see link)
+Persons with the following qualifying underlying medical conditions are advised to complete the Louisiana COVID-19 Vaccine Attestation Form before their appointment to receive the vaccine (see link). Note that ages 16 and 17 are eligible for the Pfizer vaccine only
 
  (see [here](https://ldh.la.gov/index.cfm/page/4137))
 * Are you age 65+?
-* Are you currently pregnant?
 
 # Maine
 
