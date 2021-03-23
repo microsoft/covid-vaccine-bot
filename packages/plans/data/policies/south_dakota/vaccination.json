@@ -16,7 +16,7 @@
 			"text": "c19.links/vax_providers"
 		}
 	},
-	"activePhase": "1d",
+	"activePhase": "1e",
 	"phases": [
 		{
 			"id": "1a",
@@ -102,6 +102,40 @@
 					"question": "c19.eligibility.question/health",
 					"moreInfoText": "c19.eligibility.moreinfo/health.sd.1d",
 					"moreInfoUrl": "https://doh.sd.gov/COVID/Vaccine/medicalconditions/"
+				}
+			]
+		},
+		{
+			"id": "1e",
+			"label": "1e",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/healthcare_worker"
+				},
+				{
+					"question": "c19.eligibility.question/long_term_care_resident.are"
+				},
+				{
+					"question": "c19.eligibility.question/essential_worker",
+					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.sd.1e",
+					"moreInfoUrl": "https://doh.sd.gov/documents/COVID19/Vaccine/CISA_Guidance_on_Essential_Critical_Infrastructure_Workers.pdf"
+				},
+				{
+					"question": "c19.eligibility.question/age.65_up"
+				},
+				{
+					"question": "c19.eligibility.question/health",
+					"moreInfoText": "c19.eligibility.moreinfo/health.sd.1e",
+					"moreInfoUrl": "https://doh.sd.gov/COVID/Vaccine/medicalconditions/"
+				}
+			]
+		},
+		{
+			"id": "2",
+			"label": "2",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.16_up"
 				}
 			]
 		}
