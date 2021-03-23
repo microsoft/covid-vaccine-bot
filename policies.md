@@ -1792,18 +1792,12 @@ Sickle cell disease (see [here](https://mn.gov/covid19/vaccine/whos-getting-vacc
 | scheduling_phone | [877-978-6453](tel:877-978-6453) |
 
 
-## Mississippi Active Phase (1b)
+## Mississippi Active Phase (2)
 
-* Are you a healthcare worker?
-	* This includes healthcare personnel, paid or unpaid, in any setting where they may be exposed directly or indirectly to COVID-19 patients or COVID-19 infectious materials.
+* Are you age 16+?
+	* If you are 18 or older, you can be vaccinated at any of our drive-through sites at no cost. Persons younger than 18 should make a drive-through site appointment by calling 877-978-6453, or visit a private healthcare provider for COVID-19 vaccination to ensure that they receive a vaccine approved for their age.
 
-Healthcare workers include nurses, physicians, emergency medical services, technicians, pharmacists, dietary and food staff, environmental services staff and others.
-
-Healthcare settings include acute care facilities, long-term acute care facilities, inpatient rehabilitation facilities, nursing homes, assisted living facilities, home health care, mobile clinics, outpatient facilities such as physicians' offices and others. (see [here](https://msdh.ms.gov/msdhsite/_static/14,22816,420,976.html))
-* Are you a long-term care resident?
-* Are you a first responder?
-	* This includes law enforcement, public safety, fire services and emergency management officials
-* Are you age 75+?
+COVID-19 vaccinations are provided to Mississippi residents only, or to out-of-state residents who work in Mississippi. (see [here](https://msdh.ms.gov/msdhsite/_static/14,22816,420,976.html))
 
 # Missouri
 
@@ -2157,13 +2151,13 @@ food processing, transportation, US Postal Service, public transit (see [here](h
 | info | [New Hampshire Department of Health and Human Services](https://www.nh.gov/covid19/resources-guidance/vaccination-planning.htm) |
 
 
-## New Hampshire Active Phase (1b)
+## New Hampshire Active Phase (2b)
 
+* Are you age 50+?
 * Are you a healthcare worker?
 * Are you a long-term care resident?
 * Are you a first responder?
 * Are you a corrections officer or staff member?
-* Are you age 65+?
 * Are you age 16+ with 2 or more underlying health conditions, or a caregiver to such?
 	*  - Cancer
  - Chronic Kidney Disease
@@ -2177,6 +2171,7 @@ food processing, transportation, US Postal Service, public transit (see [here](h
  - Sickle cell disease
  - Other high risk pulmonary disease
  - Type 2 Diabetes Mellitus
+* Are you a K-12 educator or work in a licensed child care facility?
 * Are you a resident of a facility for people with intellectual and developmental disabilities?
 
 # New Jersey
@@ -3206,12 +3201,12 @@ likely
 | providers | [View locations providing vaccines](https://doh.sd.gov/COVID/Vaccine/ProviderMap/default.aspx) |
 
 
-## South Dakota Active Phase (1d)
+## South Dakota Active Phase (1e)
 
 * Are you a healthcare worker?
 * Are you a long term care resident or work in a long term care facility?
 * Are you classified as an essential worker?
-	* This includes EMS, public health workers, law enforcement, correctional officers, teachers and other school/college staff, and funeral service workers.
+	* This includes EMS, public health workers, law enforcement, correctional officers, teachers and other school/college staff, funeral service workers, fire service personnel, and other public-facing workers in essential and critical infrastructure (see [here](https://doh.sd.gov/documents/COVID19/Vaccine/CISA_Guidance_on_Essential_Critical_Infrastructure_Workers.pdf))
 * Are you age 65+?
 * Are you age 16+, and have a high-risk medical condition?
 	* This includes those undergoing dialysis, post-transplant, and active cancer, as well as those with medical conditions that put them at a higher risk for severe COVID-19 infection, including  (see [here](https://doh.sd.gov/COVID/Vaccine/medicalconditions/))
