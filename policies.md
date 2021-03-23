@@ -3206,12 +3206,12 @@ likely
 | providers | [View locations providing vaccines](https://doh.sd.gov/COVID/Vaccine/ProviderMap/default.aspx) |
 
 
-## South Dakota Active Phase (1d)
+## South Dakota Active Phase (1e)
 
 * Are you a healthcare worker?
 * Are you a long term care resident or work in a long term care facility?
 * Are you classified as an essential worker?
-	* This includes EMS, public health workers, law enforcement, correctional officers, teachers and other school/college staff, and funeral service workers.
+	* This includes EMS, public health workers, law enforcement, correctional officers, teachers and other school/college staff, funeral service workers, fire service personnel, and other public-facing workers in essential and critical infrastructure (see [here](https://doh.sd.gov/documents/COVID19/Vaccine/CISA_Guidance_on_Essential_Critical_Infrastructure_Workers.pdf))
 * Are you age 65+?
 * Are you age 16+, and have a high-risk medical condition?
 	* This includes those undergoing dialysis, post-transplant, and active cancer, as well as those with medical conditions that put them at a higher risk for severe COVID-19 infection, including  (see [here](https://doh.sd.gov/COVID/Vaccine/medicalconditions/))
@@ -3691,24 +3691,103 @@ They have a disability that doesn’t alone put them at higher risk but they als
 
 ## Wisconsin Active Phase (1a)
 
-* Are you a frontline healthcare worker?
 * Are you a long term care resident or work in a long term care facility?
+	* SDMAC’s definition of residents of long-term care is: “adults who reside in facilities that provide a variety of services, including medical and personal care, to persons who are unable to live independently.”
+
+Starting March 1, individuals enrolled in Medicaid long-term care programs became eligible to get the COVID-19 vaccine. This includes:
+
+Members of Family Care and Family Care Partnership
+Participants in IRIS (Include, Respect, I Self-Direct)
+Children ages 16 years and older in the following programs:
+Children’s Long-Term Support Waiver Program
+Katie Beckett Program
+Children’s Community Options Program (CCOP)
+Children Come First
+Wrap Around Milwaukee
+Children with Medical Complexity Program
 * Are you a firefighter, law enforcement officer, or corrections staff?
+	* Police and fire personnel, including correctional workers are now eligible to get the COVID-19 vaccine, which begins the first step into Phase 1B for Wisconsin.
+
+Categories of job titles and settings include:
+
+Correctional facility personnel
+Probation and parole officers
+DNR wardens
 * Are you age 65+?
 * Are you a K-12 educator or work in a licensed child care facility?
+	* Starting March 1, all staff in in education settings became eligible to get the COVID-19 vaccine. This includes:
+
+All staff in regulated child care, public and private school programs, out-of-school time programs, virtual learning support, and community learning center programs.
+All staff in Boys and Girls Clubs and YMCAs.
+All staff in preschool and Head Start through K-12 education settings.
+Faculty and staff in higher education settings who have direct student contact.
 * Are you classified as an essential worker?
-* Are you a healthcare worker?
+	* Starting March 1, some public facing essential workers became eligible to get the COVID-19 vaccine. This includes:
+
+-  911 operators
+- Utility and communications infrastructure
+
+Workers who cannot socially distance and are responsible for the fundamental processes and facilities that ensure electric, natural gas, steam, water, wastewater, internet, and telecommunications services are built, maintained, generated, distributed, and delivered to customers.
+
+ - Public transit
+Drivers who have frequent close contact with members of the public, limited to:
+public and commercial intercity bus transportation services
+municipal public transit services
+those employed by specialized transit services for seniors, disabled persons, and low-income persons
+
+- Food supply chain
+Agricultural production workers, such as farm owners and other farm employees.
+Critical workers who provide on-site support to multiple agricultural operations, such as livestock breeding and insemination providers, farm labor contractors, crop support providers, and livestock veterinarians.
+Food production workers, such as dairy plant employees, fruit and vegetable processing plant employees, and animal slaughtering and processing employees.
+Retail food workers, such as employees at grocery stores, convenience stores, and gas stations that also sell groceries.
+Hunger relief personnel, including people involved in charitable food distribution, community food and housing providers, social services employees who are involved in food distribution, and emergency relief workers.
+Restaurant workers.
 * Do you work or live in a congregate setting?
-* Are you a non-frontline essential health care worker?
-	* SDMAC defines non-frontline essential health care personnel as personnel who are not involved in direct patient care but are essential for health system infrastructure. These staff are often affiliated with hospitals, but non-hospital employee non-frontline employees are also included.
+	* Starting March 1, staff and residents of congregate living facilities became eligible to get the COVID-19 vaccine. Some settings in this group may be non-voluntary or provide services to marginalized populations - meaning residents do not have the resources or choice to mitigate exposure. Congregate living facility staff and residents include the following:
+
+- Employer-based housing: Housing provided by an employer for three or more unrelated individuals that share bedrooms.
+- Housing serving the elderly or people with disabilities: Residents of housing that meets the definitions of an adult family home, independent living apartments, community-based residential facility, residential care complex, state center for the disabled, mental health institute, and county-based center for the disabled.
+- Shelters: Shelter provided to those who are homeless and/or in need of protection (for example, domestic violence shelters).
+- Transitional housing: A project that is designed to provide housing and appropriate supportive services to homeless persons to facilitate movement to independent living when such facilities include shared bedrooms.
+- Incarcerated individuals: Individuals in jails, prisons, and mental health institutes.
+* Are you age 16+, and have a high-risk medical condition?
+	* On March 22, individuals age 16 and older with certain medical conditions that have a greater risk of severe infection from COVID-19 became eligible. The decision was based on recommendations from the Centers for Disease Control (CDC) and is supported by Wisconsin’s medical experts.
+
+Eligibility includes individuals with the following conditions:
+
+Asthma (moderate-to-severe)
+Cancer
+Cerebrovascular disease (affects blood vessels and blood supply to the brain)
+Chronic kidney disease
+COPD (chronic obstructive pulmonary disease)
+Cystic fibrosis
+Diabetes mellitus type 1 or 2
+Down syndrome
+Heart conditions, such as heart failure, coronary artery disease, or cardiomyopathies
+Hypertension or high blood pressure
+Immunocompromised state (weakened immune system) from solid organ transplant, blood or bone marrow transplant, immune deficiencies, HIV, use of corticosteroids, or use of other immune weakening medicines
+Liver disease
+Neurologic conditions, such as intellectual disabilities and dementia
+Obesity (body mass index [BMI] of 30-39 kg/m2)
+Overweight (BMI of 25-29 kg/m2)
+Pregnancy
+Pulmonary fibrosis (having damaged or scarred lung tissues)
+Severe Obesity (BMI 40 kg/m2 or more)
+Sickle cell disease
+Thalassemia (a type of blood disorder)
+Individuals with these medical conditions have multiple vaccination options, including through community-based clinics, health care providers, local health departments, and pharmacies.
+* Are you a healthcare worker?
+	* According to the SDMAC’s guidance, the definition of frontline health care personnel is: “individuals who provide direct patient service (compensated and uncompensated) or engage in healthcare services that place them into contact with patients who are able to transmit SARS-CoV-2, and/or infectious material containing SARS-CoV-2 virus.”
+
+Starting March 1, non-frontline essential health care personnel became eligible to get the COVID-19 vaccine. SDMAC defines non-frontline essential health care personnel as personnel who are not involved in direct patient care but are essential for health system infrastructure. These staff are often affiliated with hospitals, but non-hospital employee non-frontline employees are also included.
 
 Categories of non-frontline essential health care personnel job titles and settings include:
 
-- Public health
-- Emergency management
-- Cyber security
-- Health care critical supply chain functions, including the production, manufacturing, and distribution of vaccine
-- Support roles, such as cleaning, HVAC, and refrigeration, critical to health system function
+Public health
+Emergency management
+Cyber security
+Health care critical supply chain functions, including the production, manufacturing, and distribution of vaccine
+Support roles, such as cleaning, HVAC, and refrigeration, critical to health system function
 
 ## Wisconsin Regions
 
