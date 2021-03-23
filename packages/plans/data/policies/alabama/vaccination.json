@@ -7,7 +7,7 @@
 			"url": "https://www.alabamapublichealth.gov/covid19vaccine/assets/cov-vaccine-prioritization.pdf"
 		},
 		"info": {
-			"url": "https://www.alabamapublichealth.gov/covid19/vaccine.html",
+			"url": "https://www.alabamapublichealth.gov/covid19vaccine/index.html",
 			"text": "cdc/alabama/state_link"
 		},
 		"providers": {
@@ -115,6 +115,13 @@
 				{
 					"question": "c19.eligibility.question/congregate.do",
 					"moreInfoText": "c19.eligibility.moreinfo/congregate.do.al.1c_group1"
+				},
+				{
+					"question": "c19.eligibility.question/health",
+					"moreInfoText": "c19.eligibility.moreinfo/health.al.1c_group1"
+				},
+				{
+					"question": "c19.eligibility.question/health.are_you_an_adult_with"
 				}
 			]
 		}
