@@ -563,9 +563,7 @@ Family caregivers of those with high/moderate-risk conditions may also be eligib
 * Are you a long term care resident or work in a long term care facility?
 * Have you been deemed extremely vulnerable to COVID-19 by hospital providers?
 	* Please note that a form from your physician is required
-* Are you age 60+?
-* Are you a sworn law enforcement officer or firefighter, 50 years of age or older?
-* Are you a K-12 school employee, 50 years of age or older?
+* Are you age 50+?
 
 # Georgia
 
