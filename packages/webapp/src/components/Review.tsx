@@ -9,18 +9,22 @@ import {
 	DetailsListLayoutMode,
 	ProgressIndicator,
 	TextField,
+	MessageBar,
+	MessageBarButton,
+	MessageBarType,
 } from 'office-ui-fabric-react'
 import { useState, useEffect, useCallback, useRef } from 'react'
 import { createPR } from '../actions/repoActions'
 import { getAppStore } from '../store/store'
 import { getObjDiffs } from '../utils/dataUtils'
 
-
 import './Review.scss'
 
 export interface ReviewProp {
 	showDashboard: () => void
 }
+
+const CONTACT_EMAIL = process.env.REACT_APP_CONTACT_US_EMAIL
 
 export default observer(function Review(props: ReviewProp) {
 	const { showDashboard } = props
@@ -38,6 +42,9 @@ export default observer(function Review(props: ReviewProp) {
 	const [locationUpdates, setLocationUpdates] = useState<any[]>([])
 	const [globalUpdates, setGlobalUpdates] = useState<any[]>([])
 	const [showLoading, setShowLoading] = useState<boolean>(false)
+	const [errorMessage, setErrorMessage] = useState<
+		{ message: string } | undefined
+	>()
 
 	const [formData, setFormData] = useState<any>({})
 	const fieldChanges = useRef<any>(formData)
@@ -60,13 +67,15 @@ export default observer(function Review(props: ReviewProp) {
 				})
 				tempGlobalUpdates.push(state.globalFileData.customStrings)
 
-				changeSummary.current.push({key: 'global', type: 'customStrings', value: getObjDiffs(JSON.parse(JSON.stringify(
-					state.initGlobalFileData.customStrings
-				)), JSON.parse(JSON.stringify(
-					state.globalFileData.customStrings
-				)))})
+				changeSummary.current.push({
+					key: 'global',
+					type: 'customStrings',
+					value: getObjDiffs(
+						JSON.parse(JSON.stringify(state.initGlobalFileData.customStrings)),
+						JSON.parse(JSON.stringify(state.globalFileData.customStrings))
+					),
+				})
 			}
-
 
 			if (
 				JSON.stringify(state.initGlobalFileData.cdcStateNames).toLowerCase() !==
@@ -78,11 +87,14 @@ export default observer(function Review(props: ReviewProp) {
 				})
 				tempGlobalUpdates.push(state.globalFileData.cdcStateNames)
 
-				changeSummary.current.push({key: 'global', type: 'cdcStateNames', value: getObjDiffs(JSON.parse(JSON.stringify(
-					state.initGlobalFileData.cdcStateNames
-				)), JSON.parse(JSON.stringify(
-					state.globalFileData.cdcStateNames
-				)))})
+				changeSummary.current.push({
+					key: 'global',
+					type: 'cdcStateNames',
+					value: getObjDiffs(
+						JSON.parse(JSON.stringify(state.initGlobalFileData.cdcStateNames)),
+						JSON.parse(JSON.stringify(state.globalFileData.cdcStateNames))
+					),
+				})
 			}
 
 			if (
@@ -95,11 +107,14 @@ export default observer(function Review(props: ReviewProp) {
 				})
 				tempGlobalUpdates.push(state.globalFileData.cdcStateLinks)
 
-				changeSummary.current.push({key: 'global', type: 'cdcStateLinks', value: getObjDiffs(JSON.parse(JSON.stringify(
-					state.initGlobalFileData.cdcStateLinks
-				)), JSON.parse(JSON.stringify(
-					state.globalFileData.cdcStateLinks
-				)))})
+				changeSummary.current.push({
+					key: 'global',
+					type: 'cdcStateLinks',
+					value: getObjDiffs(
+						JSON.parse(JSON.stringify(state.initGlobalFileData.cdcStateLinks)),
+						JSON.parse(JSON.stringify(state.globalFileData.cdcStateLinks))
+					),
+				})
 			}
 
 			Object.keys(state.repoFileData).forEach((location: any) => {
@@ -126,11 +141,16 @@ export default observer(function Review(props: ReviewProp) {
 								value: state.repoFileData[location],
 							})
 
-							changeSummary.current.push({key: location, type: 'info', value: getObjDiffs(JSON.parse(JSON.stringify(
-								state.initRepoFileData[location].info
-							)), JSON.parse(JSON.stringify(
-								state.repoFileData[location].info
-							)))})
+							changeSummary.current.push({
+								key: location,
+								type: 'info',
+								value: getObjDiffs(
+									JSON.parse(
+										JSON.stringify(state.initRepoFileData[location].info)
+									),
+									JSON.parse(JSON.stringify(state.repoFileData[location].info))
+								),
+							})
 							addChanges = true
 						}
 						if (
@@ -138,18 +158,29 @@ export default observer(function Review(props: ReviewProp) {
 							JSON.stringify(
 								state.initRepoFileData[location].regions
 							)?.toLowerCase() !==
-								JSON.stringify(state.repoFileData[location].regions).toLowerCase()
+								JSON.stringify(
+									state.repoFileData[location].regions
+								).toLowerCase()
 						) {
 							tempChangesList.push({
 								label: `Updated regions for ${location}`,
 								value: state.repoFileData[location],
 							})
 
-							changeSummary.current.push({key: location, type: 'regions', value: getObjDiffs(JSON.parse(JSON.stringify(
-								state.initRepoFileData[location].regions ?? {}
-							)), JSON.parse(JSON.stringify(
-								state.repoFileData[location].regions
-							)))})
+							changeSummary.current.push({
+								key: location,
+								type: 'regions',
+								value: getObjDiffs(
+									JSON.parse(
+										JSON.stringify(
+											state.initRepoFileData[location].regions ?? {}
+										)
+									),
+									JSON.parse(
+										JSON.stringify(state.repoFileData[location].regions)
+									)
+								),
+							})
 							addChanges = true
 						}
 						if (
@@ -165,31 +196,43 @@ export default observer(function Review(props: ReviewProp) {
 								value: state.repoFileData[location],
 							})
 
-							changeSummary.current.push({key: location, type: 'vaccination', value: getObjDiffs(JSON.parse(JSON.stringify(
-								state.initRepoFileData[location].vaccination
-							)), JSON.parse(JSON.stringify(
-								state.repoFileData[location].vaccination
-							)))})
+							changeSummary.current.push({
+								key: location,
+								type: 'vaccination',
+								value: getObjDiffs(
+									JSON.parse(
+										JSON.stringify(state.initRepoFileData[location].vaccination)
+									),
+									JSON.parse(
+										JSON.stringify(state.repoFileData[location].vaccination)
+									)
+								),
+							})
 							addChanges = true
 						}
 						if (
 							JSON.stringify(
 								state.initRepoFileData[location].strings
 							).toLowerCase() !==
-							JSON.stringify(
-								state.repoFileData[location].strings
-							).toLowerCase()
+							JSON.stringify(state.repoFileData[location].strings).toLowerCase()
 						) {
 							tempChangesList.push({
 								label: `Updated strings information for ${location}`,
 								value: state.repoFileData[location],
 							})
 
-							changeSummary.current.push({key: location, type: 'strings', value: getObjDiffs(JSON.parse(JSON.stringify(
-								state.initRepoFileData[location].strings
-							)), JSON.parse(JSON.stringify(
-								state.repoFileData[location].strings
-							)))})
+							changeSummary.current.push({
+								key: location,
+								type: 'strings',
+								value: getObjDiffs(
+									JSON.parse(
+										JSON.stringify(state.initRepoFileData[location].strings)
+									),
+									JSON.parse(
+										JSON.stringify(state.repoFileData[location].strings)
+									)
+								),
+							})
 							addChanges = true
 						}
 						if (addChanges) {
@@ -205,8 +248,8 @@ export default observer(function Review(props: ReviewProp) {
 			setLocationUpdates(tempLocationUpdates)
 			setChangesList(tempChangesList)
 			setGlobalUpdates(tempGlobalUpdates)
-		} catch(err) {
-			console.info("Error", err)
+		} catch (err) {
+			setErrorMessage(err)
 		}
 	}, [state.initRepoFileData, state.repoFileData, state.initGlobalFileData, state.globalFileData, changeSummary])
 
@@ -235,9 +278,33 @@ export default observer(function Review(props: ReviewProp) {
 					</div>
 				</div>
 				<div className="bodyContent">
+					{errorMessage && (
+						<MessageBar
+							messageBarType={MessageBarType.error}
+							dismissButtonAriaLabel="Close"
+							actions={
+								<div>
+									<MessageBarButton
+										href={`mailto:${CONTACT_EMAIL}?subject=${encodeURI(
+											'DATA COMPOSER ERROR'
+										)}&body=${encodeURI(errorMessage.toString())}`}
+										target="_blank"
+									>
+										Report Error
+									</MessageBarButton>
+								</div>
+							}
+						>
+							<p>
+								Unexpected Error
+								<br />
+								<br />
+								{errorMessage?.toString()}
+							</p>
+						</MessageBar>
+					)}
 					{!showLoading ? (
 						<section>
-							
 							<div className="submitContainer">
 								<TextField
 									label="Title (Optional):"
@@ -254,23 +321,28 @@ export default observer(function Review(props: ReviewProp) {
 									resizable={false}
 									value={formData.prDetails}
 									onChange={handleTextChange}
-								/>								
+								/>
 								<DetailsList
-								items={changesList}
-								columns={changesColumns}
-								setKey="set"
-								layoutMode={DetailsListLayoutMode.justified}
-								checkboxVisibility={2}
+									items={changesList}
+									columns={changesColumns}
+									setKey="set"
+									layoutMode={DetailsListLayoutMode.justified}
+									checkboxVisibility={2}
 								/>
 								<PrimaryButton
 									text="Submit changes"
 									onClick={() => {
 										setShowLoading(true)
-										createPR([globalUpdates, locationUpdates, showDashboard, formData, changeSummary.current])
+										createPR([
+											globalUpdates,
+											locationUpdates,
+											showDashboard,
+											formData,
+											changeSummary.current,
+										])
 									}}
 								/>
 							</div>
-							
 						</section>
 					) : (
 						<section className="loadingContainer">
