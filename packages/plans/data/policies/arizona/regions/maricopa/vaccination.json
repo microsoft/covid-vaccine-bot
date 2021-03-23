@@ -3,7 +3,9 @@
 		"info": {
 			"text": "c19.links/info.az.maricopa",
 			"url": "https://www.maricopa.gov/5641/COVID-19-Vaccine",
-			"scrapeQuery": ["#structuralContainer8"]
+			"scrapeQuery": [
+				"#structuralContainer8"
+			]
 		}
 	},
 	"activePhase": "1c"
