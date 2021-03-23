@@ -113,6 +113,9 @@
 				},
 				{
 					"question": "c19.eligibility.question/clinical_trial.are"
+				},
+				{
+					"question": "c19.eligibility.question/long_term_care_resident.are"
 				}
 			]
 		},
