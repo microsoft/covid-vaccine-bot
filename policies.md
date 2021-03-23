@@ -129,7 +129,7 @@ Counties and tribes may also choose to vaccinate the following groups defined by
 | info | [Cochise County COVID-19 Vaccination Info](https://covid-cochisehealth.hub.arcgis.com/pages/vaccines) |
 
 
-### Arizona::Cochise Active Phase (1c)
+### Arizona::Cochise Active Phase (45_and_older)
 
 ## Arizona::Coconino
 
@@ -140,7 +140,7 @@ Counties and tribes may also choose to vaccinate the following groups defined by
 | info | [Coconino County COVID-19 Vaccine Info](https://www.coconino.az.gov/covid19vaccine) |
 
 
-### Arizona::Coconino Active Phase (1c)
+### Arizona::Coconino Active Phase (35_and_older)
 
 ## Arizona::Gila
 
@@ -210,6 +210,8 @@ Counties and tribes may also choose to vaccinate the following groups defined by
 | providers | [Mojave County Vaccination Providers](https://www.mohavecounty.us/ContentPage.aspx?id=127&cid=1444&page=2&rid=2230) |
 
 
+### Arizona::Mohave Active Phase (1c)
+
 ## Arizona::Navajo
 
 ### Arizona::Navajo Links
@@ -242,7 +244,7 @@ Counties and tribes may also choose to vaccinate the following groups defined by
 | praviders | [Pinal County COVID-19 Providers](https://www.pinalcountyaz.gov/publichealth/CoronaVirus/Pages/VaccineLocations.aspx) |
 
 
-### Arizona::Pinal Active Phase (1c)
+### Arizona::Pinal Active Phase (1b_16_and_older)
 
 ## Arizona::Santa Cruz
 
@@ -266,7 +268,7 @@ Counties and tribes may also choose to vaccinate the following groups defined by
 | scheduling_phone | [Yavapai County COVID-19 Hotline](tel:928-442-5103) |
 
 
-### Arizona::Yavapai Active Phase (1b)
+### Arizona::Yavapai Active Phase (1c)
 
 ## Arizona::Yuma
 
