@@ -3,18 +3,37 @@ c19.eligibility.question/essential_worker.1b.ky,"Are you a K-12 personnel or fir
 c19.link/scheduling.phone.ky,"855-598-2246",,,,,,,,,,,,,,
 c19.eligibility.moreinfo/long_term_care_resident.are.ky.1a,"This also includes assisted living facilities.",,,,,,,,,,,,,,
 c19.eligibility.moreinfo/long_term_care_resident.ky.1b,"This also includes assisted living facilities.",,,,,,,,,,,,,,
-c19.eligibility.moreinfo/health.ky.1c,"Per CDC, adults of any age with the following conditions are at increased risk of severe illness from the virus that causes COVID-19:
+c19.eligibility.moreinfo/health.ky.1c,"Anyone age 16 or older with any medical or behavioral health condition or conditions that the CDC reports ‘are’ or ‘might’ be at increased risk of severe COVID-19 illness is eligible. These include the following:
+
+Adults of any age with the following conditions are at increased risk of severe illness from the virus that causes COVID-19:
+
 Cancer
 Chronic kidney disease
 COPD (chronic obstructive pulmonary disease)
 Down Syndrome
 Heart conditions, such as heart failure, coronary artery disease, or cardiomyopathies
 Immunocompromised state (weakened immune system) from solid organ transplant
-Obesity (body mass index [BMI] of 30 kg/m2 or higher but less than 40 kg/m2)
-Severe Obesity (body mass index [BMI] equal to or greater than 40 kg/m2)
+Obesity (body mass index [BMI] of 30 kg/m2 or higher but < 40 kg/m2)
+Severe Obesity (BMI ≥ 40 kg/m2)
 Pregnancy
 Sickle cell disease
-Type 2 diabetes mellitus ",,,,,,,,,,,,,,
+Smoking
+Type 2 diabetes mellitus
+
+COVID-19 is a new disease. Currently there are limited data and information about the impact of many underlying medical conditions on the risk for severe illness from COVID-19. Based on what we know at this time, adults of any age with the following conditions might be at an increased risk for severe illness from the virus that causes COVID-19:
+
+Asthma (moderate-to-severe)
+Cerebrovascular disease (affects blood vessels and blood supply to the brain)
+Cystic fibrosis
+Hypertension or high blood pressure
+Immunocompromised state (weakened immune system) from blood or bone marrow transplant, immune deficiencies, HIV, use of corticosteroids, or use of other immune weakening medicines
+Neurologic conditions, such as dementia
+Liver disease
+Overweight (BMI > 25 kg/m2, but < 30 kg/m2)
+Pulmonary fibrosis (having damaged or scarred lung tissues)
+Thalassemia (a type of blood disorder)
+Type 1 diabetes mellitus
+",,,,,,,,,,,,,,
 c19.eligibility.moreinfo/essential_worker.ky.1c,"Frontline Essential Workers include: 
 Healthcare Personnel
 First Responders (Firefighters, Police)
@@ -38,3 +57,4 @@ Public Safety (Engineers)
 Water & Wastewater
 Clergy",,,,,,,,,,,,,,
 c19.eligibility.moreinfo/essential_worker.are.ky.1b,"This includes firefighters, police, and other emergency response as well as corrections officers",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/long_term_care_resident.are.ky.1c,"Residents of long-term care and assisted living facilities, as well as health care personnel, including clinicians residing outside of Kentucky but who provide care in Kentucky",,,,,,,,,,,,,,
