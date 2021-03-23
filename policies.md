@@ -1423,27 +1423,62 @@ State Legislators
 State and local essential COVID emergency response personnel
 Some elections staff ahead of March and April elections
 Teachers and any other support staff working on site in K-12 or daycare
- (see [here](https://ldh.la.gov/index.cfm/page/4137))
-* Are you age 55+ and have a high-risk medical condition?
-	* People 55-64 with at least one of the conditions listed by the CDC as placing them at an “increased risk of severe illness from the virus that causes COVID-19." 
+Any staff working in congregate facilities (prisons/jails, shelters, dorms, rehab/detox centers, group homes)
+
+As of March 22nd, the following essential workers are also eligible:
+Bank tellers
+Child, youth and family service workers
+Clergy
+Construction workers
+Energy workers
+Food and agricultural workers
+Food service (restaurant) workers, hotel workers and other hospitality workers
+Frontline government workers
+Grocery store workers
+Institutes of higher education faculty/staff
+IT and communications workers
+Judges, court staff, clerks of court and staff, district attorneys and public defenders
+Manufacturing workers
+Media workers
+Postal workers
+Public and private security and emergency preparedness workers
+Public health workers
+Public safety engineers and other workers
+Transportation workers including river pilots
+Veterinarians and support staff
+Water and wastewater workers
+Waste management workers (see [here](https://ldh.la.gov/index.cfm/page/4137))
+* Are you age 16+, and have a high-risk medical condition?
+	* People 16-64 with at least one of the conditions listed by the CDC as placing them at an “increased risk of severe illness from the virus that causes COVID-19." 
+
+Asthma (moderate to severe)
 Cancer
+Cerebrovascular disease (affects blood vessels and blood supply to the brain)
 Chronic kidney disease
+Chronic liver disease
 COPD (chronic obstructive pulmonary disease)
-Down Syndrome
+Current or former smoker
+Cystic fibrosis
+Down syndrome
 Heart conditions, such as heart failure, coronary artery disease or cardiomyopathies
+Hypertension or high blood pressure
 Immunocompromised state (weakened immune system) from solid organ transplant
-Obesity (body mass index [BMI] of 30kg/m2 or higher but < 40kg/m2 )
-Severe obesity (BMIC >40kg/m2 )
+Immunocompromised state (weakened immune system) from blood or bone marrow transplant, immune deficiencies, HIV, use of corticosteroids, or use of other immune weakening medicines
+Overweight (body mass index [BMI] of 25 or higher but less than 30)
+Obesity (BMI of 30 or higher but less than 40)
+Severe obesity (BMI of 40 or higher)
+Pregnancy
+Pulmonary fibrosis (having damaged or scarred lung tissues)
 Severe neurologic conditions, such as dementia
-Sickle Cell Disease
-Smoking
+Sickle cell disease
+Thalassemia (a type of blood disorder)
+Type 1 diabetes mellitus
 Type 2 diabetes mellitus
 
-Persons with the following qualifying underlying medical conditions are advised to complete the Louisiana COVID-19 Vaccine Attestation Form before their appointment to receive the vaccine (see link)
+Persons with the following qualifying underlying medical conditions are advised to complete the Louisiana COVID-19 Vaccine Attestation Form before their appointment to receive the vaccine (see link). Note that ages 16 and 17 are eligible for the Pfizer vaccine only
 
  (see [here](https://ldh.la.gov/index.cfm/page/4137))
 * Are you age 65+?
-* Are you currently pregnant?
 
 # Maine
 
@@ -1453,16 +1488,19 @@ Persons with the following qualifying underlying medical conditions are advised 
 | --- | --- |
 | info | [Maine Department of Health and Human Services](https://www.maine.gov/covid19/vaccines) |
 | providers | [View locations providing vaccines](https://www.maine.gov/covid19/vaccines/vaccination-sites) |
+| eligibility | [https://www.maine.gov/covid19/vaccines/phases](https://www.maine.gov/covid19/vaccines/phases) |
 
 
-## Maine Active Phase (1b)
+## Maine Active Phase (age_50_and_older)
 
-* Are you a healthcare worker?
-	* This includes patient- or public-facing health care, long-term care, and public safety personnel
-* Are you a long-term care resident?
+* Are you age 50+?
 * Are you an educator or child care provider?
-	* The federal government as identified workers at pre-primary, primary, and secondary schools, Head Start and Early Head Start programs, including teachers, staff, and bus drivers and those who work as or for licensed child care providers, including center-based and family care providers as now eligible for vaccination. (see [here](https://www.maine.gov/covid19/vaccines/public-faq))
-* Are you age 60+?
+	* Vaccination sites will soon start offering appointments to Maine PreK-12 teachers and school staff, and workers at licensed child care facilities. Federal policy directs Hannaford, Walgreens, and Walmart pharmacies to prioritize these workers. It may take time for appointments to become available. Age-eligible individuals may still also make a vaccine appointment at one of Maine's vaccination sites. 
+* Are you classified as an essential worker?
+	* Health care, public safety, and critical COVID-19 infrastructure personnel should contact their employer or their professional associations to learn how to get a vaccine. 
+
+Only patient- or public-facing health care, long-term care, and public safety personnel are eligible for vaccination. If eligible, your employer will arrange for how you will get vaccinated. Only frontline workers in organizations determined by Maine CDC to be critical to the Maine COVID-19 response are eligible to get vaccinated at this time. Those organizations have been notified by State officials.
+* Are you a long-term care resident?
 
 # Marshall Islands
 
@@ -1536,10 +1574,27 @@ Individuals who are diagnosed with these medical conditions but are not currentl
 | scheduling | [Schedule a Vaccination](https://vaccinesignup.mass.gov/) |
 
 
-## Massachusetts Active Phase (phase2step2)
+## Massachusetts Active Phase (phase_2_step_4)
 
-* Are you age 65+? (see [here](https://www.mass.gov/info-details/covid-19-vaccinations-for-people-ages-65-and-older))
-* Are you age 16+, and have two or more high-risk medical conditions? (see [here](https://www.mass.gov/info-details/covid-19-vaccinations-for-individuals-with-certain-medical-conditions))
+* Are you age 60+?
+* Are you age 16+ with at least 2 high-risk medical conditions?
+	* Phase 2 groups:
+Individuals 16 and older with two or more of certain medical conditions (defined below) are in Group 2 of Phase 2. This group is now eligible to receive the vaccine.
+Individuals 16 and older with one of these certain medical conditions will be eligible to receive the vaccine effective April 5, 2021.
+Phase 2 eligible conditions:
+Asthma (moderate-to-severe)
+Cancer
+Chronic kidney disease
+COPD (chronic obstructive pulmonary disease)
+Down Syndrome
+Heart conditions, such as heart failure, coronary artery disease, or cardiomyopathies
+Immunocompromised state (weakened immune system) from solid organ transplant*
+Obesity and severe obesity (body mass index [BMI] of 30 kg/m2 or higher)
+Calculate your BMI here: Adult BMI Calculator | CDC
+Pregnancy**
+Sickle cell disease
+Smoking
+Type 2 diabetes mellitus (see [here](https://www.mass.gov/info-details/covid-19-vaccinations-for-individuals-with-certain-medical-conditions))
 * Are you a resident or staff of public or private low income and affordable senior housing? (see [here](https://www.mass.gov/doc/massachusetts-senior-affordable-housing-covid-19-vaccine-information/))
 * Are you a healthcare worker?
 	* All healthcare workers are eligible to receive the vaccine, including home-based healthcare workers.  (see [here](https://www.mass.gov/info-details/covid-19-vaccinations-for-health-care-workers))
@@ -1550,6 +1605,21 @@ Individuals who are diagnosed with these medical conditions but are not currentl
 * Are you a staff member or resident of a congregate care facility?
 	* Examples of congregate care facilities include emergency shelter programs, domestic violence shelters, veterans' shelters, and private special education schools. (see [here](https://www.mass.gov/info-details/covid-19-vaccinations-for-congregate-care-settings))
 * Are you a K-12 educator or work in a licensed child care facility? (see [here](https://www.mass.gov/info-details/covid-19-vaccinations-for-k-12-educators-child-care-workers-and-school-staff))
+* Are you classified as an essential worker?
+	* Workers in the following categories are eligible as part of this group:
+- Restaurant or cafe workers
+- Food, meatpacking, beverage, agriculture, consumer goods, retail, or food service workers
+- Grocery and convenience store workers
+- Food pantry workers or volunteers
+- Medical supply chain workers
+- Vaccine development workers
+- Transit/transportation workers
+- Public works, water, wastewater, or utility workers
+- Sanitation workers
+- Public health workers
+- Court system worker (judges, prosecutors, defense attorneys, clerks), other than court officers who are listed under first responders
+- Funeral directors and  funeral workers
+ (see [here](https://www.mass.gov/info-details/covid-19-vaccinations-for-certain-workers))
 
 ## Massachusetts Regions
 
