@@ -1241,15 +1241,31 @@ This also includes local health department staff who interact with patients at t
 	* This includes those who are who are regularly called to the scene of an emergency to give medical aid, including firefighters, police officers and sheriff's deputies, emergency medical services, reservists and correctional officers (see [here](https://www.coronavirus.in.gov/vaccine/index.htm))
 * Do you have exposure to COVID-19 infectious material?
 	* Examples include cleaning of rooms or material from COVID-19 patients, performing COVID-19 testing, other exposure to infected tissue, performing autopsies or other post-mortem examinations of COVID-19 patients)
-* Are you age 45+?
+* Are you age 40+?
 * Are you age 16+, and have a high-risk medical condition?
-	* Initial groups of patients at highest risk of severe illness from COVID-19 who are identified by their healthcare provider are also eligible. These individuals will receive a unique registration link by text or email, or may call 211 after receiving the notification:
+	* Specific groups of patients at highest risk of severe illness from COVID-19 who are identified by their healthcare provider are also eligible. These individuals will receive a unique registration link by text or email, or may call 211 after receiving the notification:
 
 Active dialysis patients
 Sickle cell disease patients
 Down syndrome
 Post-solid organ transplant
-People who are actively in treatment (chemotherapy, radiation, surgery) for cancer now or in the last three months, or with active primary lung cancer or active hematologic cancers (lymphoma, leukemia and multiple myeloma) (see [here](https://www.coronavirus.in.gov/vaccine/index.htm))
+People who are actively in treatment (chemotherapy, radiation, surgery) for cancer now or in the last three months, or with active primary lung cancer or active hematologic cancers (lymphoma, leukemia and multiple myeloma)
+Early childhood conditions that are carried into adulthood:
+Cystic fibrosis
+Muscular dystrophy
+People born with severe heart defects, requiring specialized medical care.
+People with severe type 1 diabetes, who have been hospitalized in the past year.
+Phenylketonuria (PKU), Tay-Sachs, and other rare, inherited metabolic disorders.
+Epilepsy with continuing seizures, hydrocephaly, microcephaly and other severe neurologic disorders
+People with severe asthma who have been hospitalized for this in the past year
+Alpha and beta thalassemia
+Spina bifida
+Cerebral palsy
+People who require supplemental oxygen and/or tracheostomy
+Pulmonary fibrosis, Alpha-1 Antitrypsin
+Immunocompromised state (weakened immune system) from blood or bone marrow transplant, immune deficiencies, combined primary immunodeficiency disorder, HIV, daily use of corticosteroids, use of other immune weakening medicines, receiving tumor necrosis factor-alpha blocker or rituximab.
+Intellectual and Developmentally Disabled individuals receiving home/community-based services. (Family and Social Services Administration will provide patient information for this community.)
+Pregnancy (see [here](https://www.coronavirus.in.gov/vaccine/index.htm))
 * Are you a K-12 educator or work in a licensed child care facility?
 	* Examples include:
 Teacher or staff in pre-K through high school, childcare center or Head Start and Early Start programs
