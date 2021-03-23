@@ -23,8 +23,6 @@ export interface ReviewProp {
 	showDashboard: () => void
 }
 
-const CONTACT_EMAIL = process.env.REACT_APP_CONTACT_US_EMAIL
-
 export default observer(function Review(props: ReviewProp) {
 	const { showDashboard } = props
 	const changesColumns = [
