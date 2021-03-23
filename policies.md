@@ -1276,9 +1276,21 @@ Classroom aides, bus drivers, janitors, counselors, administration staff, cafete
 	* This includes those who work in the following roles: First Responders; PK-12 staff; early childhood education and childcare workers; Frontline essential workers in food, agriculture, distribution, and manufacturing sectors who live or work in non-social distanced settings; Government officials, including staff, engaged in business at the State Capitol; Inspectors responsible for health, life and safety; Correctional facility staff and individuals incarcerated (see [here](https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus/Vaccine/Information-for-the-Public))
 * Are you age 65+?
 * Do you work or live in a congregate setting?
-* Are you a person age 26+ with a high-risk medical condition?
-	* Persons age 26 to 64 years that are or might be at an increased risk of severe illness from COVID-19 due to medical conditions listed at at 
- (see [here](https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html))
+* Are you age 16+, and have a high-risk medical condition?
+	* Adults of any age with the following conditions are at increased risk of severe illness from the virus that causes COVID-19:
+
+Cancer
+Chronic kidney disease
+COPD (chronic obstructive pulmonary disease)
+Down Syndrome
+Heart conditions, such as heart failure, coronary artery disease, or cardiomyopathies
+Immunocompromised state (weakened immune system) from solid organ transplant
+Obesity (body mass index [BMI] of 30 kg/m2 or higher but < 40 kg/m2)
+Severe Obesity (BMI ≥ 40 kg/m2)
+Pregnancy
+Sickle cell disease
+Smoking
+Type 2 diabetes mellitus (see [here](https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html))
 
 # Kansas
 
