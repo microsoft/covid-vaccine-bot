@@ -545,8 +545,7 @@ Family caregivers of those with high/moderate-risk conditions may also be eligib
 
 ## Federated States of Micronesia Active Phase (1a)
 
-* Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.
-* Are you age 60+?
+* Are you age 18+?
 
 # Florida
 
