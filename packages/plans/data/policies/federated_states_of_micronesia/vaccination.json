@@ -11,10 +11,7 @@
 			"id": "1a",
 			"qualifications": [
 				{
-					"question": "c19.eligibility.question/essential_worker.1b"
-				},
-				{
-					"question": "c19.eligibility.question/age.60_up"
+					"question": "c19.eligibility.question/age.are_you_age_18"
 				}
 			]
 		}
