@@ -2,4 +2,25 @@ String ID,en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-j
 c19.eligibility.question/essential_worker.1b.sd,"Are you K-12 or college personnel, or a funeral service worker?",,,,,,,,,,,,,,
 c19.eligibility.question/health.1b.sd,"Are you age 16+ with 2 or more high-risk medical conditions?",,,,,,,,,,,,,,
 c19.eligibility.moreinfo/essential_worker.sd.1d,"This includes EMS, public health workers, law enforcement, correctional officers, teachers and other school/college staff, and funeral service workers.",,,,,,,,,,,,,,
-c19.eligibility.moreinfo/health.sd.1d,"This includes those undergoing dialysis, post-transplant, and active cancer, as well as those with medical conditions that put them at a higher risk for severe COVID-19 infection, including ",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/health.sd.1d,"This includes those undergoing dialysis, post-transplant, and active cancer, as well as those with medical conditions that put them at a higher risk for severe COVID-19 infection, including 
+
+Asthma (moderate-to-severe)
+Cancer
+Cerebrovascular Disease (affects blood vessels and blood supply to the brain)
+Chronic Kidney Disease
+COPD (Chronic Obstructive Pulmonary Disease)
+Cystic Fibrosis
+Diabetes Mellitus (type 1 and type 2)
+Down Syndrome
+Heart Conditions, such as Heart Failure, Coronary Artery Disease, or Cardiomyopathies
+Hypertension or High Blood Pressure
+Immunocompromised State (weakened immune system)
+Liver Disease
+Neurologic Conditions, such as Dementia
+Pregnancy
+Pulmonary Fibrosis (having damaged or scarred lung tissues)
+Severe Obesity (BMI ≥ 40 kg/m2)
+Sickle Cell Disease
+Thalassemia (a type of blood disorder)",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/health.sd.1e,"This includes those undergoing dialysis, post-transplant, and active cancer, as well as those with medical conditions that put them at a higher risk for severe COVID-19 infection, including ",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/essential_worker.sd.1e,"This includes EMS, public health workers, law enforcement, correctional officers, teachers and other school/college staff, funeral service workers, fire service personnel, and other public-facing workers in essential and critical infrastructure",,,,,,,,,,,,,,
