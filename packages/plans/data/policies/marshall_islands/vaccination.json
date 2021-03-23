@@ -11,10 +11,10 @@
 		}
 	},
 	"activePhase": "current",
+	"noPhaseLabel": true,
 	"phases": [
 		{
 			"id": "current",
-			"label": "Current",
 			"qualifications": [
 				{
 					"question": "c19.eligibility.question/age.are_you_age_18"

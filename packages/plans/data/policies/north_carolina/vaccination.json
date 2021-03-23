@@ -9,9 +9,7 @@
 		},
 		"eligibility": {
 			"url": "https://covid19.ncdhhs.gov/vaccines/find-your-spot-take-your-shot",
-			"scrapeQuery": [
-				"article"
-			]
+			"scrapeQuery": ["article"]
 		},
 		"scheduling_phone": {
 			"url": "tel:1-888-675-4567",
@@ -20,10 +18,10 @@
 		}
 	},
 	"activePhase": "current",
+	"noPhaseLabel": true,
 	"phases": [
 		{
 			"id": "current",
-			"label": "Current",
 			"qualifications": [
 				{
 					"question": "c19.eligibility.question/healthcare_worker.are"
