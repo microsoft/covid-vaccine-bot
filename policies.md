@@ -443,23 +443,23 @@ California genetically handicapped persons program
 
 * Are you a healthcare worker?
 	* Healthcare Personnel:
-• Paid and unpaid people serving in healthcare settings with potential for direct or indirect exposure to patients of infectious materials.
+- Paid and unpaid people serving in healthcare settings with potential for direct or indirect exposure to patients of infectious materials.
 * Are you a long term care resident or work in a long term care facility?
 	* Long-Term Care Facility Residents and staff:
-• Adults who reside in facilities that provide a range of services, including medical and personal care, to persons who are unable to live independently.
+- Adults who reside in facilities that provide a range of services, including medical and personal care, to persons who are unable to live independently.
 * Are you classified as an essential worker?
 	* This includes: 
 
 Medical First Responders:
-• Individuals who respond to medical 911 calls and face risk of exposure to COVID-19.
+- Individuals who respond to medical 911 calls and face risk of exposure to COVID-19.
 
 Educators and Child Care Providers:
-• Pre-K-12 Teachers, paraprofessionals, custodial staff, food service providers, school bus drivers and childcare providers as well as in-school administrative staff. Does not include individuals who are not required to work on-site in a school.
+- Pre-K-12 Teachers, paraprofessionals, custodial staff, food service providers, school bus drivers and childcare providers as well as in-school administrative staff. Does not include individuals who are not required to work on-site in a school.
 * Are you age 45+?
 	* This includes those who are residents or workers within the state of Connecticut
 * Do you work or live in a congregate setting?
 	* Residents and Staff of select congregate settings:
-• Staff and residents of halfway homes, inpatient mental health facilities, correction facilities, homeless shelters, domestic violence shelters, substance use and residential treatment facilities along with others.
+- Staff and residents of halfway homes, inpatient mental health facilities, correction facilities, homeless shelters, domestic violence shelters, substance use and residential treatment facilities along with others.
 
 # Delaware
 
@@ -1347,50 +1347,50 @@ Type 2 diabetes mellitus (see [here](https://www.cdc.gov/coronavirus/2019-ncov/n
 
 * Are you a healthcare worker?
 	* This includes:
-• Workers in direct contact with patients, e.g., MD/DO/DPM, nurses, EMTs, clinical students and trainees
-• Diagnostic labs, phlebotomists, pandemic health workers (e.g., individuals performing COVID tests)
-• Mental healthcare providers, pharmacy staff, non-medical staff – if exposed to patients or infectious materials;
-• Healthcare-associated contractors, including food, waste management etc.
-• Dentists, physical therapists, professionals performing elective procedures
-• Home care workers, CMS-designated caretaker
-• Morticians, forensic and funeral service workers;
-• Staff in FQHCs, CHCs, safety-net/ free clinics, faith-based outreach clinics (inclusive of state-funded clinics)
-• Home health aides, nursing assistants
+- Workers in direct contact with patients, e.g., MD/DO/DPM, nurses, EMTs, clinical students and trainees
+- Diagnostic labs, phlebotomists, pandemic health workers (e.g., individuals performing COVID tests)
+- Mental healthcare providers, pharmacy staff, non-medical staff – if exposed to patients or infectious materials;
+- Healthcare-associated contractors, including food, waste management etc.
+- Dentists, physical therapists, professionals performing elective procedures
+- Home care workers, CMS-designated caretaker
+- Morticians, forensic and funeral service workers;
+- Staff in FQHCs, CHCs, safety-net/ free clinics, faith-based outreach clinics (inclusive of state-funded clinics)
+- Home health aides, nursing assistants
 * Are you a long term care resident or work in a long term care facility?
 * Are you classified as an essential worker?
 	* This includes:
-• Firefighters, police officers, first responders, correction officers
-• Grocery store workers and food services
-• K-12 and childcare workers, including teachers, custodians, drivers and other staff
-• Food processing, including meat processing plants
-• Large-scale aviation manufacturing plants
-• Transportation workers
-• Workers in the following industries, if they regularly need to be in high-risk settings to perform their duties:
+- Firefighters, police officers, first responders, correction officers
+- Grocery store workers and food services
+- K-12 and childcare workers, including teachers, custodians, drivers and other staff
+- Food processing, including meat processing plants
+- Large-scale aviation manufacturing plants
+- Transportation workers
+- Workers in the following industries, if they regularly need to be in high-risk settings to perform their duties:
 – Retail, warehouses and sales outlets
 – Agriculture
 – Supply of critical services or materials for the COVID response (e.g. PPE)
 – The U.S. Postal Service
 – Department of Motor Vehicles
-• Agricultural and food workers not included in previous phases
-• Workers performing in-person activities indoors, in critical manufacturing, not included in previous phases;
+- Agricultural and food workers not included in previous phases
+- Workers performing in-person activities indoors, in critical manufacturing, not included in previous phases;
 this includes aviation, production of critical supplies for the COVID response
-• Utility workers
-• Social service and government workers not included in previous priority phases
-• Logistics workers, such as truck transportation workers, couriers and others
-• Water and wastewater workers
-• Shelter and housing (e.g., construction) workers, finance (e.g., bank tellers)
-• Information technology and communications workers
+- Utility workers
+- Social service and government workers not included in previous priority phases
+- Logistics workers, such as truck transportation workers, couriers and others
+- Water and wastewater workers
+- Shelter and housing (e.g., construction) workers, finance (e.g., bank tellers)
+- Information technology and communications workers
 * Are you age 16+, and have a high-risk medical condition?
 	* This includes those with: 
-• Cancer
-• Chronic kidney disease
-• Chronic obstructive pulmonary disease;
-• Down Syndrome
-• Heart conditions, such cardiomyopathies;
-• Immunocompromised state from solid organ transplant;
-• Type 2 diabetes mellitus;
-• Sickle cell disease;
-• Pregnant patients
+- Cancer
+- Chronic kidney disease
+- Chronic obstructive pulmonary disease;
+- Down Syndrome
+- Heart conditions, such cardiomyopathies;
+- Immunocompromised state from solid organ transplant;
+- Type 2 diabetes mellitus;
+- Sickle cell disease;
+- Pregnant patients
 
 CDC's second list of conditions, which include (non-exhaustive):
 – Asthma (moderate-to-severe)
@@ -1868,34 +1868,34 @@ Type 2 diabetes mellitus (see [here](https://www.mass.gov/info-details/covid-19-
 * Are you a healthcare worker? (see [here](https://www.michigan.gov/documents/coronavirus/MI_COVID-19_Vaccination_Prioritization_Guidance_2152021_716344_7.pdf))
 * Are you a long term care resident or work in a long term care facility?
 	* Group A: Vaccinate workers who have direct contact with large number of vulnerable residents. Note: this would include staff who come in and out of the buildings.
-• Skilled nursing facility staff
-• Psychiatric hospital staff
-• Homes for aged staff
-• Adult foster care centers staff
-• Assisted living facility staff
-• Home health care workers caring for high risk clients with large patient loads (e.g., people with a tracheostomy/ventilator at home)
+- Skilled nursing facility staff
+- Psychiatric hospital staff
+- Homes for aged staff
+- Adult foster care centers staff
+- Assisted living facility staff
+- Home health care workers caring for high risk clients with large patient loads (e.g., people with a tracheostomy/ventilator at home)
 
 Group B: Vaccinate vulnerable residents in long-term care facilities.
-• Skilled nursing facility residents
-• Psychiatric hospitals patients
-• Homes for aged residents
-• Adult foster care centers residents
-• Assisted living facility residents (see [here](https://www.michigan.gov/documents/coronavirus/MI_COVID-19_Vaccination_Prioritization_Guidance_2152021_716344_7.pdf))
+- Skilled nursing facility residents
+- Psychiatric hospitals patients
+- Homes for aged residents
+- Adult foster care centers residents
+- Assisted living facility residents (see [here](https://www.michigan.gov/documents/coronavirus/MI_COVID-19_Vaccination_Prioritization_Guidance_2152021_716344_7.pdf))
 * Are you classified as an essential worker?
 	* Prioritized frontline workers whose work role has frequent or intense exposure, and, due to the nature of the work, are not able to maintain social distance. For example, a first responder may have to physically touch other people in their response, and a child care provider cannot maintain social distance from children when caring for their physical needs. Per CDC guidance, vaccinating staff and incarcerated/detained persons is recommended because of shared increased risk of disease. The specific prioritized categories are:
-• Pre-Kindergarten through high school teachers, support staff and child care workers who usually have direct contact with children
-• First responders not covered in Phase 1A (e.g., firefighters, police, conservation officers, inspectors)
-• Corrections workers (e.g., staff in prisons, jails, juvenile justice facilities) and incarcerated or detained individuals, due to shared increased risk of disease and the difficulty in controlling outbreaks in correctional facilities
-• Workers in homeless shelters, as well as residents, given congregate settings could facilitate the spread of infection.
-• Workers in congregate child care institutions*, and adult and child protective services.
+- Pre-Kindergarten through high school teachers, support staff and child care workers who usually have direct contact with children
+- First responders not covered in Phase 1A (e.g., firefighters, police, conservation officers, inspectors)
+- Corrections workers (e.g., staff in prisons, jails, juvenile justice facilities) and incarcerated or detained individuals, due to shared increased risk of disease and the difficulty in controlling outbreaks in correctional facilities
+- Workers in homeless shelters, as well as residents, given congregate settings could facilitate the spread of infection.
+- Workers in congregate child care institutions*, and adult and child protective services.
 
 Other frontline essential workers in sectors essential to the functioning of society and are at substantially higher risk of exposure to SARS-CoV-2 because their work-related duties must be performed on site and involve being in close proximity (i.e., within 6 feet) to the public or to coworkers. Frontline essential workers in critical infrastructures included by ACIP are:
-• Food and agriculture workers;
-• Critical manufacturing workers
-• Public transit workers
-• Grocery store workers
-• U.S. Postal Service workers
-• Workers with unique skill sets not covered above, such as non-hospital
+- Food and agriculture workers;
+- Critical manufacturing workers
+- Public transit workers
+- Grocery store workers
+- U.S. Postal Service workers
+- Workers with unique skill sets not covered above, such as non-hospital
 laboratories  (see [here](https://www.michigan.gov/documents/coronavirus/MI_COVID-19_Vaccination_Prioritization_Guidance_2152021_716344_7.pdf))
 * Are you age 16+, and have a high-risk medical condition?
 	*  Individuals age 16 to 64 years living with disabilities*, substance use disorders, severe mental illness, and/or with COPD, hypertension, chronic kidney disease, heart disease, diabetes, obesity or other conditions that puts them at high risk of negative COVID-19 outcome. These include:
@@ -2501,16 +2501,16 @@ corticosteroids or use of other immune-weakening medicines
 * Do you work or live in a congregate setting?
 * Are you classified as an essential worker?
 	* This includes:
-✓ Public Transit Workers
-✓ Grocery Store Workers
-✓ Hotel Workers
-✓ First Responders & Corrections Workers
-✓ Restaurant Workers & Restaurant Delivery Workers
-✓ For-Hire Vehicle Drivers
-✓ In-Person College Faculty & Essential Staff
-✓ Public-Facing Government/Public Employees
-✓ Public-Facing Not-For-Profit Workers
-✓ Essential In-Person Building Service Workers (see [here](https://covid19vaccine.health.ny.gov/phased-distribution-vaccine#phase-1a---phase-1b))
+- Public Transit Workers
+- Grocery Store Workers
+- Hotel Workers
+- First Responders & Corrections Workers
+- Restaurant Workers & Restaurant Delivery Workers
+- For-Hire Vehicle Drivers
+- In-Person College Faculty & Essential Staff
+- Public-Facing Government/Public Employees
+- Public-Facing Not-For-Profit Workers
+- Essential In-Person Building Service Workers (see [here](https://covid19vaccine.health.ny.gov/phased-distribution-vaccine#phase-1a---phase-1b))
 * Are you age 16+, and have a high-risk medical condition?
 	* New Yorkers age 16 and older with the following conditions qualify for the vaccine:
 
@@ -2629,7 +2629,51 @@ Correctional facility, such as jail or prison
 | providers | [View locations providing vaccines](https://coronavirus.ohio.gov/wps/portal/gov/covid-19/covid-19-vaccination-program/resources/covid-19-mass-vaccination-clinics) |
 
 
-## Ohio Active Phase (1a)
+## Ohio Active Phase (current)
+
+* Are you a healthcare worker?
+	* Healthcare workers and personnel who are routinely involved in the care of COVID-19 patients.
+* Are you age 40+?
+* Are you a long term care resident or work in a long term care facility?
+* Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?
+	* * Residents and staff in nursing homes.
+* Residents and staff in assisted living facilities.
+* Patients and staff at state psychiatric hospitals.
+* Residents and staff at our two state-run homes for Ohio veterans.
+
+* Are you K-12 personnel?
+* Are you a firefighter, law enforcement officer, or corrections staff?
+	* Law enforcement and corrections officers: There are approximately 76,000 Ohioans eligible in this category.
+ * This group includes sworn law enforcement officers and peace officers who have first responder or direct supervisory responsibilities. These individuals must be active duty, working a regular minimum of 20 hours a week. Eligibility does not include retired, “special,” or reserve officers.  
+      * Police officers.
+      * Sheriff's deputies.
+      * Ohio State Highway Patrol troopers.
+      * Special jurisdiction officers: Other state or federal enforcement officers such as Ohio Department of Natural Resources (ODNR) enforcement staff, pharmacy board investigators, BCI agents, state fire marshal investigators, federal transportation security officers, and other federal law enforcement officers who do not have access to vaccination from federal sources.
+ * Corrections staff: Eligible are corrections staff, including probation and parole staff, who provide direct services to an adult or juvenile inmate or court-supervised individuals.
+ * Firefighters: Individuals who have a valid active firefighting certificate in the State of Ohio who are active members or employees of a recognized fire department. This does not include retired, emeritus or reserve individuals. (see [here](https://coronavirus.ohio.gov/wps/portal/gov/covid-19/covid-19-vaccination-program/covid-19-vaccination-program))
+* Do you work in the funeral services industry?
+	* Funeral services: This group includes licensed staff and active apprentices in the funeral services industry. There are approximately 3,600 eligible Ohioans in this category. 
+ * Embalmers/morticians.
+ * Funeral home directors.
+ * Crematory operators.
+ * Apprentices. (see [here](https://coronavirus.ohio.gov/wps/portal/gov/covid-19/covid-19-vaccination-program/covid-19-vaccination-program))
+* Are you a K-12 educator or work in a licensed child care facility?
+	* Child care services: Staff members at child care centers and pre-kindergarten programs who have regular, ongoing direct contact with children enrolled in these programs. There are approximately 40,400 eligible Ohioans in this category.
+ * Administrators, lead and assistant teachers, and substitute teachers enrolled in Ohio's Professional Registry who are currently working in open child care or pre-kindergarten programs. 
+ * Licensing specialists employed by the Ohio Department of Job and Family Services or a county job and family services agency. 
+ * The program does NOT include parent volunteers, board members, or owners/administrators who do not provide in-classroom support. (see [here](https://coronavirus.ohio.gov/wps/portal/gov/covid-19/covid-19-vaccination-program/covid-19-vaccination-program))
+* Are you age 16+, and have a high-risk medical condition?
+	* This includes people with amyotrophic lateral sclerosis (ALS), also known as Lou Gehrig’s disease. 
+Bone marrow transplant recipients.
+People with type 1 diabetes.
+People with type 2 diabetes under the age of 50.
+People with end-stage renal disease (also known as end-stage kidney disease) under the age of 50.
+Cancer.
+Chronic kidney disease (CKD).
+Chronic obstructive pulmonary disease (COPD).
+Heart disease.
+Obesity.
+* Are you currently pregnant?
 
 # Oklahoma
 
