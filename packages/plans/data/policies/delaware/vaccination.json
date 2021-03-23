@@ -14,10 +14,6 @@
 			"url": "https://coronavirus.delaware.gov/vaccine/where-can-i-get-my-vaccine/",
 			"text": "c19.links/vax_providers"
 		},
-		"workflow": {
-			"url": "",
-			"text": "c19.links/vax_quiz"
-		},
 		"scheduling": {
 			"url": "https://vaccinerequest.delaware.gov/s/?language=en_US",
 			"text": "c19.links/schedule_vax"

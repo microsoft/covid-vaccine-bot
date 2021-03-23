@@ -3,9 +3,6 @@
 		"eligibility": {
 			"url": "https://portal.ct.gov/vaccine-portal/COVID-19-Vaccination-Phases"
 		},
-		"eligibility_plan": {
-			"url": ""
-		},
 		"info": {
 			"url": "https://portal.ct.gov/Vaccine-Portal",
 			"text": "cdc/connecticut/state_link"
@@ -13,14 +10,6 @@
 		"providers": {
 			"url": "https://portal.ct.gov/vaccine-portal/COVID-19-Vaccination-Scheduling-Options",
 			"text": "c19.links/vax_providers"
-		},
-		"workflow": {
-			"url": "",
-			"text": "c19.links/vax_quiz"
-		},
-		"scheduling": {
-			"url": "",
-			"text": "c19.links/schedule_vax"
 		},
 		"scheduling_phone": {
 			"url": "tel:877-918-2224",

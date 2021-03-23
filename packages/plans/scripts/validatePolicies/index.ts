@@ -18,6 +18,7 @@ import {
 	Link,
 	RolloutPhase,
 	Qualification,
+	LinkType,
 } from '@covid-vax-bot/plan-schema'
 
 const LOCALIZATION_TABLE_PATH = path.join(DIST_DIR, 'localization.csv')
@@ -138,7 +139,16 @@ validateDataFiles()
 
 function checkForPhaseErrors(plan: VaccinationPlan): string[] {
 	const errors: string[] = []
+	const links: Partial<Record<LinkType, Link>> = plan.links ?? {}
 	const idSet = new Set<string>()
+
+	Object.keys(links).forEach((k) => {
+		const link = links[k as LinkType]
+		if (link && link.url != null && link.url.trim() === '') {
+			errors.push(`links.${k}.url must not be empty string`)
+		}
+	})
+
 	plan?.phases?.forEach((phase) => {
 		if (idSet.has(phase.id)) {
 			errors.push(`found duplicate phase id ${phase.id} in vaccination plan`)

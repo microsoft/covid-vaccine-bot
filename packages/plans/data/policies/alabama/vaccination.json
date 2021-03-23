@@ -1,8 +1,5 @@
 {
 	"links": {
-		"eligibility": {
-			"url": ""
-		},
 		"eligibility_plan": {
 			"url": "https://www.alabamapublichealth.gov/covid19vaccine/assets/cov-vaccine-prioritization.pdf"
 		},
@@ -10,17 +7,9 @@
 			"url": "https://www.alabamapublichealth.gov/covid19vaccine/index.html",
 			"text": "cdc/alabama/state_link"
 		},
-		"providers": {
-			"url": "",
-			"text": "c19.links/vax_providers"
-		},
 		"workflow": {
 			"url": "https://govstatus.egov.com/vaccine-eligibility-form",
 			"text": "c19.links/vax_quiz"
-		},
-		"scheduling": {
-			"url": "",
-			"text": "c19.links/schedule_vax"
 		},
 		"scheduling_phone": {
 			"url": "tel:1-855-566-5333",

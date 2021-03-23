@@ -1,26 +1,8 @@
 {
 	"links": {
-		"eligibility": {
-			"url": ""
-		},
-		"eligibility_plan": {
-			"url": ""
-		},
 		"info": {
 			"url": "https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus/Vaccine/Information-for-the-Public",
 			"text": "cdc/iowa/state_link"
-		},
-		"providers": {
-			"url": "",
-			"text": "c19.links/vax_providers"
-		},
-		"workflow": {
-			"url": "",
-			"text": "c19.links/vax_quiz"
-		},
-		"scheduling": {
-			"url": "",
-			"text": "c19.links/schedule_vax"
 		},
 		"scheduling_phone": {
 			"url": "tel:211",

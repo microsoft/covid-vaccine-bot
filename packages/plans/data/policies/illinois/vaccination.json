@@ -3,24 +3,9 @@
 		"eligibility": {
 			"url": "https://www.dph.illinois.gov/covid19/vaccine-distribution"
 		},
-		"eligibility_plan": {
-			"url": ""
-		},
 		"info": {
 			"url": "https://www.dph.illinois.gov/covid19/vaccination-plan",
 			"text": "cdc/illinois/state_link"
-		},
-		"providers": {
-			"url": "",
-			"text": "c19.links/vax_providers"
-		},
-		"workflow": {
-			"url": "",
-			"text": "c19.links/vax_quiz"
-		},
-		"scheduling": {
-			"url": "",
-			"text": "c19.links/schedule_vax"
 		},
 		"scheduling_phone": {
 			"url": "tel:",

@@ -3,20 +3,9 @@
 		"eligibility": {
 			"url": "https://hawaiicovid19.com/vaccination-registration/"
 		},
-		"eligibility_plan": {
-			"url": ""
-		},
 		"info": {
 			"url": "https://hawaiicovid19.com/vaccine/",
 			"text": "cdc/hawaii/state_link"
-		},
-		"providers": {
-			"url": "",
-			"text": "c19.links/vax_providers"
-		},
-		"workflow": {
-			"url": "",
-			"text": "c19.links/vax_quiz"
 		},
 		"scheduling": {
 			"url": "https://hawaiicovid19.com/vaccination-registration/",
