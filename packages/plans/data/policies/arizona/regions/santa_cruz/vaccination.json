@@ -4,7 +4,9 @@
 		"info": {
 			"text": "c19.links/info.az.santacruz",
 			"url": "https://www.santacruzcountyaz.gov/732/COVID-19-Novel-Coronavirus",
-			"scrapeQuery": [".headline"]
+			"scrapeQuery": [
+				".headline"
+			]
 		},
 		"registration": {
 			"text": "c19.links/registration.az.santacruz",
