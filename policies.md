@@ -333,7 +333,7 @@ Includes those who are incarcerated or detained; those living in group homes, co
 | --- | --- |
 | info | [California Department of Public Health](https://covid19.ca.gov/vaccines/) |
 | workflow | [Vaccine Eligibility Questionnaire](https://myturn.ca.gov/) |
-| scheduling_phone | [Scheduling Hotline](tel:) |
+| scheduling_phone | [(833) 422-4255](tel:(833) 422-4255) |
 
 
 ## California Active Phase (1b)
@@ -363,11 +363,27 @@ Includes those who are incarcerated or detained; those living in group homes, co
 - Severe obesity (Body Mass Index ≥ 40 kg/m2)
 - Type 2 diabetes mellitus with hemoglobin A1c level greater than 7.5%
 
-OR If as a result of a developmental or other severe high-risk disability one or more of the following applies:
+Healthcare providers may also vaccinate individuals with  developmental or other severe disabilities or illness if:
 
-- The individual is likely to develop severe life-threatening illness or death from COVID-19 infection
-- Acquiring COVID-19 will limit the individual's ability to receive ongoing care or services vital to their well-being and survival
-- Providing adequate and timely COVID care will be particularly challenging as a result of the individual's disability (see [here](https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/COVID-19/Provider-Bulletin-2-12-21.aspx))
+The individual is likely to develop severe life-threatening illness or death from COVID-19 infection
+Acquiring COVID-19 will limit the individual’s ability to get ongoing care or services vital to their well-being and survival
+Providing adequate and timely COVID care will be particularly challenging as a result of the individual’s disability.
+These include people with a range of physical and behavioral disabilities, such as:
+
+People with serious mental illness (SMI)
+Those with serious substance use disorder (SUD)
+All enrolled consumers of:
+Regional centers
+Independent living centers 
+In-home supportive services
+Community-based adult services/adult day health centers
+Medi-Cal HIV/AIDS waiver 
+Medi-Cal home and community-based alternatives waiver
+Medi-Cal assisted living waiver
+Programs of all-inclusive care for the elderly 
+California children’s services program (if the child is 16-21 years old)
+California genetically handicapped persons program
+ (see [here](https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/COVID-19/Provider-Bulletin-2-12-21.aspx))
 
 # Colorado
 
