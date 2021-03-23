@@ -4,7 +4,9 @@
 		"info": {
 			"text": "c19.links/info.az.yuma",
 			"url": "https://www.yumacountyaz.gov/government/health-district/divisions/emergency-preparedness-program/coronavirus-2019-covid-19-yuma-county-updates/covid-19-vaccine-information/who-can-get-vaccinated-and-when",
-			"scrapeQuery": ["#ColumnUserControl3"]
+			"scrapeQuery": [
+				"#ColumnUserControl3"
+			]
 		}
 	}
 }
