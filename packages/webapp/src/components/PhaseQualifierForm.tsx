@@ -187,6 +187,7 @@ export default observer(function PhaseQualiferForm(
 					onChange={onTagChange}
 				/>
 				<Dropdown
+					title={rowItems.item.text}
 					options={filteredQualifierItems}
 					defaultSelectedKey={rowItems.item.qualifierId}
 					placeholder="Qualifier"
