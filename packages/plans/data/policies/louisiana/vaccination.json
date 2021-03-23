@@ -51,18 +51,15 @@
 					"moreInfoUrl": "https://ldh.la.gov/index.cfm/page/4137"
 				},
 				{
-					"question": "c19.eligibility.question/health.are_you_age",
-					"moreInfoText": "c19.eligibility.moreinfo/health.are_you_age.la.1c",
+					"question": "c19.eligibility.question/health",
+					"moreInfoText": "c19.eligibility.moreinfo/health.la.1c",
 					"moreInfoUrl": "https://ldh.la.gov/index.cfm/page/4137"
 				},
 				{
 					"question": "c19.eligibility.question/age.65_up"
-				},
-				{
-					"question": "c19.eligibility.question/health.are_you_currently",
-					"moreInfoUrl": ""
 				}
-			]
+			],
+			"label": "1b Tier 2"
 		}
 	]
 }
