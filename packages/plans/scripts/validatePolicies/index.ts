@@ -21,6 +21,7 @@ import {
 	LinkType,
 } from '@covid-vax-bot/plan-schema'
 
+const ILLEGAL_CHARS = `✓•■≥’–`
 const LOCALIZATION_TABLE_PATH = path.join(DIST_DIR, 'localization.csv')
 
 /**
@@ -34,14 +35,7 @@ function validateDataFiles() {
 	const schemaValidationErrors: SchemaValidationError[] = []
 	const linkErrors: string[] = []
 
-	records.forEach((rec) => {
-		if (!rec['en-us']) {
-			errorCount++
-			linkErrors.push(
-				`string "${rec['String ID']} is missing an en-us localization"`
-			)
-		}
-	})
+	inspectLocalizationRecords()
 
 	// Validate data files
 	getFiles(DATA_DIR, (f) => f === 'info.json').forEach(validateStateInfo)
@@ -78,6 +72,34 @@ function validateDataFiles() {
 		process.exit(1)
 	} else {
 		console.log('🚀 ' + chalk.green(`all files passed validation`))
+	}
+
+	function inspectLocalizationRecords() {
+		records.forEach((rec) => {
+			const id = rec['String ID']
+			if (!rec['en-us']) {
+				errorCount++
+				linkErrors.push(`string "${id} is missing an en-us localization"`)
+			}
+			if (id !== 'c19.test/special_chars') {
+				Object.keys(rec).forEach((key) => {
+					const stringToCheck = rec[key]
+					for (
+						let charIndex = 0;
+						charIndex < ILLEGAL_CHARS.length;
+						charIndex++
+					) {
+						const illegalChar = ILLEGAL_CHARS[charIndex]
+						if (stringToCheck.indexOf(illegalChar) > -1) {
+							errorCount++
+							linkErrors.push(
+								`string "${id} is using illegal character: ${illegalChar}"`
+							)
+						}
+					}
+				})
+			}
+		})
 	}
 
 	function validateStateInfo(file: string) {
