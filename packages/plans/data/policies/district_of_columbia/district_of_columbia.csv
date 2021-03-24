@@ -1,8 +1,8 @@
 String ID,en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th
-c19.eligibility.question/health.1a.dc.inpatient_psychiatric,"Are you an inpatient psychiatric patient?",,,,,,,,,,,,,,
-c19.eligibility.question/congregate.dc,"Do you live in an intermediate care facility, a group home, or another high-risk congregate setting?",,,,,,,,,,,,,,
-c19.link/scheduling.phone.dc,"1-855-363-0333",,,,,,,,,,,,,,
-c19.link/scheduling.phone.description.dc,"COVID-19 Call Center",,,,,,,,,,,,,,
+c19.eligibility.question/health.1a.dc.inpatient_psychiatric,Are you an inpatient psychiatric patient?,,,,¿Eres un paciente psiquiátrico hospitalizado?,,,,,,,,,,
+c19.eligibility.question/congregate.dc,"Do you live in an intermediate care facility, a group home, or another high-risk congregate setting?",,,,"¿Vive en un centro de atención intermedia, en una casa de grupo u otro entorno congregado de alto riesgo?",,,,,,,,,,
+c19.link/scheduling.phone.dc,1-855-363-0333,,,,1-855-363-0333,,,,,,,,,,
+c19.link/scheduling.phone.description.dc,COVID-19 Call Center,,,,Centro de llamadas COVID-19,,,,,,,,,,
 c19.eligibility.moreinfo/health.dc.1b," * Asthma, Chronic Obstructive Pulmonary Disease (COPD), and other Chronic Lung Disease
  * Bone Marrow and Solid Organ Transplantation
  * Cancer
@@ -22,7 +22,26 @@ c19.eligibility.moreinfo/health.dc.1b," * Asthma, Chronic Obstructive Pulmonary 
  * Pregnancy
  * Severe Genetic Disorders
  * Sickle Cell Disease
- * Thalassemia",,,,,,,,,,,,,,
+ * Thalassemia",,,," * Asma, enfermedad pulmonar obstructiva crónica (EPOC) y otras enfermedades pulmonares crónicas
+ * Médula ósea y trasplante de órganos sólidos
+ * Cáncer
+ * Enfermedad cerebrovascular
+ * Enfermedad renal crónica
+ * Cardiopatía congénita
+ * Diabetes Mellitus
+ * Afecciones cardíacas, como insuficiencia cardíaca, enfermedad de las arterias coronarias o cardiomiopatías
+ * VIH
+ * Hipertensión
+ * Estado inmunodeprimido
+ * Trastornos metabólicos heredados
+ * Discapacidades intelectuales y del desarrollo
+ * Enfermedad hepática
+ * Condiciones neurológicas
+ * Obesidad, IMC - 30 kg/m2
+ * Embarazo
+ * Trastornos genéticos graves
+ * Enfermedad de células falciformes
+ * Talasemia",,,,,,,,,,
 c19.eligibility.moreinfo/essential_worker.dc.1b,"This includes:
 - Members of the Metropolitan Police Department
 - Department of Corrections Employees
@@ -38,5 +57,20 @@ c19.eligibility.moreinfo/essential_worker.dc.1b,"This includes:
 - Staff working in food service
 - Essential employees in local government agencies
 - Essential employees of public utilities
-- Individuals working in commercial and residential property maintenance and environmental services",,,,,,,,,,,,,,
-c19.eligibility.moreinfo/congregate.dc.dc.1b,"This also includes individuals in in-patient psychiatric care facilities and those who are currently incarcerated. ",,,,,,,,,,,,,,
+- Individuals working in commercial and residential property maintenance and environmental services",,,,"Esto incluye:
+- Miembros del Departamento de Policía Metropolitana
+- Empleados del Departamento de Correccionales
+- Continuidad del personal de Operaciones Gubernamentales
+- Todos los maestros y el personal que trabajan para una escuela o centro de cuidado infantil con licencia en DC
+- Trabajadores de la tienda de comestibles
+- Trabajadores de alcance y otros empleados esenciales que trabajan en servicios de salud, humanos y sociales
+- Individuos que trabajan en la fabricación
+- Individuos que trabajan en envases de alimentos
+- Personal que trabaja en tribunales y particulares que prestan servicios legales
+- Empleados de primera línea de tránsito público (masivo)
+- Empleados del Servicio Postal de EE. UU.
+- Personal que trabaja en el servicio de alimentos
+- Empleados esenciales en agencias gubernamentales locales
+- Empleados esenciales de los servicios públicos
+- Individuos que trabajan en el mantenimiento de propiedades comerciales y residenciales y servicios ambientales",,,,,,,,,,
+c19.eligibility.moreinfo/congregate.dc.dc.1b,This also includes individuals in in-patient psychiatric care facilities and those who are currently incarcerated. ,,,,Esto también incluye a las personas en los centros de atención psiquiátrica en el paciente y a las que actualmente están encarceladas. ,,,,,,,,,,

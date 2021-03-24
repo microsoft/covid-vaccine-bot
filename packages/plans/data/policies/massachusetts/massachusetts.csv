@@ -1,30 +1,30 @@
 String ID,en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th
-c19.eligibility.question/health.1b.ma,"Are you age 16+ with at least 2 high-risk medical conditions?",,,,,,,,,,,,,,
-c19.links/workflow.ma,"Massachusetts PhaseFinder",,,,,,,,,,,,,,
-c19.eligibility.question/long_term_care_resident_or_worker.ma,"Do you live or work in a long-term care facility?",,,,,,,,,,,,,,
-c19.eligibility.moreinfo/long_term_care_resident_or_worker.ma,"Examples of this include: skilled nursing facilities, assisted living residences, and rest homes.",,,,,,,,,,,,,,
-c19.eligibility.moreinfo/healthcare_worker.ma,"All healthcare workers are eligible to receive the vaccine.",,,,,,,,,,,,,,
-c19.eligibility.question/first_responders.ma,"Are you a first responder?",,,,,,,,,,,,,,
-c19.eligibility.moreinfo/first_responders.ma,"Several categories of first responders are eligible for the vaccine in Massachusetts.",,,,,,,,,,,,,,
-c19.eligibility.question/congregate.ma,"Are you a staff member or resident of a congregate care facility?",,,,,,,,,,,,,,
-c19.eligibility.moreinfo/congregate.ma,"Examples of congregate care facilities include emergency shelter programs, domestic violence shelters, veterans' shelters, and private special education shools.",,,,,,,,,,,,,,
-c19.eligibility.moreinfo/age.75_up.ma,"All individuals 75+ are eligible for the vaccine.",,,,,,,,,,,,,,
-c19.links/info.ma.barnstable,"Barnstable County Vaccination Information",,,,,,,,,,,,,,
-c19.links/registration.ma.barnstable,"Barnstable County COVID-19 Vaccine Registration",,,,,,,,,,,,,,
-c19.links/info.ma.berkshire,"Get Vaccinated Berkshires",,,,,,,,,,,,,,
-c19.eligibility.moreinfo/healthcare_worker.ma.2step1,"All healthcare workers are eligible to receive the vaccine.",,,,,,,,,,,,,,
-c19.eligibility.moreinfo/healthcare_worker.ma.phase2step2,"All healthcare workers are eligible to receive the vaccine, including home-based healthcare workers. ",,,,,,,,,,,,,,
-c19.eligibility.moreinfo/long_term_care_resident_or_worker.ma.ma.2step1,"Examples of this include: skilled nursing facilities, assisted living residences, and rest homes.",,,,,,,,,,,,,,
-c19.eligibility.moreinfo/long_term_care_resident.are.ma.phase2step2,"Examples of this include: skilled nursing facilities, assisted living residences, and rest homes.",,,,,,,,,,,,,,
-c19.eligibility.moreinfo/age.75_up.ma.2step1,"All individuals 75+ are eligible for the vaccine.",,,,,,,,,,,,,,
-c19.eligibility.moreinfo/first_responders.ma.ma.2step1,"Several categories of first responders are eligible for the vaccine in Massachusetts.",,,,,,,,,,,,,,
-c19.eligibility.moreinfo/congregate.ma.ma.2step1,"Examples of congregate care facilities include emergency shelter programs, domestic violence shelters, veterans' shelters, and private special education schools.",,,,,,,,,,,,,,
-c19.eligibility.moreinfo/congregate.ma.ma.phase2step2,"Examples of congregate care facilities include emergency shelter programs, domestic violence shelters, veterans' shelters, and private special education schools.",,,,,,,,,,,,,,
-c19.eligibility.moreinfo/essential_worker.are.ma.phase2step2,"First responders including emergency medical services, police, and fire are currently eligible to receive the COVID-19 vaccine. ",,,,,,,,,,,,,,
-c19.eligibility.moreinfo/healthcare_worker.ma.phase_2_step_4,"All healthcare workers are eligible to receive the vaccine, including home-based healthcare workers. ",,,,,,,,,,,,,,
-c19.eligibility.moreinfo/long_term_care_resident.are.ma.phase_2_step_4,"Examples of this include: skilled nursing facilities, assisted living residences, and rest homes.",,,,,,,,,,,,,,
-c19.eligibility.moreinfo/essential_worker.are.ma.phase_2_step_4,"First responders including emergency medical services, police, and fire are currently eligible to receive the COVID-19 vaccine. ",,,,,,,,,,,,,,
-c19.eligibility.moreinfo/congregate.do.ma.phase_2_step_4,"Examples of congregate care facilities include emergency shelter programs, domestic violence shelters, veterans' shelters, and private special education schools.",,,,,,,,,,,,,,
+c19.eligibility.question/health.1b.ma,Are you age 16+ with at least 2 high-risk medical conditions?,,,,¿Tiene más de 16 años con al menos 2 condiciones médicas de alto riesgo?,,,,,,,,,,
+c19.links/workflow.ma,Massachusetts PhaseFinder,,,,Massachusetts PhaseFinder,,,,,,,,,,
+c19.eligibility.question/long_term_care_resident_or_worker.ma,Do you live or work in a long-term care facility?,,,,¿Vives o trabajas en un centro de atención a largo plazo?,,,,,,,,,,
+c19.eligibility.moreinfo/long_term_care_resident_or_worker.ma,"Examples of this include: skilled nursing facilities, assisted living residences, and rest homes.",,,,"Ejemplos de esto incluyen: centros de enfermería especializadas, residencias de vida asistida y hogares de descanso.",,,,,,,,,,
+c19.eligibility.moreinfo/healthcare_worker.ma,All healthcare workers are eligible to receive the vaccine.,,,,Todos los trabajadores sanitarios son elegibles para recibir la vacuna.,,,,,,,,,,
+c19.eligibility.question/first_responders.ma,Are you a first responder?,,,,¿Eres socorrista?,,,,,,,,,,
+c19.eligibility.moreinfo/first_responders.ma,Several categories of first responders are eligible for the vaccine in Massachusetts.,,,,Varias categorías de socorristas son elegibles para la vacuna en Massachusetts.,,,,,,,,,,
+c19.eligibility.question/congregate.ma,Are you a staff member or resident of a congregate care facility?,,,,¿Es usted miembro del personal o residente de un centro de atención congregado?,,,,,,,,,,
+c19.eligibility.moreinfo/congregate.ma,"Examples of congregate care facilities include emergency shelter programs, domestic violence shelters, veterans' shelters, and private special education shools.",,,,"Algunos ejemplos de centros de atención congregados son los programas de refugio de emergencia, los refugios contra la violencia doméstica, los refugios para veteranos y los shools privados de educación especial.",,,,,,,,,,
+c19.eligibility.moreinfo/age.75_up.ma,All individuals 75+ are eligible for the vaccine.,,,,Todas las personas de más de 75 años son elegibles para la vacuna.,,,,,,,,,,
+c19.links/info.ma.barnstable,Barnstable County Vaccination Information,,,,Información de vacunación del condado de Barnstable,,,,,,,,,,
+c19.links/registration.ma.barnstable,Barnstable County COVID-19 Vaccine Registration,,,,Registro de vacunas COVID-19 del Condado de Barnstable,,,,,,,,,,
+c19.links/info.ma.berkshire,Get Vaccinated Berkshires,,,,Vacunar a Berkshires,,,,,,,,,,
+c19.eligibility.moreinfo/healthcare_worker.ma.2step1,All healthcare workers are eligible to receive the vaccine.,,,,Todos los trabajadores sanitarios son elegibles para recibir la vacuna.,,,,,,,,,,
+c19.eligibility.moreinfo/healthcare_worker.ma.phase2step2,"All healthcare workers are eligible to receive the vaccine, including home-based healthcare workers. ",,,,"Todos los trabajadores sanitarios son elegibles para recibir la vacuna, incluidos los trabajadores sanitarios domésticos. ",,,,,,,,,,
+c19.eligibility.moreinfo/long_term_care_resident_or_worker.ma.ma.2step1,"Examples of this include: skilled nursing facilities, assisted living residences, and rest homes.",,,,"Ejemplos de esto incluyen: centros de enfermería especializadas, residencias de vida asistida y hogares de descanso.",,,,,,,,,,
+c19.eligibility.moreinfo/long_term_care_resident.are.ma.phase2step2,"Examples of this include: skilled nursing facilities, assisted living residences, and rest homes.",,,,"Ejemplos de esto incluyen: centros de enfermería especializadas, residencias de vida asistida y hogares de descanso.",,,,,,,,,,
+c19.eligibility.moreinfo/age.75_up.ma.2step1,All individuals 75+ are eligible for the vaccine.,,,,Todas las personas de más de 75 años son elegibles para la vacuna.,,,,,,,,,,
+c19.eligibility.moreinfo/first_responders.ma.ma.2step1,Several categories of first responders are eligible for the vaccine in Massachusetts.,,,,Varias categorías de socorristas son elegibles para la vacuna en Massachusetts.,,,,,,,,,,
+c19.eligibility.moreinfo/congregate.ma.ma.2step1,"Examples of congregate care facilities include emergency shelter programs, domestic violence shelters, veterans' shelters, and private special education schools.",,,,"Algunos ejemplos de centros de atención congregados son los programas de refugio de emergencia, los refugios contra la violencia doméstica, los refugios para veteranos y las escuelas privadas de educación especial.",,,,,,,,,,
+c19.eligibility.moreinfo/congregate.ma.ma.phase2step2,"Examples of congregate care facilities include emergency shelter programs, domestic violence shelters, veterans' shelters, and private special education schools.",,,,"Algunos ejemplos de centros de atención congregados son los programas de refugio de emergencia, los refugios contra la violencia doméstica, los refugios para veteranos y las escuelas privadas de educación especial.",,,,,,,,,,
+c19.eligibility.moreinfo/essential_worker.are.ma.phase2step2,"First responders including emergency medical services, police, and fire are currently eligible to receive the COVID-19 vaccine. ",,,,"Los socorristas, incluidos los servicios médicos de emergencia, la policía y los bomberos, son actualmente elegibles para recibir la vacuna COVID-19. ",,,,,,,,,,
+c19.eligibility.moreinfo/healthcare_worker.ma.phase_2_step_4,"All healthcare workers are eligible to receive the vaccine, including home-based healthcare workers. ",,,,"Todos los trabajadores sanitarios son elegibles para recibir la vacuna, incluidos los trabajadores sanitarios domésticos. ",,,,,,,,,,
+c19.eligibility.moreinfo/long_term_care_resident.are.ma.phase_2_step_4,"Examples of this include: skilled nursing facilities, assisted living residences, and rest homes.",,,,"Ejemplos de esto incluyen: centros de enfermería especializadas, residencias de vida asistida y hogares de descanso.",,,,,,,,,,
+c19.eligibility.moreinfo/essential_worker.are.ma.phase_2_step_4,"First responders including emergency medical services, police, and fire are currently eligible to receive the COVID-19 vaccine. ",,,,"Los socorristas, incluidos los servicios médicos de emergencia, la policía y los bomberos, son actualmente elegibles para recibir la vacuna COVID-19. ",,,,,,,,,,
+c19.eligibility.moreinfo/congregate.do.ma.phase_2_step_4,"Examples of congregate care facilities include emergency shelter programs, domestic violence shelters, veterans' shelters, and private special education schools.",,,,"Algunos ejemplos de centros de atención congregados son los programas de refugio de emergencia, los refugios contra la violencia doméstica, los refugios para veteranos y las escuelas privadas de educación especial.",,,,,,,,,,
 c19.eligibility.moreinfo/health.1b.ma.ma.phase_2_step_4,"Phase 2 groups:
 Individuals 16 and older with two or more of certain medical conditions (defined below) are in Group 2 of Phase 2. This group is now eligible to receive the vaccine.
 Individuals 16 and older with one of these certain medical conditions will be eligible to receive the vaccine effective April 5, 2021.
@@ -41,7 +41,23 @@ Calculate your BMI here: Adult BMI Calculator | CDC
 Pregnancy**
 Sickle cell disease
 Smoking
-Type 2 diabetes mellitus",,,,,,,,,,,,,,
+Type 2 diabetes mellitus",,,,"Grupos de fase 2:
+Las personas mayores de 16 años con dos o más de ciertas condiciones médicas (definidas a continuación) están en el Grupo 2 de la Fase 2. Este grupo ahora es elegible para recibir la vacuna.
+Las personas mayores de 16 años con una de estas ciertas condiciones médicas serán elegibles para recibir la vacuna a partir del 5 de abril de 2021.
+Condiciones elegibles para la fase 2:
+Asma (de moderada a grave)
+Cáncer
+Enfermedad renal crónica
+EPOC (enfermedad pulmonar obstructiva crónica)
+Síndrome de Down
+Afecciones cardíacas, como insuficiencia cardíaca, enfermedad de las arterias coronarias o cardiomiopatías
+Estado inmunodeprimido (sistema inmunitario debilitado) del trasplante de órganos sólidos*
+Obesidad y obesidad grave (índice de masa corporal [IMC] de 30 kg/m2 o superior)
+Calcule su IMC aquí: Calculadora de IMC para adultos | CDC
+Embarazo**
+Enfermedad de células falciformes
+Fumar
+Diabetes mellitus tipo 2",,,,,,,,,,
 c19.eligibility.moreinfo/health.ma.phase_2_step_5,"Individuals 16 and older with one of these certain medical conditions will be eligible to receive the vaccine effective April 5, 2021.
 Phase 2 eligible conditions:
 Asthma (moderate-to-severe)
@@ -56,12 +72,26 @@ Calculate your BMI here: Adult BMI Calculator | CDC
 Pregnancy**
 Sickle cell disease
 Smoking
-Type 2 diabetes mellitus",,,,,,,,,,,,,,
-c19.eligibility.moreinfo/healthcare_worker.ma.phase_2_step_5,"All healthcare workers are eligible to receive the vaccine, including home-based healthcare workers. ",,,,,,,,,,,,,,
-c19.eligibility.moreinfo/long_term_care_resident.are.ma.phase_2_step_5,"Examples of this include: skilled nursing facilities, assisted living residences, and rest homes.",,,,,,,,,,,,,,
-c19.eligibility.moreinfo/essential_worker.are.ma.phase_2_step_5,"First responders including emergency medical services, police, and fire are currently eligible to receive the COVID-19 vaccine. ",,,,,,,,,,,,,,
-c19.eligibility.moreinfo/congregate.ma.ma.phase_2_step_4,"Examples of congregate care facilities include emergency shelter programs, domestic violence shelters, veterans' shelters, and private special education schools.",,,,,,,,,,,,,,
-c19.eligibility.moreinfo/congregate.ma.ma.phase_2_step_5,"Examples of congregate care facilities include emergency shelter programs, domestic violence shelters, veterans' shelters, and private special education schools.",,,,,,,,,,,,,,
+Type 2 diabetes mellitus",,,,"Las personas mayores de 16 años con una de estas ciertas condiciones médicas serán elegibles para recibir la vacuna a partir del 5 de abril de 2021.
+Condiciones elegibles para la fase 2:
+Asma (de moderada a grave)
+Cáncer
+Enfermedad renal crónica
+EPOC (enfermedad pulmonar obstructiva crónica)
+Síndrome de Down
+Afecciones cardíacas, como insuficiencia cardíaca, enfermedad de las arterias coronarias o cardiomiopatías
+Estado inmunodeprimido (sistema inmunitario debilitado) del trasplante de órganos sólidos*
+Obesidad y obesidad grave (índice de masa corporal [IMC] de 30 kg/m2 o superior)
+Calcule su IMC aquí: Calculadora de IMC para adultos | CDC
+Embarazo**
+Enfermedad de células falciformes
+Fumar
+Diabetes mellitus tipo 2",,,,,,,,,,
+c19.eligibility.moreinfo/healthcare_worker.ma.phase_2_step_5,"All healthcare workers are eligible to receive the vaccine, including home-based healthcare workers. ",,,,"Todos los trabajadores sanitarios son elegibles para recibir la vacuna, incluidos los trabajadores sanitarios domésticos. ",,,,,,,,,,
+c19.eligibility.moreinfo/long_term_care_resident.are.ma.phase_2_step_5,"Examples of this include: skilled nursing facilities, assisted living residences, and rest homes.",,,,"Ejemplos de esto incluyen: centros de enfermería especializadas, residencias de vida asistida y hogares de descanso.",,,,,,,,,,
+c19.eligibility.moreinfo/essential_worker.are.ma.phase_2_step_5,"First responders including emergency medical services, police, and fire are currently eligible to receive the COVID-19 vaccine. ",,,,"Los socorristas, incluidos los servicios médicos de emergencia, la policía y los bomberos, son actualmente elegibles para recibir la vacuna COVID-19. ",,,,,,,,,,
+c19.eligibility.moreinfo/congregate.ma.ma.phase_2_step_4,"Examples of congregate care facilities include emergency shelter programs, domestic violence shelters, veterans' shelters, and private special education schools.",,,,"Algunos ejemplos de centros de atención congregados son los programas de refugio de emergencia, los refugios contra la violencia doméstica, los refugios para veteranos y las escuelas privadas de educación especial.",,,,,,,,,,
+c19.eligibility.moreinfo/congregate.ma.ma.phase_2_step_5,"Examples of congregate care facilities include emergency shelter programs, domestic violence shelters, veterans' shelters, and private special education schools.",,,,"Algunos ejemplos de centros de atención congregados son los programas de refugio de emergencia, los refugios contra la violencia doméstica, los refugios para veteranos y las escuelas privadas de educación especial.",,,,,,,,,,
 c19.eligibility.moreinfo/essential_worker.ma.phase_2_step_4,"Workers in the following categories are eligible as part of this group:
 - Restaurant or cafe workers
 - Food, meatpacking, beverage, agriculture, consumer goods, retail, or food service workers
@@ -75,7 +105,20 @@ c19.eligibility.moreinfo/essential_worker.ma.phase_2_step_4,"Workers in the foll
 - Public health workers
 - Court system worker (judges, prosecutors, defense attorneys, clerks), other than court officers who are listed under first responders
 - Funeral directors and  funeral workers
-",,,,,,,,,,,,,,
+",,,,"Los trabajadores de las siguientes categorías son elegibles como parte de este grupo:
+- Trabajadores de restaurantes o cafeterías
+- Trabajadores de alimentos, envasados de carne, bebidas, agricultura, bienes de consumo, comercio minorista o servicios alimentarios
+- Trabajadores de supermercados y tiendas de conveniencia
+- Trabajadores de despensas de alimentos o voluntarios
+- Trabajadores de la cadena de suministro médica
+- Trabajadores de desarrollo de vacunas
+- Trabajadores de tránsito/transporte
+- Trabajadores de obras públicas, agua, aguas residuales o servicios públicos
+- Trabajadores sanitarios
+- Trabajadores de salud pública
+- Trabajador del sistema judicial (jueces, fiscales, abogados defensores, secretarios), aparte de los funcionarios judiciales que figuran bajo los socorristas
+- Directores funerarios y trabajadores funerarios
+",,,,,,,,,,
 c19.eligibility.moreinfo/essential_worker.ma.phase_2_step_5,"Workers in the following categories are eligible as part of this group:
 - Restaurant or cafe workers
 - Food, meatpacking, beverage, agriculture, consumer goods, retail, or food service workers
@@ -89,4 +132,17 @@ c19.eligibility.moreinfo/essential_worker.ma.phase_2_step_5,"Workers in the foll
 - Public health workers
 - Court system worker (judges, prosecutors, defense attorneys, clerks), other than court officers who are listed under first responders
 - Funeral directors and  funeral workers
-",,,,,,,,,,,,,,
+",,,,"Los trabajadores de las siguientes categorías son elegibles como parte de este grupo:
+- Trabajadores de restaurantes o cafeterías
+- Trabajadores de alimentos, envasados de carne, bebidas, agricultura, bienes de consumo, comercio minorista o servicios alimentarios
+- Trabajadores de supermercados y tiendas de conveniencia
+- Trabajadores de despensas de alimentos o voluntarios
+- Trabajadores de la cadena de suministro médica
+- Trabajadores de desarrollo de vacunas
+- Trabajadores de tránsito/transporte
+- Trabajadores de obras públicas, agua, aguas residuales o servicios públicos
+- Trabajadores sanitarios
+- Trabajadores de salud pública
+- Trabajador del sistema judicial (jueces, fiscales, abogados defensores, secretarios), aparte de los funcionarios judiciales que figuran bajo los socorristas
+- Directores funerarios y trabajadores funerarios
+",,,,,,,,,,

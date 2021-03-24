@@ -1,5 +1,5 @@
 String ID,en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th
-c19.eligibility.question/essential_worker.1b.la,"Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, healthcare workers, security personnel, USPS, manufacturing, grocery stores, public transit, education, or child care.",,,,,,,,,,,,,,
+c19.eligibility.question/essential_worker.1b.la,"Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, healthcare workers, security personnel, USPS, manufacturing, grocery stores, public transit, education, or child care.",,,,"¿Eres un trabajador esencial de primera línea? Esto incluye socorristas; oficiales de correccionales; y trabajadores del sector alimentario y agrícola, trabajadores de la salud, personal de seguridad, USPS, manufactura, supermercados, transporte público, educación o cuidado de niños.",,,,,,,,,,
 c19.eligibility.moreinfo/essential_worker.la.1c,"Eligible workers include:
 Ambulatory and outpatient providers and staff
 Dialysis providers
@@ -42,7 +42,49 @@ Public safety engineers and other workers
 Transportation workers including river pilots
 Veterinarians and support staff
 Water and wastewater workers
-Waste management workers",,,,,,,,,,,,,,
+Waste management workers",,,,"Los trabajadores elegibles incluyen:
+Proveedores ambulatorios y ambulatorios y personal
+Proveedores de diálisis
+Proveedores de salud conductual y personal
+Proveedores y personal de clínicas de atención urgente
+Proveedores de atención comunitaria y personal
+Proveedores dentales y personal
+Proveedores y personal de Transporte Médico no de emergencia (NEMT)
+Proveedores profesionales de cuidado en el hogar (incluidos los trabajadores de hospicio) y beneficiarios de atención domiciliaria (incluidas las personas mayores y más jóvenes con discapacidades mayores de 16 años que reciben atención comunitaria o domiciliaria, así como clientes de agencias de salud en el hogar)
+American Sign Language (ASL) e intérpretes de idiomas extranjeros y proveedores de servicios de soporte (SSP) que trabajan en entornos comunitarios y clínicos, y clientes sordos y ciegos
+Personal de apoyo relacionado con la salud (personal de laboratorio, personal mortuorio que tiene contacto con cadáveres, personal de farmacia)
+Escuelas de estudiantes de salud aliados, residentes y personal
+Las fuerzas del orden y otros socorristas
+Grupo de Mando Unificado de Luisiana
+Legisladores estatales
+Personal de respuesta a emergencias covid esencial estatal y local
+Algunos funcionarios electorales antes de las elecciones de marzo y abril
+Profesores y cualquier otro personal de apoyo que trabaje en el sitio en K-12 o guardería
+Cualquier personal que trabaje en instalaciones congregadas (prisiones/cárceles, refugios, dormitorios, centros de rehabilitación/desintoxicación, hogares grupales)
+
+A partir del 22 de marzo, los siguientes trabajadores esenciales también son elegibles:
+Cajeros bancarios
+Trabajadores de servicios infantiles, juveniles y familiares
+Clero
+Trabajadores de la construcción
+Trabajadores de la energía
+Trabajadores alimentarios y agrícolas
+Trabajadores del servicio de comida (restaurante), trabajadores de hoteles y otros trabajadores de la hostelería
+Trabajadores del gobierno de primera línea
+Trabajadores de supermercados
+Institutos de profesores/personal de educación superior
+Trabajadores de TI y comunicaciones
+Jueces, personal de la corte, secretarios de la corte y el personal, fiscales de distrito y defensores públicos
+Trabajadores de la industria manufacturera
+Trabajadores de los medios de comunicación
+Trabajadores postales
+Trabajadores de seguridad pública y privada y preparación para emergencias
+Trabajadores de salud pública
+Ingenieros de seguridad pública y otros trabajadores
+Trabajadores del transporte, incluidos los pilotos de río
+Veterinarios y personal de apoyo
+Trabajadores de agua y aguas residuales
+Trabajadores de gestión de residuos",,,,,,,,,,
 c19.eligibility.moreinfo/health.are_you_age.la.1c,"People 55-64 with at least one of the conditions listed by the CDC as placing them at an “increased risk of severe illness from the virus that causes COVID-19."" 
 Cancer
 Chronic kidney disease
@@ -59,7 +101,22 @@ Type 2 diabetes mellitus
 
 Persons with the following qualifying underlying medical conditions are advised to complete the Louisiana COVID-19 Vaccine Attestation Form before their appointment to receive the vaccine (see link)
 
-",,,,,,,,,,,,,,
+",,,,"Personas de 55 a 64 años con al menos una de las condiciones enumeradas por los CDC como la colocación de un ""mayor riesgo de enfermedad grave por el virus que causa COVID-19."" 
+Cáncer
+Enfermedad renal crónica
+EPOC (enfermedad pulmonar obstructiva crónica)
+Síndrome de Down
+Afecciones cardíacas, como insuficiencia cardíaca, enfermedad de las arterias coronarias o cardiomiopatías
+Estado inmunodeprimido (sistema inmunitario debilitado) del trasplante de órganos sólidos
+Obesidad (índice de masa corporal [IMC] de 30kg/m2 o superior pero < 40kg/m2) Obesidad grave (BMIC >40kg/m2 )
+Afecciones neurológicas graves, como demencia
+Enfermedad de células falciformes
+Fumar
+Diabetes mellitus tipo 2
+
+Se recomienda a las personas con las siguientes condiciones médicas subyacentes que califiquen que completen el Formulario de Atestación de Vacunas COVID-19 de Louisiana antes de su cita para recibir la vacuna (ver enlace)
+
+",,,,,,,,,,
 c19.eligibility.moreinfo/health.la.1c,"People 16-64 with at least one of the conditions listed by the CDC as placing them at an “increased risk of severe illness from the virus that causes COVID-19."" 
 
 Asthma (moderate to severe)
@@ -88,4 +145,32 @@ Type 2 diabetes mellitus
 
 Persons with the following qualifying underlying medical conditions are advised to complete the Louisiana COVID-19 Vaccine Attestation Form before their appointment to receive the vaccine (see link). Note that ages 16 and 17 are eligible for the Pfizer vaccine only
 
-",,,,,,,,,,,,,,
+",,,,"Las personas de 16 a 64 años con al menos una de las condiciones enumeradas por los CDC los colocan en un ""mayor riesgo de enfermedad grave por el virus que causa covid-19"". 
+
+Asma (de moderada a grave)
+Cáncer
+Enfermedad cerebrovascular (afecta los vasos sanguíneos y el suministro de sangre al cerebro)
+Enfermedad renal crónica
+Enfermedad hepática crónica
+EPOC (enfermedad pulmonar obstructiva crónica)
+Fumador actual o anterior
+Fibrosis quística
+Síndrome de Down
+Afecciones cardíacas, como insuficiencia cardíaca, enfermedad de las arterias coronarias o cardiomiopatías
+Hipertensión o presión arterial alta
+Estado inmunodeprimido (sistema inmunitario debilitado) del trasplante de órganos sólidos
+Estado inmunodeprimido (sistema inmunitario debilitado) del trasplante de sangre o médula ósea, deficiencias inmunes, VIH, uso de corticosteroides o uso de otros medicamentos inmunodebilices
+Sobrepeso (índice de masa corporal [IMC] de 25 o superior pero inferior a 30)
+Obesidad (IMC de 30 o más pero menor de 40)
+Obesidad grave (IMC de 40 o más)
+Embarazo
+Fibrosis pulmonar (tener tejidos pulmonares dañados o marcados)
+Afecciones neurológicas graves, como demencia
+Enfermedad de células falciformes
+Talasemia (un tipo de trastorno sanguíneo)
+Diabetes mellitus tipo 1
+Diabetes mellitus tipo 2
+
+Se recomienda a las personas con las siguientes condiciones médicas subyacentes que califiquen que completen el Formulario de Atestación de Vacunas COVID-19 de Louisiana antes de su cita para recibir la vacuna (ver enlace). Tenga en cuenta que los 16 y 17 años sólo son elegibles para la vacuna Pfizer
+
+",,,,,,,,,,

@@ -1,8 +1,8 @@
 String ID,en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th
-c19.eligibility.question/essential_worker.1b.ky,"Are you a K-12 personnel or first responder?",,,,,,,,,,,,,,
-c19.link/scheduling.phone.ky,"855-598-2246",,,,,,,,,,,,,,
-c19.eligibility.moreinfo/long_term_care_resident.are.ky.1a,"This also includes assisted living facilities.",,,,,,,,,,,,,,
-c19.eligibility.moreinfo/long_term_care_resident.ky.1b,"This also includes assisted living facilities.",,,,,,,,,,,,,,
+c19.eligibility.question/essential_worker.1b.ky,Are you a K-12 personnel or first responder?,,,,¿Es usted un personal K-12 o socorrista?,,,,,,,,,,
+c19.link/scheduling.phone.ky,855-598-2246,,,,855-598-2246,,,,,,,,,,
+c19.eligibility.moreinfo/long_term_care_resident.are.ky.1a,This also includes assisted living facilities.,,,,Esto también incluye instalaciones de vida asistida.,,,,,,,,,,
+c19.eligibility.moreinfo/long_term_care_resident.ky.1b,This also includes assisted living facilities.,,,,Esto también incluye instalaciones de vida asistida.,,,,,,,,,,
 c19.eligibility.moreinfo/health.ky.1c,"Anyone age 16 or older with any medical or behavioral health condition or conditions that the CDC reports ‘are' or ‘might' be at increased risk of severe COVID-19 illness is eligible. These include the following:
 
 Adults of any age with the following conditions are at increased risk of severe illness from the virus that causes COVID-19:
@@ -33,7 +33,36 @@ Overweight (BMI > 25 kg/m2, but < 30 kg/m2)
 Pulmonary fibrosis (having damaged or scarred lung tissues)
 Thalassemia (a type of blood disorder)
 Type 1 diabetes mellitus
-",,,,,,,,,,,,,,
+",,,,"Cualquier persona de 16 años o más con cualquier condición médica o de salud conductual o condiciones que los CDC informen 'son' o 'podrían' tener un mayor riesgo de enfermedad grave de COVID-19 es elegible. Estos incluyen lo siguiente:
+
+Los adultos de cualquier edad con las siguientes afecciones tienen un mayor riesgo de enfermedad grave por el virus que causa COVID-19:
+
+Cáncer
+Enfermedad renal crónica
+EPOC (enfermedad pulmonar obstructiva crónica)
+Síndrome de Down
+Afecciones cardíacas, como insuficiencia cardíaca, enfermedad de las arterias coronarias o cardiomiopatías
+Estado inmunodeprimido (sistema inmunitario debilitado) del trasplante de órganos sólidos
+Obesidad (índice de masa corporal [IMC] de 30 kg/m2 o superior pero < 40 kg/m2) Obesidad grave (IMC >= 40 kg/m2)
+Embarazo
+Enfermedad de células falciformes
+Fumar
+Diabetes mellitus tipo 2
+
+COVID-19 es una nueva enfermedad. Actualmente hay datos limitados e información sobre el impacto de muchas condiciones médicas subyacentes en el riesgo de enfermedad grave de COVID-19. Sobre la base de lo que sabemos en este momento, los adultos de cualquier edad con las siguientes condiciones podrían tener un mayor riesgo de enfermedad grave por el virus que causa COVID-19:
+
+Asma (de moderada a grave)
+Enfermedad cerebrovascular (afecta los vasos sanguíneos y el suministro de sangre al cerebro)
+Fibrosis quística
+Hipertensión o presión arterial alta
+Estado inmunodeprimido (sistema inmunitario debilitado) del trasplante de sangre o médula ósea, deficiencias inmunes, VIH, uso de corticosteroides o uso de otros medicamentos inmunodebilices
+Afecciones neurológicas, como demencia
+Enfermedad hepática
+Sobrepeso (IMC > 25 kg/m2, pero < 30 kg/m2)
+Fibrosis pulmonar (tener tejidos pulmonares dañados o marcados)
+Talasemia (un tipo de trastorno sanguíneo)
+Diabetes mellitus tipo 1
+",,,,,,,,,,
 c19.eligibility.moreinfo/essential_worker.ky.1c,"Frontline Essential Workers include: 
 Healthcare Personnel
 First Responders (Firefighters, Police)
@@ -55,6 +84,27 @@ Media
 Legal
 Public Safety (Engineers)
 Water & Wastewater
-Clergy",,,,,,,,,,,,,,
-c19.eligibility.moreinfo/essential_worker.are.ky.1b,"This includes firefighters, police, and other emergency response as well as corrections officers",,,,,,,,,,,,,,
-c19.eligibility.moreinfo/long_term_care_resident.are.ky.1c,"Residents of long-term care and assisted living facilities, as well as health care personnel, including clinicians residing outside of Kentucky but who provide care in Kentucky",,,,,,,,,,,,,,
+Clergy",,,,"Los trabajadores esenciales de primera línea incluyen: 
+Personal sanitario
+Socorristas (Bomberos, Policía)
+Correcciones
+Educación (profesores, personal de apoyo, guardería)
+Alimentación y Agricultura
+Fabricación
+Trabajadores de servicios postales de EE. UU.
+Trabajadores del transporte público
+Trabajadores de supermercados
+
+Otros trabajadores esenciales incluyen: 
+Transporte y logística
+Refugio de servicio de alimentos y vivienda (construcción)
+Finanzas
+TI & Comunicación
+Energía
+Medio
+Legal
+Seguridad Pública (Ingenieros)
+Agua y aguas residuales
+Clero",,,,,,,,,,
+c19.eligibility.moreinfo/essential_worker.are.ky.1b,"This includes firefighters, police, and other emergency response as well as corrections officers",,,,"Esto incluye bomberos, policías y otras respuestas de emergencia, así como",,,,,,,,,,
+c19.eligibility.moreinfo/long_term_care_resident.are.ky.1c,"Residents of long-term care and assisted living facilities, as well as health care personnel, including clinicians residing outside of Kentucky but who provide care in Kentucky",,,,"Residentes de centros de cuidado a largo plazo y vida asistida, así como personal de atención médica, incluyendo médicos que residen fuera de Kentucky, pero que brindan atención en Kentucky",,,,,,,,,,
