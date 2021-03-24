@@ -16,6 +16,7 @@ export interface PhaseFormProp {
     item?: any
     onSubmit?: (phaseData: any) => void
     onCancel?: () => void
+    duplicate?: boolean
 }
 
 const setInitialData = (item: any) => {
@@ -35,7 +36,7 @@ const setInitialData = (item: any) => {
 }
 
 export default observer(function PhaseForm(props: PhaseFormProp) {
-    const { onSubmit, onCancel, item } = props
+    const { onSubmit, onCancel, item, duplicate=false } = props
     const [formData, setFormData] = useState<any>(setInitialData(item))
     const fieldChanges = useRef<any>(formData)
 
@@ -54,7 +55,7 @@ export default observer(function PhaseForm(props: PhaseFormProp) {
 		[formData, fieldChanges]
 	)
 
-	const formTitle = item ? 'Edit Phase' : 'New Phase'
+	const formTitle = duplicate ? 'Duplicate Phase' : item ? 'Edit Phase' : 'New Phase'
 
     return (
         <div className="modalWrapper">
