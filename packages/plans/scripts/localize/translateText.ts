@@ -1,10 +1,9 @@
-/* This simple app uses the '/translate' resource to translate text from
-one language to another. */
-
-/* This template relies on the request module, a simplified and user friendly
-way to make HTTP requests. */
-import { v4 as uuidv4 } from 'uuid'
+/*!
+ * Copyright (c) Microsoft. All rights reserved.
+ * Licensed under the MIT license. See LICENSE file in the project.
+ */
 import axios from 'axios'
+import { v4 as uuidv4 } from 'uuid'
 
 /* If you encounter any issues with the base_url or path, make sure that you are
 using the latest endpoint: https://docs.microsoft.com/azure/cognitive-services/translator/reference/v3-0-translate */

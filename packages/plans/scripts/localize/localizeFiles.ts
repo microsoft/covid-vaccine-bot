@@ -1,8 +1,12 @@
-import path from 'path'
+/*!
+ * Copyright (c) Microsoft. All rights reserved.
+ * Licensed under the MIT license. See LICENSE file in the project.
+ */
 import fs from 'fs'
+import path from 'path'
 import { getFiles } from '../getFiles'
-import { translateText } from './translateText'
 import { readCsvFile } from '../readCsvFile'
+import { translateText } from './translateText'
 import stringify = require('csv-stringify')
 
 const BLOCK_IDS: Record<string, boolean> = {
@@ -17,7 +21,7 @@ export async function localizeFiles(
 		file.endsWith('.csv')
 	)
 
-	for (let file of files) {
+	for (const file of files) {
 		console.log('localizing ' + file)
 		await localizeFile(file, toInApi, toInFile)
 	}
@@ -42,7 +46,7 @@ async function localizeFile(
 		.filter((id) => !BLOCK_IDS[id])
 
 	let numLocalized = 0
-	for (let id of localizeIds) {
+	for (const id of localizeIds) {
 		try {
 			const record = recordsById.get(id)!
 			const enUs = record['en-us']
