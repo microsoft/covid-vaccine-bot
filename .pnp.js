@@ -4672,6 +4672,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/config", "npm:0.0.38"],
             ["@types/jsonwebtoken", "npm:8.5.1"],
             ["@types/node", "npm:14.14.35"],
+            ["@types/uuid", "npm:8.3.0"],
             ["ajv", "npm:7.2.1"],
             ["axios", "npm:0.21.1"],
             ["chalk", "npm:4.1.0"],
@@ -4685,7 +4686,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["npm-run-all", "npm:4.1.5"],
             ["ts-node", "virtual:f37703c95ab859815e9119a2e3ca6bab49c50b4a26a9fbfa7e47c06cdbe7398b822c114e558e7b2c0a0b2a5991aedb7288f4319bcfc9b66feda7b2f84e7d106d#npm:9.1.1"],
             ["typescript", "patch:typescript@npm%3A4.2.3#builtin<compat/typescript>::version=4.2.3&hash=a45b0e"],
-            ["typescript-json-schema", "npm:0.50.0"]
+            ["typescript-json-schema", "npm:0.50.0"],
+            ["uuid", "npm:8.3.2"]
           ],
           "linkType": "SOFT",
         }]
@@ -9561,6 +9563,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-unist-npm-2.0.3-4b26dedfde-42e0dc4ac7.zip/node_modules/@types/unist/",
           "packageDependencies": [
             ["@types/unist", "npm:2.0.3"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@types/uuid", [
+        ["npm:8.3.0", {
+          "packageLocation": "./.yarn/cache/@types-uuid-npm-8.3.0-60b441a3d7-620985aed8.zip/node_modules/@types/uuid/",
+          "packageDependencies": [
+            ["@types/uuid", "npm:8.3.0"]
           ],
           "linkType": "HARD",
         }]
