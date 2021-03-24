@@ -18,6 +18,7 @@ export async function localizeFiles(
 	)
 
 	for (let file of files) {
+		console.log('localizing ' + file)
 		await localizeFile(file, toInApi, toInFile)
 	}
 }
