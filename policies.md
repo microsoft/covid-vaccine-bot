@@ -382,14 +382,14 @@ Includes those who are incarcerated or detained; those living in group homes, co
 - Pregnancy
 - Sickle cell disease
 - Heart conditions, such as heart failure, coronary artery disease, or cardiomyopathies (excludes hypertension)
-- Severe obesity (Body Mass Index ≥ 40 kg/m2)
+- Severe obesity (Body Mass Index >= 40 kg/m2)
 - Type 2 diabetes mellitus with hemoglobin A1c level greater than 7.5%
 
 Healthcare providers may also vaccinate individuals with  developmental or other severe disabilities or illness if:
 
 The individual is likely to develop severe life-threatening illness or death from COVID-19 infection
-Acquiring COVID-19 will limit the individual’s ability to get ongoing care or services vital to their well-being and survival
-Providing adequate and timely COVID care will be particularly challenging as a result of the individual’s disability.
+Acquiring COVID-19 will limit the individual's ability to get ongoing care or services vital to their well-being and survival
+Providing adequate and timely COVID care will be particularly challenging as a result of the individual's disability.
 These include people with a range of physical and behavioral disabilities, such as:
 
 People with serious mental illness (SMI)
@@ -403,7 +403,7 @@ Medi-Cal HIV/AIDS waiver
 Medi-Cal home and community-based alternatives waiver
 Medi-Cal assisted living waiver
 Programs of all-inclusive care for the elderly 
-California children’s services program (if the child is 16-21 years old)
+California children's services program (if the child is 16-21 years old)
 California genetically handicapped persons program
  (see [here](https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/COVID-19/Provider-Bulletin-2-12-21.aspx))
 
@@ -623,7 +623,7 @@ Family caregivers of those with high/moderate-risk conditions may also be eligib
 * Are you a first responder?
 	* This includes sworn law enforcement, firefighters, and first responders
 * Are you an adult with intellectual or developmental disabilities or are you a caregiver to an adult with intellectual or developmental disabilities?
-	* Among Georgia’s current eligible populations for vaccination are individuals aged 16 and older with disabilities and their caregivers, parents of children with complex medical conditions who are at high risk for COVID-19 complications and individuals with certain medical conditions as defined below.
+	* Among Georgia's current eligible populations for vaccination are individuals aged 16 and older with disabilities and their caregivers, parents of children with complex medical conditions who are at high risk for COVID-19 complications and individuals with certain medical conditions as defined below.
 
 Intellectual Disability is a disability characterized by significant limitations in both intellectual functioning and in adaptive behavior, which covers many everyday social and practical skills. This disability originates before the age of 22.
 
@@ -1326,7 +1326,7 @@ Down Syndrome
 Heart conditions, such as heart failure, coronary artery disease, or cardiomyopathies
 Immunocompromised state (weakened immune system) from solid organ transplant
 Obesity (body mass index [BMI] of 30 kg/m2 or higher but < 40 kg/m2)
-Severe Obesity (BMI ≥ 40 kg/m2)
+Severe Obesity (BMI >= 40 kg/m2)
 Pregnancy
 Sickle cell disease
 Smoking
@@ -1349,7 +1349,7 @@ Type 2 diabetes mellitus (see [here](https://www.cdc.gov/coronavirus/2019-ncov/n
 	* This includes:
 - Workers in direct contact with patients, e.g., MD/DO/DPM, nurses, EMTs, clinical students and trainees
 - Diagnostic labs, phlebotomists, pandemic health workers (e.g., individuals performing COVID tests)
-- Mental healthcare providers, pharmacy staff, non-medical staff – if exposed to patients or infectious materials;
+- Mental healthcare providers, pharmacy staff, non-medical staff - if exposed to patients or infectious materials;
 - Healthcare-associated contractors, including food, waste management etc.
 - Dentists, physical therapists, professionals performing elective procedures
 - Home care workers, CMS-designated caretaker
@@ -1366,11 +1366,11 @@ Type 2 diabetes mellitus (see [here](https://www.cdc.gov/coronavirus/2019-ncov/n
 - Large-scale aviation manufacturing plants
 - Transportation workers
 - Workers in the following industries, if they regularly need to be in high-risk settings to perform their duties:
-– Retail, warehouses and sales outlets
-– Agriculture
-– Supply of critical services or materials for the COVID response (e.g. PPE)
-– The U.S. Postal Service
-– Department of Motor Vehicles
+- Retail, warehouses and sales outlets
+- Agriculture
+- Supply of critical services or materials for the COVID response (e.g. PPE)
+- The U.S. Postal Service
+- Department of Motor Vehicles
 - Agricultural and food workers not included in previous phases
 - Workers performing in-person activities indoors, in critical manufacturing, not included in previous phases;
 this includes aviation, production of critical supplies for the COVID response
@@ -1393,17 +1393,17 @@ this includes aviation, production of critical supplies for the COVID response
 - Pregnant patients
 
 CDC's second list of conditions, which include (non-exhaustive):
-– Asthma (moderate-to-severe)
-– Cerebrovascular disease (affects blood vessels and blood supply to the brain)
-– Cystic fibrosis
-– Immunocompromised state (weakened immune system) from blood or bone marrow transplant, immune
+- Asthma (moderate-to-severe)
+- Cerebrovascular disease (affects blood vessels and blood supply to the brain)
+- Cystic fibrosis
+- Immunocompromised state (weakened immune system) from blood or bone marrow transplant, immune
 deficiencies, HIV, use of corticosteroids, or use of other immune weakening medicines
-– Neurologic conditions, such as dementia
-– Liver disease
-– Pulmonary fibrosis (having damaged or scarred lung tissues)
-– Thalassemia (a type of blood disorder)
-– Type 1 diabetes mellitus
-– Obesity and severe obesity
+- Neurologic conditions, such as dementia
+- Liver disease
+- Pulmonary fibrosis (having damaged or scarred lung tissues)
+- Thalassemia (a type of blood disorder)
+- Type 1 diabetes mellitus
+- Obesity and severe obesity
 * Are you age 65+?
 * Do you work or live in a congregate setting?
 	* Congregate settings include but are not limited to the following:
@@ -1458,7 +1458,7 @@ Public Safety (Engineers)
 Water & Wastewater
 Clergy (see [here](https://www.cdc.gov/vaccines/covid-19/categories-essential-workers.html))
 * Are you age 16+, and have a high-risk medical condition?
-	* Anyone age 16 or older with any medical or behavioral health condition or conditions that the CDC reports ‘are’ or ‘might’ be at increased risk of severe COVID-19 illness is eligible. These include the following:
+	* Anyone age 16 or older with any medical or behavioral health condition or conditions that the CDC reports ‘are' or ‘might' be at increased risk of severe COVID-19 illness is eligible. These include the following:
 
 Adults of any age with the following conditions are at increased risk of severe illness from the virus that causes COVID-19:
 
@@ -1469,7 +1469,7 @@ Down Syndrome
 Heart conditions, such as heart failure, coronary artery disease, or cardiomyopathies
 Immunocompromised state (weakened immune system) from solid organ transplant
 Obesity (body mass index [BMI] of 30 kg/m2 or higher but < 40 kg/m2)
-Severe Obesity (BMI ≥ 40 kg/m2)
+Severe Obesity (BMI >= 40 kg/m2)
 Pregnancy
 Sickle cell disease
 Smoking
@@ -1906,7 +1906,7 @@ Down Syndrome
 Heart conditions, such as heart failure, coronary artery disease, or cardiomyopathies
 Immunocompromised state (weakened immune system) from solid organ transplant
 Obesity (body mass index [BMI] of 30 kg/m2 or higher but < 40 kg/m2)
-Severe Obesity (BMI ≥ 40 kg/m2)
+Severe Obesity (BMI >= 40 kg/m2)
 Pregnancy
 Sickle cell disease
 Smoking
@@ -2663,7 +2663,7 @@ Correctional facility, such as jail or prison
  * Licensing specialists employed by the Ohio Department of Job and Family Services or a county job and family services agency. 
  * The program does NOT include parent volunteers, board members, or owners/administrators who do not provide in-classroom support. (see [here](https://coronavirus.ohio.gov/wps/portal/gov/covid-19/covid-19-vaccination-program/covid-19-vaccination-program))
 * Are you age 16+, and have a high-risk medical condition?
-	* This includes people with amyotrophic lateral sclerosis (ALS), also known as Lou Gehrig’s disease. 
+	* This includes people with amyotrophic lateral sclerosis (ALS), also known as Lou Gehrig's disease. 
 Bone marrow transplant recipients.
 People with type 1 diabetes.
 People with type 2 diabetes under the age of 50.
@@ -3851,20 +3851,27 @@ Other Public Health Workers (see [here](https://www.vdh.virginia.gov/covid-19-va
 * Are you age 50+ and live in a multigenerational household?
 * Are you a long term care resident or work in a long term care facility?
 * Are you classified as an essential worker?
-	* This includes high-risk critical workers* in the following industries: agriculture, fishing vessel crews, food processing, grocery store/food bank, corrections (prisons, jails, detention centers), court of law, public transit, and remaining first responders
-*Work in an enclosed space around other people and cannot maintain physical distance.
-
-This also includes educators and school staff for pre-kindergarten through 12th grade, and child care workers
+	* This includes high-risk critical workers in the following industries: 
+- agriculture
+- fishing vessel crews
+- food processing
+- grocery store/food bank
+- corrections (prisons, jails, detention centers)
+- courts of law
+- public transit
+- remaining first responders
+- educators and school staff for pre-kindergarten through 12th grade and child care workers
+- those who work in an enclosed space around other people and cannot maintain physical distance.
 * Are you age 16+, and have a high-risk medical condition?
 	* People with disabilities wondering about their eligibility should apply the definition to their situation: Does their disability put them at increased risk for COVID-19? They can also work with their health care provider to assess their eligibility. In particular, Down syndrome increases risk for severe illness and is on the CDC list. Research continues to emerge on other developmental and intellectual disabilities that put someone at increased risk, so these eligibility guidelines lean toward inclusiveness.
 
 People with disabilities are eligible in 1B tier 2 if:
 
 Their disability alone puts them at higher risk for severe illness from COVID-19 (e.g. Down syndrome).
-They have a disability that doesn’t alone put them at higher risk but they also have another underlying condition from the CDC list. (e.g. A person who is deaf and has Type 2 diabetes). (see [here](https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html))
+They have a disability that doesn't alone put them at higher risk but they also have another underlying condition from the CDC list. (e.g. A person who is deaf and has Type 2 diabetes). (see [here](https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html))
 * Are you currently pregnant?
 * Are you a veteran?
-	* VA Puget Sound is now providing Pfizer, Moderna, and Johnson & Johnson’s Janssen vaccines depending on the site, which include:  Seattle, American Lake, Silverdale, Mount Vernon, and our Mobile Medical Unit. We continue to proactively contact Veterans to make vaccine appointments. Please, no walk-in vaccines, they are by appointment only. Eligible Veterans can also call us directly at 206-716-5716 to schedule, or contact their primary care team.
+	* VA Puget Sound is now providing Pfizer, Moderna, and Johnson & Johnson's Janssen vaccines depending on the site, which include:  Seattle, American Lake, Silverdale, Mount Vernon, and our Mobile Medical Unit. We continue to proactively contact Veterans to make vaccine appointments. Please, no walk-in vaccines, they are by appointment only. Eligible Veterans can also call us directly at 206-716-5716 to schedule, or contact their primary care team.
 
 ## Washington Regions
 
@@ -3929,16 +3936,16 @@ They have a disability that doesn’t alone put them at higher risk but they als
 ## Wisconsin Active Phase (1a)
 
 * Are you a long term care resident or work in a long term care facility?
-	* SDMAC’s definition of residents of long-term care is: “adults who reside in facilities that provide a variety of services, including medical and personal care, to persons who are unable to live independently.”
+	* SDMAC's definition of residents of long-term care is: “adults who reside in facilities that provide a variety of services, including medical and personal care, to persons who are unable to live independently.”
 
 Starting March 1, individuals enrolled in Medicaid long-term care programs became eligible to get the COVID-19 vaccine. This includes:
 
 Members of Family Care and Family Care Partnership
 Participants in IRIS (Include, Respect, I Self-Direct)
 Children ages 16 years and older in the following programs:
-Children’s Long-Term Support Waiver Program
+Children's Long-Term Support Waiver Program
 Katie Beckett Program
-Children’s Community Options Program (CCOP)
+Children's Community Options Program (CCOP)
 Children Come First
 Wrap Around Milwaukee
 Children with Medical Complexity Program
@@ -3988,7 +3995,7 @@ Restaurant workers.
 - Transitional housing: A project that is designed to provide housing and appropriate supportive services to homeless persons to facilitate movement to independent living when such facilities include shared bedrooms.
 - Incarcerated individuals: Individuals in jails, prisons, and mental health institutes.
 * Are you age 16+, and have a high-risk medical condition?
-	* On March 22, individuals age 16 and older with certain medical conditions that have a greater risk of severe infection from COVID-19 became eligible. The decision was based on recommendations from the Centers for Disease Control (CDC) and is supported by Wisconsin’s medical experts.
+	* On March 22, individuals age 16 and older with certain medical conditions that have a greater risk of severe infection from COVID-19 became eligible. The decision was based on recommendations from the Centers for Disease Control (CDC) and is supported by Wisconsin's medical experts.
 
 Eligibility includes individuals with the following conditions:
 
@@ -4014,7 +4021,7 @@ Sickle cell disease
 Thalassemia (a type of blood disorder)
 Individuals with these medical conditions have multiple vaccination options, including through community-based clinics, health care providers, local health departments, and pharmacies.
 * Are you a healthcare worker?
-	* According to the SDMAC’s guidance, the definition of frontline health care personnel is: “individuals who provide direct patient service (compensated and uncompensated) or engage in healthcare services that place them into contact with patients who are able to transmit SARS-CoV-2, and/or infectious material containing SARS-CoV-2 virus.”
+	* According to the SDMAC's guidance, the definition of frontline health care personnel is: “individuals who provide direct patient service (compensated and uncompensated) or engage in healthcare services that place them into contact with patients who are able to transmit SARS-CoV-2, and/or infectious material containing SARS-CoV-2 virus.”
 
 Starting March 1, non-frontline essential health care personnel became eligible to get the COVID-19 vaccine. SDMAC defines non-frontline essential health care personnel as personnel who are not involved in direct patient care but are essential for health system infrastructure. These staff are often affiliated with hospitals, but non-hospital employee non-frontline employees are also included.
 
