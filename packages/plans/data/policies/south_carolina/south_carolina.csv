@@ -1,6 +1,6 @@
 String ID,en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th
-c19.link/scheduling.phone.sc,"1-866-365-8110",,,,,,,,,,,,,,
-c19.link/scheduling.phone.description.sc,"COVID-19 Vaccine Information Line",,,,,,,,,,,,,,
+c19.link/scheduling.phone.sc,1-866-365-8110,,,,1-866-365-8110,,,,,,,,,,
+c19.link/scheduling.phone.description.sc,COVID-19 Vaccine Information Line,,,,Línea de información sobre vacunas COVID-19,,,,,,,,,,
 c19.eligibility.moreinfo/age.are_you_age.sc.1b,"- High-risk medical conditions: cancer (current, not a history of cancer), chronic
 kidney disease (any stage), chronic lung disease, diabetes (Type 1 and Type 2),
 Down syndrome, heart disease (congestive heart disease, coronary artery disease,
@@ -9,4 +9,12 @@ obesity (BMI >30), pregnancy, sickle cell disease.
 
 - Persons who have a developmental or other severe high-risk disability that makes
 developing severe life-threatening illness or death from COVID-19 infection more
-likely",,,,,,,,,,,,,,
+likely",,,,"- Condiciones médicas de alto riesgo: cáncer (actual, no antecedentes de cáncer),
+enfermedad renal (cualquier etapa), enfermedad pulmonar crónica, diabetes (Tipo 1 y Tipo 2),
+Síndrome de Down, enfermedades cardíacas (cardiopatía congestiva, enfermedad de las arterias coronarias,
+miocardiopatía, hipertensión pulmonar), VIH/SIDA, trasplante de órganos sólidos,
+obesidad (IMC >30), embarazo, enfermedad de células falciformes. 
+
+- Las personas que tienen una discapacidad de alto riesgo grave o de desarrollo u otra discapacidad grave
+desarrollar una enfermedad grave potencialmente mortal o la muerte por infección por COVID-19
+Probable",,,,,,,,,,
