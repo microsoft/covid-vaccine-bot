@@ -58,8 +58,6 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 			return
 		}
 
-		// setTimeout(() => dismissDuplicateModal(), 10)
-
 		duplicatePhase({
 			locationKey: selectedState.key,
 			phaseId: selectedModalFormItem.current.key,
