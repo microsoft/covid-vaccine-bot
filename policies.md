@@ -4091,7 +4091,7 @@ They have a disability that doesn't alone put them at higher risk but they also 
 
 | link type | link |
 | --- | --- |
-| info | [Vaccine Information Pgae](https://kingcounty.gov/depts/health/covid-19/vaccine/distribution.aspx) |
+| info | [Vaccine Information Page](https://kingcounty.gov/depts/health/covid-19/vaccine/distribution.aspx) |
 
 
 ## Washington::Kitsap
@@ -4100,7 +4100,7 @@ They have a disability that doesn't alone put them at higher risk but they also 
 
 | link type | link |
 | --- | --- |
-| info | [Vaccine Information Pgae](https://kitsappublichealth.org/CommunityHealth/CoronaVirus_Vaccine.php) |
+| info | [Vaccine Information Page](https://kitsappublichealth.org/CommunityHealth/CoronaVirus_Vaccine.php) |
 
 
 # West Virginia
