@@ -10,7 +10,9 @@
 		},
 		"eligibility": {
 			"url": "https://covid19vaccine.health.ny.gov/phased-distribution-vaccine",
-			"scrapeQuery": [".toc-chapters"]
+			"scrapeQuery": [
+				".toc-chapters"
+			]
 		},
 		"scheduling": {
 			"url": "https://am-i-eligible.covid19vaccine.health.ny.gov/",
@@ -29,7 +31,7 @@
 			"id": "current",
 			"qualifications": [
 				{
-					"question": "c19.eligibility.question/age.60_up"
+					"question": "c19.eligibility.question/age.are"
 				},
 				{
 					"question": "c19.eligibility.question/healthcare_worker"
