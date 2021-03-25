@@ -108,12 +108,12 @@ Other medical conditions as determined by your medical provider
 | scheduling_phone | [602-542-1000](tel:602-542-1000) |
 
 
-## Arizona Active Phase (1b)
+## Arizona Active Phase (1c)
 
+* Are you age 55+?
 * Are you a healthcare or healthcare support worker?
-* Are you a long-term care resident, or do you work in a long-term care facility?
+* Are you a long term care resident or work in a long term care facility?
 * Are you an education or child-care worker?
-* Are you age 65+?
 * Are you classified as an essential worker?
 	* EMTs, paramedics, firefighters, police/law enforcement, and corrections staff are eligible in the entire state. 
 
@@ -149,7 +149,7 @@ Counties and tribes may also choose to vaccinate the following groups defined by
 | info | [Cochise County COVID-19 Vaccination Info](https://covid-cochisehealth.hub.arcgis.com/pages/vaccines) |
 
 
-### Arizona::Cochise Active Phase (45_and_older)
+### Arizona::Cochise Active Phase (18_and_older)
 
 ## Arizona::Coconino
 
@@ -160,7 +160,7 @@ Counties and tribes may also choose to vaccinate the following groups defined by
 | info | [Coconino County COVID-19 Vaccine Info](https://www.coconino.az.gov/covid19vaccine) |
 
 
-### Arizona::Coconino Active Phase (35_and_older)
+### Arizona::Coconino Active Phase (18_and_older)
 
 ## Arizona::Gila
 
@@ -183,7 +183,7 @@ Counties and tribes may also choose to vaccinate the following groups defined by
 | registration | [Graham County COVID-19 Vaccination Registration](https://www.graham.az.gov/FormCenter/COVID19-21/COVID19-Vaccine-Registration-Form-76) |
 
 
-### Arizona::Graham Active Phase (1c)
+### Arizona::Graham Active Phase (18_and_older)
 
 ## Arizona::Greenlee
 
@@ -207,7 +207,7 @@ Counties and tribes may also choose to vaccinate the following groups defined by
 | scheduling_phone | [La Paz County Vaccination Hotline](tel:928-503-5763) |
 
 
-### Arizona::La Paz Active Phase (1c)
+### Arizona::La Paz Active Phase (18_and_older)
 
 ## Arizona::Maricopa
 
@@ -241,7 +241,7 @@ Counties and tribes may also choose to vaccinate the following groups defined by
 | info | [Apache and Navajo County COVID-19 Info](https://311info.net/covid-19/) |
 
 
-### Arizona::Navajo Active Phase (1c)
+### Arizona::Navajo Active Phase (1b_16_and_older)
 
 ## Arizona::Pima
 
@@ -264,7 +264,7 @@ Counties and tribes may also choose to vaccinate the following groups defined by
 | praviders | [Pinal County COVID-19 Providers](https://www.pinalcountyaz.gov/publichealth/CoronaVirus/Pages/VaccineLocations.aspx) |
 
 
-### Arizona::Pinal Active Phase (1b_16_and_older)
+### Arizona::Pinal Active Phase (18_and_older)
 
 ## Arizona::Santa Cruz
 
@@ -299,7 +299,7 @@ Counties and tribes may also choose to vaccinate the following groups defined by
 | info | [Yuma County COVID-19 Vaccination Info](https://www.yumacountyaz.gov/government/health-district/divisions/emergency-preparedness-program/coronavirus-2019-covid-19-yuma-county-updates/covid-19-vaccine-information/who-can-get-vaccinated-and-when) |
 
 
-### Arizona::Yuma Active Phase (1c)
+### Arizona::Yuma Active Phase (1b_16_and_older)
 
 # Arkansas
 
