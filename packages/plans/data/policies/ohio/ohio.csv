@@ -1,9 +1,9 @@
 String ID,en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th
-c19.eligibility.question/health.1a.oh.psychiatric,Are you a psychiatric hospital patient?,,,,¿Eres un paciente psiquiátrico del hospital?,,,,,,,,,,
+c19.eligibility.question/health.1a.oh.psychiatric,"Are you a psychiatric hospital patient?",,,,"¿Eres un paciente psiquiátrico del hospital?",,,,,,,,,,
 c19.eligibility.question/health.1b.oh,"Are you living with severe congenital, developmental, or early-onset conditions?",,,,"¿Vive con condiciones congénitas, de desarrollo o de inicio temprano?",,,,,,,,,,
-c19.link/scheduling.phone.oh,1-833-427-5634,,,,1-833-427-5634,,,,,,,,,,
-c19.link/scheduling.phone.description.oh,COVID-19 Hotline,,,,Línea directa covid-19,,,,,,,,,,
-c19.eligibility.moreinfo/healthcare_worker.oh.current,Healthcare workers and personnel who are routinely involved in the care of COVID-19 patients.,,,,Personal sanitario y personal habitualmente involucrado en la atención de pacientes con COVID-19.,,,,,,,,,,
+c19.link/scheduling.phone.oh,"1-833-427-5634",,,,"1-833-427-5634",,,,,,,,,,
+c19.link/scheduling.phone.description.oh,"COVID-19 Hotline",,,,"Línea directa covid-19",,,,,,,,,,
+c19.eligibility.moreinfo/healthcare_worker.oh.current,"Healthcare workers and personnel who are routinely involved in the care of COVID-19 patients.",,,,"Personal sanitario y personal habitualmente involucrado en la atención de pacientes con COVID-19.",,,,,,,,,,
 c19.eligibility.moreinfo/congregate.oh.current,"* Residents and staff in nursing homes.
 * Residents and staff in assisted living facilities.
 * Patients and staff at state psychiatric hospitals.
@@ -44,7 +44,24 @@ c19.eligibility.moreinfo/essential_worker.are_you.oh.current,"Child care service
  * Administradores, maestros líderes y asistentes, y maestros sustitutos inscritos en el Registro Profesional de Ohio que actualmente están trabajando en programas abiertos de cuidado infantil o pre-kindergarten. 
  * Especialistas en licencias empleados por el Departamento de Trabajo y Servicios Familiares de Ohio o una agencia de empleo y servicios familiares del condado. 
  * El programa NO incluye voluntarios de padres, miembros de la junta o propietarios/administradores que no proporcionan apoyo en el salón de clases.",,,,,,,,,,
-c19.eligibility.moreinfo/health.oh.current,"This includes people with amyotrophic lateral sclerosis (ALS), also known as Lou Gehrig's disease. 
+c19.eligibility.moreinfo/health.oh.current,"Ohioans born with or who have early childhood conditions that are carried into adulthood which put them at a higher risk for adverse outcomes due to COVID-19.
+Sickle cell anemia.
+Down syndrome.
+Cystic fibrosis.
+Muscular dystrophy.
+Cerebral palsy.
+Spina bifida.
+People born with severe heart defects, requiring regular specialized medical care.
+People with severe type 1 diabetes, who have been hospitalized for this in the past year.
+Phenylketonuria (PKU), Tay-Sachs, and other rare, inherited metabolic disorders.
+Epilepsy with continuing seizures; hydrocephaly; microcephaly, and other severe neurological disorders.
+Turner syndrome, fragile X syndrome, Prader-Willi syndrome, and other severe genetic disorders.
+People with severe asthma, who have been hospitalized for this in the past year.
+Alpha and beta thalassemia
+Solid organ transplant candidates and recipients.
+
+Additional medical conditions that qualify Ohioans for the vaccine are:
+People with amyotrophic lateral sclerosis (ALS), also known as Lou Gehrig's disease. 
 Bone marrow transplant recipients.
 People with type 1 diabetes.
 People with type 2 diabetes under the age of 50.
@@ -53,13 +70,4 @@ Cancer.
 Chronic kidney disease (CKD).
 Chronic obstructive pulmonary disease (COPD).
 Heart disease.
-Obesity.",,,,"Esto incluye a las personas con esclerosis lateral amiotrófica (ELA), también conocida como enfermedad de Lou Gehrig. 
-Receptores de trasplante de médula ósea.
-Personas con diabetes tipo 1.
-Personas con diabetes tipo 2 menores de 50 años.
-Personas con enfermedad renal terminal (también conocida como enfermedad renal terminal) menores de 50 años.
-Cáncer.
-Enfermedad renal crónica (ERC).
-Enfermedad pulmonar obstructiva crónica (EPOC).
-enfermedad cardíaca.
-Obesidad.",,,,,,,,,,
+Obesity.",,,,,,,,,,,,,,
