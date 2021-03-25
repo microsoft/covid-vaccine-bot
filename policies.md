@@ -3371,9 +3371,47 @@ Obesity.
 * Are you a long-term care resident?
 * Do you work or live in a congregate setting?
 * Are you a first responder?
-* Are you age 65+?
+* Are you age 60+?
 * Are you a K-12 educator or work in a licensed child care facility?
+	* Pre K -12 teachers and staff at public, private, parochial, and independent schools, and licensed child care providers are eligible for vaccination at municipal sites where they work or participating pharmacy sites.  Vaccinations for this group will began mid-March.
+
+For schools, eligible individuals include anyone providing regular, direct service to students, including teachers, administrative and clerical staff, bus drivers/monitors, coaches, cafeteria staff, maintenance staff, therapists working in schools, substitute teachers, and student teachers. School Committee members are not eligible.
+
+For licensed child care providers, eligible individuals include all employees (regardless of schedule and hours of employment) who deliver direct, in-person services to children in DHS-licensed child care settings, maintenance staff, security and transportation personnel, and therapists and support staff.
 * Are you age 16+ and have a high-risk medical conditions?
+	* High risk medical conditions include: 
+Diabetes
+- Type 1
+- Type 2
+
+Lung disease
+- COPD (chronic obstructive pulmonary disease)
+- Emphysema
+- Cystic Fibrosis
+- People with significant decreased lung function
+- People with ALS (Lou Gehrig's disease)
+
+Heart disease
+- Congestive heart failure
+- Coronary artery disease
+- People with enlarged hearts (cardiomyopathies)
+- People with other significant heart conditions
+- People with Down Syndrome
+
+Kidney disease
+- People on dialysis
+- Significant chronic kidney disease
+
+Weakened immune system
+- Cancer
+- People who get chemotherapy or radiation
+- People who have had a transplant or are waiting for a transplant
+- HIV/AIDS
+- Sickle cell disease
+- People who have a disease that weakens the immune system
+- People who take medicine that weakens the immune system
+- Pregnancy (see [here](https://health.ri.gov/publications/guidelines/COVID19-underlying-conditions.pdf))
+* Is your zip code covered by the Hard-Hit Community Vaccination Strategy? (see [here](https://covid.ri.gov/vaccination/rhode-islands-hard-hit-community-vaccination-strategy))
 
 ## Rhode Island Regions
 
