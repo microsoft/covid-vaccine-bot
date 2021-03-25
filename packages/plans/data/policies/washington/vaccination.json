@@ -142,9 +142,9 @@
 					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.wa.1b_tier_2"
 				},
 				{
-					"question": "c19.eligibility.question/health",
+					"question": "c19.eligibility.question/health.are_you_a_person",
 					"moreInfoText": "c19.eligibility.moreinfo/health.wa.1b_tier_2",
-					"moreInfoUrl": "https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html"
+					"moreInfoUrl": ""
 				},
 				{
 					"question": "c19.eligibility.question/health.are_you_currently"
