@@ -14,7 +14,7 @@
 			"description": "c19.link/scheduling.phone.description.ga"
 		}
 	},
-	"activePhase": "1b",
+	"activePhase": "16_and_older",
 	"phases": [
 		{
 			"id": "1a",
@@ -97,6 +97,15 @@
 				},
 				{
 					"question": "c19.eligibility.question/age.65_up"
+				}
+			]
+		},
+		{
+			"id": "16_and_older",
+			"label": "16 and older",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.16_up"
 				}
 			]
 		}
