@@ -20,6 +20,8 @@ export interface PhaseFormProp {
     onSubmit?: (phaseData: any) => void
     onCancel?: () => void
     duplicate?: boolean,
+    isRegion?: boolean
+    regionInfo?: any
 }
 
 const setInitialData = (item: any) => {
@@ -39,7 +41,7 @@ const setInitialData = (item: any) => {
 }
 
 export default observer(function PhaseForm(props: PhaseFormProp) {
-    const { onSubmit, onCancel, item, duplicate=false, selectedState } = props
+    const { onSubmit, onCancel, item, duplicate=false, selectedState, isRegion, regionInfo } = props
     const [formData, setFormData] = useState<any>(setInitialData(item))
 	const [hasError, setHasError] = useState<boolean>(false)
 	const { repoFileData } = getAppStore()
@@ -64,9 +66,11 @@ export default observer(function PhaseForm(props: PhaseFormProp) {
             if(!duplicate)
                 return ''
 
+            const location = repoFileData[selectedState.key]
             const nextPhaseId = formatId(formData.name);
-            const phases = repoFileData[selectedState.key].vaccination.content.phases;
-            const nameExists = !!phases.find((item: {id: string}) => item.id === nextPhaseId);
+		    const nameExists = (isRegion && regionInfo?.key && location.regions[regionInfo.key].vaccination?.content.phases && 
+                !!location.regions[regionInfo.key].vaccination.content.phases.find((item: {id: string}) => item.id === nextPhaseId)) ||
+                !!location.vaccination.content.phases.find((item: {id: string}) => item.id === nextPhaseId)
 
 			if (nameExists) {
 				setHasError(true)
@@ -76,7 +80,7 @@ export default observer(function PhaseForm(props: PhaseFormProp) {
 				return ''
 			}
 		},
-		[repoFileData, setHasError, duplicate, formData?.name, selectedState?.key]
+		[repoFileData, setHasError, duplicate, formData?.name, selectedState?.key, isRegion, regionInfo?.key]
 	)
 
 	const disableSubmit = useCallback((): boolean => {

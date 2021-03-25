@@ -420,6 +420,8 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 									<PhaseForm
 										selectedState={selectedState}
 										duplicate={true}
+										isRegion={isRegion}
+										regionInfo={value}
 										onCancel={dismissDuplicateModal}
 										onSubmit={onDuplicateSubmit}
 									/>

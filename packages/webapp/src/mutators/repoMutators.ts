@@ -589,7 +589,7 @@ const copyPhaseData = (newObj: any, oldObj: any) => {
 			currPhaseObj.qualifications.push({
 				question: qual.question.toLowerCase(),
 				moreInfoText: qual.moreInfoText
-					?.replace(/[^a-z0-9./\s]/gi, '')
+					?.replace(/[^a-z0-9._/\s]/gi, '')
 					.replace(/\s/g, '_')
 					.toLowerCase(),
 				moreInfoUrl: qual.moreInfoUrl,
