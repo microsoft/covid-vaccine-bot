@@ -1628,7 +1628,7 @@ Only patient- or public-facing health care, long-term care, and public safety pe
 | scheduling_phone | [(410) 767-6500](tel:410-767-6500) |
 
 
-## Maryland Active Phase (1c)
+## Maryland Active Phase (2a)
 
 * Are you a long term care resident or work in a long term care facility?
 * Do you work or live in a congregate setting?
@@ -1650,8 +1650,8 @@ Continuity of government
 Food/agriculture production, critical manufacturing, U.S. Postal Service, public mass transit, grocery store employees
 Veterinarians and support staff
 Clergy and other essential support for houses of worship (see [here](https://coronavirus.maryland.gov/pages/vaccine))
-* Are you age 65+?
-* Are you age 16+, and have a high-risk medical condition?
+* Are you age 60+?
+* Are you currently hospitalized and diagnosed with a high-risk medical condition?
 	* Individuals who are currently receiving hospital-based treatment, including in hospital outpatient centers, AND diagnosed with at least one of the following conditions:
 Cancer patients who are currently in active treatment
 End stage renal disease patients requiring hemodialysis
@@ -2659,14 +2659,44 @@ All other essential workers per Cybersecurity and Infrastructure Security Agency
 | scheduling_phone | [670-682-7468](tel:670-682-7468) |
 
 
-## Northern Mariana Islands Active Phase (1a)
+## Northern Mariana Islands Active Phase (18_and_older)
 
-* Are you a healthcare worker?
-* Are you a long-term care resident?
-* Are you age 50+?
-* Are you a grocery store worker?
-* Are you an essential worker outside of healthcare? (see [here](https://www.vaccinatecnmi.com/#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJ1cmwiOiJodHRwczpcL1wvd3d3LnZhY2NpbmF0ZWNubWkuY29tXC93cC1jb250ZW50XC91cGxvYWRzXC8yMDIxXC8wM1wvUGhhc2VzLVdlYnNpdGUuanBnIiwidHlwZSI6ImltYWdlIiwidGl0bGUiOiJQaGFzZXMtV2Vic2l0ZSJ9))
-* Are you an educator or child care provider?
+* Are you age 18+?
+
+## Northern Mariana Islands Regions
+
+## Northern Mariana Islands::Rota
+
+### Northern Mariana Islands::Rota Links
+
+| link type | link |
+| --- | --- |
+
+
+
+### Northern Mariana Islands::Rota Active Phase (18_and_older)
+
+## Northern Mariana Islands::Saipan
+
+### Northern Mariana Islands::Saipan Links
+
+| link type | link |
+| --- | --- |
+
+
+
+### Northern Mariana Islands::Saipan Active Phase (16_and_older)
+
+## Northern Mariana Islands::Tinian
+
+### Northern Mariana Islands::Tinian Links
+
+| link type | link |
+| --- | --- |
+
+
+
+### Northern Mariana Islands::Tinian Active Phase (18_and_older)
 
 # Ohio
 
