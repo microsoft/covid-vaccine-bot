@@ -3580,13 +3580,46 @@ likely
 | scheduling | [Schedule a Vaccination](https://vaccinate.tn.gov/) |
 
 
-## Tennessee Active Phase (1c)
+## Tennessee Active Phase (2b)
 
-* Are you a healthcare worker?
-* Are you a long-term care resident?
+* Are you a healthcare worker? (see [here](https://covid19.tn.gov/covid-19-vaccines/vaccine-phases/#1a2))
+* Are you a long term care resident or work in a long term care facility? (see [here](https://covid19.tn.gov/covid-19-vaccines/vaccine-phases/#1a1))
 * Are you classified as an essential worker?
+	* This includes:
+- First Responders
+- Corrections Officers and Staff
+- Mortuary Services
+- K-12 and Child Care Staff
+- Responder Operations Personnel and Airfield Operations Personnel
+- Social Services (DCS) (includes child welfare agency personnel with direct public exposure)
+- Commercial agriculture
+- Commercial food production
+- Public transit
+- Workers in Transportation (including postal and package delivery, freight railroad, maritime cargo, commercial or cargo service airports) 
+- Workers in Public infrastructure (includes dams, roads, locks, and bridge maintenance and engineering, solid waste collection, and processing)
+- Workers in Telecommunications (includes those providing direct services)
+- Workers in Utilities/Energy (includes line workers and other maintenance and engineering personnel involved in direct provision of services) (see [here](https://covid19.tn.gov/covid-19-vaccines/vaccine-phases/#2a))
 * Are you age 16+, and have a high-risk medical condition?
-* Are you age 65+?
+	* Tennesseans 16 Years Old or Older with High-Risk Health Conditions
+
+- Chronic renal disease
+- COPD, pulmonary fibrosis, or moderate-severe asthma
+- Obesity (BMI > 30)
+- Heart failure, coronary artery disease, cardiomyopathies, hypertension
+- Sickle cell, thalassemia
+- Cerebrovascular disease, stroke
+- Dementia
+- Liver disease
+- Diabetes
+- High-risk, progressive neuromuscular disorders (such as muscular dystrophy, ALS, multiple sclerosis)
+- Down Syndrome
+- Women ages 16 years and older who are pregnant and their permanent household residents >16yo. *Pregnant women were not included in COVID-19 vaccine clinical trials; however, the risk of hospitalization and death from COVID-19 is thought to be significantly higher than the risk of vaccination. Pregnant women are encouraged to discuss vaccination with their health care provider
+- Technologically-dependent individuals ages >16 years and the household residents and caregivers of children <16 years old who are technologically-dependent. Such as individuals who are ventilator-dependent, oxygen-dependent, with tracheostomy, wheelchair-bound due to high-risk medical condition, or require tube feedings, parenteral nutrition, or dialysis.
+- Individuals ages >16 years with immunocompromising conditions and the household residents and caregivers of children <16 years old who have immunocompromising conditions. Such as individuals receiving chemotherapy, requiring daily oral steroids or other immunosuppressants, those with HIV/AIDS or other diagnosed high-risk immunodeficiency.
+- Household residents and caregivers of children <16 years old who have complex congenital heart disease requiring ongoing medical management, such as Tetralogy of Fallot, hypoplastic left heart syndrome, and double outlet right ventricle, or qualify for the Katie Beckett waiver. (see [here](https://covid19.tn.gov/covid-19-vaccines/vaccine-phases/#1c))
+* Are you an adult with an intellectual or developmental disability?
+	* This includes individuals 18 years or older who cannot live independently due to a serious chronic medical condition or intellectual or developmental disability (see [here](https://covid19.tn.gov/covid-19-vaccines/vaccine-phases/#1a1))
+* Are you age 55+?
 
 # Texas
 
@@ -3648,10 +3681,9 @@ Type 2 diabetes (see [here](https://www.dshs.state.tx.us/coronavirus/immunize/va
 | scheduling_phone | [(340) 777 8227](tel:(340) 777 8227) |
 
 
-## Virgin Islands Active Phase (1a)
+## Virgin Islands Active Phase (16_and_older)
 
-* Are you a healthcare worker?
-* Are you a long-term care resident?
+* Are you age 16+?
 
 ## Virgin Islands Regions
 
@@ -3692,30 +3724,9 @@ Type 2 diabetes (see [here](https://www.dshs.state.tx.us/coronavirus/immunize/va
 | eligibility | [https://coronavirus.utah.gov/vaccine-distribution/#eligibility](https://coronavirus.utah.gov/vaccine-distribution/#eligibility) |
 
 
-## Utah Active Phase (1a)
+## Utah Active Phase (16_and_older)
 
-* Are you a healthcare worker?
-* Are you a long term care resident or work in a long term care facility?
-* Are you K-12 personnel?
-* Are you a first responder?
-* Are you age 50+?
-* Are you age 16+ and have a high-risk medical conditions?
-	* - Asplenia including splenectomy or a spleen dysfunction
-- Body Mass Index (BMI) of 30 or higher
-- Chronic heart disease (not hypertension) including chronic heart failure, ischaemic heart disease, and severe valve or congenital heart disease
-- Chronic kidney disease
-- Chronic liver disease including chronic hepatitis B or C, alcohol-related liver disease, primary biliary cirrhosis, or primary sclerosing cholangitis or hemochromatosis
-- Cancer diagnosed within the last 5 years that began in the blood, bone marrow, or cells in the immune system. This type of cancer is called hematologic cancer (such as leukemia, lymphoma, and multiple myeloma). 
-- Cancer diagnosed within the last 1 year that didn't begin in the blood or bone marrow. This type of cancer is called non-hematologic cancer (excluding basal and squamous cell cancer diagnoses).
-- Diabetes (Type I or Type II)
-- Immunocompromised state (weakened immune system) from blood, bone marrow, or organ transplant; HIV; long-term use of corticosteroids; or other medicines that weaken the immune system
-- Neurologic conditions that impair respiratory function, including cerebral palsy, Down syndrome, epilepsy, motor neuron disease, multiple sclerosis, myasthenia gravis, Parkinson's disease, progressive cerebellar disease, and quadriplegia or hemiplegia 
-- Receiving dialysis for severe kidney disease
-- Receiving immunosuppression therapy
-- Sickle cell disease
-- Severe chronic respiratory disease (other than asthma) including severe chronic obstructive pulmonary disease, fibrosing lung disease, bronchiectasis, or cystic fibrosis
-- Solid organ transplant recipient
-- Stroke and dementia (Alzheimer's, vascular, or frontotemporal)
+* Are you age 16+?
 
 ## Utah Regions
 
@@ -3975,13 +3986,13 @@ Other Public Health Workers (see [here](https://www.vdh.virginia.gov/covid-19-va
 - remaining first responders
 - educators and school staff for pre-kindergarten through 12th grade and child care workers
 - those who work in an enclosed space around other people and cannot maintain physical distance.
-* Are you age 16+, and have a high-risk medical condition?
+* Are you a person with a rare condition or disability that put you at higher risk?
 	* People with disabilities wondering about their eligibility should apply the definition to their situation: Does their disability put them at increased risk for COVID-19? They can also work with their health care provider to assess their eligibility. In particular, Down syndrome increases risk for severe illness and is on the CDC list. Research continues to emerge on other developmental and intellectual disabilities that put someone at increased risk, so these eligibility guidelines lean toward inclusiveness.
 
 People with disabilities are eligible in 1B tier 2 if:
 
 Their disability alone puts them at higher risk for severe illness from COVID-19 (e.g. Down syndrome).
-They have a disability that doesn't alone put them at higher risk but they also have another underlying condition from the CDC list. (e.g. A person who is deaf and has Type 2 diabetes). (see [here](https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html))
+They have a disability that doesn't alone put them at higher risk but they also have another underlying condition from the CDC list. (e.g. A person who is deaf and has Type 2 diabetes).
 * Are you currently pregnant?
 * Are you a veteran?
 	* VA Puget Sound is now providing Pfizer, Moderna, and Johnson & Johnson's Janssen vaccines depending on the site, which include:  Seattle, American Lake, Silverdale, Mount Vernon, and our Mobile Medical Unit. We continue to proactively contact Veterans to make vaccine appointments. Please, no walk-in vaccines, they are by appointment only. Eligible Veterans can also call us directly at 206-716-5716 to schedule, or contact their primary care team.
