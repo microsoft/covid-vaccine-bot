@@ -4134,18 +4134,6 @@ They have a disability that doesn't alone put them at higher risk but they also 
 
 * Are you a long term care resident or work in a long term care facility?
 	* SDMAC's definition of residents of long-term care is: “adults who reside in facilities that provide a variety of services, including medical and personal care, to persons who are unable to live independently.”
-
-Starting March 1, individuals enrolled in Medicaid long-term care programs became eligible to get the COVID-19 vaccine. This includes:
-
-Members of Family Care and Family Care Partnership
-Participants in IRIS (Include, Respect, I Self-Direct)
-Children ages 16 years and older in the following programs:
-Children's Long-Term Support Waiver Program
-Katie Beckett Program
-Children's Community Options Program (CCOP)
-Children Come First
-Wrap Around Milwaukee
-Children with Medical Complexity Program
 * Are you a firefighter, law enforcement officer, or corrections staff?
 	* Police and fire personnel, including correctional workers are now eligible to get the COVID-19 vaccine, which begins the first step into Phase 1B for Wisconsin.
 
@@ -4229,6 +4217,18 @@ Emergency management
 Cyber security
 Health care critical supply chain functions, including the production, manufacturing, and distribution of vaccine
 Support roles, such as cleaning, HVAC, and refrigeration, critical to health system function
+* Are you enrolled in a Medicaid long-term care program?
+	* Individuals enrolled in Medicaid long-term care programs became eligible to get the COVID-19 vaccine. This includes:
+
+Members of Family Care and Family Care Partnership
+Participants in IRIS (Include, Respect, I Self-Direct)
+Children ages 16 years and older in the following programs:
+Children's Long-Term Support Waiver Program
+Katie Beckett Program
+Children's Community Options Program (CCOP)
+Children Come First
+Wrap Around Milwaukee
+Children with Medical Complexity Program
 
 ## Wisconsin Regions
 
