@@ -14,7 +14,7 @@
 			"description": "c19.link/scheduling.phone.description.md"
 		}
 	},
-	"activePhase": "1c",
+	"activePhase": "2a",
 	"phases": [
 		{
 			"id": "1a",
@@ -78,8 +78,34 @@
 					"question": "c19.eligibility.question/age.65_up"
 				},
 				{
-					"question": "c19.eligibility.question/health",
+					"question": "c19.eligibility.question/health.are_you_currently_hospitalized",
 					"moreInfoText": "c19.eligibility.moreinfo/health.md.1c",
+					"moreInfoUrl": "https://coronavirus.maryland.gov/pages/vaccine"
+				}
+			]
+		},
+		{
+			"id": "2a",
+			"label": "2a",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/long_term_care_resident.are"
+				},
+				{
+					"question": "c19.eligibility.question/congregate.do",
+					"moreInfoText": "c19.eligibility.moreinfo/congregate.do.md.2a"
+				},
+				{
+					"question": "c19.eligibility.question/essential_worker",
+					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.md.2a",
+					"moreInfoUrl": "https://coronavirus.maryland.gov/pages/vaccine"
+				},
+				{
+					"question": "c19.eligibility.question/age.60_up"
+				},
+				{
+					"question": "c19.eligibility.question/health.are_you_currently_hospitalized",
+					"moreInfoText": "c19.eligibility.moreinfo/health.are_you_currently_hospitalized.md.2a",
 					"moreInfoUrl": "https://coronavirus.maryland.gov/pages/vaccine"
 				}
 			]
