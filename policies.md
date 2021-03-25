@@ -1490,6 +1490,7 @@ Thalassemia (a type of blood disorder)
 Type 1 diabetes mellitus
  (see [here](https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html))
 * Are you age 60+?
+* Are you currently living in a transient housing facility?
 
 # Louisiana
 
