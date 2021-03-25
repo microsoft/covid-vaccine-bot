@@ -3608,21 +3608,27 @@ Weakened immune system
 ## South Carolina Active Phase (1b)
 
 * Are you a healthcare worker?
-* Are you a long-term care resident?
-* Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.
+* Are you a long term care resident or work in a long term care facility?
+* Are you classified as an essential worker?
+	* Frontline workers with increased occupational risk are people who:
+o Must be in-person at their place of work, and
+o Perform a job in which they are at increased risk of exposure due to their frequent, close (<6 feet) and ongoing (>15 minutes) contact with others in the work environment
+
+A person's eligibility for a COVID-19 vaccine isn't based on a specific job or work sector. If a person decides that they meet job risk using the criteria above, they are eligible. Some examples of people who may be frontline workers based on risk may include school staff and daycare workers, criminal justice staff, government employees, manufacturing workers, grocery store workers, and law enforcement officers.
 * Are you age 55+?
 * Are you age 16+ and have a high-risk medical conditions?
-	* - High-risk medical conditions: cancer (current, not a history of cancer), chronic
-kidney disease (any stage), chronic lung disease, diabetes (Type 1 and Type 2),
-Down syndrome, heart disease (congestive heart disease, coronary artery disease,
-cardiomyopathy, pulmonary hypertension), HIV/AIDS, solid organ transplant,
-obesity (BMI >30), pregnancy, sickle cell disease. 
+	* - High-risk medical conditions: cancer (current, not a history of cancer), chronic kidney disease (any stage), chronic lung disease, diabetes (Type 1 and Type 2), Down syndrome, heart disease (congestive heart disease, coronary artery disease,
+cardiomyopathy, pulmonary hypertension), HIV/AIDS, solid organ transplant, obesity (BMI >30), pregnancy, sickle cell disease. 
 
-- Persons who have a developmental or other severe high-risk disability that makes
-developing severe life-threatening illness or death from COVID-19 infection more
-likely
-* Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?
-* Are you a healthcare worker with direct patient contact?
+- Persons who have a developmental or other severe high-risk disability that makes developing severe life-threatening illness or death from COVID-19 infection more likely
+* Do you work or live in a congregate setting?
+	* This includes: 
+o Residents and workers in group home settings for the mentally or physically disabled or those with behavioral or substance abuse conditions
+o Workers and residents in homeless shelters
+o Workers and residents in community training homes (CTHs)
+o State and local correctional facility staff with direct inmate contact
+o Correctional and immigration detention facility inmates
+o Migrant farmworkers living in shared housing or reliant on shared transportation
 
 # South Dakota
 
