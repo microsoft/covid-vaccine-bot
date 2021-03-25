@@ -38,7 +38,7 @@ c19.safety/cdc_link,"You can find more information about the safety of the COVID
 c19.links/schedule_vax,"Schedule a Vaccination",,,,"Programar una vacunación",,,,,,,,,,
 c19.links/vax_providers,"View locations providing vaccines",,,,"Ver lugares que proporcionan vacunas",,,,,,,,,,
 c19.links/vax_quiz,"Vaccine Eligibility Questionnaire",,,,"Cuestionario de elegibilidad para vacunas",,,,,,,,,,
-c19.links/vax_info,"Vaccine Information Pgae",,,,"Información sobre vacunas Pgae",,,,,,,,,,
+c19.links/vax_info,"Vaccine Information Page",,,,,,,,,,,,,,
 c19.eligibility/missing_policy_plan,"Unfortunately, I don't have details for $REGION.",,,,"Desafortunadamente, no tengo detalles para $REGION.",,,,,,,,,,
 c19.eligibility/scheduling_link_text,"You can schedule a vaccination at $LINK",,,,"Puede programar una vacunación en $LINK",,,,,,,,,,
 c19.eligibility/scheduling_phone_link_text,"You can call the scheduling hotline at $LINK",,,,"Puede llamar a la línea directa de programación en $LINK",,,,,,,,,,
