@@ -3297,10 +3297,20 @@ Obesity.
 | scheduling_phone | [(787) 999-6202](tel:(787) 999-6202) |
 
 
-## Puerto Rico Active Phase (1a)
+## Puerto Rico Active Phase (1b)
 
 * Are you a healthcare worker?
-* Are you a long-term care resident?
+* Are you a long term care resident or work in a long term care facility?
+* Are you a first responder?
+* Are you age 65+?
+* Are you classified as an essential worker?
+	* This includes those in:
+- Manufacturing
+- Postal Service
+- Public transit
+- Food Supply Chain (Processing, Supermarkets, and Ports)
+- Education (Public and Private)
+* Are you an adult with intellectual or developmental disabilities or are you a caregiver to an adult with intellectual or developmental disabilities?
 
 # Rhode Island
 
