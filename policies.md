@@ -2532,7 +2532,7 @@ work remotely and/or telework
 
 ## New York Active Phase (current)
 
-* Are you age 60+?
+* Are you age 50+?
 * Are you a healthcare worker?
 * Are you an educator or child care provider?
 * Are you a long term care resident or work in a long term care facility?
