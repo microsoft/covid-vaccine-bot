@@ -65,8 +65,10 @@ orchestrator(loadPR, async (message) => {
 	const { prNumber } = message
 
 	if (prNumber) {
-		let resp = await repoServices('getPullRequests', prNumber)
-		setLoadedPRData(resp)
-		console.log(resp)
+		const prResp = await repoServices('getPullRequests', prNumber)
+		setLoadedPRData(prResp)
+
+		const resp = await repoServices('getRepoFileData', prResp.head.ref)
+		setRepoFileData(resp)
 	}
 })

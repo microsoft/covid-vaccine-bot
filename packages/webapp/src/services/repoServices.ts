@@ -138,8 +138,11 @@ export const repoServices = async (
 			return [await loadIssuesResponse.json(), prChangeList]
 
 		case 'getRepoFileData':
-			const dataFolderResp = await fetch(
-				`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/contents/packages/plans/data`,
+			const query = !extraData
+				? `https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/contents/packages/plans/data`
+				: `https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/contents/packages/plans/data?ref=${extraData}`
+
+			const dataFolderResp = await fetch(query,
 				{
 					method: 'GET',
 					headers: {
