@@ -2847,6 +2847,8 @@ Obesity.
 - Mobile crisis care and related services
 - Individuals working in a correctional setting
 - Adults and youth in custody 16 years and older (see [here](https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le3527A.pdf))
+* Are you classified as an essential worker?
+	* This includes migrant and seasonal farmworkers currently working in the fields (see [here](https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le3527A.pdf))
 
 ## Oregon Regions
 
@@ -2860,6 +2862,8 @@ Obesity.
 | scheduling_phone | [541-523-8211](tel:541-523-8211) |
 
 
+### Oregon::Baker Active Phase (1b_group_6)
+
 ## Oregon::Benton
 
 ### Oregon::Benton Links
@@ -2869,6 +2873,8 @@ Obesity.
 | info | [Oregon Health Authority, Public Health Division](https://www.co.benton.or.us/covid19/page/covid-19-vaccine) |
 | scheduling | [Schedule a Vaccination](https://www.samhealth.org/getthevaccine) |
 
+
+### Oregon::Benton Active Phase (1b_group_6)
 
 ## Oregon::Clackamas
 
@@ -2938,6 +2944,8 @@ Obesity.
 | scheduling_phone | [541-699-5109](tel:541-699-5109) |
 
 
+### Oregon::Deschutes Active Phase (1b_group_6)
+
 ## Oregon::Douglas
 
 ### Oregon::Douglas Links
@@ -2947,6 +2955,8 @@ Obesity.
 | info | [Oregon Health Authority, Public Health Division](http://douglaspublichealthnetwork.org/) |
 | scheduling_phone | [541-464-6550](tel:541-464-6550) |
 
+
+### Oregon::Douglas Active Phase (1b_group_6)
 
 ## Oregon::Gilliam
 
@@ -2967,6 +2977,8 @@ Obesity.
 | scheduling_phone | [541-575-0429](tel:541-575-0429) |
 
 
+### Oregon::Grant Active Phase (1b_group_6)
+
 ## Oregon::Harney
 
 ### Oregon::Harney Links
@@ -2976,6 +2988,8 @@ Obesity.
 | info | [Oregon Health Authority, Public Health Division](https://www.facebook.com/HarneyCountyHealthDepartment/) |
 | scheduling_phone | [541-573-2271](tel:541-573-2271) |
 
+
+### Oregon::Harney Active Phase (1b_group_6)
 
 ## Oregon::Hood River
 
@@ -3007,6 +3021,8 @@ Obesity.
 | scheduling_phone | [541-699-5109](tel:541-699-5109) |
 
 
+### Oregon::Jefferson Active Phase (1b_group_6)
+
 ## Oregon::Josephine
 
 ### Oregon::Josephine Links
@@ -3016,6 +3032,8 @@ Obesity.
 | info | [Oregon Health Authority, Public Health Division](http://co.josephine.or.us/Page.asp?NavID=2288) |
 | scheduling_phone | [541-789-2813](tel:541-789-2813) |
 
+
+### Oregon::Josephine Active Phase (1b_group_6)
 
 ## Oregon::Klamath
 
@@ -3027,6 +3045,8 @@ Obesity.
 | scheduling_phone | [1-833-606-4370](tel:1-833-606-4370) |
 
 
+### Oregon::Klamath Active Phase (1b_group_6)
+
 ## Oregon::Lake
 
 ### Oregon::Lake Links
@@ -3035,6 +3055,8 @@ Obesity.
 | --- | --- |
 | scheduling_phone | [541-947-6045](tel:541-947-6045) |
 
+
+### Oregon::Lake Active Phase (1b_group_6)
 
 ## Oregon::Lane
 
@@ -3057,6 +3079,8 @@ Obesity.
 | scheduling_phone | [541-265-0621](tel:541-265-0621) |
 
 
+### Oregon::Lincoln Active Phase (1b_group_6)
+
 ## Oregon::Linn
 
 ### Oregon::Linn Links
@@ -3066,6 +3090,8 @@ Obesity.
 | info | [Oregon Health Authority, Public Health Division](https://www.linncountyhealth.org/) |
 | scheduling_phone | [541-967-3888](tel:541-967-3888) |
 
+
+### Oregon::Linn Active Phase (1b_group_6)
 
 ## Oregon::Malheur
 
@@ -3077,6 +3103,8 @@ Obesity.
 | scheduling_phone | [541-889-7279](tel:541-889-7279) |
 
 
+### Oregon::Malheur Active Phase (1b_group_6)
+
 ## Oregon::Marion
 
 ### Oregon::Marion Links
@@ -3085,6 +3113,8 @@ Obesity.
 | --- | --- |
 | info | [Oregon Health Authority, Public Health Division](https://www.co.marion.or.us/HLT/COVID-19/) |
 
+
+### Oregon::Marion Active Phase (1b_group_6)
 
 ## Oregon::Morrow
 
@@ -3095,6 +3125,8 @@ Obesity.
 | info | [Oregon Health Authority, Public Health Division](https://docs.google.com/forms/d/e/1FAIpQLSe2jLBUI6tLA_7KN_FSTHaYy7ahwcG_FHGvIYaMPKV5zHpZ4Q/viewform) |
 | scheduling_phone | [541-676-5649](tel:541-676-5649) |
 
+
+### Oregon::Morrow Active Phase (1b_group_6)
 
 ## Oregon::Multnomah
 
@@ -3116,6 +3148,8 @@ Obesity.
 | scheduling | [Schedule a Vaccination](https://www.salemhealth.org/covid-19/covid-vaccine) |
 
 
+### Oregon::Polk Active Phase (1b_group_6)
+
 ## Oregon::Sherman
 
 ### Oregon::Sherman Links
@@ -3125,6 +3159,8 @@ Obesity.
 | info | [Oregon Health Authority, Public Health Division](https://www.ncphd.org/covid-vaccines) |
 | scheduling_phone | [541-506-2600](tel:541-506-2600) |
 
+
+### Oregon::Sherman Active Phase (1b_group_6)
 
 ## Oregon::Tillamook
 
@@ -3147,6 +3183,8 @@ Obesity.
 | scheduling_phone | [541-278-5432](tel:541-278-5432) |
 
 
+### Oregon::Umatilla Active Phase (1b_group_6)
+
 ## Oregon::Union
 
 ### Oregon::Union Links
@@ -3156,6 +3194,8 @@ Obesity.
 | scheduling | [Schedule a Vaccination](https://www.chdinc.org/get-vaccinated) |
 | scheduling_phone | [541-962-8800](tel:541-962-8800) |
 
+
+### Oregon::Union Active Phase (1b_group_6)
 
 ## Oregon::Wallowa
 
@@ -3205,6 +3245,8 @@ Obesity.
 | info | [Oregon Health Authority, Public Health Division](https://hhs.co.yamhill.or.us/publichealth/page/covid-19-vaccines) |
 | scheduling_phone | [503-474-4100](tel:503-474-4100) |
 
+
+### Oregon::Yamhill Active Phase (1b_group_6)
 
 # Palau
 
@@ -3986,13 +4028,13 @@ Other Public Health Workers (see [here](https://www.vdh.virginia.gov/covid-19-va
 - remaining first responders
 - educators and school staff for pre-kindergarten through 12th grade and child care workers
 - those who work in an enclosed space around other people and cannot maintain physical distance.
-* Are you age 16+, and have a high-risk medical condition?
+* Are you a person with a rare condition or disability that put you at higher risk?
 	* People with disabilities wondering about their eligibility should apply the definition to their situation: Does their disability put them at increased risk for COVID-19? They can also work with their health care provider to assess their eligibility. In particular, Down syndrome increases risk for severe illness and is on the CDC list. Research continues to emerge on other developmental and intellectual disabilities that put someone at increased risk, so these eligibility guidelines lean toward inclusiveness.
 
 People with disabilities are eligible in 1B tier 2 if:
 
 Their disability alone puts them at higher risk for severe illness from COVID-19 (e.g. Down syndrome).
-They have a disability that doesn't alone put them at higher risk but they also have another underlying condition from the CDC list. (e.g. A person who is deaf and has Type 2 diabetes). (see [here](https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html))
+They have a disability that doesn't alone put them at higher risk but they also have another underlying condition from the CDC list. (e.g. A person who is deaf and has Type 2 diabetes).
 * Are you currently pregnant?
 * Are you a veteran?
 	* VA Puget Sound is now providing Pfizer, Moderna, and Johnson & Johnson's Janssen vaccines depending on the site, which include:  Seattle, American Lake, Silverdale, Mount Vernon, and our Mobile Medical Unit. We continue to proactively contact Veterans to make vaccine appointments. Please, no walk-in vaccines, they are by appointment only. Eligible Veterans can also call us directly at 206-716-5716 to schedule, or contact their primary care team.
@@ -4028,22 +4070,9 @@ They have a disability that doesn't alone put them at higher risk but they also 
 | scheduling_phone | [1-833-734-0965](tel:1-833-734-0965) |
 
 
-## West Virginia Active Phase (1a)
+## West Virginia Active Phase (16_and_older)
 
-* Are you a healthcare worker?
-* Are you a long-term care resident?
-* Are you age 50+?
-* Are you an educator with age of 40+?
-* Are you age 16+ and have a high-risk medical conditions?
-	* - Down syndrome
-- Intellectual and developmental disabilities and their caretakers
-- Caretakers of those with congenital or acquired disease
-- Organ or bone marrow transplant
-- Obesity (BMI > 35)
-- Sickle cell anemia
-- Cystic fibrosis
-- Pregnancy
-* Are you an essential worker outside of healthcare?
+* Are you age 16+?
 
 # Wisconsin
 
