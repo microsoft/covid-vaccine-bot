@@ -9,14 +9,17 @@ import {
 } from '@fluentui/react'
 import { observer } from 'mobx-react-lite'
 import { useCallback, useRef, useState } from 'react'
+import { formatId } from '../utils/textUtils'
+import { getAppStore } from '../store/store'
 
 import './LocationForm.scss'
 
 export interface PhaseFormProp {
     item?: any
+    selectedState?: any
     onSubmit?: (phaseData: any) => void
     onCancel?: () => void
-    duplicate?: boolean
+    duplicate?: boolean,
 }
 
 const setInitialData = (item: any) => {
@@ -36,8 +39,10 @@ const setInitialData = (item: any) => {
 }
 
 export default observer(function PhaseForm(props: PhaseFormProp) {
-    const { onSubmit, onCancel, item, duplicate=false } = props
+    const { onSubmit, onCancel, item, duplicate=false, selectedState } = props
     const [formData, setFormData] = useState<any>(setInitialData(item))
+	const [hasError, setHasError] = useState<boolean>(false)
+	const { repoFileData } = getAppStore()
     const fieldChanges = useRef<any>(formData)
 
 	const handleTextChange = useCallback(
@@ -55,6 +60,30 @@ export default observer(function PhaseForm(props: PhaseFormProp) {
 		[formData, fieldChanges]
 	)
 
+	const isDuplicate = useCallback(() => {
+            if(!duplicate)
+                return ''
+
+            const nextPhaseId = formatId(formData.name);
+            const phases = repoFileData[selectedState.key].vaccination.content.phases;
+            const nameExists = !!phases.find((item: {id: string}) => item.id === nextPhaseId);
+
+			if (nameExists) {
+				setHasError(true)
+				return 'Phase is too similar to one already in use, please revise.'
+			} else {
+				setHasError(false)
+				return ''
+			}
+		},
+		[repoFileData, setHasError, duplicate, formData?.name, selectedState?.key]
+	)
+
+	const disableSubmit = useCallback((): boolean => {
+		return hasError || formData.name === ''
+	}, [formData, hasError])
+
+
 	const formTitle = duplicate ? 'Duplicate Phase' : item ? 'Edit Phase' : 'New Phase'
 
     return (
@@ -68,10 +97,11 @@ export default observer(function PhaseForm(props: PhaseFormProp) {
                     name="name"
                     value={formData.name}
                     onChange={handleTextChange}
+					onGetErrorMessage={isDuplicate}
                 />
             </div>
             <div className="modalFooter">
-                <PrimaryButton text="Submit" disabled={formData.name === ''} onClick={() => onSubmit?.(formData)} />
+                <PrimaryButton text="Submit" disabled={disableSubmit()} onClick={() => onSubmit?.(formData)} />
                 <DefaultButton text="Cancel" onClick={() => onCancel?.()}/>
             </div>
         </div>
