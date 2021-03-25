@@ -6,7 +6,9 @@
 		},
 		"eligibility": {
 			"url": "https://covidvaccine.oregon.gov/#prioritization",
-			"scrapeQuery": [".text-white.bg-primary.p-5.mt-5.rounded-sm.shadow-lg"]
+			"scrapeQuery": [
+				".text-white.bg-primary.p-5.mt-5.rounded-sm.shadow-lg"
+			]
 		},
 		"workflow": {
 			"url": "https://getvaccinated.oregon.gov/",
@@ -60,9 +62,64 @@
 					"question": "c19.eligibility.question/congregate.do",
 					"moreInfoText": "c19.eligibility.moreinfo/congregate.do.or.1b",
 					"moreInfoUrl": "https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le3527A.pdf"
+				},
+				{
+					"question": "c19.eligibility.question/essential_worker",
+					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.or.1b",
+					"moreInfoUrl": "https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le3527A.pdf"
 				}
 			],
 			"label": "1b group 5"
+		},
+		{
+			"id": "1b_group_6",
+			"label": "1b Group 6",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/healthcare_worker",
+					"moreInfoText": "c19.eligibility.moreinfo/healthcare_worker.or.1b_group_6"
+				},
+				{
+					"question": "c19.eligibility.question/long_term_care_resident.are",
+					"moreInfoUrl": "https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le3527A.pdf"
+				},
+				{
+					"question": "c19.eligibility.question/age.65_up",
+					"moreInfoUrl": "https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le3527A.pdf"
+				},
+				{
+					"question": "c19.eligibility.question/essential_worker.are_you",
+					"moreInfoUrl": "https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le3527A.pdf"
+				},
+				{
+					"question": "c19.eligibility.question/congregate.do",
+					"moreInfoUrl": "https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le3527A.pdf"
+				},
+				{
+					"question": "c19.eligibility.question/health.are_you_age_45",
+					"moreInfoUrl": "https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le3527A.pdf"
+				},
+				{
+					"question": "c19.eligibility.question/essential_worker",
+					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.or.1b_group_6",
+					"moreInfoUrl": "https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le3527A.pdf"
+				},
+				{
+					"question": "c19.eligibility.question/health.are_you_currently",
+					"moreInfoText": "c19.eligibility.moreinfo/health.are_you_currently.or.1b_group_6",
+					"moreInfoUrl": "https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le3527A.pdf"
+				},
+				{
+					"question": "c19.eligibility.question/housing.are",
+					"moreInfoText": "c19.eligibility.moreinfo/housing.are.or.1b_group_6",
+					"moreInfoUrl": "https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le3527A.pdf"
+				},
+				{
+					"question": "c19.eligibility.question/congregate.are",
+					"moreInfoText": "c19.eligibility.moreinfo/congregate.are.or.1b_group_6",
+					"moreInfoUrl": "https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le3527A.pdf"
+				}
+			]
 		}
 	]
 }
