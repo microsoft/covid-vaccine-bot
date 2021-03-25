@@ -2716,7 +2716,24 @@ All other essential workers per Cybersecurity and Infrastructure Security Agency
  * Licensing specialists employed by the Ohio Department of Job and Family Services or a county job and family services agency. 
  * The program does NOT include parent volunteers, board members, or owners/administrators who do not provide in-classroom support. (see [here](https://coronavirus.ohio.gov/wps/portal/gov/covid-19/covid-19-vaccination-program/covid-19-vaccination-program))
 * Are you age 16+, and have a high-risk medical condition?
-	* This includes people with amyotrophic lateral sclerosis (ALS), also known as Lou Gehrig's disease. 
+	* Ohioans born with or who have early childhood conditions that are carried into adulthood which put them at a higher risk for adverse outcomes due to COVID-19.
+Sickle cell anemia.
+Down syndrome.
+Cystic fibrosis.
+Muscular dystrophy.
+Cerebral palsy.
+Spina bifida.
+People born with severe heart defects, requiring regular specialized medical care.
+People with severe type 1 diabetes, who have been hospitalized for this in the past year.
+Phenylketonuria (PKU), Tay-Sachs, and other rare, inherited metabolic disorders.
+Epilepsy with continuing seizures; hydrocephaly; microcephaly, and other severe neurological disorders.
+Turner syndrome, fragile X syndrome, Prader-Willi syndrome, and other severe genetic disorders.
+People with severe asthma, who have been hospitalized for this in the past year.
+Alpha and beta thalassemia
+Solid organ transplant candidates and recipients.
+
+Additional medical conditions that qualify Ohioans for the vaccine are:
+People with amyotrophic lateral sclerosis (ALS), also known as Lou Gehrig's disease. 
 Bone marrow transplant recipients.
 People with type 1 diabetes.
 People with type 2 diabetes under the age of 50.
