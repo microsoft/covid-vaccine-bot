@@ -4028,22 +4028,9 @@ They have a disability that doesn't alone put them at higher risk but they also 
 | scheduling_phone | [1-833-734-0965](tel:1-833-734-0965) |
 
 
-## West Virginia Active Phase (1a)
+## West Virginia Active Phase (16_and_older)
 
-* Are you a healthcare worker?
-* Are you a long-term care resident?
-* Are you age 50+?
-* Are you an educator with age of 40+?
-* Are you age 16+ and have a high-risk medical conditions?
-	* - Down syndrome
-- Intellectual and developmental disabilities and their caretakers
-- Caretakers of those with congenital or acquired disease
-- Organ or bone marrow transplant
-- Obesity (BMI > 35)
-- Sickle cell anemia
-- Cystic fibrosis
-- Pregnancy
-* Are you an essential worker outside of healthcare?
+* Are you age 16+?
 
 # Wisconsin
 
