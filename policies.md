@@ -3986,13 +3986,13 @@ Other Public Health Workers (see [here](https://www.vdh.virginia.gov/covid-19-va
 - remaining first responders
 - educators and school staff for pre-kindergarten through 12th grade and child care workers
 - those who work in an enclosed space around other people and cannot maintain physical distance.
-* Are you a person with a rare condition or disability that put you at higher risk?
+* Are you age 16+, and have a high-risk medical condition?
 	* People with disabilities wondering about their eligibility should apply the definition to their situation: Does their disability put them at increased risk for COVID-19? They can also work with their health care provider to assess their eligibility. In particular, Down syndrome increases risk for severe illness and is on the CDC list. Research continues to emerge on other developmental and intellectual disabilities that put someone at increased risk, so these eligibility guidelines lean toward inclusiveness.
 
 People with disabilities are eligible in 1B tier 2 if:
 
 Their disability alone puts them at higher risk for severe illness from COVID-19 (e.g. Down syndrome).
-They have a disability that doesn't alone put them at higher risk but they also have another underlying condition from the CDC list. (e.g. A person who is deaf and has Type 2 diabetes).
+They have a disability that doesn't alone put them at higher risk but they also have another underlying condition from the CDC list. (e.g. A person who is deaf and has Type 2 diabetes). (see [here](https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html))
 * Are you currently pregnant?
 * Are you a veteran?
 	* VA Puget Sound is now providing Pfizer, Moderna, and Johnson & Johnson's Janssen vaccines depending on the site, which include:  Seattle, American Lake, Silverdale, Mount Vernon, and our Mobile Medical Unit. We continue to proactively contact Veterans to make vaccine appointments. Please, no walk-in vaccines, they are by appointment only. Eligible Veterans can also call us directly at 206-716-5716 to schedule, or contact their primary care team.
@@ -4028,9 +4028,22 @@ They have a disability that doesn't alone put them at higher risk but they also 
 | scheduling_phone | [1-833-734-0965](tel:1-833-734-0965) |
 
 
-## West Virginia Active Phase (16_and_older)
+## West Virginia Active Phase (1a)
 
-* Are you age 16+?
+* Are you a healthcare worker?
+* Are you a long-term care resident?
+* Are you age 50+?
+* Are you an educator with age of 40+?
+* Are you age 16+ and have a high-risk medical conditions?
+	* - Down syndrome
+- Intellectual and developmental disabilities and their caretakers
+- Caretakers of those with congenital or acquired disease
+- Organ or bone marrow transplant
+- Obesity (BMI > 35)
+- Sickle cell anemia
+- Cystic fibrosis
+- Pregnancy
+* Are you an essential worker outside of healthcare?
 
 # Wisconsin
 
