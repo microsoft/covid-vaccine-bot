@@ -21,7 +21,7 @@
 			"text": "c19.link/scheduling.phone.az"
 		}
 	},
-	"activePhase": "1b",
+	"activePhase": "1c",
 	"phases": [
 		{
 			"id": "1a",
@@ -57,7 +57,7 @@
 					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.az.1b"
 				}
 			],
-			"label": "1b_65 and older"
+			"label": "65 And Older"
 		},
 		{
 			"id": "1c",
@@ -79,11 +79,11 @@
 					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.az.1c"
 				}
 			],
-			"label": "1b 55 and older"
+			"label": "55 And Older"
 		},
 		{
 			"id": "1b_16_and_older",
-			"label": "1b 16 and older",
+			"label": "16 And Older",
 			"qualifications": [
 				{
 					"question": "c19.eligibility.question/age.16_up"
@@ -131,6 +131,15 @@
 				{
 					"question": "c19.eligibility.question/essential_worker",
 					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.az.35_and_older"
+				}
+			]
+		},
+		{
+			"id": "18_and_older",
+			"label": "18 and older",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.are_you_age_18"
 				}
 			]
 		}

@@ -78,6 +78,9 @@
 				},
 				{
 					"question": "c19.eligibility.question/age.60_up"
+				},
+				{
+					"question": "c19.eligibility.question/housing.are_you_currently"
 				}
 			]
 		},
