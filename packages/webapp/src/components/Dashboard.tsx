@@ -77,7 +77,7 @@ export default observer(function Dashboard() {
 					Approve
 				</a>
 				<div className="loadPRButton" onClick={() => loadPR(item.action.number)}>
-					<FontIcon iconName="Download"/>Load Data
+					<FontIcon iconName="DrillDownSolid"/>Load Data
 				</div>
 			</div>
 			)

@@ -40,6 +40,13 @@
 			margin-left: 20px;
 			display: flex;
 			cursor: pointer;
+
+			i {
+				color: $ms-color-themePrimary;
+				padding-right: 5px;
+				padding-top: 2px;
+				font-size: 15px;
+			}
 		}
 	}
 }

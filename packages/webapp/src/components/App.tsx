@@ -146,9 +146,12 @@ export default observer(function App() {
 														{state.loadedPRData && (
 															<MessageBar
 																messageBarType={5}
+																isMultiline={true}
 																styles={{ root: { margin: '10px 5px' } }}
 															>
-																You are currently working on: {state.loadedPRData.title} (PR: {state.loadedPRData.number}, last updated on: {new Date(state.loadedPRData.updated_at).toLocaleString()})
+																You are currently working on: <strong>PR: {state.loadedPRData.number} - {state.loadedPRData.title}</strong><br/>
+																Last updated by: {state.prChanges.last_commit.commit.committer.name}<br/>
+																Last updated on: {new Date(state.loadedPRData.updated_at).toLocaleString()}
 															</MessageBar>
 														)}
 														<Dashboard />
@@ -165,9 +168,12 @@ export default observer(function App() {
 														{state.loadedPRData && (
 															<MessageBar
 																messageBarType={5}
+																isMultiline={true}
 																styles={{ root: { margin: '10px 5px' } }}
 															>
-																You are currently working on: {state.loadedPRData.title} (PR: {state.loadedPRData.number}, last updated on: {new Date(state.loadedPRData.updated_at).toLocaleString()})
+																You are currently working on: <strong>PR: {state.loadedPRData.number} - {state.loadedPRData.title}</strong><br/>
+																Last updated by: {state.prChanges.last_commit.commit.committer.name}<br/>
+																Last updated on: {new Date(state.loadedPRData.updated_at).toLocaleString()}
 															</MessageBar>
 														)}
 														<Locations />
@@ -188,9 +194,12 @@ export default observer(function App() {
 															{state.loadedPRData && (
 																<MessageBar
 																	messageBarType={5}
+																	isMultiline={true}
 																	styles={{ root: { margin: '10px 5px' } }}
 																>
-																	You are currently working on: {state.loadedPRData.title} (PR: {state.loadedPRData.number}, last updated on: {new Date(state.loadedPRData.updated_at).toLocaleString()})
+																	You are currently working on: <strong>PR: {state.loadedPRData.number} - {state.loadedPRData.title}</strong><br/>
+																	Last updated by: {state.prChanges.last_commit.commit.committer.name}<br/>
+																	Last updated on: {new Date(state.loadedPRData.updated_at).toLocaleString()}
 																</MessageBar>
 															)}
 															<Translate />
