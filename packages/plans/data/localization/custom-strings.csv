@@ -132,5 +132,7 @@ c19.eligibility.question/congregate.are_you_currently,"Are you currently incarce
 c19.eligibility.question/health.are_you_an_adult_with,"Are you an adult with an intellectual or developmental disability?",,,,"¿Es usted un adulto con una discapacidad intelectual o del desarrollo?",,,,,,,,,,
 c19.eligibility.question/age.are_you_age_35,"Are you age 35+?",,,,"¿Tienes más de 35 años?",,,,,,,,,,
 c19.eligibility.question/long_term_care_resident.are_you,"Are you enrolled in a Medicaid long-term care program?",,,,,,,,,,,,,,
+c19.eligibility.question/people_of_color.are_you,"Are you an English language learner or a member of an immigrant/refugee community?",,,,,,,,,,,,,,
+c19.eligibility.question/people_of_color.do,"Do you live in a Black, Indigenous and people of color (BIPOC) household?",,,,,,,,,,,,,,
 c19.eligibility.question/health.are_you_currently_hospitalized,"Are you currently hospitalized and diagnosed with a high-risk medical condition?",,,,,,,,,,,,,,
 c19.eligibility.question/housing.are_you_currently,"Are you currently living in a transient housing facility?",,,,,,,,,,,,,,
