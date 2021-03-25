@@ -3,7 +3,9 @@
 		"info": {
 			"text": "cdc/rhode_island/state_link",
 			"url": "https://covid.ri.gov/vaccination",
-			"scrapeQuery": ["article"]
+			"scrapeQuery": [
+				"article"
+			]
 		},
 		"scheduling": {
 			"url": "https://www.vaccinateri.org/",
@@ -32,13 +34,20 @@
 					"question": "c19.eligibility.question/essential_worker.are"
 				},
 				{
-					"question": "c19.eligibility.question/age.65_up"
+					"question": "c19.eligibility.question/age.60_up"
 				},
 				{
-					"question": "c19.eligibility.question/essential_worker.are_you"
+					"question": "c19.eligibility.question/essential_worker.are_you",
+					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.are_you.ri.1a"
 				},
 				{
-					"question": "c19.eligibility.question/age.are_you_age"
+					"question": "c19.eligibility.question/age.are_you_age",
+					"moreInfoText": "c19.eligibility.moreinfo/age.are_you_age.ri.1a",
+					"moreInfoUrl": "https://health.ri.gov/publications/guidelines/COVID19-underlying-conditions.pdf"
+				},
+				{
+					"question": "c19.eligibility.question/people_of_color.is",
+					"moreInfoUrl": "https://covid.ri.gov/vaccination/rhode-islands-hard-hit-community-vaccination-strategy"
 				}
 			]
 		},
