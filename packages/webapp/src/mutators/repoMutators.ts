@@ -40,6 +40,14 @@ export const setIssuesList = mutatorAction(
 	}
 )
 
+export const setLoadedPRData = mutatorAction('setLoadedPRData', (data: any | undefined) =>{
+	const store = getAppStore()
+	if (data) {
+		console.log(data)
+		store.loadedPRData = data
+	}
+})
+
 export const handleCreatePR = mutatorAction('handleCreatePR', () => {
 	const store = getAppStore()
 	store.pendingChanges = false

@@ -25,7 +25,8 @@ export const getAppState = (): AppState => {
 		isEditable: true,
 		pendingChanges: false,
 		isDataRefreshing: false,
-		prChanges: undefined
+		prChanges: undefined,
+		loadedPRData: undefined
 	}
 }
 

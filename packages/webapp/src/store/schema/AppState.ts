@@ -22,4 +22,5 @@ export interface AppState {
 	pendingChanges: boolean
 	isDataRefreshing: boolean
 	prChanges?: any[]
+	loadedPRData?: any
 }

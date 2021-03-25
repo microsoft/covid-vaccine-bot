@@ -17,6 +17,10 @@
 	.sectionContent {
 		padding: 20px 0;
 
+		.actionsColumn {
+			display: flex;
+		}
+
 		.tableActionLink{
 			text-decoration:none;
 			color:unset;
@@ -29,6 +33,12 @@
 
 		.infoButton {
 			color: $ms-color-themePrimary;
+			cursor: pointer;
+		}
+
+		.loadPRButton {
+			margin-left: 20px;
+			display: flex;
 			cursor: pointer;
 		}
 	}

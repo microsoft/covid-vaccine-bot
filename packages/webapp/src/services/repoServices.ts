@@ -95,7 +95,7 @@ export const repoServices = async (
 			return await loadBranchesResponse.json()
 		case 'getPullRequests':
 			const loadPRResponse = await fetch(
-				`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/pulls`,
+				`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/pulls/${extraData}`,
 				{
 					method: 'GET',
 					headers: {
