@@ -2612,8 +2612,23 @@ Correctional facility, such as jail or prison
 ## North Dakota Active Phase (1c)
 
 * Are you a healthcare worker?
-* Are you a long-term care resident?
-* Are you classified as an essential worker? (see [here](https://www.health.nd.gov/covid-19-vaccine-priority-groups))
+* Are you a long term care resident or work in a long term care facility?
+* Are you classified as an essential worker?
+	* This list includes:
+First responders
+Child care workers
+Workers employed by preschools or Kindergarten through 12th grade:
+Teachers, nutritional services, aides, bus drivers, principals, administrative staff, custodians, etc.
+National Guard, not previously covered
+Workers enabling access to human food (i.e., grocery workers)
+Public safety answering points (911)
+Manufacturing related to the development or supply of COVID-19 vaccine
+Other healthcare/public health workers not included in phase 1A
+Free standing clinical laundries
+Public transit, including bus, taxi, ride-share
+Blood bank workers not previously vaccinated
+Information Technology
+All other essential workers per Cybersecurity and Infrastructure Security Agency (CISA) (see [here](https://www.health.nd.gov/covid-19-vaccine-priority-groups))
 * Are you age 16+, and have a high-risk medical condition?
 	* Adults of any age with the following conditions are at increased risk of severe illness from the virus that causes COVID-19:
 
@@ -2629,9 +2644,9 @@ Correctional facility, such as jail or prison
  * Sickle cell disease
  * Smoking
  * Type 2 diabetes mellitus
-* Are you a transportation worker?
-	* Public transit, including bus, taxi, ride-share (see [here](https://www.health.nd.gov/covidvaccinelocator))
-* Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?
+* Do you work or live in a congregate setting?
+	* i.e., corrections, group homes, treatment centers, homeless shelters, etc.
+* Are you age 65+?
 
 # Northern Mariana Islands
 
