@@ -18,7 +18,7 @@
 import { useBoolean } from '@uifabric/react-hooks'
 import { observer } from 'mobx-react-lite'
 import { useState, useEffect, useCallback } from 'react'
-import { initializeGitData } from '../actions/repoActions'
+import { initializeGitData, loadPR } from '../actions/repoActions'
 import { getAppStore } from '../store/store'
 
 import './Dashboard.scss'
@@ -42,7 +42,6 @@ export default observer(function Dashboard() {
 				const isScrappedIssue = item.labels.some( (x:any) => x.name.toLowerCase() === "scrapped changes" )
 
 				if(item.pull_request){
-
 					tempPRList.push({ title:item.title, author:item.user.login, update:requestUpdate.toLocaleString(), action:item});
 				}
 				else if (isScrappedIssue){
@@ -69,11 +68,19 @@ export default observer(function Dashboard() {
 
 	const onPRActionRender =  (item?: any, index?: number, column?: IColumn) =>  {
 
-		return (<a className="tableActionLink" href={item?.action?.html_url} target="_blank" rel="noreferrer">
-							<FontIcon
-								iconName="CircleAdditionSolid"
-							/> 
-							Approve</a>)
+		return (
+			<div className="actionsColumn">
+				<a className="tableActionLink" href={item?.action?.html_url} target="_blank" rel="noreferrer">
+					<FontIcon
+						iconName="CircleAdditionSolid"
+					/> 
+					Approve
+				</a>
+				<div className="loadPRButton" onClick={() => loadPR(item.action.number)}>
+					<FontIcon iconName="DrillDownSolid"/>Load Data
+				</div>
+			</div>
+			)
 
 	};
 

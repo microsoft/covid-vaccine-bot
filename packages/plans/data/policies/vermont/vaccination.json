@@ -12,7 +12,9 @@
 		},
 		"eligibility": {
 			"url": "https://www.healthvermont.gov/covid-19/vaccine/about-covid-19-vaccines-vermont",
-			"scrapeQuery": ["article .paragraphs-items .content .field-body"]
+			"scrapeQuery": [
+				"article .paragraphs-items .content .field-body"
+			]
 		},
 		"scheduling_phone": {
 			"url": "tel:855-722-7878",
@@ -72,19 +74,37 @@
 			"id": "1c",
 			"qualifications": [
 				{
-					"question": "c19.eligibility.question/healthcare_worker"
+					"question": "c19.eligibility.question/healthcare_worker",
+					"moreInfoUrl": "https://www.healthvermont.gov/covid-19/vaccine/getting-covid-19-vaccine#eligiblenow"
 				},
 				{
-					"question": "c19.eligibility.question/long_term_care_resident"
+					"question": "c19.eligibility.question/long_term_care_resident.are",
+					"moreInfoUrl": "https://www.healthvermont.gov/covid-19/vaccine/getting-covid-19-vaccine#eligiblenow"
 				},
 				{
-					"question": "c19.eligibility.question/essential_worker"
+					"question": "c19.eligibility.question/essential_worker.are_you",
+					"moreInfoUrl": "https://apps.health.vermont.gov/COVID/faq/#4837"
 				},
 				{
-					"question": "c19.eligibility.question/health"
+					"question": "c19.eligibility.question/health",
+					"moreInfoUrl": "https://www.healthvermont.gov/covid-19/vaccine/getting-covid-19-vaccine#conditions"
 				},
 				{
-					"question": "c19.eligibility.question/age.65_up"
+					"question": "c19.eligibility.question/age.60_up"
+				},
+				{
+					"question": "c19.eligibility.question/essential_worker.are",
+					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.are.vt.1c"
+				},
+				{
+					"question": "c19.eligibility.question/people_of_color.are_you",
+					"moreInfoText": "c19.eligibility.moreinfo/people_of_color.are_you.vt.1c",
+					"moreInfoUrl": "https://www.healthvermont.gov/covid-19/vaccine/about-covid-19-vaccines-vermont#equity"
+				},
+				{
+					"question": "c19.eligibility.question/people_of_color.do",
+					"moreInfoText": "c19.eligibility.moreinfo/people_of_color.do.vt.1c",
+					"moreInfoUrl": "https://www.healthvermont.gov/covid-19/vaccine/about-covid-19-vaccines-vermont#equity"
 				}
 			]
 		}

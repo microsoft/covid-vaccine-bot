@@ -5,6 +5,7 @@
 import { mutatorAction } from 'satcheljs'
 import { getAppStore } from '../store/store'
 import { createLocationDataObj } from '../utils/dataUtils'
+import { formatId } from '../utils/textUtils'
 
 export const initStoreData = mutatorAction(
 	'initStoreData',
@@ -32,7 +33,6 @@ export const setIssuesList = mutatorAction(
 		if (data) {
 			const store = getAppStore()
 			store.issues = data[0]
-			store.prChanges= data[1]
 			if (callback) {
 				callback()
 			}
@@ -40,9 +40,19 @@ export const setIssuesList = mutatorAction(
 	}
 )
 
+export const setLoadedPRData = mutatorAction('setLoadedPRData', (prData: any | undefined) =>{
+	const store = getAppStore()
+	if (prData) {
+		store.loadedPRData = prData.data
+		store.prChanges = { changes: prData.changes, last_commit: prData.commits.pop() }
+	}
+})
+
 export const handleCreatePR = mutatorAction('handleCreatePR', () => {
 	const store = getAppStore()
 	store.pendingChanges = false
+	store.prChanges = undefined
+	store.loadedPRData = undefined
 })
 
 export const setRepoFileData = mutatorAction(
@@ -588,7 +598,7 @@ const copyPhaseData = (newObj: any, oldObj: any) => {
 			currPhaseObj.qualifications.push({
 				question: qual.question.toLowerCase(),
 				moreInfoText: qual.moreInfoText
-					?.replace(/[^a-z0-9\s]/gi, '')
+					?.replace(/[^a-z0-9._/\s]/gi, '')
 					.replace(/\s/g, '_')
 					.toLowerCase(),
 				moreInfoUrl: qual.moreInfoUrl,
@@ -811,17 +821,14 @@ export const removePhase = mutatorAction(
 	}
 )
 
-export const addPhase = mutatorAction('addPhase', (data: any | undefined) => {
+ export const addPhase = mutatorAction('addPhase', (data: any | undefined) => {
 	if (data) {
 		const store = getAppStore()
 		if (store?.repoFileData) {
 			store.pendingChanges = true
 			const location = store.repoFileData[data.locationKey]
 
-			const phaseId = data.item.name
-				.replace(/[^a-z0-9\s]/gi, '')
-				.replace(/\s/g, '_')
-				.toLowerCase()
+			const phaseId = formatId(data.item.name)
 
 			const emptyQualifications: any = []
 
@@ -837,6 +844,55 @@ export const addPhase = mutatorAction('addPhase', (data: any | undefined) => {
 			store.repoFileData = { ...store.repoFileData }
 		}
 	}
+})
+
+export const duplicatePhase = mutatorAction('duplicatePhase', (data: {name: string; locationKey: string; phaseId: string, isRegion?: boolean, regionInfo?: {key: string}} | undefined) => {
+   if (data) {
+	   const store = getAppStore()
+	   if (store?.repoFileData) {
+		   store.pendingChanges = true
+		   const location = store.repoFileData[data.locationKey]
+		   const phaseSource = data.isRegion && data.regionInfo?.key && location.regions[data.regionInfo.key].vaccination?.content.phases ? 
+			location.regions[data.regionInfo.key].vaccination.content.phases.find((item: {id: string}) => item.id === data.phaseId) :
+			location.vaccination.content.phases.find((item: {id: string}) => item.id === data.phaseId)
+		   const nextPhaseId = formatId(data.name)
+
+		   const newItem = {
+			   id: nextPhaseId,
+			   label: data.name,
+			   qualifications: phaseSource.qualifications?.map((item: any) => {
+				   const newContentKey = item.moreInfoText?.replace(new RegExp(data.phaseId + '$'), nextPhaseId)
+
+		   			if(newContentKey) {
+						location.strings.content[newContentKey] = location.strings.content[item.moreInfoText]
+					}
+
+				   return {
+					   question: item.question,
+					   moreInfoUrl: item.moreInfoUrl,
+					   moreInfoText: newContentKey
+				   }
+			   })
+		   }
+
+
+		   if(data.isRegion && data.regionInfo) {
+			const regionVaccinationObj =
+				location.regions[data.regionInfo.key].vaccination
+
+			if (!regionVaccinationObj.content?.phases) {
+				copyPhaseData(regionVaccinationObj, location.vaccination)
+			}
+
+			regionVaccinationObj.content.phases.push(newItem)
+		   } else {
+			   	// State level region phase
+				location.vaccination.content.phases.push(newItem)
+		   }
+
+		   store.repoFileData = { ...store.repoFileData }
+	   }
+   }
 })
 
 export const updatePhase = mutatorAction(
@@ -862,6 +918,7 @@ export const updatePhase = mutatorAction(
 		}
 	}
 )
+
 export const setActivePhase = mutatorAction(
 	'setActivePhase',
 	(data: any | undefined) => {

@@ -3,7 +3,9 @@
 		"info": {
 			"text": "cdc/west_virginia/state_link",
 			"url": "https://dhhr.wv.gov/COVID-19/Pages/Vaccine.aspx",
-			"scrapeQuery": [".col-12.col-md-8"]
+			"scrapeQuery": [
+				".col-12.col-md-8"
+			]
 		},
 		"scheduling": {
 			"url": "https://member.everbridge.net/747122446041089/login",
@@ -15,7 +17,7 @@
 			"description": "c19.link/scheduling.phone.description.wv"
 		}
 	},
-	"activePhase": "1a",
+	"activePhase": "16_and_older",
 	"phases": [
 		{
 			"id": "1a",
@@ -75,6 +77,15 @@
 				},
 				{
 					"question": "c19.eligibility.question/age.65_up"
+				}
+			]
+		},
+		{
+			"id": "16_and_older",
+			"label": "16 and older",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.16_up"
 				}
 			]
 		}

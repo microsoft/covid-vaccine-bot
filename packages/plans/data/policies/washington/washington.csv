@@ -1,11 +1,11 @@
 String ID,en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th
-c19.eligibility.question/multigen.wa,Are you age 50+ in a multi-generational household?,,,,¿Tienes más de 50 años en un hogar multigeneracional?,,,,,,,,,,
-c19.eligibility.question/health.1b.wa,Are you 16+ with 2 or more medical conditions?,,,,¿Tiene más de 16 años con 2 o más condiciones médicas?,,,,,,,,,,
-c19.eligibility.question/congregate_worker.wa,Do you work in a congregate setting such as a group home,,,,"¿Trabaja en una configuración congregada, como una casa de grupo",,,,,,,,,,
-c19.eligibility.question/congregate_services.wa,Do you experience homelessness and access services or live in a congregate setting such as a shelter or temporary housing?,,,,¿Experimentas servicios de desamparo y acceso o vives en un entorno congregado como un refugio o una vivienda temporal?,,,,,,,,,,
-c19.links/workflow.wa,Washington State PhaseFinder,,,,PhaseFinder del estado de Washington,,,,,,,,,,
-c19.link/scheduling.phone.wa,1-888-856-5816,,,,1-888-856-5816,,,,,,,,,,
-c19.link/scheduling.phone.description.wa,State COVID-19 Assistance Hotline,,,,Línea directa de asistencia del COVID-19 estatal,,,,,,,,,,
+c19.eligibility.question/multigen.wa,"Are you age 50+ in a multi-generational household?",,,,"¿Tienes más de 50 años en un hogar multigeneracional?",,,,,,,,,,
+c19.eligibility.question/health.1b.wa,"Are you 16+ with 2 or more medical conditions?",,,,"¿Tiene más de 16 años con 2 o más condiciones médicas?",,,,,,,,,,
+c19.eligibility.question/congregate_worker.wa,"Do you work in a congregate setting such as a group home",,,,"¿Trabaja en una configuración congregada, como una casa de grupo",,,,,,,,,,
+c19.eligibility.question/congregate_services.wa,"Do you experience homelessness and access services or live in a congregate setting such as a shelter or temporary housing?",,,,"¿Experimentas servicios de desamparo y acceso o vives en un entorno congregado como un refugio o una vivienda temporal?",,,,,,,,,,
+c19.links/workflow.wa,"Washington State PhaseFinder",,,,"PhaseFinder del estado de Washington",,,,,,,,,,
+c19.link/scheduling.phone.wa,"1-888-856-5816",,,,"1-888-856-5816",,,,,,,,,,
+c19.link/scheduling.phone.description.wa,"State COVID-19 Assistance Hotline",,,,"Línea directa de asistencia del COVID-19 estatal",,,,,,,,,,
 c19.eligibility.moreinfo/essential_worker.are_you.wa.1b_tier_2,"This includes High-risk critical workers* in the following industries: agriculture, fishing vessel crews, food processing, grocery store/food bank, corrections (prisons, jails, detention centers), court of law, public transit, and remaining first responders, educators and school staff for pre-kindergarten through 12th grade, and child care workers",,,,"Esto incluye trabajadores críticos de alto riesgo* en las siguientes industrias: agricultura, equipos de barcos pesqueros, procesamiento de alimentos, tienda de comestibles/banco de alimentos, correcciones (prisiones, cárceles, centros de detención), tribunal de justicia, transporte público y socorristas restantes, educadores y personal escolar para preescolar hasta 12º grado, y trabajadores de cuidado infantil",,,,,,,,,,
 c19.eligibility.moreinfo/essential_worker.wa.1b_tier_2,"This includes high-risk critical workers in the following industries: 
 - agriculture

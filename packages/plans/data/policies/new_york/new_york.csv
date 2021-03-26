@@ -1,8 +1,8 @@
 String ID,en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th
 c19.eligibility.question/essential_worker.1b.ny,"Are you a K-12 personnel, first responder, public safety worker, or public transit worker?",,,,"¿Es usted un personal de K-12, socorrista, trabajador de seguridad pública o trabajador de transporte público?",,,,,,,,,,
-c19.links/workflow.ny,Am I Eligible app,,,,Soy elegible aplicación,,,,,,,,,,
-c19.link/scheduling.phone.ny,1-833-697-4829,,,,1-833-697-4829,,,,,,,,,,
-c19.link/scheduling.phone.description.ny,New York State COVID-19 Vaccination Hotline,,,,Línea directa de vacunación COVID-19 del estado de Nueva York,,,,,,,,,,
+c19.links/workflow.ny,"Am I Eligible app",,,,"Soy elegible aplicación",,,,,,,,,,
+c19.link/scheduling.phone.ny,"1-833-697-4829",,,,"1-833-697-4829",,,,,,,,,,
+c19.link/scheduling.phone.description.ny,"New York State COVID-19 Vaccination Hotline",,,,"Línea directa de vacunación COVID-19 del estado de Nueva York",,,,,,,,,,
 c19.eligibility.moreinfo/essential_worker.ny.current,"This includes:
 - Public Transit Workers
 - Grocery Store Workers

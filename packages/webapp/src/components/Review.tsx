@@ -23,6 +23,17 @@ export interface ReviewProp {
 	showDashboard: () => void
 }
 
+const setInitialFormData = (initData: any | undefined) => {
+	if (!initData) return {
+		prTitle: '',
+		prDetails: ''
+	}
+	return {
+		prTitle: initData.title ?? '',
+		prDetails: initData.body ?? ''
+	}
+}
+
 export default observer(function Review(props: ReviewProp) {
 	const { showDashboard } = props
 	const changesColumns = [
@@ -42,12 +53,11 @@ export default observer(function Review(props: ReviewProp) {
 	const [errorMessage, setErrorMessage] = useState<
 		{ message: string } | undefined
 	>()
-
-	const [formData, setFormData] = useState<any>({})
+	const state = getAppStore()
+	const [formData, setFormData] = useState<any>(setInitialFormData(state.loadedPRData))
 	const fieldChanges = useRef<any>(formData)
 	const changeSummary = useRef<any[]>([])
 
-	const state = getAppStore()
 	useEffect(() => {
 		const tempChangesList: any[] = []
 		const tempLocationUpdates: any[] = []

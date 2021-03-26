@@ -1,10 +1,10 @@
 String ID,en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th
-c19.eligibility.question/essential_worker.1a.md.judiciary_or_nursing_home_staff,Are you frontline judiciary staff or long-term care facility staff within a nursing home?,,,,¿Es usted personal judicial de primera línea o personal de centros de atención a largo plazo dentro de un asilo de ancianos?,,,,,,,,,,
+c19.eligibility.question/essential_worker.1a.md.judiciary_or_nursing_home_staff,"Are you frontline judiciary staff or long-term care facility staff within a nursing home?",,,,"¿Es usted personal judicial de primera línea o personal de centros de atención a largo plazo dentro de un asilo de ancianos?",,,,,,,,,,
 c19.eligibility.question/essential_worker.1b.md,"Are you a K-12 personnel, continuity of government staff, or developmentally disabled?",,,,"¿Es usted un personal K-12, continuidad del personal del gobierno o discapacitados del desarrollo?",,,,,,,,,,
 c19.eligibility.question/congregate.md,"Do you live in an assisted living facility, special needs group home, or are a high-risk inmate?",,,,"¿Vives en un centro de vida asistida, un hogar en grupo con necesidades especiales o eres un recluso de alto riesgo?",,,,,,,,,,
-c19.link/scheduling.phone.md,(410) 767-6500,,,,(410) 767-6500,,,,,,,,,,
+c19.link/scheduling.phone.md,"(410) 767-6500",,,,"(410) 767-6500",,,,,,,,,,
 c19.link/scheduling.phone.description.md,"For updates on appointments for mass vaccination sites, text 'MdReady' to 898-211.",,,,"Para actualizaciones sobre las citas para los sitios de vacunación masiva, envíe un mensaje de texto a 'MdReady' al 898-211.",,,,,,,,,,
-c19.eligibility.moreinfo/congregate.do.md.1c,"This includes assisted living, independent living, behavioral health and developmentally disabled group homes, and other congregate facilities",,,,"Esto incluye la vida asistida, la vida independiente, la salud conductual y los hogares grupales con discapacidades del desarrollo, y otras instalaciones congregadas",,,,,,,,,,
+c19.eligibility.moreinfo/congregate.do.md.1c,"This includes assisted living, independent living, behavioral health and developmentally disabled group homes, and other congregate facilities",,,,,,,,,,,,,,
 c19.eligibility.moreinfo/essential_worker.md.1c,"This includes: 
 All licensed, registered and certified health care providers
 Front line hospital staff
@@ -20,22 +20,7 @@ Front line judiciary staff
 Continuity of government
 Food/agriculture production, critical manufacturing, U.S. Postal Service, public mass transit, grocery store employees
 Veterinarians and support staff
-Clergy and other essential support for houses of worship",,,,"Esto incluye: 
-Todos los proveedores de atención médica con licencia, registrados y certificados
-Personal del hospital de primera línea
-Residentes y personal de residencias de ancianos
-Personas con discapacidad intelectual y del desarrollo
-Vida asistida, vida independiente, salud conductual y hogares de grupo con discapacidades del desarrollo, y otras instalaciones congregadas
-Fuerzas del orden y bomberos, SME
-El personal de educación, incluidos los maestros K-12, el personal de apoyo y los proveedores de guarderías
-Personal y funcionarios correccionales de atención médica
-Trabajadores de seguridad pública no cubiertos en fase 1A
-Los trabajadores de la salud no están cubiertos en la Fase 1A, incluyendo pero no limitados a los servicios de laboratorio, salud pública, fabricación de vacunas y otras profesiones de atención médica
-Personal judicial de primera línea
-Continuidad del gobierno
-Producción de alimentos y agricultura, fabricación crítica, Servicio Postal de ee.UU., transporte público en masa, empleados de supermercados
-Veterinarios y personal de apoyo
-Clero y otros apoyos esenciales para las casas de culto",,,,,,,,,,
+Clergy and other essential support for houses of worship",,,,,,,,,,,,,,
 c19.eligibility.moreinfo/health.md.1c,"Individuals who are currently receiving hospital-based treatment, including in hospital outpatient centers, AND diagnosed with at least one of the following conditions:
 Cancer patients who are currently in active treatment
 End stage renal disease patients requiring hemodialysis
@@ -44,12 +29,39 @@ Solid organ transplant recipients
 Sickle cell disease patients
 Diabetic patients (Type 1 and Type 2)
 
-Individuals who are diagnosed with these medical conditions but are not currently receiving hospital-based treatment, including in hospital outpatient centers, will be eligible to receive the vaccine in Maryland's Phase 2 COVID-19 vaccine distribution.",,,,"Personas que actualmente están recibiendo tratamiento hospitalario, incluso en centros ambulatorios hospitalarios, y diagnosticadas con al menos una de las siguientes afecciones:
-Pacientes con cáncer que actualmente están en tratamiento activo
-Pacientes con enfermedad renal terminal que requieren hemodiálisis
-Enfermedad pulmonar obstructiva crónica (EPOC)
-Receptores sólidos de trasplante de órganos
-Pacientes con enfermedad de células falciformes
-Pacientes diabéticos (tipo 1 y tipo 2)
+Individuals who are diagnosed with these medical conditions but are not currently receiving hospital-based treatment, including in hospital outpatient centers, will be eligible to receive the vaccine in Maryland's Phase 2 COVID-19 vaccine distribution.",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/congregate.do.md.2a,"This includes assisted living, independent living, behavioral health and developmentally disabled group homes, and other congregate facilities",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/essential_worker.md.2a,"This includes: 
+All licensed, registered and certified health care providers
+Front line hospital staff
+Nursing home residents and staff
+Individuals with intellectual and developmental disabilities
+Assisted living, independent living, behavioral health and developmentally disabled group homes, and other congregate facilities
+Law enforcement and firefighters, EMS
+Education staff, including K-12 teachers, support staff and daycare providers
+Correctional health care staff and officers
+Public safety workers not covered in Phase 1A
+Health care workers not covered in Phase 1A, including but not limited to lab services, public health, vaccine manufacturing and other health care professions
+Front line judiciary staff
+Continuity of government
+Food/agriculture production, critical manufacturing, U.S. Postal Service, public mass transit, grocery store employees
+Veterinarians and support staff
+Clergy and other essential support for houses of worship",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/health.md.2a,"Individuals who are currently receiving hospital-based treatment, including in hospital outpatient centers, AND diagnosed with at least one of the following conditions:
+Cancer patients who are currently in active treatment
+End stage renal disease patients requiring hemodialysis
+Chronic Obstructive Pulmonary Disease (COPD)
+Solid organ transplant recipients
+Sickle cell disease patients
+Diabetic patients (Type 1 and Type 2)
 
-Las personas que son diagnosticadas con estas condiciones médicas pero actualmente no están recibiendo tratamiento hospitalario, incluso en centros ambulatorios hospitalarios, serán elegibles para recibir la vacuna en la distribución de la vacuna COVID-19 de fase 2 de Maryland.",,,,,,,,,,
+Individuals who are diagnosed with these medical conditions but are not currently receiving hospital-based treatment, including in hospital outpatient centers, will be eligible to receive the vaccine in Maryland's Phase 2 COVID-19 vaccine distribution.",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/health.are_you_currently_hospitalized.md.2a,"Individuals who are currently receiving hospital-based treatment, including in hospital outpatient centers, AND diagnosed with at least one of the following conditions:
+Cancer patients who are currently in active treatment
+End stage renal disease patients requiring hemodialysis
+Chronic Obstructive Pulmonary Disease (COPD)
+Solid organ transplant recipients
+Sickle cell disease patients
+Diabetic patients (Type 1 and Type 2)
+
+Individuals who are diagnosed with these medical conditions but are not currently receiving hospital-based treatment, including in hospital outpatient centers, will be eligible to receive the vaccine in Maryland's Phase 2 COVID-19 vaccine distribution.",,,,,,,,,,,,,,

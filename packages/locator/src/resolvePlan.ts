@@ -103,10 +103,9 @@ function getMatchingRegion(
 ): Region | undefined {
 	return regions.filter((region: Region) => {
 		const regionMeta = REGION_TYPES[region.type]
-		return (
-			get(region, regionMeta?.policyTreeId) ===
-			get(location, regionMeta?.locationsId)
-		)
+		const treeNodeId =
+			get(region, regionMeta?.policyTreeId) ?? get(region, 'name')
+		return treeNodeId === get(location, regionMeta?.locationsId)
 	})[0]
 }
 
