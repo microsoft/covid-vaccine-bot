@@ -24,10 +24,13 @@ export interface ReviewProp {
 }
 
 const setInitialFormData = (initData: any | undefined) => {
-	if (!initData) return {}
+	if (!initData) return {
+		prTitle: '',
+		prDetails: ''
+	}
 	return {
-		prTitle: initData.title,
-		prDetails: initData.body
+		prTitle: initData.title ?? '',
+		prDetails: initData.body ?? ''
 	}
 }
 
