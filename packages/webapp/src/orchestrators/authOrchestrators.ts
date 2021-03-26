@@ -8,16 +8,35 @@ import { initializeGitData } from '../actions/repoActions'
 import { setUserAuthData, setUserNoAccess } from '../mutators/authMutators'
 import { loginUserService } from '../services/loginUserService'
 import { repoServices } from '../services/repoServices'
+import { getAppStore } from '../store/store'
 
 orchestrator(loginUser, async () => {
-	const resp = await loginUserService()
-	if (resp) {
-		setUserAuthData(resp)
-		const accessResp = await repoServices('checkAccess')
-		if (accessResp.ok) {
-			initializeGitData()
+	try {
+		let resp: any
+		const state = getAppStore()
+
+		if (state.accessToken) {
+			resp = {
+				accessToken: state.accessToken,
+				email: state.email,
+				isAuthenticated: state.isAuthenticated,
+				userDisplayName: state.userDisplayName,
+				username: state.username,
+			}
 		} else {
-			setUserNoAccess()
+			resp = await loginUserService()
 		}
+
+		if (resp) {
+			setUserAuthData(resp)
+			const accessResp = await repoServices('checkAccess')
+			if (accessResp.ok) {
+				initializeGitData()
+			} else {
+				setUserNoAccess()
+			}
+		}
+	} catch (error) {
+		console.warn('Error logging in', error)
 	}
 })
