@@ -7,13 +7,15 @@ import {
 	createPR,
 	getRepoFileData,
 	initializeGitData,
+	loadPR
 } from '../actions/repoActions'
 import {
 	setBranchList,
 	handleCreatePR,
 	setRepoFileData,
 	setIssuesList,
-	initStoreData
+	initStoreData,
+	setLoadedPRData
 } from '../mutators/repoMutators'
 import { repoServices } from '../services/repoServices'
 
@@ -32,6 +34,7 @@ orchestrator(createPR, async (message) => {
 
 		resp = await repoServices('getIssues')
 		setIssuesList(resp, fileData[2]())
+
 		handleCreatePR()
 	}
 })
@@ -52,7 +55,20 @@ orchestrator(initializeGitData, async () => {
 
 	resp = await repoServices('getIssues')
 	setIssuesList(resp)
+
 	handleCreatePR()
 
 	initStoreData(false)
+})
+
+orchestrator(loadPR, async (message) => {
+	const { prNumber } = message
+
+	if (prNumber) {
+		const prResp = await repoServices('getPullRequests', prNumber)
+		setLoadedPRData(prResp)
+
+		const resp = await repoServices('getRepoFileData', prResp.data.head.ref)
+		setRepoFileData(resp)
+	}
 })

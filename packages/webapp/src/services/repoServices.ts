@@ -78,7 +78,7 @@ export const repoServices = async (
 			return await loadBranchesResponse.json()
 		case 'getPullRequests':
 			const loadPRResponse = await fetch(
-				`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/pulls`,
+				`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/pulls/${extraData}`,
 				{
 					method: 'GET',
 					headers: {
@@ -87,7 +87,35 @@ export const repoServices = async (
 				}
 			)
 
-			return await loadPRResponse.json()
+			const commentResp = await fetch(
+				`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/issues/${extraData}/comments`,
+				{
+					method: 'GET',
+					headers: {
+						Authorization: `token ${state.accessToken}`,
+					},
+				}
+			)
+
+			const commentsObj = await commentResp.json()
+			let changes: any[] = []
+			if (commentsObj && commentsObj.length > 0) {
+				commentsObj.forEach((comment: { body: string }) => {
+					changes.push(JSON.parse(comment.body.substr(1, comment.body.length - 2)))
+				})
+			}
+
+			const commitResp = await fetch(
+				`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/pulls/${extraData}/commits`,
+				{
+					method: 'GET',
+					headers: {
+						Authorization: `token ${state.accessToken}`,
+					},
+				}
+			)
+
+			return {data: await loadPRResponse.json(), changes, commits: await commitResp.json()}
 		case 'getIssues':
 			const loadIssuesResponse = await fetch(
 				`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/issues`,
@@ -126,9 +154,13 @@ export const repoServices = async (
 
 			return [await loadIssuesResponse.json(), prChangeList]
 
+
 		case 'getRepoFileData':
-			const dataFolderResp = await fetch(
-				`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/contents/packages/plans/data`,
+			const query = !extraData
+				? `https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/contents/packages/plans/data`
+				: `https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/contents/packages/plans/data?ref=${extraData}`
+
+			const dataFolderResp = await fetch(query,
 				{
 					method: 'GET',
 					headers: {
@@ -272,28 +304,35 @@ export const repoServices = async (
 		case 'createPR':
 			if (state?.mainBranch) {
 				const mainBranch = state?.mainBranch
-				const branchName = `refs/heads/${state.username}-policy-${Date.now()}`
+				let branchName = `refs/heads/${state.username}-policy-${Date.now()}`
 				const globalUpdates = extraData[0]
 				const locationUpdates = extraData[1]
 				const prFormData = extraData[3]
 				const changeSummary = extraData[4]
 
-				const createBranchResponse = await fetch(
-					`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/git/refs`,
-					{
-						method: 'POST',
-						headers: {
-							Authorization: `token ${state.accessToken}`,
-						},
-						body: JSON.stringify({
-							ref: branchName,
-							sha: mainBranch.commit.sha,
-						}),
-					}
-				)
+				let workingBranch = state.loadedPRData
 
-				const newBranch = await createBranchResponse.json()
-				if (newBranch) {
+				if (!state.loadedPRData) {
+					const createBranchResponse = await fetch(
+						`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/git/refs`,
+						{
+							method: 'POST',
+							headers: {
+								Authorization: `token ${state.accessToken}`,
+							},
+							body: JSON.stringify({
+								ref: branchName,
+								sha: mainBranch.commit.sha,
+							}),
+						}
+					)
+
+					workingBranch = await createBranchResponse.json()
+				} else {
+					branchName = `refs/heads/${state.loadedPRData.head.ref}`
+				}
+
+				if (workingBranch) {
 					if (globalUpdates) {
 						for (const i in globalUpdates) {
 							const updateObj = globalUpdates[i]
@@ -430,58 +469,87 @@ export const repoServices = async (
 					}
 				}
 
-				const prTitle = !prFormData.prTitle
-					? 'auto PR creation'
-					: prFormData.prTitle
 
-				const prResp = await fetch(
-					`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/pulls`,
-					{
-						method: 'POST',
-						headers: {
-							Authorization: `token ${state.accessToken}`,
-						},
-						body: JSON.stringify({
-							head: branchName,
-							base: 'main',
-							title: prTitle,
-							body: prFormData.prDetails,
-						}),
-					}
-				)
+				let prTitle = ''
+				if (!state.loadedPRData) {
+					prTitle = !prFormData.prTitle ? 'auto PR creation' : prFormData.prTitle
+					const prResp = await fetch(
+						`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/pulls`,
+						{
+							method: 'POST',
+							headers: {
+								Authorization: `token ${state.accessToken}`,
+							},
+							body: JSON.stringify({
+								head: branchName,
+								base: 'main',
+								title: prTitle,
+								body: prFormData.prDetails
+							}),
+						}
+					)
 
-				const prRespClone = await prResp.clone().json()
+					const prRespClone = await prResp.clone().json()
 
-				await fetch(
-					`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/issues/${prRespClone.number}/labels`,
-					{
-						method: 'POST',
-						headers: {
-							Authorization: `token ${state.accessToken}`,
-						},
-						body: JSON.stringify({
-							labels: [
-								'data-composer-submission',
-								'requires-data-accuracy-review',
-							],
-						}),
-					}
-				)
+					await fetch(
+						`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/issues/${prRespClone.number}/labels`,
+						{
+							method: 'POST',
+							headers: {
+								Authorization: `token ${state.accessToken}`,
+							},
+							body: JSON.stringify({
+								labels: ['data-composer-submission', 'requires-data-accuracy-review']
+							}),
+						}
+					)
 
-				await fetch(
-					`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/issues/${prRespClone.number}/comments`,
-					{
-						method: 'POST',
-						headers: {
-							Authorization: `token ${state.accessToken}`,
-						},
-						body: JSON.stringify({
-							body: `\`${JSON.stringify(changeSummary)}\``,
-						}),
-					}
-				)
+					await fetch(
+						`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/issues/${prRespClone.number}/comments`,
+						{
+							method: 'POST',
+							headers: {
+								Authorization: `token ${state.accessToken}`,
+							},
+							body: JSON.stringify({
+								body: `\`${JSON.stringify(changeSummary)}\``
+							}),
+						}
+					)
 
-				return prResp.json()
+					return prResp.json()
+				} else {
+					prTitle = !prFormData.prTitle ? state.loadedPRData.title : prFormData.prTitle
+					const prDetails = !prFormData.prDetails ? state.loadedPRData.body : prFormData.prDetails
+					await fetch(
+						`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/pulls/${state.loadedPRData.number}`,
+						{
+							method: 'PATCH',
+							headers: {
+								Authorization: `token ${state.accessToken}`,
+							},
+							body: JSON.stringify({
+								title: prTitle,
+								body: prDetails
+							}),
+						}
+					)
+
+					await fetch(
+						`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/issues/${state.loadedPRData.number}/comments`,
+						{
+							method: 'POST',
+							headers: {
+								Authorization: `token ${state.accessToken}`,
+							},
+							body: JSON.stringify({
+								body: `\`${JSON.stringify(changeSummary)}\``
+							}),
+						}
+					)
+
+					return state.loadedPRData
+				}
 			}
 			break
 	}

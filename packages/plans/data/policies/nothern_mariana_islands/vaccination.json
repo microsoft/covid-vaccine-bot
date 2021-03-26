@@ -10,10 +10,11 @@
 		},
 		"scheduling_phone": {
 			"url": "tel:670-682-7468",
-			"text": "c19.link/scheduling.phone.mp"
+			"text": "c19.link/scheduling.phone.mp",
+			"description": "c19.link/scheduling.phone.description.mp"
 		}
 	},
-	"activePhase": "1a",
+	"activePhase": "18_and_older",
 	"phases": [
 		{
 			"id": "1a",
@@ -36,6 +37,24 @@
 				},
 				{
 					"question": "c19.eligibility.question/essential_worker.are_you_an"
+				}
+			]
+		},
+		{
+			"id": "16_and_older",
+			"label": "16 and older",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.16_up"
+				}
+			]
+		},
+		{
+			"id": "18_and_older",
+			"label": "18 and older",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.are_you_age_18"
 				}
 			]
 		}

@@ -11,3 +11,7 @@ export const createPR = action('createPR', (fileData: any) => ({
 export const getRepoFileData = action('getRepoFileData')
 
 export const initializeGitData = action('initializeGitData')
+
+export const loadPR = action('loadPR', (prNumber: any) => ({
+	prNumber,
+}))

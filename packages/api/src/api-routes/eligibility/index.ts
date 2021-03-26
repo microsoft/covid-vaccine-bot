@@ -2,12 +2,12 @@
  * Copyright (c) Microsoft. All rights reserved.
  * Licensed under the MIT license. See LICENSE file in the project.
  */
-import regions from '@covid-vax-bot/plans/dist/policies.json'
 import { Request, Response } from 'express'
 import { Operation } from 'express-openapi'
 import { locator, localizer } from '../../components'
 import { resolvePlan } from '@covid-vax-bot/plan-locator'
 import { Link } from '@covid-vax-bot/plan-schema'
+import regions from '@covid-vax-bot/plans/dist/policies.json'
 
 export const GET: Operation = [
 	async (req: Request, res: Response) => {

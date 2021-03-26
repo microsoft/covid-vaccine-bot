@@ -2,9 +2,13 @@
  * Copyright (c) Microsoft. All rights reserved.
  * Licensed under the MIT license. See LICENSE file in the project.
  */
-import { FontIcon } from '@fluentui/react'
+import { 
+	FontIcon,
+	Modal,
+ } from '@fluentui/react'
+import { useBoolean } from '@uifabric/react-hooks'
 import { observer } from 'mobx-react-lite'
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useRef, useCallback } from 'react'
 import {
 	modifyStateStrings,
 	modifyMoreInfoLinks,
@@ -13,9 +17,12 @@ import {
 	addQualifier,
 	removeQualifier,
 	removePhase,
+	duplicatePhase,
 } from '../mutators/repoMutators'
 import { getAppStore } from '../store/store'
 import PhaseQualifierForm from './PhaseQualifierForm'
+import PhaseForm from './PhaseForm'
+import { formatId } from '../utils/textUtils'
 
 import './Locations.scss'
 
@@ -33,12 +40,45 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 		isEditable,
 	} = getAppStore()
 	const { isRegion, value, selectedState } = props
-
 	const [phaseList, setPhaseList] = useState<any[]>([])
 	const groupToggleState = useRef<any[]>([])
+	const selectedModalFormItem = useRef<any>(null)
 
-	useEffect(() => {
+	const [
+		isDuplaceModalOpen,
+		{ setTrue: openDuplicateModal, setFalse: dismissDuplicateModal },
+	] = useBoolean(false)
+	
+	const onDuplicateSubmit = ({name}: {name: string}) => {
+		const nextPhaseId = formatId(name);
+		const phases = repoFileData[selectedState.key].vaccination.content.phases;
+		const nameExists = !!phases.find((item: {id: string}) => item.id === nextPhaseId);
+		 
+		if(nameExists) {
+			return
+		}
+
+		duplicatePhase({
+			locationKey: selectedState.key,
+			phaseId: selectedModalFormItem.current.key,
+			name,
+			isRegion,
+			regionInfo: value
+		})
+	}
+
+	const onDuplicatePhaseClick = useCallback(
+		(item?: any) => {
+			selectedModalFormItem.current = item ?? null
+			openDuplicateModal()
+		},
+		[openDuplicateModal]
+	)
+
+	useEffect(() => {		
 		if (repoFileData) {
+			dismissDuplicateModal()
+
 			const tempPhaseList: any[] = []
 			const currentStateObj: any = repoFileData[selectedState.key]
 			let phaseObj = currentStateObj.vaccination.content.phases
@@ -67,10 +107,11 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 
 				const tempPhaseObj: any = {
 					key: phase.id,
-					name: phase.label,
+					name: phase.label || phase.id,
 					count: phase.qualifications.length,
 					isCollapsed: isCollapsed,
 					data: {
+						name: phase.label || phase.id,
 						keyId: phase.id,
 						isActive: isActivePhase,
 					},
@@ -114,7 +155,7 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 
 			setPhaseList(tempPhaseList)
 		}
-	}, [repoFileData, globalFileData, selectedState, currentLanguage, isRegion, value])
+	}, [repoFileData, globalFileData, selectedState, currentLanguage, isRegion, value, dismissDuplicateModal])
 
 	const onAddQualifierClick = (phaseId: any) => {
 		const newItem = {
@@ -270,6 +311,16 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 											<>
 												<div
 													className="addQualifierGroup"
+													onClick={() => onDuplicatePhaseClick(group)}
+												>
+													<FontIcon
+														iconName="DuplicateRow"
+														style={{ color: '#0078d4' }}
+													/>
+													Duplicate
+												</div>
+												<div
+													className="addQualifierGroup"
 													onClick={() => onAddQualifierClick(group.data.keyId)}
 												>
 													<FontIcon
@@ -360,6 +411,21 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 										</>
 									)}
 								</div>
+								<Modal
+									isOpen={isDuplaceModalOpen}
+									isModeless={false}
+									isDarkOverlay={true}
+									isBlocking={false}
+								>
+									<PhaseForm
+										selectedState={selectedState}
+										duplicate={true}
+										isRegion={isRegion}
+										regionInfo={value}
+										onCancel={dismissDuplicateModal}
+										onSubmit={onDuplicateSubmit}
+									/>
+								</Modal>
 							</div>
 						)
 				  })

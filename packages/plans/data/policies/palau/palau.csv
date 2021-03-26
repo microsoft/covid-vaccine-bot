@@ -1,3 +1,4 @@
 String ID,en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th
-c19.link/scheduling.phone.pw,"680-488-0555",,,,,,,,,,,,,,
-c19.link/scheduling.phone.description.pw,"Covid-19 Hotline",,,,,,,,,,,,,,
+c19.link/scheduling.phone.pw,"680-488-0555",,,,"680-488-0555",,,,,,,,,,
+c19.link/scheduling.phone.description.pw,"Covid-19 Hotline",,,,"Línea directa covid-19",,,,,,,,,,
+c19.eligibility.moreinfo/healthcare_worker.pw.1b,"This includes homebound patient caregivers",,,,,,,,,,,,,,

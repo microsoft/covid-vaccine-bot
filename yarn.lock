@@ -1994,6 +1994,7 @@ __metadata:
     "@types/config": ^0.0.38
     "@types/jsonwebtoken": ^8.5.1
     "@types/node": ^14.14.35
+    "@types/uuid": ^8
     ajv: ^7.1.1
     axios: ^0.21.1
     chalk: ^4.1.0
@@ -2008,6 +2009,7 @@ __metadata:
     ts-node: ^9.1.1
     typescript: ^4.2.3
     typescript-json-schema: ^0.50.0
+    uuid: ^8.3.2
   languageName: unknown
   linkType: soft
 
@@ -5351,6 +5353,13 @@ __metadata:
   version: 2.0.3
   resolution: "@types/unist@npm:2.0.3"
   checksum: 42e0dc4ac75a27c4bb91a3f8e82edfd8819cacb6edda08bdfb436700ea01a587faa30017fde744b0a0b33825f5e37686398c1eb5b664cabc3a72a6b3757f85a5
+  languageName: node
+  linkType: hard
+
+"@types/uuid@npm:^8":
+  version: 8.3.0
+  resolution: "@types/uuid@npm:8.3.0"
+  checksum: 620985aed8fdb4aed153daca5235f4303457a67a4d181efac0021712eabd9edd7e88895f79730c0e651effde7633b1b61e49a81519ac8d4e75019d2ac9b6412f
   languageName: node
   linkType: hard
 
@@ -24174,7 +24183,7 @@ resolve@1.18.1:
   languageName: node
   linkType: hard
 
-"uuid@npm:^8.0.0, uuid@npm:^8.3.0":
+"uuid@npm:^8.0.0, uuid@npm:^8.3.0, uuid@npm:^8.3.2":
   version: 8.3.2
   resolution: "uuid@npm:8.3.2"
   bin:

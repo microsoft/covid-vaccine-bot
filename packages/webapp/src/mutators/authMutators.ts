@@ -5,6 +5,7 @@
 import { mutatorAction } from 'satcheljs'
 import { AppState } from '../store/schema/AppState'
 import { getAppStore } from '../store/store'
+import { clearState } from '../store/localStorage'
 
 export const setUserAuthData = mutatorAction(
 	'setUserAuthData',
@@ -23,4 +24,10 @@ export const setUserAuthData = mutatorAction(
 export const setUserNoAccess = mutatorAction('setUserNoAccess', () => {
 	const store = getAppStore()
 	store.isAuthorized = false
+})
+
+export const logoutUser = mutatorAction('logoutUser', () => {
+	clearState()
+
+	window.location.reload()
 })
