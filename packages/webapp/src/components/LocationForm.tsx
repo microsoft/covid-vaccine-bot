@@ -8,6 +8,7 @@ import {
 	TextField,
 	Dropdown,
 	IDropdownOption,
+	Checkbox
 } from '@fluentui/react'
 import { observer } from 'mobx-react-lite'
 import { useCallback, useRef, useState } from 'react'
@@ -59,6 +60,7 @@ const setInitialData = (item?: any, isRegion?: boolean) => {
 			schedulingPhoneDesc: scheduling_phone?.description
 				? getStrings(item, scheduling_phone.description, isRegion)
 				: '',
+			noPhaseLabel: vaccination.content?.noPhaseLabel || false
 		}
 	} else {
 		return {
@@ -72,6 +74,7 @@ const setInitialData = (item?: any, isRegion?: boolean) => {
 			eligibilityPlan: '',
 			schedulingPhone: '',
 			schedulingPhoneDesc: '',
+			noPhaseLabel: false
 		}
 	}
 }
@@ -134,6 +137,19 @@ export default observer(function LocationForm(props: LocationFormProp) {
 		},
 		[formData, fieldChanges]
 	)
+
+	const onNoLabelChange = useCallback(
+		(_ev: any, checked?: boolean) => {
+			fieldChanges.current = {
+				...fieldChanges.current,
+				...{
+					noPhaseLabel: checked,
+				},
+			}
+
+			setFormData({ ...formData, ...fieldChanges.current })
+		},
+	[formData, fieldChanges])
 
 	const canSubmit = useCallback(() => {
 		return formData.details !== '' && formData.regionType !== ''
@@ -206,6 +222,11 @@ export default observer(function LocationForm(props: LocationFormProp) {
 					name="schedulingPhoneDesc"
 					value={formData.schedulingPhoneDesc}
 					onChange={handleTextChange}
+				/>
+				<Checkbox
+					label="No phase label"
+					checked={formData.noPhaseLabel}
+					onChange={onNoLabelChange}
 				/>
 			</div>
 			<div className="modalFooter">

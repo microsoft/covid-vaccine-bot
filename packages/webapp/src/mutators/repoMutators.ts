@@ -105,6 +105,15 @@ export const updateLocationList = mutatorAction(
 
 				newLocObj.strings.path = `${newLocObj.info.content.id}/${newLocObj.info.content.id}.csv`
 
+				if ('noPhaseLabel' in newLocObj.vaccination.content) {
+					newLocObj.vaccination.content.noPhaseLabel = locationData.noPhaseLabel
+				} else {
+					newLocObj.vaccination.content = {
+						...newLocObj.vaccination.content,
+						noPhaseLabel: locationData.noPhaseLabel
+					}
+				}
+
 				const stringsContentObj: any = {}
 				if (locationData.schedulingPhone !== '') {
 					const schedulingPhoneKey: string = `c19.link/scheduling.phone.${newLocObj.info.content.id}`.toLowerCase()
@@ -135,6 +144,15 @@ export const updateLocationList = mutatorAction(
 				const location = store.repoFileData[selectedState.key]
 				newLocObj.info.path = `${selectedState.key}/regions/${newLocObj.info.path}`
 				newLocObj.vaccination.path = `${selectedState.key}/regions/${newLocObj.vaccination.path}`
+
+				if ('noPhaseLabel' in newLocObj.vaccination.content) {
+					newLocObj.vaccination.content.noPhaseLabel = locationData.noPhaseLabel
+				} else {
+					newLocObj.vaccination.content = {
+						...newLocObj.vaccination.content,
+						noPhaseLabel: locationData.noPhaseLabel
+					}
+				}
 
 				if (locationData.info !== '') {
 					newLocObj.vaccination.content.links.info.text = `cdc/${location.info.content.id}/state_link` //`c19.link/info.${newLocObj.info.content.id}`.toLowerCase()
@@ -200,6 +218,15 @@ export const updateLocationData = mutatorAction(
 
 				location.info.content.name = locationData.details
 				const schedulingPhoneKey = `c19.link/scheduling.phone.${prevItem.value.info.content.metadata.code_alpha}`.toLowerCase()
+
+				if ('noPhaseLabel' in location.vaccination.content) {
+					location.vaccination.content.noPhaseLabel = locationData.noPhaseLabel
+				} else {
+					location.vaccination.content = {
+						...location.vaccination.content,
+						noPhaseLabel: locationData.noPhaseLabel
+					}
+				}
 
 				if (locationData?.eligibility !== '') {
 					if (location.vaccination.content.links.eligibility) {
@@ -359,6 +386,15 @@ export const updateLocationData = mutatorAction(
 				const location = store.repoFileData[selectedState.key]
 				const regionObj = location.regions[prevItem.key]
 				regionObj.info.content.name = locationData.details
+
+				if ('noPhaseLabel' in regionObj.vaccination.content) {
+					regionObj.vaccination.content.noPhaseLabel = locationData.noPhaseLabel
+				} else {
+					regionObj.vaccination.content = {
+						...regionObj.vaccination.content,
+						noPhaseLabel: locationData.noPhaseLabel
+					}
+				}
 
 				const schedulingPhoneKey = `c19.link/scheduling.phone.${location.info.content.metadata.code_alpha}.${regionObj.info.content.id}`.toLowerCase()
 				if (locationData?.schedulingPhone !== '') {
