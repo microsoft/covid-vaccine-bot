@@ -47,7 +47,8 @@
 				},
 				{
 					"question": "c19.eligibility.question/people_of_color.is",
-					"moreInfoUrl": "https://covid.ri.gov/vaccination/rhode-islands-hard-hit-community-vaccination-strategy"
+					"moreInfoUrl": "https://covid.ri.gov/vaccination/rhode-islands-hard-hit-community-vaccination-strategy",
+					"moreInfoText": "c19.eligibility.moreinfo/people_of_color.is.ri.1a"
 				}
 			]
 		},
