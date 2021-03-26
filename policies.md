@@ -736,7 +736,7 @@ People with other chronic conditions also qualify for vaccine in Phase 1c, but n
 - Manufacturing, public transit, and U.S. Postal Service workers
 - Flight crews
 - Subset of essential gas, electric, water, and telecommunications utility workers, who work indoors (see [here](https://healthandwelfare.idaho.gov/covid-19-vaccination))
-* Are you age 55+?
+* Are you age 45+?
 * Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?
 
 ## Idaho Regions
