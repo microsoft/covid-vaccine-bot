@@ -143,6 +143,17 @@ export default observer(function App() {
 																review tab to submit these changes.
 															</MessageBar>
 														)}
+														{state.loadedPRData && (
+															<MessageBar
+																messageBarType={5}
+																isMultiline={true}
+																styles={{ root: { margin: '10px 5px' } }}
+															>
+																You are currently working on: <strong>PR: {state.loadedPRData.number} - {state.loadedPRData.title}</strong><br/>
+																Last updated by: {state.prChanges.last_commit.commit.committer.name}<br/>
+																Last updated on: {new Date(state.loadedPRData.updated_at).toLocaleString()}
+															</MessageBar>
+														)}
 														<Dashboard />
 													</PivotItem>
 													<PivotItem headerText="Locations" itemKey="Locations">
@@ -152,6 +163,17 @@ export default observer(function App() {
 															>
 																You have pending changes, please click on the
 																review tab to submit these changes.
+															</MessageBar>
+														)}
+														{state.loadedPRData && (
+															<MessageBar
+																messageBarType={5}
+																isMultiline={true}
+																styles={{ root: { margin: '10px 5px' } }}
+															>
+																You are currently working on: <strong>PR: {state.loadedPRData.number} - {state.loadedPRData.title}</strong><br/>
+																Last updated by: {state.prChanges.last_commit.commit.committer.name}<br/>
+																Last updated on: {new Date(state.loadedPRData.updated_at).toLocaleString()}
 															</MessageBar>
 														)}
 														<Locations />
@@ -167,6 +189,17 @@ export default observer(function App() {
 																>
 																	You have pending changes, please click on the
 																	review tab to submit these changes.
+																</MessageBar>
+															)}
+															{state.loadedPRData && (
+																<MessageBar
+																	messageBarType={5}
+																	isMultiline={true}
+																	styles={{ root: { margin: '10px 5px' } }}
+																>
+																	You are currently working on: <strong>PR: {state.loadedPRData.number} - {state.loadedPRData.title}</strong><br/>
+																	Last updated by: {state.prChanges.last_commit.commit.committer.name}<br/>
+																	Last updated on: {new Date(state.loadedPRData.updated_at).toLocaleString()}
 																</MessageBar>
 															)}
 															<Translate />

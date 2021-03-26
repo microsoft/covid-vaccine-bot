@@ -32,7 +32,6 @@ export const setIssuesList = mutatorAction(
 		if (data) {
 			const store = getAppStore()
 			store.issues = data[0]
-			store.prChanges= data[1]
 			if (callback) {
 				callback()
 			}
@@ -40,9 +39,19 @@ export const setIssuesList = mutatorAction(
 	}
 )
 
+export const setLoadedPRData = mutatorAction('setLoadedPRData', (prData: any | undefined) =>{
+	const store = getAppStore()
+	if (prData) {
+		store.loadedPRData = prData.data
+		store.prChanges = { changes: prData.changes, last_commit: prData.commits.pop() }
+	}
+})
+
 export const handleCreatePR = mutatorAction('handleCreatePR', () => {
 	const store = getAppStore()
 	store.pendingChanges = false
+	store.prChanges = undefined
+	store.loadedPRData = undefined
 })
 
 export const setRepoFileData = mutatorAction(
