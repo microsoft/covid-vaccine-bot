@@ -52,6 +52,10 @@
 				{
 					"question": "c19.eligibility.question/healthcare_worker",
 					"moreInfoText": "c19.eligibility.moreinfo/healthcare_worker.wi.1a"
+				},
+				{
+					"question": "c19.eligibility.question/long_term_care_resident.are_you",
+					"moreInfoText": "c19.eligibility.moreinfo/long_term_care_resident.are_you.wi.1a"
 				}
 			]
 		}

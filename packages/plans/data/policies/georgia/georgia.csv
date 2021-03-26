@@ -1,6 +1,6 @@
 String ID,en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th
-c19.eligibility.question/essential_worker.1a.ga.caregiver_of_65_up,Are you a caregiver of a person aged 65+?,,,,¿Es usted un cuidador de una persona de más de 65 años?,,,,,,,,,,
-c19.link/scheduling.phone.ga,(888) 457-0186,,,,(888) 457-0186,,,,,,,,,,
+c19.eligibility.question/essential_worker.1a.ga.caregiver_of_65_up,"Are you a caregiver of a person aged 65+?",,,,"¿Es usted un cuidador de una persona de más de 65 años?",,,,,,,,,,
+c19.link/scheduling.phone.ga,"(888) 457-0186",,,,"(888) 457-0186",,,,,,,,,,
 c19.eligibility.moreinfo/healthcare_worker.ga.1a,"This includes physicians, nurses, laboratory technicians, EMS personnel, environmental services, etc.",,,,"Esto incluye médicos, enfermeras, técnicos de laboratorio, personal del SME, servicios ambientales, etc.",,,,,,,,,,
 c19.eligibility.moreinfo/essential_worker.are.ga.1a,"This includes sworn law enforcement, firefighters, and first responders",,,,"Esto incluye a las fuerzas del orden juradas, los bomberos y los socorristas",,,,,,,,,,
 c19.eligibility.moreinfo/healthcare_worker.ga.1b,"This includes physicians, nurses, laboratory technicians, EMS personnel, environmental services, etc.",,,,"Esto incluye médicos, enfermeras, técnicos de laboratorio, personal del SME, servicios ambientales, etc.",,,,,,,,,,
@@ -85,4 +85,4 @@ Las discapacidades también incluyen discapacidades causadas por una lesión (po
 
 Los cuidadores brindan atención a las personas que necesitan algún grado de asistencia continua con las tareas cotidianas de forma regular o diaria. Los beneficiarios de la atención pueden vivir en entornos residenciales o institucionales, ir desde niños hasta adultos mayores, y tener enfermedades crónicas o condiciones incapacitantes.",,,,,,,,,,
 c19.eligibility.moreinfo/essential_worker.ga.1b,"Essential workers that are prioritized include judges and court staff, healthcare workers, first responders, educators and staff, childcare workers, and staff in long-term care facilities. ",,,,"Los trabajadores esenciales que se priorizan incluyen jueces y personal de la corte, trabajadores de la salud, socorristas, educadores y personal, trabajadores de cuidado infantil y personal en centros de cuidado a largo plazo. ",,,,,,,,,,
-c19.link/scheduling.phone.description.ga,Monday - Friday 8 AM - 8 PM ET;  Saturday - Sunday 8 AM - 5 PM ET,,,,Lunes - Viernes 8 AM - 8 PM ET;  Sábado - Domingo 8 AM - 5 PM ET,,,,,,,,,,
+c19.link/scheduling.phone.description.ga,"Monday - Friday 8 AM - 8 PM ET;  Saturday - Sunday 8 AM - 5 PM ET",,,,"Lunes - Viernes 8 AM - 8 PM ET;  Sábado - Domingo 8 AM - 5 PM ET",,,,,,,,,,
