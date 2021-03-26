@@ -3360,7 +3360,8 @@ Weakened immune system
 - People who have a disease that weakens the immune system
 - People who take medicine that weakens the immune system
 - Pregnancy (see [here](https://health.ri.gov/publications/guidelines/COVID19-underlying-conditions.pdf))
-* Is your zip code covered by the Hard-Hit Community Vaccination Strategy? (see [here](https://covid.ri.gov/vaccination/rhode-islands-hard-hit-community-vaccination-strategy))
+* Are you 16+ and is your zip code covered by the Hard-Hit Community Vaccination Strategy?
+	* The Hard-Hit Community Vaccination Strategy currently applies to the following ZIP codes in Central Falls, Pawtucket, and Providence: 02863, 02860, 02861, 02904, 02905, 02907, 02908, and 02909. (see [here](https://covid.ri.gov/vaccination/rhode-islands-hard-hit-community-vaccination-strategy))
 
 ## Rhode Island Regions
 
