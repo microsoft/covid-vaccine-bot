@@ -2,21 +2,32 @@
  * Copyright (c) Microsoft. All rights reserved.
  * Licensed under the MIT license. See LICENSE file in the project.
  */
-import { Dropdown, TextField, FontIcon } from '@fluentui/react'
+import {
+	Dropdown,
+	TextField,
+	FontIcon,
+	DefaultButton,
+	MessageBar,
+	MessageBarType,
+	ProgressIndicator,
+} from '@fluentui/react'
+import parse from 'csv-parse/lib/sync'
 import { observer } from 'mobx-react-lite'
-import { useState, useCallback, useEffect, useRef } from 'react'
+import { useState, useCallback, useEffect, useRef, createRef } from 'react'
 import {
 	translateLocationName,
 	translateQualifier,
 	translateMisc,
+	updateStrings,
 } from '../mutators/repoMutators'
 import { getAppStore } from '../store/store'
+import { convertCSVDataToObj } from '../utils/dataUtils'
 import {
 	getLanguageOptions,
 	toProperCase,
 	getLanguageDisplayText,
+	createCSVDataString,
 } from '../utils/textUtils'
-
 import './Translate.scss'
 
 const filterDropdownStyles = {
@@ -66,6 +77,7 @@ export default observer(function Translate() {
 			text: 'Uncategorized',
 		},
 	]
+	const [showLoading, setShowLoading] = useState<boolean>(false)
 
 	const locationChanges = useRef<any>({})
 	const qualifierChanges = useRef<any>({})
@@ -78,6 +90,11 @@ export default observer(function Translate() {
 
 	const mainLanguage = useRef<string>(currentLanguage)
 	const toLanguage = useRef<string>(languageOptions[0].key)
+
+	const fileUploadRef = createRef<HTMLInputElement>()
+	const [errorMessage, setErrorMessage] = useState<
+		{ message: string } | undefined
+	>()
 
 	const [locationList, setLocationList] = useState<any[]>([])
 	const [qualifierList, setQualifierList] = useState<any[]>([])
@@ -496,6 +513,70 @@ export default observer(function Translate() {
 		[setMiscList, miscFullList]
 	)
 
+	const onReaderLoadData = (readerEvent: any) => {
+		try {
+			const content = readerEvent.target.result
+			const contentObj = convertCSVDataToObj(parse(content, { columns: true }))
+			if (Object.keys(contentObj).length > 0) {
+				updateStrings(contentObj)
+				setShowLoading(false)
+			} else {
+				throw new Error('Invalid File Content.')
+			}
+		} catch (err) {
+			setErrorMessage(err)
+			setShowLoading(false)
+		}
+	}
+
+	const onFileUpload = (e: any) => {
+		setErrorMessage(undefined)
+		if (e.target.files.length > 0) {
+			setShowLoading(true)
+			const file = e.target.files[0]
+			if (file.type === 'text/csv') {
+				const reader = new FileReader()
+				reader.onload = onReaderLoadData
+				reader.readAsText(file, 'UTF-8')
+			} else {
+				setErrorMessage(new Error('Invalid File Type.'))
+				setShowLoading(false)
+			}
+		}
+	}
+
+	const triggerFileOnClick = () => {
+		fileUploadRef.current?.click()
+	}
+
+	const searchForStrings = (elem: any, resultObj: any) => {
+		if (elem.strings && elem.strings.content) {
+			Object.assign(resultObj, elem.strings.content)
+		}
+		if (elem.regions && elem.regions.length > 0) {
+			elem.regions.forEach((region: any) => {
+				searchForStrings(region, resultObj)
+			})
+		}
+	}
+
+	const onFileDownload = () => {
+		const stringsObj = {}
+		Object.assign(
+			stringsObj,
+			globalFileData.customStrings.content,
+			globalFileData.cdcStateNames.content,
+			globalFileData.cdcStateLinks.content
+		)
+		Object.keys(repoFileData).forEach((location: string) => {
+			searchForStrings(repoFileData[location], stringsObj)
+		})
+		const stringData = createCSVDataString(stringsObj)
+		const csvData = new Blob([stringData], { type: 'text/csv' })
+		const csvUrl = URL.createObjectURL(csvData)
+		window.open(csvUrl)
+	}
+
 	return (
 		<div className="translatePageContainer">
 			<div className="bodyContainer">
@@ -506,158 +587,115 @@ export default observer(function Translate() {
 					</div>
 				</div>
 				<div className="bodyContent">
-					<div className="filterGroup">
-						<Dropdown
-							selectedKey={toLanguage.current}
-							placeholder="Available languages"
-							options={languageOptions}
-							styles={filterDropdownStyles}
-							onChange={onLanguageChange}
-						/>
-						<Dropdown
-							selectedKey={translationFilterState}
-							placeholder="Needs Translation"
-							options={translationFilter}
-							styles={filterDropdownStyles}
-							onChange={onTranslationFilterChange}
-						/>
-					</div>
-					<section>
-						<div
-							className="listTitle"
-							onClick={() => onCollapseSection('locations')}
+					{errorMessage && (
+						<MessageBar
+							messageBarType={MessageBarType.error}
+							dismissButtonAriaLabel="Close"
 						>
-							<FontIcon
-								iconName={
-									isSectionCollapse.locations ? 'ChevronRight' : 'ChevronDown'
-								}
-								className="groupToggleIcon"
-							/>
-							<div>Locations</div>
-						</div>
-						{!isSectionCollapse.locations &&
-							(locationList.length > 0 ? (
-								locationList.map((val: any, idx: number) => {
-									return (
-										<div
-											key={`locationRow-${idx}`}
-											className={`translateListRow${
-												idx % 2 > 0 ? '' : ' altRow'
-											}`}
-										>
-											<div className="fromCol">{val.from}</div>
-											<TextField
-												name={val.to}
-												value={val.to}
-												className="toCol"
-												onChange={(ev) => handleLocationTextChange(ev, val)}
-												onBlur={() => updateLocationTranslation(val)}
-											/>
-										</div>
-									)
-								})
-							) : (
-								<div className="emptyTranslateListRow">
-									No missing location translations found for:{' '}
-									{getLanguageDisplayText(
-										toLanguage.current,
-										toLanguage.current
-									)}
-									.
-								</div>
-							))}
-					</section>
-					<section>
-						<div
-							className="listTitle"
-							onClick={() => onCollapseSection('qualifiers')}
-						>
-							<FontIcon
-								iconName={
-									isSectionCollapse.qualifiers ? 'ChevronRight' : 'ChevronDown'
-								}
-								className="groupToggleIcon"
-							/>
-							<div>Qualifiers</div>
-						</div>
-						{!isSectionCollapse.qualifiers &&
-							(qualifierList.length > 0 ? (
-								qualifierList.map((val: any, idx: number) => {
-									return (
-										<div
-											key={`qualifierRow-${idx}`}
-											className={`translateListRow${
-												idx % 2 > 0 ? '' : ' altRow'
-											} qualifier`}
-										>
-											<div className="fromCol">{val.from}</div>
-											<TextField
-												name={val.to}
-												value={val.to}
-												className="toCol"
-												autoAdjustHeight={true}
-												resizable={false}
-												multiline={true}
-												rows={Math.ceil(val.from.length / 100)}
-												onChange={(ev) => handleQualifierTextChange(ev, val)}
-												onBlur={() => updateQualifierTranslation(val)}
-											/>
-										</div>
-									)
-								})
-							) : (
-								<div className="emptyTranslateListRow">
-									No missing qualifier translations found for:{' '}
-									{getLanguageDisplayText(
-										toLanguage.current,
-										toLanguage.current
-									)}
-									.
-								</div>
-							))}
-					</section>
-					<section>
-						<div
-							className="listTitle"
-							onClick={() => onCollapseSection('misc')}
-						>
-							<FontIcon
-								iconName={
-									isSectionCollapse.misc ? 'ChevronRight' : 'ChevronDown'
-								}
-								className="groupToggleIcon"
-							/>
-							<div>Miscellaneous</div>
-						</div>
-						{!isSectionCollapse.misc &&
-							(miscList.length > 0 ? (
-								<>
-									<div className="miscFilterGroup">
-										<Dropdown
-											selectedKey={miscFilterState}
-											placeholder="Filter Miscellaneous"
-											options={miscFilter}
-											styles={filterDropdownStyles}
-											onChange={onMiscFilterChange}
-										/>
-										{miscFilterState === 'state' ? (
-											<Dropdown
-												selectedKey={miscStateSpecFilterState}
-												options={stateSpecificOptions.current}
-												styles={filterDropdownStyles}
-												onChange={onMiscStateSpecificFilterChange}
-											/>
-										) : (
-											<div></div>
-										)}
-									</div>
-									{miscList.map((val: any, idx: number) => {
+							<p>Unexpected {errorMessage?.toString()}</p>
+						</MessageBar>
+					)}
+					{!showLoading ? (
+						<section>
+							<div className="buttonContainer">
+								<input
+									ref={fileUploadRef}
+									type="file"
+									onChange={onFileUpload}
+								/>
+								<DefaultButton
+									text="Upload File"
+									onClick={triggerFileOnClick}
+								/>
+								<DefaultButton
+									text="Download Template"
+									onClick={onFileDownload}
+								/>
+							</div>
+
+							<div className="filterGroup">
+								<Dropdown
+									selectedKey={toLanguage.current}
+									placeholder="Available languages"
+									options={languageOptions}
+									styles={filterDropdownStyles}
+									onChange={onLanguageChange}
+								/>
+								<Dropdown
+									selectedKey={translationFilterState}
+									placeholder="Needs Translation"
+									options={translationFilter}
+									styles={filterDropdownStyles}
+									onChange={onTranslationFilterChange}
+								/>
+							</div>
+							<div
+								className="listTitle"
+								onClick={() => onCollapseSection('locations')}
+							>
+								<FontIcon
+									iconName={
+										isSectionCollapse.locations ? 'ChevronRight' : 'ChevronDown'
+									}
+									className="groupToggleIcon"
+								/>
+								<div>Locations</div>
+							</div>
+							{!isSectionCollapse.locations &&
+								(locationList.length > 0 ? (
+									locationList.map((val: any, idx: number) => {
 										return (
 											<div
-												key={`miscRow-${idx}`}
+												key={`locationRow-${idx}`}
 												className={`translateListRow${
 													idx % 2 > 0 ? '' : ' altRow'
-												} misc`}
+												}`}
+											>
+												<div className="fromCol">{val.from}</div>
+												<TextField
+													name={val.to}
+													value={val.to}
+													className="toCol"
+													onChange={(ev) => handleLocationTextChange(ev, val)}
+													onBlur={() => updateLocationTranslation(val)}
+												/>
+											</div>
+										)
+									})
+								) : (
+									<div className="emptyTranslateListRow">
+										No missing location translations found for:{' '}
+										{getLanguageDisplayText(
+											toLanguage.current,
+											toLanguage.current
+										)}
+										.
+									</div>
+								))}
+
+							<div
+								className="listTitle"
+								onClick={() => onCollapseSection('qualifiers')}
+							>
+								<FontIcon
+									iconName={
+										isSectionCollapse.qualifiers
+											? 'ChevronRight'
+											: 'ChevronDown'
+									}
+									className="groupToggleIcon"
+								/>
+								<div>Qualifiers</div>
+							</div>
+							{!isSectionCollapse.qualifiers &&
+								(qualifierList.length > 0 ? (
+									qualifierList.map((val: any, idx: number) => {
+										return (
+											<div
+												key={`qualifierRow-${idx}`}
+												className={`translateListRow${
+													idx % 2 > 0 ? '' : ' altRow'
+												} qualifier`}
 											>
 												<div className="fromCol">{val.from}</div>
 												<TextField
@@ -668,24 +706,97 @@ export default observer(function Translate() {
 													resizable={false}
 													multiline={true}
 													rows={Math.ceil(val.from.length / 100)}
-													onChange={(ev) => handleMiscTextChange(ev, val)}
-													onBlur={() => updateMiscTranslation(val)}
+													onChange={(ev) => handleQualifierTextChange(ev, val)}
+													onBlur={() => updateQualifierTranslation(val)}
 												/>
 											</div>
 										)
-									})}
-								</>
-							) : (
-								<div className="emptyTranslateListRow">
-									No missing miscellaneous translations found for:{' '}
-									{getLanguageDisplayText(
-										toLanguage.current,
-										toLanguage.current
-									)}
-									.
-								</div>
-							))}
-					</section>
+									})
+								) : (
+									<div className="emptyTranslateListRow">
+										No missing qualifier translations found for:{' '}
+										{getLanguageDisplayText(
+											toLanguage.current,
+											toLanguage.current
+										)}
+										.
+									</div>
+								))}
+
+							<div
+								className="listTitle"
+								onClick={() => onCollapseSection('misc')}
+							>
+								<FontIcon
+									iconName={
+										isSectionCollapse.misc ? 'ChevronRight' : 'ChevronDown'
+									}
+									className="groupToggleIcon"
+								/>
+								<div>Miscellaneous</div>
+							</div>
+							{!isSectionCollapse.misc &&
+								(miscList.length > 0 ? (
+									<>
+										<div className="miscFilterGroup">
+											<Dropdown
+												selectedKey={miscFilterState}
+												placeholder="Filter Miscellaneous"
+												options={miscFilter}
+												styles={filterDropdownStyles}
+												onChange={onMiscFilterChange}
+											/>
+											{miscFilterState === 'state' ? (
+												<Dropdown
+													selectedKey={miscStateSpecFilterState}
+													options={stateSpecificOptions.current}
+													styles={filterDropdownStyles}
+													onChange={onMiscStateSpecificFilterChange}
+												/>
+											) : (
+												<div></div>
+											)}
+										</div>
+										{miscList.map((val: any, idx: number) => {
+											return (
+												<div
+													key={`miscRow-${idx}`}
+													className={`translateListRow${
+														idx % 2 > 0 ? '' : ' altRow'
+													} misc`}
+												>
+													<div className="fromCol">{val.from}</div>
+													<TextField
+														name={val.to}
+														value={val.to}
+														className="toCol"
+														autoAdjustHeight={true}
+														resizable={false}
+														multiline={true}
+														rows={Math.ceil(val.from.length / 100)}
+														onChange={(ev) => handleMiscTextChange(ev, val)}
+														onBlur={() => updateMiscTranslation(val)}
+													/>
+												</div>
+											)
+										})}
+									</>
+								) : (
+									<div className="emptyTranslateListRow">
+										No missing miscellaneous translations found for:{' '}
+										{getLanguageDisplayText(
+											toLanguage.current,
+											toLanguage.current
+										)}
+										.
+									</div>
+								))}
+						</section>
+					) : (
+						<section className="loadingContainer">
+							<ProgressIndicator description="Updating translations..." />
+						</section>
+					)}
 				</div>
 			</div>
 		</div>

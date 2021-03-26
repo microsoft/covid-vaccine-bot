@@ -32,7 +32,7 @@ export const setIssuesList = mutatorAction(
 		if (data) {
 			const store = getAppStore()
 			store.issues = data[0]
-			store.prChanges= data[1]
+			store.prChanges = data[1]
 			if (callback) {
 				callback()
 			}
@@ -527,7 +527,7 @@ export const modifyStateStrings = mutatorAction(
 				const location = store.repoFileData[data.locationKey]
 
 				if (!data.item.moreInfoContent) {
-					delete(location.strings.content[data.infoKey])
+					delete location.strings.content[data.infoKey]
 				} else {
 					const newStringsObj: any = {}
 					newStringsObj[store.currentLanguage] = data.item.moreInfoContent
@@ -547,7 +547,7 @@ export const modifyStateStrings = mutatorAction(
 						if (data.item.moreInfoContent) {
 							affectedQualifier.moreInfoText = data.infoKey
 						} else {
-							delete(affectedQualifier.moreInfoText)
+							delete affectedQualifier.moreInfoText
 						}
 					} else {
 						affectedPhase.qualifications.push({
@@ -1060,3 +1060,49 @@ export const translateMisc = mutatorAction('translateMisc', (item: any) => {
 		}
 	}
 })
+
+const recursiveFindAndReplace = (key: string, saveObj: any, location: any) => {
+	if (
+		location.strings &&
+		location.strings.content &&
+		location.strings.content[key]
+	) {
+		location.strings.content[key] = saveObj
+	}
+	if (location.regions && location.regions.length > 0) {
+		location.regions.forEach((region: any) => {
+			recursiveFindAndReplace(key, saveObj, region)
+		})
+	}
+}
+
+export const updateStrings = mutatorAction(
+	'udpateStrings',
+	(stringsList: any) => {
+		if (stringsList) {
+			const store = getAppStore()
+			store.pendingChanges = true
+			Object.keys(stringsList).forEach((stringId: string) => {
+				if (store.globalFileData.customStrings.content[stringId]) {
+					store.globalFileData.customStrings.content[stringId] =
+						stringsList[stringId]
+				} else if (store.globalFileData.cdcStateLinks.content[stringId]) {
+					store.globalFileData.cdcStateLinks.content[stringId] =
+						stringsList[stringId]
+				} else if (store.globalFileData.cdcStateNames.content[stringId]) {
+					store.globalFileData.cdcStateNames.content[stringId] =
+						stringsList[stringId]
+				} else {
+					Object.keys(store.repoFileData).forEach((item: string) => {
+						const location = store.repoFileData[item]
+						if (JSON.stringify(location).includes(stringId)) {
+							recursiveFindAndReplace(stringId, stringsList[stringId], location)
+						}
+					})
+				}
+			})
+
+			store.globalFileData = { ...store.globalFileData }
+		}
+	}
+)

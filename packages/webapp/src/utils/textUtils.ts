@@ -31,12 +31,14 @@ export const getLanguageOptions = (excludeLanguage?: string) => {
 		','
 	)
 
-	return languageKeys.map((key) => {
-		return {
-			key: key,
-			text: getLanguageDisplayText(key, key),
-		}
-	}).filter(l => l.key !== excludeLanguage)
+	return languageKeys
+		.map((key) => {
+			return {
+				key: key,
+				text: getLanguageDisplayText(key, key),
+			}
+		})
+		.filter((l) => l.key !== excludeLanguage)
 }
 
 export const getLanguageDisplayText = (
@@ -56,4 +58,25 @@ export const utf8_to_b64 = (str: string): string => {
 
 export const b64_to_utf8 = (str: string): string => {
 	return decodeURIComponent(escape(atob(str)))
+}
+
+export const createCSVDataString = (contentObj: any) => {
+	const languageKeys = getLanguageKeys()
+	const contentKeys = Object.keys(contentObj)
+
+	let result = 'String ID,' + languageKeys.join(',') + '\n'
+
+	for (const key of contentKeys) {
+		const rowValues = [key]
+		languageKeys.forEach((lang: string) => {
+			if (contentObj[key][lang]) {
+				rowValues.push(`"${contentObj[key][lang].replace(/"/g, '""')}"`)
+			} else {
+				rowValues.push('')
+			}
+		})
+
+		result += rowValues.join(',') + '\n'
+	}
+	return result
 }

@@ -5,7 +5,11 @@
 import parse from 'csv-parse/lib/sync'
 import { getAppStore } from '../store/store'
 import { convertCSVDataToObj } from '../utils/dataUtils'
-import { b64_to_utf8, utf8_to_b64, getLanguageKeys } from '../utils/textUtils'
+import {
+	b64_to_utf8,
+	utf8_to_b64,
+	createCSVDataString,
+} from '../utils/textUtils'
 
 const createPath = (obj: any, pathInput: string, value: any = undefined) => {
 	let path = pathInput.split('/')
@@ -36,27 +40,6 @@ const getContent = async (url: string, token: string) => {
 	const data = await response.json()
 
 	return data
-}
-
-const createCSVDataString = (contentObj: any) => {
-	const languageKeys = getLanguageKeys()
-	const contentKeys = Object.keys(contentObj)
-
-	let result = 'String ID,' + languageKeys.join(',') + '\n'
-
-	for (const key of contentKeys) {
-		const rowValues = [key]
-		languageKeys.forEach((lang: string) => {
-			if (contentObj[key][lang]) {
-				rowValues.push(`"${contentObj[key][lang].replace(/"/g, '""')}"`)
-			} else {
-				rowValues.push('')
-			}
-		})
-
-		result += rowValues.join(',') + '\n'
-	}
-	return result
 }
 
 export const repoServices = async (
@@ -130,10 +113,16 @@ export const repoServices = async (
 				)
 				const commentsObj = await commentResp.json()
 				if (commentsObj && commentsObj.length > 0) {
-					const changes = JSON.parse(commentsObj[0].body.substr(1, commentsObj[0].body.length - 2))
-					prChangeList.push({prNumber: item.number, prDescription: item.body, prChanges: changes})
+					const changes = JSON.parse(
+						commentsObj[0].body.substr(1, commentsObj[0].body.length - 2)
+					)
+					prChangeList.push({
+						prNumber: item.number,
+						prDescription: item.body,
+						prChanges: changes,
+					})
 				}
-			});
+			})
 
 			return [await loadIssuesResponse.json(), prChangeList]
 
@@ -441,7 +430,9 @@ export const repoServices = async (
 					}
 				}
 
-				const prTitle = !prFormData.prTitle ? 'auto PR creation' : prFormData.prTitle
+				const prTitle = !prFormData.prTitle
+					? 'auto PR creation'
+					: prFormData.prTitle
 
 				const prResp = await fetch(
 					`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/pulls`,
@@ -454,7 +445,7 @@ export const repoServices = async (
 							head: branchName,
 							base: 'main',
 							title: prTitle,
-							body: prFormData.prDetails
+							body: prFormData.prDetails,
 						}),
 					}
 				)
@@ -469,7 +460,10 @@ export const repoServices = async (
 							Authorization: `token ${state.accessToken}`,
 						},
 						body: JSON.stringify({
-							labels: ['data-composer-submission', 'requires-data-accuracy-review']
+							labels: [
+								'data-composer-submission',
+								'requires-data-accuracy-review',
+							],
 						}),
 					}
 				)
@@ -482,7 +476,7 @@ export const repoServices = async (
 							Authorization: `token ${state.accessToken}`,
 						},
 						body: JSON.stringify({
-							body: `\`${JSON.stringify(changeSummary)}\``
+							body: `\`${JSON.stringify(changeSummary)}\``,
 						}),
 					}
 				)
