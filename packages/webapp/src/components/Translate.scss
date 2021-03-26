@@ -21,6 +21,26 @@
 	section {
 		margin: 0 6px;
 	}
+
+	input[type='file'] {
+		display: none;
+	}
+	.ms-MessageBar--error {
+		margin-bottom: 1em;
+	}
+	.loadingContainer {
+		display: flex;
+		justify-content: center;
+		text-align: center;
+
+		.ms-ProgressIndicator {
+			width: 90%;
+			margin-top: 20%;
+		}
+	}
+	.buttonContainer {
+		margin-bottom: 1em;
+	}
 }
 
 .filterGroup {

@@ -290,12 +290,7 @@ export default observer(function Review(props: ReviewProp) {
 							messageBarType={MessageBarType.error}
 							dismissButtonAriaLabel="Close"
 						>
-							<p>
-								Unexpected Error
-								<br />
-								<br />
-								{errorMessage?.toString()}
-							</p>
+							<p>Unexpected {errorMessage?.toString()}</p>
 						</MessageBar>
 					)}
 					{!showLoading ? (
