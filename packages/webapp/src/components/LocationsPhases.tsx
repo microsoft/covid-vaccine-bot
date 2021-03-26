@@ -91,7 +91,7 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 			}
 
 			phaseObj.forEach((phase: any) => {
-				let isCollapsed: boolean = !isRegion && value.value.id !== phase.id
+				const isCollapsed: boolean = isRegion ? true : value.value.id !== phase.id
 
 				let isActivePhase = false
 				if (isRegion && regionObj.vaccination.content.activePhase) {
@@ -99,10 +99,6 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 				} else {
 					isActivePhase =
 						phase.id === currentStateObj.vaccination.content.activePhase
-				}
-
-				if(groupToggleState.current.length > 0 && groupToggleState.current.indexOf(phase.id) !== -1){
-					isCollapsed = false
 				}
 
 				const tempPhaseObj: any = {
@@ -318,16 +314,6 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 														style={{ color: '#0078d4' }}
 													/>
 													Duplicate
-												</div>
-												<div
-													className="addQualifierGroup"
-													onClick={() => onAddQualifierClick(group.data.keyId)}
-												>
-													<FontIcon
-														iconName="CircleAdditionSolid"
-														style={{ color: '#0078d4' }}
-													/>
-													Add Qualifier
 												</div>
 												<div
 													className="removePhaseGroup"
