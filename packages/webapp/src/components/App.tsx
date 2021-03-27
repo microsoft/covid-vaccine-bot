@@ -16,6 +16,7 @@ import { useBoolean } from '@uifabric/react-hooks'
 import { observer } from 'mobx-react-lite'
 import { useCallback, useState, useEffect, useRef } from 'react'
 import { Switch, Route, Redirect } from 'react-router-dom'
+import { loginUser } from '../actions/authActions'
 import { logoutUser } from '../mutators/authMutators'
 import { setCurrentLanguage } from '../mutators/repoMutators'
 import { getAppStore } from '../store/store'
@@ -31,7 +32,6 @@ import UnAuthorized from './UnAuthorized'
 
 import './App_reset_styles.scss'
 import './App.scss'
-import { loginUser } from '../actions/authActions'
 
 export default observer(function App() {
 	const state = getAppStore()
@@ -128,7 +128,7 @@ export default observer(function App() {
 										<div
 											ref={personaComponent}
 											onClick={showPersonaMenu}
-											style={{ cursor: 'pointer' }}
+											className="appHeaderPersonaDetails"
 										>
 											<div className="appHeaderUsername">
 												{state.userDisplayName}

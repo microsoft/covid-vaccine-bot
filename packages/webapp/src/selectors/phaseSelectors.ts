@@ -10,7 +10,9 @@ export const getPhaseQualifierItems = (selectedState?: any) => {
 }
 
 export const getPhaseQualifierItemsByKey = (selectedState?: any, selectedKey?: any) => {
-    return getPhaseQualifierItems(selectedState).filter(qualifier => qualifier.key.includes(selectedKey))
+    return getPhaseQualifierItems(selectedState).filter(qualifier => {
+        return qualifier.key.startsWith(`c19.eligibility.question/${selectedKey}.`) || qualifier.key.endsWith(`c19.eligibility.question/${selectedKey}`)
+    })
 }
 
 export const getPhaseTagItems = (selectedState?: any) => {

@@ -3,9 +3,9 @@
  * Licensed under the MIT license. See LICENSE file in the project.
  */
 import { mutatorAction } from 'satcheljs'
+import { clearState } from '../store/localStorage'
 import { AppState } from '../store/schema/AppState'
 import { getAppStore } from '../store/store'
-import { clearState } from '../store/localStorage'
 
 export const setUserAuthData = mutatorAction(
 	'setUserAuthData',

@@ -9,8 +9,8 @@ import {
 } from '@fluentui/react'
 import { observer } from 'mobx-react-lite'
 import { useCallback, useRef, useState } from 'react'
-import { formatId } from '../utils/textUtils'
 import { getAppStore } from '../store/store'
+import { formatId } from '../utils/textUtils'
 
 import './LocationForm.scss'
 
