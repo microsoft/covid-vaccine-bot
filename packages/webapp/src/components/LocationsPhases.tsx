@@ -48,12 +48,12 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 		isDuplaceModalOpen,
 		{ setTrue: openDuplicateModal, setFalse: dismissDuplicateModal },
 	] = useBoolean(false)
-	
+
 	const onDuplicateSubmit = ({name}: {name: string}) => {
 		const nextPhaseId = formatId(name);
 		const phases = repoFileData[selectedState.key].vaccination.content.phases;
 		const nameExists = !!phases.find((item: {id: string}) => item.id === nextPhaseId);
-		 
+
 		if(nameExists) {
 			return
 		}
@@ -75,7 +75,7 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 		[openDuplicateModal]
 	)
 
-	useEffect(() => {		
+	useEffect(() => {
 		if (repoFileData) {
 			dismissDuplicateModal()
 
@@ -91,7 +91,17 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 			}
 
 			phaseObj.forEach((phase: any) => {
-				const isCollapsed: boolean = isRegion ? true : value.value.id !== phase.id
+				let isCollapsed: boolean = true
+
+				if (isRegion) {
+					isCollapsed = groupToggleState.current.length > 0 ? !groupToggleState.current.includes(phase.id) : true
+				} else {
+					if (groupToggleState.current.length > 0) {
+						isCollapsed = !groupToggleState.current.includes(phase.id)
+					} else {
+						isCollapsed = value.value.id !== phase.id
+					}
+				}
 
 				let isActivePhase = false
 				if (isRegion && regionObj.vaccination.content.activePhase) {
@@ -181,25 +191,25 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 	}
 
 	const onRemoveRowItem = (item: any, groupKey:any) => {
-		if(item.qualifierId !== 'c19.eligibility.question/new_qualifier'){
+		if (item.qualifierId !== 'c19.eligibility.question/new_qualifier') {
 			removeQualifier({
 				locationKey: selectedState.key,
 				item: item,
 				regionInfo: isRegion ? value : null,
 			})
-		}else{
-
+		} else {
 			const tempPhaseList = phaseList.map((group) => {
-			if (group.key === groupKey) {
-				const newItemIndex = group.items.findIndex( (i:any) => i.qualifierId ===  'c19.eligibility.question/new_qualifier')
-				if(newItemIndex !== -1){
-					group.items.splice(newItemIndex,1)
+				if (group.key === groupKey) {
+					const newItemIndex = group.items.findIndex( (i:any) => i.qualifierId ===  'c19.eligibility.question/new_qualifier')
+					if(newItemIndex !== -1){
+						group.items.splice(newItemIndex,1)
+					}
 				}
-			}
 
-			return group
-		})
-		setPhaseList(tempPhaseList)
+				return group
+			})
+
+			setPhaseList(tempPhaseList)
 		}
 	}
 
@@ -365,37 +375,37 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 								</div>
 								<div style={{ display: group.isCollapsed ? 'none' : 'block' }}>
 									{group.items.length > 0 && (
-										<>
-										{group.items.map((groupItem: any, idx: number) => {
-												return (
-													<PhaseQualifierForm
-														key={groupItem.key+'_'+idx}
-														groupKey={group.key}
-														rowItems={{ item: groupItem }}
-														selectedState={selectedState}
-														isEditable={isEditable}
-														isRegion={isRegion}
-														onRowItemRemove={onRemoveRowItem}
-														onRowItemTextChange={onChangeRowItemText}
-														onRowItemQualifierChange={onChangeRowItemQualifier}
-													/>
-												)
-										  })
-										}
-										<div className="phaseBottomGroup">
-											<div
-												className="addQualifierGroup"
-												onClick={() => onAddQualifierClick(group.data.keyId)}
-											>
-												<FontIcon
-													iconName="CircleAdditionSolid"
-													style={{ color: '#0078d4' }}
+										group.items.map((groupItem: any, idx: number) => {
+											return (
+												<PhaseQualifierForm
+													key={groupItem.key+'_'+idx}
+													groupKey={group.key}
+													rowItems={{ item: groupItem }}
+													selectedState={selectedState}
+													isEditable={isEditable}
+													isRegion={isRegion}
+													onRowItemRemove={onRemoveRowItem}
+													onRowItemTextChange={onChangeRowItemText}
+													onRowItemQualifierChange={onChangeRowItemQualifier}
 												/>
-												Add Qualifier
-											</div>
-										</div>
-										</>
+											)
+										})
 									)}
+									<div
+										className="phaseBottomGroup"
+										style={{marginTop: group.items.length > 0 ? 0 : '20px'}}
+									>
+										<div
+											className="addQualifierGroup"
+											onClick={() => onAddQualifierClick(group.data.keyId)}
+										>
+											<FontIcon
+												iconName="CircleAdditionSolid"
+												style={{ color: '#0078d4' }}
+											/>
+											Add Qualifier
+										</div>
+									</div>
 								</div>
 								<Modal
 									isOpen={isDuplaceModalOpen}
