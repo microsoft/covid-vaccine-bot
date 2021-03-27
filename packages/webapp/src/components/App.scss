@@ -33,6 +33,12 @@
 	margin-left: auto;
 }
 
+.appHeaderPersonaDetails {
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+}
+
 .appHeaderUsername {
 	font-size: 14px;
 	margin-right: 10px;

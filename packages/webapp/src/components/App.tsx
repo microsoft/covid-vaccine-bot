@@ -128,7 +128,7 @@ export default observer(function App() {
 										<div
 											ref={personaComponent}
 											onClick={showPersonaMenu}
-											style={{ cursor: 'pointer' }}
+											className="appHeaderPersonaDetails"
 										>
 											<div className="appHeaderUsername">
 												{state.userDisplayName}
