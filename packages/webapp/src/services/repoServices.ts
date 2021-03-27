@@ -98,7 +98,7 @@ export const repoServices = async (
 			)
 
 			const commentsObj = await commentResp.json()
-			let changes: any[] = []
+			const changes: any[] = []
 			if (commentsObj && commentsObj.length > 0) {
 				commentsObj.forEach((comment: { body: string }) => {
 					changes.push(JSON.parse(comment.body.substr(1, comment.body.length - 2)))

@@ -2,8 +2,8 @@
  * Copyright (c) Microsoft. All rights reserved.
  * Licensed under the MIT license. See LICENSE file in the project.
  */
-import { createStore, getRootStore } from 'satcheljs'
 import { autorun } from 'mobx'
+import { createStore, getRootStore } from 'satcheljs'
 import { loadState, saveState } from './localStorage'
 import { AppState } from './schema/AppState'
 

@@ -20,9 +20,9 @@ import {
 	duplicatePhase,
 } from '../mutators/repoMutators'
 import { getAppStore } from '../store/store'
-import PhaseQualifierForm from './PhaseQualifierForm'
-import PhaseForm from './PhaseForm'
 import { formatId } from '../utils/textUtils'
+import PhaseForm from './PhaseForm'
+import PhaseQualifierForm from './PhaseQualifierForm'
 
 import './Locations.scss'
 
@@ -91,7 +91,7 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 			}
 
 			phaseObj.forEach((phase: any) => {
-				let isCollapsed: boolean = true
+				let isCollapsed = true
 
 				if (isRegion) {
 					isCollapsed = groupToggleState.current.length > 0 ? !groupToggleState.current.includes(phase.id) : true
