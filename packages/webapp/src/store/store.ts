@@ -48,6 +48,8 @@ autorun(() => {
 			accessToken: store.accessToken,
 			isAuthorized: store.isAuthorized,
 			isAuthenticated: store.isAuthenticated,
+			userDisplayName: store.userDisplayName,
 			username: store.username,
+			email: store.email,
 		})
 })
