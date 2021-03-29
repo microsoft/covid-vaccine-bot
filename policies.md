@@ -1247,7 +1247,7 @@ This also includes local health department staff who interact with patients at t
 	* This includes those who are who are regularly called to the scene of an emergency to give medical aid, including firefighters, police officers and sheriff's deputies, emergency medical services, reservists and correctional officers (see [here](https://www.coronavirus.in.gov/vaccine/index.htm))
 * Do you have exposure to COVID-19 infectious material?
 	* Examples include cleaning of rooms or material from COVID-19 patients, performing COVID-19 testing, other exposure to infected tissue, performing autopsies or other post-mortem examinations of COVID-19 patients)
-* Are you age 40+?
+* Are you age 30+?
 * Are you age 16+, and have a high-risk medical condition?
 	* Specific groups of patients at highest risk of severe illness from COVID-19 who are identified by their healthcare provider are also eligible. These individuals will receive a unique registration link by text or email, or may call 211 after receiving the notification:
 
