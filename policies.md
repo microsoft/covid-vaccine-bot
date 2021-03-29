@@ -1325,79 +1325,9 @@ Type 2 diabetes mellitus (see [here](https://www.cdc.gov/coronavirus/2019-ncov/n
 | info | [Kansas Department of Health and Environment](https://www.kansasvaccine.gov/) |
 
 
-## Kansas Active Phase (4)
+## Kansas Active Phase (5)
 
-* Are you a healthcare worker?
-	* This includes:
-- Workers in direct contact with patients, e.g., MD/DO/DPM, nurses, EMTs, clinical students and trainees
-- Diagnostic labs, phlebotomists, pandemic health workers (e.g., individuals performing COVID tests)
-- Mental healthcare providers, pharmacy staff, non-medical staff - if exposed to patients or infectious materials;
-- Healthcare-associated contractors, including food, waste management etc.
-- Dentists, physical therapists, professionals performing elective procedures
-- Home care workers, CMS-designated caretaker
-- Morticians, forensic and funeral service workers;
-- Staff in FQHCs, CHCs, safety-net/ free clinics, faith-based outreach clinics (inclusive of state-funded clinics)
-- Home health aides, nursing assistants
-* Are you a long term care resident or work in a long term care facility?
-* Are you classified as an essential worker?
-	* This includes:
-- Firefighters, police officers, first responders, correction officers
-- Grocery store workers and food services
-- K-12 and childcare workers, including teachers, custodians, drivers and other staff
-- Food processing, including meat processing plants
-- Large-scale aviation manufacturing plants
-- Transportation workers
-- Workers in the following industries, if they regularly need to be in high-risk settings to perform their duties:
-- Retail, warehouses and sales outlets
-- Agriculture
-- Supply of critical services or materials for the COVID response (e.g. PPE)
-- The U.S. Postal Service
-- Department of Motor Vehicles
-- Agricultural and food workers not included in previous phases
-- Workers performing in-person activities indoors, in critical manufacturing, not included in previous phases;
-this includes aviation, production of critical supplies for the COVID response
-- Utility workers
-- Social service and government workers not included in previous priority phases
-- Logistics workers, such as truck transportation workers, couriers and others
-- Water and wastewater workers
-- Shelter and housing (e.g., construction) workers, finance (e.g., bank tellers)
-- Information technology and communications workers
-* Are you age 16+, and have a high-risk medical condition?
-	* This includes those with: 
-- Cancer
-- Chronic kidney disease
-- Chronic obstructive pulmonary disease;
-- Down Syndrome
-- Heart conditions, such cardiomyopathies;
-- Immunocompromised state from solid organ transplant;
-- Type 2 diabetes mellitus;
-- Sickle cell disease;
-- Pregnant patients
-
-CDC's second list of conditions, which include (non-exhaustive):
-- Asthma (moderate-to-severe)
-- Cerebrovascular disease (affects blood vessels and blood supply to the brain)
-- Cystic fibrosis
-- Immunocompromised state (weakened immune system) from blood or bone marrow transplant, immune
-deficiencies, HIV, use of corticosteroids, or use of other immune weakening medicines
-- Neurologic conditions, such as dementia
-- Liver disease
-- Pulmonary fibrosis (having damaged or scarred lung tissues)
-- Thalassemia (a type of blood disorder)
-- Type 1 diabetes mellitus
-- Obesity and severe obesity
-* Are you age 65+?
-* Do you work or live in a congregate setting?
-	* Congregate settings include but are not limited to the following:
-
-Homeless shelters and other homeless housing settings and dwelling places
-Congregate childcare institutions, adult and child protective services
-Emergency shelters or safe houses for victims of domestic violence
-Corrections facilities, including jails and juvenile justice facilities
-Behavioral Health institutions (including mental health institutions) and residential treatment centers
-Adult care homes, residents and staff in home plus facilities not covered in Phase 1
-Senior living homes
-Home care givers (paid or unpaid), personal care aides (see [here](https://www.kansasvaccine.gov/Faq.aspx?QID=111))
+* Are you age 16+?
 
 # Kentucky
 
