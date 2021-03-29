@@ -10,6 +10,7 @@
 		}
 	},
 	"activePhase": "current",
+	"noPhaseLabel": true,
 	"phases": [
 		{
 			"id": "1a",
