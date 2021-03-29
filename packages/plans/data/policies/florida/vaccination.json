@@ -22,7 +22,7 @@
 					"moreInfoText": "c19.eligibility.moreinfo/health.1a.fl.extremely_vulnerable.fl.1a"
 				},
 				{
-					"question": "c19.eligibility.question/age.are"
+					"question": "c19.eligibility.question/age.are_you"
 				}
 			],
 			"label": "Current phase"
