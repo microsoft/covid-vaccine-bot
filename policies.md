@@ -701,7 +701,7 @@ People with other chronic conditions also qualify for vaccine in Phase 1c, but n
 | scheduling_phone | [Scheduling Hotline](tel:) |
 
 
-## Idaho Active Phase (march_22)
+## Idaho Active Phase (march_29)
 
 * Are you a healthcare worker?
 * Are you a long term care resident or work in a long term care facility?
@@ -740,6 +740,21 @@ People with other chronic conditions also qualify for vaccine in Phase 1c, but n
 - Manufacturing, public transit, and U.S. Postal Service workers
 - Flight crews
 - Subset of essential gas, electric, water, and telecommunications utility workers, who work indoors (see [here](https://healthandwelfare.idaho.gov/covid-19-vaccination))
+* Are you age 45+, and have a high-risk medical condition?
+	* Adults of any age with the following conditions are at increased risk of severe illness from the virus that causes COVID-19:
+
+Cancer
+Chronic kidney disease
+COPD (chronic obstructive pulmonary disease)
+Down Syndrome
+Heart conditions, such as heart failure, coronary artery disease, or cardiomyopathies
+Immunocompromised state (weakened immune system) from solid organ transplant
+Obesity (body mass index [BMI] of 30 kg/m2 or higher but < 40 kg/m2)
+Severe Obesity (BMI >= 40 kg/m2)
+Pregnancy
+Sickle cell disease
+Smoking
+Type 2 diabetes mellitus (see [here](https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html))
 * Are you age 45+?
 * Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?
 
