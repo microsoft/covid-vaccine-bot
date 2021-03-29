@@ -42,13 +42,19 @@ export const setIssuesList = mutatorAction(
 	}
 )
 
-export const setLoadedPRData = mutatorAction('setLoadedPRData', (prData: any | undefined) =>{
-	const store = getAppStore()
-	if (prData) {
-		store.loadedPRData = prData.data
-		store.prChanges = { changes: prData.changes, last_commit: prData.commits.pop() }
+export const setLoadedPRData = mutatorAction(
+	'setLoadedPRData',
+	(prData: any | undefined) => {
+		const store = getAppStore()
+		if (prData) {
+			store.loadedPRData = prData.data
+			store.prChanges = {
+				changes: prData.changes,
+				last_commit: prData.commits.pop(),
+			}
+		}
 	}
-})
+)
 
 export const handleCreatePR = mutatorAction('handleCreatePR', () => {
 	const store = getAppStore()
@@ -112,7 +118,7 @@ export const updateLocationList = mutatorAction(
 				} else {
 					newLocObj.vaccination.content = {
 						...newLocObj.vaccination.content,
-						noPhaseLabel: locationData.noPhaseLabel
+						noPhaseLabel: locationData.noPhaseLabel,
 					}
 				}
 
@@ -152,7 +158,7 @@ export const updateLocationList = mutatorAction(
 				} else {
 					newLocObj.vaccination.content = {
 						...newLocObj.vaccination.content,
-						noPhaseLabel: locationData.noPhaseLabel
+						noPhaseLabel: locationData.noPhaseLabel,
 					}
 				}
 
@@ -226,7 +232,7 @@ export const updateLocationData = mutatorAction(
 				} else {
 					location.vaccination.content = {
 						...location.vaccination.content,
-						noPhaseLabel: locationData.noPhaseLabel
+						noPhaseLabel: locationData.noPhaseLabel,
 					}
 				}
 
@@ -394,7 +400,7 @@ export const updateLocationData = mutatorAction(
 				} else {
 					regionObj.vaccination.content = {
 						...regionObj.vaccination.content,
-						noPhaseLabel: locationData.noPhaseLabel
+						noPhaseLabel: locationData.noPhaseLabel,
 					}
 				}
 
@@ -859,7 +865,7 @@ export const removePhase = mutatorAction(
 	}
 )
 
- export const addPhase = mutatorAction('addPhase', (data: any | undefined) => {
+export const addPhase = mutatorAction('addPhase', (data: any | undefined) => {
 	if (data) {
 		const store = getAppStore()
 		if (store?.repoFileData) {
@@ -884,54 +890,79 @@ export const removePhase = mutatorAction(
 	}
 })
 
-export const duplicatePhase = mutatorAction('duplicatePhase', (data: {name: string; locationKey: string; phaseId: string, isRegion?: boolean, regionInfo?: {key: string}} | undefined) => {
-   if (data) {
-	   const store = getAppStore()
-	   if (store?.repoFileData) {
-		   store.pendingChanges = true
-		   const location = store.repoFileData[data.locationKey]
-		   const phaseSource = data.isRegion && data.regionInfo?.key && location.regions[data.regionInfo.key].vaccination?.content.phases ? 
-			location.regions[data.regionInfo.key].vaccination.content.phases.find((item: {id: string}) => item.id === data.phaseId) :
-			location.vaccination.content.phases.find((item: {id: string}) => item.id === data.phaseId)
-		   const nextPhaseId = formatId(data.name)
+export const duplicatePhase = mutatorAction(
+	'duplicatePhase',
+	(
+		data:
+			| {
+					name: string
+					locationKey: string
+					phaseId: string
+					isRegion?: boolean
+					regionInfo?: { key: string }
+			  }
+			| undefined
+	) => {
+		if (data) {
+			const store = getAppStore()
+			if (store?.repoFileData) {
+				store.pendingChanges = true
+				const location = store.repoFileData[data.locationKey]
+				const phaseSource =
+					data.isRegion &&
+					data.regionInfo?.key &&
+					location.regions[data.regionInfo.key].vaccination?.content.phases
+						? location.regions[
+								data.regionInfo.key
+						  ].vaccination.content.phases.find(
+								(item: { id: string }) => item.id === data.phaseId
+						  )
+						: location.vaccination.content.phases.find(
+								(item: { id: string }) => item.id === data.phaseId
+						  )
+				const nextPhaseId = formatId(data.name)
 
-		   const newItem = {
-			   id: nextPhaseId,
-			   label: data.name,
-			   qualifications: phaseSource.qualifications?.map((item: any) => {
-				   const newContentKey = item.moreInfoText?.replace(new RegExp(data.phaseId + '$'), nextPhaseId)
+				const newItem = {
+					id: nextPhaseId,
+					label: data.name,
+					qualifications: phaseSource.qualifications?.map((item: any) => {
+						const newContentKey = item.moreInfoText?.replace(
+							new RegExp(data.phaseId + '$'),
+							nextPhaseId
+						)
 
-		   			if(newContentKey) {
-						location.strings.content[newContentKey] = location.strings.content[item.moreInfoText]
+						if (newContentKey) {
+							location.strings.content[newContentKey] =
+								location.strings.content[item.moreInfoText]
+						}
+
+						return {
+							question: item.question,
+							moreInfoUrl: item.moreInfoUrl,
+							moreInfoText: newContentKey,
+						}
+					}),
+				}
+
+				if (data.isRegion && data.regionInfo) {
+					const regionVaccinationObj =
+						location.regions[data.regionInfo.key].vaccination
+
+					if (!regionVaccinationObj.content?.phases) {
+						copyPhaseData(regionVaccinationObj, location.vaccination)
 					}
 
-				   return {
-					   question: item.question,
-					   moreInfoUrl: item.moreInfoUrl,
-					   moreInfoText: newContentKey
-				   }
-			   })
-		   }
+					regionVaccinationObj.content.phases.push(newItem)
+				} else {
+					// State level region phase
+					location.vaccination.content.phases.push(newItem)
+				}
 
-
-		   if(data.isRegion && data.regionInfo) {
-			const regionVaccinationObj =
-				location.regions[data.regionInfo.key].vaccination
-
-			if (!regionVaccinationObj.content?.phases) {
-				copyPhaseData(regionVaccinationObj, location.vaccination)
+				store.repoFileData = { ...store.repoFileData }
 			}
-
-			regionVaccinationObj.content.phases.push(newItem)
-		   } else {
-			   	// State level region phase
-				location.vaccination.content.phases.push(newItem)
-		   }
-
-		   store.repoFileData = { ...store.repoFileData }
-	   }
-   }
-})
+		}
+	}
+)
 
 export const updatePhase = mutatorAction(
 	'updatePhase',
@@ -1163,6 +1194,7 @@ const recursiveFindAndReplace = (key: string, saveObj: any, location: any) => {
 		location.strings.content[key]
 	) {
 		location.strings.content[key] = saveObj
+		return
 	}
 	if (location.regions && location.regions.length > 0) {
 		location.regions.forEach((region: any) => {
@@ -1188,12 +1220,13 @@ export const updateStrings = mutatorAction(
 					store.globalFileData.cdcStateNames.content[stringId] =
 						stringsList[stringId]
 				} else {
-					Object.keys(store.repoFileData).forEach((item: string) => {
+					for (const item of Object.keys(store.repoFileData)) {
 						const location = store.repoFileData[item]
 						if (JSON.stringify(location).includes(stringId)) {
 							recursiveFindAndReplace(stringId, stringsList[stringId], location)
+							break
 						}
-					})
+					}
 				}
 			})
 
