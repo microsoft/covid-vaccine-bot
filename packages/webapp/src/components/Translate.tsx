@@ -6,7 +6,6 @@ import {
 	Dropdown,
 	TextField,
 	FontIcon,
-	DefaultButton,
 	MessageBar,
 	MessageBarType,
 	ProgressIndicator,
@@ -597,37 +596,42 @@ export default observer(function Translate() {
 					)}
 					{!showLoading ? (
 						<section>
-							<div className="buttonContainer">
-								<input
-									ref={fileUploadRef}
-									type="file"
-									onChange={onFileUpload}
-								/>
-								<DefaultButton
-									text="Upload File"
-									onClick={triggerFileOnClick}
-								/>
-								<DefaultButton
-									text="Download Template"
-									onClick={onFileDownload}
-								/>
-							</div>
-
 							<div className="filterGroup">
-								<Dropdown
-									selectedKey={toLanguage.current}
-									placeholder="Available languages"
-									options={languageOptions}
-									styles={filterDropdownStyles}
-									onChange={onLanguageChange}
-								/>
-								<Dropdown
-									selectedKey={translationFilterState}
-									placeholder="Needs Translation"
-									options={translationFilter}
-									styles={filterDropdownStyles}
-									onChange={onTranslationFilterChange}
-								/>
+								<div>
+									<label>Translate from:</label>
+									<Dropdown
+										selectedKey={toLanguage.current}
+										placeholder="Available languages"
+										options={languageOptions}
+										styles={filterDropdownStyles}
+										onChange={onLanguageChange}
+									/>
+									<label>Show:</label>
+									<Dropdown
+										selectedKey={translationFilterState}
+										placeholder="Needs Translation"
+										options={translationFilter}
+										styles={filterDropdownStyles}
+										onChange={onTranslationFilterChange}
+									/>
+								</div>
+								<div className="fileOptions">
+									<input
+										ref={fileUploadRef}
+										type="file"
+										onChange={onFileUpload}
+									/>
+
+									<button onClick={onFileDownload}>
+										<FontIcon iconName="Download" />
+										Download Template
+									</button>
+
+									<button onClick={triggerFileOnClick}>
+										<FontIcon iconName="CircleAdditionSolid" className="blue" />
+										Upload File
+									</button>
+								</div>
 							</div>
 							<div
 								className="listTitle"
