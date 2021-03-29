@@ -382,7 +382,7 @@ Includes those who are incarcerated or detained; those living in group homes, co
 - Pregnancy
 - Sickle cell disease
 - Heart conditions, such as heart failure, coronary artery disease, or cardiomyopathies (excludes hypertension)
-- Severe obesity (Body Mass Index >= 40 kg/m2)
+- Severe obesity (Body Mass Index ≥ 40 kg/m2)
 - Type 2 diabetes mellitus with hemoglobin A1c level greater than 7.5%
 
 Healthcare providers may also vaccinate individuals with  developmental or other severe disabilities or illness if:
@@ -423,7 +423,7 @@ California genetically handicapped persons program
 * Are you classified as an essential worker?
 	* Essential workers include healthcare workers, funeral services workers, first responders and correctional officers, K-12 educators and licensed child care workers, members of state judiciary and executive branches, grocery and food/agricultural workers that can't distance, as well as frontline workers in student-facing higher education employees, food/restaurant services, manufacturing, the US Postal Service, public transit and specialized transportation, public health, human services, faith direct care for those experiencing homelessness, journalism, workers required for continuity of local or state government, and faith leaders
 * Are you age 16+, and have a high-risk medical condition?
-	* The intent of this classification is to vaccinate Coloradans who have a high risk of severe outcomes from COVID-19. This includes Coloradans with one or more of the following: Cancer (defined as patients who are currently receiving treatment or have received treatment within the last month for cancer), chronic kidney disease, COPD, diabetes mellitus (types 1 and 2), Down syndrome, specific heart conditions (heart failure, cardiomyopathies or coronary heart disease, and severe valvular/congenital heart disease), obesity (BMI >= 30kg/m^2), pregnancy, sickle cell disease, solid organ transplant, individuals with disabilities who require direct care in their home, and people with disabilities that prevent them from wearing masks.
+	* The intent of this classification is to vaccinate Coloradans who have a high risk of severe outcomes from COVID-19. This includes Coloradans with one or more of the following: Cancer (defined as patients who are currently receiving treatment or have received treatment within the last month for cancer), chronic kidney disease, COPD, diabetes mellitus (types 1 and 2), Down syndrome, specific heart conditions (heart failure, cardiomyopathies or coronary heart disease, and severe valvular/congenital heart disease), obesity (BMI ≥ 30kg/m^2), pregnancy, sickle cell disease, solid organ transplant, individuals with disabilities who require direct care in their home, and people with disabilities that prevent them from wearing masks.
 * Are you age 18+ and are someone who received a placebo during a COVID-19 clinical trial?
 * Are you a long term care resident or work in a long term care facility?
 
@@ -717,7 +717,7 @@ People with other chronic conditions also qualify for vaccine in Phase 1c, but n
 - Dentists, dental hygienists and dental assistants
 - Emergency medical services
 - First responders (firefighters/police) and safety (protective services/community support)
-- Home care providers for adults >= 65  years of age, or for other adults/children with high-risk medical conditions (includes staff of certified family homes but does not include adult family members who provide in-home personal care for adults 65 years of age and older or for other adults or children with high-risk medical conditions)
+- Home care providers for adults ≥ 65  years of age, or for other adults/children with high-risk medical conditions (includes staff of certified family homes but does not include adult family members who provide in-home personal care for adults 65 years of age and older or for other adults or children with high-risk medical conditions)
 - Hospital staff essential for care of COVID-19 patients and maintaining hospital capacity (includes support staff, clinical staff, and medical imaging professionals)
 - Idaho Fish and Game and USDA law enforcement officers
 - Idaho National Guard medical staff
@@ -750,7 +750,7 @@ Down Syndrome
 Heart conditions, such as heart failure, coronary artery disease, or cardiomyopathies
 Immunocompromised state (weakened immune system) from solid organ transplant
 Obesity (body mass index [BMI] of 30 kg/m2 or higher but < 40 kg/m2)
-Severe Obesity (BMI >= 40 kg/m2)
+Severe Obesity (BMI ≥ 40 kg/m2)
 Pregnancy
 Sickle cell disease
 Smoking
@@ -1308,7 +1308,7 @@ Down Syndrome
 Heart conditions, such as heart failure, coronary artery disease, or cardiomyopathies
 Immunocompromised state (weakened immune system) from solid organ transplant
 Obesity (body mass index [BMI] of 30 kg/m2 or higher but < 40 kg/m2)
-Severe Obesity (BMI >= 40 kg/m2)
+Severe Obesity (BMI ≥ 40 kg/m2)
 Pregnancy
 Sickle cell disease
 Smoking
@@ -1382,7 +1382,7 @@ Down Syndrome
 Heart conditions, such as heart failure, coronary artery disease, or cardiomyopathies
 Immunocompromised state (weakened immune system) from solid organ transplant
 Obesity (body mass index [BMI] of 30 kg/m2 or higher but < 40 kg/m2)
-Severe Obesity (BMI >= 40 kg/m2)
+Severe Obesity (BMI ≥ 40 kg/m2)
 Pregnancy
 Sickle cell disease
 Smoking
@@ -1746,7 +1746,7 @@ Down Syndrome
 Heart conditions, such as heart failure, coronary artery disease, or cardiomyopathies
 Immunocompromised state (weakened immune system) from solid organ transplant
 Obesity (body mass index [BMI] of 30 kg/m2 or higher but < 40 kg/m2)
-Severe Obesity (BMI >= 40 kg/m2)
+Severe Obesity (BMI ≥ 40 kg/m2)
 Pregnancy
 Sickle cell disease
 Smoking
@@ -1907,7 +1907,7 @@ o COPD (chronic obstructive pulmonary disease)
 o Down Syndrome
 o Heart conditions, such as heart failure, coronary artery disease, or cardiomyopathies
 o Immunocompromised state (weakened immune system) from solid organ transplant
-o Severe Obesity (BMI >= 40 kg/m2)
+o Severe Obesity (BMI ≥ 40 kg/m2)
 o Sickle cell disease
 o Type 1 & 2 Diabetes mellitus
 o Asthma (moderate to severe)
@@ -2251,8 +2251,8 @@ Immunocompromised state (weakened immune system)
 Liver Disease
 Neurologic conditions (e.g. dementia)
 Obesity (body mass index [BMI] of 30 kg/m2 or higher but < 40 kg/m2)
-Severe Obesity (BMI >= 40 kg/m2)
-Overweight (BMI >= 25 kg/m2)
+Severe Obesity (BMI ≥ 40 kg/m2)
+Overweight (BMI ≥ 25 kg/m2)
 Pregnancy
 Pulmonary Fibrosis (damaged or scarred lung tissues)
 Sickle cell disease
@@ -2299,7 +2299,7 @@ Note: Individuals who are pregnant and those in an immunocompromised state (weak
 - Down syndrome
 - Heart conditions (heart failure, hypertension, coronary artery disease or cardiomyopathies)
 - Immunocompromised state from solid organ transplant
-- Obesity (BMI>=30)
+- Obesity (BMI ≥ 30)
 - Pregnancy
 - Sickle cell disease
 - Type 2 Diabetes
@@ -2478,7 +2478,7 @@ All other essential workers per Cybersecurity and Infrastructure Security Agency
  * Heart conditions, such as heart failure, coronary artery disease, or cardiomyopathies
  * Immunocompromised state (weakened immune system) from solid organ transplant
  * Obesity (body mass index [BMI] of 30 kg/m2 or higher but < 40 kg/m2)
- * Severe Obesity (BMI >= 40 kg/m2)
+ * Severe Obesity (BMI ≥ 40 kg/m2)
  * Pregnancy
  * Sickle cell disease
  * Smoking
@@ -3147,7 +3147,7 @@ Obesity.
 - Heart conditions, such as heart failure, coronary artery disease, or cardiomyopathies
 - Immunocompromised state (weakened immune system) from solid organ transplant or from blood or bone marrow transplant, immune deficiencies, HIV, use of corticosteroids, or use of other immune weakening medicines
 - Obesity (body mass index [BMI] of 30 kg/m2 or higher but < 40 kg/m2)
-- Severe Obesity (BMI >= 40 kg/m2)
+- Severe Obesity (BMI ≥ 40 kg/m2)
 - Pregnancy
 - Sickle cell disease
 - Smoking
