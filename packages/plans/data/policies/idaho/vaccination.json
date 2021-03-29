@@ -16,7 +16,7 @@
 			"text": "c19.link/scheduling.phone.id"
 		}
 	},
-	"activePhase": "march_22",
+	"activePhase": "march_29",
 	"phases": [
 		{
 			"id": "1a",
@@ -116,7 +116,7 @@
 					"moreInfoUrl": "https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html"
 				},
 				{
-					"question": "c19.eligibility.question/age.55_up"
+					"question": "c19.eligibility.question/age.are_you_age_45"
 				},
 				{
 					"question": "c19.eligibility.question/congregate"
@@ -126,57 +126,6 @@
 		{
 			"id": "april_5",
 			"label": "April 5",
-			"qualifications": [
-				{
-					"question": "c19.eligibility.question/healthcare_worker"
-				},
-				{
-					"question": "c19.eligibility.question/long_term_care_resident.are"
-				},
-				{
-					"question": "c19.eligibility.question/essential_worker",
-					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.id.april_5",
-					"moreInfoUrl": "https://healthandwelfare.idaho.gov/covid-19-vaccination"
-				},
-				{
-					"question": "c19.eligibility.question/age.are_you_age_45"
-				},
-				{
-					"question": "c19.eligibility.question/congregate"
-				}
-			]
-		},
-		{
-			"id": "april_12",
-			"label": "April 12",
-			"qualifications": [
-				{
-					"question": "c19.eligibility.question/healthcare_worker"
-				},
-				{
-					"question": "c19.eligibility.question/long_term_care_resident.are"
-				},
-				{
-					"question": "c19.eligibility.question/essential_worker",
-					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.id.april_12",
-					"moreInfoUrl": "https://healthandwelfare.idaho.gov/covid-19-vaccination"
-				},
-				{
-					"question": "c19.eligibility.question/age.are_you_age_45"
-				},
-				{
-					"question": "c19.eligibility.question/health",
-					"moreInfoText": "c19.eligibility.moreinfo/health.id.april_12",
-					"moreInfoUrl": "https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html"
-				},
-				{
-					"question": "c19.eligibility.question/congregate"
-				}
-			]
-		},
-		{
-			"id": "april_26",
-			"label": "April 26",
 			"qualifications": [
 				{
 					"question": "c19.eligibility.question/age.16_up"
