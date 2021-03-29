@@ -138,7 +138,7 @@ Counties and tribes may also choose to vaccinate the following groups defined by
 | info | [Apache and Navajo County COVID-19 Info](https://311info.net/covid-19/) |
 
 
-### Arizona::Apache Active Phase (1c)
+### Arizona::Apache Active Phase (18_and_older)
 
 ## Arizona::Cochise
 
@@ -218,7 +218,7 @@ Counties and tribes may also choose to vaccinate the following groups defined by
 | info | [Maricopa County COVID-19 Site](https://www.maricopa.gov/5641/COVID-19-Vaccine) |
 
 
-### Arizona::Maricopa Active Phase (1c)
+### Arizona::Maricopa Active Phase (1b_16_and_older)
 
 ## Arizona::Mohave
 
@@ -230,7 +230,7 @@ Counties and tribes may also choose to vaccinate the following groups defined by
 | providers | [Mojave County Vaccination Providers](https://www.mohavecounty.us/ContentPage.aspx?id=127&cid=1444&page=2&rid=2230) |
 
 
-### Arizona::Mohave Active Phase (1c)
+### Arizona::Mohave Active Phase (1b_16_and_older)
 
 ## Arizona::Navajo
 
@@ -253,7 +253,7 @@ Counties and tribes may also choose to vaccinate the following groups defined by
 | registration | [Pima County COVID-19 Vaccination Registration](https://webcms.pima.gov/cms/One.aspx?portalId=169&pageId=690372) |
 
 
-### Arizona::Pima Active Phase (1c)
+### Arizona::Pima Active Phase (1b_16_and_older)
 
 ## Arizona::Pinal
 
@@ -276,7 +276,7 @@ Counties and tribes may also choose to vaccinate the following groups defined by
 | registration | [Santa Cruz County COVID-19 Vaccination Registration](https://survey123.arcgis.com/share/b0c6ce208fc94cf4a30b173810caab53) |
 
 
-### Arizona::Santa Cruz Active Phase (1b)
+### Arizona::Santa Cruz Active Phase (1c)
 
 ## Arizona::Yavapai
 
