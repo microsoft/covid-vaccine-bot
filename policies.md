@@ -605,7 +605,7 @@ Family caregivers of those with high/moderate-risk conditions may also be eligib
 * Are you a long term care resident or work in a long term care facility?
 * Have you been deemed extremely vulnerable to COVID-19 by hospital providers?
 	* Please note that a form from your physician is required
-* Are you age 50+?
+* Are you age 40+?
 
 # Georgia
 
@@ -679,7 +679,7 @@ Family caregivers of those with high/moderate-risk conditions may also be eligib
 * Are you a healthcare worker?
 * Are you a long-term care resident?
 * Are you classified as an essential worker?
-	* Frontline essential workers are defined as workers whose duties must be performed on-site, require being in close proximity (less than 6 feet) to the public or coworkers, and are essential to the functioning of society. Some examples of essential workers in 1b include: first responders, critical infrastructure and key resources (i.e. harbor and dock workers, electric, gas, water, sewer, telephone), education (i.e. teachers, staff, early childhood education), public transit workers, those essential for federal, state, and local government operations, food production and agriculture workers, grocery store workers, and U.S. Postal Service.
+	* Frontline essential workers are defined as workers whose duties must be performed on-site, require being in close proximity (less than 6 feet) to the public or coworkers, and are essential to the functioning of society. Some examples of essential workers in 1b include: first responders, critical infrastructure and key resources (i.e. harbor and dock workers, electric, gas, water, sewer, telephone), education (i.e. teachers, staff, early childhood education), public transit workers, those essential for federal, state, and local government operations, food production and agriculture workers, grocery store workers, and U.S. Postal Service. This also includes those employed at hotels, restaurants, and bars
 * Are you age 16+, and have a high-risk medical condition?
 	* This includes:
 - Individuals on dialysis
@@ -687,7 +687,7 @@ Family caregivers of those with high/moderate-risk conditions may also be eligib
 - Individuals undergoing chemotherapy or other infusion therapy
 
 People with other chronic conditions also qualify for vaccine in Phase 1c, but not immediately. Data shows a correlation between medical conditions and age, so age will serve as a surrogate for many of these other chronic medical conditions. People with these chronic illnesses will be eligible for vaccine by age in descending order.
-* Are you age 65+?
+* Are you age 60+?
 
 # Idaho
 
@@ -701,7 +701,7 @@ People with other chronic conditions also qualify for vaccine in Phase 1c, but n
 | scheduling_phone | [Scheduling Hotline](tel:) |
 
 
-## Idaho Active Phase (march_22)
+## Idaho Active Phase (march_29)
 
 * Are you a healthcare worker?
 * Are you a long term care resident or work in a long term care facility?
@@ -740,6 +740,21 @@ People with other chronic conditions also qualify for vaccine in Phase 1c, but n
 - Manufacturing, public transit, and U.S. Postal Service workers
 - Flight crews
 - Subset of essential gas, electric, water, and telecommunications utility workers, who work indoors (see [here](https://healthandwelfare.idaho.gov/covid-19-vaccination))
+* Are you age 45+, and have a high-risk medical condition?
+	* Adults of any age with the following conditions are at increased risk of severe illness from the virus that causes COVID-19:
+
+Cancer
+Chronic kidney disease
+COPD (chronic obstructive pulmonary disease)
+Down Syndrome
+Heart conditions, such as heart failure, coronary artery disease, or cardiomyopathies
+Immunocompromised state (weakened immune system) from solid organ transplant
+Obesity (body mass index [BMI] of 30 kg/m2 or higher but < 40 kg/m2)
+Severe Obesity (BMI >= 40 kg/m2)
+Pregnancy
+Sickle cell disease
+Smoking
+Type 2 diabetes mellitus (see [here](https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html))
 * Are you age 45+?
 * Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?
 
@@ -1189,11 +1204,25 @@ People with other chronic conditions also qualify for vaccine in Phase 1c, but n
 	* Health care personnel are defined by the CDC as paid and unpaid workers in health care settings who have the potential for direct or indirect exposure to patients or infectious materials. This includes hospital, non-hospital, congregate, and home health care settings. (see [here](https://www.dph.illinois.gov/covid19/vaccination-plan))
 * Are you a long term care resident or work in a long term care facility?
 * Are you classified as an essential worker?
-	* Frontline essential workers (who do not work remotely) are defined as those workers who are essential for the functioning of society and include the following: first responders, corrections officers/inmates, food and agriculture workers, US Postal Service workers, manufacturing workers, grocery store workers, public transit workers, education workers (congregate child care, pre-K through 12th grade), and shelters/adult day care (see [here](https://www.dph.illinois.gov/covid19/vaccination-plan))
+	* Essential workers include the following: first responders, corrections officers/inmates, food and agriculture workers, US Postal Service workers, manufacturing workers, grocery store workers, public transit workers, education workers (congregate child care, pre-K through 12th grade), shelters/adult day care, higher education staff, government workers, media, restaurant staff, construction trade workers, and religious leaders  (see [here](https://coronavirus.illinois.gov/s/vaccination-plan-overview))
 * Are you age 65+?
 * Are you age 16+, and have a high-risk medical condition?
 	* Persons aged 16 to 64 years with medical conditions that increase the risk for severe COVID-19. Conditions include Obesity, Diabetes, Pulmonary Diseases, Smoking, Heart Conditions, Chronic Kidney Disease, Cancer, Solid Organ Transplant, Sickle Cell Disease, Pregnancy, and Persons with Disability.(Not otherwise covered in previous categories). (see [here](https://www.dph.illinois.gov/covid19/vaccination-plan))
 * Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?
+
+## Illinois Regions
+
+## Illinois::Chicago 
+
+### Illinois::Chicago  Links
+
+| link type | link |
+| --- | --- |
+| info | [Illinois Department of Public Health](https://www.chicago.gov/city/en/sites/covid19-vaccine/home.html) |
+| providers | [View locations providing vaccines](https://www.chicago.gov/city/en/sites/covid19-vaccine/home/vaccine-finder.html) |
+
+
+### Illinois::Chicago  Active Phase (1c)
 
 # Indiana
 
