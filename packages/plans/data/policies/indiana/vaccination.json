@@ -55,7 +55,7 @@
 					"moreInfoText": "c19.eligibility.moreinfo/exposure_to_infectious_material.do.in.1b"
 				},
 				{
-					"question": "c19.eligibility.question/age.are_you"
+					"question": "c19.eligibility.question/age.are_you_age_30"
 				},
 				{
 					"question": "c19.eligibility.question/health",
@@ -66,7 +66,8 @@
 					"question": "c19.eligibility.question/essential_worker.are_you",
 					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.are_you.in.1b"
 				}
-			]
+			],
+			"label": "Current"
 		}
 	]
 }
