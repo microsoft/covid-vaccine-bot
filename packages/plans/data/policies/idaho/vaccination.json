@@ -111,7 +111,7 @@
 					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.id.march_29"
 				},
 				{
-					"question": "c19.eligibility.question/health.are_you_age_45",
+					"question": "c19.eligibility.question/health",
 					"moreInfoText": "c19.eligibility.moreinfo/health.are_you_age_45.id.march_29",
 					"moreInfoUrl": "https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html"
 				},
