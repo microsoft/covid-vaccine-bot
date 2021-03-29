@@ -1,8 +1,8 @@
 String ID,en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th
-c19.eligibility.question/health.1a.dc.inpatient_psychiatric,Are you an inpatient psychiatric patient?,,,,¿Eres un paciente psiquiátrico hospitalizado?,,,,,,,,,,
+c19.eligibility.question/health.1a.dc.inpatient_psychiatric,"Are you an inpatient psychiatric patient?",,,,"¿Eres un paciente psiquiátrico hospitalizado?",,,,,,,,,,
 c19.eligibility.question/congregate.dc,"Do you live in an intermediate care facility, a group home, or another high-risk congregate setting?",,,,"¿Vive en un centro de atención intermedia, en una casa de grupo u otro entorno congregado de alto riesgo?",,,,,,,,,,
-c19.link/scheduling.phone.dc,1-855-363-0333,,,,1-855-363-0333,,,,,,,,,,
-c19.link/scheduling.phone.description.dc,COVID-19 Call Center,,,,Centro de llamadas COVID-19,,,,,,,,,,
+c19.link/scheduling.phone.dc,"1-855-363-0333",,,,"1-855-363-0333",,,,,,,,,,
+c19.link/scheduling.phone.description.dc,"COVID-19 Call Center",,,,"Centro de llamadas COVID-19",,,,,,,,,,
 c19.eligibility.moreinfo/health.dc.1b," * Asthma, Chronic Obstructive Pulmonary Disease (COPD), and other Chronic Lung Disease
  * Bone Marrow and Solid Organ Transplantation
  * Cancer
@@ -22,26 +22,7 @@ c19.eligibility.moreinfo/health.dc.1b," * Asthma, Chronic Obstructive Pulmonary 
  * Pregnancy
  * Severe Genetic Disorders
  * Sickle Cell Disease
- * Thalassemia",,,," * Asma, enfermedad pulmonar obstructiva crónica (EPOC) y otras enfermedades pulmonares crónicas
- * Médula ósea y trasplante de órganos sólidos
- * Cáncer
- * Enfermedad cerebrovascular
- * Enfermedad renal crónica
- * Cardiopatía congénita
- * Diabetes Mellitus
- * Afecciones cardíacas, como insuficiencia cardíaca, enfermedad de las arterias coronarias o cardiomiopatías
- * VIH
- * Hipertensión
- * Estado inmunodeprimido
- * Trastornos metabólicos heredados
- * Discapacidades intelectuales y del desarrollo
- * Enfermedad hepática
- * Condiciones neurológicas
- * Obesidad, IMC - 30 kg/m2
- * Embarazo
- * Trastornos genéticos graves
- * Enfermedad de células falciformes
- * Talasemia",,,,,,,,,,
+ * Thalassemia",,,,,,,,,,,,,,
 c19.eligibility.moreinfo/essential_worker.dc.1b,"This includes:
 - Members of the Metropolitan Police Department
 - Department of Corrections Employees
@@ -57,20 +38,46 @@ c19.eligibility.moreinfo/essential_worker.dc.1b,"This includes:
 - Staff working in food service
 - Essential employees in local government agencies
 - Essential employees of public utilities
-- Individuals working in commercial and residential property maintenance and environmental services",,,,"Esto incluye:
-- Miembros del Departamento de Policía Metropolitana
-- Empleados del Departamento de Correccionales
-- Continuidad del personal de Operaciones Gubernamentales
-- Todos los maestros y el personal que trabajan para una escuela o centro de cuidado infantil con licencia en DC
-- Trabajadores de la tienda de comestibles
-- Trabajadores de alcance y otros empleados esenciales que trabajan en servicios de salud, humanos y sociales
-- Individuos que trabajan en la fabricación
-- Individuos que trabajan en envases de alimentos
-- Personal que trabaja en tribunales y particulares que prestan servicios legales
-- Empleados de primera línea de tránsito público (masivo)
-- Empleados del Servicio Postal de EE. UU.
-- Personal que trabaja en el servicio de alimentos
-- Empleados esenciales en agencias gubernamentales locales
-- Empleados esenciales de los servicios públicos
-- Individuos que trabajan en el mantenimiento de propiedades comerciales y residenciales y servicios ambientales",,,,,,,,,,
-c19.eligibility.moreinfo/congregate.dc.dc.1b,This also includes individuals in in-patient psychiatric care facilities and those who are currently incarcerated. ,,,,Esto también incluye a las personas en los centros de atención psiquiátrica en el paciente y a las que actualmente están encarceladas. ,,,,,,,,,,
+- Individuals working in commercial and residential property maintenance and environmental services",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/congregate.dc.dc.1b,"This also includes individuals in in-patient psychiatric care facilities and those who are currently incarcerated. ",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/long_term_care_resident.dc.1c_tier_2,"This includes residents of long-term and intermediate care facilities and residents of community residential facilities/group homes",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/essential_worker.dc.1c_tier_2,"This includes:
+- Members of the Metropolitan Police Department
+- Department of Corrections Employees
+- Continuity of Government Operations personnel
+- All teachers and staff who work for a school or licensed child care facility in DC
+- Grocery Store workers
+- Outreach workers and other essential employees who work in health, human, and social services
+- Individuals working in manufacturing
+- Individuals working in food packaging
+- Staff working in courts and individuals providing legal services
+- Frontline employees of public (mass) transit
+- Employees of the US Postal Service
+- Staff working in food service
+- Essential employees in local government agencies
+- Essential employees of public utilities
+- Individuals working in commercial and residential property maintenance and environmental services
+- Individuals working in non-public transit transportation services (i.e. for hire vehicles, ride share)
+- Individuals working in logistics/delivery/courier services
+- Essential employees working in media and mass communications",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/congregate.dc.dc.1c_tier_2,"This also includes individuals in in-patient psychiatric care facilities and those who are currently incarcerated. ",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/health.dc.1c_tier_2," * Asthma, Chronic Obstructive Pulmonary Disease (COPD), and other Chronic Lung Disease
+ * Bone Marrow and Solid Organ Transplantation
+ * Cancer
+ * Cerebrovascular Disease
+ * Chronic Kidney Disease
+ * Congenital Heart Disease
+ * Diabetes Mellitus
+ * Heart Conditions, such as Heart Failure, Coronary Artery Disease, or Cardiomyopathies
+ * HIV
+ * Hypertension
+ * Immunocompromised State
+ * Inherited Metabolic Disorders
+ * Intellectual and Developmental Disabilities
+ * Liver Disease
+ * Neurologic Conditions
+ * Obesity, BMI - 30 kg/m2
+ * Pregnancy
+ * Severe Genetic Disorders
+ * Sickle Cell Disease
+ * Thalassemia",,,,,,,,,,,,,,
