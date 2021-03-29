@@ -9,7 +9,8 @@
 			"text": "c19.links/vax_providers"
 		}
 	},
-	"activePhase": "1c",
+	"activePhase": "current",
+	"noPhaseLabel": true,
 	"phases": [
 		{
 			"id": "1a",
@@ -70,6 +71,17 @@
 				{
 					"question": "c19.eligibility.question/age.are",
 					"moreInfoUrl": "https://www.dshs.state.tx.us/coronavirus/immunize/vaccine/EVAP-Phase1C.pdf"
+				}
+			]
+		},
+		{
+			"id": "current",
+			"label": "current",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.16_up",
+					"moreInfoText": "c19.eligibility.moreinfo/age.16_up.tx.current",
+					"moreInfoUrl": "https://www.dshs.state.tx.us/coronavirus/immunize/vaccine.aspx"
 				}
 			]
 		}
