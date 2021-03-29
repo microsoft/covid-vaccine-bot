@@ -3667,42 +3667,10 @@ o Migrant farmworkers living in shared housing or reliant on shared transportati
 | providers | [View locations providing vaccines](https://www.dshs.state.tx.us/coronavirus/immunize/vaccine-hubs.aspx#hublist) |
 
 
-## Texas Active Phase (1c)
+## Texas Active Phase (current)
 
-* Are you a healthcare worker?
-	* This includes:
-- Paid and unpaid workers in hospital settings working directly with patients who are positive or at high risk for COVID-19.
-- Long-term care staff working directly with vulnerable residents. 
-- EMS providers who engage in 9-1-1 emergency services like pre-hospital care and transport
-- Home health care workers, including hospice care, who directly interface with vulnerable and high-risk patients
-- Residents of long-term care facilities
-- Staff in outpatient care settings who interact with symptomatic patients.
-- Direct care staff in freestanding emergency medical care facilities and urgent care clinics
-- Community pharmacy staff who may provide direct services to clients, including vaccination or testing for individuals who may have COVID
-- Public health and emergency response staff directly involved in administration of COVID testing and vaccinations
-- Last responders who provide mortuary or death services to decedents with COVID-19.
-- School nurses who provide health care to students and teachers (see [here](https://www.dshs.state.tx.us/coronavirus/immunize/vaccine/EVAP-Phase1A.pdf))
-* Are you a long term care resident or work in a long term care facility? (see [here](https://www.dshs.state.tx.us/coronavirus/immunize/vaccine/EVAP-Phase1A.pdf))
-* Are you a K-12 educator or work in a licensed child care facility?
-	* With the federal directive, the following education and child care personnel are now eligible to be vaccinated in Texas:
-
-Those who work in pre-primary, primary, and secondary schools;
-Head Start and Early Head Start programs (including teachers, staff, and bus drivers); and
-Those who work as or for licensed child care providers, including center-based and family care providers. (see [here](https://www.dshs.state.tx.us/coronavirus/immunize/vaccine/EVAP-Phase1C.pdf))
-* Are you age 16+, and have a high-risk medical condition?
-	* People 65+ or people 16+ with a health condition that increases risk of severe COVID‑19 illness, including but not limited to:
-
-Cancer
-Chronic kidney disease
-COPD (chronic obstructive pulmonary disease)
-Down Syndrome
-Heart conditions, such as heart failure, coronary artery disease, or cardiomyopathies
-Organ transplantation
-Obesity
-Pregnancy
-Sickle cell disease
-Type 2 diabetes (see [here](https://www.dshs.state.tx.us/coronavirus/immunize/vaccine/EVAP-Phase1B.pdf))
-* Are you age 50+? (see [here](https://www.dshs.state.tx.us/coronavirus/immunize/vaccine/EVAP-Phase1C.pdf))
+* Are you age 16+?
+	* The state's Expert Vaccine Allocation Panel recommended opening vaccination to everyone who falls under the current Food and Drug Administration emergency use authorizations. All vaccines are authorized for people age 18 and older. The Pfizer vaccine is authorized for people 16 and older. (see [here](https://www.dshs.state.tx.us/coronavirus/immunize/vaccine.aspx))
 
 # Virgin Islands
 
