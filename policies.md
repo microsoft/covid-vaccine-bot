@@ -1208,7 +1208,7 @@ Type 2 diabetes mellitus (see [here](https://www.cdc.gov/coronavirus/2019-ncov/n
 * Are you age 65+?
 * Are you age 16+, and have a high-risk medical condition?
 	* Persons aged 16 to 64 years with medical conditions that increase the risk for severe COVID-19. Conditions include Obesity, Diabetes, Pulmonary Diseases, Smoking, Heart Conditions, Chronic Kidney Disease, Cancer, Solid Organ Transplant, Sickle Cell Disease, Pregnancy, and Persons with Disability.(Not otherwise covered in previous categories). (see [here](https://www.dph.illinois.gov/covid19/vaccination-plan))
-* Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?
+* Are you currently incarcerated?
 
 ## Illinois Regions
 
