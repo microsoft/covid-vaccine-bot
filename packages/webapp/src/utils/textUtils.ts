@@ -21,8 +21,8 @@ export const toProperCase = (text: string): string => {
 }
 
 export const formatId = (text: string) => {
-	return text?.replace(/[^a-z0-9\s]/gi, '')
-		.replace(/\s/g, '_')
+	return text?.trim().replace(/[^a-z0-9\s]/gi, '')
+		.replace(/\s+/g, '_')
 		.toLowerCase()
 }
 
