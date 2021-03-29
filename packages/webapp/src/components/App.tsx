@@ -75,6 +75,24 @@ export default observer(function App() {
 		setSelectedKey('Dashboard')
 	}, [setSelectedKey])
 
+	const renderRepoMessageBar = () => {
+		if (state.loadedPRData && state.prChanges) {
+			return (
+				<MessageBar
+					messageBarType={5}
+					isMultiline={true}
+					styles={{ root: { margin: '10px 5px' } }}
+				>
+					You are currently working on: <strong>PR: {state.loadedPRData.number} - {state.loadedPRData.title}</strong><br/>
+					Last updated by: {state.prChanges?.last_commit?.commit?.committer?.name}<br/>
+					Last updated on: {new Date(state.loadedPRData.updated_at).toLocaleString()}
+				</MessageBar>
+			)
+		}
+
+		return null
+	}
+
 	return (
 		<div className="rootContentWrapper">
 			{state.isAuthenticated ? (
@@ -173,17 +191,7 @@ export default observer(function App() {
 																review tab to submit these changes.
 															</MessageBar>
 														)}
-														{state.loadedPRData && (
-															<MessageBar
-																messageBarType={5}
-																isMultiline={true}
-																styles={{ root: { margin: '10px 5px' } }}
-															>
-																You are currently working on: <strong>PR: {state.loadedPRData.number} - {state.loadedPRData.title}</strong><br/>
-																Last updated by: {state.prChanges.last_commit.commit.committer.name}<br/>
-																Last updated on: {new Date(state.loadedPRData.updated_at).toLocaleString()}
-															</MessageBar>
-														)}
+														{renderRepoMessageBar()}
 														<Dashboard />
 													</PivotItem>
 													<PivotItem headerText="Locations" itemKey="Locations">
@@ -195,17 +203,7 @@ export default observer(function App() {
 																review tab to submit these changes.
 															</MessageBar>
 														)}
-														{state.loadedPRData && (
-															<MessageBar
-																messageBarType={5}
-																isMultiline={true}
-																styles={{ root: { margin: '10px 5px' } }}
-															>
-																You are currently working on: <strong>PR: {state.loadedPRData.number} - {state.loadedPRData.title}</strong><br/>
-																Last updated by: {state.prChanges.last_commit.commit.committer.name}<br/>
-																Last updated on: {new Date(state.loadedPRData.updated_at).toLocaleString()}
-															</MessageBar>
-														)}
+														{renderRepoMessageBar()}
 														<Locations />
 													</PivotItem>
 													{state.isEditable && (
@@ -221,17 +219,7 @@ export default observer(function App() {
 																	review tab to submit these changes.
 																</MessageBar>
 															)}
-															{state.loadedPRData && (
-																<MessageBar
-																	messageBarType={5}
-																	isMultiline={true}
-																	styles={{ root: { margin: '10px 5px' } }}
-																>
-																	You are currently working on: <strong>PR: {state.loadedPRData.number} - {state.loadedPRData.title}</strong><br/>
-																	Last updated by: {state.prChanges.last_commit.commit.committer.name}<br/>
-																	Last updated on: {new Date(state.loadedPRData.updated_at).toLocaleString()}
-																</MessageBar>
-															)}
+															{renderRepoMessageBar()}
 															<Translate />
 														</PivotItem>
 													)}
