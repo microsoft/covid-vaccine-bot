@@ -526,10 +526,11 @@ Family caregivers of those with high/moderate-risk conditions may also be eligib
 | scheduling_phone | [1-855-363-0333](tel:1-855-363-0333) |
 
 
-## District of Columbia Active Phase (1b)
+## District of Columbia Active Phase (1c_tier_2)
 
 * Are you a healthcare worker?
 * Are you a long-term care resident?
+	* This includes residents of long-term and intermediate care facilities and residents of community residential facilities/group homes
 * Are you classified as an essential worker?
 	* This includes:
 - Members of the Metropolitan Police Department
@@ -547,6 +548,9 @@ Family caregivers of those with high/moderate-risk conditions may also be eligib
 - Essential employees in local government agencies
 - Essential employees of public utilities
 - Individuals working in commercial and residential property maintenance and environmental services
+- Individuals working in non-public transit transportation services (i.e. for hire vehicles, ride share)
+- Individuals working in logistics/delivery/courier services
+- Essential employees working in media and mass communications
 * Are you age 65+?
 * Do you live in an intermediate care facility, a group home, or another high-risk congregate setting?
 	* This also includes individuals in in-patient psychiatric care facilities and those who are currently incarcerated.
@@ -601,7 +605,7 @@ Family caregivers of those with high/moderate-risk conditions may also be eligib
 * Are you a long term care resident or work in a long term care facility?
 * Have you been deemed extremely vulnerable to COVID-19 by hospital providers?
 	* Please note that a form from your physician is required
-* Are you age 50+?
+* Are you age 40+?
 
 # Georgia
 
