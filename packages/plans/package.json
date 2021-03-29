@@ -13,6 +13,7 @@
 		"deploy_resources": "ts-node scripts/healthbot/deployResources",
 		"deploy_localizations": "ts-node scripts/healthbot/deployLocalizations",
 		"deploy": "run-s deploy_localizations deploy_resources",
+		"deploy:data": "yarn deploy",
 		"localize": "ts-node scripts/localize es es-us",
 		"clearLocalization": "ts-node scripts/clearLocalization es-us"
 	},
