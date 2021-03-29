@@ -740,7 +740,7 @@ People with other chronic conditions also qualify for vaccine in Phase 1c, but n
 - Manufacturing, public transit, and U.S. Postal Service workers
 - Flight crews
 - Subset of essential gas, electric, water, and telecommunications utility workers, who work indoors (see [here](https://healthandwelfare.idaho.gov/covid-19-vaccination))
-* Are you age 45+, and have a high-risk medical condition?
+* Are you age 16+, and have a high-risk medical condition?
 	* Adults of any age with the following conditions are at increased risk of severe illness from the virus that causes COVID-19:
 
 Cancer
