@@ -679,7 +679,7 @@ Family caregivers of those with high/moderate-risk conditions may also be eligib
 * Are you a healthcare worker?
 * Are you a long-term care resident?
 * Are you classified as an essential worker?
-	* Frontline essential workers are defined as workers whose duties must be performed on-site, require being in close proximity (less than 6 feet) to the public or coworkers, and are essential to the functioning of society. Some examples of essential workers in 1b include: first responders, critical infrastructure and key resources (i.e. harbor and dock workers, electric, gas, water, sewer, telephone), education (i.e. teachers, staff, early childhood education), public transit workers, those essential for federal, state, and local government operations, food production and agriculture workers, grocery store workers, and U.S. Postal Service.
+	* Frontline essential workers are defined as workers whose duties must be performed on-site, require being in close proximity (less than 6 feet) to the public or coworkers, and are essential to the functioning of society. Some examples of essential workers in 1b include: first responders, critical infrastructure and key resources (i.e. harbor and dock workers, electric, gas, water, sewer, telephone), education (i.e. teachers, staff, early childhood education), public transit workers, those essential for federal, state, and local government operations, food production and agriculture workers, grocery store workers, and U.S. Postal Service. This also includes those employed at hotels, restaurants, and bars
 * Are you age 16+, and have a high-risk medical condition?
 	* This includes:
 - Individuals on dialysis
@@ -687,7 +687,7 @@ Family caregivers of those with high/moderate-risk conditions may also be eligib
 - Individuals undergoing chemotherapy or other infusion therapy
 
 People with other chronic conditions also qualify for vaccine in Phase 1c, but not immediately. Data shows a correlation between medical conditions and age, so age will serve as a surrogate for many of these other chronic medical conditions. People with these chronic illnesses will be eligible for vaccine by age in descending order.
-* Are you age 65+?
+* Are you age 60+?
 
 # Idaho
 
