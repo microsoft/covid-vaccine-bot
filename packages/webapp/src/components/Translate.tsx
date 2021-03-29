@@ -598,16 +598,18 @@ export default observer(function Translate() {
 						<section>
 							<div className="filterGroup">
 								<div>
-									<label>Translate from:</label>
+									<label htmlFor={"availDropdown"}>Translate from:</label>
 									<Dropdown
+										id="availDropdown"
 										selectedKey={toLanguage.current}
 										placeholder="Available languages"
 										options={languageOptions}
 										styles={filterDropdownStyles}
 										onChange={onLanguageChange}
 									/>
-									<label>Show:</label>
+									<label htmlFor={"translateDropdown"}>Show:</label>
 									<Dropdown
+										id="translateDropdown"
 										selectedKey={translationFilterState}
 										placeholder="Needs Translation"
 										options={translationFilter}
