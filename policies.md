@@ -1342,8 +1342,9 @@ Type 2 diabetes mellitus (see [here](https://www.cdc.gov/coronavirus/2019-ncov/n
 | scheduling_phone | [855-598-2246](tel:855-598-2246) |
 
 
-## Kentucky Active Phase (1c)
+## Kentucky Active Phase (2)
 
+* Are you age 40+?
 * Are you a long term care resident or work in a long term care facility?
 	* Residents of long-term care and assisted living facilities, as well as health care personnel, including clinicians residing outside of Kentucky but who provide care in Kentucky
 * Are you classified as an essential worker?
@@ -1401,7 +1402,6 @@ Pulmonary fibrosis (having damaged or scarred lung tissues)
 Thalassemia (a type of blood disorder)
 Type 1 diabetes mellitus
  (see [here](https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html))
-* Are you age 60+?
 * Are you currently living in a transient housing facility?
 
 # Louisiana
