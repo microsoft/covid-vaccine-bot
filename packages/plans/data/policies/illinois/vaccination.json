@@ -74,7 +74,7 @@
 					"moreInfoUrl": "https://www.dph.illinois.gov/covid19/vaccination-plan"
 				},
 				{
-					"question": "c19.eligibility.question/congregate"
+					"question": "c19.eligibility.question/congregate.are_you_currently"
 				}
 			]
 		},
@@ -104,7 +104,7 @@
 					"moreInfoUrl": "https://www.dph.illinois.gov/covid19/vaccination-plan"
 				},
 				{
-					"question": "c19.eligibility.question/congregate"
+					"question": "c19.eligibility.question/congregate.are_you_currently"
 				}
 			]
 		}
