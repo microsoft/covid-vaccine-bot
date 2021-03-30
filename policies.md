@@ -2571,66 +2571,7 @@ All other essential workers per Cybersecurity and Infrastructure Security Agency
 
 ## Ohio Active Phase (current)
 
-* Are you a healthcare worker?
-	* Healthcare workers and personnel who are routinely involved in the care of COVID-19 patients.
-* Are you age 40+?
-* Are you a long term care resident or work in a long term care facility?
-* Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?
-	* * Residents and staff in nursing homes.
-* Residents and staff in assisted living facilities.
-* Patients and staff at state psychiatric hospitals.
-* Residents and staff at our two state-run homes for Ohio veterans.
-
-* Are you K-12 personnel?
-* Are you a firefighter, law enforcement officer, or corrections staff?
-	* Law enforcement and corrections officers: There are approximately 76,000 Ohioans eligible in this category.
- * This group includes sworn law enforcement officers and peace officers who have first responder or direct supervisory responsibilities. These individuals must be active duty, working a regular minimum of 20 hours a week. Eligibility does not include retired, “special,” or reserve officers.  
-      * Police officers.
-      * Sheriff's deputies.
-      * Ohio State Highway Patrol troopers.
-      * Special jurisdiction officers: Other state or federal enforcement officers such as Ohio Department of Natural Resources (ODNR) enforcement staff, pharmacy board investigators, BCI agents, state fire marshal investigators, federal transportation security officers, and other federal law enforcement officers who do not have access to vaccination from federal sources.
- * Corrections staff: Eligible are corrections staff, including probation and parole staff, who provide direct services to an adult or juvenile inmate or court-supervised individuals.
- * Firefighters: Individuals who have a valid active firefighting certificate in the State of Ohio who are active members or employees of a recognized fire department. This does not include retired, emeritus or reserve individuals. (see [here](https://coronavirus.ohio.gov/wps/portal/gov/covid-19/covid-19-vaccination-program/covid-19-vaccination-program))
-* Do you work in the funeral services industry?
-	* Funeral services: This group includes licensed staff and active apprentices in the funeral services industry. There are approximately 3,600 eligible Ohioans in this category. 
- * Embalmers/morticians.
- * Funeral home directors.
- * Crematory operators.
- * Apprentices. (see [here](https://coronavirus.ohio.gov/wps/portal/gov/covid-19/covid-19-vaccination-program/covid-19-vaccination-program))
-* Are you a K-12 educator or work in a licensed child care facility?
-	* Child care services: Staff members at child care centers and pre-kindergarten programs who have regular, ongoing direct contact with children enrolled in these programs. There are approximately 40,400 eligible Ohioans in this category.
- * Administrators, lead and assistant teachers, and substitute teachers enrolled in Ohio's Professional Registry who are currently working in open child care or pre-kindergarten programs. 
- * Licensing specialists employed by the Ohio Department of Job and Family Services or a county job and family services agency. 
- * The program does NOT include parent volunteers, board members, or owners/administrators who do not provide in-classroom support. (see [here](https://coronavirus.ohio.gov/wps/portal/gov/covid-19/covid-19-vaccination-program/covid-19-vaccination-program))
-* Are you age 16+, and have a high-risk medical condition?
-	* Ohioans born with or who have early childhood conditions that are carried into adulthood which put them at a higher risk for adverse outcomes due to COVID-19.
-Sickle cell anemia.
-Down syndrome.
-Cystic fibrosis.
-Muscular dystrophy.
-Cerebral palsy.
-Spina bifida.
-People born with severe heart defects, requiring regular specialized medical care.
-People with severe type 1 diabetes, who have been hospitalized for this in the past year.
-Phenylketonuria (PKU), Tay-Sachs, and other rare, inherited metabolic disorders.
-Epilepsy with continuing seizures; hydrocephaly; microcephaly, and other severe neurological disorders.
-Turner syndrome, fragile X syndrome, Prader-Willi syndrome, and other severe genetic disorders.
-People with severe asthma, who have been hospitalized for this in the past year.
-Alpha and beta thalassemia
-Solid organ transplant candidates and recipients.
-
-Additional medical conditions that qualify Ohioans for the vaccine are:
-People with amyotrophic lateral sclerosis (ALS), also known as Lou Gehrig's disease. 
-Bone marrow transplant recipients.
-People with type 1 diabetes.
-People with type 2 diabetes under the age of 50.
-People with end-stage renal disease (also known as end-stage kidney disease) under the age of 50.
-Cancer.
-Chronic kidney disease (CKD).
-Chronic obstructive pulmonary disease (COPD).
-Heart disease.
-Obesity.
-* Are you currently pregnant?
+* Are you age 16+?
 
 # Oklahoma
 
