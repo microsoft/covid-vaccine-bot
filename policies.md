@@ -4635,6 +4635,8 @@ Persons who are caregivers of those who are medically vulnerable and unable to b
 | scheduling_phone | [1-800-438-5795](tel:1-800-438-5795) |
 
 
+### Wyoming::Campbell Active Phase (18_and_older)
+
 ## Wyoming::Carbon
 
 ### Wyoming::Carbon Links
@@ -4659,6 +4661,8 @@ Persons who are caregivers of those who are medically vulnerable and unable to b
 | scheduling_phone | [1-800-438-5795](tel:1-800-438-5795) |
 
 
+### Wyoming::Converse Active Phase (18_and_older)
+
 ## Wyoming::Crook
 
 ### Wyoming::Crook Links
@@ -4669,6 +4673,8 @@ Persons who are caregivers of those who are medically vulnerable and unable to b
 | scheduling | [Schedule a Vaccination](https://wy.covidreadi.com/) |
 | scheduling_phone | [1-800-438-5795](tel:1-800-438-5795) |
 
+
+### Wyoming::Crook Active Phase (18_and_older)
 
 ## Wyoming::Fremont
 
@@ -4755,6 +4761,8 @@ Persons who are caregivers of those who are medically vulnerable and unable to b
 | scheduling_phone | [1-800-438-5795](tel:1-800-438-5795) |
 
 
+### Wyoming::Natrona Active Phase (18_and_older)
+
 ## Wyoming::Niobrara
 
 ### Wyoming::Niobrara Links
@@ -4826,6 +4834,11 @@ Persons who are caregivers of those who are medically vulnerable and unable to b
 | scheduling_phone | [307-922-5390](tel:307-922-5390) |
 
 
+### Wyoming::Sweetwater Active Phase (16_and_older)
+
+* Are you age 16+?
+	* We are currently offering the vaccine to all residents of Sweetwater County who are age 16+ (Pfizer) and age 18+ (Moderna).
+
 ## Wyoming::Teton
 
 ### Wyoming::Teton Links
@@ -4860,6 +4873,8 @@ Persons who are caregivers of those who are medically vulnerable and unable to b
 | scheduling | [Schedule a Vaccination](https://wy.covidreadi.com/) |
 | scheduling_phone | [1-800-438-5795](tel:1-800-438-5795) |
 
+
+### Wyoming::Washakie Active Phase (18_and_older)
 
 ## Wyoming::Weston
 
