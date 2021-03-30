@@ -80,12 +80,19 @@ orchestrator(loadPR, async (message) => {
 orchestrator(saveContinue, async () => {
 	const store = getAppStore()
 	if (store.userWorkingBranch) {
-		await repoServices('commitChanges', getChanges())
+		await repoServices('commitChanges', {...getChanges(), branchName: store.userWorkingBranch.ref})
 	} else {
 		const resp = await repoServices('createWorkingBranch')
 		if (resp) {
 			setUserWorkingBranch(resp)
-			await repoServices('commitChanges', getChanges())
+			await repoServices('commitChanges', {...getChanges(), branchName: resp.ref})
 		}
 	}
+
+	// after draft branch was created
+	// commit changes to draft branch, reset pending changes to false.
+	// update init global and repo with the commited version as base.
+	// user should be able to continue commiting to draft branch
+	// once user submitted for review, create pr should use draft branch. However, Review tab will only show if there's a diff in the repo.
+	// Review tab should show if working branch is present or pending changes is still true.
 })

@@ -466,7 +466,7 @@ export const repoServices = async (
 		case 'commitChanges':
 			if (extraData) {
 				debugger
-				await commitChanges(state, branchName, extraData.globalUpdates, extraData.locationUpdates)
+				await commitChanges(state, extraData.branchName, extraData.globalUpdates, extraData.locationUpdates)
 			}
 			break
 		case 'createPR':
