@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/covid-vaccine-bot/static/css/main.4bea38dc.chunk.css",
-    "main.js": "/covid-vaccine-bot/static/js/main.92dbb72c.chunk.js",
-    "main.js.map": "/covid-vaccine-bot/static/js/main.92dbb72c.chunk.js.map",
+    "main.css": "/covid-vaccine-bot/static/css/main.cbc8a5d4.chunk.css",
+    "main.js": "/covid-vaccine-bot/static/js/main.45d5eaad.chunk.js",
+    "main.js.map": "/covid-vaccine-bot/static/js/main.45d5eaad.chunk.js.map",
     "runtime-main.js": "/covid-vaccine-bot/static/js/runtime-main.7e6c0a3a.js",
     "runtime-main.js.map": "/covid-vaccine-bot/static/js/runtime-main.7e6c0a3a.js.map",
-    "static/js/2.96973290.chunk.js": "/covid-vaccine-bot/static/js/2.96973290.chunk.js",
-    "static/js/2.96973290.chunk.js.map": "/covid-vaccine-bot/static/js/2.96973290.chunk.js.map",
+    "static/js/2.7982b0a9.chunk.js": "/covid-vaccine-bot/static/js/2.7982b0a9.chunk.js",
+    "static/js/2.7982b0a9.chunk.js.map": "/covid-vaccine-bot/static/js/2.7982b0a9.chunk.js.map",
     "index.html": "/covid-vaccine-bot/index.html",
-    "static/css/main.4bea38dc.chunk.css.map": "/covid-vaccine-bot/static/css/main.4bea38dc.chunk.css.map",
-    "static/js/2.96973290.chunk.js.LICENSE.txt": "/covid-vaccine-bot/static/js/2.96973290.chunk.js.LICENSE.txt",
-    "static/js/main.92dbb72c.chunk.js.LICENSE.txt": "/covid-vaccine-bot/static/js/main.92dbb72c.chunk.js.LICENSE.txt"
+    "static/css/main.cbc8a5d4.chunk.css.map": "/covid-vaccine-bot/static/css/main.cbc8a5d4.chunk.css.map",
+    "static/js/2.7982b0a9.chunk.js.LICENSE.txt": "/covid-vaccine-bot/static/js/2.7982b0a9.chunk.js.LICENSE.txt",
+    "static/js/main.45d5eaad.chunk.js.LICENSE.txt": "/covid-vaccine-bot/static/js/main.45d5eaad.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.7e6c0a3a.js",
-    "static/js/2.96973290.chunk.js",
-    "static/css/main.4bea38dc.chunk.css",
-    "static/js/main.92dbb72c.chunk.js"
+    "static/js/2.7982b0a9.chunk.js",
+    "static/css/main.cbc8a5d4.chunk.css",
+    "static/js/main.45d5eaad.chunk.js"
   ]
 }
