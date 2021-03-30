@@ -1490,7 +1490,7 @@ Food/agriculture production, critical manufacturing, U.S. Postal Service, public
 Veterinarians and support staff
 Clergy and other essential support for houses of worship (see [here](https://coronavirus.maryland.gov/pages/vaccine))
 * Are you age 60+?
-* Are you currently hospitalized and diagnosed with a high-risk medical condition?
+* Are you currently receiving hospital-based treatment and diagnosed with a high-risk medical condition?
 	* Individuals who are currently receiving hospital-based treatment, including in hospital outpatient centers, AND diagnosed with at least one of the following conditions:
 Cancer patients who are currently in active treatment
 End stage renal disease patients requiring hemodialysis
