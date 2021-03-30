@@ -21,7 +21,7 @@
 			"text": "c19.link/scheduling.phone.vt"
 		}
 	},
-	"activePhase": "1a",
+	"activePhase": "1c",
 	"phases": [
 		{
 			"id": "1a",
@@ -90,7 +90,7 @@
 					"moreInfoUrl": "https://www.healthvermont.gov/covid-19/vaccine/getting-covid-19-vaccine#conditions"
 				},
 				{
-					"question": "c19.eligibility.question/age.60_up"
+					"question": "c19.eligibility.question/age.are"
 				},
 				{
 					"question": "c19.eligibility.question/essential_worker.are",
@@ -106,7 +106,8 @@
 					"moreInfoText": "c19.eligibility.moreinfo/people_of_color.do.vt.1c",
 					"moreInfoUrl": "https://www.healthvermont.gov/covid-19/vaccine/about-covid-19-vaccines-vermont#equity"
 				}
-			]
+			],
+			"label": "Current"
 		}
 	]
 }
