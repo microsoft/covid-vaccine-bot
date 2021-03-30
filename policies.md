@@ -2603,7 +2603,7 @@ All other essential workers per Cybersecurity and Infrastructure Security Agency
 | scheduling_phone | [866-698-6155](tel:866-698-6155) |
 
 
-## Oregon Active Phase (1b)
+## Oregon Active Phase (1b_group_6)
 
 * Are you a healthcare worker?
 	* This includes
@@ -2620,19 +2620,31 @@ All other essential workers per Cybersecurity and Infrastructure Security Agency
 - Adults and age-eligible children who have a medical condition or disability who receive services in their homes
 - All other outpatient HCPs
 - Other HCP who provide direct service to people with I/DD and other high-risk populations.
-- Other public health settings, such as HCP serving WIC, or CBO's with direct or indirect exposures (see [here](https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le3527A.pdf))
+- Other public health settings, such as HCP serving WIC, or CBO's with direct or indirect exposures
 * Are you a long term care resident or work in a long term care facility? (see [here](https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le3527A.pdf))
-* Are you a K-12 educator or work in a licensed child care facility?
-	* This includes childcare providers, early learning and K-12 educators and staff (see [here](https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le3527A.pdf))
 * Are you age 65+? (see [here](https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le3527A.pdf))
+* Are you a K-12 educator or work in a licensed child care facility? (see [here](https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le3527A.pdf))
 * Do you work or live in a congregate setting?
 	* This includes all paid and unpaid healthcare personnel, all staff and contractors, including residents who meet the age requirements of Residential care facilities, Adult foster care, Group homes for people with intellectual and developmental disabilities, Other similar congregate care sites; 
 - Hospice programs
 - Mobile crisis care and related services
 - Individuals working in a correctional setting
 - Adults and youth in custody 16 years and older (see [here](https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le3527A.pdf))
+* Are you age 45+, and have a high-risk medical condition? (see [here](https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le3527A.pdf))
 * Are you classified as an essential worker?
-	* This includes migrant and seasonal farmworkers currently working in the fields (see [here](https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le3527A.pdf))
+	* This includes:
+- Migrant and seasonal farm workers
+- Seafood and agricultural workers
+- Food processing workers
+- Wildland firefighters (see [here](https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le3527A.pdf))
+* Are you currently pregnant?
+	* Pregnant people 16 and older are eligible (see [here](https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le3527A.pdf))
+* Are you experiencing homelessness or living in a shelter?
+	* This includes:
+- Individuals experiencing houselessness (sheltered and unsheltered)
+- People currently displaced by wildfires (see [here](https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le3527A.pdf))
+* Are you a resident or staff of public or private low income and affordable senior housing?
+	* This includes people living in low-income senior housing, senior congregate and independent living (see [here](https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le3527A.pdf))
 
 ## Oregon Regions
 
