@@ -1778,44 +1778,10 @@ Group C: Caregiver family members and guardians age 16 and over of children with
 | scheduling_phone | [883-431-2053](tel:883-431-2053) |
 
 
-## Minnesota Active Phase (1b)
+## Minnesota Active Phase (16_and_older)
 
-* Are you a healthcare worker?
-	* This includes health care workers and people working at health care facilities, first responders who provide direct patient care as part of the EMS system, and primary caregivers for people with complex medical needs or disabilities (see [here](https://mn.gov/covid19/vaccine/whos-getting-vaccinated/vaccinated.jsp))
-* Are you a long term care resident or work in a long term care facility?
-	* Long-term care residents and staff members at long-term care facilities in Minnesota are eligible (see [here](https://mn.gov/covid19/vaccine/whos-getting-vaccinated/vaccinated.jsp))
-* Are you a K-12 educator or work in a licensed child care facility?
-	* Pre-kindergarten through Adult Basic and Community Education school staff members, or contracted school staff members, at schools as well as child care staff members at licensed and certified child care centers or programs in Minnesota are eligible (see [here](https://mn.gov/covid19/vaccine/whos-getting-vaccinated/vaccinated.jsp))
-* Are you age 65+? (see [here](https://mn.gov/covid19/vaccine/whos-getting-vaccinated/vaccinated.jsp))
-* Are you classified as an essential worker?
-	* This includes agricultural, airport staff, additional child care workers not previously eligible, correctional settings, first responders, food production, food retail, food service, judicial system workers, manufacturing, public health workers, public transit, Postal Service workers and those working in food processing plants (see [here](https://mn.gov/covid19/vaccine/whos-getting-vaccinated/vaccinated.jsp))
-* Are you age 16+, and have two or more high-risk medical conditions?
-	* High risk underlying medical conditions include: 
-Active cancer
-Chronic kidney disease
-COPD (chronic obstructive pulmonary disease)
-Diabetes - Type 1 or 2
-Down Syndrome
-Heart conditions, such as heart failure, coronary artery disease, or cardiomyopathies
-Immunocompromised state (weakened immune system) from solid organ transplant, HIV, bone marrow disease, chronic steroids for more than 30 days, immunodeficiency disease, or taking immunosuppressive medications
-Obesity - body mass index (BMI) greater than 30 kg/m2 
-Pregnancy
-Sickle cell disease (see [here](https://mn.gov/covid19/vaccine/whos-getting-vaccinated/vaccinated.jsp))
-* Are you age 45+, and have a high-risk medical condition?
-	* High risk underlying medical conditions include: 
-Active cancer
-Chronic kidney disease
-COPD (chronic obstructive pulmonary disease)
-Diabetes - Type 1 or 2
-Down Syndrome
-Heart conditions, such as heart failure, coronary artery disease, or cardiomyopathies
-Immunocompromised state (weakened immune system) from solid organ transplant, HIV, bone marrow disease, chronic steroids for more than 30 days, immunodeficiency disease, or taking immunosuppressive medications
-Obesity - body mass index (BMI) greater than 30 kg/m2 
-Pregnancy
-Sickle cell disease (see [here](https://mn.gov/covid19/vaccine/whos-getting-vaccinated/vaccinated.jsp))
-* Are you age 50+ and live in a multigenerational household? (see [here](https://mn.gov/covid19/vaccine/whos-getting-vaccinated/vaccinated.jsp))
-* Are you a person with a rare condition or disability that put you at higher risk?
-	* This includes Sickle cell disease, Down Syndrome, or oxygen-dependent chronic lung or heart conditions, and those who are in active cancer treatment or immunocompromised from organ transplant, as well as other rare conditions. (see [here](https://mn.gov/covid19/vaccine/whos-getting-vaccinated/vaccinated.jsp))
+* Are you age 16+?
+	* As of March 30, all Minnesotans 16 years of age and older will be eligible to receive a vaccine. Minnesota has directed providers to prioritize vaccine appointments for people most at risk of getting COVID-19, or those who could develop severe illness if infected. This includes older Minnesotans, those with underlying health conditions*, and those in essential jobs.
 
 # Mississippi
 
