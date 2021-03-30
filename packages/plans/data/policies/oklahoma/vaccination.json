@@ -17,7 +17,7 @@
 			"description": "c19.link/scheduling.phone.description.ok"
 		}
 	},
-	"activePhase": "1c",
+	"activePhase": "phase_4",
 	"phases": [
 		{
 			"id": "1a",
