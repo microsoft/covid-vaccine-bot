@@ -11,6 +11,9 @@ import {
 	createCSVDataString,
 } from '../utils/textUtils'
 
+const githubRepoOwner = process.env.REACT_APP_REPO_OWNER
+const githubRepoName = process.env.REACT_APP_REPO_NAME
+
 const createPath = (obj: any, pathInput: string, value: any = undefined) => {
 	let path = pathInput.split('/')
 	let current = obj
@@ -42,13 +45,167 @@ const getContent = async (url: string, token: string) => {
 	return data
 }
 
+const createWorkingBranch = async (state: any, branchName: string) => {
+	const mainBranch = state?.mainBranch
+	const createBranchResponse = await fetch(
+		`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/git/refs`,
+		{
+			method: 'POST',
+			headers: {
+				Authorization: `token ${state.accessToken}`,
+			},
+			body: JSON.stringify({
+				ref: branchName,
+				sha: mainBranch.commit.sha,
+			}),
+		}
+	)
+	return await createBranchResponse.json()
+}
+
+const commitChanges = async (state: any, branchName: string, globalUpdates: any, locationUpdates: any) => {
+	if (globalUpdates) {
+		for (const i in globalUpdates) {
+			const updateObj = globalUpdates[i]
+			const fileData = createCSVDataString(updateObj.content)
+			await fetch(
+				`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/contents/packages/plans/data/localization/${updateObj.path}`,
+				{
+					method: 'PUT',
+					headers: {
+						Authorization: `token ${state.accessToken}`,
+					},
+					body: JSON.stringify({
+						branch: branchName,
+						message: `updated ${updateObj.path}`,
+						content: utf8_to_b64(fileData),
+						sha: updateObj.sha,
+					}),
+				}
+			)
+		}
+	}
+
+	if (locationUpdates) {
+		for (const i in locationUpdates) {
+			const locationObj = locationUpdates[i].data
+
+			//Info
+			await fetch(
+				`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/contents/packages/plans/data/policies/${locationObj.info.path}`,
+				{
+					method: 'PUT',
+					headers: {
+						Authorization: `token ${state.accessToken}`,
+					},
+					body: JSON.stringify({
+						branch: branchName,
+						message: `updated ${locationObj.info.path}`,
+						content: utf8_to_b64(
+							JSON.stringify(locationObj.info.content, null, '\t')
+						),
+						sha: locationObj.info.sha,
+					}),
+				}
+			)
+			//Vaccingation
+			await fetch(
+				`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/contents/packages/plans/data/policies/${locationObj.vaccination.path}`,
+				{
+					method: 'PUT',
+					headers: {
+						Authorization: `token ${state.accessToken}`,
+					},
+					body: JSON.stringify({
+						branch: branchName,
+						message: `updated ${locationObj.vaccination.path}`,
+						content: utf8_to_b64(
+							JSON.stringify(
+								locationObj.vaccination.content,
+								null,
+								'\t'
+							)
+						),
+						sha: locationObj.vaccination.sha,
+					}),
+				}
+			)
+			//Strings
+			await fetch(
+				`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/contents/packages/plans/data/policies/${locationObj.strings.path}`,
+				{
+					method: 'PUT',
+					headers: {
+						Authorization: `token ${state.accessToken}`,
+					},
+					body: JSON.stringify({
+						branch: branchName,
+						message: `updated ${locationObj.strings.path}`,
+						content: utf8_to_b64(
+							createCSVDataString(locationObj.strings.content)
+						),
+						sha: locationObj.strings.sha,
+					}),
+				}
+			)
+
+			// Regions
+			if (locationObj.regions) {
+				const regionKeys = Object.keys(locationObj.regions)
+				for (const key of regionKeys) {
+					const regionObj = locationObj.regions[key]
+					//Info
+					await fetch(
+						`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/contents/packages/plans/data/policies/${regionObj.info.path}`,
+						{
+							method: 'PUT',
+							headers: {
+								Authorization: `token ${state.accessToken}`,
+							},
+							body: JSON.stringify({
+								branch: branchName,
+								message: `updated ${regionObj.info.path}`,
+								content: utf8_to_b64(
+									JSON.stringify(regionObj.info.content, null, '\t')
+								),
+								sha: regionObj.info.sha,
+							}),
+						}
+					)
+					//Vaccination
+					await fetch(
+						`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/contents/packages/plans/data/policies/${regionObj.vaccination.path}`,
+						{
+							method: 'PUT',
+							headers: {
+								Authorization: `token ${state.accessToken}`,
+							},
+							body: JSON.stringify({
+								branch: branchName,
+								message: `updated ${regionObj.vaccination.path}`,
+								content: utf8_to_b64(
+									JSON.stringify(
+										regionObj.vaccination.content,
+										null,
+										'\t'
+									)
+								),
+								sha: regionObj.vaccination.sha,
+							}),
+						}
+					)
+				}
+			}
+		}
+	}
+}
+
 export const repoServices = async (
 	command: string,
 	extraData: any = undefined
 ): Promise<any | undefined> => {
 	const state = getAppStore()
-	const githubRepoOwner = process.env.REACT_APP_REPO_OWNER
-	const githubRepoName = process.env.REACT_APP_REPO_NAME
+	let branchName = `refs/heads/${state.username}-policy-${Date.now()}`
 
 	switch (command) {
 		case 'checkAccess':
@@ -301,10 +458,19 @@ export const repoServices = async (
 
 			return [stateData, customStrings, cdcStateNames, cdcStateLinks]
 
+		case 'createWorkingBranch':
+			if (state?.mainBranch) {
+				return await createWorkingBranch(state, branchName)
+			}
+			break
+		case 'commitChanges':
+			if (extraData) {
+				debugger
+				await commitChanges(state, branchName, extraData.globalUpdates, extraData.locationUpdates)
+			}
+			break
 		case 'createPR':
 			if (state?.mainBranch) {
-				const mainBranch = state?.mainBranch
-				let branchName = `refs/heads/${state.username}-policy-${Date.now()}`
 				const globalUpdates = extraData[0]
 				const locationUpdates = extraData[1]
 				const prFormData = extraData[3]
@@ -312,163 +478,15 @@ export const repoServices = async (
 
 				let workingBranch = state.loadedPRData
 
-				if (!state.loadedPRData) {
-					const createBranchResponse = await fetch(
-						`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/git/refs`,
-						{
-							method: 'POST',
-							headers: {
-								Authorization: `token ${state.accessToken}`,
-							},
-							body: JSON.stringify({
-								ref: branchName,
-								sha: mainBranch.commit.sha,
-							}),
-						}
-					)
-
-					workingBranch = await createBranchResponse.json()
+				if (!state.loadedPRData && !state.userWorkingBranch) {
+					workingBranch = await createWorkingBranch(state, branchName)
 				} else {
 					branchName = `refs/heads/${state.loadedPRData.head.ref}`
 				}
 
 				if (workingBranch) {
-					if (globalUpdates) {
-						for (const i in globalUpdates) {
-							const updateObj = globalUpdates[i]
-							const fileData = createCSVDataString(updateObj.content)
-							await fetch(
-								`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/contents/packages/plans/data/localization/${updateObj.path}`,
-								{
-									method: 'PUT',
-									headers: {
-										Authorization: `token ${state.accessToken}`,
-									},
-									body: JSON.stringify({
-										branch: branchName,
-										message: `updated ${updateObj.path}`,
-										content: utf8_to_b64(fileData),
-										sha: updateObj.sha,
-									}),
-								}
-							)
-						}
-					}
-
-					if (locationUpdates) {
-						for (const i in locationUpdates) {
-							const locationObj = locationUpdates[i].data
-
-							//Info
-							await fetch(
-								`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/contents/packages/plans/data/policies/${locationObj.info.path}`,
-								{
-									method: 'PUT',
-									headers: {
-										Authorization: `token ${state.accessToken}`,
-									},
-									body: JSON.stringify({
-										branch: branchName,
-										message: `updated ${locationObj.info.path}`,
-										content: utf8_to_b64(
-											JSON.stringify(locationObj.info.content, null, '\t')
-										),
-										sha: locationObj.info.sha,
-									}),
-								}
-							)
-							//Vaccingation
-							await fetch(
-								`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/contents/packages/plans/data/policies/${locationObj.vaccination.path}`,
-								{
-									method: 'PUT',
-									headers: {
-										Authorization: `token ${state.accessToken}`,
-									},
-									body: JSON.stringify({
-										branch: branchName,
-										message: `updated ${locationObj.vaccination.path}`,
-										content: utf8_to_b64(
-											JSON.stringify(
-												locationObj.vaccination.content,
-												null,
-												'\t'
-											)
-										),
-										sha: locationObj.vaccination.sha,
-									}),
-								}
-							)
-							//Strings
-							await fetch(
-								`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/contents/packages/plans/data/policies/${locationObj.strings.path}`,
-								{
-									method: 'PUT',
-									headers: {
-										Authorization: `token ${state.accessToken}`,
-									},
-									body: JSON.stringify({
-										branch: branchName,
-										message: `updated ${locationObj.strings.path}`,
-										content: utf8_to_b64(
-											createCSVDataString(locationObj.strings.content)
-										),
-										sha: locationObj.strings.sha,
-									}),
-								}
-							)
-
-							// Regions
-							if (locationObj.regions) {
-								const regionKeys = Object.keys(locationObj.regions)
-								for (const key of regionKeys) {
-									const regionObj = locationObj.regions[key]
-									//Info
-									await fetch(
-										`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/contents/packages/plans/data/policies/${regionObj.info.path}`,
-										{
-											method: 'PUT',
-											headers: {
-												Authorization: `token ${state.accessToken}`,
-											},
-											body: JSON.stringify({
-												branch: branchName,
-												message: `updated ${regionObj.info.path}`,
-												content: utf8_to_b64(
-													JSON.stringify(regionObj.info.content, null, '\t')
-												),
-												sha: regionObj.info.sha,
-											}),
-										}
-									)
-									//Vaccination
-									await fetch(
-										`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/contents/packages/plans/data/policies/${regionObj.vaccination.path}`,
-										{
-											method: 'PUT',
-											headers: {
-												Authorization: `token ${state.accessToken}`,
-											},
-											body: JSON.stringify({
-												branch: branchName,
-												message: `updated ${regionObj.vaccination.path}`,
-												content: utf8_to_b64(
-													JSON.stringify(
-														regionObj.vaccination.content,
-														null,
-														'\t'
-													)
-												),
-												sha: regionObj.vaccination.sha,
-											}),
-										}
-									)
-								}
-							}
-						}
-					}
+					await commitChanges(state, branchName, globalUpdates, locationUpdates)
 				}
-
 
 				let prTitle = ''
 				if (!state.loadedPRData) {

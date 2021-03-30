@@ -7,7 +7,8 @@ import {
 	createPR,
 	getRepoFileData,
 	initializeGitData,
-	loadPR
+	loadPR,
+	saveContinue
 } from '../actions/repoActions'
 import {
 	setBranchList,
@@ -15,9 +16,12 @@ import {
 	setRepoFileData,
 	setIssuesList,
 	initStoreData,
-	setLoadedPRData
+	setLoadedPRData,
+	setUserWorkingBranch
 } from '../mutators/repoMutators'
 import { repoServices } from '../services/repoServices'
+import { getAppStore } from '../store/store'
+import { getChanges } from '../selectors/changesSelectors'
 
 
 orchestrator(createPR, async (message) => {
@@ -70,5 +74,18 @@ orchestrator(loadPR, async (message) => {
 
 		const resp = await repoServices('getRepoFileData', prResp.data.head.ref)
 		setRepoFileData(resp)
+	}
+})
+
+orchestrator(saveContinue, async () => {
+	const store = getAppStore()
+	if (store.userWorkingBranch) {
+		await repoServices('commitChanges', getChanges())
+	} else {
+		const resp = await repoServices('createWorkingBranch')
+		if (resp) {
+			setUserWorkingBranch(resp)
+			await repoServices('commitChanges', getChanges())
+		}
 	}
 })

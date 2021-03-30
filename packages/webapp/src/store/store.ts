@@ -27,6 +27,7 @@ export const initialStore = {
 	pendingChanges: false,
 	isDataRefreshing: false,
 	prChanges: undefined,
+	userWorkingBranch: undefined
 }
 
 export const getAppState = (): AppState => {

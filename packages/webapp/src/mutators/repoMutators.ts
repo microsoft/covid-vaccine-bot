@@ -52,9 +52,16 @@ export const setLoadedPRData = mutatorAction(
 				changes: prData.changes,
 				last_commit: prData.commits.pop(),
 			}
+			store.userWorkingBranch = undefined
 		}
 	}
 )
+
+export const setUserWorkingBranch = mutatorAction('setUserWorkingBranch', (data: any) => {
+	const store = getAppStore()
+	store.userWorkingBranch = data
+	store.loadedPRData = undefined
+})
 
 export const handleCreatePR = mutatorAction('handleCreatePR', () => {
 	const store = getAppStore()

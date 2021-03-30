@@ -15,3 +15,5 @@ export const initializeGitData = action('initializeGitData')
 export const loadPR = action('loadPR', (prNumber: any) => ({
 	prNumber,
 }))
+
+export const saveContinue = action('saveContinue')

@@ -11,6 +11,7 @@ import {
 	PivotItem,
 	ContextualMenu,
 	MessageBar,
+	MessageBarButton,
 } from '@fluentui/react'
 import { useBoolean } from '@uifabric/react-hooks'
 import { observer } from 'mobx-react-lite'
@@ -29,6 +30,7 @@ import QualifierPanel from './QualifierPanel'
 import Review from './Review'
 import Translate from './Translate'
 import UnAuthorized from './UnAuthorized'
+import { initializeGitData, saveContinue } from '../actions/repoActions'
 
 import './App_reset_styles.scss'
 import './App.scss'
@@ -86,6 +88,27 @@ export default observer(function App() {
 					You are currently working on: <strong>PR: {state.loadedPRData.number} - {state.loadedPRData.title}</strong><br/>
 					Last updated by: {state.prChanges?.last_commit?.commit?.committer?.name}<br/>
 					Last updated on: {new Date(state.loadedPRData.updated_at).toLocaleString()}
+				</MessageBar>
+			)
+		}
+
+		return null
+	}
+
+	const renderSaveContinueMessageBar = () => {
+		if (state.pendingChanges) {
+			return (
+				<MessageBar
+					styles={{ root: { margin: '10px 5px' } }}
+					actions={
+						<div>
+							<MessageBarButton onClick={initializeGitData}>Discard</MessageBarButton>
+							<MessageBarButton onClick={saveContinue}>Save and Continue</MessageBarButton>
+						</div>
+						}
+				>
+					You have pending changes, please click on the
+					review tab to submit these changes.
 				</MessageBar>
 			)
 		}
@@ -183,26 +206,12 @@ export default observer(function App() {
 													selectedKey={selectedKey}
 												>
 													<PivotItem headerText="Dashboard" itemKey="Dashboard">
-														{state.pendingChanges && (
-															<MessageBar
-																styles={{ root: { margin: '10px 5px' } }}
-															>
-																You have pending changes, please click on the
-																review tab to submit these changes.
-															</MessageBar>
-														)}
+														{renderSaveContinueMessageBar()}
 														{renderRepoMessageBar()}
 														<Dashboard />
 													</PivotItem>
 													<PivotItem headerText="Locations" itemKey="Locations">
-														{state.pendingChanges && (
-															<MessageBar
-																styles={{ root: { margin: '10px 5px' } }}
-															>
-																You have pending changes, please click on the
-																review tab to submit these changes.
-															</MessageBar>
-														)}
+														{renderSaveContinueMessageBar()}
 														{renderRepoMessageBar()}
 														<Locations />
 													</PivotItem>
@@ -211,14 +220,7 @@ export default observer(function App() {
 															headerText="Translate"
 															itemKey="Translate"
 														>
-															{state.pendingChanges && (
-																<MessageBar
-																	styles={{ root: { margin: '10px 5px' } }}
-																>
-																	You have pending changes, please click on the
-																	review tab to submit these changes.
-																</MessageBar>
-															)}
+															{renderSaveContinueMessageBar()}
 															{renderRepoMessageBar()}
 															<Translate />
 														</PivotItem>
