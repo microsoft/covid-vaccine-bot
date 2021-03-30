@@ -20,7 +20,7 @@
 			"description": "c19.link/scheduling.phone.description.mn"
 		}
 	},
-	"activePhase": "1b",
+	"activePhase": "16_and_older",
 	"phases": [
 		{
 			"id": "1a",
@@ -98,6 +98,16 @@
 				},
 				{
 					"question": "c19.eligibility.question/age.65_up"
+				}
+			]
+		},
+		{
+			"id": "16_and_older",
+			"label": "16 and older",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.16_up",
+					"moreInfoText": "c19.eligibility.moreinfo/age.16_up.mn.16_and_older"
 				}
 			]
 		}
