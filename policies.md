@@ -2244,14 +2244,15 @@ food processing, transportation, US Postal Service, public transit (see [here](h
 
 ## New Jersey Active Phase (current)
 
-* Are you a healthcare worker?
-	* This includes paid and unpaid healthcare workers
 * Are you a long term care resident or work in a long term care facility?
-	* This includes residents and workers of long-term care and high-risk congregate care facilities
-
-* Are you a first responder?
-	* This includes sworn law enforcement and fire professionals
-
+	* All residents and workers of long-term care and high-risk congregate care facilities, including:
+- Skilled nursing facilities
+- Veterans homes
+- Assisted living facilities, continuing care retirement communities, and personal care homes
+- Group homes like residential care homes, adult family homes, adult foster homes, and intellectual and developmental disabilities group homes
+- HUD 202 Supportive Housing for the Elderly Program residences
+- Institutional settings like psychiatric hospitals, correctional institutions, county jails, and juvenile detention facilities (for eligible minors, e.g. 16+ years of age may be eligible for Pfizer vaccine under the emergency use authorization)
+- Other vulnerable, congregate, long-term settings
 * Are you age 65+?
 * Are you age 16+, and have a high-risk medical condition?
 	* Individuals aged 65 and older, and individuals ages 16-64 with medical conditions, as defined by the Centers for Disease Control and Prevention, that increase or might increase the risk of severe illness from the virus. These conditions include:
@@ -2278,13 +2279,26 @@ Smoking/nicotine addiction
 Thalassemia (type of blood disorder)
 Type 1 and Type 2 diabetes mellitus
 Note: Individuals who are pregnant and those in an immunocompromised state (weakened immune system)are also eligible but should follow CDC guidance and first discuss vaccination with their medical provider before receiving the vaccine.
-* Are you a K-12 educator or work in a licensed child care facility?
-	* This includes Pre-K to 12 educators and staff and childcare workers in licensed and registered settings
 * Are you classified as an essential worker?
 	* This includes:
-- Public and local transportation workers, including bus, taxi, rideshare, and airport employees; NJ TRANSIT workers; and Motor Vehicle Commission staff
-- Public safety workers who are not sworn law enforcement or fire professionals, including probation officers and fire safety inspectors
-- Migrant farm workers;
+- Childcare workers in licensed and registered settings
+- Educators and staff, pre-K to 12
+- First responders including sworn law enforcement and fire professionals
+- Healthcare workers, paid and unpaid
+- High-risk individuals
+- Long-term care and high-risk congregate care facility residents and staff
+- Public safety workers
+- Transportation workers
+- Food production, agriculture, and food distribution workers (including migrant farm workers)
+- Eldercare and support personnel
+- Warehousing and logistics workers
+- Social service workers and support staff
+- Elections personnel
+- Hospitality workers
+- Medical supply chain employees
+- Postal and shipping service workers
+- Clergy
+- Workers in the Judicial system (see [here](https://covid19.nj.gov/faqs/nj-information/slowing-the-spread/who-is-eligible-for-vaccination-in-new-jersey-who-is-included-in-the-vaccination-phases#direct-link))
 * Are you experiencing homelessness or living in a shelter?
 	* Individuals experiencing homelessness and those living in shelters, including domestic violence shelters.
 * Are you a member of a tribal community?
