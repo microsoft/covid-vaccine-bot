@@ -1467,7 +1467,7 @@ Only patient- or public-facing health care, long-term care, and public safety pe
 | scheduling_phone | [(410) 767-6500](tel:410-767-6500) |
 
 
-## Maryland Active Phase (2a)
+## Maryland Active Phase (2b)
 
 * Are you a long term care resident or work in a long term care facility?
 * Do you work or live in a congregate setting?
@@ -1500,6 +1500,29 @@ Sickle cell disease patients
 Diabetic patients (Type 1 and Type 2)
 
 Individuals who are diagnosed with these medical conditions but are not currently receiving hospital-based treatment, including in hospital outpatient centers, will be eligible to receive the vaccine in Maryland's Phase 2 COVID-19 vaccine distribution. (see [here](https://coronavirus.maryland.gov/pages/vaccine))
+* Are you age 16+, and have a high-risk medical condition?
+	* This includes:
+- Cancer
+- Chronic kidney disease
+- Chronic lung diseases, including COPD (chronic obstructive pulmonary disease), asthma (moderate-to-severe), interstitial lung disease, cystic fibrosis, and pulmonary hypertension
+- Dementia or other neurological conditions
+- Diabetes (type 1 or type 2)
+- Down syndrome
+- Heart conditions (such as heart failure, coronary artery disease, cardiomyopathies or hypertension)
+- HIV infection
+- Immunocompromised state (weakened immune system)
+- Liver disease
+- Overweight and obesity
+- Pregnancy
+- Sickle cell disease or thalassemia
+- Smoking, current or former
+- Solid organ or blood stem cell transplant
+- Stroke or cerebrovascular disease, which affects blood flow to the brain
+- Substance use disorders (see [here](https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html))
+* Are you aged 16+ with disabilities and receiving SSI or SSDI benefits?
+	* Marylanders ages 16+ with disabilities who are receiving SSI or SSDI benefits, Maryland Medicaid EID individuals, Maryland Medicaid REM recipients, and Marylanders receiving TDAP benefits
+* Are you receiving long term services and supports through the state's Medicaid waiver or state plan services?
+	* This includes Marylanders receiving long term services and supports through the state's Medicaid waiver and state plan services
 
 # Massachusetts
 
