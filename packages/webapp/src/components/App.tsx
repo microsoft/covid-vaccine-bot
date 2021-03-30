@@ -9,17 +9,16 @@ import {
 	PersonaSize,
 	Pivot,
 	PivotItem,
-	MessageBar
+	ContextualMenu,
+	MessageBar,
 } from '@fluentui/react'
 import { useBoolean } from '@uifabric/react-hooks'
 import { observer } from 'mobx-react-lite'
-import { useCallback, useState, useEffect } from 'react'
+import { useCallback, useState, useEffect, useRef } from 'react'
 import { Switch, Route, Redirect } from 'react-router-dom'
+import { loginUser } from '../actions/authActions'
+import { logoutUser } from '../mutators/authMutators'
 import { setCurrentLanguage } from '../mutators/repoMutators'
-import {
-	isUserAuthenticated,
-	isUserAuthorized,
-} from '../selectors/authSelectors'
 import { getAppStore } from '../store/store'
 import { getLanguageOptions } from '../utils/textUtils'
 import Dashboard from './Dashboard'
@@ -29,6 +28,7 @@ import Login from './Login'
 import QualifierPanel from './QualifierPanel'
 import Review from './Review'
 import Translate from './Translate'
+import UnAuthorized from './UnAuthorized'
 
 import './App_reset_styles.scss'
 import './App.scss'
@@ -38,17 +38,26 @@ export default observer(function App() {
 	const [isPanelOpen, { setTrue: showPanel, setFalse: hidePanel }] = useBoolean(
 		false
 	)
+	const [
+		isPersonaMenuOpen,
+		{ setTrue: showPersonaMenu, setFalse: hidePersonaMenu },
+	] = useBoolean(false)
 	const [selectedKey, setSelectedKey] = useState<string>('Dashboard')
+	const personaComponent = useRef(null)
+
+	useEffect(() => {
+		if (state.accessToken) loginUser()
+	}, [state.accessToken])
 
 	useEffect(() => {
 		if (state.pendingChanges) {
-			window.onbeforeunload = function() {
-				return true;
-			};
+			window.onbeforeunload = function () {
+				return true
+			}
 		} else {
 			window.onbeforeunload = null
 		}
-	}, [state.pendingChanges]);
+	}, [state.pendingChanges])
 
 	const togglePanel = useCallback(
 		(item?: any) => {
@@ -66,9 +75,27 @@ export default observer(function App() {
 		setSelectedKey('Dashboard')
 	}, [setSelectedKey])
 
+	const renderRepoMessageBar = () => {
+		if (state.loadedPRData && state.prChanges) {
+			return (
+				<MessageBar
+					messageBarType={5}
+					isMultiline={true}
+					styles={{ root: { margin: '10px 5px' } }}
+				>
+					You are currently working on: <strong>PR: {state.loadedPRData.number} - {state.loadedPRData.title}</strong><br/>
+					Last updated by: {state.prChanges?.last_commit?.commit?.committer?.name}<br/>
+					Last updated on: {new Date(state.loadedPRData.updated_at).toLocaleString()}
+				</MessageBar>
+			)
+		}
+
+		return null
+	}
+
 	return (
 		<div className="rootContentWrapper">
-			{isUserAuthenticated() ? (
+			{state.isAuthenticated ? (
 				<>
 					<Switch>
 						<Route exact path="/">
@@ -116,18 +143,39 @@ export default observer(function App() {
 												}}
 											/>
 										</div>
-										<div className="appHeaderUsername">
-											{state.userDisplayName}
+										<div
+											ref={personaComponent}
+											onClick={showPersonaMenu}
+											className="appHeaderPersonaDetails"
+										>
+											<div className="appHeaderUsername">
+												{state.userDisplayName}
+											</div>
+											<Persona
+												text={state.userDisplayName}
+												size={PersonaSize.size32}
+												hidePersonaDetails={true}
+											/>
 										</div>
-										<Persona
-											text={state.userDisplayName}
-											size={PersonaSize.size32}
-											hidePersonaDetails={true}
+										<ContextualMenu
+											items={[
+												{
+													key: 'logoutUserPersonaMenu',
+													text: 'Logout',
+													onClick: () => {
+														logoutUser()
+													},
+												},
+											]}
+											hidden={!isPersonaMenuOpen}
+											target={personaComponent}
+											onItemClick={hidePersonaMenu}
+											onDismiss={hidePersonaMenu}
 										/>
 									</div>
 								</div>
 								<div className="appBodyWrapper">
-									{isUserAuthorized() ? (
+									{state.isAuthorized ? (
 										<>
 											<div className="appBodyLeft">
 												<Pivot
@@ -143,6 +191,7 @@ export default observer(function App() {
 																review tab to submit these changes.
 															</MessageBar>
 														)}
+														{renderRepoMessageBar()}
 														<Dashboard />
 													</PivotItem>
 													<PivotItem headerText="Locations" itemKey="Locations">
@@ -154,6 +203,7 @@ export default observer(function App() {
 																review tab to submit these changes.
 															</MessageBar>
 														)}
+														{renderRepoMessageBar()}
 														<Locations />
 													</PivotItem>
 													{state.isEditable && (
@@ -169,6 +219,7 @@ export default observer(function App() {
 																	review tab to submit these changes.
 																</MessageBar>
 															)}
+															{renderRepoMessageBar()}
 															<Translate />
 														</PivotItem>
 													)}
@@ -186,32 +237,7 @@ export default observer(function App() {
 											)}
 										</>
 									) : (
-										<div className="appBodyLeft">
-											<div className="dashboardPageWrapper">
-												<div className="bodyContainer">
-													<div className="bodyHeader">
-														<div className="bodyHeaderTitle">
-															<div className="mainTitle">Welcome!</div>
-														</div>
-													</div>
-												</div>
-												<section style={{ width: '70%', margin: '0px auto' }}>
-													<p>
-														Thank you for your interest in helping to manage the
-														data, unfortunately right now access to this tool
-														requires collaborator permissions on{' '}
-														<a
-															target="_blank"
-															rel="noreferrer"
-															href={`https://www.github.com/${process.env.REACT_APP_REPO_OWNER}/${process.env.REACT_APP_REPO_NAME}`}
-														>
-															this repo
-														</a>
-														. Feel free to request access over on GitHub!
-													</p>
-												</section>
-											</div>
-										</div>
+										<UnAuthorized />
 									)}
 								</div>
 							</div>

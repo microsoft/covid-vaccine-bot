@@ -146,19 +146,21 @@ export default observer(function QualifierPanel() {
 			</div>
 			<div className="panelBody">
 				<section>
-					<div className="searchRow">
-						<div></div>
-						<div
-							className="addQualiferHeaderButton"
-							onClick={() => onAddQualifierFormOpen(null)}
-						>
-							<FontIcon
-								iconName="CircleAdditionSolid"
-								className="addQualifierIcon"
-							/>
-							Add Qualifier
+					{!!globalFileData?.customStrings?.content && (
+						<div className="searchRow">
+							<div></div>
+							<div
+								className="addQualiferHeaderButton"
+								onClick={() => onAddQualifierFormOpen(null)}
+							>
+								<FontIcon
+									iconName="CircleAdditionSolid"
+									className="addQualifierIcon"
+								/>
+								Add Qualifier
+							</div>
 						</div>
-					</div>
+					)}
 					<DetailsList
 						items={qualifierGroupItems}
 						groups={qualifierGroup}

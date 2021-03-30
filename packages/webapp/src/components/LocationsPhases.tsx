@@ -2,9 +2,13 @@
  * Copyright (c) Microsoft. All rights reserved.
  * Licensed under the MIT license. See LICENSE file in the project.
  */
-import { FontIcon } from '@fluentui/react'
+import { 
+	FontIcon,
+	Modal,
+ } from '@fluentui/react'
+import { useBoolean } from '@uifabric/react-hooks'
 import { observer } from 'mobx-react-lite'
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useRef, useCallback } from 'react'
 import {
 	modifyStateStrings,
 	modifyMoreInfoLinks,
@@ -13,8 +17,11 @@ import {
 	addQualifier,
 	removeQualifier,
 	removePhase,
+	duplicatePhase,
 } from '../mutators/repoMutators'
 import { getAppStore } from '../store/store'
+import { formatId } from '../utils/textUtils'
+import PhaseForm from './PhaseForm'
 import PhaseQualifierForm from './PhaseQualifierForm'
 
 import './Locations.scss'
@@ -33,12 +40,45 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 		isEditable,
 	} = getAppStore()
 	const { isRegion, value, selectedState } = props
-
 	const [phaseList, setPhaseList] = useState<any[]>([])
 	const groupToggleState = useRef<any[]>([])
+	const selectedModalFormItem = useRef<any>(null)
+
+	const [
+		isDuplaceModalOpen,
+		{ setTrue: openDuplicateModal, setFalse: dismissDuplicateModal },
+	] = useBoolean(false)
+
+	const onDuplicateSubmit = ({name}: {name: string}) => {
+		const nextPhaseId = formatId(name);
+		const phases = repoFileData[selectedState.key].vaccination.content.phases;
+		const nameExists = !!phases.find((item: {id: string}) => item.id === nextPhaseId);
+
+		if(nameExists) {
+			return
+		}
+
+		duplicatePhase({
+			locationKey: selectedState.key,
+			phaseId: selectedModalFormItem.current.key,
+			name,
+			isRegion,
+			regionInfo: value
+		})
+	}
+
+	const onDuplicatePhaseClick = useCallback(
+		(item?: any) => {
+			selectedModalFormItem.current = item ?? null
+			openDuplicateModal()
+		},
+		[openDuplicateModal]
+	)
 
 	useEffect(() => {
 		if (repoFileData) {
+			dismissDuplicateModal()
+
 			const tempPhaseList: any[] = []
 			const currentStateObj: any = repoFileData[selectedState.key]
 			let phaseObj = currentStateObj.vaccination.content.phases
@@ -51,7 +91,17 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 			}
 
 			phaseObj.forEach((phase: any) => {
-				let isCollapsed: boolean = !isRegion && value.value.id !== phase.id
+				let isCollapsed = true
+
+				if (isRegion) {
+					isCollapsed = groupToggleState.current.length > 0 ? !groupToggleState.current.includes(phase.id) : true
+				} else {
+					if (groupToggleState.current.length > 0) {
+						isCollapsed = !groupToggleState.current.includes(phase.id)
+					} else {
+						isCollapsed = value.value.id !== phase.id
+					}
+				}
 
 				let isActivePhase = false
 				if (isRegion && regionObj.vaccination.content.activePhase) {
@@ -61,16 +111,13 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 						phase.id === currentStateObj.vaccination.content.activePhase
 				}
 
-				if(groupToggleState.current.length > 0 && groupToggleState.current.indexOf(phase.id) !== -1){
-					isCollapsed = false
-				}
-
 				const tempPhaseObj: any = {
 					key: phase.id,
-					name: phase.label,
+					name: phase.label || phase.id,
 					count: phase.qualifications.length,
 					isCollapsed: isCollapsed,
 					data: {
+						name: phase.label || phase.id,
 						keyId: phase.id,
 						isActive: isActivePhase,
 					},
@@ -114,7 +161,7 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 
 			setPhaseList(tempPhaseList)
 		}
-	}, [repoFileData, globalFileData, selectedState, currentLanguage, isRegion, value])
+	}, [repoFileData, globalFileData, selectedState, currentLanguage, isRegion, value, dismissDuplicateModal])
 
 	const onAddQualifierClick = (phaseId: any) => {
 		const newItem = {
@@ -144,25 +191,25 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 	}
 
 	const onRemoveRowItem = (item: any, groupKey:any) => {
-		if(item.qualifierId !== 'c19.eligibility.question/new_qualifier'){
+		if (item.qualifierId !== 'c19.eligibility.question/new_qualifier') {
 			removeQualifier({
 				locationKey: selectedState.key,
 				item: item,
 				regionInfo: isRegion ? value : null,
 			})
-		}else{
-
+		} else {
 			const tempPhaseList = phaseList.map((group) => {
-			if (group.key === groupKey) {
-				const newItemIndex = group.items.findIndex( (i:any) => i.qualifierId ===  'c19.eligibility.question/new_qualifier')
-				if(newItemIndex !== -1){
-					group.items.splice(newItemIndex,1)
+				if (group.key === groupKey) {
+					const newItemIndex = group.items.findIndex( (i:any) => i.qualifierId ===  'c19.eligibility.question/new_qualifier')
+					if(newItemIndex !== -1){
+						group.items.splice(newItemIndex,1)
+					}
 				}
-			}
 
-			return group
-		})
-		setPhaseList(tempPhaseList)
+				return group
+			})
+
+			setPhaseList(tempPhaseList)
 		}
 	}
 
@@ -270,13 +317,13 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 											<>
 												<div
 													className="addQualifierGroup"
-													onClick={() => onAddQualifierClick(group.data.keyId)}
+													onClick={() => onDuplicatePhaseClick(group)}
 												>
 													<FontIcon
-														iconName="CircleAdditionSolid"
+														iconName="DuplicateRow"
 														style={{ color: '#0078d4' }}
 													/>
-													Add Qualifier
+													Duplicate
 												</div>
 												<div
 													className="removePhaseGroup"
@@ -328,38 +375,53 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 								</div>
 								<div style={{ display: group.isCollapsed ? 'none' : 'block' }}>
 									{group.items.length > 0 && (
-										<>
-										{group.items.map((groupItem: any, idx: number) => {
-												return (
-													<PhaseQualifierForm
-														key={groupItem.key+'_'+idx}
-														groupKey={group.key}
-														rowItems={{ item: groupItem }}
-														selectedState={selectedState}
-														isEditable={isEditable}
-														isRegion={isRegion}
-														onRowItemRemove={onRemoveRowItem}
-														onRowItemTextChange={onChangeRowItemText}
-														onRowItemQualifierChange={onChangeRowItemQualifier}
-													/>
-												)
-										  })
-										}
-										<div className="phaseBottomGroup">
-											<div
-												className="addQualifierGroup"
-												onClick={() => onAddQualifierClick(group.data.keyId)}
-											>
-												<FontIcon
-													iconName="CircleAdditionSolid"
-													style={{ color: '#0078d4' }}
+										group.items.map((groupItem: any, idx: number) => {
+											return (
+												<PhaseQualifierForm
+													key={groupItem.key+'_'+idx}
+													groupKey={group.key}
+													rowItems={{ item: groupItem }}
+													selectedState={selectedState}
+													isEditable={isEditable}
+													isRegion={isRegion}
+													onRowItemRemove={onRemoveRowItem}
+													onRowItemTextChange={onChangeRowItemText}
+													onRowItemQualifierChange={onChangeRowItemQualifier}
 												/>
-												Add Qualifier
-											</div>
-										</div>
-										</>
+											)
+										})
 									)}
+									<div
+										className="phaseBottomGroup"
+										style={{marginTop: group.items.length > 0 ? 0 : '20px'}}
+									>
+										<div
+											className="addQualifierGroup"
+											onClick={() => onAddQualifierClick(group.data.keyId)}
+										>
+											<FontIcon
+												iconName="CircleAdditionSolid"
+												style={{ color: '#0078d4' }}
+											/>
+											Add Qualifier
+										</div>
+									</div>
 								</div>
+								<Modal
+									isOpen={isDuplaceModalOpen}
+									isModeless={false}
+									isDarkOverlay={true}
+									isBlocking={false}
+								>
+									<PhaseForm
+										selectedState={selectedState}
+										duplicate={true}
+										isRegion={isRegion}
+										regionInfo={value}
+										onCancel={dismissDuplicateModal}
+										onSubmit={onDuplicateSubmit}
+									/>
+								</Modal>
 							</div>
 						)
 				  })

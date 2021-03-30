@@ -3,6 +3,7 @@
  * Licensed under the MIT license. See LICENSE file in the project.
  */
 import { mutatorAction } from 'satcheljs'
+import { clearState } from '../store/localStorage'
 import { AppState } from '../store/schema/AppState'
 import { getAppStore } from '../store/store'
 
@@ -23,4 +24,10 @@ export const setUserAuthData = mutatorAction(
 export const setUserNoAccess = mutatorAction('setUserNoAccess', () => {
 	const store = getAppStore()
 	store.isAuthorized = false
+})
+
+export const logoutUser = mutatorAction('logoutUser', () => {
+	clearState()
+
+	window.location.reload()
 })
