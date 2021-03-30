@@ -31,7 +31,7 @@
 			"id": "current",
 			"qualifications": [
 				{
-					"question": "c19.eligibility.question/age.are"
+					"question": "c19.eligibility.question/age.are_you_age_30"
 				},
 				{
 					"question": "c19.eligibility.question/healthcare_worker"
@@ -58,4 +58,4 @@
 			]
 		}
 	]
-} 
+}
