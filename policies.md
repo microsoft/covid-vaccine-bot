@@ -1951,30 +1951,67 @@ food processing, transportation, US Postal Service, public transit (see [here](h
 - Laboratory Workers
 - Pharmacists and Pharmacy Technicians
 - Outpatient and Home Health Providers
-* Are you a long-term care resident?
-* Are you a law enforcement office or corrections staff?
-	* - Nevada Department of Corrections Staff
-- Law Enforcement and Public Safety Personnel
-- Deployed and mission critical personnel who play essential role in national security
-- State and Local Emergency Operations Managers and Staff
-* Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.
-	* - Education and Childcare Staff
-- Nevada System of Higher Education Faculty
+* Are you experiencing homelessness?
+* Are you a person with a rare condition or disability that put you at higher risk?
+* Are you age 16+, and have a high-risk medical condition?
+	* The following conditions are included in the state's underlying conditions prioritization list:
+- Asthma (moderate to severe)
+- Cancer
+- Cerebrovascular Disease, Hypertension, or High Blood Pressure
+- Chronic Kidney Disease
+- COPD (chronic obstructive pulmonary disease), Cystic Fibrosis, Pulmonary Fibrosis, and other chronic lung diseases
+- Dementia
+- Down Syndrome 
+- Heart conditions, such as heart failure, coronary heart disease, or cardiomyopathies
+- Immunocompromised status
+- Liver Disease
+- Overweight/Obese
+- Pregnancy
+- Thalassemia (a blood disorder)
+- Type 1 & Type 2 Diabetes mellitus
+- Sickle Cell Disease
+- Smoking
+
+Individuals with any underlying medical condition (including those conditions that are NOT on the current list) should consult with their healthcare providers about personal risk factors and circumstances to determine whether extra precautions are warranted.  (see [here](https://www.immunizenevada.org/underlying-conditions))
+* Are you classified as an essential worker?
+	* Frontline/Essential Workforce prioritization can vary by county but usually includes:
+
+PUBLIC SAFETY & SECURITY 
+- NV Dept. of Corrections Staff
+- Law Enforcement, Public Safety, and National Security
+- State and Local Emergency Operations Managers/Staff
+
+FRONTLINE COMMUNITY SUPPORT
+- Education (Pre-K & K-12) and Childcare - public/private/charter school settings
+- Nevada System of Higher Education (NSHE) Frontline Educators, Staff & Students
 - Community Support Frontline Staff (i.e. frontline workers who support food, shelter, court/legal and social services, and other necessities of life for needy groups and individuals)
-** Food bank distributors and food preparers
-** Front-facing state service staff (DETR, WIC, DWSS, DMV, ADSD)
-** Community coalition advocates/ volunteers in the field
-** Veterinary nurses, technicians, veterinarians, and other services supporting individuals and organizations with service animals, search and rescue dogs, and support animals.
 - Continuity of Governance (State and Local)
 - Essential Public Transportation
-- Remaining Essential Public Health Workforce
+- Remaining Essential Public Health Workforce 
 - Mortuary Services
+
+FRONTLINE SUPPLY CHAIN & LOGISTICS
 - Agriculture and Food Processing
-* Are you a K-12 educator or work in a licensed child care facility?
-* Are you a grocery store worker?
-* Are you aged 55+ with underlying health conditions?
-* Are you experiencing homelessness or living in a shelter?
-* Are you an adult with intellectual or developmental disabilities or are you a caregiver to an adult with intellectual or developmental disabilities?
+- End-to-End Essential Goods Supply Chain (includes manufacturing, transport, distribution and sale of essential items, e.g. grocery store employees) 
+- Utilities and Communications Infrastructure
+- Nevada Department of Transportation and Local Emergency Road Personnel
+- Frontline Airport Operations 
+- Other Essential Transportation
+
+FRONTLINE COMMERCE & SERVICE INDUSTRIES
+- Food Service and Hospitality 
+- Hygiene Products and Services
+- Depository Credit Institution Workforce 
+
+FRONTLINE INFRASTRUCTURE
+- Infrastructure, Shelter and Housing (Construction)
+- Essential Mining Operations
+
+OTHER
+-Community Support Administrative Staff
+-NSHE Students living in campus-sponsored residential settings (e.g., dorms, campus-sponsored apartments, etc.)
+-NSHE Remaining Workforce (see [here](https://www.immunizenevada.org/county-specific-covid-19-vaccine-plan))
+* Are you age 65+?
 
 ## Nevada Regions
 
@@ -2004,6 +2041,64 @@ food processing, transportation, US Postal Service, public transit (see [here](h
 | eligibility | [https://nvhealthresponse.nv.gov/wp-content/uploads/2021/01/NEVADA-COVID-19-VACCINE-PLAYBOOK-V3-1.pdf](https://nvhealthresponse.nv.gov/wp-content/uploads/2021/01/NEVADA-COVID-19-VACCINE-PLAYBOOK-V3-1.pdf) |
 | eligibility_plan | [https://nvhealthresponse.nv.gov/wp-content/uploads/2021/01/NEVADA-COVID-19-VACCINE-PLAYBOOK-V3-1.pdf](https://nvhealthresponse.nv.gov/wp-content/uploads/2021/01/NEVADA-COVID-19-VACCINE-PLAYBOOK-V3-1.pdf) |
 
+
+### Nevada::Churchill Active Phase (55)
+
+* Are you a healthcare worker?
+	* - General Medical and Surgical Hospital Staff
+- Psychiatric and Substance Abuse Hospital Staff
+- Emergency Medical Services Personnel
+- Frontline Public Health Workforce
+- Laboratory Workers
+- Pharmacists and Pharmacy Technicians
+- Outpatient and Home Health Providers
+* Are you experiencing homelessness?
+* Are you a person with a rare condition or disability that put you at higher risk?
+* Are you age 16+, and have a high-risk medical condition?
+	* The following conditions are included in the state's underlying conditions prioritization list:
+- Asthma (moderate to severe)
+- Cancer
+- Cerebrovascular Disease, Hypertension, or High Blood Pressure
+- Chronic Kidney Disease
+- COPD (chronic obstructive pulmonary disease), Cystic Fibrosis, Pulmonary Fibrosis, and other chronic lung diseases
+- Dementia
+- Down Syndrome 
+- Heart conditions, such as heart failure, coronary heart disease, or cardiomyopathies
+- Immunocompromised status
+- Liver Disease
+- Overweight/Obese
+- Pregnancy
+- Thalassemia (a blood disorder)
+- Type 1 & Type 2 Diabetes mellitus
+- Sickle Cell Disease
+- Smoking
+
+Individuals with any underlying medical condition (including those conditions that are NOT on the current list) should consult with their healthcare providers about personal risk factors and circumstances to determine whether extra precautions are warranted.  (see [here](https://www.immunizenevada.org/underlying-conditions))
+* Are you classified as an essential worker?
+	* Residents 16-64 years with certain underlying conditions as defined in the State of Nevada Playbook, Lane 2.1.3.  
+Agriculture and food processing as described in the State of Nevada Playbook, Lane 1.3.1
+Educators (pre-K & K-12) and Childcare — public/private/charter school settings
+Hospital and frontline public health workers
+Long-term care/assisted-living staff & residents
+Psychiatric and Substance Abuse Hospital Staff
+Emergency Medical Services Personnel
+Frontline Public Health Workforce and Volunteers
+Laboratory Workers
+Pharmacists and Pharmacy Technicians
+Outpatient and Home Health Providers
+Nevada Department of Corrections Staff
+Law Enforcement and Public Safety Personnel
+Deployed and mission-critical personnel who play an essential role in national security
+State and Local Emergency Operations Managers and Staff
+Essential Public Transportation
+Remaining Essential Public Health Workforce
+Mortuary Services
+Frontline Supply & Logistics:  as described in the State of Nevada Playbook, Lane 1.3.1-1.3.6
+Food Service & Hospitality
+Hygiene Products and Services
+Depository Credit Institution Workforce
+Infrastructure Shelter and Housing (Construction) (see [here](https://www.immunizenevada.org/county-specific-covid-19-vaccine-plan))
+* Are you age 55+?
 
 ## Nevada::Clark
 
@@ -2046,6 +2141,8 @@ food processing, transportation, US Postal Service, public transit (see [here](h
 | scheduling_phone | [775-482-6711](tel:775-482-6711) |
 
 
+### Nevada::Esmeralda Active Phase (age_16)
+
 ## Nevada::Eureka
 
 ### Nevada::Eureka Links
@@ -2054,6 +2151,8 @@ food processing, transportation, US Postal Service, public transit (see [here](h
 | --- | --- |
 | scheduling_phone | [775-237-5372](tel:775-237-5372) |
 
+
+### Nevada::Eureka Active Phase (age_16)
 
 ## Nevada::Humboldt
 
@@ -2064,6 +2163,8 @@ food processing, transportation, US Postal Service, public transit (see [here](h
 
 
 
+### Nevada::Humboldt Active Phase (age_16)
+
 ## Nevada::Lander
 
 ### Nevada::Lander Links
@@ -2073,6 +2174,8 @@ food processing, transportation, US Postal Service, public transit (see [here](h
 | info | [Nevada Division of Public and Behavioral Health](http://www.landercountynv.org/government/executive_director/index.php) |
 | scheduling_phone | [775-539-9136](tel:775-539-9136) |
 
+
+### Nevada::Lander Active Phase (age_18)
 
 ## Nevada::Lincoln
 
@@ -2107,6 +2210,8 @@ food processing, transportation, US Postal Service, public transit (see [here](h
 | info | [Nevada Division of Public and Behavioral Health](http://cms.revize.com/revize/mineralcounty/departments/coronavirus_vaccination_information.php) |
 
 
+### Nevada::Mineral Active Phase (age_16)
+
 ## Nevada::Nye
 
 ### Nevada::Nye Links
@@ -2118,6 +2223,8 @@ food processing, transportation, US Postal Service, public transit (see [here](h
 | scheduling | [Schedule a Vaccination](https://booking.appointy.com/en-US/snyecovid/snyecovid) |
 | scheduling_phone | [1-800-401-0946](tel:1-800-401-0946) |
 
+
+### Nevada::Nye Active Phase (age_16)
 
 ## Nevada::Pershing
 
@@ -2163,6 +2270,8 @@ food processing, transportation, US Postal Service, public transit (see [here](h
 | --- | --- |
 | scheduling_phone | [775-293-6558](tel:775-293-6558) |
 
+
+### Nevada::White Pine Active Phase (age_16)
 
 # New Hampshire
 
