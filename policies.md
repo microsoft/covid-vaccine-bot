@@ -2171,11 +2171,14 @@ food processing, transportation, US Postal Service, public transit (see [here](h
 | link type | link |
 | --- | --- |
 | info | [New Hampshire Department of Health and Human Services](https://www.nh.gov/covid19/resources-guidance/vaccination-planning.htm) |
+| workflow | [Vaccine Eligibility Questionnaire](https://www.vaccines.nh.gov/) |
+| scheduling | [Schedule a Vaccination](https://www.vaccines.nh.gov/) |
+| scheduling_phone | [211](tel:211) |
 
 
-## New Hampshire Active Phase (2b)
+## New Hampshire Active Phase (phase_3_ages_40)
 
-* Are you age 50+?
+* Are you age 40+?
 * Are you a healthcare worker?
 * Are you a long-term care resident?
 * Are you a first responder?
