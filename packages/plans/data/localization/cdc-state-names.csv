@@ -1,7 +1,6 @@
 String ID,en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th
 cdc/kentucky/state_name,Kentucky,켄터키,Kentucky,肯塔基州,Kentucky,,,,,,,,,,
 cdc/new_york/state_name,New York,뉴욕,New York,纽约州,Nueva York,,,,,,,,,,
-cdc/illinois_-_chicago/state_name,Illinois - Chicago,일리노이 - 시카고,Illinois - Chicago,伊利诺斯州 - 芝加哥,"Illinois, Chicago",,,,,,,,,,
 cdc/palau/state_name,Palau,팔라우,Palau,帕劳,Palaos,,,,,,,,,,
 cdc/south_dakota/state_name,South Dakota,사우스다코타,South Dakota,南达科他州,Dakota del Sur,,,,,,,,,,
 cdc/minnesota/state_name,Minnesota,미네소타,Minnesota,明尼苏达州,Minnesota,,,,,,,,,,
@@ -41,7 +40,6 @@ cdc/please_select_a_location/state_name,Please select a location,위치를 선�
 cdc/nevada/state_name,Nevada,네바다,Nevada,内华达州,Nevada,,,,,,,,,,
 cdc/new_jersey/state_name,New Jersey,뉴저지,New Jersey,新泽西州,Nueva Jersey,,,,,,,,,,
 cdc/puerto_rico/state_name,Puerto Rico,푸에르토리코,Puerto Rico,波多黎各,Puerto Rico,,,,,,,,,,
-cdc/new_york_-_new_york_city/state_name,New York - New York City,뉴욕 - 뉴욕시,New York - New York City,纽约州 - 纽约市,"Nueva York, ciudad de Nueva York",,,,,,,,,,
 cdc/utah/state_name,Utah,유타,Utah,犹他州,Utah,,,,,,,,,,
 cdc/wisconsin/state_name,Wisconsin,위스콘신,Wisconsin,威斯康星州,Wisconsin,,,,,,,,,,
 cdc/iowa/state_name,Iowa,아이오와,Iowa,爱荷华州,Iowa,,,,,,,,,,
