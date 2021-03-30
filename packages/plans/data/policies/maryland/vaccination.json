@@ -104,7 +104,7 @@
 					"question": "c19.eligibility.question/age.60_up"
 				},
 				{
-					"question": "c19.eligibility.question/health.are_you_currently_hospitalized",
+					"question": "c19.eligibility.question/health.are_you_currently_receiving",
 					"moreInfoText": "c19.eligibility.moreinfo/health.are_you_currently_hospitalized.md.2a",
 					"moreInfoUrl": "https://coronavirus.maryland.gov/pages/vaccine"
 				}

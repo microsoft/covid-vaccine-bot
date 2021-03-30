@@ -24,16 +24,8 @@
 			"id": "current",
 			"qualifications": [
 				{
-					"question": "c19.eligibility.question/healthcare_worker",
-					"moreInfoText": "c19.eligibility.moreinfo/healthcare_worker.nj.current"
-				},
-				{
 					"question": "c19.eligibility.question/long_term_care_resident.are",
 					"moreInfoText": "c19.eligibility.moreinfo/long_term_care_resident.are.nj.current"
-				},
-				{
-					"question": "c19.eligibility.question/essential_worker.are",
-					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.are.nj.current"
 				},
 				{
 					"question": "c19.eligibility.question/age.65_up"
@@ -43,12 +35,9 @@
 					"moreInfoText": "c19.eligibility.moreinfo/health.nj.current"
 				},
 				{
-					"question": "c19.eligibility.question/essential_worker.are_you",
-					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.are_you.nj.current"
-				},
-				{
 					"question": "c19.eligibility.question/essential_worker",
-					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.nj.current"
+					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.nj.current",
+					"moreInfoUrl": "https://covid19.nj.gov/faqs/nj-information/slowing-the-spread/who-is-eligible-for-vaccination-in-new-jersey-who-is-included-in-the-vaccination-phases#direct-link"
 				},
 				{
 					"question": "c19.eligibility.question/housing.are",
@@ -56,26 +45,6 @@
 				},
 				{
 					"question": "c19.eligibility.question/tribal.are"
-				}
-			]
-		},
-		{
-			"id": "next_phase",
-			"label": "Next Phase",
-			"qualifications": [
-				{
-					"question": "c19.eligibility.question/essential_worker.are_you_a_transportation",
-					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.are_you_a_transportation.nj.next_phase"
-				},
-				{
-					"question": "c19.eligibility.question/housing.are",
-					"moreInfoText": "c19.eligibility.moreinfo/housing.are.nj.next_phase"
-				},
-				{
-					"question": "c19.eligibility.question/tribal.are"
-				},
-				{
-					"question": "c19.eligibility.question/worker.are"
 				}
 			]
 		}

@@ -24,7 +24,7 @@
 			"description": "c19.link/scheduling.phone.description.or"
 		}
 	},
-	"activePhase": "1b",
+	"activePhase": "1b_group_6",
 	"phases": [
 		{
 			"id": "1a",
@@ -93,7 +93,8 @@
 				},
 				{
 					"question": "c19.eligibility.question/congregate.do",
-					"moreInfoUrl": "https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le3527A.pdf"
+					"moreInfoUrl": "https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le3527A.pdf",
+					"moreInfoText": "c19.eligibility.moreinfo/congregate.do.or.1b_group_6"
 				},
 				{
 					"question": "c19.eligibility.question/health.are_you_age_45",
