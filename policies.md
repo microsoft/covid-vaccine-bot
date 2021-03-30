@@ -2585,24 +2585,10 @@ All other essential workers per Cybersecurity and Infrastructure Security Agency
 | scheduling_phone | [405-425-4489](tel:405-425-4489) |
 
 
-## Oklahoma Active Phase (1c)
+## Oklahoma Active Phase (phase_4)
 
-* Are you a healthcare worker?
-* Are you a long term care resident or work in a long term care facility?
-* Are you classified as an essential worker?
-	* This includes first responders (paid and unpaid), public health staff supporting front line efforts, senior state/county/city government leaders and elected officials critical to maintain continuity of governmental operations and services, and other critical infrastructure personnel
-* Are you age 65+?
-	* Any individual who will be 65 or older before 12/31/2021 is eligible for the vaccine
-* Are you age 16+, and have a high-risk medical condition?
-	* This includes asthma, cancers, chronic lung disease, chronic kidney disease, chronic liver disease, diabetes mellitus, Down syndrome, heart disease, high blood pressure/hypertension, obesity, or suppressed immune system, as well as any adult at high risk of mortality and severe morbidity resulting from a COVID infection as determined by a physician
-* Do you work or live in a congregate setting?
-* Are you a K-12 educator or work in a licensed child care facility?
-	* This includes K-12 teachers or any staff working in a K-12 school, as well as teachers, students aged 18 and older, residents and administrative staff in educational settings outside PreK-12, including but not limited to:
-- Childcare facilities
-- Early childhood facilities
-- Colleges and universities
-- Career and vocational technology centers
-- Other post-secondary institutions
+* Are you age 16+?
+	* If you are a parent accompanying a minor to their appointment (16yo + for Pfizer only), it is helpful to bring their school photo ID, a birth certificate, or a social security card if they do not have a driver's license/permit.
 
 # Oregon
 
