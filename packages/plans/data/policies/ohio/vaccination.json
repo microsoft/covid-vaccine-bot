@@ -32,43 +32,7 @@
 			"id": "current",
 			"qualifications": [
 				{
-					"question": "c19.eligibility.question/healthcare_worker",
-					"moreInfoText": "c19.eligibility.moreinfo/healthcare_worker.oh.current"
-				},
-				{
-					"question": "c19.eligibility.question/age.are_you"
-				},
-				{
-					"question": "c19.eligibility.question/long_term_care_resident.are"
-				},
-				{
-					"question": "c19.eligibility.question/congregate",
-					"moreInfoText": "c19.eligibility.moreinfo/congregate.oh.current"
-				},
-				{
-					"question": "c19.eligibility.question/essential_worker.k12"
-				},
-				{
-					"question": "c19.eligibility.question/essential_worker.ff_leo_corrections",
-					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.ff_leo_corrections.oh.current",
-					"moreInfoUrl": "https://coronavirus.ohio.gov/wps/portal/gov/covid-19/covid-19-vaccination-program/covid-19-vaccination-program"
-				},
-				{
-					"question": "c19.eligibility.question/worker.do",
-					"moreInfoText": "c19.eligibility.moreinfo/worker.do.oh.current",
-					"moreInfoUrl": "https://coronavirus.ohio.gov/wps/portal/gov/covid-19/covid-19-vaccination-program/covid-19-vaccination-program"
-				},
-				{
-					"question": "c19.eligibility.question/essential_worker.are_you",
-					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.are_you.oh.current",
-					"moreInfoUrl": "https://coronavirus.ohio.gov/wps/portal/gov/covid-19/covid-19-vaccination-program/covid-19-vaccination-program"
-				},
-				{
-					"question": "c19.eligibility.question/health",
-					"moreInfoText": "c19.eligibility.moreinfo/health.oh.current"
-				},
-				{
-					"question": "c19.eligibility.question/health.are_you_currently"
+					"question": "c19.eligibility.question/age.16_up"
 				}
 			]
 		}
