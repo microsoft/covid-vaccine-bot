@@ -24,7 +24,7 @@
 			"description": "c19.link/scheduling.phone.description.wa"
 		}
 	},
-	"activePhase": "1b_tier_2",
+	"activePhase": "1b_tier_4",
 	"phases": [
 		{
 			"id": "1a",
@@ -152,6 +152,49 @@
 				{
 					"question": "c19.eligibility.question/veteran.are",
 					"moreInfoText": "c19.eligibility.moreinfo/veteran.are.wa.1b_tier_2"
+				}
+			]
+		},
+		{
+			"id": "1b_tier_4",
+			"label": "1B Tier 4",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/healthcare_worker"
+				},
+				{
+					"question": "c19.eligibility.question/age.60_up"
+				},
+				{
+					"question": "c19.eligibility.question/multigenerational.are"
+				},
+				{
+					"question": "c19.eligibility.question/long_term_care_resident.are"
+				},
+				{
+					"question": "c19.eligibility.question/essential_worker",
+					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.wa.1b_tier_4"
+				},
+				{
+					"question": "c19.eligibility.question/health.are_you_a_person",
+					"moreInfoUrl": "https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html",
+					"moreInfoText": "c19.eligibility.moreinfo/health.are_you_a_person.wa.1b_tier_4"
+				},
+				{
+					"question": "c19.eligibility.question/health.are_you_currently"
+				},
+				{
+					"question": "c19.eligibility.question/veteran.are",
+					"moreInfoText": "c19.eligibility.moreinfo/veteran.are.wa.1b_tier_4"
+				},
+				{
+					"question": "c19.eligibility.question/health.are",
+					"moreInfoText": "c19.eligibility.moreinfo/health.are.wa.1b_tier_4",
+					"moreInfoUrl": "https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html"
+				},
+				{
+					"question": "c19.eligibility.question/congregate.do",
+					"moreInfoText": "c19.eligibility.moreinfo/congregate.do.wa.1b_tier_4"
 				}
 			]
 		}
