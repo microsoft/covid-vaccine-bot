@@ -2239,9 +2239,9 @@ Infrastructure Shelter and Housing (Construction) (see [here](https://www.immuni
 | scheduling_phone | [211](tel:211) |
 
 
-## New Hampshire Active Phase (phase_3_ages_40)
+## New Hampshire Active Phase (phase_3_ages_30)
 
-* Are you age 40+?
+* Are you age 30+?
 * Are you a healthcare worker?
 * Are you a long-term care resident?
 * Are you a first responder?
