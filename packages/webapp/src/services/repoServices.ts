@@ -244,24 +244,6 @@ export const repoServices = async (
 				}
 			)
 
-			const commentResp = await fetch(
-				`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/issues/${extraData}/comments`,
-				{
-					method: 'GET',
-					headers: {
-						Authorization: `token ${state.accessToken}`,
-					},
-				}
-			)
-
-			const commentsObj = await commentResp.json()
-			const changes: any[] = []
-			if (commentsObj && commentsObj.length > 0) {
-				commentsObj.forEach((comment: { body: string }) => {
-					changes.push(JSON.parse(comment.body.substr(1, comment.body.length - 2)))
-				})
-			}
-
 			const commitResp = await fetch(
 				`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/pulls/${extraData}/commits`,
 				{
@@ -272,7 +254,7 @@ export const repoServices = async (
 				}
 			)
 
-			return {data: await loadPRResponse.json(), changes, commits: await commitResp.json()}
+			return {data: await loadPRResponse.json(), commits: await commitResp.json()}
 		case 'getIssues':
 			const loadIssuesResponse = await fetch(
 				`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/issues`,
@@ -284,32 +266,7 @@ export const repoServices = async (
 				}
 			)
 
-			const prList = await loadIssuesResponse.clone().json()
-			const prChangeList: any[] = []
-			prList.forEach(async (item: any) => {
-				const commentResp = await fetch(
-					`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/issues/${item.number}/comments`,
-					{
-						method: 'GET',
-						headers: {
-							Authorization: `token ${state.accessToken}`,
-						},
-					}
-				)
-				const commentsObj = await commentResp.json()
-				if (commentsObj && commentsObj.length > 0) {
-					const changes = JSON.parse(
-						commentsObj[0].body.substr(1, commentsObj[0].body.length - 2)
-					)
-					prChangeList.push({
-						prNumber: item.number,
-						prDescription: item.body,
-						prChanges: changes,
-					})
-				}
-			})
-
-			return [await loadIssuesResponse.json(), prChangeList]
+			return [await loadIssuesResponse.json()]
 
 
 		case 'getRepoFileData':
@@ -474,7 +431,6 @@ export const repoServices = async (
 				const globalUpdates = extraData[0]
 				const locationUpdates = extraData[1]
 				const prFormData = extraData[3]
-				const changeSummary = extraData[4]
 
 				let workingBranch = state.loadedPRData
 
@@ -522,19 +478,6 @@ export const repoServices = async (
 						}
 					)
 
-					await fetch(
-						`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/issues/${prRespClone.number}/comments`,
-						{
-							method: 'POST',
-							headers: {
-								Authorization: `token ${state.accessToken}`,
-							},
-							body: JSON.stringify({
-								body: `\`${JSON.stringify(changeSummary)}\``
-							}),
-						}
-					)
-
 					return prResp.json()
 				} else {
 					prTitle = !prFormData.prTitle ? state.loadedPRData.title : prFormData.prTitle
@@ -549,19 +492,6 @@ export const repoServices = async (
 							body: JSON.stringify({
 								title: prTitle,
 								body: prDetails
-							}),
-						}
-					)
-
-					await fetch(
-						`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/issues/${state.loadedPRData.number}/comments`,
-						{
-							method: 'POST',
-							headers: {
-								Authorization: `token ${state.accessToken}`,
-							},
-							body: JSON.stringify({
-								body: `\`${JSON.stringify(changeSummary)}\``
 							}),
 						}
 					)

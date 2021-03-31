@@ -56,20 +56,18 @@ export default observer(function Review(props: ReviewProp) {
 	const state = getAppStore()
 	const [formData, setFormData] = useState<any>(setInitialFormData(state.loadedPRData))
 	const fieldChanges = useRef<any>(formData)
-	const changeSummary = useRef<any[]>([])
 
 	useEffect(() => {
 		try {
-			const { globalUpdates, locationUpdates, changesList, changeSummary: tempChangeSummary } = getChanges()
+			const { globalUpdates, locationUpdates, changesList } = getChanges()
 
-			changeSummary.current = tempChangeSummary
 			setLocationUpdates(locationUpdates)
 			setChangesList(changesList)
 			setGlobalUpdates(globalUpdates)
 		} catch (err) {
 			setErrorMessage(err)
 		}
-	}, [state.initRepoFileData, state.repoFileData, state.initGlobalFileData, state.globalFileData, changeSummary])
+	}, [state.initRepoFileData, state.repoFileData, state.initGlobalFileData, state.globalFileData])
 
 	const handleTextChange = useCallback(
 		(ev) => {
@@ -138,8 +136,7 @@ export default observer(function Review(props: ReviewProp) {
 											globalUpdates,
 											locationUpdates,
 											showDashboard,
-											formData,
-											changeSummary.current,
+											formData
 										])
 									}}
 								/>

@@ -49,7 +49,6 @@ export const setIssuesList = mutatorAction(
 		if (data) {
 			const store = getAppStore()
 			store.issues = data[0]
-			store.prChanges = data[1]
 
 			if (callback) {
 				callback()
@@ -65,7 +64,6 @@ export const setLoadedPRData = mutatorAction(
 		if (prData) {
 			store.loadedPRData = prData.data
 			store.prChanges = {
-				changes: prData.changes,
 				last_commit: prData.commits.pop(),
 			}
 			store.userWorkingBranch = undefined
