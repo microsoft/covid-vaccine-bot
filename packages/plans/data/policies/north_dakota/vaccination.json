@@ -20,7 +20,7 @@
 			"description": "c19.link/scheduling.phone.description.nd"
 		}
 	},
-	"activePhase": "1c",
+	"activePhase": "2",
 	"phases": [
 		{
 			"id": "1a",
@@ -88,6 +88,17 @@
 				},
 				{
 					"question": "c19.eligibility.question/age.65_up"
+				}
+			]
+		},
+		{
+			"id": "2",
+			"label": "2",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.16_up",
+					"moreInfoText": "c19.eligibility.moreinfo/age.16_up.nd.2",
+					"moreInfoUrl": "https://www.health.nd.gov/covidvaccinelocator"
 				}
 			]
 		}
