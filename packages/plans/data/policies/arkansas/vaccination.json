@@ -8,7 +8,7 @@
 			]
 		}
 	},
-	"activePhase": "1c",
+	"activePhase": "16_and_older",
 	"phases": [
 		{
 			"id": "1a",
@@ -67,6 +67,15 @@
 				{
 					"question": "c19.eligibility.question/congregate.do",
 					"moreInfoText": "c19.eligibility.moreinfo/congregate.do.ar.1c"
+				}
+			]
+		},
+		{
+			"id": "16_and_older",
+			"label": "16 and older",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.16_up"
 				}
 			]
 		}
