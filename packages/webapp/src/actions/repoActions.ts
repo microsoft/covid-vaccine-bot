@@ -16,4 +16,8 @@ export const loadPR = action('loadPR', (prNumber: any) => ({
 	prNumber,
 }))
 
+export const loadBranch = action('loadBranch', (branch: any) => ({
+	branch,
+}))
+
 export const saveContinue = action('saveContinue')

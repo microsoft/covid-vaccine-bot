@@ -44,6 +44,10 @@ export default observer(function App() {
 		isPersonaMenuOpen,
 		{ setTrue: showPersonaMenu, setFalse: hidePersonaMenu },
 	] = useBoolean(false)
+	const [
+		branchWasSaved,
+		setBranchWasSaved,
+	] = useState(false)
 	const [selectedKey, setSelectedKey] = useState<string>('Dashboard')
 	const personaComponent = useRef(null)
 
@@ -103,7 +107,7 @@ export default observer(function App() {
 					actions={
 						<div>
 							<MessageBarButton onClick={initializeGitData}>Discard</MessageBarButton>
-							<MessageBarButton onClick={saveContinue}>Save and Continue</MessageBarButton>
+							<MessageBarButton onClick={() => {setBranchWasSaved(true); saveContinue()}}>Save and Continue</MessageBarButton>
 						</div>
 						}
 				>
@@ -111,7 +115,17 @@ export default observer(function App() {
 					review tab to submit these changes.
 				</MessageBar>
 			)
-		}
+		} else if (state.userWorkingBranch) {
+			return (
+				<MessageBar
+					messageBarType={4}
+					styles={{ root: { margin: '10px 5px' } }}
+				>
+					{branchWasSaved ? 'Your changes have been saved  to' : 'You are now working on branch '} {state.userWorkingBranch}, <br/>
+					please click on the review tab to submit these changes.
+				</MessageBar>
+			)
+		} 
 
 		return null
 	}
@@ -225,7 +239,7 @@ export default observer(function App() {
 															<Translate />
 														</PivotItem>
 													)}
-													{state.pendingChanges && (
+													{(state.pendingChanges || state.userWorkingBranch) && (
 														<PivotItem headerText="Review" itemKey="Review">
 															<Review showDashboard={showDashboard} />
 														</PivotItem>

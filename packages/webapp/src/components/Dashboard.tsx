@@ -18,7 +18,7 @@
 import { useBoolean } from '@uifabric/react-hooks'
 import { observer } from 'mobx-react-lite'
 import { useState, useEffect, useCallback } from 'react'
-import { initializeGitData, loadPR } from '../actions/repoActions'
+import { initializeGitData, loadPR, loadBranch } from '../actions/repoActions'
 import { getAppStore } from '../store/store'
 
 import './Dashboard.scss'
@@ -31,7 +31,22 @@ export default observer(function Dashboard() {
 	const [issueList, setIssueList] = useState<any[]>([])
 	const [hideDialog, { toggle: toggleHideDialog }] = useBoolean(true);
 	const [noteKeys, setNoteKeys] = useState<any>([])
+	const [userWorkingBranches, setUserWorkingBranches] = useState<any>([])
 
+	useEffect(() => {
+		const {branches} = state
+
+		if(branches){
+			setUserWorkingBranches(
+				branches?.filter(branch => {
+					return branch.name.split('-policy-')[0] === state.username 
+				}).sort((a,b) => {
+					return a.name.split('-policy-')[1] < b.name.split('-policy-')[1] ? 1 : -1
+				})
+			)
+		}
+	}, [state, state.branches, prList]);
+	
 	useEffect(() => {
 		if(state.issues){
 			const tempPRList:any = [];
@@ -82,6 +97,16 @@ export default observer(function Dashboard() {
 			</div>
 			)
 
+	}
+
+	const onBranchActionRender =  (item?: any, index?: number, column?: IColumn) =>  {
+		return (
+			<div className="actionsColumn">
+				<div className="loadPRButton" onClick={() => loadBranch(item)}>
+					<FontIcon iconName="DrillDownSolid"/>Load Branch
+				</div>
+			</div>
+			)
 	};
 
 	const toggleCallout = useCallback((id: number) => {
@@ -203,7 +228,37 @@ export default observer(function Dashboard() {
 			isResizable: true,
 			onRender: onIssueActionRender
 		},
-
+	];
+	
+	const userWorkingBranchColumns = [
+		{
+			key: 'branchName',
+			name: 'Branch Name',
+			fieldName: 'name',
+			minWidth: 200,
+			isResizable: true,
+		},
+		{
+			key: 'createdCol',
+			name: 'Created On',
+			fieldName: 'createdOn',
+			minWidth: 200,
+			isResizable: true,
+			onRender: (item: any) => (
+				<div>
+					{new Date(parseInt(item.name.split('-policy-')[1])).toLocaleString()}
+				</div>
+			)
+		},
+		{
+			key: 'actionCol',
+			name: '',
+			ariaLabel:'Actions Column',
+			fieldName: 'action',
+			minWidth: 200,
+			isResizable: true,
+			onRender: onBranchActionRender
+		},
 	];
 
 	const refreshData = useCallback(() => {
@@ -243,6 +298,22 @@ export default observer(function Dashboard() {
 								/>
 								Refresh Data
 							</div>
+						</div>
+						<div className="sectionHeader">Working Branches</div>
+						<div className="sectionContent">
+							<DetailsList
+							items={userWorkingBranches}
+							columns={userWorkingBranchColumns}
+							setKey="set"
+							layoutMode={DetailsListLayoutMode.justified}
+							ariaLabelForSelectionColumn="Toggle selection"
+							ariaLabelForSelectAllCheckbox="Toggle selection for all items"
+							checkButtonAriaLabel="Row checkbox"
+							checkboxVisibility={2}
+						/>
+						{ !userWorkingBranches.length && (
+							<div style={{textAlign:"center"}}>No working branches at this time.</div>
+						) }
 						</div>
 						<div className="sectionHeader">Pending PRs</div>
 						<div className="sectionContent">

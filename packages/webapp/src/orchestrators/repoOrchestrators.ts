@@ -8,6 +8,7 @@ import {
 	getRepoFileData,
 	initializeGitData,
 	loadPR,
+	loadBranch,
 	saveContinue
 } from '../actions/repoActions'
 import {
@@ -17,7 +18,9 @@ import {
 	setIssuesList,
 	initStoreData,
 	setLoadedPRData,
-	setUserWorkingBranch
+	setUserWorkingBranch,
+	setPendingChanges,
+	setGlobalAndRepoChanges,
 } from '../mutators/repoMutators'
 import { repoServices } from '../services/repoServices'
 import { getAppStore } from '../store/store'
@@ -50,6 +53,9 @@ orchestrator(getRepoFileData, async () => {
 
 orchestrator(initializeGitData, async () => {
 	initStoreData(true)
+	setUserWorkingBranch(undefined)
+	
+	// const userPRList = await repoServices('getUserPullRequests')
 
 	let resp = await repoServices('getBranches')
 	setBranchList(resp)
@@ -62,6 +68,19 @@ orchestrator(initializeGitData, async () => {
 
 	handleCreatePR()
 
+	initStoreData(false)
+})
+
+orchestrator(loadBranch, async (message) => {
+	const { branch } = message
+	initStoreData(true)
+
+	const resp = await repoServices('getRepoFileData', `refs/heads/${branch.name}`)
+
+	if (resp) {
+		setUserWorkingBranch(branch.name)
+		setRepoFileData(resp)
+	}
 	initStoreData(false)
 })
 
@@ -79,19 +98,25 @@ orchestrator(loadPR, async (message) => {
 
 orchestrator(saveContinue, async () => {
 	const store = getAppStore()
+	const changes = getChanges()
 	if (store.userWorkingBranch) {
-		await repoServices('commitChanges', {...getChanges(), branchName: store.userWorkingBranch.ref})
+		await repoServices('commitChanges', {...changes, branchName: `refs/heads/${store.userWorkingBranch}`})
+		setPendingChanges(false)
+		setGlobalAndRepoChanges()
 	} else {
 		const resp = await repoServices('createWorkingBranch')
 		if (resp) {
-			setUserWorkingBranch(resp)
-			await repoServices('commitChanges', {...getChanges(), branchName: resp.ref})
+			setUserWorkingBranch(resp.ref.split('refs/heads/').join(''))
+			await repoServices('commitChanges', {...changes, branchName: `refs/heads/${store.userWorkingBranch}`})
+			setPendingChanges(false)
+			setGlobalAndRepoChanges()
 		}
 	}
 
 	// after draft branch was created
-	// commit changes to draft branch, reset pending changes to false.
-	// update init global and repo with the commited version as base.
+	// x commit changes to draft branch, 
+	// x reset pending changes to false.
+	// - update init global and repo with the commited version as base.
 	// user should be able to continue commiting to draft branch
 	// once user submitted for review, create pr should use draft branch. However, Review tab will only show if there's a diff in the repo.
 	// Review tab should show if working branch is present or pending changes is still true.

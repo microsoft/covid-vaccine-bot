@@ -14,6 +14,22 @@ export const initStoreData = mutatorAction(
 		store.isDataRefreshing = isDataRefreshing
 	}
 )
+export const setPendingChanges = mutatorAction(
+	'setPendingChanges',
+	(pendingChanges: boolean) => {
+		const store = getAppStore()
+		store.pendingChanges = pendingChanges
+	}
+)
+
+export const setGlobalAndRepoChanges = mutatorAction(
+	'setGlobalAndRepoChanges', 
+	() => {
+		const store = getAppStore()
+		store.initGlobalFileData = store.globalFileData
+		store.initRepoFileData = store.repoFileData
+	}
+)
 
 export const setBranchList = mutatorAction(
 	'setBranchList',
