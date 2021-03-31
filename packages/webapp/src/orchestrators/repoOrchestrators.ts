@@ -21,6 +21,7 @@ import {
 	setUserWorkingBranch,
 	setPendingChanges,
 	setGlobalAndRepoChanges,
+	setUserWorkingBranches
 } from '../mutators/repoMutators'
 import { repoServices } from '../services/repoServices'
 import { getAppStore } from '../store/store'
@@ -30,12 +31,17 @@ import { getChanges } from '../selectors/changesSelectors'
 orchestrator(createPR, async (message) => {
 	const { fileData } = message
 	let resp = await repoServices('createPR', fileData)
+	const store = getAppStore()
 
 	if(resp){
 
 		resp = await repoServices('getBranches')
 		setBranchList(resp)
 
+		
+		resp = await repoServices('getUserWorkingBranches', [resp])
+		setUserWorkingBranches(store.userWorkingBranches)
+	
 		resp = await repoServices('getRepoFileData')
 		setRepoFileData(resp)
 
@@ -55,10 +61,11 @@ orchestrator(initializeGitData, async () => {
 	initStoreData(true)
 	setUserWorkingBranch(undefined)
 	
-	// const userPRList = await repoServices('getUserPullRequests')
-
 	let resp = await repoServices('getBranches')
 	setBranchList(resp)
+
+	const userWorkingBranches = await repoServices('getUserWorkingBranches', [resp])
+	setUserWorkingBranches(userWorkingBranches)
 
 	resp = await repoServices('getRepoFileData')
 	setRepoFileData(resp)

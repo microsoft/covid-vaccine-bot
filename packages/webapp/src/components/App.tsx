@@ -130,6 +130,10 @@ export default observer(function App() {
 		return null
 	}
 
+	useEffect(() => {
+		console.log('state', state);
+	}, [state])
+	
 	return (
 		<div className="rootContentWrapper">
 			{state.isAuthenticated ? (

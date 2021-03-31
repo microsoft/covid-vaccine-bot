@@ -31,22 +31,7 @@ export default observer(function Dashboard() {
 	const [issueList, setIssueList] = useState<any[]>([])
 	const [hideDialog, { toggle: toggleHideDialog }] = useBoolean(true);
 	const [noteKeys, setNoteKeys] = useState<any>([])
-	const [userWorkingBranches, setUserWorkingBranches] = useState<any>([])
 
-	useEffect(() => {
-		const {branches} = state
-
-		if(branches){
-			setUserWorkingBranches(
-				branches?.filter(branch => {
-					return branch.name.split('-policy-')[0] === state.username 
-				}).sort((a,b) => {
-					return a.name.split('-policy-')[1] < b.name.split('-policy-')[1] ? 1 : -1
-				})
-			)
-		}
-	}, [state, state.branches, prList]);
-	
 	useEffect(() => {
 		if(state.issues){
 			const tempPRList:any = [];
@@ -302,7 +287,7 @@ export default observer(function Dashboard() {
 						<div className="sectionHeader">Working Branches</div>
 						<div className="sectionContent">
 							<DetailsList
-							items={userWorkingBranches}
+							items={state.userWorkingBranches}
 							columns={userWorkingBranchColumns}
 							setKey="set"
 							layoutMode={DetailsListLayoutMode.justified}
@@ -311,7 +296,7 @@ export default observer(function Dashboard() {
 							checkButtonAriaLabel="Row checkbox"
 							checkboxVisibility={2}
 						/>
-						{ !userWorkingBranches.length && (
+						{ !state.userWorkingBranches.length && (
 							<div style={{textAlign:"center"}}>No working branches at this time.</div>
 						) }
 						</div>

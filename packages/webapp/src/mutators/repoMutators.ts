@@ -43,6 +43,16 @@ export const setBranchList = mutatorAction(
 	}
 )
 
+export const setUserWorkingBranches = mutatorAction(
+	'setUserWorkingBranches',
+	(userWorkingBranches: any[] | undefined) => {
+		if (userWorkingBranches) {
+			const store = getAppStore()
+			store.userWorkingBranches = userWorkingBranches
+		}
+	}
+)
+
 export const setIssuesList = mutatorAction(
 	'setIssuesList',
 	(data: any[] | undefined, callback?: any | undefined) => {

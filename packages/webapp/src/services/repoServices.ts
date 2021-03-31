@@ -233,6 +233,48 @@ export const repoServices = async (
 			)
 
 			return await loadBranchesResponse.json()
+
+		case 'getUserWorkingBranches': 
+			const userPrs = await repoServices('getUserPullRequests')
+			const allBranches = extraData[0]
+			const usersBranches = allBranches.filter((branch: any) => branch.name.split('-policy-')[0] === state.username)
+
+			const userWorkingBranches = usersBranches.filter((branch: any) => {
+				return !userPrs.find((pr: any) => pr?.head?.ref === branch.name)
+			} ).sort((a: any, b: any) => (a.name > b.name ? -1 : 1))
+
+			return userWorkingBranches
+
+		case 'getUserPullRequests': 
+			const prResp = await fetch(
+				`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/issues?creator=${state.username}`,
+				{
+					method: 'GET',
+					headers: {
+						Authorization: `token ${state.accessToken}`,
+					},
+				}
+			)
+			const prs = await prResp.json();
+			console.log('prs', prs);
+				
+			let populatedPRs: any[] = await Promise.all(
+				prs.map(async (item: any) => {
+					let res = await fetch(
+						`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/pulls/${item.number}`,
+						{
+							method: 'GET',
+							headers: {
+								Authorization: `token ${state.accessToken}`,
+							},
+						}
+					)
+					
+					return await res.json()
+				})
+			)
+
+			return populatedPRs
 		case 'getPullRequests':
 			const loadPRResponse = await fetch(
 				`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/pulls/${extraData}`,
@@ -465,7 +507,6 @@ export const repoServices = async (
 			break
 		case 'commitChanges':
 			if (extraData) {
-				debugger
 				await commitChanges(state, extraData.branchName, extraData.globalUpdates, extraData.locationUpdates)
 			}
 			break
@@ -480,17 +521,18 @@ export const repoServices = async (
 
 				if (!state.loadedPRData && !state.userWorkingBranch) {
 					workingBranch = await createWorkingBranch(state, branchName)
+				} else if (state.userWorkingBranch) {
+					workingBranch = `refs/heads/${state.userWorkingBranch}`
 				} else {
 					branchName = `refs/heads/${state.loadedPRData.head.ref}`
 				}
 
-				if (workingBranch) {
-					await commitChanges(state, branchName, globalUpdates, locationUpdates)
-				}
+				await commitChanges(state, workingBranch, globalUpdates, locationUpdates)
 
 				let prTitle = ''
 				if (!state.loadedPRData) {
 					prTitle = !prFormData.prTitle ? 'auto PR creation' : prFormData.prTitle
+
 					const prResp = await fetch(
 						`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/pulls`,
 						{
@@ -499,7 +541,7 @@ export const repoServices = async (
 								Authorization: `token ${state.accessToken}`,
 							},
 							body: JSON.stringify({
-								head: branchName,
+								head: workingBranch,
 								base: 'main',
 								title: prTitle,
 								body: prFormData.prDetails
