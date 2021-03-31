@@ -3,14 +3,12 @@
  * Licensed under the MIT license. See LICENSE file in the project.
  */
 import { getAppStore } from '../store/store'
-import { getObjDiffs } from '../utils/dataUtils'
 
 export const getChanges = () => {
     const state = getAppStore()
     const changesList: any[] = []
     const locationUpdates: any[] = []
     const globalUpdates: any[] = []
-    const changeSummary: any[] = []
 
     if (
         JSON.stringify(state.initGlobalFileData.customStrings).toLowerCase() !==
@@ -21,15 +19,6 @@ export const getChanges = () => {
             value: state.globalFileData.customStrings,
         })
         globalUpdates.push(state.globalFileData.customStrings)
-
-        changeSummary.push({
-            key: 'global',
-            type: 'customStrings',
-            value: getObjDiffs(
-                JSON.parse(JSON.stringify(state.initGlobalFileData.customStrings)),
-                JSON.parse(JSON.stringify(state.globalFileData.customStrings))
-            ),
-        })
     }
 
     if (
@@ -41,15 +30,6 @@ export const getChanges = () => {
             value: state.globalFileData.cdcStateNames,
         })
         globalUpdates.push(state.globalFileData.cdcStateNames)
-
-        changeSummary.push({
-            key: 'global',
-            type: 'cdcStateNames',
-            value: getObjDiffs(
-                JSON.parse(JSON.stringify(state.initGlobalFileData.cdcStateNames)),
-                JSON.parse(JSON.stringify(state.globalFileData.cdcStateNames))
-            ),
-        })
     }
 
     if (
@@ -61,15 +41,6 @@ export const getChanges = () => {
             value: state.globalFileData.cdcStateLinks,
         })
         globalUpdates.push(state.globalFileData.cdcStateLinks)
-
-        changeSummary.push({
-            key: 'global',
-            type: 'cdcStateLinks',
-            value: getObjDiffs(
-                JSON.parse(JSON.stringify(state.initGlobalFileData.cdcStateLinks)),
-                JSON.parse(JSON.stringify(state.globalFileData.cdcStateLinks))
-            ),
-        })
     }
 
     Object.keys(state.repoFileData).forEach((location: any) => {
@@ -95,17 +66,6 @@ export const getChanges = () => {
                         label: `Updated information for ${location}`,
                         value: state.repoFileData[location],
                     })
-
-                    changeSummary.push({
-                        key: location,
-                        type: 'info',
-                        value: getObjDiffs(
-                            JSON.parse(
-                                JSON.stringify(state.initRepoFileData[location].info)
-                            ),
-                            JSON.parse(JSON.stringify(state.repoFileData[location].info))
-                        ),
-                    })
                     addChanges = true
                 }
                 if (
@@ -121,21 +81,6 @@ export const getChanges = () => {
                         label: `Updated regions for ${location}`,
                         value: state.repoFileData[location],
                     })
-
-                    changeSummary.push({
-                        key: location,
-                        type: 'regions',
-                        value: getObjDiffs(
-                            JSON.parse(
-                                JSON.stringify(
-                                    state.initRepoFileData[location].regions ?? {}
-                                )
-                            ),
-                            JSON.parse(
-                                JSON.stringify(state.repoFileData[location].regions)
-                            )
-                        ),
-                    })
                     addChanges = true
                 }
                 if (
@@ -150,19 +95,6 @@ export const getChanges = () => {
                         label: `Updated phase information for ${location}`,
                         value: state.repoFileData[location],
                     })
-
-                    changeSummary.push({
-                        key: location,
-                        type: 'vaccination',
-                        value: getObjDiffs(
-                            JSON.parse(
-                                JSON.stringify(state.initRepoFileData[location].vaccination)
-                            ),
-                            JSON.parse(
-                                JSON.stringify(state.repoFileData[location].vaccination)
-                            )
-                        ),
-                    })
                     addChanges = true
                 }
                 if (
@@ -174,19 +106,6 @@ export const getChanges = () => {
                     changesList.push({
                         label: `Updated strings information for ${location}`,
                         value: state.repoFileData[location],
-                    })
-
-                    changeSummary.push({
-                        key: location,
-                        type: 'strings',
-                        value: getObjDiffs(
-                            JSON.parse(
-                                JSON.stringify(state.initRepoFileData[location].strings)
-                            ),
-                            JSON.parse(
-                                JSON.stringify(state.repoFileData[location].strings)
-                            )
-                        ),
                     })
                     addChanges = true
                 }
@@ -200,5 +119,5 @@ export const getChanges = () => {
         }
     })
 
-    return {globalUpdates, locationUpdates, changesList, changeSummary}
+    return {globalUpdates, locationUpdates, changesList}
 }
