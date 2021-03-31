@@ -1236,48 +1236,12 @@ Type 2 diabetes mellitus (see [here](https://www.cdc.gov/coronavirus/2019-ncov/n
 | scheduling_phone | [211](tel:211) |
 
 
-## Indiana Active Phase (1b)
+## Indiana Active Phase (16_and_older)
 
-* Are you a healthcare worker?
-	* This includes those who work or volunteer in healthcare and have (physical or close) contact or face to face interactions with patients. Examples include: Inpatient, outpatient, provider office setting, nursing homes, residential care facilities, assisted living facilities, in-home services.
-This includes all clinical and non-clinical positions: clinicians, dietary, environmental services, administrators who have direct contact with patients, clergy who see patients in the healthcare setting, non-clinicians who assist in procedures, transportation staff, etc.
-This also includes local health department staff who interact with patients at test sites, health clinics or provide direct patient care (see [here](https://www.coronavirus.in.gov/vaccine/index.htm))
-* Are you a long term care resident or work in a long term care facility?
-* Are you a first responder?
-	* This includes those who are who are regularly called to the scene of an emergency to give medical aid, including firefighters, police officers and sheriff's deputies, emergency medical services, reservists and correctional officers (see [here](https://www.coronavirus.in.gov/vaccine/index.htm))
-* Do you have exposure to COVID-19 infectious material?
-	* Examples include cleaning of rooms or material from COVID-19 patients, performing COVID-19 testing, other exposure to infected tissue, performing autopsies or other post-mortem examinations of COVID-19 patients)
-* Are you age 30+?
-* Are you age 16+, and have a high-risk medical condition?
-	* Specific groups of patients at highest risk of severe illness from COVID-19 who are identified by their healthcare provider are also eligible. These individuals will receive a unique registration link by text or email, or may call 211 after receiving the notification:
+* Are you age 16+?
+	* Anyone age 16 and older may now schedule a COVID-19 vaccination appointment. Click here to register or call 211 (866-211-9966) if you do not have access to a computer or need assistance.
 
-Active dialysis patients
-Sickle cell disease patients
-Down syndrome
-Post-solid organ transplant
-People who are actively in treatment (chemotherapy, radiation, surgery) for cancer now or in the last three months, or with active primary lung cancer or active hematologic cancers (lymphoma, leukemia and multiple myeloma)
-Early childhood conditions that are carried into adulthood:
-Cystic fibrosis
-Muscular dystrophy
-People born with severe heart defects, requiring specialized medical care.
-People with severe type 1 diabetes, who have been hospitalized in the past year.
-Phenylketonuria (PKU), Tay-Sachs, and other rare, inherited metabolic disorders.
-Epilepsy with continuing seizures, hydrocephaly, microcephaly and other severe neurologic disorders
-People with severe asthma who have been hospitalized for this in the past year
-Alpha and beta thalassemia
-Spina bifida
-Cerebral palsy
-People who require supplemental oxygen and/or tracheostomy
-Pulmonary fibrosis, Alpha-1 Antitrypsin
-Immunocompromised state (weakened immune system) from blood or bone marrow transplant, immune deficiencies, combined primary immunodeficiency disorder, HIV, daily use of corticosteroids, use of other immune weakening medicines, receiving tumor necrosis factor-alpha blocker or rituximab.
-Intellectual and Developmentally Disabled individuals receiving home/community-based services. (Family and Social Services Administration will provide patient information for this community.)
-Pregnancy (see [here](https://www.coronavirus.in.gov/vaccine/index.htm))
-* Are you a K-12 educator or work in a licensed child care facility?
-	* Examples include:
-Teacher or staff in pre-K through high school, childcare center or Head Start and Early Start programs
-Licensed childcare providers, including center-based and family care providers
-Classroom aides, bus drivers, janitors, counselors, administration staff, cafeteria workers and substitute teachers
-
+Please note that anyone younger than 18 must receive the Pfizer vaccine. It is the only vaccine to receive Emergency Use Authorization from the FDA for that age group. Proof of age will be required at the time of vaccination. (see [here](https://vaccine.coronavirus.in.gov/en-US/))
 
 # Iowa
 
