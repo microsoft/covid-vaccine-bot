@@ -2529,44 +2529,10 @@ Correctional facility, such as jail or prison
 | scheduling_phone | [701-328-2372](tel:701-328-2372) |
 
 
-## North Dakota Active Phase (1c)
+## North Dakota Active Phase (2)
 
-* Are you a healthcare worker?
-* Are you a long term care resident or work in a long term care facility?
-* Are you classified as an essential worker?
-	* This list includes:
-First responders
-Child care workers
-Workers employed by preschools or Kindergarten through 12th grade:
-Teachers, nutritional services, aides, bus drivers, principals, administrative staff, custodians, etc.
-National Guard, not previously covered
-Workers enabling access to human food (i.e., grocery workers)
-Public safety answering points (911)
-Manufacturing related to the development or supply of COVID-19 vaccine
-Other healthcare/public health workers not included in phase 1A
-Free standing clinical laundries
-Public transit, including bus, taxi, ride-share
-Blood bank workers not previously vaccinated
-Information Technology
-All other essential workers per Cybersecurity and Infrastructure Security Agency (CISA) (see [here](https://www.health.nd.gov/covid-19-vaccine-priority-groups))
-* Are you age 16+, and have a high-risk medical condition?
-	* Adults of any age with the following conditions are at increased risk of severe illness from the virus that causes COVID-19:
-
- * Cancer
- * Chronic kidney disease
- * COPD (chronic obstructive pulmonary disease)
- * Down Syndrome
- * Heart conditions, such as heart failure, coronary artery disease, or cardiomyopathies
- * Immunocompromised state (weakened immune system) from solid organ transplant
- * Obesity (body mass index [BMI] of 30 kg/m2 or higher but < 40 kg/m2)
- * Severe Obesity (BMI ≥ 40 kg/m2)
- * Pregnancy
- * Sickle cell disease
- * Smoking
- * Type 2 diabetes mellitus
-* Do you work or live in a congregate setting?
-	* i.e., corrections, group homes, treatment centers, homeless shelters, etc.
-* Are you age 65+?
+* Are you age 16+?
+	* All people 16+ (for Pfizer only) and 18+ (for all vaccines) are eligible in North Dakota. However, some vaccination sites are currently only serving those 18+ or essential workers. Please confirm your eligibility matches that of the location where you're signing up  (see [here](https://www.health.nd.gov/covidvaccinelocator))
 
 # Northern Mariana Islands
 
