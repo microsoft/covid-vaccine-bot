@@ -310,42 +310,9 @@ Counties and tribes may also choose to vaccinate the following groups defined by
 | info | [Arkansas Department of Health](https://www.healthy.arkansas.gov/programs-services/topics/covid-19-vaccination-plan) |
 
 
-## Arkansas Active Phase (1c)
+## Arkansas Active Phase (16_and_older)
 
-* Are you a healthcare worker?
-* Are you a long term care resident or work in a long term care facility?
-* Are you classified as an essential worker?
-	* High priority essential workers include those who work in pharmacies, home health, private care/personal care, hospice care, dialysis centers, correctional officers, blood donation centers, primary care, urgent care, college/university student health center, K-12 health clinics and school nurses, dental clinics, EMS/fire/law enforcement, morticians/funeral home staff involved in direct contact, education workers including K-12, child care, and higher ed, food and agriculture, manufacturing, grocery stores, public transit, US Postal Service, essential government roles. 
-
-Other roles now eligible include essential personnel in transportation and logistics, water and wastewater, food service, shelter and housing, public safety, finance, IT and communications, energy, media, and public health workers.
-* Are you age 16+, and have a high-risk medical condition?
-	* The conditions included are listed below. People who are uncertain if they have a condition on
-the list should speak with their doctor.
-Asthma (moderate-to-severe)
-Cancer
-Cerebrovascular disease (affects blood vessels and blood supply to the brain), includes history
-of stroke
-Chronic kidney disease
-Chronic Obstructive Pulmonary Disease (COPD)
-Cystic fibrosis
-Diabetes mellitus (Type 1and 2)
-Heart conditions
-Hypertension or high blood pressure
-Immunocompromised state (weakened immune system) from solid organ transplant, blood or
-bone marrow transplant, immune deficiencies, HIV, use of corticosteroids, or use of other
-immune weakening medicines
-Liver disease
-Neurologic conditions, such as dementia
-Obesity (BMI of 30 or greater)
-Overweight (BMI > 25 kg/m2, but < 30 kg/m2)
-Pregnancy
-Pulmonary fibrosis (having damaged or scarred lung tissues)
-Sickle cell disease
-Thalassemia (a type of blood disorder) (see [here](https://www.healthy.arkansas.gov/images/uploads/pdf/Definitions_of_1C_Priority_Groups-03-17-21.pdf))
-* Are you age 65+?
-* Do you work or live in a congregate setting?
-	* People residing in high-risk settings
-Includes those who are incarcerated or detained; those living in group homes, congregate settings, or crowded housing; and student housing such as dorms and Greek housing.
+* Are you age 16+?
 
 # California
 
