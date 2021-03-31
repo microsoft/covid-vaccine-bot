@@ -2517,12 +2517,12 @@ The list is subject to change as additional scientific evidence is published and
 | scheduling_phone | [1-888-675-4567](tel:1-888-675-4567) |
 
 
-## North Carolina Active Phase (current)
+## North Carolina Active Phase (group_4)
 
 * Are you a healthcare worker with direct patient contact?
 * Are you a long term care resident or work in a long term care facility?
 * Are you age 65+?
-* Are you classified as an essential worker? (see [here](https://covid19.ncdhhs.gov/vaccines/find-your-spot-take-your-shot/deeper-dive-group-3))
+* Are you classified as an essential worker? (see [here](https://covid19.ncdhhs.gov/vaccines/find-your-spot-take-your-shot/deeper-dive-group-4))
 * Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?
 	* This population includes anyone who is living in congregate or close group living settings who is not already vaccinated due to age, medical condition or job function, including:
 
@@ -2530,7 +2530,24 @@ People experiencing homelessness or living in a homeless shelter
 Correctional facility, such as jail or prison
 
 * Are you age 16+, and have a high-risk medical condition?
-	* Anyone 16-64 years old with high-risk medical conditions that increase risk of severe disease from COVID-19 such as cancer, COPD, serious heart conditions, sickle cell disease, Type 2 diabetes, among others, regardless of living situation (see [here](https://covid19.ncdhhs.gov/vaccines/find-your-spot-take-your-shot/deeper-dive-group-4))
+	* This includes:
+- Cancer
+- Chronic kidney disease
+- Chronic lung diseases, including COPD (chronic obstructive pulmonary disease), asthma (moderate-to-severe), interstitial lung disease, cystic fibrosis, and pulmonary hypertension
+- Dementia or other neurological conditions
+- Diabetes (type 1 or type 2)
+- Down syndrome
+- Heart conditions (such as heart failure, coronary artery disease, cardiomyopathies or hypertension)
+- HIV infection
+- Immunocompromised state (weakened immune system)
+- Liver disease
+- Overweight and obesity
+- Pregnancy
+- Sickle cell disease or thalassemia
+- Smoking, current or former
+- Solid organ or blood stem cell transplant
+- Stroke or cerebrovascular disease, which affects blood flow to the brain
+- Substance use disorders (see [here](https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html))
 
 # North Dakota
 
