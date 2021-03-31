@@ -256,7 +256,6 @@ export const repoServices = async (
 				}
 			)
 			const prs = await prResp.json();
-			console.log('prs', prs);
 				
 			let populatedPRs: any[] = await Promise.all(
 				prs.map(async (item: any) => {
@@ -308,7 +307,7 @@ export const repoServices = async (
 				}
 			)
 
-			return [await loadIssuesResponse.json()]
+			return await loadIssuesResponse.json()
 
 
 		case 'getRepoFileData':
