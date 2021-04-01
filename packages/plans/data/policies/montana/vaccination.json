@@ -12,7 +12,7 @@
 			"text": "c19.links/vax_providers"
 		}
 	},
-	"activePhase": "1bplus",
+	"activePhase": "16_and_older",
 	"phases": [
 		{
 			"id": "1a",
@@ -102,6 +102,15 @@
 					"question": "c19.eligibility.question/health",
 					"moreInfoText": "c19.eligibility.moreinfo/health.mt.1bplus",
 					"moreInfoUrl": "https://dphhs.mt.gov/Portals/85/publichealth/documents/HAN/2021/HANAD2021-7.pdf?ver=2021-03-02-140830-467"
+				}
+			]
+		},
+		{
+			"id": "16_and_older",
+			"label": "16 and older",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.16_up"
 				}
 			]
 		}
