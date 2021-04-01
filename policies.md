@@ -406,27 +406,10 @@ California genetically handicapped persons program
 | scheduling_phone | [877-918-2224](tel:877-918-2224) |
 
 
-## Connecticut Active Phase (1c)
+## Connecticut Active Phase (16_and_older)
 
-* Are you a healthcare worker?
-	* Healthcare Personnel:
-- Paid and unpaid people serving in healthcare settings with potential for direct or indirect exposure to patients of infectious materials.
-* Are you a long term care resident or work in a long term care facility?
-	* Long-Term Care Facility Residents and staff:
-- Adults who reside in facilities that provide a range of services, including medical and personal care, to persons who are unable to live independently.
-* Are you classified as an essential worker?
-	* This includes: 
-
-Medical First Responders:
-- Individuals who respond to medical 911 calls and face risk of exposure to COVID-19.
-
-Educators and Child Care Providers:
-- Pre-K-12 Teachers, paraprofessionals, custodial staff, food service providers, school bus drivers and childcare providers as well as in-school administrative staff. Does not include individuals who are not required to work on-site in a school.
-* Are you age 45+?
-	* This includes those who are residents or workers within the state of Connecticut
-* Do you work or live in a congregate setting?
-	* Residents and Staff of select congregate settings:
-- Staff and residents of halfway homes, inpatient mental health facilities, correction facilities, homeless shelters, domestic violence shelters, substance use and residential treatment facilities along with others.
+* Are you age 16+?
+	* Beginning April 1st , all individuals 16 years of age and older who live, work, or attend school in Connecticut are eligible to receive vaccine.
 
 # Delaware
 
