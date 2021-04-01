@@ -100,7 +100,7 @@ orchestrator(loadBranch, async (message) => {
 
 orchestrator(loadPR, async (message) => {
 	const { prNumber } = message
-
+	initStoreData(true)
 	if (prNumber) {
 		const prResp = await repoServices('getPullRequests', prNumber)
 		setLoadedPRData(prResp)
@@ -110,6 +110,7 @@ orchestrator(loadPR, async (message) => {
 
 		setUserWorkingBranch(undefined)
 	}
+	initStoreData(false)
 })
 
 orchestrator(saveContinue, async () => {

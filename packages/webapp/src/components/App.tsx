@@ -79,7 +79,7 @@ export default observer(function App() {
 	}, [setSelectedKey])
 
 	const renderRepoMessageBar = () => {
-		if (state.loadedPRData && state.prChanges) {
+		if (state.loadedPRData && state.prChanges && !state.isDataRefreshing) {
 			return (
 				<MessageBar
 					messageBarType={5}

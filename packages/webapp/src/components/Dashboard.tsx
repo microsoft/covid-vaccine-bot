@@ -67,17 +67,17 @@ export default observer(function Dashboard() {
 
 
 	const onPRActionRender =  (item?: any, index?: number, column?: IColumn) =>  {
-
+		const disabled = state.loadedPRData?.number === item?.action.number
 		return (
 			<div className="actionsColumn">
 				<a className="tableActionLink" href={item?.action?.html_url} target="_blank" rel="noreferrer">
 					<FontIcon
 						iconName="CircleAdditionSolid"
-					/> 
+					/>
 					Approve
 				</a>
-				<div className="loadPRButton" onClick={() => loadPR(item.action.number)}>
-					<FontIcon iconName="DrillDownSolid"/>Load Data
+				<div className={`loadPRButton ${disabled ? 'disabled': ''}`} onClick={() => loadPR(item.action.number)}>
+					<FontIcon iconName="DrillDownSolid"/>Load PR
 				</div>
 			</div>
 			)
