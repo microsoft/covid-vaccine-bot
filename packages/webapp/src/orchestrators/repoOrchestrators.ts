@@ -115,21 +115,17 @@ orchestrator(loadPR, async (message) => {
 orchestrator(saveContinue, async () => {
 	const store = getAppStore()
 	const changes = getChanges()
-	if (store.userWorkingBranch) {
-		await repoServices('commitChanges', {
-			...changes,
-			branchName: `refs/heads/${store.userWorkingBranch}`,
-		})
-		setPendingChanges(false)
-	} else {
+	let branch = store.userWorkingBranch
+	if (!branch) {
 		const resp = await repoServices('createWorkingBranch')
 		if (resp) {
-			setUserWorkingBranch(resp.ref.split('refs/heads/').join(''))
-			await repoServices('commitChanges', {
-				...changes,
-				branchName: `refs/heads/${store.userWorkingBranch}`,
-			})
-			setPendingChanges(false)
+			branch = resp.ref.split('refs/heads/').join('')
+			setUserWorkingBranch(branch)
 		}
 	}
+	await repoServices('commitChanges', {
+		...changes,
+		branchName: `refs/heads/${branch}`,
+	})
+	setPendingChanges(false)
 })
