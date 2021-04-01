@@ -18,7 +18,7 @@
 			"description": "c19.link/scheduling.phone.description.in"
 		}
 	},
-	"activePhase": "1b",
+	"activePhase": "16_and_older",
 	"phases": [
 		{
 			"id": "1a",
@@ -67,7 +67,18 @@
 					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.are_you.in.1b"
 				}
 			],
-			"label": "Current"
+			"label": "1b"
+		},
+		{
+			"id": "16_and_older",
+			"label": "16 and older",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.16_up",
+					"moreInfoText": "c19.eligibility.moreinfo/age.16_up.in.16_and_older",
+					"moreInfoUrl": "https://vaccine.coronavirus.in.gov/en-US/"
+				}
+			]
 		}
 	]
 }
