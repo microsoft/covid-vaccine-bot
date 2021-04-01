@@ -17,7 +17,7 @@
 			"description": "c19.link/scheduling.phone.description.ct"
 		}
 	},
-	"activePhase": "1c",
+	"activePhase": "16_and_older",
 	"phases": [
 		{
 			"id": "1a",
@@ -81,6 +81,16 @@
 				{
 					"question": "c19.eligibility.question/congregate.do",
 					"moreInfoText": "c19.eligibility.moreinfo/congregate.do.ct.1c"
+				}
+			]
+		},
+		{
+			"id": "16_and_older",
+			"label": "16 and older",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.16_up",
+					"moreInfoText": "c19.eligibility.moreinfo/age.16_up.ct.16_and_older"
 				}
 			]
 		}
