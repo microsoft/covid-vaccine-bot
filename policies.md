@@ -3790,9 +3790,8 @@ Other Public Health Workers (see [here](https://www.vdh.virginia.gov/covid-19-va
 | link type | link |
 | --- | --- |
 | info | [Washington State Department of Health](https://www.doh.wa.gov/Emergencies/COVID19/vaccine) |
-| workflow | [Washington State PhaseFinder](https://form.findyourphasewa.org/210118771253954) |
 | eligibility | [https://www.doh.wa.gov/Emergencies/COVID19/VaccineInformation/AllocationandPrioritization](https://www.doh.wa.gov/Emergencies/COVID19/VaccineInformation/AllocationandPrioritization) |
-| providers | [https://www.doh.wa.gov/YouandYourFamily/Immunization/VaccineLocations](https://www.doh.wa.gov/YouandYourFamily/Immunization/VaccineLocations) |
+| providers | [View locations providing vaccines](https://vaccinelocator.doh.wa.gov/) |
 | scheduling | [Schedule a Vaccination](https://prepmod.doh.wa.gov/) |
 | scheduling_phone | [1-888-856-5816](tel:1-888-856-5816) |
 
