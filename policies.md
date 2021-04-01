@@ -335,7 +335,7 @@ Counties and tribes may also choose to vaccinate the following groups defined by
 - Education and childcare
 - Emergency services
 - Public transit/airport and commercial airlines (see [here](https://covid19.ca.gov/essential-workforce/))
-* Are you age 65+?
+* Are you age 50+?
 * Do you work or live in a congregate setting?
 	* Individuals who reside or work in a high risk congregate residential setting, such as an incarceration/detention facility, homeless shelter, or behavioral health facility, as these settings are high risk for outbreaks and have a concentration of individuals with high risk chronic health conditions. This includes all people experiencing homelessness, who are at risk of transitioning into congregate settings at short notice. 
 * Are you age 16+, and have a high-risk medical condition?
