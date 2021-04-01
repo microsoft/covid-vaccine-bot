@@ -480,7 +480,9 @@ export const repoServices = async (
 					await createWorkingBranch(state, branchName)
 				}
 
-				await commitChanges(state, branchName, globalUpdates, locationUpdates)
+				if (state.pendingChanges) {
+					await commitChanges(state, branchName, globalUpdates, locationUpdates)
+				}
 
 				let prTitle = ''
 				if (!state.loadedPRData) {

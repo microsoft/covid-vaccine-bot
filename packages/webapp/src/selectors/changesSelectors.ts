@@ -11,7 +11,7 @@ export const getChanges = () => {
     const locationUpdates: any[] = []
     const globalUpdates: any[] = []
     const {globalFileData, repoFileData} = state
-    
+
     if (!isEqual(state.initGlobalFileData.customStrings, globalFileData.customStrings)) {
         changesList.push({
             label: `Global strings information updated`,
@@ -60,14 +60,6 @@ export const getChanges = () => {
                     repoFileData[location].regions &&
                     !isEqual(state.initRepoFileData[location].regions, repoFileData[location].regions)
                 ) {
-                    
-                    console.log('init regions', JSON.stringify(
-                        state.initRepoFileData[location].regions
-                    )?.toLowerCase());
-                    console.log('init regions', JSON.stringify(
-                        repoFileData[location].regions
-                    ).toLowerCase());
-                    
                     changesList.push({
                         label: `Updated regions for ${location}`,
                         value: repoFileData[location],
