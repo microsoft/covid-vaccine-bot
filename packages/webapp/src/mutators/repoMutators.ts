@@ -76,18 +76,16 @@ export const setLoadedPRData = mutatorAction(
 			store.prChanges = {
 				last_commit: prData.commits.pop(),
 			}
-			store.userWorkingBranch = undefined
 		}
 	}
 )
 
-export const setUserWorkingBranch = mutatorAction('setUserWorkingBranch', (data: any) => {
+export const setUserWorkingBranch = mutatorAction('setUserWorkingBranch', (data: any | undefined) => {
 	const store = getAppStore()
 	store.userWorkingBranch = data
-	store.loadedPRData = undefined
 })
 
-export const handleCreatePR = mutatorAction('handleCreatePR', () => {
+export const clearLoadedPRData = mutatorAction('clearLoadedPRData', () => {
 	const store = getAppStore()
 	store.pendingChanges = false
 	store.prChanges = undefined
@@ -96,6 +94,21 @@ export const handleCreatePR = mutatorAction('handleCreatePR', () => {
 
 export const setRepoFileData = mutatorAction(
 	'setRepoFileData',
+	(data: any[] | undefined) => {
+		if (data) {
+			const store = getAppStore()
+			store.repoFileData = data[0]
+			store.globalFileData = {
+				customStrings: data[1],
+				cdcStateNames: data[2],
+				cdcStateLinks: data[3],
+			}
+		}
+	}
+)
+
+export const setInitRepoFileData = mutatorAction(
+	'setInitRepoFileData',
 	(data: any[] | undefined) => {
 		if (data) {
 			const store = getAppStore()

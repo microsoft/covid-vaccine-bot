@@ -13,48 +13,47 @@ import {
 } from '../actions/repoActions'
 import {
 	setBranchList,
-	handleCreatePR,
+	clearLoadedPRData,
+	setInitRepoFileData,
 	setRepoFileData,
 	setIssuesList,
 	initStoreData,
 	setLoadedPRData,
 	setUserWorkingBranch,
 	setPendingChanges,
-	setGlobalAndRepoChanges,
-	setUserWorkingBranches
+	setUserWorkingBranches,
 } from '../mutators/repoMutators'
 import { repoServices } from '../services/repoServices'
 import { getAppStore } from '../store/store'
 import { getChanges } from '../selectors/changesSelectors'
 
-
 orchestrator(createPR, async (message) => {
 	const { fileData } = message
 	let resp = await repoServices('createPR', fileData)
 	const store = getAppStore()
+	const nextWorkingBranches = store.userWorkingBranches.filter(b => b.name !== store.userWorkingBranch)
 
 	if(resp){
-
 		resp = await repoServices('getBranches')
 		setBranchList(resp)
-
 		
 		resp = await repoServices('getUserWorkingBranches', [resp])
-		setUserWorkingBranches(store.userWorkingBranches)
+		setUserWorkingBranches(nextWorkingBranches)
+		setUserWorkingBranch(undefined)
 	
 		resp = await repoServices('getRepoFileData')
-		setRepoFileData(resp)
+		setInitRepoFileData(resp)
 
 		resp = await repoServices('getIssues')
 		setIssuesList(resp, fileData[2]())
 
-		handleCreatePR()
+		clearLoadedPRData()
 	}
 })
 
 orchestrator(getRepoFileData, async () => {
 	const resp = await repoServices('getRepoFileData')
-	setRepoFileData(resp)
+	setInitRepoFileData(resp)
 })
 
 orchestrator(initializeGitData, async () => {
@@ -68,12 +67,12 @@ orchestrator(initializeGitData, async () => {
 	setUserWorkingBranches(userWorkingBranches)
 
 	resp = await repoServices('getRepoFileData')
-	setRepoFileData(resp)
+	setInitRepoFileData(resp)
 
 	resp = await repoServices('getIssues')
 	setIssuesList(resp)
 
-	handleCreatePR()
+	clearLoadedPRData()
 
 	initStoreData(false)
 })
@@ -87,6 +86,7 @@ orchestrator(loadBranch, async (message) => {
 	if (resp) {
 		setUserWorkingBranch(branch.name)
 		setRepoFileData(resp)
+		clearLoadedPRData()
 	}
 	initStoreData(false)
 })
@@ -99,7 +99,9 @@ orchestrator(loadPR, async (message) => {
 		setLoadedPRData(prResp)
 
 		const resp = await repoServices('getRepoFileData', prResp.data.head.ref)
-		setRepoFileData(resp)
+		setInitRepoFileData(resp)
+
+		setUserWorkingBranch(undefined)
 	}
 })
 
@@ -109,22 +111,12 @@ orchestrator(saveContinue, async () => {
 	if (store.userWorkingBranch) {
 		await repoServices('commitChanges', {...changes, branchName: `refs/heads/${store.userWorkingBranch}`})
 		setPendingChanges(false)
-		setGlobalAndRepoChanges()
 	} else {
 		const resp = await repoServices('createWorkingBranch')
 		if (resp) {
 			setUserWorkingBranch(resp.ref.split('refs/heads/').join(''))
 			await repoServices('commitChanges', {...changes, branchName: `refs/heads/${store.userWorkingBranch}`})
 			setPendingChanges(false)
-			setGlobalAndRepoChanges()
 		}
 	}
-
-	// after draft branch was created
-	// x commit changes to draft branch, 
-	// x reset pending changes to false.
-	// - update init global and repo with the commited version as base.
-	// user should be able to continue commiting to draft branch
-	// once user submitted for review, create pr should use draft branch. However, Review tab will only show if there's a diff in the repo.
-	// Review tab should show if working branch is present or pending changes is still true.
 })

@@ -41,6 +41,11 @@
 			display: flex;
 			cursor: pointer;
 
+			&.disabled, &.disabled i{
+				color: $ms-color-gray50;
+				pointer-events: none;
+			}
+
 			i {
 				color: $ms-color-themePrimary;
 				padding-right: 5px;

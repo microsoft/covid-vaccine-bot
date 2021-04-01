@@ -2,6 +2,7 @@
  * Copyright (c) Microsoft. All rights reserved.
  * Licensed under the MIT license. See LICENSE file in the project.
  */
+import { isEqual } from 'lodash'
 import { getAppStore } from '../store/store'
 
 export const getChanges = () => {
@@ -9,110 +10,88 @@ export const getChanges = () => {
     const changesList: any[] = []
     const locationUpdates: any[] = []
     const globalUpdates: any[] = []
-
-    if (
-        JSON.stringify(state.initGlobalFileData.customStrings).toLowerCase() !==
-        JSON.stringify(state.globalFileData.customStrings).toLowerCase()
-    ) {
+    const {globalFileData, repoFileData} = state
+    
+    if (!isEqual(state.initGlobalFileData.customStrings, globalFileData.customStrings)) {
         changesList.push({
             label: `Global strings information updated`,
-            value: state.globalFileData.customStrings,
+            value: globalFileData.customStrings,
         })
-        globalUpdates.push(state.globalFileData.customStrings)
+        globalUpdates.push(globalFileData.customStrings)
     }
 
-    if (
-        JSON.stringify(state.initGlobalFileData.cdcStateNames).toLowerCase() !==
-        JSON.stringify(state.globalFileData.cdcStateNames).toLowerCase()
-    ) {
+    if (!isEqual(state.initGlobalFileData.cdcStateNames, globalFileData.cdcStateNames)) {
         changesList.push({
             label: `State names information updated`,
-            value: state.globalFileData.cdcStateNames,
+            value: globalFileData.cdcStateNames,
         })
-        globalUpdates.push(state.globalFileData.cdcStateNames)
+        globalUpdates.push(globalFileData.cdcStateNames)
     }
 
-    if (
-        JSON.stringify(state.initGlobalFileData.cdcStateLinks).toLowerCase() !==
-        JSON.stringify(state.globalFileData.cdcStateLinks).toLowerCase()
-    ) {
+    if (!isEqual(state.initGlobalFileData.cdcStateLinks, globalFileData.cdcStateLinks)) {
         changesList.push({
             label: `State links information updated`,
-            value: state.globalFileData.cdcStateLinks,
+            value: globalFileData.cdcStateLinks,
         })
-        globalUpdates.push(state.globalFileData.cdcStateLinks)
+        globalUpdates.push(globalFileData.cdcStateLinks)
     }
 
-    Object.keys(state.repoFileData).forEach((location: any) => {
+    Object.keys(repoFileData).forEach((location: any) => {
         if (state.initRepoFileData) {
             if (!state.initRepoFileData[location]) {
                 changesList.push({
                     label: `New location added - ${location}`,
-                    value: state.repoFileData[location],
+                    value: repoFileData[location],
                 })
                 locationUpdates.push({
                     key: location,
-                    data: state.repoFileData[location],
+                    data: repoFileData[location],
                 })
             } else {
                 let addChanges = false
-                if (
-                    JSON.stringify(
-                        state.initRepoFileData[location].info
-                    ).toLowerCase() !==
-                    JSON.stringify(state.repoFileData[location].info).toLowerCase()
-                ) {
+                if (!isEqual(state.initRepoFileData[location].info, repoFileData[location].info)) {
                     changesList.push({
                         label: `Updated information for ${location}`,
-                        value: state.repoFileData[location],
+                        value: repoFileData[location],
                     })
                     addChanges = true
                 }
                 if (
-                    state.repoFileData[location].regions &&
-                    JSON.stringify(
-                        state.initRepoFileData[location].regions
-                    )?.toLowerCase() !==
-                        JSON.stringify(
-                            state.repoFileData[location].regions
-                        ).toLowerCase()
+                    repoFileData[location].regions &&
+                    !isEqual(state.initRepoFileData[location].regions, repoFileData[location].regions)
                 ) {
+                    
+                    console.log('init regions', JSON.stringify(
+                        state.initRepoFileData[location].regions
+                    )?.toLowerCase());
+                    console.log('init regions', JSON.stringify(
+                        repoFileData[location].regions
+                    ).toLowerCase());
+                    
                     changesList.push({
                         label: `Updated regions for ${location}`,
-                        value: state.repoFileData[location],
+                        value: repoFileData[location],
                     })
                     addChanges = true
                 }
-                if (
-                    JSON.stringify(
-                        state.initRepoFileData[location].vaccination
-                    ).toLowerCase() !==
-                    JSON.stringify(
-                        state.repoFileData[location].vaccination
-                    ).toLowerCase()
-                ) {
+                if (!isEqual(state.initRepoFileData[location].vaccination, repoFileData[location].vaccination)) {
                     changesList.push({
                         label: `Updated phase information for ${location}`,
-                        value: state.repoFileData[location],
+                        value: repoFileData[location],
                     })
                     addChanges = true
                 }
-                if (
-                    JSON.stringify(
-                        state.initRepoFileData[location].strings
-                    ).toLowerCase() !==
-                    JSON.stringify(state.repoFileData[location].strings).toLowerCase()
-                ) {
+                if (!isEqual(state.initRepoFileData[location].strings,repoFileData[location].strings )) {
                     changesList.push({
                         label: `Updated strings information for ${location}`,
-                        value: state.repoFileData[location],
+                        value: repoFileData[location],
                     })
                     addChanges = true
                 }
                 if (addChanges) {
                     locationUpdates.push({
                         key: location,
-                        data: state.repoFileData[location],
+                        data: repoFileData[location],
                     })
                 }
             }

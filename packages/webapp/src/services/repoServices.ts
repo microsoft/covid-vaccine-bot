@@ -472,17 +472,15 @@ export const repoServices = async (
 				const locationUpdates = extraData[1]
 				const prFormData = extraData[3]
 
-				let workingBranch = state.loadedPRData
-
-				if (!state.loadedPRData && !state.userWorkingBranch) {
-					workingBranch = await createWorkingBranch(state, branchName)
-				} else if (state.userWorkingBranch) {
-					workingBranch = `refs/heads/${state.userWorkingBranch}`
-				} else {
+				if(state.loadedPRData) {
 					branchName = `refs/heads/${state.loadedPRData.head.ref}`
+				} else if (state.userWorkingBranch) {
+					branchName = `refs/heads/${state.userWorkingBranch}`
+				} else {
+					await createWorkingBranch(state, branchName)
 				}
 
-				await commitChanges(state, workingBranch, globalUpdates, locationUpdates)
+				await commitChanges(state, branchName, globalUpdates, locationUpdates)
 
 				let prTitle = ''
 				if (!state.loadedPRData) {
@@ -496,7 +494,7 @@ export const repoServices = async (
 								Authorization: `token ${state.accessToken}`,
 							},
 							body: JSON.stringify({
-								head: workingBranch,
+								head: branchName,
 								base: 'main',
 								title: prTitle,
 								body: prFormData.prDetails

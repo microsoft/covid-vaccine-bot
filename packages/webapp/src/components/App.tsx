@@ -104,12 +104,12 @@ export default observer(function App() {
 			return (
 				<MessageBar
 					styles={{ root: { margin: '10px 5px' } }}
-					actions={
+					actions={!!state.loadedPRData ? undefined : (
 						<div>
 							<MessageBarButton onClick={initializeGitData}>Discard</MessageBarButton>
 							<MessageBarButton onClick={() => {setBranchWasSaved(true); saveContinue()}}>Save and Continue</MessageBarButton>
 						</div>
-						}
+					)}
 				>
 					You have pending changes, please click on the
 					review tab to submit these changes.

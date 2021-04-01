@@ -23,7 +23,6 @@ export interface AppState {
 	isDataRefreshing: boolean
 	prChanges?: any
 	loadedPRData?: any
-	activeBranch?: any
 	userWorkingBranch?: any,
 	userWorkingBranches: any[]
 }

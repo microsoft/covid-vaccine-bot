@@ -85,9 +85,11 @@ export default observer(function Dashboard() {
 	}
 
 	const onBranchActionRender =  (item?: any, index?: number, column?: IColumn) =>  {
+		const disabled = state.userWorkingBranch === item?.name
+
 		return (
 			<div className="actionsColumn">
-				<div className="loadPRButton" onClick={() => loadBranch(item)}>
+				<div className={`loadPRButton ${disabled ? 'disabled': ''}`} onClick={() => loadBranch(item)}>
 					<FontIcon iconName="DrillDownSolid"/>Load Branch
 				</div>
 			</div>
