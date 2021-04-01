@@ -9,7 +9,7 @@ import {
 	initializeGitData,
 	loadPR,
 	loadBranch,
-	saveContinue
+	saveContinue,
 } from '../actions/repoActions'
 import {
 	setBranchList,
@@ -23,24 +23,26 @@ import {
 	setPendingChanges,
 	setUserWorkingBranches,
 } from '../mutators/repoMutators'
+import { getChanges } from '../selectors/changesSelectors'
 import { repoServices } from '../services/repoServices'
 import { getAppStore } from '../store/store'
-import { getChanges } from '../selectors/changesSelectors'
 
 orchestrator(createPR, async (message) => {
 	const { fileData } = message
 	let resp = await repoServices('createPR', fileData)
 	const store = getAppStore()
-	const nextWorkingBranches = store.userWorkingBranches.filter(b => b.name !== store.userWorkingBranch)
+	const nextWorkingBranches = store.userWorkingBranches.filter(
+		(b) => b.name !== store.userWorkingBranch
+	)
 
-	if(resp){
+	if (resp) {
 		resp = await repoServices('getBranches')
 		setBranchList(resp)
-		
+
 		resp = await repoServices('getUserWorkingBranches', [resp])
 		setUserWorkingBranches(nextWorkingBranches)
 		setUserWorkingBranch(undefined)
-	
+
 		resp = await repoServices('getRepoFileData')
 		setInitRepoFileData(resp)
 
@@ -59,11 +61,13 @@ orchestrator(getRepoFileData, async () => {
 orchestrator(initializeGitData, async () => {
 	initStoreData(true)
 	setUserWorkingBranch(undefined)
-	
+
 	let resp = await repoServices('getBranches')
 	setBranchList(resp)
 
-	const userWorkingBranches = await repoServices('getUserWorkingBranches', [resp])
+	const userWorkingBranches = await repoServices('getUserWorkingBranches', [
+		resp,
+	])
 	setUserWorkingBranches(userWorkingBranches)
 
 	resp = await repoServices('getRepoFileData')
@@ -81,7 +85,10 @@ orchestrator(loadBranch, async (message) => {
 	const { branch } = message
 	initStoreData(true)
 
-	const resp = await repoServices('getRepoFileData', `refs/heads/${branch.name}`)
+	const resp = await repoServices(
+		'getRepoFileData',
+		`refs/heads/${branch.name}`
+	)
 
 	if (resp) {
 		setUserWorkingBranch(branch.name)
@@ -109,13 +116,19 @@ orchestrator(saveContinue, async () => {
 	const store = getAppStore()
 	const changes = getChanges()
 	if (store.userWorkingBranch) {
-		await repoServices('commitChanges', {...changes, branchName: `refs/heads/${store.userWorkingBranch}`})
+		await repoServices('commitChanges', {
+			...changes,
+			branchName: `refs/heads/${store.userWorkingBranch}`,
+		})
 		setPendingChanges(false)
 	} else {
 		const resp = await repoServices('createWorkingBranch')
 		if (resp) {
 			setUserWorkingBranch(resp.ref.split('refs/heads/').join(''))
-			await repoServices('commitChanges', {...changes, branchName: `refs/heads/${store.userWorkingBranch}`})
+			await repoServices('commitChanges', {
+				...changes,
+				branchName: `refs/heads/${store.userWorkingBranch}`,
+			})
 			setPendingChanges(false)
 		}
 	}

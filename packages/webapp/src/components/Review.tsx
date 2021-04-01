@@ -14,8 +14,8 @@ import {
 } from 'office-ui-fabric-react'
 import { useState, useEffect, useCallback, useRef } from 'react'
 import { createPR } from '../actions/repoActions'
-import { getAppStore } from '../store/store'
 import { getChanges } from '../selectors/changesSelectors'
+import { getAppStore } from '../store/store'
 
 import './Review.scss'
 
@@ -24,13 +24,14 @@ export interface ReviewProp {
 }
 
 const setInitialFormData = (initData: any | undefined) => {
-	if (!initData) return {
-		prTitle: '',
-		prDetails: ''
-	}
+	if (!initData)
+		return {
+			prTitle: '',
+			prDetails: '',
+		}
 	return {
 		prTitle: initData.title ?? '',
-		prDetails: initData.body ?? ''
+		prDetails: initData.body ?? '',
 	}
 }
 
@@ -54,7 +55,9 @@ export default observer(function Review(props: ReviewProp) {
 		{ message: string } | undefined
 	>()
 	const state = getAppStore()
-	const [formData, setFormData] = useState<any>(setInitialFormData(state.loadedPRData))
+	const [formData, setFormData] = useState<any>(
+		setInitialFormData(state.loadedPRData)
+	)
 	const fieldChanges = useRef<any>(formData)
 
 	useEffect(() => {
@@ -136,7 +139,7 @@ export default observer(function Review(props: ReviewProp) {
 											globalUpdates,
 											locationUpdates,
 											showDashboard,
-											formData
+											formData,
 										])
 									}}
 								/>

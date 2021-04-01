@@ -18,6 +18,7 @@ import { observer } from 'mobx-react-lite'
 import { useCallback, useState, useEffect, useRef } from 'react'
 import { Switch, Route, Redirect } from 'react-router-dom'
 import { loginUser } from '../actions/authActions'
+import { initializeGitData, saveContinue } from '../actions/repoActions'
 import { logoutUser } from '../mutators/authMutators'
 import { setCurrentLanguage } from '../mutators/repoMutators'
 import { getAppStore } from '../store/store'
@@ -30,7 +31,6 @@ import QualifierPanel from './QualifierPanel'
 import Review from './Review'
 import Translate from './Translate'
 import UnAuthorized from './UnAuthorized'
-import { initializeGitData, saveContinue } from '../actions/repoActions'
 
 import './App_reset_styles.scss'
 import './App.scss'
@@ -44,10 +44,7 @@ export default observer(function App() {
 		isPersonaMenuOpen,
 		{ setTrue: showPersonaMenu, setFalse: hidePersonaMenu },
 	] = useBoolean(false)
-	const [
-		branchWasSaved,
-		setBranchWasSaved,
-	] = useState(false)
+	const [branchWasSaved, setBranchWasSaved] = useState(false)
 	const [selectedKey, setSelectedKey] = useState<string>('Dashboard')
 	const personaComponent = useRef(null)
 
@@ -89,9 +86,16 @@ export default observer(function App() {
 					isMultiline={true}
 					styles={{ root: { margin: '10px 5px' } }}
 				>
-					You are currently working on: <strong>PR: {state.loadedPRData.number} - {state.loadedPRData.title}</strong><br/>
-					Last updated by: {state.prChanges?.last_commit?.commit?.committer?.name}<br/>
-					Last updated on: {new Date(state.loadedPRData.updated_at).toLocaleString()}
+					You are currently working on:{' '}
+					<strong>
+						PR: {state.loadedPRData.number} - {state.loadedPRData.title}
+					</strong>
+					<br />
+					Last updated by:{' '}
+					{state.prChanges?.last_commit?.commit?.committer?.name}
+					<br />
+					Last updated on:{' '}
+					{new Date(state.loadedPRData.updated_at).toLocaleString()}
 				</MessageBar>
 			)
 		}
@@ -104,15 +108,26 @@ export default observer(function App() {
 			return (
 				<MessageBar
 					styles={{ root: { margin: '10px 5px' } }}
-					actions={!!state.loadedPRData ? undefined : (
-						<div>
-							<MessageBarButton onClick={initializeGitData}>Discard</MessageBarButton>
-							<MessageBarButton onClick={() => {setBranchWasSaved(true); saveContinue()}}>Save and Continue</MessageBarButton>
-						</div>
-					)}
+					actions={
+						!!state.loadedPRData ? undefined : (
+							<div>
+								<MessageBarButton onClick={initializeGitData}>
+									Discard
+								</MessageBarButton>
+								<MessageBarButton
+									onClick={() => {
+										setBranchWasSaved(true)
+										saveContinue()
+									}}
+								>
+									Save and Continue
+								</MessageBarButton>
+							</div>
+						)
+					}
 				>
-					You have pending changes, please click on the
-					review tab to submit these changes.
+					You have pending changes, please click on the review tab to submit
+					these changes.
 				</MessageBar>
 			)
 		} else if (state.userWorkingBranch) {
@@ -121,11 +136,14 @@ export default observer(function App() {
 					messageBarType={4}
 					styles={{ root: { margin: '10px 5px' } }}
 				>
-					{branchWasSaved ? 'Your changes have been saved  to' : 'You are now working on branch '} {state.userWorkingBranch}, <br/>
+					{branchWasSaved
+						? 'Your changes have been saved  to'
+						: 'You are now working on branch '}{' '}
+					{state.userWorkingBranch}, <br />
 					please click on the review tab to submit these changes.
 				</MessageBar>
 			)
-		} 
+		}
 
 		return null
 	}
@@ -239,7 +257,8 @@ export default observer(function App() {
 															<Translate />
 														</PivotItem>
 													)}
-													{(state.pendingChanges || state.userWorkingBranch) && (
+													{(state.pendingChanges ||
+														state.userWorkingBranch) && (
 														<PivotItem headerText="Review" itemKey="Review">
 															<Review showDashboard={showDashboard} />
 														</PivotItem>

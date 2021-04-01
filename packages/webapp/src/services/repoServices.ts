@@ -257,9 +257,9 @@ export const repoServices = async (
 			)
 			const prs = await prResp.json();
 				
-			let populatedPRs: any[] = await Promise.all(
+			const populatedPRs: any[] = await Promise.all(
 				prs.map(async (item: any) => {
-					let res = await fetch(
+					const res = await fetch(
 						`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/pulls/${item.number}`,
 						{
 							method: 'GET',
