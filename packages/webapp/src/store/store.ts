@@ -51,5 +51,8 @@ autorun(() => {
 			userDisplayName: store.userDisplayName,
 			username: store.username,
 			email: store.email,
+			// globalFileData: store.globalFileData,
+			// repoFileData: store.repoFileData,
+			// pendingChanges: store.pendingChanges,
 		})
 })

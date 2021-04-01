@@ -14,10 +14,11 @@ import {
 	handleCreatePR,
 	setRepoFileData,
 	setIssuesList,
-	initStoreData,
+	setIsDataRefreshing,
 	setLoadedPRData
 } from '../mutators/repoMutators'
 import { repoServices } from '../services/repoServices'
+import { saveState } from '../store/localStorage'
 
 
 orchestrator(createPR, async (message) => {
@@ -45,12 +46,15 @@ orchestrator(getRepoFileData, async () => {
 })
 
 orchestrator(initializeGitData, async () => {
-	initStoreData(true)
+	setIsDataRefreshing(true)
 
 	let resp = await repoServices('getBranches')
 	setBranchList(resp)
 
 	resp = await repoServices('getRepoFileData')
+
+	debugger
+	// check here
 	setRepoFileData(resp)
 
 	resp = await repoServices('getIssues')
@@ -58,7 +62,7 @@ orchestrator(initializeGitData, async () => {
 
 	handleCreatePR()
 
-	initStoreData(false)
+	setIsDataRefreshing(false)
 })
 
 orchestrator(loadPR, async (message) => {

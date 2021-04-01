@@ -7,8 +7,8 @@ import { getAppStore } from '../store/store'
 import { createLocationDataObj } from '../utils/dataUtils'
 import { formatId } from '../utils/textUtils'
 
-export const initStoreData = mutatorAction(
-	'initStoreData',
+export const setIsDataRefreshing = mutatorAction(
+	'setIsDataRefreshing',
 	(isDataRefreshing: boolean) => {
 		const store = getAppStore()
 		store.isDataRefreshing = isDataRefreshing

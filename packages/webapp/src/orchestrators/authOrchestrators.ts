@@ -9,6 +9,7 @@ import { setUserAuthData, setUserNoAccess } from '../mutators/authMutators'
 import { loginUserService } from '../services/loginUserService'
 import { repoServices } from '../services/repoServices'
 import { getAppStore } from '../store/store'
+import { saveState } from '../store/localStorage'
 
 orchestrator(loginUser, async () => {
 	try {
@@ -33,6 +34,17 @@ orchestrator(loginUser, async () => {
 			if (accessResp.ok) {
 				initializeGitData()
 			} else {
+				// Save global and repo file data to local
+				saveState({
+					globalFileData: state.globalFileData,
+					repoFileData: state.repoFileData,
+					pendingChanges: state.pendingChanges,
+					userAcessExpired: true,
+				})
+				
+				// Save flag 'userAcessExpired' to true and username
+				// On login if localStorage exists and userAcessExpired with the same username
+				// Load local GandRFD 
 				setUserNoAccess()
 			}
 		}
