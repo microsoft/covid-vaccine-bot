@@ -1830,35 +1830,9 @@ More detailed list available at the link
 | providers | [View locations providing vaccines](https://dphhs.mt.gov/publichealth/cdepi/diseases/coronavirusmt/covid19vaccineavailability) |
 
 
-## Montana Active Phase (1bplus)
+## Montana Active Phase (16_and_older)
 
-* Are you a healthcare worker?
-	* This includes frontline healthcare workers and healthcare workers with direct patient contact or virus exposure
-* Are you a long term care resident or work in a long term care facility?
-* Are you age 60+?
-* Are you Native American or a person of color who may be at elevated risk for COVID-19 related complications?
-* Are you age 16+, and have a high-risk medical condition?
-	* Qualifying medical conditions include:
-o Cancer
-o Chronic kidney disease
-o COPD (chronic obstructive pulmonary disease)
-o Down Syndrome
-o Heart conditions, such as heart failure, coronary artery disease, or cardiomyopathies
-o Immunocompromised state (weakened immune system) from solid organ transplant
-o Severe Obesity (BMI ≥ 40 kg/m2)
-o Sickle cell disease
-o Type 1 & 2 Diabetes mellitus
-o Asthma (moderate to severe)
-o Cerebrovascular disease (affects blood vessels and blood supply to the brain)
-o Cystic fibrosis
-o Immunocompromised state (weakened immune system) from blood or bone marrow transplant, immune
-deficiencies, HIV, use of corticosteroids, or use of other immune weakening medicines
-o Neurologic conditions, such as dementia
-o Liver disease
-o Pulmonary fibrosis (having damaged or scarred lung tissues)
-o Thalassemia (a type of blood disorder)
-o On a case by case basis, medical providers may include individuals with other conditions that place them at
-elevated risk for COVID-19 related complications. (see [here](https://dphhs.mt.gov/Portals/85/publichealth/documents/HAN/2021/HANAD2021-7.pdf?ver=2021-03-02-140830-467))
+* Are you age 16+?
 
 # Nebraska
 
