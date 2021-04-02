@@ -23,19 +23,34 @@ import {
 	setUserWorkingBranch,
 	setUserWorkingBranches,
 	setIsDataRefreshing,
+	setIsDataStale,
 } from '../mutators/repoMutators'
 import { getChanges } from '../selectors/changesSelectors'
 import { repoServices } from '../services/repoServices'
 import { getAppStore } from '../store/store'
 
+const handleError = (error: any, callback?: () => void) => {
+	debugger
+	switch(error.status) {
+		case 401: 
+			setUserAccessExpired(true)
+			setUserAccessToken()
+		break
+		case 'DATA_IS_STALE': 
+		case 422:
+			setIsDataStale(true)
+		break
+	}
+	
+	callback?.()
+}
+
 orchestrator(createPR, async (message) => {
 	const { fileData } = message
 
 	let resp = await repoServices('createPR', fileData)
-	if(resp.status === 401) {
-		setUserAccessExpired(true)
-		setUserAccessToken()
-		fileData[2]({error: true})
+	if(resp.ok === false) {
+		handleError(resp, () => fileData[2]({error: true}))
 	} else {
 		const store = getAppStore()
 		const nextWorkingBranches = store.userWorkingBranches.filter(
@@ -68,11 +83,11 @@ orchestrator(initializeGitData, async () => {
 	setIsDataRefreshing(true)
 	setUserWorkingBranch(undefined)
 	clearLoadedPRData()
+	setIsDataStale(false)
 
 	let resp = await repoServices('getBranches')
-	if(resp.status === 401) {
-		setUserAccessExpired(true)
-		setUserAccessToken()
+	if(resp.ok === false) {
+		handleError(resp)
 	} else {
 		setBranchList(resp)
 
@@ -99,7 +114,9 @@ orchestrator(loadBranch, async (message) => {
 		'getRepoFileData',
 		`refs/heads/${branch.name}`
 	)
-
+	if(resp.ok === false) {
+		handleError(resp.status === 404 ? {...resp, status: 'DATA_IS_STALE'} : resp)
+	} 
 	if (resp) {
 		setUserWorkingBranch(branch.name)
 		setRepoFileData(resp)

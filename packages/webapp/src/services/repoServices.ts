@@ -48,10 +48,14 @@ const gitFetch = async (url: string, options: any = {}) => {
 	})
 	
 	if(response.ok === false) {
-		return {
+		const error = Object.assign(
+			new Error(), {
 			status: response.status,
 			ok: response.ok
-		}
+		})
+
+		console.log('error', error);
+		throw error
 	}
 	
 	if(json)
@@ -211,262 +215,251 @@ export const repoServices = async (
 	command: string,
 	extraData: any = undefined
 ): Promise<any | undefined> => {
-	const state = getAppStore()
-	let branchName = `refs/heads/${state.username}-policy-${Date.now()}`
+	try {
 
-	switch (command) {
-		case 'checkAccess':
-			const loadAccessResponse = await gitFetch(
-				`collaborators/${state.username}`,
-				{
-					headers: {
-						Accept: 'application/vnd.github.v3+json',
-					},
-					json: false
-				}
-			)
-			return loadAccessResponse
+		const state = getAppStore()
+		let branchName = `refs/heads/${state.username}-policy-${Date.now()}`
 
-		case 'getBranches':
-			return await gitFetch(`branches`)
+		switch (command) {
+			case 'checkAccess':
+				return await gitFetch(
+					`collaborators/${state.username}`,
+					{
+						headers: {
+							Accept: 'application/vnd.github.v3+json',
+						},
+						json: false
+					}
+				)
 
-		case 'getUserWorkingBranches': 
-			const userPrs = await repoServices('getUserPullRequests')
-			if(userPrs.ok === false)
-				return userPrs
-			const allBranches = extraData[0]
-			const usersBranches = allBranches.filter((branch: any) => branch.name.split('-policy-')[0] === state.username)
+			case 'getBranches':
+				return await gitFetch(`branches`)
 
-			const userWorkingBranches = usersBranches.filter((branch: any) => {
-				return !userPrs.find((pr: any) => pr?.head?.ref === branch.name)
-			} ).sort((a: any, b: any) => (a.name > b.name ? -1 : 1))
+			case 'getUserWorkingBranches': 
+				const userPrs = await repoServices('getUserPullRequests')
+				const allBranches = extraData[0]
+				const usersBranches = allBranches.filter((branch: any) => branch.name.split('-policy-')[0] === state.username)
 
-			return userWorkingBranches
+				const userWorkingBranches = usersBranches.filter((branch: any) => {
+					return !userPrs.find((pr: any) => pr?.head?.ref === branch.name)
+				} ).sort((a: any, b: any) => (a.name > b.name ? -1 : 1))
 
-		case 'getUserPullRequests': 
-			const prs = await gitFetch(`issues?creator=${state.username}`)
-			if(prs.ok === false)
-				return prs
+				return userWorkingBranches
+
+			case 'getUserPullRequests': 
+				const prs = await gitFetch(`issues?creator=${state.username}`)
+				const populatedPRs: any[] = await Promise.all(
+					prs.map(async (item: any) => gitFetch(`pulls/${item.number}`))
+				)
+
+				return populatedPRs
+			case 'getPullRequests':
+				const loadPRResponse = await gitFetch(`pulls/${extraData}`)
+				const commitResp = await gitFetch(`pulls/${extraData}/commits`)
+
+				return {data: loadPRResponse, commits: commitResp}
+			case 'getIssues':
+				return await gitFetch(`issues`)
 				
-			const populatedPRs: any[] = await Promise.all(
-				prs.map(async (item: any) => gitFetch(`pulls/${item.number}`))
-			)
+			case 'getRepoFileData':
+				const query = !extraData
+					? `contents/packages/plans/data`
+					: `contents/packages/plans/data?ref=${extraData}`
 
-			return populatedPRs
-		case 'getPullRequests':
-			const loadPRResponse = await gitFetch(`pulls/${extraData}`)
-			if(loadPRResponse.ok === false)
-				return loadPRResponse
-			const commitResp = await gitFetch(`pulls/${extraData}/commits`)
+				const dataFolderObj = await gitFetch(query)
+				const policyFolderGitUrl = dataFolderObj.find(
+					(folder: { name: string }) => folder.name === 'policies'
+				).git_url
+				const loadPolicyFolderResponse = await gitFetch(`${policyFolderGitUrl}?recursive=true`)
+				const policyFolderData = loadPolicyFolderResponse
+				const stateData: any = {}
+				policyFolderData.tree.forEach(async (element: any) => {
+					if (element.type === 'tree') {
+						createPath(stateData, element.path)
+					} else {
+						const lastInstance = element.path.lastIndexOf('/')
+						const filePath = element.path.substring(0, lastInstance)
+						const fileName: string = element.path.substring(lastInstance + 1)
+						const fileType: string = fileName.split('.')[0]
+						const fileObj: any = {}
 
-			return {data: loadPRResponse, commits: commitResp}
-		case 'getIssues':
-			const loadIssuesResponse = await gitFetch(`issues`)
-			return loadIssuesResponse
+						const fileData = await getContent(
+							String(element.url),
+							String(state.accessToken)
+						)
 
-		case 'getRepoFileData':
-			const query = !extraData
-				? `contents/packages/plans/data`
-				: `contents/packages/plans/data?ref=${extraData}`
+						switch (fileName.split('.')[1].toLowerCase()) {
+							case 'json':
+								fileObj[fileType] = {
+									name: fileName,
+									type: fileType,
+									sha: element.sha,
+									url: element.url,
+									path: element.path,
+									content: JSON.parse(b64_to_utf8(fileData.content)),
+								}
+								break
+							case 'md':
+								fileObj['desc_md'] = {
+									name: fileName,
+									type: fileType,
+									sha: element.sha,
+									url: element.url,
+									path: element.path,
+									content: b64_to_utf8(fileData.content),
+								}
 
-			const dataFolderResp = await gitFetch(query)
-			const dataFolderObj = dataFolderResp
-			const policyFolderGitUrl = dataFolderObj.find(
-				(folder: { name: string }) => folder.name === 'policies'
-			).git_url
-			const loadPolicyFolderResponse = await gitFetch(`${policyFolderGitUrl}?recursive=true`)
-			const policyFolderData = loadPolicyFolderResponse
-			const stateData: any = {}
-			policyFolderData.tree.forEach(async (element: any) => {
-				if (element.type === 'tree') {
-					createPath(stateData, element.path)
-				} else {
-					const lastInstance = element.path.lastIndexOf('/')
-					const filePath = element.path.substring(0, lastInstance)
-					const fileName: string = element.path.substring(lastInstance + 1)
-					const fileType: string = fileName.split('.')[0]
-					const fileObj: any = {}
+								break
+							case 'csv':
+								fileObj['strings'] = {
+									name: fileName,
+									type: fileType,
+									sha: element.sha,
+									url: element.url,
+									path: element.path,
+									content: convertCSVDataToObj(
+										parse(b64_to_utf8(fileData.content), { columns: true })
+									),
+								}
 
-					const fileData = await getContent(
-						String(element.url),
-						String(state.accessToken)
-					)
+								break
+						}
 
-					switch (fileName.split('.')[1].toLowerCase()) {
-						case 'json':
-							fileObj[fileType] = {
-								name: fileName,
-								type: fileType,
-								sha: element.sha,
-								url: element.url,
-								path: element.path,
-								content: JSON.parse(b64_to_utf8(fileData.content)),
-							}
-							break
-						case 'md':
-							fileObj['desc_md'] = {
-								name: fileName,
-								type: fileType,
-								sha: element.sha,
-								url: element.url,
-								path: element.path,
-								content: b64_to_utf8(fileData.content),
-							}
+						if (fileObj !== {}) {
+							createPath(stateData, filePath, fileObj)
+						}
+					}
+				})
 
-							break
-						case 'csv':
-							fileObj['strings'] = {
-								name: fileName,
-								type: fileType,
-								sha: element.sha,
-								url: element.url,
-								path: element.path,
-								content: convertCSVDataToObj(
-									parse(b64_to_utf8(fileData.content), { columns: true })
-								),
-							}
+				const localizationFolderGitUrl = dataFolderObj.find(
+					(folder: { name: string }) => folder.name === 'localization'
+				).git_url
 
-							break
+				const localizationResponse = await gitFetch(`${localizationFolderGitUrl}?recursive=true`)
+
+
+				const customStrings = localizationResponse.tree.find(
+					(file: { path: string }) => file.path === 'custom-strings.csv'
+				)
+				const cdcStateNames = localizationResponse.tree.find(
+					(file: { path: string }) => file.path === 'cdc-state-names.csv'
+				)
+				const cdcStateLinks = localizationResponse.tree.find(
+					(file: { path: string }) => file.path === 'cdc-state-links.csv'
+				)
+
+				let customStringsData: any = {}
+				let cdcStateNamesData: any = {}
+				let cdcStateLinksData: any = {}
+
+				const customStringsDataParse = await getContent(
+					String(customStrings.url),
+					String(state.accessToken)
+				)
+				customStringsData = convertCSVDataToObj(
+					parse(b64_to_utf8(customStringsDataParse.content), { columns: true })
+				)
+
+				const cdcStateNamesDataParse = await getContent(
+					String(cdcStateNames.url),
+					String(state.accessToken)
+				)
+				cdcStateNamesData = convertCSVDataToObj(
+					parse(b64_to_utf8(cdcStateNamesDataParse.content), { columns: true })
+				)
+
+				const cdcStateLinksDataParse = await getContent(
+					String(cdcStateLinks.url),
+					String(state.accessToken)
+				)
+				cdcStateLinksData = convertCSVDataToObj(
+					parse(b64_to_utf8(cdcStateLinksDataParse.content), { columns: true })
+				)
+
+				customStrings['content'] = customStringsData
+				cdcStateNames['content'] = cdcStateNamesData
+				cdcStateLinks['content'] = cdcStateLinksData
+
+				return [stateData, customStrings, cdcStateNames, cdcStateLinks]
+
+			case 'createWorkingBranch':
+				if (state?.mainBranch) {
+					return await createWorkingBranch(state, branchName)
+				}
+				break
+			case 'commitChanges':
+				if (extraData) {
+					await commitChanges(state, extraData.branchName, extraData.globalUpdates, extraData.locationUpdates)
+				}
+				break
+			case 'createPR':
+				if (state?.mainBranch) {
+					const globalUpdates = extraData[0]
+					const locationUpdates = extraData[1]
+					const prFormData = extraData[3]
+
+					if(state.loadedPRData) {
+						branchName = `refs/heads/${state.loadedPRData.head.ref}`
+					} else if (state.userWorkingBranch) {
+						branchName = `refs/heads/${state.userWorkingBranch}`
+					} else {
+						await createWorkingBranch(state, branchName)
 					}
 
-					if (fileObj !== {}) {
-						createPath(stateData, filePath, fileObj)
+					if (state.pendingChanges) {
+						await commitChanges(state, branchName, globalUpdates, locationUpdates)
+					}
+
+					let prTitle = ''
+					if (!state.loadedPRData) {
+						prTitle = !prFormData.prTitle ? 'auto PR creation' : prFormData.prTitle
+						const prResp = await gitFetch(
+							`pulls`,
+							{
+								method: 'POST',
+								body: JSON.stringify({
+									head: branchName,
+									base: 'main',
+									title: prTitle,
+									body: prFormData.prDetails
+								}),
+							}
+						)
+	
+						await gitFetch(
+							`issues/${prResp.number}/labels`,
+							{
+								method: 'POST',
+								body: JSON.stringify({
+									labels: ['data-composer-submission', 'requires-data-accuracy-review']
+								}),
+							}
+						)
+
+						return prResp
+					} else {
+						prTitle = !prFormData.prTitle ? state.loadedPRData.title : prFormData.prTitle
+						const prDetails = !prFormData.prDetails ? state.loadedPRData.body : prFormData.prDetails
+						await gitFetch(
+							`pulls/${state.loadedPRData.number}`,
+							{
+								method: 'PATCH',
+								body: JSON.stringify({
+									title: prTitle,
+									body: prDetails
+								}),
+							}
+						)
+
+						return state.loadedPRData
 					}
 				}
-			})
+				break
+		}
 
-			const localizationFolderGitUrl = dataFolderObj.find(
-				(folder: { name: string }) => folder.name === 'localization'
-			).git_url
-
-			const localizationResponse = await gitFetch(`${localizationFolderGitUrl}?recursive=true`)
-
-
-			const customStrings = localizationResponse.tree.find(
-				(file: { path: string }) => file.path === 'custom-strings.csv'
-			)
-			const cdcStateNames = localizationResponse.tree.find(
-				(file: { path: string }) => file.path === 'cdc-state-names.csv'
-			)
-			const cdcStateLinks = localizationResponse.tree.find(
-				(file: { path: string }) => file.path === 'cdc-state-links.csv'
-			)
-
-			let customStringsData: any = {}
-			let cdcStateNamesData: any = {}
-			let cdcStateLinksData: any = {}
-
-			const customStringsDataParse = await getContent(
-				String(customStrings.url),
-				String(state.accessToken)
-			)
-			customStringsData = convertCSVDataToObj(
-				parse(b64_to_utf8(customStringsDataParse.content), { columns: true })
-			)
-
-			const cdcStateNamesDataParse = await getContent(
-				String(cdcStateNames.url),
-				String(state.accessToken)
-			)
-			cdcStateNamesData = convertCSVDataToObj(
-				parse(b64_to_utf8(cdcStateNamesDataParse.content), { columns: true })
-			)
-
-			const cdcStateLinksDataParse = await getContent(
-				String(cdcStateLinks.url),
-				String(state.accessToken)
-			)
-			cdcStateLinksData = convertCSVDataToObj(
-				parse(b64_to_utf8(cdcStateLinksDataParse.content), { columns: true })
-			)
-
-			customStrings['content'] = customStringsData
-			cdcStateNames['content'] = cdcStateNamesData
-			cdcStateLinks['content'] = cdcStateLinksData
-
-			return [stateData, customStrings, cdcStateNames, cdcStateLinks]
-
-		case 'createWorkingBranch':
-			if (state?.mainBranch) {
-				return await createWorkingBranch(state, branchName)
-			}
-			break
-		case 'commitChanges':
-			if (extraData) {
-				await commitChanges(state, extraData.branchName, extraData.globalUpdates, extraData.locationUpdates)
-			}
-			break
-		case 'createPR':
-			if (state?.mainBranch) {
-				const globalUpdates = extraData[0]
-				const locationUpdates = extraData[1]
-				const prFormData = extraData[3]
-
-				if(state.loadedPRData) {
-					branchName = `refs/heads/${state.loadedPRData.head.ref}`
-				} else if (state.userWorkingBranch) {
-					branchName = `refs/heads/${state.userWorkingBranch}`
-				} else {
-					const createBranchResponse = await createWorkingBranch(state, branchName)
-					if(createBranchResponse.ok === false)
-						return createBranchResponse
-				}
-
-				if (state.pendingChanges) {
-					await commitChanges(state, branchName, globalUpdates, locationUpdates)
-				}
-
-				let prTitle = ''
-				if (!state.loadedPRData) {
-					prTitle = !prFormData.prTitle ? 'auto PR creation' : prFormData.prTitle
-					const prResp = await gitFetch(
-						`pulls`,
-						{
-							method: 'POST',
-							body: JSON.stringify({
-								head: branchName,
-								base: 'main',
-								title: prTitle,
-								body: prFormData.prDetails
-							}),
-						}
-					)
-					if(prResp.ok === false)
-						return prResp
-
-					await gitFetch(
-						`issues/${prResp.number}/labels`,
-						{
-							method: 'POST',
-							body: JSON.stringify({
-								labels: ['data-composer-submission', 'requires-data-accuracy-review']
-							}),
-						}
-					)
-
-					return prResp
-				} else {
-					prTitle = !prFormData.prTitle ? state.loadedPRData.title : prFormData.prTitle
-					const prDetails = !prFormData.prDetails ? state.loadedPRData.body : prFormData.prDetails
-					const prResp = await gitFetch(
-						`pulls/${state.loadedPRData.number}`,
-						{
-							method: 'PATCH',
-							body: JSON.stringify({
-								title: prTitle,
-								body: prDetails
-							}),
-						}
-					)
-
-					if(prResp.ok === false)
-						return prResp
-
-					return state.loadedPRData
-				}
-			}
-			break
+		return undefined
+	} catch(error) {
+		debugger
+		return error
 	}
-
-	return undefined
 }

@@ -26,4 +26,5 @@ export interface AppState {
 	userWorkingBranch?: any,
 	userWorkingBranches: any[]
 	userAccessExpired: boolean
+	isDataStale: boolean
 }

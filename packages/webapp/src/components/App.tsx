@@ -32,6 +32,7 @@ import QualifierPanel from './QualifierPanel'
 import Review from './Review'
 import Translate from './Translate'
 import UserAccessExpirationForm from './UserAccessExpirationForm'
+import DataIsStaleForm from './DataIsStaleForm'
 import UnAuthorized from './UnAuthorized'
 
 import './App_reset_styles.scss'
@@ -51,18 +52,29 @@ export default observer(function App() {
 		isAccessExpiration,
 		{ setTrue: showAccessExpirationModal, setFalse: hideAccessExpirationModal },
 	] = useBoolean(false)
+	const [
+		showIsDataStaleModal,
+		{ setTrue: showDataIsStaleModal, setFalse: hideDataIsStaleModal },
+	] = useBoolean(false)
 	const [selectedKey, setSelectedKey] = useState<string>('Dashboard')
 	const personaComponent = useRef(null)
 
 	useEffect(() => {
 		if (state.accessToken && !state.globalFileData) 
 			loginUser()
-	}, [state.accessToken])
+	}, [state.accessToken, state.globalFileData])
 
 	useEffect(() => {
 		if(state.userAccessExpired)
 			showAccessExpirationModal()
-	}, [state.userAccessExpired])
+	}, [state.userAccessExpired, showAccessExpirationModal])
+
+	useEffect(() => {
+		if(state.isDataStale)
+			showDataIsStaleModal()
+		else
+			hideDataIsStaleModal()
+	}, [state.isDataStale, showDataIsStaleModal, hideDataIsStaleModal])
 	
 	useEffect(() => {
 		if (state.pendingChanges) {
@@ -97,7 +109,7 @@ export default observer(function App() {
 			loginUser()
 
 		hideAccessExpirationModal()
-	}, [setSelectedKey])
+	}, [hideAccessExpirationModal, state.globalFileData])
 
 	const renderRepoMessageBar = () => {
 		if (state.loadedPRData && state.prChanges && !state.isDataRefreshing) {
@@ -305,6 +317,16 @@ export default observer(function App() {
 							>
 								<UserAccessExpirationForm
 									onSubmit={onAccessExpirationFormSubmit}
+								/>
+							</Modal>
+							<Modal
+								isOpen={showIsDataStaleModal}
+								isModeless={false}
+								isDarkOverlay={true}
+								isBlocking={false}
+							>
+								<DataIsStaleForm
+									onSubmit={initializeGitData}
 								/>
 							</Modal>
 						</Route>

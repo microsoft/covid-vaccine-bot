@@ -31,13 +31,10 @@ orchestrator(loginUser, async () => {
 		if (resp) {
 			setUserAuthData(resp)
 			const accessResp = await repoServices('checkAccess')
-
 			if (accessResp.ok) {
 				initializeGitData()
 			} else {
 				if(accessResp.status === 401) {
-					const { globalFileData, repoFileData, pendingChanges } = state
-
 					setUserAccessExpired(true)
 					setUserAccessToken()
 				}

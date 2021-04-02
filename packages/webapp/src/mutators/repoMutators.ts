@@ -14,6 +14,15 @@ export const setIsDataRefreshing = mutatorAction(
 		store.isDataRefreshing = isDataRefreshing
 	}
 )
+
+export const setIsDataStale = mutatorAction(
+	'isDataStale',
+	(isDataStale: boolean) => {
+		const store = getAppStore()
+		store.isDataStale = isDataStale
+	}
+)
+
 export const setPendingChanges = mutatorAction(
 	'setPendingChanges',
 	(pendingChanges: boolean) => {
@@ -74,7 +83,7 @@ export const setLoadedPRData = mutatorAction(
 		if (prData) {
 			store.loadedPRData = prData.data
 			store.prChanges = {
-				last_commit: prData.commits.pop(),
+				last_commit: prData?.commits?.pop?.(),
 			}
 		}
 	}

@@ -29,7 +29,8 @@ export const initialStore = {
 	prChanges: undefined,
 	userWorkingBranch: undefined,
 	userWorkingBranches: [],
-	userAccessExpired: false
+	userAccessExpired: false,
+	isDataStale: false,
 }
 
 export const getAppState = (): AppState => {

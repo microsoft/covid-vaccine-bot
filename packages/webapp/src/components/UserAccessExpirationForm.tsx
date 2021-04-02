@@ -12,8 +12,8 @@ import { getAppStore } from '../store/store'
 
 import './LocationForm.scss'
 
-export default observer(function LocationForm(props: any) {
-	const { onSubmit, onCancel, item, isRegion } = props
+export default observer(function UserAccessExpirationForm(props: any) {
+	const { onSubmit } = props
     const {pendingChanges} = getAppStore()
 	
 	return (
