@@ -172,6 +172,11 @@
 					"question": "c19.eligibility.question/essential_worker",
 					"moreInfoUrl": "https://www.mass.gov/info-details/covid-19-vaccinations-for-certain-workers",
 					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.ma.phase_2_step_4"
+				},
+				{
+					"question": "c19.eligibility.question/health.are_you_homebound",
+					"moreInfoText": "c19.eligibility.moreinfo/health.are_you_homebound.ma.phase_2_step_4",
+					"moreInfoUrl": "https://www.mass.gov/info-details/covid-19-homebound-vaccination-program"
 				}
 			]
 		},
