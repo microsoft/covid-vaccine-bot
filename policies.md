@@ -4521,41 +4521,9 @@ Children with Medical Complexity Program
 | scheduling_phone | [800-438-5795](tel:800-438-5795) |
 
 
-## Wyoming Active Phase (1c)
+## Wyoming Active Phase (16_and_older)
 
-* Are you a healthcare worker?
-	* Healthcare providers, behavioral health providers, and social workers unable to physically distance and unable to provide services through telehealth or virtually and healthcare facility surveyor/compliance evaluator and ombudsmen 
-* Are you a long term care resident or work in a long term care facility?
-* Are you classified as an essential worker?
-	* This includes:
-- Workers who are exposed to infectious materials
-- Law enforcement -- patrol officers and correctional facility officers (city, county, state and federal); coroners and deputy coroners
-- Fire, police, 911, correctional staff, search and rescue, and other in-person emergency response personnel not
-included in Phase 1a (including ancillary support for air ambulance and hospitals and Department of Family
-Services caseworkers)
-- Funeral service practitioners and in-person employees necessary for funerals
-- In-person employees within congregate care or living
-- K-12 education (teachers and other school district staff)
-- Child care service and adult daycare center providers and licensors
-- Public transit employees (community transportation buses and airline flight crew members working on passenger planes)
-- Grocery store employees, commercial meat processing employees, feedlot employees, other food supply chain facility employees and inspectors, and food manufacturing companies with 25 or more employees
-- US Postal Service employees and delivery service companies (such as FedEx and UPS) likely to have more than 15 minutes of exposure to members of the public; clinical laboratory specimen courier employees
-- Workforce service center employees; driver's services employees; port of entry employees; parole and probation officers; veterinarians; court system employees; utility and communications employees that must go into private homes; and non-law enforcement security officers that must have in-person close interactions, unable to physically distance and unable to provide services virtually; attorneys, judges, and court personnel necessary for in person criminal hearings or trials; and custodial staff responsible for cleaning areas known to have been contaminated by people positive for COVID-19
-- Essential Critical Infrastructure Workforce. These workers generally include those involved with: critical manufacturing; energy; legal; communications and information technology, financial services; chemical workers; other community or government-based operations and essential functions; water and wastewater; transportation and logistics; law enforcement, public safety, and other first responders; education; food and agriculture; public works and infrastructure support services; hygiene products and services, residential/shelter facilities, housing and real estate, and related services; hazardous materials; healthcare and public health; commercial facilities; defense industrial base. Other workers that have close contact with the public.
-* Are you age 16+, and have a high-risk medical condition?
-	* Those with the following conditions: diabetes; heart conditions (such as heart failure, coronary artery disease
-and cardiomyopathies); obesity (BMI over 30); immunocompromised state from solid organ transplant, blood or bone marrow transplant, immune deficiencies, long term high dose corticosteroids, or other immune weakening medicines; cerebrovascular disease (including stroke); severe neurologic conditions (including motor neuron disease, myasthenia gravis, multiple sclerosis, Parkinson's disease, cerebral palsy, quadriplegia or hemiplegia, progressive cerebellar disease, epilepsy, or dementia); moderate-to-severe asthma; hypertension or high blood pressure; liver disease; overweight (BMI 25-30); thalassemia.
-
-Persons who are caregivers of those who are medically vulnerable and unable to be vaccinated are also eligible for the vaccine.
-* Are you age 50+?
-* Do you work or live in a congregate setting?
-	* Residents of congregate care or living settings including prisons and jails
-* Do you live in a college dormitory?
-* Are you experiencing homelessness?
-* Are you an adult with an intellectual or developmental disability?
-	* People on the Wyoming Medicaid Community Choices Waiver and Developmental Disabilities waivers are eligible
-* Are you a person with a rare condition or disability that put you at higher risk?
-	* People on the Wyoming Medicaid Community Choices Waiver and Developmental Disabilities waivers are eligible
+* Are you age 16+?
 
 ## Wyoming Regions
 
@@ -4570,9 +4538,9 @@ Persons who are caregivers of those who are medically vulnerable and unable to b
 | scheduling_phone | [307-766-8222](tel:307-766-8222) |
 
 
-## Wyoming::Bighorn
+## Wyoming::Big Horn
 
-### Wyoming::Bighorn Links
+### Wyoming::Big Horn Links
 
 | link type | link |
 | --- | --- |
@@ -4581,7 +4549,7 @@ Persons who are caregivers of those who are medically vulnerable and unable to b
 | scheduling_phone | [1-800-438-5795](tel:1-800-438-5795) |
 
 
-### Wyoming::Bighorn Active Phase (18_and_older)
+### Wyoming::Big Horn Active Phase (16_and_older)
 
 ## Wyoming::Campbell
 
@@ -4594,7 +4562,7 @@ Persons who are caregivers of those who are medically vulnerable and unable to b
 | scheduling_phone | [1-800-438-5795](tel:1-800-438-5795) |
 
 
-### Wyoming::Campbell Active Phase (18_and_older)
+### Wyoming::Campbell Active Phase (16_and_older)
 
 ## Wyoming::Carbon
 
@@ -4607,7 +4575,7 @@ Persons who are caregivers of those who are medically vulnerable and unable to b
 | scheduling_phone | [1-800-438-5795](tel:1-800-438-5795) |
 
 
-### Wyoming::Carbon Active Phase (18_and_older)
+### Wyoming::Carbon Active Phase (16_and_older)
 
 ## Wyoming::Converse
 
@@ -4620,7 +4588,7 @@ Persons who are caregivers of those who are medically vulnerable and unable to b
 | scheduling_phone | [1-800-438-5795](tel:1-800-438-5795) |
 
 
-### Wyoming::Converse Active Phase (18_and_older)
+### Wyoming::Converse Active Phase (16_and_older)
 
 ## Wyoming::Crook
 
@@ -4633,7 +4601,7 @@ Persons who are caregivers of those who are medically vulnerable and unable to b
 | scheduling_phone | [1-800-438-5795](tel:1-800-438-5795) |
 
 
-### Wyoming::Crook Active Phase (18_and_older)
+### Wyoming::Crook Active Phase (16_and_older)
 
 ## Wyoming::Fremont
 
@@ -4646,7 +4614,7 @@ Persons who are caregivers of those who are medically vulnerable and unable to b
 | scheduling_phone | [800-438-5795](tel:800-438-5795) |
 
 
-### Wyoming::Fremont Active Phase (18_and_older)
+### Wyoming::Fremont Active Phase (16_and_older)
 
 ## Wyoming::Goshen
 
@@ -4659,7 +4627,7 @@ Persons who are caregivers of those who are medically vulnerable and unable to b
 | scheduling_phone | [1-800-438-5795](tel:1-800-438-5795) |
 
 
-### Wyoming::Goshen Active Phase (18_and_older)
+### Wyoming::Goshen Active Phase (16_and_older)
 
 ## Wyoming::Hot Springs
 
@@ -4672,7 +4640,7 @@ Persons who are caregivers of those who are medically vulnerable and unable to b
 | scheduling_phone | [1-800-438-5795](tel:1-800-438-5795) |
 
 
-### Wyoming::Hot Springs Active Phase (18_and_older)
+### Wyoming::Hot Springs Active Phase (16_and_older)
 
 ## Wyoming::Johnson
 
@@ -4685,7 +4653,7 @@ Persons who are caregivers of those who are medically vulnerable and unable to b
 | scheduling_phone | [1-800-438-5795](tel:1-800-438-5795) |
 
 
-### Wyoming::Johnson Active Phase (18_and_older)
+### Wyoming::Johnson Active Phase (16_and_older)
 
 ## Wyoming::Laramie
 
@@ -4720,7 +4688,7 @@ Persons who are caregivers of those who are medically vulnerable and unable to b
 | scheduling_phone | [1-800-438-5795](tel:1-800-438-5795) |
 
 
-### Wyoming::Natrona Active Phase (18_and_older)
+### Wyoming::Natrona Active Phase (16_and_older)
 
 ## Wyoming::Niobrara
 
@@ -4733,7 +4701,7 @@ Persons who are caregivers of those who are medically vulnerable and unable to b
 | scheduling_phone | [800-438-5795](tel:800-438-5795) |
 
 
-### Wyoming::Niobrara Active Phase (18_and_older)
+### Wyoming::Niobrara Active Phase (16_and_older)
 
 ## Wyoming::Park
 
@@ -4768,7 +4736,7 @@ Persons who are caregivers of those who are medically vulnerable and unable to b
 | scheduling_phone | [1-800-438-5795](tel:1-800-438-5795) |
 
 
-### Wyoming::Sheridan Active Phase (18_and_older)
+### Wyoming::Sheridan Active Phase (16_and_older)
 
 ## Wyoming::Sublette
 
@@ -4781,7 +4749,7 @@ Persons who are caregivers of those who are medically vulnerable and unable to b
 | scheduling_phone | [307-367-2157](tel:307-367-2157) |
 
 
-### Wyoming::Sublette Active Phase (18_and_older)
+### Wyoming::Sublette Active Phase (16_and_older)
 
 ## Wyoming::Sweetwater
 
@@ -4820,7 +4788,7 @@ Persons who are caregivers of those who are medically vulnerable and unable to b
 | scheduling_phone | [307-789-9203](tel:307-789-9203) |
 
 
-### Wyoming::Uinta Active Phase (18_and_older)
+### Wyoming::Uinta Active Phase (16_and_older)
 
 ## Wyoming::Washakie
 
@@ -4833,7 +4801,7 @@ Persons who are caregivers of those who are medically vulnerable and unable to b
 | scheduling_phone | [1-800-438-5795](tel:1-800-438-5795) |
 
 
-### Wyoming::Washakie Active Phase (18_and_older)
+### Wyoming::Washakie Active Phase (16_and_older)
 
 ## Wyoming::Weston
 
@@ -4846,4 +4814,4 @@ Persons who are caregivers of those who are medically vulnerable and unable to b
 | scheduling_phone | [1-800-438-5795](tel:1-800-438-5795) |
 
 
-### Wyoming::Weston Active Phase (18_and_older)
+### Wyoming::Weston Active Phase (16_and_older)
