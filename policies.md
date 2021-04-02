@@ -1216,25 +1216,33 @@ Please note that anyone younger than 18 must receive the Pfizer vaccine. It is t
 * Are you a healthcare worker?
 	* This includes individuals with disabilities living in home settings and their direct care staff
 * Are you a long term care resident or work in a long term care facility?
+	* This includes individuals with disabilities who are living in a home setting, and their direct care staff. Your case manager will help coordinate your vaccine.
 * Are you classified as an essential worker?
 	* This includes those who work in the following roles: First Responders; PK-12 staff; early childhood education and childcare workers; Frontline essential workers in food, agriculture, distribution, and manufacturing sectors who live or work in non-social distanced settings; Government officials, including staff, engaged in business at the State Capitol; Inspectors responsible for health, life and safety; Correctional facility staff and individuals incarcerated (see [here](https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus/Vaccine/Information-for-the-Public))
 * Are you age 65+?
-* Do you work or live in a congregate setting?
+* Are you a person with a rare condition or disability that put you at higher risk?
+	* This includes individuals with disabilities who are living in a home setting, and their direct care staff. Your case manager will help coordinate your vaccine.
 * Are you age 16+, and have a high-risk medical condition?
-	* Adults of any age with the following conditions are at increased risk of severe illness from the virus that causes COVID-19:
+	* This includes:
+- Cancer
+- Chronic kidney disease
+- Chronic lung diseases, including COPD (chronic obstructive pulmonary disease), asthma (moderate-to-severe), interstitial lung disease, cystic fibrosis, and pulmonary hypertension
+- Dementia or other neurological conditions
+- Diabetes (type 1 or type 2)
+- Down syndrome
+- Heart conditions (such as heart failure, coronary artery disease, cardiomyopathies or hypertension)
+- HIV infection
+- Immunocompromised state (weakened immune system)
+- Liver disease
+- Overweight and obesity
+- Pregnancy
+- Sickle cell disease or thalassemia
+- Smoking, current or former
+- Solid organ or blood stem cell transplant
+- Stroke or cerebrovascular disease, which affects blood flow to the brain
+- Substance use disorders
 
-Cancer
-Chronic kidney disease
-COPD (chronic obstructive pulmonary disease)
-Down Syndrome
-Heart conditions, such as heart failure, coronary artery disease, or cardiomyopathies
-Immunocompromised state (weakened immune system) from solid organ transplant
-Obesity (body mass index [BMI] of 30 kg/m2 or higher but < 40 kg/m2)
-Severe Obesity (BMI ≥ 40 kg/m2)
-Pregnancy
-Sickle cell disease
-Smoking
-Type 2 diabetes mellitus (see [here](https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html))
+Vaccine providers will ask Iowans to attest to having one of the conditions outlined by the CDC that would put them at greater risk for illness as a result of the COVID-19 virus. Providers will not require additional documentation.  (see [here](https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html))
 
 # Kansas
 
