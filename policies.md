@@ -89,11 +89,9 @@ Other medical conditions as determined by your medical provider
 | scheduling_phone | [684-633-5871](tel: 684-633-5871) |
 
 
-## American Samoa Active Phase (1a)
+## American Samoa Active Phase (18_and_older)
 
-* Are you a healthcare worker?
-	* Paid and unpaid persons serving in healthcare settings who have the potential for direct or indirect exposure to patients or infectious materials
-* Are you an essential worker outside of healthcare?
+* Are you age 18+?
 
 # Arizona
 
