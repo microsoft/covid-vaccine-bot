@@ -286,7 +286,7 @@ Counties and tribes may also choose to vaccinate the following groups defined by
 | scheduling_phone | [Yavapai County COVID-19 Hotline](tel:928-442-5103) |
 
 
-### Arizona::Yavapai Active Phase (1c)
+### Arizona::Yavapai Active Phase (18_and_older)
 
 ## Arizona::Yuma
 
@@ -426,31 +426,26 @@ California genetically handicapped persons program
 	* Frontline essential and other essential workers including educators or school staff, child care worker, first responders, food service, construction, transportation (those with greatest risk based on inability to work from home, frequency of contact with public, age and underlying health factors will be eligible sooner)
 * Are you age 16+, and have a high-risk medical condition?
 	* This includes 
-High risk:
 Cancer
-Chronic Kidney Disease
-COPD (Chronic Obstructive Pulmonary Disease)
-Diabetes Mellitus
-Down Syndrome
-Serious Heart Conditions, such as heart failure, coronary artery disease, or cardiomyopathies
-Immunocompromised state (weak immune system) from solid organ transplant
-Obesity (body mass index of 30 kg/m or higher)
-Sickle Cell Disease
-Current or Former Cigarette Smoker
-Intellectual or Developmental Disability
-Severe and Persistent Mental/Behavioral Health Condition
-Pregnancy
-
-Moderate risk:
-Asthma (moderate-to-severe)
-Cerebrovascular disease (affects blood vessels and blood supply to the brain)
-Cystic fibrosis
-Hypertension or high blood pressure
-Immunocompromised state (weakened immune system) from blood or bone marrow transplant, immune deficiencies, HIV, use of corticosteroids, or use of other immune weakening medicines
-Neurologic conditions, such as dementia
+Chronic kidney disease
+Chronic lung diseases, including COPD (chronic obstructive pulmonary disease), asthma (moderate-to-severe), interstitial lung disease, cystic fibrosis, and pulmonary hypertension
+Dementia or other neurological conditions
+Diabetes (type 1 or type 2)
+Down syndrome
+Heart conditions (such as heart failure, coronary artery disease, cardiomyopathies or hypertension)
+HIV infection
+Immunocompromised state (weakened immune system)
+Intellectual/developmental/physical disabilities
 Liver disease
-Overweight (BMI > 25 kg/m2, but < 30 kg/m2)
-Pulmonary fibrosis (having damaged or scarred lung tissues)
+Other Chronic Lung Disease (interstitial lung disease, pulmonary hypertension)
+Overweight and obesity
+Pregnancy
+Severe and Persistent Mental/Behavioral Health Condition
+Sickle cell disease or thalassemia
+Smoking, current or former
+Solid organ or blood stem cell transplant
+Stroke or cerebrovascular disease, which affects blood flow to the brain
+Substance Use Disorder(s)
 
 Family caregivers of those with high/moderate-risk conditions may also be eligible at the discretion of medical provider based on clinical judgement
 * Are you age 50+?
