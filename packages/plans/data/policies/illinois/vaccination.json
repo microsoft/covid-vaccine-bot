@@ -107,6 +107,15 @@
 					"question": "c19.eligibility.question/congregate.are_you_currently"
 				}
 			]
+		},
+		{
+			"id": "2",
+			"label": "2",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.16_up"
+				}
+			]
 		}
 	]
 }
