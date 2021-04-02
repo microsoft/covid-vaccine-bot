@@ -1160,6 +1160,28 @@ Type 2 diabetes mellitus (see [here](https://www.cdc.gov/coronavirus/2019-ncov/n
 
 ### Illinois::Chicago  Active Phase (1c)
 
+## Illinois::Cook
+
+### Illinois::Cook Links
+
+| link type | link |
+| --- | --- |
+| info | [Illinois Department of Public Health](https://vaccine.cookcountyil.gov/) |
+
+
+### Illinois::Cook Active Phase (1c)
+
+## Illinois::Kendall
+
+### Illinois::Kendall Links
+
+| link type | link |
+| --- | --- |
+| info | [Illinois Department of Public Health](http://www.kendallhealth.org/community-health/covid-19-vaccine/) |
+
+
+### Illinois::Kendall Active Phase (2)
+
 # Indiana
 
 ## Indiana Links
