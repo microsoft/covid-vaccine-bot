@@ -569,14 +569,12 @@ Family caregivers of those with high/moderate-risk conditions may also be eligib
 | info | [Guam Department of Public Health and Social Services, Division of Public Health](https://dphss.guam.gov/) |
 
 
-## Guam Active Phase (1a)
+## Guam Active Phase (16_and_older)
 
-* Are you a healthcare worker?
-* Are you a long term care resident or work in a long term care facility?
-* Are you age 50+?
-* Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.
-* Are you an essential worker outside of healthcare?
-* Are you a healthcare worker with direct patient contact?
+* Are you age 16+?
+	* Minors may only receive the Pfizer-BioNTech COVID-19 vaccine as the Moderna and Johnson & Johnson/Janssen (J&J/Janssen) vaccines are not recommended for individuals below the age of 18. Minors must be accompanied by a parent or legal guardian and provide government-issued identification to validate age.
+
+Upon arrival at vaccination events, individuals 60 years and older may be sent to the front of the line.
 
 ## Guam Regions
 
