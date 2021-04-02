@@ -143,3 +143,4 @@ c19.eligibility.question/health.are_you_currently_receiving,"Are you currently r
 c19.eligibility.question/people_of_color.are_you_a,"Are you a member of a disproportionately impacted population (especially a racial/ethnic minority group) at increased risk of acquiring or transmitting COVID-19?",,,,,,,,,,,,,,
 c19.eligibility.question/health.are_you_aged,"Are you aged 16+ with disabilities and receiving SSI or SSDI benefits?",,,,,,,,,,,,,,
 c19.eligibility.question/health.are_you_receiving,"Are you receiving long term services and supports through the state's Medicaid waiver or state plan services?",,,,,,,,,,,,,,
+c19.eligibility.question/health.are_you_homebound,"Are you homebound or otherwise unable to leave your home to get to a vaccination site, even with assistance?",,,,,,,,,,,,,,
