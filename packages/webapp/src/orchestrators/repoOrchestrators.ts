@@ -36,27 +36,25 @@ orchestrator(createPR, async (message) => {
 		setUserAccessExpired(true)
 		setUserAccessToken()
 		fileData[2]({error: true})
-		return
-	}
-	const store = getAppStore()
-	const nextWorkingBranches = store.userWorkingBranches.filter(
-		(b) => b.name !== store.userWorkingBranch
-	)
-
-	if(resp){
+	} else {
+		const store = getAppStore()
+		const nextWorkingBranches = store.userWorkingBranches.filter(
+			(b) => b.name !== store.userWorkingBranch
+		)
+	
 		resp = await repoServices('getBranches')
 		setBranchList(resp)
-
+	
 		resp = await repoServices('getUserWorkingBranches', [resp])
 		setUserWorkingBranches(nextWorkingBranches)
 		setUserWorkingBranch(undefined)
-
+	
 		resp = await repoServices('getRepoFileData')
 		setInitRepoFileData(resp)
-
+	
 		resp = await repoServices('getIssues')
 		setIssuesList(resp, fileData[2]())
-
+	
 		clearLoadedPRData()
 	}
 })
@@ -75,20 +73,20 @@ orchestrator(initializeGitData, async () => {
 	if(resp.status === 401) {
 		setUserAccessExpired(true)
 		setUserAccessToken()
-		return
+	} else {
+		setBranchList(resp)
+
+		const userWorkingBranches = await repoServices('getUserWorkingBranches', [
+			resp,
+		])
+		setUserWorkingBranches(userWorkingBranches)
+
+		resp = await repoServices('getRepoFileData')
+		setInitRepoFileData(resp)
+
+		resp = await repoServices('getIssues')
+		setIssuesList(resp)
 	}
-	setBranchList(resp)
-
-	const userWorkingBranches = await repoServices('getUserWorkingBranches', [
-		resp,
-	])
-	setUserWorkingBranches(userWorkingBranches)
-
-	resp = await repoServices('getRepoFileData')
-	setInitRepoFileData(resp)
-
-	resp = await repoServices('getIssues')
-	setIssuesList(resp)
 
 	setIsDataRefreshing(false)
 })
@@ -119,15 +117,14 @@ orchestrator(loadPR, async (message) => {
 		if(prResp.status === 401) {
 			setUserAccessExpired(true)
 			setUserAccessToken()
-			return
-		}
+		} else {
+			setLoadedPRData(prResp)
 	
-		setLoadedPRData(prResp)
-
-		const resp = await repoServices('getRepoFileData', prResp.data.head.ref)
-		setInitRepoFileData(resp)
-
-		setUserWorkingBranch(undefined)
+			const resp = await repoServices('getRepoFileData', prResp.data.head.ref)
+			setRepoFileData(resp)
+	
+			setUserWorkingBranch(undefined)
+		}
 	}
 	setIsDataRefreshing(false)
 })
@@ -136,16 +133,13 @@ orchestrator(saveContinue, async () => {
 	const store = getAppStore()
 	const changes = getChanges()
 	let branch = store.userWorkingBranch
-	debugger
 	if (!branch) {
 		const resp = await repoServices('createWorkingBranch')
 		if(resp.status === 401) {
 			setUserAccessExpired(true)
 			setUserAccessToken()
 			return
-		}
-			
-		if (resp) {
+		} else {
 			branch = resp.ref.split('refs/heads/').join('')
 			setUserWorkingBranch(branch)
 		}

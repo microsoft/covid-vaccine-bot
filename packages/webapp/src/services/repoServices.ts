@@ -47,7 +47,7 @@ const gitFetch = async (url: string, options: any = {}) => {
 		..._options
 	})
 	
-	if(!response.ok) {
+	if(response.ok === false) {
 		return {
 			status: response.status,
 			ok: response.ok
@@ -232,6 +232,8 @@ export const repoServices = async (
 
 		case 'getUserWorkingBranches': 
 			const userPrs = await repoServices('getUserPullRequests')
+			if(userPrs.ok === false)
+				return userPrs
 			const allBranches = extraData[0]
 			const usersBranches = allBranches.filter((branch: any) => branch.name.split('-policy-')[0] === state.username)
 
@@ -243,6 +245,8 @@ export const repoServices = async (
 
 		case 'getUserPullRequests': 
 			const prs = await gitFetch(`issues?creator=${state.username}`)
+			if(prs.ok === false)
+				return prs
 				
 			const populatedPRs: any[] = await Promise.all(
 				prs.map(async (item: any) => gitFetch(`pulls/${item.number}`))
@@ -251,6 +255,8 @@ export const repoServices = async (
 			return populatedPRs
 		case 'getPullRequests':
 			const loadPRResponse = await gitFetch(`pulls/${extraData}`)
+			if(loadPRResponse.ok === false)
+				return loadPRResponse
 			const commitResp = await gitFetch(`pulls/${extraData}/commits`)
 
 			return {data: loadPRResponse, commits: commitResp}
@@ -402,7 +408,7 @@ export const repoServices = async (
 					branchName = `refs/heads/${state.userWorkingBranch}`
 				} else {
 					const createBranchResponse = await createWorkingBranch(state, branchName)
-					if(!createBranchResponse.ok)
+					if(createBranchResponse.ok === false)
 						return createBranchResponse
 				}
 
@@ -425,7 +431,7 @@ export const repoServices = async (
 							}),
 						}
 					)
-					if(!prResp.ok)
+					if(prResp.ok === false)
 						return prResp
 
 					await gitFetch(
@@ -453,7 +459,7 @@ export const repoServices = async (
 						}
 					)
 
-					if(!prResp.ok)
+					if(prResp.ok === false)
 						return prResp
 
 					return state.loadedPRData
