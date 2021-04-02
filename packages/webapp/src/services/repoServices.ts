@@ -93,7 +93,7 @@ const commitChanges = async (state: any, branchName: string, globalUpdates: any,
 		for (const i in globalUpdates) {
 			const updateObj = globalUpdates[i]
 			const fileData = createCSVDataString(updateObj.content)
-			const resp = await gitFetch(
+			await gitFetch(
 				`contents/packages/plans/data/localization/${updateObj.path}`,
 				{
 					method: 'PUT',
@@ -105,8 +105,6 @@ const commitChanges = async (state: any, branchName: string, globalUpdates: any,
 					}),
 				}
 			)
-			if(!resp.ok)
-				return resp
 		}
 	}
 
@@ -115,7 +113,7 @@ const commitChanges = async (state: any, branchName: string, globalUpdates: any,
 			const locationObj = locationUpdates[i].data
 
 			//Info
-			const resp = await gitFetch(
+			await gitFetch(
 				`contents/packages/plans/data/policies/${locationObj.info.path}`,
 				{
 					method: 'PUT',
@@ -129,9 +127,6 @@ const commitChanges = async (state: any, branchName: string, globalUpdates: any,
 					}),
 				}
 			)
-			if(!resp.ok)
-				return resp
-
 			//Vaccination
 			await gitFetch(
 				`contents/packages/plans/data/policies/${locationObj.vaccination.path}`,

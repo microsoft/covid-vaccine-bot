@@ -89,6 +89,8 @@ orchestrator(initializeGitData, async () => {
 
 	resp = await repoServices('getIssues')
 	setIssuesList(resp)
+
+	setIsDataRefreshing(false)
 })
 
 orchestrator(loadBranch, async (message) => {
@@ -134,8 +136,15 @@ orchestrator(saveContinue, async () => {
 	const store = getAppStore()
 	const changes = getChanges()
 	let branch = store.userWorkingBranch
+	debugger
 	if (!branch) {
 		const resp = await repoServices('createWorkingBranch')
+		if(resp.status === 401) {
+			setUserAccessExpired(true)
+			setUserAccessToken()
+			return
+		}
+			
 		if (resp) {
 			branch = resp.ref.split('refs/heads/').join('')
 			setUserWorkingBranch(branch)
