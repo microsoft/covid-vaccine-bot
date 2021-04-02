@@ -2191,28 +2191,9 @@ Infrastructure Shelter and Housing (Construction) (see [here](https://www.immuni
 | scheduling_phone | [211](tel:211) |
 
 
-## New Hampshire Active Phase (phase_3_ages_30)
+## New Hampshire Active Phase (phase_3_ages_16)
 
-* Are you age 30+?
-* Are you a healthcare worker?
-* Are you a long-term care resident?
-* Are you a first responder?
-* Are you a corrections officer or staff member?
-* Are you age 16+ with 2 or more underlying health conditions, or a caregiver to such?
-	*  - Cancer
- - Chronic Kidney Disease
- - COPD (Chronic Obstructive Pulmonary Disease)
- - Down Syndrome
- - Heart Conditions, such as heart failure, coronary artery disease, or cardiomyopathies
- - Immunocompromised state (weakened immune system) from solid organ transplant
- - Obesity
- - Severe Obesity
- - Pregnancy
- - Sickle cell disease
- - Other high risk pulmonary disease
- - Type 2 Diabetes Mellitus
-* Are you a K-12 educator or work in a licensed child care facility?
-* Are you a resident of a facility for people with intellectual and developmental disabilities?
+* Are you age 16+?
 
 # New Jersey
 
