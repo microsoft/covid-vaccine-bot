@@ -384,15 +384,10 @@ California genetically handicapped persons program
 | eligibility | [https://covid19.colorado.gov/for-coloradans/vaccine/vaccine-for-coloradans](https://covid19.colorado.gov/for-coloradans/vaccine/vaccine-for-coloradans) |
 
 
-## Colorado Active Phase (1b4)
+## Colorado Active Phase (2)
 
-* Are you age 50+?
-* Are you classified as an essential worker?
-	* Essential workers include healthcare workers, funeral services workers, first responders and correctional officers, K-12 educators and licensed child care workers, members of state judiciary and executive branches, grocery and food/agricultural workers that can't distance, as well as frontline workers in student-facing higher education employees, food/restaurant services, manufacturing, the US Postal Service, public transit and specialized transportation, public health, human services, faith direct care for those experiencing homelessness, journalism, workers required for continuity of local or state government, and faith leaders
-* Are you age 16+, and have a high-risk medical condition?
-	* The intent of this classification is to vaccinate Coloradans who have a high risk of severe outcomes from COVID-19. This includes Coloradans with one or more of the following: Cancer (defined as patients who are currently receiving treatment or have received treatment within the last month for cancer), chronic kidney disease, COPD, diabetes mellitus (types 1 and 2), Down syndrome, specific heart conditions (heart failure, cardiomyopathies or coronary heart disease, and severe valvular/congenital heart disease), obesity (BMI ≥ 30kg/m^2), pregnancy, sickle cell disease, solid organ transplant, individuals with disabilities who require direct care in their home, and people with disabilities that prevent them from wearing masks.
-* Are you age 18+ and are someone who received a placebo during a COVID-19 clinical trial?
-* Are you a long term care resident or work in a long term care facility?
+* Are you age 16+?
+	* Any Coloradan who is at least 16-years-old is now eligible to the Pfizer vaccine; any Coloradan over 18-years-old can receive either the Modern or the Johnson and Johnson and vaccine.
 
 # Connecticut
 
