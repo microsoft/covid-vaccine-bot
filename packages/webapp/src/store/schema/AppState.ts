@@ -25,4 +25,5 @@ export interface AppState {
 	loadedPRData?: any
 	userWorkingBranch?: any,
 	userWorkingBranches: any[]
+	userAccessExpired: boolean
 }

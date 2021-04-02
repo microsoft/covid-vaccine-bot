@@ -11,17 +11,18 @@ import {
 	loadBranch,
 	saveContinue,
 } from '../actions/repoActions'
+import {setUserAccessExpired, setUserAccessToken} from '../mutators/authMutators'
 import {
 	setBranchList,
 	clearLoadedPRData,
 	setInitRepoFileData,
 	setRepoFileData,
 	setIssuesList,
-	initStoreData,
 	setLoadedPRData,
-	setUserWorkingBranch,
 	setPendingChanges,
+	setUserWorkingBranch,
 	setUserWorkingBranches,
+	setIsDataRefreshing,
 } from '../mutators/repoMutators'
 import { getChanges } from '../selectors/changesSelectors'
 import { repoServices } from '../services/repoServices'
@@ -29,13 +30,20 @@ import { getAppStore } from '../store/store'
 
 orchestrator(createPR, async (message) => {
 	const { fileData } = message
+
 	let resp = await repoServices('createPR', fileData)
+	if(resp.status === 401) {
+		setUserAccessExpired(true)
+		setUserAccessToken()
+		fileData[2]({error: true})
+		return
+	}
 	const store = getAppStore()
 	const nextWorkingBranches = store.userWorkingBranches.filter(
 		(b) => b.name !== store.userWorkingBranch
 	)
 
-	if (resp) {
+	if(resp){
 		resp = await repoServices('getBranches')
 		setBranchList(resp)
 
@@ -59,10 +67,16 @@ orchestrator(getRepoFileData, async () => {
 })
 
 orchestrator(initializeGitData, async () => {
-	initStoreData(true)
+	setIsDataRefreshing(true)
 	setUserWorkingBranch(undefined)
+	clearLoadedPRData()
 
 	let resp = await repoServices('getBranches')
+	if(resp.status === 401) {
+		setUserAccessExpired(true)
+		setUserAccessToken()
+		return
+	}
 	setBranchList(resp)
 
 	const userWorkingBranches = await repoServices('getUserWorkingBranches', [
@@ -75,15 +89,11 @@ orchestrator(initializeGitData, async () => {
 
 	resp = await repoServices('getIssues')
 	setIssuesList(resp)
-
-	clearLoadedPRData()
-
-	initStoreData(false)
 })
 
 orchestrator(loadBranch, async (message) => {
 	const { branch } = message
-	initStoreData(true)
+	setIsDataRefreshing(true)
 
 	const resp = await repoServices(
 		'getRepoFileData',
@@ -95,14 +105,21 @@ orchestrator(loadBranch, async (message) => {
 		setRepoFileData(resp)
 		clearLoadedPRData()
 	}
-	initStoreData(false)
+
+	setIsDataRefreshing(false)
 })
 
 orchestrator(loadPR, async (message) => {
 	const { prNumber } = message
-	initStoreData(true)
+	setIsDataRefreshing(true)
 	if (prNumber) {
 		const prResp = await repoServices('getPullRequests', prNumber)
+		if(prResp.status === 401) {
+			setUserAccessExpired(true)
+			setUserAccessToken()
+			return
+		}
+	
 		setLoadedPRData(prResp)
 
 		const resp = await repoServices('getRepoFileData', prResp.data.head.ref)
@@ -110,7 +127,7 @@ orchestrator(loadPR, async (message) => {
 
 		setUserWorkingBranch(undefined)
 	}
-	initStoreData(false)
+	setIsDataRefreshing(false)
 })
 
 orchestrator(saveContinue, async () => {

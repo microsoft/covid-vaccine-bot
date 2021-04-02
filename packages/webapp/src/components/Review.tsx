@@ -87,6 +87,17 @@ export default observer(function Review(props: ReviewProp) {
 		[formData, fieldChanges]
 	)
 
+	const handleSubmit = useCallback(
+		(resp) => {
+			if(resp?.error){
+				setShowLoading(false)
+			} else {
+				showDashboard()
+			}
+		},
+		[showDashboard],
+	)
+
 	return (
 		<div className="reviewPageContainer">
 			<div className="bodyContainer">
@@ -138,7 +149,7 @@ export default observer(function Review(props: ReviewProp) {
 										createPR([
 											globalUpdates,
 											locationUpdates,
-											showDashboard,
+											handleSubmit,
 											formData,
 										])
 									}}

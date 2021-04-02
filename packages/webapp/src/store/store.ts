@@ -29,6 +29,7 @@ export const initialStore = {
 	prChanges: undefined,
 	userWorkingBranch: undefined,
 	userWorkingBranches: [],
+	userAccessExpired: false
 }
 
 export const getAppState = (): AppState => {
@@ -53,5 +54,6 @@ autorun(() => {
 			userDisplayName: store.userDisplayName,
 			username: store.username,
 			email: store.email,
+			userAccessExpired: store.userAccessExpired,
 		})
 })
