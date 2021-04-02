@@ -27,6 +27,7 @@ export const initialStore = {
 	pendingChanges: false,
 	isDataRefreshing: false,
 	prChanges: undefined,
+	userAccessExpired: false
 }
 
 export const getAppState = (): AppState => {
@@ -51,6 +52,7 @@ autorun(() => {
 			userDisplayName: store.userDisplayName,
 			username: store.username,
 			email: store.email,
+			userAccessExpired: store.userAccessExpired,
 			// globalFileData: store.globalFileData,
 			// repoFileData: store.repoFileData,
 			// pendingChanges: store.pendingChanges,

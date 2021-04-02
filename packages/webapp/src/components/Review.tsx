@@ -16,7 +16,6 @@ import { useState, useEffect, useCallback, useRef } from 'react'
 import { createPR } from '../actions/repoActions'
 import { getAppStore } from '../store/store'
 import { getObjDiffs } from '../utils/dataUtils'
-
 import './Review.scss'
 
 export interface ReviewProp {
@@ -275,6 +274,17 @@ export default observer(function Review(props: ReviewProp) {
 		[formData, fieldChanges]
 	)
 
+	const handleSubmit = useCallback(
+		(resp) => {
+			if(resp?.error){
+				setShowLoading(false)
+			} else {
+				showDashboard()
+			}
+		},
+		[showDashboard],
+	)
+
 	return (
 		<div className="reviewPageContainer">
 			<div className="bodyContainer">
@@ -326,7 +336,7 @@ export default observer(function Review(props: ReviewProp) {
 										createPR([
 											globalUpdates,
 											locationUpdates,
-											showDashboard,
+											handleSubmit,
 											formData,
 											changeSummary.current,
 										])

@@ -11,6 +11,9 @@ import {
 	createCSVDataString,
 } from '../utils/textUtils'
 
+const githubRepoOwner = process.env.REACT_APP_REPO_OWNER
+const githubRepoName = process.env.REACT_APP_REPO_NAME
+
 const createPath = (obj: any, pathInput: string, value: any = undefined) => {
 	let path = pathInput.split('/')
 	let current = obj
@@ -30,6 +33,33 @@ const createPath = (obj: any, pathInput: string, value: any = undefined) => {
 	return obj
 }
 
+const gitFetch = async (url: string, options: any = {}) => {
+	const {headers, json = true, ..._options} = options
+	const {accessToken} = getAppStore()
+	const apiUrl = url.startsWith('https://api.github.com/') ? url : `https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/${url}`
+
+	const response = await fetch(apiUrl, {
+		method: 'GET',
+		headers: {
+			Authorization: `token ${accessToken}`,
+			...headers
+		},
+		..._options
+	})
+	
+	if(!response.ok) {
+		return {
+			status: response.status,
+			ok: response.ok
+		}
+	}
+	
+	if(json)
+		return await response.json()
+	else
+		return response
+}
+
 const getContent = async (url: string, token: string) => {
 	const response = await fetch(`${url}`, {
 		method: 'GET',
@@ -47,55 +77,28 @@ export const repoServices = async (
 	extraData: any = undefined
 ): Promise<any | undefined> => {
 	const state = getAppStore()
-	const githubRepoOwner = process.env.REACT_APP_REPO_OWNER
-	const githubRepoName = process.env.REACT_APP_REPO_NAME
 
 	switch (command) {
 		case 'checkAccess':
-			const loadAccessResponse = await fetch(
-				`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/collaborators/${state.username}`,
+			const loadAccessResponse = await gitFetch(
+				`collaborators/${state.username}`,
 				{
-					method: 'GET',
 					headers: {
-						Authorization: `token ${state.accessToken}`,
 						Accept: 'application/vnd.github.v3+json',
 					},
+					json: false
 				}
 			)
 			return loadAccessResponse
 
 		case 'getBranches':
-			const loadBranchesResponse = await fetch(
-				`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/branches`,
-				{
-					method: 'GET',
-					headers: {
-						Authorization: `token ${state.accessToken}`,
-					},
-				}
-			)
+			const loadBranchesResponse = await gitFetch(`branches`)
 
-			return await loadBranchesResponse.json()
+			return loadBranchesResponse
 		case 'getPullRequests':
-			const loadPRResponse = await fetch(
-				`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/pulls/${extraData}`,
-				{
-					method: 'GET',
-					headers: {
-						Authorization: `token ${state.accessToken}`,
-					},
-				}
-			)
+			const loadPRResponse = await gitFetch(`pulls/${extraData}`)
 
-			const commentResp = await fetch(
-				`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/issues/${extraData}/comments`,
-				{
-					method: 'GET',
-					headers: {
-						Authorization: `token ${state.accessToken}`,
-					},
-				}
-			)
+			const commentResp = await gitFetch(`issues/${extraData}/comments`)
 
 			const commentsObj = await commentResp.json()
 			const changes: any[] = []
@@ -105,41 +108,17 @@ export const repoServices = async (
 				})
 			}
 
-			const commitResp = await fetch(
-				`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/pulls/${extraData}/commits`,
-				{
-					method: 'GET',
-					headers: {
-						Authorization: `token ${state.accessToken}`,
-					},
-				}
-			)
+			const commitResp = await gitFetch(`pulls/${extraData}/commits`)
 
-			return {data: await loadPRResponse.json(), changes, commits: await commitResp.json()}
+			return {data: loadPRResponse, changes, commits: commitResp}
 		case 'getIssues':
-			const loadIssuesResponse = await fetch(
-				`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/issues`,
-				{
-					method: 'GET',
-					headers: {
-						Authorization: `token ${state.accessToken}`,
-					},
-				}
-			)
+			const loadIssuesResponse = await gitFetch(`issues`)
 
-			const prList = await loadIssuesResponse.clone().json()
+			const prList = loadIssuesResponse
 			const prChangeList: any[] = []
 			prList.forEach(async (item: any) => {
-				const commentResp = await fetch(
-					`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/issues/${item.number}/comments`,
-					{
-						method: 'GET',
-						headers: {
-							Authorization: `token ${state.accessToken}`,
-						},
-					}
-				)
-				const commentsObj = await commentResp.json()
+				const commentResp = await gitFetch(`issues/${item.number}/comments`)
+				const commentsObj = commentResp
 				if (commentsObj && commentsObj.length > 0) {
 					const changes = JSON.parse(
 						commentsObj[0].body.substr(1, commentsObj[0].body.length - 2)
@@ -152,36 +131,21 @@ export const repoServices = async (
 				}
 			})
 
-			return [await loadIssuesResponse.json(), prChangeList]
+			return [loadIssuesResponse, prChangeList]
 
 
 		case 'getRepoFileData':
 			const query = !extraData
-				? `https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/contents/packages/plans/data`
-				: `https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/contents/packages/plans/data?ref=${extraData}`
+				? `contents/packages/plans/data`
+				: `contents/packages/plans/data?ref=${extraData}`
 
-			const dataFolderResp = await fetch(query,
-				{
-					method: 'GET',
-					headers: {
-						Authorization: `token ${state.accessToken}`,
-					},
-				}
-			)
-			const dataFolderObj = await dataFolderResp.json()
+			const dataFolderResp = await gitFetch(query)
+			const dataFolderObj = dataFolderResp
 			const policyFolderGitUrl = dataFolderObj.find(
 				(folder: { name: string }) => folder.name === 'policies'
 			).git_url
-			const loadPolicyFolderResponse = await fetch(
-				`${policyFolderGitUrl}?recursive=true`,
-				{
-					method: 'GET',
-					headers: {
-						Authorization: `token ${state.accessToken}`,
-					},
-				}
-			)
-			const policyFolderData = await loadPolicyFolderResponse.json()
+			const loadPolicyFolderResponse = await gitFetch(`${policyFolderGitUrl}?recursive=true`)
+			const policyFolderData = loadPolicyFolderResponse
 			const stateData: any = {}
 			policyFolderData.tree.forEach(async (element: any) => {
 				if (element.type === 'tree') {
@@ -245,25 +209,16 @@ export const repoServices = async (
 				(folder: { name: string }) => folder.name === 'localization'
 			).git_url
 
-			const localizationResponse = await fetch(
-				`${localizationFolderGitUrl}?recursive=true`,
-				{
-					method: 'GET',
-					headers: {
-						Authorization: `token ${state.accessToken}`,
-					},
-				}
-			)
+			const localizationResponse = await gitFetch(`${localizationFolderGitUrl}?recursive=true`)
 
-			const localizationData = await localizationResponse.json()
 
-			const customStrings = localizationData.tree.find(
+			const customStrings = localizationResponse.tree.find(
 				(file: { path: string }) => file.path === 'custom-strings.csv'
 			)
-			const cdcStateNames = localizationData.tree.find(
+			const cdcStateNames = localizationResponse.tree.find(
 				(file: { path: string }) => file.path === 'cdc-state-names.csv'
 			)
-			const cdcStateLinks = localizationData.tree.find(
+			const cdcStateLinks = localizationResponse.tree.find(
 				(file: { path: string }) => file.path === 'cdc-state-links.csv'
 			)
 
@@ -313,21 +268,20 @@ export const repoServices = async (
 				let workingBranch = state.loadedPRData
 
 				if (!state.loadedPRData) {
-					const createBranchResponse = await fetch(
-						`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/git/refs`,
+					const createBranchResponse = await gitFetch(
+						`git/refs`,
 						{
 							method: 'POST',
-							headers: {
-								Authorization: `token ${state.accessToken}`,
-							},
 							body: JSON.stringify({
 								ref: branchName,
 								sha: mainBranch.commit.sha,
 							}),
 						}
 					)
-
-					workingBranch = await createBranchResponse.json()
+					if(!createBranchResponse.ok)
+						return createBranchResponse
+					
+					workingBranch = createBranchResponse
 				} else {
 					branchName = `refs/heads/${state.loadedPRData.head.ref}`
 				}
@@ -337,13 +291,10 @@ export const repoServices = async (
 						for (const i in globalUpdates) {
 							const updateObj = globalUpdates[i]
 							const fileData = createCSVDataString(updateObj.content)
-							await fetch(
-								`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/contents/packages/plans/data/localization/${updateObj.path}`,
+							await gitFetch(
+								`contents/packages/plans/data/localization/${updateObj.path}`,
 								{
 									method: 'PUT',
-									headers: {
-										Authorization: `token ${state.accessToken}`,
-									},
 									body: JSON.stringify({
 										branch: branchName,
 										message: `updated ${updateObj.path}`,
@@ -360,13 +311,10 @@ export const repoServices = async (
 							const locationObj = locationUpdates[i].data
 
 							//Info
-							await fetch(
-								`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/contents/packages/plans/data/policies/${locationObj.info.path}`,
+							const infoUpdateResponse = await gitFetch(
+								`contents/packages/plans/data/policies/${locationObj.info.path}`,
 								{
 									method: 'PUT',
-									headers: {
-										Authorization: `token ${state.accessToken}`,
-									},
 									body: JSON.stringify({
 										branch: branchName,
 										message: `updated ${locationObj.info.path}`,
@@ -377,14 +325,14 @@ export const repoServices = async (
 									}),
 								}
 							)
-							//Vaccingation
-							await fetch(
-								`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/contents/packages/plans/data/policies/${locationObj.vaccination.path}`,
+							if(!infoUpdateResponse.ok)
+								return infoUpdateResponse
+
+							//Vaccination
+							await gitFetch(
+								`contents/packages/plans/data/policies/${locationObj.vaccination.path}`,
 								{
 									method: 'PUT',
-									headers: {
-										Authorization: `token ${state.accessToken}`,
-									},
 									body: JSON.stringify({
 										branch: branchName,
 										message: `updated ${locationObj.vaccination.path}`,
@@ -400,13 +348,10 @@ export const repoServices = async (
 								}
 							)
 							//Strings
-							await fetch(
-								`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/contents/packages/plans/data/policies/${locationObj.strings.path}`,
+							await gitFetch(
+								`contents/packages/plans/data/policies/${locationObj.strings.path}`,
 								{
 									method: 'PUT',
-									headers: {
-										Authorization: `token ${state.accessToken}`,
-									},
 									body: JSON.stringify({
 										branch: branchName,
 										message: `updated ${locationObj.strings.path}`,
@@ -424,13 +369,10 @@ export const repoServices = async (
 								for (const key of regionKeys) {
 									const regionObj = locationObj.regions[key]
 									//Info
-									await fetch(
-										`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/contents/packages/plans/data/policies/${regionObj.info.path}`,
+									await gitFetch(
+										`contents/packages/plans/data/policies/${regionObj.info.path}`,
 										{
 											method: 'PUT',
-											headers: {
-												Authorization: `token ${state.accessToken}`,
-											},
 											body: JSON.stringify({
 												branch: branchName,
 												message: `updated ${regionObj.info.path}`,
@@ -442,13 +384,10 @@ export const repoServices = async (
 										}
 									)
 									//Vaccination
-									await fetch(
-										`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/contents/packages/plans/data/policies/${regionObj.vaccination.path}`,
+									await gitFetch(
+										`contents/packages/plans/data/policies/${regionObj.vaccination.path}`,
 										{
 											method: 'PUT',
-											headers: {
-												Authorization: `token ${state.accessToken}`,
-											},
 											body: JSON.stringify({
 												branch: branchName,
 												message: `updated ${regionObj.vaccination.path}`,
@@ -473,13 +412,10 @@ export const repoServices = async (
 				let prTitle = ''
 				if (!state.loadedPRData) {
 					prTitle = !prFormData.prTitle ? 'auto PR creation' : prFormData.prTitle
-					const prResp = await fetch(
-						`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/pulls`,
+					const prResp = await gitFetch(
+						`pulls`,
 						{
 							method: 'POST',
-							headers: {
-								Authorization: `token ${state.accessToken}`,
-							},
 							body: JSON.stringify({
 								head: branchName,
 								base: 'main',
@@ -488,24 +424,21 @@ export const repoServices = async (
 							}),
 						}
 					)
+					if(!prResp.ok)
+						return prResp
 
-					const prRespClone = await prResp.clone().json()
-
-					await fetch(
-						`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/issues/${prRespClone.number}/labels`,
+					await gitFetch(
+						`issues/${prResp.number}/labels`,
 						{
 							method: 'POST',
-							headers: {
-								Authorization: `token ${state.accessToken}`,
-							},
 							body: JSON.stringify({
 								labels: ['data-composer-submission', 'requires-data-accuracy-review']
 							}),
 						}
 					)
 
-					await fetch(
-						`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/issues/${prRespClone.number}/comments`,
+					await gitFetch(
+						`issues/${prResp.number}/comments`,
 						{
 							method: 'POST',
 							headers: {
@@ -517,17 +450,14 @@ export const repoServices = async (
 						}
 					)
 
-					return prResp.json()
+					return prResp
 				} else {
 					prTitle = !prFormData.prTitle ? state.loadedPRData.title : prFormData.prTitle
 					const prDetails = !prFormData.prDetails ? state.loadedPRData.body : prFormData.prDetails
-					await fetch(
-						`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/pulls/${state.loadedPRData.number}`,
+					const prResp = await gitFetch(
+						`pulls/${state.loadedPRData.number}`,
 						{
 							method: 'PATCH',
-							headers: {
-								Authorization: `token ${state.accessToken}`,
-							},
 							body: JSON.stringify({
 								title: prTitle,
 								body: prDetails
@@ -535,13 +465,13 @@ export const repoServices = async (
 						}
 					)
 
-					await fetch(
-						`https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/issues/${state.loadedPRData.number}/comments`,
+					if(!prResp.ok)
+						return prResp
+
+					await gitFetch(
+						`issues/${state.loadedPRData.number}/comments`,
 						{
 							method: 'POST',
-							headers: {
-								Authorization: `token ${state.accessToken}`,
-							},
 							body: JSON.stringify({
 								body: `\`${JSON.stringify(changeSummary)}\``
 							}),

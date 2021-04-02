@@ -11,12 +11,13 @@ import {
 	PivotItem,
 	ContextualMenu,
 	MessageBar,
+	Modal,
 } from '@fluentui/react'
 import { useBoolean } from '@uifabric/react-hooks'
 import { observer } from 'mobx-react-lite'
 import { useCallback, useState, useEffect, useRef } from 'react'
 import { Switch, Route, Redirect } from 'react-router-dom'
-import { loginUser } from '../actions/authActions'
+import { loginUser, reLoginUser } from '../actions/authActions'
 import { logoutUser } from '../mutators/authMutators'
 import { setCurrentLanguage } from '../mutators/repoMutators'
 import { getAppStore } from '../store/store'
@@ -28,6 +29,7 @@ import Login from './Login'
 import QualifierPanel from './QualifierPanel'
 import Review from './Review'
 import Translate from './Translate'
+import UserAccessExpirationForm from './UserAccessExpirationForm'
 import UnAuthorized from './UnAuthorized'
 
 import './App_reset_styles.scss'
@@ -42,13 +44,23 @@ export default observer(function App() {
 		isPersonaMenuOpen,
 		{ setTrue: showPersonaMenu, setFalse: hidePersonaMenu },
 	] = useBoolean(false)
+	const [
+		isAccessExpiration,
+		{ setTrue: showAccessExpirationModal, setFalse: hideAccessExpirationModal },
+	] = useBoolean(false)
 	const [selectedKey, setSelectedKey] = useState<string>('Dashboard')
 	const personaComponent = useRef(null)
 
 	useEffect(() => {
-		if (state.accessToken) loginUser()
+		if (state.accessToken && !state.globalFileData) 
+			loginUser()
 	}, [state.accessToken])
 
+	useEffect(() => {
+		if(state.userAccessExpired)
+			showAccessExpirationModal()
+	}, [state.userAccessExpired])
+	
 	useEffect(() => {
 		if (state.pendingChanges) {
 			window.onbeforeunload = function () {
@@ -73,6 +85,15 @@ export default observer(function App() {
 
 	const showDashboard = useCallback(() => {
 		setSelectedKey('Dashboard')
+	}, [setSelectedKey])
+
+	const onAccessExpirationFormSubmit = useCallback(() => {
+		if(state.globalFileData)
+			reLoginUser()
+		else 
+			loginUser()
+
+		hideAccessExpirationModal()
 	}, [setSelectedKey])
 
 	const renderRepoMessageBar = () => {
@@ -241,6 +262,16 @@ export default observer(function App() {
 									)}
 								</div>
 							</div>
+							<Modal
+								isOpen={isAccessExpiration}
+								isModeless={false}
+								isDarkOverlay={true}
+								isBlocking={false}
+							>
+								<UserAccessExpirationForm
+									onSubmit={onAccessExpirationFormSubmit}
+								/>
+							</Modal>
 						</Route>
 						<Route path="*">
 							<div>404 page not found.</div>

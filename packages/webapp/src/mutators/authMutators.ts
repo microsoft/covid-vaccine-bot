@@ -7,6 +7,14 @@ import { clearState } from '../store/localStorage'
 import { AppState } from '../store/schema/AppState'
 import { getAppStore } from '../store/store'
 
+export const setUserAccessToken = mutatorAction(
+	'setUserAccessToken',
+	(accessToken?: any) => {
+		const store = getAppStore()
+		store.accessToken = accessToken
+	}
+)
+
 export const setUserAuthData = mutatorAction(
 	'setUserAuthData',
 	(data: AppState | undefined) => {
@@ -20,6 +28,11 @@ export const setUserAuthData = mutatorAction(
 		}
 	}
 )
+
+export const setUserAccessExpired = mutatorAction('setUserAccessExpired', (userAccessExpired: boolean) => {
+	const store = getAppStore()
+	store.userAccessExpired = userAccessExpired
+})
 
 export const setUserNoAccess = mutatorAction('setUserNoAccess', () => {
 	const store = getAppStore()

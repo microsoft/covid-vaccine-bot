@@ -3,13 +3,13 @@
  * Licensed under the MIT license. See LICENSE file in the project.
  */
 import { orchestrator } from 'satcheljs'
-import { loginUser } from '../actions/authActions'
+import { loginUser, reLoginUser } from '../actions/authActions'
 import { initializeGitData } from '../actions/repoActions'
-import { setUserAuthData, setUserNoAccess } from '../mutators/authMutators'
+import { setIsDataRefreshing } from '../mutators/repoMutators'
+import { setUserAuthData, setUserNoAccess, setUserAccessExpired, setUserAccessToken } from '../mutators/authMutators'
 import { loginUserService } from '../services/loginUserService'
 import { repoServices } from '../services/repoServices'
 import { getAppStore } from '../store/store'
-import { saveState } from '../store/localStorage'
 
 orchestrator(loginUser, async () => {
 	try {
@@ -31,24 +31,44 @@ orchestrator(loginUser, async () => {
 		if (resp) {
 			setUserAuthData(resp)
 			const accessResp = await repoServices('checkAccess')
+
 			if (accessResp.ok) {
 				initializeGitData()
 			} else {
-				// Save global and repo file data to local
-				saveState({
-					globalFileData: state.globalFileData,
-					repoFileData: state.repoFileData,
-					pendingChanges: state.pendingChanges,
-					userAcessExpired: true,
-				})
-				
-				// Save flag 'userAcessExpired' to true and username
-				// On login if localStorage exists and userAcessExpired with the same username
-				// Load local GandRFD 
+				if(accessResp.status === 401) {
+					const { globalFileData, repoFileData, pendingChanges } = state
+
+					setUserAccessExpired(true)
+					setUserAccessToken()
+				}
+				else {
+					setUserNoAccess()
+				}
+			}
+		}
+	} catch (error) {
+		console.warn('Error logging in', error)
+	}
+})
+
+
+orchestrator(reLoginUser, async () => {
+	try {
+		setIsDataRefreshing(true)
+		let resp = await loginUserService()
+		setUserAccessExpired(false)
+		
+		if (resp) {
+			setUserAuthData(resp)
+			const accessResp = await repoServices('checkAccess')
+			
+			if (!accessResp.ok) {
 				setUserNoAccess()
 			}
 		}
 	} catch (error) {
 		console.warn('Error logging in', error)
+	} finally {
+		setIsDataRefreshing(false)
 	}
 })

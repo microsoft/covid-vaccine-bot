@@ -17,16 +17,21 @@ import {
 	setIsDataRefreshing,
 	setLoadedPRData
 } from '../mutators/repoMutators'
+import {setUserAccessExpired, setUserAccessToken} from '../mutators/authMutators'
 import { repoServices } from '../services/repoServices'
-import { saveState } from '../store/localStorage'
-
 
 orchestrator(createPR, async (message) => {
 	const { fileData } = message
+
 	let resp = await repoServices('createPR', fileData)
-
+	if(resp.status === 401) {
+		setUserAccessExpired(true)
+		setUserAccessToken()
+		fileData[2]({error: true})
+		return
+	}
+	
 	if(resp){
-
 		resp = await repoServices('getBranches')
 		setBranchList(resp)
 
@@ -48,21 +53,24 @@ orchestrator(getRepoFileData, async () => {
 orchestrator(initializeGitData, async () => {
 	setIsDataRefreshing(true)
 
-	let resp = await repoServices('getBranches')
-	setBranchList(resp)
+		let resp = await repoServices('getBranches')
+		setBranchList(resp)
+		
+		resp = await repoServices('getRepoFileData')
+		if(resp.status === 401) {
+			setUserAccessExpired(true)
+			setUserAccessToken()
+			return
+		}
 
-	resp = await repoServices('getRepoFileData')
-
-	debugger
-	// check here
-	setRepoFileData(resp)
-
-	resp = await repoServices('getIssues')
-	setIssuesList(resp)
-
-	handleCreatePR()
-
-	setIsDataRefreshing(false)
+		setRepoFileData(resp)
+		
+		resp = await repoServices('getIssues')
+		setIssuesList(resp)
+		
+		handleCreatePR()
+		
+		setIsDataRefreshing(false)
 })
 
 orchestrator(loadPR, async (message) => {
@@ -70,6 +78,12 @@ orchestrator(loadPR, async (message) => {
 
 	if (prNumber) {
 		const prResp = await repoServices('getPullRequests', prNumber)
+		if(prResp.status === 401) {
+			setUserAccessExpired(true)
+			setUserAccessToken()
+			return
+		}
+	
 		setLoadedPRData(prResp)
 
 		const resp = await repoServices('getRepoFileData', prResp.data.head.ref)
