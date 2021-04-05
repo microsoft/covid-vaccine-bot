@@ -3478,46 +3478,33 @@ Weakened immune system
 | scheduling | [Schedule a Vaccination](https://vaccinate.tn.gov/) |
 
 
-## Tennessee Active Phase (2b)
+## Tennessee Active Phase (3)
 
-* Are you a healthcare worker? (see [here](https://covid19.tn.gov/covid-19-vaccines/vaccine-phases/#1a2))
-* Are you a long term care resident or work in a long term care facility? (see [here](https://covid19.tn.gov/covid-19-vaccines/vaccine-phases/#1a1))
-* Are you classified as an essential worker?
-	* This includes:
-- First Responders
-- Corrections Officers and Staff
-- Mortuary Services
-- K-12 and Child Care Staff
-- Responder Operations Personnel and Airfield Operations Personnel
-- Social Services (DCS) (includes child welfare agency personnel with direct public exposure)
-- Commercial agriculture
-- Commercial food production
-- Public transit
-- Workers in Transportation (including postal and package delivery, freight railroad, maritime cargo, commercial or cargo service airports) 
-- Workers in Public infrastructure (includes dams, roads, locks, and bridge maintenance and engineering, solid waste collection, and processing)
-- Workers in Telecommunications (includes those providing direct services)
-- Workers in Utilities/Energy (includes line workers and other maintenance and engineering personnel involved in direct provision of services) (see [here](https://covid19.tn.gov/covid-19-vaccines/vaccine-phases/#2a))
-* Are you age 16+, and have a high-risk medical condition?
-	* Tennesseans 16 Years Old or Older with High-Risk Health Conditions
+* Are you age 16+?
 
-- Chronic renal disease
-- COPD, pulmonary fibrosis, or moderate-severe asthma
-- Obesity (BMI > 30)
-- Heart failure, coronary artery disease, cardiomyopathies, hypertension
-- Sickle cell, thalassemia
-- Cerebrovascular disease, stroke
-- Dementia
-- Liver disease
-- Diabetes
-- High-risk, progressive neuromuscular disorders (such as muscular dystrophy, ALS, multiple sclerosis)
-- Down Syndrome
-- Women ages 16 years and older who are pregnant and their permanent household residents >16yo. *Pregnant women were not included in COVID-19 vaccine clinical trials; however, the risk of hospitalization and death from COVID-19 is thought to be significantly higher than the risk of vaccination. Pregnant women are encouraged to discuss vaccination with their health care provider
-- Technologically-dependent individuals ages >16 years and the household residents and caregivers of children <16 years old who are technologically-dependent. Such as individuals who are ventilator-dependent, oxygen-dependent, with tracheostomy, wheelchair-bound due to high-risk medical condition, or require tube feedings, parenteral nutrition, or dialysis.
-- Individuals ages >16 years with immunocompromising conditions and the household residents and caregivers of children <16 years old who have immunocompromising conditions. Such as individuals receiving chemotherapy, requiring daily oral steroids or other immunosuppressants, those with HIV/AIDS or other diagnosed high-risk immunodeficiency.
-- Household residents and caregivers of children <16 years old who have complex congenital heart disease requiring ongoing medical management, such as Tetralogy of Fallot, hypoplastic left heart syndrome, and double outlet right ventricle, or qualify for the Katie Beckett waiver. (see [here](https://covid19.tn.gov/covid-19-vaccines/vaccine-phases/#1c))
-* Are you an adult with an intellectual or developmental disability?
-	* This includes individuals 18 years or older who cannot live independently due to a serious chronic medical condition or intellectual or developmental disability (see [here](https://covid19.tn.gov/covid-19-vaccines/vaccine-phases/#1a1))
-* Are you age 55+?
+## Tennessee Regions
+
+## Tennessee::Davidson
+
+### Tennessee::Davidson Links
+
+| link type | link |
+| --- | --- |
+| scheduling_phone | [615-862-7777](tel:615-862-7777) |
+
+
+### Tennessee::Davidson Active Phase (2b)
+
+## Tennessee::Hamilton
+
+### Tennessee::Hamilton Links
+
+| link type | link |
+| --- | --- |
+| scheduling_phone | [423-209-8383](tel:423-209-8383) |
+
+
+### Tennessee::Hamilton Active Phase (2b)
 
 # Texas
 
