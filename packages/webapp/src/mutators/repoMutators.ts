@@ -31,6 +31,11 @@ export const setPendingChanges = mutatorAction(
 	}
 )
 
+export const setSavingCommitsFlag = mutatorAction('setSavingCommitsFlag', (data: boolean) => {
+	const store = getAppStore()
+	store.isSavingCommits = data
+})
+
 export const setGlobalAndRepoChanges = mutatorAction(
 	'setGlobalAndRepoChanges', 
 	() => {

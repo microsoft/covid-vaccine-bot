@@ -32,7 +32,6 @@ import QualifierPanel from './QualifierPanel'
 import Review from './Review'
 import Translate from './Translate'
 import UserAccessExpirationForm from './UserAccessExpirationForm'
-import DataIsStaleForm from './DataIsStaleForm'
 import UnAuthorized from './UnAuthorized'
 
 import './App_reset_styles.scss'
@@ -52,10 +51,6 @@ export default observer(function App() {
 		isAccessExpiration,
 		{ setTrue: showAccessExpirationModal, setFalse: hideAccessExpirationModal },
 	] = useBoolean(false)
-	const [
-		showIsDataStaleModal,
-		{ setTrue: showDataIsStaleModal, setFalse: hideDataIsStaleModal },
-	] = useBoolean(false)
 	const [selectedKey, setSelectedKey] = useState<string>('Dashboard')
 	const personaComponent = useRef(null)
 
@@ -68,13 +63,6 @@ export default observer(function App() {
 		if(state.userAccessExpired)
 			showAccessExpirationModal()
 	}, [state.userAccessExpired, showAccessExpirationModal])
-
-	useEffect(() => {
-		if(state.isDataStale)
-			showDataIsStaleModal()
-		else
-			hideDataIsStaleModal()
-	}, [state.isDataStale, showDataIsStaleModal, hideDataIsStaleModal])
 	
 	useEffect(() => {
 		if (state.pendingChanges) {
@@ -109,7 +97,7 @@ export default observer(function App() {
 			loginUser()
 
 		hideAccessExpirationModal()
-	}, [hideAccessExpirationModal, state.globalFileData])
+	}, [state.globalFileData, hideAccessExpirationModal])
 
 	const renderRepoMessageBar = () => {
 		if (state.loadedPRData && state.prChanges && !state.isDataRefreshing) {
@@ -144,17 +132,25 @@ export default observer(function App() {
 					actions={
 						!!state.loadedPRData ? undefined : (
 							<div>
-								<MessageBarButton onClick={initializeGitData}>
-									Discard
-								</MessageBarButton>
-								<MessageBarButton
-									onClick={() => {
-										setBranchWasSaved(true)
-										saveContinue()
-									}}
-								>
-									Save and Continue
-								</MessageBarButton>
+								{!state.isSavingCommits ? (
+								<>
+									<MessageBarButton onClick={initializeGitData}>
+										Discard
+									</MessageBarButton>
+									<MessageBarButton
+										onClick={() => {
+											setBranchWasSaved(true)
+											saveContinue()
+										}}
+									>
+										Save and Continue
+									</MessageBarButton>
+								</>
+								) : (
+									<MessageBarButton disabled={true}>
+										Saving changes...
+									</MessageBarButton>
+								)}
 							</div>
 						)
 					}
@@ -317,16 +313,6 @@ export default observer(function App() {
 							>
 								<UserAccessExpirationForm
 									onSubmit={onAccessExpirationFormSubmit}
-								/>
-							</Modal>
-							<Modal
-								isOpen={showIsDataStaleModal}
-								isModeless={false}
-								isDarkOverlay={true}
-								isBlocking={false}
-							>
-								<DataIsStaleForm
-									onSubmit={initializeGitData}
 								/>
 							</Modal>
 						</Route>

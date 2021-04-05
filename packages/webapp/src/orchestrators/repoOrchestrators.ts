@@ -24,6 +24,7 @@ import {
 	setUserWorkingBranches,
 	setIsDataRefreshing,
 	setIsDataStale,
+	setSavingCommitsFlag,
 } from '../mutators/repoMutators'
 import { getChanges } from '../selectors/changesSelectors'
 import { repoServices } from '../services/repoServices'
@@ -41,7 +42,7 @@ const handleError = (error: any, callback?: () => void) => {
 			setIsDataStale(true)
 		break
 	}
-	
+
 	callback?.()
 }
 
@@ -56,20 +57,20 @@ orchestrator(createPR, async (message) => {
 		const nextWorkingBranches = store.userWorkingBranches.filter(
 			(b) => b.name !== store.userWorkingBranch
 		)
-	
+
 		resp = await repoServices('getBranches')
 		setBranchList(resp)
-	
+
 		resp = await repoServices('getUserWorkingBranches', [resp])
 		setUserWorkingBranches(nextWorkingBranches)
 		setUserWorkingBranch(undefined)
-	
+
 		resp = await repoServices('getRepoFileData')
 		setInitRepoFileData(resp)
-	
+
 		resp = await repoServices('getIssues')
 		setIssuesList(resp, fileData[2]())
-	
+
 		clearLoadedPRData()
 	}
 })
@@ -116,7 +117,7 @@ orchestrator(loadBranch, async (message) => {
 	)
 	if(resp.ok === false) {
 		handleError(resp.status === 404 ? {...resp, status: 'DATA_IS_STALE'} : resp)
-	} 
+	}
 	if (resp) {
 		setUserWorkingBranch(branch.name)
 		setRepoFileData(resp)
@@ -136,10 +137,10 @@ orchestrator(loadPR, async (message) => {
 			setUserAccessToken()
 		} else {
 			setLoadedPRData(prResp)
-	
+
 			const resp = await repoServices('getRepoFileData', prResp.data.head.ref)
 			setRepoFileData(resp)
-	
+
 			setUserWorkingBranch(undefined)
 		}
 	}
@@ -147,6 +148,7 @@ orchestrator(loadPR, async (message) => {
 })
 
 orchestrator(saveContinue, async () => {
+	setSavingCommitsFlag(true)
 	const store = getAppStore()
 	const changes = getChanges()
 	let branch = store.userWorkingBranch
@@ -161,9 +163,12 @@ orchestrator(saveContinue, async () => {
 			setUserWorkingBranch(branch)
 		}
 	}
-	await repoServices('commitChanges', {
+	const commitResp = await repoServices('commitChanges', {
 		...changes,
 		branchName: `refs/heads/${branch}`,
 	})
+	const resp = await repoServices('getRepoFileData', commitResp)
+	setRepoFileData(resp)
 	setPendingChanges(false)
+	setSavingCommitsFlag(false)
 })

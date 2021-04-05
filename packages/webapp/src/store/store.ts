@@ -31,6 +31,7 @@ export const initialStore = {
 	userWorkingBranches: [],
 	userAccessExpired: false,
 	isDataStale: false,
+	isSavingCommits: false
 }
 
 export const getAppState = (): AppState => {

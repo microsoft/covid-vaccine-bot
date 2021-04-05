@@ -93,12 +93,15 @@ const createWorkingBranch = async (state: any, branchName: string) => {
 }
 
 const commitChanges = async (state: any, branchName: string, globalUpdates: any, locationUpdates: any) => {
+	let branchLastCommitSha = ''
+
 	if (globalUpdates) {
 		for (const i in globalUpdates) {
 			const updateObj = globalUpdates[i]
 			const fileData = createCSVDataString(updateObj.content)
-			await gitFetch(
-				`contents/packages/plans/data/localization/${updateObj.path}`,
+			const query = `contents/packages/plans/data/localization/${updateObj.path}`
+			const globalResp = await gitFetch(
+				query,
 				{
 					method: 'PUT',
 					body: JSON.stringify({
@@ -109,16 +112,18 @@ const commitChanges = async (state: any, branchName: string, globalUpdates: any,
 					}),
 				}
 			)
+			branchLastCommitSha = globalResp.commit.sha
 		}
 	}
 
 	if (locationUpdates) {
+		let locationResp: any = {}
 		for (const i in locationUpdates) {
 			const locationObj = locationUpdates[i].data
-
+			const infoQuery = `contents/packages/plans/data/policies/${locationObj.info.path}`
 			//Info
-			await gitFetch(
-				`contents/packages/plans/data/policies/${locationObj.info.path}`,
+			locationResp = await gitFetch(
+				infoQuery,
 				{
 					method: 'PUT',
 					body: JSON.stringify({
@@ -131,9 +136,11 @@ const commitChanges = async (state: any, branchName: string, globalUpdates: any,
 					}),
 				}
 			)
+
 			//Vaccination
-			await gitFetch(
-				`contents/packages/plans/data/policies/${locationObj.vaccination.path}`,
+			const vacQuery = `contents/packages/plans/data/policies/${locationObj.vaccination.path}`
+			locationResp = await gitFetch(
+				vacQuery,
 				{
 					method: 'PUT',
 					body: JSON.stringify({
@@ -150,9 +157,12 @@ const commitChanges = async (state: any, branchName: string, globalUpdates: any,
 					}),
 				}
 			)
+
 			//Strings
-			await gitFetch(
-				`contents/packages/plans/data/policies/${locationObj.strings.path}`,
+			const stringQuery = `contents/packages/plans/data/policies/${locationObj.strings.path}`
+
+			locationResp = await gitFetch(
+				stringQuery,
 				{
 					method: 'PUT',
 					body: JSON.stringify({
@@ -172,8 +182,10 @@ const commitChanges = async (state: any, branchName: string, globalUpdates: any,
 				for (const key of regionKeys) {
 					const regionObj = locationObj.regions[key]
 					//Info
-					await gitFetch(
-						`contents/packages/plans/data/policies/${regionObj.info.path}`,
+					const regInfoQuery = `contents/packages/plans/data/policies/${regionObj.info.path}`
+
+					locationResp = await gitFetch(
+						regInfoQuery,
 						{
 							method: 'PUT',
 							body: JSON.stringify({
@@ -186,9 +198,12 @@ const commitChanges = async (state: any, branchName: string, globalUpdates: any,
 							}),
 						}
 					)
+
 					//Vaccination
-					await gitFetch(
-						`contents/packages/plans/data/policies/${regionObj.vaccination.path}`,
+					const regVacQuery = `contents/packages/plans/data/policies/${regionObj.vaccination.path}`
+
+					locationResp = await gitFetch(
+						regVacQuery,
 						{
 							method: 'PUT',
 							body: JSON.stringify({
@@ -208,7 +223,11 @@ const commitChanges = async (state: any, branchName: string, globalUpdates: any,
 				}
 			}
 		}
+
+		branchLastCommitSha = locationResp.commit.sha
 	}
+
+	return branchLastCommitSha
 }
 
 export const repoServices = async (
@@ -389,7 +408,7 @@ export const repoServices = async (
 				break
 			case 'commitChanges':
 				if (extraData) {
-					await commitChanges(state, extraData.branchName, extraData.globalUpdates, extraData.locationUpdates)
+					return await commitChanges(state, extraData.branchName, extraData.globalUpdates, extraData.locationUpdates)
 				}
 				break
 			case 'createPR':
