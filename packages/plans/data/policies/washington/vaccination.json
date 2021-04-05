@@ -4,15 +4,12 @@
 			"text": "cdc/washington/state_link",
 			"url": "https://www.doh.wa.gov/Emergencies/COVID19/vaccine"
 		},
-		"workflow": {
-			"text": "c19.links/workflow.wa",
-			"url": "https://form.findyourphasewa.org/210118771253954"
-		},
 		"eligibility": {
 			"url": "https://www.doh.wa.gov/Emergencies/COVID19/VaccineInformation/AllocationandPrioritization"
 		},
 		"providers": {
-			"url": "https://www.doh.wa.gov/YouandYourFamily/Immunization/VaccineLocations"
+			"url": "https://vaccinelocator.doh.wa.gov/",
+			"text": "c19.links/vax_providers"
 		},
 		"scheduling": {
 			"url": "https://prepmod.doh.wa.gov/",
@@ -198,5 +195,6 @@
 				}
 			]
 		}
-	]
+	],
+	"noPhaseLabel": false
 }

@@ -11,7 +11,7 @@
 			]
 		}
 	},
-	"activePhase": "1b4",
+	"activePhase": "2",
 	"phases": [
 		{
 			"id": "1a",
@@ -124,7 +124,8 @@
 			"label": "2",
 			"qualifications": [
 				{
-					"question": "c19.eligibility.question/age.16_up"
+					"question": "c19.eligibility.question/age.16_up",
+					"moreInfoText": "c19.eligibility.moreinfo/age.16_up.co.2"
 				}
 			]
 		}

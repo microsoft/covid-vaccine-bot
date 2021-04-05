@@ -68,6 +68,16 @@
 					"question": "c19.eligibility.question/age.60_up"
 				}
 			]
+		},
+		{
+			"id": "2",
+			"label": "2",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.16_up",
+					"moreInfoText": "c19.eligibility.moreinfo/age.16_up.hi.2"
+				}
+			]
 		}
 	]
 }

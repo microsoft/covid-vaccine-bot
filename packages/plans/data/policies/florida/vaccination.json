@@ -11,18 +11,9 @@
 			"id": "1a",
 			"qualifications": [
 				{
-					"question": "c19.eligibility.question/healthcare_worker.are"
-				},
-				{
-					"question": "c19.eligibility.question/long_term_care_resident.are"
-				},
-				{
-					"question": "c19.eligibility.question/health.1a.fl.extremely_vulnerable",
-					"moreInfoUrl": "",
-					"moreInfoText": "c19.eligibility.moreinfo/health.1a.fl.extremely_vulnerable.fl.1a"
-				},
-				{
-					"question": "c19.eligibility.question/age.are_you"
+					"question": "c19.eligibility.question/age.16_up",
+					"moreInfoText": "c19.eligibility.moreinfo/age.16_up.fl.1a",
+					"moreInfoUrl": "https://floridahealthcovid19.gov/wp-content/uploads/2021/04/doh-covid-vaccine-screening-consent-form.pdf"
 				}
 			],
 			"label": "Current phase"
