@@ -1693,15 +1693,22 @@ More detailed list available at the link
 | eligibility | [https://dhhs.ne.gov/Documents/COVID-19-Vaccine-Phase-1B-Prioritization.pdf](https://dhhs.ne.gov/Documents/COVID-19-Vaccine-Phase-1B-Prioritization.pdf) |
 
 
-## Nebraska Active Phase (1b)
+## Nebraska Active Phase (2b)
 
-* Are you a healthcare worker? (see [here](https://dhhs.ne.gov/Documents/COVID-19-Vaccine-Phase-1A-Allocation-Recommendations.pdf))
-* Are you a long term care resident or work in a long term care facility? (see [here](https://dhhs.ne.gov/Documents/COVID-19-Vaccine-Phase-1A-Allocation-Recommendations.pdf))
-* Are you classified as an essential worker?
-	* This includes those working in/as:
-First responders, utilities, homeless shelter staff, corrections staff, educators, Funeral homes, grocery,
-food processing, transportation, US Postal Service, public transit (see [here](https://dhhs.ne.gov/Documents/COVID-19-Vaccine-Phase-1B-Prioritization.pdf))
-* Are you age 65+?
+* Are you age 16+?
+
+## Nebraska Regions
+
+## Nebraska::Lancaster
+
+### Nebraska::Lancaster Links
+
+| link type | link |
+| --- | --- |
+| info | [Nebraska Department of Health and Human Services](https://app.lincoln.ne.gov/city/covid19/) |
+
+
+### Nebraska::Lancaster Active Phase (2a)
 
 # Nevada
 
