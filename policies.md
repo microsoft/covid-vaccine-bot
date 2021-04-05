@@ -592,6 +592,20 @@ Upon arrival at vaccination events, individuals 60 years and older may be sent t
 People with other chronic conditions also qualify for vaccine in Phase 1c, but not immediately. Data shows a correlation between medical conditions and age, so age will serve as a surrogate for many of these other chronic medical conditions. People with these chronic illnesses will be eligible for vaccine by age in descending order.
 * Are you age 60+?
 
+## Hawaii Regions
+
+## Hawaii::Hawaii
+
+### Hawaii::Hawaii Links
+
+| link type | link |
+| --- | --- |
+| info | [Hawaii State Department of Health](https://coronavirus-response-county-of-hawaii-hawaiicountygis.hub.arcgis.com/pages/vaccine-information) |
+| providers | [View locations providing vaccines](https://www.hilomedicalcenter.org/) |
+
+
+### Hawaii::Hawaii Active Phase (2)
+
 # Idaho
 
 ## Idaho Links
