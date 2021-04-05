@@ -1,0 +1,10 @@
+{
+	"activePhase": "2a",
+	"links": {
+		"info": {
+			"url": "https://app.lincoln.ne.gov/city/covid19/",
+			"text": "cdc/nebraska/state_link"
+		}
+	},
+	"noPhaseLabel": false
+}
