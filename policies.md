@@ -1171,67 +1171,9 @@ Please note that anyone younger than 18 must receive the Pfizer vaccine. It is t
 | scheduling_phone | [855-598-2246](tel:855-598-2246) |
 
 
-## Kentucky Active Phase (2)
+## Kentucky Active Phase (3)
 
-* Are you age 40+?
-* Are you a long term care resident or work in a long term care facility?
-	* Residents of long-term care and assisted living facilities, as well as health care personnel, including clinicians residing outside of Kentucky but who provide care in Kentucky
-* Are you classified as an essential worker?
-	* Frontline Essential Workers include: 
-Healthcare Personnel
-First Responders (Firefighters, Police)
-Corrections
-Education (teachers, support staff, daycare)
-Food & Agriculture
-Manufacturing
-U.S. Postal service workers
-Public transit workers
-Grocery store workers
-
-Other Essential Workers include: 
-Transportation and logistics
-Food Service Shelter & Housing (construction)
-Finance
-IT & Communication
-Energy
-Media
-Legal
-Public Safety (Engineers)
-Water & Wastewater
-Clergy (see [here](https://www.cdc.gov/vaccines/covid-19/categories-essential-workers.html))
-* Are you age 16+, and have a high-risk medical condition?
-	* Anyone age 16 or older with any medical or behavioral health condition or conditions that the CDC reports ‘are' or ‘might' be at increased risk of severe COVID-19 illness is eligible. These include the following:
-
-Adults of any age with the following conditions are at increased risk of severe illness from the virus that causes COVID-19:
-
-Cancer
-Chronic kidney disease
-COPD (chronic obstructive pulmonary disease)
-Down Syndrome
-Heart conditions, such as heart failure, coronary artery disease, or cardiomyopathies
-Immunocompromised state (weakened immune system) from solid organ transplant
-Obesity (body mass index [BMI] of 30 kg/m2 or higher but < 40 kg/m2)
-Severe Obesity (BMI ≥ 40 kg/m2)
-Pregnancy
-Sickle cell disease
-Smoking
-Type 2 diabetes mellitus
-
-COVID-19 is a new disease. Currently there are limited data and information about the impact of many underlying medical conditions on the risk for severe illness from COVID-19. Based on what we know at this time, adults of any age with the following conditions might be at an increased risk for severe illness from the virus that causes COVID-19:
-
-Asthma (moderate-to-severe)
-Cerebrovascular disease (affects blood vessels and blood supply to the brain)
-Cystic fibrosis
-Hypertension or high blood pressure
-Immunocompromised state (weakened immune system) from blood or bone marrow transplant, immune deficiencies, HIV, use of corticosteroids, or use of other immune weakening medicines
-Neurologic conditions, such as dementia
-Liver disease
-Overweight (BMI > 25 kg/m2, but < 30 kg/m2)
-Pulmonary fibrosis (having damaged or scarred lung tissues)
-Thalassemia (a type of blood disorder)
-Type 1 diabetes mellitus
- (see [here](https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html))
-* Are you currently living in a transient housing facility?
+* Are you age 16+?
 
 # Louisiana
 
