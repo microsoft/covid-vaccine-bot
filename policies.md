@@ -505,11 +505,12 @@ Family caregivers of those with high/moderate-risk conditions may also be eligib
 
 ## Florida Active Phase (1a)
 
-* Are you a healthcare worker with direct patient contact?
-* Are you a long term care resident or work in a long term care facility?
-* Have you been deemed extremely vulnerable to COVID-19 by hospital providers?
-	* Please note that a form from your physician is required
-* Are you age 40+?
+* Are you age 16+?
+	* 
+ALL PERSONS 18 YEARS OF AGE AND OLDER ARE ELIGIBLE TO RECEIVE THE VACCINE IN FLORIDA
+As of Monday, April 5, all Florida residents  are eligible to receive any COVID-19 vaccine as prescribed by the Food and Drug Administration.
+
+PERSONS AGES 16-17:  The Pfizer vaccine is authorized for persons age 16 and up. The Moderna and Janssen (Johnson and Johnson) vaccines are authorized for persons age 18 and up. All individuals under the age of 18 receiving a vaccine must be accompanied by a guardian and complete the COVID-19 vaccine screening and consent form. To download a copy of the form, click the following link: (see [here](https://floridahealthcovid19.gov/wp-content/uploads/2021/04/doh-covid-vaccine-screening-consent-form.pdf))
 
 # Georgia
 
