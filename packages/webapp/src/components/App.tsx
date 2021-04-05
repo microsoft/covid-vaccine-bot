@@ -13,6 +13,7 @@ import {
 	MessageBar,
 	MessageBarButton,
 	Modal,
+	Spinner
 } from '@fluentui/react'
 import { useBoolean } from '@uifabric/react-hooks'
 import { observer } from 'mobx-react-lite'
@@ -147,9 +148,7 @@ export default observer(function App() {
 									</MessageBarButton>
 								</>
 								) : (
-									<MessageBarButton disabled={true}>
-										Saving changes...
-									</MessageBarButton>
+									<Spinner label="Saving changes..." ariaLive="assertive" labelPosition="left" />
 								)}
 							</div>
 						)
