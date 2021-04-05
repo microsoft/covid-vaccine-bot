@@ -1857,6 +1857,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@c19-vax-api/locations-ingester@workspace:packages/locations-ingester":
+  version: 0.0.0-use.local
+  resolution: "@c19-vax-api/locations-ingester@workspace:packages/locations-ingester"
+  dependencies:
+    "@tsconfig/node14": ^1.0.0
+    "@types/node": ^14.14.37
+    aws-sdk: ^2.880.0
+    ts-node: ^9.1.1
+    typescript: ^4.2.3
+  languageName: unknown
+  linkType: soft
+
 "@cnakazawa/watch@npm:^1.0.3":
   version: 1.0.4
   resolution: "@cnakazawa/watch@npm:1.0.4"
@@ -5063,6 +5075,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/node@npm:^14.14.37":
+  version: 14.14.37
+  resolution: "@types/node@npm:14.14.37"
+  checksum: 5e2d9baf7594ebacaf016716515f30de0765169412787f981481c2fb8b468923149bb9e2e3219ee672399811672ceddc339a7372a61cf15bc656836a5494d991
+  languageName: node
+  linkType: hard
+
 "@types/normalize-package-data@npm:^2.4.0":
   version: 2.4.0
   resolution: "@types/normalize-package-data@npm:2.4.0"
@@ -6776,6 +6795,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"aws-sdk@npm:^2.880.0":
+  version: 2.880.0
+  resolution: "aws-sdk@npm:2.880.0"
+  dependencies:
+    buffer: 4.9.2
+    events: 1.1.1
+    ieee754: 1.1.13
+    jmespath: 0.15.0
+    querystring: 0.2.0
+    sax: 1.2.1
+    url: 0.10.3
+    uuid: 3.3.2
+    xml2js: 0.4.19
+  checksum: d8a4be8eab16992871e9b97cd6f2853e4c0afcc37951409d0bfcdb36cff5c380ed751c62b2b4273f506634266d7eccb39ea00adf2cd225eb3cfd1fa0a2b906e4
+  languageName: node
+  linkType: hard
+
 "aws-sign2@npm:~0.7.0":
   version: 0.7.0
   resolution: "aws-sign2@npm:0.7.0"
@@ -7832,7 +7868,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"buffer@npm:^4.3.0":
+"buffer@npm:4.9.2, buffer@npm:^4.3.0":
   version: 4.9.2
   resolution: "buffer@npm:4.9.2"
   dependencies:
@@ -11059,6 +11095,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"events@npm:1.1.1":
+  version: 1.1.1
+  resolution: "events@npm:1.1.1"
+  checksum: ec57b605851d6c4421fb2b0c86af432e87dd94b8b8cd936d74383a19e66a0d7e4af27f6a946ad49dad7e9c66000f3b16ef33e38ec12e31dc69d1b36321bc00ce
+  languageName: node
+  linkType: hard
+
 "events@npm:^3.0.0":
   version: 3.3.0
   resolution: "events@npm:3.3.0"
@@ -13371,6 +13414,13 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
+"ieee754@npm:1.1.13":
+  version: 1.1.13
+  resolution: "ieee754@npm:1.1.13"
+  checksum: 9ef12932e8aeae1c614f314783b3770fac5daae7ae92ebffcda97da58efd77c0289181093666f6048e02c566ceeec4d0edf3b04b57ce8e0b57e9b3814a870469
+  languageName: node
+  linkType: hard
+
 "ieee754@npm:^1.1.13, ieee754@npm:^1.1.4":
   version: 1.2.1
   resolution: "ieee754@npm:1.2.1"
@@ -15045,6 +15095,13 @@ fsevents@^1.2.7:
   bin:
     jest: bin/jest.js
   checksum: 4ffcfefa2b30999a71c205e1aacf2b3d7af10f36c17ba1baf45677684116ad5aa6a5bb162ad2dd418f9ea99d18f24b70d8c83fb317b765a3acac361a50e9db9f
+  languageName: node
+  linkType: hard
+
+"jmespath@npm:0.15.0":
+  version: 0.15.0
+  resolution: "jmespath@npm:0.15.0"
+  checksum: b3edb0b9773571d72dc1aa2d5590fa0f82419a0a04d5a0d09aee93219f41d046ea9cf3c36931fc48d9430348ca575530beab5968923544136cc8ddcd49ff7a47
   languageName: node
   linkType: hard
 
@@ -21494,6 +21551,13 @@ resolve@1.18.1:
   languageName: node
   linkType: hard
 
+"sax@npm:1.2.1":
+  version: 1.2.1
+  resolution: "sax@npm:1.2.1"
+  checksum: 66b63899332b663ad46800968c0ed30a12a0444d0acf83981488bab37e94f0933d6204e5fd2323cfd17950afad23660c3cbd218e33d7da8fe607e28efcd1fc0e
+  languageName: node
+  linkType: hard
+
 "sax@npm:>=0.6.0, sax@npm:~1.2.4":
   version: 1.2.4
   resolution: "sax@npm:1.2.4"
@@ -24059,6 +24123,16 @@ resolve@1.18.1:
   languageName: node
   linkType: hard
 
+"url@npm:0.10.3":
+  version: 0.10.3
+  resolution: "url@npm:0.10.3"
+  dependencies:
+    punycode: 1.3.2
+    querystring: 0.2.0
+  checksum: 4c197edb8280fd9bb49db060aa7519ce29c8ae979fafa1c94a56ad0e067dc9da86079f0af0cebeead5b6ea7c0629144830009c28f415e19d0ccd20ddbdb310b7
+  languageName: node
+  linkType: hard
+
 "url@npm:^0.11.0":
   version: 0.11.0
   resolution: "url@npm:0.11.0"
@@ -24171,6 +24245,15 @@ resolve@1.18.1:
   version: 1.0.1
   resolution: "utils-merge@npm:1.0.1"
   checksum: a457956ebc09efbda05da8bf213ab89140bb9dffa3c42b3315dd8fc3c45d67a1b802741f58b7bba4872113201fc275fc86470289d8bd32b74297b5e5b5980705
+  languageName: node
+  linkType: hard
+
+"uuid@npm:3.3.2":
+  version: 3.3.2
+  resolution: "uuid@npm:3.3.2"
+  bin:
+    uuid: ./bin/uuid
+  checksum: f407d974ca30b20bfbd32ae9cc05d20e18df5fd9e5fa088d91db04a6597125dcc8d09eeeb7237782724daba36418e24f557e0245e6ce7b8e4ad25d6436f1cde1
   languageName: node
   linkType: hard
 
@@ -25202,6 +25285,16 @@ resolve@1.18.1:
   languageName: node
   linkType: hard
 
+"xml2js@npm:0.4.19":
+  version: 0.4.19
+  resolution: "xml2js@npm:0.4.19"
+  dependencies:
+    sax: ">=0.6.0"
+    xmlbuilder: ~9.0.1
+  checksum: 1c3b667a0b865fd9a086b0d01b317d95af2bb5aef837e5f3c54a3cb9283350b4be0ea7b88723e488f586bac4b4ca711b108878c45cc69f175b0d14b2c142a4dc
+  languageName: node
+  linkType: hard
+
 "xml2js@npm:^0.4.19":
   version: 0.4.23
   resolution: "xml2js@npm:0.4.23"
@@ -25216,6 +25309,13 @@ resolve@1.18.1:
   version: 11.0.1
   resolution: "xmlbuilder@npm:11.0.1"
   checksum: 8f479b28b5897d903dc514c45c54c869b2f798c0eb44b11e35f7d6e3e631fb9d7aaaec6b9db6b92b715b4ded00d9d8ed8c08e9fd7e2a5f220b14b7b54403fa10
+  languageName: node
+  linkType: hard
+
+"xmlbuilder@npm:~9.0.1":
+  version: 9.0.7
+  resolution: "xmlbuilder@npm:9.0.7"
+  checksum: aeef38b26bcfe0ddec25d8751a1e8980cf4ea63f327c123ed64dd29ffd1e8a57b6bc99be57dab1f99064c97ba3b140ed1454cfbeeab651f1e264d74b2d6f2b7f
   languageName: node
   linkType: hard
 
