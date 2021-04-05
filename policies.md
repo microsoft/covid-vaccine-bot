@@ -10,43 +10,9 @@
 | scheduling_phone | [1-855-566-5333](tel:1-855-566-5333) |
 
 
-## Alabama Active Phase (1c_group1)
+## Alabama Active Phase (2)
 
-* Are you a healthcare worker?
-* Are you a long-term care resident?
-* Are you classified as an essential worker?
-	* This includes first responders (firefighters and police officers); corrections officers and support staff; Food and agriculture workers; U.S. Postal Service workers; manufacturing workers; grocery store workers; public transit workers; educators including child care workers, k-12, community colleges, and all higher education institutions (teachers and support staff members); judiciary (including but not limited to district judges, circuit judges, and district attorneys); clergy/ministers; and veterinarians. Also includes state of Alabama continuity of Government strategy (state legislators, supreme court and appellate judges, constitutional officers, and cabinet agency heads). 
-
-As of March 22nd, critical workers in the following areas who were not recommended for vaccination in Phase 1b will be eligible:
-
-Transportation and logistics
-Waste and wastewater
-Food service (includes restaurant staff)
-Shelter and housing (construction)
-Finance (bank tellers)
-Information technology and communication
-Energy
-Legal
-Media
-Public safety (engineers)
-* Are you age 55+?
-* Do you work or live in a congregate setting?
-	* This includes homeless shelters and group homes
-* Are you age 16+, and have a high-risk medical condition?
-	* This includes people age 16 to 64 with high-risk medical conditions which include but are not limited to the following conditions:
-
-Cancer
-Chronic kidney disease
-COPD
-Heart conditions such as heart failure, coronary artery disease or cardiomyopathies; immunocompromised state
-Solid organ transplant
-Obesity, BMI greater than 30
-Pregnancy
-Sickle cell disease
-Smoking
-Type 1 and 2 diabetes
-Other medical conditions as determined by your medical provider
-* Are you an adult with an intellectual or developmental disability?
+* Are you age 16+?
 
 # Alaska
 
