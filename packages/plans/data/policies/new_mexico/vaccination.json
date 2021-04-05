@@ -30,34 +30,7 @@
 			"id": "current_phase",
 			"qualifications": [
 				{
-					"question": "c19.eligibility.question/long_term_care_resident.are",
-					"moreInfoUrl": "https://cv.nmhealth.org/wp-content/uploads/2021/02/2021.1.28-DOH-Phase-Guidance.pdf"
-				},
-				{
-					"question": "c19.eligibility.question/essential_worker.are_you_a_medical",
-					"moreInfoUrl": "https://cv.nmhealth.org/wp-content/uploads/2021/02/2021.1.28-DOH-Phase-Guidance.pdf"
-				},
-				{
-					"question": "c19.eligibility.question/congregate.do",
-					"moreInfoUrl": "https://cv.nmhealth.org/wp-content/uploads/2021/02/2021.1.28-DOH-Phase-Guidance.pdf"
-				},
-				{
-					"question": "c19.eligibility.question/healthcare_worker",
-					"moreInfoUrl": "https://cv.nmhealth.org/wp-content/uploads/2021/02/2021.1.28-DOH-Phase-Guidance.pdf"
-				},
-				{
-					"question": "c19.eligibility.question/age.75_up",
-					"moreInfoUrl": "https://cv.nmhealth.org/wp-content/uploads/2021/02/2021.1.28-DOH-Phase-Guidance.pdf"
-				},
-				{
-					"question": "c19.eligibility.question/age.are_you_age",
-					"moreInfoText": "c19.eligibility.moreinfo/age.are_you_age.nm.current_phase",
-					"moreInfoUrl": "https://cv.nmhealth.org/wp-content/uploads/2021/02/2021.1.28-DOH-Phase-Guidance.pdf"
-				},
-				{
-					"question": "c19.eligibility.question/essential_worker",
-					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.nm.current_phase",
-					"moreInfoUrl": "https://cv.nmhealth.org/wp-content/uploads/2021/02/2021.1.28-DOH-Phase-Guidance.pdf"
+					"question": "c19.eligibility.question/age.16_up"
 				}
 			]
 		}
