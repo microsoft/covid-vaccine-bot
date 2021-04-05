@@ -304,6 +304,8 @@ export const updateLocationData = mutatorAction(
 							url: locationData.eligibility,
 						}
 					}
+				} else {
+					delete location.vaccination.content.links.eligibility
 				}
 
 				if (locationData?.eligibilityPlan !== '') {
@@ -321,6 +323,8 @@ export const updateLocationData = mutatorAction(
 							url: locationData.eligibilityPlan,
 						}
 					}
+				} else {
+					delete location.vaccination.content.links.eligibility_plan
 				}
 
 				if (locationData?.info !== '') {
@@ -340,6 +344,8 @@ export const updateLocationData = mutatorAction(
 							text: `cdc/${prevItem.key}/state_link`,
 						}
 					}
+				} else {
+					delete location.vaccination.content.links.info
 				}
 
 				if (locationData?.providers !== '') {
@@ -359,6 +365,8 @@ export const updateLocationData = mutatorAction(
 							text: 'c19.links/vax_providers',
 						}
 					}
+				} else {
+					delete location.vaccination.content.links.providers
 				}
 
 				if (locationData?.workflow !== '') {
@@ -378,6 +386,8 @@ export const updateLocationData = mutatorAction(
 							text: 'c19.links/vax_quiz',
 						}
 					}
+				} else {
+					delete location.vaccination.content.links.workflow
 				}
 
 				if (locationData?.scheduling !== '') {
@@ -397,6 +407,8 @@ export const updateLocationData = mutatorAction(
 							text: 'c19.links/schedule_vax',
 						}
 					}
+				} else {
+					delete location.vaccination.content.links.scheduling
 				}
 
 				if (locationData?.schedulingPhone !== '') {
@@ -479,6 +491,8 @@ export const updateLocationData = mutatorAction(
 							url: locationData.eligibility,
 						}
 					}
+				} else {
+					delete regionObj.vaccination.content.links.eligibility
 				}
 
 				if (locationData?.eligibilityPlan !== '') {
@@ -496,6 +510,8 @@ export const updateLocationData = mutatorAction(
 							url: locationData.eligibilityPlan,
 						}
 					}
+				} else {
+					delete regionObj.vaccination.content.links.eligibility_plan
 				}
 
 				if (locationData?.info !== '') {
@@ -515,6 +531,8 @@ export const updateLocationData = mutatorAction(
 							text: `cdc/${location.info.content.id}/state_link`,
 						}
 					}
+				} else {
+					delete regionObj.vaccination.content.links.info
 				}
 
 				if (locationData?.providers !== '') {
@@ -534,6 +552,8 @@ export const updateLocationData = mutatorAction(
 							text: 'c19.links/vax_providers',
 						}
 					}
+				} else {
+					delete regionObj.vaccination.content.links.providers
 				}
 
 				if (locationData?.workflow !== '') {
@@ -553,6 +573,8 @@ export const updateLocationData = mutatorAction(
 							text: 'c19.links/vax_quiz',
 						}
 					}
+				} else {
+					delete regionObj.vaccination.content.links.workflow
 				}
 
 				if (locationData?.scheduling !== '') {
@@ -572,6 +594,8 @@ export const updateLocationData = mutatorAction(
 							text: 'c19.links/schedule_vax',
 						}
 					}
+				} else {
+					delete regionObj.vaccination.content.links.scheduling
 				}
 
 				if (locationData?.schedulingPhone !== '') {
