@@ -38,7 +38,7 @@
 					"question": "c19.eligibility.question/essential_worker.are"
 				},
 				{
-					"question": "c19.eligibility.question/age.65_up"
+					"question": "c19.eligibility.question/age.are"
 				},
 				{
 					"question": "c19.eligibility.question/essential_worker",
@@ -46,6 +46,9 @@
 				},
 				{
 					"question": "c19.eligibility.question/health.are_you_an"
+				},
+				{
+					"question": "c19.eligibility.question/health.are_you_age_35"
 				}
 			]
 		},
@@ -65,7 +68,7 @@
 					"question": "c19.eligibility.question/health"
 				},
 				{
-					"question": "c19.eligibility.question/age.65_up"
+					"question": "c19.eligibility.question/age.are"
 				}
 			]
 		}
