@@ -1308,28 +1308,25 @@ Individuals who are diagnosed with these medical conditions but are not currentl
 | scheduling | [Schedule a Vaccination](https://vaccinesignup.mass.gov/) |
 
 
-## Massachusetts Active Phase (phase_2_step_4)
+## Massachusetts Active Phase (phase_2_step_5)
 
-* Are you age 60+?
-* Are you age 16+ with at least 2 high-risk medical conditions?
-	* This includes individuals with two or more of the following conditions:
-- Cancer
-- Chronic kidney disease
-- Chronic lung diseases, including COPD (chronic obstructive pulmonary disease), asthma (moderate-to-severe), interstitial lung disease, cystic fibrosis, and pulmonary hypertension
-- Dementia or other neurological conditions
-- Diabetes (type 1 or type 2)
-- Down syndrome
-- Heart conditions (such as heart failure, coronary artery disease, cardiomyopathies or hypertension)
-- HIV infection
-- Immunocompromised state (weakened immune system)
-- Liver disease
-- Overweight and obesity
-- Pregnancy
-- Sickle cell disease or thalassemia
-- Smoking, current or former
-- Solid organ or blood stem cell transplant
-- Stroke or cerebrovascular disease, which affects blood flow to the brain
-- Substance use disorders (see [here](https://www.mass.gov/info-details/covid-19-vaccinations-for-individuals-with-certain-medical-conditions))
+* Are you age 55+?
+* Are you age 16+, and have a high-risk medical condition?
+	* Individuals 16 and older with one of these certain medical conditions will be eligible to receive the vaccine effective April 5, 2021.
+Phase 2 eligible conditions:
+Asthma (moderate-to-severe)
+Cancer
+Chronic kidney disease
+COPD (chronic obstructive pulmonary disease)
+Down Syndrome
+Heart conditions, such as heart failure, coronary artery disease, or cardiomyopathies
+Immunocompromised state (weakened immune system) from solid organ transplant*
+Obesity and severe obesity (body mass index [BMI] of 30 kg/m2 or higher)
+Calculate your BMI here: Adult BMI Calculator | CDC
+Pregnancy**
+Sickle cell disease
+Smoking
+Type 2 diabetes mellitus (see [here](https://www.mass.gov/info-details/covid-19-vaccinations-for-individuals-with-certain-medical-conditions))
 * Are you a resident or staff of public or private low income and affordable senior housing? (see [here](https://www.mass.gov/doc/massachusetts-senior-affordable-housing-covid-19-vaccine-information/))
 * Are you a healthcare worker?
 	* All healthcare workers are eligible to receive the vaccine, including home-based healthcare workers.  (see [here](https://www.mass.gov/info-details/covid-19-vaccinations-for-health-care-workers))
@@ -1361,8 +1358,7 @@ Individuals who are diagnosed with these medical conditions but are not currentl
 - Require ambulance or two-person assistance to leave the home
 - Are not able to leave the home for medical appointments under normal circumstances
 
-If you are eligible for an in-home vaccination, you can call the Homebound Vaccination Central Intake Line at (833) 983-0485. 
- (see [here](https://www.mass.gov/info-details/covid-19-homebound-vaccination-program))
+If you are eligible for an in-home vaccination, you can call the Homebound Vaccination Central Intake Line at (833) 983-0485.  (see [here](https://www.mass.gov/info-details/covid-19-homebound-vaccination-program))
 
 ## Massachusetts Regions
 
