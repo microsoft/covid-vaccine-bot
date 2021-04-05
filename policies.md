@@ -3248,15 +3248,9 @@ If you are unable to leave home to receive COVID-19 vaccination, or are the heal
 | providers | [View locations providing vaccines](https://doh.sd.gov/COVID/Vaccine/ProviderMap/default.aspx) |
 
 
-## South Dakota Active Phase (1e)
+## South Dakota Active Phase (2)
 
-* Are you a healthcare worker?
-* Are you a long term care resident or work in a long term care facility?
-* Are you classified as an essential worker?
-	* This includes EMS, public health workers, law enforcement, correctional officers, teachers and other school/college staff, funeral service workers, fire service personnel, and other public-facing workers in essential and critical infrastructure (see [here](https://doh.sd.gov/documents/COVID19/Vaccine/CISA_Guidance_on_Essential_Critical_Infrastructure_Workers.pdf))
-* Are you age 65+?
-* Are you age 16+, and have a high-risk medical condition?
-	* This includes those undergoing dialysis, post-transplant, and active cancer, as well as those with medical conditions that put them at a higher risk for severe COVID-19 infection, including  (see [here](https://doh.sd.gov/COVID/Vaccine/medicalconditions/))
+* Are you age 16+?
 
 # Tennessee
 
