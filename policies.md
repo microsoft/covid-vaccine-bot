@@ -2595,7 +2595,7 @@ Correctional facility, such as jail or prison
 | scheduling_phone | [866-698-6155](tel:866-698-6155) |
 
 
-## Oregon Active Phase (1b_group_6)
+## Oregon Active Phase (1b_group_7)
 
 * Are you a healthcare worker?
 	* This includes
@@ -2622,13 +2622,55 @@ Correctional facility, such as jail or prison
 - Mobile crisis care and related services
 - Individuals working in a correctional setting
 - Adults and youth in custody 16 years and older (see [here](https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le3527A.pdf))
-* Are you age 45+, and have a high-risk medical condition? (see [here](https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le3527A.pdf))
-* Are you classified as an essential worker?
+* Are you age 16+, and have a high-risk medical condition?
 	* This includes:
-- Migrant and seasonal farm workers
-- Seafood and agricultural workers
-- Food processing workers
-- Wildland firefighters (see [here](https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le3527A.pdf))
+- Cancer
+- Chronic kidney disease
+- Chronic lung diseases, including COPD (chronic obstructive pulmonary disease), asthma (moderate-to-severe), interstitial lung disease, cystic fibrosis, and pulmonary hypertension
+- Dementia or other neurological conditions
+- Diabetes (type 1 or type 2)
+- Down syndrome
+- Heart conditions (such as heart failure, coronary artery disease, cardiomyopathies or hypertension)
+- HIV infection
+- Immunocompromised state (weakened immune system)
+- Liver disease
+- Overweight and obesity
+- Pregnancy
+- Sickle cell disease or thalassemia
+- Smoking, current or former
+- Solid organ or blood stem cell transplant
+- Stroke or cerebrovascular disease, which affects blood flow to the brain
+- Substance use disorders (see [here](https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html))
+* Are you classified as a frontline worker or are you age 16+ and live in the same household as someone classified as a frontline worker?
+	* A frontline worker is someone who has a job that puts the individual at higher risk for contracting COVID-19 because of:
+» Regular close contact with others outside of their household (less than six feet); and
+» Routine (more than 15 minutes per person(s)) close contact with others outside of their household; and
+» They cannot perform their job duties from home or another setting that limits the close or routine contact with others outside of their household. 
+
+The list of frontline workers includes:
+• Vaccine manufacturing, and manufacturing of therapeutics, devices, supplies, or personal protective equipment
+• Other food and agriculture not included in Phase 1b, Group 6, including ranching, beverage manufacturing, nurseries, garden centers, farm supply stores, veterinary services, fishing and hunting, forestry
+• Grocery stores and retail (any) stores, including food markets, pharmacies, convenience stores, retail clothing and specialty stores
+• Community colleges, colleges, universities, vocational rehabilitation, trade and professional schools and related educational support services, administration of education programs
+• U.S. Postal Service
+• Public transit, including rural, interurban and urban bus and rail operators, school and employee bus transportation, special needs transportation
+• Manufacturing, including wood, paper, petroleum, coal, asphalt, roofing, chemical, plastics, metal, industrial machinery, computers, electronics, transportation, cabinet and countertops, medical equipment, repair and maintenance, industrial design services
+• Transportation and logistics for any industry included in Phase 1b, including air, rail, water, truck, taxi, limousine, charter bus, other transit and ground passenger transportation, driving schools, wholesalers, warehousing, storage and delivery services, packaging and labeling, motor vehicle and parts dealers, electronic shopping and parts dealers, transportation rental and leasing, and repair and maintenance, related services
+• Food service, including restaurants and bars, commissaries, community food service
+• Energy, including utilities, oil and gas extraction, mining, gas stations, fuel dealers, fuel delivery, environmental consulting, utilities
+• Water and wastewater, solid waste management and recycling, including utilities
+• Housing, including construction, contractors, real estate, community housing services, affordable housing programs, traveler accommodations, commercial accommodations, interior design, architectural, engineering and related services.
+• Information technology and communications, including software publishing, telecommunications, data processing, hosting and related services, internet publishing and broadcasting and web search portals, computer system design and related services, consumer electronics repair and maintenance, communication equipment repair and maintenance
+• News media, including broadcasting and publishing, newsstands
+• Child day care services not included in Phase 1b, groups 1-4, including day camps and afterschool activities.
+• Public health, including scientific and technical consulting, research and development, administration
+• Health care and related services not included in Phase 1a, including services for elderly and persons with disabilities, other individual and family services, funeral homes and funeral services, cemeteries and crematories
+• Public safety not included in Phase 1a, including, including civil engineering, waste management and remediation services, human services and social services, such as child protective services
+• Finance, including banks, credit intermediation, credit bureaus, securities, commodities contracts, financial investments and related activities, accounting, tax preparation, payroll services, company management,
+• Legal, including courts staff, judges, attorneys, court reporting, parole and probation offices
+• Government, including employees and contractors performing services or business for the public, and elected officials, libraries
+• State of Oregon legislative and executive branch as specified by the Department of Administrative Services (DAS)
+• Other: Investigation and security services, zoos and botanical gardens, nature parks and similar institutions, amusement and recreation industries, appliance repair and maintenance, personal and household goods repair and maintenance, pet care, drying cleaning and laundry services, religious organizations, private household services (e.g. in-home child care, housecleaning, in-home repair), administration of conservation programs  (see [here](https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le3527A.pdf))
 * Are you currently pregnant?
 	* Pregnant people 16 and older are eligible (see [here](https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le3527A.pdf))
 * Are you experiencing homelessness or living in a shelter?
@@ -2637,6 +2679,7 @@ Correctional facility, such as jail or prison
 - People currently displaced by wildfires (see [here](https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le3527A.pdf))
 * Are you a resident or staff of public or private low income and affordable senior housing?
 	* This includes people living in low-income senior housing, senior congregate and independent living (see [here](https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le3527A.pdf))
+* Do you live in a multigenerational household? (see [here](https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le3527A.pdf))
 
 ## Oregon Regions
 
