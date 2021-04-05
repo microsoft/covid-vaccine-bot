@@ -5,8 +5,8 @@
 import { orchestrator } from 'satcheljs'
 import { loginUser, reLoginUser } from '../actions/authActions'
 import { initializeGitData } from '../actions/repoActions'
-import { setIsDataRefreshing } from '../mutators/repoMutators'
 import { setUserAuthData, setUserNoAccess, setUserAccessExpired, setUserAccessToken } from '../mutators/authMutators'
+import { setIsDataRefreshing } from '../mutators/repoMutators'
 import { loginUserService } from '../services/loginUserService'
 import { repoServices } from '../services/repoServices'
 import { getAppStore } from '../store/store'
@@ -52,7 +52,7 @@ orchestrator(loginUser, async () => {
 orchestrator(reLoginUser, async () => {
 	try {
 		setIsDataRefreshing(true)
-		let resp = await loginUserService()
+		const resp = await loginUserService()
 		setUserAccessExpired(false)
 		
 		if (resp) {
