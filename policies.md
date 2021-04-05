@@ -2167,7 +2167,75 @@ Note: Individuals who are pregnant and those in an immunocompromised state (weak
 
 ## New Mexico Active Phase (current_phase)
 
-* Are you age 16+?
+* Are you a long term care resident or work in a long term care facility? (see [here](https://cv.nmhealth.org/wp-content/uploads/2021/02/2021.1.28-DOH-Phase-Guidance.pdf))
+* Are you a medical first responder? (see [here](https://cv.nmhealth.org/wp-content/uploads/2021/02/2021.1.28-DOH-Phase-Guidance.pdf))
+* Do you work or live in a congregate setting? (see [here](https://cv.nmhealth.org/wp-content/uploads/2021/02/2021.1.28-DOH-Phase-Guidance.pdf))
+* Are you a healthcare worker? (see [here](https://cv.nmhealth.org/wp-content/uploads/2021/02/2021.1.28-DOH-Phase-Guidance.pdf))
+* Are you age 75+? (see [here](https://cv.nmhealth.org/wp-content/uploads/2021/02/2021.1.28-DOH-Phase-Guidance.pdf))
+* Are you age 16+ and have a high-risk medical conditions?
+	* Conditions with increased risk of severe illness:
+- Cancer
+- Chronic kidney disease
+- COPD (chronic obstructive pulmonary disease), pulmonary fibrosis, cystic fibrosis
+- Down syndrome
+- Heart conditions (heart failure, hypertension, coronary artery disease or cardiomyopathies)
+- Immunocompromised state from solid organ transplant
+- Obesity (BMI ≥ 30)
+- Pregnancy
+- Sickle cell disease
+- Type 2 Diabetes
+
+Conditions that might involve increased risk:
+- Asthma
+- Cerebrovascular disease (previous stroke, TIA)
+- Hypertension or high blood pressure
+- Immunocompromised state from blood or bone marrow transplant, immune deficiencies, HIV, use of
+corticosteroids or use of other immune-weakening medicines
+- Neurologic conditions such as dementia
+- Liver disease
+- Overweight (BMI >25 but <30)
+- Pulmonary fibrosis (having damaged or scarred lung tissues)
+- Thalassemia
+- Type 1 diabetes (see [here](https://cv.nmhealth.org/wp-content/uploads/2021/02/2021.1.28-DOH-Phase-Guidance.pdf))
+* Are you classified as an essential worker?
+	* Other frontline essential workers not already covered include:
+- Family home caregivers, child care workers, (paid or unpaid) of persons who care for those with high risk conditions 
+- Early education and K-12 educators/staff and other personnel in educational institutions needed on-site 
+to support in-person learning
+-  Higher education staff
+-  Grocery store workers
+o Personnel at grocery stores, supermarkets, food banks, farmers' markets and vendors who sell 
+food, convenience stores, and other businesses that generate the majority of their revenue 
+from the sale of canned food, dry goods, fresh fruits and vegetables, fresh meats, fish, and 
+poultry, and any other household consumer products, as well as pet food, feed, and other 
+animal supplies
+- Food and agriculture workers, including farms, ranches and other food cultivation operations
+- Food processing or packaging operations 
+- Public transit workers 
+- Critical manufacturing workers, including:
+o Medical supplies and equipment, manufacturing agents, chemicals, fertilizer, 
+pharmaceuticals, sanitary products, household paper products, microelectronics/semi conductors, primary metals, electrical equipment, appliances and components, and 
+transportation equipment 
+- Adult and child protective services workers 
+- Police
+- Firefighters
+- Public health, environmental, occupational health and other workers who perform in-person 
+inspections to promote health and safety of licensed and unlicensed facilities and operations
+- Mortuary, cremation and cemetery service workers 
+- Court personnel; elected and appointed officials in government who are unable to work remotely 
+and/or telework
+- Personnel who provide in-person services necessary to maintain the safety and sanitation of residences 
+or essential businesses including security services, towing services, custodial services, plumbers, 
+electricians, and other skilled trades
+- Hardware and construction stores
+- Laundromats and dry cleaner services
+- Workers not covered in Phase 1A in research centers and laboratories who are unable to work 
+remotely and/or telework
+- Workers and volunteers who provide in-person services to indigent or needy populations 
+- Laboratories and defense and national security-related operations supporting the United States 
+government, or contractors to the United States government or any federal entity who are unable to 
+work remotely and/or telework
+- Emergency Operations Center (EOC) personnel; PPE and vaccine warehouse workers (see [here](https://cv.nmhealth.org/wp-content/uploads/2021/02/2021.1.28-DOH-Phase-Guidance.pdf))
 
 # New York
 
