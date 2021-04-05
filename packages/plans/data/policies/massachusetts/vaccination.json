@@ -23,7 +23,7 @@
 			"text": "c19.links/schedule_vax"
 		}
 	},
-	"activePhase": "phase_2_step_4",
+	"activePhase": "phase_2_step_5",
 	"phases": [
 		{
 			"id": "1",
@@ -224,6 +224,11 @@
 					"question": "c19.eligibility.question/essential_worker",
 					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.ma.phase_2_step_5",
 					"moreInfoUrl": "https://www.mass.gov/info-details/covid-19-vaccinations-for-certain-workers"
+				},
+				{
+					"question": "c19.eligibility.question/health.are_you_homebound",
+					"moreInfoText": "c19.eligibility.moreinfo/health.are_you_homebound.ma.phase_2_step_5",
+					"moreInfoUrl": "https://www.mass.gov/info-details/covid-19-homebound-vaccination-program"
 				}
 			]
 		},
