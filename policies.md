@@ -1750,6 +1750,10 @@ OTHER
 | eligibility_plan | [https://nvhealthresponse.nv.gov/wp-content/uploads/2021/01/NEVADA-COVID-19-VACCINE-PLAYBOOK-V3-BRIEF_011121.pdf](https://nvhealthresponse.nv.gov/wp-content/uploads/2021/01/NEVADA-COVID-19-VACCINE-PLAYBOOK-V3-BRIEF_011121.pdf) |
 
 
+### Nevada::Carson City Active Phase (age_16)
+
+* Are you age 16+?
+
 ## Nevada::Churchill
 
 ### Nevada::Churchill Links
@@ -1763,63 +1767,9 @@ OTHER
 | eligibility_plan | [https://nvhealthresponse.nv.gov/wp-content/uploads/2021/01/NEVADA-COVID-19-VACCINE-PLAYBOOK-V3-1.pdf](https://nvhealthresponse.nv.gov/wp-content/uploads/2021/01/NEVADA-COVID-19-VACCINE-PLAYBOOK-V3-1.pdf) |
 
 
-### Nevada::Churchill Active Phase (55)
+### Nevada::Churchill Active Phase (age_18_and_essential_workers)
 
-* Are you a healthcare worker?
-	* - General Medical and Surgical Hospital Staff
-- Psychiatric and Substance Abuse Hospital Staff
-- Emergency Medical Services Personnel
-- Frontline Public Health Workforce
-- Laboratory Workers
-- Pharmacists and Pharmacy Technicians
-- Outpatient and Home Health Providers
-* Are you experiencing homelessness?
-* Are you a person with a rare condition or disability that put you at higher risk?
-* Are you age 16+, and have a high-risk medical condition?
-	* The following conditions are included in the state's underlying conditions prioritization list:
-- Asthma (moderate to severe)
-- Cancer
-- Cerebrovascular Disease, Hypertension, or High Blood Pressure
-- Chronic Kidney Disease
-- COPD (chronic obstructive pulmonary disease), Cystic Fibrosis, Pulmonary Fibrosis, and other chronic lung diseases
-- Dementia
-- Down Syndrome 
-- Heart conditions, such as heart failure, coronary heart disease, or cardiomyopathies
-- Immunocompromised status
-- Liver Disease
-- Overweight/Obese
-- Pregnancy
-- Thalassemia (a blood disorder)
-- Type 1 & Type 2 Diabetes mellitus
-- Sickle Cell Disease
-- Smoking
-
-Individuals with any underlying medical condition (including those conditions that are NOT on the current list) should consult with their healthcare providers about personal risk factors and circumstances to determine whether extra precautions are warranted.  (see [here](https://www.immunizenevada.org/underlying-conditions))
-* Are you classified as an essential worker?
-	* Residents 16-64 years with certain underlying conditions as defined in the State of Nevada Playbook, Lane 2.1.3.  
-Agriculture and food processing as described in the State of Nevada Playbook, Lane 1.3.1
-Educators (pre-K & K-12) and Childcare — public/private/charter school settings
-Hospital and frontline public health workers
-Long-term care/assisted-living staff & residents
-Psychiatric and Substance Abuse Hospital Staff
-Emergency Medical Services Personnel
-Frontline Public Health Workforce and Volunteers
-Laboratory Workers
-Pharmacists and Pharmacy Technicians
-Outpatient and Home Health Providers
-Nevada Department of Corrections Staff
-Law Enforcement and Public Safety Personnel
-Deployed and mission-critical personnel who play an essential role in national security
-State and Local Emergency Operations Managers and Staff
-Essential Public Transportation
-Remaining Essential Public Health Workforce
-Mortuary Services
-Frontline Supply & Logistics:  as described in the State of Nevada Playbook, Lane 1.3.1-1.3.6
-Food Service & Hospitality
-Hygiene Products and Services
-Depository Credit Institution Workforce
-Infrastructure Shelter and Housing (Construction) (see [here](https://www.immunizenevada.org/county-specific-covid-19-vaccine-plan))
-* Are you age 55+?
+* Are you age 18+?
 
 ## Nevada::Clark
 
@@ -1834,6 +1784,10 @@ Infrastructure Shelter and Housing (Construction) (see [here](https://www.immuni
 | scheduling_phone | [1-800-401-0946](tel:1-800-401-0946) |
 
 
+### Nevada::Clark Active Phase (age_16)
+
+* Are you age 16+?
+
 ## Nevada::Douglas
 
 ### Nevada::Douglas Links
@@ -1843,6 +1797,10 @@ Infrastructure Shelter and Housing (Construction) (see [here](https://www.immuni
 | info | [Nevada Division of Public and Behavioral Health](https://gethealthycarsoncity.org/novel-coronavirus-2019/covid-19-vaccine/) |
 
 
+### Nevada::Douglas Active Phase (age_16)
+
+* Are you age 16+?
+
 ## Nevada::Elko
 
 ### Nevada::Elko Links
@@ -1851,6 +1809,10 @@ Infrastructure Shelter and Housing (Construction) (see [here](https://www.immuni
 | --- | --- |
 | info | [Nevada Division of Public and Behavioral Health](https://www.elkocountynv.net/boards/health_board/diseases_and_conditions.php#outer-2066sub-2719) |
 
+
+### Nevada::Elko Active Phase (age_16)
+
+* Are you age 16+?
 
 ## Nevada::Esmeralda
 
@@ -1908,6 +1870,8 @@ Infrastructure Shelter and Housing (Construction) (see [here](https://www.immuni
 | scheduling_phone | [775-962-8086](tel:775-962-8086) |
 
 
+### Nevada::Lincoln Active Phase (age_18)
+
 ## Nevada::Lyon
 
 ### Nevada::Lyon Links
@@ -1920,6 +1884,10 @@ Infrastructure Shelter and Housing (Construction) (see [here](https://www.immuni
 | scheduling | [Schedule a Vaccination](https://booking.appointy.com/en-US/immunizenevada/bookings/service?st=458106) |
 | scheduling_phone | [1-800-401-0946](tel:1-800-401-0946) |
 
+
+### Nevada::Lyon Active Phase (age_16)
+
+* Are you age 16+?
 
 ## Nevada::Mineral
 
@@ -1957,6 +1925,10 @@ Infrastructure Shelter and Housing (Construction) (see [here](https://www.immuni
 | scheduling_phone | [(775) 273-2041](tel:(775) 273-2041) |
 
 
+### Nevada::Pershing Active Phase (age_18)
+
+* Are you age 18+?
+
 ## Nevada::Storey
 
 ### Nevada::Storey Links
@@ -1970,6 +1942,10 @@ Infrastructure Shelter and Housing (Construction) (see [here](https://www.immuni
 | scheduling_phone | [1-800-401-0946](tel:1-800-401-0946) |
 
 
+### Nevada::Storey Active Phase (age_16)
+
+* Are you age 16+?
+
 ## Nevada::Washoe
 
 ### Nevada::Washoe Links
@@ -1982,6 +1958,10 @@ Infrastructure Shelter and Housing (Construction) (see [here](https://www.immuni
 | workflow | [Vaccine Eligibility Questionnaire](https://gis.washoecounty.us/agolHost?id=COVIDTierSurvey&lang=en) |
 | scheduling_phone | [775-328-2427](tel:775-328-2427) |
 
+
+### Nevada::Washoe Active Phase (age_16)
+
+* Are you age 16+?
 
 ## Nevada::White Pine
 
