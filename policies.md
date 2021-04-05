@@ -2092,7 +2092,7 @@ Infrastructure Shelter and Housing (Construction) (see [here](https://www.immuni
 - HUD 202 Supportive Housing for the Elderly Program residences
 - Institutional settings like psychiatric hospitals, correctional institutions, county jails, and juvenile detention facilities (for eligible minors, e.g. 16+ years of age may be eligible for Pfizer vaccine under the emergency use authorization)
 - Other vulnerable, congregate, long-term settings
-* Are you age 65+?
+* Are you age 55+?
 * Are you age 16+, and have a high-risk medical condition?
 	* Individuals aged 65 and older, and individuals ages 16-64 with medical conditions, as defined by the Centers for Disease Control and Prevention, that increase or might increase the risk of severe illness from the virus. These conditions include:
 
@@ -2117,30 +2117,40 @@ Sickle cell disease
 Smoking/nicotine addiction
 Thalassemia (type of blood disorder)
 Type 1 and Type 2 diabetes mellitus
-Note: Individuals who are pregnant and those in an immunocompromised state (weakened immune system)are also eligible but should follow CDC guidance and first discuss vaccination with their medical provider before receiving the vaccine.
+Note: Individuals who are pregnant and those in an immunocompromised state (weakened immune system)are also eligible but should follow CDC guidance and first discuss vaccination with their medical provider before receiving the vaccine. (see [here](https://covid19.nj.gov/faqs/nj-information/slowing-the-spread/who-is-eligible-for-vaccination-in-new-jersey-who-is-included-in-the-vaccination-phases#direct-link))
 * Are you classified as an essential worker?
 	* This includes:
 - Childcare workers in licensed and registered settings
-- Educators and staff, pre-K to 12
-- First responders including sworn law enforcement and fire professionals
-- Healthcare workers, paid and unpaid
-- High-risk individuals
-- Long-term care and high-risk congregate care facility residents and staff
-- Public safety workers
-- Transportation workers
-- Food production, agriculture, and food distribution workers (including migrant farm workers)
-- Eldercare and support personnel
-- Warehousing and logistics workers
-- Social service workers and support staff
-- Elections personnel
-- Hospitality workers
-- Medical supply chain employees
-- Postal and shipping service workers
 - Clergy
-- Workers in the Judicial system (see [here](https://covid19.nj.gov/faqs/nj-information/slowing-the-spread/who-is-eligible-for-vaccination-in-new-jersey-who-is-included-in-the-vaccination-phases#direct-link))
+- Communications, IT, and media workers
+- Educators and staff, including pre-K to 12 and higher education
+- Eldercare and support workers
+- Elections personnel
+- First responders
+- Healthcare workers
+- Hospitality workers
+- Individuals experiencing homelessness and those living in shelters
+- Judicial system workers
+- Laundry services workers
+- Librarians and library support staff
+- Long-term care and high-risk congregate care facility residents and staff
+- Medical supply chain employees
+- Members of tribal communities
+- Migrant farm workers
+- Postal and shipping service workers
+- Public safety workers
+- Real estate, building, and home services workers
+- Retail financial institution workers
+- Sanitation workers
+- Social service workers and support staff
+- Transportation workers
+- Utilities workers
+- Warehousing and logistics workers (see [here](https://covid19.nj.gov/faqs/nj-information/slowing-the-spread/who-is-eligible-for-vaccination-in-new-jersey-who-is-included-in-the-vaccination-phases#direct-link))
 * Are you experiencing homelessness or living in a shelter?
 	* Individuals experiencing homelessness and those living in shelters, including domestic violence shelters.
 * Are you a member of a tribal community?
+* Are you an adult with intellectual or developmental disabilities or are you a caregiver to an adult with intellectual or developmental disabilities?
+	* Developmental disabilities are a group of conditions due to an impairment in physical, learning, language, or behavior areas. (see [here](https://covid19.nj.gov/faqs/nj-information/slowing-the-spread/who-is-eligible-for-vaccination-in-new-jersey-who-is-included-in-the-vaccination-phases#direct-link))
 
 # New Mexico
 
@@ -2157,75 +2167,7 @@ Note: Individuals who are pregnant and those in an immunocompromised state (weak
 
 ## New Mexico Active Phase (current_phase)
 
-* Are you a long term care resident or work in a long term care facility? (see [here](https://cv.nmhealth.org/wp-content/uploads/2021/02/2021.1.28-DOH-Phase-Guidance.pdf))
-* Are you a medical first responder? (see [here](https://cv.nmhealth.org/wp-content/uploads/2021/02/2021.1.28-DOH-Phase-Guidance.pdf))
-* Do you work or live in a congregate setting? (see [here](https://cv.nmhealth.org/wp-content/uploads/2021/02/2021.1.28-DOH-Phase-Guidance.pdf))
-* Are you a healthcare worker? (see [here](https://cv.nmhealth.org/wp-content/uploads/2021/02/2021.1.28-DOH-Phase-Guidance.pdf))
-* Are you age 75+? (see [here](https://cv.nmhealth.org/wp-content/uploads/2021/02/2021.1.28-DOH-Phase-Guidance.pdf))
-* Are you age 16+ and have a high-risk medical conditions?
-	* Conditions with increased risk of severe illness:
-- Cancer
-- Chronic kidney disease
-- COPD (chronic obstructive pulmonary disease), pulmonary fibrosis, cystic fibrosis
-- Down syndrome
-- Heart conditions (heart failure, hypertension, coronary artery disease or cardiomyopathies)
-- Immunocompromised state from solid organ transplant
-- Obesity (BMI ≥ 30)
-- Pregnancy
-- Sickle cell disease
-- Type 2 Diabetes
-
-Conditions that might involve increased risk:
-- Asthma
-- Cerebrovascular disease (previous stroke, TIA)
-- Hypertension or high blood pressure
-- Immunocompromised state from blood or bone marrow transplant, immune deficiencies, HIV, use of
-corticosteroids or use of other immune-weakening medicines
-- Neurologic conditions such as dementia
-- Liver disease
-- Overweight (BMI >25 but <30)
-- Pulmonary fibrosis (having damaged or scarred lung tissues)
-- Thalassemia
-- Type 1 diabetes (see [here](https://cv.nmhealth.org/wp-content/uploads/2021/02/2021.1.28-DOH-Phase-Guidance.pdf))
-* Are you classified as an essential worker?
-	* Other frontline essential workers not already covered include:
-- Family home caregivers, child care workers, (paid or unpaid) of persons who care for those with high risk conditions 
-- Early education and K-12 educators/staff and other personnel in educational institutions needed on-site 
-to support in-person learning
--  Higher education staff
--  Grocery store workers
-o Personnel at grocery stores, supermarkets, food banks, farmers' markets and vendors who sell 
-food, convenience stores, and other businesses that generate the majority of their revenue 
-from the sale of canned food, dry goods, fresh fruits and vegetables, fresh meats, fish, and 
-poultry, and any other household consumer products, as well as pet food, feed, and other 
-animal supplies
-- Food and agriculture workers, including farms, ranches and other food cultivation operations
-- Food processing or packaging operations 
-- Public transit workers 
-- Critical manufacturing workers, including:
-o Medical supplies and equipment, manufacturing agents, chemicals, fertilizer, 
-pharmaceuticals, sanitary products, household paper products, microelectronics/semi conductors, primary metals, electrical equipment, appliances and components, and 
-transportation equipment 
-- Adult and child protective services workers 
-- Police
-- Firefighters
-- Public health, environmental, occupational health and other workers who perform in-person 
-inspections to promote health and safety of licensed and unlicensed facilities and operations
-- Mortuary, cremation and cemetery service workers 
-- Court personnel; elected and appointed officials in government who are unable to work remotely 
-and/or telework
-- Personnel who provide in-person services necessary to maintain the safety and sanitation of residences 
-or essential businesses including security services, towing services, custodial services, plumbers, 
-electricians, and other skilled trades
-- Hardware and construction stores
-- Laundromats and dry cleaner services
-- Workers not covered in Phase 1A in research centers and laboratories who are unable to work 
-remotely and/or telework
-- Workers and volunteers who provide in-person services to indigent or needy populations 
-- Laboratories and defense and national security-related operations supporting the United States 
-government, or contractors to the United States government or any federal entity who are unable to 
-work remotely and/or telework
-- Emergency Operations Center (EOC) personnel; PPE and vaccine warehouse workers (see [here](https://cv.nmhealth.org/wp-content/uploads/2021/02/2021.1.28-DOH-Phase-Guidance.pdf))
+* Are you age 16+?
 
 # New York
 
