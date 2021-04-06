@@ -240,7 +240,7 @@ Counties and tribes may also choose to vaccinate the following groups defined by
 | registration | [Santa Cruz County COVID-19 Vaccination Registration](https://survey123.arcgis.com/share/b0c6ce208fc94cf4a30b173810caab53) |
 
 
-### Arizona::Santa Cruz Active Phase (1c)
+### Arizona::Santa Cruz Active Phase (1b_16_and_older)
 
 ## Arizona::Yavapai
 
