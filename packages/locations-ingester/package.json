@@ -9,7 +9,8 @@
 		"start:ingest": "ts-node src/index"
 	},
 	"dependencies": {
-		"aws-sdk": "^2.880.0"
+		"aws-sdk": "^2.880.0",
+		"csv-parse": "^4.15.3"
 	},
 	"devDependencies": {
 		"@tsconfig/node14": "^1.0.0",

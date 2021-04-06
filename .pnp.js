@@ -4538,6 +4538,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@tsconfig/node14", "npm:1.0.0"],
             ["@types/node", "npm:14.14.37"],
             ["aws-sdk", "npm:2.880.0"],
+            ["csv-parse", "npm:4.15.3"],
             ["ts-node", "virtual:f37703c95ab859815e9119a2e3ca6bab49c50b4a26a9fbfa7e47c06cdbe7398b822c114e558e7b2c0a0b2a5991aedb7288f4319bcfc9b66feda7b2f84e7d106d#npm:9.1.1"],
             ["typescript", "patch:typescript@npm%3A4.2.3#builtin<compat/typescript>::version=4.2.3&hash=a45b0e"]
           ],
