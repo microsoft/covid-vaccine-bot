@@ -14,8 +14,8 @@ import {
 } from 'office-ui-fabric-react'
 import { useState, useEffect, useCallback, useRef } from 'react'
 import { createPR } from '../actions/repoActions'
+import { getChanges } from '../selectors/changesSelectors'
 import { getAppStore } from '../store/store'
-import { getObjDiffs } from '../utils/dataUtils'
 
 import './Review.scss'
 
@@ -24,13 +24,14 @@ export interface ReviewProp {
 }
 
 const setInitialFormData = (initData: any | undefined) => {
-	if (!initData) return {
-		prTitle: '',
-		prDetails: ''
-	}
+	if (!initData)
+		return {
+			prTitle: '',
+			prDetails: '',
+		}
 	return {
 		prTitle: initData.title ?? '',
-		prDetails: initData.body ?? ''
+		prDetails: initData.body ?? '',
 	}
 }
 
@@ -54,211 +55,22 @@ export default observer(function Review(props: ReviewProp) {
 		{ message: string } | undefined
 	>()
 	const state = getAppStore()
-	const [formData, setFormData] = useState<any>(setInitialFormData(state.loadedPRData))
+	const [formData, setFormData] = useState<any>(
+		setInitialFormData(state.loadedPRData)
+	)
 	const fieldChanges = useRef<any>(formData)
-	const changeSummary = useRef<any[]>([])
 
 	useEffect(() => {
-		const tempChangesList: any[] = []
-		const tempLocationUpdates: any[] = []
-		const tempGlobalUpdates: any[] = []
-
 		try {
-			if (
-				JSON.stringify(state.initGlobalFileData.customStrings).toLowerCase() !==
-				JSON.stringify(state.globalFileData.customStrings).toLowerCase()
-			) {
-				tempChangesList.push({
-					label: `Global strings information updated`,
-					value: state.globalFileData.customStrings,
-				})
-				tempGlobalUpdates.push(state.globalFileData.customStrings)
+			const { globalUpdates, locationUpdates, changesList } = getChanges()
 
-				changeSummary.current.push({
-					key: 'global',
-					type: 'customStrings',
-					value: getObjDiffs(
-						JSON.parse(JSON.stringify(state.initGlobalFileData.customStrings)),
-						JSON.parse(JSON.stringify(state.globalFileData.customStrings))
-					),
-				})
-			}
-
-			if (
-				JSON.stringify(state.initGlobalFileData.cdcStateNames).toLowerCase() !==
-				JSON.stringify(state.globalFileData.cdcStateNames).toLowerCase()
-			) {
-				tempChangesList.push({
-					label: `State names information updated`,
-					value: state.globalFileData.cdcStateNames,
-				})
-				tempGlobalUpdates.push(state.globalFileData.cdcStateNames)
-
-				changeSummary.current.push({
-					key: 'global',
-					type: 'cdcStateNames',
-					value: getObjDiffs(
-						JSON.parse(JSON.stringify(state.initGlobalFileData.cdcStateNames)),
-						JSON.parse(JSON.stringify(state.globalFileData.cdcStateNames))
-					),
-				})
-			}
-
-			if (
-				JSON.stringify(state.initGlobalFileData.cdcStateLinks).toLowerCase() !==
-				JSON.stringify(state.globalFileData.cdcStateLinks).toLowerCase()
-			) {
-				tempChangesList.push({
-					label: `State links information updated`,
-					value: state.globalFileData.cdcStateLinks,
-				})
-				tempGlobalUpdates.push(state.globalFileData.cdcStateLinks)
-
-				changeSummary.current.push({
-					key: 'global',
-					type: 'cdcStateLinks',
-					value: getObjDiffs(
-						JSON.parse(JSON.stringify(state.initGlobalFileData.cdcStateLinks)),
-						JSON.parse(JSON.stringify(state.globalFileData.cdcStateLinks))
-					),
-				})
-			}
-
-			Object.keys(state.repoFileData).forEach((location: any) => {
-				if (state.initRepoFileData) {
-					if (!state.initRepoFileData[location]) {
-						tempChangesList.push({
-							label: `New location added - ${location}`,
-							value: state.repoFileData[location],
-						})
-						tempLocationUpdates.push({
-							key: location,
-							data: state.repoFileData[location],
-						})
-					} else {
-						let addChanges = false
-						if (
-							JSON.stringify(
-								state.initRepoFileData[location].info
-							).toLowerCase() !==
-							JSON.stringify(state.repoFileData[location].info).toLowerCase()
-						) {
-							tempChangesList.push({
-								label: `Updated information for ${location}`,
-								value: state.repoFileData[location],
-							})
-
-							changeSummary.current.push({
-								key: location,
-								type: 'info',
-								value: getObjDiffs(
-									JSON.parse(
-										JSON.stringify(state.initRepoFileData[location].info)
-									),
-									JSON.parse(JSON.stringify(state.repoFileData[location].info))
-								),
-							})
-							addChanges = true
-						}
-						if (
-							state.repoFileData[location].regions &&
-							JSON.stringify(
-								state.initRepoFileData[location].regions
-							)?.toLowerCase() !==
-								JSON.stringify(
-									state.repoFileData[location].regions
-								).toLowerCase()
-						) {
-							tempChangesList.push({
-								label: `Updated regions for ${location}`,
-								value: state.repoFileData[location],
-							})
-
-							changeSummary.current.push({
-								key: location,
-								type: 'regions',
-								value: getObjDiffs(
-									JSON.parse(
-										JSON.stringify(
-											state.initRepoFileData[location].regions ?? {}
-										)
-									),
-									JSON.parse(
-										JSON.stringify(state.repoFileData[location].regions)
-									)
-								),
-							})
-							addChanges = true
-						}
-						if (
-							JSON.stringify(
-								state.initRepoFileData[location].vaccination
-							).toLowerCase() !==
-							JSON.stringify(
-								state.repoFileData[location].vaccination
-							).toLowerCase()
-						) {
-							tempChangesList.push({
-								label: `Updated phase information for ${location}`,
-								value: state.repoFileData[location],
-							})
-
-							changeSummary.current.push({
-								key: location,
-								type: 'vaccination',
-								value: getObjDiffs(
-									JSON.parse(
-										JSON.stringify(state.initRepoFileData[location].vaccination)
-									),
-									JSON.parse(
-										JSON.stringify(state.repoFileData[location].vaccination)
-									)
-								),
-							})
-							addChanges = true
-						}
-						if (
-							JSON.stringify(
-								state.initRepoFileData[location].strings
-							).toLowerCase() !==
-							JSON.stringify(state.repoFileData[location].strings).toLowerCase()
-						) {
-							tempChangesList.push({
-								label: `Updated strings information for ${location}`,
-								value: state.repoFileData[location],
-							})
-
-							changeSummary.current.push({
-								key: location,
-								type: 'strings',
-								value: getObjDiffs(
-									JSON.parse(
-										JSON.stringify(state.initRepoFileData[location].strings)
-									),
-									JSON.parse(
-										JSON.stringify(state.repoFileData[location].strings)
-									)
-								),
-							})
-							addChanges = true
-						}
-						if (addChanges) {
-							tempLocationUpdates.push({
-								key: location,
-								data: state.repoFileData[location],
-							})
-						}
-					}
-				}
-			})
-
-			setLocationUpdates(tempLocationUpdates)
-			setChangesList(tempChangesList)
-			setGlobalUpdates(tempGlobalUpdates)
+			setLocationUpdates(locationUpdates)
+			setChangesList(changesList)
+			setGlobalUpdates(globalUpdates)
 		} catch (err) {
 			setErrorMessage(err)
 		}
-	}, [state.initRepoFileData, state.repoFileData, state.initGlobalFileData, state.globalFileData, changeSummary])
+	}, [state.initRepoFileData, state.repoFileData, state.initGlobalFileData, state.globalFileData])
 
 	const handleTextChange = useCallback(
 		(ev) => {
@@ -273,6 +85,17 @@ export default observer(function Review(props: ReviewProp) {
 			setFormData({ ...formData, ...fieldChanges.current })
 		},
 		[formData, fieldChanges]
+	)
+
+	const handleSubmit = useCallback(
+		(resp) => {
+			if(resp?.error){
+				setShowLoading(false)
+			} else {
+				showDashboard()
+			}
+		},
+		[showDashboard],
 	)
 
 	return (
@@ -326,9 +149,8 @@ export default observer(function Review(props: ReviewProp) {
 										createPR([
 											globalUpdates,
 											locationUpdates,
-											showDashboard,
+											handleSubmit,
 											formData,
-											changeSummary.current,
 										])
 									}}
 								/>

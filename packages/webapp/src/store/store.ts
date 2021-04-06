@@ -27,6 +27,11 @@ export const initialStore = {
 	pendingChanges: false,
 	isDataRefreshing: false,
 	prChanges: undefined,
+	userWorkingBranch: undefined,
+	userWorkingBranches: [],
+	userAccessExpired: false,
+	isDataStale: false,
+	isSavingCommits: false
 }
 
 export const getAppState = (): AppState => {
@@ -51,5 +56,6 @@ autorun(() => {
 			userDisplayName: store.userDisplayName,
 			username: store.username,
 			email: store.email,
+			userAccessExpired: store.userAccessExpired,
 		})
 })

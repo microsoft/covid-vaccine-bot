@@ -21,7 +21,7 @@ import AddQualifierForm from './AddQualiferForm'
 import './QualifierPanel.scss'
 
 export default observer(function QualifierPanel() {
-	const { globalFileData, currentLanguage, isEditable } = getAppStore()
+	const { globalFileData, currentLanguage, isEditable, isDataRefreshing } = getAppStore()
 	const [qualifierGroup, setQualifierGroup] = useState<IGroup[]>([])
 	const [qualifierGroupItems, setQualifierGroupItems] = useState<any[]>([])
 	const [
@@ -145,36 +145,38 @@ export default observer(function QualifierPanel() {
 				<div className="panelHeaderTitle">Qualifiers</div>
 			</div>
 			<div className="panelBody">
-				<section>
-					{!!globalFileData?.customStrings?.content && (
-						<div className="searchRow">
-							<div></div>
-							<div
-								className="addQualiferHeaderButton"
-								onClick={() => onAddQualifierFormOpen(null)}
-							>
-								<FontIcon
-									iconName="CircleAdditionSolid"
-									className="addQualifierIcon"
-								/>
-								Add Qualifier
+				{!isDataRefreshing && (
+					<section>
+						{!!globalFileData?.customStrings?.content && (
+							<div className="searchRow">
+								<div></div>
+								<div
+									className="addQualiferHeaderButton"
+									onClick={() => onAddQualifierFormOpen(null)}
+								>
+									<FontIcon
+										iconName="CircleAdditionSolid"
+										className="addQualifierIcon"
+									/>
+									Add Qualifier
+								</div>
 							</div>
-						</div>
-					)}
-					<DetailsList
-						items={qualifierGroupItems}
-						groups={qualifierGroup}
-						columns={columns}
-						groupProps={{
-							showEmptyGroups: false,
-						}}
-						compact={true}
-						isHeaderVisible={false}
-						checkboxVisibility={2}
-						className="qualifierGroupItem"
-						onRenderItemColumn={onRenderItemColumn}
-					/>
-				</section>
+						)}
+						<DetailsList
+							items={qualifierGroupItems}
+							groups={qualifierGroup}
+							columns={columns}
+							groupProps={{
+								showEmptyGroups: false,
+							}}
+							compact={true}
+							isHeaderVisible={false}
+							checkboxVisibility={2}
+							className="qualifierGroupItem"
+							onRenderItemColumn={onRenderItemColumn}
+						/>
+					</section>
+				)}
 			</div>
 			<Modal
 				isOpen={isAddQualifierModalOpen}

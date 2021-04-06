@@ -11,12 +11,16 @@ import {
 	PivotItem,
 	ContextualMenu,
 	MessageBar,
+	MessageBarButton,
+	Modal,
+	Spinner
 } from '@fluentui/react'
 import { useBoolean } from '@uifabric/react-hooks'
 import { observer } from 'mobx-react-lite'
 import { useCallback, useState, useEffect, useRef } from 'react'
 import { Switch, Route, Redirect } from 'react-router-dom'
-import { loginUser } from '../actions/authActions'
+import { loginUser, reLoginUser } from '../actions/authActions'
+import { initializeGitData, saveContinue } from '../actions/repoActions'
 import { logoutUser } from '../mutators/authMutators'
 import { setCurrentLanguage } from '../mutators/repoMutators'
 import { getAppStore } from '../store/store'
@@ -29,6 +33,7 @@ import QualifierPanel from './QualifierPanel'
 import Review from './Review'
 import Translate from './Translate'
 import UnAuthorized from './UnAuthorized'
+import UserAccessExpirationForm from './UserAccessExpirationForm'
 
 import './App_reset_styles.scss'
 import './App.scss'
@@ -42,13 +47,24 @@ export default observer(function App() {
 		isPersonaMenuOpen,
 		{ setTrue: showPersonaMenu, setFalse: hidePersonaMenu },
 	] = useBoolean(false)
+	const [branchWasSaved, setBranchWasSaved] = useState(false)
+	const [
+		isAccessExpiration,
+		{ setTrue: showAccessExpirationModal, setFalse: hideAccessExpirationModal },
+	] = useBoolean(false)
 	const [selectedKey, setSelectedKey] = useState<string>('Dashboard')
 	const personaComponent = useRef(null)
 
 	useEffect(() => {
-		if (state.accessToken) loginUser()
-	}, [state.accessToken])
+		if (state.accessToken && !state.globalFileData) 
+			loginUser()
+	}, [state.accessToken, state.globalFileData])
 
+	useEffect(() => {
+		if(state.userAccessExpired)
+			showAccessExpirationModal()
+	}, [state.userAccessExpired, showAccessExpirationModal])
+	
 	useEffect(() => {
 		if (state.pendingChanges) {
 			window.onbeforeunload = function () {
@@ -75,17 +91,84 @@ export default observer(function App() {
 		setSelectedKey('Dashboard')
 	}, [setSelectedKey])
 
+	const onAccessExpirationFormSubmit = useCallback(() => {
+		if(state.globalFileData)
+			reLoginUser()
+		else 
+			loginUser()
+
+		hideAccessExpirationModal()
+	}, [state.globalFileData, hideAccessExpirationModal])
+
 	const renderRepoMessageBar = () => {
-		if (state.loadedPRData && state.prChanges) {
+		if (state.loadedPRData && state.prChanges && !state.isDataRefreshing) {
 			return (
 				<MessageBar
 					messageBarType={5}
 					isMultiline={true}
 					styles={{ root: { margin: '10px 5px' } }}
 				>
-					You are currently working on: <strong>PR: {state.loadedPRData.number} - {state.loadedPRData.title}</strong><br/>
-					Last updated by: {state.prChanges?.last_commit?.commit?.committer?.name}<br/>
-					Last updated on: {new Date(state.loadedPRData.updated_at).toLocaleString()}
+					You are currently working on:{' '}
+					<strong>
+						PR: {state.loadedPRData.number} - {state.loadedPRData.title}
+					</strong>
+					<br />
+					Last updated by:{' '}
+					{state.prChanges?.last_commit?.commit?.committer?.name}
+					<br />
+					Last updated on:{' '}
+					{new Date(state.loadedPRData.updated_at).toLocaleString()}
+				</MessageBar>
+			)
+		}
+
+		return null
+	}
+
+	const renderSaveContinueMessageBar = () => {
+		if (state.pendingChanges) {
+			return (
+				<MessageBar
+					styles={{ root: { margin: '10px 5px' } }}
+					actions={
+						!!state.loadedPRData ? undefined : (
+							<div>
+								{!state.isSavingCommits ? (
+								<>
+									<MessageBarButton onClick={initializeGitData}>
+										Discard
+									</MessageBarButton>
+									<MessageBarButton
+										onClick={() => {
+											setBranchWasSaved(true)
+											saveContinue()
+										}}
+									>
+										Save and Continue
+									</MessageBarButton>
+								</>
+								) : (
+									<Spinner label="Saving changes..." ariaLive="assertive" labelPosition="left" />
+								)}
+							</div>
+						)
+					}
+				>
+					You have pending changes, please click on the review tab to submit
+					these changes.
+				</MessageBar>
+			)
+		} else if (state.userWorkingBranch) {
+			return (
+				<MessageBar
+					messageBarType={4}
+					styles={{ root: { margin: '10px 5px' } }}
+				>
+					{branchWasSaved
+						? 'Your changes have been saved  to'
+						: 'You are now working on branch '}{' '}
+					{state.userWorkingBranch}, <br />
+					please click on the review tab to submit these changes.
 				</MessageBar>
 			)
 		}
@@ -183,26 +266,12 @@ export default observer(function App() {
 													selectedKey={selectedKey}
 												>
 													<PivotItem headerText="Dashboard" itemKey="Dashboard">
-														{state.pendingChanges && (
-															<MessageBar
-																styles={{ root: { margin: '10px 5px' } }}
-															>
-																You have pending changes, please click on the
-																review tab to submit these changes.
-															</MessageBar>
-														)}
+														{renderSaveContinueMessageBar()}
 														{renderRepoMessageBar()}
 														<Dashboard />
 													</PivotItem>
 													<PivotItem headerText="Locations" itemKey="Locations">
-														{state.pendingChanges && (
-															<MessageBar
-																styles={{ root: { margin: '10px 5px' } }}
-															>
-																You have pending changes, please click on the
-																review tab to submit these changes.
-															</MessageBar>
-														)}
+														{renderSaveContinueMessageBar()}
 														{renderRepoMessageBar()}
 														<Locations />
 													</PivotItem>
@@ -211,19 +280,13 @@ export default observer(function App() {
 															headerText="Translate"
 															itemKey="Translate"
 														>
-															{state.pendingChanges && (
-																<MessageBar
-																	styles={{ root: { margin: '10px 5px' } }}
-																>
-																	You have pending changes, please click on the
-																	review tab to submit these changes.
-																</MessageBar>
-															)}
+															{renderSaveContinueMessageBar()}
 															{renderRepoMessageBar()}
 															<Translate />
 														</PivotItem>
 													)}
-													{state.pendingChanges && (
+													{(state.pendingChanges ||
+														state.userWorkingBranch) && (
 														<PivotItem headerText="Review" itemKey="Review">
 															<Review showDashboard={showDashboard} />
 														</PivotItem>
@@ -241,6 +304,16 @@ export default observer(function App() {
 									)}
 								</div>
 							</div>
+							<Modal
+								isOpen={isAccessExpiration}
+								isModeless={false}
+								isDarkOverlay={true}
+								isBlocking={false}
+							>
+								<UserAccessExpirationForm
+									onSubmit={onAccessExpirationFormSubmit}
+								/>
+							</Modal>
 						</Route>
 						<Route path="*">
 							<div>404 page not found.</div>

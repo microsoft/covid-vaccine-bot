@@ -45,7 +45,7 @@ const filterDropdownStyles = {
 }
 
 export default observer(function Translate() {
-	const { globalFileData, repoFileData, currentLanguage } = getAppStore()
+	const { globalFileData, repoFileData, currentLanguage, isDataRefreshing } = getAppStore()
 	const languageOptions = getLanguageOptions()
 	const translationFilter = [
 		{
@@ -594,7 +594,7 @@ export default observer(function Translate() {
 							<p>Unexpected {errorMessage?.toString()}</p>
 						</MessageBar>
 					)}
-					{!showLoading ? (
+					{!(showLoading || isDataRefreshing) ? (
 						<section>
 							<div className="filterGroup">
 								<div>
@@ -800,7 +800,7 @@ export default observer(function Translate() {
 						</section>
 					) : (
 						<section className="loadingContainer">
-							<ProgressIndicator description="Updating translations..." />
+							<ProgressIndicator description={isDataRefreshing ? "Loading content..." : "Updating translations..."} />
 						</section>
 					)}
 				</div>

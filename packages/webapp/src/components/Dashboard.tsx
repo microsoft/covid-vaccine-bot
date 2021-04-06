@@ -18,7 +18,7 @@
 import { useBoolean } from '@uifabric/react-hooks'
 import { observer } from 'mobx-react-lite'
 import { useState, useEffect, useCallback } from 'react'
-import { initializeGitData, loadPR } from '../actions/repoActions'
+import { initializeGitData, loadPR, loadBranch } from '../actions/repoActions'
 import { getAppStore } from '../store/store'
 
 import './Dashboard.scss'
@@ -67,21 +67,33 @@ export default observer(function Dashboard() {
 
 
 	const onPRActionRender =  (item?: any, index?: number, column?: IColumn) =>  {
-
+		const disabled = state.loadedPRData?.number === item?.action.number
 		return (
 			<div className="actionsColumn">
 				<a className="tableActionLink" href={item?.action?.html_url} target="_blank" rel="noreferrer">
 					<FontIcon
 						iconName="CircleAdditionSolid"
-					/> 
+					/>
 					Approve
 				</a>
-				<div className="loadPRButton" onClick={() => loadPR(item.action.number)}>
-					<FontIcon iconName="DrillDownSolid"/>Load Data
+				<div className={`loadPRButton ${disabled ? 'disabled': ''}`} onClick={() => loadPR(item.action.number)}>
+					<FontIcon iconName="DrillDownSolid"/>Load PR
 				</div>
 			</div>
 			)
 
+	}
+
+	const onBranchActionRender =  (item?: any, index?: number, column?: IColumn) =>  {
+		const disabled = state.userWorkingBranch === item?.name
+
+		return (
+			<div className="actionsColumn">
+				<div className={`loadPRButton ${disabled ? 'disabled': ''}`} onClick={() => loadBranch(item)}>
+					<FontIcon iconName="DrillDownSolid"/>Load Branch
+				</div>
+			</div>
+			)
 	};
 
 	const toggleCallout = useCallback((id: number) => {
@@ -130,6 +142,14 @@ export default observer(function Dashboard() {
 			</>
 		)
 	};
+
+	const onBranchCreatedDateRender = (item: any) => {
+		return(
+			<div>
+				{new Date(parseInt(item.name.split('-policy-')[1])).toLocaleString()}
+			</div>
+		)
+	}
 
 	const prColumns = [
 		{
@@ -203,7 +223,33 @@ export default observer(function Dashboard() {
 			isResizable: true,
 			onRender: onIssueActionRender
 		},
-
+	];
+	
+	const userWorkingBranchColumns = [
+		{
+			key: 'branchName',
+			name: 'Branch Name',
+			fieldName: 'name',
+			minWidth: 200,
+			isResizable: true,
+		},
+		{
+			key: 'createdCol',
+			name: 'Created On',
+			fieldName: 'createdOn',
+			minWidth: 200,
+			isResizable: true,
+			onRender: onBranchCreatedDateRender
+		},
+		{
+			key: 'actionCol',
+			name: '',
+			ariaLabel:'Actions Column',
+			fieldName: 'action',
+			minWidth: 200,
+			isResizable: true,
+			onRender: onBranchActionRender
+		},
 	];
 
 	const refreshData = useCallback(() => {
@@ -243,6 +289,22 @@ export default observer(function Dashboard() {
 								/>
 								Refresh Data
 							</div>
+						</div>
+						<div className="sectionHeader">Working Branches</div>
+						<div className="sectionContent">
+							<DetailsList
+							items={state.userWorkingBranches}
+							columns={userWorkingBranchColumns}
+							setKey="set"
+							layoutMode={DetailsListLayoutMode.justified}
+							ariaLabelForSelectionColumn="Toggle selection"
+							ariaLabelForSelectAllCheckbox="Toggle selection for all items"
+							checkButtonAriaLabel="Row checkbox"
+							checkboxVisibility={2}
+						/>
+						{ !state.userWorkingBranches.length && (
+							<div style={{textAlign:"center"}}>No working branches at this time.</div>
+						) }
 						</div>
 						<div className="sectionHeader">Pending PRs</div>
 						<div className="sectionContent">

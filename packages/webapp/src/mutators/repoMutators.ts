@@ -7,11 +7,41 @@ import { getAppStore } from '../store/store'
 import { createLocationDataObj } from '../utils/dataUtils'
 import { formatId } from '../utils/textUtils'
 
-export const initStoreData = mutatorAction(
-	'initStoreData',
+export const setIsDataRefreshing = mutatorAction(
+	'setIsDataRefreshing',
 	(isDataRefreshing: boolean) => {
 		const store = getAppStore()
 		store.isDataRefreshing = isDataRefreshing
+	}
+)
+
+export const setIsDataStale = mutatorAction(
+	'isDataStale',
+	(isDataStale: boolean) => {
+		const store = getAppStore()
+		store.isDataStale = isDataStale
+	}
+)
+
+export const setPendingChanges = mutatorAction(
+	'setPendingChanges',
+	(pendingChanges: boolean) => {
+		const store = getAppStore()
+		store.pendingChanges = pendingChanges
+	}
+)
+
+export const setSavingCommitsFlag = mutatorAction('setSavingCommitsFlag', (data: boolean) => {
+	const store = getAppStore()
+	store.isSavingCommits = data
+})
+
+export const setGlobalAndRepoChanges = mutatorAction(
+	'setGlobalAndRepoChanges', 
+	() => {
+		const store = getAppStore()
+		store.initGlobalFileData = store.globalFileData
+		store.initRepoFileData = store.repoFileData
 	}
 )
 
@@ -27,13 +57,22 @@ export const setBranchList = mutatorAction(
 	}
 )
 
+export const setUserWorkingBranches = mutatorAction(
+	'setUserWorkingBranches',
+	(userWorkingBranches: any[] | undefined) => {
+		if (userWorkingBranches) {
+			const store = getAppStore()
+			store.userWorkingBranches = userWorkingBranches
+		}
+	}
+)
+
 export const setIssuesList = mutatorAction(
 	'setIssuesList',
 	(data: any[] | undefined, callback?: any | undefined) => {
 		if (data) {
 			const store = getAppStore()
-			store.issues = data[0]
-			store.prChanges = data[1]
+			store.issues = data
 
 			if (callback) {
 				callback()
@@ -49,14 +88,18 @@ export const setLoadedPRData = mutatorAction(
 		if (prData) {
 			store.loadedPRData = prData.data
 			store.prChanges = {
-				changes: prData.changes,
-				last_commit: prData.commits.pop(),
+				last_commit: prData?.commits?.pop?.(),
 			}
 		}
 	}
 )
 
-export const handleCreatePR = mutatorAction('handleCreatePR', () => {
+export const setUserWorkingBranch = mutatorAction('setUserWorkingBranch', (data: any | undefined) => {
+	const store = getAppStore()
+	store.userWorkingBranch = data
+})
+
+export const clearLoadedPRData = mutatorAction('clearLoadedPRData', () => {
 	const store = getAppStore()
 	store.pendingChanges = false
 	store.prChanges = undefined
@@ -65,6 +108,21 @@ export const handleCreatePR = mutatorAction('handleCreatePR', () => {
 
 export const setRepoFileData = mutatorAction(
 	'setRepoFileData',
+	(data: any[] | undefined) => {
+		if (data) {
+			const store = getAppStore()
+			store.repoFileData = data[0]
+			store.globalFileData = {
+				customStrings: data[1],
+				cdcStateNames: data[2],
+				cdcStateLinks: data[3],
+			}
+		}
+	}
+)
+
+export const setInitRepoFileData = mutatorAction(
+	'setInitRepoFileData',
 	(data: any[] | undefined) => {
 		if (data) {
 			const store = getAppStore()
@@ -251,6 +309,8 @@ export const updateLocationData = mutatorAction(
 							url: locationData.eligibility,
 						}
 					}
+				} else {
+					delete location.vaccination.content.links.eligibility
 				}
 
 				if (locationData?.eligibilityPlan !== '') {
@@ -268,6 +328,8 @@ export const updateLocationData = mutatorAction(
 							url: locationData.eligibilityPlan,
 						}
 					}
+				} else {
+					delete location.vaccination.content.links.eligibility_plan
 				}
 
 				if (locationData?.info !== '') {
@@ -287,6 +349,8 @@ export const updateLocationData = mutatorAction(
 							text: `cdc/${prevItem.key}/state_link`,
 						}
 					}
+				} else {
+					delete location.vaccination.content.links.info
 				}
 
 				if (locationData?.providers !== '') {
@@ -306,6 +370,8 @@ export const updateLocationData = mutatorAction(
 							text: 'c19.links/vax_providers',
 						}
 					}
+				} else {
+					delete location.vaccination.content.links.providers
 				}
 
 				if (locationData?.workflow !== '') {
@@ -325,6 +391,8 @@ export const updateLocationData = mutatorAction(
 							text: 'c19.links/vax_quiz',
 						}
 					}
+				} else {
+					delete location.vaccination.content.links.workflow
 				}
 
 				if (locationData?.scheduling !== '') {
@@ -344,6 +412,8 @@ export const updateLocationData = mutatorAction(
 							text: 'c19.links/schedule_vax',
 						}
 					}
+				} else {
+					delete location.vaccination.content.links.scheduling
 				}
 
 				if (locationData?.schedulingPhone !== '') {
@@ -426,6 +496,8 @@ export const updateLocationData = mutatorAction(
 							url: locationData.eligibility,
 						}
 					}
+				} else {
+					delete regionObj.vaccination.content.links.eligibility
 				}
 
 				if (locationData?.eligibilityPlan !== '') {
@@ -443,6 +515,8 @@ export const updateLocationData = mutatorAction(
 							url: locationData.eligibilityPlan,
 						}
 					}
+				} else {
+					delete regionObj.vaccination.content.links.eligibility_plan
 				}
 
 				if (locationData?.info !== '') {
@@ -462,6 +536,8 @@ export const updateLocationData = mutatorAction(
 							text: `cdc/${location.info.content.id}/state_link`,
 						}
 					}
+				} else {
+					delete regionObj.vaccination.content.links.info
 				}
 
 				if (locationData?.providers !== '') {
@@ -481,6 +557,8 @@ export const updateLocationData = mutatorAction(
 							text: 'c19.links/vax_providers',
 						}
 					}
+				} else {
+					delete regionObj.vaccination.content.links.providers
 				}
 
 				if (locationData?.workflow !== '') {
@@ -500,6 +578,8 @@ export const updateLocationData = mutatorAction(
 							text: 'c19.links/vax_quiz',
 						}
 					}
+				} else {
+					delete regionObj.vaccination.content.links.workflow
 				}
 
 				if (locationData?.scheduling !== '') {
@@ -519,6 +599,8 @@ export const updateLocationData = mutatorAction(
 							text: 'c19.links/schedule_vax',
 						}
 					}
+				} else {
+					delete regionObj.vaccination.content.links.scheduling
 				}
 
 				if (locationData?.schedulingPhone !== '') {

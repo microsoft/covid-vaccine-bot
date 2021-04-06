@@ -4574,6 +4574,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/react", "virtual:e6c1b5daae5e8ccf3df7b139ce564cb8182744026a2afe18b1f1344b3a16751fcb5766cc6d853f830e1b4e8af99f8651156df30eb774535cab3b155e18c5e599#npm:11.2.5"],
             ["@testing-library/user-event", "virtual:e6c1b5daae5e8ccf3df7b139ce564cb8182744026a2afe18b1f1344b3a16751fcb5766cc6d853f830e1b4e8af99f8651156df30eb774535cab3b155e18c5e599#npm:12.8.3"],
             ["@types/jest", "npm:26.0.21"],
+            ["@types/lodash", "npm:4.14.168"],
             ["@types/node", "npm:14.14.35"],
             ["@types/react", "npm:17.0.3"],
             ["@types/react-dom", "npm:17.0.2"],
@@ -4582,6 +4583,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["csv-parse", "npm:4.15.3"],
             ["eslint-config-react-app", "virtual:e6c1b5daae5e8ccf3df7b139ce564cb8182744026a2afe18b1f1344b3a16751fcb5766cc6d853f830e1b4e8af99f8651156df30eb774535cab3b155e18c5e599#npm:6.0.0"],
             ["firebase", "npm:8.3.0"],
+            ["lodash", "npm:4.17.21"],
             ["mobx", "npm:5.15.7"],
             ["mobx-react-lite", "virtual:e6c1b5daae5e8ccf3df7b139ce564cb8182744026a2afe18b1f1344b3a16751fcb5766cc6d853f830e1b4e8af99f8651156df30eb774535cab3b155e18c5e599#npm:2.2.2"],
             ["npm-run-all", "npm:4.1.5"],
@@ -9130,6 +9132,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@types/keyv", "npm:3.1.1"],
             ["@types/node", "npm:14.14.35"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@types/lodash", [
+        ["npm:4.14.168", {
+          "packageLocation": "./.yarn/cache/@types-lodash-npm-4.14.168-2d65abe211-9a4e25f89f.zip/node_modules/@types/lodash/",
+          "packageDependencies": [
+            ["@types/lodash", "npm:4.14.168"]
           ],
           "linkType": "HARD",
         }]

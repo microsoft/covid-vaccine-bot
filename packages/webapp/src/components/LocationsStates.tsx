@@ -164,7 +164,7 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 				</div>
 			</div>
 			<div className="bodyContent">
-				{state.repoFileData ? (
+				{!state.isDataRefreshing ? (
 					<section>
 						<div className="searchRow">
 							<SearchBox
