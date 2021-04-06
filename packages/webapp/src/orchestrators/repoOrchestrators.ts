@@ -42,6 +42,7 @@ const handleError = (error: any, callback?: () => void) => {
 		break
 	}
 
+	setSavingCommitsFlag(false)
 	callback?.()
 }
 
@@ -88,20 +89,38 @@ orchestrator(initializeGitData, async () => {
 	let resp = await repoServices('getBranches')
 	if(resp.ok === false) {
 		handleError(resp)
-	} else {
-		setBranchList(resp)
-
-		const userWorkingBranches = await repoServices('getUserWorkingBranches', [
-			resp,
-		])
-		setUserWorkingBranches(userWorkingBranches)
-
-		resp = await repoServices('getRepoFileData')
-		setInitRepoFileData(resp)
-
-		resp = await repoServices('getIssues')
-		setIssuesList(resp)
+		return
 	}
+	
+
+	setBranchList(resp)
+
+	const userWorkingBranches = await repoServices('getUserWorkingBranches', [
+		resp,
+	])
+	
+	if(resp.ok === false) {
+		handleError(resp)
+		return
+	}
+	
+	setUserWorkingBranches(userWorkingBranches)
+
+	resp = await repoServices('getRepoFileData')
+	if(resp.ok === false) {
+		handleError(resp)
+		return
+	}
+	
+	setInitRepoFileData(resp)
+
+	resp = await repoServices('getIssues')
+	if(resp.ok === false) {
+		handleError(resp)
+		return
+	}
+	
+	setIssuesList(resp)
 
 	setIsDataRefreshing(false)
 })
@@ -152,18 +171,19 @@ orchestrator(saveContinue, async () => {
 	const store = getAppStore()
 	const changes = getChanges()
 	let branch = store.userWorkingBranch
+	let resp;
+
 	if (!branch) {
-		let resp = await repoServices('createWorkingBranch')
+		resp = await repoServices('createWorkingBranch')
 		if(resp.ok === false) {
 			handleError(resp)
 			return
 		}
-		
+
 		branch = resp.ref.split('refs/heads/').join('')
 		setUserWorkingBranch(branch)
 	}
 
-	let resp;
 	resp = await repoServices('commitChanges', {
 		...changes,
 		branchName: `refs/heads/${branch}`,
@@ -182,5 +202,4 @@ orchestrator(saveContinue, async () => {
 	setRepoFileData(resp)
 	setPendingChanges(false)
 	setSavingCommitsFlag(false)
-
 })
