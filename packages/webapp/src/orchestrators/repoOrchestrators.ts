@@ -31,7 +31,6 @@ import { repoServices } from '../services/repoServices'
 import { getAppStore } from '../store/store'
 
 const handleError = (error: any, callback?: () => void) => {
-	debugger
 	switch(error.status) {
 		case 401: 
 			setUserAccessExpired(true)
@@ -118,7 +117,7 @@ orchestrator(loadBranch, async (message) => {
 	if(resp.ok === false) {
 		handleError(resp.status === 404 ? {...resp, status: 'DATA_IS_STALE'} : resp)
 	}
-	if (resp) {
+	else {
 		setUserWorkingBranch(branch.name)
 		setRepoFileData(resp)
 		clearLoadedPRData()
@@ -132,17 +131,18 @@ orchestrator(loadPR, async (message) => {
 	setIsDataRefreshing(true)
 	if (prNumber) {
 		const prResp = await repoServices('getPullRequests', prNumber)
-		if(prResp.status === 401) {
-			setUserAccessExpired(true)
-			setUserAccessToken()
-		} else {
-			setLoadedPRData(prResp)
+		if(prResp.ok === false) {
+			handleError(prResp)
+			return
+		} 
+	
+		setLoadedPRData(prResp)
 
-			const resp = await repoServices('getRepoFileData', prResp.data.head.ref)
-			setRepoFileData(resp)
+		const resp = await repoServices('getRepoFileData', prResp.data.head.ref)
+		if(resp.ok === false)
+		setRepoFileData(resp)
 
-			setUserWorkingBranch(undefined)
-		}
+		setUserWorkingBranch(undefined)
 	}
 	setIsDataRefreshing(false)
 })
@@ -153,22 +153,34 @@ orchestrator(saveContinue, async () => {
 	const changes = getChanges()
 	let branch = store.userWorkingBranch
 	if (!branch) {
-		const resp = await repoServices('createWorkingBranch')
-		if(resp.status === 401) {
-			setUserAccessExpired(true)
-			setUserAccessToken()
+		let resp = await repoServices('createWorkingBranch')
+		if(resp.ok === false) {
+			handleError(resp)
 			return
-		} else {
-			branch = resp.ref.split('refs/heads/').join('')
-			setUserWorkingBranch(branch)
 		}
+		
+		branch = resp.ref.split('refs/heads/').join('')
+		setUserWorkingBranch(branch)
 	}
-	const commitResp = await repoServices('commitChanges', {
+
+	let resp;
+	resp = await repoServices('commitChanges', {
 		...changes,
 		branchName: `refs/heads/${branch}`,
 	})
-	const resp = await repoServices('getRepoFileData', commitResp)
+	if(resp.ok === false) {
+		handleError(resp)
+		return
+	}
+
+	resp = await repoServices('getRepoFileData', resp)
+	if(resp.ok === false) {
+		handleError(resp)
+		return
+	}
+
 	setRepoFileData(resp)
 	setPendingChanges(false)
 	setSavingCommitsFlag(false)
+
 })
