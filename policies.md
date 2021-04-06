@@ -2105,42 +2105,12 @@ Note: Individuals who are pregnant and those in an immunocompromised state (weak
 
 ## New York Active Phase (current)
 
-* Are you age 30+?
-* Are you a healthcare worker?
-* Are you an educator or child care provider?
-* Are you a long term care resident or work in a long term care facility?
-* Do you work or live in a congregate setting?
-* Are you classified as an essential worker?
-	* This includes:
-- Public Transit Workers
-- Grocery Store Workers
-- Hotel Workers
-- First Responders & Corrections Workers
-- Restaurant Workers & Restaurant Delivery Workers
-- For-Hire Vehicle Drivers
-- In-Person College Faculty & Essential Staff
-- Public-Facing Government/Public Employees
-- Public-Facing Not-For-Profit Workers
-- Essential In-Person Building Service Workers (see [here](https://covid19vaccine.health.ny.gov/phased-distribution-vaccine#phase-1a---phase-1b))
-* Are you age 16+, and have a high-risk medical condition?
-	* New Yorkers age 16 and older with the following conditions qualify for the vaccine:
+* Are you age 16+?
+	* Note: People who are 16 and 17 years old are only eligible for the Pfizer vaccine.
 
-Cancer (current or in remission, including 9/11-related cancers)
-Chronic kidney disease
-Pulmonary Disease, including but not limited to, COPD (chronic obstructive pulmonary disease), asthma (moderate-to-severe), pulmonary fibrosis, cystic fibrosis, and 9/11 related pulmonary diseases
-Intellectual and Developmental Disabilities including Down Syndrome
-Heart conditions, including but not limited to heart failure, coronary artery disease, cardiomyopathies, or hypertension (high blood pressure)
-Immunocompromised state (weakened immune system) including but not limited to solid organ transplant or from blood or bone marrow transplant, immune deficiencies, HIV, use of corticosteroids, use of other immune weakening medicines, or other causes
-Severe Obesity (BMI 40 kg/m2), Obesity (body mass index [BMI] of 30 kg/m2 or higher but < 40 kg/m2)
-Pregnancy
-Sickle cell disease or Thalassemia
-Type 1 or 2 diabetes mellitus 
-Cerebrovascular disease (affects blood vessels and blood supply to the brain)
-Neurologic conditions including but not limited to Alzheimer's Disease or dementia
-Liver disease
-The list is subject to change as additional scientific evidence is published and as New York State obtains and analyzes additional state-specific data.
+The COVID-19 vaccine is currently available to all New York State residents 16 and older. People who live outside of the state but work in New York are also eligible to get vaccinated if they belong to one of the groups at the link. These groups that are eligible based on employment include both paid and unpaid workers.
 
- (see [here](https://covid19vaccine.health.ny.gov/phased-distribution-vaccine#phase-1a---phase-1b))
+ (see [here](https://www1.nyc.gov/site/doh/covid/covid-19-vaccine-eligibility.page))
 
 # North Carolina
 
