@@ -23,7 +23,7 @@
 			"id": "1a",
 			"qualifications": [
 				{
-					"question": "c19.eligibility.question/healthcare_worker"
+					"question": "c19.eligibility.question/healthcare_worker.are_you"
 				},
 				{
 					"question": "c19.eligibility.question/long_term_care_resident"
