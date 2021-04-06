@@ -143,6 +143,14 @@ export default observer(function Dashboard() {
 		)
 	};
 
+	const onBranchCreatedDateRender = (item: any) => {
+		return(
+			<div>
+				{new Date(parseInt(item.name.split('-policy-')[1])).toLocaleString()}
+			</div>
+		)
+	}
+
 	const prColumns = [
 		{
 			key: 'titleCol',
@@ -231,11 +239,7 @@ export default observer(function Dashboard() {
 			fieldName: 'createdOn',
 			minWidth: 200,
 			isResizable: true,
-			onRender: (item: any) => (
-				<div>
-					{new Date(parseInt(item.name.split('-policy-')[1])).toLocaleString()}
-				</div>
-			)
+			onRender: onBranchCreatedDateRender
 		},
 		{
 			key: 'actionCol',

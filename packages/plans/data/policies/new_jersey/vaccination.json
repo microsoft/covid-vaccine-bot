@@ -28,11 +28,12 @@
 					"moreInfoText": "c19.eligibility.moreinfo/long_term_care_resident.are.nj.current"
 				},
 				{
-					"question": "c19.eligibility.question/age.65_up"
+					"question": "c19.eligibility.question/age.55_up"
 				},
 				{
 					"question": "c19.eligibility.question/health",
-					"moreInfoText": "c19.eligibility.moreinfo/health.nj.current"
+					"moreInfoText": "c19.eligibility.moreinfo/health.nj.current",
+					"moreInfoUrl": "https://covid19.nj.gov/faqs/nj-information/slowing-the-spread/who-is-eligible-for-vaccination-in-new-jersey-who-is-included-in-the-vaccination-phases#direct-link"
 				},
 				{
 					"question": "c19.eligibility.question/essential_worker",
@@ -45,6 +46,11 @@
 				},
 				{
 					"question": "c19.eligibility.question/tribal.are"
+				},
+				{
+					"question": "c19.eligibility.question/health.are_you_an",
+					"moreInfoText": "c19.eligibility.moreinfo/health.are_you_an.nj.current",
+					"moreInfoUrl": "https://covid19.nj.gov/faqs/nj-information/slowing-the-spread/who-is-eligible-for-vaccination-in-new-jersey-who-is-included-in-the-vaccination-phases#direct-link"
 				}
 			]
 		}

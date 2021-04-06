@@ -13,13 +13,14 @@ import {
 	MessageBar,
 	MessageBarButton,
 	Modal,
+	Spinner
 } from '@fluentui/react'
 import { useBoolean } from '@uifabric/react-hooks'
 import { observer } from 'mobx-react-lite'
 import { useCallback, useState, useEffect, useRef } from 'react'
 import { Switch, Route, Redirect } from 'react-router-dom'
-import { initializeGitData, saveContinue } from '../actions/repoActions'
 import { loginUser, reLoginUser } from '../actions/authActions'
+import { initializeGitData, saveContinue } from '../actions/repoActions'
 import { logoutUser } from '../mutators/authMutators'
 import { setCurrentLanguage } from '../mutators/repoMutators'
 import { getAppStore } from '../store/store'
@@ -31,8 +32,8 @@ import Login from './Login'
 import QualifierPanel from './QualifierPanel'
 import Review from './Review'
 import Translate from './Translate'
-import UserAccessExpirationForm from './UserAccessExpirationForm'
 import UnAuthorized from './UnAuthorized'
+import UserAccessExpirationForm from './UserAccessExpirationForm'
 
 import './App_reset_styles.scss'
 import './App.scss'
@@ -147,9 +148,7 @@ export default observer(function App() {
 									</MessageBarButton>
 								</>
 								) : (
-									<MessageBarButton disabled={true}>
-										Saving changes...
-									</MessageBarButton>
+									<Spinner label="Saving changes..." ariaLive="assertive" labelPosition="left" />
 								)}
 							</div>
 						)
