@@ -384,40 +384,13 @@ California genetically handicapped persons program
 | scheduling_phone | [1-833-643-1715](tel:1-833-643-1715) |
 
 
-## Delaware Active Phase (1c)
+## Delaware Active Phase (2)
 
-* Are you a healthcare worker?
-* Are you a long term care resident or work in a long term care facility?
-* Are you classified as an essential worker?
-	* Frontline essential and other essential workers including educators or school staff, child care worker, first responders, food service, construction, transportation (those with greatest risk based on inability to work from home, frequency of contact with public, age and underlying health factors will be eligible sooner)
-* Are you age 16+, and have a high-risk medical condition?
-	* This includes 
-Cancer
-Chronic kidney disease
-Chronic lung diseases, including COPD (chronic obstructive pulmonary disease), asthma (moderate-to-severe), interstitial lung disease, cystic fibrosis, and pulmonary hypertension
-Dementia or other neurological conditions
-Diabetes (type 1 or type 2)
-Down syndrome
-Heart conditions (such as heart failure, coronary artery disease, cardiomyopathies or hypertension)
-HIV infection
-Immunocompromised state (weakened immune system)
-Intellectual/developmental/physical disabilities
-Liver disease
-Other Chronic Lung Disease (interstitial lung disease, pulmonary hypertension)
-Overweight and obesity
-Pregnancy
-Severe and Persistent Mental/Behavioral Health Condition
-Sickle cell disease or thalassemia
-Smoking, current or former
-Solid organ or blood stem cell transplant
-Stroke or cerebrovascular disease, which affects blood flow to the brain
-Substance Use Disorder(s)
-
-Family caregivers of those with high/moderate-risk conditions may also be eligible at the discretion of medical provider based on clinical judgement
-* Are you age 50+?
-	* Those who are age 50-64 can get the vaccine at pharmacies only. Those 65+ are eligible at any vaccination location.
-* Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?
-	* This includes correctional facilities, homeless shelters, and group homes
+* Are you age 16+?
+	* - All persons 16+ may now sign up for the state waitlist or through a pharmacy site.
+- Though you are eligible now, it may still take a few weeks to make a vaccination appointments based on the size of this group.
+- Persons 16 & 17 years old are only eligible to receive the Pfizer vaccine - check the vaccine being offered at each site closely.
+- If you have difficulty accessing a computer or need accommodations because of a disability, contact the DPH Vaccine Call Center at 1-833-643-1715 or email Vaccine@delaware.gov.  The Call Center may also connect you to the DHSS Aging and Disability Resource Center. (see [here](https://coronavirus.delaware.gov/vaccine/))
 
 # District of Columbia
 
