@@ -1,11 +1,16 @@
-import AWS from 'aws-sdk'
+/*!
+ * Copyright (c) Microsoft. All rights reserved.
+ * Licensed under the MIT license. See LICENSE file in the project.
+ */
 import fs from 'fs'
 import path from 'path'
+import AWS from 'aws-sdk'
+import config from 'config'
 
-const region = 'us-east-1'
-const Bucket = 'vaccinefinder-data'
+const region = config.get<string>('vaccinefinder.region')
+const Bucket = config.get<string>('vaccinefinder.bucket')
 
-export async function readS3Data(): Promise<void> {
+export async function fetchS3Data(): Promise<void> {
 	const s3Client = new AWS.S3({ region, params: { Bucket } })
 
 	return new Promise<void>((resolve, reject) => {
@@ -29,11 +34,11 @@ function readDataObject(client: AWS.S3, { Key }: AWS.S3.Object): Promise<void> {
 			Key.indexOf('*') === -1 &&
 			Key.indexOf('test') === -1
 		) {
-			const filename = path.join(__dirname, '../dist/', Key)
+			const filename = path.join(__dirname, '../../dist/', Key)
 			fs.mkdirSync(path.dirname(filename), { recursive: true })
 
 			if (fs.existsSync(filename)) {
-				console.log(`file ${filename} already exists`)
+				// file already exists
 				resolve()
 			} else {
 				console.log(`downloading ${filename}`)

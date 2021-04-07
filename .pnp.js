@@ -134,6 +134,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["tslib", "npm:2.1.0"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:1.3.0", {
+          "packageLocation": "./.yarn/cache/@azure-core-auth-npm-1.3.0-2643af9504-a6916cfb30.zip/node_modules/@azure/core-auth/",
+          "packageDependencies": [
+            ["@azure/core-auth", "npm:1.3.0"],
+            ["@azure/abort-controller", "npm:1.0.4"],
+            ["tslib", "npm:2.1.0"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["@azure/core-http", [
@@ -201,6 +210,26 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@opencensus/web-types", "npm:0.0.7"],
             ["@opentelemetry/api", "npm:0.10.2"],
             ["tslib", "npm:2.1.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@azure/cosmos", [
+        ["npm:3.10.5", {
+          "packageLocation": "./.yarn/cache/@azure-cosmos-npm-3.10.5-48353f45bb-6572db9af1.zip/node_modules/@azure/cosmos/",
+          "packageDependencies": [
+            ["@azure/cosmos", "npm:3.10.5"],
+            ["@azure/core-auth", "npm:1.3.0"],
+            ["debug", "virtual:bb5021588f7e5595fb57318130fbd71573bb1e56e36c52894c6ab92335cefc204411143fb343142c8264fb8b584b87ad650c627bf465ca1d60190627a49cbc6b#npm:4.3.2"],
+            ["fast-json-stable-stringify", "npm:2.1.0"],
+            ["jsbi", "npm:3.1.4"],
+            ["node-abort-controller", "npm:1.2.0"],
+            ["node-fetch", "npm:2.6.1"],
+            ["priorityqueuejs", "npm:1.0.0"],
+            ["semaphore", "npm:1.1.0"],
+            ["tslib", "npm:2.1.0"],
+            ["universal-user-agent", "npm:6.0.0"],
+            ["uuid", "npm:8.3.2"]
           ],
           "linkType": "HARD",
         }]
@@ -4535,10 +4564,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/locations-ingester/",
           "packageDependencies": [
             ["@c19-vax-api/locations-ingester", "workspace:packages/locations-ingester"],
+            ["@azure/cosmos", "npm:3.10.5"],
             ["@tsconfig/node14", "npm:1.0.0"],
+            ["@types/config", "npm:0.0.38"],
+            ["@types/lodash", "npm:4.14.168"],
             ["@types/node", "npm:14.14.37"],
+            ["@types/progress", "npm:2.0.3"],
             ["aws-sdk", "npm:2.880.0"],
+            ["axios", "npm:0.21.1"],
+            ["batch2", "npm:2.0.0"],
+            ["config", "npm:3.3.6"],
             ["csv-parse", "npm:4.15.3"],
+            ["lodash", "npm:4.17.21"],
+            ["progress", "npm:2.0.3"],
             ["ts-node", "virtual:f37703c95ab859815e9119a2e3ca6bab49c50b4a26a9fbfa7e47c06cdbe7398b822c114e558e7b2c0a0b2a5991aedb7288f4319bcfc9b66feda7b2f84e7d106d#npm:9.1.1"],
             ["typescript", "patch:typescript@npm%3A4.2.3#builtin<compat/typescript>::version=4.2.3&hash=a45b0e"]
           ],
@@ -9154,6 +9192,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["@types/lodash", [
+        ["npm:4.14.168", {
+          "packageLocation": "./.yarn/cache/@types-lodash-npm-4.14.168-2d65abe211-9a4e25f89f.zip/node_modules/@types/lodash/",
+          "packageDependencies": [
+            ["@types/lodash", "npm:4.14.168"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["@types/long", [
         ["npm:4.0.1", {
           "packageLocation": "./.yarn/cache/@types-long-npm-4.0.1-022c8b6e77-ed2a125330.zip/node_modules/@types/long/",
@@ -9302,6 +9349,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-prettier-npm-2.2.3-6036e6d94a-b7e80288f9.zip/node_modules/@types/prettier/",
           "packageDependencies": [
             ["@types/prettier", "npm:2.2.3"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@types/progress", [
+        ["npm:2.0.3", {
+          "packageLocation": "./.yarn/cache/@types-progress-npm-2.0.3-8223f090c8-b221d95b40.zip/node_modules/@types/progress/",
+          "packageDependencies": [
+            ["@types/progress", "npm:2.0.3"],
+            ["@types/node", "npm:14.14.35"]
           ],
           "linkType": "HARD",
         }]
@@ -12459,6 +12516,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/batch-processor-npm-1.0.0-9ee5925d22-97fcc0f586.zip/node_modules/batch-processor/",
           "packageDependencies": [
             ["batch-processor", "npm:1.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["batch2", [
+        ["npm:2.0.0", {
+          "packageLocation": "./.yarn/cache/batch2-npm-2.0.0-fcddc50b78-64b1789f3d.zip/node_modules/batch2/",
+          "packageDependencies": [
+            ["batch2", "npm:2.0.0"],
+            ["through2", "npm:4.0.2"]
           ],
           "linkType": "HARD",
         }]
@@ -21492,6 +21559,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["jsbi", [
+        ["npm:3.1.4", {
+          "packageLocation": "./.yarn/cache/jsbi-npm-3.1.4-248bd487e1-8e8e03bbdd.zip/node_modules/jsbi/",
+          "packageDependencies": [
+            ["jsbi", "npm:3.1.4"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["jsbn", [
         ["npm:0.1.1", {
           "packageLocation": "./.yarn/cache/jsbn-npm-0.1.1-0eb7132404-b530d48a64.zip/node_modules/jsbn/",
@@ -23717,6 +23793,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["no-case", "npm:3.0.4"],
             ["lower-case", "npm:2.0.2"],
             ["tslib", "npm:2.1.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["node-abort-controller", [
+        ["npm:1.2.0", {
+          "packageLocation": "./.yarn/cache/node-abort-controller-npm-1.2.0-85791432e6-8d3e2a04ea.zip/node_modules/node-abort-controller/",
+          "packageDependencies": [
+            ["node-abort-controller", "npm:1.2.0"]
           ],
           "linkType": "HARD",
         }]
@@ -26467,6 +26552,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["priorityqueuejs", [
+        ["npm:1.0.0", {
+          "packageLocation": "./.yarn/cache/priorityqueuejs-npm-1.0.0-c0939d49c4-5b6a4ed650.zip/node_modules/priorityqueuejs/",
+          "packageDependencies": [
+            ["priorityqueuejs", "npm:1.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["prismjs", [
         ["npm:1.23.0", {
           "packageLocation": "./.yarn/cache/prismjs-npm-1.23.0-3781560845-9d55785f1e.zip/node_modules/prismjs/",
@@ -29169,6 +29263,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["selfsigned", "npm:1.10.8"],
             ["node-forge", "npm:0.10.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["semaphore", [
+        ["npm:1.1.0", {
+          "packageLocation": "./.yarn/cache/semaphore-npm-1.1.0-183cafa608-af3a1cd598.zip/node_modules/semaphore/",
+          "packageDependencies": [
+            ["semaphore", "npm:1.1.0"]
           ],
           "linkType": "HARD",
         }]
@@ -31950,6 +32053,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["unist-util-visit-parents", "npm:3.1.1"],
             ["@types/unist", "npm:2.0.3"],
             ["unist-util-is", "npm:4.1.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["universal-user-agent", [
+        ["npm:6.0.0", {
+          "packageLocation": "./.yarn/cache/universal-user-agent-npm-6.0.0-b148fb997a-725797ab63.zip/node_modules/universal-user-agent/",
+          "packageDependencies": [
+            ["universal-user-agent", "npm:6.0.0"]
           ],
           "linkType": "HARD",
         }]
