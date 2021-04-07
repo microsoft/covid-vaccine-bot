@@ -149,11 +149,35 @@ export default observer(function Translate() {
 					? ''
 					: stateNames?.[`cdc/${stateId}/state_name`]?.[toLanguage.current]
 
+				const translateToValue_SMS = !toLanguage.current
+				? ''
+				: !stateNames?.[`cdc/${stateId}/state_name`]?.[`${toLanguage.current}-sms`]
+				? ''
+				: stateNames?.[`cdc/${stateId}/state_name`]?.[`${toLanguage.current}-sms`]
+
+				const translateToValue_Voice = !toLanguage.current
+				? ''
+				: !stateNames?.[`cdc/${stateId}/state_name`]?.[`${toLanguage.current}-voice`]
+				? ''
+				: stateNames?.[`cdc/${stateId}/state_name`]?.[`${toLanguage.current}-voice`]
+
 				const translateLinkToValue = !toLanguage.current
 					? ''
 					: !stateLinks?.[`cdc/${stateId}/state_link`]?.[toLanguage.current]
 					? ''
 					: stateLinks?.[`cdc/${stateId}/state_link`]?.[toLanguage.current]
+
+				const translateLinkToValue_SMS = !toLanguage.current
+				? ''
+				: !stateLinks?.[`cdc/${stateId}/state_link`]?.[`${toLanguage.current}-sms`]
+				? ''
+				: stateLinks?.[`cdc/${stateId}/state_link`]?.[`${toLanguage.current}-sms`]
+
+				const translateLinkToValue_Voice = !toLanguage.current
+				? ''
+				: !stateLinks?.[`cdc/${stateId}/state_link`]?.[`${toLanguage.current}-voice`]
+				? ''
+				: stateLinks?.[`cdc/${stateId}/state_link`]?.[`${toLanguage.current}-voice`]
 
 				tempList.push({
 					key: `cdc/${stateId}/state_name`,
@@ -161,6 +185,8 @@ export default observer(function Translate() {
 					from: stateLabel,
 					toKey: toLanguage.current,
 					to: translateToValue,
+					sms: translateToValue_SMS,
+					voice: translateToValue_Voice,
 					_to: translateToValue,
 					parent: 'global',
 					category: 'locations',
@@ -172,6 +198,8 @@ export default observer(function Translate() {
 					from: stateLinkLabel,
 					toKey: toLanguage.current,
 					to: translateLinkToValue,
+					sms: translateLinkToValue_SMS,
+					voice: translateLinkToValue_Voice,
 					_to: translateLinkToValue,
 					parent: 'global',
 					category: 'state_link',
@@ -193,6 +221,8 @@ export default observer(function Translate() {
 							from: value[mainLanguage.current],
 							toKey: toLanguage.current,
 							to: value[toLanguage.current],
+							sms: value[`${toLanguage.current}-sms`],
+							voice: value[`${toLanguage.current}-voice`],
 							_to: value[toLanguage.current],
 							parent: 'global',
 							category: 'qualifiers',
@@ -204,6 +234,8 @@ export default observer(function Translate() {
 							from: value[mainLanguage.current],
 							toKey: toLanguage.current,
 							to: value[toLanguage.current],
+							sms: value[`${toLanguage.current}-sms`],
+							voice: value[`${toLanguage.current}-voice`],
 							_to: value[toLanguage.current],
 							parent: 'global',
 							category: 'other',
@@ -229,6 +261,8 @@ export default observer(function Translate() {
 								from: value[mainLanguage.current],
 								toKey: toLanguage.current,
 								to: value[toLanguage.current],
+								sms: value[`${toLanguage.current}-sms`],
+								voice: value[`${toLanguage.current}-voice`],
 								_to: value[toLanguage.current],
 								parent: aKey,
 								category: 'state',
@@ -275,11 +309,24 @@ export default observer(function Translate() {
 
 	const handleLocationTextChange = useCallback(
 		(ev, rowItem) => {
-			const value = ev.target.value
+			let change: any = {}
+
+			switch(ev.target.name) {
+				case rowItem.toKey:
+					change = { to: ev.target.value }
+					break
+				case `${rowItem.toKey}-sms`:
+					change = { sms: ev.target.value }
+					break
+				case `${rowItem.toKey}-voice`:
+					change = { voice: ev.target.value }
+					break
+			}
+
 			const idx = locationList.findIndex((i) => i.from === rowItem.from)
 			locationList[idx] = {
 				...rowItem,
-				to: value,
+				...change
 			}
 			setLocationList([...locationList])
 			locationChanges.current = locationList[idx]
@@ -289,11 +336,24 @@ export default observer(function Translate() {
 
 	const handleQualifierTextChange = useCallback(
 		(ev, rowItem) => {
-			const value = ev.target.value
+			let change: any = {}
+
+			switch(ev.target.name) {
+				case rowItem.toKey:
+					change = { to: ev.target.value }
+					break
+				case `${rowItem.toKey}-sms`:
+					change = { sms: ev.target.value }
+					break
+				case `${rowItem.toKey}-voice`:
+					change = { voice: ev.target.value }
+					break
+			}
+
 			const idx = qualifierList.findIndex((i) => i.from === rowItem.from)
 			qualifierList[idx] = {
 				...rowItem,
-				to: value,
+				...change
 			}
 			setQualifierList([...qualifierList])
 			qualifierChanges.current = qualifierList[idx]
@@ -303,11 +363,24 @@ export default observer(function Translate() {
 
 	const handleMiscTextChange = useCallback(
 		(ev, rowItem) => {
-			const value = ev.target.value
+			let change: any = {}
+
+			switch(ev.target.name) {
+				case rowItem.toKey:
+					change = { to: ev.target.value }
+					break
+				case `${rowItem.toKey}-sms`:
+					change = { sms: ev.target.value }
+					break
+				case `${rowItem.toKey}-voice`:
+					change = { voice: ev.target.value }
+					break
+			}
+
 			const idx = miscList.findIndex((i) => i.from === rowItem.from)
 			miscList[idx] = {
 				...rowItem,
-				to: value,
+				...change
 			}
 			setMiscList([...miscList])
 			miscChanges.current = miscList[idx]
@@ -659,8 +732,22 @@ export default observer(function Translate() {
 											>
 												<div className="fromCol">{val.from}</div>
 												<TextField
-													name={val.to}
+													name={val.toKey}
 													value={val.to}
+													className="toCol"
+													onChange={(ev) => handleLocationTextChange(ev, val)}
+													onBlur={() => updateLocationTranslation(val)}
+												/>
+												<TextField
+													name={`${val.toKey}-sms`}
+													value={val.sms}
+													className="toCol"
+													onChange={(ev) => handleLocationTextChange(ev, val)}
+													onBlur={() => updateLocationTranslation(val)}
+												/>
+												<TextField
+													name={`${val.toKey}-voice`}
+													value={val.voice}
 													className="toCol"
 													onChange={(ev) => handleLocationTextChange(ev, val)}
 													onBlur={() => updateLocationTranslation(val)}
@@ -705,8 +792,30 @@ export default observer(function Translate() {
 											>
 												<div className="fromCol">{val.from}</div>
 												<TextField
-													name={val.to}
+													name={val.toKey}
 													value={val.to}
+													className="toCol"
+													autoAdjustHeight={true}
+													resizable={false}
+													multiline={true}
+													rows={Math.ceil(val.from.length / 100)}
+													onChange={(ev) => handleQualifierTextChange(ev, val)}
+													onBlur={() => updateQualifierTranslation(val)}
+												/>
+												<TextField
+													name={`${val.toKey}-sms`}
+													value={val.sms}
+													className="toCol"
+													autoAdjustHeight={true}
+													resizable={false}
+													multiline={true}
+													rows={Math.ceil(val.from.length / 100)}
+													onChange={(ev) => handleQualifierTextChange(ev, val)}
+													onBlur={() => updateQualifierTranslation(val)}
+												/>
+												<TextField
+													name={`${val.toKey}-voice`}
+													value={val.voice}
 													className="toCol"
 													autoAdjustHeight={true}
 													resizable={false}
@@ -773,8 +882,30 @@ export default observer(function Translate() {
 												>
 													<div className="fromCol">{val.from}</div>
 													<TextField
-														name={val.to}
+														name={val.toKey}
 														value={val.to}
+														className="toCol"
+														autoAdjustHeight={true}
+														resizable={false}
+														multiline={true}
+														rows={Math.ceil(val.from.length / 100)}
+														onChange={(ev) => handleMiscTextChange(ev, val)}
+														onBlur={() => updateMiscTranslation(val)}
+													/>
+													<TextField
+														name={`${val.toKey}-sms`}
+														value={val.sms}
+														className="toCol"
+														autoAdjustHeight={true}
+														resizable={false}
+														multiline={true}
+														rows={Math.ceil(val.from.length / 100)}
+														onChange={(ev) => handleMiscTextChange(ev, val)}
+														onBlur={() => updateMiscTranslation(val)}
+													/>
+													<TextField
+														name={`${val.toKey}-voice`}
+														value={val.voice}
 														className="toCol"
 														autoAdjustHeight={true}
 														resizable={false}
