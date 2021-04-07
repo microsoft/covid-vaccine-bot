@@ -148,6 +148,15 @@
 					"moreInfoText": "c19.eligibility.moreinfo/health.are_you_receiving.md.2b"
 				}
 			]
+		},
+		{
+			"id": "3",
+			"label": "3",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.16_up"
+				}
+			]
 		}
 	]
 }
