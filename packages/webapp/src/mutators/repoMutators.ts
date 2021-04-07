@@ -259,6 +259,26 @@ export const updateLocationList = mutatorAction(
 	}
 )
 
+
+export const deleteLocation = mutatorAction(
+	'deleteLocation',
+	(
+		locationData: any,
+		isRegion?: boolean,
+		selectedState?: any
+	) => {
+		const store = getAppStore()
+		store.pendingChanges = true
+		
+		if(isRegion && selectedState)
+			delete store.repoFileData[selectedState.key]?.regions?.[locationData.key]
+		else 
+			delete store.repoFileData[locationData.key]
+
+		store.repoFileData = { ...store.repoFileData }
+	}
+)
+
 export const updateLocationData = mutatorAction(
 	'updateLocationData',
 	(

@@ -17,9 +17,11 @@ import { useState, useRef, useEffect, useCallback } from 'react'
 import {
 	updateLocationList,
 	updateLocationData,
+	deleteLocation,
 } from '../mutators/repoMutators'
 import { getAppStore } from '../store/store'
 import LocationForm from './LocationForm'
+import DeleteLocationForm from './DeleteLocationForm'
 
 import './Locations.scss'
 
@@ -34,12 +36,21 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 		isLocationModalOpen,
 		{ setTrue: openLocationModal, setFalse: dismissLocationModal },
 	] = useBoolean(false)
+	const [
+		isDeleteLocationModalOpen,
+		{ setTrue: openDeleteLocationModal, setFalse: dismissDeleteLocationModal },
+	] = useBoolean(false)
 	const [filteredStateList, setFilteredStateList] = useState<any[]>([])
 	const stateRepoFullList = useRef<any[]>([])
 	const selectedLocationItem = useRef<any>(null)
 
 	const state = getAppStore()
-
+	const filterEditable = (col: any) => {
+		if(state.isEditable)
+			return true
+		else 
+			return col.key !== 'editCol' && col.key !== 'delete'
+	}
 	const locationColumns = [
 		{
 			key: 'stateCol',
@@ -62,11 +73,11 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 			minWidth: 50,
 			isResizable: false,
 		},
-	].filter((loc) => (state.isEditable ? true : loc.key !== 'editCol'))
+	].filter(filterEditable)
 
 	useEffect(() => {
 		if (state.repoFileData) {
-			const tempList: any[] = []
+			const nextFilteredStateList: any[] = []
 			Object.entries(state.repoFileData).forEach(
 				([key, value]: [string, any]) => {
 					const stateId = value?.info?.content.id
@@ -81,7 +92,7 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 							? stateNames[`cdc/${stateId}/state_name`][state.currentLanguage]
 							: `*Translation Not Found* (${stateId})`
 
-					tempList.push({
+					nextFilteredStateList.push({
 						key: key,
 						text: stateLabel,
 						regions: value?.regions ? Object.keys(value.regions).length : 0,
@@ -89,13 +100,13 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 					})
 				}
 			)
-			setFilteredStateList(tempList)
-			stateRepoFullList.current = tempList
+			setFilteredStateList(nextFilteredStateList)
+			stateRepoFullList.current = nextFilteredStateList
 		}
 	}, [state.repoFileData, state.globalFileData, state.currentLanguage, stateRepoFullList])
 
 	const onStateFilter = useCallback(
-		(_event: any, text?: string | undefined) => {
+		(_event: any, text?: string) => {
 			if (text) {
 				setFilteredStateList(
 					stateRepoFullList.current.filter(
@@ -115,7 +126,7 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 		},
 		[onSelectedItem]
 	)
-
+ 
 	const onLocationFormSubmit = useCallback(
 		(locationData, prevItem) => {
 			dismissLocationModal()
@@ -128,6 +139,14 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 		[dismissLocationModal]
 	)
 
+	const onDeleteLocationFormSubmit = useCallback(
+		(locationData) => {
+			dismissDeleteLocationModal()
+			deleteLocation(locationData)
+		},
+		[dismissDeleteLocationModal]
+	)
+
 	const onLocationFormOpen = useCallback(
 		(item?: any) => {
 			selectedLocationItem.current = item ?? null
@@ -136,23 +155,41 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 		[openLocationModal]
 	)
 
+	const onLocationDeleteFormOpen = useCallback(
+		(item?: any) => {
+			selectedLocationItem.current = item ?? null
+			openDeleteLocationModal()
+		},
+		[openDeleteLocationModal]
+	)
+
 	const onRenderItemColumn = useCallback(
 		(item?: any, _index?: number, column?: IColumn) => {
-			const fieldContent = item[column?.fieldName as keyof any] as string
+			if(!column)
+				return null
 
-			if (column?.key === 'editCol') {
+			const fieldContent = item[column.fieldName as keyof any] as string
+
+			if (column.key === 'editCol') {
 				return state.isEditable ? (
-					<FontIcon
-						iconName="Edit"
-						className="editIcon"
-						onClick={() => onLocationFormOpen(item)}
-					/>
+					<span>
+						<FontIcon
+							iconName="Cancel"
+							className="deleteIcon"
+							onClick={() => onLocationDeleteFormOpen(item)}
+						/>
+						<FontIcon
+							iconName="Edit"
+							className="editIcon"
+							onClick={() => onLocationFormOpen(item)}
+						/>
+					</span>
 				) : null
 			} else {
 				return <span>{fieldContent}</span>
 			}
 		},
-		[onLocationFormOpen, state.isEditable]
+		[onLocationFormOpen, onLocationDeleteFormOpen, state.isEditable]
 	)
 
 	return (
@@ -216,6 +253,18 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 					item={selectedLocationItem.current}
 					onCancel={dismissLocationModal}
 					onSubmit={onLocationFormSubmit}
+				/>
+			</Modal>
+			<Modal
+				isOpen={isDeleteLocationModalOpen}
+				isModeless={false}
+				isDarkOverlay={true}
+				isBlocking={false}
+			>
+				<DeleteLocationForm
+					location={selectedLocationItem.current}
+					onCancel={dismissDeleteLocationModal}
+					onSubmit={onDeleteLocationFormSubmit}
 				/>
 			</Modal>
 		</div>
