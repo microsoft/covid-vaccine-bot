@@ -34,6 +34,8 @@ export interface ProviderLocation {
 	walkins_accepted: boolean
 }
 
+export type GeoPoint = [number, number]
+
 export interface MedInfo {
 	name: string
 	provider_notes: string
@@ -71,5 +73,3 @@ export interface ProviderLocationCsv {
 	quantity_last_updated: Date
 	med_name: string
 }
-
-export type GeoPoint = [number, number]

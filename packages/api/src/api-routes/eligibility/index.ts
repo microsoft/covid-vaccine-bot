@@ -12,10 +12,10 @@ import regions from '@covid-vax-bot/plans/dist/policies.json'
 export const GET: Operation = [
 	async (req: Request, res: Response) => {
 		const lat = (req.query.lat as any) as number
-		const long = (req.query.long as any) as number
+		const lon = (req.query.lon as any) as number
 		const loc = ((req.query.localization as string) || '').trim()
 
-		const address = await locator.getLocationInformation(lat, long)
+		const address = await locator.getLocationInformation(lat, lon)
 		const response = resolvePlan(
 			{
 				adminDistrict: address.countrySubdivision,
@@ -68,7 +68,7 @@ GET.apiDoc = {
 		},
 		{
 			in: 'query',
-			name: 'long',
+			name: 'lon',
 			type: 'number',
 			format: 'double',
 			required: true,
