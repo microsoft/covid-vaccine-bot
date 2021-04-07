@@ -1,0 +1,11 @@
+{
+	"cosmosdb": {
+		"endpoint": "https://covid-data-cosmos.documents.azure.com:443/",
+		"key": null,
+		"database": "vaccination",
+		"container": "providers"
+	},
+	"azureMaps": {
+		"key": null
+	}
+}

@@ -23,7 +23,7 @@
 			"text": "c19.link/scheduling.phone.de"
 		}
 	},
-	"activePhase": "1c",
+	"activePhase": "2",
 	"phases": [
 		{
 			"id": "1a",
@@ -79,6 +79,17 @@
 				{
 					"question": "c19.eligibility.question/congregate",
 					"moreInfoText": "c19.eligibility.moreinfo/congregate.de.1c"
+				}
+			]
+		},
+		{
+			"id": "2",
+			"label": "2",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.16_up",
+					"moreInfoText": "c19.eligibility.moreinfo/age.16_up.de.2",
+					"moreInfoUrl": "https://coronavirus.delaware.gov/vaccine/"
 				}
 			]
 		}
