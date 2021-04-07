@@ -3054,7 +3054,7 @@ If you are unable to leave home to receive COVID-19 vaccination, or are the heal
 | scheduling_phone | [615-862-7777](tel:615-862-7777) |
 
 
-### Tennessee::Davidson Active Phase (2b)
+### Tennessee::Davidson Active Phase (3)
 
 ## Tennessee::Hamilton
 
@@ -3065,7 +3065,7 @@ If you are unable to leave home to receive COVID-19 vaccination, or are the heal
 | scheduling_phone | [423-209-8383](tel:423-209-8383) |
 
 
-### Tennessee::Hamilton Active Phase (2b)
+### Tennessee::Hamilton Active Phase (3)
 
 # Texas
 
