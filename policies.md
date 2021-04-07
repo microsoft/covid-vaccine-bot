@@ -72,24 +72,9 @@
 | scheduling_phone | [602-542-1000](tel:602-542-1000) |
 
 
-## Arizona Active Phase (1c)
+## Arizona Active Phase (1b_16_and_older)
 
-* Are you age 55+?
-* Are you a healthcare or healthcare support worker?
-* Are you a long term care resident or work in a long term care facility?
-* Are you an education or child-care worker?
-* Are you classified as an essential worker?
-	* EMTs, paramedics, firefighters, police/law enforcement, and corrections staff are eligible in the entire state. 
-
-Counties and tribes may also choose to vaccinate the following groups defined by ACIP as a subset of essential workers at highest risk for work-related exposure. Confirm with your county department of health if your group is being prioritized.
-
-- Food and agriculture
-- Grocery store, convenience store, and carniceria workers
-- U.S. Postal Service
-- Manufacturing workers
-- Public transit workers, including buses, Light Rail, Uber, Lyft, taxis, and rideshare
-- State and local government workers
-- Funeral home workers
+* Are you age 16+?
 
 ## Arizona Regions
 
