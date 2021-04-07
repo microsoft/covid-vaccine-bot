@@ -23,9 +23,8 @@ import {
 } from '../mutators/repoMutators'
 import { getAppStore } from '../store/store'
 import { toProperCase } from '../utils/textUtils'
-import LocationForm from './LocationForm'
 import DeleteLocationForm from './DeleteLocationForm'
-import DeletePhaseForm from './DeletePhaseForm'
+import LocationForm from './LocationForm'
 import LocationsPhases from './LocationsPhases'
 import PhaseForm from './PhaseForm'
 
@@ -205,15 +204,14 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 
 	const onRenderItemColumn = useCallback(
 		(item?: any, _index?: number, column?: IColumn) => {
-			if(!column)
-				return null
+			if (!column) return null
 
 			const fieldContent = item[column.fieldName as keyof any] as string
 
 			if (column.key === 'editCol') {
 				return state.isEditable ? (
 					<span>
-						{column?.fieldName === 'editLocation'  && (
+						{column?.fieldName === 'editLocation' && (
 							<FontIcon
 								iconName="Cancel"
 								className="deleteIcon"
@@ -235,9 +233,14 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 				return <span>{fieldContent}</span>
 			}
 		},
-		[onLocationFormOpen, onLocationDeleteFormOpen, onPhaseFormOpen, state.isEditable]
+		[
+			onLocationFormOpen,
+			onLocationDeleteFormOpen,
+			onPhaseFormOpen,
+			state.isEditable,
+		]
 	)
-	
+
 	const onRegionFilter = useCallback(
 		(_event: any, text?: string | undefined) => {
 			if (text) {
@@ -386,7 +389,9 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 								</div>
 							)}
 						</div>
-						{filteredRegionsList && filteredRegionsList.length > 0 && stateRegionsFullList.current.length > 0 ? (
+						{filteredRegionsList &&
+						filteredRegionsList.length > 0 &&
+						stateRegionsFullList.current.length > 0 ? (
 							<DetailsList
 								items={filteredRegionsList}
 								columns={subLocationsColumns}

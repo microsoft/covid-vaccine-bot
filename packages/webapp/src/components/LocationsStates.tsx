@@ -20,8 +20,8 @@ import {
 	deleteLocation,
 } from '../mutators/repoMutators'
 import { getAppStore } from '../store/store'
-import LocationForm from './LocationForm'
 import DeleteLocationForm from './DeleteLocationForm'
+import LocationForm from './LocationForm'
 
 import './Locations.scss'
 
