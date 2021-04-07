@@ -1,0 +1,11 @@
+{
+	"cosmosdb": {
+		"endpoint": "COSMOSDB_ENDPOINT",
+		"key": "COSMOSDB_KEY",
+		"database": "COSMOSDB_DATABASE",
+		"container": "COSMOSDB_CONTAINER"
+	},
+	"azureMaps": {
+		"key": "AZURE_MAPS_KEY"
+	}
+}

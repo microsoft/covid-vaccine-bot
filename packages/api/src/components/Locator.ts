@@ -3,6 +3,7 @@
  * Licensed under the MIT license. See LICENSE file in the project.
  */
 import axios from 'axios'
+import config from 'config'
 
 export interface LocationInformation {
 	/**
@@ -48,9 +49,7 @@ export interface LocationInformation {
 	freeformAddress: string
 }
 
-const SUBSCRIPTION_KEY = 'ORMjHZDPj50P11bBJ9iiCOryTSOaETw77PhKj3Wh5C4'
-
-//
+const SUBSCRIPTION_KEY = config.get<string>('azureMaps.key')
 
 export class Locator {
 	public async getLocationInformation(

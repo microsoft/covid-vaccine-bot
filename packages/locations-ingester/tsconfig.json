@@ -1,0 +1,7 @@
+{
+	"extends": "@tsconfig/node14",
+	"compilerOptions": {
+		"outDir": "lib"
+	},
+	"include": ["src/**/*.ts*"]
+}

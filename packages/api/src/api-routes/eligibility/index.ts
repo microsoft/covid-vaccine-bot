@@ -2,20 +2,20 @@
  * Copyright (c) Microsoft. All rights reserved.
  * Licensed under the MIT license. See LICENSE file in the project.
  */
-import regions from '@covid-vax-bot/plans/dist/policies.json'
 import { Request, Response } from 'express'
 import { Operation } from 'express-openapi'
 import { locator, localizer } from '../../components'
 import { resolvePlan } from '@covid-vax-bot/plan-locator'
 import { Link } from '@covid-vax-bot/plan-schema'
+import regions from '@covid-vax-bot/plans/dist/policies.json'
 
 export const GET: Operation = [
 	async (req: Request, res: Response) => {
 		const lat = (req.query.lat as any) as number
-		const long = (req.query.long as any) as number
+		const lon = (req.query.lon as any) as number
 		const loc = ((req.query.localization as string) || '').trim()
 
-		const address = await locator.getLocationInformation(lat, long)
+		const address = await locator.getLocationInformation(lat, lon)
 		const response = resolvePlan(
 			{
 				adminDistrict: address.countrySubdivision,
@@ -68,7 +68,7 @@ GET.apiDoc = {
 		},
 		{
 			in: 'query',
-			name: 'long',
+			name: 'lon',
 			type: 'number',
 			format: 'double',
 			required: true,
