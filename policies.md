@@ -535,26 +535,18 @@ Upon arrival at vaccination events, individuals 60 years and older may be sent t
 | scheduling_phone | [800-300-1120](tel:800-300-1120) |
 
 
-## Hawaii Active Phase (1c)
+## Hawaii Active Phase (2)
 
-* Are you a healthcare worker?
-* Are you a long-term care resident?
-* Are you classified as an essential worker?
-	* Frontline essential workers are defined as workers whose duties must be performed on-site, require being in close proximity (less than 6 feet) to the public or coworkers, and are essential to the functioning of society. Some examples of essential workers in 1b include: first responders, critical infrastructure and key resources (i.e. harbor and dock workers, electric, gas, water, sewer, telephone), education (i.e. teachers, staff, early childhood education), public transit workers, those essential for federal, state, and local government operations, food production and agriculture workers, grocery store workers, and U.S. Postal Service. This also includes those employed at hotels, restaurants, and bars
-* Are you age 16+, and have a high-risk medical condition?
-	* This includes:
-- Individuals on dialysis
-- Individuals with severe respiratory disease who are on oxygen
-- Individuals undergoing chemotherapy or other infusion therapy
-
-People with other chronic conditions also qualify for vaccine in Phase 1c, but not immediately. Data shows a correlation between medical conditions and age, so age will serve as a surrogate for many of these other chronic medical conditions. People with these chronic illnesses will be eligible for vaccine by age in descending order.
-* Are you age 60+?
+* Are you age 16+?
+	* Phase 2 includes:
+- Persons 16 years and older (Pfizer).
+- Persons 18 years and older (Moderna and Johnson & Johnson).
 
 ## Hawaii Regions
 
-## Hawaii::Hawaii
+## Hawaii::Hawaii Island
 
-### Hawaii::Hawaii Links
+### Hawaii::Hawaii Island Links
 
 | link type | link |
 | --- | --- |
@@ -562,7 +554,52 @@ People with other chronic conditions also qualify for vaccine in Phase 1c, but n
 | providers | [View locations providing vaccines](https://www.hilomedicalcenter.org/) |
 
 
-### Hawaii::Hawaii Active Phase (2)
+### Hawaii::Hawaii Island Active Phase (2)
+
+## Hawaii::Kauai
+
+### Hawaii::Kauai Links
+
+| link type | link |
+| --- | --- |
+
+
+
+## Hawaii::Lanai
+
+### Hawaii::Lanai Links
+
+| link type | link |
+| --- | --- |
+
+
+
+## Hawaii::Maui
+
+### Hawaii::Maui Links
+
+| link type | link |
+| --- | --- |
+
+
+
+## Hawaii::Molokai
+
+### Hawaii::Molokai Links
+
+| link type | link |
+| --- | --- |
+
+
+
+## Hawaii::Oahu
+
+### Hawaii::Oahu Links
+
+| link type | link |
+| --- | --- |
+
+
 
 # Idaho
 
