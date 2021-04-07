@@ -4093,9 +4093,9 @@ Please note the Pfizer vaccine is authorized for use in people age 16 and older.
 | scheduling_phone | [800-438-5795](tel:800-438-5795) |
 
 
-## Wyoming Active Phase (16_and_older)
+## Wyoming Active Phase (18_and_older)
 
-* Are you age 16+?
+* Are you age 18+?
 
 ## Wyoming Regions
 
@@ -4110,6 +4110,8 @@ Please note the Pfizer vaccine is authorized for use in people age 16 and older.
 | scheduling_phone | [307-766-8222](tel:307-766-8222) |
 
 
+### Wyoming::Albany Active Phase (16_and_older)
+
 ## Wyoming::Big Horn
 
 ### Wyoming::Big Horn Links
@@ -4121,7 +4123,7 @@ Please note the Pfizer vaccine is authorized for use in people age 16 and older.
 | scheduling_phone | [1-800-438-5795](tel:1-800-438-5795) |
 
 
-### Wyoming::Big Horn Active Phase (16_and_older)
+### Wyoming::Big Horn Active Phase (18_and_older)
 
 ## Wyoming::Campbell
 
@@ -4134,7 +4136,7 @@ Please note the Pfizer vaccine is authorized for use in people age 16 and older.
 | scheduling_phone | [1-800-438-5795](tel:1-800-438-5795) |
 
 
-### Wyoming::Campbell Active Phase (16_and_older)
+### Wyoming::Campbell Active Phase (18_and_older)
 
 ## Wyoming::Carbon
 
@@ -4147,7 +4149,7 @@ Please note the Pfizer vaccine is authorized for use in people age 16 and older.
 | scheduling_phone | [1-800-438-5795](tel:1-800-438-5795) |
 
 
-### Wyoming::Carbon Active Phase (16_and_older)
+### Wyoming::Carbon Active Phase (18_and_older)
 
 ## Wyoming::Converse
 
@@ -4160,7 +4162,7 @@ Please note the Pfizer vaccine is authorized for use in people age 16 and older.
 | scheduling_phone | [1-800-438-5795](tel:1-800-438-5795) |
 
 
-### Wyoming::Converse Active Phase (16_and_older)
+### Wyoming::Converse Active Phase (18_and_older)
 
 ## Wyoming::Crook
 
@@ -4173,7 +4175,7 @@ Please note the Pfizer vaccine is authorized for use in people age 16 and older.
 | scheduling_phone | [1-800-438-5795](tel:1-800-438-5795) |
 
 
-### Wyoming::Crook Active Phase (16_and_older)
+### Wyoming::Crook Active Phase (18_and_older)
 
 ## Wyoming::Fremont
 
@@ -4186,7 +4188,7 @@ Please note the Pfizer vaccine is authorized for use in people age 16 and older.
 | scheduling_phone | [800-438-5795](tel:800-438-5795) |
 
 
-### Wyoming::Fremont Active Phase (16_and_older)
+### Wyoming::Fremont Active Phase (18_and_older)
 
 ## Wyoming::Goshen
 
@@ -4199,7 +4201,7 @@ Please note the Pfizer vaccine is authorized for use in people age 16 and older.
 | scheduling_phone | [1-800-438-5795](tel:1-800-438-5795) |
 
 
-### Wyoming::Goshen Active Phase (16_and_older)
+### Wyoming::Goshen Active Phase (18_and_older)
 
 ## Wyoming::Hot Springs
 
@@ -4212,7 +4214,7 @@ Please note the Pfizer vaccine is authorized for use in people age 16 and older.
 | scheduling_phone | [1-800-438-5795](tel:1-800-438-5795) |
 
 
-### Wyoming::Hot Springs Active Phase (16_and_older)
+### Wyoming::Hot Springs Active Phase (18_and_older)
 
 ## Wyoming::Johnson
 
@@ -4225,7 +4227,7 @@ Please note the Pfizer vaccine is authorized for use in people age 16 and older.
 | scheduling_phone | [1-800-438-5795](tel:1-800-438-5795) |
 
 
-### Wyoming::Johnson Active Phase (16_and_older)
+### Wyoming::Johnson Active Phase (18_and_older)
 
 ## Wyoming::Laramie
 
@@ -4237,6 +4239,8 @@ Please note the Pfizer vaccine is authorized for use in people age 16 and older.
 | scheduling | [Schedule a Vaccination](https://form.jotform.com/203565004101034) |
 | scheduling_phone | [307-633-4000](tel:307-633-4000) |
 
+
+### Wyoming::Laramie Active Phase (16_and_older)
 
 ## Wyoming::Lincoln
 
@@ -4273,7 +4277,7 @@ Please note the Pfizer vaccine is authorized for use in people age 16 and older.
 | scheduling_phone | [800-438-5795](tel:800-438-5795) |
 
 
-### Wyoming::Niobrara Active Phase (16_and_older)
+### Wyoming::Niobrara Active Phase (18_and_older)
 
 ## Wyoming::Park
 
@@ -4285,6 +4289,8 @@ Please note the Pfizer vaccine is authorized for use in people age 16 and older.
 | scheduling | [Schedule a Vaccination](https://wy.covidreadi.com/) |
 | scheduling_phone | [1-800-438-5795](tel:1-800-438-5795) |
 
+
+### Wyoming::Park Active Phase (16_and_older)
 
 ## Wyoming::Platte
 
@@ -4321,7 +4327,7 @@ Please note the Pfizer vaccine is authorized for use in people age 16 and older.
 | scheduling_phone | [307-367-2157](tel:307-367-2157) |
 
 
-### Wyoming::Sublette Active Phase (16_and_older)
+### Wyoming::Sublette Active Phase (18_and_older)
 
 ## Wyoming::Sweetwater
 
@@ -4333,10 +4339,9 @@ Please note the Pfizer vaccine is authorized for use in people age 16 and older.
 | scheduling_phone | [307-922-5390](tel:307-922-5390) |
 
 
-### Wyoming::Sweetwater Active Phase (16_and_older)
+### Wyoming::Sweetwater Active Phase (18_and_older)
 
-* Are you age 16+?
-	* We are currently offering the vaccine to all residents of Sweetwater County who are age 16+ (Pfizer) and age 18+ (Moderna).
+* Are you age 18+?
 
 ## Wyoming::Teton
 
@@ -4349,6 +4354,8 @@ Please note the Pfizer vaccine is authorized for use in people age 16 and older.
 | scheduling_phone | [307-732-8628](tel:307-732-8628) |
 
 
+### Wyoming::Teton Active Phase (16_and_older)
+
 ## Wyoming::Uinta
 
 ### Wyoming::Uinta Links
@@ -4360,7 +4367,7 @@ Please note the Pfizer vaccine is authorized for use in people age 16 and older.
 | scheduling_phone | [307-789-9203](tel:307-789-9203) |
 
 
-### Wyoming::Uinta Active Phase (16_and_older)
+### Wyoming::Uinta Active Phase (18_and_older)
 
 ## Wyoming::Washakie
 
@@ -4373,7 +4380,7 @@ Please note the Pfizer vaccine is authorized for use in people age 16 and older.
 | scheduling_phone | [1-800-438-5795](tel:1-800-438-5795) |
 
 
-### Wyoming::Washakie Active Phase (16_and_older)
+### Wyoming::Washakie Active Phase (18_and_older)
 
 ## Wyoming::Weston
 
@@ -4386,4 +4393,4 @@ Please note the Pfizer vaccine is authorized for use in people age 16 and older.
 | scheduling_phone | [1-800-438-5795](tel:1-800-438-5795) |
 
 
-### Wyoming::Weston Active Phase (16_and_older)
+### Wyoming::Weston Active Phase (18_and_older)
