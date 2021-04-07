@@ -82,7 +82,7 @@ async function getPosition(
 		'data.results[0].position',
 		null
 	)
-	const result: GeoPoint | null = pos ? ([pos.lat, pos.lon] as GeoPoint) : null
+	const result: GeoPoint | null = pos ? ([pos.lon, pos.lat] as GeoPoint) : null
 	if (result != null) {
 		cache.set(provider.provider_id, result)
 	}

@@ -15,7 +15,7 @@ const FIND_PROVIDERS_IN_RADIUS = `
 	where 
 		ST_DISTANCE(
 			p.position, 
-			{ "type": "Point", "coordinates": [47.56, -122.64]}
+			{ "type": "Point", "coordinates": [@lon, @lat]}
 		) < @radiusMeters
 `
 export const GET: Operation = [
