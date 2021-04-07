@@ -39,9 +39,7 @@ export const GET: Operation = [
 				maxItemCount: 100,
 			}
 		)
-		console.log('RESPONSE', response)
 		const locations = await response.fetchNext()
-		console.log('LOCATIONS', locations)
 		res.json(locations.resources)
 	},
 ]
