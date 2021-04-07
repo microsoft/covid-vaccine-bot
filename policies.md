@@ -1175,16 +1175,9 @@ Please note that anyone younger than 18 must receive the Pfizer vaccine. It is t
 | eligibility | [https://www.maine.gov/covid19/vaccines/phases](https://www.maine.gov/covid19/vaccines/phases) |
 
 
-## Maine Active Phase (age_50_and_older)
+## Maine Active Phase (_age_16_and_older)
 
-* Are you age 50+?
-* Are you an educator or child care provider?
-	* Vaccination sites will soon start offering appointments to Maine PreK-12 teachers and school staff, and workers at licensed child care facilities. Federal policy directs Hannaford, Walgreens, and Walmart pharmacies to prioritize these workers. It may take time for appointments to become available. Age-eligible individuals may still also make a vaccine appointment at one of Maine's vaccination sites. 
-* Are you classified as an essential worker?
-	* Health care, public safety, and critical COVID-19 infrastructure personnel should contact their employer or their professional associations to learn how to get a vaccine. 
-
-Only patient- or public-facing health care, long-term care, and public safety personnel are eligible for vaccination. If eligible, your employer will arrange for how you will get vaccinated. Only frontline workers in organizations determined by Maine CDC to be critical to the Maine COVID-19 response are eligible to get vaccinated at this time. Those organizations have been notified by State officials.
-* Are you a long-term care resident?
+* Are you age 16+?
 
 # Marshall Islands
 
