@@ -1613,77 +1613,9 @@ More detailed list available at the link
 | scheduling_phone | [1-800-401-0946](tel:1-800-401-0946) |
 
 
-## Nevada Active Phase (1a)
+## Nevada Active Phase (age_16)
 
-* Are you a healthcare worker?
-	* - General Medical and Surgical Hospital Staff
-- Psychiatric and Substance Abuse Hospital Staff
-- Emergency Medical Services Personnel
-- Frontline Public Health Workforce
-- Laboratory Workers
-- Pharmacists and Pharmacy Technicians
-- Outpatient and Home Health Providers
-* Are you experiencing homelessness?
-* Are you a person with a rare condition or disability that put you at higher risk?
-* Are you age 16+, and have a high-risk medical condition?
-	* The following conditions are included in the state's underlying conditions prioritization list:
-- Asthma (moderate to severe)
-- Cancer
-- Cerebrovascular Disease, Hypertension, or High Blood Pressure
-- Chronic Kidney Disease
-- COPD (chronic obstructive pulmonary disease), Cystic Fibrosis, Pulmonary Fibrosis, and other chronic lung diseases
-- Dementia
-- Down Syndrome 
-- Heart conditions, such as heart failure, coronary heart disease, or cardiomyopathies
-- Immunocompromised status
-- Liver Disease
-- Overweight/Obese
-- Pregnancy
-- Thalassemia (a blood disorder)
-- Type 1 & Type 2 Diabetes mellitus
-- Sickle Cell Disease
-- Smoking
-
-Individuals with any underlying medical condition (including those conditions that are NOT on the current list) should consult with their healthcare providers about personal risk factors and circumstances to determine whether extra precautions are warranted.  (see [here](https://www.immunizenevada.org/underlying-conditions))
-* Are you classified as an essential worker?
-	* Frontline/Essential Workforce prioritization can vary by county but usually includes:
-
-PUBLIC SAFETY & SECURITY 
-- NV Dept. of Corrections Staff
-- Law Enforcement, Public Safety, and National Security
-- State and Local Emergency Operations Managers/Staff
-
-FRONTLINE COMMUNITY SUPPORT
-- Education (Pre-K & K-12) and Childcare - public/private/charter school settings
-- Nevada System of Higher Education (NSHE) Frontline Educators, Staff & Students
-- Community Support Frontline Staff (i.e. frontline workers who support food, shelter, court/legal and social services, and other necessities of life for needy groups and individuals)
-- Continuity of Governance (State and Local)
-- Essential Public Transportation
-- Remaining Essential Public Health Workforce 
-- Mortuary Services
-
-FRONTLINE SUPPLY CHAIN & LOGISTICS
-- Agriculture and Food Processing
-- End-to-End Essential Goods Supply Chain (includes manufacturing, transport, distribution and sale of essential items, e.g. grocery store employees) 
-- Utilities and Communications Infrastructure
-- Nevada Department of Transportation and Local Emergency Road Personnel
-- Frontline Airport Operations 
-- Other Essential Transportation
-
-FRONTLINE COMMERCE & SERVICE INDUSTRIES
-- Food Service and Hospitality 
-- Hygiene Products and Services
-- Depository Credit Institution Workforce 
-
-FRONTLINE INFRASTRUCTURE
-- Infrastructure, Shelter and Housing (Construction)
-- Essential Mining Operations
-
-OTHER
--Community Support Administrative Staff
--NSHE Students living in campus-sponsored residential settings (e.g., dorms, campus-sponsored apartments, etc.)
--NSHE Remaining Workforce (see [here](https://www.immunizenevada.org/county-specific-covid-19-vaccine-plan))
-* Are you age 65+?
+* Are you age 16+?
 
 ## Nevada Regions
 
