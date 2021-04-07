@@ -12,6 +12,13 @@ export const convertCSVDataToObj = (csvData: any) => {
 		const stringId: string = row[stringLabel]
 
 		delete row[stringLabel]
+		Object.keys(row).forEach(k => {
+			if ((!k.endsWith('sms') || !k.endsWith('voice'))) {
+				!(`${k}-sms` in row) && (row[`${k}-sms`]= "")
+				!(`${k}-voice` in row) && (row[`${k}-voice`]= "")
+			}
+		})
+
 		returnObj[stringId.toLowerCase()] = row
 	})
 
