@@ -1153,6 +1153,8 @@ export const translateLocationName = mutatorAction(
 					store.globalFileData.cdcStateNames.content[item.key] = {
 						...store.globalFileData.cdcStateNames.content[item.key],
 						[item.toKey]: item.to,
+						[`${item.toKey}-sms`]: item.sms,
+						[`${item.toKey}-voice`]: item.voice,
 					}
 				} else {
 					store.globalFileData.cdcStateNames.content = {
@@ -1160,6 +1162,8 @@ export const translateLocationName = mutatorAction(
 						...{
 							[item.key]: {
 								[item.toKey]: item.to,
+								[`${item.toKey}-sms`]: item.sms,
+								[`${item.toKey}-voice`]: item.voice,
 							},
 						},
 					}
@@ -1182,6 +1186,8 @@ export const translateQualifier = mutatorAction(
 					store.globalFileData.customStrings.content[item.key] = {
 						...store.globalFileData.customStrings.content[item.key],
 						[item.toKey]: item.to,
+						[`${item.toKey}-sms`]: item.sms,
+						[`${item.toKey}-voice`]: item.voice,
 					}
 				} else {
 					store.globalFileData.customStrings.content = {
@@ -1189,6 +1195,8 @@ export const translateQualifier = mutatorAction(
 						...{
 							[item.key]: {
 								[item.toKey]: item.to,
+								[`${item.toKey}-sms`]: item.sms,
+								[`${item.toKey}-voice`]: item.voice,
 							},
 						},
 					}
@@ -1212,10 +1220,20 @@ export const translateMisc = mutatorAction('translateMisc', (item: any) => {
 					store.repoFileData[item.parent].strings.content[item.key][
 						item.toKey
 					] = item.to
+					store.repoFileData[item.parent].strings.content[item.key][
+						`${item.toKey}-sms`
+					] = item.sms
+					store.repoFileData[item.parent].strings.content[item.key][
+						`${item.toKey}-voice`
+					] = item.voice
 				} else {
 					store.repoFileData[item.parent].strings.content[item.key] = {
 						...store.repoFileData[item.parent].strings.content[item.key],
-						...{ [item.toKey]: item.to },
+						...{
+							[item.toKey]: item.to,
+							[`${item.toKey}-sms`]: item.sms,
+							[`${item.toKey}-voice`]: item.voice,
+						},
 					}
 				}
 
@@ -1234,6 +1252,8 @@ export const translateMisc = mutatorAction('translateMisc', (item: any) => {
 						store.globalFileData.customStrings.content[item.key] = {
 							...store.globalFileData.customStrings.content[item.key],
 							[item.toKey]: item.to,
+							[`${item.toKey}-sms`]: item.sms,
+							[`${item.toKey}-voice`]: item.voice,
 						}
 					} else {
 						store.globalFileData.customStrings.content = {
@@ -1241,6 +1261,8 @@ export const translateMisc = mutatorAction('translateMisc', (item: any) => {
 							...{
 								[item.key]: {
 									[item.toKey]: item.to,
+									[`${item.toKey}-sms`]: item.sms,
+									[`${item.toKey}-voice`]: item.voice,
 								},
 							},
 						}
@@ -1250,6 +1272,8 @@ export const translateMisc = mutatorAction('translateMisc', (item: any) => {
 						store.globalFileData.cdcStateLinks.content[item.key] = {
 							...store.globalFileData.cdcStateLinks.content[item.key],
 							[item.toKey]: item.to,
+							[`${item.toKey}-sms`]: item.sms,
+							[`${item.toKey}-voice`]: item.voice,
 						}
 					} else {
 						store.globalFileData.cdcStateLinks.content = {
@@ -1257,6 +1281,8 @@ export const translateMisc = mutatorAction('translateMisc', (item: any) => {
 							...{
 								[item.key]: {
 									[item.toKey]: item.to,
+									[`${item.toKey}-sms`]: item.sms,
+									[`${item.toKey}-voice`]: item.voice,
 								},
 							},
 						}

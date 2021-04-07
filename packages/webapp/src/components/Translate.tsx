@@ -188,6 +188,8 @@ export default observer(function Translate() {
 					sms: translateToValue_SMS,
 					voice: translateToValue_Voice,
 					_to: translateToValue,
+					_sms: translateToValue_SMS,
+					_voice: translateToValue_Voice,
 					parent: 'global',
 					category: 'locations',
 				})
@@ -201,6 +203,8 @@ export default observer(function Translate() {
 					sms: translateLinkToValue_SMS,
 					voice: translateLinkToValue_Voice,
 					_to: translateLinkToValue,
+					_sms: translateLinkToValue_SMS,
+					_voice: translateLinkToValue_Voice,
 					parent: 'global',
 					category: 'state_link',
 				})
@@ -224,6 +228,8 @@ export default observer(function Translate() {
 							sms: value[`${toLanguage.current}-sms`],
 							voice: value[`${toLanguage.current}-voice`],
 							_to: value[toLanguage.current],
+							_sms: value[`${toLanguage.current}-sms`],
+							_voice: value[`${toLanguage.current}-voice`],
 							parent: 'global',
 							category: 'qualifiers',
 						})
@@ -237,6 +243,8 @@ export default observer(function Translate() {
 							sms: value[`${toLanguage.current}-sms`],
 							voice: value[`${toLanguage.current}-voice`],
 							_to: value[toLanguage.current],
+							_sms: value[`${toLanguage.current}-sms`],
+							_voice: value[`${toLanguage.current}-voice`],
 							parent: 'global',
 							category: 'other',
 						})
@@ -264,6 +272,8 @@ export default observer(function Translate() {
 								sms: value[`${toLanguage.current}-sms`],
 								voice: value[`${toLanguage.current}-voice`],
 								_to: value[toLanguage.current],
+								_sms: value[`${toLanguage.current}-sms`],
+								_voice: value[`${toLanguage.current}-voice`],
 								parent: aKey,
 								category: 'state',
 							})
@@ -389,22 +399,67 @@ export default observer(function Translate() {
 	)
 
 	const updateLocationTranslation = useCallback((item) => {
+		let hasUpdate: boolean = false
 		if (item.to && item.to.toLowerCase() !== item._to.toLowerCase()) {
 			item.to = toProperCase(item.to).trim()
+			hasUpdate = true
+		}
+
+		if (item.sms && item.sms.toLowerCase() !== item._sms.toLowerCase()) {
+			item.sms = toProperCase(item.sms).trim()
+			hasUpdate = true
+		}
+
+		if (item.voice && item.voice.toLowerCase() !== item._voice.toLowerCase()) {
+			item.voice = toProperCase(item.voice).trim()
+			hasUpdate = true
+		}
+
+		if (hasUpdate) {
 			translateLocationName(item)
 		}
 	}, [])
 
 	const updateQualifierTranslation = useCallback((item) => {
+		let hasUpdate: boolean = false
 		if (item.to && item.to.toLowerCase() !== item._to.toLowerCase()) {
 			item.to = String(item.to).trim()
+			hasUpdate = true
+		}
+
+		if (item.sms && item.sms.toLowerCase() !== item._sms.toLowerCase()) {
+			item.sms = String(item.sms).trim()
+			hasUpdate = true
+		}
+
+		if (item.voice && item.voice.toLowerCase() !== item._voice.toLowerCase()) {
+			item.voice = String(item.voice).trim()
+			hasUpdate = true
+		}
+
+		if (hasUpdate) {
 			translateQualifier(item)
 		}
 	}, [])
 
 	const updateMiscTranslation = useCallback((item) => {
+		let hasUpdate: boolean = false
 		if (item.to && item.to.toLowerCase() !== item._to.toLowerCase()) {
 			item.to = String(item.to).trim()
+			hasUpdate = true
+		}
+
+		if (item.sms && item.sms.toLowerCase() !== item._sms.toLowerCase()) {
+			item.sms = String(item.sms).trim()
+			hasUpdate = true
+		}
+
+		if (item.voice && item.voice.toLowerCase() !== item._voice.toLowerCase()) {
+			item.voice = String(item.voice).trim()
+			hasUpdate = true
+		}
+
+		if (hasUpdate) {
 			translateMisc(item)
 		}
 	}, [])
@@ -722,39 +777,47 @@ export default observer(function Translate() {
 							</div>
 							{!isSectionCollapse.locations &&
 								(locationList.length > 0 ? (
-									locationList.map((val: any, idx: number) => {
-										return (
-											<div
-												key={`locationRow-${idx}`}
-												className={`translateListRow${
-													idx % 2 > 0 ? '' : ' altRow'
-												}`}
-											>
-												<div className="fromCol">{val.from}</div>
-												<TextField
-													name={val.toKey}
-													value={val.to}
-													className="toCol"
-													onChange={(ev) => handleLocationTextChange(ev, val)}
-													onBlur={() => updateLocationTranslation(val)}
-												/>
-												<TextField
-													name={`${val.toKey}-sms`}
-													value={val.sms}
-													className="toCol"
-													onChange={(ev) => handleLocationTextChange(ev, val)}
-													onBlur={() => updateLocationTranslation(val)}
-												/>
-												<TextField
-													name={`${val.toKey}-voice`}
-													value={val.voice}
-													className="toCol"
-													onChange={(ev) => handleLocationTextChange(ev, val)}
-													onBlur={() => updateLocationTranslation(val)}
-												/>
-											</div>
-										)
-									})
+									<>
+										<div className="translateListRow">
+											<div className="fromCol"></div>
+											<div className="toCol">General</div>
+											<div className="toCol">SMS</div>
+											<div className="toCol">Voice</div>
+										</div>
+										{locationList.map((val: any, idx: number) => {
+											return (
+												<div
+													key={`locationRow-${idx}`}
+													className={`translateListRow${
+														idx % 2 > 0 ? '' : ' altRow'
+													}`}
+												>
+													<div className="fromCol">{val.from}</div>
+													<TextField
+														name={val.toKey}
+														value={val.to}
+														className="toCol"
+														onChange={(ev) => handleLocationTextChange(ev, val)}
+														onBlur={() => updateLocationTranslation(val)}
+													/>
+													<TextField
+														name={`${val.toKey}-sms`}
+														value={val.sms}
+														className="toCol"
+														onChange={(ev) => handleLocationTextChange(ev, val)}
+														onBlur={() => updateLocationTranslation(val)}
+													/>
+													<TextField
+														name={`${val.toKey}-voice`}
+														value={val.voice}
+														className="toCol"
+														onChange={(ev) => handleLocationTextChange(ev, val)}
+														onBlur={() => updateLocationTranslation(val)}
+													/>
+												</div>
+											)
+										})}
+									</>
 								) : (
 									<div className="emptyTranslateListRow">
 										No missing location translations found for:{' '}
@@ -782,51 +845,59 @@ export default observer(function Translate() {
 							</div>
 							{!isSectionCollapse.qualifiers &&
 								(qualifierList.length > 0 ? (
-									qualifierList.map((val: any, idx: number) => {
-										return (
-											<div
-												key={`qualifierRow-${idx}`}
-												className={`translateListRow${
-													idx % 2 > 0 ? '' : ' altRow'
-												} qualifier`}
-											>
-												<div className="fromCol">{val.from}</div>
-												<TextField
-													name={val.toKey}
-													value={val.to}
-													className="toCol"
-													autoAdjustHeight={true}
-													resizable={false}
-													multiline={true}
-													rows={Math.ceil(val.from.length / 100)}
-													onChange={(ev) => handleQualifierTextChange(ev, val)}
-													onBlur={() => updateQualifierTranslation(val)}
-												/>
-												<TextField
-													name={`${val.toKey}-sms`}
-													value={val.sms}
-													className="toCol"
-													autoAdjustHeight={true}
-													resizable={false}
-													multiline={true}
-													rows={Math.ceil(val.from.length / 100)}
-													onChange={(ev) => handleQualifierTextChange(ev, val)}
-													onBlur={() => updateQualifierTranslation(val)}
-												/>
-												<TextField
-													name={`${val.toKey}-voice`}
-													value={val.voice}
-													className="toCol"
-													autoAdjustHeight={true}
-													resizable={false}
-													multiline={true}
-													rows={Math.ceil(val.from.length / 100)}
-													onChange={(ev) => handleQualifierTextChange(ev, val)}
-													onBlur={() => updateQualifierTranslation(val)}
-												/>
-											</div>
-										)
-									})
+									<>
+										<div className="translateListRow qualifier">
+											<div className="fromCol"></div>
+											<div className="toCol">General</div>
+											<div className="toCol">SMS</div>
+											<div className="toCol">Voice</div>
+										</div>
+										{qualifierList.map((val: any, idx: number) => {
+											return (
+												<div
+													key={`qualifierRow-${idx}`}
+													className={`translateListRow${
+														idx % 2 > 0 ? '' : ' altRow'
+													} qualifier`}
+												>
+													<div className="fromCol">{val.from}</div>
+													<TextField
+														name={val.toKey}
+														value={val.to}
+														className="toCol"
+														autoAdjustHeight={true}
+														resizable={false}
+														multiline={true}
+														rows={Math.ceil(val.from.length / 100)}
+														onChange={(ev) => handleQualifierTextChange(ev, val)}
+														onBlur={() => updateQualifierTranslation(val)}
+													/>
+													<TextField
+														name={`${val.toKey}-sms`}
+														value={val.sms}
+														className="toCol"
+														autoAdjustHeight={true}
+														resizable={false}
+														multiline={true}
+														rows={Math.ceil(val.from.length / 100)}
+														onChange={(ev) => handleQualifierTextChange(ev, val)}
+														onBlur={() => updateQualifierTranslation(val)}
+													/>
+													<TextField
+														name={`${val.toKey}-voice`}
+														value={val.voice}
+														className="toCol"
+														autoAdjustHeight={true}
+														resizable={false}
+														multiline={true}
+														rows={Math.ceil(val.from.length / 100)}
+														onChange={(ev) => handleQualifierTextChange(ev, val)}
+														onBlur={() => updateQualifierTranslation(val)}
+													/>
+												</div>
+											)
+										})}
+									</>
 								) : (
 									<div className="emptyTranslateListRow">
 										No missing qualifier translations found for:{' '}
@@ -871,6 +942,12 @@ export default observer(function Translate() {
 											) : (
 												<div></div>
 											)}
+										</div>
+										<div className="translateListRow misc">
+											<div className="fromCol"></div>
+											<div className="toCol">General</div>
+											<div className="toCol">SMS</div>
+											<div className="toCol">Voice</div>
 										</div>
 										{miscList.map((val: any, idx: number) => {
 											return (
