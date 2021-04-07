@@ -17,6 +17,7 @@ import {
 	updateLocationList,
 	addPhase,
 	updatePhase,
+	removePhase,
 	updateLocationData,
 	deleteLocation,
 } from '../mutators/repoMutators'
@@ -24,6 +25,7 @@ import { getAppStore } from '../store/store'
 import { toProperCase } from '../utils/textUtils'
 import LocationForm from './LocationForm'
 import DeleteLocationForm from './DeleteLocationForm'
+import DeletePhaseForm from './DeletePhaseForm'
 import LocationsPhases from './LocationsPhases'
 import PhaseForm from './PhaseForm'
 
@@ -121,6 +123,7 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 	useEffect(() => {
 		const selectedStateObj = state.repoFileData[selectedState.key]
 		const regions = selectedStateObj?.regions ?? {}
+
 		if (Object.keys(regions).length > 0) {
 			const tempList: any[] = []
 			Object.entries(regions).forEach(([key, value]) => {
@@ -136,6 +139,8 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 			})
 			setFilteredRegionsList(tempList)
 			stateRegionsFullList.current = tempList
+		} else {
+			stateRegionsFullList.current = []
 		}
 
 		if (selectedStateObj) {
@@ -208,11 +213,13 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 			if (column.key === 'editCol') {
 				return state.isEditable ? (
 					<span>
-						<FontIcon
-							iconName="Cancel"
-							className="deleteIcon"
-							onClick={() => onLocationDeleteFormOpen(item)}
-						/>
+						{column?.fieldName === 'editLocation'  && (
+							<FontIcon
+								iconName="Cancel"
+								className="deleteIcon"
+								onClick={() => onLocationDeleteFormOpen(item)}
+							/>
+						)}
 						<FontIcon
 							iconName="Edit"
 							className="editIcon"
@@ -379,7 +386,7 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 								</div>
 							)}
 						</div>
-						{filteredRegionsList && stateRegionsFullList.current.length > 0 ? (
+						{filteredRegionsList && filteredRegionsList.length > 0 && stateRegionsFullList.current.length > 0 ? (
 							<DetailsList
 								items={filteredRegionsList}
 								columns={subLocationsColumns}
