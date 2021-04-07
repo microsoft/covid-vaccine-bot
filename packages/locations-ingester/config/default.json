@@ -3,7 +3,7 @@
 		"endpoint": "https://covid-data-cosmos.documents.azure.com:443/",
 		"key": null,
 		"database": "vaccination",
-		"container": "locations"
+		"container": "providers"
 	},
 	"azureMaps": {
 		"key": null

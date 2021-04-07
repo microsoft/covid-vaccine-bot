@@ -2,9 +2,8 @@
  * Copyright (c) Microsoft. All rights reserved.
  * Licensed under the MIT license. See LICENSE file in the project.
  */
-
 export interface ProviderLocation {
-	id: string
+	provider_id: string
 	location: {
 		name: string
 		store_no: number

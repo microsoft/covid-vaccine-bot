@@ -42,9 +42,9 @@ export async function transformData(file: string): Promise<void> {
 	})
 
 	const recordsById = new Map<string, ProviderLocation>()
-	records.forEach(({ provider_location_guid: id, ...row }) => {
+	records.forEach(({ provider_location_guid: provider_id, ...row }) => {
 		const rec: ProviderLocation = {
-			id,
+			provider_id,
 			location: {
 				name: row.loc_name,
 				store_no: row.loc_store_no,
@@ -80,10 +80,10 @@ export async function transformData(file: string): Promise<void> {
 			],
 		}
 
-		if (!recordsById.has(rec.id)) {
-			recordsById.set(rec.id, rec)
+		if (!recordsById.has(rec.provider_id)) {
+			recordsById.set(rec.provider_id, rec)
 		} else {
-			recordsById.get(rec.id)!.meds.push(rec.meds[0])
+			recordsById.get(rec.provider_id)!.meds.push(rec.meds[0])
 		}
 	})
 

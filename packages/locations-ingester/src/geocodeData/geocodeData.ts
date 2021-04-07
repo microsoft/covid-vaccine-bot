@@ -1,10 +1,15 @@
+/*!
+ * Copyright (c) Microsoft. All rights reserved.
+ * Licensed under the MIT license. See LICENSE file in the project.
+ */
+import fs from 'fs'
 import axios from 'axios'
 import config from 'config'
-import ProgressBar from 'progress'
 import _ from 'lodash'
-import { getLatestJsonRecords } from '../io'
-import { GeoCache, readGeocodeCache, writeGeocodeCache } from './geocodeCache'
+import ProgressBar from 'progress'
+import { getLatestFilePath, getLatestJsonRecords } from '../io'
 import { GeoPoint, ProviderLocation } from '../types'
+import { GeoCache, readGeocodeCache, writeGeocodeCache } from './geocodeCache'
 
 const MAPS_KEY = config.get<string>('azureMaps.key')
 const API_URL = 'https://atlas.microsoft.com/search/address/json'
@@ -17,14 +22,21 @@ export async function geocodeData(): Promise<void> {
 	const records = getLatestJsonRecords()
 	const chunks = _.chunk(records, 10)
 	const geoCache = readGeocodeCache()
-	console.log(`read ${records.length} input records`)
+	console.log(
+		`read ${records.length} input records, cache warmed with ${geoCache.size} records`
+	)
 
 	const bar = new ProgressBar(':bar', { total: chunks.length })
 	try {
-		for (let chunk of chunks) {
+		for (const chunk of chunks) {
 			await Promise.all(chunk.map((c) => geocodeLocation(c, geoCache)))
 			bar.tick()
 		}
+		fs.writeFileSync(
+			getLatestFilePath().replace('.csv', '.geocoded.json'),
+			records.map((r) => JSON.stringify(r)).join('\n'),
+			{ encoding: 'utf-8' }
+		)
 	} catch (err) {
 		console.error('error geocoding data', err)
 	} finally {
@@ -33,13 +45,30 @@ export async function geocodeData(): Promise<void> {
 }
 
 async function geocodeLocation(
-	location: ProviderLocation,
+	provider: ProviderLocation,
 	cache: GeoCache
 ): Promise<void> {
+	const point = await getPosition(provider, cache)
+	if (point) {
+		provider.position = {
+			type: 'Point',
+			coordinates: point,
+		}
+	}
+}
+
+async function getPosition(
+	provider: ProviderLocation,
+	cache: GeoCache
+): Promise<GeoPoint | null> {
 	if (!MAPS_KEY) {
 		throw new Error('AZURE_MAPS_KEY must be defined')
 	}
-	const query = `${location.loc_admin_street1} ${location.loc_admin_zip}`
+	if (cache.has(provider.provider_id)) {
+		return cache.get(provider.provider_id) || null
+	}
+
+	const query = `${provider.location.street1} ${provider.location.zip}`
 	const response = await axios.get(API_URL, {
 		params: {
 			'api-version': '1.0',
@@ -53,12 +82,9 @@ async function geocodeLocation(
 		'data.results[0].position',
 		null
 	)
-	if (pos != null) {
-		const point: GeoPoint = [pos.lat, pos.lon]
-		location.position = {
-			type: 'Point',
-			coordinates: point,
-		}
-		cache.set(location.id, point)
+	const result: GeoPoint | null = pos ? ([pos.lat, pos.lon] as GeoPoint) : null
+	if (result != null) {
+		cache.set(provider.provider_id, result)
 	}
+	return result
 }

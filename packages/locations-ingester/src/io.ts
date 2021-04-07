@@ -54,3 +54,7 @@ export function getJsonRecords(file: string): ProviderLocation[] {
 export function getLatestJsonRecords(): ProviderLocation[] {
 	return getJsonRecords(getLatestFilePath())
 }
+
+export function getLatestGeoJsonRecords(): ProviderLocation[] {
+	return getJsonRecords(getLatestFilePath().replace('.csv', '.geocoded.json'))
+}

@@ -9,6 +9,7 @@
 		"ingest:fetch": "ts-node src/fetchS3Data",
 		"ingest:xform": "ts-node src/transformData",
 		"ingest:geocode": "ts-node src/geocodeData",
+		"ingest:write": "ts-node src/writeCosmosData",
 		"start:ingest": "ts-node src/index"
 	},
 	"dependencies": {
