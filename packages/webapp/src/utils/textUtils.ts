@@ -33,11 +33,7 @@ export const getLanguageKeys = () => {
 }
 
 export const getLanguageOptions = (excludeLanguage?: string) => {
-	const languageKeys = 'en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th'.split(
-		','
-	)
-
-	return languageKeys
+	return getLanguageKeys()
 		.map((key) => {
 			return {
 				key: key,
