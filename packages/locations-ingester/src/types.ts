@@ -5,6 +5,47 @@
 
 export interface ProviderLocation {
 	id: string
+	location: {
+		name: string
+		store_no: number
+		phone: string
+		street1: string
+		street2: string
+		city: string
+		state: string
+		zip: string
+	}
+	position?: {
+		type: 'Point'
+		coordinates: GeoPoint
+	}
+	hours: {
+		monday: string
+		tuesday: string
+		wednesday: string
+		thursday: string
+		friday: string
+		saturday: string
+		sunday: string
+	}
+	meds: MedInfo[]
+	web_address: string
+	pre_screen: string
+	insurance_accepted: boolean
+	walkins_accepted: boolean
+}
+
+export interface MedInfo {
+	name: string
+	provider_notes: string
+	ndc: string
+	in_stock: boolean
+	supply_level: number
+	quantity_last_updated: Date
+}
+
+export interface ProviderLocationCsv {
+	provider_location_guid: string
 	loc_store_no: number
 	loc_phone: string
 	loc_name: string
@@ -29,11 +70,7 @@ export interface ProviderLocation {
 	in_stock: boolean
 	supply_level: number
 	quantity_last_updated: Date
-	meds: string[]
-	position: {
-		type: 'Point'
-		coordinates: GeoPoint
-	}
+	med_name: string
 }
 
 export type GeoPoint = [number, number]
