@@ -778,7 +778,7 @@ export default observer(function Translate() {
 									}
 									className="groupToggleIcon"
 								/>
-								<div>Locations</div>
+								<div>Locations ({locationList.length})</div>
 							</div>
 							{!isSectionCollapse.locations &&
 								(locationList.length > 0 ? (
@@ -846,7 +846,7 @@ export default observer(function Translate() {
 									}
 									className="groupToggleIcon"
 								/>
-								<div>Qualifiers</div>
+								<div>Qualifiers ({qualifierList.length})</div>
 							</div>
 							{!isSectionCollapse.qualifiers &&
 								(qualifierList.length > 0 ? (
@@ -924,7 +924,7 @@ export default observer(function Translate() {
 									}
 									className="groupToggleIcon"
 								/>
-								<div>Miscellaneous</div>
+								<div>Miscellaneous ({miscList.length})</div>
 							</div>
 							{!isSectionCollapse.misc &&
 								(miscList.length > 0 ? (
