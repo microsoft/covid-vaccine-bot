@@ -12,7 +12,7 @@
 			"url": "https://www.maine.gov/covid19/vaccines/phases"
 		}
 	},
-	"activePhase": "age_50_and_older",
+	"activePhase": "_age_16_and_older",
 	"phases": [
 		{
 			"id": "1a",
