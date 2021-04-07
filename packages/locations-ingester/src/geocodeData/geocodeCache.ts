@@ -1,3 +1,7 @@
+/*!
+ * Copyright (c) Microsoft. All rights reserved.
+ * Licensed under the MIT license. See LICENSE file in the project.
+ */
 import fs from 'fs'
 import path from 'path'
 import { GeoPoint } from '../types'
@@ -10,17 +14,16 @@ export type GeoCache = Map<string, GeoPoint>
 export function readGeocodeCache(): GeoCache {
 	const cache = new Map<string, GeoPoint>()
 	if (fs.existsSync(GEO_CACHE_FILE)) {
+		// eslint-disable-next-line @typescript-eslint/no-var-requires
 		const data = require(GEO_CACHE_FILE) as PersistedGeoCacheItem[]
-		data.forEach((d) => {
-			cache.set(d.id, d.coordinates)
-		})
+		data.forEach((d) => cache.set(d.id, d.coordinates))
 	}
 	return cache
 }
 
 export function writeGeocodeCache(cache: GeoCache): void {
 	const persistedData: PersistedGeoCacheItem[] = []
-	for (let id of cache.keys()) {
+	for (const id of cache.keys()) {
 		persistedData.push({
 			id,
 			coordinates: cache.get(id)!,

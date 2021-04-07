@@ -2,8 +2,8 @@
  * Copyright (c) Microsoft. All rights reserved.
  * Licensed under the MIT license. See LICENSE file in the project.
  */
-import path from 'path'
 import fs from 'fs'
+import path from 'path'
 import { ProviderLocation } from './types'
 
 export function getLatestFilePath() {

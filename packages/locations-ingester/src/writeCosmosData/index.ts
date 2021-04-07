@@ -1,3 +1,7 @@
+/*!
+ * Copyright (c) Microsoft. All rights reserved.
+ * Licensed under the MIT license. See LICENSE file in the project.
+ */
 import { UpsertOperationInput } from '@azure/cosmos'
 import _ from 'lodash'
 import ProgressBar from 'progress'
@@ -11,7 +15,7 @@ async function writeData() {
 	const chunks = _.chunk(data, 100)
 	const bar = new ProgressBar(':bar', { total: chunks.length })
 
-	for (let chunk of chunks) {
+	for (const chunk of chunks) {
 		await container.items.bulk(
 			chunk.map((r) => {
 				return {
