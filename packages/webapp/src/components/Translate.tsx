@@ -45,7 +45,7 @@ const filterDropdownStyles = {
 }
 
 export default observer(function Translate() {
-	const { globalFileData, repoFileData, currentLanguage, isDataRefreshing } = getAppStore()
+	const { globalFileData, repoFileData, currentLanguage, isDataRefreshing, pendingChanges } = getAppStore()
 	const languageOptions = getLanguageOptions()
 	const translationFilter = [
 		{
@@ -110,9 +110,9 @@ export default observer(function Translate() {
 		setMiscStateSpecFilterState,
 	] = useState<string>('')
 	const [isSectionCollapse, setSectionCollapse] = useState<any>({
-		locations: false,
-		qualifiers: false,
-		misc: false,
+		locations: true,
+		qualifiers: true,
+		misc: true,
 	})
 
 	const buildTranslationsLists = useCallback(() => {
@@ -305,7 +305,12 @@ export default observer(function Translate() {
 	useEffect(() => {
 		mainLanguage.current = currentLanguage
 		buildTranslationsLists()
-	}, [currentLanguage, mainLanguage, buildTranslationsLists])
+		if (!pendingChanges) {
+			locationChanges.current = {}
+			qualifierChanges.current = {}
+			miscChanges.current = {}
+		}
+	}, [currentLanguage, mainLanguage, buildTranslationsLists, pendingChanges])
 
 	const onCollapseSection = useCallback(
 		(name: string) => {
