@@ -2,7 +2,8 @@
  * Copyright (c) Microsoft. All rights reserved.
  * Licensed under the MIT license. See LICENSE file in the project.
  */
-const appLanguageKeys = String(process.env.REACT_APP_LANGUAGE_KEYS)
+
+import configs from '../config'
 
 export const toProperCase = (text: string): string => {
 	const res = text
@@ -29,7 +30,7 @@ export const formatId = (text: string) => {
 }
 
 export const getLanguageKeys = () => {
-	return appLanguageKeys.split(
+	return configs.languageKeys.split(
 		','
 	)
 }
