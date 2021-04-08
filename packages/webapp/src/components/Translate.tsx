@@ -78,10 +78,6 @@ export default observer(function Translate() {
 	]
 	const [showLoading, setShowLoading] = useState<boolean>(false)
 
-	const locationChanges = useRef<any>({})
-	const qualifierChanges = useRef<any>({})
-	const miscChanges = useRef<any>({})
-
 	const locationFullList = useRef<any[]>([])
 	const qualifierFullList = useRef<any[]>([])
 	const miscFullList = useRef<any[]>([])
@@ -302,16 +298,6 @@ export default observer(function Translate() {
 		)
 	}, [globalFileData, repoFileData])
 
-	useEffect(() => {
-		mainLanguage.current = currentLanguage
-		buildTranslationsLists()
-		if (!pendingChanges) {
-			locationChanges.current = {}
-			qualifierChanges.current = {}
-			miscChanges.current = {}
-		}
-	}, [currentLanguage, mainLanguage, buildTranslationsLists, pendingChanges])
-
 	const onCollapseSection = useCallback(
 		(name: string) => {
 			setSectionCollapse({
@@ -325,7 +311,6 @@ export default observer(function Translate() {
 	const handleLocationTextChange = useCallback(
 		(ev, rowItem) => {
 			let change: any = {}
-
 			switch(ev.target.name) {
 				case rowItem.toKey:
 					change = { to: ev.target.value }
@@ -344,9 +329,8 @@ export default observer(function Translate() {
 				...change
 			}
 			setLocationList([...locationList])
-			locationChanges.current = locationList[idx]
 		},
-		[locationChanges, locationList, setLocationList]
+		[locationList, setLocationList]
 	)
 
 	const handleQualifierTextChange = useCallback(
@@ -371,9 +355,8 @@ export default observer(function Translate() {
 				...change
 			}
 			setQualifierList([...qualifierList])
-			qualifierChanges.current = qualifierList[idx]
 		},
-		[qualifierChanges, qualifierList, setQualifierList]
+		[qualifierList, setQualifierList]
 	)
 
 	const handleMiscTextChange = useCallback(
@@ -398,9 +381,8 @@ export default observer(function Translate() {
 				...change
 			}
 			setMiscList([...miscList])
-			miscChanges.current = miscList[idx]
 		},
-		[miscChanges, miscList, setMiscList]
+		[miscList, setMiscList]
 	)
 
 	const updateLocationTranslation = useCallback((item) => {
@@ -708,6 +690,15 @@ export default observer(function Translate() {
 		const csvUrl = URL.createObjectURL(csvData)
 		window.open(csvUrl)
 	}
+
+	useEffect(() => {
+		mainLanguage.current = currentLanguage
+		buildTranslationsLists()
+		if (!pendingChanges) {
+			onTranslationFilterChange(null, {key: translationFilterState})
+		}
+	}, [currentLanguage, mainLanguage, buildTranslationsLists, pendingChanges, onTranslationFilterChange, translationFilterState])
+
 
 	return (
 		<div className="translatePageContainer">
