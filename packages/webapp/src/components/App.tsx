@@ -40,6 +40,8 @@ import './App.scss'
 
 export default observer(function App() {
 	const state = getAppStore()
+	console.log(state)
+
 	const [isPanelOpen, { setTrue: showPanel, setFalse: hidePanel }] = useBoolean(
 		false
 	)
@@ -195,7 +197,7 @@ export default observer(function App() {
 												rootPressed: { backgroundColor: 'transparent' },
 											}}
 										/>
-										<div className="appHeaderTitle">Data Composer</div>
+										<div className="appHeaderTitle">{state.localization?.app?.title}</div>
 									</div>
 									<div className="appHeaderPersona">
 										<div>

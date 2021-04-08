@@ -31,7 +31,8 @@ export const initialStore = {
 	userWorkingBranches: [],
 	userAccessExpired: false,
 	isDataStale: false,
-	isSavingCommits: false
+	isSavingCommits: false,
+	localization: {}
 }
 
 export const getAppState = (): AppState => {
@@ -58,4 +59,10 @@ autorun(() => {
 			email: store.email,
 			userAccessExpired: store.userAccessExpired,
 		})
+})
+
+autorun(() => {
+	if (store.currentLanguage) {
+		store.localization = require(`../localizations/${store.currentLanguage}.json`)
+	}
 })
