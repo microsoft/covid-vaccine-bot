@@ -1,6 +1,7 @@
 extends: 
   - "@essex/eslint-config"
 rules:
+  "@typescript-eslint/no-explicit-any": "off"
   # TODO: Re-enable
   jsx-a11y/click-events-have-key-events: 0
   jsx-a11y/no-static-element-interactions: 0
