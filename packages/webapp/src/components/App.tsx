@@ -40,6 +40,7 @@ import { getText as t } from '../selectors/intlSelectors'
 import './App_reset_styles.scss'
 import './App.scss'
 
+
 export default observer(function App() {
 	const state = getAppStore()
 	const [isPanelOpen, { setTrue: showPanel, setFalse: hidePanel }] = useBoolean(
