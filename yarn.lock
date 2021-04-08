@@ -1964,6 +1964,7 @@ __metadata:
     "@types/react": ^17.0.3
     "@types/react-dom": ^17.0.2
     "@types/react-router-dom": ^5.1.7
+    "@types/rtl-detect": ^1
     "@uifabric/react-hooks": ^7.13.12
     csv-parse: ^4.15.3
     eslint-config-react-app: ^6.0.0
@@ -1978,6 +1979,7 @@ __metadata:
     react-refresh: ^0.9.0
     react-router-dom: ^5.2.0
     react-scripts: 4.0.3
+    rtl-detect: ^1.0.2
     satcheljs: ^4.2.3
     shx: ^0.3.3
     typescript: ^4.2.3
@@ -5325,6 +5327,13 @@ __metadata:
     "@types/glob": "*"
     "@types/node": "*"
   checksum: 00a00a430f838ddafdbc17386f08d928b1ae7aeada84d112f4369a7a89b4d47c1bb6849688f1d6ee404a08338ab52a80c742f0c3040d63ccc2aaec04bd1009f5
+  languageName: node
+  linkType: hard
+
+"@types/rtl-detect@npm:^1":
+  version: 1.0.0
+  resolution: "@types/rtl-detect@npm:1.0.0"
+  checksum: b0cefa1b1f3cb70a8c6db9fd953350160c609fd11e6d1bc63f580697fed1eb155345f70fc0d14764f75746dab4392e0983922d24fb53fc2abf539bac325a123a
   languageName: node
   linkType: hard
 
@@ -21494,6 +21503,13 @@ resolve@1.18.1:
   version: 4.8.5
   resolution: "rsvp@npm:4.8.5"
   checksum: eb70274fb392bb5e4f33ce8ebdee411fc8ce813ccf7d1684830c6752ba1b0346f0527107dcd7ce690ba7c1a9f2c731918fcd4ded11f57ed612897527a46c5f44
+  languageName: node
+  linkType: hard
+
+"rtl-detect@npm:^1.0.2":
+  version: 1.0.2
+  resolution: "rtl-detect@npm:1.0.2"
+  checksum: 5776868dedc05f17bf1a72f641ccd3257710c8f4e9469fa7d48a59e999d6121c340ac54a0dd6c87492e74f33178ec3fe379cdbf98189ef00d70996faca43e3ae
   languageName: node
   linkType: hard
 

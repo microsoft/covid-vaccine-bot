@@ -4641,6 +4641,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react", "npm:17.0.3"],
             ["@types/react-dom", "npm:17.0.2"],
             ["@types/react-router-dom", "npm:5.1.7"],
+            ["@types/rtl-detect", "npm:1.0.0"],
             ["@uifabric/react-hooks", "virtual:e6c1b5daae5e8ccf3df7b139ce564cb8182744026a2afe18b1f1344b3a16751fcb5766cc6d853f830e1b4e8af99f8651156df30eb774535cab3b155e18c5e599#npm:7.13.12"],
             ["csv-parse", "npm:4.15.3"],
             ["eslint-config-react-app", "virtual:e6c1b5daae5e8ccf3df7b139ce564cb8182744026a2afe18b1f1344b3a16751fcb5766cc6d853f830e1b4e8af99f8651156df30eb774535cab3b155e18c5e599#npm:6.0.0"],
@@ -4655,6 +4656,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-refresh", "npm:0.9.0"],
             ["react-router-dom", "virtual:e6c1b5daae5e8ccf3df7b139ce564cb8182744026a2afe18b1f1344b3a16751fcb5766cc6d853f830e1b4e8af99f8651156df30eb774535cab3b155e18c5e599#npm:5.2.0"],
             ["react-scripts", "virtual:e6c1b5daae5e8ccf3df7b139ce564cb8182744026a2afe18b1f1344b3a16751fcb5766cc6d853f830e1b4e8af99f8651156df30eb774535cab3b155e18c5e599#npm:4.0.3"],
+            ["rtl-detect", "npm:1.0.2"],
             ["satcheljs", "virtual:e6c1b5daae5e8ccf3df7b139ce564cb8182744026a2afe18b1f1344b3a16751fcb5766cc6d853f830e1b4e8af99f8651156df30eb774535cab3b155e18c5e599#npm:4.2.3"],
             ["shx", "npm:0.3.3"],
             ["typescript", "patch:typescript@npm%3A4.2.3#builtin<compat/typescript>::version=4.2.3&hash=a45b0e"],
@@ -9526,6 +9528,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/rimraf", "npm:3.0.0"],
             ["@types/glob", "npm:7.1.3"],
             ["@types/node", "npm:14.14.35"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@types/rtl-detect", [
+        ["npm:1.0.0", {
+          "packageLocation": "./.yarn/cache/@types-rtl-detect-npm-1.0.0-960d36a9da-b0cefa1b1f.zip/node_modules/@types/rtl-detect/",
+          "packageDependencies": [
+            ["@types/rtl-detect", "npm:1.0.0"]
           ],
           "linkType": "HARD",
         }]
@@ -28941,6 +28952,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/rsvp-npm-4.8.5-09f3c6ed40-eb70274fb3.zip/node_modules/rsvp/",
           "packageDependencies": [
             ["rsvp", "npm:4.8.5"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["rtl-detect", [
+        ["npm:1.0.2", {
+          "packageLocation": "./.yarn/cache/rtl-detect-npm-1.0.2-b1767e1f2c-5776868ded.zip/node_modules/rtl-detect/",
+          "packageDependencies": [
+            ["rtl-detect", "npm:1.0.2"]
           ],
           "linkType": "HARD",
         }]
