@@ -32,7 +32,8 @@ export const initialStore = {
 	userAccessExpired: false,
 	isDataStale: false,
 	isSavingCommits: false,
-	localization: {}
+	localization: {},
+	defaultLanguage: {},
 }
 
 export const getAppState = (): AppState => {
@@ -59,6 +60,6 @@ autorun(() => {
 			email: store.email,
 			userAccessExpired: store.userAccessExpired,
 			localization: store.localization,
-			currentLanguage: store.currentLanguage
+			currentLanguage: store.currentLanguage,
 		})
 })

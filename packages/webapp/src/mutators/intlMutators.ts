@@ -5,9 +5,20 @@
 import { mutatorAction } from 'satcheljs'
 import { getAppStore } from '../store/store'
 
-export const setLocalization = mutatorAction('setLocalization', (localization: any) => {
-	const store = getAppStore()
-	if (localization) {
-		store.localization = localization
+export const setLocalization = mutatorAction(
+	'setLocalization',
+	(localization: any) => {
+		const store = getAppStore()
+		if (localization) {
+			store.localization = localization
+		}
 	}
-})
+)
+
+export const setDefaultLanguage = mutatorAction(
+	'setDefaultLanguage',
+	(defaultLanguage: any) => {
+		const store = getAppStore()
+		store.defaultLanguage = defaultLanguage
+	}
+)

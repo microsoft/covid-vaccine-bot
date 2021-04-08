@@ -29,4 +29,5 @@ export interface AppState {
 	isDataStale: boolean
 	isSavingCommits: boolean
 	localization: any
+	defaultLanguage: any
 }

@@ -1,0 +1,9 @@
+{
+	"app": {
+		"title": "Data Composer"
+	},
+	"dashboard": {
+		"title": "Dashboard",
+		"refresh_data": "Refresh Data"
+	}
+}

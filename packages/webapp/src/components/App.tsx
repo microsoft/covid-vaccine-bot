@@ -13,7 +13,7 @@ import {
 	MessageBar,
 	MessageBarButton,
 	Modal,
-	Spinner
+	Spinner,
 } from '@fluentui/react'
 import { useBoolean } from '@uifabric/react-hooks'
 import { observer } from 'mobx-react-lite'
@@ -35,10 +35,10 @@ import Review from './Review'
 import Translate from './Translate'
 import UnAuthorized from './UnAuthorized'
 import UserAccessExpirationForm from './UserAccessExpirationForm'
+import { getText as t } from '../selectors/intlSelectors'
 
 import './App_reset_styles.scss'
 import './App.scss'
-
 
 export default observer(function App() {
 	const state = getAppStore()
@@ -58,13 +58,11 @@ export default observer(function App() {
 	const personaComponent = useRef(null)
 
 	useEffect(() => {
-		if (state.accessToken && !state.globalFileData) 
-			loginUser()
+		if (state.accessToken && !state.globalFileData) loginUser()
 	}, [state.accessToken, state.globalFileData])
 
 	useEffect(() => {
-		if(state.userAccessExpired)
-			showAccessExpirationModal()
+		if (state.userAccessExpired) showAccessExpirationModal()
 	}, [state.userAccessExpired, showAccessExpirationModal])
 
 	useEffect(() => {
@@ -79,7 +77,7 @@ export default observer(function App() {
 
 	useEffect(() => {
 		setAppLanguage(state.currentLanguage)
-	},[state.currentLanguage])
+	}, [state.currentLanguage])
 
 	const togglePanel = useCallback(
 		(item?: any) => {
@@ -98,10 +96,8 @@ export default observer(function App() {
 	}, [setSelectedKey])
 
 	const onAccessExpirationFormSubmit = useCallback(() => {
-		if(state.globalFileData)
-			reLoginUser()
-		else 
-			loginUser()
+		if (state.globalFileData) reLoginUser()
+		else loginUser()
 
 		hideAccessExpirationModal()
 	}, [state.globalFileData, hideAccessExpirationModal])
@@ -140,22 +136,29 @@ export default observer(function App() {
 						!!state.loadedPRData ? undefined : (
 							<div>
 								{!state.isSavingCommits ? (
-								<>
-									<MessageBarButton disabled={state.isDataRefreshing} onClick={initializeGitData}>
-										Discard
-									</MessageBarButton>
-									<MessageBarButton
-										disabled={state.isDataRefreshing}
-										onClick={() => {
-											setBranchWasSaved(true)
-											saveContinue()
-										}}
-									>
-										Save and Continue
-									</MessageBarButton>
-								</>
+									<>
+										<MessageBarButton
+											disabled={state.isDataRefreshing}
+											onClick={initializeGitData}
+										>
+											Discard
+										</MessageBarButton>
+										<MessageBarButton
+											disabled={state.isDataRefreshing}
+											onClick={() => {
+												setBranchWasSaved(true)
+												saveContinue()
+											}}
+										>
+											Save and Continue
+										</MessageBarButton>
+									</>
 								) : (
-									<Spinner label="Saving changes..." ariaLive="assertive" labelPosition="left" />
+									<Spinner
+										label="Saving changes..."
+										ariaLive="assertive"
+										labelPosition="left"
+									/>
 								)}
 							</div>
 						)
@@ -201,7 +204,7 @@ export default observer(function App() {
 												rootPressed: { backgroundColor: 'transparent' },
 											}}
 										/>
-										<div className="appHeaderTitle">{state.localization?.app?.title}</div>
+										<div className="appHeaderTitle">{t('app.title')}</div>
 									</div>
 									<div className="appHeaderPersona">
 										<div>
