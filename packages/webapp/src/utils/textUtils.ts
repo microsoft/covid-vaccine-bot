@@ -23,19 +23,19 @@ export const toProperCase = (text: string): string => {
 	return res
 }
 
-export const formatId = (text: string) => {
-	return text?.trim().replace(/[^a-z0-9\s]/gi, '')
+export const formatId = (text: string): string => {
+	return text
+		?.trim()
+		.replace(/[^a-z0-9\s]/gi, '')
 		.replace(/\s+/g, '_')
 		.toLowerCase()
 }
 
-export const getLanguageKeys = () => {
-	return configs.languageKeys.split(
-		','
-	)
+export const getLanguageKeys = (): string[] => {
+	return configs.languageKeys.split(',')
 }
 
-export const getLanguageOptions = (excludeLanguage?: string) => {
+export const getLanguageOptions = (excludeLanguage?: string): any[] => {
 	return getLanguageKeys()
 		.map((key) => {
 			return {
@@ -65,9 +65,9 @@ export const b64_to_utf8 = (str: string): string => {
 	return decodeURIComponent(escape(atob(str)))
 }
 
-export const getLanguageKeysWithSMSVoice = ():string[] => {
+export const getLanguageKeysWithSMSVoice = (): string[] => {
 	const languageKeys: any[] = []
-	getLanguageKeys().forEach(l => {
+	getLanguageKeys().forEach((l) => {
 		languageKeys.push(l)
 		languageKeys.push(`${l}-sms`)
 		languageKeys.push(`${l}-voice`)
@@ -75,7 +75,7 @@ export const getLanguageKeysWithSMSVoice = ():string[] => {
 	return languageKeys
 }
 
-export const createCSVDataString = (contentObj: any) => {
+export const createCSVDataString = (contentObj: object): string => {
 	const languageKeys = getLanguageKeysWithSMSVoice()
 	const contentKeys = Object.keys(contentObj)
 
