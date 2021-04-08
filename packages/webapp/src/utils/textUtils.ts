@@ -2,6 +2,9 @@
  * Copyright (c) Microsoft. All rights reserved.
  * Licensed under the MIT license. See LICENSE file in the project.
  */
+
+import configs from '../config'
+
 export const toProperCase = (text: string): string => {
 	const res = text
 		.replace(/_/g, ' ')
@@ -27,17 +30,13 @@ export const formatId = (text: string) => {
 }
 
 export const getLanguageKeys = () => {
-	return 'en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th'.split(
+	return configs.languageKeys.split(
 		','
 	)
 }
 
 export const getLanguageOptions = (excludeLanguage?: string) => {
-	const languageKeys = 'en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th'.split(
-		','
-	)
-
-	return languageKeys
+	return getLanguageKeys()
 		.map((key) => {
 			return {
 				key: key,
@@ -66,8 +65,18 @@ export const b64_to_utf8 = (str: string): string => {
 	return decodeURIComponent(escape(atob(str)))
 }
 
+export const getLanguageKeysWithSMSVoice = ():string[] => {
+	const languageKeys: any[] = []
+	getLanguageKeys().forEach(l => {
+		languageKeys.push(l)
+		languageKeys.push(`${l}-sms`)
+		languageKeys.push(`${l}-voice`)
+	})
+	return languageKeys
+}
+
 export const createCSVDataString = (contentObj: any) => {
-	const languageKeys = getLanguageKeys()
+	const languageKeys = getLanguageKeysWithSMSVoice()
 	const contentKeys = Object.keys(contentObj)
 
 	let result = 'String ID,' + languageKeys.join(',') + '\n'

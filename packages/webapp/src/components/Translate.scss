@@ -120,11 +120,16 @@
 	}
 
 	.fromCol {
-		flex: 1;
+		flex: 2;
 	}
 
 	.toCol {
 		flex: 2;
+		margin-right: 10px;
+
+		&:last-child {
+			margin-right: 0;
+		}
 	}
 }
 

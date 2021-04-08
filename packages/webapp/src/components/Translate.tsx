@@ -45,7 +45,13 @@ const filterDropdownStyles = {
 }
 
 export default observer(function Translate() {
-	const { globalFileData, repoFileData, currentLanguage, isDataRefreshing } = getAppStore()
+	const {
+		globalFileData,
+		repoFileData,
+		currentLanguage,
+		isDataRefreshing,
+		pendingChanges,
+	} = getAppStore()
 	const languageOptions = getLanguageOptions()
 	const translationFilter = [
 		{
@@ -78,10 +84,6 @@ export default observer(function Translate() {
 	]
 	const [showLoading, setShowLoading] = useState<boolean>(false)
 
-	const locationChanges = useRef<any>({})
-	const qualifierChanges = useRef<any>({})
-	const miscChanges = useRef<any>({})
-
 	const locationFullList = useRef<any[]>([])
 	const qualifierFullList = useRef<any[]>([])
 	const miscFullList = useRef<any[]>([])
@@ -110,9 +112,9 @@ export default observer(function Translate() {
 		setMiscStateSpecFilterState,
 	] = useState<string>('')
 	const [isSectionCollapse, setSectionCollapse] = useState<any>({
-		locations: false,
-		qualifiers: false,
-		misc: false,
+		locations: true,
+		qualifiers: true,
+		misc: true,
 	})
 
 	const buildTranslationsLists = useCallback(() => {
@@ -149,11 +151,51 @@ export default observer(function Translate() {
 					? ''
 					: stateNames?.[`cdc/${stateId}/state_name`]?.[toLanguage.current]
 
+				const translateToValue_SMS = !toLanguage.current
+					? ''
+					: !stateNames?.[`cdc/${stateId}/state_name`]?.[
+							`${toLanguage.current}-sms`
+					  ]
+					? ''
+					: stateNames?.[`cdc/${stateId}/state_name`]?.[
+							`${toLanguage.current}-sms`
+					  ]
+
+				const translateToValue_Voice = !toLanguage.current
+					? ''
+					: !stateNames?.[`cdc/${stateId}/state_name`]?.[
+							`${toLanguage.current}-voice`
+					  ]
+					? ''
+					: stateNames?.[`cdc/${stateId}/state_name`]?.[
+							`${toLanguage.current}-voice`
+					  ]
+
 				const translateLinkToValue = !toLanguage.current
 					? ''
 					: !stateLinks?.[`cdc/${stateId}/state_link`]?.[toLanguage.current]
 					? ''
 					: stateLinks?.[`cdc/${stateId}/state_link`]?.[toLanguage.current]
+
+				const translateLinkToValue_SMS = !toLanguage.current
+					? ''
+					: !stateLinks?.[`cdc/${stateId}/state_link`]?.[
+							`${toLanguage.current}-sms`
+					  ]
+					? ''
+					: stateLinks?.[`cdc/${stateId}/state_link`]?.[
+							`${toLanguage.current}-sms`
+					  ]
+
+				const translateLinkToValue_Voice = !toLanguage.current
+					? ''
+					: !stateLinks?.[`cdc/${stateId}/state_link`]?.[
+							`${toLanguage.current}-voice`
+					  ]
+					? ''
+					: stateLinks?.[`cdc/${stateId}/state_link`]?.[
+							`${toLanguage.current}-voice`
+					  ]
 
 				tempList.push({
 					key: `cdc/${stateId}/state_name`,
@@ -161,7 +203,11 @@ export default observer(function Translate() {
 					from: stateLabel,
 					toKey: toLanguage.current,
 					to: translateToValue,
+					sms: translateToValue_SMS,
+					voice: translateToValue_Voice,
 					_to: translateToValue,
+					_sms: translateToValue_SMS,
+					_voice: translateToValue_Voice,
 					parent: 'global',
 					category: 'locations',
 				})
@@ -172,7 +218,11 @@ export default observer(function Translate() {
 					from: stateLinkLabel,
 					toKey: toLanguage.current,
 					to: translateLinkToValue,
+					sms: translateLinkToValue_SMS,
+					voice: translateLinkToValue_Voice,
 					_to: translateLinkToValue,
+					_sms: translateLinkToValue_SMS,
+					_voice: translateLinkToValue_Voice,
 					parent: 'global',
 					category: 'state_link',
 				})
@@ -193,7 +243,11 @@ export default observer(function Translate() {
 							from: value[mainLanguage.current],
 							toKey: toLanguage.current,
 							to: value[toLanguage.current],
+							sms: value[`${toLanguage.current}-sms`],
+							voice: value[`${toLanguage.current}-voice`],
 							_to: value[toLanguage.current],
+							_sms: value[`${toLanguage.current}-sms`],
+							_voice: value[`${toLanguage.current}-voice`],
 							parent: 'global',
 							category: 'qualifiers',
 						})
@@ -204,7 +258,11 @@ export default observer(function Translate() {
 							from: value[mainLanguage.current],
 							toKey: toLanguage.current,
 							to: value[toLanguage.current],
+							sms: value[`${toLanguage.current}-sms`],
+							voice: value[`${toLanguage.current}-voice`],
 							_to: value[toLanguage.current],
+							_sms: value[`${toLanguage.current}-sms`],
+							_voice: value[`${toLanguage.current}-voice`],
 							parent: 'global',
 							category: 'other',
 						})
@@ -229,7 +287,11 @@ export default observer(function Translate() {
 								from: value[mainLanguage.current],
 								toKey: toLanguage.current,
 								to: value[toLanguage.current],
+								sms: value[`${toLanguage.current}-sms`],
+								voice: value[`${toLanguage.current}-voice`],
 								_to: value[toLanguage.current],
+								_sms: value[`${toLanguage.current}-sms`],
+								_voice: value[`${toLanguage.current}-voice`],
 								parent: aKey,
 								category: 'state',
 							})
@@ -258,11 +320,6 @@ export default observer(function Translate() {
 		)
 	}, [globalFileData, repoFileData])
 
-	useEffect(() => {
-		mainLanguage.current = currentLanguage
-		buildTranslationsLists()
-	}, [currentLanguage, mainLanguage, buildTranslationsLists])
-
 	const onCollapseSection = useCallback(
 		(name: string) => {
 			setSectionCollapse({
@@ -275,63 +332,143 @@ export default observer(function Translate() {
 
 	const handleLocationTextChange = useCallback(
 		(ev, rowItem) => {
-			const value = ev.target.value
+			const change: any = {}
+			switch (ev.target.name) {
+				case rowItem.toKey:
+					change.to = ev.target.value
+					break
+				case `${rowItem.toKey}-sms`:
+					change.sms = ev.target.value
+					break
+				case `${rowItem.toKey}-voice`:
+					change.voice = ev.target.value
+					break
+			}
+
 			const idx = locationList.findIndex((i) => i.from === rowItem.from)
 			locationList[idx] = {
 				...rowItem,
-				to: value,
+				...change,
 			}
 			setLocationList([...locationList])
-			locationChanges.current = locationList[idx]
 		},
-		[locationChanges, locationList, setLocationList]
+		[locationList, setLocationList]
 	)
 
 	const handleQualifierTextChange = useCallback(
 		(ev, rowItem) => {
-			const value = ev.target.value
+			const change: any = {}
+
+			switch (ev.target.name) {
+				case rowItem.toKey:
+					change.to = ev.target.value
+					break
+				case `${rowItem.toKey}-sms`:
+					change.sms = ev.target.value
+					break
+				case `${rowItem.toKey}-voice`:
+					change.voice = ev.target.value
+					break
+			}
+
 			const idx = qualifierList.findIndex((i) => i.from === rowItem.from)
 			qualifierList[idx] = {
 				...rowItem,
-				to: value,
+				...change,
 			}
 			setQualifierList([...qualifierList])
-			qualifierChanges.current = qualifierList[idx]
 		},
-		[qualifierChanges, qualifierList, setQualifierList]
+		[qualifierList, setQualifierList]
 	)
 
 	const handleMiscTextChange = useCallback(
 		(ev, rowItem) => {
-			const value = ev.target.value
+			const change: any = {}
+
+			switch (ev.target.name) {
+				case rowItem.toKey:
+					change.to = ev.target.value
+					break
+				case `${rowItem.toKey}-sms`:
+					change.sms = ev.target.value
+					break
+				case `${rowItem.toKey}-voice`:
+					change.voice = ev.target.value
+					break
+			}
+
 			const idx = miscList.findIndex((i) => i.from === rowItem.from)
 			miscList[idx] = {
 				...rowItem,
-				to: value,
+				...change,
 			}
 			setMiscList([...miscList])
-			miscChanges.current = miscList[idx]
 		},
-		[miscChanges, miscList, setMiscList]
+		[miscList, setMiscList]
 	)
 
 	const updateLocationTranslation = useCallback((item) => {
+		let hasUpdate = false
 		if (item.to && item.to.toLowerCase() !== item._to.toLowerCase()) {
 			item.to = toProperCase(item.to).trim()
+			hasUpdate = true
+		}
+
+		if (item.sms && item.sms.toLowerCase() !== item._sms.toLowerCase()) {
+			item.sms = toProperCase(item.sms).trim()
+			hasUpdate = true
+		}
+
+		if (item.voice && item.voice.toLowerCase() !== item._voice.toLowerCase()) {
+			item.voice = toProperCase(item.voice).trim()
+			hasUpdate = true
+		}
+
+		if (hasUpdate) {
 			translateLocationName(item)
 		}
 	}, [])
 
 	const updateQualifierTranslation = useCallback((item) => {
+		let hasUpdate = false
 		if (item.to && item.to.toLowerCase() !== item._to.toLowerCase()) {
 			item.to = String(item.to).trim()
+			hasUpdate = true
+		}
+
+		if (item.sms && item.sms.toLowerCase() !== item._sms.toLowerCase()) {
+			item.sms = String(item.sms).trim()
+			hasUpdate = true
+		}
+
+		if (item.voice && item.voice.toLowerCase() !== item._voice.toLowerCase()) {
+			item.voice = String(item.voice).trim()
+			hasUpdate = true
+		}
+
+		if (hasUpdate) {
 			translateQualifier(item)
 		}
 	}, [])
 
 	const updateMiscTranslation = useCallback((item) => {
+		let hasUpdate = false
 		if (item.to && item.to.toLowerCase() !== item._to.toLowerCase()) {
 			item.to = String(item.to).trim()
+			hasUpdate = true
+		}
+
+		if (item.sms && item.sms.toLowerCase() !== item._sms.toLowerCase()) {
+			item.sms = String(item.sms).trim()
+			hasUpdate = true
+		}
+
+		if (item.voice && item.voice.toLowerCase() !== item._voice.toLowerCase()) {
+			item.voice = String(item.voice).trim()
+			hasUpdate = true
+		}
+
+		if (hasUpdate) {
 			translateMisc(item)
 		}
 	}, [])
@@ -576,6 +713,14 @@ export default observer(function Translate() {
 		window.open(csvUrl)
 	}
 
+	useEffect(() => {
+		mainLanguage.current = currentLanguage
+		buildTranslationsLists()
+		if (!pendingChanges) {
+			onTranslationFilterChange(null, { key: translationFilterState })
+		}
+	}, [currentLanguage, mainLanguage, buildTranslationsLists, pendingChanges, onTranslationFilterChange, translationFilterState])
+
 	return (
 		<div className="translatePageContainer">
 			<div className="bodyContainer">
@@ -598,7 +743,7 @@ export default observer(function Translate() {
 						<section>
 							<div className="filterGroup">
 								<div>
-									<label htmlFor={"availDropdown"}>Translate from:</label>
+									<label htmlFor="availDropdown">Translate from:</label>
 									<Dropdown
 										id="availDropdown"
 										selectedKey={toLanguage.current}
@@ -607,7 +752,7 @@ export default observer(function Translate() {
 										styles={filterDropdownStyles}
 										onChange={onLanguageChange}
 									/>
-									<label htmlFor={"translateDropdown"}>Show:</label>
+									<label htmlFor="translateDropdown">Show:</label>
 									<Dropdown
 										id="translateDropdown"
 										selectedKey={translationFilterState}
@@ -645,29 +790,51 @@ export default observer(function Translate() {
 									}
 									className="groupToggleIcon"
 								/>
-								<div>Locations</div>
+								<div>Locations ({locationList.length})</div>
 							</div>
 							{!isSectionCollapse.locations &&
 								(locationList.length > 0 ? (
-									locationList.map((val: any, idx: number) => {
-										return (
-											<div
-												key={`locationRow-${idx}`}
-												className={`translateListRow${
-													idx % 2 > 0 ? '' : ' altRow'
-												}`}
-											>
-												<div className="fromCol">{val.from}</div>
-												<TextField
-													name={val.to}
-													value={val.to}
-													className="toCol"
-													onChange={(ev) => handleLocationTextChange(ev, val)}
-													onBlur={() => updateLocationTranslation(val)}
-												/>
-											</div>
-										)
-									})
+									<>
+										<div className="translateListRow">
+											<div className="fromCol"></div>
+											<div className="toCol">General</div>
+											<div className="toCol">SMS</div>
+											<div className="toCol">Voice</div>
+										</div>
+										{locationList.map((val: any, idx: number) => {
+											return (
+												<div
+													key={`locationRow-${idx}`}
+													className={`translateListRow${
+														idx % 2 > 0 ? '' : ' altRow'
+													}`}
+												>
+													<div className="fromCol">{val.from}</div>
+													<TextField
+														name={val.toKey}
+														value={val.to}
+														className="toCol"
+														onChange={(ev) => handleLocationTextChange(ev, val)}
+														onBlur={() => updateLocationTranslation(val)}
+													/>
+													<TextField
+														name={`${val.toKey}-sms`}
+														value={val.sms}
+														className="toCol"
+														onChange={(ev) => handleLocationTextChange(ev, val)}
+														onBlur={() => updateLocationTranslation(val)}
+													/>
+													<TextField
+														name={`${val.toKey}-voice`}
+														value={val.voice}
+														className="toCol"
+														onChange={(ev) => handleLocationTextChange(ev, val)}
+														onBlur={() => updateLocationTranslation(val)}
+													/>
+												</div>
+											)
+										})}
+									</>
 								) : (
 									<div className="emptyTranslateListRow">
 										No missing location translations found for:{' '}
@@ -691,33 +858,69 @@ export default observer(function Translate() {
 									}
 									className="groupToggleIcon"
 								/>
-								<div>Qualifiers</div>
+								<div>Qualifiers ({qualifierList.length})</div>
 							</div>
 							{!isSectionCollapse.qualifiers &&
 								(qualifierList.length > 0 ? (
-									qualifierList.map((val: any, idx: number) => {
-										return (
-											<div
-												key={`qualifierRow-${idx}`}
-												className={`translateListRow${
-													idx % 2 > 0 ? '' : ' altRow'
-												} qualifier`}
-											>
-												<div className="fromCol">{val.from}</div>
-												<TextField
-													name={val.to}
-													value={val.to}
-													className="toCol"
-													autoAdjustHeight={true}
-													resizable={false}
-													multiline={true}
-													rows={Math.ceil(val.from.length / 100)}
-													onChange={(ev) => handleQualifierTextChange(ev, val)}
-													onBlur={() => updateQualifierTranslation(val)}
-												/>
-											</div>
-										)
-									})
+									<>
+										<div className="translateListRow qualifier">
+											<div className="fromCol"></div>
+											<div className="toCol">General</div>
+											<div className="toCol">SMS</div>
+											<div className="toCol">Voice</div>
+										</div>
+										{qualifierList.map((val: any, idx: number) => {
+											return (
+												<div
+													key={`qualifierRow-${idx}`}
+													className={`translateListRow${
+														idx % 2 > 0 ? '' : ' altRow'
+													} qualifier`}
+												>
+													<div className="fromCol">{val.from}</div>
+													<TextField
+														name={val.toKey}
+														value={val.to}
+														className="toCol"
+														autoAdjustHeight={true}
+														resizable={false}
+														multiline={true}
+														rows={Math.ceil(val.from.length / 100)}
+														onChange={(ev) =>
+															handleQualifierTextChange(ev, val)
+														}
+														onBlur={() => updateQualifierTranslation(val)}
+													/>
+													<TextField
+														name={`${val.toKey}-sms`}
+														value={val.sms}
+														className="toCol"
+														autoAdjustHeight={true}
+														resizable={false}
+														multiline={true}
+														rows={Math.ceil(val.from.length / 100)}
+														onChange={(ev) =>
+															handleQualifierTextChange(ev, val)
+														}
+														onBlur={() => updateQualifierTranslation(val)}
+													/>
+													<TextField
+														name={`${val.toKey}-voice`}
+														value={val.voice}
+														className="toCol"
+														autoAdjustHeight={true}
+														resizable={false}
+														multiline={true}
+														rows={Math.ceil(val.from.length / 100)}
+														onChange={(ev) =>
+															handleQualifierTextChange(ev, val)
+														}
+														onBlur={() => updateQualifierTranslation(val)}
+													/>
+												</div>
+											)
+										})}
+									</>
 								) : (
 									<div className="emptyTranslateListRow">
 										No missing qualifier translations found for:{' '}
@@ -739,7 +942,7 @@ export default observer(function Translate() {
 									}
 									className="groupToggleIcon"
 								/>
-								<div>Miscellaneous</div>
+								<div>Miscellaneous ({miscList.length})</div>
 							</div>
 							{!isSectionCollapse.misc &&
 								(miscList.length > 0 ? (
@@ -763,6 +966,12 @@ export default observer(function Translate() {
 												<div></div>
 											)}
 										</div>
+										<div className="translateListRow misc">
+											<div className="fromCol"></div>
+											<div className="toCol">General</div>
+											<div className="toCol">SMS</div>
+											<div className="toCol">Voice</div>
+										</div>
 										{miscList.map((val: any, idx: number) => {
 											return (
 												<div
@@ -773,8 +982,30 @@ export default observer(function Translate() {
 												>
 													<div className="fromCol">{val.from}</div>
 													<TextField
-														name={val.to}
+														name={val.toKey}
 														value={val.to}
+														className="toCol"
+														autoAdjustHeight={true}
+														resizable={false}
+														multiline={true}
+														rows={Math.ceil(val.from.length / 100)}
+														onChange={(ev) => handleMiscTextChange(ev, val)}
+														onBlur={() => updateMiscTranslation(val)}
+													/>
+													<TextField
+														name={`${val.toKey}-sms`}
+														value={val.sms}
+														className="toCol"
+														autoAdjustHeight={true}
+														resizable={false}
+														multiline={true}
+														rows={Math.ceil(val.from.length / 100)}
+														onChange={(ev) => handleMiscTextChange(ev, val)}
+														onBlur={() => updateMiscTranslation(val)}
+													/>
+													<TextField
+														name={`${val.toKey}-voice`}
+														value={val.voice}
 														className="toCol"
 														autoAdjustHeight={true}
 														resizable={false}
@@ -800,7 +1031,13 @@ export default observer(function Translate() {
 						</section>
 					) : (
 						<section className="loadingContainer">
-							<ProgressIndicator description={isDataRefreshing ? "Loading content..." : "Updating translations..."} />
+							<ProgressIndicator
+								description={
+									isDataRefreshing
+										? 'Loading content...'
+										: 'Updating translations...'
+								}
+							/>
 						</section>
 					)}
 				</div>

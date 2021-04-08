@@ -112,7 +112,7 @@ const commitChanges = async (state: any, branchName: string, globalUpdates: any,
 					}),
 				}
 			)
-			branchLastCommitSha = globalResp.commit.sha
+			branchLastCommitSha = globalResp?.commit?.sha ?? branchLastCommitSha
 		}
 	}
 
@@ -231,7 +231,7 @@ const commitChanges = async (state: any, branchName: string, globalUpdates: any,
 			}
 		}
 
-		branchLastCommitSha = locationResp.commit.sha
+		branchLastCommitSha = locationResp?.commit?.sha ?? branchLastCommitSha
 	}
 
 	return branchLastCommitSha
@@ -423,7 +423,6 @@ export const repoServices = async (
 					const globalUpdates = extraData[0]
 					const locationUpdates = extraData[1]
 					const prFormData = extraData[3]
-
 					if(state.loadedPRData) {
 						branchName = `refs/heads/${state.loadedPRData.head.ref}`
 					} else if (state.userWorkingBranch) {
