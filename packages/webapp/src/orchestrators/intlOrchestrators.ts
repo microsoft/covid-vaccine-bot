@@ -7,6 +7,12 @@ import { setAppLanguage } from '../actions/intlActions'
 import { setLocalization } from '../mutators/intlMutators'
 
 orchestrator(setAppLanguage, async (message) => {
-	const localization = require(`../localizations/${message.language}.json`)
+	let localization: any = {}
+	try {
+		localization = require(`../localizations/${message.language}.json`)
+	} catch {
+		localization = require('../localizations/en-us.json')
+	}
+
 	setLocalization(localization)
 })
