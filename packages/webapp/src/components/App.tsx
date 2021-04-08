@@ -135,10 +135,11 @@ export default observer(function App() {
 							<div>
 								{!state.isSavingCommits ? (
 								<>
-									<MessageBarButton onClick={initializeGitData}>
+									<MessageBarButton disabled={state.isDataRefreshing} onClick={initializeGitData}>
 										Discard
 									</MessageBarButton>
 									<MessageBarButton
+										disabled={state.isDataRefreshing}
 										onClick={() => {
 											setBranchWasSaved(true)
 											saveContinue()

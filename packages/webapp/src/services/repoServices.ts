@@ -121,17 +121,32 @@ const commitChanges = async (state: any, branchName: string, globalUpdates: any,
 		for (const i in locationUpdates) {
 			const locationObj = locationUpdates[i].data
 			const infoQuery = `contents/packages/plans/data/policies/${locationObj.info.path}`
+			const method = locationObj.delete ? 'DELETE' : 'PUT'
+			const message = locationObj.delete ? 'deleted' : 'updated'
+			const content = locationObj.delete ? undefined : {
+				info: utf8_to_b64(
+					JSON.stringify(locationObj.info.content, null, '\t')
+				),
+				vaccination: utf8_to_b64(
+					JSON.stringify(
+						locationObj.vaccination.content,
+						null,
+						'\t'
+					)
+				),
+				strings: utf8_to_b64(
+					createCSVDataString(locationObj.strings.content)
+				)
+			}
 			//Info
 			locationResp = await gitFetch(
 				infoQuery,
 				{
-					method: 'PUT',
+					method,
 					body: JSON.stringify({
 						branch: branchName,
-						message: `updated ${locationObj.info.path}`,
-						content: utf8_to_b64(
-							JSON.stringify(locationObj.info.content, null, '\t')
-						),
+						message: `${message} ${locationObj.info.path}`,
+						content: content?.info,
 						sha: locationObj.info.sha,
 					}),
 				}
@@ -142,17 +157,11 @@ const commitChanges = async (state: any, branchName: string, globalUpdates: any,
 			locationResp = await gitFetch(
 				vacQuery,
 				{
-					method: 'PUT',
+					method,
 					body: JSON.stringify({
 						branch: branchName,
-						message: `updated ${locationObj.vaccination.path}`,
-						content: utf8_to_b64(
-							JSON.stringify(
-								locationObj.vaccination.content,
-								null,
-								'\t'
-							)
-						),
+						message: `${message} ${locationObj.vaccination.path}`,
+						content: content?.vaccination,
 						sha: locationObj.vaccination.sha,
 					}),
 				}
@@ -164,13 +173,11 @@ const commitChanges = async (state: any, branchName: string, globalUpdates: any,
 			locationResp = await gitFetch(
 				stringQuery,
 				{
-					method: 'PUT',
+					method,
 					body: JSON.stringify({
 						branch: branchName,
-						message: `updated ${locationObj.strings.path}`,
-						content: utf8_to_b64(
-							createCSVDataString(locationObj.strings.content)
-						),
+						message: `${message} ${locationObj.strings.path}`,
+						content: content?.strings,
 						sha: locationObj.strings.sha,
 					}),
 				}
@@ -187,11 +194,11 @@ const commitChanges = async (state: any, branchName: string, globalUpdates: any,
 					locationResp = await gitFetch(
 						regInfoQuery,
 						{
-							method: 'PUT',
+							method,
 							body: JSON.stringify({
 								branch: branchName,
-								message: `updated ${regionObj.info.path}`,
-								content: utf8_to_b64(
+								message: `${message} ${regionObj.info.path}`,
+								content: locationObj.delete ? undefined : utf8_to_b64(
 									JSON.stringify(regionObj.info.content, null, '\t')
 								),
 								sha: regionObj.info.sha,
@@ -205,11 +212,11 @@ const commitChanges = async (state: any, branchName: string, globalUpdates: any,
 					locationResp = await gitFetch(
 						regVacQuery,
 						{
-							method: 'PUT',
+							method,
 							body: JSON.stringify({
 								branch: branchName,
-								message: `updated ${regionObj.vaccination.path}`,
-								content: utf8_to_b64(
+								message: `${message} ${regionObj.vaccination.path}`,
+								content: locationObj.delete ? undefined : utf8_to_b64(
 									JSON.stringify(
 										regionObj.vaccination.content,
 										null,

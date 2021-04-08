@@ -32,20 +32,25 @@
 
 .locationDetailsList {
 	.ms-DetailsRow {
-		.editIcon {
+		.editIcon, .deleteIcon {
 			visibility: hidden;
 			cursor: pointer;
 			color: $ms-color-themePrimary;
 		}
 
+		.deleteIcon {
+			color: $ms-color-red;
+			margin-right: 10px;
+		}
+
 		&.is-selected {
-			.editIcon {
+			.editIcon, .deleteIcon {
 				visibility: visible;
 			}
 		}
 
 		&:hover {
-			.editIcon {
+			.editIcon, .deleteIcon {
 				visibility: visible;
 			}
 		}
