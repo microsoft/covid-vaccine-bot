@@ -21,8 +21,8 @@ import { useCallback, useState, useEffect, useRef } from 'react'
 import { Switch, Route, Redirect } from 'react-router-dom'
 import { loginUser, reLoginUser } from '../actions/authActions'
 import { initializeGitData, saveContinue } from '../actions/repoActions'
+import { setAppLanguage } from '../actions/intlActions'
 import { logoutUser } from '../mutators/authMutators'
-import { setCurrentLanguage } from '../mutators/repoMutators'
 import { getAppStore } from '../store/store'
 import { getLanguageOptions } from '../utils/textUtils'
 import Dashboard from './Dashboard'
@@ -37,11 +37,10 @@ import UserAccessExpirationForm from './UserAccessExpirationForm'
 
 import './App_reset_styles.scss'
 import './App.scss'
+import { setCurrentLanguage } from '../mutators/repoMutators'
 
 export default observer(function App() {
 	const state = getAppStore()
-	console.log(state)
-
 	const [isPanelOpen, { setTrue: showPanel, setFalse: hidePanel }] = useBoolean(
 		false
 	)
@@ -66,7 +65,7 @@ export default observer(function App() {
 		if(state.userAccessExpired)
 			showAccessExpirationModal()
 	}, [state.userAccessExpired, showAccessExpirationModal])
-	
+
 	useEffect(() => {
 		if (state.pendingChanges) {
 			window.onbeforeunload = function () {
@@ -76,6 +75,10 @@ export default observer(function App() {
 			window.onbeforeunload = null
 		}
 	}, [state.pendingChanges])
+
+	useEffect(() => {
+		setAppLanguage(state.currentLanguage)
+	},[state.currentLanguage])
 
 	const togglePanel = useCallback(
 		(item?: any) => {

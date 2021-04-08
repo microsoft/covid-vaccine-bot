@@ -1,3 +1,5 @@
 {
-    "app.title" : "Data Composer"
+    "app" : {
+        "title": "Data Composer"
+    }
 }

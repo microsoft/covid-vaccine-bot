@@ -60,9 +60,3 @@ autorun(() => {
 			userAccessExpired: store.userAccessExpired,
 		})
 })
-
-autorun(() => {
-	if (store.currentLanguage) {
-		store.localization = require(`../localizations/${store.currentLanguage}.json`)
-	}
-})
