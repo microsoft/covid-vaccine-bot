@@ -18,9 +18,11 @@ import {
 	addPhase,
 	updatePhase,
 	updateLocationData,
+	deleteLocation,
 } from '../mutators/repoMutators'
 import { getAppStore } from '../store/store'
 import { toProperCase } from '../utils/textUtils'
+import DeleteLocationForm from './DeleteLocationForm'
 import LocationForm from './LocationForm'
 import LocationsPhases from './LocationsPhases'
 import PhaseForm from './PhaseForm'
@@ -43,6 +45,10 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 	const [
 		isLocationModalOpen,
 		{ setTrue: openLocationModal, setFalse: dismissLocationModal },
+	] = useBoolean(false)
+	const [
+		isDeleteLocationModalOpen,
+		{ setTrue: openDeleteLocationModal, setFalse: dismissDeleteLocationModal },
 	] = useBoolean(false)
 	const [
 		isPhaseModalOpen,
@@ -115,6 +121,7 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 	useEffect(() => {
 		const selectedStateObj = state.repoFileData[selectedState.key]
 		const regions = selectedStateObj?.regions ?? {}
+
 		if (Object.keys(regions).length > 0) {
 			const tempList: any[] = []
 			Object.entries(regions).forEach(([key, value]) => {
@@ -130,6 +137,8 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 			})
 			setFilteredRegionsList(tempList)
 			stateRegionsFullList.current = tempList
+		} else {
+			stateRegionsFullList.current = []
 		}
 
 		if (selectedStateObj) {
@@ -160,6 +169,14 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 		[dismissLocationModal, selectedState]
 	)
 
+	const onDeleteLocationFormSubmit = useCallback(
+		(locationData) => {
+			dismissDeleteLocationModal()
+			deleteLocation(locationData, true, selectedState)
+		},
+		[dismissDeleteLocationModal, selectedState]
+	)
+
 	const onLocationFormOpen = useCallback(
 		(item?: any) => {
 			selectedModalFormItem.current = item ?? null
@@ -176,27 +193,51 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 		[openPhaseModal]
 	)
 
+	const onLocationDeleteFormOpen = useCallback(
+		(item?: any) => {
+			selectedModalFormItem.current = item ?? null
+			openDeleteLocationModal()
+		},
+		[openDeleteLocationModal]
+	)
+
 	const onRenderItemColumn = useCallback(
 		(item?: any, _index?: number, column?: IColumn) => {
-			const fieldContent = item[column?.fieldName as keyof any] as string
+			if (!column) return null
 
-			if (column?.key === 'editCol') {
+			const fieldContent = item[column.fieldName as keyof any] as string
+
+			if (column.key === 'editCol') {
 				return state.isEditable ? (
-					<FontIcon
-						iconName="Edit"
-						className="editIcon"
-						onClick={() =>
-							column?.fieldName === 'editLocation'
-								? onLocationFormOpen(item)
-								: onPhaseFormOpen(item)
-						}
-					/>
+					<span>
+						{column?.fieldName === 'editLocation' && (
+							<FontIcon
+								iconName="Cancel"
+								className="deleteIcon"
+								onClick={() => onLocationDeleteFormOpen(item)}
+							/>
+						)}
+						<FontIcon
+							iconName="Edit"
+							className="editIcon"
+							onClick={() =>
+								column?.fieldName === 'editLocation'
+									? onLocationFormOpen(item)
+									: onPhaseFormOpen(item)
+							}
+						/>
+					</span>
 				) : null
 			} else {
 				return <span>{fieldContent}</span>
 			}
 		},
-		[onLocationFormOpen, onPhaseFormOpen, state.isEditable]
+		[
+			onLocationFormOpen,
+			onLocationDeleteFormOpen,
+			onPhaseFormOpen,
+			state.isEditable,
+		]
 	)
 
 	const onRegionFilter = useCallback(
@@ -347,7 +388,9 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 								</div>
 							)}
 						</div>
-						{stateRegionsFullList.current.length > 0 ? (
+						{filteredRegionsList &&
+						filteredRegionsList.length > 0 &&
+						stateRegionsFullList.current.length > 0 ? (
 							<DetailsList
 								items={filteredRegionsList}
 								columns={subLocationsColumns}
@@ -391,6 +434,18 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 					item={selectedModalFormItem.current}
 					onCancel={dismissPhaseModal}
 					onSubmit={onPhaseFormSubmit}
+				/>
+			</Modal>
+			<Modal
+				isOpen={isDeleteLocationModalOpen}
+				isModeless={false}
+				isDarkOverlay={true}
+				isBlocking={false}
+			>
+				<DeleteLocationForm
+					location={selectedModalFormItem.current}
+					onCancel={dismissDeleteLocationModal}
+					onSubmit={onDeleteLocationFormSubmit}
 				/>
 			</Modal>
 		</div>

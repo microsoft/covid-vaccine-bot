@@ -35,19 +35,34 @@ export const getChanges = () => {
         })
         globalUpdates.push(globalFileData.cdcStateLinks)
     }
+    
 
-    Object.keys(repoFileData).forEach((location: any) => {
+    Object.keys(state.initRepoFileData).filter((location: string) => {
+        return !state.repoFileData[location]
+    }).forEach((location: string) => {
+        changesList.push({
+            label: `Location removed - ${location}`,
+            value: state.initRepoFileData[location],
+        })
+        locationUpdates.push({
+            key: location,
+            data: {
+                ...state.initRepoFileData[location],
+                delete: true
+            },
+        })
+    })
+    
+    Object.keys(repoFileData).forEach((location: string) => {
         if (state.initRepoFileData) {
             if (!state.initRepoFileData[location]) {
                 changesList.push({
                     label: `New location added - ${location}`,
-                    value: repoFileData[location],
                 })
                 locationUpdates.push({
                     key: location,
-                    data: repoFileData[location],
                 })
-            } else {
+            }else {
                 let addChanges = false
                 if (!isEqual(state.initRepoFileData[location].info, repoFileData[location].info)) {
                     changesList.push({
@@ -56,10 +71,7 @@ export const getChanges = () => {
                     })
                     addChanges = true
                 }
-                if (
-                    repoFileData[location].regions &&
-                    !isEqual(state.initRepoFileData[location].regions, repoFileData[location].regions)
-                ) {
+                if (!isEqual(state.initRepoFileData[location].regions, repoFileData[location].regions)) {
                     changesList.push({
                         label: `Updated regions for ${location}`,
                         value: repoFileData[location],

@@ -15,7 +15,7 @@ export const initialStore = {
 	email: undefined,
 	userDisplayName: undefined,
 	branches: undefined,
-	issues: undefined,
+	issues: [],
 	repoFileData: undefined,
 	initRepoFileData: undefined,
 	globalFileData: undefined,

@@ -190,16 +190,15 @@ orchestrator(saveContinue, async () => {
 	})
 	if(resp.ok === false) {
 		handleError(resp)
-		return
+	} else {
+		resp = await repoServices('getRepoFileData', resp)
+		if(resp.ok === false) {
+			handleError(resp)
+		} else {
+			setRepoFileData(resp)
+			setPendingChanges(false)
+		}
 	}
 
-	resp = await repoServices('getRepoFileData', resp)
-	if(resp.ok === false) {
-		handleError(resp)
-		return
-	}
-
-	setRepoFileData(resp)
-	setPendingChanges(false)
 	setSavingCommitsFlag(false)
 })

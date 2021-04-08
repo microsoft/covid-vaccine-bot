@@ -13,7 +13,7 @@ export interface AppState {
 	issues?: any[]
 	mainBranch?: any
 	repoFileData?: any
-	initRepoFileData?: any[]
+	initRepoFileData?: any
 	globalFileData?: any
 	initGlobalFileData?: any
 	currentLanguage: string
