@@ -332,7 +332,7 @@ export default observer(function Translate() {
 
 	const handleLocationTextChange = useCallback(
 		(ev, rowItem) => {
-			let change: any = {}
+			const change: any = {}
 			switch (ev.target.name) {
 				case rowItem.toKey:
 					change.to = ev.target.value
@@ -357,7 +357,7 @@ export default observer(function Translate() {
 
 	const handleQualifierTextChange = useCallback(
 		(ev, rowItem) => {
-			let change: any = {}
+			const change: any = {}
 
 			switch (ev.target.name) {
 				case rowItem.toKey:
@@ -383,7 +383,7 @@ export default observer(function Translate() {
 
 	const handleMiscTextChange = useCallback(
 		(ev, rowItem) => {
-			let change: any = {}
+			const change: any = {}
 
 			switch (ev.target.name) {
 				case rowItem.toKey:
