@@ -17,7 +17,6 @@ import {
 	updateLocationList,
 	addPhase,
 	updatePhase,
-	removePhase,
 	updateLocationData,
 	deleteLocation,
 } from '../mutators/repoMutators'
