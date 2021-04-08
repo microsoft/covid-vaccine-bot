@@ -335,13 +335,13 @@ export default observer(function Translate() {
 			let change: any = {}
 			switch (ev.target.name) {
 				case rowItem.toKey:
-					change = { to: ev.target.value }
+					change.to = ev.target.value
 					break
 				case `${rowItem.toKey}-sms`:
-					change = { sms: ev.target.value }
+					change.sms = ev.target.value
 					break
 				case `${rowItem.toKey}-voice`:
-					change = { voice: ev.target.value }
+					change.voice = ev.target.value
 					break
 			}
 
@@ -361,13 +361,13 @@ export default observer(function Translate() {
 
 			switch (ev.target.name) {
 				case rowItem.toKey:
-					change = { to: ev.target.value }
+					change.to = ev.target.value
 					break
 				case `${rowItem.toKey}-sms`:
-					change = { sms: ev.target.value }
+					change.sms = ev.target.value
 					break
 				case `${rowItem.toKey}-voice`:
-					change = { voice: ev.target.value }
+					change.voice = ev.target.value
 					break
 			}
 
@@ -387,13 +387,13 @@ export default observer(function Translate() {
 
 			switch (ev.target.name) {
 				case rowItem.toKey:
-					change = { to: ev.target.value }
+					change.to = ev.target.value
 					break
 				case `${rowItem.toKey}-sms`:
-					change = { sms: ev.target.value }
+					change.sms = ev.target.value
 					break
 				case `${rowItem.toKey}-voice`:
-					change = { voice: ev.target.value }
+					change.voice = ev.target.value
 					break
 			}
 
@@ -743,7 +743,7 @@ export default observer(function Translate() {
 						<section>
 							<div className="filterGroup">
 								<div>
-									<label htmlFor={'availDropdown'}>Translate from:</label>
+									<label htmlFor="availDropdown">Translate from:</label>
 									<Dropdown
 										id="availDropdown"
 										selectedKey={toLanguage.current}
@@ -752,7 +752,7 @@ export default observer(function Translate() {
 										styles={filterDropdownStyles}
 										onChange={onLanguageChange}
 									/>
-									<label htmlFor={'translateDropdown'}>Show:</label>
+									<label htmlFor="translateDropdown">Show:</label>
 									<Dropdown
 										id="translateDropdown"
 										selectedKey={translationFilterState}
