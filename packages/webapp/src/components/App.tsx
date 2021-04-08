@@ -23,6 +23,7 @@ import { loginUser, reLoginUser } from '../actions/authActions'
 import { initializeGitData, saveContinue } from '../actions/repoActions'
 import { setAppLanguage } from '../actions/intlActions'
 import { logoutUser } from '../mutators/authMutators'
+import { setCurrentLanguage } from '../mutators/repoMutators'
 import { getAppStore } from '../store/store'
 import { getLanguageOptions } from '../utils/textUtils'
 import Dashboard from './Dashboard'
@@ -37,7 +38,7 @@ import UserAccessExpirationForm from './UserAccessExpirationForm'
 
 import './App_reset_styles.scss'
 import './App.scss'
-import { setCurrentLanguage } from '../mutators/repoMutators'
+
 
 export default observer(function App() {
 	const state = getAppStore()

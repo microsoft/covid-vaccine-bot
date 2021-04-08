@@ -58,5 +58,7 @@ autorun(() => {
 			username: store.username,
 			email: store.email,
 			userAccessExpired: store.userAccessExpired,
+			localization: store.localization,
+			currentLanguage: store.currentLanguage
 		})
 })
