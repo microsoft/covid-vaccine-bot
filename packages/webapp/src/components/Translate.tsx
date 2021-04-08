@@ -45,7 +45,13 @@ const filterDropdownStyles = {
 }
 
 export default observer(function Translate() {
-	const { globalFileData, repoFileData, currentLanguage, isDataRefreshing, pendingChanges } = getAppStore()
+	const {
+		globalFileData,
+		repoFileData,
+		currentLanguage,
+		isDataRefreshing,
+		pendingChanges,
+	} = getAppStore()
 	const languageOptions = getLanguageOptions()
 	const translationFilter = [
 		{
@@ -146,16 +152,24 @@ export default observer(function Translate() {
 					: stateNames?.[`cdc/${stateId}/state_name`]?.[toLanguage.current]
 
 				const translateToValue_SMS = !toLanguage.current
-				? ''
-				: !stateNames?.[`cdc/${stateId}/state_name`]?.[`${toLanguage.current}-sms`]
-				? ''
-				: stateNames?.[`cdc/${stateId}/state_name`]?.[`${toLanguage.current}-sms`]
+					? ''
+					: !stateNames?.[`cdc/${stateId}/state_name`]?.[
+							`${toLanguage.current}-sms`
+					  ]
+					? ''
+					: stateNames?.[`cdc/${stateId}/state_name`]?.[
+							`${toLanguage.current}-sms`
+					  ]
 
 				const translateToValue_Voice = !toLanguage.current
-				? ''
-				: !stateNames?.[`cdc/${stateId}/state_name`]?.[`${toLanguage.current}-voice`]
-				? ''
-				: stateNames?.[`cdc/${stateId}/state_name`]?.[`${toLanguage.current}-voice`]
+					? ''
+					: !stateNames?.[`cdc/${stateId}/state_name`]?.[
+							`${toLanguage.current}-voice`
+					  ]
+					? ''
+					: stateNames?.[`cdc/${stateId}/state_name`]?.[
+							`${toLanguage.current}-voice`
+					  ]
 
 				const translateLinkToValue = !toLanguage.current
 					? ''
@@ -164,16 +178,24 @@ export default observer(function Translate() {
 					: stateLinks?.[`cdc/${stateId}/state_link`]?.[toLanguage.current]
 
 				const translateLinkToValue_SMS = !toLanguage.current
-				? ''
-				: !stateLinks?.[`cdc/${stateId}/state_link`]?.[`${toLanguage.current}-sms`]
-				? ''
-				: stateLinks?.[`cdc/${stateId}/state_link`]?.[`${toLanguage.current}-sms`]
+					? ''
+					: !stateLinks?.[`cdc/${stateId}/state_link`]?.[
+							`${toLanguage.current}-sms`
+					  ]
+					? ''
+					: stateLinks?.[`cdc/${stateId}/state_link`]?.[
+							`${toLanguage.current}-sms`
+					  ]
 
 				const translateLinkToValue_Voice = !toLanguage.current
-				? ''
-				: !stateLinks?.[`cdc/${stateId}/state_link`]?.[`${toLanguage.current}-voice`]
-				? ''
-				: stateLinks?.[`cdc/${stateId}/state_link`]?.[`${toLanguage.current}-voice`]
+					? ''
+					: !stateLinks?.[`cdc/${stateId}/state_link`]?.[
+							`${toLanguage.current}-voice`
+					  ]
+					? ''
+					: stateLinks?.[`cdc/${stateId}/state_link`]?.[
+							`${toLanguage.current}-voice`
+					  ]
 
 				tempList.push({
 					key: `cdc/${stateId}/state_name`,
@@ -311,7 +333,7 @@ export default observer(function Translate() {
 	const handleLocationTextChange = useCallback(
 		(ev, rowItem) => {
 			let change: any = {}
-			switch(ev.target.name) {
+			switch (ev.target.name) {
 				case rowItem.toKey:
 					change = { to: ev.target.value }
 					break
@@ -326,7 +348,7 @@ export default observer(function Translate() {
 			const idx = locationList.findIndex((i) => i.from === rowItem.from)
 			locationList[idx] = {
 				...rowItem,
-				...change
+				...change,
 			}
 			setLocationList([...locationList])
 		},
@@ -337,7 +359,7 @@ export default observer(function Translate() {
 		(ev, rowItem) => {
 			let change: any = {}
 
-			switch(ev.target.name) {
+			switch (ev.target.name) {
 				case rowItem.toKey:
 					change = { to: ev.target.value }
 					break
@@ -352,7 +374,7 @@ export default observer(function Translate() {
 			const idx = qualifierList.findIndex((i) => i.from === rowItem.from)
 			qualifierList[idx] = {
 				...rowItem,
-				...change
+				...change,
 			}
 			setQualifierList([...qualifierList])
 		},
@@ -363,7 +385,7 @@ export default observer(function Translate() {
 		(ev, rowItem) => {
 			let change: any = {}
 
-			switch(ev.target.name) {
+			switch (ev.target.name) {
 				case rowItem.toKey:
 					change = { to: ev.target.value }
 					break
@@ -378,7 +400,7 @@ export default observer(function Translate() {
 			const idx = miscList.findIndex((i) => i.from === rowItem.from)
 			miscList[idx] = {
 				...rowItem,
-				...change
+				...change,
 			}
 			setMiscList([...miscList])
 		},
@@ -386,7 +408,7 @@ export default observer(function Translate() {
 	)
 
 	const updateLocationTranslation = useCallback((item) => {
-		let hasUpdate: boolean = false
+		let hasUpdate = false
 		if (item.to && item.to.toLowerCase() !== item._to.toLowerCase()) {
 			item.to = toProperCase(item.to).trim()
 			hasUpdate = true
@@ -408,7 +430,7 @@ export default observer(function Translate() {
 	}, [])
 
 	const updateQualifierTranslation = useCallback((item) => {
-		let hasUpdate: boolean = false
+		let hasUpdate = false
 		if (item.to && item.to.toLowerCase() !== item._to.toLowerCase()) {
 			item.to = String(item.to).trim()
 			hasUpdate = true
@@ -430,7 +452,7 @@ export default observer(function Translate() {
 	}, [])
 
 	const updateMiscTranslation = useCallback((item) => {
-		let hasUpdate: boolean = false
+		let hasUpdate = false
 		if (item.to && item.to.toLowerCase() !== item._to.toLowerCase()) {
 			item.to = String(item.to).trim()
 			hasUpdate = true
@@ -695,10 +717,9 @@ export default observer(function Translate() {
 		mainLanguage.current = currentLanguage
 		buildTranslationsLists()
 		if (!pendingChanges) {
-			onTranslationFilterChange(null, {key: translationFilterState})
+			onTranslationFilterChange(null, { key: translationFilterState })
 		}
 	}, [currentLanguage, mainLanguage, buildTranslationsLists, pendingChanges, onTranslationFilterChange, translationFilterState])
-
 
 	return (
 		<div className="translatePageContainer">
@@ -722,7 +743,7 @@ export default observer(function Translate() {
 						<section>
 							<div className="filterGroup">
 								<div>
-									<label htmlFor={"availDropdown"}>Translate from:</label>
+									<label htmlFor={'availDropdown'}>Translate from:</label>
 									<Dropdown
 										id="availDropdown"
 										selectedKey={toLanguage.current}
@@ -731,7 +752,7 @@ export default observer(function Translate() {
 										styles={filterDropdownStyles}
 										onChange={onLanguageChange}
 									/>
-									<label htmlFor={"translateDropdown"}>Show:</label>
+									<label htmlFor={'translateDropdown'}>Show:</label>
 									<Dropdown
 										id="translateDropdown"
 										selectedKey={translationFilterState}
@@ -865,7 +886,9 @@ export default observer(function Translate() {
 														resizable={false}
 														multiline={true}
 														rows={Math.ceil(val.from.length / 100)}
-														onChange={(ev) => handleQualifierTextChange(ev, val)}
+														onChange={(ev) =>
+															handleQualifierTextChange(ev, val)
+														}
 														onBlur={() => updateQualifierTranslation(val)}
 													/>
 													<TextField
@@ -876,7 +899,9 @@ export default observer(function Translate() {
 														resizable={false}
 														multiline={true}
 														rows={Math.ceil(val.from.length / 100)}
-														onChange={(ev) => handleQualifierTextChange(ev, val)}
+														onChange={(ev) =>
+															handleQualifierTextChange(ev, val)
+														}
 														onBlur={() => updateQualifierTranslation(val)}
 													/>
 													<TextField
@@ -887,7 +912,9 @@ export default observer(function Translate() {
 														resizable={false}
 														multiline={true}
 														rows={Math.ceil(val.from.length / 100)}
-														onChange={(ev) => handleQualifierTextChange(ev, val)}
+														onChange={(ev) =>
+															handleQualifierTextChange(ev, val)
+														}
 														onBlur={() => updateQualifierTranslation(val)}
 													/>
 												</div>
@@ -1004,7 +1031,13 @@ export default observer(function Translate() {
 						</section>
 					) : (
 						<section className="loadingContainer">
-							<ProgressIndicator description={isDataRefreshing ? "Loading content..." : "Updating translations..."} />
+							<ProgressIndicator
+								description={
+									isDataRefreshing
+										? 'Loading content...'
+										: 'Updating translations...'
+								}
+							/>
 						</section>
 					)}
 				</div>
