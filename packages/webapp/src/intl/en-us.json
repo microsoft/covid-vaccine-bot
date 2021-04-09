@@ -45,7 +45,22 @@
 
 	},
 	"Review": {
-
+		"title": "Review",
+		"saving": "Saving changes...",
+		"columns": {
+			"pending": "Pending Changes"
+		},
+		"ErrorMessageBar": {
+			"closeArialLabel": "Close"
+		},
+		"error": {
+			"unexpected": "Unexpected:"
+		},
+		"SubmitForm": {
+			"titleLabel": "Title (Optional):",
+			"detailsLabel": "Details (Optional):",
+			"submitText": "Submit changes"
+		}
 	},
 	"Translate": {
 		"title": "Translate",
@@ -68,18 +83,18 @@
 		},
 		"error": {
 			"unexpected": "Unexpected:",
-			"invalid_fileContent": "Invalid File Content.",
-			"invalid_fileType": "Invalid File Type."
+			"invalidFileContent": "Invalid File Content.",
+			"invalidFileType": "Invalid File Type."
 		},
-		"translation_notFound": "*Translation Not Found*",
+		"translationNotFound": "*Translation Not Found*",
 		"translationFilter": {
-			"needs_translation": "Needs Translation",
-			"show_all": "Show All"
+			"needsTranslation": "Needs Translation",
+			"showAll": "Show All"
 		},
 		"miscFilter": {
 			"all": "All",
-			"state_specific": "State-specific",
-			"state_links": "State Links",
+			"stateSpecific": "State-specific",
+			"stateLinks": "State Links",
 			"uncategorized": "Uncategorized",
 			"placeholder": "Filter Miscellaneous"
 		},

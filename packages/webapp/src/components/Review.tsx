@@ -16,6 +16,7 @@ import { useState, useEffect, useCallback, useRef } from 'react'
 import { createPR } from '../actions/repoActions'
 import { getChanges } from '../selectors/changesSelectors'
 import { getAppStore } from '../store/store'
+import { getText as t } from '../selectors/intlSelectors'
 
 import './Review.scss'
 
@@ -40,7 +41,7 @@ export default observer(function Review(props: ReviewProp) {
 	const changesColumns = [
 		{
 			key: 'labelCol',
-			name: 'Pending Changes',
+			name: t('Review.columns.pending'),
 			fieldName: 'label',
 			minWidth: 200,
 			isResizable: true,
@@ -103,30 +104,30 @@ export default observer(function Review(props: ReviewProp) {
 			<div className="bodyContainer">
 				<div className="bodyHeader">
 					<div className="bodyHeaderTitle">
-						<div className="breadCrumbs">/ Review</div>
-						<div className="mainTitle">Review</div>
+						<div className="breadCrumbs">/ {t('Review.title')}</div>
+						<div className="mainTitle">{t('Review.title')}</div>
 					</div>
 				</div>
 				<div className="bodyContent">
 					{errorMessage && (
 						<MessageBar
 							messageBarType={MessageBarType.error}
-							dismissButtonAriaLabel="Close"
+							dismissButtonAriaLabel={t('Review.ErrorMessageBar.closeAriaLabel')}
 						>
-							<p>Unexpected {errorMessage?.toString()}</p>
+							<p>{t('Review.error.unexpected')} {errorMessage?.toString()}</p>
 						</MessageBar>
 					)}
 					{!showLoading ? (
 						<section>
 							<div className="submitContainer">
 								<TextField
-									label="Title (Optional):"
+									label={t('Review.SubmitForm.titleLabel')}
 									name="prTitle"
 									value={formData.prTitle}
 									onChange={handleTextChange}
 								/>
 								<TextField
-									label="Details (Optional):"
+									label={t('Review.SubmitForm.detailsLabel')}
 									name="prDetails"
 									multiline={true}
 									rows={5}
@@ -143,7 +144,7 @@ export default observer(function Review(props: ReviewProp) {
 									checkboxVisibility={2}
 								/>
 								<PrimaryButton
-									text="Submit changes"
+									text={t('Review.SubmitForm.submitText')}
 									onClick={() => {
 										setShowLoading(true)
 										createPR([
@@ -158,7 +159,7 @@ export default observer(function Review(props: ReviewProp) {
 						</section>
 					) : (
 						<section className="loadingContainer">
-							<ProgressIndicator description="Saving changes..." />
+							<ProgressIndicator description={t('Review.saving')} />
 						</section>
 					)}
 				</div>

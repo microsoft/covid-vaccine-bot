@@ -57,11 +57,11 @@ export default observer(function Translate() {
 	const translationFilter = [
 		{
 			key: 'missing',
-			text: t('Translate.translationFilter.needs_translation'),
+			text: t('Translate.translationFilter.needsTranslation'),
 		},
 		{
 			key: 'all',
-			text: t('Translate.translationFilter.show_all'),
+			text: t('Translate.translationFilter.showAll'),
 		},
 	]
 
@@ -72,11 +72,11 @@ export default observer(function Translate() {
 		},
 		{
 			key: 'state',
-			text: t('Translate.miscFilter.state_specific'),
+			text: t('Translate.miscFilter.stateSpecific'),
 		},
 		{
 			key: 'state_link',
-			text: t('Translate.miscFilter.state_links'),
+			text: t('Translate.miscFilter.stateLinks'),
 		},
 		{
 			key: 'other',
@@ -135,7 +135,7 @@ export default observer(function Translate() {
 						mainLanguage.current
 					].trim() !== ''
 						? stateNames[`cdc/${stateId}/state_name`][mainLanguage.current]
-						: `${t('Translate.translation_notFound')} (${stateId})`
+						: `${t('Translate.translationNotFound')} (${stateId})`
 
 				const stateLinkLabel =
 					stateLinks[`cdc/${stateId}/state_link`] &&
@@ -144,7 +144,7 @@ export default observer(function Translate() {
 						mainLanguage.current
 					].trim() !== ''
 						? stateLinks[`cdc/${stateId}/state_link`][mainLanguage.current]
-						: `${t('Translate.translation_notFound')} (${stateId})`
+						: `${t('Translate.translationNotFound')} (${stateId})`
 
 				const translateToValue = !toLanguage.current
 					? ''
@@ -658,7 +658,7 @@ export default observer(function Translate() {
 				updateStrings(contentObj)
 				setShowLoading(false)
 			} else {
-				throw new Error(t('Translate.error.invalid_fileContent'))
+				throw new Error(t('Translate.error.invalidFileContent'))
 			}
 		} catch (err) {
 			setErrorMessage(err)
@@ -676,7 +676,7 @@ export default observer(function Translate() {
 				reader.onload = onReaderLoadData
 				reader.readAsText(file, 'UTF-8')
 			} else {
-				setErrorMessage(new Error(t('Translate.error.invalid_fileType')))
+				setErrorMessage(new Error(t('Translate.error.invalidFileType')))
 				setShowLoading(false)
 			}
 		}
