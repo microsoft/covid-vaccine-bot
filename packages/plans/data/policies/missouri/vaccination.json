@@ -19,7 +19,7 @@
 			"text": "c19.link/scheduling.phone.mo"
 		}
 	},
-	"activePhase": "2",
+	"activePhase": "16_and_up",
 	"phases": [
 		{
 			"id": "1a",
@@ -154,6 +154,16 @@
 					"question": "c19.eligibility.question/housing.are_you"
 				}
 			]
+		},
+		{
+			"id": "16_and_up",
+			"label": "16 and up",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.16_up"
+				}
+			]
 		}
-	]
+	],
+	"noPhaseLabel": true
 }

@@ -2,7 +2,7 @@
  * Copyright (c) Microsoft. All rights reserved.
  * Licensed under the MIT license. See LICENSE file in the project.
  */
-export const convertCSVDataToObj = (csvData: any) => {
+export const convertCSVDataToObj = (csvData: any): any => {
 	const returnObj: any = {}
 
 	csvData.forEach((row: any) => {
@@ -12,10 +12,10 @@ export const convertCSVDataToObj = (csvData: any) => {
 		const stringId: string = row[stringLabel]
 
 		delete row[stringLabel]
-		Object.keys(row).forEach(k => {
-			if ((!k.endsWith('sms') || !k.endsWith('voice'))) {
-				!(`${k}-sms` in row) && (row[`${k}-sms`]= "")
-				!(`${k}-voice` in row) && (row[`${k}-voice`]= "")
+		Object.keys(row).forEach((k) => {
+			if (!k.endsWith('sms') || !k.endsWith('voice')) {
+				!(`${k}-sms` in row) && (row[`${k}-sms`] = '')
+				!(`${k}-voice` in row) && (row[`${k}-voice`] = '')
 			}
 		})
 

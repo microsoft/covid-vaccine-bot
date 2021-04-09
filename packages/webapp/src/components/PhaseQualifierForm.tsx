@@ -102,7 +102,7 @@ export default observer(function PhaseQualiferForm(
 		(_event, option) => {
 			setFilteredQualifierItems(
 				phaseQualifierItems.current.filter(
-					(q) => q.key.split('/')[1].split('.')[0] === option.key
+					(q: any) => q.key.split('/')[1].split('.')[0] === option.key
 				)
 			)
 			setMoreInfoText('')
