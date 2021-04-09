@@ -11,6 +11,7 @@
 		"deploy:all": "yarn workspaces foreach -piv run deploy",
 		"test:unit": "jest --ci --coverage",
 		"lint": "essex lint --docs",
+		"lint:webapp": "essex lint --docs packages/webapp",
 		"lint:fix": "essex lint --fix",
 		"git_is_clean": "essex git-is-clean",
 		"prettify": "essex prettify",

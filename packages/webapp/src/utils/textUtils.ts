@@ -75,7 +75,7 @@ export const getLanguageKeysWithSMSVoice = (): string[] => {
 	return languageKeys
 }
 
-export const createCSVDataString = (contentObj: object): string => {
+export const createCSVDataString = (contentObj: any): string => {
 	const languageKeys = getLanguageKeysWithSMSVoice()
 	const contentKeys = Object.keys(contentObj)
 
