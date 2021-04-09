@@ -17,127 +17,78 @@ export const apiDoc: OpenAPIV2.Document = {
 		Error: {
 			additionalProperties: true,
 		},
-		/**
-		 * A region hierarchy (e.g. US -> WA -> Kitsap)
-		 */
-		RegionHieararchy: {
+		ProviderListResponse: {
 			type: 'array',
 			items: {
 				type: 'object',
-				$ref: '#/definitions/RegionHierarchyItem',
+				$ref: '#/definitions/Provider',
 			},
 		},
-		/**
-		 * An item in a region Hierarchy
-		 */
-		RegionHierarchyItem: {
+		Provider: {
 			type: 'object',
 			properties: {
-				id: {
+				provider_id: {
 					type: 'string',
 				},
-				name: {
-					type: 'string',
+				location: {
+					type: 'object',
+					$ref: '#/definitions/ProviderLocation',
 				},
-				type: {
-					type: 'string',
+				hours: {
+					type: 'object',
+					$ref: '#/definitions/ProviderHours',
 				},
-			},
-			required: ['id', 'name', 'type'],
-		},
-		/**
-		 * An informational or actionable link
-		 */
-		Link: {
-			type: 'object',
-			properties: {
-				url: {
-					type: 'string',
-				},
-				text: {
-					type: 'string',
-				},
-				description: {
-					type: 'string',
-				},
-				content: {
-					description: 'A content-type hint for binary formats',
-					enum: ['image', 'pdf'],
-					type: 'string',
-				},
-			},
-			required: ['url'],
-		},
-		/**
-		 * An object of utility links
-		 */
-		Links: {
-			type: 'object',
-			properties: {
-				info: {
-					$ref: '#/definitions/Link',
-				},
-				workflow: {
-					$ref: '#/definitions/Link',
-				},
-				scheduling: {
-					$ref: '#/definitions/Link',
-				},
-				scheduling_phone: {
-					$ref: '#/definitions/Link',
-				},
-				registration: {
-					$ref: '#/definitions/Link',
-				},
-				providers: {
-					$ref: '#/definitions/Link',
-				},
-				eligibility: {
-					$ref: '#/definitions/Link',
-				},
-				eligibility_plan: {
-					$ref: '#/definitions/Link',
-				},
-			},
-		},
-		/**
-		 * Vaccination Phase Info
-		 */
-		Phase: {
-			type: 'object',
-			properties: {
-				id: {
-					type: 'string',
-				},
-				qualifications: {
+				web_address: { type: 'string' },
+				pre_screen: { type: 'string' },
+				insurance_accepted: { type: 'string' },
+				walkins_accepted: { type: 'string' },
+				meds: {
 					type: 'array',
 					items: {
 						type: 'object',
-						$ref: '#/definitions/Qualification',
+						$ref: '#/definitions/ProviderMedication',
 					},
 				},
 			},
-			required: ['id'],
+			required: ['provider_id'],
 		},
-		/**
-		 * The top-level plan response
-		 */
-		Plan: {
+		ProviderLocation: {
 			type: 'object',
 			properties: {
-				regionalHierarchy: {
-					$ref: '#/definitions/RegionHieararchy',
-				},
-				links: {
-					$ref: '#/definitions/Links',
-				},
-				phase: {
-					$ref: '#/definitions/Phase',
-				},
+				name: { type: 'string' },
+				store_no: { type: 'integer' },
+				phone: { type: 'string' },
+				street1: { type: 'string' },
+				street2: { type: 'string' },
+				city: { type: 'string' },
+				state: { type: 'string' },
+				zip: { type: 'string' },
+			},
+		},
+		ProviderHours: {
+			type: 'object',
+			properties: {
+				sunday: { type: 'string' },
+				monday: { type: 'string' },
+				tuesday: { type: 'string' },
+				wednesday: { type: 'string' },
+				thursday: { type: 'string' },
+				friday: { type: 'string' },
+				saturday: { type: 'string' },
+			},
+		},
+		ProviderMedication: {
+			type: 'object',
+			properties: {
+				name: { type: 'string' },
+				provider_notes: { type: 'string' },
+				ndc: { type: 'string' },
+				in_stock: { type: 'boolean' },
+				supply_level: { type: 'integer' },
+				quantity_last_updated: { type: 'string' },
 			},
 		},
 	},
-
 	// paths are derived from args.routes.  These are filled in by fs-routes.
 	paths: {},
 }

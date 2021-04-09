@@ -4578,7 +4578,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lodash", "npm:4.17.21"],
             ["npm-run-all", "npm:4.1.5"],
             ["progress", "npm:2.0.3"],
-            ["ts-node", "virtual:f37703c95ab859815e9119a2e3ca6bab49c50b4a26a9fbfa7e47c06cdbe7398b822c114e558e7b2c0a0b2a5991aedb7288f4319bcfc9b66feda7b2f84e7d106d#npm:9.1.1"],
+            ["ts-node", "virtual:fb6087411169c0acccd3a060948afdb2a98f0b0362be45bc247c14f8265510dd9b0faab93f17b8f1aa20667940e14a7f0b485623c267b48f74a508a102c60b0d#npm:9.1.1"],
             ["typescript", "patch:typescript@npm%3A4.2.3#builtin<compat/typescript>::version=4.2.3&hash=a45b0e"]
           ],
           "linkType": "SOFT",
@@ -4601,9 +4601,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@covid-vax-bot/api", "workspace:packages/api"],
             ["@azure/cosmos", "npm:3.10.5"],
-            ["@covid-vax-bot/plan-locator", "workspace:packages/locator"],
-            ["@covid-vax-bot/plan-schema", "workspace:packages/schema"],
-            ["@covid-vax-bot/plans", "workspace:packages/plans"],
             ["@tsconfig/node14", "npm:1.0.0"],
             ["@types/body-parser", "npm:1.19.0"],
             ["@types/config", "npm:0.0.38"],
@@ -4614,12 +4611,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["body-parser", "npm:1.19.0"],
             ["config", "npm:3.3.6"],
             ["cors", "npm:2.8.5"],
-            ["csv-parse", "npm:4.15.3"],
             ["express", "npm:4.17.1"],
             ["express-openapi", "npm:7.5.0"],
             ["nodemon", "npm:2.0.7"],
+            ["npm-run-all", "npm:4.1.5"],
             ["openapi-types", "npm:7.2.3"],
-            ["ts-node", "virtual:f37703c95ab859815e9119a2e3ca6bab49c50b4a26a9fbfa7e47c06cdbe7398b822c114e558e7b2c0a0b2a5991aedb7288f4319bcfc9b66feda7b2f84e7d106d#npm:9.1.1"],
+            ["shx", "npm:0.3.3"],
+            ["ts-node", "virtual:fb6087411169c0acccd3a060948afdb2a98f0b0362be45bc247c14f8265510dd9b0faab93f17b8f1aa20667940e14a7f0b485623c267b48f74a508a102c60b0d#npm:9.1.1"],
             ["typescript", "patch:typescript@npm%3A4.2.3#builtin<compat/typescript>::version=4.2.3&hash=a45b0e"]
           ],
           "linkType": "SOFT",
@@ -4684,7 +4682,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["npm-run-all", "npm:4.1.5"],
             ["rimraf", "npm:3.0.2"],
             ["shx", "npm:0.3.3"],
-            ["ts-node", "virtual:f37703c95ab859815e9119a2e3ca6bab49c50b4a26a9fbfa7e47c06cdbe7398b822c114e558e7b2c0a0b2a5991aedb7288f4319bcfc9b66feda7b2f84e7d106d#npm:9.1.1"],
+            ["ts-node", "virtual:fb6087411169c0acccd3a060948afdb2a98f0b0362be45bc247c14f8265510dd9b0faab93f17b8f1aa20667940e14a7f0b485623c267b48f74a508a102c60b0d#npm:9.1.1"],
             ["typescript", "patch:typescript@npm%3A4.2.3#builtin<compat/typescript>::version=4.2.3&hash=a45b0e"]
           ],
           "linkType": "SOFT",
@@ -4718,7 +4716,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@essex/scripts", "virtual:60853e3ec114b18e51ada69bf7f7262fad510a1e30b0986acd76239812ac4168db7c91e526b4a5675f1b268a6c00bac056c55159fb9bbbd0ac7afdf773825fda#npm:12.0.2"],
             ["@types/node", "npm:14.14.35"],
             ["npm-run-all", "npm:4.1.5"],
-            ["ts-node", "virtual:f37703c95ab859815e9119a2e3ca6bab49c50b4a26a9fbfa7e47c06cdbe7398b822c114e558e7b2c0a0b2a5991aedb7288f4319bcfc9b66feda7b2f84e7d106d#npm:9.1.1"],
+            ["ts-node", "virtual:fb6087411169c0acccd3a060948afdb2a98f0b0362be45bc247c14f8265510dd9b0faab93f17b8f1aa20667940e14a7f0b485623c267b48f74a508a102c60b0d#npm:9.1.1"],
             ["typescript", "patch:typescript@npm%3A4.2.3#builtin<compat/typescript>::version=4.2.3&hash=a45b0e"],
             ["typescript-json-schema", "npm:0.50.0"]
           ],
@@ -4748,7 +4746,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jsonwebtoken", "npm:8.5.1"],
             ["moment", "npm:2.29.1"],
             ["npm-run-all", "npm:4.1.5"],
-            ["ts-node", "virtual:f37703c95ab859815e9119a2e3ca6bab49c50b4a26a9fbfa7e47c06cdbe7398b822c114e558e7b2c0a0b2a5991aedb7288f4319bcfc9b66feda7b2f84e7d106d#npm:9.1.1"],
+            ["ts-node", "virtual:fb6087411169c0acccd3a060948afdb2a98f0b0362be45bc247c14f8265510dd9b0faab93f17b8f1aa20667940e14a7f0b485623c267b48f74a508a102c60b0d#npm:9.1.1"],
             ["typescript", "patch:typescript@npm%3A4.2.3#builtin<compat/typescript>::version=4.2.3&hash=a45b0e"],
             ["typescript-json-schema", "npm:0.50.0"],
             ["uuid", "npm:8.3.2"]
@@ -31331,10 +31329,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["virtual:f37703c95ab859815e9119a2e3ca6bab49c50b4a26a9fbfa7e47c06cdbe7398b822c114e558e7b2c0a0b2a5991aedb7288f4319bcfc9b66feda7b2f84e7d106d#npm:9.1.1", {
-          "packageLocation": "./.yarn/$$virtual/ts-node-virtual-97e7cbab84/0/cache/ts-node-npm-9.1.1-4ad31da228-a90db4a342.zip/node_modules/ts-node/",
+        ["virtual:fb6087411169c0acccd3a060948afdb2a98f0b0362be45bc247c14f8265510dd9b0faab93f17b8f1aa20667940e14a7f0b485623c267b48f74a508a102c60b0d#npm:9.1.1", {
+          "packageLocation": "./.yarn/$$virtual/ts-node-virtual-cba8404248/0/cache/ts-node-npm-9.1.1-4ad31da228-a90db4a342.zip/node_modules/ts-node/",
           "packageDependencies": [
-            ["ts-node", "virtual:f37703c95ab859815e9119a2e3ca6bab49c50b4a26a9fbfa7e47c06cdbe7398b822c114e558e7b2c0a0b2a5991aedb7288f4319bcfc9b66feda7b2f84e7d106d#npm:9.1.1"],
+            ["ts-node", "virtual:fb6087411169c0acccd3a060948afdb2a98f0b0362be45bc247c14f8265510dd9b0faab93f17b8f1aa20667940e14a7f0b485623c267b48f74a508a102c60b0d#npm:9.1.1"],
             ["@types/typescript", null],
             ["arg", "npm:4.1.3"],
             ["create-require", "npm:1.1.1"],
@@ -31655,7 +31653,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/node", "npm:14.14.35"],
             ["glob", "npm:7.1.6"],
             ["json-stable-stringify", "npm:1.0.1"],
-            ["ts-node", "virtual:f37703c95ab859815e9119a2e3ca6bab49c50b4a26a9fbfa7e47c06cdbe7398b822c114e558e7b2c0a0b2a5991aedb7288f4319bcfc9b66feda7b2f84e7d106d#npm:9.1.1"],
+            ["ts-node", "virtual:fb6087411169c0acccd3a060948afdb2a98f0b0362be45bc247c14f8265510dd9b0faab93f17b8f1aa20667940e14a7f0b485623c267b48f74a508a102c60b0d#npm:9.1.1"],
             ["typescript", "patch:typescript@npm%3A4.2.3#builtin<compat/typescript>::version=4.2.3&hash=a45b0e"],
             ["yargs", "npm:16.2.0"]
           ],
