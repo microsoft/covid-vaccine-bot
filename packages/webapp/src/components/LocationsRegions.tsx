@@ -463,10 +463,10 @@ const setInitialPhaseItems = (selectedState: any): any[] => {
 				selectedState.value.vaccination.content.activePhase
 			return {
 				key: String(phase.id) + idx,
-				keyId: String(phase.id) + (phase.id === activePhase ? ' (active)' : ''),
+				keyId: String(phase.id) + (phase.id === activePhase ? ` (${t('App.active')})` : ''),
 				name:
 					toProperCase(phase.label ?? phase.id) +
-					(phase.id === activePhase ? ' (active)' : ''),
+					(phase.id === activePhase ? ` (${t('App.active')})` : ''),
 				qualifications: phase.qualifications.length,
 				value: phase,
 				isNew: false,

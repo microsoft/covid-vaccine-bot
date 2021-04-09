@@ -29,8 +29,8 @@ const setInitialData = (item: any) => {
     if (item) {
         return {
             phaseId: item.keyId,
-            name: item.name.includes(' (active)') ? item.name.replace(' (active)','') : item.name,
-            isActive: item.keyId.includes(' (active)')
+            name: item.name.includes(` (${t('App.active')})`) ? item.name.replace(` (${t('App.active')})`,'') : item.name,
+            isActive: item.keyId.includes(` (${t('App.active')})`)
         }
     } else {
         return {
