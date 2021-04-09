@@ -77,5 +77,81 @@
 	},
 	"About": {
 
+	},
+	"Review": {
+		"title": "Review",
+		"saving": "Saving changes...",
+		"columns": {
+			"pending": "Pending Changes"
+		},
+		"ErrorMessageBar": {
+			"closeArialLabel": "Close"
+		},
+		"error": {
+			"unexpected": "Unexpected:"
+		},
+		"SubmitForm": {
+			"titleLabel": "Title (Optional):",
+			"detailsLabel": "Details (Optional):",
+			"submitText": "Submit changes"
+		}
+	},
+	"Translate": {
+		"title": "Translate",
+		"ErrorMessageBar": {
+			"closeArialLabel": "Close"
+		},
+		"Filter": {
+			"LanguageDropdown": {
+				"label": "Translate from:",
+				"placeholder": "Available languages"
+			},
+			"TranslateDropdown": {
+				"label": "Show:",
+				"placeholder": "Needs translations"
+			}
+		},
+		"TemplateButtons": {
+			"download": "Download Template",
+			"upload": "Upload File"
+		},
+		"error": {
+			"unexpected": "Unexpected:",
+			"invalidFileContent": "Invalid File Content.",
+			"invalidFileType": "Invalid File Type."
+		},
+		"translationNotFound": "*Translation Not Found*",
+		"translationFilter": {
+			"needsTranslation": "Needs Translation",
+			"showAll": "Show All"
+		},
+		"miscFilter": {
+			"all": "All",
+			"stateSpecific": "State-specific",
+			"stateLinks": "State Links",
+			"uncategorized": "Uncategorized",
+			"placeholder": "Filter Miscellaneous"
+		},
+		"GroupList": {
+			"loading": "Loading content...",
+			"updating": "Updating translations...",
+			"columns": {
+				"general": "General",
+				"sms": "SMS",
+				"voice": "Voice"
+			},
+			"LocationList": {
+				"title": "Locations",
+				"empty": "No missing location translations found for:"
+			},
+			"QualifierList": {
+				"title": "Qualifiers",
+				"empty": "No missing qualifier translations found for:"
+			},
+			"MiscellaneousList": {
+				"title": "Miscellaneous",
+				"empty": "No missing miscellaneous translations found for:"
+			}
+		}
 	}
 }
