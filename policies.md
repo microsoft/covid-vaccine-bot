@@ -1543,55 +1543,9 @@ COVID-19 vaccinations are provided to Mississippi residents only, or to out-of-s
 | scheduling_phone | [(877) 435-8411](tel:(877) 435-8411) |
 
 
-## Missouri Active Phase (2)
+## Missouri Active Phase (16_and_up)
 
-* Are you a healthcare worker?
-	* This includes those at:
-- Hospitals, Long-term care facilities and residents, including Department of Mental Health (DMH)-operated facilities.
-- Home health, Hospice, Dialysis centers, Urgent care.
-- Vaccinator staff and those administering COVID testing.
-- High-risk non-congregate healthcare, including clinics, physicians, and home care providers.
-- All remaining patient-facing healthcare providers, including but not limited to health care workers in emergency shelters, dental offices, school nurses, pharmacies, public health clinics, mental/behavioral health providers, and correctional settings. (see [here](https://covidvaccine.mo.gov/info-graphic-alt/vaccine-availability.html))
-* Are you a long term care resident or work in a long term care facility?
-* Are you classified as an essential worker?
-	* This includes: 
-- Public Health Administrators and Staff
-- Law Enforcement
-- Fire Services
-- Corrections
-- Emergency Management
-- Public Works
-- Emergency Services
-- Education (K-12)
-- Childcare
-- Communications Infrastructure
-- Dams Sector
-- Energy Sector
-- Food & Agriculture Sector 1
-- Government
-- Information Technology
-- Nuclear Reactor Sector
-- Transportation Systems
-- Water and Wastewater Systems
-- Chemical Sector
-- Commercial Facilities Sector
-- Critical Manufacturing Sector
-- Defense Industrial Base Sector
-- Financial Services Sector
-- Food & Agriculture Sector 2
-- Government
-- Higher Education
-- Libraries
-
-More detailed list available at the link
- (see [here](https://health.mo.gov/living/healthcondiseases/communicable/novel-coronavirus/pdf/so-vac-distribution-order.pdf))
-* Are you age 65+?
-* Are you an adult with a high-risk medical condition?
-	* Any adults with cancer, Chronic Kidney Disease, COPD, Heart Conditions, weakened immune system due to organ transplant, severe obesity (BMI >40), pregnancy, Sickle Cell Disease, Type 2 Diabetes Mellitus, or individuals with intellectual and/or developmental disabilities such as Down Syndrome. (see [here](https://health.mo.gov/living/healthcondiseases/communicable/novel-coronavirus/pdf/so-vac-distribution-order.pdf))
-* Do you work or live in a congregate setting?
-	* Congregate community healthcare settings staff and residents, including DMH contracted settings and adult day cares. (see [here](https://covidvaccine.mo.gov/info-graphic-alt/vaccine-availability.html))
-* Are you a member of a disproportionately impacted population (especially a racial/ethnic minority group) at increased risk of acquiring or transmitting COVID-19?
-* Are you experiencing homelessness?
+* Are you age 16+?
 
 # Montana
 
