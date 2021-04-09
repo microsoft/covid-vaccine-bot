@@ -240,7 +240,7 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 					</section>
 				) : (
 					<section>
-						<ProgressIndicator description={t('LocationsStates.loding')} />
+						<ProgressIndicator description={t('LocationsStates.loading')} />
 					</section>
 				)}
 			</div>

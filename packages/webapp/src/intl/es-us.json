@@ -2,6 +2,7 @@
 	"App": {
 		"title": "Compositor de datos",
 		"LoginButton": "Iniciar sesión con Github",
+		"active": "activo",
 		"SaveContinueMessageBar": {
 			"cancel": "Descarte",
 			"submit": "Guardar y continuar",
@@ -116,6 +117,7 @@
 			"uncategorized": "Sin categorizar",
 			"placeholder": "Filtrar varios"
 		},
+
 		"GroupList": {
 			"loading": "Cargando contenido ...",
 			"updating": "Actualizando traducciones ...",

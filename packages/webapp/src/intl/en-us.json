@@ -3,6 +3,7 @@
 		"title": "Data Composer",
 		"NotFound":  "404 page not found.",
 		"LoginButton": "Login with Github",
+		"active": "active",
 		"Pivot": {
 			"Dashboard": "Dashboard",
 			"Locations": "Locations",
@@ -116,6 +117,7 @@
 			"edit": "Edit Phase",
 			"duplicate": "Duplicate Phase"
 		},
+		"active": "active",
 		"label": "Phase Name:",
 		"submit": "Submit",
 		"cancel": "Cancel",
@@ -123,6 +125,7 @@
 	},
 	"LocationsRegions": {
 		"title": "Locations",
+		"active": "active",
 		"addLocation": "Add Location",
 		"loading": "Loading content...",
 		"translationNotFound": "*Translation Not Found*",

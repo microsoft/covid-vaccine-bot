@@ -6,6 +6,7 @@ import { mutatorAction } from 'satcheljs'
 import { getAppStore } from '../store/store'
 import { createLocationDataObj } from '../utils/dataUtils'
 import { formatId } from '../utils/textUtils'
+import {getText as t} from '../selectors/intlSelectors'
 
 export const setIsDataRefreshing = mutatorAction(
 	'setIsDataRefreshing',
@@ -1076,7 +1077,7 @@ export const updatePhase = mutatorAction(
 				const location = store.repoFileData[data.locationKey]
 				const phaseId = data.item.phaseId
 					.toLowerCase()
-					.replace(' (active)', '')
+					.replace(` (${t('LocationsRegions.active')})`, '')
 					.trim()
 
 				const affectedPhase = location.vaccination.content.phases.find(
