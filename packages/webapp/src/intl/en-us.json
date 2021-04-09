@@ -1,9 +1,47 @@
 {
-	"app": {
-		"title": "Data Composer"
+	"App": {
+		"title": "Data Composer",
+		"NotFound":  "404 page not found.",
+		"Pivot": {
+			"Dashboard": "Dashboard",
+			"Locations": "Locations",
+			"Translate": "Translate",
+			"Review": "Review"
+		},
+		"RepoMessageBar": {
+			"current": "You are currently working on:",
+			"updatedBy": "Last updated by:",
+			"updatedOn": "Last updated on:"
+		},
+		"LanguageDropDown": {
+			"ariaLabel": "Pick Language"
+		},
+		"Persona": {
+			"logout": "Logout"
+		},
+		"SaveContinueMessageBar": { "text": "You have pending changes, please click on the review tab to submit these changes.",
+			"cancel": "Discard",
+			"submit": "Save and continue",
+			"saving": "Saving changes..."
+		},
+		"branchWasSaved": {
+			"text": "Please click on the review tab to submit these changes.",
+			"pass": "Your changes have been saved to",
+			"fail": "You are now working on branch"
+		}
 	},
-	"dashboard": {
+	"Dashboard": {
 		"title": "Dashboard",
 		"refresh_data": "Refresh Data"
+	},
+	"Locations": {
+		"title": "Locations",
+		"refresh_data": "Refresh Data"
+	},
+	"About": {
+
+	},
+	"AddQualifierForm": {
+
 	}
 }
