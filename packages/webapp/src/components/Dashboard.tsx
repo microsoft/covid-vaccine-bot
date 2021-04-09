@@ -257,14 +257,14 @@ export default observer(function Dashboard() {
 	const userWorkingBranchColumns = [
 		{
 			key: 'branchName',
-			name: 'Branch Name',
+			name: t('Dashboard.WorkingBranches.columns.branchName'),
 			fieldName: 'name',
 			minWidth: 200,
 			isResizable: true,
 		},
 		{
 			key: 'createdCol',
-			name: 'Created On',
+			name:  t('Dashboard.WorkingBranches.columns.createdOn'),
 			fieldName: 'createdOn',
 			minWidth: 200,
 			isResizable: true,
@@ -273,7 +273,7 @@ export default observer(function Dashboard() {
 		{
 			key: 'actionCol',
 			name: '',
-			ariaLabel: 'Actions Column',
+			ariaLabel: t('Dashboard.WorkingBranches.columns.actionsColumn.ariaLabel'),
 			fieldName: 'action',
 			minWidth: 200,
 			isResizable: true,
@@ -299,8 +299,8 @@ export default observer(function Dashboard() {
 			<div className="bodyContainer">
 				<div className="bodyHeader">
 					<div className="bodyHeaderTitle">
-						<div className="breadCrumbs">/ {t('dashboard.title')}</div>
-						<div className="mainTitle">{t('dashboard.title')}</div>
+						<div className="breadCrumbs">/ {[t('Dashboard.title'), 'test']}</div>
+						<div className="mainTitle">{t('Dashboard.title')}</div>
 					</div>
 				</div>
 				<div className="bodyContent">
@@ -313,67 +313,67 @@ export default observer(function Dashboard() {
 									onClick={onRefreshDataClick}
 								>
 									<FontIcon iconName="Refresh" className="refreshIcon" />
-									Refresh Data
+									{t('Dashboard.RefreshButton')}
 								</div>
 							</div>
-							<div className="sectionHeader">Working Branches</div>
+							<div className="sectionHeader">{t('Dashboard.WorkingBranches.title')}</div>
 							<div className="sectionContent">
 								<DetailsList
 									items={state.userWorkingBranches}
 									columns={userWorkingBranchColumns}
 									setKey="set"
 									layoutMode={DetailsListLayoutMode.justified}
-									ariaLabelForSelectionColumn="Toggle selection"
-									ariaLabelForSelectAllCheckbox="Toggle selection for all items"
-									checkButtonAriaLabel="Row checkbox"
+									ariaLabelForSelectionColumn={t('Dashboard.WorkingBranches.ariaLabelForSelectionColumn')}
+									ariaLabelForSelectAllCheckbox={t('Dashboard.WorkingBranches.ariaLabelForSelectAllCheckbox')}
+									checkButtonAriaLabel={t('Dashboard.WorkingBranches.checkButtonAriaLabel')}
 									checkboxVisibility={2}
 								/>
 								{!state.userWorkingBranches.length && (
 									<div style={{ textAlign: 'center' }}>
-										No working branches at this time.
+										{t('Dashboard.WorkingBranches.empty')}
 									</div>
 								)}
 							</div>
-							<div className="sectionHeader">Pending PRs</div>
+							<div className="sectionHeader">{t('Dashboard.PendingPRs.title')}</div>
 							<div className="sectionContent">
 								<DetailsList
 									items={prList}
 									columns={prColumns}
 									setKey="set"
 									layoutMode={DetailsListLayoutMode.justified}
-									ariaLabelForSelectionColumn="Toggle selection"
-									ariaLabelForSelectAllCheckbox="Toggle selection for all items"
-									checkButtonAriaLabel="Row checkbox"
+									ariaLabelForSelectionColumn={t('Dashboard.PendingPRs.ariaLabelForSelectionColumn')}
+									ariaLabelForSelectAllCheckbox={t('Dashboard.PendingPRs.ariaLabelForSelectAllCheckbox')}
+									checkButtonAriaLabel={t('Dashboard.PendingPRs.checkButtonAriaLabel')}
 									checkboxVisibility={2}
 								/>
 								{!prList.length && (
 									<div style={{ textAlign: 'center' }}>
-										No pending PRs at this time.
+										{t('Dashboard.WorkingBranches.empty')}
 									</div>
 								)}
 							</div>
-							<div className="sectionHeader">Location Updates</div>
+							<div className="sectionHeader">{t('Dashboard.LocationUpdates.title')}</div>
 							<div className="sectionContent">
 								<DetailsList
 									items={issueList}
 									columns={issueColumns}
 									setKey="set"
 									layoutMode={DetailsListLayoutMode.justified}
-									ariaLabelForSelectionColumn="Toggle selection"
-									ariaLabelForSelectAllCheckbox="Toggle selection for all items"
-									checkButtonAriaLabel="Row checkbox"
+									ariaLabelForSelectionColumn={t('Dashboard.LocationUpdates.ariaLabelForSelectionColumn')}
+									ariaLabelForSelectAllCheckbox={t('Dashboard.LocationUpdates.ariaLabelForSelectAllCheckbox')}
+									checkButtonAriaLabel={t('Dashboard.LocationUpdates.checkButtonAriaLabel')}
 									checkboxVisibility={2}
 								/>
 								{!issueList.length && (
 									<div style={{ textAlign: 'center' }}>
-										No pending location updates at this time.
+										{t('Dashboard.LocationUpdates.empty')}
 									</div>
 								)}
 							</div>
 						</section>
 					) : (
 						<section>
-							<ProgressIndicator description="Loading content..." />
+							<ProgressIndicator description={t('Dashboard.loading')} />
 						</section>
 					)}
 				</div>
@@ -384,20 +384,16 @@ export default observer(function Dashboard() {
 				dialogContentProps={{
 					type: DialogType.normal,
 					closeButtonAriaLabel: 'Close',
-					title: t('dashboard.refresh_data'),
+					title: t('Dashboard.RefreshButton'),
 				}}
 				modalProps={{ isBlocking: false }}
 			>
 				<div className="dialogBodyText">
-					You have pending changes in the review tab to be submitted, refreshing
-					the data will revert those changes.
-					<br />
-					<br />
-					Do you want to proceed?
+					{t('Dashboard.PendingChangesDialog.text')}
 				</div>
 				<DialogFooter>
-					<PrimaryButton onClick={refreshData} text="Ok" />
-					<DefaultButton onClick={toggleHideDialog} text="Cancel" />
+					<PrimaryButton onClick={refreshData} text={t('Dashboard.PendingChangesDialog.submit')} />
+					<DefaultButton onClick={toggleHideDialog} text={t('Dashboard.PendingChangesDialog.cancel')} />
 				</DialogFooter>
 			</Dialog>
 		</div>

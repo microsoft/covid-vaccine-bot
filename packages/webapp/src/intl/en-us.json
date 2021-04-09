@@ -32,16 +32,50 @@
 	},
 	"Dashboard": {
 		"title": "Dashboard",
-		"refresh_data": "Refresh Data"
+		"loading": "Loading content...",
+		"RefreshButton": "Refresh Data",
+		"WorkingBranches": {
+			"title": "Working Branches",
+			"ariaLabelForSelectionColumn": "Toggle selection",
+			"ariaLabelForSelectAllCheckbox": "Toggle selection for all items",
+			"checkButtonAriaLabel": "Row checkbox",
+			"empty": "No working branches at this time.",
+			"columns": {
+				"branchName": "Branch Name",
+				"createdOn": "Created On",
+				"actionsColumn": {
+					"ariaLabel": "Actions Column"
+				}
+			}
+		},
+		"PendingPRs": {
+			"title": "Pending PRs",
+			"ariaLabelForSelectionColumn": "Toggle selection",
+			"ariaLabelForSelectAllCheckbox": "Toggle selection for all items",
+			"checkButtonAriaLabel": "Row checkbox",
+			"empty": "No pending PRs at this time."
+		},
+		"LocationUpdates": {
+			"title": "Location Updates",
+			"ariaLabelForSelectionColumn": "Toggle selection",
+			"ariaLabelForSelectAllCheckbox": "Toggle selection for all items",
+			"checkButtonAriaLabel": "Row checkbox",
+			"empty": "No pending location updates at this time."
+		},
+		"PendingChangesDialog": {
+			"text": "You have pending changes in the review tab to be submitted, refreshing the data will revert those changes.\n\nDo you want to proceed?",
+			"cancel": "Cancel",
+			"submit": "OK"
+		}
 	},
 	"Locations": {
 		"title": "Locations",
-		"refresh_data": "Refresh Data"
+		"refresh_data": "Refresh Data",
+		"AddQualifierForm": {
+
+		}
 	},
 	"About": {
-
-	},
-	"AddQualifierForm": {
 
 	}
 }
