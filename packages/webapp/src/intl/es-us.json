@@ -24,7 +24,9 @@
 			"privacyCookies": "Privacidad y cookies",
 			"contactUs": "Contacta con nosotros",
 			"codeOfConduct": "Código de conducta"
-		}
+		},
+		"submit": "Entregar",
+		"cancel": "Cancelar"
 	},
 	"AddQualifierForm": {
 		"title": {
@@ -96,6 +98,33 @@
 		"MoreInfoUrl": {
 			"placeholder": "Más información URL"
 		}
+	},
+	"LocationForm": {
+		"baseTitle": {
+			"sublocation": "sublocalización",
+			"location": "ubicación"
+		},
+		"formTitle": {
+			"edit": "Editar",
+			"new": "Añadir nuevo"
+		},
+		"regionTypeOptions": {
+			"placeholder": "Tipo de región",
+			"state": "Expresar",
+			"territory": "Territory",
+			"tribal_land": "Tierra tribal",
+			"county": "Condado",
+			"city": "Ciudad"
+		},
+		"info": "Enlace de información general de la región:",
+		"workflow": "Enlace a una herramienta de flujo de trabajo de elegibilidad existente:",
+		"scheduling": "Programador de registro de citas:",
+		"providers": "Lista de proveedores de programación y ubicaciones:",
+		"eligibility": "Criterios de elegibilidad sobre la fase actual:",
+		"eligibilityPlan": "Documentación que describe las fases de implementación en detalle:",
+		"schedulingPhone": "Una línea directa de programación:",
+		"schedulingPhoneDesc": "Descripción de la línea directa de programación:",
+		"noPhaseLabel": "Sin etiqueta de fase"
 	},
 	"QualifierPanel": {
 		"title": "Calificadores",

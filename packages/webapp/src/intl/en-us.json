@@ -5,7 +5,7 @@
 		"LoginButton": "Login with Github",
 		"active": "active",
 		"Pivot": {
-			"Dashboard": "Dashboard",
+			"bDashoard": "Dashboard",
 			"Locations": "Locations",
 			"Translate": "Translate",
 			"Review": "Review"
@@ -41,7 +41,9 @@
 			"privacyCookies": "Privacy and Cookies",
 			"contactUs": "Contact Us",
 			"codeOfConduct": "Code of Conduct"
-		}
+		},
+		"submit": "Submit",
+		"cancel": "Cancel"
 	},
 	"AddQualifierForm": {
 		"title": {
@@ -71,6 +73,33 @@
 		"submit": "Submit",
 		"cancel": "Cancel"
 	},
+	"LocationForm": {
+		"baseTitle": {
+			"sublocation": "sublocation",
+			"location": "location"
+		},
+		"formTitle": {
+			"edit": "Edit",
+			"new": "Add new"
+		},
+		"regionTypeOptions": {
+			"placeholder": "Region type",
+			"state": "State",
+			"territory": "Territory",
+			"tribal_land": "Tribal land",
+			"county": "County",
+			"city": "City"
+		},
+		"info": "General information link for the region:",
+		"workflow": "Link to an existing eligibility workflow tool:",
+		"scheduling": "Appointment registration scheduler:",
+		"providers": "List of scheduling providers and locations:",
+		"eligibility": "Eligibility criteria about the current phase:",
+		"eligibilityPlan": "Documentation describing the rollout phases in detail:",
+		"schedulingPhone": "A scheduling hotline:",
+		"schedulingPhoneDesc": "Description of scheduling hotline:",
+		"noPhaseLabel": "No phase label"
+	},
 	"Dashboard": {
 		"title": "Dashboard",
 		"loading": "Loading content...",
@@ -81,6 +110,7 @@
 			"ariaLabelForSelectAllCheckbox": "Toggle selection for all items",
 			"checkButtonAriaLabel": "Row checkbox",
 			"empty": "No working branches at this time.",
+			"load": "Load Branch",
 			"columns": {
 				"branchName": "Branch Name",
 				"name": "",
@@ -96,6 +126,9 @@
 			"ariaLabelForSelectAllCheckbox": "Toggle selection for all items",
 			"checkButtonAriaLabel": "Row checkbox",
 			"empty": "No pending PRs at this time.",
+			"approve": "Approve",
+			"load": "Load PR",
+			"notes": "Notes",
 			"columns": {
 				"title": "Title",
 				"notes": "Notes",
@@ -112,6 +145,7 @@
 			"ariaLabelForSelectAllCheckbox": "Toggle selection for all items",
 			"checkButtonAriaLabel": "Row checkbox",
 			"empty": "No pending location updates at this time.",
+			"view": "View",
 			"columns": {
 				"title": "Title",
 				"notes": "Notes",

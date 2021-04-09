@@ -16,7 +16,7 @@ import {
 	getStateCustomStrings,
 	getRegionCustomStrings,
 } from '../selectors/locationSelectors'
-
+import {getText as t} from '../selectors/intlSelectors'
 import './LocationForm.scss'
 
 export interface LocationFormProp {
@@ -86,28 +86,28 @@ export default observer(function LocationForm(props: LocationFormProp) {
 	const regionTypeOptions = [
 		{
 			key: 'state',
-			text: 'State',
+			text: t('LocationForm.regionTypeOptions.state'),
 		},
 		{
 			key: 'territory',
-			text: 'Territory',
+			text: t('LocationForm.regionTypeOptions.territory'),
 		},
 		{
 			key: 'tribal_land',
-			text: 'Tribal land',
+			text: t('LocationForm.regionTypeOptions.tribal_land'),
 		},
 		{
 			key: 'county',
-			text: 'County',
+			text: t('LocationForm.regionTypeOptions.county'),
 		},
 		{
 			key: 'city',
-			text: 'City',
+			text: t('LocationForm.regionTypeOptions.city'),
 		},
 	].filter((region) => (isRegion ? region.key !== 'state' : true))
 
-	const baseTitle = isRegion ? 'sublocation' : 'location'
-	const formTitle = item ? `Edit ${baseTitle}` : `Add new ${baseTitle}`
+	const baseTitle = isRegion ? t('LocationForm.baseTitle.sublocation') : t('LocationForm.baseTitle.location')
+	const formTitle = item ? `${t('LocationForm.formTitle.edit')} ${baseTitle}` : `${t('LocationForm.formTitle.new')} ${baseTitle}`
 
 	const handleRegionChange = useCallback(
 		(_ev: any, item?: IDropdownOption) => {
@@ -170,72 +170,72 @@ export default observer(function LocationForm(props: LocationFormProp) {
 					/>
 					<Dropdown
 						selectedKey={formData.regionType}
-						placeholder="Region type"
+						placeholder={t('LocationForm.regionTypeOptions.placeholder')}
 						options={regionTypeOptions}
 						onChange={handleRegionChange}
 					/>
 				</div>
 				<TextField
-					label="General information link for the region:"
+					label={t('LocationForm.regionTypeOptions.placeholder')}
 					name="info"
 					value={formData.info}
 					onChange={handleTextChange}
 				/>
 				<TextField
-					label="Link to an existing eligibility workflow tool:"
+					label={t('LocationForm.workflow')}
 					name="workflow"
 					value={formData.workflow}
 					onChange={handleTextChange}
 				/>
 				<TextField
-					label="Appointment registration scheduler:"
+					label={t('LocationForm.scheduling')}
 					name="scheduling"
 					value={formData.scheduling}
 					onChange={handleTextChange}
 				/>
 				<TextField
-					label="List of scheduling providers and locations:"
+					label={t('LocationForm.providers')}
 					name="providers"
 					value={formData.providers}
 					onChange={handleTextChange}
 				/>
 				<TextField
-					label="Eligibility criteria about the current phase:"
+					label={t('LocationForm.eligibility')}
 					name="eligibility"
 					value={formData.eligibility}
 					onChange={handleTextChange}
 				/>
 				<TextField
-					label="Documentation describing the rollout phases in detail:"
+					label={t('LocationForm.eligibilityPlan')}
 					name="eligibilityPlan"
 					value={formData.eligibilityPlan}
 					onChange={handleTextChange}
 				/>
 				<TextField
-					label="A scheduling hotline:"
+					label={t('LocationForm.schedulingPhone')}
 					name="schedulingPhone"
 					value={formData.schedulingPhone}
 					onChange={handleTextChange}
 				/>
 				<TextField
-					label="Description of scheduling hotline:"
+					label={t('LocationForm.schedulingPhoneDesc')}
 					name="schedulingPhoneDesc"
 					value={formData.schedulingPhoneDesc}
 					onChange={handleTextChange}
 				/>
 				<Checkbox
-					label="No phase label"
+					label={t('LocationForm.noPhaseLabel')}
 					checked={formData.noPhaseLabel}
 					onChange={onNoLabelChange}
 				/>
 			</div>
 			<div className="modalFooter">
 				<PrimaryButton
-					text="Submit"
+					text={t('App.submit')}
 					disabled={!canSubmit()}
 					onClick={() => onSubmit?.(formData, item)}
 				/>
-				<DefaultButton text="Cancel" onClick={() => onCancel?.()} />
+				<DefaultButton text={t('App.cancel')} onClick={() => onCancel?.()} />
 			</div>
 		</div>
 	)
