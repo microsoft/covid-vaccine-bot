@@ -14,6 +14,7 @@ import {
 import { useBoolean } from '@uifabric/react-hooks'
 import { observer } from 'mobx-react-lite'
 import { useState, useRef, useEffect, useCallback } from 'react'
+import {getText as t} from '../selectors/intlSelectors'
 import {
 	updateLocationList,
 	updateLocationData,
@@ -54,14 +55,14 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 	const locationColumns = [
 		{
 			key: 'stateCol',
-			name: 'State',
+			name: t('LocationsStates.locationColumns.text'),
 			fieldName: 'text',
 			minWidth: 200,
 			isResizable: true,
 		},
 		{
 			key: 'regionCol',
-			name: 'Sublocations',
+			name: t('LocationsStates.locationColumns.regions'),
 			fieldName: 'regions',
 			minWidth: 200,
 			isResizable: true,
@@ -90,7 +91,7 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 							state.currentLanguage
 						].trim() !== ''
 							? stateNames[`cdc/${stateId}/state_name`][state.currentLanguage]
-							: `*Translation Not Found* (${stateId})`
+							: `${t('LocationStates.translationNotFound')} (${stateId})`
 
 					nextFilteredStateList.push({
 						key: key,
@@ -196,8 +197,8 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 		<div className="bodyContainer">
 			<div className="bodyHeader">
 				<div className="bodyHeaderTitle">
-					<div className="breadCrumbs">/ Locations</div>
-					<div className="mainTitle">Locations</div>
+					<div className="breadCrumbs">/ {t('LocationsStates.title')}</div>
+					<div className="mainTitle">{t('LocationsStates.title')}</div>
 				</div>
 			</div>
 			<div className="bodyContent">
@@ -206,7 +207,7 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 						<div className="searchRow">
 							<SearchBox
 								styles={{ root: { width: 400 } }}
-								placeholder="Search"
+								placeholder={t('LocationsStates.SearchBox.placeholder')}
 								onChange={(ev, text) => onStateFilter(ev, text)}
 							/>
 							{state.isEditable && (
@@ -218,7 +219,7 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 										iconName="CircleAdditionSolid"
 										style={{ color: '#0078d4' }}
 									/>
-									Add Location
+									{t('LocationsStates.addLocation')}
 								</div>
 							)}
 						</div>
@@ -228,9 +229,9 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 							setKey="set"
 							layoutMode={DetailsListLayoutMode.justified}
 							selectionPreservedOnEmptyClick={true}
-							ariaLabelForSelectionColumn="Toggle selection"
-							ariaLabelForSelectAllCheckbox="Toggle selection for all items"
-							checkButtonAriaLabel="Row checkbox"
+							ariaLabelForSelectionColumn={t('LocationsStates.addLocation')}
+							ariaLabelForSelectAllCheckbox={t('LocationsStates.addLocation')}
+							checkButtonAriaLabel={t('LocationsStates.addLocation')}
 							checkboxVisibility={2}
 							onItemInvoked={openSelection}
 							onRenderItemColumn={onRenderItemColumn}
@@ -239,7 +240,7 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 					</section>
 				) : (
 					<section>
-						<ProgressIndicator description="Loading content..." />
+						<ProgressIndicator description={t('LocationsStates.loding')} />
 					</section>
 				)}
 			</div>

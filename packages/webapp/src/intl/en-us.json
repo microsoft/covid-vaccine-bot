@@ -41,7 +41,8 @@
 			"checkButtonAriaLabel": "Row checkbox",
 			"empty": "No working branches at this time.",
 			"columns": {
-				"name": "Branch Name",
+				"branchName": "Branch Name",
+				"name": "",
 				"createdOn": "Created On",
 				"action": {
 					"ariaLabel": "Actions Column"
@@ -72,6 +73,7 @@
 			"empty": "No pending location updates at this time.",
 			"columns": {
 				"title": "Title",
+				"notes": "Notes",
 				"author": "Aurthor",
 				"update": "Last Update",
 				"action": {
@@ -85,11 +87,21 @@
 			"submit": "OK"
 		}
 	},
-	"Locations": {
+	"LocationsStates": {
 		"title": "Locations",
 		"refresh_data": "Refresh Data",
-		"AddQualifierForm": {
-
+		"addLocation": "Add Location",
+		"loading": "Loading content...",
+		"translationNotFound": "*Translation Not Found*",
+		"SearchBox": {
+			"placeholder": "Search"
+		},
+		"locationColumns": {
+			"text": "State",
+			"regions": "Sublocations",
+			"ariaLabelForSelectionColumn": "Toggle selection",
+			"ariaLabelForSelectAllCheckbox": "Toggle selection for all items",
+			"checkButtonAriaLabel":"Row checkbox"
 		}
 	},
 	"About": {
