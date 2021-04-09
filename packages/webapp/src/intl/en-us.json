@@ -96,8 +96,16 @@
 		"title": "Locations",
 		"refresh_data": "Refresh Data",
 		"AddQualifierForm": {
-
 		}
+	},
+	"QualifierPanel": {
+		"title": "Qualifiers",
+		"addQualifierLabel": "Add Qualifier",
+		"translationNotFound": "*Translation Not Found*",
+		"columns": {
+			"question": "Question"
+		}
+
 	},
 	"About": {
 

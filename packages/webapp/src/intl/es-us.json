@@ -23,6 +23,15 @@
 	"Dashboard": {
 		"title": "Tablero"
 	},
+	"QualifierPanel": {
+		"title": "Calificadores",
+		"addQualifierLabel": "Agregar calificador",
+		"translationNotFound": "* Traducción no encontrada *",
+		"columns": {
+			"question": "Pregunta"
+		}
+
+	},
 	"Review": {
 		"title": "Revisar",
 		"saving": "Guardando cambios...",
