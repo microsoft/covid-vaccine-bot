@@ -4,8 +4,11 @@
  */
 import { Localizer } from './Localizer'
 import { Locator } from './Locator'
+import { ProviderLocationsStore } from './ProviderLocationsStore'
 import { getCosmosContainer } from './cosmos'
 
-export const providersCosmosContainer = getCosmosContainer()
 export const locator = new Locator()
 export const localizer = new Localizer()
+export const providerLocationsStore = new ProviderLocationsStore(
+	getCosmosContainer()
+)

@@ -4,7 +4,7 @@
  */
 import { Request, Response } from 'express'
 import { Operation } from 'express-openapi'
-import { providersCosmosContainer } from '../../components'
+import { providerLocationsStore } from '../../components'
 import { ProviderLocation } from '../../types'
 
 const MILES_TO_METERS = 1609.344
@@ -23,24 +23,18 @@ export const GET: Operation = [
 		const lat = (req.query.lat as any) as number
 		const lon = (req.query.lon as any) as number
 		const radius = (req.query.radius as any) as number
+		if (radius > 100) {
+			res.status(400).json({ message: 'radius must be <= 100 miles' })
+		}
+
 		const radiusMeters = radius * MILES_TO_METERS
 		console.log('find providers', lat, lon, radius, radiusMeters)
-
-		const response = await providersCosmosContainer.items.query<ProviderLocation>(
-			{
-				query: FIND_PROVIDERS_IN_RADIUS,
-				parameters: [
-					{ name: '@lat', value: lat },
-					{ name: '@lon', value: lon },
-					{ name: '@radiusMeters', value: radius * MILES_TO_METERS },
-				],
-			},
-			{
-				maxItemCount: 100,
-			}
+		const providers = await providerLocationsStore.getProviderLocations(
+			lat,
+			lon,
+			radius
 		)
-		const locations = await response.fetchNext()
-		res.json(locations.resources)
+		res.json(providers)
 	},
 ]
 GET.apiDoc = {
@@ -74,6 +68,12 @@ GET.apiDoc = {
 		},
 	],
 	responses: {
+		200: {
+			description: 'Vaccination Provider List Response',
+			schema: {
+				$ref: '#/definitions/ProviderListResponse',
+			},
+		},
 		default: {
 			description: 'Unexpected error',
 			schema: {
