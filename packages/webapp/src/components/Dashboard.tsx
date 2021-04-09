@@ -76,7 +76,7 @@ export default observer(function Dashboard() {
 				rel="noreferrer"
 			>
 				<FontIcon iconName="CircleAdditionSolid" />
-				View
+				{t('Dashboard.LocationUpdates.view')}
 			</a>
 		)
 	}
@@ -92,14 +92,14 @@ export default observer(function Dashboard() {
 					rel="noreferrer"
 				>
 					<FontIcon iconName="CircleAdditionSolid" />
-					Approve
+					{t('Dashboard.PendingPRs.approve')}
 				</a>
 				<div
 					className={`loadPRButton ${disabled ? 'disabled' : ''}`}
 					onClick={() => loadPR(item.action.number)}
 				>
 					<FontIcon iconName="DrillDownSolid" />
-					Load PR
+					{t('Dashboard.PendingPRs.load')}
 				</div>
 			</div>
 		)
@@ -119,7 +119,7 @@ export default observer(function Dashboard() {
 					onClick={() => loadBranch(item)}
 				>
 					<FontIcon iconName="DrillDownSolid" />
-					Load Branch
+					{t('Dashboard.WorkingBranches.load')}
 				</div>
 			</div>
 		)
@@ -163,7 +163,7 @@ export default observer(function Dashboard() {
 						directionalHint={5}
 					>
 						<div className="infoCalloutBody">
-							<div className="infoHeader">Notes</div>
+							<div className="infoHeader">{t('Dashboard.PendingPRs.notes')}</div>
 							<div className="infoBody">{item.action.body}</div>
 						</div>
 					</Callout>
