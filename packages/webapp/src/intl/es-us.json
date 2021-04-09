@@ -1,6 +1,7 @@
 {
 	"App": {
 		"title": "Compositor de datos",
+		"LoginButton": "Iniciar sesión con Github",
 		"SaveContinueMessageBar": {
 			"cancel": "Descarte",
 			"submit": "Guardar y continuar",
@@ -11,10 +12,25 @@
 			"text": "haga clic en la pestaña de revisión para enviar estos cambios.",
 			"pass": "Tus cambios se han guardado en",
 			"fail": "Ahora estás trabajando en la rama"
+		},
+		"UserAccessExpirationForm": {
+			"title": "Sesión caducada",
+			"text": "Vuelve a iniciar sesión con Github para seguir trabajando",
+			"submit": "Continuar trabajando",
+			"logout": "Cerrar sesión"
 		}
 	},
 	"Dashboard": {
 		"title": "Tablero"
+	},
+	"QualifierPanel": {
+		"title": "Calificadores",
+		"addQualifierLabel": "Agregar calificador",
+		"translationNotFound": "* Traducción no encontrada *",
+		"columns": {
+			"question": "Pregunta"
+		}
+
 	},
 	"Review": {
 		"title": "Revisar",

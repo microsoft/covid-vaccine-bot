@@ -2,6 +2,7 @@
 	"App": {
 		"title": "Data Composer",
 		"NotFound":  "404 page not found.",
+		"LoginButton": "Login with Github",
 		"Pivot": {
 			"Dashboard": "Dashboard",
 			"Locations": "Locations",
@@ -28,6 +29,12 @@
 			"text": "Please click on the review tab to submit these changes.",
 			"pass": "Your changes have been saved to",
 			"fail": "You are now working on branch"
+		},
+		"UserAccessExpirationForm": {
+			"title": "Session Expired",
+			"text": "Please log back in with Github to continue working.",
+			"submit": "Continue Working",
+			"logout": "Logout"
 		}
 	},
 	"Dashboard": {
@@ -103,6 +110,15 @@
 			"ariaLabelForSelectAllCheckbox": "Toggle selection for all items",
 			"checkButtonAriaLabel":"Row checkbox"
 		}
+	},
+	"QualifierPanel": {
+		"title": "Qualifiers",
+		"addQualifierLabel": "Add Qualifier",
+		"translationNotFound": "*Translation Not Found*",
+		"columns": {
+			"question": "Question"
+		}
+
 	},
 	"About": {
 

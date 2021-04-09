@@ -5,6 +5,7 @@
 import { observer } from 'mobx-react-lite'
 import { DefaultButton } from 'office-ui-fabric-react'
 import { loginUser } from '../actions/authActions'
+import { getText as t } from '../selectors/intlSelectors'
 
 import './Login.scss'
 
@@ -12,8 +13,8 @@ export default observer(function Login() {
 	return (
 		<div className="loginPageContainer">
 			<div className="loginContainer">
-				<h3>Data Composer</h3>
-				<DefaultButton text="Login with Github" onClick={loginUser} />
+				<h3>{t('App.title')}</h3>
+				<DefaultButton text={t('App.LoginButton')} onClick={loginUser} />
 			</div>
 		</div>
 	)
