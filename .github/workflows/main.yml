@@ -15,7 +15,7 @@ on:
 
 env:
   AZURE_WEBAPP_NAME: covid-healthbot-container
-  AZURE_WEBAPP_PACKAGE_PATH: 'packages/healthbotapp/dist'
+  AZURE_WEBAPP_NAME_API: ms-covid-vaxbot-api
   NODE_VERSION: '12.x'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
@@ -80,4 +80,16 @@ jobs:
         with:
           app-name: ${{ env.AZURE_WEBAPP_NAME }}
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
-          package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
+          package: packages/healthbotapp/dist
+
+      - name: Install API Deployment Modules
+        if: github.ref == 'refs/heads/main'
+        run: pushd packages/api/dist && npm install && popd
+
+      - name: 'Deploy API to Azure WebApp'
+        if: github.ref == 'refs/heads/main'
+        uses: azure/webapps-deploy@v2
+        with:
+          app-name: ${{ env.AZURE_WEBAPP_NAME_API }}
+          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE_API }}
+          package: packages/api/dist

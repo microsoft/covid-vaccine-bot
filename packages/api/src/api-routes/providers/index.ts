@@ -5,19 +5,7 @@
 import { Request, Response } from 'express'
 import { Operation } from 'express-openapi'
 import { providerLocationsStore } from '../../components'
-import { ProviderLocation } from '../../types'
 
-const MILES_TO_METERS = 1609.344
-
-const FIND_PROVIDERS_IN_RADIUS = `
-	select * 
-	from providers p 
-	where 
-		ST_DISTANCE(
-			p.position, 
-			{ "type": "Point", "coordinates": [@lon, @lat]}
-		) < @radiusMeters
-`
 export const GET: Operation = [
 	async (req: Request, res: Response) => {
 		const lat = (req.query.lat as any) as number
@@ -26,9 +14,6 @@ export const GET: Operation = [
 		if (radius > 100) {
 			res.status(400).json({ message: 'radius must be <= 100 miles' })
 		}
-
-		const radiusMeters = radius * MILES_TO_METERS
-		console.log('find providers', lat, lon, radius, radiusMeters)
 		const providers = await providerLocationsStore.getProviderLocations(
 			lat,
 			lon,
