@@ -3,21 +3,23 @@
  * Licensed under the MIT license. See LICENSE file in the project.
  */
 import { FC, memo } from 'react'
+import { observer } from 'mobx-react-lite'
+import { getText as t } from '../selectors/intlSelectors'
 
 const CONTACT_EMAIL = process.env.REACT_APP_CONTACT_US_EMAIL
 const CODE_OF_CONDUCT_URL = process.env.REACT_APP_CODE_OF_CONDUCT_URL
 
-export const Footer: FC = memo(function Footer() {
+export default observer(function Footer() {
 	return (
 		<div style={{ display: 'flex', flexDirection: 'column' }}>
 			<div className="appFooterRow">
 				<Link href="https://go.microsoft.com/fwlink/?LinkId=521839">
-					Privacy &amp; Cookies
+					{t('App.Footer.privacyCookies')}
 				</Link>
 				{' | '}
-				<Link href={`mailto:${CONTACT_EMAIL}`}>Contact Us</Link>
+				<Link href={`mailto:${CONTACT_EMAIL}`}>{t('App.Footer.contactUs')}</Link>
 				{' | '}
-				<Link href={CODE_OF_CONDUCT_URL}>Code of Conduct</Link>
+				<Link href={CODE_OF_CONDUCT_URL}>{t('App.Footer.codeOfConduct')}</Link>
 			</div>
 		</div>
 	)

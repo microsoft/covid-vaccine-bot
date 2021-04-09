@@ -36,6 +36,11 @@
 			"text": "Please log back in with Github to continue working.",
 			"submit": "Continue Working",
 			"logout": "Logout"
+		},
+		"Footer": {
+			"privacyCookies": "Privacy and Cookies",
+			"contactUs": "Contact Us",
+			"codeOfConduct": "Code of Conduct"
 		}
 	},
 	"AddQualifierForm": {

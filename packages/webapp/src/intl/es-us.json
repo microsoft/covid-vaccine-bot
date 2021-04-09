@@ -19,6 +19,11 @@
 			"text": "Vuelve a iniciar sesión con Github para seguir trabajando",
 			"submit": "Continuar trabajando",
 			"logout": "Cerrar sesión"
+		},
+		"Footer": {
+			"privacyCookies": "Privacidad y cookies",
+			"contactUs": "Contacta con nosotros",
+			"codeOfConduct": "Código de conducta"
 		}
 	},
 	"AddQualifierForm": {
