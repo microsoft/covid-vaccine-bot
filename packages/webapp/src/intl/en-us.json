@@ -111,6 +111,17 @@
 			"checkButtonAriaLabel":"Row checkbox"
 		}
 	},
+	"PhaseForm": {
+		"title":{
+			"new": "New Phase",
+			"edit": "Edit Phase",
+			"duplicate": "Duplicate Phase"
+		},
+		"label": "Phase Name:",
+		"submit": "Submit",
+		"cancel": "Cancel",
+		"hasDuplicateName": "Phase is too similar to one already in use, please revise."
+	},
 	"PhaseQualifierForm": {
 		"FormButtons": {
 			"more": "More",

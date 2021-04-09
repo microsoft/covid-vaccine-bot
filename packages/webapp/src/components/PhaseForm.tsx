@@ -11,6 +11,7 @@ import { observer } from 'mobx-react-lite'
 import { useCallback, useRef, useState } from 'react'
 import { getAppStore } from '../store/store'
 import { formatId } from '../utils/textUtils'
+import { getText as t } from '../selectors/intlSelectors'
 
 import './LocationForm.scss'
 
@@ -74,7 +75,7 @@ export default observer(function PhaseForm(props: PhaseFormProp) {
 
 			if (nameExists) {
 				setHasError(true)
-				return 'Phase is too similar to one already in use, please revise.'
+				return t('PhaseForm.hasDuplicateName')
 			} else {
 				setHasError(false)
 				return ''
@@ -88,7 +89,7 @@ export default observer(function PhaseForm(props: PhaseFormProp) {
 	}, [formData, hasError])
 
 
-	const formTitle = duplicate ? 'Duplicate Phase' : item ? 'Edit Phase' : 'New Phase'
+	const formTitle = duplicate ? t('PhaseForm.title.duplicate') : item ? t('PhaseForm.title.edit') : t('PhaseForm.title.new')
 
     return (
         <div className="modalWrapper">
@@ -97,7 +98,7 @@ export default observer(function PhaseForm(props: PhaseFormProp) {
             </div>
             <div className="modalBody">
                 <TextField
-                    label="Phase Name:"
+                    label={t('PhaseForm.label')}
                     name="name"
                     value={formData.name}
                     onChange={handleTextChange}
@@ -105,8 +106,8 @@ export default observer(function PhaseForm(props: PhaseFormProp) {
                 />
             </div>
             <div className="modalFooter">
-                <PrimaryButton text="Submit" disabled={disableSubmit()} onClick={() => onSubmit?.(formData)} />
-                <DefaultButton text="Cancel" onClick={() => onCancel?.()}/>
+                <PrimaryButton text={t('PhaseForm.submit')} disabled={disableSubmit()} onClick={() => onSubmit?.(formData)} />
+                <DefaultButton text={t('PhaseForm.cancel')} onClick={() => onCancel?.()}/>
             </div>
         </div>
     )

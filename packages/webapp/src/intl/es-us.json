@@ -23,6 +23,17 @@
 	"Dashboard": {
 		"title": "Tablero"
 	},
+	"PhaseForm": {
+		"title":{
+			"new": "Nueva fase",
+			"edit": "Fase de edición",
+			"duplicate": "Fase duplicada"
+		},
+		"label": "Nombre de la fase:",
+		"submit": "Entregar",
+		"cancel": "Cancelar",
+		"hasDuplicateName": "La fase es demasiado similar a una que ya está en uso, revise."
+	},
 	"PhaseQualifierForm": {
 		"FormButtons": {
 			"more": "Más",
