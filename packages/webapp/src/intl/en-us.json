@@ -42,9 +42,9 @@
 			"checkButtonAriaLabel": "Row checkbox",
 			"empty": "No working branches at this time.",
 			"columns": {
-				"branchName": "Branch Name",
+				"name": "Branch Name",
 				"createdOn": "Created On",
-				"actionsColumn": {
+				"action": {
 					"ariaLabel": "Actions Column"
 				}
 			}
@@ -54,14 +54,31 @@
 			"ariaLabelForSelectionColumn": "Toggle selection",
 			"ariaLabelForSelectAllCheckbox": "Toggle selection for all items",
 			"checkButtonAriaLabel": "Row checkbox",
-			"empty": "No pending PRs at this time."
+			"empty": "No pending PRs at this time.",
+			"columns": {
+				"title": "Title",
+				"notes": "Notes",
+				"author": "Aurthor",
+				"update": "Last Update",
+				"action": {
+					"ariaLabel": "Actions Column"
+				}
+			}
 		},
 		"LocationUpdates": {
 			"title": "Location Updates",
 			"ariaLabelForSelectionColumn": "Toggle selection",
 			"ariaLabelForSelectAllCheckbox": "Toggle selection for all items",
 			"checkButtonAriaLabel": "Row checkbox",
-			"empty": "No pending location updates at this time."
+			"empty": "No pending location updates at this time.",
+			"columns": {
+				"title": "Title",
+				"author": "Aurthor",
+				"update": "Last Update",
+				"action": {
+					"ariaLabel": "Actions Column"
+				}
+			}
 		},
 		"PendingChangesDialog": {
 			"text": "You have pending changes in the review tab to be submitted, refreshing the data will revert those changes.\n\nDo you want to proceed?",
