@@ -1639,6 +1639,12 @@ More detailed list available at the link
 
 ### Nebraska::Lancaster Active Phase (2a)
 
+* Are you a healthcare worker?
+* Are you a long-term care resident?
+* Are you classified as an essential worker?
+* Are you age 16+, and have a high-risk medical condition?
+* Are you age 45+?
+
 # Nevada
 
 ## Nevada Links
