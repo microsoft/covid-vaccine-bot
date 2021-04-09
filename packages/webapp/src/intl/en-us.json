@@ -2,6 +2,7 @@
 	"App": {
 		"title": "Data Composer",
 		"NotFound":  "404 page not found.",
+		"LoginButton": "Login with Github",
 		"Pivot": {
 			"Dashboard": "Dashboard",
 			"Locations": "Locations",

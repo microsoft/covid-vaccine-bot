@@ -1,6 +1,7 @@
 {
 	"App": {
 		"title": "Compositor de datos",
+		"LoginButton": "Iniciar sesión con Github",
 		"SaveContinueMessageBar": {
 			"cancel": "Descarte",
 			"submit": "Guardar y continuar",
