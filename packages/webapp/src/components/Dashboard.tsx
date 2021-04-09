@@ -183,14 +183,14 @@ export default observer(function Dashboard() {
 	const prColumns = [
 		{
 			key: 'titleCol',
-			name: 'Title',
+			name: t('Dashboard.LocationUpdates.columns.title'),
 			fieldName: 'title',
 			minWidth: 200,
 			isResizable: true,
 		},
 		{
 			key: 'notesCol',
-			name: 'Notes',
+			name: t('Dashboard.LocationUpdates.columns.notes'),
 			fieldName: 'notes',
 			minWidth: 100,
 			isResizable: true,
@@ -198,14 +198,14 @@ export default observer(function Dashboard() {
 		},
 		{
 			key: 'authorCol',
-			name: 'Author',
+			name: t('Dashboard.LocationUpdates.columns.author'),
 			fieldName: 'author',
 			minWidth: 200,
 			isResizable: true,
 		},
 		{
 			key: 'updateCol',
-			name: 'Last Update',
+			name: t('Dashboard.LocationUpdates.columns.update'),
 			fieldName: 'update',
 			minWidth: 200,
 			isResizable: true,
@@ -213,7 +213,7 @@ export default observer(function Dashboard() {
 		{
 			key: 'actionCol',
 			name: '',
-			ariaLabel: 'Actions Column',
+			ariaLabel: t('Dashboard.LocationUpdates.action.ariaLabel'),
 			fieldName: 'action',
 			minWidth: 200,
 			isResizable: true,
@@ -224,21 +224,21 @@ export default observer(function Dashboard() {
 	const issueColumns = [
 		{
 			key: 'titleCol',
-			name: 'Title',
+			name: t('Dashboard.LocationUpdates.columns.title'),
 			fieldName: 'title',
 			minWidth: 200,
 			isResizable: true,
 		},
 		{
 			key: 'authorCol',
-			name: 'Author',
+			name: t('Dashboard.LocationUpdates.columns.author'),
 			fieldName: 'author',
 			minWidth: 200,
 			isResizable: true,
 		},
 		{
 			key: 'updateCol',
-			name: 'Last Update',
+			name: t('Dashboard.LocationUpdates.columns.update'),
 			fieldName: 'update',
 			minWidth: 200,
 			isResizable: true,
@@ -246,7 +246,7 @@ export default observer(function Dashboard() {
 		{
 			key: 'actionCol',
 			name: '',
-			ariaLabel: 'Actions Column',
+			ariaLabel: t('Dashboard.LocationUpdates.columns.action.ariaLabel'),
 			fieldName: 'action',
 			minWidth: 200,
 			isResizable: true,
