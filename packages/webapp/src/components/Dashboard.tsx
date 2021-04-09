@@ -299,7 +299,7 @@ export default observer(function Dashboard() {
 			<div className="bodyContainer">
 				<div className="bodyHeader">
 					<div className="bodyHeaderTitle">
-						<div className="breadCrumbs">/ {[t('Dashboard.title'), 'test']}</div>
+						<div className="breadCrumbs">/ {t('Dashboard.title')}</div>
 						<div className="mainTitle">{t('Dashboard.title')}</div>
 					</div>
 				</div>
