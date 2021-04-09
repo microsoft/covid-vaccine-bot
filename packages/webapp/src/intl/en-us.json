@@ -36,7 +36,9 @@
 			"text": "Please log back in with Github to continue working.",
 			"submit": "Continue Working",
 			"logout": "Logout"
-		}
+		},
+		"submit": "Submit",
+		"cancel": "Cancel"
 	},
 	"AddQualifierForm": {
 		"title": {
@@ -65,6 +67,33 @@
 		},
 		"submit": "Submit",
 		"cancel": "Cancel"
+	},
+	"LocationForm": {
+		"baseTitle": {
+			"sublocation": "sublocation",
+			"location": "location"
+		},
+		"formTitle": {
+			"edit": "Edit",
+			"new": "Add new"
+		},
+		"regionTypeOptions": {
+			"placeholder": "Region type",
+			"state": "State",
+			"territory": "Territory",
+			"tribal_land": "Tribal land",
+			"county": "County",
+			"city": "City"
+		},
+		"info": "General information link for the region:",
+		"workflow": "Link to an existing eligibility workflow tool:",
+		"scheduling": "Appointment registration scheduler:",
+		"providers": "List of scheduling providers and locations:",
+		"eligibility": "Eligibility criteria about the current phase:",
+		"eligibilityPlan": "Documentation describing the rollout phases in detail:",
+		"schedulingPhone": "A scheduling hotline:",
+		"schedulingPhoneDesc": "Description of scheduling hotline:",
+		"noPhaseLabel": "No phase label"
 	},
 	"Dashboard": {
 		"title": "Dashboard",
