@@ -43,5 +43,66 @@
 	},
 	"AddQualifierForm": {
 
+	},
+	"Review": {
+
+	},
+	"Translate": {
+		"title": "Translate",
+		"ErrorMessageBar": {
+			"closeArialLabel": "Close"
+		},
+		"Filter": {
+			"LanguageDropdown": {
+				"label": "Translate from:",
+				"placeholder": "Available languages"
+			},
+			"TranslateDropdown": {
+				"label": "Show:",
+				"placeholder": "Needs translations"
+			}
+		},
+		"TemplateButtons": {
+			"download": "Download Template",
+			"upload": "Upload File"
+		},
+		"error": {
+			"unexpected": "Unexpected:",
+			"invalid_fileContent": "Invalid File Content.",
+			"invalid_fileType": "Invalid File Type."
+		},
+		"translation_notFound": "*Translation Not Found*",
+		"translationFilter": {
+			"needs_translation": "Needs Translation",
+			"show_all": "Show All"
+		},
+		"miscFilter": {
+			"all": "All",
+			"state_specific": "State-specific",
+			"state_links": "State Links",
+			"uncategorized": "Uncategorized",
+			"placeholder": "Filter Miscellaneous"
+		},
+		"GroupList": {
+			"loading": "Loading content...",
+			"updating": "Updating translations...",
+			"columns": {
+				"general": "General",
+				"sms": "SMS",
+				"voice": "Voice"
+			},
+			"LocationList": {
+				"title": "Locations",
+				"empty": "No missing location translations found for:"
+			},
+			"QualifierList": {
+				"title": "Qualifiers",
+				"empty": "No missing qualifier translations found for:"
+			},
+			"MiscellaneousList": {
+				"title": "Miscellaneous",
+				"empty": "No missing miscellaneous translations found for:"
+			}
+		}
 	}
 }
