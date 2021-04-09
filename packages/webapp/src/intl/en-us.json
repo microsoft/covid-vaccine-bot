@@ -96,7 +96,6 @@
 	},
 	"LocationsStates": {
 		"title": "Locations",
-		"refresh_data": "Refresh Data",
 		"addLocation": "Add Location",
 		"loading": "Loading content...",
 		"translationNotFound": "*Translation Not Found*",
@@ -121,6 +120,43 @@
 		"submit": "Submit",
 		"cancel": "Cancel",
 		"hasDuplicateName": "Phase is too similar to one already in use, please revise."
+	},
+	"LocationsRegions": {
+		"title": "Locations",
+		"addLocation": "Add Location",
+		"loading": "Loading content...",
+		"translationNotFound": "*Translation Not Found*",
+		"SearchBox": {
+			"placeholder": "Search"
+		},
+		"PhaseOverview": {
+			"title": "Phase Overview",
+			"AddPhaseButton": "Add Phase",
+			"region": {
+				"title": "Region Phase Overview"
+			},
+			"empty": "No phases available at this time.",
+			"columns": {
+				"keyId": "Phase ID",
+				"name": "Name",
+				"qualifications": "# of qualifications"
+			}
+		},
+		"Sublocations": {
+			"title": "Sublocation",
+			"AddLocationButton": "Add Sublocation",
+			"region": {
+				"title": "Region Phase Overview"
+			},
+			"empty": "No regions available at this time.",
+			"ariaLabelForSelectionColumn": "Toggle selection",
+			"ariaLabelForSelectAllCheckbox": "Toggle selection for all items",
+			"checkButtonAriaLabel":"Row checkbox",
+			"columns": {
+				"name": "Region",
+				"phase": "Active Phase ID"
+			}
+		}
 	},
 	"PhaseQualifierForm": {
 		"FormButtons": {
