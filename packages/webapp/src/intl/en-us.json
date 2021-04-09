@@ -147,6 +147,25 @@
 			}
 		}
 	},
+	"PhaseQualifierForm": {
+		"FormButtons": {
+			"more": "More",
+			"details": "Details",
+			"remove": "Remove"
+		},
+		"Tag": {
+			"placeholder": "Tag"
+		},
+		"Qualifier": {
+			"placeholder": "Qualifier"
+		},
+		"MoreInfoText": {
+			"placeholder": "More info text"
+		},
+		"MoreInfoUrl": {
+			"placeholder": "More info url"
+		}
+	},
 	"QualifierPanel": {
 		"title": "Qualifiers",
 		"addQualifierLabel": "Add Qualifier",
