@@ -37,6 +37,34 @@
 			"logout": "Logout"
 		}
 	},
+	"AddQualifierForm": {
+		"title": {
+			"new": "New Qualifier",
+			"edit": "Edit Qualifier"
+		},
+		"hasDuplicate": {
+			"tag": "Tag already exist, please revise.",
+			"qualifier": "Qualifier already exist, please revise."
+		},
+		"Tag": {
+			"Dropdown": {
+				"placeholder": "Tag"
+			},
+			"newTag": "New tag",
+			"Input": {
+				"placeholder": "Type new tag"
+			},
+			"Buttons": {
+				"ok": "Ok",
+				"cancel": "Cancel"
+			}
+		},
+		"Qualifier": {
+			"placeholder": "Qualifier text..."
+		},
+		"submit": "Submit",
+		"cancel": "Cancel"
+	},
 	"Dashboard": {
 		"title": "Dashboard",
 		"loading": "Loading content...",
@@ -184,9 +212,6 @@
 		"columns": {
 			"question": "Question"
 		}
-
-	},
-	"About": {
 
 	},
 	"Review": {
