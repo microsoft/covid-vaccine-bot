@@ -29,6 +29,12 @@
 			"text": "Please click on the review tab to submit these changes.",
 			"pass": "Your changes have been saved to",
 			"fail": "You are now working on branch"
+		},
+		"UserAccessExpirationForm": {
+			"title": "Session Expired",
+			"text": "Please log back in with Github to continue working.",
+			"submit": "Continue Working",
+			"logout": "Logout"
 		}
 	},
 	"Dashboard": {

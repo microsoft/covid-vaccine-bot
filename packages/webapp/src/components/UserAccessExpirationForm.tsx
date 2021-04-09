@@ -9,6 +9,7 @@ import {
 import { observer } from 'mobx-react-lite'
 import { logoutUser } from '../mutators/authMutators'
 import { getAppStore } from '../store/store'
+import { getText as t } from '../selectors/intlSelectors'
 
 import './LocationForm.scss'
 
@@ -19,20 +20,20 @@ export default observer(function UserAccessExpirationForm(props: any) {
 	return (
 		<div className="modalWrapper">
 			<div className="modalHeader">
-				<div className="title">Session Expired</div>
+				<div className="title">{t('App.UserAccessExpirationForm.title')}</div>
 			</div>
 			<div className="modalBody">
                 <p>
-                    Please log back in with Github to continue working. 
+					{t('App.UserAccessExpirationForm.text')}
                 </p>
 			</div>
 			<div className="modalFooter">
 				<PrimaryButton
-					text="Continue Working"
+					text={t('App.UserAccessExpirationForm.submit')}
 					onClick={onSubmit}
 				/>
                 {!pendingChanges && (
-                    <DefaultButton text="Logout" onClick={logoutUser} />
+                    <DefaultButton text={t('App.UserAccessExpirationForm.logout')} onClick={logoutUser} />
                 )}
 			</div>
 		</div>

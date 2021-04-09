@@ -12,6 +12,12 @@
 			"text": "haga clic en la pestaña de revisión para enviar estos cambios.",
 			"pass": "Tus cambios se han guardado en",
 			"fail": "Ahora estás trabajando en la rama"
+		},
+		"UserAccessExpirationForm": {
+			"title": "Sesión caducada",
+			"text": "Vuelve a iniciar sesión con Github para seguir trabajando",
+			"submit": "Continuar trabajando",
+			"logout": "Cerrar sesión"
 		}
 	},
 	"Dashboard": {
