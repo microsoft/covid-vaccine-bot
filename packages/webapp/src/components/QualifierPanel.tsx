@@ -84,7 +84,7 @@ export default observer(function QualifierPanel() {
 	const columns = [
 		{
 			key: 'questionColKey',
-			name: 'Question',
+			name: t('QualifierPanel.columns.question'),
 			fieldName: 'text',
 			minWidth: 100,
 			isResizable: false,
