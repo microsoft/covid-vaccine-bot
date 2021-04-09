@@ -128,6 +128,11 @@
 		"text": "The current current branch you are trying to acces is not available.\nEither the branch has been deleted or the change has been marked as complete.",
 		"RefreshButton": "Refresh Data"
 	},
+	"DeleteLocationForm": {
+		"title": "Remove Location",
+		"text": "Are you sure you would like to remove",
+		"cancel": "Cancel"
+	},
 	"LocationsStates": {
 		"title": "Locations",
 		"addLocation": "Add Location",
