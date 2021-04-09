@@ -21,6 +21,34 @@
 			"logout": "Cerrar sesión"
 		}
 	},
+	"AddQualifierForm": {
+		"title": {
+			"new": "Nueva Calificador",
+			"edit": "Editar calificador"
+		},
+		"hasDuplicate": {
+			"tag": "La etiqueta ya existe, revísela.",
+			"qualifier": "El calificador ya existe, revíselo."
+		},
+		"Tag": {
+			"Dropdown": {
+				"placeholder": "Etiqueta"
+			},
+			"newTag": "Nueva etiqueta",
+			"Input": {
+				"placeholder": "Escriba una nueva etiqueta"
+			},
+			"Buttons": {
+				"ok": "Ok",
+				"cancel": "Cancelar"
+			}
+		},
+		"Qualifier": {
+			"placeholder": "Texto calificador ..."
+		},
+		"submit": "Entregar",
+		"cancel": "Cancelar"
+	},
 	"Dashboard": {
 		"title": "Tablero"
 	},
