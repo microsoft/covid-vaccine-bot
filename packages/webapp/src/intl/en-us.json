@@ -267,5 +267,13 @@
 				"empty": "No missing miscellaneous translations found for:"
 			}
 		}
+	},
+	"UnAuthorized": {
+		"title": "Welcome!",
+		"body": [
+			"Thank you for your interest in helping to manage the data, unfortunately right now access to this tool requires collaborator permissions on",
+			". Feel free to request access over on GitHub!"
+		],
+		"link": "this repo"
 	}
 }
