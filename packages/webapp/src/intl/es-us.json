@@ -23,6 +23,25 @@
 	"Dashboard": {
 		"title": "Tablero"
 	},
+	"PhaseQualifierForm": {
+		"FormButtons": {
+			"more": "Más",
+			"details": "Detalles",
+			"remove": "Eliminar"
+		},
+		"Tag": {
+			"placeholder": "Etiqueta"
+		},
+		"Qualifier": {
+			"placeholder": "Calificatorio"
+		},
+		"MoreInfoText": {
+			"placeholder": "Más texto de información"
+		},
+		"MoreInfoUrl": {
+			"placeholder": "Más información URL"
+		}
+	},
 	"QualifierPanel": {
 		"title": "Calificadores",
 		"addQualifierLabel": "Agregar calificador",
