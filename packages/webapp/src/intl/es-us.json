@@ -54,6 +54,16 @@
 	"Dashboard": {
 		"title": "Tablero"
 	},
+	"DataIsStaleForm": {
+		"title": "Los datos están obsoletos",
+		"text": "La rama actual actual a la que está intentando acceder no está disponible.\nLa rama se ha eliminado o el cambio se ha marcado como completo.",
+		"RefreshButton": "Actualizar datos"
+	},
+	"DeleteLocationForm": {
+		"title": "Eliminar ubicación",
+		"text": "¿Estás seguro de que te gustaría eliminar",
+		"cancel": "Cancelar"
+	},
 	"PhaseForm": {
 		"title":{
 			"new": "Nueva fase",
