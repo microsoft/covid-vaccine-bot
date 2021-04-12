@@ -1011,17 +1011,10 @@ Upon arrival at vaccination events, individuals 60 years and older may be sent t
 | scheduling_phone | [Scheduling Hotline](tel:) |
 
 
-## Illinois Active Phase (1bpartii)
+## Illinois Active Phase (16_and_up)
 
-* Are you a healthcare worker?
-	* Health care personnel are defined by the CDC as paid and unpaid workers in health care settings who have the potential for direct or indirect exposure to patients or infectious materials. This includes hospital, non-hospital, congregate, and home health care settings. (see [here](https://www.dph.illinois.gov/covid19/vaccination-plan))
-* Are you a long term care resident or work in a long term care facility?
-* Are you classified as an essential worker?
-	* Essential workers include the following: first responders, corrections officers/inmates, food and agriculture workers, US Postal Service workers, manufacturing workers, grocery store workers, public transit workers, education workers (congregate child care, pre-K through 12th grade), shelters/adult day care, higher education staff, government workers, media, restaurant staff, construction trade workers, and religious leaders  (see [here](https://coronavirus.illinois.gov/s/vaccination-plan-overview))
-* Are you age 65+?
-* Are you age 16+, and have a high-risk medical condition?
-	* Persons aged 16 to 64 years with medical conditions that increase the risk for severe COVID-19. Conditions include Obesity, Diabetes, Pulmonary Diseases, Smoking, Heart Conditions, Chronic Kidney Disease, Cancer, Solid Organ Transplant, Sickle Cell Disease, Pregnancy, and Persons with Disability.(Not otherwise covered in previous categories). (see [here](https://www.dph.illinois.gov/covid19/vaccination-plan))
-* Are you currently incarcerated?
+* Are you age 16+?
+	* Chicago not available until April 19th.
 
 ## Illinois Regions
 
