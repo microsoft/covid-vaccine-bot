@@ -2693,7 +2693,7 @@ The list of frontline workers includes:
 * Are you a long-term care resident?
 * Do you work or live in a congregate setting?
 * Are you a first responder?
-* Are you age 50+?
+* Are you age 40+?
 * Are you a K-12 educator or work in a licensed child care facility?
 	* Pre K -12 teachers and staff at public, private, parochial, and independent schools, and licensed child care providers are eligible for vaccination at municipal sites where they work or participating pharmacy sites.  Vaccinations for this group will began mid-March.
 
