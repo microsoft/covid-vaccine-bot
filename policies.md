@@ -1538,13 +1538,9 @@ COVID-19 vaccinations are provided to Mississippi residents only, or to out-of-s
 | info | [Nebraska Department of Health and Human Services](https://app.lincoln.ne.gov/city/covid19/) |
 
 
-### Nebraska::Lancaster Active Phase (2a)
+### Nebraska::Lancaster Active Phase (2b)
 
-* Are you a healthcare worker?
-* Are you a long-term care resident?
-* Are you classified as an essential worker?
-* Are you age 16+, and have a high-risk medical condition?
-* Are you age 45+?
+* Are you 20+?
 
 # Nevada
 
