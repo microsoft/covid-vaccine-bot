@@ -386,58 +386,12 @@ California genetically handicapped persons program
 | eligibility_plan | [https://coronavirus.dc.gov/sites/default/files/dc/sites/coronavirus/page_content/attachments/Vaccination-Program-Phases-with-Tiers.pdf](https://coronavirus.dc.gov/sites/default/files/dc/sites/coronavirus/page_content/attachments/Vaccination-Program-Phases-with-Tiers.pdf) |
 | info | [District of Columbia Department of Health](https://coronavirus.dc.gov/vaccine) |
 | scheduling_phone | [1-855-363-0333](tel:1-855-363-0333) |
+| eligibility | [https://coronavirus.dc.gov/sites/default/files/dc/sites/coronavirus/release_content/attachments/Situational-Update-Presentation_04-12-21.pdf](https://coronavirus.dc.gov/sites/default/files/dc/sites/coronavirus/release_content/attachments/Situational-Update-Presentation_04-12-21.pdf) |
 
 
-## District of Columbia Active Phase (1c_tier_2)
+## District of Columbia Active Phase (16_and_up)
 
-* Are you a healthcare worker?
-* Are you a long-term care resident?
-	* This includes residents of long-term and intermediate care facilities and residents of community residential facilities/group homes
-* Are you classified as an essential worker?
-	* This includes:
-- Members of the Metropolitan Police Department
-- Department of Corrections Employees
-- Continuity of Government Operations personnel
-- All teachers and staff who work for a school or licensed child care facility in DC
-- Grocery Store workers
-- Outreach workers and other essential employees who work in health, human, and social services
-- Individuals working in manufacturing
-- Individuals working in food packaging
-- Staff working in courts and individuals providing legal services
-- Frontline employees of public (mass) transit
-- Employees of the US Postal Service
-- Staff working in food service
-- Essential employees in local government agencies
-- Essential employees of public utilities
-- Individuals working in commercial and residential property maintenance and environmental services
-- Individuals working in non-public transit transportation services (i.e. for hire vehicles, ride share)
-- Individuals working in logistics/delivery/courier services
-- Essential employees working in media and mass communications
-* Are you age 65+?
-* Do you live in an intermediate care facility, a group home, or another high-risk congregate setting?
-	* This also includes individuals in in-patient psychiatric care facilities and those who are currently incarcerated.
-* Are you experiencing homelessness?
-* Are you age 16+, and have a high-risk medical condition?
-	*  * Asthma, Chronic Obstructive Pulmonary Disease (COPD), and other Chronic Lung Disease
- * Bone Marrow and Solid Organ Transplantation
- * Cancer
- * Cerebrovascular Disease
- * Chronic Kidney Disease
- * Congenital Heart Disease
- * Diabetes Mellitus
- * Heart Conditions, such as Heart Failure, Coronary Artery Disease, or Cardiomyopathies
- * HIV
- * Hypertension
- * Immunocompromised State
- * Inherited Metabolic Disorders
- * Intellectual and Developmental Disabilities
- * Liver Disease
- * Neurologic Conditions
- * Obesity, BMI - 30 kg/m2
- * Pregnancy
- * Severe Genetic Disorders
- * Sickle Cell Disease
- * Thalassemia
+* Are you age 16+?
 
 # Federated States of Micronesia
 
