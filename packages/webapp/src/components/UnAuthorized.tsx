@@ -4,8 +4,8 @@
  */
 import { observer } from 'mobx-react-lite'
 import { useEffect } from 'react'
-import { clearState } from '../store/localStorage'
 import { getText as t } from '../selectors/intlSelectors'
+import { clearState } from '../store/localStorage'
 const GH_REPO = process.env.REACT_APP_REPO_NAME
 const GH_REPO_OWNER = process.env.REACT_APP_REPO_OWNER
 
@@ -25,18 +25,7 @@ export default observer(function UnAuthorized() {
 					</div>
 				</div>
 				<section style={{ width: '70%', margin: '0px auto' }}>
-					<p>
-						{t('UnAuthorized.body[0]')}
-						{' '}
-						<a
-							target="_blank"
-							rel="noreferrer"
-							href={`https://www.github.com/${GH_REPO_OWNER}/${GH_REPO}`}
-							>
-							{t('UnAuthorized.link')}
-						</a>
-							{t('UnAuthorized.body[1]')}
-					</p>
+					<p>{t('UnAuthorized.body', true, `${GH_REPO_OWNER}/${GH_REPO}`)}</p>
 				</section>
 			</div>
 		</div>

@@ -15,8 +15,8 @@ import {
 import { useState, useEffect, useCallback, useRef } from 'react'
 import { createPR } from '../actions/repoActions'
 import { getChanges } from '../selectors/changesSelectors'
-import { getAppStore } from '../store/store'
 import { getText as t } from '../selectors/intlSelectors'
+import { getAppStore } from '../store/store'
 
 import './Review.scss'
 
@@ -90,13 +90,13 @@ export default observer(function Review(props: ReviewProp) {
 
 	const handleSubmit = useCallback(
 		(resp) => {
-			if(resp?.error){
+			if (resp?.error) {
 				setShowLoading(false)
 			} else {
 				showDashboard()
 			}
 		},
-		[showDashboard],
+		[showDashboard]
 	)
 
 	return (
@@ -112,9 +112,13 @@ export default observer(function Review(props: ReviewProp) {
 					{errorMessage && (
 						<MessageBar
 							messageBarType={MessageBarType.error}
-							dismissButtonAriaLabel={t('Review.ErrorMessageBar.closeAriaLabel')}
+							dismissButtonAriaLabel={t(
+								'Review.ErrorMessageBar.closeAriaLabel'
+							)}
 						>
-							<p>{t('Review.error.unexpected')} {errorMessage?.toString()}</p>
+							<p>
+								{t('Review.error.unexpected')} {errorMessage?.toString()}
+							</p>
 						</MessageBar>
 					)}
 					{!showLoading ? (

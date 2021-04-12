@@ -11,8 +11,8 @@ import {
 } from '@fluentui/react'
 import { observer } from 'mobx-react-lite'
 import { useCallback, useRef, useState } from 'react'
-import { getGlobalQualifierValidationTexts } from '../selectors/qualifierSelectors'
 import { getText as t } from '../selectors/intlSelectors'
+import { getGlobalQualifierValidationTexts } from '../selectors/qualifierSelectors'
 
 import './AddQualifierForm.scss'
 
@@ -130,7 +130,9 @@ export default observer(function AddQualifierForm(props: AddQualifierFormProp) {
 		setFormData({ ...formData, ...fieldChanges.current })
 	}, [formData, tagsOptions, fieldChanges, setIsAddingTag])
 
-	const formTitle = item ? t('AddQualifierForm.title.edit') : t('AddQualifierForm.title.new')
+	const formTitle = item
+		? t('AddQualifierForm.title.edit')
+		: t('AddQualifierForm.title.new')
 
 	return (
 		<div className="modalWrapper">
@@ -148,10 +150,12 @@ export default observer(function AddQualifierForm(props: AddQualifierFormProp) {
 								onChange={handleTagChange}
 								disabled={!formData.isNew}
 							/>
-							{formData.isNew && <PrimaryButton
-								text={t('AddQualifierForm.Tag.newTag')}
-								onClick={() => setIsAddingTag(true)}
-							/>}
+							{formData.isNew && (
+								<PrimaryButton
+									text={t('AddQualifierForm.Tag.newTag')}
+									onClick={() => setIsAddingTag(true)}
+								/>
+							)}
 						</>
 					) : (
 						<>
@@ -162,7 +166,10 @@ export default observer(function AddQualifierForm(props: AddQualifierFormProp) {
 								validateOnLoad={false}
 								onGetErrorMessage={() => isTagDuplicate(formData.tagKey)}
 							/>
-							<PrimaryButton text={t('AddQualifierForm.Tag.Buttons.ok')} onClick={() => createNewTag()} />
+							<PrimaryButton
+								text={t('AddQualifierForm.Tag.Buttons.ok')}
+								onClick={() => createNewTag()}
+							/>
 							<DefaultButton
 								text={t('AddQualifierForm.Tag.Buttons.cancel')}
 								onClick={() => setIsAddingTag(false)}
@@ -191,7 +198,10 @@ export default observer(function AddQualifierForm(props: AddQualifierFormProp) {
 					disabled={disableSubmit()}
 					onClick={() => onSubmit?.(formData)}
 				/>
-				<DefaultButton text={t('AddQualifierForm.cancel')} onClick={() => onCancel?.()} />
+				<DefaultButton
+					text={t('AddQualifierForm.cancel')}
+					onClick={() => onCancel?.()}
+				/>
 			</div>
 		</div>
 	)

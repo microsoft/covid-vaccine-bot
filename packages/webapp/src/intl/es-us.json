@@ -65,7 +65,7 @@
 		"cancel": "Cancelar"
 	},
 	"PhaseForm": {
-		"title":{
+		"title": {
 			"new": "Nueva fase",
 			"edit": "Fase de edición",
 			"duplicate": "Fase duplicada"
@@ -128,7 +128,6 @@
 		"columns": {
 			"question": "Pregunta"
 		}
-
 	},
 	"Review": {
 		"title": "Revisar",
@@ -206,5 +205,9 @@
 				"empty": "No se encontraron traducciones misceláneas faltantes para:"
 			}
 		}
+	},
+	"UnAuthorized": {
+		"title": "Bienvenidos!",
+		"body": "Gracias por su interés en ayudar a administrar los datos, desafortunadamente en este momento el acceso a esta herramienta requiere permisos de colaborador en <a target=\"_blank\" rel=\"noreferrer\" href=\"https://www.github.com/{0}\">este repositorio</a>.<br><br><br>¡No dudes en solicitar acceso en GitHub! "
 	}
 }

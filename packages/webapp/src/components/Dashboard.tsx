@@ -19,8 +19,8 @@ import { useBoolean } from '@uifabric/react-hooks'
 import { observer } from 'mobx-react-lite'
 import { useState, useEffect, useCallback } from 'react'
 import { initializeGitData, loadPR, loadBranch } from '../actions/repoActions'
-import { getAppStore } from '../store/store'
 import { getText as t } from '../selectors/intlSelectors'
+import { getAppStore } from '../store/store'
 
 import './Dashboard.scss'
 
@@ -163,7 +163,9 @@ export default observer(function Dashboard() {
 						directionalHint={5}
 					>
 						<div className="infoCalloutBody">
-							<div className="infoHeader">{t('Dashboard.PendingPRs.notes')}</div>
+							<div className="infoHeader">
+								{t('Dashboard.PendingPRs.notes')}
+							</div>
 							<div className="infoBody">{item.action.body}</div>
 						</div>
 					</Callout>
@@ -264,7 +266,7 @@ export default observer(function Dashboard() {
 		},
 		{
 			key: 'createdCol',
-			name:  t('Dashboard.WorkingBranches.columns.createdOn'),
+			name: t('Dashboard.WorkingBranches.columns.createdOn'),
 			fieldName: 'createdOn',
 			minWidth: 200,
 			isResizable: true,
@@ -316,16 +318,24 @@ export default observer(function Dashboard() {
 									{t('Dashboard.RefreshButton')}
 								</div>
 							</div>
-							<div className="sectionHeader">{t('Dashboard.WorkingBranches.title')}</div>
+							<div className="sectionHeader">
+								{t('Dashboard.WorkingBranches.title')}
+							</div>
 							<div className="sectionContent">
 								<DetailsList
 									items={state.userWorkingBranches}
 									columns={userWorkingBranchColumns}
 									setKey="set"
 									layoutMode={DetailsListLayoutMode.justified}
-									ariaLabelForSelectionColumn={t('Dashboard.WorkingBranches.ariaLabelForSelectionColumn')}
-									ariaLabelForSelectAllCheckbox={t('Dashboard.WorkingBranches.ariaLabelForSelectAllCheckbox')}
-									checkButtonAriaLabel={t('Dashboard.WorkingBranches.checkButtonAriaLabel')}
+									ariaLabelForSelectionColumn={t(
+										'Dashboard.WorkingBranches.ariaLabelForSelectionColumn'
+									)}
+									ariaLabelForSelectAllCheckbox={t(
+										'Dashboard.WorkingBranches.ariaLabelForSelectAllCheckbox'
+									)}
+									checkButtonAriaLabel={t(
+										'Dashboard.WorkingBranches.checkButtonAriaLabel'
+									)}
 									checkboxVisibility={2}
 								/>
 								{!state.userWorkingBranches.length && (
@@ -334,16 +344,24 @@ export default observer(function Dashboard() {
 									</div>
 								)}
 							</div>
-							<div className="sectionHeader">{t('Dashboard.PendingPRs.title')}</div>
+							<div className="sectionHeader">
+								{t('Dashboard.PendingPRs.title')}
+							</div>
 							<div className="sectionContent">
 								<DetailsList
 									items={prList}
 									columns={prColumns}
 									setKey="set"
 									layoutMode={DetailsListLayoutMode.justified}
-									ariaLabelForSelectionColumn={t('Dashboard.PendingPRs.ariaLabelForSelectionColumn')}
-									ariaLabelForSelectAllCheckbox={t('Dashboard.PendingPRs.ariaLabelForSelectAllCheckbox')}
-									checkButtonAriaLabel={t('Dashboard.PendingPRs.checkButtonAriaLabel')}
+									ariaLabelForSelectionColumn={t(
+										'Dashboard.PendingPRs.ariaLabelForSelectionColumn'
+									)}
+									ariaLabelForSelectAllCheckbox={t(
+										'Dashboard.PendingPRs.ariaLabelForSelectAllCheckbox'
+									)}
+									checkButtonAriaLabel={t(
+										'Dashboard.PendingPRs.checkButtonAriaLabel'
+									)}
 									checkboxVisibility={2}
 								/>
 								{!prList.length && (
@@ -352,16 +370,24 @@ export default observer(function Dashboard() {
 									</div>
 								)}
 							</div>
-							<div className="sectionHeader">{t('Dashboard.LocationUpdates.title')}</div>
+							<div className="sectionHeader">
+								{t('Dashboard.LocationUpdates.title')}
+							</div>
 							<div className="sectionContent">
 								<DetailsList
 									items={issueList}
 									columns={issueColumns}
 									setKey="set"
 									layoutMode={DetailsListLayoutMode.justified}
-									ariaLabelForSelectionColumn={t('Dashboard.LocationUpdates.ariaLabelForSelectionColumn')}
-									ariaLabelForSelectAllCheckbox={t('Dashboard.LocationUpdates.ariaLabelForSelectAllCheckbox')}
-									checkButtonAriaLabel={t('Dashboard.LocationUpdates.checkButtonAriaLabel')}
+									ariaLabelForSelectionColumn={t(
+										'Dashboard.LocationUpdates.ariaLabelForSelectionColumn'
+									)}
+									ariaLabelForSelectAllCheckbox={t(
+										'Dashboard.LocationUpdates.ariaLabelForSelectAllCheckbox'
+									)}
+									checkButtonAriaLabel={t(
+										'Dashboard.LocationUpdates.checkButtonAriaLabel'
+									)}
 									checkboxVisibility={2}
 								/>
 								{!issueList.length && (
@@ -392,8 +418,14 @@ export default observer(function Dashboard() {
 					{t('Dashboard.PendingChangesDialog.text')}
 				</div>
 				<DialogFooter>
-					<PrimaryButton onClick={refreshData} text={t('Dashboard.PendingChangesDialog.submit')} />
-					<DefaultButton onClick={toggleHideDialog} text={t('Dashboard.PendingChangesDialog.cancel')} />
+					<PrimaryButton
+						onClick={refreshData}
+						text={t('Dashboard.PendingChangesDialog.submit')}
+					/>
+					<DefaultButton
+						onClick={toggleHideDialog}
+						text={t('Dashboard.PendingChangesDialog.cancel')}
+					/>
 				</DialogFooter>
 			</Dialog>
 		</div>

@@ -1963,6 +1963,7 @@ __metadata:
     "@types/node": ^14.14.35
     "@types/react": ^17.0.3
     "@types/react-dom": ^17.0.2
+    "@types/react-html-parser": ^2
     "@types/react-router-dom": ^5.1.7
     "@types/rtl-detect": ^1
     "@uifabric/react-hooks": ^7.13.12
@@ -1976,6 +1977,7 @@ __metadata:
     office-ui-fabric-react: ^7.164.1
     react: ^17.0.1
     react-dom: ^17.0.1
+    react-html-parser: ^2.0.2
     react-refresh: ^0.9.0
     react-router-dom: ^5.2.0
     react-scripts: 4.0.3
@@ -4829,6 +4831,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/domutils@npm:*":
+  version: 1.7.3
+  resolution: "@types/domutils@npm:1.7.3"
+  dependencies:
+    domhandler: ^2.4.0
+  checksum: 5873ab385358fc45b6aa8c89df36d0389f69c2071bc3bc042a60fd7c094e5bd2ac213bcfd07da42026a8e0be30865a871ac326e1656f2c87ad41f43506c11bfa
+  languageName: node
+  linkType: hard
+
 "@types/eslint@npm:^7.2.6":
   version: 7.2.7
   resolution: "@types/eslint@npm:7.2.7"
@@ -4950,6 +4961,17 @@ __metadata:
   version: 5.1.1
   resolution: "@types/html-minifier-terser@npm:5.1.1"
   checksum: 1e750b93e1240a6a3bc6d2748a4f09215c9557b8f6655ee57d1e88c7afcc171e2998a1e97a771c64ef8eeadc9db5623f9e08e09574a549cb74549cdbad5a73b7
+  languageName: node
+  linkType: hard
+
+"@types/htmlparser2@npm:*":
+  version: 3.10.2
+  resolution: "@types/htmlparser2@npm:3.10.2"
+  dependencies:
+    "@types/domutils": "*"
+    "@types/node": "*"
+    domhandler: ^2.4.0
+  checksum: bb083c953e2172d9e1645c4705ea612bd1bc77611b8d57d873da911586be6be0792043f859ed80992e3a50448ca11db29199d5507e2b24b8b3af99533e23c02d
   languageName: node
   linkType: hard
 
@@ -5240,6 +5262,16 @@ __metadata:
   dependencies:
     "@types/react": "*"
   checksum: abaadaa2629640870f4b982e3f32cf8f719773cfa97f02931baebef1993c0e2d70fd17f94b29bcf00d45ea099d5f04a042cf55ecb5e2bf8804c4e4cabdb4adc0
+  languageName: node
+  linkType: hard
+
+"@types/react-html-parser@npm:^2":
+  version: 2.0.1
+  resolution: "@types/react-html-parser@npm:2.0.1"
+  dependencies:
+    "@types/htmlparser2": "*"
+    "@types/react": "*"
+  checksum: e767371bede7ef05aa7660fb43c11f5414ce7cc91fca4bb9101f5131ebbada4e1e9f52b54dc2dece30b1bb7fec9bee8bda75dcf8b9c5e71a4712441d515329a6
   languageName: node
   linkType: hard
 
@@ -10233,7 +10265,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"domhandler@npm:^2.3.0":
+"domhandler@npm:^2.3.0, domhandler@npm:^2.4.0":
   version: 2.4.2
   resolution: "domhandler@npm:2.4.2"
   dependencies:
@@ -13287,7 +13319,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"htmlparser2@npm:^3.10.1":
+"htmlparser2@npm:^3.10.1, htmlparser2@npm:^3.9.0":
   version: 3.10.1
   resolution: "htmlparser2@npm:3.10.1"
   dependencies:
@@ -20255,6 +20287,17 @@ fsevents@^1.2.7:
   peerDependencies:
     react: ">= 0.14.0"
   checksum: 265054ddd45ac37a0ee110af9f282bd6a54f54bb4a47d111d738051432ce5b975b810c7a8ef51fbcdc293dfc57b96ceaf57a9be8c6bc6e65e5045d7320e553d7
+  languageName: node
+  linkType: hard
+
+"react-html-parser@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "react-html-parser@npm:2.0.2"
+  dependencies:
+    htmlparser2: ^3.9.0
+  peerDependencies:
+    react: ^0.14.0 || ^15.0.0 || ^16.0.0-0
+  checksum: 730c7ff15afc92e2f8f439533ba39dcf2fd2389b3c8222a34c25fafbab9c4b0a8e9f05067d6d4772e115f89660edae70367fb6a8bc14b71319699521653a261f
   languageName: node
   linkType: hard
 

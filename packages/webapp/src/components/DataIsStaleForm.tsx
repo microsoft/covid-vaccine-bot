@@ -10,14 +10,14 @@ import './LocationForm.scss'
 
 export default observer(function DataIsStaleForm(props: any) {
 	const { onSubmit } = props
-	
+
 	return (
 		<div className="modalWrapper">
 			<div className="modalHeader">
 				<div className="title">{t('DataIsStaleForm.title')}</div>
 			</div>
 			<div className="modalBody">
-                <p>{t('DataIsStaleForm.text')}</p>
+				<p>{t('DataIsStaleForm.text')}</p>
 			</div>
 			<div className="modalFooter">
 				<PrimaryButton

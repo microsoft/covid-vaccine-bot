@@ -11,6 +11,7 @@ import {
 } from '@fluentui/react'
 import { observer } from 'mobx-react-lite'
 import { useCallback, useState, useRef, useEffect } from 'react'
+import { getText as t } from '../selectors/intlSelectors'
 import {
 	getPhaseTagItems,
 	getPhaseQualifierItems,
@@ -19,7 +20,6 @@ import {
 	getPhaseMoreInfoUrl,
 } from '../selectors/phaseSelectors'
 import { getAppStore } from '../store/store'
-import { getText as t } from '../selectors/intlSelectors'
 
 import './PhaseQualifierForm.scss'
 export interface PhaseQualifierFormProps {

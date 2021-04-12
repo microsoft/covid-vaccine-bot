@@ -3,10 +3,10 @@
  * Licensed under the MIT license. See LICENSE file in the project.
  */
 import { mutatorAction } from 'satcheljs'
+import { getText as t } from '../selectors/intlSelectors'
 import { getAppStore } from '../store/store'
 import { createLocationDataObj } from '../utils/dataUtils'
 import { formatId } from '../utils/textUtils'
-import {getText as t} from '../selectors/intlSelectors'
 
 export const setIsDataRefreshing = mutatorAction(
 	'setIsDataRefreshing',
@@ -32,13 +32,16 @@ export const setPendingChanges = mutatorAction(
 	}
 )
 
-export const setSavingCommitsFlag = mutatorAction('setSavingCommitsFlag', (data: boolean) => {
-	const store = getAppStore()
-	store.isSavingCommits = data
-})
+export const setSavingCommitsFlag = mutatorAction(
+	'setSavingCommitsFlag',
+	(data: boolean) => {
+		const store = getAppStore()
+		store.isSavingCommits = data
+	}
+)
 
 export const setGlobalAndRepoChanges = mutatorAction(
-	'setGlobalAndRepoChanges', 
+	'setGlobalAndRepoChanges',
 	() => {
 		const store = getAppStore()
 		store.initGlobalFileData = store.globalFileData
@@ -95,10 +98,13 @@ export const setLoadedPRData = mutatorAction(
 	}
 )
 
-export const setUserWorkingBranch = mutatorAction('setUserWorkingBranch', (data: any | undefined) => {
-	const store = getAppStore()
-	store.userWorkingBranch = data
-})
+export const setUserWorkingBranch = mutatorAction(
+	'setUserWorkingBranch',
+	(data: any | undefined) => {
+		const store = getAppStore()
+		store.userWorkingBranch = data
+	}
+)
 
 export const clearLoadedPRData = mutatorAction('clearLoadedPRData', () => {
 	const store = getAppStore()
@@ -260,21 +266,15 @@ export const updateLocationList = mutatorAction(
 	}
 )
 
-
 export const deleteLocation = mutatorAction(
 	'deleteLocation',
-	(
-		locationData: any,
-		isRegion?: boolean,
-		selectedState?: any
-	) => {
+	(locationData: any, isRegion?: boolean, selectedState?: any) => {
 		const store = getAppStore()
 		store.pendingChanges = true
-		
-		if(isRegion && selectedState)
+
+		if (isRegion && selectedState)
 			delete store.repoFileData[selectedState.key]?.regions?.[locationData.key]
-		else 
-			delete store.repoFileData[locationData.key]
+		else delete store.repoFileData[locationData.key]
 
 		store.repoFileData = { ...store.repoFileData }
 	}

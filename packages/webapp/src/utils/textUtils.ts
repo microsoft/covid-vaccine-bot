@@ -95,3 +95,13 @@ export const createCSVDataString = (contentObj: any): string => {
 	}
 	return result
 }
+
+/**
+ *
+ * @param str String to inject arguments into
+ * @param args Arguments to inject into string
+ * @returns string with arguments injected
+ */
+export const StringFormat = (str: string, ...args: string[]): string => {
+	return str.toString().replace(/{(\d+)}/g, (match, index) => args[index] || '')
+}

@@ -14,12 +14,12 @@ import {
 import { useBoolean } from '@uifabric/react-hooks'
 import { observer } from 'mobx-react-lite'
 import { useState, useRef, useEffect, useCallback } from 'react'
-import {getText as t} from '../selectors/intlSelectors'
 import {
 	updateLocationList,
 	updateLocationData,
 	deleteLocation,
 } from '../mutators/repoMutators'
+import { getText as t } from '../selectors/intlSelectors'
 import { getAppStore } from '../store/store'
 import DeleteLocationForm from './DeleteLocationForm'
 import LocationForm from './LocationForm'
@@ -47,10 +47,8 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 
 	const state = getAppStore()
 	const filterEditable = (col: any) => {
-		if(state.isEditable)
-			return true
-		else 
-			return col.key !== 'editCol' && col.key !== 'delete'
+		if (state.isEditable) return true
+		else return col.key !== 'editCol' && col.key !== 'delete'
 	}
 	const locationColumns = [
 		{
@@ -127,7 +125,7 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 		},
 		[onSelectedItem]
 	)
- 
+
 	const onLocationFormSubmit = useCallback(
 		(locationData, prevItem) => {
 			dismissLocationModal()
@@ -166,8 +164,7 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 
 	const onRenderItemColumn = useCallback(
 		(item?: any, _index?: number, column?: IColumn) => {
-			if(!column)
-				return null
+			if (!column) return null
 
 			const fieldContent = item[column.fieldName as keyof any] as string
 

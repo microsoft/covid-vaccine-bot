@@ -19,6 +19,7 @@ import {
 	translateMisc,
 	updateStrings,
 } from '../mutators/repoMutators'
+import { getText as t } from '../selectors/intlSelectors'
 import { getAppStore } from '../store/store'
 import { convertCSVDataToObj } from '../utils/dataUtils'
 import {
@@ -27,7 +28,6 @@ import {
 	getLanguageDisplayText,
 	createCSVDataString,
 } from '../utils/textUtils'
-import { getText as t } from '../selectors/intlSelectors'
 import './Translate.scss'
 
 const filterDropdownStyles = {
@@ -735,29 +735,41 @@ export default observer(function Translate() {
 					{errorMessage && (
 						<MessageBar
 							messageBarType={MessageBarType.error}
-							dismissButtonAriaLabel={t('Translate.ErrorMessageBar.closeAriaLabel')}
+							dismissButtonAriaLabel={t(
+								'Translate.ErrorMessageBar.closeAriaLabel'
+							)}
 						>
-							<p>{t('Translate.error.unexpected')} {errorMessage?.toString()}</p>
+							<p>
+								{t('Translate.error.unexpected')} {errorMessage?.toString()}
+							</p>
 						</MessageBar>
 					)}
 					{!(showLoading || isDataRefreshing) ? (
 						<section>
 							<div className="filterGroup">
 								<div>
-									<label htmlFor="availDropdown">{t('Translate.Filter.LanguageDropdown.label')}</label>
+									<label htmlFor="availDropdown">
+										{t('Translate.Filter.LanguageDropdown.label')}
+									</label>
 									<Dropdown
 										id="availDropdown"
 										selectedKey={toLanguage.current}
-										placeholder={t('Translate.Filter.LanguageDropdown.placeholder')}
+										placeholder={t(
+											'Translate.Filter.LanguageDropdown.placeholder'
+										)}
 										options={languageOptions}
 										styles={filterDropdownStyles}
 										onChange={onLanguageChange}
 									/>
-									<label htmlFor="translateDropdown">{t('Translate.Filter.TranslateDropdown.label')}</label>
+									<label htmlFor="translateDropdown">
+										{t('Translate.Filter.TranslateDropdown.label')}
+									</label>
 									<Dropdown
 										id="translateDropdown"
 										selectedKey={translationFilterState}
-										placeholder={t('Translate.Filter.LanguageDropdown.placeholder')}
+										placeholder={t(
+											'Translate.Filter.LanguageDropdown.placeholder'
+										)}
 										options={translationFilter}
 										styles={filterDropdownStyles}
 										onChange={onTranslationFilterChange}
@@ -791,16 +803,25 @@ export default observer(function Translate() {
 									}
 									className="groupToggleIcon"
 								/>
-								<div>{t('Translate.GroupList.LocationList.title')} ({locationList.length})</div>
+								<div>
+									{t('Translate.GroupList.LocationList.title')} (
+									{locationList.length})
+								</div>
 							</div>
 							{!isSectionCollapse.locations &&
 								(locationList.length > 0 ? (
 									<>
 										<div className="translateListRow">
 											<div className="fromCol"></div>
-											<div className="toCol">{t('Translate.GroupList.columns.general')}</div>
-											<div className="toCol">{t('Translate.GroupList.columns.sms')}</div>
-											<div className="toCol">{t('Translate.GroupList.columns.voice')}</div>
+											<div className="toCol">
+												{t('Translate.GroupList.columns.general')}
+											</div>
+											<div className="toCol">
+												{t('Translate.GroupList.columns.sms')}
+											</div>
+											<div className="toCol">
+												{t('Translate.GroupList.columns.voice')}
+											</div>
 										</div>
 										{locationList.map((val: any, idx: number) => {
 											return (
@@ -859,16 +880,25 @@ export default observer(function Translate() {
 									}
 									className="groupToggleIcon"
 								/>
-								<div>{t('Translate.GroupList.QualifierList.title')} ({qualifierList.length})</div>
+								<div>
+									{t('Translate.GroupList.QualifierList.title')} (
+									{qualifierList.length})
+								</div>
 							</div>
 							{!isSectionCollapse.qualifiers &&
 								(qualifierList.length > 0 ? (
 									<>
 										<div className="translateListRow qualifier">
 											<div className="fromCol"></div>
-											<div className="toCol">{t('Translate.GroupList.columns.general')}</div>
-											<div className="toCol">{t('Translate.GroupList.columns.sms')}</div>
-											<div className="toCol">{t('Translate.GroupList.columns.voice')}</div>
+											<div className="toCol">
+												{t('Translate.GroupList.columns.general')}
+											</div>
+											<div className="toCol">
+												{t('Translate.GroupList.columns.sms')}
+											</div>
+											<div className="toCol">
+												{t('Translate.GroupList.columns.voice')}
+											</div>
 										</div>
 										{qualifierList.map((val: any, idx: number) => {
 											return (
@@ -943,7 +973,10 @@ export default observer(function Translate() {
 									}
 									className="groupToggleIcon"
 								/>
-								<div>{t('Translate.GroupList.MiscellaneousList.title')} ({miscList.length})</div>
+								<div>
+									{t('Translate.GroupList.MiscellaneousList.title')} (
+									{miscList.length})
+								</div>
 							</div>
 							{!isSectionCollapse.misc &&
 								(miscList.length > 0 ? (
@@ -969,9 +1002,15 @@ export default observer(function Translate() {
 										</div>
 										<div className="translateListRow misc">
 											<div className="fromCol"></div>
-											<div className="toCol">{t('Translate.GroupList.columns.general')}</div>
-											<div className="toCol">{t('Translate.GroupList.columns.sms')}</div>
-											<div className="toCol">{t('Translate.GroupList.columns.voice')}</div>
+											<div className="toCol">
+												{t('Translate.GroupList.columns.general')}
+											</div>
+											<div className="toCol">
+												{t('Translate.GroupList.columns.sms')}
+											</div>
+											<div className="toCol">
+												{t('Translate.GroupList.columns.voice')}
+											</div>
 										</div>
 										{miscList.map((val: any, idx: number) => {
 											return (

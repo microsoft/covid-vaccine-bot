@@ -14,15 +14,20 @@ import { useBoolean } from '@uifabric/react-hooks'
 import { observer } from 'mobx-react-lite'
 import { useState, useEffect, useCallback, useRef } from 'react'
 import { updateGlobalQualifiers } from '../mutators/repoMutators'
+import { getText as t } from '../selectors/intlSelectors'
 import { getAppStore } from '../store/store'
 import { toProperCase } from '../utils/textUtils'
 import AddQualifierForm from './AddQualiferForm'
-import { getText as t } from '../selectors/intlSelectors'
 
 import './QualifierPanel.scss'
 
 export default observer(function QualifierPanel() {
-	const { globalFileData, currentLanguage, isEditable, isDataRefreshing } = getAppStore()
+	const {
+		globalFileData,
+		currentLanguage,
+		isEditable,
+		isDataRefreshing,
+	} = getAppStore()
 	const [qualifierGroup, setQualifierGroup] = useState<IGroup[]>([])
 	const [qualifierGroupItems, setQualifierGroupItems] = useState<any[]>([])
 	const [
@@ -71,7 +76,9 @@ export default observer(function QualifierPanel() {
 						key: key,
 						text: contentObj[key][currentLanguage]
 							? contentObj[key][currentLanguage]
-							: `${t('QualifierPanel.translationNotFound')} (${currentLanguage})`,
+							: `${t(
+									'QualifierPanel.translationNotFound'
+							  )} (${currentLanguage})`,
 					})
 				}
 			})

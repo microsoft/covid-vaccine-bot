@@ -2,13 +2,13 @@
  * Copyright (c) Microsoft. All rights reserved.
  * Licensed under the MIT license. See LICENSE file in the project.
  */
-import { orchestrator } from 'satcheljs'
+import { isEmpty } from 'lodash'
 import { isRtlLang } from 'rtl-detect'
+import { orchestrator } from 'satcheljs'
 import { setAppLanguage } from '../actions/intlActions'
+import config from '../config'
 import { setLocalization, setDefaultLanguage } from '../mutators/intlMutators'
 import { getAppStore } from '../store/store'
-import { isEmpty } from 'lodash'
-import config from '../config'
 
 orchestrator(setAppLanguage, async (message) => {
 	const state = getAppStore()

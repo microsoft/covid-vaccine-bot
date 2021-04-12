@@ -20,10 +20,11 @@ import { observer } from 'mobx-react-lite'
 import { useCallback, useState, useEffect, useRef } from 'react'
 import { Switch, Route, Redirect } from 'react-router-dom'
 import { loginUser, reLoginUser } from '../actions/authActions'
-import { initializeGitData, saveContinue } from '../actions/repoActions'
 import { setAppLanguage } from '../actions/intlActions'
+import { initializeGitData, saveContinue } from '../actions/repoActions'
 import { logoutUser } from '../mutators/authMutators'
 import { setCurrentLanguage } from '../mutators/repoMutators'
+import { getText as t } from '../selectors/intlSelectors'
 import { getAppStore } from '../store/store'
 import { getLanguageOptions } from '../utils/textUtils'
 import Dashboard from './Dashboard'
@@ -35,11 +36,9 @@ import Review from './Review'
 import Translate from './Translate'
 import UnAuthorized from './UnAuthorized'
 import UserAccessExpirationForm from './UserAccessExpirationForm'
-import { getText as t } from '../selectors/intlSelectors'
 
 import './App_reset_styles.scss'
 import './App.scss'
-
 
 export default observer(function App() {
 	const state = getAppStore()
@@ -176,8 +175,7 @@ export default observer(function App() {
 				>
 					{branchWasSaved
 						? t('App.branchWasSaved.pass')
-						: t('App.branchWasSaved.fail')}
-					{' '}
+						: t('App.branchWasSaved.fail')}{' '}
 					{state.userWorkingBranch}, <br />
 					{t('App.branchWasSaved.text')}
 				</MessageBar>
@@ -204,7 +202,7 @@ export default observer(function App() {
 												rootPressed: { backgroundColor: 'transparent' },
 											}}
 										/>
-										<div className="appHeaderTitle">{t('App.title')}</div>
+										<div className="appHeaderTitle">{t('App.title', true)}</div>
 									</div>
 									<div className="appHeaderPersona">
 										<div>
@@ -275,19 +273,25 @@ export default observer(function App() {
 													onLinkClick={togglePanel}
 													selectedKey={selectedKey}
 												>
-													<PivotItem headerText={t('App.Pivot.Dashboard')} itemKey="Dashboard">
+													<PivotItem
+														headerText={t('App.Pivot.Dashboard').toString()}
+														itemKey="Dashboard"
+													>
 														{renderSaveContinueMessageBar()}
 														{renderRepoMessageBar()}
 														<Dashboard />
 													</PivotItem>
-													<PivotItem headerText={t('App.Pivot.Locations')} itemKey="Locations">
+													<PivotItem
+														headerText={t('App.Pivot.Locations').toString()}
+														itemKey="Locations"
+													>
 														{renderSaveContinueMessageBar()}
 														{renderRepoMessageBar()}
 														<Locations />
 													</PivotItem>
 													{state.isEditable && (
 														<PivotItem
-															headerText={t('App.Pivot.Translate')}
+															headerText={t('App.Pivot.Translate').toString()}
 															itemKey="Translate"
 														>
 															{renderSaveContinueMessageBar()}
@@ -297,7 +301,10 @@ export default observer(function App() {
 													)}
 													{(state.pendingChanges ||
 														state.userWorkingBranch) && (
-														<PivotItem headerText={t('App.Pivot.Review')} itemKey="Review">
+														<PivotItem
+															headerText={t('App.Pivot.Review').toString()}
+															itemKey="Review"
+														>
 															<Review showDashboard={showDashboard} />
 														</PivotItem>
 													)}

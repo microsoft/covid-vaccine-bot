@@ -8,15 +8,15 @@ import {
 	TextField,
 	Dropdown,
 	IDropdownOption,
-	Checkbox
+	Checkbox,
 } from '@fluentui/react'
 import { observer } from 'mobx-react-lite'
 import { useCallback, useRef, useState } from 'react'
+import { getText as t } from '../selectors/intlSelectors'
 import {
 	getStateCustomStrings,
 	getRegionCustomStrings,
 } from '../selectors/locationSelectors'
-import {getText as t} from '../selectors/intlSelectors'
 import './LocationForm.scss'
 
 export interface LocationFormProp {
@@ -60,7 +60,7 @@ const setInitialData = (item?: any, isRegion?: boolean) => {
 			schedulingPhoneDesc: scheduling_phone?.description
 				? getStrings(item, scheduling_phone.description, isRegion)
 				: '',
-			noPhaseLabel: vaccination.content?.noPhaseLabel || false
+			noPhaseLabel: vaccination.content?.noPhaseLabel || false,
 		}
 	} else {
 		return {
@@ -74,7 +74,7 @@ const setInitialData = (item?: any, isRegion?: boolean) => {
 			eligibilityPlan: '',
 			schedulingPhone: '',
 			schedulingPhoneDesc: '',
-			noPhaseLabel: false
+			noPhaseLabel: false,
 		}
 	}
 }
@@ -106,8 +106,12 @@ export default observer(function LocationForm(props: LocationFormProp) {
 		},
 	].filter((region) => (isRegion ? region.key !== 'state' : true))
 
-	const baseTitle = isRegion ? t('LocationForm.baseTitle.sublocation') : t('LocationForm.baseTitle.location')
-	const formTitle = item ? `${t('LocationForm.formTitle.edit')} ${baseTitle}` : `${t('LocationForm.formTitle.new')} ${baseTitle}`
+	const baseTitle = isRegion
+		? t('LocationForm.baseTitle.sublocation')
+		: t('LocationForm.baseTitle.location')
+	const formTitle = item
+		? `${t('LocationForm.formTitle.edit')} ${baseTitle}`
+		: `${t('LocationForm.formTitle.new')} ${baseTitle}`
 
 	const handleRegionChange = useCallback(
 		(_ev: any, item?: IDropdownOption) => {
@@ -149,7 +153,8 @@ export default observer(function LocationForm(props: LocationFormProp) {
 
 			setFormData({ ...formData, ...fieldChanges.current })
 		},
-	[formData, fieldChanges])
+		[formData, fieldChanges]
+	)
 
 	const canSubmit = useCallback(() => {
 		return formData.details !== '' && formData.regionType !== ''

@@ -13,7 +13,6 @@ import {
 import { useBoolean } from '@uifabric/react-hooks'
 import { observer } from 'mobx-react-lite'
 import { useState, useRef, useEffect, useCallback } from 'react'
-import {getText as t} from '../selectors/intlSelectors'
 import {
 	updateLocationList,
 	addPhase,
@@ -21,6 +20,7 @@ import {
 	updateLocationData,
 	deleteLocation,
 } from '../mutators/repoMutators'
+import { getText as t } from '../selectors/intlSelectors'
 import { getAppStore } from '../store/store'
 import { toProperCase } from '../utils/textUtils'
 import DeleteLocationForm from './DeleteLocationForm'
@@ -96,7 +96,7 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 		},
 		{
 			key: 'nameCol',
-			name:t('LocationsRegions.PhaseOverview.columns.name'),
+			name: t('LocationsRegions.PhaseOverview.columns.name'),
 			fieldName: 'name',
 			minWidth: 200,
 			isResizable: false,
@@ -308,9 +308,15 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 						{selectedPhaseItem.value ? (
 							<>
 								{selectedPhaseItem.isRegion ? (
-									<>{selectedPhaseItem.value.name} {t('LocationsRegions.PhaseOverview.region.title')}</>
+									<>
+										{selectedPhaseItem.value.name}{' '}
+										{t('LocationsRegions.PhaseOverview.region.title')}
+									</>
 								) : (
-									<>{selectedState.text} {t('LocationsRegions.PhaseOverview.title')}</>
+									<>
+										{selectedState.text}{' '}
+										{t('LocationsRegions.PhaseOverview.title')}
+									</>
 								)}
 							</>
 						) : (
@@ -332,7 +338,9 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 			) : (
 				<div className="bodyContent">
 					<section>
-						<div className="listTitle">{t('LocationsRegions.PhaseOverview.title')}</div>
+						<div className="listTitle">
+							{t('LocationsRegions.PhaseOverview.title')}
+						</div>
 						<div className="searchRow">
 							<div></div>
 							{state.isEditable && (
@@ -365,7 +373,9 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 						)}
 					</section>
 					<section>
-						<div className="listTitle">{t('LocationsRegions.Sublocations.title')}</div>
+						<div className="listTitle">
+							{t('LocationsRegions.Sublocations.title')}
+						</div>
 						<div className="searchRow">
 							{stateRegionsFullList.current.length > 0 ? (
 								<SearchBox
@@ -398,9 +408,15 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 								setKey="set"
 								layoutMode={DetailsListLayoutMode.justified}
 								selectionPreservedOnEmptyClick={true}
-								ariaLabelForSelectionColumn={t('LocationsRegions.Sublocations.ariaLabelForSelectionColumn')}
-								ariaLabelForSelectAllCheckbox={t('LocationsRegions.Sublocations.ariaLabelForSelectAllCheckbox')}
-								checkButtonAriaLabel={t('LocationsRegions.Sublocations.checkButtonAriaLabel')}
+								ariaLabelForSelectionColumn={t(
+									'LocationsRegions.Sublocations.ariaLabelForSelectionColumn'
+								)}
+								ariaLabelForSelectAllCheckbox={t(
+									'LocationsRegions.Sublocations.ariaLabelForSelectAllCheckbox'
+								)}
+								checkButtonAriaLabel={t(
+									'LocationsRegions.Sublocations.checkButtonAriaLabel'
+								)}
 								checkboxVisibility={2}
 								onItemInvoked={(item) => selectedPhase(true, item)}
 								onRenderItemColumn={onRenderItemColumn}
@@ -463,7 +479,9 @@ const setInitialPhaseItems = (selectedState: any): any[] => {
 				selectedState.value.vaccination.content.activePhase
 			return {
 				key: String(phase.id) + idx,
-				keyId: String(phase.id) + (phase.id === activePhase ? ` (${t('App.active')})` : ''),
+				keyId:
+					String(phase.id) +
+					(phase.id === activePhase ? ` (${t('App.active')})` : ''),
 				name:
 					toProperCase(phase.label ?? phase.id) +
 					(phase.id === activePhase ? ` (${t('App.active')})` : ''),

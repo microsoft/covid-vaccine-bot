@@ -1,11 +1,11 @@
 {
 	"App": {
 		"title": "Data Composer",
-		"NotFound":  "404 page not found.",
+		"NotFound": "404 page not found.",
 		"LoginButton": "Login with Github",
 		"active": "active",
 		"Pivot": {
-			"bDashoard": "Dashboard",
+			"Dashboard": "Dashboard",
 			"Locations": "Locations",
 			"Translate": "Translate",
 			"Review": "Review"
@@ -21,7 +21,8 @@
 		"Persona": {
 			"logout": "Logout"
 		},
-		"SaveContinueMessageBar": { "text": "You have pending changes, please click on the review tab to submit these changes.",
+		"SaveContinueMessageBar": {
+			"text": "You have pending changes, please click on the review tab to submit these changes.",
 			"cancel": "Discard",
 			"submit": "Save and continue",
 			"saving": "Saving changes..."
@@ -127,7 +128,7 @@
 			"columns": {
 				"title": "Title",
 				"notes": "Notes",
-				"author": "Aurthor",
+				"author": "Author",
 				"update": "Last Update",
 				"action": {
 					"ariaLabel": "Actions Column"
@@ -144,7 +145,7 @@
 			"columns": {
 				"title": "Title",
 				"notes": "Notes",
-				"author": "Aurthor",
+				"author": "Author",
 				"update": "Last Update",
 				"action": {
 					"ariaLabel": "Actions Column"
@@ -180,11 +181,11 @@
 			"regions": "Sublocations",
 			"ariaLabelForSelectionColumn": "Toggle selection",
 			"ariaLabelForSelectAllCheckbox": "Toggle selection for all items",
-			"checkButtonAriaLabel":"Row checkbox"
+			"checkButtonAriaLabel": "Row checkbox"
 		}
 	},
 	"PhaseForm": {
-		"title":{
+		"title": {
 			"new": "New Phase",
 			"edit": "Edit Phase",
 			"duplicate": "Duplicate Phase"
@@ -226,7 +227,7 @@
 			"empty": "No regions available at this time.",
 			"ariaLabelForSelectionColumn": "Toggle selection",
 			"ariaLabelForSelectAllCheckbox": "Toggle selection for all items",
-			"checkButtonAriaLabel":"Row checkbox",
+			"checkButtonAriaLabel": "Row checkbox",
 			"columns": {
 				"name": "Region",
 				"phase": "Active Phase ID"
@@ -259,7 +260,6 @@
 		"columns": {
 			"question": "Question"
 		}
-
 	},
 	"Review": {
 		"title": "Review",
@@ -339,10 +339,6 @@
 	},
 	"UnAuthorized": {
 		"title": "Welcome!",
-		"body": [
-			"Thank you for your interest in helping to manage the data, unfortunately right now access to this tool requires collaborator permissions on",
-			". Feel free to request access over on GitHub!"
-		],
-		"link": "this repo"
+		"body": "Thank you for your interest in helping to manage the data, unfortunately right now access to this tool requires collaborator permissions on <a target=\"_blank\" rel=\"noreferrer\" href=\"https://www.github.com/{0}\">this repo</a>.<br><br><br>Feel free to request access over on GitHub!"
 	}
 }
