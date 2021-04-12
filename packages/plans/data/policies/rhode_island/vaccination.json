@@ -34,7 +34,7 @@
 					"question": "c19.eligibility.question/essential_worker.are"
 				},
 				{
-					"question": "c19.eligibility.question/age.are"
+					"question": "c19.eligibility.question/age.are_you"
 				},
 				{
 					"question": "c19.eligibility.question/essential_worker.are_you",
