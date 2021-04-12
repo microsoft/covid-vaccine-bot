@@ -90,7 +90,7 @@
 					"moreInfoUrl": "https://www.healthvermont.gov/covid-19/vaccine/getting-covid-19-vaccine#conditions"
 				},
 				{
-					"question": "c19.eligibility.question/age.are_you"
+					"question": "c19.eligibility.question/age.are_you_age_30"
 				},
 				{
 					"question": "c19.eligibility.question/essential_worker.are",
