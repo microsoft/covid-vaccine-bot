@@ -11,9 +11,12 @@
 			"url": "tel:1-855-363-0333",
 			"text": "c19.link/scheduling.phone.dc",
 			"description": "c19.link/scheduling.phone.description.dc"
+		},
+		"eligibility": {
+			"url": "https://coronavirus.dc.gov/sites/default/files/dc/sites/coronavirus/release_content/attachments/Situational-Update-Presentation_04-12-21.pdf"
 		}
 	},
-	"activePhase": "1c_tier_2",
+	"activePhase": "16_and_up",
 	"noPhaseLabel": true,
 	"phases": [
 		{
@@ -73,6 +76,15 @@
 				{
 					"question": "c19.eligibility.question/health",
 					"moreInfoText": "c19.eligibility.moreinfo/health.dc.1c_tier_2"
+				}
+			]
+		},
+		{
+			"id": "16_and_up",
+			"label": "16 and up",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.16_up"
 				}
 			]
 		}
