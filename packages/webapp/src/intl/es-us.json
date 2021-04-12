@@ -20,6 +20,11 @@
 			"submit": "Continuar trabajando",
 			"logout": "Cerrar sesión"
 		},
+		"Footer": {
+			"privacyCookies": "Privacidad y cookies",
+			"contactUs": "Contacta con nosotros",
+			"codeOfConduct": "Código de conducta"
+		},
 		"submit": "Entregar",
 		"cancel": "Cancelar"
 	},

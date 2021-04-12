@@ -38,6 +38,11 @@
 			"submit": "Continue Working",
 			"logout": "Logout"
 		},
+		"Footer": {
+			"privacyCookies": "Privacy and Cookies",
+			"contactUs": "Contact Us",
+			"codeOfConduct": "Code of Conduct"
+		},
 		"submit": "Submit",
 		"cancel": "Cancel"
 	},
