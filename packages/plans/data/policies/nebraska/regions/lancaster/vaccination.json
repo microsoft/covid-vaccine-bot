@@ -1,5 +1,5 @@
 {
-	"activePhase": "2a",
+	"activePhase": "2b",
 	"links": {
 		"info": {
 			"url": "https://app.lincoln.ne.gov/city/covid19/",
@@ -84,7 +84,7 @@
 			"id": "2b",
 			"qualifications": [
 				{
-					"question": "c19.eligibility.question/age.16_up"
+					"question": "c19.eligibility.question/age.are_you_20"
 				}
 			]
 		}
