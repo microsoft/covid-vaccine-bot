@@ -3237,7 +3237,7 @@ If you are unable to leave home to receive COVID-19 vaccination, or are the heal
 * Are you a long term care resident or work in a long term care facility? (see [here](https://www.healthvermont.gov/covid-19/vaccine/getting-covid-19-vaccine#eligiblenow))
 * Are you a K-12 educator or work in a licensed child care facility? (see [here](https://apps.health.vermont.gov/COVID/faq/#4837))
 * Are you age 16+, and have a high-risk medical condition? (see [here](https://www.healthvermont.gov/covid-19/vaccine/getting-covid-19-vaccine#conditions))
-* Are you age 40+?
+* Are you age 30+?
 * Are you a first responder?
 	* Expanded public safety personnel are employees and members of fire, EMS, and police emergency response organizations and employees of the Department of Corrections that work in correctional facilities. Employees include: command, administrative, and communications staff. This does not include contractors/ auxiliary members.
 * Are you an English language learner or a member of an immigrant/refugee community?
