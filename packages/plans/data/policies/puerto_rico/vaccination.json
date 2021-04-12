@@ -12,7 +12,7 @@
 			"text": "c19.link/scheduling.phone.pr"
 		}
 	},
-	"activePhase": "1b",
+	"activePhase": "16_and_up",
 	"phases": [
 		{
 			"id": "1a",
@@ -69,6 +69,15 @@
 				},
 				{
 					"question": "c19.eligibility.question/age.are"
+				}
+			]
+		},
+		{
+			"id": "16_and_up",
+			"label": "16 and up",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.16_up"
 				}
 			]
 		}
