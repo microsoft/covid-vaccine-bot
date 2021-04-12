@@ -158,14 +158,14 @@
 			}
 		},
 		"PendingChangesDialog": {
-			"text": "You have pending changes in the review tab to be submitted, refreshing the data will revert those changes.\n\nDo you want to proceed?",
+			"text": "You have pending changes in the review tab to be submitted, refreshing the data will revert those changes.<br><br>Do you want to proceed?",
 			"cancel": "Cancel",
 			"submit": "OK"
 		}
 	},
 	"DataIsStaleForm": {
 		"title": "Data is stale",
-		"text": "The current current branch you are trying to acces is not available.\nEither the branch has been deleted or the change has been marked as complete.",
+		"text": "The current current branch you are trying to acces is not available.<br>Either the branch has been deleted or the change has been marked as complete.",
 		"RefreshButton": "Refresh Data"
 	},
 	"DeleteLocationForm": {

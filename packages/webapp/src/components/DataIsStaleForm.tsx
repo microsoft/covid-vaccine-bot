@@ -17,7 +17,7 @@ export default observer(function DataIsStaleForm(props: any) {
 				<div className="title">{t('DataIsStaleForm.title')}</div>
 			</div>
 			<div className="modalBody">
-				<p>{t('DataIsStaleForm.text')}</p>
+				<p>{t('DataIsStaleForm.text', true)}</p>
 			</div>
 			<div className="modalFooter">
 				<PrimaryButton

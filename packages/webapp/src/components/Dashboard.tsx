@@ -415,7 +415,7 @@ export default observer(function Dashboard() {
 				modalProps={{ isBlocking: false }}
 			>
 				<div className="dialogBodyText">
-					{t('Dashboard.PendingChangesDialog.text')}
+					{t('Dashboard.PendingChangesDialog.text', true)}
 				</div>
 				<DialogFooter>
 					<PrimaryButton
