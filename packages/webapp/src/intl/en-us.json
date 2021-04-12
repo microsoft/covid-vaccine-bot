@@ -239,6 +239,15 @@
 			}
 		}
 	},
+	"LocationsPhases": {
+		"AddQualifierButton": "Add Qualifier",
+		"columns": {
+			"duplicate": "Dupliate",
+			"remove": "Remove",
+			"active": "Active Phase",
+			"setActive": "Set as Active"
+		}
+	},
 	"PhaseQualifierForm": {
 		"FormButtons": {
 			"more": "More",

@@ -128,12 +128,12 @@ export default observer(function PhaseForm(props: PhaseFormProp) {
 			</div>
 			<div className="modalFooter">
 				<PrimaryButton
-					text={t('PhaseForm.submit')}
+					text={t('App.submit')}
 					disabled={disableSubmit()}
 					onClick={() => onSubmit?.(formData)}
 				/>
 				<DefaultButton
-					text={t('PhaseForm.cancel')}
+					text={t('App.cancel')}
 					onClick={() => onCancel?.()}
 				/>
 			</div>

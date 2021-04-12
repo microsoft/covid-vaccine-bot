@@ -3,6 +3,29 @@
 		"title": "Compositor de datos",
 		"LoginButton": "Iniciar sesión con Github",
 		"active": "activo",
+		"loading": "Cargando contenido ...",		
+		"submit": "Entregar",
+		"cancel": "Cancelar",
+		"saving": "Guardando cambios...",
+		"ok": "Ok",
+		"NotFound": "404 pagina no encontrada.",
+		"Pivot": {
+			"Dashboard": "Tablero",
+			"Locations": "Locations",
+			"Translate": "Traducir",
+			"Review": "Revisar"
+		},
+		"RepoMessageBar": {
+			"current": "Actualmente estás trabajando en:",
+			"updatedBy": "Última actualización por:",
+			"updatedOn": "Ultima actualización en:"
+		},
+		"LanguageDropDown": {
+			"ariaLabel": "Elegir idioma"
+		},
+		"Persona": {
+			"logout": "Cerrar sesión"
+		},
 		"SaveContinueMessageBar": {
 			"cancel": "Descarte",
 			"submit": "Guardar y continuar",
@@ -24,9 +47,7 @@
 			"privacyCookies": "Privacidad y cookies",
 			"contactUs": "Contacta con nosotros",
 			"codeOfConduct": "Código de conducta"
-		},
-		"submit": "Entregar",
-		"cancel": "Cancelar"
+		}
 	},
 	"AddQualifierForm": {
 		"title": {
@@ -52,51 +73,6 @@
 		},
 		"Qualifier": {
 			"placeholder": "Texto calificador ..."
-		},
-		"submit": "Entregar",
-		"cancel": "Cancelar"
-	},
-	"Dashboard": {
-		"title": "Tablero"
-	},
-	"DataIsStaleForm": {
-		"title": "Los datos están obsoletos",
-		"text": "La rama actual actual a la que está intentando acceder no está disponible.\nLa rama se ha eliminado o el cambio se ha marcado como completo.",
-		"RefreshButton": "Actualizar datos"
-	},
-	"DeleteLocationForm": {
-		"title": "Eliminar ubicación",
-		"text": "¿Estás seguro de que te gustaría eliminar",
-		"cancel": "Cancelar"
-	},
-	"PhaseForm": {
-		"title": {
-			"new": "Nueva fase",
-			"edit": "Fase de edición",
-			"duplicate": "Fase duplicada"
-		},
-		"label": "Nombre de la fase:",
-		"submit": "Entregar",
-		"cancel": "Cancelar",
-		"hasDuplicateName": "La fase es demasiado similar a una que ya está en uso, revise."
-	},
-	"PhaseQualifierForm": {
-		"FormButtons": {
-			"more": "Más",
-			"details": "Detalles",
-			"remove": "Eliminar"
-		},
-		"Tag": {
-			"placeholder": "Etiqueta"
-		},
-		"Qualifier": {
-			"placeholder": "Calificatorio"
-		},
-		"MoreInfoText": {
-			"placeholder": "Más texto de información"
-		},
-		"MoreInfoUrl": {
-			"placeholder": "Más información URL"
 		}
 	},
 	"LocationForm": {
@@ -125,6 +101,169 @@
 		"schedulingPhone": "Una línea directa de programación:",
 		"schedulingPhoneDesc": "Descripción de la línea directa de programación:",
 		"noPhaseLabel": "Sin etiqueta de fase"
+	},
+	"Dashboard": {
+		"title": "Tablero",
+		"loading": "Cargando contenido...",
+		"RefreshButton": "Actualizar datos",
+		"WorkingBranches": {
+			"title": "Ramas de trabajo",
+			"ariaLabelForSelectionColumn": "Alternar selección",
+			"ariaLabelForSelectAllCheckbox": "Alternar selección para todos los elementos",
+			"checkButtonAriaLabel": "Caja de fila",
+			"empty": "No hay sucursales en funcionamiento en este momento.",
+			"load": "Rama de carga",
+			"columns": {
+				"branchName": "Nombre de la sucursal",
+				"name": "",
+				"createdOn": "Creado en",
+				"action": {
+					"ariaLabel": "Columna de acciones"
+				}
+			}
+		},
+		"PendingPRs": {
+			"title": "RP pendientes",
+			"ariaLabelForSelectionColumn": "Alternar selección",
+			"ariaLabelForSelectAllCheckbox": "Alternar selección para todos los elementos",
+			"checkButtonAriaLabel": "Caja de fila",
+			"empty": "No hay RP pendientes en este momento.",
+			"approve": "Aprobar",
+			"load": "Carga PR",
+			"notes": "Notas",
+			"columns": {
+				"title": "Título",
+				"notes": "Notas",
+				"author": "Autor",
+				"update": "Última actualización",
+				"action": {
+					"ariaLabel": "Columna de acciones"
+				}
+			}
+		},
+		"LocationUpdates": {
+			"title": "Actualizaciones de Ubicación",
+			"ariaLabelForSelectionColumn": "Alternar selección",
+			"ariaLabelForSelectAllCheckbox": "Alternar selección para todos los elementos",
+			"checkButtonAriaLabel": "Caja de fila",
+			"empty": "No hay actualizaciones de ubicación pendientes en este momento.",
+			"view": "Vista",
+			"columns": {
+				"title": "Título",
+				"notes": "Notas",
+				"author": "Autor",
+				"update": "Última actualización",
+				"action": {
+					"ariaLabel": "Columna de acciones"
+				}
+			}
+		},
+		"PendingChangesDialog": {
+			"text": "Tiene cambios pendientes en la pestaña de revisión para enviar, la actualización de los datos revertirá esos cambios. <br> <br> ¿Desea continuar?",
+			"cancel": "Cancelar",
+			"submit": "OK"
+		}
+	},
+	"DataIsStaleForm": {
+		"title": "Los datos están obsoletos",
+		"text": "La rama actual actual a la que está intentando acceder no está disponible.\nLa rama se ha eliminado o el cambio se ha marcado como completo.",
+		"RefreshButton": "Actualizar datos"
+	},
+	"DeleteLocationForm": {
+		"title": "Eliminar ubicación",
+		"text": "¿Estás seguro de que te gustaría eliminar",
+		"cancel": "Cancelar"
+	},
+	"LocationsStates": {
+		"title": "Ubicaciones",
+		"addLocation": "Añadir lugar",
+		"loading": "Cargando contenido...",
+		"translationNotFound": "*Traducción No Encontrada*",
+		"SearchBox": {
+			"placeholder": "Buscar"
+		},
+		"locationColumns": {
+			"text": "Expresar",
+			"regions": "Sublocaciones",
+			"ariaLabelForSelectionColumn": "Alternar selección",
+			"ariaLabelForSelectAllCheckbox": "Alternar selección para todos los elementos",
+			"checkButtonAriaLabel": "Caja de fila"
+		}
+	},
+	"PhaseForm": {
+		"title": {
+			"new": "Nueva fase",
+			"edit": "Fase de edición",
+			"duplicate": "Fase duplicada"
+		},
+		"label": "Nombre de la fase:",
+		"hasDuplicateName": "La fase es demasiado similar a una que ya está en uso, revise."
+	},
+	"LocationsRegions": {
+		"title": "Ubicaciones",
+		"active": "activo",
+		"addLocation": "Añadir lugar",
+		"loading": "Cargando contenido...",
+		"translationNotFound": "*Traducción No Encontrada*",
+		"SearchBox": {
+			"placeholder": "Buscar"
+		},
+		"PhaseOverview": {
+			"title": "Resumen de la fase",
+			"AddPhaseButton": "Agregar fase",
+			"region": {
+				"title": "Descripción general de la fase de región"
+			},
+			"empty": "No hay fases disponibles en este momento.",
+			"columns": {
+				"keyId": "ID de fase",
+				"name": "Nombre",
+				"qualifications": "# de calificaciones"
+			}
+		},
+		"Sublocations": {
+			"title": "Sublocalización",
+			"AddLocationButton": "Agregar sublocalización",
+			"region": {
+				"title": "Descripción general de la fase de región"
+			},
+			"empty": "No hay regiones disponibles en este momento.",
+			"ariaLabelForSelectionColumn": "Alternar selección",
+			"ariaLabelForSelectAllCheckbox": "Alternar selección para todos los elementos",
+			"checkButtonAriaLabel": "Caja de fila",
+			"columns": {
+				"name": "Región",
+				"phase": "ID de fase activa"
+			}
+		}
+	},
+	"LocationsPhases": {
+		"AddQualifierButton": "Agregar calificador",
+		"columns": {
+			"duplicate": "Duplicado",
+			"remove": "Eliminar",
+			"active": "Fase activa",
+			"setActive": "Establecer como activo"
+		}
+	},
+	"PhaseQualifierForm": {
+		"FormButtons": {
+			"more": "Más",
+			"details": "Detalles",
+			"remove": "Eliminar"
+		},
+		"Tag": {
+			"placeholder": "Etiqueta"
+		},
+		"Qualifier": {
+			"placeholder": "Calificatorio"
+		},
+		"MoreInfoText": {
+			"placeholder": "Más texto de información"
+		},
+		"MoreInfoUrl": {
+			"placeholder": "Más información URL"
+		}
 	},
 	"QualifierPanel": {
 		"title": "Calificadores",

@@ -19,6 +19,7 @@ import {
 	removePhase,
 	duplicatePhase,
 } from '../mutators/repoMutators'
+import {getText as t} from '../selectors/intlSelectors'
 import { getAppStore } from '../store/store'
 import { formatId } from '../utils/textUtils'
 import PhaseForm from './PhaseForm'
@@ -323,7 +324,7 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 														iconName="DuplicateRow"
 														style={{ color: '#0078d4' }}
 													/>
-													Duplicate
+													{t('LocationsPhases.columns.duplicate')}
 												</div>
 												<div
 													className="removePhaseGroup"
@@ -335,7 +336,7 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 														iconName="Blocked2Solid"
 														style={{ color: '#d13438' }}
 													/>
-													Remove
+													{t('LocationsPhases.columns.remove')}
 												</div>
 												{group.data.isActive ? (
 													<div className="activeGroup">
@@ -343,7 +344,7 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 															iconName="CircleFill"
 															style={{ color: '#00b7c3' }}
 														/>
-														Active Phase
+														{t('LocationsPhases.columns.active')}
 													</div>
 												) : (
 													<div
@@ -354,7 +355,7 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 															iconName="CircleRing"
 															style={{ color: '#00b7c3' }}
 														/>
-														Set as Active
+														{t('LocationsPhases.columns.setActive')}
 													</div>
 												)}
 											</>
@@ -366,7 +367,7 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 															iconName="CircleFill"
 															style={{ color: '#00b7c3' }}
 														/>
-														Active Phase
+														{t('LocationsPhases.columns.active')}
 													</div>
 												)}
 											</>
@@ -403,7 +404,7 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 												iconName="CircleAdditionSolid"
 												style={{ color: '#0078d4' }}
 											/>
-											Add Qualifier
+											{t('LocationsPhases.AddQualifierButtons')}
 										</div>
 									</div>
 								</div>

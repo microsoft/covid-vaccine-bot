@@ -194,12 +194,12 @@ export default observer(function AddQualifierForm(props: AddQualifierFormProp) {
 			</div>
 			<div className="modalFooter">
 				<PrimaryButton
-					text={t('AddQualifierForm.submit')}
+					text={t('App.submit')}
 					disabled={disableSubmit()}
 					onClick={() => onSubmit?.(formData)}
 				/>
 				<DefaultButton
-					text={t('AddQualifierForm.cancel')}
+					text={t('App.cancel')}
 					onClick={() => onCancel?.()}
 				/>
 			</div>
