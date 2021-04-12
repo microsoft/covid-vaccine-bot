@@ -92,7 +92,7 @@ export const setLoadedPRData = mutatorAction(
 		if (prData) {
 			store.loadedPRData = prData.data
 			store.prChanges = {
-				last_commit: prData?.commits?.pop?.(),
+				last_commit: prData?.commits ? [...prData.commits].pop() : undefined,
 			}
 		}
 	}
@@ -272,9 +272,14 @@ export const deleteLocation = mutatorAction(
 		const store = getAppStore()
 		store.pendingChanges = true
 
-		if (isRegion && selectedState)
+		if (isRegion && selectedState){
 			delete store.repoFileData[selectedState.key]?.regions?.[locationData.key]
-		else delete store.repoFileData[locationData.key]
+		}
+		else {
+			delete store.repoFileData[locationData.key]
+			delete store.globalFileData.cdcStateLinks.content[`cdc/${locationData.key}/state_link`]
+			delete store.globalFileData.cdcStateNames.content[`cdc/${locationData.key}/state_name`]
+		}
 
 		store.repoFileData = { ...store.repoFileData }
 	}

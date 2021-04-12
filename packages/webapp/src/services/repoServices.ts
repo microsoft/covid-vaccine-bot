@@ -259,9 +259,9 @@ export const repoServices = async (
 				)
 
 			case 'getBranches':
-				return await gitFetch(`branches`)
+				return await gitFetch(`branches?per_page=100`)
 
-			case 'getUserWorkingBranches': 
+			case 'getUserWorkingBranches': 	
 				const userPrs = await repoServices('getUserPullRequests')
 				const allBranches = extraData[0]
 				const usersBranches = allBranches.filter((branch: any) => branch.name.split('-policy-')[0] === state.username)
@@ -409,7 +409,7 @@ export const repoServices = async (
 				return [stateData, customStrings, cdcStateNames, cdcStateLinks]
 
 			case 'createWorkingBranch':
-				if (state?.mainBranch) {
+				if (state.mainBranch) {
 					return await createWorkingBranch(state, branchName)
 				}
 				break
@@ -419,7 +419,7 @@ export const repoServices = async (
 				}
 				break
 			case 'createPR':
-				if (state?.mainBranch) {
+				if (state.mainBranch) {
 					const globalUpdates = extraData[0]
 					const locationUpdates = extraData[1]
 					const prFormData = extraData[3]

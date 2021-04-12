@@ -89,7 +89,7 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 							state.currentLanguage
 						].trim() !== ''
 							? stateNames[`cdc/${stateId}/state_name`][state.currentLanguage]
-							: `${t('LocationStates.translationNotFound')} (${stateId})`
+							: `${t('LocationsStates.translationNotFound')} (${stateId})`
 
 					nextFilteredStateList.push({
 						key: key,
