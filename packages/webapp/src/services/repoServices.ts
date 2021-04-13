@@ -94,6 +94,7 @@ const createWorkingBranch = async (state: any, branchName: string) => {
 
 const commitChanges = async (state: any, branchName: string, globalUpdates: any, locationUpdates: any) => {
 	let branchLastCommitSha = ''
+	const { committedDeletes } = state
 
 	if (globalUpdates) {
 		for (const i in globalUpdates) {
@@ -118,8 +119,10 @@ const commitChanges = async (state: any, branchName: string, globalUpdates: any,
 
 	if (locationUpdates) {
 		let locationResp: any = {}
+		let skipFetch = false
 		for (const i in locationUpdates) {
 			const locationObj = locationUpdates[i].data
+			skipFetch = committedDeletes.includes(locationObj.info.path)
 			const infoQuery = `contents/packages/plans/data/policies/${locationObj.info.path}`
 			const method = locationObj.delete ? 'DELETE' : 'PUT'
 			const message = locationObj.delete ? 'deleted' : 'updated'
@@ -139,52 +142,59 @@ const commitChanges = async (state: any, branchName: string, globalUpdates: any,
 				)
 			}
 			//Info
-			locationResp = await gitFetch(
-				infoQuery,
-				{
-					method,
-					body: JSON.stringify({
-						branch: branchName,
-						message: `${message} ${locationObj.info.path}`,
-						content: content?.info,
-						sha: locationObj.info.sha,
-					}),
-				}
-			)
+			if (!skipFetch) {
+				locationResp = await gitFetch(
+					infoQuery,
+					{
+						method,
+						body: JSON.stringify({
+							branch: branchName,
+							message: `${message} ${locationObj.info.path}`,
+							content: content?.info,
+							sha: locationObj.info.sha,
+						}),
+					}
+				)
+			}
 
 			//Vaccination
+			skipFetch = committedDeletes.includes(locationObj.vaccination.path)
 			const vacQuery = `contents/packages/plans/data/policies/${locationObj.vaccination.path}`
-			locationResp = await gitFetch(
-				vacQuery,
-				{
-					method,
-					body: JSON.stringify({
-						branch: branchName,
-						message: `${message} ${locationObj.vaccination.path}`,
-						content: content?.vaccination,
-						sha: locationObj.vaccination.sha,
-					}),
-				}
-			)
+			if (!skipFetch) {
+				locationResp = await gitFetch(
+					vacQuery,
+					{
+						method,
+						body: JSON.stringify({
+							branch: branchName,
+							message: `${message} ${locationObj.vaccination.path}`,
+							content: content?.vaccination,
+							sha: locationObj.vaccination.sha,
+						}),
+					}
+				)
+			}
 
 			//Strings
+			skipFetch = committedDeletes.includes(locationObj.strings.path)
 			const stringQuery = `contents/packages/plans/data/policies/${locationObj.strings.path}`
-
-			locationResp = await gitFetch(
-				stringQuery,
-				{
-					method,
-					body: JSON.stringify({
-						branch: branchName,
-						message: `${message} ${locationObj.strings.path}`,
-						content: content?.strings,
-						sha: locationObj.strings.sha,
-					}),
-				}
-			)
+			if (!skipFetch) {
+				locationResp = await gitFetch(
+					stringQuery,
+					{
+						method,
+						body: JSON.stringify({
+							branch: branchName,
+							message: `${message} ${locationObj.strings.path}`,
+							content: content?.strings,
+							sha: locationObj.strings.sha,
+						}),
+					}
+				)
+			}
 
 			// Regions
-			if (locationObj.regions) {
+			if (locationObj.regions && !skipFetch) {
 				const regionKeys = Object.keys(locationObj.regions)
 				for (const key of regionKeys) {
 					const regionObj = locationObj.regions[key]

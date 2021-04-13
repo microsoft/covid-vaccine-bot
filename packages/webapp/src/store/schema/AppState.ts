@@ -30,4 +30,5 @@ export interface AppState {
 	isSavingCommits: boolean
 	localization: any
 	defaultLanguage: any
+	committedDeletes: any[]
 }

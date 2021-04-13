@@ -153,7 +153,6 @@ orchestrator(loadPR, async (message) => {
 			handleError(prResp)
 			return
 		} 
-		
 		setLoadedPRData(prResp)
 
 		const resp = await repoServices('getRepoFileData', prResp.data.head.sha)

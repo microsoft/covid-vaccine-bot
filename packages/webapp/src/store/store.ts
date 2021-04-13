@@ -34,6 +34,7 @@ export const initialStore = {
 	isSavingCommits: false,
 	localization: {},
 	defaultLanguage: {},
+	committedDeletes: []
 }
 
 export const getAppState = (): AppState => {

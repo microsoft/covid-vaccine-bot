@@ -91,6 +91,8 @@ export const setLoadedPRData = mutatorAction(
 		const store = getAppStore()
 		if (prData) {
 			store.loadedPRData = prData.data
+			const deletedFiles = prData.commits.filter((c:any) => c.commit.message.startsWith('deleted')).map((c:any) => c.commit.message.replace('deleted ',''))
+			store.committedDeletes = deletedFiles
 			store.prChanges = {
 				last_commit: prData?.commits ? [...prData.commits].pop() : undefined,
 			}
