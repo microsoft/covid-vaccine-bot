@@ -82,6 +82,9 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 					const stateId = value?.info?.content.id
 					const stateNames = state?.globalFileData?.cdcStateNames.content
 
+					if(!stateId)
+						return 
+
 					const stateLabel =
 						stateNames[`cdc/${stateId}/state_name`] &&
 						stateNames[`cdc/${stateId}/state_name`][state.currentLanguage] &&
