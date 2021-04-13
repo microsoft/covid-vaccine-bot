@@ -1,0 +1,9 @@
+{
+	"id": "san_francisco",
+	"metadata": {
+		"code_alpha": "san_francisco",
+		"code_numeric": 0
+	},
+	"name": "San Francisco",
+	"type": "city"
+}
