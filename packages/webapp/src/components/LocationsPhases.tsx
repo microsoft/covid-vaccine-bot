@@ -404,7 +404,7 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 												iconName="CircleAdditionSolid"
 												style={{ color: '#0078d4' }}
 											/>
-											{t('LocationsPhases.AddQualifierButtons')}
+											{t('LocationsPhases.AddQualifierButton')}
 										</div>
 									</div>
 								</div>

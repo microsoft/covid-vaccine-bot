@@ -52,7 +52,7 @@ export default observer(function PhaseQualiferForm(
 		getPhaseQualifierItemsByKey(selectedState, rowItems.item.tagKey)
 	)
 
-	const { globalFileData, repoFileData } = getAppStore()
+	const { globalFileData, repoFileData, currentLanguage } = getAppStore()
 
 	let overrideIconFlag = false
 	let moreInfoKey = rowItems.item.moreInfoKey
@@ -73,9 +73,7 @@ export default observer(function PhaseQualiferForm(
 		}
 	}
 
-	const [moreInfoText, setMoreInfoText] = useState<string>(
-		getPhaseMoreInfoTextByKey(selectedState, moreInfoKey)
-	)
+	const [moreInfoText, setMoreInfoText] = useState<string>('')
 
 	const [moreInfoUrl, setMoreInfoUrl] = useState<string>(
 		getPhaseMoreInfoUrl(isRegion, rowItems)
@@ -83,6 +81,12 @@ export default observer(function PhaseQualiferForm(
 
 	const changedItem = useRef<any>(rowItems.item)
 	changedItem.current.moreInfoContent = moreInfoText
+
+	useEffect(() => {
+		if (currentLanguage) {
+			setMoreInfoText(getPhaseMoreInfoTextByKey(selectedState, moreInfoKey))
+		}
+	}, [currentLanguage, selectedState, moreInfoKey])
 
 	useEffect(() => {
 		if (globalFileData) {
