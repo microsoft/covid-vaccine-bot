@@ -55,28 +55,12 @@
 			]
 		},
 		{
-			"id": "1c",
+			"id": "16",
+			"label": "16+",
 			"qualifications": [
 				{
-					"question": "c19.eligibility.question/healthcare_worker"
-				},
-				{
-					"question": "c19.eligibility.question/long_term_care_resident"
-				},
-				{
-					"question": "c19.eligibility.question/essential_worker",
-					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.ca.1c",
-					"moreInfoUrl": "https://covid19.ca.gov/essential-workforce/"
-				},
-				{
-					"question": "c19.eligibility.question/health",
-					"moreInfoUrl": "https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/COVID-19/Provider-Bulletin-2-12-21.aspx"
-				},
-				{
-					"question": "c19.eligibility.question/age.65_up"
-				},
-				{
-					"question": "c19.eligibility.question/congregate.ca"
+					"question": "c19.eligibility.question/age.16_up",
+					"moreInfoText": "c19.eligibility.moreinfo/age.16_up.ca.16"
 				}
 			]
 		}
