@@ -181,7 +181,7 @@ export default observer(function LocationForm(props: LocationFormProp) {
 					/>
 				</div>
 				<TextField
-					label={t('LocationForm.regionTypeOptions.placeholder')}
+					label={t('LocationForm.info')}
 					name="info"
 					value={formData.info}
 					onChange={handleTextChange}
