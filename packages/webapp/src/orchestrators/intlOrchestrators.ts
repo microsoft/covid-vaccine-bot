@@ -6,7 +6,7 @@ import { isEmpty } from 'lodash'
 import { isRtlLang } from 'rtl-detect'
 import { orchestrator } from 'satcheljs'
 import { setAppLanguage } from '../actions/intlActions'
-import configs from '../config'
+//import configs from '../config'
 import { setLocalization, setDefaultLanguage } from '../mutators/intlMutators'
 import { getAppStore } from '../store/store'
 
@@ -14,6 +14,12 @@ orchestrator(setAppLanguage, async (message) => {
 	const state = getAppStore()
 	let localization: any = {}
 	let defaultLanguage: any = state.defaultLanguage
+
+	const configs = {
+		languageKeys:
+			'en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th',
+		defaultLanguage: 'en-us',
+	}
 
 	if (isEmpty(defaultLanguage)) {
 		defaultLanguage = {
