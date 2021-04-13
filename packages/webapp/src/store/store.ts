@@ -34,7 +34,9 @@ export const initialStore = {
 	isSavingCommits: false,
 	localization: {},
 	defaultLanguage: {},
-	committedDeletes: []
+	committedDeletes: [],
+	repoFileChanges: {},
+	globalFileChanges: {}
 }
 
 export const getAppState = (): AppState => {

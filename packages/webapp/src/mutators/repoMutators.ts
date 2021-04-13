@@ -2,10 +2,11 @@
  * Copyright (c) Microsoft. All rights reserved.
  * Licensed under the MIT license. See LICENSE file in the project.
  */
+import { toJS } from 'mobx'
 import { mutatorAction } from 'satcheljs'
 import { getText as t } from '../selectors/intlSelectors'
 import { getAppStore } from '../store/store'
-import { createLocationDataObj } from '../utils/dataUtils'
+import { createLocationDataObj, compare } from '../utils/dataUtils'
 import { formatId } from '../utils/textUtils'
 
 export const setIsDataRefreshing = mutatorAction(
@@ -124,6 +125,24 @@ export const setRepoFileData = mutatorAction(
 			store.globalFileData = {
 				customStrings: data[1],
 				cdcStateNames: data[2],
+				cdcStateLinks: data[3],
+			}
+		}
+	}
+)
+
+export const setRepoFileChanges = mutatorAction(
+	'setRepoFileData',
+	(data: any[] | undefined) => {
+		if (data) {
+			const store = getAppStore()
+
+			const changes = compare(toJS(store.repoFileData), data[0])
+			debugger
+			store.repoFileChanges = changes
+			store.globalFileChanges = {
+				customStrings: data[1],
+				cdcStateNames: data[2],	
 				cdcStateLinks: data[3],
 			}
 		}
@@ -276,6 +295,8 @@ export const deleteLocation = mutatorAction(
 
 		if (isRegion && selectedState){
 			delete store.repoFileData[selectedState.key]?.regions?.[locationData.key]
+			// What else needs to be removed here? 
+			// Does something need to be saved?
 		}
 		else {
 			delete store.repoFileData[locationData.key]

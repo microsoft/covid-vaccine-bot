@@ -10,8 +10,8 @@ export const getChanges = (): any => {
 	const changesList: any[] = []
 	const locationUpdates: any[] = []
 	const globalUpdates: any[] = []
-	const { globalFileData, repoFileData } = state
-
+	const { globalFileData } = state
+	const repoFileData = {...state.repoFileData}
 	if (
 		!isEqual(
 			state.initGlobalFileData.customStrings,
@@ -102,6 +102,22 @@ export const getChanges = (): any => {
 						label: `Updated regions for ${location}`,
 						value: repoFileData[location],
 					})
+
+					Object.keys(state.initRepoFileData[location].regions)
+						.filter((subLocation: string) => {
+							return !repoFileData[location].regions[subLocation]
+						})
+						.forEach((subLocation: string) => {
+							changesList.push({
+								label: `Removed region ${subLocation}`,
+								value: state.initRepoFileData[location].regions[subLocation],
+							})
+							repoFileData[location].regions[subLocation] = {
+								...state.initRepoFileData[location].regions[subLocation],
+								delete: true
+							}
+						})
+					
 					addChanges = true
 				}
 				if (
@@ -138,5 +154,6 @@ export const getChanges = (): any => {
 		}
 	})
 
+	debugger
 	return { globalUpdates, locationUpdates, changesList }
 }

@@ -31,4 +31,6 @@ export interface AppState {
 	localization: any
 	defaultLanguage: any
 	committedDeletes: any[]
+	repoFileChanges: any
+	globalFileChanges: any
 }

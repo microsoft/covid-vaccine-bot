@@ -17,6 +17,7 @@ import {
 	clearLoadedPRData,
 	setInitRepoFileData,
 	setRepoFileData,
+	setRepoFileChanges,
 	setIssuesList,
 	setLoadedPRData,
 	setPendingChanges,
@@ -137,6 +138,7 @@ orchestrator(loadBranch, async (message) => {
 	}
 	else {
 		setUserWorkingBranch(branch.name)
+		setRepoFileChanges(resp)
 		setRepoFileData(resp)
 		clearLoadedPRData()
 	}
@@ -195,6 +197,7 @@ orchestrator(saveContinue, async () => {
 		if(resp.ok === false) {
 			handleError(resp)
 		} else {
+			// latency :(
 			setRepoFileData(resp)
 			setPendingChanges(false)
 		}

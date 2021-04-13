@@ -198,17 +198,20 @@ const commitChanges = async (state: any, branchName: string, globalUpdates: any,
 				const regionKeys = Object.keys(locationObj.regions)
 				for (const key of regionKeys) {
 					const regionObj = locationObj.regions[key]
+					const _delete =  locationObj.delete || regionObj.delete
 					//Info
+					const regionMethod = _delete ? 'DELETE' : 'PUT'
+					const regionMessage = _delete ? 'deleted' : 'updated'
 					const regInfoQuery = `contents/packages/plans/data/policies/${regionObj.info.path}`
 
 					locationResp = await gitFetch(
 						regInfoQuery,
 						{
-							method,
+							method: regionMethod,
 							body: JSON.stringify({
 								branch: branchName,
-								message: `${message} ${regionObj.info.path}`,
-								content: locationObj.delete ? undefined : utf8_to_b64(
+								message: `${regionMessage} ${regionObj.info.path}`,
+								content: _delete ? undefined : utf8_to_b64(
 									JSON.stringify(regionObj.info.content, null, '\t')
 								),
 								sha: regionObj.info.sha,
@@ -222,11 +225,11 @@ const commitChanges = async (state: any, branchName: string, globalUpdates: any,
 					locationResp = await gitFetch(
 						regVacQuery,
 						{
-							method,
+							method: regionMethod,
 							body: JSON.stringify({
 								branch: branchName,
-								message: `${message} ${regionObj.vaccination.path}`,
-								content: locationObj.delete ? undefined : utf8_to_b64(
+								message: `${regionMessage} ${regionObj.vaccination.path}`,
+								content: _delete ? undefined : utf8_to_b64(
 									JSON.stringify(
 										regionObj.vaccination.content,
 										null,
