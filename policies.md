@@ -323,6 +323,30 @@ California children's services program (if the child is 16-21 years old)
 California genetically handicapped persons program
  (see [here](https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/COVID-19/Provider-Bulletin-2-12-21.aspx))
 
+## California Regions
+
+## California::Los Angeles
+
+### California::Los Angeles Links
+
+| link type | link |
+| --- | --- |
+
+
+
+### California::Los Angeles Active Phase (16)
+
+## California::San Francisco
+
+### California::San Francisco Links
+
+| link type | link |
+| --- | --- |
+
+
+
+### California::San Francisco Active Phase (16)
+
 # Colorado
 
 ## Colorado Links
