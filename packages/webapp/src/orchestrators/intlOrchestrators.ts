@@ -6,7 +6,7 @@ import { isEmpty } from 'lodash'
 import { isRtlLang } from 'rtl-detect'
 import { orchestrator } from 'satcheljs'
 import { setAppLanguage } from '../actions/intlActions'
-import config from '../config'
+import configs from '../config'
 import { setLocalization, setDefaultLanguage } from '../mutators/intlMutators'
 import { getAppStore } from '../store/store'
 
@@ -17,9 +17,9 @@ orchestrator(setAppLanguage, async (message) => {
 
 	if (isEmpty(defaultLanguage)) {
 		defaultLanguage = {
-			language: config.defaultLanguage,
-			rtl: isRtlLang(config.defaultLanguage),
-			...await import(`../intl/${config.defaultLanguage}.json`),
+			language: configs.defaultLanguage,
+			rtl: isRtlLang(configs.defaultLanguage),
+			...await import(`../intl/${configs.defaultLanguage}.json`),
 		}
 
 		setDefaultLanguage(defaultLanguage)
