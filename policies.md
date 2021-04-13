@@ -2586,62 +2586,10 @@ The list of frontline workers includes:
 | scheduling_phone | [1-877-724-3258](tel:1-877-724-3258) |
 
 
-## Pennsylvania Active Phase (1b)
+## Pennsylvania Active Phase (2)
 
-* Are you a healthcare worker?
-	* Health care personnel including, but not limited to:
-- Emergency medical service personnel
-- Nurses
-- Nursing assistants
-- Physicians
-- Dentists
-- Dental hygienists
-- Chiropractors
-- Therapists
-- Phlebotomists
-- Pharmacists
-- Technicians
-- Pharmacy technicians
-- Health professions students and trainees
-- Direct support professionals
-- Clinical personnel in school settings or correctional facilities
-- Contractual HCP not directly employed by the health care facility (see [here](https://www.health.pa.gov/topics/disease/coronavirus/Vaccine/Pages/Vaccine.aspx))
-* Are you a long term care resident or work in a long term care facility?
-* Are you classified as an essential worker?
-	* These include:
-- People in congregate settings not otherwise specified as long-term care facilities, and persons receiving home and community-based services
-- First responders (including Law enforcement and Firefighters)
-- Correctional officers and other workers serving people in congregate care settings not included in Phase 1A  
-- Food and agricultural workers
-- U.S. Postal Service workers
-- Manufacturing workers  
-- Grocery store workers  
-- Education workers 
-- Clergy and other essential support for houses of worship 
-- Public transit workers
-- Individuals caring for children or adults in early childhood and adult day programs (see [here](https://www.health.pa.gov/topics/disease/coronavirus/Vaccine/Pages/Vaccine.aspx))
-* Are you age 65+?
-* Are you receiving home and community based services?
-* Do you live in a congregate setting (e.g. homeless shelter, group home, correctional facility, behavioral health institution, etc...)?
-* Are you age 16+, and have a high-risk medical condition?
-	* This includes:
-- Cancer
-- Chronic kidney disease
-- Chronic lung diseases, including COPD (chronic obstructive pulmonary disease), asthma (moderate-to-severe), interstitial lung disease, cystic fibrosis, and pulmonary hypertension
-- Dementia or other neurological conditions
-- Diabetes (type 1 or type 2)
-- Down syndrome
-- Heart conditions (such as heart failure, coronary artery disease, cardiomyopathies or hypertension)
-- HIV infection
-- Immunocompromised state (weakened immune system)
-- Liver disease
-- Overweight and obesity
-- Pregnancy
-- Sickle cell disease or thalassemia
-- Smoking, current or former
-- Solid organ or blood stem cell transplant
-- Stroke or cerebrovascular disease, which affects blood flow to the brain
-- Substance use disorders (see [here](https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html))
+* Are you age 16+?
+	* ​All individuals not previously covered who are 16 and older and do not have a contraindication to the vaccine (note that at this time, only the Pfizer-BioNTech product is approved for those age 16 and 17)
 
 ## Pennsylvania Regions
 
@@ -2655,7 +2603,7 @@ The list of frontline workers includes:
 | scheduling_phone | [(800) 722-7112](tel:(800) 722-7112) |
 
 
-### Pennsylvania::Philadelphia Active Phase (1c)
+### Pennsylvania::Philadelphia Active Phase (2)
 
 # Puerto Rico
 
