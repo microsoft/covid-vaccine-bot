@@ -234,6 +234,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["@azure/functions", [
+        ["npm:1.2.3", {
+          "packageLocation": "./.yarn/cache/@azure-functions-npm-1.2.3-cc4ca1f4a1-047cffda92.zip/node_modules/@azure/functions/",
+          "packageDependencies": [
+            ["@azure/functions", "npm:1.2.3"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["@azure/logger", [
         ["npm:1.0.2", {
           "packageLocation": "./.yarn/cache/@azure-logger-npm-1.0.2-95865cd3c9-7464b458a5.zip/node_modules/@azure/logger/",
@@ -4565,6 +4574,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@c19-vax-api/locations-ingester", "workspace:packages/locations-ingester"],
             ["@azure/cosmos", "npm:3.10.5"],
+            ["@azure/functions", "npm:1.2.3"],
             ["@tsconfig/node14", "npm:1.0.0"],
             ["@types/config", "npm:0.0.38"],
             ["@types/lodash", "npm:4.14.168"],
