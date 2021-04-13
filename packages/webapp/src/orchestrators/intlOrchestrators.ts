@@ -19,7 +19,7 @@ orchestrator(setAppLanguage, async (message) => {
 		defaultLanguage = {
 			language: config.defaultLanguage,
 			rtl: isRtlLang(config.defaultLanguage),
-			...require(`../intl/${config.defaultLanguage}.json`),
+			...await import(`../intl/${config.defaultLanguage}.json`),
 		}
 
 		setDefaultLanguage(defaultLanguage)
@@ -29,7 +29,7 @@ orchestrator(setAppLanguage, async (message) => {
 		localization = {
 			language: message.language,
 			rtl: isRtlLang(message.language),
-			...require(`../intl/${message.language}.json`),
+			...await import(`../intl/${message.language}.json`),
 		}
 	} catch {
 		localization = {
