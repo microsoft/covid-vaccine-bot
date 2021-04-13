@@ -1564,7 +1564,7 @@ COVID-19 vaccinations are provided to Mississippi residents only, or to out-of-s
 
 ### Nebraska::Lancaster Active Phase (2b)
 
-* Are you 20+?
+* Are you age 18+?
 
 # Nevada
 
@@ -2702,7 +2702,7 @@ Weakened immune system
 - People who take medicine that weakens the immune system
 - Pregnancy (see [here](https://health.ri.gov/publications/guidelines/COVID19-underlying-conditions.pdf))
 * Are you 16+ and is your zip code covered by the Hard-Hit Community Vaccination Strategy?
-	* The Hard-Hit Community Vaccination Strategy currently applies to the following ZIP codes in Central Falls, Pawtucket, and Providence: 02863, 02860, 02861, 02904, 02905, 02907, 02908, and 02909. (see [here](https://covid.ri.gov/vaccination/rhode-islands-hard-hit-community-vaccination-strategy))
+	* The Hard-Hit Community Vaccination Strategy currently applies to the following ZIP codes in Central Falls, Cranston, East Providence, Johnston, North Providence, Pawtucket, Providence, West Warwick, and Woonsocket: 02860, 02861, 02863, 02893, 02895, 02904, 02905, 02906, 02907, 02908, 02909, 02910, 02911, 02914, 02919, and 02920. (see [here](https://covid.ri.gov/vaccination/rhode-islands-hard-hit-community-vaccination-strategy))
 * Are you homebound or otherwise unable to leave your home to get to a vaccination site, even with assistance?
 	* RIDOH is partnering with three agencies—Alert Ambulance, MedTech Ambulance, and PACE—to administer COVID-19 vaccines to homebound people in their residences. If you have already completed the survey, one of these agencies will contact you soon to schedule a vaccination appointment. These agencies will begin vaccinating some people as soon as March 20.
 
