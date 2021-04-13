@@ -1,8 +1,8 @@
-String ID,en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th
-c19.eligibility.question/essential_worker.1b.pa,"Are you as an essential frontline worker? This includes first responders; corrections officers; clergy; the staff of early childhood and adult day programs; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.",,,,"¿Eres un trabajador esencial de primera línea? Esto incluye socorristas; oficiales de correccionales; clero; el personal de los programas de la primera infancia y el día del adulto; y trabajadores del sector alimentario y agrícola, USPS, manufactura, supermercados, transporte público, educación o cuidado de niños.",,,,,,,,,,
-c19.eligibility.question/health.1b.pa,"Are you receiving home and community based services?",,,,"¿Está recibiendo servicios basados en el hogar y la comunidad?",,,,,,,,,,
-c19.link/scheduling.phone.pa,"1-877-724-3258",,,,"1-877-724-3258",,,,,,,,,,
-c19.link/scheduling.phone.description.pa,"PA Health Hotline",,,,"Línea directa de salud pa",,,,,,,,,,
+String ID,en-us,en-us-sms,en-us-voice,ko-kr,ko-kr-sms,ko-kr-voice,vi-vn,vi-vn-sms,vi-vn-voice,zh-cn,zh-cn-sms,zh-cn-voice,es-us,es-us-sms,es-us-voice,de-de,de-de-sms,de-de-voice,es-es,es-es-sms,es-es-voice,fi-fi,fi-fi-sms,fi-fi-voice,fr-fr,fr-fr-sms,fr-fr-voice,he-il,he-il-sms,he-il-voice,it-it,it-it-sms,it-it-voice,ja-jp,ja-jp-sms,ja-jp-voice,pt-pt,pt-pt-sms,pt-pt-voice,sv-se,sv-se-sms,sv-se-voice,th-th,th-th-sms,th-th-voice
+c19.eligibility.question/essential_worker.1b.pa,"Are you as an essential frontline worker? This includes first responders; corrections officers; clergy; the staff of early childhood and adult day programs; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, or child care.",,,,,,,,,,,,"¿Eres un trabajador esencial de primera línea? Esto incluye socorristas; oficiales de correccionales; clero; el personal de los programas de la primera infancia y el día del adulto; y trabajadores del sector alimentario y agrícola, USPS, manufactura, supermercados, transporte público, educación o cuidado de niños.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.eligibility.question/health.1b.pa,"Are you receiving home and community based services?",,,,,,,,,,,,"¿Está recibiendo servicios basados en el hogar y la comunidad?",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.pa,"1-877-724-3258",,,,,,,,,,,,"1-877-724-3258",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.description.pa,"PA Health Hotline",,,,,,,,,,,,"Línea directa de salud pa",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 c19.eligibility.moreinfo/healthcare_worker.pa.1a,"- Emergency medical service personnel
 - Nurses
 - Nursing assistants
@@ -18,7 +18,7 @@ c19.eligibility.moreinfo/healthcare_worker.pa.1a,"- Emergency medical service pe
 - Health professions students and trainees
 - Direct support professionals
 - Clinical personnel in school settings or correctional facilities
-- Contractual HCP not directly employed by the health care facility",,,,"- Personal del servicio médico de emergencia
+- Contractual HCP not directly employed by the health care facility",,,,,,,,,,,,"- Personal del servicio médico de emergencia
 - Enfermeras
 - Auxiliares de enfermería
 - Médicos
@@ -33,8 +33,8 @@ c19.eligibility.moreinfo/healthcare_worker.pa.1a,"- Emergency medical service pe
 - Profesiones sanitarias estudiantes y aprendices
 - Profesionales de soporte directo
 - Personal clínico en entornos escolares o correccionales
-- HCP contractual no empleado directamente por el centro de salud",,,,,,,,,,
-c19.eligibility.moreinfo/exposure_to_infectious_material.do.pa.1a,"Persons not directly involved in patient care but potentially exposed to infectious material that can transmit disease among or from health care personnel and patients",,,,"Personas que no participan directamente en la atención al paciente, pero potencialmente expuestas a material infeccioso que puede transmitir enfermedades entre o desde el personal de atención médica y los pacientes",,,,,,,,,,
+- HCP contractual no empleado directamente por el centro de salud",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.eligibility.moreinfo/exposure_to_infectious_material.do.pa.1a,"Persons not directly involved in patient care but potentially exposed to infectious material that can transmit disease among or from health care personnel and patients",,,,,,,,,,,,"Personas que no participan directamente en la atención al paciente, pero potencialmente expuestas a material infeccioso que puede transmitir enfermedades entre o desde el personal de atención médica y los pacientes",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 c19.eligibility.moreinfo/age.are_you_age.pa.1a,"- Cancer
 - Chronic kidney disease
 - COPD
@@ -46,7 +46,7 @@ c19.eligibility.moreinfo/age.are_you_age.pa.1a,"- Cancer
 - Pregnancy
 - Sickle cell disease
 - Smoking
-- Type 2 diabetes mellitus",,,,"- Cáncer
+- Type 2 diabetes mellitus",,,,,,,,,,,,"- Cáncer
 - Enfermedad renal crónica
 - EPOC
 - Síndrome de Down
@@ -56,9 +56,9 @@ c19.eligibility.moreinfo/age.are_you_age.pa.1a,"- Cancer
 - Embarazo
 - Enfermedad de células falciformes
 - Fumar
-- Diabetes mellitus tipo 2",,,,,,,,,,
-c19.link/scheduling.phone.philadelphia,"(800) 722-7112",,,,"(800) 722-7112",,,,,,,,,,
-c19.link/scheduling.phone.description.philadelphia,"COVID-19 health care services",,,,"Servicios de atención médica COVID-19",,,,,,,,,,
+- Diabetes mellitus tipo 2",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.philadelphia,"(800) 722-7112",,,,,,,,,,,,"(800) 722-7112",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.description.philadelphia,"COVID-19 health care services",,,,,,,,,,,,"Servicios de atención médica COVID-19",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 c19.eligibility.moreinfo/healthcare_worker.pa.1b,"Health care personnel including, but not limited to:
 - Emergency medical service personnel
 - Nurses
@@ -75,7 +75,7 @@ c19.eligibility.moreinfo/healthcare_worker.pa.1b,"Health care personnel includin
 - Health professions students and trainees
 - Direct support professionals
 - Clinical personnel in school settings or correctional facilities
-- Contractual HCP not directly employed by the health care facility",,,,,,,,,,,,,,
+- Contractual HCP not directly employed by the health care facility",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 c19.eligibility.moreinfo/essential_worker.pa.1b,"These include:
 - People in congregate settings not otherwise specified as long-term care facilities, and persons receiving home and community-based services
 - First responders (including Law enforcement and Firefighters)
@@ -87,7 +87,7 @@ c19.eligibility.moreinfo/essential_worker.pa.1b,"These include:
 - Education workers 
 - Clergy and other essential support for houses of worship 
 - Public transit workers
-- Individuals caring for children or adults in early childhood and adult day programs",,,,,,,,,,,,,,
+- Individuals caring for children or adults in early childhood and adult day programs",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 c19.eligibility.moreinfo/age.are_you_age.pa.1b,"This includes:
 - Cancer
 - Chronic kidney disease
@@ -105,7 +105,7 @@ c19.eligibility.moreinfo/age.are_you_age.pa.1b,"This includes:
 - Smoking, current or former
 - Solid organ or blood stem cell transplant
 - Stroke or cerebrovascular disease, which affects blood flow to the brain
-- Substance use disorders",,,,,,,,,,,,,,
+- Substance use disorders",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 c19.eligibility.moreinfo/healthcare_worker.pa.1c,"Health care personnel including, but not limited to:
 - Emergency medical service personnel
 - Nurses
@@ -122,7 +122,7 @@ c19.eligibility.moreinfo/healthcare_worker.pa.1c,"Health care personnel includin
 - Health professions students and trainees
 - Direct support professionals
 - Clinical personnel in school settings or correctional facilities
-- Contractual HCP not directly employed by the health care facility",,,,,,,,,,,,,,
+- Contractual HCP not directly employed by the health care facility",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 c19.eligibility.moreinfo/essential_worker.pa.1c,"These include:
 - People in congregate settings not otherwise specified as long-term care facilities, and persons receiving home and community-based services
 - First responders (including Law enforcement and Firefighters)
@@ -147,7 +147,7 @@ Transportation and logistics workers
 - Federal, state, county and local government workers, including county election workers, elected officials and members of the judiciary and their staff
 - Media workers
 - Public safety workers
-- Public health workers",,,,,,,,,,,,,,
+- Public health workers",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 c19.eligibility.moreinfo/age.are_you_age.pa.1c,"This includes:
 - Cancer
 - Chronic kidney disease
@@ -165,5 +165,5 @@ c19.eligibility.moreinfo/age.are_you_age.pa.1c,"This includes:
 - Smoking, current or former
 - Solid organ or blood stem cell transplant
 - Stroke or cerebrovascular disease, which affects blood flow to the brain
-- Substance use disorders",,,,,,,,,,,,,,
-c19.eligibility.moreinfo/age.16_up.pa.2,"​All individuals not previously covered who are 16 and older and do not have a contraindication to the vaccine (note that at this time, only the Pfizer-BioNTech product is approved for those age 16 and 17)",,,,,,,,,,,,,,
+- Substance use disorders",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.eligibility.moreinfo/age.16_up.pa.2,"​All individuals not previously covered who are 16 and older and do not have a contraindication to the vaccine (note that at this time, only the Pfizer-BioNTech product is approved for those age 16 and 17)",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
