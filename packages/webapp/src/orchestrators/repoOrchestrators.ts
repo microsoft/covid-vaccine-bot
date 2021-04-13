@@ -92,7 +92,6 @@ orchestrator(initializeGitData, async () => {
 		return
 	}
 	
-
 	setBranchList(resp)
 
 	const userWorkingBranches = await repoServices('getUserWorkingBranches', [
@@ -154,13 +153,14 @@ orchestrator(loadPR, async (message) => {
 			handleError(prResp)
 			return
 		} 
-	
 		setLoadedPRData(prResp)
 
-		const resp = await repoServices('getRepoFileData', prResp.data.head.ref)
-		if(resp.ok === false)
-		setRepoFileData(resp)
-
+		const resp = await repoServices('getRepoFileData', prResp.data.head.sha)
+		if(resp.ok === false) {
+			handleError(resp)
+		} else {
+			setRepoFileData(resp)
+		}
 		setUserWorkingBranch(undefined)
 	}
 	setIsDataRefreshing(false)

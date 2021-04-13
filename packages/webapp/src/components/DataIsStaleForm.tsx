@@ -4,26 +4,24 @@
  */
 import { PrimaryButton } from '@fluentui/react'
 import { observer } from 'mobx-react-lite'
+import { getText as t } from '../selectors/intlSelectors'
 
 import './LocationForm.scss'
 
 export default observer(function DataIsStaleForm(props: any) {
 	const { onSubmit } = props
-	
+
 	return (
 		<div className="modalWrapper">
 			<div className="modalHeader">
-				<div className="title">Data is stale</div>
+				<div className="title">{t('DataIsStaleForm.title')}</div>
 			</div>
 			<div className="modalBody">
-                <p>
-                    The current current branch you are trying to acces is not available. <br />
-					Either the branch has been deleted or the change has been marked as complete. 
-                </p>
+				<p>{t('DataIsStaleForm.text', true)}</p>
 			</div>
 			<div className="modalFooter">
 				<PrimaryButton
-					text="Refresh Data"
+					text={t('DataIsStaleForm.RefreshButton')}
 					onClick={onSubmit}
 				/>
 			</div>

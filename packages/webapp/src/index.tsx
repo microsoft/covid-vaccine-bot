@@ -9,6 +9,7 @@ import { BrowserRouter as Router } from 'react-router-dom'
 import App from './components/App'
 import './orchestrators/authOrchestrators'
 import './orchestrators/repoOrchestrators'
+import './orchestrators/intlOrchestrators'
 
 function render() {
 	try {

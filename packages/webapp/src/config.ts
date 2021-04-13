@@ -4,7 +4,9 @@
  */
 
 const configs = {
-    languageKeys: "en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th"
+	languageKeys:
+		'en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th',
+	defaultLanguage: 'en-us',
 }
 
 export default configs

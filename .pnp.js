@@ -4638,7 +4638,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/node", "npm:14.14.35"],
             ["@types/react", "npm:17.0.3"],
             ["@types/react-dom", "npm:17.0.2"],
+            ["@types/react-html-parser", "npm:2.0.1"],
             ["@types/react-router-dom", "npm:5.1.7"],
+            ["@types/rtl-detect", "npm:1.0.0"],
             ["@uifabric/react-hooks", "virtual:e6c1b5daae5e8ccf3df7b139ce564cb8182744026a2afe18b1f1344b3a16751fcb5766cc6d853f830e1b4e8af99f8651156df30eb774535cab3b155e18c5e599#npm:7.13.12"],
             ["csv-parse", "npm:4.15.3"],
             ["eslint-config-react-app", "virtual:e6c1b5daae5e8ccf3df7b139ce564cb8182744026a2afe18b1f1344b3a16751fcb5766cc6d853f830e1b4e8af99f8651156df30eb774535cab3b155e18c5e599#npm:6.0.0"],
@@ -4650,9 +4652,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["office-ui-fabric-react", "virtual:e6c1b5daae5e8ccf3df7b139ce564cb8182744026a2afe18b1f1344b3a16751fcb5766cc6d853f830e1b4e8af99f8651156df30eb774535cab3b155e18c5e599#npm:7.164.1"],
             ["react", "npm:17.0.1"],
             ["react-dom", "virtual:e6c1b5daae5e8ccf3df7b139ce564cb8182744026a2afe18b1f1344b3a16751fcb5766cc6d853f830e1b4e8af99f8651156df30eb774535cab3b155e18c5e599#npm:17.0.1"],
+            ["react-html-parser", "virtual:e6c1b5daae5e8ccf3df7b139ce564cb8182744026a2afe18b1f1344b3a16751fcb5766cc6d853f830e1b4e8af99f8651156df30eb774535cab3b155e18c5e599#npm:2.0.2"],
             ["react-refresh", "npm:0.9.0"],
             ["react-router-dom", "virtual:e6c1b5daae5e8ccf3df7b139ce564cb8182744026a2afe18b1f1344b3a16751fcb5766cc6d853f830e1b4e8af99f8651156df30eb774535cab3b155e18c5e599#npm:5.2.0"],
             ["react-scripts", "virtual:e6c1b5daae5e8ccf3df7b139ce564cb8182744026a2afe18b1f1344b3a16751fcb5766cc6d853f830e1b4e8af99f8651156df30eb774535cab3b155e18c5e599#npm:4.0.3"],
+            ["rtl-detect", "npm:1.0.2"],
             ["satcheljs", "virtual:e6c1b5daae5e8ccf3df7b139ce564cb8182744026a2afe18b1f1344b3a16751fcb5766cc6d853f830e1b4e8af99f8651156df30eb774535cab3b155e18c5e599#npm:4.2.3"],
             ["shx", "npm:0.3.3"],
             ["typescript", "patch:typescript@npm%3A4.2.3#builtin<compat/typescript>::version=4.2.3&hash=a45b0e"],
@@ -8948,6 +8952,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["@types/domutils", [
+        ["npm:1.7.3", {
+          "packageLocation": "./.yarn/cache/@types-domutils-npm-1.7.3-f8956cefaa-5873ab3853.zip/node_modules/@types/domutils/",
+          "packageDependencies": [
+            ["@types/domutils", "npm:1.7.3"],
+            ["domhandler", "npm:2.4.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["@types/eslint", [
         ["npm:7.2.7", {
           "packageLocation": "./.yarn/cache/@types-eslint-npm-7.2.7-ffc5c79dcb-cb7b820d88.zip/node_modules/@types/eslint/",
@@ -9086,6 +9100,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-html-minifier-terser-npm-5.1.1-682990a5a3-1e750b93e1.zip/node_modules/@types/html-minifier-terser/",
           "packageDependencies": [
             ["@types/html-minifier-terser", "npm:5.1.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@types/htmlparser2", [
+        ["npm:3.10.2", {
+          "packageLocation": "./.yarn/cache/@types-htmlparser2-npm-3.10.2-e26975beab-bb083c953e.zip/node_modules/@types/htmlparser2/",
+          "packageDependencies": [
+            ["@types/htmlparser2", "npm:3.10.2"],
+            ["@types/domutils", "npm:1.7.3"],
+            ["@types/node", "npm:14.14.35"],
+            ["domhandler", "npm:2.4.2"]
           ],
           "linkType": "HARD",
         }]
@@ -9446,6 +9472,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["@types/react-html-parser", [
+        ["npm:2.0.1", {
+          "packageLocation": "./.yarn/cache/@types-react-html-parser-npm-2.0.1-fe72253663-e767371bed.zip/node_modules/@types/react-html-parser/",
+          "packageDependencies": [
+            ["@types/react-html-parser", "npm:2.0.1"],
+            ["@types/htmlparser2", "npm:3.10.2"],
+            ["@types/react", "npm:17.0.3"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["@types/react-router", [
         ["npm:5.1.12", {
           "packageLocation": "./.yarn/cache/@types-react-router-npm-5.1.12-0fff58be7c-a94fbbd2b2.zip/node_modules/@types/react-router/",
@@ -9524,6 +9561,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/rimraf", "npm:3.0.0"],
             ["@types/glob", "npm:7.1.3"],
             ["@types/node", "npm:14.14.35"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@types/rtl-detect", [
+        ["npm:1.0.0", {
+          "packageLocation": "./.yarn/cache/@types-rtl-detect-npm-1.0.0-960d36a9da-b0cefa1b1f.zip/node_modules/@types/rtl-detect/",
+          "packageDependencies": [
+            ["@types/rtl-detect", "npm:1.0.0"]
           ],
           "linkType": "HARD",
         }]
@@ -27427,6 +27473,29 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["react-html-parser", [
+        ["npm:2.0.2", {
+          "packageLocation": "./.yarn/cache/react-html-parser-npm-2.0.2-edd77c71ef-730c7ff15a.zip/node_modules/react-html-parser/",
+          "packageDependencies": [
+            ["react-html-parser", "npm:2.0.2"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:e6c1b5daae5e8ccf3df7b139ce564cb8182744026a2afe18b1f1344b3a16751fcb5766cc6d853f830e1b4e8af99f8651156df30eb774535cab3b155e18c5e599#npm:2.0.2", {
+          "packageLocation": "./.yarn/$$virtual/react-html-parser-virtual-775cfa1ec5/0/cache/react-html-parser-npm-2.0.2-edd77c71ef-730c7ff15a.zip/node_modules/react-html-parser/",
+          "packageDependencies": [
+            ["react-html-parser", "virtual:e6c1b5daae5e8ccf3df7b139ce564cb8182744026a2afe18b1f1344b3a16751fcb5766cc6d853f830e1b4e8af99f8651156df30eb774535cab3b155e18c5e599#npm:2.0.2"],
+            ["@types/react", "npm:17.0.3"],
+            ["htmlparser2", "npm:3.10.1"],
+            ["react", "npm:17.0.1"]
+          ],
+          "packagePeers": [
+            "@types/react",
+            "react"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["react-input-autosize", [
         ["npm:3.0.0", {
           "packageLocation": "./.yarn/cache/react-input-autosize-npm-3.0.0-c2fd3b468a-1e2923da6e.zip/node_modules/react-input-autosize/",
@@ -28939,6 +29008,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/rsvp-npm-4.8.5-09f3c6ed40-eb70274fb3.zip/node_modules/rsvp/",
           "packageDependencies": [
             ["rsvp", "npm:4.8.5"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["rtl-detect", [
+        ["npm:1.0.2", {
+          "packageLocation": "./.yarn/cache/rtl-detect-npm-1.0.2-b1767e1f2c-5776868ded.zip/node_modules/rtl-detect/",
+          "packageDependencies": [
+            ["rtl-detect", "npm:1.0.2"]
           ],
           "linkType": "HARD",
         }]

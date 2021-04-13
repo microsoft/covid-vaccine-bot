@@ -19,6 +19,7 @@ import {
 	updateLocationData,
 	deleteLocation,
 } from '../mutators/repoMutators'
+import { getText as t } from '../selectors/intlSelectors'
 import { getAppStore } from '../store/store'
 import DeleteLocationForm from './DeleteLocationForm'
 import LocationForm from './LocationForm'
@@ -46,22 +47,20 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 
 	const state = getAppStore()
 	const filterEditable = (col: any) => {
-		if(state.isEditable)
-			return true
-		else 
-			return col.key !== 'editCol' && col.key !== 'delete'
+		if (state.isEditable) return true
+		else return col.key !== 'editCol' && col.key !== 'delete'
 	}
 	const locationColumns = [
 		{
 			key: 'stateCol',
-			name: 'State',
+			name: t('LocationsStates.locationColumns.text'),
 			fieldName: 'text',
 			minWidth: 200,
 			isResizable: true,
 		},
 		{
 			key: 'regionCol',
-			name: 'Sublocations',
+			name: t('LocationsStates.locationColumns.regions'),
 			fieldName: 'regions',
 			minWidth: 200,
 			isResizable: true,
@@ -83,6 +82,9 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 					const stateId = value?.info?.content.id
 					const stateNames = state?.globalFileData?.cdcStateNames.content
 
+					if(!stateId)
+						return 
+
 					const stateLabel =
 						stateNames[`cdc/${stateId}/state_name`] &&
 						stateNames[`cdc/${stateId}/state_name`][state.currentLanguage] &&
@@ -90,7 +92,7 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 							state.currentLanguage
 						].trim() !== ''
 							? stateNames[`cdc/${stateId}/state_name`][state.currentLanguage]
-							: `*Translation Not Found* (${stateId})`
+							: `${t('LocationsStates.translationNotFound')} (${stateId})`
 
 					nextFilteredStateList.push({
 						key: key,
@@ -126,7 +128,7 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 		},
 		[onSelectedItem]
 	)
- 
+
 	const onLocationFormSubmit = useCallback(
 		(locationData, prevItem) => {
 			dismissLocationModal()
@@ -165,8 +167,7 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 
 	const onRenderItemColumn = useCallback(
 		(item?: any, _index?: number, column?: IColumn) => {
-			if(!column)
-				return null
+			if (!column) return null
 
 			const fieldContent = item[column.fieldName as keyof any] as string
 
@@ -196,8 +197,8 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 		<div className="bodyContainer">
 			<div className="bodyHeader">
 				<div className="bodyHeaderTitle">
-					<div className="breadCrumbs">/ Locations</div>
-					<div className="mainTitle">Locations</div>
+					<div className="breadCrumbs">/ {t('LocationsStates.title')}</div>
+					<div className="mainTitle">{t('LocationsStates.title')}</div>
 				</div>
 			</div>
 			<div className="bodyContent">
@@ -206,7 +207,7 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 						<div className="searchRow">
 							<SearchBox
 								styles={{ root: { width: 400 } }}
-								placeholder="Search"
+								placeholder={t('LocationsStates.SearchBox.placeholder')}
 								onChange={(ev, text) => onStateFilter(ev, text)}
 							/>
 							{state.isEditable && (
@@ -218,7 +219,7 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 										iconName="CircleAdditionSolid"
 										style={{ color: '#0078d4' }}
 									/>
-									Add Location
+									{t('LocationsStates.addLocation')}
 								</div>
 							)}
 						</div>
@@ -228,9 +229,9 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 							setKey="set"
 							layoutMode={DetailsListLayoutMode.justified}
 							selectionPreservedOnEmptyClick={true}
-							ariaLabelForSelectionColumn="Toggle selection"
-							ariaLabelForSelectAllCheckbox="Toggle selection for all items"
-							checkButtonAriaLabel="Row checkbox"
+							ariaLabelForSelectionColumn={t('LocationsStates.addLocation')}
+							ariaLabelForSelectAllCheckbox={t('LocationsStates.addLocation')}
+							checkButtonAriaLabel={t('LocationsStates.addLocation')}
 							checkboxVisibility={2}
 							onItemInvoked={openSelection}
 							onRenderItemColumn={onRenderItemColumn}
@@ -239,7 +240,7 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 					</section>
 				) : (
 					<section>
-						<ProgressIndicator description="Loading content..." />
+						<ProgressIndicator description={t('LocationsStates.loading')} />
 					</section>
 				)}
 			</div>
