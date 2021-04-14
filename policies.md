@@ -1564,7 +1564,7 @@ COVID-19 vaccinations are provided to Mississippi residents only, or to out-of-s
 
 ### Nebraska::Lancaster Active Phase (2b)
 
-* Are you 20+?
+* Are you age 18+?
 
 # Nevada
 
