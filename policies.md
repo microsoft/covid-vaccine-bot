@@ -3280,6 +3280,19 @@ Other Public Health Workers (see [here](https://www.vdh.virginia.gov/covid-19-va
 * Are you age 65+? (see [here](https://www.vdh.virginia.gov/covid-19-vaccine/#phase1b))
 * Do you live in a correctional facility, homeless shelter, or migrant labor camp? (see [here](https://www.vdh.virginia.gov/covid-19-vaccine/#phase1b))
 
+## Virginia Regions
+
+## Virginia::Alexandria
+
+### Virginia::Alexandria Links
+
+| link type | link |
+| --- | --- |
+| info | [Virginia Department of Health](https://www.alexandriava.gov/Vaccines) |
+
+
+### Virginia::Alexandria Active Phase (2)
+
 # Washington
 
 ## Washington Links
