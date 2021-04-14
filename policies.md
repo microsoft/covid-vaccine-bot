@@ -325,6 +325,72 @@ California genetically handicapped persons program
 
 ## California Regions
 
+## California::Alameda
+
+### California::Alameda Links
+
+| link type | link |
+| --- | --- |
+
+
+
+### California::Alameda Active Phase (16)
+
+## California::Amador
+
+### California::Amador Links
+
+| link type | link |
+| --- | --- |
+| info | [California Department of Public Health](https://www.amadorgov.org/services/public-health/covid-19/vaccine-information) |
+
+
+### California::Amador Active Phase (18_and_older)
+
+## California::Butte
+
+### California::Butte Links
+
+| link type | link |
+| --- | --- |
+| info | [California Department of Public Health](http://www.buttecounty.net/ph/COVID19/vaccine) |
+
+
+### California::Butte Active Phase (16)
+
+## California::Contra Costa
+
+### California::Contra Costa Links
+
+| link type | link |
+| --- | --- |
+
+
+
+### California::Contra Costa Active Phase (16)
+
+## California::Fresno
+
+### California::Fresno Links
+
+| link type | link |
+| --- | --- |
+
+
+
+### California::Fresno Active Phase (16)
+
+## California::Humboldt
+
+### California::Humboldt Links
+
+| link type | link |
+| --- | --- |
+
+
+
+### California::Humboldt Active Phase (16)
+
 ## California::Los Angeles
 
 ### California::Los Angeles Links
@@ -336,6 +402,17 @@ California genetically handicapped persons program
 
 ### California::Los Angeles Active Phase (16)
 
+## California::Placer
+
+### California::Placer Links
+
+| link type | link |
+| --- | --- |
+| info | [California Department of Public Health](https://www.placer.ca.gov/coronavirus/vaccine) |
+
+
+### California::Placer Active Phase (16)
+
 ## California::San Francisco
 
 ### California::San Francisco Links
@@ -346,6 +423,94 @@ California genetically handicapped persons program
 
 
 ### California::San Francisco Active Phase (16)
+
+## California::San Francisco County
+
+### California::San Francisco County Links
+
+| link type | link |
+| --- | --- |
+
+
+
+### California::San Francisco County Active Phase (16)
+
+## California::Santa Clara
+
+### California::Santa Clara Links
+
+| link type | link |
+| --- | --- |
+
+
+
+### California::Santa Clara Active Phase (16)
+
+## California::Solano
+
+### California::Solano Links
+
+| link type | link |
+| --- | --- |
+| info | [California Department of Public Health](https://www.solanocounty.com/depts/ph/coronavirus_links/covid_19_vaccines.asp) |
+
+
+### California::Solano Active Phase (16)
+
+## California::Stanislaus
+
+### California::Stanislaus Links
+
+| link type | link |
+| --- | --- |
+| info | [California Department of Public Health](http://schsa.org/coronavirus/vaccine/) |
+
+
+### California::Stanislaus Active Phase (16)
+
+## California::Sutter
+
+### California::Sutter Links
+
+| link type | link |
+| --- | --- |
+| info | [California Department of Public Health](https://www.suttercounty.org/doc/coronavirus/coronavirusVaccine) |
+
+
+### California::Sutter Active Phase (18_and_older)
+
+## California::Tuolumne
+
+### California::Tuolumne Links
+
+| link type | link |
+| --- | --- |
+| info | [California Department of Public Health](https://www.tuolumnecounty.ca.gov/1317/COVID-Vaccine) |
+
+
+### California::Tuolumne Active Phase (16)
+
+## California::Yolo
+
+### California::Yolo Links
+
+| link type | link |
+| --- | --- |
+| info | [California Department of Public Health](https://www.yolocounty.org/government/general-government-departments/health-human-services/adults/communicable-disease-investigation-and-control/novel-coronavirus-2019/coronavirus-vaccine) |
+
+
+### California::Yolo Active Phase (16)
+
+## California::Yuba
+
+### California::Yuba Links
+
+| link type | link |
+| --- | --- |
+| info | [California Department of Public Health](https://www.yuba.org/coronavirus/VaccineEligibility.php) |
+
+
+### California::Yuba Active Phase (18_and_older)
 
 # Colorado
 
