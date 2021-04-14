@@ -1,0 +1,9 @@
+{
+	"id": "usa",
+	"name": "USA",
+	"type": "country",
+	"metadata": {
+		"code_alpha": "USA",
+		"code_numeric": 48
+	}
+}
