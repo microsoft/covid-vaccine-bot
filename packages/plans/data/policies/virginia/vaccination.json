@@ -84,6 +84,15 @@
 					"moreInfoUrl": "https://www.vdh.virginia.gov/covid-19-vaccine/#phase1b"
 				}
 			]
+		},
+		{
+			"id": "2",
+			"label": "2",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.16_up"
+				}
+			]
 		}
 	]
 }
