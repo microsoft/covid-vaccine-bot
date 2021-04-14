@@ -56,7 +56,7 @@ export const setBranchList = mutatorAction(
 		if (data) {
 			const store = getAppStore()
 			store.branches = data
-			const mainBranch = data.find((branch) => branch.name === 'main')
+			const mainBranch = data.find((branch) => branch.name === process.env.REACT_APP_MAIN_BRANCH)
 			store.mainBranch = mainBranch
 		}
 	}

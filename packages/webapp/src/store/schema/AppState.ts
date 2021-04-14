@@ -14,6 +14,8 @@ export interface AppState {
 	mainBranch?: any
 	repoFileData?: any
 	initRepoFileData?: any
+	globalFileData?: any
+	initGlobalFileData?: any
 	currentLanguage: string
 	toggleQualifier: boolean
 	isEditable: boolean
@@ -30,4 +32,5 @@ export interface AppState {
 	defaultLanguage: any
 	committedDeletes: any[]
 	repoFileChanges: any
+	globalFileChanges: any
 }

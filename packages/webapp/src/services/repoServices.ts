@@ -283,7 +283,7 @@ export const repoServices = async (
 
 			case 'getRepoFileData':
 				const query = !extraData
-					? `contents/packages/plans/data`
+					? `contents/packages/plans/data?ref=${process.env.REACT_APP_MAIN_BRANCH}`
 					: `contents/packages/plans/data?ref=${extraData}`
 
 				const dataFolderObj = await gitFetch(query)
@@ -451,7 +451,7 @@ export const repoServices = async (
 							method: 'POST',
 							body: JSON.stringify({
 								head: branchName,
-								base: 'main',
+								base: process.env.REACT_APP_MAIN_BRANCH,
 								title: prTitle,
 								body: prFormData.prDetails,
 							}),
