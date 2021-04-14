@@ -118,7 +118,7 @@ const commitChanges = async (
 		let skipFetch = false
 		for (const i in locationUpdates) {
 			const locationObj = locationUpdates[i].data
-			skipFetch = committedDeletes.includes(locationObj.info.path)
+			skipFetch = !locationObj.info?.path || committedDeletes.includes(locationObj.info.path)
 			const infoQuery = `contents/packages/plans/data/policies/${locationObj.info.path}`
 			const method = locationObj.delete ? 'DELETE' : 'PUT'
 			const message = locationObj.delete ? 'deleted' : 'updated'
@@ -135,6 +135,7 @@ const commitChanges = async (
 							createCSVDataString(locationObj.strings.content)
 						),
 				  }
+					
 			//Info
 			if (!skipFetch) {
 				locationResp = await gitFetch(infoQuery, {
@@ -177,7 +178,7 @@ const commitChanges = async (
 				const regionKeys = Object.keys(locationObj.regions)
 				for (const key of regionKeys) {
 					const regionObj = locationObj.regions[key]
-					const skipRegionFetch = committedDeletes.includes(regionObj.info.path)
+					const skipRegionFetch = !regionObj.info?.path || committedDeletes.includes(regionObj.info.path)
 
 					//Info
 					if (!skipRegionFetch) {

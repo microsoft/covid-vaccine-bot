@@ -105,16 +105,19 @@ export const getChanges = (): any => {
 
 					Object.keys(state.initRepoFileData[location].regions)
 						.filter((subLocation: string) => {
-							return !repoFileData[location].regions[subLocation]
+							return !repoFileData[location].regions?.[subLocation]
 						})
 						.forEach((subLocation: string) => {
 							changesList.push({
 								label: `Removed region ${subLocation}`,
 								value: state.initRepoFileData[location].regions[subLocation],
 							})
-							repoFileData[location].regions[subLocation] = {
-								...state.initRepoFileData[location].regions[subLocation],
-								delete: true,
+							repoFileData[location].regions = {
+								...repoFileData[location].regions,
+								[subLocation]: {
+									...state.initRepoFileData[location].regions[subLocation],
+									delete: true,
+								}
 							}
 						})
 
