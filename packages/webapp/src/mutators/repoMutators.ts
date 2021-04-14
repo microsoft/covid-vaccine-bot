@@ -86,16 +86,28 @@ export const setIssuesList = mutatorAction(
 	}
 )
 
+/**
+ * Filters and sets commited deletes 
+ */
+export const setCommittedDeletes = mutatorAction(
+	'setCommittedDeletes',
+	(commits: any[] | undefined) => {
+		const store = getAppStore()
+		if (commits) {
+			const deletedFiles = commits
+				.filter((c: any) => c.commit.message.startsWith('deleted'))
+				.map((c: any) => c.commit.message.replace('deleted ', ''))
+
+			store.committedDeletes = deletedFiles
+		}
+	}
+)
 export const setLoadedPRData = mutatorAction(
 	'setLoadedPRData',
 	(prData: any | undefined) => {
 		const store = getAppStore()
 		if (prData) {
 			store.loadedPRData = prData.data
-			const deletedFiles = prData.commits
-				.filter((c: any) => c.commit.message.startsWith('deleted'))
-				.map((c: any) => c.commit.message.replace('deleted ', ''))
-			store.committedDeletes = deletedFiles
 			store.prChanges = {
 				last_commit: prData?.commits ? [...prData.commits].pop() : undefined,
 			}

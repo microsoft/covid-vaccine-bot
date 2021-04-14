@@ -26,6 +26,7 @@ import {
 	setPendingChanges,
 	setUserWorkingBranch,
 	setUserWorkingBranches,
+	setCommittedDeletes,
 	setIsDataRefreshing,
 	setIsDataStale,
 	setSavingCommitsFlag,
@@ -136,6 +137,17 @@ orchestrator(loadBranch, async (message) => {
 		'getRepoFileData',
 		`refs/heads/${branch.name}`
 	)
+
+	const date = new Date(parseInt(branch.name.split('-policy-')[1])).toISOString()
+	
+	const commitResp = await repoServices(
+		'getCommits',
+		{
+			since: date,
+			sha: branch.name
+		}
+	) 
+	setCommittedDeletes(commitResp)
 	if (resp.ok === false) {
 		handleError(
 			resp.status === 404 ? { ...resp, status: 'DATA_IS_STALE' } : resp
@@ -159,7 +171,7 @@ orchestrator(loadPR, async (message) => {
 			return
 		}
 		setLoadedPRData(prResp)
-
+		setCommittedDeletes(prResp.commits)
 		const resp = await repoServices('getRepoFileData', prResp.data.head.sha)
 		if (resp.ok === false) {
 			handleError(resp)

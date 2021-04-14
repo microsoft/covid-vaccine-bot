@@ -247,6 +247,10 @@ export const repoServices = async (
 			case 'getBranches':
 				return await gitFetch(`branches?per_page=100`)
 
+			case 'getCommits':
+				console.log('extraData', extraData);
+				return await gitFetch(`commits?since=${extraData.since}&sha=${extraData.sha}`)
+
 			case 'getUserWorkingBranches':
 				const userPrs = await repoServices('getUserPullRequests')
 				const allBranches = extraData[0]
