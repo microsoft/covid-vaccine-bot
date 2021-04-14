@@ -1,6 +1,6 @@
-String ID,en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th
-c19.eligibility.question/congregate.va,"Do you live in a correctional facility, homeless shelter, or migrant labor camp?",,,,"¿Vives en un centro correccional, refugio para personas sin hogar o campo de trabajo para migrantes?",,,,,,,,,,
-c19.link/scheduling.phone.va,877-829-4682,,,,877-829-4682,,,,,,,,,,
+String ID,en-us,en-us-sms,en-us-voice,ko-kr,ko-kr-sms,ko-kr-voice,vi-vn,vi-vn-sms,vi-vn-voice,zh-cn,zh-cn-sms,zh-cn-voice,es-us,es-us-sms,es-us-voice,de-de,de-de-sms,de-de-voice,es-es,es-es-sms,es-es-voice,fi-fi,fi-fi-sms,fi-fi-voice,fr-fr,fr-fr-sms,fr-fr-voice,he-il,he-il-sms,he-il-voice,it-it,it-it-sms,it-it-voice,ja-jp,ja-jp-sms,ja-jp-voice,pt-pt,pt-pt-sms,pt-pt-voice,sv-se,sv-se-sms,sv-se-voice,th-th,th-th-sms,th-th-voice
+c19.eligibility.question/congregate.va,"Do you live in a correctional facility, homeless shelter, or migrant labor camp?",,,,,,,,,,,,"¿Vives en un centro correccional, refugio para personas sin hogar o campo de trabajo para migrantes?",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.va,"877-829-4682",,,,,,,,,,,,"877-829-4682",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 c19.eligibility.moreinfo/essential_worker.va.1c,"Frontline Essential Workers include:
 Police, Fire, and Hazmat
 Corrections and homeless shelter workers
@@ -27,7 +27,7 @@ Information Technology & Communication
 Media
 Legal Services
 Public Safety (engineers)
-Other Public Health Workers",,,,"Los trabajadores esenciales de primera línea incluyen:
+Other Public Health Workers",,,,,,,,,,,,"Los trabajadores esenciales de primera línea incluyen:
 Policía, Bomberos y Hazmat
 Correccionales y trabajadores de refugios para personas sin hogar
 Cuidado de niños/PreK-12 Profesores/Personal (público y privado)
@@ -53,4 +53,4 @@ Tecnología de la Información y Comunicación
 Medio
 Servicios Jurídicos
 Seguridad Pública (ingenieros)
-Otros trabajadores de salud pública",,,,,,,,,,
+Otros trabajadores de salud pública",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
