@@ -11,7 +11,7 @@ export const getChanges = (): any => {
 	const locationUpdates: any[] = []
 	const globalUpdates: any[] = []
 	const { globalFileData } = state
-	const repoFileData = {...state.repoFileData}
+	const repoFileData = { ...state.repoFileData }
 	if (
 		!isEqual(
 			state.initGlobalFileData.customStrings,
@@ -114,10 +114,10 @@ export const getChanges = (): any => {
 							})
 							repoFileData[location].regions[subLocation] = {
 								...state.initRepoFileData[location].regions[subLocation],
-								delete: true
+								delete: true,
 							}
 						})
-					
+
 					addChanges = true
 				}
 				if (
@@ -154,6 +154,5 @@ export const getChanges = (): any => {
 		}
 	})
 
-	debugger
 	return { globalUpdates, locationUpdates, changesList }
 }

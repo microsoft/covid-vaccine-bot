@@ -34,34 +34,32 @@ const createPath = (obj: any, pathInput: string, value: any = undefined) => {
 }
 
 const gitFetch = async (url: string, options: any = {}) => {
-	const {headers, json = true, ..._options} = options
-	const {accessToken} = getAppStore()
-	const apiUrl = url.startsWith('https://api.github.com/') ? url : `https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/${url}`
+	const { headers, json = true, ..._options } = options
+	const { accessToken } = getAppStore()
+	const apiUrl = url.startsWith('https://api.github.com/')
+		? url
+		: `https://api.github.com/repos/${githubRepoOwner}/${githubRepoName}/${url}`
 
 	const response = await fetch(apiUrl, {
 		method: 'GET',
 		headers: {
 			Authorization: `token ${accessToken}`,
-			...headers
+			...headers,
 		},
-		..._options
+		..._options,
 	})
-	
-	if(response.ok === false) {
-		const error = Object.assign(
-			new Error(), {
+
+	if (response.ok === false) {
+		const error = Object.assign(new Error(), {
 			status: response.status,
-			ok: response.ok
+			ok: response.ok,
 		})
 
-		console.log('error', error);
 		throw error
 	}
-	
-	if(json)
-		return await response.json()
-	else
-		return response
+
+	if (json) return await response.json()
+	else return response
 }
 
 const getContent = async (url: string, token: string) => {
@@ -77,22 +75,23 @@ const getContent = async (url: string, token: string) => {
 }
 
 const createWorkingBranch = async (state: any, branchName: string) => {
-	if(state.mainBranch)
-		return await gitFetch(
-			`git/refs`,
-			{
-				method: 'POST',
-				body: JSON.stringify({
-					ref: branchName,
-					sha: state.mainBranch.commit.sha,
-				}),
-			}
-		)
-	else 
-		return undefined
+	if (state.mainBranch)
+		return await gitFetch(`git/refs`, {
+			method: 'POST',
+			body: JSON.stringify({
+				ref: branchName,
+				sha: state.mainBranch.commit.sha,
+			}),
+		})
+	else return undefined
 }
 
-const commitChanges = async (state: any, branchName: string, globalUpdates: any, locationUpdates: any) => {
+const commitChanges = async (
+	state: any,
+	branchName: string,
+	globalUpdates: any,
+	locationUpdates: any
+) => {
 	let branchLastCommitSha = ''
 	const { committedDeletes } = state
 
@@ -101,18 +100,15 @@ const commitChanges = async (state: any, branchName: string, globalUpdates: any,
 			const updateObj = globalUpdates[i]
 			const fileData = createCSVDataString(updateObj.content)
 			const query = `contents/packages/plans/data/localization/${updateObj.path}`
-			const globalResp = await gitFetch(
-				query,
-				{
-					method: 'PUT',
-					body: JSON.stringify({
-						branch: branchName,
-						message: `updated ${updateObj.path}`,
-						content: utf8_to_b64(fileData),
-						sha: updateObj.sha,
-					}),
-				}
-			)
+			const globalResp = await gitFetch(query, {
+				method: 'PUT',
+				body: JSON.stringify({
+					branch: branchName,
+					message: `updated ${updateObj.path}`,
+					content: utf8_to_b64(fileData),
+					sha: updateObj.sha,
+				}),
+			})
 			branchLastCommitSha = globalResp?.commit?.sha ?? branchLastCommitSha
 		}
 	}
@@ -126,71 +122,54 @@ const commitChanges = async (state: any, branchName: string, globalUpdates: any,
 			const infoQuery = `contents/packages/plans/data/policies/${locationObj.info.path}`
 			const method = locationObj.delete ? 'DELETE' : 'PUT'
 			const message = locationObj.delete ? 'deleted' : 'updated'
-			const content = locationObj.delete ? undefined : {
-				info: utf8_to_b64(
-					JSON.stringify(locationObj.info.content, null, '\t')
-				),
-				vaccination: utf8_to_b64(
-					JSON.stringify(
-						locationObj.vaccination.content,
-						null,
-						'\t'
-					)
-				),
-				strings: utf8_to_b64(
-					createCSVDataString(locationObj.strings.content)
-				)
-			}
+			const content = locationObj.delete
+				? undefined
+				: {
+						info: utf8_to_b64(
+							JSON.stringify(locationObj.info.content, null, '\t')
+						),
+						vaccination: utf8_to_b64(
+							JSON.stringify(locationObj.vaccination.content, null, '\t')
+						),
+						strings: utf8_to_b64(
+							createCSVDataString(locationObj.strings.content)
+						),
+				  }
 			//Info
 			if (!skipFetch) {
-				locationResp = await gitFetch(
-					infoQuery,
-					{
-						method,
-						body: JSON.stringify({
-							branch: branchName,
-							message: `${message} ${locationObj.info.path}`,
-							content: content?.info,
-							sha: locationObj.info.sha,
-						}),
-					}
-				)
-			}
+				locationResp = await gitFetch(infoQuery, {
+					method,
+					body: JSON.stringify({
+						branch: branchName,
+						message: `${message} ${locationObj.info.path}`,
+						content: content?.info,
+						sha: locationObj.info.sha,
+					}),
+				})
 
-			//Vaccination
-			skipFetch = committedDeletes.includes(locationObj.vaccination.path)
-			const vacQuery = `contents/packages/plans/data/policies/${locationObj.vaccination.path}`
-			if (!skipFetch) {
-				locationResp = await gitFetch(
-					vacQuery,
-					{
-						method,
-						body: JSON.stringify({
-							branch: branchName,
-							message: `${message} ${locationObj.vaccination.path}`,
-							content: content?.vaccination,
-							sha: locationObj.vaccination.sha,
-						}),
-					}
-				)
-			}
+				//Vaccination
+				const vacQuery = `contents/packages/plans/data/policies/${locationObj.vaccination.path}`
+				locationResp = await gitFetch(vacQuery, {
+					method,
+					body: JSON.stringify({
+						branch: branchName,
+						message: `${message} ${locationObj.vaccination.path}`,
+						content: content?.vaccination,
+						sha: locationObj.vaccination.sha,
+					}),
+				})
 
-			//Strings
-			skipFetch = committedDeletes.includes(locationObj.strings.path)
-			const stringQuery = `contents/packages/plans/data/policies/${locationObj.strings.path}`
-			if (!skipFetch) {
-				locationResp = await gitFetch(
-					stringQuery,
-					{
-						method,
-						body: JSON.stringify({
-							branch: branchName,
-							message: `${message} ${locationObj.strings.path}`,
-							content: content?.strings,
-							sha: locationObj.strings.sha,
-						}),
-					}
-				)
+				//Strings
+				const stringQuery = `contents/packages/plans/data/policies/${locationObj.strings.path}`
+				locationResp = await gitFetch(stringQuery, {
+					method,
+					body: JSON.stringify({
+						branch: branchName,
+						message: `${message} ${locationObj.strings.path}`,
+						content: content?.strings,
+						sha: locationObj.strings.sha,
+					}),
+				})
 			}
 
 			// Regions
@@ -198,48 +177,45 @@ const commitChanges = async (state: any, branchName: string, globalUpdates: any,
 				const regionKeys = Object.keys(locationObj.regions)
 				for (const key of regionKeys) {
 					const regionObj = locationObj.regions[key]
-					const _delete =  locationObj.delete || regionObj.delete
-					//Info
-					const regionMethod = _delete ? 'DELETE' : 'PUT'
-					const regionMessage = _delete ? 'deleted' : 'updated'
-					const regInfoQuery = `contents/packages/plans/data/policies/${regionObj.info.path}`
+					const skipRegionFetch = committedDeletes.includes(regionObj.info.path)
 
-					locationResp = await gitFetch(
-						regInfoQuery,
-						{
+					//Info
+					if (!skipRegionFetch) {
+						const _delete = locationObj.delete || regionObj.delete
+						const regionMethod = _delete ? 'DELETE' : 'PUT'
+						const regionMessage = _delete ? 'deleted' : 'updated'
+						const regInfoQuery = `contents/packages/plans/data/policies/${regionObj.info.path}`
+
+						locationResp = await gitFetch(regInfoQuery, {
 							method: regionMethod,
 							body: JSON.stringify({
 								branch: branchName,
 								message: `${regionMessage} ${regionObj.info.path}`,
-								content: _delete ? undefined : utf8_to_b64(
-									JSON.stringify(regionObj.info.content, null, '\t')
-								),
+								content: _delete
+									? undefined
+									: utf8_to_b64(
+											JSON.stringify(regionObj.info.content, null, '\t')
+									  ),
 								sha: regionObj.info.sha,
 							}),
-						}
-					)
+						})
 
-					//Vaccination
-					const regVacQuery = `contents/packages/plans/data/policies/${regionObj.vaccination.path}`
-
-					locationResp = await gitFetch(
-						regVacQuery,
-						{
+						//Vaccination
+						const regVacQuery = `contents/packages/plans/data/policies/${regionObj.vaccination.path}`
+						locationResp = await gitFetch(regVacQuery, {
 							method: regionMethod,
 							body: JSON.stringify({
 								branch: branchName,
 								message: `${regionMessage} ${regionObj.vaccination.path}`,
-								content: _delete ? undefined : utf8_to_b64(
-									JSON.stringify(
-										regionObj.vaccination.content,
-										null,
-										'\t'
-									)
-								),
+								content: _delete
+									? undefined
+									: utf8_to_b64(
+											JSON.stringify(regionObj.vaccination.content, null, '\t')
+									  ),
 								sha: regionObj.vaccination.sha,
 							}),
-						}
-					)
+						})
+					}
 				}
 			}
 		}
@@ -255,37 +231,37 @@ export const repoServices = async (
 	extraData: any = undefined
 ): Promise<any | undefined> => {
 	try {
-
 		const state = getAppStore()
 		let branchName = `refs/heads/${state.username}-policy-${Date.now()}`
 
 		switch (command) {
 			case 'checkAccess':
-				return await gitFetch(
-					`collaborators/${state.username}`,
-					{
-						headers: {
-							Accept: 'application/vnd.github.v3+json',
-						},
-						json: false
-					}
-				)
+				return await gitFetch(`collaborators/${state.username}`, {
+					headers: {
+						Accept: 'application/vnd.github.v3+json',
+					},
+					json: false,
+				})
 
 			case 'getBranches':
 				return await gitFetch(`branches?per_page=100`)
 
-			case 'getUserWorkingBranches': 	
+			case 'getUserWorkingBranches':
 				const userPrs = await repoServices('getUserPullRequests')
 				const allBranches = extraData[0]
-				const usersBranches = allBranches.filter((branch: any) => branch.name.split('-policy-')[0] === state.username)
+				const usersBranches = allBranches.filter(
+					(branch: any) => branch.name.split('-policy-')[0] === state.username
+				)
 
-				const userWorkingBranches = usersBranches.filter((branch: any) => {
-					return !userPrs.find((pr: any) => pr?.head?.ref === branch.name)
-				} ).sort((a: any, b: any) => (a.name > b.name ? -1 : 1))
+				const userWorkingBranches = usersBranches
+					.filter((branch: any) => {
+						return !userPrs.find((pr: any) => pr?.head?.ref === branch.name)
+					})
+					.sort((a: any, b: any) => (a.name > b.name ? -1 : 1))
 
 				return userWorkingBranches
 
-			case 'getUserPullRequests': 
+			case 'getUserPullRequests':
 				const prs = await gitFetch(`issues?creator=${state.username}`)
 				const populatedPRs: any[] = await Promise.all(
 					prs.map(async (item: any) => gitFetch(`pulls/${item.number}`))
@@ -296,10 +272,10 @@ export const repoServices = async (
 				const loadPRResponse = await gitFetch(`pulls/${extraData}`)
 				const commitResp = await gitFetch(`pulls/${extraData}/commits`)
 
-				return {data: loadPRResponse, commits: commitResp}
+				return { data: loadPRResponse, commits: commitResp }
 			case 'getIssues':
 				return await gitFetch(`issues`)
-				
+
 			case 'getRepoFileData':
 				const query = !extraData
 					? `contents/packages/plans/data`
@@ -309,7 +285,9 @@ export const repoServices = async (
 				const policyFolderGitUrl = dataFolderObj.find(
 					(folder: { name: string }) => folder.name === 'policies'
 				).git_url
-				const loadPolicyFolderResponse = await gitFetch(`${policyFolderGitUrl}?recursive=true`)
+				const loadPolicyFolderResponse = await gitFetch(
+					`${policyFolderGitUrl}?recursive=true`
+				)
 				const policyFolderData = loadPolicyFolderResponse
 				const stateData: any = {}
 				policyFolderData.tree.forEach(async (element: any) => {
@@ -374,8 +352,9 @@ export const repoServices = async (
 					(folder: { name: string }) => folder.name === 'localization'
 				).git_url
 
-				const localizationResponse = await gitFetch(`${localizationFolderGitUrl}?recursive=true`)
-
+				const localizationResponse = await gitFetch(
+					`${localizationFolderGitUrl}?recursive=true`
+				)
 
 				const customStrings = localizationResponse.tree.find(
 					(file: { path: string }) => file.path === 'custom-strings.csv'
@@ -428,7 +407,12 @@ export const repoServices = async (
 				break
 			case 'commitChanges':
 				if (extraData) {
-					return await commitChanges(state, extraData.branchName, extraData.globalUpdates, extraData.locationUpdates)
+					return await commitChanges(
+						state,
+						extraData.branchName,
+						extraData.globalUpdates,
+						extraData.locationUpdates
+					)
 				}
 				break
 			case 'createPR':
@@ -436,7 +420,7 @@ export const repoServices = async (
 					const globalUpdates = extraData[0]
 					const locationUpdates = extraData[1]
 					const prFormData = extraData[3]
-					if(state.loadedPRData) {
+					if (state.loadedPRData) {
 						branchName = `refs/heads/${state.loadedPRData.head.ref}`
 					} else if (state.userWorkingBranch) {
 						branchName = `refs/heads/${state.userWorkingBranch}`
@@ -445,49 +429,54 @@ export const repoServices = async (
 					}
 
 					if (state.pendingChanges) {
-						await commitChanges(state, branchName, globalUpdates, locationUpdates)
+						await commitChanges(
+							state,
+							branchName,
+							globalUpdates,
+							locationUpdates
+						)
 					}
 
 					let prTitle = ''
 					if (!state.loadedPRData) {
-						prTitle = !prFormData.prTitle ? 'auto PR creation' : prFormData.prTitle
-						const prResp = await gitFetch(
-							`pulls`,
-							{
-								method: 'POST',
-								body: JSON.stringify({
-									head: branchName,
-									base: 'main',
-									title: prTitle,
-									body: prFormData.prDetails
-								}),
-							}
-						)
-	
-						await gitFetch(
-							`issues/${prResp.number}/labels`,
-							{
-								method: 'POST',
-								body: JSON.stringify({
-									labels: ['data-composer-submission', 'requires-data-accuracy-review']
-								}),
-							}
-						)
+						prTitle = !prFormData.prTitle
+							? 'auto PR creation'
+							: prFormData.prTitle
+						const prResp = await gitFetch(`pulls`, {
+							method: 'POST',
+							body: JSON.stringify({
+								head: branchName,
+								base: 'main',
+								title: prTitle,
+								body: prFormData.prDetails,
+							}),
+						})
+
+						await gitFetch(`issues/${prResp.number}/labels`, {
+							method: 'POST',
+							body: JSON.stringify({
+								labels: [
+									'data-composer-submission',
+									'requires-data-accuracy-review',
+								],
+							}),
+						})
 
 						return prResp
 					} else {
-						prTitle = !prFormData.prTitle ? state.loadedPRData.title : prFormData.prTitle
-						const prDetails = !prFormData.prDetails ? state.loadedPRData.body : prFormData.prDetails
-						await gitFetch(
-							`pulls/${state.loadedPRData.number}`,
-							{
-								method: 'PATCH',
-								body: JSON.stringify({
-									title: prTitle,
-									body: prDetails
-								}),
-							}
-						)
+						prTitle = !prFormData.prTitle
+							? state.loadedPRData.title
+							: prFormData.prTitle
+						const prDetails = !prFormData.prDetails
+							? state.loadedPRData.body
+							: prFormData.prDetails
+						await gitFetch(`pulls/${state.loadedPRData.number}`, {
+							method: 'PATCH',
+							body: JSON.stringify({
+								title: prTitle,
+								body: prDetails,
+							}),
+						})
 
 						return state.loadedPRData
 					}
@@ -496,7 +485,7 @@ export const repoServices = async (
 		}
 
 		return undefined
-	} catch(error) {
+	} catch (error) {
 		return error
 	}
 }

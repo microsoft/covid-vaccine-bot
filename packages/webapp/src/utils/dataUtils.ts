@@ -2,7 +2,7 @@
  * Copyright (c) Microsoft. All rights reserved.
  * Licensed under the MIT license. See LICENSE file in the project.
  */
-import {isEqual, reduce, map} from 'lodash'
+import { isEqual, reduce, map } from 'lodash'
 export const convertCSVDataToObj = (csvData: any): any => {
 	const returnObj: any = {}
 
@@ -105,61 +105,69 @@ export const createLocationDataObj = (locationData: any): any => {
 }
 
 export const compare = function (a: any, b: any): any {
-  var result: {
-    different: string[]
-    missing_from_first: string[]
-    missing_from_second: string[]
+	const result: {
+		different: string[]
+		missing_from_first: string[]
+		missing_from_second: string[]
 	} = {
-    different: [],
-    missing_from_first: [],
-    missing_from_second: []
-  }
+		different: [],
+		missing_from_first: [],
+		missing_from_second: [],
+	}
 
-	console.log('compare', a, b);
-	
-  reduce(a, function (_result, value, key) {
-    if (b.hasOwnProperty(key)) {
-      if (isEqual(value, b[key])) {
-        return _result;
-      } else {
-        if (typeof (a[key]) != typeof ({}) || typeof (b[key]) != typeof ({})) {
-          //dead end.
-          _result.different.push(key);
-          return _result;
-        } else {
-          var deeper = compare(a[key], b[key]);
-          _result.different = _result.different.concat(map(deeper.different, (sub_path) => {
-            return key + "." + sub_path;
-          }));
+	reduce(
+		a,
+		function (_result, value, key) {
+			if (b.hasOwnProperty(key)) {
+				if (isEqual(value, b[key])) {
+					return _result
+				} else {
+					if (typeof a[key] != typeof {} || typeof b[key] != typeof {}) {
+						//dead end.
+						_result.different.push(key)
+						return _result
+					} else {
+						const deeper = compare(a[key], b[key])
+						_result.different = _result.different.concat(
+							map(deeper.different, (sub_path) => {
+								return key + '.' + sub_path
+							})
+						)
 
-          _result.missing_from_second = _result.missing_from_second.concat(map(deeper.missing_from_second, (sub_path) => {
-            return key + "." + sub_path;
-          }));
+						_result.missing_from_second = _result.missing_from_second.concat(
+							map(deeper.missing_from_second, (sub_path) => {
+								return key + '.' + sub_path
+							})
+						)
 
-          _result.missing_from_first = _result.missing_from_first.concat(map(deeper.missing_from_first, (sub_path) => {
-            return key + "." + sub_path;
-          }));
-          return _result;
-        }
-      }
-    } else {
-      _result.missing_from_second.push(key);
-      return _result;
-    }
-  }, result);
+						_result.missing_from_first = _result.missing_from_first.concat(
+							map(deeper.missing_from_first, (sub_path) => {
+								return key + '.' + sub_path
+							})
+						)
+						return _result
+					}
+				}
+			} else {
+				_result.missing_from_second.push(key)
+				return _result
+			}
+		},
+		result
+	)
 
-  reduce(b, function (_result, value, key) {
-    if (a.hasOwnProperty(key)) {
-      return _result;
-    } else {
-      _result.missing_from_first.push(key);
-      return _result;
-    }
-  }, result);
+	reduce(
+		b,
+		function (_result, value, key) {
+			if (a.hasOwnProperty(key)) {
+				return _result
+			} else {
+				_result.missing_from_first.push(key)
+				return _result
+			}
+		},
+		result
+	)
 
-	console.log('result', result);
-	
-	debugger
-
-  return result;
+	return result
 }

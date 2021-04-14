@@ -11,7 +11,10 @@ import {
 	loadBranch,
 	saveContinue,
 } from '../actions/repoActions'
-import {setUserAccessExpired, setUserAccessToken} from '../mutators/authMutators'
+import {
+	setUserAccessExpired,
+	setUserAccessToken,
+} from '../mutators/authMutators'
 import {
 	setBranchList,
 	clearLoadedPRData,
@@ -32,15 +35,15 @@ import { repoServices } from '../services/repoServices'
 import { getAppStore } from '../store/store'
 
 const handleError = (error: any, callback?: () => void) => {
-	switch(error.status) {
-		case 401: 
+	switch (error.status) {
+		case 401:
 			setUserAccessExpired(true)
 			setUserAccessToken()
-		break
-		case 'DATA_IS_STALE': 
+			break
+		case 'DATA_IS_STALE':
 		case 422:
 			setIsDataStale(true)
-		break
+			break
 	}
 
 	setSavingCommitsFlag(false)
@@ -51,8 +54,8 @@ orchestrator(createPR, async (message) => {
 	const { fileData } = message
 
 	let resp = await repoServices('createPR', fileData)
-	if(resp.ok === false) {
-		handleError(resp, () => fileData[2]({error: true}))
+	if (resp.ok === false) {
+		handleError(resp, () => fileData[2]({ error: true }))
 	} else {
 		const store = getAppStore()
 		const nextWorkingBranches = store.userWorkingBranches.filter(
@@ -88,38 +91,38 @@ orchestrator(initializeGitData, async () => {
 	setIsDataStale(false)
 
 	let resp = await repoServices('getBranches')
-	if(resp.ok === false) {
+	if (resp.ok === false) {
 		handleError(resp)
 		return
 	}
-	
+
 	setBranchList(resp)
 
 	const userWorkingBranches = await repoServices('getUserWorkingBranches', [
 		resp,
 	])
-	
-	if(resp.ok === false) {
+
+	if (resp.ok === false) {
 		handleError(resp)
 		return
 	}
-	
+
 	setUserWorkingBranches(userWorkingBranches)
 
 	resp = await repoServices('getRepoFileData')
-	if(resp.ok === false) {
+	if (resp.ok === false) {
 		handleError(resp)
 		return
 	}
-	
+
 	setInitRepoFileData(resp)
 
 	resp = await repoServices('getIssues')
-	if(resp.ok === false) {
+	if (resp.ok === false) {
 		handleError(resp)
 		return
 	}
-	
+
 	setIssuesList(resp)
 
 	setIsDataRefreshing(false)
@@ -133,12 +136,12 @@ orchestrator(loadBranch, async (message) => {
 		'getRepoFileData',
 		`refs/heads/${branch.name}`
 	)
-	if(resp.ok === false) {
-		handleError(resp.status === 404 ? {...resp, status: 'DATA_IS_STALE'} : resp)
-	}
-	else {
+	if (resp.ok === false) {
+		handleError(
+			resp.status === 404 ? { ...resp, status: 'DATA_IS_STALE' } : resp
+		)
+	} else {
 		setUserWorkingBranch(branch.name)
-		setRepoFileChanges(resp)
 		setRepoFileData(resp)
 		clearLoadedPRData()
 	}
@@ -151,16 +154,17 @@ orchestrator(loadPR, async (message) => {
 	setIsDataRefreshing(true)
 	if (prNumber) {
 		const prResp = await repoServices('getPullRequests', prNumber)
-		if(prResp.ok === false) {
+		if (prResp.ok === false) {
 			handleError(prResp)
 			return
-		} 
+		}
 		setLoadedPRData(prResp)
 
 		const resp = await repoServices('getRepoFileData', prResp.data.head.sha)
-		if(resp.ok === false) {
+		if (resp.ok === false) {
 			handleError(resp)
 		} else {
+			setRepoFileChanges(resp)
 			setRepoFileData(resp)
 		}
 		setUserWorkingBranch(undefined)
@@ -173,11 +177,11 @@ orchestrator(saveContinue, async () => {
 	const store = getAppStore()
 	const changes = getChanges()
 	let branch = store.userWorkingBranch
-	let resp;
+	let resp
 
 	if (!branch) {
 		resp = await repoServices('createWorkingBranch')
-		if(resp.ok === false) {
+		if (resp.ok === false) {
 			handleError(resp)
 			return
 		}
@@ -190,11 +194,11 @@ orchestrator(saveContinue, async () => {
 		...changes,
 		branchName: `refs/heads/${branch}`,
 	})
-	if(resp.ok === false) {
+	if (resp.ok === false) {
 		handleError(resp)
 	} else {
 		resp = await repoServices('getRepoFileData', resp)
-		if(resp.ok === false) {
+		if (resp.ok === false) {
 			handleError(resp)
 		} else {
 			// latency :(

@@ -92,7 +92,9 @@ export const setLoadedPRData = mutatorAction(
 		const store = getAppStore()
 		if (prData) {
 			store.loadedPRData = prData.data
-			const deletedFiles = prData.commits.filter((c:any) => c.commit.message.startsWith('deleted')).map((c:any) => c.commit.message.replace('deleted ',''))
+			const deletedFiles = prData.commits
+				.filter((c: any) => c.commit.message.startsWith('deleted'))
+				.map((c: any) => c.commit.message.replace('deleted ', ''))
 			store.committedDeletes = deletedFiles
 			store.prChanges = {
 				last_commit: prData?.commits ? [...prData.commits].pop() : undefined,
@@ -138,11 +140,11 @@ export const setRepoFileChanges = mutatorAction(
 			const store = getAppStore()
 
 			const changes = compare(toJS(store.repoFileData), data[0])
-			debugger
+
 			store.repoFileChanges = changes
 			store.globalFileChanges = {
 				customStrings: data[1],
-				cdcStateNames: data[2],	
+				cdcStateNames: data[2],
 				cdcStateLinks: data[3],
 			}
 		}
@@ -293,15 +295,18 @@ export const deleteLocation = mutatorAction(
 		const store = getAppStore()
 		store.pendingChanges = true
 
-		if (isRegion && selectedState){
+		if (isRegion && selectedState) {
 			delete store.repoFileData[selectedState.key]?.regions?.[locationData.key]
-			// What else needs to be removed here? 
+			// What else needs to be removed here?
 			// Does something need to be saved?
-		}
-		else {
+		} else {
 			delete store.repoFileData[locationData.key]
-			delete store.globalFileData.cdcStateLinks.content[`cdc/${locationData.key}/state_link`]
-			delete store.globalFileData.cdcStateNames.content[`cdc/${locationData.key}/state_name`]
+			delete store.globalFileData.cdcStateLinks.content[
+				`cdc/${locationData.key}/state_link`
+			]
+			delete store.globalFileData.cdcStateNames.content[
+				`cdc/${locationData.key}/state_name`
+			]
 		}
 
 		store.repoFileData = { ...store.repoFileData }
