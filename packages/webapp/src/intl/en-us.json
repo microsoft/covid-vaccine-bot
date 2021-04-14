@@ -242,7 +242,7 @@
 	"LocationsPhases": {
 		"AddQualifierButton": "Add Qualifier",
 		"columns": {
-			"duplicate": "Dupliate",
+			"duplicate": "Duplicate",
 			"remove": "Remove",
 			"active": "Active Phase",
 			"setActive": "Set as Active"
