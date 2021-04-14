@@ -56,11 +56,20 @@
 		},
 		{
 			"id": "16",
-			"label": "16+",
+			"label": "16 and older",
 			"qualifications": [
 				{
 					"question": "c19.eligibility.question/age.16_up",
 					"moreInfoText": "c19.eligibility.moreinfo/age.16_up.ca.16"
+				}
+			]
+		},
+		{
+			"id": "18_and_older",
+			"label": "18 and older",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.are_you_age_18"
 				}
 			]
 		}
