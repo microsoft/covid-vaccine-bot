@@ -3427,59 +3427,9 @@ Other Public Health Workers (see [here](https://www.vdh.virginia.gov/covid-19-va
 | scheduling_phone | [1-888-856-5816](tel:1-888-856-5816) |
 
 
-## Washington Active Phase (1b_tier_4)
+## Washington Active Phase (2)
 
-* Are you a healthcare worker?
-* Are you age 60+?
-* Are you age 50+ and live in a multigenerational household?
-* Are you a long term care resident or work in a long term care facility?
-* Are you classified as an essential worker?
-	* This includes high-risk critical workers (those who work in an enclosed space around other people and cannot maintain physical distance) in the following industries: 
-- agriculture
-- fishing vessel crews
-- food processing
-- grocery store/food bank
-- corrections (prisons, jails, detention centers)
-- courts of law
-- public transit
-- remaining first responders
-- educators and school staff for pre-kindergarten through 12th grade and child care workers
-- restaurants
-- food services 
-- construction
-- manufacturing
-
-* Are you a person with a rare condition or disability that put you at higher risk?
-	* People with disabilities wondering about their eligibility should apply the definition to their situation: Does their disability put them at increased risk for COVID-19? They can also work with their health care provider to assess their eligibility. In particular, Down syndrome increases risk for severe illness and is on the CDC list. Research continues to emerge on other developmental and intellectual disabilities that put someone at increased risk, so these eligibility guidelines lean toward inclusiveness.
-
-People with disabilities are eligible in 1B tier 2 if:
-
-Their disability alone puts them at higher risk for severe illness from COVID-19 (e.g. Down syndrome).
-They have a disability that doesn't alone put them at higher risk but they also have another underlying condition from the CDC list. (e.g. A person who is deaf and has Type 2 diabetes). (see [here](https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html))
-* Are you currently pregnant?
-* Are you a veteran?
-	* VA Puget Sound is now providing Pfizer, Moderna, and Johnson & Johnson's Janssen vaccines depending on the site, which include:  Seattle, American Lake, Silverdale, Mount Vernon, and our Mobile Medical Unit. We continue to proactively contact Veterans to make vaccine appointments. Please, no walk-in vaccines, they are by appointment only. Eligible Veterans can also call us directly at 206-716-5716 to schedule, or contact their primary care team.
-* Are you age 16+, and have two or more high-risk medical conditions?
-	* This includes those who have two or more of the following:
-- Cancer
-- Chronic kidney disease
-- Chronic lung diseases, including COPD (chronic obstructive pulmonary disease), asthma (moderate-to-severe), interstitial lung disease, cystic fibrosis, and pulmonary hypertension
-- Dementia or other neurological conditions
-- Diabetes (type 1 or type 2)
-- Down syndrome
-- Heart conditions (such as heart failure, coronary artery disease, cardiomyopathies or hypertension)
-- HIV infection
-- Immunocompromised state (weakened immune system)
-- Liver disease
-- Overweight and obesity
-- Pregnancy
-- Sickle cell disease or thalassemia
-- Smoking, current or former
-- Solid organ or blood stem cell transplant
-- Stroke or cerebrovascular disease, which affects blood flow to the brain
-- Substance use disorders (see [here](https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html))
-* Do you work or live in a congregate setting?
-	* This includes people, staff, and volunteers in certain congregate living settings: correctional facilities; group homes for people with disabilities; settings where people experiencing homelessness live or access services
+* Are you age 16+?
 
 ## Washington Regions
 
