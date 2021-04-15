@@ -7,6 +7,8 @@ import { getText as t } from '../selectors/intlSelectors'
 import LocationDetails from './LocationDetails'
 import LocationStates from './LocationsStates'
 import { getAppStore } from '../store/store'
+import { useCallback } from 'react'
+import { getLocationData } from '../actions/repoActions'
 
 import './Locations.scss'
 import { getLocationsData } from '../selectors/locationSelectors'
@@ -15,7 +17,10 @@ import { getLocationsData } from '../selectors/locationSelectors'
 export default observer(function LocationsV2() {
 	const { locationsData } = getAppStore()
 
-	console.log(locationsData)
+	const getLocationsData = useCallback((item: any) => {
+		getLocationData(item)
+	},[])
+
 	return (
 		<div className="locationPageContainer">
 			<div className="bodyContainer">
@@ -27,7 +32,7 @@ export default observer(function LocationsV2() {
 				</div>
 				<div className="bodyContent">
 					<LocationDetails/>
-					<LocationStates onSelectedItem={() => null}/>
+					<LocationStates onSelectedItem={(item) => getLocationsData(item)}/>
 				</div>
 			</div>
 		</div>
