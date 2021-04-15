@@ -10,6 +10,7 @@ import {
 	utf8_to_b64,
 	createCSVDataString,
 } from '../utils/textUtils'
+import { throttle } from 'lodash'
 
 const githubRepoOwner = process.env.REACT_APP_REPO_OWNER
 const githubRepoName = process.env.REACT_APP_REPO_NAME
@@ -294,7 +295,12 @@ export const repoServices = async (
 					`${locationPolicyFolderData}?recursive=true`
 				)
 				const locationData: any = {}
-				for (const element of locationPolicyFolderResponse.tree) {
+				const locationPromiseArr: any[] = await Promise.all(locationPolicyFolderResponse.tree.map(async (element:any) => {
+					await getContent(String(element.url), String(state.accessToken))
+				}))
+
+				for (let i = 0; i < locationPromiseArr.length; i++) {
+					const element = locationPolicyFolderResponse.tree[i]
 					if (element.type === 'tree') {
 						createPath(locationData, element.path)
 					} else {
@@ -304,10 +310,11 @@ export const repoServices = async (
 						const fileType: string = fileName.split('.')[0]
 						const fileObj: any = {}
 
-						const fileData = await getContent(
-							String(element.url),
-							String(state.accessToken)
-						)
+						const fileData = locationPromiseArr[i]
+						// const fileData = await getContent(
+						// 	String(element.url),
+						// 	String(state.accessToken)
+						// )
 
 						switch (fileName.split('.')[1].toLowerCase()) {
 							case 'json':
