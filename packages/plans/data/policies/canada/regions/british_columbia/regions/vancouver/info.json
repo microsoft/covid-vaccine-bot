@@ -1,0 +1,9 @@
+{
+	"id": "vancouver",
+	"name": "Vancouver",
+	"type": "city",
+	"metadata": {
+		"code_alpha": "BC_Van",
+		"code_numeric": 2.11
+	}
+}

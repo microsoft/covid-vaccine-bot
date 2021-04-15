@@ -21,6 +21,7 @@ import {
 } from '../mutators/repoMutators'
 import { getText as t } from '../selectors/intlSelectors'
 import { getAppStore } from '../store/store'
+import { toProperCase } from '../utils/textUtils'
 import DeleteLocationForm from './DeleteLocationForm'
 import LocationForm from './LocationForm'
 
@@ -46,6 +47,7 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 	const selectedLocationItem = useRef<any>(null)
 
 	const state = getAppStore()
+
 	const filterEditable = (col: any) => {
 		if (state.isEditable) return true
 		else return col.key !== 'editCol' && col.key !== 'delete'
@@ -75,37 +77,53 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 	].filter(filterEditable)
 
 	useEffect(() => {
-		if (state.repoFileData) {
+		if (state.locationsData) {
 			const nextFilteredStateList: any[] = []
-			Object.entries(state.repoFileData).forEach(
-				([key, value]: [string, any]) => {
-					const stateId = value?.info?.content.id
-					const stateNames = state?.globalFileData?.cdcStateNames.content
-
-					if(!stateId)
-						return 
-
-					const stateLabel =
-						stateNames[`cdc/${stateId}/state_name`] &&
-						stateNames[`cdc/${stateId}/state_name`][state.currentLanguage] &&
-						stateNames[`cdc/${stateId}/state_name`][
-							state.currentLanguage
-						].trim() !== ''
-							? stateNames[`cdc/${stateId}/state_name`][state.currentLanguage]
-							: `${t('LocationsStates.translationNotFound')} (${stateId})`
-
-					nextFilteredStateList.push({
-						key: key,
-						text: stateLabel,
-						regions: value?.regions ? Object.keys(value.regions).length : 0,
-						value: value,
-					})
-				}
-			)
+			Object.entries(state.locationsData).forEach(([locName, locDetails]: [string, any]) => {
+				nextFilteredStateList.push({
+					key: locName,
+					text: locDetails?.info ? toProperCase(locDetails.info.content.name) : toProperCase(locName),
+					regions: locDetails?.regions ? Object.keys(locDetails.regions).length : 0,
+					value: locDetails
+				})
+			})
 			setFilteredStateList(nextFilteredStateList)
 			stateRepoFullList.current = nextFilteredStateList
 		}
-	}, [state.repoFileData, state.globalFileData, state.currentLanguage, stateRepoFullList])
+	},[state.locationsData])
+
+	// useEffect(() => {
+	// 	if (state.repoFileData) {
+	// 		const nextFilteredStateList: any[] = []
+	// 		Object.entries(state.repoFileData).forEach(
+	// 			([key, value]: [string, any]) => {
+	// 				const stateId = value?.info?.content.id
+	// 				const stateNames = state?.globalFileData?.cdcStateNames.content
+
+	// 				if(!stateId)
+	// 					return 
+
+	// 				const stateLabel =
+	// 					stateNames[`cdc/${stateId}/state_name`] &&
+	// 					stateNames[`cdc/${stateId}/state_name`][state.currentLanguage] &&
+	// 					stateNames[`cdc/${stateId}/state_name`][
+	// 						state.currentLanguage
+	// 					].trim() !== ''
+	// 						? stateNames[`cdc/${stateId}/state_name`][state.currentLanguage]
+	// 						: `${t('LocationsStates.translationNotFound')} (${stateId})`
+
+	// 				nextFilteredStateList.push({
+	// 					key: key,
+	// 					text: stateLabel,
+	// 					regions: value?.regions ? Object.keys(value.regions).length : 0,
+	// 					value: value,
+	// 				})
+	// 			}
+	// 		)
+	// 		setFilteredStateList(nextFilteredStateList)
+	// 		stateRepoFullList.current = nextFilteredStateList
+	// 	}
+	// }, [state.repoFileData, state.globalFileData, state.currentLanguage, stateRepoFullList])
 
 	const onStateFilter = useCallback(
 		(_event: any, text?: string) => {

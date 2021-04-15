@@ -281,6 +281,67 @@ export const repoServices = async (
 			case 'getIssues':
 				return await gitFetch(`issues`)
 
+			case 'getLocationFileData':
+				const locationFileDataQuery = !extraData
+					? `contents/packages/plans/data?ref=${process.env.REACT_APP_MAIN_BRANCH}`
+					: `contents/packages/plans/data?ref=${extraData}`
+
+				const fileDataFolderObj = await gitFetch(locationFileDataQuery)
+				const locationPolicyFolderData = fileDataFolderObj.find(
+					(folder: { name: string }) => folder.name === 'policies'
+				).git_url
+				const locationPolicyFolderResponse = await gitFetch(
+					`${locationPolicyFolderData}?recursive=true`
+				)
+				const locationData: any = {}
+				for (const element of locationPolicyFolderResponse.tree) {
+					if (element.type === 'tree') {
+						createPath(locationData, element.path)
+					} else {
+						const lastInstance = element.path.lastIndexOf('/')
+						const filePath = element.path.substring(0, lastInstance)
+						const fileName: string = element.path.substring(lastInstance + 1)
+						const fileType: string = fileName.split('.')[0]
+						const fileObj: any = {}
+
+						const fileData = await getContent(
+							String(element.url),
+							String(state.accessToken)
+						)
+
+						switch (fileName.split('.')[1].toLowerCase()) {
+							case 'json':
+								fileObj[fileType] = {
+									name: fileName,
+									type: fileType,
+									sha: element.sha,
+									url: element.url,
+									path: element.path,
+									content: JSON.parse(b64_to_utf8(fileData.content)),
+								}
+								break
+							case 'csv':
+								fileObj['strings'] = {
+									name: fileName,
+									type: fileType,
+									sha: element.sha,
+									url: element.url,
+									path: element.path,
+									content: convertCSVDataToObj(
+										parse(b64_to_utf8(fileData.content), { columns: true })
+									),
+								}
+
+								break
+						}
+
+						if (fileObj !== {}) {
+							createPath(locationData, filePath, fileObj)
+						}
+					}
+				}
+
+				return locationData
 			case 'getRepoFileData':
 				const query = !extraData
 					? `contents/packages/plans/data?ref=${process.env.REACT_APP_MAIN_BRANCH}`

@@ -33,4 +33,6 @@ export interface AppState {
 	committedDeletes: any[]
 	repoFileChanges: any
 	globalFileChanges: any
+	//restructured data objects
+	locationsData?: any
 }

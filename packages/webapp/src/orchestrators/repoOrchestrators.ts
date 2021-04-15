@@ -19,6 +19,7 @@ import {
 	setBranchList,
 	clearLoadedPRData,
 	setInitRepoFileData,
+	setInitLocationsData,
 	setRepoFileData,
 	setRepoFileChanges,
 	setIssuesList,
@@ -110,13 +111,13 @@ orchestrator(initializeGitData, async () => {
 
 	setUserWorkingBranches(userWorkingBranches)
 
-	resp = await repoServices('getRepoFileData')
+	resp = await repoServices('getLocationFileData')
 	if (resp.ok === false) {
 		handleError(resp)
 		return
 	}
 
-	setInitRepoFileData(resp)
+	setInitLocationsData(resp)
 
 	resp = await repoServices('getIssues')
 	if (resp.ok === false) {

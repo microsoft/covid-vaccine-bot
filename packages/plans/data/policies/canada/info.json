@@ -5,5 +5,11 @@
 	"metadata": {
 		"code_alpha": "CA",
 		"code_numeric": 2
+	},
+	"regionTypes": {
+		"province": "canada.regionType.province",
+		"territory": "canada.regionType.territory",
+		"city": "canada.regionType.city",
+		"town": "canada.regionType.town"
 	}
 }
