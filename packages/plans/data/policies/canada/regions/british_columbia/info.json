@@ -1,0 +1,9 @@
+{
+	"id": "british_columbia",
+	"name": "British Columbia",
+	"type": "province",
+	"metadata": {
+		"code_alpha": "BC",
+		"code_numeric": 2.1
+	}
+}
