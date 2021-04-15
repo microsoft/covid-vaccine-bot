@@ -16,6 +16,7 @@ export interface PlanResult {
 	links: Record<string, Link | undefined>
 	phase: RolloutPhase | undefined
 	noPhaseLabel: boolean
+	unknownPhase: boolean
 }
 
 export interface BingLocation {
