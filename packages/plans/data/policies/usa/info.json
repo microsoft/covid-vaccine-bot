@@ -1,9 +1,17 @@
 {
 	"id": "usa",
-	"name": "USA",
+	"name": "United States of America",
 	"type": "country",
 	"metadata": {
 		"code_alpha": "USA",
-		"code_numeric": 48
+		"code_numeric": 1
+	},
+	"regionTypes": {
+		"state": "usa.regionType.state",
+		"territory": "usa.regionType.territory",
+		"tribal_land": "usa.regionType.tribal_land",
+		"county": "usa.regionType.county",
+		"city": "usa.regionType.city",
+		"town": "usa.regionType.town"
 	}
 }

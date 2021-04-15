@@ -50,3 +50,16 @@ const getCustomStrings = (selectedState: any, keyFilter: string): any[] => {
 		}
 	})
 }
+
+
+export const getLocationsData = (location?: string): any => {
+	const { locationsData } = getAppStore()
+	if (locationsData) {
+		if (location) {
+			return locationsData[location]
+		} else {
+			return locationsData
+		}
+	}
+	return undefined
+}

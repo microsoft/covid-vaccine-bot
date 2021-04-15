@@ -10,6 +10,7 @@ import {
 	utf8_to_b64,
 	createCSVDataString,
 } from '../utils/textUtils'
+import { throttle } from 'lodash'
 
 const githubRepoOwner = process.env.REACT_APP_REPO_OWNER
 const githubRepoName = process.env.REACT_APP_REPO_NAME
@@ -281,6 +282,73 @@ export const repoServices = async (
 			case 'getIssues':
 				return await gitFetch(`issues`)
 
+			case 'getLocationFileData':
+				const locationFileDataQuery = !extraData
+					? `contents/packages/plans/data?ref=${process.env.REACT_APP_MAIN_BRANCH}`
+					: `contents/packages/plans/data?ref=${extraData}`
+
+				const fileDataFolderObj = await gitFetch(locationFileDataQuery)
+				const locationPolicyFolderData = fileDataFolderObj.find(
+					(folder: { name: string }) => folder.name === 'policies'
+				).git_url
+				const locationPolicyFolderResponse = await gitFetch(
+					`${locationPolicyFolderData}?recursive=true`
+				)
+				const locationData: any = {}
+				const locationPromiseArr: any[] = await Promise.all(locationPolicyFolderResponse.tree.map(async (element:any) => {
+					await getContent(String(element.url), String(state.accessToken))
+				}))
+
+				for (let i = 0; i < locationPromiseArr.length; i++) {
+					const element = locationPolicyFolderResponse.tree[i]
+					if (element.type === 'tree') {
+						createPath(locationData, element.path)
+					} else {
+						const lastInstance = element.path.lastIndexOf('/')
+						const filePath = element.path.substring(0, lastInstance)
+						const fileName: string = element.path.substring(lastInstance + 1)
+						const fileType: string = fileName.split('.')[0]
+						const fileObj: any = {}
+
+						const fileData = locationPromiseArr[i]
+						// const fileData = await getContent(
+						// 	String(element.url),
+						// 	String(state.accessToken)
+						// )
+
+						switch (fileName.split('.')[1].toLowerCase()) {
+							case 'json':
+								fileObj[fileType] = {
+									name: fileName,
+									type: fileType,
+									sha: element.sha,
+									url: element.url,
+									path: element.path,
+									content: JSON.parse(b64_to_utf8(fileData.content)),
+								}
+								break
+							case 'csv':
+								fileObj['strings'] = {
+									name: fileName,
+									type: fileType,
+									sha: element.sha,
+									url: element.url,
+									path: element.path,
+									content: convertCSVDataToObj(
+										parse(b64_to_utf8(fileData.content), { columns: true })
+									),
+								}
+
+								break
+						}
+
+						if (fileObj !== {}) {
+							createPath(locationData, filePath, fileObj)
+						}
+					}
+				}
+
+				return locationData
 			case 'getRepoFileData':
 				const query = !extraData
 					? `contents/packages/plans/data?ref=${process.env.REACT_APP_MAIN_BRANCH}`

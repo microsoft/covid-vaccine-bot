@@ -1,0 +1,9 @@
+{
+	"id": "east_vancouver",
+	"name": "East Vancouver",
+	"type": "subcity",
+	"metadata": {
+		"code_alpha": "BC_Van_East",
+		"code_numeric": 2.111
+	}
+}

@@ -36,7 +36,9 @@ export const initialStore = {
 	defaultLanguage: {},
 	committedDeletes: [],
 	repoFileChanges: {},
-	globalFileChanges: {}
+	globalFileChanges: {},
+	//restructured data
+	locationsData: undefined
 }
 
 export const getAppState = (): AppState => {
