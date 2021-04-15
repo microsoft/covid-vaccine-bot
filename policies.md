@@ -2712,13 +2712,7 @@ The list of frontline workers includes:
 | scheduling_phone | [680-488-0555](tel:680-488-0555) |
 
 
-## Palau Active Phase (1b)
-
-* Are you a healthcare worker?
-	* This includes homebound patient caregivers
-* Are you a long term care resident or work in a long term care facility?
-* Are you a first responder?
-* Are you age 75+?
+## Palau Active Phase (unknown)
 
 # Pennsylvania
 
