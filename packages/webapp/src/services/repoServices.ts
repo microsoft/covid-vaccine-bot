@@ -282,6 +282,91 @@ export const repoServices = async (
 			case 'getIssues':
 				return await gitFetch(`issues`)
 
+			case 'getLocations':
+				const locationsQuery = !extraData
+					? `contents/packages/plans/data/policies?ref=${process.env.REACT_APP_MAIN_BRANCH}`
+					: `contents/packages/plans/data/policies?ref=${extraData}`
+				const locationPoliciesResp = await gitFetch(locationsQuery)
+				const policiesFiles:any = {}
+				for (const location of locationPoliciesResp) {
+					const locationContents = await gitFetch(`${location.git_url}`)
+					const regionsTree = locationContents.tree.find((r:any) => r.path === 'regions' && r.type === 'tree')
+
+					let numRegions = 0
+					if (regionsTree) {
+						const regionContents = await gitFetch(regionsTree.url)
+						numRegions = regionContents?.tree.length || 0
+					}
+
+					policiesFiles[location.name] = {
+							content_url: locationContents.url,
+							num_of_regions: numRegions
+					}
+				}
+
+				return policiesFiles
+			case 'getLocationContents':
+				const locationContent = await gitFetch(extraData)
+				//const regionsTree = locationContent.tree.find((r:any) => r.path === 'regions' && r.type === 'tree')
+				const regionsTree = locationContent.tree
+
+				let numRegions = 0
+				const locationData2: any = {}
+				if (regionsTree) {
+					const regionContents = await gitFetch(regionsTree.url)
+					numRegions = regionContents?.tree.length || 0
+
+					const locationPromiseArr: any[] = await Promise.all(regionContents.tree.map(async (element:any) => {
+						await getContent(String(element.url), String(state.accessToken))
+					}))
+	
+					for (let i = 0; i < locationPromiseArr.length; i++) {
+						const element = regionContents.tree[i]
+						if (element.type === 'tree') {
+							createPath(locationData2, element.path)
+						} else {
+							const lastInstance = element.path.lastIndexOf('/')
+							const filePath = element.path.substring(0, lastInstance)
+							const fileName: string = element.path.substring(lastInstance + 1)
+							const fileType: string = fileName.split('.')[0]
+							const fileObj: any = {}
+	
+							const fileData = locationPromiseArr[i]
+							
+	
+							switch (fileName.split('.')[1].toLowerCase()) {
+								case 'json':
+									fileObj[fileType] = {
+										name: fileName,
+										type: fileType,
+										sha: element.sha,
+										url: element.url,
+										path: element.path,
+										content: JSON.parse(b64_to_utf8(fileData.content)),
+									}
+									break
+								case 'csv':
+									fileObj['strings'] = {
+										name: fileName,
+										type: fileType,
+										sha: element.sha,
+										url: element.url,
+										path: element.path,
+										content: convertCSVDataToObj(
+											parse(b64_to_utf8(fileData.content), { columns: true })
+										),
+									}
+	
+									break
+							}
+	
+							if (fileObj !== {}) {
+								createPath(locationData2, filePath, fileObj)
+							}
+						}
+					}
+				}
+				return locationData2
 			case 'getLocationFileData':
 				const locationFileDataQuery = !extraData
 					? `contents/packages/plans/data?ref=${process.env.REACT_APP_MAIN_BRANCH}`

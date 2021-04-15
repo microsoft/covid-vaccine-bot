@@ -10,6 +10,7 @@ import {
 	loadPR,
 	loadBranch,
 	saveContinue,
+	getLocationData,
 } from '../actions/repoActions'
 import {
 	setUserAccessExpired,
@@ -111,7 +112,7 @@ orchestrator(initializeGitData, async () => {
 
 	setUserWorkingBranches(userWorkingBranches)
 
-	resp = await repoServices('getLocationFileData')
+	resp = await repoServices('getLocations')
 	if (resp.ok === false) {
 		handleError(resp)
 		return
@@ -221,4 +222,12 @@ orchestrator(saveContinue, async () => {
 	}
 
 	setSavingCommitsFlag(false)
+})
+
+
+orchestrator(getLocationData, async (message) => {
+	const { location } = message
+	console.log(location)
+	const resp = await repoServices('getLocationContents', location.value)
+	console.log(resp)
 })
