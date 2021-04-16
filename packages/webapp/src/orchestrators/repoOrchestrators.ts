@@ -32,6 +32,7 @@ import {
 	setIsDataRefreshing,
 	setIsDataStale,
 	setSavingCommitsFlag,
+	setLocationData,
 } from '../mutators/repoMutators'
 import { getChanges } from '../selectors/changesSelectors'
 import { repoServices } from '../services/repoServices'
@@ -112,7 +113,7 @@ orchestrator(initializeGitData, async () => {
 
 	setUserWorkingBranches(userWorkingBranches)
 
-	resp = await repoServices('getLocations')
+	resp = await repoServices('getRootLocations')
 	if (resp.ok === false) {
 		handleError(resp)
 		return
@@ -227,7 +228,10 @@ orchestrator(saveContinue, async () => {
 
 orchestrator(getLocationData, async (message) => {
 	const { location } = message
-	console.log(location)
-	const resp = await repoServices('getLocationContents', location.value)
-	console.log(resp)
+	setIsDataRefreshing(true)
+
+	const resp = await repoServices('getLocationContents', location)
+	setLocationData(location.key, resp)
+	
+	setIsDataRefreshing(false)
 })

@@ -167,7 +167,7 @@ export const setInitRepoFileData = mutatorAction(
 	'setInitRepoFileData',
 	(data: any[] | undefined) => {
 		if (data) {
-			const store = getAppStore()
+			// const store = getAppStore()
 			//store.locationsData = data[0]
 			// const locObj = Object.keys(data).reduce((a, k) => {
 			// 	return {
@@ -179,6 +179,22 @@ export const setInitRepoFileData = mutatorAction(
 			// }, {})
 
 			//console.log(data, store.locationsData)
+		}
+	}
+)
+
+export const setLocationData = mutatorAction(
+	'setLocationData',
+	(key: string, data: any | undefined) => {
+		if (data) {
+			const store = getAppStore()
+			store.locationsData = {
+				...store.locationsData,
+				[key]: {
+					...store.locationsData[key],
+					...data
+				}
+			}
 		}
 	}
 )
