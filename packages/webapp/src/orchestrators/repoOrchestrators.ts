@@ -113,13 +113,13 @@ orchestrator(initializeGitData, async () => {
 
 	setUserWorkingBranches(userWorkingBranches)
 
-	resp = await repoServices('getRootLocations')
+	resp = await repoServices('getRepoFileData')
 	if (resp.ok === false) {
 		handleError(resp)
 		return
 	}
 
-	setInitLocationsData(resp)
+	setInitRepoFileData(resp)
 
 	resp = await repoServices('getIssues')
 	if (resp.ok === false) {

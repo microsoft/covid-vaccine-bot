@@ -135,12 +135,8 @@ export const setRepoFileData = mutatorAction(
 	(data: any[] | undefined) => {
 		if (data) {
 			const store = getAppStore()
-			store.repoFileData = data[0]
-			store.globalFileData = {
-				customStrings: data[1],
-				cdcStateNames: data[2],
-				cdcStateLinks: data[3],
-			}
+			store.repoFileData = data
+
 		}
 	}
 )
@@ -165,20 +161,11 @@ export const setRepoFileChanges = mutatorAction(
 
 export const setInitRepoFileData = mutatorAction(
 	'setInitRepoFileData',
-	(data: any[] | undefined) => {
+	(data: any | undefined) => {
 		if (data) {
-			// const store = getAppStore()
-			//store.locationsData = data[0]
-			// const locObj = Object.keys(data).reduce((a, k) => {
-			// 	return {
-			// 		...a,
-			// 		[k]: {
-			// 			info: data[k].info
-			// 		}
-			// 	}
-			// }, {})
-
-			//console.log(data, store.locationsData)
+			const store = getAppStore()
+			store.repoFileData = data
+			store.initRepoFileData = data
 		}
 	}
 )

@@ -83,8 +83,8 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 				nextFilteredStateList.push({
 					key: locName,
 					text: locDetails?.info ? toProperCase(locDetails.info.content.name) : toProperCase(locName),
-					regions: locDetails?.num_of_regions || 0,
-					value: locDetails.content_url
+					regions: locDetails?.regions ? Object.keys(locDetails.regions).length : 0,
+					value: locDetails
 				})
 			})
 			setFilteredStateList(nextFilteredStateList)

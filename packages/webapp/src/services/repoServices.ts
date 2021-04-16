@@ -32,6 +32,8 @@ const createPath = (obj: any, pathInput: string, value: any = undefined) => {
 	}
 }
 
+
+
 export const gitFetch = async (url: string, options: any = {}) => {
 	const { headers, json = true, ..._options } = options
 	const { accessToken } = getAppStore()
@@ -83,36 +85,6 @@ const createWorkingBranch = async (state: any, branchName: string) => {
 			}),
 		})
 	else return undefined
-}
-
-export const parseFile = async (file: any) => {
-	const lastInstance = file.path.lastIndexOf('/')
-	const fileName: string = file.path.substring(lastInstance + 1)
-	const fileType: string = fileName.split('.')[0]
-	const fileExtension = fileName.split('.')[1]?.toLowerCase()
-
-	if(fileExtension !== 'json' && fileExtension !== 'csv') 
-		return {}
-
-	const isJSON = fileExtension === 'json'
-	const storeAttr = isJSON ? fileType : 'strings';
-	const fileData = await gitFetch(
-		String(file.url),
-		{json: true}
-	)
-	
-	return {
-		[storeAttr]: {
-			name: fileName,
-			type: fileType,
-			sha: file.sha,
-			url: file.url,
-			path: file.path,
-			content: !fileName.split('.')[1] ? undefined : isJSON ? JSON.parse(b64_to_utf8(fileData.content)) : convertCSVDataToObj(
-				parse(b64_to_utf8(fileData.content), { columns: true })
-			),
-		}
-	}
 }
 
 const commitChanges = async (
@@ -310,76 +282,6 @@ export const repoServices = async (
 			case 'getIssues':
 				return await gitFetch(`issues`)
 
-			case 'getRootLocations':
-				const locationsQuery = !extraData
-					? `contents/packages/plans/data/policies?ref=${process.env.REACT_APP_MAIN_BRANCH}`
-					: `contents/packages/plans/data/policies?ref=${extraData}`
-				const locationPoliciesResp = await gitFetch(locationsQuery)
-				const policiesFiles:any = {}
-				for (const location of locationPoliciesResp) {
-					const locationContents = await gitFetch(`${location.git_url}`)
-					const regionsTree = locationContents.tree.find((r:any) => r.path === 'regions' && r.type === 'tree')
-
-					let numRegions = 0
-					if (regionsTree) {
-						const regionContents = await gitFetch(regionsTree.url)
-						numRegions = regionContents?.tree.length || 0
-					}
-
-					policiesFiles[location.name] = {
-							content_url: locationContents.url,
-							num_of_regions: numRegions
-					}
-				}
-
-				return policiesFiles
-			case 'getLocationContents':
-				const location = extraData
-				const content = await gitFetch(location.value)
-				const locationDirectory = content.tree
-				let locationContent: any = {}
-				
-				for(let i = 0; i < locationDirectory.length; i ++) {
-					const element = locationDirectory[i]
-
-					if(element.type === 'tree'){
-						// Load all regions one level deep
-						const locationRegions = await gitFetch(element.url)
-						const regionsList = []
-						
-						for(const region of locationRegions.tree) {
-							// get each region
-							let _region = await gitFetch(region.url)
-
-							let regionObj = {}
-							for(const regionFile of _region.tree) {
-								if(regionFile.type !== 'tree') {
-									const parsedFile = await parseFile(regionFile)
-									regionObj = {
-										...regionObj,
-										...parsedFile
-									}
-								} else {
-									regionObj = {
-										...regionObj,
-										regions: regionFile
-									}
-								}
-							}
-
-							regionsList.push(regionObj)
-						}
-						
-						locationContent.regions = regionsList
-					} else {
-						locationContent = {
-							...locationContent,
-							...await parseFile(element)
-						}
-					}
-				}
-
-				return locationContent
 			case 'getRepoFileData':
 				const query = !extraData
 					? `contents/packages/plans/data?ref=${process.env.REACT_APP_MAIN_BRANCH}`
@@ -394,7 +296,8 @@ export const repoServices = async (
 				)
 				const policyFolderData = loadPolicyFolderResponse
 				const stateData: any = {}
-				policyFolderData.tree.forEach(async (element: any) => {
+
+				policyFolderData.tree.forEach((element: any) => {
 					if (element.type === 'tree') {
 						createPath(stateData, element.path)
 					} else {
@@ -404,20 +307,17 @@ export const repoServices = async (
 						const fileType: string = fileName.split('.')[0]
 						const fileObj: any = {}
 
-						const fileData = await getContent(
-							String(element.url),
-							String(state.accessToken)
-						)
-
 						switch (fileName.split('.')[1].toLowerCase()) {
 							case 'json':
+
+
 								fileObj[fileType] = {
 									name: fileName,
 									type: fileType,
 									sha: element.sha,
 									url: element.url,
 									path: element.path,
-									content: JSON.parse(b64_to_utf8(fileData.content)),
+									content: null
 								}
 								break
 							case 'md':
@@ -427,8 +327,7 @@ export const repoServices = async (
 									sha: element.sha,
 									url: element.url,
 									path: element.path,
-									content: b64_to_utf8(fileData.content),
-								}
+									content: null }
 
 								break
 							case 'csv':
@@ -438,9 +337,7 @@ export const repoServices = async (
 									sha: element.sha,
 									url: element.url,
 									path: element.path,
-									content: convertCSVDataToObj(
-										parse(b64_to_utf8(fileData.content), { columns: true })
-									),
+									content: null
 								}
 
 								break
@@ -452,57 +349,32 @@ export const repoServices = async (
 					}
 				})
 
-				const localizationFolderGitUrl = dataFolderObj.find(
-					(folder: { name: string }) => folder.name === 'localization'
-				).git_url
+				for( const element of Object.keys(stateData)) {
+					const location = stateData[element]
 
-				const localizationResponse = await gitFetch(
-					`${localizationFolderGitUrl}?recursive=true`
-				)
+					const infoData = await getContent(
+						String(location.info.url),
+						String(state.accessToken)
+					)
 
-				const customStrings = localizationResponse.tree.find(
-					(file: { path: string }) => file.path === 'custom-strings.csv'
-				)
-				const cdcStateNames = localizationResponse.tree.find(
-					(file: { path: string }) => file.path === 'cdc-state-names.csv'
-				)
-				const cdcStateLinks = localizationResponse.tree.find(
-					(file: { path: string }) => file.path === 'cdc-state-links.csv'
-				)
+					const stringsData = await getContent(
+						String(location.strings.url),
+						String(state.accessToken)
+					)
 
-				let customStringsData: any = {}
-				let cdcStateNamesData: any = {}
-				let cdcStateLinksData: any = {}
+					const vaccinationData = await getContent(
+						String(location.vaccination.url),
+						String(state.accessToken)
+					)
 
-				const customStringsDataParse = await getContent(
-					String(customStrings.url),
-					String(state.accessToken)
-				)
-				customStringsData = convertCSVDataToObj(
-					parse(b64_to_utf8(customStringsDataParse.content), { columns: true })
-				)
 
-				const cdcStateNamesDataParse = await getContent(
-					String(cdcStateNames.url),
-					String(state.accessToken)
-				)
-				cdcStateNamesData = convertCSVDataToObj(
-					parse(b64_to_utf8(cdcStateNamesDataParse.content), { columns: true })
-				)
+					location.info.content = JSON.parse(b64_to_utf8(infoData.content))
+					location.strings.content = convertCSVDataToObj(parse(b64_to_utf8(stringsData.content), { columns: true }))
+					location.vaccination.content = JSON.parse(b64_to_utf8(vaccinationData.content))
 
-				const cdcStateLinksDataParse = await getContent(
-					String(cdcStateLinks.url),
-					String(state.accessToken)
-				)
-				cdcStateLinksData = convertCSVDataToObj(
-					parse(b64_to_utf8(cdcStateLinksDataParse.content), { columns: true })
-				)
+				}
 
-				customStrings['content'] = customStringsData
-				cdcStateNames['content'] = cdcStateNamesData
-				cdcStateLinks['content'] = cdcStateLinksData
-
-				return [stateData, customStrings, cdcStateNames, cdcStateLinks]
+				return stateData
 
 			case 'createWorkingBranch':
 				if (state.mainBranch) {

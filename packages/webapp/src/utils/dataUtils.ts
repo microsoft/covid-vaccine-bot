@@ -26,6 +26,13 @@ export const convertCSVDataToObj = (csvData: any): any => {
 	return returnObj
 }
 
+export const pathFind = (obj:any, path:string[]): any =>{
+    for (var i=0; i<path.length; i++){
+        obj = obj[path[i]];
+    };
+    return obj;
+};
+
 export const createLocationDataObj = (locationData: any): any => {
 	const locationName = locationData.details
 		.replace(/[^a-z0-9\s]/gi, '')
