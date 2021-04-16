@@ -376,6 +376,27 @@ export const repoServices = async (
 
 				return stateData
 
+			case 'getLocationData':
+				const location = extraData
+				const infoData = await getContent(
+					String(location.info.url),
+					String(state.accessToken)
+				)
+
+				const stringsData = await getContent(
+					String(location.strings.url),
+					String(state.accessToken)
+				)
+
+				const vaccinationData = await getContent(
+					String(location.vaccination.url),
+					String(state.accessToken)
+				)
+
+				location.info.content = JSON.parse(b64_to_utf8(infoData.content))
+				location.strings.content = convertCSVDataToObj(parse(b64_to_utf8(stringsData.content), { columns: true }))
+				location.vaccination.content = JSON.parse(b64_to_utf8(vaccinationData.content))
+				return location
 			case 'createWorkingBranch':
 				if (state.mainBranch) {
 					return await createWorkingBranch(state, branchName)

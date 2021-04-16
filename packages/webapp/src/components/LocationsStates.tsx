@@ -28,11 +28,12 @@ import LocationForm from './LocationForm'
 import './Locations.scss'
 
 export interface LocationsStatesProp {
+	locationList: any
 	onSelectedItem: (item: any) => void
 }
 
 export default observer(function LocationsStates(props: LocationsStatesProp) {
-	const { onSelectedItem } = props
+	const { onSelectedItem, locationList } = props
 
 	const [
 		isLocationModalOpen,
@@ -77,12 +78,13 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 	].filter(filterEditable)
 
 	useEffect(() => {
-		if (state.locationsData) {
+		if (locationList) {
 			const nextFilteredStateList: any[] = []
-			Object.entries(state.locationsData).forEach(([locName, locDetails]: [string, any]) => {
+			Object.entries(locationList).forEach(([locName, locDetails]: [string, any]) => {
+				console.log(locName, locDetails)
 				nextFilteredStateList.push({
 					key: locName,
-					text: locDetails?.info ? toProperCase(locDetails.info.content.name) : toProperCase(locName),
+					text: locDetails?.info?.content ? toProperCase(locDetails.info.content.name) : toProperCase(locName),
 					regions: locDetails?.regions ? Object.keys(locDetails.regions).length : 0,
 					value: locDetails
 				})
@@ -90,7 +92,7 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 			setFilteredStateList(nextFilteredStateList)
 			stateRepoFullList.current = nextFilteredStateList
 		}
-	},[state.locationsData])
+	},[locationList])
 
 	// useEffect(() => {
 	// 	if (state.repoFileData) {

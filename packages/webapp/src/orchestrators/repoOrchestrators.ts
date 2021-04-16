@@ -227,11 +227,11 @@ orchestrator(saveContinue, async () => {
 
 
 orchestrator(getLocationData, async (message) => {
-	const { location } = message
+	const { location, loaded, pathArray } = message
 	setIsDataRefreshing(true)
 
-	const resp = await repoServices('getLocationContents', location)
-	setLocationData(location.key, resp)
-	
+	const resp = await repoServices('getLocationData', location)
+	setLocationData(resp, pathArray)
+	loaded?.()
 	setIsDataRefreshing(false)
 })

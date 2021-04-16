@@ -22,6 +22,8 @@ export const loadBranch = action('loadBranch', (branch: any) => ({
 
 export const saveContinue = action('saveContinue')
 
-export const getLocationData = action('getLocationData', (location: any) => ({
+export const getLocationData = action('getLocationData', (location: any, pathArray: any[], loaded: () => void) => ({
 	location,
+	pathArray,
+	loaded,
 }))

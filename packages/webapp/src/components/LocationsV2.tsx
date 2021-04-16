@@ -12,14 +12,11 @@ import { getLocationData } from '../actions/repoActions'
 import {pathFind} from '../utils/dataUtils'
 
 import './Locations.scss'
-import { getLocationsData } from '../selectors/locationSelectors'
-
 
 export default observer(function LocationsV2() {
 
-	const { locationsData, isDataRefreshing, repoFileData } = getAppStore()
-	const [ currentLocationList, setCurrentLocationList ] = useState<any>( repoFileData)
-	console.log(repoFileData)
+	const { isDataRefreshing, repoFileData } = getAppStore()
+	const [ currentLocationList, setCurrentLocationList ] = useState<any>(repoFileData)
 
 	const getLocationsData = useCallback((item: any) => {
 		const pathArray = item.value.info.path.split("/")
@@ -28,14 +25,17 @@ export default observer(function LocationsV2() {
 		const currLocation = pathFind(repoFileData, pathArray)
 			// check all region objects to see if data is loaded
 				// load if not already loaded
+		if (!currLocation.info.content) {
+				getLocationData(currLocation, pathArray, () => {
+					console.log('data loaded')
+				})
+		}
+		
+		console.log(currLocation)
+		if (currLocation?.regions) {
+			setCurrentLocationList(currLocation.regions)
+		}
 
-
-		// getLocationData(item, () => {
-		// 	console.log(`${item.key} data loaded`, repoFileData[item.key])
-			// if (repoFileData[item.key]?.regions) {
-			// 	setCurrentLocationList(repoFileData[item.key].regions)
-			// }
-		// })
 	},[repoFileData])
 
 	return (
@@ -49,7 +49,7 @@ export default observer(function LocationsV2() {
 				</div>
 				<div className="bodyContent">
 					<LocationDetails/>
-					<LocationStates onSelectedItem={(item) => getLocationsData(item)}/>
+					<LocationStates locationList={currentLocationList} onSelectedItem={(item) => getLocationsData(item)}/>
 				</div>
 			</div>
 		</div>

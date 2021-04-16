@@ -172,16 +172,14 @@ export const setInitRepoFileData = mutatorAction(
 
 export const setLocationData = mutatorAction(
 	'setLocationData',
-	(key: string, data: any | undefined) => {
+	(data: any, pathArray: any[]) => {
 		if (data) {
 			const store = getAppStore()
-			store.locationsData = {
-				...store.locationsData,
-				[key]: {
-					...store.locationsData[key],
-					...data
-				}
-			}
+			// for (let i=0; i < pathArray.length; i++){
+			// 	//obj = obj[path[i]];
+			// 	store.repoFileData[pathArray[i]] = data
+			// };
+			// //return obj;
 		}
 	}
 )

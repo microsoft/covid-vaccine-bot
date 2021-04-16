@@ -19,7 +19,7 @@ export default observer(function Locations() {
 	return (
 		<div className="locationPageContainer">
 			{!selectedState ? (
-				<LocationsStates onSelectedItem={setSelectedState} />
+				<LocationsStates locationList={null} onSelectedItem={setSelectedState} />
 			) : (
 				<LocationsRegions
 					selectedState={selectedState}
