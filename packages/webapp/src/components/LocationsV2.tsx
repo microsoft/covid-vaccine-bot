@@ -17,24 +17,35 @@ export default observer(function LocationsV2() {
 
 	const { isDataRefreshing, repoFileData } = getAppStore()
 	const [ currentLocationList, setCurrentLocationList ] = useState<any>(repoFileData)
+	const [ currentLocation, setCurrentLocation ] = useState<any>()
 
-	const getLocationsData = useCallback((item: any) => {
+	const getLocationsData = useCallback(async (item: any) => {
 		const pathArray = item.value.info.path.split("/")
 		pathArray.splice(-1,1)
 
 		const currLocation = pathFind(repoFileData, pathArray)
-			// check all region objects to see if data is loaded
-				// load if not already loaded
-		if (!currLocation.info.content) {
-				getLocationData(currLocation, pathArray, () => {
-					console.log('data loaded')
-				})
-		}
+
+		console.log("currLocation", currLocation)
+		// if (!currLocation.info.content) {
+		// 		getLocationData(currLocation, pathArray, () => {
+		// 			console.log('data loaded')
+		// 		})
+		// }
+
+
 		
-		console.log(currLocation)
 		if (currLocation?.regions) {
+			for (const [key, value] of Object.entries(currLocation?.regions)) {
+				const location = value as any
+				if(!location.info.content || !location.strings.content || !location.vaccination.content )
+				{
+					console.log(location)
+					await getLocationData(location)
+				}
+			setCurrentLocation(currLocation)
 			setCurrentLocationList(currLocation.regions)
 		}
+	}
 
 	},[repoFileData])
 
@@ -48,7 +59,9 @@ export default observer(function LocationsV2() {
 					</div>
 				</div>
 				<div className="bodyContent">
-					<LocationDetails/>
+					{currentLocation && (
+						<div> {currentLocation.info.content.name} </div>
+					)}
 					<LocationStates locationList={currentLocationList} onSelectedItem={(item) => getLocationsData(item)}/>
 				</div>
 			</div>

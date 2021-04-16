@@ -378,24 +378,50 @@ export const repoServices = async (
 
 			case 'getLocationData':
 				const location = extraData
-				const infoData = await getContent(
-					String(location.info.url),
-					String(state.accessToken)
-				)
 
-				const stringsData = await getContent(
-					String(location.strings.url),
-					String(state.accessToken)
-				)
+				const pathArray = location.info.path.split("/")
+				pathArray.splice(-1,1)
+				const pathStr = pathArray.join("/")
 
-				const vaccinationData = await getContent(
-					String(location.vaccination.url),
-					String(state.accessToken)
-				)
+				if(location.info){
 
-				location.info.content = JSON.parse(b64_to_utf8(infoData.content))
-				location.strings.content = convertCSVDataToObj(parse(b64_to_utf8(stringsData.content), { columns: true }))
-				location.vaccination.content = JSON.parse(b64_to_utf8(vaccinationData.content))
+						const infoData = await getContent(
+						String(location.info.url),
+						String(state.accessToken)
+					)
+
+					location.info.content = JSON.parse(b64_to_utf8(infoData.content))
+
+				} 
+
+				if(location.strings){
+				
+					const stringsData = await getContent(
+						String(location.strings.url),
+						String(state.accessToken)
+					)
+
+					location.strings.content = convertCSVDataToObj(parse(b64_to_utf8(stringsData.content), { columns: true }))
+
+				} else {
+					location.strings = {
+											name: location.info.content.id+'.csv',
+											path: `${pathStr}/${location.info.content.id}.csv`,
+											sha: '',
+											type: location.info.content.id ,
+											url: '', 
+											content: {} 
+										}
+				}
+
+				if(location.vaccination){
+					const vaccinationData = await getContent(
+						String(location.vaccination.url),
+						String(state.accessToken)
+						)
+						location.vaccination.content = JSON.parse(b64_to_utf8(vaccinationData.content))
+				}
+
 				return location
 			case 'createWorkingBranch':
 				if (state.mainBranch) {

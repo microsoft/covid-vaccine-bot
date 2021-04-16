@@ -6,7 +6,7 @@ import { toJS } from 'mobx'
 import { mutatorAction } from 'satcheljs'
 import { getText as t } from '../selectors/intlSelectors'
 import { getAppStore } from '../store/store'
-import { createLocationDataObj, compare } from '../utils/dataUtils'
+import { createLocationDataObj, compare, pathFind } from '../utils/dataUtils'
 import { formatId } from '../utils/textUtils'
 
 export const setIsDataRefreshing = mutatorAction(
@@ -172,9 +172,22 @@ export const setInitRepoFileData = mutatorAction(
 
 export const setLocationData = mutatorAction(
 	'setLocationData',
-	(data: any, pathArray: any[]) => {
+	(data: any) => {
 		if (data) {
 			const store = getAppStore()
+
+			console.log("location data", data)
+
+			const pathArray = data.info.path.split("/")
+			pathArray.splice(-1,1)
+
+			const currLocation = pathFind(store.repoFileData, pathArray)
+
+			currLocation.info.content = data.info.content
+			currLocation.strings.content = data.strings.content
+			currLocation.vaccination.content = data.vaccination.content
+
+
 			// for (let i=0; i < pathArray.length; i++){
 			// 	//obj = obj[path[i]];
 			// 	store.repoFileData[pathArray[i]] = data
