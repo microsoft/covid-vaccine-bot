@@ -215,13 +215,10 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 	return (
 		<>
 			<section className="LocationsStatesComponent">
-				<div className="locationsStatesSectionHeader">{t('LocationsRegions.Sublocations.title')}</div>
-				<div className="searchRow">
-					<SearchBox
-						styles={{ root: { width: 400 } }}
-						placeholder={t('LocationsStates.SearchBox.placeholder')}
-						onChange={(ev, text) => onStateFilter(ev, text)}
-					/>
+				<div className="locationsStatesSectionHeader">
+					<div>
+						{t('LocationsRegions.Sublocations.title')}
+					</div>
 					{state.isEditable && (
 						<div
 							className="addLocationHeaderButton"
@@ -234,6 +231,13 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 							{t('LocationsStates.addLocation')}
 						</div>
 					)}
+				</div>
+				<div className="searchRow">
+					<SearchBox
+						styles={{ root: { width: 400 } }}
+						placeholder={t('LocationsStates.SearchBox.placeholder')}
+						onChange={(ev, text) => onStateFilter(ev, text)}
+					/>
 				</div>
 				<DetailsList
 					items={filteredStateList}
