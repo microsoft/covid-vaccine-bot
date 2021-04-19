@@ -24,11 +24,11 @@ export default observer(function LocationsBreadcrumbs(props: LocationsBreadcrumb
                         if (idx === 0) {
                             return (
                                 <>
-                                    <div className="breadCrumbsLink" onClick={() => navigateBack('root')}>/ Locations</div>
+                                    <div key={'root'} className="breadCrumbsLink" onClick={() => navigateBack('root')}>/ Locations</div>
                                     {Object.keys(breadcrumbs).length < 2 ? (
                                         <div className="breadCrumbsNonLink" key={idx}>{`/ ${breadcrumbs[key].value.info.content.name}`}</div>
                                     ): (
-                                        <div className="breadCrumbsLink" onClick={() => navigateBack(breadcrumbs[key])}>{`/ ${breadcrumbs[key].value.info.content.name}`}</div>
+                                        <div key={idx} className="breadCrumbsLink" onClick={() => navigateBack(breadcrumbs[key])}>{`/ ${breadcrumbs[key].value.info.content.name}`}</div>
                                     )}
                                 </>
                             )
