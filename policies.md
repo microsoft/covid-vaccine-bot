@@ -3067,38 +3067,9 @@ What you should know:
 | scheduling_phone | [855-722-7878](tel:855-722-7878) |
 
 
-## Vermont Active Phase (1c)
+## Vermont Active Phase (2)
 
-* Are you a healthcare worker? (see [here](https://www.healthvermont.gov/covid-19/vaccine/getting-covid-19-vaccine#eligiblenow))
-* Are you a long term care resident or work in a long term care facility? (see [here](https://www.healthvermont.gov/covid-19/vaccine/getting-covid-19-vaccine#eligiblenow))
-* Are you a K-12 educator or work in a licensed child care facility? (see [here](https://apps.health.vermont.gov/COVID/faq/#4837))
-* Are you age 16+, and have a high-risk medical condition? (see [here](https://www.healthvermont.gov/covid-19/vaccine/getting-covid-19-vaccine#conditions))
-* Are you age 30+?
-* Are you a first responder?
-	* Expanded public safety personnel are employees and members of fire, EMS, and police emergency response organizations and employees of the Department of Corrections that work in correctional facilities. Employees include: command, administrative, and communications staff. This does not include contractors/ auxiliary members.
-* Are you an English language learner or a member of an immigrant/refugee community?
-	* There are community-specific clinics for people who are English language learners or immigrant/refugee community members. If you are age 16 or older, you can register for one of these clinics if someone in your household is:
-
-age 65 or older or
-age 16 or older with a high-risk health condition or
-Please call the Association of Africans Living in Vermont (AALV) at (802) 985-3106 or the U.S. Committee for Refugees and Immigrants of Vermont (USCRI VT) at (802) 655-1963 to register.
-
-If the eligible member of your household has already been vaccinated, your household is still eligible to register for these clinics.
-
-If you are eligible for vaccination, you can also make an appointment for yourself only by calling 855-722-7878. Press 1 if you need interpretation services. (see [here](https://www.healthvermont.gov/covid-19/vaccine/about-covid-19-vaccines-vermont#equity))
-* Do you live in a Black, Indigenous and people of color (BIPOC) household?
-	* HOUSEHOLD MEMBERS OF BIPOC VERMONTERS
-If you are or if you live with a person who identifies as Black, Indigenous, or a person of color (BIPOC), including anyone with Abenaki or other First Nations heritage, and is eligible to get a COVID-19 vaccine, you can also sign up to get a vaccine. You can make an appointment at a BIPOC household focused clinic run by one of our partners, or by calling the Health Department at 855-722-7878.
-
-If the eligible member of your household has already gotten a COVID-19 vaccine, the rest of your household is still eligible to make appointments.
-
-BIPOC HOUSEHOLD FOCUSED CLINICS
-The BIPOC household focused clinics led by the Windham County NAACP(link is external) in Brattleboro and the Racial Justice Alliance(link is external) and the Vermont Professionals of Color Network(link is external) in Burlington will continue for eligible BIPOC members and their households who would prefer to receive their COVID-19 vaccine at a clinic that is dedicated to this community. To sign up for a BIPOC household focused clinic in the Burlington area, please fill out the Burlington BIPOC COVID Vaccination form(link is external) coordinated by the VT Racial Justice Alliance, The Black Perspective, the New Alpha Ministry Baptist Church, and the Vermont Professionals of Color Network. To sign up for a BIPOC household focused clinic in the Brattleboro area, please fill out the Brattleboro BIPOC COVID Vaccination form(link is external) created and administered by the Windham County NAACP.
-
-If you prefer to schedule your appointment by phone, you can contact Wichie Artu, Vice President of the NAACP of Windham County, at vicepresident@windhamnaacp.org or (802) 297-7832. NOTE: Due to vaccine type, you must be at least 18 years old to be vaccinated at this Brattleboro clinic.
-
-MAKING AN APPOINTMENT WITH THE HEALTH DEPARTMENT
-Call the Health Department at 855-722-7878 and say that you live in a household with a Vermonter who identifies as Black, Indigenous, or a person of color (BIPOC). The Call Center team will help you make an appointment. We are also working with pharmacy partners to allow household members of eligible BIPOC Vermonters to make appointments through their websites and expect this to start in early April. (see [here](https://www.healthvermont.gov/covid-19/vaccine/about-covid-19-vaccines-vermont#equity))
+* Are you age 16+?
 
 # Virginia
 
