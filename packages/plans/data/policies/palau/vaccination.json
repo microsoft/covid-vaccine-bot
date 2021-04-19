@@ -12,12 +12,8 @@
 	},
 	"activePhase": "18_and_older",
 	"noPhaseLabel": true,
-	"unknownPhase": true,
+	"unknownPhase": false,
 	"phases": [
-		{
-			"id": "unknown",
-			"qualifications": []
-		},
 		{
 			"id": "18_and_older",
 			"label": "18 and older",
