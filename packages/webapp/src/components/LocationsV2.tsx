@@ -90,9 +90,11 @@ export default observer(function LocationsV2() {
 								<>
 									<LocationDetails currentLocation={currentLocation} />
 									<LocationPhaseList currentLocation={currentLocation} />
+									{currentLocation?.regions && (
+										<LocationStates locationList={currentLocationList} onSelectedItem={(item) => getLocationsData(item)}/>
+									)}
 								</>
 							)}
-							<LocationStates locationList={currentLocationList} onSelectedItem={(item) => getLocationsData(item)}/>
 						</>
 					) : (
 						<section>
