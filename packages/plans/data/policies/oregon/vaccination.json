@@ -24,7 +24,7 @@
 			"description": "c19.link/scheduling.phone.description.or"
 		}
 	},
-	"activePhase": "1b_group_7",
+	"activePhase": "2",
 	"phases": [
 		{
 			"id": "1a",
@@ -175,6 +175,15 @@
 				{
 					"question": "c19.eligibility.question/multigenerational.do",
 					"moreInfoUrl": "https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le3527A.pdf"
+				}
+			]
+		},
+		{
+			"id": "2",
+			"label": "2",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.16_up"
 				}
 			]
 		}
