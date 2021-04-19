@@ -1924,74 +1924,7 @@ COVID-19 vaccinations are provided to Mississippi residents only, or to out-of-s
 
 ## New Jersey Active Phase (current)
 
-* Are you a long term care resident or work in a long term care facility?
-	* All residents and workers of long-term care and high-risk congregate care facilities, including:
-- Skilled nursing facilities
-- Veterans homes
-- Assisted living facilities, continuing care retirement communities, and personal care homes
-- Group homes like residential care homes, adult family homes, adult foster homes, and intellectual and developmental disabilities group homes
-- HUD 202 Supportive Housing for the Elderly Program residences
-- Institutional settings like psychiatric hospitals, correctional institutions, county jails, and juvenile detention facilities (for eligible minors, e.g. 16+ years of age may be eligible for Pfizer vaccine under the emergency use authorization)
-- Other vulnerable, congregate, long-term settings
-* Are you age 55+?
-* Are you age 16+, and have a high-risk medical condition?
-	* Individuals aged 65 and older, and individuals ages 16-64 with medical conditions, as defined by the Centers for Disease Control and Prevention, that increase or might increase the risk of severe illness from the virus. These conditions include:
-
-Asthma (moderate to severe)
-Cancer 
-Cerebrovascular Disease 
-Chronic kidney disease
-COPD (chronic obstructive pulmonary disease)
-Cystic Fibrosis
-Down Syndrome
-Heart conditions, such as heart failure, coronary artery disease, or cardiomyopathies
-Hypertension or High Blood Pressure
-Immunocompromised state (weakened immune system)
-Liver Disease
-Neurologic conditions (e.g. dementia)
-Obesity (body mass index [BMI] of 30 kg/m2 or higher but < 40 kg/m2)
-Severe Obesity (BMI ≥ 40 kg/m2)
-Overweight (BMI ≥ 25 kg/m2)
-Pregnancy
-Pulmonary Fibrosis (damaged or scarred lung tissues)
-Sickle cell disease
-Smoking/nicotine addiction
-Thalassemia (type of blood disorder)
-Type 1 and Type 2 diabetes mellitus
-Note: Individuals who are pregnant and those in an immunocompromised state (weakened immune system)are also eligible but should follow CDC guidance and first discuss vaccination with their medical provider before receiving the vaccine. (see [here](https://covid19.nj.gov/faqs/nj-information/slowing-the-spread/who-is-eligible-for-vaccination-in-new-jersey-who-is-included-in-the-vaccination-phases#direct-link))
-* Are you classified as an essential worker?
-	* This includes:
-- Childcare workers in licensed and registered settings
-- Clergy
-- Communications, IT, and media workers
-- Educators and staff, including pre-K to 12 and higher education
-- Eldercare and support workers
-- Elections personnel
-- First responders
-- Healthcare workers
-- Hospitality workers
-- Individuals experiencing homelessness and those living in shelters
-- Judicial system workers
-- Laundry services workers
-- Librarians and library support staff
-- Long-term care and high-risk congregate care facility residents and staff
-- Medical supply chain employees
-- Members of tribal communities
-- Migrant farm workers
-- Postal and shipping service workers
-- Public safety workers
-- Real estate, building, and home services workers
-- Retail financial institution workers
-- Sanitation workers
-- Social service workers and support staff
-- Transportation workers
-- Utilities workers
-- Warehousing and logistics workers (see [here](https://covid19.nj.gov/faqs/nj-information/slowing-the-spread/who-is-eligible-for-vaccination-in-new-jersey-who-is-included-in-the-vaccination-phases#direct-link))
-* Are you experiencing homelessness or living in a shelter?
-	* Individuals experiencing homelessness and those living in shelters, including domestic violence shelters.
-* Are you a member of a tribal community?
-* Are you an adult with intellectual or developmental disabilities or are you a caregiver to an adult with intellectual or developmental disabilities?
-	* Developmental disabilities are a group of conditions due to an impairment in physical, learning, language, or behavior areas. (see [here](https://covid19.nj.gov/faqs/nj-information/slowing-the-spread/who-is-eligible-for-vaccination-in-new-jersey-who-is-included-in-the-vaccination-phases#direct-link))
+* Are you age 16+?
 
 # New Mexico
 
@@ -2170,91 +2103,9 @@ What you should know:
 | scheduling_phone | [866-698-6155](tel:866-698-6155) |
 
 
-## Oregon Active Phase (1b_group_7)
+## Oregon Active Phase (2)
 
-* Are you a healthcare worker?
-	* This includes
-- Hospital staff with patient care responsibilities
-- Urgent care
-- Skilled nursing and memory care facility healthcare personnel (HCP) and residents
-- Tribal health programs
-- Emergency medical services (EMS) providers and other first responders
-- All health care interpreters and traditional health workers in any setting within Phase 1a
-- HCPs in outpatient settings serving specific high-risk groups
-- Day treatment services
-- Non-emergency medical transport (NEMT)
-- Paid or unpaid caregivers (including parents or foster parents) of medically fragile children or adults who live at home
-- Adults and age-eligible children who have a medical condition or disability who receive services in their homes
-- All other outpatient HCPs
-- Other HCP who provide direct service to people with I/DD and other high-risk populations.
-- Other public health settings, such as HCP serving WIC, or CBO's with direct or indirect exposures
-* Are you a long term care resident or work in a long term care facility? (see [here](https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le3527A.pdf))
-* Are you age 65+? (see [here](https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le3527A.pdf))
-* Are you a K-12 educator or work in a licensed child care facility? (see [here](https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le3527A.pdf))
-* Do you work or live in a congregate setting?
-	* This includes all paid and unpaid healthcare personnel, all staff and contractors, including residents who meet the age requirements of Residential care facilities, Adult foster care, Group homes for people with intellectual and developmental disabilities, Other similar congregate care sites; 
-- Hospice programs
-- Mobile crisis care and related services
-- Individuals working in a correctional setting
-- Adults and youth in custody 16 years and older (see [here](https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le3527A.pdf))
-* Are you age 16+, and have a high-risk medical condition?
-	* This includes:
-- Cancer
-- Chronic kidney disease
-- Chronic lung diseases, including COPD (chronic obstructive pulmonary disease), asthma (moderate-to-severe), interstitial lung disease, cystic fibrosis, and pulmonary hypertension
-- Dementia or other neurological conditions
-- Diabetes (type 1 or type 2)
-- Down syndrome
-- Heart conditions (such as heart failure, coronary artery disease, cardiomyopathies or hypertension)
-- HIV infection
-- Immunocompromised state (weakened immune system)
-- Liver disease
-- Overweight and obesity
-- Pregnancy
-- Sickle cell disease or thalassemia
-- Smoking, current or former
-- Solid organ or blood stem cell transplant
-- Stroke or cerebrovascular disease, which affects blood flow to the brain
-- Substance use disorders (see [here](https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html))
-* Are you classified as a frontline worker or are you age 16+ and live in the same household as someone classified as a frontline worker?
-	* A frontline worker is someone who has a job that puts the individual at higher risk for contracting COVID-19 because of:
-» Regular close contact with others outside of their household (less than six feet); and
-» Routine (more than 15 minutes per person(s)) close contact with others outside of their household; and
-» They cannot perform their job duties from home or another setting that limits the close or routine contact with others outside of their household. 
-
-The list of frontline workers includes:
-• Vaccine manufacturing, and manufacturing of therapeutics, devices, supplies, or personal protective equipment
-• Other food and agriculture not included in Phase 1b, Group 6, including ranching, beverage manufacturing, nurseries, garden centers, farm supply stores, veterinary services, fishing and hunting, forestry
-• Grocery stores and retail (any) stores, including food markets, pharmacies, convenience stores, retail clothing and specialty stores
-• Community colleges, colleges, universities, vocational rehabilitation, trade and professional schools and related educational support services, administration of education programs
-• U.S. Postal Service
-• Public transit, including rural, interurban and urban bus and rail operators, school and employee bus transportation, special needs transportation
-• Manufacturing, including wood, paper, petroleum, coal, asphalt, roofing, chemical, plastics, metal, industrial machinery, computers, electronics, transportation, cabinet and countertops, medical equipment, repair and maintenance, industrial design services
-• Transportation and logistics for any industry included in Phase 1b, including air, rail, water, truck, taxi, limousine, charter bus, other transit and ground passenger transportation, driving schools, wholesalers, warehousing, storage and delivery services, packaging and labeling, motor vehicle and parts dealers, electronic shopping and parts dealers, transportation rental and leasing, and repair and maintenance, related services
-• Food service, including restaurants and bars, commissaries, community food service
-• Energy, including utilities, oil and gas extraction, mining, gas stations, fuel dealers, fuel delivery, environmental consulting, utilities
-• Water and wastewater, solid waste management and recycling, including utilities
-• Housing, including construction, contractors, real estate, community housing services, affordable housing programs, traveler accommodations, commercial accommodations, interior design, architectural, engineering and related services.
-• Information technology and communications, including software publishing, telecommunications, data processing, hosting and related services, internet publishing and broadcasting and web search portals, computer system design and related services, consumer electronics repair and maintenance, communication equipment repair and maintenance
-• News media, including broadcasting and publishing, newsstands
-• Child day care services not included in Phase 1b, groups 1-4, including day camps and afterschool activities.
-• Public health, including scientific and technical consulting, research and development, administration
-• Health care and related services not included in Phase 1a, including services for elderly and persons with disabilities, other individual and family services, funeral homes and funeral services, cemeteries and crematories
-• Public safety not included in Phase 1a, including, including civil engineering, waste management and remediation services, human services and social services, such as child protective services
-• Finance, including banks, credit intermediation, credit bureaus, securities, commodities contracts, financial investments and related activities, accounting, tax preparation, payroll services, company management,
-• Legal, including courts staff, judges, attorneys, court reporting, parole and probation offices
-• Government, including employees and contractors performing services or business for the public, and elected officials, libraries
-• State of Oregon legislative and executive branch as specified by the Department of Administrative Services (DAS)
-• Other: Investigation and security services, zoos and botanical gardens, nature parks and similar institutions, amusement and recreation industries, appliance repair and maintenance, personal and household goods repair and maintenance, pet care, drying cleaning and laundry services, religious organizations, private household services (e.g. in-home child care, housecleaning, in-home repair), administration of conservation programs  (see [here](https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le3527A.pdf))
-* Are you currently pregnant?
-	* Pregnant people 16 and older are eligible (see [here](https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le3527A.pdf))
-* Are you experiencing homelessness or living in a shelter?
-	* This includes:
-- Individuals experiencing houselessness (sheltered and unsheltered)
-- People currently displaced by wildfires (see [here](https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le3527A.pdf))
-* Are you a resident or staff of public or private low income and affordable senior housing?
-	* This includes people living in low-income senior housing, senior congregate and independent living (see [here](https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le3527A.pdf))
-* Do you live in a multigenerational household? (see [here](https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le3527A.pdf))
+* Are you age 16+?
 
 ## Oregon Regions
 
@@ -2268,7 +2119,7 @@ The list of frontline workers includes:
 | scheduling_phone | [541-523-8211](tel:541-523-8211) |
 
 
-### Oregon::Baker Active Phase (1b_group_6)
+### Oregon::Baker Active Phase (2)
 
 ## Oregon::Benton
 
@@ -2280,7 +2131,7 @@ The list of frontline workers includes:
 | scheduling | [Schedule a Vaccination](https://www.samhealth.org/getthevaccine) |
 
 
-### Oregon::Benton Active Phase (1b_group_6)
+### Oregon::Benton Active Phase (2)
 
 ## Oregon::Clackamas
 
@@ -2350,7 +2201,7 @@ The list of frontline workers includes:
 | scheduling_phone | [541-699-5109](tel:541-699-5109) |
 
 
-### Oregon::Deschutes Active Phase (1b_group_6)
+### Oregon::Deschutes Active Phase (2)
 
 ## Oregon::Douglas
 
@@ -2362,7 +2213,7 @@ The list of frontline workers includes:
 | scheduling_phone | [541-464-6550](tel:541-464-6550) |
 
 
-### Oregon::Douglas Active Phase (1b_group_6)
+### Oregon::Douglas Active Phase (2)
 
 ## Oregon::Gilliam
 
@@ -2383,7 +2234,7 @@ The list of frontline workers includes:
 | scheduling_phone | [541-575-0429](tel:541-575-0429) |
 
 
-### Oregon::Grant Active Phase (1b_group_6)
+### Oregon::Grant Active Phase (2)
 
 ## Oregon::Harney
 
@@ -2395,7 +2246,7 @@ The list of frontline workers includes:
 | scheduling_phone | [541-573-2271](tel:541-573-2271) |
 
 
-### Oregon::Harney Active Phase (1b_group_6)
+### Oregon::Harney Active Phase (2)
 
 ## Oregon::Hood River
 
@@ -2427,7 +2278,7 @@ The list of frontline workers includes:
 | scheduling_phone | [541-699-5109](tel:541-699-5109) |
 
 
-### Oregon::Jefferson Active Phase (1b_group_6)
+### Oregon::Jefferson Active Phase (2)
 
 ## Oregon::Josephine
 
@@ -2439,7 +2290,7 @@ The list of frontline workers includes:
 | scheduling_phone | [541-789-2813](tel:541-789-2813) |
 
 
-### Oregon::Josephine Active Phase (1b_group_6)
+### Oregon::Josephine Active Phase (2)
 
 ## Oregon::Klamath
 
@@ -2451,7 +2302,7 @@ The list of frontline workers includes:
 | scheduling_phone | [1-833-606-4370](tel:1-833-606-4370) |
 
 
-### Oregon::Klamath Active Phase (1b_group_6)
+### Oregon::Klamath Active Phase (2)
 
 ## Oregon::Lake
 
@@ -2462,7 +2313,7 @@ The list of frontline workers includes:
 | scheduling_phone | [541-947-6045](tel:541-947-6045) |
 
 
-### Oregon::Lake Active Phase (1b_group_6)
+### Oregon::Lake Active Phase (2)
 
 ## Oregon::Lane
 
@@ -2485,7 +2336,7 @@ The list of frontline workers includes:
 | scheduling_phone | [541-265-0621](tel:541-265-0621) |
 
 
-### Oregon::Lincoln Active Phase (1b_group_6)
+### Oregon::Lincoln Active Phase (2)
 
 ## Oregon::Linn
 
@@ -2497,7 +2348,7 @@ The list of frontline workers includes:
 | scheduling_phone | [541-967-3888](tel:541-967-3888) |
 
 
-### Oregon::Linn Active Phase (1b_group_6)
+### Oregon::Linn Active Phase (2)
 
 ## Oregon::Malheur
 
@@ -2509,7 +2360,7 @@ The list of frontline workers includes:
 | scheduling_phone | [541-889-7279](tel:541-889-7279) |
 
 
-### Oregon::Malheur Active Phase (1b_group_6)
+### Oregon::Malheur Active Phase (2)
 
 ## Oregon::Marion
 
@@ -2520,7 +2371,7 @@ The list of frontline workers includes:
 | info | [Oregon Health Authority, Public Health Division](https://www.co.marion.or.us/HLT/COVID-19/) |
 
 
-### Oregon::Marion Active Phase (1b_group_6)
+### Oregon::Marion Active Phase (2)
 
 ## Oregon::Morrow
 
@@ -2532,7 +2383,7 @@ The list of frontline workers includes:
 | scheduling_phone | [541-676-5649](tel:541-676-5649) |
 
 
-### Oregon::Morrow Active Phase (1b_group_6)
+### Oregon::Morrow Active Phase (2)
 
 ## Oregon::Multnomah
 
@@ -2554,7 +2405,7 @@ The list of frontline workers includes:
 | scheduling | [Schedule a Vaccination](https://www.salemhealth.org/covid-19/covid-vaccine) |
 
 
-### Oregon::Polk Active Phase (1b_group_6)
+### Oregon::Polk Active Phase (2)
 
 ## Oregon::Sherman
 
@@ -2566,7 +2417,7 @@ The list of frontline workers includes:
 | scheduling_phone | [541-506-2600](tel:541-506-2600) |
 
 
-### Oregon::Sherman Active Phase (1b_group_6)
+### Oregon::Sherman Active Phase (2)
 
 ## Oregon::Tillamook
 
@@ -2589,7 +2440,7 @@ The list of frontline workers includes:
 | scheduling_phone | [541-278-5432](tel:541-278-5432) |
 
 
-### Oregon::Umatilla Active Phase (1b_group_6)
+### Oregon::Umatilla Active Phase (2)
 
 ## Oregon::Union
 
@@ -2601,7 +2452,7 @@ The list of frontline workers includes:
 | scheduling_phone | [541-962-8800](tel:541-962-8800) |
 
 
-### Oregon::Union Active Phase (1b_group_6)
+### Oregon::Union Active Phase (2)
 
 ## Oregon::Wallowa
 
@@ -2652,7 +2503,7 @@ The list of frontline workers includes:
 | scheduling_phone | [503-474-4100](tel:503-474-4100) |
 
 
-### Oregon::Yamhill Active Phase (1b_group_6)
+### Oregon::Yamhill Active Phase (2)
 
 # Palau
 
