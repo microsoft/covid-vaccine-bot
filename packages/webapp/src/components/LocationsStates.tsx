@@ -5,7 +5,6 @@
 import {
 	DetailsList,
 	DetailsListLayoutMode,
-	ProgressIndicator,
 	FontIcon,
 	Modal,
 	IColumn,
@@ -214,56 +213,42 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 	)
 
 	return (
-		<div className="bodyContainer">
-			<div className="bodyHeader">
-				<div className="bodyHeaderTitle">
-					<div className="breadCrumbs">/ {t('LocationsStates.title')}</div>
-					<div className="mainTitle">{t('LocationsStates.title')}</div>
-				</div>
-			</div>
-			<div className="bodyContent">
-				{!state.isDataRefreshing ? (
-					<section>
-						<div className="searchRow">
-							<SearchBox
-								styles={{ root: { width: 400 } }}
-								placeholder={t('LocationsStates.SearchBox.placeholder')}
-								onChange={(ev, text) => onStateFilter(ev, text)}
+		<>
+			<section>
+				<div className="searchRow">
+					<SearchBox
+						styles={{ root: { width: 400 } }}
+						placeholder={t('LocationsStates.SearchBox.placeholder')}
+						onChange={(ev, text) => onStateFilter(ev, text)}
+					/>
+					{state.isEditable && (
+						<div
+							className="addLocationHeaderButton"
+							onClick={() => onLocationFormOpen(null)}
+						>
+							<FontIcon
+								iconName="CircleAdditionSolid"
+								style={{ color: '#0078d4' }}
 							/>
-							{state.isEditable && (
-								<div
-									className="addLocationHeaderButton"
-									onClick={() => onLocationFormOpen(null)}
-								>
-									<FontIcon
-										iconName="CircleAdditionSolid"
-										style={{ color: '#0078d4' }}
-									/>
-									{t('LocationsStates.addLocation')}
-								</div>
-							)}
+							{t('LocationsStates.addLocation')}
 						</div>
-						<DetailsList
-							items={filteredStateList}
-							columns={locationColumns}
-							setKey="set"
-							layoutMode={DetailsListLayoutMode.justified}
-							selectionPreservedOnEmptyClick={true}
-							ariaLabelForSelectionColumn={t('LocationsStates.addLocation')}
-							ariaLabelForSelectAllCheckbox={t('LocationsStates.addLocation')}
-							checkButtonAriaLabel={t('LocationsStates.addLocation')}
-							checkboxVisibility={2}
-							onItemInvoked={openSelection}
-							onRenderItemColumn={onRenderItemColumn}
-							className="locationDetailsList"
-						/>
-					</section>
-				) : (
-					<section>
-						<ProgressIndicator description={t('LocationsStates.loading')} />
-					</section>
-				)}
-			</div>
+					)}
+				</div>
+				<DetailsList
+					items={filteredStateList}
+					columns={locationColumns}
+					setKey="set"
+					layoutMode={DetailsListLayoutMode.justified}
+					selectionPreservedOnEmptyClick={true}
+					ariaLabelForSelectionColumn={t('LocationsStates.addLocation')}
+					ariaLabelForSelectAllCheckbox={t('LocationsStates.addLocation')}
+					checkButtonAriaLabel={t('LocationsStates.addLocation')}
+					checkboxVisibility={2}
+					onItemInvoked={openSelection}
+					onRenderItemColumn={onRenderItemColumn}
+					className="locationDetailsList"
+				/>
+			</section>
 			<Modal
 				isOpen={isLocationModalOpen}
 				isModeless={false}
@@ -288,6 +273,6 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 					onSubmit={onDeleteLocationFormSubmit}
 				/>
 			</Modal>
-		</div>
+		</>
 	)
 })
