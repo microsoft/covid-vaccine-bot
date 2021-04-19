@@ -115,6 +115,7 @@ export default observer(function LocationsV2() {
 				<div className="bodyContent">
 					{!isDataRefreshing ? (
 						<>
+							{ currentLocation && ( <LocationDetails currentLocation={currentLocation} /> )}
 							<LocationStates locationList={currentLocationList} onSelectedItem={(item) => getLocationsData(item)}/>
 						</>
 					) : (

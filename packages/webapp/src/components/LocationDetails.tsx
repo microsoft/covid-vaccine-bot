@@ -6,13 +6,19 @@ import { observer } from 'mobx-react-lite'
 
 import './Locations.scss'
 
-export default observer(function LocationsDetails() {
+export interface LocationsDetailsProp {
+	currentLocation: any
+}
+
+export default observer(function LocationsDetails(props: LocationsDetailsProp) {
+
+	const {currentLocation} = props
 
 	return (
-        <div className="bodyContainer">
-            <div className="bodyContent">
+        <>
+			<section>
                 <div className="locationDetailsSectionHeader">Location Details</div>
-            </div>
-        </div>
+           	</section>
+         </>
 	)
 })
