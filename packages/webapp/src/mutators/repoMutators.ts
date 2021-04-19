@@ -176,8 +176,6 @@ export const setLocationData = mutatorAction(
 		if (data) {
 			const store = getAppStore()
 
-			console.log("location data", data)
-
 			const pathArray = data.info.path.split("/")
 			pathArray.splice(-1,1)
 
@@ -203,7 +201,6 @@ export const setInitLocationsData = mutatorAction(
 		if (data) {
 			const store = getAppStore()
 			store.locationsData = {...data}
-			console.log(data, store.locationsData)
 		}
 	}
 )

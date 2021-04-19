@@ -20,24 +20,12 @@ export default observer(function LocationsBreadcrumbs(props: LocationsBreadcrumb
         <>
             {Object.keys(breadcrumbs).length > 0 ? (
                 <div className="breadCrumbs">
+                     <div key={'root'} className="breadCrumbsLink" onClick={() => navigateBack('root')}>/ Locations</div>
                     {Object.keys(breadcrumbs).map((key: any, idx: number) => {
-                        if (idx === 0) {
-                            return (
-                                <>
-                                    <div key={'root'} className="breadCrumbsLink" onClick={() => navigateBack('root')}>/ Locations</div>
-                                    {Object.keys(breadcrumbs).length < 2 ? (
-                                        <div className="breadCrumbsNonLink" key={idx}>{`/ ${breadcrumbs[key].value.info.content.name}`}</div>
-                                    ): (
-                                        <div key={idx} className="breadCrumbsLink" onClick={() => navigateBack(breadcrumbs[key])}>{`/ ${breadcrumbs[key].value.info.content.name}`}</div>
-                                    )}
-                                </>
-                            )
-                        }
-
                         if (breadcrumbs[key].value.info.content.name === currentLocation.info.content.name) {
-                            return <div className="breadCrumbsNonLink" key={idx}>{`/ ${breadcrumbs[key].value.info.content.name}`}</div>
+                            return <div key={idx} className="breadCrumbsNonLink">{`/ ${breadcrumbs[key].value.info.content.name}`}</div>
                         } else {
-                            return <div className="breadCrumbsLink" key={idx} onClick={() => navigateBack(breadcrumbs[key])}>{`/ ${breadcrumbs[key].value.info.content.name}`}</div>
+                            return <div key={idx} className="breadCrumbsLink" onClick={() => navigateBack(breadcrumbs[key])}>{`/ ${breadcrumbs[key].value.info.content.name}`}</div>
                         }
                     })}
                 </div>

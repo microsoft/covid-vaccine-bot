@@ -80,7 +80,6 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 		if (locationList) {
 			const nextFilteredStateList: any[] = []
 			Object.entries(locationList).forEach(([locName, locDetails]: [string, any]) => {
-				console.log(locName, locDetails)
 				nextFilteredStateList.push({
 					key: locName,
 					text: locDetails?.info?.content ? toProperCase(locDetails.info.content.name) : toProperCase(locName),

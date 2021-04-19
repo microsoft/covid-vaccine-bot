@@ -31,19 +31,11 @@ export default observer(function LocationsV2() {
 
 		const currLocation = pathFind(repoFileData, pathArray)
 
-		console.log("currLocation", currLocation)
-		// if (!currLocation.info.content) {
-		// 		getLocationData(currLocation, pathArray, () => {
-		// 			console.log('data loaded')
-		// 		})
-		// }
-
 		if (currLocation?.regions) {
 			for (const [key, value] of Object.entries(currLocation?.regions)) {
 				const location = value as any
 				if(!location.info.content || !location.strings.content || !location.vaccination.content )
 				{
-					console.log(location)
 					await getLocationData(location)
 				}
 				setCurrentLocationList(currLocation.regions)
