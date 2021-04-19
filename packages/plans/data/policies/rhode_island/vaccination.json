@@ -16,7 +16,7 @@
 			"text": "c19.link/scheduling.phone.ri"
 		}
 	},
-	"activePhase": "1a",
+	"activePhase": "current",
 	"phases": [
 		{
 			"id": "1a",
@@ -56,7 +56,16 @@
 					"moreInfoUrl": "http://bit.ly/homeboundvax"
 				}
 			],
-			"label": "Current"
+			"label": "Previous"
+		},
+		{
+			"id": "current",
+			"label": "Current",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.16_up"
+				}
+			]
 		}
 	],
 	"noPhaseLabel": true
