@@ -1173,7 +1173,7 @@ Upon arrival at vaccination events, individuals 60 years and older may be sent t
 | providers | [View locations providing vaccines](https://www.chicago.gov/city/en/sites/covid19-vaccine/home/vaccine-finder.html) |
 
 
-### Illinois::Chicago  Active Phase (1c)
+### Illinois::Chicago  Active Phase (16_and_up)
 
 ## Illinois::Cook
 
@@ -1184,7 +1184,7 @@ Upon arrival at vaccination events, individuals 60 years and older may be sent t
 | info | [Illinois Department of Public Health](https://vaccine.cookcountyil.gov/) |
 
 
-### Illinois::Cook Active Phase (1c)
+### Illinois::Cook Active Phase (16_and_up)
 
 ## Illinois::Kendall
 
@@ -1195,7 +1195,7 @@ Upon arrival at vaccination events, individuals 60 years and older may be sent t
 | info | [Illinois Department of Public Health](http://www.kendallhealth.org/community-health/covid-19-vaccine/) |
 
 
-### Illinois::Kendall Active Phase (2)
+### Illinois::Kendall Active Phase (16_and_up)
 
 # Indiana
 
