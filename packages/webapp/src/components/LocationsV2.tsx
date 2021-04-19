@@ -10,6 +10,7 @@ import { getText as t } from '../selectors/intlSelectors'
 import LocationDetails from './LocationDetails'
 import LocationStates from './LocationsStates'
 import LocationPhaseList from './LocationPhaseList'
+import LocationsBreadcrumbs from './LocationsBreadcrumbs'
 import { getAppStore } from '../store/store'
 import { useCallback, useState } from 'react'
 import { getLocationData } from '../actions/repoActions'
@@ -79,37 +80,7 @@ export default observer(function LocationsV2() {
 			<div className="bodyContainer">
 				<div className="bodyHeader">
 					<div className="bodyHeaderTitle">
-						{Object.keys(breadcrumbs).length > 0 ? (
-							<div className="breadCrumbs">
-								{Object.keys(breadcrumbs).map((key: any, idx: number) => {
-									if (idx === 0) {
-										return (
-											<>
-												<div className="breadCrumbsLink" onClick={() => navigateBack('root')}>/ Locations</div>
-												{Object.keys(breadcrumbs).length < 2 ? (
-													<div className="breadCrumbsNonLink" key={idx}>{`/ ${breadcrumbs[key].value.info.content.name}`}</div>
-												): (
-													<div className="breadCrumbsLink" onClick={() => navigateBack(breadcrumbs[key])}>{`/ ${breadcrumbs[key].value.info.content.name}`}</div>
-												)}
-											</>
-										)
-									}
-
-									if (breadcrumbs[key].value.info.content.name === currentLocation.info.content.name) {
-										return <div className="breadCrumbsNonLink" key={idx}>{`/ ${breadcrumbs[key].value.info.content.name}`}</div>
-									} else {
-										return <div className="breadCrumbsLink" key={idx} onClick={() => navigateBack(breadcrumbs[key])}>{`/ ${breadcrumbs[key].value.info.content.name}`}</div>
-									}
-								})}
-							</div>
-						) : (
-							<div className="breadCrumbs">/ {t('LocationsStates.title')}</div>
-						)}
-						{currentLocation ? (
-							<div className="mainTitle">{currentLocation.info.content.name}</div>
-						) : (
-							<div className="mainTitle">{t('LocationsStates.title')}</div>
-						)}
+						<LocationsBreadcrumbs breadcrumbs={breadcrumbs} currentLocation={currentLocation} navigateBack={navigateBack} />
 					</div>
 				</div>
 				<div className="bodyContent">

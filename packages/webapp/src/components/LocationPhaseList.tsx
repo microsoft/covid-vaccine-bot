@@ -49,7 +49,6 @@ export default observer(function LocationsPhaseList(props: LocationsPhaseListPro
 		},
 	].filter((loc) => (state.isEditable ? true : loc.key !== 'editCol'))
 
-    console.log('phase list', currentLocation)
     useEffect(() => {
 		if (currentLocation) {
 			const newList = setInitialPhaseItems({
