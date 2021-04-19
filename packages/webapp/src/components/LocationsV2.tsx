@@ -9,6 +9,7 @@ import {
 import { getText as t } from '../selectors/intlSelectors'
 import LocationDetails from './LocationDetails'
 import LocationStates from './LocationsStates'
+import LocationPhaseList from './LocationPhaseList'
 import { getAppStore } from '../store/store'
 import { useCallback, useState } from 'react'
 import { getLocationData } from '../actions/repoActions'
@@ -82,7 +83,6 @@ export default observer(function LocationsV2() {
 							<div className="breadCrumbs">
 								{Object.keys(breadcrumbs).map((key: any, idx: number) => {
 									if (idx === 0) {
-										console.log(idx, Object.keys(breadcrumbs).length)
 										return (
 											<>
 												<div className="breadCrumbsLink" onClick={() => navigateBack('root')}>/ Locations</div>
@@ -115,7 +115,12 @@ export default observer(function LocationsV2() {
 				<div className="bodyContent">
 					{!isDataRefreshing ? (
 						<>
-							{ currentLocation && ( <LocationDetails currentLocation={currentLocation} /> )}
+							{ currentLocation && (
+								<>
+									<LocationDetails currentLocation={currentLocation} />
+									<LocationPhaseList currentLocation={currentLocation} />
+								</>
+							)}
 							<LocationStates locationList={currentLocationList} onSelectedItem={(item) => getLocationsData(item)}/>
 						</>
 					) : (

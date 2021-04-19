@@ -157,3 +157,22 @@
 	padding: 20px 0;
 	border-bottom: 1px solid $ms-color-gray40;
 }
+
+.LocationsStatesComponent {
+	.locationsStatesSectionHeader {
+		padding: 20px 0;
+		border-bottom: 1px solid $ms-color-gray40;
+	}
+}
+
+.LocationPhaseListComponent {
+	.locationPhaseOverviewSectionHeader {
+		padding: 20px 0;
+		border-bottom: 1px solid $ms-color-gray40;
+	}
+
+	.emptyPhaseOverview {
+		padding: 20px 0;
+		text-align: center;
+	}
+}

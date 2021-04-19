@@ -214,7 +214,8 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 
 	return (
 		<>
-			<section>
+			<section className="LocationsStatesComponent">
+				<div className="locationsStatesSectionHeader">{t('LocationsRegions.Sublocations.title')}</div>
 				<div className="searchRow">
 					<SearchBox
 						styles={{ root: { width: 400 } }}
