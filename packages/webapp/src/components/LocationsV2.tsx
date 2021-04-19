@@ -52,6 +52,27 @@ export default observer(function LocationsV2() {
 
 	},[repoFileData])
 
+	const navigateBack = useCallback((item: any) => {
+		if (item === 'root') {
+			setCurrentLocationList(repoFileData)
+			setCurrentLocation(null)
+			setBreadcrumbs({})
+		} else {
+			const pathArray = item.value.info.path.split("/")
+			pathArray.splice(-1,1)
+			pathArray.push("regions")
+			const parentPath = pathArray.join("/")
+			const newCrumbs = {...breadcrumbs}
+			for (const item in newCrumbs) {
+				if (newCrumbs[item].value.info.path.startsWith(parentPath)) {
+					delete newCrumbs[item]
+				}
+			}
+			setBreadcrumbs(newCrumbs)
+			getLocationsData(item)
+		}
+	},[breadcrumbs, getLocationsData, repoFileData])
+
 	return (
 		<div className="locationPageContainer">
 			<div className="bodyContainer">
@@ -60,16 +81,35 @@ export default observer(function LocationsV2() {
 						{Object.keys(breadcrumbs).length > 0 ? (
 							<div className="breadCrumbs">
 								{Object.keys(breadcrumbs).map((key: any, idx: number) => {
-									if (Object.keys(breadcrumbs).length - 1 === idx) {
-										return <div className="breadCrumbsNonLink" key={idx}>{`/ ${breadcrumbs[key].value.info.content.name}`}</div>
+									if (idx === 0) {
+										console.log(idx, Object.keys(breadcrumbs).length)
+										return (
+											<>
+												<div className="breadCrumbsLink" onClick={() => navigateBack('root')}>/ Locations</div>
+												{Object.keys(breadcrumbs).length < 2 ? (
+													<div className="breadCrumbsNonLink" key={idx}>{`/ ${breadcrumbs[key].value.info.content.name}`}</div>
+												): (
+													<div className="breadCrumbsLink" onClick={() => navigateBack(breadcrumbs[key])}>{`/ ${breadcrumbs[key].value.info.content.name}`}</div>
+												)}
+											</>
+										)
 									}
-									return <div className="breadCrumbsLink" key={idx} onClick={() => getLocationsData(breadcrumbs[key])}>{`/ ${breadcrumbs[key].value.info.content.name}`}</div>
+
+									if (breadcrumbs[key].value.info.content.name === currentLocation.info.content.name) {
+										return <div className="breadCrumbsNonLink" key={idx}>{`/ ${breadcrumbs[key].value.info.content.name}`}</div>
+									} else {
+										return <div className="breadCrumbsLink" key={idx} onClick={() => navigateBack(breadcrumbs[key])}>{`/ ${breadcrumbs[key].value.info.content.name}`}</div>
+									}
 								})}
 							</div>
 						) : (
 							<div className="breadCrumbs">/ {t('LocationsStates.title')}</div>
 						)}
-						<div className="mainTitle">{t('LocationsStates.title')}</div>
+						{currentLocation ? (
+							<div className="mainTitle">{currentLocation.info.content.name}</div>
+						) : (
+							<div className="mainTitle">{t('LocationsStates.title')}</div>
+						)}
 					</div>
 				</div>
 				<div className="bodyContent">

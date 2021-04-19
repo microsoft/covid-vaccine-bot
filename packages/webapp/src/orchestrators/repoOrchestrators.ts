@@ -20,7 +20,6 @@ import {
 	setBranchList,
 	clearLoadedPRData,
 	setInitRepoFileData,
-	setInitLocationsData,
 	setRepoFileData,
 	setRepoFileChanges,
 	setIssuesList,
