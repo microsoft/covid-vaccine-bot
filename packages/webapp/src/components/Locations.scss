@@ -185,7 +185,23 @@
 .LocationPhaseListComponent {
 	.locationPhaseOverviewSectionHeader {
 		padding: 20px 0;
+		display: flex;
+		justify-content: space-between;
 		border-bottom: 1px solid $ms-color-gray40;
+
+		.addPhaseHeaderButton {
+			display: flex;
+			cursor: pointer;
+			padding: 0;
+
+			i {
+				margin-right: 4px;
+			}
+
+			&:hover {
+				font-weight: 600;
+			}
+		}
 	}
 
 	.emptyPhaseOverview {

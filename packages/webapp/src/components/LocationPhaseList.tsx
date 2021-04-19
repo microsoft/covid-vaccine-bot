@@ -101,7 +101,23 @@ export default observer(function LocationsPhaseList(props: LocationsPhaseListPro
 
 	return (
         <section className="LocationPhaseListComponent">
-            <div className="locationPhaseOverviewSectionHeader">{t('LocationsRegions.PhaseOverview.title')}</div>
+            <div className="locationPhaseOverviewSectionHeader">
+                <div>
+                    {t('LocationsRegions.PhaseOverview.title')}
+                </div>
+                {state.isEditable && (
+                    <div
+                        className="addPhaseHeaderButton"
+                        //onClick={() => onPhaseFormOpen(null)}
+                    >
+                        <FontIcon
+                            iconName="CircleAdditionSolid"
+                            style={{ color: '#0078d4' }}
+                        />
+                        {t('LocationsRegions.PhaseOverview.AddPhaseButton')}
+                    </div>
+                )}
+            </div>
             {currentLocation.vaccination?.content?.phases?.length > 0 ? (
                 <DetailsList
                     items={phaseItemList}
