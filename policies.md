@@ -2712,7 +2712,10 @@ The list of frontline workers includes:
 | scheduling_phone | [680-488-0555](tel:680-488-0555) |
 
 
-## Palau Active Phase (unknown)
+## Palau Active Phase (18_and_older)
+
+* Are you age 18+?
+	* All residents ages 18 and older are eligible to get the vaccine in Palau.
 
 # Pennsylvania
 
