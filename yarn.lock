@@ -2050,6 +2050,7 @@ __metadata:
     "@azure/storage-blob": ^12.5.0
     "@covid-vax-bot/plan-schema": "workspace:packages/schema"
     "@essex/scripts": ^12.0.2
+    "@types/checksum": ^0
     "@types/config": ^0.0.38
     "@types/jsonwebtoken": ^8.5.1
     "@types/node": ^14.14.35
@@ -2057,6 +2058,7 @@ __metadata:
     ajv: ^7.1.1
     axios: ^0.21.1
     chalk: ^4.1.0
+    checksum: ^0.1.1
     config: ^3.3.6
     csv-parse: ^4.15.3
     csv-stringify: ^5.6.2
@@ -4786,6 +4788,13 @@ __metadata:
     "@types/node": "*"
     "@types/responselike": "*"
   checksum: 3dae802a0808573986c56b92bf16cd031a5b648b6c893d20c7ef6bfda3fc72a2107c7978697d2b27b14febc597162d6959985eeb5befc307a9f9f3c5081d4905
+  languageName: node
+  linkType: hard
+
+"@types/checksum@npm:^0":
+  version: 0.1.31
+  resolution: "@types/checksum@npm:0.1.31"
+  checksum: 2308af8901a217df3f0d1416946d39dec4206e34beaa27f6efa803d7d78769e4d9939dc94c6a277e7c57f3af39a3c51069d59d0c0d469cc3532192c6b5494b32
   languageName: node
   linkType: hard
 
@@ -8370,6 +8379,17 @@ __metadata:
   version: 11.1.2
   resolution: "check-types@npm:11.1.2"
   checksum: e756b5a813d192216caad74f546a62a9b777fdc7b3b73cb0b73135fd4cdd43e8abcfe9793ac4df6ac3470aee9e79810278a1bef40d3fc31dc9cf9cfa6671eb18
+  languageName: node
+  linkType: hard
+
+"checksum@npm:^0.1.1":
+  version: 0.1.1
+  resolution: "checksum@npm:0.1.1"
+  dependencies:
+    optimist: ~0.3.5
+  bin:
+    checksum: bin/checksum-cli.js
+  checksum: 45b2d219e62b1b4c0c52af502d33769e3a03d41013a09bb745959dda10a5e0c6f4f580e513805fe830263a22e1771e049960ad75301f38b429a33b20bedf5e1f
   languageName: node
   linkType: hard
 
@@ -17866,6 +17886,15 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
+"optimist@npm:~0.3.5":
+  version: 0.3.7
+  resolution: "optimist@npm:0.3.7"
+  dependencies:
+    wordwrap: ~0.0.2
+  checksum: 6a2fb24e0eda97593c29f4bbb0ade1e7a3682ff7747bac61120c67eb2fa519328c331d188628d81027195ebde9a9a460542d2ae360422bc543568b381fcdd34c
+  languageName: node
+  linkType: hard
+
 "optimize-css-assets-webpack-plugin@npm:5.0.4":
   version: 5.0.4
   resolution: "optimize-css-assets-webpack-plugin@npm:5.0.4"
@@ -25139,6 +25168,13 @@ resolve@1.18.1:
   version: 1.0.0
   resolution: "wordwrap@npm:1.0.0"
   checksum: b4f3f8104a727d1b08e77f43f3692977146f13074392747a3d9cfd631d0fc3ff1c0c034d44fcd7a22183c6505d2fc305421e3512671f8a56f903055671ace4ce
+  languageName: node
+  linkType: hard
+
+"wordwrap@npm:~0.0.2":
+  version: 0.0.3
+  resolution: "wordwrap@npm:0.0.3"
+  checksum: e8c84baa721bd7bc13a88e52e1bc25dd4d14accedafe04d24fbc400ba74ae6d620ac4eff5425d5cab342d1ff43f74396272492039b7d7a804bffd2039a153ff0
   languageName: node
   linkType: hard
 

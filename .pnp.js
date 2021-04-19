@@ -4735,6 +4735,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@azure/storage-blob", "npm:12.5.0"],
             ["@covid-vax-bot/plan-schema", "workspace:packages/schema"],
             ["@essex/scripts", "virtual:60853e3ec114b18e51ada69bf7f7262fad510a1e30b0986acd76239812ac4168db7c91e526b4a5675f1b268a6c00bac056c55159fb9bbbd0ac7afdf773825fda#npm:12.0.2"],
+            ["@types/checksum", "npm:0.1.31"],
             ["@types/config", "npm:0.0.38"],
             ["@types/jsonwebtoken", "npm:8.5.1"],
             ["@types/node", "npm:14.14.35"],
@@ -4742,6 +4743,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["ajv", "npm:7.2.1"],
             ["axios", "npm:0.21.1"],
             ["chalk", "npm:4.1.0"],
+            ["checksum", "npm:0.1.1"],
             ["config", "npm:3.3.6"],
             ["csv-parse", "npm:4.15.3"],
             ["csv-stringify", "npm:5.6.2"],
@@ -8900,6 +8902,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/keyv", "npm:3.1.1"],
             ["@types/node", "npm:14.14.35"],
             ["@types/responselike", "npm:1.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@types/checksum", [
+        ["npm:0.1.31", {
+          "packageLocation": "./.yarn/cache/@types-checksum-npm-0.1.31-025447d0a8-2308af8901.zip/node_modules/@types/checksum/",
+          "packageDependencies": [
+            ["@types/checksum", "npm:0.1.31"]
           ],
           "linkType": "HARD",
         }]
@@ -13451,6 +13462,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/check-types-npm-11.1.2-67e85ffacd-e756b5a813.zip/node_modules/check-types/",
           "packageDependencies": [
             ["check-types", "npm:11.1.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["checksum", [
+        ["npm:0.1.1", {
+          "packageLocation": "./.yarn/cache/checksum-npm-0.1.1-14098f3a8e-45b2d219e6.zip/node_modules/checksum/",
+          "packageDependencies": [
+            ["checksum", "npm:0.1.1"],
+            ["optimist", "npm:0.3.7"]
           ],
           "linkType": "HARD",
         }]
@@ -24595,6 +24616,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["optimist", [
+        ["npm:0.3.7", {
+          "packageLocation": "./.yarn/cache/optimist-npm-0.3.7-f279d1b7a7-6a2fb24e0e.zip/node_modules/optimist/",
+          "packageDependencies": [
+            ["optimist", "npm:0.3.7"],
+            ["wordwrap", "npm:0.0.3"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["optimize-css-assets-webpack-plugin", [
         ["npm:5.0.4", {
           "packageLocation": "./.yarn/cache/optimize-css-assets-webpack-plugin-npm-5.0.4-dedddec988-b592356b9d.zip/node_modules/optimize-css-assets-webpack-plugin/",
@@ -33400,6 +33431,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["wordwrap", [
+        ["npm:0.0.3", {
+          "packageLocation": "./.yarn/cache/wordwrap-npm-0.0.3-ab90803074-e8c84baa72.zip/node_modules/wordwrap/",
+          "packageDependencies": [
+            ["wordwrap", "npm:0.0.3"]
+          ],
+          "linkType": "HARD",
+        }],
         ["npm:1.0.0", {
           "packageLocation": "./.yarn/cache/wordwrap-npm-1.0.0-ae57a645e8-b4f3f8104a.zip/node_modules/wordwrap/",
           "packageDependencies": [
