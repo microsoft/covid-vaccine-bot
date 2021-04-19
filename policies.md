@@ -1924,7 +1924,74 @@ COVID-19 vaccinations are provided to Mississippi residents only, or to out-of-s
 
 ## New Jersey Active Phase (current)
 
-* Are you age 16+?
+* Are you a long term care resident or work in a long term care facility?
+	* All residents and workers of long-term care and high-risk congregate care facilities, including:
+- Skilled nursing facilities
+- Veterans homes
+- Assisted living facilities, continuing care retirement communities, and personal care homes
+- Group homes like residential care homes, adult family homes, adult foster homes, and intellectual and developmental disabilities group homes
+- HUD 202 Supportive Housing for the Elderly Program residences
+- Institutional settings like psychiatric hospitals, correctional institutions, county jails, and juvenile detention facilities (for eligible minors, e.g. 16+ years of age may be eligible for Pfizer vaccine under the emergency use authorization)
+- Other vulnerable, congregate, long-term settings
+* Are you age 55+?
+* Are you age 16+, and have a high-risk medical condition?
+	* Individuals aged 65 and older, and individuals ages 16-64 with medical conditions, as defined by the Centers for Disease Control and Prevention, that increase or might increase the risk of severe illness from the virus. These conditions include:
+
+Asthma (moderate to severe)
+Cancer 
+Cerebrovascular Disease 
+Chronic kidney disease
+COPD (chronic obstructive pulmonary disease)
+Cystic Fibrosis
+Down Syndrome
+Heart conditions, such as heart failure, coronary artery disease, or cardiomyopathies
+Hypertension or High Blood Pressure
+Immunocompromised state (weakened immune system)
+Liver Disease
+Neurologic conditions (e.g. dementia)
+Obesity (body mass index [BMI] of 30 kg/m2 or higher but < 40 kg/m2)
+Severe Obesity (BMI ≥ 40 kg/m2)
+Overweight (BMI ≥ 25 kg/m2)
+Pregnancy
+Pulmonary Fibrosis (damaged or scarred lung tissues)
+Sickle cell disease
+Smoking/nicotine addiction
+Thalassemia (type of blood disorder)
+Type 1 and Type 2 diabetes mellitus
+Note: Individuals who are pregnant and those in an immunocompromised state (weakened immune system)are also eligible but should follow CDC guidance and first discuss vaccination with their medical provider before receiving the vaccine. (see [here](https://covid19.nj.gov/faqs/nj-information/slowing-the-spread/who-is-eligible-for-vaccination-in-new-jersey-who-is-included-in-the-vaccination-phases#direct-link))
+* Are you classified as an essential worker?
+	* This includes:
+- Childcare workers in licensed and registered settings
+- Clergy
+- Communications, IT, and media workers
+- Educators and staff, including pre-K to 12 and higher education
+- Eldercare and support workers
+- Elections personnel
+- First responders
+- Healthcare workers
+- Hospitality workers
+- Individuals experiencing homelessness and those living in shelters
+- Judicial system workers
+- Laundry services workers
+- Librarians and library support staff
+- Long-term care and high-risk congregate care facility residents and staff
+- Medical supply chain employees
+- Members of tribal communities
+- Migrant farm workers
+- Postal and shipping service workers
+- Public safety workers
+- Real estate, building, and home services workers
+- Retail financial institution workers
+- Sanitation workers
+- Social service workers and support staff
+- Transportation workers
+- Utilities workers
+- Warehousing and logistics workers (see [here](https://covid19.nj.gov/faqs/nj-information/slowing-the-spread/who-is-eligible-for-vaccination-in-new-jersey-who-is-included-in-the-vaccination-phases#direct-link))
+* Are you experiencing homelessness or living in a shelter?
+	* Individuals experiencing homelessness and those living in shelters, including domestic violence shelters.
+* Are you a member of a tribal community?
+* Are you an adult with intellectual or developmental disabilities or are you a caregiver to an adult with intellectual or developmental disabilities?
+	* Developmental disabilities are a group of conditions due to an impairment in physical, learning, language, or behavior areas. (see [here](https://covid19.nj.gov/faqs/nj-information/slowing-the-spread/who-is-eligible-for-vaccination-in-new-jersey-who-is-included-in-the-vaccination-phases#direct-link))
 
 # New Mexico
 
