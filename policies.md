@@ -1388,57 +1388,9 @@ Individuals who are diagnosed with these medical conditions but are not currentl
 | scheduling | [Schedule a Vaccination](https://vaccinesignup.mass.gov/) |
 
 
-## Massachusetts Active Phase (phase_2_step_5)
+## Massachusetts Active Phase (phase_3)
 
-* Are you age 55+?
-* Are you age 16+, and have a high-risk medical condition?
-	* Individuals 16 and older with one of these certain medical conditions will be eligible to receive the vaccine effective April 5, 2021.
-Phase 2 eligible conditions:
-Asthma (moderate-to-severe)
-Cancer
-Chronic kidney disease
-COPD (chronic obstructive pulmonary disease)
-Down Syndrome
-Heart conditions, such as heart failure, coronary artery disease, or cardiomyopathies
-Immunocompromised state (weakened immune system) from solid organ transplant*
-Obesity and severe obesity (body mass index [BMI] of 30 kg/m2 or higher)
-Calculate your BMI here: Adult BMI Calculator | CDC
-Pregnancy**
-Sickle cell disease
-Smoking
-Type 2 diabetes mellitus (see [here](https://www.mass.gov/info-details/covid-19-vaccinations-for-individuals-with-certain-medical-conditions))
-* Are you a resident or staff of public or private low income and affordable senior housing? (see [here](https://www.mass.gov/doc/massachusetts-senior-affordable-housing-covid-19-vaccine-information/))
-* Are you a healthcare worker?
-	* All healthcare workers are eligible to receive the vaccine, including home-based healthcare workers.  (see [here](https://www.mass.gov/info-details/covid-19-vaccinations-for-health-care-workers))
-* Are you a long term care resident or work in a long term care facility?
-	* Examples of this include: skilled nursing facilities, assisted living residences, and rest homes. (see [here](https://www.mass.gov/info-details/covid-19-vaccinations-for-nursing-homes-rest-homes-and-assisted-living-residences))
-* Are you a first responder?
-	* First responders including emergency medical services, police, and fire are currently eligible to receive the COVID-19 vaccine.  (see [here](https://www.mass.gov/info-details/covid-19-vaccinations-for-first-responders))
-* Are you a staff member or resident of a congregate care facility?
-	* Examples of congregate care facilities include emergency shelter programs, domestic violence shelters, veterans' shelters, and private special education schools. (see [here](https://www.mass.gov/info-details/covid-19-vaccinations-for-congregate-care-settings))
-* Are you a K-12 educator or work in a licensed child care facility? (see [here](https://www.mass.gov/info-details/covid-19-vaccinations-for-k-12-educators-child-care-workers-and-school-staff))
-* Are you classified as an essential worker?
-	* Workers in the following categories are eligible as part of this group:
-- Restaurant or cafe workers
-- Food, meatpacking, beverage, agriculture, consumer goods, retail, or food service workers
-- Grocery and convenience store workers
-- Food pantry workers or volunteers
-- Medical supply chain workers
-- Vaccine development workers
-- Transit/transportation workers
-- Public works, water, wastewater, or utility workers
-- Sanitation workers
-- Public health workers
-- Court system worker (judges, prosecutors, defense attorneys, clerks), other than court officers who are listed under first responders
-- Funeral directors and  funeral workers
- (see [here](https://www.mass.gov/info-details/covid-19-vaccinations-for-certain-workers))
-* Are you homebound or otherwise unable to leave your home to get to a vaccination site, even with assistance?
-	* These individuals either:
-- Have considerable difficulty and/or require significant support to leave the home for medical appointments
-- Require ambulance or two-person assistance to leave the home
-- Are not able to leave the home for medical appointments under normal circumstances
-
-If you are eligible for an in-home vaccination, you can call the Homebound Vaccination Central Intake Line at (833) 983-0485.  (see [here](https://www.mass.gov/info-details/covid-19-homebound-vaccination-program))
+* Are you age 16+?
 
 ## Massachusetts Regions
 
@@ -1972,74 +1924,7 @@ COVID-19 vaccinations are provided to Mississippi residents only, or to out-of-s
 
 ## New Jersey Active Phase (current)
 
-* Are you a long term care resident or work in a long term care facility?
-	* All residents and workers of long-term care and high-risk congregate care facilities, including:
-- Skilled nursing facilities
-- Veterans homes
-- Assisted living facilities, continuing care retirement communities, and personal care homes
-- Group homes like residential care homes, adult family homes, adult foster homes, and intellectual and developmental disabilities group homes
-- HUD 202 Supportive Housing for the Elderly Program residences
-- Institutional settings like psychiatric hospitals, correctional institutions, county jails, and juvenile detention facilities (for eligible minors, e.g. 16+ years of age may be eligible for Pfizer vaccine under the emergency use authorization)
-- Other vulnerable, congregate, long-term settings
-* Are you age 55+?
-* Are you age 16+, and have a high-risk medical condition?
-	* Individuals aged 65 and older, and individuals ages 16-64 with medical conditions, as defined by the Centers for Disease Control and Prevention, that increase or might increase the risk of severe illness from the virus. These conditions include:
-
-Asthma (moderate to severe)
-Cancer 
-Cerebrovascular Disease 
-Chronic kidney disease
-COPD (chronic obstructive pulmonary disease)
-Cystic Fibrosis
-Down Syndrome
-Heart conditions, such as heart failure, coronary artery disease, or cardiomyopathies
-Hypertension or High Blood Pressure
-Immunocompromised state (weakened immune system)
-Liver Disease
-Neurologic conditions (e.g. dementia)
-Obesity (body mass index [BMI] of 30 kg/m2 or higher but < 40 kg/m2)
-Severe Obesity (BMI ≥ 40 kg/m2)
-Overweight (BMI ≥ 25 kg/m2)
-Pregnancy
-Pulmonary Fibrosis (damaged or scarred lung tissues)
-Sickle cell disease
-Smoking/nicotine addiction
-Thalassemia (type of blood disorder)
-Type 1 and Type 2 diabetes mellitus
-Note: Individuals who are pregnant and those in an immunocompromised state (weakened immune system)are also eligible but should follow CDC guidance and first discuss vaccination with their medical provider before receiving the vaccine. (see [here](https://covid19.nj.gov/faqs/nj-information/slowing-the-spread/who-is-eligible-for-vaccination-in-new-jersey-who-is-included-in-the-vaccination-phases#direct-link))
-* Are you classified as an essential worker?
-	* This includes:
-- Childcare workers in licensed and registered settings
-- Clergy
-- Communications, IT, and media workers
-- Educators and staff, including pre-K to 12 and higher education
-- Eldercare and support workers
-- Elections personnel
-- First responders
-- Healthcare workers
-- Hospitality workers
-- Individuals experiencing homelessness and those living in shelters
-- Judicial system workers
-- Laundry services workers
-- Librarians and library support staff
-- Long-term care and high-risk congregate care facility residents and staff
-- Medical supply chain employees
-- Members of tribal communities
-- Migrant farm workers
-- Postal and shipping service workers
-- Public safety workers
-- Real estate, building, and home services workers
-- Retail financial institution workers
-- Sanitation workers
-- Social service workers and support staff
-- Transportation workers
-- Utilities workers
-- Warehousing and logistics workers (see [here](https://covid19.nj.gov/faqs/nj-information/slowing-the-spread/who-is-eligible-for-vaccination-in-new-jersey-who-is-included-in-the-vaccination-phases#direct-link))
-* Are you experiencing homelessness or living in a shelter?
-	* Individuals experiencing homelessness and those living in shelters, including domestic violence shelters.
-* Are you a member of a tribal community?
-* Are you an adult with intellectual or developmental disabilities or are you a caregiver to an adult with intellectual or developmental disabilities?
-	* Developmental disabilities are a group of conditions due to an impairment in physical, learning, language, or behavior areas. (see [here](https://covid19.nj.gov/faqs/nj-information/slowing-the-spread/who-is-eligible-for-vaccination-in-new-jersey-who-is-included-in-the-vaccination-phases#direct-link))
+* Are you age 16+?
 
 # New Mexico
 
