@@ -3112,41 +3112,9 @@ Call the Health Department at 855-722-7878 and say that you live in a household 
 | scheduling_phone | [877-829-4682](tel:877-829-4682) |
 
 
-## Virginia Active Phase (1c)
+## Virginia Active Phase (2)
 
-* Are you a healthcare worker? (see [here](https://www.vdh.virginia.gov/covid-19-vaccine/#phase1a))
-* Are you a long term care resident or work in a long term care facility? (see [here](https://www.vdh.virginia.gov/covid-19-vaccine/#phase1a))
-* Are you classified as an essential worker?
-	* Frontline Essential Workers include:
-Police, Fire, and Hazmat
-Corrections and homeless shelter workers
-Childcare/PreK-12 Teachers/Staff (public and private)
-Food and Agriculture (including veterinarians)
-Manufacturing
-Grocery store workers
-Public transit workers
-Mail carriers (USPS and private)
-Officials needed to maintain continuity of government (including judges and public facing judicial workers)
-Clergy/Faith Leaders
-Janitorial/Cleaning staff
-
-Other Essential Workers include those workers in sectors essential to the functioning of society and/or are at higher risk of exposure to SARS-CoV-2, including: 
-
-Energy
-Water, wastewater, and waste removal workers (includes recycling removal workers)
-Housing and Construction
-Food Service
-Transportation and Logistics
-Institutions of Higher Education Faculty/Staff
-Finance
-Information Technology & Communication
-Media
-Legal Services
-Public Safety (engineers)
-Other Public Health Workers (see [here](https://www.vdh.virginia.gov/covid-19-vaccine/#phase1c))
-* Are you age 16+, and have a high-risk medical condition? (see [here](https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html))
-* Are you age 65+? (see [here](https://www.vdh.virginia.gov/covid-19-vaccine/#phase1b))
-* Do you live in a correctional facility, homeless shelter, or migrant labor camp? (see [here](https://www.vdh.virginia.gov/covid-19-vaccine/#phase1b))
+* Are you age 16+?
 
 ## Virginia Regions
 
