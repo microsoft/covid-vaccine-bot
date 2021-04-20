@@ -18,10 +18,11 @@ import './Locations.scss'
 
 export interface LocationsPhaseListProp {
 	currentLocation: any
+    onItemClicked?: (item: any) => void
 }
 
 export default observer(function LocationsPhaseList(props: LocationsPhaseListProp) {
-	const { currentLocation } = props
+	const { currentLocation, onItemClicked } = props
     const state = getAppStore()
     const [phaseItemList, setPhaseItemList] = useState<any[]>([])
 
@@ -124,7 +125,7 @@ export default observer(function LocationsPhaseList(props: LocationsPhaseListPro
                     setKey="set"
                     layoutMode={DetailsListLayoutMode.justified}
                     checkboxVisibility={2}
-                    //onItemInvoked={(item) => selectedPhase(false, item)}
+                    onItemInvoked={(item) => onItemClicked?.(item)}
                     onRenderItemColumn={onRenderItemColumn}
                     className="locationDetailsList"
                 />

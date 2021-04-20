@@ -11,10 +11,12 @@ import LocationDetails from './LocationDetails'
 import LocationStates from './LocationsStates'
 import LocationPhaseList from './LocationPhaseList'
 import LocationsBreadcrumbs from './LocationsBreadcrumbs'
+import LocationPhaseOverview from './LocationPhaseOverview'
 import { getAppStore } from '../store/store'
-import { useCallback, useState } from 'react'
+import { useCallback, useState, useRef } from 'react'
 import { getLocationData } from '../actions/repoActions'
-import {pathFind} from '../utils/dataUtils'
+import { pathFind } from '../utils/dataUtils'
+import { useBoolean } from '@uifabric/react-hooks'
 
 import './Locations.scss'
 
@@ -24,6 +26,10 @@ export default observer(function LocationsV2() {
 	const [ currentLocationList, setCurrentLocationList ] = useState<any>(repoFileData)
 	const [ currentLocation, setCurrentLocation ] = useState<any>()
 	const [ breadcrumbs, setBreadcrumbs ] = useState<any>({})
+	const [ isPhaseSelected, { setTrue: showPhaseComponent, setFalse: hidePhaseComponent }] = useBoolean(
+		false
+	)
+	const currentLocationTitle = useRef<string| null>(null)
 
 	const getLocationsData = useCallback(async (item: any) => {
 		const pathArray = item.value.info.path.split("/")
@@ -43,6 +49,7 @@ export default observer(function LocationsV2() {
 		}
 		setCurrentLocation(currLocation)
 		setBreadcrumbs((crumbs: any) => ({...crumbs, [currLocation.info.content.id]: {value: currLocation}}))
+		currentLocationTitle.current = currLocation.info.content.name as string
 
 	},[repoFileData])
 
@@ -51,6 +58,7 @@ export default observer(function LocationsV2() {
 			setCurrentLocationList(repoFileData)
 			setCurrentLocation(null)
 			setBreadcrumbs({})
+			currentLocationTitle.current = null
 		} else {
 			const pathArray = item.value.info.path.split("/")
 			pathArray.splice(-1,1)
@@ -65,29 +73,57 @@ export default observer(function LocationsV2() {
 			setBreadcrumbs(newCrumbs)
 			getLocationsData(item)
 		}
-	},[breadcrumbs, getLocationsData, repoFileData])
+
+		hidePhaseComponent()
+	},[breadcrumbs, getLocationsData, repoFileData, hidePhaseComponent])
+
+	const openPhaseItem = useCallback((item: any) => {
+		const phase_overview_crumbs = {
+			...breadcrumbs,
+			[currentLocation.info.content.id]: {
+				value: currentLocation
+			},
+			phase_overview: {
+				value: {
+					info: {
+						content: {
+							name: `${currentLocation.info.content.name} Phase Overview`
+						},
+						path: currentLocation.info.path.replace('info.json', 'regions/phase_overview/info.json')
+					}
+				}
+			}
+		}
+		setBreadcrumbs(phase_overview_crumbs)
+		showPhaseComponent()
+		currentLocationTitle.current = phase_overview_crumbs.phase_overview.value.info.content.name
+	},[currentLocation, showPhaseComponent, breadcrumbs, currentLocationTitle])
 
 	return (
 		<div className="locationPageContainer">
 			<div className="bodyContainer">
 				<div className="bodyHeader">
 					<div className="bodyHeaderTitle">
-						<LocationsBreadcrumbs breadcrumbs={breadcrumbs} currentLocation={currentLocation} navigateBack={navigateBack} />
+						<LocationsBreadcrumbs breadcrumbs={breadcrumbs} currentLocationTitle={currentLocationTitle.current} navigateBack={navigateBack} />
 					</div>
 				</div>
 				<div className="bodyContent">
 					{!isDataRefreshing ? (
-						<>
-							{ currentLocation && (
-								<>
-									<LocationDetails currentLocation={currentLocation} />
-									<LocationPhaseList currentLocation={currentLocation} />
-								</>
-							)}
-							{!currentLocation || currentLocation?.regions ? (
-								<LocationStates locationList={currentLocationList} onSelectedItem={(item) => getLocationsData(item)}/>
-							): null}
-						</>
+						!isPhaseSelected ? (
+							<>
+								{ currentLocation && (
+									<>
+										<LocationDetails currentLocation={currentLocation} />
+										<LocationPhaseList currentLocation={currentLocation} onItemClicked={openPhaseItem} />
+									</>
+								)}
+								{!currentLocation || currentLocation?.regions ? (
+									<LocationStates locationList={currentLocationList} onSelectedItem={(item) => getLocationsData(item)}/>
+								): null}
+							</>
+						) : (
+							<LocationPhaseOverview currentLocation={currentLocation} />
+						)
 					) : (
 						<section>
 							<ProgressIndicator description={t('LocationsStates.loading')} />

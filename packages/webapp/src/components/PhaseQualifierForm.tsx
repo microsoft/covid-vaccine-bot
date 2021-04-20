@@ -29,8 +29,8 @@ export interface PhaseQualifierFormProps {
 	isRegion: boolean
 	groupKey: string
 	onRowItemRemove?: (item: any, groupKey: any) => void
-	onRowItemTextChange: (item: any, prevItem: any) => void
-	onRowItemQualifierChange: (item: any, prevItem: any) => void
+	onRowItemTextChange?: (item: any, prevItem: any) => void
+	onRowItemQualifierChange?: (item: any, prevItem: any) => void
 }
 
 export default observer(function PhaseQualiferForm(
@@ -141,7 +141,7 @@ export default observer(function PhaseQualiferForm(
 					moreInfoContent: '',
 				},
 			}
-			onRowItemQualifierChange(changedItem.current, rowItems.item)
+			onRowItemQualifierChange?.(changedItem.current, rowItems.item)
 		},
 		[onRowItemQualifierChange, rowItems]
 	)
@@ -230,14 +230,14 @@ export default observer(function PhaseQualiferForm(
 					styles={{ root: { width: 'calc(100% - 32px)', padding: '5px 0' } }}
 					value={moreInfoText}
 					onChange={onMoreInfoTextChange}
-					onBlur={() => onRowItemTextChange(changedItem.current, rowItems.item)}
+					onBlur={() => onRowItemTextChange?.(changedItem.current, rowItems.item)}
 				/>
 				<TextField
 					placeholder={t('PhaseQualifierForm.MoreInfoUrl.placeholder')}
 					styles={{ root: { width: 'calc(100% - 32px)', padding: '5px 0' } }}
 					value={moreInfoUrl}
 					onChange={onMoreInfoUrlChange}
-					onBlur={() => onRowItemTextChange(changedItem.current, rowItems.item)}
+					onBlur={() => onRowItemTextChange?.(changedItem.current, rowItems.item)}
 				/>
 			</div>
 		</div>
