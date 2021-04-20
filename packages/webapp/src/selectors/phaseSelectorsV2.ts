@@ -33,7 +33,7 @@ const getCustomStrings = (currentLocation?: any, keyFilter?: string) => {
 		.sort((a, b) => (a.text > b.text ? 1 : -1))
 }
 
-const getExactCustomStrings = (currentLocation?: any, keyFilter?: string) => {
+export const getExactCustomStrings = (currentLocation?: any, keyFilter?: string) => {
 	const { repoFileData, currentLanguage } = getAppStore()
 	const currentLocationRoot = currentLocation.info.path.split('/')[0]
 	const rootRepo = repoFileData[currentLocationRoot]

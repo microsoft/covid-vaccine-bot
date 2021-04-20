@@ -260,7 +260,7 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 				isBlocking={false}
 			>
 				<LocationForm
-					item={selectedLocationItem.current}
+					currentLocation={selectedLocationItem.current?.value}
 					onCancel={dismissLocationModal}
 					onSubmit={onLocationFormSubmit}
 				/>

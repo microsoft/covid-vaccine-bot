@@ -14,27 +14,20 @@ import { observer } from 'mobx-react-lite'
 import { useCallback, useRef, useState } from 'react'
 import { getText as t } from '../selectors/intlSelectors'
 import {
-	getStateCustomStrings,
-	getRegionCustomStrings,
+	getCustomString,
 } from '../selectors/locationSelectors'
 import './LocationForm.scss'
 
 export interface LocationFormProp {
-	item?: any
+	currentLocation?: any
 	onSubmit?: (locationData: any, prevItem: any) => void
 	onCancel?: () => void
-	isRegion?: boolean
 }
 
-const setInitialData = (item?: any, isRegion?: boolean) => {
-	const getStrings = (item: any, keyFilter: string, isRegion?: boolean) => {
-		return isRegion
-			? getRegionCustomStrings(item, keyFilter)
-			: getStateCustomStrings(item, keyFilter)
-	}
+const setInitialData = (currentLocation?: any) => {
 
-	if (item) {
-		const { info, vaccination } = item?.value || {}
+	if (currentLocation) {
+		const { info, vaccination } = currentLocation || {}
 		const {
 			info: vacInfo,
 			scheduling_phone,
@@ -55,10 +48,10 @@ const setInitialData = (item?: any, isRegion?: boolean) => {
 			eligibility: eligibility?.url || '',
 			eligibilityPlan: eligibility_plan?.url || '',
 			schedulingPhone: scheduling_phone?.text
-				? getStrings(item, scheduling_phone.text, isRegion)
+				? getCustomString(currentLocation, scheduling_phone.text)
 				: '',
 			schedulingPhoneDesc: scheduling_phone?.description
-				? getStrings(item, scheduling_phone.description, isRegion)
+				? getCustomString(currentLocation, scheduling_phone.description)
 				: '',
 			noPhaseLabel: vaccination.content?.noPhaseLabel || false,
 		}
@@ -80,8 +73,8 @@ const setInitialData = (item?: any, isRegion?: boolean) => {
 }
 
 export default observer(function LocationForm(props: LocationFormProp) {
-	const { onSubmit, onCancel, item, isRegion } = props
-	const [formData, setFormData] = useState<any>(setInitialData(item, isRegion))
+	const { onSubmit, onCancel, currentLocation } = props
+	const [formData, setFormData] = useState<any>(setInitialData(currentLocation))
 	const fieldChanges = useRef<any>(formData)
 	const regionTypeOptions = [
 		{
@@ -104,12 +97,10 @@ export default observer(function LocationForm(props: LocationFormProp) {
 			key: 'city',
 			text: t('LocationForm.regionTypeOptions.city'),
 		},
-	].filter((region) => (isRegion ? region.key !== 'state' : true))
+	]
 
-	const baseTitle = isRegion
-		? t('LocationForm.baseTitle.sublocation')
-		: t('LocationForm.baseTitle.location')
-	const formTitle = item
+	const baseTitle = t('LocationForm.baseTitle.location')
+	const formTitle = currentLocation
 		? `${t('LocationForm.formTitle.edit')} ${baseTitle}`
 		: `${t('LocationForm.formTitle.new')} ${baseTitle}`
 
@@ -238,7 +229,7 @@ export default observer(function LocationForm(props: LocationFormProp) {
 				<PrimaryButton
 					text={t('App.submit')}
 					disabled={!canSubmit()}
-					onClick={() => onSubmit?.(formData, item)}
+					onClick={() => onSubmit?.(formData, currentLocation)}
 				/>
 				<DefaultButton text={t('App.cancel')} onClick={() => onCancel?.()} />
 			</div>

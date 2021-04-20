@@ -4,14 +4,16 @@
  */
 import { observer } from 'mobx-react-lite'
 import { getAppStore } from '../store/store'
-import { useState, useEffect } from 'react'
+//import { useState, useEffect } from 'react'
 import {
+	FontIcon,
 	IColumn,
 	DetailsList,
 	DetailsListLayoutMode
 } from '@fluentui/react'
 
 import { getText as t } from '../selectors/intlSelectors'
+import { getCustomString } from '../selectors/locationSelectors'
 
 import './Locations.scss'
 
@@ -20,39 +22,12 @@ export interface LocationsDetailsProp {
 }
 
 
-const formValueRender = (item: any) => {
-	console.log(item)
-	if(item.isUrl){
-		return ( <a href={item.value} target="_blank" rel="noreferrer">{item.value}</a> )
-	}
-	return (<span>{item.value}</span>)
-	}
-const columns: IColumn[] = [
-	      {
-	        key: 'label',
-	        name: 'label',
-	        fieldName: 'label',
-	        minWidth: 200,
-	        maxWidth: 300,
-	        isMultiline: true
-	      },
-	      {
-	        key: 'value',
-	        name: 'value',
-	        fieldName: 'value',
-	        onRender: formValueRender,
-	        minWidth: 200
-	        
-	      }
-      ]
-
 export default observer(function LocationsDetails(props: LocationsDetailsProp) {
 
-	const {currentLocation} = props
-	const { isDataRefreshing, defaultLanguage } = getAppStore()
-	const [ locationItems, setLocationItems ] = useState<any>([])
+	const { currentLocation } = props
+	const { isEditable } = getAppStore()
+	//const [ locationItems, setLocationItems ] = useState<any>([])
 
-	// useEffect(() => {
 		const items = []
 
 		items.push({ label:'Details','value': currentLocation.info.content.name, isUrl:false })
@@ -83,23 +58,59 @@ export default observer(function LocationsDetails(props: LocationsDetailsProp) {
 		}
 
 		if(currentLocation.vaccination?.content.links.scheduling_phone?.text){
-			items.push({ label:t('LocationForm.schedulingPhone'),'value': currentLocation.vaccination.content.links.scheduling_phone.text, isUrl:false})
+			items.push({ label:t('LocationForm.schedulingPhone'),'value': getCustomString(currentLocation, currentLocation.vaccination.content.links.scheduling_phone.text), isUrl:false})
 		}
 
 		if(currentLocation.vaccination?.content.links.scheduling_phone?.description){
-			items.push({ label: t('LocationForm.schedulingPhoneDesc'),'value': currentLocation.vaccination.content.links.scheduling_phone.description, isUrl:false})
+			items.push({ label: t('LocationForm.schedulingPhoneDesc'),'value': getCustomString(currentLocation, currentLocation.vaccination.content.links.scheduling_phone.description), isUrl:false})
 		}
 
-		//setLocationItems(items)
 
-	// }, [currentLocation, defaultLanguage])
-
-	// 		{ label:'noPhaseLabel','value': currentLocation.vaccination?.content.noPhaseLabel || false}
+	const formValueRender = (item: any) => {
+	if(item.isUrl){
+		return ( <a href={item.value} target="_blank" rel="noreferrer">{item.value}</a> )
+	}
+	return (<span>{item.value}</span>)
+	}
+	const columns: IColumn[] = [
+		      {
+		        key: 'label',
+		        name: 'label',
+		        fieldName: 'label',
+		        minWidth: 200,
+		        maxWidth: 400,
+		        isMultiline: true
+		      },
+		      {
+		        key: 'value',
+		        name: 'value',
+		        fieldName: 'value',
+		        onRender: formValueRender,
+		        minWidth: 200,
+		        maxWidth: 400,
+		        
+		      }
+      ]
 
 	return (
         <>
-			<section>
-                <div className="locationDetailsSectionHeader">Location Details</div>
+			<section className="LocationsDetailsComponent">
+                <div className="locationDetailsSectionHeader">
+                <div>
+						Location Details
+					</div>
+					{isEditable && (
+						<div
+						className="editLocationDetailsButton"
+						>
+							<FontIcon
+								iconName="CircleAdditionSolid"
+								style={{ color: '#0078d4' }}
+							/>
+							Edit Details
+						</div>
+					)}
+				</div>
                 <DetailsList
 					items={items}
 					columns={columns}
