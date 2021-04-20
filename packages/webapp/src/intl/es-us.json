@@ -3,7 +3,7 @@
 		"title": "Compositor de datos",
 		"LoginButton": "Iniciar sesión con Github",
 		"active": "activo",
-		"loading": "Cargando contenido ...",		
+		"loading": "Cargando contenido ...",
 		"submit": "Entregar",
 		"cancel": "Cancelar",
 		"saving": "Guardando cambios...",
@@ -11,7 +11,7 @@
 		"NotFound": "404 pagina no encontrada.",
 		"Pivot": {
 			"Dashboard": "Tablero",
-			"Locations": "Locations",
+			"Locations": "Ubicaciones",
 			"Translate": "Traducir",
 			"Review": "Revisar"
 		},
@@ -87,7 +87,7 @@
 		"regionTypeOptions": {
 			"placeholder": "Tipo de región",
 			"state": "Expresar",
-			"territory": "Territory",
+			"territory": "Territorio",
 			"tribal_land": "Tierra tribal",
 			"county": "Condado",
 			"city": "Ciudad"
