@@ -92,39 +92,6 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 		}
 	},[locationList])
 
-	// useEffect(() => {
-	// 	if (state.repoFileData) {
-	// 		const nextFilteredStateList: any[] = []
-	// 		Object.entries(state.repoFileData).forEach(
-	// 			([key, value]: [string, any]) => {
-	// 				const stateId = value?.info?.content.id
-	// 				const stateNames = state?.globalFileData?.cdcStateNames.content
-
-	// 				if(!stateId)
-	// 					return 
-
-	// 				const stateLabel =
-	// 					stateNames[`cdc/${stateId}/state_name`] &&
-	// 					stateNames[`cdc/${stateId}/state_name`][state.currentLanguage] &&
-	// 					stateNames[`cdc/${stateId}/state_name`][
-	// 						state.currentLanguage
-	// 					].trim() !== ''
-	// 						? stateNames[`cdc/${stateId}/state_name`][state.currentLanguage]
-	// 						: `${t('LocationsStates.translationNotFound')} (${stateId})`
-
-	// 				nextFilteredStateList.push({
-	// 					key: key,
-	// 					text: stateLabel,
-	// 					regions: value?.regions ? Object.keys(value.regions).length : 0,
-	// 					value: value,
-	// 				})
-	// 			}
-	// 		)
-	// 		setFilteredStateList(nextFilteredStateList)
-	// 		stateRepoFullList.current = nextFilteredStateList
-	// 	}
-	// }, [state.repoFileData, state.globalFileData, state.currentLanguage, stateRepoFullList])
-
 	const onStateFilter = useCallback(
 		(_event: any, text?: string) => {
 			if (text) {

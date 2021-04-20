@@ -4,16 +4,19 @@
  */
 import { observer } from 'mobx-react-lite'
 import { getAppStore } from '../store/store'
-//import { useState, useEffect } from 'react'
+import { useBoolean } from '@uifabric/react-hooks'
+import { useCallback } from 'react'
 import {
 	FontIcon,
 	IColumn,
 	DetailsList,
-	DetailsListLayoutMode
+	DetailsListLayoutMode,
+	Modal
 } from '@fluentui/react'
 
 import { getText as t } from '../selectors/intlSelectors'
 import { getCustomString } from '../selectors/locationSelectors'
+import LocationForm from './LocationForm'
 
 import './Locations.scss'
 
@@ -26,7 +29,26 @@ export default observer(function LocationsDetails(props: LocationsDetailsProp) {
 
 	const { currentLocation } = props
 	const { isEditable } = getAppStore()
-	//const [ locationItems, setLocationItems ] = useState<any>([])
+
+	const [
+		isLocationModalOpen,
+		{ setTrue: openLocationModal, setFalse: dismissLocationModal },
+	] = useBoolean(false)
+
+	const onLocationFormSubmit = useCallback(
+		(locationData, prevItem) => {
+			dismissLocationModal()
+			// if (!prevItem) {
+			// 	updateLocationList(locationData, false)
+			// } else {
+			// 	updateLocationData(locationData, false, prevItem)
+			// }
+		},
+		[dismissLocationModal]
+	)
+
+
+
 
 		const items = []
 
@@ -102,6 +124,7 @@ export default observer(function LocationsDetails(props: LocationsDetailsProp) {
 					{isEditable && (
 						<div
 						className="editLocationDetailsButton"
+						onClick={() => openLocationModal()}
 						>
 							<FontIcon
 								iconName="CircleAdditionSolid"
@@ -122,6 +145,19 @@ export default observer(function LocationsDetails(props: LocationsDetailsProp) {
 					
 				/>
            	</section>
+           	<Modal
+				isOpen={isLocationModalOpen}
+				isModeless={false}
+				isDarkOverlay={true}
+				isBlocking={false}
+			>
+				<LocationForm
+					currentLocation={currentLocation}
+					onCancel={dismissLocationModal}
+					onSubmit={onLocationFormSubmit}
+				/>
+			</Modal>
+			
          </>
 	)
 })
