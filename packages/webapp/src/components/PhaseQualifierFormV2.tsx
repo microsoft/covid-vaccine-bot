@@ -190,10 +190,10 @@ export default observer(function PhaseQualifierForm(props: PhaseQualifierFormPro
 								text: t('PhaseQualifierForm.FormButtons.remove'),
 								onClick: () => onRowItemRemove?.(rowItem, groupKey),
 							},
-							{
-								key: 'details',
-								text: t('PhaseQualifierForm.FormButtons.details'),
-							},
+							// {
+							// 	key: 'details',
+							// 	text: t('PhaseQualifierForm.FormButtons.details'),
+							// },
 						],
 					}}
 					title={t('PhaseQualifierForm.FormButtons.more')}

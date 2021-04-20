@@ -82,6 +82,7 @@
 	cursor: pointer;
 	display: flex;
 	justify-content: space-between;
+	color: #605e5c;
 
 	.groupHeaderLabel {
 		display: flex;
@@ -113,7 +114,8 @@
 	}
 
 	&:hover {
-		background-color: $ms-color-gray40;
+		background-color: $ms-color-gray20;
+		color: black;
 	}
 
 	.groupToggleIcon {
