@@ -10,6 +10,7 @@ import {
 	FontIcon,
 } from '@fluentui/react'
 import PhaseQualifierForm from './PhaseQualifierFormV2'
+import { getParentLocationVaccinationData } from '../selectors/phaseSelectorsV2'
 
 import './Locations.scss'
 
@@ -27,6 +28,13 @@ export default observer(function LocationPhaseQualifiers(props: LocationPhaseQua
 		if (currentLocation) {
 			const tempPhaseList: any[] = []
 			let phaseObj = currentLocation.vaccination.content.phases
+			let activePhase = currentLocation?.vaccination?.content?.activePhase
+
+			if (!phaseObj) {
+				const parentVaccinationData = getParentLocationVaccinationData(currentLocation)
+				phaseObj = parentVaccinationData.content.phases
+				activePhase = parentVaccinationData.content.activePhase
+			}
 
 			phaseObj.forEach((phase: any) => {
 				let isCollapsed = true
@@ -37,7 +45,7 @@ export default observer(function LocationPhaseQualifiers(props: LocationPhaseQua
                     isCollapsed = true
                 }
 
-				const isActivePhase = currentLocation?.vaccination?.content?.activePhase === phase.id || false
+				const isActivePhase = activePhase === phase.id || false
 
 				const tempPhaseObj: any = {
 					key: phase.id,

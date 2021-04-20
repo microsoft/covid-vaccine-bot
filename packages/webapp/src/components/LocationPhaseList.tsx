@@ -13,6 +13,7 @@ import {
     FontIcon,
     IColumn
 } from '@fluentui/react'
+import { getParentLocationVaccinationData } from '../selectors/phaseSelectorsV2'
 
 import './Locations.scss'
 
@@ -118,7 +119,7 @@ export default observer(function LocationsPhaseList(props: LocationsPhaseListPro
                     </div>
                 )}
             </div>
-            {currentLocation.vaccination?.content?.phases?.length > 0 ? (
+            {phaseItemList.length > 0 ? (
                 <DetailsList
                     items={phaseItemList}
                     columns={phaseColumns}
@@ -137,13 +138,22 @@ export default observer(function LocationsPhaseList(props: LocationsPhaseListPro
 })
 
 const setInitialPhaseItems = (currentLocation: any): any[] => {
-	if (!currentLocation.value.vaccination.content.phases) {
-		return []
+	let phases: any[] = currentLocation.value.vaccination.content.phases
+	let activePhase: string = currentLocation.value.vaccination.content.activePhase
+
+	if (!phases) {
+		const parentLocationVaccinationData = getParentLocationVaccinationData(currentLocation.value)
+		if (parentLocationVaccinationData) {
+			console.log(parentLocationVaccinationData)
+			phases = parentLocationVaccinationData.content.phases
+			activePhase = parentLocationVaccinationData.content.activePhase
+		} else {
+			return []
+		}
 	}
-	return currentLocation.value.vaccination.content.phases.map(
+
+	return phases.map(
 		(phase: any, idx: number) => {
-			const activePhase: string =
-            currentLocation.value.vaccination.content.activePhase
 			return {
 				key: String(phase.id) + idx,
 				keyId:

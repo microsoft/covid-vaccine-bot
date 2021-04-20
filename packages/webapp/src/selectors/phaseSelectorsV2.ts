@@ -4,6 +4,7 @@
  */
 import { getAppStore } from '../store/store'
 import { toProperCase } from '../utils/textUtils'
+import { pathFind } from '../utils/dataUtils'
 
 const getCustomStrings = (currentLocation?: any, keyFilter?: string) => {
 	const { repoFileData, currentLanguage } = getAppStore()
@@ -134,4 +135,29 @@ export const getPhaseMoreInfoUrl = (
 	}
 
 	return rowItem.moreInfoUrl
+}
+
+export const getParentLocationVaccinationData = (currentLocation: any): any => {
+	const { repoFileData } = getAppStore()
+	const pathArray = currentLocation.info.path.split("/")
+	pathArray.splice(-1,1) //remove info.json
+	pathArray.splice(-2,2) //remove current location level
+	let vaccinationData = null
+
+	while (vaccinationData === null) {
+		const parentLocation = pathFind(repoFileData, pathArray)
+
+		if (!parentLocation.vaccination.content.phases) {
+			pathArray.splice(-2,2)
+		} else {
+			vaccinationData = parentLocation.vaccination
+		}
+
+		if (pathArray.length === 0) {
+			const currentLocationRoot = currentLocation.info.path.split('/')[0]
+			vaccinationData = repoFileData[currentLocationRoot].vaccination
+		}
+	}
+
+	return vaccinationData
 }
