@@ -6,9 +6,12 @@ import { observer } from 'mobx-react-lite'
 import { getAppStore } from '../store/store'
 import { useState, useEffect } from 'react'
 import {
+	IColumn,
 	DetailsList,
 	DetailsListLayoutMode
 } from '@fluentui/react'
+
+import { getText as t } from '../selectors/intlSelectors'
 
 import './Locations.scss'
 
@@ -16,47 +19,96 @@ export interface LocationsDetailsProp {
 	currentLocation: any
 }
 
+
+const formValueRender = (item: any) => {
+	console.log(item)
+	if(item.isUrl){
+		return ( <a href={item.value} target="_blank" rel="noreferrer">{item.value}</a> )
+	}
+	return (<span>{item.value}</span>)
+	}
+const columns: IColumn[] = [
+	      {
+	        key: 'label',
+	        name: 'label',
+	        fieldName: 'label',
+	        minWidth: 200,
+	        maxWidth: 300,
+	        isMultiline: true
+	      },
+	      {
+	        key: 'value',
+	        name: 'value',
+	        fieldName: 'value',
+	        onRender: formValueRender,
+	        minWidth: 200
+	        
+	      }
+      ]
+
 export default observer(function LocationsDetails(props: LocationsDetailsProp) {
 
 	const {currentLocation} = props
-	const { isDataRefreshing } = getAppStore()
+	const { isDataRefreshing, defaultLanguage } = getAppStore()
 	const [ locationItems, setLocationItems ] = useState<any>([])
 
-	useEffect(() => {
+	// useEffect(() => {
 		const items = []
 
-		items.push({ label:'details','value': currentLocation.info.content.name })
-		items.push({ label:'regionType','value': currentLocation.info.content.type})
+		items.push({ label:'Details','value': currentLocation.info.content.name, isUrl:false })
+		items.push({ label: t('LocationForm.regionTypeOptions.placeholder'),'value': currentLocation.info.content.type, isUrl:false})
 
-		setLocationItems(items)
+		if(currentLocation.vaccination?.content.links.info?.url){
+			items.push({ label:t('LocationForm.info'),'value': currentLocation.vaccination.content.links.info.url, isUrl:true })
+		}
 
-	}, [currentLocation])
+		if(currentLocation.vaccination?.content.links.workflow?.url){
+			items.push({ label: t('LocationForm.workflow'),'value': currentLocation.vaccination.content.links.workflow.url, isUrl:true})
+		}
 
-	// const locationItems = [
+		if(currentLocation.vaccination?.content.links.scheduling?.url){
+			items.push({ label:t('LocationForm.scheduling'),'value': currentLocation.vaccination.content.links.scheduling.url, isUrl:true})
+		}
 
+		if(currentLocation.vaccination?.content.links.providers?.url){
+			items.push({ label: t('LocationForm.providers'),'value': currentLocation.vaccination.content.links.providers.url, isUrl:true})
+		}
 
-	// 		{ label:'info','value': currentLocation.vaccination?.content.links.info?.url || ''},
-	// 		{ label:'workflow','value': currentLocation.vaccination?.content.links.workflow?.url || ''},
-	// 		{ label:'scheduling','value': currentLocation.vaccination?.content.links.scheduling?.url || ''},
-	// 		{ label:'providers','value': currentLocation.vaccination?.content.links.providers?.url || ''},
-	// 		{ label:'eligibility','value': currentLocation.vaccination?.content.links.eligibility?.url || ''},
-	// 		{ label:'eligibilityPlan','value': currentLocation.vaccination?.content.links.eligibility_plan?.url || ''},
-	// 		{ label:'schedulingPhone','value': currentLocation.vaccination?.content.links.scheduling_phone?.text || ''},
-	// 		{ label:'schedulingPhoneDesc','value': currentLocation.vaccination?.content.links.scheduling_phone?.description ||''},
+		if(currentLocation.vaccination?.content.links.eligibility?.url){
+			items.push({ label:t('LocationForm.eligibility'),'value': currentLocation.vaccination.content.links.eligibility.url, isUrl:true})
+		}
+
+		if(currentLocation.vaccination?.content.links.eligibility_plan?.url){
+			items.push({ label: t('LocationForm.eligibilityPlan'),'value': currentLocation.vaccination.content.links.eligibility_plan.url, isUrl:true})
+		}
+
+		if(currentLocation.vaccination?.content.links.scheduling_phone?.text){
+			items.push({ label:t('LocationForm.schedulingPhone'),'value': currentLocation.vaccination.content.links.scheduling_phone.text, isUrl:false})
+		}
+
+		if(currentLocation.vaccination?.content.links.scheduling_phone?.description){
+			items.push({ label: t('LocationForm.schedulingPhoneDesc'),'value': currentLocation.vaccination.content.links.scheduling_phone.description, isUrl:false})
+		}
+
+		//setLocationItems(items)
+
+	// }, [currentLocation, defaultLanguage])
+
 	// 		{ label:'noPhaseLabel','value': currentLocation.vaccination?.content.noPhaseLabel || false}
-	// 	]
-	
-	// console.log(locationItems)
+
 	return (
         <>
 			<section>
                 <div className="locationDetailsSectionHeader">Location Details</div>
                 <DetailsList
-					items={locationItems}
+					items={items}
+					columns={columns}
 					setKey="set"
 					layoutMode={DetailsListLayoutMode.justified}
 					selectionPreservedOnEmptyClick={true}
 					checkboxVisibility={2}
+					onRenderDetailsHeader={()=>{return null}}
+					
 				/>
            	</section>
          </>

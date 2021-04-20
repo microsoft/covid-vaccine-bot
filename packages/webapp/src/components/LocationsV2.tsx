@@ -46,6 +46,8 @@ export default observer(function LocationsV2() {
 				}
 				setCurrentLocationList(currLocation.regions)
 			}
+		} else {
+			setCurrentLocationList([])
 		}
 		setCurrentLocation(currLocation)
 		setBreadcrumbs((crumbs: any) => ({...crumbs, [currLocation.info.content.id]: {value: currLocation}}))
@@ -117,9 +119,7 @@ export default observer(function LocationsV2() {
 										<LocationPhaseList currentLocation={currentLocation} onItemClicked={openPhaseItem} />
 									</>
 								)}
-								{!currentLocation || currentLocation?.regions ? (
 									<LocationStates locationList={currentLocationList} onSelectedItem={(item) => getLocationsData(item)}/>
-								): null}
 							</>
 						) : (
 							<LocationPhaseQualifiers currentLocation={currentLocation} />
