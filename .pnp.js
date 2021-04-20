@@ -101,6 +101,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jest", "npm:26.6.3"],
             ["lint-staged", "npm:10.5.4"],
             ["npm-run-all", "npm:4.1.5"],
+            ["shx", "npm:0.3.3"],
             ["typescript", "patch:typescript@npm%3A4.2.3#builtin<compat/typescript>::version=4.2.3&hash=a45b0e"]
           ],
           "linkType": "SOFT",
@@ -23666,6 +23667,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jest", "npm:26.6.3"],
             ["lint-staged", "npm:10.5.4"],
             ["npm-run-all", "npm:4.1.5"],
+            ["shx", "npm:0.3.3"],
             ["typescript", "patch:typescript@npm%3A4.2.3#builtin<compat/typescript>::version=4.2.3&hash=a45b0e"]
           ],
           "linkType": "SOFT",

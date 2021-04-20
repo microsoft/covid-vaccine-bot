@@ -12,6 +12,7 @@
 !.yarn/versions
 
 # Build Output
+dist/
 packages/*/dist/
 packages/*/lib/
 

@@ -9,6 +9,11 @@
 		"test:all": "yarn workspaces foreach -pvt run test",
 		"start:all": "yarn workspaces foreach -piv run start",
 		"deploy:all": "yarn workspaces foreach -piv run deploy",
+		"fnapp_create_dist": "shx mkdir -p dist/functions/vax-location-ingest/VaccineFinderIngest",
+		"fnapp_copy_scaffold": "shx cp host.json dist/functions/vax-location-ingest",
+		"fnapp_copy_ingester": "shx cp -r ./packages/locations-ingester/config ./packages/locations-ingester/lib ./packages/locations-ingester/function.json packages/locations-ingester/.funcignore packages/locations-ingester/package.json ./dist/functions/vax-location-ingest/VaccineFinderIngest",
+		"fnapp_install_pkgs": "cd dist/functions/vax-location-ingest/VaccineFinderIngest && npm install --production",
+		"fnapp:build": "run-s fnapp_create_dist fnapp_copy_scaffold fnapp_copy_ingester fnapp_install_pkgs",
 		"test:unit": "jest --ci --coverage",
 		"lint": "essex lint --docs",
 		"lint:webapp": "essex lint --docs packages/webapp",
@@ -44,6 +49,7 @@
 		"jest": "^26.6.3",
 		"lint-staged": "^10.5.4",
 		"npm-run-all": "^4.1.5",
+		"shx": "^0.3.3",
 		"typescript": "^4.2.3"
 	},
 	"workspaces": [
