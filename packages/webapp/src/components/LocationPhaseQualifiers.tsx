@@ -13,11 +13,11 @@ import PhaseQualifierForm from './PhaseQualifierForm'
 
 import './Locations.scss'
 
-export interface LocationPhaseOverviewProp {
+export interface LocationPhaseQualifiersProp {
 	currentLocation: any
 }
 
-export default observer(function LocationPhaseOverview(props: LocationPhaseOverviewProp) {
+export default observer(function LocationPhaseQualifiers(props: LocationPhaseQualifiersProp) {
     const { currentLocation } = props
     const {	currentLanguage, isEditable } = getAppStore()
     const [phaseList, setPhaseList] = useState<any[]>([])
@@ -31,11 +31,11 @@ export default observer(function LocationPhaseOverview(props: LocationPhaseOverv
 			phaseObj.forEach((phase: any) => {
 				let isCollapsed = true
 
-                // if (groupToggleState.current.length > 0) {
-                //     isCollapsed = !groupToggleState.current.includes(phase.id)
-                // } else {
-                //     isCollapsed = value.value.id !== phase.id
-                // }
+                if (groupToggleState.current.length > 0) {
+                    isCollapsed = !groupToggleState.current.includes(phase.id)
+                } else {
+                    isCollapsed = true
+                }
 
 				const isActivePhase = currentLocation?.vaccination?.content?.activePhase === phase.id || false
 
@@ -86,9 +86,23 @@ export default observer(function LocationPhaseOverview(props: LocationPhaseOverv
 		}
 	}, [currentLocation, currentLanguage])
 
+	const onToggleCollapse = (toggleGroup: any) => {
+		const tempPhaseList = phaseList.map((group) => {
+			if (group.key === toggleGroup.key) {
+				group.isCollapsed = !group.isCollapsed
+			}
+
+			return group
+		})
+		groupToggleState.current = tempPhaseList.filter( group => !group.isCollapsed ).map(group => group.key)
+		setPhaseList(tempPhaseList)
+	}
+
     return (
-        <section className="LocationPhaseOverviewComponent">
-            <div>Phase Overview</div>
+        <section className="LocationPhaseQualifiersComponent">
+            <div className="locationPhaseQualifiersSectionHeader">
+                Phase Qualifiers
+            </div>
             <div className="phaseGridContainer">
 			{phaseList.length > 0
 				? phaseList.map((group: any, idx: number) => {
@@ -97,9 +111,9 @@ export default observer(function LocationPhaseOverview(props: LocationPhaseOverv
 								<div className="phaseGroupHeader">
 									<div
 										className="groupHeaderLabel"
-										// onClick={() => {
-										// 	onToggleCollapse(group)
-										// }}
+										onClick={() => {
+											onToggleCollapse(group)
+										}}
 									>
 										<FontIcon
 											iconName={
@@ -180,7 +194,7 @@ export default observer(function LocationPhaseOverview(props: LocationPhaseOverv
 									{group.items.length > 0 && (
 										group.items.map((groupItem: any, idx: number) => {
 											return (
-                                                null
+                                                <div>hello</div>
 												// <PhaseQualifierForm
 												// 	key={groupItem.key+'_'+idx}
 												// 	groupKey={group.key}

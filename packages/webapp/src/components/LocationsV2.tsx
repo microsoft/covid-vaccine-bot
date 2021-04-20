@@ -11,7 +11,7 @@ import LocationDetails from './LocationDetails'
 import LocationStates from './LocationsStates'
 import LocationPhaseList from './LocationPhaseList'
 import LocationsBreadcrumbs from './LocationsBreadcrumbs'
-import LocationPhaseOverview from './LocationPhaseOverview'
+import LocationPhaseQualifiers from './LocationPhaseQualifiers'
 import { getAppStore } from '../store/store'
 import { useCallback, useState, useRef } from 'react'
 import { getLocationData } from '../actions/repoActions'
@@ -122,7 +122,7 @@ export default observer(function LocationsV2() {
 								): null}
 							</>
 						) : (
-							<LocationPhaseOverview currentLocation={currentLocation} />
+							<LocationPhaseQualifiers currentLocation={currentLocation} />
 						)
 					) : (
 						<section>
