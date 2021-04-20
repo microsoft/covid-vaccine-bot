@@ -20,7 +20,7 @@
 		"lint:fix": "essex lint --fix",
 		"git_is_clean": "essex git-is-clean",
 		"prettify": "essex prettify",
-		"ci": "run-s build:all lint test:all test:unit git_is_clean",
+		"ci": "run-s build:all lint test:all test:unit fnapp:build git_is_clean",
 		"prepublishOnly": "pinst --disable",
 		"postpublish": "pinst --enable"
 	},
