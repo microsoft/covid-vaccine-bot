@@ -9,7 +9,7 @@ import { getAppStore } from '../store/store'
 import {
 	FontIcon,
 } from '@fluentui/react'
-import PhaseQualifierForm from './PhaseQualifierForm'
+import PhaseQualifierForm from './PhaseQualifierFormV2'
 
 import './Locations.scss'
 
@@ -194,18 +194,15 @@ export default observer(function LocationPhaseQualifiers(props: LocationPhaseQua
 									{group.items.length > 0 && (
 										group.items.map((groupItem: any, idx: number) => {
 											return (
-                                                <div>hello</div>
-												// <PhaseQualifierForm
-												// 	key={groupItem.key+'_'+idx}
-												// 	groupKey={group.key}
-												// 	rowItems={{ item: groupItem }}
-												// 	selectedState={currentLocation}
-												// 	isEditable={isEditable}
-												// 	isRegion={false}
-												// 	//onRowItemRemove={onRemoveRowItem}
-												// 	//onRowItemTextChange={onChangeRowItemText}
-												// 	//onRowItemQualifierChange={onChangeRowItemQualifier}
-												// />
+                                                <PhaseQualifierForm
+													key={`${groupItem.key}_${idx}`}
+													currentLocation={currentLocation}
+													groupKey={group.key}
+													rowItem={groupItem}
+													//onRowItemRemove={onRemoveRowItem}
+													//onRowItemTextChange={onChangeRowItemText}
+													//onRowItemQualifierChange={onChangeRowItemQualifier}
+												/>
 											)
 										})
 									)}
