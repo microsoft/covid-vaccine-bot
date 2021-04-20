@@ -9,7 +9,7 @@
 		"test:all": "yarn workspaces foreach -pvt run test",
 		"start:all": "yarn workspaces foreach -piv run start",
 		"deploy:all": "yarn workspaces foreach -piv run deploy",
-		"fnapp:build": "cd packages/locations-ingester-fnapp && npm install --production",
+		"fnapp:build": "cd packages/locations-ingester && npm install --production",
 		"test:unit": "jest --ci --coverage",
 		"lint": "essex lint --docs",
 		"lint:webapp": "essex lint --docs packages/webapp",
