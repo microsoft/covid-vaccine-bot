@@ -3,7 +3,14 @@
  * Licensed under the MIT license. See LICENSE file in the project.
  */
 
-import configs from '../config'
+//import configs from '../config'
+
+const configs = {
+	languageKeys:
+		'en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th',
+	defaultLanguage: 'en-us',
+}
+
 
 export const toProperCase = (text: string): string => {
 	const res = text
@@ -94,4 +101,14 @@ export const createCSVDataString = (contentObj: any): string => {
 		result += rowValues.join(',') + '\n'
 	}
 	return result
+}
+
+/**
+ *
+ * @param str String to inject arguments into
+ * @param args Arguments to inject into string
+ * @returns string with arguments injected
+ */
+export const StringFormat = (str: string, ...args: string[]): string => {
+	return str.toString().replace(/{(\d+)}/g, (match, index) => args[index] || '')
 }

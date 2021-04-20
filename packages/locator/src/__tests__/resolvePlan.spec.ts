@@ -161,4 +161,22 @@ describe('The Plan Locator', () => {
 		expect(plan).toBeDefined()
 		expect(plan.phase?.id).toEqual('phase_1a')
 	})
+
+	it('can look up a plan in Paulau', () => {
+		const location: BingLocation = {
+			adminDistrict: 'PW',
+			adminDistrict2: '',
+			countryRegion: 'United States',
+			formattedAddress: '',
+			locality: '',
+			postalCode: '',
+		}
+		const plan = resolvePlan(location, statesData as Region[])
+		expect(plan).toBeDefined()
+		expect(plan.unknownPhase).toEqual(false)
+		expect(plan.phase).toBeDefined()
+		expect(plan.phase?.id).toBeDefined()
+		expect(plan.phase?.qualifications).not.toHaveLength(0)
+		expect(plan.noPhaseLabel).toEqual(true)
+	})
 })

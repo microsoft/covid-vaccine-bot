@@ -84,7 +84,7 @@
 			"id": "2b",
 			"qualifications": [
 				{
-					"question": "c19.eligibility.question/age.are_you_20"
+					"question": "c19.eligibility.question/age.are_you_age_18"
 				}
 			]
 		}

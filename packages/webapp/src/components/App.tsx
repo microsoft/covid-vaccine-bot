@@ -13,20 +13,22 @@ import {
 	MessageBar,
 	MessageBarButton,
 	Modal,
-	Spinner
+	Spinner,
 } from '@fluentui/react'
 import { useBoolean } from '@uifabric/react-hooks'
 import { observer } from 'mobx-react-lite'
 import { useCallback, useState, useEffect, useRef } from 'react'
 import { Switch, Route, Redirect } from 'react-router-dom'
 import { loginUser, reLoginUser } from '../actions/authActions'
+import { setAppLanguage } from '../actions/intlActions'
 import { initializeGitData, saveContinue } from '../actions/repoActions'
 import { logoutUser } from '../mutators/authMutators'
 import { setCurrentLanguage } from '../mutators/repoMutators'
+import { getText as t } from '../selectors/intlSelectors'
 import { getAppStore } from '../store/store'
 import { getLanguageOptions } from '../utils/textUtils'
 import Dashboard from './Dashboard'
-import { Footer } from './Footer'
+import Footer from './Footer'
 import Locations from './Locations'
 import Login from './Login'
 import QualifierPanel from './QualifierPanel'
@@ -56,15 +58,13 @@ export default observer(function App() {
 	const personaComponent = useRef(null)
 
 	useEffect(() => {
-		if (state.accessToken && !state.globalFileData) 
-			loginUser()
+		if (state.accessToken && !state.globalFileData) loginUser()
 	}, [state.accessToken, state.globalFileData])
 
 	useEffect(() => {
-		if(state.userAccessExpired)
-			showAccessExpirationModal()
+		if (state.userAccessExpired) showAccessExpirationModal()
 	}, [state.userAccessExpired, showAccessExpirationModal])
-	
+
 	useEffect(() => {
 		if (state.pendingChanges) {
 			window.onbeforeunload = function () {
@@ -74,6 +74,10 @@ export default observer(function App() {
 			window.onbeforeunload = null
 		}
 	}, [state.pendingChanges])
+
+	useEffect(() => {
+		setAppLanguage(state.currentLanguage)
+	}, [state.currentLanguage])
 
 	const togglePanel = useCallback(
 		(item?: any) => {
@@ -92,10 +96,8 @@ export default observer(function App() {
 	}, [setSelectedKey])
 
 	const onAccessExpirationFormSubmit = useCallback(() => {
-		if(state.globalFileData)
-			reLoginUser()
-		else 
-			loginUser()
+		if (state.globalFileData) reLoginUser()
+		else loginUser()
 
 		hideAccessExpirationModal()
 	}, [state.globalFileData, hideAccessExpirationModal])
@@ -108,15 +110,15 @@ export default observer(function App() {
 					isMultiline={true}
 					styles={{ root: { margin: '10px 5px' } }}
 				>
-					You are currently working on:{' '}
+					{t('App.RepoMessageBar.current')}{' '}
 					<strong>
 						PR: {state.loadedPRData.number} - {state.loadedPRData.title}
 					</strong>
 					<br />
-					Last updated by:{' '}
+					{t('App.RepoMessageBar.updatedBy')}{' '}
 					{state.prChanges?.last_commit?.commit?.committer?.name}
 					<br />
-					Last updated on:{' '}
+					{t('App.RepoMessageBar.updatedOn')}{' '}
 					{new Date(state.loadedPRData.updated_at).toLocaleString()}
 				</MessageBar>
 			)
@@ -134,29 +136,35 @@ export default observer(function App() {
 						!!state.loadedPRData ? undefined : (
 							<div>
 								{!state.isSavingCommits ? (
-								<>
-									<MessageBarButton disabled={state.isDataRefreshing} onClick={initializeGitData}>
-										Discard
-									</MessageBarButton>
-									<MessageBarButton
-										disabled={state.isDataRefreshing}
-										onClick={() => {
-											setBranchWasSaved(true)
-											saveContinue()
-										}}
-									>
-										Save and Continue
-									</MessageBarButton>
-								</>
+									<>
+										<MessageBarButton
+											disabled={state.isDataRefreshing}
+											onClick={initializeGitData}
+										>
+											{t('App.SaveContinueMessageBar.cancel')}
+										</MessageBarButton>
+										<MessageBarButton
+											disabled={state.isDataRefreshing}
+											onClick={() => {
+												setBranchWasSaved(true)
+												saveContinue()
+											}}
+										>
+											{t('App.SaveContinueMessageBar.submit')}
+										</MessageBarButton>
+									</>
 								) : (
-									<Spinner label="Saving changes..." ariaLive="assertive" labelPosition="left" />
+									<Spinner
+										label={t('App.SaveContinueMessageBar.saving')}
+										ariaLive="assertive"
+										labelPosition="left"
+									/>
 								)}
 							</div>
 						)
 					}
 				>
-					You have pending changes, please click on the review tab to submit
-					these changes.
+					{t('App.SaveContinueMessageBar.text')}
 				</MessageBar>
 			)
 		} else if (state.userWorkingBranch) {
@@ -166,10 +174,10 @@ export default observer(function App() {
 					styles={{ root: { margin: '10px 5px' } }}
 				>
 					{branchWasSaved
-						? 'Your changes have been saved  to'
-						: 'You are now working on branch '}{' '}
+						? t('App.branchWasSaved.pass')
+						: t('App.branchWasSaved.fail')}{' '}
 					{state.userWorkingBranch}, <br />
-					please click on the review tab to submit these changes.
+					{t('App.branchWasSaved.text')}
 				</MessageBar>
 			)
 		}
@@ -188,21 +196,20 @@ export default observer(function App() {
 									<div className="appHeaderContainer">
 										<IconButton
 											iconProps={{ iconName: 'waffle' }}
-											title="Apps"
 											styles={{
 												icon: { fontSize: '24px', color: 'white' },
 												rootHovered: { backgroundColor: 'transparent' },
 												rootPressed: { backgroundColor: 'transparent' },
 											}}
 										/>
-										<div className="appHeaderTitle">Data Composer</div>
+										<div className="appHeaderTitle">{t('App.title', true)}</div>
 									</div>
 									<div className="appHeaderPersona">
 										<div>
 											<Dropdown
 												defaultSelectedKey={state.currentLanguage}
 												onChange={(e, o) => setCurrentLanguage(o)}
-												ariaLabel="Pick Language"
+												ariaLabel={t('App.LanguageDropDown.ariaLabel')}
 												options={getLanguageOptions()}
 												styles={{
 													dropdown: { border: 'none' },
@@ -245,7 +252,7 @@ export default observer(function App() {
 											items={[
 												{
 													key: 'logoutUserPersonaMenu',
-													text: 'Logout',
+													text: t('App.Persona.logout'),
 													onClick: () => {
 														logoutUser()
 													},
@@ -266,19 +273,25 @@ export default observer(function App() {
 													onLinkClick={togglePanel}
 													selectedKey={selectedKey}
 												>
-													<PivotItem headerText="Dashboard" itemKey="Dashboard">
+													<PivotItem
+														headerText={t('App.Pivot.Dashboard').toString()}
+														itemKey="Dashboard"
+													>
 														{renderSaveContinueMessageBar()}
 														{renderRepoMessageBar()}
 														<Dashboard />
 													</PivotItem>
-													<PivotItem headerText="Locations" itemKey="Locations">
+													<PivotItem
+														headerText={t('App.Pivot.Locations').toString()}
+														itemKey="Locations"
+													>
 														{renderSaveContinueMessageBar()}
 														{renderRepoMessageBar()}
 														<Locations />
 													</PivotItem>
 													{state.isEditable && (
 														<PivotItem
-															headerText="Translate"
+															headerText={t('App.Pivot.Translate').toString()}
 															itemKey="Translate"
 														>
 															{renderSaveContinueMessageBar()}
@@ -288,7 +301,10 @@ export default observer(function App() {
 													)}
 													{(state.pendingChanges ||
 														state.userWorkingBranch) && (
-														<PivotItem headerText="Review" itemKey="Review">
+														<PivotItem
+															headerText={t('App.Pivot.Review').toString()}
+															itemKey="Review"
+														>
 															<Review showDashboard={showDashboard} />
 														</PivotItem>
 													)}
@@ -317,7 +333,7 @@ export default observer(function App() {
 							</Modal>
 						</Route>
 						<Route path="*">
-							<div>404 page not found.</div>
+							<div>{t('App.NotFound')}</div>
 						</Route>
 					</Switch>
 				</>

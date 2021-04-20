@@ -21,7 +21,7 @@
 			"text": "c19.link/scheduling.phone.vt"
 		}
 	},
-	"activePhase": "1c",
+	"activePhase": "2",
 	"phases": [
 		{
 			"id": "1a",
@@ -108,6 +108,15 @@
 				}
 			],
 			"label": "Current"
+		},
+		{
+			"id": "2",
+			"label": "2",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.16_up"
+				}
+			]
 		}
 	]
 }

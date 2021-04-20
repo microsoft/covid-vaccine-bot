@@ -11,6 +11,7 @@ import {
 } from '@fluentui/react'
 import { observer } from 'mobx-react-lite'
 import { useCallback, useState, useRef, useEffect } from 'react'
+import { getText as t } from '../selectors/intlSelectors'
 import {
 	getPhaseTagItems,
 	getPhaseQualifierItems,
@@ -51,7 +52,7 @@ export default observer(function PhaseQualiferForm(
 		getPhaseQualifierItemsByKey(selectedState, rowItems.item.tagKey)
 	)
 
-	const { globalFileData, repoFileData } = getAppStore()
+	const { globalFileData, repoFileData, currentLanguage } = getAppStore()
 
 	let overrideIconFlag = false
 	let moreInfoKey = rowItems.item.moreInfoKey
@@ -72,9 +73,7 @@ export default observer(function PhaseQualiferForm(
 		}
 	}
 
-	const [moreInfoText, setMoreInfoText] = useState<string>(
-		getPhaseMoreInfoTextByKey(selectedState, moreInfoKey)
-	)
+	const [moreInfoText, setMoreInfoText] = useState<string>('')
 
 	const [moreInfoUrl, setMoreInfoUrl] = useState<string>(
 		getPhaseMoreInfoUrl(isRegion, rowItems)
@@ -82,6 +81,12 @@ export default observer(function PhaseQualiferForm(
 
 	const changedItem = useRef<any>(rowItems.item)
 	changedItem.current.moreInfoContent = moreInfoText
+
+	useEffect(() => {
+		if (currentLanguage) {
+			setMoreInfoText(getPhaseMoreInfoTextByKey(selectedState, moreInfoKey))
+		}
+	}, [currentLanguage, selectedState, moreInfoKey])
 
 	useEffect(() => {
 		if (globalFileData) {
@@ -181,7 +186,7 @@ export default observer(function PhaseQualiferForm(
 				<Dropdown
 					options={phaseTagItems.current}
 					defaultSelectedKey={rowItems.item.tagKey}
-					placeholder="Tag"
+					placeholder={t('PhaseQualifierForm.Tag.placeholder')}
 					className="tagDropdown"
 					styles={{ root: { minWidth: 250 } }}
 					onChange={onTagChange}
@@ -190,7 +195,7 @@ export default observer(function PhaseQualiferForm(
 					title={rowItems.item.text}
 					options={filteredQualifierItems}
 					defaultSelectedKey={rowItems.item.qualifierId}
-					placeholder="Qualifier"
+					placeholder={t('PhaseQualifierForm.Qualifier.placeholder')}
 					styles={{ root: { width: '100%', minWidth: 0 } }}
 					onChange={onQualifierChange}
 				/>
@@ -203,22 +208,22 @@ export default observer(function PhaseQualiferForm(
 						items: [
 							{
 								key: 'removeRow',
-								text: 'Remove',
+								text: t('PhaseQualifierForm.FormButtons.remove'),
 								onClick: () => onRowItemRemove?.(rowItems.item, groupKey),
 							},
 							{
 								key: 'details',
-								text: 'Details',
+								text: t('PhaseQualifierForm.FormButtons.details'),
 							},
 						],
 					}}
-					title="More"
-					aria-label="More"
+					title={t('PhaseQualifierForm.FormButtons.more')}
+					aria-label={t('PhaseQualifierForm.FormButtons.more')}
 				/>
 			</div>
 			<div className="detailsRow">
 				<TextField
-					placeholder="More info text"
+					placeholder={t('PhaseQualifierForm.MoreInfoText.placeholder')}
 					multiline={true}
 					autoAdjustHeight={true}
 					resizable={false}
@@ -228,7 +233,7 @@ export default observer(function PhaseQualiferForm(
 					onBlur={() => onRowItemTextChange(changedItem.current, rowItems.item)}
 				/>
 				<TextField
-					placeholder="More info url"
+					placeholder={t('PhaseQualifierForm.MoreInfoUrl.placeholder')}
 					styles={{ root: { width: 'calc(100% - 32px)', padding: '5px 0' } }}
 					value={moreInfoUrl}
 					onChange={onMoreInfoUrlChange}

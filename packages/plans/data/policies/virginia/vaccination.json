@@ -19,7 +19,7 @@
 			"text": "c19.link/scheduling.phone.va"
 		}
 	},
-	"activePhase": "1c",
+	"activePhase": "2",
 	"phases": [
 		{
 			"id": "1a",
@@ -82,6 +82,15 @@
 				{
 					"question": "c19.eligibility.question/congregate.va",
 					"moreInfoUrl": "https://www.vdh.virginia.gov/covid-19-vaccine/#phase1b"
+				}
+			]
+		},
+		{
+			"id": "2",
+			"label": "2",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.16_up"
 				}
 			]
 		}

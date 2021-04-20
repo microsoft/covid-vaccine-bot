@@ -23,9 +23,12 @@ export interface AppState {
 	isDataRefreshing: boolean
 	prChanges?: any
 	loadedPRData?: any
-	userWorkingBranch?: any,
+	userWorkingBranch?: any
 	userWorkingBranches: any[]
 	userAccessExpired: boolean
 	isDataStale: boolean
 	isSavingCommits: boolean
+	localization: any
+	defaultLanguage: any
+	committedDeletes: any[]
 }

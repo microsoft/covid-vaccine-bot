@@ -20,6 +20,7 @@ import {
 	updateLocationData,
 	deleteLocation,
 } from '../mutators/repoMutators'
+import { getText as t } from '../selectors/intlSelectors'
 import { getAppStore } from '../store/store'
 import { toProperCase } from '../utils/textUtils'
 import DeleteLocationForm from './DeleteLocationForm'
@@ -63,14 +64,14 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 	const subLocationsColumns = [
 		{
 			key: 'regionCol',
-			name: 'Region',
+			name: t('LocationsRegions.Sublocations.columns.name'),
 			fieldName: 'name',
 			minWidth: 200,
 			isResizable: true,
 		},
 		{
 			key: 'activePhaseCol',
-			name: 'Active Phase ID',
+			name: t('LocationsRegions.Sublocations.columns.phase'),
 			fieldName: 'phase',
 			minWidth: 200,
 			isResizable: true,
@@ -87,7 +88,7 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 	const phaseColumns = [
 		{
 			key: 'idCol',
-			name: 'Phase ID',
+			name: t('LocationsRegions.PhaseOverview.columns.keyId'),
 			fieldName: 'keyId',
 			minWidth: 50,
 			maxWidth: 200,
@@ -95,14 +96,14 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 		},
 		{
 			key: 'nameCol',
-			name: 'Name',
+			name: t('LocationsRegions.PhaseOverview.columns.name'),
 			fieldName: 'name',
 			minWidth: 200,
 			isResizable: false,
 		},
 		{
 			key: 'qualCol',
-			name: '# of qualifications',
+			name: t('LocationsRegions.PhaseOverview.columns.qualifications'),
 			fieldName: 'qualifications',
 			minWidth: 200,
 			isResizable: false,
@@ -277,7 +278,7 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 				<div className="bodyHeaderTitle">
 					<div className="breadCrumbs">
 						<span className="crumbLink" onClick={onNavigateBack}>
-							/ Locations{' '}
+							/ {t('LocationsRegions.title')}{' '}
 						</span>
 						{selectedPhaseItem.value ? (
 							<>
@@ -296,7 +297,7 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 								{selectedPhaseItem.isRegion ? (
 									<>/ {selectedPhaseItem.value.name}</>
 								) : (
-									<>/ Phase Overview</>
+									<>/ {t('LocationsRegions.PhaseOverview.title')}</>
 								)}
 							</>
 						) : (
@@ -307,9 +308,15 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 						{selectedPhaseItem.value ? (
 							<>
 								{selectedPhaseItem.isRegion ? (
-									<>{selectedPhaseItem.value.name} Region Phase Overview</>
+									<>
+										{selectedPhaseItem.value.name}{' '}
+										{t('LocationsRegions.PhaseOverview.region.title')}
+									</>
 								) : (
-									<>{selectedState.text} Phase Overview</>
+									<>
+										{selectedState.text}{' '}
+										{t('LocationsRegions.PhaseOverview.title')}
+									</>
 								)}
 							</>
 						) : (
@@ -331,7 +338,9 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 			) : (
 				<div className="bodyContent">
 					<section>
-						<div className="listTitle">Phases</div>
+						<div className="listTitle">
+							{t('LocationsRegions.PhaseOverview.title')}
+						</div>
 						<div className="searchRow">
 							<div></div>
 							{state.isEditable && (
@@ -343,7 +352,7 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 										iconName="CircleAdditionSolid"
 										style={{ color: '#0078d4' }}
 									/>
-									Add Phase
+									{t('LocationsRegions.PhaseOverview.AddPhaseButton')}
 								</div>
 							)}
 						</div>
@@ -360,11 +369,13 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 								className="locationDetailsList"
 							/>
 						) : (
-							<div>No phases available at this time.</div>
+							<div>{t('LocationsRegions.PhaseOverview.empty')}</div>
 						)}
 					</section>
 					<section>
-						<div className="listTitle">Sublocation</div>
+						<div className="listTitle">
+							{t('LocationsRegions.Sublocations.title')}
+						</div>
 						<div className="searchRow">
 							{stateRegionsFullList.current.length > 0 ? (
 								<SearchBox
@@ -384,7 +395,7 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 										iconName="CircleAdditionSolid"
 										style={{ color: '#0078d4' }}
 									/>
-									Add Sublocation
+									{t('LocationsRegions.Sublocations.AddLocationButton')}
 								</div>
 							)}
 						</div>
@@ -397,16 +408,22 @@ export default observer(function LocationsRegions(props: LocationsRegionsProp) {
 								setKey="set"
 								layoutMode={DetailsListLayoutMode.justified}
 								selectionPreservedOnEmptyClick={true}
-								ariaLabelForSelectionColumn="Toggle selection"
-								ariaLabelForSelectAllCheckbox="Toggle selection for all items"
-								checkButtonAriaLabel="Row checkbox"
+								ariaLabelForSelectionColumn={t(
+									'LocationsRegions.Sublocations.ariaLabelForSelectionColumn'
+								)}
+								ariaLabelForSelectAllCheckbox={t(
+									'LocationsRegions.Sublocations.ariaLabelForSelectAllCheckbox'
+								)}
+								checkButtonAriaLabel={t(
+									'LocationsRegions.Sublocations.checkButtonAriaLabel'
+								)}
 								checkboxVisibility={2}
 								onItemInvoked={(item) => selectedPhase(true, item)}
 								onRenderItemColumn={onRenderItemColumn}
 								className="locationDetailsList"
 							/>
 						) : (
-							<div>No regions available at this time.</div>
+							<div>{t('LocationsRegions.Sublocations.empty')}</div>
 						)}
 					</section>
 				</div>
@@ -462,10 +479,12 @@ const setInitialPhaseItems = (selectedState: any): any[] => {
 				selectedState.value.vaccination.content.activePhase
 			return {
 				key: String(phase.id) + idx,
-				keyId: String(phase.id) + (phase.id === activePhase ? ' (active)' : ''),
+				keyId:
+					String(phase.id) +
+					(phase.id === activePhase ? ` (${t('App.active')})` : ''),
 				name:
 					toProperCase(phase.label ?? phase.id) +
-					(phase.id === activePhase ? ' (active)' : ''),
+					(phase.id === activePhase ? ` (${t('App.active')})` : ''),
 				qualifications: phase.qualifications.length,
 				value: phase,
 				isNew: false,

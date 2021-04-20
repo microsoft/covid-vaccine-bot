@@ -11,6 +11,7 @@ import {
 } from '@fluentui/react'
 import { observer } from 'mobx-react-lite'
 import { useCallback, useRef, useState } from 'react'
+import { getText as t } from '../selectors/intlSelectors'
 import { getGlobalQualifierValidationTexts } from '../selectors/qualifierSelectors'
 
 import './AddQualifierForm.scss'
@@ -84,7 +85,7 @@ export default observer(function AddQualifierForm(props: AddQualifierFormProp) {
 			const newQualifierText = newQualifier.toLowerCase().replaceAll(' ', '')
 			if (globalQualifiersList.current.includes(newQualifierText)) {
 				setHasError(true)
-				return 'Qualifier already exist, please revise.'
+				return t('AddQualifierForm.hasDuplicate.qualifier')
 			} else {
 				setHasError(false)
 				return ''
@@ -99,7 +100,7 @@ export default observer(function AddQualifierForm(props: AddQualifierFormProp) {
 			const tagKeys = tagsOptions.map((t) => t.key)
 			if (tagKeys.includes(newTagKey)) {
 				setHasError(true)
-				return 'Tag already exist, please revise.'
+				return t('AddQualifierForm.hasDuplicate.tag')
 			} else {
 				setHasError(false)
 				return ''
@@ -129,7 +130,9 @@ export default observer(function AddQualifierForm(props: AddQualifierFormProp) {
 		setFormData({ ...formData, ...fieldChanges.current })
 	}, [formData, tagsOptions, fieldChanges, setIsAddingTag])
 
-	const formTitle = item ? 'Edit Qualifier' : 'New Qualifier'
+	const formTitle = item
+		? t('AddQualifierForm.title.edit')
+		: t('AddQualifierForm.title.new')
 
 	return (
 		<div className="modalWrapper">
@@ -142,28 +145,33 @@ export default observer(function AddQualifierForm(props: AddQualifierFormProp) {
 						<>
 							<Dropdown
 								selectedKey={formData.tagKey}
-								placeholder="Tag"
+								placeholder={t('AddQualifierForm.Tag.Dropdown.placeholder')}
 								options={tagsOptions}
 								onChange={handleTagChange}
 								disabled={!formData.isNew}
 							/>
-							{formData.isNew && <PrimaryButton
-								text="New tag"
-								onClick={() => setIsAddingTag(true)}
-							/>}
+							{formData.isNew && (
+								<PrimaryButton
+									text={t('AddQualifierForm.Tag.newTag')}
+									onClick={() => setIsAddingTag(true)}
+								/>
+							)}
 						</>
 					) : (
 						<>
 							<TextField
 								name="tagKey"
-								placeholder="Type new tag"
+								placeholder={t('AddQualifierForm.Tag.Input.placeholder')}
 								onChange={handleTextChange}
 								validateOnLoad={false}
 								onGetErrorMessage={() => isTagDuplicate(formData.tagKey)}
 							/>
-							<PrimaryButton text="Ok" onClick={() => createNewTag()} />
+							<PrimaryButton
+								text={t('AddQualifierForm.Tag.Buttons.ok')}
+								onClick={() => createNewTag()}
+							/>
 							<DefaultButton
-								text="Cancel"
+								text={t('AddQualifierForm.Tag.Buttons.cancel')}
 								onClick={() => setIsAddingTag(false)}
 							/>
 						</>
@@ -173,7 +181,7 @@ export default observer(function AddQualifierForm(props: AddQualifierFormProp) {
 				<TextField
 					label=""
 					name="qualifier"
-					placeholder="Qualifier text..."
+					placeholder={t('AddQualifierForm.Qualifier.placeholder')}
 					value={formData.qualifier}
 					onChange={handleTextChange}
 					multiline={true}
@@ -186,11 +194,14 @@ export default observer(function AddQualifierForm(props: AddQualifierFormProp) {
 			</div>
 			<div className="modalFooter">
 				<PrimaryButton
-					text="Submit"
+					text={t('App.submit')}
 					disabled={disableSubmit()}
 					onClick={() => onSubmit?.(formData)}
 				/>
-				<DefaultButton text="Cancel" onClick={() => onCancel?.()} />
+				<DefaultButton
+					text={t('App.cancel')}
+					onClick={() => onCancel?.()}
+				/>
 			</div>
 		</div>
 	)

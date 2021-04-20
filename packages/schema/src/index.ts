@@ -92,6 +92,7 @@ export interface VaccinationPlan {
 	links?: Partial<Record<LinkType, Link>>
 	activePhase?: string
 	noPhaseLabel?: boolean
+	unknownPhase?: boolean
 	phases?: RolloutPhase[]
 }
 

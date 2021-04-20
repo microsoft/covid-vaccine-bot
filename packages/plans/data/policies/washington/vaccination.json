@@ -21,7 +21,7 @@
 			"description": "c19.link/scheduling.phone.description.wa"
 		}
 	},
-	"activePhase": "1b_tier_4",
+	"activePhase": "2",
 	"phases": [
 		{
 			"id": "1a",
@@ -192,6 +192,15 @@
 				{
 					"question": "c19.eligibility.question/congregate.do",
 					"moreInfoText": "c19.eligibility.moreinfo/congregate.do.wa.1b_tier_4"
+				}
+			]
+		},
+		{
+			"id": "2",
+			"label": "2",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.16_up"
 				}
 			]
 		}

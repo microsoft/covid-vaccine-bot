@@ -19,6 +19,7 @@ import {
 	translateMisc,
 	updateStrings,
 } from '../mutators/repoMutators'
+import { getText as t } from '../selectors/intlSelectors'
 import { getAppStore } from '../store/store'
 import { convertCSVDataToObj } from '../utils/dataUtils'
 import {
@@ -56,30 +57,30 @@ export default observer(function Translate() {
 	const translationFilter = [
 		{
 			key: 'missing',
-			text: 'Needs Translation',
+			text: t('Translate.translationFilter.needsTranslation'),
 		},
 		{
 			key: 'all',
-			text: 'Show All',
+			text: t('Translate.translationFilter.showAll'),
 		},
 	]
 
 	const miscFilter = [
 		{
 			key: 'all',
-			text: 'All',
+			text: t('Translate.miscFilter.all'),
 		},
 		{
 			key: 'state',
-			text: 'State-specific',
+			text: t('Translate.miscFilter.stateSpecific'),
 		},
 		{
 			key: 'state_link',
-			text: 'State Links',
+			text: t('Translate.miscFilter.stateLinks'),
 		},
 		{
 			key: 'other',
-			text: 'Uncategorized',
+			text: t('Translate.miscFilter.uncategorized'),
 		},
 	]
 	const [showLoading, setShowLoading] = useState<boolean>(false)
@@ -134,7 +135,7 @@ export default observer(function Translate() {
 						mainLanguage.current
 					].trim() !== ''
 						? stateNames[`cdc/${stateId}/state_name`][mainLanguage.current]
-						: `*Translation Not Found* (${stateId})`
+						: `${t('Translate.translationNotFound')} (${stateId})`
 
 				const stateLinkLabel =
 					stateLinks[`cdc/${stateId}/state_link`] &&
@@ -143,7 +144,7 @@ export default observer(function Translate() {
 						mainLanguage.current
 					].trim() !== ''
 						? stateLinks[`cdc/${stateId}/state_link`][mainLanguage.current]
-						: `*Translation Not Found* (${stateId})`
+						: `${t('Translate.translationNotFound')} (${stateId})`
 
 				const translateToValue = !toLanguage.current
 					? ''
@@ -657,7 +658,7 @@ export default observer(function Translate() {
 				updateStrings(contentObj)
 				setShowLoading(false)
 			} else {
-				throw new Error('Invalid File Content.')
+				throw new Error(t('Translate.error.invalidFileContent'))
 			}
 		} catch (err) {
 			setErrorMessage(err)
@@ -675,7 +676,7 @@ export default observer(function Translate() {
 				reader.onload = onReaderLoadData
 				reader.readAsText(file, 'UTF-8')
 			} else {
-				setErrorMessage(new Error('Invalid File Type.'))
+				setErrorMessage(new Error(t('Translate.error.invalidFileType')))
 				setShowLoading(false)
 			}
 		}
@@ -726,37 +727,49 @@ export default observer(function Translate() {
 			<div className="bodyContainer">
 				<div className="bodyHeader">
 					<div className="bodyHeaderTitle">
-						<div className="breadCrumbs">/ Translate</div>
-						<div className="mainTitle">Translate</div>
+						<div className="breadCrumbs">/ {t('Translate.title')}</div>
+						<div className="mainTitle">{t('Translate.title')}</div>
 					</div>
 				</div>
 				<div className="bodyContent">
 					{errorMessage && (
 						<MessageBar
 							messageBarType={MessageBarType.error}
-							dismissButtonAriaLabel="Close"
+							dismissButtonAriaLabel={t(
+								'Translate.ErrorMessageBar.closeAriaLabel'
+							)}
 						>
-							<p>Unexpected {errorMessage?.toString()}</p>
+							<p>
+								{t('Translate.error.unexpected')} {errorMessage?.toString()}
+							</p>
 						</MessageBar>
 					)}
 					{!(showLoading || isDataRefreshing) ? (
 						<section>
 							<div className="filterGroup">
 								<div>
-									<label htmlFor="availDropdown">Translate from:</label>
+									<label htmlFor="availDropdown">
+										{t('Translate.Filter.LanguageDropdown.label')}
+									</label>
 									<Dropdown
 										id="availDropdown"
 										selectedKey={toLanguage.current}
-										placeholder="Available languages"
+										placeholder={t(
+											'Translate.Filter.LanguageDropdown.placeholder'
+										)}
 										options={languageOptions}
 										styles={filterDropdownStyles}
 										onChange={onLanguageChange}
 									/>
-									<label htmlFor="translateDropdown">Show:</label>
+									<label htmlFor="translateDropdown">
+										{t('Translate.Filter.TranslateDropdown.label')}
+									</label>
 									<Dropdown
 										id="translateDropdown"
 										selectedKey={translationFilterState}
-										placeholder="Needs Translation"
+										placeholder={t(
+											'Translate.Filter.LanguageDropdown.placeholder'
+										)}
 										options={translationFilter}
 										styles={filterDropdownStyles}
 										onChange={onTranslationFilterChange}
@@ -771,12 +784,12 @@ export default observer(function Translate() {
 
 									<button onClick={onFileDownload}>
 										<FontIcon iconName="Download" />
-										Download Template
+										{t('Translate.TemplateButtons.download')}
 									</button>
 
 									<button onClick={triggerFileOnClick}>
 										<FontIcon iconName="CircleAdditionSolid" className="blue" />
-										Upload File
+										{t('Translate.TemplateButtons.upload')}
 									</button>
 								</div>
 							</div>
@@ -790,16 +803,25 @@ export default observer(function Translate() {
 									}
 									className="groupToggleIcon"
 								/>
-								<div>Locations ({locationList.length})</div>
+								<div>
+									{t('Translate.GroupList.LocationList.title')} (
+									{locationList.length})
+								</div>
 							</div>
 							{!isSectionCollapse.locations &&
 								(locationList.length > 0 ? (
 									<>
 										<div className="translateListRow">
 											<div className="fromCol"></div>
-											<div className="toCol">General</div>
-											<div className="toCol">SMS</div>
-											<div className="toCol">Voice</div>
+											<div className="toCol">
+												{t('Translate.GroupList.columns.general')}
+											</div>
+											<div className="toCol">
+												{t('Translate.GroupList.columns.sms')}
+											</div>
+											<div className="toCol">
+												{t('Translate.GroupList.columns.voice')}
+											</div>
 										</div>
 										{locationList.map((val: any, idx: number) => {
 											return (
@@ -837,7 +859,7 @@ export default observer(function Translate() {
 									</>
 								) : (
 									<div className="emptyTranslateListRow">
-										No missing location translations found for:{' '}
+										{t('Translate.GroupList.LocationList.empty')}{' '}
 										{getLanguageDisplayText(
 											toLanguage.current,
 											toLanguage.current
@@ -858,16 +880,25 @@ export default observer(function Translate() {
 									}
 									className="groupToggleIcon"
 								/>
-								<div>Qualifiers ({qualifierList.length})</div>
+								<div>
+									{t('Translate.GroupList.QualifierList.title')} (
+									{qualifierList.length})
+								</div>
 							</div>
 							{!isSectionCollapse.qualifiers &&
 								(qualifierList.length > 0 ? (
 									<>
 										<div className="translateListRow qualifier">
 											<div className="fromCol"></div>
-											<div className="toCol">General</div>
-											<div className="toCol">SMS</div>
-											<div className="toCol">Voice</div>
+											<div className="toCol">
+												{t('Translate.GroupList.columns.general')}
+											</div>
+											<div className="toCol">
+												{t('Translate.GroupList.columns.sms')}
+											</div>
+											<div className="toCol">
+												{t('Translate.GroupList.columns.voice')}
+											</div>
 										</div>
 										{qualifierList.map((val: any, idx: number) => {
 											return (
@@ -923,7 +954,7 @@ export default observer(function Translate() {
 									</>
 								) : (
 									<div className="emptyTranslateListRow">
-										No missing qualifier translations found for:{' '}
+										{t('Translate.GroupList.QualifierList.empty')}{' '}
 										{getLanguageDisplayText(
 											toLanguage.current,
 											toLanguage.current
@@ -942,7 +973,10 @@ export default observer(function Translate() {
 									}
 									className="groupToggleIcon"
 								/>
-								<div>Miscellaneous ({miscList.length})</div>
+								<div>
+									{t('Translate.GroupList.MiscellaneousList.title')} (
+									{miscList.length})
+								</div>
 							</div>
 							{!isSectionCollapse.misc &&
 								(miscList.length > 0 ? (
@@ -950,7 +984,7 @@ export default observer(function Translate() {
 										<div className="miscFilterGroup">
 											<Dropdown
 												selectedKey={miscFilterState}
-												placeholder="Filter Miscellaneous"
+												placeholder={t('Translate.miscFilter.placeholder')}
 												options={miscFilter}
 												styles={filterDropdownStyles}
 												onChange={onMiscFilterChange}
@@ -968,9 +1002,15 @@ export default observer(function Translate() {
 										</div>
 										<div className="translateListRow misc">
 											<div className="fromCol"></div>
-											<div className="toCol">General</div>
-											<div className="toCol">SMS</div>
-											<div className="toCol">Voice</div>
+											<div className="toCol">
+												{t('Translate.GroupList.columns.general')}
+											</div>
+											<div className="toCol">
+												{t('Translate.GroupList.columns.sms')}
+											</div>
+											<div className="toCol">
+												{t('Translate.GroupList.columns.voice')}
+											</div>
 										</div>
 										{miscList.map((val: any, idx: number) => {
 											return (
@@ -1020,7 +1060,7 @@ export default observer(function Translate() {
 									</>
 								) : (
 									<div className="emptyTranslateListRow">
-										No missing miscellaneous translations found for:{' '}
+										{t('Translate.GroupList.MiscellaneousList.empty')}{' '}
 										{getLanguageDisplayText(
 											toLanguage.current,
 											toLanguage.current
@@ -1034,8 +1074,8 @@ export default observer(function Translate() {
 							<ProgressIndicator
 								description={
 									isDataRefreshing
-										? 'Loading content...'
-										: 'Updating translations...'
+										? t('Translate.GroupList.loading')
+										: t('Translate.GroupList.updating')
 								}
 							/>
 						</section>

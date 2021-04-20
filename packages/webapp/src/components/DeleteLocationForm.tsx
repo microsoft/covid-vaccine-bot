@@ -4,6 +4,7 @@
  */
 import { PrimaryButton, DefaultButton } from '@fluentui/react'
 import { observer } from 'mobx-react-lite'
+import { getText as t } from '../selectors/intlSelectors'
 
 import './LocationForm.scss'
 
@@ -13,19 +14,19 @@ export default observer(function DeleteLocationForm(props: any) {
 	return (
 		<div className="modalWrapper">
 			<div className="modalHeader">
-				<div className="title">Remove Location</div>
+				<div className="title">{t('DeleteLocationForm.title')}</div>
 			</div>
 			<div className="modalBody">
 				<p>
-						Are you sure you would like to remove <strong>{location.text ?? location.name}</strong>?
+				{t('DeleteLocationForm.text')} <strong>{location.text ?? location.name}</strong>?
 				</p>
 			</div>
 			<div className="modalFooter">
 				<PrimaryButton
-					text="Remove Location"
+					text={t('DeleteLocationForm.title')}
 					onClick={() => onSubmit?.(location)}
 				/>
-				<DefaultButton text="Cancel" onClick={() => onCancel?.()} />
+				<DefaultButton text={t('DeleteLocationForm.cancel')} onClick={() => onCancel?.()} />
 			</div>
 		</div>
 	)

@@ -14,6 +14,7 @@ import { useBoolean } from '@uifabric/react-hooks'
 import { observer } from 'mobx-react-lite'
 import { useState, useEffect, useCallback, useRef } from 'react'
 import { updateGlobalQualifiers } from '../mutators/repoMutators'
+import { getText as t } from '../selectors/intlSelectors'
 import { getAppStore } from '../store/store'
 import { toProperCase } from '../utils/textUtils'
 import AddQualifierForm from './AddQualiferForm'
@@ -21,7 +22,12 @@ import AddQualifierForm from './AddQualiferForm'
 import './QualifierPanel.scss'
 
 export default observer(function QualifierPanel() {
-	const { globalFileData, currentLanguage, isEditable, isDataRefreshing } = getAppStore()
+	const {
+		globalFileData,
+		currentLanguage,
+		isEditable,
+		isDataRefreshing,
+	} = getAppStore()
 	const [qualifierGroup, setQualifierGroup] = useState<IGroup[]>([])
 	const [qualifierGroupItems, setQualifierGroupItems] = useState<any[]>([])
 	const [
@@ -70,7 +76,9 @@ export default observer(function QualifierPanel() {
 						key: key,
 						text: contentObj[key][currentLanguage]
 							? contentObj[key][currentLanguage]
-							: `*Translation Not Found* (${currentLanguage})`,
+							: `${t(
+									'QualifierPanel.translationNotFound'
+							  )} (${currentLanguage})`,
 					})
 				}
 			})
@@ -83,7 +91,7 @@ export default observer(function QualifierPanel() {
 	const columns = [
 		{
 			key: 'questionColKey',
-			name: 'Question',
+			name: t('QualifierPanel.columns.question'),
 			fieldName: 'text',
 			minWidth: 100,
 			isResizable: false,
@@ -142,7 +150,7 @@ export default observer(function QualifierPanel() {
 	return (
 		<div className="qualifierPanelContainer">
 			<div className="panelHeader">
-				<div className="panelHeaderTitle">Qualifiers</div>
+				<div className="panelHeaderTitle">{t('QualifierPanel.title')}</div>
 			</div>
 			<div className="panelBody">
 				{!isDataRefreshing && (
@@ -158,7 +166,7 @@ export default observer(function QualifierPanel() {
 										iconName="CircleAdditionSolid"
 										className="addQualifierIcon"
 									/>
-									Add Qualifier
+									{t('QualifierPanel.addQualifierLabel')}
 								</div>
 							</div>
 						)}

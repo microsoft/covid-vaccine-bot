@@ -1,0 +1,357 @@
+{
+	"App": {
+		"title": "Compositor de datos",
+		"LoginButton": "Iniciar sesión con Github",
+		"active": "activo",
+		"loading": "Cargando contenido ...",		
+		"submit": "Entregar",
+		"cancel": "Cancelar",
+		"saving": "Guardando cambios...",
+		"ok": "Ok",
+		"NotFound": "404 pagina no encontrada.",
+		"Pivot": {
+			"Dashboard": "Tablero",
+			"Locations": "Locations",
+			"Translate": "Traducir",
+			"Review": "Revisar"
+		},
+		"RepoMessageBar": {
+			"current": "Actualmente estás trabajando en:",
+			"updatedBy": "Última actualización por:",
+			"updatedOn": "Ultima actualización en:"
+		},
+		"LanguageDropDown": {
+			"ariaLabel": "Elegir idioma"
+		},
+		"Persona": {
+			"logout": "Cerrar sesión"
+		},
+		"SaveContinueMessageBar": {
+			"cancel": "Descarte",
+			"submit": "Guardar y continuar",
+			"text": "Tiene cambios pendientes, haga clic en la pestaña de revisión para enviar estos cambios.",
+			"saving": "Guardando cambios..."
+		},
+		"branchWasSaved": {
+			"text": "haga clic en la pestaña de revisión para enviar estos cambios.",
+			"pass": "Tus cambios se han guardado en",
+			"fail": "Ahora estás trabajando en la rama"
+		},
+		"UserAccessExpirationForm": {
+			"title": "Sesión caducada",
+			"text": "Vuelve a iniciar sesión con Github para seguir trabajando",
+			"submit": "Continuar trabajando",
+			"logout": "Cerrar sesión"
+		},
+		"Footer": {
+			"privacyCookies": "Privacidad y cookies",
+			"contactUs": "Contacta con nosotros",
+			"codeOfConduct": "Código de conducta"
+		}
+	},
+	"AddQualifierForm": {
+		"title": {
+			"new": "Nueva Calificador",
+			"edit": "Editar calificador"
+		},
+		"hasDuplicate": {
+			"tag": "La etiqueta ya existe, revísela.",
+			"qualifier": "El calificador ya existe, revíselo."
+		},
+		"Tag": {
+			"Dropdown": {
+				"placeholder": "Etiqueta"
+			},
+			"newTag": "Nueva etiqueta",
+			"Input": {
+				"placeholder": "Escriba una nueva etiqueta"
+			},
+			"Buttons": {
+				"ok": "Ok",
+				"cancel": "Cancelar"
+			}
+		},
+		"Qualifier": {
+			"placeholder": "Texto calificador ..."
+		}
+	},
+	"LocationForm": {
+		"baseTitle": {
+			"sublocation": "sublocalización",
+			"location": "ubicación"
+		},
+		"formTitle": {
+			"edit": "Editar",
+			"new": "Añadir nuevo"
+		},
+		"regionTypeOptions": {
+			"placeholder": "Tipo de región",
+			"state": "Expresar",
+			"territory": "Territory",
+			"tribal_land": "Tierra tribal",
+			"county": "Condado",
+			"city": "Ciudad"
+		},
+		"info": "Enlace de información general de la región:",
+		"workflow": "Enlace a una herramienta de flujo de trabajo de elegibilidad existente:",
+		"scheduling": "Programador de registro de citas:",
+		"providers": "Lista de proveedores de programación y ubicaciones:",
+		"eligibility": "Criterios de elegibilidad sobre la fase actual:",
+		"eligibilityPlan": "Documentación que describe las fases de implementación en detalle:",
+		"schedulingPhone": "Una línea directa de programación:",
+		"schedulingPhoneDesc": "Descripción de la línea directa de programación:",
+		"noPhaseLabel": "Sin etiqueta de fase"
+	},
+	"Dashboard": {
+		"title": "Tablero",
+		"loading": "Cargando contenido...",
+		"RefreshButton": "Actualizar datos",
+		"WorkingBranches": {
+			"title": "Ramas de trabajo",
+			"ariaLabelForSelectionColumn": "Alternar selección",
+			"ariaLabelForSelectAllCheckbox": "Alternar selección para todos los elementos",
+			"checkButtonAriaLabel": "Caja de fila",
+			"empty": "No hay sucursales en funcionamiento en este momento.",
+			"load": "Rama de carga",
+			"columns": {
+				"branchName": "Nombre de la sucursal",
+				"name": "",
+				"createdOn": "Creado en",
+				"action": {
+					"ariaLabel": "Columna de acciones"
+				}
+			}
+		},
+		"PendingPRs": {
+			"title": "RP pendientes",
+			"ariaLabelForSelectionColumn": "Alternar selección",
+			"ariaLabelForSelectAllCheckbox": "Alternar selección para todos los elementos",
+			"checkButtonAriaLabel": "Caja de fila",
+			"empty": "No hay RP pendientes en este momento.",
+			"approve": "Aprobar",
+			"load": "Carga PR",
+			"notes": "Notas",
+			"columns": {
+				"title": "Título",
+				"notes": "Notas",
+				"author": "Autor",
+				"update": "Última actualización",
+				"action": {
+					"ariaLabel": "Columna de acciones"
+				}
+			}
+		},
+		"LocationUpdates": {
+			"title": "Actualizaciones de Ubicación",
+			"ariaLabelForSelectionColumn": "Alternar selección",
+			"ariaLabelForSelectAllCheckbox": "Alternar selección para todos los elementos",
+			"checkButtonAriaLabel": "Caja de fila",
+			"empty": "No hay actualizaciones de ubicación pendientes en este momento.",
+			"view": "Vista",
+			"columns": {
+				"title": "Título",
+				"notes": "Notas",
+				"author": "Autor",
+				"update": "Última actualización",
+				"action": {
+					"ariaLabel": "Columna de acciones"
+				}
+			}
+		},
+		"PendingChangesDialog": {
+			"text": "Tiene cambios pendientes en la pestaña de revisión para enviar, la actualización de los datos revertirá esos cambios. <br> <br> ¿Desea continuar?",
+			"cancel": "Cancelar",
+			"submit": "OK"
+		}
+	},
+	"DataIsStaleForm": {
+		"title": "Los datos están obsoletos",
+		"text": "La rama actual actual a la que está intentando acceder no está disponible.\nLa rama se ha eliminado o el cambio se ha marcado como completo.",
+		"RefreshButton": "Actualizar datos"
+	},
+	"DeleteLocationForm": {
+		"title": "Eliminar ubicación",
+		"text": "¿Estás seguro de que te gustaría eliminar",
+		"cancel": "Cancelar"
+	},
+	"LocationsStates": {
+		"title": "Ubicaciones",
+		"addLocation": "Añadir lugar",
+		"loading": "Cargando contenido...",
+		"translationNotFound": "*Traducción No Encontrada*",
+		"SearchBox": {
+			"placeholder": "Buscar"
+		},
+		"locationColumns": {
+			"text": "Expresar",
+			"regions": "Sublocaciones",
+			"ariaLabelForSelectionColumn": "Alternar selección",
+			"ariaLabelForSelectAllCheckbox": "Alternar selección para todos los elementos",
+			"checkButtonAriaLabel": "Caja de fila"
+		}
+	},
+	"PhaseForm": {
+		"title": {
+			"new": "Nueva fase",
+			"edit": "Fase de edición",
+			"duplicate": "Fase duplicada"
+		},
+		"label": "Nombre de la fase:",
+		"hasDuplicateName": "La fase es demasiado similar a una que ya está en uso, revise."
+	},
+	"LocationsRegions": {
+		"title": "Ubicaciones",
+		"active": "activo",
+		"addLocation": "Añadir lugar",
+		"loading": "Cargando contenido...",
+		"translationNotFound": "*Traducción No Encontrada*",
+		"SearchBox": {
+			"placeholder": "Buscar"
+		},
+		"PhaseOverview": {
+			"title": "Resumen de la fase",
+			"AddPhaseButton": "Agregar fase",
+			"region": {
+				"title": "Descripción general de la fase de región"
+			},
+			"empty": "No hay fases disponibles en este momento.",
+			"columns": {
+				"keyId": "ID de fase",
+				"name": "Nombre",
+				"qualifications": "# de calificaciones"
+			}
+		},
+		"Sublocations": {
+			"title": "Sublocalización",
+			"AddLocationButton": "Agregar sublocalización",
+			"region": {
+				"title": "Descripción general de la fase de región"
+			},
+			"empty": "No hay regiones disponibles en este momento.",
+			"ariaLabelForSelectionColumn": "Alternar selección",
+			"ariaLabelForSelectAllCheckbox": "Alternar selección para todos los elementos",
+			"checkButtonAriaLabel": "Caja de fila",
+			"columns": {
+				"name": "Región",
+				"phase": "ID de fase activa"
+			}
+		}
+	},
+	"LocationsPhases": {
+		"AddQualifierButton": "Agregar calificador",
+		"columns": {
+			"duplicate": "Duplicado",
+			"remove": "Eliminar",
+			"active": "Fase activa",
+			"setActive": "Establecer como activo"
+		}
+	},
+	"PhaseQualifierForm": {
+		"FormButtons": {
+			"more": "Más",
+			"details": "Detalles",
+			"remove": "Eliminar"
+		},
+		"Tag": {
+			"placeholder": "Etiqueta"
+		},
+		"Qualifier": {
+			"placeholder": "Calificatorio"
+		},
+		"MoreInfoText": {
+			"placeholder": "Más texto de información"
+		},
+		"MoreInfoUrl": {
+			"placeholder": "Más información URL"
+		}
+	},
+	"QualifierPanel": {
+		"title": "Calificadores",
+		"addQualifierLabel": "Agregar calificador",
+		"translationNotFound": "* Traducción no encontrada *",
+		"columns": {
+			"question": "Pregunta"
+		}
+	},
+	"Review": {
+		"title": "Revisar",
+		"saving": "Guardando cambios...",
+		"columns": {
+			"pending": "Cambios pendientes"
+		},
+		"ErrorMessageBar": {
+			"closeArialLabel": "Cerrar"
+		},
+		"error": {
+			"unexpected": "Inesperado:"
+		},
+		"SubmitForm": {
+			"titleLabel": "Título (opcional):",
+			"detailsLabel": "Detalles (opcional):",
+			"submitText": "Presentar cambios"
+		}
+	},
+	"Translate": {
+		"title": "Traducir",
+		"ErrorMessageBar": {
+			"closeArialLabel": "Cerrar"
+		},
+		"Filter": {
+			"LanguageDropdown": {
+				"label": "Traducir de:",
+				"placeholder": "Idiomas Disponibles"
+			},
+			"TranslateDropdown": {
+				"label": "Mostrar:",
+				"placeholder": "Necesita traducciones"
+			}
+		},
+		"TemplateButtons": {
+			"download": "Descargar plantilla",
+			"upload": "Subir archivo"
+		},
+		"error": {
+			"unexpected": "Inesperado:",
+			"invalidFileContent": "Contenido de archivo no válido.",
+			"invalidFileType": "Tipo de archivo invalido."
+		},
+		"translationNotFound": "* Traducción no encontrada *",
+		"translationFilter": {
+			"needsTranslation": "Necesita traducciones",
+			"showAll": "Mostrar todo"
+		},
+		"miscFilter": {
+			"all": "Todo",
+			"stateSpecific": "Específico del estado",
+			"stateLinks": "Enlaces de estado",
+			"uncategorized": "Sin categorizar",
+			"placeholder": "Filtrar varios"
+		},
+
+		"GroupList": {
+			"loading": "Cargando contenido ...",
+			"updating": "Actualizando traducciones ...",
+			"columns": {
+				"general": "General",
+				"sms": "SMS",
+				"voice": "Voz"
+			},
+			"LocationList": {
+				"title": "Ubicaciones",
+				"empty": "No se encontraron traducciones de ubicación faltantes para:"
+			},
+			"QualifierList": {
+				"title": "Calificadores",
+				"empty": "No se encontraron traducciones de calificador faltantes para:"
+			},
+			"MiscellaneousList": {
+				"title": "Misceláneo",
+				"empty": "No se encontraron traducciones misceláneas faltantes para:"
+			}
+		}
+	},
+	"UnAuthorized": {
+		"title": "Bienvenidos!",
+		"body": "Gracias por su interés en ayudar a administrar los datos, desafortunadamente en este momento el acceso a esta herramienta requiere permisos de colaborador en <a target=\"_blank\" rel=\"noreferrer\" href=\"https://www.github.com/{0}\">este repositorio</a>.<br><br><br>¡No dudes en solicitar acceso en GitHub! "
+	}
+}
