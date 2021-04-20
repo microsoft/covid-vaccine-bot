@@ -98,6 +98,28 @@ export default observer(function LocationPhaseQualifiers(props: LocationPhaseQua
 		setPhaseList(tempPhaseList)
 	}
 
+	const onAddQualifierClick = (phaseId: any) => {
+		const newItem = {
+			key: `${phaseId}-c19.eligibility.question/new_qualifier`,
+			text: '',
+			moreInfoKey: '',
+			moreInfoUrl: '',
+			qualifierId: 'c19.eligibility.question/new_qualifier',
+			tagKey: 'new_tagKey',
+			groupId: phaseId,
+			location: currentLocation,
+		}
+
+		const tempPhaseList = phaseList.map((group) => {
+			if (group.key === phaseId) {
+					group.items.push(newItem)
+			}
+
+			return group
+		})
+		setPhaseList(tempPhaseList)
+	}
+
     return (
         <section className="LocationPhaseQualifiersComponent">
             <div className="locationPhaseQualifiersSectionHeader">
@@ -212,7 +234,7 @@ export default observer(function LocationPhaseQualifiers(props: LocationPhaseQua
 									>
 										<div
 											className="addQualifierGroup"
-											//onClick={() => onAddQualifierClick(group.data.keyId)}
+											onClick={() => onAddQualifierClick(group.data.keyId)}
 										>
 											<FontIcon
 												iconName="CircleAdditionSolid"
