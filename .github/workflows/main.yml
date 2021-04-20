@@ -99,5 +99,5 @@ jobs:
         id: deploy-ingest-function
         with:
           app-name: vaccine-locations-ingest
-          package: ./dist/functions/vax-location-ingest
+          package: ./packages/locations-ingester
           publish-profile: ${{ secrets.INGEST_FNAPP_PUBLISH_PROFILE }}

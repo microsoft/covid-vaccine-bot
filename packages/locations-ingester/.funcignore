@@ -1,6 +1,5 @@
-*.js.map
-*.ts
-.git*
 .vscode
 local.settings.json
 test
+.cache/
+src/

@@ -7,10 +7,10 @@ import path from 'path'
 import { ProviderLocation } from './types'
 
 export function getLatestFilePath() {
-	const DIST_DIR = path.join(__dirname, '../dist/')
-	const files = fs.readdirSync(DIST_DIR)
+	const DATA_DIR = path.join(__dirname, '../.cache/')
+	const files = fs.readdirSync(DATA_DIR)
 	const file = getLatestFile(files)
-	return path.join(DIST_DIR, file)
+	return path.join(DATA_DIR, file)
 }
 
 function getLatestFile(files: string[]): string {

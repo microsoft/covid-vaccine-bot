@@ -7,5 +7,5 @@
 			"schedule": "0 15 5 * * *"
 		}
 	],
-	"entryPoint": "./lib/index.js"
+	"entryPoint": "../lib/index.js"
 }

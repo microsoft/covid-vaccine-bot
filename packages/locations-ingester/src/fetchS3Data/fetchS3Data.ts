@@ -34,7 +34,7 @@ function readDataObject(client: AWS.S3, { Key }: AWS.S3.Object): Promise<void> {
 			Key.indexOf('*') === -1 &&
 			Key.indexOf('test') === -1
 		) {
-			const filename = path.join(__dirname, '../../dist/', Key)
+			const filename = path.join(__dirname, '../../.cache/', Key)
 			fs.mkdirSync(path.dirname(filename), { recursive: true })
 
 			if (fs.existsSync(filename)) {
