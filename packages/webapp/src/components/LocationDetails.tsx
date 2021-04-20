@@ -52,7 +52,7 @@ export default observer(function LocationsDetails(props: LocationsDetailsProp) {
 
 		const items = []
 
-		items.push({ label:'Details','value': currentLocation.info.content.name, isUrl:false })
+		items.push({ label:'Details','value': getCustomString(currentLocation, currentLocation.info.content.name), isUrl:false })
 		items.push({ label: t('LocationForm.regionTypeOptions.placeholder'),'value': currentLocation.info.content.type, isUrl:false})
 
 		if(currentLocation.vaccination?.content.links.info?.url){

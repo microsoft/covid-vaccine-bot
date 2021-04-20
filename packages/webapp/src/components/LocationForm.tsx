@@ -39,7 +39,7 @@ const setInitialData = (currentLocation?: any) => {
 		} = vaccination?.content?.links || {}
 
 		return {
-			details: info.content.name,
+			details: getCustomString(currentLocation, info.content.name),
 			regionType: info.content.type,
 			info: vacInfo?.url || '',
 			workflow: workflow?.url || '',

@@ -144,7 +144,6 @@ const setInitialPhaseItems = (currentLocation: any): any[] => {
 	if (!phases) {
 		const parentLocationVaccinationData = getParentLocationVaccinationData(currentLocation.value)
 		if (parentLocationVaccinationData) {
-			console.log(parentLocationVaccinationData)
 			phases = parentLocationVaccinationData.content.phases
 			activePhase = parentLocationVaccinationData.content.activePhase
 		} else {
