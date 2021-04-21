@@ -10,7 +10,7 @@ import { GeoPoint } from '../types'
 const GEO_CACHE_FILE = path.join(CACHE_DIR, 'geocache.json')
 
 // location id -> lat/lon
-export type GeoCache = Map<string, GeoPoint>
+export type GeoCache = Map<string, GeoPoint | null>
 
 export function readGeocodeCache(): GeoCache {
 	const cache = new Map<string, GeoPoint>()

@@ -12,6 +12,7 @@ import { GeoCache, readGeocodeCache, writeGeocodeCache } from './geocodeCache'
 
 const MAPS_KEY = config.get<string>('azureMaps.key')
 const API_URL = 'https://atlas.microsoft.com/search/address/json'
+const BATCH_SIZE = 5
 
 /**
  * Collates records in the given CSV into the target JSON output format
@@ -20,7 +21,7 @@ const API_URL = 'https://atlas.microsoft.com/search/address/json'
 export async function geocodeData(): Promise<void> {
 	console.log('geocoding data')
 	const records = getLatestJsonRecords()
-	const chunks = _.chunk(records, 10)
+	const chunks = _.chunk(records, BATCH_SIZE)
 	const geoCache = readGeocodeCache()
 	console.log(
 		`read ${records.length} input records, cache warmed with ${geoCache.size} records`
@@ -90,34 +91,41 @@ async function getPosition(
 	}
 	if (cache.has(provider.provider_id)) {
 		return [cache.get(provider.provider_id) || null, true]
-	}
-
-	const query = `${provider.location.street1} ${provider.location.zip}`
-	try {
-		const response = await axios.get(API_URL, {
-			params: {
-				'api-version': '1.0',
-				'subscription-key': MAPS_KEY,
-				limit: 1,
-				query: `"${query}"`,
-			},
-			timeout: 5000,
-		})
-		const pos: null | { lat: number; lon: number } = _.get(
-			response,
-			'data.results[0].position',
-			null
-		)
-		const result: GeoPoint | null = pos
-			? ([pos.lon, pos.lat] as GeoPoint)
-			: null
-		if (result != null) {
+	} else {
+		try {
+			const result = await getPositionFromService(provider)
 			cache.set(provider.provider_id, result)
+			return [result, false]
+		} catch (err) {
+			console.error('error geocoding', err)
+			// swallow on purpose
+			return [null, false]
 		}
-		return [result, false]
-	} catch (err) {
-		console.error('error geocoding', err)
-		// swallow on purpose
-		return [null, false]
 	}
+}
+
+async function getPositionFromService(
+	provider: ProviderLocation
+): Promise<GeoPoint | null> {
+	const query = `${provider.location.street1} ${provider.location.zip}`
+	const response = await axios.get(API_URL, {
+		params: {
+			'api-version': '1.0',
+			'subscription-key': MAPS_KEY,
+			limit: 1,
+			query: `"${query}"`,
+		},
+		timeout: 5000,
+	})
+	if (
+		Object.keys(response.headers).some((s) => s.startsWith('x-ms-ratelimit'))
+	) {
+		console.log('rate limiting headers detected', response.headers)
+	}
+	const pos: null | { lat: number; lon: number } = _.get(
+		response,
+		'data.results[0].position',
+		null
+	)
+	return pos ? ([pos.lon, pos.lat] as GeoPoint) : null
 }

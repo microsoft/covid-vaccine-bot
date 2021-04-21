@@ -18,9 +18,7 @@ export async function writeCosmosData() {
 
 	let chunkIndex = 0
 	for (const chunk of chunks) {
-		if (chunkIndex % 100 === 0) {
-			console.log(`writing batch ${chunkIndex} / ${chunks.length}`)
-		}
+		console.log(`writing batch ${chunkIndex} / ${chunks.length}`)
 		await container.items.bulk(
 			chunk.map((r) => {
 				return {
