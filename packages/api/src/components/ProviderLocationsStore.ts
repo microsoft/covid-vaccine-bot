@@ -4,6 +4,7 @@
  */
 import { Container } from '@azure/cosmos'
 import { ProviderLocation } from '../types'
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const geodist = require('geodist')
 
 const MILES_TO_METERS = 1609.344
