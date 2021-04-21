@@ -8,18 +8,22 @@ import { providerLocationsStore, queryArgUtil } from '../../components'
 
 export const GET: Operation = [
 	async (req: Request, res: Response) => {
-		const [lon, lat] = await queryArgUtil.unpackLocation(req.query)
-
-		const radius = (req.query.radius as any) as number
-		if (radius > 100) {
-			res.status(400).json({ message: 'radius must be <= 100 miles' })
+		try {
+			const [lon, lat] = await queryArgUtil.unpackLocation(req.query)
+			const radius = (req.query.radius as any) as number
+			if (radius > 100) {
+				res.status(400).json({ message: 'radius must be <= 100 miles' })
+			}
+			const providers = await providerLocationsStore.getProviderLocations(
+				lat,
+				lon,
+				radius
+			)
+			res.json(providers)
+		} catch (err) {
+			console.error('error: ', err)
+			res.status(500).send({ message: 'an internal error  occured' })
 		}
-		const providers = await providerLocationsStore.getProviderLocations(
-			lat,
-			lon,
-			radius
-		)
-		res.json(providers)
 	},
 ]
 GET.apiDoc = {

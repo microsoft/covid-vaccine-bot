@@ -3,7 +3,8 @@
 		"endpoint": "COSMOSDB_ENDPOINT",
 		"key": "COSMOSDB_KEY",
 		"database": "COSMOSDB_DATABASE",
-		"container": "COSMOSDB_CONTAINER"
+		"container": "COSMOSDB_CONTAINER",
+		"locationCacheContainer": "COSMOSDB_LOCATION_CACHE_CONTAINER"
 	},
 	"azureMaps": {
 		"key": "AZURE_MAPS_KEY"
