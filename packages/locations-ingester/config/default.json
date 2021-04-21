@@ -5,6 +5,9 @@
 		"database": "vaccination",
 		"container": "providers"
 	},
+	"azureBlobStorage": {
+		"url": null
+	},
 	"azureMaps": {
 		"key": null
 	},

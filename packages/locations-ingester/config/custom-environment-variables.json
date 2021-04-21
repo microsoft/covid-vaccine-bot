@@ -8,6 +8,9 @@
 	"azureMaps": {
 		"key": "AZURE_MAPS_KEY"
 	},
+	"azureBlobStorage": {
+		"url": "AZURE_BLOB_STORAGE_URL"
+	},
 	"vaccinefinder": {
 		"region": "VACCINE_FINDER_AWS_REGION",
 		"bucket": "VACCINE_FINDER_S3_BUCKET"

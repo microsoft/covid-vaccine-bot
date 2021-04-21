@@ -40,16 +40,14 @@ export class ProviderLocationsStore {
 			}
 		)
 		const locations = await response.fetchNext()
-		const result = locations.resources
-		result.sort((a, b) => {
+		const result = locations.resources.sort((a, b) => {
 			const aDist =
 				Math.pow(a.position!.coordinates[0] - lon, 2) +
 				Math.pow(a.position!.coordinates[1] - lat, 2)
-
 			const bDist =
 				Math.pow(b.position!.coordinates[0] - lon, 2) +
 				Math.pow(b.position!.coordinates[1] - lon, 2)
-			return aDist - bDist
+			return Math.sqrt(aDist + bDist)
 		})
 		return result
 	}

@@ -17,6 +17,7 @@
 	},
 	"dependencies": {
 		"@azure/cosmos": "^3.10.5",
+		"@azure/storage-blob": "^12.5.0",
 		"aws-sdk": "^2.880.0",
 		"axios": "^0.21.1",
 		"batch2": "^2.0.0",

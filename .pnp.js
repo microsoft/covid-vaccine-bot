@@ -4576,6 +4576,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@c19-vax-api/locations-ingester", "workspace:packages/locations-ingester"],
             ["@azure/cosmos", "npm:3.10.5"],
             ["@azure/functions", "npm:1.2.3"],
+            ["@azure/storage-blob", "npm:12.5.0"],
             ["@essex/scripts", "virtual:97f1556de62987861180e00cf2f069d66f6c78b244a1fc108df537e1f530f2e8e35a7c8f9db826cd13d9ee22c47f5220b5a0ebe1fbbfcfbc89737fbf5306ed65#npm:12.0.2"],
             ["@tsconfig/node14", "npm:1.0.0"],
             ["@types/config", "npm:0.0.38"],

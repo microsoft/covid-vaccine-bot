@@ -6,7 +6,7 @@ import fs from 'fs'
 import path from 'path'
 import AWS from 'aws-sdk'
 import config from 'config'
-import { CACHE_DIR } from '../cacheDir'
+import { CACHE_DIR } from '../cache'
 import { getLatestFile } from '../io'
 
 const region = config.get<string>('vaccinefinder.region')

@@ -5,6 +5,9 @@
 		"database": "COSMOSDB_DATABASE",
 		"container": "COSMOSDB_CONTAINER"
 	},
+	"azureMaps": {
+		"key": "AZURE_MAPS_KEY"
+	},
 	"service": {
 		"port": "PORT"
 	}

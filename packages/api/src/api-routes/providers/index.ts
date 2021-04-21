@@ -4,12 +4,12 @@
  */
 import { Request, Response } from 'express'
 import { Operation } from 'express-openapi'
-import { providerLocationsStore } from '../../components'
+import { providerLocationsStore, queryArgUtil } from '../../components'
 
 export const GET: Operation = [
 	async (req: Request, res: Response) => {
-		const lat = (req.query.lat as any) as number
-		const lon = (req.query.lon as any) as number
+		const [lon, lat] = await queryArgUtil.unpackLocation(req.query)
+
 		const radius = (req.query.radius as any) as number
 		if (radius > 100) {
 			res.status(400).json({ message: 'radius must be <= 100 miles' })
@@ -29,11 +29,18 @@ GET.apiDoc = {
 	parameters: [
 		{
 			in: 'query',
+			name: 'zip',
+			description: 'the zip code of the search center',
+			type: 'string',
+			required: false,
+		},
+		{
+			in: 'query',
 			name: 'lat',
 			description: 'the latitude of the search center',
 			type: 'number',
 			format: 'double',
-			required: true,
+			required: false,
 		},
 		{
 			in: 'query',
@@ -41,7 +48,7 @@ GET.apiDoc = {
 			description: 'the longitude of the search center',
 			type: 'number',
 			format: 'double',
-			required: true,
+			required: false,
 		},
 		{
 			in: 'query',

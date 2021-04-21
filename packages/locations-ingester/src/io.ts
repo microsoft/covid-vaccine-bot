@@ -4,7 +4,7 @@
  */
 import fs from 'fs'
 import path from 'path'
-import { CACHE_DIR } from './cacheDir'
+import { CACHE_DIR } from './cache'
 import { ProviderLocation } from './types'
 
 export function getLatestFilePath() {
