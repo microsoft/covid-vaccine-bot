@@ -126,6 +126,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@azure/functions@npm:^1.2.3":
+  version: 1.2.3
+  resolution: "@azure/functions@npm:1.2.3"
+  checksum: 047cffda9211596857751c1d5852167f05660e3ad2ec94973f4835eb7b2eab7a2d569866e01041f7bd847513c8b9c6ec1ca9173df6275e9b72c4c04c250452d9
+  languageName: node
+  linkType: hard
+
 "@azure/logger@npm:^1.0.0":
   version: 1.0.2
   resolution: "@azure/logger@npm:1.0.2"
@@ -1891,6 +1898,8 @@ __metadata:
   resolution: "@c19-vax-api/locations-ingester@workspace:packages/locations-ingester"
   dependencies:
     "@azure/cosmos": ^3.10.5
+    "@azure/functions": ^1.2.3
+    "@essex/scripts": ^12.0.2
     "@tsconfig/node14": ^1.0.0
     "@types/config": ^0.0.38
     "@types/lodash": ^4
@@ -17005,6 +17014,7 @@ fsevents@^1.2.7:
     jest: ^26.6.3
     lint-staged: ^10.5.4
     npm-run-all: ^4.1.5
+    shx: ^0.3.3
     typescript: ^4.2.3
   languageName: unknown
   linkType: soft

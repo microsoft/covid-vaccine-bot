@@ -9,3 +9,4 @@ public/
 .pnp.js
 bot_backups/*
 .cache/
+node_modules/

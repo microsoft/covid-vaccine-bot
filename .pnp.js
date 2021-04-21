@@ -101,6 +101,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jest", "npm:26.6.3"],
             ["lint-staged", "npm:10.5.4"],
             ["npm-run-all", "npm:4.1.5"],
+            ["shx", "npm:0.3.3"],
             ["typescript", "patch:typescript@npm%3A4.2.3#builtin<compat/typescript>::version=4.2.3&hash=a45b0e"]
           ],
           "linkType": "SOFT",
@@ -230,6 +231,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["tslib", "npm:2.1.0"],
             ["universal-user-agent", "npm:6.0.0"],
             ["uuid", "npm:8.3.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@azure/functions", [
+        ["npm:1.2.3", {
+          "packageLocation": "./.yarn/cache/@azure-functions-npm-1.2.3-cc4ca1f4a1-047cffda92.zip/node_modules/@azure/functions/",
+          "packageDependencies": [
+            ["@azure/functions", "npm:1.2.3"]
           ],
           "linkType": "HARD",
         }]
@@ -4565,6 +4575,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@c19-vax-api/locations-ingester", "workspace:packages/locations-ingester"],
             ["@azure/cosmos", "npm:3.10.5"],
+            ["@azure/functions", "npm:1.2.3"],
+            ["@essex/scripts", "virtual:97f1556de62987861180e00cf2f069d66f6c78b244a1fc108df537e1f530f2e8e35a7c8f9db826cd13d9ee22c47f5220b5a0ebe1fbbfcfbc89737fbf5306ed65#npm:12.0.2"],
             ["@tsconfig/node14", "npm:1.0.0"],
             ["@types/config", "npm:0.0.38"],
             ["@types/lodash", "npm:4.14.168"],
@@ -4717,7 +4729,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/schema/",
           "packageDependencies": [
             ["@covid-vax-bot/plan-schema", "workspace:packages/schema"],
-            ["@essex/scripts", "virtual:60853e3ec114b18e51ada69bf7f7262fad510a1e30b0986acd76239812ac4168db7c91e526b4a5675f1b268a6c00bac056c55159fb9bbbd0ac7afdf773825fda#npm:12.0.2"],
+            ["@essex/scripts", "virtual:97f1556de62987861180e00cf2f069d66f6c78b244a1fc108df537e1f530f2e8e35a7c8f9db826cd13d9ee22c47f5220b5a0ebe1fbbfcfbc89737fbf5306ed65#npm:12.0.2"],
             ["@types/node", "npm:14.14.35"],
             ["npm-run-all", "npm:4.1.5"],
             ["ts-node", "virtual:fb6087411169c0acccd3a060948afdb2a98f0b0362be45bc247c14f8265510dd9b0faab93f17b8f1aa20667940e14a7f0b485623c267b48f74a508a102c60b0d#npm:9.1.1"],
@@ -4734,7 +4746,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@covid-vax-bot/plans", "workspace:packages/plans"],
             ["@azure/storage-blob", "npm:12.5.0"],
             ["@covid-vax-bot/plan-schema", "workspace:packages/schema"],
-            ["@essex/scripts", "virtual:60853e3ec114b18e51ada69bf7f7262fad510a1e30b0986acd76239812ac4168db7c91e526b4a5675f1b268a6c00bac056c55159fb9bbbd0ac7afdf773825fda#npm:12.0.2"],
+            ["@essex/scripts", "virtual:97f1556de62987861180e00cf2f069d66f6c78b244a1fc108df537e1f530f2e8e35a7c8f9db826cd13d9ee22c47f5220b5a0ebe1fbbfcfbc89737fbf5306ed65#npm:12.0.2"],
             ["@types/checksum", "npm:0.1.31"],
             ["@types/config", "npm:0.0.38"],
             ["@types/jsonwebtoken", "npm:8.5.1"],
@@ -4767,7 +4779,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@covid-vax-bot/source-scraper", "workspace:packages/scraper"],
             ["@covid-vax-bot/plan-schema", "workspace:packages/schema"],
             ["@covid-vax-bot/plans", "workspace:packages/plans"],
-            ["@essex/scripts", "virtual:60853e3ec114b18e51ada69bf7f7262fad510a1e30b0986acd76239812ac4168db7c91e526b4a5675f1b268a6c00bac056c55159fb9bbbd0ac7afdf773825fda#npm:12.0.2"],
+            ["@essex/scripts", "virtual:97f1556de62987861180e00cf2f069d66f6c78b244a1fc108df537e1f530f2e8e35a7c8f9db826cd13d9ee22c47f5220b5a0ebe1fbbfcfbc89737fbf5306ed65#npm:12.0.2"],
             ["@types/atob", "npm:2.1.2"],
             ["@types/node", "npm:14.14.35"],
             ["@types/node-fetch", "npm:2.5.8"],
@@ -5152,10 +5164,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:40182200dcb013a6e13882eb002c72143dd4ac9460138974f2377d0021a653fbc9ed9c2b303fb76364d06d69077b070af34dd360c93cd89c6614e3408781527f#npm:10.0.5", {
-          "packageLocation": "./.yarn/$$virtual/@essex-build-step-lint-staged-virtual-29b1eeb5c1/0/cache/@essex-build-step-lint-staged-npm-10.0.5-8bdb2154bc-dcdf45f23b.zip/node_modules/@essex/build-step-lint-staged/",
+        ["virtual:a607dc063f116c7037d711952e8412e634c6c9a9e6c32caa716123299ba9226f61970918bcce0aad92640ed96452c1fc562d3741e262a8ebf2068e2827940a10#npm:10.0.5", {
+          "packageLocation": "./.yarn/$$virtual/@essex-build-step-lint-staged-virtual-d7a0fe8c89/0/cache/@essex-build-step-lint-staged-npm-10.0.5-8bdb2154bc-dcdf45f23b.zip/node_modules/@essex/build-step-lint-staged/",
           "packageDependencies": [
-            ["@essex/build-step-lint-staged", "virtual:40182200dcb013a6e13882eb002c72143dd4ac9460138974f2377d0021a653fbc9ed9c2b303fb76364d06d69077b070af34dd360c93cd89c6614e3408781527f#npm:10.0.5"],
+            ["@essex/build-step-lint-staged", "virtual:a607dc063f116c7037d711952e8412e634c6c9a9e6c32caa716123299ba9226f61970918bcce0aad92640ed96452c1fc562d3741e262a8ebf2068e2827940a10#npm:10.0.5"],
             ["@essex/build-utils", "npm:10.0.5"],
             ["@essex/shellrunner", "npm:10.0.5"],
             ["@types/lint-staged", null],
@@ -5461,10 +5473,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:40182200dcb013a6e13882eb002c72143dd4ac9460138974f2377d0021a653fbc9ed9c2b303fb76364d06d69077b070af34dd360c93cd89c6614e3408781527f#npm:10.0.4", {
-          "packageLocation": "./.yarn/$$virtual/@essex-eslint-plugin-virtual-12987ffe2d/0/cache/@essex-eslint-plugin-npm-10.0.4-7a1519a74f-9500b4fc94.zip/node_modules/@essex/eslint-plugin/",
+        ["virtual:a607dc063f116c7037d711952e8412e634c6c9a9e6c32caa716123299ba9226f61970918bcce0aad92640ed96452c1fc562d3741e262a8ebf2068e2827940a10#npm:10.0.4", {
+          "packageLocation": "./.yarn/$$virtual/@essex-eslint-plugin-virtual-2bd7f4e732/0/cache/@essex-eslint-plugin-npm-10.0.4-7a1519a74f-9500b4fc94.zip/node_modules/@essex/eslint-plugin/",
           "packageDependencies": [
-            ["@essex/eslint-plugin", "virtual:40182200dcb013a6e13882eb002c72143dd4ac9460138974f2377d0021a653fbc9ed9c2b303fb76364d06d69077b070af34dd360c93cd89c6614e3408781527f#npm:10.0.4"],
+            ["@essex/eslint-plugin", "virtual:a607dc063f116c7037d711952e8412e634c6c9a9e6c32caa716123299ba9226f61970918bcce0aad92640ed96452c1fc562d3741e262a8ebf2068e2827940a10#npm:10.0.4"],
             ["@babel/core", "npm:7.13.10"],
             ["@babel/types", "npm:7.13.0"],
             ["@types/eslint-import-resolver-node", null],
@@ -5479,7 +5491,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-import-resolver-node", null],
             ["eslint-plugin-header", "virtual:c77376b364bbd6ccf86418089bab4dc597688e30d62b69b19876926358a19d5bf7a642a5fb000413c6e856a692bd77b262fcd55310c78cfbc2814333babe66e4#npm:3.1.1"],
             ["eslint-plugin-import", "virtual:c77376b364bbd6ccf86418089bab4dc597688e30d62b69b19876926358a19d5bf7a642a5fb000413c6e856a692bd77b262fcd55310c78cfbc2814333babe66e4#npm:2.22.1"],
-            ["eslint-plugin-jest", "virtual:12987ffe2d761ea6ce542ad0896865cab9a72966b6c2ca914a6795ecb55bc64185cd5fd99ab0813d4dc4bf909b687482a47f16ca4a68e646d5888fa7c5d08478#npm:24.3.2"],
+            ["eslint-plugin-jest", "virtual:2bd7f4e7328de367fbab8f5edebe319e884c613c1561c61909ed5fffcbd0b1a92059292381a9b011004b8e6845055581bef0c5206244196ab7d8c23f98daef63#npm:24.3.2"],
             ["eslint-plugin-jsx-a11y", "virtual:c77376b364bbd6ccf86418089bab4dc597688e30d62b69b19876926358a19d5bf7a642a5fb000413c6e856a692bd77b262fcd55310c78cfbc2814333babe66e4#npm:6.4.1"],
             ["eslint-plugin-react", "virtual:c77376b364bbd6ccf86418089bab4dc597688e30d62b69b19876926358a19d5bf7a642a5fb000413c6e856a692bd77b262fcd55310c78cfbc2814333babe66e4#npm:7.22.0"],
             ["eslint-plugin-react-hooks", "virtual:c77376b364bbd6ccf86418089bab4dc597688e30d62b69b19876926358a19d5bf7a642a5fb000413c6e856a692bd77b262fcd55310c78cfbc2814333babe66e4#npm:4.2.0"],
@@ -5607,7 +5619,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@essex/build-step-eslint", "npm:10.0.5"],
             ["@essex/build-step-init", "npm:12.0.2"],
             ["@essex/build-step-jest", "npm:11.0.2"],
-            ["@essex/build-step-lint-staged", "virtual:40182200dcb013a6e13882eb002c72143dd4ac9460138974f2377d0021a653fbc9ed9c2b303fb76364d06d69077b070af34dd360c93cd89c6614e3408781527f#npm:10.0.5"],
+            ["@essex/build-step-lint-staged", "virtual:a607dc063f116c7037d711952e8412e634c6c9a9e6c32caa716123299ba9226f61970918bcce0aad92640ed96452c1fc562d3741e262a8ebf2068e2827940a10#npm:10.0.5"],
             ["@essex/build-step-pretty-quick", "npm:10.0.5"],
             ["@essex/build-step-recipes", "npm:10.0.5"],
             ["@essex/build-step-rollup", "virtual:dfae5a4e7cc794bdf8e94df912276f7c3fb35cb4a60c00c7675eeeddf202eed4e91f8ed7087fc50cea38f9cdd01f99b020f573d4cb27eb6344773f10af1a6f68#npm:10.0.5"],
@@ -5618,7 +5630,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@essex/build-step-zip", "npm:10.0.5"],
             ["@essex/build-utils", "npm:10.0.5"],
             ["@essex/eslint-config", null],
-            ["@essex/eslint-plugin", "virtual:40182200dcb013a6e13882eb002c72143dd4ac9460138974f2377d0021a653fbc9ed9c2b303fb76364d06d69077b070af34dd360c93cd89c6614e3408781527f#npm:10.0.4"],
+            ["@essex/eslint-plugin", "virtual:a607dc063f116c7037d711952e8412e634c6c9a9e6c32caa716123299ba9226f61970918bcce0aad92640ed96452c1fc562d3741e262a8ebf2068e2827940a10#npm:10.0.4"],
             ["@essex/jest-config", null],
             ["@essex/prettier-config", null],
             ["@essex/shellrunner", "npm:10.0.5"],
@@ -5688,10 +5700,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["virtual:60853e3ec114b18e51ada69bf7f7262fad510a1e30b0986acd76239812ac4168db7c91e526b4a5675f1b268a6c00bac056c55159fb9bbbd0ac7afdf773825fda#npm:12.0.2", {
-          "packageLocation": "./.yarn/$$virtual/@essex-scripts-virtual-40182200dc/0/cache/@essex-scripts-npm-12.0.2-c07b12fc9f-570146de30.zip/node_modules/@essex/scripts/",
+        ["virtual:97f1556de62987861180e00cf2f069d66f6c78b244a1fc108df537e1f530f2e8e35a7c8f9db826cd13d9ee22c47f5220b5a0ebe1fbbfcfbc89737fbf5306ed65#npm:12.0.2", {
+          "packageLocation": "./.yarn/$$virtual/@essex-scripts-virtual-a607dc063f/0/cache/@essex-scripts-npm-12.0.2-c07b12fc9f-570146de30.zip/node_modules/@essex/scripts/",
           "packageDependencies": [
-            ["@essex/scripts", "virtual:60853e3ec114b18e51ada69bf7f7262fad510a1e30b0986acd76239812ac4168db7c91e526b4a5675f1b268a6c00bac056c55159fb9bbbd0ac7afdf773825fda#npm:12.0.2"],
+            ["@essex/scripts", "virtual:97f1556de62987861180e00cf2f069d66f6c78b244a1fc108df537e1f530f2e8e35a7c8f9db826cd13d9ee22c47f5220b5a0ebe1fbbfcfbc89737fbf5306ed65#npm:12.0.2"],
             ["@babel/core", "npm:7.13.10"],
             ["@essex/build-step-azure", "npm:10.0.5"],
             ["@essex/build-step-babel", "npm:10.0.5"],
@@ -5700,7 +5712,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@essex/build-step-eslint", "npm:10.0.5"],
             ["@essex/build-step-init", "npm:12.0.2"],
             ["@essex/build-step-jest", "npm:11.0.2"],
-            ["@essex/build-step-lint-staged", "virtual:40182200dcb013a6e13882eb002c72143dd4ac9460138974f2377d0021a653fbc9ed9c2b303fb76364d06d69077b070af34dd360c93cd89c6614e3408781527f#npm:10.0.5"],
+            ["@essex/build-step-lint-staged", "virtual:a607dc063f116c7037d711952e8412e634c6c9a9e6c32caa716123299ba9226f61970918bcce0aad92640ed96452c1fc562d3741e262a8ebf2068e2827940a10#npm:10.0.5"],
             ["@essex/build-step-pretty-quick", "npm:10.0.5"],
             ["@essex/build-step-recipes", "npm:10.0.5"],
             ["@essex/build-step-rollup", "virtual:ce059eb2a838cb0f85ac28698f4660e9c0d0fba7e9fbdef06d074284487f6e99edc38b5a08734cf927085490e5e5e3f40fb4917a6d80a96effcfc78609243aba#npm:10.0.5"],
@@ -5711,7 +5723,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@essex/build-step-zip", "npm:10.0.5"],
             ["@essex/build-utils", "npm:10.0.5"],
             ["@essex/eslint-config", null],
-            ["@essex/eslint-plugin", "virtual:40182200dcb013a6e13882eb002c72143dd4ac9460138974f2377d0021a653fbc9ed9c2b303fb76364d06d69077b070af34dd360c93cd89c6614e3408781527f#npm:10.0.4"],
+            ["@essex/eslint-plugin", "virtual:a607dc063f116c7037d711952e8412e634c6c9a9e6c32caa716123299ba9226f61970918bcce0aad92640ed96452c1fc562d3741e262a8ebf2068e2827940a10#npm:10.0.4"],
             ["@essex/jest-config", null],
             ["@essex/prettier-config", null],
             ["@essex/shellrunner", "npm:10.0.5"],
@@ -16617,10 +16629,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:12987ffe2d761ea6ce542ad0896865cab9a72966b6c2ca914a6795ecb55bc64185cd5fd99ab0813d4dc4bf909b687482a47f16ca4a68e646d5888fa7c5d08478#npm:24.3.2", {
-          "packageLocation": "./.yarn/$$virtual/eslint-plugin-jest-virtual-38e5f08b68/0/cache/eslint-plugin-jest-npm-24.3.2-c01c1d5a96-caf92f0bab.zip/node_modules/eslint-plugin-jest/",
+        ["virtual:2bd7f4e7328de367fbab8f5edebe319e884c613c1561c61909ed5fffcbd0b1a92059292381a9b011004b8e6845055581bef0c5206244196ab7d8c23f98daef63#npm:24.3.2", {
+          "packageLocation": "./.yarn/$$virtual/eslint-plugin-jest-virtual-8bc52a7ecb/0/cache/eslint-plugin-jest-npm-24.3.2-c01c1d5a96-caf92f0bab.zip/node_modules/eslint-plugin-jest/",
           "packageDependencies": [
-            ["eslint-plugin-jest", "virtual:12987ffe2d761ea6ce542ad0896865cab9a72966b6c2ca914a6795ecb55bc64185cd5fd99ab0813d4dc4bf909b687482a47f16ca4a68e646d5888fa7c5d08478#npm:24.3.2"],
+            ["eslint-plugin-jest", "virtual:2bd7f4e7328de367fbab8f5edebe319e884c613c1561c61909ed5fffcbd0b1a92059292381a9b011004b8e6845055581bef0c5206244196ab7d8c23f98daef63#npm:24.3.2"],
             ["@types/eslint", null],
             ["@types/typescript-eslint__eslint-plugin", null],
             ["@typescript-eslint/eslint-plugin", null],
@@ -23656,6 +23668,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jest", "npm:26.6.3"],
             ["lint-staged", "npm:10.5.4"],
             ["npm-run-all", "npm:4.1.5"],
+            ["shx", "npm:0.3.3"],
             ["typescript", "patch:typescript@npm%3A4.2.3#builtin<compat/typescript>::version=4.2.3&hash=a45b0e"]
           ],
           "linkType": "SOFT",

@@ -4,13 +4,13 @@
  */
 import fs from 'fs'
 import path from 'path'
+import { CACHE_DIR } from './cacheDir'
 import { ProviderLocation } from './types'
 
 export function getLatestFilePath() {
-	const DIST_DIR = path.join(__dirname, '../dist/')
-	const files = fs.readdirSync(DIST_DIR)
+	const files = fs.readdirSync(CACHE_DIR)
 	const file = getLatestFile(files)
-	return path.join(DIST_DIR, file)
+	return path.join(CACHE_DIR, file)
 }
 
 function getLatestFile(files: string[]): string {
