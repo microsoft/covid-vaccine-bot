@@ -6,6 +6,8 @@ import { ingest } from './ingest'
 import { Context } from '@azure/functions'
 
 function scheduledIngest(context: Context) {
+	console.log = context.log
+	console.error = context.log
 	ingest()
 		.then(() => context.done())
 		.catch((err) => context.done(err))

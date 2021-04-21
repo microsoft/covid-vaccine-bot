@@ -8,3 +8,4 @@ packages/plans/data/
 robots.txt
 build/
 dist/
+node_modules/

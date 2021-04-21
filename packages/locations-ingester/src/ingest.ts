@@ -7,9 +7,11 @@ import { geocodeData } from './geocodeData/geocodeData'
 import { getLatestFilePath } from './io'
 import { transformData } from './transformData/transformData'
 import { writeCosmosData } from './writeCosmosData/writeCosmosData'
+import { createCacheDir } from './cacheDir'
 
 export async function ingest() {
 	try {
+		createCacheDir()
 		console.log('fetching S3 Data')
 		await fetchS3Data()
 		console.log('transforming data to JSON')

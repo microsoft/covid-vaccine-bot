@@ -4,9 +4,10 @@
  */
 import fs from 'fs'
 import path from 'path'
+import { CACHE_DIR } from '../cacheDir'
 import { GeoPoint } from '../types'
 
-const GEO_CACHE_FILE = path.join(__dirname, '../../.cache/geocache.json')
+const GEO_CACHE_FILE = path.join(CACHE_DIR, 'geocache.json')
 
 // location id -> lat/lon
 export type GeoCache = Map<string, GeoPoint>

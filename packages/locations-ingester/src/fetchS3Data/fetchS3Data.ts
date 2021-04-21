@@ -6,6 +6,7 @@ import fs from 'fs'
 import path from 'path'
 import AWS from 'aws-sdk'
 import config from 'config'
+import { CACHE_DIR } from '../cacheDir'
 
 const region = config.get<string>('vaccinefinder.region')
 const Bucket = config.get<string>('vaccinefinder.bucket')
@@ -34,7 +35,7 @@ function readDataObject(client: AWS.S3, { Key }: AWS.S3.Object): Promise<void> {
 			Key.indexOf('*') === -1 &&
 			Key.indexOf('test') === -1
 		) {
-			const filename = path.join(__dirname, '../../.cache/', Key)
+			const filename = path.join(CACHE_DIR, Key)
 			fs.mkdirSync(path.dirname(filename), { recursive: true })
 
 			if (fs.existsSync(filename)) {
