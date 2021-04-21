@@ -24,8 +24,7 @@
 		"batch2": "^2.0.0",
 		"config": "^3.3.6",
 		"csv-parse": "^4.15.3",
-		"lodash": "^4.17.21",
-		"progress": "^2.0.3"
+		"lodash": "^4.17.21"
 	},
 	"devDependencies": {
 		"@azure/functions": "^1.2.3",

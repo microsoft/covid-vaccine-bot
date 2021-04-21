@@ -4590,7 +4590,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["csv-parse", "npm:4.15.3"],
             ["lodash", "npm:4.17.21"],
             ["npm-run-all", "npm:4.1.5"],
-            ["progress", "npm:2.0.3"],
             ["ts-node", "virtual:fb6087411169c0acccd3a060948afdb2a98f0b0362be45bc247c14f8265510dd9b0faab93f17b8f1aa20667940e14a7f0b485623c267b48f74a508a102c60b0d#npm:9.1.1"],
             ["typescript", "patch:typescript@npm%3A4.2.3#builtin<compat/typescript>::version=4.2.3&hash=a45b0e"]
           ],

@@ -4,7 +4,6 @@
  */
 import { UpsertOperationInput } from '@azure/cosmos'
 import _ from 'lodash'
-import ProgressBar from 'progress'
 import { getCosmosContainer } from '../cosmos'
 import { getLatestGeoJsonRecords } from '../io'
 
@@ -16,9 +15,12 @@ export async function writeCosmosData() {
 	const data = getLatestGeoJsonRecords()
 	console.log(`writing provider data: ${data.length} records`)
 	const chunks = _.chunk(data, MAX_COSMOS_BATCH_SIZE)
-	const bar = new ProgressBar(':bar', { total: chunks.length })
 
+	let chunkIndex = 0
 	for (const chunk of chunks) {
+		if (chunkIndex % 100 === 0) {
+			console.log(`writing batch ${chunkIndex} / ${chunks.length}`)
+		}
 		await container.items.bulk(
 			chunk.map((r) => {
 				return {
@@ -27,7 +29,6 @@ export async function writeCosmosData() {
 				} as UpsertOperationInput
 			})
 		)
-		bar.tick()
 	}
 	console.log('finished writing cosmosdb data')
 }

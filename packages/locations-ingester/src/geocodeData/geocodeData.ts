@@ -6,7 +6,6 @@ import fs from 'fs'
 import axios from 'axios'
 import config from 'config'
 import _ from 'lodash'
-import ProgressBar from 'progress'
 import { getLatestFilePath, getLatestJsonRecords } from '../io'
 import { GeoPoint, ProviderLocation } from '../types'
 import { GeoCache, readGeocodeCache, writeGeocodeCache } from './geocodeCache'
@@ -27,12 +26,16 @@ export async function geocodeData(): Promise<void> {
 		`read ${records.length} input records, cache warmed with ${geoCache.size} records`
 	)
 
-	const bar = new ProgressBar(':bar', { total: chunks.length })
 	try {
+		let chunkIndex = 0
 		for (const chunk of chunks) {
+			if (chunkIndex % 100 === 0) {
+				console.log(`geocoding chunk ${chunkIndex}/${chunks.length}`)
+			}
 			await Promise.all(chunk.map((c) => geocodeLocation(c, geoCache)))
-			bar.tick()
+			chunkIndex++
 		}
+		console.log('writing geocoded data file')
 		fs.writeFileSync(
 			getLatestFilePath().replace('.csv', '.geocoded.json'),
 			records.map((r) => JSON.stringify(r)).join('\n'),
