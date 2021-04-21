@@ -31,11 +31,12 @@ import './Locations.scss'
 
 export interface LocationsStatesProp {
 	locationList: any
+	currentLocation:any
 	onSelectedItem: (item: any) => void
 }
 
 export default observer(function LocationsStates(props: LocationsStatesProp) {
-	const { onSelectedItem, locationList } = props
+	const { onSelectedItem, locationList, currentLocation } = props
 
 	const [
 		isLocationModalOpen,
@@ -48,6 +49,7 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 	const [filteredStateList, setFilteredStateList] = useState<any[]>([])
 	const stateRepoFullList = useRef<any[]>([])
 	const selectedLocationItem = useRef<any>(null)
+	const selectedLocationPath = useRef<any>(null)
 
 	const state = getAppStore()
 
@@ -119,13 +121,17 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 	)
 
 	const onLocationFormSubmit = useCallback(
-		(locationData, prevItem) => {
+		(locationFormData, prevItem, initPath) => {
 			dismissLocationModal()
-			if (!prevItem) {
-				updateLocationList(locationData, false)
-			} else {
-				updateLocationData(locationData, false, prevItem)
+
+			if(prevItem){
+				updateLocationData(locationFormData, initPath )
 			}
+			// if (!prevItem) {
+			// 	updateLocationList(locationData, false)
+			// } else {
+			// 	updateLocationData(locationData, false, prevItem)
+			// }
 		},
 		[dismissLocationModal]
 	)
@@ -140,7 +146,9 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 
 	const onLocationFormOpen = useCallback(
 		(item?: any) => {
-			selectedLocationItem.current = item ?? null
+			console.log(item)
+			selectedLocationItem.current = item?.value
+			selectedLocationPath.current = item?.value.info.path ?? currentLocation?.info.path
 			openLocationModal()
 		},
 		[openLocationModal]
@@ -231,7 +239,8 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 				isBlocking={false}
 			>
 				<LocationForm
-					currentLocation={selectedLocationItem.current?.value}
+					currentLocation={selectedLocationItem.current}
+					currentPath={selectedLocationPath.current}
 					onCancel={dismissLocationModal}
 					onSubmit={onLocationFormSubmit}
 				/>

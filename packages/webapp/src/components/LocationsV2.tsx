@@ -130,7 +130,7 @@ export default observer(function LocationsV2() {
 										<LocationPhaseList currentLocation={currentLocation} onItemClicked={openPhaseItem} />
 									</>
 								)}
-									<LocationStates locationList={currentLocationList} onSelectedItem={(item) => getLocationsData(item)}/>
+									<LocationStates currentLocation={currentLocation} locationList={currentLocationList} onSelectedItem={(item) => getLocationsData(item)}/>
 							</>
 						) : (
 							<LocationPhaseQualifiers currentLocation={currentLocation} />

@@ -20,7 +20,8 @@ import './LocationForm.scss'
 
 export interface LocationFormProp {
 	currentLocation?: any
-	onSubmit?: (locationData: any, prevItem: any) => void
+	currentPath:string
+	onSubmit?: (locationData: any, prevItem: any, initPath:string) => void
 	onCancel?: () => void
 }
 
@@ -73,7 +74,7 @@ const setInitialData = (currentLocation?: any) => {
 }
 
 export default observer(function LocationForm(props: LocationFormProp) {
-	const { onSubmit, onCancel, currentLocation } = props
+	const { onSubmit, onCancel, currentLocation, currentPath } = props
 	const [formData, setFormData] = useState<any>(setInitialData(currentLocation))
 	const fieldChanges = useRef<any>(formData)
 	const regionTypeOptions = [
@@ -229,7 +230,7 @@ export default observer(function LocationForm(props: LocationFormProp) {
 				<PrimaryButton
 					text={t('App.submit')}
 					disabled={!canSubmit()}
-					onClick={() => onSubmit?.(formData, currentLocation)}
+					onClick={() => onSubmit?.(formData, currentLocation, currentPath)}
 				/>
 				<DefaultButton text={t('App.cancel')} onClick={() => onCancel?.()} />
 			</div>

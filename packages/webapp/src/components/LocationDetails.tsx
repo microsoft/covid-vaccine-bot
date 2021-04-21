@@ -14,6 +14,10 @@ import {
 	Modal
 } from '@fluentui/react'
 
+import {
+	updateLocationData
+} from '../mutators/repoMutators'
+
 import { getText as t } from '../selectors/intlSelectors'
 import { getCustomString } from '../selectors/locationSelectors'
 import LocationForm from './LocationForm'
@@ -28,6 +32,7 @@ export interface LocationsDetailsProp {
 export default observer(function LocationsDetails(props: LocationsDetailsProp) {
 
 	const { currentLocation } = props
+	const currentPath = currentLocation.info.path
 	const { isEditable } = getAppStore()
 
 	const [
@@ -36,13 +41,13 @@ export default observer(function LocationsDetails(props: LocationsDetailsProp) {
 	] = useBoolean(false)
 
 	const onLocationFormSubmit = useCallback(
-		(locationData, prevItem) => {
+		(locationFormData, prevItem, initPath) => {
 			dismissLocationModal()
-			// if (!prevItem) {
-			// 	updateLocationList(locationData, false)
-			// } else {
-			// 	updateLocationData(locationData, false, prevItem)
-			// }
+
+			if(prevItem){
+				updateLocationData(locationFormData, initPath )
+			}
+
 		},
 		[dismissLocationModal]
 	)
@@ -53,7 +58,27 @@ export default observer(function LocationsDetails(props: LocationsDetailsProp) {
 		const items = []
 
 		items.push({ label:'Details','value': getCustomString(currentLocation, currentLocation.info.content.name), isUrl:false })
-		items.push({ label: t('LocationForm.regionTypeOptions.placeholder'),'value': currentLocation.info.content.type, isUrl:false})
+
+		switch(currentLocation.info.content.type.toLowerCase()){
+
+			case 'state':
+				items.push({ label: t('LocationForm.regionTypeOptions.placeholder'),'value': t('LocationForm.regionTypeOptions.state'), isUrl:false})
+				break;
+			case 'territory':
+				items.push({ label: t('LocationForm.regionTypeOptions.placeholder'),'value': t('LocationForm.regionTypeOptions.territory'), isUrl:false})
+				break;
+			case 'tribal_land':
+				items.push({ label: t('LocationForm.regionTypeOptions.placeholder'),'value': t('LocationForm.regionTypeOptions.tribal_land'), isUrl:false})
+				break;
+			case 'county':
+				items.push({ label: t('LocationForm.regionTypeOptions.placeholder'),'value': t('LocationForm.regionTypeOptions.county'), isUrl:false})
+				break;
+			case 'city':
+				items.push({ label: t('LocationForm.regionTypeOptions.placeholder'),'value': t('LocationForm.regionTypeOptions.city'), isUrl:false})
+				break;
+		}
+
+		
 
 		if(currentLocation.vaccination?.content.links.info?.url){
 			items.push({ label:t('LocationForm.info'),'value': currentLocation.vaccination.content.links.info.url, isUrl:true })
@@ -86,6 +111,10 @@ export default observer(function LocationsDetails(props: LocationsDetailsProp) {
 		if(currentLocation.vaccination?.content.links.scheduling_phone?.description){
 			items.push({ label: t('LocationForm.schedulingPhoneDesc'),'value': getCustomString(currentLocation, currentLocation.vaccination.content.links.scheduling_phone.description), isUrl:false})
 		}
+
+		items.push({ label: t('LocationForm.noPhaseLabel'),'value': currentLocation.vaccination.content.noPhaseLabel === true ? "Yes": "No", isUrl:false})
+
+
 
 
 	const formValueRender = (item: any) => {
@@ -153,6 +182,7 @@ export default observer(function LocationsDetails(props: LocationsDetailsProp) {
 			>
 				<LocationForm
 					currentLocation={currentLocation}
+					currentPath={currentPath}
 					onCancel={dismissLocationModal}
 					onSubmit={onLocationFormSubmit}
 				/>
