@@ -12,7 +12,7 @@
 
 ## Alabama Active Phase (2)
 
-* Are you age 16+?
+* Are you at least 16 years of age?
 
 # Alaska
 
@@ -30,7 +30,7 @@
 
 ## Alaska Active Phase (2)
 
-* Are you age 16+?
+* Are you at least 16 years of age?
 	* The COVID-19 vaccine is now available for anyone living or working in Alaska who is age 16 or older. (see [here](http://dhss.alaska.gov/dph/epi/id/pages/COVID-19/vaccine.aspx))
 
 ## Alaska Regions
@@ -57,7 +57,7 @@
 
 ## American Samoa Active Phase (18_and_older)
 
-* Are you age 18+?
+* Are you at least 18 years of age?
 
 # Arizona
 
@@ -74,7 +74,7 @@
 
 ## Arizona Active Phase (1b_16_and_older)
 
-* Are you age 16+?
+* Are you at least 16 years of age?
 
 ## Arizona Regions
 
@@ -261,7 +261,7 @@
 
 ## Arkansas Active Phase (16_and_older)
 
-* Are you age 16+?
+* Are you at least 16 years of age?
 
 # California
 
@@ -276,7 +276,7 @@
 
 ## California Active Phase (16)
 
-* Are you age 16+?
+* Are you at least 16 years of age?
 	* People eligible for the vaccine now are people 16 years and older. However, not all sites will have vaccines (Pfizer) for people under 18. Check when you book.
 
 ## California Regions
@@ -480,7 +480,7 @@
 
 ## Colorado Active Phase (2)
 
-* Are you age 16+?
+* Are you at least 16 years of age?
 	* Any Coloradan who is at least 16-years-old is now eligible to the Pfizer vaccine; any Coloradan over 18-years-old can receive either the Modern or the Johnson and Johnson and vaccine.
 
 # Connecticut
@@ -497,7 +497,7 @@
 
 ## Connecticut Active Phase (16_and_older)
 
-* Are you age 16+?
+* Are you at least 16 years of age?
 	* Beginning April 1st , all individuals 16 years of age and older who live, work, or attend school in Connecticut are eligible to receive vaccine.
 
 # Delaware
@@ -516,7 +516,7 @@
 
 ## Delaware Active Phase (2)
 
-* Are you age 16+?
+* Are you at least 16 years of age?
 	* - All persons 16+ may now sign up for the state waitlist or through a pharmacy site.
 - Though you are eligible now, it may still take a few weeks to make a vaccination appointments based on the size of this group.
 - Persons 16 & 17 years old are only eligible to receive the Pfizer vaccine - check the vaccine being offered at each site closely.
@@ -536,7 +536,7 @@
 
 ## District of Columbia Active Phase (16_and_up)
 
-* Are you age 16+?
+* Are you at least 16 years of age?
 
 # Federated States of Micronesia
 
@@ -549,7 +549,7 @@
 
 ## Federated States of Micronesia Active Phase (1a)
 
-* Are you age 18+?
+* Are you at least 18 years of age?
 
 # Florida
 
@@ -562,7 +562,7 @@
 
 ## Florida Active Phase (1a)
 
-* Are you age 16+?
+* Are you at least 16 years of age?
 	* 
 ALL PERSONS 18 YEARS OF AGE AND OLDER ARE ELIGIBLE TO RECEIVE THE VACCINE IN FLORIDA
 As of Monday, April 5, all Florida residents  are eligible to receive any COVID-19 vaccine as prescribed by the Food and Drug Administration.
@@ -582,7 +582,7 @@ PERSONS AGES 16-17:  The Pfizer vaccine is authorized for persons age 16 and up.
 
 ## Georgia Active Phase (16_and_older)
 
-* Are you age 16+?
+* Are you at least 16 years of age?
 
 # Guam
 
@@ -595,7 +595,7 @@ PERSONS AGES 16-17:  The Pfizer vaccine is authorized for persons age 16 and up.
 
 ## Guam Active Phase (16_and_older)
 
-* Are you age 16+?
+* Are you at least 16 years of age?
 	* Minors may only receive the Pfizer-BioNTech COVID-19 vaccine as the Moderna and Johnson & Johnson/Janssen (J&J/Janssen) vaccines are not recommended for individuals below the age of 18. Minors must be accompanied by a parent or legal guardian and provide government-issued identification to validate age.
 
 Upon arrival at vaccination events, individuals 60 years and older may be sent to the front of the line.
@@ -636,7 +636,7 @@ Upon arrival at vaccination events, individuals 60 years and older may be sent t
 
 ## Hawaii Active Phase (2)
 
-* Are you age 16+?
+* Are you at least 16 years of age?
 	* Phase 2 includes:
 - Persons 16 years and older (Pfizer).
 - Persons 18 years and older (Moderna and Johnson & Johnson).
@@ -714,7 +714,7 @@ Upon arrival at vaccination events, individuals 60 years and older may be sent t
 
 ## Idaho Active Phase (april_5)
 
-* Are you age 16+?
+* Are you at least 16 years of age?
 
 ## Idaho Regions
 
@@ -1158,7 +1158,7 @@ Upon arrival at vaccination events, individuals 60 years and older may be sent t
 
 ## Illinois Active Phase (16_and_up)
 
-* Are you age 16+?
+* Are you at least 16 years of age?
 	* Chicago not available until April 19th.
 
 ## Illinois Regions
@@ -1211,7 +1211,7 @@ Upon arrival at vaccination events, individuals 60 years and older may be sent t
 
 ## Indiana Active Phase (16_and_older)
 
-* Are you age 16+?
+* Are you at least 16 years of age?
 	* Anyone age 16 and older may now schedule a COVID-19 vaccination appointment. Click here to register or call 211 (866-211-9966) if you do not have access to a computer or need assistance.
 
 Please note that anyone younger than 18 must receive the Pfizer vaccine. It is the only vaccine to receive Emergency Use Authorization from the FDA for that age group. Proof of age will be required at the time of vaccination. (see [here](https://vaccine.coronavirus.in.gov/en-US/))
@@ -1228,7 +1228,7 @@ Please note that anyone younger than 18 must receive the Pfizer vaccine. It is t
 
 ## Iowa Active Phase (2)
 
-* Are you age 16+?
+* Are you at least 16 years of age?
 
 # Kansas
 
@@ -1243,7 +1243,7 @@ Please note that anyone younger than 18 must receive the Pfizer vaccine. It is t
 
 ## Kansas Active Phase (5)
 
-* Are you age 16+?
+* Are you at least 16 years of age?
 
 # Kentucky
 
@@ -1260,7 +1260,7 @@ Please note that anyone younger than 18 must receive the Pfizer vaccine. It is t
 
 ## Kentucky Active Phase (3)
 
-* Are you age 16+?
+* Are you at least 16 years of age?
 
 # Louisiana
 
@@ -1275,7 +1275,7 @@ Please note that anyone younger than 18 must receive the Pfizer vaccine. It is t
 
 ## Louisiana Active Phase (16_and_older)
 
-* Are you age 16+?
+* Are you at least 16 years of age?
 	* Beginning Monday, March 29, everyone in Louisiana ages 18 and older is eligible to get vaccinated against COVID-19. The Pfizer vaccine is available to those 16 and older.
 
 # Maine
@@ -1291,7 +1291,7 @@ Please note that anyone younger than 18 must receive the Pfizer vaccine. It is t
 
 ## Maine Active Phase (_age_16_and_older)
 
-* Are you age 16+?
+* Are you at least 16 years of age?
 
 # Marshall Islands
 
@@ -1305,7 +1305,7 @@ Please note that anyone younger than 18 must receive the Pfizer vaccine. It is t
 
 ## Marshall Islands Active Phase (current)
 
-* Are you age 18+?
+* Are you at least 18 years of age?
 
 # Maryland
 
@@ -1390,7 +1390,7 @@ Individuals who are diagnosed with these medical conditions but are not currentl
 
 ## Massachusetts Active Phase (phase_3)
 
-* Are you age 16+?
+* Are you at least 16 years of age?
 
 ## Massachusetts Regions
 
@@ -1536,7 +1536,7 @@ Individuals who are diagnosed with these medical conditions but are not currentl
 
 ## Michigan Active Phase (2)
 
-* Are you age 16+?
+* Are you at least 16 years of age?
 
 # Minnesota
 
@@ -1552,7 +1552,7 @@ Individuals who are diagnosed with these medical conditions but are not currentl
 
 ## Minnesota Active Phase (16_and_older)
 
-* Are you age 16+?
+* Are you at least 16 years of age?
 	* As of March 30, all Minnesotans 16 years of age and older will be eligible to receive a vaccine. Minnesota has directed providers to prioritize vaccine appointments for people most at risk of getting COVID-19, or those who could develop severe illness if infected. This includes older Minnesotans, those with underlying health conditions*, and those in essential jobs.
 
 # Mississippi
@@ -1570,7 +1570,7 @@ Individuals who are diagnosed with these medical conditions but are not currentl
 
 ## Mississippi Active Phase (2)
 
-* Are you age 16+?
+* Are you at least 16 years of age?
 	* If you are 18 or older, you can be vaccinated at any of our drive-through sites at no cost. Persons younger than 18 should make a drive-through site appointment by calling 877-978-6453, or visit a private healthcare provider for COVID-19 vaccination to ensure that they receive a vaccine approved for their age.
 
 COVID-19 vaccinations are provided to Mississippi residents only, or to out-of-state residents who work in Mississippi. (see [here](https://msdh.ms.gov/msdhsite/_static/14,22816,420,976.html))
@@ -1589,7 +1589,7 @@ COVID-19 vaccinations are provided to Mississippi residents only, or to out-of-s
 
 ## Missouri Active Phase (16_and_up)
 
-* Are you age 16+?
+* Are you at least 16 years of age?
 
 # Montana
 
@@ -1604,7 +1604,7 @@ COVID-19 vaccinations are provided to Mississippi residents only, or to out-of-s
 
 ## Montana Active Phase (16_and_older)
 
-* Are you age 16+?
+* Are you at least 16 years of age?
 
 # Nebraska
 
@@ -1622,7 +1622,7 @@ COVID-19 vaccinations are provided to Mississippi residents only, or to out-of-s
 
 ## Nebraska Active Phase (2b)
 
-* Are you age 16+?
+* Are you at least 16 years of age?
 
 ## Nebraska Regions
 
@@ -1637,7 +1637,7 @@ COVID-19 vaccinations are provided to Mississippi residents only, or to out-of-s
 
 ### Nebraska::Lancaster Active Phase (2b)
 
-* Are you age 18+?
+* Are you at least 18 years of age?
 
 # Nevada
 
@@ -1652,7 +1652,7 @@ COVID-19 vaccinations are provided to Mississippi residents only, or to out-of-s
 
 ## Nevada Active Phase (age_16)
 
-* Are you age 16+?
+* Are you at least 16 years of age?
 
 ## Nevada Regions
 
@@ -1672,7 +1672,7 @@ COVID-19 vaccinations are provided to Mississippi residents only, or to out-of-s
 
 ### Nevada::Carson City Active Phase (age_16)
 
-* Are you age 16+?
+* Are you at least 16 years of age?
 
 ## Nevada::Churchill
 
@@ -1689,7 +1689,7 @@ COVID-19 vaccinations are provided to Mississippi residents only, or to out-of-s
 
 ### Nevada::Churchill Active Phase (age_18_and_essential_workers)
 
-* Are you age 18+?
+* Are you at least 18 years of age?
 
 ## Nevada::Clark
 
@@ -1706,7 +1706,7 @@ COVID-19 vaccinations are provided to Mississippi residents only, or to out-of-s
 
 ### Nevada::Clark Active Phase (age_16)
 
-* Are you age 16+?
+* Are you at least 16 years of age?
 
 ## Nevada::Douglas
 
@@ -1719,7 +1719,7 @@ COVID-19 vaccinations are provided to Mississippi residents only, or to out-of-s
 
 ### Nevada::Douglas Active Phase (age_16)
 
-* Are you age 16+?
+* Are you at least 16 years of age?
 
 ## Nevada::Elko
 
@@ -1732,7 +1732,7 @@ COVID-19 vaccinations are provided to Mississippi residents only, or to out-of-s
 
 ### Nevada::Elko Active Phase (age_16)
 
-* Are you age 16+?
+* Are you at least 16 years of age?
 
 ## Nevada::Esmeralda
 
@@ -1807,7 +1807,7 @@ COVID-19 vaccinations are provided to Mississippi residents only, or to out-of-s
 
 ### Nevada::Lyon Active Phase (age_16)
 
-* Are you age 16+?
+* Are you at least 16 years of age?
 
 ## Nevada::Mineral
 
@@ -1847,7 +1847,7 @@ COVID-19 vaccinations are provided to Mississippi residents only, or to out-of-s
 
 ### Nevada::Pershing Active Phase (age_18)
 
-* Are you age 18+?
+* Are you at least 18 years of age?
 
 ## Nevada::Storey
 
@@ -1864,7 +1864,7 @@ COVID-19 vaccinations are provided to Mississippi residents only, or to out-of-s
 
 ### Nevada::Storey Active Phase (age_16)
 
-* Are you age 16+?
+* Are you at least 16 years of age?
 
 ## Nevada::Washoe
 
@@ -1881,7 +1881,7 @@ COVID-19 vaccinations are provided to Mississippi residents only, or to out-of-s
 
 ### Nevada::Washoe Active Phase (age_16)
 
-* Are you age 16+?
+* Are you at least 16 years of age?
 
 ## Nevada::White Pine
 
@@ -1908,7 +1908,7 @@ COVID-19 vaccinations are provided to Mississippi residents only, or to out-of-s
 
 ## New Hampshire Active Phase (phase_3_ages_16)
 
-* Are you age 16+?
+* Are you at least 16 years of age?
 
 # New Jersey
 
@@ -1924,7 +1924,7 @@ COVID-19 vaccinations are provided to Mississippi residents only, or to out-of-s
 
 ## New Jersey Active Phase (current)
 
-* Are you age 16+?
+* Are you at least 16 years of age?
 
 # New Mexico
 
@@ -1941,7 +1941,7 @@ COVID-19 vaccinations are provided to Mississippi residents only, or to out-of-s
 
 ## New Mexico Active Phase (current_phase)
 
-* Are you age 16+?
+* Are you at least 16 years of age?
 
 # New York
 
@@ -1958,7 +1958,7 @@ COVID-19 vaccinations are provided to Mississippi residents only, or to out-of-s
 
 ## New York Active Phase (current)
 
-* Are you age 16+?
+* Are you at least 16 years of age?
 	* Note: People who are 16 and 17 years old are only eligible for the Pfizer vaccine.
 
 The COVID-19 vaccine is currently available to all New York State residents 16 and older. People who live outside of the state but work in New York are also eligible to get vaccinated if they belong to one of the groups at the link. These groups that are eligible based on employment include both paid and unpaid workers.
@@ -1979,7 +1979,7 @@ The COVID-19 vaccine is currently available to all New York State residents 16 a
 
 ## North Carolina Active Phase (current)
 
-* Are you age 16+?
+* Are you at least 16 years of age?
 	* COVID-19 vaccines are available in North Carolina to everyone ages 16 and older.
 What you should know:
 - The vaccine is free everywhere in North Carolina.
@@ -2002,7 +2002,7 @@ What you should know:
 
 ## North Dakota Active Phase (2)
 
-* Are you age 16+?
+* Are you at least 16 years of age?
 	* All people 16+ (for Pfizer only) and 18+ (for all vaccines) are eligible in North Dakota. However, some vaccination sites are currently only serving those 18+ or essential workers. Please confirm your eligibility matches that of the location where you're signing up  (see [here](https://www.health.nd.gov/covidvaccinelocator))
 
 # Northern Mariana Islands
@@ -2018,7 +2018,7 @@ What you should know:
 
 ## Northern Mariana Islands Active Phase (18_and_older)
 
-* Are you age 18+?
+* Are you at least 18 years of age?
 
 ## Northern Mariana Islands Regions
 
@@ -2071,7 +2071,7 @@ What you should know:
 
 ## Ohio Active Phase (current)
 
-* Are you age 16+?
+* Are you at least 16 years of age?
 
 # Oklahoma
 
@@ -2087,7 +2087,7 @@ What you should know:
 
 ## Oklahoma Active Phase (phase_4)
 
-* Are you age 16+?
+* Are you at least 16 years of age?
 	* If you are a parent accompanying a minor to their appointment (16yo + for Pfizer only), it is helpful to bring their school photo ID, a birth certificate, or a social security card if they do not have a driver's license/permit.
 
 # Oregon
@@ -2105,7 +2105,7 @@ What you should know:
 
 ## Oregon Active Phase (2)
 
-* Are you age 16+?
+* Are you at least 16 years of age?
 
 ## Oregon Regions
 
@@ -2517,7 +2517,7 @@ What you should know:
 
 ## Palau Active Phase (18_and_older)
 
-* Are you age 18+?
+* Are you at least 18 years of age?
 	* All residents ages 18 and older are eligible to get the vaccine in Palau.
 
 # Pennsylvania
@@ -2533,7 +2533,7 @@ What you should know:
 
 ## Pennsylvania Active Phase (2)
 
-* Are you age 16+?
+* Are you at least 16 years of age?
 	* ​All individuals not previously covered who are 16 and older and do not have a contraindication to the vaccine (note that at this time, only the Pfizer-BioNTech product is approved for those age 16 and 17)
 
 ## Pennsylvania Regions
@@ -2563,7 +2563,7 @@ What you should know:
 
 ## Puerto Rico Active Phase (16_and_up)
 
-* Are you age 16+?
+* Are you at least 16 years of age?
 
 # Rhode Island
 
@@ -2578,7 +2578,7 @@ What you should know:
 
 ## Rhode Island Active Phase (current)
 
-* Are you age 16+?
+* Are you at least 16 years of age?
 
 ## Rhode Island Regions
 
@@ -2774,7 +2774,7 @@ What you should know:
 
 ## South Carolina Active Phase (16_and_older)
 
-* Are you age 16+?
+* Are you at least 16 years of age?
 	* South Carolina's phased approach to its COVID-19 vaccine rollout was focused on saving lives, which is why those most at risk for severe illness and death were prioritized to receive vaccine first. With more and more vaccine becoming available and more and more people receiving their shots, South Carolina is now able to open vaccines to anyone 16 and older.
 
 # South Dakota
@@ -2791,7 +2791,7 @@ What you should know:
 
 ## South Dakota Active Phase (2)
 
-* Are you age 16+?
+* Are you at least 16 years of age?
 
 # Tennessee
 
@@ -2809,7 +2809,7 @@ What you should know:
 
 ## Tennessee Active Phase (3)
 
-* Are you age 16+?
+* Are you at least 16 years of age?
 
 ## Tennessee Regions
 
@@ -2847,12 +2847,12 @@ What you should know:
 
 ## Texas Active Phase (current)
 
-* Are you age 16+?
+* Are you at least 16 years of age?
 	* The state's Expert Vaccine Allocation Panel recommended opening vaccination to everyone who falls under the current Food and Drug Administration emergency use authorizations. All vaccines are authorized for people age 18 and older. The Pfizer vaccine is authorized for people 16 and older. (see [here](https://www.dshs.state.tx.us/coronavirus/immunize/vaccine.aspx))
 
-# Virgin Islands
+# U.S. Virgin Islands
 
-## Virgin Islands Links
+## U.S. Virgin Islands Links
 
 | link type | link |
 | --- | --- |
@@ -2863,15 +2863,15 @@ What you should know:
 | scheduling_phone | [(340) 777 8227](tel:(340) 777 8227) |
 
 
-## Virgin Islands Active Phase (16_and_older)
+## U.S. Virgin Islands Active Phase (16_and_older)
 
-* Are you age 16+?
+* Are you at least 16 years of age?
 
-## Virgin Islands Regions
+## U.S. Virgin Islands Regions
 
-## Virgin Islands::St. Croix
+## U.S. Virgin Islands::St. Croix
 
-### Virgin Islands::St. Croix Links
+### U.S. Virgin Islands::St. Croix Links
 
 | link type | link |
 | --- | --- |
@@ -2882,9 +2882,9 @@ What you should know:
 | scheduling_phone | [(340) 777 8227](tel:(340) 777 8227) |
 
 
-## Virgin Islands::St. Thomas
+## U.S. Virgin Islands::St. Thomas
 
-### Virgin Islands::St. Thomas Links
+### U.S. Virgin Islands::St. Thomas Links
 
 | link type | link |
 | --- | --- |
@@ -2908,7 +2908,7 @@ What you should know:
 
 ## Utah Active Phase (16_and_older)
 
-* Are you age 16+?
+* Are you at least 16 years of age?
 
 ## Utah Regions
 
@@ -3069,7 +3069,7 @@ What you should know:
 
 ## Vermont Active Phase (2)
 
-* Are you age 16+?
+* Are you at least 16 years of age?
 
 # Virginia
 
@@ -3085,7 +3085,7 @@ What you should know:
 
 ## Virginia Active Phase (2)
 
-* Are you age 16+?
+* Are you at least 16 years of age?
 
 ## Virginia Regions
 
@@ -3115,7 +3115,7 @@ What you should know:
 
 ## Washington Active Phase (2)
 
-* Are you age 16+?
+* Are you at least 16 years of age?
 
 ## Washington Regions
 
@@ -3150,7 +3150,7 @@ What you should know:
 
 ## West Virginia Active Phase (16_and_older)
 
-* Are you age 16+?
+* Are you at least 16 years of age?
 
 # Wisconsin
 
@@ -3166,7 +3166,7 @@ What you should know:
 
 ## Wisconsin Active Phase (2)
 
-* Are you age 16+?
+* Are you at least 16 years of age?
 	* All individuals ages 16 and older became eligible for the vaccine on April 5. Remember vaccine providers will prioritize previously eligible groups before vaccinating this group.
 
 Please note the Pfizer vaccine is authorized for use in people age 16 and older. The Moderna and Johnson & Johnson vaccines are authorized for use in people age 18 and older
@@ -3728,7 +3728,7 @@ Please note the Pfizer vaccine is authorized for use in people age 16 and older.
 
 ## Wyoming Active Phase (18_and_older)
 
-* Are you age 18+?
+* Are you at least 18 years of age?
 
 ## Wyoming Regions
 
@@ -3974,7 +3974,7 @@ Please note the Pfizer vaccine is authorized for use in people age 16 and older.
 
 ### Wyoming::Sweetwater Active Phase (18_and_older)
 
-* Are you age 18+?
+* Are you at least 18 years of age?
 
 ## Wyoming::Teton
 
