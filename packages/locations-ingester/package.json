@@ -13,7 +13,7 @@
 		"ingest:write": "ts-node src/writeCosmosData",
 		"start:ingest": "run-s ingest:fetch ingest:xform ingest:geocode ingest:write",
 		"archive": "yarn essex zip deploy.zip config lib node_modules VaccineFinderIngest host.json package.json",
-		"deploy": "az functionapp deployment source config-zip --subscription Resilience --resource-group covid-services --name vax-locations-ingest --src deploy.zip"
+		"deploy": "az functionapp deployment source config-zip --subscription Resilience --resource-group covid-services --name vaxbot-fns --src deploy.zip"
 	},
 	"dependencies": {
 		"@azure/cosmos": "^3.10.5",
