@@ -18,6 +18,9 @@ import {
 	updateLocationData,
 	deleteLocation,
 } from '../mutators/repoMutators'
+import {
+	getCustomString,
+} from '../selectors/locationSelectors'
 import { getText as t } from '../selectors/intlSelectors'
 import { getAppStore } from '../store/store'
 import { toProperCase } from '../utils/textUtils'
@@ -82,7 +85,7 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 			Object.entries(locationList).forEach(([locName, locDetails]: [string, any]) => {
 				nextFilteredStateList.push({
 					key: locName,
-					text: locDetails?.info?.content ? toProperCase(locDetails.info.content.name) : toProperCase(locName),
+					text: locDetails?.info?.content ? getCustomString(locDetails, locDetails.info.content.name) : toProperCase(locName),
 					regions: locDetails?.regions ? Object.keys(locDetails.regions).length : 0,
 					value: locDetails
 				})
@@ -90,7 +93,7 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 			setFilteredStateList(nextFilteredStateList)
 			stateRepoFullList.current = nextFilteredStateList
 		}
-	},[locationList])
+	},[locationList, state.currentLanguage])
 
 	const onStateFilter = useCallback(
 		(_event: any, text?: string) => {

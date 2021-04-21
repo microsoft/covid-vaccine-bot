@@ -4,6 +4,7 @@
  */
 import { observer } from 'mobx-react-lite'
 import { getText as t } from '../selectors/intlSelectors'
+import { getCustomString } from '../selectors/locationSelectors'
 
 import './Locations.scss'
 
@@ -20,12 +21,12 @@ export default observer(function LocationsBreadcrumbs(props: LocationsBreadcrumb
         <>
             {Object.keys(breadcrumbs).length > 0 ? (
                 <div className="breadCrumbs">
-                     <div key={'root'} className="breadCrumbsLink" onClick={() => navigateBack('root')}>/ Locations</div>
+                     <div key={'root'} className="breadCrumbsLink" onClick={() => navigateBack('root')}>/ {t('LocationsStates.title')}</div>
                     {Object.keys(breadcrumbs).map((key: any, idx: number) => {
                         if (breadcrumbs[key].value.info.content.name === currentLocationTitle) {
-                            return <div key={idx} className="breadCrumbsNonLink">{`/ ${breadcrumbs[key].value.info.content.name}`}</div>
+                            return <div key={idx} className="breadCrumbsNonLink">{`/ ${getCustomString(breadcrumbs[key].value, breadcrumbs[key].value.info.content.name)}`}</div>
                         } else {
-                            return <div key={idx} className="breadCrumbsLink" onClick={() => navigateBack(breadcrumbs[key])}>{`/ ${breadcrumbs[key].value.info.content.name}`}</div>
+                            return <div key={idx} className="breadCrumbsLink" onClick={() => navigateBack(breadcrumbs[key])}>{`/ ${getCustomString(breadcrumbs[key].value, breadcrumbs[key].value.info.content.name)}`}</div>
                         }
                     })}
                 </div>

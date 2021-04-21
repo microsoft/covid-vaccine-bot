@@ -13,23 +13,30 @@ import LocationPhaseList from './LocationPhaseList'
 import LocationsBreadcrumbs from './LocationsBreadcrumbs'
 import LocationPhaseQualifiers from './LocationPhaseQualifiers'
 import { getAppStore } from '../store/store'
-import { useCallback, useState, useRef } from 'react'
+import { useCallback, useState, useRef, useEffect } from 'react'
 import { getLocationData } from '../actions/repoActions'
 import { pathFind } from '../utils/dataUtils'
 import { useBoolean } from '@uifabric/react-hooks'
+import { getCustomString } from '../selectors/locationSelectors'
 
 import './Locations.scss'
 
 export default observer(function LocationsV2() {
 
-	const { isDataRefreshing, repoFileData } = getAppStore()
+	const { isDataRefreshing, repoFileData, currentLanguage } = getAppStore()
 	const [ currentLocationList, setCurrentLocationList ] = useState<any>(repoFileData)
 	const [ currentLocation, setCurrentLocation ] = useState<any>()
 	const [ breadcrumbs, setBreadcrumbs ] = useState<any>({})
 	const [ isPhaseSelected, { setTrue: showPhaseComponent, setFalse: hidePhaseComponent }] = useBoolean(
 		false
 	)
-	const currentLocationTitle = useRef<string| null>(null)
+	const [ currentLocationTitle, setCurrentLocationTitle ] = useState<string| null>(null)
+
+	useEffect(() => {
+		if (currentLocation) {
+			setCurrentLocationTitle(getCustomString(currentLocation, currentLocation.info.content.name) as string)
+		}
+	},[currentLocation, currentLanguage])
 
 	const getLocationsData = useCallback(async (item: any) => {
 		const pathArray = item.value.info.path.split("/")
@@ -51,8 +58,6 @@ export default observer(function LocationsV2() {
 		}
 		setCurrentLocation(currLocation)
 		setBreadcrumbs((crumbs: any) => ({...crumbs, [currLocation.info.content.id]: {value: currLocation}}))
-		currentLocationTitle.current = currLocation.info.content.name as string
-
 	},[repoFileData])
 
 	const navigateBack = useCallback((item: any) => {
@@ -60,7 +65,7 @@ export default observer(function LocationsV2() {
 			setCurrentLocationList(repoFileData)
 			setCurrentLocation(null)
 			setBreadcrumbs({})
-			currentLocationTitle.current = null
+			setCurrentLocationTitle(null)
 		} else {
 			const pathArray = item.value.info.path.split("/")
 			pathArray.splice(-1,1)
@@ -89,7 +94,7 @@ export default observer(function LocationsV2() {
 				value: {
 					info: {
 						content: {
-							name: `${currentLocation.info.content.name} Phase Overview`
+							name: `${getCustomString(currentLocation, currentLocation.info.content.name)} Phase Overview`
 						},
 						path: currentLocation.info.path.replace('info.json', 'regions/phase_overview/info.json')
 					}
@@ -98,15 +103,15 @@ export default observer(function LocationsV2() {
 		}
 		setBreadcrumbs(phase_overview_crumbs)
 		showPhaseComponent()
-		currentLocationTitle.current = phase_overview_crumbs.phase_overview.value.info.content.name
-	},[currentLocation, showPhaseComponent, breadcrumbs, currentLocationTitle])
+		setCurrentLocationTitle(phase_overview_crumbs.phase_overview.value.info.content.name)
+	},[currentLocation, showPhaseComponent, breadcrumbs])
 
 	return (
 		<div className="locationPageContainer">
 			<div className="bodyContainer">
 				<div className="bodyHeader">
 					<div className="bodyHeaderTitle">
-						<LocationsBreadcrumbs breadcrumbs={breadcrumbs} currentLocationTitle={currentLocationTitle.current} navigateBack={navigateBack} />
+						<LocationsBreadcrumbs breadcrumbs={breadcrumbs} currentLocationTitle={currentLocationTitle} navigateBack={navigateBack} />
 					</div>
 				</div>
 				<div className="bodyContent">
