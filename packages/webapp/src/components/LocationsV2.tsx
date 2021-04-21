@@ -20,6 +20,7 @@ import { useBoolean } from '@uifabric/react-hooks'
 import { getCustomString } from '../selectors/locationSelectors'
 
 import './Locations.scss'
+import { toProperCase } from '../utils/textUtils'
 
 export default observer(function LocationsV2() {
 
@@ -34,7 +35,8 @@ export default observer(function LocationsV2() {
 
 	useEffect(() => {
 		if (currentLocation) {
-			setCurrentLocationTitle(getCustomString(currentLocation, currentLocation.info.content.name) as string)
+			const locationName = getCustomString(currentLocation, currentLocation.info.content.name) || toProperCase(currentLocation.info.content.name)
+			setCurrentLocationTitle(locationName as string)
 		}
 	},[currentLocation, currentLanguage])
 
@@ -79,12 +81,16 @@ export default observer(function LocationsV2() {
 			}
 			setBreadcrumbs(newCrumbs)
 			getLocationsData(item)
+
+			const locationName = getCustomString(currentLocation, currentLocation.info.content.name) || toProperCase(currentLocation.info.content.name)
+			setCurrentLocationTitle(locationName as string)
 		}
 
 		hidePhaseComponent()
-	},[breadcrumbs, getLocationsData, repoFileData, hidePhaseComponent])
+	},[breadcrumbs, getLocationsData, repoFileData, hidePhaseComponent, currentLocation])
 
 	const openPhaseItem = useCallback((item: any) => {
+		const locationName = getCustomString(currentLocation, currentLocation.info.content.name) || toProperCase(currentLocation.info.content.name)
 		const phase_overview_crumbs = {
 			...breadcrumbs,
 			[currentLocation.info.content.id]: {
@@ -94,7 +100,7 @@ export default observer(function LocationsV2() {
 				value: {
 					info: {
 						content: {
-							name: `${getCustomString(currentLocation, currentLocation.info.content.name)} Phase Overview`
+							name: `${locationName} Phase Overview`
 						},
 						path: currentLocation.info.path.replace('info.json', 'regions/phase_overview/info.json')
 					}

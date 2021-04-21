@@ -5,6 +5,7 @@
 import { observer } from 'mobx-react-lite'
 import { getText as t } from '../selectors/intlSelectors'
 import { getCustomString } from '../selectors/locationSelectors'
+import { toProperCase } from '../utils/textUtils'
 
 import './Locations.scss'
 
@@ -23,10 +24,11 @@ export default observer(function LocationsBreadcrumbs(props: LocationsBreadcrumb
                 <div className="breadCrumbs">
                      <div key={'root'} className="breadCrumbsLink" onClick={() => navigateBack('root')}>/ {t('LocationsStates.title')}</div>
                     {Object.keys(breadcrumbs).map((key: any, idx: number) => {
-                        if (breadcrumbs[key].value.info.content.name === currentLocationTitle) {
-                            return <div key={idx} className="breadCrumbsNonLink">{`/ ${getCustomString(breadcrumbs[key].value, breadcrumbs[key].value.info.content.name)}`}</div>
+                        const locationName = getCustomString(breadcrumbs[key].value, breadcrumbs[key].value.info.content.name) || toProperCase(breadcrumbs[key].value.info.content.name)
+                        if (locationName === currentLocationTitle) {
+                            return <div key={idx} className="breadCrumbsNonLink">{`/ ${locationName}`}</div>
                         } else {
-                            return <div key={idx} className="breadCrumbsLink" onClick={() => navigateBack(breadcrumbs[key])}>{`/ ${getCustomString(breadcrumbs[key].value, breadcrumbs[key].value.info.content.name)}`}</div>
+                            return <div key={idx} className="breadCrumbsLink" onClick={() => navigateBack(breadcrumbs[key])}>{`/ ${locationName}`}</div>
                         }
                     })}
                 </div>

@@ -82,10 +82,11 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 	useEffect(() => {
 		if (locationList) {
 			const nextFilteredStateList: any[] = []
-			Object.entries(locationList).forEach(([locName, locDetails]: [string, any]) => {
+			Object.entries(locationList).forEach(([locKey, locDetails]: [string, any]) => {
+				const locationName = getCustomString(locDetails, locDetails.info.content.name) || toProperCase(locDetails.info.content.name)
 				nextFilteredStateList.push({
-					key: locName,
-					text: locDetails?.info?.content ? getCustomString(locDetails, locDetails.info.content.name) : toProperCase(locName),
+					key: locKey,
+					text: locationName,
 					regions: locDetails?.regions ? Object.keys(locDetails.regions).length : 0,
 					value: locDetails
 				})
