@@ -60,7 +60,7 @@ export default observer(function LocationsV2() {
 				setCurrentLocationTitle(locationName as string)
 			}
 		}
-	},[currentLocation, currentLanguage])
+	},[currentLocation, currentLanguage, breadcrumbs])
 
 	const getLocationsData = useCallback(async (item: any) => {
 		const pathArray = item.value.info.path.split("/")
@@ -133,6 +133,8 @@ export default observer(function LocationsV2() {
 		showPhaseComponent()
 		setCurrentLocationTitle(phase_overview_crumbs.phase_overview.value.info.content.name)
 	},[currentLocation, showPhaseComponent, breadcrumbs])
+
+	
 
 	return (
 		<div className="locationPageContainer">

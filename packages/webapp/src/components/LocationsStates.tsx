@@ -147,7 +147,7 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 			selectedLocationPath.current = item?.value.info.path ?? currentLocation?.info.path
 			openLocationModal()
 		},
-		[openLocationModal]
+		[openLocationModal, currentLocation]
 	)
 
 	const onLocationDeleteFormOpen = useCallback(

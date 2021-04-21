@@ -217,7 +217,7 @@ export const addLocation = mutatorAction(
 	) => {
 		if (locationData) {
 			const store = getAppStore()
-			//store.pendingChanges = true
+			store.pendingChanges = true
 
 			const locationId = locationData.details
 				.replace(/[^a-z0-9\s]/gi, '')
