@@ -6,25 +6,49 @@ import fs from 'fs'
 import path from 'path'
 import AWS from 'aws-sdk'
 import config from 'config'
-import { CACHE_DIR } from '../cacheDir'
+import { CACHE_DIR } from '../cache'
+import { getLatestFile } from '../io'
 
 const region = config.get<string>('vaccinefinder.region')
 const Bucket = config.get<string>('vaccinefinder.bucket')
 
 export async function fetchS3Data(): Promise<void> {
 	const s3Client = new AWS.S3({ region, params: { Bucket } })
+	const objects = await readBucket(s3Client)
+	const latestKey = getLatestFile(getFilenames(objects))
+	const latestObject = objects.find((t) => t.Key === latestKey)
+	console.log('latest is', latestKey)
+	if (latestObject != null) {
+		await readDataObject(s3Client, latestObject)
+	} else {
+		throw new Error('could not determine latest')
+	}
+}
 
-	return new Promise<void>((resolve, reject) => {
+function readBucket(s3Client: AWS.S3): Promise<AWS.S3.Object[]> {
+	return new Promise((resolve, reject) => {
 		s3Client.listObjectsV2(async (err, data) => {
 			if (err) {
 				reject(err)
 			} else {
-				const readDataPromises =
-					data.Contents?.map((c) => readDataObject(s3Client, c)) || []
-				Promise.all(readDataPromises).then(() => resolve())
+				const keys = data.Contents ?? []
+				resolve(keys)
 			}
 		})
 	})
+}
+
+function getFilenames(objects: AWS.S3.Object[]): string[] {
+	return objects
+		.map((o) => o.Key)
+		.filter((Key) => {
+			return (
+				Key &&
+				Key.endsWith('.csv') &&
+				Key.indexOf('*') === -1 &&
+				Key.indexOf('test') === -1
+			)
+		}) as string[]
 }
 
 function readDataObject(client: AWS.S3, { Key }: AWS.S3.Object): Promise<void> {

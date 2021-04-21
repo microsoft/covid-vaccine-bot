@@ -4,7 +4,7 @@
  */
 import fs from 'fs'
 import path from 'path'
-import { CACHE_DIR } from './cacheDir'
+import { CACHE_DIR } from './cache'
 import { ProviderLocation } from './types'
 
 export function getLatestFilePath() {
@@ -13,7 +13,7 @@ export function getLatestFilePath() {
 	return path.join(CACHE_DIR, file)
 }
 
-function getLatestFile(files: string[]): string {
+export function getLatestFile(files: string[]): string {
 	const timestamps = files
 		.map((f) => f.replace('bch_inventory_report_', '').replace('.csv', ''))
 		.map((f) => new Date(f))

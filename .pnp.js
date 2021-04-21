@@ -4576,6 +4576,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@c19-vax-api/locations-ingester", "workspace:packages/locations-ingester"],
             ["@azure/cosmos", "npm:3.10.5"],
             ["@azure/functions", "npm:1.2.3"],
+            ["@azure/storage-blob", "npm:12.5.0"],
             ["@essex/scripts", "virtual:97f1556de62987861180e00cf2f069d66f6c78b244a1fc108df537e1f530f2e8e35a7c8f9db826cd13d9ee22c47f5220b5a0ebe1fbbfcfbc89737fbf5306ed65#npm:12.0.2"],
             ["@tsconfig/node14", "npm:1.0.0"],
             ["@types/config", "npm:0.0.38"],
@@ -4625,6 +4626,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["cors", "npm:2.8.5"],
             ["express", "npm:4.17.1"],
             ["express-openapi", "npm:7.5.0"],
+            ["geodist", "npm:0.2.1"],
             ["nodemon", "npm:2.0.7"],
             ["npm-run-all", "npm:4.1.5"],
             ["openapi-types", "npm:7.2.3"],
@@ -18259,6 +18261,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/gensync-npm-1.0.0-beta.2-224666d72f-d523437689.zip/node_modules/gensync/",
           "packageDependencies": [
             ["gensync", "npm:1.0.0-beta.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["geodist", [
+        ["npm:0.2.1", {
+          "packageLocation": "./.yarn/cache/geodist-npm-0.2.1-f8bd113303-7f83ccd33b.zip/node_modules/geodist/",
+          "packageDependencies": [
+            ["geodist", "npm:0.2.1"]
           ],
           "linkType": "HARD",
         }]
