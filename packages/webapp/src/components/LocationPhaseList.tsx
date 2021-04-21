@@ -5,17 +5,20 @@
 import { observer } from 'mobx-react-lite'
 import { getText as t } from '../selectors/intlSelectors'
 import { getAppStore } from '../store/store'
-import { useState, useEffect, useCallback } from 'react'
+import { useState, useEffect, useCallback, useRef } from 'react'
 import { toProperCase } from '../utils/textUtils'
 import {
 	DetailsList,
     DetailsListLayoutMode,
     FontIcon,
-    IColumn
+    IColumn,
+	Modal
 } from '@fluentui/react'
 import { getParentLocationVaccinationData } from '../selectors/phaseSelectorsV2'
+import { useBoolean } from '@uifabric/react-hooks'
 
 import './Locations.scss'
+import PhaseForm from './PhaseForm'
 
 export interface LocationsPhaseListProp {
 	currentLocation: any
@@ -26,6 +29,11 @@ export default observer(function LocationsPhaseList(props: LocationsPhaseListPro
 	const { currentLocation, onItemClicked } = props
     const state = getAppStore()
     const [phaseItemList, setPhaseItemList] = useState<any[]>([])
+	const [
+		isPhaseModalOpen,
+		{ setTrue: openPhaseModal, setFalse: dismissPhaseModal },
+	] = useBoolean(false)
+	const selectedPhaseItem = useRef<any>(null)
 
     const phaseColumns = [
 		{
@@ -70,21 +78,10 @@ export default observer(function LocationsPhaseList(props: LocationsPhaseListPro
 			if (column.key === 'editCol') {
 				return state.isEditable ? (
 					<span>
-						{column?.fieldName === 'editLocation' && (
-							<FontIcon
-								iconName="Cancel"
-								className="deleteIcon"
-								//onClick={() => onLocationDeleteFormOpen(item)}
-							/>
-						)}
 						<FontIcon
 							iconName="Edit"
 							className="editIcon"
-							// onClick={() =>
-							// 	column?.fieldName === 'editLocation'
-							// 		? onLocationFormOpen(item)
-							// 		: onPhaseFormOpen(item)
-							// }
+							onClick={() => onPhaseFormOpen(item)}
 						/>
 					</span>
 				) : null
@@ -93,14 +90,38 @@ export default observer(function LocationsPhaseList(props: LocationsPhaseListPro
 			}
 		},
 		[
-			// onLocationFormOpen,
-			// onLocationDeleteFormOpen,
-			// onPhaseFormOpen,
 			state.isEditable,
 		]
 	)
 
+	const onPhaseFormOpen = useCallback(
+		(item?: any) => {
+			console.log(item)
+			selectedPhaseItem.current = item
+			openPhaseModal()
+		},
+		[openPhaseModal]
+	)
+
+	const onPhaseFormSubmit = useCallback((phaseData: any) => {
+		dismissPhaseModal()
+
+		console.log(phaseData)
+		// if (phaseData.phaseId) {
+		// 	updatePhase({
+		// 		locationKey: selectedState.key,
+		// 		item: phaseData,
+		// 	})
+		// } else {
+		// 	addPhase({
+		// 		locationKey: selectedState.key,
+		// 		item: phaseData,
+		// 	})
+		// }
+	},[])
+
 	return (
+		<>
         <section className="LocationPhaseListComponent">
             <div className="locationPhaseOverviewSectionHeader">
                 <div>
@@ -109,7 +130,7 @@ export default observer(function LocationsPhaseList(props: LocationsPhaseListPro
                 {state.isEditable && (
                     <div
                         className="addPhaseHeaderButton"
-                        //onClick={() => onPhaseFormOpen(null)}
+                        onClick={() => onPhaseFormOpen()}
                     >
                         <FontIcon
                             iconName="CircleAdditionSolid"
@@ -134,6 +155,19 @@ export default observer(function LocationsPhaseList(props: LocationsPhaseListPro
                 <div className="emptyPhaseOverview">{t('LocationsRegions.PhaseOverview.empty')}</div>
             )}
         </section>
+		<Modal
+			isOpen={isPhaseModalOpen}
+			isModeless={false}
+			isDarkOverlay={true}
+			isBlocking={false}
+		>
+			<PhaseForm
+				item={selectedPhaseItem.current}
+				onCancel={dismissPhaseModal}
+				onSubmit={onPhaseFormSubmit}
+			/>
+		</Modal>
+		</>
 	)
 })
 
