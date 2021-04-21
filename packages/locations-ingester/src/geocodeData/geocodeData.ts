@@ -93,23 +93,31 @@ async function getPosition(
 	}
 
 	const query = `${provider.location.street1} ${provider.location.zip}`
-	const response = await axios.get(API_URL, {
-		params: {
-			'api-version': '1.0',
-			'subscription-key': MAPS_KEY,
-			limit: 1,
-			query: `"${query}"`,
-		},
-		timeout: 5000,
-	})
-	const pos: null | { lat: number; lon: number } = _.get(
-		response,
-		'data.results[0].position',
-		null
-	)
-	const result: GeoPoint | null = pos ? ([pos.lon, pos.lat] as GeoPoint) : null
-	if (result != null) {
-		cache.set(provider.provider_id, result)
+	try {
+		const response = await axios.get(API_URL, {
+			params: {
+				'api-version': '1.0',
+				'subscription-key': MAPS_KEY,
+				limit: 1,
+				query: `"${query}"`,
+			},
+			timeout: 5000,
+		})
+		const pos: null | { lat: number; lon: number } = _.get(
+			response,
+			'data.results[0].position',
+			null
+		)
+		const result: GeoPoint | null = pos
+			? ([pos.lon, pos.lat] as GeoPoint)
+			: null
+		if (result != null) {
+			cache.set(provider.provider_id, result)
+		}
+		return [result, false]
+	} catch (err) {
+		console.error('error geocoding', err)
+		// swallow on purpose
+		return [null, false]
 	}
-	return [result, false]
 }
