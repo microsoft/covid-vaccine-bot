@@ -24,6 +24,7 @@ const NUMBER_COLS: Record<string, boolean> = {
  * @param file The CSV File path
  */
 export async function transformData(file: string): Promise<void> {
+	console.log('transforming CSV data to JSON', file)
 	const input = fs.readFileSync(file, { encoding: 'utf-8' })
 	const records: ProviderLocationCsv[] = parse(input, {
 		columns: true,
@@ -97,4 +98,5 @@ export async function transformData(file: string): Promise<void> {
 	fs.writeFileSync(file.replace('.csv', '.json'), recs.join('\n'), {
 		encoding: 'utf-8',
 	})
+	console.log('finished writing json data')
 }

@@ -19,6 +19,7 @@ export function createCacheDir() {
 }
 
 export async function restoreCache() {
+	console.log('restoring cache')
 	createCacheDir()
 	await syncCacheFromBlobStorage()
 }
@@ -41,6 +42,7 @@ async function syncCacheFromBlobStorage() {
 }
 
 export async function persistCache() {
+	console.log('persisting cache')
 	const cacheFiles = fs
 		.readdirSync(CACHE_DIR)
 		.map((f) => path.join(CACHE_DIR, f))

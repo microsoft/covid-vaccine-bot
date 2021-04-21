@@ -11,6 +11,7 @@ import { getLatestGeoJsonRecords } from '../io'
 const MAX_COSMOS_BATCH_SIZE = 100
 
 export async function writeCosmosData() {
+	console.log('writing data to cosmosdb')
 	const container = getCosmosContainer()
 	const data = getLatestGeoJsonRecords()
 	console.log(`writing provider data: ${data.length} records`)
@@ -28,4 +29,5 @@ export async function writeCosmosData() {
 		)
 		bar.tick()
 	}
+	console.log('finished writing cosmosdb data')
 }

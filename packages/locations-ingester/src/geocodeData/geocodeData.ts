@@ -19,6 +19,7 @@ const API_URL = 'https://atlas.microsoft.com/search/address/json'
  * @param file The CSV File path
  */
 export async function geocodeData(): Promise<void> {
+	console.log('geocoding data')
 	const records = getLatestJsonRecords()
 	const chunks = _.chunk(records, 10)
 	const geoCache = readGeocodeCache()
@@ -37,8 +38,10 @@ export async function geocodeData(): Promise<void> {
 			records.map((r) => JSON.stringify(r)).join('\n'),
 			{ encoding: 'utf-8' }
 		)
+		console.log('finished geocoding data')
 	} catch (err) {
 		console.error('error geocoding data', err)
+		throw err
 	} finally {
 		writeGeocodeCache(geoCache)
 	}
