@@ -2,7 +2,7 @@
  * Copyright (c) Microsoft. All rights reserved.
  * Licensed under the MIT license. See LICENSE file in the project.
  */
-import { createCacheDir, persistCache, restoreCache } from './cache'
+import { persistCache, restoreCache } from './cache'
 import { fetchS3Data } from './fetchS3Data/fetchS3Data'
 import { geocodeData } from './geocodeData/geocodeData'
 import { getLatestFilePath } from './io'

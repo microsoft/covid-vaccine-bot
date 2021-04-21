@@ -6,13 +6,14 @@
 	"main": "index.js",
 	"license": "MIT",
 	"scripts": {
+		"clean": "essex clean lib .cache node_modules deploy.zip package-lock.json",
 		"build": "tsc -b .",
 		"ingest:fetch": "ts-node src/fetchS3Data",
 		"ingest:xform": "ts-node src/transformData",
 		"ingest:geocode": "ts-node src/geocodeData",
 		"ingest:write": "ts-node src/writeCosmosData",
 		"start:ingest": "run-s ingest:fetch ingest:xform ingest:geocode ingest:write",
-		"archive": "yarn essex zip deploy.zip config lib node_modules VaccineFinderIngest host.json package.json",
+		"archive": "npm install --production && yarn essex zip deploy.zip config lib node_modules VaccineFinderIngest host.json package.json",
 		"deploy": "az functionapp deployment source config-zip --subscription Resilience --resource-group covid-services --name vaxbot-fns --src deploy.zip"
 	},
 	"dependencies": {

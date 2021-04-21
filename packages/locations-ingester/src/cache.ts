@@ -19,6 +19,11 @@ export function createCacheDir() {
 }
 
 export async function restoreCache() {
+	createCacheDir()
+	await syncCacheFromBlobStorage()
+}
+
+async function syncCacheFromBlobStorage() {
 	const client = getClient()
 	const blobs = client.listBlobsFlat()
 	let done = false
@@ -33,8 +38,6 @@ export async function restoreCache() {
 				.downloadToFile(path.join(CACHE_DIR, blobItem.name))
 		}
 	} while (!done)
-
-	createCacheDir()
 }
 
 export async function persistCache() {
@@ -44,7 +47,9 @@ export async function persistCache() {
 
 	const client = getClient()
 	// only upload files that we want to cache (e.g. geocache.json)
-	for (const file of cacheFiles.filter((f) => f.indexOf('geocache.json') >= 0)) {
+	for (const file of cacheFiles.filter(
+		(f) => f.indexOf('geocache.json') >= 0
+	)) {
 		const objName = path.basename(file)
 		console.log(`persisting cache item: ${objName}`)
 		const content = fs.readFileSync(file)
