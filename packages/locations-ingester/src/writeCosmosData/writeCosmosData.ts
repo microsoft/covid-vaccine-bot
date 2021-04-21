@@ -29,6 +29,7 @@ export async function writeCosmosData() {
 				} as UpsertOperationInput
 			})
 		)
+		chunkIndex++
 	}
 	console.log('finished writing cosmosdb data')
 }

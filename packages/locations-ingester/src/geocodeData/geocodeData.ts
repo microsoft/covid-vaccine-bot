@@ -28,11 +28,28 @@ export async function geocodeData(): Promise<void> {
 
 	try {
 		let chunkIndex = 0
+		let hits = 0
+		let misses = 0
 		for (const chunk of chunks) {
 			if (chunkIndex % 100 === 0) {
-				console.log(`geocoding chunk ${chunkIndex}/${chunks.length}`)
+				console.log(
+					`geocoding chunk ${chunkIndex}/${chunks.length} ${(
+						(hits / (hits + misses)) *
+						100
+					).toFixed(2)}% cache hits`
+				)
 			}
-			await Promise.all(chunk.map((c) => geocodeLocation(c, geoCache)))
+			await Promise.all(
+				chunk.map((c) => {
+					return geocodeLocation(c, geoCache).then((cacheHit) => {
+						if (cacheHit) {
+							hits++
+						} else {
+							misses++
+						}
+					})
+				})
+			)
 			chunkIndex++
 		}
 		console.log('writing geocoded data file')
@@ -53,25 +70,26 @@ export async function geocodeData(): Promise<void> {
 async function geocodeLocation(
 	provider: ProviderLocation,
 	cache: GeoCache
-): Promise<void> {
-	const point = await getPosition(provider, cache)
+): Promise<boolean> {
+	const [point, cacheHit] = await getPosition(provider, cache)
 	if (point) {
 		provider.position = {
 			type: 'Point',
 			coordinates: point,
 		}
 	}
+	return cacheHit
 }
 
 async function getPosition(
 	provider: ProviderLocation,
 	cache: GeoCache
-): Promise<GeoPoint | null> {
+): Promise<[GeoPoint | null, boolean]> {
 	if (!MAPS_KEY) {
 		throw new Error('AZURE_MAPS_KEY must be defined')
 	}
 	if (cache.has(provider.provider_id)) {
-		return cache.get(provider.provider_id) || null
+		return [cache.get(provider.provider_id) || null, true]
 	}
 
 	const query = `${provider.location.street1} ${provider.location.zip}`
@@ -82,6 +100,7 @@ async function getPosition(
 			limit: 1,
 			query: `"${query}"`,
 		},
+		timeout: 5000,
 	})
 	const pos: null | { lat: number; lon: number } = _.get(
 		response,
@@ -92,5 +111,5 @@ async function getPosition(
 	if (result != null) {
 		cache.set(provider.provider_id, result)
 	}
-	return result
+	return [result, false]
 }
