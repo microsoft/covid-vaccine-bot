@@ -9,7 +9,9 @@
 		"key": "AZURE_MAPS_KEY"
 	},
 	"azureBlobStorage": {
-		"url": "AZURE_BLOB_STORAGE_URL"
+		"account": "AZURE_BLOB_STORAGE_ACCOUNT",
+		"url": "AZURE_BLOB_STORAGE_URL",
+		"key": "AZURE_BLOB_STORAGE_KEY"
 	},
 	"vaccinefinder": {
 		"region": "VACCINE_FINDER_AWS_REGION",

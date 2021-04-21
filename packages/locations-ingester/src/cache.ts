@@ -4,8 +4,11 @@
  */
 import fs from 'fs'
 import path from 'path'
+import {
+	ContainerClient,
+	StorageSharedKeyCredential,
+} from '@azure/storage-blob'
 import config from 'config'
-import { BlockBlobClient } from '@azure/storage-blob'
 
 export const CACHE_DIR = path.join(__dirname, '../.cache')
 
@@ -15,7 +18,24 @@ export function createCacheDir() {
 	}
 }
 
-export function restoreCache() {}
+export async function restoreCache() {
+	const client = getClient()
+	const blobs = client.listBlobsFlat()
+	let done = false
+	do {
+		const nextBlob = await blobs.next()
+		done = nextBlob.done ?? false
+		if (!done) {
+			const blobItem = nextBlob.value
+			console.log(`restore cache item ${blobItem.name}`)
+			await client
+				.getBlockBlobClient(blobItem.name)
+				.downloadToFile(path.join(CACHE_DIR, blobItem.name))
+		}
+	} while (!done)
+
+	createCacheDir()
+}
 
 export async function persistCache() {
 	const cacheFiles = fs
@@ -23,14 +43,23 @@ export async function persistCache() {
 		.map((f) => path.join(CACHE_DIR, f))
 
 	const client = getClient()
-	for (let file of cacheFiles) {
-		await client.uploadFile(file)
+	// only upload files that we want to cache (e.g. geocache.json)
+	for (const file of cacheFiles.filter((f) => f.indexOf('geocache.json') >= 0)) {
+		const objName = path.basename(file)
+		console.log(`persisting cache item: ${objName}`)
+		const content = fs.readFileSync(file)
+		await client.uploadBlockBlob(objName, content, content.length)
 	}
 }
 
-function getClient(): BlockBlobClient {
+function getClient(): ContainerClient {
 	const url = config.get<string>('azureBlobStorage.url')
-	return new BlockBlobClient(url)
+	const creds = createBlobStorageCredentials()
+	return new ContainerClient(url, creds)
 }
 
-persistCache()
+function createBlobStorageCredentials() {
+	const account = config.get<string>('azureBlobStorage.account')
+	const key = config.get<string>('azureBlobStorage.key')
+	return new StorageSharedKeyCredential(account, key)
+}

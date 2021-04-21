@@ -6,7 +6,9 @@
 		"container": "providers"
 	},
 	"azureBlobStorage": {
-		"url": null
+		"account": null,
+		"url": null,
+		"key": null
 	},
 	"azureMaps": {
 		"key": null
