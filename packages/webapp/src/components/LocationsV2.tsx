@@ -60,7 +60,7 @@ export default observer(function LocationsV2() {
 				setCurrentLocationTitle(locationName as string)
 			}
 		}
-	},[currentLocation, currentLanguage, breadcrumbs])
+	},[currentLocation, currentLanguage])
 
 	const getLocationsData = useCallback(async (item: any) => {
 		const pathArray = item.value.info.path.split("/")
