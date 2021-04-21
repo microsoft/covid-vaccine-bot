@@ -8,9 +8,13 @@ import { useState, useEffect, useRef, useCallback } from 'react'
 import { getAppStore } from '../store/store'
 import {
 	FontIcon,
+	Modal
 } from '@fluentui/react'
 import PhaseQualifierForm from './PhaseQualifierFormV2'
 import { getParentLocationVaccinationData } from '../selectors/phaseSelectorsV2'
+import { useBoolean } from '@uifabric/react-hooks'
+import PhaseForm from './PhaseForm'
+import { formatId } from '../utils/textUtils'
 
 import './Locations.scss'
 
@@ -23,8 +27,14 @@ export default observer(function LocationPhaseQualifiers(props: LocationPhaseQua
     const {	currentLanguage, isEditable } = getAppStore()
     const [phaseList, setPhaseList] = useState<any[]>([])
 	const groupToggleState = useRef<any[]>([])
+	const [
+		isDuplaceModalOpen,
+		{ setTrue: openDuplicateModal, setFalse: dismissDuplicateModal },
+	] = useBoolean(false)
+	const selectedPhaseGroup = useRef<any>(null)
 
     useEffect(() => {
+		dismissDuplicateModal()
 		if (currentLocation) {
 			const tempPhaseList: any[] = []
 			let phaseObj = currentLocation.vaccination.content.phases
@@ -92,7 +102,7 @@ export default observer(function LocationPhaseQualifiers(props: LocationPhaseQua
 
 			setPhaseList(tempPhaseList)
 		}
-	}, [currentLocation, currentLanguage])
+	}, [currentLocation, currentLanguage, dismissDuplicateModal])
 
 	const onToggleCollapse = (toggleGroup: any) => {
 		const tempPhaseList = phaseList.map((group) => {
@@ -126,6 +136,121 @@ export default observer(function LocationPhaseQualifiers(props: LocationPhaseQua
 			return group
 		})
 		setPhaseList(tempPhaseList)
+	}
+
+	const onRemoveRowItem = (item: any, groupKey:any) => {
+		if (item.qualifierId !== 'c19.eligibility.question/new_qualifier') {
+			console.log('remove new qualifier')
+			// removeQualifier({
+			// 	locationKey: selectedState.key,
+			// 	item: item,
+			// 	regionInfo: isRegion ? value : null,
+			// })
+		} else {
+			const tempPhaseList = phaseList.map((group) => {
+				if (group.key === groupKey) {
+					const newItemIndex = group.items.findIndex( (i:any) => i.qualifierId ===  'c19.eligibility.question/new_qualifier')
+					if(newItemIndex !== -1){
+						group.items.splice(newItemIndex,1)
+					}
+				}
+
+				return group
+			})
+
+			setPhaseList(tempPhaseList)
+		}
+	}
+
+	const onRemovePhaseGroupClick = (phaseId: any) => {
+		console.log('remove phase group', phaseId)
+		// removePhase({
+		// 	locationKey: selectedState.key,
+		// 	phaseId: phaseId,
+		// 	regionInfo: isRegion ? value : null,
+		// })
+	}
+
+	const onSetActivePhase = (phaseId: string) => {
+		console.log('set active phase', phaseId)
+		// setActivePhase({
+		// 	locationKey: selectedState.key,
+		// 	phaseId: phaseId,
+		// 	regionInfo: isRegion ? value : null,
+		// })
+	}
+
+	const onDuplicatePhaseClick = useCallback(
+		(item?: any) => {
+			selectedPhaseGroup.current = item ?? null
+			openDuplicateModal()
+		},
+		[openDuplicateModal]
+	)
+
+	const onDuplicateSubmit = useCallback(({name}: {name: string}) => {
+		console.log('duplicate phase', name, currentLocation)
+		const nextPhaseId = formatId(name);
+		// const phases = repoFileData[selectedState.key].vaccination.content.phases;
+		// const nameExists = !!phases.find((item: {id: string}) => item.id === nextPhaseId);
+
+		// if(nameExists) {
+		// 	return
+		// }
+
+		// duplicatePhase({
+		// 	locationKey: selectedState.key,
+		// 	phaseId: selectedModalFormItem.current.key,
+		// 	name,
+		// 	isRegion,
+		// 	regionInfo: value
+		// })
+	},[])
+
+	const onChangeRowItemText = (currentItem: any, initItem: any) => {
+		console.log('row item changed')
+		// if (
+		// 	initItem.moreInfoUrl?.toLowerCase() !==
+		// 	currentItem.moreInfoUrl?.toLowerCase()
+		// ) {
+		// 	modifyMoreInfoLinks({
+		// 		locationKey: selectedState.key,
+		// 		item: currentItem,
+		// 		regionInfo: isRegion ? value : null,
+		// 	})
+		// } else if (initItem.moreInfoContent !== currentItem.moreInfoContent) {
+		// 	let calcInfoKey = currentItem.qualifierId.replace('question', 'moreinfo')
+		// 	calcInfoKey += `.${selectedState.value.info.content.metadata.code_alpha.toLowerCase()}`
+		// 	if (isRegion) {
+		// 		calcInfoKey += `.${value.name.toLowerCase()}`
+		// 	}
+		// 	calcInfoKey += `.${currentItem.groupId}`
+
+		// 	modifyStateStrings({
+		// 		infoKey: calcInfoKey,
+		// 		locationKey: selectedState.key,
+		// 		item: currentItem,
+		// 		regionInfo: isRegion ? value : null,
+		// 	})
+		// }
+	}
+
+	const onChangeRowItemQualifier = (currentItem: any, initItem: any) => {
+		console.log('change row item qualifier')
+		// if (initItem.qualifierId !== 'c19.eligibility.question/new_qualifier') {
+		// 	updateQualifier({
+		// 		oldId: initItem.qualifierId,
+		// 		locationKey: selectedState.key,
+		// 		item: currentItem,
+		// 		regionInfo: isRegion ? value : null,
+		// 	})
+		// } else {
+		// 	addQualifier({
+		// 		locationKey: selectedState.key,
+		// 		item: currentItem,
+		// 		regionInfo: isRegion ? value : null,
+		// 	})
+		// }
 	}
 
     return (
@@ -164,7 +289,7 @@ export default observer(function LocationPhaseQualifiers(props: LocationPhaseQua
 											<>
 												<div
 													className="addQualifierGroup"
-													//onClick={() => onDuplicatePhaseClick(group)}
+													onClick={() => onDuplicatePhaseClick(group)}
 												>
 													<FontIcon
 														iconName="DuplicateRow"
@@ -174,9 +299,9 @@ export default observer(function LocationPhaseQualifiers(props: LocationPhaseQua
 												</div>
 												<div
 													className="removePhaseGroup"
-													// onClick={() =>
-													// 	onRemovePhaseGroupClick(group.data.keyId)
-													// }
+													onClick={() =>
+														onRemovePhaseGroupClick(group.data.keyId)
+													}
 												>
 													<FontIcon
 														iconName="Blocked2Solid"
@@ -195,7 +320,7 @@ export default observer(function LocationPhaseQualifiers(props: LocationPhaseQua
 												) : (
 													<div
 														className="activeGroup"
-														//onClick={() => onSetActivePhase(group.data.keyId)}
+														onClick={() => onSetActivePhase(group.data.keyId)}
 													>
 														<FontIcon
 															iconName="CircleRing"
@@ -229,9 +354,9 @@ export default observer(function LocationPhaseQualifiers(props: LocationPhaseQua
 													currentLocation={currentLocation}
 													groupKey={group.key}
 													rowItem={groupItem}
-													//onRowItemRemove={onRemoveRowItem}
-													//onRowItemTextChange={onChangeRowItemText}
-													//onRowItemQualifierChange={onChangeRowItemQualifier}
+													onRowItemRemove={onRemoveRowItem}
+													onRowItemTextChange={onChangeRowItemText}
+													onRowItemQualifierChange={onChangeRowItemQualifier}
 												/>
 											)
 										})
@@ -257,6 +382,19 @@ export default observer(function LocationPhaseQualifiers(props: LocationPhaseQua
 				  })
 				: null}
 		</div>
+		<Modal
+			isOpen={isDuplaceModalOpen}
+			isModeless={false}
+			isDarkOverlay={true}
+			isBlocking={false}
+		>
+			<PhaseForm
+				currentLocation={currentLocation}
+				duplicate={true}
+				onCancel={dismissDuplicateModal}
+				onSubmit={onDuplicateSubmit}
+			/>
+		</Modal>
         </section>
     )
 })

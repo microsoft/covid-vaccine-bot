@@ -6,19 +6,16 @@ import { PrimaryButton, DefaultButton, TextField } from '@fluentui/react'
 import { observer } from 'mobx-react-lite'
 import { useCallback, useRef, useState } from 'react'
 import { getText as t } from '../selectors/intlSelectors'
-import { getAppStore } from '../store/store'
 import { formatId } from '../utils/textUtils'
 
 import './LocationForm.scss'
 
 export interface PhaseFormProp {
 	item?: any
-	selectedState?: any
+	currentLocation?: any
+	duplicate?: boolean
 	onSubmit?: (phaseData: any) => void
 	onCancel?: () => void
-	duplicate?: boolean
-	isRegion?: boolean
-	regionInfo?: any
 }
 
 const setInitialData = (item: any) => {
@@ -45,13 +42,10 @@ export default observer(function PhaseForm(props: PhaseFormProp) {
 		onCancel,
 		item,
 		duplicate = false,
-		selectedState,
-		isRegion,
-		regionInfo,
+		currentLocation,
 	} = props
 	const [formData, setFormData] = useState<any>(setInitialData(item))
 	const [hasError, setHasError] = useState<boolean>(false)
-	const { repoFileData } = getAppStore()
 	const fieldChanges = useRef<any>(formData)
 
 	const handleTextChange = useCallback(
@@ -72,18 +66,9 @@ export default observer(function PhaseForm(props: PhaseFormProp) {
 	const isDuplicate = useCallback(() => {
 		if (!duplicate) return ''
 
-		const location = repoFileData[selectedState.key]
+		const location = currentLocation
 		const nextPhaseId = formatId(formData.name)
-		const nameExists =
-			(isRegion &&
-				regionInfo?.key &&
-				location.regions[regionInfo.key].vaccination?.content.phases &&
-				!!location.regions[regionInfo.key].vaccination.content.phases.find(
-					(item: { id: string }) => item.id === nextPhaseId
-				)) ||
-			!!location.vaccination.content.phases.find(
-				(item: { id: string }) => item.id === nextPhaseId
-			)
+		const nameExists = location.vaccination.content.phases.find((item: { id: string }) => item.id === nextPhaseId)
 
 		if (nameExists) {
 			setHasError(true)
@@ -93,13 +78,10 @@ export default observer(function PhaseForm(props: PhaseFormProp) {
 			return ''
 		}
 	}, [
-		repoFileData,
 		setHasError,
 		duplicate,
 		formData?.name,
-		selectedState?.key,
-		isRegion,
-		regionInfo?.key,
+		currentLocation
 	])
 
 	const disableSubmit = useCallback((): boolean => {

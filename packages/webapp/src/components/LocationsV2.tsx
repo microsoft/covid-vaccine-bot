@@ -35,8 +35,30 @@ export default observer(function LocationsV2() {
 
 	useEffect(() => {
 		if (currentLocation) {
-			const locationName = getCustomString(currentLocation, currentLocation.info.content.name) || toProperCase(currentLocation.info.content.name)
-			setCurrentLocationTitle(locationName as string)
+			if (breadcrumbs?.phase_overview) {
+				const locationName = getCustomString(currentLocation, currentLocation.info.content.name) || toProperCase(currentLocation.info.content.name)
+				const phase_overview_crumbs = {
+					...breadcrumbs,
+					[currentLocation.info.content.id]: {
+						value: currentLocation
+					},
+					phase_overview: {
+						value: {
+							info: {
+								content: {
+									name: `${locationName} Phase Overview`
+								},
+								path: currentLocation.info.path.replace('info.json', 'regions/phase_overview/info.json')
+							}
+						}
+					}
+				}
+				setBreadcrumbs(phase_overview_crumbs)
+				setCurrentLocationTitle(phase_overview_crumbs.phase_overview.value.info.content.name)
+			} else {
+				const locationName = getCustomString(currentLocation, currentLocation.info.content.name) || toProperCase(currentLocation.info.content.name)
+				setCurrentLocationTitle(locationName as string)
+			}
 		}
 	},[currentLocation, currentLanguage])
 

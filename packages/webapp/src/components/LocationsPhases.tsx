@@ -22,7 +22,7 @@ import {
 import {getText as t} from '../selectors/intlSelectors'
 import { getAppStore } from '../store/store'
 import { formatId } from '../utils/textUtils'
-import PhaseForm from './PhaseForm'
+//import PhaseForm from './PhaseForm'
 import PhaseQualifierForm from './PhaseQualifierForm'
 
 import './Locations.scss'
@@ -414,14 +414,14 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 									isDarkOverlay={true}
 									isBlocking={false}
 								>
-									<PhaseForm
+									{/* <PhaseForm
 										selectedState={selectedState}
 										duplicate={true}
 										isRegion={isRegion}
 										regionInfo={value}
 										onCancel={dismissDuplicateModal}
 										onSubmit={onDuplicateSubmit}
-									/>
+									/> */}
 								</Modal>
 							</div>
 						)
