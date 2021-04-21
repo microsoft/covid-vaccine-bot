@@ -2,8 +2,9 @@
  * Copyright (c) Microsoft. All rights reserved.
  * Licensed under the MIT license. See LICENSE file in the project.
  */
-import { CosmosClient, Container } from '@azure/cosmos'
+import { Container } from '@azure/cosmos'
 import { ProviderLocation } from '../types'
+const geodist = require('geodist')
 
 const MILES_TO_METERS = 1609.344
 
@@ -25,6 +26,7 @@ export class ProviderLocationsStore {
 		lon: number,
 		radiusMiles: number
 	): Promise<ProviderLocation[]> {
+		const queryPos = { lat, lon }
 		const radiusMeters = radiusMiles * MILES_TO_METERS
 		const response = await this.container.items.query<ProviderLocation>(
 			{
@@ -39,16 +41,17 @@ export class ProviderLocationsStore {
 				maxItemCount: 100,
 			}
 		)
+
 		const locations = await response.fetchNext()
-		const result = locations.resources.sort((a, b) => {
-			const aDist =
-				Math.pow(a.position!.coordinates[0] - lon, 2) +
-				Math.pow(a.position!.coordinates[1] - lat, 2)
-			const bDist =
-				Math.pow(b.position!.coordinates[0] - lon, 2) +
-				Math.pow(b.position!.coordinates[1] - lon, 2)
-			return Math.sqrt(aDist + bDist)
-		})
+		for (const loc of locations.resources) {
+			const itemPos = {
+				lon: loc.position!.coordinates[0],
+				lat: loc.position?.coordinates[1],
+			}
+			const dist = geodist(queryPos, itemPos, { unit: 'mi', exact: true })
+			loc.distance = dist
+		}
+		const result = locations.resources.sort((a, b) => a.distance - b.distance)
 		return result
 	}
 }

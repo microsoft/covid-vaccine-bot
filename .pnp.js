@@ -4626,6 +4626,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["cors", "npm:2.8.5"],
             ["express", "npm:4.17.1"],
             ["express-openapi", "npm:7.5.0"],
+            ["geodist", "npm:0.2.1"],
             ["nodemon", "npm:2.0.7"],
             ["npm-run-all", "npm:4.1.5"],
             ["openapi-types", "npm:7.2.3"],
@@ -18260,6 +18261,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/gensync-npm-1.0.0-beta.2-224666d72f-d523437689.zip/node_modules/gensync/",
           "packageDependencies": [
             ["gensync", "npm:1.0.0-beta.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["geodist", [
+        ["npm:0.2.1", {
+          "packageLocation": "./.yarn/cache/geodist-npm-0.2.1-f8bd113303-7f83ccd33b.zip/node_modules/geodist/",
+          "packageDependencies": [
+            ["geodist", "npm:0.2.1"]
           ],
           "linkType": "HARD",
         }]

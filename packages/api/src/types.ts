@@ -36,6 +36,7 @@ export interface ProviderLocation {
 	pre_screen: string
 	insurance_accepted: boolean
 	walkins_accepted: boolean
+	distance: number
 }
 
 export type GeoPoint = [number, number]

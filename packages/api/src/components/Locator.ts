@@ -16,7 +16,7 @@ export class Locator {
 	 */
 	public async getLocationFromPostalCode(
 		postalCode: string,
-		countrySet: string[]
+		countrySet: string
 	): Promise<[number, number]> {
 		const response = await axios.get(
 			`https://atlas.microsoft.com/search/fuzzy/json`,
@@ -24,7 +24,7 @@ export class Locator {
 				params: {
 					'api-version': '1.0',
 					'subscription-key': this.subscriptionKey,
-					countrySet: countrySet.join(','),
+					countrySet,
 					query: postalCode,
 					limit: 1,
 				},
