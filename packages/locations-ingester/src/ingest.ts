@@ -10,19 +10,15 @@ import { transformData } from './transformData/transformData'
 import { writeCosmosData } from './writeCosmosData/writeCosmosData'
 
 export async function ingest() {
-	try {
-		await restoreCache()
-		console.log('fetching S3 Data')
-		await fetchS3Data()
-		console.log('transforming data to JSON')
-		await transformData(getLatestFilePath())
-		console.log('geocoding data')
-		await geocodeData()
-		console.log('writing data to cosmosdb')
-		await writeCosmosData()
-		console.log('saving cache')
-		await persistCache()
-	} catch (err) {
-		console.error(`error ingesting data`, err)
-	}
+	await restoreCache()
+	console.log('fetching S3 Data')
+	await fetchS3Data()
+	console.log('transforming data to JSON')
+	await transformData(getLatestFilePath())
+	console.log('geocoding data')
+	await geocodeData()
+	console.log('writing data to cosmosdb')
+	await writeCosmosData()
+	console.log('saving cache')
+	await persistCache()
 }

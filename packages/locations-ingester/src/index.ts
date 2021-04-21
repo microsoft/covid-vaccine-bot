@@ -9,9 +9,14 @@ type Context = any
 function scheduledIngest(context: Context) {
 	console.log = context.log
 	console.error = context.log
-	ingest()
-		.then(() => context.done())
-		.catch((err) => context.done(err))
+	try {
+		ingest()
+			.then(() => context.done())
+			.catch((err) => context.done(err))
+	} catch (err) {
+		console.error('error running ingest fn', err)
+		context.done(err)
+	}
 }
 
 export default scheduledIngest
