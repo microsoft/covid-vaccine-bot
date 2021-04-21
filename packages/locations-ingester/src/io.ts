@@ -13,7 +13,7 @@ export function getLatestFilePath() {
 	return path.join(CACHE_DIR, file)
 }
 
-function getLatestFile(files: string[]): string {
+export function getLatestFile(files: string[]): string {
 	const timestamps = files
 		.map((f) => f.replace('bch_inventory_report_', '').replace('.csv', ''))
 		.map((f) => new Date(f))
