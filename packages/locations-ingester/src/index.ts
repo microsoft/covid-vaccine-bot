@@ -8,7 +8,7 @@ import { getLatestFilePath } from './io'
 import { transformData } from './transformData/transformData'
 import { writeCosmosData } from './writeCosmosData/writeCosmosData'
 
-async function ingest() {
+export default async function ingest() {
 	try {
 		console.log('fetching S3 Data')
 		await fetchS3Data()
@@ -22,4 +22,3 @@ async function ingest() {
 		console.error(`error ingesting data`, err)
 	}
 }
-ingest().catch((err) => console.error(`error ingesting data`, err))
