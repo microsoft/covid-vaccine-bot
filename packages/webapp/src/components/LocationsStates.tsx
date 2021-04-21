@@ -14,7 +14,7 @@ import { useBoolean } from '@uifabric/react-hooks'
 import { observer } from 'mobx-react-lite'
 import { useState, useRef, useEffect, useCallback } from 'react'
 import {
-	updateLocationList,
+	addLocation,
 	updateLocationData,
 	deleteLocation,
 } from '../mutators/repoMutators'
@@ -126,12 +126,9 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 
 			if(prevItem){
 				updateLocationData(locationFormData, initPath )
+			} else {
+				addLocation(locationFormData, initPath)
 			}
-			// if (!prevItem) {
-			// 	updateLocationList(locationData, false)
-			// } else {
-			// 	updateLocationData(locationData, false, prevItem)
-			// }
 		},
 		[dismissLocationModal]
 	)
@@ -146,7 +143,6 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 
 	const onLocationFormOpen = useCallback(
 		(item?: any) => {
-			console.log(item)
 			selectedLocationItem.current = item?.value
 			selectedLocationPath.current = item?.value.info.path ?? currentLocation?.info.path
 			openLocationModal()

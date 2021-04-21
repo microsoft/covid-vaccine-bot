@@ -207,113 +207,54 @@ export const setCurrentLanguage = mutatorAction(
 		}
 	}
 )
-export const updateLocationList = mutatorAction(
-	'updateLocationList',
-	(locationData: any, isRegion: boolean, selectedState?: any) => {
+
+
+export const addLocation = mutatorAction(
+	'addLocation',
+	(
+		locationData: any,
+		locationPath: any
+	) => {
 		if (locationData) {
 			const store = getAppStore()
-			const newLocObj = createLocationDataObj(locationData)
-			store.pendingChanges = true
+			//store.pendingChanges = true
 
-			if (!isRegion) {
-				store.globalFileData.cdcStateNames.content[
-					`cdc/${newLocObj.info.content.id}/state_name`
-				] = {
-					...store.globalFileData.cdcStateNames.content[
-						`cdc/${newLocObj.info.content.id}/state_name`
-					],
-					[store.currentLanguage]: locationData.details,
-				}
+			const locationId = locationData.details
+				.replace(/[^a-z0-9\s]/gi, '')
+				.replace(/\s/g, '_')
+				.toLowerCase()
 
-				newLocObj.strings.path = `${newLocObj.info.content.id}/${newLocObj.info.content.id}.csv`
+			let locationFilePath = [locationId]
 
-				if ('noPhaseLabel' in newLocObj.vaccination.content) {
-					newLocObj.vaccination.content.noPhaseLabel = locationData.noPhaseLabel
-				} else {
-					newLocObj.vaccination.content = {
-						...newLocObj.vaccination.content,
-						noPhaseLabel: locationData.noPhaseLabel,
-					}
-				}
+			if(locationPath){
+				const pathArray = locationPath.split("/")
+				pathArray.splice(-1,1)
+				pathArray.push("regions")
+				pathArray.push(locationId)
+				locationFilePath = pathArray
 
-				const stringsContentObj: any = {}
-				if (locationData.schedulingPhone !== '') {
-					const schedulingPhoneKey: string = `c19.link/scheduling.phone.${newLocObj.info.content.id}`.toLowerCase()
-
-					stringsContentObj[schedulingPhoneKey] = {
-						...stringsContentObj[schedulingPhoneKey],
-						[store.currentLanguage]: locationData.schedulingPhone,
-					}
-					newLocObj.vaccination.content.links.scheduling_phone.text = schedulingPhoneKey
-				}
-
-				if (locationData.schedulingPhoneDesc !== '') {
-					const schedulingPhoneDescKey = `c19.link/scheduling.phone.description.${newLocObj.info.content.id}`.toLowerCase()
-
-					stringsContentObj[schedulingPhoneDescKey] = {
-						...stringsContentObj[schedulingPhoneDescKey],
-						[store.currentLanguage]: locationData.schedulingPhoneDesc,
-					}
-
-					newLocObj.vaccination.content.links.scheduling_phone.description = schedulingPhoneDescKey
-				}
-
-				newLocObj.strings.content = stringsContentObj
-
-				store.repoFileData[newLocObj.info.content.id] = newLocObj
-				store.repoFileData = { ...store.repoFileData }
-			} else {
-				const location = store.repoFileData[selectedState.key]
-				newLocObj.info.path = `${selectedState.key}/regions/${newLocObj.info.path}`
-				newLocObj.vaccination.path = `${selectedState.key}/regions/${newLocObj.vaccination.path}`
-
-				if ('noPhaseLabel' in newLocObj.vaccination.content) {
-					newLocObj.vaccination.content.noPhaseLabel = locationData.noPhaseLabel
-				} else {
-					newLocObj.vaccination.content = {
-						...newLocObj.vaccination.content,
-						noPhaseLabel: locationData.noPhaseLabel,
-					}
-				}
-
-				if (locationData.info !== '') {
-					newLocObj.vaccination.content.links.info.text = `cdc/${location.info.content.id}/state_link` //`c19.link/info.${newLocObj.info.content.id}`.toLowerCase()
-				}
-
-				if (locationData.schedulingPhone !== '') {
-					const schedulingPhoneKey: string = `c19.link/scheduling.phone.${location.info.content.metadata.code_alpha}.${newLocObj.info.content.id}`.toLowerCase()
-
-					location.strings.content[schedulingPhoneKey] = {
-						...location.strings.content[schedulingPhoneKey],
-						[store.currentLanguage]: locationData.schedulingPhone,
-					}
-					newLocObj.vaccination.content.links.scheduling_phone.text = schedulingPhoneKey
-				}
-
-				if (locationData.schedulingPhoneDesc !== '') {
-					const schedulingPhoneDescKey = `c19.link/scheduling.phone.description.${location.info.content.metadata.code_alpha}.${newLocObj.info.content.id}`.toLowerCase()
-
-					location.strings.content[schedulingPhoneDescKey] = {
-						...location.strings.content[schedulingPhoneDescKey],
-						[store.currentLanguage]: locationData.schedulingPhoneDesc,
-					}
-
-					newLocObj.vaccination.content.links.scheduling_phone.description = schedulingPhoneDescKey
-				}
-
-				if (location.regions) {
-					location.regions[newLocObj.info.content.id] = newLocObj
-				} else {
-					location.regions = {
-						[newLocObj.info.content.id]: newLocObj,
-					}
-				}
-
-				store.repoFileData = { ...store.repoFileData }
 			}
+
+			const newLocation = createLocationDataObj(locationId, locationFilePath, locationData, store.currentLanguage)
+
+			if(!locationPath){
+				store.repoFileData[locationId] = newLocation
+			} else {
+				const pathArray = locationPath.split("/")
+				pathArray.splice(-1,1)
+
+				const parentLocation = pathFind(store.repoFileData, pathArray)
+				if(parentLocation.regions){
+					parentLocation.regions[locationId] = newLocation
+				} else {
+					parentLocation["regions"] = { [locationId]:newLocation}
+				}
+
+			}
+
+			store.repoFileData = { ...store.repoFileData }
 		}
-	}
-)
+})
 
 export const deleteLocation = mutatorAction(
 	'deleteLocation',
