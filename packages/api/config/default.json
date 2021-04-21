@@ -6,7 +6,8 @@
 		"container": "providers"
 	},
 	"azureMaps": {
-		"key": null
+		"key": null,
+		"defaultCountrySet": "US"
 	},
 	"service": {
 		"port": 3000

@@ -10,21 +10,35 @@ export class Locator {
 
 	/**
 	 * Gets a geo location of a zip (TODO: cache this in CosmosDB)
-	 * @param zip The zip to locate
+	 * @param postalCode The postal code to locate
+	 * @param countrySet The country(ies) the postal code could be in
 	 * @returns A lon/lat array of the geocoded zip
 	 */
-	public async getLocationFromZip(zip: string): Promise<[number, number]> {
+	public async getLocationFromPostalCode(
+		postalCode: string,
+		countrySet: string[]
+	): Promise<[number, number]> {
 		const response = await axios.get(
-			`https://atlas.microsoft.com/search/address/reverse/json?query=${lat},${long}&api-version=1.0&subscription-key=${this.subscriptionKey}`,
+			`https://atlas.microsoft.com/search/fuzzy/json`,
 			{
+				params: {
+					'api-version': '1.0',
+					'subscription-key': this.subscriptionKey,
+					countrySet: countrySet.join(','),
+					query: postalCode,
+					limit: 1,
+				},
 				headers: {
 					Accept: 'application/json',
 				},
 			}
 		)
 		if (response.status <= 400) {
-			const result = response.data
-			return result.addresses[0].address
+			if (response.data.results == null || response.data.results.length === 0) {
+				throw new Error('no results found')
+			}
+			const position = response.data.results[0].position
+			return [position.lon, position.lat]
 		} else {
 			throw new Error(`Location Error: ${response.status}, ${response.data}`)
 		}

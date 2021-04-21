@@ -29,10 +29,16 @@ GET.apiDoc = {
 	parameters: [
 		{
 			in: 'query',
-			name: 'zip',
-			description: 'the zip code of the search center',
+			name: 'postalCode',
+			description: 'the postalCode code of the search center',
 			type: 'string',
 			required: false,
+		},
+		{
+			in: 'query',
+			name: 'countrySet',
+			type: 'string',
+			description: 'the country the postal code is in',
 		},
 		{
 			in: 'query',
