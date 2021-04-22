@@ -7,6 +7,7 @@ import { getText as t } from '../selectors/intlSelectors'
 import { getAppStore } from '../store/store'
 import { useState, useEffect, useCallback, useRef } from 'react'
 import { formatId, toProperCase } from '../utils/textUtils'
+import { cloneDeep as clone } from 'lodash'
 import {
 	DetailsList,
     DetailsListLayoutMode,
@@ -19,7 +20,7 @@ import { useBoolean } from '@uifabric/react-hooks'
 
 import './Locations.scss'
 import PhaseForm from './PhaseForm'
-import { addPhase, updatePhase } from '../mutators/repoMutators'
+import { updatePhases } from '../mutators/repoMutators'
 
 export interface LocationsPhaseListProp {
 	currentLocation: any
@@ -72,7 +73,6 @@ export default observer(function LocationsPhaseList(props: LocationsPhaseListPro
 
 	const onPhaseFormOpen = useCallback(
 		(item?: any) => {
-			console.log(item)
 			selectedPhaseItem.current = item
 			openPhaseModal()
 		},
@@ -107,40 +107,36 @@ export default observer(function LocationsPhaseList(props: LocationsPhaseListPro
 
 	const onPhaseFormSubmit = useCallback((phaseData: any) => {
 		dismissPhaseModal()
+		const { phases, activePhase } = getLocationPhaseData(currentLocation)
+		let newList = []
 
-		console.log(phaseData)
+		if (!currentLocation.vaccination.content?.phases) {
+			currentLocation.vaccination.content.phases = phases
+		}
+	
+		// Update Phase
 		if (phaseData.phaseId) {
 			const phaseId = phaseData.phaseId
 				.toLowerCase()
 				.replace(` (${t('LocationsRegions.active')})`, '')
 				.trim()
 
-			const affectedPhase = currentLocation.vaccination.content.phases.find(
-				(phase: any) => phase.id === phaseId
-			)
-
+			const affectedPhase = currentLocation.vaccination.content.phases.find((phase: any) => phase.id === phaseId)
+				
 			affectedPhase.label = phaseData.name
-			const { phases, activePhase } = getLocationPhaseData(currentLocation)
-
-			const newList = generateUIPhaseList(phases, activePhase)
-			setPhaseItemList(newList)
-			updatePhase(currentLocation)
-		} else {
-			const { phases, activePhase } = getLocationPhaseData(currentLocation)
-			phases.push({
+		} 
+		// Add Phase
+		else {
+			currentLocation.vaccination.content.phases.push({
 				id: formatId(phaseData.name),
 				label: phaseData.name,
 				qualifications: []
 			})
-
-			if (!currentLocation.vaccination.content?.phases) {
-				currentLocation.vaccination.content.phases = phases
-			}
-
-			const newList = generateUIPhaseList(phases, activePhase)
-			setPhaseItemList(newList)
-			addPhase(currentLocation)
 		}
+		
+		updatePhases(currentLocation)
+		newList = generateUIPhaseList(currentLocation.vaccination.content.phases, activePhase)
+		setPhaseItemList(newList)
 	},[currentLocation, dismissPhaseModal])
 
 	return (
@@ -202,9 +198,10 @@ const getLocationPhaseData = (currentLocation: any): {phases: any[], activePhase
 
 	if (!phases) {
 		const parentLocationVaccinationData = getParentLocationVaccinationData(currLocation)
+
 		if (parentLocationVaccinationData) {
-			phases = [...parentLocationVaccinationData.content.phases]
-			activePhase = {...parentLocationVaccinationData.content.activePhase}
+			phases = clone(parentLocationVaccinationData.content.phases)
+			activePhase = clone(parentLocationVaccinationData.content.activePhase)
 		} else {
 			return {phases: [], activePhase: '' }
 		}

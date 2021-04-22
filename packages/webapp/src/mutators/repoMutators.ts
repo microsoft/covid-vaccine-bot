@@ -796,17 +796,15 @@ export const removePhase = mutatorAction(
 	}
 )
 
-export const addPhase = mutatorAction('addPhase', (data: any | undefined) => {
-	if (data) {
-		const store = getAppStore()
-		store.pendingChanges = true
+export const updatePhases = mutatorAction('updatePhases', (currentLocation: any) => {
+	const store = getAppStore()
+	store.pendingChanges = true
 
-		const pathArray = data.info.path.split("/")
-		pathArray.splice(-1,1)
+	const pathArray = currentLocation.info.path.split('/')
+	pathArray.splice(-1, 1)
 
-		const currLocation = pathFind(store.repoFileData, pathArray)
-		currLocation.vaccination = data.vaccination
-	}
+	let currLocation = pathFind(store.repoFileData, pathArray)
+	currLocation.vaccination = currentLocation.vaccination
 })
 
 export const duplicatePhase = mutatorAction(
@@ -883,14 +881,13 @@ export const duplicatePhase = mutatorAction(
 	}
 )
 
-export const updatePhase = mutatorAction('updatePhase', (currentLocation: any) => {
+export const updatePhase = mutatorAction('updatePhase', (currentLocation: any, phases?: any[]) => {
 	const store = getAppStore()
 	store.pendingChanges = true
 
 	const pathArray = currentLocation.info.path.split('/')
 	pathArray.splice(-1, 1)
 
-	
 	let currLocation = pathFind(store.repoFileData, pathArray)
 	currLocation.vaccination = currentLocation.vaccination
 })
