@@ -33,13 +33,15 @@ export default observer(function LocationsV2() {
 	)
 	const [ currentLocationTitle, setCurrentLocationTitle ] = useState<string| null>(null)
 
+	const phaseOverviewText = t('LocationsRegions.PhaseOverview.title')
+
 	useEffect(() => {
 		if (currentLocation) {
 			const locationName = getCustomString(currentLocation, currentLocation.info.content.name) || toProperCase(currentLocation.info.content.name)
 			let newTitle = locationName
 
 			if (breadCrumbs.phase_overview) {
-				newTitle = `${locationName} Phase Overview`
+				newTitle = `${locationName} ${phaseOverviewText}`
 				updatePhaseOverviewTitle(newTitle)
 			}
 			setCurrentLocationTitle(newTitle as string)
@@ -47,7 +49,7 @@ export default observer(function LocationsV2() {
 			setBreadcrumbs(undefined)
 			setCurrentLocationTitle(null)
 		}
-	},[currentLocation, currentLanguage, breadCrumbs.phase_overview])
+	},[currentLocation, currentLanguage, breadCrumbs.phase_overview, phaseOverviewText])
 
 	const getLocationsData = useCallback(async (item: any) => {
 		const pathArray = item.value.info.path.split("/")
