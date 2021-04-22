@@ -2,115 +2,60 @@
  * Copyright (c) Microsoft. All rights reserved.
  * Licensed under the MIT license. See LICENSE file in the project.
  */
-import { 
-	FontIcon,
-	Modal,
- } from '@fluentui/react'
-import { useBoolean } from '@uifabric/react-hooks'
 import { observer } from 'mobx-react-lite'
+import { getText as t } from '../selectors/intlSelectors'
 import { useState, useEffect, useRef, useCallback } from 'react'
-import {
-	modifyStateStrings,
-	modifyMoreInfoLinks,
-	setActivePhase,
-	updateQualifier,
-	addQualifier,
-	removeQualifier,
-	removePhase,
-	duplicatePhase,
-} from '../mutators/repoMutators'
-import {getText as t} from '../selectors/intlSelectors'
 import { getAppStore } from '../store/store'
+import {
+	FontIcon,
+	Modal
+} from '@fluentui/react'
+import PhaseQualifierForm from './PhaseQualifierFormV2'
+import { getParentLocationVaccinationData } from '../selectors/phaseSelectorsV2'
+import { useBoolean } from '@uifabric/react-hooks'
+import PhaseForm from './PhaseForm'
 import { formatId } from '../utils/textUtils'
-//import PhaseForm from './PhaseForm'
-import PhaseQualifierForm from './PhaseQualifierForm'
 
 import './Locations.scss'
 
-export interface LocationsPhasesProp {
-	isRegion: boolean
-	value: any
-	selectedState: any
+export interface LocationPhaseQualifiersProp {
+	currentLocation: any
 }
 
-export default observer(function LocationsPhases(props: LocationsPhasesProp) {
-	const {
-		globalFileData,
-		currentLanguage,
-		repoFileData,
-		isEditable,
-	} = getAppStore()
-	const { isRegion, value, selectedState } = props
-	const [phaseList, setPhaseList] = useState<any[]>([])
+export default observer(function LocationPhaseQualifiers(props: LocationPhaseQualifiersProp) {
+    const { currentLocation } = props
+    const {	currentLanguage, isEditable } = getAppStore()
+    const [phaseList, setPhaseList] = useState<any[]>([])
 	const groupToggleState = useRef<any[]>([])
-	const selectedModalFormItem = useRef<any>(null)
-
 	const [
 		isDuplaceModalOpen,
 		{ setTrue: openDuplicateModal, setFalse: dismissDuplicateModal },
 	] = useBoolean(false)
+	const selectedPhaseGroup = useRef<any>(null)
 
-	const onDuplicateSubmit = ({name}: {name: string}) => {
-		const nextPhaseId = formatId(name);
-		const phases = repoFileData[selectedState.key].vaccination.content.phases;
-		const nameExists = !!phases.find((item: {id: string}) => item.id === nextPhaseId);
-
-		if(nameExists) {
-			return
-		}
-
-		duplicatePhase({
-			locationKey: selectedState.key,
-			phaseId: selectedModalFormItem.current.key,
-			name,
-			isRegion,
-			regionInfo: value
-		})
-	}
-
-	const onDuplicatePhaseClick = useCallback(
-		(item?: any) => {
-			selectedModalFormItem.current = item ?? null
-			openDuplicateModal()
-		},
-		[openDuplicateModal]
-	)
-
-	useEffect(() => {
-		if (repoFileData) {
-			dismissDuplicateModal()
-
+    useEffect(() => {
+		dismissDuplicateModal()
+		if (currentLocation) {
 			const tempPhaseList: any[] = []
-			const currentStateObj: any = repoFileData[selectedState.key]
-			let phaseObj = currentStateObj.vaccination.content.phases
-			const regionObj = isRegion
-				? repoFileData[selectedState.key].regions[value.key]
-				: null
+			let phaseObj = currentLocation.vaccination.content.phases
+			let activePhase = currentLocation?.vaccination?.content?.activePhase
 
-			if (isRegion && regionObj.vaccination.content.phases) {
-				phaseObj = regionObj.vaccination.content.phases
+			if (!phaseObj) {
+				const parentVaccinationData = getParentLocationVaccinationData(currentLocation)
+				phaseObj = parentVaccinationData.content.phases
+				activePhase = parentVaccinationData.content.activePhase
 			}
 
 			phaseObj.forEach((phase: any) => {
 				let isCollapsed = true
 
-				if (isRegion) {
-					isCollapsed = groupToggleState.current.length > 0 ? !groupToggleState.current.includes(phase.id) : true
-				} else {
-					if (groupToggleState.current.length > 0) {
-						isCollapsed = !groupToggleState.current.includes(phase.id)
-					} else {
-						isCollapsed = value.value.id !== phase.id
-					}
-				}
+                if (groupToggleState.current.length > 0) {
+                    isCollapsed = !groupToggleState.current.includes(phase.id)
+                } else {
+                    isCollapsed = true
+                }
 
-				let isActivePhase = false
-				if (isRegion && regionObj.vaccination.content.activePhase) {
-					isActivePhase = phase.id === regionObj.vaccination.content.activePhase
-				} else {
-					isActivePhase =
-						phase.id === currentStateObj.vaccination.content.activePhase
-				}
+				const isActivePhase = activePhase === phase.id || false
 
 				const tempPhaseObj: any = {
 					key: phase.id,
@@ -131,17 +76,12 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 					let label = `*Translation not found* (${keyId})`
 
 					if (
-						currentStateObj.strings &&
-						currentStateObj.strings.content[keyId]
+						currentLocation.strings &&
+						currentLocation.strings.content[keyId]
 					) {
 						label =
-							currentStateObj.strings.content[keyId][currentLanguage] || label
-					} else if (globalFileData.customStrings.content[keyId]) {
-						label =
-							globalFileData.customStrings.content[keyId][currentLanguage] ||
-							label
+                        currentLocation.strings.content[keyId][currentLanguage] || label
 					}
-
 					phaseItems.push({
 						key: phase.id + '-' + keyId,
 						text: label,
@@ -153,7 +93,7 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 						qualifierId: keyId,
 						tagKey: keyId.split('/')[1].split('.')[0],
 						groupId: phase.id,
-						location: value,
+						location: currentLocation,
 					})
 				})
 				tempPhaseObj['items'] = phaseItems
@@ -162,7 +102,19 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 
 			setPhaseList(tempPhaseList)
 		}
-	}, [repoFileData, globalFileData, selectedState, currentLanguage, isRegion, value, dismissDuplicateModal])
+	}, [currentLocation, currentLanguage, dismissDuplicateModal])
+
+	const onToggleCollapse = (toggleGroup: any) => {
+		const tempPhaseList = phaseList.map((group) => {
+			if (group.key === toggleGroup.key) {
+				group.isCollapsed = !group.isCollapsed
+			}
+
+			return group
+		})
+		groupToggleState.current = tempPhaseList.filter( group => !group.isCollapsed ).map(group => group.key)
+		setPhaseList(tempPhaseList)
+	}
 
 	const onAddQualifierClick = (phaseId: any) => {
 		const newItem = {
@@ -173,17 +125,12 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 			qualifierId: 'c19.eligibility.question/new_qualifier',
 			tagKey: 'new_tagKey',
 			groupId: phaseId,
-			location: value,
+			location: currentLocation,
 		}
 
 		const tempPhaseList = phaseList.map((group) => {
 			if (group.key === phaseId) {
-				// const checkNewQualIndex = group.items.findIndex(
-				// 	(i: any) => i.key === newItem.key
-				// )
-				// if (checkNewQualIndex === -1) {
 					group.items.push(newItem)
-				//}
 			}
 
 			return group
@@ -193,11 +140,12 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 
 	const onRemoveRowItem = (item: any, groupKey:any) => {
 		if (item.qualifierId !== 'c19.eligibility.question/new_qualifier') {
-			removeQualifier({
-				locationKey: selectedState.key,
-				item: item,
-				regionInfo: isRegion ? value : null,
-			})
+			console.log('remove new qualifier')
+			// removeQualifier({
+			// 	locationKey: selectedState.key,
+			// 	item: item,
+			// 	regionInfo: isRegion ? value : null,
+			// })
 		} else {
 			const tempPhaseList = phaseList.map((group) => {
 				if (group.key === groupKey) {
@@ -215,79 +163,102 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 	}
 
 	const onRemovePhaseGroupClick = (phaseId: any) => {
-		removePhase({
-			locationKey: selectedState.key,
-			phaseId: phaseId,
-			regionInfo: isRegion ? value : null,
-		})
+		console.log('remove phase group', phaseId)
+		// removePhase({
+		// 	locationKey: selectedState.key,
+		// 	phaseId: phaseId,
+		// 	regionInfo: isRegion ? value : null,
+		// })
 	}
 
 	const onSetActivePhase = (phaseId: string) => {
-		setActivePhase({
-			locationKey: selectedState.key,
-			phaseId: phaseId,
-			regionInfo: isRegion ? value : null,
-		})
+		console.log('set active phase', phaseId)
+		// setActivePhase({
+		// 	locationKey: selectedState.key,
+		// 	phaseId: phaseId,
+		// 	regionInfo: isRegion ? value : null,
+		// })
 	}
 
-	const onToggleCollapse = (toggleGroup: any) => {
-		const tempPhaseList = phaseList.map((group) => {
-			if (group.key === toggleGroup.key) {
-				group.isCollapsed = !group.isCollapsed
-			}
+	const onDuplicatePhaseClick = useCallback(
+		(item?: any) => {
+			selectedPhaseGroup.current = item ?? null
+			openDuplicateModal()
+		},
+		[openDuplicateModal]
+	)
 
-			return group
-		})
-		groupToggleState.current = tempPhaseList.filter( group => !group.isCollapsed ).map(group => group.key)
-		setPhaseList(tempPhaseList)
-	}
+	const onDuplicateSubmit = useCallback(({name}: {name: string}) => {
+		console.log('duplicate phase', name, currentLocation)
+		const nextPhaseId = formatId(name);
+		// const phases = repoFileData[selectedState.key].vaccination.content.phases;
+		// const nameExists = !!phases.find((item: {id: string}) => item.id === nextPhaseId);
+
+		// if(nameExists) {
+		// 	return
+		// }
+
+		// duplicatePhase({
+		// 	locationKey: selectedState.key,
+		// 	phaseId: selectedModalFormItem.current.key,
+		// 	name,
+		// 	isRegion,
+		// 	regionInfo: value
+		// })
+	},[])
 
 	const onChangeRowItemText = (currentItem: any, initItem: any) => {
-		if (
-			initItem.moreInfoUrl?.toLowerCase() !==
-			currentItem.moreInfoUrl?.toLowerCase()
-		) {
-			modifyMoreInfoLinks({
-				locationKey: selectedState.key,
-				item: currentItem,
-				regionInfo: isRegion ? value : null,
-			})
-		} else if (initItem.moreInfoContent !== currentItem.moreInfoContent) {
-			let calcInfoKey = currentItem.qualifierId.replace('question', 'moreinfo')
-			calcInfoKey += `.${selectedState.value.info.content.metadata.code_alpha.toLowerCase()}`
-			if (isRegion) {
-				calcInfoKey += `.${value.name.toLowerCase()}`
-			}
-			calcInfoKey += `.${currentItem.groupId}`
+		console.log('row item changed')
+		// if (
+		// 	initItem.moreInfoUrl?.toLowerCase() !==
+		// 	currentItem.moreInfoUrl?.toLowerCase()
+		// ) {
+		// 	modifyMoreInfoLinks({
+		// 		locationKey: selectedState.key,
+		// 		item: currentItem,
+		// 		regionInfo: isRegion ? value : null,
+		// 	})
+		// } else if (initItem.moreInfoContent !== currentItem.moreInfoContent) {
+		// 	let calcInfoKey = currentItem.qualifierId.replace('question', 'moreinfo')
+		// 	calcInfoKey += `.${selectedState.value.info.content.metadata.code_alpha.toLowerCase()}`
+		// 	if (isRegion) {
+		// 		calcInfoKey += `.${value.name.toLowerCase()}`
+		// 	}
+		// 	calcInfoKey += `.${currentItem.groupId}`
 
-			modifyStateStrings({
-				infoKey: calcInfoKey,
-				locationKey: selectedState.key,
-				item: currentItem,
-				regionInfo: isRegion ? value : null,
-			})
-		}
+		// 	modifyStateStrings({
+		// 		infoKey: calcInfoKey,
+		// 		locationKey: selectedState.key,
+		// 		item: currentItem,
+		// 		regionInfo: isRegion ? value : null,
+		// 	})
+		// }
 	}
 
 	const onChangeRowItemQualifier = (currentItem: any, initItem: any) => {
-		if (initItem.qualifierId !== 'c19.eligibility.question/new_qualifier') {
-			updateQualifier({
-				oldId: initItem.qualifierId,
-				locationKey: selectedState.key,
-				item: currentItem,
-				regionInfo: isRegion ? value : null,
-			})
-		} else {
-			addQualifier({
-				locationKey: selectedState.key,
-				item: currentItem,
-				regionInfo: isRegion ? value : null,
-			})
-		}
+		console.log('change row item qualifier')
+		// if (initItem.qualifierId !== 'c19.eligibility.question/new_qualifier') {
+		// 	updateQualifier({
+		// 		oldId: initItem.qualifierId,
+		// 		locationKey: selectedState.key,
+		// 		item: currentItem,
+		// 		regionInfo: isRegion ? value : null,
+		// 	})
+		// } else {
+		// 	addQualifier({
+		// 		locationKey: selectedState.key,
+		// 		item: currentItem,
+		// 		regionInfo: isRegion ? value : null,
+		// 	})
+		// }
 	}
 
-	return (
-		<div className="phaseGridContainer">
+    return (
+        <section className="LocationPhaseQualifiersComponent">
+            <div className="locationPhaseQualifiersSectionHeader">
+                Phase Qualifiers
+            </div>
+            <div className="phaseGridContainer">
 			{phaseList.length > 0
 				? phaseList.map((group: any, idx: number) => {
 						return (
@@ -378,13 +349,11 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 									{group.items.length > 0 && (
 										group.items.map((groupItem: any, idx: number) => {
 											return (
-												<PhaseQualifierForm
-													key={groupItem.key+'_'+idx}
+                                                <PhaseQualifierForm
+													key={`${groupItem.key}_${idx}`}
+													currentLocation={currentLocation}
 													groupKey={group.key}
-													rowItems={{ item: groupItem }}
-													selectedState={selectedState}
-													isEditable={isEditable}
-													isRegion={isRegion}
+													rowItem={groupItem}
 													onRowItemRemove={onRemoveRowItem}
 													onRowItemTextChange={onChangeRowItemText}
 													onRowItemQualifierChange={onChangeRowItemQualifier}
@@ -408,25 +377,24 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 										</div>
 									</div>
 								</div>
-								<Modal
-									isOpen={isDuplaceModalOpen}
-									isModeless={false}
-									isDarkOverlay={true}
-									isBlocking={false}
-								>
-									{/* <PhaseForm
-										selectedState={selectedState}
-										duplicate={true}
-										isRegion={isRegion}
-										regionInfo={value}
-										onCancel={dismissDuplicateModal}
-										onSubmit={onDuplicateSubmit}
-									/> */}
-								</Modal>
 							</div>
 						)
 				  })
 				: null}
 		</div>
-	)
+		<Modal
+			isOpen={isDuplaceModalOpen}
+			isModeless={false}
+			isDarkOverlay={true}
+			isBlocking={false}
+		>
+			<PhaseForm
+				currentLocation={currentLocation}
+				duplicate={true}
+				onCancel={dismissDuplicateModal}
+				onSubmit={onDuplicateSubmit}
+			/>
+		</Modal>
+        </section>
+    )
 })

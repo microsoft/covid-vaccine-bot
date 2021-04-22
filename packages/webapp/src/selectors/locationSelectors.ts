@@ -4,6 +4,29 @@
  */
 import { getAppStore } from '../store/store'
 
+export const getCustomString = (currentLocation: any, keyFilter: string): string => {
+
+	const { repoFileData, currentLanguage } = getAppStore()
+	const currentLocationRoot = currentLocation.info.path.split('/')[0]
+	const rootRepo = repoFileData[currentLocationRoot]
+
+	const stringsList: any[] = currentLocation
+		? [
+				...Object.entries(currentLocation.strings?.content ?? {}),
+				...Object.entries(rootRepo.strings.content),
+		  ]
+		: [...Object.entries(rootRepo.strings.content)]
+
+	const stringSearch = stringsList.find(
+				([key, _value]: [string, any]) => key.toLowerCase() === keyFilter.toLowerCase()
+		  )
+	if( stringSearch ){
+		return stringSearch[1][currentLanguage]
+	}
+	return ""
+
+}
+
 export const getStateCustomStrings = (
 	selectedState: any,
 	keyFilter: string

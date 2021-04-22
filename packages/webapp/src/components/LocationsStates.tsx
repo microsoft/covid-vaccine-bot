@@ -5,7 +5,6 @@
 import {
 	DetailsList,
 	DetailsListLayoutMode,
-	ProgressIndicator,
 	FontIcon,
 	Modal,
 	IColumn,
@@ -15,10 +14,13 @@ import { useBoolean } from '@uifabric/react-hooks'
 import { observer } from 'mobx-react-lite'
 import { useState, useRef, useEffect, useCallback } from 'react'
 import {
-	updateLocationList,
+	addLocation,
 	updateLocationData,
 	deleteLocation,
 } from '../mutators/repoMutators'
+import {
+	getCustomString,
+} from '../selectors/locationSelectors'
 import { getText as t } from '../selectors/intlSelectors'
 import { getAppStore } from '../store/store'
 import { toProperCase } from '../utils/textUtils'
@@ -28,11 +30,13 @@ import LocationForm from './LocationForm'
 import './Locations.scss'
 
 export interface LocationsStatesProp {
+	locationList: any
+	currentLocation:any
 	onSelectedItem: (item: any) => void
 }
 
 export default observer(function LocationsStates(props: LocationsStatesProp) {
-	const { onSelectedItem } = props
+	const { onSelectedItem, locationList, currentLocation } = props
 
 	const [
 		isLocationModalOpen,
@@ -45,6 +49,7 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 	const [filteredStateList, setFilteredStateList] = useState<any[]>([])
 	const stateRepoFullList = useRef<any[]>([])
 	const selectedLocationItem = useRef<any>(null)
+	const selectedLocationPath = useRef<any>(null)
 
 	const state = getAppStore()
 
@@ -77,53 +82,21 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 	].filter(filterEditable)
 
 	useEffect(() => {
-		if (state.locationsData) {
+		if (locationList) {
 			const nextFilteredStateList: any[] = []
-			Object.entries(state.locationsData).forEach(([locName, locDetails]: [string, any]) => {
+			Object.entries(locationList).forEach(([locKey, locDetails]: [string, any]) => {
+				const locationName = getCustomString(locDetails, locDetails.info.content.name) || toProperCase(locDetails.info.content.name)
 				nextFilteredStateList.push({
-					key: locName,
-					text: locDetails?.info ? toProperCase(locDetails.info.content.name) : toProperCase(locName),
-					regions: locDetails?.num_of_regions || 0,
-					value: locDetails.content_url
+					key: locKey,
+					text: locationName,
+					regions: locDetails?.regions ? Object.keys(locDetails.regions).length : 0,
+					value: locDetails
 				})
 			})
 			setFilteredStateList(nextFilteredStateList)
 			stateRepoFullList.current = nextFilteredStateList
 		}
-	},[state.locationsData])
-
-	// useEffect(() => {
-	// 	if (state.repoFileData) {
-	// 		const nextFilteredStateList: any[] = []
-	// 		Object.entries(state.repoFileData).forEach(
-	// 			([key, value]: [string, any]) => {
-	// 				const stateId = value?.info?.content.id
-	// 				const stateNames = state?.globalFileData?.cdcStateNames.content
-
-	// 				if(!stateId)
-	// 					return 
-
-	// 				const stateLabel =
-	// 					stateNames[`cdc/${stateId}/state_name`] &&
-	// 					stateNames[`cdc/${stateId}/state_name`][state.currentLanguage] &&
-	// 					stateNames[`cdc/${stateId}/state_name`][
-	// 						state.currentLanguage
-	// 					].trim() !== ''
-	// 						? stateNames[`cdc/${stateId}/state_name`][state.currentLanguage]
-	// 						: `${t('LocationsStates.translationNotFound')} (${stateId})`
-
-	// 				nextFilteredStateList.push({
-	// 					key: key,
-	// 					text: stateLabel,
-	// 					regions: value?.regions ? Object.keys(value.regions).length : 0,
-	// 					value: value,
-	// 				})
-	// 			}
-	// 		)
-	// 		setFilteredStateList(nextFilteredStateList)
-	// 		stateRepoFullList.current = nextFilteredStateList
-	// 	}
-	// }, [state.repoFileData, state.globalFileData, state.currentLanguage, stateRepoFullList])
+	},[locationList, state.currentLanguage, state.repoFileData ])
 
 	const onStateFilter = useCallback(
 		(_event: any, text?: string) => {
@@ -148,12 +121,13 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 	)
 
 	const onLocationFormSubmit = useCallback(
-		(locationData, prevItem) => {
+		(locationFormData, prevItem, initPath) => {
 			dismissLocationModal()
-			if (!prevItem) {
-				updateLocationList(locationData, false)
+
+			if(prevItem){
+				updateLocationData(locationFormData, initPath )
 			} else {
-				updateLocationData(locationData, false, prevItem)
+				addLocation(locationFormData, initPath)
 			}
 		},
 		[dismissLocationModal]
@@ -169,10 +143,11 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 
 	const onLocationFormOpen = useCallback(
 		(item?: any) => {
-			selectedLocationItem.current = item ?? null
+			selectedLocationItem.current = item?.value
+			selectedLocationPath.current = item?.value.info.path ?? currentLocation?.info.path
 			openLocationModal()
 		},
-		[openLocationModal]
+		[openLocationModal, currentLocation]
 	)
 
 	const onLocationDeleteFormOpen = useCallback(
@@ -212,56 +187,47 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 	)
 
 	return (
-		<div className="bodyContainer">
-			<div className="bodyHeader">
-				<div className="bodyHeaderTitle">
-					<div className="breadCrumbs">/ {t('LocationsStates.title')}</div>
-					<div className="mainTitle">{t('LocationsStates.title')}</div>
-				</div>
-			</div>
-			<div className="bodyContent">
-				{!state.isDataRefreshing ? (
-					<section>
-						<div className="searchRow">
-							<SearchBox
-								styles={{ root: { width: 400 } }}
-								placeholder={t('LocationsStates.SearchBox.placeholder')}
-								onChange={(ev, text) => onStateFilter(ev, text)}
+		<>
+			<section className="LocationsStatesComponent">
+				<div className="locationsStatesSectionHeader">
+					<div>
+						{t('LocationsRegions.Sublocations.title')}
+					</div>
+					{state.isEditable && (
+						<div
+							className="addLocationHeaderButton"
+							onClick={() => onLocationFormOpen(null)}
+						>
+							<FontIcon
+								iconName="CircleAdditionSolid"
+								style={{ color: '#0078d4' }}
 							/>
-							{state.isEditable && (
-								<div
-									className="addLocationHeaderButton"
-									onClick={() => onLocationFormOpen(null)}
-								>
-									<FontIcon
-										iconName="CircleAdditionSolid"
-										style={{ color: '#0078d4' }}
-									/>
-									{t('LocationsStates.addLocation')}
-								</div>
-							)}
+							{t('LocationsStates.addLocation')}
 						</div>
-						<DetailsList
-							items={filteredStateList}
-							columns={locationColumns}
-							setKey="set"
-							layoutMode={DetailsListLayoutMode.justified}
-							selectionPreservedOnEmptyClick={true}
-							ariaLabelForSelectionColumn={t('LocationsStates.addLocation')}
-							ariaLabelForSelectAllCheckbox={t('LocationsStates.addLocation')}
-							checkButtonAriaLabel={t('LocationsStates.addLocation')}
-							checkboxVisibility={2}
-							onItemInvoked={openSelection}
-							onRenderItemColumn={onRenderItemColumn}
-							className="locationDetailsList"
-						/>
-					</section>
-				) : (
-					<section>
-						<ProgressIndicator description={t('LocationsStates.loading')} />
-					</section>
-				)}
-			</div>
+					)}
+				</div>
+				<div className="searchRow">
+					<SearchBox
+						styles={{ root: { width: 400 } }}
+						placeholder={t('LocationsStates.SearchBox.placeholder')}
+						onChange={(ev, text) => onStateFilter(ev, text)}
+					/>
+				</div>
+				<DetailsList
+					items={filteredStateList}
+					columns={locationColumns}
+					setKey="set"
+					layoutMode={DetailsListLayoutMode.justified}
+					selectionPreservedOnEmptyClick={true}
+					ariaLabelForSelectionColumn={t('LocationsStates.addLocation')}
+					ariaLabelForSelectAllCheckbox={t('LocationsStates.addLocation')}
+					checkButtonAriaLabel={t('LocationsStates.addLocation')}
+					checkboxVisibility={2}
+					onItemInvoked={openSelection}
+					onRenderItemColumn={onRenderItemColumn}
+					className="locationDetailsList"
+				/>
+			</section>
 			<Modal
 				isOpen={isLocationModalOpen}
 				isModeless={false}
@@ -269,7 +235,8 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 				isBlocking={false}
 			>
 				<LocationForm
-					item={selectedLocationItem.current}
+					currentLocation={selectedLocationItem.current}
+					currentPath={selectedLocationPath.current}
 					onCancel={dismissLocationModal}
 					onSubmit={onLocationFormSubmit}
 				/>
@@ -286,6 +253,6 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 					onSubmit={onDeleteLocationFormSubmit}
 				/>
 			</Modal>
-		</div>
+		</>
 	)
 })

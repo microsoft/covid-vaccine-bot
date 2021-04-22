@@ -23,5 +23,5 @@ export const loadBranch = action('loadBranch', (branch: any) => ({
 export const saveContinue = action('saveContinue')
 
 export const getLocationData = action('getLocationData', (location: any) => ({
-	location,
+	location
 }))

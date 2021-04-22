@@ -20,7 +20,6 @@ import {
 	setBranchList,
 	clearLoadedPRData,
 	setInitRepoFileData,
-	setInitLocationsData,
 	setRepoFileData,
 	setRepoFileChanges,
 	setIssuesList,
@@ -113,13 +112,13 @@ orchestrator(initializeGitData, async () => {
 
 	setUserWorkingBranches(userWorkingBranches)
 
-	resp = await repoServices('getRootLocations')
+	resp = await repoServices('getRepoFileData')
 	if (resp.ok === false) {
 		handleError(resp)
 		return
 	}
 
-	setInitLocationsData(resp)
+	setInitRepoFileData(resp)
 
 	resp = await repoServices('getIssues')
 	if (resp.ok === false) {
@@ -230,8 +229,8 @@ orchestrator(getLocationData, async (message) => {
 	const { location } = message
 	setIsDataRefreshing(true)
 
-	const resp = await repoServices('getLocationContents', location)
-	setLocationData(location.key, resp)
-	
+	const resp = await repoServices('getLocationData', location)
+
+	setLocationData(resp)
 	setIsDataRefreshing(false)
 })
