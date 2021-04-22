@@ -5,7 +5,12 @@
 import { orchestrator } from 'satcheljs'
 import { loginUser, reLoginUser } from '../actions/authActions'
 import { initializeGitData } from '../actions/repoActions'
-import { setUserAuthData, setUserNoAccess, setUserAccessExpired, setUserAccessToken } from '../mutators/authMutators'
+import {
+	setUserAuthData,
+	setUserNoAccess,
+	setUserAccessExpired,
+	setUserAccessToken
+} from '../mutators/authMutators'
 import { setIsDataRefreshing } from '../mutators/repoMutators'
 import { loginUserService } from '../services/loginUserService'
 import { repoServices } from '../services/repoServices'
@@ -22,7 +27,7 @@ orchestrator(loginUser, async () => {
 				email: state.email,
 				isAuthenticated: state.isAuthenticated,
 				userDisplayName: state.userDisplayName,
-				username: state.username,
+				username: state.username
 			}
 		} else {
 			resp = await loginUserService()
@@ -33,12 +38,12 @@ orchestrator(loginUser, async () => {
 			const accessResp = await repoServices('checkAccess')
 			if (accessResp.ok) {
 				initializeGitData()
+				setUserAccessExpired(false)
 			} else {
-				if(accessResp.status === 401) {
+				if (accessResp.status === 401) {
 					setUserAccessExpired(true)
 					setUserAccessToken()
-				}
-				else {
+				} else {
 					setUserNoAccess()
 				}
 			}
@@ -48,17 +53,16 @@ orchestrator(loginUser, async () => {
 	}
 })
 
-
 orchestrator(reLoginUser, async () => {
 	try {
 		setIsDataRefreshing(true)
 		const resp = await loginUserService()
 		setUserAccessExpired(false)
-		
+
 		if (resp) {
 			setUserAuthData(resp)
 			const accessResp = await repoServices('checkAccess')
-			
+
 			if (!accessResp.ok) {
 				setUserNoAccess()
 			}

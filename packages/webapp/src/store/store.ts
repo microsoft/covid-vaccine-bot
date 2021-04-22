@@ -47,7 +47,7 @@ export const getAppState = (): AppState => {
 
 	return {
 		...initialStore,
-		...localState,
+		...localState
 	}
 }
 
@@ -56,7 +56,7 @@ export const getAppStore = createStore<AppState>('appState', getAppState())
 const store = getRootStore().get('appState')
 
 autorun(() => {
-	if (store.accessToken)
+	if (store)
 		saveState({
 			accessToken: store.accessToken,
 			isAuthorized: store.isAuthorized,
@@ -66,6 +66,6 @@ autorun(() => {
 			email: store.email,
 			userAccessExpired: store.userAccessExpired,
 			localization: store.localization,
-			currentLanguage: store.currentLanguage,
+			currentLanguage: store.currentLanguage
 		})
 })
