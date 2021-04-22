@@ -830,28 +830,21 @@ export const updatePhase = mutatorAction('updatePhase', (currentLocation: any) =
 	currLocation.vaccination = currentLocation.vaccination
 })
 
-export const setActivePhase = mutatorAction(
-	'setActivePhase',
-	(data: any | undefined) => {
-		if (data) {
-			const store = getAppStore()
-			if (store?.repoFileData) {
-				store.pendingChanges = true
-				const location = store.repoFileData[data.locationKey]
+export const setActivePhase = mutatorAction('setActivePhase', ({currentLocation, phaseId}): any => {
+	if (currentLocation && phaseId) {
+		const store = getAppStore()
+		store.pendingChanges = true
 
-				if (data.regionInfo) {
-					const regionVaccinationObj =
-						location.regions[data.regionInfo.key].vaccination
-					regionVaccinationObj.content['activePhase'] = data.phaseId
-					store.repoFileData = { ...store.repoFileData }
-				} else {
-					location.vaccination.content['activePhase'] = data.phaseId
-					store.repoFileData = { ...store.repoFileData }
-				}
-			}
-		}
+		const pathArray = currentLocation.info.path.split('/')
+		pathArray.splice(-1, 1)
+
+		let currLocation = pathFind(store.repoFileData, pathArray)
+
+		currLocation.vaccination.content.activePhase = phaseId
+
+		store.repoFileData = { ...store.repoFileData }
 	}
-)
+})
 
 export const updateGlobalQualifiers = mutatorAction(
 	'updateGlobalQualifiers',

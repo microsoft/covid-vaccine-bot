@@ -13,7 +13,7 @@ import {
 import PhaseQualifierForm from './PhaseQualifierFormV2'
 import { useBoolean } from '@uifabric/react-hooks'
 import PhaseForm from './PhaseForm'
-import { duplicatePhase, removePhase } from '../mutators/repoMutators'
+import { duplicatePhase, removePhase, setActivePhase } from '../mutators/repoMutators'
 import './Locations.scss'
 import { getLocationPhaseData } from '../selectors/locationSelectors'
 
@@ -170,11 +170,11 @@ export default observer(function LocationPhaseQualifiers(props: LocationPhaseQua
 
 	const onSetActivePhase = (phaseId: string) => {
 		console.log('set active phase', phaseId)
-		// setActivePhase({
-		// 	locationKey: selectedState.key,
-		// 	phaseId: phaseId,
-		// 	regionInfo: isRegion ? value : null,
-		// })
+
+		setActivePhase({
+			currentLocation,
+			phaseId
+		})
 	}
 
 	const onDuplicatePhaseClick = useCallback(
