@@ -30,9 +30,11 @@ function processChunk(
 	chunk: ProviderLocation[],
 	container: Container
 ): Promise<void> {
-	return Promise.all(
-		chunk.map((loc) => processLocation(loc, container))
-	).then(() => {})
+	return Promise.all(chunk.map((loc) => processLocation(loc, container))).then(
+		() => {
+			// do nothing
+		}
+	)
 }
 
 async function processLocation(
