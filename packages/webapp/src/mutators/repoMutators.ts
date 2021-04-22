@@ -764,38 +764,26 @@ export const removeQualifier = mutatorAction(
 		}
 	}
 )
-export const removePhase = mutatorAction(
-	'removePhase',
-	(data: any | undefined) => {
-		if (data) {
-			const store = getAppStore()
-			if (store?.repoFileData) {
-				store.pendingChanges = true
-				const location = store.repoFileData[data.locationKey]
 
-				if (data.regionInfo) {
-					const regionVaccinationObj =
-						location.regions[data.regionInfo.key].vaccination
-					if (!regionVaccinationObj.content?.phases) {
-						copyPhaseData(regionVaccinationObj, location.vaccination)
-					}
-					const removeIndex = regionVaccinationObj.content.phases.findIndex(
-						(phase: any) => phase.id === data.phaseId
+export const removePhase = mutatorAction('removePhase', ({currentLocation, phaseId}: any) => {
+	if (currentLocation && phaseId) {
+		const store = getAppStore()
+		store.pendingChanges = true
+
+		const pathArray = currentLocation.info.path.split('/')
+		pathArray.splice(-1, 1)
+
+		let currLocation = pathFind(store.repoFileData, pathArray)
+
+		const removeIndex = currLocation.vaccination.content.phases.findIndex(
+						(phase: any) => phase.id === phaseId
 					)
 
-					regionVaccinationObj.content.phases.splice(removeIndex, 1)
-				} else {
-					const removeIndex = location.vaccination.content.phases.findIndex(
-						(phase: any) => phase.id === data.phaseId
-					)
+		currLocation.vaccination.content.phases.splice(removeIndex, 1)
 
-					location.vaccination.content.phases.splice(removeIndex, 1)
-				}
-				store.repoFileData = { ...store.repoFileData }
-			}
-		}
+		store.repoFileData = { ...store.repoFileData }
 	}
-)
+})
 
 export const updatePhases = mutatorAction('updatePhases', (currentLocation: any) => {
 	const store = getAppStore()
@@ -809,27 +797,27 @@ export const updatePhases = mutatorAction('updatePhases', (currentLocation: any)
 })
 
 export const duplicatePhase = mutatorAction('duplicatePhase', ({currentLocation, phaseId, name}: any) => {
-		if (currentLocation && phaseId && name) {
-			const store = getAppStore()
+	if (currentLocation && phaseId && name) {
+		const store = getAppStore()
+		store.pendingChanges = true
 
-			const pathArray = currentLocation.info.path.split('/')
-			pathArray.splice(-1, 1)
+		const pathArray = currentLocation.info.path.split('/')
+		pathArray.splice(-1, 1)
 
-			let currLocation = pathFind(store.repoFileData, pathArray)
+		let currLocation = pathFind(store.repoFileData, pathArray)
 
-			const phase = currLocation.vaccination.content.phases.find((phase:any) => phase.id === phaseId)
+		const phase = currLocation.vaccination.content.phases.find((phase:any) => phase.id === phaseId)
 
-			const duplicatePhase = {
-				...phase,
-				id: formatId(name),
-				label: name
-			}
-
-			currLocation.vaccination.content.phases.push(duplicatePhase)
-			store.repoFileData = { ...store.repoFileData }
+		const duplicatePhase = {
+			...phase,
+			id: formatId(name),
+			label: name
 		}
+
+		currLocation.vaccination.content.phases.push(duplicatePhase)
+		store.repoFileData = { ...store.repoFileData }
 	}
-)
+})
 
 export const updatePhase = mutatorAction('updatePhase', (currentLocation: any) => {
 	const store = getAppStore()

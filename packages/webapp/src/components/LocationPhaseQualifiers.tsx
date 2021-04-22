@@ -14,7 +14,7 @@ import PhaseQualifierForm from './PhaseQualifierFormV2'
 import { getParentLocationVaccinationData } from '../selectors/phaseSelectorsV2'
 import { useBoolean } from '@uifabric/react-hooks'
 import PhaseForm from './PhaseForm'
-import {duplicatePhase} from '../mutators/repoMutators'
+import { duplicatePhase, removePhase } from '../mutators/repoMutators'
 import './Locations.scss'
 
 export interface LocationPhaseQualifiersProp {
@@ -162,11 +162,10 @@ export default observer(function LocationPhaseQualifiers(props: LocationPhaseQua
 
 	const onRemovePhaseGroupClick = (phaseId: any) => {
 		console.log('remove phase group', phaseId)
-		// removePhase({
-		// 	locationKey: selectedState.key,
-		// 	phaseId: phaseId,
-		// 	regionInfo: isRegion ? value : null,
-		// })
+		removePhase({
+			currentLocation,
+			phaseId
+		})
 	}
 
 	const onSetActivePhase = (phaseId: string) => {
