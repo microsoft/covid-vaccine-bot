@@ -61,6 +61,9 @@ export async function persistCache() {
 
 function getClient(): ContainerClient {
 	const url = config.get<string>('azureBlobStorage.url')
+	if (!url) {
+		throw new Error('azureStorage.url not defined')
+	}
 	const creds = createBlobStorageCredentials()
 	return new ContainerClient(url, creds)
 }
@@ -68,5 +71,11 @@ function getClient(): ContainerClient {
 function createBlobStorageCredentials() {
 	const account = config.get<string>('azureBlobStorage.account')
 	const key = config.get<string>('azureBlobStorage.key')
+	if (!account) {
+		throw new Error('azureStorage.account not defined')
+	}
+	if (!key) {
+		throw new Error('azureStorage.key not defined')
+	}
 	return new StorageSharedKeyCredential(account, key)
 }
