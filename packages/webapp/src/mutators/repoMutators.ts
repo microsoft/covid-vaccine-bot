@@ -208,6 +208,71 @@ export const setCurrentLanguage = mutatorAction(
 	}
 )
 
+export const setBreadcrumbs = mutatorAction('setBreadcrumbs', (currentLocation: any | undefined) => {
+	const store = getAppStore()
+	if (currentLocation) {
+		const breadCrumbs = {
+			...store.breadCrumbs,
+			[currentLocation.info.content.id]: {
+				value: currentLocation
+			}
+		}
+		store.breadCrumbs = breadCrumbs
+	} else {
+		store.breadCrumbs = {}
+	}
+})
+
+export const addPhaseOverviewCrumb = mutatorAction('addPhaseOverviewCrumb', (currentLocation: any | undefined) => {
+	const store = getAppStore()
+
+	if (currentLocation) {
+		const phaseOverviewCrumbs = {
+			...store.breadCrumbs,
+			[currentLocation.info.content.id]: {
+				value: currentLocation
+			},
+			phase_overview: {
+				value: {
+					info: {
+						content: {
+							name: ''
+						},
+						path: currentLocation.info.path.replace('info.json', 'regions/phase_overview/info.json')
+					}
+				}
+			}
+		}
+
+		store.breadCrumbs = phaseOverviewCrumbs
+	} else {
+		store.breadCrumbs = {}
+	}
+})
+
+export const updatePhaseOverviewTitle = mutatorAction('updatePhaseOverTitle', (data: string) => {
+	const store = getAppStore()
+	store.breadCrumbs.phase_overview.value.info.content.name = data
+})
+
+export const deleteCrumbs = mutatorAction('deleteCrumbs', (data: any) => {
+	const store = getAppStore()
+	if (data) {
+		const pathArray = data.value.info.path.split("/")
+		pathArray.splice(-1,1)
+		pathArray.push("regions")
+		const parentPath = pathArray.join("/")
+		const newCrumbs = {...store.breadCrumbs}
+		for (const item in newCrumbs) {
+			if (newCrumbs[item].value.info.path.startsWith(parentPath)) {
+				delete newCrumbs[item]
+			}
+		}
+
+		store.breadCrumbs = newCrumbs
+	}
+})
+
 
 export const addLocation = mutatorAction(
 	'addLocation',

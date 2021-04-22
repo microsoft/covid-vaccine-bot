@@ -35,4 +35,5 @@ export interface AppState {
 	globalFileChanges: any
 	//restructured data objects
 	locationsData?: any
+	breadCrumbs?: any
 }

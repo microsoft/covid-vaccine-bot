@@ -38,7 +38,8 @@ export const initialStore = {
 	repoFileChanges: {},
 	globalFileChanges: {},
 	//restructured data
-	locationsData: undefined
+	locationsData: undefined,
+	breadCrumbs: {}
 }
 
 export const getAppState = (): AppState => {

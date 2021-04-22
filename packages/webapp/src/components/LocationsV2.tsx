@@ -13,7 +13,7 @@ import LocationPhaseList from './LocationPhaseList'
 import LocationsBreadcrumbs from './LocationsBreadcrumbs'
 import LocationPhaseQualifiers from './LocationPhaseQualifiers'
 import { getAppStore } from '../store/store'
-import { useCallback, useState, useRef, useEffect } from 'react'
+import { useCallback, useState, useEffect } from 'react'
 import { getLocationData } from '../actions/repoActions'
 import { pathFind } from '../utils/dataUtils'
 import { useBoolean } from '@uifabric/react-hooks'
@@ -21,13 +21,13 @@ import { getCustomString } from '../selectors/locationSelectors'
 
 import './Locations.scss'
 import { toProperCase } from '../utils/textUtils'
+import { addPhaseOverviewCrumb, deleteCrumbs, setBreadcrumbs, updatePhaseOverviewTitle } from '../mutators/repoMutators'
 
 export default observer(function LocationsV2() {
 
-	const { isDataRefreshing, repoFileData, currentLanguage } = getAppStore()
+	const { isDataRefreshing, repoFileData, currentLanguage, breadCrumbs } = getAppStore()
 	const [ currentLocationList, setCurrentLocationList ] = useState<any>(repoFileData)
 	const [ currentLocation, setCurrentLocation ] = useState<any>()
-	const [ breadcrumbs, setBreadcrumbs ] = useState<any>({})
 	const [ isPhaseSelected, { setTrue: showPhaseComponent, setFalse: hidePhaseComponent }] = useBoolean(
 		false
 	)
@@ -35,32 +35,19 @@ export default observer(function LocationsV2() {
 
 	useEffect(() => {
 		if (currentLocation) {
-			if (breadcrumbs?.phase_overview) {
-				const locationName = getCustomString(currentLocation, currentLocation.info.content.name) || toProperCase(currentLocation.info.content.name)
-				const phase_overview_crumbs = {
-					...breadcrumbs,
-					[currentLocation.info.content.id]: {
-						value: currentLocation
-					},
-					phase_overview: {
-						value: {
-							info: {
-								content: {
-									name: `${locationName} Phase Overview`
-								},
-								path: currentLocation.info.path.replace('info.json', 'regions/phase_overview/info.json')
-							}
-						}
-					}
-				}
-				setBreadcrumbs(phase_overview_crumbs)
-				setCurrentLocationTitle(phase_overview_crumbs.phase_overview.value.info.content.name)
-			} else {
-				const locationName = getCustomString(currentLocation, currentLocation.info.content.name) || toProperCase(currentLocation.info.content.name)
-				setCurrentLocationTitle(locationName as string)
+			const locationName = getCustomString(currentLocation, currentLocation.info.content.name) || toProperCase(currentLocation.info.content.name)
+			let newTitle = locationName
+
+			if (breadCrumbs.phase_overview) {
+				newTitle = `${locationName} Phase Overview`
+				updatePhaseOverviewTitle(newTitle)
 			}
+			setCurrentLocationTitle(newTitle as string)
+		} else {
+			setBreadcrumbs(undefined)
+			setCurrentLocationTitle(null)
 		}
-	},[currentLocation, currentLanguage])
+	},[currentLocation, currentLanguage, breadCrumbs.phase_overview])
 
 	const getLocationsData = useCallback(async (item: any) => {
 		const pathArray = item.value.info.path.split("/")
@@ -81,27 +68,17 @@ export default observer(function LocationsV2() {
 			setCurrentLocationList([])
 		}
 		setCurrentLocation(currLocation)
-		setBreadcrumbs((crumbs: any) => ({...crumbs, [currLocation.info.content.id]: {value: currLocation}}))
+		setBreadcrumbs(currLocation)
 	},[repoFileData])
 
 	const navigateBack = useCallback((item: any) => {
 		if (item === 'root') {
 			setCurrentLocationList(repoFileData)
 			setCurrentLocation(null)
-			setBreadcrumbs({})
+			setBreadcrumbs(undefined)
 			setCurrentLocationTitle(null)
 		} else {
-			const pathArray = item.value.info.path.split("/")
-			pathArray.splice(-1,1)
-			pathArray.push("regions")
-			const parentPath = pathArray.join("/")
-			const newCrumbs = {...breadcrumbs}
-			for (const item in newCrumbs) {
-				if (newCrumbs[item].value.info.path.startsWith(parentPath)) {
-					delete newCrumbs[item]
-				}
-			}
-			setBreadcrumbs(newCrumbs)
+			deleteCrumbs(item)
 			getLocationsData(item)
 
 			const locationName = getCustomString(currentLocation, currentLocation.info.content.name) || toProperCase(currentLocation.info.content.name)
@@ -109,39 +86,19 @@ export default observer(function LocationsV2() {
 		}
 
 		hidePhaseComponent()
-	},[breadcrumbs, getLocationsData, repoFileData, hidePhaseComponent, currentLocation])
+	},[getLocationsData, repoFileData, hidePhaseComponent, currentLocation])
 
 	const openPhaseItem = useCallback((item: any) => {
-		const locationName = getCustomString(currentLocation, currentLocation.info.content.name) || toProperCase(currentLocation.info.content.name)
-		const phase_overview_crumbs = {
-			...breadcrumbs,
-			[currentLocation.info.content.id]: {
-				value: currentLocation
-			},
-			phase_overview: {
-				value: {
-					info: {
-						content: {
-							name: `${locationName} Phase Overview`
-						},
-						path: currentLocation.info.path.replace('info.json', 'regions/phase_overview/info.json')
-					}
-				}
-			}
-		}
-		setBreadcrumbs(phase_overview_crumbs)
+		addPhaseOverviewCrumb(currentLocation)
 		showPhaseComponent()
-		setCurrentLocationTitle(phase_overview_crumbs.phase_overview.value.info.content.name)
-	},[currentLocation, showPhaseComponent, breadcrumbs])
-
-	
+	},[showPhaseComponent, currentLocation])
 
 	return (
 		<div className="locationPageContainer">
 			<div className="bodyContainer">
 				<div className="bodyHeader">
 					<div className="bodyHeaderTitle">
-						<LocationsBreadcrumbs breadcrumbs={breadcrumbs} currentLocationTitle={currentLocationTitle} navigateBack={navigateBack} />
+						<LocationsBreadcrumbs breadcrumbs={breadCrumbs} currentLocationTitle={currentLocationTitle} navigateBack={navigateBack} />
 					</div>
 				</div>
 				<div className="bodyContent">
