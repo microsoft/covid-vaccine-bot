@@ -56,7 +56,7 @@ export default observer(function LocationsV2() {
 		const currLocation = pathFind(repoFileData, pathArray)
 
 		if (currLocation?.regions) {
-			for (const [key, value] of Object.entries(currLocation?.regions)) {
+			for (const value of Object.values(currLocation?.regions)) {
 				const location = value as any
 				if(!location.info.content || !location.strings.content || !location.vaccination.content )
 				{
@@ -80,15 +80,12 @@ export default observer(function LocationsV2() {
 		} else {
 			deleteCrumbs(item)
 			getLocationsData(item)
-
-			const locationName = getCustomString(currentLocation, currentLocation.info.content.name) || toProperCase(currentLocation.info.content.name)
-			setCurrentLocationTitle(locationName as string)
 		}
 
 		hidePhaseComponent()
-	},[getLocationsData, repoFileData, hidePhaseComponent, currentLocation])
+	},[getLocationsData, repoFileData, hidePhaseComponent])
 
-	const openPhaseItem = useCallback((item: any) => {
+	const openPhaseItem = useCallback(() => {
 		addPhaseOverviewCrumb(currentLocation)
 		showPhaseComponent()
 	},[showPhaseComponent, currentLocation])
