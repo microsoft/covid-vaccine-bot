@@ -14,8 +14,7 @@ import PhaseQualifierForm from './PhaseQualifierFormV2'
 import { getParentLocationVaccinationData } from '../selectors/phaseSelectorsV2'
 import { useBoolean } from '@uifabric/react-hooks'
 import PhaseForm from './PhaseForm'
-import { formatId } from '../utils/textUtils'
-
+import {duplicatePhase} from '../mutators/repoMutators'
 import './Locations.scss'
 
 export interface LocationPhaseQualifiersProp {
@@ -23,9 +22,9 @@ export interface LocationPhaseQualifiersProp {
 }
 
 export default observer(function LocationPhaseQualifiers(props: LocationPhaseQualifiersProp) {
-    const { currentLocation } = props
-    const {	currentLanguage, isEditable } = getAppStore()
-    const [phaseList, setPhaseList] = useState<any[]>([])
+	const { currentLocation } = props
+	const {	currentLanguage, isEditable, repoFileData } = getAppStore()
+	const [phaseList, setPhaseList] = useState<any[]>([])
 	const groupToggleState = useRef<any[]>([])
 	const [
 		isDuplaceModalOpen,
@@ -33,29 +32,29 @@ export default observer(function LocationPhaseQualifiers(props: LocationPhaseQua
 	] = useBoolean(false)
 	const selectedPhaseGroup = useRef<any>(null)
 
-    useEffect(() => {
+	useEffect(() => {
 		dismissDuplicateModal()
 		if (currentLocation) {
 			const tempPhaseList: any[] = []
-			let phaseObj = currentLocation.vaccination.content.phases
+			let phases = currentLocation.vaccination.content.phases
 			let activePhase = currentLocation?.vaccination?.content?.activePhase
 
-			if (!phaseObj) {
+			if (!phases) {
 				const parentVaccinationData = getParentLocationVaccinationData(currentLocation)
-				phaseObj = parentVaccinationData.content.phases
+				phases = parentVaccinationData.content.phases
 				activePhase = parentVaccinationData.content.activePhase
 			}
 
-			phaseObj.forEach((phase: any) => {
+			phases.forEach((phase: any) => {
 				let isCollapsed = true
 
-                if (groupToggleState.current.length > 0) {
-                    isCollapsed = !groupToggleState.current.includes(phase.id)
-                } else {
-                    isCollapsed = true
-                }
+				if (groupToggleState.current.length > 0) {
+						isCollapsed = !groupToggleState.current.includes(phase.id)
+				} else {
+						isCollapsed = true
+				}
 
-				const isActivePhase = activePhase === phase.id || false
+				const isActivePhase = activePhase === phase.id
 
 				const tempPhaseObj: any = {
 					key: phase.id,
@@ -79,8 +78,7 @@ export default observer(function LocationPhaseQualifiers(props: LocationPhaseQua
 						currentLocation.strings &&
 						currentLocation.strings.content[keyId]
 					) {
-						label =
-                        currentLocation.strings.content[keyId][currentLanguage] || label
+						label = currentLocation.strings.content[keyId][currentLanguage] || label
 					}
 					phaseItems.push({
 						key: phase.id + '-' + keyId,
@@ -102,7 +100,7 @@ export default observer(function LocationPhaseQualifiers(props: LocationPhaseQua
 
 			setPhaseList(tempPhaseList)
 		}
-	}, [currentLocation, currentLanguage, dismissDuplicateModal])
+	}, [currentLocation, currentLanguage, dismissDuplicateModal, repoFileData])
 
 	const onToggleCollapse = (toggleGroup: any) => {
 		const tempPhaseList = phaseList.map((group) => {
@@ -189,23 +187,13 @@ export default observer(function LocationPhaseQualifiers(props: LocationPhaseQua
 	)
 
 	const onDuplicateSubmit = useCallback(({name}: {name: string}) => {
-		console.log('duplicate phase', name, currentLocation)
-		const nextPhaseId = formatId(name);
-		// const phases = repoFileData[selectedState.key].vaccination.content.phases;
-		// const nameExists = !!phases.find((item: {id: string}) => item.id === nextPhaseId);
-
-		// if(nameExists) {
-		// 	return
-		// }
-
-		// duplicatePhase({
-		// 	locationKey: selectedState.key,
-		// 	phaseId: selectedModalFormItem.current.key,
-		// 	name,
-		// 	isRegion,
-		// 	regionInfo: value
-		// })
-	},[])
+		duplicatePhase({
+			currentLocation,
+			phaseId: selectedPhaseGroup.current.key,
+			name,
+		})
+		dismissDuplicateModal()
+	},[currentLocation, dismissDuplicateModal])
 
 	const onChangeRowItemText = (currentItem: any, initItem: any) => {
 		console.log('row item changed')

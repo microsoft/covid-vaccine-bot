@@ -7,7 +7,6 @@ import { getText as t } from '../selectors/intlSelectors'
 import { getAppStore } from '../store/store'
 import { useState, useEffect, useCallback, useRef } from 'react'
 import { formatId, toProperCase } from '../utils/textUtils'
-import { cloneDeep as clone } from 'lodash'
 import {
 	DetailsList,
     DetailsListLayoutMode,
@@ -15,7 +14,7 @@ import {
     IColumn,
 	Modal
 } from '@fluentui/react'
-import { getParentLocationVaccinationData } from '../selectors/phaseSelectorsV2'
+import {getLocationPhaseData} from '../selectors/locationSelectors'
 import { useBoolean } from '@uifabric/react-hooks'
 
 import './Locations.scss'
@@ -189,26 +188,6 @@ export default observer(function LocationsPhaseList(props: LocationsPhaseListPro
 		</>
 	)
 })
-
-const getLocationPhaseData = (currentLocation: any): {phases: any[], activePhase: string} => {
-	const currLocation = currentLocation.value || currentLocation
-
-	let phases: any[] = currLocation.vaccination.content.phases
-	let activePhase: string = currLocation.vaccination.content.activePhase
-
-	if (!phases) {
-		const parentLocationVaccinationData = getParentLocationVaccinationData(currLocation)
-
-		if (parentLocationVaccinationData) {
-			phases = clone(parentLocationVaccinationData.content.phases)
-			activePhase = clone(parentLocationVaccinationData.content.activePhase)
-		} else {
-			return {phases: [], activePhase: '' }
-		}
-	}
-
-	return {phases, activePhase}
-}
 
 const setInitialPhaseItems = (currentLocation: any): any[] => {
 	const result = getLocationPhaseData(currentLocation)

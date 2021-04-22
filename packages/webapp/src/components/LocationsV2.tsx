@@ -35,7 +35,7 @@ export default observer(function LocationsV2() {
 
 	const phaseOverviewText = t('LocationsRegions.PhaseOverview.title')
 
-	useEffect(() => {
+	const updateCurrentLocation = useCallback(() => {
 		if (currentLocation) {
 			const locationName = getCustomString(currentLocation, currentLocation.info.content.name) || toProperCase(currentLocation.info.content.name)
 			let newTitle = locationName
@@ -49,7 +49,11 @@ export default observer(function LocationsV2() {
 			setBreadcrumbs(undefined)
 			setCurrentLocationTitle(null)
 		}
-	},[currentLocation, currentLanguage, breadCrumbs.phase_overview, phaseOverviewText])
+	}, [currentLocation, breadCrumbs.phase_overview, phaseOverviewText])
+
+	useEffect(() => {
+		updateCurrentLocation()
+	},[currentLocation, currentLanguage, breadCrumbs.phase_overview, phaseOverviewText, repoFileData, updateCurrentLocation])
 
 	const getLocationsData = useCallback(async (item: any) => {
 		const pathArray = item.value.info.path.split("/")

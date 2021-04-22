@@ -3,7 +3,8 @@
  * Licensed under the MIT license. See LICENSE file in the project.
  */
 import { getAppStore } from '../store/store'
-
+import { getParentLocationVaccinationData } from './phaseSelectorsV2'
+import {cloneDeep as clone} from 'lodash'
 export const getCustomString = (currentLocation: any, keyFilter: string): string => {
 
 	const { repoFileData, currentLanguage } = getAppStore()
@@ -85,4 +86,24 @@ export const getLocationsData = (location?: string): any => {
 		}
 	}
 	return undefined
+}
+
+export const getLocationPhaseData = (currentLocation: any): {phases: any[], activePhase: string} => {
+	const currLocation = currentLocation.value || currentLocation
+
+	let phases: any[] = currLocation.vaccination.content.phases
+	let activePhase: string = currLocation.vaccination.content.activePhase
+
+	if (!phases) {
+		const parentLocationVaccinationData = getParentLocationVaccinationData(currLocation)
+
+		if (parentLocationVaccinationData) {
+			phases = clone(parentLocationVaccinationData.content.phases)
+			activePhase = clone(parentLocationVaccinationData.content.activePhase)
+		} else {
+			return {phases: [], activePhase: '' }
+		}
+	}
+
+	return {phases, activePhase}
 }

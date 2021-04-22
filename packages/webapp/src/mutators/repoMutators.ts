@@ -7,6 +7,7 @@ import { mutatorAction } from 'satcheljs'
 import { getAppStore } from '../store/store'
 import { createLocationDataObj, compare, pathFind } from '../utils/dataUtils'
 import { formatId } from '../utils/textUtils'
+// import {getLocationPhaseData} from '../selectors/locationSelectors'
 
 export const setIsDataRefreshing = mutatorAction(
 	'setIsDataRefreshing',
@@ -807,81 +808,30 @@ export const updatePhases = mutatorAction('updatePhases', (currentLocation: any)
 	currLocation.vaccination = currentLocation.vaccination
 })
 
-export const duplicatePhase = mutatorAction(
-	'duplicatePhase',
-	(
-		data:
-			| {
-					name: string
-					locationKey: string
-					phaseId: string
-					isRegion?: boolean
-					regionInfo?: { key: string }
-			  }
-			| undefined
-	) => {
-		if (data) {
+export const duplicatePhase = mutatorAction('duplicatePhase', ({currentLocation, phaseId, name}: any) => {
+		if (currentLocation && phaseId && name) {
 			const store = getAppStore()
-			if (store?.repoFileData) {
-				store.pendingChanges = true
-				const location = store.repoFileData[data.locationKey]
-				const phaseSource =
-					data.isRegion &&
-					data.regionInfo?.key &&
-					location.regions[data.regionInfo.key].vaccination?.content.phases
-						? location.regions[
-								data.regionInfo.key
-						  ].vaccination.content.phases.find(
-								(item: { id: string }) => item.id === data.phaseId
-						  )
-						: location.vaccination.content.phases.find(
-								(item: { id: string }) => item.id === data.phaseId
-						  )
-				const nextPhaseId = formatId(data.name)
 
-				const newItem = {
-					id: nextPhaseId,
-					label: data.name,
-					qualifications: phaseSource.qualifications?.map((item: any) => {
-						const newContentKey = item.moreInfoText?.replace(
-							new RegExp(data.phaseId + '$'),
-							nextPhaseId
-						)
+			const pathArray = currentLocation.info.path.split('/')
+			pathArray.splice(-1, 1)
 
-						if (newContentKey) {
-							location.strings.content[newContentKey] =
-								location.strings.content[item.moreInfoText]
-						}
+			let currLocation = pathFind(store.repoFileData, pathArray)
 
-						return {
-							question: item.question,
-							moreInfoUrl: item.moreInfoUrl,
-							moreInfoText: newContentKey,
-						}
-					}),
-				}
+			const phase = currLocation.vaccination.content.phases.find((phase:any) => phase.id === phaseId)
 
-				if (data.isRegion && data.regionInfo) {
-					const regionVaccinationObj =
-						location.regions[data.regionInfo.key].vaccination
-
-					if (!regionVaccinationObj.content?.phases) {
-						copyPhaseData(regionVaccinationObj, location.vaccination)
-					}
-
-					regionVaccinationObj.content.phases.push(newItem)
-				} else {
-					// State level region phase
-					location.vaccination.content.phases.push(newItem)
-				}
-
-				store.repoFileData = { ...store.repoFileData }
+			const duplicatePhase = {
+				...phase,
+				id: formatId(name),
+				label: name
 			}
+
+			currLocation.vaccination.content.phases.push(duplicatePhase)
+			store.repoFileData = { ...store.repoFileData }
 		}
 	}
 )
 
-export const updatePhase = mutatorAction('updatePhase', (currentLocation: any, phases?: any[]) => {
+export const updatePhase = mutatorAction('updatePhase', (currentLocation: any) => {
 	const store = getAppStore()
 	store.pendingChanges = true
 
