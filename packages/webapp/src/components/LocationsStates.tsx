@@ -96,7 +96,7 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 			setFilteredStateList(nextFilteredStateList)
 			stateRepoFullList.current = nextFilteredStateList
 		}
-	},[locationList, state.currentLanguage])
+	},[locationList, state.currentLanguage, state.repoFileData ])
 
 	const onStateFilter = useCallback(
 		(_event: any, text?: string) => {

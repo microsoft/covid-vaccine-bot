@@ -325,20 +325,17 @@ export const deleteLocation = mutatorAction(
 	'deleteLocation',
 	(locationData: any, isRegion?: boolean, selectedState?: any) => {
 		const store = getAppStore()
-		store.pendingChanges = true
 
-		if (isRegion && selectedState) {
-			delete store.repoFileData[selectedState.key]?.regions?.[locationData.key]
-			// What else needs to be removed here?
-			// Does something need to be saved?
-		} else {
+		const pathArray = locationData.value.info.path.split("/")
+		pathArray.splice(-1,1)
+		if(pathArray.length == 1){
+
 			delete store.repoFileData[locationData.key]
-			delete store.globalFileData.cdcStateLinks.content[
-				`cdc/${locationData.key}/state_link`
-			]
-			delete store.globalFileData.cdcStateNames.content[
-				`cdc/${locationData.key}/state_name`
-			]
+
+		} else {
+			pathArray.splice(-1,1)
+			const parentRegion = pathFind(store.repoFileData, pathArray)
+			delete parentRegion[locationData.key]
 		}
 
 		store.repoFileData = { ...store.repoFileData }
