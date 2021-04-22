@@ -16,6 +16,7 @@ import { useBoolean } from '@uifabric/react-hooks'
 import PhaseForm from './PhaseForm'
 import { duplicatePhase, removePhase } from '../mutators/repoMutators'
 import './Locations.scss'
+import { getLocationPhaseData } from '../selectors/locationSelectors'
 
 export interface LocationPhaseQualifiersProp {
 	currentLocation: any
@@ -36,13 +37,14 @@ export default observer(function LocationPhaseQualifiers(props: LocationPhaseQua
 		dismissDuplicateModal()
 		if (currentLocation) {
 			const tempPhaseList: any[] = []
-			let phases = currentLocation.vaccination.content.phases
-			let activePhase = currentLocation?.vaccination?.content?.activePhase
+			const { phases, activePhase } = getLocationPhaseData(currentLocation)
 
-			if (!phases) {
-				const parentVaccinationData = getParentLocationVaccinationData(currentLocation)
-				phases = parentVaccinationData.content.phases
-				activePhase = parentVaccinationData.content.activePhase
+			if (!currentLocation.vaccination.content?.phases) {
+				currentLocation.vaccination.content.phases = phases
+			}
+
+			if (!currentLocation.vaccination.content?.activePhase) {
+				currentLocation.vaccination.content.activePhase = activePhase
 			}
 
 			phases.forEach((phase: any) => {
@@ -161,7 +163,6 @@ export default observer(function LocationPhaseQualifiers(props: LocationPhaseQua
 	}
 
 	const onRemovePhaseGroupClick = (phaseId: any) => {
-		console.log('remove phase group', phaseId)
 		removePhase({
 			currentLocation,
 			phaseId
