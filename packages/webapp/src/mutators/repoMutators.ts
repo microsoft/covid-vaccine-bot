@@ -4,7 +4,6 @@
  */
 import { toJS } from 'mobx'
 import { mutatorAction } from 'satcheljs'
-import { getText as t } from '../selectors/intlSelectors'
 import { getAppStore } from '../store/store'
 import { createLocationDataObj, compare, pathFind } from '../utils/dataUtils'
 import { formatId } from '../utils/textUtils'
@@ -328,7 +327,7 @@ export const deleteLocation = mutatorAction(
 
 		const pathArray = locationData.value.info.path.split("/")
 		pathArray.splice(-1,1)
-		if(pathArray.length == 1){
+		if(pathArray.length === 1){
 
 			delete store.repoFileData[locationData.key]
 
@@ -884,29 +883,17 @@ export const duplicatePhase = mutatorAction(
 	}
 )
 
-export const updatePhase = mutatorAction(
-	'updatePhase',
-	(data: any | undefined) => {
-		if (data) {
-			const store = getAppStore()
-			if (store?.repoFileData) {
-				store.pendingChanges = true
-				const location = store.repoFileData[data.locationKey]
-				const phaseId = data.item.phaseId
-					.toLowerCase()
-					.replace(` (${t('LocationsRegions.active')})`, '')
-					.trim()
+export const updatePhase = mutatorAction('updatePhase', (currentLocation: any) => {
+	const store = getAppStore()
+	store.pendingChanges = true
 
-				const affectedPhase = location.vaccination.content.phases.find(
-					(phase: any) => phase.id === phaseId
-				)
+	const pathArray = currentLocation.info.path.split('/')
+	pathArray.splice(-1, 1)
 
-				affectedPhase.label = data.item.name
-				store.repoFileData = { ...store.repoFileData }
-			}
-		}
-	}
-)
+	
+	let currLocation = pathFind(store.repoFileData, pathArray)
+	currLocation.vaccination = currentLocation.vaccination
+})
 
 export const setActivePhase = mutatorAction(
 	'setActivePhase',
