@@ -16,6 +16,9 @@ export async function ingest() {
 		await transformData(getLatestFilePath())
 		await geocodeData()
 		await writeCosmosData()
+	} catch (err) {
+		console.error('error ingesting', err)
+		throw err
 	} finally {
 		await persistCache()
 	}
