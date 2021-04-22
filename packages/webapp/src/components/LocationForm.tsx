@@ -16,6 +16,7 @@ import { getText as t } from '../selectors/intlSelectors'
 import {
 	getCustomString,
 } from '../selectors/locationSelectors'
+import { toProperCase } from '../utils/textUtils'
 import './LocationForm.scss'
 
 export interface LocationFormProp {
@@ -40,7 +41,7 @@ const setInitialData = (currentLocation?: any) => {
 		} = vaccination?.content?.links || {}
 
 		return {
-			details: getCustomString(currentLocation, info.content.name),
+			details: getCustomString(currentLocation, info.content.name) || toProperCase(info.content.name),
 			regionType: info.content.type,
 			info: vacInfo?.url || '',
 			workflow: workflow?.url || '',

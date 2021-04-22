@@ -11,7 +11,6 @@ import {
 	Modal
 } from '@fluentui/react'
 import PhaseQualifierForm from './PhaseQualifierFormV2'
-import { getParentLocationVaccinationData } from '../selectors/phaseSelectorsV2'
 import { useBoolean } from '@uifabric/react-hooks'
 import PhaseForm from './PhaseForm'
 import { duplicatePhase, removePhase } from '../mutators/repoMutators'

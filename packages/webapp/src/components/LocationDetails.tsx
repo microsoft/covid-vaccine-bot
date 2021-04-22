@@ -23,6 +23,7 @@ import { getCustomString } from '../selectors/locationSelectors'
 import LocationForm from './LocationForm'
 
 import './Locations.scss'
+import { toProperCase } from '../utils/textUtils'
 
 export interface LocationsDetailsProp {
 	currentLocation: any
@@ -57,7 +58,8 @@ export default observer(function LocationsDetails(props: LocationsDetailsProp) {
 
 		const items = []
 
-		items.push({ label:'Details','value': getCustomString(currentLocation, currentLocation.info.content.name), isUrl:false })
+		const locationName = getCustomString(currentLocation, currentLocation.info.content.name) || toProperCase(currentLocation.info.content.name)
+		items.push({ label:'Details','value': locationName, isUrl:false })
 
 		switch(currentLocation.info.content.type.toLowerCase()){
 
