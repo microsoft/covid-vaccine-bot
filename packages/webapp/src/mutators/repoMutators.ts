@@ -803,25 +803,13 @@ export const removePhase = mutatorAction(
 export const addPhase = mutatorAction('addPhase', (data: any | undefined) => {
 	if (data) {
 		const store = getAppStore()
-		if (store?.repoFileData) {
-			store.pendingChanges = true
-			const location = store.repoFileData[data.locationKey]
+		store.pendingChanges = true
 
-			const phaseId = formatId(data.item.name)
+		const pathArray = data.info.path.split("/")
+		pathArray.splice(-1,1)
 
-			const emptyQualifications: any = []
-
-			if (!location.vaccination.content.phases) {
-				location.vaccination.content.phases = []
-			}
-
-			location.vaccination.content.phases.push({
-				id: phaseId,
-				label: data.item.name,
-				qualifications: emptyQualifications,
-			})
-			store.repoFileData = { ...store.repoFileData }
-		}
+		const currLocation = pathFind(store.repoFileData, pathArray)
+		currLocation.vaccination = data.vaccination
 	}
 })
 

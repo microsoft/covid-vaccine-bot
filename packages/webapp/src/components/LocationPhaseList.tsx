@@ -6,7 +6,7 @@ import { observer } from 'mobx-react-lite'
 import { getText as t } from '../selectors/intlSelectors'
 import { getAppStore } from '../store/store'
 import { useState, useEffect, useCallback, useRef } from 'react'
-import { toProperCase } from '../utils/textUtils'
+import { formatId, toProperCase } from '../utils/textUtils'
 import {
 	DetailsList,
     DetailsListLayoutMode,
@@ -19,6 +19,7 @@ import { useBoolean } from '@uifabric/react-hooks'
 
 import './Locations.scss'
 import PhaseForm from './PhaseForm'
+import { addPhase } from '../mutators/repoMutators'
 
 export interface LocationsPhaseListProp {
 	currentLocation: any
@@ -69,6 +70,15 @@ export default observer(function LocationsPhaseList(props: LocationsPhaseListPro
 		}
 	}, [currentLocation, setPhaseItemList])
 
+	const onPhaseFormOpen = useCallback(
+		(item?: any) => {
+			console.log(item)
+			selectedPhaseItem.current = item
+			openPhaseModal()
+		},
+		[openPhaseModal]
+	)
+
     const onRenderItemColumn = useCallback(
 		(item?: any, _index?: number, column?: IColumn) => {
 			if (!column) return null
@@ -91,34 +101,37 @@ export default observer(function LocationsPhaseList(props: LocationsPhaseListPro
 		},
 		[
 			state.isEditable,
+			onPhaseFormOpen
 		]
-	)
-
-	const onPhaseFormOpen = useCallback(
-		(item?: any) => {
-			console.log(item)
-			selectedPhaseItem.current = item
-			openPhaseModal()
-		},
-		[openPhaseModal]
 	)
 
 	const onPhaseFormSubmit = useCallback((phaseData: any) => {
 		dismissPhaseModal()
 
 		console.log(phaseData)
-		// if (phaseData.phaseId) {
-		// 	updatePhase({
-		// 		locationKey: selectedState.key,
-		// 		item: phaseData,
-		// 	})
-		// } else {
-		// 	addPhase({
-		// 		locationKey: selectedState.key,
-		// 		item: phaseData,
-		// 	})
-		// }
-	},[])
+		if (phaseData.phaseId) {
+			// updatePhase({
+			// 	locationKey: selectedState.key,
+			// 	item: phaseData,
+			// })
+			console.log('update phase')
+		} else {
+			const { phases, activePhase } = getLocationPhaseData(currentLocation)
+			phases.push({
+				id: formatId(phaseData.name),
+				label: phaseData.name,
+				qualifications: []
+			})
+
+			if (!currentLocation.vaccination.content?.phases) {
+				currentLocation.vaccination.content.phases = phases
+			}
+
+			const newList = generateUIPhaseList(phases, activePhase)
+			setPhaseItemList(newList)
+			addPhase(currentLocation)
+		}
+	},[currentLocation, dismissPhaseModal])
 
 	return (
 		<>
@@ -171,20 +184,31 @@ export default observer(function LocationsPhaseList(props: LocationsPhaseListPro
 	)
 })
 
-const setInitialPhaseItems = (currentLocation: any): any[] => {
-	let phases: any[] = currentLocation.value.vaccination.content.phases
-	let activePhase: string = currentLocation.value.vaccination.content.activePhase
+const getLocationPhaseData = (currentLocation: any): {phases: any[], activePhase: string} => {
+	const currLocation = currentLocation.value || currentLocation
+
+	let phases: any[] = currLocation.vaccination.content.phases
+	let activePhase: string = currLocation.vaccination.content.activePhase
 
 	if (!phases) {
-		const parentLocationVaccinationData = getParentLocationVaccinationData(currentLocation.value)
+		const parentLocationVaccinationData = getParentLocationVaccinationData(currLocation)
 		if (parentLocationVaccinationData) {
-			phases = parentLocationVaccinationData.content.phases
-			activePhase = parentLocationVaccinationData.content.activePhase
+			phases = [...parentLocationVaccinationData.content.phases]
+			activePhase = {...parentLocationVaccinationData.content.activePhase}
 		} else {
-			return []
+			return {phases: [], activePhase: '' }
 		}
 	}
 
+	return {phases, activePhase}
+}
+
+const setInitialPhaseItems = (currentLocation: any): any[] => {
+	const result = getLocationPhaseData(currentLocation)
+	return generateUIPhaseList(result.phases, result.activePhase)
+}
+
+const generateUIPhaseList = (phases: any[], activePhase: string) => {
 	return phases.map(
 		(phase: any, idx: number) => {
 			return {
