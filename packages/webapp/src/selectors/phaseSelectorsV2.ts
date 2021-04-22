@@ -147,7 +147,7 @@ export const getParentLocationVaccinationData = (currentLocation: any): any => {
 	while (vaccinationData === null) {
 		const parentLocation = pathFind(repoFileData, pathArray)
 
-		if (!parentLocation.vaccination.content.phases) {
+		if (!parentLocation.vaccination.content.phases || parentLocation.vaccination.content.phases.length === 0) {
 			pathArray.splice(-2,2)
 		} else {
 			vaccinationData = parentLocation.vaccination

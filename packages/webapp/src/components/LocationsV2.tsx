@@ -44,6 +44,7 @@ export default observer(function LocationsV2() {
 				newTitle = `${locationName} ${phaseOverviewText}`
 				updatePhaseOverviewTitle(newTitle)
 			}
+			currentLocation?.regions ? setCurrentLocationList(currentLocation.regions) : setCurrentLocationList([])
 			setCurrentLocationTitle(newTitle as string)
 		} else {
 			setBreadcrumbs(undefined)

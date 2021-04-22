@@ -38,7 +38,7 @@ export default observer(function LocationPhaseQualifiers(props: LocationPhaseQua
 			const tempPhaseList: any[] = []
 			const { phases, activePhase } = getLocationPhaseData(currentLocation)
 
-			if (!currentLocation.vaccination.content?.phases) {
+			if (!currentLocation.vaccination.content?.phases || currentLocation.vaccination.content?.phases.length === 0) {
 				currentLocation.vaccination.content.phases = phases
 			}
 

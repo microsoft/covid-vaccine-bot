@@ -94,7 +94,7 @@ export const getLocationPhaseData = (currentLocation: any): {phases: any[], acti
 	let phases: any[] = currLocation.vaccination.content.phases
 	let activePhase: string = currLocation.vaccination.content.activePhase
 
-	if (!phases) {
+	if (!phases || phases.length === 0) {
 		const parentLocationVaccinationData = getParentLocationVaccinationData(currLocation)
 
 		if (parentLocationVaccinationData) {

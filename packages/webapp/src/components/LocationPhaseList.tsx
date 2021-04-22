@@ -109,7 +109,7 @@ export default observer(function LocationsPhaseList(props: LocationsPhaseListPro
 		const { phases, activePhase } = getLocationPhaseData(currentLocation)
 		let newList = []
 
-		if (!currentLocation.vaccination.content?.phases) {
+		if (!currentLocation.vaccination.content?.phases || currentLocation.vaccination.content?.phases.length === 0) {
 			currentLocation.vaccination.content.phases = phases
 		}
 	
