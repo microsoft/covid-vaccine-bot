@@ -17,6 +17,7 @@ import { getGlobalQualifierValidationTexts } from '../selectors/qualifierSelecto
 import './AddQualifierForm.scss'
 
 export interface AddQualifierFormProp {
+	rootLocationKey: string
 	item?: any
 	tagsOptions: IDropdownOption[]
 	onSubmit?: (newQualifier: any) => void
@@ -42,11 +43,11 @@ const setInitialData = (item: any) => {
 }
 
 export default observer(function AddQualifierForm(props: AddQualifierFormProp) {
-	const { onSubmit, onCancel, item, tagsOptions } = props
+	const { onSubmit, onCancel, item, tagsOptions, rootLocationKey } = props
 	const [formData, setFormData] = useState<any>(setInitialData(item))
 	const fieldChanges = useRef<any>(formData)
 	const globalQualifiersList = useRef<string[]>(
-		getGlobalQualifierValidationTexts()
+		getGlobalQualifierValidationTexts(rootLocationKey)
 	)
 	const [hasError, setHasError] = useState<boolean>(false)
 	const [isAddingTag, setIsAddingTag] = useState<boolean>(false)

@@ -18,9 +18,9 @@ export const isQualifierTextDuplicate = (qualifierText: string): boolean => {
     return existingQualifierTexts.includes(newQualifier)
 }
 
-export const getGlobalQualifierValidationTexts = (): string[] => {
+export const getGlobalQualifierValidationTexts = (rootLocationKey: string): string[] => {
     const store = getAppStore()
-    const { content } = store.globalFileData.customStrings
+    const { content } = store.repoFileData[rootLocationKey].strings
 
     return Object.entries(content)
         .filter(([key, _value]: [string, any]) => key.startsWith('c19.eligibility.question/'))

@@ -310,7 +310,7 @@ export default observer(function App() {
 													)}
 												</Pivot>
 											</div>
-											{state.isEditable && isPanelOpen && (
+											{state.isEditable && isPanelOpen && Object.keys(state.breadCrumbs).length > 0 && (
 												<div className="appBodyRight">
 													<QualifierPanel />
 												</div>

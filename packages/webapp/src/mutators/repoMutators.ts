@@ -692,54 +692,53 @@ export const setActivePhase = mutatorAction('setActivePhase', ({currentLocation,
 	}
 })
 
-export const updateGlobalQualifiers = mutatorAction(
-	'updateGlobalQualifiers',
-	(item: any | undefined) => {
-		if (item) {
-			const store = getAppStore()
-			const { customStrings } = store.globalFileData
-			store.pendingChanges = true
-			let qualifierKey = ''
+export const updateRootLocationQualifiers = mutatorAction('updateRootLocationQualifiers', ({rootLocationKey, newQualifier} : any | undefined) => {
+	if (rootLocationKey && newQualifier) {
+		const store = getAppStore()
+		store.pendingChanges = true
+		const stringsObj = store.repoFileData[rootLocationKey].strings.content
 
-			if (item.isNew) {
-				const qualifierKeyBank = item.qualifier
-					.toLowerCase()
-					.replace(/[^A-Za-z0-9]/g, '_')
-					.split('_')
-					.filter((i: string) => i) as string[]
+		let qualifierKey = ''
 
-				const customStringKeys = Object.keys(customStrings.content)
+		if (newQualifier.isNew) {
+			const qualifierKeyBank = newQualifier.qualifier
+				.toLowerCase()
+				.replace(/[^A-Za-z0-9]/g, '_')
+				.split('_')
+				.filter((i: string) => i) as string[]
 
-				let qKey = ''
-				for (let i = 0; i < qualifierKeyBank.length; i++) {
-					if (i === 0) {
-						qKey = qualifierKeyBank[0]
-					} else {
-						qKey = `${qKey}_${qualifierKeyBank[i]}`
-					}
-					qualifierKey = `c19.eligibility.question/${item.tagKey.toLowerCase()}.${qKey}`
+			const customStringKeys = Object.keys(stringsObj)
 
-					if (!customStringKeys.includes(qualifierKey)) {
-						break
-					}
+			let qKey = ''
+			for (let i = 0; i < qualifierKeyBank.length; i++) {
+				if (i === 0) {
+					qKey = qualifierKeyBank[0]
+				} else {
+					qKey = `${qKey}_${qualifierKeyBank[i]}`
 				}
+				qualifierKey = `c19.eligibility.question/${newQualifier.tagKey.toLowerCase()}.${qKey}`
 
-				qualifierKey = qualifierKey.endsWith('_')
-					? qualifierKey.substr(0, qualifierKey.length - 1)
-					: qualifierKey
-			} else {
-				qualifierKey = item.key
+				if (!customStringKeys.includes(qualifierKey)) {
+					break
+				}
 			}
 
-			store.globalFileData.customStrings.content[qualifierKey] = {
-				...store.globalFileData.customStrings.content[qualifierKey],
-				[store.currentLanguage]: item.qualifier,
-			}
-
-			store.globalFileData = { ...store.globalFileData }
+			qualifierKey = qualifierKey.endsWith('_')
+				? qualifierKey.substr(0, qualifierKey.length - 1)
+				: qualifierKey
+		} else {
+			qualifierKey = newQualifier.key
 		}
+
+		stringsObj[qualifierKey] = {
+				...stringsObj[qualifierKey],
+				[store.currentLanguage]: newQualifier.qualifier,
+		}
+
+		store.repoFileData = { ...store.repoFileData }
+		console.log(store.repoFileData[rootLocationKey])
 	}
-)
+})
 
 export const translateLocationName = mutatorAction(
 	'translateLocationName',
