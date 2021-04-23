@@ -10,8 +10,9 @@ const getCustomStrings = (currentLocation?: any, keyFilter?: string) => {
 	const { repoFileData, currentLanguage } = getAppStore()
 	const currentLocationRoot = currentLocation.info.path.split('/')[0]
 	const rootRepo = repoFileData[currentLocationRoot]
+	const isCurrentLocationRoot = currentLocation.info.path === rootRepo.info.path
 
-	const qualifierList: any[] = currentLocation
+	const qualifierList: any[] = currentLocation && !isCurrentLocationRoot
 		? [
 				...Object.entries(currentLocation.strings?.content ?? {}),
 				...Object.entries(rootRepo.strings.content),
@@ -37,8 +38,9 @@ export const getExactCustomStrings = (currentLocation?: any, keyFilter?: string)
 	const { repoFileData, currentLanguage } = getAppStore()
 	const currentLocationRoot = currentLocation.info.path.split('/')[0]
 	const rootRepo = repoFileData[currentLocationRoot]
+	const isCurrentLocationRoot = currentLocation.info.path === rootRepo.info.path
 
-	const qualifierList: any[] = currentLocation
+	const qualifierList: any[] = currentLocation && !isCurrentLocationRoot
 		? [
 				...Object.entries(currentLocation.strings?.content ?? {}),
 				...Object.entries(rootRepo.strings.content),
