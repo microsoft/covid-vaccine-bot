@@ -4,10 +4,11 @@
  */
 import { toJS } from 'mobx'
 import { mutatorAction } from 'satcheljs'
+import { getCurrentLocationObj } from '../selectors/locationSelectors'
 import { getAppStore } from '../store/store'
 import { createLocationDataObj, compare, pathFind } from '../utils/dataUtils'
 import { formatId } from '../utils/textUtils'
-// import {getLocationPhaseData} from '../selectors/locationSelectors'
+import {cloneDeep as clone} from 'lodash'
 
 export const setIsDataRefreshing = mutatorAction(
 	'setIsDataRefreshing',
@@ -638,142 +639,66 @@ export const modifyMoreInfoLinks = mutatorAction(
 	}
 )
 
-export const updateQualifier = mutatorAction(
-	'updateQualifier',
-	(data: any | undefined) => {
-		if (data) {
-			const store = getAppStore()
-			if (store?.repoFileData) {
-				store.pendingChanges = true
-				const location = store.repoFileData[data.locationKey]
+export const updateQualifier = mutatorAction('updateQualifier', ({currentLocation, phaseGroupId, qualifierId, oldQualifierId}: any) => {
+	if (currentLocation && phaseGroupId && qualifierId && oldQualifierId) {
+		const store = getAppStore()
+		store.pendingChanges = true
 
-				if (data.regionInfo) {
-					const regionVaccinationObj =
-						location.regions[data.regionInfo.key].vaccination
-					if (!regionVaccinationObj.content?.phases) {
-						copyPhaseData(regionVaccinationObj, location.vaccination)
-					}
+		const currLocation = getCurrentLocationObj(currentLocation)
 
-					const affectedPhase = regionVaccinationObj.content.phases.find(
-						(phase: any) => phase.id === data.item.groupId
-					)
+		const phaseGroupIndex = currLocation.vaccination.content.phases.findIndex(
+						(phase: any) => phase.id === phaseGroupId)
 
-					const affectedQualifier = affectedPhase.qualifications.find(
-						(qualification: any) =>
-							qualification.question.toLowerCase() === data.oldId.toLowerCase()
-					)
-					if (affectedQualifier) {
-						affectedQualifier.question = data.item.qualifierId.toLowerCase()
-					}
-				} else {
-					const affectedPhase = location.vaccination.content.phases.find(
-						(phase: any) => phase.id === data.item.groupId
-					)
+		const phaseQualifiers = currLocation.vaccination.content.phases[phaseGroupIndex].qualifications
+		const qualifierIdx = phaseQualifiers.findIndex((pq: any) => pq.question === oldQualifierId)
 
-					const affectedQualifier = affectedPhase.qualifications.find(
-						(qualification: any) =>
-							qualification.question.toLowerCase() === data.oldId.toLowerCase()
-					)
-					if (affectedQualifier) {
-						affectedQualifier.question = data.item.qualifierId.toLowerCase()
-					}
-				}
-
-				store.repoFileData = { ...store.repoFileData }
-			}
-		}
+		phaseQualifiers[qualifierIdx].question = qualifierId
+		store.repoFileData = { ...store.repoFileData }
 	}
-)
-export const addQualifier = mutatorAction(
-	'addQualifier',
-	(data: any | undefined) => {
-		if (data) {
-			const store = getAppStore()
-			if (store?.repoFileData) {
-				store.pendingChanges = true
-				const location = store.repoFileData[data.locationKey]
+})
 
-				if (data.regionInfo) {
-					const regionVaccinationObj =
-						location.regions[data.regionInfo.key].vaccination
-					if (!regionVaccinationObj.content?.phases) {
-						copyPhaseData(regionVaccinationObj, location.vaccination)
-					}
-					const affectedPhase = regionVaccinationObj.content.phases.find(
-						(phase: any) => phase.id === data.item.groupId
-					)
+export const addQualifier = mutatorAction('addQualifier', ({currentLocation, phaseGroupId, qualifierId}: any) => {
+	if (currentLocation && phaseGroupId && qualifierId) {
+		const store = getAppStore()
+		store.pendingChanges = true
 
-					affectedPhase.qualifications.push({
-						question: data.item.qualifierId,
-					})
-				} else {
-					const affectedPhase = location.vaccination.content.phases.find(
-						(phase: any) => phase.id === data.item.groupId
-					)
+		const currLocation = getCurrentLocationObj(currentLocation)
 
-					affectedPhase.qualifications.push({
-						question: data.item.qualifierId,
-					})
-				}
+		const phaseGroupIndex = currLocation.vaccination.content.phases.findIndex(
+						(phase: any) => phase.id === phaseGroupId)
 
-				store.repoFileData = { ...store.repoFileData }
-			}
-		}
+		const phaseQualifiers = clone(currLocation.vaccination.content.phases[phaseGroupIndex].qualifications)
+		phaseQualifiers.push({question: qualifierId})
+
+		store.repoFileData = { ...store.repoFileData }
 	}
-)
-export const removeQualifier = mutatorAction(
-	'removeQualifier',
-	(data: any | undefined) => {
-		if (data) {
-			const store = getAppStore()
-			if (store?.repoFileData) {
-				store.pendingChanges = true
-				const location = store.repoFileData[data.locationKey]
+})
 
-				if (data.regionInfo) {
-					const regionVaccinationObj =
-						location.regions[data.regionInfo.key].vaccination
-					if (!regionVaccinationObj.content?.phases) {
-						copyPhaseData(regionVaccinationObj, location.vaccination)
-					}
-					const affectedPhase = regionVaccinationObj.content.phases.find(
-						(phase: any) => phase.id === data.item.groupId
-					)
+export const removeQualifier = mutatorAction('removeQualifier', ({currentLocation, phaseGroupId, qualifierId}: any) => {
+	if (currentLocation && phaseGroupId && qualifierId) {
+		const store = getAppStore()
+		store.pendingChanges = true
 
-					const removeIndex = affectedPhase.qualifications.findIndex(
-						(qualification: any) =>
-							qualification.question.toLowerCase() ===
-							data.item.qualifierId.toLowerCase()
-					)
-					affectedPhase.qualifications.splice(removeIndex, 1)
-					store.repoFileData = { ...store.repoFileData }
-				} else {
-					const affectedPhase = location.vaccination.content.phases.find(
-						(phase: any) => phase.id === data.item.groupId
-					)
+		const currLocation = getCurrentLocationObj(currentLocation)
 
-					const removeIndex = affectedPhase.qualifications.findIndex(
-						(qualification: any) =>
-							qualification.question.toLowerCase() ===
-							data.item.qualifierId.toLowerCase()
-					)
-					affectedPhase.qualifications.splice(removeIndex, 1)
-					store.repoFileData = { ...store.repoFileData }
-				}
-			}
-		}
+		const phaseGroupIndex = currLocation.vaccination.content.phases.findIndex(
+						(phase: any) => phase.id === phaseGroupId)
+
+		const phaseQualifiers = currLocation.vaccination.content.phases[phaseGroupIndex].qualifications
+		const qualifierIdx = phaseQualifiers.findIndex((pq: any) => pq.question === qualifierId)
+
+		phaseQualifiers.splice(qualifierIdx, 1)
+
+		store.repoFileData = { ...store.repoFileData }
 	}
-)
+})
 
 export const removePhase = mutatorAction('removePhase', ({currentLocation, phaseId}: any) => {
 	if (currentLocation && phaseId) {
 		const store = getAppStore()
 		store.pendingChanges = true
 
-		const pathArray = currentLocation.info.path.split('/')
-		pathArray.splice(-1, 1)
-
-		let currLocation = pathFind(store.repoFileData, pathArray)
+		const currLocation = getCurrentLocationObj(currentLocation)
 
 		const removeIndex = currLocation.vaccination.content.phases.findIndex(
 						(phase: any) => phase.id === phaseId
@@ -785,28 +710,44 @@ export const removePhase = mutatorAction('removePhase', ({currentLocation, phase
 	}
 })
 
-export const updatePhases = mutatorAction('updatePhases', (currentLocation: any) => {
+export const updatePhase = mutatorAction('updatePhase', (currentLocation: any) => {
 	const store = getAppStore()
 	store.pendingChanges = true
 
-	const pathArray = currentLocation.info.path.split('/')
-	pathArray.splice(-1, 1)
+	const currLocation = getCurrentLocationObj(currentLocation)
 
-	let currLocation = pathFind(store.repoFileData, pathArray)
 	currLocation.vaccination = currentLocation.vaccination
+
+	store.repoFileData = { ...store.repoFileData }
 })
+
+export const addPhase = mutatorAction('addPhase', ({currentLocation, id, label}: any) => {
+	if (currentLocation && id && label) {
+		const store = getAppStore()
+		store.pendingChanges = true
+
+		const currLocation = getCurrentLocationObj(currentLocation)
+
+		currLocation.vaccination.content.phases.push({
+			id,
+			label,
+			qualifications: []
+		})
+
+		store.repoFileData = { ...store.repoFileData }
+	}
+})
+
+
 
 export const duplicatePhase = mutatorAction('duplicatePhase', ({currentLocation, phaseId, name}: any) => {
 	if (currentLocation && phaseId && name) {
 		const store = getAppStore()
 		store.pendingChanges = true
 
-		const pathArray = currentLocation.info.path.split('/')
-		pathArray.splice(-1, 1)
+		const currLocation = getCurrentLocationObj(currentLocation)
 
-		let currLocation = pathFind(store.repoFileData, pathArray)
-
-		const phase = currLocation.vaccination.content.phases.find((phase:any) => phase.id === phaseId)
+		const phase = clone(currLocation.vaccination.content.phases.find((phase:any) => phase.id === phaseId))
 
 		const duplicatePhase = {
 			...phase,
@@ -819,26 +760,12 @@ export const duplicatePhase = mutatorAction('duplicatePhase', ({currentLocation,
 	}
 })
 
-export const updatePhase = mutatorAction('updatePhase', (currentLocation: any) => {
-	const store = getAppStore()
-	store.pendingChanges = true
-
-	const pathArray = currentLocation.info.path.split('/')
-	pathArray.splice(-1, 1)
-
-	let currLocation = pathFind(store.repoFileData, pathArray)
-	currLocation.vaccination = currentLocation.vaccination
-})
-
 export const setActivePhase = mutatorAction('setActivePhase', ({currentLocation, phaseId}): any => {
 	if (currentLocation && phaseId) {
 		const store = getAppStore()
 		store.pendingChanges = true
 
-		const pathArray = currentLocation.info.path.split('/')
-		pathArray.splice(-1, 1)
-
-		let currLocation = pathFind(store.repoFileData, pathArray)
+		const currLocation = getCurrentLocationObj(currentLocation)
 
 		currLocation.vaccination.content.activePhase = phaseId
 

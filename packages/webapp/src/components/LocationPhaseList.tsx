@@ -19,7 +19,7 @@ import { useBoolean } from '@uifabric/react-hooks'
 
 import './Locations.scss'
 import PhaseForm from './PhaseForm'
-import { updatePhases } from '../mutators/repoMutators'
+import { addPhase, updatePhase } from '../mutators/repoMutators'
 
 export interface LocationsPhaseListProp {
 	currentLocation: any
@@ -112,7 +112,7 @@ export default observer(function LocationsPhaseList(props: LocationsPhaseListPro
 		if (!currentLocation.vaccination.content?.phases || currentLocation.vaccination.content?.phases.length === 0) {
 			currentLocation.vaccination.content.phases = phases
 		}
-	
+
 		// Update Phase
 		if (phaseData.phaseId) {
 			const phaseId = phaseData.phaseId
@@ -121,19 +121,19 @@ export default observer(function LocationsPhaseList(props: LocationsPhaseListPro
 				.trim()
 
 			const affectedPhase = currentLocation.vaccination.content.phases.find((phase: any) => phase.id === phaseId)
-				
+
 			affectedPhase.label = phaseData.name
-		} 
+			updatePhase(currentLocation)
+		}
 		// Add Phase
 		else {
-			currentLocation.vaccination.content.phases.push({
+			addPhase({
+				currentLocation,
 				id: formatId(phaseData.name),
-				label: phaseData.name,
-				qualifications: []
+				label: phaseData.name
 			})
 		}
-		
-		updatePhases(currentLocation)
+
 		newList = generateUIPhaseList(currentLocation.vaccination.content.phases, activePhase)
 		setPhaseItemList(newList)
 	},[currentLocation, dismissPhaseModal])

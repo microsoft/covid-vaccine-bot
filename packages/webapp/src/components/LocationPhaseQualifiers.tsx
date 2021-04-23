@@ -13,7 +13,7 @@ import {
 import PhaseQualifierForm from './PhaseQualifierFormV2'
 import { useBoolean } from '@uifabric/react-hooks'
 import PhaseForm from './PhaseForm'
-import { duplicatePhase, removePhase, setActivePhase } from '../mutators/repoMutators'
+import { addQualifier, duplicatePhase, removePhase, removeQualifier, setActivePhase, updateQualifier } from '../mutators/repoMutators'
 import './Locations.scss'
 import { getLocationPhaseData } from '../selectors/locationSelectors'
 
@@ -139,12 +139,11 @@ export default observer(function LocationPhaseQualifiers(props: LocationPhaseQua
 
 	const onRemoveRowItem = (item: any, groupKey:any) => {
 		if (item.qualifierId !== 'c19.eligibility.question/new_qualifier') {
-			console.log('remove new qualifier')
-			// removeQualifier({
-			// 	locationKey: selectedState.key,
-			// 	item: item,
-			// 	regionInfo: isRegion ? value : null,
-			// })
+			removeQualifier({
+				currentLocation,
+				phaseGroupId: groupKey,
+				qualifierId: item.qualifierId
+			})
 		} else {
 			const tempPhaseList = phaseList.map((group) => {
 				if (group.key === groupKey) {
@@ -169,8 +168,6 @@ export default observer(function LocationPhaseQualifiers(props: LocationPhaseQua
 	}
 
 	const onSetActivePhase = (phaseId: string) => {
-		console.log('set active phase', phaseId)
-
 		setActivePhase({
 			currentLocation,
 			phaseId
@@ -223,21 +220,20 @@ export default observer(function LocationPhaseQualifiers(props: LocationPhaseQua
 	}
 
 	const onChangeRowItemQualifier = (currentItem: any, initItem: any) => {
-		console.log('change row item qualifier')
-		// if (initItem.qualifierId !== 'c19.eligibility.question/new_qualifier') {
-		// 	updateQualifier({
-		// 		oldId: initItem.qualifierId,
-		// 		locationKey: selectedState.key,
-		// 		item: currentItem,
-		// 		regionInfo: isRegion ? value : null,
-		// 	})
-		// } else {
-		// 	addQualifier({
-		// 		locationKey: selectedState.key,
-		// 		item: currentItem,
-		// 		regionInfo: isRegion ? value : null,
-		// 	})
-		// }
+		if (initItem.qualifierId !== 'c19.eligibility.question/new_qualifier') {
+			updateQualifier({
+				currentLocation,
+				phaseGroupId: currentItem.groupId,
+				qualifierId: currentItem.qualifierId,
+				oldQualifierId: initItem.qualifierId
+			})
+		} else {
+			addQualifier({
+				currentLocation,
+				phaseGroupId: currentItem.groupId,
+				qualifierId: currentItem.qualifierId
+			})
+		}
 	}
 
     return (

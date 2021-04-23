@@ -5,6 +5,8 @@
 import { getAppStore } from '../store/store'
 import { getParentLocationVaccinationData } from './phaseSelectorsV2'
 import {cloneDeep as clone} from 'lodash'
+import { pathFind } from '../utils/dataUtils'
+
 export const getCustomString = (currentLocation: any, keyFilter: string): string => {
 
 	const { repoFileData, currentLanguage } = getAppStore()
@@ -75,17 +77,12 @@ const getCustomStrings = (selectedState: any, keyFilter: string): any[] => {
 	})
 }
 
+export const getCurrentLocationObj = (currentLocation: any): any => {
+	const { repoFileData } = getAppStore()
+	const pathArray = currentLocation.info.path.split('/')
+	pathArray.splice(-1, 1)
 
-export const getLocationsData = (location?: string): any => {
-	const { locationsData } = getAppStore()
-	if (locationsData) {
-		if (location) {
-			return locationsData[location]
-		} else {
-			return locationsData
-		}
-	}
-	return undefined
+	return pathFind(repoFileData, pathArray)
 }
 
 export const getLocationPhaseData = (currentLocation: any): {phases: any[], activePhase: string} => {
