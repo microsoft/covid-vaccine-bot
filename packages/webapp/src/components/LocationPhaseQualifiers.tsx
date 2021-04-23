@@ -13,7 +13,7 @@ import {
 import PhaseQualifierForm from './PhaseQualifierFormV2'
 import { useBoolean } from '@uifabric/react-hooks'
 import PhaseForm from './PhaseForm'
-import { addQualifier, duplicatePhase, removePhase, removeQualifier, setActivePhase, updateQualifier } from '../mutators/repoMutators'
+import { addQualifier, duplicatePhase, modifyMoreInfoLinks, modifyMoreInfoText, removePhase, removeQualifier, setActivePhase, updateQualifier } from '../mutators/repoMutators'
 import './Locations.scss'
 import { getLocationPhaseData } from '../selectors/locationSelectors'
 
@@ -27,7 +27,7 @@ export default observer(function LocationPhaseQualifiers(props: LocationPhaseQua
 	const [phaseList, setPhaseList] = useState<any[]>([])
 	const groupToggleState = useRef<any[]>([])
 	const [
-		isDuplaceModalOpen,
+		isDuplicateModalOpen,
 		{ setTrue: openDuplicateModal, setFalse: dismissDuplicateModal },
 	] = useBoolean(false)
 	const selectedPhaseGroup = useRef<any>(null)
@@ -192,31 +192,19 @@ export default observer(function LocationPhaseQualifiers(props: LocationPhaseQua
 	},[currentLocation, dismissDuplicateModal])
 
 	const onChangeRowItemText = (currentItem: any, initItem: any) => {
-		console.log('row item changed')
-		// if (
-		// 	initItem.moreInfoUrl?.toLowerCase() !==
-		// 	currentItem.moreInfoUrl?.toLowerCase()
-		// ) {
-		// 	modifyMoreInfoLinks({
-		// 		locationKey: selectedState.key,
-		// 		item: currentItem,
-		// 		regionInfo: isRegion ? value : null,
-		// 	})
-		// } else if (initItem.moreInfoContent !== currentItem.moreInfoContent) {
-		// 	let calcInfoKey = currentItem.qualifierId.replace('question', 'moreinfo')
-		// 	calcInfoKey += `.${selectedState.value.info.content.metadata.code_alpha.toLowerCase()}`
-		// 	if (isRegion) {
-		// 		calcInfoKey += `.${value.name.toLowerCase()}`
-		// 	}
-		// 	calcInfoKey += `.${currentItem.groupId}`
+		modifyMoreInfoLinks({
+				currentLocation,
+				phaseGroupId: currentItem.groupId,
+				qualifierId: currentItem.qualifierId,
+				moreInfoUrl: currentItem.moreInfoUrl
+			})
 
-		// 	modifyStateStrings({
-		// 		infoKey: calcInfoKey,
-		// 		locationKey: selectedState.key,
-		// 		item: currentItem,
-		// 		regionInfo: isRegion ? value : null,
-		// 	})
-		// }
+		modifyMoreInfoText({
+			currentLocation,
+			phaseGroupId: currentItem.groupId,
+			qualifierId: currentItem.qualifierId,
+			moreInfoText: currentItem.moreInfoContent
+		})
 	}
 
 	const onChangeRowItemQualifier = (currentItem: any, initItem: any) => {
@@ -366,7 +354,7 @@ export default observer(function LocationPhaseQualifiers(props: LocationPhaseQua
 				: null}
 		</div>
 		<Modal
-			isOpen={isDuplaceModalOpen}
+			isOpen={isDuplicateModalOpen}
 			isModeless={false}
 			isDarkOverlay={true}
 			isBlocking={false}

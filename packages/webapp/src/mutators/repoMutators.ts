@@ -504,140 +504,61 @@ export const updateLocationData = mutatorAction(
 	}
 )
 
-export const modifyStateStrings = mutatorAction(
-	'modifyStateStrings',
-	(data: any | undefined) => {
-		if (data) {
-			const store = getAppStore()
-			if (store?.repoFileData) {
-				store.pendingChanges = true
-				const location = store.repoFileData[data.locationKey]
+export const modifyMoreInfoText = mutatorAction('modifyMoreInfoText',({currentLocation, phaseGroupId, qualifierId, moreInfoText}: any) => {
+	if (currentLocation && phaseGroupId && qualifierId) {
+		const store = getAppStore()
+		store.pendingChanges = true
 
-				if (!data.item.moreInfoContent) {
-					delete location.strings.content[data.infoKey]
-				} else {
-					const newStringsObj: any = {}
-					newStringsObj[store.currentLanguage] = data.item.moreInfoContent
-					location.strings.content[data.infoKey] = newStringsObj
-				}
+		const pathArray = currentLocation.info.path.split('/')
+		pathArray.splice(-1, 1)
+		const isRootLocation = pathArray.length === 1
 
-				if (!data.regionInfo) {
-					const affectedPhase = location.vaccination.content.phases.find(
-						(phase: any) => phase.id === data.item.groupId
-					)
-					const affectedQualifier = affectedPhase.qualifications.find(
-						(qualification: any) =>
-							qualification.question.toLowerCase() ===
-							data.item.qualifierId.toLowerCase()
-					)
-					if (affectedQualifier) {
-						if (data.item.moreInfoContent) {
-							affectedQualifier.moreInfoText = data.infoKey
-						} else {
-							delete affectedQualifier.moreInfoText
-						}
-					} else {
-						affectedPhase.qualifications.push({
-							question: data.item.qualifierId,
-							moreInfoText: data.infoKey,
-						})
-					}
-				} else {
-					const regionVaccinationObj =
-						location.regions[data.regionInfo.key].vaccination
+		const currLocation = getCurrentLocationObj(currentLocation)
 
-					if (!regionVaccinationObj.content?.phases) {
-						copyPhaseData(regionVaccinationObj, location.vaccination)
-					}
-					const affectedPhase = regionVaccinationObj.content.phases.find(
-						(phase: any) => phase.id === data.item.groupId
-					)
-					const affectedQualifier = affectedPhase.qualifications.find(
-						(qualification: any) =>
-							qualification.question.toLowerCase() ===
-							data.item.qualifierId.toLowerCase()
-					)
+		const phaseGroupIndex = currLocation.vaccination.content.phases.findIndex(
+						(phase: any) => phase.id === phaseGroupId)
 
-					affectedQualifier.moreInfoText = data.infoKey
-				}
-			}
+		const phaseQualifiers = currLocation.vaccination.content.phases[phaseGroupIndex].qualifications
+		const qualifierIdx = phaseQualifiers.findIndex((pq: any) => pq.question === qualifierId)
+
+		let calcInfoKey = `${qualifierId.replace('question', 'moreinfo')}`
+
+		if (!isRootLocation) {
+			const locationCode = currLocation.info.content?.metadata?.code_alpha || currLocation.info.content.id
+			calcInfoKey += `.${locationCode.toLowerCase()}.${phaseGroupId}`
 		}
-	}
-)
 
-const copyPhaseData = (newObj: any, oldObj: any) => {
-	newObj.content['phases'] = []
-	oldObj.content.phases.forEach((phase: any) => {
-		const currPhaseObj: any = {}
-		currPhaseObj['id'] = phase.id
-		currPhaseObj['qualifications'] = []
-		phase.qualifications.forEach((qual: any) => {
-			currPhaseObj.qualifications.push({
-				question: qual.question.toLowerCase(),
-				moreInfoText: qual.moreInfoText
-					?.replace(/[^a-z0-9._/\s]/gi, '')
-					.replace(/\s/g, '_')
-					.toLowerCase(),
-				moreInfoUrl: qual.moreInfoUrl,
-			})
-		})
-
-		newObj.content.phases.push(currPhaseObj)
-	})
-}
-
-export const modifyMoreInfoLinks = mutatorAction(
-	'modifyMoreInfoLinks',
-	(data: any | undefined) => {
-		if (data) {
-			const store = getAppStore()
-			if (store?.repoFileData) {
-				store.pendingChanges = true
-				const location = store.repoFileData[data.locationKey]
-				if (data.regionInfo) {
-					const regionVaccinationObj =
-						location.regions[data.regionInfo.key].vaccination
-					if (!regionVaccinationObj.content?.phases) {
-						copyPhaseData(regionVaccinationObj, location.vaccination)
-					}
-
-					const affectedPhase = regionVaccinationObj.content.phases.find(
-						(phase: any) => phase.id === data.item.groupId
-					)
-
-					if (affectedPhase) {
-						const affectedQualifier = affectedPhase.qualifications.find(
-							(qualification: any) =>
-								qualification.question.toLowerCase() ===
-								data.item.qualifierId.toLowerCase()
-						)
-
-						if (affectedQualifier) {
-							affectedQualifier.moreInfoUrl = data.item.moreInfoUrl
-						}
-					}
-				} else {
-					const affectedPhase = location.vaccination.content.phases.find(
-						(phase: any) => phase.id === data.item.groupId
-					)
-					const affectedQualifier = affectedPhase.qualifications.find(
-						(qualification: any) =>
-							qualification.question.toLowerCase() ===
-							data.item.qualifierId.toLowerCase()
-					)
-					if (affectedQualifier) {
-						affectedQualifier.moreInfoUrl = data.item.moreInfoUrl
-					} else {
-						affectedPhase.qualifications.push({
-							question: data.item.qualifierId,
-							moreInfoUrl: data.item.moreInfoUrl,
-						})
-					}
-				}
-			}
+		if (!moreInfoText) {
+			delete currLocation.strings.content[calcInfoKey]
+		} else {
+			const newStringsObj: any = {}
+			newStringsObj[store.currentLanguage] = moreInfoText
+			currLocation.strings.content[calcInfoKey] = newStringsObj
 		}
+
+		phaseQualifiers[qualifierIdx].moreInfoText = calcInfoKey
+
+		store.repoFileData = { ...store.repoFileData }
 	}
-)
+})
+
+export const modifyMoreInfoLinks = mutatorAction('modifyMoreInfoLinks', ({currentLocation, phaseGroupId, qualifierId, moreInfoUrl}: any) => {
+	if (currentLocation && phaseGroupId && qualifierId && moreInfoUrl) {
+		const store = getAppStore()
+		store.pendingChanges = true
+
+		const currLocation = getCurrentLocationObj(currentLocation)
+
+		const phaseGroupIndex = currLocation.vaccination.content.phases.findIndex(
+						(phase: any) => phase.id === phaseGroupId)
+
+		const phaseQualifiers = currLocation.vaccination.content.phases[phaseGroupIndex].qualifications
+		const qualifierIdx = phaseQualifiers.findIndex((pq: any) => pq.question === qualifierId)
+
+		phaseQualifiers[qualifierIdx].moreInfoUrl = moreInfoUrl
+		store.repoFileData = { ...store.repoFileData }
+	}
+})
 
 export const updateQualifier = mutatorAction('updateQualifier', ({currentLocation, phaseGroupId, qualifierId, oldQualifierId}: any) => {
 	if (currentLocation && phaseGroupId && qualifierId && oldQualifierId) {
@@ -737,8 +658,6 @@ export const addPhase = mutatorAction('addPhase', ({currentLocation, id, label}:
 		store.repoFileData = { ...store.repoFileData }
 	}
 })
-
-
 
 export const duplicatePhase = mutatorAction('duplicatePhase', ({currentLocation, phaseId, name}: any) => {
 	if (currentLocation && phaseId && name) {

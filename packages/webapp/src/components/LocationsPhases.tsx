@@ -10,7 +10,7 @@ import { useBoolean } from '@uifabric/react-hooks'
 import { observer } from 'mobx-react-lite'
 import { useState, useEffect, useRef, useCallback } from 'react'
 import {
-	modifyStateStrings,
+	//modifyStateStrings,
 	modifyMoreInfoLinks,
 	setActivePhase,
 	updateQualifier,
@@ -260,12 +260,12 @@ export default observer(function LocationsPhases(props: LocationsPhasesProp) {
 			}
 			calcInfoKey += `.${currentItem.groupId}`
 
-			modifyStateStrings({
-				infoKey: calcInfoKey,
-				locationKey: selectedState.key,
-				item: currentItem,
-				regionInfo: isRegion ? value : null,
-			})
+			// modifyStateStrings({
+			// 	infoKey: calcInfoKey,
+			// 	locationKey: selectedState.key,
+			// 	item: currentItem,
+			// 	regionInfo: isRegion ? value : null,
+			// })
 		}
 	}
 
