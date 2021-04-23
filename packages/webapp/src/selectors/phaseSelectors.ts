@@ -4,27 +4,72 @@
  */
 import { getAppStore } from '../store/store'
 import { toProperCase } from '../utils/textUtils'
+import { pathFind } from '../utils/dataUtils'
 
-export const getPhaseQualifierItems = (selectedState?: any): any => {
-	return getCustomStrings(selectedState, 'eligibility.question')
+const getCustomStrings = (currentLocation?: any, keyFilter?: string) => {
+	const { repoFileData, currentLanguage } = getAppStore()
+	const currentLocationRoot = currentLocation.info.path.split('/')[0]
+	const rootRepo = repoFileData[currentLocationRoot]
+	const isCurrentLocationRoot = currentLocation.info.path === rootRepo.info.path
+
+	const qualifierList: any[] = currentLocation && !isCurrentLocationRoot
+		? [
+				...Object.entries(currentLocation.strings?.content ?? {}),
+				...Object.entries(rootRepo.strings.content),
+		  ]
+		: [...Object.entries(rootRepo.strings.content)]
+
+	const filteredList = keyFilter
+		? qualifierList.filter(([key, _value]: [string, any]) =>
+				key.includes(keyFilter)
+		  )
+		: qualifierList
+	return filteredList
+		.map(([key, value]: [string, any]) => {
+			return {
+				key: key,
+				text: value[currentLanguage],
+			}
+		})
+		.sort((a, b) => (a.text > b.text ? 1 : -1))
 }
 
-export const getPhaseQualifierItemsByKey = (
-	selectedState?: any,
-	selectedKey?: any
-): any[] => {
-	return getPhaseQualifierItems(selectedState).filter((qualifier: any) => {
-		return (
-			qualifier.key.startsWith(`c19.eligibility.question/${selectedKey}.`) ||
-			qualifier.key.endsWith(`c19.eligibility.question/${selectedKey}`)
-		)
-	})
+export const getExactCustomStrings = (currentLocation?: any, keyFilter?: string) => {
+	const { repoFileData, currentLanguage } = getAppStore()
+	const currentLocationRoot = currentLocation.info.path.split('/')[0]
+	const rootRepo = repoFileData[currentLocationRoot]
+	const isCurrentLocationRoot = currentLocation.info.path === rootRepo.info.path
+
+	const qualifierList: any[] = currentLocation && !isCurrentLocationRoot
+		? [
+				...Object.entries(currentLocation.strings?.content ?? {}),
+				...Object.entries(rootRepo.strings.content),
+		  ]
+		: [...Object.entries(rootRepo.strings.content)]
+
+	const filteredList = keyFilter
+		? qualifierList.filter(
+				([key, _value]: [string, any]) => key.toLowerCase() === keyFilter
+		  )
+		: qualifierList
+	return filteredList
+		.map(([key, value]: [string, any]) => {
+			return {
+				key: key,
+				text: value[currentLanguage],
+			}
+		})
+		.sort((a, b) => (a.text > b.text ? 1 : -1))
+}
+
+export const getPhaseQualifierItems = (currentLocation?: any): any => {
+	return getCustomStrings(currentLocation, 'eligibility.question')
 }
 
 export const getPhaseTagItems = (
-	selectedState?: any
+	currentLocation?: any
 ): { key: string; text: string }[] => {
-	const phaseQualifiers = getPhaseQualifierItems(selectedState)
+	const phaseQualifiers = getPhaseQualifierItems(currentLocation)
 
 	const tagKeys: any[] = []
 	const tagList: any[] = []
@@ -44,16 +89,28 @@ export const getPhaseTagItems = (
 	return tagList.sort((a, b) => (a.text > b.text ? 1 : -1))
 }
 
-export const getPhaseMoreInfoItems = (selectedState?: any): any[] => {
-	return getCustomStrings(selectedState, 'eligibility.moreinfo')
+export const getPhaseQualifierItemsByKey = (
+	currentLocation?: any,
+	selectedKey?: any
+): any[] => {
+	return getPhaseQualifierItems(currentLocation).filter((qualifier: any) => {
+		return (
+			qualifier.key.startsWith(`c19.eligibility.question/${selectedKey}.`) ||
+			qualifier.key.endsWith(`c19.eligibility.question/${selectedKey}`)
+		)
+	})
+}
+
+export const getPhaseMoreInfoItems = (currentLocation?: any): any[] => {
+	return getCustomStrings(currentLocation, 'eligibility.moreinfo')
 }
 
 export const getPhaseMoreInfoTextByKey = (
-	selectedState?: any,
+	currentLocation?: any,
 	selectedKey?: any
 ): string => {
 	if (selectedKey) {
-		const res = getExactCustomStrings(selectedState, selectedKey)
+		const res = getExactCustomStrings(currentLocation, selectedKey)
 		if (res.length > 0) {
 			return res[0].text
 		}
@@ -61,71 +118,48 @@ export const getPhaseMoreInfoTextByKey = (
 
 	return ''
 }
+
 export const getPhaseMoreInfoUrl = (
-	isRegion: boolean,
-	rowItems: any
+	rowItem: any
 ): string => {
-	if (isRegion) {
-		const regionPhases = rowItems.item.location.value.vaccination.content.phases
-		const currPhase = regionPhases?.find(
-			(phase: { id: any }) => phase.id === rowItems.item.groupId
+	const locationPhases = rowItem.location.vaccination.content.phases
+	const currPhase = locationPhases?.find(
+		(phase: { id: any }) => phase.id === rowItem.groupId
+	)
+	if (currPhase) {
+		const currQualification = currPhase?.qualifications.find(
+			(qualification: { question: any }) =>
+				qualification.question === rowItem.qualifierId
 		)
-		if (currPhase) {
-			const currQualification = currPhase?.qualifications.find(
-				(qualification: { question: any }) =>
-					qualification.question === rowItems.item.qualifierId
-			)
-			if (currQualification) {
-				return currQualification.moreInfoUrl
-			}
+		if (currQualification) {
+			return currQualification.moreInfoUrl
 		}
 	}
-	return rowItems.item.moreInfoUrl
-}
-const getCustomStrings = (selectedState?: any, keyFilter?: string) => {
-	const { globalFileData, currentLanguage } = getAppStore()
-	const qualifierList: any[] = selectedState
-		? [
-				...Object.entries(selectedState.value?.strings?.content ?? {}),
-				...Object.entries(globalFileData.customStrings.content),
-		  ]
-		: [...Object.entries(globalFileData.customStrings.content)]
 
-	const filteredList = keyFilter
-		? qualifierList.filter(([key, _value]: [string, any]) =>
-				key.includes(keyFilter)
-		  )
-		: qualifierList
-	return filteredList
-		.map(([key, value]: [string, any]) => {
-			return {
-				key: key,
-				text: value[currentLanguage],
-			}
-		})
-		.sort((a, b) => (a.text > b.text ? 1 : -1))
+	return rowItem.moreInfoUrl
 }
 
-const getExactCustomStrings = (selectedState?: any, keyFilter?: string) => {
-	const { globalFileData, currentLanguage } = getAppStore()
-	const qualifierList: any[] = selectedState
-		? [
-				...Object.entries(selectedState.value?.strings?.content ?? {}),
-				...Object.entries(globalFileData.customStrings.content),
-		  ]
-		: [...Object.entries(globalFileData.customStrings.content)]
+export const getParentLocationVaccinationData = (currentLocation: any): any => {
+	const { repoFileData } = getAppStore()
+	const pathArray = currentLocation.info.path.split("/")
+	pathArray.splice(-1,1) //remove info.json
+	pathArray.splice(-2,2) //remove current location level
+	let vaccinationData = null
 
-	const filteredList = keyFilter
-		? qualifierList.filter(
-				([key, _value]: [string, any]) => key.toLowerCase() === keyFilter
-		  )
-		: qualifierList
-	return filteredList
-		.map(([key, value]: [string, any]) => {
-			return {
-				key: key,
-				text: value[currentLanguage],
-			}
-		})
-		.sort((a, b) => (a.text > b.text ? 1 : -1))
+	while (vaccinationData === null) {
+		const parentLocation = pathFind(repoFileData, pathArray)
+
+		if (!parentLocation.vaccination.content.phases || parentLocation.vaccination.content.phases.length === 0) {
+			pathArray.splice(-2,2)
+		} else {
+			vaccinationData = parentLocation.vaccination
+		}
+
+		if (pathArray.length === 0) {
+			const currentLocationRoot = currentLocation.info.path.split('/')[0]
+			vaccinationData = repoFileData[currentLocationRoot].vaccination
+		}
+	}
+
+	return vaccinationData
 }

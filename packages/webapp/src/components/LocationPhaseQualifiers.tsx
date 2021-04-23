@@ -10,7 +10,7 @@ import {
 	FontIcon,
 	Modal
 } from '@fluentui/react'
-import PhaseQualifierForm from './PhaseQualifierFormV2'
+import PhaseQualifierForm from './PhaseQualifierForm'
 import { useBoolean } from '@uifabric/react-hooks'
 import PhaseForm from './PhaseForm'
 import { addQualifier, duplicatePhase, modifyMoreInfoLinks, modifyMoreInfoText, removePhase, removeQualifier, setActivePhase, updateQualifier } from '../mutators/repoMutators'

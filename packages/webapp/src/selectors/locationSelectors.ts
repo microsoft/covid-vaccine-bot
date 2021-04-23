@@ -3,7 +3,7 @@
  * Licensed under the MIT license. See LICENSE file in the project.
  */
 import { getAppStore } from '../store/store'
-import { getParentLocationVaccinationData } from './phaseSelectorsV2'
+import { getParentLocationVaccinationData } from './phaseSelectors'
 import {cloneDeep as clone} from 'lodash'
 import { pathFind } from '../utils/dataUtils'
 

@@ -2,6 +2,7 @@
  * Copyright (c) Microsoft. All rights reserved.
  * Licensed under the MIT license. See LICENSE file in the project.
  */
+import { observer } from 'mobx-react-lite'
 import {
 	IconButton,
 	Dropdown,
@@ -9,99 +10,77 @@ import {
 	TextField,
 	FontIcon,
 } from '@fluentui/react'
-import { observer } from 'mobx-react-lite'
 import { useCallback, useState, useRef, useEffect } from 'react'
 import { getText as t } from '../selectors/intlSelectors'
+import { getAppStore } from '../store/store'
 import {
 	getPhaseTagItems,
 	getPhaseQualifierItems,
 	getPhaseMoreInfoTextByKey,
 	getPhaseQualifierItemsByKey,
-	getPhaseMoreInfoUrl,
+	getPhaseMoreInfoUrl
 } from '../selectors/phaseSelectors'
-import { getAppStore } from '../store/store'
 
-import './PhaseQualifierForm.scss'
+import './PhaseQualifierForm'
+
 export interface PhaseQualifierFormProps {
-	selectedState: any
-	rowItems: any
-	isEditable: boolean
-	isRegion: boolean
-	groupKey: string
+    currentLocation: any
+    groupKey: any
+    rowItem: any
 	onRowItemRemove?: (item: any, groupKey: any) => void
 	onRowItemTextChange?: (item: any, prevItem: any) => void
 	onRowItemQualifierChange?: (item: any, prevItem: any) => void
 }
 
-export default observer(function PhaseQualiferForm(
-	props: PhaseQualifierFormProps
-) {
-	const {
-		selectedState,
-		rowItems,
-		isEditable,
-		isRegion,
-		onRowItemRemove,
-		onRowItemTextChange,
-		onRowItemQualifierChange,
-		groupKey,
-	} = props
-	const phaseTagItems = useRef(getPhaseTagItems(selectedState))
-	const phaseQualifierItems = useRef(getPhaseQualifierItems(selectedState))
-	const [filteredQualifierItems, setFilteredQualifierItems] = useState<any[]>(
-		getPhaseQualifierItemsByKey(selectedState, rowItems.item.tagKey)
+export default observer(function PhaseQualifierForm(props: PhaseQualifierFormProps) {
+    const { currentLocation, groupKey, rowItem, onRowItemQualifierChange, onRowItemRemove, onRowItemTextChange } = props
+    const {	isEditable, currentLanguage } = getAppStore()
+    const phaseTagItems = useRef(getPhaseTagItems(currentLocation))
+    const phaseQualifierItems = useRef(getPhaseQualifierItems(currentLocation))
+    const [filteredQualifierItems, setFilteredQualifierItems] = useState<any[]>(
+		getPhaseQualifierItemsByKey(currentLocation, rowItem.tagKey)
 	)
-
-	const { globalFileData, repoFileData, currentLanguage } = getAppStore()
+	const [moreInfoText, setMoreInfoText] = useState<string>('')
+	const [moreInfoUrl, setMoreInfoUrl] = useState<string>(getPhaseMoreInfoUrl(rowItem))
+	const changedItem = useRef<any>(rowItem)
+	changedItem.current.moreInfoContent = moreInfoText
 
 	let overrideIconFlag = false
-	let moreInfoKey = rowItems.item.moreInfoKey
-	if (isRegion) {
-		const regionPhases = rowItems.item.location.value.vaccination.content.phases
-		const currPhase = regionPhases?.find(
-			(phase: { id: any }) => phase.id === rowItems.item.groupId
+	let moreInfoKey = rowItem.moreInfoKey
+
+	const locationPhases = rowItem.location.vaccination.content.phases
+	const currentPhase = locationPhases?.find(
+		(phase: { id: any }) => phase.id === rowItem.groupId
+	)
+	if (currentPhase) {
+		const currQualification = currentPhase?.qualifications.find(
+			(qualification: { question: any }) =>
+				qualification.question === rowItem.qualifierId
 		)
-		if (currPhase) {
-			const currQualification = currPhase?.qualifications.find(
-				(qualification: { question: any }) =>
-					qualification.question === rowItems.item.qualifierId
-			)
-			if (currQualification) {
-				overrideIconFlag = true
-				moreInfoKey = currQualification.moreInfoText
-			}
+		if (currQualification) {
+			overrideIconFlag = true
+			moreInfoKey = currQualification.moreInfoText
 		}
 	}
 
-	const [moreInfoText, setMoreInfoText] = useState<string>('')
-
-	const [moreInfoUrl, setMoreInfoUrl] = useState<string>(
-		getPhaseMoreInfoUrl(isRegion, rowItems)
-	)
-
-	const changedItem = useRef<any>(rowItems.item)
-	changedItem.current.moreInfoContent = moreInfoText
-
-	useEffect(() => {
-		if (currentLanguage) {
-			setMoreInfoText(getPhaseMoreInfoTextByKey(selectedState, moreInfoKey))
-		}
-	}, [currentLanguage, selectedState, moreInfoKey])
-
-	useEffect(() => {
-		if (globalFileData) {
-			phaseQualifierItems.current = getPhaseQualifierItems(selectedState)
+    useEffect(() => {
+		if (currentLocation) {
+			phaseQualifierItems.current = getPhaseQualifierItems(currentLocation)
 			setFilteredQualifierItems(
-				getPhaseQualifierItemsByKey(selectedState, rowItems.item.tagKey)
+				getPhaseQualifierItemsByKey(currentLocation, rowItem.tagKey)
 			)
 		}
 	}, [
-		globalFileData,
-		repoFileData,
 		phaseQualifierItems,
-		selectedState,
-		rowItems,
+		currentLocation,
+		rowItem,
 	])
+
+	useEffect(() => {
+		if (currentLanguage) {
+			setMoreInfoText(getPhaseMoreInfoTextByKey(currentLocation, moreInfoKey))
+		}
+	}, [currentLanguage, currentLocation, moreInfoKey])
 
 	const onTagChange = useCallback(
 		(_event, option) => {
@@ -115,7 +94,7 @@ export default observer(function PhaseQualiferForm(
 			changedItem.current = {
 				...changedItem.current,
 				...{
-					key: `${rowItems.item.groupId}-c19.eligibility.question/${option.key}`,
+					key: `${rowItem.groupId}-c19.eligibility.question/${option.key}`,
 					tagKey: option.key,
 					qualifierId: undefined,
 					text: '',
@@ -124,7 +103,7 @@ export default observer(function PhaseQualiferForm(
 				},
 			}
 		},
-		[phaseQualifierItems, rowItems]
+		[phaseQualifierItems, rowItem]
 	)
 
 	const onQualifierChange = useCallback(
@@ -141,9 +120,9 @@ export default observer(function PhaseQualiferForm(
 					moreInfoContent: '',
 				},
 			}
-			onRowItemQualifierChange?.(changedItem.current, rowItems.item)
+			onRowItemQualifierChange?.(changedItem.current, rowItem)
 		},
-		[onRowItemQualifierChange, rowItems]
+		[onRowItemQualifierChange, rowItem]
 	)
 
 	const onMoreInfoTextChange = useCallback(
@@ -185,16 +164,16 @@ export default observer(function PhaseQualiferForm(
 				/>
 				<Dropdown
 					options={phaseTagItems.current}
-					defaultSelectedKey={rowItems.item.tagKey}
+					defaultSelectedKey={rowItem.tagKey}
 					placeholder={t('PhaseQualifierForm.Tag.placeholder')}
 					className="tagDropdown"
 					styles={{ root: { minWidth: 250 } }}
 					onChange={onTagChange}
 				/>
 				<Dropdown
-					title={rowItems.item.text}
+					title={rowItem.text}
 					options={filteredQualifierItems}
-					defaultSelectedKey={rowItems.item.qualifierId}
+					defaultSelectedKey={rowItem.qualifierId}
 					placeholder={t('PhaseQualifierForm.Qualifier.placeholder')}
 					styles={{ root: { width: '100%', minWidth: 0 } }}
 					onChange={onQualifierChange}
@@ -209,12 +188,12 @@ export default observer(function PhaseQualiferForm(
 							{
 								key: 'removeRow',
 								text: t('PhaseQualifierForm.FormButtons.remove'),
-								onClick: () => onRowItemRemove?.(rowItems.item, groupKey),
+								onClick: () => onRowItemRemove?.(rowItem, groupKey),
 							},
-							{
-								key: 'details',
-								text: t('PhaseQualifierForm.FormButtons.details'),
-							},
+							// {
+							// 	key: 'details',
+							// 	text: t('PhaseQualifierForm.FormButtons.details'),
+							// },
 						],
 					}}
 					title={t('PhaseQualifierForm.FormButtons.more')}
@@ -230,14 +209,14 @@ export default observer(function PhaseQualiferForm(
 					styles={{ root: { width: 'calc(100% - 32px)', padding: '5px 0' } }}
 					value={moreInfoText}
 					onChange={onMoreInfoTextChange}
-					onBlur={() => onRowItemTextChange?.(changedItem.current, rowItems.item)}
+					onBlur={() => onRowItemTextChange?.(changedItem.current, rowItem)}
 				/>
 				<TextField
 					placeholder={t('PhaseQualifierForm.MoreInfoUrl.placeholder')}
 					styles={{ root: { width: 'calc(100% - 32px)', padding: '5px 0' } }}
 					value={moreInfoUrl}
 					onChange={onMoreInfoUrlChange}
-					onBlur={() => onRowItemTextChange?.(changedItem.current, rowItems.item)}
+					onBlur={() => onRowItemTextChange?.(changedItem.current, rowItem)}
 				/>
 			</div>
 		</div>
