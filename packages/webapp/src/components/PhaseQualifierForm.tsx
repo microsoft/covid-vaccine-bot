@@ -21,7 +21,7 @@ import {
 	getPhaseMoreInfoUrl
 } from '../selectors/phaseSelectors'
 
-import './PhaseQualifierForm'
+import './PhaseQualifierForm.scss'
 
 export interface PhaseQualifierFormProps {
     currentLocation: any
