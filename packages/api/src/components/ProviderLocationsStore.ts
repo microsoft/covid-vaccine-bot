@@ -18,6 +18,16 @@ const FIND_PROVIDERS_IN_RADIUS = `
 			{ "type": "Point", "coordinates": [@lon, @lat]}
 		) < @radiusMeters
 `
+const FIND_PROVIDERS_IN_RADIUS_WITH_STOCK = `
+	select * 
+	from providers p 
+	where 
+		ST_DISTANCE(
+			p.position, 
+			{ "type": "Point", "coordinates": [@lon, @lat]}
+		) < @radiusMeters AND
+	  p.any_in_stock=true
+`
 
 export class ProviderLocationsStore {
 	public constructor(private container: Container) {}
@@ -25,13 +35,17 @@ export class ProviderLocationsStore {
 	public async getProviderLocations(
 		lat: number,
 		lon: number,
-		radiusMiles: number
+		radiusMiles: number,
+		inStockOnly: boolean
 	): Promise<ProviderLocation[]> {
+		const query = inStockOnly
+			? FIND_PROVIDERS_IN_RADIUS_WITH_STOCK
+			: FIND_PROVIDERS_IN_RADIUS
 		const queryPos = { lat, lon }
 		const radiusMeters = radiusMiles * MILES_TO_METERS
 		const response = await this.container.items.query<ProviderLocation>(
 			{
-				query: FIND_PROVIDERS_IN_RADIUS,
+				query,
 				parameters: [
 					{ name: '@lat', value: lat },
 					{ name: '@lon', value: lon },
