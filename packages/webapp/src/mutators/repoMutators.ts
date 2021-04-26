@@ -185,6 +185,14 @@ export const setLocationData = mutatorAction(
 			currLocation.info.content = data.info.content
 			currLocation.strings.content = data.strings.content
 			currLocation.vaccination.content = data.vaccination.content
+
+			const initCurrLocation = pathFind(store.initRepoFileData, pathArray)
+
+			console.log('init curr loc: ', initCurrLocation, data)
+			//initCurrLocation = data
+			//initCurrLocation.info.content = data.info.content
+			//initCurrLocation.strings.content = data.strings.content
+			//initCurrLocation.vaccination.content = data.vaccination.content
 		}
 	}
 )
@@ -326,6 +334,7 @@ export const deleteLocation = mutatorAction(
 	'deleteLocation',
 	(locationData: any, isRegion?: boolean, selectedState?: any) => {
 		const store = getAppStore()
+		store.pendingChanges = true
 
 		const pathArray = locationData.value.info.path.split("/")
 		pathArray.splice(-1,1)
@@ -588,9 +597,11 @@ export const addQualifier = mutatorAction('addQualifier', ({currentLocation, pha
 		const phaseGroupIndex = currLocation.vaccination.content.phases.findIndex(
 						(phase: any) => phase.id === phaseGroupId)
 
-		const phaseQualifiers = clone(currLocation.vaccination.content.phases[phaseGroupIndex].qualifications)
+		//const phaseQualifiers = clone(currLocation.vaccination.content.phases[phaseGroupIndex].qualifications)
+		const phaseQualifiers = currLocation.vaccination.content.phases[phaseGroupIndex].qualifications
 		phaseQualifiers.push({question: qualifierId})
 
+		//console.log(phaseQualifiers, currLocation)
 		store.repoFileData = { ...store.repoFileData }
 	}
 })
