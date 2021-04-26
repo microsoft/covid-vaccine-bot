@@ -80,6 +80,10 @@ export default observer(function LocationForm(props: LocationFormProp) {
 	const fieldChanges = useRef<any>(formData)
 	const regionTypeOptions = [
 		{
+			key: 'country',
+			text: t('LocationForm.regionTypeOptions.country'),
+		},
+		{
 			key: 'state',
 			text: t('LocationForm.regionTypeOptions.state'),
 		},

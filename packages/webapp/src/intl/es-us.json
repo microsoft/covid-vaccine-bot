@@ -86,6 +86,7 @@
 		},
 		"regionTypeOptions": {
 			"placeholder": "Tipo de región",
+			"country": "País",
 			"state": "Expresar",
 			"territory": "Territorio",
 			"tribal_land": "Tierra tribal",

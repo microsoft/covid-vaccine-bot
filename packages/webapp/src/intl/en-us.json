@@ -85,6 +85,7 @@
 		},
 		"regionTypeOptions": {
 			"placeholder": "Region type",
+			"country": "Country",
 			"state": "State",
 			"territory": "Territory",
 			"tribal_land": "Tribal land",
