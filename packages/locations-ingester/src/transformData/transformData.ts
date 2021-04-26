@@ -2,18 +2,17 @@
  * Copyright (c) Microsoft. All rights reserved.
  * Licensed under the MIT license. See LICENSE file in the project.
  */
+/* eslint-disable @typescript-eslint/no-var-requires */
 import fs from 'fs'
 import path from 'path'
 import parse from 'csv-parse/lib/sync'
 
-// Require `PhoneNumberFormat`.
-const PNF = require('google-libphonenumber').PhoneNumberFormat
-// Get an instance of `PhoneNumberUtil`.
-const phoneUtil = require('google-libphonenumber').PhoneNumberUtil.getInstance()
-
 import { CACHE_DIR } from '../cache'
 import { getFiles, getLatestFile } from '../io'
 import { ProviderLocation, ProviderLocationCsv } from '../types'
+
+const PNF = require('google-libphonenumber').PhoneNumberFormat
+const phoneUtil = require('google-libphonenumber').PhoneNumberUtil.getInstance()
 
 const BOOLEAN_COLS: Record<string, boolean> = {
 	insurance_accepted: true,
