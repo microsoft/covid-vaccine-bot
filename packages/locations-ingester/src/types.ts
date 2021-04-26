@@ -4,6 +4,7 @@
  */
 export interface ProviderLocation {
 	provider_id: string
+	provider_notes: string
 	location: {
 		name: string
 		store_no: number
@@ -39,7 +40,6 @@ export type GeoPoint = [number, number]
 
 export interface MedInfo {
 	name: string
-	provider_notes: string
 	ndc: string
 	in_stock: boolean
 	supply_level: number

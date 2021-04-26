@@ -5,9 +5,9 @@
 import fs from 'fs'
 import path from 'path'
 import parse from 'csv-parse/lib/sync'
-import { ProviderLocation, ProviderLocationCsv } from '../types'
-import { getFiles, getLatestFile } from '../io'
 import { CACHE_DIR } from '../cache'
+import { getFiles, getLatestFile } from '../io'
+import { ProviderLocation, ProviderLocationCsv } from '../types'
 
 const BOOLEAN_COLS: Record<string, boolean> = {
 	insurance_accepted: true,
@@ -73,6 +73,7 @@ export async function transformData(): Promise<void> {
 				friday: row.friday_hours,
 				saturday: row.saturday_hours,
 			},
+			provider_notes: row.provider_notes,
 			web_address: row.web_address,
 			pre_screen: row.pre_screen,
 			insurance_accepted: row.insurance_accepted,
@@ -81,7 +82,6 @@ export async function transformData(): Promise<void> {
 			meds: [
 				{
 					name: row.med_name,
-					provider_notes: row.provider_notes,
 					ndc: row.ndc,
 					in_stock: row.in_stock,
 					supply_level: row.supply_level,
@@ -98,8 +98,9 @@ export async function transformData(): Promise<void> {
 			// Add the new vaccine record
 			existingRecord.meds.push(rec.meds[0])
 			// add the any_in_stock field
-			existingRecord.any_in_stock =
-				existingRecord.any_in_stock || rec.any_in_stock
+			const anyInStock = existingRecord.any_in_stock || row.in_stock
+			console.log('AIS', anyInStock)
+			existingRecord.any_in_stock = anyInStock
 		}
 	})
 
