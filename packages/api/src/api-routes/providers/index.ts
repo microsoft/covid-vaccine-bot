@@ -10,6 +10,7 @@ export const GET: Operation = [
 	async (req: Request, res: Response) => {
 		try {
 			const [lon, lat] = await queryArgUtil.unpackLocation(req.query)
+			const inStock: boolean = ((req.query.inStock as any) as boolean) || false
 			const radius = (req.query.radius as any) as number
 			if (radius > 100) {
 				res.status(400).json({ message: 'radius must be <= 100 miles' })
@@ -17,7 +18,8 @@ export const GET: Operation = [
 			const providers = await providerLocationsStore.getProviderLocations(
 				lat,
 				lon,
-				radius
+				radius,
+				inStock
 			)
 			res.json(providers)
 		} catch (err) {
@@ -36,6 +38,13 @@ GET.apiDoc = {
 			name: 'postalCode',
 			description: 'the postalCode code of the search center',
 			type: 'string',
+			required: false,
+		},
+		{
+			in: 'query',
+			name: 'inStock',
+			description: 'if true, only find locations that have stock available',
+			type: 'boolean',
 			required: false,
 		},
 		{

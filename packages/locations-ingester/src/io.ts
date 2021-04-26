@@ -7,8 +7,11 @@ import path from 'path'
 import { CACHE_DIR } from './cache'
 import { ProviderLocation } from './types'
 
+export function getFiles(): string[] {
+	return fs.readdirSync(CACHE_DIR)
+}
 export function getLatestFilePath() {
-	const files = fs.readdirSync(CACHE_DIR)
+	const files = getFiles().filter((t) => t.endsWith('.csv'))
 	const file = getLatestFile(files)
 	return path.join(CACHE_DIR, file)
 }
@@ -49,12 +52,4 @@ export function getJsonRecords(file: string): ProviderLocation[] {
 				}
 			})
 		)
-}
-
-export function getLatestJsonRecords(): ProviderLocation[] {
-	return getJsonRecords(getLatestFilePath())
-}
-
-export function getLatestGeoJsonRecords(): ProviderLocation[] {
-	return getJsonRecords(getLatestFilePath().replace('.csv', '.geocoded.json'))
 }
