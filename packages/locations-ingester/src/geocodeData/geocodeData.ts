@@ -6,7 +6,7 @@ import fs from 'fs'
 import axios from 'axios'
 import config from 'config'
 import _ from 'lodash'
-import { getLatestFilePath, getLatestJsonRecords } from '../io'
+import { getJsonRecords, getLatestFilePath } from '../io'
 import { GeoPoint, ProviderLocation } from '../types'
 import { GeoCache, readGeocodeCache, writeGeocodeCache } from './geocodeCache'
 
@@ -14,13 +14,18 @@ const MAPS_KEY = config.get<string>('azureMaps.key')
 const API_URL = 'https://atlas.microsoft.com/search/address/json'
 const BATCH_SIZE = 5
 
+function getSourceFile(): string {
+	const filePath = getLatestFilePath()
+	return filePath.replace('.csv', '.json')
+}
 /**
  * Collates records in the given CSV into the target JSON output format
  * @param file The CSV File path
  */
 export async function geocodeData(): Promise<void> {
-	console.log('geocoding data')
-	const records = getLatestJsonRecords()
+	const filePath = getSourceFile()
+	console.log(`geocoding data in ${filePath}`)
+	const records = getJsonRecords(filePath)
 	const chunks = _.chunk(records, BATCH_SIZE)
 	const geoCache = readGeocodeCache()
 	console.log(

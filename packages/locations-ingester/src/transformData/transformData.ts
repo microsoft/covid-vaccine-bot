@@ -3,8 +3,11 @@
  * Licensed under the MIT license. See LICENSE file in the project.
  */
 import fs from 'fs'
+import path from 'path'
 import parse from 'csv-parse/lib/sync'
 import { ProviderLocation, ProviderLocationCsv } from '../types'
+import { getFiles, getLatestFile } from '../io'
+import { CACHE_DIR } from '../cache'
 
 const BOOLEAN_COLS: Record<string, boolean> = {
 	insurance_accepted: true,
@@ -19,11 +22,16 @@ const NUMBER_COLS: Record<string, boolean> = {
 	loc_store_no: true,
 }
 
+function getSourceFile(): string {
+	const files = getFiles().filter((f) => f.endsWith('.csv'))
+	return path.join(CACHE_DIR, getLatestFile(files))
+}
 /**
  * Collates records in the given CSV into the target JSON output format
  * @param file The CSV File path
  */
-export async function transformData(file: string): Promise<void> {
+export async function transformData(): Promise<void> {
+	const file = getSourceFile()
 	console.log('transforming CSV data to JSON', file)
 	const input = fs.readFileSync(file, { encoding: 'utf-8' })
 	const records: ProviderLocationCsv[] = parse(input, {
@@ -69,6 +77,7 @@ export async function transformData(file: string): Promise<void> {
 			pre_screen: row.pre_screen,
 			insurance_accepted: row.insurance_accepted,
 			walkins_accepted: row.walkins_accepted,
+			any_in_stock: row.in_stock,
 			meds: [
 				{
 					name: row.med_name,
@@ -84,7 +93,13 @@ export async function transformData(file: string): Promise<void> {
 		if (!recordsById.has(rec.provider_id)) {
 			recordsById.set(rec.provider_id, rec)
 		} else {
-			recordsById.get(rec.provider_id)!.meds.push(rec.meds[0])
+			const existingRecord = recordsById.get(rec.provider_id)!
+
+			// Add the new vaccine record
+			existingRecord.meds.push(rec.meds[0])
+			// add the any_in_stock field
+			existingRecord.any_in_stock =
+				existingRecord.any_in_stock || rec.any_in_stock
 		}
 	})
 

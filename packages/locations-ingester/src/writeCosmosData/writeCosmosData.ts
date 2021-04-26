@@ -5,15 +5,20 @@
 import { Container } from '@azure/cosmos'
 import _ from 'lodash'
 import { getCosmosContainer } from '../cosmos'
-import { getLatestGeoJsonRecords } from '../io'
+import { getJsonRecords, getLatestFilePath } from '../io'
 import { ProviderLocation } from '../types'
 
 const CHUNK_SIZE = 25
 
+export function getFilePath(): string {
+	return getLatestFilePath().replace('.csv', '.geocoded.json')
+}
+
 export async function writeCosmosData() {
-	console.log('writing data to cosmosdb')
+	const filePath = getFilePath()
+	console.log(`writing data to cosmosdb from ${filePath}`)
 	const container = getCosmosContainer()
-	const data = getLatestGeoJsonRecords()
+	const data = getJsonRecords(filePath)
 	console.log(`writing provider data: ${data.length} records`)
 	const chunks = _.chunk(data, CHUNK_SIZE)
 

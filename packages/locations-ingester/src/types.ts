@@ -27,6 +27,7 @@ export interface ProviderLocation {
 		saturday: string
 		sunday: string
 	}
+	any_in_stock: boolean
 	meds: MedInfo[]
 	web_address: string
 	pre_screen: string
