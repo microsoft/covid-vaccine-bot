@@ -5,6 +5,12 @@
 import fs from 'fs'
 import path from 'path'
 import parse from 'csv-parse/lib/sync'
+
+// Require `PhoneNumberFormat`.
+const PNF = require('google-libphonenumber').PhoneNumberFormat
+// Get an instance of `PhoneNumberUtil`.
+const phoneUtil = require('google-libphonenumber').PhoneNumberUtil.getInstance()
+
 import { CACHE_DIR } from '../cache'
 import { getFiles, getLatestFile } from '../io'
 import { ProviderLocation, ProviderLocationCsv } from '../types'
@@ -52,12 +58,22 @@ export async function transformData(): Promise<void> {
 
 	const recordsById = new Map<string, ProviderLocation>()
 	records.forEach(({ provider_location_guid: provider_id, ...row }) => {
+		let phone = row.loc_phone
+		try {
+			if (phone) {
+				const phoneParsed = phoneUtil.parseAndKeepRawInput(row.loc_phone, 'US')
+				phone = phoneUtil.format(phoneParsed, PNF.NATIONAL)
+			}
+		} catch (err) {
+			console.log('error parsing raw phone number', row.loc_phone)
+		}
+
 		const rec: ProviderLocation = {
 			provider_id,
 			location: {
 				name: row.loc_name,
 				store_no: row.loc_store_no,
-				phone: row.loc_phone,
+				phone,
 				street1: row.loc_admin_street1,
 				street2: row.loc_admin_street2,
 				city: row.loc_admin_city,
@@ -99,7 +115,6 @@ export async function transformData(): Promise<void> {
 			existingRecord.meds.push(rec.meds[0])
 			// add the any_in_stock field
 			const anyInStock = existingRecord.any_in_stock || row.in_stock
-			console.log('AIS', anyInStock)
 			existingRecord.any_in_stock = anyInStock
 		}
 	})

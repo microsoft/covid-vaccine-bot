@@ -2136,6 +2136,7 @@ __metadata:
     batch2: ^2.0.0
     config: ^3.3.6
     csv-parse: ^4.15.4
+    google-libphonenumber: ^3.2.19
     lodash: ^4.17.21
     npm-run-all: ^4.1.5
     ts-node: ^9.1.1
@@ -11286,6 +11287,13 @@ fsevents@^1.2.7:
     jws: ^4.0.0
     lru-cache: ^6.0.0
   checksum: 2f54874f93b7c3e55da5391a3e1cda852ea75292f998c96704d7baf31c102cd3c3e9d125012983411de62a1b82baf6937dc7d97c3e60a501d3e4f05f9a34bca8
+  languageName: node
+  linkType: hard
+
+"google-libphonenumber@npm:^3.2.19":
+  version: 3.2.19
+  resolution: "google-libphonenumber@npm:3.2.19"
+  checksum: dad2b7ceb561ada326cebeff0edee917a828e608f952bbe686df14deebda90d9e54c89a1f0d1d043d1c766b80c8bce6238b1c55d89b54980dd185cfeec2107de
   languageName: node
   linkType: hard
 
