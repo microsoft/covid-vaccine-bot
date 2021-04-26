@@ -5,7 +5,6 @@
 import { persistCache, restoreCache } from './cache'
 import { fetchS3Data } from './fetchS3Data/fetchS3Data'
 import { geocodeData } from './geocodeData/geocodeData'
-import { getLatestFilePath } from './io'
 import { transformData } from './transformData/transformData'
 import { writeCosmosData } from './writeCosmosData/writeCosmosData'
 
@@ -13,7 +12,7 @@ export async function ingest() {
 	try {
 		await restoreCache()
 		await fetchS3Data()
-		await transformData(getLatestFilePath())
+		await transformData()
 		await geocodeData()
 		await writeCosmosData()
 	} catch (err) {
