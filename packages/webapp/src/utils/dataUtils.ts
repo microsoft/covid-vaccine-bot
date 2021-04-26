@@ -146,9 +146,9 @@ export const createLocationDataObj = (
 
 export const compare = function (a: any, b: any): any {
 	const result: {
-		different: string[]
-		missing_from_first: string[]
-		missing_from_second: string[]
+		different: any[]
+		missing_from_first: any[]
+		missing_from_second: any[]
 	} = {
 		different: [],
 		missing_from_first: [],
@@ -158,38 +158,38 @@ export const compare = function (a: any, b: any): any {
 	reduce(
 		a,
 		function (_result, value, key) {
-			if (b.hasOwnProperty(key)) {
+			if (b?.hasOwnProperty(key)) {
 				if (isEqual(value, b[key])) {
 					return _result
 				} else {
 					if (typeof a[key] != typeof {} || typeof b[key] != typeof {}) {
 						//dead end.
-						_result.different.push(key)
+						_result.different.push({[key]: value})
 						return _result
 					} else {
 						const deeper = compare(a[key], b[key])
 						_result.different = _result.different.concat(
 							map(deeper.different, (sub_path) => {
-								return key + '.' + sub_path
+								return {[key]: sub_path}
 							})
 						)
 
 						_result.missing_from_second = _result.missing_from_second.concat(
 							map(deeper.missing_from_second, (sub_path) => {
-								return key + '.' + sub_path
+								return {[key]: sub_path}
 							})
 						)
 
 						_result.missing_from_first = _result.missing_from_first.concat(
 							map(deeper.missing_from_first, (sub_path) => {
-								return key + '.' + sub_path
+								return {[key]: sub_path}
 							})
 						)
 						return _result
 					}
 				}
 			} else {
-				_result.missing_from_second.push(key)
+				_result.missing_from_second.push({[key]: value})
 				return _result
 			}
 		},
@@ -199,10 +199,10 @@ export const compare = function (a: any, b: any): any {
 	reduce(
 		b,
 		function (_result, value, key) {
-			if (a.hasOwnProperty(key)) {
+			if (a?.hasOwnProperty(key)) {
 				return _result
 			} else {
-				_result.missing_from_first.push(key)
+				_result.missing_from_first.push({[key]: value})
 				return _result
 			}
 		},

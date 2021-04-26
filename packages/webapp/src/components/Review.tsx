@@ -17,6 +17,7 @@ import { createPR } from '../actions/repoActions'
 import { getChanges } from '../selectors/changesSelectors'
 import { getText as t } from '../selectors/intlSelectors'
 import { getAppStore } from '../store/store'
+import { compare } from '../utils/dataUtils'
 
 import './Review.scss'
 
@@ -62,6 +63,11 @@ export default observer(function Review(props: ReviewProp) {
 	const fieldChanges = useRef<any>(formData)
 
 	useEffect(() => {
+		if (state.repoFileData && state.initRepoFileData) {
+			const res = compare(state.initRepoFileData, state.repoFileData)
+			console.log('compare', res)
+		}
+
 		try {
 			const { globalUpdates, locationUpdates, changesList } = getChanges()
 
