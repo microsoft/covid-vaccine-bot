@@ -2,13 +2,15 @@
  * Copyright (c) Microsoft. All rights reserved.
  * Licensed under the MIT license. See LICENSE file in the project.
  */
+import { cloneDeep as clone } from 'lodash'
 import { getAppStore } from '../store/store'
-import { getParentLocationVaccinationData } from './phaseSelectors'
-import {cloneDeep as clone} from 'lodash'
 import { pathFind } from '../utils/dataUtils'
+import { getParentLocationVaccinationData } from './phaseSelectors'
 
-export const getCustomString = (currentLocation: any, keyFilter: string): string => {
-
+export const getCustomString = (
+	currentLocation: any,
+	keyFilter: string
+): string => {
 	const { repoFileData, currentLanguage } = getAppStore()
 	const currentLocationRoot = currentLocation.info.path.split('/')[0]
 	const rootRepo = repoFileData[currentLocationRoot]
@@ -21,13 +23,13 @@ export const getCustomString = (currentLocation: any, keyFilter: string): string
 		: [...Object.entries(rootRepo.strings.content)]
 
 	const stringSearch = stringsList.find(
-				([key, _value]: [string, any]) => key.toLowerCase() === keyFilter.toLowerCase()
-		  )
-	if( stringSearch ){
+		([key, _value]: [string, any]) =>
+			key.toLowerCase() === keyFilter.toLowerCase()
+	)
+	if (stringSearch) {
 		return stringSearch[1][currentLanguage]
 	}
-	return ""
-
+	return ''
 }
 
 export const getStateCustomStrings = (
@@ -85,22 +87,26 @@ export const getCurrentLocationObj = (currentLocation: any): any => {
 	return pathFind(repoFileData, pathArray)
 }
 
-export const getLocationPhaseData = (currentLocation: any): {phases: any[], activePhase: string} => {
+export const getLocationPhaseData = (
+	currentLocation: any
+): { phases: any[]; activePhase: string } => {
 	const currLocation = currentLocation.value || currentLocation
 
 	let phases: any[] = currLocation.vaccination.content.phases
 	let activePhase: string = currLocation.vaccination.content.activePhase
 
 	if (!phases || phases.length === 0) {
-		const parentLocationVaccinationData = getParentLocationVaccinationData(currLocation)
+		const parentLocationVaccinationData = getParentLocationVaccinationData(
+			currLocation
+		)
 
 		if (parentLocationVaccinationData) {
 			phases = clone(parentLocationVaccinationData.content.phases)
 			activePhase = clone(parentLocationVaccinationData.content.activePhase)
 		} else {
-			return {phases: [], activePhase: '' }
+			return { phases: [], activePhase: '' }
 		}
 	}
 
-	return {phases, activePhase}
+	return { phases, activePhase }
 }

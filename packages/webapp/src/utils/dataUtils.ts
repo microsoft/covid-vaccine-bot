@@ -26,47 +26,50 @@ export const convertCSVDataToObj = (csvData: any): any => {
 	return returnObj
 }
 
-export const pathFind = (obj:any, path:string[]): any =>{
-    for (var i=0; i<path.length; i++){
-        obj = obj[path[i]];
-    };
-    return obj;
-};
+export const pathFind = (obj: any, path: string[]): any => {
+	for (let i = 0; i < path.length; i++) {
+		obj = obj[path[i]]
+	}
+	return obj
+}
 
-export const createLocationDataObj = (locationId:string, filePathArray:string[], locationData: any, currentLanguage:string): any => {
-
-	
-
-	const filePath = filePathArray.join("/")
-	const locationPathKey = filePathArray.join(".")
+export const createLocationDataObj = (
+	locationId: string,
+	filePathArray: string[],
+	locationData: any,
+	currentLanguage: string
+): any => {
+	const filePath = filePathArray.join('/')
+	const locationPathKey = filePathArray.join('.')
 
 	const locationNameKey = `name.${locationPathKey}`
 
-	const stringsContent = { [locationNameKey]:{ [currentLanguage]:locationData.details } }
-
-	let schedulingPhoneObj:any = {}
-
-	if(locationData?.schedulingPhone !== '' ){
-
-		const schedulingPhoneKey = `scheduling.phone.${locationNameKey}`
-		stringsContent[schedulingPhoneKey] = { [currentLanguage]: locationData.schedulingPhone }
-
-		schedulingPhoneObj= {
-							url: `tel:${locationData.schedulingPhone}`,
-							text: schedulingPhoneKey,
-						}
-
-		if(locationData.schedulingPhoneDesc !== ''){
-			const schedulingPhoneDescKey = `scheduling.phone.description.${locationNameKey}`
-			stringsContent[schedulingPhoneDescKey] = { [currentLanguage]: locationData.schedulingPhoneDesc }
-			schedulingPhoneObj['description'] = schedulingPhoneDescKey
-
-		}
-
+	const stringsContent = {
+		[locationNameKey]: { [currentLanguage]: locationData.details },
 	}
 
+	let schedulingPhoneObj: any = {}
 
-	
+	if (locationData?.schedulingPhone !== '') {
+		const schedulingPhoneKey = `scheduling.phone.${locationNameKey}`
+		stringsContent[schedulingPhoneKey] = {
+			[currentLanguage]: locationData.schedulingPhone,
+		}
+
+		schedulingPhoneObj = {
+			url: `tel:${locationData.schedulingPhone}`,
+			text: schedulingPhoneKey,
+		}
+
+		if (locationData.schedulingPhoneDesc !== '') {
+			const schedulingPhoneDescKey = `scheduling.phone.description.${locationNameKey}`
+			stringsContent[schedulingPhoneDescKey] = {
+				[currentLanguage]: locationData.schedulingPhoneDesc,
+			}
+			schedulingPhoneObj['description'] = schedulingPhoneDescKey
+		}
+	}
+
 	return {
 		info: {
 			content: {
@@ -84,13 +87,14 @@ export const createLocationDataObj = (locationId:string, filePathArray:string[],
 			type: 'info',
 			url: '',
 		},
-		strings: { content: stringsContent,
-				   name: `${locationId}.csv`,
-						path: `${filePath}/${locationId}.csv`,
-						sha: '',
-						type: locationId,
-						url: '',
-		 },
+		strings: {
+			content: stringsContent,
+			name: `${locationId}.csv`,
+			path: `${filePath}/${locationId}.csv`,
+			sha: '',
+			type: locationId,
+			url: '',
+		},
 		vaccination: {
 			content: {
 				phases: [],
@@ -108,19 +112,23 @@ export const createLocationDataObj = (locationId:string, filePathArray:string[],
 					}),
 					...(locationData?.info !== '' && {
 						info: {
-							url: locationData.info						},
+							url: locationData.info,
+						},
 					}),
 					...(locationData?.providers !== '' && {
 						providers: {
-							url: locationData.providers						},
+							url: locationData.providers,
+						},
 					}),
 					...(locationData?.workflow !== '' && {
 						workflow: {
-							url: locationData.workflow						},
+							url: locationData.workflow,
+						},
 					}),
 					...(locationData?.scheduling !== '' && {
 						scheduling: {
-							url: locationData.scheduling						},
+							url: locationData.scheduling,
+						},
 					}),
 					...(locationData?.schedulingPhone !== '' && {
 						scheduling_phone: schedulingPhoneObj,

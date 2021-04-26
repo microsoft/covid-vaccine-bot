@@ -2,7 +2,6 @@
  * Copyright (c) Microsoft. All rights reserved.
  * Licensed under the MIT license. See LICENSE file in the project.
  */
-import { observer } from 'mobx-react-lite'
 import {
 	IconButton,
 	Dropdown,
@@ -10,38 +9,50 @@ import {
 	TextField,
 	FontIcon,
 } from '@fluentui/react'
+import { observer } from 'mobx-react-lite'
 import { useCallback, useState, useRef, useEffect } from 'react'
 import { getText as t } from '../selectors/intlSelectors'
-import { getAppStore } from '../store/store'
 import {
 	getPhaseTagItems,
 	getPhaseQualifierItems,
 	getPhaseMoreInfoTextByKey,
 	getPhaseQualifierItemsByKey,
-	getPhaseMoreInfoUrl
+	getPhaseMoreInfoUrl,
 } from '../selectors/phaseSelectors'
+import { getAppStore } from '../store/store'
 
 import './PhaseQualifierForm.scss'
 
 export interface PhaseQualifierFormProps {
-    currentLocation: any
-    groupKey: any
-    rowItem: any
+	currentLocation: any
+	groupKey: any
+	rowItem: any
 	onRowItemRemove?: (item: any, groupKey: any) => void
 	onRowItemTextChange?: (item: any, prevItem: any) => void
 	onRowItemQualifierChange?: (item: any, prevItem: any) => void
 }
 
-export default observer(function PhaseQualifierForm(props: PhaseQualifierFormProps) {
-    const { currentLocation, groupKey, rowItem, onRowItemQualifierChange, onRowItemRemove, onRowItemTextChange } = props
-    const {	isEditable, currentLanguage } = getAppStore()
-    const phaseTagItems = useRef(getPhaseTagItems(currentLocation))
-    const phaseQualifierItems = useRef(getPhaseQualifierItems(currentLocation))
-    const [filteredQualifierItems, setFilteredQualifierItems] = useState<any[]>(
+export default observer(function PhaseQualifierForm(
+	props: PhaseQualifierFormProps
+) {
+	const {
+		currentLocation,
+		groupKey,
+		rowItem,
+		onRowItemQualifierChange,
+		onRowItemRemove,
+		onRowItemTextChange,
+	} = props
+	const { isEditable, currentLanguage } = getAppStore()
+	const phaseTagItems = useRef(getPhaseTagItems(currentLocation))
+	const phaseQualifierItems = useRef(getPhaseQualifierItems(currentLocation))
+	const [filteredQualifierItems, setFilteredQualifierItems] = useState<any[]>(
 		getPhaseQualifierItemsByKey(currentLocation, rowItem.tagKey)
 	)
 	const [moreInfoText, setMoreInfoText] = useState<string>('')
-	const [moreInfoUrl, setMoreInfoUrl] = useState<string>(getPhaseMoreInfoUrl(rowItem))
+	const [moreInfoUrl, setMoreInfoUrl] = useState<string>(
+		getPhaseMoreInfoUrl(rowItem)
+	)
 	const changedItem = useRef<any>(rowItem)
 	changedItem.current.moreInfoContent = moreInfoText
 
@@ -63,18 +74,14 @@ export default observer(function PhaseQualifierForm(props: PhaseQualifierFormPro
 		}
 	}
 
-    useEffect(() => {
+	useEffect(() => {
 		if (currentLocation) {
 			phaseQualifierItems.current = getPhaseQualifierItems(currentLocation)
 			setFilteredQualifierItems(
 				getPhaseQualifierItemsByKey(currentLocation, rowItem.tagKey)
 			)
 		}
-	}, [
-		phaseQualifierItems,
-		currentLocation,
-		rowItem,
-	])
+	}, [phaseQualifierItems, currentLocation, rowItem])
 
 	useEffect(() => {
 		if (currentLanguage) {

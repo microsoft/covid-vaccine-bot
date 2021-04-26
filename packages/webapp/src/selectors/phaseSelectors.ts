@@ -3,8 +3,8 @@
  * Licensed under the MIT license. See LICENSE file in the project.
  */
 import { getAppStore } from '../store/store'
-import { toProperCase } from '../utils/textUtils'
 import { pathFind } from '../utils/dataUtils'
+import { toProperCase } from '../utils/textUtils'
 
 const getCustomStrings = (currentLocation?: any, keyFilter?: string) => {
 	const { repoFileData, currentLanguage } = getAppStore()
@@ -12,12 +12,13 @@ const getCustomStrings = (currentLocation?: any, keyFilter?: string) => {
 	const rootRepo = repoFileData[currentLocationRoot]
 	const isCurrentLocationRoot = currentLocation.info.path === rootRepo.info.path
 
-	const qualifierList: any[] = currentLocation && !isCurrentLocationRoot
-		? [
-				...Object.entries(currentLocation.strings?.content ?? {}),
-				...Object.entries(rootRepo.strings.content),
-		  ]
-		: [...Object.entries(rootRepo.strings.content)]
+	const qualifierList: any[] =
+		currentLocation && !isCurrentLocationRoot
+			? [
+					...Object.entries(currentLocation.strings?.content ?? {}),
+					...Object.entries(rootRepo.strings.content),
+			  ]
+			: [...Object.entries(rootRepo.strings.content)]
 
 	const filteredList = keyFilter
 		? qualifierList.filter(([key, _value]: [string, any]) =>
@@ -34,18 +35,22 @@ const getCustomStrings = (currentLocation?: any, keyFilter?: string) => {
 		.sort((a, b) => (a.text > b.text ? 1 : -1))
 }
 
-export const getExactCustomStrings = (currentLocation?: any, keyFilter?: string) => {
+export const getExactCustomStrings = (
+	currentLocation?: any,
+	keyFilter?: string
+): any[] => {
 	const { repoFileData, currentLanguage } = getAppStore()
 	const currentLocationRoot = currentLocation.info.path.split('/')[0]
 	const rootRepo = repoFileData[currentLocationRoot]
 	const isCurrentLocationRoot = currentLocation.info.path === rootRepo.info.path
 
-	const qualifierList: any[] = currentLocation && !isCurrentLocationRoot
-		? [
-				...Object.entries(currentLocation.strings?.content ?? {}),
-				...Object.entries(rootRepo.strings.content),
-		  ]
-		: [...Object.entries(rootRepo.strings.content)]
+	const qualifierList: any[] =
+		currentLocation && !isCurrentLocationRoot
+			? [
+					...Object.entries(currentLocation.strings?.content ?? {}),
+					...Object.entries(rootRepo.strings.content),
+			  ]
+			: [...Object.entries(rootRepo.strings.content)]
 
 	const filteredList = keyFilter
 		? qualifierList.filter(
@@ -119,9 +124,7 @@ export const getPhaseMoreInfoTextByKey = (
 	return ''
 }
 
-export const getPhaseMoreInfoUrl = (
-	rowItem: any
-): string => {
+export const getPhaseMoreInfoUrl = (rowItem: any): string => {
 	const locationPhases = rowItem.location.vaccination.content.phases
 	const currPhase = locationPhases?.find(
 		(phase: { id: any }) => phase.id === rowItem.groupId
@@ -141,11 +144,11 @@ export const getPhaseMoreInfoUrl = (
 
 export const getParentLocationVaccinationData = (currentLocation: any): any => {
 	const { repoFileData } = getAppStore()
-	const pathArray = currentLocation.info.path.split("/")
+	const pathArray = currentLocation.info.path.split('/')
 	const currentLocationRoot = currentLocation.info.path.split('/')[0]
-	pathArray.splice(-1,1) //remove info.json
-	pathArray.splice(-2,2) //remove current location level
-	let vaccinationData = null
+	pathArray.splice(-1, 1) //remove info.json
+	pathArray.splice(-2, 2) //remove current location level
+	const vaccinationData = null
 
 	if (pathArray.length === 0) {
 		return repoFileData[currentLocationRoot].vaccination
@@ -158,8 +161,11 @@ export const getParentLocationVaccinationData = (currentLocation: any): any => {
 			return repoFileData[currentLocationRoot].vaccination
 		}
 
-		if (!parentLocation.vaccination?.content?.phases || parentLocation.vaccination.content.phases.length === 0) {
-			pathArray.splice(-2,2)
+		if (
+			!parentLocation.vaccination?.content?.phases ||
+			parentLocation.vaccination.content.phases.length === 0
+		) {
+			pathArray.splice(-2, 2)
 		} else {
 			return parentLocation.vaccination
 		}

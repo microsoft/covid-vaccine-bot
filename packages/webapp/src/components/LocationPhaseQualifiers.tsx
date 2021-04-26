@@ -2,28 +2,36 @@
  * Copyright (c) Microsoft. All rights reserved.
  * Licensed under the MIT license. See LICENSE file in the project.
  */
-import { observer } from 'mobx-react-lite'
-import { getText as t } from '../selectors/intlSelectors'
-import { useState, useEffect, useRef, useCallback } from 'react'
-import { getAppStore } from '../store/store'
-import {
-	FontIcon,
-	Modal
-} from '@fluentui/react'
-import PhaseQualifierForm from './PhaseQualifierForm'
+import { FontIcon, Modal } from '@fluentui/react'
 import { useBoolean } from '@uifabric/react-hooks'
-import PhaseForm from './PhaseForm'
-import { addQualifier, duplicatePhase, modifyMoreInfoLinks, modifyMoreInfoText, removePhase, removeQualifier, setActivePhase, updateQualifier } from '../mutators/repoMutators'
-import './Locations.scss'
+import { observer } from 'mobx-react-lite'
+import { useState, useEffect, useRef, useCallback } from 'react'
+import {
+	addQualifier,
+	duplicatePhase,
+	modifyMoreInfoLinks,
+	modifyMoreInfoText,
+	removePhase,
+	removeQualifier,
+	setActivePhase,
+	updateQualifier,
+} from '../mutators/repoMutators'
+import { getText as t } from '../selectors/intlSelectors'
 import { getLocationPhaseData } from '../selectors/locationSelectors'
+import { getAppStore } from '../store/store'
+import PhaseForm from './PhaseForm'
+import PhaseQualifierForm from './PhaseQualifierForm'
+import './Locations.scss'
 
 export interface LocationPhaseQualifiersProp {
 	currentLocation: any
 }
 
-export default observer(function LocationPhaseQualifiers(props: LocationPhaseQualifiersProp) {
+export default observer(function LocationPhaseQualifiers(
+	props: LocationPhaseQualifiersProp
+) {
 	const { currentLocation } = props
-	const {	currentLanguage, isEditable, repoFileData } = getAppStore()
+	const { currentLanguage, isEditable, repoFileData } = getAppStore()
 	const [phaseList, setPhaseList] = useState<any[]>([])
 	const groupToggleState = useRef<any[]>([])
 	const [
@@ -38,7 +46,10 @@ export default observer(function LocationPhaseQualifiers(props: LocationPhaseQua
 			const tempPhaseList: any[] = []
 			const { phases, activePhase } = getLocationPhaseData(currentLocation)
 
-			if (!currentLocation.vaccination.content?.phases || currentLocation.vaccination.content?.phases.length === 0) {
+			if (
+				!currentLocation.vaccination.content?.phases ||
+				currentLocation.vaccination.content?.phases.length === 0
+			) {
 				currentLocation.vaccination.content.phases = phases
 			}
 
@@ -50,9 +61,9 @@ export default observer(function LocationPhaseQualifiers(props: LocationPhaseQua
 				let isCollapsed = true
 
 				if (groupToggleState.current.length > 0) {
-						isCollapsed = !groupToggleState.current.includes(phase.id)
+					isCollapsed = !groupToggleState.current.includes(phase.id)
 				} else {
-						isCollapsed = true
+					isCollapsed = true
 				}
 
 				const isActivePhase = activePhase === phase.id
@@ -79,7 +90,8 @@ export default observer(function LocationPhaseQualifiers(props: LocationPhaseQua
 						currentLocation.strings &&
 						currentLocation.strings.content[keyId]
 					) {
-						label = currentLocation.strings.content[keyId][currentLanguage] || label
+						label =
+							currentLocation.strings.content[keyId][currentLanguage] || label
 					}
 					phaseItems.push({
 						key: phase.id + '-' + keyId,
@@ -111,7 +123,9 @@ export default observer(function LocationPhaseQualifiers(props: LocationPhaseQua
 
 			return group
 		})
-		groupToggleState.current = tempPhaseList.filter( group => !group.isCollapsed ).map(group => group.key)
+		groupToggleState.current = tempPhaseList
+			.filter((group) => !group.isCollapsed)
+			.map((group) => group.key)
 		setPhaseList(tempPhaseList)
 	}
 
@@ -129,7 +143,7 @@ export default observer(function LocationPhaseQualifiers(props: LocationPhaseQua
 
 		const tempPhaseList = phaseList.map((group) => {
 			if (group.key === phaseId) {
-					group.items.push(newItem)
+				group.items.push(newItem)
 			}
 
 			return group
@@ -137,19 +151,22 @@ export default observer(function LocationPhaseQualifiers(props: LocationPhaseQua
 		setPhaseList(tempPhaseList)
 	}
 
-	const onRemoveRowItem = (item: any, groupKey:any) => {
+	const onRemoveRowItem = (item: any, groupKey: any) => {
 		if (item.qualifierId !== 'c19.eligibility.question/new_qualifier') {
 			removeQualifier({
 				currentLocation,
 				phaseGroupId: groupKey,
-				qualifierId: item.qualifierId
+				qualifierId: item.qualifierId,
 			})
 		} else {
 			const tempPhaseList = phaseList.map((group) => {
 				if (group.key === groupKey) {
-					const newItemIndex = group.items.findIndex( (i:any) => i.qualifierId ===  'c19.eligibility.question/new_qualifier')
-					if(newItemIndex !== -1){
-						group.items.splice(newItemIndex,1)
+					const newItemIndex = group.items.findIndex(
+						(i: any) =>
+							i.qualifierId === 'c19.eligibility.question/new_qualifier'
+					)
+					if (newItemIndex !== -1) {
+						group.items.splice(newItemIndex, 1)
 					}
 				}
 
@@ -163,14 +180,14 @@ export default observer(function LocationPhaseQualifiers(props: LocationPhaseQua
 	const onRemovePhaseGroupClick = (phaseId: any) => {
 		removePhase({
 			currentLocation,
-			phaseId
+			phaseId,
 		})
 	}
 
 	const onSetActivePhase = (phaseId: string) => {
 		setActivePhase({
 			currentLocation,
-			phaseId
+			phaseId,
 		})
 	}
 
@@ -182,28 +199,31 @@ export default observer(function LocationPhaseQualifiers(props: LocationPhaseQua
 		[openDuplicateModal]
 	)
 
-	const onDuplicateSubmit = useCallback(({name}: {name: string}) => {
-		duplicatePhase({
-			currentLocation,
-			phaseId: selectedPhaseGroup.current.key,
-			name,
-		})
-		dismissDuplicateModal()
-	},[currentLocation, dismissDuplicateModal])
+	const onDuplicateSubmit = useCallback(
+		({ name }: { name: string }) => {
+			duplicatePhase({
+				currentLocation,
+				phaseId: selectedPhaseGroup.current.key,
+				name,
+			})
+			dismissDuplicateModal()
+		},
+		[currentLocation, dismissDuplicateModal]
+	)
 
 	const onChangeRowItemText = (currentItem: any, initItem: any) => {
 		modifyMoreInfoLinks({
-				currentLocation,
-				phaseGroupId: currentItem.groupId,
-				qualifierId: currentItem.qualifierId,
-				moreInfoUrl: currentItem.moreInfoUrl
-			})
+			currentLocation,
+			phaseGroupId: currentItem.groupId,
+			qualifierId: currentItem.qualifierId,
+			moreInfoUrl: currentItem.moreInfoUrl,
+		})
 
 		modifyMoreInfoText({
 			currentLocation,
 			phaseGroupId: currentItem.groupId,
 			qualifierId: currentItem.qualifierId,
-			moreInfoText: currentItem.moreInfoContent
+			moreInfoText: currentItem.moreInfoContent,
 		})
 	}
 
@@ -213,159 +233,160 @@ export default observer(function LocationPhaseQualifiers(props: LocationPhaseQua
 				currentLocation,
 				phaseGroupId: currentItem.groupId,
 				qualifierId: currentItem.qualifierId,
-				oldQualifierId: initItem.qualifierId
+				oldQualifierId: initItem.qualifierId,
 			})
 		} else {
 			addQualifier({
 				currentLocation,
 				phaseGroupId: currentItem.groupId,
-				qualifierId: currentItem.qualifierId
+				qualifierId: currentItem.qualifierId,
 			})
 		}
 	}
 
-    return (
-        <section className="LocationPhaseQualifiersComponent">
-            <div className="locationPhaseQualifiersSectionHeader">
-                Phase Qualifiers
-            </div>
-            <div className="phaseGridContainer">
-			{phaseList.length > 0
-				? phaseList.map((group: any, idx: number) => {
-						return (
-							<div key={`phasegroup-${idx}`}>
-								<div className="phaseGroupHeader">
-									<div
-										className="groupHeaderLabel"
-										onClick={() => {
-											onToggleCollapse(group)
-										}}
-									>
-										<FontIcon
-											iconName={
-												group.isCollapsed ? 'ChevronRight' : 'ChevronDown'
-											}
-											className="groupToggleIcon"
-										/>
-										{group.name ? (
-											<span>
-												{group.name} <small>({group.data.keyId})</small>
-											</span>
-										) : (
-											`Phase ${group.data.keyId}`
-										)}
-									</div>
-									<div className="groupHeaderButtons">
-										{isEditable ? (
-											<>
-												<div
-													className="addQualifierGroup"
-													onClick={() => onDuplicatePhaseClick(group)}
-												>
-													<FontIcon
-														iconName="DuplicateRow"
-														style={{ color: '#0078d4' }}
-													/>
-													{t('LocationsPhases.columns.duplicate')}
-												</div>
-												<div
-													className="removePhaseGroup"
-													onClick={() =>
-														onRemovePhaseGroupClick(group.data.keyId)
-													}
-												>
-													<FontIcon
-														iconName="Blocked2Solid"
-														style={{ color: '#d13438' }}
-													/>
-													{t('LocationsPhases.columns.remove')}
-												</div>
-												{group.data.isActive ? (
-													<div className="activeGroup">
-														<FontIcon
-															iconName="CircleFill"
-															style={{ color: '#00b7c3' }}
-														/>
-														{t('LocationsPhases.columns.active')}
-													</div>
-												) : (
-													<div
-														className="activeGroup"
-														onClick={() => onSetActivePhase(group.data.keyId)}
-													>
-														<FontIcon
-															iconName="CircleRing"
-															style={{ color: '#00b7c3' }}
-														/>
-														{t('LocationsPhases.columns.setActive')}
-													</div>
-												)}
-											</>
-										) : (
-											<>
-												{group.data.isActive && (
-													<div className="activeGroup">
-														<FontIcon
-															iconName="CircleFill"
-															style={{ color: '#00b7c3' }}
-														/>
-														{t('LocationsPhases.columns.active')}
-													</div>
-												)}
-											</>
-										)}
-									</div>
-								</div>
-								<div style={{ display: group.isCollapsed ? 'none' : 'block' }}>
-									{group.items.length > 0 && (
-										group.items.map((groupItem: any, idx: number) => {
-											return (
-                                                <PhaseQualifierForm
-													key={`${groupItem.key}_${idx}`}
-													currentLocation={currentLocation}
-													groupKey={group.key}
-													rowItem={groupItem}
-													onRowItemRemove={onRemoveRowItem}
-													onRowItemTextChange={onChangeRowItemText}
-													onRowItemQualifierChange={onChangeRowItemQualifier}
-												/>
-											)
-										})
-									)}
-									<div
-										className="phaseBottomGroup"
-										style={{marginTop: group.items.length > 0 ? 0 : '20px'}}
-									>
+	return (
+		<section className="LocationPhaseQualifiersComponent">
+			<div className="locationPhaseQualifiersSectionHeader">
+				Phase Qualifiers
+			</div>
+			<div className="phaseGridContainer">
+				{phaseList.length > 0
+					? phaseList.map((group: any, idx: number) => {
+							return (
+								<div key={`phasegroup-${idx}`}>
+									<div className="phaseGroupHeader">
 										<div
-											className="addQualifierGroup"
-											onClick={() => onAddQualifierClick(group.data.keyId)}
+											className="groupHeaderLabel"
+											onClick={() => {
+												onToggleCollapse(group)
+											}}
 										>
 											<FontIcon
-												iconName="CircleAdditionSolid"
-												style={{ color: '#0078d4' }}
+												iconName={
+													group.isCollapsed ? 'ChevronRight' : 'ChevronDown'
+												}
+												className="groupToggleIcon"
 											/>
-											{t('LocationsPhases.AddQualifierButton')}
+											{group.name ? (
+												<span>
+													{group.name} <small>({group.data.keyId})</small>
+												</span>
+											) : (
+												`Phase ${group.data.keyId}`
+											)}
+										</div>
+										<div className="groupHeaderButtons">
+											{isEditable ? (
+												<>
+													<div
+														className="addQualifierGroup"
+														onClick={() => onDuplicatePhaseClick(group)}
+													>
+														<FontIcon
+															iconName="DuplicateRow"
+															style={{ color: '#0078d4' }}
+														/>
+														{t('LocationsPhases.columns.duplicate')}
+													</div>
+													<div
+														className="removePhaseGroup"
+														onClick={() =>
+															onRemovePhaseGroupClick(group.data.keyId)
+														}
+													>
+														<FontIcon
+															iconName="Blocked2Solid"
+															style={{ color: '#d13438' }}
+														/>
+														{t('LocationsPhases.columns.remove')}
+													</div>
+													{group.data.isActive ? (
+														<div className="activeGroup">
+															<FontIcon
+																iconName="CircleFill"
+																style={{ color: '#00b7c3' }}
+															/>
+															{t('LocationsPhases.columns.active')}
+														</div>
+													) : (
+														<div
+															className="activeGroup"
+															onClick={() => onSetActivePhase(group.data.keyId)}
+														>
+															<FontIcon
+																iconName="CircleRing"
+																style={{ color: '#00b7c3' }}
+															/>
+															{t('LocationsPhases.columns.setActive')}
+														</div>
+													)}
+												</>
+											) : (
+												<>
+													{group.data.isActive && (
+														<div className="activeGroup">
+															<FontIcon
+																iconName="CircleFill"
+																style={{ color: '#00b7c3' }}
+															/>
+															{t('LocationsPhases.columns.active')}
+														</div>
+													)}
+												</>
+											)}
+										</div>
+									</div>
+									<div
+										style={{ display: group.isCollapsed ? 'none' : 'block' }}
+									>
+										{group.items.length > 0 &&
+											group.items.map((groupItem: any, idx: number) => {
+												return (
+													<PhaseQualifierForm
+														key={`${groupItem.key}_${idx}`}
+														currentLocation={currentLocation}
+														groupKey={group.key}
+														rowItem={groupItem}
+														onRowItemRemove={onRemoveRowItem}
+														onRowItemTextChange={onChangeRowItemText}
+														onRowItemQualifierChange={onChangeRowItemQualifier}
+													/>
+												)
+											})}
+										<div
+											className="phaseBottomGroup"
+											style={{ marginTop: group.items.length > 0 ? 0 : '20px' }}
+										>
+											<div
+												className="addQualifierGroup"
+												onClick={() => onAddQualifierClick(group.data.keyId)}
+											>
+												<FontIcon
+													iconName="CircleAdditionSolid"
+													style={{ color: '#0078d4' }}
+												/>
+												{t('LocationsPhases.AddQualifierButton')}
+											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-						)
-				  })
-				: null}
-		</div>
-		<Modal
-			isOpen={isDuplicateModalOpen}
-			isModeless={false}
-			isDarkOverlay={true}
-			isBlocking={false}
-		>
-			<PhaseForm
-				currentLocation={currentLocation}
-				duplicate={true}
-				onCancel={dismissDuplicateModal}
-				onSubmit={onDuplicateSubmit}
-			/>
-		</Modal>
-        </section>
-    )
+							)
+					  })
+					: null}
+			</div>
+			<Modal
+				isOpen={isDuplicateModalOpen}
+				isModeless={false}
+				isDarkOverlay={true}
+				isBlocking={false}
+			>
+				<PhaseForm
+					currentLocation={currentLocation}
+					duplicate={true}
+					onCancel={dismissDuplicateModal}
+					onSubmit={onDuplicateSubmit}
+				/>
+			</Modal>
+		</section>
+	)
 })

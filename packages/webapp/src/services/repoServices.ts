@@ -32,9 +32,10 @@ const createPath = (obj: any, pathInput: string, value: any = undefined) => {
 	}
 }
 
-
-
-export const gitFetch = async (url: string, options: any = {}) => {
+export const gitFetch = async (
+	url: string,
+	options: any = {}
+): Promise<any> => {
 	const { headers, json = true, ..._options } = options
 	const { accessToken } = getAppStore()
 	const apiUrl = url.startsWith('https://api.github.com/')
@@ -119,7 +120,9 @@ const commitChanges = async (
 		let skipFetch = false
 		for (const i in locationUpdates) {
 			const locationObj = locationUpdates[i].data
-			skipFetch = !locationObj.info?.path || committedDeletes.includes(locationObj.info.path)
+			skipFetch =
+				!locationObj.info?.path ||
+				committedDeletes.includes(locationObj.info.path)
 			const infoQuery = `contents/packages/plans/data/policies/${locationObj.info.path}`
 			const method = locationObj.delete ? 'DELETE' : 'PUT'
 			const message = locationObj.delete ? 'deleted' : 'updated'
@@ -136,7 +139,7 @@ const commitChanges = async (
 							createCSVDataString(locationObj.strings.content)
 						),
 				  }
-					
+
 			//Info
 			if (!skipFetch) {
 				locationResp = await gitFetch(infoQuery, {
@@ -179,7 +182,9 @@ const commitChanges = async (
 				const regionKeys = Object.keys(locationObj.regions)
 				for (const key of regionKeys) {
 					const regionObj = locationObj.regions[key]
-					const skipRegionFetch = !regionObj.info?.path || committedDeletes.includes(regionObj.info.path)
+					const skipRegionFetch =
+						!regionObj.info?.path ||
+						committedDeletes.includes(regionObj.info.path)
 
 					//Info
 					if (!skipRegionFetch) {
@@ -249,8 +254,10 @@ export const repoServices = async (
 				return await gitFetch(`branches?per_page=100`)
 
 			case 'getCommits':
-				console.log('extraData', extraData);
-				return await gitFetch(`commits?since=${extraData.since}&sha=${extraData.sha}`)
+				console.log('extraData', extraData)
+				return await gitFetch(
+					`commits?since=${extraData.since}&sha=${extraData.sha}`
+				)
 
 			case 'getUserWorkingBranches':
 				const userPrs = await repoServices('getUserPullRequests')
@@ -309,15 +316,13 @@ export const repoServices = async (
 
 						switch (fileName.split('.')[1].toLowerCase()) {
 							case 'json':
-
-
 								fileObj[fileType] = {
 									name: fileName,
 									type: fileType,
 									sha: element.sha,
 									url: element.url,
 									path: element.path,
-									content: null
+									content: null,
 								}
 								break
 							case 'md':
@@ -327,7 +332,8 @@ export const repoServices = async (
 									sha: element.sha,
 									url: element.url,
 									path: element.path,
-									content: null }
+									content: null,
+								}
 
 								break
 							case 'csv':
@@ -337,7 +343,7 @@ export const repoServices = async (
 									sha: element.sha,
 									url: element.url,
 									path: element.path,
-									content: null
+									content: null,
 								}
 
 								break
@@ -349,29 +355,24 @@ export const repoServices = async (
 					}
 				})
 
-				for( const element of Object.keys(stateData)) {
+				for (const element of Object.keys(stateData)) {
 					const location = stateData[element]
 
-					const infoData = await getContent(
-						String(location.info.url),
-						String(state.accessToken)
-					)
+					const [infoData, stringsData, vaccinationData] = await Promise.all([
+						gitFetch(String(location.info.url)),
+						gitFetch(String(location.strings.url)),
+						gitFetch(String(location.vaccination.url)),
+					])
 
-					const stringsData = await getContent(
-						String(location.strings.url),
-						String(state.accessToken)
-					)
-
-					const vaccinationData = await getContent(
-						String(location.vaccination.url),
-						String(state.accessToken)
-					)
-
+					debugger
 
 					location.info.content = JSON.parse(b64_to_utf8(infoData.content))
-					location.strings.content = convertCSVDataToObj(parse(b64_to_utf8(stringsData.content), { columns: true }))
-					location.vaccination.content = JSON.parse(b64_to_utf8(vaccinationData.content))
-
+					location.strings.content = convertCSVDataToObj(
+						parse(b64_to_utf8(stringsData.content), { columns: true })
+					)
+					location.vaccination.content = JSON.parse(
+						b64_to_utf8(vaccinationData.content)
+					)
 				}
 
 				return stateData
@@ -379,47 +380,47 @@ export const repoServices = async (
 			case 'getLocationData':
 				const location = extraData
 
-				const pathArray = location.info.path.split("/")
-				pathArray.splice(-1,1)
-				const pathStr = pathArray.join("/")
+				const pathArray = location.info.path.split('/')
+				pathArray.splice(-1, 1)
+				const pathStr = pathArray.join('/')
 
-				if(location.info){
-
-						const infoData = await getContent(
+				if (location.info) {
+					const infoData = await getContent(
 						String(location.info.url),
 						String(state.accessToken)
 					)
 
 					location.info.content = JSON.parse(b64_to_utf8(infoData.content))
+				}
 
-				} 
-
-				if(location.strings){
-				
+				if (location.strings) {
 					const stringsData = await getContent(
 						String(location.strings.url),
 						String(state.accessToken)
 					)
 
-					location.strings.content = convertCSVDataToObj(parse(b64_to_utf8(stringsData.content), { columns: true }))
-
+					location.strings.content = convertCSVDataToObj(
+						parse(b64_to_utf8(stringsData.content), { columns: true })
+					)
 				} else {
 					location.strings = {
-											name: location.info.content.id+'.csv',
-											path: `${pathStr}/${location.info.content.id}.csv`,
-											sha: '',
-											type: location.info.content.id ,
-											url: '', 
-											content: {} 
-										}
+						name: location.info.content.id + '.csv',
+						path: `${pathStr}/${location.info.content.id}.csv`,
+						sha: '',
+						type: location.info.content.id,
+						url: '',
+						content: {},
+					}
 				}
 
-				if(location.vaccination){
+				if (location.vaccination) {
 					const vaccinationData = await getContent(
 						String(location.vaccination.url),
 						String(state.accessToken)
-						)
-						location.vaccination.content = JSON.parse(b64_to_utf8(vaccinationData.content))
+					)
+					location.vaccination.content = JSON.parse(
+						b64_to_utf8(vaccinationData.content)
+					)
 				}
 
 				return location

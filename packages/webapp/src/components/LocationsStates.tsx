@@ -18,10 +18,8 @@ import {
 	updateLocationData,
 	deleteLocation,
 } from '../mutators/repoMutators'
-import {
-	getCustomString,
-} from '../selectors/locationSelectors'
 import { getText as t } from '../selectors/intlSelectors'
+import { getCustomString } from '../selectors/locationSelectors'
 import { getAppStore } from '../store/store'
 import { toProperCase } from '../utils/textUtils'
 import DeleteLocationForm from './DeleteLocationForm'
@@ -31,7 +29,7 @@ import './Locations.scss'
 
 export interface LocationsStatesProp {
 	locationList: any
-	currentLocation:any
+	currentLocation: any
 	onSelectedItem: (item: any) => void
 }
 
@@ -84,19 +82,25 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 	useEffect(() => {
 		if (locationList) {
 			const nextFilteredStateList: any[] = []
-			Object.entries(locationList).forEach(([locKey, locDetails]: [string, any]) => {
-				const locationName = getCustomString(locDetails, locDetails.info.content.name) || toProperCase(locDetails.info.content.name)
-				nextFilteredStateList.push({
-					key: locKey,
-					text: locationName,
-					regions: locDetails?.regions ? Object.keys(locDetails.regions).length : 0,
-					value: locDetails
-				})
-			})
+			Object.entries(locationList).forEach(
+				([locKey, locDetails]: [string, any]) => {
+					const locationName =
+						getCustomString(locDetails, locDetails.info.content.name) ||
+						toProperCase(locDetails.info.content.name)
+					nextFilteredStateList.push({
+						key: locKey,
+						text: locationName,
+						regions: locDetails?.regions
+							? Object.keys(locDetails.regions).length
+							: 0,
+						value: locDetails,
+					})
+				}
+			)
 			setFilteredStateList(nextFilteredStateList)
 			stateRepoFullList.current = nextFilteredStateList
 		}
-	},[locationList, state.currentLanguage, state.repoFileData ])
+	}, [locationList, state.currentLanguage, state.repoFileData])
 
 	const onStateFilter = useCallback(
 		(_event: any, text?: string) => {
@@ -124,8 +128,8 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 		(locationFormData, prevItem, initPath) => {
 			dismissLocationModal()
 
-			if(prevItem){
-				updateLocationData(locationFormData, initPath )
+			if (prevItem) {
+				updateLocationData(locationFormData, initPath)
 			} else {
 				addLocation(locationFormData, initPath)
 			}
@@ -144,7 +148,8 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 	const onLocationFormOpen = useCallback(
 		(item?: any) => {
 			selectedLocationItem.current = item?.value
-			selectedLocationPath.current = item?.value.info.path ?? currentLocation?.info.path
+			selectedLocationPath.current =
+				item?.value.info.path ?? currentLocation?.info.path
 			openLocationModal()
 		},
 		[openLocationModal, currentLocation]
@@ -190,9 +195,7 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 		<>
 			<section className="LocationsStatesComponent">
 				<div className="locationsStatesSectionHeader">
-					<div>
-						{t('LocationsRegions.Sublocations.title')}
-					</div>
+					<div>{t('LocationsRegions.Sublocations.title')}</div>
 					{state.isEditable && (
 						<div
 							className="addLocationHeaderButton"
