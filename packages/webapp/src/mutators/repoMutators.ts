@@ -186,13 +186,21 @@ export const setLocationData = mutatorAction(
 			currLocation.strings.content = data.strings.content
 			currLocation.vaccination.content = data.vaccination.content
 
-			const initCurrLocation = pathFind(store.initRepoFileData, pathArray)
+			let initCurrLocation = pathFind(store.initRepoFileData, pathArray)
 
-			console.log('init curr loc: ', initCurrLocation, data)
-			//initCurrLocation = data
-			//initCurrLocation.info.content = data.info.content
-			//initCurrLocation.strings.content = data.strings.content
-			//initCurrLocation.vaccination.content = data.vaccination.content
+			initCurrLocation.info.content = data.info.content
+			initCurrLocation.vaccination.content = data.vaccination.content
+
+			if (!initCurrLocation.strings) {
+				initCurrLocation = {
+					...initCurrLocation,
+					strings: {
+						content: data.strings.content
+					}
+				}
+			} else {
+				initCurrLocation.strings.content = data.strings.content
+			}
 		}
 	}
 )
@@ -281,7 +289,6 @@ export const deleteCrumbs = mutatorAction('deleteCrumbs', (data: any) => {
 		store.breadCrumbs = newCrumbs
 	}
 })
-
 
 export const addLocation = mutatorAction(
 	'addLocation',

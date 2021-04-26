@@ -162,25 +162,19 @@ export const compare = function (a: any, b: any): any {
 						const deeper = compare(a[key], b[key])
 						_result.different = _result.different.concat(
 							map(deeper.different, (sub_path) => {
-								console.log(sub_path)
 								return {[key]: sub_path}
-								//return key + '.' + sub_path
 							})
 						)
 
 						_result.missing_from_second = _result.missing_from_second.concat(
 							map(deeper.missing_from_second, (sub_path) => {
-								console.log(sub_path)
 								return {[key]: sub_path}
-								//return key + '.' + sub_path
 							})
 						)
 
 						_result.missing_from_first = _result.missing_from_first.concat(
 							map(deeper.missing_from_first, (sub_path) => {
-								console.log(sub_path)
 								return {[key]: sub_path}
-								//return key + '.' + sub_path
 							})
 						)
 						return _result
