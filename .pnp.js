@@ -5686,6 +5686,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["batch2", "npm:2.0.0"],
             ["config", "npm:3.3.6"],
             ["csv-parse", "npm:4.15.4"],
+            ["google-libphonenumber", "npm:3.2.19"],
             ["lodash", "npm:4.17.21"],
             ["npm-run-all", "npm:4.1.5"],
             ["ts-node", "virtual:fb6087411169c0acccd3a060948afdb2a98f0b0362be45bc247c14f8265510dd9b0faab93f17b8f1aa20667940e14a7f0b485623c267b48f74a508a102c60b0d#npm:9.1.1"],
@@ -17553,6 +17554,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["gtoken", "npm:5.2.1"],
             ["jws", "npm:4.0.0"],
             ["lru-cache", "npm:6.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["google-libphonenumber", [
+        ["npm:3.2.19", {
+          "packageLocation": "./.yarn/cache/google-libphonenumber-npm-3.2.19-55bdbc3ed6-dad2b7ceb5.zip/node_modules/google-libphonenumber/",
+          "packageDependencies": [
+            ["google-libphonenumber", "npm:3.2.19"]
           ],
           "linkType": "HARD",
         }]
