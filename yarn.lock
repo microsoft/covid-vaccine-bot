@@ -2187,14 +2187,14 @@ __metadata:
   resolution: "@covid-vax-bot/data-portal@workspace:packages/webapp"
   dependencies:
     "@covid-vax-bot/plan-schema": "workspace:packages/schema"
-    "@fluentui/react": ^7.168.0
+    "@fluentui/react": ^7.168.1
     "@testing-library/jest-dom": ^5.12.0
     "@testing-library/react": ^11.2.6
     "@testing-library/user-event": ^12.8.3
-    "@types/jest": ^26.0.22
+    "@types/jest": ^26.0.23
     "@types/lodash": ^4.14.168
     "@types/node": ^14.14.41
-    "@types/react": ^17.0.3
+    "@types/react": ^17.0.4
     "@types/react-dom": ^17.0.3
     "@types/react-html-parser": ^2.0.1
     "@types/react-router-dom": ^5.1.7
@@ -2207,7 +2207,7 @@ __metadata:
     mobx: ^5.15.7
     mobx-react-lite: ^2.2.2
     npm-run-all: ^4.1.5
-    office-ui-fabric-react: ^7.168.0
+    office-ui-fabric-react: ^7.168.1
     react: ^17.0.2
     react-dom: ^17.0.2
     react-html-parser: ^2.0.2
@@ -2230,7 +2230,7 @@ __metadata:
     "@types/config": ^0.0.38
     "@types/express": ^4.17.11
     "@types/jsonwebtoken": ^8.5.1
-    "@types/node": ^12.20.10
+    "@types/node": ^14.14.41
     "@types/rimraf": ^3.0.0
     config: ^3.3.6
     cookie-parser: ^1.4.5
@@ -2257,7 +2257,7 @@ __metadata:
     "@rollup/plugin-commonjs": ^17.1.0
     "@rollup/plugin-node-resolve": ^11.2.1
     "@tsconfig/node12": ^1.0.7
-    "@types/jest": ^26.0.22
+    "@types/jest": ^26.0.23
     "@types/node": ^14.14.41
     core-js: ^3.11.0
     npm-run-all: ^4.1.5
@@ -3134,19 +3134,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fluentui/react@npm:^7.168.0":
-  version: 7.168.0
-  resolution: "@fluentui/react@npm:7.168.0"
+"@fluentui/react@npm:^7.168.1":
+  version: 7.168.1
+  resolution: "@fluentui/react@npm:7.168.1"
   dependencies:
     "@uifabric/set-version": ^7.0.24
-    office-ui-fabric-react: ^7.168.0
+    office-ui-fabric-react: ^7.168.1
     tslib: ^1.10.0
   peerDependencies:
     "@types/react": ">=16.8.0 <17.0.0"
     "@types/react-dom": ">=16.8.0 <17.0.0"
     react: ">=16.8.0 <17.0.0"
     react-dom: ">=16.8.0 <17.0.0"
-  checksum: de6c3a205a87d08b1e0f88888a0622a7e98c4abdf15ba28cacb5e7499e3a2e7d99d428e86894fe0eb472c4661be188c983889a692be3c9ae5c8cc15196eeec1d
+  checksum: d1bd53111592c4bea4dcb594820572a9d8b1e5f26ea60ddc784224d8a4f35ec1944fdd434c30fd999ea1adac4ae0e6238df3c9f992df3dbce37e0e1df8836f82
   languageName: node
   linkType: hard
 
@@ -4316,6 +4316,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/jest@npm:^26.0.23":
+  version: 26.0.23
+  resolution: "@types/jest@npm:26.0.23"
+  dependencies:
+    jest-diff: ^26.0.0
+    pretty-format: ^26.0.0
+  checksum: a015676b78bdc51be6f6315acef10d9106ea8064e3e49143bca3c75b834b61285b45c5f5ccfd049a80107f1e2869a9183cdb5be85816c073ea8dd05852fafdc6
+  languageName: node
+  linkType: hard
+
 "@types/json-schema@npm:*, @types/json-schema@npm:^7.0.3, @types/json-schema@npm:^7.0.4, @types/json-schema@npm:^7.0.5, @types/json-schema@npm:^7.0.6, @types/json-schema@npm:^7.0.7":
   version: 7.0.7
   resolution: "@types/json-schema@npm:7.0.7"
@@ -4400,13 +4410,6 @@ __metadata:
   version: 14.14.35
   resolution: "@types/node@npm:14.14.35"
   checksum: 0f6320bf5370d1ff82105fb7f26aa0658499c97d3ec78561e65b65724280244f281602541182b63470d2c8a98db22fbb4f91409c5c7c97da8c3bb8f97fbc5dbc
-  languageName: node
-  linkType: hard
-
-"@types/node@npm:^12.20.10":
-  version: 12.20.10
-  resolution: "@types/node@npm:12.20.10"
-  checksum: 0d358c4660f32062567c878dc950d77edac737bda113dee066afc187fb4ef0eeac9acd7cfe72443f9b95a57da260851e7037f907423d05c09bcf1ae2ff89d334
   languageName: node
   linkType: hard
 
@@ -4522,7 +4525,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:^17.0.3":
+"@types/react@npm:*":
   version: 17.0.3
   resolution: "@types/react@npm:17.0.3"
   dependencies:
@@ -4530,6 +4533,17 @@ __metadata:
     "@types/scheduler": "*"
     csstype: ^3.0.2
   checksum: 5bcaabadc90a23ad9008540eae98a5819b638c4cf1b968adc67be47d6a8dc8cb100061d877dae97618fb275e405dc484b37154080c7ac0ea7df5efcdd8f98c24
+  languageName: node
+  linkType: hard
+
+"@types/react@npm:^17.0.4":
+  version: 17.0.4
+  resolution: "@types/react@npm:17.0.4"
+  dependencies:
+    "@types/prop-types": "*"
+    "@types/scheduler": "*"
+    csstype: ^3.0.2
+  checksum: d7a8121faa889d52148df392751b771be16a45369872e9ad2b5db3d5bb8f76e684db27c2447b440441e3da1f353d434fa20fdcb45b3a56a296aab0757862da77
   languageName: node
   linkType: hard
 
@@ -9691,6 +9705,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"eslint-plugin-jest@npm:^24.3.6":
+  version: 24.3.6
+  resolution: "eslint-plugin-jest@npm:24.3.6"
+  dependencies:
+    "@typescript-eslint/experimental-utils": ^4.0.1
+  peerDependencies:
+    "@typescript-eslint/eslint-plugin": ">= 4"
+    eslint: ">=5"
+  peerDependenciesMeta:
+    "@typescript-eslint/eslint-plugin":
+      optional: true
+  checksum: 13f4522cd838a6a356a080f76424579a58aa2f9b4f4b3fdd3713278718496c62ba3d8f53c0fb6ad6fd96ca6cfd6ee728f7dd51893b91eccfb4396b832f757afb
+  languageName: node
+  linkType: hard
+
 "eslint-plugin-jsx-a11y@npm:^6.3.1, eslint-plugin-jsx-a11y@npm:^6.4.1":
   version: 6.4.1
   resolution: "eslint-plugin-jsx-a11y@npm:6.4.1"
@@ -11982,12 +12011,12 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"husky@npm:^5.2.0":
-  version: 5.2.0
-  resolution: "husky@npm:5.2.0"
+"husky@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "husky@npm:6.0.0"
   bin:
     husky: lib/bin.js
-  checksum: a5a99bea465dbb8499e93d50eb632cc95ffea8cec3662c483af6587f4a5adcff8e5384cf9e1ff7275b2e3bff34f61404d60a7aa0e846c5b08f044ddeca7db688
+  checksum: 61e1f7f53f3c969d361c2a1d4ed8018b9447406ea6cd644a2526d18b76877d135001d8cbd48a1d201fc1614d96995e691ecd2b82a8d8513a6b4a313da1188ccd
   languageName: node
   linkType: hard
 
@@ -14984,18 +15013,18 @@ fsevents@^1.2.7:
     "@essex/jest-config": ^13.0.0
     "@essex/scripts": ^13.0.0
     "@tsconfig/node12": ^1.0.7
-    "@types/jest": ^26.0.22
+    "@types/jest": ^26.0.23
     "@typescript-eslint/eslint-plugin": ^4.22.0
     "@typescript-eslint/parser": ^4.22.0
     eslint: ^7.25.0
     eslint-import-resolver-node: ^0.3.4
     eslint-plugin-header: ^3.1.1
     eslint-plugin-import: ^2.22.1
-    eslint-plugin-jest: ^24.3.5
+    eslint-plugin-jest: ^24.3.6
     eslint-plugin-jsx-a11y: ^6.4.1
     eslint-plugin-react: ^7.23.2
     eslint-plugin-react-hooks: ^4.2.0
-    husky: ^5.2.0
+    husky: ^6.0.0
     jest: ^26.6.3
     lint-staged: ^10.5.4
     npm-run-all: ^4.1.5
@@ -15627,9 +15656,9 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"office-ui-fabric-react@npm:^7.168.0":
-  version: 7.168.0
-  resolution: "office-ui-fabric-react@npm:7.168.0"
+"office-ui-fabric-react@npm:^7.168.1":
+  version: 7.168.1
+  resolution: "office-ui-fabric-react@npm:7.168.1"
   dependencies:
     "@fluentui/date-time-utilities": ^7.9.1
     "@fluentui/react-focus": ^7.17.6
@@ -15649,7 +15678,7 @@ fsevents@^1.2.7:
     "@types/react-dom": ">=16.8.0 <17.0.0"
     react: ">=16.8.0 <17.0.0"
     react-dom: ">=16.8.0 <17.0.0"
-  checksum: 6cc72317bb532db17df1cf14d7c69657c13b48d5118d3a82353bb51cd06c5060067601593ddf3b2bcaa04a5b1499ce6e388bf1db024b9efb5a4ab2e6c02ba71a
+  checksum: 3abb2c5ccf21d2036020169b8dd9f9ee4c7da283316ff38b9df432e5d7a130c92f0eb1609a7edf4adb64dd9693d9c54bfdd69cdaae52070c00d98da22cfeb1b4
   languageName: node
   linkType: hard
 
