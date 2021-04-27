@@ -170,19 +170,31 @@ export const compare = function (a: any, b: any): any {
 						const deeper = compare(a[key], b[key])
 						_result.different = _result.different.concat(
 							map(deeper.different, (sub_path) => {
-								return key + '.' + sub_path
+								if (sub_path.includes(key)) {
+									return sub_path
+								}
+								const subKey = key + '.' + sub_path
+								return subKey
 							})
 						)
 
 						_result.missing_from_second = _result.missing_from_second.concat(
 							map(deeper.missing_from_second, (sub_path) => {
-								return key + '.' + sub_path
+								if (sub_path.includes(key)) {
+									return sub_path
+								}
+								const subKey = key + '.' + sub_path
+								return subKey
 							})
 						)
 
 						_result.missing_from_first = _result.missing_from_first.concat(
 							map(deeper.missing_from_first, (sub_path) => {
-								return key + '.' + sub_path
+								if (sub_path.includes(key)) {
+									return sub_path
+								}
+								const subKey = key + '.' + sub_path
+								return subKey
 							})
 						)
 						return _result
@@ -202,7 +214,14 @@ export const compare = function (a: any, b: any): any {
 			if (a?.hasOwnProperty(key)) {
 				return _result
 			} else {
-				_result.missing_from_first.push(key)
+				if (key === 'regions') {
+					const resp = buildPath(value)
+					resp.forEach(k => {
+						_result.missing_from_first.push(k)
+					})
+				} else {
+					_result.missing_from_first.push(key)
+				}
 				return _result
 			}
 		},
@@ -210,4 +229,23 @@ export const compare = function (a: any, b: any): any {
 	)
 
 	return result
+}
+
+const buildPath = (obj: any) => {
+	let res: any[] = [];
+	(function recurse(obj, current?: any) {
+		for(var key in obj) {
+		  var value = obj[key];
+		  var newKey = (current ? current + "." + key : key);  // joined key with dot
+		  if(value && typeof value === "object") {
+			recurse(value, newKey);  // it's a nested object, so do it again
+		  } else {
+			  if (newKey.endsWith('info.content.name')) {
+				res.push(value.replace('name.',''));  // it's not an object, so set the property
+			}
+		  }
+		}
+	  })(obj);
+
+	return res
 }

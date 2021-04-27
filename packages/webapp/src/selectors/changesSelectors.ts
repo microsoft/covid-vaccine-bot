@@ -44,8 +44,8 @@ export const getChanges = (): {changesList: any, locationUpdates: any} => {
 				changeDesc = 'Updated phase data for'
 			}
 
-			if (!item.includes('.vaccination.content') && !item.endsWith('.strings') && item.endsWith('regions')) {
-				locationKey = item.endsWith('regions') ? item.split('.').slice(0,-1).join('.') : item
+			if (!item.includes('.vaccination.content') && !item.endsWith('.strings')) {
+				locationKey = item
 				changeDesc = 'Updated location data for'
 			}
 
@@ -86,5 +86,6 @@ export const getChanges = (): {changesList: any, locationUpdates: any} => {
 		})
 	}
 
+	console.log(changesList, locationUpdates)
 	return {changesList, locationUpdates}
 }

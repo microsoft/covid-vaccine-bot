@@ -4,7 +4,7 @@
  */
 import parse from 'csv-parse/lib/sync'
 import { getAppStore } from '../store/store'
-import { convertCSVDataToObj } from '../utils/dataUtils'
+import { convertCSVDataToObj, pathFind } from '../utils/dataUtils'
 import {
 	b64_to_utf8,
 	utf8_to_b64,
@@ -91,57 +91,47 @@ const createWorkingBranch = async (state: any, branchName: string) => {
 const commitChanges = async (
 	state: any,
 	branchName: string,
-	globalUpdates: any,
 	locationUpdates: any
 ) => {
 	let branchLastCommitSha = ''
-	const { committedDeletes } = state
-
-	if (globalUpdates) {
-		for (const i in globalUpdates) {
-			const updateObj = globalUpdates[i]
-			const fileData = createCSVDataString(updateObj.content)
-			const query = `contents/packages/plans/data/localization/${updateObj.path}`
-			const globalResp = await gitFetch(query, {
-				method: 'PUT',
-				body: JSON.stringify({
-					branch: branchName,
-					message: `updated ${updateObj.path}`,
-					content: utf8_to_b64(fileData),
-					sha: updateObj.sha,
-				}),
-			})
-			branchLastCommitSha = globalResp?.commit?.sha ?? branchLastCommitSha
-		}
-	}
+	const { committedDeletes, repoFileData, initRepoFileData } = state
 
 	if (locationUpdates) {
-		let locationResp: any = {}
 		let skipFetch = false
-		for (const i in locationUpdates) {
-			const locationObj = locationUpdates[i].data
+		let locationResp: any = {}
+
+		for(const locationPath of locationUpdates) {
+			const pathArray = locationPath.split('.')
+			let locationObj = pathFind(repoFileData, pathArray)
+			const isDeleted = !locationObj
+
+			if (isDeleted) {
+				locationObj = pathFind(initRepoFileData, pathArray)
+			}
+
 			skipFetch =
 				!locationObj.info?.path ||
 				committedDeletes.includes(locationObj.info.path)
-			const infoQuery = `contents/packages/plans/data/policies/${locationObj.info.path}`
-			const method = locationObj.delete ? 'DELETE' : 'PUT'
-			const message = locationObj.delete ? 'deleted' : 'updated'
-			const content = locationObj.delete
+
+				const method = isDeleted ? 'DELETE' : 'PUT'
+				const message = isDeleted ? 'deleted' : 'updated'
+				const content = isDeleted
 				? undefined
 				: {
-						info: utf8_to_b64(
-							JSON.stringify(locationObj.info.content, null, '\t')
+					info: utf8_to_b64(
+						JSON.stringify(locationObj.info.content, null, '\t')
 						),
 						vaccination: utf8_to_b64(
 							JSON.stringify(locationObj.vaccination.content, null, '\t')
-						),
-						strings: utf8_to_b64(
-							createCSVDataString(locationObj.strings.content)
-						),
-				  }
+							),
+							strings: utf8_to_b64(
+								createCSVDataString(locationObj.strings.content)
+								),
+							}
 
-			//Info
 			if (!skipFetch) {
+				//Info
+				const infoQuery = `contents/packages/plans/data/policies/${locationObj.info.path}`
 				locationResp = await gitFetch(infoQuery, {
 					method,
 					body: JSON.stringify({
@@ -176,59 +166,124 @@ const commitChanges = async (
 					}),
 				})
 			}
-
-			// Regions
-			if (locationObj.regions && !skipFetch) {
-				const regionKeys = Object.keys(locationObj.regions)
-				for (const key of regionKeys) {
-					const regionObj = locationObj.regions[key]
-					const skipRegionFetch =
-						!regionObj.info?.path ||
-						committedDeletes.includes(regionObj.info.path)
-
-					//Info
-					if (!skipRegionFetch) {
-						const _delete = locationObj.delete || regionObj.delete
-						const regionMethod = _delete ? 'DELETE' : 'PUT'
-						const regionMessage = _delete ? 'deleted' : 'updated'
-						const regInfoQuery = `contents/packages/plans/data/policies/${regionObj.info.path}`
-
-						locationResp = await gitFetch(regInfoQuery, {
-							method: regionMethod,
-							body: JSON.stringify({
-								branch: branchName,
-								message: `${regionMessage} ${regionObj.info.path}`,
-								content: _delete
-									? undefined
-									: utf8_to_b64(
-											JSON.stringify(regionObj.info.content, null, '\t')
-									  ),
-								sha: regionObj.info.sha,
-							}),
-						})
-
-						//Vaccination
-						const regVacQuery = `contents/packages/plans/data/policies/${regionObj.vaccination.path}`
-						locationResp = await gitFetch(regVacQuery, {
-							method: regionMethod,
-							body: JSON.stringify({
-								branch: branchName,
-								message: `${regionMessage} ${regionObj.vaccination.path}`,
-								content: _delete
-									? undefined
-									: utf8_to_b64(
-											JSON.stringify(regionObj.vaccination.content, null, '\t')
-									  ),
-								sha: regionObj.vaccination.sha,
-							}),
-						})
-					}
-				}
-			}
 		}
 
 		branchLastCommitSha = locationResp?.commit?.sha ?? branchLastCommitSha
 	}
+	// if (locationUpdates) {
+	// 	let locationResp: any = {}
+	// 	let skipFetch = false
+	// 	for (const i in locationUpdates) {
+	// 		const locationObj = locationUpdates[i].data
+	// 		skipFetch =
+	// 			!locationObj.info?.path ||
+	// 			committedDeletes.includes(locationObj.info.path)
+	// 		const infoQuery = `contents/packages/plans/data/policies/${locationObj.info.path}`
+	// 		const method = locationObj.delete ? 'DELETE' : 'PUT'
+	// 		const message = locationObj.delete ? 'deleted' : 'updated'
+	// 		const content = locationObj.delete
+	// 			? undefined
+	// 			: {
+	// 					info: utf8_to_b64(
+	// 						JSON.stringify(locationObj.info.content, null, '\t')
+	// 					),
+	// 					vaccination: utf8_to_b64(
+	// 						JSON.stringify(locationObj.vaccination.content, null, '\t')
+	// 					),
+	// 					strings: utf8_to_b64(
+	// 						createCSVDataString(locationObj.strings.content)
+	// 					),
+	// 			  }
+
+	// 		//Info
+	// 		if (!skipFetch) {
+	// 			locationResp = await gitFetch(infoQuery, {
+	// 				method,
+	// 				body: JSON.stringify({
+	// 					branch: branchName,
+	// 					message: `${message} ${locationObj.info.path}`,
+	// 					content: content?.info,
+	// 					sha: locationObj.info.sha,
+	// 				}),
+	// 			})
+
+	// 			//Vaccination
+	// 			const vacQuery = `contents/packages/plans/data/policies/${locationObj.vaccination.path}`
+	// 			locationResp = await gitFetch(vacQuery, {
+	// 				method,
+	// 				body: JSON.stringify({
+	// 					branch: branchName,
+	// 					message: `${message} ${locationObj.vaccination.path}`,
+	// 					content: content?.vaccination,
+	// 					sha: locationObj.vaccination.sha,
+	// 				}),
+	// 			})
+
+	// 			//Strings
+	// 			const stringQuery = `contents/packages/plans/data/policies/${locationObj.strings.path}`
+	// 			locationResp = await gitFetch(stringQuery, {
+	// 				method,
+	// 				body: JSON.stringify({
+	// 					branch: branchName,
+	// 					message: `${message} ${locationObj.strings.path}`,
+	// 					content: content?.strings,
+	// 					sha: locationObj.strings.sha,
+	// 				}),
+	// 			})
+	// 		}
+
+	// 		// Regions
+	// 		if (locationObj.regions && !skipFetch) {
+	// 			const regionKeys = Object.keys(locationObj.regions)
+	// 			for (const key of regionKeys) {
+	// 				const regionObj = locationObj.regions[key]
+	// 				const skipRegionFetch =
+	// 					!regionObj.info?.path ||
+	// 					committedDeletes.includes(regionObj.info.path)
+
+	// 				//Info
+	// 				if (!skipRegionFetch) {
+	// 					const _delete = locationObj.delete || regionObj.delete
+	// 					const regionMethod = _delete ? 'DELETE' : 'PUT'
+	// 					const regionMessage = _delete ? 'deleted' : 'updated'
+	// 					const regInfoQuery = `contents/packages/plans/data/policies/${regionObj.info.path}`
+
+	// 					locationResp = await gitFetch(regInfoQuery, {
+	// 						method: regionMethod,
+	// 						body: JSON.stringify({
+	// 							branch: branchName,
+	// 							message: `${regionMessage} ${regionObj.info.path}`,
+	// 							content: _delete
+	// 								? undefined
+	// 								: utf8_to_b64(
+	// 										JSON.stringify(regionObj.info.content, null, '\t')
+	// 								  ),
+	// 							sha: regionObj.info.sha,
+	// 						}),
+	// 					})
+
+	// 					//Vaccination
+	// 					const regVacQuery = `contents/packages/plans/data/policies/${regionObj.vaccination.path}`
+	// 					locationResp = await gitFetch(regVacQuery, {
+	// 						method: regionMethod,
+	// 						body: JSON.stringify({
+	// 							branch: branchName,
+	// 							message: `${regionMessage} ${regionObj.vaccination.path}`,
+	// 							content: _delete
+	// 								? undefined
+	// 								: utf8_to_b64(
+	// 										JSON.stringify(regionObj.vaccination.content, null, '\t')
+	// 								  ),
+	// 							sha: regionObj.vaccination.sha,
+	// 						}),
+	// 					})
+	// 				}
+	// 			}
+	// 		}
+	// 	}
+
+	// 	branchLastCommitSha = locationResp?.commit?.sha ?? branchLastCommitSha
+	// }
 
 	return branchLastCommitSha
 }
@@ -432,16 +487,14 @@ export const repoServices = async (
 					return await commitChanges(
 						state,
 						extraData.branchName,
-						extraData.globalUpdates,
 						extraData.locationUpdates
 					)
 				}
 				break
 			case 'createPR':
 				if (state.mainBranch) {
-					const globalUpdates = extraData[0]
-					const locationUpdates = extraData[1]
-					const prFormData = extraData[3]
+					const locationUpdates = extraData[0]
+					const prFormData = extraData[2]
 					if (state.loadedPRData) {
 						branchName = `refs/heads/${state.loadedPRData.head.ref}`
 					} else if (state.userWorkingBranch) {
@@ -454,7 +507,6 @@ export const repoServices = async (
 						await commitChanges(
 							state,
 							branchName,
-							globalUpdates,
 							locationUpdates
 						)
 					}
