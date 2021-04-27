@@ -289,7 +289,7 @@ export const repoServices = async (
 			case 'getIssues':
 				return await gitFetch(`issues`)
 
-			case 'getRepoFileData':
+			case 'getRepoFileData':{
 				const query = !extraData
 					? `contents/packages/plans/data?ref=${process.env.REACT_APP_MAIN_BRANCH}`
 					: `contents/packages/plans/data?ref=${extraData}`
@@ -373,7 +373,52 @@ export const repoServices = async (
 					)
 				}
 
-				return stateData
+				return stateData}
+
+			case 'loadAllStringsData':
+				const query = !extraData
+					? `contents/packages/plans/data?ref=${process.env.REACT_APP_MAIN_BRANCH}`
+					: `contents/packages/plans/data?ref=${extraData}`
+
+				const dataFolderObj = await gitFetch(query)
+				const policyFolderGitUrl = dataFolderObj.find(
+					(folder: { name: string }) => folder.name === 'policies'
+				).git_url
+				const loadPolicyFolderResponse = await gitFetch(
+					`${policyFolderGitUrl}?recursive=true`
+				)
+				const policyFolderData = loadPolicyFolderResponse
+				const stringsData: any = []
+
+				for(const [_key, value ] of Object.entries(policyFolderData.tree)) {
+					const element = value as any
+					if (element.type !== 'tree') {
+						const lastInstance = element.path.lastIndexOf('/')
+						const fileName: string = element.path.substring(lastInstance + 1)
+						const fileType: string = fileName.split('.')[0]
+						const fileExt = fileName.split('.')[1].toLowerCase()
+
+						if(fileExt === 'csv'){
+
+							const fileData = await getContent(
+							String(element.url),
+							String(state.accessToken))
+
+							stringsData.push({
+									name: fileName,
+									type: fileType,
+									sha: element.sha,
+									url: element.url,
+									path: element.path,
+									content: convertCSVDataToObj(parse(b64_to_utf8(fileData.content), { columns: true }))
+								})
+
+						}
+
+					}
+				}
+
+				return stringsData
 
 			case 'getLocationData':
 				const location = extraData

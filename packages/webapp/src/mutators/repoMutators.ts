@@ -1034,16 +1034,7 @@ export const updateStrings = mutatorAction(
 			const store = getAppStore()
 			store.pendingChanges = true
 			Object.keys(stringsList).forEach((stringId: string) => {
-				if (store.globalFileData.customStrings.content[stringId]) {
-					store.globalFileData.customStrings.content[stringId] =
-						stringsList[stringId]
-				} else if (store.globalFileData.cdcStateLinks.content[stringId]) {
-					store.globalFileData.cdcStateLinks.content[stringId] =
-						stringsList[stringId]
-				} else if (store.globalFileData.cdcStateNames.content[stringId]) {
-					store.globalFileData.cdcStateNames.content[stringId] =
-						stringsList[stringId]
-				} else {
+				
 					for (const item of Object.keys(store.repoFileData)) {
 						const location = store.repoFileData[item]
 						if (JSON.stringify(location).includes(stringId)) {
@@ -1051,10 +1042,7 @@ export const updateStrings = mutatorAction(
 							break
 						}
 					}
-				}
-			})
-
-			store.globalFileData = { ...store.globalFileData }
+				})
 		}
 	}
 )
