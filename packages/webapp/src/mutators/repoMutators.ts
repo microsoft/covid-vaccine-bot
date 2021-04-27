@@ -386,6 +386,19 @@ export const updateLocationData = mutatorAction(
 				rootLocation.strings.content[currLocationNameKey][
 					store.currentLanguage
 				] = locationData.details
+			} else {
+				const locationId = locationData.details
+				.replace(/[^a-z0-9\s]/gi, '')
+				.replace(/\s/g, '_')
+				.toLowerCase()
+
+				const locationKey = `cdc/${locationId}/state_name`
+				currLocation.strings.content = {
+					[locationKey]: {
+						[store.currentLanguage]: locationData.details
+					}
+				}
+				currLocation.info.content.name = locationKey
 			}
 
 			currLocation.info.content.type = locationData.regionType
