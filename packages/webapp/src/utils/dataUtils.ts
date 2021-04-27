@@ -164,32 +164,32 @@ export const compare = function (a: any, b: any): any {
 				} else {
 					if (typeof a[key] != typeof {} || typeof b[key] != typeof {}) {
 						//dead end.
-						_result.different.push({[key]: value})
+						_result.different.push(key)
 						return _result
 					} else {
 						const deeper = compare(a[key], b[key])
 						_result.different = _result.different.concat(
 							map(deeper.different, (sub_path) => {
-								return {[key]: sub_path}
+								return key + '.' + sub_path
 							})
 						)
 
 						_result.missing_from_second = _result.missing_from_second.concat(
 							map(deeper.missing_from_second, (sub_path) => {
-								return {[key]: sub_path}
+								return key + '.' + sub_path
 							})
 						)
 
 						_result.missing_from_first = _result.missing_from_first.concat(
 							map(deeper.missing_from_first, (sub_path) => {
-								return {[key]: sub_path}
+								return key + '.' + sub_path
 							})
 						)
 						return _result
 					}
 				}
 			} else {
-				_result.missing_from_second.push({[key]: value})
+				_result.missing_from_second.push(key)
 				return _result
 			}
 		},
@@ -202,7 +202,7 @@ export const compare = function (a: any, b: any): any {
 			if (a?.hasOwnProperty(key)) {
 				return _result
 			} else {
-				_result.missing_from_first.push({[key]: value})
+				_result.missing_from_first.push(key)
 				return _result
 			}
 		},

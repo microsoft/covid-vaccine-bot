@@ -17,7 +17,6 @@ import { createPR } from '../actions/repoActions'
 import { getChanges } from '../selectors/changesSelectors'
 import { getText as t } from '../selectors/intlSelectors'
 import { getAppStore } from '../store/store'
-import { compare } from '../utils/dataUtils'
 
 import './Review.scss'
 
@@ -46,12 +45,11 @@ export default observer(function Review(props: ReviewProp) {
 			fieldName: 'label',
 			minWidth: 200,
 			isResizable: true,
-		},
+		}
 	]
 
 	const [changesList, setChangesList] = useState<any[]>([])
 	const [locationUpdates, setLocationUpdates] = useState<any[]>([])
-	const [globalUpdates, setGlobalUpdates] = useState<any[]>([])
 	const [showLoading, setShowLoading] = useState<boolean>(false)
 	const [errorMessage, setErrorMessage] = useState<
 		{ message: string } | undefined
@@ -63,21 +61,16 @@ export default observer(function Review(props: ReviewProp) {
 	const fieldChanges = useRef<any>(formData)
 
 	useEffect(() => {
-		if (state.repoFileData && state.initRepoFileData) {
-			const res = compare(state.initRepoFileData, state.repoFileData)
-			console.log('compare', res)
-		}
-
-		try {
-			const { globalUpdates, locationUpdates, changesList } = getChanges()
-
-			setLocationUpdates(locationUpdates)
-			setChangesList(changesList)
-			setGlobalUpdates(globalUpdates)
+		try{
+			if (state.repoFileData && state.initRepoFileData) {
+				const changeResp = getChanges()
+				setLocationUpdates(changeResp.locationUpdates)
+				setChangesList(changeResp.changesList)
+			}
 		} catch (err) {
 			setErrorMessage(err)
 		}
-	}, [state.initRepoFileData, state.repoFileData, state.initGlobalFileData, state.globalFileData])
+	}, [state.initRepoFileData, state.repoFileData])
 
 	const handleTextChange = useCallback(
 		(ev) => {
@@ -158,7 +151,6 @@ export default observer(function Review(props: ReviewProp) {
 									onClick={() => {
 										setShowLoading(true)
 										createPR([
-											globalUpdates,
 											locationUpdates,
 											handleSubmit,
 											formData,

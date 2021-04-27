@@ -148,15 +148,9 @@ export const setRepoFileChanges = mutatorAction(
 	(data: any[] | undefined) => {
 		if (data) {
 			const store = getAppStore()
-
-			const changes = compare(toJS(store.repoFileData), data[0])
+			const changes = compare(toJS(store.repoFileData), data)
 
 			store.repoFileChanges = changes
-			store.globalFileChanges = {
-				customStrings: data[1],
-				cdcStateNames: data[2],
-				cdcStateLinks: data[3],
-			}
 		}
 	}
 )
@@ -176,7 +170,7 @@ export const setLocationData = mutatorAction('setLocationData', (data: any) => {
 	if (data) {
 		const store = getAppStore()
 
-		const pathArray = data.info.path.split('/')
+		const pathArray = clone(data.info.path).split('/')
 		pathArray.splice(-1, 1)
 
 		const currLocation = pathFind(store.repoFileData, pathArray)
@@ -187,18 +181,18 @@ export const setLocationData = mutatorAction('setLocationData', (data: any) => {
 
 		let initCurrLocation = pathFind(store.initRepoFileData, pathArray)
 
-		initCurrLocation.info.content = data.info.content
-		initCurrLocation.vaccination.content = data.vaccination.content
+		initCurrLocation.info.content = clone(data.info.content)
+		initCurrLocation.vaccination.content = clone(data.vaccination.content)
 
 		if (!initCurrLocation.strings) {
 			initCurrLocation = {
 				...initCurrLocation,
 				strings: {
-					content: data.strings.content
+					content: clone(data.strings.content)
 				}
 			}
 		} else {
-			initCurrLocation.strings.content = data.strings.content
+			initCurrLocation.strings.content = clone(data.strings.content)
 		}
 	}
 })

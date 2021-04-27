@@ -58,7 +58,7 @@ orchestrator(createPR, async (message) => {
 
 	let resp = await repoServices('createPR', fileData)
 	if (resp.ok === false) {
-		handleError(resp, () => fileData[2]({ error: true }))
+		handleError(resp, () => fileData[1]({ error: true }))
 	} else {
 		const store = getAppStore()
 		const nextWorkingBranches = store.userWorkingBranches.filter(
@@ -76,7 +76,7 @@ orchestrator(createPR, async (message) => {
 		setInitRepoFileData(resp)
 
 		resp = await repoServices('getIssues')
-		setIssuesList(resp, fileData[2]())
+		setIssuesList(resp, fileData[1]())
 
 		clearLoadedPRData()
 	}

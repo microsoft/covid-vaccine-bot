@@ -364,8 +364,6 @@ export const repoServices = async (
 						gitFetch(String(location.vaccination.url)),
 					])
 
-					debugger
-
 					location.info.content = JSON.parse(b64_to_utf8(infoData.content))
 					location.strings.content = convertCSVDataToObj(
 						parse(b64_to_utf8(stringsData.content), { columns: true })
