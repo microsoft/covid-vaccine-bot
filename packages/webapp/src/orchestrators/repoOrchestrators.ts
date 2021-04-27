@@ -11,6 +11,7 @@ import {
 	loadBranch,
 	saveContinue,
 	getLocationData,
+	loadAllStringsData
 } from '../actions/repoActions'
 import {
 	setUserAccessExpired,
@@ -32,6 +33,7 @@ import {
 	setIsDataStale,
 	setSavingCommitsFlag,
 	setLocationData,
+	setLoadAllStringsData
 } from '../mutators/repoMutators'
 import { getChanges } from '../selectors/changesSelectors'
 import { repoServices } from '../services/repoServices'
@@ -85,6 +87,13 @@ orchestrator(createPR, async (message) => {
 orchestrator(getRepoFileData, async () => {
 	const resp = await repoServices('getRepoFileData')
 	setInitRepoFileData(resp)
+})
+
+orchestrator(loadAllStringsData, async () => {
+	setIsDataRefreshing(true)
+	const resp = await repoServices('loadAllStringsData')
+	setLoadAllStringsData(resp)
+
 })
 
 orchestrator(initializeGitData, async () => {

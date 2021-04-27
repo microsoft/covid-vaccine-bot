@@ -166,6 +166,30 @@ export const setInitRepoFileData = mutatorAction(
 	}
 )
 
+export const setLoadAllStringsData = mutatorAction(
+	'setLoadAllStringsData',
+	(data: any | undefined) => {
+		if (data) {
+			const store = getAppStore()
+			for(const item of data){
+
+				const pathArray = item.path.split("/")
+				pathArray.splice(-1,1)
+
+				const currLocation = pathFind(store.repoFileData, pathArray)
+
+				if(!currLocation.strings.content){
+					currLocation.strings = item
+				}
+
+
+			}
+			store.isDataRefreshing = false
+		}
+	}
+)
+
+
 export const setLocationData = mutatorAction('setLocationData', (data: any) => {
 	if (data) {
 		const store = getAppStore()
@@ -1034,16 +1058,7 @@ export const updateStrings = mutatorAction(
 			const store = getAppStore()
 			store.pendingChanges = true
 			Object.keys(stringsList).forEach((stringId: string) => {
-				if (store.globalFileData.customStrings.content[stringId]) {
-					store.globalFileData.customStrings.content[stringId] =
-						stringsList[stringId]
-				} else if (store.globalFileData.cdcStateLinks.content[stringId]) {
-					store.globalFileData.cdcStateLinks.content[stringId] =
-						stringsList[stringId]
-				} else if (store.globalFileData.cdcStateNames.content[stringId]) {
-					store.globalFileData.cdcStateNames.content[stringId] =
-						stringsList[stringId]
-				} else {
+				
 					for (const item of Object.keys(store.repoFileData)) {
 						const location = store.repoFileData[item]
 						if (JSON.stringify(location).includes(stringId)) {
@@ -1051,10 +1066,7 @@ export const updateStrings = mutatorAction(
 							break
 						}
 					}
-				}
-			})
-
-			store.globalFileData = { ...store.globalFileData }
+				})
 		}
 	}
 )
