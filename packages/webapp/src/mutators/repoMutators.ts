@@ -166,6 +166,30 @@ export const setInitRepoFileData = mutatorAction(
 	}
 )
 
+export const setLoadAllStringsData = mutatorAction(
+	'setLoadAllStringsData',
+	(data: any | undefined) => {
+		if (data) {
+			const store = getAppStore()
+			for(const item of data){
+
+				const pathArray = item.path.split("/")
+				pathArray.splice(-1,1)
+
+				const currLocation = pathFind(store.repoFileData, pathArray)
+
+				if(!currLocation.strings.content){
+					currLocation.strings = item
+				}
+
+
+			}
+			store.isDataRefreshing = false
+		}
+	}
+)
+
+
 export const setLocationData = mutatorAction('setLocationData', (data: any) => {
 	if (data) {
 		const store = getAppStore()
