@@ -40,7 +40,8 @@ export const initialStore = {
 	globalFileChanges: {},
 	//restructured data
 	locationsData: undefined,
-	breadCrumbs: {}
+	breadCrumbs: {},
+	pendingChangeList: {added: [], modified: [], deleted: []}
 }
 
 export const getAppState = (): AppState => {

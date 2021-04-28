@@ -3,12 +3,11 @@
  * Licensed under the MIT license. See LICENSE file in the project.
  */
 import { cloneDeep as clone } from 'lodash'
-import { toJS } from 'mobx'
 import { mutatorAction } from 'satcheljs'
 import { getChanges } from '../selectors/changesSelectors'
 import { getCurrentLocationObj } from '../selectors/locationSelectors'
 import { getAppStore } from '../store/store'
-import { createLocationDataObj, compare, pathFind } from '../utils/dataUtils'
+import { createLocationDataObj, pathFind } from '../utils/dataUtils'
 import { formatId } from '../utils/textUtils'
 
 export const setIsDataRefreshing = mutatorAction(
@@ -149,7 +148,6 @@ export const setRepoFileChanges = mutatorAction(
 	(data: any[] | undefined) => {
 		if (data) {
 			const store = getAppStore()
-			//const changes = compare(toJS(store.repoFileData), data)
 			const changes = getChanges()
 
 			store.repoFileChanges = changes
@@ -164,6 +162,11 @@ export const setInitRepoFileData = mutatorAction(
 			const store = getAppStore()
 			store.repoFileData = data
 			store.initRepoFileData = data
+			store.pendingChangeList = {
+				added: [],
+				modified: [],
+				deleted: []
+			}
 		}
 	}
 )
@@ -205,22 +208,20 @@ export const setLocationData = mutatorAction('setLocationData', (data: any) => {
 		currLocation.strings.content = data.strings.content
 		currLocation.vaccination.content = data.vaccination.content
 
-		if (!store.prChanges) {
-			let initCurrLocation = pathFind(store.initRepoFileData, pathArray)
+		let initCurrLocation = pathFind(store.initRepoFileData, pathArray)
 
-			initCurrLocation.info.content = clone(data.info.content)
-			initCurrLocation.vaccination.content = clone(data.vaccination.content)
+		initCurrLocation.info.content = clone(data.info.content)
+		initCurrLocation.vaccination.content = clone(data.vaccination.content)
 
-			if (!initCurrLocation.strings) {
-				initCurrLocation = {
-					...initCurrLocation,
-					strings: {
-						content: clone(data.strings.content)
-					}
+		if (!initCurrLocation.strings) {
+			initCurrLocation = {
+				...initCurrLocation,
+				strings: {
+					content: clone(data.strings.content)
 				}
-			} else {
-				initCurrLocation.strings.content = clone(data.strings.content)
 			}
+		} else {
+			initCurrLocation.strings.content = clone(data.strings.content)
 		}
 	}
 })
@@ -365,6 +366,13 @@ export const addLocation = mutatorAction(
 				}
 			}
 
+			store.pendingChangeList.added.push({
+				section: 'location',
+				name: locationFilePath.slice(-1)[0],
+				pathKey: locationFilePath.join('.'),
+				data: newLocation
+			})
+
 			store.repoFileData = { ...store.repoFileData }
 		}
 	}
@@ -379,10 +387,22 @@ export const deleteLocation = mutatorAction(
 		const pathArray = locationData.value.info.path.split('/')
 		pathArray.splice(-1, 1)
 		if (pathArray.length === 1) {
+			store.pendingChangeList.deleted.push({
+				section: 'location',
+				name: locationData.key,
+				pathKey: pathArray.join('.'),
+				data: store.repoFileData[locationData.key]
+			})
 			delete store.repoFileData[locationData.key]
 		} else {
 			pathArray.splice(-1, 1)
 			const parentRegion = pathFind(store.repoFileData, pathArray)
+			store.pendingChangeList.deleted.push({
+				section: 'location',
+				name: locationData.key,
+				pathKey: pathArray.join('.'),
+				data: parentRegion[locationData.key]
+			})
 			delete parentRegion[locationData.key]
 		}
 
@@ -415,12 +435,7 @@ export const updateLocationData = mutatorAction(
 					store.currentLanguage
 				] = locationData.details
 			} else {
-				const locationId = locationData.details
-				.replace(/[^a-z0-9\s]/gi, '')
-				.replace(/\s/g, '_')
-				.toLowerCase()
-
-				const locationKey = `cdc/${locationId}/state_name`
+				const locationKey = `name.${pathArray.join('.')}`
 				currLocation.strings.content = {
 					[locationKey]: {
 						[store.currentLanguage]: locationData.details
@@ -588,6 +603,33 @@ export const updateLocationData = mutatorAction(
 			currLocation.vaccination.content['noPhaseLabel'] =
 				locationData.noPhaseLabel
 
+			const pathKey = pathArray.join('.')
+			const modifyKeyIdx = store.pendingChangeList.modified.findIndex((m: any) => m.pathKey === pathKey)
+
+			if (modifyKeyIdx > -1) {
+				store.pendingChangeList.modified[modifyKeyIdx].data = currLocation
+			} else {
+				store.pendingChangeList.modified.push({
+					section: 'location',
+					name: pathArray.slice(-1)[0],
+					pathKey: pathKey,
+					data: currLocation
+				})
+			}
+
+			const modifyRootKeyIdx = store.pendingChangeList.modified.findIndex((m: any) => m.pathKey === rootPath)
+
+			if (modifyRootKeyIdx > -1) {
+				store.pendingChangeList.modified[modifyRootKeyIdx].data = rootLocation
+			} else {
+				store.pendingChangeList.modified.push({
+					section: 'location',
+					name: rootPath,
+					pathKey: rootPath,
+					data: rootLocation
+				})
+			}
+
 			store.repoFileData = { ...store.repoFileData }
 		}
 	}
@@ -635,6 +677,20 @@ export const modifyMoreInfoText = mutatorAction(
 
 			phaseQualifiers[qualifierIdx].moreInfoText = calcInfoKey
 
+			const pathKey = pathArray.join('.')
+			const modifyKeyIdx = store.pendingChangeList.modified.findIndex((m: any) => m.pathKey === pathKey)
+
+			if (modifyKeyIdx > -1) {
+				store.pendingChangeList.modified[modifyKeyIdx].data = currLocation
+			} else {
+				store.pendingChangeList.modified.push({
+					section: 'more info text',
+					name: pathArray.slice(-1)[0],
+					pathKey: pathKey,
+					data: currLocation
+				})
+			}
+
 			store.repoFileData = { ...store.repoFileData }
 		}
 	}
@@ -647,7 +703,7 @@ export const modifyMoreInfoLinks = mutatorAction(
 			const store = getAppStore()
 			store.pendingChanges = true
 
-			const currLocation = getCurrentLocationObj(currentLocation)
+			const { locationData: currLocation, pathKey, name } = getCurrentLocationObj(currentLocation)
 
 			const phaseGroupIndex = currLocation.vaccination.content.phases.findIndex(
 				(phase: any) => phase.id === phaseGroupId
@@ -660,6 +716,20 @@ export const modifyMoreInfoLinks = mutatorAction(
 			)
 
 			phaseQualifiers[qualifierIdx].moreInfoUrl = moreInfoUrl
+
+			const modifyKeyIdx = store.pendingChangeList.modified.findIndex((m: any) => m.pathKey === pathKey)
+
+			if (modifyKeyIdx > -1) {
+				store.pendingChangeList.modified[modifyKeyIdx].data = currLocation
+			} else {
+				store.pendingChangeList.modified.push({
+					section: 'more info text',
+					name: name,
+					pathKey: pathKey,
+					data: currLocation
+				})
+			}
+
 			store.repoFileData = { ...store.repoFileData }
 		}
 	}
@@ -672,7 +742,7 @@ export const updateQualifier = mutatorAction(
 			const store = getAppStore()
 			store.pendingChanges = true
 
-			const currLocation = getCurrentLocationObj(currentLocation)
+			const { locationData: currLocation, pathKey, name } = getCurrentLocationObj(currentLocation)
 
 			const phaseGroupIndex = currLocation.vaccination.content.phases.findIndex(
 				(phase: any) => phase.id === phaseGroupId
@@ -685,6 +755,20 @@ export const updateQualifier = mutatorAction(
 			)
 
 			phaseQualifiers[qualifierIdx].question = qualifierId
+
+			const modifyKeyIdx = store.pendingChangeList.modified.findIndex((m: any) => m.pathKey === pathKey)
+
+			if (modifyKeyIdx > -1) {
+				store.pendingChangeList.modified[modifyKeyIdx].data = currLocation
+			} else {
+				store.pendingChangeList.modified.push({
+					section: 'qualifier',
+					name: name,
+					pathKey: pathKey,
+					data: currLocation
+				})
+			}
+
 			store.repoFileData = { ...store.repoFileData }
 		}
 	}
@@ -697,20 +781,26 @@ export const addQualifier = mutatorAction(
 			const store = getAppStore()
 			store.pendingChanges = true
 
-			const currLocation = getCurrentLocationObj(currentLocation)
+			const { locationData: currLocation, pathKey, name } = getCurrentLocationObj(currentLocation)
 
 			const phaseGroupIndex = currLocation.vaccination.content.phases.findIndex(
 				(phase: any) => phase.id === phaseGroupId
 			)
 
-		//const phaseQualifiers = clone(currLocation.vaccination.content.phases[phaseGroupIndex].qualifications)
-		const phaseQualifiers = currLocation.vaccination.content.phases[phaseGroupIndex].qualifications
-		phaseQualifiers.push({question: qualifierId})
+			const phaseQualifiers = currLocation.vaccination.content.phases[phaseGroupIndex].qualifications
+			phaseQualifiers.push({question: qualifierId})
 
-		//console.log(phaseQualifiers, currLocation)
-		store.repoFileData = { ...store.repoFileData }
+			store.pendingChangeList.added.push({
+				section: 'qualifier',
+				name: name,
+				pathKey: pathKey,
+				data: currLocation
+			})
+
+			store.repoFileData = { ...store.repoFileData }
+		}
 	}
-})
+)
 
 export const removeQualifier = mutatorAction(
 	'removeQualifier',
@@ -719,7 +809,7 @@ export const removeQualifier = mutatorAction(
 			const store = getAppStore()
 			store.pendingChanges = true
 
-			const currLocation = getCurrentLocationObj(currentLocation)
+			const { locationData: currLocation, pathKey, name } = getCurrentLocationObj(currentLocation)
 
 			const phaseGroupIndex = currLocation.vaccination.content.phases.findIndex(
 				(phase: any) => phase.id === phaseGroupId
@@ -730,6 +820,13 @@ export const removeQualifier = mutatorAction(
 			const qualifierIdx = phaseQualifiers.findIndex(
 				(pq: any) => pq.question === qualifierId
 			)
+
+			store.pendingChangeList.deleted.push({
+				section: 'qualifier',
+				name: name,
+				pathKey: pathKey,
+				data: currLocation
+			})
 
 			phaseQualifiers.splice(qualifierIdx, 1)
 
@@ -745,11 +842,19 @@ export const removePhase = mutatorAction(
 			const store = getAppStore()
 			store.pendingChanges = true
 
-			const currLocation = getCurrentLocationObj(currentLocation)
+			const { locationData: currLocation, pathKey } = getCurrentLocationObj(currentLocation)
 
 			const removeIndex = currLocation.vaccination.content.phases.findIndex(
 				(phase: any) => phase.id === phaseId
 			)
+
+			const name = currLocation.vaccination.content.phases[removeIndex].label || currLocation.vaccination.content.phases[removeIndex].id
+			store.pendingChangeList.deleted.push({
+				section: 'phase',
+				name: name,
+				pathKey: pathKey,
+				data: currLocation
+			})
 
 			currLocation.vaccination.content.phases.splice(removeIndex, 1)
 
@@ -764,9 +869,22 @@ export const updatePhase = mutatorAction(
 		const store = getAppStore()
 		store.pendingChanges = true
 
-		const currLocation = getCurrentLocationObj(currentLocation)
+		const { locationData: currLocation, pathKey, name } = getCurrentLocationObj(currentLocation)
 
 		currLocation.vaccination = currentLocation.vaccination
+
+		const modifyKeyIdx = store.pendingChangeList.modified.findIndex((m: any) => m.pathKey === pathKey)
+
+		if (modifyKeyIdx > -1) {
+			store.pendingChangeList.modified[modifyKeyIdx].data = currLocation
+		} else {
+			store.pendingChangeList.modified.push({
+				section: 'phase',
+				name: name,
+				pathKey: pathKey,
+				data: currLocation
+			})
+		}
 
 		store.repoFileData = { ...store.repoFileData }
 	}
@@ -779,12 +897,19 @@ export const addPhase = mutatorAction(
 			const store = getAppStore()
 			store.pendingChanges = true
 
-			const currLocation = getCurrentLocationObj(currentLocation)
+			const { locationData: currLocation, pathKey } = getCurrentLocationObj(currentLocation)
 
 			currLocation.vaccination.content.phases.push({
 				id,
 				label,
 				qualifications: [],
+			})
+
+			store.pendingChangeList.added.push({
+				section: 'phase',
+				name: label,
+				pathKey: pathKey,
+				data: currLocation
 			})
 
 			store.repoFileData = { ...store.repoFileData }
@@ -799,7 +924,7 @@ export const duplicatePhase = mutatorAction(
 			const store = getAppStore()
 			store.pendingChanges = true
 
-			const currLocation = getCurrentLocationObj(currentLocation)
+			const { locationData: currLocation, pathKey } = getCurrentLocationObj(currentLocation)
 
 			const phase = clone(
 				currLocation.vaccination.content.phases.find(
@@ -814,6 +939,14 @@ export const duplicatePhase = mutatorAction(
 			}
 
 			currLocation.vaccination.content.phases.push(duplicatePhase)
+
+			store.pendingChangeList.added.push({
+				section: 'phase',
+				name: name,
+				pathKey: pathKey,
+				data: currLocation
+			})
+
 			store.repoFileData = { ...store.repoFileData }
 		}
 	}
@@ -826,9 +959,22 @@ export const setActivePhase = mutatorAction(
 			const store = getAppStore()
 			store.pendingChanges = true
 
-			const currLocation = getCurrentLocationObj(currentLocation)
+			const { locationData: currLocation, pathKey } = getCurrentLocationObj(currentLocation)
 
 			currLocation.vaccination.content.activePhase = phaseId
+
+			const modifyKeyIdx = store.pendingChangeList.modified.findIndex((m: any) => m.pathKey === pathKey)
+
+			if (modifyKeyIdx > -1) {
+				store.pendingChangeList.modified[modifyKeyIdx].data = currLocation
+			} else {
+				store.pendingChangeList.modified.push({
+					section: 'phase',
+					name: phaseId,
+					pathKey: pathKey,
+					data: currLocation
+				})
+			}
 
 			store.repoFileData = { ...store.repoFileData }
 		}
@@ -880,8 +1026,20 @@ export const updateRootLocationQualifiers = mutatorAction(
 				[store.currentLanguage]: newQualifier.qualifier,
 			}
 
+			const modifyRootKeyIdx = store.pendingChangeList.modified.findIndex((m: any) => m.pathKey === rootLocationKey)
+
+			if (modifyRootKeyIdx > -1) {
+				store.pendingChangeList.modified[modifyRootKeyIdx].data = store.repoFileData[rootLocationKey]
+			} else {
+				store.pendingChangeList.modified.push({
+					section: 'qualifier',
+					name: rootLocationKey,
+					pathKey: rootLocationKey,
+					data: store.repoFileData[rootLocationKey]
+				})
+			}
+
 			store.repoFileData = { ...store.repoFileData }
-			console.log(store.repoFileData[rootLocationKey])
 		}
 	}
 )

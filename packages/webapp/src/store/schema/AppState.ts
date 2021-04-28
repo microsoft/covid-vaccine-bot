@@ -36,4 +36,9 @@ export interface AppState {
 	//restructured data objects
 	locationsData?: any
 	breadCrumbs?: any
+	pendingChangeList: {
+		added: any,
+		modified: any,
+		deleted: any
+	}
 }

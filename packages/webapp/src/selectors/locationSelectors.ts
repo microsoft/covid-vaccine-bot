@@ -84,7 +84,11 @@ export const getCurrentLocationObj = (currentLocation: any): any => {
 	const pathArray = currentLocation.info.path.split('/')
 	pathArray.splice(-1, 1)
 
-	return pathFind(repoFileData, pathArray)
+	return {
+		locationData: pathFind(repoFileData, pathArray),
+		pathKey: pathArray.join('.'),
+		name: pathArray.slice(-1)[0]
+	}
 }
 
 export const getLocationPhaseData = (

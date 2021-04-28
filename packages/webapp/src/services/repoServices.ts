@@ -88,83 +88,81 @@ const createWorkingBranch = async (state: any, branchName: string) => {
 	else return undefined
 }
 
+const commitFileChanges = async (method: string, actionText: string, branchName: string, filePath: string, content: any, fileSha: string) => {
+	const query = `contents/packages/plans/data/policies/${filePath}`
+	return await gitFetch(query, {
+		method,
+		body: JSON.stringify({
+			branch: branchName,
+			message: `${actionText} ${filePath}`,
+			content: content,
+			sha: fileSha,
+		}),
+	})
+}
+
 const commitChanges = async (
 	state: any,
-	branchName: string,
-	locationUpdates: any
+	branchName: string
 ) => {
 	let branchLastCommitSha = ''
-	const { committedDeletes, repoFileData, initRepoFileData } = state
+	const { committedDeletes, pendingChangeList } = state
 
-	if (locationUpdates) {
-		let skipFetch = false
+	if (pendingChangeList) {
+		const { added, modified, deleted } = pendingChangeList
 		let locationResp: any = {}
 
-		for(const locationPath of locationUpdates) {
-			const pathArray = locationPath.split('.')
-			let locationObj = pathFind(repoFileData, pathArray)
-			const isDeleted = !locationObj
-
-			if (isDeleted) {
-				locationObj = pathFind(initRepoFileData, pathArray)
-			}
-
-			skipFetch =
-				!locationObj.info?.path ||
-				committedDeletes.includes(locationObj.info.path)
-
-				const method = isDeleted ? 'DELETE' : 'PUT'
-				const message = isDeleted ? 'deleted' : 'updated'
-				const content = isDeleted
-				? undefined
-				: {
-					info: utf8_to_b64(
-						JSON.stringify(locationObj.info.content, null, '\t')
-						),
-						vaccination: utf8_to_b64(
-							JSON.stringify(locationObj.vaccination.content, null, '\t')
-							),
-							strings: utf8_to_b64(
-								createCSVDataString(locationObj.strings.content)
-								),
-							}
+		// Add
+		for (const item of added) {
+			const skipFetch = !item.data.info?.path || committedDeletes.includes(item.data.info.path)
 
 			if (!skipFetch) {
 				//Info
-				const infoQuery = `contents/packages/plans/data/policies/${locationObj.info.path}`
-				locationResp = await gitFetch(infoQuery, {
-					method,
-					body: JSON.stringify({
-						branch: branchName,
-						message: `${message} ${locationObj.info.path}`,
-						content: content?.info,
-						sha: locationObj.info.sha,
-					}),
-				})
+				locationResp = await commitFileChanges('PUT', 'Added', branchName, item.data.info.path, utf8_to_b64(JSON.stringify(item.data.info.content, null, '\t')), item.data.info.sha)
 
 				//Vaccination
-				const vacQuery = `contents/packages/plans/data/policies/${locationObj.vaccination.path}`
-				locationResp = await gitFetch(vacQuery, {
-					method,
-					body: JSON.stringify({
-						branch: branchName,
-						message: `${message} ${locationObj.vaccination.path}`,
-						content: content?.vaccination,
-						sha: locationObj.vaccination.sha,
-					}),
-				})
+				locationResp = await commitFileChanges('PUT', 'Added', branchName, item.data.vaccination.path, utf8_to_b64(JSON.stringify(item.data.vaccination.content, null, '\t')), item.data.vaccination.sha)
 
 				//Strings
-				const stringQuery = `contents/packages/plans/data/policies/${locationObj.strings.path}`
-				locationResp = await gitFetch(stringQuery, {
-					method,
-					body: JSON.stringify({
-						branch: branchName,
-						message: `${message} ${locationObj.strings.path}`,
-						content: content?.strings,
-						sha: locationObj.strings.sha,
-					}),
-				})
+				locationResp = await commitFileChanges('PUT', 'Added', branchName, item.data.strings.path, utf8_to_b64(createCSVDataString(item.data.strings.content)), item.data.strings.sha)
+			}
+		}
+
+		// Modify
+		for (const item of modified) {
+			const skipFetch = !item.data.info?.path || committedDeletes.includes(item.data.info.path)
+
+			if (!skipFetch) {
+				//Info
+				locationResp = await commitFileChanges('PUT', 'Updated', branchName, item.data.info.path, utf8_to_b64(JSON.stringify(item.data.info.content, null, '\t')), item.data.info.sha)
+
+				//Vaccination
+				locationResp = await commitFileChanges('PUT', 'Updated', branchName, item.data.vaccination.path, utf8_to_b64(JSON.stringify(item.data.vaccination.content, null, '\t')), item.data.vaccination.sha)
+
+				//Strings
+				locationResp = await commitFileChanges('PUT', 'Updated', branchName, item.data.strings.path, utf8_to_b64(createCSVDataString(item.data.strings.content)), item.data.strings.sha)
+			}
+		}
+
+		// Remove
+		for (const item of deleted) {
+			const skipFetch = !item.data.info?.path	|| committedDeletes.includes(item.data.info.path)
+
+			if (!skipFetch) {
+				//Info
+				if (item.data.info?.sha) {
+					locationResp = await commitFileChanges('DELETE', 'Removed', branchName, item.data.info.path, undefined, item.data.info.sha)
+				}
+
+				//Vaccination
+				if (item.data.vaccination?.sha) {
+					locationResp = await commitFileChanges('DELETE', 'Removed', branchName, item.data.vaccination.path, undefined, item.data.vaccination.sha)
+				}
+
+				//Strings
+				if (item.data.strings?.sha) {
+					locationResp = await commitFileChanges('DELETE', 'Removed', branchName, item.data.strings.path, undefined, item.data.strings.sha)
+				}
 			}
 		}
 
@@ -417,15 +415,13 @@ export const repoServices = async (
 				if (extraData) {
 					return await commitChanges(
 						state,
-						extraData.branchName,
-						extraData.locationUpdates
+						extraData.branchName
 					)
 				}
 				break
 			case 'createPR':
 				if (state.mainBranch) {
-					const locationUpdates = extraData[0]
-					const prFormData = extraData[2]
+					const prFormData = extraData[1]
 					if (state.loadedPRData) {
 						branchName = `refs/heads/${state.loadedPRData.head.ref}`
 					} else if (state.userWorkingBranch) {
@@ -438,7 +434,6 @@ export const repoServices = async (
 						await commitChanges(
 							state,
 							branchName,
-							locationUpdates
 						)
 					}
 

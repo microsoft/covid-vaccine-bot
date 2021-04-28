@@ -49,7 +49,6 @@ export default observer(function Review(props: ReviewProp) {
 	]
 
 	const [changesList, setChangesList] = useState<any[]>([])
-	const [locationUpdates, setLocationUpdates] = useState<any[]>([])
 	const [showLoading, setShowLoading] = useState<boolean>(false)
 	const [errorMessage, setErrorMessage] = useState<
 		{ message: string } | undefined
@@ -62,15 +61,14 @@ export default observer(function Review(props: ReviewProp) {
 
 	useEffect(() => {
 		try{
-			if (state.repoFileData && state.initRepoFileData) {
-				const changeResp = getChanges()
-				setLocationUpdates(changeResp.locationUpdates)
-				setChangesList(changeResp.changesList)
+			if (state.pendingChangeList) {
+				const pendingChangeList = getChanges()
+				setChangesList(pendingChangeList)
 			}
 		} catch (err) {
 			setErrorMessage(err)
 		}
-	}, [state.initRepoFileData, state.repoFileData])
+	}, [state.pendingChangeList])
 
 	const handleTextChange = useCallback(
 		(ev) => {
@@ -151,7 +149,6 @@ export default observer(function Review(props: ReviewProp) {
 									onClick={() => {
 										setShowLoading(true)
 										createPR([
-											locationUpdates,
 											handleSubmit,
 											formData,
 										])
