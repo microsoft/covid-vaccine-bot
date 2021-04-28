@@ -27,6 +27,7 @@ export const initialStore = {
 	pendingChanges: false,
 	isDataRefreshing: false,
 	prChanges: undefined,
+	loadedPRData: undefined,
 	userWorkingBranch: undefined,
 	userWorkingBranches: [],
 	userAccessExpired: false,

@@ -239,7 +239,6 @@ orchestrator(getLocationData, async (message) => {
 	setIsDataRefreshing(true)
 
 	const resp = await repoServices('getLocationData', location)
-
 	setLocationData(resp)
 	setIsDataRefreshing(false)
 })

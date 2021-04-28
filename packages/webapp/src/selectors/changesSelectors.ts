@@ -86,6 +86,5 @@ export const getChanges = (): {changesList: any, locationUpdates: any} => {
 		})
 	}
 
-	console.log(changesList, locationUpdates)
 	return {changesList, locationUpdates}
 }

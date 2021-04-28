@@ -5,6 +5,7 @@
 import { cloneDeep as clone } from 'lodash'
 import { toJS } from 'mobx'
 import { mutatorAction } from 'satcheljs'
+import { getChanges } from '../selectors/changesSelectors'
 import { getCurrentLocationObj } from '../selectors/locationSelectors'
 import { getAppStore } from '../store/store'
 import { createLocationDataObj, compare, pathFind } from '../utils/dataUtils'
@@ -148,7 +149,8 @@ export const setRepoFileChanges = mutatorAction(
 	(data: any[] | undefined) => {
 		if (data) {
 			const store = getAppStore()
-			const changes = compare(toJS(store.repoFileData), data)
+			//const changes = compare(toJS(store.repoFileData), data)
+			const changes = getChanges()
 
 			store.repoFileChanges = changes
 		}
@@ -203,20 +205,22 @@ export const setLocationData = mutatorAction('setLocationData', (data: any) => {
 		currLocation.strings.content = data.strings.content
 		currLocation.vaccination.content = data.vaccination.content
 
-		let initCurrLocation = pathFind(store.initRepoFileData, pathArray)
+		if (!store.prChanges) {
+			let initCurrLocation = pathFind(store.initRepoFileData, pathArray)
 
-		initCurrLocation.info.content = clone(data.info.content)
-		initCurrLocation.vaccination.content = clone(data.vaccination.content)
+			initCurrLocation.info.content = clone(data.info.content)
+			initCurrLocation.vaccination.content = clone(data.vaccination.content)
 
-		if (!initCurrLocation.strings) {
-			initCurrLocation = {
-				...initCurrLocation,
-				strings: {
-					content: clone(data.strings.content)
+			if (!initCurrLocation.strings) {
+				initCurrLocation = {
+					...initCurrLocation,
+					strings: {
+						content: clone(data.strings.content)
+					}
 				}
+			} else {
+				initCurrLocation.strings.content = clone(data.strings.content)
 			}
-		} else {
-			initCurrLocation.strings.content = clone(data.strings.content)
 		}
 	}
 })
