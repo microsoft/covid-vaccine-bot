@@ -16,7 +16,7 @@ import { addPhase, updatePhase } from '../mutators/repoMutators'
 import { getText as t } from '../selectors/intlSelectors'
 import { getLocationPhaseData } from '../selectors/locationSelectors'
 import { getAppStore } from '../store/store'
-import { formatId, toProperCase } from '../utils/textUtils'
+import { formatId } from '../utils/textUtils'
 
 import './Locations.scss'
 import PhaseForm from './PhaseForm'

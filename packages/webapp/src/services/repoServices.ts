@@ -4,7 +4,7 @@
  */
 import parse from 'csv-parse/lib/sync'
 import { getAppStore } from '../store/store'
-import { convertCSVDataToObj, pathFind } from '../utils/dataUtils'
+import { convertCSVDataToObj } from '../utils/dataUtils'
 import {
 	b64_to_utf8,
 	utf8_to_b64,
