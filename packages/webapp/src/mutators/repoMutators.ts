@@ -646,7 +646,7 @@ export const modifyMoreInfoText = mutatorAction(
 			pathArray.splice(-1, 1)
 			const isRootLocation = pathArray.length === 1
 
-			const currLocation = getCurrentLocationObj(currentLocation)
+			const { locationData: currLocation, pathKey, name } = getCurrentLocationObj(currentLocation)
 
 			const phaseGroupIndex = currLocation.vaccination.content.phases.findIndex(
 				(phase: any) => phase.id === phaseGroupId
@@ -677,15 +677,14 @@ export const modifyMoreInfoText = mutatorAction(
 
 			phaseQualifiers[qualifierIdx].moreInfoText = calcInfoKey
 
-			const pathKey = pathArray.join('.')
 			const modifyKeyIdx = store.pendingChangeList.modified.findIndex((m: any) => m.pathKey === pathKey)
 
 			if (modifyKeyIdx > -1) {
 				store.pendingChangeList.modified[modifyKeyIdx].data = currLocation
 			} else {
 				store.pendingChangeList.modified.push({
-					section: 'more info text',
-					name: pathArray.slice(-1)[0],
+					section: 'qualifier',
+					name: name,
 					pathKey: pathKey,
 					data: currLocation
 				})
@@ -723,7 +722,7 @@ export const modifyMoreInfoLinks = mutatorAction(
 				store.pendingChangeList.modified[modifyKeyIdx].data = currLocation
 			} else {
 				store.pendingChangeList.modified.push({
-					section: 'more info text',
+					section: 'qualifier',
 					name: name,
 					pathKey: pathKey,
 					data: currLocation
