@@ -193,7 +193,6 @@ export const repoServices = async (
 				return await gitFetch(`branches?per_page=100`)
 
 			case 'getCommits':
-				console.log('extraData', extraData)
 				return await gitFetch(
 					`commits?since=${extraData.since}&sha=${extraData.sha}`
 				)
