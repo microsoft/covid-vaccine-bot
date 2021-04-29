@@ -197,10 +197,6 @@ export default observer(function PhaseQualifierForm(
 								text: t('PhaseQualifierForm.FormButtons.remove'),
 								onClick: () => onRowItemRemove?.(rowItem, groupKey),
 							},
-							// {
-							// 	key: 'details',
-							// 	text: t('PhaseQualifierForm.FormButtons.details'),
-							// },
 						],
 					}}
 					title={t('PhaseQualifierForm.FormButtons.more')}
@@ -212,7 +208,7 @@ export default observer(function PhaseQualifierForm(
 					placeholder={t('PhaseQualifierForm.MoreInfoText.placeholder')}
 					multiline={true}
 					autoAdjustHeight={true}
-					resizable={false}
+					resizable={true}
 					styles={{ root: { width: 'calc(100% - 32px)', padding: '5px 0' } }}
 					value={moreInfoText}
 					onChange={onMoreInfoTextChange}
