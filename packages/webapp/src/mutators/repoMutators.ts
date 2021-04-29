@@ -5,7 +5,7 @@
 import { cloneDeep as clone } from 'lodash'
 import { mutatorAction } from 'satcheljs'
 import { getChanges } from '../selectors/changesSelectors'
-import { getCurrentLocationObj } from '../selectors/locationSelectors'
+import { getCurrentLocationObj, getLocationPhaseData } from '../selectors/locationSelectors'
 import { getAppStore } from '../store/store'
 import { createLocationDataObj, pathFind } from '../utils/dataUtils'
 import { formatId } from '../utils/textUtils'
@@ -653,6 +653,19 @@ export const modifyMoreInfoText = mutatorAction(
 
 			const { locationData: currLocation, pathKey, name } = getCurrentLocationObj(currentLocation)
 
+			const { phases, activePhase } = getLocationPhaseData(currentLocation)
+
+			if (
+				!currLocation.vaccination.content?.phases ||
+				currLocation.vaccination.content?.phases.length === 0
+			) {
+				currLocation.vaccination.content.phases = phases
+			}
+
+			if (!currLocation.vaccination.content?.activePhase) {
+				currLocation.vaccination.content.activePhase = activePhase
+			}
+
 			const phaseGroupIndex = currLocation.vaccination.content.phases.findIndex(
 				(phase: any) => phase.id === phaseGroupId
 			)
@@ -709,6 +722,19 @@ export const modifyMoreInfoLinks = mutatorAction(
 
 			const { locationData: currLocation, pathKey, name } = getCurrentLocationObj(currentLocation)
 
+			const { phases, activePhase } = getLocationPhaseData(currentLocation)
+
+			if (
+				!currLocation.vaccination.content?.phases ||
+				currLocation.vaccination.content?.phases.length === 0
+			) {
+				currLocation.vaccination.content.phases = phases
+			}
+
+			if (!currLocation.vaccination.content?.activePhase) {
+				currLocation.vaccination.content.activePhase = activePhase
+			}
+
 			const phaseGroupIndex = currLocation.vaccination.content.phases.findIndex(
 				(phase: any) => phase.id === phaseGroupId
 			)
@@ -747,6 +773,18 @@ export const updateQualifier = mutatorAction(
 			store.pendingChanges = true
 
 			const { locationData: currLocation, pathKey, name } = getCurrentLocationObj(currentLocation)
+			const { phases, activePhase } = getLocationPhaseData(currentLocation)
+
+			if (
+				!currLocation.vaccination.content?.phases ||
+				currLocation.vaccination.content?.phases.length === 0
+			) {
+				currLocation.vaccination.content.phases = phases
+			}
+
+			if (!currLocation.vaccination.content?.activePhase) {
+				currLocation.vaccination.content.activePhase = activePhase
+			}
 
 			const phaseGroupIndex = currLocation.vaccination.content.phases.findIndex(
 				(phase: any) => phase.id === phaseGroupId
@@ -787,6 +825,19 @@ export const addQualifier = mutatorAction(
 
 			const { locationData: currLocation, pathKey, name } = getCurrentLocationObj(currentLocation)
 
+			const { phases, activePhase } = getLocationPhaseData(currentLocation)
+
+			if (
+				!currLocation.vaccination.content?.phases ||
+				currLocation.vaccination.content?.phases.length === 0
+			) {
+				currLocation.vaccination.content.phases = phases
+			}
+
+			if (!currLocation.vaccination.content?.activePhase) {
+				currLocation.vaccination.content.activePhase = activePhase
+			}
+
 			const phaseGroupIndex = currLocation.vaccination.content.phases.findIndex(
 				(phase: any) => phase.id === phaseGroupId
 			)
@@ -814,6 +865,19 @@ export const removeQualifier = mutatorAction(
 			store.pendingChanges = true
 
 			const { locationData: currLocation, pathKey, name } = getCurrentLocationObj(currentLocation)
+
+			const { phases, activePhase } = getLocationPhaseData(currentLocation)
+
+			if (
+				!currLocation.vaccination.content?.phases ||
+				currLocation.vaccination.content?.phases.length === 0
+			) {
+				currLocation.vaccination.content.phases = phases
+			}
+
+			if (!currLocation.vaccination.content?.activePhase) {
+				currLocation.vaccination.content.activePhase = activePhase
+			}
 
 			const phaseGroupIndex = currLocation.vaccination.content.phases.findIndex(
 				(phase: any) => phase.id === phaseGroupId
@@ -848,6 +912,19 @@ export const removePhase = mutatorAction(
 
 			const { locationData: currLocation, pathKey } = getCurrentLocationObj(currentLocation)
 
+			const { phases, activePhase } = getLocationPhaseData(currentLocation)
+
+			if (
+				!currLocation.vaccination.content?.phases ||
+				currLocation.vaccination.content?.phases.length === 0
+			) {
+				currLocation.vaccination.content.phases = phases
+			}
+
+			if (!currLocation.vaccination.content?.activePhase) {
+				currLocation.vaccination.content.activePhase = activePhase
+			}
+
 			const removeIndex = currLocation.vaccination.content.phases.findIndex(
 				(phase: any) => phase.id === phaseId
 			)
@@ -875,7 +952,18 @@ export const updatePhase = mutatorAction(
 
 		const { locationData: currLocation, pathKey, name } = getCurrentLocationObj(currentLocation)
 
-		currLocation.vaccination = currentLocation.vaccination
+		const { phases, activePhase } = getLocationPhaseData(currentLocation)
+
+		if (
+			!currLocation.vaccination.content?.phases ||
+			currLocation.vaccination.content?.phases.length === 0
+		) {
+			currLocation.vaccination.content.phases = phases
+		}
+
+		if (!currLocation.vaccination.content?.activePhase) {
+			currLocation.vaccination.content.activePhase = activePhase
+		}
 
 		const modifyKeyIdx = store.pendingChangeList.modified.findIndex((m: any) => m.pathKey === pathKey)
 
@@ -903,6 +991,19 @@ export const addPhase = mutatorAction(
 
 			const { locationData: currLocation, pathKey } = getCurrentLocationObj(currentLocation)
 
+			const { phases, activePhase } = getLocationPhaseData(currentLocation)
+
+			if (
+				!currLocation.vaccination.content?.phases ||
+				currLocation.vaccination.content?.phases.length === 0
+			) {
+				currLocation.vaccination.content.phases = phases
+			}
+
+			if (!currLocation.vaccination.content?.activePhase) {
+				currLocation.vaccination.content.activePhase = activePhase
+			}
+
 			currLocation.vaccination.content.phases.push({
 				id,
 				label,
@@ -929,6 +1030,19 @@ export const duplicatePhase = mutatorAction(
 			store.pendingChanges = true
 
 			const { locationData: currLocation, pathKey } = getCurrentLocationObj(currentLocation)
+
+			const { phases, activePhase } = getLocationPhaseData(currentLocation)
+
+			if (
+				!currLocation.vaccination.content?.phases ||
+				currLocation.vaccination.content?.phases.length === 0
+			) {
+				currLocation.vaccination.content.phases = phases
+			}
+
+			if (!currLocation.vaccination.content?.activePhase) {
+				currLocation.vaccination.content.activePhase = activePhase
+			}
 
 			const phase = clone(
 				currLocation.vaccination.content.phases.find(
@@ -964,6 +1078,18 @@ export const setActivePhase = mutatorAction(
 			store.pendingChanges = true
 
 			const { locationData: currLocation, pathKey } = getCurrentLocationObj(currentLocation)
+			const { phases, activePhase } = getLocationPhaseData(currentLocation)
+
+			if (
+				!currLocation.vaccination.content?.phases ||
+				currLocation.vaccination.content?.phases.length === 0
+			) {
+				currLocation.vaccination.content.phases = phases
+			}
+
+			if (!currLocation.vaccination.content?.activePhase) {
+				currLocation.vaccination.content.activePhase = activePhase
+			}
 
 			currLocation.vaccination.content.activePhase = phaseId
 

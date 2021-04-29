@@ -212,7 +212,7 @@ const generateUIPhaseList = (phases: any[], activePhase: string) => {
 				String(phase.id) +
 				(phase.id === activePhase ? ` (${t('App.active')})` : ''),
 			name:
-				phase.label ?? phase.id +
+				(phase.label || phase.id) +
 				(phase.id === activePhase ? ` (${t('App.active')})` : ''),
 			qualifications: phase.qualifications.length,
 			value: phase,

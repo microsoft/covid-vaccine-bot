@@ -46,17 +46,6 @@ export default observer(function LocationPhaseQualifiers(
 			const tempPhaseList: any[] = []
 			const { phases, activePhase } = getLocationPhaseData(currentLocation)
 
-			if (
-				!currentLocation.vaccination.content?.phases ||
-				currentLocation.vaccination.content?.phases.length === 0
-			) {
-				currentLocation.vaccination.content.phases = phases
-			}
-
-			if (!currentLocation.vaccination.content?.activePhase) {
-				currentLocation.vaccination.content.activePhase = activePhase
-			}
-
 			phases.forEach((phase: any) => {
 				let isCollapsed = true
 

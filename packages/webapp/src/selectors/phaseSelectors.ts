@@ -5,6 +5,7 @@
 import { getAppStore } from '../store/store'
 import { pathFind } from '../utils/dataUtils'
 import { toProperCase } from '../utils/textUtils'
+import { isEqual } from 'lodash'
 
 const getCustomStrings = (currentLocation?: any, keyFilter?: string) => {
 	const { repoFileData, currentLanguage } = getAppStore()
@@ -172,4 +173,11 @@ export const getParentLocationVaccinationData = (currentLocation: any): any => {
 	}
 
 	return vaccinationData
+}
+
+export const isPhaseDataOverridden = (currentLocation: any): boolean => {
+	const parentVacData = getParentLocationVaccinationData(currentLocation)
+
+	const isOverridden = !isEqual(currentLocation.vaccination.content, parentVacData.content)
+	return isOverridden
 }

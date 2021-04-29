@@ -18,6 +18,7 @@ import {
 	getPhaseMoreInfoTextByKey,
 	getPhaseQualifierItemsByKey,
 	getPhaseMoreInfoUrl,
+	isPhaseDataOverridden,
 } from '../selectors/phaseSelectors'
 import { getAppStore } from '../store/store'
 
@@ -63,13 +64,14 @@ export default observer(function PhaseQualifierForm(
 	const currentPhase = locationPhases?.find(
 		(phase: { id: any }) => phase.id === rowItem.groupId
 	)
+
 	if (currentPhase) {
 		const currQualification = currentPhase?.qualifications.find(
 			(qualification: { question: any }) =>
 				qualification.question === rowItem.qualifierId
 		)
 		if (currQualification) {
-			overrideIconFlag = true
+			overrideIconFlag = isPhaseDataOverridden(currentLocation)
 			moreInfoKey = currQualification.moreInfoText
 		}
 	}
