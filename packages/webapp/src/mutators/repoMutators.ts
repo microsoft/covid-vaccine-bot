@@ -4,7 +4,6 @@
  */
 import { cloneDeep as clone } from 'lodash'
 import { mutatorAction } from 'satcheljs'
-import { getChanges } from '../selectors/changesSelectors'
 import { getCurrentLocationObj, getLocationPhaseData } from '../selectors/locationSelectors'
 import { getAppStore } from '../store/store'
 import { createLocationDataObj, pathFind } from '../utils/dataUtils'
@@ -44,15 +43,6 @@ export const setSavingCommitsFlag = mutatorAction(
 	(data: boolean) => {
 		const store = getAppStore()
 		store.isSavingCommits = data
-	}
-)
-
-export const setGlobalAndRepoChanges = mutatorAction(
-	'setGlobalAndRepoChanges',
-	() => {
-		const store = getAppStore()
-		store.initGlobalFileData = store.globalFileData
-		store.initRepoFileData = store.repoFileData
 	}
 )
 
@@ -110,6 +100,7 @@ export const setCommittedDeletes = mutatorAction(
 		}
 	}
 )
+
 export const setLoadedPRData = mutatorAction(
 	'setLoadedPRData',
 	(prData: any | undefined) => {
@@ -137,28 +128,6 @@ export const clearLoadedPRData = mutatorAction('clearLoadedPRData', () => {
 	store.prChanges = undefined
 	store.loadedPRData = undefined
 })
-
-export const setRepoFileData = mutatorAction(
-	'setRepoFileData',
-	(data: any[] | undefined) => {
-		if (data) {
-			const store = getAppStore()
-			store.repoFileData = data
-		}
-	}
-)
-
-export const setRepoFileChanges = mutatorAction(
-	'setRepoFileData',
-	(data: any[] | undefined) => {
-		if (data) {
-			const store = getAppStore()
-			const changes = getChanges()
-
-			store.repoFileChanges = changes
-		}
-	}
-)
 
 export const setInitRepoFileData = mutatorAction(
 	'setInitRepoFileData',
@@ -199,7 +168,6 @@ export const setLoadAllStringsData = mutatorAction(
 	}
 )
 
-
 export const setLocationData = mutatorAction('setLocationData', (data: any) => {
 	if (data) {
 		const store = getAppStore()
@@ -230,16 +198,6 @@ export const setLocationData = mutatorAction('setLocationData', (data: any) => {
 		}
 	}
 })
-
-export const setInitLocationsData = mutatorAction(
-	'setInitLocationsData',
-	(data: any | undefined) => {
-		if (data) {
-			const store = getAppStore()
-			store.locationsData = { ...data }
-		}
-	}
-)
 
 export const setCurrentLanguage = mutatorAction(
 	'setCurrentLanguage',

@@ -14,10 +14,7 @@ export interface AppState {
 	mainBranch?: any
 	repoFileData?: any
 	initRepoFileData?: any
-	globalFileData?: any
-	initGlobalFileData?: any
 	currentLanguage: string
-	toggleQualifier: boolean
 	isEditable: boolean
 	pendingChanges: boolean
 	isDataRefreshing: boolean
@@ -31,10 +28,6 @@ export interface AppState {
 	localization: any
 	defaultLanguage: any
 	committedDeletes: any[]
-	repoFileChanges: any
-	globalFileChanges: any
-	//restructured data objects
-	locationsData?: any
 	breadCrumbs?: any
 	pendingChangeList: {
 		added: any,

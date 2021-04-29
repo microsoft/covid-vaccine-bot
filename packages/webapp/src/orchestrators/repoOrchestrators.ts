@@ -5,7 +5,6 @@
 import { orchestrator } from 'satcheljs'
 import {
 	createPR,
-	getRepoFileData,
 	initializeGitData,
 	loadPR,
 	loadBranch,
@@ -21,7 +20,6 @@ import {
 	setBranchList,
 	clearLoadedPRData,
 	setInitRepoFileData,
-	setRepoFileChanges,
 	setIssuesList,
 	setLoadedPRData,
 	setPendingChanges,
@@ -81,11 +79,6 @@ orchestrator(createPR, async (message) => {
 
 		clearLoadedPRData()
 	}
-})
-
-orchestrator(getRepoFileData, async () => {
-	const resp = await repoServices('getRepoFileData')
-	setInitRepoFileData(resp)
 })
 
 orchestrator(loadAllStringsData, async () => {
@@ -149,14 +142,14 @@ orchestrator(loadBranch, async (message) => {
 	)
 
 	const date = new Date(parseInt(branch.name.split('-policy-')[1])).toISOString()
-	
+
 	const commitResp = await repoServices(
 		'getCommits',
 		{
 			since: date,
 			sha: branch.name
 		}
-	) 
+	)
 	setCommittedDeletes(commitResp)
 	if (resp.ok === false) {
 		handleError(
@@ -186,7 +179,6 @@ orchestrator(loadPR, async (message) => {
 		if (resp.ok === false) {
 			handleError(resp)
 		} else {
-			setRepoFileChanges(resp)
 			setInitRepoFileData(resp)
 		}
 		setUserWorkingBranch(undefined)

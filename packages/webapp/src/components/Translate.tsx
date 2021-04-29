@@ -20,30 +20,23 @@ import { convertCSVDataToObj } from '../utils/dataUtils'
 import {
 	createCSVDataString,
 } from '../utils/textUtils'
-
 import { loadAllStringsData } from '../actions/repoActions'
 
 import './Translate.scss'
-
-
 
 export default observer(function Translate() {
 	const {
 		repoFileData,
 		isDataRefreshing,
 	} = getAppStore()
-	
-	const [showLoading, setShowLoading] = useState<boolean>(false)	
+
+	const [showLoading, setShowLoading] = useState<boolean>(false)
 	const fileUploadRef = createRef<HTMLInputElement>()
 	const [errorMessage, setErrorMessage] = useState<{ message: string } | undefined>()
 
 	useEffect( () => {
-
 		loadAllStringsData()
-
 	},[])
-
-
 
 	const onReaderLoadData = (readerEvent: any) => {
 		try {
@@ -104,34 +97,35 @@ export default observer(function Translate() {
 	}
 
 
-	const recursiveFindStrings = async (elem:any) => {
+
+	const recursiveFindStrings = useCallback(async (elem:any) => {
 		const returnStrings = {}
 		if(elem.regions){
 			for(const item of Object.entries(elem.regions)){
 				const regionStrings = await recursiveFindStrings(item[1])
 				Object.assign(returnStrings, regionStrings)
-				
 			}
 		}
 
 		return { ...elem.strings?.content, ...returnStrings}
 
-	}
+	},[])
 
-	const onFileDownload = async () => {
+
+	const onFileDownload = useCallback(async () => {
 		let stringsObj = {}
 
 		for(const item of Object.entries(repoFileData)){
 			const location:any = item[1]
 			const results = await recursiveFindStrings(location)
 			stringsObj = {...stringsObj, ...results}
-		
 		}
 		const stringData = createCSVDataString(stringsObj)
 		const csvData = new Blob([stringData], { type: 'text/csv' })
 		const csvUrl = URL.createObjectURL(csvData)
 		window.open(csvUrl)
-	}
+
+	}, [repoFileData, recursiveFindStrings])
 
 	return (
 		<div className="translatePageContainer">
@@ -178,7 +172,6 @@ export default observer(function Translate() {
 								</div>
 
 							</div>
-							
 						</section>
 					) : (
 						<section className="loadingContainer">
