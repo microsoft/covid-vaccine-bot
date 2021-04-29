@@ -17,8 +17,7 @@ import {
 	getPhaseQualifierItems,
 	getPhaseMoreInfoTextByKey,
 	getPhaseQualifierItemsByKey,
-	getPhaseMoreInfoUrl,
-	isPhaseDataOverridden,
+	getPhaseMoreInfoUrl
 } from '../selectors/phaseSelectors'
 import { getAppStore } from '../store/store'
 
@@ -57,7 +56,6 @@ export default observer(function PhaseQualifierForm(
 	const changedItem = useRef<any>(rowItem)
 	changedItem.current.moreInfoContent = moreInfoText
 
-	let overrideIconFlag = false
 	let moreInfoKey = rowItem.moreInfoKey
 
 	const locationPhases = rowItem.location.vaccination.content.phases
@@ -71,7 +69,6 @@ export default observer(function PhaseQualifierForm(
 				qualification.question === rowItem.qualifierId
 		)
 		if (currQualification) {
-			overrideIconFlag = isPhaseDataOverridden(currentLocation)
 			moreInfoKey = currQualification.moreInfoText
 		}
 	}
@@ -166,11 +163,6 @@ export default observer(function PhaseQualifierForm(
 			style={{ pointerEvents: isEditable ? 'unset' : 'none' }}
 		>
 			<div className="mainRow">
-				<FontIcon
-					iconName="InfoSolid"
-					className="infoIcon"
-					style={{ visibility: overrideIconFlag ? 'visible' : 'hidden' }}
-				/>
 				<Dropdown
 					options={phaseTagItems.current}
 					defaultSelectedKey={rowItem.tagKey}

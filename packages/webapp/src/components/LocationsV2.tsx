@@ -2,7 +2,7 @@
  * Copyright (c) Microsoft. All rights reserved.
  * Licensed under the MIT license. See LICENSE file in the project.
  */
-import { ProgressIndicator } from '@fluentui/react'
+import { MessageBar, ProgressIndicator } from '@fluentui/react'
 import { useBoolean } from '@uifabric/react-hooks'
 import { observer } from 'mobx-react-lite'
 import { useCallback, useState, useEffect } from 'react'
@@ -25,6 +25,7 @@ import LocationsBreadcrumbs from './LocationsBreadcrumbs'
 import LocationStates from './LocationsStates'
 
 import './Locations.scss'
+import { getParentLocationData, isPhaseDataOverridden } from '../selectors/phaseSelectors'
 
 export default observer(function LocationsV2() {
 	const {
@@ -122,6 +123,16 @@ export default observer(function LocationsV2() {
 		showPhaseComponent()
 	}, [showPhaseComponent, currentLocation])
 
+	let locationName = 'this'
+	let parentLocationName = 'the parent location'
+	if (currentLocation?.info) {
+		const parentData = getParentLocationData(currentLocation)
+		locationName = getCustomString(currentLocation, currentLocation.info.content.name) || toProperCase(currentLocation.info.content.name)
+
+		if (parentData?.info) {
+			parentLocationName = getCustomString(parentData, parentData.info.content.name) || toProperCase(parentData.info.content.name)
+		}
+	}
 	return (
 		<div className="locationPageContainer">
 			<div className="bodyContainer">
@@ -140,6 +151,19 @@ export default observer(function LocationsV2() {
 							<>
 								{currentLocation && (
 									<>
+										{Object.keys(breadCrumbs).length > 1 && (
+											<MessageBar messageBarType={5}>
+											{isPhaseDataOverridden(currentLocation) ? (
+												<div>
+													Phase information below is specific to {locationName} only.
+												</div>
+											):(
+												<div>
+													Currently adopting the phase information of {parentLocationName}. Applying changes will make the phase data specific to {locationName} only.
+												</div>
+											)}
+										</MessageBar>
+										)}
 										<LocationDetails currentLocation={currentLocation} />
 										<LocationPhaseList
 											currentLocation={currentLocation}

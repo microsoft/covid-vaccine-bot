@@ -143,6 +143,20 @@ export const getPhaseMoreInfoUrl = (rowItem: any): string => {
 	return rowItem.moreInfoUrl
 }
 
+export const getParentLocationData = (currentLocation: any): any => {
+	const { repoFileData } = getAppStore()
+	const pathArray = currentLocation.info.path.split('/')
+	const currentLocationRoot = currentLocation.info.path.split('/')[0]
+	pathArray.splice(-1, 1) //remove info.json
+	pathArray.splice(-2, 2) //remove current location level
+
+	if (pathArray.length === 0) {
+		return repoFileData[currentLocationRoot]
+	} else {
+		return pathFind(repoFileData, pathArray)
+	}
+}
+
 export const getParentLocationVaccinationData = (currentLocation: any): any => {
 	const { repoFileData } = getAppStore()
 	const pathArray = currentLocation.info.path.split('/')
@@ -177,7 +191,12 @@ export const getParentLocationVaccinationData = (currentLocation: any): any => {
 
 export const isPhaseDataOverridden = (currentLocation: any): boolean => {
 	const parentVacData = getParentLocationVaccinationData(currentLocation)
-
-	const isOverridden = !isEqual(currentLocation.vaccination.content, parentVacData.content)
-	return isOverridden
+	if (
+		!currentLocation.vaccination.content?.phases ||
+		currentLocation.vaccination.content?.phases.length === 0
+	) {
+		return false
+	} else {
+		return !isEqual(currentLocation.vaccination.content, parentVacData.content)
+	}
 }
