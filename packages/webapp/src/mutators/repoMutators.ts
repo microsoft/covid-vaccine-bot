@@ -31,6 +31,11 @@ export const setPendingChanges = mutatorAction(
 	(pendingChanges: boolean) => {
 		const store = getAppStore()
 		store.pendingChanges = pendingChanges
+		store.pendingChangeList = {
+			added: [],
+			modified: [],
+			deleted: []
+		}
 	}
 )
 
