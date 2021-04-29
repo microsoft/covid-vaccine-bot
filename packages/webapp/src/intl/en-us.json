@@ -311,7 +311,7 @@
 		},
 		"TemplateButtons": {
 			"download": "Download Template",
-			"upload": "Upload File"
+			"upload": "Click Here to Upload"
 		},
 		"error": {
 			"unexpected": "Unexpected:",

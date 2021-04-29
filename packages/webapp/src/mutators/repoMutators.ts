@@ -1174,19 +1174,34 @@ export const updateRootLocationQualifiers = mutatorAction(
 	}
 )
 
-const recursiveFindAndReplace = (key: string, saveObj: any, location: any) => {
+const recursiveFindAndReplace = (key: string, saveObj: any, location: any, changeList:any) => {
 	if (
 		location.strings &&
 		location.strings.content &&
 		location.strings.content[key]
 	) {
+		const { locationData, pathKey, name } = getCurrentLocationObj(location) 
 		location.strings.content[key] = saveObj
+
+		const translateChangeKey = changeList.findIndex((m: any) => m.pathKey === pathKey && m.section === 'translations')
+		if(translateChangeKey === -1){
+			changeList.push({
+					section: 'translations',
+					name: name,
+					pathKey: pathKey,
+					data: locationData
+				})
+		}
 		return
 	}
-	if (location.regions && location.regions.length > 0) {
-		location.regions.forEach((region: any) => {
-			recursiveFindAndReplace(key, saveObj, region)
-		})
+	if (location.regions) {
+			for(const region of Object.keys(location.regions)){
+			const regionObj = location.regions[region]
+			if (JSON.stringify(regionObj).includes(key)) {
+				recursiveFindAndReplace(key, saveObj, regionObj, changeList)
+				break
+			}
+		}
 	}
 }
 
@@ -1196,16 +1211,16 @@ export const updateStrings = mutatorAction(
 		if (stringsList) {
 			const store = getAppStore()
 			store.pendingChanges = true
-			Object.keys(stringsList).forEach((stringId: string) => {
-				
+			Object.keys(stringsList).forEach((stringId: string) => {			
 					for (const item of Object.keys(store.repoFileData)) {
 						const location = store.repoFileData[item]
 						if (JSON.stringify(location).includes(stringId)) {
-							recursiveFindAndReplace(stringId, stringsList[stringId], location)
+							recursiveFindAndReplace(stringId, stringsList[stringId], location, store.pendingChangeList.modified)
 							break
 						}
 					}
 				})
+			store.repoFileData = { ...store.repoFileData }
 		}
 	}
 )

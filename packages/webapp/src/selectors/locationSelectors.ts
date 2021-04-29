@@ -23,7 +23,7 @@ export const getCustomString = (
 		: [...Object.entries(rootRepo.strings.content)]
 
 	const stringSearch = stringsList.find(
-		([key, _value]: [string, any]) =>
+		([key, _value]: [string, any]) => 
 			key.toLowerCase() === keyFilter.toLowerCase()
 	)
 	if (stringSearch) {

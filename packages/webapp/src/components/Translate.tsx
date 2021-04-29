@@ -10,7 +10,7 @@ import {
 } from '@fluentui/react'
 import parse from 'csv-parse/lib/sync'
 import { observer } from 'mobx-react-lite'
-import { useState, useCallback, useEffect, createRef } from 'react'
+import { useState,  useEffect, createRef } from 'react'
 import {
 	updateStrings,
 } from '../mutators/repoMutators'
@@ -31,7 +31,6 @@ export default observer(function Translate() {
 	const {
 		repoFileData,
 		isDataRefreshing,
-		pendingChanges,
 	} = getAppStore()
 	
 	const [showLoading, setShowLoading] = useState<boolean>(false)	
@@ -65,8 +64,13 @@ export default observer(function Translate() {
 	const onFileUpload = (e: any) => {
 		setErrorMessage(undefined)
 		if (e.target.files.length > 0) {
+			
+			handleFileUpload(e.target.files[0])
+		}
+	}
+
+	const handleFileUpload = (file:any) => {
 			setShowLoading(true)
-			const file = e.target.files[0]
 			if (file.type === 'text/csv') {
 				const reader = new FileReader()
 				reader.onload = onReaderLoadData
@@ -75,16 +79,33 @@ export default observer(function Translate() {
 				setErrorMessage(new Error(t('Translate.error.invalidFileType')))
 				setShowLoading(false)
 			}
-		}
+
 	}
 
 	const triggerFileOnClick = () => {
 		fileUploadRef.current?.click()
 	}
 
+	const onDragFile = (e:any) =>{
+
+		e.preventDefault();
+    	e.stopPropagation();
+	}
+
+	const onDropFile = (e:any) =>{
+
+		e.preventDefault();
+    	e.stopPropagation();
+
+		if (e.dataTransfer.items[0].kind === 'file') {
+			handleFileUpload(e.dataTransfer.items[0].getAsFile())
+		}
+
+	}
+
+
 	const recursiveFindStrings = async (elem:any) => {
 		const returnStrings = {}
-		console.log(elem.info.path)
 		if(elem.regions){
 			for(const item of Object.entries(elem.regions)){
 				const regionStrings = await recursiveFindStrings(item[1])
@@ -97,18 +118,7 @@ export default observer(function Translate() {
 
 	}
 
-	const searchForStrings = (elem: any, resultObj: any) => {
-		if (elem.strings && elem.strings.content) {
-			Object.assign(resultObj, elem.strings.content)
-		}
-		if (elem.regions && elem.regions.length > 0) {
-			elem.regions.forEach((region: any) => {
-				searchForStrings(region, resultObj)
-			})
-		}
-	}
-
-	const onFileDownload = useCallback(async () => {
+	const onFileDownload = async () => {
 		let stringsObj = {}
 
 		for(const item of Object.entries(repoFileData)){
@@ -121,15 +131,7 @@ export default observer(function Translate() {
 		const csvData = new Blob([stringData], { type: 'text/csv' })
 		const csvUrl = URL.createObjectURL(csvData)
 		window.open(csvUrl)
-	}, [repoFileData])
-
-	// useEffect(() => {
-	// 	mainLanguage.current = currentLanguage
-	// 	buildTranslationsLists()
-	// 	if (!pendingChanges) {
-	// 		onTranslationFilterChange(null, { key: translationFilterState })
-	// 	}
-	// }, [currentLanguage, mainLanguage, buildTranslationsLists, pendingChanges, onTranslationFilterChange, translationFilterState])
+	}
 
 	return (
 		<div className="translatePageContainer">
@@ -155,7 +157,7 @@ export default observer(function Translate() {
 					)}
 					{!(showLoading || isDataRefreshing) ? (
 						<section>
-							<div className="filterGroup">
+							<div className="fileDropZone" onDragEnter={onDragFile} onDragOver={onDragFile} onDrop={onDropFile}>
 
 								<div className="fileOptions">
 									<input
@@ -163,7 +165,7 @@ export default observer(function Translate() {
 										type="file"
 										onChange={onFileUpload}
 									/>
-
+									<p>Drag and Drop translation file here</p>
 									<button onClick={onFileDownload}>
 										<FontIcon iconName="Download" />
 										{t('Translate.TemplateButtons.download')}
@@ -174,6 +176,7 @@ export default observer(function Translate() {
 										{t('Translate.TemplateButtons.upload')}
 									</button>
 								</div>
+
 							</div>
 							
 						</section>

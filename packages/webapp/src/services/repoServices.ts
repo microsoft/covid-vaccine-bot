@@ -133,14 +133,20 @@ const commitChanges = async (
 			const skipFetch = !item.data.info?.path || committedDeletes.includes(item.data.info.path)
 
 			if (!skipFetch) {
-				//Info
-				locationResp = await commitFileChanges('PUT', 'Updated', branchName, item.data.info.path, utf8_to_b64(JSON.stringify(item.data.info.content, null, '\t')), item.data.info.sha)
 
-				//Vaccination
-				locationResp = await commitFileChanges('PUT', 'Updated', branchName, item.data.vaccination.path, utf8_to_b64(JSON.stringify(item.data.vaccination.content, null, '\t')), item.data.vaccination.sha)
+				if(item.data.info.content){
+					//Info
+					locationResp = await commitFileChanges('PUT', 'Updated', branchName, item.data.info.path, utf8_to_b64(JSON.stringify(item.data.info.content, null, '\t')), item.data.info.sha)
+				}
 
-				//Strings
-				locationResp = await commitFileChanges('PUT', 'Updated', branchName, item.data.strings.path, utf8_to_b64(createCSVDataString(item.data.strings.content)), item.data.strings.sha)
+				if(item.data.vaccination.content){
+					//Vaccination
+					locationResp = await commitFileChanges('PUT', 'Updated', branchName, item.data.vaccination.path, utf8_to_b64(JSON.stringify(item.data.vaccination.content, null, '\t')), item.data.vaccination.sha)
+				}
+				if(item.data.strings.content){
+					//Strings
+					locationResp = await commitFileChanges('PUT', 'Updated', branchName, item.data.strings.path, utf8_to_b64(createCSVDataString(item.data.strings.content)), item.data.strings.sha)
+				}
 			}
 		}
 
@@ -374,7 +380,7 @@ export const repoServices = async (
 					location.info.content = JSON.parse(b64_to_utf8(infoData.content))
 				}
 
-				if (location.strings) {
+				if (location.strings && !location.strings.content) {
 					const stringsData = await getContent(
 						String(location.strings.url),
 						String(state.accessToken)
@@ -383,7 +389,7 @@ export const repoServices = async (
 					location.strings.content = convertCSVDataToObj(
 						parse(b64_to_utf8(stringsData.content), { columns: true })
 					)
-				} else {
+				} else if(!location.strings){
 					location.strings = {
 						name: location.info.content.id + '.csv',
 						path: `${pathStr}/${location.info.content.id}.csv`,
