@@ -20,31 +20,23 @@ import { convertCSVDataToObj } from '../utils/dataUtils'
 import {
 	createCSVDataString,
 } from '../utils/textUtils'
-
 import { loadAllStringsData } from '../actions/repoActions'
 
 import './Translate.scss'
-
-
 
 export default observer(function Translate() {
 	const {
 		repoFileData,
 		isDataRefreshing,
-		pendingChanges,
 	} = getAppStore()
-	
-	const [showLoading, setShowLoading] = useState<boolean>(false)	
+
+	const [showLoading, setShowLoading] = useState<boolean>(false)
 	const fileUploadRef = createRef<HTMLInputElement>()
 	const [errorMessage, setErrorMessage] = useState<{ message: string } | undefined>()
 
 	useEffect( () => {
-
 		loadAllStringsData()
-
 	},[])
-
-
 
 	const onReaderLoadData = (readerEvent: any) => {
 		try {
@@ -82,31 +74,30 @@ export default observer(function Translate() {
 		fileUploadRef.current?.click()
 	}
 
-	const recursiveFindStrings = async (elem:any) => {
+	const recursiveFindStrings = useCallback(async (elem:any) => {
 		const returnStrings = {}
-		console.log(elem.info.path)
+		//console.log(elem.info.path)
 		if(elem.regions){
 			for(const item of Object.entries(elem.regions)){
 				const regionStrings = await recursiveFindStrings(item[1])
 				Object.assign(returnStrings, regionStrings)
-				
 			}
 		}
 
 		return { ...elem.strings?.content, ...returnStrings}
 
-	}
+	},[])
 
-	const searchForStrings = (elem: any, resultObj: any) => {
-		if (elem.strings && elem.strings.content) {
-			Object.assign(resultObj, elem.strings.content)
-		}
-		if (elem.regions && elem.regions.length > 0) {
-			elem.regions.forEach((region: any) => {
-				searchForStrings(region, resultObj)
-			})
-		}
-	}
+	// const searchForStrings = (elem: any, resultObj: any) => {
+	// 	if (elem.strings && elem.strings.content) {
+	// 		Object.assign(resultObj, elem.strings.content)
+	// 	}
+	// 	if (elem.regions && elem.regions.length > 0) {
+	// 		elem.regions.forEach((region: any) => {
+	// 			searchForStrings(region, resultObj)
+	// 		})
+	// 	}
+	// }
 
 	const onFileDownload = useCallback(async () => {
 		let stringsObj = {}
@@ -115,21 +106,12 @@ export default observer(function Translate() {
 			const location:any = item[1]
 			const results = await recursiveFindStrings(location)
 			stringsObj = {...stringsObj, ...results}
-		
 		}
 		const stringData = createCSVDataString(stringsObj)
 		const csvData = new Blob([stringData], { type: 'text/csv' })
 		const csvUrl = URL.createObjectURL(csvData)
 		window.open(csvUrl)
-	}, [repoFileData])
-
-	// useEffect(() => {
-	// 	mainLanguage.current = currentLanguage
-	// 	buildTranslationsLists()
-	// 	if (!pendingChanges) {
-	// 		onTranslationFilterChange(null, { key: translationFilterState })
-	// 	}
-	// }, [currentLanguage, mainLanguage, buildTranslationsLists, pendingChanges, onTranslationFilterChange, translationFilterState])
+	}, [repoFileData, recursiveFindStrings])
 
 	return (
 		<div className="translatePageContainer">
@@ -175,7 +157,6 @@ export default observer(function Translate() {
 									</button>
 								</div>
 							</div>
-							
 						</section>
 					) : (
 						<section className="loadingContainer">
