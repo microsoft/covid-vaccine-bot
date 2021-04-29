@@ -46,7 +46,7 @@ export class ProviderLocationsStore {
 		const queryPos = { lat, lon }
 		const radiusMeters = radiusMiles * MILES_TO_METERS
 		const minDate = new Date()
-		minDate.setDate(minDate.getDate() - 2)
+		minDate.setDate(minDate.getDate() - 3)
 		const response = await this.container.items.query<ProviderLocation>(
 			{
 				query,
