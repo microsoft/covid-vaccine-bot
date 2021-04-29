@@ -52,7 +52,11 @@ async function processLocation(
 	})
 	const result = await queryResponse.fetchAll()
 	const existing = result.resources.length > 0 ? result.resources[0] : {}
-	const updated = { ...existing, ...loc }
+	const updated = {
+		...existing,
+		...loc,
+		last_updated: new Date().toISOString(),
+	}
 	try {
 		await container.items.upsert(updated)
 	} catch (err) {

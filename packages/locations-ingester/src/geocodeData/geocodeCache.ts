@@ -14,7 +14,10 @@ export type GeoCache = Map<string, GeoPoint | null>
 
 export function readGeocodeCache(): GeoCache {
 	const cache = new Map<string, GeoPoint>()
-	if (fs.existsSync(GEO_CACHE_FILE)) {
+	if (process.env.BUST_GEO_CACHE) {
+		console.log('Busting Geo-Cache')
+	} else if (fs.existsSync(GEO_CACHE_FILE)) {
+		console.log('Loading Geo-Cache')
 		// eslint-disable-next-line @typescript-eslint/no-var-requires
 		const data = require(GEO_CACHE_FILE) as PersistedGeoCacheItem[]
 		data.forEach((d) => cache.set(d.id, d.coordinates))

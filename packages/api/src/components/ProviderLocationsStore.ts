@@ -10,23 +10,25 @@ const geodist = require('geodist')
 const MILES_TO_METERS = 1609.344
 
 const FIND_PROVIDERS_IN_RADIUS = `
-	select * 
-	from providers p 
-	where 
-		ST_DISTANCE(
-			p.position, 
-			{ "type": "Point", "coordinates": [@lon, @lat]}
-		) < @radiusMeters
-`
-const FIND_PROVIDERS_IN_RADIUS_WITH_STOCK = `
-	select * 
-	from providers p 
-	where 
+	SELECT * 
+	FROM providers p 
+	WHERE 
 		ST_DISTANCE(
 			p.position, 
 			{ "type": "Point", "coordinates": [@lon, @lat]}
 		) < @radiusMeters AND
-	  p.any_in_stock=true
+	p.last_updated >= @minDate
+`
+const FIND_PROVIDERS_IN_RADIUS_WITH_STOCK = `
+	SELECT * 
+	FROM providers p 
+	WHERE 
+		ST_DISTANCE(
+			p.position, 
+			{ "type": "Point", "coordinates": [@lon, @lat]}
+		) < @radiusMeters AND
+	  p.any_in_stock=true AND
+		p.last_updated >= @minDate
 `
 
 export class ProviderLocationsStore {
@@ -43,6 +45,8 @@ export class ProviderLocationsStore {
 			: FIND_PROVIDERS_IN_RADIUS
 		const queryPos = { lat, lon }
 		const radiusMeters = radiusMiles * MILES_TO_METERS
+		const minDate = new Date()
+		minDate.setDate(minDate.getDate() - 2)
 		const response = await this.container.items.query<ProviderLocation>(
 			{
 				query,
@@ -50,6 +54,7 @@ export class ProviderLocationsStore {
 					{ name: '@lat', value: lat },
 					{ name: '@lon', value: lon },
 					{ name: '@radiusMeters', value: radiusMeters },
+					{ name: '@minDate', value: minDate.toISOString() },
 				],
 			},
 			{

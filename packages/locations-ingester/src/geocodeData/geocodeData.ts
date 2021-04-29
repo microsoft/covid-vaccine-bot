@@ -18,6 +18,7 @@ function getSourceFile(): string {
 	const filePath = getLatestFilePath()
 	return filePath.replace('.csv', '.json')
 }
+
 /**
  * Collates records in the given CSV into the target JSON output format
  * @param file The CSV File path
@@ -112,15 +113,14 @@ async function getPosition(
 async function getPositionFromService(
 	provider: ProviderLocation
 ): Promise<GeoPoint | null> {
-	const query = `${provider.location.street1} ${provider.location.zip}`
 	const response = await axios.get(API_URL, {
 		params: {
 			'api-version': '1.0',
 			'subscription-key': MAPS_KEY,
 			limit: 1,
-			query: `"${query}"`,
+			query: `"${getLocationQueryText(provider)}"`,
 		},
-		timeout: 5000,
+		timeout: 15000,
 	})
 	if (
 		Object.keys(response.headers).some((s) => s.startsWith('x-ms-ratelimit'))
@@ -133,4 +133,11 @@ async function getPositionFromService(
 		null
 	)
 	return pos ? ([pos.lon, pos.lat] as GeoPoint) : null
+}
+
+function getLocationQueryText({
+	location: { street1, city, state, zip },
+}: ProviderLocation): string {
+	return `${street1} 
+	${city}, ${state} ${zip}`
 }
