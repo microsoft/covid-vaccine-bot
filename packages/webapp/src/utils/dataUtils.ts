@@ -2,7 +2,6 @@
  * Copyright (c) Microsoft. All rights reserved.
  * Licensed under the MIT license. See LICENSE file in the project.
  */
-import { isEqual, reduce, map } from 'lodash'
 export const convertCSVDataToObj = (csvData: any): any => {
 	const returnObj: any = {}
 
@@ -13,13 +12,6 @@ export const convertCSVDataToObj = (csvData: any): any => {
 		const stringId: string = row[stringLabel]
 
 		delete row[stringLabel]
-		Object.keys(row).forEach((k) => {
-			if (!k.endsWith('sms') || !k.endsWith('voice')) {
-				!(`${k}-sms` in row) && (row[`${k}-sms`] = '')
-				!(`${k}-voice` in row) && (row[`${k}-voice`] = '')
-			}
-		})
-
 		returnObj[stringId.toLowerCase()] = row
 	})
 
@@ -142,110 +134,4 @@ export const createLocationDataObj = (
 			url: '',
 		},
 	}
-}
-
-export const compare = function (a: any, b: any): any {
-	const result: {
-		different: any[]
-		missing_from_first: any[]
-		missing_from_second: any[]
-	} = {
-		different: [],
-		missing_from_first: [],
-		missing_from_second: [],
-	}
-
-	reduce(
-		a,
-		function (_result, value, key) {
-			if (b?.hasOwnProperty(key)) {
-				if (isEqual(value, b[key])) {
-					return _result
-				} else {
-					if (typeof a[key] != typeof {} || typeof b[key] != typeof {}) {
-						//dead end.
-						_result.different.push(key)
-						return _result
-					} else {
-						const deeper = compare(a[key], b[key])
-						_result.different = _result.different.concat(
-							map(deeper.different, (sub_path) => {
-								if (sub_path.includes(key)) {
-									return sub_path
-								}
-								const subKey = key + '.' + sub_path
-								return subKey
-							})
-						)
-
-						_result.missing_from_second = _result.missing_from_second.concat(
-							map(deeper.missing_from_second, (sub_path) => {
-								if (sub_path.includes(key)) {
-									return sub_path
-								}
-								const subKey = key + '.' + sub_path
-								return subKey
-							})
-						)
-
-						_result.missing_from_first = _result.missing_from_first.concat(
-							map(deeper.missing_from_first, (sub_path) => {
-								if (sub_path.includes(key)) {
-									return sub_path
-								}
-								const subKey = key + '.' + sub_path
-								return subKey
-							})
-						)
-						return _result
-					}
-				}
-			} else {
-				_result.missing_from_second.push(key)
-				return _result
-			}
-		},
-		result
-	)
-
-	reduce(
-		b,
-		function (_result, value, key) {
-			if (a?.hasOwnProperty(key)) {
-				return _result
-			} else {
-				if (key === 'regions') {
-					const resp = buildPath(value)
-					resp.forEach(k => {
-						_result.missing_from_first.push(k)
-					})
-				} else {
-					_result.missing_from_first.push(key)
-				}
-				return _result
-			}
-		},
-		result
-	)
-
-	return result
-}
-
-const buildPath = (obj: any) => {
-	let res: any[] = [];
-	(function recurse(obj, current?: any) {
-		for(var key in obj) {
-		  var value = obj[key];
-		  var newKey = (current ? current + "." + key : key);  // joined key with dot
-		  if(value && typeof value === "object") {
-			recurse(value, newKey);  // it's a nested object, so do it again
-		  } else {
-			  if (newKey.endsWith('info.content.name')) {
-				res.push(value.replace('name.',''));  // it's not an object, so set the property
-			}
-		  }
-		}
-	  })(obj);
-
-	return res
 }

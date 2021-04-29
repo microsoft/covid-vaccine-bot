@@ -72,18 +72,8 @@ export const b64_to_utf8 = (str: string): string => {
 	return decodeURIComponent(escape(atob(str)))
 }
 
-export const getLanguageKeysWithSMSVoice = (): string[] => {
-	const languageKeys: any[] = []
-	getLanguageKeys().forEach((l) => {
-		languageKeys.push(l)
-		languageKeys.push(`${l}-sms`)
-		languageKeys.push(`${l}-voice`)
-	})
-	return languageKeys
-}
-
 export const createCSVDataString = (contentObj: any): string => {
-	const languageKeys = getLanguageKeysWithSMSVoice()
+	const languageKeys = getLanguageKeys()
 	const contentKeys = Object.keys(contentObj)
 
 	let result = 'String ID,' + languageKeys.join(',') + '\n'
