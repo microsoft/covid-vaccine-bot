@@ -23,7 +23,7 @@
 	"dependencies": {
 		"@azure/cosmos": "^3.11.0",
 		"@azure/storage-blob": "^12.5.0",
-		"aws-sdk": "^2.892.0",
+		"aws-sdk": "^2.896.0",
 		"axios": "^0.21.1",
 		"batch2": "^2.0.0",
 		"config": "^3.3.6",
@@ -33,11 +33,11 @@
 	},
 	"devDependencies": {
 		"@azure/functions": "^1.2.3",
-		"@essex/scripts": "^13.0.0",
+		"@essex/scripts": "^14.0.0",
 		"@tsconfig/node14": "^1.0.0",
 		"@types/config": "^0.0.38",
 		"@types/lodash": "^4.14.168",
-		"@types/node": "^14.14.41",
+		"@types/node": "^14.14.43",
 		"@types/progress": "^2.0.3",
 		"npm-run-all": "^4.1.5",
 		"ts-node": "^9.1.1",
