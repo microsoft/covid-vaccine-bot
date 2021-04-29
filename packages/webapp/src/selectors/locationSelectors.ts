@@ -32,53 +32,6 @@ export const getCustomString = (
 	return ''
 }
 
-export const getStateCustomStrings = (
-	selectedState: any,
-	keyFilter: string
-): string => {
-	const returnVal = getCustomStrings(selectedState.value, keyFilter)
-	if (returnVal.length > 0) return returnVal[0].text
-
-	return ''
-}
-
-export const getRegionCustomStrings = (
-	selectedRegion: any,
-	keyFilter: string
-): string => {
-	const { repoFileData } = getAppStore()
-	const selectedState =
-		repoFileData?.[selectedRegion.value.info.path.split('/')[0]]
-
-	const returnVal = getCustomStrings(selectedState, keyFilter)
-	if (returnVal.length > 0) return returnVal[0].text
-
-	return ''
-}
-
-const getCustomStrings = (selectedState: any, keyFilter: string): any[] => {
-	const { globalFileData, currentLanguage } = getAppStore()
-
-	const customStringsList: any[] = selectedState
-		? [
-				...Object.entries(selectedState?.strings?.content ?? {}),
-				...Object.entries(globalFileData.customStrings.content),
-		  ]
-		: [...Object.entries(globalFileData.customStrings.content)]
-	const filteredList = keyFilter
-		? customStringsList.filter(([key, _value]: [string, any]) =>
-				key.includes(keyFilter.toLowerCase())
-		  )
-		: customStringsList
-
-	return filteredList.map(([key, value]: [string, any]) => {
-		return {
-			key: key,
-			text: value[currentLanguage],
-		}
-	})
-}
-
 export const getCurrentLocationObj = (currentLocation: any): any => {
 	const { repoFileData } = getAppStore()
 	const pathArray = currentLocation.info.path.split('/')

@@ -328,7 +328,7 @@ export const repoServices = async (
 				const policyFolderData = loadPolicyFolderResponse
 				const stringsData: any = []
 
-				for(const [_key, value ] of Object.entries(policyFolderData.tree)) {
+				for(const value of Object.values(policyFolderData.tree)) {
 					const element = value as any
 					if (element.type !== 'tree') {
 						const lastInstance = element.path.lastIndexOf('/')

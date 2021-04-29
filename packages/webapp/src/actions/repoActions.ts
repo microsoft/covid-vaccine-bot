@@ -8,7 +8,6 @@ export const createPR = action('createPR', (fileData: any) => ({
 	fileData,
 }))
 
-export const getRepoFileData = action('getRepoFileData')
 export const loadAllStringsData = action('loadAllStringsData')
 
 export const initializeGitData = action('initializeGitData')

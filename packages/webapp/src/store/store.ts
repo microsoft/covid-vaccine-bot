@@ -18,11 +18,8 @@ export const initialStore = {
 	issues: [],
 	repoFileData: undefined,
 	initRepoFileData: undefined,
-	globalFileData: undefined,
-	initGlobalFileData: undefined,
 	mainBranch: undefined,
 	currentLanguage: 'en-us',
-	toggleQualifier: false,
 	isEditable: true,
 	pendingChanges: false,
 	isDataRefreshing: false,
@@ -36,10 +33,6 @@ export const initialStore = {
 	localization: {},
 	defaultLanguage: {},
 	committedDeletes: [],
-	repoFileChanges: {},
-	globalFileChanges: {},
-	//restructured data
-	locationsData: undefined,
 	breadCrumbs: {},
 	pendingChangeList: {added: [], modified: [], deleted: []}
 }

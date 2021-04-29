@@ -58,8 +58,8 @@ export default observer(function App() {
 	const personaComponent = useRef(null)
 
 	useEffect(() => {
-		if (state.accessToken && !state.globalFileData) loginUser()
-	}, [state.accessToken, state.globalFileData])
+		if (state.accessToken && !state.repoFileData) loginUser()
+	}, [state.accessToken, state.repoFileData])
 
 	useEffect(() => {
 		if (state.userAccessExpired) showAccessExpirationModal()
@@ -96,11 +96,11 @@ export default observer(function App() {
 	}, [setSelectedKey])
 
 	const onAccessExpirationFormSubmit = useCallback(() => {
-		if (state.globalFileData) reLoginUser()
+		if (state.repoFileData) reLoginUser()
 		else loginUser()
 
 		hideAccessExpirationModal()
-	}, [state.globalFileData, hideAccessExpirationModal])
+	}, [state.repoFileData, hideAccessExpirationModal])
 
 	const renderRepoMessageBar = () => {
 		if (state.loadedPRData && state.prChanges && !state.isDataRefreshing) {

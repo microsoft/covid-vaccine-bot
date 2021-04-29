@@ -4,20 +4,6 @@
  */
 import { getAppStore } from '../store/store'
 
-export const isQualifierTextDuplicate = (qualifierText: string): boolean => {
-    const store = getAppStore()
-    const { content } = store.globalFileData.customStrings
-	const newQualifier = qualifierText.toLowerCase().replaceAll(' ','')
-
-    const existingQualifierTexts = Object.entries(content)
-        .filter(([key, _value]: [string, any]) => key.startsWith('c19.eligibility.question/'))
-        .map(([_key, value]: [string, any]) => {
-            return value[store.currentLanguage].toLowerCase().replaceAll(' ','')
-        })
-
-    return existingQualifierTexts.includes(newQualifier)
-}
-
 export const getGlobalQualifierValidationTexts = (rootLocationKey: string): string[] => {
     const store = getAppStore()
     const { content } = store.repoFileData[rootLocationKey].strings

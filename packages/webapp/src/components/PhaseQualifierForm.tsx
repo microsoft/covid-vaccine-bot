@@ -7,7 +7,6 @@ import {
 	Dropdown,
 	DirectionalHint,
 	TextField,
-	FontIcon,
 } from '@fluentui/react'
 import { observer } from 'mobx-react-lite'
 import { useCallback, useState, useRef, useEffect } from 'react'
