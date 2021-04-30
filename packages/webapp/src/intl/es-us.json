@@ -302,22 +302,23 @@
 			"titleLabel": "Título (opcional):",
 			"detailsLabel": "Detalles (opcional):",
 			"submitText": "Presentar cambios"
+		},
+		"ChangesList": {
+			"addPrefixText": "Nueva {0} agregada",
+			"modifiedPrefixText": "Actualizada {0}",
+			"removedPrefixText": "Eliminada {0}",
+			"sections": {
+				"location": "ubicación",
+				"phase": "fase",
+				"qualifier": "calificador",
+				"translations": "traducciones"
+			}
 		}
 	},
 	"Translate": {
 		"title": "Traducir",
 		"ErrorMessageBar": {
 			"closeArialLabel": "Cerrar"
-		},
-		"Filter": {
-			"LanguageDropdown": {
-				"label": "Traducir de:",
-				"placeholder": "Idiomas Disponibles"
-			},
-			"TranslateDropdown": {
-				"label": "Mostrar:",
-				"placeholder": "Necesita traducciones"
-			}
 		},
 		"TemplateButtons": {
 			"download": "Descargar plantilla",
@@ -328,41 +329,7 @@
 			"invalidFileContent": "Contenido de archivo no válido.",
 			"invalidFileType": "Tipo de archivo invalido."
 		},
-		"translationNotFound": "* Traducción no encontrada *",
-		"translationFilter": {
-			"needsTranslation": "Necesita traducciones",
-			"showAll": "Mostrar todo"
-		},
-		"dragDropText": "Arrastra y suelta el archivo de traducción aquí",
-		"miscFilter": {
-			"all": "Todo",
-			"stateSpecific": "Específico del estado",
-			"stateLinks": "Enlaces de estado",
-			"uncategorized": "Sin categorizar",
-			"placeholder": "Filtrar varios"
-		},
-
-		"GroupList": {
-			"loading": "Cargando contenido ...",
-			"updating": "Actualizando traducciones ...",
-			"columns": {
-				"general": "General",
-				"sms": "SMS",
-				"voice": "Voz"
-			},
-			"LocationList": {
-				"title": "Ubicaciones",
-				"empty": "No se encontraron traducciones de ubicación faltantes para:"
-			},
-			"QualifierList": {
-				"title": "Calificadores",
-				"empty": "No se encontraron traducciones de calificador faltantes para:"
-			},
-			"MiscellaneousList": {
-				"title": "Misceláneo",
-				"empty": "No se encontraron traducciones misceláneas faltantes para:"
-			}
-		}
+		"dragDropText": "Arrastra y suelta el archivo de traducción aquí"
 	},
 	"UnAuthorized": {
 		"title": "Bienvenidos!",

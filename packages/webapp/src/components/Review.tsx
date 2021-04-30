@@ -59,7 +59,7 @@ export default observer(function Review(props: ReviewProp) {
 	)
 	const fieldChanges = useRef<any>(formData)
 
-	useEffect(() => {
+	const getPendingChanges = useCallback(() => {
 		try{
 			if (state.pendingChangeList) {
 				const pendingChangeList = getChanges()
@@ -68,7 +68,11 @@ export default observer(function Review(props: ReviewProp) {
 		} catch (err) {
 			setErrorMessage(err)
 		}
-	}, [state.pendingChangeList])
+	},[state.pendingChangeList])
+
+	useEffect(() => {
+		getPendingChanges()
+	}, [state.currentLanguage, getPendingChanges])
 
 	const handleTextChange = useCallback(
 		(ev) => {

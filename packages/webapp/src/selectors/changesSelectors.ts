@@ -3,8 +3,8 @@
  * Licensed under the MIT license. See LICENSE file in the project.
  */
 import { getAppStore } from '../store/store'
-import { toProperCase } from '../utils/textUtils'
-
+import { StringFormat, toProperCase } from '../utils/textUtils'
+import { getText as t } from '../selectors/intlSelectors'
 
 export const getChanges = (): any => {
 	const {pendingChangeList} = getAppStore()
@@ -13,19 +13,22 @@ export const getChanges = (): any => {
 
 	if (added.length > 0) {
 		added.forEach((item: any) => {
-			changesList.push({label: `Added new ${item.section}: ${toProperCase(item.name)}`})
+			const label = StringFormat(t('Review.ChangesList.addPrefixText'), t(`Review.ChangesList.sections.${item.section}`))
+			changesList.push({label: `${label}: ${toProperCase(item.name)}`})
 		})
 	}
 
 	if (modified.length > 0) {
 		modified.forEach((item: any) => {
-			changesList.push({label: `Updated ${item.section}: ${toProperCase(item.name)}`})
+			const label = StringFormat(t('Review.ChangesList.modifiedPrefixText'), t(`Review.ChangesList.sections.${item.section}`))
+			changesList.push({label: `${label}: ${toProperCase(item.name)}`})
 		})
 	}
 
 	if (deleted.length > 0) {
 		deleted.forEach((item: any) => {
-			changesList.push({label: `Removed ${item.section}: ${toProperCase(item.name)}`})
+			const label = StringFormat(t('Review.ChangesList.removedPrefixText'), t(`Review.ChangesList.sections.${item.section}`))
+			changesList.push({label: `${label}: ${toProperCase(item.name)}`})
 		})
 	}
 

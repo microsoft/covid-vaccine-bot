@@ -304,22 +304,23 @@
 			"titleLabel": "Title (Optional):",
 			"detailsLabel": "Details (Optional):",
 			"submitText": "Submit changes"
+		},
+		"ChangesList": {
+			"addPrefixText": "Added new {0}",
+			"modifiedPrefixText": "Updated {0}",
+			"removedPrefixText": "Removed {0}",
+			"sections": {
+				"location": "location",
+				"phase": "phase",
+				"qualifier": "qualifier",
+				"translations": "translations"
+			}
 		}
 	},
 	"Translate": {
 		"title": "Translate",
 		"ErrorMessageBar": {
 			"closeArialLabel": "Close"
-		},
-		"Filter": {
-			"LanguageDropdown": {
-				"label": "Translate from:",
-				"placeholder": "Available languages"
-			},
-			"TranslateDropdown": {
-				"label": "Show:",
-				"placeholder": "Needs translations"
-			}
 		},
 		"TemplateButtons": {
 			"download": "Download Template",
@@ -330,40 +331,7 @@
 			"invalidFileContent": "Invalid File Content.",
 			"invalidFileType": "Invalid File Type."
 		},
-		"translationNotFound": "*Translation Not Found*",
-		"translationFilter": {
-			"needsTranslation": "Needs Translation",
-			"showAll": "Show All"
-		},
-		"dragDropText": "Drag and Drop translation file here",
-		"miscFilter": {
-			"all": "All",
-			"stateSpecific": "State-specific",
-			"stateLinks": "State Links",
-			"uncategorized": "Uncategorized",
-			"placeholder": "Filter Miscellaneous"
-		},
-		"GroupList": {
-			"loading": "Loading content...",
-			"updating": "Updating translations...",
-			"columns": {
-				"general": "General",
-				"sms": "SMS",
-				"voice": "Voice"
-			},
-			"LocationList": {
-				"title": "Locations",
-				"empty": "No missing location translations found for:"
-			},
-			"QualifierList": {
-				"title": "Qualifiers",
-				"empty": "No missing qualifier translations found for:"
-			},
-			"MiscellaneousList": {
-				"title": "Miscellaneous",
-				"empty": "No missing miscellaneous translations found for:"
-			}
-		}
+		"dragDropText": "Drag and Drop translation file here"
 	},
 	"UnAuthorized": {
 		"title": "Welcome!",
