@@ -38,7 +38,8 @@ export class ProviderLocationsStore {
 		lat: number,
 		lon: number,
 		radiusMiles: number,
-		inStockOnly: boolean
+		inStockOnly: boolean,
+		limit: number
 	): Promise<ProviderLocation[]> {
 		const query = inStockOnly
 			? FIND_PROVIDERS_IN_RADIUS_WITH_STOCK
@@ -58,7 +59,7 @@ export class ProviderLocationsStore {
 				],
 			},
 			{
-				maxItemCount: 100,
+				maxItemCount: limit,
 			}
 		)
 

@@ -11,6 +11,7 @@ export const GET: Operation = [
 		try {
 			const [lon, lat] = await queryArgUtil.unpackLocation(req.query)
 			const inStock: boolean = ((req.query.inStock as any) as boolean) || false
+			const limit: number = ((req.query.limit as any) as number) || 10
 			const radius = (req.query.radius as any) as number
 			if (radius > 100) {
 				res.status(400).json({ message: 'radius must be <= 100 miles' })
@@ -19,7 +20,8 @@ export const GET: Operation = [
 				lat,
 				lon,
 				radius,
-				inStock
+				inStock,
+				limit
 			)
 			res.json(providers)
 		} catch (err) {
@@ -45,6 +47,13 @@ GET.apiDoc = {
 			name: 'inStock',
 			description: 'if true, only find locations that have stock available',
 			type: 'boolean',
+			required: false,
+		},
+		{
+			in: 'query',
+			name: 'limit',
+			description: 'the maximum number of items to return',
+			type: 'integer',
 			required: false,
 		},
 		{
