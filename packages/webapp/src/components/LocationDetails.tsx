@@ -51,9 +51,9 @@ export default observer(function LocationsDetails(props: LocationsDetailsProp) {
 	const items = []
 
 	const locationName =
-		getCustomString(currentLocation, currentLocation.info.content.name) ||
-		toProperCase(currentLocation.info.content.name)
-	items.push({ label: 'Details', value: locationName, isUrl: false })
+		getCustomString(currentLocation, currentLocation?.info?.content?.name) ||
+		toProperCase(currentLocation?.info?.content?.id)
+	items.push({ label: t('LocationForm.details'), value: locationName, isUrl: false })
 
 	switch (currentLocation.info.content.type.toLowerCase()) {
 		case 'state':
@@ -205,7 +205,7 @@ export default observer(function LocationsDetails(props: LocationsDetailsProp) {
 		<>
 			<section className="LocationsDetailsComponent">
 				<div className="locationDetailsSectionHeader">
-					<div>Location Details</div>
+					<div>{t('LocationForm.detailsTitle')}</div>
 					{isEditable && (
 						<div
 							className="editLocationDetailsButton"
@@ -215,7 +215,7 @@ export default observer(function LocationsDetails(props: LocationsDetailsProp) {
 								iconName="CircleAdditionSolid"
 								style={{ color: '#0078d4' }}
 							/>
-							Edit Details
+							{t('LocationForm.EditDetailsButton')}
 						</div>
 					)}
 				</div>

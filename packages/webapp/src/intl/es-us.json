@@ -93,6 +93,9 @@
 			"county": "Condado",
 			"city": "Ciudad"
 		},
+		"detailsTitle": "Detalles de ubicación",
+		"EditDetailsButton": "Editar detalles",
+		"details": "Detalles",
 		"info": "Enlace de información general de la región:",
 		"workflow": "Enlace a una herramienta de flujo de trabajo de elegibilidad existente:",
 		"scheduling": "Programador de registro de citas:",
@@ -238,8 +241,17 @@
 			}
 		}
 	},
+	"LocationPhaseOverrideBar": {
+		"messageBar": {
+			"locationNamePlaceholder": "esto",
+			"parentLocationNamePlaceholder": "la ubicación principal ",
+			"specificText": "La siguiente información de fase es específica de {0} únicamente.",
+			"adoptedText": "Actualmente adoptando la información de fase de {0}. La aplicación de cambios hará que los datos de fase sean específicos de {1} únicamente."
+		}
+	},
 	"LocationsPhases": {
 		"AddQualifierButton": "Agregar calificador",
+		"title": "Clasificatorios de fase",
 		"columns": {
 			"duplicate": "Duplicado",
 			"remove": "Eliminar",
@@ -321,6 +333,7 @@
 			"needsTranslation": "Necesita traducciones",
 			"showAll": "Mostrar todo"
 		},
+		"dragDropText": "Arrastra y suelta el archivo de traducción aquí",
 		"miscFilter": {
 			"all": "Todo",
 			"stateSpecific": "Específico del estado",

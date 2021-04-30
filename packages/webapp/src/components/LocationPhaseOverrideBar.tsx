@@ -6,7 +6,8 @@ import { observer } from 'mobx-react-lite'
 import { MessageBar } from '@fluentui/react'
 import { getCustomString } from '../selectors/locationSelectors'
 import { getParentLocationData, isPhaseDataOverridden } from '../selectors/phaseSelectors'
-import { toProperCase } from '../utils/textUtils'
+import { StringFormat, toProperCase } from '../utils/textUtils'
+import { getText as t } from '../selectors/intlSelectors'
 
 export interface LocationsPhaseOverrideBarProp {
 	currentLocation: any
@@ -16,14 +17,18 @@ export interface LocationsPhaseOverrideBarProp {
 export default observer(function LocationsPhaseOverrideBar(props: LocationsPhaseOverrideBarProp) {
 	const {currentLocation, breadcrumbs} = props
 
-    let locationName = 'this'
-	let parentLocationName = 'the parent location'
+    let locationName = t('LocationPhaseOverrideBar.messageBar.locationNamePlaceholder')
+	let parentLocationName = t('LocationPhaseOverrideBar.messageBar.parentLocationNamePlaceholder')
+    let messageBarSpecific = ''
+    let messageBarAdopted = ''
 	if (currentLocation?.info) {
 		const parentData = getParentLocationData(currentLocation)
 		locationName = getCustomString(currentLocation, currentLocation.info.content.name) || toProperCase(currentLocation.info.content.name)
+        messageBarSpecific = StringFormat(t('LocationPhaseOverrideBar.messageBar.specificText'), locationName)
 
 		if (parentData?.info) {
 			parentLocationName = getCustomString(parentData, parentData.info.content.name) || toProperCase(parentData.info.content.name)
+            messageBarAdopted = StringFormat(t('LocationPhaseOverrideBar.messageBar.adoptedText'), parentLocationName, locationName)
 		}
 	}
 
@@ -33,11 +38,11 @@ export default observer(function LocationsPhaseOverrideBar(props: LocationsPhase
                 <MessageBar messageBarType={5}>
                 {isPhaseDataOverridden(currentLocation) ? (
                     <div>
-                        Phase information below is specific to {locationName} only.
+                        {messageBarSpecific}
                     </div>
                 ):(
                     <div>
-                        Currently adopting the phase information of {parentLocationName}. Applying changes will make the phase data specific to {locationName} only.
+                        {messageBarAdopted}
                     </div>
                 )}
             </MessageBar>

@@ -86,7 +86,7 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 				([locKey, locDetails]: [string, any]) => {
 					const locationName =
 						getCustomString(locDetails, locDetails?.info?.content?.name) ||
-						toProperCase(locDetails?.info?.content?.name) || locKey
+						toProperCase(locDetails?.info?.content?.id) || locKey
 					nextFilteredStateList.push({
 						key: locKey,
 						text: locationName,

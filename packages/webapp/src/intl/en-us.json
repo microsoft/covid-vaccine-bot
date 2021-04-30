@@ -92,6 +92,9 @@
 			"county": "County",
 			"city": "City"
 		},
+		"detailsTitle": "Location Details",
+		"EditDetailsButton": "Edit Details",
+		"details": "Details",
 		"info": "General information link for the region:",
 		"workflow": "Link to an existing eligibility workflow tool:",
 		"scheduling": "Appointment registration scheduler:",
@@ -240,7 +243,16 @@
 			}
 		}
 	},
+	"LocationPhaseOverrideBar": {
+		"messageBar": {
+			"locationNamePlaceholder": "this",
+			"parentLocationNamePlaceholder": "the parent location",
+			"specificText": "Phase information below is specific to {0} only.",
+			"adoptedText": "Currently adopting the phase information of {0}. Applying changes will make the phase data specific to {1} only."
+		}
+	},
 	"LocationsPhases": {
+		"title": "Phase Qualifiers",
 		"AddQualifierButton": "Add Qualifier",
 		"columns": {
 			"duplicate": "Duplicate",
@@ -323,6 +335,7 @@
 			"needsTranslation": "Needs Translation",
 			"showAll": "Show All"
 		},
+		"dragDropText": "Drag and Drop translation file here",
 		"miscFilter": {
 			"all": "All",
 			"stateSpecific": "State-specific",

@@ -61,16 +61,17 @@ export default observer(function LocationsPhaseList(
 			isResizable: false,
 		},
 	].filter((loc) => (state.isEditable ? true : loc.key !== 'editCol'))
+	const activeText = t('App.active')
 
 	useEffect(() => {
 		if (currentLocation) {
 			const newList = setInitialPhaseItems({
 				key: currentLocation.info.content.id,
 				value: currentLocation,
-			})
+			}, activeText)
 			setPhaseItemList(newList)
 		}
-	}, [currentLocation, setPhaseItemList])
+	}, [currentLocation, setPhaseItemList, activeText])
 
 	const onPhaseFormOpen = useCallback(
 		(item?: any) => {
@@ -141,11 +142,11 @@ export default observer(function LocationsPhaseList(
 
 			newList = generateUIPhaseList(
 				currentLocation.vaccination.content.phases,
-				activePhase
+				activePhase, activeText
 			)
 			setPhaseItemList(newList)
 		},
-		[currentLocation, dismissPhaseModal]
+		[currentLocation, dismissPhaseModal, activeText]
 	)
 
 	return (
@@ -199,21 +200,21 @@ export default observer(function LocationsPhaseList(
 	)
 })
 
-const setInitialPhaseItems = (currentLocation: any): any[] => {
+const setInitialPhaseItems = (currentLocation: any, activeText: string): any[] => {
 	const result = getLocationPhaseData(currentLocation)
-	return generateUIPhaseList(result.phases, result.activePhase)
+	return generateUIPhaseList(result.phases, result.activePhase, activeText)
 }
 
-const generateUIPhaseList = (phases: any[], activePhase: string) => {
+const generateUIPhaseList = (phases: any[], activePhase: string, activeText: string) => {
 	return phases.map((phase: any, idx: number) => {
 		return {
 			key: String(phase.id) + idx,
 			keyId:
 				String(phase.id) +
-				(phase.id === activePhase ? ` (${t('App.active')})` : ''),
+				(phase.id === activePhase ? ` (${activeText})` : ''),
 			name:
 				(phase.label || phase.id) +
-				(phase.id === activePhase ? ` (${t('App.active')})` : ''),
+				(phase.id === activePhase ? ` (${activeText})` : ''),
 			qualifications: phase.qualifications.length,
 			value: phase,
 			isNew: false,

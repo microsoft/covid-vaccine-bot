@@ -57,7 +57,6 @@ export default observer(function Translate() {
 	const onFileUpload = (e: any) => {
 		setErrorMessage(undefined)
 		if (e.target.files.length > 0) {
-			
 			handleFileUpload(e.target.files[0])
 		}
 	}
@@ -96,8 +95,6 @@ export default observer(function Translate() {
 
 	}
 
-
-
 	const recursiveFindStrings = useCallback(async (elem:any) => {
 		const returnStrings = {}
 		if(elem.regions){
@@ -110,7 +107,6 @@ export default observer(function Translate() {
 		return { ...elem.strings?.content, ...returnStrings}
 
 	},[])
-
 
 	const onFileDownload = useCallback(async () => {
 		let stringsObj = {}
@@ -159,7 +155,7 @@ export default observer(function Translate() {
 										type="file"
 										onChange={onFileUpload}
 									/>
-									<p>Drag and Drop translation file here</p>
+									<p>{t('Translate.dragDropText')}</p>
 									<button onClick={onFileDownload}>
 										<FontIcon iconName="Download" />
 										{t('Translate.TemplateButtons.download')}

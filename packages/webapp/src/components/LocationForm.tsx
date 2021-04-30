@@ -165,7 +165,7 @@ export default observer(function LocationForm(props: LocationFormProp) {
 			<div className="modalBody">
 				<div className="detailsGroup">
 					<TextField
-						label="Details"
+						label={t('LocationForm.details')}
 						name="details"
 						value={formData.details}
 						onChange={handleTextChange}

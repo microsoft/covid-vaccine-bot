@@ -243,6 +243,7 @@ export const addPhaseOverviewCrumb = mutatorAction(
 						info: {
 							content: {
 								name: '',
+								id: currentLocation.info.content.id
 							},
 							path: currentLocation.info.path.replace(
 								'info.json',

@@ -24,7 +24,7 @@ export default observer(function LocationsBreadcrumbs(props: LocationsBreadcrumb
                 <div className="breadCrumbs">
                      <div key={'root'} className="breadCrumbsLink" onClick={() => navigateBack('root')}>/ {t('LocationsStates.title')}</div>
                     {Object.keys(breadcrumbs).map((key: any, idx: number) => {
-                        const locationName = getCustomString(breadcrumbs[key].value, breadcrumbs[key].value.info.content.name) || toProperCase(breadcrumbs[key].value.info.content.name)
+                        const locationName = getCustomString(breadcrumbs[key].value, breadcrumbs[key].value?.info?.content?.name) || toProperCase(breadcrumbs[key].value?.info?.content?.name)
                         if (locationName === currentLocationTitle) {
                             return <div key={idx} className="breadCrumbsNonLink">{`/ ${locationName}`}</div>
                         } else {

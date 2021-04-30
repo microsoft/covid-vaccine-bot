@@ -24,7 +24,7 @@ export const getCustomString = (
 
 	const stringSearch = stringsList.find(
 		([key, _value]: [string, any]) => 
-			key.toLowerCase() === keyFilter.toLowerCase()
+			key?.toLowerCase() === keyFilter.toLowerCase()
 	)
 	if (stringSearch) {
 		return stringSearch[1][currentLanguage]

@@ -51,8 +51,8 @@ export default observer(function Locations() {
 	const updateCurrentLocation = useCallback(() => {
 		if (currentLocation) {
 			const locationName =
-				getCustomString(currentLocation, currentLocation.info.content.name) ||
-				toProperCase(currentLocation.info.content.name)
+				getCustomString(currentLocation, currentLocation?.info?.content?.name) ||
+				toProperCase(currentLocation?.info?.content?.id)
 			let newTitle = locationName
 
 			if (breadCrumbs.phase_overview) {

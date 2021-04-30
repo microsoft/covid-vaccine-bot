@@ -236,7 +236,7 @@ export default observer(function LocationPhaseQualifiers(
 	return (
 		<section className="LocationPhaseQualifiersComponent">
 			<div className="locationPhaseQualifiersSectionHeader">
-				Phase Qualifiers
+			{t('LocationsPhases.title')}
 			</div>
 			<div className="phaseGridContainer">
 				{phaseList.length > 0
