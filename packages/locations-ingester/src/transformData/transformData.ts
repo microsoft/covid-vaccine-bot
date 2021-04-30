@@ -31,13 +31,23 @@ function getSourceFile(): string {
 	const files = getFiles().filter((f) => f.endsWith('.csv'))
 	return path.join(CACHE_DIR, getLatestFile(files))
 }
+
+function getDataDate(file: string): Date {
+	const dateSegment = file
+		.replace(CACHE_DIR + '\\', '')
+		.replace('bch_inventory_report_', '')
+		.replace('.csv', '')
+	return new Date(dateSegment)
+}
+
 /**
  * Collates records in the given CSV into the target JSON output format
  * @param file The CSV File path
  */
 export async function transformData(): Promise<void> {
 	const file = getSourceFile()
-	console.log('transforming CSV data to JSON', file)
+	const dataDate = getDataDate(file)
+	console.log('transforming CSV data to JSON', file, dataDate)
 	const input = fs.readFileSync(file, { encoding: 'utf-8' })
 	const records: ProviderLocationCsv[] = parse(input, {
 		columns: true,
@@ -94,6 +104,7 @@ export async function transformData(): Promise<void> {
 			insurance_accepted: row.insurance_accepted,
 			walkins_accepted: row.walkins_accepted,
 			any_in_stock: row.in_stock,
+			source_last_updated: dataDate.toISOString(),
 			meds: [
 				{
 					name: row.med_name,

@@ -5,6 +5,7 @@
 export interface ProviderLocation {
 	provider_id: string
 	provider_notes: string
+	source_last_updated: string
 	location: {
 		name: string
 		store_no: number
