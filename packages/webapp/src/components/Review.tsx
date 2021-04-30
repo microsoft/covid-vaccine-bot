@@ -8,11 +8,9 @@ import {
 	DetailsList,
 	DetailsListLayoutMode,
 	ProgressIndicator,
-	TextField,
-	MessageBar,
-	MessageBarType,
+	TextField
 } from 'office-ui-fabric-react'
-import { useState, useEffect, useCallback, useRef } from 'react'
+import { useState, useCallback, useRef } from 'react'
 import { createPR } from '../actions/repoActions'
 import { getChanges } from '../selectors/changesSelectors'
 import { getText as t } from '../selectors/intlSelectors'
@@ -48,31 +46,12 @@ export default observer(function Review(props: ReviewProp) {
 		}
 	]
 
-	const [changesList, setChangesList] = useState<any[]>([])
 	const [showLoading, setShowLoading] = useState<boolean>(false)
-	const [errorMessage, setErrorMessage] = useState<
-		{ message: string } | undefined
-	>()
 	const state = getAppStore()
 	const [formData, setFormData] = useState<any>(
 		setInitialFormData(state.loadedPRData)
 	)
 	const fieldChanges = useRef<any>(formData)
-
-	const getPendingChanges = useCallback(() => {
-		try{
-			if (state.pendingChangeList) {
-				const pendingChangeList = getChanges()
-				setChangesList(pendingChangeList)
-			}
-		} catch (err) {
-			setErrorMessage(err)
-		}
-	},[state.pendingChangeList])
-
-	useEffect(() => {
-		getPendingChanges()
-	}, [state.currentLanguage, getPendingChanges])
 
 	const handleTextChange = useCallback(
 		(ev) => {
@@ -110,18 +89,6 @@ export default observer(function Review(props: ReviewProp) {
 					</div>
 				</div>
 				<div className="bodyContent">
-					{errorMessage && (
-						<MessageBar
-							messageBarType={MessageBarType.error}
-							dismissButtonAriaLabel={t(
-								'Review.ErrorMessageBar.closeAriaLabel'
-							)}
-						>
-							<p>
-								{t('Review.error.unexpected')} {errorMessage?.toString()}
-							</p>
-						</MessageBar>
-					)}
 					{!showLoading ? (
 						<section>
 							<div className="submitContainer">
@@ -142,7 +109,7 @@ export default observer(function Review(props: ReviewProp) {
 									onChange={handleTextChange}
 								/>
 								<DetailsList
-									items={changesList}
+									items={getChanges()}
 									columns={changesColumns}
 									setKey="set"
 									layoutMode={DetailsListLayoutMode.justified}
