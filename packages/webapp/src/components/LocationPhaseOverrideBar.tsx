@@ -17,8 +17,8 @@ export interface LocationsPhaseOverrideBarProp {
 export default observer(function LocationsPhaseOverrideBar(props: LocationsPhaseOverrideBarProp) {
 	const {currentLocation, breadcrumbs} = props
 
-    let locationName = t('LocationPhaseOverrideBar.messageBar.locationNamePlaceholder')
-	let parentLocationName = t('LocationPhaseOverrideBar.messageBar.parentLocationNamePlaceholder')
+    let locationName = t('LocationPhaseOverrideBar.messageBar.specificTextPlaceholder')
+	let parentLocationName = t('LocationPhaseOverrideBar.messageBar.adoptedTextPlaceholder')
     let messageBarSpecific = ''
     let messageBarAdopted = ''
 	if (currentLocation?.info) {

@@ -245,8 +245,8 @@
 	},
 	"LocationPhaseOverrideBar": {
 		"messageBar": {
-			"locationNamePlaceholder": "this",
-			"parentLocationNamePlaceholder": "the parent location",
+			"specificTextPlaceholder": "this",
+			"adoptedTextPlaceholder": "the parent location",
 			"specificText": "Phase information below is specific to {0} only.",
 			"adoptedText": "Currently adopting the phase information of {0}. Applying changes will make the phase data specific to {1} only."
 		}

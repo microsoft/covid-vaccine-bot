@@ -243,8 +243,8 @@
 	},
 	"LocationPhaseOverrideBar": {
 		"messageBar": {
-			"locationNamePlaceholder": "esto",
-			"parentLocationNamePlaceholder": "la ubicación principal ",
+			"specificTextPlaceholder": "esto",
+			"adoptedTextPlaceholder": "la ubicación principal ",
 			"specificText": "La siguiente información de fase es específica de {0} únicamente.",
 			"adoptedText": "Actualmente adoptando la información de fase de {0}. La aplicación de cambios hará que los datos de fase sean específicos de {1} únicamente."
 		}
