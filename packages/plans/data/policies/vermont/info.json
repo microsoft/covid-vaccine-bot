@@ -1,9 +1,0 @@
-{
-	"id": "vermont",
-	"name": "Vermont",
-	"type": "state",
-	"metadata": {
-		"code_alpha": "VT",
-		"code_numeric": 50
-	}
-}

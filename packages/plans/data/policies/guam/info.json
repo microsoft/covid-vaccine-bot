@@ -1,9 +1,0 @@
-{
-	"id": "guam",
-	"name": "Guam",
-	"type": "territory",
-	"metadata": {
-		"code_alpha": "GU",
-		"code_numeric": 66
-	}
-}

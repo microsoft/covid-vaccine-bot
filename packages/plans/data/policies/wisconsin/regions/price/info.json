@@ -1,9 +1,0 @@
-{
-	"id": "price",
-	"metadata": {
-		"code_alpha": "price",
-		"code_numeric": 0
-	},
-	"name": "Price",
-	"type": "county"
-}

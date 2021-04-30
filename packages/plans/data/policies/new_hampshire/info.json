@@ -1,9 +1,0 @@
-{
-	"id": "new_hampshire",
-	"name": "New Hampshire",
-	"type": "state",
-	"metadata": {
-		"code_alpha": "NH",
-		"code_numeric": 33
-	}
-}
