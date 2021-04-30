@@ -1,7 +1,17 @@
 {
 	"links": {
-		"info": {},
-		"providers": {}
+		"info": {
+			"url": "https://www.cdc.gov/coronavirus/2019-ncov/index.html"
+		},
+		"worflow": {},
+		"scheduling": {
+			"url": "https://vaccinefinder.org/search/"
+		},
+		"scheduling_phone": {
+			"text": "c19.link/scheduling.phone.usa",
+			"url": "tel:800-232-4636",
+			"description": "c19.link/scheduling.phone.description.usa"
+		}
 	},
 	"activePhase": "current",
 	"noPhaseLabel": true,
