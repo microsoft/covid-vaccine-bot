@@ -347,7 +347,7 @@ export const addLocation = mutatorAction(
 
 export const deleteLocation = mutatorAction(
 	'deleteLocation',
-	(locationData: any, isRegion?: boolean, selectedState?: any) => {
+	(locationData: any) => {
 		const store = getAppStore()
 		store.pendingChanges = true
 
