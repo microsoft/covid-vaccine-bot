@@ -1,0 +1,53 @@
+String ID,en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th
+c19.eligibility.question/essential_worker.1a.ut.first_responder,"Are a non-EMS first responder?",,,,"¿Es un socorrista que no es del SME?",,,,,,,,,,
+c19.link/scheduling.phone.bear_river,"1-800-456-7707",,,,"1-800-456-7707",,,,,,,,,,
+c19.link/scheduling.phone.davis,"801-525-4900",,,,"801-525-4900",,,,,,,,,,
+c19.link/scheduling.phone.salt_lake,"385-468-7468",,,,"385-468-7468",,,,,,,,,,
+c19.link/scheduling.phone.san_juan,"435-587-3838",,,,"435-587-3838",,,,,,,,,,
+c19.link/scheduling.phone.description.san_juan,"San Juan County Public Health Department ",,,,"Departamento de Salud Pública del Condado de San Juan ",,,,,,,,,,
+c19.link/scheduling.phone.description.salt_lake,"Salt Lake County Health Department",,,,"Departamento de Salud del Condado de Salt Lake",,,,,,,,,,
+c19.link/scheduling.phone.southwest_utah,"435-986-2549",,,,"435-986-2549",,,,,,,,,,
+c19.link/scheduling.phone.description.southwest_utah,"Southwest Utah Public Health Department",,,,"Departamento de Salud Pública del Suroeste de Utah",,,,,,,,,,
+c19.link/scheduling.phone.summit,"435-333-0050",,,,"435-333-0050",,,,,,,,,,
+c19.link/scheduling.phone.description.summit,"Summit County COVID-19 Hotline",,,,"Línea directa covid-19 del condado de Summit",,,,,,,,,,
+c19.link/scheduling.phone.tooele,"435-277-2484",,,,"435-277-2484",,,,,,,,,,
+c19.link/scheduling.phone.description.tooele,"Tooele County Health Department",,,,"Departamento de Salud del Condado de Tooele",,,,,,,,,,
+c19.link/scheduling.phone.utah_county,"1-800-456-7707",,,,"1-800-456-7707",,,,,,,,,,
+c19.link/scheduling.phone.wasatch,"435-657-3276",,,,"435-657-3276",,,,,,,,,,
+c19.link/scheduling.phone.webermorgan,"(801) 399-7777",,,,"(801) 399-7777",,,,,,,,,,
+c19.link/scheduling.phone.description.webermorgan,"Weber-Morgan Health Department",,,,"Departamento de Salud de Weber-Morgan",,,,,,,,,,
+c19.link/scheduling.phone.description.wasatch,"Wasatch County Health Department",,,,"Departamento de Salud del Condado de Wasatch",,,,,,,,,,
+c19.link/scheduling.phone.description.utah_county,"Utah County Health Department",,,,"Departamento de Salud del Condado de Utah",,,,,,,,,,
+c19.link/scheduling.phone.tricounty,"435-247-1177",,,,"435-247-1177",,,,,,,,,,
+c19.link/scheduling.phone.description.tricounty,"TriCounty Health Department",,,,"Departamento de Salud de TriCounty",,,,,,,,,,
+c19.eligibility.moreinfo/age.are_you_age.ut.1a,"- Asplenia including splenectomy or a spleen dysfunction
+- Body Mass Index (BMI) of 30 or higher
+- Chronic heart disease (not hypertension) including chronic heart failure, ischaemic heart disease, and severe valve or congenital heart disease
+- Chronic kidney disease
+- Chronic liver disease including chronic hepatitis B or C, alcohol-related liver disease, primary biliary cirrhosis, or primary sclerosing cholangitis or hemochromatosis
+- Cancer diagnosed within the last 5 years that began in the blood, bone marrow, or cells in the immune system. This type of cancer is called hematologic cancer (such as leukemia, lymphoma, and multiple myeloma). 
+- Cancer diagnosed within the last 1 year that didn't begin in the blood or bone marrow. This type of cancer is called non-hematologic cancer (excluding basal and squamous cell cancer diagnoses).
+- Diabetes (Type I or Type II)
+- Immunocompromised state (weakened immune system) from blood, bone marrow, or organ transplant; HIV; long-term use of corticosteroids; or other medicines that weaken the immune system
+- Neurologic conditions that impair respiratory function, including cerebral palsy, Down syndrome, epilepsy, motor neuron disease, multiple sclerosis, myasthenia gravis, Parkinson's disease, progressive cerebellar disease, and quadriplegia or hemiplegia 
+- Receiving dialysis for severe kidney disease
+- Receiving immunosuppression therapy
+- Sickle cell disease
+- Severe chronic respiratory disease (other than asthma) including severe chronic obstructive pulmonary disease, fibrosing lung disease, bronchiectasis, or cystic fibrosis
+- Solid organ transplant recipient
+- Stroke and dementia (Alzheimer's, vascular, or frontotemporal)",,,,"- Asplenia incluyendo esplenectomía o disfunción del bazo
+- Índice de Masa Corporal (IMC) de 30 o más
+- Cardiopatía crónica (no hipertensión) incluyendo insuficiencia cardíaca crónica, cardiopatía isquémica y válvula grave o cardiopatía congénita
+- Enfermedad renal crónica
+- Enfermedad hepática crónica que incluye hepatitis B o C crónica, enfermedad hepática relacionada con el alcohol, cirrosis biliar primaria o colangitis esclerosante primaria o hemocromatosis
+- Cáncer diagnosticado en los últimos 5 años que comenzó en la sangre, médula ósea, o células en el sistema inmune. Este tipo de cáncer se denomina cáncer hematológico (como leucemia, linfoma y mieloma múltiple). 
+- Cáncer diagnosticado en los últimos 1 año que no comenzó en la sangre o médula ósea. Este tipo de cáncer se denomina cáncer no hematológico (excluyendo los diagnósticos de cáncer basal y de células escamosas).
+- Diabetes (tipo I o tipo II)
+- Estado inmunodeprimido (sistema inmunitario debilitado) de la sangre, médula ósea o trasplante de órganos; VIH; uso a largo plazo de corticosteroides; u otros medicamentos que debilitan el sistema inmunitario
+- Afecciones neurológicas que deterioran la función respiratoria, incluyendo parálisis cerebral, síndrome de Down, epilepsia, enfermedad de las neuronas motoras, esclerosis múltiple, miastenia gravis, enfermedad de Parkinson, enfermedad cerebelosa progresiva, y cuadriplejia o hemiplejia 
+- Recibir diálisis por enfermedad renal grave
+- Recibir terapia de inmunosupresión
+- Enfermedad de células falciformes
+- Enfermedad respiratoria crónica grave (aparte del asma) que incluye enfermedad pulmonar obstructiva crónica grave, enfermedad pulmonar fibrosa, bronquiectasis o fibrosis quística
+- Receptor de trasplante de órganos sólidos
+- Accidente cerebrovascular y demencia (Alzheimer, vascular o frontotemporal)",,,,,,,,,,

@@ -1,0 +1,51 @@
+String ID,en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th
+c19.link/scheduling.phone.mn,"883-431-2053",,,,"883-431-2053",,,,,,,,,,
+c19.link/scheduling.phone.description.mn,"For general information about the Community Vaccination Program, please visit mn.gov/findmyvaccine or call 833-431-2053 between 9:00 a.m. and 7:00 p.m., Monday through Friday.",,,,"Para obtener información general sobre el Programa de Vacunación Comunitaria, visite mn.gov/findmyvaccine o llame al 833-431-2053 de 9:00 a.m. a 7:00 p.m., de lunes a viernes.",,,,,,,,,,
+c19.eligibility.moreinfo/healthcare_worker.mn.1b,"This includes health care workers and people working at health care facilities, first responders who provide direct patient care as part of the EMS system, and primary caregivers for people with complex medical needs or disabilities",,,,"Esto incluye a los trabajadores de la salud y a las personas que trabajan en centros de salud, los socorristas que brindan atención directa al paciente como parte del sistema de SME y los cuidadores primarios para personas con necesidades médicas complejas o discapacidades",,,,,,,,,,
+c19.eligibility.moreinfo/long_term_care_resident.are.mn.1b,"Long-term care residents and staff members at long-term care facilities in Minnesota are eligible",,,,"Los residentes de cuidado a largo plazo y los miembros del personal en los centros de atención a largo plazo en Minnesota son elegibles",,,,,,,,,,
+c19.eligibility.moreinfo/essential_worker.are_you.mn.1b,"Pre-kindergarten through Adult Basic and Community Education school staff members, or contracted school staff members, at schools as well as child care staff members at licensed and certified child care centers or programs in Minnesota are eligible",,,,"Los miembros del personal de la escuela pre-kindergarten a través de adult basic and community education school, o miembros contratados del personal escolar, en las escuelas, así como los miembros del personal de cuidado infantil en centros o programas de cuidado infantil con licencia y certificados en Minnesota son elegibles",,,,,,,,,,
+c19.eligibility.moreinfo/essential_worker.mn.1b,"This includes agricultural, airport staff, additional child care workers not previously eligible, correctional settings, first responders, food production, food retail, food service, judicial system workers, manufacturing, public health workers, public transit, Postal Service workers and those working in food processing plants",,,,"Esto incluye a los trabajadores agrícolas, aeroportuarios, trabajadores adicionales de cuidado infantil no previamente elegibles, entornos correccionales, socorristas, producción de alimentos, venta minorista de alimentos, servicio de alimentos, trabajadores del sistema judicial, manufactura, trabajadores de salud pública, transporte público, trabajadores del Servicio Postal y aquellos que trabajan en plantas procesadoras de alimentos",,,,,,,,,,
+c19.eligibility.moreinfo/health.are.mn.1b,"High risk underlying medical conditions include: 
+Active cancer
+Chronic kidney disease
+COPD (chronic obstructive pulmonary disease)
+Diabetes - Type 1 or 2
+Down Syndrome
+Heart conditions, such as heart failure, coronary artery disease, or cardiomyopathies
+Immunocompromised state (weakened immune system) from solid organ transplant, HIV, bone marrow disease, chronic steroids for more than 30 days, immunodeficiency disease, or taking immunosuppressive medications
+Obesity - body mass index (BMI) greater than 30 kg/m2 
+Pregnancy
+Sickle cell disease",,,,"Las condiciones médicas subyacentes de alto riesgo incluyen: 
+Cáncer activo
+Enfermedad renal crónica
+EPOC (enfermedad pulmonar obstructiva crónica)
+Diabetes - Tipo 1 o 2
+Síndrome de Down
+Afecciones cardíacas, como insuficiencia cardíaca, enfermedad de las arterias coronarias o cardiomiopatías
+Estado inmunodeprimido (sistema inmunitario debilitado) del trasplante de órganos sólidos, VIH, enfermedad de la médula ósea, esteroides crónicos durante más de 30 días, enfermedad por inmunodeficiencia o tomar medicamentos inmunosupresores
+Obesidad - índice de masa corporal (IMC) superior a 30 kg/m2 
+Embarazo
+Enfermedad de células falciformes",,,,,,,,,,
+c19.eligibility.moreinfo/health.are_you_age_45.mn.1b,"High risk underlying medical conditions include: 
+Active cancer
+Chronic kidney disease
+COPD (chronic obstructive pulmonary disease)
+Diabetes - Type 1 or 2
+Down Syndrome
+Heart conditions, such as heart failure, coronary artery disease, or cardiomyopathies
+Immunocompromised state (weakened immune system) from solid organ transplant, HIV, bone marrow disease, chronic steroids for more than 30 days, immunodeficiency disease, or taking immunosuppressive medications
+Obesity - body mass index (BMI) greater than 30 kg/m2 
+Pregnancy
+Sickle cell disease",,,,"Las condiciones médicas subyacentes de alto riesgo incluyen: 
+Cáncer activo
+Enfermedad renal crónica
+EPOC (enfermedad pulmonar obstructiva crónica)
+Diabetes - Tipo 1 o 2
+Síndrome de Down
+Afecciones cardíacas, como insuficiencia cardíaca, enfermedad de las arterias coronarias o cardiomiopatías
+Estado inmunodeprimido (sistema inmunitario debilitado) del trasplante de órganos sólidos, VIH, enfermedad de la médula ósea, esteroides crónicos durante más de 30 días, enfermedad por inmunodeficiencia o tomar medicamentos inmunosupresores
+Obesidad - índice de masa corporal (IMC) superior a 30 kg/m2 
+Embarazo
+Enfermedad de células falciformes",,,,,,,,,,
+c19.eligibility.moreinfo/health.are_you_a_person.mn.1b,"This includes Sickle cell disease, Down Syndrome, or oxygen-dependent chronic lung or heart conditions, and those who are in active cancer treatment or immunocompromised from organ transplant, as well as other rare conditions.",,,,"Esto incluye la enfermedad de células falciformes, síndrome de Down o afecciones pulmonares o cardíacas crónicas dependientes del oxígeno, y aquellos que están en tratamiento activo contra el cáncer o inmunocomprometidos del trasplante de órganos, así como otras condiciones raras.",,,,,,,,,,
+c19.eligibility.moreinfo/age.16_up.mn.16_and_older,"As of March 30, all Minnesotans 16 years of age and older will be eligible to receive a vaccine. Minnesota has directed providers to prioritize vaccine appointments for people most at risk of getting COVID-19, or those who could develop severe illness if infected. This includes older Minnesotans, those with underlying health conditions*, and those in essential jobs.",,,,,,,,,,,,,,

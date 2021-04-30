@@ -1,0 +1,16 @@
+{
+	"links": {
+		"info": {
+			"url": "https://covid19-chipcogis.hub.arcgis.com/",
+			"text": "cdc/wisconsin/state_link"
+		},
+		"scheduling": {
+			"url": "https://covid19-chipcogis.hub.arcgis.com/pages/covid-19-vaccine-appointments",
+			"text": "c19.links/schedule_vax"
+		},
+		"scheduling_phone": {
+			"url": "tel:715-726-7900",
+			"text": "c19.link/scheduling.phone.chippewa"
+		}
+	}
+}

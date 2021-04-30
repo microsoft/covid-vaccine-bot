@@ -1,0 +1,147 @@
+{
+	"links": {
+		"info": {
+			"text": "cdc/arizona/state_link",
+			"url": "https://azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-vaccine"
+		},
+		"eligibility": {
+			"url": "https://www.azdhs.gov/documents/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/novel-coronavirus/vaccine-phases.pdf",
+			"content": "pdf"
+		},
+		"scheduling": {
+			"text": "c19.links/schedule_vax",
+			"url": "https://podvaccine.azdhs.gov/"
+		},
+		"workflow": {
+			"url": "https://azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-find-vaccine",
+			"text": "c19.links/vax_quiz"
+		},
+		"scheduling_phone": {
+			"url": "tel:602-542-1000",
+			"text": "c19.link/scheduling.phone.az"
+		}
+	},
+	"activePhase": "1b_16_and_older",
+	"phases": [
+		{
+			"id": "1a",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/healthcare_worker.az"
+				},
+				{
+					"question": "c19.eligibility.question/long_term_care_resident.az"
+				},
+				{
+					"question": "c19.eligibility.question/ems_worker.az"
+				}
+			]
+		},
+		{
+			"id": "1b",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/healthcare_worker.az"
+				},
+				{
+					"question": "c19.eligibility.question/long_term_care_resident.az"
+				},
+				{
+					"question": "c19.eligibility.question/education_childcare_worker.az"
+				},
+				{
+					"question": "c19.eligibility.question/age.65_up"
+				},
+				{
+					"question": "c19.eligibility.question/essential_worker",
+					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.az.1b"
+				}
+			],
+			"label": "65 And Older"
+		},
+		{
+			"id": "1c",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.55_up"
+				},
+				{
+					"question": "c19.eligibility.question/healthcare_worker.az"
+				},
+				{
+					"question": "c19.eligibility.question/long_term_care_resident.are"
+				},
+				{
+					"question": "c19.eligibility.question/education_childcare_worker.az"
+				},
+				{
+					"question": "c19.eligibility.question/essential_worker",
+					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.az.1c"
+				}
+			],
+			"label": "55 And Older"
+		},
+		{
+			"id": "1b_16_and_older",
+			"label": "16 And Older",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.16_up"
+				}
+			]
+		},
+		{
+			"id": "45_and_older",
+			"label": "45 and older",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.are_you_age_45"
+				},
+				{
+					"question": "c19.eligibility.question/healthcare_worker.az"
+				},
+				{
+					"question": "c19.eligibility.question/long_term_care_resident.are"
+				},
+				{
+					"question": "c19.eligibility.question/education_childcare_worker.az"
+				},
+				{
+					"question": "c19.eligibility.question/essential_worker",
+					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.az.45_and_older"
+				}
+			]
+		},
+		{
+			"id": "35_and_older",
+			"label": "35 and older",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.are_you_age_35"
+				},
+				{
+					"question": "c19.eligibility.question/healthcare_worker.az"
+				},
+				{
+					"question": "c19.eligibility.question/long_term_care_resident.are"
+				},
+				{
+					"question": "c19.eligibility.question/education_childcare_worker.az"
+				},
+				{
+					"question": "c19.eligibility.question/essential_worker",
+					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.az.35_and_older"
+				}
+			]
+		},
+		{
+			"id": "18_and_older",
+			"label": "18 and older",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.are_you_age_18"
+				}
+			]
+		}
+	]
+}

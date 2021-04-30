@@ -1,0 +1,12 @@
+{
+	"links": {
+		"info": {
+			"url": "https://www.columbiacountyor.gov/departments/PublicHealth/COVID-19Vaccine",
+			"text": "cdc/oregon/state_link"
+		},
+		"scheduling_phone": {
+			"url": "tel:503-397-7247",
+			"text": "c19.link/scheduling.phone.or.columbia"
+		}
+	}
+}

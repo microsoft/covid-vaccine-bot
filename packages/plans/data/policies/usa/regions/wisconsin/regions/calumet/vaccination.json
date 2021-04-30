@@ -1,0 +1,12 @@
+{
+	"links": {
+		"info": {
+			"url": "https://www.calumetcounty.org/COVID-19",
+			"text": "cdc/wisconsin/state_link"
+		},
+		"scheduling_phone": {
+			"url": "tel:(920) 849-1466",
+			"text": "c19.link/scheduling.phone.calumet"
+		}
+	}
+}

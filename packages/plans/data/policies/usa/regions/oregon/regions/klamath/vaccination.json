@@ -1,0 +1,14 @@
+{
+	"links": {
+		"info": {
+			"url": "http://www.klamathcounty.org/1117/COVID-19-vaccine",
+			"text": "cdc/oregon/state_link"
+		},
+		"scheduling_phone": {
+			"url": "tel:1-833-606-4370",
+			"text": "c19.link/scheduling.phone.klamath",
+			"description": "c19.link/scheduling.phone.description.klamath"
+		}
+	},
+	"activePhase": "2"
+}

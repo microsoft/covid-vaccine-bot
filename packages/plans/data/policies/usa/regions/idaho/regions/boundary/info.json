@@ -1,0 +1,9 @@
+{
+	"id": "boundary",
+	"metadata": {
+		"code_alpha": "boundary",
+		"code_numeric": 0
+	},
+	"name": "Boundary",
+	"type": "county"
+}

@@ -1,0 +1,17 @@
+{
+	"links": {
+		"info": {
+			"url": "https://www.co.shawano.wi.us/departments/?department=5c6edb95d748",
+			"text": "cdc/wisconsin/state_link"
+		},
+		"scheduling": {
+			"url": "https://wi-telegov.egov.com/shawano-menominee-co?fbclid=IwAR0KAhNbm4MPwsN-ESwQ6_kygyd8SsB8VmZZjOEZpgTPy1w_3AP7am7SYNk",
+			"text": "c19.links/schedule_vax"
+		},
+		"scheduling_phone": {
+			"url": "tel:715-526-4818",
+			"text": "c19.link/scheduling.phone.shawanomenominee",
+			"description": "c19.link/scheduling.phone.description.shawanomenominee"
+		}
+	}
+}

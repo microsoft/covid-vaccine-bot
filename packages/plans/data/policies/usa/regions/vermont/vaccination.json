@@ -1,0 +1,120 @@
+{
+	"links": {
+		"info": {
+			"text": "cdc/vermont/state_link",
+			"url": "https://www.healthvermont.gov/covid-19/vaccine"
+		},
+		"providers": {
+			"url": "https://www.healthvermont.gov/covid-19/vaccine/getting-covid-19-vaccine"
+		},
+		"workflow": {
+			"url": "https://vermont.force.com/events/s/selfregistration"
+		},
+		"eligibility": {
+			"url": "https://www.healthvermont.gov/covid-19/vaccine/about-covid-19-vaccines-vermont",
+			"scrapeQuery": ["article .paragraphs-items .content .field-body"]
+		},
+		"scheduling_phone": {
+			"url": "tel:855-722-7878",
+			"text": "c19.link/scheduling.phone.vt"
+		}
+	},
+	"activePhase": "2",
+	"phases": [
+		{
+			"id": "1a",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/healthcare_worker"
+				},
+				{
+					"question": "c19.eligibility.question/long_term_care_resident"
+				},
+				{
+					"question": "c19.eligibility.question/essential_worker.are"
+				},
+				{
+					"question": "c19.eligibility.question/essential_worker.are_you"
+				},
+				{
+					"question": "c19.eligibility.question/essential_worker.ff_leo_corrections"
+				},
+				{
+					"question": "c19.eligibility.question/age.65_up"
+				},
+				{
+					"question": "c19.eligibility.question/age.are_you_age",
+					"moreInfoText": "c19.eligibility.moreinfo/age.are_you_age.vt.1a"
+				},
+				{
+					"question": "c19.eligibility.question/people_of_color.are"
+				}
+			]
+		},
+		{
+			"id": "1b",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/healthcare_worker"
+				},
+				{
+					"question": "c19.eligibility.question/long_term_care_resident"
+				},
+				{
+					"question": "c19.eligibility.question/essential_worker.1b"
+				},
+				{
+					"question": "c19.eligibility.question/age.75_up"
+				}
+			]
+		},
+		{
+			"id": "1c",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/healthcare_worker",
+					"moreInfoUrl": "https://www.healthvermont.gov/covid-19/vaccine/getting-covid-19-vaccine#eligiblenow"
+				},
+				{
+					"question": "c19.eligibility.question/long_term_care_resident.are",
+					"moreInfoUrl": "https://www.healthvermont.gov/covid-19/vaccine/getting-covid-19-vaccine#eligiblenow"
+				},
+				{
+					"question": "c19.eligibility.question/essential_worker.are_you",
+					"moreInfoUrl": "https://apps.health.vermont.gov/COVID/faq/#4837"
+				},
+				{
+					"question": "c19.eligibility.question/health",
+					"moreInfoUrl": "https://www.healthvermont.gov/covid-19/vaccine/getting-covid-19-vaccine#conditions"
+				},
+				{
+					"question": "c19.eligibility.question/age.are_you_age_30"
+				},
+				{
+					"question": "c19.eligibility.question/essential_worker.are",
+					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.are.vt.1c"
+				},
+				{
+					"question": "c19.eligibility.question/people_of_color.are_you",
+					"moreInfoText": "c19.eligibility.moreinfo/people_of_color.are_you.vt.1c",
+					"moreInfoUrl": "https://www.healthvermont.gov/covid-19/vaccine/about-covid-19-vaccines-vermont#equity"
+				},
+				{
+					"question": "c19.eligibility.question/people_of_color.do",
+					"moreInfoText": "c19.eligibility.moreinfo/people_of_color.do.vt.1c",
+					"moreInfoUrl": "https://www.healthvermont.gov/covid-19/vaccine/about-covid-19-vaccines-vermont#equity"
+				}
+			],
+			"label": "Current"
+		},
+		{
+			"id": "2",
+			"label": "2",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.16_up"
+				}
+			]
+		}
+	]
+}

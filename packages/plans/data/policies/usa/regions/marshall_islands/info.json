@@ -1,0 +1,9 @@
+{
+	"id": "marshall_islands",
+	"name": "cdc/marshall_islands/state_name",
+	"type": "territory",
+	"metadata": {
+		"code_alpha": "MH",
+		"code_numeric": 68
+	}
+}

@@ -1,0 +1,13 @@
+{
+	"links": {
+		"info": {
+			"url": "www.phd5.idaho.gov/covid-vaccine/",
+			"text": "cdc/idaho/state_link"
+		},
+		"scheduling_phone": {
+			"url": "tel:208-737-1138",
+			"text": "c19.link/scheduling.phone.camas",
+			"description": "c19.link/scheduling.phone.description.camas"
+		}
+	}
+}

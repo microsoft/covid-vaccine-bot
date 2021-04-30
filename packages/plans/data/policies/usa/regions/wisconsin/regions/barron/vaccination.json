@@ -1,0 +1,16 @@
+{
+	"links": {
+		"info": {
+			"url": "https://www.barroncountywi.gov/index.asp?Type=B_PR&SEC={A03C10D0-957E-49C9-AE31-BE9B081F026D}&DE={81B3EAFA-2410-4701-84D1-2D2037166EEB}",
+			"text": "cdc/wisconsin/state_link"
+		},
+		"scheduling": {
+			"url": "https://www.surveymonkey.com/r/VRLDB7Y",
+			"text": "c19.links/schedule_vax"
+		},
+		"scheduling_phone": {
+			"url": "tel:715-537-6123",
+			"text": "c19.link/scheduling.phone.barron"
+		}
+	}
+}

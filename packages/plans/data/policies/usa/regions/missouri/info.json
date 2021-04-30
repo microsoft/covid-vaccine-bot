@@ -1,0 +1,9 @@
+{
+	"id": "missouri",
+	"name": "cdc/missouri/state_name",
+	"type": "state",
+	"metadata": {
+		"code_alpha": "MO",
+		"code_numeric": 29
+	}
+}

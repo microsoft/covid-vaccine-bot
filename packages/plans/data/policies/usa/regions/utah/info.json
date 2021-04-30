@@ -1,0 +1,9 @@
+{
+	"id": "utah",
+	"name": "cdc/utah/state_name",
+	"type": "state",
+	"metadata": {
+		"code_alpha": "UT",
+		"code_numeric": 49
+	}
+}

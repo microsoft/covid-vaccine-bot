@@ -1,0 +1,16 @@
+{
+	"links": {
+		"info": {
+			"url": "https://www.daviscountyutah.gov/health/covid-19/vaccine",
+			"text": "cdc/utah/state_link"
+		},
+		"scheduling": {
+			"url": "https://webportal.daviscountyutah.gov/App/CovidPublic/home",
+			"text": "c19.links/schedule_vax"
+		},
+		"scheduling_phone": {
+			"url": "tel:801-525-4900",
+			"text": "c19.link/scheduling.phone.davis"
+		}
+	}
+}

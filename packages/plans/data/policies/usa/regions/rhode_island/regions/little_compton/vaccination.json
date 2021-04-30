@@ -1,0 +1,13 @@
+{
+	"links": {
+		"info": {
+			"url": "http://www.littlecomptonri.org/news_detail_T6_R144.php",
+			"text": "cdc/rhode_island/state_link"
+		},
+		"scheduling_phone": {
+			"url": "tel:635-4400",
+			"text": "c19.link/scheduling.phone.little_compton",
+			"description": "c19.link/scheduling.phone.description.little_compton"
+		}
+	}
+}

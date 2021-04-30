@@ -1,0 +1,13 @@
+{
+	"links": {
+		"info": {
+			"url": "http://bakercountycovid19.com/",
+			"text": "cdc/oregon/state_link"
+		},
+		"scheduling_phone": {
+			"url": "tel:541-523-8211",
+			"text": "c19.link/scheduling.phone.baker_county"
+		}
+	},
+	"activePhase": "2"
+}

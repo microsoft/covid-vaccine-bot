@@ -1,0 +1,12 @@
+{
+	"links": {
+		"info": {
+			"url": "https://www.narragansettri.gov/vaccination",
+			"text": "cdc/rhode_island/state_link"
+		},
+		"scheduling_phone": {
+			"url": "tel:401-782-0611",
+			"text": "c19.link/scheduling.phone.narragansett"
+		}
+	}
+}

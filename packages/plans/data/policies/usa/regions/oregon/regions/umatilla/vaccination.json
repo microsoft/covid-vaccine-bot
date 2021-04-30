@@ -1,0 +1,13 @@
+{
+	"links": {
+		"info": {
+			"url": "http://ucohealth.net/",
+			"text": "cdc/oregon/state_link"
+		},
+		"scheduling_phone": {
+			"url": "tel:541-278-5432",
+			"text": "c19.link/scheduling.phone.umatilla"
+		}
+	},
+	"activePhase": "2"
+}

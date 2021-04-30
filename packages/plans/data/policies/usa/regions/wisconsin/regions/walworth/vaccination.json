@@ -1,0 +1,16 @@
+{
+	"links": {
+		"info": {
+			"url": "https://wi-walworthcounty.civicplus.com/896/COVID-19-Vaccine-Information",
+			"text": "cdc/wisconsin/state_link"
+		},
+		"scheduling": {
+			"url": "https://www.co.walworth.wi.us/FormCenter/Public-Health-Division-4/COVID19-Vaccine-Inquiry-Phase-1a-63",
+			"text": "c19.links/schedule_vax"
+		},
+		"scheduling_phone": {
+			"url": "tel:(262) 741-3200",
+			"text": "c19.link/scheduling.phone.walworth"
+		}
+	}
+}

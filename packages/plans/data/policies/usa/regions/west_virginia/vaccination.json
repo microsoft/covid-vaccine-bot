@@ -1,0 +1,91 @@
+{
+	"links": {
+		"info": {
+			"text": "cdc/west_virginia/state_link",
+			"url": "https://dhhr.wv.gov/COVID-19/Pages/Vaccine.aspx",
+			"scrapeQuery": [".col-12.col-md-8"]
+		},
+		"scheduling": {
+			"url": "https://member.everbridge.net/747122446041089/login",
+			"text": "c19.links/schedule_vax"
+		},
+		"scheduling_phone": {
+			"url": "tel:1-833-734-0965",
+			"text": "c19.link/scheduling.phone.wv",
+			"description": "c19.link/scheduling.phone.description.wv"
+		}
+	},
+	"activePhase": "16_and_older",
+	"phases": [
+		{
+			"id": "1a",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/healthcare_worker"
+				},
+				{
+					"question": "c19.eligibility.question/long_term_care_resident"
+				},
+				{
+					"question": "c19.eligibility.question/age.are"
+				},
+				{
+					"question": "c19.eligibility.question/essential_worker.are_you_an_educator"
+				},
+				{
+					"question": "c19.eligibility.question/age.are_you_age",
+					"moreInfoText": "c19.eligibility.moreinfo/age.are_you_age.wv.1a"
+				},
+				{
+					"question": "c19.eligibility.question/essential_worker.are_you_an_essential"
+				}
+			]
+		},
+		{
+			"id": "1b",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/healthcare_worker"
+				},
+				{
+					"question": "c19.eligibility.question/long_term_care_resident"
+				},
+				{
+					"question": "c19.eligibility.question/essential_worker.1b"
+				},
+				{
+					"question": "c19.eligibility.question/age.75_up"
+				}
+			]
+		},
+		{
+			"id": "1c",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/healthcare_worker"
+				},
+				{
+					"question": "c19.eligibility.question/long_term_care_resident"
+				},
+				{
+					"question": "c19.eligibility.question/essential_worker"
+				},
+				{
+					"question": "c19.eligibility.question/health"
+				},
+				{
+					"question": "c19.eligibility.question/age.65_up"
+				}
+			]
+		},
+		{
+			"id": "16_and_older",
+			"label": "16 and older",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.16_up"
+				}
+			]
+		}
+	]
+}

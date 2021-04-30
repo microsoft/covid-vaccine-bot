@@ -1,0 +1,9 @@
+{
+	"id": "connecticut",
+	"name": "cdc/connecticut/state_name",
+	"type": "state",
+	"metadata": {
+		"code_alpha": "CT",
+		"code_numeric": 9
+	}
+}

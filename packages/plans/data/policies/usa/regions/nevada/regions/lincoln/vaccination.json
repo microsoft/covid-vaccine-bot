@@ -1,0 +1,14 @@
+{
+	"links": {
+		"info": {
+			"url": "https://lincolncountynv.org/departments/public-health/",
+			"text": "cdc/nevada/state_link"
+		},
+		"scheduling_phone": {
+			"url": "tel:775-962-8086",
+			"text": "c19.link/scheduling.phone.nv.lincoln",
+			"description": "c19.link/scheduling.phone.description.nv.lincoln"
+		}
+	},
+	"activePhase": "age_18"
+}

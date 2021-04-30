@@ -1,0 +1,16 @@
+{
+	"links": {
+		"info": {
+			"url": "https://publichealth.co.oneida.wi.us/covid-19-vaccine/",
+			"text": "cdc/wisconsin/state_link"
+		},
+		"scheduling": {
+			"url": "https://publichealth.co.oneida.wi.us/covid-19-vaccine-registration/",
+			"text": "c19.links/schedule_vax"
+		},
+		"scheduling_phone": {
+			"url": "tel:715.369.6111",
+			"text": "c19.link/scheduling.phone.wi.oneida"
+		}
+	}
+}

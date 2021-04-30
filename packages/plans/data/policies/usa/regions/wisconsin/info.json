@@ -1,0 +1,9 @@
+{
+	"id": "wisconsin",
+	"name": "cdc/wisconsin/state_name",
+	"type": "state",
+	"metadata": {
+		"code_alpha": "WI",
+		"code_numeric": 34
+	}
+}

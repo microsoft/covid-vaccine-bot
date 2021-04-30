@@ -1,0 +1,9 @@
+{
+	"id": "santa_clara",
+	"metadata": {
+		"code_alpha": "santa_clara",
+		"code_numeric": 0
+	},
+	"name": "Santa Clara",
+	"type": "county"
+}

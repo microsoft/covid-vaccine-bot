@@ -1,0 +1,17 @@
+{
+	"links": {
+		"info": {
+			"url": "https://www.sublettewycovid.com/",
+			"text": "cdc/wyoming/state_link"
+		},
+		"scheduling": {
+			"url": "https://bit.ly/2LovKQU",
+			"text": "c19.links/schedule_vax"
+		},
+		"scheduling_phone": {
+			"url": "tel:307-367-2157",
+			"text": "c19.link/scheduling.phone.sublette"
+		}
+	},
+	"activePhase": "18_and_older"
+}

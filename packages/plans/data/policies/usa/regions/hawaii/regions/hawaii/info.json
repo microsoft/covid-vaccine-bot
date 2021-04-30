@@ -1,0 +1,9 @@
+{
+	"id": "hawaii",
+	"metadata": {
+		"code_alpha": "hawaii",
+		"code_numeric": 0
+	},
+	"name": "Hawaii Island",
+	"type": "county"
+}

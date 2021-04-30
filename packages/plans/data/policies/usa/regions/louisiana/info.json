@@ -1,0 +1,9 @@
+{
+	"id": "louisiana",
+	"name": "cdc/louisiana/state_name",
+	"type": "state",
+	"metadata": {
+		"code_alpha": "LA",
+		"code_numeric": 22
+	}
+}

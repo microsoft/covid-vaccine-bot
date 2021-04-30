@@ -1,0 +1,16 @@
+{
+	"links": {
+		"info": {
+			"url": "http://www.polkcountyhealthdept.org/home/covid-19-information/",
+			"text": "cdc/wisconsin/state_link"
+		},
+		"scheduling": {
+			"url": "http://www.polkcountyhealthdept.org/home/covid-19-information/covid-19-vaccine-appointments/",
+			"text": "c19.links/schedule_vax"
+		},
+		"scheduling_phone": {
+			"url": "tel:715-485-8400",
+			"text": "c19.link/scheduling.phone.polk"
+		}
+	}
+}

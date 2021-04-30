@@ -1,0 +1,17 @@
+{
+	"links": {
+		"info": {
+			"url": "https://middletownri.com/covid-19/",
+			"text": "cdc/rhode_island/state_link"
+		},
+		"scheduling": {
+			"url": "https://www.surveymonkey.com/r/VaccineMiddletown",
+			"text": "c19.links/schedule_vax"
+		},
+		"scheduling_phone": {
+			"url": "tel:401-842-6565",
+			"text": "c19.link/scheduling.phone.middletown",
+			"description": "c19.link/scheduling.phone.description.middletown"
+		}
+	}
+}

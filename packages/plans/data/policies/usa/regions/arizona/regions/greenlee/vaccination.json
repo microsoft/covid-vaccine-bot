@@ -1,0 +1,14 @@
+{
+	"activePhase": "1b_16_and_older",
+	"links": {
+		"info": {
+			"text": "c19.links/info.az.greenlee",
+			"url": "https://greenlee.az.gov/departments/health-county-services/",
+			"scrape": false
+		},
+		"registration": {
+			"text": "c19.links/registration.az.greenlee",
+			"url": "https://www.gilahealth.com/covid-19/covid-19-vaccine"
+		}
+	}
+}

@@ -1,0 +1,567 @@
+String ID,en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th
+c19.eligibility.question/essential_worker.1a.nv.safety_natsec,"Are public safety officer or a deployed and mission-critical personnell with an essential national security role, or a staff member with state and local emergency operations?",,,,"¿Es oficial de seguridad pública o personal desplegado y de misión crítica con un papel esencial de seguridad nacional, o un miembro del personal con operaciones de emergencia estatales y locales?",,,,,,,,,,
+c19.link/scheduling.phone.nv,"1-800-401-0946",,,,"1-800-401-0946",,,,,,,,,,
+c19.link/scheduling.phone.carson_city,"1-800-401-0946",,,,"1-800-401-0946",,,,,,,,,,
+c19.link/scheduling.phone.description.carson_city,"Nevada COVID-19 Vaccine Call Center",,,,"Centro de Llamadas de Vacunas COVID-19 de Nevada",,,,,,,,,,
+c19.link/scheduling.phone.churchill,"1-800-401-0946",,,,"1-800-401-0946",,,,,,,,,,
+c19.link/scheduling.phone.description.churchill,"Nevada Vaccine Call Center",,,,"Centro de llamadas de vacunas de Nevada",,,,,,,,,,
+c19.link/scheduling.phone.nv.clark,"1-800-401-0946",,,,"1-800-401-0946",,,,,,,,,,
+c19.link/scheduling.phone.description.nv.clark,"Nevada COVID-19 Vaccine Call Center",,,,"Centro de Llamadas de Vacunas COVID-19 de Nevada",,,,,,,,,,
+c19.link/scheduling.phone.esmeralda,"775-482-6711",,,,"775-482-6711",,,,,,,,,,
+c19.link/scheduling.phone.eureka,"775-237-5372",,,,"775-237-5372",,,,,,,,,,
+c19.link/scheduling.phone.lander,"775-539-9136",,,,"775-539-9136",,,,,,,,,,
+c19.link/scheduling.phone.description.lander,"Lander County COVID-19 Vaccine Clinic",,,,"Clínica de Vacunas COVID-19 del Condado de Lander",,,,,,,,,,
+c19.link/scheduling.phone.nv.lincoln,"775-962-8086",,,,"775-962-8086",,,,,,,,,,
+c19.link/scheduling.phone.description.nv.lincoln,"Community Health Nurse",,,,"Enfermera de salud comunitaria",,,,,,,,,,
+c19.link/scheduling.phone.lyon,"1-800-401-0946",,,,"1-800-401-0946",,,,,,,,,,
+c19.link/scheduling.phone.description.lyon,"Nevada COVID-19 Vaccine Call Center",,,,"Centro de Llamadas de Vacunas COVID-19 de Nevada",,,,,,,,,,
+c19.link/scheduling.phone.nye,"1-800-401-0946",,,,"1-800-401-0946",,,,,,,,,,
+c19.link/scheduling.phone.description.nye,"Nevada COVID-19 Vaccine Call Center",,,,"Centro de Llamadas de Vacunas COVID-19 de Nevada",,,,,,,,,,
+c19.link/scheduling.phone.pershing,"(775) 273-2041",,,,"(775) 273-2041",,,,,,,,,,
+c19.link/scheduling.phone.description.pershing,"Community Health Nurse's Office",,,,"Oficina de Enfermería de Salud Comunitaria",,,,,,,,,,
+c19.link/scheduling.phone.storey,"1-800-401-0946",,,,"1-800-401-0946",,,,,,,,,,
+c19.link/scheduling.phone.description.storey,"Nevada COVID-19 Vaccine Call Center",,,,"Centro de Llamadas de Vacunas COVID-19 de Nevada",,,,,,,,,,
+c19.link/scheduling.phone.washoe,"775-328-2427",,,,"775-328-2427",,,,,,,,,,
+c19.link/scheduling.phone.description.washoe,"Washoe County Health District",,,,"Distrito de Salud del Condado de Washoe",,,,,,,,,,
+c19.link/scheduling.phone.white_pine,"775-293-6558",,,,"775-293-6558",,,,,,,,,,
+c19.link/scheduling.phone.description.white_pine,"White Pine County Community Heath",,,,"Heath comunitario del condado de White Pine",,,,,,,,,,
+c19.eligibility.moreinfo/healthcare_worker.nv.1a,"- General Medical and Surgical Hospital Staff
+- Psychiatric and Substance Abuse Hospital Staff
+- Emergency Medical Services Personnel
+- Frontline Public Health Workforce
+- Laboratory Workers
+- Pharmacists and Pharmacy Technicians
+- Outpatient and Home Health Providers",,,,"- Personal del Hospital Médico General y Quirúrgico
+- Personal del Hospital psiquiátrico y de abuso de sustancias
+- Personal de servicios médicos de emergencia
+- Fuerza de trabajo de salud pública de primera línea
+- Trabajadores de laboratorio
+- Farmacéuticos y Técnicos de Farmacia
+- Proveedores ambulatorios y de salud en el hogar",,,,,,,,,,
+c19.eligibility.moreinfo/essential_worker.leo_corrections.nv.1a,"- Nevada Department of Corrections Staff
+- Law Enforcement and Public Safety Personnel
+- Deployed and mission critical personnel who play essential role in national security
+- State and Local Emergency Operations Managers and Staff",,,,"- Personal del Departamento de Correccionales de Nevada
+- Personal policial y de seguridad pública
+- Personal desplegado y de misión crítica que desempeña un papel esencial en la seguridad nacional
+- Gerentes y Personal de Operaciones de Emergencia estatales y locales",,,,,,,,,,
+c19.eligibility.moreinfo/essential_worker.nv.1a,"Frontline/Essential Workforce prioritization can vary by county but usually includes:
+
+PUBLIC SAFETY & SECURITY 
+- NV Dept. of Corrections Staff
+- Law Enforcement, Public Safety, and National Security
+- State and Local Emergency Operations Managers/Staff
+
+FRONTLINE COMMUNITY SUPPORT
+- Education (Pre-K & K-12) and Childcare - public/private/charter school settings
+- Nevada System of Higher Education (NSHE) Frontline Educators, Staff & Students
+- Community Support Frontline Staff (i.e. frontline workers who support food, shelter, court/legal and social services, and other necessities of life for needy groups and individuals)
+- Continuity of Governance (State and Local)
+- Essential Public Transportation
+- Remaining Essential Public Health Workforce 
+- Mortuary Services
+
+FRONTLINE SUPPLY CHAIN & LOGISTICS
+- Agriculture and Food Processing
+- End-to-End Essential Goods Supply Chain (includes manufacturing, transport, distribution and sale of essential items, e.g. grocery store employees) 
+- Utilities and Communications Infrastructure
+- Nevada Department of Transportation and Local Emergency Road Personnel
+- Frontline Airport Operations 
+- Other Essential Transportation
+
+FRONTLINE COMMERCE & SERVICE INDUSTRIES
+- Food Service and Hospitality 
+- Hygiene Products and Services
+- Depository Credit Institution Workforce 
+
+FRONTLINE INFRASTRUCTURE
+- Infrastructure, Shelter and Housing (Construction)
+- Essential Mining Operations
+
+OTHER
+-Community Support Administrative Staff
+-NSHE Students living in campus-sponsored residential settings (e.g., dorms, campus-sponsored apartments, etc.)
+-NSHE Remaining Workforce",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/health.nv.1a,"The following conditions are included in the state's underlying conditions prioritization list:
+- Asthma (moderate to severe)
+- Cancer
+- Cerebrovascular Disease, Hypertension, or High Blood Pressure
+- Chronic Kidney Disease
+- COPD (chronic obstructive pulmonary disease), Cystic Fibrosis, Pulmonary Fibrosis, and other chronic lung diseases
+- Dementia
+- Down Syndrome 
+- Heart conditions, such as heart failure, coronary heart disease, or cardiomyopathies
+- Immunocompromised status
+- Liver Disease
+- Overweight/Obese
+- Pregnancy
+- Thalassemia (a blood disorder)
+- Type 1 & Type 2 Diabetes mellitus
+- Sickle Cell Disease
+- Smoking
+
+Individuals with any underlying medical condition (including those conditions that are NOT on the current list) should consult with their healthcare providers about personal risk factors and circumstances to determine whether extra precautions are warranted. ",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/healthcare_worker.nv.55,"- General Medical and Surgical Hospital Staff
+- Psychiatric and Substance Abuse Hospital Staff
+- Emergency Medical Services Personnel
+- Frontline Public Health Workforce
+- Laboratory Workers
+- Pharmacists and Pharmacy Technicians
+- Outpatient and Home Health Providers",,,,"- Personal del Hospital Médico General y Quirúrgico
+- Personal del Hospital psiquiátrico y de abuso de sustancias
+- Personal de servicios médicos de emergencia
+- Fuerza de trabajo de salud pública de primera línea
+- Trabajadores de laboratorio
+- Farmacéuticos y Técnicos de Farmacia
+- Proveedores ambulatorios y de salud en el hogar",,,,,,,,,,
+c19.eligibility.moreinfo/health.nv.55,"The following conditions are included in the state's underlying conditions prioritization list:
+- Asthma (moderate to severe)
+- Cancer
+- Cerebrovascular Disease, Hypertension, or High Blood Pressure
+- Chronic Kidney Disease
+- COPD (chronic obstructive pulmonary disease), Cystic Fibrosis, Pulmonary Fibrosis, and other chronic lung diseases
+- Dementia
+- Down Syndrome 
+- Heart conditions, such as heart failure, coronary heart disease, or cardiomyopathies
+- Immunocompromised status
+- Liver Disease
+- Overweight/Obese
+- Pregnancy
+- Thalassemia (a blood disorder)
+- Type 1 & Type 2 Diabetes mellitus
+- Sickle Cell Disease
+- Smoking
+
+Individuals with any underlying medical condition (including those conditions that are NOT on the current list) should consult with their healthcare providers about personal risk factors and circumstances to determine whether extra precautions are warranted. ",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/essential_worker.nv.55,"Frontline/Essential Workforce prioritization can vary by county but usually includes:
+
+PUBLIC SAFETY & SECURITY 
+- NV Dept. of Corrections Staff
+- Law Enforcement, Public Safety, and National Security
+- State and Local Emergency Operations Managers/Staff
+
+FRONTLINE COMMUNITY SUPPORT
+- Education (Pre-K & K-12) and Childcare - public/private/charter school settings
+- Nevada System of Higher Education (NSHE) Frontline Educators, Staff & Students
+- Community Support Frontline Staff (i.e. frontline workers who support food, shelter, court/legal and social services, and other necessities of life for needy groups and individuals)
+- Continuity of Governance (State and Local)
+- Essential Public Transportation
+- Remaining Essential Public Health Workforce 
+- Mortuary Services
+
+FRONTLINE SUPPLY CHAIN & LOGISTICS
+- Agriculture and Food Processing
+- End-to-End Essential Goods Supply Chain (includes manufacturing, transport, distribution and sale of essential items, e.g. grocery store employees) 
+- Utilities and Communications Infrastructure
+- Nevada Department of Transportation and Local Emergency Road Personnel
+- Frontline Airport Operations 
+- Other Essential Transportation
+
+FRONTLINE COMMERCE & SERVICE INDUSTRIES
+- Food Service and Hospitality 
+- Hygiene Products and Services
+- Depository Credit Institution Workforce 
+
+FRONTLINE INFRASTRUCTURE
+- Infrastructure, Shelter and Housing (Construction)
+- Essential Mining Operations
+
+OTHER
+-Community Support Administrative Staff
+-NSHE Students living in campus-sponsored residential settings (e.g., dorms, campus-sponsored apartments, etc.)
+-NSHE Remaining Workforce",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/healthcare_worker.nv.age_18_and_essential_workers,"- General Medical and Surgical Hospital Staff
+- Psychiatric and Substance Abuse Hospital Staff
+- Emergency Medical Services Personnel
+- Frontline Public Health Workforce
+- Laboratory Workers
+- Pharmacists and Pharmacy Technicians
+- Outpatient and Home Health Providers",,,,"- Personal del Hospital Médico General y Quirúrgico
+- Personal del Hospital psiquiátrico y de abuso de sustancias
+- Personal de servicios médicos de emergencia
+- Fuerza de trabajo de salud pública de primera línea
+- Trabajadores de laboratorio
+- Farmacéuticos y Técnicos de Farmacia
+- Proveedores ambulatorios y de salud en el hogar",,,,,,,,,,
+c19.eligibility.moreinfo/health.nv.age_18_and_essential_workers,"The following conditions are included in the state's underlying conditions prioritization list:
+- Asthma (moderate to severe)
+- Cancer
+- Cerebrovascular Disease, Hypertension, or High Blood Pressure
+- Chronic Kidney Disease
+- COPD (chronic obstructive pulmonary disease), Cystic Fibrosis, Pulmonary Fibrosis, and other chronic lung diseases
+- Dementia
+- Down Syndrome 
+- Heart conditions, such as heart failure, coronary heart disease, or cardiomyopathies
+- Immunocompromised status
+- Liver Disease
+- Overweight/Obese
+- Pregnancy
+- Thalassemia (a blood disorder)
+- Type 1 & Type 2 Diabetes mellitus
+- Sickle Cell Disease
+- Smoking
+
+Individuals with any underlying medical condition (including those conditions that are NOT on the current list) should consult with their healthcare providers about personal risk factors and circumstances to determine whether extra precautions are warranted. ",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/essential_worker.nv.age_18_and_essential_workers,"Frontline/Essential Workforce prioritization can vary by county but usually includes:
+
+PUBLIC SAFETY & SECURITY 
+- NV Dept. of Corrections Staff
+- Law Enforcement, Public Safety, and National Security
+- State and Local Emergency Operations Managers/Staff
+
+FRONTLINE COMMUNITY SUPPORT
+- Education (Pre-K & K-12) and Childcare - public/private/charter school settings
+- Nevada System of Higher Education (NSHE) Frontline Educators, Staff & Students
+- Community Support Frontline Staff (i.e. frontline workers who support food, shelter, court/legal and social services, and other necessities of life for needy groups and individuals)
+- Continuity of Governance (State and Local)
+- Essential Public Transportation
+- Remaining Essential Public Health Workforce 
+- Mortuary Services
+
+FRONTLINE SUPPLY CHAIN & LOGISTICS
+- Agriculture and Food Processing
+- End-to-End Essential Goods Supply Chain (includes manufacturing, transport, distribution and sale of essential items, e.g. grocery store employees) 
+- Utilities and Communications Infrastructure
+- Nevada Department of Transportation and Local Emergency Road Personnel
+- Frontline Airport Operations 
+- Other Essential Transportation
+
+FRONTLINE COMMERCE & SERVICE INDUSTRIES
+- Food Service and Hospitality 
+- Hygiene Products and Services
+- Depository Credit Institution Workforce 
+
+FRONTLINE INFRASTRUCTURE
+- Infrastructure, Shelter and Housing (Construction)
+- Essential Mining Operations
+
+OTHER
+-Community Support Administrative Staff
+-NSHE Students living in campus-sponsored residential settings (e.g., dorms, campus-sponsored apartments, etc.)
+-NSHE Remaining Workforce",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/healthcare_worker.nv.age_16,"- General Medical and Surgical Hospital Staff
+- Psychiatric and Substance Abuse Hospital Staff
+- Emergency Medical Services Personnel
+- Frontline Public Health Workforce
+- Laboratory Workers
+- Pharmacists and Pharmacy Technicians
+- Outpatient and Home Health Providers",,,,"- Personal del Hospital Médico General y Quirúrgico
+- Personal del Hospital psiquiátrico y de abuso de sustancias
+- Personal de servicios médicos de emergencia
+- Fuerza de trabajo de salud pública de primera línea
+- Trabajadores de laboratorio
+- Farmacéuticos y Técnicos de Farmacia
+- Proveedores ambulatorios y de salud en el hogar",,,,,,,,,,
+c19.eligibility.moreinfo/health.nv.age_16,"The following conditions are included in the state's underlying conditions prioritization list:
+- Asthma (moderate to severe)
+- Cancer
+- Cerebrovascular Disease, Hypertension, or High Blood Pressure
+- Chronic Kidney Disease
+- COPD (chronic obstructive pulmonary disease), Cystic Fibrosis, Pulmonary Fibrosis, and other chronic lung diseases
+- Dementia
+- Down Syndrome 
+- Heart conditions, such as heart failure, coronary heart disease, or cardiomyopathies
+- Immunocompromised status
+- Liver Disease
+- Overweight/Obese
+- Pregnancy
+- Thalassemia (a blood disorder)
+- Type 1 & Type 2 Diabetes mellitus
+- Sickle Cell Disease
+- Smoking
+
+Individuals with any underlying medical condition (including those conditions that are NOT on the current list) should consult with their healthcare providers about personal risk factors and circumstances to determine whether extra precautions are warranted. ",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/essential_worker.nv.age_16,"Frontline/Essential Workforce prioritization can vary by county but usually includes:
+
+PUBLIC SAFETY & SECURITY 
+- NV Dept. of Corrections Staff
+- Law Enforcement, Public Safety, and National Security
+- State and Local Emergency Operations Managers/Staff
+
+FRONTLINE COMMUNITY SUPPORT
+- Education (Pre-K & K-12) and Childcare - public/private/charter school settings
+- Nevada System of Higher Education (NSHE) Frontline Educators, Staff & Students
+- Community Support Frontline Staff (i.e. frontline workers who support food, shelter, court/legal and social services, and other necessities of life for needy groups and individuals)
+- Continuity of Governance (State and Local)
+- Essential Public Transportation
+- Remaining Essential Public Health Workforce 
+- Mortuary Services
+
+FRONTLINE SUPPLY CHAIN & LOGISTICS
+- Agriculture and Food Processing
+- End-to-End Essential Goods Supply Chain (includes manufacturing, transport, distribution and sale of essential items, e.g. grocery store employees) 
+- Utilities and Communications Infrastructure
+- Nevada Department of Transportation and Local Emergency Road Personnel
+- Frontline Airport Operations 
+- Other Essential Transportation
+
+FRONTLINE COMMERCE & SERVICE INDUSTRIES
+- Food Service and Hospitality 
+- Hygiene Products and Services
+- Depository Credit Institution Workforce 
+
+FRONTLINE INFRASTRUCTURE
+- Infrastructure, Shelter and Housing (Construction)
+- Essential Mining Operations
+
+OTHER
+-Community Support Administrative Staff
+-NSHE Students living in campus-sponsored residential settings (e.g., dorms, campus-sponsored apartments, etc.)
+-NSHE Remaining Workforce",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/essential_worker.nv.churchill.55,"Residents 16-64 years with certain underlying conditions as defined in the State of Nevada Playbook, Lane 2.1.3.  
+Agriculture and food processing as described in the State of Nevada Playbook, Lane 1.3.1
+Educators (pre-K & K-12) and Childcare — public/private/charter school settings
+Hospital and frontline public health workers
+Long-term care/assisted-living staff & residents
+Psychiatric and Substance Abuse Hospital Staff
+Emergency Medical Services Personnel
+Frontline Public Health Workforce and Volunteers
+Laboratory Workers
+Pharmacists and Pharmacy Technicians
+Outpatient and Home Health Providers
+Nevada Department of Corrections Staff
+Law Enforcement and Public Safety Personnel
+Deployed and mission-critical personnel who play an essential role in national security
+State and Local Emergency Operations Managers and Staff
+Essential Public Transportation
+Remaining Essential Public Health Workforce
+Mortuary Services
+Frontline Supply & Logistics:  as described in the State of Nevada Playbook, Lane 1.3.1-1.3.6
+Food Service & Hospitality
+Hygiene Products and Services
+Depository Credit Institution Workforce
+Infrastructure Shelter and Housing (Construction)",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/veteran.are.nv.clark.1a,"Currently, VA is offering COVID-19 vaccine to Veterans already receiving care from the VA, based on CDC and VA risk criteria. If you're eligible to get a vaccine, your VA health care team will contact you. For additional information visit https://www.lasvegas.va.gov/services/covid-19-vaccines.asp or call 702-791-9185. Eligible veterans can also make an appointment for their vaccine at the North Las Vegas medical center by calling (702) 791-9185. Hours for the vaccine clinic are 7:30am-4pm weekdays.",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/essential_worker.nv.clark.1a,"Healthcare Workers 
+
+Frontline Public Safety & Security
+
+ Frontline Community Support
+
+Education (Pre-K & K-12) and Childcare (public/private/charter schools)
+Nevada System of Higher Education frontline educators, staff and students
+Community Support  (frontline workers who support food, shelter, court/legal services, social services, public utilities, and other necessities of life for needy groups and individuals)
+Essential Public Transportation
+Continuity of Governance (state and local)
+Remaining Essential Public Health Workforce
+Mortuary Services
+Frontline Supply Chain & Logistics
+
+Agriculture and Food Processing
+End-to End Essential Goods Supply Chain (includes manufacturing, transport, distribution and sale of essential items)
+Utilities and Communications Infrastructure
+Nevada Department of Transportation and Local Emergency Road Personnel
+Essential Airport Operations
+Other Essential Transportation
+Food Service and Hospitality ",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/essential_worker.nv.pershing.1a,"Frontline/Essential Workforce prioritization includes:
+
+PUBLIC SAFETY & SECURITY 
+- NV Dept. of Corrections Staff
+- Law Enforcement, Public Safety, and National Security
+- State and Local Emergency Operations Managers/Staff
+
+FRONTLINE COMMUNITY SUPPORT
+- Education (Pre-K & K-12) and Childcare - public/private/charter school settings
+- Nevada System of Higher Education (NSHE) Frontline Educators, Staff & Students
+- Community Support Frontline Staff (i.e. frontline workers who support food, shelter, court/legal and social services, and other necessities of life for needy groups and individuals)
+- Continuity of Governance (State and Local)
+- Essential Public Transportation
+- Remaining Essential Public Health Workforce 
+- Mortuary Services
+
+FRONTLINE SUPPLY CHAIN & LOGISTICS
+- Agriculture and Food Processing
+- End-to-End Essential Goods Supply Chain (includes manufacturing, transport, distribution and sale of essential items, e.g. grocery store employees) 
+- Utilities and Communications Infrastructure
+- Nevada Department of Transportation and Local Emergency Road Personnel
+- Frontline Airport Operations 
+- Other Essential Transportation",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/essential_worker.nv.storey.1a,"Community Support Frontline Staff (i.e. frontline workers who support food, shelter, court/legal and social services, and other necessities of life for needy groups and individuals)
+Food bank distributors and food preparers
+Front-facing state service staff (DETR, WIC, DWSS, DMV, ADSD)
+Community coalition advocates/ volunteers in the field
+Veterinary nurses, technicians, veterinarians, and other services supporting individuals and organizations with service animals, search and rescue dogs, and support animals
+Nevada System of Higher Education educators, staff & students 
+Educators (pre-K & K-12) and Childcare — public/private/charter school settings
+Hospital and frontline public health workers
+Long-term care/assisted-living staff & residents
+Psychiatric and Substance Abuse Hospital Staff
+Emergency Medical Services Personnel
+Frontline Public Health Workforce and Volunteers
+Laboratory Workers
+Pharmacists and Pharmacy Technicians
+Outpatient and Home Health Providers
+Nevada Department of Corrections Staff
+Law Enforcement and Public Safety Personnel
+Deployed and mission-critical personnel who play an essential role in national security
+State and Local Emergency Operations Managers and Staff
+Continuity of Governance and Services (State and Local)
+Local essential public transportation
+Essential public health workforce
+Mortuary services
+Agriculture and Food Processing 
+End-To-End Essential Goods Supply Chain
+Utilities and Communications Infrastructure 
+Nevada Department of Transportation and Local Emergency Road Personnel
+Frontline Airport Operations
+Other Essential Transportation",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/veteran.are.nv.washoe.1a,"VA Sierra Nevada Health Care System (VASNHCS) COVID-19 Vaccine Information
+
+VASNHCS has expanded vaccinations to all VA-eligible Veterans who receive care from VA.
+Appointments required. Please, no walk-ins.
+To make an appointment, please contact the Call Center at 775-786-7200 between business hours (Monday-Friday, 7:30am to 4pm)
+Veterans not enrolled in VA health who are interested in receiving the COVID-19 vaccine are asked to call our main number (775) 786-7200 to speak with Enrollment & Eligibility during business hours.
+For more information, please go to www.Reno.va.gov and click on the COVID Vaccine button for vaccine clinics on Saturdays and in other VA locations.",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/essential_worker.nv.washoe.1a,"Frontline/Essential Workforce prioritization includes:
+
+PUBLIC SAFETY & SECURITY 
+- NV Dept. of Corrections Staff
+- Law Enforcement, Public Safety, and National Security
+- State and Local Emergency Operations Managers/Staff
+
+FRONTLINE COMMUNITY SUPPORT
+- Education (Pre-K & K-12) and Childcare - public/private/charter school settings
+- Nevada System of Higher Education (NSHE) Frontline Educators, Staff & Students
+- Community Support Frontline Staff (i.e. frontline workers who support food, shelter, court/legal and social services, and other necessities of life for needy groups and individuals)
+- Continuity of Governance (State and Local)
+- Essential Public Transportation
+- Remaining Essential Public Health Workforce 
+- Mortuary Services
+
+FRONTLINE SUPPLY CHAIN & LOGISTICS
+- Agriculture and Food Processing
+- End-to-End Essential Goods Supply Chain (includes manufacturing, transport, distribution and sale of essential items, e.g. grocery store employees) 
+- Utilities and Communications Infrastructure
+- Nevada Department of Transportation and Local Emergency Road Personnel
+- Frontline Airport Operations 
+- Other Essential Transportation
+
+FRONTLINE COMMERCE & SERVICE INDUSTRIES
+- Food Service and Hospitality 
+- Hygiene Products and Services
+- Depository Credit Institution Workforce 
+
+FRONTLINE INFRASTRUCTURE
+- Infrastructure, Shelter and Housing (Construction)",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/healthcare_worker.nv.washoe.1a,"- Hospital and frontline public health workers
+- Long-term care/assisted-living staff & residents
+- Psychiatric and Substance Abuse Hospital Staff
+- Emergency Medical Services Personnel
+- Frontline Public Health Workforce
+- Laboratory Workers
+- Pharmacists and Pharmacy Technicians
+- Outpatient and Home Health Providers",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/essential_worker.nv.carson city.1a,"This includes:
+Community Support Frontline Staff (i.e. frontline workers who support food, shelter, court/legal and social services, and other necessities of life for needy groups and individuals)
+Food bank distributors and food preparers
+Front-facing state service staff (DETR, WIC, DWSS, DMV, ADSD)
+Community coalition advocates/ volunteers in the field
+Veterinary nurses, technicians, veterinarians, and other services supporting individuals and organizations with service animals, search and rescue dogs, and support animals.
+Nevada System of Higher Education educators, staff & students 
+Educators (pre-K & K-12) and Childcare — public/private/charter school settings
+Hospital and frontline public health workers
+Long-term care/assisted-living staff & residents
+Psychiatric and Substance Abuse Hospital Staff
+Emergency Medical Services Personnel
+Frontline Public Health Workforce and Volunteers
+Laboratory Workers
+Pharmacists and Pharmacy Technicians
+Outpatient and Home Health Providers
+Nevada Department of Corrections Staff
+Law Enforcement and Public Safety Personnel
+Deployed and mission-critical personnel who play an essential role in national security
+State and Local Emergency Operations Managers and Staff
+Continuity of Governance and Services (State and Local)
+Local Essential Public Transportation
+Essential Public Health Workforce
+Mortuary Services
+Agriculture and Food Processing
+End-To-End Essential Goods Supply Chain
+Utilities and Communications Infrastructure 
+Nevada Department of Transportation and Local Emergency Road Personnel
+Frontline Airport Operations
+Other Essential Transportation
+Food Service and Hospitality ",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/essential_worker.nv.douglas.1a,"Community Support Frontline Staff (i.e. frontline workers who support food, shelter, court/legal and social services, and other necessities of life for needy groups and individuals)
+Food bank distributors and food preparers
+Front-facing state service staff (DETR, WIC, DWSS, DMV, ADSD)
+Community coalition advocates/ volunteers in the field
+Veterinary nurses, technicians, veterinarians, and other services supporting individuals and organizations with service animals, search and rescue dogs, and support animals.
+Nevada System of Higher Education educators, staff & students 
+Educators (pre-K & K-12) and Childcare — public/private/charter school settings
+Hospital and frontline public health workers
+Long-term care/assisted-living staff & residents
+Psychiatric and Substance Abuse Hospital Staff
+Emergency Medical Services Personnel
+Frontline Public Health Workforce and Volunteers
+Laboratory Workers
+Pharmacists and Pharmacy Technicians
+Outpatient and Home Health Providers
+Nevada Department of Corrections Staff
+Law Enforcement and Public Safety Personnel
+Deployed and mission-critical personnel who play an essential role in national security
+State and Local Emergency Operations Managers and Staff
+Continuity of Governance and Services (State and Local)
+Local essential public transportation
+Essential public health workforce
+Mortuary services
+Agriculture and Food Processing
+End-To-End Essential Goods Supply Chain
+Utilities and Communications Infrastructure 
+Nevada Department of Transportation and Local Emergency Road Personnel
+Frontline Airport Operations
+Other Essential Transportation
+Food Service and Hospitality",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/essential_worker.nv.elko.1a,"Frontline/Essential Workforce prioritization can vary by county but usually includes:
+
+PUBLIC SAFETY & SECURITY 
+- NV Dept. of Corrections Staff
+- Law Enforcement, Public Safety, and National Security
+- State and Local Emergency Operations Managers/Staff
+
+FRONTLINE COMMUNITY SUPPORT
+- Education (Pre-K & K-12) and Childcare - public/private/charter school settings
+- Nevada System of Higher Education (NSHE) Frontline Educators, Staff & Students
+- Community Support Frontline Staff (i.e. frontline workers who support food, shelter, court/legal and social services, and other necessities of life for needy groups and individuals)
+- Continuity of Governance (State and Local)
+- Essential Public Transportation
+- Remaining Essential Public Health Workforce 
+- Mortuary Services
+
+FRONTLINE SUPPLY CHAIN & LOGISTICS
+- Agriculture and Food Processing
+- End-to-End Essential Goods Supply Chain (includes manufacturing, transport, distribution and sale of essential items, e.g. grocery store employees) 
+- Utilities and Communications Infrastructure
+- Nevada Department of Transportation and Local Emergency Road Personnel
+- Frontline Airport Operations 
+- Other Essential Transportation",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/essential_worker.nv.lyon.1a,"Community Support Frontline Staff (i.e. frontline workers who support food, shelter, court/legal and social services, and other necessities of life for needy groups and individuals)
+Food bank distributors and food preparers
+Front-facing state service staff (DETR, WIC, DWSS, DMV, ADSD)
+Community coalition advocates/ volunteers in the field
+Veterinary nurses, technicians, veterinarians, and other services supporting individuals and organizations with service animals, search and rescue dogs, and support animals
+Nevada System of Higher Education educators, staff & students 
+Educators (pre-K & K-12) and Childcare — public/private/charter school settings
+Hospital and frontline public health workers
+Long-term care/assisted-living staff & residents
+Psychiatric and Substance Abuse Hospital Staff
+Emergency Medical Services Personnel
+Frontline Public Health Workforce and Volunteers
+Laboratory Workers
+Pharmacists and Pharmacy Technicians
+Outpatient and Home Health Providers
+Nevada Department of Corrections Staff
+Law Enforcement and Public Safety Personnel
+Deployed and mission-critical personnel who play an essential role in national security
+State and Local Emergency Operations Managers and Staff
+Continuity of Governance and Services (State and Local)
+Local essential public transportation
+Essential public health workforce
+Mortuary services
+Agriculture and Food Processing
+End-To-End Essential Goods Supply Chain
+Utilities and Communications Infrastructure 
+Nevada Department of Transportation and Local Emergency Road Personnel
+Frontline Airport Operations
+Other Essential Transportation",,,,,,,,,,,,,,

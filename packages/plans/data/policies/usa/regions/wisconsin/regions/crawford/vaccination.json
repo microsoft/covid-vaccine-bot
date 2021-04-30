@@ -1,0 +1,16 @@
+{
+	"links": {
+		"info": {
+			"url": "https://www.crawfordcountywi.org/health.html",
+			"text": "cdc/wisconsin/state_link"
+		},
+		"scheduling": {
+			"url": "https://form.jotform.com/210196226105143",
+			"text": "c19.links/schedule_vax"
+		},
+		"scheduling_phone": {
+			"url": "tel:608-326-0229",
+			"text": "c19.link/scheduling.phone.crawford"
+		}
+	}
+}

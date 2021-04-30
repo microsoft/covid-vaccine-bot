@@ -1,0 +1,16 @@
+{
+	"links": {
+		"info": {
+			"url": "https://www.facebook.com/TillamookCHC",
+			"text": "cdc/oregon/state_link"
+		},
+		"providers": {
+			"url": "https://tillamookchc.org/",
+			"text": "c19.links/vax_providers"
+		},
+		"scheduling_phone": {
+			"url": "tel:503-842-3914",
+			"text": "c19.link/scheduling.phone.tillamook"
+		}
+	}
+}

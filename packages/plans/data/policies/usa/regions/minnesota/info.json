@@ -1,0 +1,9 @@
+{
+	"id": "minnesota",
+	"name": "cdc/minnesota/state_name",
+	"type": "state",
+	"metadata": {
+		"code_alpha": "MN",
+		"code_numeric": 27
+	}
+}

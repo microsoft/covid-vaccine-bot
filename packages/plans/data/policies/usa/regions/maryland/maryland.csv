@@ -1,0 +1,122 @@
+String ID,en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th
+c19.eligibility.question/essential_worker.1a.md.judiciary_or_nursing_home_staff,"Are you frontline judiciary staff or long-term care facility staff within a nursing home?",,,,"¿Es usted personal judicial de primera línea o personal de centros de atención a largo plazo dentro de un asilo de ancianos?",,,,,,,,,,
+c19.eligibility.question/essential_worker.1b.md,"Are you a K-12 personnel, continuity of government staff, or developmentally disabled?",,,,"¿Es usted un personal K-12, continuidad del personal del gobierno o discapacitados del desarrollo?",,,,,,,,,,
+c19.eligibility.question/congregate.md,"Do you live in an assisted living facility, special needs group home, or are a high-risk inmate?",,,,"¿Vives en un centro de vida asistida, un hogar en grupo con necesidades especiales o eres un recluso de alto riesgo?",,,,,,,,,,
+c19.link/scheduling.phone.md,"(410) 767-6500",,,,"(410) 767-6500",,,,,,,,,,
+c19.link/scheduling.phone.description.md,"For updates on appointments for mass vaccination sites, text 'MdReady' to 898-211.",,,,"Para actualizaciones sobre las citas para los sitios de vacunación masiva, envíe un mensaje de texto a 'MdReady' al 898-211.",,,,,,,,,,
+c19.eligibility.moreinfo/congregate.do.md.1c,"This includes assisted living, independent living, behavioral health and developmentally disabled group homes, and other congregate facilities",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/essential_worker.md.1c,"This includes: 
+All licensed, registered and certified health care providers
+Front line hospital staff
+Nursing home residents and staff
+Individuals with intellectual and developmental disabilities
+Assisted living, independent living, behavioral health and developmentally disabled group homes, and other congregate facilities
+Law enforcement and firefighters, EMS
+Education staff, including K-12 teachers, support staff and daycare providers
+Correctional health care staff and officers
+Public safety workers not covered in Phase 1A
+Health care workers not covered in Phase 1A, including but not limited to lab services, public health, vaccine manufacturing and other health care professions
+Front line judiciary staff
+Continuity of government
+Food/agriculture production, critical manufacturing, U.S. Postal Service, public mass transit, grocery store employees
+Veterinarians and support staff
+Clergy and other essential support for houses of worship",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/health.md.1c,"Individuals who are currently receiving hospital-based treatment, including in hospital outpatient centers, AND diagnosed with at least one of the following conditions:
+Cancer patients who are currently in active treatment
+End stage renal disease patients requiring hemodialysis
+Chronic Obstructive Pulmonary Disease (COPD)
+Solid organ transplant recipients
+Sickle cell disease patients
+Diabetic patients (Type 1 and Type 2)
+
+Individuals who are diagnosed with these medical conditions but are not currently receiving hospital-based treatment, including in hospital outpatient centers, will be eligible to receive the vaccine in Maryland's Phase 2 COVID-19 vaccine distribution.",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/congregate.do.md.2a,"This includes assisted living, independent living, behavioral health and developmentally disabled group homes, and other congregate facilities",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/essential_worker.md.2a,"This includes: 
+All licensed, registered and certified health care providers
+Front line hospital staff
+Nursing home residents and staff
+Individuals with intellectual and developmental disabilities
+Assisted living, independent living, behavioral health and developmentally disabled group homes, and other congregate facilities
+Law enforcement and firefighters, EMS
+Education staff, including K-12 teachers, support staff and daycare providers
+Correctional health care staff and officers
+Public safety workers not covered in Phase 1A
+Health care workers not covered in Phase 1A, including but not limited to lab services, public health, vaccine manufacturing and other health care professions
+Front line judiciary staff
+Continuity of government
+Food/agriculture production, critical manufacturing, U.S. Postal Service, public mass transit, grocery store employees
+Veterinarians and support staff
+Clergy and other essential support for houses of worship",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/health.md.2a,"This includes:
+- Cancer
+- Chronic kidney disease
+- Chronic lung diseases, including COPD (chronic obstructive pulmonary disease), asthma (moderate-to-severe), interstitial lung disease, cystic fibrosis, and pulmonary hypertension
+- Dementia or other neurological conditions
+- Diabetes (type 1 or type 2)
+- Down syndrome
+- Heart conditions (such as heart failure, coronary artery disease, cardiomyopathies or hypertension)
+- HIV infection
+- Immunocompromised state (weakened immune system)
+- Liver disease
+- Overweight and obesity
+- Pregnancy
+- Sickle cell disease or thalassemia
+- Smoking, current or former
+- Solid organ or blood stem cell transplant
+- Stroke or cerebrovascular disease, which affects blood flow to the brain
+- Substance use disorders",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/health.are_you_currently_hospitalized.md.2a,"Individuals who are currently receiving hospital-based treatment, including in hospital outpatient centers, AND diagnosed with at least one of the following conditions:
+Cancer patients who are currently in active treatment
+End stage renal disease patients requiring hemodialysis
+Chronic Obstructive Pulmonary Disease (COPD)
+Solid organ transplant recipients
+Sickle cell disease patients
+Diabetic patients (Type 1 and Type 2)
+
+Individuals who are diagnosed with these medical conditions but are not currently receiving hospital-based treatment, including in hospital outpatient centers, will be eligible to receive the vaccine in Maryland's Phase 2 COVID-19 vaccine distribution.",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/congregate.do.md.2b,"This includes assisted living, independent living, behavioral health and developmentally disabled group homes, and other congregate facilities",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/essential_worker.md.2b,"This includes: 
+All licensed, registered and certified health care providers
+Front line hospital staff
+Nursing home residents and staff
+Individuals with intellectual and developmental disabilities
+Assisted living, independent living, behavioral health and developmentally disabled group homes, and other congregate facilities
+Law enforcement and firefighters, EMS
+Education staff, including K-12 teachers, support staff and daycare providers
+Correctional health care staff and officers
+Public safety workers not covered in Phase 1A
+Health care workers not covered in Phase 1A, including but not limited to lab services, public health, vaccine manufacturing and other health care professions
+Front line judiciary staff
+Continuity of government
+Food/agriculture production, critical manufacturing, U.S. Postal Service, public mass transit, grocery store employees
+Veterinarians and support staff
+Clergy and other essential support for houses of worship",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/health.are_you_currently_hospitalized.md.2b,"Individuals who are currently receiving hospital-based treatment, including in hospital outpatient centers, AND diagnosed with at least one of the following conditions:
+Cancer patients who are currently in active treatment
+End stage renal disease patients requiring hemodialysis
+Chronic Obstructive Pulmonary Disease (COPD)
+Solid organ transplant recipients
+Sickle cell disease patients
+Diabetic patients (Type 1 and Type 2)
+
+Individuals who are diagnosed with these medical conditions but are not currently receiving hospital-based treatment, including in hospital outpatient centers, will be eligible to receive the vaccine in Maryland's Phase 2 COVID-19 vaccine distribution.",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/health.md.2b,"This includes:
+- Cancer
+- Chronic kidney disease
+- Chronic lung diseases, including COPD (chronic obstructive pulmonary disease), asthma (moderate-to-severe), interstitial lung disease, cystic fibrosis, and pulmonary hypertension
+- Dementia or other neurological conditions
+- Diabetes (type 1 or type 2)
+- Down syndrome
+- Heart conditions (such as heart failure, coronary artery disease, cardiomyopathies or hypertension)
+- HIV infection
+- Immunocompromised state (weakened immune system)
+- Liver disease
+- Overweight and obesity
+- Pregnancy
+- Sickle cell disease or thalassemia
+- Smoking, current or former
+- Solid organ or blood stem cell transplant
+- Stroke or cerebrovascular disease, which affects blood flow to the brain
+- Substance use disorders",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/health.are_you_aged.md.2b,"Marylanders ages 16+ with disabilities who are receiving SSI or SSDI benefits, Maryland Medicaid EID individuals, Maryland Medicaid REM recipients, and Marylanders receiving TDAP benefits",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/health.are_you_receiving.md.2b,"This includes Marylanders receiving long term services and supports through the state's Medicaid waiver and state plan services",,,,,,,,,,,,,,

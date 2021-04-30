@@ -1,0 +1,14 @@
+{
+	"links": {
+		"info": {
+			"url": "http://douglaspublichealthnetwork.org/",
+			"text": "cdc/oregon/state_link"
+		},
+		"scheduling_phone": {
+			"url": "tel:541-464-6550",
+			"text": "c19.link/scheduling.phone.douglas",
+			"description": "c19.link/scheduling.phone.description.douglas"
+		}
+	},
+	"activePhase": "2"
+}

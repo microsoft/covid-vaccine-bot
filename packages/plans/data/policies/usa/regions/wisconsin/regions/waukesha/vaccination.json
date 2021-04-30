@@ -1,0 +1,16 @@
+{
+	"links": {
+		"info": {
+			"url": "https://www.waukeshacounty.gov/HealthAndHumanServices/PublicHealth/public-health-preparedness/COVID19/covid-vaccine/",
+			"text": "cdc/wisconsin/state_link"
+		},
+		"scheduling": {
+			"url": "https://forms.microsoft.com/Pages/ResponsePage.aspx?id=rHo-5yO_U0ezPfQFUpw_tqgEU4KKS6xBp9dghikserpUN1c1TjlONzlEQkw2VVhFTEwyR1RUV1k4VS4u",
+			"text": "c19.links/schedule_vax"
+		},
+		"scheduling_phone": {
+			"url": "tel:262-548-7626",
+			"text": "c19.link/scheduling.phone.waukesha"
+		}
+	}
+}

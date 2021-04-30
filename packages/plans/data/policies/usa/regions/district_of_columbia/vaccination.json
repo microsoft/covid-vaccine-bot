@@ -1,0 +1,92 @@
+{
+	"links": {
+		"eligibility_plan": {
+			"url": "https://coronavirus.dc.gov/sites/default/files/dc/sites/coronavirus/page_content/attachments/Vaccination-Program-Phases-with-Tiers.pdf"
+		},
+		"info": {
+			"url": "https://coronavirus.dc.gov/vaccine",
+			"text": "cdc/district_of_columbia/state_link"
+		},
+		"scheduling_phone": {
+			"url": "tel:1-855-363-0333",
+			"text": "c19.link/scheduling.phone.dc",
+			"description": "c19.link/scheduling.phone.description.dc"
+		},
+		"eligibility": {
+			"url": "https://coronavirus.dc.gov/sites/default/files/dc/sites/coronavirus/release_content/attachments/Situational-Update-Presentation_04-12-21.pdf"
+		}
+	},
+	"activePhase": "16_and_up",
+	"noPhaseLabel": true,
+	"phases": [
+		{
+			"id": "1b",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/healthcare_worker"
+				},
+				{
+					"question": "c19.eligibility.question/long_term_care_resident"
+				},
+				{
+					"question": "c19.eligibility.question/essential_worker",
+					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.dc.1b"
+				},
+				{
+					"question": "c19.eligibility.question/age.65_up"
+				},
+				{
+					"question": "c19.eligibility.question/congregate.dc",
+					"moreInfoText": "c19.eligibility.moreinfo/congregate.dc.dc.1b"
+				},
+				{
+					"question": "c19.eligibility.question/housing.are_you"
+				},
+				{
+					"question": "c19.eligibility.question/health",
+					"moreInfoText": "c19.eligibility.moreinfo/health.dc.1b"
+				}
+			]
+		},
+		{
+			"id": "1c_tier_2",
+			"label": "1C Tier 2",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/healthcare_worker"
+				},
+				{
+					"question": "c19.eligibility.question/long_term_care_resident",
+					"moreInfoText": "c19.eligibility.moreinfo/long_term_care_resident.dc.1c_tier_2"
+				},
+				{
+					"question": "c19.eligibility.question/essential_worker",
+					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.dc.1c_tier_2"
+				},
+				{
+					"question": "c19.eligibility.question/age.65_up"
+				},
+				{
+					"question": "c19.eligibility.question/congregate.dc",
+					"moreInfoText": "c19.eligibility.moreinfo/congregate.dc.dc.1c_tier_2"
+				},
+				{
+					"question": "c19.eligibility.question/housing.are_you"
+				},
+				{
+					"question": "c19.eligibility.question/health",
+					"moreInfoText": "c19.eligibility.moreinfo/health.dc.1c_tier_2"
+				}
+			]
+		},
+		{
+			"id": "16_and_up",
+			"label": "16 and up",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.16_up"
+				}
+			]
+		}
+	]
+}

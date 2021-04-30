@@ -1,0 +1,12 @@
+{
+	"links": {
+		"info": {
+			"url": "http://brhd.org/covid-19-vaccine-information",
+			"text": "cdc/utah/state_link"
+		},
+		"scheduling_phone": {
+			"url": "tel:1-800-456-7707",
+			"text": "c19.link/scheduling.phone.bear_river"
+		}
+	}
+}

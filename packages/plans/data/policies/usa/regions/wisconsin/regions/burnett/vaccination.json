@@ -1,0 +1,16 @@
+{
+	"links": {
+		"info": {
+			"url": "https://www.burnettcounty.com/1206/COVID-19-Vaccine-Information",
+			"text": "cdc/wisconsin/state_link"
+		},
+		"scheduling": {
+			"url": "https://www.burnettcounty.com/1206/COVID-19-Vaccine-Information",
+			"text": "c19.links/schedule_vax"
+		},
+		"scheduling_phone": {
+			"url": "tel:715-349-7600",
+			"text": "c19.link/scheduling.phone.burnett"
+		}
+	}
+}

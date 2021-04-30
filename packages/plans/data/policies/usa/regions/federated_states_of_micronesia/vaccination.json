@@ -1,0 +1,20 @@
+{
+	"links": {
+		"info": {
+			"text": "cdc/federated_states_of_micronesia/state_link",
+			"url": "https://www.fsmgov.org/index.html"
+		}
+	},
+	"activePhase": "1a",
+	"phases": [
+		{
+			"id": "1a",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.are_you_age_18"
+				}
+			]
+		}
+	],
+	"noPhaseLabel": true
+}

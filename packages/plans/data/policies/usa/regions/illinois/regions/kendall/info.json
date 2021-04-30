@@ -1,0 +1,9 @@
+{
+	"id": "kendall",
+	"metadata": {
+		"code_alpha": "kendall",
+		"code_numeric": 0
+	},
+	"name": "Kendall",
+	"type": "county"
+}

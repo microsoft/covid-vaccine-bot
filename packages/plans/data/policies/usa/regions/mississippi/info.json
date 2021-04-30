@@ -1,0 +1,9 @@
+{
+	"id": "mississippi",
+	"name": "cdc/mississippi/state_name",
+	"type": "state",
+	"metadata": {
+		"code_alpha": "MS",
+		"code_numeric": 28
+	}
+}

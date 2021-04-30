@@ -1,0 +1,16 @@
+{
+	"links": {
+		"info": {
+			"url": "https://www.lcwy.org/departments/public_health/covid-19_vaccine_.php",
+			"text": "cdc/wyoming/state_link"
+		},
+		"scheduling": {
+			"url": "https://docs.google.com/forms/d/1Ck2JSIG3O1t0EfeuO08S9YQGlStMf2AjFBKPSGRBSqE/viewform?edit_requested=true",
+			"text": "c19.links/schedule_vax"
+		},
+		"scheduling_phone": {
+			"url": "tel:307-885-9598",
+			"text": "c19.link/scheduling.phone.wy.lincoln"
+		}
+	}
+}

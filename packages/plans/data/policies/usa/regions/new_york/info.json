@@ -1,0 +1,9 @@
+{
+	"id": "new_york",
+	"name": "cdc/new_york/state_name",
+	"type": "state",
+	"metadata": {
+		"code_alpha": "NY",
+		"code_numeric": 36
+	}
+}

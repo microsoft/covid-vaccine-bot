@@ -1,0 +1,16 @@
+{
+	"links": {
+		"info": {
+			"url": "https://www.co.portage.wi.us/department/health-and-human-services/division-of-public-health/vaccine-information",
+			"text": "cdc/wisconsin/state_link"
+		},
+		"scheduling": {
+			"url": "https://wi-telegov.egov.com/portage-county",
+			"text": "c19.links/schedule_vax"
+		},
+		"scheduling_phone": {
+			"url": "tel:715-345-5350",
+			"text": "c19.link/scheduling.phone.portage"
+		}
+	}
+}

@@ -1,0 +1,12 @@
+{
+	"links": {
+		"info": {
+			"url": "https://www.lafayettecountywi.org/covid19",
+			"text": "cdc/wisconsin/state_link"
+		},
+		"scheduling_phone": {
+			"url": "tel:608-776-4895",
+			"text": "c19.link/scheduling.phone.lafayette"
+		}
+	}
+}

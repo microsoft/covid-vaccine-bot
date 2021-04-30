@@ -1,0 +1,9 @@
+{
+	"id": "michigan",
+	"name": "cdc/michigan/state_name",
+	"type": "state",
+	"metadata": {
+		"code_alpha": "MI",
+		"code_numeric": 26
+	}
+}

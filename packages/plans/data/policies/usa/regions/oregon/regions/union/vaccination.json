@@ -1,0 +1,13 @@
+{
+	"links": {
+		"scheduling": {
+			"url": "https://www.chdinc.org/get-vaccinated",
+			"text": "c19.links/schedule_vax"
+		},
+		"scheduling_phone": {
+			"url": "tel:541-962-8800",
+			"text": "c19.link/scheduling.phone.union"
+		}
+	},
+	"activePhase": "2"
+}

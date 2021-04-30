@@ -1,0 +1,13 @@
+{
+	"activePhase": "1b_16_and_older",
+	"links": {
+		"info": {
+			"text": "c19.links/info.az.pima",
+			"url": "https://webcms.pima.gov/cms/One.aspx?portalId=169&pageId=669257"
+		},
+		"registration": {
+			"text": "c19.links/registration.az.pima",
+			"url": "https://webcms.pima.gov/cms/One.aspx?portalId=169&pageId=690372"
+		}
+	}
+}

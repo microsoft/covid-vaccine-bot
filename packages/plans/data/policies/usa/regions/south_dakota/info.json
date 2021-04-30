@@ -1,0 +1,9 @@
+{
+	"id": "south_dakota",
+	"name": "cdc/south_dakota/state_name",
+	"type": "state",
+	"metadata": {
+		"code_alpha": "SD",
+		"code_numeric": 46
+	}
+}

@@ -1,0 +1,13 @@
+{
+	"links": {
+		"info": {
+			"url": "https://northprovidenceri.gov/vaccine/",
+			"text": "cdc/rhode_island/state_link"
+		},
+		"scheduling_phone": {
+			"url": "tel:401-437-6418",
+			"text": "c19.link/scheduling.phone.north_providence",
+			"description": "c19.link/scheduling.phone.description.north_providence"
+		}
+	}
+}

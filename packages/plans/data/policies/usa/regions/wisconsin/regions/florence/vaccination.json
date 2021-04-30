@@ -1,0 +1,16 @@
+{
+	"links": {
+		"info": {
+			"url": "https://florencewipublichealth.com/covid.htm",
+			"text": "cdc/wisconsin/state_link"
+		},
+		"scheduling": {
+			"url": "https://www.signupgenius.com/go/10c0c4faeab2dabf5c70-covid4",
+			"text": "c19.links/schedule_vax"
+		},
+		"scheduling_phone": {
+			"url": "tel:715-528-4837",
+			"text": "c19.link/scheduling.phone.florence"
+		}
+	}
+}

@@ -1,0 +1,13 @@
+{
+	"links": {
+		"info": {
+			"url": "www.idahopublichealth.com",
+			"text": "cdc/idaho/state_link"
+		},
+		"scheduling_phone": {
+			"url": "tel:866-736-6632",
+			"text": "c19.link/scheduling.phone.clearwater",
+			"description": "c19.link/scheduling.phone.description.clearwater"
+		}
+	}
+}

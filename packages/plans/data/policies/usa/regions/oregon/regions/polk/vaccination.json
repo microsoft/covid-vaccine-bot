@@ -1,0 +1,13 @@
+{
+	"links": {
+		"info": {
+			"url": "https://www.co.polk.or.us/ph/covid-19-vaccine",
+			"text": "cdc/oregon/state_link"
+		},
+		"scheduling": {
+			"url": "https://www.salemhealth.org/covid-19/covid-vaccine",
+			"text": "c19.links/schedule_vax"
+		}
+	},
+	"activePhase": "2"
+}

@@ -1,0 +1,39 @@
+{
+	"links": {
+		"info": {
+			"text": "cdc/new_york/state_link",
+			"url": "https://covid19vaccine.health.ny.gov/"
+		},
+		"workflow": {
+			"text": "c19.links/workflow.ny",
+			"url": "https://am-i-eligible.covid19vaccine.health.ny.gov/"
+		},
+		"eligibility": {
+			"url": "https://covid19vaccine.health.ny.gov/phased-distribution-vaccine",
+			"scrapeQuery": [".toc-chapters"]
+		},
+		"scheduling": {
+			"url": "https://am-i-eligible.covid19vaccine.health.ny.gov/",
+			"text": "c19.links/schedule_vax"
+		},
+		"scheduling_phone": {
+			"url": "tel:1-833-697-4829",
+			"text": "c19.link/scheduling.phone.ny",
+			"description": "c19.link/scheduling.phone.description.ny"
+		}
+	},
+	"activePhase": "current",
+	"noPhaseLabel": true,
+	"phases": [
+		{
+			"id": "current",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.16_up",
+					"moreInfoText": "c19.eligibility.moreinfo/age.are_you_age_30.ny.current",
+					"moreInfoUrl": "https://www1.nyc.gov/site/doh/covid/covid-19-vaccine-eligibility.page"
+				}
+			]
+		}
+	]
+}

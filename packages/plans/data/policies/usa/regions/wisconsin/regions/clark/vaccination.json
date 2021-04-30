@@ -1,0 +1,16 @@
+{
+	"links": {
+		"info": {
+			"url": "https://www.clarkcountywi.com/vaccine-information",
+			"text": "cdc/wisconsin/state_link"
+		},
+		"scheduling": {
+			"url": "https://www.signupgenius.com/go/3-18-21-clarkcountydrivethroughclinic",
+			"text": "c19.links/schedule_vax"
+		},
+		"scheduling_phone": {
+			"url": "tel:715-743-5105",
+			"text": "c19.link/scheduling.phone.wi.clark"
+		}
+	}
+}

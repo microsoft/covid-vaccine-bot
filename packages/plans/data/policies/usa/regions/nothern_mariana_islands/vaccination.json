@@ -1,0 +1,62 @@
+{
+	"links": {
+		"info": {
+			"text": "cdc/northern_mariana_islands/state_link",
+			"url": "https://www.vaccinatecnmi.com/"
+		},
+		"scheduling": {
+			"url": "https://www.vaccinatecnmi.com/covid-19/registration/",
+			"text": "c19.links/schedule_vax"
+		},
+		"scheduling_phone": {
+			"url": "tel:670-682-7468",
+			"text": "c19.link/scheduling.phone.mp",
+			"description": "c19.link/scheduling.phone.description.mp"
+		}
+	},
+	"activePhase": "18_and_older",
+	"phases": [
+		{
+			"id": "1a",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/healthcare_worker"
+				},
+				{
+					"question": "c19.eligibility.question/long_term_care_resident"
+				},
+				{
+					"question": "c19.eligibility.question/age.are"
+				},
+				{
+					"question": "c19.eligibility.question/worker.are_you"
+				},
+				{
+					"question": "c19.eligibility.question/essential_worker.are_you_an_essential",
+					"moreInfoUrl": "https://www.vaccinatecnmi.com/#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJ1cmwiOiJodHRwczpcL1wvd3d3LnZhY2NpbmF0ZWNubWkuY29tXC93cC1jb250ZW50XC91cGxvYWRzXC8yMDIxXC8wM1wvUGhhc2VzLVdlYnNpdGUuanBnIiwidHlwZSI6ImltYWdlIiwidGl0bGUiOiJQaGFzZXMtV2Vic2l0ZSJ9"
+				},
+				{
+					"question": "c19.eligibility.question/essential_worker.are_you_an"
+				}
+			]
+		},
+		{
+			"id": "16_and_older",
+			"label": "16 and older",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.16_up"
+				}
+			]
+		},
+		{
+			"id": "18_and_older",
+			"label": "18 and older",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.are_you_age_18"
+				}
+			]
+		}
+	]
+}

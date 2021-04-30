@@ -1,0 +1,116 @@
+String ID,en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th
+c19.eligibility.question/congregate.az,"Do you live with high-risk conditions in a congregate setting?",,,,"¿Vive con condiciones de alto riesgo en un entorno congregado?",,,,,,,,,,
+c19.eligibility.question/healthcare_worker.az,"Are you a healthcare or healthcare support worker?",,,,"¿Es usted un trabajador de asistencia médica o de atención médica?",,,,,,,,,,
+c19.eligibility.question/long_term_care_resident.az,"Are you a long-term care resident, or do you work in a long-term care facility?",,,,"¿Es usted un residente de cuidado a largo plazo, o trabaja en un centro de atención a largo plazo?",,,,,,,,,,
+c19.eligibility.question/ems_worker.az,"Are you an emergency medical services worker?",,,,"¿Es usted un trabajador de servicios médicos de emergencia?",,,,,,,,,,
+c19.eligibility.question/education_childcare_worker.az,"Are you an education or child-care worker?",,,,"¿Es usted un trabajador de educación o cuidado de niños?",,,,,,,,,,
+c19.eligibility.question/proctective_services_worker.az,"Are you a protective services worker?",,,,"¿Es usted un trabajador de servicios de protección?",,,,,,,,,,
+c19.links/info.az.maricopa,"Maricopa County COVID-19 Site",,,,"Sitio COVID-19 del Condado de Maricopa",,,,,,,,,,
+c19.links/registration.az,"Arizona DHS Vaccine Patient Portal",,,,"Portal para pacientes con vacunas del DHS de Arizona",,,,,,,,,,
+c19.links/info.az.apachenavajo,"Apache and Navajo County COVID-19 Info",,,,"Información covid-19 del condado de Apache y Navajo",,,,,,,,,,
+c19.links/info.az.cochise,"Cochise County COVID-19 Vaccination Info",,,,"Cochise Condado COVID-19 Información de Vacunación",,,,,,,,,,
+c19.links/info.az.cococino,"Coconino County COVID-19 Vaccine Info",,,,"Información sobre vacunas COVID-19 del Condado de Coconino",,,,,,,,,,
+c19.links/info.az.gila,"Gila County COVID-19 Info",,,,"Información covid-19 del condado de Gila",,,,,,,,,,
+c19.links/info.az.graham,"Graham County COVID-19 Vaccination Info",,,,"Información de vacunación covid-19 del condado de Graham",,,,,,,,,,
+c19.links/registration.az.graham,"Graham County COVID-19 Vaccination Registration",,,,"Registro de Vacunación COVID-19 del Condado de Graham",,,,,,,,,,
+c19.links/info.az.greenlee,"Greenlee County Health & County Services",,,,"Servicios de Salud y Condado del Condado de Greenlee",,,,,,,,,,
+c19.links/registration.az.greenlee,"Greenlee County Vaccination Registration",,,,"Registro de Vacunación del Condado de Greenlee",,,,,,,,,,
+c19.links/info.az.lapaz,"La Paz County Health Department",,,,"Departamento de Salud del Condado de La Paz",,,,,,,,,,
+c19.links/hotline.az.lapaz.text,"La Paz County Vaccination Hotline",,,,"Línea directa de vacunación del condado de La Paz",,,,,,,,,,
+c19.links/hotline.az.lapaz.description,"928-503-5763 & 928-502-0773",,,,"928-503-5763 & 928-502-0773",,,,,,,,,,
+c19.links/info.az.mojave,"Mojave County COVID-19 Vaccine Statu",,,,"Estatua vacunal COVID-19 del Condado de Mojave",,,,,,,,,,
+c19.links/providers.az.mojave,"Mojave County Vaccination Providers",,,,"Proveedores de vacunación del condado de Mojave",,,,,,,,,,
+c19.links/info.az.pima,"Pima County COVID-19 Vaccine Info & Distribution",,,,"Información de la vacuna COVID-19 del Condado de Pima",,,,,,,,,,
+c19.links/registration.az.pima,"Pima County COVID-19 Vaccination Registration",,,,"Registro de Vacunación COVID-19 del Condado de Pima",,,,,,,,,,
+c19.links/providers.az.pinal,"Pinal County COVID-19 Providers",,,,"Proveedores de COVID-19 del Condado de Pinal",,,,,,,,,,
+c19.links/info.az.santacruz,"Santa Cruz COVID-19 Info",,,,"Santa Cruz COVID-19 Información",,,,,,,,,,
+c19.links/registration.az.santacruz,"Santa Cruz County COVID-19 Vaccination Registration",,,,"Registro de Vacunación COVID-19 del Condado de Santa Cruz",,,,,,,,,,
+c19.links/info.az.yavapai,"Yavapai County COVID-19 Vaccine Status",,,,"Estado vacunal COVID-19 del condado de Yavapai",,,,,,,,,,
+c19.links/hotline.az.yavapai,"Yavapai County COVID-19 Hotline",,,,"Línea directa covid-19 del condado de Yavapai",,,,,,,,,,
+c19.links/info.az.yuma,"Yuma County COVID-19 Vaccination Info",,,,"Información de vacunación covid-19 del condado de Yuma",,,,,,,,,,
+c19.link/scheduling.phone.az,"602-542-1000",,,,"602-542-1000",,,,,,,,,,
+c19.eligibility.moreinfo/essential_worker.are.az.1b,"This includes EMTs, paramedics, firefighters, police/law enforcement, and corrections staff",,,,"Esto incluye emts, paramédicos, bomberos, policías/fuerzas del orden y personal correccional",,,,,,,,,,
+c19.eligibility.moreinfo/essential_worker.az.1b,"EMTs, paramedics, firefighters, police/law enforcement, and corrections staff are eligible in the entire state. 
+
+Counties and tribes may also choose to vaccinate the following groups defined by ACIP as a subset of essential workers at highest risk for work-related exposure. Confirm with your county department of health if your group is being prioritized.
+
+- Food and agriculture
+- Grocery store, convenience store, and carniceria workers
+- U.S. Postal Service
+- Manufacturing workers
+- Public transit workers, including buses, Light Rail, Uber, Lyft, taxis, and rideshare
+- State and local government workers
+- Funeral home workers",,,,"Los equipos de emergencias, paramédicos, bomberos, policías y personal de correccionales son elegibles en todo el estado. 
+
+Los condados y tribus también pueden optar por vacunar a los siguientes grupos definidos por ACIP como un subconjunto de trabajadores esenciales con mayor riesgo de exposición relacionada con el trabajo. Confirme con su departamento de salud del condado si su grupo está siendo priorizado.
+
+- Alimentación y agricultura
+- Tienda de comestibles, tienda de conveniencia y trabajadores de carniceria
+- Servicio Postal de EE. UU.
+- Trabajadores de la industria manufacturera
+- Trabajadores de transporte público, incluyendo autobuses, Tren Ligero, Uber, Lyft, taxis y rideshare
+- Trabajadores del gobierno estatal y local
+- Trabajadores de funerarias",,,,,,,,,,
+c19.eligibility.moreinfo/essential_worker.az.1c,"EMTs, paramedics, firefighters, police/law enforcement, and corrections staff are eligible in the entire state. 
+
+Counties and tribes may also choose to vaccinate the following groups defined by ACIP as a subset of essential workers at highest risk for work-related exposure. Confirm with your county department of health if your group is being prioritized.
+
+- Food and agriculture
+- Grocery store, convenience store, and carniceria workers
+- U.S. Postal Service
+- Manufacturing workers
+- Public transit workers, including buses, Light Rail, Uber, Lyft, taxis, and rideshare
+- State and local government workers
+- Funeral home workers",,,,"Los equipos de emergencias, paramédicos, bomberos, policías y personal de correccionales son elegibles en todo el estado. 
+
+Los condados y tribus también pueden optar por vacunar a los siguientes grupos definidos por ACIP como un subconjunto de trabajadores esenciales con mayor riesgo de exposición relacionada con el trabajo. Confirme con su departamento de salud del condado si su grupo está siendo priorizado.
+
+- Alimentación y agricultura
+- Tienda de comestibles, tienda de conveniencia y trabajadores de carniceria
+- Servicio Postal de EE. UU.
+- Trabajadores de la industria manufacturera
+- Trabajadores de transporte público, incluyendo autobuses, Tren Ligero, Uber, Lyft, taxis y rideshare
+- Trabajadores del gobierno estatal y local
+- Trabajadores de funerarias",,,,,,,,,,
+c19.eligibility.moreinfo/essential_worker.az.45_and_older,"EMTs, paramedics, firefighters, police/law enforcement, and corrections staff are eligible in the entire state. 
+
+Counties and tribes may also choose to vaccinate the following groups defined by ACIP as a subset of essential workers at highest risk for work-related exposure. Confirm with your county department of health if your group is being prioritized.
+
+- Food and agriculture
+- Grocery store, convenience store, and carniceria workers
+- U.S. Postal Service
+- Manufacturing workers
+- Public transit workers, including buses, Light Rail, Uber, Lyft, taxis, and rideshare
+- State and local government workers
+- Funeral home workers",,,,"Los equipos de emergencias, paramédicos, bomberos, policías y personal de correccionales son elegibles en todo el estado. 
+
+Los condados y tribus también pueden optar por vacunar a los siguientes grupos definidos por ACIP como un subconjunto de trabajadores esenciales con mayor riesgo de exposición relacionada con el trabajo. Confirme con su departamento de salud del condado si su grupo está siendo priorizado.
+
+- Alimentación y agricultura
+- Tienda de comestibles, tienda de conveniencia y trabajadores de carniceria
+- Servicio Postal de EE. UU.
+- Trabajadores de la industria manufacturera
+- Trabajadores de transporte público, incluyendo autobuses, Tren Ligero, Uber, Lyft, taxis y rideshare
+- Trabajadores del gobierno estatal y local
+- Trabajadores de funerarias",,,,,,,,,,
+c19.eligibility.moreinfo/essential_worker.az.35_and_older,"EMTs, paramedics, firefighters, police/law enforcement, and corrections staff are eligible in the entire state. 
+
+Counties and tribes may also choose to vaccinate the following groups defined by ACIP as a subset of essential workers at highest risk for work-related exposure. Confirm with your county department of health if your group is being prioritized.
+
+- Food and agriculture
+- Grocery store, convenience store, and carniceria workers
+- U.S. Postal Service
+- Manufacturing workers
+- Public transit workers, including buses, Light Rail, Uber, Lyft, taxis, and rideshare
+- State and local government workers
+- Funeral home workers",,,,"Los equipos de emergencias, paramédicos, bomberos, policías y personal de correccionales son elegibles en todo el estado. 
+
+Los condados y tribus también pueden optar por vacunar a los siguientes grupos definidos por ACIP como un subconjunto de trabajadores esenciales con mayor riesgo de exposición relacionada con el trabajo. Confirme con su departamento de salud del condado si su grupo está siendo priorizado.
+
+- Alimentación y agricultura
+- Tienda de comestibles, tienda de conveniencia y trabajadores de carniceria
+- Servicio Postal de EE. UU.
+- Trabajadores de la industria manufacturera
+- Trabajadores de transporte público, incluyendo autobuses, Tren Ligero, Uber, Lyft, taxis y rideshare
+- Trabajadores del gobierno estatal y local
+- Trabajadores de funerarias",,,,,,,,,,

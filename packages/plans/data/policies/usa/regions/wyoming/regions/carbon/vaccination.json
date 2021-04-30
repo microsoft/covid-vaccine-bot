@@ -1,0 +1,17 @@
+{
+	"links": {
+		"info": {
+			"url": "http://carbonwy.com/1157/COVID-19-Status",
+			"text": "cdc/wyoming/state_link"
+		},
+		"scheduling": {
+			"url": "https://wy.covidreadi.com/",
+			"text": "c19.links/schedule_vax"
+		},
+		"scheduling_phone": {
+			"url": "tel:1-800-438-5795",
+			"text": "c19.link/scheduling.phone.carbon"
+		}
+	},
+	"activePhase": "18_and_older"
+}

@@ -1,0 +1,13 @@
+{
+	"links": {
+		"info": {
+			"url": "https://www.wchcd.org/vaccine-information/",
+			"text": "cdc/oregon/state_link"
+		},
+		"scheduling_phone": {
+			"url": "tel:541-426-5437",
+			"text": "c19.link/scheduling.phone.wallowa",
+			"description": "c19.link/scheduling.phone.description.wallowa"
+		}
+	}
+}

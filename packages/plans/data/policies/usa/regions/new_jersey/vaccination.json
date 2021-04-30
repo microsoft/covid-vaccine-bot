@@ -1,0 +1,32 @@
+{
+	"links": {
+		"info": {
+			"text": "cdc/new_jersey/state_link",
+			"url": "https://www.nj.gov/health/cd/topics/covid2019_vaccination.shtml"
+		},
+		"eligibility": {
+			"url": "https://covid19.nj.gov/faqs/nj-information/slowing-the-spread/who-is-eligible-for-vaccination-in-new-jersey-who-is-included-in-the-vaccination-phases"
+		},
+		"workflow": {
+			"url": "https://covidvaccine.nj.gov/covid-19%20vaccine/",
+			"text": "c19.links/vax_quiz"
+		},
+		"scheduling_phone": {
+			"url": "tel:1-855-568-0545",
+			"text": "c19.link/scheduling.phone.nj",
+			"description": "c19.link/scheduling.phone.description.nj"
+		}
+	},
+	"activePhase": "current",
+	"noPhaseLabel": true,
+	"phases": [
+		{
+			"id": "current",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.16_up"
+				}
+			]
+		}
+	]
+}

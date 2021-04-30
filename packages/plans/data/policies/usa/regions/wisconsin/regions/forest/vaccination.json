@@ -1,0 +1,12 @@
+{
+	"links": {
+		"info": {
+			"url": "http://forestcountypublichealth.org/",
+			"text": "cdc/wisconsin/state_link"
+		},
+		"scheduling_phone": {
+			"url": "tel:715-478-3371",
+			"text": "c19.link/scheduling.phone.forest"
+		}
+	}
+}

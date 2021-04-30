@@ -1,0 +1,9 @@
+{
+	"id": "san_francisco_county",
+	"metadata": {
+		"code_alpha": "san_francisco_county",
+		"code_numeric": 0
+	},
+	"name": "San Francisco County",
+	"type": "county"
+}

@@ -1,0 +1,100 @@
+{
+	"links": {
+		"info": {
+			"text": "cdc/michigan/state_link",
+			"url": "https://www.michigan.gov/coronavirus/0,9753,7-406-98178_103214---,00.html"
+		},
+		"eligibility": {
+			"url": "https://www.michigan.gov/documents/coronavirus/1-12_Vaccine_Timeline_712927_7.pdf"
+		},
+		"providers": {
+			"url": "https://www.michigan.gov/coronavirus/0,9753,7-406-98178_103214_104822---,00.html",
+			"text": "c19.links/vax_providers"
+		},
+		"scheduling_phone": {
+			"url": "tel:888-535-6136",
+			"text": "c19.link/scheduling.phone.mi"
+		}
+	},
+	"activePhase": "2",
+	"phases": [
+		{
+			"id": "1a",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/healthcare_worker"
+				},
+				{
+					"question": "c19.eligibility.question/long_term_care_resident"
+				}
+			]
+		},
+		{
+			"id": "1b",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/healthcare_worker",
+					"moreInfoUrl": "https://www.michigan.gov/documents/coronavirus/MI_COVID-19_Vaccination_Prioritization_Guidance_710349_7.pdf"
+				},
+				{
+					"question": "c19.eligibility.question/long_term_care_resident.are",
+					"moreInfoText": "c19.eligibility.moreinfo/long_term_care_resident.are.mi.1b",
+					"moreInfoUrl": "https://www.michigan.gov/documents/coronavirus/MI_COVID-19_Vaccination_Prioritization_Guidance_710349_7.pdf"
+				},
+				{
+					"question": "c19.eligibility.question/essential_worker",
+					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.mi.1b",
+					"moreInfoUrl": "https://www.michigan.gov/documents/coronavirus/MI_COVID-19_Vaccination_Prioritization_Guidance_710349_7.pdf"
+				},
+				{
+					"question": "c19.eligibility.question/age.65_up"
+				},
+				{
+					"question": "c19.eligibility.question/long_term_care_resident.are",
+					"moreInfoText": "c19.eligibility.moreinfo/long_term_care_resident.mi.1b"
+				},
+				{
+					"question": "c19.eligibility.question/congregate.do",
+					"moreInfoText": "c19.eligibility.moreinfo/congregate.do.mi.1b"
+				}
+			]
+		},
+		{
+			"id": "1c",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/healthcare_worker",
+					"moreInfoUrl": "https://www.michigan.gov/documents/coronavirus/MI_COVID-19_Vaccination_Prioritization_Guidance_2152021_716344_7.pdf"
+				},
+				{
+					"question": "c19.eligibility.question/long_term_care_resident.are",
+					"moreInfoUrl": "https://www.michigan.gov/documents/coronavirus/MI_COVID-19_Vaccination_Prioritization_Guidance_2152021_716344_7.pdf",
+					"moreInfoText": "c19.eligibility.moreinfo/long_term_care_resident.are.mi.1c"
+				},
+				{
+					"question": "c19.eligibility.question/essential_worker",
+					"moreInfoUrl": "https://www.michigan.gov/documents/coronavirus/MI_COVID-19_Vaccination_Prioritization_Guidance_2152021_716344_7.pdf",
+					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.mi.1c"
+				},
+				{
+					"question": "c19.eligibility.question/health",
+					"moreInfoText": "c19.eligibility.moreinfo/health.mi.1c",
+					"moreInfoUrl": "https://www.michigan.gov/documents/coronavirus/MI_COVID-19_Vaccination_Prioritization_Guidance_2152021_716344_7.pdf"
+				},
+				{
+					"question": "c19.eligibility.question/age.are",
+					"moreInfoUrl": "https://www.michigan.gov/documents/coronavirus/MI_COVID-19_Vaccination_Prioritization_Guidance_2152021_716344_7.pdf"
+				}
+			]
+		},
+		{
+			"id": "2",
+			"label": "2",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.16_up"
+				}
+			]
+		}
+	]
+}

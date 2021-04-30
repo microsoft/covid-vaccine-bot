@@ -1,0 +1,16 @@
+{
+	"links": {
+		"info": {
+			"url": "https://www.bayfieldcounty.org/1178/CORONAVIRUS-COVID-19",
+			"text": "cdc/wisconsin/state_link"
+		},
+		"scheduling": {
+			"url": "https://www.bayfieldcounty.wi.gov/FormCenter/Health-8/Online-Form-to-Register-for-COVID19-Vacc-143",
+			"text": "c19.links/schedule_vax"
+		},
+		"scheduling_phone": {
+			"url": "tel:(715) 373-3324",
+			"text": "c19.link/scheduling.phone.bayfield"
+		}
+	}
+}

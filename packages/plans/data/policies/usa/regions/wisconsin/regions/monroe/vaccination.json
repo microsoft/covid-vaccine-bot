@@ -1,0 +1,16 @@
+{
+	"links": {
+		"info": {
+			"url": "https://healthymonroecowi.org/covid-19/",
+			"text": "cdc/wisconsin/state_link"
+		},
+		"scheduling": {
+			"url": "https://hipaa.jotform.com/210146141990045",
+			"text": "c19.links/schedule_vax"
+		},
+		"scheduling_phone": {
+			"url": "tel:608-269-8666",
+			"text": "c19.link/scheduling.phone.monroe"
+		}
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"links": {
+		"info": {
+			"url": "https://www.lacrossecounty.org/covid19",
+			"text": "cdc/wisconsin/state_link"
+		},
+		"scheduling": {
+			"url": "http://vaccinate.wi.gov/",
+			"text": "c19.links/schedule_vax"
+		},
+		"scheduling_phone": {
+			"url": "tel:608-785-6240",
+			"text": "c19.link/scheduling.phone.la_crosse"
+		}
+	}
+}

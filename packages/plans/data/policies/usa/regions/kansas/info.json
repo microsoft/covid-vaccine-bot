@@ -1,0 +1,9 @@
+{
+	"id": "kansas",
+	"name": "cdc/kansas/state_name",
+	"type": "state",
+	"metadata": {
+		"code_alpha": "KS",
+		"code_numeric": 20
+	}
+}

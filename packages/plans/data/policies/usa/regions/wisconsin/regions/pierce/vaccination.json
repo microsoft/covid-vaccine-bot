@@ -1,0 +1,16 @@
+{
+	"links": {
+		"info": {
+			"url": "https://covid-piercecounty-wi.hub.arcgis.com/",
+			"text": "cdc/wisconsin/state_link"
+		},
+		"scheduling": {
+			"url": "https://piercecountycovid19vaccine.as.me/schedule.php?owner=21608524&template=weekly&id[]=PHPSESSID=uhfnqm94ocok1vad695orj2g7e",
+			"text": "c19.links/schedule_vax"
+		},
+		"scheduling_phone": {
+			"url": "tel:844-684-1064",
+			"text": "c19.link/scheduling.phone.pierce"
+		}
+	}
+}

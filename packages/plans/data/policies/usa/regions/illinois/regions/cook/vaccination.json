@@ -1,0 +1,10 @@
+{
+	"activePhase": "16_and_up",
+	"links": {
+		"info": {
+			"url": "https://vaccine.cookcountyil.gov/",
+			"text": "cdc/illinois/state_link"
+		}
+	},
+	"noPhaseLabel": false
+}

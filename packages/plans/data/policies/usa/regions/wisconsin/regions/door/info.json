@@ -1,0 +1,9 @@
+{
+	"id": "door",
+	"metadata": {
+		"code_alpha": "door",
+		"code_numeric": 0
+	},
+	"name": "Door",
+	"type": "county"
+}

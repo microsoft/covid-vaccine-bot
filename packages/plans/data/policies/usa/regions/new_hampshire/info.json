@@ -1,0 +1,9 @@
+{
+	"id": "new_hampshire",
+	"name": "cdc/new_hampshire/state_name",
+	"type": "state",
+	"metadata": {
+		"code_alpha": "NH",
+		"code_numeric": 33
+	}
+}

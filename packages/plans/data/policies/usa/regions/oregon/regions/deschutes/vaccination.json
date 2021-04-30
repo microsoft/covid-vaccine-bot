@@ -1,0 +1,13 @@
+{
+	"links": {
+		"info": {
+			"url": "https://www.deschutes.org/health/page/covid-19-novel-coronavirus",
+			"text": "cdc/oregon/state_link"
+		},
+		"scheduling_phone": {
+			"url": "tel:541-699-5109",
+			"text": "c19.link/scheduling.phone.deschutes"
+		}
+	},
+	"activePhase": "2"
+}

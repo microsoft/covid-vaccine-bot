@@ -1,0 +1,17 @@
+{
+	"links": {
+		"info": {
+			"url": "http://www.hopkintonri.org/covid-19/",
+			"text": "cdc/rhode_island/state_link"
+		},
+		"scheduling": {
+			"url": "http://www.hopkintonri.org/noitfication-list/",
+			"text": "c19.links/schedule_vax"
+		},
+		"scheduling_phone": {
+			"url": "tel:(401) 388-8476",
+			"text": "c19.link/scheduling.phone.hopkinton",
+			"description": "c19.link/scheduling.phone.description.hopkinton"
+		}
+	}
+}

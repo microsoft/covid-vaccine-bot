@@ -1,0 +1,10 @@
+{
+	"activePhase": "16",
+	"links": {
+		"info": {
+			"url": "http://schsa.org/coronavirus/vaccine/",
+			"text": "cdc/california/state_link"
+		}
+	},
+	"noPhaseLabel": false
+}

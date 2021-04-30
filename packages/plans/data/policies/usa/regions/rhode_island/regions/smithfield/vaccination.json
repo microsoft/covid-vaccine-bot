@@ -1,0 +1,17 @@
+{
+	"links": {
+		"info": {
+			"url": "https://www.smithfieldri.com/vaccine/",
+			"text": "cdc/rhode_island/state_link"
+		},
+		"scheduling": {
+			"url": "https://www.smithfieldri.com/vaccine/",
+			"text": "c19.links/schedule_vax"
+		},
+		"scheduling_phone": {
+			"url": "tel:233-1010",
+			"text": "c19.link/scheduling.phone.smithfield",
+			"description": "c19.link/scheduling.phone.description.smithfield"
+		}
+	}
+}

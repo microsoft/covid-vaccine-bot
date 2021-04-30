@@ -1,0 +1,119 @@
+{
+	"links": {
+		"info": {
+			"text": "cdc/pennsylvania/state_link",
+			"url": "https://www.health.pa.gov/topics/disease/coronavirus/Pages/Vaccine.aspx",
+			"scrapeQuery": ["div[data-name='Page Field: Page Content']"]
+		},
+		"workflow": {
+			"url": "https://covidportal.health.pa.gov/s/Your-Turn?language=en_US",
+			"text": "c19.links/vax_quiz"
+		},
+		"scheduling_phone": {
+			"url": "tel:1-877-724-3258",
+			"text": "c19.link/scheduling.phone.pa",
+			"description": "c19.link/scheduling.phone.description.pa"
+		}
+	},
+	"activePhase": "2",
+	"phases": [
+		{
+			"id": "1a",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/healthcare_worker",
+					"moreInfoText": "c19.eligibility.moreinfo/healthcare_worker.pa.1a"
+				},
+				{
+					"question": "c19.eligibility.question/long_term_care_resident"
+				},
+				{
+					"question": "c19.eligibility.question/exposure_to_infectious_material.do",
+					"moreInfoText": "c19.eligibility.moreinfo/exposure_to_infectious_material.do.pa.1a"
+				},
+				{
+					"question": "c19.eligibility.question/age.65_up"
+				},
+				{
+					"question": "c19.eligibility.question/age.are_you_age",
+					"moreInfoText": "c19.eligibility.moreinfo/age.are_you_age.pa.1a"
+				}
+			]
+		},
+		{
+			"id": "1b",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/healthcare_worker",
+					"moreInfoText": "c19.eligibility.moreinfo/healthcare_worker.pa.1b",
+					"moreInfoUrl": "https://www.health.pa.gov/topics/disease/coronavirus/Vaccine/Pages/Vaccine.aspx"
+				},
+				{
+					"question": "c19.eligibility.question/long_term_care_resident.are"
+				},
+				{
+					"question": "c19.eligibility.question/essential_worker",
+					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.pa.1b",
+					"moreInfoUrl": "https://www.health.pa.gov/topics/disease/coronavirus/Vaccine/Pages/Vaccine.aspx"
+				},
+				{
+					"question": "c19.eligibility.question/age.65_up"
+				},
+				{
+					"question": "c19.eligibility.question/health.1b.pa"
+				},
+				{
+					"question": "c19.eligibility.question/congregate"
+				},
+				{
+					"question": "c19.eligibility.question/health",
+					"moreInfoText": "c19.eligibility.moreinfo/age.are_you_age.pa.1b",
+					"moreInfoUrl": "https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html"
+				}
+			]
+		},
+		{
+			"id": "1c",
+			"label": "1C",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/healthcare_worker",
+					"moreInfoUrl": "https://www.health.pa.gov/topics/disease/coronavirus/Vaccine/Pages/Vaccine.aspx",
+					"moreInfoText": "c19.eligibility.moreinfo/healthcare_worker.pa.1c"
+				},
+				{
+					"question": "c19.eligibility.question/long_term_care_resident.are"
+				},
+				{
+					"question": "c19.eligibility.question/essential_worker",
+					"moreInfoUrl": "https://www.health.pa.gov/topics/disease/coronavirus/Vaccine/Pages/Vaccine.aspx",
+					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.pa.1c"
+				},
+				{
+					"question": "c19.eligibility.question/age.65_up"
+				},
+				{
+					"question": "c19.eligibility.question/health.1b.pa"
+				},
+				{
+					"question": "c19.eligibility.question/congregate"
+				},
+				{
+					"question": "c19.eligibility.question/health",
+					"moreInfoUrl": "https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html",
+					"moreInfoText": "c19.eligibility.moreinfo/age.are_you_age.pa.1c"
+				}
+			]
+		},
+		{
+			"id": "2",
+			"label": "2",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.16_up",
+					"moreInfoText": "c19.eligibility.moreinfo/age.16_up.pa.2"
+				}
+			]
+		}
+	]
+}

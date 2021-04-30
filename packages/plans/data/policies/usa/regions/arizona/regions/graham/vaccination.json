@@ -1,0 +1,13 @@
+{
+	"activePhase": "18_and_older",
+	"links": {
+		"info": {
+			"text": "c19.links/info.az.graham",
+			"url": "https://www.graham.az.gov/AlertCenter.aspx?AID=Graham-County-COVID19-Vaccine-Informatio-11"
+		},
+		"registration": {
+			"text": "c19.links/registration.az.graham",
+			"url": "https://www.graham.az.gov/FormCenter/COVID19-21/COVID19-Vaccine-Registration-Form-76"
+		}
+	}
+}

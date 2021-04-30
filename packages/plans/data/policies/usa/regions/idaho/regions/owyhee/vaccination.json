@@ -1,0 +1,13 @@
+{
+	"links": {
+		"info": {
+			"url": "https://phd3.idaho.gov/covid19/#Vaccine",
+			"text": "cdc/idaho/state_link"
+		},
+		"scheduling_phone": {
+			"url": "tel:208-455-5411",
+			"text": "c19.link/scheduling.phone.owyhee",
+			"description": "c19.link/scheduling.phone.description.owyhee"
+		}
+	}
+}

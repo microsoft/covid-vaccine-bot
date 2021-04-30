@@ -1,0 +1,17 @@
+{
+	"links": {
+		"info": {
+			"url": "https://www.hscounty.com/covid",
+			"text": "cdc/wyoming/state_link"
+		},
+		"scheduling": {
+			"url": "https://www.hscounty.com/vaccine",
+			"text": "c19.links/schedule_vax"
+		},
+		"scheduling_phone": {
+			"url": "tel:1-800-438-5795",
+			"text": "c19.link/scheduling.phone.hot_springs"
+		}
+	},
+	"activePhase": "18_and_older"
+}

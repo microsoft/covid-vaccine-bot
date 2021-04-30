@@ -1,0 +1,17 @@
+{
+	"links": {
+		"info": {
+			"url": "https://slco.org/health/COVID-19/vaccine/",
+			"text": "cdc/utah/state_link"
+		},
+		"scheduling_phone": {
+			"url": "tel:385-468-7468",
+			"text": "c19.link/scheduling.phone.salt_lake",
+			"description": "c19.link/scheduling.phone.description.salt_lake"
+		},
+		"scheduling": {
+			"url": "https://vaccinate.utah.gov/s/login/?language=en_US",
+			"text": "c19.links/schedule_vax"
+		}
+	}
+}

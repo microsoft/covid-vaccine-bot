@@ -1,0 +1,10 @@
+{
+	"activePhase": "18_and_older",
+	"links": {
+		"info": {
+			"text": "c19.links/info.az.cochise",
+			"url": "https://covid-cochisehealth.hub.arcgis.com/pages/vaccines",
+			"scrape": false
+		}
+	}
+}

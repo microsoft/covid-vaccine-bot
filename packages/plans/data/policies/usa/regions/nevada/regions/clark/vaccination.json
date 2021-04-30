@@ -1,0 +1,123 @@
+{
+	"links": {
+		"eligibility": {
+			"url": "https://media.southernnevadahealthdistrict.org/download/COVID-19/resources/playbook/NEVADA-COVID-19-VACCINE-PLAYBOOK-V3-BRIEF.pdf"
+		},
+		"eligibility_plan": {
+			"url": "https://media.southernnevadahealthdistrict.org/download/COVID-19/resources/playbook/NEVADA-COVID-19-VACCINE-PLAYBOOK-V3-BRIEF.pdf"
+		},
+		"info": {
+			"url": "https://covid.southernnevadahealthdistrict.org/",
+			"text": "cdc/nevada/state_link"
+		},
+		"scheduling": {
+			"url": "https://covid.southernnevadahealthdistrict.org/vaccine/distribution/",
+			"text": "c19.links/schedule_vax"
+		},
+		"scheduling_phone": {
+			"url": "tel:1-800-401-0946",
+			"text": "c19.link/scheduling.phone.nv.clark",
+			"description": "c19.link/scheduling.phone.description.nv.clark"
+		}
+	},
+	"phases": [
+		{
+			"id": "1a",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/healthcare_worker",
+					"moreInfoText": "c19.eligibility.moreinfo/healthcare_worker.nv.1a"
+				},
+				{
+					"question": "c19.eligibility.question/housing.are_you"
+				},
+				{
+					"question": "c19.eligibility.question/health.are_you_a_person"
+				},
+				{
+					"question": "c19.eligibility.question/health",
+					"moreInfoText": "c19.eligibility.moreinfo/health.nv.1a",
+					"moreInfoUrl": "https://www.immunizenevada.org/underlying-conditions"
+				},
+				{
+					"question": "c19.eligibility.question/essential_worker",
+					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.nv.clark.1a",
+					"moreInfoUrl": ""
+				},
+				{
+					"question": "c19.eligibility.question/age.65_up"
+				},
+				{
+					"question": "c19.eligibility.question/veteran.are",
+					"moreInfoText": "c19.eligibility.moreinfo/veteran.are.nv.clark.1a",
+					"moreInfoUrl": "https://www.lasvegas.va.gov/services/covid-19-vaccines.asp"
+				}
+			]
+		},
+		{
+			"id": "55",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/healthcare_worker",
+					"moreInfoText": "c19.eligibility.moreinfo/healthcare_worker.nv.55"
+				},
+				{
+					"question": "c19.eligibility.question/housing.are_you"
+				},
+				{
+					"question": "c19.eligibility.question/health.are_you_a_person"
+				},
+				{
+					"question": "c19.eligibility.question/health",
+					"moreInfoText": "c19.eligibility.moreinfo/health.nv.55",
+					"moreInfoUrl": "https://www.immunizenevada.org/underlying-conditions"
+				},
+				{
+					"question": "c19.eligibility.question/essential_worker",
+					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.nv.55",
+					"moreInfoUrl": ""
+				},
+				{
+					"question": "c19.eligibility.question/age.55_up"
+				}
+			]
+		},
+		{
+			"id": "age_18_and_essential_workers",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/healthcare_worker",
+					"moreInfoText": "c19.eligibility.moreinfo/healthcare_worker.nv.age_18_and_essential_workers"
+				},
+				{
+					"question": "c19.eligibility.question/housing.are_you"
+				},
+				{
+					"question": "c19.eligibility.question/health.are_you_a_person"
+				},
+				{
+					"question": "c19.eligibility.question/health",
+					"moreInfoText": "c19.eligibility.moreinfo/health.nv.age_18_and_essential_workers",
+					"moreInfoUrl": "https://www.immunizenevada.org/underlying-conditions"
+				},
+				{
+					"question": "c19.eligibility.question/essential_worker",
+					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.nv.age_18_and_essential_workers",
+					"moreInfoUrl": ""
+				},
+				{
+					"question": "c19.eligibility.question/age.are_you_age_18"
+				}
+			]
+		},
+		{
+			"id": "age_16",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.16_up"
+				}
+			]
+		}
+	],
+	"activePhase": "age_16"
+}

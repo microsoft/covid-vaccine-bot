@@ -1,0 +1,16 @@
+{
+	"links": {
+		"info": {
+			"url": "https://co.crook.or.us/health",
+			"text": "cdc/oregon/state_link"
+		},
+		"scheduling": {
+			"url": "https://crookcounty.simplybook.me/v2/",
+			"text": "c19.links/schedule_vax"
+		},
+		"scheduling_phone": {
+			"url": "tel:541-447-5165",
+			"text": "c19.link/scheduling.phone.or.crook"
+		}
+	}
+}

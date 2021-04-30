@@ -1,0 +1,21 @@
+{
+	"links": {
+		"eligibility_plan": {
+			"url": "https://nvhealthresponse.nv.gov/wp-content/uploads/2021/01/NEVADA-COVID-19-VACCINE-PLAYBOOK-V3-BRIEF_011121.pdf"
+		},
+		"info": {
+			"url": "https://www.nyecounty.net/1066/Coronavirus-COVID-19-Information",
+			"text": "cdc/nevada/state_link"
+		},
+		"scheduling": {
+			"url": "https://booking.appointy.com/en-US/snyecovid/snyecovid",
+			"text": "c19.links/schedule_vax"
+		},
+		"scheduling_phone": {
+			"url": "tel:1-800-401-0946",
+			"text": "c19.link/scheduling.phone.nye",
+			"description": "c19.link/scheduling.phone.description.nye"
+		}
+	},
+	"activePhase": "age_16"
+}

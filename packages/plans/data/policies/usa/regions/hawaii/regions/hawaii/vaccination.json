@@ -1,0 +1,14 @@
+{
+	"activePhase": "2",
+	"links": {
+		"info": {
+			"url": "https://coronavirus-response-county-of-hawaii-hawaiicountygis.hub.arcgis.com/pages/vaccine-information",
+			"text": "cdc/hawaii/state_link"
+		},
+		"providers": {
+			"url": "https://www.hilomedicalcenter.org/",
+			"text": "c19.links/vax_providers"
+		}
+	},
+	"noPhaseLabel": false
+}

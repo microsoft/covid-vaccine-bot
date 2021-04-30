@@ -1,0 +1,9 @@
+{
+	"id": "district_of_columbia",
+	"name": "cdc/district_of_columbia/state_name",
+	"type": "territory",
+	"metadata": {
+		"code_alpha": "DC",
+		"code_numeric": 11
+	}
+}

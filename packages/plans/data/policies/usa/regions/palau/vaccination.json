@@ -1,0 +1,28 @@
+{
+	"links": {
+		"info": {
+			"text": "cdc/palau/state_link",
+			"url": "http://www.palauhealth.org/"
+		},
+		"scheduling_phone": {
+			"url": "tel:680-488-0555",
+			"text": "c19.link/scheduling.phone.pw",
+			"description": "c19.link/scheduling.phone.description.pw"
+		}
+	},
+	"activePhase": "18_and_older",
+	"noPhaseLabel": true,
+	"unknownPhase": false,
+	"phases": [
+		{
+			"id": "18_and_older",
+			"label": "18 and older",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.are_you_age_18",
+					"moreInfoText": "c19.eligibility.moreinfo/age.are_you_age_18.pw.18_and_older"
+				}
+			]
+		}
+	]
+}

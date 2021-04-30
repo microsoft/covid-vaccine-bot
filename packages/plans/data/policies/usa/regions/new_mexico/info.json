@@ -1,0 +1,9 @@
+{
+	"id": "new_mexico",
+	"name": "cdc/new_mexico/state_name",
+	"type": "state",
+	"metadata": {
+		"code_alpha": "NM",
+		"code_numeric": 35
+	}
+}

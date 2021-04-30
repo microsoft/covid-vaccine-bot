@@ -1,0 +1,9 @@
+{
+	"id": "massachusetts",
+	"name": "cdc/massachusetts/state_name",
+	"type": "state",
+	"metadata": {
+		"code_alpha": "MA",
+		"code_numeric": 25
+	}
+}

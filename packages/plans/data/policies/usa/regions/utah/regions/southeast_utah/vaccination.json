@@ -1,0 +1,15 @@
+{
+	"links": {
+		"eligibility": {
+			"url": "https://4e6bd201-e3fb-408c-938c-c65baf6521c2.filesusr.com/ugd/0df2c0_f32289e4c5854c819be5c2ac6ae371d7.pdf"
+		},
+		"info": {
+			"url": "https://www.seuhealth.com/covid-vaccine",
+			"text": "cdc/utah/state_link"
+		},
+		"scheduling": {
+			"url": "https://www.seuhealth.com/vaccine-scheduling",
+			"text": "c19.links/schedule_vax"
+		}
+	}
+}

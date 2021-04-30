@@ -1,0 +1,9 @@
+{
+	"id": "cook",
+	"metadata": {
+		"code_alpha": "cook",
+		"code_numeric": 0
+	},
+	"name": "Cook",
+	"type": "county"
+}

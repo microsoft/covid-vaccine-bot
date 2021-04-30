@@ -1,0 +1,12 @@
+{
+	"links": {
+		"eligibility": {
+			"url": "https://dphss.guam.gov/wp-content/uploads/2021/03/Mangilao_2.jpg"
+		},
+		"scheduling_phone": {
+			"url": "tel:734-2163",
+			"text": "c19.link/scheduling.phone.mangilao",
+			"description": "c19.link/scheduling.phone.description.mangilao"
+		}
+	}
+}

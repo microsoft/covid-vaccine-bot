@@ -1,0 +1,12 @@
+{
+	"links": {
+		"info": {
+			"url": "https://www.sheboygancounty.com/departments/departments-f-q/health-and-human-services/public-health/communicable-disease/coronavirus-covid-19",
+			"text": "cdc/wisconsin/state_link"
+		},
+		"scheduling": {
+			"url": "https://wi-telegov.egov.com/Sheboygan-Vaccines/AppointmentWizard",
+			"text": "c19.links/schedule_vax"
+		}
+	}
+}

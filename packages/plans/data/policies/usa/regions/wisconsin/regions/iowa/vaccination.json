@@ -1,0 +1,16 @@
+{
+	"links": {
+		"info": {
+			"url": "https://www.iowacounty.org/departments/COVID-19/VaccineInformation",
+			"text": "cdc/wisconsin/state_link"
+		},
+		"scheduling": {
+			"url": "https://www.signupgenius.com/go/10c0d4aada92fa5fcce9-vaccine",
+			"text": "c19.links/schedule_vax"
+		},
+		"scheduling_phone": {
+			"url": "tel:608.930.9870",
+			"text": "c19.link/scheduling.phone.iowa"
+		}
+	}
+}
