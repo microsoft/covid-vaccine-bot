@@ -5,6 +5,8 @@
 import config from 'config'
 import { Locator } from './Locator'
 
+const DEFAULT_LIMIT = config.get<number>('service.defaultResultLimit')
+
 export class QueryArgUtil {
 	public constructor(private locator: Locator) {}
 
@@ -20,6 +22,14 @@ export class QueryArgUtil {
 			)
 		} else {
 			throw new Error('lat/lon coordinates or zip must be defined in the query')
+		}
+	}
+
+	public unpackLimit(query: Record<string, any>): number {
+		if (query.limit != null) {
+			return (query.limit as any) as number
+		} else {
+			return DEFAULT_LIMIT
 		}
 	}
 }
