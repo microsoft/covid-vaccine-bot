@@ -2,19 +2,34 @@
  * Copyright (c) Microsoft. All rights reserved.
  * Licensed under the MIT license. See LICENSE file in the project.
  */
+import config from 'config'
 import { Request, Response } from 'express'
 import { Operation } from 'express-openapi'
 import { providerLocationsStore, queryArgUtil } from '../../components'
+
+const MIN_LIMIT = 1
+const MAX_LIMIT = config.get<number>('service.maxResultLimit')
+const MAX_RADIUS = config.get<number>('service.maxSearchRadius')
 
 export const GET: Operation = [
 	async (req: Request, res: Response) => {
 		try {
 			const [lon, lat] = await queryArgUtil.unpackLocation(req.query)
 			const inStock: boolean = ((req.query.inStock as any) as boolean) || false
-			const limit: number = ((req.query.limit as any) as number) || 10
+			const limit: number = queryArgUtil.unpackLimit(req.query)
 			const radius = (req.query.radius as any) as number
-			if (radius > 100) {
-				res.status(400).json({ message: 'radius must be <= 100 miles' })
+
+			if (limit < MIN_LIMIT || limit > MAX_LIMIT) {
+				res.status(400).json({
+					message: `limit must be >= ${MIN_LIMIT} and <= ${MAX_LIMIT}`,
+				})
+				return
+			}
+			if (radius > MAX_RADIUS) {
+				res
+					.status(400)
+					.json({ message: `radius must be <= ${MAX_RADIUS} miles` })
+				return
 			}
 			const providers = await providerLocationsStore.getProviderLocations(
 				lat,

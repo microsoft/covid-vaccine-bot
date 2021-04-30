@@ -12,10 +12,10 @@
 		"ingest:persistcache": "ts-node src/persistCache",
 		"ingest:fetch": "ts-node src/fetchS3Data",
 		"ingest:xform": "ts-node src/transformData",
-		"ingest:geocode": "BUST_GEO_CACHE=1 ts-node src/geocodeData",
+		"ingest:geocode": "ts-node src/geocodeData",
 		"ingest:geocode:busted": "BUST_GEO_CACHE=1 yarn ingest:geocode",
 		"ingest:write": "ts-node src/writeCosmosData",
-		"start:ingest": "run-s ingest:restorecache ingest:fetch ingest:xform ingest:geocode ingest:write",
+		"start:ingest": "run-s ingest:restorecache ingest:fetch ingest:xform ingest:geocode ingest:write ingest:persistcache",
 		"prearchive": "npm install --production",
 		"archive": "yarn essex zip deploy.zip config lib node_modules VaccineFinderIngest host.json package.json",
 		"deploy": "az functionapp deployment source config-zip --subscription Resilience --resource-group covid-services --name vaxbot-fns --src deploy.zip"
