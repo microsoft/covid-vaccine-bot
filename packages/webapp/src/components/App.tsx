@@ -29,7 +29,7 @@ import { getAppStore } from '../store/store'
 import { getLanguageOptions } from '../utils/textUtils'
 import Dashboard from './Dashboard'
 import Footer from './Footer'
-import LocationsV2 from './LocationsV2'
+import Locations from './Locations'
 import Login from './Login'
 import QualifierPanel from './QualifierPanel'
 import Review from './Review'
@@ -287,7 +287,7 @@ export default observer(function App() {
 													>
 														{renderSaveContinueMessageBar()}
 														{renderRepoMessageBar()}
-														<LocationsV2 />
+														<Locations />
 													</PivotItem>
 													{state.isEditable && (
 														<PivotItem

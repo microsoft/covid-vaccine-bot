@@ -27,7 +27,7 @@ import LocationPhaseOverrideBar from './LocationPhaseOverrideBar'
 
 import './Locations.scss'
 
-export default observer(function LocationsV2() {
+export default observer(function Locations() {
 	const {
 		isDataRefreshing,
 		repoFileData,
