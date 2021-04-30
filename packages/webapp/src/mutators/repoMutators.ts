@@ -265,7 +265,10 @@ export const updatePhaseOverviewTitle = mutatorAction(
 	'updatePhaseOverTitle',
 	(data: string) => {
 		const store = getAppStore()
-		store.breadCrumbs.phase_overview.value.info.content.name = data
+		store.breadCrumbs.phase_overview.value.info.content = {
+			id: data,
+			name: data
+		}
 	}
 )
 
