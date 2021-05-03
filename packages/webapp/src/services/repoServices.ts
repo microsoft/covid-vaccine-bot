@@ -112,24 +112,11 @@ const commitChanges = async (
 		const { added, modified, deleted } = pendingChangeList
 		let locationResp: any = {}
 
-		// Add
-		for (const item of added) {
-			const skipFetch = !item.data.info?.path || committedDeletes.includes(item.data.info.path)
+		// Add and Modify
+		const upserted = [...added, ...modified].filter((item, idx, arr) => arr.findIndex(t => t.pathKey === item.pathKey) === idx)
+		const upsertedList: any = {}
 
-			if (!skipFetch) {
-				//Info
-				locationResp = await commitFileChanges('PUT', 'Added', branchName, item.data.info.path, utf8_to_b64(JSON.stringify(item.data.info.content, null, '\t')), item.data.info.sha)
-
-				//Vaccination
-				locationResp = await commitFileChanges('PUT', 'Added', branchName, item.data.vaccination.path, utf8_to_b64(JSON.stringify(item.data.vaccination.content, null, '\t')), item.data.vaccination.sha)
-
-				//Strings
-				locationResp = await commitFileChanges('PUT', 'Added', branchName, item.data.strings.path, utf8_to_b64(createCSVDataString(item.data.strings.content)), item.data.strings.sha)
-			}
-		}
-
-		// Modify
-		for (const item of modified) {
+		for (const item of upserted) {
 			const skipFetch = !item.data.info?.path || committedDeletes.includes(item.data.info.path)
 
 			if (!skipFetch) {
@@ -137,15 +124,18 @@ const commitChanges = async (
 				if(item.data.info.content){
 					//Info
 					locationResp = await commitFileChanges('PUT', 'Updated', branchName, item.data.info.path, utf8_to_b64(JSON.stringify(item.data.info.content, null, '\t')), item.data.info.sha)
+					upsertedList[item.data.info.path] = locationResp
 				}
 
 				if(item.data.vaccination.content){
 					//Vaccination
 					locationResp = await commitFileChanges('PUT', 'Updated', branchName, item.data.vaccination.path, utf8_to_b64(JSON.stringify(item.data.vaccination.content, null, '\t')), item.data.vaccination.sha)
+					upsertedList[item.data.vaccination.path] = locationResp
 				}
 				if(item.data.strings.content){
 					//Strings
 					locationResp = await commitFileChanges('PUT', 'Updated', branchName, item.data.strings.path, utf8_to_b64(createCSVDataString(item.data.strings.content)), item.data.strings.sha)
+					upsertedList[item.data.strings.path] = locationResp
 				}
 			}
 		}
@@ -154,20 +144,24 @@ const commitChanges = async (
 		for (const item of deleted) {
 			const skipFetch = !item.data.info?.path	|| committedDeletes.includes(item.data.info.path)
 
+			let fileSha = ''
 			if (!skipFetch) {
 				//Info
-				if (item.data.info?.sha) {
-					locationResp = await commitFileChanges('DELETE', 'Removed', branchName, item.data.info.path, undefined, item.data.info.sha)
+				fileSha = item.data.info.path in upsertedList ? upsertedList[item.data.info.path].content.sha : item.data.info?.sha
+				if (fileSha) {
+					locationResp = await commitFileChanges('DELETE', 'Removed', branchName, item.data.info.path, undefined, fileSha)
 				}
 
 				//Vaccination
-				if (item.data.vaccination?.sha) {
-					locationResp = await commitFileChanges('DELETE', 'Removed', branchName, item.data.vaccination.path, undefined, item.data.vaccination.sha)
+				fileSha = item.data.vaccination.path in upsertedList ? upsertedList[item.data.vaccination.path].content.sha : item.data.vaccination?.sha
+				if (fileSha) {
+					locationResp = await commitFileChanges('DELETE', 'Removed', branchName, item.data.vaccination.path, undefined, fileSha)
 				}
 
 				//Strings
-				if (item.data.strings?.sha) {
-					locationResp = await commitFileChanges('DELETE', 'Removed', branchName, item.data.strings.path, undefined, item.data.strings.sha)
+				fileSha = item.data.strings.path in upsertedList ? upsertedList[item.data.strings.path].content.sha : item.data.strings?.sha
+				if (fileSha) {
+					locationResp = await commitFileChanges('DELETE', 'Removed', branchName, item.data.strings.path, undefined, fileSha)
 				}
 			}
 		}

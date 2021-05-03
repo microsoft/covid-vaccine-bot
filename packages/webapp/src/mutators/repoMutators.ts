@@ -571,7 +571,7 @@ export const updateLocationData = mutatorAction(
 				locationData.noPhaseLabel
 
 			const pathKey = pathArray.join('.')
-			const modifyKeyIdx = store.pendingChangeList.modified.findIndex((m: any) => m.pathKey === pathKey)
+			const modifyKeyIdx = store.pendingChangeList.modified.findIndex((m: any) => m.pathKey === pathKey && m.section === 'location')
 
 			if (modifyKeyIdx > -1) {
 				store.pendingChangeList.modified[modifyKeyIdx].data = currLocation
@@ -680,7 +680,7 @@ export const modifyMoreInfoText = mutatorAction(
 			}
 
 
-			const modifyKeyIdx = store.pendingChangeList.modified.findIndex((m: any) => m.pathKey === pathKey)
+			const modifyKeyIdx = store.pendingChangeList.modified.findIndex((m: any) => m.pathKey === pathKey && m.section === 'qualifier')
 
 			if (modifyKeyIdx > -1) {
 				store.pendingChangeList.modified[modifyKeyIdx].data = currLocation
@@ -732,7 +732,7 @@ export const modifyMoreInfoLinks = mutatorAction(
 
 			phaseQualifiers[qualifierIdx].moreInfoUrl = moreInfoUrl
 
-			const modifyKeyIdx = store.pendingChangeList.modified.findIndex((m: any) => m.pathKey === pathKey)
+			const modifyKeyIdx = store.pendingChangeList.modified.findIndex((m: any) => m.pathKey === pathKey && m.section === 'qualifier')
 
 			if (modifyKeyIdx > -1) {
 				store.pendingChangeList.modified[modifyKeyIdx].data = currLocation
@@ -783,7 +783,7 @@ export const updateQualifier = mutatorAction(
 
 			phaseQualifiers[qualifierIdx].question = qualifierId
 
-			const modifyKeyIdx = store.pendingChangeList.modified.findIndex((m: any) => m.pathKey === pathKey)
+			const modifyKeyIdx = store.pendingChangeList.modified.findIndex((m: any) => m.pathKey === pathKey && m.section === 'qualifier')
 
 			if (modifyKeyIdx > -1) {
 				store.pendingChangeList.modified[modifyKeyIdx].data = currLocation
@@ -950,7 +950,7 @@ export const updatePhase = mutatorAction(
 			currLocation.vaccination.content.activePhase = activePhase
 		}
 
-		const modifyKeyIdx = store.pendingChangeList.modified.findIndex((m: any) => m.pathKey === pathKey)
+		const modifyKeyIdx = store.pendingChangeList.modified.findIndex((m: any) => m.pathKey === pathKey && m.section === 'phase')
 
 		if (modifyKeyIdx > -1) {
 			store.pendingChangeList.modified[modifyKeyIdx].data = currLocation
@@ -1078,7 +1078,7 @@ export const setActivePhase = mutatorAction(
 
 			currLocation.vaccination.content.activePhase = phaseId
 
-			const modifyKeyIdx = store.pendingChangeList.modified.findIndex((m: any) => m.pathKey === pathKey)
+			const modifyKeyIdx = store.pendingChangeList.modified.findIndex((m: any) => m.pathKey === pathKey && m.section === 'phase')
 
 			if (modifyKeyIdx > -1) {
 				store.pendingChangeList.modified[modifyKeyIdx].data = currLocation
