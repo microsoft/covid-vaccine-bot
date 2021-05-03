@@ -71,6 +71,12 @@
 		"Qualifier": {
 			"placeholder": "Qualifier text..."
 		},
+		"QualifierSms": {
+			"placeholder": "Qualifier text for sms..."
+		},
+		"QualifierVoice": {
+			"placeholder": "Qualifier text for voice..."
+		},
 		"submit": "Submit",
 		"cancel": "Cancel"
 	},
@@ -275,6 +281,12 @@
 		},
 		"MoreInfoText": {
 			"placeholder": "More info text"
+		},
+		"MoreInfoTextSms": {
+			"placeholder": "More info for sms"
+		},
+		"MoreInfoTextVoice": {
+			"placeholder": "More info for voice"
 		},
 		"MoreInfoUrl": {
 			"placeholder": "More info url"

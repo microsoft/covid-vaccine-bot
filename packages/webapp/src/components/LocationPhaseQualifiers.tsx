@@ -89,6 +89,8 @@ export default observer(function LocationPhaseQualifiers(
 							? qualification.moreInfoText.toLowerCase()
 							: '',
 						moreInfoContent: '',
+						moreInfoTextSms: qualification?.moreInfoTextSms || '',
+						moreInfoTextVoice: qualification?.moreInfoTextVoice || '',
 						moreInfoUrl: qualification.moreInfoUrl,
 						qualifierId: keyId,
 						tagKey: keyId.split('/')[1].split('.')[0],
@@ -213,6 +215,8 @@ export default observer(function LocationPhaseQualifiers(
 			phaseGroupId: currentItem.groupId,
 			qualifierId: currentItem.qualifierId,
 			moreInfoText: currentItem.moreInfoContent,
+			moreInfoTextSms: currentItem.moreInfoTextSms,
+			moreInfoTextVoice: currentItem.moreInfoTextVoice
 		})
 	}
 

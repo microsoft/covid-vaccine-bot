@@ -73,6 +73,12 @@
 		},
 		"Qualifier": {
 			"placeholder": "Texto calificador ..."
+		},
+		"QualifierSms": {
+			"placeholder": "Texto calificador para sms"
+		},
+		"QualifierVoice": {
+			"placeholder": "Texto calificador para voz"
 		}
 	},
 	"LocationForm": {
@@ -273,6 +279,12 @@
 		},
 		"MoreInfoText": {
 			"placeholder": "Más texto de información"
+		},
+		"MoreInfoTextSms": {
+			"placeholder": "Más info para sms"
+		},
+		"MoreInfoTextVoice": {
+			"placeholder": "Más información para voz"
 		},
 		"MoreInfoUrl": {
 			"placeholder": "Más información URL"

@@ -30,6 +30,8 @@ const setInitialData = (item: any) => {
 			tagKey: item.key.split('/')[1].split('.')[0],
 			key: item.key,
 			qualifier: item.text,
+			//qualifierSms: item.sms,
+			//qualifierVoice: item.voice,
 			isNew: false,
 		}
 	} else {
@@ -37,6 +39,8 @@ const setInitialData = (item: any) => {
 			tagKey: '',
 			key: '',
 			qualifier: '',
+			//qualifierSms: '',
+			//qualifierVoice: '',
 			isNew: true,
 		}
 	}
@@ -192,6 +196,32 @@ export default observer(function AddQualifierForm(props: AddQualifierFormProp) {
 					validateOnLoad={false}
 					onGetErrorMessage={() => isDuplicate(formData.qualifier)}
 				/>
+				{/* <TextField
+					label=""
+					name="qualifierSms"
+					placeholder={t('AddQualifierForm.QualifierSms.placeholder')}
+					value={formData.qualifierSms}
+					onChange={handleTextChange}
+					multiline={true}
+					autoAdjustHeight={false}
+					resizable={false}
+					disabled={!formData.tagKey || isAddingTag}
+					validateOnLoad={false}
+					onGetErrorMessage={() => isDuplicate(formData.qualifierSms)}
+				/>
+				<TextField
+					label=""
+					name="qualifierVoice"
+					placeholder={t('AddQualifierForm.QualifierVoice.placeholder')}
+					value={formData.qualifierVoice}
+					onChange={handleTextChange}
+					multiline={true}
+					autoAdjustHeight={false}
+					resizable={false}
+					disabled={!formData.tagKey || isAddingTag}
+					validateOnLoad={false}
+					onGetErrorMessage={() => isDuplicate(formData.qualifierVoice)}
+				/> */}
 			</div>
 			<div className="modalFooter">
 				<PrimaryButton

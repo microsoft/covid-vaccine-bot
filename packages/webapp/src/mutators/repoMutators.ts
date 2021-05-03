@@ -604,7 +604,7 @@ export const updateLocationData = mutatorAction(
 
 export const modifyMoreInfoText = mutatorAction(
 	'modifyMoreInfoText',
-	({ currentLocation, phaseGroupId, qualifierId, moreInfoText }: any) => {
+	({ currentLocation, phaseGroupId, qualifierId, moreInfoText, moreInfoTextSms, moreInfoTextVoice }: any) => {
 		if (currentLocation && phaseGroupId && qualifierId) {
 			const store = getAppStore()
 			store.pendingChanges = true
@@ -653,9 +653,32 @@ export const modifyMoreInfoText = mutatorAction(
 				const newStringsObj: any = {}
 				newStringsObj[store.currentLanguage] = moreInfoText
 				currLocation.strings.content[calcInfoKey] = newStringsObj
+
+				phaseQualifiers[qualifierIdx].moreInfoText = calcInfoKey
 			}
 
-			phaseQualifiers[qualifierIdx].moreInfoText = calcInfoKey
+			const moreInfoSmsKey = calcInfoKey.replace('moreinfo', 'moreinfo.sms')
+			if (!moreInfoTextSms) {
+				delete currLocation.strings.content[moreInfoSmsKey]
+			} else {
+				const newStringsObj: any = {}
+				newStringsObj[store.currentLanguage] = moreInfoTextSms
+				currLocation.strings.content[moreInfoSmsKey] = newStringsObj
+
+				phaseQualifiers[qualifierIdx].moreInfoTextSms = moreInfoSmsKey
+			}
+
+			const moreInfoVoiceKey = calcInfoKey.replace('moreinfo', 'moreinfo.voice')
+			if (!moreInfoTextVoice) {
+				delete currLocation.strings.content[moreInfoVoiceKey]
+			} else {
+				const newStringsObj: any = {}
+				newStringsObj[store.currentLanguage] = moreInfoTextVoice
+				currLocation.strings.content[moreInfoVoiceKey] = newStringsObj
+
+				phaseQualifiers[qualifierIdx].moreInfoTextVoice = moreInfoVoiceKey
+			}
+
 
 			const modifyKeyIdx = store.pendingChangeList.modified.findIndex((m: any) => m.pathKey === pathKey)
 
@@ -1082,6 +1105,8 @@ export const updateRootLocationQualifiers = mutatorAction(
 			const stringsObj = store.repoFileData[rootLocationKey].strings.content
 
 			let qualifierKey = ''
+			//let qualifierSmsKey = ''
+			//let qualifierVoiceKey = ''
 
 			if (newQualifier.isNew) {
 				const qualifierKeyBank = newQualifier.qualifier
@@ -1111,12 +1136,32 @@ export const updateRootLocationQualifiers = mutatorAction(
 					: qualifierKey
 			} else {
 				qualifierKey = newQualifier.key
+				//qualifierSmsKey = newQualifier.key.replace('.question/','.question.sms/')
+				//qualifierVoiceKey = newQualifier.key.replace('.question/','.question.voice/')
 			}
 
 			stringsObj[qualifierKey] = {
 				...stringsObj[qualifierKey],
 				[store.currentLanguage]: newQualifier.qualifier,
 			}
+
+			// if (!newQualifier.qualifierSms) {
+			// 	delete stringsObj[qualifierSmsKey]
+			// } else {
+			// 	stringsObj[qualifierSmsKey] = {
+			// 		...stringsObj[qualifierSmsKey],
+			// 		[store.currentLanguage]: newQualifier.qualifierSms,
+			// 	}
+			// }
+
+			// if (!newQualifier.qualifierVoice) {
+			// 	delete stringsObj[qualifierVoiceKey]
+			// } else {
+			// 	stringsObj[qualifierVoiceKey] = {
+			// 		...stringsObj[qualifierVoiceKey],
+			// 		[store.currentLanguage]: newQualifier.qualifierVoice,
+			// 	}
+			// }
 
 			const modifyRootKeyIdx = store.pendingChangeList.modified.findIndex((m: any) => m.pathKey === rootLocationKey)
 
@@ -1173,7 +1218,7 @@ export const updateStrings = mutatorAction(
 		if (stringsList) {
 			const store = getAppStore()
 			store.pendingChanges = true
-			Object.keys(stringsList).forEach((stringId: string) => {			
+			Object.keys(stringsList).forEach((stringId: string) => {
 					for (const item of Object.keys(store.repoFileData)) {
 						const location = store.repoFileData[item]
 						if (JSON.stringify(location).includes(stringId)) {

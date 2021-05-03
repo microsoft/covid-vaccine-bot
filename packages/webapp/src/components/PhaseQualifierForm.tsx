@@ -49,6 +49,8 @@ export default observer(function PhaseQualifierForm(
 		getPhaseQualifierItemsByKey(currentLocation, rowItem.tagKey)
 	)
 	const [moreInfoText, setMoreInfoText] = useState<string>('')
+	const [moreInfoTextSms, setMoreInfoTextSms] = useState<string>('')
+	const [moreInfoTextVoice, setMoreInfoTextVoice] = useState<string>('')
 	const [moreInfoUrl, setMoreInfoUrl] = useState<string>(
 		getPhaseMoreInfoUrl(rowItem)
 	)
@@ -56,6 +58,8 @@ export default observer(function PhaseQualifierForm(
 	changedItem.current.moreInfoContent = moreInfoText
 
 	let moreInfoKey = rowItem.moreInfoKey
+	let moreInfoTextSmsKey = rowItem.moreInfoTextSms
+	let moreInfoTextVoiceKey = rowItem.moreInfoTextVoice
 
 	const locationPhases = rowItem.location.vaccination.content.phases
 	const currentPhase = locationPhases?.find(
@@ -69,6 +73,8 @@ export default observer(function PhaseQualifierForm(
 		)
 		if (currQualification) {
 			moreInfoKey = currQualification.moreInfoText
+			moreInfoTextSmsKey = currQualification.moreInfoTextSms
+			moreInfoTextVoiceKey = currQualification.moreInfoTextVoice
 		}
 	}
 
@@ -84,8 +90,10 @@ export default observer(function PhaseQualifierForm(
 	useEffect(() => {
 		if (currentLanguage) {
 			setMoreInfoText(getPhaseMoreInfoTextByKey(currentLocation, moreInfoKey))
+			setMoreInfoTextSms(getPhaseMoreInfoTextByKey(currentLocation, moreInfoTextSmsKey))
+			setMoreInfoTextVoice(getPhaseMoreInfoTextByKey(currentLocation, moreInfoTextVoiceKey))
 		}
-	}, [currentLanguage, currentLocation, moreInfoKey])
+	}, [currentLanguage, currentLocation, moreInfoKey, moreInfoTextVoiceKey, moreInfoTextSmsKey])
 
 	const onTagChange = useCallback(
 		(_event, option) => {
@@ -105,6 +113,8 @@ export default observer(function PhaseQualifierForm(
 					text: '',
 					moreInfoKey: '',
 					moreInfoContent: '',
+					moreInfoTextSms: '',
+					moreInfoTextVoice: ''
 				},
 			}
 		},
@@ -115,6 +125,8 @@ export default observer(function PhaseQualifierForm(
 		(_event, option) => {
 			setMoreInfoText('')
 			setMoreInfoUrl('')
+			setMoreInfoTextSms('')
+			setMoreInfoTextVoice('')
 
 			changedItem.current = {
 				...changedItem.current,
@@ -123,6 +135,8 @@ export default observer(function PhaseQualifierForm(
 					text: option.text,
 					moreInfoKey: '',
 					moreInfoContent: '',
+					moreInfoTextSms: '',
+					moreInfoTextVoice: ''
 				},
 			}
 			onRowItemQualifierChange?.(changedItem.current, rowItem)
@@ -141,6 +155,32 @@ export default observer(function PhaseQualifierForm(
 			setMoreInfoText(value)
 		},
 		[setMoreInfoText]
+	)
+
+	const onMoreInfoTextSmsChange = useCallback(
+		(_event, value) => {
+			changedItem.current = {
+				...changedItem.current,
+				...{
+					moreInfoTextSms: value,
+				},
+			}
+			setMoreInfoTextSms(value)
+		},
+		[setMoreInfoTextSms]
+	)
+
+	const onMoreInfoTextVoiceChange = useCallback(
+		(_event, value) => {
+			changedItem.current = {
+				...changedItem.current,
+				...{
+					moreInfoTextVoice: value,
+				},
+			}
+			setMoreInfoTextVoice(value)
+		},
+		[setMoreInfoTextVoice]
 	)
 
 	const onMoreInfoUrlChange = useCallback(
@@ -205,6 +245,26 @@ export default observer(function PhaseQualifierForm(
 					styles={{ root: { width: 'calc(100% - 32px)', padding: '5px 0' } }}
 					value={moreInfoText}
 					onChange={onMoreInfoTextChange}
+					onBlur={() => onRowItemTextChange?.(changedItem.current, rowItem)}
+				/>
+				<TextField
+					placeholder={t('PhaseQualifierForm.MoreInfoTextSms.placeholder')}
+					multiline={true}
+					autoAdjustHeight={true}
+					resizable={true}
+					styles={{ root: { width: 'calc(100% - 32px)', padding: '5px 0' } }}
+					value={moreInfoTextSms}
+					onChange={onMoreInfoTextSmsChange}
+					onBlur={() => onRowItemTextChange?.(changedItem.current, rowItem)}
+				/>
+				<TextField
+					placeholder={t('PhaseQualifierForm.MoreInfoTextVoice.placeholder')}
+					multiline={true}
+					autoAdjustHeight={true}
+					resizable={true}
+					styles={{ root: { width: 'calc(100% - 32px)', padding: '5px 0' } }}
+					value={moreInfoTextVoice}
+					onChange={onMoreInfoTextVoiceChange}
 					onBlur={() => onRowItemTextChange?.(changedItem.current, rowItem)}
 				/>
 				<TextField

@@ -50,7 +50,7 @@ export default observer(function QualifierPanel() {
 
 			const contentObj = repoFileData[rootLocationKey.current].strings.content
 			const questionKeys = Object.keys(contentObj)
-				.filter((k) => k.includes('eligibility.question'))
+				.filter((k) => k.includes('eligibility.question/'))
 				.sort((a, b) => (a > b ? 1 : -1))
 
 			questionKeys.forEach((key) => {
@@ -76,13 +76,19 @@ export default observer(function QualifierPanel() {
 				if (!questionItemKeys.includes(key)) {
 					questionItemKeys.push(key)
 
+					//const smsKey = key.replace('.question/','.question.sms/')
+					//const voiceKey = key.replace('.question/','.question.voice/')
+
 					tempQualifierGroupItems.push({
 						key: key,
-						text: contentObj[key][currentLanguage]
+						label: contentObj[key][currentLanguage]
 							? contentObj[key][currentLanguage]
 							: `${t(
 									'QualifierPanel.translationNotFound'
-							  )} (${currentLanguage})`,
+							)} (${currentLanguage})`,
+						text: contentObj[key]?.[currentLanguage] || '',
+						//sms: contentObj[smsKey]?.[currentLanguage] || '',
+						//voice: contentObj[voiceKey]?.[currentLanguage] || '',
 					})
 				}
 			})
@@ -96,7 +102,7 @@ export default observer(function QualifierPanel() {
 		{
 			key: 'questionColKey',
 			name: t('QualifierPanel.columns.question'),
-			fieldName: 'text',
+			fieldName: 'label',
 			minWidth: 100,
 			isResizable: false,
 		},
