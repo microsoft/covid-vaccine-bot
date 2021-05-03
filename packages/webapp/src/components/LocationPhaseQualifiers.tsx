@@ -203,21 +203,28 @@ export default observer(function LocationPhaseQualifiers(
 	)
 
 	const onChangeRowItemText = (currentItem: any, initItem: any) => {
-		modifyMoreInfoLinks({
-			currentLocation,
-			phaseGroupId: currentItem.groupId,
-			qualifierId: currentItem.qualifierId,
-			moreInfoUrl: currentItem.moreInfoUrl,
-		})
+		if (initItem.moreInfoUrl !== currentItem.moreInfoUrl) {
+			modifyMoreInfoLinks({
+				currentLocation,
+				phaseGroupId: currentItem.groupId,
+				qualifierId: currentItem.qualifierId,
+				moreInfoUrl: currentItem.moreInfoUrl,
+			})
+		}
 
-		modifyMoreInfoText({
-			currentLocation,
-			phaseGroupId: currentItem.groupId,
-			qualifierId: currentItem.qualifierId,
-			moreInfoText: currentItem.moreInfoContent,
-			moreInfoTextSms: currentItem.moreInfoTextSms,
-			moreInfoTextVoice: currentItem.moreInfoTextVoice
-		})
+		if (initItem.moreInfoContent !== currentItem.moreInfoContent
+			 || initItem.moreInfoTextSms !== currentItem.moreInfoTextSms
+			 || initItem.moreInfoTextVoice !== currentItem.moreInfoTextVoice)
+			 {
+			modifyMoreInfoText({
+				currentLocation,
+				phaseGroupId: currentItem.groupId,
+				qualifierId: currentItem.qualifierId,
+				moreInfoText: currentItem.moreInfoContent,
+				moreInfoTextSms: currentItem.moreInfoTextSms,
+				moreInfoTextVoice: currentItem.moreInfoTextVoice
+			})
+		}
 	}
 
 	const onChangeRowItemQualifier = (currentItem: any, initItem: any) => {

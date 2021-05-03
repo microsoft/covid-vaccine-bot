@@ -137,12 +137,12 @@ export default observer(function App() {
 							<div>
 								{!state.isSavingCommits ? (
 									<>
-										<MessageBarButton
+										{/* <MessageBarButton
 											disabled={state.isDataRefreshing}
 											onClick={initializeGitData}
 										>
 											{t('App.SaveContinueMessageBar.cancel')}
-										</MessageBarButton>
+										</MessageBarButton> */}
 										<MessageBarButton
 											disabled={state.isDataRefreshing}
 											onClick={() => {

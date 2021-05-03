@@ -613,27 +613,28 @@ export const modifyMoreInfoText = mutatorAction(
 			pathArray.splice(-1, 1)
 			const isRootLocation = pathArray.length === 1
 
-			const { locationData: currLocation, pathKey, name } = getCurrentLocationObj(currentLocation)
+			//const { locationData: currLocation, pathKey, name } = getCurrentLocationObj(currentLocation)
+
 
 			const { phases, activePhase } = getLocationPhaseData(currentLocation)
 
 			if (
-				!currLocation.vaccination.content?.phases ||
-				currLocation.vaccination.content?.phases.length === 0
+				!currentLocation.vaccination.content?.phases ||
+				currentLocation.vaccination.content?.phases.length === 0
 			) {
-				currLocation.vaccination.content.phases = phases
+				currentLocation.vaccination.content.phases = phases
 			}
 
-			if (!currLocation.vaccination.content?.activePhase) {
-				currLocation.vaccination.content.activePhase = activePhase
+			if (!currentLocation.vaccination.content?.activePhase) {
+				currentLocation.vaccination.content.activePhase = activePhase
 			}
 
-			const phaseGroupIndex = currLocation.vaccination.content.phases.findIndex(
+			const phaseGroupIndex = currentLocation.vaccination.content.phases.findIndex(
 				(phase: any) => phase.id === phaseGroupId
 			)
 
 			const phaseQualifiers =
-				currLocation.vaccination.content.phases[phaseGroupIndex].qualifications
+			currentLocation.vaccination.content.phases[phaseGroupIndex].qualifications
 			const qualifierIdx = phaseQualifiers.findIndex(
 				(pq: any) => pq.question === qualifierId
 			)
@@ -642,54 +643,54 @@ export const modifyMoreInfoText = mutatorAction(
 
 			if (!isRootLocation) {
 				const locationCode =
-					currLocation.info.content?.metadata?.code_alpha ||
-					currLocation.info.content.id
+				currentLocation.info.content?.metadata?.code_alpha ||
+				currentLocation.info.content.id
 				calcInfoKey += `.${locationCode.toLowerCase()}.${phaseGroupId}`
 			}
 
 			if (!moreInfoText) {
-				delete currLocation.strings.content[calcInfoKey]
+				delete currentLocation.strings.content[calcInfoKey]
 			} else {
 				const newStringsObj: any = {}
 				newStringsObj[store.currentLanguage] = moreInfoText
-				currLocation.strings.content[calcInfoKey] = newStringsObj
+				currentLocation.strings.content[calcInfoKey] = newStringsObj
 
 				phaseQualifiers[qualifierIdx].moreInfoText = calcInfoKey
 			}
 
 			const moreInfoSmsKey = calcInfoKey.replace('moreinfo', 'moreinfo.sms')
 			if (!moreInfoTextSms) {
-				delete currLocation.strings.content[moreInfoSmsKey]
+				delete currentLocation.strings.content[moreInfoSmsKey]
 			} else {
 				const newStringsObj: any = {}
 				newStringsObj[store.currentLanguage] = moreInfoTextSms
-				currLocation.strings.content[moreInfoSmsKey] = newStringsObj
+				currentLocation.strings.content[moreInfoSmsKey] = newStringsObj
 
 				phaseQualifiers[qualifierIdx].moreInfoTextSms = moreInfoSmsKey
 			}
 
 			const moreInfoVoiceKey = calcInfoKey.replace('moreinfo', 'moreinfo.voice')
 			if (!moreInfoTextVoice) {
-				delete currLocation.strings.content[moreInfoVoiceKey]
+				delete currentLocation.strings.content[moreInfoVoiceKey]
 			} else {
 				const newStringsObj: any = {}
 				newStringsObj[store.currentLanguage] = moreInfoTextVoice
-				currLocation.strings.content[moreInfoVoiceKey] = newStringsObj
+				currentLocation.strings.content[moreInfoVoiceKey] = newStringsObj
 
 				phaseQualifiers[qualifierIdx].moreInfoTextVoice = moreInfoVoiceKey
 			}
 
-
+			const pathKey = pathArray.join('.')
 			const modifyKeyIdx = store.pendingChangeList.modified.findIndex((m: any) => m.pathKey === pathKey && m.section === 'qualifier')
 
 			if (modifyKeyIdx > -1) {
-				store.pendingChangeList.modified[modifyKeyIdx].data = currLocation
+				store.pendingChangeList.modified[modifyKeyIdx].data = currentLocation
 			} else {
 				store.pendingChangeList.modified.push({
 					section: 'qualifier',
-					name: name,
+					name: currentLocation.info.content.id,
 					pathKey: pathKey,
-					data: currLocation
+					data: currentLocation
 				})
 			}
 
