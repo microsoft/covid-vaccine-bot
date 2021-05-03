@@ -11,7 +11,8 @@
 		"key": null
 	},
 	"azureMaps": {
-		"key": null
+		"key": null,
+		"geocodeCountry": "USA"
 	},
 	"vaccinefinder": {
 		"region": "us-east-1",
