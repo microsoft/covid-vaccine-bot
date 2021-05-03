@@ -781,7 +781,27 @@ export const updateQualifier = mutatorAction(
 				(pq: any) => pq.question === oldQualifierId
 			)
 
-			phaseQualifiers[qualifierIdx].question = qualifierId
+			const qualifierObj = phaseQualifiers[qualifierIdx]
+			qualifierObj.question = qualifierId
+
+			if (qualifierObj.moreInfoText) {
+				delete currLocation.strings.content[qualifierObj.moreInfoText]
+				delete qualifierObj.moreInfoText
+			}
+
+			if (qualifierObj.moreInfoTextSms) {
+				delete currLocation.strings.content[qualifierObj.moreInfoTextSms]
+				delete qualifierObj.moreInfoTextSms
+			}
+			
+			if (qualifierObj.moreInfoTextVoice) {
+				delete currLocation.strings.content[qualifierObj.moreInfoTextVoice]
+				delete qualifierObj.moreInfoTextVoice
+			}
+
+			if (qualifierObj.moreInfoUrl) {
+				delete qualifierObj.moreInfoUrl
+			}
 
 			const modifyKeyIdx = store.pendingChangeList.modified.findIndex((m: any) => m.pathKey === pathKey && m.section === 'qualifier')
 
