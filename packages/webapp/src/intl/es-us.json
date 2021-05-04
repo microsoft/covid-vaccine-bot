@@ -341,7 +341,11 @@
 			"invalidFileContent": "Contenido de archivo no válido.",
 			"invalidFileType": "Tipo de archivo invalido."
 		},
-		"dragDropText": "Arrastra y suelta el archivo de traducción aquí"
+		"dragDropText": "Arrastra y suelta el archivo de traducción aquí",
+		"GroupList": {
+			"loading": "Cargando contenido ...",
+			"updating": "Actualizando traducciones ..."
+		}
 	},
 	"UnAuthorized": {
 		"title": "Bienvenidos!",

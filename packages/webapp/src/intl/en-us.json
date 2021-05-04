@@ -343,7 +343,11 @@
 			"invalidFileContent": "Invalid File Content.",
 			"invalidFileType": "Invalid File Type."
 		},
-		"dragDropText": "Drag and Drop translation file here"
+		"dragDropText": "Drag and Drop translation file here",
+		"GroupList": {
+			"loading": "Loading content...",
+			"updating": "Updating translations..."
+		}
 	},
 	"UnAuthorized": {
 		"title": "Welcome!",
