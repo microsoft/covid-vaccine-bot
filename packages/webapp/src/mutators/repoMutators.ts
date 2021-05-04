@@ -379,6 +379,21 @@ export const addLocation = mutatorAction(
 	}
 )
 
+const getRegionsRecursive = ( location:any ):any => {
+	if(!location.regions){
+		return [{...location}]
+	}
+
+	let returnArr:any = [{...location}]
+	for( const item of Object.keys(location.regions)){
+		if(item){
+		const region = location.regions[item]
+		returnArr = returnArr.concat(getRegionsRecursive(region))
+		}
+	}
+	return returnArr
+}
+
 export const deleteLocation = mutatorAction(
 	'deleteLocation',
 	(locationData: any) => {
@@ -387,26 +402,28 @@ export const deleteLocation = mutatorAction(
 
 		const pathArray = locationData.value.info.path.split('/')
 		pathArray.splice(-1, 1)
+		
+		const currentLocation = pathFind(store.repoFileData, pathArray)
+		const regions:any = getRegionsRecursive(currentLocation)
+		
 		if (pathArray.length === 1) {
-			store.pendingChangeList.deleted.push({
-				section: 'location',
-				name: locationData.key,
-				pathKey: pathArray.join('.'),
-				data: store.repoFileData[locationData.key]
-			})
 			delete store.repoFileData[locationData.key]
 		} else {
 			pathArray.splice(-1, 1)
 			const parentRegion = pathFind(store.repoFileData, pathArray)
-			store.pendingChangeList.deleted.push({
-				section: 'location',
-				name: locationData.key,
-				pathKey: pathArray.join('.'),
-				data: parentRegion[locationData.key]
-			})
 			delete parentRegion[locationData.key]
 		}
 
+		for(const region of regions){
+			const regionPathArray = region.info.path.split('/')
+			regionPathArray.splice(-1, 1)
+			store.pendingChangeList.deleted.push({
+				section: 'location',
+				name: regionPathArray.slice(-1)[0],
+				pathKey: regionPathArray.join('.'),
+				data: region
+			})
+		}
 		store.repoFileData = { ...store.repoFileData }
 	}
 )

@@ -139,29 +139,37 @@ const commitChanges = async (
 				}
 			}
 		}
-
 		// Remove
 		for (const item of deleted) {
 			const skipFetch = !item.data.info?.path	|| committedDeletes.includes(item.data.info.path)
 
+
 			let fileSha = ''
 			if (!skipFetch) {
+
 				//Info
-				fileSha = item.data.info.path in upsertedList ? upsertedList[item.data.info.path].content.sha : item.data.info?.sha
-				if (fileSha) {
-					locationResp = await commitFileChanges('DELETE', 'Removed', branchName, item.data.info.path, undefined, fileSha)
+				if(item.data.info){
+					fileSha = item.data.info.path in upsertedList ? upsertedList[item.data.info.path].content.sha : item.data.info?.sha
+					if (fileSha) {
+						locationResp = await commitFileChanges('DELETE', 'Removed', branchName, item.data.info.path, undefined, fileSha)
+					}
 				}
 
 				//Vaccination
-				fileSha = item.data.vaccination.path in upsertedList ? upsertedList[item.data.vaccination.path].content.sha : item.data.vaccination?.sha
-				if (fileSha) {
-					locationResp = await commitFileChanges('DELETE', 'Removed', branchName, item.data.vaccination.path, undefined, fileSha)
+				if(item.data.vaccination){
+					fileSha = item.data.vaccination.path in upsertedList ? upsertedList[item.data.vaccination.path].content.sha : item.data.vaccination?.sha
+					if (fileSha) {
+						locationResp = await commitFileChanges('DELETE', 'Removed', branchName, item.data.vaccination.path, undefined, fileSha)
+					}
 				}
 
-				//Strings
-				fileSha = item.data.strings.path in upsertedList ? upsertedList[item.data.strings.path].content.sha : item.data.strings?.sha
-				if (fileSha) {
-					locationResp = await commitFileChanges('DELETE', 'Removed', branchName, item.data.strings.path, undefined, fileSha)
+				if(item.data.strings){
+					//Strings
+					fileSha = item.data.strings.path in upsertedList ? upsertedList[item.data.strings.path].content.sha : item.data.strings?.sha
+
+					if (fileSha) {
+						locationResp = await commitFileChanges('DELETE', 'Removed', branchName, item.data.strings.path, undefined, fileSha)
+					}
 				}
 
 				// MD file
