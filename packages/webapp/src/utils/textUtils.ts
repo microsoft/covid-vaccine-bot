@@ -11,6 +11,8 @@ const configs = {
 
 
 export const toProperCase = (text: string): string => {
+	if (!text) return ''
+
 	const res = text
 		.replace(/_/g, ' ')
 		.toLowerCase()
