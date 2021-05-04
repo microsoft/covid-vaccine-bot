@@ -66,8 +66,9 @@ export default observer(function Locations() {
 		} else {
 			setBreadcrumbs(undefined)
 			setCurrentLocationTitle(null)
+			setCurrentLocationList(repoFileData)
 		}
-	}, [currentLocation, breadCrumbs.phase_overview, phaseOverviewText])
+	}, [currentLocation, breadCrumbs.phase_overview, phaseOverviewText,repoFileData])
 
 	useEffect(() => {
 		updateCurrentLocation()
