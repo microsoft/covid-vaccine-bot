@@ -327,7 +327,9 @@
 				"qualifier": "qualifier",
 				"translations": "translations"
 			}
-		}
+		},
+		"OnWorkingBranch": "There are no pending changes at this moment. Either there are no changes or it has already been saved previously.<br/><br/>You can review your change history <a href=\"https://github.com/{0}/{1}/commits/refs/heads/{2}?since={3}\" target=\"_blank\">here</a> before submitting your changes.",
+		"NoChangeList": "Unable to load pending changes currently."
 	},
 	"Translate": {
 		"title": "Translate",

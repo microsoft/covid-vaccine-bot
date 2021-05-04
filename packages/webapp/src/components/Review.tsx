@@ -18,6 +18,8 @@ import { getAppStore } from '../store/store'
 
 import './Review.scss'
 
+const githubRepoOwner = process.env.REACT_APP_REPO_OWNER
+const githubRepoName = process.env.REACT_APP_REPO_NAME
 export interface ReviewProp {
 	showDashboard: () => void
 }
@@ -79,6 +81,33 @@ export default observer(function Review(props: ReviewProp) {
 		[showDashboard]
 	)
 
+	const renderChangeLists = () => {
+		const items = getChanges()
+		if (items.length > 0) {
+			return (
+				<DetailsList
+					items={items}
+					columns={changesColumns}
+					setKey="set"
+					layoutMode={DetailsListLayoutMode.justified}
+					checkboxVisibility={2}
+				/>
+			)
+		}
+
+		if (state.userWorkingBranch) {
+			const sinceDate = new Date(parseInt(state.userWorkingBranch.split('-policy-')[1])).toISOString()
+			return (
+				 <div>{t('Review.OnWorkingBranch',true, githubRepoOwner as string, githubRepoName, state.userWorkingBranch, sinceDate)}</div>
+			)
+		}
+		else {
+			return (
+				<div>{t('Review.NoChangeList')}</div>
+			)
+		}
+	}
+
 	return (
 		<div className="reviewPageContainer">
 			<div className="bodyContainer">
@@ -108,13 +137,7 @@ export default observer(function Review(props: ReviewProp) {
 									value={formData.prDetails}
 									onChange={handleTextChange}
 								/>
-								<DetailsList
-									items={getChanges()}
-									columns={changesColumns}
-									setKey="set"
-									layoutMode={DetailsListLayoutMode.justified}
-									checkboxVisibility={2}
-								/>
+								{renderChangeLists()}
 								<PrimaryButton
 									text={t('Review.SubmitForm.submitText')}
 									onClick={() => {

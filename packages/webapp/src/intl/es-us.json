@@ -325,7 +325,9 @@
 				"qualifier": "calificador",
 				"translations": "traducciones"
 			}
-		}
+		},
+		"OnWorkingBranch": "No hay cambios pendientes en este momento. O no hay cambios o ya se ha guardado previamente.<br/><br/>Puede revisar su historial de cambios <a href=\"https://github.com/{0}/{1}/commits/refs/heads/{2}?since={3}\" target=\"_blank\">aquí</a> antes de enviar sus cambios.",
+		"NoChangeList": "No se pueden cargar los cambios pendientes actualmente."
 	},
 	"Translate": {
 		"title": "Traducir",
