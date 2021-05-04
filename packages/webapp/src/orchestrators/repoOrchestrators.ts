@@ -30,7 +30,8 @@ import {
 	setIsDataStale,
 	setSavingCommitsFlag,
 	setLocationData,
-	setLoadAllStringsData
+	setLoadAllStringsData,
+	updateRepoFileData
 } from '../mutators/repoMutators'
 import { getChanges } from '../selectors/changesSelectors'
 import { repoServices } from '../services/repoServices'
@@ -211,14 +212,8 @@ orchestrator(saveContinue, async () => {
 	if (resp.ok === false) {
 		handleError(resp)
 	} else {
-		resp = await repoServices('getRepoFileData', resp)
-		if (resp.ok === false) {
-			handleError(resp)
-		} else {
-			// latency :(
-			setInitRepoFileData(resp)
-			setPendingChanges(false)
-		}
+		updateRepoFileData(resp.updatedFiles)
+		setPendingChanges(false)
 	}
 
 	setSavingCommitsFlag(false)

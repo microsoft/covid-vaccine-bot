@@ -107,6 +107,7 @@ const commitChanges = async (
 ) => {
 	let branchLastCommitSha = ''
 	const { committedDeletes, pendingChangeList } = state
+	const upsertedList: any = {}
 
 	if (pendingChangeList) {
 		const { added, modified, deleted } = pendingChangeList
@@ -114,7 +115,6 @@ const commitChanges = async (
 
 		// Add and Modify
 		const upserted = [...added, ...modified].filter((item, idx, arr) => arr.findIndex(t => t.pathKey === item.pathKey) === idx)
-		const upsertedList: any = {}
 
 		for (const item of upserted) {
 			const skipFetch = !item.data.info?.path || committedDeletes.includes(item.data.info.path)
@@ -169,7 +169,7 @@ const commitChanges = async (
 		branchLastCommitSha = locationResp?.commit?.sha ?? branchLastCommitSha
 	}
 
-	return branchLastCommitSha
+	return { branchLastCommitSha, updatedFiles: upsertedList }
 }
 
 export const repoServices = async (

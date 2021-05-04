@@ -145,6 +145,39 @@ export const setInitRepoFileData = mutatorAction(
 	}
 )
 
+export const updateRepoFileData = mutatorAction(
+	'updateRepoFileData',
+	(data: any | undefined) => {
+		if (data) {
+			const store = getAppStore()
+			console.log(data)
+			Object.keys(data).forEach(key => {
+				const pathArray = key.split("/")
+				pathArray.splice(-1,1)
+
+				const currLocation = pathFind(store.repoFileData, pathArray)
+
+				if (key.endsWith('info.json')) {
+					currLocation.info.sha = data[key].content.sha
+					currLocation.info.url = data[key].content.git_url
+				}
+
+				if (key.endsWith('vaccination.json')) {
+					currLocation.vaccination.sha = data[key].content.sha
+					currLocation.vaccination.url = data[key].content.git_url
+				}
+
+				if (key.endsWith('.csv')) {
+					currLocation.strings.sha = data[key].content.sha
+					currLocation.strings.url = data[key].content.git_url
+				}
+			})
+
+			store.repoFileData = { ...store.repoFileData }
+		}
+	}
+)
+
 export const setLoadAllStringsData = mutatorAction(
 	'setLoadAllStringsData',
 	(data: any | undefined) => {
