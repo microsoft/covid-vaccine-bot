@@ -93,8 +93,8 @@ export const setCommittedDeletes = mutatorAction(
 		const store = getAppStore()
 		if (commits) {
 			const deletedFiles = commits
-				.filter((c: any) => c.commit.message.startsWith('deleted'))
-				.map((c: any) => c.commit.message.replace('deleted ', ''))
+				.filter((c: any) => c.commit.message.startsWith('Removed'))
+				.map((c: any) => c.commit.message.replace('Removed ', ''))
 
 			store.committedDeletes = deletedFiles
 		}
@@ -141,6 +141,8 @@ export const setInitRepoFileData = mutatorAction(
 				modified: [],
 				deleted: []
 			}
+
+			store.repoFileData = {...store.repoFileData}
 		}
 	}
 )
@@ -150,7 +152,6 @@ export const updateRepoFileData = mutatorAction(
 	(data: any | undefined) => {
 		if (data) {
 			const store = getAppStore()
-			console.log(data)
 			Object.keys(data).forEach(key => {
 				const pathArray = key.split("/")
 				pathArray.splice(-1,1)

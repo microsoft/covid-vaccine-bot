@@ -163,6 +163,11 @@ const commitChanges = async (
 				if (fileSha) {
 					locationResp = await commitFileChanges('DELETE', 'Removed', branchName, item.data.strings.path, undefined, fileSha)
 				}
+
+				// MD file
+				if (item.data?.desc_md) {
+					locationResp = await commitFileChanges('DELETE', 'Removed', branchName, item.data.desc_md.path, undefined, item.data.desc_md?.sha)
+				}
 			}
 		}
 
