@@ -1047,7 +1047,7 @@ export const removePhase = mutatorAction(
 
 export const updatePhase = mutatorAction(
 	'updatePhase',
-	(currentLocation: any) => {
+	(currentLocation: any, phaseId: string, phaseName:string) => {
 		const store = getAppStore()
 		store.pendingChanges = true
 
@@ -1069,6 +1069,12 @@ export const updatePhase = mutatorAction(
 		if (!currentLocation.vaccination.content?.activePhase) {
 			currentLocation.vaccination.content.activePhase = activePhase
 		}
+
+		const affectedPhase = currentLocation.vaccination.content.phases.find(
+					(phase: any) => phase.id === phaseId
+				)
+
+		affectedPhase.label = phaseName
 
 		const pathKey = pathArray.join('.')
 		const modifyKeyIdx = store.pendingChangeList.modified.findIndex((m: any) => m.pathKey === pathKey && m.section === 'phase')

@@ -116,13 +116,8 @@ export default observer(function LocationsPhaseList(
 					.toLowerCase()
 					.replace(` (${t('LocationsRegions.active')})`, '')
 					.trim()
-
-				const affectedPhase = currentLocation.vaccination.content.phases.find(
-					(phase: any) => phase.id === phaseId
-				)
-
-				affectedPhase.label = phaseData.name
-				updatePhase(currentLocation)
+									
+				updatePhase(currentLocation, phaseId, phaseData.name)
 			}
 			// Add Phase
 			else {
