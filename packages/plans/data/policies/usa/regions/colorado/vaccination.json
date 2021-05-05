@@ -9,7 +9,8 @@
 			"scrapeQuery": [
 				"section.col-sm-9"
 			]
-		}
+		},
+		"worflow": {}
 	},
 	"activePhase": "2",
 	"phases": [
@@ -23,5 +24,6 @@
 				}
 			]
 		}
-	]
+	],
+	"noPhaseLabel": false
 }
