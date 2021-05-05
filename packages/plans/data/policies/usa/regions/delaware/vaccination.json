@@ -21,7 +21,8 @@
 		"scheduling_phone": {
 			"url": "tel:1-833-643-1715",
 			"text": "c19.link/scheduling.phone.de"
-		}
+		},
+		"worflow": {}
 	},
 	"activePhase": "2",
 	"phases": [
@@ -36,5 +37,6 @@
 				}
 			]
 		}
-	]
+	],
+	"noPhaseLabel": false
 }
