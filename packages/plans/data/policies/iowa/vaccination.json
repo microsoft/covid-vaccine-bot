@@ -13,47 +13,6 @@
 	"activePhase": "2",
 	"phases": [
 		{
-			"id": "1a",
-			"qualifications": [
-				{
-					"question": "c19.eligibility.question/healthcare_worker"
-				},
-				{
-					"question": "c19.eligibility.question/long_term_care_resident.are"
-				}
-			]
-		},
-		{
-			"id": "1b",
-			"qualifications": [
-				{
-					"question": "c19.eligibility.question/healthcare_worker",
-					"moreInfoText": "c19.eligibility.moreinfo/healthcare_worker.ia.1b"
-				},
-				{
-					"question": "c19.eligibility.question/long_term_care_resident.are",
-					"moreInfoText": "c19.eligibility.moreinfo/long_term_care_resident.are.ia.1b"
-				},
-				{
-					"question": "c19.eligibility.question/essential_worker",
-					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.ia.1b",
-					"moreInfoUrl": "https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus/Vaccine/Information-for-the-Public"
-				},
-				{
-					"question": "c19.eligibility.question/age.65_up"
-				},
-				{
-					"question": "c19.eligibility.question/health.are_you_a_person",
-					"moreInfoText": "c19.eligibility.moreinfo/congregate.do.ia.1b"
-				},
-				{
-					"question": "c19.eligibility.question/health",
-					"moreInfoText": "c19.eligibility.moreinfo/health.ia.1b",
-					"moreInfoUrl": "https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html"
-				}
-			]
-		},
-		{
 			"id": "2",
 			"label": "2",
 			"qualifications": [
