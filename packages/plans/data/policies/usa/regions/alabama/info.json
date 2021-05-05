@@ -1,6 +1,6 @@
 {
 	"id": "alabama",
-	"name": "Alabama",
+	"name": "cdc/alabama/state_name",
 	"type": "state",
 	"metadata": {
 		"code_alpha": "AL",
