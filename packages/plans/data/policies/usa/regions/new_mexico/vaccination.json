@@ -21,7 +21,8 @@
 			"url": "tel:COVID-19 Vaccine Hotline",
 			"text": "c19.link/scheduling.phone.nm",
 			"description": "c19.link/scheduling.phone.description.nm"
-		}
+		},
+		"worflow": {}
 	},
 	"activePhase": "current_phase",
 	"noPhaseLabel": true,
