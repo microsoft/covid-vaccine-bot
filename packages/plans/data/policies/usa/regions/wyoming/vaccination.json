@@ -14,7 +14,8 @@
 			"url": "tel:800-438-5795",
 			"text": "c19.link/scheduling.phone.wy",
 			"description": "c19.link/scheduling.phone.description.wy"
-		}
+		},
+		"worflow": {}
 	},
 	"activePhase": "18_and_older",
 	"phases": [
@@ -36,5 +37,6 @@
 				}
 			]
 		}
-	]
+	],
+	"noPhaseLabel": false
 }
