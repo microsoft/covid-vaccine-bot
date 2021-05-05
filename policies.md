@@ -1320,61 +1320,6 @@ Please note that anyone younger than 18 must receive the Pfizer vaccine. It is t
 
 ## Maryland Active Phase (2b)
 
-* Are you a long term care resident or work in a long term care facility?
-* Do you work or live in a congregate setting?
-	* This includes assisted living, independent living, behavioral health and developmentally disabled group homes, and other congregate facilities
-* Are you classified as an essential worker?
-	* This includes: 
-All licensed, registered and certified health care providers
-Front line hospital staff
-Nursing home residents and staff
-Individuals with intellectual and developmental disabilities
-Assisted living, independent living, behavioral health and developmentally disabled group homes, and other congregate facilities
-Law enforcement and firefighters, EMS
-Education staff, including K-12 teachers, support staff and daycare providers
-Correctional health care staff and officers
-Public safety workers not covered in Phase 1A
-Health care workers not covered in Phase 1A, including but not limited to lab services, public health, vaccine manufacturing and other health care professions
-Front line judiciary staff
-Continuity of government
-Food/agriculture production, critical manufacturing, U.S. Postal Service, public mass transit, grocery store employees
-Veterinarians and support staff
-Clergy and other essential support for houses of worship (see [here](https://coronavirus.maryland.gov/pages/vaccine))
-* Are you age 60+?
-* Are you currently receiving hospital-based treatment and diagnosed with a high-risk medical condition?
-	* Individuals who are currently receiving hospital-based treatment, including in hospital outpatient centers, AND diagnosed with at least one of the following conditions:
-Cancer patients who are currently in active treatment
-End stage renal disease patients requiring hemodialysis
-Chronic Obstructive Pulmonary Disease (COPD)
-Solid organ transplant recipients
-Sickle cell disease patients
-Diabetic patients (Type 1 and Type 2)
-
-Individuals who are diagnosed with these medical conditions but are not currently receiving hospital-based treatment, including in hospital outpatient centers, will be eligible to receive the vaccine in Maryland's Phase 2 COVID-19 vaccine distribution. (see [here](https://coronavirus.maryland.gov/pages/vaccine))
-* Are you age 16+, and have a high-risk medical condition?
-	* This includes:
-- Cancer
-- Chronic kidney disease
-- Chronic lung diseases, including COPD (chronic obstructive pulmonary disease), asthma (moderate-to-severe), interstitial lung disease, cystic fibrosis, and pulmonary hypertension
-- Dementia or other neurological conditions
-- Diabetes (type 1 or type 2)
-- Down syndrome
-- Heart conditions (such as heart failure, coronary artery disease, cardiomyopathies or hypertension)
-- HIV infection
-- Immunocompromised state (weakened immune system)
-- Liver disease
-- Overweight and obesity
-- Pregnancy
-- Sickle cell disease or thalassemia
-- Smoking, current or former
-- Solid organ or blood stem cell transplant
-- Stroke or cerebrovascular disease, which affects blood flow to the brain
-- Substance use disorders (see [here](https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html))
-* Are you aged 16+ with disabilities and receiving SSI or SSDI benefits?
-	* Marylanders ages 16+ with disabilities who are receiving SSI or SSDI benefits, Maryland Medicaid EID individuals, Maryland Medicaid REM recipients, and Marylanders receiving TDAP benefits
-* Are you receiving long term services and supports through the state's Medicaid waiver or state plan services?
-	* This includes Marylanders receiving long term services and supports through the state's Medicaid waiver and state plan services
-
 # Massachusetts
 
 ## Massachusetts Links
