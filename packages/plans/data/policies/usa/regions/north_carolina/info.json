@@ -1,6 +1,6 @@
 {
 	"id": "north_carolina",
-	"name": "North Carolina",
+	"name": "cdc/north_carolina/state_name",
 	"type": "state",
 	"metadata": {
 		"code_alpha": "NC",

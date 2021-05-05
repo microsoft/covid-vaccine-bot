@@ -1,6 +1,6 @@
 {
 	"id": "michigan",
-	"name": "Michigan",
+	"name": "cdc/michigan/state_name",
 	"type": "state",
 	"metadata": {
 		"code_alpha": "MI",

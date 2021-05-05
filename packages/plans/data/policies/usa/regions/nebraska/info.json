@@ -1,6 +1,6 @@
 {
 	"id": "nebraska",
-	"name": "Nebraska",
+	"name": "cdc/nebraska/state_name",
 	"type": "state",
 	"metadata": {
 		"code_alpha": "NE",

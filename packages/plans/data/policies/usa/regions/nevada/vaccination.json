@@ -18,64 +18,6 @@
 	"activePhase": "age_16",
 	"phases": [
 		{
-			"id": "1a",
-			"qualifications": [
-				{
-					"question": "c19.eligibility.question/healthcare_worker",
-					"moreInfoText": "c19.eligibility.moreinfo/healthcare_worker.nv.1a"
-				},
-				{
-					"question": "c19.eligibility.question/housing.are_you"
-				},
-				{
-					"question": "c19.eligibility.question/health.are_you_a_person"
-				},
-				{
-					"question": "c19.eligibility.question/health",
-					"moreInfoUrl": "https://www.immunizenevada.org/underlying-conditions",
-					"moreInfoText": "c19.eligibility.moreinfo/health.nv.1a"
-				},
-				{
-					"question": "c19.eligibility.question/essential_worker",
-					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.nv.1a",
-					"moreInfoUrl": "https://www.immunizenevada.org/county-specific-covid-19-vaccine-plan"
-				},
-				{
-					"question": "c19.eligibility.question/age.65_up"
-				}
-			],
-			"label": "Age 65+ and essential workers"
-		},
-		{
-			"id": "55",
-			"label": "Age 55+ and essential workers",
-			"qualifications": [
-				{
-					"question": "c19.eligibility.question/healthcare_worker",
-					"moreInfoText": "c19.eligibility.moreinfo/healthcare_worker.nv.55"
-				},
-				{
-					"question": "c19.eligibility.question/housing.are_you"
-				},
-				{
-					"question": "c19.eligibility.question/health.are_you_a_person"
-				},
-				{
-					"question": "c19.eligibility.question/health",
-					"moreInfoUrl": "https://www.immunizenevada.org/underlying-conditions",
-					"moreInfoText": "c19.eligibility.moreinfo/health.nv.55"
-				},
-				{
-					"question": "c19.eligibility.question/essential_worker",
-					"moreInfoUrl": "https://www.immunizenevada.org/county-specific-covid-19-vaccine-plan",
-					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.nv.55"
-				},
-				{
-					"question": "c19.eligibility.question/age.55_up"
-				}
-			]
-		},
-		{
 			"id": "age_16",
 			"label": "Age 16+",
 			"qualifications": [

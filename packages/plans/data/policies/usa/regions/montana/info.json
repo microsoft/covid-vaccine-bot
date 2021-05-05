@@ -1,6 +1,6 @@
 {
 	"id": "montana",
-	"name": "Montana",
+	"name": "cdc/montana/state_name",
 	"type": "state",
 	"metadata": {
 		"code_alpha": "MT",

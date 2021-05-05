@@ -1,6 +1,6 @@
 {
 	"id": "rhode_island",
-	"name": "Rhode Island",
+	"name": "cdc/rhode_island/state_name",
 	"type": "state",
 	"metadata": {
 		"code_alpha": "RI",

@@ -1,6 +1,6 @@
 {
 	"id": "oregon",
-	"name": "Oregon",
+	"name": "cdc/oregon/state_name",
 	"type": "state",
 	"metadata": {
 		"code_alpha": "OR",

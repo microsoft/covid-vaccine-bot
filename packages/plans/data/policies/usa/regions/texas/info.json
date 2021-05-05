@@ -1,6 +1,6 @@
 {
 	"id": "texas",
-	"name": "Texas",
+	"name": "cdc/texas/state_name",
 	"type": "state",
 	"metadata": {
 		"code_alpha": "TX",

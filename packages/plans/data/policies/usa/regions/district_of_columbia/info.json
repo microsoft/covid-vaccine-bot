@@ -1,6 +1,6 @@
 {
 	"id": "district_of_columbia",
-	"name": "District of Columbia",
+	"name": "cdc/district_of_columbia/state_name",
 	"type": "territory",
 	"metadata": {
 		"code_alpha": "DC",

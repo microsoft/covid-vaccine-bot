@@ -1,6 +1,6 @@
 {
 	"id": "ohio",
-	"name": "Ohio",
+	"name": "cdc/ohio/state_name",
 	"type": "state",
 	"metadata": {
 		"code_alpha": "OH",

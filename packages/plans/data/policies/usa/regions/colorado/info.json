@@ -1,6 +1,6 @@
 {
 	"id": "colorado",
-	"name": "Colorado",
+	"name": "cdc/colorado/state_name",
 	"type": "state",
 	"metadata": {
 		"code_alpha": "CO",

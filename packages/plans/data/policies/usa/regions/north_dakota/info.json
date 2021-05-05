@@ -1,6 +1,6 @@
 {
 	"id": "north_dakota",
-	"name": "North Dakota",
+	"name": "cdc/north_dakota/state_name",
 	"type": "state",
 	"metadata": {
 		"code_alpha": "ND",

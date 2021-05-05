@@ -1,6 +1,6 @@
 {
 	"id": "vermont",
-	"name": "Vermont",
+	"name": "cdc/vermont/state_name",
 	"type": "state",
 	"metadata": {
 		"code_alpha": "VT",

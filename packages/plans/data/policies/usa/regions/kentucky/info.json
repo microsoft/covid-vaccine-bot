@@ -1,6 +1,6 @@
 {
 	"id": "kentucky",
-	"name": "Kentucky",
+	"name": "cdc/kentucky/state_name",
 	"type": "state",
 	"metadata": {
 		"code_alpha": "KY",

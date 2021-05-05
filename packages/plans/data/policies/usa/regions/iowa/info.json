@@ -1,6 +1,6 @@
 {
 	"id": "iowa",
-	"name": "Iowa",
+	"name": "cdc/iowa/state_name",
 	"type": "state",
 	"metadata": {
 		"code_alpha": "IA",

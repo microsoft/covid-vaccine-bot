@@ -1,6 +1,6 @@
 {
 	"id": "washington",
-	"name": "Washington",
+	"name": "cdc/washington/state_name",
 	"type": "state",
 	"metadata": {
 		"code_alpha": "WA",

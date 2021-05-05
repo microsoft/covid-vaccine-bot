@@ -1,6 +1,6 @@
 {
 	"id": "idaho",
-	"name": "Idaho",
+	"name": "cdc/idaho/state_name",
 	"type": "state",
 	"metadata": {
 		"code_alpha": "ID",

@@ -1,6 +1,6 @@
 {
 	"id": "west_virginia",
-	"name": "West Virginia",
+	"name": "cdc/west_virginia/state_name",
 	"type": "state",
 	"metadata": {
 		"code_alpha": "WV",

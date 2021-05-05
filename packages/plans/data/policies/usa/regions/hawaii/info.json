@@ -1,6 +1,6 @@
 {
 	"id": "hawaii",
-	"name": "Hawaii",
+	"name": "cdc/hawaii/state_name",
 	"type": "state",
 	"metadata": {
 		"code_alpha": "HI",

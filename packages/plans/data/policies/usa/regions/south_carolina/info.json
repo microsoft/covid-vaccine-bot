@@ -1,6 +1,6 @@
 {
 	"id": "south_carolina",
-	"name": "South Carolina",
+	"name": "cdc/south_carolina/state_name",
 	"type": "state",
 	"metadata": {
 		"code_alpha": "SC",

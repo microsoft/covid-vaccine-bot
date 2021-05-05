@@ -1,6 +1,6 @@
 {
 	"id": "louisiana",
-	"name": "Louisiana",
+	"name": "cdc/louisiana/state_name",
 	"type": "state",
 	"metadata": {
 		"code_alpha": "LA",

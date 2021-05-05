@@ -1,6 +1,6 @@
 {
 	"id": "new_york",
-	"name": "New York",
+	"name": "cdc/new_york/state_name",
 	"type": "state",
 	"metadata": {
 		"code_alpha": "NY",

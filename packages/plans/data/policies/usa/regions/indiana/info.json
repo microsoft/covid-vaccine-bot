@@ -1,6 +1,6 @@
 {
 	"id": "indiana",
-	"name": "Indiana",
+	"name": "cdc/indiana/state_name",
 	"type": "state",
 	"metadata": {
 		"code_alpha": "IN",

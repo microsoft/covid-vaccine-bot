@@ -1,6 +1,6 @@
 {
 	"id": "oklahoma",
-	"name": "Oklahoma",
+	"name": "cdc/oklahoma/state_name",
 	"type": "state",
 	"metadata": {
 		"code_alpha": "OK",

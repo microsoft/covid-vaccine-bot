@@ -1,6 +1,6 @@
 {
 	"id": "new_hampshire",
-	"name": "New Hampshire",
+	"name": "cdc/new_hampshire/state_name",
 	"type": "state",
 	"metadata": {
 		"code_alpha": "NH",

@@ -1,6 +1,6 @@
 {
 	"id": "florida",
-	"name": "Florida",
+	"name": "cdc/florida/state_name",
 	"type": "state",
 	"metadata": {
 		"code_alpha": "FL",

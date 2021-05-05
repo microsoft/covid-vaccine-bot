@@ -1,6 +1,6 @@
 {
 	"id": "massachusetts",
-	"name": "Massachusetts",
+	"name": "cdc/massachusetts/state_name",
 	"type": "state",
 	"metadata": {
 		"code_alpha": "MA",

@@ -1,6 +1,6 @@
 {
 	"id": "connecticut",
-	"name": "Connecticut",
+	"name": "cdc/connecticut/state_name",
 	"type": "state",
 	"metadata": {
 		"code_alpha": "CT",

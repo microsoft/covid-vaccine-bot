@@ -1,16 +1,16 @@
-String ID,en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th
-c19.link/scheduling.phone.mi,"888-535-6136",,,,"888-535-6136",,,,,,,,,,
+String ID,en-us,en-us-sms,en-us-voice,ko-kr,ko-kr-sms,ko-kr-voice,vi-vn,vi-vn-sms,vi-vn-voice,zh-cn,zh-cn-sms,zh-cn-voice,es-us,es-us-sms,es-us-voice,de-de,de-de-sms,de-de-voice,es-es,es-es-sms,es-es-voice,fi-fi,fi-fi-sms,fi-fi-voice,fr-fr,fr-fr-sms,fr-fr-voice,he-il,he-il-sms,he-il-voice,it-it,it-it-sms,it-it-voice,ja-jp,ja-jp-sms,ja-jp-voice,pt-pt,pt-pt-sms,pt-pt-voice,sv-se,sv-se-sms,sv-se-voice,th-th,th-th-sms,th-th-voice
+c19.link/scheduling.phone.mi,"888-535-6136",,,,,,,,,,,,"888-535-6136",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 c19.eligibility.moreinfo/long_term_care_resident.mi.1b,"This includes 
 - Skilled nursing facility residents
 - Psychiatric hospitals patients
 - Homes for aged residents
 - Adult foster care centers residents
-- Assisted living facility residents",,,,"Esto incluye 
+- Assisted living facility residents",,,,,,,,,,,,"Esto incluye 
 - Residentes cualificados de centros de enfermería
 - Pacientes de hospitales psiquiátricos
 - Hogares para residentes ancianos
 - Residentes de centros de acogida para adultos
-- Residentes de instalaciones de vida asistida",,,,,,,,,,
+- Residentes de instalaciones de vida asistida",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 c19.eligibility.moreinfo/long_term_care_resident.are.mi.1b,"This includes 
 - Skilled nursing facility residents
 - Psychiatric hospitals patients
@@ -18,14 +18,14 @@ c19.eligibility.moreinfo/long_term_care_resident.are.mi.1b,"This includes
 - Adult foster care centers residents
 - Assisted living facility residents
 
-As well as staff for these long-term care facilities and home health care workers caring for high risk clients with large patient loads (e.g. people with a tracheostomy/ventilator at home)",,,,"Esto incluye 
+As well as staff for these long-term care facilities and home health care workers caring for high risk clients with large patient loads (e.g. people with a tracheostomy/ventilator at home)",,,,,,,,,,,,"Esto incluye 
 - Residentes cualificados de centros de enfermería
 - Pacientes de hospitales psiquiátricos
 - Hogares para residentes ancianos
 - Residentes de centros de acogida para adultos
 - Residentes de instalaciones de vida asistida
 
-Así como personal para estos centros de atención a largo plazo y trabajadores de atención médica en el hogar que cuidan a clientes de alto riesgo con grandes cargas de pacientes (por ejemplo, personas con una traqueotomía / ventilador en casa)",,,,,,,,,,
+Así como personal para estos centros de atención a largo plazo y trabajadores de atención médica en el hogar que cuidan a clientes de alto riesgo con grandes cargas de pacientes (por ejemplo, personas con una traqueotomía / ventilador en casa)",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 c19.eligibility.moreinfo/essential_worker.mi.1b,"This includes prioritized frontline workers whose work role has frequent or intense exposure, and, due to the nature of the work, are not able to maintain social distance. For example, a first responder may have to physically touch other people in their response, and a child care provider cannot maintain social distance from children
 when caring for their physical needs. The specific prioritized categories are:
 - Pre-Kindergarten through high school teachers, support staff and child care
@@ -36,7 +36,7 @@ officers ,inspectors)
 - Workers in homeless shelters, congregate child care institutions, and adult
 and child protective services
 
-Other frontline essential workers in sectors essential to the functioning of society and are at substantially higher risk of exposure to SARS-CoV-2 because their work-related duties must be performed on site and involve being in close proximity (i.e. within 6 feet) to the public or to coworkers are also eligible, including frontline essential workers in the food processing and agricultural industries.",,,,"Esto incluye a los trabajadores prioritarios de primera línea cuya función laboral tiene una exposición frecuente o intensa, y, debido a la naturaleza del trabajo, no son capaces de mantener la distancia social. Por ejemplo, un socorrista puede tener que tocar físicamente a otras personas en su respuesta, y un proveedor de cuidado infantil no puede mantener la distancia social de los niños
+Other frontline essential workers in sectors essential to the functioning of society and are at substantially higher risk of exposure to SARS-CoV-2 because their work-related duties must be performed on site and involve being in close proximity (i.e. within 6 feet) to the public or to coworkers are also eligible, including frontline essential workers in the food processing and agricultural industries.",,,,,,,,,,,,"Esto incluye a los trabajadores prioritarios de primera línea cuya función laboral tiene una exposición frecuente o intensa, y, debido a la naturaleza del trabajo, no son capaces de mantener la distancia social. Por ejemplo, un socorrista puede tener que tocar físicamente a otras personas en su respuesta, y un proveedor de cuidado infantil no puede mantener la distancia social de los niños
 cuando se preocupan por sus necesidades físicas. Las categorías prioritarias específicas son:
 - Pre-Kindergarten a través de maestros de secundaria, personal de apoyo y cuidado de niños
 trabajadores que generalmente tienen contacto directo con los niños
@@ -46,8 +46,8 @@ oficiales, inspectores)
 - Los trabajadores de los refugios para personas sin hogar, las instituciones de cuidado infantil congregadas y los adultos
 y servicios de protección infantil
 
-Otros trabajadores esenciales de primera línea en sectores esenciales para el funcionamiento de la sociedad y corren un riesgo sustancialmente mayor de exposición al SRAS-CoV-2 porque sus funciones relacionadas con el trabajo deben realizarse in situ e implican estar cerca (es decir, a menos de 6 pies) al público o a los compañeros de trabajo también son elegibles, incluidos los trabajadores esenciales de primera línea en las industrias alimentaria y agrícola.",,,,,,,,,,
-c19.eligibility.moreinfo/congregate.do.mi.1b,"This includes homeless shelters, congregate child care institutions, and adult and child protective services",,,,"Esto incluye refugios para personas sin hogar, instituciones de cuidado infantil congregadas y servicios de protección para adultos e hijos",,,,,,,,,,
+Otros trabajadores esenciales de primera línea en sectores esenciales para el funcionamiento de la sociedad y corren un riesgo sustancialmente mayor de exposición al SRAS-CoV-2 porque sus funciones relacionadas con el trabajo deben realizarse in situ e implican estar cerca (es decir, a menos de 6 pies) al público o a los compañeros de trabajo también son elegibles, incluidos los trabajadores esenciales de primera línea en las industrias alimentaria y agrícola.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.eligibility.moreinfo/congregate.do.mi.1b,"This includes homeless shelters, congregate child care institutions, and adult and child protective services",,,,,,,,,,,,"Esto incluye refugios para personas sin hogar, instituciones de cuidado infantil congregadas y servicios de protección para adultos e hijos",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 c19.eligibility.moreinfo/health.mi.1c," Individuals age 16 to 64 years living with disabilities*, substance use disorders, severe mental illness, and/or with COPD, hypertension, chronic kidney disease, heart disease, diabetes, obesity or other conditions that puts them at high risk of negative COVID-19 outcome. These include:
 Cancer
 Chronic kidney disease
@@ -73,7 +73,7 @@ Pulmonary fibrosis (having damaged or scarred lung tissues)
 Thalassemia (a type of blood disorder)
 Type 1 diabetes mellitus
 
-Group C: Caregiver family members and guardians age 16 and over of children with special health care needs, including any physical, developmental, mental, sensory, behavioral, cognitive, or emotional impairment or limiting condition that requires medical management, health care intervention and/or use of specialized services or programs. The condition may be congenital, developmental, or acquired through disease, trauma, or environmental cause and may impose limitations in performing daily self-maintenance activities or substantial limitations in a major life activity.",,,," Individuos de 16 a 64 años que viven con discapacidades*, trastornos por consumo de sustancias, enfermedad mental grave y/o con EPOC, hipertensión, enfermedad renal crónica, enfermedades cardíacas, diabetes, obesidad u otras afecciones que los ponen en alto riesgo de resultado negativo de COVID-19. Estos incluyen:
+Group C: Caregiver family members and guardians age 16 and over of children with special health care needs, including any physical, developmental, mental, sensory, behavioral, cognitive, or emotional impairment or limiting condition that requires medical management, health care intervention and/or use of specialized services or programs. The condition may be congenital, developmental, or acquired through disease, trauma, or environmental cause and may impose limitations in performing daily self-maintenance activities or substantial limitations in a major life activity.",,,,,,,,,,,," Individuos de 16 a 64 años que viven con discapacidades*, trastornos por consumo de sustancias, enfermedad mental grave y/o con EPOC, hipertensión, enfermedad renal crónica, enfermedades cardíacas, diabetes, obesidad u otras afecciones que los ponen en alto riesgo de resultado negativo de COVID-19. Estos incluyen:
 Cáncer
 Enfermedad renal crónica
 EPOC (enfermedad pulmonar obstructiva crónica)
@@ -97,7 +97,7 @@ Fibrosis pulmonar (tener tejidos pulmonares dañados o marcados)
 Talasemia (un tipo de trastorno sanguíneo)
 Diabetes mellitus tipo 1
 
-Grupo C: Familiares y tutores cuidadores de 16 años o más de niños con necesidades especiales de atención médica, incluyendo cualquier deterioro físico, de desarrollo, mental, sensorial, conductual, cognitivo o emocional o condición limitante que requiera manejo médico, intervención de atención médica y/o uso de servicios o programas especializados. La afección puede ser congénita, de desarrollo o adquirida a través de enfermedades, traumas o causas ambientales y puede imponer limitaciones en la realización de actividades diarias de auto-mantenimiento o limitaciones sustanciales en una actividad importante de la vida.",,,,,,,,,,
+Grupo C: Familiares y tutores cuidadores de 16 años o más de niños con necesidades especiales de atención médica, incluyendo cualquier deterioro físico, de desarrollo, mental, sensorial, conductual, cognitivo o emocional o condición limitante que requiera manejo médico, intervención de atención médica y/o uso de servicios o programas especializados. La afección puede ser congénita, de desarrollo o adquirida a través de enfermedades, traumas o causas ambientales y puede imponer limitaciones en la realización de actividades diarias de auto-mantenimiento o limitaciones sustanciales en una actividad importante de la vida.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 c19.eligibility.moreinfo/long_term_care_resident.are.mi.1c,"Group A: Vaccinate workers who have direct contact with large number of vulnerable residents. Note: this would include staff who come in and out of the buildings.
 - Skilled nursing facility staff
 - Psychiatric hospital staff
@@ -111,7 +111,7 @@ Group B: Vaccinate vulnerable residents in long-term care facilities.
 - Psychiatric hospitals patients
 - Homes for aged residents
 - Adult foster care centers residents
-- Assisted living facility residents",,,,"Grupo A: Vacunar a los trabajadores que tienen contacto directo con un gran número de residentes vulnerables. Nota: esto incluiría personal que entra y sale de los edificios.
+- Assisted living facility residents",,,,,,,,,,,,"Grupo A: Vacunar a los trabajadores que tienen contacto directo con un gran número de residentes vulnerables. Nota: esto incluiría personal que entra y sale de los edificios.
 - Personal cualificado de las instalaciones de enfermería
 - Personal psiquiátrico del hospital
 - Hogares para el personal envejecido
@@ -124,7 +124,7 @@ Grupo B: Vacunar a los residentes vulnerables en centros de atención a largo pl
 - Pacientes de hospitales psiquiátricos
 - Hogares para residentes ancianos
 - Residentes de centros de acogida para adultos
-- Residentes de instalaciones de vida asistida",,,,,,,,,,
+- Residentes de instalaciones de vida asistida",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 c19.eligibility.moreinfo/essential_worker.mi.1c,"Prioritized frontline workers whose work role has frequent or intense exposure, and, due to the nature of the work, are not able to maintain social distance. For example, a first responder may have to physically touch other people in their response, and a child care provider cannot maintain social distance from children when caring for their physical needs. Per CDC guidance, vaccinating staff and incarcerated/detained persons is recommended because of shared increased risk of disease. The specific prioritized categories are:
 - Pre-Kindergarten through high school teachers, support staff and child care workers who usually have direct contact with children
 - First responders not covered in Phase 1A (e.g., firefighters, police, conservation officers, inspectors)
@@ -139,7 +139,7 @@ Other frontline essential workers in sectors essential to the functioning of soc
 - Grocery store workers
 - U.S. Postal Service workers
 - Workers with unique skill sets not covered above, such as non-hospital
-laboratories ",,,,"Trabajadores prioritarios de primera línea cuya función laboral tiene una exposición frecuente o intensa y, debido a la naturaleza del trabajo, no son capaces de mantener la distancia social. Por ejemplo, un socorrista puede tener que tocar físicamente a otras personas en su respuesta, y un proveedor de cuidado infantil no puede mantener la distancia social de los niños al cuidar sus necesidades físicas. Según las directrices de los CDC, se recomienda vacunar al personal y a las personas encarceladas/detenidas debido a un mayor riesgo compartido de enfermedad. Las categorías prioritarias específicas son:
+laboratories ",,,,,,,,,,,,"Trabajadores prioritarios de primera línea cuya función laboral tiene una exposición frecuente o intensa y, debido a la naturaleza del trabajo, no son capaces de mantener la distancia social. Por ejemplo, un socorrista puede tener que tocar físicamente a otras personas en su respuesta, y un proveedor de cuidado infantil no puede mantener la distancia social de los niños al cuidar sus necesidades físicas. Según las directrices de los CDC, se recomienda vacunar al personal y a las personas encarceladas/detenidas debido a un mayor riesgo compartido de enfermedad. Las categorías prioritarias específicas son:
 - Pre-Kindergarten a través de profesores de secundaria, personal de apoyo y trabajadores de cuidado infantil que por lo general tienen contacto directo con los niños
 - Socorristas no cubiertos en fase 1A (por ejemplo, bomberos, policías, oficiales de conservación, inspectores)
 - Trabajadores correccionales (por ejemplo, personal en prisiones, cárceles, centros de justicia juvenil) e individuos encarcelados o detenidos, debido a un mayor riesgo compartido de enfermedad y la dificultad para controlar los brotes en los centros correccionales
@@ -153,4 +153,4 @@ Otros trabajadores esenciales de primera línea en sectores esenciales para el f
 - Trabajadores de supermercados
 - Trabajadores del Servicio Postal de ee.UU.
 - Trabajadores con conjuntos de habilidades únicos no cubiertos anteriormente, como
-Laboratorios ",,,,,,,,,,
+Laboratorios ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

@@ -1,6 +1,6 @@
 {
 	"id": "us_virgin_islands",
-	"name": "Virgin Islands",
+	"name": "cdc/us_virgin_islands/state_name",
 	"type": "territory",
 	"metadata": {
 		"code_alpha": "VI",

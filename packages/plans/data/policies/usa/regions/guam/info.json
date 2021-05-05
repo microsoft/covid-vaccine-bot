@@ -1,6 +1,6 @@
 {
 	"id": "guam",
-	"name": "Guam",
+	"name": "cdc/guam/state_name",
 	"type": "territory",
 	"metadata": {
 		"code_alpha": "GU",

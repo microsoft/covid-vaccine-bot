@@ -1,6 +1,6 @@
 {
 	"id": "georgia",
-	"name": "Georgia",
+	"name": "cdc/georgia/state_name",
 	"type": "state",
 	"metadata": {
 		"code_alpha": "GA",

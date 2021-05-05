@@ -1,6 +1,6 @@
 {
 	"id": "delaware",
-	"name": "Delaware",
+	"name": "cdc/delaware/state_name",
 	"type": "state",
 	"metadata": {
 		"code_alpha": "DE",

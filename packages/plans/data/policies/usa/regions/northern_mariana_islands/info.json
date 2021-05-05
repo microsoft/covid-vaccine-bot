@@ -1,6 +1,6 @@
 {
 	"id": "northern_mariana_islands",
-	"name": "Northern Mariana Islands",
+	"name": "cdc/northern_mariana_islands/state_name",
 	"type": "territory",
 	"metadata": {
 		"code_alpha": "MP",

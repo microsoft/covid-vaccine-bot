@@ -1,6 +1,6 @@
 {
 	"id": "pennsylvania",
-	"name": "Pennsylvania",
+	"name": "cdc/pennsylvania/state_name",
 	"type": "state",
 	"metadata": {
 		"code_alpha": "PA",

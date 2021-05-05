@@ -1,6 +1,6 @@
 {
 	"id": "tennessee",
-	"name": "Tennessee",
+	"name": "cdc/tennessee/state_name",
 	"type": "state",
 	"metadata": {
 		"code_alpha": "TN",

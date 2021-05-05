@@ -1,6 +1,6 @@
 {
 	"id": "maine",
-	"name": "Maine",
+	"name": "cdc/maine/state_name",
 	"type": "state",
 	"metadata": {
 		"code_alpha": "ME",
