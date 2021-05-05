@@ -1,8 +1,8 @@
-String ID,en-us,en-us-sms,en-us-voice,ko-kr,ko-kr-sms,ko-kr-voice,vi-vn,vi-vn-sms,vi-vn-voice,zh-cn,zh-cn-sms,zh-cn-voice,es-us,es-us-sms,es-us-voice,de-de,de-de-sms,de-de-voice,es-es,es-es-sms,es-es-voice,fi-fi,fi-fi-sms,fi-fi-voice,fr-fr,fr-fr-sms,fr-fr-voice,he-il,he-il-sms,he-il-voice,it-it,it-it-sms,it-it-voice,ja-jp,ja-jp-sms,ja-jp-voice,pt-pt,pt-pt-sms,pt-pt-voice,sv-se,sv-se-sms,sv-se-voice,th-th,th-th-sms,th-th-voice
-c19.eligibility.question/health.1a.dc.inpatient_psychiatric,"Are you an inpatient psychiatric patient?",,,,,,,,,,,,"¿Eres un paciente psiquiátrico hospitalizado?",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-c19.eligibility.question/congregate.dc,"Do you live in an intermediate care facility, a group home, or another high-risk congregate setting?",,,,,,,,,,,,"¿Vive en un centro de atención intermedia, en una casa de grupo u otro entorno congregado de alto riesgo?",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-c19.link/scheduling.phone.dc,"1-855-363-0333",,,,,,,,,,,,"1-855-363-0333",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-c19.link/scheduling.phone.description.dc,"COVID-19 Call Center",,,,,,,,,,,,"Centro de llamadas COVID-19",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+String ID,en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th
+c19.eligibility.question/health.1a.dc.inpatient_psychiatric,"Are you an inpatient psychiatric patient?",,,,"¿Eres un paciente psiquiátrico hospitalizado?",,,,,,,,,,
+c19.eligibility.question/congregate.dc,"Do you live in an intermediate care facility, a group home, or another high-risk congregate setting?",,,,"¿Vive en un centro de atención intermedia, en una casa de grupo u otro entorno congregado de alto riesgo?",,,,,,,,,,
+c19.link/scheduling.phone.dc,"1-855-363-0333",,,,"1-855-363-0333",,,,,,,,,,
+c19.link/scheduling.phone.description.dc,"COVID-19 Call Center",,,,"Centro de llamadas COVID-19",,,,,,,,,,
 c19.eligibility.moreinfo/health.dc.1b," * Asthma, Chronic Obstructive Pulmonary Disease (COPD), and other Chronic Lung Disease
  * Bone Marrow and Solid Organ Transplantation
  * Cancer
@@ -22,7 +22,7 @@ c19.eligibility.moreinfo/health.dc.1b," * Asthma, Chronic Obstructive Pulmonary 
  * Pregnancy
  * Severe Genetic Disorders
  * Sickle Cell Disease
- * Thalassemia",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ * Thalassemia",,,,,,,,,,,,,,
 c19.eligibility.moreinfo/essential_worker.dc.1b,"This includes:
 - Members of the Metropolitan Police Department
 - Department of Corrections Employees
@@ -38,9 +38,9 @@ c19.eligibility.moreinfo/essential_worker.dc.1b,"This includes:
 - Staff working in food service
 - Essential employees in local government agencies
 - Essential employees of public utilities
-- Individuals working in commercial and residential property maintenance and environmental services",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-c19.eligibility.moreinfo/congregate.dc.dc.1b,"This also includes individuals in in-patient psychiatric care facilities and those who are currently incarcerated. ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-c19.eligibility.moreinfo/long_term_care_resident.dc.1c_tier_2,"This includes residents of long-term and intermediate care facilities and residents of community residential facilities/group homes",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+- Individuals working in commercial and residential property maintenance and environmental services",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/congregate.dc.dc.1b,"This also includes individuals in in-patient psychiatric care facilities and those who are currently incarcerated. ",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/long_term_care_resident.dc.1c_tier_2,"This includes residents of long-term and intermediate care facilities and residents of community residential facilities/group homes",,,,,,,,,,,,,,
 c19.eligibility.moreinfo/essential_worker.dc.1c_tier_2,"This includes:
 - Members of the Metropolitan Police Department
 - Department of Corrections Employees
@@ -59,8 +59,8 @@ c19.eligibility.moreinfo/essential_worker.dc.1c_tier_2,"This includes:
 - Individuals working in commercial and residential property maintenance and environmental services
 - Individuals working in non-public transit transportation services (i.e. for hire vehicles, ride share)
 - Individuals working in logistics/delivery/courier services
-- Essential employees working in media and mass communications",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-c19.eligibility.moreinfo/congregate.dc.dc.1c_tier_2,"This also includes individuals in in-patient psychiatric care facilities and those who are currently incarcerated. ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+- Essential employees working in media and mass communications",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/congregate.dc.dc.1c_tier_2,"This also includes individuals in in-patient psychiatric care facilities and those who are currently incarcerated. ",,,,,,,,,,,,,,
 c19.eligibility.moreinfo/health.dc.1c_tier_2," * Asthma, Chronic Obstructive Pulmonary Disease (COPD), and other Chronic Lung Disease
  * Bone Marrow and Solid Organ Transplantation
  * Cancer
@@ -80,4 +80,4 @@ c19.eligibility.moreinfo/health.dc.1c_tier_2," * Asthma, Chronic Obstructive Pul
  * Pregnancy
  * Severe Genetic Disorders
  * Sickle Cell Disease
- * Thalassemia",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ * Thalassemia",,,,,,,,,,,,,,
