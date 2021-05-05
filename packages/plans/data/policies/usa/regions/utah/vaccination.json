@@ -12,7 +12,8 @@
 		},
 		"eligibility": {
 			"url": "https://coronavirus.utah.gov/vaccine-distribution/#eligibility"
-		}
+		},
+		"worflow": {}
 	},
 	"activePhase": "16_and_older",
 	"phases": [
@@ -25,5 +26,6 @@
 				}
 			]
 		}
-	]
+	],
+	"noPhaseLabel": false
 }
