@@ -19,7 +19,8 @@
 		"scheduling_phone": {
 			"url": "tel:855-722-7878",
 			"text": "c19.link/scheduling.phone.vt"
-		}
+		},
+		"worflow": {}
 	},
 	"activePhase": "2",
 	"phases": [
@@ -32,5 +33,6 @@
 				}
 			]
 		}
-	]
+	],
+	"noPhaseLabel": false
 }
