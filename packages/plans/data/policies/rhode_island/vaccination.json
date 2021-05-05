@@ -19,46 +19,6 @@
 	"activePhase": "current",
 	"phases": [
 		{
-			"id": "1a",
-			"qualifications": [
-				{
-					"question": "c19.eligibility.question/healthcare_worker"
-				},
-				{
-					"question": "c19.eligibility.question/long_term_care_resident"
-				},
-				{
-					"question": "c19.eligibility.question/congregate.do"
-				},
-				{
-					"question": "c19.eligibility.question/essential_worker.are"
-				},
-				{
-					"question": "c19.eligibility.question/age.are_you"
-				},
-				{
-					"question": "c19.eligibility.question/essential_worker.are_you",
-					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.are_you.ri.1a"
-				},
-				{
-					"question": "c19.eligibility.question/age.are_you_age",
-					"moreInfoText": "c19.eligibility.moreinfo/age.are_you_age.ri.1a",
-					"moreInfoUrl": "https://health.ri.gov/publications/guidelines/COVID19-underlying-conditions.pdf"
-				},
-				{
-					"question": "c19.eligibility.question/people_of_color.is",
-					"moreInfoUrl": "https://covid.ri.gov/vaccination/rhode-islands-hard-hit-community-vaccination-strategy",
-					"moreInfoText": "c19.eligibility.moreinfo/people_of_color.is.ri.1a"
-				},
-				{
-					"question": "c19.eligibility.question/health.are_you_homebound",
-					"moreInfoText": "c19.eligibility.moreinfo/health.are_you_homebound.ri.1a",
-					"moreInfoUrl": "http://bit.ly/homeboundvax"
-				}
-			],
-			"label": "Previous"
-		},
-		{
 			"id": "current",
 			"label": "Current",
 			"qualifications": [

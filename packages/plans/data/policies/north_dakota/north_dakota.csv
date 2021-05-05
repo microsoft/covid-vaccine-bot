@@ -1,8 +1,8 @@
-String ID,en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th
-c19.eligibility.question/essential_worker.1b.nd,"Are you a K-12 personnel, a preschool worker, or a child-care worker?",,,,"¿Es usted un personal de K-12, un trabajador preescolar o un trabajador de cuidado infantil?",,,,,,,,,,
-c19.eligibility.question/health.1b.nd,"Are you age 16+ with 2 or more high-risk conditions?",,,,"¿Tiene más de 16 años con 2 o más condiciones de alto riesgo?",,,,,,,,,,
-c19.link/scheduling.phone.nd,"701-328-2372",,,,"701-328-2372",,,,,,,,,,
-c19.link/scheduling.phone.description.nd,"North Dakota Department of Health",,,,"Departamento de Salud de Dakota del Norte",,,,,,,,,,
+String ID,en-us,en-us-sms,en-us-voice,ko-kr,ko-kr-sms,ko-kr-voice,vi-vn,vi-vn-sms,vi-vn-voice,zh-cn,zh-cn-sms,zh-cn-voice,es-us,es-us-sms,es-us-voice,de-de,de-de-sms,de-de-voice,es-es,es-es-sms,es-es-voice,fi-fi,fi-fi-sms,fi-fi-voice,fr-fr,fr-fr-sms,fr-fr-voice,he-il,he-il-sms,he-il-voice,it-it,it-it-sms,it-it-voice,ja-jp,ja-jp-sms,ja-jp-voice,pt-pt,pt-pt-sms,pt-pt-voice,sv-se,sv-se-sms,sv-se-voice,th-th,th-th-sms,th-th-voice
+c19.eligibility.question/essential_worker.1b.nd,"Are you a K-12 personnel, a preschool worker, or a child-care worker?",,,,,,,,,,,,"¿Es usted un personal de K-12, un trabajador preescolar o un trabajador de cuidado infantil?",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.eligibility.question/health.1b.nd,"Are you age 16+ with 2 or more high-risk conditions?",,,,,,,,,,,,"¿Tiene más de 16 años con 2 o más condiciones de alto riesgo?",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.nd,"701-328-2372",,,,,,,,,,,,"701-328-2372",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.description.nd,"North Dakota Department of Health",,,,,,,,,,,,"Departamento de Salud de Dakota del Norte",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 c19.eligibility.moreinfo/health.1b.nd.nd.1b,"Adults of any age with the following conditions are at increased risk of severe illness from the virus that causes COVID-19:
 
  * Cancer
@@ -16,7 +16,7 @@ c19.eligibility.moreinfo/health.1b.nd.nd.1b,"Adults of any age with the followin
  * Pregnancy
  * Sickle cell disease
  * Smoking
- * Type 2 diabetes mellitus",,,,"Los adultos de cualquier edad con las siguientes afecciones tienen un mayor riesgo de enfermedad grave por el virus que causa COVID-19:
+ * Type 2 diabetes mellitus",,,,,,,,,,,,"Los adultos de cualquier edad con las siguientes afecciones tienen un mayor riesgo de enfermedad grave por el virus que causa COVID-19:
 
 * Cáncer
  * Enfermedad renal crónica
@@ -28,7 +28,7 @@ c19.eligibility.moreinfo/health.1b.nd.nd.1b,"Adults of any age with the followin
  * Embarazo
  * Enfermedad de células falciformes
  * Fumar
- * Diabetes mellitus tipo 2",,,,,,,,,,
+ * Diabetes mellitus tipo 2",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 c19.eligibility.moreinfo/health.nd.1c,"Adults of any age with the following conditions are at increased risk of severe illness from the virus that causes COVID-19:
 
  * Cancer
@@ -42,7 +42,7 @@ c19.eligibility.moreinfo/health.nd.1c,"Adults of any age with the following cond
  * Pregnancy
  * Sickle cell disease
  * Smoking
- * Type 2 diabetes mellitus",,,,"Los adultos de cualquier edad con las siguientes afecciones tienen un mayor riesgo de enfermedad grave por el virus que causa COVID-19:
+ * Type 2 diabetes mellitus",,,,,,,,,,,,"Los adultos de cualquier edad con las siguientes afecciones tienen un mayor riesgo de enfermedad grave por el virus que causa COVID-19:
 
 * Cáncer
  * Enfermedad renal crónica
@@ -54,8 +54,8 @@ c19.eligibility.moreinfo/health.nd.1c,"Adults of any age with the following cond
  * Embarazo
  * Enfermedad de células falciformes
  * Fumar
- * Diabetes mellitus tipo 2",,,,,,,,,,
-c19.eligibility.moreinfo/essential_worker.are_you_a_transportation.nd.1c,"Public transit, including bus, taxi, ride-share",,,,"Transporte público, incluyendo autobús, taxi, ride-share",,,,,,,,,,
+ * Diabetes mellitus tipo 2",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.eligibility.moreinfo/essential_worker.are_you_a_transportation.nd.1c,"Public transit, including bus, taxi, ride-share",,,,,,,,,,,,"Transporte público, incluyendo autobús, taxi, ride-share",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 c19.eligibility.moreinfo/essential_worker.nd.1c,"This list includes:
 First responders
 Child care workers
@@ -70,6 +70,6 @@ Free standing clinical laundries
 Public transit, including bus, taxi, ride-share
 Blood bank workers not previously vaccinated
 Information Technology
-All other essential workers per Cybersecurity and Infrastructure Security Agency (CISA)",,,,,,,,,,,,,,
-c19.eligibility.moreinfo/congregate.do.nd.1c,"i.e., corrections, group homes, treatment centers, homeless shelters, etc.",,,,,,,,,,,,,,
-c19.eligibility.moreinfo/age.16_up.nd.2,"All people 16+ (for Pfizer only) and 18+ (for all vaccines) are eligible in North Dakota. However, some vaccination sites are currently only serving those 18+ or essential workers. Please confirm your eligibility matches that of the location where you're signing up ",,,,,,,,,,,,,,
+All other essential workers per Cybersecurity and Infrastructure Security Agency (CISA)",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.eligibility.moreinfo/congregate.do.nd.1c,"i.e., corrections, group homes, treatment centers, homeless shelters, etc.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.eligibility.moreinfo/age.16_up.nd.2,"All people 16+ (for Pfizer only) and 18+ (for all vaccines) are eligible in North Dakota. However, some vaccination sites are currently only serving those 18+ or essential workers. Please confirm your eligibility matches that of the location where you're signing up ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

@@ -1,5 +1,5 @@
-String ID,en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th
-c19.eligibility.question/essential_worker.1b.la,"Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, healthcare workers, security personnel, USPS, manufacturing, grocery stores, public transit, education, or child care.",,,,"¿Eres un trabajador esencial de primera línea? Esto incluye socorristas; oficiales de correccionales; y trabajadores del sector alimentario y agrícola, trabajadores de la salud, personal de seguridad, USPS, manufactura, supermercados, transporte público, educación o cuidado de niños.",,,,,,,,,,
+String ID,en-us,en-us-sms,en-us-voice,ko-kr,ko-kr-sms,ko-kr-voice,vi-vn,vi-vn-sms,vi-vn-voice,zh-cn,zh-cn-sms,zh-cn-voice,es-us,es-us-sms,es-us-voice,de-de,de-de-sms,de-de-voice,es-es,es-es-sms,es-es-voice,fi-fi,fi-fi-sms,fi-fi-voice,fr-fr,fr-fr-sms,fr-fr-voice,he-il,he-il-sms,he-il-voice,it-it,it-it-sms,it-it-voice,ja-jp,ja-jp-sms,ja-jp-voice,pt-pt,pt-pt-sms,pt-pt-voice,sv-se,sv-se-sms,sv-se-voice,th-th,th-th-sms,th-th-voice
+c19.eligibility.question/essential_worker.1b.la,"Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, healthcare workers, security personnel, USPS, manufacturing, grocery stores, public transit, education, or child care.",,,,,,,,,,,,"¿Eres un trabajador esencial de primera línea? Esto incluye socorristas; oficiales de correccionales; y trabajadores del sector alimentario y agrícola, trabajadores de la salud, personal de seguridad, USPS, manufactura, supermercados, transporte público, educación o cuidado de niños.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 c19.eligibility.moreinfo/essential_worker.la.1c,"Eligible workers include:
 Ambulatory and outpatient providers and staff
 Dialysis providers
@@ -42,7 +42,7 @@ Public safety engineers and other workers
 Transportation workers including river pilots
 Veterinarians and support staff
 Water and wastewater workers
-Waste management workers",,,,"Los trabajadores elegibles incluyen:
+Waste management workers",,,,,,,,,,,,"Los trabajadores elegibles incluyen:
 Proveedores ambulatorios y ambulatorios y personal
 Proveedores de diálisis
 Proveedores de salud conductual y personal
@@ -84,7 +84,7 @@ Ingenieros de seguridad pública y otros trabajadores
 Trabajadores del transporte, incluidos los pilotos de río
 Veterinarios y personal de apoyo
 Trabajadores de agua y aguas residuales
-Trabajadores de gestión de residuos",,,,,,,,,,
+Trabajadores de gestión de residuos",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 c19.eligibility.moreinfo/health.are_you_age.la.1c,"People 55-64 with at least one of the conditions listed by the CDC as placing them at an “increased risk of severe illness from the virus that causes COVID-19."" 
 Cancer
 Chronic kidney disease
@@ -101,7 +101,7 @@ Type 2 diabetes mellitus
 
 Persons with the following qualifying underlying medical conditions are advised to complete the Louisiana COVID-19 Vaccine Attestation Form before their appointment to receive the vaccine (see link)
 
-",,,,"Personas de 55 a 64 años con al menos una de las condiciones enumeradas por los CDC como la colocación de un ""mayor riesgo de enfermedad grave por el virus que causa COVID-19."" 
+",,,,,,,,,,,,"Personas de 55 a 64 años con al menos una de las condiciones enumeradas por los CDC como la colocación de un ""mayor riesgo de enfermedad grave por el virus que causa COVID-19."" 
 Cáncer
 Enfermedad renal crónica
 EPOC (enfermedad pulmonar obstructiva crónica)
@@ -116,7 +116,7 @@ Diabetes mellitus tipo 2
 
 Se recomienda a las personas con las siguientes condiciones médicas subyacentes que califiquen que completen el Formulario de Atestación de Vacunas COVID-19 de Louisiana antes de su cita para recibir la vacuna (ver enlace)
 
-",,,,,,,,,,
+",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 c19.eligibility.moreinfo/health.la.1c,"People 16-64 with at least one of the conditions listed by the CDC as placing them at an “increased risk of severe illness from the virus that causes COVID-19."" 
 
 Asthma (moderate to severe)
@@ -145,7 +145,7 @@ Type 2 diabetes mellitus
 
 Persons with the following qualifying underlying medical conditions are advised to complete the Louisiana COVID-19 Vaccine Attestation Form before their appointment to receive the vaccine (see link). Note that ages 16 and 17 are eligible for the Pfizer vaccine only
 
-",,,,"Las personas de 16 a 64 años con al menos una de las condiciones enumeradas por los CDC los colocan en un ""mayor riesgo de enfermedad grave por el virus que causa covid-19"". 
+",,,,,,,,,,,,"Las personas de 16 a 64 años con al menos una de las condiciones enumeradas por los CDC los colocan en un ""mayor riesgo de enfermedad grave por el virus que causa covid-19"". 
 
 Asma (de moderada a grave)
 Cáncer
@@ -173,5 +173,5 @@ Diabetes mellitus tipo 2
 
 Se recomienda a las personas con las siguientes condiciones médicas subyacentes que califiquen que completen el Formulario de Atestación de Vacunas COVID-19 de Louisiana antes de su cita para recibir la vacuna (ver enlace). Tenga en cuenta que los 16 y 17 años sólo son elegibles para la vacuna Pfizer
 
-",,,,,,,,,,
-c19.eligibility.moreinfo/age.16_up.la.16_and_older,"Beginning Monday, March 29, everyone in Louisiana ages 18 and older is eligible to get vaccinated against COVID-19. The Pfizer vaccine is available to those 16 and older.",,,,,,,,,,,,,,
+",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.eligibility.moreinfo/age.16_up.la.16_and_older,"Beginning Monday, March 29, everyone in Louisiana ages 18 and older is eligible to get vaccinated against COVID-19. The Pfizer vaccine is available to those 16 and older.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

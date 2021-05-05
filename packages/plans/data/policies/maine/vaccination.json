@@ -15,61 +15,6 @@
 	"activePhase": "_age_16_and_older",
 	"phases": [
 		{
-			"id": "1a",
-			"qualifications": [
-				{
-					"question": "c19.eligibility.question/healthcare_worker",
-					"moreInfoText": "c19.eligibility.moreinfo/healthcare_worker.me.1a"
-				},
-				{
-					"question": "c19.eligibility.question/long_term_care_resident"
-				}
-			]
-		},
-		{
-			"id": "1b",
-			"qualifications": [
-				{
-					"question": "c19.eligibility.question/healthcare_worker",
-					"moreInfoText": "c19.eligibility.moreinfo/healthcare_worker.me.1b"
-				},
-				{
-					"question": "c19.eligibility.question/long_term_care_resident"
-				},
-				{
-					"question": "c19.eligibility.question/essential_worker.are_you_an",
-					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.are_you_an.me.1b",
-					"moreInfoUrl": "https://www.maine.gov/covid19/vaccines/public-faq"
-				},
-				{
-					"question": "c19.eligibility.question/age.60_up"
-				},
-				{
-					"question": "c19.eligibility.question/health"
-				}
-			]
-		},
-		{
-			"id": "age_50_and_older",
-			"label": "Age 50 and older",
-			"qualifications": [
-				{
-					"question": "c19.eligibility.question/age.are"
-				},
-				{
-					"question": "c19.eligibility.question/essential_worker.are_you_an",
-					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.are_you_an.me.age_50_and_older"
-				},
-				{
-					"question": "c19.eligibility.question/essential_worker",
-					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.me.age_50_and_older"
-				},
-				{
-					"question": "c19.eligibility.question/long_term_care_resident"
-				}
-			]
-		},
-		{
 			"id": "_age_16_and_older",
 			"label": " Age 16 and older",
 			"qualifications": [

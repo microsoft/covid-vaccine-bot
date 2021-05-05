@@ -20,46 +20,6 @@
 	"activePhase": "2",
 	"phases": [
 		{
-			"id": "1a",
-			"qualifications": [
-				{
-					"question": "c19.eligibility.question/long_term_care_resident.are",
-					"moreInfoText": "c19.eligibility.moreinfo/long_term_care_resident.are.wi.1a"
-				},
-				{
-					"question": "c19.eligibility.question/essential_worker.ff_leo_corrections",
-					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.ff_leo_corrections.wi.1a"
-				},
-				{
-					"question": "c19.eligibility.question/age.65_up"
-				},
-				{
-					"question": "c19.eligibility.question/essential_worker.are_you",
-					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.are_you.wi.1a"
-				},
-				{
-					"question": "c19.eligibility.question/essential_worker",
-					"moreInfoText": "c19.eligibility.moreinfo/essential_worker.wi.1a"
-				},
-				{
-					"question": "c19.eligibility.question/congregate.do",
-					"moreInfoText": "c19.eligibility.moreinfo/congregate.do.wi.1a"
-				},
-				{
-					"question": "c19.eligibility.question/health",
-					"moreInfoText": "c19.eligibility.moreinfo/health.wi.1a"
-				},
-				{
-					"question": "c19.eligibility.question/healthcare_worker",
-					"moreInfoText": "c19.eligibility.moreinfo/healthcare_worker.wi.1a"
-				},
-				{
-					"question": "c19.eligibility.question/long_term_care_resident.are_you",
-					"moreInfoText": "c19.eligibility.moreinfo/long_term_care_resident.are_you.wi.1a"
-				}
-			]
-		},
-		{
 			"id": "2",
 			"label": "2",
 			"qualifications": [

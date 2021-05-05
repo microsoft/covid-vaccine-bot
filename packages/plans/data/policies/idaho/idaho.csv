@@ -1,6 +1,6 @@
-String ID,en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th
-c19.link/scheduling.phone.id,"Scheduling Hotline",,,,"Programación de la línea directa",,,,,,,,,,
-c19.eligibility.moreinfo/essential_worker.id.1b,"This includes: Healthcare workers, First responders, K-12 teachers and school staff, and more",,,,"Esto incluye: trabajadores de la salud, socorristas, maestros K-12 y personal escolar, y más",,,,,,,,,,
+String ID,en-us,en-us-sms,en-us-voice,ko-kr,ko-kr-sms,ko-kr-voice,vi-vn,vi-vn-sms,vi-vn-voice,zh-cn,zh-cn-sms,zh-cn-voice,es-us,es-us-sms,es-us-voice,de-de,de-de-sms,de-de-voice,es-es,es-es-sms,es-es-voice,fi-fi,fi-fi-sms,fi-fi-voice,fr-fr,fr-fr-sms,fr-fr-voice,he-il,he-il-sms,he-il-voice,it-it,it-it-sms,it-it-voice,ja-jp,ja-jp-sms,ja-jp-voice,pt-pt,pt-pt-sms,pt-pt-voice,sv-se,sv-se-sms,sv-se-voice,th-th,th-th-sms,th-th-voice
+c19.link/scheduling.phone.id,"Scheduling Hotline",,,,,,,,,,,,"Programación de la línea directa",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.eligibility.moreinfo/essential_worker.id.1b,"This includes: Healthcare workers, First responders, K-12 teachers and school staff, and more",,,,,,,,,,,,"Esto incluye: trabajadores de la salud, socorristas, maestros K-12 y personal escolar, y más",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 c19.eligibility.moreinfo/health.are_you_age.id.1c,"Adults of any age with the following conditions are at increased risk of severe illness from the virus that causes COVID-19:
 
 Cancer
@@ -14,7 +14,7 @@ Severe Obesity (BMI ≥ 40 kg/m2)
 Pregnancy
 Sickle cell disease
 Smoking
-Type 2 diabetes mellitus",,,,"Los adultos de cualquier edad con las siguientes afecciones tienen un mayor riesgo de enfermedad grave por el virus que causa COVID-19:
+Type 2 diabetes mellitus",,,,,,,,,,,,"Los adultos de cualquier edad con las siguientes afecciones tienen un mayor riesgo de enfermedad grave por el virus que causa COVID-19:
 
 Cáncer
 Enfermedad renal crónica
@@ -26,7 +26,7 @@ Obesidad (índice de masa corporal [IMC] de 30 kg/m2 o superior pero < 40 kg/m2)
 Embarazo
 Enfermedad de células falciformes
 Fumar
-Diabetes mellitus tipo 2",,,,,,,,,,
+Diabetes mellitus tipo 2",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 c19.eligibility.moreinfo/essential_worker.id.1c,"This includes 
 - Adult and child protective services
 - Blood center workers
@@ -60,7 +60,7 @@ c19.eligibility.moreinfo/essential_worker.id.1c,"This includes
 - Idaho National Guard if not included earlier
 - Manufacturing, public transit, and U.S. Postal Service workers
 - Flight crews
-- Subset of essential gas, electric, water, and telecommunications utility workers, who work indoors",,,,"Esto incluye 
+- Subset of essential gas, electric, water, and telecommunications utility workers, who work indoors",,,,,,,,,,,,"Esto incluye 
 - Servicios de protección para adultos e hijos
 - Trabajadores del centro de sangre
 - Trabajadores de bienestar infantil
@@ -93,69 +93,69 @@ c19.eligibility.moreinfo/essential_worker.id.1c,"This includes
 - Guardia Nacional de Idaho si no se incluye antes
 - Trabajadores de manufactura, transporte público y servicios postales de ee. UU.
 - Tripulaciones de vuelo
-- Subconjunto de trabajadores de servicios públicos esenciales de gas, electricidad, agua y telecomunicaciones, que trabajan en interiores",,,,,,,,,,
-c19.link/scheduling.phone.ada,"208-321-2222",,,,"208-321-2222",,,,,,,,,,
-c19.link/scheduling.phone.description.ada,"(M-F 8:30 am to 4:30 pm)",,,,"(M-F 8:30 am a 4:30 pm)",,,,,,,,,,
-c19.link/scheduling.phone.adams,"208-455-5411",,,,"208-455-5411",,,,,,,,,,
-c19.link/scheduling.phone.description.adams,"(M-F 8:30 am to 4:30 pm)",,,,"(M-F 8:30 am a 4:30 pm)",,,,,,,,,,
-c19.link/scheduling.phone.bannock,"208-234-5875",,,,"208-234-5875",,,,,,,,,,
-c19.link/scheduling.phone.description.bannock,"(M-F 9:00 am to 4:00 pm)",,,,"(M-F 9:00 am a 4:00 pm)",,,,,,,,,,
-c19.link/scheduling.phone.bear_lake,"208-234-5875",,,,"208-234-5875",,,,,,,,,,
-c19.link/scheduling.phone.description.bear_lake,"(M-F 9:00 am to 4:00 pm)",,,,"(M-F 9:00 am a 4:00 pm)",,,,,,,,,,
-c19.link/scheduling.phone.bingham,"208-234-5875",,,,"208-234-5875",,,,,,,,,,
-c19.link/scheduling.phone.description.bingham,"(M-F 9:00 am to 4:00 pm)",,,,"(M-F 9:00 am a 4:00 pm)",,,,,,,,,,
-c19.link/scheduling.phone.blaine,"208-737-1138",,,,"208-737-1138",,,,,,,,,,
-c19.link/scheduling.phone.description.blaine,"(M-F 8:00 am to 5:00 pm)",,,,"(M-F 8:00 am a 5:00 pm)",,,,,,,,,,
-c19.link/scheduling.phone.boise,"208-321-2222",,,,"208-321-2222",,,,,,,,,,
-c19.link/scheduling.phone.description.boise,"(M-F 8:30 am to 4:30 pm)",,,,"(M-F 8:30 am a 4:30 pm)",,,,,,,,,,
-c19.link/scheduling.phone.butte,"208-234-5875",,,,"208-234-5875",,,,,,,,,,
-c19.link/scheduling.phone.description.butte,"(M-F 9:00 am to 4:00 pm)",,,,"(M-F 9:00 am a 4:00 pm)",,,,,,,,,,
-c19.link/scheduling.phone.camas,"208-737-1138",,,,"208-737-1138",,,,,,,,,,
-c19.link/scheduling.phone.description.camas,"(M-F 8:00 am to 5:00 pm)",,,,"(M-F 8:00 am a 5:00 pm)",,,,,,,,,,
-c19.link/scheduling.phone.canyon,"208-455-5411",,,,"208-455-5411",,,,,,,,,,
-c19.link/scheduling.phone.description.canyon,"(M-F 8:30 am to 4:30 pm)",,,,"(M-F 8:30 am a 4:30 pm)",,,,,,,,,,
-c19.link/scheduling.phone.caribou,"208-234-5875",,,,"208-234-5875",,,,,,,,,,
-c19.link/scheduling.phone.description.caribou,"(M-F 9:00 am to 4:00 pm)",,,,"(M-F 9:00 am a 4:00 pm)",,,,,,,,,,
-c19.link/scheduling.phone.cassia,"208-737-1138",,,,"208-737-1138",,,,,,,,,,
-c19.link/scheduling.phone.description.cassia,"(M-F 8:00 am to 5:00 pm)",,,,"(M-F 8:00 am a 5:00 pm)",,,,,,,,,,
-c19.link/scheduling.phone.clearwater,"866-736-6632",,,,"866-736-6632",,,,,,,,,,
-c19.link/scheduling.phone.description.clearwater,"(M-F 8:00 am to 5:00 pm)",,,,"(M-F 8:00 am a 5:00 pm)",,,,,,,,,,
-c19.link/scheduling.phone.elmore,"208-321-2222",,,,"208-321-2222",,,,,,,,,,
-c19.link/scheduling.phone.description.elmore,"(M-F 8:30 am to 4:30 pm)",,,,"(M-F 8:30 am a 4:30 pm)",,,,,,,,,,
-c19.link/scheduling.phone.franklin,"208-234-5875",,,,"208-234-5875",,,,,,,,,,
-c19.link/scheduling.phone.description.franklin,"(M-F 9:00 am to 4:00 pm)",,,,"(M-F 9:00 am a 4:00 pm)",,,,,,,,,,
-c19.link/scheduling.phone.gem,"208-455-5411",,,,"208-455-5411",,,,,,,,,,
-c19.link/scheduling.phone.description.gem,"(M-F 8:30 am to 4:30 pm)",,,,"(M-F 8:30 am a 4:30 pm)",,,,,,,,,,
-c19.link/scheduling.phone.gooding,"208-737-1138",,,,"208-737-1138",,,,,,,,,,
-c19.link/scheduling.phone.description.gooding,"(M-F 8:00 am to 5:00 pm)",,,,"(M-F 8:00 am a 5:00 pm)",,,,,,,,,,
-c19.link/scheduling.phone.idaho,"866-736-6632",,,,"866-736-6632",,,,,,,,,,
-c19.link/scheduling.phone.description.idaho,"(M-F 8:00 am to 5:00 pm)",,,,"(M-F 8:00 am a 5:00 pm)",,,,,,,,,,
-c19.link/scheduling.phone.jerome,"208-737-1138",,,,"208-737-1138",,,,,,,,,,
-c19.link/scheduling.phone.description.jerome,"(M-F 8:00 am to 5:00 pm)",,,,"(M-F 8:00 am a 5:00 pm)",,,,,,,,,,
-c19.link/scheduling.phone.latah,"866-736-6632",,,,"866-736-6632",,,,,,,,,,
-c19.link/scheduling.phone.description.latah,"(M-F 8:00 am to 5:00 pm)",,,,"(M-F 8:00 am a 5:00 pm)",,,,,,,,,,
-c19.link/scheduling.phone.lewis,"866-736-6632",,,,"866-736-6632",,,,,,,,,,
-c19.link/scheduling.phone.description.lewis,"(M-F 8:00 am to 5:00 pm)",,,,"(M-F 8:00 am a 5:00 pm)",,,,,,,,,,
-c19.link/scheduling.phone.id.lincoln,"208-737-1138",,,,"208-737-1138",,,,,,,,,,
-c19.link/scheduling.phone.description.id.lincoln,"(M-F 8:00 am to 5:00 pm)",,,,"(M-F 8:00 am a 5:00 pm)",,,,,,,,,,
-c19.link/scheduling.phone.minidoka,"208-737-1138",,,,"208-737-1138",,,,,,,,,,
-c19.link/scheduling.phone.description.minidoka,"(M-F 8:00 am to 5:00 pm)",,,,"(M-F 8:00 am a 5:00 pm)",,,,,,,,,,
-c19.link/scheduling.phone.nez_perce,"866-736-6632",,,,"866-736-6632",,,,,,,,,,
-c19.link/scheduling.phone.description.nez_perce,"(M-F 8:00 am to 5:00 pm)",,,,"(M-F 8:00 am a 5:00 pm)",,,,,,,,,,
-c19.link/scheduling.phone.id.oneida,"208-234-5875",,,,"208-234-5875",,,,,,,,,,
-c19.link/scheduling.phone.description.id.oneida,"(M-F 9:00 am to 4:00 pm)",,,,"(M-F 9:00 am a 4:00 pm)",,,,,,,,,,
-c19.link/scheduling.phone.owyhee,"208-455-5411",,,,"208-455-5411",,,,,,,,,,
-c19.link/scheduling.phone.description.owyhee,"(M-F 8:30 am to 4:30 pm)",,,,"(M-F 8:30 am a 4:30 pm)",,,,,,,,,,
-c19.link/scheduling.phone.payette,"208-455-5411",,,,"208-455-5411",,,,,,,,,,
-c19.link/scheduling.phone.description.payette,"(M-F 8:30 am to 4:30 pm)",,,,"(M-F 8:30 am a 4:30 pm)",,,,,,,,,,
-c19.link/scheduling.phone.power,"208-234-5875",,,,"208-234-5875",,,,,,,,,,
-c19.link/scheduling.phone.description.power,"(M-F 9:00 am to 4:00 pm)",,,,"(M-F 9:00 am a 4:00 pm)",,,,,,,,,,
-c19.link/scheduling.phone.twin_falls,"208-737-1138",,,,"208-737-1138",,,,,,,,,,
-c19.link/scheduling.phone.description.twin_falls,"(M-F 8:00 am to 5:00 pm)",,,,"(M-F 8:00 am a 5:00 pm)",,,,,,,,,,
-c19.link/scheduling.phone.valley,"208-321-2222",,,,"208-321-2222",,,,,,,,,,
-c19.link/scheduling.phone.description.valley,"(M-F 8:30 am to 4:30 pm)",,,,"(M-F 8:30 am a 4:30 pm)",,,,,,,,,,
-c19.link/scheduling.phone.washington,"208-455-5411",,,,"208-455-5411",,,,,,,,,,
-c19.link/scheduling.phone.description.washington,"(M-F 8:30 am to 4:30 pm)",,,,"(M-F 8:30 am a 4:30 pm)",,,,,,,,,,
+- Subconjunto de trabajadores de servicios públicos esenciales de gas, electricidad, agua y telecomunicaciones, que trabajan en interiores",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.ada,"208-321-2222",,,,,,,,,,,,"208-321-2222",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.description.ada,"(M-F 8:30 am to 4:30 pm)",,,,,,,,,,,,"(M-F 8:30 am a 4:30 pm)",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.adams,"208-455-5411",,,,,,,,,,,,"208-455-5411",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.description.adams,"(M-F 8:30 am to 4:30 pm)",,,,,,,,,,,,"(M-F 8:30 am a 4:30 pm)",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.bannock,"208-234-5875",,,,,,,,,,,,"208-234-5875",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.description.bannock,"(M-F 9:00 am to 4:00 pm)",,,,,,,,,,,,"(M-F 9:00 am a 4:00 pm)",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.bear_lake,"208-234-5875",,,,,,,,,,,,"208-234-5875",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.description.bear_lake,"(M-F 9:00 am to 4:00 pm)",,,,,,,,,,,,"(M-F 9:00 am a 4:00 pm)",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.bingham,"208-234-5875",,,,,,,,,,,,"208-234-5875",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.description.bingham,"(M-F 9:00 am to 4:00 pm)",,,,,,,,,,,,"(M-F 9:00 am a 4:00 pm)",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.blaine,"208-737-1138",,,,,,,,,,,,"208-737-1138",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.description.blaine,"(M-F 8:00 am to 5:00 pm)",,,,,,,,,,,,"(M-F 8:00 am a 5:00 pm)",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.boise,"208-321-2222",,,,,,,,,,,,"208-321-2222",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.description.boise,"(M-F 8:30 am to 4:30 pm)",,,,,,,,,,,,"(M-F 8:30 am a 4:30 pm)",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.butte,"208-234-5875",,,,,,,,,,,,"208-234-5875",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.description.butte,"(M-F 9:00 am to 4:00 pm)",,,,,,,,,,,,"(M-F 9:00 am a 4:00 pm)",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.camas,"208-737-1138",,,,,,,,,,,,"208-737-1138",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.description.camas,"(M-F 8:00 am to 5:00 pm)",,,,,,,,,,,,"(M-F 8:00 am a 5:00 pm)",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.canyon,"208-455-5411",,,,,,,,,,,,"208-455-5411",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.description.canyon,"(M-F 8:30 am to 4:30 pm)",,,,,,,,,,,,"(M-F 8:30 am a 4:30 pm)",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.caribou,"208-234-5875",,,,,,,,,,,,"208-234-5875",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.description.caribou,"(M-F 9:00 am to 4:00 pm)",,,,,,,,,,,,"(M-F 9:00 am a 4:00 pm)",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.cassia,"208-737-1138",,,,,,,,,,,,"208-737-1138",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.description.cassia,"(M-F 8:00 am to 5:00 pm)",,,,,,,,,,,,"(M-F 8:00 am a 5:00 pm)",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.clearwater,"866-736-6632",,,,,,,,,,,,"866-736-6632",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.description.clearwater,"(M-F 8:00 am to 5:00 pm)",,,,,,,,,,,,"(M-F 8:00 am a 5:00 pm)",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.elmore,"208-321-2222",,,,,,,,,,,,"208-321-2222",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.description.elmore,"(M-F 8:30 am to 4:30 pm)",,,,,,,,,,,,"(M-F 8:30 am a 4:30 pm)",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.franklin,"208-234-5875",,,,,,,,,,,,"208-234-5875",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.description.franklin,"(M-F 9:00 am to 4:00 pm)",,,,,,,,,,,,"(M-F 9:00 am a 4:00 pm)",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.gem,"208-455-5411",,,,,,,,,,,,"208-455-5411",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.description.gem,"(M-F 8:30 am to 4:30 pm)",,,,,,,,,,,,"(M-F 8:30 am a 4:30 pm)",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.gooding,"208-737-1138",,,,,,,,,,,,"208-737-1138",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.description.gooding,"(M-F 8:00 am to 5:00 pm)",,,,,,,,,,,,"(M-F 8:00 am a 5:00 pm)",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.idaho,"866-736-6632",,,,,,,,,,,,"866-736-6632",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.description.idaho,"(M-F 8:00 am to 5:00 pm)",,,,,,,,,,,,"(M-F 8:00 am a 5:00 pm)",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.jerome,"208-737-1138",,,,,,,,,,,,"208-737-1138",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.description.jerome,"(M-F 8:00 am to 5:00 pm)",,,,,,,,,,,,"(M-F 8:00 am a 5:00 pm)",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.latah,"866-736-6632",,,,,,,,,,,,"866-736-6632",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.description.latah,"(M-F 8:00 am to 5:00 pm)",,,,,,,,,,,,"(M-F 8:00 am a 5:00 pm)",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.lewis,"866-736-6632",,,,,,,,,,,,"866-736-6632",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.description.lewis,"(M-F 8:00 am to 5:00 pm)",,,,,,,,,,,,"(M-F 8:00 am a 5:00 pm)",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.id.lincoln,"208-737-1138",,,,,,,,,,,,"208-737-1138",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.description.id.lincoln,"(M-F 8:00 am to 5:00 pm)",,,,,,,,,,,,"(M-F 8:00 am a 5:00 pm)",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.minidoka,"208-737-1138",,,,,,,,,,,,"208-737-1138",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.description.minidoka,"(M-F 8:00 am to 5:00 pm)",,,,,,,,,,,,"(M-F 8:00 am a 5:00 pm)",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.nez_perce,"866-736-6632",,,,,,,,,,,,"866-736-6632",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.description.nez_perce,"(M-F 8:00 am to 5:00 pm)",,,,,,,,,,,,"(M-F 8:00 am a 5:00 pm)",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.id.oneida,"208-234-5875",,,,,,,,,,,,"208-234-5875",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.description.id.oneida,"(M-F 9:00 am to 4:00 pm)",,,,,,,,,,,,"(M-F 9:00 am a 4:00 pm)",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.owyhee,"208-455-5411",,,,,,,,,,,,"208-455-5411",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.description.owyhee,"(M-F 8:30 am to 4:30 pm)",,,,,,,,,,,,"(M-F 8:30 am a 4:30 pm)",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.payette,"208-455-5411",,,,,,,,,,,,"208-455-5411",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.description.payette,"(M-F 8:30 am to 4:30 pm)",,,,,,,,,,,,"(M-F 8:30 am a 4:30 pm)",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.power,"208-234-5875",,,,,,,,,,,,"208-234-5875",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.description.power,"(M-F 9:00 am to 4:00 pm)",,,,,,,,,,,,"(M-F 9:00 am a 4:00 pm)",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.twin_falls,"208-737-1138",,,,,,,,,,,,"208-737-1138",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.description.twin_falls,"(M-F 8:00 am to 5:00 pm)",,,,,,,,,,,,"(M-F 8:00 am a 5:00 pm)",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.valley,"208-321-2222",,,,,,,,,,,,"208-321-2222",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.description.valley,"(M-F 8:30 am to 4:30 pm)",,,,,,,,,,,,"(M-F 8:30 am a 4:30 pm)",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.washington,"208-455-5411",,,,,,,,,,,,"208-455-5411",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.description.washington,"(M-F 8:30 am to 4:30 pm)",,,,,,,,,,,,"(M-F 8:30 am a 4:30 pm)",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 c19.eligibility.moreinfo/essential_worker.id.march_22,"This includes 
 - Adult and child protective services
 - Blood center workers
@@ -189,7 +189,7 @@ c19.eligibility.moreinfo/essential_worker.id.march_22,"This includes
 - Idaho National Guard if not included earlier
 - Manufacturing, public transit, and U.S. Postal Service workers
 - Flight crews
-- Subset of essential gas, electric, water, and telecommunications utility workers, who work indoors",,,,"Esto incluye 
+- Subset of essential gas, electric, water, and telecommunications utility workers, who work indoors",,,,,,,,,,,,"Esto incluye 
 - Servicios de protección para adultos e hijos
 - Trabajadores del centro de sangre
 - Trabajadores de bienestar infantil
@@ -222,7 +222,7 @@ c19.eligibility.moreinfo/essential_worker.id.march_22,"This includes
 - Guardia Nacional de Idaho si no se incluye antes
 - Trabajadores de manufactura, transporte público y servicios postales de ee. UU.
 - Tripulaciones de vuelo
-- Subconjunto de trabajadores de servicios públicos esenciales de gas, electricidad, agua y telecomunicaciones, que trabajan en interiores",,,,,,,,,,
+- Subconjunto de trabajadores de servicios públicos esenciales de gas, electricidad, agua y telecomunicaciones, que trabajan en interiores",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 c19.eligibility.moreinfo/health.are_you_age_45.id.march_29,"Adults of any age with the following conditions are at increased risk of severe illness from the virus that causes COVID-19:
 
 Cancer
@@ -236,7 +236,7 @@ Severe Obesity (BMI ≥ 40 kg/m2)
 Pregnancy
 Sickle cell disease
 Smoking
-Type 2 diabetes mellitus",,,,"Los adultos de cualquier edad con las siguientes afecciones tienen un mayor riesgo de enfermedad grave por el virus que causa COVID-19:
+Type 2 diabetes mellitus",,,,,,,,,,,,"Los adultos de cualquier edad con las siguientes afecciones tienen un mayor riesgo de enfermedad grave por el virus que causa COVID-19:
 
 Cáncer
 Enfermedad renal crónica
@@ -248,7 +248,7 @@ Obesidad (índice de masa corporal [IMC] de 30 kg/m2 o superior pero < 40 kg/m2)
 Embarazo
 Enfermedad de células falciformes
 Fumar
-Diabetes mellitus tipo 2",,,,,,,,,,
+Diabetes mellitus tipo 2",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 c19.eligibility.moreinfo/essential_worker.id.march_29,"This includes 
 - Adult and child protective services
 - Blood center workers
@@ -282,7 +282,7 @@ c19.eligibility.moreinfo/essential_worker.id.march_29,"This includes
 - Idaho National Guard if not included earlier
 - Manufacturing, public transit, and U.S. Postal Service workers
 - Flight crews
-- Subset of essential gas, electric, water, and telecommunications utility workers, who work indoors",,,,"Esto incluye 
+- Subset of essential gas, electric, water, and telecommunications utility workers, who work indoors",,,,,,,,,,,,"Esto incluye 
 - Servicios de protección para adultos e hijos
 - Trabajadores del centro de sangre
 - Trabajadores de bienestar infantil
@@ -315,7 +315,7 @@ c19.eligibility.moreinfo/essential_worker.id.march_29,"This includes
 - Guardia Nacional de Idaho si no se incluye antes
 - Trabajadores de manufactura, transporte público y servicios postales de ee. UU.
 - Tripulaciones de vuelo
-- Subconjunto de trabajadores de servicios públicos esenciales de gas, electricidad, agua y telecomunicaciones, que trabajan en interiores",,,,,,,,,,
+- Subconjunto de trabajadores de servicios públicos esenciales de gas, electricidad, agua y telecomunicaciones, que trabajan en interiores",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 c19.eligibility.moreinfo/essential_worker.id.april_5,"This includes 
 - Adult and child protective services
 - Blood center workers
@@ -349,7 +349,7 @@ c19.eligibility.moreinfo/essential_worker.id.april_5,"This includes
 - Idaho National Guard if not included earlier
 - Manufacturing, public transit, and U.S. Postal Service workers
 - Flight crews
-- Subset of essential gas, electric, water, and telecommunications utility workers, who work indoors",,,,"Esto incluye 
+- Subset of essential gas, electric, water, and telecommunications utility workers, who work indoors",,,,,,,,,,,,"Esto incluye 
 - Servicios de protección para adultos e hijos
 - Trabajadores del centro de sangre
 - Trabajadores de bienestar infantil
@@ -382,7 +382,7 @@ c19.eligibility.moreinfo/essential_worker.id.april_5,"This includes
 - Guardia Nacional de Idaho si no se incluye antes
 - Trabajadores de manufactura, transporte público y servicios postales de ee. UU.
 - Tripulaciones de vuelo
-- Subconjunto de trabajadores de servicios públicos esenciales de gas, electricidad, agua y telecomunicaciones, que trabajan en interiores",,,,,,,,,,
+- Subconjunto de trabajadores de servicios públicos esenciales de gas, electricidad, agua y telecomunicaciones, que trabajan en interiores",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 c19.eligibility.moreinfo/essential_worker.id.april_12,"This includes 
 - Adult and child protective services
 - Blood center workers
@@ -416,7 +416,7 @@ c19.eligibility.moreinfo/essential_worker.id.april_12,"This includes
 - Idaho National Guard if not included earlier
 - Manufacturing, public transit, and U.S. Postal Service workers
 - Flight crews
-- Subset of essential gas, electric, water, and telecommunications utility workers, who work indoors",,,,"Esto incluye 
+- Subset of essential gas, electric, water, and telecommunications utility workers, who work indoors",,,,,,,,,,,,"Esto incluye 
 - Servicios de protección para adultos e hijos
 - Trabajadores del centro de sangre
 - Trabajadores de bienestar infantil
@@ -449,7 +449,7 @@ c19.eligibility.moreinfo/essential_worker.id.april_12,"This includes
 - Guardia Nacional de Idaho si no se incluye antes
 - Trabajadores de manufactura, transporte público y servicios postales de ee. UU.
 - Tripulaciones de vuelo
-- Subconjunto de trabajadores de servicios públicos esenciales de gas, electricidad, agua y telecomunicaciones, que trabajan en interiores",,,,,,,,,,
+- Subconjunto de trabajadores de servicios públicos esenciales de gas, electricidad, agua y telecomunicaciones, que trabajan en interiores",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 c19.eligibility.moreinfo/health.id.april_12,"Adults of any age with the following conditions are at increased risk of severe illness from the virus that causes COVID-19:
 
 Cancer
@@ -463,7 +463,7 @@ Severe Obesity (BMI ≥ 40 kg/m2)
 Pregnancy
 Sickle cell disease
 Smoking
-Type 2 diabetes mellitus",,,,"Los adultos de cualquier edad con las siguientes afecciones tienen un mayor riesgo de enfermedad grave por el virus que causa COVID-19:
+Type 2 diabetes mellitus",,,,,,,,,,,,"Los adultos de cualquier edad con las siguientes afecciones tienen un mayor riesgo de enfermedad grave por el virus que causa COVID-19:
 
 Cáncer
 Enfermedad renal crónica
@@ -475,4 +475,4 @@ Obesidad (índice de masa corporal [IMC] de 30 kg/m2 o superior pero < 40 kg/m2)
 Embarazo
 Enfermedad de células falciformes
 Fumar
-Diabetes mellitus tipo 2",,,,,,,,,,
+Diabetes mellitus tipo 2",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
