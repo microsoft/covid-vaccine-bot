@@ -21,7 +21,8 @@
 		"scheduling": {
 			"url": "https://vaccinesignup.mass.gov/",
 			"text": "c19.links/schedule_vax"
-		}
+		},
+		"worflow": {}
 	},
 	"activePhase": "phase_3",
 	"phases": [
@@ -34,5 +35,6 @@
 				}
 			]
 		}
-	]
+	],
+	"noPhaseLabel": false
 }
