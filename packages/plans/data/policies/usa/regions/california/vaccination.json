@@ -11,7 +11,8 @@
 		"scheduling_phone": {
 			"url": "tel:(833) 422-4255",
 			"text": "c19.link/scheduling.phone.ca"
-		}
+		},
+		"worflow": {}
 	},
 	"activePhase": "16",
 	"phases": [
@@ -34,5 +35,6 @@
 				}
 			]
 		}
-	]
+	],
+	"noPhaseLabel": false
 }
