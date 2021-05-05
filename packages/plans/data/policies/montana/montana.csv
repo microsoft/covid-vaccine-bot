@@ -1,6 +1,6 @@
-String ID,en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th
-c19.eligibility.question/american_indian_poc.mt,"Are you an American Indian or other person of color at elevated risk for COVID-19 complications?",,,,"¿Es usted un indio americano u otra persona de color con un riesgo elevado de complicaciones de COVID-19?",,,,,,,,,,
-c19.eligibility.moreinfo/healthcare_worker.mt.1bplus,"This includes frontline healthcare workers and healthcare workers with direct patient contact or virus exposure ",,,,"Esto incluye a los trabajadores sanitarios de primera línea y a los trabajadores sanitarios con contacto directo con el paciente o exposición al virus ",,,,,,,,,,
+String ID,en-us,en-us-sms,en-us-voice,ko-kr,ko-kr-sms,ko-kr-voice,vi-vn,vi-vn-sms,vi-vn-voice,zh-cn,zh-cn-sms,zh-cn-voice,es-us,es-us-sms,es-us-voice,de-de,de-de-sms,de-de-voice,es-es,es-es-sms,es-es-voice,fi-fi,fi-fi-sms,fi-fi-voice,fr-fr,fr-fr-sms,fr-fr-voice,he-il,he-il-sms,he-il-voice,it-it,it-it-sms,it-it-voice,ja-jp,ja-jp-sms,ja-jp-voice,pt-pt,pt-pt-sms,pt-pt-voice,sv-se,sv-se-sms,sv-se-voice,th-th,th-th-sms,th-th-voice
+c19.eligibility.question/american_indian_poc.mt,"Are you an American Indian or other person of color at elevated risk for COVID-19 complications?",,,,,,,,,,,,"¿Es usted un indio americano u otra persona de color con un riesgo elevado de complicaciones de COVID-19?",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.eligibility.moreinfo/healthcare_worker.mt.1bplus,"This includes frontline healthcare workers and healthcare workers with direct patient contact or virus exposure ",,,,,,,,,,,,"Esto incluye a los trabajadores sanitarios de primera línea y a los trabajadores sanitarios con contacto directo con el paciente o exposición al virus ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 c19.eligibility.moreinfo/health.mt.1bplus,"Qualifying medical conditions include:
 o Cancer
 o Chronic kidney disease
@@ -21,7 +21,7 @@ o Liver disease
 o Pulmonary fibrosis (having damaged or scarred lung tissues)
 o Thalassemia (a type of blood disorder)
 o On a case by case basis, medical providers may include individuals with other conditions that place them at
-elevated risk for COVID-19 related complications.",,,,"Las condiciones médicas que califican incluyen:
+elevated risk for COVID-19 related complications.",,,,,,,,,,,,"Las condiciones médicas que califican incluyen:
 o Cáncer
 o Enfermedad renal crónica
 o EPOC (enfermedad pulmonar obstructiva crónica)
@@ -41,7 +41,7 @@ o Enfermedad hepática
 o Fibrosis pulmonar (tener tejidos pulmonares dañados o marcados)
 o Talasemia (un tipo de trastorno sanguíneo)
 o Caso por caso, los proveedores médicos pueden incluir individuos con otras condiciones que los
-riesgo elevado de complicaciones relacionadas con COVID-19.",,,,,,,,,,
+riesgo elevado de complicaciones relacionadas con COVID-19.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 c19.eligibility.moreinfo/health.mt.1c,"Qualifying medical conditions include:
 o Cancer
 o Chronic kidney disease
@@ -62,7 +62,7 @@ o Liver disease
 o Pulmonary fibrosis (having damaged or scarred lung tissues)
 o Thalassemia (a type of blood disorder)
 o On a case by case basis, medical providers may include individuals with other conditions that place them at
-elevated risk for COVID-19 related complications.",,,,"Las condiciones médicas que califican incluyen:
+elevated risk for COVID-19 related complications.",,,,,,,,,,,,"Las condiciones médicas que califican incluyen:
 o Cáncer
 o Enfermedad renal crónica
 o EPOC (enfermedad pulmonar obstructiva crónica)
@@ -82,6 +82,6 @@ o Enfermedad hepática
 o Fibrosis pulmonar (tener tejidos pulmonares dañados o marcados)
 o Talasemia (un tipo de trastorno sanguíneo)
 o Caso por caso, los proveedores médicos pueden incluir individuos con otras condiciones que los
-riesgo elevado de complicaciones relacionadas con COVID-19.",,,,,,,,,,
-c19.eligibility.moreinfo/congregate.do.mt.1c,"This includes congregate care and correctional facilities",,,,"Esto incluye centros de atención congregada y correccionales",,,,,,,,,,
-c19.eligibility.moreinfo/healthcare_worker.mt.1c,"This includes frontline healthcare workers and healthcare workers with direct patient contact or virus exposure ",,,,"Esto incluye a los trabajadores sanitarios de primera línea y a los trabajadores sanitarios con contacto directo con el paciente o exposición al virus ",,,,,,,,,,
+riesgo elevado de complicaciones relacionadas con COVID-19.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.eligibility.moreinfo/congregate.do.mt.1c,"This includes congregate care and correctional facilities",,,,,,,,,,,,"Esto incluye centros de atención congregada y correccionales",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.eligibility.moreinfo/healthcare_worker.mt.1c,"This includes frontline healthcare workers and healthcare workers with direct patient contact or virus exposure ",,,,,,,,,,,,"Esto incluye a los trabajadores sanitarios de primera línea y a los trabajadores sanitarios con contacto directo con el paciente o exposición al virus ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
