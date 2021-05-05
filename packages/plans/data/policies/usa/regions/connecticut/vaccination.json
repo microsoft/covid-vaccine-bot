@@ -15,7 +15,8 @@
 			"url": "tel:877-918-2224",
 			"text": "c19.link/scheduling.phone.ct",
 			"description": "c19.link/scheduling.phone.description.ct"
-		}
+		},
+		"worflow": {}
 	},
 	"activePhase": "16_and_older",
 	"phases": [
@@ -29,5 +30,6 @@
 				}
 			]
 		}
-	]
+	],
+	"noPhaseLabel": false
 }
