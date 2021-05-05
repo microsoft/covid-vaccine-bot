@@ -18,7 +18,8 @@
 			"url": "tel:883-431-2053",
 			"text": "c19.link/scheduling.phone.mn",
 			"description": "c19.link/scheduling.phone.description.mn"
-		}
+		},
+		"worflow": {}
 	},
 	"activePhase": "16_and_older",
 	"phases": [
@@ -32,5 +33,6 @@
 				}
 			]
 		}
-	]
+	],
+	"noPhaseLabel": false
 }
