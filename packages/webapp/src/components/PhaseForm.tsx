@@ -6,6 +6,7 @@ import { PrimaryButton, DefaultButton, TextField } from '@fluentui/react'
 import { observer } from 'mobx-react-lite'
 import { useCallback, useRef, useState } from 'react'
 import { getText as t } from '../selectors/intlSelectors'
+import { getLocationPhaseData } from '../selectors/locationSelectors'
 import { formatId } from '../utils/textUtils'
 
 import './LocationForm.scss'
@@ -66,9 +67,9 @@ export default observer(function PhaseForm(props: PhaseFormProp) {
 	const isDuplicate = useCallback(() => {
 		if (!duplicate) return ''
 
-		const location = currentLocation
+		const { phases } = getLocationPhaseData(currentLocation)
 		const nextPhaseId = formatId(formData.name)
-		const nameExists = location.vaccination.content.phases.find((item: { id: string }) => item.id === nextPhaseId)
+		const nameExists = phases.find((item: { id: string }) => item.id === nextPhaseId)
 
 		if (nameExists) {
 			setHasError(true)
@@ -106,6 +107,9 @@ export default observer(function PhaseForm(props: PhaseFormProp) {
 					value={formData.name}
 					onChange={handleTextChange}
 					onGetErrorMessage={isDuplicate}
+					validateOnLoad={false}
+					validateOnFocusIn={false}
+					validateOnFocusOut={true}
 				/>
 			</div>
 			<div className="modalFooter">

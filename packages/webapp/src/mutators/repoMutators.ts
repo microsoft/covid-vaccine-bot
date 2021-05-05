@@ -1051,31 +1051,36 @@ export const updatePhase = mutatorAction(
 		const store = getAppStore()
 		store.pendingChanges = true
 
-		const { locationData: currLocation, pathKey, name } = getCurrentLocationObj(currentLocation)
+		const pathArray = currentLocation.info.path.split('/')
+		pathArray.splice(-1, 1)
 
 		const { phases, activePhase } = getLocationPhaseData(currentLocation)
 
 		if (
-			!currLocation.vaccination.content?.phases ||
-			currLocation.vaccination.content?.phases.length === 0
+			!currentLocation.vaccination.content?.phases ||
+			currentLocation.vaccination.content?.phases.length === 0
 		) {
-			currLocation.vaccination.content.phases = phases
+
+			copyPhaseData(currentLocation, phases)
+		} else {
+			currentLocation.vaccination.content.phases = phases
 		}
 
-		if (!currLocation.vaccination.content?.activePhase) {
-			currLocation.vaccination.content.activePhase = activePhase
+		if (!currentLocation.vaccination.content?.activePhase) {
+			currentLocation.vaccination.content.activePhase = activePhase
 		}
 
+		const pathKey = pathArray.join('.')
 		const modifyKeyIdx = store.pendingChangeList.modified.findIndex((m: any) => m.pathKey === pathKey && m.section === 'phase')
 
 		if (modifyKeyIdx > -1) {
-			store.pendingChangeList.modified[modifyKeyIdx].data = currLocation
+			store.pendingChangeList.modified[modifyKeyIdx].data = currentLocation
 		} else {
 			store.pendingChangeList.modified.push({
 				section: 'phase',
-				name: name,
+				name: currentLocation.info.content.id,
 				pathKey: pathKey,
-				data: currLocation
+				data: currentLocation
 			})
 		}
 
@@ -1089,33 +1094,36 @@ export const addPhase = mutatorAction(
 		if (currentLocation && id && label) {
 			const store = getAppStore()
 			store.pendingChanges = true
-
-			const { locationData: currLocation, pathKey } = getCurrentLocationObj(currentLocation)
+			const pathArray = currentLocation.info.path.split('/')
+			pathArray.splice(-1, 1)
 
 			const { phases, activePhase } = getLocationPhaseData(currentLocation)
 
 			if (
-				!currLocation.vaccination.content?.phases ||
-				currLocation.vaccination.content?.phases.length === 0
+				!currentLocation.vaccination.content?.phases ||
+				currentLocation.vaccination.content?.phases.length === 0
 			) {
-				currLocation.vaccination.content.phases = phases
+				copyPhaseData(currentLocation, phases)
+			} else {
+				currentLocation.vaccination.content.phases = phases
 			}
 
-			if (!currLocation.vaccination.content?.activePhase) {
-				currLocation.vaccination.content.activePhase = activePhase
+			if (!currentLocation.vaccination.content?.activePhase) {
+				currentLocation.vaccination.content.activePhase = activePhase
 			}
 
-			currLocation.vaccination.content.phases.push({
+			currentLocation.vaccination.content.phases.push({
 				id,
 				label,
 				qualifications: [],
 			})
 
+			const pathKey = pathArray.join('.')
 			store.pendingChangeList.added.push({
 				section: 'phase',
 				name: label,
 				pathKey: pathKey,
-				data: currLocation
+				data: currentLocation
 			})
 
 			store.repoFileData = { ...store.repoFileData }
@@ -1129,24 +1137,22 @@ export const duplicatePhase = mutatorAction(
 		if (currentLocation && phaseId && name) {
 			const store = getAppStore()
 			store.pendingChanges = true
+			const pathArray = currentLocation.info.path.split('/')
+			pathArray.splice(-1, 1)
 
-			const { locationData: currLocation, pathKey } = getCurrentLocationObj(currentLocation)
-
-			const { phases, activePhase } = getLocationPhaseData(currentLocation)
+			const { phases } = getLocationPhaseData(currentLocation)
 
 			if (
-				!currLocation.vaccination.content?.phases ||
-				currLocation.vaccination.content?.phases.length === 0
+				!currentLocation.vaccination.content?.phases ||
+				currentLocation.vaccination.content?.phases.length === 0
 			) {
-				currLocation.vaccination.content.phases = phases
-			}
-
-			if (!currLocation.vaccination.content?.activePhase) {
-				currLocation.vaccination.content.activePhase = activePhase
+				copyPhaseData(currentLocation, phases)
+			} else {
+				currentLocation.vaccination.content.phases = phases
 			}
 
 			const phase = clone(
-				currLocation.vaccination.content.phases.find(
+				currentLocation.vaccination.content.phases.find(
 					(phase: any) => phase.id === phaseId
 				)
 			)
@@ -1157,13 +1163,14 @@ export const duplicatePhase = mutatorAction(
 				label: name,
 			}
 
-			currLocation.vaccination.content.phases.push(duplicatePhase)
+			currentLocation.vaccination.content.phases.push(duplicatePhase)
 
+			const pathKey = pathArray.join('.')
 			store.pendingChangeList.added.push({
 				section: 'phase',
 				name: name,
 				pathKey: pathKey,
-				data: currLocation
+				data: currentLocation
 			})
 
 			store.repoFileData = { ...store.repoFileData }

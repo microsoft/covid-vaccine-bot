@@ -107,15 +107,8 @@ export default observer(function LocationsPhaseList(
 	const onPhaseFormSubmit = useCallback(
 		(phaseData: any) => {
 			dismissPhaseModal()
-			const { phases, activePhase } = getLocationPhaseData(currentLocation)
+			const { activePhase } = getLocationPhaseData(currentLocation)
 			let newList = []
-
-			if (
-				!currentLocation.vaccination.content?.phases ||
-				currentLocation.vaccination.content?.phases.length === 0
-			) {
-				currentLocation.vaccination.content.phases = phases
-			}
 
 			// Update Phase
 			if (phaseData.phaseId) {
