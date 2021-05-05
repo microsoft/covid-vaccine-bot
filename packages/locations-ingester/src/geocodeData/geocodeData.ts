@@ -11,6 +11,7 @@ import { GeoPoint, ProviderLocation } from '../types'
 import { GeoCache, readGeocodeCache, writeGeocodeCache } from './geocodeCache'
 
 const MAPS_KEY = config.get<string>('azureMaps.key')
+const COUNTRY = config.get<string>('azureMaps.geocodeCountry')
 const API_URL = 'https://atlas.microsoft.com/search/address/json'
 const BATCH_SIZE = 5
 
@@ -138,6 +139,5 @@ async function getPositionFromService(
 function getLocationQueryText({
 	location: { street1, city, state, zip },
 }: ProviderLocation): string {
-	return `${street1} 
-	${city}, ${state} ${zip}`
+	return [street1, city, state, zip, COUNTRY].join(', ')
 }
