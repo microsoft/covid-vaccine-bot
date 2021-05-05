@@ -3,7 +3,8 @@
 		"info": {
 			"text": "cdc/federated_states_of_micronesia/state_link",
 			"url": "https://www.fsmgov.org/index.html"
-		}
+		},
+		"worflow": {}
 	},
 	"activePhase": "1a",
 	"phases": [
