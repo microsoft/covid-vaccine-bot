@@ -1,8 +1,8 @@
-String ID,en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th
-c19.link/scheduling.phone.mangilao,"734-2163",,,,"734-2163",,,,,,,,,,
-c19.link/scheduling.phone.agat,"565-2524",,,,"565-2524",,,,,,,,,,
-c19.link/scheduling.phone.description.agat,"Agat Mayor's Office",,,,"Alcaldía de Agat",,,,,,,,,,
-c19.link/scheduling.phone.description.mangilao,"Mangilao Mayor's Office",,,,"Alcaldía de Mangilao",,,,,,,,,,
+String ID,en-us,en-us-sms,en-us-voice,ko-kr,ko-kr-sms,ko-kr-voice,vi-vn,vi-vn-sms,vi-vn-voice,zh-cn,zh-cn-sms,zh-cn-voice,es-us,es-us-sms,es-us-voice,de-de,de-de-sms,de-de-voice,es-es,es-es-sms,es-es-voice,fi-fi,fi-fi-sms,fi-fi-voice,fr-fr,fr-fr-sms,fr-fr-voice,he-il,he-il-sms,he-il-voice,it-it,it-it-sms,it-it-voice,ja-jp,ja-jp-sms,ja-jp-voice,pt-pt,pt-pt-sms,pt-pt-voice,sv-se,sv-se-sms,sv-se-voice,th-th,th-th-sms,th-th-voice
+c19.link/scheduling.phone.mangilao,"734-2163",,,,,,,,,,,,"734-2163",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.agat,"565-2524",,,,,,,,,,,,"565-2524",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.description.agat,"Agat Mayor's Office",,,,,,,,,,,,"Alcaldía de Agat",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.description.mangilao,"Mangilao Mayor's Office",,,,,,,,,,,,"Alcaldía de Mangilao",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 c19.eligibility.moreinfo/age.16_up.gu.16_and_older,"Minors may only receive the Pfizer-BioNTech COVID-19 vaccine as the Moderna and Johnson & Johnson/Janssen (J&J/Janssen) vaccines are not recommended for individuals below the age of 18. Minors must be accompanied by a parent or legal guardian and provide government-issued identification to validate age.
 
-Upon arrival at vaccination events, individuals 60 years and older may be sent to the front of the line.",,,,,,,,,,,,,,
+Upon arrival at vaccination events, individuals 60 years and older may be sent to the front of the line.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
