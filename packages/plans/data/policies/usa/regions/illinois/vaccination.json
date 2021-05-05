@@ -8,9 +8,10 @@
 			"text": "cdc/illinois/state_link"
 		},
 		"scheduling_phone": {
-			"url": "tel:",
+			"url": "tel:Scheduling Hotline",
 			"text": "c19.link/scheduling.phone.il"
-		}
+		},
+		"worflow": {}
 	},
 	"activePhase": "16_and_up",
 	"phases": [
@@ -24,5 +25,6 @@
 				}
 			]
 		}
-	]
+	],
+	"noPhaseLabel": false
 }
