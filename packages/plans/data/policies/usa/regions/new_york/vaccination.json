@@ -22,7 +22,8 @@
 			"url": "tel:1-833-697-4829",
 			"text": "c19.link/scheduling.phone.ny",
 			"description": "c19.link/scheduling.phone.description.ny"
-		}
+		},
+		"worflow": {}
 	},
 	"activePhase": "current",
 	"noPhaseLabel": true,
