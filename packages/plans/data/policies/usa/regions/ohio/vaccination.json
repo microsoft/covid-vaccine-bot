@@ -23,7 +23,8 @@
 		"providers": {
 			"url": "https://coronavirus.ohio.gov/wps/portal/gov/covid-19/covid-19-vaccination-program/resources/covid-19-mass-vaccination-clinics",
 			"text": "c19.links/vax_providers"
-		}
+		},
+		"worflow": {}
 	},
 	"activePhase": "current",
 	"noPhaseLabel": true,
