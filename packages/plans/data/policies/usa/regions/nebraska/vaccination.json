@@ -23,7 +23,8 @@
 		},
 		"eligibility": {
 			"url": "https://dhhs.ne.gov/Documents/COVID-19-Vaccine-Phase-1B-Prioritization.pdf"
-		}
+		},
+		"worflow": {}
 	},
 	"activePhase": "2b",
 	"phases": [
@@ -36,5 +37,6 @@
 				}
 			]
 		}
-	]
+	],
+	"noPhaseLabel": false
 }
