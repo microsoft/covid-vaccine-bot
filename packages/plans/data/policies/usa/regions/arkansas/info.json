@@ -1,6 +1,6 @@
 {
 	"id": "arkansas",
-	"name": "Arkansas",
+	"name": "cdc/arkansas/state_name",
 	"type": "state",
 	"metadata": {
 		"code_alpha": "AR",

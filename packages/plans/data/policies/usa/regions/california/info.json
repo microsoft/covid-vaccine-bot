@@ -1,6 +1,6 @@
 {
 	"id": "california",
-	"name": "California",
+	"name": "cdc/california/state_name",
 	"type": "state",
 	"metadata": {
 		"code_alpha": "CA",

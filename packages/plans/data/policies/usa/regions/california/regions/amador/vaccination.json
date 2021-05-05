@@ -1,0 +1,10 @@
+{
+	"activePhase": "18_and_older",
+	"links": {
+		"info": {
+			"url": "https://www.amadorgov.org/services/public-health/covid-19/vaccine-information",
+			"text": "cdc/california/state_link"
+		}
+	},
+	"noPhaseLabel": false
+}

@@ -1,6 +1,6 @@
 {
 	"id": "american_samoa",
-	"name": "American Samoa",
+	"name": "cdc/american_samoa/state_name",
 	"type": "territory",
 	"metadata": {
 		"code_alpha": "AS",

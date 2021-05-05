@@ -1,6 +1,6 @@
 {
 	"id": "arizona",
-	"name": "Arizona",
+	"name": "cdc/arizona/state_name",
 	"type": "state",
 	"metadata": {
 		"code_alpha": "AZ",
