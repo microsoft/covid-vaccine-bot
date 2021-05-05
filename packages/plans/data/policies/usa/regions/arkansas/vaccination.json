@@ -6,7 +6,8 @@
 			"scrapeQuery": [
 				"#contentBody"
 			]
-		}
+		},
+		"worflow": {}
 	},
 	"activePhase": "16_and_older",
 	"phases": [
@@ -19,5 +20,6 @@
 				}
 			]
 		}
-	]
+	],
+	"noPhaseLabel": false
 }
