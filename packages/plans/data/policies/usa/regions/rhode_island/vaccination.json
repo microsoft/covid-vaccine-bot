@@ -14,7 +14,8 @@
 		"scheduling_phone": {
 			"url": "tel:844-930-1779",
 			"text": "c19.link/scheduling.phone.ri"
-		}
+		},
+		"worflow": {}
 	},
 	"activePhase": "current",
 	"phases": [
