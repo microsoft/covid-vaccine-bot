@@ -1,6 +1,6 @@
-String ID,en-us,en-us-sms,en-us-voice,ko-kr,ko-kr-sms,ko-kr-voice,vi-vn,vi-vn-sms,vi-vn-voice,zh-cn,zh-cn-sms,zh-cn-voice,es-us,es-us-sms,es-us-voice,de-de,de-de-sms,de-de-voice,es-es,es-es-sms,es-es-voice,fi-fi,fi-fi-sms,fi-fi-voice,fr-fr,fr-fr-sms,fr-fr-voice,he-il,he-il-sms,he-il-voice,it-it,it-it-sms,it-it-voice,ja-jp,ja-jp-sms,ja-jp-voice,pt-pt,pt-pt-sms,pt-pt-voice,sv-se,sv-se-sms,sv-se-voice,th-th,th-th-sms,th-th-voice
-c19.eligibility.question/essential_worker.1b.ks,"Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, retail, warehousing, sales, supplying critical material to the COVID-19 response, or child care.",,,,,,,,,,,,"¿Eres un trabajador esencial de primera línea? Esto incluye socorristas; oficiales de correccionales; y trabajadores del sector alimentario y agrícola, USPS, manufactura, supermercados, transporte público, educación, comercio minorista, almacenamiento, ventas, suministro de material crítico a la respuesta covid-19, o cuidado de niños.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-c19.eligibility.moreinfo/essential_worker.ks.1a,"Workers that are critical to pandemic response continuity are prioritized on a county-by-county level. ",,,,,,,,,,,,"Los trabajadores que son críticos para la continuidad de la respuesta pandémica son priorizados a nivel condado por condado. ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+String ID,en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th
+c19.eligibility.question/essential_worker.1b.ks,"Are you as an essential frontline worker? This includes first responders; corrections officers; and workers in the food and agricultural sector, USPS, manufacturing, grocery stores, public transit, education, retail, warehousing, sales, supplying critical material to the COVID-19 response, or child care.",,,,"¿Eres un trabajador esencial de primera línea? Esto incluye socorristas; oficiales de correccionales; y trabajadores del sector alimentario y agrícola, USPS, manufactura, supermercados, transporte público, educación, comercio minorista, almacenamiento, ventas, suministro de material crítico a la respuesta covid-19, o cuidado de niños.",,,,,,,,,,
+c19.eligibility.moreinfo/essential_worker.ks.1a,"Workers that are critical to pandemic response continuity are prioritized on a county-by-county level. ",,,,"Los trabajadores que son críticos para la continuidad de la respuesta pandémica son priorizados a nivel condado por condado. ",,,,,,,,,,
 c19.eligibility.moreinfo/essential_worker.ks.1b,"High-contact critical workers include but are not limited to the following:
 
 Firefighters; police officers; first responders; emergency dispatchers; correction officers
@@ -14,7 +14,7 @@ Retail, warehouses and sales outlets
 Agriculture
 Supply of critical services or materials for the COVID response (e.g. personal protective equipment (PPE))
 The U.S. Postal Service
-Department of Motor Vehicles",,,,,,,,,,,,"Los trabajadores críticos de alto contacto incluyen, entre otros:
+Department of Motor Vehicles",,,,"Los trabajadores críticos de alto contacto incluyen, entre otros:
 
 Bomberos; agentes de policía; socorristas; despachadores de emergencia; oficiales de corrección
 Trabajadores de supermercados y servicios de alimentos
@@ -27,7 +27,7 @@ Tiendas minoristas, almacenes y puntos de venta
 Agricultura
 Suministro de servicios o materiales críticos para la respuesta COVID (por ejemplo, equipos de protección personal (EPI))
 El Servicio Postal de ee.UU.
-Departamento de Vehículos Motorizados",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Departamento de Vehículos Motorizados",,,,,,,,,,
 c19.eligibility.moreinfo/congregate.do.ks.1b,"Congregate settings include but are not limited to the following:
 
 Homeless shelters and other homeless housing settings and dwelling places
@@ -37,7 +37,7 @@ Corrections facilities, including jails and juvenile justice facilities
 Behavioral Health institutions (including mental health institutions) and residential treatment centers
 Adult care homes, residents and staff in home plus facilities not covered in Phase 1
 Senior living homes
-Home care givers (paid or unpaid), personal care aides",,,,,,,,,,,,"La configuración de congregación incluye, entre otras, lo siguiente:
+Home care givers (paid or unpaid), personal care aides",,,,"La configuración de congregación incluye, entre otras, lo siguiente:
 
 Refugios para personas sin hogar y otros entornos de viviendas para personas sin hogar y lugares de vivienda
 Congregar instituciones de cuidado infantil, servicios de protección para adultos e hijos
@@ -46,7 +46,7 @@ Centros correccionales, incluyendo cárceles e instalaciones de justicia juvenil
 Instituciones de salud conductual (incluidas las instituciones de salud mental) y centros de tratamiento residencial
 Hogares de cuidado para adultos, residentes y personal en el hogar más instalaciones no cubiertas en la Fase 1
 Hogares de ancianos
-Cuidadores en el hogar (pagados o no pagados), ayudantes de cuidado personal",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Cuidadores en el hogar (pagados o no pagados), ayudantes de cuidado personal",,,,,,,,,,
 c19.eligibility.moreinfo/healthcare_worker.ks.1b,"Healthcare workers include but are not limited to the following:
 
 Staff in long-term care facilities
@@ -60,7 +60,7 @@ Morticians, forensic and funeral service workers
 Staff in Federally Qualified Health Centers (FQHC); community health centers (CHC); safety-net/ free clinics; faith-based outreach clinics -- inclusive of state-funded clinics
 Home health aides, nursing assistants
 Veterinarians
-",,,,,,,,,,,,"Los trabajadores sanitarios incluyen, entre otros, lo siguiente:
+",,,,"Los trabajadores sanitarios incluyen, entre otros, lo siguiente:
 
 Personal en centros de atención a largo plazo
 Trabajadores en contacto directo con pacientes, por ejemplo, Médicos Médicos (MD); Doctores en Osteopatía (DO); Doctores en Medicina Podiátrica (DPM); enfermeras; Técnicos Médicos de Emergencia (EMT); estudiantes clínicos y aprendices -- no incluye socorristas y despachos que sean priorizados en la Fase 2.
@@ -73,7 +73,7 @@ Morticios, trabajadores forenses y del servicio funerario
 Personal de centros de salud calificados federalmente (FQHC); centros de salud comunitarios (CHC); redes de seguridad/ clínicas gratuitas; clínicas de divulgación basadas en la fe - incluyendo clínicas financiadas por el estado
 Ayudantes de salud en el hogar, auxiliares de enfermería
 Veterinarios
-",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+",,,,,,,,,,
 c19.eligibility.moreinfo/congregate.ks.1c,"Congregate settings include but are not limited to the following:
 
 Homeless shelters and other homeless housing settings and dwelling places
@@ -83,7 +83,7 @@ Corrections facilities, including jails and juvenile justice facilities
 Behavioral Health institutions (including mental health institutions) and residential treatment centers
 Adult care homes, residents and staff in home plus facilities not covered in Phase 1
 Senior living homes
-Home care givers (paid or unpaid), personal care aides",,,,,,,,,,,,"La configuración de congregación incluye, entre otras, lo siguiente:
+Home care givers (paid or unpaid), personal care aides",,,,"La configuración de congregación incluye, entre otras, lo siguiente:
 
 Refugios para personas sin hogar y otros entornos de viviendas para personas sin hogar y lugares de vivienda
 Congregar instituciones de cuidado infantil, servicios de protección para adultos e hijos
@@ -92,7 +92,7 @@ Centros correccionales, incluyendo cárceles e instalaciones de justicia juvenil
 Instituciones de salud conductual (incluidas las instituciones de salud mental) y centros de tratamiento residencial
 Hogares de cuidado para adultos, residentes y personal en el hogar más instalaciones no cubiertas en la Fase 1
 Hogares de ancianos
-Cuidadores en el hogar (pagados o no pagados), ayudantes de cuidado personal",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Cuidadores en el hogar (pagados o no pagados), ayudantes de cuidado personal",,,,,,,,,,
 c19.eligibility.moreinfo/healthcare_worker.ks.1c,"Healthcare workers include but are not limited to the following:
 
 Staff in long-term care facilities
@@ -106,7 +106,7 @@ Morticians, forensic and funeral service workers
 Staff in Federally Qualified Health Centers (FQHC); community health centers (CHC); safety-net/ free clinics; faith-based outreach clinics -- inclusive of state-funded clinics
 Home health aides, nursing assistants
 Veterinarians
-",,,,,,,,,,,,"Los trabajadores sanitarios incluyen, entre otros, lo siguiente:
+",,,,"Los trabajadores sanitarios incluyen, entre otros, lo siguiente:
 
 Personal en centros de atención a largo plazo
 Trabajadores en contacto directo con pacientes, por ejemplo, Médicos Médicos (MD); Doctores en Osteopatía (DO); Doctores en Medicina Podiátrica (DPM); enfermeras; Técnicos Médicos de Emergencia (EMT); estudiantes clínicos y aprendices -- no incluye socorristas y despachos que sean priorizados en la Fase 2.
@@ -119,7 +119,7 @@ Morticios, trabajadores forenses y del servicio funerario
 Personal de centros de salud calificados federalmente (FQHC); centros de salud comunitarios (CHC); redes de seguridad/ clínicas gratuitas; clínicas de divulgación basadas en la fe - incluyendo clínicas financiadas por el estado
 Ayudantes de salud en el hogar, auxiliares de enfermería
 Veterinarios
-",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+",,,,,,,,,,
 c19.eligibility.moreinfo/healthcare_worker.ks.1a,"Healthcare workers include but are not limited to the following:
 
 Staff in long-term care facilities
@@ -133,7 +133,7 @@ Morticians, forensic and funeral service workers
 Staff in Federally Qualified Health Centers (FQHC); community health centers (CHC); safety-net/ free clinics; faith-based outreach clinics -- inclusive of state-funded clinics
 Home health aides, nursing assistants
 Veterinarians
-",,,,,,,,,,,,"Los trabajadores sanitarios incluyen, entre otros, lo siguiente:
+",,,,"Los trabajadores sanitarios incluyen, entre otros, lo siguiente:
 
 Personal en centros de atención a largo plazo
 Trabajadores en contacto directo con pacientes, por ejemplo, Médicos Médicos (MD); Doctores en Osteopatía (DO); Doctores en Medicina Podiátrica (DPM); enfermeras; Técnicos Médicos de Emergencia (EMT); estudiantes clínicos y aprendices -- no incluye socorristas y despachos que sean priorizados en la Fase 2.
@@ -146,7 +146,7 @@ Morticios, trabajadores forenses y del servicio funerario
 Personal de centros de salud calificados federalmente (FQHC); centros de salud comunitarios (CHC); redes de seguridad/ clínicas gratuitas; clínicas de divulgación basadas en la fe - incluyendo clínicas financiadas por el estado
 Ayudantes de salud en el hogar, auxiliares de enfermería
 Veterinarios
-",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+",,,,,,,,,,
 c19.eligibility.moreinfo/congregate.do.ks.4,"Congregate settings include but are not limited to the following:
 
 Homeless shelters and other homeless housing settings and dwelling places
@@ -156,7 +156,7 @@ Corrections facilities, including jails and juvenile justice facilities
 Behavioral Health institutions (including mental health institutions) and residential treatment centers
 Adult care homes, residents and staff in home plus facilities not covered in Phase 1
 Senior living homes
-Home care givers (paid or unpaid), personal care aides",,,,,,,,,,,,"La configuración de congregación incluye, entre otras, lo siguiente:
+Home care givers (paid or unpaid), personal care aides",,,,"La configuración de congregación incluye, entre otras, lo siguiente:
 
 Refugios para personas sin hogar y otros entornos de viviendas para personas sin hogar y lugares de vivienda
 Congregar instituciones de cuidado infantil, servicios de protección para adultos e hijos
@@ -165,7 +165,7 @@ Centros correccionales, incluyendo cárceles e instalaciones de justicia juvenil
 Instituciones de salud conductual (incluidas las instituciones de salud mental) y centros de tratamiento residencial
 Hogares de cuidado para adultos, residentes y personal en el hogar más instalaciones no cubiertas en la Fase 1
 Hogares de ancianos
-Cuidadores en el hogar (pagados o no pagados), ayudantes de cuidado personal",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Cuidadores en el hogar (pagados o no pagados), ayudantes de cuidado personal",,,,,,,,,,
 c19.eligibility.moreinfo/health.ks.4,"This includes those with: 
 - Cancer
 - Chronic kidney disease
@@ -188,7 +188,7 @@ deficiencies, HIV, use of corticosteroids, or use of other immune weakening medi
 - Pulmonary fibrosis (having damaged or scarred lung tissues)
 - Thalassemia (a type of blood disorder)
 - Type 1 diabetes mellitus
-- Obesity and severe obesity",,,,,,,,,,,,"Esto incluye aquellos con: 
+- Obesity and severe obesity",,,,"Esto incluye aquellos con: 
 - Cáncer
 - Enfermedad renal crónica
 - Enfermedad pulmonar obstructiva crónica;
@@ -210,7 +210,7 @@ deficiencias, VIH, uso de corticosteroides o uso de otros medicamentos inmunitar
 - Fibrosis pulmonar (tener tejidos pulmonares dañados o marcados)
 - Talasemia (un tipo de trastorno sanguíneo)
 - Diabetes mellitus tipo 1
-- Obesidad y obesidad severa",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+- Obesidad y obesidad severa",,,,,,,,,,
 c19.eligibility.moreinfo/essential_worker.ks.4,"This includes:
 - Firefighters, police officers, first responders, correction officers
 - Grocery store workers and food services
@@ -232,7 +232,7 @@ this includes aviation, production of critical supplies for the COVID response
 - Logistics workers, such as truck transportation workers, couriers and others
 - Water and wastewater workers
 - Shelter and housing (e.g., construction) workers, finance (e.g., bank tellers)
-- Information technology and communications workers",,,,,,,,,,,,"Esto incluye:
+- Information technology and communications workers",,,,"Esto incluye:
 - Bomberos, policías, socorristas, oficiales de corrección
 - Trabajadores de supermercados y servicios de alimentación
 - K-12 y trabajadores de cuidado infantil, incluyendo maestros, custodios, conductores y otro personal
@@ -253,7 +253,7 @@ esto incluye la aviación, la producción de suministros críticos para la respu
 - Trabajadores logísticos, como trabajadores de transporte de camiones, mensajeros y otros
 - Trabajadores de agua y aguas residuales
 - Trabajadores de refugio y vivienda (por ejemplo, construcción), finanzas (por ejemplo, cajeros bancarios)
-- Trabajadores de las tecnologías de la información y las comunicaciones",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+- Trabajadores de las tecnologías de la información y las comunicaciones",,,,,,,,,,
 c19.eligibility.moreinfo/healthcare_worker.ks.4,"This includes:
 - Workers in direct contact with patients, e.g., MD/DO/DPM, nurses, EMTs, clinical students and trainees
 - Diagnostic labs, phlebotomists, pandemic health workers (e.g., individuals performing COVID tests)
@@ -263,7 +263,7 @@ c19.eligibility.moreinfo/healthcare_worker.ks.4,"This includes:
 - Home care workers, CMS-designated caretaker
 - Morticians, forensic and funeral service workers;
 - Staff in FQHCs, CHCs, safety-net/ free clinics, faith-based outreach clinics (inclusive of state-funded clinics)
-- Home health aides, nursing assistants",,,,,,,,,,,,"Esto incluye:
+- Home health aides, nursing assistants",,,,"Esto incluye:
 - Trabajadores en contacto directo con pacientes, por ejemplo, MD/DO/DPM, enfermeras, EMTs, estudiantes clínicos y aprendices
 - Laboratorios de diagnóstico, flebotomistas, trabajadores de la salud pandémica (por ejemplo, individuos que realizan pruebas COVID)
 - Proveedores de atención médica mental, personal de farmacia, personal no médico - si están expuestos a pacientes o materiales infecciosos;
@@ -272,4 +272,4 @@ c19.eligibility.moreinfo/healthcare_worker.ks.4,"This includes:
 - Trabajadores de cuidado en el hogar, cuidador designado por CMS
 - Morticios, trabajadores forenses y del servicio funerario;
 - Personal en FQHCs, CHCs, clínicas gratuitas/de red de seguridad, clínicas de divulgación basadas en la fe (incluidas las clínicas financiadas por el Estado)
-- Ayudantes de salud en el hogar, auxiliares de enfermería",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+- Ayudantes de salud en el hogar, auxiliares de enfermería",,,,,,,,,,
