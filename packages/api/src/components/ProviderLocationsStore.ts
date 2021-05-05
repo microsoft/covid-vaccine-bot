@@ -54,7 +54,7 @@ export class ProviderLocationsStore {
 			console.log(`radius ${currentRadius}: ${currentResult.length} hits`)
 
 			// merge the new locations in
-			for (let location of currentResult) {
+			for (const location of currentResult) {
 				if (!result.has(location.provider_id)) {
 					result.set(location.provider_id, location)
 				}
