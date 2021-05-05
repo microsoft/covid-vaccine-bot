@@ -15,7 +15,7 @@ export const getCustomString = (
 	const currentLocationRoot = currentLocation.info.path.split('/')[0]
 
 	const rootRepo = repoFileData[currentLocationRoot]
-	
+
 	const stringsList: any[] = currentLocation
 		? [
 				...Object.entries(currentLocation.strings?.content ?? {}),
@@ -60,7 +60,7 @@ export const getLocationPhaseData = (
 
 		if (parentLocationVaccinationData) {
 			phases = clone(parentLocationVaccinationData.content.phases)
-			activePhase = clone(parentLocationVaccinationData.content.activePhase)
+			activePhase = activePhase ?? clone(parentLocationVaccinationData.content.activePhase)
 		} else {
 			return { phases: [], activePhase: '' }
 		}
