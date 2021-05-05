@@ -31,13 +31,14 @@ export const GET: Operation = [
 					.json({ message: `radius must be <= ${MAX_RADIUS} miles` })
 				return
 			}
-			const providers = await providerLocationsStore.getProviderLocations(
+			const providers = await providerLocationsStore.getProviderLocationsAuto(
 				lat,
 				lon,
 				radius,
 				inStock,
 				limit
 			)
+			providers.sort((a, b) => a.distance - b.distance)
 			res.json(providers)
 		} catch (err) {
 			console.error('error: ', err)
