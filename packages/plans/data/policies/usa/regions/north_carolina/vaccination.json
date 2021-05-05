@@ -17,7 +17,8 @@
 			"url": "tel:1-888-675-4567",
 			"text": "c19.link/scheduling.phone.nc",
 			"description": "c19.link/scheduling.phone.description.nc"
-		}
+		},
+		"worflow": {}
 	},
 	"activePhase": "current",
 	"noPhaseLabel": true,
