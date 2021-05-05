@@ -31,34 +31,6 @@
 					"moreInfoUrl": "https://covid19.ncdhhs.gov/vaccines"
 				}
 			]
-		},
-		{
-			"id": "group_4",
-			"label": "Group 4",
-			"qualifications": [
-				{
-					"question": "c19.eligibility.question/healthcare_worker.are"
-				},
-				{
-					"question": "c19.eligibility.question/long_term_care_resident.are"
-				},
-				{
-					"question": "c19.eligibility.question/age.65_up"
-				},
-				{
-					"question": "c19.eligibility.question/essential_worker",
-					"moreInfoUrl": "https://covid19.ncdhhs.gov/vaccines/find-your-spot-take-your-shot/deeper-dive-group-4"
-				},
-				{
-					"question": "c19.eligibility.question/congregate",
-					"moreInfoText": "c19.eligibility.moreinfo/congregate.nc.group_4"
-				},
-				{
-					"question": "c19.eligibility.question/health",
-					"moreInfoUrl": "https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html",
-					"moreInfoText": "c19.eligibility.moreinfo/health.nc.group_4"
-				}
-			]
 		}
 	]
 }
