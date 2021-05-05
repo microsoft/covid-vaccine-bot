@@ -34,6 +34,37 @@ const FIND_PROVIDERS_IN_RADIUS_WITH_STOCK = `
 export class ProviderLocationsStore {
 	public constructor(private container: Container) {}
 
+	public async getProviderLocationsAuto(
+		lat: number,
+		lon: number,
+		maxRadius: number,
+		inStockOnly: boolean,
+		limit: number
+	): Promise<ProviderLocation[]> {
+		const result = new Map<string, ProviderLocation>()
+		let currentRadius = 1
+		while (result.size < limit && currentRadius < maxRadius) {
+			const currentResult = await this.getProviderLocations(
+				lat,
+				lon,
+				currentRadius,
+				inStockOnly,
+				limit
+			)
+			console.log(`radius ${currentRadius}: ${currentResult.length} hits`)
+
+			// merge the new locations in
+			for (const location of currentResult) {
+				if (!result.has(location.provider_id)) {
+					result.set(location.provider_id, location)
+				}
+			}
+
+			currentRadius = Math.min(currentRadius * 2, maxRadius)
+		}
+		return [...result.values()]
+	}
+
 	public async getProviderLocations(
 		lat: number,
 		lon: number,
@@ -72,7 +103,6 @@ export class ProviderLocationsStore {
 			const dist = geodist(queryPos, itemPos, { unit: 'mi', exact: true })
 			loc.distance = dist
 		}
-		const result = locations.resources.sort((a, b) => a.distance - b.distance)
-		return result
+		return locations.resources
 	}
 }
