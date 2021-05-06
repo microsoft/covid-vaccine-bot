@@ -79,14 +79,18 @@ async function geocodeLocation(
 	provider: ProviderLocation,
 	cache: GeoCache
 ): Promise<boolean> {
-	const [point, cacheHit] = await getPosition(provider, cache)
-	if (point) {
-		provider.position = {
-			type: 'Point',
-			coordinates: point,
+	if (provider.position == null) {
+		const [coordinates, cacheHit] = await getPosition(provider, cache)
+		if (coordinates) {
+			provider.position = {
+				type: 'Point',
+				coordinates,
+			}
 		}
+		return cacheHit
+	} else {
+		return true
 	}
-	return cacheHit
 }
 
 async function getPosition(
