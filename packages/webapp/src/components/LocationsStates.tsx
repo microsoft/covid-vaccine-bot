@@ -97,8 +97,8 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 					})
 				}
 			)
-			setFilteredStateList(nextFilteredStateList)
-			stateRepoFullList.current = nextFilteredStateList
+			setFilteredStateList(nextFilteredStateList.sort((a, b) => (a.text > b.text ? 1 : -1)))
+			stateRepoFullList.current = nextFilteredStateList.sort((a, b) => (a.text > b.text ? 1 : -1))
 		}
 	}, [locationList, state.currentLanguage, state.repoFileData])
 
