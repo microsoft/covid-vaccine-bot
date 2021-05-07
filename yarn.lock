@@ -2442,7 +2442,6 @@ __metadata:
   dependencies:
     "@azure/cosmos": ^3.11.0
     "@azure/functions": ^1.2.3
-    "@azure/storage-blob": ^12.5.0
     "@essex/scripts": ^14.0.0
     "@tsconfig/node14": ^1.0.0
     "@types/config": ^0.0.38
@@ -2450,7 +2449,6 @@ __metadata:
     "@types/node": ^14.14.43
     "@types/progress": ^2.0.3
     aws-sdk: ^2.896.0
-    axios: ^0.21.1
     batch2: ^2.0.0
     config: ^3.3.6
     csv-parse: ^4.15.4

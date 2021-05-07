@@ -6,10 +6,9 @@
 import fs from 'fs'
 import path from 'path'
 import parse from 'csv-parse/lib/sync'
-
 import { CACHE_DIR } from '../cache'
 import { getFiles, getLatestFile } from '../io'
-import { ProviderLocation, ProviderLocationCsv } from '../types'
+import { GeoPoint, ProviderLocation, ProviderLocationCsv } from '../types'
 
 const PNF = require('google-libphonenumber').PhoneNumberFormat
 const phoneUtil = require('google-libphonenumber').PhoneNumberUtil.getInstance()
@@ -25,6 +24,8 @@ const DATE_COLS: Record<string, boolean> = {
 const NUMBER_COLS: Record<string, boolean> = {
 	supply_level: true,
 	loc_store_no: true,
+	latitude: true,
+	longitude: true,
 }
 
 function getSourceFile(): string {
@@ -77,6 +78,14 @@ export async function transformData(): Promise<void> {
 			console.log('error parsing raw phone number', row.loc_phone)
 		}
 
+		const position: { type: 'Point'; coordinates: GeoPoint } | undefined =
+			row.latitude != null && row.longitude != null
+				? {
+						type: 'Point',
+						coordinates: [row.longitude, row.latitude],
+				  }
+				: undefined
+
 		const rec: ProviderLocation = {
 			provider_id,
 			location: {
@@ -89,6 +98,7 @@ export async function transformData(): Promise<void> {
 				state: row.loc_admin_state,
 				zip: row.loc_admin_zip,
 			},
+			position,
 			hours: {
 				sunday: row.sunday_hours,
 				monday: row.monday_hours,

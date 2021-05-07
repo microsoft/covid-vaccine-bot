@@ -74,4 +74,6 @@ export interface ProviderLocationCsv {
 	supply_level: number
 	quantity_last_updated: Date
 	med_name: string
+	latitude: number
+	longitude: number
 }
