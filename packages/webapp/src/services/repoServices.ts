@@ -14,7 +14,7 @@ import {
 const githubRepoOwner = process.env.REACT_APP_REPO_OWNER
 const githubRepoName = process.env.REACT_APP_REPO_NAME
 
-const createPath = (obj: any, pathInput: string, value: any = undefined) => {
+const createPath = (obj: any, pathInput: string, value: any = undefined, setNewValue: boolean = false) => {
 	let path = pathInput.split('/')
 	let current = obj
 	while (path.length > 1) {
@@ -26,11 +26,12 @@ const createPath = (obj: any, pathInput: string, value: any = undefined) => {
 		current = current[head]
 	}
 	if (!current[path[0]]) {
-		current[path[0]] = {}
+		current[path[0]] = setNewValue ? value : {}
 	} else {
 		current[path[0]] = { ...current[path[0]], ...value }
 	}
 }
+
 
 export const gitFetch = async (
 	url: string,
@@ -325,6 +326,104 @@ export const repoServices = async (
 				}
 
 				return stateData}
+			case 'loadAllLocationData':{
+
+				const locationId = extraData.info.content.id
+
+				// fix this to load from right branch
+				const query = true
+					? `contents/packages/plans/data/policies/${locationId}?ref=${process.env.REACT_APP_MAIN_BRANCH}`
+					: `contents/packages/plans/data/policies/${locationId}?ref=${extraData}`
+
+				const dataFolderObj = await gitFetch(query)
+
+				const locationRegionsFolder = dataFolderObj.find(
+					(folder: { name: string }) => folder.name === 'regions'
+				).git_url
+
+				const loadRegionsResponse = await gitFetch(
+					`${locationRegionsFolder}?recursive=true`
+				)
+
+				const stateData: any = {}
+
+				const promiseList:	any[] = []
+
+				loadRegionsResponse.tree.forEach( async (element:any) => {
+
+					if(element.type !== 'tree'){
+						const lastInstance = element.path.lastIndexOf('/')
+						const fileName: string = element.path.substring(lastInstance + 1)
+						const fileExt = fileName.split('.')[1].toLowerCase()
+						if(['csv','json'].includes(fileExt) ){
+						promiseList.push( fetch(`${element.url}`, {
+														method: 'GET',
+														headers: {
+															Authorization: `token ${state.accessToken}`,
+														},
+													}).then( result => result.json()).then( data => [element,data] ))
+					}
+				}
+
+				} )
+
+				const response =  await Promise.allSettled(promiseList)
+
+				response.forEach( (filePromise:any) => {
+
+					if(filePromise.status === 'fulfilled' && filePromise.value){
+						const fileInfo = filePromise.value[0]
+						const fileData = filePromise.value[1]
+						
+						const lastInstance = fileInfo.path.lastIndexOf('/')
+						const filePath = fileInfo.path.substring(0, lastInstance)
+						const fileName: string = fileInfo.path.substring(lastInstance + 1)
+						const fileType: string = fileName.split('.')[0]
+						const fileObj: any = {}
+						const fileExt = fileName.split('.')[1].toLowerCase()
+
+
+
+						switch (fileExt) {
+							case 'json':{
+
+								fileObj[fileType] = {
+									name: fileName,
+									type: fileType,
+									sha: fileInfo.sha,
+									url: fileInfo.url,
+									path: `${locationId}/regions/${fileInfo.path}`,
+									content: JSON.parse(b64_to_utf8(fileData.content)),
+								}
+								break
+							}
+
+							case 'csv':{
+
+								fileObj['strings'] = {
+									name: fileName,
+									type: fileType,
+									sha: fileInfo.sha,
+									url: fileInfo.url,
+									path: `${locationId}/regions/${fileInfo.path}`,
+									content: convertCSVDataToObj(parse(b64_to_utf8(fileData.content), { columns: true })),
+								}
+
+								break
+								}
+						}
+
+						if (fileObj !== {}) {
+							createPath(stateData, filePath, fileObj, true)
+						}
+					}
+
+				} )
+
+
+
+			return stateData
+			}
 
 			case 'loadAllStringsData':
 				const query = !extraData

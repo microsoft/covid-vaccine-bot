@@ -76,8 +76,8 @@ export default observer(function QualifierPanel() {
 				if (!questionItemKeys.includes(key)) {
 					questionItemKeys.push(key)
 
-					//const smsKey = key.replace('.question/','.question.sms/')
-					//const voiceKey = key.replace('.question/','.question.voice/')
+					const smsKey = key.replace('.question/','.question.sms/')
+					const voiceKey = key.replace('.question/','.question.voice/')
 
 					tempQualifierGroupItems.push({
 						key: key,
@@ -87,8 +87,8 @@ export default observer(function QualifierPanel() {
 									'QualifierPanel.translationNotFound'
 							)} (${currentLanguage})`,
 						text: contentObj[key]?.[currentLanguage] || '',
-						//sms: contentObj[smsKey]?.[currentLanguage] || '',
-						//voice: contentObj[voiceKey]?.[currentLanguage] || '',
+						sms: contentObj[smsKey]?.[currentLanguage] || '',
+						voice: contentObj[voiceKey]?.[currentLanguage] || '',
 					})
 				}
 			})

@@ -9,8 +9,8 @@ import {
 	loadPR,
 	loadBranch,
 	saveContinue,
-	getLocationData,
-	loadAllStringsData
+	loadAllStringsData,
+	loadAllLocationData
 } from '../actions/repoActions'
 import {
 	setUserAccessExpired,
@@ -220,11 +220,12 @@ orchestrator(saveContinue, async () => {
 })
 
 
-orchestrator(getLocationData, async (message) => {
+
+orchestrator(loadAllLocationData, async (message) => {
 	const { location } = message
 	setIsDataRefreshing(true)
 
-	const resp = await repoServices('getLocationData', location)
-	setLocationData(resp)
+	const resp = await repoServices('loadAllLocationData', location)
+	setLocationData(resp, location)
 	setIsDataRefreshing(false)
 })

@@ -28,13 +28,12 @@ import LocationForm from './LocationForm'
 import './Locations.scss'
 
 export interface LocationsStatesProp {
-	locationList: any
 	currentLocation: any
 	onSelectedItem: (item: any) => void
 }
 
 export default observer(function LocationsStates(props: LocationsStatesProp) {
-	const { onSelectedItem, locationList, currentLocation } = props
+	const { onSelectedItem, currentLocation } = props
 
 	const [
 		isLocationModalOpen,
@@ -80,9 +79,11 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 	].filter(filterEditable)
 
 	useEffect(() => {
-		if (locationList) {
+		const tempLocationlist = currentLocation ? currentLocation.regions : state.repoFileData
+
+		if (tempLocationlist) {
 			const nextFilteredStateList: any[] = []
-			Object.entries(locationList).forEach(
+			Object.entries(tempLocationlist).forEach(
 				([locKey, locDetails]: [string, any]) => {
 					const locationName =
 						getCustomString(locDetails, locDetails?.info?.content?.name) ||
@@ -100,7 +101,11 @@ export default observer(function LocationsStates(props: LocationsStatesProp) {
 			setFilteredStateList(nextFilteredStateList.sort((a, b) => (a.text > b.text ? 1 : -1)))
 			stateRepoFullList.current = nextFilteredStateList.sort((a, b) => (a.text > b.text ? 1 : -1))
 		}
-	}, [locationList, state.currentLanguage, state.repoFileData])
+		else {
+			setFilteredStateList([])
+			stateRepoFullList.current = []
+		}
+	}, [currentLocation, state.currentLanguage, state.repoFileData])
 
 	const onStateFilter = useCallback(
 		(_event: any, text?: string) => {

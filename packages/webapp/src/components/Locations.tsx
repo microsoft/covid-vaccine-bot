@@ -6,7 +6,7 @@ import { ProgressIndicator } from '@fluentui/react'
 import { useBoolean } from '@uifabric/react-hooks'
 import { observer } from 'mobx-react-lite'
 import { useCallback, useState, useEffect } from 'react'
-import { getLocationData } from '../actions/repoActions'
+import { loadAllLocationData } from '../actions/repoActions'
 import {
 	addPhaseOverviewCrumb,
 	deleteCrumbs,
@@ -34,9 +34,7 @@ export default observer(function Locations() {
 		currentLanguage,
 		breadCrumbs,
 	} = getAppStore()
-	const [currentLocationList, setCurrentLocationList] = useState<any>(
-		repoFileData
-	)
+
 	const [currentLocation, setCurrentLocation] = useState<any>()
 	const [
 		isPhaseSelected,
@@ -59,16 +57,12 @@ export default observer(function Locations() {
 				newTitle = `${locationName} ${phaseOverviewText}`
 				updatePhaseOverviewTitle(newTitle)
 			}
-			currentLocation?.regions
-				? setCurrentLocationList(currentLocation.regions)
-				: setCurrentLocationList([])
 			setCurrentLocationTitle(newTitle as string)
 		} else {
 			setBreadcrumbs(undefined)
 			setCurrentLocationTitle(null)
-			setCurrentLocationList(repoFileData)
 		}
-	}, [currentLocation, breadCrumbs.phase_overview, phaseOverviewText,repoFileData])
+	}, [currentLocation, breadCrumbs.phase_overview, phaseOverviewText])
 
 	useEffect(() => {
 		updateCurrentLocation()
@@ -80,22 +74,10 @@ export default observer(function Locations() {
 			pathArray.splice(-1, 1)
 
 			const currLocation = pathFind(repoFileData, pathArray)
-
-			if (currLocation?.regions) {
-				for (const value of Object.values(currLocation?.regions)) {
-					const location = value as any
-					if (
-						!location.info.content ||
-						!location.strings.content ||
-						!location.vaccination.content
-					) {
-						await getLocationData(location)
-					}
-					setCurrentLocationList(currLocation.regions)
-				}
-			} else {
-				setCurrentLocationList([])
+			if(pathArray.length === 1 && !currLocation.dataLoaded){
+				loadAllLocationData(currLocation)
 			}
+
 			setCurrentLocation(currLocation)
 			setBreadcrumbs(currLocation)
 		},
@@ -105,7 +87,6 @@ export default observer(function Locations() {
 	const navigateBack = useCallback(
 		(item: any) => {
 			if (item === 'root') {
-				setCurrentLocationList(repoFileData)
 				setCurrentLocation(null)
 				setBreadcrumbs(undefined)
 				setCurrentLocationTitle(null)
@@ -116,7 +97,7 @@ export default observer(function Locations() {
 
 			hidePhaseComponent()
 		},
-		[getLocationsData, repoFileData, hidePhaseComponent]
+		[getLocationsData, hidePhaseComponent]
 	)
 
 	const openPhaseItem = useCallback(() => {
@@ -153,7 +134,6 @@ export default observer(function Locations() {
 								)}
 								<LocationStates
 									currentLocation={currentLocation}
-									locationList={currentLocationList}
 									onSelectedItem={(item) => getLocationsData(item)}
 								/>
 							</>

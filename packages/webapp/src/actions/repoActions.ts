@@ -25,3 +25,5 @@ export const saveContinue = action('saveContinue')
 export const getLocationData = action('getLocationData', (location: any) => ({
 	location
 }))
+
+export const loadAllLocationData = action('loadAllLocationData', (location:any) => ({location}))
