@@ -11,7 +11,7 @@ import { ProviderLocation } from '../types'
 const CHUNK_SIZE = 25
 
 export function getFilePath(): string {
-	return getLatestFilePath().replace('.csv', '.geocoded.json')
+	return getLatestFilePath().replace('.csv', '.json')
 }
 
 export async function writeCosmosData() {

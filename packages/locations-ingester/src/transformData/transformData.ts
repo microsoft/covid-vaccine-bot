@@ -6,7 +6,6 @@
 import fs from 'fs'
 import path from 'path'
 import parse from 'csv-parse/lib/sync'
-
 import { CACHE_DIR } from '../cache'
 import { getFiles, getLatestFile } from '../io'
 import { GeoPoint, ProviderLocation, ProviderLocationCsv } from '../types'
