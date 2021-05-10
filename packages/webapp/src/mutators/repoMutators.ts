@@ -1232,7 +1232,15 @@ const deleteKeyRecursive = ( key:string, dataSource:any, changeList:any ) => {
 			dataSource.vaccination.content.phases.forEach( (phase:any) => {
 
 			if(JSON.stringify(phase)?.toLowerCase().includes(key)){
-				phase.qualifications.forEach( (qualifier:any) => { if(qualifier.questionSms.toLowerCase() === key) { delete qualifier.questionSms }})  
+				phase.qualifications.forEach( (qualifier:any) => { 
+
+					Object.keys(qualifier).forEach( (qualifierKey:string) => { 
+						if(qualifier[qualifierKey].toLowerCase() === key) { delete qualifier[qualifierKey] }
+
+					})
+
+
+				})  
 			}
 
 		} )
@@ -1307,7 +1315,7 @@ export const updateRootLocationQualifiers = mutatorAction(
 			}
 
 			if (!newQualifier.qualifierVoice) {
-				// find all references to this key and delete
+				deleteKeyRecursive(qualifierVoiceKey, store.repoFileData[rootLocationKey], store.pendingChangeList.modified )
 				delete stringsObj[qualifierVoiceKey]
 			} else {
 				// find all references to qualifier and add this key
