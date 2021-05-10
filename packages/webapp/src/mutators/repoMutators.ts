@@ -1269,39 +1269,29 @@ const addKeyRecursive = ( key:string, dataSource:any, changeList:any, isSms:bool
 		const pathArray = dataSource.info.path.split('/')
 		pathArray.splice(-1, 1)
 
-		dataSource.vaccination.content.phases.forEach((phase:any, phaseIdx:number) => {
+		dataSource.vaccination.content.phases.forEach((phase:any) => {
 
 			if(JSON.stringify(phase)?.toLowerCase().includes(key)) {
-				phase.qualifications.forEach((qualifier:any, qualificationIdx:number) => {
-					Object.keys(qualifier).forEach((qualifierKey:string) => {
-						if(qualifier[qualifierKey].toLowerCase() === key) {
+				phase.qualifications.forEach((qualifier:any) => {
+						if(qualifier.question.toLowerCase() === key){
 							if (isSms) {
-								dataSource.vaccination.content.phases[phaseIdx].qualifications[qualificationIdx] = {
-									...dataSource.vaccination.content.phases[phaseIdx].qualifications[qualificationIdx],
-									questionSms: key.replace('.question/','.question.sms/')
-								}
+								qualifier.questionSms = key.replace('.question/','.question.sms/')
 							}
 
-							if (isVoice) {
-								dataSource.vaccination.content.phases[phaseIdx].qualifications[qualificationIdx] = {
-									...dataSource.vaccination.content.phases[phaseIdx].qualifications[qualificationIdx],
-									questionVoice: key.replace('.question/','.question.voice/')
-								}
+							if(isVoice){
+								qualifier.questionVoice = key.replace('.question/','.question.sms/')
 							}
 						}
-					})
-				})
-			}
-		})
-
-		console.log(dataSource.vaccination.content.phases)
-
+			})
+		
 		changeList.push({
 					section: 'phase',
 					name: dataSource.info.content.id,
 					pathKey: pathArray.join("."),
 					data: dataSource
 				})
+		}
+	})
 	}
 }
 
