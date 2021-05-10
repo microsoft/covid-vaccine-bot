@@ -1292,6 +1292,9 @@ export const updateRootLocationQualifiers = mutatorAction(
 				qualifierKey = qualifierKey.endsWith('_')
 					? qualifierKey.substr(0, qualifierKey.length - 1)
 					: qualifierKey
+
+				qualifierSmsKey = qualifierKey.replace('.question/','.question.sms/')
+				qualifierVoiceKey = qualifierKey.replace('.question/','.question.voice/')
 			} else {
 				qualifierKey = newQualifier.key
 				qualifierSmsKey = newQualifier.key.replace('.question/','.question.sms/')
