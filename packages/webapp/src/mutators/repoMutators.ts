@@ -1272,22 +1272,29 @@ const addKeyRecursive = ( key:string, dataSource:any, changeList:any, isSms:bool
 			if(JSON.stringify(phase)?.toLowerCase().includes(key)) {
 				phase.qualifications.forEach((qualifier:any) => {
 						if(qualifier.question.toLowerCase() === key){
-							if (isSms) {
+							if (isSms && !qualifier.questionSms) {
 								qualifier.questionSms = key.replace('.question/','.question.sms/')
+								changeList.push({
+									section: 'phase',
+									name: dataSource.info.content.id,
+									pathKey: pathArray.join("."),
+									data: dataSource
+								})
 							}
 
-							if(isVoice){
-								qualifier.questionVoice = key.replace('.question/','.question.sms/')
+							if(isVoice && !qualifier.questionVoice){
+								qualifier.questionVoice = key.replace('.question/','.question.voice/')
+								changeList.push({
+												section: 'phase',
+												name: dataSource.info.content.id,
+												pathKey: pathArray.join("."),
+												data: dataSource
+											})
 							}
 						}
 			})
 		
-		changeList.push({
-					section: 'phase',
-					name: dataSource.info.content.id,
-					pathKey: pathArray.join("."),
-					data: dataSource
-				})
+		
 		}
 	})
 	}
