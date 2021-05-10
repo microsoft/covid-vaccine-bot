@@ -1212,8 +1212,6 @@ export const setActivePhase = mutatorAction(
 )
 
 const deleteKeyRecursive = ( key:string, dataSource:any, changeList:any ) => {
-
-	console.log("deleting key", key, dataSource.info.path, dataSource)
 	if(dataSource.regions){
 		for(const region in dataSource.regions){
 			console.log(region)
@@ -1351,7 +1349,6 @@ export const updateRootLocationQualifiers = mutatorAction(
 				deleteKeyRecursive(qualifierSmsKey, store.repoFileData[rootLocationKey], store.pendingChangeList.modified )
 				delete stringsObj[qualifierSmsKey]
 			} else if(newQualifier.qualifierSms){
-				// find all references to qualifier and add this key
 				addKeyRecursive(qualifierKey, store.repoFileData[rootLocationKey], store.pendingChangeList.modified, true, false)
 				stringsObj[qualifierSmsKey] = {
 					...stringsObj[qualifierSmsKey],
@@ -1359,11 +1356,10 @@ export const updateRootLocationQualifiers = mutatorAction(
 				}
 			}
 
-			if (!newQualifier.qualifierVoice) {
+			if (!newQualifier.qualifierVoice && !newQualifier.isNew) {
 				deleteKeyRecursive(qualifierVoiceKey, store.repoFileData[rootLocationKey], store.pendingChangeList.modified )
 				delete stringsObj[qualifierVoiceKey]
-			} else {
-				// find all references to qualifier and add this key
+			} else if(newQualifier.qualifierVoice){
 				addKeyRecursive(qualifierKey, store.repoFileData[rootLocationKey], store.pendingChangeList.modified, false, true)
 				stringsObj[qualifierVoiceKey] = {
 					...stringsObj[qualifierVoiceKey],
