@@ -1254,6 +1254,57 @@ const deleteKeyRecursive = ( key:string, dataSource:any, changeList:any ) => {
 	}
 }
 
+const addKeyRecursive = ( key:string, dataSource:any, changeList:any, isSms:boolean = false, isVoice: boolean = false) => {
+	if(dataSource.regions){
+		for(const region in dataSource.regions){
+			const location = dataSource.regions[region]
+			if(JSON.stringify(location)?.toLowerCase().includes(key)){
+				addKeyRecursive(key, location, changeList, isSms, isVoice)
+			}
+		}
+	}
+
+	if(JSON.stringify(dataSource.vaccination.content)?.toLowerCase().includes(key))
+	{
+		const pathArray = dataSource.info.path.split('/')
+		pathArray.splice(-1, 1)
+
+		dataSource.vaccination.content.phases.forEach((phase:any, phaseIdx:number) => {
+
+			if(JSON.stringify(phase)?.toLowerCase().includes(key)) {
+				phase.qualifications.forEach((qualifier:any, qualificationIdx:number) => {
+					Object.keys(qualifier).forEach((qualifierKey:string) => {
+						if(qualifier[qualifierKey].toLowerCase() === key) {
+							if (isSms) {
+								dataSource.vaccination.content.phases[phaseIdx].qualifications[qualificationIdx] = {
+									...dataSource.vaccination.content.phases[phaseIdx].qualifications[qualificationIdx],
+									questionSms: key.replace('.question/','.question.sms/')
+								}
+							}
+
+							if (isVoice) {
+								dataSource.vaccination.content.phases[phaseIdx].qualifications[qualificationIdx] = {
+									...dataSource.vaccination.content.phases[phaseIdx].qualifications[qualificationIdx],
+									questionVoice: key.replace('.question/','.question.voice/')
+								}
+							}
+						}
+					})
+				})
+			}
+		})
+
+		console.log(dataSource.vaccination.content.phases)
+
+		changeList.push({
+					section: 'phase',
+					name: dataSource.info.content.id,
+					pathKey: pathArray.join("."),
+					data: dataSource
+				})
+	}
+}
+
 export const updateRootLocationQualifiers = mutatorAction(
 	'updateRootLocationQualifiers',
 	({ rootLocationKey, newQualifier }: any | undefined) => {
@@ -1309,8 +1360,9 @@ export const updateRootLocationQualifiers = mutatorAction(
 			if (!newQualifier.qualifierSms && !newQualifier.isNew) {
 				deleteKeyRecursive(qualifierSmsKey, store.repoFileData[rootLocationKey], store.pendingChangeList.modified )
 				delete stringsObj[qualifierSmsKey]
-			} else if(newQualifier.qualifierSms){ 
+			} else if(newQualifier.qualifierSms){
 				// find all references to qualifier and add this key
+				addKeyRecursive(qualifierKey, store.repoFileData[rootLocationKey], store.pendingChangeList.modified, true, false)
 				stringsObj[qualifierSmsKey] = {
 					...stringsObj[qualifierSmsKey],
 					[store.currentLanguage]: newQualifier.qualifierSms,
@@ -1322,6 +1374,7 @@ export const updateRootLocationQualifiers = mutatorAction(
 				delete stringsObj[qualifierVoiceKey]
 			} else {
 				// find all references to qualifier and add this key
+				addKeyRecursive(qualifierKey, store.repoFileData[rootLocationKey], store.pendingChangeList.modified, false, true)
 				stringsObj[qualifierVoiceKey] = {
 					...stringsObj[qualifierVoiceKey],
 					[store.currentLanguage]: newQualifier.qualifierVoice,
