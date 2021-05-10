@@ -271,5 +271,5 @@ c19.eligibility.question/health.are_you_a_person_aged,"Are you a person aged 16+
 c19.eligibility.question/health.are_you_age_35,"Are you age 35+, and have a high-risk medical condition?",,,,"¿Tiene más de 35 años y padece una afección médica de alto riesgo?",,,,,,,,,,
 c19.eligibility.question/age.are_you_20,"Are you 20+?",,,,"¿Tienes más de 20 años?",,,,,,,,,,
 c19.eligibility.question/age.below,"below 16?",,,,,,,,,,,,,,
-c19.eligibility.question.sms/age.below,"16 below sms?",,,,,,,,,,,,,,
-c19.eligibility.question.voice/age.below,"16 below voice?",,,,,,,,,,,,,,
+c19.eligibility.question.sms/age.below,"16 below sms? edited",,,,,,,,,,,,,,
+c19.eligibility.question.voice/age.below,"16 below voice? edited",,,,,,,,,,,,,,
