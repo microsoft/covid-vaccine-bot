@@ -69,7 +69,7 @@ export const getExactCustomStrings = (
 }
 
 export const getPhaseQualifierItems = (currentLocation?: any): any => {
-	return getCustomStrings(currentLocation, 'eligibility.question')
+	return getCustomStrings(currentLocation, 'eligibility.question/')
 }
 
 export const getPhaseTagItems = (
