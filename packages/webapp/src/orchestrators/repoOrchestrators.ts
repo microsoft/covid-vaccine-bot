@@ -223,9 +223,14 @@ orchestrator(saveContinue, async () => {
 
 orchestrator(loadAllLocationData, async (message) => {
 	const { location } = message
+	const { loadedPRData, userWorkingBranch } = getAppStore()
 	setIsDataRefreshing(true)
 
-	const resp = await repoServices('loadAllLocationData', location)
+	const extraData = {
+		locationId: location.info.content.id,
+		repoRef: loadedPRData ? loadedPRData.head.sha : userWorkingBranch || undefined
+	}
+	const resp = await repoServices('loadAllLocationData', extraData)
 	setLocationData(resp, location)
 	setIsDataRefreshing(false)
 })

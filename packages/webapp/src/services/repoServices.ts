@@ -398,12 +398,12 @@ export const repoServices = async (
 				return stateData
 			}
 			case 'loadAllLocationData': {
-				const locationId = extraData.info.content.id
+				const { locationId, repoRef } = extraData
 
 				// fix this to load from right branch
-				const query = true
+				const query = !repoRef
 					? `contents/packages/plans/data/policies/${locationId}?ref=${process.env.REACT_APP_MAIN_BRANCH}`
-					: `contents/packages/plans/data/policies/${locationId}?ref=${extraData}`
+					: `contents/packages/plans/data/policies/${locationId}?ref=${repoRef}`
 
 				const dataFolderObj = await gitFetch(query)
 
