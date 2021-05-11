@@ -3,7 +3,9 @@
 		"info": {
 			"text": "cdc/pennsylvania/state_link",
 			"url": "https://www.health.pa.gov/topics/disease/coronavirus/Pages/Vaccine.aspx",
-			"scrapeQuery": ["div[data-name='Page Field: Page Content']"]
+			"scrapeQuery": [
+				"div[data-name='Page Field: Page Content']"
+			]
 		},
 		"workflow": {
 			"url": "https://covidportal.health.pa.gov/s/Your-Turn?language=en_US",
@@ -13,7 +15,8 @@
 			"url": "tel:1-877-724-3258",
 			"text": "c19.link/scheduling.phone.pa",
 			"description": "c19.link/scheduling.phone.description.pa"
-		}
+		},
+		"worflow": {}
 	},
 	"activePhase": "2",
 	"phases": [
@@ -27,5 +30,6 @@
 				}
 			]
 		}
-	]
+	],
+	"noPhaseLabel": false
 }
