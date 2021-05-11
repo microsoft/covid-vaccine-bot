@@ -7152,6 +7152,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/config", "npm:0.0.38"],
             ["@types/lodash", "npm:4.14.168"],
             ["@types/node", "npm:14.14.43"],
+            ["@types/node-fetch", "npm:2.5.10"],
             ["@types/progress", "npm:2.0.3"],
             ["aws-sdk", "npm:2.896.0"],
             ["batch2", "npm:2.0.0"],
@@ -7159,6 +7160,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["csv-parse", "npm:4.15.4"],
             ["google-libphonenumber", "npm:3.2.19"],
             ["lodash", "npm:4.17.21"],
+            ["node-fetch", "npm:2.6.1"],
             ["npm-run-all", "npm:4.1.5"],
             ["ts-node", "virtual:fb6087411169c0acccd3a060948afdb2a98f0b0362be45bc247c14f8265510dd9b0faab93f17b8f1aa20667940e14a7f0b485623c267b48f74a508a102c60b0d#npm:9.1.1"],
             ["typescript", "patch:typescript@npm%3A4.2.4#builtin<compat/typescript>::version=4.2.4&hash=a45b0e"]
