@@ -1,8 +1,8 @@
-String ID,en-us,en-us-sms,en-us-voice,ko-kr,ko-kr-sms,ko-kr-voice,vi-vn,vi-vn-sms,vi-vn-voice,zh-cn,zh-cn-sms,zh-cn-voice,es-us,es-us-sms,es-us-voice,de-de,de-de-sms,de-de-voice,es-es,es-es-sms,es-es-voice,fi-fi,fi-fi-sms,fi-fi-voice,fr-fr,fr-fr-sms,fr-fr-voice,he-il,he-il-sms,he-il-voice,it-it,it-it-sms,it-it-voice,ja-jp,ja-jp-sms,ja-jp-voice,pt-pt,pt-pt-sms,pt-pt-voice,sv-se,sv-se-sms,sv-se-voice,th-th,th-th-sms,th-th-voice
-c19.eligibility.question/essential_worker.1b.ky,"Are you a K-12 personnel or first responder?",,,,,,,,,,,,"¿Es usted un personal K-12 o socorrista?",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-c19.link/scheduling.phone.ky,"855-598-2246",,,,,,,,,,,,"855-598-2246",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-c19.eligibility.moreinfo/long_term_care_resident.are.ky.1a,"This also includes assisted living facilities.",,,,,,,,,,,,"Esto también incluye instalaciones de vida asistida.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-c19.eligibility.moreinfo/long_term_care_resident.ky.1b,"This also includes assisted living facilities.",,,,,,,,,,,,"Esto también incluye instalaciones de vida asistida.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+String ID,en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th
+c19.eligibility.question/essential_worker.1b.ky,"Are you a K-12 personnel or first responder?",,,,"¿Es usted un personal K-12 o socorrista?",,,,,,,,,,
+c19.link/scheduling.phone.ky,"855-598-2246",,,,"855-598-2246",,,,,,,,,,
+c19.eligibility.moreinfo/long_term_care_resident.are.ky.1a,"This also includes assisted living facilities.",,,,"Esto también incluye instalaciones de vida asistida.",,,,,,,,,,
+c19.eligibility.moreinfo/long_term_care_resident.ky.1b,"This also includes assisted living facilities.",,,,"Esto también incluye instalaciones de vida asistida.",,,,,,,,,,
 c19.eligibility.moreinfo/health.ky.1c,"Anyone age 16 or older with any medical or behavioral health condition or conditions that the CDC reports ‘are' or ‘might' be at increased risk of severe COVID-19 illness is eligible. These include the following:
 
 Adults of any age with the following conditions are at increased risk of severe illness from the virus that causes COVID-19:
@@ -33,7 +33,7 @@ Overweight (BMI > 25 kg/m2, but < 30 kg/m2)
 Pulmonary fibrosis (having damaged or scarred lung tissues)
 Thalassemia (a type of blood disorder)
 Type 1 diabetes mellitus
-",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+",,,,,,,,,,,,,,
 c19.eligibility.moreinfo/essential_worker.ky.1c,"Frontline Essential Workers include: 
 Healthcare Personnel
 First Responders (Firefighters, Police)
@@ -55,9 +55,9 @@ Media
 Legal
 Public Safety (Engineers)
 Water & Wastewater
-Clergy",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-c19.eligibility.moreinfo/essential_worker.are.ky.1b,"This includes firefighters, police, and other emergency response as well as corrections officers",,,,,,,,,,,,"Esto incluye bomberos, policías y otras respuestas de emergencia, así como",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-c19.eligibility.moreinfo/long_term_care_resident.are.ky.1c,"Residents of long-term care and assisted living facilities, as well as health care personnel, including clinicians residing outside of Kentucky but who provide care in Kentucky",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Clergy",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/essential_worker.are.ky.1b,"This includes firefighters, police, and other emergency response as well as corrections officers",,,,"Esto incluye bomberos, policías y otras respuestas de emergencia, así como",,,,,,,,,,
+c19.eligibility.moreinfo/long_term_care_resident.are.ky.1c,"Residents of long-term care and assisted living facilities, as well as health care personnel, including clinicians residing outside of Kentucky but who provide care in Kentucky",,,,,,,,,,,,,,
 c19.eligibility.moreinfo/essential_worker.ky.2,"Frontline Essential Workers include: 
 Healthcare Personnel
 First Responders (Firefighters, Police)
@@ -79,8 +79,8 @@ Media
 Legal
 Public Safety (Engineers)
 Water & Wastewater
-Clergy",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-c19.eligibility.moreinfo/long_term_care_resident.are.ky.2,"Residents of long-term care and assisted living facilities, as well as health care personnel, including clinicians residing outside of Kentucky but who provide care in Kentucky",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Clergy",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/long_term_care_resident.are.ky.2,"Residents of long-term care and assisted living facilities, as well as health care personnel, including clinicians residing outside of Kentucky but who provide care in Kentucky",,,,,,,,,,,,,,
 c19.eligibility.moreinfo/health.ky.2,"Anyone age 16 or older with any medical or behavioral health condition or conditions that the CDC reports ‘are' or ‘might' be at increased risk of severe COVID-19 illness is eligible. These include the following:
 
 Adults of any age with the following conditions are at increased risk of severe illness from the virus that causes COVID-19:
@@ -111,4 +111,4 @@ Overweight (BMI > 25 kg/m2, but < 30 kg/m2)
 Pulmonary fibrosis (having damaged or scarred lung tissues)
 Thalassemia (a type of blood disorder)
 Type 1 diabetes mellitus
-",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+",,,,,,,,,,,,,,
