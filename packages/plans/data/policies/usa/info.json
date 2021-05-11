@@ -4,7 +4,8 @@
 	"type": "country",
 	"metadata": {
 		"code_alpha": "USA",
-		"code_numeric": 1
+		"code_numeric": 1,
+		"id_bing": "United States"
 	},
 	"regionTypes": {
 		"state": "usa.regionType.state",

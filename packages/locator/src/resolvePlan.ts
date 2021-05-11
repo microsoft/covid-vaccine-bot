@@ -9,9 +9,13 @@ export function resolvePlan(
 	location: BingLocation,
 	topLevelPlans: Region[]
 ): PlanResult {
-	const stateRegion = getMatchingRegion(location, topLevelPlans)
-	if (!stateRegion || (!stateRegion.plan && !stateRegion.regions)) {
-		throw new Error(`Unable to locate plan for ${location.adminDistrict}.`)
+	const countryRegion = getMatchingRegion(location, topLevelPlans)
+	if (!countryRegion) {
+		throw new Error(`Unable to locate country for location`)
+	}
+	const stateRegion = getMatchingRegion(location, countryRegion.regions || [])
+	if (!stateRegion) {
+		throw new Error(`Unable to locate state/province for location`)
 	}
 
 	return resolvePlanInState(location, stateRegion)
@@ -113,6 +117,10 @@ const REGION_TYPES: Record<
 	string,
 	{ locationsId: string; policyTreeId: string }
 > = {
+	country: {
+		locationsId: 'countryRegion',
+		policyTreeId: 'metadata.id_bing',
+	},
 	state: {
 		locationsId: 'adminDistrict',
 		policyTreeId: 'metadata.code_alpha',

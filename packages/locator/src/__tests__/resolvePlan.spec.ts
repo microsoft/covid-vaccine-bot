@@ -4,8 +4,12 @@
  */
 import { BingLocation, resolvePlan } from '..'
 import { Region } from '@covid-vax-bot/plan-schema'
-import statesData from '@covid-vax-bot/plans/dist/policies.json'
+import data from '@covid-vax-bot/plans/dist/policies.json'
 
+function embedStateRegions(regions: Region[]): Region[] {
+	const usa = (data as Region[]).find((t) => t.id === 'usa') as Region
+	return [{ ...usa, regions: regions }] as Region[]
+}
 describe('The Plan Locator', () => {
 	it('exists', () => {
 		expect(resolvePlan).toBeDefined()
@@ -20,7 +24,7 @@ describe('The Plan Locator', () => {
 			locality: 'Bremerton',
 			postalCode: '98311',
 		}
-		const plan = resolvePlan(location, statesData as Region[])
+		const plan = resolvePlan(location, data as Region[])
 		expect(plan).toBeDefined()
 		expect(plan.phase).toBeDefined()
 		expect(plan.phase?.id).toBeDefined()
@@ -36,7 +40,7 @@ describe('The Plan Locator', () => {
 			locality: 'Boston',
 			postalCode: '02109',
 		}
-		const plan = resolvePlan(location, statesData as Region[])
+		const plan = resolvePlan(location, data as Region[])
 		expect(plan).toBeDefined()
 		expect(plan.phase).toBeDefined()
 		expect(plan.phase?.id).toBeDefined()
@@ -53,7 +57,7 @@ describe('The Plan Locator', () => {
 			locality: 'New York',
 			postalCode: '00011',
 		}
-		const plan = resolvePlan(location, statesData as Region[])
+		const plan = resolvePlan(location, data as Region[])
 		expect(plan).toBeDefined()
 		expect(plan.phase).toBeDefined()
 		expect(plan.phase?.id).toBeDefined()
@@ -114,8 +118,9 @@ describe('The Plan Locator', () => {
 			{
 				adminDistrict: 'AZ',
 				adminDistrict2: 'Maricopa',
+				countryRegion: 'United States',
 			} as BingLocation,
-			regions
+			embedStateRegions(regions)
 		)
 		expect(plan).toBeDefined()
 		expect(plan.links.info).toBeDefined()
@@ -155,8 +160,9 @@ describe('The Plan Locator', () => {
 			{
 				adminDistrict: 'AZ',
 				adminDistrict2: 'Maricopa',
+				countryRegion: 'United States',
 			} as BingLocation,
-			regions
+			embedStateRegions(regions)
 		)
 		expect(plan).toBeDefined()
 		expect(plan.phase?.id).toEqual('phase_1a')
