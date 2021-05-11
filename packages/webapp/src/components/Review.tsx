@@ -96,7 +96,7 @@ export default observer(function Review(props: ReviewProp) {
 		}
 
 		if (state.userWorkingBranch) {
-			const sinceDate = new Date(parseInt(state.userWorkingBranch.split('-policy-')[1])).toISOString()
+			const sinceDate = new Date(parseInt(state.userWorkingBranch.split('-policy-')[1])).toLocaleString('sv').replace(' ','T')
 			return (
 				 <div>{t('Review.OnWorkingBranch',true, githubRepoOwner as string, githubRepoName, state.userWorkingBranch, sinceDate)}</div>
 			)
