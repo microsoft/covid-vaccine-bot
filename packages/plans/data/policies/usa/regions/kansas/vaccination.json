@@ -9,7 +9,8 @@
 		"info": {
 			"url": "https://www.kansasvaccine.gov/",
 			"text": "cdc/kansas/state_link"
-		}
+		},
+		"worflow": {}
 	},
 	"activePhase": "5",
 	"phases": [
@@ -22,5 +23,6 @@
 				}
 			]
 		}
-	]
+	],
+	"noPhaseLabel": false
 }
