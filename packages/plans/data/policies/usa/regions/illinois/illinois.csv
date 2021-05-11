@@ -1,0 +1,51 @@
+String ID,en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th
+c19.eligibility.question/congregate.il,"Do you live in a sheltered population (e.g. homeless, day programs, inmates?)",,,,"¿Vives en una población protegida (por ejemplo, sin hogar, programas diurna, reclusos?)",,,,,,,,,,
+c19.link/scheduling.phone.il,"Scheduling Hotline",,,,"Programación de la línea directa",,,,,,,,,,
+c19.eligibility.moreinfo/healthcare_worker.il.1b,"Health care personnel are defined by the CDC as paid and unpaid workers in health care settings who have the potential for direct or indirect exposure to patients or infectious materials. This includes hospital, non-hospital, congregate, and home health care settings.",,,,"El personal de atención médica es definido por los CDC como trabajadores pagados y no remunerados en entornos de atención médica que tienen el potencial de exposición directa o indirecta a pacientes o materiales infecciosos. Esto incluye los entornos hospitalarios, no hospitalarios, congregados y de atención médica en el hogar.",,,,,,,,,,
+c19.eligibility.moreinfo/essential_worker.il.1b,"Frontline essential workers (who do not work remotely) are defined as those workers who are essential for the functioning of society and include the following: first responders, corrections officers/inmates, food and agriculture workers, US Postal Service workers, manufacturing workers, grocery store workers, public transit workers, education workers (congregate child care, pre-K through 12th grade), and shelters/adult day care",,,,"Los trabajadores esenciales de primera línea (que no trabajan a distancia) se definen como aquellos trabajadores que son esenciales para el funcionamiento de la sociedad e incluyen los siguientes: socorristas, funcionarios de correccionales/reclusos, trabajadores de alimentos y agricultura, trabajadores del Servicio Postal de los Estados Unidos, trabajadores manufactureros, trabajadores de supermercados, trabajadores de transporte público, trabajadores de la educación (cuidado infantil congregado, pre-K hasta el 12º grado), y refugios/guarderías para adultos",,,,,,,,,,
+c19.eligibility.moreinfo/healthcare_worker.il.1bpartii,"Health care personnel are defined by the CDC as paid and unpaid workers in health care settings who have the potential for direct or indirect exposure to patients or infectious materials. This includes hospital, non-hospital, congregate, and home health care settings.",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/essential_worker.il.1bpartii,"Essential workers include the following: first responders, corrections officers/inmates, food and agriculture workers, US Postal Service workers, manufacturing workers, grocery store workers, public transit workers, education workers (congregate child care, pre-K through 12th grade), shelters/adult day care, higher education staff, government workers, media, restaurant staff, construction trade workers, and religious leaders ",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/health.il.1bpartii,"Persons aged 16 to 64 years with medical conditions that increase the risk for severe COVID-19. Conditions include Obesity, Diabetes, Pulmonary Diseases, Smoking, Heart Conditions, Chronic Kidney Disease, Cancer, Solid Organ Transplant, Sickle Cell Disease, Pregnancy, and Persons with Disability.(Not otherwise covered in previous categories).",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/health.il.1c,"Persons aged 16 to 64 years with medical conditions that increase the risk for severe COVID-19. Conditions include Obesity, Diabetes, Pulmonary Diseases, Smoking, Heart Conditions, Chronic Kidney Disease, Cancer, Solid Organ Transplant, Sickle Cell Disease, Pregnancy, and Persons with Disability.(Not otherwise covered in previous categories).",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/congregate.il.il.1c,"Continuing Care Residential Facilities
+Residential Care Adult Homes
+Support Housing for Seniors
+Supportive Residential Facilities for Persons with Developmental Disabilities
+Supportive Residential Facilities for Persons with Severe Mental Illness
+Community Integrated Living Arrangements
+Supervised Residential Facilities for Persons with Developmental Disabilities
+Supervised Residential Facilities for Persons with Severe Mental Illness",,,,"Instalaciones residenciales de atención continua
+Hogares para adultos de cuidado residencial
+Apoyo a la vivienda para personas de la tercera edad
+Instalaciones residenciales de apoyo para personas con discapacidades del desarrollo
+Instalaciones residenciales de apoyo para personas con enfermedad mental grave
+Arreglos de vida integrados comunitarios
+Instalaciones residenciales supervisadas para personas con discapacidades del desarrollo
+Instalaciones residenciales supervisadas para personas con enfermedad mental grave",,,,,,,,,,
+c19.eligibility.moreinfo/healthcare_worker.il.1c,"Health care personnel are defined by the CDC as paid and unpaid workers in health care settings who have the potential for direct or indirect exposure to patients or infectious materials. This includes hospital, non-hospital, congregate, and home health care settings.",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/essential_worker.il.1c,"Frontline essential workers include:
+- Correctional workers and first responders
+- Grocery store workers and manufacturing/factory settings with outbreaks
+- Daycare, K-12 and early education workers
+- Public transit, other manufacturing, and agriculture workers
+- Continuity of government and postal workers
+- Caregivers of medically fragile children or adults
+
+All other essential workers include:
+- Clergy and religious organizations
+- Energy
+- Finance
+- Food and beverage service
+- Higher Education
+- Information Technology and communications
+- Legal
+- Media
+- Other Community- or Government-based Operations and Essential Functions
+- Personal Care Services and hygiene
+- Public health
+- Public safety
+- Retail
+- Shelter and Housing
+- Transportation and Logistics
+- Water and wastewater",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/age.16_up.il.16_and_up,"Chicago not available until April 19th.",,,,,,,,,,,,,,

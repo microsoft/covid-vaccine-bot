@@ -1,9 +1,0 @@
-{
-	"id": "pennsylvania",
-	"name": "Pennsylvania",
-	"type": "state",
-	"metadata": {
-		"code_alpha": "PA",
-		"code_numeric": 42
-	}
-}

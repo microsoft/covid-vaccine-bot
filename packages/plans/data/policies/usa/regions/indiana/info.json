@@ -1,0 +1,9 @@
+{
+	"id": "indiana",
+	"name": "cdc/indiana/state_name",
+	"type": "state",
+	"metadata": {
+		"code_alpha": "IN",
+		"code_numeric": 18
+	}
+}

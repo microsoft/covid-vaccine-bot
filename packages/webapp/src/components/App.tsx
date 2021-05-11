@@ -21,7 +21,7 @@ import { useCallback, useState, useEffect, useRef } from 'react'
 import { Switch, Route, Redirect } from 'react-router-dom'
 import { loginUser, reLoginUser } from '../actions/authActions'
 import { setAppLanguage } from '../actions/intlActions'
-import { initializeGitData, saveContinue } from '../actions/repoActions'
+import { saveContinue } from '../actions/repoActions'
 import { logoutUser } from '../mutators/authMutators'
 import { setCurrentLanguage } from '../mutators/repoMutators'
 import { getText as t } from '../selectors/intlSelectors'
@@ -58,8 +58,8 @@ export default observer(function App() {
 	const personaComponent = useRef(null)
 
 	useEffect(() => {
-		if (state.accessToken && !state.globalFileData) loginUser()
-	}, [state.accessToken, state.globalFileData])
+		if (state.accessToken && !state.repoFileData) loginUser()
+	}, [state.accessToken, state.repoFileData])
 
 	useEffect(() => {
 		if (state.userAccessExpired) showAccessExpirationModal()
@@ -96,11 +96,11 @@ export default observer(function App() {
 	}, [setSelectedKey])
 
 	const onAccessExpirationFormSubmit = useCallback(() => {
-		if (state.globalFileData) reLoginUser()
+		if (state.repoFileData) reLoginUser()
 		else loginUser()
 
 		hideAccessExpirationModal()
-	}, [state.globalFileData, hideAccessExpirationModal])
+	}, [state.repoFileData, hideAccessExpirationModal])
 
 	const renderRepoMessageBar = () => {
 		if (state.loadedPRData && state.prChanges && !state.isDataRefreshing) {
@@ -137,12 +137,12 @@ export default observer(function App() {
 							<div>
 								{!state.isSavingCommits ? (
 									<>
-										<MessageBarButton
+										{/* <MessageBarButton
 											disabled={state.isDataRefreshing}
 											onClick={initializeGitData}
 										>
 											{t('App.SaveContinueMessageBar.cancel')}
-										</MessageBarButton>
+										</MessageBarButton> */}
 										<MessageBarButton
 											disabled={state.isDataRefreshing}
 											onClick={() => {
@@ -310,7 +310,7 @@ export default observer(function App() {
 													)}
 												</Pivot>
 											</div>
-											{state.isEditable && isPanelOpen && (
+											{state.isEditable && isPanelOpen && Object.keys(state.breadCrumbs).length > 0 && (
 												<div className="appBodyRight">
 													<QualifierPanel />
 												</div>

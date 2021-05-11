@@ -1,0 +1,9 @@
+{
+	"id": "northern_mariana_islands",
+	"name": "cdc/northern_mariana_islands/state_name",
+	"type": "territory",
+	"metadata": {
+		"code_alpha": "MP",
+		"code_numeric": 69
+	}
+}

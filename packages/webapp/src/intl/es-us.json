@@ -3,7 +3,7 @@
 		"title": "Compositor de datos",
 		"LoginButton": "Iniciar sesión con Github",
 		"active": "activo",
-		"loading": "Cargando contenido ...",		
+		"loading": "Cargando contenido ...",
 		"submit": "Entregar",
 		"cancel": "Cancelar",
 		"saving": "Guardando cambios...",
@@ -11,7 +11,7 @@
 		"NotFound": "404 pagina no encontrada.",
 		"Pivot": {
 			"Dashboard": "Tablero",
-			"Locations": "Locations",
+			"Locations": "Ubicaciones",
 			"Translate": "Traducir",
 			"Review": "Revisar"
 		},
@@ -73,6 +73,12 @@
 		},
 		"Qualifier": {
 			"placeholder": "Texto calificador ..."
+		},
+		"QualifierSms": {
+			"placeholder": "Texto calificador para sms"
+		},
+		"QualifierVoice": {
+			"placeholder": "Texto calificador para voz"
 		}
 	},
 	"LocationForm": {
@@ -86,12 +92,16 @@
 		},
 		"regionTypeOptions": {
 			"placeholder": "Tipo de región",
+			"country": "País",
 			"state": "Expresar",
-			"territory": "Territory",
+			"territory": "Territorio",
 			"tribal_land": "Tierra tribal",
 			"county": "Condado",
 			"city": "Ciudad"
 		},
+		"detailsTitle": "Detalles de ubicación",
+		"EditDetailsButton": "Editar detalles",
+		"details": "Detalles",
 		"info": "Enlace de información general de la región:",
 		"workflow": "Enlace a una herramienta de flujo de trabajo de elegibilidad existente:",
 		"scheduling": "Programador de registro de citas:",
@@ -237,8 +247,17 @@
 			}
 		}
 	},
+	"LocationPhaseOverrideBar": {
+		"messageBar": {
+			"specificTextPlaceholder": "esto",
+			"adoptedTextPlaceholder": "la ubicación principal ",
+			"specificText": "La siguiente información de fase es específica de {0} únicamente.",
+			"adoptedText": "Actualmente adoptando la información de fase de {0}. La aplicación de cambios hará que los datos de fase sean específicos de {1} únicamente."
+		}
+	},
 	"LocationsPhases": {
 		"AddQualifierButton": "Agregar calificador",
+		"title": "Clasificatorios de fase",
 		"columns": {
 			"duplicate": "Duplicado",
 			"remove": "Eliminar",
@@ -260,6 +279,12 @@
 		},
 		"MoreInfoText": {
 			"placeholder": "Más texto de información"
+		},
+		"MoreInfoTextSms": {
+			"placeholder": "Más info para sms"
+		},
+		"MoreInfoTextVoice": {
+			"placeholder": "Más información para voz"
 		},
 		"MoreInfoUrl": {
 			"placeholder": "Más información URL"
@@ -289,22 +314,25 @@
 			"titleLabel": "Título (opcional):",
 			"detailsLabel": "Detalles (opcional):",
 			"submitText": "Presentar cambios"
-		}
+		},
+		"ChangesList": {
+			"addPrefixText": "Nueva {0} agregada",
+			"modifiedPrefixText": "Actualizada {0}",
+			"removedPrefixText": "Eliminada {0}",
+			"sections": {
+				"location": "ubicación",
+				"phase": "fase",
+				"qualifier": "calificador",
+				"translations": "traducciones"
+			}
+		},
+		"OnWorkingBranch": "No hay cambios pendientes en este momento. O no hay cambios o ya se ha guardado previamente.<br/><br/>Puede revisar su historial de cambios <a href=\"https://github.com/{0}/{1}/commits/refs/heads/{2}?since={3}\" target=\"_blank\">aquí</a> antes de enviar sus cambios.",
+		"NoChangeList": "No se pueden cargar los cambios pendientes actualmente."
 	},
 	"Translate": {
 		"title": "Traducir",
 		"ErrorMessageBar": {
 			"closeArialLabel": "Cerrar"
-		},
-		"Filter": {
-			"LanguageDropdown": {
-				"label": "Traducir de:",
-				"placeholder": "Idiomas Disponibles"
-			},
-			"TranslateDropdown": {
-				"label": "Mostrar:",
-				"placeholder": "Necesita traducciones"
-			}
 		},
 		"TemplateButtons": {
 			"download": "Descargar plantilla",
@@ -315,39 +343,10 @@
 			"invalidFileContent": "Contenido de archivo no válido.",
 			"invalidFileType": "Tipo de archivo invalido."
 		},
-		"translationNotFound": "* Traducción no encontrada *",
-		"translationFilter": {
-			"needsTranslation": "Necesita traducciones",
-			"showAll": "Mostrar todo"
-		},
-		"miscFilter": {
-			"all": "Todo",
-			"stateSpecific": "Específico del estado",
-			"stateLinks": "Enlaces de estado",
-			"uncategorized": "Sin categorizar",
-			"placeholder": "Filtrar varios"
-		},
-
+		"dragDropText": "Arrastra y suelta el archivo de traducción aquí",
 		"GroupList": {
 			"loading": "Cargando contenido ...",
-			"updating": "Actualizando traducciones ...",
-			"columns": {
-				"general": "General",
-				"sms": "SMS",
-				"voice": "Voz"
-			},
-			"LocationList": {
-				"title": "Ubicaciones",
-				"empty": "No se encontraron traducciones de ubicación faltantes para:"
-			},
-			"QualifierList": {
-				"title": "Calificadores",
-				"empty": "No se encontraron traducciones de calificador faltantes para:"
-			},
-			"MiscellaneousList": {
-				"title": "Misceláneo",
-				"empty": "No se encontraron traducciones misceláneas faltantes para:"
-			}
+			"updating": "Actualizando traducciones ..."
 		}
 	},
 	"UnAuthorized": {

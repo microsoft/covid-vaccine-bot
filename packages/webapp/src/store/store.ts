@@ -18,15 +18,13 @@ export const initialStore = {
 	issues: [],
 	repoFileData: undefined,
 	initRepoFileData: undefined,
-	globalFileData: undefined,
-	initGlobalFileData: undefined,
 	mainBranch: undefined,
 	currentLanguage: 'en-us',
-	toggleQualifier: false,
 	isEditable: true,
 	pendingChanges: false,
 	isDataRefreshing: false,
 	prChanges: undefined,
+	loadedPRData: undefined,
 	userWorkingBranch: undefined,
 	userWorkingBranches: [],
 	userAccessExpired: false,
@@ -34,7 +32,9 @@ export const initialStore = {
 	isSavingCommits: false,
 	localization: {},
 	defaultLanguage: {},
-	committedDeletes: []
+	committedDeletes: [],
+	breadCrumbs: {},
+	pendingChangeList: {added: [], modified: [], deleted: []}
 }
 
 export const getAppState = (): AppState => {
@@ -42,7 +42,7 @@ export const getAppState = (): AppState => {
 
 	return {
 		...initialStore,
-		...localState,
+		...localState
 	}
 }
 
@@ -51,7 +51,7 @@ export const getAppStore = createStore<AppState>('appState', getAppState())
 const store = getRootStore().get('appState')
 
 autorun(() => {
-	if (store.accessToken)
+	if (store)
 		saveState({
 			accessToken: store.accessToken,
 			isAuthorized: store.isAuthorized,
@@ -61,6 +61,6 @@ autorun(() => {
 			email: store.email,
 			userAccessExpired: store.userAccessExpired,
 			localization: store.localization,
-			currentLanguage: store.currentLanguage,
+			currentLanguage: store.currentLanguage
 		})
 })

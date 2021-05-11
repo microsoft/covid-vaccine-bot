@@ -1,0 +1,39 @@
+{
+	"links": {
+		"info": {
+			"text": "cdc/tennessee/state_link",
+			"url": "https://www.tn.gov/health/cedep/ncov/covid-19-vaccine-information.html"
+		},
+		"eligibility": {
+			"url": "https://www.tn.gov/content/tn/health/cedep/ncov/covid-19-vaccine-information/getting-a-covid-19-vaccine-information.html",
+			"content": "pdf"
+		},
+		"eligibility_plan": {
+			"url": "https://covid19.tn.gov/covid-19-vaccines/vaccine-phases/"
+		},
+		"workflow": {
+			"url": "https://covid19.tn.gov/covid-19-vaccines/eligibility/",
+			"text": "c19.links/vax_quiz"
+		},
+		"scheduling_phone": {
+			"url": "tel:866-442-5301",
+			"text": "c19.link/scheduling.phone.tn"
+		},
+		"scheduling": {
+			"url": "https://vaccinate.tn.gov/",
+			"text": "c19.links/schedule_vax"
+		}
+	},
+	"activePhase": "3",
+	"phases": [
+		{
+			"id": "3",
+			"label": "3",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.16_up"
+				}
+			]
+		}
+	]
+}

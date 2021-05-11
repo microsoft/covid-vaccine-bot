@@ -8,11 +8,9 @@ import {
 	DetailsList,
 	DetailsListLayoutMode,
 	ProgressIndicator,
-	TextField,
-	MessageBar,
-	MessageBarType,
+	TextField
 } from 'office-ui-fabric-react'
-import { useState, useEffect, useCallback, useRef } from 'react'
+import { useState, useCallback, useRef } from 'react'
 import { createPR } from '../actions/repoActions'
 import { getChanges } from '../selectors/changesSelectors'
 import { getText as t } from '../selectors/intlSelectors'
@@ -20,6 +18,8 @@ import { getAppStore } from '../store/store'
 
 import './Review.scss'
 
+const githubRepoOwner = process.env.REACT_APP_REPO_OWNER
+const githubRepoName = process.env.REACT_APP_REPO_NAME
 export interface ReviewProp {
 	showDashboard: () => void
 }
@@ -45,33 +45,15 @@ export default observer(function Review(props: ReviewProp) {
 			fieldName: 'label',
 			minWidth: 200,
 			isResizable: true,
-		},
+		}
 	]
 
-	const [changesList, setChangesList] = useState<any[]>([])
-	const [locationUpdates, setLocationUpdates] = useState<any[]>([])
-	const [globalUpdates, setGlobalUpdates] = useState<any[]>([])
 	const [showLoading, setShowLoading] = useState<boolean>(false)
-	const [errorMessage, setErrorMessage] = useState<
-		{ message: string } | undefined
-	>()
 	const state = getAppStore()
 	const [formData, setFormData] = useState<any>(
 		setInitialFormData(state.loadedPRData)
 	)
 	const fieldChanges = useRef<any>(formData)
-
-	useEffect(() => {
-		try {
-			const { globalUpdates, locationUpdates, changesList } = getChanges()
-
-			setLocationUpdates(locationUpdates)
-			setChangesList(changesList)
-			setGlobalUpdates(globalUpdates)
-		} catch (err) {
-			setErrorMessage(err)
-		}
-	}, [state.initRepoFileData, state.repoFileData, state.initGlobalFileData, state.globalFileData])
 
 	const handleTextChange = useCallback(
 		(ev) => {
@@ -99,6 +81,33 @@ export default observer(function Review(props: ReviewProp) {
 		[showDashboard]
 	)
 
+	const renderChangeLists = () => {
+		const items = getChanges()
+		if (items.length > 0) {
+			return (
+				<DetailsList
+					items={items}
+					columns={changesColumns}
+					setKey="set"
+					layoutMode={DetailsListLayoutMode.justified}
+					checkboxVisibility={2}
+				/>
+			)
+		}
+
+		if (state.userWorkingBranch) {
+			const sinceDate = new Date(parseInt(state.userWorkingBranch.split('-policy-')[1])).toLocaleString('sv').replace(' ','T')
+			return (
+				 <div>{t('Review.OnWorkingBranch',true, githubRepoOwner as string, githubRepoName, state.userWorkingBranch, sinceDate)}</div>
+			)
+		}
+		else {
+			return (
+				<div>{t('Review.NoChangeList')}</div>
+			)
+		}
+	}
+
 	return (
 		<div className="reviewPageContainer">
 			<div className="bodyContainer">
@@ -109,18 +118,6 @@ export default observer(function Review(props: ReviewProp) {
 					</div>
 				</div>
 				<div className="bodyContent">
-					{errorMessage && (
-						<MessageBar
-							messageBarType={MessageBarType.error}
-							dismissButtonAriaLabel={t(
-								'Review.ErrorMessageBar.closeAriaLabel'
-							)}
-						>
-							<p>
-								{t('Review.error.unexpected')} {errorMessage?.toString()}
-							</p>
-						</MessageBar>
-					)}
 					{!showLoading ? (
 						<section>
 							<div className="submitContainer">
@@ -140,20 +137,12 @@ export default observer(function Review(props: ReviewProp) {
 									value={formData.prDetails}
 									onChange={handleTextChange}
 								/>
-								<DetailsList
-									items={changesList}
-									columns={changesColumns}
-									setKey="set"
-									layoutMode={DetailsListLayoutMode.justified}
-									checkboxVisibility={2}
-								/>
+								{renderChangeLists()}
 								<PrimaryButton
 									text={t('Review.SubmitForm.submitText')}
 									onClick={() => {
 										setShowLoading(true)
 										createPR([
-											globalUpdates,
-											locationUpdates,
 											handleSubmit,
 											formData,
 										])

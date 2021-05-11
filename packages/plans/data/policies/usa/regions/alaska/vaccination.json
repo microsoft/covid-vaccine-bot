@@ -1,0 +1,41 @@
+{
+	"links": {
+		"eligibility": {
+			"url": "http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/VaccineAvailability.aspx"
+		},
+		"info": {
+			"url": "http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/vaccine.aspx",
+			"text": "cdc/alaska/state_link"
+		},
+		"providers": {
+			"url": "https://anchoragecovidvaccine.org/",
+			"text": "c19.links/vax_providers"
+		},
+		"workflow": {
+			"url": "https://hipaa.jotform.com/210366892090154",
+			"text": "c19.links/vax_quiz"
+		},
+		"scheduling": {
+			"url": "http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/VaccineAppointments.aspx",
+			"text": "c19.links/schedule_vax"
+		},
+		"scheduling_phone": {
+			"url": "tel:907-646-3322",
+			"text": "c19.link/scheduling.phone.ak"
+		}
+	},
+	"activePhase": "2",
+	"phases": [
+		{
+			"id": "2",
+			"label": "2",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.16_up",
+					"moreInfoText": "c19.eligibility.moreinfo/age.16_up.ak.2",
+					"moreInfoUrl": "http://dhss.alaska.gov/dph/epi/id/pages/COVID-19/vaccine.aspx"
+				}
+			]
+		}
+	]
+}

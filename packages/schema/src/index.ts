@@ -4,6 +4,7 @@
  */
 
 export type RegionType =
+	| 'country'
 	| 'state'
 	| 'territory'
 	| 'tribal_land'

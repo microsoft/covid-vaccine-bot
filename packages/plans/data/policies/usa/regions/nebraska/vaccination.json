@@ -1,0 +1,38 @@
+{
+	"links": {
+		"info": {
+			"text": "cdc/nebraska/state_link",
+			"url": "http://dhhs.ne.gov/Pages/COVID-19-Vaccine-Information.aspx",
+			"scrapeQuery": [".dhhs-page-content.dhhs-clearfix"]
+		},
+		"workflow": {
+			"url": "https://vaccinate.ne.gov/"
+		},
+		"eligibility_plan": {
+			"url": "https://dhhs.ne.gov/Pages/COVID-19-Vaccine-Information.aspx#SectionLink2"
+		},
+		"scheduling": {
+			"url": "https://vaccinate.ne.gov/",
+			"text": "c19.links/schedule_vax"
+		},
+		"scheduling_phone": {
+			"url": "tel:833-998-2275",
+			"text": "c19.link/scheduling.phone.ne"
+		},
+		"eligibility": {
+			"url": "https://dhhs.ne.gov/Documents/COVID-19-Vaccine-Phase-1B-Prioritization.pdf"
+		}
+	},
+	"activePhase": "2b",
+	"phases": [
+		{
+			"id": "2b",
+			"label": "2B",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.16_up"
+				}
+			]
+		}
+	]
+}

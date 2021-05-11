@@ -2,10 +2,14 @@
  * Copyright (c) Microsoft. All rights reserved.
  * Licensed under the MIT license. See LICENSE file in the project.
  */
+import { cloneDeep as clone } from 'lodash'
 import { mutatorAction } from 'satcheljs'
-import { getText as t } from '../selectors/intlSelectors'
+import {
+	getCurrentLocationObj,
+	getLocationPhaseData,
+} from '../selectors/locationSelectors'
 import { getAppStore } from '../store/store'
-import { createLocationDataObj } from '../utils/dataUtils'
+import { createLocationDataObj, pathFind } from '../utils/dataUtils'
 import { formatId } from '../utils/textUtils'
 
 export const setIsDataRefreshing = mutatorAction(
@@ -29,6 +33,11 @@ export const setPendingChanges = mutatorAction(
 	(pendingChanges: boolean) => {
 		const store = getAppStore()
 		store.pendingChanges = pendingChanges
+		store.pendingChangeList = {
+			added: [],
+			modified: [],
+			deleted: [],
+		}
 	}
 )
 
@@ -40,22 +49,15 @@ export const setSavingCommitsFlag = mutatorAction(
 	}
 )
 
-export const setGlobalAndRepoChanges = mutatorAction(
-	'setGlobalAndRepoChanges',
-	() => {
-		const store = getAppStore()
-		store.initGlobalFileData = store.globalFileData
-		store.initRepoFileData = store.repoFileData
-	}
-)
-
 export const setBranchList = mutatorAction(
 	'setBranchList',
 	(data: any[] | undefined) => {
 		if (data) {
 			const store = getAppStore()
 			store.branches = data
-			const mainBranch = data.find((branch) => branch.name === 'main')
+			const mainBranch = data.find(
+				(branch) => branch.name === process.env.REACT_APP_MAIN_BRANCH
+			)
 			store.mainBranch = mainBranch
 		}
 	}
@@ -85,14 +87,29 @@ export const setIssuesList = mutatorAction(
 	}
 )
 
+/**
+ * Filters and sets commited deletes
+ */
+export const setCommittedDeletes = mutatorAction(
+	'setCommittedDeletes',
+	(commits: any[] | undefined) => {
+		const store = getAppStore()
+		if (commits) {
+			const deletedFiles = commits
+				.filter((c: any) => c.commit.message.startsWith('Removed'))
+				.map((c: any) => c.commit.message.replace('Removed ', ''))
+
+			store.committedDeletes = deletedFiles
+		}
+	}
+)
+
 export const setLoadedPRData = mutatorAction(
 	'setLoadedPRData',
 	(prData: any | undefined) => {
 		const store = getAppStore()
 		if (prData) {
 			store.loadedPRData = prData.data
-			const deletedFiles = prData.commits.filter((c:any) => c.commit.message.startsWith('deleted')).map((c:any) => c.commit.message.replace('deleted ',''))
-			store.committedDeletes = deletedFiles
 			store.prChanges = {
 				last_commit: prData?.commits ? [...prData.commits].pop() : undefined,
 			}
@@ -115,38 +132,90 @@ export const clearLoadedPRData = mutatorAction('clearLoadedPRData', () => {
 	store.loadedPRData = undefined
 })
 
-export const setRepoFileData = mutatorAction(
-	'setRepoFileData',
-	(data: any[] | undefined) => {
+export const setInitRepoFileData = mutatorAction(
+	'setInitRepoFileData',
+	(data: any | undefined) => {
 		if (data) {
 			const store = getAppStore()
-			store.repoFileData = data[0]
-			store.globalFileData = {
-				customStrings: data[1],
-				cdcStateNames: data[2],
-				cdcStateLinks: data[3],
+			store.repoFileData = data
+			store.initRepoFileData = data
+			store.pendingChangeList = {
+				added: [],
+				modified: [],
+				deleted: [],
 			}
+
+			store.repoFileData = { ...store.repoFileData }
 		}
 	}
 )
 
-export const setInitRepoFileData = mutatorAction(
-	'setInitRepoFileData',
-	(data: any[] | undefined) => {
+export const updateRepoFileData = mutatorAction(
+	'updateRepoFileData',
+	(data: any | undefined) => {
 		if (data) {
 			const store = getAppStore()
-			store.repoFileData = data[0]
-			store.initRepoFileData = data[0]
-			store.globalFileData = {
-				customStrings: data[1],
-				cdcStateNames: data[2],
-				cdcStateLinks: data[3],
+			Object.keys(data).forEach((key) => {
+				const pathArray = key.split('/')
+				pathArray.splice(-1, 1)
+
+				const currLocation = pathFind(store.repoFileData, pathArray)
+
+				if (key.endsWith('info.json')) {
+					currLocation.info.sha = data[key].content.sha
+					currLocation.info.url = data[key].content.git_url
+				}
+
+				if (key.endsWith('vaccination.json')) {
+					currLocation.vaccination.sha = data[key].content.sha
+					currLocation.vaccination.url = data[key].content.git_url
+				}
+
+				if (key.endsWith('.csv')) {
+					currLocation.strings.sha = data[key].content.sha
+					currLocation.strings.url = data[key].content.git_url
+				}
+			})
+
+			store.repoFileData = { ...store.repoFileData }
+		}
+	}
+)
+
+export const setLoadAllStringsData = mutatorAction(
+	'setLoadAllStringsData',
+	(data: any | undefined) => {
+		if (data) {
+			const store = getAppStore()
+			for (const item of data) {
+				const pathArray = item.path.split('/')
+				pathArray.splice(-1, 1)
+
+				const currLocation = pathFind(store.repoFileData, pathArray)
+
+				if (!currLocation.strings.content) {
+					currLocation.strings = item
+				}
 			}
-			store.initGlobalFileData = {
-				customStrings: data[1],
-				cdcStateNames: data[2],
-				cdcStateLinks: data[3],
-			}
+			store.isDataRefreshing = false
+		}
+	}
+)
+
+export const setLocationData = mutatorAction(
+	'setLocationData',
+	(data: any, location: any) => {
+		if (data) {
+			const store = getAppStore()
+
+			const currLocation = store.repoFileData[location.info.content.id]
+			const initCurrLocation = store.initRepoFileData[location.info.content.id]
+
+			currLocation.regions = { ...currLocation.regions, ...data }
+			initCurrLocation.regions = { ...currLocation.regions, ...data }
+
+			currLocation.dataLoaded = true
+			initCurrLocation.dataLoaded = true
 		}
 	}
 )
@@ -160,984 +229,1130 @@ export const setCurrentLanguage = mutatorAction(
 		}
 	}
 )
-export const updateLocationList = mutatorAction(
-	'updateLocationList',
-	(locationData: any, isRegion: boolean, selectedState?: any) => {
-		if (locationData) {
-			const store = getAppStore()
-			const newLocObj = createLocationDataObj(locationData)
-			store.pendingChanges = true
 
-			if (!isRegion) {
-				store.globalFileData.cdcStateNames.content[
-					`cdc/${newLocObj.info.content.id}/state_name`
-				] = {
-					...store.globalFileData.cdcStateNames.content[
-						`cdc/${newLocObj.info.content.id}/state_name`
-					],
-					[store.currentLanguage]: locationData.details,
-				}
-
-				newLocObj.strings.path = `${newLocObj.info.content.id}/${newLocObj.info.content.id}.csv`
-
-				if ('noPhaseLabel' in newLocObj.vaccination.content) {
-					newLocObj.vaccination.content.noPhaseLabel = locationData.noPhaseLabel
-				} else {
-					newLocObj.vaccination.content = {
-						...newLocObj.vaccination.content,
-						noPhaseLabel: locationData.noPhaseLabel,
-					}
-				}
-
-				const stringsContentObj: any = {}
-				if (locationData.schedulingPhone !== '') {
-					const schedulingPhoneKey: string = `c19.link/scheduling.phone.${newLocObj.info.content.id}`.toLowerCase()
-
-					stringsContentObj[schedulingPhoneKey] = {
-						...stringsContentObj[schedulingPhoneKey],
-						[store.currentLanguage]: locationData.schedulingPhone,
-					}
-					newLocObj.vaccination.content.links.scheduling_phone.text = schedulingPhoneKey
-				}
-
-				if (locationData.schedulingPhoneDesc !== '') {
-					const schedulingPhoneDescKey = `c19.link/scheduling.phone.description.${newLocObj.info.content.id}`.toLowerCase()
-
-					stringsContentObj[schedulingPhoneDescKey] = {
-						...stringsContentObj[schedulingPhoneDescKey],
-						[store.currentLanguage]: locationData.schedulingPhoneDesc,
-					}
-
-					newLocObj.vaccination.content.links.scheduling_phone.description = schedulingPhoneDescKey
-				}
-
-				newLocObj.strings.content = stringsContentObj
-
-				store.repoFileData[newLocObj.info.content.id] = newLocObj
-				store.repoFileData = { ...store.repoFileData }
-			} else {
-				const location = store.repoFileData[selectedState.key]
-				newLocObj.info.path = `${selectedState.key}/regions/${newLocObj.info.path}`
-				newLocObj.vaccination.path = `${selectedState.key}/regions/${newLocObj.vaccination.path}`
-
-				if ('noPhaseLabel' in newLocObj.vaccination.content) {
-					newLocObj.vaccination.content.noPhaseLabel = locationData.noPhaseLabel
-				} else {
-					newLocObj.vaccination.content = {
-						...newLocObj.vaccination.content,
-						noPhaseLabel: locationData.noPhaseLabel,
-					}
-				}
-
-				if (locationData.info !== '') {
-					newLocObj.vaccination.content.links.info.text = `cdc/${location.info.content.id}/state_link` //`c19.link/info.${newLocObj.info.content.id}`.toLowerCase()
-				}
-
-				if (locationData.schedulingPhone !== '') {
-					const schedulingPhoneKey: string = `c19.link/scheduling.phone.${location.info.content.metadata.code_alpha}.${newLocObj.info.content.id}`.toLowerCase()
-
-					location.strings.content[schedulingPhoneKey] = {
-						...location.strings.content[schedulingPhoneKey],
-						[store.currentLanguage]: locationData.schedulingPhone,
-					}
-					newLocObj.vaccination.content.links.scheduling_phone.text = schedulingPhoneKey
-				}
-
-				if (locationData.schedulingPhoneDesc !== '') {
-					const schedulingPhoneDescKey = `c19.link/scheduling.phone.description.${location.info.content.metadata.code_alpha}.${newLocObj.info.content.id}`.toLowerCase()
-
-					location.strings.content[schedulingPhoneDescKey] = {
-						...location.strings.content[schedulingPhoneDescKey],
-						[store.currentLanguage]: locationData.schedulingPhoneDesc,
-					}
-
-					newLocObj.vaccination.content.links.scheduling_phone.description = schedulingPhoneDescKey
-				}
-
-				if (location.regions) {
-					location.regions[newLocObj.info.content.id] = newLocObj
-				} else {
-					location.regions = {
-						[newLocObj.info.content.id]: newLocObj,
-					}
-				}
-
-				store.repoFileData = { ...store.repoFileData }
+export const setBreadcrumbs = mutatorAction(
+	'setBreadcrumbs',
+	(currentLocation: any | undefined) => {
+		const store = getAppStore()
+		if (currentLocation) {
+			const breadCrumbs = {
+				...store.breadCrumbs,
+				[currentLocation.info.content.id]: {
+					value: currentLocation,
+				},
 			}
+			store.breadCrumbs = breadCrumbs
+		} else {
+			store.breadCrumbs = {}
 		}
 	}
 )
 
+export const addPhaseOverviewCrumb = mutatorAction(
+	'addPhaseOverviewCrumb',
+	(currentLocation: any | undefined) => {
+		const store = getAppStore()
+
+		if (currentLocation) {
+			const phaseOverviewCrumbs = {
+				...store.breadCrumbs,
+				[currentLocation.info.content.id]: {
+					value: currentLocation,
+				},
+				phase_overview: {
+					value: {
+						info: {
+							content: {
+								name: '',
+								id: currentLocation.info.content.id,
+							},
+							path: currentLocation.info.path.replace(
+								'info.json',
+								'regions/phase_overview/info.json'
+							),
+						},
+					},
+				},
+			}
+
+			store.breadCrumbs = phaseOverviewCrumbs
+		} else {
+			store.breadCrumbs = {}
+		}
+	}
+)
+
+export const updatePhaseOverviewTitle = mutatorAction(
+	'updatePhaseOverTitle',
+	(data: string) => {
+		const store = getAppStore()
+		store.breadCrumbs.phase_overview.value.info.content = {
+			id: data,
+			name: data,
+		}
+	}
+)
+
+export const deleteCrumbs = mutatorAction('deleteCrumbs', (data: any) => {
+	const store = getAppStore()
+	if (data) {
+		const pathArray = data.value.info.path.split('/')
+		pathArray.splice(-1, 1)
+		pathArray.push('regions')
+		const parentPath = pathArray.join('/')
+		const newCrumbs = { ...store.breadCrumbs }
+		for (const item in newCrumbs) {
+			if (newCrumbs[item].value.info.path.startsWith(parentPath)) {
+				delete newCrumbs[item]
+			}
+		}
+
+		store.breadCrumbs = newCrumbs
+	}
+})
+
+export const addLocation = mutatorAction(
+	'addLocation',
+	(locationData: any, locationPath: any) => {
+		if (locationData) {
+			const store = getAppStore()
+			store.pendingChanges = true
+
+			const locationId = locationData.details
+				.replace(/[^a-z0-9\s]/gi, '')
+				.replace(/\s/g, '_')
+				.toLowerCase()
+
+			let locationFilePath = [locationId]
+
+			if (locationPath) {
+				const pathArray = locationPath.split('/')
+				pathArray.splice(-1, 1)
+				pathArray.push('regions')
+				pathArray.push(locationId)
+				locationFilePath = pathArray
+			}
+
+			const newLocation = createLocationDataObj(
+				locationId,
+				locationFilePath,
+				locationData,
+				store.currentLanguage
+			)
+
+			if (!locationPath) {
+				store.repoFileData[locationId] = newLocation
+			} else {
+				const pathArray = locationPath.split('/')
+				pathArray.splice(-1, 1)
+
+				const parentLocation = pathFind(store.repoFileData, pathArray)
+				if (parentLocation.regions) {
+					parentLocation.regions[locationId] = newLocation
+				} else {
+					parentLocation['regions'] = { [locationId]: newLocation }
+				}
+			}
+
+			store.pendingChangeList.added.push({
+				section: 'location',
+				name: locationFilePath.slice(-1)[0],
+				pathKey: locationFilePath.join('.'),
+				data: newLocation,
+			})
+
+			store.repoFileData = { ...store.repoFileData }
+		}
+	}
+)
+
+const getRegionsRecursive = (location: any): any => {
+	if (!location.regions) {
+		return [{ ...location }]
+	}
+
+	let returnArr: any = [{ ...location }]
+	for (const item of Object.keys(location.regions)) {
+		if (item) {
+			const region = location.regions[item]
+			returnArr = returnArr.concat(getRegionsRecursive(region))
+		}
+	}
+	return returnArr
+}
+
 export const deleteLocation = mutatorAction(
 	'deleteLocation',
-	(locationData: any, isRegion?: boolean, selectedState?: any) => {
+	(locationData: any) => {
 		const store = getAppStore()
 		store.pendingChanges = true
 
-		if (isRegion && selectedState){
-			delete store.repoFileData[selectedState.key]?.regions?.[locationData.key]
-		}
-		else {
+		const pathArray = locationData.value.info.path.split('/')
+		pathArray.splice(-1, 1)
+
+		const currentLocation = pathFind(store.repoFileData, pathArray)
+		const regions: any = getRegionsRecursive(currentLocation)
+
+		if (pathArray.length === 1) {
 			delete store.repoFileData[locationData.key]
-			delete store.globalFileData.cdcStateLinks.content[`cdc/${locationData.key}/state_link`]
-			delete store.globalFileData.cdcStateNames.content[`cdc/${locationData.key}/state_name`]
+		} else {
+			pathArray.splice(-1, 1)
+			const parentRegion = pathFind(store.repoFileData, pathArray)
+			delete parentRegion[locationData.key]
 		}
 
+		for (const region of regions) {
+			const regionPathArray = region.info.path.split('/')
+			regionPathArray.splice(-1, 1)
+			store.pendingChangeList.deleted.push({
+				section: 'location',
+				name: regionPathArray.slice(-1)[0],
+				pathKey: regionPathArray.join('.'),
+				data: region,
+			})
+		}
 		store.repoFileData = { ...store.repoFileData }
 	}
 )
 
 export const updateLocationData = mutatorAction(
 	'updateLocationData',
-	(
-		locationData: any,
-		isRegion: boolean,
-		prevItem: any,
-		selectedState?: any
-	) => {
+	(locationData: any, locationPath: any) => {
 		if (locationData) {
 			const store = getAppStore()
 			store.pendingChanges = true
-			if (!isRegion) {
-				const location = store.repoFileData[prevItem.key]
 
-				store.globalFileData.cdcStateNames.content[
-					`cdc/${prevItem.key}/state_name`
-				] = {
-					...store.globalFileData.cdcStateNames.content[
-						`cdc/${prevItem.key}/state_name`
-					],
-					[store.currentLanguage]: locationData.details,
+			const pathArray = locationPath.split('/')
+			pathArray.splice(-1, 1)
+			const rootPath = pathArray[0]
+
+			const currLocation = pathFind(store.repoFileData, pathArray)
+			const rootLocation = store.repoFileData[rootPath]
+
+			const currLocationNameKey = currLocation.info.content.name
+
+			if (currLocation.strings.content[currLocationNameKey]) {
+				currLocation.strings.content[currLocationNameKey][
+					store.currentLanguage
+				] = locationData.details
+			} else if (rootLocation.strings.content[currLocationNameKey]) {
+				rootLocation.strings.content[currLocationNameKey][
+					store.currentLanguage
+				] = locationData.details
+			} else {
+				const locationKey = `name.${pathArray.join('.')}`
+				currLocation.strings.content = {
+					[locationKey]: {
+						[store.currentLanguage]: locationData.details,
+					},
 				}
+				currLocation.info.content.name = locationKey
+			}
 
-				location.info.content.name = locationData.details
-				const schedulingPhoneKey = `c19.link/scheduling.phone.${prevItem.value.info.content.metadata.code_alpha}`.toLowerCase()
-
-				if ('noPhaseLabel' in location.vaccination.content) {
-					location.vaccination.content.noPhaseLabel = locationData.noPhaseLabel
+			currLocation.info.content.type = locationData.regionType
+			if (locationData.info !== '') {
+				if (currLocation.vaccination.content.links.info) {
+					currLocation.vaccination.content.links.info.url = locationData.info
 				} else {
-					location.vaccination.content = {
-						...location.vaccination.content,
-						noPhaseLabel: locationData.noPhaseLabel,
+					currLocation.vaccination.content.links['info'] = {
+						url: locationData.info,
 					}
-				}
-
-				if (locationData?.eligibility !== '') {
-					if (location.vaccination.content.links.eligibility) {
-						if (
-							location.vaccination.content.links.eligibility.url.toLowerCase() !==
-							locationData.eligibility.toLowerCase()
-						) {
-							location.vaccination.content.links.eligibility = {
-								url: locationData.eligibility,
-							}
-						}
-					} else {
-						location.vaccination.content.links.eligibility = {
-							url: locationData.eligibility,
-						}
-					}
-				} else {
-					delete location.vaccination.content.links.eligibility
-				}
-
-				if (locationData?.eligibilityPlan !== '') {
-					if (location.vaccination.content.links.eligibility_plan) {
-						if (
-							location.vaccination.content.links.eligibility_plan.url.toLowerCase() !==
-							locationData.eligibilityPlan.toLowerCase()
-						) {
-							location.vaccination.content.links.eligibility_plan = {
-								url: locationData.eligibilityPlan,
-							}
-						}
-					} else {
-						location.vaccination.content.links.eligibility_plan = {
-							url: locationData.eligibilityPlan,
-						}
-					}
-				} else {
-					delete location.vaccination.content.links.eligibility_plan
-				}
-
-				if (locationData?.info !== '') {
-					if (location.vaccination.content.links.info) {
-						if (
-							location.vaccination.content.links.info.url.toLowerCase() !==
-							locationData.info.toLowerCase()
-						) {
-							location.vaccination.content.links.info = {
-								url: locationData.info,
-								text: `cdc/${prevItem.key}/state_link`,
-							}
-						}
-					} else {
-						location.vaccination.content.links.info = {
-							url: locationData.info,
-							text: `cdc/${prevItem.key}/state_link`,
-						}
-					}
-				} else {
-					delete location.vaccination.content.links.info
-				}
-
-				if (locationData?.providers !== '') {
-					if (location.vaccination.content.links.providers) {
-						if (
-							location.vaccination.content.links.providers.url.toLowerCase() !==
-							locationData.providers.toLowerCase()
-						) {
-							location.vaccination.content.links.providers = {
-								url: locationData.providers,
-								text: 'c19.links/vax_providers',
-							}
-						}
-					} else {
-						location.vaccination.content.links.providers = {
-							url: locationData.providers,
-							text: 'c19.links/vax_providers',
-						}
-					}
-				} else {
-					delete location.vaccination.content.links.providers
-				}
-
-				if (locationData?.workflow !== '') {
-					if (location.vaccination.content.links.workflow) {
-						if (
-							location.vaccination.content.links.workflow.url.toLowerCase() !==
-							locationData.workflow.toLowerCase()
-						) {
-							location.vaccination.content.links.workflow = {
-								url: locationData.workflow,
-								text: 'c19.links/vax_quiz',
-							}
-						}
-					} else {
-						location.vaccination.content.links.workflow = {
-							url: locationData.workflow,
-							text: 'c19.links/vax_quiz',
-						}
-					}
-				} else {
-					delete location.vaccination.content.links.workflow
-				}
-
-				if (locationData?.scheduling !== '') {
-					if (location.vaccination.content.links.scheduling) {
-						if (
-							location.vaccination.content.links.scheduling.url.toLowerCase() !==
-							locationData.scheduling.toLowerCase()
-						) {
-							location.vaccination.content.links.scheduling = {
-								url: locationData.scheduling,
-								text: 'c19.links/schedule_vax',
-							}
-						}
-					} else {
-						location.vaccination.content.links.scheduling = {
-							url: locationData.scheduling,
-							text: 'c19.links/schedule_vax',
-						}
-					}
-				} else {
-					delete location.vaccination.content.links.scheduling
-				}
-
-				if (locationData?.schedulingPhone !== '') {
-					location.strings.content[schedulingPhoneKey] = {
-						...location.strings.content[schedulingPhoneKey],
-						[store.currentLanguage]: locationData.schedulingPhone,
-					}
-					if (location.vaccination.content.links.scheduling_phone) {
-						if (
-							location.vaccination.content.links.scheduling_phone.url.toLowerCase() !==
-							`tel:${locationData.schedulingPhone}`.toLowerCase()
-						) {
-							location.vaccination.content.links.scheduling_phone = {
-								url: `tel:${locationData.schedulingPhone}`,
-								text: schedulingPhoneKey,
-							}
-						}
-					} else {
-						location.vaccination.content.links.scheduling_phone = {
-							url: `tel:${locationData.schedulingPhone}`,
-							text: schedulingPhoneKey,
-						}
-					}
-				}
-
-				if (
-					location.vaccination.content.links.scheduling_phone &&
-					locationData.schedulingPhoneDesc !== ''
-				) {
-					let schedulingPhoneDescKey = `c19.link/scheduling.phone.description.${prevItem.value.info.content.metadata.code_alpha}`.toLowerCase()
-
-					if (
-						prevItem.value.vaccination.content.links.scheduling_phone
-							.description
-					) {
-						schedulingPhoneDescKey =
-							prevItem.value.vaccination.content.links.scheduling_phone
-								.description
-					}
-					location.strings.content[schedulingPhoneDescKey] = {
-						...location.strings.content[schedulingPhoneDescKey],
-						[store.currentLanguage]: locationData.schedulingPhoneDesc,
-					}
-
-					location.vaccination.content.links.scheduling_phone.description = schedulingPhoneDescKey
 				}
 			} else {
-				const location = store.repoFileData[selectedState.key]
-				const regionObj = location.regions[prevItem.key]
-				regionObj.info.content.name = locationData.details
-
-				if ('noPhaseLabel' in regionObj.vaccination.content) {
-					regionObj.vaccination.content.noPhaseLabel = locationData.noPhaseLabel
-				} else {
-					regionObj.vaccination.content = {
-						...regionObj.vaccination.content,
-						noPhaseLabel: locationData.noPhaseLabel,
-					}
-				}
-
-				const schedulingPhoneKey = `c19.link/scheduling.phone.${location.info.content.metadata.code_alpha}.${regionObj.info.content.id}`.toLowerCase()
-				if (locationData?.schedulingPhone !== '') {
-					location.strings.content[schedulingPhoneKey] = {
-						[store.currentLanguage]: locationData.schedulingPhone,
-					}
-				}
-
-				if (locationData?.eligibility !== '') {
-					if (regionObj.vaccination.content.links.eligibility) {
-						if (
-							regionObj.vaccination.content.links.eligibility.url.toLowerCase() !==
-							locationData.eligibility.toLowerCase()
-						) {
-							regionObj.vaccination.content.links.eligibility = {
-								url: locationData.eligibility,
-							}
-						}
-					} else {
-						regionObj.vaccination.content.links.eligibility = {
-							url: locationData.eligibility,
-						}
-					}
-				} else {
-					delete regionObj.vaccination.content.links.eligibility
-				}
-
-				if (locationData?.eligibilityPlan !== '') {
-					if (regionObj.vaccination.content.links.eligibility_plan) {
-						if (
-							regionObj.vaccination.content.links.eligibility_plan.url.toLowerCase() !==
-							locationData.eligibilityPlan.toLowerCase()
-						) {
-							regionObj.vaccination.content.links.eligibility_plan = {
-								url: locationData.eligibilityPlan,
-							}
-						}
-					} else {
-						regionObj.vaccination.content.links.eligibility_plan = {
-							url: locationData.eligibilityPlan,
-						}
-					}
-				} else {
-					delete regionObj.vaccination.content.links.eligibility_plan
-				}
-
-				if (locationData?.info !== '') {
-					if (regionObj.vaccination.content.links.info) {
-						if (
-							regionObj.vaccination.content.links.info.url.toLowerCase() !==
-							locationData.info.toLowerCase()
-						) {
-							regionObj.vaccination.content.links.info = {
-								url: locationData.info,
-								text: `cdc/${location.info.content.id}/state_link`,
-							}
-						}
-					} else {
-						regionObj.vaccination.content.links.info = {
-							url: locationData.info,
-							text: `cdc/${location.info.content.id}/state_link`,
-						}
-					}
-				} else {
-					delete regionObj.vaccination.content.links.info
-				}
-
-				if (locationData?.providers !== '') {
-					if (regionObj.vaccination.content.links.providers) {
-						if (
-							regionObj.vaccination.content.links.providers.url.toLowerCase() !==
-							locationData.providers.toLowerCase()
-						) {
-							regionObj.vaccination.content.links.providers = {
-								url: locationData.providers,
-								text: 'c19.links/vax_providers',
-							}
-						}
-					} else {
-						regionObj.vaccination.content.links.providers = {
-							url: locationData.providers,
-							text: 'c19.links/vax_providers',
-						}
-					}
-				} else {
-					delete regionObj.vaccination.content.links.providers
-				}
-
-				if (locationData?.workflow !== '') {
-					if (regionObj.vaccination.content.links.workflow) {
-						if (
-							regionObj.vaccination.content.links.workflow.url.toLowerCase() !==
-							locationData.workflow.toLowerCase()
-						) {
-							regionObj.vaccination.content.links.workflow = {
-								url: locationData.workflow,
-								text: 'c19.links/vax_quiz',
-							}
-						}
-					} else {
-						regionObj.vaccination.content.links.workflow = {
-							url: locationData.workflow,
-							text: 'c19.links/vax_quiz',
-						}
-					}
-				} else {
-					delete regionObj.vaccination.content.links.workflow
-				}
-
-				if (locationData?.scheduling !== '') {
-					if (regionObj.vaccination.content.links.scheduling) {
-						if (
-							regionObj.vaccination.content.links.scheduling.url.toLowerCase() !==
-							locationData.scheduling.toLowerCase()
-						) {
-							regionObj.vaccination.content.links.scheduling = {
-								url: locationData.scheduling,
-								text: 'c19.links/schedule_vax',
-							}
-						}
-					} else {
-						regionObj.vaccination.content.links.scheduling = {
-							url: locationData.scheduling,
-							text: 'c19.links/schedule_vax',
-						}
-					}
-				} else {
-					delete regionObj.vaccination.content.links.scheduling
-				}
-
-				if (locationData?.schedulingPhone !== '') {
-					location.strings.content[schedulingPhoneKey] = {
-						...location.strings.content[schedulingPhoneKey],
-						[store.currentLanguage]: locationData.schedulingPhone,
-					}
-					if (regionObj.vaccination.content.links.scheduling_phone) {
-						if (
-							regionObj.vaccination.content.links.scheduling_phone.url.toLowerCase() !==
-							`tel:${locationData.schedulingPhone}`.toLowerCase()
-						) {
-							regionObj.vaccination.content.links.scheduling_phone = {
-								url: `tel:${locationData.schedulingPhone}`,
-								text: schedulingPhoneKey,
-							}
-						}
-					} else {
-						regionObj.vaccination.content.links.scheduling_phone = {
-							url: `tel:${locationData.schedulingPhone}`,
-							text: schedulingPhoneKey,
-						}
-					}
-				}
-
-				if (
-					regionObj.vaccination.content.links.scheduling_phone &&
-					locationData.schedulingPhoneDesc !== ''
-				) {
-					let schedulingPhoneDescKey = `c19.link/scheduling.phone.description.${location.info.content.metadata.code_alpha}.${regionObj.info.content.id}`.toLowerCase()
-
-					if (
-						prevItem.value.vaccination.content.links.scheduling_phone
-							.description
-					) {
-						schedulingPhoneDescKey =
-							prevItem.value.vaccination.content.links.scheduling_phone
-								.description
-					}
-					location.strings.content[schedulingPhoneDescKey] = {
-						...location.strings.content[schedulingPhoneDescKey],
-						[store.currentLanguage]: locationData.schedulingPhoneDesc,
-					}
-
-					regionObj.vaccination.content.links.scheduling_phone.description = schedulingPhoneDescKey
-				}
+				delete currLocation.vaccination.content.links.info
 			}
+
+			if (locationData.worflow !== '') {
+				if (currLocation.vaccination.content.links.worflow) {
+					currLocation.vaccination.content.links.worflow.url =
+						locationData.worflow
+				} else {
+					currLocation.vaccination.content.links['worflow'] = {
+						url: locationData.worflow,
+					}
+				}
+			} else {
+				delete currLocation.vaccination.content.links.worflow
+			}
+
+			if (locationData.scheduling !== '') {
+				if (currLocation.vaccination.content.links.scheduling) {
+					currLocation.vaccination.content.links.scheduling.url =
+						locationData.scheduling
+				} else {
+					currLocation.vaccination.content.links['scheduling'] = {
+						url: locationData.scheduling,
+					}
+				}
+			} else {
+				delete currLocation.vaccination.content.links.scheduling
+			}
+
+			if (locationData.providers !== '') {
+				if (currLocation.vaccination.content.links.providers) {
+					currLocation.vaccination.content.links.providers.url =
+						locationData.providers
+				} else {
+					currLocation.vaccination.content.links['providers'] = {
+						url: locationData.providers,
+					}
+				}
+			} else {
+				delete currLocation.vaccination.content.links.providers
+			}
+
+			if (locationData.eligibility !== '') {
+				if (currLocation.vaccination.content.links.eligibility) {
+					currLocation.vaccination.content.links.eligibility.url =
+						locationData.eligibility
+				} else {
+					currLocation.vaccination.content.links['eligibility'] = {
+						url: locationData.eligibility,
+					}
+				}
+			} else {
+				delete currLocation.vaccination.content.links.eligibility
+			}
+
+			if (locationData.eligibilityPlan !== '') {
+				if (currLocation.vaccination.content.links.eligibility_plan) {
+					currLocation.vaccination.content.links.eligibility_plan.url =
+						locationData.eligibilityPlan
+				} else {
+					currLocation.vaccination.content.links['eligibility_plan'] = {
+						url: locationData.eligibilityPlan,
+					}
+				}
+			} else {
+				delete currLocation.vaccination.content.links.eligibility_plan
+			}
+
+			if (locationData.schedulingPhone !== '') {
+				if (currLocation.vaccination.content.links.scheduling_phone) {
+					const schedulingPhoneKey =
+						currLocation.vaccination.content.links.scheduling_phone.text
+
+					if (currLocation.strings.content[schedulingPhoneKey]) {
+						currLocation.strings.content[schedulingPhoneKey][
+							store.currentLanguage
+						] = locationData.schedulingPhone
+					} else if (rootLocation.strings.content[schedulingPhoneKey]) {
+						rootLocation.strings.content[schedulingPhoneKey][
+							store.currentLanguage
+						] = locationData.schedulingPhone
+					}
+
+					currLocation.vaccination.content.links.scheduling_phone.url = `tel:${locationData.schedulingPhone}`
+
+					if (locationData.schedulingPhoneDesc !== '') {
+						if (
+							currLocation.vaccination.content.links.scheduling_phone
+								.description
+						) {
+							const schedulingPhoneDescKey =
+								currLocation.vaccination.content.links.scheduling_phone
+									.description
+							if (currLocation.strings.content[schedulingPhoneDescKey]) {
+								currLocation.strings.content[schedulingPhoneDescKey][
+									store.currentLanguage
+								] = locationData.schedulingPhoneDesc
+							} else if (rootLocation.strings.content[schedulingPhoneDescKey]) {
+								rootLocation.strings.content[schedulingPhoneDescKey][
+									store.currentLanguage
+								] = locationData.schedulingPhoneDesc
+							}
+						} else {
+							const schedulingPhoneDescKey = `c19.link/scheduling.phone.description.${pathArray.join(
+								'.'
+							)}`
+							currLocation.strings.content[schedulingPhoneDescKey] = {
+								[store.currentLanguage]: locationData.schedulingPhoneDesc,
+							}
+							currLocation.vaccination.content.links.scheduling_phone[
+								'description'
+							] = schedulingPhoneDescKey
+						}
+					} else {
+						delete currLocation.vaccination.content.links.scheduling_phone
+							.description
+					}
+				} else {
+					const schedulingPhoneKey = `c19.link/scheduling.phone.${pathArray.join(
+						'.'
+					)}`
+					const schedulingPhoneObj: any = {
+						text: schedulingPhoneKey,
+						url: `tel:${locationData.schedulingPhone}`,
+					}
+
+					currLocation.strings.content[schedulingPhoneKey] = {
+						[store.currentLanguage]: locationData.schedulingPhone,
+					}
+
+					if (locationData.schedulingPhoneDesc !== '') {
+						const schedulingPhoneDescKey = `c19.link/scheduling.phone.description.${pathArray.join(
+							'.'
+						)}`
+						currLocation.strings.content[schedulingPhoneDescKey] = {
+							[store.currentLanguage]: locationData.schedulingPhoneDesc,
+						}
+						schedulingPhoneObj['description'] = schedulingPhoneDescKey
+					}
+
+					currLocation.vaccination.content.links.scheduling_phone = schedulingPhoneObj
+				}
+			} else {
+				delete currLocation.vaccination.content.links.scheduling_phone
+			}
+
+			currLocation.vaccination.content['noPhaseLabel'] =
+				locationData.noPhaseLabel
+
+			const pathKey = pathArray.join('.')
+			const modifyKeyIdx = store.pendingChangeList.modified.findIndex(
+				(m: any) => m.pathKey === pathKey && m.section === 'location'
+			)
+
+			if (modifyKeyIdx > -1) {
+				store.pendingChangeList.modified[modifyKeyIdx].data = currLocation
+			} else {
+				store.pendingChangeList.modified.push({
+					section: 'location',
+					name: pathArray.slice(-1)[0],
+					pathKey: pathKey,
+					data: currLocation,
+				})
+			}
+
+			const modifyRootKeyIdx = store.pendingChangeList.modified.findIndex(
+				(m: any) => m.pathKey === rootPath
+			)
+
+			if (modifyRootKeyIdx > -1) {
+				store.pendingChangeList.modified[modifyRootKeyIdx].data = rootLocation
+			} else {
+				store.pendingChangeList.modified.push({
+					section: 'location',
+					name: rootPath,
+					pathKey: rootPath,
+					data: rootLocation,
+				})
+			}
+
 			store.repoFileData = { ...store.repoFileData }
 		}
 	}
 )
 
-export const modifyStateStrings = mutatorAction(
-	'modifyStateStrings',
-	(data: any | undefined) => {
-		if (data) {
+const copyPhaseData = (currentLocation: any, phases: any) => {
+	phases.forEach((phase: any) => {
+		phase.qualifications.forEach((question: any) => {
+			delete question.moreInfoText
+			delete question.moreInfoTextSms
+			delete question.moreInfoTextVoice
+			delete question.moreInfoUrl
+		})
+	})
+
+	currentLocation.vaccination.content.phases = phases
+}
+
+export const modifyMoreInfoText = mutatorAction(
+	'modifyMoreInfoText',
+	({
+		currentLocation,
+		phaseGroupId,
+		qualifierId,
+		moreInfoText,
+		moreInfoTextSms,
+		moreInfoTextVoice,
+	}: any) => {
+		if (currentLocation && phaseGroupId && qualifierId) {
 			const store = getAppStore()
-			if (store?.repoFileData) {
-				store.pendingChanges = true
-				const location = store.repoFileData[data.locationKey]
+			store.pendingChanges = true
 
-				if (!data.item.moreInfoContent) {
-					delete location.strings.content[data.infoKey]
-				} else {
-					const newStringsObj: any = {}
-					newStringsObj[store.currentLanguage] = data.item.moreInfoContent
-					location.strings.content[data.infoKey] = newStringsObj
-				}
+			const pathArray = currentLocation.info.path.split('/')
+			pathArray.splice(-1, 1)
+			const isRootLocation = pathArray.length === 1
 
-				if (!data.regionInfo) {
-					const affectedPhase = location.vaccination.content.phases.find(
-						(phase: any) => phase.id === data.item.groupId
-					)
-					const affectedQualifier = affectedPhase.qualifications.find(
-						(qualification: any) =>
-							qualification.question.toLowerCase() ===
-							data.item.qualifierId.toLowerCase()
-					)
-					if (affectedQualifier) {
-						if (data.item.moreInfoContent) {
-							affectedQualifier.moreInfoText = data.infoKey
-						} else {
-							delete affectedQualifier.moreInfoText
-						}
-					} else {
-						affectedPhase.qualifications.push({
-							question: data.item.qualifierId,
-							moreInfoText: data.infoKey,
-						})
-					}
-				} else {
-					const regionVaccinationObj =
-						location.regions[data.regionInfo.key].vaccination
+			const { phases, activePhase } = getLocationPhaseData(currentLocation)
 
-					if (!regionVaccinationObj.content?.phases) {
-						copyPhaseData(regionVaccinationObj, location.vaccination)
-					}
-					const affectedPhase = regionVaccinationObj.content.phases.find(
-						(phase: any) => phase.id === data.item.groupId
-					)
-					const affectedQualifier = affectedPhase.qualifications.find(
-						(qualification: any) =>
-							qualification.question.toLowerCase() ===
-							data.item.qualifierId.toLowerCase()
-					)
-
-					affectedQualifier.moreInfoText = data.infoKey
-				}
+			if (
+				!currentLocation.vaccination.content?.phases ||
+				currentLocation.vaccination.content?.phases.length === 0
+			) {
+				copyPhaseData(currentLocation, phases)
 			}
+
+			if (!currentLocation.vaccination.content?.activePhase) {
+				currentLocation.vaccination.content.activePhase = activePhase
+			}
+
+			const phaseGroupIndex = currentLocation.vaccination.content.phases.findIndex(
+				(phase: any) => phase.id === phaseGroupId
+			)
+
+			const phaseQualifiers =
+				currentLocation.vaccination.content.phases[phaseGroupIndex]
+					.qualifications
+			const qualifierIdx = phaseQualifiers.findIndex(
+				(pq: any) => pq.question === qualifierId
+			)
+
+			let calcInfoKey = `${qualifierId.replace('question', 'moreinfo')}`
+
+			if (!isRootLocation) {
+				const locationCode =
+					currentLocation.info.content?.metadata?.code_alpha ||
+					currentLocation.info.content.id
+				calcInfoKey += `.${locationCode.toLowerCase()}.${phaseGroupId}`
+			}
+
+			if (!moreInfoText) {
+				delete currentLocation.strings.content[calcInfoKey]
+			} else {
+				const newStringsObj: any = {}
+				newStringsObj[store.currentLanguage] = moreInfoText
+				currentLocation.strings.content[calcInfoKey] = newStringsObj
+
+				phaseQualifiers[qualifierIdx].moreInfoText = calcInfoKey
+			}
+
+			const moreInfoSmsKey = calcInfoKey.replace('moreinfo', 'moreinfo.sms')
+			if (!moreInfoTextSms) {
+				delete currentLocation.strings.content[moreInfoSmsKey]
+			} else {
+				const newStringsObj: any = {}
+				newStringsObj[store.currentLanguage] = moreInfoTextSms
+				currentLocation.strings.content[moreInfoSmsKey] = newStringsObj
+
+				phaseQualifiers[qualifierIdx].moreInfoTextSms = moreInfoSmsKey
+			}
+
+			const moreInfoVoiceKey = calcInfoKey.replace('moreinfo', 'moreinfo.voice')
+			if (!moreInfoTextVoice) {
+				delete currentLocation.strings.content[moreInfoVoiceKey]
+			} else {
+				const newStringsObj: any = {}
+				newStringsObj[store.currentLanguage] = moreInfoTextVoice
+				currentLocation.strings.content[moreInfoVoiceKey] = newStringsObj
+
+				phaseQualifiers[qualifierIdx].moreInfoTextVoice = moreInfoVoiceKey
+			}
+
+			const pathKey = pathArray.join('.')
+			const modifyKeyIdx = store.pendingChangeList.modified.findIndex(
+				(m: any) => m.pathKey === pathKey && m.section === 'qualifier'
+			)
+
+			if (modifyKeyIdx > -1) {
+				store.pendingChangeList.modified[modifyKeyIdx].data = currentLocation
+			} else {
+				store.pendingChangeList.modified.push({
+					section: 'qualifier',
+					name: currentLocation.info.content.id,
+					pathKey: pathKey,
+					data: currentLocation,
+				})
+			}
+
+			store.repoFileData = { ...store.repoFileData }
 		}
 	}
 )
 
-const copyPhaseData = (newObj: any, oldObj: any) => {
-	newObj.content['phases'] = []
-	oldObj.content.phases.forEach((phase: any) => {
-		const currPhaseObj: any = {}
-		currPhaseObj['id'] = phase.id
-		currPhaseObj['qualifications'] = []
-		phase.qualifications.forEach((qual: any) => {
-			currPhaseObj.qualifications.push({
-				question: qual.question.toLowerCase(),
-				moreInfoText: qual.moreInfoText
-					?.replace(/[^a-z0-9._/\s]/gi, '')
-					.replace(/\s/g, '_')
-					.toLowerCase(),
-				moreInfoUrl: qual.moreInfoUrl,
-			})
-		})
-
-		newObj.content.phases.push(currPhaseObj)
-	})
-}
-
 export const modifyMoreInfoLinks = mutatorAction(
 	'modifyMoreInfoLinks',
-	(data: any | undefined) => {
-		if (data) {
+	({ currentLocation, phaseGroupId, qualifierId, moreInfoUrl }: any) => {
+		if (currentLocation && phaseGroupId && qualifierId && moreInfoUrl) {
 			const store = getAppStore()
-			if (store?.repoFileData) {
-				store.pendingChanges = true
-				const location = store.repoFileData[data.locationKey]
-				if (data.regionInfo) {
-					const regionVaccinationObj =
-						location.regions[data.regionInfo.key].vaccination
-					if (!regionVaccinationObj.content?.phases) {
-						copyPhaseData(regionVaccinationObj, location.vaccination)
-					}
+			store.pendingChanges = true
 
-					const affectedPhase = regionVaccinationObj.content.phases.find(
-						(phase: any) => phase.id === data.item.groupId
-					)
+			const pathArray = currentLocation.info.path.split('/')
+			pathArray.splice(-1, 1)
 
-					if (affectedPhase) {
-						const affectedQualifier = affectedPhase.qualifications.find(
-							(qualification: any) =>
-								qualification.question.toLowerCase() ===
-								data.item.qualifierId.toLowerCase()
-						)
+			const { phases, activePhase } = getLocationPhaseData(currentLocation)
 
-						if (affectedQualifier) {
-							affectedQualifier.moreInfoUrl = data.item.moreInfoUrl
-						}
-					}
-				} else {
-					const affectedPhase = location.vaccination.content.phases.find(
-						(phase: any) => phase.id === data.item.groupId
-					)
-					const affectedQualifier = affectedPhase.qualifications.find(
-						(qualification: any) =>
-							qualification.question.toLowerCase() ===
-							data.item.qualifierId.toLowerCase()
-					)
-					if (affectedQualifier) {
-						affectedQualifier.moreInfoUrl = data.item.moreInfoUrl
-					} else {
-						affectedPhase.qualifications.push({
-							question: data.item.qualifierId,
-							moreInfoUrl: data.item.moreInfoUrl,
-						})
-					}
-				}
+			if (
+				!currentLocation.vaccination.content?.phases ||
+				currentLocation.vaccination.content?.phases.length === 0
+			) {
+				copyPhaseData(currentLocation, phases)
 			}
+
+			if (!currentLocation.vaccination.content?.activePhase) {
+				currentLocation.vaccination.content.activePhase = activePhase
+			}
+
+			const phaseGroupIndex = currentLocation.vaccination.content.phases.findIndex(
+				(phase: any) => phase.id === phaseGroupId
+			)
+
+			const phaseQualifiers =
+				currentLocation.vaccination.content.phases[phaseGroupIndex]
+					.qualifications
+			const qualifierIdx = phaseQualifiers.findIndex(
+				(pq: any) => pq.question === qualifierId
+			)
+
+			phaseQualifiers[qualifierIdx].moreInfoUrl = moreInfoUrl
+			const pathKey = pathArray.join('.')
+			const modifyKeyIdx = store.pendingChangeList.modified.findIndex(
+				(m: any) => m.pathKey === pathKey && m.section === 'qualifier'
+			)
+
+			if (modifyKeyIdx > -1) {
+				store.pendingChangeList.modified[modifyKeyIdx].data = currentLocation
+			} else {
+				store.pendingChangeList.modified.push({
+					section: 'qualifier',
+					name: currentLocation.info.content.id,
+					pathKey: pathKey,
+					data: currentLocation,
+				})
+			}
+
+			store.repoFileData = { ...store.repoFileData }
 		}
 	}
 )
 
 export const updateQualifier = mutatorAction(
 	'updateQualifier',
-	(data: any | undefined) => {
-		if (data) {
+	({ currentLocation, phaseGroupId, qualifierId, oldQualifierId }: any) => {
+		if (currentLocation && phaseGroupId && qualifierId && oldQualifierId) {
 			const store = getAppStore()
-			if (store?.repoFileData) {
-				store.pendingChanges = true
-				const location = store.repoFileData[data.locationKey]
-
-				if (data.regionInfo) {
-					const regionVaccinationObj =
-						location.regions[data.regionInfo.key].vaccination
-					if (!regionVaccinationObj.content?.phases) {
-						copyPhaseData(regionVaccinationObj, location.vaccination)
-					}
-
-					const affectedPhase = regionVaccinationObj.content.phases.find(
-						(phase: any) => phase.id === data.item.groupId
-					)
-
-					const affectedQualifier = affectedPhase.qualifications.find(
-						(qualification: any) =>
-							qualification.question.toLowerCase() === data.oldId.toLowerCase()
-					)
-					if (affectedQualifier) {
-						affectedQualifier.question = data.item.qualifierId.toLowerCase()
-					}
-				} else {
-					const affectedPhase = location.vaccination.content.phases.find(
-						(phase: any) => phase.id === data.item.groupId
-					)
-
-					const affectedQualifier = affectedPhase.qualifications.find(
-						(qualification: any) =>
-							qualification.question.toLowerCase() === data.oldId.toLowerCase()
-					)
-					if (affectedQualifier) {
-						affectedQualifier.question = data.item.qualifierId.toLowerCase()
-					}
-				}
-
-				store.repoFileData = { ...store.repoFileData }
-			}
-		}
-	}
-)
-export const addQualifier = mutatorAction(
-	'addQualifier',
-	(data: any | undefined) => {
-		if (data) {
-			const store = getAppStore()
-			if (store?.repoFileData) {
-				store.pendingChanges = true
-				const location = store.repoFileData[data.locationKey]
-
-				if (data.regionInfo) {
-					const regionVaccinationObj =
-						location.regions[data.regionInfo.key].vaccination
-					if (!regionVaccinationObj.content?.phases) {
-						copyPhaseData(regionVaccinationObj, location.vaccination)
-					}
-					const affectedPhase = regionVaccinationObj.content.phases.find(
-						(phase: any) => phase.id === data.item.groupId
-					)
-
-					affectedPhase.qualifications.push({
-						question: data.item.qualifierId,
-					})
-				} else {
-					const affectedPhase = location.vaccination.content.phases.find(
-						(phase: any) => phase.id === data.item.groupId
-					)
-
-					affectedPhase.qualifications.push({
-						question: data.item.qualifierId,
-					})
-				}
-
-				store.repoFileData = { ...store.repoFileData }
-			}
-		}
-	}
-)
-export const removeQualifier = mutatorAction(
-	'removeQualifier',
-	(data: any | undefined) => {
-		if (data) {
-			const store = getAppStore()
-			if (store?.repoFileData) {
-				store.pendingChanges = true
-				const location = store.repoFileData[data.locationKey]
-
-				if (data.regionInfo) {
-					const regionVaccinationObj =
-						location.regions[data.regionInfo.key].vaccination
-					if (!regionVaccinationObj.content?.phases) {
-						copyPhaseData(regionVaccinationObj, location.vaccination)
-					}
-					const affectedPhase = regionVaccinationObj.content.phases.find(
-						(phase: any) => phase.id === data.item.groupId
-					)
-
-					const removeIndex = affectedPhase.qualifications.findIndex(
-						(qualification: any) =>
-							qualification.question.toLowerCase() ===
-							data.item.qualifierId.toLowerCase()
-					)
-					affectedPhase.qualifications.splice(removeIndex, 1)
-					store.repoFileData = { ...store.repoFileData }
-				} else {
-					const affectedPhase = location.vaccination.content.phases.find(
-						(phase: any) => phase.id === data.item.groupId
-					)
-
-					const removeIndex = affectedPhase.qualifications.findIndex(
-						(qualification: any) =>
-							qualification.question.toLowerCase() ===
-							data.item.qualifierId.toLowerCase()
-					)
-					affectedPhase.qualifications.splice(removeIndex, 1)
-					store.repoFileData = { ...store.repoFileData }
-				}
-			}
-		}
-	}
-)
-export const removePhase = mutatorAction(
-	'removePhase',
-	(data: any | undefined) => {
-		if (data) {
-			const store = getAppStore()
-			if (store?.repoFileData) {
-				store.pendingChanges = true
-				const location = store.repoFileData[data.locationKey]
-
-				if (data.regionInfo) {
-					const regionVaccinationObj =
-						location.regions[data.regionInfo.key].vaccination
-					if (!regionVaccinationObj.content?.phases) {
-						copyPhaseData(regionVaccinationObj, location.vaccination)
-					}
-					const removeIndex = regionVaccinationObj.content.phases.findIndex(
-						(phase: any) => phase.id === data.phaseId
-					)
-
-					regionVaccinationObj.content.phases.splice(removeIndex, 1)
-				} else {
-					const removeIndex = location.vaccination.content.phases.findIndex(
-						(phase: any) => phase.id === data.phaseId
-					)
-
-					location.vaccination.content.phases.splice(removeIndex, 1)
-				}
-				store.repoFileData = { ...store.repoFileData }
-			}
-		}
-	}
-)
-
-export const addPhase = mutatorAction('addPhase', (data: any | undefined) => {
-	if (data) {
-		const store = getAppStore()
-		if (store?.repoFileData) {
 			store.pendingChanges = true
-			const location = store.repoFileData[data.locationKey]
 
-			const phaseId = formatId(data.item.name)
+			const pathArray = currentLocation.info.path.split('/')
+			pathArray.splice(-1, 1)
 
-			const emptyQualifications: any = []
+			const qualifierSmsKey = qualifierId.replace(
+				'.question/',
+				'.question.sms/'
+			)
+			const qualifierVoiceKey = qualifierId.replace(
+				'.question/',
+				'.question.voice/'
+			)
 
-			if (!location.vaccination.content.phases) {
-				location.vaccination.content.phases = []
+			const rootStringsObj = store.repoFileData[pathArray[0]].strings.content
+			const phaseQualiferObj: any = { question: qualifierId }
+
+			if (rootStringsObj[qualifierSmsKey]) {
+				phaseQualiferObj.questionSms = qualifierSmsKey
 			}
 
-			location.vaccination.content.phases.push({
-				id: phaseId,
-				label: data.item.name,
-				qualifications: emptyQualifications,
-			})
+			if (rootStringsObj[qualifierVoiceKey]) {
+				phaseQualiferObj.questionVoice = qualifierVoiceKey
+			}
+
+			const { phases, activePhase } = getLocationPhaseData(currentLocation)
+
+			if (
+				!currentLocation.vaccination.content?.phases ||
+				currentLocation.vaccination.content?.phases.length === 0
+			) {
+				copyPhaseData(currentLocation, phases)
+			}
+
+			if (!currentLocation.vaccination.content?.activePhase) {
+				currentLocation.vaccination.content.activePhase = activePhase
+			}
+
+			const phaseGroupIndex = currentLocation.vaccination.content.phases.findIndex(
+				(phase: any) => phase.id === phaseGroupId
+			)
+
+			const phaseQualifiers =
+				currentLocation.vaccination.content.phases[phaseGroupIndex]
+					.qualifications
+			const qualifierIdx = phaseQualifiers.findIndex(
+				(pq: any) => pq.question === oldQualifierId
+			)
+
+			const oldQualifierObj = phaseQualifiers[qualifierIdx]
+
+			if (oldQualifierObj.moreInfoText) {
+				delete currentLocation.strings.content[oldQualifierObj.moreInfoText]
+			}
+
+			if (oldQualifierObj.moreInfoTextSms) {
+				delete currentLocation.strings.content[oldQualifierObj.moreInfoTextSms]
+			}
+
+			if (oldQualifierObj.moreInfoTextVoice) {
+				delete currentLocation.strings.content[
+					oldQualifierObj.moreInfoTextVoice
+				]
+			}
+
+			phaseQualifiers[qualifierIdx] = phaseQualiferObj
+
+			const pathKey = pathArray.join('.')
+			const modifyKeyIdx = store.pendingChangeList.modified.findIndex(
+				(m: any) => m.pathKey === pathKey && m.section === 'qualifier'
+			)
+
+			if (modifyKeyIdx > -1) {
+				store.pendingChangeList.modified[modifyKeyIdx].data = currentLocation
+			} else {
+				store.pendingChangeList.modified.push({
+					section: 'qualifier',
+					name: currentLocation.info.content.id,
+					pathKey: pathKey,
+					data: currentLocation,
+				})
+			}
+
 			store.repoFileData = { ...store.repoFileData }
 		}
 	}
-})
+)
 
-export const duplicatePhase = mutatorAction(
-	'duplicatePhase',
-	(
-		data:
-			| {
-					name: string
-					locationKey: string
-					phaseId: string
-					isRegion?: boolean
-					regionInfo?: { key: string }
-			  }
-			| undefined
-	) => {
-		if (data) {
+export const addQualifier = mutatorAction(
+	'addQualifier',
+	({ currentLocation, phaseGroupId, qualifierId }: any) => {
+		if (currentLocation && phaseGroupId && qualifierId) {
 			const store = getAppStore()
-			if (store?.repoFileData) {
-				store.pendingChanges = true
-				const location = store.repoFileData[data.locationKey]
-				const phaseSource =
-					data.isRegion &&
-					data.regionInfo?.key &&
-					location.regions[data.regionInfo.key].vaccination?.content.phases
-						? location.regions[
-								data.regionInfo.key
-						  ].vaccination.content.phases.find(
-								(item: { id: string }) => item.id === data.phaseId
-						  )
-						: location.vaccination.content.phases.find(
-								(item: { id: string }) => item.id === data.phaseId
-						  )
-				const nextPhaseId = formatId(data.name)
+			store.pendingChanges = true
 
-				const newItem = {
-					id: nextPhaseId,
-					label: data.name,
-					qualifications: phaseSource.qualifications?.map((item: any) => {
-						const newContentKey = item.moreInfoText?.replace(
-							new RegExp(data.phaseId + '$'),
-							nextPhaseId
-						)
+			const pathArray = currentLocation.info.path.split('/')
+			pathArray.splice(-1, 1)
 
-						if (newContentKey) {
-							location.strings.content[newContentKey] =
-								location.strings.content[item.moreInfoText]
-						}
+			const qualifierSmsKey = qualifierId.replace(
+				'.question/',
+				'.question.sms/'
+			)
+			const qualifierVoiceKey = qualifierId.replace(
+				'.question/',
+				'.question.voice/'
+			)
 
-						return {
-							question: item.question,
-							moreInfoUrl: item.moreInfoUrl,
-							moreInfoText: newContentKey,
-						}
-					}),
-				}
+			const rootStringsObj = store.repoFileData[pathArray[0]].strings.content
+			const phaseQualiferObj: any = { question: qualifierId }
 
-				if (data.isRegion && data.regionInfo) {
-					const regionVaccinationObj =
-						location.regions[data.regionInfo.key].vaccination
-
-					if (!regionVaccinationObj.content?.phases) {
-						copyPhaseData(regionVaccinationObj, location.vaccination)
-					}
-
-					regionVaccinationObj.content.phases.push(newItem)
-				} else {
-					// State level region phase
-					location.vaccination.content.phases.push(newItem)
-				}
-
-				store.repoFileData = { ...store.repoFileData }
+			if (rootStringsObj[qualifierSmsKey]) {
+				phaseQualiferObj.questionSms = qualifierSmsKey
 			}
+
+			if (rootStringsObj[qualifierVoiceKey]) {
+				phaseQualiferObj.questionVoice = qualifierVoiceKey
+			}
+
+			const { phases, activePhase } = getLocationPhaseData(currentLocation)
+
+			if (
+				!currentLocation.vaccination.content?.phases ||
+				currentLocation.vaccination.content?.phases.length === 0
+			) {
+				copyPhaseData(currentLocation, phases)
+			}
+
+			if (!currentLocation.vaccination.content?.activePhase) {
+				currentLocation.vaccination.content.activePhase = activePhase
+			}
+
+			const phaseGroupIndex = currentLocation.vaccination.content.phases.findIndex(
+				(phase: any) => phase.id === phaseGroupId
+			)
+			const pathKey = pathArray.join('.')
+
+			const phaseQualifiers =
+				currentLocation.vaccination.content.phases[phaseGroupIndex]
+					.qualifications
+			phaseQualifiers.push(phaseQualiferObj)
+
+			store.pendingChangeList.added.push({
+				section: 'qualifier',
+				name: currentLocation.info.content.id,
+				pathKey: pathKey,
+				data: currentLocation,
+			})
+
+			store.repoFileData = { ...store.repoFileData }
+		}
+	}
+)
+
+export const removeQualifier = mutatorAction(
+	'removeQualifier',
+	({ currentLocation, phaseGroupId, qualifierId }: any) => {
+		if (currentLocation && phaseGroupId && qualifierId) {
+			const store = getAppStore()
+			store.pendingChanges = true
+
+			const pathArray = currentLocation.info.path.split('/')
+			pathArray.splice(-1, 1)
+
+			const { phases, activePhase } = getLocationPhaseData(currentLocation)
+
+			if (
+				!currentLocation.vaccination.content?.phases ||
+				currentLocation.vaccination.content?.phases.length === 0
+			) {
+				copyPhaseData(currentLocation, phases)
+			}
+
+			if (!currentLocation.vaccination.content?.activePhase) {
+				currentLocation.vaccination.content.activePhase = activePhase
+			}
+
+			const phaseGroupIndex = currentLocation.vaccination.content.phases.findIndex(
+				(phase: any) => phase.id === phaseGroupId
+			)
+			const pathKey = pathArray.join('.')
+
+			const phaseQualifiers =
+				currentLocation.vaccination.content.phases[phaseGroupIndex]
+					.qualifications
+			const qualifierIdx = phaseQualifiers.findIndex(
+				(pq: any) => pq.question === qualifierId
+			)
+
+			store.pendingChangeList.modified.push({
+				section: 'qualifier',
+				name: currentLocation.info.content.id,
+				pathKey: pathKey,
+				data: currentLocation,
+			})
+
+			phaseQualifiers.splice(qualifierIdx, 1)
+
+			store.repoFileData = { ...store.repoFileData }
+		}
+	}
+)
+
+export const removePhase = mutatorAction(
+	'removePhase',
+	({ currentLocation, phaseId }: any) => {
+		if (currentLocation && phaseId) {
+			const store = getAppStore()
+			store.pendingChanges = true
+
+			const pathArray = currentLocation.info.path.split('/')
+			pathArray.splice(-1, 1)
+
+			const { phases } = getLocationPhaseData(currentLocation)
+
+			const removeIndex = phases.findIndex((phase: any) => phase.id === phaseId)
+			const name = phases[removeIndex].label || phases[removeIndex].id
+			phases.splice(removeIndex, 1)
+
+			if (
+				!currentLocation.vaccination.content?.phases ||
+				currentLocation.vaccination.content?.phases.length === 0
+			) {
+				copyPhaseData(currentLocation, phases)
+			} else {
+				currentLocation.vaccination.content.phases = phases
+			}
+
+			if (currentLocation.vaccination.content.activePhase === phaseId) {
+				delete currentLocation.vaccination.content.activePhase
+			}
+
+			store.pendingChangeList.modified.push({
+				section: 'phase',
+				name: name,
+				pathKey: pathArray.join('.'),
+				data: currentLocation,
+			})
+
+			store.repoFileData = { ...store.repoFileData }
 		}
 	}
 )
 
 export const updatePhase = mutatorAction(
 	'updatePhase',
-	(data: any | undefined) => {
-		if (data) {
-			const store = getAppStore()
-			if (store?.repoFileData) {
-				store.pendingChanges = true
-				const location = store.repoFileData[data.locationKey]
-				const phaseId = data.item.phaseId
-					.toLowerCase()
-					.replace(` (${t('LocationsRegions.active')})`, '')
-					.trim()
+	(currentLocation: any, phaseId: string, phaseName: string) => {
+		const store = getAppStore()
+		store.pendingChanges = true
 
-				const affectedPhase = location.vaccination.content.phases.find(
+		const pathArray = currentLocation.info.path.split('/')
+		pathArray.splice(-1, 1)
+
+		const { phases, activePhase } = getLocationPhaseData(currentLocation)
+
+		if (
+			!currentLocation.vaccination.content?.phases ||
+			currentLocation.vaccination.content?.phases.length === 0
+		) {
+			copyPhaseData(currentLocation, phases)
+		} else {
+			currentLocation.vaccination.content.phases = phases
+		}
+
+		if (!currentLocation.vaccination.content?.activePhase) {
+			currentLocation.vaccination.content.activePhase = activePhase
+		}
+
+		const affectedPhase = currentLocation.vaccination.content.phases.find(
+			(phase: any) => phase.id === phaseId
+		)
+
+		affectedPhase.label = phaseName
+
+		const pathKey = pathArray.join('.')
+		const modifyKeyIdx = store.pendingChangeList.modified.findIndex(
+			(m: any) => m.pathKey === pathKey && m.section === 'phase'
+		)
+
+		if (modifyKeyIdx > -1) {
+			store.pendingChangeList.modified[modifyKeyIdx].data = currentLocation
+		} else {
+			store.pendingChangeList.modified.push({
+				section: 'phase',
+				name: currentLocation.info.content.id,
+				pathKey: pathKey,
+				data: currentLocation,
+			})
+		}
+
+		store.repoFileData = { ...store.repoFileData }
+	}
+)
+
+export const addPhase = mutatorAction(
+	'addPhase',
+	({ currentLocation, id, label }: any) => {
+		if (currentLocation && id && label) {
+			const store = getAppStore()
+			store.pendingChanges = true
+			const pathArray = currentLocation.info.path.split('/')
+			pathArray.splice(-1, 1)
+
+			const { phases, activePhase } = getLocationPhaseData(currentLocation)
+
+			if (
+				!currentLocation.vaccination.content?.phases ||
+				currentLocation.vaccination.content?.phases.length === 0
+			) {
+				copyPhaseData(currentLocation, phases)
+			} else {
+				currentLocation.vaccination.content.phases = phases
+			}
+
+			if (!currentLocation.vaccination.content?.activePhase) {
+				currentLocation.vaccination.content.activePhase = activePhase
+			}
+
+			currentLocation.vaccination.content.phases.push({
+				id,
+				label,
+				qualifications: [],
+			})
+
+			const pathKey = pathArray.join('.')
+			store.pendingChangeList.added.push({
+				section: 'phase',
+				name: label,
+				pathKey: pathKey,
+				data: currentLocation,
+			})
+
+			store.repoFileData = { ...store.repoFileData }
+		}
+	}
+)
+
+export const duplicatePhase = mutatorAction(
+	'duplicatePhase',
+	({ currentLocation, phaseId, name }: any) => {
+		if (currentLocation && phaseId && name) {
+			const store = getAppStore()
+			store.pendingChanges = true
+			const pathArray = currentLocation.info.path.split('/')
+			pathArray.splice(-1, 1)
+
+			const { phases } = getLocationPhaseData(currentLocation)
+
+			if (
+				!currentLocation.vaccination.content?.phases ||
+				currentLocation.vaccination.content?.phases.length === 0
+			) {
+				copyPhaseData(currentLocation, phases)
+			} else {
+				currentLocation.vaccination.content.phases = phases
+			}
+
+			const phase = clone(
+				currentLocation.vaccination.content.phases.find(
 					(phase: any) => phase.id === phaseId
 				)
+			)
 
-				affectedPhase.label = data.item.name
-				store.repoFileData = { ...store.repoFileData }
+			const duplicatePhase = {
+				...phase,
+				id: formatId(name),
+				label: name,
 			}
+
+			currentLocation.vaccination.content.phases.push(duplicatePhase)
+
+			const pathKey = pathArray.join('.')
+			store.pendingChangeList.added.push({
+				section: 'phase',
+				name: name,
+				pathKey: pathKey,
+				data: currentLocation,
+			})
+
+			store.repoFileData = { ...store.repoFileData }
 		}
 	}
 )
 
 export const setActivePhase = mutatorAction(
 	'setActivePhase',
-	(data: any | undefined) => {
-		if (data) {
+	({ currentLocation, phaseId }): any => {
+		if (currentLocation && phaseId) {
 			const store = getAppStore()
-			if (store?.repoFileData) {
-				store.pendingChanges = true
-				const location = store.repoFileData[data.locationKey]
+			store.pendingChanges = true
 
-				if (data.regionInfo) {
-					const regionVaccinationObj =
-						location.regions[data.regionInfo.key].vaccination
-					regionVaccinationObj.content['activePhase'] = data.phaseId
-					store.repoFileData = { ...store.repoFileData }
-				} else {
-					location.vaccination.content['activePhase'] = data.phaseId
-					store.repoFileData = { ...store.repoFileData }
-				}
+			const { locationData: currLocation, pathKey } = getCurrentLocationObj(
+				currentLocation
+			)
+
+			currLocation.vaccination.content.activePhase = phaseId
+
+			const modifyKeyIdx = store.pendingChangeList.modified.findIndex(
+				(m: any) => m.pathKey === pathKey && m.section === 'phase'
+			)
+
+			if (modifyKeyIdx > -1) {
+				store.pendingChangeList.modified[modifyKeyIdx].data = currLocation
+			} else {
+				store.pendingChangeList.modified.push({
+					section: 'phase',
+					name: phaseId,
+					pathKey: pathKey,
+					data: currLocation,
+				})
 			}
+
+			store.repoFileData = { ...store.repoFileData }
 		}
 	}
 )
 
-export const updateGlobalQualifiers = mutatorAction(
-	'updateGlobalQualifiers',
-	(item: any | undefined) => {
-		if (item) {
-			const store = getAppStore()
-			const { customStrings } = store.globalFileData
-			store.pendingChanges = true
-			let qualifierKey = ''
+const deleteKeyRecursive = (key: string, dataSource: any, changeList: any) => {
+	if (dataSource.regions) {
+		for (const region in dataSource.regions) {
+			const location = dataSource.regions[region]
+			if (JSON.stringify(location)?.toLowerCase().includes(key)) {
+				deleteKeyRecursive(key, location, changeList)
+			}
+		}
+	}
 
-			if (item.isNew) {
-				const qualifierKeyBank = item.qualifier
+	if (
+		JSON.stringify(dataSource.vaccination.content)?.toLowerCase().includes(key)
+	) {
+		const pathArray = dataSource.info.path.split('/')
+		pathArray.splice(-1, 1)
+
+		dataSource.vaccination.content.phases.forEach((phase: any) => {
+			if (JSON.stringify(phase)?.toLowerCase().includes(key)) {
+				phase.qualifications.forEach((qualifier: any) => {
+					Object.keys(qualifier).forEach((qualifierKey: string) => {
+						if (qualifier[qualifierKey].toLowerCase() === key) {
+							delete qualifier[qualifierKey]
+						}
+					})
+				})
+			}
+		})
+
+		changeList.push({
+			section: 'phase',
+			name: dataSource.info.content.id,
+			pathKey: pathArray.join('.'),
+			data: dataSource,
+		})
+	}
+}
+
+const addKeyRecursive = (
+	key: string,
+	dataSource: any,
+	changeList: any,
+	isSms = false,
+	isVoice = false
+) => {
+	if (dataSource.regions) {
+		for (const region in dataSource.regions) {
+			const location = dataSource.regions[region]
+			if (JSON.stringify(location)?.toLowerCase().includes(key)) {
+				addKeyRecursive(key, location, changeList, isSms, isVoice)
+			}
+		}
+	}
+
+	if (
+		JSON.stringify(dataSource.vaccination.content)?.toLowerCase().includes(key)
+	) {
+		const pathArray = dataSource.info.path.split('/')
+		pathArray.splice(-1, 1)
+
+		dataSource.vaccination.content.phases.forEach((phase: any) => {
+			if (JSON.stringify(phase)?.toLowerCase().includes(key)) {
+				phase.qualifications.forEach((qualifier: any) => {
+					if (qualifier.question.toLowerCase() === key) {
+						if (isSms && !qualifier.questionSms) {
+							qualifier.questionSms = key.replace(
+								'.question/',
+								'.question.sms/'
+							)
+							changeList.push({
+								section: 'phase',
+								name: dataSource.info.content.id,
+								pathKey: pathArray.join('.'),
+								data: dataSource,
+							})
+						}
+
+						if (isVoice && !qualifier.questionVoice) {
+							qualifier.questionVoice = key.replace(
+								'.question/',
+								'.question.voice/'
+							)
+							changeList.push({
+								section: 'phase',
+								name: dataSource.info.content.id,
+								pathKey: pathArray.join('.'),
+								data: dataSource,
+							})
+						}
+					}
+				})
+			}
+		})
+	}
+}
+
+export const updateRootLocationQualifiers = mutatorAction(
+	'updateRootLocationQualifiers',
+	({ rootLocationKey, newQualifier }: any | undefined) => {
+		if (rootLocationKey && newQualifier) {
+			const store = getAppStore()
+			store.pendingChanges = true
+			const stringsObj = store.repoFileData[rootLocationKey].strings.content
+
+			let qualifierKey = ''
+			let qualifierSmsKey = ''
+			let qualifierVoiceKey = ''
+
+			if (newQualifier.isNew) {
+				const qualifierKeyBank = newQualifier.qualifier
 					.toLowerCase()
 					.replace(/[^A-Za-z0-9]/g, '_')
 					.split('_')
 					.filter((i: string) => i) as string[]
 
-				const customStringKeys = Object.keys(customStrings.content)
+				const customStringKeys = Object.keys(stringsObj)
 
 				let qKey = ''
 				for (let i = 0; i < qualifierKeyBank.length; i++) {
@@ -1146,7 +1361,7 @@ export const updateGlobalQualifiers = mutatorAction(
 					} else {
 						qKey = `${qKey}_${qualifierKeyBank[i]}`
 					}
-					qualifierKey = `c19.eligibility.question/${item.tagKey.toLowerCase()}.${qKey}`
+					qualifierKey = `c19.eligibility.question/${newQualifier.tagKey.toLowerCase()}.${qKey}`
 
 					if (!customStringKeys.includes(qualifierKey)) {
 						break
@@ -1156,186 +1371,127 @@ export const updateGlobalQualifiers = mutatorAction(
 				qualifierKey = qualifierKey.endsWith('_')
 					? qualifierKey.substr(0, qualifierKey.length - 1)
 					: qualifierKey
-			} else {
-				qualifierKey = item.key
-			}
 
-			store.globalFileData.customStrings.content[qualifierKey] = {
-				...store.globalFileData.customStrings.content[qualifierKey],
-				[store.currentLanguage]: item.qualifier,
-			}
-
-			store.globalFileData = { ...store.globalFileData }
-		}
-	}
-)
-
-export const translateLocationName = mutatorAction(
-	'translateLocationName',
-	(item: any) => {
-		if (item) {
-			const store = getAppStore()
-			if (store?.globalFileData) {
-				store.pendingChanges = true
-				if (store.globalFileData.cdcStateNames.content[item.key]) {
-					store.globalFileData.cdcStateNames.content[item.key] = {
-						...store.globalFileData.cdcStateNames.content[item.key],
-						[item.toKey]: item.to,
-						[`${item.toKey}-sms`]: item.sms,
-						[`${item.toKey}-voice`]: item.voice,
-					}
-				} else {
-					store.globalFileData.cdcStateNames.content = {
-						...store.globalFileData.cdcStateNames.content,
-						...{
-							[item.key]: {
-								[item.toKey]: item.to,
-								[`${item.toKey}-sms`]: item.sms,
-								[`${item.toKey}-voice`]: item.voice,
-							},
-						},
-					}
-				}
-
-				store.globalFileData = { ...store.globalFileData }
-			}
-		}
-	}
-)
-
-export const translateQualifier = mutatorAction(
-	'translateQualifier',
-	(item: any) => {
-		if (item) {
-			const store = getAppStore()
-			if (store?.globalFileData) {
-				store.pendingChanges = true
-				if (store.globalFileData.customStrings.content[item.key]) {
-					store.globalFileData.customStrings.content[item.key] = {
-						...store.globalFileData.customStrings.content[item.key],
-						[item.toKey]: item.to,
-						[`${item.toKey}-sms`]: item.sms,
-						[`${item.toKey}-voice`]: item.voice,
-					}
-				} else {
-					store.globalFileData.customStrings.content = {
-						...store.globalFileData.customStrings.content,
-						...{
-							[item.key]: {
-								[item.toKey]: item.to,
-								[`${item.toKey}-sms`]: item.sms,
-								[`${item.toKey}-voice`]: item.voice,
-							},
-						},
-					}
-				}
-
-				store.globalFileData = { ...store.globalFileData }
-			}
-		}
-	}
-)
-
-export const translateMisc = mutatorAction('translateMisc', (item: any) => {
-	if (item) {
-		const store = getAppStore()
-		if (item.category === 'state' && item.parent !== 'global') {
-			if (store?.repoFileData) {
-				store.pendingChanges = true
-				if (
-					store.repoFileData[item.parent].strings.content[item.key][item.toKey]
-				) {
-					store.repoFileData[item.parent].strings.content[item.key][
-						item.toKey
-					] = item.to
-					store.repoFileData[item.parent].strings.content[item.key][
-						`${item.toKey}-sms`
-					] = item.sms
-					store.repoFileData[item.parent].strings.content[item.key][
-						`${item.toKey}-voice`
-					] = item.voice
-				} else {
-					store.repoFileData[item.parent].strings.content[item.key] = {
-						...store.repoFileData[item.parent].strings.content[item.key],
-						...{
-							[item.toKey]: item.to,
-							[`${item.toKey}-sms`]: item.sms,
-							[`${item.toKey}-voice`]: item.voice,
-						},
-					}
-				}
-
-				store.repoFileData = { ...store.repoFileData }
-			}
-		} else {
-			if (store?.globalFileData) {
-				store.pendingChanges = true
-				const customStringKeys = Object.keys(
-					store.globalFileData.customStrings.content
+				qualifierSmsKey = qualifierKey.replace('.question/', '.question.sms/')
+				qualifierVoiceKey = qualifierKey.replace(
+					'.question/',
+					'.question.voice/'
 				)
-				const isCustomString = customStringKeys.includes(item.key)
-
-				if (isCustomString) {
-					if (store.globalFileData.customStrings.content[item.key]) {
-						store.globalFileData.customStrings.content[item.key] = {
-							...store.globalFileData.customStrings.content[item.key],
-							[item.toKey]: item.to,
-							[`${item.toKey}-sms`]: item.sms,
-							[`${item.toKey}-voice`]: item.voice,
-						}
-					} else {
-						store.globalFileData.customStrings.content = {
-							...store.globalFileData.customStrings.content,
-							...{
-								[item.key]: {
-									[item.toKey]: item.to,
-									[`${item.toKey}-sms`]: item.sms,
-									[`${item.toKey}-voice`]: item.voice,
-								},
-							},
-						}
-					}
-				} else {
-					if (store.globalFileData.cdcStateLinks.content[item.key]) {
-						store.globalFileData.cdcStateLinks.content[item.key] = {
-							...store.globalFileData.cdcStateLinks.content[item.key],
-							[item.toKey]: item.to,
-							[`${item.toKey}-sms`]: item.sms,
-							[`${item.toKey}-voice`]: item.voice,
-						}
-					} else {
-						store.globalFileData.cdcStateLinks.content = {
-							...store.globalFileData.cdcStateLinks.content,
-							...{
-								[item.key]: {
-									[item.toKey]: item.to,
-									[`${item.toKey}-sms`]: item.sms,
-									[`${item.toKey}-voice`]: item.voice,
-								},
-							},
-						}
-					}
-				}
-
-				store.globalFileData = { ...store.globalFileData }
+			} else {
+				qualifierKey = newQualifier.key
+				qualifierSmsKey = newQualifier.key.replace(
+					'.question/',
+					'.question.sms/'
+				)
+				qualifierVoiceKey = newQualifier.key.replace(
+					'.question/',
+					'.question.voice/'
+				)
 			}
+
+			stringsObj[qualifierKey] = {
+				...stringsObj[qualifierKey],
+				[store.currentLanguage]: newQualifier.qualifier,
+			}
+
+			if (!newQualifier.qualifierSms && !newQualifier.isNew) {
+				deleteKeyRecursive(
+					qualifierSmsKey,
+					store.repoFileData[rootLocationKey],
+					store.pendingChangeList.modified
+				)
+				delete stringsObj[qualifierSmsKey]
+			} else if (newQualifier.qualifierSms) {
+				addKeyRecursive(
+					qualifierKey,
+					store.repoFileData[rootLocationKey],
+					store.pendingChangeList.modified,
+					true,
+					false
+				)
+				stringsObj[qualifierSmsKey] = {
+					...stringsObj[qualifierSmsKey],
+					[store.currentLanguage]: newQualifier.qualifierSms,
+				}
+			}
+
+			if (!newQualifier.qualifierVoice && !newQualifier.isNew) {
+				deleteKeyRecursive(
+					qualifierVoiceKey,
+					store.repoFileData[rootLocationKey],
+					store.pendingChangeList.modified
+				)
+				delete stringsObj[qualifierVoiceKey]
+			} else if (newQualifier.qualifierVoice) {
+				addKeyRecursive(
+					qualifierKey,
+					store.repoFileData[rootLocationKey],
+					store.pendingChangeList.modified,
+					false,
+					true
+				)
+				stringsObj[qualifierVoiceKey] = {
+					...stringsObj[qualifierVoiceKey],
+					[store.currentLanguage]: newQualifier.qualifierVoice,
+				}
+			}
+
+			const modifyRootKeyIdx = store.pendingChangeList.modified.findIndex(
+				(m: any) => m.pathKey === rootLocationKey
+			)
+
+			if (modifyRootKeyIdx > -1) {
+				store.pendingChangeList.modified[modifyRootKeyIdx].data =
+					store.repoFileData[rootLocationKey]
+			} else {
+				store.pendingChangeList.modified.push({
+					section: 'qualifier',
+					name: rootLocationKey,
+					pathKey: rootLocationKey,
+					data: store.repoFileData[rootLocationKey],
+				})
+			}
+
+			store.repoFileData = { ...store.repoFileData }
 		}
 	}
-})
+)
 
-const recursiveFindAndReplace = (key: string, saveObj: any, location: any) => {
+const recursiveFindAndReplace = (
+	key: string,
+	saveObj: any,
+	location: any,
+	changeList: any
+) => {
 	if (
 		location.strings &&
 		location.strings.content &&
 		location.strings.content[key]
 	) {
+		const { locationData, pathKey, name } = getCurrentLocationObj(location)
 		location.strings.content[key] = saveObj
+
+		const translateChangeKey = changeList.findIndex(
+			(m: any) => m.pathKey === pathKey && m.section === 'translations'
+		)
+		if (translateChangeKey === -1) {
+			changeList.push({
+				section: 'translations',
+				name: name,
+				pathKey: pathKey,
+				data: locationData,
+			})
+		}
 		return
 	}
-	if (location.regions && location.regions.length > 0) {
-		location.regions.forEach((region: any) => {
-			recursiveFindAndReplace(key, saveObj, region)
-		})
+	if (location.regions) {
+		for (const region of Object.keys(location.regions)) {
+			const regionObj = location.regions[region]
+			if (JSON.stringify(regionObj).includes(key)) {
+				recursiveFindAndReplace(key, saveObj, regionObj, changeList)
+				break
+			}
+		}
 	}
 }
 
@@ -1346,27 +1502,20 @@ export const updateStrings = mutatorAction(
 			const store = getAppStore()
 			store.pendingChanges = true
 			Object.keys(stringsList).forEach((stringId: string) => {
-				if (store.globalFileData.customStrings.content[stringId]) {
-					store.globalFileData.customStrings.content[stringId] =
-						stringsList[stringId]
-				} else if (store.globalFileData.cdcStateLinks.content[stringId]) {
-					store.globalFileData.cdcStateLinks.content[stringId] =
-						stringsList[stringId]
-				} else if (store.globalFileData.cdcStateNames.content[stringId]) {
-					store.globalFileData.cdcStateNames.content[stringId] =
-						stringsList[stringId]
-				} else {
-					for (const item of Object.keys(store.repoFileData)) {
-						const location = store.repoFileData[item]
-						if (JSON.stringify(location).includes(stringId)) {
-							recursiveFindAndReplace(stringId, stringsList[stringId], location)
-							break
-						}
+				for (const item of Object.keys(store.repoFileData)) {
+					const location = store.repoFileData[item]
+					if (JSON.stringify(location).includes(stringId)) {
+						recursiveFindAndReplace(
+							stringId,
+							stringsList[stringId],
+							location,
+							store.pendingChangeList.modified
+						)
+						break
 					}
 				}
 			})
-
-			store.globalFileData = { ...store.globalFileData }
+			store.repoFileData = { ...store.repoFileData }
 		}
 	}
 )

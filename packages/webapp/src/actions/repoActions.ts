@@ -8,7 +8,7 @@ export const createPR = action('createPR', (fileData: any) => ({
 	fileData,
 }))
 
-export const getRepoFileData = action('getRepoFileData')
+export const loadAllStringsData = action('loadAllStringsData')
 
 export const initializeGitData = action('initializeGitData')
 
@@ -21,3 +21,9 @@ export const loadBranch = action('loadBranch', (branch: any) => ({
 }))
 
 export const saveContinue = action('saveContinue')
+
+export const getLocationData = action('getLocationData', (location: any) => ({
+	location
+}))
+
+export const loadAllLocationData = action('loadAllLocationData', (location:any) => ({location}))

@@ -1,0 +1,9 @@
+{
+	"id": "arizona",
+	"name": "cdc/arizona/state_name",
+	"type": "state",
+	"metadata": {
+		"code_alpha": "AZ",
+		"code_numeric": 4
+	}
+}

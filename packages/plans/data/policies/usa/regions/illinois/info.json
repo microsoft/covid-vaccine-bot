@@ -1,0 +1,9 @@
+{
+	"id": "illinois",
+	"name": "cdc/illinois/state_name",
+	"type": "state",
+	"metadata": {
+		"code_alpha": "IL",
+		"code_numeric": 17
+	}
+}

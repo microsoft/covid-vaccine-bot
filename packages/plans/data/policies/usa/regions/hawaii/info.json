@@ -1,0 +1,9 @@
+{
+	"id": "hawaii",
+	"name": "cdc/hawaii/state_name",
+	"type": "state",
+	"metadata": {
+		"code_alpha": "HI",
+		"code_numeric": 15
+	}
+}

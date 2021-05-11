@@ -10,6 +10,7 @@
 	.mainRow {
 		display: flex;
 		flex-direction: row;
+		margin-left: 34px;
 
 		.tagDropdown {
 			padding: 0 10px 5px 0;
@@ -26,5 +27,9 @@
 		display: flex;
 		flex-direction: column;
 		margin-left: 34px;
+
+		.ms-TextField-field {
+			overflow: auto;
+		}
 	}
 }

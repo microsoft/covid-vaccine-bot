@@ -1,0 +1,9 @@
+{
+	"id": "puerto_rico",
+	"name": "cdc/puerto_rico/state_name",
+	"type": "territory",
+	"metadata": {
+		"code_alpha": "PR",
+		"code_numeric": 72
+	}
+}

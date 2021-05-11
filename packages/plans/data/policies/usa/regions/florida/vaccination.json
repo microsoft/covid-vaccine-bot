@@ -1,0 +1,24 @@
+{
+	"links": {
+		"info": {
+			"text": "cdc/florida/state_link",
+			"url": "https://floridahealthcovid19.gov/covid-19-vaccines-in-florida/"
+		},
+		"worflow": {}
+	},
+	"activePhase": "1a",
+	"phases": [
+		{
+			"id": "1a",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.16_up",
+					"moreInfoText": "c19.eligibility.moreinfo/age.16_up.fl.1a",
+					"moreInfoUrl": "https://floridahealthcovid19.gov/wp-content/uploads/2021/04/doh-covid-vaccine-screening-consent-form.pdf"
+				}
+			],
+			"label": "Current phase"
+		}
+	],
+	"noPhaseLabel": false
+}

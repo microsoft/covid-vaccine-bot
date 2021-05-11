@@ -1,0 +1,34 @@
+{
+	"links": {
+		"info": {
+			"text": "cdc/vermont/state_link",
+			"url": "https://www.healthvermont.gov/covid-19/vaccine"
+		},
+		"providers": {
+			"url": "https://www.healthvermont.gov/covid-19/vaccine/getting-covid-19-vaccine"
+		},
+		"workflow": {
+			"url": "https://vermont.force.com/events/s/selfregistration"
+		},
+		"eligibility": {
+			"url": "https://www.healthvermont.gov/covid-19/vaccine/about-covid-19-vaccines-vermont",
+			"scrapeQuery": ["article .paragraphs-items .content .field-body"]
+		},
+		"scheduling_phone": {
+			"url": "tel:855-722-7878",
+			"text": "c19.link/scheduling.phone.vt"
+		}
+	},
+	"activePhase": "2",
+	"phases": [
+		{
+			"id": "2",
+			"label": "2",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.16_up"
+				}
+			]
+		}
+	]
+}

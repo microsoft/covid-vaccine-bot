@@ -1,0 +1,34 @@
+{
+	"links": {
+		"info": {
+			"text": "cdc/north_carolina/state_link",
+			"url": "https://covid19.ncdhhs.gov/vaccines"
+		},
+		"workflow": {
+			"url": "https://findmygroup.nc.gov/"
+		},
+		"eligibility": {
+			"url": "https://covid19.ncdhhs.gov/vaccines/find-your-spot-take-your-shot",
+			"scrapeQuery": ["article"]
+		},
+		"scheduling_phone": {
+			"url": "tel:1-888-675-4567",
+			"text": "c19.link/scheduling.phone.nc",
+			"description": "c19.link/scheduling.phone.description.nc"
+		}
+	},
+	"activePhase": "current",
+	"noPhaseLabel": true,
+	"phases": [
+		{
+			"id": "current",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.16_up",
+					"moreInfoText": "c19.eligibility.moreinfo/age.16_up.nc.current",
+					"moreInfoUrl": "https://covid19.ncdhhs.gov/vaccines"
+				}
+			]
+		}
+	]
+}

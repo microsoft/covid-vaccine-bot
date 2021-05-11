@@ -1,0 +1,9 @@
+{
+	"id": "new_jersey",
+	"name": "cdc/new_jersey/state_name",
+	"type": "state",
+	"metadata": {
+		"code_alpha": "NJ",
+		"code_numeric": 34
+	}
+}

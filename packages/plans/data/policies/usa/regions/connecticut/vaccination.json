@@ -1,0 +1,33 @@
+{
+	"links": {
+		"eligibility": {
+			"url": "https://portal.ct.gov/vaccine-portal/COVID-19-Vaccination-Phases"
+		},
+		"info": {
+			"url": "https://portal.ct.gov/Vaccine-Portal",
+			"text": "cdc/connecticut/state_link"
+		},
+		"providers": {
+			"url": "https://portal.ct.gov/vaccine-portal/COVID-19-Vaccination-Scheduling-Options",
+			"text": "c19.links/vax_providers"
+		},
+		"scheduling_phone": {
+			"url": "tel:877-918-2224",
+			"text": "c19.link/scheduling.phone.ct",
+			"description": "c19.link/scheduling.phone.description.ct"
+		}
+	},
+	"activePhase": "16_and_older",
+	"phases": [
+		{
+			"id": "16_and_older",
+			"label": "16 and older",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.16_up",
+					"moreInfoText": "c19.eligibility.moreinfo/age.16_up.ct.16_and_older"
+				}
+			]
+		}
+	]
+}

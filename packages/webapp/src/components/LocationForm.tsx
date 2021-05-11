@@ -14,27 +14,22 @@ import { observer } from 'mobx-react-lite'
 import { useCallback, useRef, useState } from 'react'
 import { getText as t } from '../selectors/intlSelectors'
 import {
-	getStateCustomStrings,
-	getRegionCustomStrings,
+	getCustomString,
 } from '../selectors/locationSelectors'
+import { toProperCase } from '../utils/textUtils'
 import './LocationForm.scss'
 
 export interface LocationFormProp {
-	item?: any
-	onSubmit?: (locationData: any, prevItem: any) => void
+	currentLocation?: any
+	currentPath:string
+	onSubmit?: (locationData: any, prevItem: any, initPath:string) => void
 	onCancel?: () => void
-	isRegion?: boolean
 }
 
-const setInitialData = (item?: any, isRegion?: boolean) => {
-	const getStrings = (item: any, keyFilter: string, isRegion?: boolean) => {
-		return isRegion
-			? getRegionCustomStrings(item, keyFilter)
-			: getStateCustomStrings(item, keyFilter)
-	}
+const setInitialData = (currentLocation?: any) => {
 
-	if (item) {
-		const { info, vaccination } = item?.value || {}
+	if (currentLocation) {
+		const { info, vaccination } = currentLocation || {}
 		const {
 			info: vacInfo,
 			scheduling_phone,
@@ -46,7 +41,7 @@ const setInitialData = (item?: any, isRegion?: boolean) => {
 		} = vaccination?.content?.links || {}
 
 		return {
-			details: info.content.name,
+			details: getCustomString(currentLocation, info.content.name) || toProperCase(info.content.name),
 			regionType: info.content.type,
 			info: vacInfo?.url || '',
 			workflow: workflow?.url || '',
@@ -55,10 +50,10 @@ const setInitialData = (item?: any, isRegion?: boolean) => {
 			eligibility: eligibility?.url || '',
 			eligibilityPlan: eligibility_plan?.url || '',
 			schedulingPhone: scheduling_phone?.text
-				? getStrings(item, scheduling_phone.text, isRegion)
+				? getCustomString(currentLocation, scheduling_phone.text)
 				: '',
 			schedulingPhoneDesc: scheduling_phone?.description
-				? getStrings(item, scheduling_phone.description, isRegion)
+				? getCustomString(currentLocation, scheduling_phone.description)
 				: '',
 			noPhaseLabel: vaccination.content?.noPhaseLabel || false,
 		}
@@ -80,10 +75,14 @@ const setInitialData = (item?: any, isRegion?: boolean) => {
 }
 
 export default observer(function LocationForm(props: LocationFormProp) {
-	const { onSubmit, onCancel, item, isRegion } = props
-	const [formData, setFormData] = useState<any>(setInitialData(item, isRegion))
+	const { onSubmit, onCancel, currentLocation, currentPath } = props
+	const [formData, setFormData] = useState<any>(setInitialData(currentLocation))
 	const fieldChanges = useRef<any>(formData)
 	const regionTypeOptions = [
+		{
+			key: 'country',
+			text: t('LocationForm.regionTypeOptions.country'),
+		},
 		{
 			key: 'state',
 			text: t('LocationForm.regionTypeOptions.state'),
@@ -104,12 +103,10 @@ export default observer(function LocationForm(props: LocationFormProp) {
 			key: 'city',
 			text: t('LocationForm.regionTypeOptions.city'),
 		},
-	].filter((region) => (isRegion ? region.key !== 'state' : true))
+	]
 
-	const baseTitle = isRegion
-		? t('LocationForm.baseTitle.sublocation')
-		: t('LocationForm.baseTitle.location')
-	const formTitle = item
+	const baseTitle = t('LocationForm.baseTitle.location')
+	const formTitle = currentLocation
 		? `${t('LocationForm.formTitle.edit')} ${baseTitle}`
 		: `${t('LocationForm.formTitle.new')} ${baseTitle}`
 
@@ -168,7 +165,7 @@ export default observer(function LocationForm(props: LocationFormProp) {
 			<div className="modalBody">
 				<div className="detailsGroup">
 					<TextField
-						label="Details"
+						label={t('LocationForm.details')}
 						name="details"
 						value={formData.details}
 						onChange={handleTextChange}
@@ -238,7 +235,7 @@ export default observer(function LocationForm(props: LocationFormProp) {
 				<PrimaryButton
 					text={t('App.submit')}
 					disabled={!canSubmit()}
-					onClick={() => onSubmit?.(formData, item)}
+					onClick={() => onSubmit?.(formData, currentLocation, currentPath)}
 				/>
 				<DefaultButton text={t('App.cancel')} onClick={() => onCancel?.()} />
 			</div>

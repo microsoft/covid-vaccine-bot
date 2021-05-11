@@ -1,0 +1,29 @@
+{
+	"links": {
+		"info": {
+			"url": "https://dph.georgia.gov/covid-vaccine",
+			"text": "cdc/georgia/state_link"
+		},
+		"providers": {
+			"url": "https://dph.georgia.gov/locations/covid-vaccination-site",
+			"text": "c19.links/vax_providers"
+		},
+		"scheduling_phone": {
+			"url": "tel:(888) 457-0186",
+			"text": "c19.link/scheduling.phone.ga",
+			"description": "c19.link/scheduling.phone.description.ga"
+		}
+	},
+	"activePhase": "16_and_older",
+	"phases": [
+		{
+			"id": "16_and_older",
+			"label": "16 and older",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.16_up"
+				}
+			]
+		}
+	]
+}

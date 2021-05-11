@@ -1,0 +1,34 @@
+{
+	"links": {
+		"info": {
+			"text": "cdc/wisconsin/state_link",
+			"url": "https://www.dhs.wisconsin.gov/covid-19/vaccine.htm"
+		},
+		"eligibility": {
+			"url": "https://www.dhs.wisconsin.gov/covid-19/vaccine-about.htm"
+		},
+		"providers": {
+			"url": "https://www.dhs.wisconsin.gov/covid-19/vaccine-map.htm",
+			"text": "c19.links/vax_providers"
+		},
+		"scheduling_phone": {
+			"url": "tel:844-684-1064",
+			"text": "c19.link/scheduling.phone.wi",
+			"description": "c19.link/scheduling.phone.description.wi"
+		}
+	},
+	"activePhase": "2",
+	"phases": [
+		{
+			"id": "2",
+			"label": "2",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.16_up",
+					"moreInfoText": "c19.eligibility.moreinfo/age.16_up.wi.2"
+				}
+			]
+		}
+	],
+	"noPhaseLabel": true
+}

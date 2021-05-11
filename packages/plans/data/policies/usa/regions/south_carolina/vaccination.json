@@ -1,0 +1,30 @@
+{
+	"links": {
+		"info": {
+			"text": "cdc/south_carolina/state_link",
+			"url": "https://scdhec.gov/covid19/covid-19-vaccine",
+			"scrapeQuery": ["main#main"]
+		},
+		"eligibility_plan": {
+			"url": "https://scdhec.gov/sites/default/files/Library/CR-012931.pdf"
+		},
+		"scheduling_phone": {
+			"url": "tel:1-866-365-8110",
+			"text": "c19.link/scheduling.phone.sc",
+			"description": "c19.link/scheduling.phone.description.sc"
+		}
+	},
+	"activePhase": "16_and_older",
+	"phases": [
+		{
+			"id": "16_and_older",
+			"label": "16 and older",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.16_up",
+					"moreInfoText": "c19.eligibility.moreinfo/age.16_up.sc.16_and_older"
+				}
+			]
+		}
+	]
+}

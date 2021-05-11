@@ -1,0 +1,9 @@
+{
+	"id": "rhode_island",
+	"name": "cdc/rhode_island/state_name",
+	"type": "state",
+	"metadata": {
+		"code_alpha": "RI",
+		"code_numeric": 44
+	}
+}

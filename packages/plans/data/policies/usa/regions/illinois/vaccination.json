@@ -1,0 +1,24 @@
+{
+	"links": {
+		"eligibility": {
+			"url": "https://www.dph.illinois.gov/covid19/vaccine-distribution"
+		},
+		"info": {
+			"url": "https://www.dph.illinois.gov/covid19/vaccination-plan",
+			"text": "cdc/illinois/state_link"
+		}
+	},
+	"activePhase": "16_and_up",
+	"phases": [
+		{
+			"id": "16_and_up",
+			"label": "16 and up",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.16_up",
+					"moreInfoText": "c19.eligibility.moreinfo/age.16_up.il.16_and_up"
+				}
+			]
+		}
+	]
+}

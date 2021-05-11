@@ -1,0 +1,9 @@
+{
+	"id": "alabama",
+	"name": "cdc/alabama/state_name",
+	"type": "state",
+	"metadata": {
+		"code_alpha": "AL",
+		"code_numeric": 1
+	}
+}

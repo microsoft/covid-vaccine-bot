@@ -12,44 +12,84 @@ export const convertCSVDataToObj = (csvData: any): any => {
 		const stringId: string = row[stringLabel]
 
 		delete row[stringLabel]
-		Object.keys(row).forEach((k) => {
-			if (!k.endsWith('sms') || !k.endsWith('voice')) {
-				!(`${k}-sms` in row) && (row[`${k}-sms`] = '')
-				!(`${k}-voice` in row) && (row[`${k}-voice`] = '')
-			}
-		})
-
 		returnObj[stringId.toLowerCase()] = row
 	})
 
 	return returnObj
 }
 
-export const createLocationDataObj = (locationData: any): any => {
-	const locationName = locationData.details
-		.replace(/[^a-z0-9\s]/gi, '')
-		.replace(/\s/g, '_')
-		.toLowerCase()
+export const pathFind = (obj: any, path: string[]): any => {
+	for (let i = 0; i < path.length; i++) {
+		obj = obj[path[i]]
+	}
+	return obj
+}
+
+export const createLocationDataObj = (
+	locationId: string,
+	filePathArray: string[],
+	locationData: any,
+	currentLanguage: string
+): any => {
+	const filePath = filePathArray.join('/')
+	const locationPathKey = filePathArray.join('.')
+
+	const locationNameKey = `name.${locationPathKey}`
+
+	const stringsContent = {
+		[locationNameKey]: { [currentLanguage]: locationData.details },
+	}
+
+	let schedulingPhoneObj: any = {}
+
+	if (locationData?.schedulingPhone !== '') {
+		const schedulingPhoneKey = `scheduling.phone.${locationNameKey}`
+		stringsContent[schedulingPhoneKey] = {
+			[currentLanguage]: locationData.schedulingPhone,
+		}
+
+		schedulingPhoneObj = {
+			url: `tel:${locationData.schedulingPhone}`,
+			text: schedulingPhoneKey,
+		}
+
+		if (locationData.schedulingPhoneDesc !== '') {
+			const schedulingPhoneDescKey = `scheduling.phone.description.${locationNameKey}`
+			stringsContent[schedulingPhoneDescKey] = {
+				[currentLanguage]: locationData.schedulingPhoneDesc,
+			}
+			schedulingPhoneObj['description'] = schedulingPhoneDescKey
+		}
+	}
+
 	return {
 		info: {
 			content: {
-				id: locationName,
+				id: locationId,
 				metadata: {
-					code_alpha: locationName,
+					code_alpha: locationId,
 					code_numeric: 0,
 				},
-				name: locationData.details,
+				name: locationNameKey,
 				type: locationData.regionType,
 			},
 			name: 'info.json',
-			path: `${locationName}/info.json`,
+			path: `${filePath}/info.json`,
 			sha: '',
 			type: 'info',
 			url: '',
 		},
-		strings: { content: {} },
+		strings: {
+			content: stringsContent,
+			name: `${locationId}.csv`,
+			path: `${filePath}/${locationId}.csv`,
+			sha: '',
+			type: locationId,
+			url: '',
+		},
 		vaccination: {
 			content: {
+				phases: [],
 				activePhase: '',
 				links: {
 					...(locationData?.eligibility !== '' && {
@@ -65,37 +105,30 @@ export const createLocationDataObj = (locationData: any): any => {
 					...(locationData?.info !== '' && {
 						info: {
 							url: locationData.info,
-							text: `cdc/${locationName}/state_link`,
 						},
 					}),
 					...(locationData?.providers !== '' && {
 						providers: {
 							url: locationData.providers,
-							text: 'c19.links/vax_providers',
 						},
 					}),
 					...(locationData?.workflow !== '' && {
 						workflow: {
 							url: locationData.workflow,
-							text: 'c19.links/vax_quiz',
 						},
 					}),
 					...(locationData?.scheduling !== '' && {
 						scheduling: {
 							url: locationData.scheduling,
-							text: 'c19.links/schedule_vax',
 						},
 					}),
 					...(locationData?.schedulingPhone !== '' && {
-						scheduling_phone: {
-							url: `tel:${locationData.schedulingPhone}`,
-							text: locationData.schedulingPhone,
-						},
+						scheduling_phone: schedulingPhoneObj,
 					}),
 				},
 			},
 			name: 'vaccination.json',
-			path: `${locationName}/vaccination.json`,
+			path: `${filePath}/vaccination.json`,
 			sha: '',
 			type: 'vaccination',
 			url: '',

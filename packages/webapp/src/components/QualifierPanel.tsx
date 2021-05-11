@@ -13,7 +13,7 @@ import {
 import { useBoolean } from '@uifabric/react-hooks'
 import { observer } from 'mobx-react-lite'
 import { useState, useEffect, useCallback, useRef } from 'react'
-import { updateGlobalQualifiers } from '../mutators/repoMutators'
+import { updateRootLocationQualifiers } from '../mutators/repoMutators'
 import { getText as t } from '../selectors/intlSelectors'
 import { getAppStore } from '../store/store'
 import { toProperCase } from '../utils/textUtils'
@@ -23,11 +23,13 @@ import './QualifierPanel.scss'
 
 export default observer(function QualifierPanel() {
 	const {
-		globalFileData,
 		currentLanguage,
 		isEditable,
 		isDataRefreshing,
+		repoFileData,
+		breadCrumbs
 	} = getAppStore()
+
 	const [qualifierGroup, setQualifierGroup] = useState<IGroup[]>([])
 	const [qualifierGroupItems, setQualifierGroupItems] = useState<any[]>([])
 	const [
@@ -35,18 +37,20 @@ export default observer(function QualifierPanel() {
 		{ setTrue: openAddQualifierModal, setFalse: dismissAddQualifierModal },
 	] = useBoolean(false)
 	const formItem = useRef<any>(null)
+	const rootLocationKey = useRef<string>(Object.keys(breadCrumbs)[0])
 
 	useEffect(() => {
-		if (globalFileData?.customStrings) {
+		if (repoFileData) {
+
 			const groupKeys: any[] = []
 			const questionItemKeys: any[] = []
 
 			const tempQualifierGroup: IGroup[] = []
 			const tempQualifierGroupItems: any[] = []
 
-			const contentObj = globalFileData.customStrings.content
+			const contentObj = repoFileData[rootLocationKey.current].strings.content
 			const questionKeys = Object.keys(contentObj)
-				.filter((k) => k.includes('eligibility.question'))
+				.filter((k) => k.includes('eligibility.question/'))
 				.sort((a, b) => (a > b ? 1 : -1))
 
 			questionKeys.forEach((key) => {
@@ -72,13 +76,19 @@ export default observer(function QualifierPanel() {
 				if (!questionItemKeys.includes(key)) {
 					questionItemKeys.push(key)
 
+					const smsKey = key.replace('.question/','.question.sms/')
+					const voiceKey = key.replace('.question/','.question.voice/')
+
 					tempQualifierGroupItems.push({
 						key: key,
-						text: contentObj[key][currentLanguage]
+						label: contentObj[key][currentLanguage]
 							? contentObj[key][currentLanguage]
 							: `${t(
 									'QualifierPanel.translationNotFound'
-							  )} (${currentLanguage})`,
+							)} (${currentLanguage})`,
+						text: contentObj[key]?.[currentLanguage] || '',
+						sms: contentObj[smsKey]?.[currentLanguage] || '',
+						voice: contentObj[voiceKey]?.[currentLanguage] || '',
 					})
 				}
 			})
@@ -86,13 +96,13 @@ export default observer(function QualifierPanel() {
 			setQualifierGroup(tempQualifierGroup)
 			setQualifierGroupItems(tempQualifierGroupItems)
 		}
-	}, [globalFileData, currentLanguage, setQualifierGroup, setQualifierGroupItems])
+	}, [rootLocationKey, repoFileData, currentLanguage, setQualifierGroup, setQualifierGroupItems])
 
 	const columns = [
 		{
 			key: 'questionColKey',
 			name: t('QualifierPanel.columns.question'),
-			fieldName: 'text',
+			fieldName: 'label',
 			minWidth: 100,
 			isResizable: false,
 		},
@@ -115,7 +125,10 @@ export default observer(function QualifierPanel() {
 
 	const addQualifierSubmit = useCallback(
 		(newQualifier) => {
-			updateGlobalQualifiers(newQualifier)
+			updateRootLocationQualifiers({
+				rootLocationKey: rootLocationKey.current,
+				newQualifier
+			})
 			setTimeout(() => dismissAddQualifierModal(), 100)
 		},
 		[dismissAddQualifierModal]
@@ -155,7 +168,7 @@ export default observer(function QualifierPanel() {
 			<div className="panelBody">
 				{!isDataRefreshing && (
 					<section>
-						{!!globalFileData?.customStrings?.content && (
+						{!!repoFileData[rootLocationKey.current]?.strings?.content && (
 							<div className="searchRow">
 								<div></div>
 								<div
@@ -170,19 +183,23 @@ export default observer(function QualifierPanel() {
 								</div>
 							</div>
 						)}
-						<DetailsList
-							items={qualifierGroupItems}
-							groups={qualifierGroup}
-							columns={columns}
-							groupProps={{
-								showEmptyGroups: false,
-							}}
-							compact={true}
-							isHeaderVisible={false}
-							checkboxVisibility={2}
-							className="qualifierGroupItem"
-							onRenderItemColumn={onRenderItemColumn}
-						/>
+						{qualifierGroupItems.length > 0 ? (
+							<DetailsList
+								items={qualifierGroupItems}
+								groups={qualifierGroup}
+								columns={columns}
+								groupProps={{
+									showEmptyGroups: false,
+								}}
+								compact={true}
+								isHeaderVisible={false}
+								checkboxVisibility={2}
+								className="qualifierGroupItem"
+								onRenderItemColumn={onRenderItemColumn}
+							/>
+						) : (
+							<div className="noQualifiers">No qualifiers available</div>
+						)}
 					</section>
 				)}
 			</div>
@@ -193,6 +210,7 @@ export default observer(function QualifierPanel() {
 				isBlocking={false}
 			>
 				<AddQualifierForm
+					rootLocationKey={rootLocationKey.current}
 					item={formItem.current}
 					tagsOptions={tagsOptions}
 					onSubmit={addQualifierSubmit}

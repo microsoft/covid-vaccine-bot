@@ -1,0 +1,33 @@
+{
+	"links": {
+		"info": {
+			"url": "https://www.occhd.org/covid-19vaccine",
+			"text": "cdc/oklahoma/state_link"
+		},
+		"eligibility_plan": {
+			"url": "https://www.occhd.org/download_file/view_inline/4080"
+		},
+		"scheduling": {
+			"url": "https://www.vaxokc.com/",
+			"text": "c19.links/schedule_vax"
+		},
+		"scheduling_phone": {
+			"url": "tel:405-425-4489",
+			"text": "c19.link/scheduling.phone.ok",
+			"description": "c19.link/scheduling.phone.description.ok"
+		}
+	},
+	"activePhase": "phase_4",
+	"phases": [
+		{
+			"id": "phase_4",
+			"label": "Phase 4",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.16_up",
+					"moreInfoText": "c19.eligibility.moreinfo/age.16_up.ok.phase_4"
+				}
+			]
+		}
+	]
+}

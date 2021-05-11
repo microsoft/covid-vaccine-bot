@@ -1,0 +1,37 @@
+{
+	"links": {
+		"info": {
+			"text": "cdc/washington/state_link",
+			"url": "https://www.doh.wa.gov/Emergencies/COVID19/vaccine"
+		},
+		"eligibility": {
+			"url": "https://www.doh.wa.gov/Emergencies/COVID19/VaccineInformation/AllocationandPrioritization"
+		},
+		"providers": {
+			"url": "https://vaccinelocator.doh.wa.gov/",
+			"text": "c19.links/vax_providers"
+		},
+		"scheduling": {
+			"url": "https://prepmod.doh.wa.gov/",
+			"text": "c19.links/schedule_vax"
+		},
+		"scheduling_phone": {
+			"url": "tel:1-888-856-5816",
+			"text": "c19.link/scheduling.phone.wa",
+			"description": "c19.link/scheduling.phone.description.wa"
+		}
+	},
+	"activePhase": "2",
+	"phases": [
+		{
+			"id": "2",
+			"label": "2",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.16_up"
+				}
+			]
+		}
+	],
+	"noPhaseLabel": false
+}

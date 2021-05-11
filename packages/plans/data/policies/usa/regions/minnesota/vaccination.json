@@ -1,0 +1,34 @@
+{
+	"links": {
+		"info": {
+			"url": "https://www.health.state.mn.us/diseases/coronavirus/vaccine/basics.html",
+			"text": "cdc/minnesota/state_link"
+		},
+		"eligibility": {
+			"url": "https://mn.gov/covid19/vaccine/whos-getting-vaccinated/index.jsp",
+			"scrapeQuery": [".internal-norow-content"]
+		},
+		"providers": {
+			"url": "https://mn.gov/covid19/vaccine/find-vaccine/index.jsp",
+			"text": "c19.links/vax_providers"
+		},
+		"scheduling_phone": {
+			"url": "tel:883-431-2053",
+			"text": "c19.link/scheduling.phone.mn",
+			"description": "c19.link/scheduling.phone.description.mn"
+		}
+	},
+	"activePhase": "16_and_older",
+	"phases": [
+		{
+			"id": "16_and_older",
+			"label": "16 and older",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.16_up",
+					"moreInfoText": "c19.eligibility.moreinfo/age.16_up.mn.16_and_older"
+				}
+			]
+		}
+	]
+}

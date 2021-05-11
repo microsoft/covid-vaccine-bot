@@ -1,0 +1,36 @@
+{
+	"links": {
+		"info": {
+			"text": "cdc/massachusetts/state_link",
+			"url": "https://www.mass.gov/info-details/massachusetts-covid-19-vaccine-information"
+		},
+		"eligibility": {
+			"url": "https://www.mass.gov/info-details/massachusetts-covid-19-vaccination-phases",
+			"scrapeQuery": ["#main-content"]
+		},
+		"workflow": {
+			"text": "c19.links/vax_quiz",
+			"url": "https://www.mass.gov/covid-19-vaccine"
+		},
+		"providers": {
+			"text": "c19.links/vax_providers",
+			"url": "https://www.mass.gov/info-details/covid-19-vaccination-locations"
+		},
+		"scheduling": {
+			"url": "https://vaccinesignup.mass.gov/",
+			"text": "c19.links/schedule_vax"
+		}
+	},
+	"activePhase": "phase_3",
+	"phases": [
+		{
+			"id": "phase_3",
+			"label": "Phase 3",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.16_up"
+				}
+			]
+		}
+	]
+}

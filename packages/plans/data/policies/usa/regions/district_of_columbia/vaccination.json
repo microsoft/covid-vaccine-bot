@@ -1,0 +1,32 @@
+{
+	"links": {
+		"eligibility_plan": {
+			"url": "https://coronavirus.dc.gov/sites/default/files/dc/sites/coronavirus/page_content/attachments/Vaccination-Program-Phases-with-Tiers.pdf"
+		},
+		"info": {
+			"url": "https://coronavirus.dc.gov/vaccine",
+			"text": "cdc/district_of_columbia/state_link"
+		},
+		"scheduling_phone": {
+			"url": "tel:1-855-363-0333",
+			"text": "c19.link/scheduling.phone.dc",
+			"description": "c19.link/scheduling.phone.description.dc"
+		},
+		"eligibility": {
+			"url": "https://coronavirus.dc.gov/sites/default/files/dc/sites/coronavirus/release_content/attachments/Situational-Update-Presentation_04-12-21.pdf"
+		}
+	},
+	"activePhase": "16_and_up",
+	"noPhaseLabel": true,
+	"phases": [
+		{
+			"id": "16_and_up",
+			"label": "16 and up",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.16_up"
+				}
+			]
+		}
+	]
+}

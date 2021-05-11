@@ -1,0 +1,31 @@
+{
+	"links": {
+		"info": {
+			"text": "cdc/south_dakota/state_link",
+			"url": "https://doh.sd.gov/COVID/Vaccine/default.aspx"
+		},
+		"workflow": {
+			"url": "https://covid.sd.gov/vaccine/default.aspx"
+		},
+		"eligibility": {
+			"url": "https://doh.sd.gov/documents/COVID19/Vaccine/COVIDVaccineAvailability_Distribution.pdf",
+			"content": "pdf"
+		},
+		"providers": {
+			"url": "https://doh.sd.gov/COVID/Vaccine/ProviderMap/default.aspx",
+			"text": "c19.links/vax_providers"
+		}
+	},
+	"activePhase": "2",
+	"phases": [
+		{
+			"id": "2",
+			"label": "2",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.16_up"
+				}
+			]
+		}
+	]
+}

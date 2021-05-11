@@ -1,0 +1,28 @@
+{
+	"links": {
+		"eligibility_plan": {
+			"url": "https://www.cdc.gov/vaccines/covid-19/downloads/american-samoa-jurisdiction-executive-summary.pdf"
+		},
+		"info": {
+			"url": "https://www.americansamoa.gov/",
+			"text": "cdc/american_samoa/state_link"
+		},
+		"scheduling_phone": {
+			"url": "tel: 684-633-5871",
+			"text": "c19.link/scheduling.phone.as",
+			"description": "c19.link/scheduling.phone.description.as"
+		}
+	},
+	"activePhase": "18_and_older",
+	"phases": [
+		{
+			"id": "18_and_older",
+			"label": "18 and older",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.are_you_age_18"
+				}
+			]
+		}
+	]
+}

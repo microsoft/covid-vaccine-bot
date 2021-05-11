@@ -40,6 +40,45 @@
 	}
 }
 
+.fileDropZone{
+	width:80%;
+	height:40vh;
+	border: 1px dashed black;
+	margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+    	text-align: center;
+    	padding:10px;
+    }
+
+	button {
+		border: none;
+		background: none;
+		font-size: inherit;
+		color: inherit;
+		padding: 0px;
+		cursor: pointer;
+		margin: 5px;
+
+		i {
+			vertical-align: middle;
+			margin-right: 5px;
+			line-height: 18px;
+
+			&.blue {
+				color: #0078d4;
+			}
+		}
+	}
+
+	.fileOptions {
+		text-align: center;
+	}
+}
+
 .filterGroup {
 	display: flex;
 	flex-direction: row;
@@ -59,24 +98,7 @@
 		font-weight: bold;
 		margin-right: 0.5em;
 	}
-	button {
-		border: none;
-		background: none;
-		font-size: inherit;
-		color: inherit;
-		padding: 0px;
-		cursor: pointer;
 
-		i {
-			vertical-align: middle;
-			margin-right: 5px;
-			line-height: 18px;
-
-			&.blue {
-				color: #0078d4;
-			}
-		}
-	}
 	.fileOptions {
 		flex-basis: 35%;
 		display: flex;

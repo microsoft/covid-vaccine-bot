@@ -71,6 +71,12 @@
 		"Qualifier": {
 			"placeholder": "Qualifier text..."
 		},
+		"QualifierSms": {
+			"placeholder": "Qualifier text for sms..."
+		},
+		"QualifierVoice": {
+			"placeholder": "Qualifier text for voice..."
+		},
 		"submit": "Submit",
 		"cancel": "Cancel"
 	},
@@ -85,12 +91,16 @@
 		},
 		"regionTypeOptions": {
 			"placeholder": "Region type",
+			"country": "Country",
 			"state": "State",
 			"territory": "Territory",
 			"tribal_land": "Tribal land",
 			"county": "County",
 			"city": "City"
 		},
+		"detailsTitle": "Location Details",
+		"EditDetailsButton": "Edit Details",
+		"details": "Details",
 		"info": "General information link for the region:",
 		"workflow": "Link to an existing eligibility workflow tool:",
 		"scheduling": "Appointment registration scheduler:",
@@ -239,7 +249,16 @@
 			}
 		}
 	},
+	"LocationPhaseOverrideBar": {
+		"messageBar": {
+			"specificTextPlaceholder": "this",
+			"adoptedTextPlaceholder": "the parent location",
+			"specificText": "Phase information below is specific to {0} only.",
+			"adoptedText": "Currently adopting the phase information of {0}. Applying changes will make the phase data specific to {1} only."
+		}
+	},
 	"LocationsPhases": {
+		"title": "Phase Qualifiers",
 		"AddQualifierButton": "Add Qualifier",
 		"columns": {
 			"duplicate": "Duplicate",
@@ -262,6 +281,12 @@
 		},
 		"MoreInfoText": {
 			"placeholder": "More info text"
+		},
+		"MoreInfoTextSms": {
+			"placeholder": "More info for sms"
+		},
+		"MoreInfoTextVoice": {
+			"placeholder": "More info for voice"
 		},
 		"MoreInfoUrl": {
 			"placeholder": "More info url"
@@ -291,64 +316,39 @@
 			"titleLabel": "Title (Optional):",
 			"detailsLabel": "Details (Optional):",
 			"submitText": "Submit changes"
-		}
+		},
+		"ChangesList": {
+			"addPrefixText": "Added new {0}",
+			"modifiedPrefixText": "Updated {0}",
+			"removedPrefixText": "Removed {0}",
+			"sections": {
+				"location": "location",
+				"phase": "phase",
+				"qualifier": "qualifier",
+				"translations": "translations"
+			}
+		},
+		"OnWorkingBranch": "There are no pending changes at this moment. Either there are no changes or it has already been saved previously.<br/><br/>You can review your change history <a href=\"https://github.com/{0}/{1}/commits/refs/heads/{2}?since={3}\" target=\"_blank\">here</a> before submitting your changes.",
+		"NoChangeList": "Unable to load pending changes currently."
 	},
 	"Translate": {
 		"title": "Translate",
 		"ErrorMessageBar": {
 			"closeArialLabel": "Close"
 		},
-		"Filter": {
-			"LanguageDropdown": {
-				"label": "Translate from:",
-				"placeholder": "Available languages"
-			},
-			"TranslateDropdown": {
-				"label": "Show:",
-				"placeholder": "Needs translations"
-			}
-		},
 		"TemplateButtons": {
 			"download": "Download Template",
-			"upload": "Upload File"
+			"upload": "Click Here to Upload"
 		},
 		"error": {
 			"unexpected": "Unexpected:",
 			"invalidFileContent": "Invalid File Content.",
 			"invalidFileType": "Invalid File Type."
 		},
-		"translationNotFound": "*Translation Not Found*",
-		"translationFilter": {
-			"needsTranslation": "Needs Translation",
-			"showAll": "Show All"
-		},
-		"miscFilter": {
-			"all": "All",
-			"stateSpecific": "State-specific",
-			"stateLinks": "State Links",
-			"uncategorized": "Uncategorized",
-			"placeholder": "Filter Miscellaneous"
-		},
+		"dragDropText": "Drag and Drop translation file here",
 		"GroupList": {
 			"loading": "Loading content...",
-			"updating": "Updating translations...",
-			"columns": {
-				"general": "General",
-				"sms": "SMS",
-				"voice": "Voice"
-			},
-			"LocationList": {
-				"title": "Locations",
-				"empty": "No missing location translations found for:"
-			},
-			"QualifierList": {
-				"title": "Qualifiers",
-				"empty": "No missing qualifier translations found for:"
-			},
-			"MiscellaneousList": {
-				"title": "Miscellaneous",
-				"empty": "No missing miscellaneous translations found for:"
-			}
+			"updating": "Updating translations..."
 		}
 	},
 	"UnAuthorized": {

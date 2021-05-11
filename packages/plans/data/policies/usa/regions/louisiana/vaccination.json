@@ -1,0 +1,28 @@
+{
+	"links": {
+		"eligibility_plan": {
+			"url": "https://ldh.la.gov/index.cfm/page/4137"
+		},
+		"info": {
+			"url": "https://ldh.la.gov/covidvaccine/",
+			"text": "cdc/louisiana/state_link"
+		},
+		"providers": {
+			"url": "https://ldh.la.gov/covidvaccine-locations/",
+			"text": "c19.links/vax_providers"
+		}
+	},
+	"activePhase": "16_and_older",
+	"phases": [
+		{
+			"id": "16_and_older",
+			"label": "16 and older",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.16_up",
+					"moreInfoText": "c19.eligibility.moreinfo/age.16_up.la.16_and_older"
+				}
+			]
+		}
+	]
+}

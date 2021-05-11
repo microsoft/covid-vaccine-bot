@@ -1,0 +1,27 @@
+{
+	"links": {
+		"info": {
+			"text": "cdc/utah/state_link",
+			"url": "https://coronavirus.utah.gov/vaccine/",
+			"scrapeQuery": [".x-text"]
+		},
+		"eligibility_plan": {
+			"url": "https://coronavirus-download.utah.gov/Health/Vaccine_Timeline.pdf"
+		},
+		"eligibility": {
+			"url": "https://coronavirus.utah.gov/vaccine-distribution/#eligibility"
+		}
+	},
+	"activePhase": "16_and_older",
+	"phases": [
+		{
+			"id": "16_and_older",
+			"label": "16 and older",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.16_up"
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,9 @@
+{
+	"id": "alaska",
+	"name": "cdc/alaska/state_name",
+	"type": "state",
+	"metadata": {
+		"code_alpha": "AK",
+		"code_numeric": 2
+	}
+}

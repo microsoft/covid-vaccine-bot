@@ -1,0 +1,9 @@
+{
+	"id": "kentucky",
+	"name": "cdc/kentucky/state_name",
+	"type": "state",
+	"metadata": {
+		"code_alpha": "KY",
+		"code_numeric": 21
+	}
+}

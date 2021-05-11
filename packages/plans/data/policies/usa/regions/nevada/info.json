@@ -1,0 +1,9 @@
+{
+	"id": "nevada",
+	"name": "cdc/nevada/state_name",
+	"type": "state",
+	"metadata": {
+		"code_alpha": "NV",
+		"code_numeric": 32
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"links": {
+		"info": {
+			"text": "cdc/guam/state_link",
+			"url": "https://dphss.guam.gov/"
+		}
+	},
+	"activePhase": "16_and_older",
+	"phases": [
+		{
+			"id": "16_and_older",
+			"label": "16 and older",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.16_up",
+					"moreInfoText": "c19.eligibility.moreinfo/age.16_up.gu.16_and_older"
+				}
+			]
+		}
+	],
+	"noPhaseLabel": true
+}

@@ -1,0 +1,9 @@
+{
+	"id": "ohio",
+	"name": "cdc/ohio/state_name",
+	"type": "state",
+	"metadata": {
+		"code_alpha": "OH",
+		"code_numeric": 39
+	}
+}

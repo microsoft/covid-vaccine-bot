@@ -1,0 +1,18 @@
+{
+	"id": "usa",
+	"name": "name.usa",
+	"type": "country",
+	"metadata": {
+		"code_alpha": "USA",
+		"code_numeric": 1,
+		"id_bing": "US"
+	},
+	"regionTypes": {
+		"state": "usa.regionType.state",
+		"territory": "usa.regionType.territory",
+		"tribal_land": "usa.regionType.tribal_land",
+		"county": "usa.regionType.county",
+		"city": "usa.regionType.city",
+		"town": "usa.regionType.town"
+	}
+}

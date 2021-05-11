@@ -1,0 +1,25 @@
+{
+	"links": {
+		"info": {
+			"url": "https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus/Vaccine/Information-for-the-Public",
+			"text": "cdc/iowa/state_link"
+		},
+		"scheduling_phone": {
+			"url": "tel:211",
+			"text": "c19.link/scheduling.phone.ia",
+			"description": "c19.link/scheduling.phone.description.ia"
+		}
+	},
+	"activePhase": "2",
+	"phases": [
+		{
+			"id": "2",
+			"label": "2",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.16_up"
+				}
+			]
+		}
+	]
+}

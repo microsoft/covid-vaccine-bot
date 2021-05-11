@@ -1,0 +1,27 @@
+{
+	"links": {
+		"info": {
+			"url": "https://www.maine.gov/covid19/vaccines",
+			"text": "cdc/maine/state_link"
+		},
+		"providers": {
+			"url": "https://www.maine.gov/covid19/vaccines/vaccination-sites",
+			"text": "c19.links/vax_providers"
+		},
+		"eligibility": {
+			"url": "https://www.maine.gov/covid19/vaccines/phases"
+		}
+	},
+	"activePhase": "_age_16_and_older",
+	"phases": [
+		{
+			"id": "_age_16_and_older",
+			"label": " Age 16 and older",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.16_up"
+				}
+			]
+		}
+	]
+}

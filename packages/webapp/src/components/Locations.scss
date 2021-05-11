@@ -3,6 +3,25 @@
 .locationPageContainer {
 	display: flex;
 	flex-direction: column;
+
+	.breadCrumbs {
+		display: flex;
+		font-size: 14px;
+		margin-bottom: 10px;
+
+		.breadCrumbsLink {
+			font-size: 14px;
+			padding-right: 5px;
+			color: $ms-color-themePrimary;
+			cursor: pointer;
+		}
+
+		.breadCrumbsNonLink {
+			color: black;
+			font-size: 14px;
+			padding-right: 5px;
+		}
+	}
 }
 
 .addLocationHeaderButton {
@@ -18,6 +37,7 @@
 		font-weight: 600;
 	}
 }
+
 
 .searchRow {
 	display: flex;
@@ -62,6 +82,7 @@
 	cursor: pointer;
 	display: flex;
 	justify-content: space-between;
+	color: #605e5c;
 
 	.groupHeaderLabel {
 		display: flex;
@@ -93,7 +114,8 @@
 	}
 
 	&:hover {
-		background-color: $ms-color-gray40;
+		background-color: $ms-color-gray20;
+		color: black;
 	}
 
 	.groupToggleIcon {
@@ -129,5 +151,95 @@
 				margin-right: 4px;
 			}
 		}
+	}
+}
+
+
+.locationDetailsSectionHeader {
+	padding: 20px 0;
+	border-bottom: 1px solid $ms-color-gray40;
+}
+
+.LocationsStatesComponent {
+	.locationsStatesSectionHeader {
+		padding: 20px 0;
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 20px;
+		border-bottom: 1px solid $ms-color-gray40;
+
+		.addLocationHeaderButton {
+			display: flex;
+			cursor: pointer;
+			padding: 0;
+
+			i {
+				margin-right: 4px;
+			}
+
+			&:hover {
+				font-weight: 600;
+			}
+		}
+	}
+}
+
+.LocationsDetailsComponent {
+	.locationDetailsSectionHeader {
+		padding: 20px 0;
+		display: flex;
+		justify-content: space-between;
+		border-bottom: 1px solid $ms-color-gray40;
+
+		.editLocationDetailsButton {
+			display: flex;
+			cursor: pointer;
+			padding: 0;
+
+			i {
+				margin-right: 4px;
+			}
+
+			&:hover {
+				font-weight: 600;
+			}
+		}
+	}
+}
+
+.LocationPhaseListComponent {
+	.locationPhaseOverviewSectionHeader {
+		padding: 20px 0;
+		display: flex;
+		justify-content: space-between;
+		border-bottom: 1px solid $ms-color-gray40;
+
+		.addPhaseHeaderButton {
+			display: flex;
+			cursor: pointer;
+			padding: 0;
+
+			i {
+				margin-right: 4px;
+			}
+
+			&:hover {
+				font-weight: 600;
+			}
+		}
+	}
+
+	.emptyPhaseOverview {
+		padding: 20px 0;
+		text-align: center;
+	}
+}
+
+.LocationPhaseQualifiersComponent {
+	.locationPhaseQualifiersSectionHeader {
+		padding: 20px 0;
+		display: flex;
+		justify-content: space-between;
+		border-bottom: 1px solid $ms-color-gray40;
 	}
 }
