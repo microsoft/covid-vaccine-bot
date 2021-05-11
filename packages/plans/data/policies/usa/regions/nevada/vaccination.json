@@ -6,12 +6,15 @@
 		},
 		"eligibility": {
 			"url": "https://www.immunizenevada.org/county-specific-covid-19-vaccine-plan",
-			"scrapeQuery": ["main"]
+			"scrapeQuery": [
+				"main"
+			]
 		},
 		"scheduling_phone": {
 			"url": "tel:1-800-401-0946",
 			"text": "c19.link/scheduling.phone.nv"
-		}
+		},
+		"worflow": {}
 	},
 	"activePhase": "age_16",
 	"phases": [
@@ -33,5 +36,6 @@
 				}
 			]
 		}
-	]
+	],
+	"noPhaseLabel": false
 }
