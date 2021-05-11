@@ -4,6 +4,8 @@
  */
 export interface ProviderLocation {
 	provider_id: string
+	provider_notes: string
+	source_last_updated: string
 	location: {
 		name: string
 		store_no: number
@@ -27,6 +29,7 @@ export interface ProviderLocation {
 		saturday: string
 		sunday: string
 	}
+	any_in_stock: boolean
 	meds: MedInfo[]
 	web_address: string
 	pre_screen: string
@@ -38,7 +41,6 @@ export type GeoPoint = [number, number]
 
 export interface MedInfo {
 	name: string
-	provider_notes: string
 	ndc: string
 	in_stock: boolean
 	supply_level: number
@@ -72,4 +74,6 @@ export interface ProviderLocationCsv {
 	supply_level: number
 	quantity_last_updated: Date
 	med_name: string
+	latitude: number
+	longitude: number
 }

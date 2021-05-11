@@ -5,9 +5,6 @@
 		"database": "vaccination",
 		"container": "providers"
 	},
-	"azureMaps": {
-		"key": null
-	},
 	"vaccinefinder": {
 		"region": "us-east-1",
 		"bucket": "vaccinefinder-data"

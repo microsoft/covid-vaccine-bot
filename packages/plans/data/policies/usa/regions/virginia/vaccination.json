@@ -3,9 +3,7 @@
 		"info": {
 			"text": "cdc/virginia/state_link",
 			"url": "https://www.vdh.virginia.gov/covid-19-vaccine/",
-			"scrapeQuery": [
-				"main"
-			]
+			"scrapeQuery": ["main"]
 		},
 		"eligibility": {
 			"url": "https://www.vdh.virginia.gov/content/uploads/sites/191/2021/01/Vaccine-Eligibility-Text-Version.pdf"
@@ -17,8 +15,7 @@
 		"scheduling_phone": {
 			"url": "tel:877-829-4682",
 			"text": "c19.link/scheduling.phone.va"
-		},
-		"worflow": {}
+		}
 	},
 	"activePhase": "2",
 	"phases": [
@@ -31,6 +28,5 @@
 				}
 			]
 		}
-	],
-	"noPhaseLabel": false
+	]
 }

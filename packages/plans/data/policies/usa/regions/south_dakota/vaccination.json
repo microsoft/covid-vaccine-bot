@@ -14,8 +14,7 @@
 		"providers": {
 			"url": "https://doh.sd.gov/COVID/Vaccine/ProviderMap/default.aspx",
 			"text": "c19.links/vax_providers"
-		},
-		"worflow": {}
+		}
 	},
 	"activePhase": "2",
 	"phases": [
@@ -28,6 +27,5 @@
 				}
 			]
 		}
-	],
-	"noPhaseLabel": false
+	]
 }

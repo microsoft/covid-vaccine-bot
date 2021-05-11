@@ -33,6 +33,7 @@ function resolvePlanInState(
 	let region = stateRegion
 	let currentPhases = stateRegion.plan?.phases ?? []
 	let currentActivePhaseLabel = stateRegion.plan?.activePhase ?? ''
+	let currentUnknownPhase = stateRegion.plan?.unknownPhase ?? false
 	let currentNoPhaseLabel = stateRegion.plan?.noPhaseLabel ?? false
 	let currentActivePhase = getActivePhase(
 		currentActivePhaseLabel,
@@ -79,6 +80,7 @@ function resolvePlanInState(
 				currentActivePhaseLabel,
 				currentPhases
 			)
+			currentUnknownPhase = region?.plan?.unknownPhase ?? currentUnknownPhase
 			Object.assign(currentLinks, region.plan?.links || {})
 			if (matchingRegion.regions != null) {
 				regionsStack.push(matchingRegion.regions)
@@ -91,6 +93,7 @@ function resolvePlanInState(
 		links: currentLinks,
 		phase: currentActivePhase,
 		noPhaseLabel: currentNoPhaseLabel,
+		unknownPhase: currentUnknownPhase,
 	}
 }
 

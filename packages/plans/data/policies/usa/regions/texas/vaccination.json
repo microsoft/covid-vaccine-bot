@@ -7,8 +7,7 @@
 		"providers": {
 			"url": "https://www.dshs.state.tx.us/coronavirus/immunize/vaccine-hubs.aspx#hublist",
 			"text": "c19.links/vax_providers"
-		},
-		"worflow": {}
+		}
 	},
 	"activePhase": "current",
 	"noPhaseLabel": true,

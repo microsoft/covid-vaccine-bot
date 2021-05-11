@@ -16,8 +16,7 @@
 			"url": "tel:211",
 			"text": "c19.link/scheduling.phone.in",
 			"description": "c19.link/scheduling.phone.description.in"
-		},
-		"worflow": {}
+		}
 	},
 	"activePhase": "16_and_older",
 	"phases": [
@@ -32,6 +31,5 @@
 				}
 			]
 		}
-	],
-	"noPhaseLabel": false
+	]
 }

@@ -1,26 +1,26 @@
-String ID,en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th
-c19.eligibility.question/congregate.ms,"Are you age 16+ and live in a congregate setting or a correctional facility?",,,,"¿Tiene más de 16 años y vive en un entorno congregado o en un centro correccional?",,,,,,,,,,
-c19.link/scheduling.phone.ms,"877-978-6453",,,,"877-978-6453",,,,,,,,,,
+String ID,en-us,en-us-sms,en-us-voice,ko-kr,ko-kr-sms,ko-kr-voice,vi-vn,vi-vn-sms,vi-vn-voice,zh-cn,zh-cn-sms,zh-cn-voice,es-us,es-us-sms,es-us-voice,de-de,de-de-sms,de-de-voice,es-es,es-es-sms,es-es-voice,fi-fi,fi-fi-sms,fi-fi-voice,fr-fr,fr-fr-sms,fr-fr-voice,he-il,he-il-sms,he-il-voice,it-it,it-it-sms,it-it-voice,ja-jp,ja-jp-sms,ja-jp-voice,pt-pt,pt-pt-sms,pt-pt-voice,sv-se,sv-se-sms,sv-se-voice,th-th,th-th-sms,th-th-voice
+c19.eligibility.question/congregate.ms,"Are you age 16+ and live in a congregate setting or a correctional facility?",,,,,,,,,,,,"¿Tiene más de 16 años y vive en un entorno congregado o en un centro correccional?",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.ms,"877-978-6453",,,,,,,,,,,,"877-978-6453",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 c19.eligibility.moreinfo/healthcare_worker.ms.1b,"This includes healthcare personnel, paid or unpaid, in any setting where they may be exposed directly or indirectly to COVID-19 patients or COVID-19 infectious materials.
 
 Healthcare workers include nurses, physicians, emergency medical services, technicians, pharmacists, dietary and food staff, environmental services staff and others.
 
-Healthcare settings include acute care facilities, long-term acute care facilities, inpatient rehabilitation facilities, nursing homes, assisted living facilities, home health care, mobile clinics, outpatient facilities such as physicians' offices and others.",,,,"Esto incluye al personal sanitario, pagado o no remunerado, en cualquier entorno en el que puedan estar expuestos directa o indirectamente a pacientes con COVID-19 o materiales infecciosos COVID-19.
+Healthcare settings include acute care facilities, long-term acute care facilities, inpatient rehabilitation facilities, nursing homes, assisted living facilities, home health care, mobile clinics, outpatient facilities such as physicians' offices and others.",,,,,,,,,,,,"Esto incluye al personal sanitario, pagado o no remunerado, en cualquier entorno en el que puedan estar expuestos directa o indirectamente a pacientes con COVID-19 o materiales infecciosos COVID-19.
 
 Los trabajadores sanitarios incluyen enfermeras, médicos, servicios médicos de emergencia, técnicos, farmacéuticos, personal dietético y alimentario, personal de servicios ambientales y otros.
 
-Los entornos sanitarios incluyen centros de atención aguda, centros de atención aguda a largo plazo, centros de rehabilitación hospitalaria, residencias de ancianos, centros de vida asistida, atención médica domiciliaria, clínicas móviles, centros ambulatorios como consultorios médicos y otros.",,,,,,,,,,
-c19.eligibility.moreinfo/essential_worker.are.ms.1b,"This includes law enforcement, public safety, fire services and emergency management officials",,,,"Esto incluye a las fuerzas del orden, la seguridad pública, los servicios de bomberos y los funcionarios de manejo de emergencias",,,,,,,,,,
+Los entornos sanitarios incluyen centros de atención aguda, centros de atención aguda a largo plazo, centros de rehabilitación hospitalaria, residencias de ancianos, centros de vida asistida, atención médica domiciliaria, clínicas móviles, centros ambulatorios como consultorios médicos y otros.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.eligibility.moreinfo/essential_worker.are.ms.1b,"This includes law enforcement, public safety, fire services and emergency management officials",,,,,,,,,,,,"Esto incluye a las fuerzas del orden, la seguridad pública, los servicios de bomberos y los funcionarios de manejo de emergencias",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 c19.eligibility.moreinfo/healthcare_worker.ms.1c,"This includes healthcare personnel, paid or unpaid, in any setting where they may be exposed directly or indirectly to COVID-19 patients or COVID-19 infectious materials.
 
 Healthcare workers include nurses, physicians, emergency medical services, technicians, pharmacists, dietary and food staff, environmental services staff and others.
 
-Healthcare settings include acute care facilities, long-term acute care facilities, inpatient rehabilitation facilities, nursing homes, assisted living facilities, home health care, mobile clinics, outpatient facilities such as physicians' offices and others.",,,,"Esto incluye al personal sanitario, pagado o no remunerado, en cualquier entorno en el que puedan estar expuestos directa o indirectamente a pacientes con COVID-19 o materiales infecciosos COVID-19.
+Healthcare settings include acute care facilities, long-term acute care facilities, inpatient rehabilitation facilities, nursing homes, assisted living facilities, home health care, mobile clinics, outpatient facilities such as physicians' offices and others.",,,,,,,,,,,,"Esto incluye al personal sanitario, pagado o no remunerado, en cualquier entorno en el que puedan estar expuestos directa o indirectamente a pacientes con COVID-19 o materiales infecciosos COVID-19.
 
 Los trabajadores sanitarios incluyen enfermeras, médicos, servicios médicos de emergencia, técnicos, farmacéuticos, personal dietético y alimentario, personal de servicios ambientales y otros.
 
-Los entornos sanitarios incluyen centros de atención aguda, centros de atención aguda a largo plazo, centros de rehabilitación hospitalaria, residencias de ancianos, centros de vida asistida, atención médica domiciliaria, clínicas móviles, centros ambulatorios como consultorios médicos y otros.",,,,,,,,,,
-c19.eligibility.moreinfo/essential_worker.ms.1c,"This includes teachers, staff and employees in K-12, preschool or childcare settings as well as first responders (Law enforcement, public safety, fire services and emergency management officials)",,,,"Esto incluye maestros, personal y empleados en K-12, preescolar o guardería, así como socorristas (aplicación de la ley, seguridad pública, servicios de bomberos y funcionarios de manejo de emergencias)",,,,,,,,,,
+Los entornos sanitarios incluyen centros de atención aguda, centros de atención aguda a largo plazo, centros de rehabilitación hospitalaria, residencias de ancianos, centros de vida asistida, atención médica domiciliaria, clínicas móviles, centros ambulatorios como consultorios médicos y otros.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.eligibility.moreinfo/essential_worker.ms.1c,"This includes teachers, staff and employees in K-12, preschool or childcare settings as well as first responders (Law enforcement, public safety, fire services and emergency management officials)",,,,,,,,,,,,"Esto incluye maestros, personal y empleados en K-12, preescolar o guardería, así como socorristas (aplicación de la ley, seguridad pública, servicios de bomberos y funcionarios de manejo de emergencias)",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 c19.eligibility.moreinfo/health.ms.1c,"Qualifying health conditions:
 
 Cancer
@@ -37,7 +37,7 @@ Smoking
 Diabetes
 Or other medical conditions as determined by your medical provider
 
-Note that your physician or medical provider may advise that you be vaccinated even if you do not have a health condition listed above. Additionally, you must be 18 or older to receive a vaccination at a drive-through site.",,,,"Condiciones de salud que califican:
+Note that your physician or medical provider may advise that you be vaccinated even if you do not have a health condition listed above. Additionally, you must be 18 or older to receive a vaccination at a drive-through site.",,,,,,,,,,,,"Condiciones de salud que califican:
 
 Cáncer
 Enfermedad renal crónica
@@ -53,9 +53,9 @@ Fumar
 Diabetes
 U otras condiciones médicas según lo determine su proveedor médico
 
-Tenga en cuenta que su médico o proveedor médico puede aconsejarle que esté vacunado incluso si no tiene una condición de salud listada anteriormente. Además, debe tener 18 años o más para recibir una vacuna en un sitio de entrada.",,,,,,,,,,
+Tenga en cuenta que su médico o proveedor médico puede aconsejarle que esté vacunado incluso si no tiene una condición de salud listada anteriormente. Además, debe tener 18 años o más para recibir una vacuna en un sitio de entrada.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 c19.eligibility.moreinfo/age.16_up.ms.2,"If you are 18 or older, you can be vaccinated at any of our drive-through sites at no cost. Persons younger than 18 should make a drive-through site appointment by calling 877-978-6453, or visit a private healthcare provider for COVID-19 vaccination to ensure that they receive a vaccine approved for their age.
 
-COVID-19 vaccinations are provided to Mississippi residents only, or to out-of-state residents who work in Mississippi.",,,,"Si tiene 18 años o más, puede ser vacunado en cualquiera de nuestros sitios de entrada sin costo alguno. Las personas menores de 18 años deben hacer una cita en el sitio llamando al 877-978-6453, o visitar a un proveedor de atención médica privado para la vacunación COVID-19 para asegurarse de que reciben una vacuna aprobada para su edad.
+COVID-19 vaccinations are provided to Mississippi residents only, or to out-of-state residents who work in Mississippi.",,,,,,,,,,,,"Si tiene 18 años o más, puede ser vacunado en cualquiera de nuestros sitios de entrada sin costo alguno. Las personas menores de 18 años deben hacer una cita en el sitio llamando al 877-978-6453, o visitar a un proveedor de atención médica privado para la vacunación COVID-19 para asegurarse de que reciben una vacuna aprobada para su edad.
 
-Las vacunas COVID-19 se proporcionan únicamente a los residentes de Mississippi, o a los residentes fuera del estado que trabajan en Mississippi.",,,,,,,,,,
+Las vacunas COVID-19 se proporcionan únicamente a los residentes de Mississippi, o a los residentes fuera del estado que trabajan en Mississippi.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

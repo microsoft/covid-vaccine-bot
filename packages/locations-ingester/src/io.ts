@@ -4,16 +4,19 @@
  */
 import fs from 'fs'
 import path from 'path'
+import { CACHE_DIR } from './cache'
 import { ProviderLocation } from './types'
 
+export function getFiles(): string[] {
+	return fs.readdirSync(CACHE_DIR)
+}
 export function getLatestFilePath() {
-	const DIST_DIR = path.join(__dirname, '../dist/')
-	const files = fs.readdirSync(DIST_DIR)
+	const files = getFiles().filter((t) => t.endsWith('.csv'))
 	const file = getLatestFile(files)
-	return path.join(DIST_DIR, file)
+	return path.join(CACHE_DIR, file)
 }
 
-function getLatestFile(files: string[]): string {
+export function getLatestFile(files: string[]): string {
 	const timestamps = files
 		.map((f) => f.replace('bch_inventory_report_', '').replace('.csv', ''))
 		.map((f) => new Date(f))
@@ -49,12 +52,4 @@ export function getJsonRecords(file: string): ProviderLocation[] {
 				}
 			})
 		)
-}
-
-export function getLatestJsonRecords(): ProviderLocation[] {
-	return getJsonRecords(getLatestFilePath())
-}
-
-export function getLatestGeoJsonRecords(): ProviderLocation[] {
-	return getJsonRecords(getLatestFilePath().replace('.csv', '.geocoded.json'))
 }

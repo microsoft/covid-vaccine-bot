@@ -9,11 +9,10 @@
 			"text": "c19.links/vax_providers"
 		},
 		"scheduling_phone": {
-			"url": "tel:(410) 767-6500",
+			"url": "tel:410-767-6500",
 			"text": "c19.link/scheduling.phone.md",
 			"description": "c19.link/scheduling.phone.description.md"
-		},
-		"worflow": {}
+		}
 	},
 	"activePhase": "2b",
 	"phases": [
@@ -26,6 +25,5 @@
 				}
 			]
 		}
-	],
-	"noPhaseLabel": false
+	]
 }

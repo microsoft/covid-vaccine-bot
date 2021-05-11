@@ -19,8 +19,7 @@
 		"scheduling_phone": {
 			"url": "tel:602-542-1000",
 			"text": "c19.link/scheduling.phone.az"
-		},
-		"worflow": {}
+		}
 	},
 	"activePhase": "1b_16_and_older",
 	"phases": [
@@ -42,6 +41,5 @@
 				}
 			]
 		}
-	],
-	"noPhaseLabel": false
+	]
 }

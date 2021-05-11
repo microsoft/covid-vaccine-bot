@@ -14,8 +14,7 @@
 		"scheduling_phone": {
 			"url": "tel:888-535-6136",
 			"text": "c19.link/scheduling.phone.mi"
-		},
-		"worflow": {}
+		}
 	},
 	"activePhase": "2",
 	"phases": [
@@ -28,6 +27,5 @@
 				}
 			]
 		}
-	],
-	"noPhaseLabel": false
+	]
 }

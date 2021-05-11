@@ -6,9 +6,7 @@
 		},
 		"eligibility": {
 			"url": "https://www.mass.gov/info-details/massachusetts-covid-19-vaccination-phases",
-			"scrapeQuery": [
-				"#main-content"
-			]
+			"scrapeQuery": ["#main-content"]
 		},
 		"workflow": {
 			"text": "c19.links/vax_quiz",
@@ -21,8 +19,7 @@
 		"scheduling": {
 			"url": "https://vaccinesignup.mass.gov/",
 			"text": "c19.links/schedule_vax"
-		},
-		"worflow": {}
+		}
 	},
 	"activePhase": "phase_3",
 	"phases": [
@@ -35,6 +32,5 @@
 				}
 			]
 		}
-	],
-	"noPhaseLabel": false
+	]
 }

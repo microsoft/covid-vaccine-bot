@@ -6,30 +6,37 @@
 	"main": "index.js",
 	"license": "MIT",
 	"scripts": {
+		"clean": "essex clean lib .cache node_modules deploy.zip package-lock.json",
+		"build": "tsc -b .",
 		"ingest:fetch": "ts-node src/fetchS3Data",
 		"ingest:xform": "ts-node src/transformData",
-		"ingest:geocode": "ts-node src/geocodeData",
 		"ingest:write": "ts-node src/writeCosmosData",
-		"start:ingest": "run-s ingest:fetch ingest:xform ingest:geocode ingest:write"
+		"start:ingest": "run-s ingest:fetch ingest:xform ingest:write",
+		"prearchive": "npm install --production",
+		"archive": "yarn essex zip deploy.zip config lib node_modules VaccineFinderIngest host.json package.json",
+		"deploy": "az functionapp deployment source config-zip --subscription Resilience --resource-group covid-services --name vaxbot-fns --src deploy.zip"
 	},
 	"dependencies": {
-		"@azure/cosmos": "^3.10.5",
-		"aws-sdk": "^2.880.0",
-		"axios": "^0.21.1",
+		"@azure/cosmos": "^3.11.0",
+		"aws-sdk": "^2.896.0",
 		"batch2": "^2.0.0",
 		"config": "^3.3.6",
-		"csv-parse": "^4.15.3",
+		"csv-parse": "^4.15.4",
+		"google-libphonenumber": "^3.2.19",
 		"lodash": "^4.17.21",
-		"progress": "^2.0.3"
+		"node-fetch": "^2.6.1"
 	},
 	"devDependencies": {
+		"@azure/functions": "^1.2.3",
+		"@essex/scripts": "^14.0.0",
 		"@tsconfig/node14": "^1.0.0",
 		"@types/config": "^0.0.38",
-		"@types/lodash": "^4",
-		"@types/node": "^14.14.37",
-		"@types/progress": "^2",
+		"@types/lodash": "^4.14.168",
+		"@types/node": "^14.14.43",
+		"@types/node-fetch": "^2.5.10",
+		"@types/progress": "^2.0.3",
 		"npm-run-all": "^4.1.5",
 		"ts-node": "^9.1.1",
-		"typescript": "^4.2.3"
+		"typescript": "^4.2.4"
 	}
 }

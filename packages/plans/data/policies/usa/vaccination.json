@@ -1,8 +1,5 @@
 {
-	"links": {
-		"info": {},
-		"providers": {}
-	},
+	"links": {},
 	"activePhase": "current",
 	"noPhaseLabel": true,
 	"phases": []

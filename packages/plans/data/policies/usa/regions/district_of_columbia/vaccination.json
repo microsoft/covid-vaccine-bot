@@ -14,8 +14,7 @@
 		},
 		"eligibility": {
 			"url": "https://coronavirus.dc.gov/sites/default/files/dc/sites/coronavirus/release_content/attachments/Situational-Update-Presentation_04-12-21.pdf"
-		},
-		"worflow": {}
+		}
 	},
 	"activePhase": "16_and_up",
 	"noPhaseLabel": true,

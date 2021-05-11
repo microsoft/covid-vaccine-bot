@@ -16,8 +16,7 @@
 			"url": "tel:211",
 			"text": "c19.link/scheduling.phone.nh",
 			"description": "c19.link/scheduling.phone.description.nh"
-		},
-		"worflow": {}
+		}
 	},
 	"activePhase": "phase_3_ages_16",
 	"phases": [
@@ -30,6 +29,5 @@
 				}
 			]
 		}
-	],
-	"noPhaseLabel": false
+	]
 }

@@ -1,6 +1,6 @@
-String ID,en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th
-c19.link/scheduling.phone.wv,"1-833-734-0965",,,,"1-833-734-0965",,,,,,,,,,
-c19.link/scheduling.phone.description.wv,"COVID-19 VACCINATION REGISTRATION",,,,"REGISTRO DE VACUNACIÓN COVID-19",,,,,,,,,,
+String ID,en-us,en-us-sms,en-us-voice,ko-kr,ko-kr-sms,ko-kr-voice,vi-vn,vi-vn-sms,vi-vn-voice,zh-cn,zh-cn-sms,zh-cn-voice,es-us,es-us-sms,es-us-voice,de-de,de-de-sms,de-de-voice,es-es,es-es-sms,es-es-voice,fi-fi,fi-fi-sms,fi-fi-voice,fr-fr,fr-fr-sms,fr-fr-voice,he-il,he-il-sms,he-il-voice,it-it,it-it-sms,it-it-voice,ja-jp,ja-jp-sms,ja-jp-voice,pt-pt,pt-pt-sms,pt-pt-voice,sv-se,sv-se-sms,sv-se-voice,th-th,th-th-sms,th-th-voice
+c19.link/scheduling.phone.wv,"1-833-734-0965",,,,,,,,,,,,"1-833-734-0965",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+c19.link/scheduling.phone.description.wv,"COVID-19 VACCINATION REGISTRATION",,,,,,,,,,,,"REGISTRO DE VACUNACIÓN COVID-19",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 c19.eligibility.moreinfo/age.are_you_age.wv.1a,"- Down syndrome
 - Intellectual and developmental disabilities and their caretakers
 - Caretakers of those with congenital or acquired disease
@@ -8,11 +8,11 @@ c19.eligibility.moreinfo/age.are_you_age.wv.1a,"- Down syndrome
 - Obesity (BMI > 35)
 - Sickle cell anemia
 - Cystic fibrosis
-- Pregnancy",,,,"- Síndrome de Down
+- Pregnancy",,,,,,,,,,,,"- Síndrome de Down
 - Discapacidades intelectuales y del desarrollo y sus cuidadores
 - Cuidadores de personas con enfermedad congénita o adquirida
 - Trasplante de médula ósea o orgánica
 - Obesidad (IMC > 35)
 - Anemia de células falciformes
 - Fibrosis quística
-- Embarazo",,,,,,,,,,
+- Embarazo",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

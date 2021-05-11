@@ -18,8 +18,7 @@
 		"scheduling_phone": {
 			"url": "tel:(340) 777 8227",
 			"text": "c19.link/scheduling.phone.vi"
-		},
-		"worflow": {}
+		}
 	},
 	"activePhase": "16_and_older",
 	"phases": [
@@ -32,6 +31,5 @@
 				}
 			]
 		}
-	],
-	"noPhaseLabel": false
+	]
 }

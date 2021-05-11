@@ -15,8 +15,7 @@
 			"url": "tel:1-855-568-0545",
 			"text": "c19.link/scheduling.phone.nj",
 			"description": "c19.link/scheduling.phone.description.nj"
-		},
-		"worflow": {}
+		}
 	},
 	"activePhase": "current",
 	"noPhaseLabel": true,

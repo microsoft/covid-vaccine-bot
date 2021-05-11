@@ -3,11 +3,8 @@
 		"info": {
 			"text": "cdc/arkansas/state_link",
 			"url": "https://www.healthy.arkansas.gov/programs-services/topics/covid-19-vaccination-plan",
-			"scrapeQuery": [
-				"#contentBody"
-			]
-		},
-		"worflow": {}
+			"scrapeQuery": ["#contentBody"]
+		}
 	},
 	"activePhase": "16_and_older",
 	"phases": [
@@ -20,6 +17,5 @@
 				}
 			]
 		}
-	],
-	"noPhaseLabel": false
+	]
 }

@@ -5,9 +5,6 @@
 		"database": "COSMOSDB_DATABASE",
 		"container": "COSMOSDB_CONTAINER"
 	},
-	"azureMaps": {
-		"key": "AZURE_MAPS_KEY"
-	},
 	"vaccinefinder": {
 		"region": "VACCINE_FINDER_AWS_REGION",
 		"bucket": "VACCINE_FINDER_S3_BUCKET"

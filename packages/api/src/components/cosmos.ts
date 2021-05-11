@@ -6,11 +6,19 @@ import { CosmosClient, Container } from '@azure/cosmos'
 import config from 'config'
 
 export function getCosmosContainer(): Container {
+	const database = getCosmosDatabase()
+	return database.container(config.get('cosmosdb.container'))
+}
+
+export function getCosmosLocationCacheContainer(): Container {
+	const database = getCosmosDatabase()
+	return database.container(config.get('cosmosdb.locationCacheContainer'))
+}
+
+function getCosmosDatabase() {
 	const client = new CosmosClient({
 		endpoint: config.get<string>('cosmosdb.endpoint'),
 		key: config.get<string>('cosmosdb.key'),
 	})
-	const database = client.database(config.get('cosmosdb.database'))
-	const container = database.container(config.get('cosmosdb.container'))
-	return container
+	return client.database(config.get('cosmosdb.database'))
 }

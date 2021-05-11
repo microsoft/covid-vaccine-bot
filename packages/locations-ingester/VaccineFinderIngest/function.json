@@ -1,0 +1,11 @@
+{
+	"bindings": [
+		{
+			"name": "myTimer",
+			"type": "timerTrigger",
+			"direction": "in",
+			"schedule": "0 10 9,10,16,21 * * *"
+		}
+	],
+	"scriptFile": "../lib/index.js"
+}

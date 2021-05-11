@@ -14,8 +14,7 @@
 		"scheduling_phone": {
 			"url": "tel:800-300-1120",
 			"text": "c19.link/scheduling.phone.hi"
-		},
-		"worflow": {}
+		}
 	},
 	"activePhase": "2",
 	"phases": [
@@ -29,6 +28,5 @@
 				}
 			]
 		}
-	],
-	"noPhaseLabel": false
+	]
 }
