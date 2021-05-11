@@ -19,7 +19,7 @@ describe('The Plan Locator', () => {
 		const location: BingLocation = {
 			adminDistrict: 'WA',
 			adminDistrict2: 'Kitsap County',
-			countryRegion: 'United States',
+			countryRegion: 'US',
 			formattedAddress: '98311, WA',
 			locality: 'Bremerton',
 			postalCode: '98311',
@@ -35,7 +35,7 @@ describe('The Plan Locator', () => {
 		const location: BingLocation = {
 			adminDistrict: 'MA',
 			adminDistrict2: 'Suffolk County',
-			countryRegion: 'United States',
+			countryRegion: 'US',
 			formattedAddress: '02109, MA',
 			locality: 'Boston',
 			postalCode: '02109',
@@ -52,7 +52,7 @@ describe('The Plan Locator', () => {
 		const location: BingLocation = {
 			adminDistrict: 'NY',
 			adminDistrict2: 'New York',
-			countryRegion: 'United States',
+			countryRegion: 'US',
 			formattedAddress: '00011, NY',
 			locality: 'New York',
 			postalCode: '00011',
@@ -118,7 +118,7 @@ describe('The Plan Locator', () => {
 			{
 				adminDistrict: 'AZ',
 				adminDistrict2: 'Maricopa',
-				countryRegion: 'United States',
+				countryRegion: 'US',
 			} as BingLocation,
 			embedStateRegions(regions)
 		)
@@ -160,7 +160,7 @@ describe('The Plan Locator', () => {
 			{
 				adminDistrict: 'AZ',
 				adminDistrict2: 'Maricopa',
-				countryRegion: 'United States',
+				countryRegion: 'US',
 			} as BingLocation,
 			embedStateRegions(regions)
 		)
@@ -172,7 +172,7 @@ describe('The Plan Locator', () => {
 		const location: BingLocation = {
 			adminDistrict: 'PW',
 			adminDistrict2: '',
-			countryRegion: 'United States',
+			countryRegion: 'US',
 			formattedAddress: '',
 			locality: '',
 			postalCode: '',
