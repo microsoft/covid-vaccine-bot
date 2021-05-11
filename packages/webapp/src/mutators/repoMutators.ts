@@ -4,7 +4,10 @@
  */
 import { cloneDeep as clone } from 'lodash'
 import { mutatorAction } from 'satcheljs'
-import { getCurrentLocationObj, getLocationPhaseData } from '../selectors/locationSelectors'
+import {
+	getCurrentLocationObj,
+	getLocationPhaseData,
+} from '../selectors/locationSelectors'
 import { getAppStore } from '../store/store'
 import { createLocationDataObj, pathFind } from '../utils/dataUtils'
 import { formatId } from '../utils/textUtils'
@@ -33,7 +36,7 @@ export const setPendingChanges = mutatorAction(
 		store.pendingChangeList = {
 			added: [],
 			modified: [],
-			deleted: []
+			deleted: [],
 		}
 	}
 )
@@ -139,10 +142,10 @@ export const setInitRepoFileData = mutatorAction(
 			store.pendingChangeList = {
 				added: [],
 				modified: [],
-				deleted: []
+				deleted: [],
 			}
 
-			store.repoFileData = {...store.repoFileData}
+			store.repoFileData = { ...store.repoFileData }
 		}
 	}
 )
@@ -152,9 +155,9 @@ export const updateRepoFileData = mutatorAction(
 	(data: any | undefined) => {
 		if (data) {
 			const store = getAppStore()
-			Object.keys(data).forEach(key => {
-				const pathArray = key.split("/")
-				pathArray.splice(-1,1)
+			Object.keys(data).forEach((key) => {
+				const pathArray = key.split('/')
+				pathArray.splice(-1, 1)
 
 				const currLocation = pathFind(store.repoFileData, pathArray)
 
@@ -184,39 +187,38 @@ export const setLoadAllStringsData = mutatorAction(
 	(data: any | undefined) => {
 		if (data) {
 			const store = getAppStore()
-			for(const item of data){
-
-				const pathArray = item.path.split("/")
-				pathArray.splice(-1,1)
+			for (const item of data) {
+				const pathArray = item.path.split('/')
+				pathArray.splice(-1, 1)
 
 				const currLocation = pathFind(store.repoFileData, pathArray)
 
-				if(!currLocation.strings.content){
+				if (!currLocation.strings.content) {
 					currLocation.strings = item
 				}
-
-
 			}
 			store.isDataRefreshing = false
 		}
 	}
 )
 
-export const setLocationData = mutatorAction('setLocationData', (data: any, location:any) => {
-	if (data) {
-		const store = getAppStore()
+export const setLocationData = mutatorAction(
+	'setLocationData',
+	(data: any, location: any) => {
+		if (data) {
+			const store = getAppStore()
 
-		const currLocation = store.repoFileData[location.info.content.id]
-		const initCurrLocation = store.initRepoFileData[location.info.content.id]
+			const currLocation = store.repoFileData[location.info.content.id]
+			const initCurrLocation = store.initRepoFileData[location.info.content.id]
 
-		currLocation.regions = {...currLocation.regions, ...data}
-		initCurrLocation.regions = {...currLocation.regions, ...data}
+			currLocation.regions = { ...currLocation.regions, ...data }
+			initCurrLocation.regions = { ...currLocation.regions, ...data }
 
-		currLocation.dataLoaded = true
-		initCurrLocation.dataLoaded = true
-
+			currLocation.dataLoaded = true
+			initCurrLocation.dataLoaded = true
+		}
 	}
-})
+)
 
 export const setCurrentLanguage = mutatorAction(
 	'setCurrentLanguage',
@@ -262,7 +264,7 @@ export const addPhaseOverviewCrumb = mutatorAction(
 						info: {
 							content: {
 								name: '',
-								id: currentLocation.info.content.id
+								id: currentLocation.info.content.id,
 							},
 							path: currentLocation.info.path.replace(
 								'info.json',
@@ -286,7 +288,7 @@ export const updatePhaseOverviewTitle = mutatorAction(
 		const store = getAppStore()
 		store.breadCrumbs.phase_overview.value.info.content = {
 			id: data,
-			name: data
+			name: data,
 		}
 	}
 )
@@ -356,7 +358,7 @@ export const addLocation = mutatorAction(
 				section: 'location',
 				name: locationFilePath.slice(-1)[0],
 				pathKey: locationFilePath.join('.'),
-				data: newLocation
+				data: newLocation,
 			})
 
 			store.repoFileData = { ...store.repoFileData }
@@ -364,22 +366,20 @@ export const addLocation = mutatorAction(
 	}
 )
 
-const getRegionsRecursive = ( location:any ):any => {
-	if(!location.regions){
-		return [{...location}]
+const getRegionsRecursive = (location: any): any => {
+	if (!location.regions) {
+		return [{ ...location }]
 	}
 
-	let returnArr:any = [{...location}]
-	for( const item of Object.keys(location.regions)){
-		if(item){
-		const region = location.regions[item]
-		returnArr = returnArr.concat(getRegionsRecursive(region))
+	let returnArr: any = [{ ...location }]
+	for (const item of Object.keys(location.regions)) {
+		if (item) {
+			const region = location.regions[item]
+			returnArr = returnArr.concat(getRegionsRecursive(region))
 		}
 	}
 	return returnArr
 }
-
-
 
 export const deleteLocation = mutatorAction(
 	'deleteLocation',
@@ -389,10 +389,10 @@ export const deleteLocation = mutatorAction(
 
 		const pathArray = locationData.value.info.path.split('/')
 		pathArray.splice(-1, 1)
-		
+
 		const currentLocation = pathFind(store.repoFileData, pathArray)
-		const regions:any = getRegionsRecursive(currentLocation)
-		
+		const regions: any = getRegionsRecursive(currentLocation)
+
 		if (pathArray.length === 1) {
 			delete store.repoFileData[locationData.key]
 		} else {
@@ -401,14 +401,14 @@ export const deleteLocation = mutatorAction(
 			delete parentRegion[locationData.key]
 		}
 
-		for(const region of regions){
+		for (const region of regions) {
 			const regionPathArray = region.info.path.split('/')
 			regionPathArray.splice(-1, 1)
 			store.pendingChangeList.deleted.push({
 				section: 'location',
 				name: regionPathArray.slice(-1)[0],
 				pathKey: regionPathArray.join('.'),
-				data: region
+				data: region,
 			})
 		}
 		store.repoFileData = { ...store.repoFileData }
@@ -443,8 +443,8 @@ export const updateLocationData = mutatorAction(
 				const locationKey = `name.${pathArray.join('.')}`
 				currLocation.strings.content = {
 					[locationKey]: {
-						[store.currentLanguage]: locationData.details
-					}
+						[store.currentLanguage]: locationData.details,
+					},
 				}
 				currLocation.info.content.name = locationKey
 			}
@@ -609,7 +609,9 @@ export const updateLocationData = mutatorAction(
 				locationData.noPhaseLabel
 
 			const pathKey = pathArray.join('.')
-			const modifyKeyIdx = store.pendingChangeList.modified.findIndex((m: any) => m.pathKey === pathKey && m.section === 'location')
+			const modifyKeyIdx = store.pendingChangeList.modified.findIndex(
+				(m: any) => m.pathKey === pathKey && m.section === 'location'
+			)
 
 			if (modifyKeyIdx > -1) {
 				store.pendingChangeList.modified[modifyKeyIdx].data = currLocation
@@ -618,11 +620,13 @@ export const updateLocationData = mutatorAction(
 					section: 'location',
 					name: pathArray.slice(-1)[0],
 					pathKey: pathKey,
-					data: currLocation
+					data: currLocation,
 				})
 			}
 
-			const modifyRootKeyIdx = store.pendingChangeList.modified.findIndex((m: any) => m.pathKey === rootPath)
+			const modifyRootKeyIdx = store.pendingChangeList.modified.findIndex(
+				(m: any) => m.pathKey === rootPath
+			)
 
 			if (modifyRootKeyIdx > -1) {
 				store.pendingChangeList.modified[modifyRootKeyIdx].data = rootLocation
@@ -631,7 +635,7 @@ export const updateLocationData = mutatorAction(
 					section: 'location',
 					name: rootPath,
 					pathKey: rootPath,
-					data: rootLocation
+					data: rootLocation,
 				})
 			}
 
@@ -640,26 +644,29 @@ export const updateLocationData = mutatorAction(
 	}
 )
 
-const copyPhaseData = (currentLocation:any, phases:any) => {
-
-	phases.forEach( (phase:any) => {
-		phase.qualifications.forEach( (question:any) => {
-
+const copyPhaseData = (currentLocation: any, phases: any) => {
+	phases.forEach((phase: any) => {
+		phase.qualifications.forEach((question: any) => {
 			delete question.moreInfoText
 			delete question.moreInfoTextSms
 			delete question.moreInfoTextVoice
 			delete question.moreInfoUrl
-
-		} )
+		})
 	})
 
 	currentLocation.vaccination.content.phases = phases
-
 }
 
 export const modifyMoreInfoText = mutatorAction(
 	'modifyMoreInfoText',
-	({ currentLocation, phaseGroupId, qualifierId, moreInfoText, moreInfoTextSms, moreInfoTextVoice }: any) => {
+	({
+		currentLocation,
+		phaseGroupId,
+		qualifierId,
+		moreInfoText,
+		moreInfoTextSms,
+		moreInfoTextVoice,
+	}: any) => {
 		if (currentLocation && phaseGroupId && qualifierId) {
 			const store = getAppStore()
 			store.pendingChanges = true
@@ -686,7 +693,8 @@ export const modifyMoreInfoText = mutatorAction(
 			)
 
 			const phaseQualifiers =
-			currentLocation.vaccination.content.phases[phaseGroupIndex].qualifications
+				currentLocation.vaccination.content.phases[phaseGroupIndex]
+					.qualifications
 			const qualifierIdx = phaseQualifiers.findIndex(
 				(pq: any) => pq.question === qualifierId
 			)
@@ -695,8 +703,8 @@ export const modifyMoreInfoText = mutatorAction(
 
 			if (!isRootLocation) {
 				const locationCode =
-				currentLocation.info.content?.metadata?.code_alpha ||
-				currentLocation.info.content.id
+					currentLocation.info.content?.metadata?.code_alpha ||
+					currentLocation.info.content.id
 				calcInfoKey += `.${locationCode.toLowerCase()}.${phaseGroupId}`
 			}
 
@@ -733,7 +741,9 @@ export const modifyMoreInfoText = mutatorAction(
 			}
 
 			const pathKey = pathArray.join('.')
-			const modifyKeyIdx = store.pendingChangeList.modified.findIndex((m: any) => m.pathKey === pathKey && m.section === 'qualifier')
+			const modifyKeyIdx = store.pendingChangeList.modified.findIndex(
+				(m: any) => m.pathKey === pathKey && m.section === 'qualifier'
+			)
 
 			if (modifyKeyIdx > -1) {
 				store.pendingChangeList.modified[modifyKeyIdx].data = currentLocation
@@ -742,7 +752,7 @@ export const modifyMoreInfoText = mutatorAction(
 					section: 'qualifier',
 					name: currentLocation.info.content.id,
 					pathKey: pathKey,
-					data: currentLocation
+					data: currentLocation,
 				})
 			}
 
@@ -779,14 +789,17 @@ export const modifyMoreInfoLinks = mutatorAction(
 			)
 
 			const phaseQualifiers =
-				currentLocation.vaccination.content.phases[phaseGroupIndex].qualifications
+				currentLocation.vaccination.content.phases[phaseGroupIndex]
+					.qualifications
 			const qualifierIdx = phaseQualifiers.findIndex(
 				(pq: any) => pq.question === qualifierId
 			)
 
 			phaseQualifiers[qualifierIdx].moreInfoUrl = moreInfoUrl
 			const pathKey = pathArray.join('.')
-			const modifyKeyIdx = store.pendingChangeList.modified.findIndex((m: any) => m.pathKey === pathKey && m.section === 'qualifier')
+			const modifyKeyIdx = store.pendingChangeList.modified.findIndex(
+				(m: any) => m.pathKey === pathKey && m.section === 'qualifier'
+			)
 
 			if (modifyKeyIdx > -1) {
 				store.pendingChangeList.modified[modifyKeyIdx].data = currentLocation
@@ -795,7 +808,7 @@ export const modifyMoreInfoLinks = mutatorAction(
 					section: 'qualifier',
 					name: currentLocation.info.content.id,
 					pathKey: pathKey,
-					data: currentLocation
+					data: currentLocation,
 				})
 			}
 
@@ -811,21 +824,26 @@ export const updateQualifier = mutatorAction(
 			const store = getAppStore()
 			store.pendingChanges = true
 
-			
 			const pathArray = currentLocation.info.path.split('/')
 			pathArray.splice(-1, 1)
 
-			const qualifierSmsKey = qualifierId.replace('.question/','.question.sms/')
-			const qualifierVoiceKey = qualifierId.replace('.question/','.question.voice/')
+			const qualifierSmsKey = qualifierId.replace(
+				'.question/',
+				'.question.sms/'
+			)
+			const qualifierVoiceKey = qualifierId.replace(
+				'.question/',
+				'.question.voice/'
+			)
 
 			const rootStringsObj = store.repoFileData[pathArray[0]].strings.content
-			const phaseQualiferObj:any = { 'question': qualifierId }
+			const phaseQualiferObj: any = { question: qualifierId }
 
-			if(rootStringsObj[qualifierSmsKey]){
+			if (rootStringsObj[qualifierSmsKey]) {
 				phaseQualiferObj.questionSms = qualifierSmsKey
 			}
 
-			if(rootStringsObj[qualifierVoiceKey]){
+			if (rootStringsObj[qualifierVoiceKey]) {
 				phaseQualiferObj.questionVoice = qualifierVoiceKey
 			}
 
@@ -847,7 +865,8 @@ export const updateQualifier = mutatorAction(
 			)
 
 			const phaseQualifiers =
-				currentLocation.vaccination.content.phases[phaseGroupIndex].qualifications
+				currentLocation.vaccination.content.phases[phaseGroupIndex]
+					.qualifications
 			const qualifierIdx = phaseQualifiers.findIndex(
 				(pq: any) => pq.question === oldQualifierId
 			)
@@ -861,15 +880,19 @@ export const updateQualifier = mutatorAction(
 			if (oldQualifierObj.moreInfoTextSms) {
 				delete currentLocation.strings.content[oldQualifierObj.moreInfoTextSms]
 			}
-			
+
 			if (oldQualifierObj.moreInfoTextVoice) {
-				delete currentLocation.strings.content[oldQualifierObj.moreInfoTextVoice]
+				delete currentLocation.strings.content[
+					oldQualifierObj.moreInfoTextVoice
+				]
 			}
 
 			phaseQualifiers[qualifierIdx] = phaseQualiferObj
 
 			const pathKey = pathArray.join('.')
-			const modifyKeyIdx = store.pendingChangeList.modified.findIndex((m: any) => m.pathKey === pathKey && m.section === 'qualifier')
+			const modifyKeyIdx = store.pendingChangeList.modified.findIndex(
+				(m: any) => m.pathKey === pathKey && m.section === 'qualifier'
+			)
 
 			if (modifyKeyIdx > -1) {
 				store.pendingChangeList.modified[modifyKeyIdx].data = currentLocation
@@ -878,7 +901,7 @@ export const updateQualifier = mutatorAction(
 					section: 'qualifier',
 					name: currentLocation.info.content.id,
 					pathKey: pathKey,
-					data: currentLocation
+					data: currentLocation,
 				})
 			}
 
@@ -897,17 +920,23 @@ export const addQualifier = mutatorAction(
 			const pathArray = currentLocation.info.path.split('/')
 			pathArray.splice(-1, 1)
 
-			const qualifierSmsKey = qualifierId.replace('.question/','.question.sms/')
-			const qualifierVoiceKey = qualifierId.replace('.question/','.question.voice/')
+			const qualifierSmsKey = qualifierId.replace(
+				'.question/',
+				'.question.sms/'
+			)
+			const qualifierVoiceKey = qualifierId.replace(
+				'.question/',
+				'.question.voice/'
+			)
 
 			const rootStringsObj = store.repoFileData[pathArray[0]].strings.content
-			const phaseQualiferObj:any = { 'question': qualifierId }
+			const phaseQualiferObj: any = { question: qualifierId }
 
-			if(rootStringsObj[qualifierSmsKey]){
+			if (rootStringsObj[qualifierSmsKey]) {
 				phaseQualiferObj.questionSms = qualifierSmsKey
 			}
 
-			if(rootStringsObj[qualifierVoiceKey]){
+			if (rootStringsObj[qualifierVoiceKey]) {
 				phaseQualiferObj.questionVoice = qualifierVoiceKey
 			}
 
@@ -929,14 +958,16 @@ export const addQualifier = mutatorAction(
 			)
 			const pathKey = pathArray.join('.')
 
-			const phaseQualifiers = currentLocation.vaccination.content.phases[phaseGroupIndex].qualifications
+			const phaseQualifiers =
+				currentLocation.vaccination.content.phases[phaseGroupIndex]
+					.qualifications
 			phaseQualifiers.push(phaseQualiferObj)
 
 			store.pendingChangeList.added.push({
 				section: 'qualifier',
-					name: currentLocation.info.content.id,
-					pathKey: pathKey,
-					data: currentLocation
+				name: currentLocation.info.content.id,
+				pathKey: pathKey,
+				data: currentLocation,
 			})
 
 			store.repoFileData = { ...store.repoFileData }
@@ -953,7 +984,6 @@ export const removeQualifier = mutatorAction(
 
 			const pathArray = currentLocation.info.path.split('/')
 			pathArray.splice(-1, 1)
-
 
 			const { phases, activePhase } = getLocationPhaseData(currentLocation)
 
@@ -974,16 +1004,17 @@ export const removeQualifier = mutatorAction(
 			const pathKey = pathArray.join('.')
 
 			const phaseQualifiers =
-				currentLocation.vaccination.content.phases[phaseGroupIndex].qualifications
+				currentLocation.vaccination.content.phases[phaseGroupIndex]
+					.qualifications
 			const qualifierIdx = phaseQualifiers.findIndex(
 				(pq: any) => pq.question === qualifierId
 			)
 
 			store.pendingChangeList.modified.push({
 				section: 'qualifier',
-					name: currentLocation.info.content.id,
-					pathKey: pathKey,
-					data: currentLocation
+				name: currentLocation.info.content.id,
+				pathKey: pathKey,
+				data: currentLocation,
 			})
 
 			phaseQualifiers.splice(qualifierIdx, 1)
@@ -992,8 +1023,6 @@ export const removeQualifier = mutatorAction(
 		}
 	}
 )
-
-
 
 export const removePhase = mutatorAction(
 	'removePhase',
@@ -1005,38 +1034,31 @@ export const removePhase = mutatorAction(
 			const pathArray = currentLocation.info.path.split('/')
 			pathArray.splice(-1, 1)
 
-
 			const { phases } = getLocationPhaseData(currentLocation)
 
-			const removeIndex = phases.findIndex(
-				(phase: any) => phase.id === phaseId
-			)
+			const removeIndex = phases.findIndex((phase: any) => phase.id === phaseId)
 			const name = phases[removeIndex].label || phases[removeIndex].id
 			phases.splice(removeIndex, 1)
-
 
 			if (
 				!currentLocation.vaccination.content?.phases ||
 				currentLocation.vaccination.content?.phases.length === 0
 			) {
-
 				copyPhaseData(currentLocation, phases)
 			} else {
 				currentLocation.vaccination.content.phases = phases
 			}
 
-			if(currentLocation.vaccination.content.activePhase === phaseId){
+			if (currentLocation.vaccination.content.activePhase === phaseId) {
 				delete currentLocation.vaccination.content.activePhase
 			}
-
 
 			store.pendingChangeList.modified.push({
 				section: 'phase',
 				name: name,
 				pathKey: pathArray.join('.'),
-				data: currentLocation
+				data: currentLocation,
 			})
-
 
 			store.repoFileData = { ...store.repoFileData }
 		}
@@ -1045,7 +1067,7 @@ export const removePhase = mutatorAction(
 
 export const updatePhase = mutatorAction(
 	'updatePhase',
-	(currentLocation: any, phaseId: string, phaseName:string) => {
+	(currentLocation: any, phaseId: string, phaseName: string) => {
 		const store = getAppStore()
 		store.pendingChanges = true
 
@@ -1058,7 +1080,6 @@ export const updatePhase = mutatorAction(
 			!currentLocation.vaccination.content?.phases ||
 			currentLocation.vaccination.content?.phases.length === 0
 		) {
-
 			copyPhaseData(currentLocation, phases)
 		} else {
 			currentLocation.vaccination.content.phases = phases
@@ -1069,13 +1090,15 @@ export const updatePhase = mutatorAction(
 		}
 
 		const affectedPhase = currentLocation.vaccination.content.phases.find(
-					(phase: any) => phase.id === phaseId
-				)
+			(phase: any) => phase.id === phaseId
+		)
 
 		affectedPhase.label = phaseName
 
 		const pathKey = pathArray.join('.')
-		const modifyKeyIdx = store.pendingChangeList.modified.findIndex((m: any) => m.pathKey === pathKey && m.section === 'phase')
+		const modifyKeyIdx = store.pendingChangeList.modified.findIndex(
+			(m: any) => m.pathKey === pathKey && m.section === 'phase'
+		)
 
 		if (modifyKeyIdx > -1) {
 			store.pendingChangeList.modified[modifyKeyIdx].data = currentLocation
@@ -1084,7 +1107,7 @@ export const updatePhase = mutatorAction(
 				section: 'phase',
 				name: currentLocation.info.content.id,
 				pathKey: pathKey,
-				data: currentLocation
+				data: currentLocation,
 			})
 		}
 
@@ -1127,7 +1150,7 @@ export const addPhase = mutatorAction(
 				section: 'phase',
 				name: label,
 				pathKey: pathKey,
-				data: currentLocation
+				data: currentLocation,
 			})
 
 			store.repoFileData = { ...store.repoFileData }
@@ -1174,7 +1197,7 @@ export const duplicatePhase = mutatorAction(
 				section: 'phase',
 				name: name,
 				pathKey: pathKey,
-				data: currentLocation
+				data: currentLocation,
 			})
 
 			store.repoFileData = { ...store.repoFileData }
@@ -1189,11 +1212,15 @@ export const setActivePhase = mutatorAction(
 			const store = getAppStore()
 			store.pendingChanges = true
 
-			const { locationData: currLocation, pathKey } = getCurrentLocationObj(currentLocation)
+			const { locationData: currLocation, pathKey } = getCurrentLocationObj(
+				currentLocation
+			)
 
 			currLocation.vaccination.content.activePhase = phaseId
 
-			const modifyKeyIdx = store.pendingChangeList.modified.findIndex((m: any) => m.pathKey === pathKey && m.section === 'phase')
+			const modifyKeyIdx = store.pendingChangeList.modified.findIndex(
+				(m: any) => m.pathKey === pathKey && m.section === 'phase'
+			)
 
 			if (modifyKeyIdx > -1) {
 				store.pendingChangeList.modified[modifyKeyIdx].data = currLocation
@@ -1202,7 +1229,7 @@ export const setActivePhase = mutatorAction(
 					section: 'phase',
 					name: phaseId,
 					pathKey: pathKey,
-					data: currLocation
+					data: currLocation,
 				})
 			}
 
@@ -1211,92 +1238,98 @@ export const setActivePhase = mutatorAction(
 	}
 )
 
-const deleteKeyRecursive = ( key:string, dataSource:any, changeList:any ) => {
-	if(dataSource.regions){
-		for(const region in dataSource.regions){
-			console.log(region)
+const deleteKeyRecursive = (key: string, dataSource: any, changeList: any) => {
+	if (dataSource.regions) {
+		for (const region in dataSource.regions) {
 			const location = dataSource.regions[region]
-			if(JSON.stringify(location)?.toLowerCase().includes(key)){
+			if (JSON.stringify(location)?.toLowerCase().includes(key)) {
 				deleteKeyRecursive(key, location, changeList)
 			}
 		}
 	}
 
-	if(JSON.stringify(dataSource.vaccination.content)?.toLowerCase().includes(key))
-	{
-			const pathArray = dataSource.info.path.split('/')
-			pathArray.splice(-1, 1)		
+	if (
+		JSON.stringify(dataSource.vaccination.content)?.toLowerCase().includes(key)
+	) {
+		const pathArray = dataSource.info.path.split('/')
+		pathArray.splice(-1, 1)
 
-			dataSource.vaccination.content.phases.forEach( (phase:any) => {
-
-			if(JSON.stringify(phase)?.toLowerCase().includes(key)){
-				phase.qualifications.forEach( (qualifier:any) => { 
-
-					Object.keys(qualifier).forEach( (qualifierKey:string) => { 
-						if(qualifier[qualifierKey].toLowerCase() === key) { delete qualifier[qualifierKey] }
-
+		dataSource.vaccination.content.phases.forEach((phase: any) => {
+			if (JSON.stringify(phase)?.toLowerCase().includes(key)) {
+				phase.qualifications.forEach((qualifier: any) => {
+					Object.keys(qualifier).forEach((qualifierKey: string) => {
+						if (qualifier[qualifierKey].toLowerCase() === key) {
+							delete qualifier[qualifierKey]
+						}
 					})
-
-
-				})  
+				})
 			}
-
-		} )
+		})
 
 		changeList.push({
-					section: 'phase',
-					name: dataSource.info.content.id,
-					pathKey: pathArray.join("."),
-					data: dataSource
-				})
+			section: 'phase',
+			name: dataSource.info.content.id,
+			pathKey: pathArray.join('.'),
+			data: dataSource,
+		})
 	}
 }
 
-const addKeyRecursive = ( key:string, dataSource:any, changeList:any, isSms:boolean = false, isVoice: boolean = false) => {
-	if(dataSource.regions){
-		for(const region in dataSource.regions){
+const addKeyRecursive = (
+	key: string,
+	dataSource: any,
+	changeList: any,
+	isSms: boolean = false,
+	isVoice: boolean = false
+) => {
+	if (dataSource.regions) {
+		for (const region in dataSource.regions) {
 			const location = dataSource.regions[region]
-			if(JSON.stringify(location)?.toLowerCase().includes(key)){
+			if (JSON.stringify(location)?.toLowerCase().includes(key)) {
 				addKeyRecursive(key, location, changeList, isSms, isVoice)
 			}
 		}
 	}
 
-	if(JSON.stringify(dataSource.vaccination.content)?.toLowerCase().includes(key))
-	{
+	if (
+		JSON.stringify(dataSource.vaccination.content)?.toLowerCase().includes(key)
+	) {
 		const pathArray = dataSource.info.path.split('/')
 		pathArray.splice(-1, 1)
 
-		dataSource.vaccination.content.phases.forEach((phase:any) => {
-
-			if(JSON.stringify(phase)?.toLowerCase().includes(key)) {
-				phase.qualifications.forEach((qualifier:any) => {
-						if(qualifier.question.toLowerCase() === key){
-							if (isSms && !qualifier.questionSms) {
-								qualifier.questionSms = key.replace('.question/','.question.sms/')
-								changeList.push({
-									section: 'phase',
-									name: dataSource.info.content.id,
-									pathKey: pathArray.join("."),
-									data: dataSource
-								})
-							}
-
-							if(isVoice && !qualifier.questionVoice){
-								qualifier.questionVoice = key.replace('.question/','.question.voice/')
-								changeList.push({
-												section: 'phase',
-												name: dataSource.info.content.id,
-												pathKey: pathArray.join("."),
-												data: dataSource
-											})
-							}
+		dataSource.vaccination.content.phases.forEach((phase: any) => {
+			if (JSON.stringify(phase)?.toLowerCase().includes(key)) {
+				phase.qualifications.forEach((qualifier: any) => {
+					if (qualifier.question.toLowerCase() === key) {
+						if (isSms && !qualifier.questionSms) {
+							qualifier.questionSms = key.replace(
+								'.question/',
+								'.question.sms/'
+							)
+							changeList.push({
+								section: 'phase',
+								name: dataSource.info.content.id,
+								pathKey: pathArray.join('.'),
+								data: dataSource,
+							})
 						}
-			})
-		
-		
-		}
-	})
+
+						if (isVoice && !qualifier.questionVoice) {
+							qualifier.questionVoice = key.replace(
+								'.question/',
+								'.question.voice/'
+							)
+							changeList.push({
+								section: 'phase',
+								name: dataSource.info.content.id,
+								pathKey: pathArray.join('.'),
+								data: dataSource,
+							})
+						}
+					}
+				})
+			}
+		})
 	}
 }
 
@@ -1339,12 +1372,21 @@ export const updateRootLocationQualifiers = mutatorAction(
 					? qualifierKey.substr(0, qualifierKey.length - 1)
 					: qualifierKey
 
-				qualifierSmsKey = qualifierKey.replace('.question/','.question.sms/')
-				qualifierVoiceKey = qualifierKey.replace('.question/','.question.voice/')
+				qualifierSmsKey = qualifierKey.replace('.question/', '.question.sms/')
+				qualifierVoiceKey = qualifierKey.replace(
+					'.question/',
+					'.question.voice/'
+				)
 			} else {
 				qualifierKey = newQualifier.key
-				qualifierSmsKey = newQualifier.key.replace('.question/','.question.sms/')
-				qualifierVoiceKey = newQualifier.key.replace('.question/','.question.voice/')
+				qualifierSmsKey = newQualifier.key.replace(
+					'.question/',
+					'.question.sms/'
+				)
+				qualifierVoiceKey = newQualifier.key.replace(
+					'.question/',
+					'.question.voice/'
+				)
 			}
 
 			stringsObj[qualifierKey] = {
@@ -1353,10 +1395,20 @@ export const updateRootLocationQualifiers = mutatorAction(
 			}
 
 			if (!newQualifier.qualifierSms && !newQualifier.isNew) {
-				deleteKeyRecursive(qualifierSmsKey, store.repoFileData[rootLocationKey], store.pendingChangeList.modified )
+				deleteKeyRecursive(
+					qualifierSmsKey,
+					store.repoFileData[rootLocationKey],
+					store.pendingChangeList.modified
+				)
 				delete stringsObj[qualifierSmsKey]
-			} else if(newQualifier.qualifierSms){
-				addKeyRecursive(qualifierKey, store.repoFileData[rootLocationKey], store.pendingChangeList.modified, true, false)
+			} else if (newQualifier.qualifierSms) {
+				addKeyRecursive(
+					qualifierKey,
+					store.repoFileData[rootLocationKey],
+					store.pendingChangeList.modified,
+					true,
+					false
+				)
 				stringsObj[qualifierSmsKey] = {
 					...stringsObj[qualifierSmsKey],
 					[store.currentLanguage]: newQualifier.qualifierSms,
@@ -1364,26 +1416,39 @@ export const updateRootLocationQualifiers = mutatorAction(
 			}
 
 			if (!newQualifier.qualifierVoice && !newQualifier.isNew) {
-				deleteKeyRecursive(qualifierVoiceKey, store.repoFileData[rootLocationKey], store.pendingChangeList.modified )
+				deleteKeyRecursive(
+					qualifierVoiceKey,
+					store.repoFileData[rootLocationKey],
+					store.pendingChangeList.modified
+				)
 				delete stringsObj[qualifierVoiceKey]
-			} else if(newQualifier.qualifierVoice){
-				addKeyRecursive(qualifierKey, store.repoFileData[rootLocationKey], store.pendingChangeList.modified, false, true)
+			} else if (newQualifier.qualifierVoice) {
+				addKeyRecursive(
+					qualifierKey,
+					store.repoFileData[rootLocationKey],
+					store.pendingChangeList.modified,
+					false,
+					true
+				)
 				stringsObj[qualifierVoiceKey] = {
 					...stringsObj[qualifierVoiceKey],
 					[store.currentLanguage]: newQualifier.qualifierVoice,
 				}
 			}
 
-			const modifyRootKeyIdx = store.pendingChangeList.modified.findIndex((m: any) => m.pathKey === rootLocationKey)
+			const modifyRootKeyIdx = store.pendingChangeList.modified.findIndex(
+				(m: any) => m.pathKey === rootLocationKey
+			)
 
 			if (modifyRootKeyIdx > -1) {
-				store.pendingChangeList.modified[modifyRootKeyIdx].data = store.repoFileData[rootLocationKey]
+				store.pendingChangeList.modified[modifyRootKeyIdx].data =
+					store.repoFileData[rootLocationKey]
 			} else {
 				store.pendingChangeList.modified.push({
 					section: 'qualifier',
 					name: rootLocationKey,
 					pathKey: rootLocationKey,
-					data: store.repoFileData[rootLocationKey]
+					data: store.repoFileData[rootLocationKey],
 				})
 			}
 
@@ -1392,28 +1457,35 @@ export const updateRootLocationQualifiers = mutatorAction(
 	}
 )
 
-const recursiveFindAndReplace = (key: string, saveObj: any, location: any, changeList:any) => {
+const recursiveFindAndReplace = (
+	key: string,
+	saveObj: any,
+	location: any,
+	changeList: any
+) => {
 	if (
 		location.strings &&
 		location.strings.content &&
 		location.strings.content[key]
 	) {
-		const { locationData, pathKey, name } = getCurrentLocationObj(location) 
+		const { locationData, pathKey, name } = getCurrentLocationObj(location)
 		location.strings.content[key] = saveObj
 
-		const translateChangeKey = changeList.findIndex((m: any) => m.pathKey === pathKey && m.section === 'translations')
-		if(translateChangeKey === -1){
+		const translateChangeKey = changeList.findIndex(
+			(m: any) => m.pathKey === pathKey && m.section === 'translations'
+		)
+		if (translateChangeKey === -1) {
 			changeList.push({
-					section: 'translations',
-					name: name,
-					pathKey: pathKey,
-					data: locationData
-				})
+				section: 'translations',
+				name: name,
+				pathKey: pathKey,
+				data: locationData,
+			})
 		}
 		return
 	}
 	if (location.regions) {
-			for(const region of Object.keys(location.regions)){
+		for (const region of Object.keys(location.regions)) {
 			const regionObj = location.regions[region]
 			if (JSON.stringify(regionObj).includes(key)) {
 				recursiveFindAndReplace(key, saveObj, regionObj, changeList)
@@ -1430,14 +1502,19 @@ export const updateStrings = mutatorAction(
 			const store = getAppStore()
 			store.pendingChanges = true
 			Object.keys(stringsList).forEach((stringId: string) => {
-					for (const item of Object.keys(store.repoFileData)) {
-						const location = store.repoFileData[item]
-						if (JSON.stringify(location).includes(stringId)) {
-							recursiveFindAndReplace(stringId, stringsList[stringId], location, store.pendingChangeList.modified)
-							break
-						}
+				for (const item of Object.keys(store.repoFileData)) {
+					const location = store.repoFileData[item]
+					if (JSON.stringify(location).includes(stringId)) {
+						recursiveFindAndReplace(
+							stringId,
+							stringsList[stringId],
+							location,
+							store.pendingChangeList.modified
+						)
+						break
 					}
-				})
+				}
+			})
 			store.repoFileData = { ...store.repoFileData }
 		}
 	}
