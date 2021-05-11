@@ -6,7 +6,9 @@
 		},
 		"eligibility": {
 			"url": "https://msdh.ms.gov/msdhsite/_static/14,22816,420,976.html#eligible",
-			"scrapeQuery": [".msdh"]
+			"scrapeQuery": [
+				".msdh"
+			]
 		},
 		"providers": {
 			"url": "https://msdh.ms.gov/msdhsite/_static/14,0,420,976.html#providerMap",
@@ -19,7 +21,8 @@
 		"scheduling_phone": {
 			"url": "tel:877-978-6453",
 			"text": "c19.link/scheduling.phone.ms"
-		}
+		},
+		"worflow": {}
 	},
 	"activePhase": "2",
 	"phases": [
@@ -34,5 +37,6 @@
 				}
 			]
 		}
-	]
+	],
+	"noPhaseLabel": false
 }
