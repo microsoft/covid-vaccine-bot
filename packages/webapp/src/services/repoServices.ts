@@ -399,8 +399,6 @@ export const repoServices = async (
 			}
 			case 'loadAllLocationData': {
 				const { locationId, repoRef } = extraData
-
-				// fix this to load from right branch
 				const query = !repoRef
 					? `contents/packages/plans/data/policies/${locationId}?ref=${process.env.REACT_APP_MAIN_BRANCH}`
 					: `contents/packages/plans/data/policies/${locationId}?ref=${repoRef}`
