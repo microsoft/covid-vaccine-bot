@@ -10,33 +10,28 @@ import {
 } from '@fluentui/react'
 import parse from 'csv-parse/lib/sync'
 import { observer } from 'mobx-react-lite'
-import { useState,  useEffect, createRef, useCallback } from 'react'
-import {
-	updateStrings,
-} from '../mutators/repoMutators'
+import { useState, useEffect, createRef, useCallback } from 'react'
+import { loadAllStringsData } from '../actions/repoActions'
+import { updateStrings } from '../mutators/repoMutators'
 import { getText as t } from '../selectors/intlSelectors'
 import { getAppStore } from '../store/store'
 import { convertCSVDataToObj } from '../utils/dataUtils'
-import {
-	createCSVDataString,
-} from '../utils/textUtils'
-import { loadAllStringsData } from '../actions/repoActions'
+import { createCSVDataString } from '../utils/textUtils'
 
 import './Translate.scss'
 
 export default observer(function Translate() {
-	const {
-		repoFileData,
-		isDataRefreshing,
-	} = getAppStore()
+	const { repoFileData, isDataRefreshing } = getAppStore()
 
 	const [showLoading, setShowLoading] = useState<boolean>(false)
 	const fileUploadRef = createRef<HTMLInputElement>()
-	const [errorMessage, setErrorMessage] = useState<{ message: string } | undefined>()
+	const [errorMessage, setErrorMessage] = useState<
+		{ message: string } | undefined
+	>()
 
-	useEffect( () => {
+	useEffect(() => {
 		loadAllStringsData()
-	},[])
+	}, [])
 
 	const onReaderLoadData = (readerEvent: any) => {
 		try {
@@ -61,66 +56,60 @@ export default observer(function Translate() {
 		}
 	}
 
-	const handleFileUpload = (file:any) => {
-			setShowLoading(true)
-			if (file.type === 'text/csv') {
-				const reader = new FileReader()
-				reader.onload = onReaderLoadData
-				reader.readAsText(file, 'UTF-8')
-			} else {
-				setErrorMessage(new Error(t('Translate.error.invalidFileType')))
-				setShowLoading(false)
-			}
-
+	const handleFileUpload = (file: any) => {
+		setShowLoading(true)
+		if (file.type === 'text/csv') {
+			const reader = new FileReader()
+			reader.onload = onReaderLoadData
+			reader.readAsText(file, 'UTF-8')
+		} else {
+			setErrorMessage(new Error(t('Translate.error.invalidFileType')))
+			setShowLoading(false)
+		}
 	}
 
 	const triggerFileOnClick = () => {
 		fileUploadRef.current?.click()
 	}
 
-	const onDragFile = (e:any) =>{
-
-		e.preventDefault();
-    	e.stopPropagation();
+	const onDragFile = (e: any) => {
+		e.preventDefault()
+		e.stopPropagation()
 	}
 
-	const onDropFile = (e:any) =>{
-
-		e.preventDefault();
-    	e.stopPropagation();
+	const onDropFile = (e: any) => {
+		e.preventDefault()
+		e.stopPropagation()
 
 		if (e.dataTransfer.items[0].kind === 'file') {
 			handleFileUpload(e.dataTransfer.items[0].getAsFile())
 		}
-
 	}
 
-	const recursiveFindStrings = useCallback(async (elem:any) => {
+	const recursiveFindStrings = useCallback(async (elem: any) => {
 		const returnStrings = {}
-		if(elem.regions){
-			for(const item of Object.entries(elem.regions)){
+		if (elem.regions) {
+			for (const item of Object.entries(elem.regions)) {
 				const regionStrings = await recursiveFindStrings(item[1])
 				Object.assign(returnStrings, regionStrings)
 			}
 		}
 
-		return { ...elem.strings?.content, ...returnStrings}
-
-	},[])
+		return { ...elem.strings?.content, ...returnStrings }
+	}, [])
 
 	const onFileDownload = useCallback(async () => {
 		let stringsObj = {}
 
-		for(const item of Object.entries(repoFileData)){
-			const location:any = item[1]
+		for (const item of Object.entries(repoFileData)) {
+			const location: any = item[1]
 			const results = await recursiveFindStrings(location)
-			stringsObj = {...stringsObj, ...results}
+			stringsObj = { ...stringsObj, ...results }
 		}
 		const stringData = createCSVDataString(stringsObj)
 		const csvData = new Blob([stringData], { type: 'text/csv' })
 		const csvUrl = URL.createObjectURL(csvData)
 		window.open(csvUrl)
-
 	}, [repoFileData, recursiveFindStrings])
 
 	return (
@@ -147,8 +136,12 @@ export default observer(function Translate() {
 					)}
 					{!(showLoading || isDataRefreshing) ? (
 						<section>
-							<div className="fileDropZone" onDragEnter={onDragFile} onDragOver={onDragFile} onDrop={onDropFile}>
-
+							<div
+								className="fileDropZone"
+								onDragEnter={onDragFile}
+								onDragOver={onDragFile}
+								onDrop={onDropFile}
+							>
 								<div className="fileOptions">
 									<input
 										ref={fileUploadRef}
@@ -166,7 +159,6 @@ export default observer(function Translate() {
 										{t('Translate.TemplateButtons.upload')}
 									</button>
 								</div>
-
 							</div>
 						</section>
 					) : (

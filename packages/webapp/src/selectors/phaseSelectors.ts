@@ -2,10 +2,10 @@
  * Copyright (c) Microsoft. All rights reserved.
  * Licensed under the MIT license. See LICENSE file in the project.
  */
+import { isEqual } from 'lodash'
 import { getAppStore } from '../store/store'
 import { pathFind } from '../utils/dataUtils'
 import { toProperCase } from '../utils/textUtils'
-import { isEqual } from 'lodash'
 
 const getCustomStrings = (currentLocation?: any, keyFilter?: string) => {
 	const { repoFileData, currentLanguage } = getAppStore()

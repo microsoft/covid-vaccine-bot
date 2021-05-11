@@ -20,10 +20,10 @@ import { pathFind } from '../utils/dataUtils'
 import { toProperCase } from '../utils/textUtils'
 import LocationDetails from './LocationDetails'
 import LocationPhaseList from './LocationPhaseList'
+import LocationPhaseOverrideBar from './LocationPhaseOverrideBar'
 import LocationPhaseQualifiers from './LocationPhaseQualifiers'
 import LocationsBreadcrumbs from './LocationsBreadcrumbs'
 import LocationStates from './LocationsStates'
-import LocationPhaseOverrideBar from './LocationPhaseOverrideBar'
 
 import './Locations.scss'
 
@@ -49,8 +49,10 @@ export default observer(function Locations() {
 	const updateCurrentLocation = useCallback(() => {
 		if (currentLocation) {
 			const locationName =
-				getCustomString(currentLocation, currentLocation?.info?.content?.name) ||
-				toProperCase(currentLocation?.info?.content?.id)
+				getCustomString(
+					currentLocation,
+					currentLocation?.info?.content?.name
+				) || toProperCase(currentLocation?.info?.content?.id)
 			let newTitle = locationName
 
 			if (breadCrumbs.phase_overview) {
@@ -74,7 +76,7 @@ export default observer(function Locations() {
 			pathArray.splice(-1, 1)
 
 			const currLocation = pathFind(repoFileData, pathArray)
-			if(pathArray.length === 1 && !currLocation.dataLoaded){
+			if (pathArray.length === 1 && !currLocation.dataLoaded) {
 				loadAllLocationData(currLocation)
 			}
 
@@ -105,7 +107,6 @@ export default observer(function Locations() {
 		showPhaseComponent()
 	}, [showPhaseComponent, currentLocation])
 
-
 	return (
 		<div className="locationPageContainer">
 			<div className="bodyContainer">
@@ -124,7 +125,10 @@ export default observer(function Locations() {
 							<>
 								{currentLocation && (
 									<>
-										<LocationPhaseOverrideBar currentLocation={currentLocation} breadcrumbs={breadCrumbs} />
+										<LocationPhaseOverrideBar
+											currentLocation={currentLocation}
+											breadcrumbs={breadCrumbs}
+										/>
 										<LocationDetails currentLocation={currentLocation} />
 										<LocationPhaseList
 											currentLocation={currentLocation}

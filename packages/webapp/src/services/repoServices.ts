@@ -18,7 +18,7 @@ const createPath = (
 	obj: any,
 	pathInput: string,
 	value: any = undefined,
-	setNewValue: boolean = false
+	setNewValue = false
 ) => {
 	let path = pathInput.split('/')
 	let current = obj

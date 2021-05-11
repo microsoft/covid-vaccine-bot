@@ -1279,8 +1279,8 @@ const addKeyRecursive = (
 	key: string,
 	dataSource: any,
 	changeList: any,
-	isSms: boolean = false,
-	isVoice: boolean = false
+	isSms = false,
+	isVoice = false
 ) => {
 	if (dataSource.regions) {
 		for (const region in dataSource.regions) {
