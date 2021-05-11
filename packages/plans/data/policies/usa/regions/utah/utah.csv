@@ -1,25 +1,25 @@
-String ID,en-us,en-us-sms,en-us-voice,ko-kr,ko-kr-sms,ko-kr-voice,vi-vn,vi-vn-sms,vi-vn-voice,zh-cn,zh-cn-sms,zh-cn-voice,es-us,es-us-sms,es-us-voice,de-de,de-de-sms,de-de-voice,es-es,es-es-sms,es-es-voice,fi-fi,fi-fi-sms,fi-fi-voice,fr-fr,fr-fr-sms,fr-fr-voice,he-il,he-il-sms,he-il-voice,it-it,it-it-sms,it-it-voice,ja-jp,ja-jp-sms,ja-jp-voice,pt-pt,pt-pt-sms,pt-pt-voice,sv-se,sv-se-sms,sv-se-voice,th-th,th-th-sms,th-th-voice
-c19.eligibility.question/essential_worker.1a.ut.first_responder,"Are a non-EMS first responder?",,,,,,,,,,,,"¿Es un socorrista que no es del SME?",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-c19.link/scheduling.phone.bear_river,"1-800-456-7707",,,,,,,,,,,,"1-800-456-7707",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-c19.link/scheduling.phone.davis,"801-525-4900",,,,,,,,,,,,"801-525-4900",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-c19.link/scheduling.phone.salt_lake,"385-468-7468",,,,,,,,,,,,"385-468-7468",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-c19.link/scheduling.phone.san_juan,"435-587-3838",,,,,,,,,,,,"435-587-3838",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-c19.link/scheduling.phone.description.san_juan,"San Juan County Public Health Department ",,,,,,,,,,,,"Departamento de Salud Pública del Condado de San Juan ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-c19.link/scheduling.phone.description.salt_lake,"Salt Lake County Health Department",,,,,,,,,,,,"Departamento de Salud del Condado de Salt Lake",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-c19.link/scheduling.phone.southwest_utah,"435-986-2549",,,,,,,,,,,,"435-986-2549",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-c19.link/scheduling.phone.description.southwest_utah,"Southwest Utah Public Health Department",,,,,,,,,,,,"Departamento de Salud Pública del Suroeste de Utah",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-c19.link/scheduling.phone.summit,"435-333-0050",,,,,,,,,,,,"435-333-0050",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-c19.link/scheduling.phone.description.summit,"Summit County COVID-19 Hotline",,,,,,,,,,,,"Línea directa covid-19 del condado de Summit",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-c19.link/scheduling.phone.tooele,"435-277-2484",,,,,,,,,,,,"435-277-2484",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-c19.link/scheduling.phone.description.tooele,"Tooele County Health Department",,,,,,,,,,,,"Departamento de Salud del Condado de Tooele",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-c19.link/scheduling.phone.utah_county,"1-800-456-7707",,,,,,,,,,,,"1-800-456-7707",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-c19.link/scheduling.phone.wasatch,"435-657-3276",,,,,,,,,,,,"435-657-3276",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-c19.link/scheduling.phone.webermorgan,"(801) 399-7777",,,,,,,,,,,,"(801) 399-7777",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-c19.link/scheduling.phone.description.webermorgan,"Weber-Morgan Health Department",,,,,,,,,,,,"Departamento de Salud de Weber-Morgan",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-c19.link/scheduling.phone.description.wasatch,"Wasatch County Health Department",,,,,,,,,,,,"Departamento de Salud del Condado de Wasatch",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-c19.link/scheduling.phone.description.utah_county,"Utah County Health Department",,,,,,,,,,,,"Departamento de Salud del Condado de Utah",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-c19.link/scheduling.phone.tricounty,"435-247-1177",,,,,,,,,,,,"435-247-1177",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-c19.link/scheduling.phone.description.tricounty,"TriCounty Health Department",,,,,,,,,,,,"Departamento de Salud de TriCounty",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+String ID,en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th
+c19.eligibility.question/essential_worker.1a.ut.first_responder,"Are a non-EMS first responder?",,,,"¿Es un socorrista que no es del SME?",,,,,,,,,,
+c19.link/scheduling.phone.bear_river,"1-800-456-7707",,,,"1-800-456-7707",,,,,,,,,,
+c19.link/scheduling.phone.davis,"801-525-4900",,,,"801-525-4900",,,,,,,,,,
+c19.link/scheduling.phone.salt_lake,"385-468-7468",,,,"385-468-7468",,,,,,,,,,
+c19.link/scheduling.phone.san_juan,"435-587-3838",,,,"435-587-3838",,,,,,,,,,
+c19.link/scheduling.phone.description.san_juan,"San Juan County Public Health Department ",,,,"Departamento de Salud Pública del Condado de San Juan ",,,,,,,,,,
+c19.link/scheduling.phone.description.salt_lake,"Salt Lake County Health Department",,,,"Departamento de Salud del Condado de Salt Lake",,,,,,,,,,
+c19.link/scheduling.phone.southwest_utah,"435-986-2549",,,,"435-986-2549",,,,,,,,,,
+c19.link/scheduling.phone.description.southwest_utah,"Southwest Utah Public Health Department",,,,"Departamento de Salud Pública del Suroeste de Utah",,,,,,,,,,
+c19.link/scheduling.phone.summit,"435-333-0050",,,,"435-333-0050",,,,,,,,,,
+c19.link/scheduling.phone.description.summit,"Summit County COVID-19 Hotline",,,,"Línea directa covid-19 del condado de Summit",,,,,,,,,,
+c19.link/scheduling.phone.tooele,"435-277-2484",,,,"435-277-2484",,,,,,,,,,
+c19.link/scheduling.phone.description.tooele,"Tooele County Health Department",,,,"Departamento de Salud del Condado de Tooele",,,,,,,,,,
+c19.link/scheduling.phone.utah_county,"1-800-456-7707",,,,"1-800-456-7707",,,,,,,,,,
+c19.link/scheduling.phone.wasatch,"435-657-3276",,,,"435-657-3276",,,,,,,,,,
+c19.link/scheduling.phone.webermorgan,"(801) 399-7777",,,,"(801) 399-7777",,,,,,,,,,
+c19.link/scheduling.phone.description.webermorgan,"Weber-Morgan Health Department",,,,"Departamento de Salud de Weber-Morgan",,,,,,,,,,
+c19.link/scheduling.phone.description.wasatch,"Wasatch County Health Department",,,,"Departamento de Salud del Condado de Wasatch",,,,,,,,,,
+c19.link/scheduling.phone.description.utah_county,"Utah County Health Department",,,,"Departamento de Salud del Condado de Utah",,,,,,,,,,
+c19.link/scheduling.phone.tricounty,"435-247-1177",,,,"435-247-1177",,,,,,,,,,
+c19.link/scheduling.phone.description.tricounty,"TriCounty Health Department",,,,"Departamento de Salud de TriCounty",,,,,,,,,,
 c19.eligibility.moreinfo/age.are_you_age.ut.1a,"- Asplenia including splenectomy or a spleen dysfunction
 - Body Mass Index (BMI) of 30 or higher
 - Chronic heart disease (not hypertension) including chronic heart failure, ischaemic heart disease, and severe valve or congenital heart disease
@@ -35,7 +35,7 @@ c19.eligibility.moreinfo/age.are_you_age.ut.1a,"- Asplenia including splenectomy
 - Sickle cell disease
 - Severe chronic respiratory disease (other than asthma) including severe chronic obstructive pulmonary disease, fibrosing lung disease, bronchiectasis, or cystic fibrosis
 - Solid organ transplant recipient
-- Stroke and dementia (Alzheimer's, vascular, or frontotemporal)",,,,,,,,,,,,"- Asplenia incluyendo esplenectomía o disfunción del bazo
+- Stroke and dementia (Alzheimer's, vascular, or frontotemporal)",,,,"- Asplenia incluyendo esplenectomía o disfunción del bazo
 - Índice de Masa Corporal (IMC) de 30 o más
 - Cardiopatía crónica (no hipertensión) incluyendo insuficiencia cardíaca crónica, cardiopatía isquémica y válvula grave o cardiopatía congénita
 - Enfermedad renal crónica
@@ -50,4 +50,4 @@ c19.eligibility.moreinfo/age.are_you_age.ut.1a,"- Asplenia including splenectomy
 - Enfermedad de células falciformes
 - Enfermedad respiratoria crónica grave (aparte del asma) que incluye enfermedad pulmonar obstructiva crónica grave, enfermedad pulmonar fibrosa, bronquiectasis o fibrosis quística
 - Receptor de trasplante de órganos sólidos
-- Accidente cerebrovascular y demencia (Alzheimer, vascular o frontotemporal)",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+- Accidente cerebrovascular y demencia (Alzheimer, vascular o frontotemporal)",,,,,,,,,,
