@@ -94,6 +94,7 @@ orchestrator(initializeGitData, async () => {
 	setUserWorkingBranch(undefined)
 	clearLoadedPRData()
 	setIsDataStale(false)
+	setPendingChanges(false)
 
 	let resp = await repoServices('getBranches')
 	if (resp.ok === false) {
@@ -135,6 +136,7 @@ orchestrator(initializeGitData, async () => {
 
 orchestrator(loadBranch, async (message) => {
 	const { branch } = message
+	setPendingChanges(false)
 	setIsDataRefreshing(true)
 
 	const resp = await repoServices(
@@ -167,6 +169,7 @@ orchestrator(loadBranch, async (message) => {
 
 orchestrator(loadPR, async (message) => {
 	const { prNumber } = message
+	setPendingChanges(false)
 	setIsDataRefreshing(true)
 	if (prNumber) {
 		const prResp = await repoServices('getPullRequests', prNumber)
