@@ -1,7 +1,7 @@
-String ID,en-us,en-us-sms,en-us-voice,ko-kr,ko-kr-sms,ko-kr-voice,vi-vn,vi-vn-sms,vi-vn-voice,zh-cn,zh-cn-sms,zh-cn-voice,es-us,es-us-sms,es-us-voice,de-de,de-de-sms,de-de-voice,es-es,es-es-sms,es-es-voice,fi-fi,fi-fi-sms,fi-fi-voice,fr-fr,fr-fr-sms,fr-fr-voice,he-il,he-il-sms,he-il-voice,it-it,it-it-sms,it-it-voice,ja-jp,ja-jp-sms,ja-jp-voice,pt-pt,pt-pt-sms,pt-pt-voice,sv-se,sv-se-sms,sv-se-voice,th-th,th-th-sms,th-th-voice
-c19.eligibility.question/essential_worker.1b.sd,"Are you K-12 or college personnel, or a funeral service worker?",,,,,,,,,,,,"¿Es usted K-12 o personal universitario, o un trabajador del servicio funerario?",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-c19.eligibility.question/health.1b.sd,"Are you age 16+ with 2 or more high-risk medical conditions?",,,,,,,,,,,,"¿Tiene más de 16 años con 2 o más condiciones médicas de alto riesgo?",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-c19.eligibility.moreinfo/essential_worker.sd.1d,"This includes EMS, public health workers, law enforcement, correctional officers, teachers and other school/college staff, and funeral service workers.",,,,,,,,,,,,"Esto incluye al SME, a los trabajadores de salud pública, a las fuerzas del orden, a los funcionarios correccionales, a los maestros y a otros empleados de la escuela/universidad y a los trabajadores del servicio funerario.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+String ID,en-us,ko-kr,vi-vn,zh-cn,es-us,de-de,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,pt-pt,sv-se,th-th
+c19.eligibility.question/essential_worker.1b.sd,"Are you K-12 or college personnel, or a funeral service worker?",,,,"¿Es usted K-12 o personal universitario, o un trabajador del servicio funerario?",,,,,,,,,,
+c19.eligibility.question/health.1b.sd,"Are you age 16+ with 2 or more high-risk medical conditions?",,,,"¿Tiene más de 16 años con 2 o más condiciones médicas de alto riesgo?",,,,,,,,,,
+c19.eligibility.moreinfo/essential_worker.sd.1d,"This includes EMS, public health workers, law enforcement, correctional officers, teachers and other school/college staff, and funeral service workers.",,,,"Esto incluye al SME, a los trabajadores de salud pública, a las fuerzas del orden, a los funcionarios correccionales, a los maestros y a otros empleados de la escuela/universidad y a los trabajadores del servicio funerario.",,,,,,,,,,
 c19.eligibility.moreinfo/health.sd.1d,"This includes those undergoing dialysis, post-transplant, and active cancer, as well as those with medical conditions that put them at a higher risk for severe COVID-19 infection, including 
 
 Asthma (moderate-to-severe)
@@ -21,7 +21,7 @@ Pregnancy
 Pulmonary Fibrosis (having damaged or scarred lung tissues)
 Severe Obesity (BMI ≥ 40 kg/m2)
 Sickle Cell Disease
-Thalassemia (a type of blood disorder)",,,,,,,,,,,,"Esto incluye a aquellos sometidos a diálisis, post-trasplante y cáncer activo, así como aquellos con condiciones médicas que los ponen en un mayor riesgo de infección grave covid-19, incluyendo 
+Thalassemia (a type of blood disorder)",,,,"Esto incluye a aquellos sometidos a diálisis, post-trasplante y cáncer activo, así como aquellos con condiciones médicas que los ponen en un mayor riesgo de infección grave covid-19, incluyendo 
 
 Asma (de moderada a grave)
 Cáncer
@@ -40,6 +40,6 @@ Embarazo
 Fibrosis pulmonar (tener tejidos pulmonares dañados o marcados)
 Obesidad grave (IMC ≥ 40 kg/m2)
 Enfermedad de células falciformes
-Talasemia (un tipo de trastorno sanguíneo)",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-c19.eligibility.moreinfo/health.sd.1e,"This includes those undergoing dialysis, post-transplant, and active cancer, as well as those with medical conditions that put them at a higher risk for severe COVID-19 infection, including ",,,,,,,,,,,,"Esto incluye a aquellos sometidos a diálisis, post-trasplante y cáncer activo, así como aquellos con condiciones médicas que los ponen en un mayor riesgo de infección grave covid-19, incluyendo ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-c19.eligibility.moreinfo/essential_worker.sd.1e,"This includes EMS, public health workers, law enforcement, correctional officers, teachers and other school/college staff, funeral service workers, fire service personnel, and other public-facing workers in essential and critical infrastructure",,,,,,,,,,,,"Esto incluye al SME, a los trabajadores de salud pública, a las fuerzas del orden, a los funcionarios correccionales, a los maestros y a otros funcionarios de la escuela/universidad, a los trabajadores de los servicios funerarios, al personal del servicio de bomberos y a otros trabajadores con orientación pública en infraestructuras esenciales y críticas",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Talasemia (un tipo de trastorno sanguíneo)",,,,,,,,,,
+c19.eligibility.moreinfo/health.sd.1e,"This includes those undergoing dialysis, post-transplant, and active cancer, as well as those with medical conditions that put them at a higher risk for severe COVID-19 infection, including ",,,,"Esto incluye a aquellos sometidos a diálisis, post-trasplante y cáncer activo, así como aquellos con condiciones médicas que los ponen en un mayor riesgo de infección grave covid-19, incluyendo ",,,,,,,,,,
+c19.eligibility.moreinfo/essential_worker.sd.1e,"This includes EMS, public health workers, law enforcement, correctional officers, teachers and other school/college staff, funeral service workers, fire service personnel, and other public-facing workers in essential and critical infrastructure",,,,"Esto incluye al SME, a los trabajadores de salud pública, a las fuerzas del orden, a los funcionarios correccionales, a los maestros y a otros funcionarios de la escuela/universidad, a los trabajadores de los servicios funerarios, al personal del servicio de bomberos y a otros trabajadores con orientación pública en infraestructuras esenciales y críticas",,,,,,,,,,
