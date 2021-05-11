@@ -6,8 +6,11 @@
 		},
 		"eligibility": {
 			"url": "https://covid19.colorado.gov/for-coloradans/vaccine/vaccine-for-coloradans",
-			"scrapeQuery": ["section.col-sm-9"]
-		}
+			"scrapeQuery": [
+				"section.col-sm-9"
+			]
+		},
+		"worflow": {}
 	},
 	"activePhase": "2",
 	"phases": [
@@ -21,5 +24,6 @@
 				}
 			]
 		}
-	]
+	],
+	"noPhaseLabel": false
 }
