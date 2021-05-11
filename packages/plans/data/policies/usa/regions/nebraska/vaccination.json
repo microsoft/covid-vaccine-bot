@@ -3,7 +3,9 @@
 		"info": {
 			"text": "cdc/nebraska/state_link",
 			"url": "http://dhhs.ne.gov/Pages/COVID-19-Vaccine-Information.aspx",
-			"scrapeQuery": [".dhhs-page-content.dhhs-clearfix"]
+			"scrapeQuery": [
+				".dhhs-page-content.dhhs-clearfix"
+			]
 		},
 		"workflow": {
 			"url": "https://vaccinate.ne.gov/"
@@ -21,7 +23,8 @@
 		},
 		"eligibility": {
 			"url": "https://dhhs.ne.gov/Documents/COVID-19-Vaccine-Phase-1B-Prioritization.pdf"
-		}
+		},
+		"worflow": {}
 	},
 	"activePhase": "2b",
 	"phases": [
@@ -34,5 +37,6 @@
 				}
 			]
 		}
-	]
+	],
+	"noPhaseLabel": false
 }
