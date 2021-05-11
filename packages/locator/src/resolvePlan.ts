@@ -11,11 +11,16 @@ export function resolvePlan(
 ): PlanResult {
 	const countryRegion = getMatchingRegion(location, topLevelPlans)
 	if (!countryRegion) {
-		throw new Error(`Unable to locate country for location`)
+		throw new Error(
+			'Unable to locate country for location: ' + JSON.stringify(location)
+		)
 	}
 	const stateRegion = getMatchingRegion(location, countryRegion.regions || [])
 	if (!stateRegion) {
-		throw new Error(`Unable to locate state/province for location`)
+		throw new Error(
+			'Unable to locate state/province for location: ' +
+				JSON.stringify(location)
+		)
 	}
 
 	return resolvePlanInState(location, stateRegion)
