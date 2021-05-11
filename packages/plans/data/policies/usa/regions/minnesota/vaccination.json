@@ -6,7 +6,9 @@
 		},
 		"eligibility": {
 			"url": "https://mn.gov/covid19/vaccine/whos-getting-vaccinated/index.jsp",
-			"scrapeQuery": [".internal-norow-content"]
+			"scrapeQuery": [
+				".internal-norow-content"
+			]
 		},
 		"providers": {
 			"url": "https://mn.gov/covid19/vaccine/find-vaccine/index.jsp",
@@ -16,7 +18,8 @@
 			"url": "tel:883-431-2053",
 			"text": "c19.link/scheduling.phone.mn",
 			"description": "c19.link/scheduling.phone.description.mn"
-		}
+		},
+		"worflow": {}
 	},
 	"activePhase": "16_and_older",
 	"phases": [
@@ -30,5 +33,6 @@
 				}
 			]
 		}
-	]
+	],
+	"noPhaseLabel": false
 }
