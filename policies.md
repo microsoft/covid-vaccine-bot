@@ -1,6 +1,19 @@
-# Alabama
+# name.usa
 
-## Alabama Links
+## name.usa Links
+
+| link type | link |
+| --- | --- |
+
+
+
+## name.usa Active Phase (current)
+
+## name.usa Regions
+
+## name.usa::cdc/alabama/state_name
+
+### name.usa::cdc/alabama/state_name Links
 
 | link type | link |
 | --- | --- |
@@ -10,13 +23,13 @@
 | scheduling_phone | [1-855-566-5333](tel:1-855-566-5333) |
 
 
-## Alabama Active Phase (2)
+### name.usa::cdc/alabama/state_name Active Phase (2)
 
 * Are you at least 16 years of age?
 
-# Alaska
+## name.usa::cdc/alaska/state_name
 
-## Alaska Links
+### name.usa::cdc/alaska/state_name Links
 
 | link type | link |
 | --- | --- |
@@ -28,25 +41,14 @@
 | scheduling_phone | [907-646-3322](tel:907-646-3322) |
 
 
-## Alaska Active Phase (2)
+### name.usa::cdc/alaska/state_name Active Phase (2)
 
 * Are you at least 16 years of age?
 	* The COVID-19 vaccine is now available for anyone living or working in Alaska who is age 16 or older. (see [here](http://dhss.alaska.gov/dph/epi/id/pages/COVID-19/vaccine.aspx))
 
-## Alaska Regions
+## name.usa::cdc/american_samoa/state_name
 
-## Alaska::Anchorage
-
-### Alaska::Anchorage Links
-
-| link type | link |
-| --- | --- |
-| info | [Anchorage COVID-19 Vaccination](https://anchoragecovidvaccine.org/) |
-
-
-# American Samoa
-
-## American Samoa Links
+### name.usa::cdc/american_samoa/state_name Links
 
 | link type | link |
 | --- | --- |
@@ -55,13 +57,13 @@
 | scheduling_phone | [684-633-5871](tel: 684-633-5871) |
 
 
-## American Samoa Active Phase (18_and_older)
+### name.usa::cdc/american_samoa/state_name Active Phase (18_and_older)
 
 * Are you at least 18 years of age?
 
-# Arizona
+## name.usa::cdc/arizona/state_name
 
-## Arizona Links
+### name.usa::cdc/arizona/state_name Links
 
 | link type | link |
 | --- | --- |
@@ -72,200 +74,26 @@
 | scheduling_phone | [602-542-1000](tel:602-542-1000) |
 
 
-## Arizona Active Phase (1b_16_and_older)
+### name.usa::cdc/arizona/state_name Active Phase (1b_16_and_older)
 
 * Are you at least 16 years of age?
 
-## Arizona Regions
+## name.usa::cdc/arkansas/state_name
 
-## Arizona::Apache
-
-### Arizona::Apache Links
-
-| link type | link |
-| --- | --- |
-| info | [Apache and Navajo County COVID-19 Info](https://311info.net/covid-19/) |
-
-
-### Arizona::Apache Active Phase (18_and_older)
-
-## Arizona::Cochise
-
-### Arizona::Cochise Links
-
-| link type | link |
-| --- | --- |
-| info | [Cochise County COVID-19 Vaccination Info](https://covid-cochisehealth.hub.arcgis.com/pages/vaccines) |
-
-
-### Arizona::Cochise Active Phase (18_and_older)
-
-## Arizona::Coconino
-
-### Arizona::Coconino Links
-
-| link type | link |
-| --- | --- |
-| info | [Coconino County COVID-19 Vaccine Info](https://www.coconino.az.gov/covid19vaccine) |
-
-
-### Arizona::Coconino Active Phase (18_and_older)
-
-## Arizona::Gila
-
-### Arizona::Gila Links
-
-| link type | link |
-| --- | --- |
-| info | [Gila County COVID-19 Info](https://www.gilacountyaz.gov/government/health_and_emergency_services/health_services/vaccination_information.php) |
-
-
-### Arizona::Gila Active Phase (1b_16_and_older)
-
-## Arizona::Graham
-
-### Arizona::Graham Links
-
-| link type | link |
-| --- | --- |
-| info | [Graham County COVID-19 Vaccination Info](https://www.graham.az.gov/AlertCenter.aspx?AID=Graham-County-COVID19-Vaccine-Informatio-11) |
-| registration | [Graham County COVID-19 Vaccination Registration](https://www.graham.az.gov/FormCenter/COVID19-21/COVID19-Vaccine-Registration-Form-76) |
-
-
-### Arizona::Graham Active Phase (18_and_older)
-
-## Arizona::Greenlee
-
-### Arizona::Greenlee Links
-
-| link type | link |
-| --- | --- |
-| info | [Greenlee County Health & County Services](https://greenlee.az.gov/departments/health-county-services/) |
-| registration | [Greenlee County Vaccination Registration](https://www.gilahealth.com/covid-19/covid-19-vaccine) |
-
-
-### Arizona::Greenlee Active Phase (1b_16_and_older)
-
-## Arizona::La Paz
-
-### Arizona::La Paz Links
-
-| link type | link |
-| --- | --- |
-| info | [La Paz County Health Department](https://www.lpchd.com/) |
-| scheduling_phone | [La Paz County Vaccination Hotline](tel:928-503-5763) |
-
-
-### Arizona::La Paz Active Phase (18_and_older)
-
-## Arizona::Maricopa
-
-### Arizona::Maricopa Links
-
-| link type | link |
-| --- | --- |
-| info | [Maricopa County COVID-19 Site](https://www.maricopa.gov/5641/COVID-19-Vaccine) |
-
-
-### Arizona::Maricopa Active Phase (1b_16_and_older)
-
-## Arizona::Mohave
-
-### Arizona::Mohave Links
-
-| link type | link |
-| --- | --- |
-| info | [Mojave County COVID-19 Vaccine Statu](https://covid-19-vaccine-mohave.hub.arcgis.com/) |
-| providers | [Mojave County Vaccination Providers](https://www.mohavecounty.us/ContentPage.aspx?id=127&cid=1444&page=2&rid=2230) |
-
-
-### Arizona::Mohave Active Phase (1b_16_and_older)
-
-## Arizona::Navajo
-
-### Arizona::Navajo Links
-
-| link type | link |
-| --- | --- |
-| info | [Apache and Navajo County COVID-19 Info](https://311info.net/covid-19/) |
-
-
-### Arizona::Navajo Active Phase (1b_16_and_older)
-
-## Arizona::Pima
-
-### Arizona::Pima Links
-
-| link type | link |
-| --- | --- |
-| info | [Pima County COVID-19 Vaccine Info & Distribution](https://webcms.pima.gov/cms/One.aspx?portalId=169&pageId=669257) |
-| registration | [Pima County COVID-19 Vaccination Registration](https://webcms.pima.gov/cms/One.aspx?portalId=169&pageId=690372) |
-
-
-### Arizona::Pima Active Phase (1b_16_and_older)
-
-## Arizona::Pinal
-
-### Arizona::Pinal Links
-
-| link type | link |
-| --- | --- |
-| praviders | [Pinal County COVID-19 Providers](https://www.pinalcountyaz.gov/publichealth/CoronaVirus/Pages/VaccineLocations.aspx) |
-
-
-### Arizona::Pinal Active Phase (18_and_older)
-
-## Arizona::Santa Cruz
-
-### Arizona::Santa Cruz Links
-
-| link type | link |
-| --- | --- |
-| info | [Santa Cruz COVID-19 Info](https://www.santacruzcountyaz.gov/732/COVID-19-Novel-Coronavirus) |
-| registration | [Santa Cruz County COVID-19 Vaccination Registration](https://survey123.arcgis.com/share/b0c6ce208fc94cf4a30b173810caab53) |
-
-
-### Arizona::Santa Cruz Active Phase (1b_16_and_older)
-
-## Arizona::Yavapai
-
-### Arizona::Yavapai Links
-
-| link type | link |
-| --- | --- |
-| info | [Yavapai County COVID-19 Vaccine Status](https://www.yavapai.us/chs/Home/COVID-19/Vaccine) |
-| scheduling_phone | [Yavapai County COVID-19 Hotline](tel:928-442-5103) |
-
-
-### Arizona::Yavapai Active Phase (18_and_older)
-
-## Arizona::Yuma
-
-### Arizona::Yuma Links
-
-| link type | link |
-| --- | --- |
-| info | [Yuma County COVID-19 Vaccination Info](https://www.yumacountyaz.gov/government/health-district/divisions/emergency-preparedness-program/coronavirus-2019-covid-19-yuma-county-updates/covid-19-vaccine-information/who-can-get-vaccinated-and-when) |
-
-
-### Arizona::Yuma Active Phase (1b_16_and_older)
-
-# Arkansas
-
-## Arkansas Links
+### name.usa::cdc/arkansas/state_name Links
 
 | link type | link |
 | --- | --- |
 | info | [Arkansas Department of Health](https://www.healthy.arkansas.gov/programs-services/topics/covid-19-vaccination-plan) |
 
 
-## Arkansas Active Phase (16_and_older)
+### name.usa::cdc/arkansas/state_name Active Phase (16_and_older)
 
 * Are you at least 16 years of age?
 
-# California
+## name.usa::cdc/california/state_name
 
-## California Links
+### name.usa::cdc/california/state_name Links
 
 | link type | link |
 | --- | --- |
@@ -274,203 +102,14 @@
 | scheduling_phone | [(833) 422-4255](tel:(833) 422-4255) |
 
 
-## California Active Phase (16)
+### name.usa::cdc/california/state_name Active Phase (16)
 
 * Are you at least 16 years of age?
 	* People eligible for the vaccine now are people 16 years and older. However, not all sites will have vaccines (Pfizer) for people under 18. Check when you book.
 
-## California Regions
+## name.usa::cdc/colorado/state_name
 
-## California::Alameda
-
-### California::Alameda Links
-
-| link type | link |
-| --- | --- |
-
-
-
-### California::Alameda Active Phase (16)
-
-## California::Amador
-
-### California::Amador Links
-
-| link type | link |
-| --- | --- |
-| info | [California Department of Public Health](https://www.amadorgov.org/services/public-health/covid-19/vaccine-information) |
-
-
-### California::Amador Active Phase (18_and_older)
-
-## California::Butte
-
-### California::Butte Links
-
-| link type | link |
-| --- | --- |
-| info | [California Department of Public Health](http://www.buttecounty.net/ph/COVID19/vaccine) |
-
-
-### California::Butte Active Phase (16)
-
-## California::Contra Costa
-
-### California::Contra Costa Links
-
-| link type | link |
-| --- | --- |
-
-
-
-### California::Contra Costa Active Phase (16)
-
-## California::Fresno
-
-### California::Fresno Links
-
-| link type | link |
-| --- | --- |
-
-
-
-### California::Fresno Active Phase (16)
-
-## California::Humboldt
-
-### California::Humboldt Links
-
-| link type | link |
-| --- | --- |
-
-
-
-### California::Humboldt Active Phase (16)
-
-## California::Los Angeles
-
-### California::Los Angeles Links
-
-| link type | link |
-| --- | --- |
-
-
-
-### California::Los Angeles Active Phase (16)
-
-## California::Placer
-
-### California::Placer Links
-
-| link type | link |
-| --- | --- |
-| info | [California Department of Public Health](https://www.placer.ca.gov/coronavirus/vaccine) |
-
-
-### California::Placer Active Phase (16)
-
-## California::San Francisco
-
-### California::San Francisco Links
-
-| link type | link |
-| --- | --- |
-
-
-
-### California::San Francisco Active Phase (16)
-
-## California::San Francisco County
-
-### California::San Francisco County Links
-
-| link type | link |
-| --- | --- |
-
-
-
-### California::San Francisco County Active Phase (16)
-
-## California::Santa Clara
-
-### California::Santa Clara Links
-
-| link type | link |
-| --- | --- |
-
-
-
-### California::Santa Clara Active Phase (16)
-
-## California::Solano
-
-### California::Solano Links
-
-| link type | link |
-| --- | --- |
-| info | [California Department of Public Health](https://www.solanocounty.com/depts/ph/coronavirus_links/covid_19_vaccines.asp) |
-
-
-### California::Solano Active Phase (16)
-
-## California::Stanislaus
-
-### California::Stanislaus Links
-
-| link type | link |
-| --- | --- |
-| info | [California Department of Public Health](http://schsa.org/coronavirus/vaccine/) |
-
-
-### California::Stanislaus Active Phase (16)
-
-## California::Sutter
-
-### California::Sutter Links
-
-| link type | link |
-| --- | --- |
-| info | [California Department of Public Health](https://www.suttercounty.org/doc/coronavirus/coronavirusVaccine) |
-
-
-### California::Sutter Active Phase (18_and_older)
-
-## California::Tuolumne
-
-### California::Tuolumne Links
-
-| link type | link |
-| --- | --- |
-| info | [California Department of Public Health](https://www.tuolumnecounty.ca.gov/1317/COVID-Vaccine) |
-
-
-### California::Tuolumne Active Phase (16)
-
-## California::Yolo
-
-### California::Yolo Links
-
-| link type | link |
-| --- | --- |
-| info | [California Department of Public Health](https://www.yolocounty.org/government/general-government-departments/health-human-services/adults/communicable-disease-investigation-and-control/novel-coronavirus-2019/coronavirus-vaccine) |
-
-
-### California::Yolo Active Phase (16)
-
-## California::Yuba
-
-### California::Yuba Links
-
-| link type | link |
-| --- | --- |
-| info | [California Department of Public Health](https://www.yuba.org/coronavirus/VaccineEligibility.php) |
-
-
-### California::Yuba Active Phase (18_and_older)
-
-# Colorado
-
-## Colorado Links
+### name.usa::cdc/colorado/state_name Links
 
 | link type | link |
 | --- | --- |
@@ -478,14 +117,14 @@
 | eligibility | [https://covid19.colorado.gov/for-coloradans/vaccine/vaccine-for-coloradans](https://covid19.colorado.gov/for-coloradans/vaccine/vaccine-for-coloradans) |
 
 
-## Colorado Active Phase (2)
+### name.usa::cdc/colorado/state_name Active Phase (2)
 
 * Are you at least 16 years of age?
 	* Any Coloradan who is at least 16-years-old is now eligible to the Pfizer vaccine; any Coloradan over 18-years-old can receive either the Modern or the Johnson and Johnson and vaccine.
 
-# Connecticut
+## name.usa::cdc/connecticut/state_name
 
-## Connecticut Links
+### name.usa::cdc/connecticut/state_name Links
 
 | link type | link |
 | --- | --- |
@@ -495,14 +134,14 @@
 | scheduling_phone | [877-918-2224](tel:877-918-2224) |
 
 
-## Connecticut Active Phase (16_and_older)
+### name.usa::cdc/connecticut/state_name Active Phase (16_and_older)
 
 * Are you at least 16 years of age?
 	* Beginning April 1st , all individuals 16 years of age and older who live, work, or attend school in Connecticut are eligible to receive vaccine.
 
-# Delaware
+## name.usa::cdc/delaware/state_name
 
-## Delaware Links
+### name.usa::cdc/delaware/state_name Links
 
 | link type | link |
 | --- | --- |
@@ -514,7 +153,7 @@
 | scheduling_phone | [1-833-643-1715](tel:1-833-643-1715) |
 
 
-## Delaware Active Phase (2)
+### name.usa::cdc/delaware/state_name Active Phase (2)
 
 * Are you at least 16 years of age?
 	* - All persons 16+ may now sign up for the state waitlist or through a pharmacy site.
@@ -522,9 +161,9 @@
 - Persons 16 & 17 years old are only eligible to receive the Pfizer vaccine - check the vaccine being offered at each site closely.
 - If you have difficulty accessing a computer or need accommodations because of a disability, contact the DPH Vaccine Call Center at 1-833-643-1715 or email Vaccine@delaware.gov.  The Call Center may also connect you to the DHSS Aging and Disability Resource Center. (see [here](https://coronavirus.delaware.gov/vaccine/))
 
-# District of Columbia
+## name.usa::cdc/district_of_columbia/state_name
 
-## District of Columbia Links
+### name.usa::cdc/district_of_columbia/state_name Links
 
 | link type | link |
 | --- | --- |
@@ -534,33 +173,33 @@
 | eligibility | [https://coronavirus.dc.gov/sites/default/files/dc/sites/coronavirus/release_content/attachments/Situational-Update-Presentation_04-12-21.pdf](https://coronavirus.dc.gov/sites/default/files/dc/sites/coronavirus/release_content/attachments/Situational-Update-Presentation_04-12-21.pdf) |
 
 
-## District of Columbia Active Phase (16_and_up)
+### name.usa::cdc/district_of_columbia/state_name Active Phase (16_and_up)
 
 * Are you at least 16 years of age?
 
-# Federated States of Micronesia
+## name.usa::cdc/federated_states_of_micronesia/state_name
 
-## Federated States of Micronesia Links
+### name.usa::cdc/federated_states_of_micronesia/state_name Links
 
 | link type | link |
 | --- | --- |
 | info | [Federated States of Micronesia National Government, Department of Health and Social Affairs](https://www.fsmgov.org/index.html) |
 
 
-## Federated States of Micronesia Active Phase (1a)
+### name.usa::cdc/federated_states_of_micronesia/state_name Active Phase (1a)
 
 * Are you at least 18 years of age?
 
-# Florida
+## name.usa::cdc/florida/state_name
 
-## Florida Links
+### name.usa::cdc/florida/state_name Links
 
 | link type | link |
 | --- | --- |
 | info | [Florida Department of Health](https://floridahealthcovid19.gov/covid-19-vaccines-in-florida/) |
 
 
-## Florida Active Phase (1a)
+### name.usa::cdc/florida/state_name Active Phase (1a)
 
 * Are you at least 16 years of age?
 	* 
@@ -569,9 +208,9 @@ As of Monday, April 5, all Florida residents  are eligible to receive any COVID-
 
 PERSONS AGES 16-17:  The Pfizer vaccine is authorized for persons age 16 and up. The Moderna and Janssen (Johnson and Johnson) vaccines are authorized for persons age 18 and up. All individuals under the age of 18 receiving a vaccine must be accompanied by a guardian and complete the COVID-19 vaccine screening and consent form. To download a copy of the form, click the following link: (see [here](https://floridahealthcovid19.gov/wp-content/uploads/2021/04/doh-covid-vaccine-screening-consent-form.pdf))
 
-# Georgia
+## name.usa::cdc/georgia/state_name
 
-## Georgia Links
+### name.usa::cdc/georgia/state_name Links
 
 | link type | link |
 | --- | --- |
@@ -580,51 +219,29 @@ PERSONS AGES 16-17:  The Pfizer vaccine is authorized for persons age 16 and up.
 | scheduling_phone | [(888) 457-0186](tel:(888) 457-0186) |
 
 
-## Georgia Active Phase (16_and_older)
+### name.usa::cdc/georgia/state_name Active Phase (16_and_older)
 
 * Are you at least 16 years of age?
 
-# Guam
+## name.usa::cdc/guam/state_name
 
-## Guam Links
+### name.usa::cdc/guam/state_name Links
 
 | link type | link |
 | --- | --- |
 | info | [Guam Department of Public Health and Social Services, Division of Public Health](https://dphss.guam.gov/) |
 
 
-## Guam Active Phase (16_and_older)
+### name.usa::cdc/guam/state_name Active Phase (16_and_older)
 
 * Are you at least 16 years of age?
 	* Minors may only receive the Pfizer-BioNTech COVID-19 vaccine as the Moderna and Johnson & Johnson/Janssen (J&J/Janssen) vaccines are not recommended for individuals below the age of 18. Minors must be accompanied by a parent or legal guardian and provide government-issued identification to validate age.
 
 Upon arrival at vaccination events, individuals 60 years and older may be sent to the front of the line.
 
-## Guam Regions
+## name.usa::cdc/hawaii/state_name
 
-## Guam::Agat
-
-### Guam::Agat Links
-
-| link type | link |
-| --- | --- |
-| eligibility | [https://dphss.guam.gov/wp-content/uploads/2021/03/Agat_2.jpg](https://dphss.guam.gov/wp-content/uploads/2021/03/Agat_2.jpg) |
-| scheduling_phone | [565-2524](tel:565-2524) |
-
-
-## Guam::Mangilao
-
-### Guam::Mangilao Links
-
-| link type | link |
-| --- | --- |
-| eligibility | [https://dphss.guam.gov/wp-content/uploads/2021/03/Mangilao_2.jpg](https://dphss.guam.gov/wp-content/uploads/2021/03/Mangilao_2.jpg) |
-| scheduling_phone | [734-2163](tel:734-2163) |
-
-
-# Hawaii
-
-## Hawaii Links
+### name.usa::cdc/hawaii/state_name Links
 
 | link type | link |
 | --- | --- |
@@ -634,572 +251,46 @@ Upon arrival at vaccination events, individuals 60 years and older may be sent t
 | scheduling_phone | [800-300-1120](tel:800-300-1120) |
 
 
-## Hawaii Active Phase (2)
+### name.usa::cdc/hawaii/state_name Active Phase (2)
 
 * Are you at least 16 years of age?
 	* Phase 2 includes:
 - Persons 16 years and older (Pfizer).
 - Persons 18 years and older (Moderna and Johnson & Johnson).
 
-## Hawaii Regions
+## name.usa::cdc/idaho/state_name
 
-## Hawaii::Hawaii Island
-
-### Hawaii::Hawaii Island Links
-
-| link type | link |
-| --- | --- |
-| info | [Hawaii State Department of Health](https://coronavirus-response-county-of-hawaii-hawaiicountygis.hub.arcgis.com/pages/vaccine-information) |
-| providers | [View locations providing vaccines](https://www.hilomedicalcenter.org/) |
-
-
-### Hawaii::Hawaii Island Active Phase (2)
-
-## Hawaii::Kauai
-
-### Hawaii::Kauai Links
-
-| link type | link |
-| --- | --- |
-
-
-
-## Hawaii::Lanai
-
-### Hawaii::Lanai Links
-
-| link type | link |
-| --- | --- |
-
-
-
-## Hawaii::Maui
-
-### Hawaii::Maui Links
-
-| link type | link |
-| --- | --- |
-
-
-
-## Hawaii::Molokai
-
-### Hawaii::Molokai Links
-
-| link type | link |
-| --- | --- |
-
-
-
-## Hawaii::Oahu
-
-### Hawaii::Oahu Links
-
-| link type | link |
-| --- | --- |
-
-
-
-# Idaho
-
-## Idaho Links
+### name.usa::cdc/idaho/state_name Links
 
 | link type | link |
 | --- | --- |
 | eligibility | [https://healthandwelfare.idaho.gov/covid-19-vaccination](https://healthandwelfare.idaho.gov/covid-19-vaccination) |
 | info | [Idaho Department of Health and Welfare](https://coronavirus.idaho.gov/covid-19-vaccine/) |
 | scheduling | [Schedule a Vaccination](https://covidvaccine.idaho.gov/) |
-| scheduling_phone | [Scheduling Hotline](tel:) |
 
 
-## Idaho Active Phase (april_5)
+### name.usa::cdc/idaho/state_name Active Phase (april_5)
 
 * Are you at least 16 years of age?
 
-## Idaho Regions
+## name.usa::cdc/illinois/state_name
 
-## Idaho::Ada
-
-### Idaho::Ada Links
-
-| link type | link |
-| --- | --- |
-| info | [Idaho Department of Health and Welfare](https://www.cdh.idaho.gov/covid-vaccine.php) |
-| scheduling_phone | [208-321-2222](tel:208-321-2222) |
-
-
-## Idaho::Adams
-
-### Idaho::Adams Links
-
-| link type | link |
-| --- | --- |
-| info | [Idaho Department of Health and Welfare](https://phd3.idaho.gov/covid19/#Vaccine) |
-| scheduling_phone | [208-455-5411](tel:208-455-5411) |
-
-
-## Idaho::Bannock
-
-### Idaho::Bannock Links
-
-| link type | link |
-| --- | --- |
-| info | [Idaho Department of Health and Welfare](https://www.siphidaho.org/covid19-vaccine-clinics.php) |
-| scheduling_phone | [208-234-5875](tel:208-234-5875) |
-
-
-## Idaho::Bear Lake
-
-### Idaho::Bear Lake Links
-
-| link type | link |
-| --- | --- |
-| info | [Idaho Department of Health and Welfare](https://www.siphidaho.org/covid19-vaccine-clinics.php) |
-| scheduling_phone | [208-234-5875](tel:208-234-5875) |
-
-
-## Idaho::Benewah
-
-### Idaho::Benewah Links
-
-| link type | link |
-| --- | --- |
-| info | [Idaho Department of Health and Welfare](https://panhandlehealthdistrict.org/covid-19/vaccine) |
-
-
-## Idaho::Bingham
-
-### Idaho::Bingham Links
-
-| link type | link |
-| --- | --- |
-| info | [Idaho Department of Health and Welfare](https://www.siphidaho.org/covid19-vaccine-clinics.php) |
-| scheduling_phone | [208-234-5875](tel:208-234-5875) |
-
-
-## Idaho::Blaine
-
-### Idaho::Blaine Links
-
-| link type | link |
-| --- | --- |
-| info | [Idaho Department of Health and Welfare](www.phd5.idaho.gov/covid-vaccine/) |
-| scheduling_phone | [208-737-1138](tel:208-737-1138) |
-
-
-## Idaho::Boise
-
-### Idaho::Boise Links
-
-| link type | link |
-| --- | --- |
-| info | [Idaho Department of Health and Welfare](https://www.cdh.idaho.gov/covid-vaccine.php) |
-| scheduling_phone | [208-321-2222](tel:208-321-2222) |
-
-
-## Idaho::Bonner
-
-### Idaho::Bonner Links
-
-| link type | link |
-| --- | --- |
-| info | [Idaho Department of Health and Welfare](https://panhandlehealthdistrict.org/covid-19/vaccine) |
-
-
-## Idaho::Bonneville
-
-### Idaho::Bonneville Links
-
-| link type | link |
-| --- | --- |
-| info | [Idaho Department of Health and Welfare](www.eiph.idaho.gov) |
-
-
-## Idaho::Boundary
-
-### Idaho::Boundary Links
-
-| link type | link |
-| --- | --- |
-| info | [Idaho Department of Health and Welfare](https://panhandlehealthdistrict.org/covid-19/vaccine) |
-
-
-## Idaho::Butte
-
-### Idaho::Butte Links
-
-| link type | link |
-| --- | --- |
-| info | [Idaho Department of Health and Welfare](https://www.siphidaho.org/covid19-vaccine-clinics.php) |
-| scheduling_phone | [208-234-5875](tel:208-234-5875) |
-
-
-## Idaho::Camas
-
-### Idaho::Camas Links
-
-| link type | link |
-| --- | --- |
-| info | [Idaho Department of Health and Welfare](www.phd5.idaho.gov/covid-vaccine/) |
-| scheduling_phone | [208-737-1138](tel:208-737-1138) |
-
-
-## Idaho::Canyon
-
-### Idaho::Canyon Links
-
-| link type | link |
-| --- | --- |
-| info | [Idaho Department of Health and Welfare](https://phd3.idaho.gov/covid19/#Vaccine) |
-| scheduling_phone | [208-455-5411](tel:208-455-5411) |
-
-
-## Idaho::Caribou
-
-### Idaho::Caribou Links
-
-| link type | link |
-| --- | --- |
-| info | [Idaho Department of Health and Welfare](https://www.siphidaho.org/covid19-vaccine-clinics.php) |
-| scheduling_phone | [208-234-5875](tel:208-234-5875) |
-
-
-## Idaho::Cassia
-
-### Idaho::Cassia Links
-
-| link type | link |
-| --- | --- |
-| info | [Idaho Department of Health and Welfare](www.phd5.idaho.gov/covid-vaccine/) |
-| scheduling_phone | [208-737-1138](tel:208-737-1138) |
-
-
-## Idaho::Clark
-
-### Idaho::Clark Links
-
-| link type | link |
-| --- | --- |
-| info | [Idaho Department of Health and Welfare](www.eiph.idaho.gov) |
-
-
-## Idaho::Clearwater
-
-### Idaho::Clearwater Links
-
-| link type | link |
-| --- | --- |
-| info | [Idaho Department of Health and Welfare](www.idahopublichealth.com) |
-| scheduling_phone | [866-736-6632](tel:866-736-6632) |
-
-
-## Idaho::Custer
-
-### Idaho::Custer Links
-
-| link type | link |
-| --- | --- |
-| info | [Idaho Department of Health and Welfare](www.eiph.idaho.gov) |
-
-
-## Idaho::Elmore
-
-### Idaho::Elmore Links
-
-| link type | link |
-| --- | --- |
-| info | [Idaho Department of Health and Welfare](https://www.cdh.idaho.gov/covid-vaccine.php) |
-| scheduling_phone | [208-321-2222](tel:208-321-2222) |
-
-
-## Idaho::Franklin
-
-### Idaho::Franklin Links
-
-| link type | link |
-| --- | --- |
-| info | [Idaho Department of Health and Welfare](https://www.siphidaho.org/covid19-vaccine-clinics.php) |
-| scheduling_phone | [208-234-5875](tel:208-234-5875) |
-
-
-## Idaho::Fremont
-
-### Idaho::Fremont Links
-
-| link type | link |
-| --- | --- |
-| info | [Idaho Department of Health and Welfare](www.eiph.idaho.gov) |
-
-
-## Idaho::Gem
-
-### Idaho::Gem Links
-
-| link type | link |
-| --- | --- |
-| info | [Idaho Department of Health and Welfare](https://phd3.idaho.gov/covid19/#Vaccine) |
-| scheduling_phone | [208-455-5411](tel:208-455-5411) |
-
-
-## Idaho::Gooding
-
-### Idaho::Gooding Links
-
-| link type | link |
-| --- | --- |
-| info | [Idaho Department of Health and Welfare](www.phd5.idaho.gov/covid-vaccine/) |
-| scheduling_phone | [208-737-1138](tel:208-737-1138) |
-
-
-## Idaho::Idaho
-
-### Idaho::Idaho Links
-
-| link type | link |
-| --- | --- |
-| info | [Idaho Department of Health and Welfare](www.idahopublichealth.com) |
-| scheduling_phone | [866-736-6632](tel:866-736-6632) |
-
-
-## Idaho::Jefferson
-
-### Idaho::Jefferson Links
-
-| link type | link |
-| --- | --- |
-| info | [Idaho Department of Health and Welfare](www.eiph.idaho.gov) |
-
-
-## Idaho::Jerome
-
-### Idaho::Jerome Links
-
-| link type | link |
-| --- | --- |
-| info | [Idaho Department of Health and Welfare](www.phd5.idaho.gov/covid-vaccine/) |
-| scheduling_phone | [208-737-1138](tel:208-737-1138) |
-
-
-## Idaho::Kootenai
-
-### Idaho::Kootenai Links
-
-| link type | link |
-| --- | --- |
-| info | [Idaho Department of Health and Welfare](https://panhandlehealthdistrict.org/covid-19/vaccine) |
-
-
-## Idaho::Latah
-
-### Idaho::Latah Links
-
-| link type | link |
-| --- | --- |
-| info | [Idaho Department of Health and Welfare](www.idahopublichealth.com) |
-| scheduling_phone | [866-736-6632](tel:866-736-6632) |
-
-
-## Idaho::Lemhi
-
-### Idaho::Lemhi Links
-
-| link type | link |
-| --- | --- |
-| info | [Idaho Department of Health and Welfare](www.eiph.idaho.gov) |
-
-
-## Idaho::Lewis
-
-### Idaho::Lewis Links
-
-| link type | link |
-| --- | --- |
-| info | [Idaho Department of Health and Welfare](www.idahopublichealth.com) |
-| scheduling_phone | [866-736-6632](tel:866-736-6632) |
-
-
-## Idaho::Lincoln
-
-### Idaho::Lincoln Links
-
-| link type | link |
-| --- | --- |
-| info | [Idaho Department of Health and Welfare](www.phd5.idaho.gov/covid-vaccine/) |
-| scheduling_phone | [208-737-1138](tel:208-737-1138) |
-
-
-## Idaho::Madison
-
-### Idaho::Madison Links
-
-| link type | link |
-| --- | --- |
-| info | [Idaho Department of Health and Welfare](www.eiph.idaho.gov) |
-
-
-## Idaho::Minidoka
-
-### Idaho::Minidoka Links
-
-| link type | link |
-| --- | --- |
-| info | [Idaho Department of Health and Welfare](www.phd5.idaho.gov/covid-vaccine/) |
-| scheduling_phone | [208-737-1138](tel:208-737-1138) |
-
-
-## Idaho::Nez Perce
-
-### Idaho::Nez Perce Links
-
-| link type | link |
-| --- | --- |
-| info | [Idaho Department of Health and Welfare](www.idahopublichealth.com) |
-| scheduling_phone | [866-736-6632](tel:866-736-6632) |
-
-
-## Idaho::Oneida
-
-### Idaho::Oneida Links
-
-| link type | link |
-| --- | --- |
-| info | [Idaho Department of Health and Welfare](https://www.siphidaho.org/covid19-vaccine-clinics.php) |
-| scheduling_phone | [208-234-5875](tel:208-234-5875) |
-
-
-## Idaho::Owyhee
-
-### Idaho::Owyhee Links
-
-| link type | link |
-| --- | --- |
-| info | [Idaho Department of Health and Welfare](https://phd3.idaho.gov/covid19/#Vaccine) |
-| scheduling_phone | [208-455-5411](tel:208-455-5411) |
-
-
-## Idaho::Payette
-
-### Idaho::Payette Links
-
-| link type | link |
-| --- | --- |
-| info | [Idaho Department of Health and Welfare](https://phd3.idaho.gov/covid19/#Vaccine) |
-| scheduling_phone | [208-455-5411](tel:208-455-5411) |
-
-
-## Idaho::Power
-
-### Idaho::Power Links
-
-| link type | link |
-| --- | --- |
-| info | [Idaho Department of Health and Welfare](https://www.siphidaho.org/covid19-vaccine-clinics.php) |
-| scheduling_phone | [208-234-5875](tel:208-234-5875) |
-
-
-## Idaho::Shoshone
-
-### Idaho::Shoshone Links
-
-| link type | link |
-| --- | --- |
-| info | [Idaho Department of Health and Welfare](https://panhandlehealthdistrict.org/covid-19/vaccine) |
-
-
-## Idaho::Teton
-
-### Idaho::Teton Links
-
-| link type | link |
-| --- | --- |
-| info | [Idaho Department of Health and Welfare](www.eiph.idaho.gov) |
-
-
-## Idaho::Twin Falls
-
-### Idaho::Twin Falls Links
-
-| link type | link |
-| --- | --- |
-| info | [Idaho Department of Health and Welfare](www.phd5.idaho.gov/covid-vaccine/) |
-| scheduling_phone | [208-737-1138](tel:208-737-1138) |
-
-
-## Idaho::Valley
-
-### Idaho::Valley Links
-
-| link type | link |
-| --- | --- |
-| info | [Idaho Department of Health and Welfare](https://www.cdh.idaho.gov/covid-vaccine.php) |
-| scheduling_phone | [208-321-2222](tel:208-321-2222) |
-
-
-## Idaho::Washington
-
-### Idaho::Washington Links
-
-| link type | link |
-| --- | --- |
-| info | [Idaho Department of Health and Welfare](https://phd3.idaho.gov/covid19/#Vaccine) |
-| scheduling_phone | [208-455-5411](tel:208-455-5411) |
-
-
-# Illinois
-
-## Illinois Links
+### name.usa::cdc/illinois/state_name Links
 
 | link type | link |
 | --- | --- |
 | eligibility | [https://www.dph.illinois.gov/covid19/vaccine-distribution](https://www.dph.illinois.gov/covid19/vaccine-distribution) |
 | info | [Illinois Department of Public Health](https://www.dph.illinois.gov/covid19/vaccination-plan) |
-| scheduling_phone | [Scheduling Hotline](tel:) |
 
 
-## Illinois Active Phase (16_and_up)
+### name.usa::cdc/illinois/state_name Active Phase (16_and_up)
 
 * Are you at least 16 years of age?
 	* Chicago not available until April 19th.
 
-## Illinois Regions
+## name.usa::cdc/indiana/state_name
 
-## Illinois::Chicago 
-
-### Illinois::Chicago  Links
-
-| link type | link |
-| --- | --- |
-| info | [Illinois Department of Public Health](https://www.chicago.gov/city/en/sites/covid19-vaccine/home.html) |
-| providers | [View locations providing vaccines](https://www.chicago.gov/city/en/sites/covid19-vaccine/home/vaccine-finder.html) |
-
-
-### Illinois::Chicago  Active Phase (16_and_up)
-
-## Illinois::Cook
-
-### Illinois::Cook Links
-
-| link type | link |
-| --- | --- |
-| info | [Illinois Department of Public Health](https://vaccine.cookcountyil.gov/) |
-
-
-### Illinois::Cook Active Phase (16_and_up)
-
-## Illinois::Kendall
-
-### Illinois::Kendall Links
-
-| link type | link |
-| --- | --- |
-| info | [Illinois Department of Public Health](http://www.kendallhealth.org/community-health/covid-19-vaccine/) |
-
-
-### Illinois::Kendall Active Phase (16_and_up)
-
-# Indiana
-
-## Indiana Links
+### name.usa::cdc/indiana/state_name Links
 
 | link type | link |
 | --- | --- |
@@ -1209,16 +300,16 @@ Upon arrival at vaccination events, individuals 60 years and older may be sent t
 | scheduling_phone | [211](tel:211) |
 
 
-## Indiana Active Phase (16_and_older)
+### name.usa::cdc/indiana/state_name Active Phase (16_and_older)
 
 * Are you at least 16 years of age?
 	* Anyone age 16 and older may now schedule a COVID-19 vaccination appointment. Click here to register or call 211 (866-211-9966) if you do not have access to a computer or need assistance.
 
 Please note that anyone younger than 18 must receive the Pfizer vaccine. It is the only vaccine to receive Emergency Use Authorization from the FDA for that age group. Proof of age will be required at the time of vaccination. (see [here](https://vaccine.coronavirus.in.gov/en-US/))
 
-# Iowa
+## name.usa::cdc/iowa/state_name
 
-## Iowa Links
+### name.usa::cdc/iowa/state_name Links
 
 | link type | link |
 | --- | --- |
@@ -1226,13 +317,13 @@ Please note that anyone younger than 18 must receive the Pfizer vaccine. It is t
 | scheduling_phone | [211](tel:211) |
 
 
-## Iowa Active Phase (2)
+### name.usa::cdc/iowa/state_name Active Phase (2)
 
 * Are you at least 16 years of age?
 
-# Kansas
+## name.usa::cdc/kansas/state_name
 
-## Kansas Links
+### name.usa::cdc/kansas/state_name Links
 
 | link type | link |
 | --- | --- |
@@ -1241,13 +332,13 @@ Please note that anyone younger than 18 must receive the Pfizer vaccine. It is t
 | info | [Kansas Department of Health and Environment](https://www.kansasvaccine.gov/) |
 
 
-## Kansas Active Phase (5)
+### name.usa::cdc/kansas/state_name Active Phase (5)
 
 * Are you at least 16 years of age?
 
-# Kentucky
+## name.usa::cdc/kentucky/state_name
 
-## Kentucky Links
+### name.usa::cdc/kentucky/state_name Links
 
 | link type | link |
 | --- | --- |
@@ -1258,13 +349,13 @@ Please note that anyone younger than 18 must receive the Pfizer vaccine. It is t
 | scheduling_phone | [855-598-2246](tel:855-598-2246) |
 
 
-## Kentucky Active Phase (3)
+### name.usa::cdc/kentucky/state_name Active Phase (3)
 
 * Are you at least 16 years of age?
 
-# Louisiana
+## name.usa::cdc/louisiana/state_name
 
-## Louisiana Links
+### name.usa::cdc/louisiana/state_name Links
 
 | link type | link |
 | --- | --- |
@@ -1273,14 +364,14 @@ Please note that anyone younger than 18 must receive the Pfizer vaccine. It is t
 | providers | [View locations providing vaccines](https://ldh.la.gov/covidvaccine-locations/) |
 
 
-## Louisiana Active Phase (16_and_older)
+### name.usa::cdc/louisiana/state_name Active Phase (16_and_older)
 
 * Are you at least 16 years of age?
 	* Beginning Monday, March 29, everyone in Louisiana ages 18 and older is eligible to get vaccinated against COVID-19. The Pfizer vaccine is available to those 16 and older.
 
-# Maine
+## name.usa::cdc/maine/state_name
 
-## Maine Links
+### name.usa::cdc/maine/state_name Links
 
 | link type | link |
 | --- | --- |
@@ -1289,13 +380,13 @@ Please note that anyone younger than 18 must receive the Pfizer vaccine. It is t
 | eligibility | [https://www.maine.gov/covid19/vaccines/phases](https://www.maine.gov/covid19/vaccines/phases) |
 
 
-## Maine Active Phase (_age_16_and_older)
+### name.usa::cdc/maine/state_name Active Phase (_age_16_and_older)
 
 * Are you at least 16 years of age?
 
-# Marshall Islands
+## name.usa::cdc/marshall_islands/state_name
 
-## Marshall Islands Links
+### name.usa::cdc/marshall_islands/state_name Links
 
 | link type | link |
 | --- | --- |
@@ -1303,13 +394,13 @@ Please note that anyone younger than 18 must receive the Pfizer vaccine. It is t
 | scheduling_phone | [+692 625-7710](tel:+692 625-7710) |
 
 
-## Marshall Islands Active Phase (current)
+### name.usa::cdc/marshall_islands/state_name Active Phase (current)
 
 * Are you at least 18 years of age?
 
-# Maryland
+## name.usa::cdc/maryland/state_name
 
-## Maryland Links
+### name.usa::cdc/maryland/state_name Links
 
 | link type | link |
 | --- | --- |
@@ -1318,11 +409,11 @@ Please note that anyone younger than 18 must receive the Pfizer vaccine. It is t
 | scheduling_phone | [(410) 767-6500](tel:410-767-6500) |
 
 
-## Maryland Active Phase (2b)
+### name.usa::cdc/maryland/state_name Active Phase (2b)
 
-# Massachusetts
+## name.usa::cdc/massachusetts/state_name
 
-## Massachusetts Links
+### name.usa::cdc/massachusetts/state_name Links
 
 | link type | link |
 | --- | --- |
@@ -1333,143 +424,13 @@ Please note that anyone younger than 18 must receive the Pfizer vaccine. It is t
 | scheduling | [Schedule a Vaccination](https://vaccinesignup.mass.gov/) |
 
 
-## Massachusetts Active Phase (phase_3)
+### name.usa::cdc/massachusetts/state_name Active Phase (phase_3)
 
 * Are you at least 16 years of age?
 
-## Massachusetts Regions
+## name.usa::cdc/michigan/state_name
 
-## Massachusetts::Barnstable
-
-### Massachusetts::Barnstable Links
-
-| link type | link |
-| --- | --- |
-| info | [Barnstable County Vaccination Information](https://www.barnstablecountyhealth.org/vaccine-information) |
-| registration | [Barnstable County COVID-19 Vaccine Registration](https://www.barnstablecountyhealth.org/vaccine-registration) |
-
-
-## Massachusetts::Berkshire
-
-### Massachusetts::Berkshire Links
-
-| link type | link |
-| --- | --- |
-| info | [Get Vaccinated Berkshires](https://www.getvaccinatedberkshires.org/) |
-| scheduling | [Schedule a Vaccination](https://www.maimmunizations.org/clinic/search?commit=Search&location=Pittsfield%2C%20MA%2001201%2C%20USA&q%5Bclinic_date_eq%5D=&q%5Bvaccinations_name_i_cont%5D=&q%5Bvenue_search_name_or_venue_name_i_cont%5D=&search_radius=50%20miles#search_results#search_results) |
-
-
-## Massachusetts::Bristol
-
-### Massachusetts::Bristol Links
-
-| link type | link |
-| --- | --- |
-
-
-
-## Massachusetts::Dukes
-
-### Massachusetts::Dukes Links
-
-| link type | link |
-| --- | --- |
-
-
-
-## Massachusetts::Essex
-
-### Massachusetts::Essex Links
-
-| link type | link |
-| --- | --- |
-
-
-
-## Massachusetts::Franklin
-
-### Massachusetts::Franklin Links
-
-| link type | link |
-| --- | --- |
-
-
-
-## Massachusetts::Hampden
-
-### Massachusetts::Hampden Links
-
-| link type | link |
-| --- | --- |
-
-
-
-## Massachusetts::Hampshire
-
-### Massachusetts::Hampshire Links
-
-| link type | link |
-| --- | --- |
-
-
-
-## Massachusetts::Middlesex
-
-### Massachusetts::Middlesex Links
-
-| link type | link |
-| --- | --- |
-
-
-
-## Massachusetts::Nantucket
-
-### Massachusetts::Nantucket Links
-
-| link type | link |
-| --- | --- |
-
-
-
-## Massachusetts::Norfolk
-
-### Massachusetts::Norfolk Links
-
-| link type | link |
-| --- | --- |
-
-
-
-## Massachusetts::Plymouth
-
-### Massachusetts::Plymouth Links
-
-| link type | link |
-| --- | --- |
-
-
-
-## Massachusetts::Suffolk
-
-### Massachusetts::Suffolk Links
-
-| link type | link |
-| --- | --- |
-
-
-
-## Massachusetts::Worcester
-
-### Massachusetts::Worcester Links
-
-| link type | link |
-| --- | --- |
-
-
-
-# Michigan
-
-## Michigan Links
+### name.usa::cdc/michigan/state_name Links
 
 | link type | link |
 | --- | --- |
@@ -1479,13 +440,13 @@ Please note that anyone younger than 18 must receive the Pfizer vaccine. It is t
 | scheduling_phone | [888-535-6136](tel:888-535-6136) |
 
 
-## Michigan Active Phase (2)
+### name.usa::cdc/michigan/state_name Active Phase (2)
 
 * Are you at least 16 years of age?
 
-# Minnesota
+## name.usa::cdc/minnesota/state_name
 
-## Minnesota Links
+### name.usa::cdc/minnesota/state_name Links
 
 | link type | link |
 | --- | --- |
@@ -1495,14 +456,14 @@ Please note that anyone younger than 18 must receive the Pfizer vaccine. It is t
 | scheduling_phone | [883-431-2053](tel:883-431-2053) |
 
 
-## Minnesota Active Phase (16_and_older)
+### name.usa::cdc/minnesota/state_name Active Phase (16_and_older)
 
 * Are you at least 16 years of age?
 	* As of March 30, all Minnesotans 16 years of age and older will be eligible to receive a vaccine. Minnesota has directed providers to prioritize vaccine appointments for people most at risk of getting COVID-19, or those who could develop severe illness if infected. This includes older Minnesotans, those with underlying health conditions*, and those in essential jobs.
 
-# Mississippi
+## name.usa::cdc/mississippi/state_name
 
-## Mississippi Links
+### name.usa::cdc/mississippi/state_name Links
 
 | link type | link |
 | --- | --- |
@@ -1513,16 +474,16 @@ Please note that anyone younger than 18 must receive the Pfizer vaccine. It is t
 | scheduling_phone | [877-978-6453](tel:877-978-6453) |
 
 
-## Mississippi Active Phase (2)
+### name.usa::cdc/mississippi/state_name Active Phase (2)
 
 * Are you at least 16 years of age?
 	* If you are 18 or older, you can be vaccinated at any of our drive-through sites at no cost. Persons younger than 18 should make a drive-through site appointment by calling 877-978-6453, or visit a private healthcare provider for COVID-19 vaccination to ensure that they receive a vaccine approved for their age.
 
 COVID-19 vaccinations are provided to Mississippi residents only, or to out-of-state residents who work in Mississippi. (see [here](https://msdh.ms.gov/msdhsite/_static/14,22816,420,976.html))
 
-# Missouri
+## name.usa::cdc/missouri/state_name
 
-## Missouri Links
+### name.usa::cdc/missouri/state_name Links
 
 | link type | link |
 | --- | --- |
@@ -1532,13 +493,13 @@ COVID-19 vaccinations are provided to Mississippi residents only, or to out-of-s
 | scheduling_phone | [(877) 435-8411](tel:(877) 435-8411) |
 
 
-## Missouri Active Phase (16_and_up)
+### name.usa::cdc/missouri/state_name Active Phase (16_and_up)
 
 * Are you at least 16 years of age?
 
-# Montana
+## name.usa::cdc/montana/state_name
 
-## Montana Links
+### name.usa::cdc/montana/state_name Links
 
 | link type | link |
 | --- | --- |
@@ -1547,13 +508,13 @@ COVID-19 vaccinations are provided to Mississippi residents only, or to out-of-s
 | providers | [View locations providing vaccines](https://dphhs.mt.gov/publichealth/cdepi/diseases/coronavirusmt/covid19vaccineavailability) |
 
 
-## Montana Active Phase (16_and_older)
+### name.usa::cdc/montana/state_name Active Phase (16_and_older)
 
 * Are you at least 16 years of age?
 
-# Nebraska
+## name.usa::cdc/nebraska/state_name
 
-## Nebraska Links
+### name.usa::cdc/nebraska/state_name Links
 
 | link type | link |
 | --- | --- |
@@ -1565,28 +526,13 @@ COVID-19 vaccinations are provided to Mississippi residents only, or to out-of-s
 | eligibility | [https://dhhs.ne.gov/Documents/COVID-19-Vaccine-Phase-1B-Prioritization.pdf](https://dhhs.ne.gov/Documents/COVID-19-Vaccine-Phase-1B-Prioritization.pdf) |
 
 
-## Nebraska Active Phase (2b)
+### name.usa::cdc/nebraska/state_name Active Phase (2b)
 
 * Are you at least 16 years of age?
 
-## Nebraska Regions
+## name.usa::cdc/nevada/state_name
 
-## Nebraska::Lancaster
-
-### Nebraska::Lancaster Links
-
-| link type | link |
-| --- | --- |
-| info | [Nebraska Department of Health and Human Services](https://app.lincoln.ne.gov/city/covid19/) |
-
-
-### Nebraska::Lancaster Active Phase (2b)
-
-* Are you at least 18 years of age?
-
-# Nevada
-
-## Nevada Links
+### name.usa::cdc/nevada/state_name Links
 
 | link type | link |
 | --- | --- |
@@ -1595,253 +541,13 @@ COVID-19 vaccinations are provided to Mississippi residents only, or to out-of-s
 | scheduling_phone | [1-800-401-0946](tel:1-800-401-0946) |
 
 
-## Nevada Active Phase (age_16)
+### name.usa::cdc/nevada/state_name Active Phase (age_16)
 
 * Are you at least 16 years of age?
 
-## Nevada Regions
+## name.usa::cdc/new_hampshire/state_name
 
-## Nevada::Carson City
-
-### Nevada::Carson City Links
-
-| link type | link |
-| --- | --- |
-| eligibility | [https://nvhealthresponse.nv.gov/wp-content/uploads/2021/01/NEVADA-COVID-19-VACCINE-PLAYBOOK-V3-BRIEF_011121.pdf](https://nvhealthresponse.nv.gov/wp-content/uploads/2021/01/NEVADA-COVID-19-VACCINE-PLAYBOOK-V3-BRIEF_011121.pdf) |
-| info | [Nevada Division of Public and Behavioral Health](https://gethealthycarsoncity.org/novel-coronavirus-2019/covid-19-vaccine/) |
-| providers | [View locations providing vaccines](https://gethealthycarsoncity.org/novel-coronavirus-2019/covid-19-vaccine/) |
-| scheduling | [Schedule a Vaccination](https://booking.appointy.com/en-US/immunizenevada/bookings/service?st=458106) |
-| scheduling_phone | [1-800-401-0946](tel:1-800-401-0946) |
-| eligibility_plan | [https://nvhealthresponse.nv.gov/wp-content/uploads/2021/01/NEVADA-COVID-19-VACCINE-PLAYBOOK-V3-BRIEF_011121.pdf](https://nvhealthresponse.nv.gov/wp-content/uploads/2021/01/NEVADA-COVID-19-VACCINE-PLAYBOOK-V3-BRIEF_011121.pdf) |
-
-
-### Nevada::Carson City Active Phase (age_16)
-
-* Are you at least 16 years of age?
-
-## Nevada::Churchill
-
-### Nevada::Churchill Links
-
-| link type | link |
-| --- | --- |
-| info | [Nevada Division of Public and Behavioral Health](http://www.churchillcountynv.gov/1015/COVID-19-Vaccines) |
-| workflow | [Vaccine Eligibility Questionnaire](https://nvhealthresponse.nv.gov/wp-content/uploads/2021/01/NEVADA-COVID-19-VACCINE-PLAYBOOK-V3-1.pdf) |
-| scheduling_phone | [1-800-401-0946](tel:1-800-401-0946) |
-| eligibility | [https://nvhealthresponse.nv.gov/wp-content/uploads/2021/01/NEVADA-COVID-19-VACCINE-PLAYBOOK-V3-1.pdf](https://nvhealthresponse.nv.gov/wp-content/uploads/2021/01/NEVADA-COVID-19-VACCINE-PLAYBOOK-V3-1.pdf) |
-| eligibility_plan | [https://nvhealthresponse.nv.gov/wp-content/uploads/2021/01/NEVADA-COVID-19-VACCINE-PLAYBOOK-V3-1.pdf](https://nvhealthresponse.nv.gov/wp-content/uploads/2021/01/NEVADA-COVID-19-VACCINE-PLAYBOOK-V3-1.pdf) |
-
-
-### Nevada::Churchill Active Phase (age_18_and_essential_workers)
-
-* Are you at least 18 years of age?
-
-## Nevada::Clark
-
-### Nevada::Clark Links
-
-| link type | link |
-| --- | --- |
-| eligibility | [https://media.southernnevadahealthdistrict.org/download/COVID-19/resources/playbook/NEVADA-COVID-19-VACCINE-PLAYBOOK-V3-BRIEF.pdf](https://media.southernnevadahealthdistrict.org/download/COVID-19/resources/playbook/NEVADA-COVID-19-VACCINE-PLAYBOOK-V3-BRIEF.pdf) |
-| eligibility_plan | [https://media.southernnevadahealthdistrict.org/download/COVID-19/resources/playbook/NEVADA-COVID-19-VACCINE-PLAYBOOK-V3-BRIEF.pdf](https://media.southernnevadahealthdistrict.org/download/COVID-19/resources/playbook/NEVADA-COVID-19-VACCINE-PLAYBOOK-V3-BRIEF.pdf) |
-| info | [Nevada Division of Public and Behavioral Health](https://covid.southernnevadahealthdistrict.org/) |
-| scheduling | [Schedule a Vaccination](https://covid.southernnevadahealthdistrict.org/vaccine/distribution/) |
-| scheduling_phone | [1-800-401-0946](tel:1-800-401-0946) |
-
-
-### Nevada::Clark Active Phase (age_16)
-
-* Are you at least 16 years of age?
-
-## Nevada::Douglas
-
-### Nevada::Douglas Links
-
-| link type | link |
-| --- | --- |
-| info | [Nevada Division of Public and Behavioral Health](https://gethealthycarsoncity.org/novel-coronavirus-2019/covid-19-vaccine/) |
-
-
-### Nevada::Douglas Active Phase (age_16)
-
-* Are you at least 16 years of age?
-
-## Nevada::Elko
-
-### Nevada::Elko Links
-
-| link type | link |
-| --- | --- |
-| info | [Nevada Division of Public and Behavioral Health](https://www.elkocountynv.net/boards/health_board/diseases_and_conditions.php#outer-2066sub-2719) |
-
-
-### Nevada::Elko Active Phase (age_16)
-
-* Are you at least 16 years of age?
-
-## Nevada::Esmeralda
-
-### Nevada::Esmeralda Links
-
-| link type | link |
-| --- | --- |
-| info | [Nevada Division of Public and Behavioral Health](https://www.accessesmeralda.com/coronavirus_updates.php) |
-| scheduling_phone | [775-482-6711](tel:775-482-6711) |
-
-
-### Nevada::Esmeralda Active Phase (age_16)
-
-## Nevada::Eureka
-
-### Nevada::Eureka Links
-
-| link type | link |
-| --- | --- |
-| scheduling_phone | [775-237-5372](tel:775-237-5372) |
-
-
-### Nevada::Eureka Active Phase (age_16)
-
-## Nevada::Humboldt
-
-### Nevada::Humboldt Links
-
-| link type | link |
-| --- | --- |
-
-
-
-### Nevada::Humboldt Active Phase (age_16)
-
-## Nevada::Lander
-
-### Nevada::Lander Links
-
-| link type | link |
-| --- | --- |
-| info | [Nevada Division of Public and Behavioral Health](http://www.landercountynv.org/government/executive_director/index.php) |
-| scheduling_phone | [775-539-9136](tel:775-539-9136) |
-
-
-### Nevada::Lander Active Phase (age_18)
-
-## Nevada::Lincoln
-
-### Nevada::Lincoln Links
-
-| link type | link |
-| --- | --- |
-| info | [Nevada Division of Public and Behavioral Health](https://lincolncountynv.org/departments/public-health/) |
-| scheduling_phone | [775-962-8086](tel:775-962-8086) |
-
-
-### Nevada::Lincoln Active Phase (age_18)
-
-## Nevada::Lyon
-
-### Nevada::Lyon Links
-
-| link type | link |
-| --- | --- |
-| eligibility | [https://nvhealthresponse.nv.gov/wp-content/uploads/2021/01/NEVADA-COVID-19-VACCINE-PLAYBOOK-V3-BRIEF_011121.pdf](https://nvhealthresponse.nv.gov/wp-content/uploads/2021/01/NEVADA-COVID-19-VACCINE-PLAYBOOK-V3-BRIEF_011121.pdf) |
-| eligibility_plan | [https://nvhealthresponse.nv.gov/wp-content/uploads/2021/01/NEVADA-COVID-19-VACCINE-PLAYBOOK-V3-BRIEF_011121.pdf](https://nvhealthresponse.nv.gov/wp-content/uploads/2021/01/NEVADA-COVID-19-VACCINE-PLAYBOOK-V3-BRIEF_011121.pdf) |
-| info | [Nevada Division of Public and Behavioral Health](https://gethealthycarsoncity.org/novel-coronavirus-2019/covid-19-vaccine/) |
-| scheduling | [Schedule a Vaccination](https://booking.appointy.com/en-US/immunizenevada/bookings/service?st=458106) |
-| scheduling_phone | [1-800-401-0946](tel:1-800-401-0946) |
-
-
-### Nevada::Lyon Active Phase (age_16)
-
-* Are you at least 16 years of age?
-
-## Nevada::Mineral
-
-### Nevada::Mineral Links
-
-| link type | link |
-| --- | --- |
-| eligibility_plan | [http://cms.revize.com/revize/mineralcounty/NEVADA%20COVID-19%20VACCINE%20PLAYBOOK%20V3.pdf](http://cms.revize.com/revize/mineralcounty/NEVADA%20COVID-19%20VACCINE%20PLAYBOOK%20V3.pdf) |
-| info | [Nevada Division of Public and Behavioral Health](http://cms.revize.com/revize/mineralcounty/departments/coronavirus_vaccination_information.php) |
-
-
-### Nevada::Mineral Active Phase (age_16)
-
-## Nevada::Nye
-
-### Nevada::Nye Links
-
-| link type | link |
-| --- | --- |
-| eligibility_plan | [https://nvhealthresponse.nv.gov/wp-content/uploads/2021/01/NEVADA-COVID-19-VACCINE-PLAYBOOK-V3-BRIEF_011121.pdf](https://nvhealthresponse.nv.gov/wp-content/uploads/2021/01/NEVADA-COVID-19-VACCINE-PLAYBOOK-V3-BRIEF_011121.pdf) |
-| info | [Nevada Division of Public and Behavioral Health](https://www.nyecounty.net/1066/Coronavirus-COVID-19-Information) |
-| scheduling | [Schedule a Vaccination](https://booking.appointy.com/en-US/snyecovid/snyecovid) |
-| scheduling_phone | [1-800-401-0946](tel:1-800-401-0946) |
-
-
-### Nevada::Nye Active Phase (age_16)
-
-## Nevada::Pershing
-
-### Nevada::Pershing Links
-
-| link type | link |
-| --- | --- |
-| info | [Nevada Division of Public and Behavioral Health](https://www.pershingcountynv.gov/community/covid-19_information.php) |
-| scheduling_phone | [(775) 273-2041](tel:(775) 273-2041) |
-
-
-### Nevada::Pershing Active Phase (age_18)
-
-* Are you at least 18 years of age?
-
-## Nevada::Storey
-
-### Nevada::Storey Links
-
-| link type | link |
-| --- | --- |
-| eligibility | [https://nvhealthresponse.nv.gov/wp-content/uploads/2021/01/NEVADA-COVID-19-VACCINE-PLAYBOOK-V3-BRIEF_011121.pdf](https://nvhealthresponse.nv.gov/wp-content/uploads/2021/01/NEVADA-COVID-19-VACCINE-PLAYBOOK-V3-BRIEF_011121.pdf) |
-| eligibility_plan | [https://nvhealthresponse.nv.gov/wp-content/uploads/2021/01/NEVADA-COVID-19-VACCINE-PLAYBOOK-V3-BRIEF_011121.pdf](https://nvhealthresponse.nv.gov/wp-content/uploads/2021/01/NEVADA-COVID-19-VACCINE-PLAYBOOK-V3-BRIEF_011121.pdf) |
-| info | [Nevada Division of Public and Behavioral Health](https://gethealthycarsoncity.org/novel-coronavirus-2019/covid-19-vaccine/) |
-| scheduling | [Schedule a Vaccination](https://booking.appointy.com/en-US/immunizenevada/bookings/service?st=458106) |
-| scheduling_phone | [1-800-401-0946](tel:1-800-401-0946) |
-
-
-### Nevada::Storey Active Phase (age_16)
-
-* Are you at least 16 years of age?
-
-## Nevada::Washoe
-
-### Nevada::Washoe Links
-
-| link type | link |
-| --- | --- |
-| eligibility | [https://www.washoecounty.us/health/files/COVID19/Cov-priority-lanes-graphic.pdf](https://www.washoecounty.us/health/files/COVID19/Cov-priority-lanes-graphic.pdf) |
-| eligibility_plan | [https://nvhealthresponse.nv.gov/wp-content/uploads/2021/01/NEVADA-COVID-19-VACCINE-PLAYBOOK-V3-BRIEF_011121.pdf](https://nvhealthresponse.nv.gov/wp-content/uploads/2021/01/NEVADA-COVID-19-VACCINE-PLAYBOOK-V3-BRIEF_011121.pdf) |
-| info | [Nevada Division of Public and Behavioral Health](https://www.covid19washoevaccine.com/) |
-| workflow | [Vaccine Eligibility Questionnaire](https://gis.washoecounty.us/agolHost?id=COVIDTierSurvey&lang=en) |
-| scheduling_phone | [775-328-2427](tel:775-328-2427) |
-
-
-### Nevada::Washoe Active Phase (age_16)
-
-* Are you at least 16 years of age?
-
-## Nevada::White Pine
-
-### Nevada::White Pine Links
-
-| link type | link |
-| --- | --- |
-| scheduling_phone | [775-293-6558](tel:775-293-6558) |
-
-
-### Nevada::White Pine Active Phase (age_16)
-
-# New Hampshire
-
-## New Hampshire Links
+### name.usa::cdc/new_hampshire/state_name Links
 
 | link type | link |
 | --- | --- |
@@ -1851,13 +557,13 @@ COVID-19 vaccinations are provided to Mississippi residents only, or to out-of-s
 | scheduling_phone | [211](tel:211) |
 
 
-## New Hampshire Active Phase (phase_3_ages_16)
+### name.usa::cdc/new_hampshire/state_name Active Phase (phase_3_ages_16)
 
 * Are you at least 16 years of age?
 
-# New Jersey
+## name.usa::cdc/new_jersey/state_name
 
-## New Jersey Links
+### name.usa::cdc/new_jersey/state_name Links
 
 | link type | link |
 | --- | --- |
@@ -1867,13 +573,13 @@ COVID-19 vaccinations are provided to Mississippi residents only, or to out-of-s
 | scheduling_phone | [1-855-568-0545](tel:1-855-568-0545) |
 
 
-## New Jersey Active Phase (current)
+### name.usa::cdc/new_jersey/state_name Active Phase (current)
 
 * Are you at least 16 years of age?
 
-# New Mexico
+## name.usa::cdc/new_mexico/state_name
 
-## New Mexico Links
+### name.usa::cdc/new_mexico/state_name Links
 
 | link type | link |
 | --- | --- |
@@ -1884,13 +590,13 @@ COVID-19 vaccinations are provided to Mississippi residents only, or to out-of-s
 | scheduling_phone | [COVID-19 Vaccine Hotline](tel:COVID-19 Vaccine Hotline) |
 
 
-## New Mexico Active Phase (current_phase)
+### name.usa::cdc/new_mexico/state_name Active Phase (current_phase)
 
 * Are you at least 16 years of age?
 
-# New York
+## name.usa::cdc/new_york/state_name
 
-## New York Links
+### name.usa::cdc/new_york/state_name Links
 
 | link type | link |
 | --- | --- |
@@ -1901,7 +607,7 @@ COVID-19 vaccinations are provided to Mississippi residents only, or to out-of-s
 | scheduling_phone | [1-833-697-4829](tel:1-833-697-4829) |
 
 
-## New York Active Phase (current)
+### name.usa::cdc/new_york/state_name Active Phase (current)
 
 * Are you at least 16 years of age?
 	* Note: People who are 16 and 17 years old are only eligible for the Pfizer vaccine.
@@ -1910,9 +616,9 @@ The COVID-19 vaccine is currently available to all New York State residents 16 a
 
  (see [here](https://www1.nyc.gov/site/doh/covid/covid-19-vaccine-eligibility.page))
 
-# North Carolina
+## name.usa::cdc/north_carolina/state_name
 
-## North Carolina Links
+### name.usa::cdc/north_carolina/state_name Links
 
 | link type | link |
 | --- | --- |
@@ -1922,7 +628,7 @@ The COVID-19 vaccine is currently available to all New York State residents 16 a
 | scheduling_phone | [1-888-675-4567](tel:1-888-675-4567) |
 
 
-## North Carolina Active Phase (current)
+### name.usa::cdc/north_carolina/state_name Active Phase (current)
 
 * Are you at least 16 years of age?
 	* COVID-19 vaccines are available in North Carolina to everyone ages 16 and older.
@@ -1932,9 +638,9 @@ What you should know:
 - Depending on where you get your vaccine, you may need to make an appointment.
 - U.S. citizenship is not required or checked. (see [here](https://covid19.ncdhhs.gov/vaccines))
 
-# North Dakota
+## name.usa::cdc/north_dakota/state_name
 
-## North Dakota Links
+### name.usa::cdc/north_dakota/state_name Links
 
 | link type | link |
 | --- | --- |
@@ -1945,14 +651,14 @@ What you should know:
 | scheduling_phone | [701-328-2372](tel:701-328-2372) |
 
 
-## North Dakota Active Phase (2)
+### name.usa::cdc/north_dakota/state_name Active Phase (2)
 
 * Are you at least 16 years of age?
 	* All people 16+ (for Pfizer only) and 18+ (for all vaccines) are eligible in North Dakota. However, some vaccination sites are currently only serving those 18+ or essential workers. Please confirm your eligibility matches that of the location where you're signing up  (see [here](https://www.health.nd.gov/covidvaccinelocator))
 
-# Northern Mariana Islands
+## name.usa::cdc/northern_mariana_islands/state_name
 
-## Northern Mariana Islands Links
+### name.usa::cdc/northern_mariana_islands/state_name Links
 
 | link type | link |
 | --- | --- |
@@ -1961,48 +667,13 @@ What you should know:
 | scheduling_phone | [670-682-7468](tel:670-682-7468) |
 
 
-## Northern Mariana Islands Active Phase (18_and_older)
+### name.usa::cdc/northern_mariana_islands/state_name Active Phase (18_and_older)
 
 * Are you at least 18 years of age?
 
-## Northern Mariana Islands Regions
+## name.usa::cdc/ohio/state_name
 
-## Northern Mariana Islands::Rota
-
-### Northern Mariana Islands::Rota Links
-
-| link type | link |
-| --- | --- |
-
-
-
-### Northern Mariana Islands::Rota Active Phase (18_and_older)
-
-## Northern Mariana Islands::Saipan
-
-### Northern Mariana Islands::Saipan Links
-
-| link type | link |
-| --- | --- |
-
-
-
-### Northern Mariana Islands::Saipan Active Phase (16_and_older)
-
-## Northern Mariana Islands::Tinian
-
-### Northern Mariana Islands::Tinian Links
-
-| link type | link |
-| --- | --- |
-
-
-
-### Northern Mariana Islands::Tinian Active Phase (18_and_older)
-
-# Ohio
-
-## Ohio Links
+### name.usa::cdc/ohio/state_name Links
 
 | link type | link |
 | --- | --- |
@@ -2014,13 +685,13 @@ What you should know:
 | providers | [View locations providing vaccines](https://coronavirus.ohio.gov/wps/portal/gov/covid-19/covid-19-vaccination-program/resources/covid-19-mass-vaccination-clinics) |
 
 
-## Ohio Active Phase (current)
+### name.usa::cdc/ohio/state_name Active Phase (current)
 
 * Are you at least 16 years of age?
 
-# Oklahoma
+## name.usa::cdc/oklahoma/state_name
 
-## Oklahoma Links
+### name.usa::cdc/oklahoma/state_name Links
 
 | link type | link |
 | --- | --- |
@@ -2030,14 +701,14 @@ What you should know:
 | scheduling_phone | [405-425-4489](tel:405-425-4489) |
 
 
-## Oklahoma Active Phase (phase_4)
+### name.usa::cdc/oklahoma/state_name Active Phase (phase_4)
 
 * Are you at least 16 years of age?
 	* If you are a parent accompanying a minor to their appointment (16yo + for Pfizer only), it is helpful to bring their school photo ID, a birth certificate, or a social security card if they do not have a driver's license/permit.
 
-# Oregon
+## name.usa::cdc/oregon/state_name
 
-## Oregon Links
+### name.usa::cdc/oregon/state_name Links
 
 | link type | link |
 | --- | --- |
@@ -2048,411 +719,13 @@ What you should know:
 | scheduling_phone | [866-698-6155](tel:866-698-6155) |
 
 
-## Oregon Active Phase (2)
+### name.usa::cdc/oregon/state_name Active Phase (2)
 
 * Are you at least 16 years of age?
 
-## Oregon Regions
+## name.usa::cdc/palau/state_name
 
-## Oregon::Baker
-
-### Oregon::Baker Links
-
-| link type | link |
-| --- | --- |
-| info | [Oregon Health Authority, Public Health Division](http://bakercountycovid19.com/) |
-| scheduling_phone | [541-523-8211](tel:541-523-8211) |
-
-
-### Oregon::Baker Active Phase (2)
-
-## Oregon::Benton
-
-### Oregon::Benton Links
-
-| link type | link |
-| --- | --- |
-| info | [Oregon Health Authority, Public Health Division](https://www.co.benton.or.us/covid19/page/covid-19-vaccine) |
-| scheduling | [Schedule a Vaccination](https://www.samhealth.org/getthevaccine) |
-
-
-### Oregon::Benton Active Phase (2)
-
-## Oregon::Clackamas
-
-### Oregon::Clackamas Links
-
-| link type | link |
-| --- | --- |
-| info | [Oregon Health Authority, Public Health Division](https://www.clackamas.us/coronavirus) |
-
-
-## Oregon::Clatsop
-
-### Oregon::Clatsop Links
-
-| link type | link |
-| --- | --- |
-| scheduling_phone | [503-325-8500](tel:503-325-8500) |
-
-
-## Oregon::Columbia
-
-### Oregon::Columbia Links
-
-| link type | link |
-| --- | --- |
-| info | [Oregon Health Authority, Public Health Division](https://www.columbiacountyor.gov/departments/PublicHealth/COVID-19Vaccine) |
-| scheduling_phone | [503-397-7247](tel:503-397-7247) |
-
-
-## Oregon::Coos
-
-### Oregon::Coos Links
-
-| link type | link |
-| --- | --- |
-| info | [Oregon Health Authority, Public Health Division](https://cooshealthandwellness.org/) |
-
-
-## Oregon::Crook
-
-### Oregon::Crook Links
-
-| link type | link |
-| --- | --- |
-| info | [Oregon Health Authority, Public Health Division](https://co.crook.or.us/health) |
-| scheduling | [Schedule a Vaccination](https://crookcounty.simplybook.me/v2/) |
-| scheduling_phone | [541-447-5165](tel:541-447-5165) |
-
-
-## Oregon::Curry
-
-### Oregon::Curry Links
-
-| link type | link |
-| --- | --- |
-| info | [Oregon Health Authority, Public Health Division](http://www.curryhealthnetwork.com/education?left=Patient+Information) |
-| scheduling_phone | [541-247-3119](tel:541-247-3119) |
-
-
-## Oregon::Deschutes
-
-### Oregon::Deschutes Links
-
-| link type | link |
-| --- | --- |
-| info | [Oregon Health Authority, Public Health Division](https://www.deschutes.org/health/page/covid-19-novel-coronavirus) |
-| scheduling_phone | [541-699-5109](tel:541-699-5109) |
-
-
-### Oregon::Deschutes Active Phase (2)
-
-## Oregon::Douglas
-
-### Oregon::Douglas Links
-
-| link type | link |
-| --- | --- |
-| info | [Oregon Health Authority, Public Health Division](http://douglaspublichealthnetwork.org/) |
-| scheduling_phone | [541-464-6550](tel:541-464-6550) |
-
-
-### Oregon::Douglas Active Phase (2)
-
-## Oregon::Gilliam
-
-### Oregon::Gilliam Links
-
-| link type | link |
-| --- | --- |
-| info | [Oregon Health Authority, Public Health Division](https://www.ncphd.org/covid-vaccines) |
-| scheduling_phone | [541-506-2600](tel:541-506-2600) |
-
-
-## Oregon::Grant
-
-### Oregon::Grant Links
-
-| link type | link |
-| --- | --- |
-| scheduling_phone | [541-575-0429](tel:541-575-0429) |
-
-
-### Oregon::Grant Active Phase (2)
-
-## Oregon::Harney
-
-### Oregon::Harney Links
-
-| link type | link |
-| --- | --- |
-| info | [Oregon Health Authority, Public Health Division](https://www.facebook.com/HarneyCountyHealthDepartment/) |
-| scheduling_phone | [541-573-2271](tel:541-573-2271) |
-
-
-### Oregon::Harney Active Phase (2)
-
-## Oregon::Hood River
-
-### Oregon::Hood River Links
-
-| link type | link |
-| --- | --- |
-| info | [Oregon Health Authority, Public Health Division](https://hrccovid19.org/) |
-| scheduling_phone | [541-399-8022](tel:541-399-8022) |
-
-
-## Oregon::Jackson
-
-### Oregon::Jackson Links
-
-| link type | link |
-| --- | --- |
-| info | [Oregon Health Authority, Public Health Division](https://jacksoncountyor.org/hhs/General/News-Information/covid-19-vaccine) |
-
-
-## Oregon::Jefferson
-
-### Oregon::Jefferson Links
-
-| link type | link |
-| --- | --- |
-| info | [Oregon Health Authority, Public Health Division](https://www.jeffco.net/publichealth) |
-| scheduling | [Schedule a Vaccination](https://www.stcharleshealthcare.org/covidvaccine) |
-| scheduling_phone | [541-699-5109](tel:541-699-5109) |
-
-
-### Oregon::Jefferson Active Phase (2)
-
-## Oregon::Josephine
-
-### Oregon::Josephine Links
-
-| link type | link |
-| --- | --- |
-| info | [Oregon Health Authority, Public Health Division](http://co.josephine.or.us/Page.asp?NavID=2288) |
-| scheduling_phone | [541-789-2813](tel:541-789-2813) |
-
-
-### Oregon::Josephine Active Phase (2)
-
-## Oregon::Klamath
-
-### Oregon::Klamath Links
-
-| link type | link |
-| --- | --- |
-| info | [Oregon Health Authority, Public Health Division](http://www.klamathcounty.org/1117/COVID-19-vaccine) |
-| scheduling_phone | [1-833-606-4370](tel:1-833-606-4370) |
-
-
-### Oregon::Klamath Active Phase (2)
-
-## Oregon::Lake
-
-### Oregon::Lake Links
-
-| link type | link |
-| --- | --- |
-| scheduling_phone | [541-947-6045](tel:541-947-6045) |
-
-
-### Oregon::Lake Active Phase (2)
-
-## Oregon::Lane
-
-### Oregon::Lane Links
-
-| link type | link |
-| --- | --- |
-| info | [Oregon Health Authority, Public Health Division](https://lanecounty.org/cms/One.aspx?portalId=3585881&pageId=16503774) |
-| scheduling_phone | [541-682-1380](tel:541-682-1380) |
-
-
-## Oregon::Lincoln
-
-### Oregon::Lincoln Links
-
-| link type | link |
-| --- | --- |
-| info | [Oregon Health Authority, Public Health Division](https://www.co.lincoln.or.us/hhs/page/covid-19-vaccine) |
-| scheduling | [Schedule a Vaccination](https://www.co.lincoln.or.us/hhs/page/lincoln-county-covid-19-vaccination-schedule) |
-| scheduling_phone | [541-265-0621](tel:541-265-0621) |
-
-
-### Oregon::Lincoln Active Phase (2)
-
-## Oregon::Linn
-
-### Oregon::Linn Links
-
-| link type | link |
-| --- | --- |
-| info | [Oregon Health Authority, Public Health Division](https://www.linncountyhealth.org/) |
-| scheduling_phone | [541-967-3888](tel:541-967-3888) |
-
-
-### Oregon::Linn Active Phase (2)
-
-## Oregon::Malheur
-
-### Oregon::Malheur Links
-
-| link type | link |
-| --- | --- |
-| info | [Oregon Health Authority, Public Health Division](https://malheurhealth.org/) |
-| scheduling_phone | [541-889-7279](tel:541-889-7279) |
-
-
-### Oregon::Malheur Active Phase (2)
-
-## Oregon::Marion
-
-### Oregon::Marion Links
-
-| link type | link |
-| --- | --- |
-| info | [Oregon Health Authority, Public Health Division](https://www.co.marion.or.us/HLT/COVID-19/) |
-
-
-### Oregon::Marion Active Phase (2)
-
-## Oregon::Morrow
-
-### Oregon::Morrow Links
-
-| link type | link |
-| --- | --- |
-| info | [Oregon Health Authority, Public Health Division](https://docs.google.com/forms/d/e/1FAIpQLSe2jLBUI6tLA_7KN_FSTHaYy7ahwcG_FHGvIYaMPKV5zHpZ4Q/viewform) |
-| scheduling_phone | [541-676-5649](tel:541-676-5649) |
-
-
-### Oregon::Morrow Active Phase (2)
-
-## Oregon::Multnomah
-
-### Oregon::Multnomah Links
-
-| link type | link |
-| --- | --- |
-| info | [Oregon Health Authority, Public Health Division](https://multco.us/novel-coronavirus-covid-19/covid-19-vaccine-information) |
-| providers | [View locations providing vaccines](https://multco.us/novel-coronavirus-covid-19/how-do-i-make-appointment-covid-19-vaccine) |
-
-
-## Oregon::Polk
-
-### Oregon::Polk Links
-
-| link type | link |
-| --- | --- |
-| info | [Oregon Health Authority, Public Health Division](https://www.co.polk.or.us/ph/covid-19-vaccine) |
-| scheduling | [Schedule a Vaccination](https://www.salemhealth.org/covid-19/covid-vaccine) |
-
-
-### Oregon::Polk Active Phase (2)
-
-## Oregon::Sherman
-
-### Oregon::Sherman Links
-
-| link type | link |
-| --- | --- |
-| info | [Oregon Health Authority, Public Health Division](https://www.ncphd.org/covid-vaccines) |
-| scheduling_phone | [541-506-2600](tel:541-506-2600) |
-
-
-### Oregon::Sherman Active Phase (2)
-
-## Oregon::Tillamook
-
-### Oregon::Tillamook Links
-
-| link type | link |
-| --- | --- |
-| info | [Oregon Health Authority, Public Health Division](https://www.facebook.com/TillamookCHC) |
-| providers | [View locations providing vaccines](https://tillamookchc.org/) |
-| scheduling_phone | [503-842-3914](tel:503-842-3914) |
-
-
-## Oregon::Umatilla
-
-### Oregon::Umatilla Links
-
-| link type | link |
-| --- | --- |
-| info | [Oregon Health Authority, Public Health Division](http://ucohealth.net/) |
-| scheduling_phone | [541-278-5432](tel:541-278-5432) |
-
-
-### Oregon::Umatilla Active Phase (2)
-
-## Oregon::Union
-
-### Oregon::Union Links
-
-| link type | link |
-| --- | --- |
-| scheduling | [Schedule a Vaccination](https://www.chdinc.org/get-vaccinated) |
-| scheduling_phone | [541-962-8800](tel:541-962-8800) |
-
-
-### Oregon::Union Active Phase (2)
-
-## Oregon::Wallowa
-
-### Oregon::Wallowa Links
-
-| link type | link |
-| --- | --- |
-| info | [Oregon Health Authority, Public Health Division](https://www.wchcd.org/vaccine-information/) |
-| scheduling_phone | [541-426-5437](tel:541-426-5437) |
-
-
-## Oregon::Wasco
-
-### Oregon::Wasco Links
-
-| link type | link |
-| --- | --- |
-| info | [Oregon Health Authority, Public Health Division](https://www.ncphd.org/covid-vaccines) |
-| scheduling_phone | [541-506-2600](tel:541-506-2600) |
-
-
-## Oregon::Washington
-
-### Oregon::Washington Links
-
-| link type | link |
-| --- | --- |
-| info | [Oregon Health Authority, Public Health Division](http://www.co.washington.or.us/vaccine (English) https://www.co.washington.or.us/vacuna (Spanish)) |
-
-
-## Oregon::Wheeler
-
-### Oregon::Wheeler Links
-
-| link type | link |
-| --- | --- |
-| info | [Oregon Health Authority, Public Health Division](https://www.wheelercountyoregon.com/covid-19-wheeler-county) |
-| scheduling_phone | [971-762-0527](tel:971-762-0527) |
-
-
-## Oregon::Yamhill
-
-### Oregon::Yamhill Links
-
-| link type | link |
-| --- | --- |
-| info | [Oregon Health Authority, Public Health Division](https://hhs.co.yamhill.or.us/publichealth/page/covid-19-vaccines) |
-| scheduling_phone | [503-474-4100](tel:503-474-4100) |
-
-
-### Oregon::Yamhill Active Phase (2)
-
-# Palau
-
-## Palau Links
+### name.usa::cdc/palau/state_name Links
 
 | link type | link |
 | --- | --- |
@@ -2460,14 +733,14 @@ What you should know:
 | scheduling_phone | [680-488-0555](tel:680-488-0555) |
 
 
-## Palau Active Phase (18_and_older)
+### name.usa::cdc/palau/state_name Active Phase (18_and_older)
 
 * Are you at least 18 years of age?
 	* All residents ages 18 and older are eligible to get the vaccine in Palau.
 
-# Pennsylvania
+## name.usa::cdc/pennsylvania/state_name
 
-## Pennsylvania Links
+### name.usa::cdc/pennsylvania/state_name Links
 
 | link type | link |
 | --- | --- |
@@ -2476,43 +749,29 @@ What you should know:
 | scheduling_phone | [1-877-724-3258](tel:1-877-724-3258) |
 
 
-## Pennsylvania Active Phase (2)
+### name.usa::cdc/pennsylvania/state_name Active Phase (2)
 
 * Are you at least 16 years of age?
 	* ​All individuals not previously covered who are 16 and older and do not have a contraindication to the vaccine (note that at this time, only the Pfizer-BioNTech product is approved for those age 16 and 17)
 
-## Pennsylvania Regions
+## name.usa::cdc/puerto_rico/state_name
 
-## Pennsylvania::Philadelphia
-
-### Pennsylvania::Philadelphia Links
-
-| link type | link |
-| --- | --- |
-| info | [Pennsylvania Department of Health](https://www.phila.gov/programs/coronavirus-disease-2019-covid-19/) |
-| scheduling_phone | [(800) 722-7112](tel:(800) 722-7112) |
-
-
-### Pennsylvania::Philadelphia Active Phase (2)
-
-# Puerto Rico
-
-## Puerto Rico Links
+### name.usa::cdc/puerto_rico/state_name Links
 
 | link type | link |
 | --- | --- |
 | eligibility_plan | [https://www.vacunatepr.com/fases-vacunacion-covid-19](https://www.vacunatepr.com/fases-vacunacion-covid-19) |
-| info | [Puerto Rico Department of Health (Departamento de Salud, Gobierno de Puerto Rico)  (en español)](http://www.salud.gov.pr/Pages/coronavirus.aspx) |
+| info | [Puerto Rico Department of Health (Departamento de Salud, Gobierno de Puerto Rico) (en español)](http://www.salud.gov.pr/Pages/coronavirus.aspx) |
 | scheduling_phone | [(787) 999-6202](tel:(787) 999-6202) |
 
 
-## Puerto Rico Active Phase (16_and_up)
+### name.usa::cdc/puerto_rico/state_name Active Phase (16_and_up)
 
 * Are you at least 16 years of age?
 
-# Rhode Island
+## name.usa::cdc/rhode_island/state_name
 
-## Rhode Island Links
+### name.usa::cdc/rhode_island/state_name Links
 
 | link type | link |
 | --- | --- |
@@ -2521,194 +780,13 @@ What you should know:
 | scheduling_phone | [844-930-1779](tel:844-930-1779) |
 
 
-## Rhode Island Active Phase (current)
+### name.usa::cdc/rhode_island/state_name Active Phase (current)
 
 * Are you at least 16 years of age?
 
-## Rhode Island Regions
+## name.usa::cdc/south_carolina/state_name
 
-## Rhode Island::Barrington
-
-### Rhode Island::Barrington Links
-
-| link type | link |
-| --- | --- |
-| info | [Rhode Island Department of Health](https://www.barrington.ri.gov/) |
-| scheduling | [Schedule a Vaccination](https://barringtonlearningctr.org/event-4153003) |
-| scheduling_phone | [(401) 247-1926](tel:(401) 247-1926) |
-
-
-## Rhode Island::Charlestown
-
-### Rhode Island::Charlestown Links
-
-| link type | link |
-| --- | --- |
-| info | [Rhode Island Department of Health](https://www.charlestownri.org/covid19) |
-| scheduling_phone | [401-218-1968](tel:401-218-1968) |
-
-
-## Rhode Island::Cumberland
-
-### Rhode Island::Cumberland Links
-
-| link type | link |
-| --- | --- |
-| info | [Rhode Island Department of Health](https://www.cumberlandri.org/covid-19-vaccine-info/) |
-| scheduling | [Schedule a Vaccination](https://docs.google.com/forms/d/e/1FAIpQLSdOakNkylozT0632cjIxql_hMkW1vdO5DR3Ztuf2QFlzLf3nQ/viewform) |
-| scheduling_phone | [401-335-5888](tel:401-335-5888) |
-
-
-## Rhode Island::East Providence
-
-### Rhode Island::East Providence Links
-
-| link type | link |
-| --- | --- |
-| info | [Rhode Island Department of Health](https://eastprovidenceri.gov/COVID-19) |
-| scheduling | [Schedule a Vaccination](https://forms.office.com/Pages/ResponsePage.aspx?id=YE0olO7ffEq0TvvkRuQeJTXKGHd4Tg9NkNCx2R08jS1UMk5FVFBBQjJROVlMMVNVWUxLQjFGVElBRC4u) |
-| scheduling_phone | [401-533-9812](tel:401-533-9812) |
-
-
-## Rhode Island::Exeter
-
-### Rhode Island::Exeter Links
-
-| link type | link |
-| --- | --- |
-| info | [Rhode Island Department of Health](http://town.exeter.ri.us/) |
-| scheduling | [Schedule a Vaccination](https://forms.office.com/Pages/ResponsePage.aspx?id=J6m5eb94vkKt48ITjSNEcjws_dWtTi1CqgFvFCWLiL1UQlpNNUZVNzgxNVFCOFNMWEU0SzZDUTdLOC4u) |
-
-
-## Rhode Island::Hopkinton
-
-### Rhode Island::Hopkinton Links
-
-| link type | link |
-| --- | --- |
-| info | [Rhode Island Department of Health](http://www.hopkintonri.org/covid-19/) |
-| scheduling | [Schedule a Vaccination](http://www.hopkintonri.org/noitfication-list/) |
-| scheduling_phone | [(401) 388-8476](tel:(401) 388-8476) |
-
-
-## Rhode Island::Jamestown
-
-### Rhode Island::Jamestown Links
-
-| link type | link |
-| --- | --- |
-| info | [Rhode Island Department of Health](https://www.jamestownri.gov/town-departments/police/covid-vaccine) |
-| scheduling_phone | [423-1213 Ext 4328](tel:423-1213 Ext 4328) |
-
-
-## Rhode Island::Little Compton
-
-### Rhode Island::Little Compton Links
-
-| link type | link |
-| --- | --- |
-| info | [Rhode Island Department of Health](http://www.littlecomptonri.org/news_detail_T6_R144.php) |
-| scheduling_phone | [635-4400](tel:635-4400) |
-
-
-## Rhode Island::Middletown
-
-### Rhode Island::Middletown Links
-
-| link type | link |
-| --- | --- |
-| info | [Rhode Island Department of Health](https://middletownri.com/covid-19/) |
-| scheduling | [Schedule a Vaccination](https://www.surveymonkey.com/r/VaccineMiddletown) |
-| scheduling_phone | [401-842-6565](tel:401-842-6565) |
-
-
-## Rhode Island::Narragansett
-
-### Rhode Island::Narragansett Links
-
-| link type | link |
-| --- | --- |
-| info | [Rhode Island Department of Health](https://www.narragansettri.gov/vaccination) |
-| scheduling_phone | [401-782-0611](tel:401-782-0611) |
-
-
-## Rhode Island::Newport
-
-### Rhode Island::Newport Links
-
-| link type | link |
-| --- | --- |
-| scheduling | [Schedule a Vaccination](https://www.cityofnewport.com/en-us/city-hall/departments/fire/community-resources/covid19/vaccine) |
-| scheduling_phone | [(401) 846-7426](tel:(401) 846-7426) |
-
-
-## Rhode Island::North Providence
-
-### Rhode Island::North Providence Links
-
-| link type | link |
-| --- | --- |
-| info | [Rhode Island Department of Health](https://northprovidenceri.gov/vaccine/) |
-| scheduling_phone | [401-437-6418](tel:401-437-6418) |
-
-
-## Rhode Island::Pawtucket
-
-### Rhode Island::Pawtucket Links
-
-| link type | link |
-| --- | --- |
-| info | [Rhode Island Department of Health](http://www.pawtucketri.com/COVID19) |
-| scheduling_phone | [855-843-7620](tel:855-843-7620) |
-
-
-## Rhode Island::Portsmouth
-
-### Rhode Island::Portsmouth Links
-
-| link type | link |
-| --- | --- |
-| info | [Rhode Island Department of Health](https://www.portsmouthri.com/1594/Portsmouth-Specific-Coronavirus-Informat) |
-| workflow | [Vaccine Eligibility Questionnaire](https://www.portsmouthri.com/1642/Vaccine-Eligibility-Procedures) |
-| scheduling | [Schedule a Vaccination](https://rwu.co1.qualtrics.com/jfe/form/SV_eJrE4ouKOsmDWku) |
-| scheduling_phone | [(401) 643-0323](tel:(401) 643-0323) |
-
-
-## Rhode Island::Providence
-
-### Rhode Island::Providence Links
-
-| link type | link |
-| --- | --- |
-| info | [Rhode Island Department of Health](https://www.providenceri.gov/vaccinate/) |
-| scheduling | [Schedule a Vaccination](http://www.providenceri.gov/vaccine-notification-eng/) |
-| scheduling_phone | [(401)421-2489](tel:(401)421-2489) |
-
-
-## Rhode Island::Smithfield
-
-### Rhode Island::Smithfield Links
-
-| link type | link |
-| --- | --- |
-| info | [Rhode Island Department of Health](https://www.smithfieldri.com/vaccine/) |
-| scheduling | [Schedule a Vaccination](https://www.smithfieldri.com/vaccine/) |
-| scheduling_phone | [233-1010](tel:233-1010) |
-
-
-## Rhode Island::Tiverton
-
-### Rhode Island::Tiverton Links
-
-| link type | link |
-| --- | --- |
-| info | [Rhode Island Department of Health](https://tivertoncovid19.com/) |
-| scheduling_phone | [(401) 222-8022](tel:(401) 222-8022) |
-
-
-# South Carolina
-
-## South Carolina Links
+### name.usa::cdc/south_carolina/state_name Links
 
 | link type | link |
 | --- | --- |
@@ -2717,14 +795,14 @@ What you should know:
 | scheduling_phone | [1-866-365-8110](tel:1-866-365-8110) |
 
 
-## South Carolina Active Phase (16_and_older)
+### name.usa::cdc/south_carolina/state_name Active Phase (16_and_older)
 
 * Are you at least 16 years of age?
 	* South Carolina's phased approach to its COVID-19 vaccine rollout was focused on saving lives, which is why those most at risk for severe illness and death were prioritized to receive vaccine first. With more and more vaccine becoming available and more and more people receiving their shots, South Carolina is now able to open vaccines to anyone 16 and older.
 
-# South Dakota
+## name.usa::cdc/south_dakota/state_name
 
-## South Dakota Links
+### name.usa::cdc/south_dakota/state_name Links
 
 | link type | link |
 | --- | --- |
@@ -2734,13 +812,13 @@ What you should know:
 | providers | [View locations providing vaccines](https://doh.sd.gov/COVID/Vaccine/ProviderMap/default.aspx) |
 
 
-## South Dakota Active Phase (2)
+### name.usa::cdc/south_dakota/state_name Active Phase (2)
 
 * Are you at least 16 years of age?
 
-# Tennessee
+## name.usa::cdc/tennessee/state_name
 
-## Tennessee Links
+### name.usa::cdc/tennessee/state_name Links
 
 | link type | link |
 | --- | --- |
@@ -2752,37 +830,13 @@ What you should know:
 | scheduling | [Schedule a Vaccination](https://vaccinate.tn.gov/) |
 
 
-## Tennessee Active Phase (3)
+### name.usa::cdc/tennessee/state_name Active Phase (3)
 
 * Are you at least 16 years of age?
 
-## Tennessee Regions
+## name.usa::cdc/texas/state_name
 
-## Tennessee::Davidson
-
-### Tennessee::Davidson Links
-
-| link type | link |
-| --- | --- |
-| scheduling_phone | [615-862-7777](tel:615-862-7777) |
-
-
-### Tennessee::Davidson Active Phase (3)
-
-## Tennessee::Hamilton
-
-### Tennessee::Hamilton Links
-
-| link type | link |
-| --- | --- |
-| scheduling_phone | [423-209-8383](tel:423-209-8383) |
-
-
-### Tennessee::Hamilton Active Phase (3)
-
-# Texas
-
-## Texas Links
+### name.usa::cdc/texas/state_name Links
 
 | link type | link |
 | --- | --- |
@@ -2790,14 +844,14 @@ What you should know:
 | providers | [View locations providing vaccines](https://www.dshs.state.tx.us/coronavirus/immunize/vaccine-hubs.aspx#hublist) |
 
 
-## Texas Active Phase (current)
+### name.usa::cdc/texas/state_name Active Phase (current)
 
 * Are you at least 16 years of age?
 	* The state's Expert Vaccine Allocation Panel recommended opening vaccination to everyone who falls under the current Food and Drug Administration emergency use authorizations. All vaccines are authorized for people age 18 and older. The Pfizer vaccine is authorized for people 16 and older. (see [here](https://www.dshs.state.tx.us/coronavirus/immunize/vaccine.aspx))
 
-# U.S. Virgin Islands
+## name.usa::cdc/us_virgin_islands/state_name
 
-## U.S. Virgin Islands Links
+### name.usa::cdc/us_virgin_islands/state_name Links
 
 | link type | link |
 | --- | --- |
@@ -2808,41 +862,13 @@ What you should know:
 | scheduling_phone | [(340) 777 8227](tel:(340) 777 8227) |
 
 
-## U.S. Virgin Islands Active Phase (16_and_older)
+### name.usa::cdc/us_virgin_islands/state_name Active Phase (16_and_older)
 
 * Are you at least 16 years of age?
 
-## U.S. Virgin Islands Regions
+## name.usa::cdc/utah/state_name
 
-## U.S. Virgin Islands::St. Croix
-
-### U.S. Virgin Islands::St. Croix Links
-
-| link type | link |
-| --- | --- |
-| eligibility_plan | [https://www.covid19usvi.com/current-status](https://www.covid19usvi.com/current-status) |
-| info | [US Virgin Islands Department of Health](https://www.covid19usvi.com/) |
-| providers | [View locations providing vaccines](https://www.covid19usvi.com/vaccines) |
-| scheduling | [Schedule a Vaccination](https://covid19vaccines-stx.usvi.care/) |
-| scheduling_phone | [(340) 777 8227](tel:(340) 777 8227) |
-
-
-## U.S. Virgin Islands::St. Thomas
-
-### U.S. Virgin Islands::St. Thomas Links
-
-| link type | link |
-| --- | --- |
-| eligibility_plan | [https://www.covid19usvi.com/current-status](https://www.covid19usvi.com/current-status) |
-| info | [US Virgin Islands Department of Health](https://www.covid19usvi.com/) |
-| providers | [View locations providing vaccines](https://www.covid19usvi.com/vaccines) |
-| scheduling | [Schedule a Vaccination](https://covid19vaccines-stt.usvi.care/) |
-| scheduling_phone | [(340) 777 8227](tel:(340) 777 8227) |
-
-
-# Utah
-
-## Utah Links
+### name.usa::cdc/utah/state_name Links
 
 | link type | link |
 | --- | --- |
@@ -2851,157 +877,13 @@ What you should know:
 | eligibility | [https://coronavirus.utah.gov/vaccine-distribution/#eligibility](https://coronavirus.utah.gov/vaccine-distribution/#eligibility) |
 
 
-## Utah Active Phase (16_and_older)
+### name.usa::cdc/utah/state_name Active Phase (16_and_older)
 
 * Are you at least 16 years of age?
 
-## Utah Regions
+## name.usa::cdc/vermont/state_name
 
-## Utah::Bear River
-
-### Utah::Bear River Links
-
-| link type | link |
-| --- | --- |
-| info | [Utah Department of Health](http://brhd.org/covid-19-vaccine-information) |
-| scheduling_phone | [1-800-456-7707](tel:1-800-456-7707) |
-
-
-## Utah::Central Utah
-
-### Utah::Central Utah Links
-
-| link type | link |
-| --- | --- |
-| info | [Utah Department of Health](https://centralutahpublichealth.org/coronavirus-information/) |
-| providers | [View locations providing vaccines](https://centralutahpublichealth.org/coronavirus-information/) |
-| scheduling | [Schedule a Vaccination](https://patportal.cdpehs.com/ezEMRxPHR/html/login/newPortalReg.jsp) |
-
-
-## Utah::Davis
-
-### Utah::Davis Links
-
-| link type | link |
-| --- | --- |
-| info | [Utah Department of Health](https://www.daviscountyutah.gov/health/covid-19/vaccine) |
-| scheduling | [Schedule a Vaccination](https://webportal.daviscountyutah.gov/App/CovidPublic/home) |
-| scheduling_phone | [801-525-4900](tel:801-525-4900) |
-
-
-## Utah::Salt Lake
-
-### Utah::Salt Lake Links
-
-| link type | link |
-| --- | --- |
-| info | [Utah Department of Health](https://slco.org/health/COVID-19/vaccine/) |
-| scheduling_phone | [385-468-7468](tel:385-468-7468) |
-| scheduling | [Schedule a Vaccination](https://vaccinate.utah.gov/s/login/?language=en_US) |
-
-
-## Utah::San Juan
-
-### Utah::San Juan Links
-
-| link type | link |
-| --- | --- |
-| info | [Utah Department of Health](https://sanjuanpublichealth.org/vaccine-data-information) |
-| scheduling | [Schedule a Vaccination](https://vaccinate.utah.gov/s/login/?language=en_US) |
-| scheduling_phone | [435-587-3838](tel:435-587-3838) |
-
-
-## Utah::Southeast Utah
-
-### Utah::Southeast Utah Links
-
-| link type | link |
-| --- | --- |
-| eligibility | [https://4e6bd201-e3fb-408c-938c-c65baf6521c2.filesusr.com/ugd/0df2c0_f32289e4c5854c819be5c2ac6ae371d7.pdf](https://4e6bd201-e3fb-408c-938c-c65baf6521c2.filesusr.com/ugd/0df2c0_f32289e4c5854c819be5c2ac6ae371d7.pdf) |
-| info | [Utah Department of Health](https://www.seuhealth.com/covid-vaccine) |
-| scheduling | [Schedule a Vaccination](https://www.seuhealth.com/vaccine-scheduling) |
-
-
-## Utah::Southwest Utah
-
-### Utah::Southwest Utah Links
-
-| link type | link |
-| --- | --- |
-| eligibility | [https://coronavirus.utah.gov/vaccine-distribution/#eligibility](https://coronavirus.utah.gov/vaccine-distribution/#eligibility) |
-| info | [Utah Department of Health](https://swuhealth.org/covid-vaccine/) |
-| scheduling_phone | [435-986-2549](tel:435-986-2549) |
-
-
-## Utah::Summit
-
-### Utah::Summit Links
-
-| link type | link |
-| --- | --- |
-| info | [Utah Department of Health](http://summitcountyhealth.org/vaccine/) |
-| workflow | [Vaccine Eligibility Questionnaire](http://summitcountyhealth.org/vaccine/) |
-| scheduling_phone | [435-333-0050](tel:435-333-0050) |
-
-
-## Utah::Tooele
-
-### Utah::Tooele Links
-
-| link type | link |
-| --- | --- |
-| info | [Utah Department of Health](https://tooelehealth.org/covid-19-vaccination-plan/) |
-| scheduling | [Schedule a Vaccination](https://tooelehealth.jotform.com/210105171161134) |
-| scheduling_phone | [435-277-2484](tel:435-277-2484) |
-
-
-## Utah::TriCounty
-
-### Utah::TriCounty Links
-
-| link type | link |
-| --- | --- |
-| eligibility | [https://coronavirus.utah.gov/vaccine-distribution/#eligibility](https://coronavirus.utah.gov/vaccine-distribution/#eligibility) |
-| info | [Utah Department of Health](https://tricountyhealth.com/local-covid-update/) |
-| scheduling_phone | [435-247-1177](tel:435-247-1177) |
-
-
-## Utah::Utah County
-
-### Utah::Utah County Links
-
-| link type | link |
-| --- | --- |
-| scheduling | [Schedule a Vaccination](https://healthevents.utahcounty.gov/) |
-| scheduling_phone | [1-800-456-7707](tel:1-800-456-7707) |
-| info | [Utah Department of Health](https://health.utahcounty.gov/covid-19-vaccine/) |
-
-
-## Utah::Wasatch
-
-### Utah::Wasatch Links
-
-| link type | link |
-| --- | --- |
-| eligibility | [http://coronavirus.wasatch.utah.gov/Portals/9/Eligible%20Medical%20Conditions%20%28Effective%203_8_21%29.pdf](http://coronavirus.wasatch.utah.gov/Portals/9/Eligible%20Medical%20Conditions%20%28Effective%203_8_21%29.pdf) |
-| info | [Utah Department of Health](http://coronavirus.wasatch.utah.gov/) |
-| scheduling_phone | [435-657-3276](tel:435-657-3276) |
-
-
-## Utah::Weber-Morgan
-
-### Utah::Weber-Morgan Links
-
-| link type | link |
-| --- | --- |
-| info | [Utah Department of Health](http://www.webermorganhealth.org/) |
-| scheduling | [Schedule a Vaccination](https://vaccinate.utah.gov/s/login/?language=en_US) |
-| scheduling_phone | [(801) 399-7777](tel:(801) 399-7777) |
-
-
-# Vermont
-
-## Vermont Links
+### name.usa::cdc/vermont/state_name Links
 
 | link type | link |
 | --- | --- |
@@ -3012,13 +894,13 @@ What you should know:
 | scheduling_phone | [855-722-7878](tel:855-722-7878) |
 
 
-## Vermont Active Phase (2)
+### name.usa::cdc/vermont/state_name Active Phase (2)
 
 * Are you at least 16 years of age?
 
-# Virginia
+## name.usa::cdc/virginia/state_name
 
-## Virginia Links
+### name.usa::cdc/virginia/state_name Links
 
 | link type | link |
 | --- | --- |
@@ -3028,26 +910,13 @@ What you should know:
 | scheduling_phone | [877-829-4682](tel:877-829-4682) |
 
 
-## Virginia Active Phase (2)
+### name.usa::cdc/virginia/state_name Active Phase (2)
 
 * Are you at least 16 years of age?
 
-## Virginia Regions
+## name.usa::cdc/washington/state_name
 
-## Virginia::Alexandria
-
-### Virginia::Alexandria Links
-
-| link type | link |
-| --- | --- |
-| info | [Virginia Department of Health](https://www.alexandriava.gov/Vaccines) |
-
-
-### Virginia::Alexandria Active Phase (2)
-
-# Washington
-
-## Washington Links
+### name.usa::cdc/washington/state_name Links
 
 | link type | link |
 | --- | --- |
@@ -3058,33 +927,13 @@ What you should know:
 | scheduling_phone | [1-888-856-5816](tel:1-888-856-5816) |
 
 
-## Washington Active Phase (2)
+### name.usa::cdc/washington/state_name Active Phase (2)
 
 * Are you at least 16 years of age?
 
-## Washington Regions
+## name.usa::cdc/west_virginia/state_name
 
-## Washington::King
-
-### Washington::King Links
-
-| link type | link |
-| --- | --- |
-| info | [Vaccine Information Page](https://kingcounty.gov/depts/health/covid-19/vaccine/distribution.aspx) |
-
-
-## Washington::Kitsap
-
-### Washington::Kitsap Links
-
-| link type | link |
-| --- | --- |
-| info | [Vaccine Information Page](https://kitsappublichealth.org/CommunityHealth/CoronaVirus_Vaccine.php) |
-
-
-# West Virginia
-
-## West Virginia Links
+### name.usa::cdc/west_virginia/state_name Links
 
 | link type | link |
 | --- | --- |
@@ -3093,13 +942,13 @@ What you should know:
 | scheduling_phone | [1-833-734-0965](tel:1-833-734-0965) |
 
 
-## West Virginia Active Phase (16_and_older)
+### name.usa::cdc/west_virginia/state_name Active Phase (16_and_older)
 
 * Are you at least 16 years of age?
 
-# Wisconsin
+## name.usa::cdc/wisconsin/state_name
 
-## Wisconsin Links
+### name.usa::cdc/wisconsin/state_name Links
 
 | link type | link |
 | --- | --- |
@@ -3109,560 +958,16 @@ What you should know:
 | scheduling_phone | [844-684-1064](tel:844-684-1064) |
 
 
-## Wisconsin Active Phase (2)
+### name.usa::cdc/wisconsin/state_name Active Phase (2)
 
 * Are you at least 16 years of age?
 	* All individuals ages 16 and older became eligible for the vaccine on April 5. Remember vaccine providers will prioritize previously eligible groups before vaccinating this group.
 
 Please note the Pfizer vaccine is authorized for use in people age 16 and older. The Moderna and Johnson & Johnson vaccines are authorized for use in people age 18 and older
 
-## Wisconsin Regions
+## name.usa::cdc/wyoming/state_name
 
-## Wisconsin::Appleton
-
-### Wisconsin::Appleton Links
-
-| link type | link |
-| --- | --- |
-| info | [Wisconsin Department of Health Services](https://covid-19-appleton.hub.arcgis.com/) |
-| scheduling | [Schedule a Vaccination](https://foxcitiescovidvaccine.com/) |
-| scheduling_phone | [920-832-6429](tel:920-832-6429) |
-
-
-## Wisconsin::Ashland
-
-### Wisconsin::Ashland Links
-
-| link type | link |
-| --- | --- |
-| info | [Wisconsin Department of Health Services](https://co.ashland.wi.us/covid_vaccination) |
-| scheduling | [Schedule a Vaccination](https://co.ashland.wi.us/covid_vaccination) |
-| scheduling_phone | [715-682-7028](tel: 715-682-7028) |
-
-
-## Wisconsin::Barron
-
-### Wisconsin::Barron Links
-
-| link type | link |
-| --- | --- |
-| info | [Wisconsin Department of Health Services](https://www.barroncountywi.gov/index.asp?Type=B_PR&SEC={A03C10D0-957E-49C9-AE31-BE9B081F026D}&DE={81B3EAFA-2410-4701-84D1-2D2037166EEB}) |
-| scheduling | [Schedule a Vaccination](https://www.surveymonkey.com/r/VRLDB7Y) |
-| scheduling_phone | [715-537-6123](tel:715-537-6123) |
-
-
-## Wisconsin::Bayfield
-
-### Wisconsin::Bayfield Links
-
-| link type | link |
-| --- | --- |
-| info | [Wisconsin Department of Health Services](https://www.bayfieldcounty.org/1178/CORONAVIRUS-COVID-19) |
-| scheduling | [Schedule a Vaccination](https://www.bayfieldcounty.wi.gov/FormCenter/Health-8/Online-Form-to-Register-for-COVID19-Vacc-143) |
-| scheduling_phone | [(715) 373-3324](tel:(715) 373-3324) |
-
-
-## Wisconsin::Buffalo
-
-### Wisconsin::Buffalo Links
-
-| link type | link |
-| --- | --- |
-| info | [Wisconsin Department of Health Services](https://www.buffalocounty.com/489/COVID-19) |
-| scheduling_phone | [608-685-4412](tel:608-685-4412) |
-
-
-## Wisconsin::Burnett
-
-### Wisconsin::Burnett Links
-
-| link type | link |
-| --- | --- |
-| info | [Wisconsin Department of Health Services](https://www.burnettcounty.com/1206/COVID-19-Vaccine-Information) |
-| scheduling | [Schedule a Vaccination](https://www.burnettcounty.com/1206/COVID-19-Vaccine-Information) |
-| scheduling_phone | [715-349-7600](tel:715-349-7600) |
-
-
-## Wisconsin::Calumet
-
-### Wisconsin::Calumet Links
-
-| link type | link |
-| --- | --- |
-| info | [Wisconsin Department of Health Services](https://www.calumetcounty.org/COVID-19) |
-| scheduling_phone | [(920) 849-1466](tel:(920) 849-1466) |
-
-
-## Wisconsin::Chippewa
-
-### Wisconsin::Chippewa Links
-
-| link type | link |
-| --- | --- |
-| info | [Wisconsin Department of Health Services](https://covid19-chipcogis.hub.arcgis.com/) |
-| scheduling | [Schedule a Vaccination](https://covid19-chipcogis.hub.arcgis.com/pages/covid-19-vaccine-appointments) |
-| scheduling_phone | [715-726-7900](tel:715-726-7900) |
-
-
-## Wisconsin::Clark
-
-### Wisconsin::Clark Links
-
-| link type | link |
-| --- | --- |
-| info | [Wisconsin Department of Health Services](https://www.clarkcountywi.com/vaccine-information) |
-| scheduling | [Schedule a Vaccination](https://www.signupgenius.com/go/3-18-21-clarkcountydrivethroughclinic) |
-| scheduling_phone | [715-743-5105](tel:715-743-5105) |
-
-
-## Wisconsin::Columbia
-
-### Wisconsin::Columbia Links
-
-| link type | link |
-| --- | --- |
-| info | [Wisconsin Department of Health Services](https://www.co.columbia.wi.us/columbiacounty/hhs/HealthHumanService/PublicHealth/Coronavirus/tabid/9196/Default.aspx) |
-| scheduling | [Schedule a Vaccination](https://www.co.columbia.wi.us/ColumbiaCounty/hhs/HealthHumanService/PublicHealth/Coronavirus/VaccineClinicFull/tabid/9271/Default.aspx) |
-| scheduling_phone | [608-742-9227](tel:608-742-9227) |
-
-
-## Wisconsin::Crawford
-
-### Wisconsin::Crawford Links
-
-| link type | link |
-| --- | --- |
-| info | [Wisconsin Department of Health Services](https://www.crawfordcountywi.org/health.html) |
-| scheduling | [Schedule a Vaccination](https://form.jotform.com/210196226105143) |
-| scheduling_phone | [608-326-0229](tel:608-326-0229) |
-
-
-## Wisconsin::Dane
-
-### Wisconsin::Dane Links
-
-| link type | link |
-| --- | --- |
-| info | [Wisconsin Department of Health Services](https://publichealthmdc.com/coronavirus/covid-19-vaccine) |
-| scheduling | [Schedule a Vaccination](http://survey.alchemer.com/s3/6183089/Dane-COVID-Vaccine-Sign-Up-Form) |
-| scheduling_phone | [608-266-4821](tel:608-266-4821) |
-
-
-## Wisconsin::Dodge
-
-### Wisconsin::Dodge Links
-
-| link type | link |
-| --- | --- |
-| info | [Wisconsin Department of Health Services](https://www.co.dodge.wi.gov/departments/departments-e-m/human-services-health-department/coronavirus-information/covid-19-vaccination) |
-| scheduling | [Schedule a Vaccination](https://www.co.dodge.wi.gov/departments/departments-e-m/human-services-health-department/coronavirus-information/covid-19-vaccination/covid-19-vaccine-interest-form) |
-| scheduling_phone | [920-386-4304](tel: 920-386-4304) |
-
-
-## Wisconsin::Door
-
-### Wisconsin::Door Links
-
-| link type | link |
-| --- | --- |
-| info | [Wisconsin Department of Health Services](https://www.co.door.wi.gov/909/Situation-Update-March-11-2021) |
-| scheduling | [Schedule a Vaccination](https://dcphwaitlist.timetap.com/#/) |
-| scheduling_phone | [1-844-684-1064](tel:1-844-684-1064) |
-
-
-## Wisconsin::Eau Claire
-
-### Wisconsin::Eau Claire Links
-
-| link type | link |
-| --- | --- |
-| info | [Wisconsin Department of Health Services](https://coronavirus-and-covid-19-information-hub-eccounty.hub.arcgis.com/) |
-| scheduling | [Schedule a Vaccination](https://coronavirus-and-covid-19-information-hub-eccounty.hub.arcgis.com/pages/covid-19-vaccine-appointments) |
-| scheduling_phone | [715) 831-7425](tel:715) 831-7425) |
-
-
-## Wisconsin::Florence
-
-### Wisconsin::Florence Links
-
-| link type | link |
-| --- | --- |
-| info | [Wisconsin Department of Health Services](https://florencewipublichealth.com/covid.htm) |
-| scheduling | [Schedule a Vaccination](https://www.signupgenius.com/go/10c0c4faeab2dabf5c70-covid4) |
-| scheduling_phone | [715-528-4837](tel:715-528-4837) |
-
-
-## Wisconsin::Forest
-
-### Wisconsin::Forest Links
-
-| link type | link |
-| --- | --- |
-| info | [Wisconsin Department of Health Services](http://forestcountypublichealth.org/) |
-| scheduling_phone | [715-478-3371](tel:715-478-3371) |
-
-
-## Wisconsin::Green
-
-### Wisconsin::Green Links
-
-| link type | link |
-| --- | --- |
-| info | [Wisconsin Department of Health Services](https://gcpublichealth.org/coronavirus/) |
-| scheduling | [Schedule a Vaccination](https://vaccinate.wi.gov/) |
-| scheduling_phone | [(608) 328-9390](tel:(608) 328-9390) |
-
-
-## Wisconsin::Iowa
-
-### Wisconsin::Iowa Links
-
-| link type | link |
-| --- | --- |
-| info | [Wisconsin Department of Health Services](https://www.iowacounty.org/departments/COVID-19/VaccineInformation) |
-| scheduling | [Schedule a Vaccination](https://www.signupgenius.com/go/10c0d4aada92fa5fcce9-vaccine) |
-| scheduling_phone | [608.930.9870](tel:608.930.9870) |
-
-
-## Wisconsin::Kenosha
-
-### Wisconsin::Kenosha Links
-
-| link type | link |
-| --- | --- |
-| info | [Wisconsin Department of Health Services](https://kenosha-county-covid-19-response-kenoshacounty.hub.arcgis.com/) |
-| scheduling | [Schedule a Vaccination](https://www.kenoshacounty.org/vaccine) |
-| scheduling_phone | [262-605-6799](tel:262-605-6799) |
-
-
-## Wisconsin::Kewaunee
-
-### Wisconsin::Kewaunee Links
-
-| link type | link |
-| --- | --- |
-| info | [Wisconsin Department of Health Services](https://www.kewauneeco.org/departments/public-health/) |
-| scheduling | [Schedule a Vaccination](https://www.kewauneeco.org/departments/public-health/general-information/contact-us/) |
-| scheduling_phone | [(920) 388-7160](tel:(920) 388-7160) |
-
-
-## Wisconsin::La Crosse
-
-### Wisconsin::La Crosse Links
-
-| link type | link |
-| --- | --- |
-| info | [Wisconsin Department of Health Services](https://www.lacrossecounty.org/covid19) |
-| scheduling | [Schedule a Vaccination](http://vaccinate.wi.gov/) |
-| scheduling_phone | [608-785-6240](tel:608-785-6240) |
-
-
-## Wisconsin::Lafayette
-
-### Wisconsin::Lafayette Links
-
-| link type | link |
-| --- | --- |
-| info | [Wisconsin Department of Health Services](https://www.lafayettecountywi.org/covid19) |
-| scheduling_phone | [608-776-4895](tel:608-776-4895) |
-
-
-## Wisconsin::Langlade
-
-### Wisconsin::Langlade Links
-
-| link type | link |
-| --- | --- |
-| info | [Wisconsin Department of Health Services](https://www.co.langlade.wi.us/departments/health-department/general/covid-19-vaccines/) |
-| scheduling | [Schedule a Vaccination](http://forms.gle/tpHjKbUDGWkjEjA2A) |
-| scheduling_phone | [608-266-1683](tel:608-266-1683) |
-
-
-## Wisconsin::Lincoln
-
-### Wisconsin::Lincoln Links
-
-| link type | link |
-| --- | --- |
-| info | [Wisconsin Department of Health Services](https://co.lincoln.wi.us/health/page/covid-19-vaccine) |
-| scheduling | [Schedule a Vaccination](https://hipaa.jotform.com/210314348090042) |
-| scheduling_phone | [715-539-1375](tel:715-539-1375) |
-
-
-## Wisconsin::Manitowoc
-
-### Wisconsin::Manitowoc Links
-
-| link type | link |
-| --- | --- |
-| info | [Wisconsin Department of Health Services](https://www.co.manitowoc.wi.us/departments/health-department/covid-19-information/) |
-| scheduling | [Schedule a Vaccination](https://app.acuityscheduling.com/schedule.php?owner=20765476&calendarID=4914714) |
-| scheduling_phone | [920-683-4155](tel:920-683-4155) |
-
-
-## Wisconsin::Milwaukee
-
-### Wisconsin::Milwaukee Links
-
-| link type | link |
-| --- | --- |
-| info | [Wisconsin Department of Health Services](https://city.milwaukee.gov/coronavirus) |
-| scheduling | [Schedule a Vaccination](https://mke-vaccines.egov.com/) |
-| scheduling_phone | [(414) 286-6800](tel:(414) 286-6800) |
-
-
-## Wisconsin::Monroe
-
-### Wisconsin::Monroe Links
-
-| link type | link |
-| --- | --- |
-| info | [Wisconsin Department of Health Services](https://healthymonroecowi.org/covid-19/) |
-| scheduling | [Schedule a Vaccination](https://hipaa.jotform.com/210146141990045) |
-| scheduling_phone | [608-269-8666](tel:608-269-8666) |
-
-
-## Wisconsin::Oneida
-
-### Wisconsin::Oneida Links
-
-| link type | link |
-| --- | --- |
-| info | [Wisconsin Department of Health Services](https://publichealth.co.oneida.wi.us/covid-19-vaccine/) |
-| scheduling | [Schedule a Vaccination](https://publichealth.co.oneida.wi.us/covid-19-vaccine-registration/) |
-| scheduling_phone | [715.369.6111](tel:715.369.6111) |
-
-
-## Wisconsin::Washington-Ozaukee
-
-### Wisconsin::Washington-Ozaukee Links
-
-| link type | link |
-| --- | --- |
-| info | [Wisconsin Department of Health Services](http://www.washozwi.gov/) |
-| scheduling | [Schedule a Vaccination](https://form.jotform.com/210616326165147) |
-| scheduling_phone | [844-684-1064](tel:844-684-1064) |
-
-
-## Wisconsin::Pepin
-
-### Wisconsin::Pepin Links
-
-| link type | link |
-| --- | --- |
-| info | [Wisconsin Department of Health Services](https://www.co.pepin.wi.us/index.asp?SEC=B2DD7216-4847-43E4-8194-54931F2D07C0&Type=B_BASIC) |
-| scheduling | [Schedule a Vaccination](https://forms.office.com/Pages/ResponsePage.aspx?id=Ro56gexDrkmjljL9IjHFehE3VKcHZWNJkTrUmML_z0lUNjVQRlhISENDVVRCMTdINVhBUkdZTFBVMi4u) |
-| scheduling_phone | [715-672-5961](tel:715-672-5961) |
-
-
-## Wisconsin::Pierce
-
-### Wisconsin::Pierce Links
-
-| link type | link |
-| --- | --- |
-| info | [Wisconsin Department of Health Services](https://covid-piercecounty-wi.hub.arcgis.com/) |
-| scheduling | [Schedule a Vaccination](https://piercecountycovid19vaccine.as.me/schedule.php?owner=21608524&template=weekly&id[]=PHPSESSID=uhfnqm94ocok1vad695orj2g7e) |
-| scheduling_phone | [844-684-1064](tel:844-684-1064) |
-
-
-## Wisconsin::Polk
-
-### Wisconsin::Polk Links
-
-| link type | link |
-| --- | --- |
-| info | [Wisconsin Department of Health Services](http://www.polkcountyhealthdept.org/home/covid-19-information/) |
-| scheduling | [Schedule a Vaccination](http://www.polkcountyhealthdept.org/home/covid-19-information/covid-19-vaccine-appointments/) |
-| scheduling_phone | [715-485-8400](tel:715-485-8400) |
-
-
-## Wisconsin::Portage
-
-### Wisconsin::Portage Links
-
-| link type | link |
-| --- | --- |
-| info | [Wisconsin Department of Health Services](https://www.co.portage.wi.us/department/health-and-human-services/division-of-public-health/vaccine-information) |
-| scheduling | [Schedule a Vaccination](https://wi-telegov.egov.com/portage-county) |
-| scheduling_phone | [715-345-5350](tel:715-345-5350) |
-
-
-## Wisconsin::Price
-
-### Wisconsin::Price Links
-
-| link type | link |
-| --- | --- |
-| info | [Wisconsin Department of Health Services](https://co.price.wi.us/970/COVID-19) |
-| scheduling_phone | [715-339-3054](tel:715-339-3054) |
-
-
-## Wisconsin::Racine
-
-### Wisconsin::Racine Links
-
-| link type | link |
-| --- | --- |
-| info | [Wisconsin Department of Health Services](https://www.racinecoronavirus.org/racine-covid-19-vaccine/) |
-| scheduling | [Schedule a Vaccination](https://www.surveymonkey.com/r/RacineCOVIDVaccineEligible) |
-| scheduling_phone | [262-636-9201](tel:262-636-9201) |
-
-
-## Wisconsin::Richland
-
-### Wisconsin::Richland Links
-
-| link type | link |
-| --- | --- |
-| info | [Wisconsin Department of Health Services](https://covid.co.richland.wi.us/vaccine-information/) |
-| scheduling | [Schedule a Vaccination](https://richlandhospitalclinics.rsvpify.com/) |
-| scheduling_phone | [608-647-8821](tel:608-647-8821) |
-
-
-## Wisconsin::Rock
-
-### Wisconsin::Rock Links
-
-| link type | link |
-| --- | --- |
-| info | [Wisconsin Department of Health Services](https://www.co.rock.wi.us/publichealth-familycommunity/publichealth-communicabledisease/coronavirus-disease-2019) |
-| scheduling | [Schedule a Vaccination](https://www.co.rock.wi.us/publichealth-familycommunity/publichealth-communicabledisease/coronavirus-disease-2019/232-departments-category/health-department/coronavirus/2436-coronavirus-vaccine) |
-| scheduling_phone | [608-757-5440](tel:608-757-5440) |
-
-
-## Wisconsin::Sauk
-
-### Wisconsin::Sauk Links
-
-| link type | link |
-| --- | --- |
-| info | [Wisconsin Department of Health Services](https://www.co.sauk.wi.us/publichealth/coronavirus) |
-| scheduling | [Schedule a Vaccination](https://www.signupgenius.com/go/10c0c4cafa629aafcce9-covid19) |
-| scheduling_phone | [608-355-3290](tel: 608-355-3290) |
-
-
-## Wisconsin::Shawano-Menominee
-
-### Wisconsin::Shawano-Menominee Links
-
-| link type | link |
-| --- | --- |
-| info | [Wisconsin Department of Health Services](https://www.co.shawano.wi.us/departments/?department=5c6edb95d748) |
-| scheduling | [Schedule a Vaccination](https://wi-telegov.egov.com/shawano-menominee-co?fbclid=IwAR0KAhNbm4MPwsN-ESwQ6_kygyd8SsB8VmZZjOEZpgTPy1w_3AP7am7SYNk) |
-| scheduling_phone | [715-526-4818](tel:715-526-4818) |
-
-
-## Wisconsin::Sheboygan
-
-### Wisconsin::Sheboygan Links
-
-| link type | link |
-| --- | --- |
-| info | [Wisconsin Department of Health Services](https://www.sheboygancounty.com/departments/departments-f-q/health-and-human-services/public-health/communicable-disease/coronavirus-covid-19) |
-| scheduling | [Schedule a Vaccination](https://wi-telegov.egov.com/Sheboygan-Vaccines/AppointmentWizard) |
-
-
-## Wisconsin::St. Croix
-
-### Wisconsin::St. Croix Links
-
-| link type | link |
-| --- | --- |
-| info | [Wisconsin Department of Health Services](https://www.sccwi.gov/982/COVID-19-Vaccine) |
-| scheduling | [Schedule a Vaccination](https://forms.office.com/Pages/ResponsePage.aspx?id=Ubapzb9Es06zkGL8S873L_gE7FqZBJxHkPUYb1r024FUNkFOTTcwWUZTOERXNlo3U0c3T1BGODZUVi4u) |
-| scheduling_phone | [715-246-8263](tel: 715-246-8263) |
-
-
-## Wisconsin::Walworth
-
-### Wisconsin::Walworth Links
-
-| link type | link |
-| --- | --- |
-| info | [Wisconsin Department of Health Services](https://wi-walworthcounty.civicplus.com/896/COVID-19-Vaccine-Information) |
-| scheduling | [Schedule a Vaccination](https://www.co.walworth.wi.us/FormCenter/Public-Health-Division-4/COVID19-Vaccine-Inquiry-Phase-1a-63) |
-| scheduling_phone | [(262) 741-3200](tel:(262) 741-3200) |
-
-
-## Wisconsin::Washburn
-
-### Wisconsin::Washburn Links
-
-| link type | link |
-| --- | --- |
-| info | [Wisconsin Department of Health Services](https://www.washburncodisaster.org/) |
-| scheduling | [Schedule a Vaccination](https://www.washburncodisaster.org/covid-vaccine-scheduling) |
-| scheduling_phone | [715-635-4402](tel:715-635-4402) |
-
-
-## Wisconsin::Watertown
-
-### Wisconsin::Watertown Links
-
-| link type | link |
-| --- | --- |
-| info | [Wisconsin Department of Health Services](https://www.ci.watertown.wi.us/covid-19_community_updates/index.php#.XnoSLYhKjIU) |
-| scheduling_phone | [888-519-8405](tel:888-519-8405) |
-
-
-## Wisconsin::Waukesha
-
-### Wisconsin::Waukesha Links
-
-| link type | link |
-| --- | --- |
-| info | [Wisconsin Department of Health Services](https://www.waukeshacounty.gov/HealthAndHumanServices/PublicHealth/public-health-preparedness/COVID19/covid-vaccine/) |
-| scheduling | [Schedule a Vaccination](https://forms.microsoft.com/Pages/ResponsePage.aspx?id=rHo-5yO_U0ezPfQFUpw_tqgEU4KKS6xBp9dghikserpUN1c1TjlONzlEQkw2VVhFTEwyR1RUV1k4VS4u) |
-| scheduling_phone | [262-548-7626](tel:262-548-7626) |
-
-
-## Wisconsin::Waupaca
-
-### Wisconsin::Waupaca Links
-
-| link type | link |
-| --- | --- |
-| info | [Wisconsin Department of Health Services](https://www.waupacacounty-wi.gov/departments/health_and_human_services/vaccine_information.php) |
-| scheduling | [Schedule a Vaccination](https://www.waupacacounty-wi.gov/departments/health_and_human_services/vaccine_information.php) |
-| scheduling_phone | [1-844-684-1064](tel:1-844-684-1064) |
-
-
-## Wisconsin::Waushara
-
-### Wisconsin::Waushara Links
-
-| link type | link |
-| --- | --- |
-| info | [Wisconsin Department of Health Services](https://www.co.waushara.wi.us/pview.aspx?catid=636&id=44912) |
-| scheduling_phone | [1-844-684-1064](tel:1-844-684-1064) |
-
-
-## Wisconsin::Winnebago
-
-### Wisconsin::Winnebago Links
-
-| link type | link |
-| --- | --- |
-| info | [Wisconsin Department of Health Services](https://www.co.winnebago.wi.us/health/divisions-program-areas/communicable-disease/covid-19-coronavirus/covid-19-vaccine/vaccine-1) |
-| scheduling | [Schedule a Vaccination](https://www.signupgenius.com/go/10c0c4ca8ad2baafdc52-march2) |
-| scheduling_phone | [920-232-3026](tel:920-232-3026) |
-
-
-## Wisconsin::Wood
-
-### Wisconsin::Wood Links
-
-| link type | link |
-| --- | --- |
-| info | [Wisconsin Department of Health Services](https://www.co.wood.wi.us/Departments/Health/CovidVaccination.aspx) |
-| scheduling | [Schedule a Vaccination](https://www.co.wood.wi.us/Departments/Health/CovidVaccineContact.aspx) |
-| scheduling_phone | [715-421-8931](tel:715-421-8931) |
-
-
-# Wyoming
-
-## Wyoming Links
+### name.usa::cdc/wyoming/state_name Links
 
 | link type | link |
 | --- | --- |
@@ -3671,304 +976,6 @@ Please note the Pfizer vaccine is authorized for use in people age 16 and older.
 | scheduling_phone | [800-438-5795](tel:800-438-5795) |
 
 
-## Wyoming Active Phase (18_and_older)
+### name.usa::cdc/wyoming/state_name Active Phase (18_and_older)
 
 * Are you at least 18 years of age?
-
-## Wyoming Regions
-
-## Wyoming::Albany
-
-### Wyoming::Albany Links
-
-| link type | link |
-| --- | --- |
-| info | [Wyoming Department of Health](https://www.publichealthlaramie.org/covid/) |
-| scheduling | [Schedule a Vaccination](https://mychart.uchealth.org/mhcweb/register.aspx) |
-| scheduling_phone | [307-766-8222](tel:307-766-8222) |
-
-
-### Wyoming::Albany Active Phase (16_and_older)
-
-## Wyoming::Big Horn
-
-### Wyoming::Big Horn Links
-
-| link type | link |
-| --- | --- |
-| info | [Wyoming Department of Health](https://www.bighorncountywy.gov/#covid) |
-| scheduling | [Schedule a Vaccination](https://wy.covidreadi.com/) |
-| scheduling_phone | [1-800-438-5795](tel:1-800-438-5795) |
-
-
-### Wyoming::Big Horn Active Phase (18_and_older)
-
-## Wyoming::Campbell
-
-### Wyoming::Campbell Links
-
-| link type | link |
-| --- | --- |
-| info | [Wyoming Department of Health](https://www.ccgov.net/2104/Coronavirus-COVID-19) |
-| scheduling | [Schedule a Vaccination](https://wy.covidreadi.com/) |
-| scheduling_phone | [1-800-438-5795](tel:1-800-438-5795) |
-
-
-### Wyoming::Campbell Active Phase (18_and_older)
-
-## Wyoming::Carbon
-
-### Wyoming::Carbon Links
-
-| link type | link |
-| --- | --- |
-| info | [Wyoming Department of Health](http://carbonwy.com/1157/COVID-19-Status) |
-| scheduling | [Schedule a Vaccination](https://wy.covidreadi.com/) |
-| scheduling_phone | [1-800-438-5795](tel:1-800-438-5795) |
-
-
-### Wyoming::Carbon Active Phase (18_and_older)
-
-## Wyoming::Converse
-
-### Wyoming::Converse Links
-
-| link type | link |
-| --- | --- |
-| info | [Wyoming Department of Health](https://conversecounty.org/473/COVID-19) |
-| scheduling | [Schedule a Vaccination](https://wy.covidreadi.com/) |
-| scheduling_phone | [1-800-438-5795](tel:1-800-438-5795) |
-
-
-### Wyoming::Converse Active Phase (18_and_older)
-
-## Wyoming::Crook
-
-### Wyoming::Crook Links
-
-| link type | link |
-| --- | --- |
-| info | [Wyoming Department of Health](https://www.crookcounty.wy.gov/departments/emergency_management/index.php) |
-| scheduling | [Schedule a Vaccination](https://wy.covidreadi.com/) |
-| scheduling_phone | [1-800-438-5795](tel:1-800-438-5795) |
-
-
-### Wyoming::Crook Active Phase (18_and_older)
-
-## Wyoming::Fremont
-
-### Wyoming::Fremont Links
-
-| link type | link |
-| --- | --- |
-| info | [Wyoming Department of Health](https://www.fremontcountywy.org/government/departments/public_health/covid-19.php) |
-| scheduling | [Schedule a Vaccination](https://docs.google.com/forms/d/e/1FAIpQLSdpmuAhg4tWNgEx7g7Oq9kysA6kzQLnUpCwrIFvvPShdOmoyQ/viewform?usp=sf_link) |
-| scheduling_phone | [800-438-5795](tel:800-438-5795) |
-
-
-### Wyoming::Fremont Active Phase (18_and_older)
-
-## Wyoming::Goshen
-
-### Wyoming::Goshen Links
-
-| link type | link |
-| --- | --- |
-| info | [Wyoming Department of Health](https://goshencounty.org/covid-19-goshen-county-community-information-3/) |
-| scheduling | [Schedule a Vaccination](https://wy.covidreadi.com/) |
-| scheduling_phone | [1-800-438-5795](tel:1-800-438-5795) |
-
-
-### Wyoming::Goshen Active Phase (18_and_older)
-
-## Wyoming::Hot Springs
-
-### Wyoming::Hot Springs Links
-
-| link type | link |
-| --- | --- |
-| info | [Wyoming Department of Health](https://www.hscounty.com/covid) |
-| scheduling | [Schedule a Vaccination](https://www.hscounty.com/vaccine) |
-| scheduling_phone | [1-800-438-5795](tel:1-800-438-5795) |
-
-
-### Wyoming::Hot Springs Active Phase (18_and_older)
-
-## Wyoming::Johnson
-
-### Wyoming::Johnson Links
-
-| link type | link |
-| --- | --- |
-| info | [Wyoming Department of Health](http://www.johnsoncountywyoming.org/covid-19/) |
-| scheduling | [Schedule a Vaccination](https://wy.covidreadi.com/) |
-| scheduling_phone | [1-800-438-5795](tel:1-800-438-5795) |
-
-
-### Wyoming::Johnson Active Phase (18_and_older)
-
-## Wyoming::Laramie
-
-### Wyoming::Laramie Links
-
-| link type | link |
-| --- | --- |
-| info | [Wyoming Department of Health](https://www.laramiecounty.com/_departments/Health/coronavirus_info.aspx) |
-| scheduling | [Schedule a Vaccination](https://form.jotform.com/203565004101034) |
-| scheduling_phone | [307-633-4000](tel:307-633-4000) |
-
-
-### Wyoming::Laramie Active Phase (16_and_older)
-
-## Wyoming::Lincoln
-
-### Wyoming::Lincoln Links
-
-| link type | link |
-| --- | --- |
-| info | [Wyoming Department of Health](https://www.lcwy.org/departments/public_health/covid-19_vaccine_.php) |
-| scheduling | [Schedule a Vaccination](https://docs.google.com/forms/d/1Ck2JSIG3O1t0EfeuO08S9YQGlStMf2AjFBKPSGRBSqE/viewform?edit_requested=true) |
-| scheduling_phone | [307-885-9598](tel:307-885-9598) |
-
-
-## Wyoming::Natrona
-
-### Wyoming::Natrona Links
-
-| link type | link |
-| --- | --- |
-| info | [Wyoming Department of Health](https://casperpublichealth.org/covid-19/) |
-| scheduling | [Schedule a Vaccination](https://wy.covidreadi.com/) |
-| scheduling_phone | [1-800-438-5795](tel:1-800-438-5795) |
-
-
-### Wyoming::Natrona Active Phase (16_and_older)
-
-## Wyoming::Niobrara
-
-### Wyoming::Niobrara Links
-
-| link type | link |
-| --- | --- |
-| info | [Wyoming Department of Health](https://www.facebook.com/niobraracountyPH) |
-| scheduling | [Schedule a Vaccination](https://forms.gle/vhfwhhxcUPpdk7Ub7) |
-| scheduling_phone | [800-438-5795](tel:800-438-5795) |
-
-
-### Wyoming::Niobrara Active Phase (18_and_older)
-
-## Wyoming::Park
-
-### Wyoming::Park Links
-
-| link type | link |
-| --- | --- |
-| info | [Wyoming Department of Health](http://www.parkcounty.us/CoronaVirus.html) |
-| scheduling | [Schedule a Vaccination](https://wy.covidreadi.com/) |
-| scheduling_phone | [1-800-438-5795](tel:1-800-438-5795) |
-
-
-### Wyoming::Park Active Phase (16_and_older)
-
-## Wyoming::Platte
-
-### Wyoming::Platte Links
-
-| link type | link |
-| --- | --- |
-| info | [Wyoming Department of Health](https://www.plattecountywyoming.com/departments/covid-19/covid-19info) |
-| scheduling | [Schedule a Vaccination](https://wy.covidreadi.com/) |
-| scheduling_phone | [1-800-438-5795](tel:1-800-438-5795) |
-
-
-## Wyoming::Sheridan
-
-### Wyoming::Sheridan Links
-
-| link type | link |
-| --- | --- |
-| info | [Wyoming Department of Health](http://www.sheridancounty.com/covid-19/) |
-| scheduling | [Schedule a Vaccination](https://wy.covidreadi.com/) |
-| scheduling_phone | [1-800-438-5795](tel:1-800-438-5795) |
-
-
-### Wyoming::Sheridan Active Phase (16_and_older)
-
-## Wyoming::Sublette
-
-### Wyoming::Sublette Links
-
-| link type | link |
-| --- | --- |
-| info | [Wyoming Department of Health](https://www.sublettewycovid.com/) |
-| scheduling | [Schedule a Vaccination](https://bit.ly/2LovKQU) |
-| scheduling_phone | [307-367-2157](tel:307-367-2157) |
-
-
-### Wyoming::Sublette Active Phase (18_and_older)
-
-## Wyoming::Sweetwater
-
-### Wyoming::Sweetwater Links
-
-| link type | link |
-| --- | --- |
-| info | [Wyoming Department of Health](http://sweetwatercares.com/) |
-| scheduling_phone | [307-922-5390](tel:307-922-5390) |
-
-
-### Wyoming::Sweetwater Active Phase (18_and_older)
-
-* Are you at least 18 years of age?
-
-## Wyoming::Teton
-
-### Wyoming::Teton Links
-
-| link type | link |
-| --- | --- |
-| info | [Wyoming Department of Health](http://www.tetoncountywy.gov/2061/COVID-19) |
-| scheduling | [Schedule a Vaccination](http://www.tetoncountywy.gov/covidvax) |
-| scheduling_phone | [307-732-8628](tel:307-732-8628) |
-
-
-### Wyoming::Teton Active Phase (16_and_older)
-
-## Wyoming::Uinta
-
-### Wyoming::Uinta Links
-
-| link type | link |
-| --- | --- |
-| info | [Wyoming Department of Health](https://www.uintacounty.com/904/Corona-Virus---COVID-19) |
-| scheduling | [Schedule a Vaccination](https://forms.gle/fbvGPciMf7gTQqZQA) |
-| scheduling_phone | [307-789-9203](tel:307-789-9203) |
-
-
-### Wyoming::Uinta Active Phase (18_and_older)
-
-## Wyoming::Washakie
-
-### Wyoming::Washakie Links
-
-| link type | link |
-| --- | --- |
-| info | [Wyoming Department of Health](http://www.washakiecounty.net/covid19) |
-| scheduling | [Schedule a Vaccination](https://wy.covidreadi.com/) |
-| scheduling_phone | [1-800-438-5795](tel:1-800-438-5795) |
-
-
-### Wyoming::Washakie Active Phase (18_and_older)
-
-## Wyoming::Weston
-
-### Wyoming::Weston Links
-
-| link type | link |
-| --- | --- |
-| info | [Wyoming Department of Health](https://www.wcph.net/covid-19-corner) |
-| scheduling | [Schedule a Vaccination](https://wy.covidreadi.com/) |
-| scheduling_phone | [1-800-438-5795](tel:1-800-438-5795) |
-
-
-### Wyoming::Weston Active Phase (18_and_older)

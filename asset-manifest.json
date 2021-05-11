@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/covid-vaccine-bot/static/css/main.59ee693f.chunk.css",
-    "main.js": "/covid-vaccine-bot/static/js/main.a9c328c5.chunk.js",
-    "main.js.map": "/covid-vaccine-bot/static/js/main.a9c328c5.chunk.js.map",
-    "runtime-main.js": "/covid-vaccine-bot/static/js/runtime-main.86630004.js",
-    "runtime-main.js.map": "/covid-vaccine-bot/static/js/runtime-main.86630004.js.map",
-    "static/js/2.367eed53.chunk.js": "/covid-vaccine-bot/static/js/2.367eed53.chunk.js",
-    "static/js/2.367eed53.chunk.js.map": "/covid-vaccine-bot/static/js/2.367eed53.chunk.js.map",
-    "static/js/3.cdb1b3c7.chunk.js": "/covid-vaccine-bot/static/js/3.cdb1b3c7.chunk.js",
-    "static/js/3.cdb1b3c7.chunk.js.map": "/covid-vaccine-bot/static/js/3.cdb1b3c7.chunk.js.map",
-    "static/js/4.185cff99.chunk.js": "/covid-vaccine-bot/static/js/4.185cff99.chunk.js",
-    "static/js/4.185cff99.chunk.js.map": "/covid-vaccine-bot/static/js/4.185cff99.chunk.js.map",
+    "main.css": "/covid-vaccine-bot/static/css/main.2279288f.chunk.css",
+    "main.js": "/covid-vaccine-bot/static/js/main.803db7b4.chunk.js",
+    "main.js.map": "/covid-vaccine-bot/static/js/main.803db7b4.chunk.js.map",
+    "runtime-main.js": "/covid-vaccine-bot/static/js/runtime-main.3a705a85.js",
+    "runtime-main.js.map": "/covid-vaccine-bot/static/js/runtime-main.3a705a85.js.map",
+    "static/js/2.debffd02.chunk.js": "/covid-vaccine-bot/static/js/2.debffd02.chunk.js",
+    "static/js/2.debffd02.chunk.js.map": "/covid-vaccine-bot/static/js/2.debffd02.chunk.js.map",
+    "static/js/3.13c93be0.chunk.js": "/covid-vaccine-bot/static/js/3.13c93be0.chunk.js",
+    "static/js/3.13c93be0.chunk.js.map": "/covid-vaccine-bot/static/js/3.13c93be0.chunk.js.map",
+    "static/js/4.a0c5a440.chunk.js": "/covid-vaccine-bot/static/js/4.a0c5a440.chunk.js",
+    "static/js/4.a0c5a440.chunk.js.map": "/covid-vaccine-bot/static/js/4.a0c5a440.chunk.js.map",
     "index.html": "/covid-vaccine-bot/index.html",
-    "static/css/main.59ee693f.chunk.css.map": "/covid-vaccine-bot/static/css/main.59ee693f.chunk.css.map",
-    "static/js/2.367eed53.chunk.js.LICENSE.txt": "/covid-vaccine-bot/static/js/2.367eed53.chunk.js.LICENSE.txt",
-    "static/js/main.a9c328c5.chunk.js.LICENSE.txt": "/covid-vaccine-bot/static/js/main.a9c328c5.chunk.js.LICENSE.txt"
+    "static/css/main.2279288f.chunk.css.map": "/covid-vaccine-bot/static/css/main.2279288f.chunk.css.map",
+    "static/js/2.debffd02.chunk.js.LICENSE.txt": "/covid-vaccine-bot/static/js/2.debffd02.chunk.js.LICENSE.txt",
+    "static/js/main.803db7b4.chunk.js.LICENSE.txt": "/covid-vaccine-bot/static/js/main.803db7b4.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.86630004.js",
-    "static/js/2.367eed53.chunk.js",
-    "static/css/main.59ee693f.chunk.css",
-    "static/js/main.a9c328c5.chunk.js"
+    "static/js/runtime-main.3a705a85.js",
+    "static/js/2.debffd02.chunk.js",
+    "static/css/main.2279288f.chunk.css",
+    "static/js/main.803db7b4.chunk.js"
   ]
 }
