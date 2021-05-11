@@ -406,7 +406,7 @@ Please note that anyone younger than 18 must receive the Pfizer vaccine. It is t
 | --- | --- |
 | info | [Maryland Department of Health](https://coronavirus.maryland.gov/pages/vaccine) |
 | providers | [View locations providing vaccines](https://coronavirus.maryland.gov/pages/vaccine) |
-| scheduling_phone | [(410) 767-6500](tel:410-767-6500) |
+| scheduling_phone | [(410) 767-6500](tel:(410) 767-6500) |
 
 
 ### name.usa::cdc/maryland/state_name Active Phase (2b)
