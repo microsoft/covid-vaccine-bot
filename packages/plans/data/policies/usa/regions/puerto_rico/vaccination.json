@@ -10,7 +10,8 @@
 		"scheduling_phone": {
 			"url": "tel:(787) 999-6202",
 			"text": "c19.link/scheduling.phone.pr"
-		}
+		},
+		"worflow": {}
 	},
 	"activePhase": "16_and_up",
 	"phases": [
@@ -23,5 +24,6 @@
 				}
 			]
 		}
-	]
+	],
+	"noPhaseLabel": false
 }
