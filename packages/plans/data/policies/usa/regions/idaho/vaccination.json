@@ -10,7 +10,8 @@
 		"scheduling": {
 			"url": "https://covidvaccine.idaho.gov/",
 			"text": "c19.links/schedule_vax"
-		}
+		},
+		"worflow": {}
 	},
 	"activePhase": "april_5",
 	"phases": [
@@ -23,5 +24,6 @@
 				}
 			]
 		}
-	]
+	],
+	"noPhaseLabel": false
 }

@@ -6,7 +6,9 @@
 		},
 		"eligibility": {
 			"url": "https://covidvaccine.oregon.gov/#prioritization",
-			"scrapeQuery": [".text-white.bg-primary.p-5.mt-5.rounded-sm.shadow-lg"]
+			"scrapeQuery": [
+				".text-white.bg-primary.p-5.mt-5.rounded-sm.shadow-lg"
+			]
 		},
 		"workflow": {
 			"url": "https://getvaccinated.oregon.gov/",
@@ -20,7 +22,8 @@
 			"url": "tel:866-698-6155",
 			"text": "c19.link/scheduling.phone.or",
 			"description": "c19.link/scheduling.phone.description.or"
-		}
+		},
+		"worflow": {}
 	},
 	"activePhase": "2",
 	"phases": [
@@ -33,5 +36,6 @@
 				}
 			]
 		}
-	]
+	],
+	"noPhaseLabel": false
 }

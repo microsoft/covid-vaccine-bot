@@ -10,7 +10,8 @@
 		"providers": {
 			"url": "https://dphhs.mt.gov/publichealth/cdepi/diseases/coronavirusmt/covid19vaccineavailability",
 			"text": "c19.links/vax_providers"
-		}
+		},
+		"worflow": {}
 	},
 	"activePhase": "16_and_older",
 	"phases": [
@@ -23,5 +24,6 @@
 				}
 			]
 		}
-	]
+	],
+	"noPhaseLabel": false
 }

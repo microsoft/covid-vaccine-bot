@@ -3,7 +3,8 @@
 		"info": {
 			"text": "cdc/guam/state_link",
 			"url": "https://dphss.guam.gov/"
-		}
+		},
+		"worflow": {}
 	},
 	"activePhase": "16_and_older",
 	"phases": [

@@ -22,7 +22,8 @@
 		"scheduling": {
 			"url": "https://vaccinate.tn.gov/",
 			"text": "c19.links/schedule_vax"
-		}
+		},
+		"worflow": {}
 	},
 	"activePhase": "3",
 	"phases": [
@@ -35,5 +36,6 @@
 				}
 			]
 		}
-	]
+	],
+	"noPhaseLabel": false
 }

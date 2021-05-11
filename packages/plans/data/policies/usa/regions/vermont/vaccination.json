@@ -12,12 +12,15 @@
 		},
 		"eligibility": {
 			"url": "https://www.healthvermont.gov/covid-19/vaccine/about-covid-19-vaccines-vermont",
-			"scrapeQuery": ["article .paragraphs-items .content .field-body"]
+			"scrapeQuery": [
+				"article .paragraphs-items .content .field-body"
+			]
 		},
 		"scheduling_phone": {
 			"url": "tel:855-722-7878",
 			"text": "c19.link/scheduling.phone.vt"
-		}
+		},
+		"worflow": {}
 	},
 	"activePhase": "2",
 	"phases": [
@@ -30,5 +33,6 @@
 				}
 			]
 		}
-	]
+	],
+	"noPhaseLabel": false
 }

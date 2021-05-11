@@ -3,7 +3,9 @@
 		"info": {
 			"text": "cdc/rhode_island/state_link",
 			"url": "https://covid.ri.gov/vaccination",
-			"scrapeQuery": ["article"]
+			"scrapeQuery": [
+				"article"
+			]
 		},
 		"scheduling": {
 			"url": "https://www.vaccinateri.org/",
@@ -12,7 +14,8 @@
 		"scheduling_phone": {
 			"url": "tel:844-930-1779",
 			"text": "c19.link/scheduling.phone.ri"
-		}
+		},
+		"worflow": {}
 	},
 	"activePhase": "current",
 	"phases": [

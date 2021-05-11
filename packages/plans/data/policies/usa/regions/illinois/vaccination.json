@@ -6,7 +6,8 @@
 		"info": {
 			"url": "https://www.dph.illinois.gov/covid19/vaccination-plan",
 			"text": "cdc/illinois/state_link"
-		}
+		},
+		"worflow": {}
 	},
 	"activePhase": "16_and_up",
 	"phases": [
@@ -20,5 +21,6 @@
 				}
 			]
 		}
-	]
+	],
+	"noPhaseLabel": false
 }
