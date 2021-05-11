@@ -10,7 +10,8 @@
 		},
 		"eligibility": {
 			"url": "https://www.maine.gov/covid19/vaccines/phases"
-		}
+		},
+		"worflow": {}
 	},
 	"activePhase": "_age_16_and_older",
 	"phases": [
@@ -23,5 +24,6 @@
 				}
 			]
 		}
-	]
+	],
+	"noPhaseLabel": false
 }
