@@ -1,9 +1,0 @@
-{
-	"id": "grant",
-	"metadata": {
-		"code_alpha": "grant",
-		"code_numeric": 0
-	},
-	"name": "Grant",
-	"type": "county"
-}

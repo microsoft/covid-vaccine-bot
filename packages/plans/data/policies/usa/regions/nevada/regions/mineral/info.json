@@ -1,9 +1,0 @@
-{
-	"id": "mineral",
-	"metadata": {
-		"code_alpha": "mineral",
-		"code_numeric": 0
-	},
-	"name": "Mineral",
-	"type": "county"
-}
