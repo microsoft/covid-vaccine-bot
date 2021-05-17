@@ -25,7 +25,8 @@
 
 ### name.usa::cdc/alabama/state_name Active Phase (2)
 
-* Are you at least 16 years of age?
+* Are you at least 12 years of age?
+	* The Pfizer vaccine is authorized for those ages 12 and older. The Moderna and Johnson and Johnson/Janssen vaccines are authorized for those ages 18 and older.
 
 ## name.usa::cdc/alaska/state_name
 
@@ -43,8 +44,8 @@
 
 ### name.usa::cdc/alaska/state_name Active Phase (2)
 
-* Are you at least 16 years of age?
-	* The COVID-19 vaccine is now available for anyone living or working in Alaska who is age 16 or older. (see [here](http://dhss.alaska.gov/dph/epi/id/pages/COVID-19/vaccine.aspx))
+* Are you at least 12 years of age?
+	* The Pfizer vaccine is authorized for those ages 12 and older. The Moderna and Johnson and Johnson/Janssen vaccines are authorized for those ages 18 and older.
 
 ## name.usa::cdc/american_samoa/state_name
 
@@ -74,9 +75,10 @@
 | scheduling_phone | [602-542-1000](tel:602-542-1000) |
 
 
-### name.usa::cdc/arizona/state_name Active Phase (1b_16_and_older)
+### name.usa::cdc/arizona/state_name Active Phase (12_and_older)
 
-* Are you at least 16 years of age?
+* Are you at least 12 years of age?
+	* The Pfizer vaccine is authorized for those ages 12 and older. The Moderna and Johnson and Johnson/Janssen vaccines are authorized for those ages 18 and older.
 
 ## name.usa::cdc/arkansas/state_name
 
@@ -87,9 +89,10 @@
 | info | [Arkansas Department of Health](https://www.healthy.arkansas.gov/programs-services/topics/covid-19-vaccination-plan) |
 
 
-### name.usa::cdc/arkansas/state_name Active Phase (16_and_older)
+### name.usa::cdc/arkansas/state_name Active Phase (12_and_older)
 
-* Are you at least 16 years of age?
+* Are you at least 12 years of age?
+	* The Pfizer vaccine is authorized for those ages 12 and older. The Moderna and Johnson and Johnson/Janssen vaccines are authorized for those ages 18 and older.
 
 ## name.usa::cdc/california/state_name
 
@@ -102,10 +105,10 @@
 | scheduling_phone | [(833) 422-4255](tel:(833) 422-4255) |
 
 
-### name.usa::cdc/california/state_name Active Phase (16)
+### name.usa::cdc/california/state_name Active Phase (12_and_older)
 
-* Are you at least 16 years of age?
-	* People eligible for the vaccine now are people 16 years and older. However, not all sites will have vaccines (Pfizer) for people under 18. Check when you book.
+* Are you at least 12 years of age?
+	* The Pfizer vaccine is authorized for those ages 12 and older. The Moderna and Johnson and Johnson/Janssen vaccines are authorized for those ages 18 and older.
 
 ## name.usa::cdc/colorado/state_name
 
@@ -119,8 +122,8 @@
 
 ### name.usa::cdc/colorado/state_name Active Phase (2)
 
-* Are you at least 16 years of age?
-	* Any Coloradan who is at least 16-years-old is now eligible to the Pfizer vaccine; any Coloradan over 18-years-old can receive either the Modern or the Johnson and Johnson and vaccine.
+* Are you at least 12 years of age?
+	* The Pfizer vaccine is authorized for those ages 12 and older. The Moderna and Johnson and Johnson/Janssen vaccines are authorized for those ages 18 and older.
 
 ## name.usa::cdc/connecticut/state_name
 
@@ -134,10 +137,10 @@
 | scheduling_phone | [877-918-2224](tel:877-918-2224) |
 
 
-### name.usa::cdc/connecticut/state_name Active Phase (16_and_older)
+### name.usa::cdc/connecticut/state_name Active Phase (12_and_older)
 
-* Are you at least 16 years of age?
-	* Beginning April 1st , all individuals 16 years of age and older who live, work, or attend school in Connecticut are eligible to receive vaccine.
+* Are you at least 12 years of age?
+	* The Pfizer vaccine is authorized for those ages 12 and older. The Moderna and Johnson and Johnson/Janssen vaccines are authorized for those ages 18 and older.
 
 ## name.usa::cdc/delaware/state_name
 
@@ -155,11 +158,8 @@
 
 ### name.usa::cdc/delaware/state_name Active Phase (2)
 
-* Are you at least 16 years of age?
-	* - All persons 16+ may now sign up for the state waitlist or through a pharmacy site.
-- Though you are eligible now, it may still take a few weeks to make a vaccination appointments based on the size of this group.
-- Persons 16 & 17 years old are only eligible to receive the Pfizer vaccine - check the vaccine being offered at each site closely.
-- If you have difficulty accessing a computer or need accommodations because of a disability, contact the DPH Vaccine Call Center at 1-833-643-1715 or email Vaccine@delaware.gov.  The Call Center may also connect you to the DHSS Aging and Disability Resource Center. (see [here](https://coronavirus.delaware.gov/vaccine/))
+* Are you at least 12 years of age?
+	* The Pfizer vaccine is authorized for those ages 12 and older. The Moderna and Johnson and Johnson/Janssen vaccines are authorized for those ages 18 and older.
 
 ## name.usa::cdc/district_of_columbia/state_name
 
@@ -170,12 +170,12 @@
 | eligibility_plan | [https://coronavirus.dc.gov/sites/default/files/dc/sites/coronavirus/page_content/attachments/Vaccination-Program-Phases-with-Tiers.pdf](https://coronavirus.dc.gov/sites/default/files/dc/sites/coronavirus/page_content/attachments/Vaccination-Program-Phases-with-Tiers.pdf) |
 | info | [District of Columbia Department of Health](https://coronavirus.dc.gov/vaccine) |
 | scheduling_phone | [1-855-363-0333](tel:1-855-363-0333) |
-| eligibility | [https://coronavirus.dc.gov/sites/default/files/dc/sites/coronavirus/release_content/attachments/Situational-Update-Presentation_04-12-21.pdf](https://coronavirus.dc.gov/sites/default/files/dc/sites/coronavirus/release_content/attachments/Situational-Update-Presentation_04-12-21.pdf) |
 
 
-### name.usa::cdc/district_of_columbia/state_name Active Phase (16_and_up)
+### name.usa::cdc/district_of_columbia/state_name Active Phase (12_and_older)
 
-* Are you at least 16 years of age?
+* Are you at least 12 years of age?
+	* The Pfizer vaccine is authorized for those ages 12 and older. The Moderna and Johnson and Johnson/Janssen vaccines are authorized for those ages 18 and older.
 
 ## name.usa::cdc/federated_states_of_micronesia/state_name
 
@@ -201,12 +201,8 @@
 
 ### name.usa::cdc/florida/state_name Active Phase (1a)
 
-* Are you at least 16 years of age?
-	* 
-ALL PERSONS 18 YEARS OF AGE AND OLDER ARE ELIGIBLE TO RECEIVE THE VACCINE IN FLORIDA
-As of Monday, April 5, all Florida residents  are eligible to receive any COVID-19 vaccine as prescribed by the Food and Drug Administration.
-
-PERSONS AGES 16-17:  The Pfizer vaccine is authorized for persons age 16 and up. The Moderna and Janssen (Johnson and Johnson) vaccines are authorized for persons age 18 and up. All individuals under the age of 18 receiving a vaccine must be accompanied by a guardian and complete the COVID-19 vaccine screening and consent form. To download a copy of the form, click the following link: (see [here](https://floridahealthcovid19.gov/wp-content/uploads/2021/04/doh-covid-vaccine-screening-consent-form.pdf))
+* Are you at least 12 years of age?
+	* The Pfizer vaccine is authorized for those ages 12 and older. The Moderna and Johnson and Johnson/Janssen vaccines are authorized for those ages 18 and older.
 
 ## name.usa::cdc/georgia/state_name
 
@@ -219,9 +215,10 @@ PERSONS AGES 16-17:  The Pfizer vaccine is authorized for persons age 16 and up.
 | scheduling_phone | [(888) 457-0186](tel:(888) 457-0186) |
 
 
-### name.usa::cdc/georgia/state_name Active Phase (16_and_older)
+### name.usa::cdc/georgia/state_name Active Phase (12_and_older)
 
-* Are you at least 16 years of age?
+* Are you at least 12 years of age?
+	* The Pfizer vaccine is authorized for those ages 12 and older. The Moderna and Johnson and Johnson/Janssen vaccines are authorized for those ages 18 and older.
 
 ## name.usa::cdc/guam/state_name
 
@@ -253,10 +250,8 @@ Upon arrival at vaccination events, individuals 60 years and older may be sent t
 
 ### name.usa::cdc/hawaii/state_name Active Phase (2)
 
-* Are you at least 16 years of age?
-	* Phase 2 includes:
-- Persons 16 years and older (Pfizer).
-- Persons 18 years and older (Moderna and Johnson & Johnson).
+* Are you at least 12 years of age?
+	* The Pfizer vaccine is authorized for those ages 12 and older. The Moderna and Johnson and Johnson/Janssen vaccines are authorized for those ages 18 and older.
 
 ## name.usa::cdc/idaho/state_name
 
@@ -269,9 +264,10 @@ Upon arrival at vaccination events, individuals 60 years and older may be sent t
 | scheduling | [Schedule a Vaccination](https://covidvaccine.idaho.gov/) |
 
 
-### name.usa::cdc/idaho/state_name Active Phase (april_5)
+### name.usa::cdc/idaho/state_name Active Phase (12_and_older)
 
-* Are you at least 16 years of age?
+* Are you at least 12 years of age?
+	* The Pfizer vaccine is authorized for those ages 12 and older. The Moderna and Johnson and Johnson/Janssen vaccines are authorized for those ages 18 and older.
 
 ## name.usa::cdc/illinois/state_name
 
@@ -280,13 +276,13 @@ Upon arrival at vaccination events, individuals 60 years and older may be sent t
 | link type | link |
 | --- | --- |
 | eligibility | [https://www.dph.illinois.gov/covid19/vaccine-distribution](https://www.dph.illinois.gov/covid19/vaccine-distribution) |
-| info | [Illinois Department of Public Health](https://www.dph.illinois.gov/covid19/vaccination-plan) |
+| info | [Illinois Department of Public Health](https://www.dph.illinois.gov/covid19/vaccine-faq) |
 
 
-### name.usa::cdc/illinois/state_name Active Phase (16_and_up)
+### name.usa::cdc/illinois/state_name Active Phase (12_and_older)
 
-* Are you at least 16 years of age?
-	* Chicago not available until April 19th.
+* Are you at least 12 years of age?
+	* The Pfizer vaccine is authorized for those ages 12 and older. The Moderna and Johnson and Johnson/Janssen vaccines are authorized for those ages 18 and older.
 
 ## name.usa::cdc/indiana/state_name
 
@@ -300,12 +296,10 @@ Upon arrival at vaccination events, individuals 60 years and older may be sent t
 | scheduling_phone | [211](tel:211) |
 
 
-### name.usa::cdc/indiana/state_name Active Phase (16_and_older)
+### name.usa::cdc/indiana/state_name Active Phase (12_and_older)
 
-* Are you at least 16 years of age?
-	* Anyone age 16 and older may now schedule a COVID-19 vaccination appointment. Click here to register or call 211 (866-211-9966) if you do not have access to a computer or need assistance.
-
-Please note that anyone younger than 18 must receive the Pfizer vaccine. It is the only vaccine to receive Emergency Use Authorization from the FDA for that age group. Proof of age will be required at the time of vaccination. (see [here](https://vaccine.coronavirus.in.gov/en-US/))
+* Are you at least 12 years of age?
+	* The Pfizer vaccine is authorized for those ages 12 and older. The Moderna and Johnson and Johnson/Janssen vaccines are authorized for those ages 18 and older.
 
 ## name.usa::cdc/iowa/state_name
 
@@ -313,13 +307,15 @@ Please note that anyone younger than 18 must receive the Pfizer vaccine. It is t
 
 | link type | link |
 | --- | --- |
-| info | [Iowa Department of Public Health](https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus/Vaccine/Information-for-the-Public) |
+| info | [Iowa Department of Public Health](https://vaccinate.iowa.gov/) |
 | scheduling_phone | [211](tel:211) |
+| eligibility | [https://vaccinate.iowa.gov/eligibility/](https://vaccinate.iowa.gov/eligibility/) |
 
 
 ### name.usa::cdc/iowa/state_name Active Phase (2)
 
-* Are you at least 16 years of age?
+* Are you at least 12 years of age?
+	* The Pfizer vaccine is authorized for those ages 12 and older. The Moderna and Johnson and Johnson/Janssen vaccines are authorized for those ages 18 and older.
 
 ## name.usa::cdc/kansas/state_name
 
@@ -334,7 +330,8 @@ Please note that anyone younger than 18 must receive the Pfizer vaccine. It is t
 
 ### name.usa::cdc/kansas/state_name Active Phase (5)
 
-* Are you at least 16 years of age?
+* Are you at least 12 years of age?
+	* The Pfizer vaccine is authorized for those ages 12 and older. The Moderna and Johnson and Johnson/Janssen vaccines are authorized for those ages 18 and older.
 
 ## name.usa::cdc/kentucky/state_name
 
@@ -351,7 +348,8 @@ Please note that anyone younger than 18 must receive the Pfizer vaccine. It is t
 
 ### name.usa::cdc/kentucky/state_name Active Phase (3)
 
-* Are you at least 16 years of age?
+* Are you at least 12 years of age?
+	* The Pfizer vaccine is authorized for those ages 12 and older. The Moderna and Johnson and Johnson/Janssen vaccines are authorized for those ages 18 and older.
 
 ## name.usa::cdc/louisiana/state_name
 
@@ -364,10 +362,10 @@ Please note that anyone younger than 18 must receive the Pfizer vaccine. It is t
 | providers | [View locations providing vaccines](https://ldh.la.gov/covidvaccine-locations/) |
 
 
-### name.usa::cdc/louisiana/state_name Active Phase (16_and_older)
+### name.usa::cdc/louisiana/state_name Active Phase (12_and_older)
 
-* Are you at least 16 years of age?
-	* Beginning Monday, March 29, everyone in Louisiana ages 18 and older is eligible to get vaccinated against COVID-19. The Pfizer vaccine is available to those 16 and older.
+* Are you at least 12 years of age?
+	* The Pfizer vaccine is authorized for those ages 12 and older. The Moderna and Johnson and Johnson/Janssen vaccines are authorized for those ages 18 and older.
 
 ## name.usa::cdc/maine/state_name
 
@@ -380,9 +378,10 @@ Please note that anyone younger than 18 must receive the Pfizer vaccine. It is t
 | eligibility | [https://www.maine.gov/covid19/vaccines/phases](https://www.maine.gov/covid19/vaccines/phases) |
 
 
-### name.usa::cdc/maine/state_name Active Phase (_age_16_and_older)
+### name.usa::cdc/maine/state_name Active Phase (12_and_older)
 
-* Are you at least 16 years of age?
+* Are you at least 12 years of age?
+	* The Pfizer vaccine is authorized for those ages 12 and older. The Moderna and Johnson and Johnson/Janssen vaccines are authorized for those ages 18 and older.
 
 ## name.usa::cdc/marshall_islands/state_name
 
@@ -404,8 +403,8 @@ Please note that anyone younger than 18 must receive the Pfizer vaccine. It is t
 
 | link type | link |
 | --- | --- |
-| info | [Maryland Department of Health](https://coronavirus.maryland.gov/pages/vaccine) |
-| providers | [View locations providing vaccines](https://coronavirus.maryland.gov/pages/vaccine) |
+| info | [Maryland Department of Health](https://covidlink.maryland.gov/content/vaccine/) |
+| providers | [View locations providing vaccines](https://covidlink.maryland.gov/content/vaccine/) |
 | scheduling_phone | [(410) 767-6500](tel:(410) 767-6500) |
 
 
@@ -426,7 +425,8 @@ Please note that anyone younger than 18 must receive the Pfizer vaccine. It is t
 
 ### name.usa::cdc/massachusetts/state_name Active Phase (phase_3)
 
-* Are you at least 16 years of age?
+* Are you at least 12 years of age?
+	* The Pfizer vaccine is authorized for those ages 12 and older. The Moderna and Johnson and Johnson/Janssen vaccines are authorized for those ages 18 and older.
 
 ## name.usa::cdc/michigan/state_name
 
@@ -442,7 +442,8 @@ Please note that anyone younger than 18 must receive the Pfizer vaccine. It is t
 
 ### name.usa::cdc/michigan/state_name Active Phase (2)
 
-* Are you at least 16 years of age?
+* Are you at least 12 years of age?
+	* The Pfizer vaccine is authorized for those ages 12 and older. The Moderna and Johnson and Johnson/Janssen vaccines are authorized for those ages 18 and older.
 
 ## name.usa::cdc/minnesota/state_name
 
@@ -456,10 +457,10 @@ Please note that anyone younger than 18 must receive the Pfizer vaccine. It is t
 | scheduling_phone | [883-431-2053](tel:883-431-2053) |
 
 
-### name.usa::cdc/minnesota/state_name Active Phase (16_and_older)
+### name.usa::cdc/minnesota/state_name Active Phase (12_and_older)
 
-* Are you at least 16 years of age?
-	* As of March 30, all Minnesotans 16 years of age and older will be eligible to receive a vaccine. Minnesota has directed providers to prioritize vaccine appointments for people most at risk of getting COVID-19, or those who could develop severe illness if infected. This includes older Minnesotans, those with underlying health conditions*, and those in essential jobs.
+* Are you at least 12 years of age?
+	* The Pfizer vaccine is authorized for those ages 12 and older. The Moderna and Johnson and Johnson/Janssen vaccines are authorized for those ages 18 and older.
 
 ## name.usa::cdc/mississippi/state_name
 
@@ -476,10 +477,8 @@ Please note that anyone younger than 18 must receive the Pfizer vaccine. It is t
 
 ### name.usa::cdc/mississippi/state_name Active Phase (2)
 
-* Are you at least 16 years of age?
-	* If you are 18 or older, you can be vaccinated at any of our drive-through sites at no cost. Persons younger than 18 should make a drive-through site appointment by calling 877-978-6453, or visit a private healthcare provider for COVID-19 vaccination to ensure that they receive a vaccine approved for their age.
-
-COVID-19 vaccinations are provided to Mississippi residents only, or to out-of-state residents who work in Mississippi. (see [here](https://msdh.ms.gov/msdhsite/_static/14,22816,420,976.html))
+* Are you at least 12 years of age?
+	* The Pfizer vaccine is authorized for those ages 12 and older. The Moderna and Johnson and Johnson/Janssen vaccines are authorized for those ages 18 and older.
 
 ## name.usa::cdc/missouri/state_name
 
@@ -493,9 +492,10 @@ COVID-19 vaccinations are provided to Mississippi residents only, or to out-of-s
 | scheduling_phone | [(877) 435-8411](tel:(877) 435-8411) |
 
 
-### name.usa::cdc/missouri/state_name Active Phase (16_and_up)
+### name.usa::cdc/missouri/state_name Active Phase (12_and_older)
 
-* Are you at least 16 years of age?
+* Are you at least 12 years of age?
+	* The Pfizer vaccine is authorized for those ages 12 and older. The Moderna and Johnson and Johnson/Janssen vaccines are authorized for those ages 18 and older.
 
 ## name.usa::cdc/montana/state_name
 
@@ -508,9 +508,10 @@ COVID-19 vaccinations are provided to Mississippi residents only, or to out-of-s
 | providers | [View locations providing vaccines](https://dphhs.mt.gov/publichealth/cdepi/diseases/coronavirusmt/covid19vaccineavailability) |
 
 
-### name.usa::cdc/montana/state_name Active Phase (16_and_older)
+### name.usa::cdc/montana/state_name Active Phase (12_and_older)
 
-* Are you at least 16 years of age?
+* Are you at least 12 years of age?
+	* The Pfizer vaccine is authorized for those ages 12 and older. The Moderna and Johnson and Johnson/Janssen vaccines are authorized for those ages 18 and older.
 
 ## name.usa::cdc/nebraska/state_name
 
@@ -528,7 +529,8 @@ COVID-19 vaccinations are provided to Mississippi residents only, or to out-of-s
 
 ### name.usa::cdc/nebraska/state_name Active Phase (2b)
 
-* Are you at least 16 years of age?
+* Are you at least 12 years of age?
+	* The Pfizer vaccine is authorized for those ages 12 and older. The Moderna and Johnson and Johnson/Janssen vaccines are authorized for those ages 18 and older.
 
 ## name.usa::cdc/nevada/state_name
 
@@ -541,9 +543,10 @@ COVID-19 vaccinations are provided to Mississippi residents only, or to out-of-s
 | scheduling_phone | [1-800-401-0946](tel:1-800-401-0946) |
 
 
-### name.usa::cdc/nevada/state_name Active Phase (age_16)
+### name.usa::cdc/nevada/state_name Active Phase (12_and_older)
 
-* Are you at least 16 years of age?
+* Are you at least 12 years of age?
+	* The Pfizer vaccine is authorized for those ages 12 and older. The Moderna and Johnson and Johnson/Janssen vaccines are authorized for those ages 18 and older.
 
 ## name.usa::cdc/new_hampshire/state_name
 
@@ -557,9 +560,10 @@ COVID-19 vaccinations are provided to Mississippi residents only, or to out-of-s
 | scheduling_phone | [211](tel:211) |
 
 
-### name.usa::cdc/new_hampshire/state_name Active Phase (phase_3_ages_16)
+### name.usa::cdc/new_hampshire/state_name Active Phase (ages_12_and_older)
 
-* Are you at least 16 years of age?
+* Are you at least 12 years of age?
+	* The Pfizer vaccine is authorized for those ages 12 and older. The Moderna and Johnson and Johnson/Janssen vaccines are authorized for those ages 18 and older.
 
 ## name.usa::cdc/new_jersey/state_name
 
@@ -567,15 +571,17 @@ COVID-19 vaccinations are provided to Mississippi residents only, or to out-of-s
 
 | link type | link |
 | --- | --- |
-| info | [New Jersey Department of Health](https://www.nj.gov/health/cd/topics/covid2019_vaccination.shtml) |
-| eligibility | [https://covid19.nj.gov/faqs/nj-information/slowing-the-spread/who-is-eligible-for-vaccination-in-new-jersey-who-is-included-in-the-vaccination-phases](https://covid19.nj.gov/faqs/nj-information/slowing-the-spread/who-is-eligible-for-vaccination-in-new-jersey-who-is-included-in-the-vaccination-phases) |
+| info | [New Jersey Department of Health](https://covid19.nj.gov/pages/vaccine) |
+| eligibility | [https://covid19.nj.gov/pages/vaccine](https://covid19.nj.gov/pages/vaccine) |
 | workflow | [Vaccine Eligibility Questionnaire](https://covidvaccine.nj.gov/covid-19%20vaccine/) |
 | scheduling_phone | [1-855-568-0545](tel:1-855-568-0545) |
+| scheduling | [https://covid19.nj.gov/pages/finder](https://covid19.nj.gov/pages/finder) |
 
 
 ### name.usa::cdc/new_jersey/state_name Active Phase (current)
 
-* Are you at least 16 years of age?
+* Are you at least 12 years of age?
+	* The Pfizer vaccine is authorized for those ages 12 and older. The Moderna and Johnson and Johnson/Janssen vaccines are authorized for those ages 18 and older.
 
 ## name.usa::cdc/new_mexico/state_name
 
@@ -592,7 +598,8 @@ COVID-19 vaccinations are provided to Mississippi residents only, or to out-of-s
 
 ### name.usa::cdc/new_mexico/state_name Active Phase (current_phase)
 
-* Are you at least 16 years of age?
+* Are you at least 12 years of age?
+	* The Pfizer vaccine is authorized for those ages 12 and older. The Moderna and Johnson and Johnson/Janssen vaccines are authorized for those ages 18 and older.
 
 ## name.usa::cdc/new_york/state_name
 
@@ -609,12 +616,8 @@ COVID-19 vaccinations are provided to Mississippi residents only, or to out-of-s
 
 ### name.usa::cdc/new_york/state_name Active Phase (current)
 
-* Are you at least 16 years of age?
-	* Note: People who are 16 and 17 years old are only eligible for the Pfizer vaccine.
-
-The COVID-19 vaccine is currently available to all New York State residents 16 and older. People who live outside of the state but work in New York are also eligible to get vaccinated if they belong to one of the groups at the link. These groups that are eligible based on employment include both paid and unpaid workers.
-
- (see [here](https://www1.nyc.gov/site/doh/covid/covid-19-vaccine-eligibility.page))
+* Are you at least 12 years of age?
+	* The Pfizer vaccine is authorized for those ages 12 and older. The Moderna and Johnson and Johnson/Janssen vaccines are authorized for those ages 18 and older.
 
 ## name.usa::cdc/north_carolina/state_name
 
@@ -630,13 +633,8 @@ The COVID-19 vaccine is currently available to all New York State residents 16 a
 
 ### name.usa::cdc/north_carolina/state_name Active Phase (current)
 
-* Are you at least 16 years of age?
-	* COVID-19 vaccines are available in North Carolina to everyone ages 16 and older.
-What you should know:
-- The vaccine is free everywhere in North Carolina.
-- No photo ID or insurance is needed.
-- Depending on where you get your vaccine, you may need to make an appointment.
-- U.S. citizenship is not required or checked. (see [here](https://covid19.ncdhhs.gov/vaccines))
+* Are you at least 12 years of age?
+	* The Pfizer vaccine is authorized for those ages 12 and older. The Moderna and Johnson and Johnson/Janssen vaccines are authorized for those ages 18 and older.
 
 ## name.usa::cdc/north_dakota/state_name
 
@@ -645,7 +643,7 @@ What you should know:
 | link type | link |
 | --- | --- |
 | info | [North Dakota Department of Health](https://www.health.nd.gov/immunization-guidance-public) |
-| eligibility_plan | [https://www.health.nd.gov/covid-19-vaccine-priority-groups](https://www.health.nd.gov/covid-19-vaccine-priority-groups) |
+| eligibility_plan | [https://www.health.nd.gov/news/nddoh-expands-administration-pfizer-covid-19-vaccine-youth-ages-12-15](https://www.health.nd.gov/news/nddoh-expands-administration-pfizer-covid-19-vaccine-youth-ages-12-15) |
 | locator | [https://www.health.nd.gov/covidvaccinelocator](https://www.health.nd.gov/covidvaccinelocator) |
 | providers | [View locations providing vaccines](https://www.health.nd.gov/covidvaccinelocator) |
 | scheduling_phone | [701-328-2372](tel:701-328-2372) |
@@ -653,8 +651,8 @@ What you should know:
 
 ### name.usa::cdc/north_dakota/state_name Active Phase (2)
 
-* Are you at least 16 years of age?
-	* All people 16+ (for Pfizer only) and 18+ (for all vaccines) are eligible in North Dakota. However, some vaccination sites are currently only serving those 18+ or essential workers. Please confirm your eligibility matches that of the location where you're signing up  (see [here](https://www.health.nd.gov/covidvaccinelocator))
+* Are you at least 12 years of age?
+	* The Pfizer vaccine is authorized for those ages 12 and older. The Moderna and Johnson and Johnson/Janssen vaccines are authorized for those ages 18 and older.
 
 ## name.usa::cdc/northern_mariana_islands/state_name
 
@@ -687,7 +685,8 @@ What you should know:
 
 ### name.usa::cdc/ohio/state_name Active Phase (current)
 
-* Are you at least 16 years of age?
+* Are you at least 12 years of age?
+	* The Pfizer vaccine is authorized for those ages 12 and older. The Moderna and Johnson and Johnson/Janssen vaccines are authorized for those ages 18 and older.
 
 ## name.usa::cdc/oklahoma/state_name
 
@@ -703,8 +702,8 @@ What you should know:
 
 ### name.usa::cdc/oklahoma/state_name Active Phase (phase_4)
 
-* Are you at least 16 years of age?
-	* If you are a parent accompanying a minor to their appointment (16yo + for Pfizer only), it is helpful to bring their school photo ID, a birth certificate, or a social security card if they do not have a driver's license/permit.
+* Are you at least 12 years of age?
+	* The Pfizer vaccine is authorized for those ages 12 and older. The Moderna and Johnson and Johnson/Janssen vaccines are authorized for those ages 18 and older.
 
 ## name.usa::cdc/oregon/state_name
 
@@ -721,7 +720,8 @@ What you should know:
 
 ### name.usa::cdc/oregon/state_name Active Phase (2)
 
-* Are you at least 16 years of age?
+* Are you at least 12 years of age?
+	* The Pfizer vaccine is authorized for those ages 12 and older. The Moderna and Johnson and Johnson/Janssen vaccines are authorized for those ages 18 and older.
 
 ## name.usa::cdc/palau/state_name
 
@@ -747,12 +747,13 @@ What you should know:
 | info | [Pennsylvania Department of Health](https://www.health.pa.gov/topics/disease/coronavirus/Pages/Vaccine.aspx) |
 | workflow | [Vaccine Eligibility Questionnaire](https://covidportal.health.pa.gov/s/Your-Turn?language=en_US) |
 | scheduling_phone | [1-877-724-3258](tel:1-877-724-3258) |
+| scheduling | [https://vaccines.gov/](https://vaccines.gov/) |
 
 
 ### name.usa::cdc/pennsylvania/state_name Active Phase (2)
 
-* Are you at least 16 years of age?
-	* ​All individuals not previously covered who are 16 and older and do not have a contraindication to the vaccine (note that at this time, only the Pfizer-BioNTech product is approved for those age 16 and 17)
+* Are you at least 12 years of age?
+	* The Pfizer vaccine is authorized for those ages 12 and older. The Moderna and Johnson and Johnson/Janssen vaccines are authorized for those ages 18 and older.
 
 ## name.usa::cdc/puerto_rico/state_name
 
@@ -782,7 +783,8 @@ What you should know:
 
 ### name.usa::cdc/rhode_island/state_name Active Phase (current)
 
-* Are you at least 16 years of age?
+* Are you at least 12 years of age?
+	* The Pfizer vaccine is authorized for those ages 12 and older. The Moderna and Johnson and Johnson/Janssen vaccines are authorized for those ages 18 and older.
 
 ## name.usa::cdc/south_carolina/state_name
 
@@ -795,10 +797,10 @@ What you should know:
 | scheduling_phone | [1-866-365-8110](tel:1-866-365-8110) |
 
 
-### name.usa::cdc/south_carolina/state_name Active Phase (16_and_older)
+### name.usa::cdc/south_carolina/state_name Active Phase (12_and_older)
 
-* Are you at least 16 years of age?
-	* South Carolina's phased approach to its COVID-19 vaccine rollout was focused on saving lives, which is why those most at risk for severe illness and death were prioritized to receive vaccine first. With more and more vaccine becoming available and more and more people receiving their shots, South Carolina is now able to open vaccines to anyone 16 and older.
+* Are you at least 12 years of age?
+	* The Pfizer vaccine is authorized for those ages 12 and older. The Moderna and Johnson and Johnson/Janssen vaccines are authorized for those ages 18 and older.
 
 ## name.usa::cdc/south_dakota/state_name
 
@@ -814,7 +816,8 @@ What you should know:
 
 ### name.usa::cdc/south_dakota/state_name Active Phase (2)
 
-* Are you at least 16 years of age?
+* Are you at least 12 years of age?
+	* The Pfizer vaccine is authorized for those ages 12 and older. The Moderna and Johnson and Johnson/Janssen vaccines are authorized for those ages 18 and older.
 
 ## name.usa::cdc/tennessee/state_name
 
@@ -832,7 +835,8 @@ What you should know:
 
 ### name.usa::cdc/tennessee/state_name Active Phase (3)
 
-* Are you at least 16 years of age?
+* Are you at least 12 years of age?
+	* The Pfizer vaccine is authorized for those ages 12 and older. The Moderna and Johnson and Johnson/Janssen vaccines are authorized for those ages 18 and older.
 
 ## name.usa::cdc/texas/state_name
 
@@ -846,8 +850,8 @@ What you should know:
 
 ### name.usa::cdc/texas/state_name Active Phase (current)
 
-* Are you at least 16 years of age?
-	* The state's Expert Vaccine Allocation Panel recommended opening vaccination to everyone who falls under the current Food and Drug Administration emergency use authorizations. All vaccines are authorized for people age 18 and older. The Pfizer vaccine is authorized for people 16 and older. (see [here](https://www.dshs.state.tx.us/coronavirus/immunize/vaccine.aspx))
+* Are you at least 12 years of age?
+	* The Pfizer vaccine is authorized for those ages 12 and older. The Moderna and Johnson and Johnson/Janssen vaccines are authorized for those ages 18 and older.
 
 ## name.usa::cdc/us_virgin_islands/state_name
 
@@ -877,9 +881,10 @@ What you should know:
 | eligibility | [https://coronavirus.utah.gov/vaccine-distribution/#eligibility](https://coronavirus.utah.gov/vaccine-distribution/#eligibility) |
 
 
-### name.usa::cdc/utah/state_name Active Phase (16_and_older)
+### name.usa::cdc/utah/state_name Active Phase (12_and_older)
 
-* Are you at least 16 years of age?
+* Are you at least 12 years of age?
+	* The Pfizer vaccine is authorized for those ages 12 and older. The Moderna and Johnson and Johnson/Janssen vaccines are authorized for those ages 18 and older.
 
 ## name.usa::cdc/vermont/state_name
 
@@ -887,7 +892,7 @@ What you should know:
 
 | link type | link |
 | --- | --- |
-| info | [Vermont Department of Health](https://www.healthvermont.gov/covid-19/vaccine) |
+| info | [Vermont Department of Health](https://www.healthvermont.gov/covid-19/vaccine/getting-covid-19-vaccine) |
 | providers | [https://www.healthvermont.gov/covid-19/vaccine/getting-covid-19-vaccine](https://www.healthvermont.gov/covid-19/vaccine/getting-covid-19-vaccine) |
 | workflow | [https://vermont.force.com/events/s/selfregistration](https://vermont.force.com/events/s/selfregistration) |
 | eligibility | [https://www.healthvermont.gov/covid-19/vaccine/about-covid-19-vaccines-vermont](https://www.healthvermont.gov/covid-19/vaccine/about-covid-19-vaccines-vermont) |
@@ -896,7 +901,8 @@ What you should know:
 
 ### name.usa::cdc/vermont/state_name Active Phase (2)
 
-* Are you at least 16 years of age?
+* Are you at least 12 years of age?
+	* The Pfizer vaccine is authorized for those ages 12 and older. The Moderna and Johnson and Johnson/Janssen vaccines are authorized for those ages 18 and older.
 
 ## name.usa::cdc/virginia/state_name
 
@@ -912,7 +918,8 @@ What you should know:
 
 ### name.usa::cdc/virginia/state_name Active Phase (2)
 
-* Are you at least 16 years of age?
+* Are you at least 12 years of age?
+	* The Pfizer vaccine is authorized for those ages 12 and older. The Moderna and Johnson and Johnson/Janssen vaccines are authorized for those ages 18 and older.
 
 ## name.usa::cdc/washington/state_name
 
@@ -929,7 +936,8 @@ What you should know:
 
 ### name.usa::cdc/washington/state_name Active Phase (2)
 
-* Are you at least 16 years of age?
+* Are you at least 12 years of age?
+	* The Pfizer vaccine is authorized for those ages 12 and older. The Moderna and Johnson and Johnson/Janssen vaccines are authorized for those ages 18 and older.
 
 ## name.usa::cdc/west_virginia/state_name
 
@@ -942,9 +950,10 @@ What you should know:
 | scheduling_phone | [1-833-734-0965](tel:1-833-734-0965) |
 
 
-### name.usa::cdc/west_virginia/state_name Active Phase (16_and_older)
+### name.usa::cdc/west_virginia/state_name Active Phase (12_and_older)
 
-* Are you at least 16 years of age?
+* Are you at least 12 years of age?
+	* The Pfizer vaccine is authorized for those ages 12 and older. The Moderna and Johnson and Johnson/Janssen vaccines are authorized for those ages 18 and older.
 
 ## name.usa::cdc/wisconsin/state_name
 
@@ -960,10 +969,8 @@ What you should know:
 
 ### name.usa::cdc/wisconsin/state_name Active Phase (2)
 
-* Are you at least 16 years of age?
-	* All individuals ages 16 and older became eligible for the vaccine on April 5. Remember vaccine providers will prioritize previously eligible groups before vaccinating this group.
-
-Please note the Pfizer vaccine is authorized for use in people age 16 and older. The Moderna and Johnson & Johnson vaccines are authorized for use in people age 18 and older
+* Are you at least 12 years of age?
+	* The Pfizer vaccine is authorized for those ages 12 and older. The Moderna and Johnson and Johnson/Janssen vaccines are authorized for those ages 18 and older.
 
 ## name.usa::cdc/wyoming/state_name
 
@@ -976,6 +983,7 @@ Please note the Pfizer vaccine is authorized for use in people age 16 and older.
 | scheduling_phone | [800-438-5795](tel:800-438-5795) |
 
 
-### name.usa::cdc/wyoming/state_name Active Phase (18_and_older)
+### name.usa::cdc/wyoming/state_name Active Phase (12_and_older)
 
-* Are you at least 18 years of age?
+* Are you at least 12 years of age?
+	* The Pfizer vaccine is authorized for those ages 12 and older. The Moderna and Johnson and Johnson/Janssen vaccines are authorized for those ages 18 and older.
