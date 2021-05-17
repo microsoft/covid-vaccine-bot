@@ -16,7 +16,7 @@
 			"label": "16 and up",
 			"qualifications": [
 				{
-					"question": "c19.eligibility.question/age.16_up",
+					"question": "c19.eligibility.question/age.16_up"
 				}
 			]
 		},

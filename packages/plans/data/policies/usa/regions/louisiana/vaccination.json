@@ -20,7 +20,7 @@
 			"label": "16 and older",
 			"qualifications": [
 				{
-					"question": "c19.eligibility.question/age.16_up",
+					"question": "c19.eligibility.question/age.16_up"
 				}
 			]
 		},
