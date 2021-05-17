@@ -16,7 +16,7 @@
 		},
 		"worflow": {}
 	},
-	"activePhase": "age_16",
+	"activePhase": "12_and_older",
 	"phases": [
 		{
 			"id": "age_16",
@@ -33,6 +33,20 @@
 			"qualifications": [
 				{
 					"question": "c19.eligibility.question/age.are_you_age_18"
+				}
+			]
+		},
+		{
+			"id": "12_and_older",
+			"label": "12 and Older",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.are_you_at",
+					"questionSms": "c19.eligibility.question.sms/age.are_you_at",
+					"questionVoice": "c19.eligibility.question.voice/age.are_you_at",
+					"moreInfoText": "c19.eligibility.moreinfo/age.are_you_at.nv.12_and_older",
+					"moreInfoTextSms": "c19.eligibility.moreinfo.sms/age.are_you_at.nv.12_and_older",
+					"moreInfoTextVoice": "c19.eligibility.moreinfo.voice/age.are_you_at.nv.12_and_older"
 				}
 			]
 		}
