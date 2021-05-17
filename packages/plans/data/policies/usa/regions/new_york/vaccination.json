@@ -32,9 +32,12 @@
 			"id": "current",
 			"qualifications": [
 				{
-					"question": "c19.eligibility.question/age.16_up",
-					"moreInfoText": "c19.eligibility.moreinfo/age.are_you_age_30.ny.current",
-					"moreInfoUrl": "https://www1.nyc.gov/site/doh/covid/covid-19-vaccine-eligibility.page"
+					"question": "c19.eligibility.question/age.are_you_at",
+					"questionSms": "c19.eligibility.question.sms/age.are_you_at",
+					"questionVoice": "c19.eligibility.question.voice/age.are_you_at",
+					"moreInfoText": "c19.eligibility.moreinfo/age.are_you_at.ny.current",
+					"moreInfoTextSms": "c19.eligibility.moreinfo.sms/age.are_you_at.ny.current",
+					"moreInfoTextVoice": "c19.eligibility.moreinfo.voice/age.are_you_at.ny.current"
 				}
 			]
 		}
