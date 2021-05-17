@@ -59,8 +59,6 @@ Enfermedad hepática
 La lista está sujeta a cambios a medida que se publican pruebas científicas adicionales y a medida que el estado de Nueva York obtiene y analiza datos adicionales específicos del estado.
 
 ",,,,,,,,,,
-c19.eligibility.moreinfo/age.are_you_age_30.ny.current,"Note: People who are 16 and 17 years old are only eligible for the Pfizer vaccine.
-
-The COVID-19 vaccine is currently available to all New York State residents 16 and older. People who live outside of the state but work in New York are also eligible to get vaccinated if they belong to one of the groups at the link. These groups that are eligible based on employment include both paid and unpaid workers.
-
-",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/age.are_you_at.ny.current,"The Pfizer vaccine is authorized for those ages 12 and older. The Moderna and Johnson and Johnson/Janssen vaccines are authorized for those ages 18 and older.",,,,,,,,,,,,,,
+c19.eligibility.moreinfo.sms/age.are_you_at.ny.current,"The Pfizer vaccine is authorized for those ages 12 and older. The Moderna and Johnson and Johnson/Janssen vaccines are authorized for those ages 18 and older.",,,,,,,,,,,,,,
+c19.eligibility.moreinfo.voice/age.are_you_at.ny.current,"The Pfizer vaccine is authorized for those ages 12 and older. The Moderna and Johnson and Johnson/Janssen vaccines are authorized for those ages 18 and older.",,,,,,,,,,,,,,
