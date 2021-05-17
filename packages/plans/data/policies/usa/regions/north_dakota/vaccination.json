@@ -5,7 +5,7 @@
 			"url": "https://www.health.nd.gov/immunization-guidance-public"
 		},
 		"eligibility_plan": {
-			"url": "https://www.health.nd.gov/covid-19-vaccine-priority-groups"
+			"url": "https://www.health.nd.gov/news/nddoh-expands-administration-pfizer-covid-19-vaccine-youth-ages-12-15"
 		},
 		"locator": {
 			"url": "https://www.health.nd.gov/covidvaccinelocator"
@@ -28,9 +28,12 @@
 			"label": "2",
 			"qualifications": [
 				{
-					"question": "c19.eligibility.question/age.16_up",
-					"moreInfoText": "c19.eligibility.moreinfo/age.16_up.nd.2",
-					"moreInfoUrl": "https://www.health.nd.gov/covidvaccinelocator"
+					"question": "c19.eligibility.question/age.are_you_at",
+					"questionSms": "c19.eligibility.question.sms/age.are_you_at",
+					"questionVoice": "c19.eligibility.question.voice/age.are_you_at",
+					"moreInfoText": "c19.eligibility.moreinfo/age.are_you_at.nd.2",
+					"moreInfoTextSms": "c19.eligibility.moreinfo.sms/age.are_you_at.nd.2",
+					"moreInfoTextVoice": "c19.eligibility.moreinfo.voice/age.are_you_at.nd.2"
 				}
 			]
 		}
