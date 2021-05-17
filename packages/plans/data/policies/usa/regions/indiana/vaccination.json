@@ -27,7 +27,6 @@
 			"qualifications": [
 				{
 					"question": "c19.eligibility.question/age.16_up",
-					"moreInfoText": "c19.eligibility.moreinfo/age.16_up.in.16_and_older",
 					"moreInfoUrl": "https://vaccine.coronavirus.in.gov/en-US/"
 				}
 			]
