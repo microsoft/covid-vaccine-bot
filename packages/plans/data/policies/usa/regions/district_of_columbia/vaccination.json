@@ -12,12 +12,9 @@
 			"text": "c19.link/scheduling.phone.dc",
 			"description": "c19.link/scheduling.phone.description.dc"
 		},
-		"eligibility": {
-			"url": "https://coronavirus.dc.gov/sites/default/files/dc/sites/coronavirus/release_content/attachments/Situational-Update-Presentation_04-12-21.pdf"
-		},
 		"worflow": {}
 	},
-	"activePhase": "16_and_up",
+	"activePhase": "12_and_older",
 	"noPhaseLabel": true,
 	"phases": [
 		{
@@ -26,6 +23,20 @@
 			"qualifications": [
 				{
 					"question": "c19.eligibility.question/age.16_up"
+				}
+			]
+		},
+		{
+			"id": "12_and_older",
+			"label": "12 and older",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.are_you_at",
+					"questionSms": "c19.eligibility.question.sms/age.are_you_at",
+					"questionVoice": "c19.eligibility.question.voice/age.are_you_at",
+					"moreInfoText": "c19.eligibility.moreinfo/age.are_you_at.dc.12_and_older",
+					"moreInfoTextSms": "c19.eligibility.moreinfo.sms/age.are_you_at.dc.12_and_older",
+					"moreInfoTextVoice": "c19.eligibility.moreinfo.voice/age.are_you_at.dc.12_and_older"
 				}
 			]
 		}
