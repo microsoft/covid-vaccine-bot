@@ -166,4 +166,6 @@ c19.eligibility.moreinfo/age.are_you_age.pa.1c,"This includes:
 - Solid organ or blood stem cell transplant
 - Stroke or cerebrovascular disease, which affects blood flow to the brain
 - Substance use disorders",,,,,,,,,,,,,,
-c19.eligibility.moreinfo/age.16_up.pa.2,"​All individuals not previously covered who are 16 and older and do not have a contraindication to the vaccine (note that at this time, only the Pfizer-BioNTech product is approved for those age 16 and 17)",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/age.are_you_at.pa.2,"The Pfizer vaccine is authorized for those ages 12 and older. The Moderna and Johnson and Johnson/Janssen vaccines are authorized for those ages 18 and older.",,,,,,,,,,,,,,
+c19.eligibility.moreinfo.sms/age.are_you_at.pa.2,"The Pfizer vaccine is authorized for those ages 12 and older. The Moderna and Johnson and Johnson/Janssen vaccines are authorized for those ages 18 and older.",,,,,,,,,,,,,,
+c19.eligibility.moreinfo.voice/age.are_you_at.pa.2,"The Pfizer vaccine is authorized for those ages 12 and older. The Moderna and Johnson and Johnson/Janssen vaccines are authorized for those ages 18 and older.",,,,,,,,,,,,,,

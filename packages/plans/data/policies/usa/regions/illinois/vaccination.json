@@ -4,20 +4,33 @@
 			"url": "https://www.dph.illinois.gov/covid19/vaccine-distribution"
 		},
 		"info": {
-			"url": "https://www.dph.illinois.gov/covid19/vaccination-plan",
+			"url": "https://www.dph.illinois.gov/covid19/vaccine-faq",
 			"text": "cdc/illinois/state_link"
 		},
 		"worflow": {}
 	},
-	"activePhase": "16_and_up",
+	"activePhase": "12_and_older",
 	"phases": [
 		{
 			"id": "16_and_up",
 			"label": "16 and up",
 			"qualifications": [
 				{
-					"question": "c19.eligibility.question/age.16_up",
-					"moreInfoText": "c19.eligibility.moreinfo/age.16_up.il.16_and_up"
+					"question": "c19.eligibility.question/age.16_up"
+				}
+			]
+		},
+		{
+			"id": "12_and_older",
+			"label": "12 and Older",
+			"qualifications": [
+				{
+					"question": "c19.eligibility.question/age.are_you_at",
+					"questionSms": "c19.eligibility.question.sms/age.are_you_at",
+					"questionVoice": "c19.eligibility.question.voice/age.are_you_at",
+					"moreInfoText": "c19.eligibility.moreinfo/age.are_you_at.il.12_and_older",
+					"moreInfoTextSms": "c19.eligibility.moreinfo.sms/age.are_you_at.il.12_and_older",
+					"moreInfoTextVoice": "c19.eligibility.moreinfo.voice/age.are_you_at.il.12_and_older"
 				}
 			]
 		}

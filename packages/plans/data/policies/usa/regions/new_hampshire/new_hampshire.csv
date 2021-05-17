@@ -119,3 +119,6 @@ c19.eligibility.moreinfo/health.1b.nh.nh.phase_3_ages_16," - Cancer
  - Diabetes Mellitus tipo 2",,,,,,,,,,
 c19.link/scheduling.phone.nh,"211",,,,,,,,,,,,,,
 c19.link/scheduling.phone.description.nh,"Call 211 in state; COVID-19 specific call-takers are available Monday through Friday 8:00AM - 8:00PM.",,,,,,,,,,,,,,
+c19.eligibility.moreinfo/age.are_you_at.nh.ages_12_and_older,"The Pfizer vaccine is authorized for those ages 12 and older. The Moderna and Johnson and Johnson/Janssen vaccines are authorized for those ages 18 and older.",,,,,,,,,,,,,,
+c19.eligibility.moreinfo.sms/age.are_you_at.nh.ages_12_and_older,"The Pfizer vaccine is authorized for those ages 12 and older. The Moderna and Johnson and Johnson/Janssen vaccines are authorized for those ages 18 and older.",,,,,,,,,,,,,,
+c19.eligibility.moreinfo.voice/age.are_you_at.nh.ages_12_and_older,"The Pfizer vaccine is authorized for those ages 12 and older. The Moderna and Johnson and Johnson/Janssen vaccines are authorized for those ages 18 and older.",,,,,,,,,,,,,,

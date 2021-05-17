@@ -51,3 +51,6 @@ c19.eligibility.moreinfo/age.are_you_age.ut.1a,"- Asplenia including splenectomy
 - Enfermedad respiratoria crónica grave (aparte del asma) que incluye enfermedad pulmonar obstructiva crónica grave, enfermedad pulmonar fibrosa, bronquiectasis o fibrosis quística
 - Receptor de trasplante de órganos sólidos
 - Accidente cerebrovascular y demencia (Alzheimer, vascular o frontotemporal)",,,,,,,,,,
+c19.eligibility.moreinfo/age.are_you_at.ut.12_and_older,"The Pfizer vaccine is authorized for those ages 12 and older. The Moderna and Johnson and Johnson/Janssen vaccines are authorized for those ages 18 and older.",,,,,,,,,,,,,,
+c19.eligibility.moreinfo.sms/age.are_you_at.ut.12_and_older,"The Pfizer vaccine is authorized for those ages 12 and older. The Moderna and Johnson and Johnson/Janssen vaccines are authorized for those ages 18 and older.",,,,,,,,,,,,,,
+c19.eligibility.moreinfo.voice/age.are_you_at.ut.12_and_older,"The Pfizer vaccine is authorized for those ages 12 and older. The Moderna and Johnson and Johnson/Janssen vaccines are authorized for those ages 18 and older.",,,,,,,,,,,,,,
