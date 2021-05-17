@@ -1,7 +1,7 @@
 {
 	"links": {
 		"info": {
-			"url": "https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus/Vaccine/Information-for-the-Public",
+			"url": "https://vaccinate.iowa.gov/",
 			"text": "cdc/iowa/state_link"
 		},
 		"scheduling_phone": {
@@ -9,7 +9,10 @@
 			"text": "c19.link/scheduling.phone.ia",
 			"description": "c19.link/scheduling.phone.description.ia"
 		},
-		"worflow": {}
+		"worflow": {},
+		"eligibility": {
+			"url": "https://vaccinate.iowa.gov/eligibility/"
+		}
 	},
 	"activePhase": "2",
 	"phases": [
@@ -18,7 +21,12 @@
 			"label": "2",
 			"qualifications": [
 				{
-					"question": "c19.eligibility.question/age.16_up"
+					"question": "c19.eligibility.question/age.are_you_at",
+					"questionSms": "c19.eligibility.question.sms/age.are_you_at",
+					"questionVoice": "c19.eligibility.question.voice/age.are_you_at",
+					"moreInfoText": "c19.eligibility.moreinfo/age.are_you_at.ia.2",
+					"moreInfoTextSms": "c19.eligibility.moreinfo.sms/age.are_you_at.ia.2",
+					"moreInfoTextVoice": "c19.eligibility.moreinfo.voice/age.are_you_at.ia.2"
 				}
 			]
 		}
