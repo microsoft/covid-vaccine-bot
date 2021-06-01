@@ -18,7 +18,7 @@
 	},
 	"dependencies": {
 		"@azure/cosmos": "^3.11.3",
-		"aws-sdk": "^2.896.0",
+		"aws-sdk": "^2.919.0",
 		"batch2": "^2.0.0",
 		"config": "^3.3.6",
 		"csv-parse": "^4.15.4",
