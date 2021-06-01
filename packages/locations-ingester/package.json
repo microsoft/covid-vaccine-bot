@@ -22,7 +22,7 @@
 		"batch2": "^2.0.0",
 		"config": "^3.3.6",
 		"csv-parse": "^4.15.4",
-		"google-libphonenumber": "^3.2.19",
+		"google-libphonenumber": "^3.2.21",
 		"lodash": "^4.17.21",
 		"node-fetch": "^2.6.1"
 	},

@@ -16,7 +16,7 @@
 	},
 	"dependencies": {
 		"@rollup/plugin-commonjs": "^17.1.0",
-		"core-js": "^3.11.1"
+		"core-js": "^3.13.1"
 	},
 	"devDependencies": {
 		"@covid-vax-bot/plan-schema": "workspace:packages/schema",
