@@ -28,7 +28,7 @@
 		"@covid-vax-bot/plans": "workspace:packages/plans",
 		"@essex/scripts": "^16.0.4",
 		"@types/atob": "^2.1.2",
-		"@types/node": "^14.14.43",
+		"@types/node": "^14.17.1",
 		"@types/node-fetch": "^2.5.10",
 		"@types/ssri": "^7.1.0",
 		"ts-node": "^9.1.1"

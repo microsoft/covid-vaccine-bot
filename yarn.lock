@@ -85,9 +85,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@azure/core-rest-pipeline@npm:^1.0.0":
-  version: 1.0.3
-  resolution: "@azure/core-rest-pipeline@npm:1.0.3"
+"@azure/core-rest-pipeline@npm:^1.0.3":
+  version: 1.0.4
+  resolution: "@azure/core-rest-pipeline@npm:1.0.4"
   dependencies:
     "@azure/abort-controller": ^1.0.0
     "@azure/core-auth": ^1.3.0
@@ -98,7 +98,7 @@ __metadata:
     https-proxy-agent: ^5.0.0
     tslib: ^2.0.0
     uuid: ^8.3.0
-  checksum: 1afe677185aabf7ac850763424ce2f816a3615daa5f48693f6153578677ebb610028531401b6d305ad4365d785d28793fc8b72b9328dad508a7d8d079dda44a0
+  checksum: 89bf5f843a7e420af79c8c3c950981823150d616e4f0d1dcffcb8c9d6fb931f9801b4e249f9041e767c4d58885b80ed74aeaaede6f70687986b1e420d98cb216
   languageName: node
   linkType: hard
 
@@ -135,12 +135,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@azure/cosmos@npm:^3.11.0":
-  version: 3.11.0
-  resolution: "@azure/cosmos@npm:3.11.0"
+"@azure/cosmos@npm:^3.11.3":
+  version: 3.11.3
+  resolution: "@azure/cosmos@npm:3.11.3"
   dependencies:
     "@azure/core-auth": ^1.3.0
-    "@azure/core-rest-pipeline": ^1.0.0
+    "@azure/core-rest-pipeline": ^1.0.3
     debug: ^4.1.1
     fast-json-stable-stringify: ^2.0.0
     jsbi: ^3.1.3
@@ -150,7 +150,7 @@ __metadata:
     tslib: ^2.0.0
     universal-user-agent: ^6.0.0
     uuid: ^8.3.0
-  checksum: 0126adce0669cfd0ed11719757bfc83cf5b366ae849dc516299c98a541a03815d860004f41ff4147b1842ea5f71edf39ac5dc75490e4167be6a1f16068596078
+  checksum: b0a41243fc4b5dee18fffa251562a9efba6c6d0a4dd21e4ca73840a2ef4894d3aee23bd0accfc0d259fac809fcf77263c0bf3b0eb50f874a7033f21a57550e00
   languageName: node
   linkType: hard
 
@@ -2554,13 +2554,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@c19-vax-api/locations-ingester@workspace:packages/locations-ingester"
   dependencies:
-    "@azure/cosmos": ^3.11.0
+    "@azure/cosmos": ^3.11.3
     "@azure/functions": ^1.2.3
     "@essex/scripts": ^16.0.4
     "@tsconfig/node14": ^1.0.0
     "@types/config": ^0.0.38
-    "@types/lodash": ^4.14.168
-    "@types/node": ^14.14.43
+    "@types/lodash": ^4.14.170
+    "@types/node": ^14.17.1
     "@types/node-fetch": ^2.5.10
     "@types/progress": ^2.0.3
     aws-sdk: ^2.896.0
@@ -2592,13 +2592,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@covid-vax-bot/api@workspace:packages/api"
   dependencies:
-    "@azure/cosmos": ^3.11.0
+    "@azure/cosmos": ^3.11.3
     "@tsconfig/node14": ^1.0.0
     "@types/body-parser": ^1.19.0
     "@types/config": ^0.0.38
     "@types/cors": ^2.8.10
-    "@types/express": ^4.17.11
-    "@types/node": ^14.14.43
+    "@types/express": ^4.17.12
+    "@types/node": ^14.17.1
     axios: ^0.21.1
     body-parser: ^1.19.0
     config: ^3.3.6
@@ -2620,15 +2620,15 @@ __metadata:
   resolution: "@covid-vax-bot/data-portal@workspace:packages/webapp"
   dependencies:
     "@covid-vax-bot/plan-schema": "workspace:packages/schema"
-    "@fluentui/react": ^7.168.2
+    "@fluentui/react": ^7.170.1
     "@testing-library/jest-dom": ^5.12.0
     "@testing-library/react": ^11.2.6
     "@testing-library/user-event": ^12.8.3
     "@types/jest": ^26.0.23
-    "@types/lodash": ^4.14.168
-    "@types/node": ^14.14.43
-    "@types/react": ^17.0.4
-    "@types/react-dom": ^17.0.3
+    "@types/lodash": ^4.14.170
+    "@types/node": ^14.17.1
+    "@types/react": ^17.0.8
+    "@types/react-dom": ^17.0.5
     "@types/react-html-parser": ^2.0.1
     "@types/react-router-dom": ^5.1.7
     "@types/rtl-detect": ^1.0.0
@@ -2661,9 +2661,9 @@ __metadata:
   dependencies:
     "@tsconfig/node12": ^1.0.7
     "@types/config": ^0.0.38
-    "@types/express": ^4.17.11
+    "@types/express": ^4.17.12
     "@types/jsonwebtoken": ^8.5.1
-    "@types/node": ^14.14.43
+    "@types/node": ^14.17.1
     "@types/rimraf": ^3.0.0
     config: ^3.3.6
     cookie-parser: ^1.4.5
@@ -2691,7 +2691,7 @@ __metadata:
     "@rollup/plugin-node-resolve": ^11.2.1
     "@tsconfig/node12": ^1.0.7
     "@types/jest": ^26.0.23
-    "@types/node": ^14.14.43
+    "@types/node": ^14.17.1
     core-js: ^3.11.1
     npm-run-all: ^4.1.5
     rollup: ^2.46.0
@@ -2703,7 +2703,7 @@ __metadata:
   resolution: "@covid-vax-bot/plan-schema@workspace:packages/schema"
   dependencies:
     "@essex/scripts": ^16.0.4
-    "@types/node": ^14.14.43
+    "@types/node": ^14.17.1
     npm-run-all: ^4.1.5
     ts-node: ^9.1.1
     typescript: ^4.2.4
@@ -2721,7 +2721,7 @@ __metadata:
     "@types/checksum": ^0.1.31
     "@types/config": ^0.0.38
     "@types/jsonwebtoken": ^8.5.1
-    "@types/node": ^14.14.43
+    "@types/node": ^14.17.1
     "@types/uuid": ^8.3.0
     ajv: ^7.2.4
     axios: ^0.21.1
@@ -2750,7 +2750,7 @@ __metadata:
     "@covid-vax-bot/plans": "workspace:packages/plans"
     "@essex/scripts": ^16.0.4
     "@types/atob": ^2.1.2
-    "@types/node": ^14.14.43
+    "@types/node": ^14.17.1
     "@types/node-fetch": ^2.5.10
     "@types/ssri": ^7.1.0
     atob: ^2.1.2
@@ -3568,19 +3568,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fluentui/react@npm:^7.168.2":
-  version: 7.168.2
-  resolution: "@fluentui/react@npm:7.168.2"
+"@fluentui/react@npm:^7.170.1":
+  version: 7.170.1
+  resolution: "@fluentui/react@npm:7.170.1"
   dependencies:
     "@uifabric/set-version": ^7.0.24
-    office-ui-fabric-react: ^7.168.2
+    office-ui-fabric-react: ^7.170.1
     tslib: ^1.10.0
   peerDependencies:
     "@types/react": ">=16.8.0 <17.0.0"
     "@types/react-dom": ">=16.8.0 <17.0.0"
     react: ">=16.8.0 <17.0.0"
     react-dom: ">=16.8.0 <17.0.0"
-  checksum: 2eecf16cad8f3d0e529f686a70c41123e0e7eca12c1290bd8dcd663436f8cca35bad28f5ba66d27d66a2b1e25810857f7f8bb56c56e411ac11d11926ba1a0fda
+  checksum: 40d495703742b8a7ded811a60ce5038dd881ccfd017f5d32b496d462cd27172b5d4578814dc4d7e804754030c0d0b341018e552fef891c51a8e56c93c97f7ac5
   languageName: node
   linkType: hard
 
@@ -4612,7 +4612,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/express@npm:*, @types/express@npm:^4.17.11":
+"@types/express@npm:*":
   version: 4.17.11
   resolution: "@types/express@npm:4.17.11"
   dependencies:
@@ -4621,6 +4621,18 @@ __metadata:
     "@types/qs": "*"
     "@types/serve-static": "*"
   checksum: 2818120a0fd8b7982215864929cdc6cd14942dd44849f93054fe2a90b4233dff67aadc34c73b5937922a02c688b0263d00a4807aa2e59307ac859a1458d73669
+  languageName: node
+  linkType: hard
+
+"@types/express@npm:^4.17.12":
+  version: 4.17.12
+  resolution: "@types/express@npm:4.17.12"
+  dependencies:
+    "@types/body-parser": "*"
+    "@types/express-serve-static-core": ^4.17.18
+    "@types/qs": "*"
+    "@types/serve-static": "*"
+  checksum: b1ab50e0373095283f5a58c8c1aa7e206182d241d24279e24d754819ae39959b35996d34633b1e4b3a9d3817559abad00ec33c94b96da945a9c3d1546f3e4f70
   languageName: node
   linkType: hard
 
@@ -4782,10 +4794,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/lodash@npm:^4.14.168":
-  version: 4.14.168
-  resolution: "@types/lodash@npm:4.14.168"
-  checksum: 9a4e25f89fc035b9f0388f1f7be85e5eff49f9e6db0d93432c9a89fce0916f8a89db4e8290415f7ea02de6b00d3573826378dcb655b7b2d20530a6e8d6dd6fd0
+"@types/lodash@npm:^4.14.170":
+  version: 4.14.170
+  resolution: "@types/lodash@npm:4.14.170"
+  checksum: 5ecc968649e764e3204435ba5125a3645e5e83963069a26b9307791698bf47ed9c2bd0f97488d9537eb4753d4bae596e5fa6187437a5b04bf47aba78fa553d50
   languageName: node
   linkType: hard
 
@@ -4844,10 +4856,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^14.14.43":
-  version: 14.14.43
-  resolution: "@types/node@npm:14.14.43"
-  checksum: b7a9e6df7c2a6f90e783bfe6ef358cc2c3ff4e1dfcea56b83349cd3feefd02a9b6fa54b443983694b4398a06257d871c947abeae03bd0d39fd71981161d61765
+"@types/node@npm:^14.17.1":
+  version: 14.17.1
+  resolution: "@types/node@npm:14.17.1"
+  checksum: 3ab1180ff2579f4039aa2416087df03e4e8b5f930b64e024ad2b2ae73e546f6054c3bae0324180d425944c7c408c02fdf6ca71f5a265ed05f28aeaae0a2c3599
   languageName: node
   linkType: hard
 
@@ -4909,12 +4921,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:^17.0.3":
-  version: 17.0.3
-  resolution: "@types/react-dom@npm:17.0.3"
+"@types/react-dom@npm:^17.0.5":
+  version: 17.0.5
+  resolution: "@types/react-dom@npm:17.0.5"
   dependencies:
     "@types/react": "*"
-  checksum: 9314c91a985f153591e1e74aef3d63d8b22e098069773f32745bf0733740a49802731761a46da8788a7d3dd2c21346036f12c2c24627630e5a6210b120a650e6
+  checksum: b3e23acb7be9405050abb4bcd443d14b16b2f3ded2d1853528199e4307b17b25186f905ddd236c27b6ef0297e6779b7fedd11fd24ee9170771be45a7e8e70f4b
   languageName: node
   linkType: hard
 
@@ -4960,14 +4972,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:^17.0.4":
-  version: 17.0.4
-  resolution: "@types/react@npm:17.0.4"
+"@types/react@npm:^17.0.8":
+  version: 17.0.8
+  resolution: "@types/react@npm:17.0.8"
   dependencies:
     "@types/prop-types": "*"
     "@types/scheduler": "*"
     csstype: ^3.0.2
-  checksum: d7a8121faa889d52148df392751b771be16a45369872e9ad2b5db3d5bb8f76e684db27c2447b440441e3da1f353d434fa20fdcb45b3a56a296aab0757862da77
+  checksum: b59a3abafd240b2880f9e6a11b2b7f75165888260c56e95a77ed10a7dd55570b307fb2356eda7fde2a8e1255d2def11797e4ae9800ae114a1f578546acabda67
   languageName: node
   linkType: hard
 
@@ -16172,6 +16184,32 @@ fsevents@^1.2.7:
     react: ">=16.8.0 <17.0.0"
     react-dom: ">=16.8.0 <17.0.0"
   checksum: c6769afe5c2d8aafbd5a723017bff1c40d4345562c3dc1ce4fdb7513c4ac3ccfc56e0d2066eb9893b6a3e2fb7331792dd8d21c0766547f802bdac88077d38d42
+  languageName: node
+  linkType: hard
+
+"office-ui-fabric-react@npm:^7.170.1":
+  version: 7.170.1
+  resolution: "office-ui-fabric-react@npm:7.170.1"
+  dependencies:
+    "@fluentui/date-time-utilities": ^7.9.1
+    "@fluentui/react-focus": ^7.17.6
+    "@fluentui/react-window-provider": ^1.0.2
+    "@microsoft/load-themed-styles": ^1.10.26
+    "@uifabric/foundation": ^7.9.26
+    "@uifabric/icons": ^7.5.23
+    "@uifabric/merge-styles": ^7.19.2
+    "@uifabric/react-hooks": ^7.14.0
+    "@uifabric/set-version": ^7.0.24
+    "@uifabric/styling": ^7.19.0
+    "@uifabric/utilities": ^7.33.5
+    prop-types: ^15.7.2
+    tslib: ^1.10.0
+  peerDependencies:
+    "@types/react": ">=16.8.0 <17.0.0"
+    "@types/react-dom": ">=16.8.0 <17.0.0"
+    react: ">=16.8.0 <17.0.0"
+    react-dom: ">=16.8.0 <17.0.0"
+  checksum: 981641710913b334f9855c5a5a222058496078d682329a35fcbfba98cfa02f55ec38bc0543aa25c0c6173edac7934562fab96c43200c5df483e320fb881d0f24
   languageName: node
   linkType: hard
 

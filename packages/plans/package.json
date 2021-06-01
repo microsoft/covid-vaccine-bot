@@ -27,7 +27,7 @@
 		"@types/checksum": "^0.1.31",
 		"@types/config": "^0.0.38",
 		"@types/jsonwebtoken": "^8.5.1",
-		"@types/node": "^14.14.43",
+		"@types/node": "^14.17.1",
 		"@types/uuid": "^8.3.0",
 		"ajv": "^7.2.4",
 		"axios": "^0.21.1",
