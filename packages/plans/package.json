@@ -23,7 +23,7 @@
 	"devDependencies": {
 		"@azure/storage-blob": "^12.5.0",
 		"@covid-vax-bot/plan-schema": "workspace:packages/schema",
-		"@essex/scripts": "^14.0.0",
+		"@essex/scripts": "^16.0.4",
 		"@types/checksum": "^0.1.31",
 		"@types/config": "^0.0.38",
 		"@types/jsonwebtoken": "^8.5.1",

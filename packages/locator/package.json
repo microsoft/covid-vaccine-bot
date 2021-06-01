@@ -21,7 +21,7 @@
 	"devDependencies": {
 		"@covid-vax-bot/plan-schema": "workspace:packages/schema",
 		"@covid-vax-bot/plans": "workspace:packages/plans",
-		"@essex/scripts": "^14.0.0",
+		"@essex/scripts": "^16.0.4",
 		"@rollup/plugin-node-resolve": "^11.2.1",
 		"@tsconfig/node12": "^1.0.7",
 		"@types/jest": "^26.0.23",
