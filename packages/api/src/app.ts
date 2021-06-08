@@ -10,7 +10,7 @@ import { initialize } from 'express-openapi'
 import { apiDoc } from './apiDoc'
 import { OpenApiError } from './types'
 
-export function createApp() {
+export function createApp(): void {
 	const app = express()
 	app.use(cors())
 	app.use(bodyParser.json())

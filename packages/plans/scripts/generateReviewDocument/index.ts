@@ -4,10 +4,10 @@
  */
 import fs from 'fs'
 import { join } from 'path'
+import { Region } from '@covid-vax-bot/plan-schema'
 import { DIST_DIR } from '../createDistDir'
 import { readCsvFile } from '../readCsvFile'
 import { ReviewDocument } from './ReviewDocument'
-import { Region } from '@covid-vax-bot/plan-schema'
 
 async function generateReviewDocument(): Promise<void> {
 	const OUTPUT_FILE_NAME = join(DIST_DIR, 'policies.md')

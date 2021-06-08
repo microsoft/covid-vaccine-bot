@@ -7,7 +7,7 @@ import path from 'path'
 
 export const CACHE_DIR = path.join(__dirname, '../.cache')
 
-export function createCacheDir() {
+export function createCacheDir(): void {
 	if (!fs.existsSync(CACHE_DIR)) {
 		fs.mkdirSync(CACHE_DIR)
 	}

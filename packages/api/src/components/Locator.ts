@@ -34,7 +34,7 @@ export class Locator {
 		if (
 			cacheItem.location != null &&
 			Array.isArray(cacheItem.location) &&
-			cacheItem.location.length == 2
+			cacheItem.location.length === 2
 		) {
 			console.log(`cache hit ${cacheItem.key} => ${cacheItem.location}`)
 			return cacheItem.location

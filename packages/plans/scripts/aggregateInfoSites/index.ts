@@ -4,14 +4,14 @@
  */
 import * as fs from 'fs'
 import * as path from 'path'
+import { Link, VaccinationPlan } from '@covid-vax-bot/plan-schema'
 import { createDistDir, DIST_DIR } from '../createDistDir'
 import { DATA_DIR, getFiles } from '../getFiles'
 import { readCsvFile } from '../readCsvFile'
-import { Link, VaccinationPlan } from '@covid-vax-bot/plan-schema'
-const LOCALIZATION_TABLE_PATH = path.join(DIST_DIR, 'localization.csv')
 
 /* eslint-disable-next-line import/order */
 import stringify = require('csv-stringify')
+const LOCALIZATION_TABLE_PATH = path.join(DIST_DIR, 'localization.csv')
 
 async function aggregateInfoSites(): Promise<void> {
 	const stringMap = getStringMap()

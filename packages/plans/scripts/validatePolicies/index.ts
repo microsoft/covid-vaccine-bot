@@ -3,6 +3,13 @@
  * Licensed under the MIT license. See LICENSE file in the project.
  */
 import * as path from 'path'
+import {
+	VaccinationPlan,
+	Link,
+	RolloutPhase,
+	Qualification,
+	LinkType,
+} from '@covid-vax-bot/plan-schema'
 import chalk from 'chalk'
 import { StringChecker } from '../StringChecker'
 import { DIST_DIR } from '../createDistDir'
@@ -13,13 +20,6 @@ import {
 	validateVaccinationPlanSchema,
 	SchemaValidationError,
 } from './validateSchema'
-import {
-	VaccinationPlan,
-	Link,
-	RolloutPhase,
-	Qualification,
-	LinkType,
-} from '@covid-vax-bot/plan-schema'
 
 const ILLEGAL_CHARS = `✓’–`
 const LOCALIZATION_TABLE_PATH = path.join(DIST_DIR, 'localization.csv')

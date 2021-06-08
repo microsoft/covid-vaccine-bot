@@ -6,7 +6,6 @@ import chalk from 'chalk'
 import { loadGithubLinkData, createIssues } from './GitHub'
 import { Scraper } from './Scraper'
 import {
-	loadLinksToScrape,
 	loadLastRun,
 	saveFile,
 	getLinkFilename,
@@ -14,8 +13,6 @@ import {
 	getCacheFilename,
 	createOutputFolder,
 } from './io'
-
-import { ScrapeLink } from './types'
 
 async function scrapeSites(): Promise<void> {
 	createOutputFolder()

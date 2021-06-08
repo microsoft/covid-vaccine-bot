@@ -5,9 +5,9 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 import * as fs from 'fs'
 import * as path from 'path'
+import { Region } from '@covid-vax-bot/plan-schema'
 import { DIST_DIR } from '../createDistDir'
 import { DATA_DIR } from '../getFiles'
-import { Region } from '@covid-vax-bot/plan-schema'
 
 export const POLICIES_DIR = path.join(DATA_DIR, 'policies')
 

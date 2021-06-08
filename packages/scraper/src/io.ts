@@ -5,8 +5,8 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 import * as fs from 'fs'
 import * as path from 'path'
-import { RunResult } from './types'
 import { Link } from '@covid-vax-bot/plan-schema'
+import { RunResult } from './types'
 
 const CACHE_DIR = path.join(__dirname, '../.cache/')
 

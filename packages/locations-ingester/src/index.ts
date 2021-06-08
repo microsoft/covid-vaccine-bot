@@ -6,7 +6,7 @@ import { ingest } from './ingest'
 // import { Context } from '@azure/functions'
 type Context = any
 
-function scheduledIngest(context: Context) {
+function scheduledIngest(context: Context): void {
 	console.log = context.log
 	console.error = context.log
 	try {
