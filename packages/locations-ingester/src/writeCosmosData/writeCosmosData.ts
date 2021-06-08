@@ -14,7 +14,7 @@ export function getFilePath(): string {
 	return getLatestFilePath().replace('.csv', '.json')
 }
 
-export async function writeCosmosData() {
+export async function writeCosmosData(): Promise<void> {
 	const filePath = getFilePath()
 	console.log(`writing data to cosmosdb from ${filePath}`)
 	const container = getCosmosContainer()

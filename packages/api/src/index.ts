@@ -5,7 +5,7 @@
 import config from 'config'
 import { createApp } from './app'
 
-function startup() {
+function startup(): void {
 	try {
 		console.log('starting app...')
 		const app = createApp()

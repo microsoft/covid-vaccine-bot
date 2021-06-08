@@ -4,10 +4,10 @@
  */
 import fs from 'fs'
 import path from 'path'
+import stringify = require('csv-stringify')
 import { getFiles } from '../getFiles'
 import { readCsvFile } from '../readCsvFile'
 import { translateText } from './translateText'
-import stringify = require('csv-stringify')
 
 const BLOCK_IDS: Record<string, boolean> = {
 	'c19.test/special_chars': true,

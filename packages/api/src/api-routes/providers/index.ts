@@ -12,12 +12,12 @@ const MAX_LIMIT = config.get<number>('service.maxResultLimit')
 const MAX_RADIUS = config.get<number>('service.maxSearchRadius')
 
 export const GET: Operation = [
-	async (req: Request, res: Response) => {
+	async (req: Request, res: Response): Promise<void> => {
 		try {
 			const [lon, lat] = await queryArgUtil.unpackLocation(req.query)
-			const inStock: boolean = ((req.query.inStock as any) as boolean) || false
+			const inStock: boolean = (req.query.inStock as any as boolean) || false
 			const limit: number = queryArgUtil.unpackLimit(req.query)
-			const radius = (req.query.radius as any) as number
+			const radius = req.query.radius as any as number
 
 			if (limit < MIN_LIMIT || limit > MAX_LIMIT) {
 				res.status(400).json({

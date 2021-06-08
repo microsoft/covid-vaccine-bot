@@ -2,8 +2,8 @@
  * Copyright (c) Microsoft. All rights reserved.
  * Licensed under the MIT license. See LICENSE file in the project.
  */
-import { BingLocation, PlanResult, PlanRegion } from './types'
 import { Region, RolloutPhase } from '@covid-vax-bot/plan-schema'
+import { BingLocation, PlanResult, PlanRegion } from './types'
 
 export function resolvePlan(
 	location: BingLocation,

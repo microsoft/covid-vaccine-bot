@@ -2,8 +2,6 @@
  * Copyright (c) Microsoft. All rights reserved.
  * Licensed under the MIT license. See LICENSE file in the project.
  */
-import * as fs from 'fs'
-import * as path from 'path'
 import axios from 'axios'
 import { token, urlPrefix } from './configuration'
 

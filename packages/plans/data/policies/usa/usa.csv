@@ -141,8 +141,18 @@ Este Formulario de Investigación no está diseñado o destinado a ser un sustit
 Puede proporcionar comentarios enviando un correo electrónico a [$SUPPORT_EMAIL](mailto:$SUPPORT_EMAIL)
 
 ¿Aceptas estos términos?",,,,,,,,,,
+c19.entry/tos_combatcovid,"A group of leading medical and research institutions, blood centers, life science companies, technology companies, philanthropic organizations, and survivor groups have come together to help develop potential new therapies to prevent COVID-19 prevention, including vaccines.
+
+Combat COVID invites you to voluntarily provide a ZIP code and answer the questions below (“Inquiry Form”) to determine your eligibility to receive a COVID-19 vaccine in your state or locality. None of the questions ask for information that could personally identify you. For more information about how your privacy is protected, please see the [Privacy Policy]($PRIVACY_POLICY_URL).
+
+This Inquiry Form is not designed or intended to be a substitute for, nor should it be used to replace, professional medical advice, diagnosis, treatment, or judgment. Always seek the advice of your physician or other qualified healthcare provider with any questions you have about a medical condition or treatment. Do not ignore professional medical advice or wait to get it because of something you read on this website.
+
+You can provide feedback by emailing [$SUPPORT_EMAIL](mailto:$SUPPORT_EMAIL)
+
+Do you accept these terms?",,,,,,,,,,,,,,
 c19.entry/tos_rejected,"Unfortunately I cannot help you if you do not accept the terms. Goodbye.",,,,"Desafortunadamente no puedo ayudarte si no aceptas los términos. Adiós.",,,,,,,,,,
 c19.entry/preamble_bing,"This project was made possible through a partnership with The MITRE Corporation and is enabled by Microsoft's Azure platform.",,,,"Este proyecto fue posible gracias a una asociación con MITRE Corporation y está habilitado por la plataforma Azure de Microsoft.",,,,,,,,,,
+c19.entry/preamble_combatcovid,"Combat COVID offers this tool to help you find locations in your area where you can get the COVID-19 vaccine. If you have questions about the vaccine, talk to your healthcare provider.",,,,,,,,,,,,,,
 c19.question_series/answer_options_yesno,"[""Yes"", ""No""]",,,,"[""Sí"", ""No""]",,,,,,,,,,
 c19.question_series/answer_options_yesnoinfo,"[""Yes"", ""No"", ""More Info""]",,,,"[""Sí"", ""No"", ""Más información""]",,,,,,,,,,
 c19.entry/unknown_question,"I'm not sure how to help you with that. Please try one of the prepared questions.",,,,"No estoy seguro de cómo ayudarte con eso. Por favor, pruebe una de las preguntas preparadas.",,,,,,,,,,

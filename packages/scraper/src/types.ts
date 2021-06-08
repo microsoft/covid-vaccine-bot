@@ -2,8 +2,8 @@
  * Copyright (c) Microsoft. All rights reserved.
  * Licensed under the MIT license. See LICENSE file in the project.
  */
-import ssri from 'ssri'
 import { Link } from '@covid-vax-bot/plan-schema'
+import ssri from 'ssri'
 
 /* Extending this Link type definition to include
  * the root level path from the GitHub repo link set.

@@ -2,9 +2,9 @@
  * Copyright (c) Microsoft. All rights reserved.
  * Licensed under the MIT license. See LICENSE file in the project.
  */
-import { BingLocation, resolvePlan } from '..'
 import { Region } from '@covid-vax-bot/plan-schema'
 import data from '@covid-vax-bot/plans/dist/policies.json'
+import { BingLocation, resolvePlan } from '..'
 
 function embedStateRegions(regions: Region[]): Region[] {
 	const usa = (data as Region[]).find((t) => t.id === 'usa') as Region
