@@ -5,12 +5,12 @@
 import path from 'path'
 import bodyParser from 'body-parser'
 import cors from 'cors'
-import express, { Request, Response } from 'express'
+import express, { Express, Request, Response } from 'express'
 import { initialize } from 'express-openapi'
 import { apiDoc } from './apiDoc'
 import { OpenApiError } from './types'
 
-export function createApp(): void {
+export function createApp(): Express {
 	const app = express()
 	app.use(cors())
 	app.use(bodyParser.json())
